@@ -2,11 +2,13 @@
 product: campaign
 title: Importação e exportação de públicos
 description: Importação e exportação de públicos
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
-source-git-commit: 980d973acbbf7bd8c3d8aa07ccd4253545e3511d
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 100%
@@ -16,7 +18,7 @@ ht-degree: 100%
 
 # Importação e exportação de públicos{#importing-and-exporting-audiences}
 
-![](../../assets/common.svg)
+
 
 ## Importação de um público-alvo {#importing-an-audience}
 

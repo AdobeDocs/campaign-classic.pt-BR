@@ -2,9 +2,11 @@
 product: campaign
 title: Introdução a aplicativos web
 description: Crie e compartilhe aplicativos dinâmicos para web, landing pages e pesquisas
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Introdução a aplicativos Web{#about-web-applications}
 
-![](../../assets/common.svg)
+
 
 O Adobe Campaign permite criar e publicar aplicações web dinâmicas e interativas com dados do banco de dados e conteúdo adaptado aos direitos do usuário conectado.
 

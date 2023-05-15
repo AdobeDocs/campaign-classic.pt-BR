@@ -2,9 +2,10 @@
 product: campaign
 title: Trilha de auditoria
 description: Saiba como monitorar sua instância com a trilha de auditoria do Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Audit Trail, Monitoring
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 11%
@@ -13,7 +14,7 @@ ht-degree: 11%
 
 # Trilha de auditoria{#audit-trail}
 
-![](../../assets/v7-only.svg)
+
 
 No Adobe Campaign, a variável **[!UICONTROL Audit trail]** O fornece acesso ao histórico completo das alterações feitas na instância.
 

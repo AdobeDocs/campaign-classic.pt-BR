@@ -2,18 +2,19 @@
 product: campaign
 title: Relatórios globais
 description: Relatórios globais
+badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 100%
+source-wordcount: '2306'
+ht-degree: 99%
 
 ---
 
 # Relatórios globais {#global-reports}
 
-![](../../assets/common.svg)
+
 
 Esses relatórios dizem respeito à atividade dos dados no banco de dados inteiro. Para exibir o painel de relatórios, vá para a guia **[!UICONTROL Reports]**.
 
@@ -53,7 +54,7 @@ Você pode configurar os valores exibidos alterando a escala de tempo: visualiza
 >
 >Se sua instância estiver hospedada no AWS, também será possível monitorar o número de deliveries enviados por hora usando o [Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=pt-BR) do Campaign Classic. Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
 >
->O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
+>O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
 >Observe que sua instância deve ser atualizada com a build mais recente do [Gold Standard](../../rn/using/gold-standard.md) ou a build mais recente do GA (21.1.3)[. ](../../rn/using/latest-release.md) Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -98,7 +99,7 @@ Os seguintes indicadores são usados:
 * **[!UICONTROL Inbox full]** : Tipo de erro gerado após cinco tentativas de delivery para indicar que a caixa de entrada dos recipients contém muitas mensagens.
 * **[!UICONTROL Account disabled]** : Tipo de erro gerado ao enviar um delivery para indicar que o endereço não existe mais.
 * **[!UICONTROL Rejected]** : Tipo de erro gerado quando um endereço é rejeitado pelo IAP (Provedor de Acesso à Internet), por exemplo, ao seguir uma regra de segurança da aplicação (software antispam).
-* **[!UICONTROL Unreachable]** : Tipo de erro que ocorre na cadeia de caracteres de distribuição de mensagens: incidente na retransmissão SMTP, domínio temporariamente inacessível, etc
+* **[!UICONTROL Unreachable]** : Tipo de erro que ocorre na string de distribuição de mensagens: incidente na retransmissão SMTP, domínio temporariamente inacessível, etc
 * **[!UICONTROL Not connected]** : Tipo de erro para indicar que o celular do recipient está desligado ou sem rede no momento do envio.
 
    >[!NOTE]

@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Configurar uma importação recorrente
-description: Saiba como configurar um modelo de fluxo de trabalho para importações recorrentes.
+description: Saiba como configurar um modelo de fluxo de trabalho para importações recorrentes
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Configurar um fluxo de trabalho de importação recorrente {#setting-up-a-recurring-import}
 
-![](../../assets/v7-only.svg)
+
 
 Usar um modelo de fluxo de trabalho é uma prática recomendada se você precisar importar arquivos regularmente com a mesma estrutura.
 
@@ -32,7 +33,7 @@ Esse exemplo mostra como predefinir um workflow que pode ser reutilizado para im
 
 1. Configure a atividade **[!UICONTROL Data Loading (file)]**:
 
-   * Defina a estrutura esperada carregando um arquivo de amostra. O arquivo de amostra deve conter apenas algumas linhas, mas todas as colunas necessárias para a importação. Verifique e edite o formato de arquivo para verificar se o tipo de cada coluna está definido corretamente: texto, data, inteiro, etc. Por exemplo:
+   * Definir a estrutura esperada fazendo upload de um arquivo de amostra. O arquivo de amostra deve conter apenas algumas linhas, mas todas as colunas necessárias para a importação. Verifique e edite o formato de arquivo para verificar se o tipo de cada coluna está definido corretamente: texto, data, inteiro, etc. Por exemplo:
 
       ```
       lastname;firstname;birthdate;email;crmID

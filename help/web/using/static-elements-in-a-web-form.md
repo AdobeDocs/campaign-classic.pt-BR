@@ -2,9 +2,11 @@
 product: campaign
 title: Elementos estáticos em um formulário web
 description: Elementos estáticos em um formulário web
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Elementos estáticos em um formulário web{#static-elements-in-a-web-form}
 
-![](../../assets/common.svg)
+
 
 É possível incluir elementos com os quais o usuário não tem nenhuma interação nas páginas do formulário; trata-se de elementos estáticos, como imagens, conteúdo HTML, uma barra horizontal ou um link de hipertexto. Esses elementos são criados por meio do primeiro botão na barra de ferramentas, clicando em **[!UICONTROL Static elements]**.
 
@@ -46,7 +48,7 @@ Para inserir um campo de banco de dados, use o botão de personalização.
 
 >[!NOTE]
 >
->As cadeias de caracteres inseridas no editor HTML só serão traduzidas se forem definidas na subguia **[!UICONTROL Texts]**. Caso contrário, elas não serão coletadas. Para obter mais informações, consulte [Tradução de um formulário web](translating-a-web-form.md).
+>As strings inseridas no editor HTML só serão traduzidas se forem definidas na subguia **[!UICONTROL Texts]**. Caso contrário, elas não serão coletadas. Para obter mais informações, consulte [Tradução de um formulário web](translating-a-web-form.md).
 
 ### Inserir um link {#inserting-a-link}
 
@@ -138,9 +140,9 @@ Isso produz o seguinte resultado:
 
 A guia **[!UICONTROL Text]** permite criar campos variáveis que podem ser usados no HTML entre os caracteres &lt;%= and %> com a seguinte sintaxe: **$(IDENTIFIER)**.
 
-Use esse método para localizar facilmente suas cadeias de caracteres. Consulte [Tradução de um formulário web](translating-a-web-form.md)
+Use esse método para localizar facilmente suas strings. Consulte [Tradução de um formulário web](translating-a-web-form.md)
 
-Por exemplo, você pode criar um campo **Contato** que permitirá exibir a cadeia de caracteres &quot;Data do último contato:&quot; para o conteúdo HTML. Para fazer isso, siga as etapas abaixo:
+Por exemplo, você pode criar um campo **Contato** que permitirá exibir a string &quot;Data do último contato:&quot; para o conteúdo HTML. Para fazer isso, siga as etapas abaixo:
 
 1. Clique na guia **[!UICONTROL Text]** do texto HTML.
 1. Clique no ícone **[!UICONTROL Add]**.

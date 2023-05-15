@@ -2,9 +2,10 @@
 product: campaign
 title: Aprovação
 description: Aprovação
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Approvals
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Aprovação{#approval}
 
-![](../../assets/v7-only.svg)
+
 
 Uma tarefa **Aprovação** necessita da participação de um operador. O operador é atribuído a uma tarefa e pode responder por e-mail, usando a página da Web vinculada na mensagem de e-mail ou através do console.
 

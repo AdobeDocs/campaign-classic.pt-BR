@@ -2,11 +2,12 @@
 product: campaign
 title: Contas externas
 description: Saiba como criar contas externas
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 31a475c98b09bbeca6a16c6fd98698af10016033
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 65%
@@ -15,7 +16,7 @@ ht-degree: 65%
 
 # Contas externas{#external-accounts}
 
-![](../../assets/v7-only.svg)
+
 
 O Adobe Campaign vem com um conjunto de contas externas predefinidas. Para configurar conexões com sistemas externos, você pode criar novas contas externas.
 

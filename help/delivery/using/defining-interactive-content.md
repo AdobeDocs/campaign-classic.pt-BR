@@ -2,10 +2,12 @@
 product: campaign
 title: Definir o conteúdo interativo no Adobe Campaign Classic
 description: Saiba como definir o conteúdo de email interativo e dinâmico com o AMP no Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design, Dynamic Content
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 1348c1d88d0732b0dda4ed488b4a258ac7e15c42
-workflow-type: ht
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 100%
 
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Definir o conteúdo interativo{#defining-interactive-content}
 
-![](../../assets/common.svg)
+
 
 O Adobe Campaign possibilita utilizar o formato interativo [AMP for Email](https://amp.dev/pt_br/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
 

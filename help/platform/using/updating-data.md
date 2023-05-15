@@ -2,11 +2,12 @@
 product: campaign
 title: Atualização dos dados
 description: Atualização dos dados
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Atualizar dados{#updating-data}
 
-![](../../assets/v7-only.svg)
+
 
 Os dados vinculados ao perfil de um recipient podem ser atualizados manualmente ou automaticamente.
 
@@ -96,7 +97,7 @@ O conteúdo de uma lista pode ser exportado. Para configurar e executar a export
 
 ## Assinar um serviço {#subscribing-to-a-service}
 
-Na maioria dos casos, os destinatários assinam um boletim informativo por meio de uma página dedicada, conforme explicado [nesta seção](../../delivery/using/managing-subscriptions.md). No entanto, os perfis dos destinatários filtrados podem assinar manualmente um serviço (boletim informativo ou Serviço Viral). Para fazer isso:
+Na maioria dos casos, os destinatários assinam um boletim informativo por meio de uma landing page dedicada, conforme explicado [nesta seção](../../delivery/using/managing-subscriptions.md). No entanto, os perfis dos destinatários filtrados podem assinar manualmente um serviço (boletim informativo ou Serviço Viral). Para fazer isso:
 
 1. Selecione os destinatários que deseja assinar e clique com o botão direito do mouse.
 1. Selecione **[!UICONTROL Actions > Subscribe selection to a service]**.

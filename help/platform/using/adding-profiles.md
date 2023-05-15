@@ -2,11 +2,12 @@
 product: campaign
 title: Adição de perfis
 description: Adição de perfis
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Profiles
 role: User
 level: Beginner
 exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Adicionar perfis{#adding-profiles}
 
-![](../../assets/v7-only.svg)
+
 
 Na maioria dos casos, os perfis são [importados para o Campaign por meio de um fluxo de trabalho](../../platform/using/import-export-workflows.md). No entanto, é possível adicionar um ou mais perfis diretamente na interface ao clicar no botão **[!UICONTROL Create]** Eles serão adicionados ao banco de dados.
 

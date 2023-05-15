@@ -2,9 +2,10 @@
 product: campaign
 title: Iniciar um fluxo de trabalho
 description: Saiba como iniciar um fluxo de trabalho e descubra a barra de ferramentas de ações e o menu de clique com o botão direito do mouse do fluxo de trabalho
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Iniciar um fluxo de trabalho {#starting-a-workflow}
 
-![](../../assets/v7-only.svg)
+
 
 Um workflow é sempre iniciado manualmente. Ao ser iniciado, ele pode permanecer inativo dependendo das informações especificadas por meio de um scheduler (consulte [Scheduler](scheduler.md)) ou de um agendamento de atividade. 
 

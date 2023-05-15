@@ -2,9 +2,11 @@
 product: campaign
 title: Otimizar entrega de mensagens
 description: Saiba como otimizar o delivery de mensagens
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Otimizar a entrega {#optimize-delivery}
 
-![](../../assets/common.svg)
+
 
 Antes mesmo de começar a criar os deliveries, você pode realizar várias ações para proteger e otimizar o fluxo do processo de envio.
 
@@ -31,7 +33,7 @@ Vários fatores podem afetar diretamente o desempenho do servidor e retardar a p
 
 * A execução do workflow: o monitoramento de seus workflows é essencial para evitar problemas de desempenho na plataforma. Siga as diretrizes listadas [neste documento](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
-* Caso seja elegível, você poderá aproveitar os [recursos do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR) para monitorar sua plataforma usando as funcionalidades de [monitoramento de desempenho](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=pt-BR).
+* Caso seja elegível, você poderá aproveitar os [recursos do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR) para monitorar sua plataforma usando as funcionalidades de [monitoramento de desempenho](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=pt-BR).
 
 ## Verificar a configuração da rede {#network-config}
 

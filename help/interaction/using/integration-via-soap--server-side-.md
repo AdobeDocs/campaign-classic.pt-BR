@@ -2,11 +2,12 @@
 product: campaign
 title: Integração via SOAP (lado do servidor)
 description: Integração via SOAP (lado do servidor)
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Integração via SOAP (lado do servidor){#integration-via-soap-server-side}
 
-![](../../assets/v7-only.svg)
+
 
 Os serviços da Web SOAP fornecidos para o gerenciamento de ofertas são diferentes daqueles normalmente usados no Adobe Campaign. Eles podem ser acessados por meio da URL de interação descrita na seção anterior e permitem apresentar ou atualizar ofertas para um determinado contato.
 
@@ -45,7 +46,7 @@ Em resposta à query, o serviço SOAP retorna os seguintes parâmetros:
 
 Adicione o comando **nms:interação#UpdateStatus** à URL, seguido desses parâmetros:
 
-* **proposition**: cadeia de caracteres, ele contém o ID de proposta fornecida como uma saída durante uma apresentação de oferta. Consulte [Apresentação da oferta](#offer-proposition).
+* **proposition**: string de caracteres, contém o ID de proposta fornecida como uma saída durante uma apresentação de oferta. Consulte [Apresentação da oferta](#offer-proposition).
 * **status**: tipo string, ele especifica o novo status da oferta. Os valores possíveis são listados na enumeração **propositionStatus** , no schema **nms:common.** Por exemplo, inicialmente, o número 3 corresponde ao status **Accepted**.
 * **context**: o elemento XML permite adicionar informações de contexto no schema de espaço. Se o schema usado for **nms:interaction**, **`<empty>`** deverá ser adicionado.
 

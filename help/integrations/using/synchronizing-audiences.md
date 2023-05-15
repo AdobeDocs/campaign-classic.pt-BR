@@ -2,11 +2,12 @@
 product: campaign
 title: Sincronizar públicos
 description: Saiba como sincronizar públicos com o ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Sincronizar públicos{#synchronizing-audiences}
 
-![](../../assets/v7-only.svg)
+
 
 Você pode criar uma lista sofisticada usando os recursos avançados do Campaign v7 e compartilhar essa lista como um público diretamente e em tempo real com o Campaign Standard (incluindo dados adicionais) de forma contínua. O usuário do Campaign Standard pode então consumir o público no Adobe Campaign Standard.
 

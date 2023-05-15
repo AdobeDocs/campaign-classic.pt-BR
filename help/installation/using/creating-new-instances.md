@@ -2,11 +2,12 @@
 product: campaign
 title: Criação de novas instâncias
 description: Criação de novas instâncias
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 3b87eb3c-3b50-4ed4-80b1-4333261ffe0b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 10%
@@ -15,7 +16,7 @@ ht-degree: 10%
 
 # Criação de novas instâncias{#creating-new-instances}
 
-![](../../assets/v7-only.svg)
+
 
 Depois que o Adobe Campaign for instalado e a instância for criada, você poderá adicionar uma nova instância do console. Esse modo de criação permite criar instâncias de rastreamento sem acessar o console.
 

@@ -2,9 +2,10 @@
 product: campaign
 title: Migração de conector SMS não compatível
 description: Migrar conector SMS incompatível para o conector SMPP genérico estendido
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Migrar conector SMS incompatível para o conector SMPP genérico estendido{#unsupported-connector-migration}
 
-![](../../assets/v7-only.svg)
+
 
 A partir da versão 20.2, os conectores herdados serão descontinuados. Este documento ajudará você a migrar conectores que ainda estão sendo executados no sistema antigo para o conector SMPP recomendado.
 

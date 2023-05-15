@@ -2,9 +2,11 @@
 product: campaign
 title: Propriedades do relatório
 description: Saiba mais sobre as configurações de propriedades do relatório
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Propriedades do relatório{#properties-of-the-report}
 
-![](../../assets/common.svg)
+
 
 É possível personalizar e configurar completamente seu relatório para atender qualquer necessidade. Para fazer isso, edite suas propriedades. As propriedades do relatório são acessadas por meio do botão **[!UICONTROL Properties]** localizado acima do gráfico de sequência de atividades.
 

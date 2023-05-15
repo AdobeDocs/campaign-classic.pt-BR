@@ -2,9 +2,11 @@
 product: campaign
 title: Introdução à capacidade de delivery no Campaign
 description: Saiba mais sobre as práticas recomendadas de capacidade de delivery
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # O que é capacidade de entrega{#about-deliverability}
 
-![](../../assets/common.svg)
+
 
 A capacidade de delivery consiste em medir o sucesso das campanhas em chegar à caixa de entrada dos recipients sem rejeição ou sem serem marcadas como spam. [Saiba por que a capacidade de delivery é importante](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=pt-BR#why-deliverability-matters).
 

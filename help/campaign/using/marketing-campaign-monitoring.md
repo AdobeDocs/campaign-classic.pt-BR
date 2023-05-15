@@ -2,9 +2,10 @@
 product: campaign
 title: Monitorar campanhas de marketing
 description: Monitorar campanhas de marketing
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Campaigns, Monitoring
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
@@ -12,8 +13,6 @@ ht-degree: 100%
 ---
 
 # Monitorar campanhas de marketing {#monitoring-marketing-campaigns}
-
-![](../../assets/v7-only.svg)
 
 ## Rastrear uma campanha {#tracking-a-campaign}
 

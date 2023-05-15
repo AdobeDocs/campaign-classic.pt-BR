@@ -2,9 +2,11 @@
 product: campaign
 title: Sobre seed addresses
 description: Introdução a seed addresses
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Seed Address
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Sobre seed addresses{#about-seed-addresses}
 
-![](../../assets/common.svg)
+
 
 Seed addresses são usados para direcionar destinatários que não correspondem aos critérios de destino definidos. Dessa forma, os recipients que estiverem fora do escopo de delivery podem recebê-lo, como qualquer outro recipient target receberia.
 

@@ -2,8 +2,9 @@
 product: campaign
 title: Criação do schema de dados para FDA
 description: Saiba como criar o schema de dados para FDA
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 46%
@@ -12,7 +13,7 @@ ht-degree: 46%
 
 # Criação do schema de dados {#creating-the-data-schema}
 
-![](../../assets/v7-only.svg)
+
 
 Para criar um schema em um banco de dados externo:
 

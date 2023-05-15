@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Diretrizes de monitoramento
-description: Descubra as diretrizes e práticas recomendadas para monitorar processos e instâncias do Campaign.
+description: Descubra as diretrizes e práticas recomendadas para monitorar processos e instâncias do Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 26%
@@ -13,7 +14,7 @@ ht-degree: 26%
 
 # Diretrizes de monitoramento {#monitoring-guidelines}
 
-![](../../assets/v7-only.svg)
+
 
 ## Painel de monitoramento de instância {#instance-monitoring-dashboard}
 
@@ -48,13 +49,13 @@ Vários métodos automáticos estão disponíveis. para ajudá-lo a monitorar a 
 
 A Trilha de auditoria permite visualizar o histórico completo de alterações relacionadas a opções, fluxos de trabalho e schemas em sua instância. [Clique aqui](../../production/using/audit-trail.md) para obter mais informações.
 
-**Painel de controle do Campaign**
+**Painel de controle**
 
 O Painel de controle do Campaign permite gerenciar várias configurações da sua instância: gerencie permissões de URL, verifique os detalhes da instância, como as versões de build dos servidores etc. Ela também permite monitorar o espaço disponível nos servidores SFTP conectados à sua instância. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR) para obter mais informações.
 
 >[!NOTE]
 >
->O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
+>O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
 >Observe que sua instância deve estar hospedada no AWS e atualizada com a [build mais recente disponível](../../rn/using/rn-overview.md). Saiba como verificar a versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
 

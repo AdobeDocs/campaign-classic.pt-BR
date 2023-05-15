@@ -2,8 +2,10 @@
 product: campaign
 title: Configurar a interface
 description: Saiba como configurar a interface do Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 3%
@@ -12,7 +14,7 @@ ht-degree: 3%
 
 # Configurar a interface{#configuring-the-interface}
 
-![](../../assets/common.svg)
+
 
 Para exibir e diálogo com a nova tabela de recipients na interface do Adobe Campaign, siga as etapas abaixo:
 

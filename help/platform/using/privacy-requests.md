@@ -2,11 +2,12 @@
 product: campaign
 title: Gerenciar solicitações de privacidade
 description: Saiba mais sobre solicitações de privacidade
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Sobre solicitações de privacidade {#privacy-requests}
 
-![](../../assets/v7-only.svg)
+
 
 Para a apresentação geral sobre o Gerenciamento de privacidade, consulte [esta seção](privacy-management.md).
 

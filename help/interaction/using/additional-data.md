@@ -2,11 +2,12 @@
 product: campaign
 title: Dados adicionais
 description: Dados adicionais
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Dados adicionais{#additional-data}
 
-![](../../assets/v7-only.svg)
+
 
 Durante uma chamada do mecanismo do Interaction, é possível transferir informações contextuais adicionais. Esses dados podem vir dos dados de destino armazenados na tabela de trabalho de um workflow (canal de saída) ou dos dados de chamada enviados pelo site durante a chamada (canal de entrada). É possível usar esses dados adicionais nas regras de qualificação, na personalização da oferta e também pode armazená-lo em uma tabela de propostas.
 

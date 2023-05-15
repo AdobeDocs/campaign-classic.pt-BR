@@ -2,9 +2,11 @@
 product: campaign
 title: Enviar, monitorar e rastrear SMS
 description: Saiba como enviar, monitorar e rastrear SMS no Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: SMS
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Enviar, monitorar e rastrear entregas de SMS{#sms-properties}
 
-![](../../assets/common.svg)
+
 
 ## Enviar mensagens SMS {#sending-sms-messages}
 
@@ -30,7 +32,7 @@ O botão **[!UICONTROL Properties]** dá acesso ao parâmetro de delivery avanç
 
 As seguintes opções estão disponíveis:
 
-* **Endereço do remetente**: permite personalizar o nome do remetente do delivery usando uma cadeia de caracteres alfanuméricos limitada a onze caracteres. O campo não deve ser criado exclusivamente com figuras. Você pode definir uma condição para exibir, por exemplo, nomes diferentes de acordo com o código de área do recipient:
+* **Endereço do remetente**: permite personalizar o nome do remetente do delivery usando uma string de caracteres alfanuméricos limitada a onze caracteres. O campo não deve ser criado exclusivamente com figuras. Você pode definir uma condição para exibir, por exemplo, nomes diferentes de acordo com o código de área do recipient:
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
@@ -58,7 +60,7 @@ As seguintes opções estão disponíveis:
 
 ## Monitorar e rastrear SMS {#monitoring-and-tracking-sms-deliveries}
 
-Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
+Após enviar as mensagens, você pode monitorar e rastrear suas entregas. Para obter mais informações, consulte essas seções.
 
 * [Monitorar um delivery](about-delivery-monitoring.md)
 * [Entender as falhas de delivery](understanding-delivery-failures.md)

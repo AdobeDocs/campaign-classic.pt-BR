@@ -2,9 +2,11 @@
 product: campaign
 title: Entender as falhas de delivery
 description: Entenda as falhas de delivery
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Entender as falhas de delivery{#understanding-delivery-failures}
 
-![](../../assets/common.svg)
+
 
 ## Sobre falhas de entrega {#about-delivery-failures}
 
@@ -234,7 +236,7 @@ Para instalações no local e instalações hospedadas/híbridas que usam o MTA 
 >* Para instâncias que usarem o MTA aprimorado **sem Webhooks/EFS**, as regras de **[!UICONTROL Inbound email]** também serão usadas para processar os emails rejeitados síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email usado para os emails rejeitados assíncronos.
 
 
-Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, quando o delivery de um email falha, o servidor de delivery do Adobe Campaign recebe uma mensagem de erro do servidor de mensagens ou do servidor DNS remoto. A lista de erros é formada por cadeias de caracteres contidas na mensagem retornada pelo servidor remoto. Tipos de falhas e motivos são atribuídos a cada mensagem de erro.
+Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, quando o delivery de um email falha, o servidor de delivery do Adobe Campaign recebe uma mensagem de erro do servidor de mensagens ou do servidor DNS remoto. A lista de erros é formada por strings contidas na mensagem retornada pelo servidor remoto. Tipos de falhas e motivos são atribuídos a cada mensagem de erro.
 
 Essa lista está disponível por meio do nó **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**. Ela contém todas as regras usadas pelo Adobe Campaign para qualificar as falhas de delivery. Ele é infinita e é regularmente atualizada pelo Adobe Campaign e também pode ser gerenciada pelo usuário.
 
@@ -294,7 +296,7 @@ As regras padrão são as seguintes.
 
 Para instalações locais e instalações hospedadas/híbridas que usam o MTA do Campaign herdado, essas regras contêm a lista de strings de caracteres que podem ser retornadas por servidores remotos e que permitem qualificar o erro (**Permanente**, **Temporário** ou **Ignorado**).
 
-Quando um email falha, o servidor remoto retorna uma mensagem de devolução ao endereço especificado nos parâmetros da plataforma. O Adobe Campaign compara o conteúdo de cada email de rejeição nas cadeias de caracteres da lista de regras e o atribui a um dos três [tipos de erro](#delivery-failure-types-and-reasons).
+Quando um email falha, o servidor remoto retorna uma mensagem de devolução ao endereço especificado nos parâmetros da plataforma. O Adobe Campaign compara o conteúdo de cada email de rejeição nas strings da lista de regras e o atribui a um dos três [tipos de erro](#delivery-failure-types-and-reasons).
 
 >[!NOTE]
 >

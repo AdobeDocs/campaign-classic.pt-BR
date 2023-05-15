@@ -2,9 +2,10 @@
 product: campaign
 title: Provedores, estoques e orçamentos
 description: Provedores, estoques e orçamentos
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Budget Management, Campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 100%
@@ -12,8 +13,6 @@ ht-degree: 100%
 ---
 
 # Provedores, estoques e orçamentos{#providers-stocks-and-budgets}
-
-![](../../assets/v7-only.svg)
 
 O Adobe Campaign permite que você defina provedores de serviços que estarão envolvidos nas tarefas realizadas nas campanhas. As informações relacionadas aos provedores de serviços e as estruturas de custo relacionadas são definidas pelo administrador do Adobe Campaign a partir da visualização principal. O provedor de serviços é referenciado a partir do delivery e suas estruturas de custo permitem o cálculo de custos associados a esse delivery, bem como o gerenciamento do estoque.
 

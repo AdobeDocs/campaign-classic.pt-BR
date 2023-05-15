@@ -2,9 +2,10 @@
 product: campaign
 title: Regras de pressão
 description: Regras de pressão
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3285'
 ht-degree: 100%
@@ -12,8 +13,6 @@ ht-degree: 100%
 ---
 
 # Regras de pressão{#pressure-rules}
-
-![](../../assets/v7-only.svg)
 
 ## Sobre fadiga de marketing {#about-marketing-fatigue}
 
@@ -24,7 +23,7 @@ Regras de **pressão** para gerenciar a fadiga da marca, por exemplo: para restr
 As campanhas são selecionadas com base nos limites definidos e no peso da mensagem.
 
 * Um limite é o número mais alto de deliveries autorizado para um determinado recipient dentro de um determinado período. Ele pode ser definido ou variável. Ele é definido ou calculado nas configurações da regra de tipologia. Consulte [Número máximo de mensagens](#maximum-number-of-messages).
-* Os pesos do delivery permitem identificar deliveries de alta prioridade dentro da estrutura do gerenciamento de pressão. As mensagens com o peso mais alto têm prioridade. Consulte [Peso da mensagem](#message-weight).
+* Os pesos das entregas permitem identificar entregas de alta prioridade dentro da estrutura do gerenciamento de pressão. As mensagens com o peso mais alto têm prioridade. Consulte [Peso da mensagem](#message-weight).
 
 A arbitragem consiste em garantir que campanhas agendadas com peso maior do que a campanha em andamento não gerem solicitações de perfil excessivas: se esse for o caso, o perfil será excluído do delivery.
 

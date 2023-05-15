@@ -2,11 +2,13 @@
 product: campaign
 title: Gestão de templates de ofertas
 description: Gestão de templates de ofertas
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: e4a6cc22-05bd-4b8a-984d-d0706fc210e1
-source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Gestão de templates de ofertas{#managing-offer-templates}
 
-![](../../assets/common.svg)
+
 
 Os templates de oferta são disponibilizados no Adobe Campaign prontos para uso. Você pode usá-los após criar suas ofertas, duplicar ou adaptar sua configuração às suas necessidades. Você também pode criar seus próprios templates. As ofertas de templates são armazenadas na pasta **Recursos** > **Templates** > **Templates de Oferta**.
 

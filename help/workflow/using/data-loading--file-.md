@@ -2,9 +2,10 @@
 product: campaign
 title: Carregamento de dados (arquivo)
 description: Saiba mais sobre a atividade de workflow de carregamento de dados (arquivo)
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Carregamento de dados (arquivo){#data-loading-file}
 
-![](../../assets/v7-only.svg)
+
 
 ## Uso {#use}
 
@@ -57,16 +58,16 @@ A formatação de coluna permite definir o processamento de valor de cada coluna
    * **[!UICONTROL Empty value allowed]**: autoriza valores vazios. O valor NULL é então inserido.
    * **[!UICONTROL Always populated]**: gera um erro se um valor estiver vazio.
 
-* **[!UICONTROL Length]**: especifica o número máximo de caracteres para o tipo de dados da **cadeia de caracteres**.
+* **[!UICONTROL Length]**: especifica o número máximo de caracteres para o tipo de dados da **string**.
 * **[!UICONTROL Format]**: define o formato de data e hora.
-* **[!UICONTROL Data transformation]**: define se um processo de ocorrência de caractere precisa ser aplicado em uma **cadeia de caracteres**.
+* **[!UICONTROL Data transformation]**: define se um processo de ocorrência de caractere precisa ser aplicado em uma **string**.
 
-   * **[!UICONTROL None]**: a cadeia de caracteres importada não é modificada.
-   * **[!UICONTROL First letter in upper case]**: a primeira letra de cada palavra da cadeia de caracteres começa com maiúscula.
-   * **[!UICONTROL Upper case]**: todos os caracteres na cadeia de caracteres estão em maiúsculas.
-   * **[!UICONTROL Lower case]**: todos os caracteres na cadeia de caracteres estão em minúsculas.
+   * **[!UICONTROL None]**: a string importada não é modificada.
+   * **[!UICONTROL First letter in upper case]**: a primeira letra de cada palavra da string começa com maiúscula.
+   * **[!UICONTROL Upper case]**: todos os caracteres na string estão em maiúsculas.
+   * **[!UICONTROL Lower case]**: todos os caracteres na string estão em minúsculas.
 
-* **[!UICONTROL White space management]**: especifica se determinados espaços precisam ser ignorados em uma cadeia de caracteres. O valor **[!UICONTROL Ignore spaces]** permite somente espaços no início e no final de uma cadeia de caracteres a ser ignorada.
+* **[!UICONTROL White space management]**: especifica se determinados espaços precisam ser ignorados em uma string. O valor **[!UICONTROL Ignore spaces]** permite somente espaços no início e no final de uma string a ser ignorada.
 * **[!UICONTROL Error processings]**: define o comportamento se um erro for encontrado.
 
    * **[!UICONTROL Ignore the value]**: o valor é ignorado. Um aviso é gerado no log de execução do fluxo de trabalho.

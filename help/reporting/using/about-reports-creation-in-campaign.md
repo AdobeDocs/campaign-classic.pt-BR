@@ -2,9 +2,11 @@
 product: campaign
 title: Etapas principais para criar um relatório
 description: Aprenda as principais etapas para criar um novo relatório
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Etapas principais para criar um relatório{#key-steps-to-create-a-report}
 
-![](../../assets/common.svg)
+
 
 Para produzir estatísticas com os dados do banco de dados do Campaign, é possível criar relatórios e adaptar seu conteúdo e layout com base nas necessidades. Esses relatórios podem ser compartilhados com outros operadores.
 

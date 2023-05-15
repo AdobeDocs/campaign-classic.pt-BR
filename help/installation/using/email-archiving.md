@@ -2,20 +2,21 @@
 product: campaign
 title: Arquivamento de email
 description: Arquivamento de email
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 3%
+source-wordcount: '1359'
+ht-degree: 5%
 
 ---
 
 # Configurar email Cco {#email-archiving}
 
-![](../../assets/v7-only.svg)
+
 
 Você pode configurar o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma.
 
@@ -34,6 +35,9 @@ Para fazer isso, os arquivos .eml correspondentes aos emails enviados são trans
 * O sistema de arquivamento de email foi alterado com o Adobe Campaign 17.2 (build 8795). Se você já estava usando o arquivamento de email, é necessário atualizar manualmente para o novo sistema CCO de email. Para obter mais informações, consulte a [Migração para o novo Cco de email](#updated-email-archiving-system--bcc-) seção.
 
 ## Ativando email Cco (no local) {#activating-email-archiving--on-premise-}
+
+[!BADGE No local e híbrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"}
+
 
 Para ativar o arquivamento de emails CCO quando o Adobe Campaign estiver instalado no local, siga as etapas abaixo.
 
@@ -102,6 +106,9 @@ Certifique-se de ajustar esses parâmetros de acordo com a taxa de transferênci
 
 ## Configuração do endereço de email CCO (no local) {#configuring-the-bcc-email-address--on-premise-}
 
+[!BADGE No local e híbrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"}
+
+
 >[!IMPORTANT]
 >
 >Por motivos de privacidade, os emails CCO devem ser processados por um sistema de arquivamento capaz de armazenar informações de identificação pessoal (PII) seguras.
@@ -124,6 +131,10 @@ No **config-`<instance name>.xml`** use os seguintes parâmetros para definir o 
 >Além disso, a retransmissão atribui um **[!UICONTROL Sent]** status para todos os emails, incluindo aqueles que não são enviados. Portanto, todas as mensagens são arquivadas.
 
 ## Migração para o novo Cco de email {#updated-email-archiving-system--bcc-}
+
+[!BADGE No local e híbrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"}
+
+
 
 >[!IMPORTANT]
 >

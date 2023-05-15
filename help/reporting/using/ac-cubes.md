@@ -2,9 +2,10 @@
 product: campaign
 title: Introdução aos cubos
 description: Introdução aos cubos
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Reporting
 exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
-source-git-commit: c1be67d32c39d20f7794b6019a6e03c9ec29df94
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Introdução aos cubos{#about-cubes}
 
-![](../../assets/v7-only.svg)
+
 
 A exploração de dados no banco de dados é oferecida pelo módulo **Marketing Analytics.** Ele permite analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo do relatório. Além disso, o Marketing Analytics permite criar relatórios e populações do target. Uma vez identificados, eles são armazenados em listas que podem ser usadas no Adobe Campaign (targeting, segmentação, etc.).
 

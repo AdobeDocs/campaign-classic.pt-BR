@@ -2,9 +2,10 @@
 product: campaign
 title: Controle de delivery
 description: Saiba mais sobre a atividade de workflow de controle de delivery
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: c7cface2-0837-4e6a-91dc-b8353010a7a4
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Controle de delivery{#delivery-control}
 
-![](../../assets/v7-only.svg)
+
 
 Uma ação do tipo **Controle de delivery** permite iniciar, pausar ou parar um delivery.
 

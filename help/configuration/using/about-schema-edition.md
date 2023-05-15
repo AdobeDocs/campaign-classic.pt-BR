@@ -2,18 +2,17 @@
 product: campaign
 title: Sobre a edição de esquema
 description: Introdução à edição do schema
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Schema Extension
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
 # Sobre a edição de esquema{#about-schema-edition}
-
-![](../../assets/v7-only.svg)
 
 A Adobe Campaign emprega os Esquemas de dados para:
 
@@ -132,7 +131,7 @@ A lista completa de atributos está disponível na seção [`<attribute>` elemen
 * **@required**
 * **@ref**
 * **@xml**
-* **@type**
+* **@tipo**
 
    Para exibir uma tabela listando os mapeamentos dos tipos de dados gerados pelo Adobe Campaign para os diferentes sistemas de gerenciamento de banco de dados, consulte [Mapeamento dos tipos de dados do Adobe Campaign/DBMS](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) seção.
 

@@ -2,11 +2,13 @@
 product: campaign
 title: Use a Adobe ID no Campaign
 description: Saiba mais sobre a integração do Adobe IMS
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Sobre a Adobe ID{#about-adobe-id}
 
-![](../../assets/common.svg)
+
 
 O Sistema de gerenciamento de identidades (IMS) da Adobe ajuda os administradores a criar e gerenciar o acesso do usuário a aplicativos e serviços. Para obter mais informações sobre tipos diferentes de Adobe IDs, consulte [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html).
 

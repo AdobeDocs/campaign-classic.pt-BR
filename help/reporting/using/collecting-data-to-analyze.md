@@ -2,18 +2,19 @@
 product: campaign
 title: Coletar dados para analisar
 description: Coletar dados para analisar
+badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Reporting
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 100%
+source-wordcount: '514'
+ht-degree: 97%
 
 ---
 
 # Coletar dados para analisar{#collecting-data-to-analyze}
 
-![](../../assets/common.svg)
+
 
 Os dados a serem usados para criar o relatório podem ser selecionados diretamente na página do relatório (para obter mais informações, consulte [Uso do contexto](../../reporting/using/using-the-context.md)) ou coletados por meio de uma ou mais queries.
 

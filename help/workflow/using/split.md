@@ -2,9 +2,10 @@
 product: campaign
 title: Split
 description: Saiba mais sobre a atividade de workflow Split
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Divisão{#split}
 
-![](../../assets/v7-only.svg)
+
 
 Uma atividade do tipo **Split** permite dividir um target em vários subconjuntos. O target é construído com todos os resultados recebidos: todas as atividades anteriores devem ter sido concluídas para que essa atividade seja executada.
 
@@ -167,7 +168,7 @@ O template de distribuição de dados permite limitar o número de registros de 
 
       ![](assets/local_validation_notification.png)
 
-   * **[!UICONTROL Delivery label]**: permite definir uma expressão para exibir o rótulo de delivery na notificação de retorno. A expressão padrão fornece informações sobre o rótulo padrão da distribuição (cadeia de caracteres de computação). É possível modificar essa expressão.
+   * **[!UICONTROL Delivery label]**: permite definir uma expressão para exibir o rótulo de delivery na notificação de retorno. A expressão padrão fornece informações sobre o rótulo padrão da distribuição (string de computação). É possível modificar essa expressão.
 
       ![](assets/local_validation_notification_3.png)
 

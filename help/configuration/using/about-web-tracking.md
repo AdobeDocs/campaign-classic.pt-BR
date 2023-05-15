@@ -2,8 +2,9 @@
 product: campaign
 title: Sobre o rastreamento Web
 description: Sobre o rastreamento Web
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 91c31703-75e6-47a4-a877-35682dd687a9
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 4%
@@ -11,8 +12,6 @@ ht-degree: 4%
 ---
 
 # Sobre o rastreamento Web{#about-web-tracking}
-
-![](../../assets/v7-only.svg)
 
 Além do rastreamento padrão que mostra o comportamento de um usuário da Internet clicar em um link em uma mensagem de email, a plataforma do Adobe Campaign permite coletar informações sobre como os usuários da Internet navegam em seu site. Essa coleta de dados é executada pelo módulo de rastreamento Web.
 

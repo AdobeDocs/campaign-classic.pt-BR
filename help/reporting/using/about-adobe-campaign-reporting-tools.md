@@ -1,10 +1,12 @@
 ---
 product: campaign
 title: Sobre as ferramentas de geração de relatórios do Adobe Campaign
-description: Analise o sucesso de suas campanhas em relatórios integrados ou personalizados.
+description: Analise o sucesso de suas campanhas em relatórios integrados ou personalizados
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Introdução aos relatórios {#about-adobe-campaign-reporting-tools}
 
-![](../../assets/common.svg)
+
 
 Além dos [relatórios internos](../../reporting/using/about-campaign-built-in-reports.md), o Adobe Campaign permite gerar relatórios em vários contextos para atender a diferentes necessidades. Os princípios de uso e dos modos de implementação são detalhados neste documento.
 

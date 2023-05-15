@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c1e061b-8636-4285-8d83-97474544d252
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 50a89f993523f3274e87ebac740d1c121082e18c
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 8%
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 # Atualização da estrutura do banco de dados{#updating-the-database-structure}
 
-![](../../assets/v7-only.svg)
+
 
 Para aplicar as modificações feitas nos schemas, inicie o assistente de atualização do banco de dados. Este assistente pode ser acessado via **[!UICONTROL Tools > Advanced > Update database structure]** . Verifica se a estrutura física do banco de dados corresponde à sua descrição lógica e executa os scripts de atualização SQL.
 

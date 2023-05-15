@@ -2,9 +2,11 @@
 product: campaign
 title: Como configurar links rastreados
 description: Como configurar links rastreados
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Como configurar links rastreados{#how-to-configure-tracked-links}
 
-![](../../assets/common.svg)
+
 
 Para cada entrega, você pode rastrear a recepção das mensagens e a ativação dos links inseridos no conteúdo da mensagem. Isso permite rastrear o comportamento dos destinatários seguindo as ações de entrega que foram direcionadas.
 
@@ -23,7 +25,7 @@ O rastreamento se aplica a mensagens, mas o rastreamento web permite monitorar c
 >
 >Os links no conteúdo de email que contêm personalização precisam de sintaxe específica para serem rastreados. Para obter mais informações sobre como adicionar links a emails que podem ser personalizados e que oferecem suporte ao rastreamento, consulte [esta seção](tracking-personalized-links.md).
 
-É altamente recomendável colocar URLs em delimitadores na guia **[!UICONTROL Text content]** antes de aplicar a fórmula de rastreamento. Os delimitadores de URL inseridos nessa guia são usados pelo Adobe Campaign para identificar URLs em cadeias de caracteres. Você pode usar estes pares de delimitadores:
+É altamente recomendável colocar URLs em delimitadores na guia **[!UICONTROL Text content]** antes de aplicar a fórmula de rastreamento. Os delimitadores de URL inseridos nessa guia são usados pelo Adobe Campaign para identificar URLs em strings. Você pode usar estes pares de delimitadores:
 * Parênteses ( )
 * Colchetes [ ]
 * Chaves { }

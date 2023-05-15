@@ -2,9 +2,11 @@
 product: campaign
 title: Instruções de pré-processamento para URLs rastreados
 description: Saiba mais sobre as instruções de pré-processamento a serem usadas para criar o script do URL de um email e ainda rastrear esse URL
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Instruções de pré-processamento {#pre-processing-instructions}
 
-![](../../assets/common.svg)
+
 
 Você pode usar uma sintaxe específica no conteúdo do delivery para adicionar instruções e criar scripts para o URL do email rastreado. As instruções &lt;%@ não estão em JavaScript: essa sintaxe é específica do Adobe Campaign.
 

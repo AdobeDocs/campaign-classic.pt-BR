@@ -2,9 +2,10 @@
 product: campaign
 title: Descrição do modelo de dados do Adobe Campaign Classic
 description: Este documento descreve o modelo de dados Adobe Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Data Model
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 2%
@@ -13,7 +14,6 @@ ht-degree: 2%
 
 # Descrição do modelo de dados da campanha{#data-model-description}
 
-![](../../assets/v7-only.svg)
 
 O Adobe Campaign vem com um modelo de dados predefinido. Esta seção fornece alguns detalhes sobre as tabelas integradas do modelo de dados do Adobe Campaign e sua interação.
 

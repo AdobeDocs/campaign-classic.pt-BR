@@ -2,12 +2,13 @@
 product: campaign
 title: Adicionar um campo calculado do tipo lista discriminada
 description: Saiba como adicionar um campo calculado do tipo lista discriminada
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: workflow
 content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 100%
@@ -16,7 +17,7 @@ ht-degree: 100%
 
 # Adicionar um campo calculado do tipo lista discriminada {#adding-an-enumeration-type-calculated-field}
 
-![](../../assets/v7-only.svg)
+
 
 Aqui queremos criar uma consulta com um campo calculado do tipo **[!UICONTROL Enumerations]**. Este campo gerará uma coluna adicional na janela de visualização de dados. Essa coluna especificará os valores numéricos retornados como resultado para cada recipient (0, 1 e 2). Um gênero será atribuído a cada valor na nova coluna: &quot;Male&quot; para &quot;1&quot;, &quot;Female&quot; para &quot;2&quot; ou &quot;Not indicated&quot; se o valor for igual a &quot;0&quot;.
 

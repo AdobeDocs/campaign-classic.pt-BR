@@ -1,9 +1,10 @@
 ---
 title: Usar a funcionalidade de mesclagem da atividade de desduplicação
 description: Saiba como usar a funcionalidade de mesclagem da atividade de desduplicação
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 100%
@@ -12,7 +13,7 @@ ht-degree: 100%
 
 # Usar a funcionalidade de mesclagem da atividade de desduplicação {#deduplication-merge}
 
-![](../../assets/v7-only.svg)
+
 
 ## Sobre este caso de uso {#about-this-use-case}
 

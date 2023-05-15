@@ -2,8 +2,9 @@
 product: campaign
 title: Gestão dos Recursos de Marketing (MRM)
 description: Gestão dos Recursos de Marketing (MRM)
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Gestão dos Recursos de Marketing (MRM){#marketing-resources-mrm}
 
-![](../../assets/v7-only.svg)
+
 
 Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Recursos de Marketing (MRM)** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../campaign/using/designing-marketing-campaigns.md).
 

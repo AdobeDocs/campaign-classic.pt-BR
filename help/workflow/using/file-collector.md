@@ -2,9 +2,10 @@
 product: campaign
 title: File collector
 description: Saiba mais sobre a atividade de workflow de file collector
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # File collector{#file-collector}
 
-![](../../assets/v7-only.svg)
+
 
 O **File collector** monitora a chegada de um ou mais arquivos em um diretório e ativa sua transição para cada arquivo recebido. Para cada evento, uma variável **[!UICONTROL filename]** contém o nome completo do arquivo recebido. Os arquivos coletados são movidos para outro diretório para fins de arquivamento e para garantir que eles sejam contados apenas uma vez.
 

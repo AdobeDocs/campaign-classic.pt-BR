@@ -2,11 +2,13 @@
 product: campaign
 title: Compartilhamento de ativos com a Adobe Experience Cloud
 description: Compartilhamento de ativos com a Adobe Experience Cloud
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Compartilhamento de ativos com a Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
-![](../../assets/common.svg)
+
 
 O Experience Cloud Assets fornece um repositório único e centralizado de ativos prontos para marketing que você pode compartilhar entre as soluções. Um ativo é um arquivo digital de documento, imagem, vídeo ou áudio.
 

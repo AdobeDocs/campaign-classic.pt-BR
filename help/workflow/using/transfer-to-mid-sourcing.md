@@ -2,8 +2,9 @@
 product: campaign
 title: Transferência para mid-sourcing
 description: Saiba mais sobre workflows de transferência para mid-sourcing
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Transferência para mid-sourcing{#transfer-to-mid-sourcing}
 
-![](../../assets/v7-only.svg)
+
 
 Os workflows detalhados abaixo são instalados com módulo de **Transferência para o mid-sourcing** por padrão. Para obter mais informações sobre o módulo, consulte o [Manual de instalação do Campaign Classic v7](../../installation/using/mid-sourcing-deployment.md).
 

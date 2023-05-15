@@ -2,9 +2,11 @@
 product: campaign
 title: Formatação
 description: Formatação
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1447'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Formatação{#formatting}
 
-![](../../assets/common.svg)
+
 
 ## Modelos JavaScript {#javascript-templates}
 
@@ -376,7 +378,7 @@ Essa transformação é detalhada em XML em um documento conhecido como folha de
 
 Uma folha de estilos é identificada por seu nome e namespace, como schemas e formulários. No entanto, é recomendável adicionar a extensão **.xsl** ao nome da folha de estilos.
 
-A chave de identificação de uma folha de estilos é uma cadeia de caracteres formada pelo namespace e pelo nome separados por dois pontos, por exemplo: **cus:book.xls**.
+A chave de identificação de uma folha de estilos é uma string formada pelo namespace e pelo nome separados por dois pontos, por exemplo: **cus:book.xls**.
 
 ### Estrutura de uma folha de estilos {#structure-of-a-stylesheet}
 
@@ -570,7 +572,7 @@ O Adobe Campaign fornece funções de formatação de data para os modelos JavaS
 
 ### Formatação de data JavaScript {#javascript-date-formatting}
 
-Para exibir uma data no formato desejado, o Adobe Campaign fornece a função **formatDate** que tem como entrada o conteúdo da data e uma cadeia de caracteres especificando o formato de saída com a seguinte sintaxe: **%4Y/%2M/%2D %2H%2N%2S**
+Para exibir uma data no formato desejado, o Adobe Campaign fornece a função **formatDate** que tem como entrada o conteúdo da data e uma string especificando o formato de saída com a seguinte sintaxe: **%4Y/%2M/%2D %2H%2N%2S**
 
 Exemplos:
 
@@ -601,7 +603,7 @@ Exemplos:
 
 ### Formatação de data XSL {#xsl-date-formatting}
 
-Não há função de gerenciamento de data padrão na sintaxe XSLT. Para exibir uma data no formato desejado, o Adobe Campaign fornece a função externa **date-format**. Essa função assume como entrada o conteúdo da data e uma cadeia de caracteres especificando o formato de saída com a seguinte sintaxe: **%4Y/%2M/%2D %2H%2N%2S**
+Não há função de gerenciamento de data padrão na sintaxe XSLT. Para exibir uma data no formato desejado, o Adobe Campaign fornece a função externa **date-format**. Essa função assume como entrada o conteúdo da data e uma string especificando o formato de saída com a seguinte sintaxe: **%4Y/%2M/%2D %2H%2N%2S**
 
 Exemplos:
 

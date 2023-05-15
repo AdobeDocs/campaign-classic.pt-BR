@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Introdução ao rastreamento
-description: Saiba mais sobre as diretrizes gerais para rastreamento no Adobe Campaign Classic
+description: Saiba mais sobre as diretrizes gerais para rastreamento no Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Email
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '683'
 ht-degree: 100%
 
 ---
 
 # Introdução ao rastreamento de mensagens {#get-started-tracking}
 
-![](../../assets/common.svg)
+
 
 Graças às funcionalidades de rastreamento, o Adobe Campaign permite que você rastreie as mensagens enviadas e verifique o comportamento dos recipientes: abrir, clicar em links, cancelamento de subscrição, etc.
 
@@ -71,11 +73,11 @@ Antes de enviar as mensagens com o rastreamento, você pode testar o rastreament
 
 **Rastreamento de uma aplicação web**
 
-Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicativo Web, como formulários e páginas de aterrissagem. [Saiba mais](../../web/using/tracking-a-web-application.md)
+Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicativo Web, como formulários e landing pages. [Saiba mais](../../web/using/tracking-a-web-application.md)
 
 **Recusar rastreamento da aplicação web**
 
-A opção de recusar o rastreamento de aplicações web permite que você interrompa o rastreamento dos comportamentos da Web de usuários finais que recusam o rastreamento comportamental. Você pode incluir a capacidade de exibir um banner em aplicações web ou páginas de aterrissagem para permitir que os usuários recusem. [Saiba mais](../../web/using/web-application-tracking-opt-out.md)
+A opção de recusar o rastreamento de aplicações web permite que você interrompa o rastreamento dos comportamentos da Web de usuários finais que recusam o rastreamento comportamental. Você pode incluir a capacidade de exibir um banner em aplicações web ou landing pages para permitir que os usuários recusem. [Saiba mais](../../web/using/web-application-tracking-opt-out.md)
 
 ## Rastreamento de relatórios {#tracking-reports}
 

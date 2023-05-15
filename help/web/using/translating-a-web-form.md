@@ -2,9 +2,11 @@
 product: campaign
 title: Traduzir um formulário web
 description: Traduzir um formulário web
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 100%
@@ -13,11 +15,11 @@ ht-degree: 100%
 
 # Traduzir um formulário web{#translating-a-web-form}
 
-![](../../assets/common.svg)
+
 
 Você pode traduzir uma aplicação Web em vários idiomas.
 
-Você pode realizar traduções diretamente no console do Adobe Campaign (consulte [Gerenciamento de traduções no editor](#managing-translations-in-the-editor)) ou exportar e importar cadeias de caracteres para exteriorizar traduções (consulte [Exteriorização de tradução](#externalizing-translation)).
+Você pode realizar traduções diretamente no console do Adobe Campaign (consulte [Gerenciamento de traduções no editor](#managing-translations-in-the-editor)) ou exportar e importar strings para exteriorizar traduções (consulte [Exteriorização de tradução](#externalizing-translation)).
 
 A lista de idiomas de tradução disponíveis como padrão é detalhada em [Alteração do idioma de exibição dos formulários](#changing-forms-display-language).
 
@@ -41,15 +43,15 @@ Para definir um ou mais idiomas de tradução, clique no botão **[!UICONTROL Pr
 
 Quando você adiciona idiomas de tradução para uma aplicação web (ou quando o idioma padrão e o idioma de edição são diferentes), uma subguia **[!UICONTROL Translation]**&#x200B;é adicionada à guia **[!UICONTROL Edit]** para gerenciar traduções.
 
-O Adobe Campaign inclui uma ferramenta para traduzir e gerenciar traduções em vários idiomas. Esse editor permite exibir as cadeias de caracteres para traduzir ou aprovar, inserir traduções diretamente na interface ou importar/exportar cadeias de caracteres para exteriorizar traduções.
+O Adobe Campaign inclui uma ferramenta para traduzir e gerenciar traduções em vários idiomas. Esse editor permite exibir as strings para traduzir ou aprovar, inserir traduções diretamente na interface ou importar/exportar strings para exteriorizar traduções.
 
 ## Gerenciamento de traduções no editor {#managing-translations-in-the-editor}
 
-### Coleta de cadeias de caracteres {#collecting-strings}
+### Coleta de strings {#collecting-strings}
 
-A guia **[!UICONTROL Translations]** permite inserir traduções para as cadeias de caracteres que compõem a aplicação web.
+A guia **[!UICONTROL Translations]** permite inserir traduções para as strings que compõem o aplicativo web.
 
-Na primeira vez que você abrir essa guia, ela não conterá dados. Clique no link **[!UICONTROL Collect the strings to translate]** para atualizar as cadeias de caracteres na aplicação web.
+Na primeira vez que você abrir essa guia, ela não conterá dados. Clique no link **[!UICONTROL Collect the strings to translate]** para atualizar as strings no aplicativo web.
 
 O Adobe Campaign coleta rótulos de campos e strings definidas nas guias **[!UICONTROL Texts]** de todos os elementos estáticos: blocos HTML, Javascript etc. Os elementos estáticos são detalhados em [Estáticos elementos em um formulário web](static-elements-in-a-web-form.md).
 
@@ -61,13 +63,13 @@ O Adobe Campaign coleta rótulos de campos e strings definidas nas guias **[!UIC
 > 
 >Se um aviso for exibido dizendo que algumas traduções estão ausentes no dicionário do sistema, consulte [Tradção das strings do sistema](#translating-the-system-strings).
 
-Cada vez que uma cadeia de caracteres é convertida, sua tradução é adicionada ao dicionário de tradução.
+Cada vez que uma string é convertida, sua tradução é adicionada ao dicionário de tradução.
 
-Quando o processo de coleta detecta que uma tradução já existe, essa conversão é exibida na coluna **[!UICONTROL Text]** da cadeia de caracteres. O status da cadeia de caracteres é definido como **[!UICONTROL Translated]**.
+Quando o processo de coleta detecta que uma tradução já existe, essa conversão é exibida na coluna **[!UICONTROL Text]** da string. O status da string é definido como **[!UICONTROL Translated]**.
 
-Para cadeias de caracteres que nunca foram traduzidas, o campo **[!UICONTROL Text]** fica vazio e o status é **[!UICONTROL To translate]**.
+Para strings que nunca foram traduzidas, o campo **[!UICONTROL Text]** fica vazio e o status é **[!UICONTROL To translate]**.
 
-### Filtragem de cadeias de caracteres {#filtering-strings}
+### Filtragem de strings {#filtering-strings}
 
 Por padrão, cada idioma de tradução da aplicação Web é exibido. Há dois filtros padrão: idioma e status. Clique no botão **[!UICONTROL Filters]** e, em seguida, clique em **[!UICONTROL By language or status]** para exibir as caixas suspensas correspondentes. Você também pode criar um filtro avançado. Para obter mais informações, consulte [esta página](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
@@ -75,15 +77,15 @@ Por padrão, cada idioma de tradução da aplicação Web é exibido. Há dois f
 
 Vá para a caixa suspensa **[!UICONTROL Language]** para selecionar o idioma de tradução.
 
-Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translate]** na caixa suspensa **[!UICONTROL Status]**. Também é possível exibir somente cadeias de caracteres traduzidas ou aprovadas.
+Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translate]** na caixa suspensa **[!UICONTROL Status]**. Também é possível exibir somente strings traduzidas ou aprovadas.
 
-### Tradução de cadeias de caracteres {#translating-strings}
+### Tradução de strings {#translating-strings}
 
-1. Para traduzir uma palavra, clique duas vezes na sua linha na lista de cadeias de caracteres.
+1. Para traduzir uma palavra, clique duas vezes na sua linha na lista de strings.
 
    ![](assets/s_ncs_admin_survey_trad_tab_add_term.png)
 
-   A cadeia de caracteres de origem é então exibida na seção superior da janela.
+   A string de origem é então exibida na seção superior da janela.
 
 1. Insira sua tradução na seção inferior. Para aprová-la, marque a opção **[!UICONTROL Translation approved]**.
 
@@ -95,15 +97,15 @@ Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translat
 
 ## Exteriorização de tradução {#externalizing-translation}
 
-É possível exportar e importar cadeias de caracteres a ser traduzidas usando uma ferramenta diferente do Adobe Campaign.
+É possível exportar e importar strings a serem traduzidas usando uma ferramenta diferente do Adobe Campaign.
 
 >[!CAUTION]
 >
->Depois de exportar as cadeias de caracteres, não realize conversões usando a ferramenta integrada. Isso levará a um conflito quando você reimportar as traduções e elas serão perdidas.
+>Depois de exportar as strings, não realize conversões usando a ferramenta integrada. Isso levará a um conflito quando você reimportar as traduções e elas serão perdidas.
 
 ### Exportação de arquivos {#exporting-files}
 
-1. Selecione as aplicações web cujas cadeias de caracteres você deseja importar, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Export strings for translation...]**
+1. Selecione as aplicações web cujas strings você deseja importar, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Export strings for translation...]**
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
@@ -172,7 +174,7 @@ se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myser
 
 Os idiomas e os dicionários de tradução disponíveis como padrão estão listados abaixo.
 
-**Dicionário de sistema padrão**: alguns idiomas incluem um dicionário padrão que contém a tradução das cadeias de caracteres do sistema. Para obter mais informações, consulte [Traduzir as strings do sistema](#translating-the-system-strings).
+**Dicionário de sistema padrão**: alguns idiomas incluem um dicionário padrão que contém a tradução das strings do sistema. Para obter mais informações, consulte [Traduzir as strings do sistema](#translating-the-system-strings).
 
 **Gerenciamento de calendário**: as páginas de uma aplicação web podem incluir um calendário para inserir datas. Por padrão, esse calendário está disponível em vários idiomas (tradução de dias, formato de data).
 
@@ -412,7 +414,7 @@ Os idiomas e os dicionários de tradução disponíveis como padrão estão list
 
 ## Exemplo: exibição de um aplicativo Web em vários idiomas {#example--displaying-a-web-application-in-several-languages}
 
-O formulário web a seguir está disponível em quatro idiomas: inglês, francês, alemão e espanhol. As cadeias de caracteres foram traduzidas por meio da guia **[!UICONTROL Translation]** do formulário web. Como o idioma padrão é inglês, quando a pesquisa é publicada, use a URL padrão para exibi-la em inglês.
+O formulário web a seguir está disponível em quatro idiomas: inglês, francês, alemão e espanhol. As strings foram traduzidas por meio da guia **[!UICONTROL Translation]** do formulário web. Como o idioma padrão é inglês, quando a pesquisa é publicada, use a URL padrão para exibi-la em inglês.
 
 ![](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
@@ -437,9 +439,9 @@ Você pode adicionar **?lang=es** ou **=lang=de** para exibi-la em espanhol ou a
 >
 >Essa seção é reservada apenas a usuários especialistas.
 
-### Tradução de cadeias de caracteres do sistema {#translating-the-system-strings}
+### Tradução de strings do sistema {#translating-the-system-strings}
 
-As cadeias de caracteres do sistema são cadeias de caracteres prontas para uso, utilizadas por todas as aplicações web. Por exemplo: botoes **[!UICONTROL Next]**, **[!UICONTROL Previous]**, **[!UICONTROL Approve]**, mensagens **[!UICONTROL Loading]** etc. Por padrão, alguns idiomas contêm um dicionário com traduções para essas strings. A lista de idiomas é detalhada em [Alteração do idioma de exibição dos formulários](#changing-forms-display-language).
+As strings do sistema são strings prontas para uso, utilizadas por todas as aplicações web. Por exemplo: botoes **[!UICONTROL Next]**, **[!UICONTROL Previous]**, **[!UICONTROL Approve]**, mensagens **[!UICONTROL Loading]** etc. Por padrão, alguns idiomas contêm um dicionário com traduções para essas strings. A lista de idiomas é detalhada em [Alteração do idioma de exibição dos formulários](#changing-forms-display-language).
 
 Se você traduzir a aplicação web para um idioma para o qual o dicionário do sistema não foi traduzido, uma mensagem de aviso será exibida para avisá-lo que algumas traduções estão ausentes.
 
@@ -448,11 +450,11 @@ Se você traduzir a aplicação web para um idioma para o qual o dicionário do 
 Para adicionar um idioma, siga as etapas abaixo:
 
 1. Vá para a árvore do Adobe Campaign e clique em **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]**.
-1. Na seção superior da janela, selecione a cadeia de caracteres do sistema a ser traduzida e clique em **[!UICONTROL Add]** na seção inferior.
+1. Na seção superior da janela, selecione a string do sistema a ser traduzida e clique em **[!UICONTROL Add]** na seção inferior.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
 
-1. Selecione o idioma de tradução e insira uma tradução para a cadeia de caracteres. Você pode aprovar a tradução marcando a opção **[!UICONTROL Translation approved]**.
+1. Selecione o idioma de tradução e insira uma tradução para a string. Você pode aprovar a tradução marcando a opção **[!UICONTROL Translation approved]**.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
@@ -462,7 +464,7 @@ Para adicionar um idioma, siga as etapas abaixo:
 
 >[!CAUTION]
 >
->Não exclua as cadeias de caracteres prontas para uso do sistema.
+>Não exclua as strings prontas para uso do sistema.
 
 ### Adição de um idioma de tradução {#adding-a-translation-language}
 

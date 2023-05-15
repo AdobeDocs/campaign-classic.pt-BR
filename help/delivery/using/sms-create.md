@@ -2,9 +2,11 @@
 product: campaign
 title: Criar SMS com o Campaign
 description: Saiba como criar SMS com o Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: SMS
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 29e56d6bf2817eeb863cbe33f99233a8241f2bf5
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Criar uma entrega de SMS {#creating-a-sms-delivery}
 
-![](../../assets/common.svg)
+
 
 ## Selecionar o canal de entrega {#selecting-the-delivery-channel}
 
@@ -65,7 +67,7 @@ Para criar o conteúdo do SMS, siga as etapas abaixo:
 
 ## Selecionar o público-alvo {#selecting-the-target-population}
 
-O processo detalhado ao selecionar a população do target de um delivery é apresentado [nesta seção](steps-defining-the-target-population.md).
+O processo detalhado ao selecionar a população do target de uma entrega é apresentado [nesta seção](steps-defining-the-target-population.md).
 
 Para obter mais informações sobre o uso de campos de personalização, consulte [esta seção](about-personalization.md).
 

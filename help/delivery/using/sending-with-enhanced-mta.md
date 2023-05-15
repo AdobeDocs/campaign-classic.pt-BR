@@ -2,9 +2,11 @@
 product: campaign
 title: S com o MTA aprimorado no Adobe Campaign Classic
 description: Saiba mais sobre o escopo e as especificidades do envio de emails com o MTA aprimorado do Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Envio com o MTA aprimorado {#sending-with-enhanced-mta}
 
-![](../../assets/common.svg)
+
 
 O **MTA aprimorado do Adobe Campaign** (Agente de Transferência de Correspondência) fornece uma infraestrutura de envio atualizada que permite melhor fornecimento, reputação, taxa de transferência, relatórios, tratamento de rejeição, aumento do IP e gerenciamento da configuração de conexão.
 

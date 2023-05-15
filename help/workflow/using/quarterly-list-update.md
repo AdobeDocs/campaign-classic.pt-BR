@@ -1,10 +1,11 @@
 ---
 product: campaign
-title: Atualização da lista trimestral usando um query incremental
-description: Neste caso de uso, um query incremental é usado para atualizar automaticamente uma lista de recipients.
+title: Atualização da lista trimestral usando uma consulta incremental
+description: Neste caso de uso, um query incremental é usado para atualizar automaticamente uma lista de recipients
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Atualização da lista trimestral usando um query incremental {#quarterly-list-update}
 
-![](../../assets/v7-only.svg)
+
 
 No exemplo a seguir, um [query incremental](incremental-query.md) é usado para atualizar automaticamente uma lista de recipients. Esses recipients são alvos como parte das campanhas de marketing sazonais.
 

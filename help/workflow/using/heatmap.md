@@ -2,9 +2,10 @@
 product: campaign
 title: Workflow HeatMap do Campaign
 description: Monitore seus workflows do com o Workflow HeatMap
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Heatmap
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Workflow HeatMap {#workflow-heatmap}
 
-![](../../assets/v7-only.svg)
+
 
 O Workflow HeatMap do Campaign consiste em uma representação gráfica colorida de todos os workflows que estão sendo executados no momento. Ele só está disponível para **Administradores do Campaign**.
 

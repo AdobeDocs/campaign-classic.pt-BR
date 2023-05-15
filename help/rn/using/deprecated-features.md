@@ -2,11 +2,12 @@
 product: campaign
 title: Recursos obsoletos e removidos do Campaign Classic
 description: Esta página lista recursos obsoletos e removidos do Adobe Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Recursos descontinuados e removidos {#deprecated-and-removed-features}
 
-![](../../assets/v7-only.svg)
+
 
 A Adobe avalia constantemente os recursos do produto para identificar aqueles mais antigos que devem ser substituídos por alternativas mais modernas de forma a melhorar o valor geral do cliente, sempre considerando cuidadosamente a compatibilidade com versões anteriores. Como o Adobe Campaign Classic funciona com ferramentas de terceiros, a compatibilidade é atualizada regularmente, a fim de implementar somente as versões compatíveis. As versões que não são mais compatíveis com o Adobe Campaign Classic estão listadas abaixo e na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 

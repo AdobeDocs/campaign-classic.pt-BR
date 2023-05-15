@@ -2,11 +2,13 @@
 product: campaign
 title: Configuração da integração de públicos compartilhados no Adobe Campaign
 description: Saiba como configurar a integração de públicos compartilhada
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 830c4146d72cd5a744d026a499cfe8613a255da7
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Configuração da integração de públicos compartilhados no Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
 
-![](../../assets/common.svg)
+
 
 Depois do envio dessa solicitação, a Adobe continuará a provisionar a integração e entrará em contato para fornecer detalhes e informações para você finalizar a configuração:
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Opção de pipeline NmsPipeline_Config
 description: Opção de pipeline NmsPipeline_Config
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
@@ -14,7 +16,7 @@ ht-degree: 100%
 
 # Opção de pipeline NmsPipeline_Config {#nmspipeline_config}
 
-![](../../assets/common.svg)
+
 
 Quando a autenticação funcionar, [!DNL pipelined] poderá recuperar os eventos e processá-los. Somente os acionadores configurados no Adobe Campaign são processados, os demais são ignorados. O acionador deve ter sido gerado pelo Analytics e enviado previamente para o pipeline.
 A opção também pode ser configurada com um curinga para capturar todos os acionadores independentemente do nome.

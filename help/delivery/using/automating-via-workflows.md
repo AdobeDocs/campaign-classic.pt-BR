@@ -2,9 +2,11 @@
 product: campaign
 title: Automatizar via workflows
 description: Saiba como automatizar o gerenciamento de conteúdo por meio de workflows
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Workflows
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1190'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Automatizar com workflows{#automating-via-workflows}
 
-![](../../assets/common.svg)
+
 
 ## Atividade de gestão de conteúdo {#content-management-activity}
 
@@ -46,7 +48,7 @@ As propriedades da atividade são divididas em quatro etapas:
 
 * **Novo, criado por meio de um template de publicação**
 
-   Cria um novo conteúdo por meio de um template de publicação. A instância de conteúdo será salva na pasta &quot;cadeia de caracteres&quot; preenchida.
+   Cria um novo conteúdo por meio de um template de publicação. A instância de conteúdo será salva na pasta &quot;string&quot; preenchida.
 
 ### Atualizar o conteúdo {#update-the-content}
 
@@ -86,7 +88,7 @@ O conteúdo é configurado através da atividade &quot;Gestão de conteúdo&quot
 
 ![](assets/d_ncs_content_workflow3.png)
 
-Uma nova instância de conteúdo é criada por meio do modelo de publicação e da pasta de cadeia de caracteres de conteúdo.
+Uma nova instância de conteúdo é criada por meio do modelo de publicação e da pasta de string de conteúdo.
 
 No nosso exemplo, sobrecarregamos o assunto do delivery. Ele será considerado em vez do inserido no template **[!UICONTROL Delivery]**.
 

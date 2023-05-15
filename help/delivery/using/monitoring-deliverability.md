@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: Monitorar a capacidade de delivery no Adobe Campaign Classic
-description: Saiba mais sobre as ferramentas e as diretrizes sobre o monitoramento da capacidade de delivery no Adobe Campaign Classic.
+title: Monitorar a capacidade de delivery no Adobe Campaign
+description: Saiba mais sobre as ferramentas e as diretrizes sobre o monitoramento da capacidade de delivery no Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 100%
 
 ---
 
 # Monitorar a capacidade de delivery{#monitoring-deliverability}
 
-![](../../assets/common.svg)
+
 
 Abaixo você encontrará detalhes sobre as diferentes ferramentas de monitoramento fornecidas pelo Adobe Campaign, bem como algumas diretrizes adicionais sobre como aproveitar os recursos oferecidos pelo Adobe Campaign para monitorar a capacidade de delivery da sua plataforma.
 

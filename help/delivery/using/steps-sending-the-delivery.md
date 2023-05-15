@@ -2,9 +2,11 @@
 product: campaign
 title: Configurar e enviar o delivery
 description: Saiba como configurar e enviar o delivery
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Configurar e enviar o delivery {#configuring-and-sending-the-delivery}
 
-![](../../assets/common.svg)
+
 
 ## Permissões{#delivery-permissions}
 
@@ -58,7 +60,7 @@ Depois de concluído, clique em **[!UICONTROL Confirm delivery]** para iniciar a
 
 Você poderá fechar o assistente do delivery e controlar a execução do delivery a partir da guia **[!UICONTROL Delivery]**, acessível por meio do detalhe deste delivery ou pela lista de deliveries.
 
-Após enviar as mensagens, você pode monitorar e rastrear seus deliveries. Para obter mais informações, consulte essas seções.
+Após enviar as mensagens, você pode monitorar e rastrear suas entregas. Para obter mais informações, consulte essas seções.
 
 * [Monitorar um delivery](about-delivery-monitoring.md)
 * [Entender as falhas de delivery](understanding-delivery-failures.md)

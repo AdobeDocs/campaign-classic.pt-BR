@@ -2,11 +2,12 @@
 product: campaign
 title: Sincronizar perfis
 description: Saiba como sincronizar perfis com o ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1201'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Sincronizar perfis{#synchronizing-profiles}
 
-![](../../assets/v7-only.svg)
+
 
 O ACS Connector replica dados do Campaign v7 para o Campaign Standard. Os dados recebidos do Campaign v7 podem ser usados no Campaign Standard para criar deliveries. É possível ver como os perfis são sincronizados executando as operações listadas abaixo.
 
@@ -137,7 +138,7 @@ Siga as etapas abaixo para adicionar uma delivery de e-mail a um workflow existe
 
    ![](assets/acs_connect_profile_sync_14.png)
 
-1. Clique no ícone da pasta para escolher a página inicial.
+1. Clique no ícone da pasta para escolher a landing page.
 
    ![](assets/acs_connect_profile_sync_15.png)
 

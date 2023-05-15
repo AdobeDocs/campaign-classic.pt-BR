@@ -2,11 +2,12 @@
 product: campaign
 title: Fim da vida útil do suporte para TLS 1.0 e 1.1
 description: Fim da vida útil do suporte para TLS 1.0 e 1.1
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
-source-git-commit: ee7c85f94fc03f6cfca8da11ddea5ebd32d0b2b4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 4%
@@ -15,7 +16,7 @@ ht-degree: 4%
 
 # Fim da vida útil do suporte para TLS 1.0 e 1.1{#eol-tls-support}
 
-![](../../assets/v7-only.svg)
+
 
 O Adobe não oferece mais suporte a sistemas de usuários e sistemas clientes que não são compatíveis com o protocolo TLS 1.2. Se você continuar usando versões mais antigas do TLS, poderá perder o acesso a todos os produtos e serviços do Adobe.
 

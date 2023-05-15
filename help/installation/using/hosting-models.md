@@ -2,11 +2,12 @@
 product: campaign
 title: Modelos de hospedagem
 description: Modelos de hospedagem do Discover Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # Modelos de hospedagem{#hosting-models}
 
-![](../../assets/v7-only.svg)
+
 
 A Adobe Campaign oferece uma escolha de três modelos de hospedagem, proporcionando flexibilidade e liberdade para escolher o melhor modelo ou modelos para atender às necessidades dos negócios.
 

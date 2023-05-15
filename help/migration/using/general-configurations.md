@@ -2,13 +2,14 @@
 product: campaign
 title: Configurações gerais
 description: Configurações gerais
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
 topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2625'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 # Configurações gerais{#general-configurations}
 
-![](../../assets/v7-only.svg)
+
 
 Esta seção detalha a configuração a ser executada no Adobe Campaign v7 ao migrar de um v5.11 ou v6.02.
 

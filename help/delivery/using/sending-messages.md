@@ -2,9 +2,11 @@
 product: campaign
 title: Etapas principais para enviar um email
 description: Saiba como confirmar o delivery de um email e descubra as especificidades da entrega de mensagens de email
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Etapas principais para enviar um email {#key-steps-to-send-an-email}
 
-![](../../assets/common.svg)
+
 
 Depois que o email for criado e configurado, você poderá enviá-lo ao público-alvo principal. Esta seção apresenta as etapas principais para verificar e confirmar o delivery de um email.
 

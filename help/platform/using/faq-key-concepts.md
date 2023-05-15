@@ -2,11 +2,12 @@
 product: campaign
 title: Principais conceitos
 description: Perguntas frequentes sobre o Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Principais conceitos {#key-concepts}
 
-![](../../assets/v7-only.svg)
+
 
 Conheça as principais etapas para começar a usar o Adobe Campaign.
 
@@ -98,9 +99,9 @@ Saiba como usar o Adobe Campaign para [enviar uma notificação por push persona
 
 Saiba como [criar uma pesquisa online](../../surveys/using/getting-started-with-surveys.md) e conheça as principais etapas para gerá-la e publicá-la com o Campaign Classic.
 
-## Como criar uma página de aterrissagem? {#how-to-create-landing-page-}
+## Como criar uma landing page? {#how-to-create-landing-page-}
 
-Você pode usar o editor de conteúdo digital do Adobe Campaign para criar uma página de aterrissagem e definir o mapeamento com campos do banco de dados.
+Você pode usar o editor de conteúdo digital do Adobe Campaign para criar uma landing page e definir o mapeamento com campos do banco de dados.
 
 [Clique aqui para saber mais](../../web/using/creating-a-landing-page.md).
 

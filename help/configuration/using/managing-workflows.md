@@ -2,11 +2,13 @@
 product: campaign
 title: Gerenciamento de workflows
 description: Gerenciamento de workflows
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 617b0050-6b04-4c68-9f63-511baae99f41
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 11%
@@ -15,7 +17,7 @@ ht-degree: 11%
 
 # Gerenciamento de workflows{#managing-workflows}
 
-![](../../assets/common.svg)
+
 
 Por padrão, seus novos workflows são baseados em um template de workflow que foi pré-configurado e baseado em uma tabela de recipient (nms:recipient). Para que sejam baseados automaticamente na tabela personalizada de recipients referenciados no **Nms_DefaultRcpSchema** (consulte [Configuração da interface](../../configuration/using/configuring-the-interface.md) , você deve criar um novo template de workflow.
 

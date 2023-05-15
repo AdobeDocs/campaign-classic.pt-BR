@@ -2,9 +2,10 @@
 product: campaign
 title: Sobre serviços da Web
 description: Sobre serviços da Web
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: API
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 3%
@@ -12,8 +13,6 @@ ht-degree: 3%
 ---
 
 # Sobre serviços da Web{#about-web-services}
-
-![](../../assets/v7-only.svg)
 
 ## Definição de APIs do Adobe Campaign {#definition-of-adobe-campaign-apis}
 

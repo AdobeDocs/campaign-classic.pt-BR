@@ -2,10 +2,11 @@
 product: campaign
 title: Technote - Atualizações de configuração do Adobe Campaign
 description: Atualizações de configuração do Adobe Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 8ea5a42e0539ea23c1d9940e3f38f2c90fdcc223
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 18%
@@ -14,7 +15,7 @@ ht-degree: 18%
 
 # Atualizações de configuração do Adobe Campaign em 2021 {#acc-config-updates}
 
-![](../../assets/v7-only.svg)
+
 
 A infraestrutura e as configurações devem ser atualizadas regularmente com as compilações e correções de produtos mais recentes. Essas correções são necessárias para garantir a continuidade do serviço e a segurança. Além disso, as atualizações serão necessárias para se alinharem às alterações de terceiros.
 

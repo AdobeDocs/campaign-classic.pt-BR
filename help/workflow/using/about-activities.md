@@ -2,9 +2,10 @@
 product: campaign
 title: Sobre atividades de fluxo de trabalho
 description: Sobre atividades
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Atividades de fluxos de trabalho{#wf-activities}
 
-![](../../assets/v7-only.svg)
+
 
 Esta seção descreve todas as atividades disponíveis. De acordo com o nó ou o contexto em que o workflow é criado/editado, as atividades disponíveis podem variar. Por exemplo, os workflows criados em uma campanha têm atividades de delivery em canais específicos.
 

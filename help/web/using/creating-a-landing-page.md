@@ -1,21 +1,23 @@
 ---
 product: campaign
-title: Criar uma página de aterrissagem
-description: Criar uma página de aterrissagem
+title: Criar uma landing page
+description: Criar uma landing page
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 100%
 
 ---
 
-# Criar uma página de aterrissagem{#creating-a-landing-page}
+# Criar uma landing page{#creating-a-landing-page}
 
-![](../../assets/common.svg)
 
-## Sobre a criação de páginas de aterrissagem {#about-landing-pages-creation}
+
+## Sobre a criação de landing pages {#about-landing-pages-creation}
 
 Este caso de uso mostra o uso do Editor digital para criar uma Landing page no console do Adobe Campaign.
 
@@ -23,9 +25,9 @@ Antes de começar a configurar a Landing page no Adobe Campaign, verifique se vo
 
 O principal objetivo desse caso de uso é fazer com que os campos de formulário da Landing page correspondam aos campos internos no Adobe Campaign usando as funções no DCE.
 
-## Criação da página de aterrissagem {#creating-the-landing-page}
+## Criação da landing page {#creating-the-landing-page}
 
-Para criar um novo aplicativo web tipo página de aterrissagem, siga estas etapas:
+Para criar um novo aplicativo web tipo landing page, siga estas etapas:
 
 1. Vá para a guia **[!UICONTROL Campaigns]**, clique no link **[!UICONTROL Web application]** e clique no botão **[!UICONTROL Create]**.
 1. Selecione o modelo **[!UICONTROL New landing page]**, insira um rótulo e clique em **[!UICONTROL Save]**.

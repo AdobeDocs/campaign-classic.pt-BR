@@ -2,9 +2,10 @@
 product: campaign
 title: Enviar emails transacionais com anexos
 description: Saiba como enviar emails transacionais com anexos individuais e/ou personalizados usando o Adobe Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Caso de uso: enviar emails transacionais com anexos {#transactional-email-with-attachments}
 
-![](../../assets/v7-only.svg)
+
 
 O objetivo deste caso de uso é adicionar anexos de email, em tempo real, a expedições de saída.
 

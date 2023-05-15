@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Tempo de processamento do Centro de mensagens
-description: Saiba mais sobre o relatório de tempo de processamento do Centro de mensagens.
+description: Saiba mais sobre o relatório de tempo de processamento do Centro de mensagens
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Tempo de processamento do Centro de mensagens {#message-center-processing-time}
 
-![](../../assets/v7-only.svg)
+
 
 Esse relatório exibe os indicadores principais relacionados à fila em tempo real.
 

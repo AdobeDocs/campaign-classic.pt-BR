@@ -1,31 +1,33 @@
 ---
 product: campaign
 title: Descompactação ou descriptografia de um arquivo
-description: Saiba como descompactar ou descriptografar um arquivo no Campaign Classic antes do processamento.
+description: Saiba como descompactar ou descriptografar um arquivo no Campaign antes do processamento
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '715'
 ht-degree: 100%
 
 ---
 
 # Descompactar ou descriptografar um arquivo {#unzipping-or-decrypting-a-file-before-processing}
 
-![](../../assets/common.svg)
+
 
 O Adobe Campaign permite importar arquivos compactados ou criptografados. Antes de serem lidos em uma atividade [Data loading (file)](../../workflow/using/data-loading--file-.md), é possível definir um pré-processamento para descompactar ou descriptografar o arquivo.
 
 Para fazer isso:
 
-1. Use o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#decrypting-data) para gerar um par de chave pública/privada.
+1. Use o [Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#decrypting-data) para gerar um par de chave pública/privada.
 
    >[!NOTE]
    >
-   >O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
+   >O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
    >
    >Observe que sua instância deve estar hospedada no AWS e atualizada com a [build mais recente disponível](../../rn/using/rn-overview.md). Saiba como verificar a versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
 
@@ -50,27 +52,27 @@ Um exemplo é apresentado no caso de uso abaixo.
 
 ## Caso de uso: importação de dados criptografados usando uma chave gerada pelo Painel de controle {#use-case-gpg-decrypt}
 
-Nesse caso de uso, criaremos um fluxo de trabalho para importar dados que foram criptografados em um sistema externo usando uma chave gerada no Painel de controle do Campaign.
+Nesse caso de uso, criaremos um fluxo de trabalho para importar dados que foram criptografados em um sistema externo usando uma chave gerada no Painel de controle.
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#video)
 
 As etapas para executar esse caso de uso são as seguintes:
 
-1. Use o Painel de controle do Campaign para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#decrypting-data).
+1. Use o Painel de controle para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#decrypting-data).
 
    * A chave pública será compartilhada com o sistema externo, que a usará para criptografar os dados que serão enviados para o Campaign.
    * A chave privada será usada pelo Campaign Classic para descriptografar os dados criptografados recebidos.
 
    ![](assets/gpg_generate.png)
 
-1. No sistema externo, use a chave pública baixada a partir do Painel de controle do Campaign para criptografar os dados que serão importados para o Campaign Classic.
+1. No sistema externo, use a chave pública baixada a partir do Painel de controle para criptografar os dados que serão importados para o Campaign Classic.
 
-1. No Campaign Classic, crie um workflow para importar os dados criptografados e descriptografá-los usando a chave privada instalada por meio do Painel de controle do Campaign. Para fazer isso, criaremos um workflow da seguinte maneira:
+1. No Campaign Classic, crie um workflow para importar os dados criptografados e descriptografá-los usando a chave privada instalada por meio do Painel de controle. Para fazer isso, criaremos um workflow da seguinte maneira:
 
    ![](assets/gpg_import_workflow.png)
 
    * Atividade **[!UICONTROL File transfer]**: transfere o arquivo de uma fonte externa para o Campaign Classic. Neste exemplo, queremos transferir o arquivo de um servidor SFTP.
-   * Atividade **[!UICONTROL Data loading (file)]**: carrega os dados do arquivo no banco de dados e os decodifica usando a chave privada gerada no Painel de controle do Campaign.
+   * Atividade **[!UICONTROL Data loading (file)]**: carrega os dados do arquivo no banco de dados e os decodifica usando a chave privada gerada no Painel de controle.
 
 1. Abra a atividade **[!UICONTROL File transfer]** e especifique a conta externa da qual deseja importar o arquivo .gpg criptografado.
 
@@ -88,7 +90,7 @@ As etapas para executar esse caso de uso são as seguintes:
 
    >[!CAUTION]
    >
-   >Neste exemplo, estamos usando a senha padrão do Painel de controle do Campaign, que é &quot;passphrase&quot;.
+   >Neste exemplo, estamos usando a senha padrão do Painel de controle, que é &quot;passphrase&quot;.
    >
    >Caso já tenha tido chaves GPG instaladas em sua instância por meio de uma solicitação do Atendimento ao cliente no passado, a senha pode ter sido alterada e ser diferente da padrão.
 

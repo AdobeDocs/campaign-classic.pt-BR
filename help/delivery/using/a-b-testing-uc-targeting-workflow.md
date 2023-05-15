@@ -2,9 +2,11 @@
 product: campaign
 title: Criar um fluxo de trabalho de direcionamento
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Criar um fluxo de trabalho de direcionamento {#step-1--creating-a-targeting-workflow}
 
-![](../../assets/common.svg)
+
 
 É necessário criar o workflow na guia **[!UICONTROL Targeting and Workflows]** de uma campanha. Ele é composto de uma atividade **[!UICONTROL Query]**, uma atividade **[!UICONTROL Split]** vinculada às duas atividades **[!UICONTROL Email delivery]**, uma atividade **[!UICONTROL Wait]**, uma atividade **[!UICONTROL JavaScript code]** e uma atividade **[!UICONTROL Delivery]**.
 

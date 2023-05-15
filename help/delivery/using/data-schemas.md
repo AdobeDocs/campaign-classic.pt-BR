@@ -2,9 +2,11 @@
 product: campaign
 title: Uso de esquemas de dados no Campaign
 description: Saiba como usar esquemas de dados no Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Data Model
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Uso de esquemas de dados no Campaign{#data-schemas}
 
-![](../../assets/common.svg)
+
 
 Abaixo estão alguns princípios gerais sobre o uso de schemas de dados no Adobe Campaign.
 
@@ -37,7 +39,7 @@ Em um schema de gestão de conteúdo, o elemento principal é representado pela 
 <element name="book" template="ncm:content" xmlChildren="true">
 ```
 
-O atributo **template** digitado no elemento principal permite estender o schema com propriedades genéricas para todas as definições de conteúdo, como o nome, a data de criação, o autor, a cadeia de caracteres associada, etc.
+O atributo **template** digitado no elemento principal permite estender o schema com propriedades genéricas para todas as definições de conteúdo, como o nome, a data de criação, o autor, a string associada, etc.
 
 Essas propriedades são descritas no schema **ncm:content**.
 
@@ -150,11 +152,11 @@ O atributo **ref** no elemento a ser referenciado deve ser preenchido com o cami
 
 A estrutura do capítulo é movida para o elemento com o nome &quot;seção&quot; fora do elemento principal. O capítulo e a seção fazem referência ao elemento &quot;seção&quot;.
 
-## Cálculo de cadeia de caracteres {#compute-string}
+## Cálculo de string {#compute-string}
 
-Um **Cálculo de cadeia de caracteres** é uma expressão XPath usada para criar uma cadeia de caracteres representando uma instância de conteúdo.
+Um **Cálculo de string** é uma expressão XPath usada para criar uma string representando uma instância de conteúdo.
 
-Aqui está nosso schema de exemplo com seu **Cálculo de cadeia de caracteres**:
+Aqui está nosso schema de exemplo com seu **Cálculo de string**:
 
 ```
 <srcSchema name="book" namespace="cus">

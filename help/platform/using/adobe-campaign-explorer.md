@@ -2,11 +2,12 @@
 product: campaign
 title: Usar o explorador do Adobe Campaign
 description: Saiba como usar o Explorador do Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Usar o explorador do Adobe Campaign {#using-adobe-campaign-explorer}
 
-![](../../assets/v7-only.svg)
+
 
 O explorador do Adobe Campaign é acessível por meio do ícone da barra de ferramentas. Ele permite que você acesse todos os recursos do Adobe Campaign, as telas de configuração e uma visão mais detalhada de alguns dos elementos da plataforma.
 

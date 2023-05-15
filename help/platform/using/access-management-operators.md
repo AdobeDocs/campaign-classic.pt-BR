@@ -2,20 +2,21 @@
 product: campaign
 title: Introdução aos operadores do Campaign
 description: Saiba como criar e gerenciar usuários do Campaign
+badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1149'
-ht-degree: 100%
+source-wordcount: '1160'
+ht-degree: 99%
 
 ---
 
 # Criar e gerenciar operadores {#operators}
 
-![](../../assets/common.svg)
+
 
 ## Introdução aos operadores do Campaign  {#about-operators}
 

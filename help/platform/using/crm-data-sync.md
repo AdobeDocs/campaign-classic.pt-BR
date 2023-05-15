@@ -2,9 +2,10 @@
 product: campaign
 title: Sincronização de dados dos Conectores CRM
 description: Gerenciar dados entre o Campaign e o CRM
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Salesforce Integration, Microsoft CRM Integration
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Sincronizar dados entre o Campaign e o CRM {#data-synchronization}
 
-![](../../assets/v7-only.svg)
+
 
 A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de fluxo de trabalho: [conector CRM](../../workflow/using/crm-connector.md).
 
@@ -204,7 +205,7 @@ Outras conversões possíveis são:
 
 * **[!UICONTROL Date only]**: esse modo exclui os campos do tipo Data + Hora.
 * **[!UICONTROL Without time offset]**: esse modo cancela o gerenciamento de fuso horário aplicado no modo padrão.
-* **[!UICONTROL Copy/Paste]**: esse modo usa dados brutos como cadeias de caracteres (sem conversão).
+* **[!UICONTROL Copy/Paste]**: esse modo usa dados brutos como strings (sem conversão).
 
 ### Processamento de erros {#error-processing}
 

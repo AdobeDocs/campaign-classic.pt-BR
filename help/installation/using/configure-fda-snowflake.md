@@ -2,11 +2,12 @@
 product: campaign
 title: Configuração do acesso ao Snowflake
 description: Saiba como configurar o acesso ao Snowflake no FDA
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 38%
@@ -15,7 +16,7 @@ ht-degree: 38%
 
 # Configuração do acesso ao Snowflake {#configure-access-to-snowflake}
 
-![](../../assets/v7-only.svg)
+
 
 Usar Campanha **Federated Data Access** (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao [!DNL Snowflake].
 

@@ -2,8 +2,9 @@
 product: campaign
 title: Definir mapeamento de dados externos
 description: Saiba como mapear dados em um banco de dados externo
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: a7253ca7-47e5-4def-849d-3ce1c9b948fb
-source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 91%
@@ -12,7 +13,7 @@ ht-degree: 91%
 
 # Definir mapeamento de dados externos {#defining-data-mapping}
 
-![](../../assets/v7-only.svg)
+
 
 O Adobe Campaign permite definir o mapeamento nos dados em uma tabela externa.
 

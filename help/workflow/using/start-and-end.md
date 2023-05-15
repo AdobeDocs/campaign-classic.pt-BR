@@ -2,9 +2,10 @@
 product: campaign
 title: Início e término
 description: Saiba mais sobre atividades de workflow de início e término
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Início e término{#start-and-end}
 
-![](../../assets/v7-only.svg)
+
 
 As atividades **[!UICONTROL Start]** e **[!UICONTROL End]** permitem marcar graficamente o início e o fim de um workflow. Essas atividades não têm impacto funcional e, portanto, são opcionais.
 

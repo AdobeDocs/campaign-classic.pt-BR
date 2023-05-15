@@ -2,11 +2,12 @@
 product: campaign
 title: Introdução ao gerenciamento de recursos de marketing
 description: Sobre o gerenciamento de recursos de marketing
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Introdução ao gerenciamento de recursos de marketing{#about-marketing-resource-management}
 
-![](../../assets/v7-only.svg)
+
 
 O módulo **Marketing Resource Management (MRM)** permite controlar ações de marketing em um modo colaborativo fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos.
 

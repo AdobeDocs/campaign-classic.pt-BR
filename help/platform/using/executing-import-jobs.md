@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: Configurar trabalhos de importação
-description: Saiba como configurar e executar trabalhos de importação no Campaign Classic.
+description: Saiba como configurar e executar trabalhos de importação no Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2955'
+source-wordcount: '2954'
 ht-degree: 100%
 
 ---
 
 # Configurar trabalhos de importação {#executing-import-jobs}
 
-![](../../assets/common.svg)
+
 
 O Adobe Campaign permite importar dados para o banco de dados de um ou mais arquivos no texto, no formato CSV, TAB ou XML. Esses arquivos são associados a uma tabela (principal ou vinculada) e cada campo do arquivo de origem é associado a um campo do banco de dados.
 
@@ -161,7 +163,7 @@ Os campos calculados são novas colunas adicionadas ao arquivo de origem e calcu
 Existem quatro tipos de campos calculados:
 
 * **[!UICONTROL Fixed string]**: o valor do campo calculado é o mesmo para todas as linhas do arquivo de origem. Permite definir o valor de um campo dos registros inseridos ou atualizados. Por exemplo, você pode definir um marcador para &quot;sim&quot; para todos os registros importados.
-* **[!UICONTROL String with JavaScript tags]**: o valor do campo calculado é uma cadeia de caracteres que contém comandos JavaScript.
+* **[!UICONTROL String with JavaScript tags]**: o valor do campo calculado é uma string que contém comandos JavaScript.
 * **[!UICONTROL JavaScript expression]**: o valor do campo calculado é o resultado da avaliação de uma função JavaScript. O valor retornado pode ser um número, uma data etc.
 * **[!UICONTROL Enumeration]**: o valor do campo é atribuído de acordo com um valor contido no arquivo de origem. O editor permite especificar a coluna de origem e inserir a lista de valores de enumeração, como no exemplo a seguir:
 

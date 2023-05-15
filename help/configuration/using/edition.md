@@ -1,19 +1,18 @@
 ---
 product: campaign
-title: Edição
-description: Edição
+title: Editar árvore de navegação do Campaign Explorer
+description: Editar árvore de navegação do Campaign Explorer
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 204d4a24-267c-4976-90d9-7bf5bee8d116
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
 
 # Editar árvore de navegação do Campaign Explorer{#edition}
-
-![](../../assets/v7-only.svg)
 
 A tela para criar e configurar os documentos de configuração da hierarquia de navegação é acessível por meio da variável **[!UICONTROL Administration > Configuration > Navigation hierarchies]** nó:
 

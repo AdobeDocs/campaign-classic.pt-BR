@@ -2,9 +2,10 @@
 product: campaign
 title: Alterar imagens de atividade
 description: Saiba como alterar a imagem da atividade
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Alterar imagens de atividade{#change-activity-images}
 
-![](../../assets/v7-only.svg)
+
 
 As imagens usadas nos diagramas dos vários workflows podem ser alteradas. No entanto, elas devem estar em conformidade com determinadas restrições. Estes são os estágios de implementação:
 

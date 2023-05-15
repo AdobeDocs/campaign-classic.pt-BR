@@ -2,9 +2,11 @@
 product: campaign
 title: Definir o público correto
 description: Saiba mais sobre as práticas recomendadas ao selecionar seu público
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Audiences
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Definir o público correto {#define-the-right-audience}
 
-![](../../assets/common.svg)
+
 
 A segmentação de público-alvo é fundamental: crie suas listas cuidadosamente, teste seus emails em clientes de email populares e dispositivos móveis e verifique se suas listas de email estão atualizadas (sem endereços desconhecidos ou obsoletos). Você também pode enviar provas que ajudam a configurar um ciclo de validação completo.
 

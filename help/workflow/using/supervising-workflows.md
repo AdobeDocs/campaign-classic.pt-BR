@@ -2,9 +2,10 @@
 product: campaign
 title: Supervisão de worflows
 description: Saiba como supervisionar workflows do Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Caso de uso: supervisionar workflows{#supervising-workflows}
 
-![](../../assets/v7-only.svg)
+
 
 Esse caso de uso detalha a criação de um workflow que permite monitorar o status de um conjunto de workflows que são &quot;pausados&quot;, &quot;interrompido&quot; ou &quot;com erros&quot;.
 
@@ -93,7 +94,7 @@ A segunda parte do código JavaScript permite **exibir uma mensagem para cada wo
 
 >[!NOTE]
 >
->As cadeias de caracteres criadas devem ser carregadas nas variáveis de evento do workflow.
+>As strings criadas devem ser carregadas nas variáveis de evento do workflow.
 
 ```
 for each ( var wkf in ndWkfError.workflow ) 

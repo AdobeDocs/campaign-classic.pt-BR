@@ -2,9 +2,10 @@
 product: campaign
 title: Templates de campanha de marketing
 description: Templates de campanha de marketing
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 100%
@@ -12,8 +13,6 @@ ht-degree: 100%
 ---
 
 # Criar e configurar modelos de campanha {#campaign-templates}
-
-![](../../assets/v7-only.svg)
 
 Todas as campanhas de marketing são baseadas em um modelo, que armazena as principais características e recursos. Os templates do Campaign são centralizados no nó **[!UICONTROL Resources > Templates > Campaign templates]**. Um template de parâmetro é fornecido como padrão. Ele permite criar uma nova campanha usando todos os módulos disponíveis (Documentos, tarefas, seed addresses, etc.), mas os módulos oferecidos dependem dos seus direitos e da configuração da plataforma Adobe Campaign.
 

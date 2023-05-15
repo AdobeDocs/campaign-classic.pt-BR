@@ -2,11 +2,12 @@
 product: campaign
 title: Perguntas frequentes sobre atualização de build
 description: Perguntas frequentes sobre atualizações de build do Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 56ff1f02e614a91200a8f2ca106dcc76e82f122d
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2031'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Perguntas frequentes sobre atualização de build {#build-upgrade-faq}
 
-![](../../assets/v7-only.svg)
+
 
 O Adobe Campaign é atualizado regularmente. Se você conhece as [Notas de versão](../../rn/using/rn-overview.md) publicadas, provavelmente sabe que a cada ano são lançadas em média 2/3 das versões secundárias, repletas de novos recursos, melhorias e correções. Além disso, periodicamente liberamos builds apenas com correções cumulativas. Essa frequência regular de atualizações tem como objetivo fazer com que você tenha disponível as atualizações melhores e mais recentes, além de manter seu ambiente totalmente protegido e de melhorar obviamente sua experiência com nosso produto.
 

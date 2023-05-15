@@ -2,9 +2,11 @@
 product: campaign
 title: Templates de publicação
 description: Templates de publicação
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Templates
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Templates de publicação{#publication-templates}
 
-![](../../assets/common.svg)
+
 
 ## Sobre os modelos de publicação {#about-publication-templates}
 
@@ -27,7 +29,7 @@ O template de publicação é o cartão de identidade do conteúdo a ser publica
 
 Um template de publicação é identificado por seu nome e namespace.
 
-A chave de identificação de uma folha de estilos é uma cadeia de caracteres formada pelo namespace e pelo nome separados por dois pontos, por exemplo: **cus:newsletter**.
+A chave de identificação de uma folha de estilos é uma string formada pelo namespace e pelo nome separados por dois pontos, por exemplo: **cus:newsletter**.
 
 >[!NOTE]
 >

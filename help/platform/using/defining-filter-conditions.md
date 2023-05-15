@@ -2,11 +2,13 @@
 product: campaign
 title: Definição de condições de filtro
 description: Definição de condições de filtro
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Definir condições de filtro{#defining-filter-conditions}
 
-![](../../assets/common.svg)
+
 
 ## Escolher o operador {#choosing-the-operator}
 
@@ -273,11 +275,11 @@ Se necessário, adicione uma coluna durante a formatação de dados. Um campo ca
 
 Existem quatro tipos de campos calculados:
 
-* **[!UICONTROL Fixed string]**: permite adicionar uma cadeia de caracteres.
+* **[!UICONTROL Fixed string]**: permite adicionar uma string.
 
    ![](assets/query_editor_nveau_60.png)
 
-* **[!UICONTROL String with JavaScript tags]**: o valor do campo calculado combina uma cadeia de caracteres e diretivas JavaScript.
+* **[!UICONTROL String with JavaScript tags]**: o valor do campo calculado combina uma string e diretivas JavaScript.
 
    ![](assets/query_editor_nveau_61.png)
 
@@ -430,7 +432,7 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>Ascii</strong><br /> </td> 
-   <td> Retorna o valor ASCII do primeiro caractere na cadeia de caracteres.<br /> </td> 
+   <td> Retorna o valor ASCII do primeiro caractere na string.<br /> </td> 
    <td> Ascii(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -440,12 +442,12 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>Charindex</strong><br /> </td> 
-   <td> Retorna a posição da cadeia de caracteres 2 na cadeia de caracteres 1.<br /> </td> 
+   <td> Retorna a posição da string 2 na string 1.<br /> </td> 
    <td> Charindex(&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>GetLine</strong><br /> </td> 
-   <td> Retorna a linha enésima (de 1 a n) da cadeia de caracteres<br /> </td> 
+   <td> Retorna a linha enésima (de 1 a n) da string<br /> </td> 
    <td> GetLine(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -510,8 +512,8 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>Right</strong><br /> </td> 
-   <td> Retorna os últimos n caracteres da cadeia de caracteres<br /> </td> 
-   <td> Right(&lt;cadeia de caracteres&gt;)<br /> </td> 
+   <td> Retorna os últimos n caracteres da string<br /> </td> 
+   <td> Right(&lt;string&gt;)<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Rtrim</strong><br /> </td> 
@@ -521,11 +523,11 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   <tr> 
    <td> <strong>Smart</strong><br /> </td> 
    <td> Retorna a cadeira de caracteres com a primeira letra de cada palavra em maiúsculas<br /> </td> 
-   <td> Smart(&lt;cadeia de caracteres&gt;)<br /> </td> 
+   <td> Smart(&lt;string&gt;)<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Substring</strong><br /> </td> 
-   <td> Extrai a subcadeia de caracteres iniciando no caractere n1 da cadeira de caracteres e de comprimento n2<br /> </td> 
+   <td> Extrai a substring iniciando no caractere n1 da cadeira de caracteres e de comprimento n2<br /> </td> 
    <td> Substring(&lt;string&gt;, &lt;offset&gt;, &lt;length&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -535,8 +537,8 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>Upper</strong><br /> </td> 
-   <td> Retorna a cadeia de caracteres em maiúsculas<br /> </td> 
-   <td> Upper(&lt;cadeia de caracteres&gt;)<br /> </td>  
+   <td> Retorna a string em maiúsculas<br /> </td> 
+   <td> Upper(&lt;string&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>VirtualLink</strong><br /> </td> 
@@ -550,7 +552,7 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>dataLength</strong><br /> </td> 
-   <td> Retorna o tamanho da cadeia de caracteres<br /> </td> 
+   <td> Retorna o tamanho da string<br /> </td> 
    <td> dataLength(&lt;string&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -722,7 +724,7 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>ToDateTime</strong><br /> </td> 
-   <td> Converte uma cadeia de caracteres em uma data + hora<br /> </td> 
+   <td> Converte uma string em uma data + hora<br /> </td> 
    <td> ToDateTime(&lt;string&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -969,7 +971,7 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>NoNull</strong><br /> </td> 
-   <td> Retorna a cadeia de caracteres vazia se o argumento for NULL.<br /> </td> 
+   <td> Retorna a string vazia se o argumento for NULL.<br /> </td> 
    <td> NoNull(&lt;valor&gt;)<br /> </td>   
   </tr> 
   <tr> 

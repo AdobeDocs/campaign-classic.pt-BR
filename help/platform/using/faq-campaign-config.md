@@ -2,11 +2,12 @@
 product: campaign
 title: Perguntas frequentes sobre configurações do Campaign
 description: Perguntas frequentes sobre o Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Perguntas frequentes sobre configurações do Campaign {#settings-faq}
 
-![](../../assets/v7-only.svg)
+
 
 Conheça as principais configurações para definir a instância do Campaign de acordo com as suas necessidades.
 

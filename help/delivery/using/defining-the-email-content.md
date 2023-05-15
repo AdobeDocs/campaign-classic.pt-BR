@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Definir o conteúdo de email no Adobe Campaign Classic
-description: Saiba como definir o conteúdo de email ao usar o Adobe Campaign Classic.
+description: Saiba como definir o conteúdo de email ao usar o Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: f5bd8c1806440b47225130070e166d90d99dcc75
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '1989'
 ht-degree: 100%
 
 ---
 
 # Definir o conteúdo do email {#defining-the-email-content}
 
-![](../../assets/common.svg)
+
 
 ## Remetente {#sender}
 
@@ -180,13 +182,13 @@ Para gerenciar as imagens por meio do assistente do delivery:
 * Você pode carregar imagens manualmente sem esperar a fase de análise de delivery. Para fazer isso, clique em **[!UICONTROL Upload the images straightaway...]**.
 * Você pode especificar outro caminho para acessar as imagens no servidor de rastreamento. Para fazer isso, insira-o no campo **[!UICONTROL Images URL]**. Esse valor substitui o valor definido nos parâmetros do assistente de instalação.
 
-Quando você abre conteúdo HTML com imagens incluídas no assistente do delivery, aparece uma mensagem com a opção de carregar as imagens imediatamente, de acordo com os parâmetros do delivery.
+Quando você abre conteúdo HTML com imagens incluídas no assistente do delivery, aparece uma mensagem com a opção de fazer upload das imagens imediatamente, de acordo com os parâmetros da entrega.
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 
 >[!IMPORTANT]
 >
->* Os caminhos de acesso à imagem são modificados durante o carregamento manual ou ao enviar as mensagens.
+>* Os caminhos de acesso à imagem são modificados durante o upload manual ou ao enviar as mensagens.
 > 
 >* Para evitar problemas de desempenho, se você incluir imagens baixadas imediatamente de um URL personalizado como [anexo](attaching-files.md), cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [ lista de opções do Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
 
@@ -207,7 +209,7 @@ Para cada imagem detectada, você pode ver seu status:
 
 * Se uma imagem for armazenada no local ou localizada em outro servidor, mesmo que esse servidor seja visível externamente (em um site da Internet, por exemplo), ela será detectada como **[!UICONTROL Not yet online]**.
 * As imagens são detectadas como **[!UICONTROL Already online]** se tiverem sido carregadas anteriormente durante a criação de outro delivery.
-* No assistente de implantação, é possível definir as URLs nas quais a detecção de imagem não está habilitada: o carregamento dessas imagens será **[!UICONTROL Skipped]**.
+* No assistente de implantação, é possível definir as URLs nas quais a detecção de imagem não está habilitada: o upload dessas imagens será **[!UICONTROL Skipped]**.
 
 >[!NOTE]
 >

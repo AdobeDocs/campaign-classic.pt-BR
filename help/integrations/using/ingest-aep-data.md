@@ -1,11 +1,12 @@
 ---
 product: campaign
 title: Assimilar segmentos da Adobe Experience Platform no Campaign
-description: Saiba como assimilar públicos-alvo do Adobe Experience Platform no Campaign Classic.
+description: Saiba como assimilar públicos-alvo do Adobe Experience Platform no Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 89a18ae9ec57376d6ebec6c416c7562f960eb882
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 100%
@@ -14,7 +15,7 @@ ht-degree: 100%
 
 # Assimilar segmentos da Adobe Experience Platform no Campaign {#destinations}
 
-![](../../assets/v7-only.svg)
+
 
 Para assimilar públicos da Adobe Experience Platform no Campaign e usá-los em seus workflows, primeiro é necessário conectar o Adobe Campaign como um **Destino** da Adobe Experience Platform e configurá-lo com o segmento a ser exportado.
 

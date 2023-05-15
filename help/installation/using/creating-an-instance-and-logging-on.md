@@ -2,11 +2,12 @@
 product: campaign
 title: Criação de uma instância e fazer logon
 description: Criação de uma instância e fazer logon
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 5%
@@ -15,7 +16,7 @@ ht-degree: 5%
 
 # Criação de uma instância e fazer logon{#creating-an-instance-and-logging-on}
 
-![](../../assets/v7-only.svg)
+
 
 Para criar uma nova instância e o banco de dados do Adobe Campaign, siga as etapas abaixo:
 

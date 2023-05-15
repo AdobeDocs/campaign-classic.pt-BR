@@ -2,9 +2,11 @@
 product: campaign
 title: Solução de problemas de envio de delivery
 description: Saiba mais sobre o desempenho do delivery e como solucionar problemas relacionados ao monitoramento do delivery
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Solução de problemas de envio de entrega {#delivery-troubleshooting}
 
-![](../../assets/common.svg)
+
 
 Esta seção lista problemas comuns que você pode encontrar ao enviar deliveries e como solucioná-los.
 

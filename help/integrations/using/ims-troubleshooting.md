@@ -2,11 +2,13 @@
 product: campaign
 title: Solução de problemas com o IMS
 description: Solução de problemas com o IMS
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Solução de problemas com o IMS{#ims-troubleshooting}
 
-![](../../assets/common.svg)
+
 
 As seguintes dicas de solução de problemas ajudarão os clientes **no local** a resolverem os problemas mais comuns que ocorrem ao usar a integração IMS. Para clientes **hospedados**, entre em contato com a Adobe.
 

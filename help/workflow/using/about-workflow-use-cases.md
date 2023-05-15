@@ -1,10 +1,11 @@
 ---
 product: campaign
-title: Sobre casos de uso de fluxo de trabalho
-description: Saiba mais sobre casos de uso que você pode executar usando workflows do Campaign Classic.
+title: Sobre casos de uso de workflows
+description: Saiba mais sobre casos de uso que você pode executar usando workflows do Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Casos de uso de fluxos de trabalho {#about-workflow-use-cases}
 
-![](../../assets/v7-only.svg)
+
 
 Nesta seção você encontrará vários casos de uso que usam os recursos dos workflows do Campaign.
 
@@ -48,8 +49,8 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Criação da lista de resumo](creating-a-summary-list.md)
 * [Enriquecimento de dados](enriching-data.md)
 * [Utilização de agregações](using-aggregates.md)
-* [Importação de dados criptografados usando uma chave gerada pelo Painel de controle do Campaign](../../platform/using/unzip-decrypt.md)
-* [Criptografia e exportação de dados usando uma chave instalada no Painel de controle do Campaign](how-to-use-workflow-data.md#use-case-gpg-encrypt)
+* [Importação de dados criptografados usando uma chave gerada pelo Painel de controle](../../platform/using/unzip-decrypt.md)
+* [Criptografia e exportação de dados usando uma chave instalada no Painel de controle](how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Atualização da lista trimestral usando um query incremental](quarterly-list-update.md)
 * [Utilização da funcionalidade de mesclagem de atividades de desduplicação](deduplication-merge.md)
 * [Configuração de um fluxo de trabalho de importação recorrente](recurring-import-workflow.md)

@@ -2,9 +2,10 @@
 product: campaign
 title: Usar a atividade de aprovação local
 description: Saiba como usar a atividade de aprovação local
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Usar a atividade de aprovação local{#using-the-local-approval-activity}
 
-![](../../assets/v7-only.svg)
+
 
 A atividade **[!UICONTROL Local approval]** integrada em um workflow de direcionamento permite a configuração de um processo de aprovação do recipient antes que o delivery seja enviado.
 
@@ -69,7 +70,7 @@ Para obter mais informações sobre como criar um template de distribuição de 
    ![](assets/local_validation_data_distribution_3.png)
 
 1. Mantenha a opção **[!UICONTROL Approve the targeted messages]** selecionada de forma que todos os recipients sejam pré-selecionados da lista de recipients a serem aprovados.
-1. No campo **[!UICONTROL Delivery label]**, deixamos a expressão padrão (cálculo da cadeia de caracteres do delivery). O rótulo padrão do delivery será usado na notificação de feedback.
+1. No campo **[!UICONTROL Delivery label]**, deixamos a expressão padrão (cálculo da string da entrega). O rótulo padrão do delivery será usado na notificação de feedback.
 1. Na seção **[!UICONTROL Grouping field]**, selecionamos o campo **[!UICONTROL Gender]** como um campo de agrupamento para exibir recipients nas notificações de aprovação e de feedback.
 1. Na seção **[!UICONTROL Edit targeted messages]**, selecionamos o aplicativo web **[!UICONTROL Edit recipients]** e o parâmetro **[!UICONTROL recipientId]**. Nas notificações de aprovação e de feedback, os recipients serão clicáveis e apontarão para a URL da aplicação Web. O parâmetro de URL adicional será **[!UICONTROL recipientId]**.
 1. Depois, clique na guia **[!UICONTROL Distribution]**. Para cada domínio, insira os seguintes campos:

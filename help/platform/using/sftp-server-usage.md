@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: Uso do servidor SFTP
-description: Saiba mais sobre as práticas recomendadas e a solução de problemas do servidor SFTP.
+description: Saiba mais sobre as práticas recomendadas e a solução de problemas do servidor SFTP
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Práticas recomendadas e solução de problemas do servidor SFTP {#sftp-server-usage}
 
-![](../../assets/common.svg)
+
 
 ## Recomendações globais do servidor SFTP {#global-recommendations}
 
@@ -45,7 +47,7 @@ Para evitar esses problemas, a Adobe recomenda seguir as práticas recomendadas 
 >
 >Se sua instância estiver hospedada no AWS, será possível monitorar o armazenamento do servidor SFTP com o [Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=pt-BR) do Campaign Classic. Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
 >
->O Painel de controle do Campaign é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
+>O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
 >Observe que sua instância deve estar atualizada com a [build mais recente disponível](../../rn/using/rn-overview.md). Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 

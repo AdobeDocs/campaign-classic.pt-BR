@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: Práticas recomendadas de importação e exportação
-description: Saiba mais sobre as práticas recomendadas a serem seguidas ao importar ou exportar dados.
+description: Saiba mais sobre as práticas recomendadas a serem seguidas ao importar ou exportar dados
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Práticas recomendadas de importação e exportação {#import-export-best-practices}
 
-![](../../assets/common.svg)
+
 
 Ser cuidadoso e seguir as regras simples detalhadas abaixo ajudará a garantir a consistência dos dados dentro do banco de dados e evitar erros comuns durante a atualização ou exportação de dados.
 
@@ -39,7 +41,7 @@ Por exemplo:
 
 * Separador: tabulação ou ponto e vírgula
 * Primeira linha com cabeçalhos
-* Nenhum delimitador de cadeia de caracteres
+* Nenhum delimitador de string
 * Formato de data: AAAA/MM/DD HH:mm:SS
 
 Exemplo de arquivo a ser importado:

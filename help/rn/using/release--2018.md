@@ -2,9 +2,10 @@
 product: campaign
 title: Versões do Campaign Classic 2018
 description: Saiba mais sobre as atualizações do Campaign Classic 2018
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '5385'
 ht-degree: 97%
@@ -13,7 +14,7 @@ ht-degree: 97%
 
 # Versões de 2018{#release-2018}
 
-![](../../assets/v7-only.svg)
+
 
 ## Versão 18.10
 
@@ -58,7 +59,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md)  ou entre em contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md)  ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Aprimoramentos**
 
@@ -82,7 +83,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou entre em contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Aprimoramentos**
 
@@ -104,7 +105,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou entre em contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novidades**
 
@@ -249,7 +250,7 @@ Essas alterações de índice podem levar a um aumento do tempo necessário para
 
 >[!CAUTION]
 >
->Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou entre em contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Esta configuração foi retomada. Por favor [atualizar para a build mais recente](../../production/using/build-upgrade.md) ou contato [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novidades**
 
@@ -277,7 +278,7 @@ Essas alterações de índice podem levar a um aumento do tempo necessário para
 * Correção de um problema ao usar campos calculados em uma atividade de workflow **[!UICONTROL Survey answers]**. (NEO-11382)
 * O Tomcat foi atualizado para evitar a exploração de vulnerabilidades. (NEO-11503)
 * Correção de um erro com codificação LATIN1 ao usar um FDA Connection para um banco de dados PostgreSQL. (NEO-11299)
-* Correção de um problema que ocorria ao usar o **[!UICONTROL Prepare the personalization data with a workflow]** opção de entrega. (NEO-11047)
+* Correção de um problema que ocorria ao usar o **[!UICONTROL Prepare the personalization data with a workflow]** opção de delivery. (NEO-11047)
 * Correção de um problema postupgrade que impedia o envio de SMS ao usar um conector estendido.
 * Importação/exportação de pacotes aprimorada (log e região foram adicionados à interface).
 * Correção de um problema que exibia erros inúteis no log após a atualização quando uma atividade de workflow **[!UICONTROL Survey answers]** não estava totalmente configurada.
@@ -391,7 +392,7 @@ Para clientes existentes, as APIs de arquivo não podem mais acessar a pasta **c
 * Os logs de arquivamento de emails foram aprimorados, o que facilita e agiliza a verificação de quais emails foram entregues com êxito ou falharam no arquivamento do Cco. (NEO-10675)
 * Correção de um problema que levou à exibição dos IPs do balanceador de carga em vez dos IPs do cliente no rastreamento de broadlogs. (NEO-11295)
 * Correção de um erro com codificação LATIN1 ao usar um FDA Connection para um banco de dados PostgreSQL. (NEO-11299)
-* Correção de um problema que ocorria ao usar o **[!UICONTROL Prepare the personalization data with a workflow]** opção de entrega. (NEO-11047, NEO-11301)
+* Correção de um problema que ocorria ao usar o **[!UICONTROL Prepare the personalization data with a workflow]** opção de delivery. (NEO-11047, NEO-11301)
 * Correção de um problema aleatório que fazia com que as propriedades de um delivery fossem substituídas incorretamente. (NEO-11015)
 * Correção de um problema ao usar campos calculados em uma atividade de workflow **[!UICONTROL Survey answers]**. (NEO-11382)
 * Correção de um problema ao usar dados armazenados em XML em uma atividade de workflow de **[!UICONTROL Survey answers]**. (NEO-10816)
@@ -442,8 +443,8 @@ Para clientes existentes, as APIs de arquivo não podem mais acessar a pasta **c
    <td> European General Data Protection Regulation (GDPR)<br /> </td> 
    <td> <p>O GDPR é a nova lei de privacidade da União Europeia que concilia e moderniza os requisitos de proteção de dados, entrando em efeito em 25 de Maio de 2018. O GDPR aplica-se aos clientes do Adobe Campaign que coletam dados de residentes da UE.</p> <p>Além dos recursos de privacidade já disponíveis no Adobe Campaign (incluindo o gerenciamento de consentimento, as configurações de retenção de dados e as funções de usuários), aproveitamos a oportunidade, em função do nosso papel como Processador de Dados, para incluir recursos adicionais que ajudam o Controlador de Dados a estar de acordo com determinadas solicitações do GDPR:</p> 
     <ul> 
-     <li> <p>Direito de acesso: permite que o Titular de dados receba uma cópia de seus dados pessoais capturados pelos Controladores de dados, possivelmente incluindo dados armazenados no Adobe Campaign.</p> </li> 
-     <li> <p>Direito de exclusão: permite que o Titular de dados apague seus dados pessoais capturados pelos Controladores de dados, possivelmente incluindo os dados armazenados no Adobe Campaign.</p> </li> 
+     <li> <p>Direito de acesso: permite que o Titular de dados receba uma cópia de seus dados pessoais capturados pelos Controladores de dados, incluindo potencialmente dados armazenados no Adobe Campaign.</p> </li> 
+     <li> <p>Direito de Exclusão: possibilita que o Titular de dados apague seus dados pessoais capturados pelos Controladores de dados, possivelmente incluindo os dados armazenados no Adobe Campaign.</p> </li> 
     </ul> Para obter mais informações, consulte a <a href="https://helpx.adobe.com/br/campaign/kb/acc-privacy.html">documentação detalhada</a>.<br /> </td> 
   </tr> 
   <tr> 

@@ -2,9 +2,11 @@
 product: campaign
 title: Adicionar campos a um formulário web
 description: Adicionar campos a um formulário web
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2368'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Adicionar campos a um formulário web{#adding-fields-to-a-web-form}
 
-![](../../assets/common.svg)
+
 
 Em um formulário Web, os campos permitem que os usuários insiram informações e selecionem opções. Os formulários web podem oferecer campos de entrada, campos de seleção, conteúdo estático e avançado (captchas, subscrições, etc.).
 

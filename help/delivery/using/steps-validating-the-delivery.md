@@ -2,9 +2,11 @@
 product: campaign
 title: Validar a entrega
 description: Saiba como validar um delivery
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Validar a entrega {#validating-the-delivery}
 
-![](../../assets/common.svg)
+
 
 Quando um delivery for criado e configurado, você deverá validá-lo antes de enviá-lo para o target principal.
 

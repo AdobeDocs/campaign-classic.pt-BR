@@ -2,9 +2,11 @@
 product: campaign
 title: Enriquecimento de conteúdo
 description: Enriquecimento de conteúdo
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Data Management
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Enriquecimento de conteúdo{#enriching-content}
 
-![](../../assets/common.svg)
+
 
 Agregadores permitem enriquecer o conteúdo com dados externos. Esses dados vêm de queries genéricos ou tabelas vinculadas.
 
@@ -78,7 +80,7 @@ Um link de conteúdo é declarado no schema de dados da seguinte maneira:
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-A definição do link é preenchida em uma **cadeia de caracteres** tipo **`<element>`**, e o atributo **expandSchemaTarget** faz referência ao schema target (&quot;cus:chapter&quot; em nosso exemplo). O schema referenciado deve ser um schema de conteúdo.
+A definição do link é preenchida em uma **string** tipo **`<element>`**, e o atributo **expandSchemaTarget** faz referência ao schema target (&quot;cus:chapter&quot; em nosso exemplo). O schema referenciado deve ser um schema de conteúdo.
 
 O conteúdo do elemento target enriquece o elemento link, ou seja, o elemento **`<chapter>`** em nosso schema de exemplo:
 
@@ -126,7 +128,7 @@ No formulário de entrada, o controle de lista é declarado da seguinte maneira:
 
 ![](assets/d_ncs_content_link2.png)
 
-Uma coluna padrão é exibida para mostrar a **Cálculo de cadeia de caracteres** dos elementos pretendidos.
+Uma coluna padrão é exibida para mostrar a **Cálculo de string** dos elementos pretendidos.
 
 ### Links para tabelas externas {#links-to-external-tables}
 
@@ -204,7 +206,7 @@ O conteúdo do elemento target enriquece cada elemento de coleção no documento
 
 #### Agregação de links {#link-aggregation}
 
-O conteúdo de cada link referenciado é limitado à chave interna e ao elemento pretendido do **Cálculo de cadeia de caracteres**.
+O conteúdo de cada link referenciado é limitado à chave interna e ao elemento pretendido do **Cálculo de string**.
 
 Um script JavaScript é usado para enriquecer o conteúdo dos links por queries SOAP.
 

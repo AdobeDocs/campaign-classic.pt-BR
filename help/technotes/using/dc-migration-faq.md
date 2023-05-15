@@ -2,11 +2,12 @@
 product: campaign
 title: Perguntas frequentes sobre migração para o Adobe Managed Services (Nuvem pública)
 description: Perguntas frequentes sobre a migração do Campaign Classic para a Nuvem pública
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2215'
 ht-degree: 62%
@@ -15,7 +16,7 @@ ht-degree: 62%
 
 # Perguntas frequentes sobre migração para a Nuvem pública{#dc-faq}
 
-![](../../assets/v7-only.svg)
+
 
 O Adobe desativa o data center herdado: As instâncias do Campaign Classic devem ser transferidas para a Nuvem pública Amazon Web Services (AWS). [Saiba mais sobre esta iniciativa](dc-migration.md).
 

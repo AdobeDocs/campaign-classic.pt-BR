@@ -2,11 +2,12 @@
 product: campaign
 title: Controlar custos
 description: Saiba como controlar custos
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Controlar custos{#controlling-costs}
 
-![](../../assets/v7-only.svg)
+
 
 O Adobe Campaign permite controlar os custos de marketing programados, confirmados e faturados e separá-los por categorias usando o módulo Gerenciamento de Recursos de Marketing.
 
