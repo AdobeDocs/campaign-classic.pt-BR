@@ -9,7 +9,7 @@ topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 4%
@@ -56,13 +56,13 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 * no **configuração** comando:
 
    ```
-   nlserver.exe config <option> -instance:<instanceName>
+   nlserver.exe config <option> -instance:<instance-name>
    ```
 
 * ou na pós-atualização:
 
    ```
-   nlserver.exe config -postupgrade <option> -instance:<instanceName>
+   nlserver.exe config -postupgrade <option> -instance:<instance-name>
    ```
 
 >[!NOTE]
@@ -76,7 +76,7 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 * O **-showCustomEntities** exibe a lista de todos os objetos não padrão:
 
    ```
-   nlserver.exe config -showCustomEntities -instance:<instanceName>
+   nlserver.exe config -showCustomEntities -instance:<instance-name>
    ```
 
    Exemplo de mensagem enviada:
@@ -88,7 +88,7 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 * O **-showDeletedEntities** exibe a lista de todos os objetos padrão que estão ausentes no banco de dados ou no sistema de arquivos. Para cada objeto ausente, o caminho é especificado.
 
    ```
-   nlserver.exe config -showDeletedEntities -instance:<instanceName>
+   nlserver.exe config -showDeletedEntities -instance:<instance-name>
    ```
 
    Exemplo de mensagem enviada:
@@ -104,7 +104,7 @@ Integrado como padrão no comando pós-atualização, esse processo permite exib
 Você pode iniciar o processo de verificação sozinho (sem migração) usando o comando:
 
 ```
-nlserver.exe config -postupgrade -check -instance:<instanceName>
+nlserver.exe config -postupgrade -check -instance:<instance-name>
 ```
 
 >[!NOTE]
@@ -177,7 +177,7 @@ Também é realizada uma verificação de coerência de banco de dados e esquema
 Essa opção permite restaurar objetos prontos se tiverem sido modificados. Para cada objeto restaurado, um backup das alterações é armazenado na pasta selecionada:
 
 ```
-nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instanceName>
+nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instance-name>
 ```
 
 >[!NOTE]

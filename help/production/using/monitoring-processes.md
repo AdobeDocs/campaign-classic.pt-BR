@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '3610'
 ht-degree: 1%
@@ -575,7 +575,7 @@ Esse elemento é usado para preencher a configuração de emails, ou seja,
 Esse elemento permite agrupar várias máquinas (hosts) na mesma instância. Os nomes da instância são exibidos na primeira parte do email de monitoramento. Você pode clicar no nome de uma instância para acessar os detalhes referentes a cada máquina.
 
 ```
-instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
+instance name="instance-name" recipientList="mail@mail.com,mail2@mail.com">
                 <host name="devcamp.domain.com" ...>
                        ...
                 </host>

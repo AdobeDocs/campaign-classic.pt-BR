@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2355'
 ht-degree: 4%
 
 ---
@@ -93,9 +93,9 @@ Você também precisa saber todas as [linhas de comando úteis](../../installati
 * **pdump nlserver**: listas executando processos
 * **nlserver pdump -who**: lista sessões ativas do cliente
 * **nlserver monitor -missing**: lista propriedades ausentes
-* **nlserver start process@instanceName**: inicia um processo
-* **nlserver stop process@instanceName**: interrompe um processo
-* **nlserver restart process@instanceName**: reinicia um processo
+* **nlserver start process@instance-name**: inicia um processo
+* **nlserver stop process@instance-name**: interrompe um processo
+* **nlserver restart process@instance-name**: reinicia um processo
 * **desligamento do nlserver**: interrompe todos os processos do Campaign
 * **nlserver watchdog -svc**: inicia o watchdog (somente UNIX)
 
@@ -278,7 +278,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 Se o aviso se referir a um conflito de recursos, é necessário prestar atenção ao usuário para resolvê-lo.
 
-O **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** O arquivo contém o resultado da sincronização. Está disponível por padrão no seguinte diretório: **installationDirectory/var/instanceName/postupgrade**. Erros e avisos são indicados pelos atributos de erro e aviso.
+O **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** O arquivo contém o resultado da sincronização. Está disponível por padrão no seguinte diretório: **installationDirectory/var/`<instance-name>`/postupgrade**. Erros e avisos são indicados pelos atributos de erro e aviso.
 
 ### Analisar conflitos
 
