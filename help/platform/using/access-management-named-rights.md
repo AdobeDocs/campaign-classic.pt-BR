@@ -2,15 +2,15 @@
 product: campaign
 title: Usar direitos nomeados para configurar permissões
 description: Saiba como usar direitos nomeados para configurar permissões
-badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+badge: label="v7" type="Informativo" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 97%
+source-wordcount: '512'
+ht-degree: 96%
 
 ---
 
@@ -74,4 +74,4 @@ Os grupos padrão e os direitos nomeados permitem que os operadores acessem dete
 
 A matriz de direitos de acesso do Adobe Campaign está disponível [aqui](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![imagem](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en)
+[![imagem](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)

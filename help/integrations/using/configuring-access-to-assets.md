@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
-source-wordcount: '500'
-ht-degree: 100%
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+workflow-type: tm+mt
+source-wordcount: '498'
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ Para habilitar a conexão entre o Adobe Campaign e a Adobe Experience Cloud, con
 
 >[!CAUTION]
 >
->Esse recurso foi descontinuado a partir do Adobe Experience Manager 6.4. [Saiba mais](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=pt-BR#removed-features)
+>Esse recurso foi descontinuado a partir do Adobe Experience Manager 6.4. [Saiba mais](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
 
 Para integrar o AEM Assets com o Adobe Campaign, você deve primeiro configurar a integração entre o Adobe Experience Manager e o Adobe Campaign. Esta configuração exige principalmente:
 

@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design, Dynamic Content
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
-source-wordcount: '1505'
-ht-degree: 100%
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+workflow-type: tm+mt
+source-wordcount: '1499'
+ht-degree: 99%
 
 ---
 
@@ -138,7 +138,7 @@ Atualmente, dois provedores de email são compatíveis com o teste deste formato
 Todas as etapas e especificações necessárias para testar a entrega com o formato AMP em contas do Gmail estão detalhadas nas documentações de desenvolvedor correspondentes do [Gmail](https://developers.google.com/gmail/ampemail?) e do [Mail.ru](https://postmaster.mail.ru/amp).
 
 Em particular, os seguintes requisitos devem ser atendidos:
-* Siga os requisitos de segurança específicos do AMP para o [Gmail](https://developers.google.com/gmail/ampemail/security-requirements) e [Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto).
+* Siga os requisitos de segurança específicos do AMP para o [Gmail](https://developers.google.com/gmail/ampemail/security-requirements) e [Mail.ru](https://postmaster.mail.ru/amp/#howto).
 * A parte AMP MIME deve conter um [documento AMP válido](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_emails/?format=email).
 * A parte AMP MIME deve ter menos que 100KB.
 
@@ -170,7 +170,7 @@ Para mais detalhes, consulte a documentação do desenvolvedor do [Gmail](https:
 
 ![](assets/amp_from_field.png)
 
-Para testar o envio de um email do AMP para um endereço Mail.ru, siga as etapas da [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto) (seção **Se você for um usuário**).
+Para testar o envio de um email do AMP para um endereço Mail.ru, siga as etapas da [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/#howto) (seção **Se você for um usuário**).
 
 ### Entrega de emails do AMP por meio do registro em um provedor de email {#delivering-amp-emails-by-registering}
 
@@ -182,7 +182,7 @@ Você pode experimentar a entrega de emails dinâmicos registrando-se com os pro
 
 Depois de testar com alguns endereços, é possível enviar emails do AMP para qualquer endereço do Gmail. Para fazer isso, é necessário fazer o registro no Google e aguardar a resposta. Siga as etapas apresentadas apresentadas na documentação do desenvolvedor do [Gmail](https://developers.google.com/gmail/ampemail/register). Após o registro bem-sucedido, você se torna um remetente autorizado.
 
-Para enviar o emails AMP para endereços Mail.ru, siga os requisitos e as etapas listados na [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/?lang=en#howto) (**Caso seja uma seção de remetente** de email).
+Para enviar o emails AMP para endereços Mail.ru, siga os requisitos e as etapas listados na [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/#howto) (**Caso seja uma seção de remetente** de email).
 
 ## Envio de um email do AMP {#sending-amp-email}
 

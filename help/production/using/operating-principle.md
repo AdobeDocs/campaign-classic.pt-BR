@@ -3,12 +3,12 @@ product: campaign
 title: Princípio operacional
 description: Princípio operacional
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 2%
@@ -21,17 +21,17 @@ ht-degree: 2%
 
 Tecnicamente, a plataforma Adobe Campaign é baseada em vários módulos.
 
-Há muitos módulos Adobe Campaign. Alguns operam continuamente, enquanto outros são iniciados ocasionalmente para executar tarefas administrativas (por exemplo, para configurar a conexão do banco de dados) ou para executar uma tarefa recorrente (por exemplo, consolidando informações de rastreamento).
+Há muitos módulos do Adobe Campaign. Alguns operam continuamente, enquanto outros são iniciados ocasionalmente para executar tarefas administrativas (por exemplo, configurar a conexão de banco de dados) ou para executar uma tarefa recorrente (por exemplo, consolidar informações de rastreamento).
 
-Existem três tipos de módulos Adobe Campaign:
+Há três tipos de módulos do Adobe Campaign:
 
-* Módulos de várias instâncias: um único processo é executado para todas as instâncias. Isso se aplica aos seguintes módulos: **web**, **syslogd**, **trackinglogd** e **vigia** (atividades da **config-default.xml** arquivo ).
-* Módulos de instância única: um processo é executado por instância. Isso se aplica aos seguintes módulos: **mta**, **wfserver**, **inMail**, **sms** e **stat** (atividades da **config-`<instance>`.xml** arquivo ).
-* Módulos do utilitário: são módulos executados ocasionalmente para executar operações ocasionais ou recorrentes (**cleanup**, **configuração**, download de logs de rastreamento etc.).
+* Módulos de várias instâncias: um único processo é executado para todas as instâncias. Isso se aplica aos seguintes módulos: **web**, **syslogd**, **trackinglogd** e **watchdog** (atividades do **config-default.xml** arquivo).
+* Módulos de instância única: um processo é executado por instância. Isso se aplica aos seguintes módulos: **mta**, **wfserver**, **inMail**, **sms** e **stat** (atividades do **config-`<instance>`.xml** arquivo).
+* Módulos de utilitários: são módulos executados ocasionalmente para executar operações ocasionais ou recorrentes (**cleanup**, **config**, download de logs de rastreamento etc.).
 
 A administração do módulo é executada usando a ferramenta de linha de comando **nlserver** instalado no **compartimento** diretório da pasta de instalação.
 
-A sintaxe geral da variável **nlserver** A ferramenta é a seguinte:
+A sintaxe geral do **nlserver** é a seguinte:
 
 **nlserver `<command>``<command arguments>`**
 
@@ -43,47 +43,47 @@ Os módulos disponíveis são detalhados na tabela a seguir:
 |---|---|
 | aliasCleansing | Padronização dos valores de enumeração |
 | faturamento | Envio do relatório de atividades do sistema para billing@neolane.net |
-| cleanup | Limpando o banco de dados: exclui dados obsoletos do banco de dados e executa uma atualização das estatísticas usadas pelo otimizador do mecanismo de banco de dados. |
-| configuração | Modificação da configuração do servidor |
-| exportar | Exportando para linha de comando: permite enviar para a linha de comando um modelo de exportação criado no console do cliente do Adobe Campaign |
-| fileconvert | Conversão de um arquivo de tamanho de conjunto |
-| importar | Importando para linha de comando: permite enviar para a linha de comando um modelo de importação criado no console do cliente do Adobe Campaign. |
+| cleanup | Cleansing the database: exclui dados obsoletos do banco de dados e executa uma atualização das estatísticas usadas pelo otimizador do mecanismo de banco de dados. |
+| config | Modificando a configuração do servidor |
+| exportar | Exportar para linha de comando: permite enviar para a linha de comando um modelo de exportação criado no console do cliente do Adobe Campaign |
+| fileconvert | Conversão de um arquivo de tamanho definido |
+| importar | Importar para linha de comando: permite enviar para a linha de comando um modelo de importação criado no console do cliente do Adobe Campaign. |
 | inMail | Analisador de email de entrada |
-| instalação | Disponibilidade do arquivo de instalação do cliente |
+| installsetup | Disponibilidade do arquivo de instalação do cliente |
 | javascript | Execução de scripts JavaScript, com acesso a APIs SOAP. |
-| trabalho | Processamento de linha de comando |
-| mesclar | Mesclagem de formulário |
-| midSourcing | Recuperação de informações de delivery no modo mid-sourcing |
+| tarefa | Processamento de linha de comando |
+| mesclar | Mesclagem de formulários |
+| midSourcing | Recuperação de informações de entrega no modo de mid-sourcing |
 | monitor | XML Exibição do status de processos de servidor e tarefas agendadas, por instância. |
 | mta | Mensagem de transferência do agente principal |
 | pacote | Importação ou exportação de arquivos de pacote de entidade |
-| pdump | Exibição dos status do processo do servidor |
-| preparação | Preparação de uma ação de delivery |
+| despejo | Exibição dos status do processo do servidor |
+| prepareda | Preparação de uma ação de entrega |
 | reiniciar | Reinicialização parcial do servidor |
-| runwf | Execução de uma instância de workflow |
-| desligamento | Desligamento completo do sistema |
+| runwf | Execução de uma instância de fluxo de trabalho |
+| desligar | Desligamento completo do sistema |
 | sms | Processamento de notificação por SMS |
-| sql | Execução do script SQL |
-| start | Inicializações adicionais |
-| stat | Mantém estatísticas de conexão MTA |
+| sq | Execução de script SQL |
+| start | Inícios adicionais |
+| stat | Mantém estatísticas de conexão do MTA |
 | stop | Desligamento parcial do sistema |
-| submitda | Envio de uma ação de delivery |
-| syslogd | Servidor de registro e gravação de rastreamento |
+| enviado | Submetendo uma ação de entrega |
+| syslogd | Servidor de gravação de log e rastreamento |
 | rastreamento | Consolidação e recuperação de logs de rastreamento |
 | trackinglogd | Servidor de gravação e limpeza do log de rastreamento |
-| vigia | Inicialização e instância de monitoramento |
+| watchdog | Instância de inicialização e monitoramento |
 | web | Servidor de aplicativos (HTTP e SOAP) |
-| wfserver | Servidor de workflow |
+| wfserver | Servidor de fluxo de trabalho |
 
 >[!IMPORTANT]
 >
->Há um último módulo: o módulo de rastreamento e retransmissão vinculado ao servidor de aplicativos que, por questões de desempenho, é integrado por mecanismos nativos em um servidor Web Apache ou IIS por meio de uma biblioteca dinâmica. Não há um comando do Adobe Campaign que permita iniciar ou administrar esse módulo. Portanto, você deve usar os comandos do próprio servidor da Web.
+>Há um último módulo: o módulo de rastreamento e retransmissão vinculado ao servidor de aplicativos que, por motivos de desempenho, é integrado via mecanismos nativos em um servidor Web Apache ou IIS por meio de uma biblioteca dinâmica. Não há nenhum comando do Adobe Campaign que permita iniciar ou administrar esse módulo. Portanto, você deve usar os comandos do próprio servidor Web.
 
 O uso do módulo e a sintaxe de seus parâmetros são exibidos usando o seguinte comando: **nlserver `[module]` -?**
 
 Exemplo:
 
-**configuração nlserver -?**
+**Configuração nlserver -?**
 
 ```
 Usage: nlserver [-verbose:<verbose mode>] [-?|h|H] [-version] [-noconsole]

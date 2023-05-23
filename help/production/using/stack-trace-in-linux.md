@@ -3,12 +3,12 @@ product: campaign
 title: Rastreamento em pilha no Linux
 description: Rastreamento em pilha no Linux
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -19,12 +19,12 @@ ht-degree: 11%
 
 
 
-A **rastreamento de pilha** representa um rastreamento contido em um **núcleo** digite o arquivo . Esse arquivo é gerado no caso de um erro de computador. Ele pode identificar a origem do erro.
+A **rastreamento de pilha** representa um rastreamento contido em um **core** arquivo de tipo. Esse arquivo é gerado no caso de um erro de computador. Ele pode identificar a origem do erro.
 
 >[!NOTE]
 >
->* A **núcleo** arquivo é nomeado **núcleo.`<num>`**.
->* **gdb - O depurador GNU** deve ser instalado no computador.
+>* A **core** o arquivo é nomeado **principal.`<num>`**.
+>* **gdb - O depurador GNU** deve estar instalado no computador.
 >
 
 
@@ -57,7 +57,7 @@ gdb nlserver <coreFile>
 
 O suporte técnico da Adobe Campaign pode solicitar que você execute este comando usando um executável específico (a ser fornecido por nós).
 
-Nesse caso, basta executar o seguinte comando ao substituir **nlserver** com o executável fornecido pela Adobe Campaign:
+Nesse caso, basta executar o seguinte comando substituindo **nlserver** com o executável fornecido pela Adobe Campaign:
 
 ```
 gdb nlserver <coreFile>

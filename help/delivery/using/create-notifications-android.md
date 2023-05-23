@@ -5,10 +5,10 @@ description: Saiba como criar notificações por push para Android
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '715'
-ht-degree: 100%
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 99%
 
 ---
 
@@ -73,7 +73,7 @@ A imagem e a página da web devem ser exibidas na notificação por push quando 
 >
 >Opções adicionais para mensagem de notificação estão disponíveis somente com a configuração da API HTTP v1. Para obter mais informações, consulte esta [seção](configuring-the-mobile-application-android.md#android-service-httpv1).
 
-![](assets/do-not-localize/how-to-video.png) [Saiba como criar uma notificação por push para Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=pt-BR#additional-resources)
+![](assets/do-not-localize/how-to-video.png) [Saiba como criar uma notificação por push para Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources)
 
 1. Vá até **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 

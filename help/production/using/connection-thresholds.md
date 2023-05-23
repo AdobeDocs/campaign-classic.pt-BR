@@ -3,12 +3,12 @@ product: campaign
 title: Limites de conexão
 description: Limites de conexão
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 4ee05559-e719-4e6e-b42c-1e82df428871
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -19,19 +19,19 @@ ht-degree: 3%
 
 
 
-Para servidores muito carregados, o limite de conexão pode ser excedido. Seja como for, é útil descobrir porquê.
+Para servidores com muita carga, o limite de conexão pode ser excedido. Em qualquer caso, é útil descobrir o porquê.
 
 Há três limites diferentes:
 
-* O **Limite da conexão Web**, configurado no servidor da Web. Para modificá-lo, entre em contato com o administrador do sistema.
+* A variável **Limite de conexão com a Web**, configurado no servidor Web. Para modificá-lo, entre em contato com o administrador do sistema.
 
-* O **limite de conexão de banco de dados**. Para modificá-lo, entre em contato com o administrador do banco de dados.
+* A variável **limite de conexão de banco de dados**. Para modificá-lo, contate o administrador do banco de dados.
 
-* O **Limite de conexão do Adobe Campaign**, disponíveis em dois lugares:
+* A variável **Limite de conexão do Adobe Campaign**, disponível em dois lugares:
 
-   * **Tomcat** lado: todas as consultas que chegaram no cliente Adobe Campaign Tomcat.
+   * **Tomcat** lado: todas as consultas que chegam de fato ao cliente Adobe Campaign Tomcat.
 
-      Esse limite é configurado na variável **nl6/tomcat-8/conf/server.xml** arquivo. O **maxThreads** permite aumentar o limite do número de queries processados de cada vez. Ele pode ser alterado para 250, por exemplo.
+      Esse limite é configurado na variável **nl6/tomcat-8/conf/server.xml** arquivo. A variável **maxThreads** attribute permite aumentar o limite do número de queries processadas de cada vez. Pode ser alterado para 250, por exemplo.
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -47,7 +47,7 @@ Há três limites diferentes:
 
    * **Banco de dados**: conjunto de todas as conexões abertas ao mesmo tempo no banco de dados por um processo.
 
-      Esse limite é configurado no arquivo **nl6/conf/serverConf.xml**. O **maxCnx** atributo localizado em **pool de origens de dados** permite aumentar o limite de consultas processadas simultaneamente.
+      Esse limite está configurado no arquivo **nl6/conf/serverConf.xml**. A variável **maxCnx** atributo localizado em **pool de fontes de dados** permite aumentar o limite de consultas processadas simultaneamente.
 
       ```
           <!-- Data source

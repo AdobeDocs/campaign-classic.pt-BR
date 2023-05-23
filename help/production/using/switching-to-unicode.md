@@ -3,12 +3,12 @@ product: campaign
 title: Alternar para Unicode
 description: Alternar para Unicode
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 7%
@@ -19,16 +19,16 @@ ht-degree: 7%
 
 
 
-Para um **prod** no Linux/PostgreSQL, as etapas para alternar para unicode são as seguintes:
+Para um existente **prod** no Linux/PostgreSQL, as etapas para alternar para unicode são as seguintes:
 
-1. Pare os processos de gravação no banco de dados:
+1. Interrompa os processos gravando no banco de dados:
 
    ```
    su - neolane
    nlserver shutdown
    ```
 
-1. Despeje o banco de dados:
+1. Despejar o banco de dados:
 
    ```
    su - postgres
@@ -41,7 +41,7 @@ Para um **prod** no Linux/PostgreSQL, as etapas para alternar para unicode são 
    createdb -E UNICODE mydatabase_unicode
    ```
 
-1. Restaure o banco de dados:
+1. Restaurar o banco de dados:
 
    ```
    psql mydatabase_unicode < mydatabase.sql
@@ -62,7 +62,7 @@ Para um **prod** no Linux/PostgreSQL, as etapas para alternar para unicode são 
    vi config-prod.xml
    ```
 
-   Adicione o **u** na frente do valor relativo ao identificador do banco de dados (**databaseId**):
+   Adicione o **u** caractere na frente do valor relacionado ao identificador do banco de dados (**databaseId**):
 
    ```
    <web>
@@ -70,7 +70,7 @@ Para um **prod** no Linux/PostgreSQL, as etapas para alternar para unicode são 
    </web>
    ```
 
-1. Nos servidores que chamam o banco de dados:
+1. Em servidores que chamam o banco de dados:
 
    ```
    su - neolane
@@ -88,7 +88,7 @@ Para um **prod** no Linux/PostgreSQL, as etapas para alternar para unicode são 
    </dataSource>
    ```
 
-1. Reinicialize todas as máquinas:
+1. Reinicializar todos os computadores:
 
    ```
    /etc/init.d/apache stop
@@ -97,7 +97,7 @@ Para um **prod** no Linux/PostgreSQL, as etapas para alternar para unicode são 
    /etc/init.d/apache start
    ```
 
-1. Confirme o switch. Para fazer isso, conecte-se através do console Adobe Campaign e:
+1. Confirme o switch. Para fazer isso, conecte-se por meio do console do Adobe Campaign e:
 
-   * verificar se os dados são exibidos corretamente, em especial os caracteres acentuados:
-   * inicie um delivery e verifique se a recuperação de rastreamento funciona.
+   * verifique se os dados são exibidos corretamente, em especial os caracteres acentuados:
+   * inicie um delivery e verifique se a recuperação do rastreamento funciona.

@@ -3,12 +3,12 @@ product: campaign
 title: Desempenho do banco de dados
 description: Desempenho do banco de dados
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 33dcfd4b-51fd-44f4-98e0-23eafb79d7da
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 
 
-A maioria dos problemas de desempenho está vinculada à manutenção do banco de dados. Estes são quatro leads principais que ajudam a encontrar a causa do desempenho lento:
+A maioria dos problemas de desempenho está vinculada à manutenção do banco de dados. Estes são quatro leads principais para ajudá-lo a encontrar a causa do desempenho lento:
 
 * Configuração
 * Instalação e configuração da plataforma Adobe Campaign
@@ -28,15 +28,15 @@ A maioria dos problemas de desempenho está vinculada à manutenção do banco d
 
 ## Configuração {#configuration}
 
-Verifique se a configuração inicial da plataforma Adobe Campaign ainda é válida e, se necessário, reavalie as necessidades do cliente em termos de deliverability ou tamanho do banco de dados. Também recomendamos executar uma verificação completa de hardware (CPU, RAM, sistema de E/S).
+Verifique se a configuração inicial da plataforma Adobe Campaign ainda é válida e, se necessário, reavalie as necessidades do cliente em termos de capacidade de entrega ou tamanho do banco de dados. Também recomendamos executar uma verificação completa de hardware (CPU, RAM, sistema de E/S).
 
 >[!NOTE]
 >
->Você pode se referir a [Guia de dimensionamento de hardware do Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html) para obter insights.
+>Você pode consultar [Guia de dimensionamento de hardware da Adobe Campaign](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html) para obter insights.
 
 ## Configuração da plataforma {#platform-configuration}
 
-A configuração inadequada pode afetar o desempenho da plataforma. Recomendamos que você verifique a configuração da rede, as opções de capacidade de entrega da plataforma e a configuração de MTA no **serverConf.xml** arquivo.
+Uma configuração inadequada pode afetar o desempenho da plataforma. Recomendamos que você verifique a configuração da rede, as opções de capacidade de entrega da plataforma e a configuração do MTA na **serverConf.xml** arquivo.
 
 ## Manutenção do banco de dados {#database-maintenance}
 
@@ -46,41 +46,41 @@ Verifique se a tarefa de limpeza do banco de dados está operacional. Para fazer
 
 **Planos de manutenção**
 
-Verifique se a manutenção do banco de dados está agendada e executada corretamente. Para fazer isso, entre em contato com o administrador do banco de dados para saber mais sobre:
+Verifique se a manutenção do banco de dados está corretamente agendada e executada. Para fazer isso, entre em contato com o administrador do banco de dados para saber mais sobre:
 
 * Seu cronograma de manutenção
 * Planos de manutenção executados anteriormente
-* Visualização dos logs de script
+* Exibição dos logs de script
 
 Para obter mais informações, consulte [esta seção](../../production/using/recommendations.md).
 
 >[!IMPORTANT]
 >
->Se você estiver usando uma configuração mid-sourcing, é essencial que os bancos de dados sejam mantidos regularmente. Ao analisar um delivery na plataforma de marketing, a instância de marketing envia informações para a instância de mid-sourcing. Se o processo for retardado, a instância de marketing será afetada.
+>Se você estiver usando uma configuração mid-sourcing, é essencial que os bancos de dados sejam mantidos regularmente. Ao analisar um delivery na plataforma de marketing, a instância de marketing envia informações para a instância de mid-sourcing. Se o processo for atrasado, a instância de marketing será afetada.
 
 **Gerenciamento de tabelas de trabalho**
 
-Verifique o número e o tamanho das tabelas de trabalho. Quando elas excedem um determinado tamanho, o desempenho do banco de dados é afetado. Essas tabelas são criadas por workflows e deliveries. Eles permanecem no banco de dados enquanto os workflows e deliveries estão ativos. Para limitar o tamanho das tabelas de trabalho, você pode realizar as seguintes operações:
+Verifique o número e o tamanho das tabelas de trabalho. Quando eles excedem um determinado tamanho, o desempenho do banco de dados é afetado. Essas tabelas são criadas por workflows e deliveries. Eles permanecem no banco de dados enquanto os workflows e deliveries estão ativos. Para limitar o tamanho das tabelas de trabalho, você pode realizar as seguintes operações:
 
-* Parar ou excluir deliveries com os seguintes status: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]** ou **[!UICONTROL Paused]**.
-* Parar ou excluir workflows que estão pausados devido a um erro.
-* Interrompa todos os workflows usados para testes que não contêm um **[!UICONTROL End]** atividade e cujo status assim permanece **[!UICONTROL Paused]**.
+* Interromper ou excluir deliveries com os seguintes status: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]** ou **[!UICONTROL Paused]**.
+* Interrompa ou exclua workflows pausados devido a um erro.
+* Interromper todos os workflows usados para testes que não contêm um **[!UICONTROL End]** atividade e cujo estatuto permanece, por conseguinte, **[!UICONTROL Paused]**.
 
 >[!IMPORTANT]
 >
->Se a operação demorar muito e liberar muito espaço, isso significa que é necessária uma manutenção detalhada (reconstrução de índice, etc.). Para obter mais informações, consulte [esta seção](../../production/using/recommendations.md).
+>Se a operação demorar muito e liberar muito espaço, isso significa que é necessária uma manutenção profunda (reconstrução de índice etc.). Para obter mais informações, consulte [esta seção](../../production/using/recommendations.md).
 
 **Monitoramento de processos do Adobe Campaign**
 
-Dependendo das configurações de instalação do Adobe Campaign, duas ferramentas podem ser usadas para monitoramento da plataforma:
+Dependendo das configurações de instalação do Adobe Campaign, duas ferramentas podem ser usadas para o monitoramento da plataforma:
 
 * A página de produção da instância. Para obter mais informações, consulte [Monitoramento manual](../../production/using/monitoring-processes.md#manual-monitoring).
-* O *netreport* script. Para obter mais informações, consulte [Monitoramento automático por meio de scripts Adobe Campaign](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* A variável *netreport* script. Para obter mais informações, consulte [Monitoramento automático via scripts do Adobe Campaign](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
 ## Especificações {#specifics}
 
-Pode ser necessário executar um diagnóstico em tempo real para identificar a causa do problema. Comece verificando o processo e os arquivos de log da plataforma e monitore a atividade do banco de dados enquanto recria o problema. Preste especial atenção ao seguinte:
+Talvez seja necessário executar um diagnóstico em tempo real para identificar a causa do problema. Comece verificando o processo e os arquivos de log da plataforma e, em seguida, monitore a atividade do banco de dados ao recriar o problema. Preste atenção especial ao seguinte:
 
 * O plano de execução da manutenção
 * Consultas SQL sendo executadas
-* Se os processos externos estão ou não em execução ao mesmo tempo (limpeza, importações, cálculo agregado, etc.).
+* Se os processos externos estão ou não em execução ao mesmo tempo (limpeza, importações, cálculo agregado etc.).
