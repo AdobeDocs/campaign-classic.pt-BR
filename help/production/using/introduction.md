@@ -18,23 +18,23 @@ ht-degree: 1%
 
 
 
-Esta seção apresenta o procedimento a ser aplicado para atualizar o Adobe Campaign, o lado do cliente e o lado do servidor e descreve a alternância para Unicode de uma instância existente.
+Esta seção apresenta o procedimento a ser aplicado para atualizar o Adobe Campaign, o lado do cliente e o lado do servidor, e descreve a alternância para Unicode de uma instância existente.
 
 >[!NOTE]
 >
->Para instâncias de serviços hospedados/gerenciados, é necessário coordenar com o Administrador do Adobe.\
->Para instâncias locais, você pode obter assistência de consultores Adobe.
+>Para instâncias de serviços hospedados/gerenciados, você deve entrar em contato com o administrador do Adobe.\
+>Para instâncias no local, você pode obter assistência dos consultores do Adobe.
 
-A atualização deve ser aplicada a todos os servidores onde o Adobe Campaign estiver instalado.
+A atualização deve ser aplicada a todos os servidores nos quais o Adobe Campaign está instalado.
 
-1. Migre os servidores de redirecionamento e rastreamento (Apache/IIS).
+1. Migrar os servidores de redirecionamento e rastreamento (Apache/IIS).
 1. Migre os servidores Power Boster/Cluster.
-1. Migre o servidor de marketing.
+1. Migrar o servidor de marketing.
 
-O Adobe Campaign é baseado em vários processos executados no lado do servidor, que serão necessários para manipular durante as atualizações, em particular:
+O Adobe Campaign se baseia em vários processos executados no lado do servidor que você precisará manipular durante atualizações, especificamente:
 
 * Servidor de aplicativos (nlserver web)
-* Servidor de delivery (nlserver mta)
+* Servidor de entrega (nlserver mta)
 * Servidor de redirecionamento (webmdl)
 
 >[!CAUTION]
@@ -43,11 +43,11 @@ O Adobe Campaign é baseado em vários processos executados no lado do servidor,
 
 >[!NOTE]
 >
->Para obter mais informações sobre os vários processos do Adobe Campaign, consulte [esta seção](../../installation/using/general-architecture.md#logical-application-layer).\
+>Para obter mais informações sobre os vários processos do Adobe Campaign, consulte [nesta seção](../../installation/using/general-architecture.md#logical-application-layer).\
 >Ao usar a arquitetura do tipo Power Boster ou Power Cluster, você deve aplicar esse processo a todos os servidores Power Boster/Cluster.
 
 Se a nova versão envolver uma alteração na estrutura do banco de dados, recomendamos reiniciar os servidores na seguinte ordem:
 
 1. Servidor de aplicativos (nlserver web),
 1. Servidor de redirecionamento (webmdl),
-1. Servidor de delivery (nlserver mta).
+1. Servidor de entrega (nlserver mta).

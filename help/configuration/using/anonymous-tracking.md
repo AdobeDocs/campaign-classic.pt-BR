@@ -13,17 +13,17 @@ ht-degree: 5%
 
 # Tracking anônimo{#anonymous-tracking}
 
-O Adobe Campaign permite vincular informações de rastreamento Web coletadas a um recipient quando ele navega em seu site anonimamente. Quando um usuário navega nas páginas com tags do seu site, essas informações de navegação são coletadas, de modo que, uma vez clicadas em um email enviado pelo Adobe Campaign, elas são identificadas e as informações são vinculadas automaticamente a elas.
+O Adobe Campaign permite vincular informações de rastreamento Web coletadas a um recipient quando ele navega em seu site anonimamente. Quando um usuário navega pelas páginas marcadas do seu site, essas informações de navegação são coletadas, de modo que, uma vez clicado em um email enviado pelo Adobe Campaign, ele é identificado e as informações são vinculadas automaticamente a ele.
 
 >[!IMPORTANT]
 >
->Configurar o rastreamento anônimo em um site pode acionar a coleta de uma quantidade significativa de logs de rastreamento, afetando assim a operação do banco de dados. Configure com cuidado.\
->Os logs de rastreamento são salvos no banco de dados até que os dados de rastreamento sejam limpos. Use o assistente de implantação para configurar a frequência de limpeza. Para obter mais informações, consulte [esta seção](../../installation/using/deploying-an-instance.md#purging-data).
+>A configuração do rastreamento anônimo em um site pode acionar a coleta de uma quantidade significativa de logs de rastreamento, afetando assim a operação do banco de dados. Configure com cuidado.\
+>Os logs de rastreamento são salvos no banco de dados até que os dados de rastreamento sejam removidos. Use o assistente de implantação para configurar a frequência de limpeza. Para obter mais informações, consulte [esta seção](../../installation/using/deploying-an-instance.md#purging-data).
 
-Para ativar o rastreamento Web anônimo em sua instância, os seguintes elementos devem ser configurados:
+Para habilitar o rastreamento web anônimo na sua instância, os seguintes elementos devem ser configurados:
 
-* O **trackWebVisitors** do **redirecionamento** do **serverConf.xml** O arquivo do servidor de rastreamento deve ser definido como &#39;**true**&quot;, para colocar um cookie permanente (**uuid230**) nos navegadores de usuários desconhecidos da Internet que visitam o site.
-* O **Rastreamento Web anônimo** deve ser selecionado na tela de configuração de rastreamento do assistente de implantação.
+* A variável **trackWebVisitors** parâmetro do **redirecionamento** elemento do **serverConf.xml** o arquivo do servidor de rastreamento deve ser definido como &#39;**true**&#39;, para colocar um cookie permanente (**uuid230**) nos navegadores de usuários desconhecidos da Internet que visitam o site.
+* A variável **Rastreamento web anônimo** deve ser selecionado na tela de configuração de rastreamento do assistente de implantação.
 
    ![](assets/webtracking_anonymous_set.png)
 

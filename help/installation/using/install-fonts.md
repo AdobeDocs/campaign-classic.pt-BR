@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Veja como instalar novas fontes no servidor de aplicativos do Campaign.
 
-Novas fontes podem ser colocadas no `/usr/local/share/` em todos os contêineres em que o processo MTA é executado.
+Novas fontes podem ser colocadas na `/usr/local/share/` em todos os contêineres em que o processo MTA é executado.

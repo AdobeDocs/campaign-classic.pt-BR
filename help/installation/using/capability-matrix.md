@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Matriz de recursos no local, híbrida e hospedada do Campaign
-description: Saiba mais sobre as principais diferenças entre implantações locais e hospedadas
+title: Matriz de recursos no local, híbridos e hospedados do Campaign
+description: Saiba mais sobre as principais diferenças entre implantações hospedadas e no local
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -15,9 +15,9 @@ ht-degree: 46%
 
 
 
-O Adobe Campaign Classic vem com um conjunto de módulos e opções. A disponibilidade desses módulos e sua configuração podem depender do tipo de implantação da sua instalação. Este artigo compartilha alguns detalhes sobre as principais diferenças para determinados recursos entre implantações totalmente hospedadas (Managed Services) e implantações locais.
+O Adobe Campaign Classic vem com um conjunto de módulos e opções. A disponibilidade desses módulos e sua configuração podem depender do tipo de implantação da sua instalação. Este artigo compartilha alguns detalhes sobre as principais diferenças para determinados recursos entre implantações totalmente hospedadas (Managed Services) e no local.
 
-Esta página mostra as principais diferenças entre implantações hospedadas (Managed Services) e locais. As especificidades de implantações híbridas dependem dos elementos hospedados pelo Adobe e hospedados em suas instalações.
+Esta página mostra as principais diferenças entre implantações locais e hospedadas (Managed Services). As especificidades das implantações híbridas dependem dos elementos hospedados pelo Adobe e hospedados em suas instalações.
 
 Os diferentes modelos de hospedagem são introduzidos [nesta seção](../../installation/using/hosting-models.md).
 
@@ -27,15 +27,15 @@ Os diferentes modelos de hospedagem são introduzidos [nesta seção](../../inst
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Configurar o servidor do Campaign | Sob demanda | Disponível | Disponível | [Saiba mais](../../installation/using/the-server-configuration-file.md) |
 | CCO de email | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../installation/using/email-archiving.md) |
-| Gerenciar instância de execução do Centro de Mensagens | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../message-center/using/about-transactional-messaging.md) |
-| Gerenciamento de plataforma Mid-sourcing | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../installation/using/mid-sourcing-server.md) |
+| Gerenciar instância de execução do Centro de mensagens | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../message-center/using/about-transactional-messaging.md) |
+| Gerenciamento da plataforma Mid-sourcing | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../installation/using/mid-sourcing-server.md) |
 | Renderização da caixa de entrada via Litmus | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../delivery/using/inbox-rendering.md) |
-| Integração com o IMS (Adobe ID) | Sob demanda | Sob demanda | Sob demanda | [Saiba mais](../../integrations/using/about-adobe-id.md) |
+| Integração com IMS (Adobe ID) | Sob demanda | Sob demanda | Sob demanda | [Saiba mais](../../integrations/using/about-adobe-id.md) |
 | Criptografar/descriptografar dados para transferências de arquivos | Sob demanda | Disponível | Disponível | [Saiba mais](../../platform/using/unzip-decrypt.md) |
 | Compactação/descompactação de arquivos | Sob demanda | Disponível | Disponível | [Saiba mais](../../platform/using/unzip-decrypt.md) |
-| Delegação de Nome de Domínio | Sob demanda | Sob demanda | Indisponível | [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR) |
+| Delegação de nome de domínio | Sob demanda | Sob demanda | Indisponível | [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR) |
 | Instalação do SpamAssassin | Sob demanda | Disponível | Disponível | [Saiba mais](../../delivery/using/spamassassin.md) |
-| Acesso aos relatórios de capacidade de delivery | Disponível | Sob demanda | Disponível | [Saiba mais](../../delivery/using/monitoring-deliverability.md) |
+| Acesso aos relatórios de entrega | Disponível | Sob demanda | Disponível | [Saiba mais](../../delivery/using/monitoring-deliverability.md) |
 | Configuração da autenticação LDAP | Não disponível | Disponível | Disponível | [Saiba mais](../../installation/using/connecting-through-ldap.md) |
 
 
@@ -45,7 +45,7 @@ O Adobe Campaign oferece a opção **Federated Data Access** (FDA) para processa
 
 >[!CAUTION]
 >
->Sistemas de banco de dados externos compatíveis dependem do seu modelo de hospedagem. Saiba mais em [Matriz de compatibilidade de campanha](../../rn/using/compatibility-matrix.md).
+>Sistemas de banco de dados externos compatíveis dependem do seu modelo de hospedagem. Saiba mais em [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-matrix.md).
 
 **Consulte também**
 

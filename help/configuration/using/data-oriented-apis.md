@@ -14,45 +14,45 @@ ht-degree: 1%
 
 # APIs orientadas por dados{#data-oriented-apis}
 
-As APIs orientadas a dados permitem abordar todo o modelo de dados.
+As APIs orientadas por dados permitem abordar todo o modelo de dados.
 
 ## Visão geral do modelo de dados {#overview-of-the-datamodel}
 
-A Adobe Campaign não oferece uma API de leitura dedicada por entidade (sem função getRecipient ou getDelivery etc.). Use os métodos de leitura e modificação de dados de QUERY &amp; WRITER para acessar os dados do modelo.
+A Adobe Campaign não oferece uma API de leitura dedicada por entidade (nenhuma função getRecipient ou getDelivery, etc.). Use os métodos de leitura e modificação de dados QUERY &amp; WRITER para acessar os dados do modelo.
 
-O Adobe Campaign permite gerenciar coleções: As queries permitem recuperar um conjunto de informações coletadas em toda a base. Ao contrário do acesso no modo SQL, as APIs do Adobe Campaign retornam uma árvore XML em vez de colunas de dados. O Adobe Campaign, portanto, cria documentos compostos com todos os dados coletados.
+O Adobe Campaign permite gerenciar coleções: consultas permitem recuperar um conjunto de informações coletadas em toda a base. Ao contrário do acesso no modo SQL, as APIs do Adobe Campaign retornam uma árvore XML em vez de colunas de dados. O Adobe Campaign cria documentos compostos com todos os dados coletados.
 
-Esse modo operacional não oferece mapeamento de um para um entre os atributos e elementos dos documentos XML e as colunas das tabelas no banco de dados.
+Esse modo operacional não oferece mapeamento um para um entre os atributos e elementos dos documentos XML e as colunas das tabelas no banco de dados.
 
 Os documentos XML são armazenados em campos do tipo MEMO do banco de dados.
 
 ## Descrição do modelo {#description-of-the-model}
 
-Familiarize-se com o modelo de dados Adobe Campaign para poder endereçar os campos do banco de dados em seus scripts.
+Você deve estar familiarizado com o modelo de dados do Adobe Campaign para poder abordar os campos do banco de dados nos scripts.
 
-Para obter uma apresentação do modelo de dados, consulte [Descrição do modelo de dados do Adobe Campaign](../../configuration/using/data-model-description.md).
+Para obter uma apresentação do modelo de dados, consulte a [Descrição do modelo de dados do Adobe Campaign](../../configuration/using/data-model-description.md).
 
-## Query e Gravador {#query-and-writer}
+## Query e Writer {#query-and-writer}
 
-O schema de introdução a seguir detalha trocas de baixo nível para leitura (ExecuteQuery) e gravação (Writer) entre banco de dados e cliente (páginas da Web ou console do cliente Adobe Campaign).
+A introdução a seguir detalha intercâmbios de baixo nível para leitura (ExecuteQuery) e gravação (Writer) entre o banco de dados e o cliente (páginas da Web ou console do cliente Adobe Campaign).
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
 ### ExecuteQuery {#executequery}
 
-Para colunas e condições, você pode usar Queries.
+Para colunas e condições, você pode usar Consultas.
 
-Isso permite isolar o SQL subjacente. A linguagem de consulta não depende do mecanismo subjacente: algumas funções serão remapeadas, o que pode gerar várias ordens SELECT SQL.
+Isso permite isolar o SQL subjacente. A linguagem de consulta não depende do mecanismo subjacente: algumas funções serão remapeadas, o que pode gerar várias ordens SQL SELECT.
 
-Para obter mais informações, consulte [Exemplo no método &#39;ExecuteQuery&#39; do schema &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+Para obter mais informações, consulte [Exemplo do método &#39;ExecuteQuery&#39; do esquema &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-O **ExecuteQuery** é apresentado em [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
+A variável **ExecuteQuery** O método é apresentado em [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
 ### Write {#write}
 
-Os comandos de gravação permitem escrever documentos simples ou complexos, com entradas em uma ou mais tabelas da base.
+Os comandos Gravar permitem escrever documentos simples ou complexos, com entradas em uma ou mais tabelas da base.
 
-As APIs transacionais permitem gerenciar reconciliações por meio do **updateOrInsert** comando: um comando permite criar ou atualizar dados. Você também pode configurar a mesclagem de modificações (**mesclar**): esse modo operacional permite autorizar atualizações parciais.
+As APIs transacionais permitem gerenciar reconciliações por meio do **updateOrInsert** command: um comando permite criar ou atualizar dados. Você também pode configurar a mesclagem de modificações (**mesclar**): esse modo operacional permite autorizar atualizações parciais.
 
 A estrutura XML oferece uma visualização lógica dos dados e permite contornar a estrutura física da tabela SQL.
 
@@ -60,9 +60,9 @@ O método Write é apresentado em [Write / WriteCollection (xtk:session)](#write
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
-Esse método permite executar consultas a partir de dados associados a um schema. Ele usa uma cadeia de caracteres de autenticação (deve estar conectado) e um documento XML que descreve a consulta a ser enviada como parâmetros. O parâmetro return é um documento XML que contém o resultado da consulta no formato do schema ao qual a consulta se refere.
+Esse método permite executar queries de dados associados a um schema. É necessária uma cadeia de caracteres de autenticação (deve estar conectado) e um documento XML que descreve a consulta a ser enviada como parâmetros. O parâmetro return é um documento XML que contém o resultado da consulta no formato do schema ao qual a consulta se refere.
 
-Definição do método &quot;ExecuteQuery&quot; no schema &quot;xtk:queryDef&quot;:
+Definição do método &quot;ExecuteQuery&quot; no esquema &quot;xtk:queryDef&quot;:
 
 ```
 <method name="ExecuteQuery" const="true">
@@ -78,7 +78,7 @@ Definição do método &quot;ExecuteQuery&quot; no schema &quot;xtk:queryDef&quo
 
 ### Formato do documento XML da consulta de entrada {#format-of-the-xml-document-of-the-input-query}
 
-A estrutura do documento XML da consulta é descrita no schema &quot;xtk:queryDef &quot;. Este documento descreve as cláusulas de uma consulta SQL: &quot;selecionar&quot;, &quot;onde&quot;, &quot;ordenar por&quot;, &quot;agrupar por&quot;, &quot;ter&quot;.
+A estrutura do documento XML da consulta é descrita no schema &quot;xtk:queryDef &quot;. Este documento descreve as cláusulas de uma consulta SQL: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
 
 ```
 <queryDef schema="schema_key" operation="operation_type">
@@ -110,9 +110,9 @@ A estrutura do documento XML da consulta é descrita no schema &quot;xtk:queryDe
 </queryDef>
 ```
 
-Um subquery ( `<subquery>`  ) pode ser definido em um  `<condition> `  elemento. A sintaxe de um   `<subquery> `   O elemento é baseado na sintaxe de um    `<querydef>`.
+Uma subconsulta ( `<subquery>`  ) pode ser definida em uma  `<condition> `  elemento. A sintaxe de um   `<subquery> `   o elemento é baseado na sintaxe de um    `<querydef>`.
 
-Exemplo de um `<subquery>  : </subquery>`
+Exemplo de a `<subquery>  : </subquery>`
 
 ```
 <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
@@ -128,18 +128,18 @@ Exemplo de um `<subquery>  : </subquery>`
   
 ```
 
-Uma query deve referenciar um schema inicial do **schema** atributo.
+Uma consulta deve fazer referência a um esquema inicial do **schema** atributo.
 
-O tipo de operação desejado é inserido na variável **operation** e contém um dos seguintes valores:
+O tipo de operação desejado é inserido no campo **operação** e contém um dos seguintes valores:
 
-* **get**: recupera um registro da tabela e retorna um erro se os dados não existirem,
+* **obter**: recupera um registro da tabela e retorna um erro se os dados não existirem,
 * **getIfExists**: recupera um registro da tabela e retorna um documento vazio se os dados não existirem,
-* **select**: cria um cursor para retornar vários registros e retorna um documento vazio se não houver dados,
+* **selecionar**: cria um cursor para retornar vários registros e retorna um documento vazio se não houver dados,
 * **count**: retorna uma contagem de dados.
 
-O **XPath** é usada para localizar dados com base no schema de entrada. Para obter mais informações sobre XP; consulte [Schemas de dados](../../configuration/using/data-schemas.md).
+A variável **XPath** A sintaxe é usada para localizar dados com base no schema de entrada. Para obter mais informações sobre XPaths, consulte [Esquemas de dados](../../configuration/using/data-schemas.md).
 
-#### Exemplo com a operação &quot;get&quot; {#example-with-the--get--operation}
+#### Exemplo com a operação &#39;get&#39; {#example-with-the--get--operation}
 
 Recupera o sobrenome e o nome de um recipient (schema &quot;nms:recipient&quot;) com um filtro no email.
 
@@ -158,7 +158,7 @@ Recupera o sobrenome e o nome de um recipient (schema &quot;nms:recipient&quot;)
 </queryDef>
 ```
 
-#### Exemplo com a operação &quot;select&quot; {#example-with-the--select--operation}
+#### Exemplo com a operação &#39;select&#39; {#example-with-the--select--operation}
 
 Retorna a lista de recipients filtrados em uma pasta e o domínio de email com uma classificação em ordem decrescente na data de nascimento.
 
@@ -185,9 +185,9 @@ Retorna a lista de recipients filtrados em uma pasta e o domínio de email com u
 
 As expressões podem ser campos simples ou expressões complexas, como operações aritméticas ou a concatenação de strings.
 
-Para limitar o número de registros a serem retornados, adicione o **lineCount** para a `<querydef>` elemento.
+Para limitar o número de registros a serem retornados, adicione o **lineCount** atributo para o `<querydef>` elemento.
 
-Para limitar o número de registros retornados pelo query a 100:
+Para limitar para 100 o número de registros retornados pela consulta:
 
 ```
 <queryDef schema="nms:recipient" operation="select" lineCount="100">
@@ -203,7 +203,7 @@ Para recuperar os próximos 100 registros, execute a mesma consulta novamente, a
 
 #### Exemplo com a operação &quot;count&quot; {#example-with-the--count--operation}
 
-Para contar o número de registros em um query:
+Para contar o número de registros em uma consulta:
 
 ```
 <queryDef schema="nms:recipient" operation="count"">
@@ -216,7 +216,7 @@ Para contar o número de registros em um query:
 
 >[!NOTE]
 >
->Novamente, usamos a condição do exemplo anterior. O `<select>` as cláusulas e não são usadas. `</select>`
+>Novamente, usamos a condição do exemplo anterior. A variável `<select>` As cláusulas e não são usadas. `</select>`
 
 #### Agrupamento de dados {#data-grouping}
 
@@ -242,7 +242,7 @@ Para recuperar endereços de email referenciados mais de uma vez:
 </queryDef>
 ```
 
-O query pode ser simplificado ao adicionar o **groupBy** atributo diretamente no campo a ser agrupado:
+O query pode ser simplificado adicionando o **groupBy** Atribua diretamente ao campo a ser agrupado:
 
 ```
 <select>
@@ -252,11 +252,11 @@ O query pode ser simplificado ao adicionar o **groupBy** atributo diretamente no
 
 >[!NOTE]
 >
->Não é mais necessário preencher a variável `<groupby>` elemento.
+>Não é mais necessário preencher o `<groupby>` elemento.
 
-#### Compactação em condições {#bracketing-in-conditions}
+#### Interrupção em condições {#bracketing-in-conditions}
 
-Aqui estão dois exemplos de colchetes na mesma condição.
+Aqui estão dois exemplos de suporte na mesma condição.
 
 * A versão simples em uma única expressão:
 
@@ -281,7 +281,7 @@ Aqui estão dois exemplos de colchetes na mesma condição.
    </where>
    ```
 
-É possível substituir o operador &#39;OR&#39; pela operação &#39;IN&#39; quando várias condições se aplicam ao mesmo campo:
+É possível substituir o operador &quot;OR&quot; pela operação &quot;IN&quot; quando várias condições se aplicam ao mesmo campo:
 
 ```
 <where>
@@ -292,13 +292,13 @@ Aqui estão dois exemplos de colchetes na mesma condição.
 </where>
 ```
 
-Essa sintaxe simplifica o query quando mais de dois dados são usados na condição.
+Essa sintaxe simplifica a query quando mais de dois dados são usados na condição.
 
-#### Exemplos de links {#examples-on-links}
+#### Exemplos em links {#examples-on-links}
 
-* Links 1-1 ou N1: quando a tabela tem a chave externa (o link começa na tabela), os campos da tabela vinculada podem ser filtrados ou recuperados diretamente.
+* Links 1-1 ou N1: quando a tabela tem a chave estrangeira (o link começa na tabela), os campos da tabela vinculada podem ser filtrados ou recuperados diretamente.
 
-   Exemplo de filtro no rótulo da pasta:
+   Exemplo de um filtro no rótulo da pasta:
 
    ```
    <where>
@@ -319,7 +319,7 @@ Essa sintaxe simplifica o query quando mais de dois dados são usados na condiç
 
 * Links de coleção (1N): a filtragem nos campos de uma tabela de coleção deve ser executada por meio do **EXISTE** ou **NÃO EXISTE** operador.
 
-   Para filtrar os recipients que assinaram o serviço de informação &quot;Informativo&quot;:
+   Para filtrar os recipients que assinaram o serviço de informação &quot;Boletim informativo&quot;:
 
    ```
    <where>
@@ -329,9 +329,9 @@ Essa sintaxe simplifica o query quando mais de dois dados são usados na condiç
    </where>
    ```
 
-   Recuperação direta dos campos de um link de coleção do `<select>` não é recomendada porque a consulta retorna um produto cardinal. Ele é usado somente quando a tabela vinculada contém apenas um registro (exemplo `<node expr="">`).
+   Recuperação direta dos campos de um link de coleção na `<select>` A cláusula não é recomendada porque a consulta retorna um produto cardeal. É usado somente quando a tabela vinculada contém apenas um registro (exemplo `<node expr="">`).
 
-   Exemplo no link de coleção &quot;subscrição&quot;:
+   Exemplo no link de coleção &quot;subscription&quot;:
 
    ```
    <select>
@@ -339,11 +339,11 @@ Essa sintaxe simplifica o query quando mais de dois dados são usados na condiç
    </select>
    ```
 
-   É possível recuperar uma sublista contendo os elementos de um link de coleção no `<select>` cláusula. Os XPouts dos campos referenciados são contextuais do elemento de coleção.
+   É possível recuperar uma sublista contendo os elementos de um link de coleção no `<select>` Cláusula. Os XPaths dos campos referenciados são contextuais a partir do elemento de coleção.
 
-   A filtragem ( `<orderby>`  ) e restrição (  `<where>`  ) podem ser adicionados ao elemento de coleção.
+   O filtro ( `<orderby>`  ) e restrição (  `<where>`  ) elementos podem ser adicionados ao elemento de coleção.
 
-   Neste exemplo, para cada recipient, o query retorna o email e a lista de serviços de informação aos quais o recipient se inscreve:
+   Neste exemplo, para cada recipient, o query retorna o email e a lista de serviços de informações que o recipient assina:
 
    ```
    <queryDef schema="nms:recipient" operation="select">
@@ -365,11 +365,11 @@ Essa sintaxe simplifica o query quando mais de dois dados são usados na condiç
    </queryDef>
    ```
 
-#### Vínculo dos parâmetros da cláusula &#39;where&#39; e &#39;select&#39; {#binding-the-parameters-of-the--where--and--select--clause}
+#### Associação dos parâmetros da cláusula &#39;where&#39; e &#39;select&#39; {#binding-the-parameters-of-the--where--and--select--clause}
 
-O vínculo de parâmetros permite que o mecanismo defina os valores dos parâmetros usados na query. Isso é muito útil, pois o mecanismo é responsável pelo escape dos valores e há o benefício adicional de um cache para os parâmetros a serem recuperados.
+O vínculo de parâmetros permite que o mecanismo defina os valores dos parâmetros usados na consulta. Isso é muito útil, pois o mecanismo é responsável pelo escape de valores e há o benefício adicional de um cache para os parâmetros a serem recuperados.
 
-Quando uma consulta é construída, os valores &quot;vinculados&quot; são substituídos por um caractere (? em ODBC, `#[index]#` em postgres...) no corpo da consulta SQL.
+Quando um query é construído, os valores &quot;vinculados&quot; são substituídos por um caractere (? no ODBC, `#[index]#` em postgres...) no corpo da consulta SQL.
 
 ```
 <select>
@@ -380,15 +380,15 @@ Quando uma consulta é construída, os valores &quot;vinculados&quot; são subst
 </select>
 ```
 
-Para evitar vincular um parâmetro, o atributo &quot;noSqlBind&quot; deve ser preenchido com o valor &quot;true&quot;.
+Para evitar a associação de um parâmetro, o atributo &quot;noSqlBind&quot; deve ser preenchido com o valor &#39;true&#39;.
 
 >[!IMPORTANT]
 >
->Se a consulta incluir instruções &quot;order-by&quot; ou &quot;group-by&quot;, os mecanismos de banco de dados não poderão &quot;vincular&quot; valores. Você deve colocar o atributo @noSqlBind=&quot;true&quot; nas instruções &quot;select&quot; e/ou &quot;where&quot; da query.
+>Se a consulta incluir instruções &quot;pedir por&quot; ou &quot;agrupar por&quot;, os mecanismos de banco de dados não poderão &quot;vincular&quot; valores. Você deve colocar o atributo @noSqlBind=&quot;true&quot; nas instruções &quot;select&quot; e/ou &quot;where&quot; da consulta.
 
 #### Dica de criação de consulta: {#query-building-tip-}
 
-Para ajudar com a sintaxe de um query, você pode gravar o query usando o editor de query genérico no console do cliente Adobe Campaign ( **[!UICONTROL Tools/ Generic query editor...]** ). Para fazer isso:
+Para ajudar com a sintaxe de uma query, você pode gravar a query usando o editor de query genérico no console do cliente do Adobe Campaign ( **[!UICONTROL Tools/ Generic query editor...]** menu ). Para fazer isso:
 
 1. Selecione os dados a serem recuperados:
 
@@ -398,15 +398,15 @@ Para ajudar com a sintaxe de um query, você pode gravar o query usando o editor
 
    ![](assets/s_ncs_integration_webservices_queyr2.png)
 
-1. Execute a consulta e pressione CTRL+F4 para visualizar o código-fonte da consulta.
+1. Execute a consulta e pressione CTRL+F4 para exibir o código-fonte da consulta.
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
 ### Formato do documento de saída {#output-document-format}
 
-O parâmetro return é um documento XML no formato do schema associado à query.
+O parâmetro return é um documento XML no formato do schema associado à consulta.
 
-Exemplo de um retorno do schema &quot;nms:recipient&quot; em uma operação &quot;get&quot;:
+Exemplo de retorno do schema &quot;nms:recipient&quot; em uma operação &quot;get&quot;:
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -423,7 +423,7 @@ Em uma operação &quot;select&quot;, o documento retornado é uma enumeração 
 </recipient-collection>  
 ```
 
-Exemplo de um documento retornado para a operação de tipo &quot;contagem&quot;:
+Exemplo de um documento retornado para operação do tipo &quot;count&quot;:
 
 ```
 <recipient count="3"/>
@@ -431,7 +431,7 @@ Exemplo de um documento retornado para a operação de tipo &quot;contagem&quot;
 
 #### Alias {#alias}
 
-Um alias permite modificar a localização dos dados no documento de saída. O **alias** deve especificar um XPath no campo correspondente.
+Um alias permite modificar o local dos dados no documento de saída. A variável **alias** O atributo deve especificar um XPath no campo correspondente.
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -503,11 +503,11 @@ Em vez de:
 
 Esses serviços são usados para inserir, atualizar ou excluir uma entidade (método &quot;Write&quot;) ou uma coleção de entidades (método &quot;WriteCollection&quot;).
 
-As entidades a serem atualizadas estão associadas a um schema de dados. Os parâmetros de entrada são uma string de autenticação (deve estar conectado) e um documento XML contendo os dados a serem atualizados.
+As entidades a serem atualizadas estão associadas a um schema de dados. Os parâmetros de entrada são uma string de autenticação (deve estar conectada) e um documento XML contendo os dados a serem atualizados.
 
 Este documento é complementado por instruções para configurar os procedimentos de gravação.
 
-A chamada não retorna dados, exceto erros.
+A chamada não retorna nenhum dado, exceto erros.
 
 Definição dos métodos &quot;Write&quot; e &quot;WriteCollection&quot; no schema &quot;xtk:session&quot;:
 
@@ -530,23 +530,23 @@ Definição dos métodos &quot;Write&quot; e &quot;WriteCollection&quot; no sche
 
 ### Visão geral {#overview}
 
-A reconciliação de dados opera com base na definição das chaves inseridas no schema associado. O procedimento de gravação busca a primeira chave elegível com base nos dados inseridos no documento de entrada. A entidade é inserida ou atualizada com base em sua existência no banco de dados.
+A reconciliação de dados opera com base na definição das chaves inseridas no schema associado. O procedimento de gravação procura a primeira chave qualificada com base nos dados inseridos no documento de entrada. A entidade é inserida ou atualizada com base em sua existência no banco de dados.
 
-A chave do schema da entidade a ser atualizada é concluída com base na variável **xtkschema** atributo.
+A chave do schema da entidade a ser atualizada é preenchida com base no **xtkschema** atributo.
 
-A chave de reconciliação pode, portanto, ser forçada com a variável **_key** que contém a lista de XPouts que compõem a chave (separados por vírgulas).
+A chave de reconciliação pode, portanto, ser forçada com o **_key** atributo que contém a lista de XPaths que compõem a chave (separados por vírgulas).
 
-É possível forçar o tipo de operação preenchendo a variável **_operação** com os seguintes valores:
+É possível forçar o tipo de operação preenchendo o **_operation** com os seguintes valores:
 
-* **insert**: força a inserção do registro (a chave de reconciliação não é usada),
+* **inserir**: força a inserção do registro (a chave de reconciliação não é usada),
 * **insertOrUpdate**: atualiza ou insere o registro dependendo da chave de reconciliação (modo padrão),
 * **atualizar**: atualiza o registro; não faz nada se os dados não existirem,
 * **excluir**: exclui os registros,
-* **nenhum**: usado somente para reconciliação de link, sem atualização ou inserção.
+* **nenhum**: usado apenas para reconciliação de link, sem atualização ou inserção.
 
-### Exemplo com o método &quot;Write&quot; {#example-with-the--write--method}
+### Exemplo com o método &#39;Write&#39; {#example-with-the--write--method}
 
-Atualização ou inserção de um recipient (operação implícita &quot;insertOrUpdate&quot;) com endereço de email, data de nascimento e cidade:
+Atualizar ou inserir um recipient (operação &quot;insertOrUpdate&quot; implícita) com endereço de email, data de nascimento e cidade:
 
 ```
 <recipient xtkschema="nms:recipient" email="john.doe@adobe.com" birthDate="1956/05/04" folder-id=1203 _key="@email, [@folder-id]">
@@ -566,7 +566,7 @@ Excluindo um recipient:
 
 ### Exemplo com o método &#39;WriteCollection&#39; {#example-with-the--writecollection--method}
 
-Atualizar ou inserir para vários recipients:
+Atualização ou inserção para vários destinatários:
 
 ```
 <recipient-collection xtkschema="nms:recipient">    
@@ -580,7 +580,7 @@ Atualizar ou inserir para vários recipients:
 
 #### Exemplo 1 {#example-1}
 
-Associando a pasta a um recipient com base em seu nome interno (@name).
+Associar a pasta a um recipient com base em seu nome interno (@name).
 
 ```
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -620,11 +620,11 @@ Adicionar um recipient a um grupo com a tabela de relação de grupo (&quot;nms:
 
 >[!NOTE]
 >
->A definição da chave não é inserida na variável `<rcpgroup>` elemento porque uma chave implícita com base no nome do grupo é definida no schema &quot;nms:group&quot;.
+>A definição da chave não é inserida na variável `<rcpgroup>` elemento porque uma chave implícita baseada no nome do grupo é definida no schema &quot;nms:group&quot;.
 
-### Elementos de coleção XML {#xml-collection-elements}
+### Elementos da coleção XML {#xml-collection-elements}
 
-Por padrão, todos os elementos de coleção devem ser preenchidos para atualizar os elementos de coleção XML. Os dados do banco de dados serão substituídos pelos dados do documento de entrada. Se o documento contiver apenas os elementos a serem atualizados, você deverá preencher o atributo &quot;_operation&quot; em todos os elementos de coleção a serem atualizados para forçar uma mesclagem com os dados XML do banco de dados.
+Por padrão, todos os elementos de coleção devem ser preenchidos para atualizar os elementos de coleção XML. Os dados do banco de dados serão substituídos por dados do documento de entrada. Se o documento contiver apenas os elementos a serem atualizados, você deverá preencher o atributo &quot;_operation&quot; em todos os elementos de coleção a serem atualizados para forçar uma mesclagem com os dados XML do banco de dados.
 
 ### Exemplo de mensagens SOAP {#example-of-soap-messages-1}
 

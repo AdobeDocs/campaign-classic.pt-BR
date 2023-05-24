@@ -20,7 +20,7 @@ ht-degree: 40%
 
 ## Otimizar a personalização de email com dados externos {#optimizing-email-personalization-with-external-data}
 
-Você pode pré-processar a personalização de mensagens em um workflow dedicado. Para fazer isso, use o **[!UICONTROL Prepare the personalization data with a workflow]** , disponível na **[!UICONTROL Analysis]** das propriedades de delivery.
+Você pode pré-processar a personalização da mensagem em um fluxo de trabalho dedicado. Para fazer isso, use o **[!UICONTROL Prepare the personalization data with a workflow]** opção, disponível na **[!UICONTROL Analysis]** das propriedades de delivery.
 
 Durante a análise de delivery, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao target em uma tabela temporária, incluindo dados de tabelas vinculadas em um banco de dados externo.
 
@@ -28,15 +28,15 @@ Essa opção melhora significativamente o desempenho ao executar a etapa de pers
 
 ## Usar dados de um banco de dados externo em um workflow {#using-data-from-an-external-database-in-a-workflow}
 
-Em várias atividades de workflow do Adobe Campaign, você pode usar os dados armazenados em um banco de dados externo.
+Em várias atividades de workflow do Adobe Campaign, é possível usar os dados armazenados em um banco de dados externo.
 
-* **Filtrar dados externos** - O [Query](../../workflow/using/targeting-data.md#selecting-data) permite adicionar dados externos e usá-los nas configurações de filtro definidas. Para obter mais informações, consulte [esta página](../../workflow/using/targeting-data.md#selecting-data).
+* **Filtrar dados externos** - A [Query](../../workflow/using/targeting-data.md#selecting-data) A atividade permite adicionar dados externos e usá-los nas configurações de filtro definidas. Para obter mais informações, consulte [esta página](../../workflow/using/targeting-data.md#selecting-data).
 
-* **Criar subconjuntos** - O [Split](../../workflow/using/split.md) permite criar subconjuntos. Você pode usar dados externos para definir os critérios de filtragem a serem usados. Para obter mais informações, consulte [esta página](../../workflow/using/split.md).
+* **Criar subconjuntos** - A [Split](../../workflow/using/split.md) A atividade permite criar subconjuntos. Você pode usar dados externos para definir os critérios de filtragem a serem usados. Para obter mais informações, consulte [esta página](../../workflow/using/split.md).
 
-* **Carregar banco de dados externo** - Você pode usar os dados externos no [Carregamento de dados](../../workflow/using/data-loading--rdbms-.md) (RDBMS). Saiba mais [nesta página](../../workflow/using/data-loading--rdbms-.md).
+* **Carregar banco de dados externo** - Você pode usar os dados externos na [Carregamento de dados](../../workflow/using/data-loading--rdbms-.md) (RDBMS). Saiba mais [nesta página](../../workflow/using/data-loading--rdbms-.md).
 
-* **Adição de informações e links** - O [Enriquecimento](../../workflow/using/enrichment.md) permite adicionar dados adicionais à tabela de trabalho do workflow e criar links para uma tabela externa. Nesse contexto, é possível usar dados de um banco de dados externo. Saiba mais [nesta página](../../workflow/using/enrichment.md).
+* **Adição de informações e links** - A [Enriquecimento](../../workflow/using/enrichment.md) A atividade permite adicionar dados à tabela de trabalho do workflow e links para uma tabela externa. Nesse contexto, ele pode usar dados de um banco de dados externo. Saiba mais [nesta página](../../workflow/using/enrichment.md).
 
 ## Limitações do FDA {#limitations}
 

@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '5972'
-ht-degree: 100%
+source-wordcount: '5974'
+ht-degree: 99%
 
 ---
 
@@ -144,11 +144,11 @@ Use Grupos de controle para medir o impacto de suas campanhas excluindo parte do
 Saiba mais sobre [Grupos de controle](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
-+++**Painel de controle do Campaign**
++++**Painel de controle**
 
 O Painel de controle ajuda os administradores de produtos do Adobe Campaign a aumentar a eficiência em seu trabalho, permitindo que eles gerenciem configurações e monitorem o uso de cada uma de suas instâncias. Sua interface intuitiva permite que eles monitorem facilmente o uso dos principais ativos e realizem tarefas administrativas, como adicionar endereços IP na lista de permissões, monitorar o armazenamento SFTP, gerenciar chaves e muito mais.
 
-Saiba mais sobre o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR).
+Saiba mais sobre o [Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR).
 +++
 
 +++**Cubos**
@@ -906,7 +906,7 @@ Saiba mais sobre [Serviços](../../delivery/using/about-services-and-subscriptio
 
 +++**Gerenciamento de SFTP**
 
-No Painel de controle do Campaign, é possível interagir com todos os servidores SFTP conectados às instâncias do Campaign às quais você tem acesso. O Painel de controle do Campaign permite executar ações em seus servidores SFTP, como Monitorar a capacidade de armazenamento, Gerenciar endereços IP para permitir listagens e gerenciar chaves SSH públicas.
+No Painel de controle, é possível interagir com todos os servidores SFTP conectados às instâncias do Campaign às quais você tem acesso. O Painel de controle permite executar ações em seus servidores SFTP, como Monitorar a capacidade de armazenamento, Gerenciar endereços IP para permitir listagens e gerenciar chaves SSH públicas.
 
 Saiba mais sobre [Gerenciamento de SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=pt-BR).
 +++
@@ -1013,7 +1013,7 @@ As mensagens transacionais são um módulo do Campaign criado para gerenciar not
 Saiba mais sobre [Mensagens transacionais](../../message-center/using/about-transactional-messaging.md).
 +++
 
-<!------- USEFUL HERE??----->
+&lt;!— ÚTIL AQUI??—>
 +++**Campanhas acionadas**
 
 As campanhas acionadas são campanhas que são executadas quando uma solicitação de API é recebida em um fluxo de trabalho. As chamadas de API são consumidas por uma atividade de Sinal no fluxo de trabalho, cuja execução é iniciada.

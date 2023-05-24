@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Inserir tags de rastreamento Web no seu site
-description: Saiba como inserir tags de rastreamento Web no seu site
+title: Inserir tags de rastreamento Web no site
+description: Saiba como inserir tags de rastreamento Web no site
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Método simples {#simple-method}
 
-Esse método consiste em enviar uma chamada HTTP para o servidor de redirecionamento ao inserir um **`<img>`** Tag HTML no código-fonte do HTML da página da Web que você deseja rastrear.
+Este método consiste em enviar uma chamada HTTP para o servidor de redirecionamento inserindo uma **`<img>`** tag HTML no código-fonte HTML da página da Web que você deseja rastrear.
 
 >[!IMPORTANT]
 >
@@ -33,13 +33,13 @@ A tag inserida entra em contato com o servidor de redirecionamento.
 
 Ao definir uma página a ser rastreada no console, você pode gerar uma tag de rastreamento Web de amostra para copiar e colar no código-fonte da página da Web.
 
-No entanto, ao usar tags do tipo TRANSACTION, é necessário modificar a tag de amostra usando JavaScript para inserir as informações da transação (quantidade, número de itens) e quaisquer informações definidas por um schema de extensão.
+No entanto, quando você usa tags do tipo TRANSAÇÃO, deve modificar a tag de amostra usando JavaScript para inserir as informações da transação (quantidade, número de itens) e quaisquer informações definidas por um schema de extensão.
 
 ### Inserção estática de tags {#static-insertion-of-tags}
 
-Para executar a inserção estática de tags, basta copiar e colar as tags geradas pelo console ou construídas manualmente na origem da página da Web.
+Para executar a inserção estática de tags, basta copiar e colar as tags geradas pelo console ou criadas manualmente na origem da página da Web.
 
-**Exemplo**: inserção de uma tag de rastreamento Web em uma página que exibe um formulário.
+**Exemplo**: inserção de uma tag de rastreamento web em uma página que exibe um formulário.
 
 ```
 <html>
@@ -61,7 +61,7 @@ Para executar a inserção estática de tags, basta copiar e colar as tags gerad
 </html>
 ```
 
-Inserção de uma tag de rastreamento Web do tipo TRANSACTION na página de confirmação (&quot;amount.md&quot;).
+Inserção de uma tag de rastreamento Web do tipo TRANSAÇÃO na página de confirmação (&quot;amount.md&quot;).
 
 ```
 <html>
@@ -85,9 +85,9 @@ Inserção de uma tag de rastreamento Web do tipo TRANSACTION na página de conf
 
 ### Geração dinâmica de tags de rastreamento Web {#dynamic-generation-of-web-tracking-tags}
 
-Quando as páginas da Web são geradas dinamicamente, é possível adicionar a tag de rastreamento da Web no momento da geração da página.
+Quando as páginas da Web são geradas dinamicamente, é possível adicionar a tag de rastreamento Web no momento da geração da página.
 
-**Exemplo**: Rastreamento web adicionado aos JSPs.
+**Exemplo**: rastreamento web adicionado às JSPs.
 
 ```
 <%@page import="java.util.Random" %>
@@ -120,19 +120,19 @@ Quando as páginas da Web são geradas dinamicamente, é possível adicionar a t
 </html>
 ```
 
-## Método ideal {#optimum-method-}
+## Método Optimum {#optimum-method-}
 
-Se você quiser controlar as informações enviadas para o servidor de redirecionamento, a maneira mais confiável é executar a consulta HTTP de forma síncrona usando um idioma de geração de página.
+Se você quiser controlar as informações enviadas ao servidor de redirecionamento, a maneira mais confiável é executar a consulta HTTP de forma síncrona usando uma linguagem de geração de página.
 
-O URL que você constrói deve obedecer às regras de sintaxe definidas em [Tag de rastreamento Web: definição](../../configuration/using/web-tracking-tag--definition.md).
+O URL que você construir deverá obedecer às regras de sintaxe definidas em [Tag de rastreamento Web: definição](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
 >[!NOTE]
 >
->O redirecionamento e o rastreamento Web usam cookies, e é importante que o servidor da Web que executa a chamada HTTP síncrona esteja no mesmo domínio que o servidor de redirecionamento. As várias trocas HTTP devem transmitir os cookies &#39;id&#39;, &#39;uuid&#39; e &#39;uuid230&#39;.
+>O redirecionamento e o rastreamento web usam cookies, e é importante que o servidor web que executa a chamada HTTP síncrona esteja no mesmo domínio que o servidor de redirecionamento. As várias trocas HTTP devem transmitir os cookies &quot;id&quot;, &quot;uuid&quot; e &quot;uuid230&quot;.
 
-**Exemplo**: Geração dinâmica em Java, com autenticação de recipient usando seu número de conta.
+**Exemplo**: geração dinâmica em Java, com autenticação de recipient usando seu número de conta.
 
 ```
 [...]

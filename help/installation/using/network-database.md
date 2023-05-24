@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Rede, banco de dados e SSL/TLS
-description: Saiba mais sobre as práticas recomendadas de configuração de rede, banco de dados e SSL/TLS
+description: Saiba mais sobre rede, banco de dados e práticas recomendadas de configuração SSL/TLS
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
@@ -20,12 +20,12 @@ ht-degree: 34%
 
 ## Configuração de rede
 
-Uma coisa muito importante a se verificar ao implantar um tipo de arquitetura local é a [configuração de rede](../../installation/using/network-configuration.md). Certifique-se de que o servidor Tomcat NÃO esteja diretamente acessível fora do servidor:
+Uma coisa muito importante a se verificar ao implantar um tipo de arquitetura local é a [configuração de rede](../../installation/using/network-configuration.md). Certifique-se de que o servidor Tomcat NÃO está diretamente acessível fora do servidor:
 
 * Feche a porta Tomcat (8080) em IPs externos (deve funcionar no host local)
-* Não mapeie a porta HTTP padrão (80) para a do Tomcat (8080)
+* Não mapeie a porta HTTP padrão (80) para a porta Tomcat (8080)
 
-Quando possível, use um canal seguro: POP3S em vez de POP3 (ou POP3 sobre TLS).
+Quando for possível, use um canal seguro: POP3S em vez de POP3 (ou POP3 sobre TLS).
 
 ## Banco de dados
 
@@ -51,7 +51,7 @@ openssl x509 -noout -subject -dates
 nmap --script ssl-enum-ciphers -p ${REMPORT} ${REMHOST}
 ```
 
-Também é possível usar um [slyze](https://github.com/nabla-c0d3/sslyze/releases) python script que faz as duas coisas.
+Você também pode usar uma [sslyze](https://github.com/nabla-c0d3/sslyze/releases) python script que faz as duas coisas.
 
 ```
 python sslyze.py --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --sni=SNI myserver.com

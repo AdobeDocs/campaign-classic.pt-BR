@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Migração de uma plataforma Linux para Adobe Campaign v7
+title: Migração de uma plataforma Linux para o Adobe Campaign v7
 description: Saiba como migrar uma plataforma Linux para o Adobe Campaign v7
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
@@ -22,25 +22,25 @@ ht-degree: 0%
 
 As etapas de migração no Linux são as seguintes:
 
-1. Pare todos os serviços - [Saiba mais](#service-stop).
-1. Salve o banco de dados - [Saiba mais](#back-up-the-database).
+1. Interromper todos os serviços - [Saiba mais](#service-stop).
+1. Salvar o banco de dados - [Saiba mais](#back-up-the-database).
 1. Desinstalar pacotes de versão anteriores do Adobe Campaign - [Saiba mais](#uninstalling-adobe-campaign-previous-version-packages).
-1. Migre a plataforma - [Saiba mais](#deploying-adobe-campaign-v7).
+1. Migrar a plataforma - [Saiba mais](#deploying-adobe-campaign-v7).
 1. Reiniciar serviço - [Saiba mais](#re-starting-services).
 
-## Parada de serviço {#service-stop}
+## Interrupção do serviço {#service-stop}
 
-Primeiro, pare todos os processos com acesso ao banco de dados em todas as máquinas em questão.
+Primeiro, pare todos os processos com acesso ao banco de dados em todas as máquinas relacionadas.
 
-1. Fazer logon como **root**.
-1. Todos os servidores que usam o módulo de redirecionamento (**webmdl** (serviço) precisa ser interrompido. Para o Apache, execute o seguinte comando:
+1. Fazer logon como **raiz**.
+1. Todos os servidores que usam o módulo de redirecionamento (**webmdl** serviço) precisam ser interrompidas. Para o Apache, execute o seguinte comando:
 
    ```
    /etc/init.d/apache2 stop
    ```
 
-1. Faça logon novamente como **root**.
-1. Interrompa os serviços de versão anterior da Adobe Campaign em todos os servidores.
+1. Fazer logon novamente como **raiz**.
+1. Interrompa os serviços da versão anterior do Adobe Campaign em todos os servidores.
 
    ```
    /etc/init.d/nlserver6 stop
@@ -55,21 +55,21 @@ Primeiro, pare todos os processos com acesso ao banco de dados em todas as máqu
 
 -->
 
-1. Verifique se os serviços da Adobe Campaign estão interrompidos em cada servidor.
+1. Verifique se os serviços do Adobe Campaign estão parados em cada servidor.
 
    ```
    ps waux | grep nlserver
    ```
 
-   A lista de processos ativos é exibida junto com sua ID (PID).
+   A lista de processos ativos é exibida junto com a ID (PID).
 
-1. Se um ou mais processos do Adobe Campaign ainda estiverem ativos ou bloqueados após alguns minutos, mate-os.
+1. Se um ou mais processos do Adobe Campaign ainda estiverem ativos ou bloqueados após alguns minutos, elimine-os.
 
    ```
    killall nlserver
    ```
 
-1. Se alguns processos ainda estiverem ativos após alguns minutos, você poderá forçá-los a fechar usando o comando :
+1. Se alguns processos ainda estiverem ativos após alguns minutos, você poderá forçá-los a fechar usando o comando:
 
    ```
    killall -9 nlserver
@@ -156,7 +156,7 @@ Primeiro, pare todos os processos com acesso ao banco de dados em todas as máqu
 -->
 
 1. Faça um backup do banco de dados do Adobe Campaign.
-1. Fazer logon como **neolane** e faça um backup do **nl6** diretório usando o seguinte comando:
+1. Fazer logon como **neolane** e faça um backup do **nl6** usando o seguinte comando:
 
    ```
    su - neolane
@@ -165,9 +165,9 @@ Primeiro, pare todos os processos com acesso ao banco de dados em todas as máqu
 
    >[!IMPORTANT]
    >
-   >Como precaução, recomendamos que você compacte a variável **nl6.back** e salve-a em um local seguro diferente do servidor.
+   >Como precaução, recomendamos que você compacte o **nl6.back** e salve-a em um local seguro que não seja o servidor.
 
-## Desinstalar pacotes de versão anteriores do Adobe Campaign {#uninstalling-adobe-campaign-previous-version-packages}
+## Desinstalar pacotes de versão anterior do Adobe Campaign {#uninstalling-adobe-campaign-previous-version-packages}
 
 <!--
 
@@ -213,10 +213,10 @@ Primeiro, pare todos os processos com acesso ao banco de dados em todas as máqu
 
 Esta seção mostra como desinstalar pacotes do Adobe Campaign v6.1.
 
-1. Fazer logon como **root**.
-1. Identifique os pacotes do Adobe Campaign instalados usando o seguinte comando.
+1. Fazer logon como **raiz**.
+1. Identifique os pacotes do Adobe Campaign instalados usando o comando a seguir.
 
-   * Em **Debian**:
+   * Entrada **Debian**:
 
       ```
       dpkg -l | grep nl
@@ -229,7 +229,7 @@ Esta seção mostra como desinstalar pacotes do Adobe Campaign v6.1.
       ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
       ```
 
-   * Em **Chapéu Vermelho**:
+   * Entrada **Red Hat**:
 
       ```
       rpm -qa | grep nl
@@ -237,13 +237,13 @@ Esta seção mostra como desinstalar pacotes do Adobe Campaign v6.1.
 
 1. Desinstale os pacotes do Adobe Campaign v6.
 
-   * Em **Debian**:
+   * Entrada **Debian**:
 
       ```
       dpkg --purge nlserver6 nlthirdparty6
       ```
 
-   * Em **Chapéu Vermelho**:
+   * Entrada **Red Hat**:
 
       ```
       rprm -ev nlserver6 nlthirdparty6
@@ -467,30 +467,30 @@ To deploy Adobe Campaign, apply the following steps:
 A implantação do Adobe Campaign envolve duas etapas:
 
 * Instalação de pacotes do Adobe Campaign v7: essa operação deve ser executada em cada servidor.
-* A atualização posterior: esse comando deve ser iniciado em cada instância.
+* O post upgrade: esse comando deve ser iniciado em cada instância.
 
 Para implantar o Adobe Campaign, siga as etapas abaixo:
 
 1. Instale os pacotes mais recentes do Adobe Campaign v7 usando o seguinte comando:
 
-   * Em **Debian**:
+   * Entrada **Debian**:
 
       ```
       dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
-   * Em **Chapéu Vermelho**:
+   * Entrada **Red Hat**:
 
       ```
       rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
       ```
    >[!IMPORTANT]
    >
-   >Você deve instalar os pacotes com êxito antes de passar para a próxima etapa.
+   >Você deve instalar os pacotes com sucesso antes de passar para a próxima etapa.
 
    >[!NOTE]
    >
-   >O Adobe Campaign v7 está instalado na variável **/usr/local/neolane/nl6/** por padrão.
+   >O Adobe Campaign v7 está instalado no **/usr/local/neolane/nl6/** por padrão.
 
 1. Para disponibilizar o programa de instalação do console do cliente, copie-o no diretório de instalação do Adobe Campaign:
 
@@ -500,9 +500,9 @@ Para implantar o Adobe Campaign, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre como instalar o Adobe Campaign no Linux, consulte [esta seção](../../installation/using/installing-campaign-standard-packages.md).
+   >Para obter mais informações sobre como instalar o Adobe Campaign no Linux, consulte [nesta seção](../../installation/using/installing-campaign-standard-packages.md).
 
-1. Vá para o **nl6.back** pasta de backup e copie (substitua) os arquivos e as subpastas de configuração de cada instância. Fazer logon como **neolane** e execute o seguinte comando:
+1. Vá para a **nl6.back** pasta de backup e copie (substitua) os arquivos de configuração e as subpastas de cada instância. Fazer logon como **neolane** e execute o seguinte comando:
 
    ```
    su - neolane
@@ -519,7 +519,7 @@ Para implantar o Adobe Campaign, siga as etapas abaixo:
    nlserver config -reload
    ```
 
-1. Inicie o processo pós-atualização usando o seguinte comando (ainda como **neolane**):
+1. Inicie o processo de pós-atualização usando o seguinte comando (ainda como **neolane**):
 
    ```
    su - neolane
@@ -598,7 +598,7 @@ If you are migrating from v6.02 or earlier, you must configure your security zon
 
 ## Reiniciar serviços {#re-starting-services}
 
-Este é o procedimento para reiniciar os serviços.
+Este é o procedimento para reiniciar serviços.
 
 <!--
 
@@ -666,7 +666,7 @@ Fully test the new installation, check that it does not regress and make sure th
 
 -->
 
-Inicie os serviços do Apache e da Adobe Campaign em cada um dos seguintes servidores:
+Inicie os serviços Apache e Adobe Campaign em cada um dos seguintes servidores:
 
 1. Servidor de rastreamento e redirecionamento.
 1. Servidor Mid-sourcing.

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Elementos e atributos do schema - elemento de ajuda
+title: Elementos e atributos de esquema - elemento de ajuda
 description: elemento de ajuda
 exl-id: 8207868c-25ff-4ca9-afdd-41b324c7ac0d
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 ## Modelo de conteúdo {#content-model-6}
 
-ajuda:==EMPTY
+help:==EMPTY
 
 ## Atributos {#attributes-6}
 
@@ -32,7 +32,7 @@ nenhuma
 
 ## Descrição {#description-6}
 
-Esse elemento permite descrever uma `<element>`  ou  `<attribute>`   elemento. Ele só pode conter texto e é armazenado em XML no banco de dados.
+Esse elemento permite descrever um `<element>`  ou  `<attribute>`   elemento. Ele só pode conter texto e é armazenado em XML no banco de dados.
 
 ## Descrição do atributo {#attribute-description-6}
 

@@ -20,17 +20,17 @@ O Adobe Campaign permite criar, configurar, executar e analisar campanhas de mar
 
 ### Home page {#home-page}
 
-Depois de se conectar ao Adobe Campaign, navegue pelos vários recursos usando links na barra de navegação.
+Depois de conectado ao Adobe Campaign, navegue pelos vários recursos usando os links na barra de navegação.
 
 
 ![](assets/campaign_global_view.png)
 
 
-Os elementos da campanha são encontrados na variável **[!UICONTROL Campaigns]** guia : aqui você pode ver uma visão geral dos programas de marketing, campanhas e suas subdefinições. Um programa de marketing é composto por campanhas, que são compostas por deliveries, tarefas, recursos vinculados etc. No contexto do gerenciamento de campanhas de marketing usando o Campaign, as informações relacionadas às remessas, orçamentos, revisores e documentos vinculados são encontradas nas campanhas.
+Os elementos da campanha são encontrados no **[!UICONTROL Campaigns]** guia: aqui você pode ter uma visão geral dos programas de marketing, campanhas e seus subconjuntos. Um programa de marketing é composto por campanhas, que são compostas por deliveries, tarefas, recursos vinculados etc. No contexto do gerenciamento de campanhas de marketing usando o Campaign, as informações relacionadas às remessas, orçamentos, revisores e documentos vinculados são encontradas nas campanhas.
 
 O bloco **[!UICONTROL Browsing]** da guia **[!UICONTROL Campaigns]** oferece várias entradas, dependendo dos módulos instalados na instância. Como exemplo, você pode acessar:
 
-* **Calendário da campanha**: calendário de planos, programas de marketing, remessas e campanhas. Consulte [Calendário da campanha](#campaign-calendar).
+* **Calendário da campanha**: calendário de planos, programas de marketing, deliveries e campanhas. Consulte [Calendário da campanha](#campaign-calendar).
 * **Campanhas**: acesso às campanhas contidas em todos os programas de marketing.
 * **Remessas**: acesso às remessas vinculadas às campanhas.
 * **Aplicativos Web**: acesso a aplicativos Web (formulários, landing pages etc.).
@@ -43,13 +43,13 @@ O bloco **[!UICONTROL Browsing]** da guia **[!UICONTROL Campaigns]** oferece vá
 
 ### Calendário da campanha {#campaign-calendar}
 
-Cada campanha pertence a um programa que, por sua vez, pertence a um plano. Planos, programas e campanhas são acessados por meio da variável **[!UICONTROL Campaign calendar]** no menu **Campanhas** guia .
+Cada campanha pertence a um programa que, por sua vez, pertence a um plano. Planos, programas e campanhas são acessados por meio da **[!UICONTROL Campaign calendar]** no menu **Campanhas** guia.
 
 Para editar um plano, programa, campanha ou delivery, clique no nome no calendário e clique em **[!UICONTROL Open...]**. Ele é exibido em uma nova guia, conforme mostrado abaixo:
 
 ![](assets/d_ncs_user_interface_hierar.png)
 
-Você pode filtrar as informações exibidas no calendário da campanha: clique no botão **[!UICONTROL Filter]** e selecione o critério de filtragem.
+É possível filtrar as informações exibidas no calendário da campanha: clique no link **[!UICONTROL Filter]** e selecione os critérios de filtragem.
 
 ![](assets/campaign_planning_filter.png)
 
@@ -69,7 +69,7 @@ O Campaign permite gerenciar um conjunto de programas feitos de várias campanha
 
 Ao editar um programa, use as guias descritas abaixo para procurar e configurá-la.
 
-* O **Agendar** exibe o calendário de programas de um mês, semana ou dia, dependendo da guia que você clicar no cabeçalho do calendário.
+* A variável **Agendar** exibe o calendário de programas de um mês, semana ou dia, dependendo da guia que você clicar no cabeçalho do calendário.
 
    Se necessário, você pode criar uma campanha, um programa ou uma tarefa por esta página.
 
@@ -116,7 +116,7 @@ Com o Adobe Campaign você pode configurar processos colaborativos para a criaç
 
 #### Programação {#schedule}
 
-Uma campanha centraliza um conjunto de fornecimentos. Para cada campanha, o agendamento oferece uma visualização global de todos os componentes: é possível exibir as tarefas e deliveries e acessá-las facilmente.
+Uma campanha centraliza um conjunto de fornecimentos. Para cada campanha, o agendamento oferece uma visão global de todos os componentes: é possível exibir as tarefas e remessas e acessá-las facilmente.
 
 ![](assets/campaign_planning_tab.png)
 
@@ -140,8 +140,8 @@ O link **[!UICONTROL Reports]** permite acessar os relatórios da campanha.
 
 As campanhas são criadas por meio de templates de campanha. É possível configurar templates reutilizáveis para os quais algumas opções estão selecionadas e outras configurações já estão salvas. Para cada campanha, a seguinte funcionalidade é oferecida:
 
-* Referência de [documentos e recursos](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): você pode associar documentos à campanha (resumo, relatório, imagens etc.). Todos os formatos de documento são suportados.
-* Definindo custos: para cada campanha, o Adobe Campaign permite definir [entradas de custo e estruturas de cálculo de custo](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) que podem ser usadas ao criar a campanha de marketing. Por exemplo: custos de impressão, utilização de uma agência externa, aluguer de salas.
+* Referência de [documentos e recursos](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): é possível associar documentos à campanha (resumo, relatório, imagens etc.). Todos os formatos de documento são suportados.
+* Definir custos: para cada campanha, o Adobe Campaign permite definir [entradas de custo e estruturas de cálculo de custo](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) que podem ser usados ao criar a campanha de marketing. Por exemplo: custos de impressão, uso de uma agência externa, aluguel de sala.
 * Definir objetivos: pode-se definir objetivos quantificáveis para uma campanha, por exemplo, número de inscritos, volume de negócios etc. Essas informações são usadas posteriormente nos relatórios de campanha.
 * Gerenciamento [seed addresses](../../delivery/using/about-seed-addresses.md) e [grupos de controle](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 * Gerenciar aprovações: é possível selecionar os tratamentos a serem aprovados e, se necessário, selecionar os operadores de revisão ou grupos de operadores. [Saiba mais](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)

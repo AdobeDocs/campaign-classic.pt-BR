@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Solução de problemas de produção
-description: Descubra os procedimentos de solução de problemas de produção relacionados à configuração, monitoramento, processo de atualização, processamento de dados e procedimento de manutenção de banco de dados do Adobe Campaign
+description: Detectar procedimentos de solução de problemas de produção relacionados à configuração, ao monitoramento, ao processo de upgrade, ao processamento de dados e ao procedimento de manutenção do banco de dados do Adobe Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
@@ -18,14 +18,14 @@ ht-degree: 20%
 
 
 
-Esta seção contém procedimentos de solução de problemas relacionados a problemas gerais de produção do Adobe Campaign, como execução de delivery e workflow, monitoramento, manutenção de banco de dados, conexão etc.
+Esta seção contém procedimentos de solução de problemas relacionados a problemas gerais de produção do Adobe Campaign, como entrega e execução de fluxo de trabalho, monitoramento, manutenção de banco de dados, conexão etc.
 
 ## Problemas comuns e gerais {#common-and-general-issues}
 
-* Essa [página](../../production/using/modules-and-frequent-issues.md) apresenta os problemas mais frequentes encontrados para os módulos listados.
-* Essa [página](../../production/using/workflow-execution.md) lista os procedimentos comuns de solução de problemas que devem ser seguidos ao enfrentar problemas com a execução do workflow.
-* Essa [página](../../production/using/lost-password.md) detalha como alterar ou recuperar uma senha perdida.
-* Essa [página](../../production/using/console-update.md) detalha como reativar a solicitação de atualização do console se você tiver desativado a opção correspondente.
+* Este [página](../../production/using/modules-and-frequent-issues.md) O apresenta os problemas mais frequentes encontrados nos módulos listados.
+* Este [página](../../production/using/workflow-execution.md) lista os procedimentos comuns de solução de problemas que você deve seguir ao enfrentar problemas com a execução do fluxo de trabalho.
+* Este [página](../../production/using/lost-password.md) detalhes sobre como alterar ou recuperar uma senha perdida.
+* Este [página](../../production/using/console-update.md) detalha como reativar a solicitação de atualização do console se você desativou a opção correspondente.
 
 ## Solução de problemas de entrega {#delivery-troubleshooting}
 
@@ -33,7 +33,7 @@ Ações específicas podem ser executadas quando houver problemas com deliveries
 * [Problemas na capacidade de delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
 * [Imagem ausente](../../production/using/images-missing.md)
-* [Problemas de arquivos temporários](../../production/using/temporary-files.md) (*apenas modelos de hospedagem local*)
+* [Problemas com arquivos temporários](../../production/using/temporary-files.md) (*somente modelos de hospedagem no local*)
 
 **Tópicos relacionados**:
 
@@ -55,7 +55,7 @@ Descubra como você pode resolver problemas de desempenho lendo as seguintes se�
 
 ## Melhorias na conexão {#connection-improvements}
 
-Caso encontre problemas de conexão, veja algumas maneiras de corrigi-los:
+Caso encontre problemas de conexão, veja aqui algumas maneiras de corrigi-los:
 
 * [Falha ao conectar](../../production/using/failure-to-connect.md)
 * [Limites de conexão](../../production/using/connection-thresholds.md)

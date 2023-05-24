@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Elementos e atributos do schema - elemento-chave
+title: Elementos e atributos de esquema - elemento principal
 description: elemento principal
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
@@ -16,14 +16,14 @@ ht-degree: 8%
 
 ## Modelo de conteúdo {#content-model-8}
 
-tecla:==keyfield
+key:==keyfield
 
 ## Atributos {#attributes-8}
 
 * @allowEmptyPart (booleano)
-* @applicableIf (cadeia de caracteres)
+* @applicableIf (string)
 * @internal (booleano)
-* @label (cadeia de caracteres)
+* @label (string)
 * @name (MNTOKEN)
 * @noDbIndex (booleano)
 
@@ -45,24 +45,24 @@ Uma tabela deve ter pelo menos uma chave.
 
 Como regra, as chaves são declaradas após o elemento principal do esquema e os índices.
 
-Uma chave é conhecida como composta se incluir vários campos (ou seja, vários `<keyfield>` crianças). Não use uma chave composta para definir uma chave primária.
+Uma chave é conhecida como composta se incluir vários campos (ou seja, vários `<keyfield>` filhos). Não use uma chave composta para definir uma chave primária.
 
-Se o elemento principal do schema contiver o atributo &quot;@autopk=true&quot;, a chave primária será exclusiva. Só podemos ter uma chave primária por esquema.
+Se o elemento principal do esquema contiver o atributo &quot;@autopk=true&quot;, a chave primária será exclusiva. Só podemos ter uma chave primária por esquema.
 
-Os primeiros 1000 identificadores são reservados, portanto, se uma faixa de valores precisar ser definida para chaves, comece em 1000.
+Os primeiros 1000 identificadores são reservados, portanto, se um intervalo de valores precisar ser definido para chaves, comece em 1000.
 
 ## Descrição do atributo {#attribute-description-8}
 
-* **allowEmptyPart (booleano)**: no caso de uma chave composta, se esse atributo estiver ativado, a chave será considerada válida se pelo menos uma de suas chaves não estiver vazia. Se esse for o caso, o valor vazio da noção é &quot;0&quot; (booleano ou para todos os tipos de dados numéricos). Por padrão, todas as chaves que compõem uma chave composta precisam ser inseridas.
-* **applicableIf (cadeia de caracteres)**: esse atributo permite tornar a chave opcional. Ela define a condição de acordo com a qual a definição de chave será aplicada. Esse atributo recebe uma expressão XTK.
-* **interno (booleano)**: se estiver ativado, esse atributo informará o Adobe Campaign que a chave é primária.
-* **label (string)**: da chave.
-* **name (MNTOKEN)**: nome interno da chave.
+* **allowEmptyPart (booleano)**: no caso de uma chave composta, se esse atributo for ativado, a chave será considerada válida se pelo menos uma de suas chaves não estiver vazia. Se esse for o caso, o valor de noção vazio é &quot;0&quot; (booleano ou para todos os tipos de dados numéricos). Por padrão, todas as chaves que compõem uma chave composta precisam ser inseridas.
+* **applicableIf (string)**: esse atributo permite que você torne a chave opcional. Ela define a condição segundo a qual a definição de chave será aplicada. Este atributo recebe uma expressão XTK.
+* **interno (booleano)**: se estiver ativado, esse atributo informará ao Adobe Campaign que a chave é primária.
+* **rótulo (string)**: rótulo da chave.
+* **nome (MNTOKEN)**: nome interno da chave.
 * **noDbIndex (booleano)**: se estiver ativado (noDbIndex=&quot;true&quot;), o campo correspondente à chave não será indexado.
 
 ## Exemplos {#examples-------}
 
-Declaração de uma chave composta que autoriza o campo &quot;@expr&quot; ou &quot;alias&quot; a ficar vazio:
+Declaração de uma chave composta que autoriza o campo &quot;@expr&quot; ou o campo &quot;alias&quot; a ficar vazio:
 
 ```
 <key name="node" allowEmptyPart="true">

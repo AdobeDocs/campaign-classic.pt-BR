@@ -20,33 +20,33 @@ ht-degree: 6%
 
 ## Arquitetura mínima {#minimum-architecture}
 
-Em uma configuração mínima, a Adobe Campaign opera com:
+Em uma configuração mínima, o Adobe Campaign opera com:
 
-* o servidor de aplicativos Adobe Campaign,
-* o banco de dados.
+* o servidor de aplicativos do Adobe Campaign,
+* banco de dados.
 
    ![](assets/formation_exploitation.png)
 
 Este diagrama mostra que o único tráfego envolvido no contexto de uma arquitetura mínima é:
 
-1. tráfego de protocolo HTTP para o servidor Adobe Campaign através da Internet,
-1. Tráfego do protocolo SMTP de e para o servidor Adobe Campaign pela Internet.
+1. Tráfego de protocolo HTTP para o servidor do Adobe Campaign pela Internet,
+1. Tráfego do protocolo SMTP de e para o servidor do Adobe Campaign pela Internet.
 
 ## Arquitetura distribuída {#distributed-architecture}
 
 O Adobe Campaign é composto de vários módulos que podem ser divididos em várias máquinas. Esse modo operacional tem várias vantagens:
 
-* balanceamento de carga,
-* configuração da redundância do módulo,
-* construção de uma arquitetura distribuída por vários fornecedores de serviços (segmentação dos serviços prestados).
+* balanceamento de carga
+* configuração de redundância de módulo,
+* construção de uma arquitetura dividida em vários provedores de serviços (segmentação dos serviços fornecidos).
 
 ![](assets/architecturerepartie.png)
 
-A distribuição de módulos em várias máquinas proporciona uma grande flexibilidade de utilização e uma melhor adaptabilidade.
+A distribuição de módulos por várias máquinas proporciona grande flexibilidade de uso e melhor adaptabilidade.
 
 >[!NOTE]
 >
->Para obter mais informações sobre as várias arquiteturas, consulte [esta seção](../../installation/using/general-architecture.md).
+>Para obter mais informações sobre as várias arquiteturas, consulte [nesta seção](../../installation/using/general-architecture.md).
 
 ## Lista de portas abertas {#list-of-open-ports}
 
@@ -54,6 +54,6 @@ A distribuição de módulos em várias máquinas proporciona uma grande flexibi
 |---|---|---|
 | 443/tcp ou 80/tcp | Servidores da Web (Apache/IIS) | SIM |
 | 6666/udp (local) | Adobe Campaign: Syslogd | SIM |
-| 8005/tcp (local) | Adobe Campaign: módulo da web | SIM |
-| 8080/tcp | Adobe Campaign: módulo da Web (tomcat) | SIM |
-| 7777 | Servidor de Estatísticas (stat server) | SIM |
+| 8005/tcp (local) | Adobe Campaign: módulo Web | SIM |
+| 8080/tcp | Adobe Campaign: módulo web (tomcat) | SIM |
+| 7777 | Servidor de estatísticas (servidor stat) | SIM |

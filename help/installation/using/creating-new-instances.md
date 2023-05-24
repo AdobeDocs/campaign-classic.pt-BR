@@ -18,9 +18,9 @@ ht-degree: 10%
 
 
 
-Depois que o Adobe Campaign for instalado e a instância for criada, você poderá adicionar uma nova instância do console. Esse modo de criação permite criar instâncias de rastreamento sem acessar o console.
+Depois que o Adobe Campaign estiver instalado e a instância for criada, você poderá adicionar uma nova instância no console. Esse modo de criação permite criar instâncias de rastreamento sem acessar o console.
 
-Para fazer isso, faça logon em um banco de dados existente e aplique as seguintes etapas:
+Para fazer isso, faça logon em um banco de dados existente e siga as etapas abaixo:
 
 1. Declarar uma nova instância
 

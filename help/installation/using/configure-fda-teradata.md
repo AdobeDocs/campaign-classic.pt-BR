@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Configuração do acesso ao Teradata
-description: Saiba como configurar o acesso ao Teradata no FDA
+description: Saiba como configurar o acesso ao Teradata na FDA
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
@@ -18,15 +18,15 @@ ht-degree: 76%
 
 
 
-Usar Campanha [Federated Data Access](../../installation/using/about-fda.md) (FDA) opção para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Teradata.
+Usar a campanha [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Teradata.
 
 1. Instalar e configurar [Drivers de teradata](#teradata-config)
 1. Configurar o Teradata [conta externa](#teradata-external) no Campaign
-1. Configurar [configuração adicional](#teradata-additional-configurations) para servidor Teradata e Campaign
+1. Configurar [configuração adicional](#teradata-additional-configurations) para Teradata e servidor do Campaign
 
-## Configuração do teradata {#teradata-config}
+## Configuração de teradata {#teradata-config}
 
-É necessário instalar drivers para o Teradata para que a conexão com o Campaign seja implementada.
+É necessário instalar drivers para que o Teradata tenha a conexão com o Campaign implementada.
 
 1. Instale o driver [ODBC para Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
 
@@ -69,13 +69,13 @@ Usar Campanha [Federated Data Access](../../installation/using/about-fda.md) (FD
 
 >[!NOTE]
 >
->A conexão com um banco de dados externo de Teradata no FDA requer etapas de configurações adicionais no servidor do Adobe Campaign. [Saiba mais](#teradata-additional-configurations).
+>A conexão com um banco de dados externo de Teradata no FDA exige etapas de configurações adicionais no servidor do Adobe Campaign. [Saiba mais](#teradata-additional-configurations).
 
 ## Conta externa Teradata{#teradata-external}
 
 A conta externa do Teradata permite conectar sua instância do Campaign ao banco de dados externo do Teradata.
 
-1. Da campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. Do Campaign **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Clique em **[!UICONTROL New]** e selecione **[!UICONTROL External database]** como **[!UICONTROL Type]**.
 
@@ -83,7 +83,7 @@ A conta externa do Teradata permite conectar sua instância do Campaign ao banco
 
 1. Para configurar a conta externa do **[!UICONTROL Teradata]**, você deve especificar:
 
-   * **[!UICONTROL Type]**: Escolha a **[!UICONTROL Teradata]** tipo .
+   * **[!UICONTROL Type]**: escolha a **[!UICONTROL Teradata]** tipo.
 
    * **[!UICONTROL Server]**: URL ou nome do seu servidor Teradata
 
@@ -101,10 +101,10 @@ O conector é compatível com as seguintes opções:
 
 | Opção | Descrição |
 |---|---|
-| TD_MAX_SESSIONS | Especifica o número máximo de sessões de logon que o Transportador Paralelo do Teradata pode adquirir para um trabalho de operador. <br>[Para obter mais informações, consulte esta página](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/ds2ref/p1naft0um1kn3vn1ubgkrjdf7c3a.html). |
+| TD_MAX_SESSIONS | Especifica o número máximo de sessões de logon que o Transportador Paralelo de Teradata pode adquirir para um trabalho de operador. <br>[Para obter mais informações, consulte esta página](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/ds2ref/p1naft0um1kn3vn1ubgkrjdf7c3a.html). |
 | TimeZoneName | Nome do fuso horário do servidor. |
-| CharacterSet | Usado para configurar o conjunto de caracteres do Teradata. <br>[Para obter mais informações, consulte esta página](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
-| IANAAppCodePage | página de código do aplicativo ODBC. <br>[Para obter mais informações, consulte esta página](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
+| ConjuntoDeCaracteres | Usado para configurar o conjunto de caracteres de Teradata. <br>[Para obter mais informações, consulte esta página](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
+| PáginaDeCódigoAppIANA | Página de código do aplicativo ODBC. <br>[Para obter mais informações, consulte esta página](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
 
 ### Adicionar contas externas ODBC adicionais {#add-external}
 
@@ -114,7 +114,7 @@ O conector é compatível com as seguintes opções:
 
 O driver de Teradata fornece sua própria biblioteca ODBC, mas essa biblioteca pode não ser compatível com outras contas externas ODBC.
 
-Se quiser configurar outra conta externa que também usa ODBC, por exemplo, o Snowflake, será necessário adicionar um conjunto de opções ODBCLib ao caminho da biblioteca ODBC padrão (`/usr/lib/x86_64-linux-gnu/libodbc.so` em Debian e `/usr/lib64/libodbc.so` em RHEL/CentOS).
+Se você quiser configurar outra conta externa que também use ODBC, por exemplo, Snowflake, será necessário adicionar uma opção ODBCLib definida para o caminho da biblioteca ODBC padrão (`/usr/lib/x86_64-linux-gnu/libodbc.so` no Debian e `/usr/lib64/libodbc.so` RHEL/CentOS).
 
 ![](assets/ext_account_24.png)
 
@@ -124,15 +124,15 @@ Quando vários usuários do Adobe Campaign se conectam à mesma conta externa FD
 
 ![](assets/ext_account_20.png)
 
-Quando essa opção é configurada, cada vez que um usuário do Campaign realiza um query no banco de dados de Teradatas, o Adobe Campaign enviará metadados, que consistem em uma lista de chaves, associadas a esse usuário. Esses dados podem ser usados pelos administradores do Teradata para fins de auditoria ou para gerenciar direitos de acesso.
+Quando essa opção é configurada, cada vez que um usuário do Campaign executa um query no banco de dados do Teradata, o Adobe Campaign enviará metadados, que consistem em uma lista de chaves, associadas a esse usuário. Esses dados podem ser usados pelos administradores do Teradata para fins de auditoria ou para gerenciar direitos de acesso.
 
 >[!NOTE]
 >
 >Para obter mais informações sobre a **[!UICONTROL Query banding]**, consulte a [documentação do Teradata](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
-Para configurar a Faixa de query, siga as etapas abaixo:
+Para configurar faixas de Query, siga as etapas abaixo:
 
-1. Use o  **[!UICONTROL Default]** para inserir uma faixa de query padrão que será usada se um usuário não tiver nenhuma faixa de query associada. Se este campo estiver vazio, os usuários sem faixa de query não poderão utilizar o Teradata.
+1. Use o  **[!UICONTROL Default]** para informar uma faixa de query padrão que será usada se um usuário não tiver nenhuma faixa de query associada. Se este campo estiver vazio, os usuários sem faixa de query não poderão utilizar o Teradata.
 
 1. Use o **[!UICONTROL Users]** para especificar uma faixa de query para cada usuário. Você pode adicionar quantos pares chave/valor forem necessários, por exemplo, priority=1;workload=high. Se o usuário não tiver nenhuma faixa de query atribuída, o campo **[!UICONTROL Default]** será aplicado.
 
@@ -144,9 +144,9 @@ Se o seguinte erro for exibido durante o teste da conexão **TIM-030008 Data &#3
 
 Erro **ODB-240000 ODBC: [Nome da fonte de dados Microsoft][ODBC Driver Manager] não encontrado e nenhum driver padrão especificado.** ocorre com o Windows se você usar um driver 16.X. O Adobe Campaign espera que o teradata seja nomeados como &#39;{teradata}&#39; em odbcinst.ini.
 
-* A partir do Campaign 18.10, é possível adicionar ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; nas opções da conta externa. O número da versão pode mudar; o nome exato pode ser encontrado executando o odbcad32.exe e acessando a guia Drivers.
+* A partir do Campaign 18.10, você poderá adicionar ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; nas opções da conta externa. O número da versão pode mudar; o nome exato pode ser encontrado executando o odbcad32.exe e acessando a guia Drivers.
 
-* Se estiver usando uma versão mais antiga do Campaign, será necessário copiar a seção Teradata de odbcinst.ini criada pela instalação do driver para uma nova seção chamada Teradata. O Regedit pode ser usado nesse caso. Se sua base estiver em latin1, será necessário adicionar **APICharSize=1** nas opções.
+* Se você estiver usando uma versão mais antiga do Campaign, será necessário copiar a seção de Teradata de odbcinst.ini criada pela instalação do driver para uma nova seção chamada Teradata. Regedit pode ser usado nesse caso. Se sua base estiver em latin1, você terá que adicionar **APICharSize=1** nas opções.
 
 ## Configurações adicionais {#teradata-additional-configurations}
 
@@ -173,7 +173,7 @@ Customers with a Latin-1 Teradata database migrating to a recent Campaign Classi
 
 ### Configuração do usuário {#user-configuration}
 
-Os seguintes direitos são necessários no banco de dados externo: crie/solte/execute procedimentos personalizados, crie/solte/insira/selecione tabelas. Você também pode precisar criar funções de modo de usuário se quiser usar as funções md5 e sha2 na instância do Adobe Campaign.
+Os seguintes direitos são necessários no banco de dados externo: create/drop/execute custom procedures, create/drop/insert/select tables. Você também pode precisar criar funções de modo de usuário se quiser usar as funções md5 e sha2 na instância do Adobe Campaign.
 
 Configure o fuso horário correto. Ele deve corresponder ao que será definido na conta externa criada na instância do Adobe Campaign.
 

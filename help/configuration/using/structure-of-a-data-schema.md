@@ -16,12 +16,12 @@ ht-degree: 10%
 
 # Estrutura de um esquema de dados{#structure-of-a-data-schema}
 
-A estrutura de um schema de dados é mostrada no formato de uma estrutura em árvore. Para exibi-lo graficamente no console do cliente Adobe Campaign, selecione o schema direcionado e clique no botão **[!UICONTROL Structure]** subguia .
+A estrutura de um schema de dados é mostrada na forma de uma estrutura em árvore. Para visualizá-lo graficamente no console do cliente Adobe Campaign, selecione o esquema direcionado e clique no link **[!UICONTROL Structure]** subguia.
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 
-Como padrão, os campos são exibidos primeiro (Ativo, Ativado, etc.) e em ordem alfabética. Os elementos de estruturação vêm em seguida (Endereço postal, Local) e finalmente os links (Informações de email, Pasta etc.).
+Como padrão, os campos são exibidos primeiro (Ativo, Ativado etc.) e por ordem alfabética. Os elementos estruturantes vêm em seguida (Endereço postal, Localização) e, por fim, os links (Informações de email, Pasta etc.).
 
-As chaves primárias são identificadas por uma tecla vermelha e as chaves estrangeiras são identificadas por uma chave amarela.
+As chaves primárias são identificadas por uma chave vermelha e as chaves estrangeiras são identificadas por uma chave amarela.
 
-Os links são distintos graficamente, dependendo se pertencem à tabela. As que começam na tabela, ou seja, que têm a chave estrangeira na tabela, são exibidas primeiro (Informações de email, Pasta, País). Links de coleção &quot;inversa&quot; (assinatura, pedidos etc.) são exibidos no final.
+Os links são diferenciados graficamente, dependendo se pertencem à tabela. Os que começam na tabela, ou seja, que têm a chave externa na tabela, são exibidos primeiro (Informações de email, Pasta, País). Links de coleta &quot;reversa&quot; (Assinatura, Pedidos, etc.) são exibidos no final.

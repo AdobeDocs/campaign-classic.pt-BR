@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Elementos e atributos do schema - elemento do método
-description: elemento de método
+title: Elementos e atributos de esquema - elemento de método
+description: elemento do método
 exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
@@ -10,22 +10,22 @@ ht-degree: 1%
 
 ---
 
-# elemento de método {#method--element}
+# elemento do método {#method--element}
 
 ![](../../../assets/v7-only.svg)
 
 ## Modelo de conteúdo {#content-model-10}
 
-método:==( help | parâmetros)
+método:==( ajuda) | parâmetros)
 
 ## Atributos {#attributes-10}
 
-* @_operation (cadeia de caracteres)
-* @access (cadeia de caracteres)
+* @_operation (string)
+* @access (string)
 * @const (booleano)
-* @hidden (boolean)
-* @label (cadeia de caracteres)
-* @library (cadeia de caracteres)
+* @hidden (booleano)
+* @label (string)
+* @library (string)
 * @name (MNTOKEN)
 * @pkonly (booleano)
 * @static (booleano)
@@ -45,18 +45,18 @@ Esse elemento permite definir um método SOAP.
 
 ## Uso e contexto de uso {#use-and-context-of-use-7}
 
-Métodos SOAP habilitam processos de aplicativo.
+Os métodos SOAP habilitam processos de aplicativo.
 
-A &quot;@library&quot; é necessária para declarar um novo método (não nativo): o namespace e o nome usado para a biblioteca são independentes do namespace e do nome do schema em que a declaração está.
+O &quot;@library&quot; é necessário para declarar um novo método (não nativo): o namespace e o nome usados para a biblioteca são independentes do namespace e do nome do schema em que a declaração é.
 
 ## Descrição do atributo {#attribute-description-10}
 
-* **access (string)**: esse atributo define o controle de acesso para usar o método . Se este atributo estiver faltando, a identificação é obrigatória. Os valores disponíveis são: &#39;anonymous&#39;, &#39;admin&#39; e &#39;sql&#39;.
+* **acesso (string)**: este atributo define o controle de acesso para usar o método. Se este atributo estiver ausente, a identificação é obrigatória. Os valores disponíveis são: &#39;anonymous&#39;, &#39;admin&#39; e &#39;sql&#39;.
 * **const (booleano)**: se estiver ativado, esse atributo significa que o método declarado alterará a entidade
-* **label (string)**: rótulo do método.
-* **biblioteca (string)**: esse método não é nativo do aplicativo. Esse atributo usa o valor da biblioteca de métodos, onde a definição do método é encontrada (nms:mylibrary.js).
-* **name (MNTOKEN)**: nome exclusivo do método.
-* **estático (booleano)**: se este atributo estiver ativado, o método é considerado autônomo, todos os parâmetros devem ser especificados para o método quando for chamado.
+* **rótulo (string)**: rótulo do método.
+* **biblioteca (sequência de caracteres)**: este método não é nativo do aplicativo. Esse atributo pega o valor da biblioteca de métodos onde a definição de método é encontrada (nms:mylibrary.js).
+* **nome (MNTOKEN)**: nome de método exclusivo.
+* **estático (booleano)**: se esse atributo for ativado, o método será considerado autônomo. Todos os parâmetros devem ser especificados para o método quando ele for chamado.
 
 ## Exemplos {#examples-7}
 

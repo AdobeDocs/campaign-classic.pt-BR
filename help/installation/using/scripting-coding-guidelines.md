@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Diretrizes de script e codificação
-description: Saiba mais sobre as diretrizes a serem seguidas ao desenvolver no Adobe Campaign (fluxos de trabalho, Javascript, JSSP etc.)
+description: Saiba mais sobre as diretrizes a serem seguidas ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.)
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
@@ -24,9 +24,9 @@ Para obter mais detalhes, consulte [Documentação JSAPI do Campaign](https://ex
 
 Se você criar scripts usando fluxo de trabalho, aplicações web, jssp, siga estas práticas recomendadas:
 
-* Tente evitar o uso de instruções SQL o máximo possível.
+* Tente evitar usar instruções SQL o máximo possível.
 
-* Se precisar, use funções parametrizadas (instrução de preparação) em vez de concatenação de strings.
+* Se necessário, use funções parametrizadas (instrução prepare) em vez de concatenação de strings.
 
    Prática incorreta:
 
@@ -42,7 +42,7 @@ Se você criar scripts usando fluxo de trabalho, aplicações web, jssp, siga es
 
    >[!IMPORTANT]
    >
-   >sqlSelect não suporta este recurso, portanto, é necessário usar a função de consulta da classe DBEngine:
+   >O sqlSelect não oferece suporte a esse recurso, portanto, é necessário usar a função de consulta da classe DBEngine:
 
    ```
    var cnx = application.getConnection()
@@ -51,33 +51,33 @@ Se você criar scripts usando fluxo de trabalho, aplicações web, jssp, siga es
    cnx.dispose()
    ```
 
-Para evitar injeções de SQL, as funções SQL devem ser adicionadas à  de lista de permissões a ser usada no Adobe Campaign. Uma vez adicionados à lista de permissões, eles se tornarão visíveis para seus operadores no editor de expressão. Consulte [esta página](../../configuration/using/adding-additional-sql-functions.md).
+Para evitar injeções de SQL, as funções SQL devem ser adicionadas ao arquivo de inclui na lista de permissões a ser usado no Adobe Campaign. Depois de adicionadas ao incluo na lista de permissões µ, elas se tornam visíveis para os operadores no editor de expressão. Consulte [esta página](../../configuration/using/adding-additional-sql-functions.md).
 
 >[!IMPORTANT]
 >
->Se você estiver usando uma build anterior a 8140, a variável **XtkPassUnknownSQLFunctionsToRDBMS** pode ser definida como &#39;1&#39;. Se quiser proteger seu banco de dados, exclua essa opção (ou defina-a como &#39;0&#39;).
+>Se você estiver usando uma build com mais de 8140, a variável **XtkPassUnknownSQLFunctionsToRDBMS** pode ser definida como &#39;1&#39;. Se quiser proteger seu banco de dados, exclua esta opção (ou defina-a como &#39;0&#39;).
 
-Se estiver usando a entrada do usuário para criar filtros em queries ou instruções SQL, sempre será necessário escapá-los (consulte [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) - Proteção de dados: funções de escape). Essas funções são:
+Se você estiver usando a entrada do usuário para construir filtros em queries ou instruções SQL, sempre será necessário escapá-los (consulte [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) - Proteção de dados: funções de escape). Essas funções são:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
 * NL.JS.escape(data)
 * NL.XML.escapeAttribute(data)
 
-## Como proteger seu novo modelo de dados
+## Proteção de seu novo modelo de dados
 
-### Base de pastas
+### Base da pasta
 
 Consulte estas páginas:
 
-* [Propriedades de acesso a pastas](../../platform/using/access-management.md)
+* [Propriedades de acesso à pasta](../../platform/using/access-management.md)
 * [Pasta vinculada](../../configuration/using/configuration.md#linked-folder)
 
 ### Direitos nomeados
 
 Além do modelo de segurança baseado em pastas, você pode usar direitos nomeados para limitar as ações do operador:
 
-* Você pode adicionar alguns filtros do sistema (sysFilter) para impedir a leitura/gravação de seus dados (consulte [esta página](../../configuration/using/filtering-schemas.md)).
+* Você pode adicionar alguns filtros de sistema (sysFilter) para impedir a leitura/gravação de seus dados (consulte [esta página](../../configuration/using/filtering-schemas.md)).
 
    ```
    <sysFilter name="writeAccess">    
@@ -99,19 +99,19 @@ Além do modelo de segurança baseado em pastas, você pode usar direitos nomead
 
 >[!IMPORTANT]
 >
->Você pode usar direitos nomeados no nó de comando em uma navtree. Proporciona uma melhor experiência ao usuário, mas não fornece nenhuma proteção (use apenas o lado do cliente para ocultá-los/desativá-los). Você precisa usar o atributo de acesso.
+>Você pode usar direitos nomeados no nó de comando em uma árvore de navegação. Proporciona uma melhor experiência ao usuário, mas não fornece nenhuma proteção (use apenas o lado do cliente para ocultá-los/desativá-los). É necessário usar o atributo de acesso.
 
 ### Tabela de sobreposição
 
 Se você precisar proteger dados confidenciais (parte de um esquema), dependendo do nível de acesso do operador, não os oculte na definição do formulário (condições enabledIf/visibleIf).
 
-A entidade completa é carregada pela tela, mas você também pode exibi-las na definição da coluna. Para fazer isso, você precisa criar uma tabela de sobreposição. Consulte [esta página](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
+A entidade completa é carregada pela tela, mas você também pode exibi-las na definição da coluna. Para fazer isso, você precisa criar uma tabela de sobreposição. Consultar [esta página](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
 
 ## Adicionar captchas em aplicações web
 
 É uma boa prática adicionar um captcha em páginas de páginas/assinaturas públicas. Infelizmente, adicionar um captcha nas páginas do DCE (Digital Content Editor) não é fácil. Mostraremos como adicionar um captcha v5 ou um reCAPTCHA do Google.
 
-A maneira geral de adicionar um captcha no DCE é criar um bloco de personalização para incluí-lo facilmente no conteúdo da página. Será necessário adicionar um **Script** e uma **Teste**.
+A maneira geral de adicionar um captcha no DCE é criar um bloco de personalização para incluí-lo facilmente no conteúdo da página. Será necessário adicionar um **Script** atividade e um **Teste**.
 
 ### Bloco de personalização
 
@@ -143,7 +143,7 @@ A maneira geral de adicionar um captcha no DCE é criar um bloco de personaliza�
 
    * As linhas de 1 a 6 geram todas as entradas necessárias.
    * As linhas 7 e sucessivas tratam dos erros.
-   * A linha 4 permite alterar o tamanho da caixa cinza captcha (largura/altura) e o comprimento da palavra gerada (minWordSize/maxWordSize).
+   * A Linha 4 permite alterar o tamanho da caixa cinza do captcha (largura/altura) e o comprimento da palavra gerada (minWordSize/maxWordSize).
    * Antes de usar o Google reCAPTCHA, você deve se registrar no Google e criar um novo site reCAPTCHA.
 
       `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
@@ -155,13 +155,13 @@ A maneira geral de adicionar um captcha no DCE é criar um bloco de personaliza�
 
    ![](assets/scripting-captcha.png)
 
-1. Entre a última página e a **[!UICONTROL Storage]** atividade , adicione uma **[!UICONTROL Script]** e **[!UICONTROL Test]**.
+1. Entre a última página e a variável **[!UICONTROL Storage]** atividade, adicionar um **[!UICONTROL Script]** e uma **[!UICONTROL Test]**.
 
-   Conecte a ramificação **[!UICONTROL True]** para **[!UICONTROL Storage]** e o outro na página que terá o captcha.
+   Conectar a ramificação **[!UICONTROL True]** para o **[!UICONTROL Storage]** e o outro na página que terá o captcha.
 
    ![](assets/scripting-captcha2.png)
 
-1. Edite a condição da ramificação Verdadeiro com `"[vars/captchaValid]"` é igual a Verdadeiro.
+1. Edite a condição da ramificação True com `"[vars/captchaValid]"` é igual a True.
 
    ![](assets/scripting-captcha3.png)
 
@@ -179,7 +179,7 @@ A maneira geral de adicionar um captcha no DCE é criar um bloco de personaliza�
 >
 >`<script src="https://www.google.com/recaptcha/api.js" async defer></script>`
 
-### Captcha do Campaign
+### Captcha da campanha
 
 ```javascript
 var captchaID = request.getParameter("captchaID");
@@ -197,7 +197,7 @@ else
 
 Linha 6: você pode colocar qualquer tipo de mensagem de erro.
 
-### Recaptcha do Google
+### recaptcha do Google
 
 Consulte a [documentação oficial](https://developers.google.com/recaptcha/docs/verify).
 
@@ -225,10 +225,10 @@ if( ctx.vars.captchaValid == false ) {
 }
 ```
 
-Para usar JSON.parse, você deve incluir &quot;shared/json2.js&quot; no seu aplicativo web:
+Para usar o JSON.parse, você precisa incluir &quot;shared/json2.js&quot; em seu webApp:
 
 ![](assets/scripting-captcha6.png)
 
-Desde a build 8797, para usar o URL da API de verificação, é necessário adicioná-lo à lista de permissões no arquivo serverConf adicionando no nó urlPermission :
+Lista de permissões A partir da build 8797, para usar o URL da API de verificação, você deve adicioná-lo ao arquivo no serverConf adicionando no nó urlPermission:
 
 `<url dnsSuffix="www.google.com" urlRegEx="https://www.google.com/recaptcha/api/siteverify"/>`

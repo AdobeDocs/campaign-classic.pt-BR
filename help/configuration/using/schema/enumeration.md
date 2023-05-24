@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Elementos e atributos do schema - elemento de enumeração
+title: Elementos e atributos de esquema - elemento de enumeração
 description: elemento de enumeração
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
@@ -16,16 +16,16 @@ ht-degree: 6%
 
 ## Modelo de conteúdo {#content-model-5}
 
-enumeração:==(help| value)
+enumeração:==(valor da ajuda|)
 
 ## Atributos {#attributes-5}
 
-* @basetype (cadeia de caracteres)
-* @default (cadeia de caracteres)
-* @desc (cadeia de caracteres)
-* @label (cadeia de caracteres)
-* @name (cadeia de caracteres)
-* @template (cadeia de caracteres)
+* @basetype (string)
+* @default (string)
+* @desc (string)
+* @label (string)
+* @name (string)
+* @template (string)
 
 ## Pais {#parents-5}
 
@@ -38,15 +38,15 @@ enumeração:==(help| value)
 
 ## Descrição {#description-5}
 
-Esse elemento permite definir uma enumeração de valor. Uma enumeração pertence ao schema no qual está definida, mas é acessível por meio de outro schema.
+Esse elemento permite definir uma enumeração de valor. Uma enumeração pertence ao schema que está definido em, mas é acessível por meio de outro schema.
 
 ## Uso e contexto de uso {#use-and-context-of-use-4}
 
-As enumerações são definidas no início de um schema (antes do elemento principal ser definido).
+Enumerações são definidas no início de um esquema (antes de o elemento principal ser definido).
 
 ## Descrição do atributo {#attribute-description-5}
 
-* **basetype (cadeia de caracteres)**: tipo dos valores armazenados na enumeração.
+* **basetype (string)**: tipo dos valores armazenados na enumeração.
 
    Lista de tipos disponíveis:
 
@@ -60,11 +60,11 @@ As enumerações são definidas no início de um schema (antes do elemento princ
    * datetimetz
    * datetimenotz
    * date
-   * DOMDocument
+   * Documento DOM
    * DOMElement
-   * double
+   * duplo
    * enum
-   * float
+   * flutuante
    * html
    * int64
    * Link 
@@ -72,18 +72,18 @@ As enumerações são definidas no início de um schema (antes do elemento princ
    * memorando
    * MNTOKEN
    * percent
-   * chave primária
-   * short
+   * primarykey
+   * curto
    * sequência de caracteres
    * tempo
    * timespan
    * uuid
 
-* **padrão (string)**: Valor padrão. O valor padrão também pode ser um dos valores definidos na enumeração.
-* **desc (cadeia de caracteres)**: descrição da enumeração.
-* **label (string)**: rótulo da enumeração.
-* **name (string)**: nome interno da enumeração.
-* **template (string)**: esse atributo define uma referência a um `<enumeration>` elemento compartilhado por vários schemas. A definição é copiada automaticamente para o schema atual.
+* **padrão (string)**: Valor padrão. O valor padrão também pode ser um dos valores definidos na lista discriminada.
+* **desc (string)**: descrição da enumeração.
+* **rótulo (string)**: rótulo de enumeração.
+* **nome (sequência de caracteres)**: nome interno da enumeração.
+* **modelo (sequência de caracteres)**: este atributo define uma referência a um `<enumeration>` elemento compartilhado por vários schemas. A definição é copiada automaticamente para o esquema atual.
 
 ## Exemplos {#examples-4}
 

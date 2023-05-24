@@ -16,8 +16,8 @@ ht-degree: 14%
 
 
 
-Um formulário de entrada permite editar uma instância associada a um schema de dados no console do cliente do Adobe Campaign.
+Um formulário de entrada permite editar uma instância associada a um schema de dados do console do cliente do Adobe Campaign.
 
 O formulário é identificado por seu nome e namespace.
 
-A chave de identificação de um formulário é uma string composta pelo namespace e pelo nome separados por dois pontos (&#39;:&#39;) (por exemplo: &quot;cus:contact&quot;).
+A chave de identificação de um formulário é uma cadeia de caracteres formada pelo namespace e pelo nome separados por dois pontos (&#39;:&#39;) (por exemplo: &quot;cus:contact&quot;).

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Elementos e atributos do schema - elemento de condição
+title: Elementos e atributos de esquema - elemento de condição
 description: elemento de condição
 exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
@@ -16,13 +16,13 @@ ht-degree: 5%
 
 ## Modelo de conteúdo {#content-model-2}
 
-condição:==EMPTY
+condition:==EMPTY
 
 ## Atributos {#attributes-2}
 
-* @boolOperator (cadeia de caracteres)
-* @enabledIf (cadeia de caracteres)
-* @expr (cadeia de caracteres)
+* @boolOperator (string)
+* @enabledIf (string)
+* @expr (string)
 
 ## Pais {#parents-2}
 
@@ -38,11 +38,11 @@ Esse elemento permite definir uma condição de filtragem.
 
 ## Uso e contexto de uso {#use-and-context-of-use-2}
 
-One `<sysfiler>`  O elemento pode conter várias condições de filtragem.
+Um `<sysfiler>`  O elemento pode conter várias condições de filtragem.
 
 ## Descrição do atributo {#attribute-description-2}
 
-* **boolOperator (cadeia de caracteres)**: se vários `<conditions>` são definidas no mesmo  `<sysfilter>` , esse atributo permite combiná-los. Por padrão, o link lógico está entre `<condition>` elementos é &quot;AND&quot;. O atributo &quot;@boolOperator&quot; permite combinar links do tipo &quot;OR&quot; e &quot;AND&quot;.
+* **boolOperator (string)**: se houver vários `<conditions>` são definidos no mesmo  `<sysfilter>` elemento, este atributo permite combiná-los. Por padrão, o link lógico fica entre `<condition>` elementos é &quot;AND&quot;. O atributo &quot;@boolOperator&quot; permite combinar links dos tipos &quot;OR&quot; e &quot;AND&quot;.
 * **enabledIf (cadeia de caracteres)**: teste de ativação de condição.
 * **expr (string)**: uma expressão XTK.
 

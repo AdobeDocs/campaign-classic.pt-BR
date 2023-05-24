@@ -18,10 +18,10 @@ ht-degree: 8%
 
 Assim como a tabela de recipients integrada fornecida com o Adobe Campaign, a nova tabela de recipients pode receber um lote de filtros predefinidos.
 
-Esses filtros estarão disponíveis na janela de seleção de destino com as mesmas funcionalidades que os segmentos para recipients (usando formulários de entrada de parâmetros, pastas etc.).
+Esses filtros estarão disponíveis na janela de seleção de público alvo com as mesmas funcionalidades que os segmentos para recipients (usando formulários de entrada de parâmetros, pastas etc.).
 
 1. Vá para o nó **[!UICONTROL Administration > Configuration > Predefined filters]**
 1. Crie um novo filtro.
-1. Insira o **[!UICONTROL Label]** do filtro, selecione o schema que corresponde à tabela de recipients externos no **[!UICONTROL Document type]** campo.
+1. Insira o **[!UICONTROL Label]** do filtro e, em seguida, selecione o schema que corresponde à tabela do recipient externo no **[!UICONTROL Document type]** campo.
 1. Crie seu **[!UICONTROL filtering conditions]** com base nos campos do esquema.
 1. Salve o filtro.

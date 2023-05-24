@@ -14,41 +14,41 @@ ht-degree: 3%
 
 # APIs direcionadas por empresas{#business-oriented-apis}
 
-As APIs de negócios são específicas para cada tipo de objeto. Eles têm efeito sobre:
+As APIs de negócios são específicas para cada tipo de objeto. Elas têm efeito em:
 
 * Entregas:
 
    * Criação de uma ação de delivery, consulte [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
    * enviar uma campanha (iniciar, pausar, parar, enviar prova),
-   * recuperando logs do delivery.
+   * recuperação de logs do delivery.
 
 * Fluxos de trabalho:
 
-   * iniciar um workflow,
-   * verificar processos, etc.
+   * início de um workflow,
+   * verificação de processos etc.
 
       Consulte [Métodos SOAP em JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Gestão de conteúdo
-* Gerenciamento de subscrição, consulte [Assinar (nms:subscription)](#subscribe--nms-subscription-) e [Cancelar inscrição (nms:subscription)](#unsubscribe--nms-subscription-).
+* Gerenciamento de assinaturas, consulte [Assinar (nms:subscription)](#subscribe--nms-subscription-) e [Cancelar assinatura (nms:subscription)](#unsubscribe--nms-subscription-).
 * Processos de dados: importações, exportações.
 
-Esta seção detalha o uso dos serviços &quot;Subscribe&quot;, &quot;Unsubscribe&quot; e &quot;SubmitDelivery&quot;.
+Esta seção detalha o uso dos serviços &quot;Assinar&quot;, &quot;Cancelar assinatura&quot; e &quot;Enviar entrega&quot;.
 
 >[!IMPORTANT]
 >
->[Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) contém informações adicionais sobre chamadas SOAP e uso de Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
+>[Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
 
 ## Assinar (nms:subscription) {#subscribe--nms-subscription-}
 
-Esse serviço permite assinar um recipient para um serviço de informações e atualizar o perfil do recipient.
+Esse serviço permite subscrever um recipient em um serviço de informação e atualizar o perfil do recipient.
 
 Os seguintes parâmetros são necessários para chamar o serviço:
 
 * uma autenticação,
 * nome interno do serviço de assinatura,
-* um documento XML contendo as informações do recipient (do schema &quot;nms:recipient&quot;),
-* um booleano para criação de recipient se ainda não houver um.
+* um documento XML que contém as informações do recipient (do schema &quot;nms:recipient&quot;),
+* um booleano para criação de recipients, se ainda não houver um.
 
 Descrição do método &quot;subscribe&quot; no schema &quot;nms:subscription&quot;:
 
@@ -62,19 +62,19 @@ Descrição do método &quot;subscribe&quot; no schema &quot;nms:subscription&qu
 </method>
 ```
 
-A definição da chave de reconciliação deve ser inserida por meio do _**key** no `<recipient>` elemento do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
+A definição da chave de reconciliação deve ser inserida por meio do _**key** atributo no `<recipient>` elemento do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
 
-Essa chamada não retorna dados, exceto erros.
+Esta chamada não retorna dados, exceto erros.
 
 ### Exemplos {#examples}
 
-Assinatura com a chave de reconciliação do recipient no endereço de email: o documento XML de entrada deve referenciar o endereço de email e a definição da chave nesse campo.
+Subscription with recipient reconciliation key no endereço de email: o documento XML de entrada deve fazer referência ao endereço de email e à definição da chave neste campo.
 
 ```
 <recipient _key="email" email= "john.doe@adobe.com"/>
 ```
 
-Atualização do recipient e da subscrição.
+Atualização do recipient e da assinatura.
 
 ```
 <recipient _key="email, [folder-id]" email= "john.doe@adobe.com" folder-id="1305" firstName="John" lastName="Doe"/>
@@ -112,15 +112,15 @@ Atualização do recipient e da subscrição.
    </SOAP-ENV:Envelope>
    ```
 
-## Cancelar inscrição (nms:subscription) {#unsubscribe--nms-subscription-}
+## Cancelar assinatura (nms:subscription) {#unsubscribe--nms-subscription-}
 
-Esse serviço permite cancelar a subscrição de um recipient em um serviço de informação e atualizar o perfil do recipient.
+Esse serviço permite cancelar a subscrição de um recipient de um serviço de informação e atualizar o perfil do recipient.
 
 Os seguintes parâmetros são necessários para chamar o serviço:
 
 * uma autenticação,
-* Nome interno do serviço para cancelar a subscrição,
-* um documento XML contendo as informações do recipient (do schema &quot;nms:recipient&quot;),
+* Nome interno do serviço do qual cancelar a assinatura,
+* um documento XML que contém as informações do recipient (do schema &quot;nms:recipient&quot;),
 
 Descrição do método &quot;Unsubscribe&quot; no schema &quot;nms:subscription&quot;:
 
@@ -133,15 +133,15 @@ Descrição do método &quot;Unsubscribe&quot; no schema &quot;nms:subscription&
 </method>
 ```
 
-A definição da chave de reconciliação deve ser inserida por meio do atributo _key na variável `<recipient>` elemento do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
+A definição da chave de reconciliação deve ser inserida por meio do atributo _key no `<recipient>` elemento do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
 
 Se o recipient não estiver presente no banco de dados ou não estiver inscrito no serviço de informações relacionado, o serviço não executará nenhuma ação e não gerará um erro.
 
 >[!NOTE]
 >
->Se o nome do serviço não for especificado como um parâmetro, o recipient será automaticamente em lista de bloqueios(@blackList=&quot;1&quot;).
+>Se o serviço não for especificado como um parâmetro, o recipient será automaticamente incluído na inclui na lista de bloqueios(@blackList=&quot;1&quot;).
 
-Essa chamada não retorna dados, exceto erros.
+Esta chamada não retorna dados, exceto erros.
 
 ### Exemplo de mensagens SOAP {#example-of-soap-messages-1}
 
@@ -180,12 +180,12 @@ Esse serviço permite criar e enviar uma ação de delivery.
 Os seguintes parâmetros são necessários para chamar o serviço:
 
 * uma autenticação,
-* nome interno do template de delivery,
-* um documento XML opcional contendo dados de delivery adicionais.
+* nome interno do template do delivery,
+* um documento XML opcional contendo dados adicionais de delivery.
 
-Essa API não deve ser chamada em volume, pois pode haver problemas de desempenho.
+Essa API não deve ser chamada no volume, pois pode haver problemas de desempenho.
 
-Descrição do método em seu schema:
+Descrição do método no schema:
 
 ```
 <method name="SubmitDelivery" static="true">
@@ -196,15 +196,15 @@ Descrição do método em seu schema:
 </method>
 ```
 
-Um template do delivery deve ser criado a partir do console do cliente do Adobe Campaign. Ele contém os parâmetros comuns a todos os deliveries (endereço do remetente ou duração da validade da mensagem).
+Um template do delivery deve ser criado no console do cliente do Adobe Campaign. Ele contém os parâmetros comuns a todos os deliveries (endereço do remetente ou duração da validade da mensagem).
 
-O documento XML de entrada é um fragmento de modelo de delivery que obedece à estrutura do schema &quot;nms:delivery&quot;. Ele conterá todos os dados adicionais que não puderam ser definidos estaticamente no template do delivery (por exemplo, lista de recipients a serem alvos).
+O documento XML de entrada é um fragmento de template de delivery que obedece à estrutura do schema &quot;nms:delivery&quot;. Ele conterá todos os dados adicionais que não puderam ser definidos estaticamente no template do delivery (por exemplo, lista de recipients ao target).
 
-Essa chamada não retorna dados, exceto erros.
+Esta chamada não retorna dados, exceto erros.
 
 ### Exemplo de documento XML {#xml-document-example}
 
-Este exemplo é baseado em um template de delivery personalizado de uma fonte de dados externa (um arquivo, neste caso). A configuração é totalmente descrita no template do delivery, portanto, tudo o que permanece para ser enviado quando a chamada ocorrer é o conteúdo do arquivo do `<externalsource>` elemento.
+Este exemplo é baseado em um template de delivery personalizado de uma fonte de dados externa (um arquivo nesse caso). A configuração é totalmente descrita no template do delivery, de modo que tudo o que falta enviar quando a chamada ocorre é o conteúdo do arquivo do `<externalsource>` elemento.
 
 ```
 <delivery>
@@ -217,7 +217,7 @@ Este exemplo é baseado em um template de delivery personalizado de uma fonte de
 </delivery>
 ```
 
-Se você não tiver um template do delivery, poderá usar a seguinte amostra:
+Se você não tiver um template do delivery, poderá usar o seguinte exemplo:
 
 ```
 <delivery>

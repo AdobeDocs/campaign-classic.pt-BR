@@ -18,25 +18,25 @@ ht-degree: 2%
 
 As características de um schema que faz referência a uma tabela existente são as seguintes:
 
-* O Adobe Campaign não deve modificar objetos SQL em relação às tabelas existentes,
+* O Adobe Campaign não deve modificar objetos SQL em relação a tabelas existentes,
 * Os nomes das tabelas e colunas devem ser especificados explicitamente,
 * Os índices devem ser declarados.
 
 >[!IMPORTANT]
 >
->Não exclua campos na tabela de recipient incorporada, mesmo que eles não sejam úteis. Isso pode causar erros de comportamento no banco de dados do Adobe Campaign.
+>Não exclua campos na tabela de destinatários integrada, mesmo que eles sejam inúteis. Isso pode causar erros de comportamento no banco de dados do Adobe Campaign.
 
-## O atributo de exibição {#the-view-attribute}
+## O atributo de visualização {#the-view-attribute}
 
-Os esquemas de origem aceitam o **exibir** para o **srcSchema** elemento raiz. Ele deve ser usado quando o Adobe Campaign é manipulado em tabelas personalizadas. O **view=&quot;true&quot;** informa ao assistente de atualização da estrutura do banco de dados para ignorar esse esquema. Portanto, o aplicativo é proibido de sincronizar a tabela, suas colunas e seus índices com o schema correspondente.
+Os esquemas de origem aceitam o **exibir** atributo para o **srcSchema** elemento raiz. Ele deve ser usado quando o Adobe Campaign é manipulado em tabelas personalizadas. A variável **view=&quot;true&quot;** attribute informa ao assistente de atualização de estrutura de banco de dados para ignorar esse esquema. Portanto, o aplicativo está proibido de sincronizar a tabela, suas colunas e seus índices com o schema correspondente.
 
 Quando este atributo é definido como **true**, o schema é usado apenas para gerar consultas SQL para acessar os dados desta tabela.
 
 ## Nomes de tabelas e colunas {#names-of-tables-and-columns}
 
-Quando tabelas são criadas pelo assistente de atualização de tabela, os nomes das tabelas e colunas são gerados automaticamente com base nos nomes dos esquemas e atributos respectivos. No entanto, é possível forçar os nomes SQL a serem usados inserindo os seguintes atributos:
+Quando tabelas são criadas pelo assistente de atualização de tabela, os nomes de tabelas e colunas são gerados automaticamente com base nos nomes dos respectivos esquemas e atributos. No entanto, é possível forçar os nomes SQL a serem usados inserindo os seguintes atributos:
 
-* **sqltable** no elemento principal do schema , para especificar a tabela,
+* **sqltable** no elemento principal do schema, para especificar a tabela,
 * **sqlname** em cada atributo, para especificar as colunas.
 
 **Exemplo**:
@@ -54,17 +54,17 @@ Quando tabelas são criadas pelo assistente de atualização de tabela, os nomes
 </element>
 ```
 
-Neste exemplo, se os nomes das tabelas e colunas não tivessem sido explicitamente especificados, o aplicativo teria usado **CusIndividual** para o quadro, **lastName** e **firstName** para as colunas.
+Neste exemplo, se os nomes das tabelas e colunas não tivessem sido explicitamente especificados, o aplicativo teria usado **CusIndividual** para a tabela, **lastName** e **firstName** para as colunas.
 
 Em um schema, é possível preencher apenas parte das colunas de uma tabela existente. Colunas não preenchidas não serão acessíveis ao usuário.
 
 ## Campos indexados {#indexed-fields}
 
-Ao classificar os registros de uma lista no console do cliente, é obtido melhor desempenho ao classificar em campos indexados. Declarar um índice em um schema faz com que o console exiba os campos indexados com uma linha vermelha sob a seta de ordem de classificação à esquerda do rótulo da coluna, conforme mostrado abaixo:
+Ao classificar os registros de uma lista no console do cliente, obtém-se melhor desempenho ao classificar em campos indexados. A declaração de um índice em um esquema faz com que o console exiba os campos indexados com uma linha vermelha sob a seta de ordem de classificação à esquerda do rótulo da coluna, conforme mostrado abaixo:
 
 ![](assets/s_ncs_integration_mapping_index.png)
 
-Em um schema, um índice é definido da seguinte maneira:
+Em um esquema, um índice é definido da seguinte maneira:
 
 ```
 <dbindex name="name_of_index" unique="true/false"
@@ -76,7 +76,7 @@ Em um schema, um índice é definido da seguinte maneira:
 
 É por isso que é importante declarar índices existentes da tabela personalizada no schema correspondente.
 
-Um índice é declarado implicitamente para cada declaração de chave e link do schema de origem. A declaração de índice pode ser impedida pela especificação do **noDbIndex=&quot;true&quot;** atributo:
+Um índice é declarado implicitamente para cada declaração de chave e link do esquema de origem. A declaração de índice pode ser evitada especificando o **noDbIndex=&quot;true&quot;** atributo:
 
 **Exemplo**:
 

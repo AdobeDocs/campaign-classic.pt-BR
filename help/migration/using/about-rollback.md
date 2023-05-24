@@ -22,14 +22,14 @@ ht-degree: 0%
 
 Após uma migração, em caso de problemas, talvez seja necessário reverter para a versão anterior do Campaign.
 
-O procedimento de reversão depende da sua versão inicial do Campaign.
+O procedimento de reversão depende da versão inicial do Campaign.
 
-Este é o procedimento para restaurar uma v6.1 de um v7.
+Este é o procedimento para restaurar uma v6.1 a partir de um v7.
 
-1. Recupere o backup do banco de dados e o restaure.
-1. Recupere a **Adobe Campaign v6.back** pasta (**nl6.back** no Linux), renomeie-o para **Adobe Campaign v6** (**nl6** no Linux) e restaurá-lo ao seu local original.
-1. Reconfigure o IIS atribuindo novamente as portas de escuta para restabelecer a integração do Adobe Campaign v6.1 no nível do Site do IIS.
-1. Pare o serviço Adobe Campaign v7.
+1. Recuperar o backup do banco de dados e restaurá-lo.
+1. Recuperar o **Adobe Campaign v6.back** pasta (**nl6.back** no Linux), renomeie-o para **Adobe Campaign v6** (**nl6** no Linux) e restaurá-lo para o local original.
+1. Reconfigure o IIS reatribuindo as portas de escuta para restabelecer a integração do Adobe Campaign v6.1 no nível do Site do IIS.
+1. Interrompa o serviço do Adobe Campaign v7.
 1. Reinicie o IIS.
 1. Reinicie o serviço Adobe Campaign v6.1.
 

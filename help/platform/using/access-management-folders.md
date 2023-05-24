@@ -2,7 +2,7 @@
 product: campaign
 title: Gerenciar acesso às pastas do Campaign
 description: Saiba como conceder acesso às pastas do Campaign e criar visualizações
-badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+badge: label="v7" type="Informativo" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner

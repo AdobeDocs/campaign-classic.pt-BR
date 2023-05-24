@@ -18,12 +18,12 @@ ht-degree: 81%
 
 
 
-Usar Campanha [Federated Data Access](../../installation/using/about-fda.md) (FDA) opção para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Netezza.
+Usar a campanha [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Netezza.
 
 1. Instalar e configurar [Drivers de netezza](#netezza-config)
 1. Configurar o Netezza [conta externa](#netezza-external) no Campaign
 
-## Configuração do netezza {#netezza-config}
+## Configuração do Netezza {#netezza-config}
 
 A conexão com um banco de dados externo Netezza no FDA exige as seguintes configurações adicionais no servidor do Adobe Campaign.
 
@@ -74,7 +74,7 @@ A conexão com um banco de dados externo Netezza no FDA exige as seguintes confi
 
 A conta externa do Netezza permite conectar a instância do Campaign ao banco de dados externo do Netezza.
 
-1. Da campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Do Campaign **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Clique em **[!UICONTROL New]** e selecione **[!UICONTROL External database]** como **[!UICONTROL Type]**.
 

@@ -24,23 +24,23 @@ Esse método permite definir manualmente as páginas que serão rastreadas e ger
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
-Para gerar o código de HTML a ser inserido na página:
+Para gerar o código HTML a ser inserido na página:
 
-* Insira o rótulo da tag: será exibido nos logs de rastreamento,
-* Indique o URL de origem: esse campo é para fins de informação e permite indicar a página rastreada (opcional),
+* Insira o rótulo da tag: ele será mostrado nos logs de rastreamento,
+* Indicar o URL de origem: este campo é para fins de informação e permite indicar a página rastreada (opcional),
 * Se necessário, insira um período de validade,
-* Clique em **[!UICONTROL Generate]** Código HTML.
+* Clique em **[!UICONTROL Generate]** código HTML.
 
-Em seguida, copie o código gerado e o cole na página a ser rastreada.
+Em seguida, copie o código gerado e cole-o na página a ser rastreada.
 
 ## Criação instantânea de URLs a serem rastreados {#on-the-fly-creation-of-urls-to-be-tracked}
 
-Você pode criar URLs de rastreamento Web dinamicamente, adicionando informações ao valor da variável **tagid** parâmetro:
+Você pode criar os URLs de rastreamento web dinamicamente adicionando informações ao valor do **tagid** parâmetro:
 
-* Tipo de página rastreada: &#39;w&#39; para WEB ou &#39;t&#39; para TRANSAÇÃO,
+* Tipo de página rastreada: &quot;w&quot; para WEB ou &quot;t&quot; para TRANSAÇÃO,
 * O nome interno da pasta onde o URL deve ser criado.
 
-Essas duas informações devem ser concatenadas com o identificador da página rastreada, adicionando o caractere &#39;|&#39;:
+Essas duas informações devem ser concatenadas com o identificador da página rastreada adicionando o caractere &#39;|&#39;:
 
 ```
 tagid=<identifier>|<type>|<foldername>
@@ -48,8 +48,8 @@ tagid=<identifier>|<type>|<foldername>
 
 >[!IMPORTANT]
 >
->Lembre-se de codificar o valor da variável **tagid** quando é usado como parâmetro de URL.
+>Lembre-se de codificar o valor de **tagid** quando ele é usado como um parâmetro de URL.
 
-**Exemplo**: criação de um URL de rastreamento Web do tipo transação.
+**Exemplo**: criação de um URL de rastreamento web do tipo transação.
 
 **http://myserver.adobe.com/r/a?tagid=home%7Ct%7CMyFolder**

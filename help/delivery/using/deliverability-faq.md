@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Pontos principais ao gerenciar a capacidade de delivery no Adobe Campaign Classic
-description: Saiba mais sobre os principais pontos a serem verificados ao gerenciar a capacidade de entrega no Adobe Campaign
+description: Saiba mais sobre os principais pontos a serem verificados ao gerenciar a capacidade de delivery no Adobe Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability

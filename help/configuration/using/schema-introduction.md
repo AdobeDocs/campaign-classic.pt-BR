@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Referência do schema
-description: Lista de referência do esquema
+title: Referência do esquema
+description: Lista de referência de esquema
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -11,13 +11,13 @@ ht-degree: 21%
 
 ---
 
-# Referência do schema {#schema-reference}
+# Referência do esquema {#schema-reference}
 
-Ao editar um schema, um sistema de aprovação com base no schema de origem (xtk:srcSchema) está disponível. Alguns erros também podem ser detectados ao atualizar o banco de dados usando a &quot;Atualização da estrutura do banco de dados...&quot; assistente.
+Ao editar um esquema, um sistema de aprovação baseado no esquema de origem (xtk:srcSchema) está disponível. Alguns erros também podem ser detectados ao atualizar o banco de dados usando o assistente &quot;Database structure update...&quot;.
 
-Por padrão, nos esquemas Adobe Campaign, todos os atributos do tipo booleano são &quot;false&quot;. Para ativá-los, você precisa especificar o atributo no schema e definir seu valor como &quot;true&quot;.
+Por padrão, em esquemas Adobe Campaign, todos os atributos do tipo booleano são &quot;false&quot;. Para ativá-los, você precisa especificar o atributo no esquema e definir seu valor como &quot;true&quot;.
 
-Lista de referência:
+Lista de referências:
 
 * [Atributo](schema/attribute.md)
 * [Cálculo de string](schema/compute-string.md)

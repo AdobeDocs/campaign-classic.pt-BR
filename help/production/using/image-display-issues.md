@@ -18,14 +18,14 @@ ht-degree: 6%
 
 
 
-Se você enfrentar problemas de exibição de imagem em uma mensagem enviada, os motivos podem estar vinculados a um local incorreto:
+Se você enfrentar problemas de exibição de imagem em uma mensagem enviada, os motivos podem estar vinculados ao local incorreto:
 
-* Os locais podem não corresponder ou as imagens podem não ter sido enviadas corretamente para o servidor de rastreamento duplicado: verifique sua configuração.
-* As imagens podem não residir na pasta de recursos públicos na instância de marketing: carregue as imagens na pasta de recursos para resolver o problema.
-* Se você trabalhar em uma arquitetura mid-sourcing: verificar imagens são carregadas sem erros quando provas são enviadas (as informações são exibidas nos logs de análise).
+* Os locais podem não corresponder ou as imagens podem não ter sido enviadas corretamente para o servidor de rastreamento duplicado: verifique a configuração.
+* As imagens podem não residir na pasta de recurso público na instância de marketing: carregue as imagens na pasta de recursos para resolver o problema.
+* Se você trabalhar em uma arquitetura mid-sourcing: as imagens de verificação são carregadas sem erros quando as provas são enviadas (as informações são exibidas nos logs de análise).
 
 Como solucionar problemas:
 
 1. Envie uma prova que mostrará as imagens.
-1. Valide se a configuração dos recursos na configuração da instância está correta.
-1. Verifique a pasta de recursos públicos ou, se não estiver na pasta de recursos públicos, a pasta referenciada no delivery.
+1. A validação da configuração de recursos na configuração da instância está correta.
+1. Verifique a pasta public resources ou, se não estiver na pasta public resources, a pasta referenciada no delivery.

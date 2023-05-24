@@ -15,17 +15,17 @@ ht-degree: 4%
 # Novo assistente de campo{#new-field-wizard}
 
 
-Um assistente pode ser acessado por meio de **[!UICONTROL Tools > Advanced > Add new fields]** permite adicionar um ou mais campos a uma tabela no banco de dados.
+Um assistente acessível via **[!UICONTROL Tools > Advanced > Add new fields]** permite adicionar um ou mais campos a uma tabela no banco de dados.
 
-A validação do assistente atualiza o schema de extensão da tabela a ser estendida e inicia o script SQL para modificar a estrutura física do banco de dados.
+A validação do assistente atualiza o esquema de extensão da tabela a ser estendida e inicia o script SQL para modificar a estrutura física do banco de dados.
 
-Esse assistente tem a vantagem de adicionar rapidamente um campo sem precisar conhecer a estrutura de um schema de dados.
+Esse assistente tem a vantagem de adicionar rapidamente um campo sem precisar saber a estrutura de um schema de dados.
 
-A principal desvantagem é a limitação dos dados e das propriedades a alargar.
+A principal desvantagem é a limitação dos dados e as propriedades a serem estendidas.
 
 As telas do assistente contêm as seguintes etapas:
 
-1. A primeira página permite inserir o nome do schema a ser estendido e o namespace do schema de extensão, onde as modificações serão salvas:
+1. A primeira página permite inserir o nome do schema a ser estendido e o namespace do schema de extensão onde as modificações serão salvas:
 
    ![](assets/d_ncs_integration_schema_addfield.png)
 
@@ -33,7 +33,7 @@ As telas do assistente contêm as seguintes etapas:
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. Para confirmar as alterações, clique no botão **[!UICONTROL Finish]** botão.
+1. Para confirmar as alterações, clique no link **[!UICONTROL Finish]** botão.
 
 Um arquivo de extensão, chamado &quot;cus:recipient&quot; em nosso exemplo, é criado automaticamente e o script SQL correspondente é executado:
 

@@ -16,35 +16,35 @@ ht-degree: 3%
 
 
 
-Para exibir e diálogo com a nova tabela de recipients na interface do Adobe Campaign, siga as etapas abaixo:
+Para exibir e dialogar com a nova tabela de recipients na interface do Adobe Campaign, siga as etapas abaixo:
 
-* Crie um novo formulário para editar o conteúdo da nova tabela de recipients.
+* Crie um novo formulário para editar o conteúdo da nova tabela de destinatários.
 * Insira um novo tipo na pasta da árvore do explorador.
-* Crie um novo aplicativo da Web para acessar a tabela personalizada por meio da página inicial do Adobe Campaign.
+* Crie uma nova aplicação web para acessar a tabela personalizada através da página inicial do Adobe Campaign.
 
-O Adobe Campaign usa uma variável global &quot;Nms_DefaultRcpSchema&quot; para diálogo com o banco de dados do recipient padrão (nms:recipient). Portanto, essa variável precisa ser alterada.
+O Adobe Campaign usa uma variável global &quot;Nms_DefaultRcpSchema&quot; para dialogar com o banco de dados do recipient padrão (nms:recipient). Portanto, essa variável precisa ser alterada.
 
-1. Vá para o **[!UICONTROL Administration>Platform>Options]** nó do explorador.
-1. Altere o valor da variável **Nms_DefaultRcpSchema** com o nome do schema que corresponde à tabela de recipients externos (neste caso: cus:individual).
+1. Vá para a **[!UICONTROL Administration>Platform>Options]** nó do explorador.
+1. Altere o valor de **Nms_DefaultRcpSchema** com o nome do schema que corresponde à tabela do recipient externo (neste caso: cus:individual).
 1. Salve as alterações.
 
 ## Criação de um novo de formulário {#creating-a-new-form-}
 
-A criação de um novo formulário permitirá exibir e editar os dados da tabela de destinatários externos.
+A criação de um novo formulário permitirá que você exiba e edite os dados da tabela de destinatários externos.
 
 >[!IMPORTANT]
 >
->O nome do formulário deve ser idêntico ao nome do schema abordado.
+>O nome do formulário deve ser idêntico ao nome do schema relacionado.
 
-1. Vá para o **Administração > Configuração > Formulários de entrada** nó do explorador.
-1. Crie um novo **xtk:form** type **formulário** arquivo.
-1. Descreva todos os campos e monitoramento necessários, dependendo do modelo da tabela.
+1. Vá para a **Administração > Configuração > Formulários de entrada** nó do explorador.
+1. Criar um novo **xtk:form** type **formulário** arquivo.
+1. Descreva todos os monitoramentos e campos necessários dependendo do seu modelo de tabela.
 
    >[!NOTE]
    >
-   >Para saber mais sobre **formulário** arquivos do tipo , consulte [esta página](../../configuration/using/identifying-a-form.md).
+   >Para saber mais sobre **formulário** arquivos de tipo, consulte [esta página](../../configuration/using/identifying-a-form.md).
 
-   No nosso exemplo atual, a variável **formulário** O arquivo deve ser baseado na variável **cus:individual** e, portanto, ter o seguinte layout:
+   No nosso exemplo atual, a variável **formulário** o arquivo deve se basear no **cus:individual** esquema e, portanto, têm o seguinte layout:
 
    ```
    <container colspan="2">
@@ -64,14 +64,14 @@ A criação de um novo formulário permitirá exibir e editar os dados da tabela
 ## Criação de um novo tipo de pasta na hierarquia de navegação {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
 1. Vá para o nó **[!UICONTROL Administration>Configuration>Navigation hierarchies]**
-1. Crie um novo **xtk:navtree** type **navarinha** documento.
-1. Descreva todos os campos e monitoramento necessários, dependendo do modelo da tabela.
+1. Criar um novo **xtk:navtree** type **navtree** documento.
+1. Descreva todos os monitoramentos e campos necessários dependendo do seu modelo de tabela.
 
    >[!NOTE]
    >
-   >Para obter mais informações **navarinha** arquivos do tipo , consulte [esta página](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+   >Para obter mais informações, **navtree** arquivos de tipo, consulte [esta página](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
-   No exemplo atual, a variável **navarinha** O arquivo deve ser baseado na variável **cus:individual** e, portanto, ter o seguinte formulário:
+   No exemplo atual, a variável **navtree** o arquivo deve se basear no **cus:individual** esquema e, portanto, têm o seguinte formato:
 
    ```
     <model name="root">

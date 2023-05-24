@@ -2,7 +2,7 @@
 product: campaign
 title: Lista de relatórios
 description: Lista de relatórios
-badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+badge: label="v7" type="Informativo" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Reporting
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b

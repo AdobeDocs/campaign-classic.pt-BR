@@ -15,7 +15,7 @@ ht-degree: 2%
 
 
 
-Uma tag de rastreamento Web é simplesmente um URL construído com os parâmetros apropriados, enviado para o servidor de redirecionamento por meio de uma consulta HTTP.
+Uma tag de rastreamento Web é simplesmente um URL construído com os parâmetros apropriados, enviados ao servidor de redirecionamento por meio de uma consulta HTTP.
 
 ## Formato dos dados a enviar {#format-of-the-data-to-be-sent}
 
@@ -25,7 +25,7 @@ O formato de um URL de rastreamento Web é o seguinte: **https://`<name_of_redir
 >
 >O número aleatório adicionado ao URL evita problemas causados por navegadores que armazenam páginas da Web em cache.
 
-A tabela a seguir fornece uma lista de parâmetros especiais compatíveis com o servidor de redirecionamento.
+A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo servidor de redirecionamento.
 
 <table>
                      <thead>
@@ -41,10 +41,10 @@ A tabela a seguir fornece uma lista de parâmetros especiais compatíveis com o 
                               <p>ID</p> 
                            </td>
                            <td>
-                              <p>Cookie da sessão</p> 
+                              <p>Cookie de sessão</p> 
                            </td>
                            <td>
-                              <p>Identificador de delivery e identificador de recipient.</p> 
+                              <p>Identificador de entrega e identificador de destinatário.</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -55,7 +55,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais compatíveis com o 
                               <p>Cookie permanente</p> 
                            </td>
                            <td>
-                              <p>Identificador de destinatário (útil se o cookie de sessão estiver ausente).</p> 
+                              <p>Identificador de destinatário (útil se o cookie da sessão estiver ausente).</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -66,7 +66,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais compatíveis com o 
                               <p>Parâmetro de URL</p> 
                            </td>
                            <td>
-                              <p>Identificador da página da Web rastreada: este é o único parâmetro obrigatório.</p> 
+                              <p>Identificador da página da Web rastreada: esse é o único parâmetro obrigatório.</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -77,7 +77,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais compatíveis com o 
                               <p>Parâmetro de URL</p> 
                            </td>
                            <td>
-                              <p>Identificador de delivery a ser usado se não houver cookie de sessão. Esse valor deve ser expresso em hexadecimal.
+                              <p>Identificador de entrega a ser usado se não houver cookie de sessão. Esse valor deve ser expresso em hexadecimal.
                               </p> 
                            </td> 
                         </tr>
@@ -98,7 +98,7 @@ A tabela a seguir fornece uma lista de parâmetros especiais compatíveis com o 
 
 **Alguns URLs de rastreamento Web**
 
-* Visite uma página de identificador &quot;inicial&quot;
+* Visita a uma página identificadora &quot;inicial&quot;
 
    **https://myserver.adobe.com/r/9862?tagid=home**
 
@@ -110,21 +110,21 @@ A tabela a seguir fornece uma lista de parâmetros especiais compatíveis com o 
 
    **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
-   Um recipient cujo número de conta é 10 é enviado para a página inicial.
+   Um recipient cujo número de conta é 10 é enviado para a home page.
 
 * Uso de um delivery padrão
 
    **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
-   Um recipient é enviado para a página inicial. Essas informações serão armazenadas no delivery com o identificador 230 (e6 no banco de dados 16), a menos que um cookie de sessão que contenha um identificador de delivery seja enviado com esse query.
+   Um recipient é enviado para a home page. Essas informações serão armazenadas no delivery com o identificador 230 (e6 no banco de dados 16) a menos que um cookie de sessão contendo um identificador de delivery seja enviado com essa query.
 
 >[!NOTE]
 >
->Todos os valores enviados para o servidor de redirecionamento por meio de parâmetros de URL devem ser codificados por URL. Nos exemplos fornecidos, observe que os caracteres &#39;=&#39; e &#39;|&#39; estão codificados como &#39;%3D&#39; e &#39;%7C&#39;, respectivamente.
+>Todos os valores enviados ao servidor de redirecionamento por meio de parâmetros de URL devem ser codificados em URL. Nos exemplos fornecidos, observe que os caracteres &#39;=&#39; e &#39;|&#39; estão codificados como &#39;%3D&#39; e &#39;%7C&#39; respectivamente.
 
 ## Métodos de transmissão de dados {#data-transmission-methods}
 
 Os seguintes métodos são possíveis:
 
 * Inserir o URL no **&quot;src&quot;** atributo de um HTML **`<img>`** tag incorporada na página da Web que você deseja rastrear.
-* Chamada direta para o servidor de redirecionamento quando a página da Web que você deseja rastrear for gerada.
+* Chamada direta para o servidor de redirecionamento quando a página da Web que você deseja rastrear é gerada.

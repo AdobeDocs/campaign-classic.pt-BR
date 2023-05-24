@@ -2,7 +2,7 @@
 product: campaign
 title: Práticas recomendadas para cubos
 description: Práticas recomendadas para cubos
-badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+badge: label="v7" type="Informativo" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Reporting
 hide: true
 hidefromtoc: true

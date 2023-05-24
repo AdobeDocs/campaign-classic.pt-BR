@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Configuração do servidor da web
-description: Saiba mais sobre as principais práticas recomendadas de configuração do servidor da Web
+description: Saiba mais sobre as principais práticas recomendadas de configuração do servidor Web
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
@@ -18,45 +18,45 @@ ht-degree: 4%
 
 
 
-Abaixo você encontrará algumas das principais práticas recomendadas relacionadas à configuração do servidor da Web (Apache/IIS).
+Abaixo, você encontrará algumas das principais práticas recomendadas relacionadas à configuração do servidor da Web (Apache/IIS).
 
 * Alterar páginas de erro padrão.
 
-* Desative a versão e as cifras SSL antigas:
+* Desabilitar versão e cifras antigas do SSL:
 
    **No Apache**, edite /etc/apache2/mods-available/ssl.conf. Aqui está um exemplo:
 
    * SSLProtocol all -SSLv2 -SSLv3 -TLSv1
-   * SSLCipherSuite ALTO:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1
+   * ALTA do SSLCipherSuite:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1
 
-   **No IIS** (consulte o [documentação](https://support.microsoft.com/en-us/kb/245030)), execute a seguinte configuração:
+   **No IIS** (consulte a [documentação](https://support.microsoft.com/en-us/kb/245030)), execute a seguinte configuração:
 
    * Adicionar subchave de registro em HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL
-   * Para habilitar o sistema a usar os protocolos que não serão negociados por padrão (como TLS 1.2), altere os dados do valor DWORD do valor DisabledByDefault para 0x0 nas seguintes chaves do Registro nas **Protocolos** chave:
+   * Para habilitar o sistema a usar os protocolos que não serão negociados por padrão (como o TLS 1.2), altere os dados do valor DWORD do valor DisabledByDefault para 0x0 nas seguintes chaves do Registro sob o **Protocolos** chave:
 
       SCHANNEL\Protocolos\TLS 1.2\Cliente
 
       SCHANNEL\Protocolos\TLS 1.2\Servidor
    **Desativar SSL x.0**
 
-   SCHANNEL\Protocolos\SSL 3.0\Cliente: DisabledByDefault: DWORD (32 bits) Valor para 1
+   SCHANNEL\Protocols\SSL 3.0\Client: DisabledByDefault: Valor DWORD (32 bits) para 1
 
-   SCHANNEL\Protocolos\SSL 3.0\Servidor: Ativado: DWORD (32 bits) Valor para 0
+   SCHANNEL\Protocols\SSL 3.0\Server: Habilitado: Valor DWORD (32 bits) para 0
 
-* Remova o **TRACE** método :
+* Remova o **TRACE** método:
 
    **No Apache**, edite em /etc/apache2/conf.d/security: TraceEnable **Desligado**
 
-   **No IIS** (consulte o [documentação](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), execute a seguinte configuração:
+   **No IIS** (consulte a [documentação](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), execute a seguinte configuração:
 
-   * Certifique-se de que **Solicitar Filtragem** o serviço ou recurso de função está instalado.
-   * No **Solicitar Filtragem** , clique na guia verbos HTTP e, em seguida, clique em Negar verbo. No painel Ações, digite TRACE na caixa de diálogo aberta.
+   * Verifique se **Filtragem de solicitação** serviço de função ou recurso instalado.
+   * No **Filtragem de solicitação** clique na guia verbos de HTTP e, em seguida, clique em Negar verbo. No painel Ações, digite TRACE na caixa de diálogo aberta.
 
 * Remova o banner:
 
    **No Apache**, edite /etc/apache2/conf.d/security:
 
-   * ServerSignature **Desligado**
+   * AssinaturaDoServidor **Desligado**
    * ServerTokens **Prod**
 
    **No IIS**, execute a seguinte configuração:
@@ -67,7 +67,7 @@ Abaixo você encontrará algumas das principais práticas recomendadas relaciona
 
 * Limite o tamanho da consulta para impedir que arquivos importantes sejam carregados:
 
-   **No Apache**, adicione o **LimitRequestBody** diretiva (tamanho em bytes) no / diretório.
+   **No Apache**, adicione o **LimitRequestBody** diretiva (tamanho em bytes) no diretório /.
 
    ```
    <Directory />
@@ -77,9 +77,9 @@ Abaixo você encontrará algumas das principais práticas recomendadas relaciona
    </Directory>
    ```
 
-   **No IIS** (consulte o [documentação](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), defina a variável **maxAllowedContentLength** (comprimento máximo permitido do conteúdo) nas opções de filtragem de conteúdo.
+   **No IIS** (consulte a [documentação](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), defina o **maxAllowedContentLength** (comprimento máximo do conteúdo permitido) nas opções de filtragem de conteúdo.
 
 Tópicos relacionados:
 
-* [Visão geral da conformidade com o Adobe Marketing Cloud](https://experienceleague.adobe.com/docs/core-services/assets/Adobe-Marketing-Cloud-Privacy-and-Security-Overview.pdf) (PDF)
-* [Visão geral da segurança no Adobe Campaign](https://www.adobe.com/content/dam/cc/en/security/pdfs/ADB-CampaignSecurity-WP.pdf) (PDF)
+* [Visão geral de conformidade da Adobe Marketing Cloud](https://experienceleague.adobe.com/docs/core-services/assets/Adobe-Marketing-Cloud-Privacy-and-Security-Overview.pdf) (PDF)
+* [Visão geral da Segurança do Adobe Campaign](https://www.adobe.com/content/dam/cc/en/security/pdfs/ADB-CampaignSecurity-WP.pdf) (PDF)

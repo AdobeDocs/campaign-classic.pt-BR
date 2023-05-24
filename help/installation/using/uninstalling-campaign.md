@@ -20,7 +20,7 @@ ht-degree: 30%
 
 >[!CAUTION]
 >
->Esses procedimentos desinstalarão permanentemente o Adobe Campaign. Todos os dados serão perdidos.
+>Esses procedimentos serão desinstalados permanentemente no Adobe Campaign. Todos os dados serão perdidos.
 
 **RHEL:**
 

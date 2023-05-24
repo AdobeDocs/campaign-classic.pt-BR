@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Elementos e atributos do schema - elemento de junção
-description: elemento de junção
+title: Elementos e atributos de esquema - elemento join
+description: elemento join
 exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 2%
 
 ---
 
-# elemento de junção {#join--element}
+# elemento join {#join--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -20,9 +20,9 @@ join:==EMPTY
 
 ## Atributos {#attributes-7}
 
-* @dstFilterExpr (cadeia de caracteres)
-* @xpath-dst (cadeia de caracteres)
-* @xpath-src (cadeia de caracteres)
+* @dstFilterExpr (string)
+* @xpath-dst (string)
+* @xpath-src (string)
 
 ## Pais {#parents-7}
 
@@ -38,29 +38,29 @@ Permite definir os campos que criam uma ligação entre tabelas SQL.
 
 ## Uso e contexto de uso {#use-and-context-of-use-5}
 
-A `<join>`  só poderá ser usado se o elemento principal  `<element>`  é do tipo &quot;link&quot;. Isso significa que o elemento pai deve ter o atributo &quot;@type=link&quot; declarado.
+A `<join>`  o elemento só pode ser usado se o pai  `<element>`  elemento é do tipo &#39;link&#39;. Isso significa que o elemento pai deve ter o atributo &quot;@type=link&quot; declarado.
 
 Não é necessário especificar o nome e o namespace da tabela remota no `<join>`  elemento. Eles precisam ser especificados no pai  `<element>`.
 
 Por convenção, os links são definidos no final do schema.
 
-Se a variável `<join>` não é especificado quando o elemento de tipo de link é definido, o link será colocado automaticamente nas chaves primárias de ambas as tabelas.
+Se a variável `<join>` O elemento não é especificado quando o elemento de tipo de link é definido. O link será colocado automaticamente nas chaves primárias de ambas as tabelas.
 
 ## Descrição do atributo {#attribute-description-7}
 
-* **dstFilterExpr (cadeia de caracteres)**: esse atributo permite restringir o número de valores elegíveis na tabela remota.
-* **xpath-dst (cadeia de caracteres)**: este atributo recebe um Xpath (@name atributo da tabela remota).
-* **xpath-src (cadeia de caracteres)**: este atributo recebe um Xpath (@name attribute no schema atual).
+* **dstFilterExpr (sequência de caracteres)**: este atributo permite restringir o número de valores qualificados na tabela remota.
+* **xpath-dst (sequência de caracteres)**: este atributo recebe um Xpath (atributo @name da tabela remota).
+* **xpath-src (sequência de caracteres)**: este atributo recebe um Xpath (atributo @name no esquema atual).
 
 ## Exemplos {#examples-6}
 
-Link entre o campo &#39;email&#39; da tabela atual e o campo &quot;@company-id&quot; da tabela remota:
+Link entre o campo &quot;email&quot; da tabela atual e o campo &quot;@compagny-id&quot; da tabela remota:
 
 ```
 <join xpath-dst="@compagny-id" xpath-src="@email"/>
 ```
 
-Link filtrado para a tabela &quot;cus:Country&quot; com base no conteúdo do campo &quot;@country&quot; que deve conter o valor &quot;EN&quot;:
+Link filtrado em direção à tabela &quot;cus:Country&quot; com base no conteúdo do campo &quot;@country&quot; que deve conter o valor &quot;EN&quot;:
 
 ```
 <element name="StockEN" type="link" label="MyLink" target="cus:Stock">

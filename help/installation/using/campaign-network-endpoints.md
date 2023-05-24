@@ -19,6 +19,6 @@ Estes são os diferentes pontos de extremidade usados no Campaign Classic.
 
 | Contexto | URL |
 |--- |--- |
-| Pontos de extremidade do navegador | `https://*.experiencecloud.adobe.com` (provedor SSO)<br>`https://*.campaign.adobe.com` (Instância da campanha)<br>`https://adobeid-na1.services.adobe.com` (login do Adobe) |
+| Endpoints do navegador | `https://*.experiencecloud.adobe.com` (Provedor de SSO)<br>`https://*.campaign.adobe.com` (Instância do Campaign)<br>`https://adobeid-na1.services.adobe.com` (logon do Adobe) |
 | Renderização da caixa de entrada (Litmus) | `https://deliverability-app.neolane.net/deliverability` |
-| URL de marca, mirror pages, rastreamento, arquivo (assistente de implantação) | Verifique os URLs que foram configurados para você. |
+| URL de marca, mirror pages, rastreamento, fileref (assistente de implantação) | Verifique os URLs configurados para você. |

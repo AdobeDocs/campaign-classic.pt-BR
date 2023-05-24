@@ -17,32 +17,32 @@ ht-degree: 14%
 
 
 
-Para criar um **[!UICONTROL List]** digite list com base na nova tabela de recipients, é necessário criar um workflow para construção do target que gerará a lista.
+Para criar um **[!UICONTROL List]** digite list com base na nova tabela de recipients, é necessário criar um workflow de direcionamento que gerará a lista.
 
-Para obter mais informações sobre listas no Campaign, consulte [esta seção](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
+Para obter mais informações sobre listas no Campaign, consulte [nesta seção](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
 
-Para criar um workflow para construção do target e atualizar recipients em uma tabela de recipients personalizada, siga as etapas abaixo:
+Para criar um workflow de direcionamento e atualizar recipients em uma tabela de recipients personalizada, siga as etapas abaixo:
 
-1. Vá para o **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** nó do explorador.
+1. Vá para a **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** nó do explorador.
 1. Criação de um novo workflow para construção do target
-1. Coloque um **Query** atividade seguida de uma **Atualizar lista** atividade .
+1. Colocar um **Query** atividade seguida de um **Atualização da lista** atividade.
 
    ![](assets/mapping_create_list_workflow01.png)
 
-1. Clique duas vezes no botão **Query** e clique em **[!UICONTROL Edit the query]** para escolher um targeting dimension com base no schema da nova tabela de recipients (em nosso exemplo: **Individual**). Clique em **[!UICONTROL Finish]** para confirmar.
+1. Clique duas vezes no ícone **Query** atividade e clique em **[!UICONTROL Edit the query]** para escolher um targeting dimension com base no schema da nova tabela de recipients (em nosso exemplo: **Indivíduo**). Clique em **[!UICONTROL Finish]** para confirmar.
 
    ![](assets/mapping_create_list_workflow03.png)
 
-1. Clique duas vezes no botão **Atualizar lista** e, em seguida, selecione a **[!UICONTROL Create the list if necessary (Computed name)]** botão de opção.
+1. Clique duas vezes no ícone **Atualização da lista** e selecione a **[!UICONTROL Create the list if necessary (Computed name)]** botão de opção.
 
    ![](assets/mapping_create_list_workflow02.png)
 
-1. Selecione a pasta de criação da nova lista.
+1. Selecione a pasta de criação para a nova lista.
 1. Execute o workflow para criar a lista.
-1. Visualize o resultado no nó da árvore que você selecionou durante a **[!UICONTROL List update]** atividade .
+1. Exibir o resultado no nó da árvore que você selecionou durante a **[!UICONTROL List update]** atividade.
 
-   O painel especifica o schema no qual a lista se baseia, conforme mostrado abaixo:
+   O painel especifica o esquema no qual a lista se baseia, conforme mostrado abaixo:
 
    ![](assets/mapping_list_view.png)

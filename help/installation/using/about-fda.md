@@ -24,10 +24,10 @@ A opção FDA permite estender o template de dados em um banco de dados de terce
 
 Para usar esse recurso, os pré-requisitos estão listados abaixo:
 
-* **Configuração**: a lista de bancos de dados externos compatíveis depende do [modelo de hospedagem](../../installation/using/hosting-models.md).
-* **Versão do banco de dados externo**: é necessário ter um banco de dados externo compatível com o módulo FDA do Adobe Campaign.
+* **Configuração**: a lista de bancos de dados externos compatíveis depende da [modelo de hospedagem](../../installation/using/hosting-models.md).
+* **Versão do banco de dados externo**: você precisa ter um banco de dados externo compatível com o módulo FDA do Adobe Campaign.
 
    A lista de sistemas de banco de dados e versões compatíveis por modelo de hospedagem é detalhada no Campaign [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
 
-* **Permissões**: os usuários também devem ter a [permissões necessárias](../../installation/using/remote-database-access-rights.md) no Adobe Campaign e no banco de dados externo.
+* **Permissões**: os usuários também devem ter o [permissões necessárias](../../installation/using/remote-database-access-rights.md) no Adobe Campaign e no banco de dados externo.
 

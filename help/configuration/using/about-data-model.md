@@ -14,65 +14,65 @@ ht-degree: 6%
 
 # Introdução ao modelo de dados do Campaign {#about-data-model}
 
-O modelo de dados conceituais do banco de dados do Adobe Campaign consiste em um conjunto de tabelas incorporadas e sua interação. As tabelas e os conceitos principais estão listados nesta página.
+O modelo de dados conceituais do banco de dados do Adobe Campaign consiste em um conjunto de tabelas incorporadas e sua interação. As principais tabelas e conceitos estão listados nesta página.
 
 ## Visão geral {#data-model-overview}
 
-O Adobe Campaign depende de um banco de dados relacional contendo tabelas vinculadas. A estrutura básica do modelo de dados Adobe Campaign pode ser descrita da seguinte maneira.
+O Adobe Campaign depende de um banco de dados relacional contendo tabelas vinculadas. A estrutura básica do modelo de dados do Adobe Campaign pode ser descrita da seguinte maneira.
 
-### Tabela de recipients {#recipient-table}
+### Tabela de destinatários {#recipient-table}
 
-O modelo de dados depende de uma tabela principal que é, por padrão, a tabela Recipient (**NmsRecipient**). Essa tabela permite armazenar todos os perfis de marketing.
+O modelo de dados depende de uma tabela principal que é, por padrão, a tabela Recipient (**NmsRecipient**). Esta tabela permite armazenar todos os perfis de marketing.
 
-Para obter mais informações sobre a tabela Recipient, consulte [esta seção](#default-recipient-table).
+Para obter mais informações sobre a tabela Recipient, consulte [nesta seção](#default-recipient-table).
 
-### Tabela de delivery {#delivery-table}
+### Tabela de entrega {#delivery-table}
 
-O modelo de dados também inclui uma parte dedicada ao armazenamento de todas as atividades de marketing. Geralmente é a tabela Delivery (**NmsDelivery**). Cada registro nesta tabela representa uma ação de delivery ou um template de delivery. Ele contém todos os parâmetros necessários para executar deliveries, como target, conteúdo, etc.
+O modelo de dados também inclui uma parte dedicada ao armazenamento de todas as atividades de marketing. Normalmente, é a tabela Delivery (**NmsDelivery**). Cada registro nessa tabela representa uma ação de entrega ou um modelo de entrega. Ele contém todos os parâmetros necessários para executar deliveries, como target, conteúdo etc.
 
-### Tabelas de logs {#log-tables}
+### Registra tabelas {#log-tables}
 
 Outra parte do modelo de dados permite armazenar temporariamente todos os logs associados à execução das campanhas.
 
-Todos os logs do delivery são mensagens enviadas a recipients ou dispositivos em todos os canais. A tabela principal de Logs do delivery (**NmsBroadLog**) contém os logs do delivery para todos os recipients.
-A tabela principal de Logs de rastreamento (**NmsTrackingLog**) armazena os logs de rastreamento para todos os recipients. Os logs de rastreamento se referem a reações de recipients, como aberturas de email e cliques. Cada reação corresponde a um log de rastreamento.
-Os logs de delivery e de rastreamento são excluídos após um determinado período, que é especificado no Adobe Campaign e pode ser modificado. Portanto, é altamente recomendável exportar os logs regularmente.
+Os logs do delivery são todas as mensagens enviadas aos recipients ou dispositivos em todos os canais. A tabela principal de Logs do delivery (**NmsBroadLog**) contém os logs do delivery para todos os recipients.
+A tabela Principal de logs de rastreamento (**NmsTrackingLog**) armazena os logs de rastreamento de todos os recipients. Os logs de rastreamento se referem às reações dos recipients, como aberturas e cliques de email. Cada reação corresponde a um log de rastreamento.
+Os logs do delivery e os logs de rastreamento são excluídos após um determinado período, que é especificado no Adobe Campaign e pode ser modificado. Portanto, é altamente recomendável exportar os logs regularmente.
 
 ### Tabelas técnicas {#technical-tables}
 
-Por último, parte do modelo de dados consiste em dados técnicos utilizados para o processo de aplicação, incluindo operadores e direitos dos utilizadores (**NmsGroup**), pastas (**XtkFolder**).
+Por último, parte do modelo de dados consiste em dados técnicos utilizados para o processo de candidatura, incluindo operadores e direitos de utilizador (**NmsGroup**), pastas (**XtkFolder**).
 
-## Uso da tabela incorporada Recipient {#default-recipient-table}
+## Uso da tabela de Recipient integrada {#default-recipient-table}
 
-A tabela de Recipient integrada no Adobe Campaign fornece um bom ponto de partida para a criação do modelo de dados. Ela tem vários campos predefinidos e links de tabela que podem ser facilmente estendidos. Isso é particularmente útil quando você está direcionando recipients principalmente porque se encaixa em um modelo de dados simples centrado em recipients.
+A tabela de Destinatários integrada no Adobe Campaign fornece um bom ponto de partida para a criação do modelo de dados. Ele tem vários campos predefinidos e links de tabela que podem ser facilmente estendidos. Isso é particularmente útil quando você está direcionando principalmente recipients, pois se encaixa em um modelo de dados simples centrado no recipient.
 
-Os benefícios de usar a tabela de Recipient integrada são os seguintes:
+Os benefícios de usar a tabela Recipient integrada são os seguintes:
 
-* Trabalho integrado com funcionalidades como assinaturas, listas de propagação e muito mais.
-* Fornecimento de um banco de dados de marketing com um modelo de dados centrado no recipient.
+* Trabalhar integrado com funcionalidades como assinaturas, listas de propagação e muito mais.
+* Fornecer um banco de dados de marketing com um modelo de dados centrado no recipient.
 * Implementação mais rápida.
-* Fácil manutenção por suporte e parceiros.
+* Fácil manutenção por parte do suporte e dos parceiros.
 
-No entanto, é possível estender a tabela Recipient, mas não para reduzir o número de campos ou links na tabela.
+No entanto, é possível estender a tabela Recipient, mas não reduzir o número de campos ou links na tabela.
 
 >[!IMPORTANT]
 >
->É recomendável não excluir campos (mesmo que não sejam úteis) na tabela de recipients, pois isso pode levar a erros nos módulos incorporados.
+>É recomendável não excluir campos (mesmo que sejam inúteis) na tabela de recipients, pois isso pode levar a erros nos módulos integrados.
 
-Além disso, como a tabela Recipient faz parte do produto, tanto a tabela quanto seu formulário associado evoluem conforme o produto muda. Portanto, é necessária uma manutenção extra para verificar se as extensões ainda são válidas na atualização.
+Além disso, como a tabela Recipient faz parte do produto, tanto a tabela quanto seu formulário associado evoluem à medida que o produto muda. Portanto, é necessária uma manutenção extra para verificar se as extensões ainda são válidas na atualização.
 
 ## Extensão do modelo de dados  {#extending-data-model}
 
 Ao começar com o Adobe Campaign, é necessário avaliar o modelo de dados padrão para verificar qual tabela é a mais adequada para armazenar seus dados de marketing.
 
-Se relevante, você pode usar a tabela Recipient padrão com os campos prontos para uso, como descrito em [esta seção](#default-recipient-table).
+Se relevante, você pode usar a tabela Recipient padrão com os campos prontos para uso, como descrito em [nesta seção](#default-recipient-table).
 
 Se necessário, você pode estendê-lo com dois mecanismos:
 
-* Estende uma tabela existente com novos campos. Por exemplo, você pode adicionar um novo campo &quot;Fidelidade&quot; à tabela Recipient .
-* Crie uma nova tabela, por exemplo, uma tabela &quot;Purchase&quot; que lista todas as compras feitas por cada perfil do banco de dados e a vincula à tabela Recipient .
+* Estender uma tabela existente com novos campos. Por exemplo, é possível adicionar um novo campo &quot;Fidelidade&quot; à tabela Recipient.
+* Crie uma nova tabela, por exemplo, uma tabela &quot;Purchase&quot; listando todas as compras feitas por cada perfil do banco de dados, e vincule-a à tabela Recipient.
 
-Para obter mais informações sobre como configurar schemas de extensão para estender o modelo de dados conceituais, consulte [Sobre a edição do schema](../../configuration/using/about-schema-edition.md).
+Para obter mais informações sobre como configurar schemas de extensão para estender o modelo de dados conceituais, consulte [Sobre a edição de esquema](../../configuration/using/about-schema-edition.md).
 
 >[!IMPORTANT]
 >
@@ -80,21 +80,21 @@ Para obter mais informações sobre como configurar schemas de extensão para es
 
 ## Uso de uma tabela personalizada de recipient {#custom-recipient-table}
 
-Ao projetar seu modelo de dados do Adobe Campaign, você pode usar a variável [tabela de recipient integrada](#default-recipient-table)ou decidir criar um [tabela de recipient personalizada](../../configuration/using/about-custom-recipient-table.md) para armazenar seus perfis de marketing.
+Ao projetar seu modelo de dados do Adobe Campaign, você pode usar o [tabela interna de recipient](#default-recipient-table)ou decida criar uma [tabela de recipient personalizada](../../configuration/using/about-custom-recipient-table.md) tabela para armazenar seus perfis de marketing.
 
-Na verdade, se o modelo de dados não se ajustar à estrutura centrada no recipient, é possível configurar outras tabelas como o targeting dimension no Adobe Campaign. Por exemplo, isso pode ser relevante quando você precisa direcionar as famílias, as contas (como telefones celulares) e as empresas/sites, em vez de simplesmente os recipients.
+Na verdade, se o modelo de dados não se ajustar à estrutura centrada no recipient, você poderá configurar outras tabelas como o targeting dimension no Adobe Campaign. Por exemplo, isso pode ser relevante quando você precisa direcionar famílias, contas (como telefones celulares) e empresas/sites, em vez de simplesmente recipients.
 
 >[!NOTE]
 >
 >Nesse caso, será necessário criar um novo [target mapping](../../configuration/using/target-mapping.md).
 
-Todos os princípios e etapas necessários ao usar uma tabela de recipient personalizada são detalhados em [esta seção](../../configuration/using/about-custom-recipient-table.md).
+Todos os princípios e etapas necessários ao usar uma tabela de recipient personalizada são detalhados em [nesta seção](../../configuration/using/about-custom-recipient-table.md).
 
 Os benefícios de usar uma tabela de Recipient personalizada são os seguintes:
 
-* **Modelo de dados flexível** - A tabela de recipient integrada é inútil se você não precisar da maioria dos campos da tabela de Recipient ou se o modelo de dados não for centrado no recipient.
+* **Modelo de dados flexível** - A tabela de recipients integrada é inútil se você não precisar da maioria dos campos da tabela Recipients ou se o modelo de dados não for centrado no recipient.
 
-* **Escalabilidade** - Grandes volumes exigem uma tabela simplificada com poucos campos para um design eficiente. A tabela de recipients integrada teria muitos campos inúteis, o que poderia afetar o desempenho e faltar eficiência.
+* **Escalabilidade** - Grandes volumes exigem uma tabela simplificada com poucos campos para um design eficiente. A tabela de recipients integrada teria muitos campos inúteis, o que poderia afetar o desempenho e a eficiência.
 
 * **Local dos dados** - Se os dados residirem em um banco de dados de marketing existente externo, talvez seja necessário muito esforço para usar a tabela de recipients integrada. Criar um novo com base em uma estrutura existente é mais simples.
 
@@ -108,13 +108,13 @@ Os benefícios de usar uma tabela de Recipient personalizada são os seguintes:
 
 Saiba mais sobre o modelo de dados do Campaign nestas seções:
 
-* **Descrição dos quadros principais** - Para obter mais informações sobre a descrição padrão do modelo de dados do Campaign Classic, consulte [esta seção](../../configuration/using/data-model-description.md).
+* **Descrição dos principais quadros** - Para obter mais informações sobre a descrição do modelo de dados Campaign Classic padrão, consulte [nesta seção](../../configuration/using/data-model-description.md).
 
-* **Descrição completa de cada tabela** - Para acessar a descrição completa de cada tabela, acesse **[!UICONTROL Admin > Configuration > Data schemas]**, selecione um recurso na lista e clique no botão **[!UICONTROL Documentation]** guia .
+* **Descrição completa de cada tabela** - Para acessar a descrição completa de cada tabela, vá para **[!UICONTROL Admin > Configuration > Data schemas]**, selecione um recurso na lista e clique no botão **[!UICONTROL Documentation]** guia.
 
    ![](assets/data-model_documentation-tab.png)
 
 
-* **Schemas de campanha** - A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de schema. Para obter mais informações sobre schemas Adobe Campaign, leia [esta seção](../../configuration/using/about-schema-reference.md).
+* **Esquemas de campanha** - A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de schema. Para obter mais informações sobre esquemas do Adobe Campaign, leia [nesta seção](../../configuration/using/about-schema-reference.md).
 
-* **Práticas recomendadas do modelo de dados** - Conheça a arquitetura do modelo de dados do Campaign e as práticas recomendadas relacionadas, em [esta seção](../../configuration/using/data-model-best-practices.md#data-model-architecture).
+* **Práticas recomendadas do modelo de dados** - Conheça a arquitetura do modelo de dados do Campaign e as práticas recomendadas relacionadas, em [nesta seção](../../configuration/using/data-model-best-practices.md#data-model-architecture).

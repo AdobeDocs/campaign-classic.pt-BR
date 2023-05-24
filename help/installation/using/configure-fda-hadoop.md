@@ -18,7 +18,7 @@ ht-degree: 79%
 
 
 
-Usar Campanha **Federated Data Access** (FDA) opção para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Hadoop.
+Usar a campanha **Federated Data Access** (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Hadoop.
 
 1. Configurar [banco de dados Hadoop](#configuring-hadoop)
 1. Configurar o Hadoop [conta externa](#hadoop-external) no Campaign
@@ -38,7 +38,7 @@ A conexão com um banco de dados externo do Hadoop no FDA exige as seguintes con
    systemctl start nlserver.service
    ```
 
-1. No Campaign Classic, você pode configurar a conta externa do [!DNL Hadoop]. Para obter mais informações sobre como configurar a conta externa, consulte [esta seção](#hadoop-external).
+1. No Campaign Classic, você pode configurar a conta externa do [!DNL Hadoop]. Para obter mais informações sobre como configurar a conta externa, consulte [nesta seção](#hadoop-external).
 
 ## Conta externa do Hadoop {#hadoop-external}
 
@@ -101,7 +101,7 @@ Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para [Win
    User/Password: admin/<your password here>
    ```
 
-1. Crie a conta externa do Hadoop, conforme detalhado em [esta seção](#hadoop-external).
+1. Crie a conta externa do Hadoop, conforme detalhado em [nesta seção](#hadoop-external).
 
 ### Hadoop 2.1 para Linux {#for-linux}
 
@@ -188,4 +188,4 @@ Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para [Win
    isql vorac -v
    ```
 
-1. Crie a conta externa do Hadoop, conforme detalhado em [esta seção](#hadoop-external).
+1. Crie a conta externa do Hadoop, conforme detalhado em [nesta seção](#hadoop-external).

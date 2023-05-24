@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Parâmetros adicionais de rastreamento Web
-description: Saiba mais sobre parâmetros para rastreamento Web
+description: Saiba mais sobre parâmetros de rastreamento Web
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # Parâmetros adicionais de rastreamento Web{#additional-parameters}
 
-## Definição dos parâmetros {#definition-of-parameters}
+## Definição de parâmetros {#definition-of-parameters}
 
-A plataforma Adobe Campaign oferece dois parâmetros de rastreamento Web tipo TRANACTION como padrão:
+Sua plataforma Adobe Campaign oferece dois parâmetros de rastreamento Web do tipo TRANSAÇÃO como padrão:
 
-* **quantia**: representa o valor de uma transação,
+* **quantidade**: representa o valor de uma transação,
 * **artigo**: representa o número de itens em uma transação.
 
-Esses parâmetros são definidos na variável **nms:webTrackingLog** e são alguns dos indicadores vistos nos relatórios.
+Esses parâmetros são definidos na **nms:webTrackingLog** esquema e são alguns dos indicadores vistos nos relatórios.
 
 Para definir parâmetros adicionais, é necessário estender esse schema.
 
@@ -38,23 +38,23 @@ Para definir parâmetros adicionais, é necessário estender esse schema.
 </srcSchema>
 ```
 
-Você pode exibir os valores desses parâmetros configurando a lista de logs de rastreamento (de um delivery ou recipient).
+Você pode exibir os valores desses parâmetros configurando a lista de log de rastreamento (de um delivery ou recipient).
 
-## Redirecionar configuração do servidor {#redirection-server-configuration}
+## Configuração do servidor de redirecionamento {#redirection-server-configuration}
 
 Na configuração do servidor, é possível definir o número máximo de caracteres a serem considerados nos parâmetros de rastreamento Web.
 
 >[!IMPORTANT]
 >
->O aumento do número máximo de caracteres a serem considerados pode afetar o desempenho do rastreamento Web de sua plataforma.
+>O aumento do número máximo de caracteres a serem considerados pode afetar o desempenho do rastreamento web da sua plataforma.
 
-Para fazer isso, modifique o **webTrackingParamSize** do **`<trackinglogd>`** no **serverConf.xml** arquivo. Esse arquivo é salvo no **conf** subdiretório do diretório de instalação do Adobe Campaign.
+Para fazer isso, modifique o **webTrackingParamSize** atributo de **`<trackinglogd>`** elemento na **serverConf.xml** arquivo. Esse arquivo foi salvo no **conf** subdiretório do diretório de instalação do Adobe Campaign.
 
 **Exemplo**:
 
-O valor padrão é 64 caracteres. Esse valor permite considerar a variável **quantia** e **artigo** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&quot;) parâmetros padrão.
+O valor padrão é 64 caracteres. Esse valor permite considerar a **quantidade** e **artigo** parâmetros padrão (&quot;amount=xxxxxxx&amp;article=xxxxxxx&quot;).
 
-Levando em conta ambos os parâmetros (tamanho do nome + tamanho do valor) indicados no exemplo de esquema de extensão acima, você pode modificar a configuração para levar 100 caracteres em consideração (&quot;amount=xxxxxxxx&amp;article=xxxxxxxxx&amp;mode=xxxxxxxxxxx&amp;code=xxxxxxx&quot;).
+Considerando ambos os parâmetros (tamanho do nome + tamanho do valor) indicados no exemplo de esquema de extensão acima, você pode modificar a configuração para considerar 100 caracteres (&quot;amount=xxxxxxx&amp;article=xxxxxxx&amp;mode=xxxxxxxxx&amp;code=xxxxxxx&quot;).
 
 ```
 <trackinglogd args="" autoStart="false" initScript="" maxCreateFileRetry="5" maxLogsSizeOnDiskMb="500"
@@ -65,21 +65,21 @@ webTrackingParamSize="64"/>
 
 Quando a configuração tiver sido modificada, você deverá:
 
-* Pare o servidor da Web que hospeda o módulo de redirecionamento (Apache, IIS etc.),
-* Pare o servidor do Adobe Campaign: **net stop nlserver6** no Windows, **/etc/init.d/nlserver6 stop** no Linux,
+* Pare o servidor Web que hospeda o módulo de redirecionamento (Apache, IIS etc.),
+* Pare o servidor do Adobe Campaign: **net stop nlserver6** no Windows, **parada de /etc/init.d/nlserver6** no Linux,
 
    >[!NOTE]
    >
    >A partir da versão 20.1, recomendamos usar o seguinte comando (para Linux): **systemctl stop nlserver**
 
 * No Linux, exclua os segmentos de memória compartilhada usando o **ipcrm** comando,
-* Reinicie o servidor do Adobe Campaign: **net start nlserver6** no Windows, **/etc/init.d/nlserver6 start** no Linux,
+* Reinicie o servidor do Adobe Campaign: **net start nlserver6** no Windows, **/etc/init.d/nlserver6 iniciar** no Linux,
 
    >[!NOTE]
    >
    >A partir da versão 20.1, recomendamos usar o seguinte comando (para Linux): **systemctl start nlserver**
 
-* Reinicie o servidor da Web.
+* Reinicie o servidor Web.
 
 **Exemplo**: considerando a configuração no Linux.
 
@@ -107,4 +107,4 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->Para Linux, se você aumentar o tamanho da variável **webTrackingParamSize** ou **maxSharedLogs** , talvez seja necessário aumentar o tamanho da memória compartilhada (SHM).
+>No Linux, se você aumentar o tamanho do **webTrackingParamSize** ou **maxSharedLogs** , talvez seja necessário aumentar o tamanho da memória compartilhada (SHM).

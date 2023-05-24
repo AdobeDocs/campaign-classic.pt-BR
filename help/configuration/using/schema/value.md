@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Elementos e atributos - elemento valor
+title: Elementos e atributos - elemento de valor
 description: Elementos e atributos
 audience: configuration
 content-type: reference
@@ -13,23 +13,23 @@ ht-degree: 4%
 
 ---
 
-# elemento de valor {#value--element}
+# elemento value {#value--element}
 
 ![](../../../assets/v7-only.svg)
 
 ## Modelo de conteúdo {#content-model-16}
 
-valor:==help
+value:==help
 
 ## Atributos {#attributes-16}
 
-* @applicableIf (cadeia de caracteres)
-* @desc (cadeia de caracteres)
-* @enabledIf (cadeia de caracteres)
-* @img (cadeia de caracteres)
-* @label (cadeia de caracteres)
-* @name (cadeia de caracteres)
-* @value (cadeia de caracteres)
+* @applicableIf (string)
+* @desc (string)
+* @enabledIf (string)
+* @img (string)
+* @label (string)
+* @name (string)
+* @value (string)
 
 ## Pais {#parents-16}
 
@@ -45,13 +45,13 @@ Esse elemento permite definir os valores armazenados em uma enumeração.
 
 ## Descrição do atributo {#attribute-description-16}
 
-* **applicableIf (cadeia de caracteres)**: esse atributo permite tornar um valor de enumeração opcional. Ele recebe uma expressão XTK.
-* **desc (cadeia de caracteres)**: descrição do valor de enumeração.
-* **enabledIf (cadeia de caracteres)**: para ativar o valor de enumeração.
+* **applicableIf (string)**: esse atributo permite que você torne um valor de enumeração opcional. Ele recebe uma expressão XTK.
+* **desc (string)**: descrição do valor de enumeração.
+* **enabledIf (cadeia de caracteres)**: condição para ativar o valor de enumeração.
 * **img (string)**: imagem vinculada à enumeração no formulário &quot;namespace:image_name&quot;. A imagem deve ser importada para o servidor de aplicativos.
-* **label (string)**: do valor de enumeração.
-* **name (string)**: nome interno do valor de enumeração.
-* **valor (string)**: valor do valor de enumeração. O tipo de valor é definido com base no tipo de enumeração. Se a enumeração for do tipo de string de caracteres, ela só poderá conter valores do tipo string de caracteres.
+* **rótulo (string)**: rótulo do valor de enumeração.
+* **nome (sequência de caracteres)**: nome interno do valor de enumeração.
+* **value (string)**: valor do valor de enumeração. O tipo de valor é definido com base no tipo de enumeração. Se a enumeração for do tipo character string, ela só poderá conter valores do tipo character string.
 
 ## Exemplos {#examples-13}
 
