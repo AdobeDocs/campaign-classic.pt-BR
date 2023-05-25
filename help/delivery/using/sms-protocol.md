@@ -412,7 +412,7 @@ O conector Adobe Campaign Classic Extended SMPP pode controlar o número de cone
 
 Para o Adobe Campaign Classic, pode haver um número diferente de conexões de receptor e transmissor:
 
-* **</br>Conexões de transmissor = número de conexões filho do MTA * número de processos filho do MTA * número de MTAs (se a resposta automática estiver definida) + número de conexões filho do MTA**
+* **Conexões de transmissor = número de conexões derivadas do MTA * número de processos derivados do MTA * número de MTAs </br> (se a resposta automática estiver definida) + número de conexões derivadas do MTA**
 
 Como sugerido acima, o processo de SMS do Adobe Campaign Classic abrirá mais conexões de transmissor se a resposta automática estiver ativada. Essas conexões extras são usadas para enviar as respostas automáticas.
 

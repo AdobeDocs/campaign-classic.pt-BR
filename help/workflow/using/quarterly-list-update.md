@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Atualização da lista trimestral usando uma consulta incremental
-description: Neste caso de uso, um query incremental é usado para atualizar automaticamente uma lista de recipients
+title: Atualização da lista trimestral usando um query incremental
+description: Neste caso de uso, uma consulta incremental é usada para atualizar automaticamente uma lista de recipients
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac

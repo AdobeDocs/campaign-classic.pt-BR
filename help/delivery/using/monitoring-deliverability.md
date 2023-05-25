@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Monitorar a capacidade de delivery no Adobe Campaign
-description: Saiba mais sobre as ferramentas e as diretrizes sobre o monitoramento da capacidade de delivery no Adobe Campaign
+title: Monitorar a capacidade de entrega no Adobe Campaign
+description: Saiba mais sobre as ferramentas e as diretrizes sobre o monitoramento da capacidade de entrega no Adobe Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability

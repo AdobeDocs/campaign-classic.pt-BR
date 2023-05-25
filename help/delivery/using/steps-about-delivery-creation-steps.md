@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Sobre as etapas de criação de deliveries no Adobe Campaign
-description: Descubra as principais etapas de criação de deliveries no Adobe Campaign
+title: Sobre as etapas de criação de entregas no Adobe Campaign
+description: Descubra as principais etapas de criação de entregas no Adobe Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Channel Configuration

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Práticas recomendadas de desempenho de entrega
-description: Saiba mais sobre o desempenho do delivery e as práticas recomendadas
+description: Saiba mais sobre o desempenho da entrega e as práticas recomendadas
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability

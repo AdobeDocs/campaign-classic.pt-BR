@@ -2,7 +2,7 @@
 product: campaign
 title: Gerenciamento de enumerações
 description: Gerenciamento de enumerações
-badge: label="v7" type="Informativo" tooltip="Aplica-se somente ao Campaign Classic v7"
+badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
@@ -10,7 +10,7 @@ exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

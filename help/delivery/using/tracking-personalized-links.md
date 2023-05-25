@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Introdução ao rastreamento de links personalizados
-description: Saiba como escrever links em emails que podem ser personalizados e dar suporte ao rastreamento no Campaign
+description: Saiba como incluir links em emails que podem ser personalizados e dar suporte ao rastreamento no Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization

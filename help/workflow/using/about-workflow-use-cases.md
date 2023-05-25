@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Sobre casos de uso de workflows
-description: Saiba mais sobre casos de uso que você pode executar usando workflows do Campaign Classic
+description: Saiba mais sobre os casos de uso que você pode executar usando workflows do Campaign Classic
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41

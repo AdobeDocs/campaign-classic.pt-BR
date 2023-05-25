@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Sobre o Adobe Campaign Classic
-description: Conheça os principais recursos, a interface do usuário e as diretrizes globais
+description: Conheça os principais recursos, a interface e as diretrizes globais
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User

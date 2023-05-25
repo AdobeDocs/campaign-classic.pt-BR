@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Assimilar segmentos da Adobe Experience Platform no Campaign
-description: Saiba como assimilar públicos-alvo do Adobe Experience Platform no Campaign Classic
+description: Saiba como assimilar públicos da Adobe Experience Platform no Campaign Classic
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: integrations
 content-type: reference

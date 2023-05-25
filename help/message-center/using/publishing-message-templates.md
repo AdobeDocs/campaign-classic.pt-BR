@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Publicar modelos de mensagem
-description: Saiba mais sobre a publicação e o cancelamento da publicação de modelo de mensagem transacional no Adobe Campaign Classic
+description: Saiba mais sobre a publicação e o cancelamento da publicação de templates de mensagem transacional no Adobe Campaign Classic
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference

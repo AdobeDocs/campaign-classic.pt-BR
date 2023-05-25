@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Introdução ao canal de aplicativo para dispositivos móveis
+title: Introdução ao canal de aplicativo móvel
 description: Introdução ao canal de aplicativo para dispositivos móveis no Adobe Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"

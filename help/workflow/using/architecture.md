@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Arquitetura
-description: Os fluxos de trabalho são administrados por um módulo específico, que pode ser iniciado em vários servidores para compartilhar a carga de processamento
+description: Os workflows são administrados por um módulo específico, que pode ser iniciado em vários servidores para compartilhar a carga de processamento
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 46801f78-706c-4dfa-bce7-3d15f569f222

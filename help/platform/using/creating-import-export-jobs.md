@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Criação de trabalhos de importação e exportação
-description: Saiba como criar trabalhos de importação e exportação no Campaign
+title: Criação de processos de importação e exportação
+description: Saiba como criar processos de importação e exportação no Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform

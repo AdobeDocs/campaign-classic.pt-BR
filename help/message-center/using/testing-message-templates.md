@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Testar modelos de mensagem transacional
-description: Saiba como gerenciar seed addresses em mensagens transacionais para pré-visualizá-los e testá-los no Adobe Campaign Classic
+description: Saiba como gerenciar seed addresses em mensagens transacionais para visualizá-los e testá-los no Adobe Campaign Classic
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference

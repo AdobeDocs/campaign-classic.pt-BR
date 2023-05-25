@@ -103,7 +103,7 @@ Este relatório combina os principais indicadores para rastrear o comportamento 
 
 As diferentes tabelas fornecem a lista de indicadores usados nos diferentes relatórios e suas fórmulas de cálculo, dependendo do tipo de delivery. [Saiba mais](../../reporting/using/indicator-calculation.md)
 
-## Solução de problemas do rastreamento {#tracking-troubleshooting}
+## Solução de problemas de rastreamento {#tracking-troubleshooting}
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 

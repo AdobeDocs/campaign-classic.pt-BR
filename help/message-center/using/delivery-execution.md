@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Execução do delivery
+title: Execução da entrega
 description: Saiba mais sobre a execução e o monitoramento da entrega de mensagens transacionais
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 ---
 
-# Execução do delivery {#delivery-execution}
+# Execução da entrega {#delivery-execution}
 
 
 

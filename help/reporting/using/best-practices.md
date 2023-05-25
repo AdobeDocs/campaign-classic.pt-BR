@@ -2,13 +2,13 @@
 product: campaign
 title: Práticas recomendadas para relatórios
 description: Práticas recomendadas para relatórios do Campaign
-badge: label="v7" type="Informativo" tooltip="Aplica-se somente ao Campaign Classic v7"
+badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

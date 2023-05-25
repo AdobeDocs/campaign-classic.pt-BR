@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Configurar trabalhos de importação
-description: Saiba como configurar e executar trabalhos de importação no Campaign
+title: Configurar processos de importação
+description: Saiba como configurar e executar processos de importação no Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
