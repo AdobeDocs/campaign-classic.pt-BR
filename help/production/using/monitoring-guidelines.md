@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Diretrizes de monitoramento
-description: Descubra as diretrizes e práticas recomendadas para monitorar processos e instâncias do Campaign
+description: Conheça as diretrizes e práticas recomendadas para monitorar processos e instâncias do Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
