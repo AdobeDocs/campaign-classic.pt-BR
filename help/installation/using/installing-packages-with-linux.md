@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1181'
 ht-degree: 2%
 
 ---
@@ -43,10 +43,7 @@ Para instalar o Adobe Campaign em um sistema operacional RPM (RHEL, CentOS e SUS
 
 1. Primeiro, obtenha o pacote do Adobe Campaign.
 
-   O arquivo é nomeado conforme abaixo, onde **XXXX** é o número da build do Adobe Campaign:
-
-   * **nlserver6-v7-XXXX-0.x86_64.rpm** para v7.
-   * **nlserver6-XXXX-0.x86_64.rpm** para v6.1.
+   O arquivo é nomeado conforme abaixo, onde **XXXX** é o número da build do Adobe Campaign: **nlserver6-v7-XXXX-0.x86_64.rpm**.
 
    >[!CAUTION]
    >
@@ -78,12 +75,7 @@ yum install bc.x86_64
 
 Para instalar o Adobe Campaign de 64 bits em um sistema operacional Debian de 64 bits, siga as etapas abaixo:
 
-1. Primeiro, obtenha o pacote do Adobe Campaign.
-
-   * **nlserver6-v7-XXXX-linux-2.6-amd64.deb** para v7.
-   * **nlserver6-XXXX-linux-2.6-amd64.deb** para v6.1.
-
-   **XXXX** é o número da build do Adobe Campaign.
+1. Primeiro, obtenha o pacote do Adobe Campaign: **nlserver6-v7-XXXX-linux-2.6-amd64.deb**, onde **XXXX** é o número da build.
 
    >[!CAUTION]
    >

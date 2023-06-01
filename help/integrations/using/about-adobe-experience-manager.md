@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: e9756046-fc67-4afd-b7a9-c8d73614f02e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '132'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,5 @@ Você deve ter os seguintes elementos:
 * Uma instância de **criação** do Adobe Experience Manager.
 * Uma instância de **publicação** do Adobe Experience Manager.
 * Uma instância do Adobe Campaign.
-
-O Adobe Campaign é compatível com o Adobe Experience Manager 6.1, 6.2, 6.3, 6.4 e 6.5. As seções a seguir apresentam uma visão geral da integração.
 
 Para obter mais detalhes, consulte a [documentação do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html?lang=pt-BR)

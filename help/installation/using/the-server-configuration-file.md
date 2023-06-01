@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '7979'
+source-wordcount: '7955'
 ht-degree: 42%
 
 ---
@@ -1618,12 +1618,12 @@ Estes são os diferentes parâmetros da variável **mta** nó. Essa é a configu
    <td> Booleano<br /> </td> 
    <td> verdadeiro <br /> </td> 
   </tr> 
-  <tr> 
+  <!--tr> 
    <td> statServerVersion<br /> </td> 
-   <td> Versão do protocolo usada: versão do protocolo de comunicação (1 para um servidor v5.11 e 6.0.2, 2 para um servidor v6.1).<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
-   <td> Se não estiver definido, a versão mais recente será usada. <br /> </td> 
-  </tr> 
+   <td> Protocol version used: communication protocol version (1 for a v5.11 and 6.0.2 server, 2 for a v6.1 server).<br /> </td> 
+   <td> String<br /> </td> 
+   <td> If undefined, the latest version is used. <br /> </td> 
+  </tr--> 
   <tr> 
    <td> useMomentum<br /> </td> 
    <td> Se definida como "true", sua instância usará o parâmetro <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">MTA aprimorado</a>.<br /> </td> 

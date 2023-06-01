@@ -7,9 +7,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '933'
 ht-degree: 100%
 
 ---
@@ -129,7 +129,7 @@ Uma equipe dedicada de representantes de atendimento ao cliente, gerentes de pro
     </a>
     </div>
     <ul>
-    <li>O esforço e a complexidade de atualizar a instância do Campaign Classic aumentam com a distância entre duas versões (v6 --&gt; v7).</li>
+    <li>O esforço e a complexidade de atualizar a instância do Campaign Classic aumentam com a distância entre duas versões.</li>
     <li>Quanto mais sua organização esperar, mais complexa será a atualização (e maior será a exposição a vulnerabilidades).</li>
     <li>Atualizações regulares reduzirão o tempo de inatividade da atualização e reduzirão o risco de regressão.</li>
     </ul>

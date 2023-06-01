@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1077'
 ht-degree: 5%
 
 ---
@@ -68,7 +68,7 @@ Esse tipo de configuração pode ser executado ao gerenciar listas de menos de 1
 * Caixa de entrada de devolução acessível via POP3,
 * Criação de dois aliases DNS:
 
-   * a primeira a ser exposta ao público para rastrear e apontar o computador no seu IP público;
+   * a primeira a ser exposta ao público para rastrear e apontar para o computador no seu IP público;
    * o segundo alias exposto aos usuários internos para acesso ao console e apontando para o mesmo computador.
 
 * Firewall configurado para abrir SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 para Oracle, 5432 para PostgreSQL etc.) portas. Para obter mais informações, consulte [Configuração de rede](../../installation/using/network-configuration.md).
@@ -165,7 +165,7 @@ Siga as etapas abaixo:
 
    Para obter mais informações, consulte [Configuração do servidor do Campaign](../../installation/using/configuring-campaign-server.md).
 
-1. Copie o programa de configuração do console do cliente (**setup-client-7.XX**, **YYYY.exe** para v7 ou **setup-client-6.XX**, **YYYY.exe** para v6.1) para o **/datakit/nl/eng/jsp** pasta. [Saiba mais](../../installation/using/client-console-availability-for-windows.md).
+1. Copie o programa de configuração do console do cliente **setup-client-7.XXX.exe** para o **/datakit/nl/eng/jsp** pasta. [Saiba mais](../../installation/using/client-console-availability-for-windows.md).
 
 1. Siga o procedimento de integração do servidor Web (IIS, Apache) descrito nas seguintes seções:
 
