@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '565'
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+workflow-type: ht
+source-wordcount: '528'
 ht-degree: 100%
 
 ---
@@ -120,10 +120,6 @@ Siga as etapas abaixo para iniciar a configuração no Adobe Experience Manager:
 1. Configure a **replicação** para replicar da instância de criação do AEM para a instância de publicação do AEM.
 
    Para saber como configurar a replicação, consulte a [documentação](https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/replication.html) do Adobe Experience Manager.
-
-1. Instale o **FeaturePack** de integração na sua instância de criação e, em seguida, replique a instalação na sua instância de publicação. (Somente para versões 5.6.1 e 6.0 do AEM).
-
-   Para saber como instalar o FeaturePack, consulte a [documentação](https://helpx.adobe.com/br/experience-manager/aem-previous-versions.html) do Adobe Experience Manager.
 
 1. Conecte o Adobe Experience Manager ao Adobe Campaign configurando um **Serviço na Nuvem** dedicado.
 
