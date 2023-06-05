@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design, Dynamic Content
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1499'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -180,7 +180,7 @@ Você pode experimentar a entrega de emails dinâmicos registrando-se com os pro
 >
 >Apenas o Gmail e o Mail.ru são compatíveis com o formato AMP.
 
-Depois de testar com alguns endereços, é possível enviar emails do AMP para qualquer endereço do Gmail. Para fazer isso, é necessário fazer o registro no Google e aguardar a resposta. Siga as etapas apresentadas apresentadas na documentação do desenvolvedor do [Gmail](https://developers.google.com/gmail/ampemail/register). Após o registro bem-sucedido, você se torna um remetente autorizado.
+Depois de testar com alguns endereços, é possível enviar emails do AMP para qualquer endereço do Gmail. Para fazer isso, é necessário fazer o registro no Google e aguardar a resposta. Siga as etapas apresentadas apresentadas na documentação do desenvolvedor do [Gmail](https://developers.google.com/gmail/ampemail/register?hl=pt-br). Após o registro bem-sucedido, você se torna um remetente autorizado.
 
 Para enviar o emails AMP para endereços Mail.ru, siga os requisitos e as etapas listados na [documentação do desenvolvedor do Mail.ru](https://postmaster.mail.ru/amp/#howto) (**Caso seja uma seção de remetente** de email).
 
