@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1995'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,9 +54,9 @@ Por outro lado, as atualizações de versão geralmente vêm com alterações t�
 
 Por exemplo, usando as informações do servidor da captura de tela na seção anterior:
 
-* Uma atualização de build envolveria a mudança da build 9342 para qualquer build posterior a 9342. Por exemplo, v7.1 build 9342 para v7.1 build 9342
+* Uma atualização de build envolveria a mudança da build 9342 para qualquer build posterior a ela. Por exemplo, v7.1 build 9342 para v7.1 build 9342
 
-* Uma atualização de versão envolveria a mudança da versão 6 para qualquer versão mais recente.  Por exemplo: v6.1.1 build 8666 to v7.1 build 9342.
+* Uma atualização de versão envolveria a mudança da versão 6 para qualquer versão mais recente.  Por exemplo, v6.1.1 build 8666 para v7.1 build 9342.
 
 ## Devo fazer backup dos meus dados antes dessas atualizações?
 
@@ -98,7 +98,7 @@ O processo de atualização de build requer os seguintes recursos:
 
 ## Como posso me preparar para a atualização de build?
 
-Exporte qualquer trabalho que seja crítico e deva ser preservado em seus sistemas de desenvolvimento e armazenamento temporário.
+Exporte qualquer trabalho que seja crítico e deva ser preservado em seus sistemas de desenvolvimento e preparo.
 
 <!--For more information please [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
@@ -108,7 +108,7 @@ Identifique tempos de tráfego baixos ou de baixo volume que seriam ideais para 
 
 Revise nossa [lista de verificação de atualização de build abaixo](#check-list) e seus planos de teste e verifique se os recursos que podem executar esses testes estão disponíveis dentro de 24 a 48 horas da conclusão de uma atualização.
 
-Para obter mais informações, [consulte esta seção](../../production/using/build-upgrade.md).
+Para obter mais informações [consulte esta seção](../../production/using/build-upgrade.md).
 
 ## As atualizações de build podem ser realizadas à noite ou fora do horário comercial?
 
