@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -52,4 +52,4 @@ Além desses vídeos curtos e detalhados, você pode encontrar [cursos de treina
 
 ### Cursos da Experience League
 
-Você também pode visitar os [Cursos recomendados](https://experienceleague.adobe.com/#dashboard/learning) para o Adobe Campaign Classic: os cursos são coleções de lições especializadas que rapidamente ajudam a adquirir habilidades e conhecimento.
+Você também pode visitar os [Cursos recomendados](https://experienceleague.adobe.com/?lang=pt-BR#dashboard/learning) para o Adobe Campaign Classic: os cursos são coleções de lições especializadas que rapidamente ajudam a adquirir habilidades e conhecimento.
