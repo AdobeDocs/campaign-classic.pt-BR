@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
 workflow-type: tm+mt
 source-wordcount: '802'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -369,7 +369,7 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 
 WebView2 Runtime do Microsoft Edge a versão mais recente é obrigatória para o console do cliente do Campaign.
 
-Baixe o Microsoft Edge WebView2 no [Site do desenvolvedor Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_br).
+Baixe o Microsoft Edge WebView2 no [Site do desenvolvedor Microsoft](https://www.adobe.com/go/acc-ms-webview2-runtime-download).
 
 
 ## SDK móvel{#MobileSDK}

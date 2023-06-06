@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
 workflow-type: tm+mt
-source-wordcount: '1684'
-ht-degree: 100%
+source-wordcount: '1508'
+ht-degree: 96%
 
 ---
 
@@ -211,24 +211,24 @@ A partir da versão 20.2, o Adobe Campaign não é mais compatível com o seguin
 
 A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais compatível com os seguintes servidores FDA:
 
-* PostgreSQL 9.3. [Saiba mais](https://www.postgresql.org/support/versioning)
-* MySQL 5.5. [Saiba mais](https://www.fromdual.com/support-for-mysql-from-oracle)
-* DB2 9.5. [Saiba mais](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Teradata 14 - 14.1. [Saiba mais](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
+* PostgreSQL 9.3.
+* MySQL 5.5.
+* DB2 9.5.
+* Teradata 14 – 14.1.
 
-O Campaign Classic não é compatível com os seguintes servidores no FDA (Federated Data Access — Acesso Federado a Dados).
+O Campaign Classic não é compatível com os seguintes servidores no FDA (Federated Data Access — Acesso Federado a Dados). Use versões ou sistemas mais recentes.
 
-* DB2 UDB 9.5, 9.7. A versão mais recente do DB2 é compatível com o Federated Data Access (FDA). [Saiba mais](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i, 10G R2. Versões mais recentes do Oracle são compatíveis com o FDA (Federated Data Access — Acesso Federado a Dados). [Saiba mais](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* As versões do PostgreSQL até a versão 9.6 chegaram ao fim da vida útil. Versões mais recentes do PostgreSQL são compatíveis com o FDA (Federated Data Access — Acesso a Dados Federados). [Saiba mais](https://www.postgresql.org/support/versioning)
-* MSSQL 2000, 2005, 2008 R2. As versões mais recentes do SQL Server são compatíveis com o FDA (Federated Data Access — Acesso a Dados Federados). [Saiba mais](https://support.microsoft.com/pt-br/lifecycle/search/1044)
-* MySQL 5.1. Versões mais recentes do MySQL são compatíveis com o Federated Data Access (FDA). [Saiba mais](https://pt.wikipedia.org/wiki/InfiniDB)
-* O InfiniDB chegou ao fim da vida útil. [Saiba mais](https://www.mysql.com/support)
-* Teradata 13, 13.1. As versões mais recentes do Teradata são compatíveis com o Federated Data Access (FDA). [Saiba mais](https://www.info.teradata.com/download.cfm?ItemID=1007255)
-* Netezza 6.02, 7.0. O Netezza chegou ao fim da vida útil. [Saiba mais](https://pt.wikipedia.org/wiki/Netezza)
-* AsterData 5.0. O AsterData chegou ao fim da vida útil. [Saiba mais](https://pt.wikipedia.org/wiki/Aster_Data_Systems)
-* Sybase IQ 15.2, 15.4, 15.5 e Sybase ASE 15.0. Versões mais recentes do Sybase são compatíveis com o Federated Data Access (FDA). [Saiba mais](https://sites.google.com/site/dbatipsandtricks/time-tracker)
-* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. O Adobe Campaign Classic ainda oferecerá suporte às versões listadas do Hadoop via HiveSQL por meio do Federated Data Acces (FDA), mas essas versões são mescladas com: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
+* DB2 UDB 9.5, 9.7.
+* Oracle 9i, 10G R2.
+* As versões do PostgreSQL até a versão 9.6 chegaram ao fim da vida útil.
+* MSSQL 2000, 2005, 2008 R2.
+* MySQL 5.1.
+* O InfiniDB chegou ao fim da vida útil.
+* Teradata 13, 13.1.
+* Netezza 6.02, 7.0. O Netezza chegou ao fim da vida útil.
+* AsterData 5.0. O AsterData chegou ao fim da vida útil.
+* Sybase IQ 15.2, 15.4, 15.5 e Sybase ASE 15.0.
+* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. O Adobe Campaign Classic ainda é compatível com as versões listadas do Hadoop via HiveSQL por meio do Federated Data Access (FDA), mas essas versões são mescladas com: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
 
 **SERVIDOR RDBMS**
 
