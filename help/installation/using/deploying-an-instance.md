@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: d9976b904d116b1f4deb9fde7842ad64234c7c8a
 workflow-type: tm+mt
-source-wordcount: '3333'
-ht-degree: 6%
+source-wordcount: '3343'
+ht-degree: 5%
 
 ---
 
@@ -83,20 +83,20 @@ Indique os seguintes parâmetros:
 
   >[!NOTE]
   >
-  > Ao enviar emails do Adobe Campaign, a variável **Endereço do remetente** a caixa de correio não é monitorada e os usuários de marketing não podem acessá-la. O Adobe Campaign também não oferece a capacidade de responder automaticamente ou encaminhar emails recebidos nessa caixa de correio.
+  > Ao enviar emails do Adobe Campaign, a variável **Endereço do remetente** a caixa de correio não é monitorada e os usuários de marketing não podem acessá-la. O Adobe Campaign também não oferece a capacidade de responder automaticamente ou encaminhar emails recebidos nessa caixa de correio. Saiba mais sobre as Práticas recomendadas de capacidade de entrega [nesta documentação](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
 
 * **[!UICONTROL Reply address text]** : insira o nome usado quando o recipient clicar no **[!UICONTROL Reply]** botão.
 * **[!UICONTROL Reply address]** : insira o endereço de email que será usado quando o recipient clicar no **[!UICONTROL Reply]** no software cliente de email.
 
   >[!NOTE]
   >
-  >O objetivo da **Endereço de resposta** é quando você deseja que o destinatário responda a um endereço diferente do **Endereço do remetente**.  Esse endereço deve ser um endereço de email válido e estar vinculado a uma caixa de correio monitorada.  Esta caixa de correio deve ser hospedada pelo cliente.  Pode ser uma caixa de entrada de suporte, por exemplo, customer-care@customer.com, em que os emails são lidos e respondidos.
+  >O objetivo da **Endereço de resposta** é quando você deseja que o destinatário responda a um endereço diferente do **Endereço do remetente**.  Esse endereço deve ser um endereço de email válido, vinculado a uma caixa de correio monitorada e hospedado pelo cliente.  Pode ser uma caixa de entrada de suporte, por exemplo, customer-care@customer.com, em que os emails são lidos e respondidos.
 
 * **[!UICONTROL Error address]** : insira o endereço de email das mensagens com erros. Esse é o endereço técnico usado para lidar com emails devolvidos, incluindo emails recebidos pelo servidor do Adobe Campaign devido a endereços de destino inexistentes.
 
   >[!NOTE]
   >
-  > Esse endereço deve ser um endereço de email válido e estar vinculado a uma caixa de correio monitorada. Esta caixa de correio deve ser hospedada pelo cliente. Pode ser uma caixa de entrada de devolução, por exemplo, errors@customer.com.
+  > Esse endereço deve ser um endereço de email válido, vinculado a uma caixa de correio monitorada e hospedado pelo cliente. Pode ser uma caixa de entrada de devolução, por exemplo, errors@customer.com.
 
 
 Além disso, é possível especificar a variável **máscaras** autorizado para o endereço do remetente e o endereço de erro. Se necessário, essas máscaras podem ser separadas por vírgulas. Essa configuração é opcional. Quando os campos são inseridos, o Adobe Campaign verifica no momento do delivery (durante a análise, se o endereço não incluir nenhuma variável) se os endereços são válidos. Esse modo operacional garante que não sejam usados endereços que possam causar problemas de delivery. Os endereços de entrega devem ser configurados no servidor de entrega.
