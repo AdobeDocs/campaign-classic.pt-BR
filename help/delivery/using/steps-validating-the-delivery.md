@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 100%
@@ -106,6 +106,7 @@ Para acelerar o preparo do delivery, é possível marcar a opção **[!UICONTROL
 Ao ativar esta opção, o preparo do delivery é executado diretamente no banco de dados, o que pode acelerar significativamente a análise.
 
 Atualmente, essa opção está disponível somente quando as seguintes condições são atendidas:
+
 * O delivery deve ser um email. Por enquanto, os outros canais não são compatíveis.
 * O mid-sourcing ou roteamento externo não deve ser usado, apenas o tipo de roteamento de delivery em massa. É possível verificar o roteamento usado na guia **[!UICONTROL General]** do **[!UICONTROL Delivery properties]**.
 * Não é possível direcionar uma população proveniente de um arquivo externo. Para um único delivery, clique no link **[!UICONTROL To]** do **[!UICONTROL Email parameters]** e verifique se a opção **[!UICONTROL Defined in the database]** está selecionada. Para um delivery usado em um workflow, verifique se os recipients estão **[!UICONTROL Specified by the inbound event(s)]** na guia **[!UICONTROL Delivery]**.
@@ -136,7 +137,6 @@ Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda 
 >* Os modos de validação disponíveis estão detalhados em [Alterar o modo de aprovação](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* A configuração do target de prova é explicada em [Definir um target de prova específico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 >
-
 
 Para enviar uma prova, siga as etapas abaixo:
 

@@ -7,16 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3991'
+source-wordcount: '3993'
 ht-degree: 9%
 
 ---
 
 # Lista de opções do Campaign Classic{#configuring-campaign-options}
-
-
 
 A variável **[!UICONTROL Administration / Platform / Options]** permite configurar as opções do Adobe Campaign. Alguns deles são incorporados ao instalar o Campaign e outros podem ser adicionados manualmente quando necessário. As opções disponíveis variam de acordo com os pacotes instalados com sua instância.
 
@@ -26,7 +24,6 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
 >* As opções não listadas nesta página são somente internas e **não deve ser modificado**.
 >
 >* A modificação ou atualização das opções do Adobe Campaign pode ser executada somente por usuários especialistas.
-
 
 ## Entrega {#delivery}
 
@@ -147,11 +144,11 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultReplyToAddr</span> <br /> </td> 
-   <td> Endereço de email padrão "responder" no nível da instância usado para entrega de email, se deixado vazio pelo usuário.<br /> </td> 
+   <td> Endereço de email padrão "responder para" no nível da instância usado para entrega de email, se deixado vazio pelo usuário.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> Nome comum do cliente. Usado em algumas mensagens de aviso exibidas para os destinatários.<br /> "Você está recebendo esta mensagem porque entrou em contato com **** ou com uma empresa afiliada. Para não receber mais mensagens de *****".<br /> </td> 
+   <td> Nome comum do cliente. Usado em algumas mensagens de aviso exibidas para os destinatários.<br /> "Você está recebendo esta mensagem porque entrou em contato com uma ‘Organização’ ou empresa afiliada. Para não receber mais mensagens de "Organization"<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -159,7 +156,7 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span> <br /> </td> 
-   <td> O rótulo padrão do email "responder" no nível da instância usado para a entrega de email se deixado vazio pelo usuário.<br /> </td> 
+   <td> Rótulo de email padrão "responder para" no nível da instância usado para entrega de email, se deixado vazio pelo usuário.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 
