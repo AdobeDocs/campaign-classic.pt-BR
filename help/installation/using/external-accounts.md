@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 61%
@@ -126,9 +126,9 @@ Os seguintes canais podem ser configurados:
 
 A conta externa de roteamento de email é fornecida por padrão, adaptada à sua configuração.
 
-Como cliente local, você pode criar novas contas externas de roteamento ou atualizar parâmetros, conforme descrito abaixo. Essa configuração é reservada para usuários especialistas e pode afetar sua capacidade de delivery. Em caso de dúvidas, entre em contato com o Atendimento ao cliente da Adobe ou com o representante da Adobe.
+Como cliente local/híbrido, você pode criar novas contas externas de roteamento ou atualizar parâmetros, conforme descrito abaixo. Essa configuração é reservada para usuários especialistas e pode afetar sua capacidade de delivery. Em caso de dúvidas, entre em contato com o Atendimento ao cliente da Adobe ou com o representante da Adobe.
 
-* Você deve usar um **Mid-sourcing**, **Externo** roteamento, ou **Em massa** tipo de roteamento de entrega.
+* Você pode usar um **Mid-sourcing**, **Externo** roteamento, ou **Em massa** tipo de roteamento de entrega.
 
 * Para **Em massa** e **Mid-sourcing** modos de entrega, você poderá especificar seus parâmetros de marca na **Marcas** guia. Esses parâmetros são usados para substituir o [parâmetros padrão](../../installation/using/deploying-an-instance.md#email-channel-parameters) para **URL da mirror page** e **Endereço do erro** com configurações específicas à sua marca.
 

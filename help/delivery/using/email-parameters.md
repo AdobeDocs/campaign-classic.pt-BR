@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -61,19 +61,19 @@ Selecione o formato do email na seção inferior da janela:
 
 * **[!UICONTROL Use recipient preferences]** (modo padrão)
 
-   O formato da mensagem é definido de acordo com os dados armazenados no perfil do recipient e armazenado por padrão no campo **[!UICONTROL email format]** (@emailFormat). Se um recipient deseja receber mensagens em determinado formato, esse será o formato enviado. Se o campo não estiver preenchido, uma mensagem multipart-alternative será enviada (veja abaixo).
+  O formato da mensagem é definido de acordo com os dados armazenados no perfil do recipient e armazenado por padrão no campo **[!UICONTROL email format]** (@emailFormat). Se um recipient deseja receber mensagens em determinado formato, esse será o formato enviado. Se o campo não estiver preenchido, uma mensagem multipart-alternative será enviada (veja abaixo).
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-   A mensagem contém os dois formatos: texto e HTML. O formato exibido no recebimento depende da configuração do software de email do recipient (multipart-alternative).
+  A mensagem contém os dois formatos: texto e HTML. O formato exibido no recebimento depende da configuração do software de email do recipient (multipart-alternative).
 
-   >[!IMPORTANT]
-   >
-   >Essa opção inclui ambas as versões do documento. Portanto, isso afeta a taxa de delivery, porque o tamanho da mensagem é maior.
+  >[!IMPORTANT]
+  >
+  >Essa opção inclui ambas as versões do documento. Portanto, isso afeta a taxa de delivery, porque o tamanho da mensagem é maior.
 
 * **[!UICONTROL Send all messages in text format]**
 
-   A mensagem é enviada em formato de texto. O formato HTML não será enviado, mas usado somente para a mirror page quando o recipient clicar na mensagem.
+  A mensagem é enviada em formato de texto. O formato HTML não será enviado, mas usado somente para a mirror page quando o recipient clicar na mensagem.
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ Além do modo padrão, as seguintes opções também estão disponíveis:
 * **[!UICONTROL Do not generate the mirror page]**: nenhuma mirror page será gerada, mesmo se o link estiver presente no delivery.
 * **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: essa opção permite acessar o conteúdo da mirror page, com informações de personalização, na janela de log do delivery. Para fazer isso, após o fim do , clique na guia **[!UICONTROL Delivery]** Delivery e selecione a linha do recipient cuja mirror page você deseja exibir. Clique no link **[!UICONTROL Display the mirror page for this message...]**.
 
-   ![](assets/s_ncs_user_wizard_miror_page_link.png)
+  ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## Codificação de caracteres {#character-encoding}
 
@@ -117,7 +117,7 @@ Para fazer isso, selecione a opção **[!UICONTROL Force the encoding used for m
 
 A guia **[!UICONTROL SMTP]** dos parâmetros de delivery permite configurar a gestão de emails devolvidos.
 
-Por padrão, os emails devolvido são recebidos na caixa de erro padrão da plataforma, mas você pode definir um endereço de erro específico para o delivery.
+Por padrão, os emails devolvidos são recebidos no [caixa de erro padrão da plataforma](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails), mas você pode definir um endereço de erro específico para um delivery.
 
 Você também pode definir um endereço específico nessa tela para investigar os motivos para a devolução dos emails quando não puderem ser qualificados automaticamente pelo aplicativo. Para cada um desses campos, o ícone **Adicionar campos personalizados** permite adicionar parâmetros de personalização.
 

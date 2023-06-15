@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 84dc10d9f1979b7b9277fbc6837bc5ee9ab0e9dd
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
-source-wordcount: '3341'
-ht-degree: 5%
+source-wordcount: '3366'
+ht-degree: 6%
 
 ---
 
@@ -84,7 +84,7 @@ Indique os seguintes parâmetros:
 * **[!UICONTROL Reply address text]** : insira o nome usado quando o recipient clicar no **[!UICONTROL Reply]** botão.
 * **[!UICONTROL Reply address]** : insira o endereço de email que será usado quando o recipient clicar no **[!UICONTROL Reply]** no software cliente de email. O objetivo da **Endereço de resposta** é quando você deseja que o destinatário responda a um endereço diferente do **Endereço do remetente**.  Esse endereço deve ser um endereço de email válido, vinculado a uma caixa de correio monitorada e hospedado pelo cliente.  Pode ser uma caixa de correio de suporte, por exemplo, `customer-care@customer.com`, em que os emails são lidos e respondidos.
 
-* **[!UICONTROL Error address]** : insira o endereço de email das mensagens com erros. Esse é o endereço técnico usado para lidar com emails devolvidos, incluindo emails recebidos pelo servidor do Adobe Campaign devido a endereços de destino inexistentes. Esse endereço deve ser um endereço de email válido, vinculado a uma caixa de correio monitorada e hospedado pelo cliente. Pode ser uma caixa de entrada de devolução, por exemplo, `errors@customer.com`.
+* **[!UICONTROL Error address]** : insira o endereço de email das mensagens com erros. Esse é o endereço técnico usado para lidar com emails devolvidos, incluindo emails recebidos pelo servidor do Adobe Campaign devido a endereços de destino inexistentes. Esse endereço deve ser um endereço de email válido, vinculado a uma caixa de correio monitorada e hospedado pelo cliente. Pode ser uma caixa de entrada de devolução, por exemplo, `errors@customer.com`. Esse endereço pode ser alterado para um delivery ou nos templates do delivery, no **SMTP** das propriedades do delivery/template do delivery. [Saiba mais](../../delivery/using/email-parameters.md#managing-bounce-emails-managing-bounce-emails).
 
 
 Além disso, é possível especificar a variável **máscaras** autorizado para o endereço do remetente e o endereço de erro. Se necessário, essas máscaras podem ser separadas por vírgulas. Essa configuração é opcional. Quando os campos são inseridos, o Adobe Campaign verifica no momento do delivery (durante a análise, se o endereço não incluir nenhuma variável) se os endereços são válidos. Esse modo operacional garante que não sejam usados endereços que possam causar problemas de delivery. Os endereços de entrega devem ser configurados no servidor de entrega.
