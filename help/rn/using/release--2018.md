@@ -5,9 +5,9 @@ description: Saiba mais sobre as atualizações do Campaign Classic 2018
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '5385'
+source-wordcount: '5379'
 ht-degree: 97%
 
 ---
@@ -441,7 +441,7 @@ Para clientes existentes, as APIs de arquivo não podem mais acessar a pasta **c
  <tbody> 
   <tr> 
    <td> European General Data Protection Regulation (GDPR)<br /> </td> 
-   <td> <p>O GDPR é a nova lei de privacidade da União Europeia que concilia e moderniza os requisitos de proteção de dados, entrando em efeito em 25 de Maio de 2018. O GDPR aplica-se aos clientes do Adobe Campaign que coletam dados de residentes da UE.</p> <p>Além dos recursos de privacidade já disponíveis no Adobe Campaign (incluindo o gerenciamento de consentimento, as configurações de retenção de dados e as funções de usuários), aproveitamos a oportunidade, em função do nosso papel como Processador de Dados, para incluir recursos adicionais que ajudam o Controlador de Dados a estar de acordo com determinadas solicitações do GDPR:</p> 
+   <td> <p>O GDPR é a lei de privacidade da União Europeia (UE) que adequa e moderniza os requisitos de proteção de dados. O GDPR aplica-se aos clientes do Adobe Campaign que coletam dados de residentes da UE.</p> <p>Além dos recursos de privacidade já disponíveis no Adobe Campaign (incluindo o gerenciamento de consentimento, as configurações de retenção de dados e as funções de usuários), aproveitamos a oportunidade, em função do nosso papel como Processador de Dados, para incluir recursos adicionais que ajudam o Controlador de Dados a estar de acordo com determinadas solicitações do GDPR:</p> 
     <ul> 
      <li> <p>Direito de acesso: permite que o Titular de dados receba uma cópia de seus dados pessoais capturados pelos Controladores de dados, possivelmente incluindo dados armazenados no Adobe Campaign.</p> </li> 
      <li> <p>Direito de exclusão: permite que o Titular de dados apague seus dados pessoais capturados pelos Controladores de dados, possivelmente incluindo os dados armazenados no Adobe Campaign.</p> </li> 
