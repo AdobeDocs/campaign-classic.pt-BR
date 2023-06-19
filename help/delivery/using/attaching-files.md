@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '954'
+ht-degree: 93%
 
 ---
 
 # Anexar arquivos a um email{#attaching-files}
-
-
 
 ## Sobre anexos de email {#about-email-attachments}
 
@@ -33,6 +31,14 @@ Há dois casos possíveis:
 >[!NOTE]
 >
 >Esse tipo de configuração é geralmente executada nos templates do delivery. Para obter mais informações, consulte [Sobre templates](about-templates.md).
+
+## Medidas de proteção {#attachments-guardrails}
+
+Para evitar problemas de desempenho, as imagens incluídas nos emails não devem exceder 100 MB por padrão. Esse limite pode ser configurado no `NmsDelivery_MaxDownloadedImageSize` opção.
+
+A Adobe também recomenda limitar o tamanho e o número de arquivos anexados. Por padrão, você só pode adicionar um arquivo como anexo a um email. Esse limite pode ser configurado no `NmsDelivery_MaxRecommendedAttachments` opção.
+
+Saiba mais em [a lista de opções de Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Anexar um arquivo local {#attaching-a-local-file}
 
@@ -113,9 +119,7 @@ Para este tipo de anexo, sigas as seguintes etapas de configuração:
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
->[!NOTE]
->
->Para evitar problemas de desempenho, se incluir imagens baixadas em tempo real de um URL personalizado como anexo, cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [ lista das opções do Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
+
 
 ### Anexar um arquivo calculado {#attach-a-calculated-file}
 
@@ -182,6 +186,6 @@ A guia **[!UICONTROL Advanced]** permite definir opções avançadas em arquivos
 * Você pode definir opções de filtro para evitar o envio do arquivo anexado a todos os recipients. A opção **[!UICONTROL Enable filtering of recipients who will receive the attachment]** ativa um campo de entrada usado para definir um script de seleção de recipient, que deve ser inserido em JavaScript.
 * Você pode criar um script do nome do arquivo para personalizá-lo.
 
-   Insira seu texto na janela e use os campos de personalização disponíveis na lista suspensa. No exemplo a seguir, o nome do arquivo é personalizado para conter a data de hoje e o nome do recipient.
+  Insira seu texto na janela e use os campos de personalização disponíveis na lista suspensa. No exemplo a seguir, o nome do arquivo é personalizado para conter a data de hoje e o nome do recipient.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)
+  ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)

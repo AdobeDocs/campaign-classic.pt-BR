@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 100%
+source-wordcount: '1931'
+ht-degree: 94%
 
 ---
 
 # Definir o conteúdo do email {#defining-the-email-content}
-
-
 
 ## Remetente {#sender}
 
@@ -29,15 +27,14 @@ Para saber como inserir e usar campos de personalização, consulte a seção [S
 
 >[!NOTE]
 >
->* O endereço do remetente será usado para respostas por padrão.
->* Os parâmetros do cabeçalho não devem ficar vazios. Por padrão, eles contêm a entrada de valores ao configurar o assistente de implantação. Para obter mais informações, consulte o [Guia de Instalação](../../installation/using/deploying-an-instance.md).
+>* O endereço do remetente é usado para respostas por padrão.
+>* Os parâmetros do cabeçalho não devem ficar vazios. Por padrão, eles contêm a entrada de valores ao configurar o assistente de implantação. Saiba mais [nesta seção](../../installation/using/deploying-an-instance.md).
 >* O endereço do remetente é obrigatório para possibilitar o envio de um email (padrão RFC).
 >* O Adobe Campaign verifica a sintaxe dos endereços de email inseridos.
 
-
->[!IMPORTANT]
+>[!CAUTION]
 >
->No contexto das verificações implementadas pelos Provedores de Serviços de Internet (ISPs) para combater emails não solicitados (spam), a Adobe recomenda criar contas de email que correspondam aos endereços especificados para deliveries e respostas. Verifique com o administrador do sistema de mensagens.
+>Para evitar problemas de delivery, as contas de email que correspondem aos endereços especificados para deliveries e respostas devem existir e devem ser monitoradas. Verifique com o administrador do sistema.
 
 ## Assunto da mensagem {#message-subject}
 
@@ -71,45 +68,45 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
 * Para importar um conteúdo HTML, clique no botão **[!UICONTROL Open]**. Também é possível colar o código-fonte diretamente na subguia **[!UICONTROL Source]**.
 
-   Se estiver usando o [Editor de Conteúdo Digital](../../web/using/about-campaign-html-editor.md) (DCE), consulte [Seleção de um template de conteúdo](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  Se estiver usando o [Editor de Conteúdo Digital](../../web/using/about-campaign-html-editor.md) (DCE), consulte [Seleção de um template de conteúdo](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
-   >[!IMPORTANT]
-   >
-   >O conteúdo HTML deve ser criado antes, e depois importado para o Adobe Campaign. O editor de HTML não foi desenvolvido para criação de conteúdo.
+  >[!IMPORTANT]
+  >
+  >O conteúdo HTML deve ser criado antes, e depois importado para o Adobe Campaign. O editor de HTML não foi desenvolvido para criação de conteúdo.
 
-   A subguia **[!UICONTROL Preview]** permite visualizar a renderização de cada conteúdo para um recipient. Os campos de personalização e os elementos condicionais do conteúdo são substituídos pelas informações correspondentes para o perfil selecionado.
+  A subguia **[!UICONTROL Preview]** permite visualizar a renderização de cada conteúdo para um recipient. Os campos de personalização e os elementos condicionais do conteúdo são substituídos pelas informações correspondentes para o perfil selecionado.
 
-   Os botões da barra de ferramentas fornecem acesso aos parâmetros padrão de ações e formatação da página HTML.
+  Os botões da barra de ferramentas fornecem acesso aos parâmetros padrão de ações e formatação da página HTML.
 
-   ![](assets/s_ncs_user_wizard_email01_138.png)
+  ![](assets/s_ncs_user_wizard_email01_138.png)
 
-   Você pode inserir imagens em mensagens de um arquivo local ou de uma biblioteca de imagens no Adobe Campaign. Para fazer isso, clique no ícone **[!UICONTROL Image]** e selecione a opção apropriada.
+  Você pode inserir imagens em mensagens de um arquivo local ou de uma biblioteca de imagens no Adobe Campaign. Para fazer isso, clique no ícone **[!UICONTROL Image]** e selecione a opção apropriada.
 
-   ![](assets/s_ncs_user_wizard_email01_18.png)
+  ![](assets/s_ncs_user_wizard_email01_18.png)
 
-   As imagens da biblioteca podem ser acessadas através da pasta **[!UICONTROL Resources>Online>Public resources]** na árvore de pastas. Consulte também [Adicionar imagens](#adding-images).
+  As imagens da biblioteca podem ser acessadas através da pasta **[!UICONTROL Resources>Online>Public resources]** na árvore de pastas. Consulte também [Adicionar imagens](#adding-images).
 
-   O último botão na barra de ferramentas permite inserir campos de personalização.
+  O último botão na barra de ferramentas permite inserir campos de personalização.
 
-   >[!NOTE]
-   >
-   >O uso de campos de personalização é apresentado em [Sobre personalização](about-personalization.md).
+  >[!NOTE]
+  >
+  >O uso de campos de personalização é apresentado em [Sobre personalização](about-personalization.md).
 
-   As guias na parte inferior da página permitem exibir o código HTML da página que está sendo criada e exibir a renderização da mensagem com sua personalização. Para iniciar essa exibição, clique em **[!UICONTROL Preview]** e selecione um recipient usando o botão **[!UICONTROL Test personalization]** na barra de ferramentas. Você pode selecionar um recipient no(s) target(s) definido(s) ou escolher outro.
+  As guias na parte inferior da página permitem exibir o código HTML da página que está sendo criada e exibir a renderização da mensagem com sua personalização. Para iniciar essa exibição, clique em **[!UICONTROL Preview]** e selecione um recipient usando o botão **[!UICONTROL Test personalization]** na barra de ferramentas. Você pode selecionar um recipient no(s) target(s) definido(s) ou escolher outro.
 
-   ![](assets/s_ncs_user_wizard_email01_139.png)
+  ![](assets/s_ncs_user_wizard_email01_139.png)
 
-   Você pode validar a mensagem HTML. Também é possível visualizar o conteúdo do cabeçalho do email.
+  Você pode validar a mensagem HTML. Também é possível visualizar o conteúdo do cabeçalho do email.
 
-   ![](assets/s_ncs_user_wizard_email01_140.png)
+  ![](assets/s_ncs_user_wizard_email01_140.png)
 
 * Para importar um conteúdo de texto, clique no botão **[!UICONTROL Open]** ou na guia **[!UICONTROL Text Content]** para inserir o conteúdo da mensagem quando exibido no formato de texto. Use os botões da barra de ferramentas para acessar ações no conteúdo. O último botão permite inserir campos de personalização.
 
-   ![](assets/s_ncs_user_wizard_email01_141.png)
+  ![](assets/s_ncs_user_wizard_email01_141.png)
 
-   Já para o formato HTML, clique na guia **[!UICONTROL Preview]** na parte inferior da página para exibir a renderização da mensagem com sua personalização.
+  Já para o formato HTML, clique na guia **[!UICONTROL Preview]** na parte inferior da página para exibir a renderização da mensagem com sua personalização.
 
-   ![](assets/s_ncs_user_wizard_email01_142.png)
+  ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## Definir o conteúdo interativo {#amp-for-email-format}
@@ -118,7 +115,7 @@ O Adobe Campaign possibilita experimentar o novo formato interativo [AMP for ema
 
 Para obter mais informações, consulte [esta seção](defining-interactive-content.md).
 
-## Utilização de gerenciamento de conteúdo {#using-content-management}
+## Usar gestão de conteúdo {#using-content-management}
 
 O conteúdo da entrega pode ser definido por meio dos formulários de gerenciamento de conteúdo, diretamente no assistente de entrega. Para fazer isso, você deve consultar o template de publicação do gerenciamento de conteúdo que será usado na guia **[!UICONTROL Advanced]** das propriedades de delivery.
 
@@ -145,22 +142,29 @@ Uma guia adicional permite inserir conteúdo que será integrado e formatado aut
 
 Para personalizar a lista de emoticons, consulte esta [página](customizing-emoticon-list.md).
 
-## Adição de imagens {#adding-images}
+## Adicionar imagens {#adding-images}
 
 As entregas de email em formato HTML podem conter imagens. No assistente do delivery, você pode importar uma página HTML contendo imagens ou inserir imagens diretamente usando o editor de HTML pelo ícone **[!UICONTROL Image]**.
+
+
+### Medidas de proteção {#img-guardrails}
+
+Para evitar problemas de desempenho, as imagens incluídas nos emails não devem exceder 100 MB por padrão. Esse limite pode ser configurado no `NmsDelivery_MaxDownloadedImageSize` opção.
+
+Saiba mais em [a lista de opções de Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+
+### Tipos de imagens {#img-types}
 
 As imagens podem ser:
 
 * Uma imagem local ou de um servidor
 * Uma imagem armazenada na biblioteca de recursos públicos do Adobe Campaign
 
-   Os recursos públicos podem ser acessados por meio do nó **[!UICONTROL Resources > Online]** da hierarquia do Adobe Campaign. Elas são agrupadas em uma biblioteca e podem ser incluídas em mensagens de email, mas também podem ser usadas para campanhas ou tarefas, ou para gestão de conteúdo.
+  Os recursos públicos podem ser acessados por meio do nó **[!UICONTROL Resources > Online]** da hierarquia do Adobe Campaign. Elas são agrupadas em uma biblioteca e podem ser incluídas em mensagens de email, mas também podem ser usadas para campanhas ou tarefas, ou para gestão de conteúdo.
 
 * Um ativo compartilhado com a Adobe Experience Cloud. Consulte [esta seção](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
->[!IMPORTANT]
->
->Para incluir imagens nas mensagens de email usando o assistente do delivery, a instância do Adobe Campaign deve ser configurada para habilitar a gestão de recursos públicos. Esse procedimento pode ser executado no assistente de implantação. Consulte [esta seção](../../installation/using/deploying-an-instance.md) para obter mais informações sobre a configuração.
+### Inserir e gerenciar imagens {#manage-images}
 
 O assistente do delivery permite adicionar imagens locais ou armazenadas na biblioteca ao conteúdo de mensagens. Para fazer isso, clique no botão **[!UICONTROL Image]** na barra de ferramentas do conteúdo HTML.
 
@@ -188,14 +192,12 @@ Quando você abre conteúdo HTML com imagens incluídas no assistente do deliver
 
 >[!IMPORTANT]
 >
->* Os caminhos de acesso à imagem são modificados durante o upload manual ou ao enviar as mensagens.
+> Os URLs de imagem são modificados durante o upload manual ou ao enviar mensagens.
 > 
->* Para evitar problemas de desempenho, se você incluir imagens baixadas imediatamente de um URL personalizado como [anexo](attaching-files.md), cada tamanho de imagem não deve exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [ lista de opções do Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
 
+### Caso de uso: enviar uma mensagem com imagens {#uc-images}
 
-**Caso de uso: enviar uma mensagem com imagens**
-
-Veja a seguir um exemplo de delivery com quatro imagens:
+Veja abaixo um exemplo de delivery com quatro imagens:
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
@@ -253,23 +255,23 @@ Em seguida, configure os seguintes elementos para atender às suas necessidades:
 
    * Para o formato 1D, os seguintes tipos estão disponíveis no Adobe Campaign: Codabar, Code 128, GS1-128 (antigo EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 de 5, POSTNET e Royal Mail (RM4SCC).
 
-      Exemplo de um código de barras 1D:
+     Exemplo de um código de barras 1D:
 
-      ![](assets/barcode_insert_08.png)
+     ![](assets/barcode_insert_08.png)
 
    * Os tipos DataMatrix e PDF417 correspondem ao formato 2D.
 
-      Exemplo de um código de barras 2D:
+     Exemplo de um código de barras 2D:
 
-      ![](assets/barcode_insert_09.png)
+     ![](assets/barcode_insert_09.png)
 
    * Para inserir um código QR, selecione esse tipo e digite a taxa de correção de erro a ser aplicada. Essa taxa define a quantidade de informações repetidas e a tolerância à deterioração.
 
-      ![](assets/barcode_insert_06.png)
+     ![](assets/barcode_insert_06.png)
 
-      Exemplo de código QR:
+     Exemplo de código QR:
 
-      ![](assets/barcode_insert_12.png)
+     ![](assets/barcode_insert_12.png)
 
 1. Insira o tamanho do código de barras que deseja inserir no email: a configuração da escala permite aumentar ou reduzir o tamanho do código de barras, de x1 a x10.
 1. O campo **[!UICONTROL Value]** permite definir o valor do código de barras. Um valor pode corresponder a uma oferta especial e pode ser a função de um critério, ele pode ser o valor de um campo de banco de dados vinculado aos clientes.

@@ -5,10 +5,10 @@ description: Saiba como enviar emails transacionais com anexos individuais e/ou 
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 100%
+source-wordcount: '651'
+ht-degree: 89%
 
 ---
 
@@ -38,11 +38,13 @@ Nesse cenário, os anexos não são pré-criados, mas adicionados instantaneamen
 * Além disso, se o anexo estiver associado a uma transação (como no exemplo acima), talvez seja necessário que ele contenha dados dinâmicos gerados durante o processo do cliente.
 * Anexar arquivos PDF otimiza a segurança, pois é possível criptografá-los e enviá-los por HTTPS.
 
->[!NOTE]
->
->Para evitar problemas de desempenho, se você incluir imagens baixadas online de um URL personalizado como anexo, cada tamanho de imagem não deverá exceder 100.000 bytes por padrão. Esse limite recomendado pode ser configurado na [ lista das opções do Campaign Classic ](../../installation/using/configuring-campaign-options.md#delivery).
+## Recommendations e medidas de proteção {#important-notes}
 
-## Recomendações {#important-notes}
+Para evitar problemas de desempenho, as imagens incluídas nos emails não devem exceder 100 MB por padrão. Esse limite pode ser configurado no `NmsDelivery_MaxDownloadedImageSize` opção.
+
+A Adobe também recomenda limitar o tamanho e o número de arquivos anexados. Por padrão, você só pode adicionar um arquivo como anexo a um email. Esse limite pode ser configurado no `NmsDelivery_MaxRecommendedAttachments` opção.
+
+Saiba mais em [a lista de opções de Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Antes de implementar este cenário, leia atentamente as diretrizes abaixo:
 
