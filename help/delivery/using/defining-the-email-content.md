@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1943'
 ht-degree: 94%
 
 ---
@@ -149,7 +149,7 @@ As entregas de email em formato HTML podem conter imagens. No assistente do deli
 
 ### Medidas de proteção {#img-guardrails}
 
-Para evitar problemas de desempenho, as imagens incluídas nos emails não devem exceder 100 MB por padrão. Esse limite pode ser configurado no `NmsDelivery_MaxDownloadedImageSize` opção.
+Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 MB. Esse limite, definido por padrão, pode ser alterado de `NmsDelivery_MaxDownloadedImageSize` opção. No entanto, a Adobe recomenda que você evite imagens grandes em seus deliveries de email.
 
 Saiba mais em [a lista de opções de Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 

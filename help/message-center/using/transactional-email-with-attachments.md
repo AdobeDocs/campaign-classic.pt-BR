@@ -5,10 +5,10 @@ description: Saiba como enviar emails transacionais com anexos individuais e/ou 
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 89%
+source-wordcount: '663'
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ Nesse cenário, os anexos não são pré-criados, mas adicionados instantaneamen
 
 ## Recommendations e medidas de proteção {#important-notes}
 
-Para evitar problemas de desempenho, as imagens incluídas nos emails não devem exceder 100 MB por padrão. Esse limite pode ser configurado no `NmsDelivery_MaxDownloadedImageSize` opção.
+Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 MB. Esse limite, definido por padrão, pode ser alterado de `NmsDelivery_MaxDownloadedImageSize` opção. No entanto, a Adobe recomenda que você evite imagens grandes em seus deliveries de email.
 
 A Adobe também recomenda limitar o tamanho e o número de arquivos anexados. Por padrão, você só pode adicionar um arquivo como anexo a um email. Esse limite pode ser configurado no `NmsDelivery_MaxRecommendedAttachments` opção.
 
