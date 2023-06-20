@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1508'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -171,7 +171,7 @@ O Console do cliente do Adobe Campaign Classic não pode mais ser executado nos 
 
 * A partir da versão 22.1, o Adobe Campaign não será mais compatível com o CentOs 8.x (64 bits). O Linux CentOS 8 atingiu o fim da vida útil (EOL) em 31 de dezembro de 2021. [Saiba mais](https://www.centos.org/centos-linux-eol/).
 
-   Se você estava usando esse sistema operacional, adapte sua implementação de acordo. O CentOS 7.x (64 bits) e o RHEL 8.x/7.x (64 bits) ainda são compatíveis.
+  Se você estava usando esse sistema operacional, adapte sua implementação de acordo. O CentOS 7.x (64 bits) e o RHEL 8.x/7.x (64 bits) ainda são compatíveis.
 
 * A partir da versão 21.1.3, o Adobe Campaign não será mais compatível com o Debian 8.
 
@@ -216,11 +216,11 @@ A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais co
 * DB2 9.5.
 * Teradata 14 – 14.1.
 
-O Campaign Classic não é compatível com os seguintes servidores no FDA (Federated Data Access — Acesso Federado a Dados). Use versões ou sistemas mais recentes.
+O Campaign Classic não é compatível com os seguintes servidores no Federated Data Access (FDA). Use versões ou sistemas mais recentes.
 
 * DB2 UDB 9.5, 9.7.
 * Oracle 9i, 10G R2.
-* As versões do PostgreSQL até a versão 9.6 chegaram ao fim da vida útil.
+* As versões do PostgreSQL até a 9.6 chegaram ao fim da vida útil.
 * MSSQL 2000, 2005, 2008 R2.
 * MySQL 5.1.
 * O InfiniDB chegou ao fim da vida útil.
@@ -228,7 +228,7 @@ O Campaign Classic não é compatível com os seguintes servidores no FDA (Feder
 * Netezza 6.02, 7.0. O Netezza chegou ao fim da vida útil.
 * AsterData 5.0. O AsterData chegou ao fim da vida útil.
 * Sybase IQ 15.2, 15.4, 15.5 e Sybase ASE 15.0.
-* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. O Adobe Campaign Classic ainda é compatível com as versões listadas do Hadoop via HiveSQL por meio do Federated Data Access (FDA), mas essas versões são mescladas com: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
+* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. O Adobe Campaign Classic ainda oferecerá suporte às versões listadas do Hadoop via HiveSQL por meio do Federated Data Access (FDA), mas essas versões foram mescladas com: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
 
 **SERVIDOR RDBMS**
 
