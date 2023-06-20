@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2614'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -294,7 +294,7 @@ As regras padrão são as seguintes.
 
 Para instalações locais e instalações hospedadas/híbridas que usam o MTA do Campaign herdado, essas regras contêm a lista de strings de caracteres que podem ser retornadas por servidores remotos e que permitem qualificar o erro (**Permanente**, **Temporário** ou **Ignorado**).
 
-Quando um email falha, o servidor remoto retorna uma mensagem de devolução ao endereço especificado no [parâmetros da plataforma](../../installation/using/deploying-an-instance.md). O Adobe Campaign compara o conteúdo de cada email de rejeição nas strings da lista de regras e o atribui a um dos três [tipos de erro](#delivery-failure-types-and-reasons).
+Quando um email não é entregue, o servidor remoto envia uma mensagem de rejeição ao endereço especificado nos [parâmetros da plataforma](../../installation/using/deploying-an-instance.md). O Adobe Campaign compara o conteúdo de cada email rejeitado com as strings da lista de regras e atribui um dos três [tipos de erro](#delivery-failure-types-and-reasons).
 
 >[!NOTE]
 >
