@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '802'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -166,7 +166,6 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 >* O driver RDBMS deve corresponder à versão do servidor RDBMS.
 >
 >* O PostgreSQL é o RDBMS para ambientes hospedados.
-
 
 ## Conectores CRM{#CRMconnectors}
 
