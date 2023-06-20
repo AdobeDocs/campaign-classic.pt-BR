@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email, Email Design
 exl-id: 44634227-2340-49c4-b330-740c739ea551
 source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Portanto, você deve:
 
 >[!NOTE]
 >
->Deve-se considerar as limitações específicas para cada operador ao criar sua mensagem. Consulte a documentação do produto.
+>Limitações específicas a cada operador devem ser consideradas ao criar sua mensagem. Consulte a documentação do produto.
 
 
 ## Testar o conteúdo do email {#testing-the-email-content}
@@ -60,7 +60,7 @@ Na guia **[!UICONTROL Preview]** da janela de edição de conteúdo, ao clicar e
 * Verifique se o número de imagens na mensagem não excede o limite imposto pelo formato (20 imagens)
 * Verifique o tamanho total da mensagem (até 100kB)
 
-   ![](assets/deco-mail_06.png)
+  ![](assets/deco-mail_06.png)
 
 ### Executar regra de tipologia {#running-typology-rule}
 
