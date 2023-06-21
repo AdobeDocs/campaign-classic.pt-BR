@@ -6,10 +6,10 @@ title: Manual do Campaign Classic v7
 user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0f831817fc2e6b7b1d95a71f4ea08ec104268d11
+source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +24,7 @@ ht-degree: 100%
    + Versões anteriores {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
       + [2021](rn/using/release--2021.md)
-      + [2020](rn/using/release--2020.md)
-      + [2019](rn/using/release--2019.md)
-      + [2018](rn/using/release--2018.md)
+      + [2022](rn/using/release--2022.md)
    + [Recursos obsoletos](rn/using/deprecated-features.md)
    + [Matriz de compatibilidade](rn/using/compatibility-matrix.md)
 + Introdução {#getting-started}
