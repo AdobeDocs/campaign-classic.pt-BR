@@ -4,10 +4,10 @@ title: Nota técnica - Atualize seu ambiente para se conectar ao Adobe Campaign 
 description: Campaign — atualizações de IMS
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 12%
+source-wordcount: '579'
+ht-degree: 11%
 
 ---
 
@@ -37,15 +37,15 @@ Se você já atualizou, mas está usando uma versão antiga do Microsoft Interne
 
 * Como cliente local/híbrido, você precisa atualizar para uma das versões mais recentes listadas acima para se beneficiar do novo console do cliente e garantir uma transição contínua **antes de 30 de junho de 2021**.
 
-   A atualização para uma das novas versões listadas abaixo é obrigatória:
+  A atualização para uma das novas versões listadas abaixo é obrigatória:
 
    * Gold Standard 11. [Saiba mais](../../rn/using/gold-standard.md)
    * Campaign versão 21.1.3. [Saiba mais](../../rn/using/latest-release.md)
-   * Campaign versão 20.2.5. [Saiba mais](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-   * Campaign versão 20.1.4. [Saiba mais](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-   * Campaign versão 19.2.4. [Saiba mais](../../rn/using/release--2019.md#release-19-2-4-build-9082)
+   * Campaign versão 20.2.5.
+   * Campaign versão 20.1.4.
+   * Campaign versão 19.2.4.
 
-   Essas versões são fornecidas com um novo protocolo de conexão. A atualização é obrigatória para o servidor do Campaign e o Console do cliente: depois que todas as instâncias forem atualizadas, o Console do cliente precisará ser atualizado para essa versão, bem como para poder se conectar ao Campaign após **30 de junho de 2021**.
+  Essas versões são fornecidas com um novo protocolo de conexão. A atualização é obrigatória para o servidor do Campaign e o Console do cliente: depois que todas as instâncias forem atualizadas, o Console do cliente precisará ser atualizado para essa versão, bem como para poder se conectar ao Campaign após **30 de junho de 2021**.
 
 Além disso, verifique a atualização mais recente do seu [Versão do Windows](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), com **Internet Explorer 11** incorporada, o é instalado no computador de cada usuário.
 
@@ -62,13 +62,13 @@ Para verificar o modo de conexão, você pode:
 
 * Inicie o Console do cliente do Campaign e acesse as configurações de conexão da instância. Se a variável **Conectar-se com uma Adobe ID** for selecionada, você estará usando o Adobe IMS.
 
-   ![](../../integrations/using/assets/ims_1.png)
+  ![](../../integrations/using/assets/ims_1.png)
 
 ou
 
 * Inicie o Console do cliente do Campaign e verifique a janela de conexão. Se estiver se conectando com uma Adobe ID, como mostrado na tela abaixo, você está usando o IMS.
 
-   ![](../../integrations/using/assets/adobeID.png)
+  ![](../../integrations/using/assets/adobeID.png)
 
 **Mensagem de aviso de conexão**
 
@@ -85,6 +85,7 @@ Se você não atualizou sua versão do Internet Explorer, verá a seguinte mensa
 >[!NOTE]
 >
 >Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>
 
 ## Links úteis
 

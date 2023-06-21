@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 37%
+source-wordcount: '351'
+ht-degree: 36%
 
 ---
 
@@ -31,11 +31,11 @@ Se seu ambiente estiver sendo executado em uma das versões listadas abaixo, voc
 
 * Gold Standard 8 a 11. [Saiba mais](../../rn/using/gold-standard.md#gs-8)
 * Versões do Campaign 21.1.1 (build 9277) a 21.1.2 (build 9282). [Saiba mais](../../rn/using/latest-release.md)
-* Versões do Campaign 20.3.1 (compilação 9228) para 20.3.3 (compilação 9234). [Saiba mais](../../rn/using/release--2020.md#release-20-3)
-* Versões do Campaign 20.2.1 (build 9178) a 20.2.4 (build 9187). [Saiba mais](../../rn/using/release--2020.md#release-20-2)
-* Versões do Campaign 20.1.1 (build 9122) a 21.1.3 (build 9124). [Saiba mais](../../rn/using/release--2020.md#release-20-1)
-* Versões do Campaign 19.2.2 (build 9080) a 19.2.3 (build 9081). [Saiba mais](../../rn/using/release--2019.md#release-19-2)
-* Versões do Campaign 19.1.5 (build 9033) a 19.1.7 (build 9036). [Saiba mais](../../rn/using/release--2019.md#release-19-1)
+* Versões do Campaign 20.3.1 (compilação 9228) para 20.3.3 (compilação 9234).
+* Versões do Campaign 20.2.1 (build 9178) a 20.2.4 (build 9187).
+* Versões do Campaign 20.1.1 (build 9122) a 21.1.3 (build 9124).
+* Versões do Campaign 19.2.2 (build 9080) a 19.2.3 (build 9081).
+* Versões do Campaign 19.1.5 (build 9033) a 19.1.7 (build 9036).
 
 
 Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
@@ -59,6 +59,7 @@ Siga a etapa abaixo:
 >[!NOTE]
 >
 >A variável **config-`<instance>`.xml** o arquivo substitui o **serverConf.xml** configurações. Se a variável **signEmailLinks** está presente no  **config-`<instance>`.xml** (onde **instância** é o nome da sua instância), também deve ser ativado para **false**.
+>
 
 **Qual é o impacto?**
 
@@ -69,3 +70,4 @@ Quando a atualização estiver concluída, todos os links funcionarão conforme 
 >[!NOTE]
 >
 >Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>
