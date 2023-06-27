@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+source-git-commit: f38d9053a3817fabc196dfbbfc5fff67bf1a7b06
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 98%
@@ -16,8 +16,6 @@ ht-degree: 98%
 ---
 
 # Sobre a Adobe ID{#about-adobe-id}
-
-
 
 O Sistema de gerenciamento de identidades (IMS) da Adobe ajuda os administradores a criar e gerenciar o acesso do usuário a aplicativos e serviços. Para obter mais informações sobre tipos diferentes de Adobe IDs, consulte [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html).
 
@@ -43,8 +41,8 @@ e também:
 > * Campaign 19.2.4
 > * Campaign 19.1.8
 >
-> [!DNL :bulb:] [Saiba mais sobre atualizações de IMS](../../technotes/using/ims-updates.md)
->
+[Saiba mais sobre atualizações de IMS](../../technotes/using/ims-updates.md)
+>>
 
 ## Mais recursos
 
