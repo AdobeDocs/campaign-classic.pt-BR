@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 0bea34e2db2b54bdd2a6fed80b47d473c89f631e
+source-git-commit: 45bf9d76dc41fd8cecfaab3f258856861201db3f
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 5%
@@ -32,9 +32,9 @@ Revise os detalhes abaixo para entender o que é necessário para sua implementa
 
 >[!CAUTION]
 >
->O console do cliente do Campaign e o servidor de aplicativos do Campaign devem ser executados **na mesma versão do produto**. A Adobe também recomenda utilizar o **mesma compilação de produto**. Saiba como verificar as versões do cliente e do servidor do Campaign em [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>* O console do cliente do Campaign e o servidor de aplicativos do Campaign devem ser executados **na mesma versão do produto**. A Adobe também recomenda utilizar o **mesma compilação de produto**. Saiba como verificar as versões do cliente e do servidor do Campaign em [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 >
->O acesso à pasta de instalação em que o console está instalado deve ser limitado apenas ao usuário pretendido, garantindo que as permissões de gravação sejam restritas de maneira apropriada.
+>* O acesso à pasta de instalação em que o console está instalado deve ser limitado apenas ao usuário pretendido, garantindo que as permissões de gravação sejam restritas de maneira apropriada.
 
 
 
