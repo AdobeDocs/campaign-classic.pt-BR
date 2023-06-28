@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1943'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Para saber como inserir e usar campos de personalização, consulte a seção [S
 
 >[!CAUTION]
 >
->Para evitar problemas de delivery, as contas de email que correspondem aos endereços especificados para deliveries e respostas devem existir e devem ser monitoradas. Verifique com o administrador do sistema.
+>Para evitar problemas da capacidade de entrega, as contas de email que correspondem aos endereços especificados para entregas e respostas devem existir e precisam ser monitoradas. Verifique com o administrador do sistema.
 
 ## Assunto da mensagem {#message-subject}
 
@@ -149,9 +149,9 @@ As entregas de email em formato HTML podem conter imagens. No assistente do deli
 
 ### Medidas de proteção {#img-guardrails}
 
-Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 MB. Esse limite, definido por padrão, pode ser alterado de `NmsDelivery_MaxDownloadedImageSize` opção. No entanto, a Adobe recomenda que você evite imagens grandes em seus deliveries de email.
+Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 MB. Esse limite, definido por padrão, pode ser alterado na opção `NmsDelivery_MaxDownloadedImageSize`. No entanto, a Adobe recomenda fortemente evitar imagens grandes em entregas por email.
 
-Saiba mais em [a lista de opções de Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+Saiba mais na [lista de opções do Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ### Tipos de imagens {#img-types}
 
@@ -166,7 +166,7 @@ As imagens podem ser:
 
 ### Inserir e gerenciar imagens {#manage-images}
 
-O assistente do delivery permite adicionar imagens locais ou armazenadas na biblioteca ao conteúdo de mensagens. Para fazer isso, clique no botão **[!UICONTROL Image]** na barra de ferramentas do conteúdo HTML.
+O assistente de entrega permite adicionar imagens locais ou armazenadas na biblioteca ao conteúdo das mensagens. Para fazer isso, clique no botão **[!UICONTROL Image]** na barra de ferramentas do conteúdo HTML.
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -192,12 +192,12 @@ Quando você abre conteúdo HTML com imagens incluídas no assistente do deliver
 
 >[!IMPORTANT]
 >
-> Os URLs de imagem são modificados durante o upload manual ou ao enviar mensagens.
+> Os URLs das imagens são modificados durante o upload manual ou ao enviar as mensagens.
 > 
 
-### Caso de uso: enviar uma mensagem com imagens {#uc-images}
+### Caso de uso: envio de uma mensagem com imagens {#uc-images}
 
-Veja abaixo um exemplo de delivery com quatro imagens:
+Veja a seguir um exemplo de entrega com quatro imagens:
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
