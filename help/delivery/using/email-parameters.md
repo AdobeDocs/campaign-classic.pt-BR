@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '900'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -115,9 +115,9 @@ Para fazer isso, selecione a opção **[!UICONTROL Force the encoding used for m
 
 ## Gerenciamento de emails rejeitados {#managing-bounce-emails}
 
-A guia **[!UICONTROL SMTP]** dos parâmetros de delivery permite configurar a gestão de emails devolvidos.
+A guia **[!UICONTROL SMTP]** dos parâmetros de entrega permite configurar a gestão de emails devolvidos.
 
-Por padrão, os emails devolvidos são recebidos no [caixa de erro padrão da plataforma](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails), mas você pode definir um endereço de erro específico para um delivery.
+Por padrão, os emails devolvidos são recebidos na [caixa de erro padrão da plataforma](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails), mas é possível definir um endereço de erros específico para uma entrega.
 
 Você também pode definir um endereço específico nessa tela para investigar os motivos para a devolução dos emails quando não puderem ser qualificados automaticamente pelo aplicativo. Para cada um desses campos, o ícone **Adicionar campos personalizados** permite adicionar parâmetros de personalização.
 
