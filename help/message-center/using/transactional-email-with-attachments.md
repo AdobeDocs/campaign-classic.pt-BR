@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -40,11 +40,11 @@ Nesse cenário, os anexos não são pré-criados, mas adicionados instantaneamen
 
 ## Recommendations e medidas de proteção {#important-notes}
 
-Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 MB. Esse limite, definido por padrão, pode ser alterado de `NmsDelivery_MaxDownloadedImageSize` opção. No entanto, a Adobe recomenda que você evite imagens grandes em seus deliveries de email.
+Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 MB. Esse limite, definido por padrão, pode ser alterado na opção `NmsDelivery_MaxDownloadedImageSize`. No entanto, a Adobe recomenda fortemente evitar imagens grandes em entregas por email.
 
-A Adobe também recomenda limitar o tamanho e o número de arquivos anexados. Por padrão, você só pode adicionar um arquivo como anexo a um email. Esse limite pode ser configurado no `NmsDelivery_MaxRecommendedAttachments` opção.
+A Adobe também recomenda limitar o tamanho e o número de arquivos anexados. Por padrão, só é possível adicionar um arquivo como anexo a um email. Esse limite pode ser configurado na opção `NmsDelivery_MaxRecommendedAttachments`.
 
-Saiba mais em [a lista de opções de Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+Saiba mais na [lista de opções do Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Antes de implementar este cenário, leia atentamente as diretrizes abaixo:
 
