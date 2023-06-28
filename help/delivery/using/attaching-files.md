@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
 source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '966'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Há dois casos possíveis:
 
 ## Medidas de proteção {#attachments-guardrails}
 
-Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 MB. Esse limite, definido por padrão, pode ser alterado de `NmsDelivery_MaxDownloadedImageSize` opção. No entanto, a Adobe recomenda que você evite imagens grandes em seus deliveries de email.
+Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 MB. Esse limite, definido por padrão, pode ser alterado na opção `NmsDelivery_MaxDownloadedImageSize`. No entanto, a Adobe recomenda fortemente evitar imagens grandes em entregas por email.
 
-A Adobe também recomenda limitar o tamanho e o número de arquivos anexados. Por padrão, você só pode adicionar um arquivo como anexo a um email. Esse limite pode ser configurado no `NmsDelivery_MaxRecommendedAttachments` opção.
+A Adobe também recomenda limitar o tamanho e o número de arquivos anexados. Por padrão, só é possível adicionar um arquivo como anexo a um email. Esse limite pode ser configurado na opção `NmsDelivery_MaxRecommendedAttachments`.
 
-Saiba mais em [a lista de opções de Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+Saiba mais na [lista de opções do Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Anexar um arquivo local {#attaching-a-local-file}
 
