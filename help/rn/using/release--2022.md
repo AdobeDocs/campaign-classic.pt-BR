@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Versões do Campaign Classic 2022
-description: Saiba mais sobre as atualizações do Campaign Classic 2022
+description: Saiba mais sobre as versões do Campaign Classic 2022
 feature: Overview
 role: User
 level: Beginner
