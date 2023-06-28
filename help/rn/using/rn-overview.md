@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
-workflow-type: ht
-source-wordcount: '933'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 97%
 
 ---
 
@@ -24,15 +24,26 @@ O Adobe Campaign Classic lança periodicamente atualizações de produtos que tr
 
 Cada nova build vem com um status identificado por uma cor nas [Notas de versão](latest-release.md).
 
-![](assets/do-not-localize/green3.png) **Disponibilidade geral** (GA) - Build estável mais recente, validado na produção e recomendado pela Adobe.
 
-![](assets/do-not-localize/limited3.png) **Disponibilidade limitada** (DL) - somente instalação sob demanda.
+| Status | Descrição |
+|---|---|
+| [!BADGE Disponibilidade geral]{type=Positive} | Compilação estável mais recente, validada na produção e recomendada pelo Adobe. |
+| [!BADGE Disponibilidade limitada]{type=Neutral} | implantação somente sob demanda. |
+| [!BADGE Candidato a lançamento]{type=Informative} | Última build com novos recursos. |
+| [!BADGE Não está mais disponível]{type=Caution} | Nenhuma implantação. Nenhuma correção de erro. Recomenda-se a atualização para um build mais recente. |
+| [!BADGE Obsoleto]{type=negative} | Nenhuma implantação. Nenhuma correção de erro. As implementações atuais devem ser atualizadas. |
 
-![](assets/do-not-localize/blue3.png) **Versão candidata** (VC): build mais recente com novos recursos.
+<!--
+![](assets/do-not-localize/green3.png) **General Availability** (GA) - Latest stable build, validated in production, and recommended by Adobe. 
 
-![](assets/do-not-localize/orange3.png) **Não está mais disponível** - Nenhuma implantação. Nenhuma correção de erro. Recomenda-se a atualização para um build mais recente.
+![](assets/do-not-localize/limited3.png) **Limited Availability** (LA) - On-demand deployment only.
 
-![](assets/do-not-localize/red3.png) **Obsoleto** - Nenhuma implantação. Nenhuma correção de erro. As implementações atuais devem ser atualizadas.
+![](assets/do-not-localize/blue3.png) **Release Candidate** (RC) - Latest build with new capabilities.
+
+![](assets/do-not-localize/orange3.png) **No longer available** - No deployment. No bug fix. Update to a newer build is recommended.
+
+![](assets/do-not-localize/red3.png) **Deprecated** - No deployment. No bug fix. Existing implementations must be upgraded.
+-->
 
 ## Ciclo da versão{#rn-cycle}
 

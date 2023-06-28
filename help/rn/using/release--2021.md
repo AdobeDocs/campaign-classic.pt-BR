@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: a06623611ff3f8d9dfb5d498e01686e12a924923
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '2545'
+source-wordcount: '2595'
 ht-degree: 100%
 
 ---
@@ -19,8 +19,11 @@ ht-degree: 100%
 
 >[!CAUTION]
 >Use o menu **[!UICONTROL Help > About...]** para verificar sua [versão e número de build](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) do Adobe Campaign. No entanto, observe que para todas as builds entre 9277 e 9343 listadas nesta página, o número da versão mostra 7.0 em vez de 7.1.
+> 
 
-### ![](assets/do-not-localize/limited_2.png) Versão 21.1.4 – Build 9343 {#release-21-1-4-build-9343}
+### Versão 21.1.4 - Build 9343 {#release-21-1-4-build-9343}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _8 de outubro de 2021_
 
@@ -32,7 +35,9 @@ _8 de outubro de 2021_
 
 * Correção do erro “A afinidade de IP xxx não foi encontrada no mid server xxx” que podia ocorrer no envio de uma entrega ao usar mais de uma afinidade de IP em uma instância de multi mid-sourcing. (NEO-37514)
 
-### ![](assets/do-not-localize/limited_2.png) Versão 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
+### Versão 21.1.4 - Build 9342 {#release-21-1-4-build-9342}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _7 de setembro de 2021_
 
@@ -66,7 +71,9 @@ _7 de setembro de 2021_
 * Correção de um problema que impedia o uso de variáveis em uma atividade de fluxo de trabalho de **Enriquecimento** quando a transição recebida era de uma fonte de dados FDA.
 * Correção de um problema que poderia resultar em URLs inválidos em mensagens de email.
 
-### ![](assets/do-not-localize/limited_2.png) Versão 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
+### Versão 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _5 de junho de 2021_
 
@@ -222,14 +229,18 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 * Correção de um problema que impedia o envio de uma entrega com um grupo de provas devido a um mecanismo de associação específico que falhava na personalização da entrega. (NEO-14391)
 * Correção de um problema de falha ao enviar um alerta com a atividade de alerta se uma consulta e uma atividade de enriquecimento tivessem direcionando a tabela de entrega. (NEO-25157)
 
-### ![](assets/do-not-localize/red_2.png) Versão 21.1.2 – Build 9282 {#release-21-1-2-build-9282}
+### Versão 21.1.2 - Build 9282 {#release-21-1-2-build-9282}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _15 de abril de 2021_
 
 * O gerenciamento de senhas foi aprimorado para otimizar a memória.
 * Correção de um problema que poderia causar falhas de MTA.
 
-### ![](assets/do-not-localize/red_2.png) Versão 21.1.1 – Build 9277 {#release-21-1-1-build-9277}
+### Versão 21.1.1 - Build 9277 {#release-21-1-1-build-9277}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _22 de fevereiro de 2021_
 

@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,9 @@ Encontre nesta página as notas de versão e a matriz de compatibilidade para ve
 ## Notas de versão [!DNL Gold Standard] 
 
 
-### ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] versão 12{#gs-12}
+### [!DNL Gold Standard] versão 12{#gs-12}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _7 de setembro de 2021_
 
@@ -38,7 +40,9 @@ A build 9032@99a3894 inclui as seguintes correções:
 * O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados à forma como as ferramentas de terceiros (clientes de email, navegadores de Internet etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
 * Correção de um problema com seletores de data que poderia resultar na exibição de uma mensagem de erro de bloqueador por parte de um console. (NEO-36345)
 
-### ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] versão 11{#gs-11}
+### [!DNL Gold Standard] versão 11{#gs-11}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _14 de abril de 2021_
 
@@ -86,7 +90,9 @@ O build 9032@d3b452f inclui os seguintes aprimoramentos e correções:
 
 * Correção de um problema que resultava em falha em fluxos de trabalho ao executar uma atividade de **Enriquecimento**. (NEO-17338)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 10{#gs-10}
+### [!DNL Gold Standard] versão 10{#gs-10}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _7 de julho de 2020_
 
@@ -98,7 +104,9 @@ Correção de um problema que impedia o funcionamento do rastreamento quando o r
 >
 >Recomendamos que você atualize o console do cliente com o disponível nesta versão. Consulte [esta página](../../installation/using/installing-the-client-console.md)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 9{#gs-9}
+### [!DNL Gold Standard] versão 9{#gs-9}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _22 de junho de 2020_
 
@@ -118,7 +126,9 @@ As seguintes correções estão relacionadas ao mecanismo de segurança do link 
 
 
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 8{#gs-8}
+### [!DNL Gold Standard] versão 8{#gs-8}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _29 de abril de 2020_
 
@@ -143,7 +153,9 @@ A build 9032@3a9dc9c inclui as seguintes correções:
 * Correção de uma regressão que resulta em falha do workflow de limpeza.
 * Correção de uma regressão menor nos logs de workflow de limpeza.
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 6{#gs-6}
+### [!DNL Gold Standard] versão 6{#gs-6}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _9 de março de 2020_
 
@@ -151,7 +163,9 @@ A build 9032@19f73c5 inclui a seguinte correção:
 
 * Correção de um problema com a conta externa que usa o FTP sobre SSL. (NEO-20498)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 5{#gs-5}
+### [!DNL Gold Standard] versão 5{#gs-5}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _17 de dezembro de 2019_
 
@@ -159,7 +173,9 @@ A build 9032@d6b8062 inclui a seguinte correção:
 
 * Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, Twitter). (NEO-19595)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 4{#gs-4}
+### [!DNL Gold Standard] versão 4{#gs-4}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _11 de dezembro de 2019_
 
@@ -167,7 +183,9 @@ A build 9032@bc4a935 inclui a seguinte correção:
 
 * Correção de um problema de desempenho ao enviar mensagens com um banco de dados MSSQL. (NEO-17558)
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 3{#gs-3}
+### [!DNL Gold Standard] versão 3{#gs-3}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _20 de novembro de 2019_
 
@@ -177,7 +195,9 @@ A build 9032@3468c7b inclui as seguintes correções:
 * Correção de um problema ao exibir relatórios cumulativos em várias entregas. (NEO-18165)
 * Correção de um problema que poderia bloquear ou fazer o servidor web travar.
 
-### ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard] versão 2{#gs-2}
+### [!DNL Gold Standard] versão 2{#gs-2}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _19 de setembro de 2019_
 
@@ -186,7 +206,9 @@ A build 9032@cee805c inclui as seguintes correções:
 * Correção de um problema ao usar o Conector CRM para Salesforce. (NEO-17712)
 * Correção de um problema de índice que causava problemas de desempenho ao enviar mensagens transacionais.
 
-### ![](assets/do-not-localize/red_2.png) Versão 19.1.4 – Build 9032{#release-19-1-4-build-9032}
+### Versão 19.1.4 - Build 9032{#release-19-1-4-build-9032}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _13 de agosto de 2019_
 
@@ -207,6 +229,7 @@ Esta seção lista todos os sistemas e componentes compatíveis com builds 19.1 
 >Salvo indicação em contrário, todas as versões secundárias são compatíveis.
 >
 >O Adobe Campaign Classic é compatível com todos os sistemas e ferramentas listados nesta página. À medida que versões específicas desses sistemas e ferramentas de terceiros atingem o fim da vida útil (EOL) com seus respectivos criadores, o Adobe Campaign não será mais compatível com essas versões, e elas serão removidas de nossa matriz de compatibilidade na versão subsequente do produto. Verifique se você está usando as versões compatíveis dos sistemas listadas na matriz de compatibilidade para evitar problemas.
+>
 
 ### Sistemas operacionais{#OperatingSystems-gs}
 

@@ -5,16 +5,18 @@ description: Saiba mais sobre as atualizações do Campaign Classic 2022
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2025'
+ht-degree: 100%
 
 ---
 
 # Versões de 2022{#release-2022}
 
-## ![](assets/do-not-localize/orange_2.png) Versão 7.3.1 - Build 9352 {#release-7-3-1}
+## Versão 7.3.1 - Build 9352 {#release-7-3-1}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _1 de julho de 2022_
 
@@ -82,7 +84,9 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 * Correção de um problema que impedia o upload de uma imagem no modo de bloco de um servidor externo durante a preparação da mensagem. (NEO-40307)
 * Correção de um problema que poderia resultar no envio das entregas para um número maior de destinatários do que o esperado. (NEO-45108)
 
-## ![](assets/do-not-localize/green_2.png) Versão 7.2.2 - Build 9349 {#release-7-2-2}
+## Versão 7.2.2 - Build 9349 {#release-7-2-2}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _1º de março de 2022_
 
@@ -104,7 +108,9 @@ _1º de março de 2022_
 * Correção de um problema que resultava em erro ao atualizar o fluxo de trabalho da capacidade de delivery ao ter mais de 1.000 broadlogs ao mesmo tempo. (NEO-40276)
 * Correção de um problema que impedia que os indicadores de entrega de taxa de abertura e de taxa de cliques fossem atualizados automaticamente. (NEO-43253)
 
-## ![](assets/do-not-localize/limited_2.png) Versão 7.2.1 - Build 9346 {#release-7-2-1}
+## Versão 7.2.1 - Build 9346 {#release-7-2-1}
+
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _10 de janeiro de 2022_
 
