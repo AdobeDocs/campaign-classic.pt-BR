@@ -7,16 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 2f6a5884e47ce10ce3c281a4377ee37522c52131
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 100%
+source-wordcount: '257'
+ht-degree: 91%
 
 ---
 
 # Trabalhar com acionadores do Campaign e da Experience Cloud{#about-adobe-experience-triggers}
-
-
 
 [!DNL Triggers] é uma integração entre o Adobe Campaign e o Adobe Analytics usando o pipeline. O pipeline recupera as ações ou acionadores dos usuários do seu site. O abandono do carrinho é um exemplo de acionador. Os acionadores são processados no Adobe Campaign para enviar emails em tempo quase real.
 
@@ -28,6 +26,8 @@ O [!DNL Triggers] executa ações de marketing em um curto intervalo de tempo ap
 
 Ele permite integrações mais ágeis, pois a configuração é mínima e não há envolvimento de terceiros.
 Também aceita grandes volumes de tráfego sem afetar o desempenho das atividades de marketing. Como exemplo, a integração pode processar um milhão de acionadores por hora.
+
+![](assets/do-not-localize/book.png) Saiba como [criar um acionador Experience Cloud](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html) e identificar, definir e monitorar comportamentos de consumidores críticos.
 
 ## Arquitetura de [!DNL Triggers] {#triggers-architecture}
 
