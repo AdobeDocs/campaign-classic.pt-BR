@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
 source-git-commit: 2f6a5884e47ce10ce3c281a4377ee37522c52131
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ O [!DNL Triggers] executa ações de marketing em um curto intervalo de tempo ap
 Ele permite integrações mais ágeis, pois a configuração é mínima e não há envolvimento de terceiros.
 Também aceita grandes volumes de tráfego sem afetar o desempenho das atividades de marketing. Como exemplo, a integração pode processar um milhão de acionadores por hora.
 
-![](assets/do-not-localize/book.png) Saiba como [criar um acionador Experience Cloud](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html) e identificar, definir e monitorar comportamentos de consumidores críticos.
+![](assets/do-not-localize/book.png) Saiba como [criar um acionador da Experience Cloud](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=pt-BR) e identificar, definir e monitorar comportamentos críticos de consumidores.
 
 ## Arquitetura de [!DNL Triggers] {#triggers-architecture}
 
