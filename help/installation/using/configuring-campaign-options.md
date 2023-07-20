@@ -2,14 +2,14 @@
 product: campaign
 title: Configuração das opções do Campaign
 description: Saiba como configurar as opções do Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 942d44104ae56e9334f42f10751979ce4f4a714d
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '4011'
 ht-degree: 9%
 
 ---
@@ -72,11 +72,11 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_LogsPerTransac</span> <br /> </td> 
-   <td> Número de BroadLogs criados para uma entrega de uma vez.<br /> </td> 
+   <td> Tamanho mínimo do lote (número de linhas) para a inserção de broadLogs durante a preparação de um delivery.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span> <br /> </td> 
-   <td> Inserção (na tabela) de logs (broadLogs) por transações : número de linhas a serem processadas por lote.<br /> </td> 
+   <td> Limite de duração do lote (número de milissegundos) sob o qual o tamanho do lote para a inserção de broadLogs é dobrado durante uma preparação de delivery.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
@@ -740,11 +740,11 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> O servidor Adobe Target usado para a integração. Essa opção é selecionada por padrão. Esse valor corresponde ao Domain Server do Adobe Target, seguido pelo valor /m2. Por exemplo: tt.omtrdc.net/m2.<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> Consulte esta seção</a>.<br /> </td> 
+   <td> O servidor Adobe Target usado para a integração. Essa opção é selecionada por padrão. Esse valor corresponde ao Domain Server do Adobe Target, seguido pelo valor /m2. Por exemplo: tt.omtrdc.net/m2.<br /> Consulte <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">esta seção</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Nome da organização do Adobe Target. Esse valor corresponde ao nome do Client do Adobe Target.<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> Consulte esta seção</a>.<br /> </td> 
+   <td> Nome da organização do Adobe Target. Esse valor corresponde ao nome do Client do Adobe Target.<br /> Consulte <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">esta seção</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
