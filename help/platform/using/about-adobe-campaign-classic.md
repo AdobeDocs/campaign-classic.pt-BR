@@ -2,21 +2,19 @@
 product: campaign
 title: Sobre o Adobe Campaign Classic
 description: Conheça os principais recursos, a interface e as diretrizes globais
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 99%
 
 ---
 
 # Introdução ao Campaign Classic{#about-adobe-campaign-classic}
-
-
 
 Para oferecer alto grau de envolvimento e ótimas experiências, as marcas devem criar jornadas de cliente consistentes em todos os pontos de contato. Agora, os profissionais de marketing podem projetar, planejar, executar, gerenciar e otimizar campanhas de marketing em vários canais que oferecem alto retorno sobre o investimento e estimulam a fidelização dos clientes.
 
@@ -27,7 +25,6 @@ O Adobe Campaign permite coordenar a criação de campanhas de marketing convers
 >* Os materiais de ajuda nesta coleção se aplicam ao Campaign Classic v7 em sua [build mais recente](../../rn/using/latest-release.md). Um selo específico está disponível quando uma seção também se aplica ao Campaign v8.
 >
 >* A documentação do Adobe Campaign v8 está disponível [aqui](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=pt-BR).
-
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra as principais características e recursos no vídeo](#video)
 

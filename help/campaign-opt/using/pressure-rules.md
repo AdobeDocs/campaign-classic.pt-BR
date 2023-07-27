@@ -2,13 +2,13 @@
 product: campaign
 title: Regras de pressão
 description: Regras de pressão
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
 workflow-type: tm+mt
-source-wordcount: '3285'
-ht-degree: 100%
+source-wordcount: '3266'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,6 @@ Para criar e configurar uma regra de tipologia **[!UICONTROL Pressure]**, siga e
    >
    >Os deliveries agendados só serão levados em conta se a opção **[!UICONTROL Take the deliveries into account in the provisional calendar]** for selecionada. Para obter mais informações, consulte [Definição do período](#setting-the-period).
    >
-   >Essa opção não está disponível no Campaign v8.
 
 1. Defina o método para calcular o número mais alto de mensagens.
 
@@ -87,7 +86,8 @@ Para criar e configurar uma regra de tipologia **[!UICONTROL Pressure]**, siga e
    * A seção superior desta guia permite restringir os recipients relacionados.
    * A seção inferior desta guia permite que você filtre as mensagens a serem contadas.
 
-      No exemplo a seguir, somente os recipients salvos na pasta **NewContacts** são considerados, sendo relacionados os deliveries que começam com **Newsletter**.
+     No exemplo a seguir, somente os recipients salvos na pasta **NewContacts** são considerados, sendo relacionados os deliveries que começam com **Newsletter**.
+
    ![](assets/campaign_opt_create_a_rule_05.png)
 
 1. A guia **[!UICONTROL Typologies]** permite visualizar as tipologias de campanha que aplica essa regra ou vincular a regra a uma ou mais tipologias existentes. Para obter mais informações, consulte [Aplicação de tipologias](about-campaign-typologies.md#applying-typologies).
@@ -157,9 +157,6 @@ Para restringir os envios realizados em um período de duas semanas, é possíve
 ou
 
 1. Digite **7d** no campo **[!UICONTROL Period considered]** E verifique a **[!UICONTROL Take the deliveries into account in the provisional calendar]** opção: são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery nos quais a regra seja aplicada.
-
-   >[!AVAILABILITY]
-   >Esse método não está disponível no Campaign v8.
 
 A data de início do período depende de como o banco de dados está configurado.
 
@@ -276,15 +273,15 @@ Durante a análise de delivery, os recipients do delivery são excluídos, se ap
 
 * Visualizar o resultado da análise:
 
-   ![](assets/campaign_opt_pressure_sample_1_8.png)
+  ![](assets/campaign_opt_pressure_sample_1_8.png)
 
 * Edite o e clique na guia **[!UICONTROL Delivery]** Delivery e na subguia **[!UICONTROL Exclusions]**:
 
-   ![](assets/campaign_opt_pressure_sample_1_9.png)
+  ![](assets/campaign_opt_pressure_sample_1_9.png)
 
 * Clique na guia **[!UICONTROL Audit]** e, em seguida, na subguia **[!UICONTROL Causes of exclusions]** para exibir o número de exclusões e as regras de tipologia aplicadas:
 
-   ![](assets/campaign_opt_pressure_sample_1_10.png)
+  ![](assets/campaign_opt_pressure_sample_1_10.png)
 
 ### Calcular o peso do delivery com base no comportamento {#calculating-the-delivery-weight-based-on-behavior}
 
@@ -333,9 +330,6 @@ Primeiro, configure a regra de pressão.
    ![](assets/campaign_opt_pressure_example_1.png)
 
    São considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery. Para obter mais informações, consulte [Definir o período](#setting-the-period).
-
-   >[!AVAILABILITY]
-   >Os deliveries agendados não podem ser considerados no Campaign v8.
 
 1. Na guia **[!UICONTROL Typologies]**, vincule a regra a uma tipologia de campanha.
 1. Salve as alterações.
