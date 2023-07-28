@@ -2,13 +2,13 @@
 product: campaign
 title: Enviar emails transacionais com anexos
 description: Saiba como enviar emails transacionais com anexos individuais e/ou personalizados usando o Adobe Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
-workflow-type: ht
-source-wordcount: '663'
-ht-degree: 100%
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
+workflow-type: tm+mt
+source-wordcount: '670'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ Nesse cenário, os anexos não são pré-criados, mas adicionados instantaneamen
 
 ## Recommendations e medidas de proteção {#important-notes}
 
-Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 MB. Esse limite, definido por padrão, pode ser alterado na opção `NmsDelivery_MaxDownloadedImageSize`. No entanto, a Adobe recomenda fortemente evitar imagens grandes em entregas por email.
+Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 KB. Esse limite, definido por padrão, pode ser alterado na opção `NmsDelivery_MaxDownloadedImageSize`. No entanto, a Adobe recomenda fortemente evitar imagens grandes em entregas por email.
 
 A Adobe também recomenda limitar o tamanho e o número de arquivos anexados. Por padrão, só é possível adicionar um arquivo como anexo a um email. Esse limite pode ser configurado na opção `NmsDelivery_MaxRecommendedAttachments`.
 

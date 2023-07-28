@@ -2,14 +2,14 @@
 product: campaign
 title: Anexo de arquivos
 description: Anexo de arquivos
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
-workflow-type: ht
-source-wordcount: '966'
-ht-degree: 100%
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
+workflow-type: tm+mt
+source-wordcount: '978'
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ Há dois casos possíveis:
 
 ## Medidas de proteção {#attachments-guardrails}
 
-Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 MB. Esse limite, definido por padrão, pode ser alterado na opção `NmsDelivery_MaxDownloadedImageSize`. No entanto, a Adobe recomenda fortemente evitar imagens grandes em entregas por email.
+Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 KB. Esse limite, definido por padrão, pode ser alterado na opção `NmsDelivery_MaxDownloadedImageSize`. No entanto, a Adobe recomenda fortemente evitar imagens grandes em entregas por email.
 
 A Adobe também recomenda limitar o tamanho e o número de arquivos anexados. Por padrão, só é possível adicionar um arquivo como anexo a um email. Esse limite pode ser configurado na opção `NmsDelivery_MaxRecommendedAttachments`.
 

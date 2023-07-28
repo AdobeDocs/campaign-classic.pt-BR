@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 942d44104ae56e9334f42f10751979ce4f4a714d
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4012'
 ht-degree: 9%
 
 ---
@@ -112,7 +112,7 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
  <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
-   <td> Permite definir o tamanho máximo (em bytes) permitido para uma imagem baixada de um URL personalizado e anexada a um email. O valor padrão é 100.000 bytes. Ao enviar uma prova e baixar as imagens para processar o email, se o tamanho de uma imagem exceder esse valor ou se houver um problema de download, um erro será exibido nos Logs do delivery e o delivery da prova falhará.<br /> </td> 
+   <td> Permite definir o tamanho máximo (em bytes) permitido para uma imagem baixada de um URL personalizado e anexada a um email. O valor padrão é 100.000 bytes (100 KB). Ao enviar uma prova e baixar as imagens para processar o email, se o tamanho de uma imagem exceder esse valor ou se houver um problema de download, um erro será exibido nos Logs do delivery e o delivery da prova falhará.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
