@@ -2,15 +2,16 @@
 product: campaign
 title: Trabalho com pacotes de dados
 description: Trabalho com pacotes de dados
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Data Management, Package Export/Import
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: ht
-source-wordcount: '2442'
+source-wordcount: '2454'
 ht-degree: 100%
 
 ---
@@ -34,11 +35,11 @@ Há três tipos de pacotes exportáveis: pacotes de usuário, pacotes de platafo
 * **Pacote do usuário**: permite que você selecione a lista de entidades a serem exportadas. Esse tipo de pacote gerencia dependências e verifica erros.
 * **Pacote de plataforma**: inclui todos os recursos técnicos adicionados (não padrão), como schemas, código JavaScript, etc.
 
-   ![](assets/ncs_datapackage_package_platform.png)
+  ![](assets/ncs_datapackage_package_platform.png)
 
 * **Pacote de administrador**: inclui todos os modelos e objetos comerciais adicionados (não padrão): templates, bibliotecas, etc.
 
-   ![](assets/ncs_datapackage_package_admin.png)
+  ![](assets/ncs_datapackage_package_admin.png)
 
 >[!CAUTION]
 >
@@ -281,15 +282,15 @@ A criação de pacote pode ser configurada na guia **[!UICONTROL Content]** de d
 * **[!UICONTROL Include an installation script]**: permite adicionar um script javascript a ser executado na importação de pacotes. Quando selecionada, uma guia **[!UICONTROL Script]** é adicionada na tela de definição de pacote.
 * **[!UICONTROL Include default values]**: adiciona os valores de todos os atributos da entidade ao pacote.
 
-   Essa opção não está selecionada por padrão para evitar exportações demoradas. Isso significa que os atributos das entidades com valores padrão (&#39;string vazia&#39;, &#39;0&#39; e &#39;falso&#39; se não definido de outra forma no schema) não serão adicionados ao pacote e, portanto, não serão exportados.
+  Essa opção não está selecionada por padrão para evitar exportações demoradas. Isso significa que os atributos das entidades com valores padrão (&#39;string vazia&#39;, &#39;0&#39; e &#39;falso&#39; se não definido de outra forma no schema) não serão adicionados ao pacote e, portanto, não serão exportados.
 
-   >[!CAUTION]
-   >
-   >Desmarcar essa opção pode mesclar as versões local e importada.
-   >
-   >Se a instância onde o pacote for importado contiver entidades idênticas ao próprio pacote (por exemplo, com a mesma ID externa), então seus atributos não serão atualizados. Isso pode ocorrer se os atributos da instância anterior possuírem valores padrão, pois não estão incluídos no pacote.
-   >
-   >Nesse caso, selecionar a opção **[!UICONTROL Include default values]** impediria mesclar as versões, pois todos os atributos da instância anterior seriam exportados com o pacote.
+  >[!CAUTION]
+  >
+  >Desmarcar essa opção pode mesclar as versões local e importada.
+  >
+  >Se a instância onde o pacote for importado contiver entidades idênticas ao próprio pacote (por exemplo, com a mesma ID externa), então seus atributos não serão atualizados. Isso pode ocorrer se os atributos da instância anterior possuírem valores padrão, pois não estão incluídos no pacote.
+  >
+  >Nesse caso, selecionar a opção **[!UICONTROL Include default values]** impediria mesclar as versões, pois todos os atributos da instância anterior seriam exportados com o pacote.
 
 ### Exportar pacotes de uma definição de pacote {#exporting-packages-from-a-package-definition}
 
@@ -442,7 +443,7 @@ O pacote de atualização deve conter apenas uma entidade específica para ser f
    * A conta externa é criada.
    * O novo pacote é: 5101 - 2 - Conta externa do aplicativo social (socialApplication_extAccount).
    * Paralelamente, o pacote 101 é atualizado para ser adicionado à conta externa, mas não é implantado.
-      ![](assets/ncs_datapackage_best-practices-1.png)
+     ![](assets/ncs_datapackage_best-practices-1.png)
 
 #### Documentação do pacote {#package-documentation}
 
