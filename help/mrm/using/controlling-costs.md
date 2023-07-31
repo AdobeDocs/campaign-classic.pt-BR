@@ -2,14 +2,15 @@
 product: campaign
 title: Controlar custos
 description: Saiba como controlar custos
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '2468'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '2475'
 ht-degree: 100%
 
 ---
@@ -52,21 +53,21 @@ Os orçamentos são criados no mapa, através do nó **[!UICONTROL Campaign mana
 
 * Adicionar um novo orçamento
 
-   Clique no ícone **[!UICONTROL New]**, nomeie o orçamento e o salve.
+  Clique no ícone **[!UICONTROL New]**, nomeie o orçamento e o salve.
 
 * Inserir a quantidade inicial
 
-   Indique o valor alocado no campo relevante. Os outros montantes são inseridos automaticamente. Consulte [Calcular valores](#calculating-amounts).
+  Indique o valor alocado no campo relevante. Os outros montantes são inseridos automaticamente. Consulte [Calcular valores](#calculating-amounts).
 
 * Definir o período de validade
 
-   Especifique as datas de início e término. Estas informações são apenas indicativas.
+  Especifique as datas de início e término. Estas informações são apenas indicativas.
 
 * Despesas
 
-   Crie as categorias de despesas às quais os custos atribuídos a esse orçamento para campanhas, tarefas etc. podem ser vinculados. Consulte [Categorias de despesas](#expense-categories).
+  Crie as categorias de despesas às quais os custos atribuídos a esse orçamento para campanhas, tarefas etc. podem ser vinculados. Consulte [Categorias de despesas](#expense-categories).
 
-   ![](assets/s_ncs_user_budget_create_and_save.png)
+  ![](assets/s_ncs_user_budget_create_and_save.png)
 
 >[!NOTE]
 >
