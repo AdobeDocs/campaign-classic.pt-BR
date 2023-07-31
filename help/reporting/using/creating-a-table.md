@@ -2,13 +2,13 @@
 product: campaign
 title: Criar uma tabela
 description: Criar uma tabela
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '2495'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '2507'
 ht-degree: 100%
 
 ---
@@ -64,15 +64,15 @@ O próprio grupo inclui linhas de cabeçalho, detalhe e rodapé.
 
 * **Linha de cabeçalho**: esta linha permite fornecer um título para as colunas da tabela.
 
-   ![](assets/s_advuser_ergo_listgroup_003a.png)
+  ![](assets/s_advuser_ergo_listgroup_003a.png)
 
 * **Linha de detalhe**: esta linha contém valores de estatística.
 
-   ![](assets/s_advuser_ergo_listgroup_004.png)
+  ![](assets/s_advuser_ergo_listgroup_004.png)
 
 * **Linha de rodapé**: esta linha permite exibir os valores totais.
 
-   ![](assets/s_advuser_ergo_listgroup_003.png)
+  ![](assets/s_advuser_ergo_listgroup_003.png)
 
 Linhas e colunas podem ser adicionadas para satisfazer qualquer necessidade.
 
@@ -104,19 +104,19 @@ Use a entrada do menu **[!UICONTROL Expression]** para selecionar os valores a s
 
 * Para inserir os valores a serem analisados diretamente na tabela, selecione-os entre os campos disponíveis.
 
-   A lista de campos disponíveis coincide com o conteúdo da query antes da tabela no gráfico de criação de relatório.
+  A lista de campos disponíveis coincide com o conteúdo da query antes da tabela no gráfico de criação de relatório.
 
-   ![](assets/s_advuser_ergo_listgroup_011.png)
+  ![](assets/s_advuser_ergo_listgroup_011.png)
 
 * Insira um rótulo para uma célula, o cabeçalho um, por exemplo.
 
-   Para fazer isso, use o mesmo processo de inserção de um campo no banco de dados, mas não selecione uma expressão. Insira o rótulo no campo **[!UICONTROL Label]**. Ele será exibido como está.
+  Para fazer isso, use o mesmo processo de inserção de um campo no banco de dados, mas não selecione uma expressão. Insira o rótulo no campo **[!UICONTROL Label]**. Ele será exibido como está.
 
 * Cálculo de uma agregação (uma média, uma soma, etc.) e sua exibição na célula
 
-   Para fazer isso, use a entrada de menu **[!UICONTROL Aggregates]** e selecione a campanha desejada.
+  Para fazer isso, use a entrada de menu **[!UICONTROL Aggregates]** e selecione a campanha desejada.
 
-   ![](assets/s_advuser_ergo_listgroup_008.png)
+  ![](assets/s_advuser_ergo_listgroup_008.png)
 
 ### Definir formato de célula {#defining-cell-format}
 
@@ -248,7 +248,6 @@ Clique duas vezes na primeira query para editá-la e siga as etapas abaixo para 
    * Chave externa do link &quot;Campaign&quot; (campo &quot;id&quot;): **@operationId**
    * Taxa de erro: **@errorRatio**
 
-
 1. Clique no botão **[!UICONTROL Next]** duas vezes para chegar à etapa **[!UICONTROL Data filtering]**.
 
    Adicione uma condição de filtragem para coletar apenas os deliveries vinculados a uma campanha.
@@ -371,7 +370,7 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
 
    * calcular a soma das chaves primárias para contar o número de logs do delivery:
 
-      ![](assets/reporting_quick_start_query-2_count.png)
+     ![](assets/reporting_quick_start_query-2_count.png)
 
    * coletar domínios de email dos recipients e informações do grupo neste campo: para fazer isso, selecione a opção **[!UICONTROL Group]** na coluna de nome de domínio.
 
@@ -382,8 +381,7 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
    * contagem (chave primária): **@count**
    * Domínio de email (recipient): **@domain**
 
-      ![](assets/reporting_quick_start_query-2_alias.png)
-
+     ![](assets/reporting_quick_start_query-2_alias.png)
 
 1. Clique duas vezes no botão **[!UICONTROL Next]**: isso leva à etapa **[!UICONTROL Data filtering]**.
 
@@ -412,9 +410,9 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
    * Adicione duas colunas ao lado direito.
    * Na primeira célula da linha de detalhes, adicione a expressão **[!UICONTROL rowNum()-1]** para contar o número de linhas. Em seguida, altere o formato da célula: na guia **[!UICONTROL Extra]**, selecione **[!UICONTROL Color tab]** e clique em **[!UICONTROL Ok]**.
 
-      ![](assets/s_advuser_report_listgroup_018.png)
+     ![](assets/s_advuser_report_listgroup_018.png)
 
-      Essa configuração permitirá usar a tabela como legenda do gráfico.
+     Essa configuração permitirá usar a tabela como legenda do gráfico.
 
    * Na segunda célula da linha de detalhes, adicione a expressão **[!UICONTROL Email domain(Recipient)]**.
    * Na terceira célula da linha de detalhes, adicione a expressão **[!UICONTROL count(primary key)]**.
