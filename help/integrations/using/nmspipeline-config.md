@@ -2,13 +2,14 @@
 product: campaign
 title: Opção de pipeline NmsPipeline_Config
 description: Opção de pipeline NmsPipeline_Config
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Triggers
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '374'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '386'
 ht-degree: 100%
 
 ---
@@ -68,7 +69,7 @@ Este segundo exemplo captura todos os acionadores.
 
 >[!NOTE]
 >
->O valor da UID [!DNL Trigger] para um nome de acionador específico na interface do Analytics pode ser encontrado como parte dos parâmetros de sequência de consulta de URL na interface dos acionadores. A UID triggerType é transmitida no fluxo de dados do pipeline e o código pode ser gravado no pipeline.JS para mapear a UID do acionador para um rótulo amigável ao usuário que pode ser armazenado em uma coluna Nome do acionador no schema pipelineEvents.
+>O valor da UID [!DNL Trigger] para um nome de acionador específico na interface do Analytics pode ser encontrado como parte dos parâmetros de string de consulta de URL na interface dos acionadores. A UID triggerType é transmitida no fluxo de dados do pipeline e o código pode ser gravado no pipeline.JS para mapear a UID do acionador para um rótulo amigável ao usuário que pode ser armazenado em uma coluna Nome do acionador no schema pipelineEvents.
 
 ## O parâmetro do consumidor {#consumer-parameter}
 
