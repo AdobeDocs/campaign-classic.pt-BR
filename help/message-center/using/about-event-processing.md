@@ -2,14 +2,15 @@
 product: campaign
 title: Processamento de evento
 description: Saiba como os eventos de mensagens transacionais são processados no Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '691'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '698'
 ht-degree: 100%
 
 ---
@@ -67,11 +68,11 @@ A etapa de roteamento consiste em vincular um evento ao modelo de mensagem aprop
 
 * O tipo de evento especificado nas propriedades do próprio evento:
 
-   ![](assets/messagecenter_event_type_001.png)
+  ![](assets/messagecenter_event_type_001.png)
 
 * O tipo de evento especificado nas propriedades do modelo de mensagem:
 
-   ![](assets/messagecenter_event_type_002.png)
+  ![](assets/messagecenter_event_type_002.png)
 
 Por padrão, o roteamento é baseado nas seguintes informações:
 
