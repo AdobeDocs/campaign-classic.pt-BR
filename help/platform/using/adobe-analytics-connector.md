@@ -2,14 +2,14 @@
 product: campaign
 title: Adobe Analytics Connector
 description: Saiba mais sobre o Adobe Analytics Connector
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: ht
-source-wordcount: '1503'
+source-wordcount: '1510'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,6 @@ O Adobe Analytics Connector permite que o Adobe Campaign e o Adobe Analytics int
 >* O Adobe Analytics Connector não é compatível com as mensagens transacionais (Centro de mensagens).
 >
 >* Antes de iniciar, verifique se o Adobe Identity Management System (IMS) está implementado no Campaign. [Saiba mais nesta página](../../integrations/using/about-adobe-id.md).
-
 
 Usando o Adobe Analytics Connector, o Adobe Campaign tem uma forma de medir o público-alvo da Internet (Web Analytics). Graças a essas integrações, o Adobe Campaign pode recuperar dados do comportamento do visitante para um ou mais sites, após uma campanha de marketing, e (após a análise) executar campanhas de re-marketing com uma visualização para convertê-los em compradores. Por outro lado, as ferramentas do Web Analytics permitem que o Adobe Campaign encaminhe indicadores e atributos de campanha para suas plataformas.
 
@@ -227,9 +226,9 @@ Eles estão disponíveis na árvore do Adobe Campaign, na pasta **[!UICONTROL Ad
 * **[!UICONTROL Identification of converted contacts]**: diretório dos visitantes que fizeram uma compra após uma campanha re-marketing. Os dados coletados por esse workflow podem ser acessados no relatório **[!UICONTROL Re-marketing efficiency]**, consulte esta [página](#creating-a-re-marketing-campaign).
 * **[!UICONTROL Sending of indicators and campaign attributes]**: permite enviar indicadores de campanha por meio do Adobe Campaign para a Adobe Experience Cloud usando o Adobe Analytics Connector. Esse workflow é acionado às 4:00 AM todos os dias e pode levar 24 horas para que os dados sejam enviados ao Analytics.
 
-   Observe que esse workflow não deve ser reiniciado ou todos os dados anteriores podem distorcer os resultados do Analytics.
+  Observe que esse workflow não deve ser reiniciado ou todos os dados anteriores podem distorcer os resultados do Analytics.
 
-   Os indicadores envolvidos são:
+  Os indicadores envolvidos são:
 
    * **[!UICONTROL Messages to deliver]** (@toDeliver)
    * **[!UICONTROL Processed]** (@processed)
@@ -242,11 +241,11 @@ Eles estão disponíveis na árvore do Adobe Campaign, na pasta **[!UICONTROL Ad
    * **[!UICONTROL Opt-Out]** (@optOut)
    * **[!UICONTROL Errors]** (@error)
 
-   >[!NOTE]
-   >
-   >Os dados enviados são o delta baseado no último instantâneo que pode levar ao valor negativo nos dados de métrica.
+  >[!NOTE]
+  >
+  >Os dados enviados são o delta baseado no último instantâneo que pode levar ao valor negativo nos dados de métrica.
 
-   Os atributos enviados são os seguintes:
+  Os atributos enviados são os seguintes:
 
    * **[!UICONTROL Internal name]** (@internalName)
    * **[!UICONTROL Label]** (@label)
@@ -256,7 +255,6 @@ Eles estão disponíveis na árvore do Adobe Campaign, na pasta **[!UICONTROL Ad
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
-
 
 ## Rastreamento de entregas no Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 
