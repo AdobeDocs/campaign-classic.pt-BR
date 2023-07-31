@@ -2,13 +2,13 @@
 product: campaign
 title: Propriedades do relatório
 description: Saiba mais sobre as configurações de propriedades do relatório
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '429'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '441'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Na guia **[!UICONTROL General]** das propriedades do relatório, é possível ed
 
 * O **Armazenamento** é selecionado ao criar o relatório. Para alterar a tabela que o relatório aborda, clique no ícone **[!UICONTROL Select link]** à direita do campo **[!UICONTROL Document type]**.
 
-   ![](assets/s_ncs_advuser_report_properties_02.png)
+  ![](assets/s_ncs_advuser_report_properties_02.png)
 
 * Os parâmetros do **Controle de acesso**. Essas configurações estão descritas abaixo.
 
@@ -47,7 +47,7 @@ As opções possíveis são:
 
 * **[!UICONTROL Anonymous access]**: essa opção permite acesso irrestrito ao relatório. No entanto, nenhuma manipulação é possível.
 
-   As permissões do operador técnico &quot;webapp&quot; são usadas para exibir os elementos do relatório. Saiba mais [nesta seção](../../platform/using/access-management-operators.md).
+  As permissões do operador técnico &quot;webapp&quot; são usadas para exibir os elementos do relatório. Saiba mais [nesta seção](../../platform/using/access-management-operators.md).
 
 * **[!UICONTROL Access control]**: esta opção permite que os operadores do Adobe Campaign acessem o relatório quando estiverem conectados.
 * **[!UICONTROL Specific account]**: a opção permite executar o relatório com os direitos do operador, selecionados no campo **[!UICONTROL Operator]**.
