@@ -2,13 +2,13 @@
 product: campaign
 title: Editar conteúdo
 description: Editar conteúdo
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '1214'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '1226'
 ht-degree: 100%
 
 ---
@@ -75,11 +75,11 @@ Para fazer isso:
 
 * Clique no ícone **[!UICONTROL Edit]**.
 
-   ![](assets/dce_sidebar_options.png)
+  ![](assets/dce_sidebar_options.png)
 
 * Insira o valor da lista discriminada (definido pelo campo selecionado) no campo **[!UICONTROL Value]**.
 
-   ![](assets/dce_sidebar_completeoptionradio.png)
+  ![](assets/dce_sidebar_completeoptionradio.png)
 
 ### Modificação de campos de formulário {#modifying-form-fields}
 
@@ -91,7 +91,7 @@ Isso significa que é possível:
 * Duplique o campo selecionado criando um novo bloco usando o ícone **[!UICONTROL Duplicate]**.
 * Edite a janela **[!UICONTROL Form data]** para vincular um campo de banco de dados à zona de formulário, usando o ícone **[!UICONTROL Edit]**.
 
-   ![](assets/dce_toolbar_formblock_edition.png)
+  ![](assets/dce_toolbar_formblock_edition.png)
 
 ## Adição de uma ação a um botão {#adding-an-action-to-a-button}
 
@@ -138,7 +138,6 @@ Blocos de personalização e campos só podem ser inseridos em blocos de tipo de
 >* Janela atual (_self)
 >* Comportamento do navegador padrão
 >
-
 
 ### Vincular a uma URL {#link-to-a-url}
 
@@ -204,7 +203,6 @@ As opções disponíveis são as seguintes:
 >
 >* Ícone **Duplicate**: duplica o bloco e todos os estilos relacionados ao bloco.
 
-
 ## Gerenciamento de imagens e animações {#managing-images-and-animations}
 
 O Editor de conteúdo digital permite trabalhar em **qualquer tipo de imagem** compatível com os navegadores.
@@ -238,7 +236,7 @@ Ao selecionar um bloco contendo uma imagem, você acessa as seguintes propriedad
 * **Caption** permite definir a legenda vinculada à imagem (corresponde ao atributo HTML **alt** ).
 * **Dimensions** permite especificar o tamanho da imagem, em pixels.
 
-   ![](assets/dce_popup_imgsize.png)
+  ![](assets/dce_popup_imgsize.png)
 
 ## Adição de conteúdo de personalização {#adding-personalization-content}
 
