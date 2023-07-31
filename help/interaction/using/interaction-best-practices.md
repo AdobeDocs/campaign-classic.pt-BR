@@ -2,14 +2,15 @@
 product: campaign
 title: Práticas recomendadas de interação do Adobe Campaign Classic
 description: Esta seção apresenta a abordagem de práticas recomendadas para gerenciar o módulo de interação no Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '1193'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '1200'
 ht-degree: 100%
 
 ---
@@ -127,9 +128,9 @@ Ao expandir o esquema nms:offer, siga a estrutura predefinida já configurada:
 * Defina qualquer novo campo para armazenamento de conteúdo em `<element name="view">`.
 * Cada novo campo precisa ser definido duas vezes. Uma vez como um campo XML regular e outra como um campo XML CDATA com &quot;_jst&quot; anexado ao nome. Por exemplo:
 
-   ```
-   <element label="Price" name="price" type="long" xml="true"/>
-   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
-   ```
+  ```
+  <element label="Price" name="price" type="long" xml="true"/>
+  <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
+  ```
 
 * Todos os campos que contêm URLs a serem rastreados devem ser posicionados em `<element name="trackedUrls">`which is found under`<element name="view" >`.
