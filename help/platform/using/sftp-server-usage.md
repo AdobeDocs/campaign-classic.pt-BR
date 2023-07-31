@@ -2,15 +2,16 @@
 product: campaign
 title: Uso do servidor SFTP
 description: Saiba mais sobre as práticas recomendadas e a solução de problemas do servidor SFTP
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Troubleshooting
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: ht
-source-wordcount: '1148'
+source-wordcount: '1160'
 ht-degree: 100%
 
 ---
@@ -25,7 +26,7 @@ Ao gerenciar arquivos e dados para fins de ETL, esses arquivos são armazenados 
 
 * Para evitar a expiração de senhas, use a autenticação baseada em chave (as senhas têm um período de validade de 90 dias). Além disso, a autenticação baseada nessa opção permite gerar várias chaves para gerenciar diversas entidades, por exemplo. Ao contrário, essa opção de autenticação exige que a senha seja compartilhada com todas as entidades gerenciadas.
 
-   O formato de chave compatível é SSH-2 RSA 2048. As chaves podem ser geradas com ferramentas como PuTTY (Windows) ou ssh-keygen (Unix). Será necessário fornecer a chave pública à equipe de suporte da Adobe por meio do [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para carregá-lo no servidor do Campaign.
+  O formato de chave compatível é SSH-2 RSA 2048. As chaves podem ser geradas com ferramentas como PuTTY (Windows) ou ssh-keygen (Unix). Será necessário fornecer a chave pública à equipe de suporte da Adobe por meio do [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para carregá-lo no servidor do Campaign.
 
 * Use em lotes em uploads de SFTP e em workflows.
 
