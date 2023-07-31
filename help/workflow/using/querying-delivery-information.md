@@ -2,12 +2,12 @@
 product: campaign
 title: Consulta de informações de delivery
 description: Como consultar informações de delivery
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+feature: Query Editor, Workflows
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '1241'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '1248'
 ht-degree: 100%
 
 ---
@@ -22,15 +22,15 @@ Neste exemplo, estamos procurando coletar o número de cliques de uma delivery e
 
 * Qual tabela precisa ser selecionada?
 
-   A tabela de rastreamento de log do recipient (**[!UICONTROL nms:trackingLogRcp]**).
+  A tabela de rastreamento de log do recipient (**[!UICONTROL nms:trackingLogRcp]**).
 
 * Campos a serem selecionados para colunas de saída?
 
-   Primary key (with count) e Email.
+  Primary key (with count) e Email.
 
 * Quais critérios serão usados para filtrar as informações?
 
-   Um período específico e um elemento do rótulo da delivery.
+  Um período específico e um elemento do rótulo da delivery.
 
 Para executar esse exemplo, aplique as seguintes etapas:
 
@@ -44,19 +44,19 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
    * Clique no ícone **[!UICONTROL Add]** à direita do campo **[!UICONTROL Output columns]**. Na janela **[!UICONTROL Formula type]**, selecione a opção **[!UICONTROL Edit the formula using an expression]** e clique em **[!UICONTROL Next]**. Na janela **[!UICONTROL Field to select]**, clique em **[!UICONTROL Advanced selection]**.
 
-      ![](assets/query_editor_tracklog_06.png)
+     ![](assets/query_editor_tracklog_06.png)
 
    * Na janela **[!UICONTROL Formula type]**, execute um processo na função agregada. Esse processo será uma contagem de chaves primária.
 
-      Selecione **[!UICONTROL Process on an aggregate function]** na seção **[!UICONTROL Aggregate]** e clique em **[!UICONTROL Count]**.
+     Selecione **[!UICONTROL Process on an aggregate function]** na seção **[!UICONTROL Aggregate]** e clique em **[!UICONTROL Count]**.
 
-      ![](assets/query_editor_nveau_18.png)
+     ![](assets/query_editor_nveau_18.png)
 
-      Clique em **[!UICONTROL Next]**.
+     Clique em **[!UICONTROL Next]**.
 
    * Selecione o campo **[!UICONTROL Primary key (@id)]**. O output da coluna **[!UICONTROL count (primary key)]** está configurado.
 
-      ![](assets/query_editor_nveau_19.png)
+     ![](assets/query_editor_nveau_19.png)
 
 1. Selecione o outro campo a ser exibido na coluna de saída. Na coluna **[!UICONTROL Available fields]**, abra o nó **[!UICONTROL Recipient]** e escolha **[!UICONTROL Email]**. Marque a caixa **[!UICONTROL Group]** com **[!UICONTROL Yes]** para agrupar os logs de rastreamento por endereço de email. Este grupo vincula cada log ao respectivo recipient.
 
@@ -72,39 +72,39 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
    * Configure o filtro de dados. Para fazer isso, selecione **[!UICONTROL Filter conditions]** e clique em **[!UICONTROL Next]**.
 
-      ![](assets/query_editor_nveau_22.png)
+     ![](assets/query_editor_nveau_22.png)
 
    * Recuperar logs de rastreamento em um determinado período de uma delivery específica. São necessárias três condições de filtro: duas condições de data para definir o período de pesquisa entre 2 semanas antes da data atual e o dia antes da data atual; e outra condição para restringir a pesquisa a uma delivery específica.
 
-      Na janela **[!UICONTROL Target element]**, configure a data a partir da qual os logs de rastreamento serão considerados. Clique em **[!UICONTROL Add]**. Uma linha de condição é exibida. Edite a coluna **[!UICONTROL Expression]** ao clicar na função **[!UICONTROL Edit expression]**. Na janela **[!UICONTROL Field to select]**, selecione **[!UICONTROL Date (@logDate)]**.
+     Na janela **[!UICONTROL Target element]**, configure a data a partir da qual os logs de rastreamento serão considerados. Clique em **[!UICONTROL Add]**. Uma linha de condição é exibida. Edite a coluna **[!UICONTROL Expression]** ao clicar na função **[!UICONTROL Edit expression]**. Na janela **[!UICONTROL Field to select]**, selecione **[!UICONTROL Date (@logDate)]**.
 
-      ![](assets/query_editor_nveau_23.png)
+     ![](assets/query_editor_nveau_23.png)
 
-      Selecione o operador **[!UICONTROL greater than]**. Na coluna **[!UICONTROL Value]**, clique em **[!UICONTROL Edit expression]**, e na janela **[!UICONTROL Formula type]**, selecione **[!UICONTROL Process on dates]**. Por fim, em **[!UICONTROL Current date minus n days]**, digite &quot;15&quot;.
+     Selecione o operador **[!UICONTROL greater than]**. Na coluna **[!UICONTROL Value]**, clique em **[!UICONTROL Edit expression]**, e na janela **[!UICONTROL Formula type]**, selecione **[!UICONTROL Process on dates]**. Por fim, em **[!UICONTROL Current date minus n days]**, digite &quot;15&quot;.
 
-      Clique em **[!UICONTROL Finish]**.
+     Clique em **[!UICONTROL Finish]**.
 
-      ![](assets/query_editor_nveau_24.png)
+     ![](assets/query_editor_nveau_24.png)
 
    * Para selecionar a data de término da pesquisa de log de rastreamento, crie uma segunda condição clicando em **[!UICONTROL Add]**. Na coluna **[!UICONTROL Expression]**, escolha novamente **[!UICONTROL Date (@logDate)]**.
 
-      Selecione o operador **[!UICONTROL less than]**. Na coluna **[!UICONTROL Value]**, clique em **[!UICONTROL Edit expression]**. Para o processamento de datas, vá para a janela **[!UICONTROL Formula type]**, digite &quot;1&quot; em **[!UICONTROL Current date minus n days]**.
+     Selecione o operador **[!UICONTROL less than]**. Na coluna **[!UICONTROL Value]**, clique em **[!UICONTROL Edit expression]**. Para o processamento de datas, vá para a janela **[!UICONTROL Formula type]**, digite &quot;1&quot; em **[!UICONTROL Current date minus n days]**.
 
-      Clique em **[!UICONTROL Finish]**.
+     Clique em **[!UICONTROL Finish]**.
 
-      ![](assets/query_editor_nveau_65.png)
+     ![](assets/query_editor_nveau_65.png)
 
-      Agora, devemos configurar a terceira condição do filtro, ou seja, o rótulo de delivery que nossa query aborda.
+     Agora, devemos configurar a terceira condição do filtro, ou seja, o rótulo de delivery que nossa query aborda.
 
    * Clique na função **[!UICONTROL Add]** para criar outra condição de filtro. Na coluna **[!UICONTROL Expression]**, clique em **[!UICONTROL Edit expression]**. Na janela **[!UICONTROL Field to select]**, escolha **[!UICONTROL Label]** no nó **[!UICONTROL Delivery]**.
 
-      Clique em **[!UICONTROL Finish]**.
+     Clique em **[!UICONTROL Finish]**.
 
-      ![](assets/query_editor_nveau_66.png)
+     ![](assets/query_editor_nveau_66.png)
 
-      Procure uma delivery contendo a palavra &quot;sales&quot;. Se você não lembrar o rótulo exato, é possível escolher o operador **[!UICONTROL contains]** e digitar &quot;vendas&quot; na coluna **[!UICONTROL Value]**.
+     Procure uma delivery contendo a palavra &quot;sales&quot;. Se você não lembrar o rótulo exato, é possível escolher o operador **[!UICONTROL contains]** e digitar &quot;vendas&quot; na coluna **[!UICONTROL Value]**.
 
-      ![](assets/query_editor_nveau_25.png)
+     ![](assets/query_editor_nveau_25.png)
 
 1. Clique em **[!UICONTROL Next]** até chegar à janela **[!UICONTROL Data preview]**. Nenhuma formatação é necessária.
 1. Na janela **[!UICONTROL Data preview]**, clique em **[!UICONTROL Start the preview of the data]** para ver o número de logs de rastreamento para cada recipient de delivery.
@@ -184,13 +184,13 @@ Em um workflow, as caixas **[!UICONTROL Query]** e **[!UICONTROL Split]** permit
 
 * Objetivo do exemplo
 
-   Em um workflow de delivery, há várias maneiras de dar seguimento a uma primeira comunicação por e-mail. Esse tipo de operação envolve o uso da caixa **[!UICONTROL Split]**.
+  Em um workflow de delivery, há várias maneiras de dar seguimento a uma primeira comunicação por e-mail. Esse tipo de operação envolve o uso da caixa **[!UICONTROL Split]**.
 
 * Contexto
 
-   Uma delivery &quot;Oferta esportiva de verão&quot; é enviada. Quatro dias após a delivery, duas outras deliverys são enviadas. Uma delas é &quot;oferta de artigos de esportes aquáticos&quot;, o outro é uma continuidade da primeira delivery &quot;oferta esportiva de verão&quot;.
+  Uma delivery &quot;Oferta esportiva de verão&quot; é enviada. Quatro dias após a delivery, duas outras deliverys são enviadas. Uma delas é &quot;oferta de artigos de esportes aquáticos&quot;, o outro é uma continuidade da primeira delivery &quot;oferta esportiva de verão&quot;.
 
-   A delivery &quot;oferta de artigos de esportes aquáticos&quot; é enviada aos recipients que clicaram no link &quot;esportes aquáticos&quot; na primeira delivery. Estes cliques mostram que o recipient está interessado no tópico. Faz sentido orientá-los para ofertas semelhantes. No entanto, os recipients que não clicaram na &quot;oferta de esportes de verão&quot; devem receber o mesmo conteúdo novamente.
+  A delivery &quot;oferta de artigos de esportes aquáticos&quot; é enviada aos recipients que clicaram no link &quot;esportes aquáticos&quot; na primeira delivery. Estes cliques mostram que o recipient está interessado no tópico. Faz sentido orientá-los para ofertas semelhantes. No entanto, os recipients que não clicaram na &quot;oferta de esportes de verão&quot; devem receber o mesmo conteúdo novamente.
 
 As etapas a seguir mostram como configurar a caixa **[!UICONTROL Split]** ao integrar dois comportamentos diferentes:
 
@@ -242,4 +242,4 @@ Abaixo está a lista dos vários componentes configurados por padrão:
 * **[!UICONTROL Recipients who didn't open or click (email),]**
 * **[!UICONTROL Recipients who didn't click (email).]**
 
-   ![](assets/query_editor_ex_02.png)
+  ![](assets/query_editor_ex_02.png)
