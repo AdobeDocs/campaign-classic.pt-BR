@@ -2,13 +2,13 @@
 product: campaign
 title: Pontos principais ao gerenciar a capacidade de entrega no Adobe Campaign Classic
 description: Saiba mais sobre os principais pontos a serem verificados ao gerenciar a capacidade de entrega no Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Deliverability
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Deliverability, Troubleshooting
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '654'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '666'
 ht-degree: 100%
 
 ---
@@ -51,13 +51,14 @@ Se o problema persistir, entre em contato com os serviços comerciais ou de entr
    * O status **[!UICONTROL Denylisted]** é resultado de um ciclo de feedback (quando uma pessoa reporta uma mensagem como spam).
 
    * O status **[!UICONTROL Quarantined]** é resultado de um salto suave ou forte.
-   Para obter mais informações, consulte [esta seção](understanding-quarantine-management.md#quarantine-vs-denylist).
+
+  Para obter mais informações, consulte [esta seção](understanding-quarantine-management.md#quarantine-vs-denylist).
 
 * **O que significam os diferentes motivos de erro de quarentena?**
 
-   Aqui estão os 10 possíveis motivos: não definido, usuário desconhecido, domínio inválido, endereço incluído na lista de bloqueios, recusado, erro ignorado, inacessível, conta desativada, caixa de correio cheia e não conectado.
+  Aqui estão os 10 possíveis motivos: não definido, usuário desconhecido, domínio inválido, endereço incluído na lista de bloqueios, recusado, erro ignorado, inacessível, conta desativada, caixa de correio cheia e não conectado.
 
-   Para obter mais informações, consulte [Entendendo o gerenciamento da quarentena](understanding-quarantine-management.md).
+  Para obter mais informações, consulte [Entendendo o gerenciamento da quarentena](understanding-quarantine-management.md).
 
 ## Remoção da lista de bloqueios {#remove-from-denylist}
 
@@ -69,14 +70,14 @@ Se o problema persistir, entre em contato com os serviços comerciais ou de entr
 
 * **Como é possível descobrir se um dos IPs está incluído na lista de bloqueios? Como remover meus IPs de uma lista de bloqueios?**
 
-   É possível usar vários sites para verificar se o endereço IP está na lista de bloqueios, como:
+  É possível usar vários sites para verificar se o endereço IP está na lista de bloqueios, como:
    * [MX Toolbox](https://mxtoolbox.com/)
    * [Qual é meu endereço IP](https://whatismyipaddress.com)
 
-   Geralmente, o resultado da verificação do endereço IP retorna uma lista que contém os detalhes da lista bloqueios e também o nome do site que colocou o endereço IP na lista.
+  Geralmente, o resultado da verificação do endereço IP retorna uma lista que contém os detalhes da lista bloqueios e também o nome do site que colocou o endereço IP na lista.
 
-   Ao clicar no link correspondente, é possível acessar os detalhes do site. É possível solicitar que seu site seja excluído da lista de bloqueios do site que incluiu o endereço IP à lista de bloqueios.
+  Ao clicar no link correspondente, é possível acessar os detalhes do site. É possível solicitar que seu site seja excluído da lista de bloqueios do site que incluiu o endereço IP à lista de bloqueios.
 
-   >[!NOTE]
-   >
-   >O processo de exclusão pode variar dependendo do site. Alguns sites exigem a criação de uma conta, enquanto outros precisam apenas do endereço IP.
+  >[!NOTE]
+  >
+  >O processo de exclusão pode variar dependendo do site. Alguns sites exigem a criação de uma conta, enquanto outros precisam apenas do endereço IP.
