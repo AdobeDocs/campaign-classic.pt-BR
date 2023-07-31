@@ -2,15 +2,16 @@
 product: campaign
 title: Rastrear hipótese
 description: Saiba como rastrear hipóteses no Gestor de resposta do Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Campaigns, Monitoring, Reporting
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '455'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '467'
 ht-degree: 100%
 
 ---
@@ -73,8 +74,8 @@ O **[!UICONTROL Hypothesis report]** permite a visualização dos resultados da 
 
 * **No nível da campanha**: clique no link **[!UICONTROL Reports]** da campanha relevante e selecione o **[!UICONTROL Hypothesis report]**. Esse relatório contém a lista de deliveries da campanha e a hipótese calculada para cada um deles.
 
-   ![](assets/response_hypothesis_campaign_report_001.png)
+  ![](assets/response_hypothesis_campaign_report_001.png)
 
 * **No nível do delivery**: para acessar o relatório, abra o delivery relacionado, clique em **[!UICONTROL Reports]** na guia **[!UICONTROL Summary]** e selecione o **[!UICONTROL Hypothesis report]**. Se várias hipóteses são calculadas para o mesmo delivery, o relatório mostra todas as alternativas.
 
-   ![](assets/response_hypothesis_delivery_report_001.png)
+  ![](assets/response_hypothesis_delivery_report_001.png)
