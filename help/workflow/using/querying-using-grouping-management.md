@@ -2,12 +2,12 @@
 product: campaign
 title: Consultar usando gerenciamento de agrupamento
 description: Saiba como executar consultas usando o gerenciamento de agrupamento
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+feature: Query Editor, Workflows
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '251'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '258'
 ht-degree: 100%
 
 ---
@@ -20,15 +20,15 @@ Neste exemplo, devemos executar uma query para localizar todos os domínios de e
 
 * Qual tabela precisa ser selecionada?
 
-   A tabela de recipient (nms:recipient)
+  A tabela de recipient (nms:recipient)
 
 * Campos a serem selecionados nas colunas de saída?
 
-   Email domain e primary key (with count).
+  Email domain e primary key (with count).
 
 * Agrupamento de dados?
 
-   Com base no domínio de e-mail com uma contagem de chaves primárias acima de 30. Esta operação é executada com a opção **[!UICONTROL Group by + Having]**. O **[!UICONTROL Group by + Having]** permite agrupar dados (&quot;agrupar por&quot;) e criar uma seleção do que foi agrupado (&quot;ter&quot;).
+  Com base no domínio de e-mail com uma contagem de chaves primárias acima de 30. Esta operação é executada com a opção **[!UICONTROL Group by + Having]**. O **[!UICONTROL Group by + Having]** permite agrupar dados (&quot;agrupar por&quot;) e criar uma seleção do que foi agrupado (&quot;ter&quot;).
 
 Para criar este exemplo, aplique as seguintes etapas:
 
