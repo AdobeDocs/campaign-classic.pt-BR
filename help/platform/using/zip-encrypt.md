@@ -2,15 +2,16 @@
 product: campaign
 title: Compactação ou criptografia de um arquivo
 description: Saiba como compactar ou criptografar um arquivo no Campaign antes do processamento
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Data Management
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: ht
-source-wordcount: '536'
+source-wordcount: '548'
 ht-degree: 100%
 
 ---
@@ -28,6 +29,7 @@ Para fazer isso:
    >[!NOTE]
    >
    >O Painel de controle é restrito a usuários Administradores e está disponível somente para determinadas versões do Campaign. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR)
+   >
 
 1. Caso sua instalação do Adobe Campaign seja hospedada pela Adobe, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ter os utilitários necessários instalados no servidor.
 1. Caso a instalação do Adobe Campaign seja no local, instale o utilitário que deseja usar (por exemplo: GPG, GZIP) e as chaves necessárias (chave de criptografia) no servidor de aplicativos.
