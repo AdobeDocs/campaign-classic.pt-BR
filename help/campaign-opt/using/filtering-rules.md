@@ -2,12 +2,12 @@
 product: campaign
 title: Regras de filtro
 description: Saiba como usar as regras de filtro
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '507'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '514'
 ht-degree: 100%
 
 ---
@@ -79,6 +79,7 @@ Você também poderá vincular regras de filtragem diretamente por meio desta gu
 >Somente as regras de filtragem e de tipologia estarão disponíveis na janela de seleção.
 >
 >Essas configurações podem ser definidas no template de delivery a ser aplicado automaticamente a todos os novos deliveries criados usando o template.
+>
 
 ## Regras padrão de exclusão de entrega {#default-deliverability-exclusion-rules}
 
