@@ -2,12 +2,12 @@
 product: campaign
 title: Práticas recomendadas para relatórios
 description: Práticas recomendadas para relatórios do Campaign
+feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '852'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '848'
 ht-degree: 100%
 
 ---
@@ -71,7 +71,7 @@ Especificamente:
 
 * O tempo de cálculo de um relatório nunca deve ultrapassar 5 minutos.
 
-   Da mesma forma, durante a fase de design, com um pequeno volume de dados, se o cálculo de relatório exceder 60 segundos, os métodos de cálculo devem ser alterados.
+  Da mesma forma, durante a fase de design, com um pequeno volume de dados, se o cálculo de relatório exceder 60 segundos, os métodos de cálculo devem ser alterados.
 
 * Ao usar o módulo Marketing Analytics, os dados de relatórios não devem exceder 10 milhões de linhas.
 
@@ -99,17 +99,17 @@ Além disso, o Adobe Campaign recomenda as seguintes melhorias:
 
 * Trabalhe o seu modelo de dados: os campos indexados devem ser usados principalmente para melhorar as fórmulas de cálculo.
 
-   Para localizar um campo indexado rapidamente, examine o nome da coluna na interface do Adobe Campaign: a seta de classificação está sublinhada em vermelho se o campo estiver indexado.
+  Para localizar um campo indexado rapidamente, examine o nome da coluna na interface do Adobe Campaign: a seta de classificação está sublinhada em vermelho se o campo estiver indexado.
 
-   Para obter mais informações sobre indexação, consulte [esta seção](../../configuration/using/data-model-best-practices.md#indexes).
+  Para obter mais informações sobre indexação, consulte [esta seção](../../configuration/using/data-model-best-practices.md#indexes).
 
 * Verifique se o relatório é dimensionável: o volume de dados pode aumentar bastante ao longo do tempo.
 
-   Da mesma forma, o volume de dados manipulados durante as fases de teste pode diferir do volume de dados real na produção. É por isso que as fases de teste são importantes.
+  Da mesma forma, o volume de dados manipulados durante as fases de teste pode diferir do volume de dados real na produção. É por isso que as fases de teste são importantes.
 
-   Finalmente, os atrasos de eliminação de dados precisam ser conhecidos e adaptados quando necessário para facilitar a manipulação de dados.
+  Finalmente, os atrasos de eliminação de dados precisam ser conhecidos e adaptados quando necessário para facilitar a manipulação de dados.
 
-   Para obter mais informações sobre limpeza e retenção de dados, consulte [esta seção](../../configuration/using/data-model-best-practices.md#data-retention).
+  Para obter mais informações sobre limpeza e retenção de dados, consulte [esta seção](../../configuration/using/data-model-best-practices.md#data-retention).
 
 ### Exportar seus relatórios {#exporting-reports}
 
