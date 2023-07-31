@@ -2,13 +2,13 @@
 product: campaign
 title: 'Caso de uso: criar um delivery por email'
 description: 'Caso de uso: criar um delivery por email'
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '734'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '746'
 ht-degree: 100%
 
 ---
@@ -66,55 +66,55 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
 
 * Exiba o nome e o sobrenome dos recipients
 
-   Para inserir o nome e o sobrenome dos recipients em um campo de texto no delivery, clique no campo de texto escolhido e coloque o cursor onde deseja exibi-los. Clique no primeiro ícone na barra de ferramentas pop-up e, depois, em **[!UICONTROL Personalization block]**. Selecione **[!UICONTROL Greetings]** e clique em **[!UICONTROL OK]**.
+  Para inserir o nome e o sobrenome dos recipients em um campo de texto no delivery, clique no campo de texto escolhido e coloque o cursor onde deseja exibi-los. Clique no primeiro ícone na barra de ferramentas pop-up e, depois, em **[!UICONTROL Personalization block]**. Selecione **[!UICONTROL Greetings]** e clique em **[!UICONTROL OK]**.
 
-   ![](assets/dce_personalizationblock_greetings.png)
+  ![](assets/dce_personalizationblock_greetings.png)
 
 * Inserir um link em uma imagem
 
-   Para levar os destinatários do delivery para um endereço externo por meio de uma imagem, clique na imagem relevante para exibir a barra de ferramentas pop-up, coloque o cursor no primeiro ícone e clique em **[!UICONTROL Link to an external URL]**. Para saber mais, consulte [Adição de um link](editing-content.md#adding-a-link).
+  Para levar os destinatários do delivery para um endereço externo por meio de uma imagem, clique na imagem relevante para exibir a barra de ferramentas pop-up, coloque o cursor no primeiro ícone e clique em **[!UICONTROL Link to an external URL]**. Para saber mais, consulte [Adição de um link](editing-content.md#adding-a-link).
 
-   ![](assets/dce_externalpage.png)
+  ![](assets/dce_externalpage.png)
 
-   Insira a URL do link no campo **URL** usando o seguinte formato **https://www.myURL.com** e, em seguida, confirme.
+  Insira a URL do link no campo **URL** usando o seguinte formato **https://www.myURL.com** e, em seguida, confirme.
 
-   O link pode ser alterado a qualquer momento usando a seção à direita da janela.
+  O link pode ser alterado a qualquer momento usando a seção à direita da janela.
 
 * Inserir um link no texto
 
-   Para integrar um link externo ao texto no seu delivery, selecione um texto ou um bloco de texto e clique no primeiro ícone na barra de ferramentas pop-up. Clique em **[!UICONTROL Link to an external URL]** e digite o endereço do link no campo **[!UICONTROL URL]**. Para saber mais, consulte [Adição de um link](editing-content.md#adding-a-link).
+  Para integrar um link externo ao texto no seu delivery, selecione um texto ou um bloco de texto e clique no primeiro ícone na barra de ferramentas pop-up. Clique em **[!UICONTROL Link to an external URL]** e digite o endereço do link no campo **[!UICONTROL URL]**. Para saber mais, consulte [Adição de um link](editing-content.md#adding-a-link).
 
-   O link pode ser alterado a qualquer momento usando a seção à direita da janela.
+  O link pode ser alterado a qualquer momento usando a seção à direita da janela.
 
-   >[!CAUTION]
-   >
-   >O texto inserido no campo **[!UICONTROL Label]** substitui o texto original.
+  >[!CAUTION]
+  >
+  >O texto inserido no campo **[!UICONTROL Label]** substitui o texto original.
 
 * Adicionar uma mirror page
 
-   Para permitir que os recipients vejam o conteúdo do delivery em um navegador da Web, você pode integrar um link a uma mirror page no delivery.
+  Para permitir que os recipients vejam o conteúdo do delivery em um navegador da Web, você pode integrar um link a uma mirror page no delivery.
 
-   Clique no campo de texto em que você deseja ver o link publicado. Clique no primeiro ícone na barra de ferramentas pop-up, selecione **[!UICONTROL Personalization block]** e, então, **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Clique em **[!UICONTROL Save]** para confirmar.
+  Clique no campo de texto em que você deseja ver o link publicado. Clique no primeiro ícone na barra de ferramentas pop-up, selecione **[!UICONTROL Personalization block]** e, então, **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Clique em **[!UICONTROL Save]** para confirmar.
 
-   ![](assets/dce_mirrorpage.png)
+  ![](assets/dce_mirrorpage.png)
 
-   >[!CAUTION]
-   >
-   >O rótulo de bloco de personalização substitui automaticamente o texto original no seu delivery.
+  >[!CAUTION]
+  >
+  >O rótulo de bloco de personalização substitui automaticamente o texto original no seu delivery.
 
 * Integrar um link a uma aplicação web
 
-   O Editor de conteúdo digital permite integrar links às aplicações web no console do Adobe Campaign, como uma landing page ou uma página de formulário. Para saber mais, consulte [Vincular a uma aplicação web](editing-content.md#link-to-a-web-application).
+  O Editor de conteúdo digital permite integrar links às aplicações web no console do Adobe Campaign, como uma landing page ou uma página de formulário. Para saber mais, consulte [Vincular a uma aplicação web](editing-content.md#link-to-a-web-application).
 
-   Selecione um campo de texto para seu link para uma aplicação web e clique no primeiro ícone. Escolha **[!UICONTROL Link to a Web application]** e selecione a aplicação desejada clicando no ícone no final do campo **Web Application**.
+  Selecione um campo de texto para seu link para uma aplicação web e clique no primeiro ícone. Escolha **[!UICONTROL Link to a Web application]** e selecione a aplicação desejada clicando no ícone no final do campo **Web Application**.
 
-   ![](assets/dce_webapp.png)
+  ![](assets/dce_webapp.png)
 
-   Clique em **Salvar** para confirmar.
+  Clique em **Salvar** para confirmar.
 
-   >[!NOTE]
-   >
-   >Esta etapa exige que você salve pelo menos uma aplicação web anteriormente. Essas aplicações podem ser encontradas na guia **[!UICONTROL Campaigns > Web applications]** do console.
+  >[!NOTE]
+  >
+  >Esta etapa exige que você salve pelo menos uma aplicação web anteriormente. Essas aplicações podem ser encontradas na guia **[!UICONTROL Campaigns > Web applications]** do console.
 
 ## Etapa 5 - Salvar a entrega {#step-5---saving-the-delivery}
 
