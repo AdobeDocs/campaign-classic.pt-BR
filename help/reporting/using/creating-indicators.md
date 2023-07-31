@@ -2,12 +2,12 @@
 product: campaign
 title: Criar indicadores
 description: Criar indicadores
-feature: Reporting
+feature: Reporting, Monitoring
 hide: true
 hidefromtoc: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
 source-wordcount: '715'
 ht-degree: 100%
 
@@ -58,39 +58,39 @@ Clique no botão **[!UICONTROL Add]** para criar uma nova dimensão, em seguida,
 
 * Comece selecionando a **Idade** do recipient. Para esse campo, você pode definir uma compartimentalização para agrupar idades e facilitar a leitura das informações. Recomendamos o uso de compartimentalização quando houver a probabilidade de vários valores separados.
 
-   Para fazer isso, marque a opção **[!UICONTROL Enable binning]**. Os modos de delimitação são detalhados em [Vínculo de dados](../../reporting/using/concepts-and-methodology.md#data-binning).
+  Para fazer isso, marque a opção **[!UICONTROL Enable binning]**. Os modos de delimitação são detalhados em [Vínculo de dados](../../reporting/using/concepts-and-methodology.md#data-binning).
 
-   ![](assets/s_advuser_cube_wz_05.png)
+  ![](assets/s_advuser_cube_wz_05.png)
 
 * Adicione uma dimensão do tipo **Data.** Aqui, queremos exibir as datas de criação do perfil de recipient.
 
-   Para fazer isso, clique em **[!UICONTROL Add]** e selecione o campo **[!UICONTROL Creation date]** na tabela de recipients.
+  Para fazer isso, clique em **[!UICONTROL Add]** e selecione o campo **[!UICONTROL Creation date]** na tabela de recipients.
 
-   ![](assets/s_advuser_cube_wz_06.png)
+  ![](assets/s_advuser_cube_wz_06.png)
 
-   É possível selecionar o modo de exibição de data. Para fazer isso, selecione a hierarquia a ser usada e os níveis para gerar:
+  É possível selecionar o modo de exibição de data. Para fazer isso, selecione a hierarquia a ser usada e os níveis para gerar:
 
-   ![](assets/s_advuser_cube_wz_07.png)
+  ![](assets/s_advuser_cube_wz_07.png)
 
-   Em nosso exemplo, queremos apenas exibir anos, meses e dias já que não é possível trabalhar com semanas e semestres/meses ao mesmo tempo: esses níveis não são compatíveis.
+  Em nosso exemplo, queremos apenas exibir anos, meses e dias já que não é possível trabalhar com semanas e semestres/meses ao mesmo tempo: esses níveis não são compatíveis.
 
 * Crie outra dimensão para analisar dados relativos à cidade do recipient
 
-   Para fazer isso, adicione uma nova dimensão e selecione a cidade no nó **[!UICONTROL Location]** do schema do recipient.
+  Para fazer isso, adicione uma nova dimensão e selecione a cidade no nó **[!UICONTROL Location]** do schema do recipient.
 
-   ![](assets/s_advuser_cube_wz_08.png)
+  ![](assets/s_advuser_cube_wz_08.png)
 
-   Você pode habilitar a compartimentalização para facilitar a leitura das informações e vincular os valores a uma enumeração.
+  Você pode habilitar a compartimentalização para facilitar a leitura das informações e vincular os valores a uma enumeração.
 
-   ![](assets/s_advuser_cube_wz_09.png)
+  ![](assets/s_advuser_cube_wz_09.png)
 
-   Selecione a enumeração na lista suspensa.
+  Selecione a enumeração na lista suspensa.
 
-   ![](assets/s_advuser_cube_wz_10.png)
+  ![](assets/s_advuser_cube_wz_10.png)
 
-   Somente os valores na enumeração serão exibidos. Os outros serão agrupados pelo rótulo indicado no campo **[!UICONTROL Label of the other values]**.
+  Somente os valores na enumeração serão exibidos. Os outros serão agrupados pelo rótulo indicado no campo **[!UICONTROL Label of the other values]**.
 
-   Para obter mais informações, consulte [Gestão dinâmica de compartimentos](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
+  Para obter mais informações, consulte [Gestão dinâmica de compartimentos](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
 ## Criar indicadores {#building-indicators}
 
