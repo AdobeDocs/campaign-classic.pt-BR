@@ -2,14 +2,15 @@
 product: campaign
 title: Criar e gerenciar tarefas
 description: Criar e gerenciar tarefas
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '3729'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '3736'
 ht-degree: 100%
 
 ---
@@ -308,7 +309,7 @@ A tarefa de criação de recursos de marketing interage com o recurso vinculado 
 * Os operadores podem trabalhar no recurso normalmente (download ou upload, bloquear e desbloquear): isso não afeta a tarefa.
 * A aprovação e a publicação de recursos pode ser realizada por meio da tarefa: se a opção **[!UICONTROL Publish the marketing resource]** estiver habilitada, o recurso será aprovado e publicado automaticamente após a conclusão da tarefa. Se a opção não estiver habilitada, a tarefa e o recurso não interagem: atuando em um não afetará o outro.
 
-   É possível usar uma série de tarefas vinculadas para definir um ciclo de aprovação completo. Marque a opção **[!UICONTROL Publish the marketing resource]** somente para a última tarefa: todas as tarefas precisarão ser concluídas para que o recurso seja publicado. Além disso, quando você cria uma tarefa de recurso de marketing filho, o recurso será selecionado automaticamente na tarefa filho.
+  É possível usar uma série de tarefas vinculadas para definir um ciclo de aprovação completo. Marque a opção **[!UICONTROL Publish the marketing resource]** somente para a última tarefa: todas as tarefas precisarão ser concluídas para que o recurso seja publicado. Além disso, quando você cria uma tarefa de recurso de marketing filho, o recurso será selecionado automaticamente na tarefa filho.
 
    * **Por meio do recurso**: se enviar o recurso para aprovação ou aprová-lo, essas ações não afetarão a tarefa.
    * **Via the task**: se a opção **[!UICONTROL Publish the marketing resource]** estiver marcada na tarefa, o recurso será aprovado e publicado automaticamente após a conclusão da tarefa (veja acima). Se a opção não estiver marcada, a tarefa e o recurso não irão interagir: atuando em um não afetará o outro.
@@ -375,7 +376,7 @@ Durante a criação, os seguintes elementos devem ser inseridos na tarefa:
 * **Task end date**: data na qual o status da tarefa é alterado para **[!UICONTROL Finished]**. Por padrão, a data final é idêntica à data de início. No entanto, atribuir uma duração à tarefa permite que simbolizar a quantidade de tempo que o operador tem para agir no cronograma, se necessário.
 * **[!UICONTROL Description]**: o texto inserido aqui aparecerá no corpo do email de notificação.
 
-   ![](assets/mrm_task_notif_dashboard_msg.png)
+  ![](assets/mrm_task_notif_dashboard_msg.png)
 
 É possível adicionar um anexo à tarefa e ao email de notificação. Para fazer isso, clique no ícone **[!UICONTROL Documents]** na barra de ferramentas no canto superior direito.
 
@@ -437,7 +438,6 @@ Uma tarefa pode ser: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, *
 >* Mesmo que o período de validade seja concluído, as tarefas que não foram fechadas ainda aparecerão na lista de tarefas em andamento. Um aviso notifica os operadores que a tarefa está atrasada.
 >
 
-
 ### Status de progresso de uma tarefa {#progress-status-of-a-task}
 
 Além do status de execução, uma tarefa pode ser associada a um status de progresso: **[!UICONTROL Late]**, **[!UICONTROL To approve]**, **[!UICONTROL To do today]** ou **[!UICONTROL To do this week]**. Essas informações são inseridas automaticamente de acordo com o agendamento da tarefa.
@@ -466,7 +466,7 @@ Abaixo estão os estágios de um ciclo completo de vida de tarefa para o qual a 
    * do e-mail de notificação.
    * do console ou da interface da Web, no painel de tarefas.
 
-      ![](assets/s_ncs_user_task_start_rea.png)
+     ![](assets/s_ncs_user_task_start_rea.png)
 
 1. Sempre que um participante aprovar uma tarefa, o status do progresso da tarefa será atualizado.
 
