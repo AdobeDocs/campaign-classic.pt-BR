@@ -2,14 +2,15 @@
 product: campaign
 title: Gerenciamento de enumerações
 description: Gerenciamento de enumerações
+feature: Data Management
 badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '886'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '882'
 ht-degree: 100%
 
 ---
@@ -33,15 +34,15 @@ Os valores desse tipo de campo são definidos e a administração geral desses c
 * A seção superior oferece uma lista de campos para os quais uma lista discriminada foi definida.
 * A seção inferior lista os valores propostos. Esses valores serão repetidos nos editores que usam este campo.
 
-   ![](assets/s_ncs_user_itemized_list_values.png)
+  ![](assets/s_ncs_user_itemized_list_values.png)
 
-   Para criar um novo valor de enumeração, clique em **[!UICONTROL Add]**.
+  Para criar um novo valor de enumeração, clique em **[!UICONTROL Add]**.
 
-   ![](assets/s_ncs_user_itemized_list.png)
+  ![](assets/s_ncs_user_itemized_list.png)
 
-   Se a opção **[!UICONTROL Open]** for selecionada, o usuário poderá adicionar um novo valor de lista discriminada diretamente no campo correspondente. Uma mensagem de confirmação permite criar esse valor.
+  Se a opção **[!UICONTROL Open]** for selecionada, o usuário poderá adicionar um novo valor de lista discriminada diretamente no campo correspondente. Uma mensagem de confirmação permite criar esse valor.
 
-   ![](assets/s_ncs_user_itemized_list_new_value.png)
+  ![](assets/s_ncs_user_itemized_list_new_value.png)
 
 * Se a opção **[!UICONTROL Closed]** for selecionada, os usuários não poderão criar novos valores, mas apenas escolher entre os valores disponíveis.
 
@@ -61,9 +62,9 @@ O valor inserido é então:
 * ou automaticamente substituído pelo seu correspondente: nesse caso, este caso deve ser definido na guia **[!UICONTROL Alias]** Alias da lista discriminada,
 * ou armazenado na lista de aliases: um alias será atribuído a ele posteriormente.
 
-   >[!NOTE]
-   >
-   >Se precisar usar recursos de limpeza de dados, selecione a opção **[!UICONTROL Alias cleansing]** na lista discriminada.
+  >[!NOTE]
+  >
+  >Se precisar usar recursos de limpeza de dados, selecione a opção **[!UICONTROL Alias cleansing]** na lista discriminada.
 
 ### Uso de aliases {#using-aliases}
 
