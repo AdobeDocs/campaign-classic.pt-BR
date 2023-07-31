@@ -2,13 +2,13 @@
 product: campaign
 title: Pessoa, pessoas e recipients
 description: Pessoa, pessoas e recipients
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Reporting, Monitoring
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '703'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '715'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Como John não abriu e nem clicou no email, ele não aparece nos logs.
 
 **Cálculo intermediário:**
 
-|  | Recipients que clicaram | Pessoas que clicaram | Recipients que abriram |
+|   | Recipients que clicaram | Pessoas que clicaram | Recipients que abriram |
 |---|---|---|---|
 | John | - | - | - |
 | Total intermediário | 0 | 0 | 0 |
@@ -73,7 +73,7 @@ A abertura é atribuída a um destinatário: Marie. O Adobe Campaign, portanto, 
 
 **Cálculo intermediário:**
 
-|  | Recipients que clicaram | Pessoas que clicaram | Recipients que abriram |
+|   | Recipients que clicaram | Pessoas que clicaram | Recipients que abriram |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -95,7 +95,7 @@ Pessoas: quando o navegador do destinatário aceita cookies, o mesmo identificad
 
 **Cálculo intermediário:**
 
-|  | Recipients que clicaram | Pessoas que clicaram | Recipients que abriram |
+|   | Recipients que clicaram | Pessoas que clicaram | Recipients que abriram |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -116,7 +116,7 @@ Os seguintes logs correspondem à abertura e aos dois cliques realizados pela pe
 
 **Cálculo intermediário:**
 
-|  | Recipients que clicaram | Pessoas que clicaram | Recipients que abriram |
+|   | Recipients que clicaram | Pessoas que clicaram | Recipients que abriram |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -140,7 +140,7 @@ As aberturas e os 4 cliques realizados pelo Henry aparecem nos seguintes logs:
 
 **Cálculo intermediário:**
 
-|  | Recipients que clicaram | Pessoas que clicaram | Recipients que abriram |
+|   | Recipients que clicaram | Pessoas que clicaram | Recipients que abriram |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -173,4 +173,3 @@ A reatividade bruta e a estimativa de encaminhamento são calculadas como descri
 >* A representa o indicador **[!UICONTROL Clicks]** (destinatários que clicaram).
 >* B representa o indicador **[!UICONTROL Distinct clicks for the population reached]** (pessoas que clicaram).
 >* C representa o indicador **[!UICONTROL Distinct opens for the population reached]** (destinatários que abriram).
-
