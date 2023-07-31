@@ -2,13 +2,13 @@
 product: campaign
 title: Usar um relatório de análise
 description: Usar um relatório de análise
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '816'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '828'
 ht-degree: 100%
 
 ---
@@ -94,7 +94,7 @@ No exemplo a seguir, as estatísticas são exibidas em colunas.
 * **[!UICONTROL Sort from A to Z]** para classificar os valores da variável de baixo para cima.
 * **[!UICONTROL Sort from Z to A]** para classificar os valores da variável de cima para baixo.
 
-   ![](assets/s_ncs_advuser_report_wizard_016.png)
+  ![](assets/s_ncs_advuser_report_wizard_016.png)
 
 Para retornar à exibição inicial, atualize a visualização.
 
@@ -111,11 +111,11 @@ As seguintes opções estão disponíveis:
 * A opção **[!UICONTROL Accumulate values]** permite adicionar valores de uma série a outra.
 * É possível decidir se exibe ou não a legenda do gráfico: para ocultá-la, desmarque a opção apropriada. Por padrão, a legenda é exibida fora do gráfico no canto superior direito.
 
-   A legenda também pode ser exibida na parte superior do gráfico para salvar espaço de visualização. Para fazer isso, selecione a opção **[!UICONTROL Include in the chart]**
+  A legenda também pode ser exibida na parte superior do gráfico para salvar espaço de visualização. Para fazer isso, selecione a opção **[!UICONTROL Include in the chart]**
 
-   Selecione o alinhamento vertical e horizontal na lista suspensa **[!UICONTROL Caption position]**.
+  Selecione o alinhamento vertical e horizontal na lista suspensa **[!UICONTROL Caption position]**.
 
-   ![](assets/s_ncs_advuser_report_wizard_3d.png)
+  ![](assets/s_ncs_advuser_report_wizard_3d.png)
 
 ## Exportar um relatório de análise {#exporting-an-analysis-report}
 
