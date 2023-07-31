@@ -2,15 +2,16 @@
 product: campaign
 title: Criação de filtros
 description: Criação de filtros
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Profiles
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '1963'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '1975'
 ht-degree: 100%
 
 ---
@@ -35,9 +36,9 @@ Os seguintes tipos de filtro estão disponíveis no Adobe Campaign:
 
 * **Filtros padrão**
 
-   O **filtro padrão** pode ser acessado nos campos acima das listas. Ele permite aplicar filtros em campos predefinidos (para perfis de destinatários, esses são o nome e endereço de email por padrão). Você pode usar os campos para inserir os caracteres para filtrar ou selecionar as condições do filtro de uma lista suspensa.
+  O **filtro padrão** pode ser acessado nos campos acima das listas. Ele permite aplicar filtros em campos predefinidos (para perfis de destinatários, esses são o nome e endereço de email por padrão). Você pode usar os campos para inserir os caracteres para filtrar ou selecionar as condições do filtro de uma lista suspensa.
 
-   ![](assets/filters_recipient_default_filter.png)
+  ![](assets/filters_recipient_default_filter.png)
 <!--
   >[!NOTE]
   >
@@ -47,31 +48,31 @@ Os seguintes tipos de filtro estão disponíveis no Adobe Campaign:
 
 * **Filtros simples**
 
-   **Filtros simples** são os filtros únicos nas colunas. Eles são definidos com um ou mais critérios de pesquisa simples nas colunas exibidas.
+  **Filtros simples** são os filtros únicos nas colunas. Eles são definidos com um ou mais critérios de pesquisa simples nas colunas exibidas.
 
-   Você pode combinar vários filtros simples na mesma lista de dados para refinar sua pesquisa. Os campos de filtro são exibidos um abaixo do outro. Eles podem ser excluídos de maneira independente.
+  Você pode combinar vários filtros simples na mesma lista de dados para refinar sua pesquisa. Os campos de filtro são exibidos um abaixo do outro. Eles podem ser excluídos de maneira independente.
 
-   ![](assets/filters_recipient_simple_filter.png)
+  ![](assets/filters_recipient_simple_filter.png)
 
-   Filtros simples são detalhados em [Criar um filtro simples](#creating-a-simple-filter).
+  Filtros simples são detalhados em [Criar um filtro simples](#creating-a-simple-filter).
 
 * **Filtros avançados**
 
-   **Filtros avançados** são criados usando uma query ou combinação de queries sobre os dados.
+  **Filtros avançados** são criados usando uma query ou combinação de queries sobre os dados.
 
-   Para obter mais informações sobre como criar um filtro avançado, consulte [Criar um filtro avançado](#creating-an-advanced-filter).
+  Para obter mais informações sobre como criar um filtro avançado, consulte [Criar um filtro avançado](#creating-an-advanced-filter).
 
-   Você pode usar funções para definir o conteúdo do filtro. Para obter mais informações, consulte [Criar um filtro avançado com funções](#creating-an-advanced-filter-with-functions).
+  Você pode usar funções para definir o conteúdo do filtro. Para obter mais informações, consulte [Criar um filtro avançado com funções](#creating-an-advanced-filter-with-functions).
 
-   >[!NOTE]
-   >
-   >Para obter mais informações sobre criação de queries no Adobe Campaign, consulte [esta seção](../../platform/using/about-queries-in-campaign.md).
+  >[!NOTE]
+  >
+  >Para obter mais informações sobre criação de queries no Adobe Campaign, consulte [esta seção](../../platform/using/about-queries-in-campaign.md).
 
 * **Filtros de usuário**
 
-   Um **filtro de aplicativo** é um filtro avançado que foi salvo, para usar e compartilhar sua configuração com outros operadores.
+  Um **filtro de aplicativo** é um filtro avançado que foi salvo, para usar e compartilhar sua configuração com outros operadores.
 
-   O botão **[!UICONTROL Filters]** acima das listas oferece um conjunto de filtros de aplicação que podem ser combinados para refinar a filtragem. O método para criar esses filtros é apresentado em [Salvar um filtro](#saving-a-filter).
+  O botão **[!UICONTROL Filters]** acima das listas oferece um conjunto de filtros de aplicação que podem ser combinados para refinar a filtragem. O método para criar esses filtros é apresentado em [Salvar um filtro](#saving-a-filter).
 
 ## Alterar o filtro padrão {#altering-the-default-filter}
 
@@ -188,15 +189,15 @@ Filtros avançados podem usar funções; **filtros com funções** são criados 
    * **[!UICONTROL User filter]** para selecionar um dos filtros de usuário existentes. Os filtros de usuário são detalhados em [Salvar um filtro](#saving-a-filter).
    * **[!UICONTROL Expression]** para acessar o editor de expressões.
 
-      O editor de expressão permite definir um filtro avançado. Ele tem a seguinte aparência:
+     O editor de expressão permite definir um filtro avançado. Ele tem a seguinte aparência:
 
-      ![](assets/s_ncs_user_create_exp_exple01.png)
+     ![](assets/s_ncs_user_create_exp_exple01.png)
 
-      Ele permite selecionar campos nas tabelas do banco de dados e anexar funções avançadas a eles: selecione a função a ser usada na **[!UICONTROL List of functions]**. As funções disponíveis são detalhadas em [Lista de funções](../../platform/using/defining-filter-conditions.md#list-of-functions). Em seguida, selecione o campo ou os campos relacionados pelas funções e clique em **[!UICONTROL OK]** para aprovar a expressão.
+     Ele permite selecionar campos nas tabelas do banco de dados e anexar funções avançadas a eles: selecione a função a ser usada na **[!UICONTROL List of functions]**. As funções disponíveis são detalhadas em [Lista de funções](../../platform/using/defining-filter-conditions.md#list-of-functions). Em seguida, selecione o campo ou os campos relacionados pelas funções e clique em **[!UICONTROL OK]** para aprovar a expressão.
 
-      >[!NOTE]
-      >
-      >Para obter um exemplo de criação de filtro com base em uma expressão, consulte [esta seção](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is).
+     >[!NOTE]
+     >
+     >Para obter um exemplo de criação de filtro com base em uma expressão, consulte [esta seção](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is).
 
 ## Salvar um filtro {#saving-a-filter}
 
@@ -208,13 +209,13 @@ Esses filtros também podem ser acessados diretamente pelo assistente de deliver
 
 * Converter um filtro avançado em um filtro de aplicação. Para fazer isso, clique em **[!UICONTROL Save]** antes de fechar o editor de filtro avançado.
 
-   ![](assets/s_ncs_user_filter_save.png)
+  ![](assets/s_ncs_user_filter_save.png)
 
 * Crie este filtro de aplicação por meio do nó **[!UICONTROL Administration > Configuration > Predefined filters]** da árvore (ou **[!UICONTROL Profiles and targets > Predefined filters]** para destinatários). Para fazer isso, clique com o botão direito do mouse na lista de filtros e selecione **[!UICONTROL New...]**. O procedimento é o mesmo para criar filtros avançados.
 
-   O campo **[!UICONTROL Label]** permite nomear esse filtro. Esse nome aparecerá na caixa combo do botão **[!UICONTROL Filters...]**.
+  O campo **[!UICONTROL Label]** permite nomear esse filtro. Esse nome aparecerá na caixa combo do botão **[!UICONTROL Filters...]**.
 
-   ![](assets/user_filter_apply.png)
+  ![](assets/user_filter_apply.png)
 
 É possível excluir todos os filtros na lista atual clicando com o botão direito do mouse e selecionando **[!UICONTROL No filter]** ou usando o ícone **[!UICONTROL Filters]** acima da lista.
 
@@ -349,15 +350,15 @@ Exemplos de como os dados são calculados:
 
 * Seleciona destinatários com menos de 30 anos de idade:
 
-   ![](assets/predefined_filters_01.png)
+  ![](assets/predefined_filters_01.png)
 
 * Seleciona destinatários acima de 18 anos de idade:
 
-   ![](assets/predefined_filters_03.png)
+  ![](assets/predefined_filters_03.png)
 
 * Seleciona destinatários entre 18 e 30 anos:
 
-   ![](assets/predefined_filters_02.png)
+  ![](assets/predefined_filters_02.png)
 
 ## Configurações avançadas para filtros de dados {#advanced-settings-for-data-filters}
 
@@ -365,17 +366,17 @@ Clique na guia **[!UICONTROL Settings]** para acessar as seguintes opções:
 
 * **[!UICONTROL Default filter for the associated document type]**: esta opção permite sugerir esse filtro como padrão no editor das listas relacionadas à classificação.
 
-   Por exemplo, o filtro **[!UICONTROL By name or login]** é aplicado aos operadores. Essa opção é selecionada e o filtro sempre é oferecido em todas as listas de operadores.
+  Por exemplo, o filtro **[!UICONTROL By name or login]** é aplicado aos operadores. Essa opção é selecionada e o filtro sempre é oferecido em todas as listas de operadores.
 
 * **[!UICONTROL Filter shared with other operators]**: esta opção permite disponibilizar o filtro para todos os outros operadores no banco de dados atual.
 * **[!UICONTROL Use parameter entry form]**: esta opção permite definir os campos de filtro a serem exibido acima da lista quando esse filtro for selecionado. Esses campos permitem definir as configurações de filtro. Este formulário deve ser inserido no formato XML por meio do botão **[!UICONTROL Form]**. Por exemplo, o filtro pré-configurado **[!UICONTROL Recipients who have opened]**, disponível na lista de destinatários, exibe um campo de filtro que permite selecionar o delivery em que o filtro é direcionado.
 
-   O botão **[!UICONTROL Preview]** exibe o resultado do filtro selecionado.
+  O botão **[!UICONTROL Preview]** exibe o resultado do filtro selecionado.
 
 * O link **[!UICONTROL Advanced parameters]** permite definir configurações adicionais. Especificamente, você pode associar uma tabela SQL ao filtro para torná-la comum a todos os editores que a compartilham.
 
-   Selecione a opção **[!UICONTROL Do not restrict the filter]** se desejar que o usuário pare de substituir esse filtro.
+  Selecione a opção **[!UICONTROL Do not restrict the filter]** se desejar que o usuário pare de substituir esse filtro.
 
-   Essa opção está habilitada para os filtros &quot;Destinatários de um delivery&quot; e &quot;Destinatários de deliveries pertencentes a uma pasta&quot; oferecidos no assistente de delivery que não pode ser sobrecarregado.
+  Essa opção está habilitada para os filtros &quot;Destinatários de um delivery&quot; e &quot;Destinatários de deliveries pertencentes a uma pasta&quot; oferecidos no assistente de delivery que não pode ser sobrecarregado.
 
-   ![](assets/s_ncs_user_filter_advanced_param.png)
+  ![](assets/s_ncs_user_filter_advanced_param.png)
