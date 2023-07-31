@@ -2,15 +2,16 @@
 product: campaign
 title: Configuração da integração de públicos compartilhados no Adobe Campaign
 description: Saiba como configurar a integração de públicos compartilhada
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Audiences, People Core Service Integration
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '484'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '496'
 ht-degree: 100%
 
 ---
@@ -51,9 +52,9 @@ Primeiro, precisamos configurar ou verificar as contas externas no Adobe Campaig
    * **[!UICONTROL AWS S3 Account Server]**
 O URL do servidor deve ser preenchido da seguinte maneira:
 
-      ```
-      <S3bucket name>.s3.amazonaws.com/<s3object path>
-      ```
+     ```
+     <S3bucket name>.s3.amazonaws.com/<s3object path>
+     ```
 
    * **[!UICONTROL AWS access key ID]**
 Para saber onde encontrar a ID da chave de acesso AWS, consulte esta [página](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
@@ -63,6 +64,7 @@ Para saber onde encontrar a chave de acesso secreta para o AWS, consulte esta [p
 
    * **[!UICONTROL AWS Region]**
 Para saber mais sobre a região do AWS, consulte esta [página](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+
    ![](assets/aam_config_2.png)
 
 1. Clique em **[!UICONTROL Save]** e configure a conta externa **[!UICONTROL Import audiences from the Adobe Marketing Cloud]** conforme detalhado nas etapas anteriores.
