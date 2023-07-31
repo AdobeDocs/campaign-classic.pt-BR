@@ -2,14 +2,15 @@
 product: campaign
 title: Fóruns de discussão
 description: Saiba como usar os fóruns de discussão do Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '728'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '735'
 ht-degree: 100%
 
 ---
@@ -84,23 +85,23 @@ A inscrição de um fórum permite seguir as discussões. Inscritos receberão u
 
 * Para se inscrever em um fórum, clique no botão **[!UICONTROL Follow discussions]** na seção superior direita acima da lista de mensagens.
 
-   ![](assets/mrm_forum_subscribe.png)
+  ![](assets/mrm_forum_subscribe.png)
 
-   A seção fica azul e mostra que está inscrito no fórum.
+  A seção fica azul e mostra que está inscrito no fórum.
 
 * Para cancelar a inscrição de um fórum, clique no botão **[!UICONTROL Unsubscribe]**.
 
-   ![](assets/mrm_forum_unsubscribe.png)
+  ![](assets/mrm_forum_unsubscribe.png)
 
 * O painel pessoal lista os fóruns inscritos. Clique no link **[!UICONTROL Subscription to discussion forums]** para exibir a lista e, em seguida, clique no item que lhe interessa para acessar seu fórum.
 
-   ![](assets/platform_dashboard_operator_subscr_forums.png)
+  ![](assets/platform_dashboard_operator_subscr_forums.png)
 
-   Para obter mais informações sobre painéis pessoais, consulte [esta seção](../../platform/using/access-management-operators.md).
+  Para obter mais informações sobre painéis pessoais, consulte [esta seção](../../platform/using/access-management-operators.md).
 
 * Para ver quem se inscreveu em um fórum, clique no link **[!UICONTROL List of subscribers to this discussion forum]** acima da lista de mensagens.
 
-   ![](assets/mrm_forum_subscribers.png)
+  ![](assets/mrm_forum_subscribers.png)
 
 ## Verificar entrega de notificação {#checking-notification-delivery}
 
@@ -112,4 +113,5 @@ Se os operadores inscritos em um fórum não receberem notificações conforme e
 
    * Na página inicial do Adobe Campaign, vá para **[!UICONTROL Campaigns > Navigation > Deliveries]**, então abra o delivery de **[!UICONTROL Discussion forum notification]**.
    * No explorer, acesse **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**, em seguida clique em **[!UICONTROL Discussion forum notifications]**.
-   Na caixa **[!UICONTROL Discussion forum notifications]**, os logs do delivery são encontrados na guia **[!UICONTROL Edit > Delivery]**. Também é possível visualizá-los nas guias **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]**.
+
+  Na caixa **[!UICONTROL Discussion forum notifications]**, os logs do delivery são encontrados na guia **[!UICONTROL Edit > Delivery]**. Também é possível visualizá-los nas guias **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]**.
