@@ -3,11 +3,11 @@ product: campaign
 title: Cálculo do indicador
 description: Cálculo do indicador
 badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-feature: Reporting
+feature: Reporting, Monitoring
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '2983'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '2979'
 ht-degree: 100%
 
 ---
