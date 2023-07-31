@@ -2,14 +2,14 @@
 product: campaign
 title: Sincronizar públicos
 description: Saiba como sincronizar públicos com o ACS Connector
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: ht
-source-wordcount: '1133'
+source-wordcount: '1140'
 ht-degree: 100%
 
 ---
@@ -149,6 +149,6 @@ Quando a entrega e seu conteúdo estiverem prontos, você pode enviá-la.
    * **No Campaign Standard**: acesse [reports](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=pt-BR) e [logs](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=pt-BR) relacionados como em qualquer delivery.
    * **no Campaign v7 e no Campaign Standard**: IDs de delivery, logs amplos de email e de rastreamento de email são sincronizados com o Campaign v7. Você pode obter a visão de 360° das campanhas de marketing do Campaign v7.
 
-      As quarentenas são sincronizados automaticamente de volta ao Campaign v7. Isso possibilita que as informações não entregues sejam consideradas para o próximo target realizado no Campaign v7.
+     As quarentenas são sincronizados automaticamente de volta ao Campaign v7. Isso possibilita que as informações não entregues sejam consideradas para o próximo target realizado no Campaign v7.
 
-      Você pode encontrar mais informações sobre gestão de quarentena no Campaign Standard [nesta seção](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=pt-BR).
+     Você pode encontrar mais informações sobre gestão de quarentena no Campaign Standard [nesta seção](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=pt-BR).
