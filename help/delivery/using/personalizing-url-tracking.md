@@ -2,13 +2,13 @@
 product: campaign
 title: Configurar opções de rastreamento de URL
 description: Saiba como configurar opções de rastreamento de URL
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring, Email Design
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Monitoring, Email Design, Personalization
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '167'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '179'
 ht-degree: 100%
 
 ---
@@ -29,9 +29,9 @@ As configurações avançadas de rastreamento de mensagem são acessíveis por m
 
 * Ativar/desativar rastreamento de URL para todas as mensagens.
 
-   >[!CAUTION]
-   >
-   >Quando o rastreamento não é ativado em um delivery (ou seja, a opção **[!UICONTROL Activate tracking]** não está selecionada), os relatórios e dados relacionados ao rastreamento não estão disponíveis: os relatórios Opens, Hot click e tracked URLs não exibirão dados, e as guias **[!UICONTROL Tracking logs]** não serão exibidas para esse delivery.
+  >[!CAUTION]
+  >
+  >Quando o rastreamento não é ativado em um delivery (ou seja, a opção **[!UICONTROL Activate tracking]** não está selecionada), os relatórios e dados relacionados ao rastreamento não estão disponíveis: os relatórios Opens, Hot click e tracked URLs não exibirão dados, e as guias **[!UICONTROL Tracking logs]** não serão exibidas para esse delivery.
 
 * A opção Ativar/desativar rastreamento para mensagem é aberta.
 
