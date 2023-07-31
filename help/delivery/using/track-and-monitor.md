@@ -2,13 +2,13 @@
 product: campaign
 title: Rastrear e monitorar mensagens
 description: Saiba como rastrear e monitorar mensagens
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Monitoring, Reporting
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '438'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '450'
 ht-degree: 100%
 
 ---
