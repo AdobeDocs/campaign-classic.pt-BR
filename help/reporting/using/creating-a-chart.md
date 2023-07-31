@@ -2,13 +2,13 @@
 product: campaign
 title: Criar um gráfico
 description: Saiba como criar um gráfico
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '525'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '537'
 ht-degree: 100%
 
 ---
@@ -39,15 +39,15 @@ Para criar um gráfico em um relatório, siga as etapas abaixo:
 
    * Clique no link **[!UICONTROL Filter data...]** para definir os critérios de filtragem para os dados no banco de dados.
 
-      ![](assets/reporting_graph_add_filter.png)
+     ![](assets/reporting_graph_add_filter.png)
 
    * Para usar dados contextuais, selecione **[!UICONTROL Context data]** no menu suspenso **[!UICONTROL Source]** e clique no link **[!UICONTROL Advanced settings...]**. Selecione os dados que a estatística abordará.
 
-      ![](assets/reporting_graph_from_context.png)
+     ![](assets/reporting_graph_from_context.png)
 
-      É possível acessar os dados contextuais para definir os valores a serem exibidos no gráfico:
+     É possível acessar os dados contextuais para definir os valores a serem exibidos no gráfico:
 
-      ![](assets/reporting_graph_select-from_context.png)
+     ![](assets/reporting_graph_select-from_context.png)
 
 ## Tipos e variantes de gráfico {#chart-types-and-variants}
 
