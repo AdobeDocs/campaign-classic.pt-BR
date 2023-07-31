@@ -2,13 +2,13 @@
 product: campaign
 title: Solução de problemas de SMS
 description: Saiba como solucionar problemas do canal de SMS
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: SMS
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: SMS, Troubleshooting
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '2744'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '2756'
 ht-degree: 100%
 
 ---
@@ -35,11 +35,11 @@ Depois de verificar cada conta individualmente, há dois cenários possíveis:
 
 * **O problema ocorreu em uma ou em várias contas**
 
-   Nesse caso, você pode aplicar outros procedimentos de solução de problemas a cada conta individualmente. É melhor desativar outras contas ao diagnosticar uma conta para reduzir o tráfego de rede e o número de logs.
+  Nesse caso, você pode aplicar outros procedimentos de solução de problemas a cada conta individualmente. É melhor desativar outras contas ao diagnosticar uma conta para reduzir o tráfego de rede e o número de logs.
 
 * **O problema não ocorreu quando apenas uma conta estava ativa a qualquer momento**
 
-   Você tem um conflito entre contas. Como mencionado anteriormente, o Adobe Campaign trata as contas individualmente, mas o provedor pode tratá-las como uma única conta.
+  Você tem um conflito entre contas. Como mencionado anteriormente, o Adobe Campaign trata as contas individualmente, mas o provedor pode tratá-las como uma única conta.
 
    * Você está usando diferentes combinações de logon/senha em todas as suas contas.
 Você terá que entrar em contato com o provedor para diagnosticar possíveis conflitos referentes a ele.
@@ -54,17 +54,17 @@ O Adobe Campaign dá suporte à manipulação de vários códigos curtos na mesm
 
 * Verifique se o conector foi alterado recentemente e por quem (verifique as Contas externas como um grupo).
 
-   ```
-   select saccount, (sserver ||':'||sport) as serverPort, iextaccountid, CASE WHEN N0.iactive=1 THEN 'Yes' ELSE 'No' END as "(x) Enabled",
-   
-   (select X1.sname from xtkoperator X1 where N0.icreatedbyid = X1.ioperatorid) as "Created By",
-   
-   (select X1.sname from xtkoperator X1 where N0.imodifiedbyid = X1.ioperatorid) as "Last Modified By",
-   
-   N0.slabel as "External Account", N0.tslastmodified as "LastModifiedDate"
-   
-   from nmsextaccount N0 LEFT JOIN xtkoperator X0 ON (N0.icreatedbyid=X0.ioperatorid) order by 8 DESC LIMIT 50;
-   ```
+  ```
+  select saccount, (sserver ||':'||sport) as serverPort, iextaccountid, CASE WHEN N0.iactive=1 THEN 'Yes' ELSE 'No' END as "(x) Enabled",
+  
+  (select X1.sname from xtkoperator X1 where N0.icreatedbyid = X1.ioperatorid) as "Created By",
+  
+  (select X1.sname from xtkoperator X1 where N0.imodifiedbyid = X1.ioperatorid) as "Last Modified By",
+  
+  N0.slabel as "External Account", N0.tslastmodified as "LastModifiedDate"
+  
+  from nmsextaccount N0 LEFT JOIN xtkoperator X0 ON (N0.icreatedbyid=X0.ioperatorid) order by 8 DESC LIMIT 50;
+  ```
 
 * Verifique (no diretório /postupgrade) se o sistema foi atualizado e quando
 * Verifique se algum pacote que afeta o SMS pode ter sido atualizado recentemente (/var/log/dpkg.log).
