@@ -2,13 +2,13 @@
 product: campaign
 title: Introdução à análise descritiva
 description: Introdução à análise descritiva
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '201'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '213'
 ht-degree: 100%
 
 ---
@@ -25,15 +25,15 @@ Esses relatórios abordam populações e devem ser usados somente para analisar 
 
 * Tabela e histograma:
 
-   ![](assets/reporting_descriptive_sample_1.png)
+  ![](assets/reporting_descriptive_sample_1.png)
 
 * Valores acumulados, sem a tabela:
 
-   ![](assets/reporting_descriptive_sample_3.png)
+  ![](assets/reporting_descriptive_sample_3.png)
 
 * Detalhamento por linha de negócios
 
-   ![](assets/reporting_descriptive_sample_2.png)
+  ![](assets/reporting_descriptive_sample_2.png)
 
 As análises quantitativas fornecem estatísticas gerais sobre os dados numéricos da seleção, conforme mostrado abaixo:
 
