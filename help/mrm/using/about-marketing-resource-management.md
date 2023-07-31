@@ -2,14 +2,15 @@
 product: campaign
 title: Introdução ao gerenciamento de recursos de marketing
 description: Sobre o gerenciamento de recursos de marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '375'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '382'
 ht-degree: 100%
 
 ---
@@ -34,15 +35,15 @@ No contexto do Gerenciamento de recursos de marketing do Adobe Campaign, os segu
 
 * **Tarefa**
 
-   Uma tarefa corresponde a uma ação a ser executada no contexto de uma campanha. Uma tarefa é atribuída a um grupo ou pessoa. Uma tarefa filho pode ser dependente de uma tarefa pai, significando que a tarefa pai não será executada até que todas as tarefas filho sejam concluídas. Exemplos de tarefas incluem: referenciar um site, uma análise de orçamento, um sumário, etc.
+  Uma tarefa corresponde a uma ação a ser executada no contexto de uma campanha. Uma tarefa é atribuída a um grupo ou pessoa. Uma tarefa filho pode ser dependente de uma tarefa pai, significando que a tarefa pai não será executada até que todas as tarefas filho sejam concluídas. Exemplos de tarefas incluem: referenciar um site, uma análise de orçamento, um sumário, etc.
 
-   Para obter mais informações, consulte [Criar e gerenciar tarefas](../../mrm/using/creating-and-managing-tasks.md).
+  Para obter mais informações, consulte [Criar e gerenciar tarefas](../../mrm/using/creating-and-managing-tasks.md).
 
 * **Recursos de marketing**
 
-   O Adobe Campaign permite acompanhar o progresso de projetos de marketing colaborativo, como mídia de comunicação, planos de ação, boletins informativos etc. O ciclo de criação e aprovação desses recursos de marketing pode ser monitorado pelo painel de recursos até sua publicação.
+  O Adobe Campaign permite acompanhar o progresso de projetos de marketing colaborativo, como mídia de comunicação, planos de ação, boletins informativos etc. O ciclo de criação e aprovação desses recursos de marketing pode ser monitorado pelo painel de recursos até sua publicação.
 
-   Para obter mais informações, consulte [Gerenciamento de recursos de marketing](../../mrm/using/managing-marketing-resources.md).
+  Para obter mais informações, consulte [Gerenciamento de recursos de marketing](../../mrm/using/managing-marketing-resources.md).
 
 >[!NOTE]
 >
