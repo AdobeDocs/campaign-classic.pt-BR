@@ -2,14 +2,15 @@
 product: campaign
 title: Usar o explorador do Adobe Campaign
 description: Saiba como usar o Explorador do Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '442'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '449'
 ht-degree: 100%
 
 ---
@@ -50,24 +51,24 @@ Saiba como definir permissões em pastas [nesta seção](access-management-folde
 
 * **Usar pastas integradas**
 
-   Usar as pastas integradas faz com que as pessoas não envolvidas no projeto usem, mantenham e solucionem problemas do aplicativo com mais facilidade. Você não deve criar estruturas de pastas personalizadas para recipients, listas, deliveries etc., mas usar as pastas padrão, como Administração, Perfis e direcionamentos e Gestão de campanha.
+  Usar as pastas integradas faz com que as pessoas não envolvidas no projeto usem, mantenham e solucionem problemas do aplicativo com mais facilidade. Você não deve criar estruturas de pastas personalizadas para recipients, listas, deliveries etc., mas usar as pastas padrão, como Administração, Perfis e direcionamentos e Gestão de campanha.
 
 * **Criar subpastas**
 
-   Coloque workflows técnicos na pasta padrão: Administração/Produção/Workflows técnicos e crie subdiretórios por tipo de fluxo de trabalho.
+  Coloque workflows técnicos na pasta padrão: Administração/Produção/Workflows técnicos e crie subdiretórios por tipo de fluxo de trabalho.
 
 * **Definir uma convenção de nomenclatura**
 
-   Por exemplo, é possível nomear os workflows em ordem alfabética, para que apareçam classificados na ordem de execução.
+  Por exemplo, é possível nomear os workflows em ordem alfabética, para que apareçam classificados na ordem de execução.
 
-   Por exemplo:
+  Por exemplo:
 
    * A1 - importar recipients, começa às 10h;
    * A2 - importar tíquetes, começa às 11h.
 
 * **Criar modelos para os usuários começarem com**
 
-   Crie templates de delivery, templates de fluxo de trabalho, templates de campanha específicos para usuários. Essa estrutura pode economizar tempo e garantir que o mapeamento de delivery e as tipologias corretas sejam usadas para cada usuário.
+  Crie templates de delivery, templates de fluxo de trabalho, templates de campanha específicos para usuários. Essa estrutura pode economizar tempo e garantir que o mapeamento de delivery e as tipologias corretas sejam usadas para cada usuário.
 
 ## Resolução da tela {#screen-resolution}
 
