@@ -2,15 +2,16 @@
 product: campaign
 title: Criação de processos de importação e exportação
 description: Saiba como criar processos de importação e exportação no Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Templates
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 85c48712-3704-41db-a255-a07ca8d02ec4
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '132'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '144'
 ht-degree: 100%
 
 ---
@@ -23,17 +24,17 @@ Após a configuração dos modelos, as operações de importação e exportaçã
 
 * Na seção **[!UICONTROL Profiles and targets]** do espaço de trabalho do Adobe Campaign, clique no link **[!UICONTROL Jobs]**: isso permitirá o acesso à lista de importações e exportações existentes.
 
-   Clique no botão **[!UICONTROL Create]** e selecione o tipo de trabalho que deseja executar.
+  Clique no botão **[!UICONTROL Create]** e selecione o tipo de trabalho que deseja executar.
 
-   ![](assets/s_ncs_user_import_from_home.png)
+  ![](assets/s_ncs_user_import_from_home.png)
 
 * Além disso, é possível iniciar importações e exportações na seção **[!UICONTROL Monitoring]** do espaço de trabalho: dois links dedicados permitem que você inicie a importação ou exportação diretamente.
 
-   ![](assets/s_ncs_user_import_from_production.png)
+  ![](assets/s_ncs_user_import_from_production.png)
 
 * Por fim, importações e exportações também podem ser iniciadas no explorador do Adobe Campaign.
 
-   ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
+  ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 
 
 Todos estes são assistentes de importação ou exportação de dados abertos. Eles estão detalhados nestas seções:
