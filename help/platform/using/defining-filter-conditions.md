@@ -2,15 +2,16 @@
 product: campaign
 title: Definição de condições de filtro
 description: Definição de condições de filtro
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Query Editor
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '3229'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '3241'
 ht-degree: 100%
 
 ---
@@ -134,15 +135,15 @@ Clique em **[!UICONTROL And]** (oferecido por padrão) e escolha na lista suspen
 * **[!UICONTROL And]**: adiciona uma condição e permite a filtragem excessiva.
 * **[!UICONTROL Or]**: adiciona uma condição e permite a filtragem excessiva.
 
-   O exemplo a seguir permite localizar destinatários cujo domínio de email contenha &quot;orange.co.uk&quot; ou cujo código postal começa com &quot;NW&quot;.
+  O exemplo a seguir permite localizar destinatários cujo domínio de email contenha &quot;orange.co.uk&quot; ou cujo código postal começa com &quot;NW&quot;.
 
-   ![](assets/query_condition_modif_02.png)
+  ![](assets/query_condition_modif_02.png)
 
 * **[!UICONTROL Except]**: se você tiver dois filtros e o primeiro não retornar um valor, esse tipo de vínculo criará uma exceção.
 
-   No exemplo a seguir, queremos retornar destinatários cujo domínio de email contenha &quot;orange.co.uk&quot;, exceto se o sobrenome do destinatário for &quot;Smith&quot;.
+  No exemplo a seguir, queremos retornar destinatários cujo domínio de email contenha &quot;orange.co.uk&quot;, exceto se o sobrenome do destinatário for &quot;Smith&quot;.
 
-   ![](assets/query_condition_modif_03.png)
+  ![](assets/query_condition_modif_03.png)
 
 Este exemplo mostra um filtro que permite exibir: destinatários que falam espanhol, ou que são mulheres com números de celular, ou ainda destinatários sem um número de conta e cujo nome da empresa começa com a letra &quot;N&quot;.
 
@@ -155,7 +156,7 @@ Esta seção explica como priorizar condições com ajuda das setas azuis na bar
 * A seta apontando para a direita permite adicionar um nível de parênteses ao filtro.
 * A seta apontando para a esquerda permite excluir um nível de parêntese selecionado do filtro.
 
-   ![](assets/query_condition_modif_04.png)
+  ![](assets/query_condition_modif_04.png)
 
 * As setas verticais permitem mover uma condição, alterando assim sua sequência de execução.
 
@@ -266,7 +267,6 @@ Vincular a uma tabela e elemento de coleção:
 >* Altere a ordem das colunas de saída usando as setas.
 >* O **[!UICONTROL Distribution of values]** é uma maneira de exibir a distribuição dos valores do campo selecionado (por exemplo, as distribuições vinculadas às cidades de recipients, idiomas do recipient, etc.).
 
-
 ## Criar campos calculados {#creating-calculated-fields}
 
 Se necessário, adicione uma coluna durante a formatação de dados. Um campo calculado adiciona uma coluna à seção de visualização de dados. Clique em **[!UICONTROL Add a calculated field]**.
@@ -277,25 +277,25 @@ Existem quatro tipos de campos calculados:
 
 * **[!UICONTROL Fixed string]**: permite adicionar uma string.
 
-   ![](assets/query_editor_nveau_60.png)
+  ![](assets/query_editor_nveau_60.png)
 
 * **[!UICONTROL String with JavaScript tags]**: o valor do campo calculado combina uma string e diretivas JavaScript.
 
-   ![](assets/query_editor_nveau_61.png)
+  ![](assets/query_editor_nveau_61.png)
 
 * **[!UICONTROL JavaScript expression]**: o valor do campo calculado é o resultado de uma avaliação de função JavaScript. O valor retornado pode ser digitado (número, data etc.).
 
-   ![](assets/query_editor_nveau_62.png)
+  ![](assets/query_editor_nveau_62.png)
 
 * **[!UICONTROL Enumerations]**: esse tipo de campo permite usar/modificar o conteúdo de uma das colunas de saída em uma nova coluna.
 
-   É possível usar o valor de origem de uma coluna e fornecer um valor de destino. Esse valor de destino será exibido na nova coluna de saída.
+  É possível usar o valor de origem de uma coluna e fornecer um valor de destino. Esse valor de destino será exibido na nova coluna de saída.
 
-   Há um exemplo de adição do tipo de campo calculado **[!UICONTROL Enumerations]** [nesta seção](../../workflow/using/adding-enumeration-type-calculated-field.md).
+  Há um exemplo de adição do tipo de campo calculado **[!UICONTROL Enumerations]** [nesta seção](../../workflow/using/adding-enumeration-type-calculated-field.md).
 
-   ![](assets/query_editor_nveau_63.png)
+  ![](assets/query_editor_nveau_63.png)
 
-   O tipo de campo calculado **[!UICONTROL Enumerations]** pode incluir quatro condições:
+  O tipo de campo calculado **[!UICONTROL Enumerations]** pode incluir quatro condições:
 
    * **[!UICONTROL Keep the source value]** restaura o valor de origem no destino sem alterá-lo.
    * **[!UICONTROL Use the following value]** possibilita inserir um valor de destino padrão para valores de origem não definidos.
@@ -341,7 +341,7 @@ Veja a seguir uma exibição detalhada das opções disponíveis na janela **[!U
    * O **[!UICONTROL Minimum value]** permite classificar os clientes e encontrar aqueles que se subscreveram para uma oferta mais recentemente.
    * **[!UICONTROL Average]**. Essa função permite calcular a idade média dos destinatários.
 
-      A caixa **[!UICONTROL Distinct]** permite recuperar valores exclusivos e diferentes de zero em uma coluna. Por exemplo, é possível recuperar todos os logs de rastreamento de um destinatário; eles são alterados para o valor 1, desde que sejam todos referentes ao mesmo destinatário.
+     A caixa **[!UICONTROL Distinct]** permite recuperar valores exclusivos e diferentes de zero em uma coluna. Por exemplo, é possível recuperar todos os logs de rastreamento de um destinatário; eles são alterados para o valor 1, desde que sejam todos referentes ao mesmo destinatário.
 
 1. **[!UICONTROL Expression]** abre a janela **[!UICONTROL Edit the expression]**. Isso permite detectar números de telefone com muitos numerais, provavelmente devido a erros de entrada.
 
@@ -390,28 +390,28 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>Max</strong><br /> </td> 
-   <td> Retorna o valor máximo de uma coluna, cadeira de caracteres ou coluna de tipo de data<br /> </td> 
+   <td> Retorna o valor máximo de uma coluna, string ou coluna de tipo de data<br /> </td> 
    <td> Max(&lt;value&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Min</strong><br /> </td> 
-   <td> Retorna o valor mínimo de uma coluna do tipo número, cadeira de caracteres ou dados<br /> </td> 
+   <td> Retorna o valor mínimo de uma coluna do tipo número, string ou dados<br /> </td> 
    <td> Min(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>StdDev</strong><br /> </td> 
-   <td> Retorna o desvio padrão de uma coluna do tipo número, cadeira de caracteres ou dados<br /> </td> 
+   <td> Retorna o desvio padrão de uma coluna do tipo número, string ou dados<br /> </td> 
    <td> StdDev(&lt;value&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Sum</strong><br /> </td> 
-   <td> Retorna a soma dos valores de uma coluna do tipo número, cadeira de caracteres ou dados<br /> </td> 
+   <td> Retorna a soma dos valores de uma coluna do tipo número, string ou dados<br /> </td> 
    <td> Sum(&lt;value&gt;)<br /></td> 
   </tr> 
  </tbody> 
 </table>
 
-**Cadeia de caracteres**
+**String**
 
 <table> 
  <tbody> 
@@ -462,52 +462,52 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
-   <td> Concatena as cadeira de caracteres transmitidas como parâmetros. Adiciona espaços entre as cadeiras de caracteres, se necessário.<br /> </td> 
+   <td> Concatena a string transmitidas como parâmetros. Adiciona espaços entre a string, se necessário.<br /> </td> 
    <td> JuxtWords(&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords3</strong><br /> </td> 
-   <td> Concatena as cadeira de caracteres transmitidas como parâmetros. Adiciona espaços entre as cadeiras de caracteres, se necessário<br /> </td> 
+   <td> Concatena a string transmitidas como parâmetros. Adiciona espaços entre a string, se necessário<br /> </td> 
    <td> JuxtWords3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>LPad</strong><br /> </td> 
-   <td> Retorna a cadeira de caracteres concluída à esquerda<br /> </td> 
+   <td> Retorna a string concluída à esquerda<br /> </td> 
    <td> LPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Left</strong><br /> </td> 
-   <td> Retorna os primeiros n caracteres da cadeira de caracteres<br /> </td> 
+   <td> Retorna os primeiros n caracteres da string<br /> </td> 
    <td> Left(&lt;string&gt;, &lt;number&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Length</strong><br /> </td> 
-   <td> Retorna o comprimento da cadeira de caracteres<br /> </td> 
+   <td> Retorna o comprimento da string<br /> </td> 
    <td> Length(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Lower</strong><br /> </td> 
-   <td> Retorna a cadeira de caracteres em minúsculas<br /> </td> 
+   <td> Retorna a string em minúsculas<br /> </td> 
    <td> Lower(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Ltrim</strong><br /> </td> 
-   <td> Remove espaços à esquerda da cadeira de caracteres<br /> </td> 
+   <td> Remove espaços à esquerda da string<br /> </td> 
    <td> Ltrim(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Md5Digest</strong><br /> </td> 
-   <td> Retorna uma representação hexadecimal da chave MD5 de uma cadeira de caracteres<br /> </td> 
+   <td> Retorna uma representação hexadecimal da chave MD5 de uma string<br /> </td> 
    <td> Md5Digest(&lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>MemoContains</strong><br /> </td> 
-   <td> Especifica se o memorando contém a cadeira de caracteres aprovada como um parâmetro<br /> </td> 
+   <td> Especifica se o memorando contém a string aprovada como um parâmetro<br /> </td> 
    <td> MemoContains(&lt;memo&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>RPad</strong><br /> </td> 
-   <td> Retorna a cadeira de caracteres concluída à direita<br /> </td> 
+   <td> Retorna a string concluída à direita<br /> </td> 
    <td> RPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -517,12 +517,12 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>Rtrim</strong><br /> </td> 
-   <td> Remove espaços à direita da cadeira de caracteres<br /> </td> 
+   <td> Remove espaços à direita da string<br /> </td> 
    <td> Rtrim(&lt;string&gt;)<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Smart</strong><br /> </td> 
-   <td> Retorna a cadeira de caracteres com a primeira letra de cada palavra em maiúsculas<br /> </td> 
+   <td> Retorna a string com a primeira letra de cada palavra em maiúsculas<br /> </td> 
    <td> Smart(&lt;string&gt;)<br /> </td> 
   </tr> 
   <tr> 
@@ -532,7 +532,7 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>ToString</strong><br /> </td> 
-   <td> Converte o número em uma cadeira de caracteres<br /> </td> 
+   <td> Converte o número em uma string<br /> </td> 
    <td> ToString(&lt;number&gt;, &lt;number&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -966,7 +966,7 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>IsEmptyString</strong><br /> </td> 
-   <td> Retorna o valor 2 se a cadeira de caracteres 1 estiver vazia, caso contrário, retorna o valor 3.<br /> </td> 
+   <td> Retorna o valor 2 se a string 1 estiver vazia, caso contrário, retorna o valor 3.<br /> </td> 
    <td> IsEmptyString(&lt;value 1&gt;, &lt;value 2&gt;, &lt;value 3&gt;)<br /> </td>  
   </tr> 
   <tr> 
