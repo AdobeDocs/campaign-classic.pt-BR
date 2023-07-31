@@ -2,12 +2,12 @@
 product: campaign
 title: Consultar a tabela de recipients
 description: Saiba como consultar a tabela de recipients
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+feature: Query Editor, Workflows
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '392'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '399'
 ht-degree: 100%
 
 ---
@@ -20,19 +20,19 @@ Neste exemplo, queremos recuperar os nomes e e-mails dos recipients cujos domín
 
 * Qual tabela devemos selecionar?
 
-   A tabela de recipient (nms:recipient)
+  A tabela de recipient (nms:recipient)
 
 * Campos a serem selecionados como colunas de saída
 
-   E-mail, nome, cidade e número da conta
+  E-mail, nome, cidade e número da conta
 
 * Quais são as condições do filtro dos recipients?
 
-   domínio de e-mail e cidade
+  domínio de e-mail e cidade
 
 * É configurada uma classificação?
 
-   Sim, com base em **[!UICONTROL Account number]** e **[!UICONTROL Last name]**.
+  Sim, com base em **[!UICONTROL Account number]** e **[!UICONTROL Last name]**.
 
 Para criar este exemplo, aplique as seguintes etapas:
 
