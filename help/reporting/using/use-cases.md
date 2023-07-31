@@ -2,13 +2,13 @@
 product: campaign
 title: Casos de uso
 description: Relatórios de casos de uso
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '1317'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '1329'
 ht-degree: 100%
 
 ---
@@ -194,15 +194,15 @@ A análise de uma população em um workflow requer que a população ainda este
 
 * Desanexar a transição da atividade de destino e iniciar o workflow para torná-lo ativo. Quando a transição começar a piscar, inicie o assistente da forma normal.
 
-   ![](assets/s_ncs_user_report_wizard_018.png)
+  ![](assets/s_ncs_user_report_wizard_018.png)
 
 * Modifique as propriedades do workflow selecionando a opção **[!UICONTROL Keep the result of interim populations between two executions]**. Isso permite iniciar uma análise da transição de sua escolha, mesmo que o workflow tenha terminado.
 
-   ![](assets/s_ncs_user_report_wizard_020.png)
+  ![](assets/s_ncs_user_report_wizard_020.png)
 
-   Se a população foi removida da transição, uma mensagem de erro solicita selecionar a opção relacionada antes de iniciar o assistente de análise descritiva.
+  Se a população foi removida da transição, uma mensagem de erro solicita selecionar a opção relacionada antes de iniciar o assistente de análise descritiva.
 
-   ![](assets/s_ncs_user_report_wizard_019.png)
+  ![](assets/s_ncs_user_report_wizard_019.png)
 
 >[!CAUTION]
 >
