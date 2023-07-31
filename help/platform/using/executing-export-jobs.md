@@ -2,15 +2,16 @@
 product: campaign
 title: Configuração de processos de exportação
 description: Saiba como configurar e executar processos de exportação no Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+fearture: Overview
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '925'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '937'
 ht-degree: 100%
 
 ---
@@ -53,17 +54,17 @@ Por padrão, quando a exportação é iniciada a partir do nó **[!UICONTROL Job
 
 * A opção **[!UICONTROL Download the file generated on the server after the export]** está selecionada por padrão. No campo **[!UICONTROL Local file]**, preencha o nome e o caminho do arquivo que será criado ou procure o disco local clicando na pasta à direita do campo. Você pode desmarcar essa opção para inserir o caminho de acesso e o nome do arquivo de saída do servidor.
 
-   >[!NOTE]
-   >
-   >Os trabalhos de importação e exportação automáticos são sempre executados no servidor.
-   >
-   >Para exportar apenas alguns dados, clique em **[!UICONTROL Advanced parameters]** e insira o número de linhas que devem ser exportadas no campo apropriado.
+  >[!NOTE]
+  >
+  >Os trabalhos de importação e exportação automáticos são sempre executados no servidor.
+  >
+  >Para exportar apenas alguns dados, clique em **[!UICONTROL Advanced parameters]** e insira o número de linhas que devem ser exportadas no campo apropriado.
 
 * É possível criar uma exportação diferencial para exportar apenas registros que foram modificados desde a última execução. Para fazer isso, clique no link **[!UICONTROL Advanced parameters]** e, em seguida, clique na guia **[!UICONTROL Differential export]** e, em seguida, selecione **[!UICONTROL Activate differential export]**.
 
-   ![](assets/s_ncs_user_export_wizard02_b.png)
+  ![](assets/s_ncs_user_export_wizard02_b.png)
 
-   Você deve inserir a data da última modificação. Ele pode ser calculado ou recuperado de um campo.
+  Você deve inserir a data da última modificação. Ele pode ser calculado ou recuperado de um campo.
 
 ## Etapa 3 - Definir o formato de saída {#step-3---defining-the-output-format}
 
@@ -111,7 +112,7 @@ Você pode modificar a ordem e o rótulo dos campos do arquivo de saída e aplic
    * Alterar para maiúsculas
    * Primeira letra em maiúscula
 
-   ![](assets/s_ncs_user_export_wizard06.png)
+  ![](assets/s_ncs_user_export_wizard06.png)
 
 * Clique em **[!UICONTROL Add a calculated field]** para criar um novo campo calculado (por exemplo, uma coluna contendo o sobrenome + nome). Para obter mais informações, consulte os [Campos calculados](../../platform/using/executing-import-jobs.md#calculated-fields).
 
