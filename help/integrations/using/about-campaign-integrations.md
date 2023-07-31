@@ -2,15 +2,16 @@
 product: campaign
 title: Sobre integrações do Campaign
 description: Use outras soluções da Adobe e combine suas diferentes funcionalidades com o Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Overview
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '757'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '769'
 ht-degree: 100%
 
 ---
@@ -30,6 +31,7 @@ A lista completa de soluções e serviços principais da Adobe que podem ser int
 >[!CAUTION]
 >
 >A maioria dessas integrações exige a implementação do Sistema de gerenciamento de identidades (IMS) da Adobe para fazer logon via Adobe ID. [Saiba mais nesta página](../../integrations/using/about-adobe-id.md).
+>
 
 ## Vincular soluções {#working-with-experience-cloud-solutions}
 
