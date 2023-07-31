@@ -2,13 +2,13 @@
 product: campaign
 title: Rastrear visitas em um aplicativo Web
 description: Rastrear visitas em um aplicativo Web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Web Apps, Reporting, Monitoring
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '401'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '413'
 ht-degree: 100%
 
 ---
@@ -26,19 +26,19 @@ As principais melhorias apresentadas nessa versão são as seguintes:
 * Possibilidade de inserir várias tags de controle na mesma página para facilitar a definição dos caminhos de navegação (por exemplo, compra, subscrição, retorno, etc.).
 * Visualizar caminhos de navegação e tags de rastreamento das diferentes páginas no painel de aplicações web.
 
-   ![](assets/trackers_1.png)
+  ![](assets/trackers_1.png)
 
 * Gerar um relatório de rastreamento completo.
 
-   ![](assets/trackers_5.png)
+  ![](assets/trackers_5.png)
 
-   Os principais indicadores são os seguintes:
+  Os principais indicadores são os seguintes:
 
    * **Conversion rate**: número de pessoas que exibiram todas as etapas de um caminho de navegação.
    * **Bounce rate**: número de pessoas que exibiram apenas a primeira etapa
    * **Conversion tunnel**: taxa de perda entre cada etapa.
 
-   Além disso, um gráfico de tipo **Setor** mostra a população de acordo com sua origem.
+  Além disso, um gráfico de tipo **Setor** mostra a população de acordo com sua origem.
 
 ## Identificação da fonte de tráfego {#identifying-the-traffic-source}
 
