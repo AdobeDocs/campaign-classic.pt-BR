@@ -2,13 +2,13 @@
 product: campaign
 title: Configurar acesso ao relatório
 description: Configurar acesso ao relatório
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '754'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '766'
 ht-degree: 100%
 
 ---
