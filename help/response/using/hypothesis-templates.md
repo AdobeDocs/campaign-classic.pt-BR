@@ -2,15 +2,16 @@
 product: campaign
 title: Modelos de hipótese
 description: Saiba como criar modelos de hipótese no Gestor de resposta do Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Campaigns, Templates
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '1376'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '1388'
 ht-degree: 100%
 
 ---
@@ -53,23 +54,23 @@ A guia **[!UICONTROL General]** permite especificar as opções gerais do modelo
 
 * **[!UICONTROL Hypothesis type]**: permite determinar se o template deve ser destinado à hipótese sobre deliveries ou ofertas.
 
-   É possível optar por criar uma hipótese que será aplicada tanto em envios quanto em ofertas.
+  É possível optar por criar uma hipótese que será aplicada tanto em envios quanto em ofertas.
 
-   >[!NOTE]
-   >
-   >Se o template for aplicável a ofertas, a opção **[!UICONTROL Update offer proposition status]** estará disponível na guia **[!UICONTROL Transactions]**.
+  >[!NOTE]
+  >
+  >Se o template for aplicável a ofertas, a opção **[!UICONTROL Update offer proposition status]** estará disponível na guia **[!UICONTROL Transactions]**.
 
 * **[!UICONTROL Measurement with control group]**: permite indicar se um grupo de controle foi definido para o delivery ou campanha, assim como incluí-lo nos indicadores de mensuração. O grupo de controle, que não recebe deliveries, permite medir o impacto da campanha após o delivery, comparando-o com a amostragem alvo que recebeu o delivery.
 
-   >[!NOTE]
-   >
-   >Se o template está configurado para assumir um grupo de controle em conta, mas nenhum grupo está definido no delivery relacionado a hipótese, os resultados são baseados somente em recipients direcionados.
+  >[!NOTE]
+  >
+  >Se o template está configurado para assumir um grupo de controle em conta, mas nenhum grupo está definido no delivery relacionado a hipótese, os resultados são baseados somente em recipients direcionados.
 
-   Para mais informações sobre como definir e configurar um grupo de controle, consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+  Para mais informações sobre como definir e configurar um grupo de controle, consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
 * **[!UICONTROL Channel]**: é possível escolher um canal específico ou disponibilizar o modelo da hipótese em todos os canais no console do Adobe Campaign selecionando **[!UICONTROL All channels]** na lista suspensa. Se o modelo for configurado para um canal específico, é possível filtrar automaticamente os envios por canal ao criar a hipótese. [Saiba mais](creating-hypotheses.md)
 
-   ![](assets/response_properties_001.png)
+  ![](assets/response_properties_001.png)
 
 * **[!UICONTROL Execution folder]**: permite especificar a pasta de execução da hipótese.
 * **[!UICONTROL Taken into account in campaign ROI calculation]**: considera o resultado da hipótese no cálculo do ROI da respectiva campanha.
@@ -80,17 +81,17 @@ A guia **[!UICONTROL General]** do modelo também permite especificar os parâme
 
 * **[!UICONTROL Schedule execution for a time of low activity]**: permite agendar a aplicação da hipótese para otimizar as performances do Adobe Campaign. Quando essa opção é marcada, o workflow do processamento em campanhas executa o cálculo de hipóteses durante o tempo de inatividade.
 
-   ![](assets/response_exec_settings_002.png)
+  ![](assets/response_exec_settings_002.png)
 
 * **[!UICONTROL Priority]**: nível aplicado para espaçar as ordens de cálculo da hipótese se houver execuções simultâneas.
 
-   ![](assets/response_exec_settings_003.png)
+  ![](assets/response_exec_settings_003.png)
 
 * **[!UICONTROL Automatic execution]**: se necessário, permite agendar o recálculo da hipótese (por exemplo, é possível atualizar os indicadores regularmente até o fim do delivery).
 
-   ![](assets/response_exec_settings_001.png)
+  ![](assets/response_exec_settings_001.png)
 
-   Aplique o seguinte processo para especificar um cronograma:
+  Aplique o seguinte processo para especificar um cronograma:
 
    1. Clique no link **[!UICONTROL Frequency of execution...]** e depois no botão **[!UICONTROL Change...]**.
 
@@ -107,11 +108,11 @@ A guia **[!UICONTROL General]** do modelo também permite especificar os parâme
 * **[!UICONTROL Log SQL queries in journal]**: esta função é destinada para usuários especialistas. Ele permite adicionar uma guia à auditoria da hipótese de mensuração para mostrar queries SQL. Isso permite a detecção de possíveis defeitos se uma simulação terminar com erros.
 * **[!UICONTROL Keep execution workflow]**: permite manter o fluxo de trabalho gerado automaticamente no início do cálculo da hipótese. Na hipótese criada a partir de um template que tem essa opção marcada, o workflow gerado está disponível para seguir o processo.
 
-   >[!CAUTION]
-   >
-   >Essa opção deve ser ativada somente para fins de depuração, caso ocorra um erro durante a execução da hipótese.\
-   >Além disso, os workflows gerados automaticamente não devem ser modificados. Qualquer modificação eventual em outro lugar é desconsiderada para cálculos posteriores.\
-   >Se essa opção está marcada, exclua o workflow após a execução.
+  >[!CAUTION]
+  >
+  >Essa opção deve ser ativada somente para fins de depuração, caso ocorra um erro durante a execução da hipótese.\
+  >Além disso, os workflows gerados automaticamente não devem ser modificados. Qualquer modificação eventual em outro lugar é desconsiderada para cálculos posteriores.\
+  >Se essa opção está marcada, exclua o workflow após a execução.
 
 ### Transações {#transactions}
 
@@ -125,21 +126,21 @@ Esta guia contém vários campos e tabelas que permitem salvar o histórico das 
 * **[!UICONTROL Transaction date]**: este campo é opcional, mas recomendado, pois permite a definição de um escopo para o cálculo de hipótese.
 * **[!UICONTROL Measurement period]**: permite a configuração de datas de início e término para que as hipóteses sejam executadas e as linhas de compra sejam recuperadas.
 
-   Quando a hipótese está vinculada a um delivery, a mensuração é acionada automaticamente por alguns dias após a data de contato da mala direta ou após a data do email ou SMS.
+  Quando a hipótese está vinculada a um delivery, a mensuração é acionada automaticamente por alguns dias após a data de contato da mala direta ou após a data do email ou SMS.
 
-   ![](assets/response_measurement_001.png)
+  ![](assets/response_measurement_001.png)
 
-   Se a hipótese é iniciada em tempo real, pode ser forçada para acionar imediatamente. Caso contrário, ocorre o acionamento automático com base na configuração de término da data de cálculo, que é baseada na data de criação da hipótese. [Saiba mais](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
+  Se a hipótese é iniciada em tempo real, pode ser forçada para acionar imediatamente. Caso contrário, ocorre o acionamento automático com base na configuração de término da data de cálculo, que é baseada na data de criação da hipótese. [Saiba mais](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
 
 * **[!UICONTROL Transaction/Margin amount]**: esses campos são opcionais e permitem o cálculo dos indicadores de faturamento automaticamente. [Saiba mais](hypothesis-tracking.md#indicators)
 * **[!UICONTROL Unit amount]**: permite que você defina um valor para calcular a receita. [Saiba mais](hypothesis-tracking.md#indicators)
 
-   ![](assets/response_transactions_001.png)
+  ![](assets/response_transactions_001.png)
 
 * **[!UICONTROL Additional measures and data]**: permite a especificação de relatórios adicionais de medidas ou eixos de campos nas diferentes tabelas.
 * **[!UICONTROL Update offer proposition status]**: permite a alteração do status da apresentação da oferta se um recipient for identificado pela hipótese.
 
-   ![](assets/response_offer_status_001.png)
+  ![](assets/response_offer_status_001.png)
 
 ### Perímetro da hipótese {#hypothesis-perimeter}
 
@@ -175,13 +176,13 @@ Depois de definir a tabela de transações e os campos que são relacionados, é
 
 * **Script**: é possível usar um script JavaScript para sobrecarregar dinamicamente as configurações de hipótese durante a execução.
 
-   Para fazer isto, clique em **[!UICONTROL Advanced settings]** e depois insira o script desejado.
+  Para fazer isto, clique em **[!UICONTROL Advanced settings]** e depois insira o script desejado.
 
-   >[!NOTE]
-   >
-   >Esse procedimento destina-se somente aos usuários especializados.
+  >[!NOTE]
+  >
+  >Esse procedimento destina-se somente aos usuários especializados.
 
-   ![](assets/response_hypothesis_model_creation_011.png)
+  ![](assets/response_hypothesis_model_creation_011.png)
 
 ## Exemplo: criar um modelo de hipótese em uma entrega {#example--creating-a-hypothesis-template-on-a-delivery}
 
