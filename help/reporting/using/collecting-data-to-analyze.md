@@ -2,12 +2,12 @@
 product: campaign
 title: Coletar dados para analisar
 description: Coletar dados para analisar
+feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-feature: Reporting
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '514'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '510'
 ht-degree: 100%
 
 ---
