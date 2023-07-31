@@ -2,15 +2,16 @@
 product: campaign
 title: Monitoramento da execução de processos
 description: Saiba como monitorar a execução de processos de importação e exportação
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '184'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '196'
 ht-degree: 100%
 
 ---
@@ -34,36 +35,36 @@ Cada status é representado por um ícone e rótulo especiais. Os status e seus 
 
 * **Edição em progresso**
 
-   A tarefa está sendo criada.
+  A tarefa está sendo criada.
 
 * **Execução em progresso**
 
-   A tarefa está sendo executada.
+  A tarefa está sendo executada.
 
 * **Cancelar**
 
-   Clique no botão **[!UICONTROL Cancel]**: a tarefa em andamento é cancelada.
+  Clique no botão **[!UICONTROL Cancel]**: a tarefa em andamento é cancelada.
 
 * **Cancelamento em progresso**
 
-   O comando de cancelamento foi considerado e a tarefa está sendo cancelada.
+  O comando de cancelamento foi considerado e a tarefa está sendo cancelada.
 
 * **Pausa em progresso**
 
-   Clique em **[!UICONTROL Pause]**: a tarefa está sendo suspensa.
+  Clique em **[!UICONTROL Pause]**: a tarefa está sendo suspensa.
 
 * **Em pausa**
 
-   Clique em **[!UICONTROL Pause]**: a tarefa é suspensa. Ele pode ser reiniciado clicando em **[!UICONTROL Start]**.
+  Clique em **[!UICONTROL Pause]**: a tarefa é suspensa. Ele pode ser reiniciado clicando em **[!UICONTROL Start]**.
 
 * **Concluído**
 
-   A execução do trabalho foi concluída.
+  A execução do trabalho foi concluída.
 
 * **Concluído com erro**
 
-   O trabalho não foi executado devido a um erro técnico.
+  O trabalho não foi executado devido a um erro técnico.
 
 * **Desligamento do servidor em progresso**
 
-   A tarefa em andamento foi interrompida porque o servidor do Adobe Campaign foi desligado.
+  A tarefa em andamento foi interrompida porque o servidor do Adobe Campaign foi desligado.
