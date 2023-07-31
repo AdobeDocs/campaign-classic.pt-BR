@@ -2,12 +2,12 @@
 product: campaign
 title: Aplicar regras de tipologia
 description: Saiba como aplicar regras de tipologia
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '983'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '990'
 ht-degree: 100%
 
 ---
@@ -104,21 +104,21 @@ Os valores possíveis são:
 
 * **[!UICONTROL At the start of targeting]**
 
-   Para evitar que a etapa de personalização seja executada no caso de erros, é possível aplicar a regra de controle aqui.
+  Para evitar que a etapa de personalização seja executada no caso de erros, é possível aplicar a regra de controle aqui.
 
 * **[!UICONTROL After targeting]**
 
-   Se é necessário saber o target para aplicar a regra de controle, selecione essa fase.
+  Se é necessário saber o target para aplicar a regra de controle, selecione essa fase.
 
-   Por exemplo, a regra de controle **[!UICONTROL Check proof size]** se aplica após cada estágio do targeting: essa regra impede a personalização da mensagem se houver muitos recipients de prova.
+  Por exemplo, a regra de controle **[!UICONTROL Check proof size]** se aplica após cada estágio do targeting: essa regra impede a personalização da mensagem se houver muitos recipients de prova.
 
 * **[!UICONTROL At the start of personalization]**
 
-   Essa fase deve ser selecionada se o controle envolver a aprovação da personalização da mensagem. A personalização da mensagem é realizada durante a fase de análise.
+  Essa fase deve ser selecionada se o controle envolver a aprovação da personalização da mensagem. A personalização da mensagem é realizada durante a fase de análise.
 
 * **[!UICONTROL At the end of the analysis]**
 
-   Quando uma verificação exige a personalização da mensagem para ser concluída, selecione essa fase.
+  Quando uma verificação exige a personalização da mensagem para ser concluída, selecione essa fase.
 
 ## Configurações adicionais {#additional-configurations}
 
