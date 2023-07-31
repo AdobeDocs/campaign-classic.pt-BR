@@ -2,12 +2,12 @@
 product: campaign
 title: Criar modelos de mensagem transacional
 description: Saiba como criar um template de mensagem transacional no Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Transactional Messaging
+feature: Transactional Messaging, Message Center, Templates
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '498'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '505'
 ht-degree: 100%
 
 ---
