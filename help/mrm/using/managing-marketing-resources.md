@@ -2,14 +2,15 @@
 product: campaign
 title: Gerenciar recursos de marketing
 description: Saiba como gerenciar recursos de marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '1386'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '1393'
 ht-degree: 100%
 
 ---
@@ -45,7 +46,7 @@ Clique na guia **[!UICONTROL General]** para selecionar os operadores ou grupos 
 * O operador para o qual o recurso é atribuído é responsável por rastreá-lo.
 * O operador de aprovação é responsável pela aprovação do recurso de marketing. Eles serão notificados quando o processo de validação de recursos for iniciado.
 
-   Se nenhum revisor estiver selecionado, o recurso **[!UICONTROL cannot be]** fica sujeito a aprovação.
+  Se nenhum revisor estiver selecionado, o recurso **[!UICONTROL cannot be]** fica sujeito a aprovação.
 
 * Se necessário, também pode-se especificar um leitor de prova.
 
