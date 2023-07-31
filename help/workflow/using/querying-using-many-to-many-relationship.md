@@ -2,12 +2,12 @@
 product: campaign
 title: Consultar usando uma relação muitos para muitos
 description: Saiba como executar consultas usando uma relação muitos para muitos
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+feature: Query Editor, Workflows
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
-source-wordcount: '385'
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: ht
+source-wordcount: '392'
 ht-degree: 100%
 
 ---
@@ -22,15 +22,15 @@ Este exemplo também mostra como configurar um filtro relacionado à escolha de 
 
 * Qual tabela precisa ser selecionada?
 
-   A tabela de recipient (**nms:recipient**)
+  A tabela de recipient (**nms:recipient**)
 
 * Campos a serem selecionados para a coluna de saída
 
-   Primary key, Last name, First name e Email.
+  Primary key, Last name, First name e Email.
 
 * Com base em quais critérios as informações são filtradas?
 
-   Com base nos registros de delivery de recipients, 7 dias antes de hoje.
+  Com base nos registros de delivery de recipients, 7 dias antes de hoje.
 
 Siga as etapas abaixo:
 
@@ -48,21 +48,21 @@ Siga as etapas abaixo:
 
    * Comece selecionando o elemento de coleção **[!UICONTROL Recipient delivery logs (broadlog)]** (nó laranja) da primeira coluna **[!UICONTROL Value]**.
 
-      ![](assets/query_editor_nveau_67.png)
+     ![](assets/query_editor_nveau_67.png)
 
-      Escolha o operador **[!UICONTROL do not exist as]**. Não há necessidade de selecionar um segundo valor nesta linha.
+     Escolha o operador **[!UICONTROL do not exist as]**. Não há necessidade de selecionar um segundo valor nesta linha.
 
    * O conteúdo da segunda condição do filtro depende da primeira. Aqui, o campo **[!UICONTROL Event date]** é oferecido diretamente na tabela **[!UICONTROL Recipient delivery logs]**, já que há um link para essa tabela.
 
-      ![](assets/query_editor_nveau_36.png)
+     ![](assets/query_editor_nveau_36.png)
 
-      Selecione **[!UICONTROL Event date]** com o operador **[!UICONTROL greater than or equal to]**. Selecione o valor **[!UICONTROL DaysAgo (7)]**. Para fazer isso, clique em **[!UICONTROL Edit expression]** no campo **[!UICONTROL Value]**. Na janela **[!UICONTROL Formula type]**, selecione **[!UICONTROL Process on dates]** e **[!UICONTROL Current date minus n days]**, atribuindo &quot;7&quot; como um valor.
+     Selecione **[!UICONTROL Event date]** com o operador **[!UICONTROL greater than or equal to]**. Selecione o valor **[!UICONTROL DaysAgo (7)]**. Para fazer isso, clique em **[!UICONTROL Edit expression]** no campo **[!UICONTROL Value]**. Na janela **[!UICONTROL Formula type]**, selecione **[!UICONTROL Process on dates]** e **[!UICONTROL Current date minus n days]**, atribuindo &quot;7&quot; como um valor.
 
-      ![](assets/query_editor_nveau_37.png)
+     ![](assets/query_editor_nveau_37.png)
 
-      A condição de filtro é configurada.
+     A condição de filtro é configurada.
 
-      ![](assets/query_editor_nveau_38.png)
+     ![](assets/query_editor_nveau_38.png)
 
 1. Na janela **[!UICONTROL Data formatting]**, alterne os últimos nomes para caixa alta. Clique na linha **[!UICONTROL Last name]** na coluna **[!UICONTROL Transformation]** e selecione **[!UICONTROL Switch to upper case]** no menu suspenso.
 
