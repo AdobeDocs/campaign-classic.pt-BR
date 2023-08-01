@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
 workflow-type: tm+mt
-source-wordcount: '2595'
+source-wordcount: '2549'
 ht-degree: 100%
 
 ---
@@ -268,9 +268,6 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 * Agora todas as categorias de feedback são capturadas, para oferecer relatórios completos e precisos.
 * O cálculo do indicador Entregue agora se baseia no feedback em tempo real do MTA aprimorado para melhorar a precisão e a reatividade.
 * O EFS soluciona o problema de atrasos de relatórios síncronos de rejeições temporárias.
-
-Para obter mais informações consulte a [documentação detalhada](../../delivery/using/sending-with-enhanced-mta.md#efs).
-Se você estiver interessado em participar deste beta privado, preencha este [formulário](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e nós entraremos em contato com você.
 
 **Outras alterações**
 

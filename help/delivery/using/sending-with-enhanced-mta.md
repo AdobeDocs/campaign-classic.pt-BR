@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 4c0c3007a03d4274fa1b436259cb2d302fcc8185
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
 workflow-type: tm+mt
-source-wordcount: '1736'
-ht-degree: 100%
+source-wordcount: '1352'
+ht-degree: 97%
 
 ---
 
@@ -116,10 +116,6 @@ O gráfico de taxa de transferência de delivery do Campaign não exibirá mais 
 
 Para obter mais informações sobre a taxa de transferência do delivery, consulte [esta seção](../../reporting/using/global-reports.md#delivery-throughput).
 
->[!NOTE]
->
->Com o recurso [Serviço de feedback de email](#email-feedback-service) (EFS) (atualmente disponível na versão beta), o gráfico da taxa de transferência de delivery do Campaign ainda mostra a taxa de transferência para seus destinatários de email.
-
 ### Tentativas
 
 As configurações de nova tentativa da entrega não são mais usadas pelo Campaign. As tentativas de rejeição temporária e o intervalo de tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição que retornam do domínio de email da mensagem.
@@ -157,61 +153,13 @@ Quando mensagens de rejeição temporária são relatadas do MTA aprimorado, ela
 
 Consequentemente, você deve aguardar até o fim do período de validade para ver a porcentagem final de **[!UICONTROL Success]** e o número final das mensagens **[!UICONTROL Sent]** e **[!UICONTROL Failed]**.
 
-<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
-
-### Serviço de feedback por email (beta) {#email-feedback-service}
-
-Com o recurso Serviço de feedback por email (EFS), o status de cada email é relatado com precisão, pois o feedback é capturado diretamente do MTA aprimorado (Agente de transferência de mensagem).
-
->[!IMPORTANT]
->
->O Serviço de feedback por email está disponível no momento como um recurso beta.
->
->Se estiver interessado em participar desse programa beta, preencha [este formulário](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e entraremos em contato com você.
-
-Depois que o delivery é iniciado, não há alteração na porcentagem de **[!UICONTROL Success]** quando a mensagem é transmitida com êxito do Campaign para o MTA aprimorado.
-
-<!--![](assets/efs-sending.png)-->
-
-Os logs do delivery mostram o status **[!UICONTROL Taken into account by the service provider]** para cada endereço direcionado.
-
-<!--![](assets/efs-pending.png)-->
-
-Quando a mensagem é realmente entregue aos perfis direcionados e uma vez que essas informações são relatadas em tempo real do MTA aprimorado, os logs do delivery mostram o status **[!UICONTROL Sent]** para cada endereço que recebeu a mensagem com êxito. A porcentagem de **[!UICONTROL Success]** aumenta de acordo com cada delivery bem-sucedido.
-
-Quando mensagens com rejeição permanente são relatadas do MTA aprimorado, o status do log muda de **[!UICONTROL Taken into account by the service provider]** para **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
-
-Quando mensagens com rejeição temporária são relatadas do MTA aprimorado, o status do log permanece inalterado (**[!UICONTROL Taken into account by the service provider]**): somente o [motivo do erro](understanding-delivery-failures.md#delivery-failure-types-and-reasons) é atualizado<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. A porcentagem de **[!UICONTROL Success]** permanece inalterada. As mensagens com rejeição temporária são então repetidas durante todo o [período de validade do delivery](steps-sending-the-delivery.md#defining-validity-period)
-
-* Se uma nova tentativa for bem-sucedida antes do fim do período de validade, o status da mensagem mudará para **[!UICONTROL Sent]** e a porcentagem **[!UICONTROL Success]** será aumentada de maneira apropriada.
-
-* Caso contrário, o status mudará para **[!UICONTROL Failed]**. A porcentagem de **[!UICONTROL Success]** <!--and **[!UICONTROL Bounces + errors]** -->permanece inalterada.
-
->[!NOTE]
->
->Para obter mais informações sobre rejeições permanentes e temporárias, consulte [esta seção](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
->
->Para obter mais informações sobre tentativas após uma falha temporária de delivery, consulte [esta seção](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
-
-
-As tabelas abaixo mostram as alterações nos KPIs e no envio de status de logs introduzidos pelo recurso EFS.
-
-**Com o serviço de feedback por email**
-
-| Etapa do processo de envio | Resumo do KPI | Envio de status de logs |
-|--- |--- |--- |
-| A mensagem foi transmitida com êxito do Campaign para o MTA aprimorado | A porcentagem de **[!UICONTROL Success]** não é exibida (começa em 0%) | Levado em consideração pelo provedor de serviço |
-| Mensagens com rejeição permanente são relatadas de volta do MTA aprimorado | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Com falha |
-| Mensagens com rejeição temporária são relatadas de volta do MTA aprimorado | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Levado em consideração pelo provedor de serviço |
-| Tentativas de mensagens com rejeição temporária são bem-sucedidas | A porcentagem de **[!UICONTROL Success]** é aumentada de maneira apropriada | Enviada |
-| Falha nas tentativas de mensagens com rejeição temporária | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Com falha |
-
-**Sem Serviço de feedback por email**
+A tabela abaixo mostra as diferentes etapas no processo de envio com os KPIs correspondentes e os status de envio de logs.
 
 | Etapa do processo de envio | Resumo do KPI | Envio de status de logs |
 |--- |--- |--- |
 | A mensagem foi transmitida com êxito do Campaign para o MTA aprimorado | A porcentagem de **[!UICONTROL Success]** começa em 100% | Enviada |
-| Mensagens com rejeição permanente são relatadas de volta do MTA aprimorado | A porcentagem de **[!UICONTROL Success]** é reduzida de maneira apropriada | Com falha |
-| Mensagens com rejeição temporária são relatadas de volta do MTA aprimorado | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Enviada |
-| Tentativas de mensagens com rejeição temporária são bem-sucedidas | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Enviada | A porcentagem de **[!UICONTROL Success]** é aumentada de maneira apropriada | Enviada |
-| Falha nas tentativas de mensagens com rejeição temporária | A porcentagem de **[!UICONTROL Success]** é reduzida de maneira apropriada | Com falha |
+| Mensagens com rejeição permanente são relatadas de volta do MTA aprimorado | **[!UICONTROL Success]** A porcentagem de é diminuída de maneira apropriada | Com falha |
+| Mensagens com rejeição temporária são relatadas de volta do MTA aprimorado | Nenhuma alteração no **[!UICONTROL Success]** porcentagem | Enviada |
+| Tentativas de mensagens com rejeição temporária são bem-sucedidas | Nenhuma alteração no **[!UICONTROL Success]** porcentagem | Enviada | **[!UICONTROL Success]** A porcentagem de é aumentada de maneira apropriada | Enviada |
+| Falha nas tentativas de mensagens com rejeição temporária | **[!UICONTROL Success]** A porcentagem de é diminuída de maneira apropriada | Com falha |
+

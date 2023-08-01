@@ -2,14 +2,14 @@
 product: campaign
 title: Entender as falhas de delivery
 description: Entenda as falhas de delivery
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
-workflow-type: ht
-source-wordcount: '2614'
-ht-degree: 100%
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+workflow-type: tm+mt
+source-wordcount: '2624'
+ht-degree: 96%
 
 ---
 
@@ -188,7 +188,7 @@ Se uma mensagem falhar devido a um erro **suave** ou **grave** que é temporári
 
 >[!IMPORTANT]
 >
->Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](sending-with-enhanced-mta.md), as configurações de tentativas de delivery não são mais usadas pelo Campaign. As tentativas de rejeição temporária e o tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição que vêm do domínio de email da mensagem.
+>Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](sending-with-enhanced-mta.md), as configurações de tentativas de delivery não são mais usadas pelo Campaign. As tentativas de rejeição temporária e o intervalo de tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição que retornam do domínio de email da mensagem.
 
 Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, para modificar a duração de um delivery, vá para os parâmetros avançados do delivery ou template do delivery e especifique a duração desejada no campo correspondente. Consulte [Definição do período de validade](steps-sending-the-delivery.md#defining-validity-period).
 
@@ -233,7 +233,7 @@ Para instalações no local e instalações hospedadas/híbridas que usam o MTA 
 >
 >* As rejeições **assíncronas** ainda são qualificadas pelo processo do InMail por meio das regras **[!UICONTROL Inbound email]**. Para obter mais informações, consulte as [Regras de gerenciamento de email](#email-management-rules).
 >
->* Para instâncias que usarem o MTA aprimorado **sem Webhooks/EFS**, as regras de **[!UICONTROL Inbound email]** também serão usadas para processar os emails rejeitados síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email usado para os emails rejeitados assíncronos.
+>* Para instâncias que usam o MTA aprimorado **sem Webhooks**, o **[!UICONTROL Inbound email]** as regras também serão usadas para processar os emails rejeitados síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email usado para emails rejeitados assíncronos.
 
 Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, quando o delivery de um email falha, o servidor de delivery do Adobe Campaign recebe uma mensagem de erro do servidor de mensagens ou do servidor DNS remoto. A lista de erros é formada por strings contidas na mensagem retornada pelo servidor remoto. Tipos de falhas e motivos são atribuídos a cada mensagem de erro.
 
@@ -290,7 +290,7 @@ As regras padrão são as seguintes.
 
 >[!IMPORTANT]
 >
->Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](sending-with-enhanced-mta.md) e se a instância tiver a funcionalidade **Webhooks/EFS**, as regras **[!UICONTROL Inbound email]** não serão mais usadas para mensagens de erro de falha síncrona do delivery. Para obter mais informações, consulte [esta seção](#bounce-mail-qualification).
+>Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](sending-with-enhanced-mta.md), e se sua instância tiver **Webhooks** funcionalidade, a variável **[!UICONTROL Inbound email]** as regras não são mais usadas para mensagens de erro de falha síncrona de entrega. Para obter mais informações, consulte [esta seção](#bounce-mail-qualification).
 
 Para instalações locais e instalações hospedadas/híbridas que usam o MTA do Campaign herdado, essas regras contêm a lista de strings de caracteres que podem ser retornadas por servidores remotos e que permitem qualificar o erro (**Permanente**, **Temporário** ou **Ignorado**).
 
@@ -321,7 +321,7 @@ Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no
 
 >[!IMPORTANT]
 >
->Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](sending-with-enhanced-mta.md), as regras de taxa de trasferência do delivery **[!UICONTROL MX management]** não são mais usadas. O MTA aprimorado usa regras de MX próprias que permitem personalizar a taxa de transferência por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
+>Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](sending-with-enhanced-mta.md), as regras de taxa de trasferência do delivery **[!UICONTROL MX management]** não são mais usadas. O MTA aprimorado usa regras MX próprias que permitem personalizar a taxa de transferência por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
 
 Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign:
 
