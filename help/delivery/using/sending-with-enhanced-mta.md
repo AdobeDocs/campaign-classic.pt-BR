@@ -2,13 +2,13 @@
 product: campaign
 title: S com o MTA aprimorado no Adobe Campaign Classic
 description: Saiba mais sobre o escopo e as especificidades do envio de emails com o MTA aprimorado do Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4c0c3007a03d4274fa1b436259cb2d302fcc8185
 workflow-type: tm+mt
-source-wordcount: '1999'
+source-wordcount: '1736'
 ht-degree: 100%
 
 ---
@@ -90,32 +90,9 @@ Não. A atualização não requer a mudança para novos IPs, Portanto, você pod
 
 **A atualização para o MTA aprimorado afetará campanhas ou deliveries em andamento?**
 
-Qualquer delivery que tenha sido preparado antes de sua instância ter sido atualizada para usar o MTA aprimorado precisará ser preparado novamente para usar de maneira correta o novo MTA.
-
 Para os clientes que usam a funcionalidade de mensagens transacionais do Adobe Campaign, todas as chamadas à API para acionar um email serão enfileiradas durante o curto tempo de inatividade da atualização e serão tentadas após a conclusão da atualização.
 
 ## Especificidades do MTA aprimorado {#enhanced-mta-impacts}
-
-### Cabeçalhos do MTA aprimorado
-
-As instâncias mais recentes do Campaign Classic incluem código que adiciona os cabeçalhos do MTA aprimorado necessários a cada mensagem. Se estiver usando o Adobe Campaign 19.1 (compilação 9032) ou superior e se esse não for o caso, você deverá solicitar ao [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) que adicione o parâmetro &quot;useMomentum=true&quot; à configuração da instância de execução (no arquivo [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)), que pode ser a instância de marketing, [a instância de mid-sourcing](../../installation/using/mid-sourcing-server.md) ou a [instância de execução de mensagens transacionais](../../message-center/using/configuring-instances.md#execution-instance), dependendo da sua configuração.
-
-No entanto, se você estiver usando uma instância mais antiga que não inclui esse código, uma nova regra de tipologia chamada **[!UICONTROL Typology Rule for Enhanced MTAs]** deverá ser adicionada a todas as tipologias existentes na instância do Campaign.
-Essa regra é adicionada por um pacote **[!UICONTROL Typology]** instalado como parte da atualização para o MTA aprimorado.
-
->[!IMPORTANT]
->
->Se você vir essa regra de tipologia em suas tipologias, não a exclua nem modifique de forma alguma. Caso contrário, seus deliveries de email poderão ser prejudicados.
-
-Este pacote de **[!UICONTROL Typology]** precisa ser instalado na instância de marketing do Adobe Campaign.
-
-Se você for um cliente híbrido, a equipe do Adobe Campaign fornecerá instruções sobre como instalar o pacote de **[!UICONTROL Typology]** em sua instância de marketing como parte da atualização para o MTA aprimorado. Entre em contato com o executivo de sua conta para obter as instruções completas.
-
->[!IMPORTANT]
->
->As instruções fornecidas pela equipe do Adobe Campaign sobre como instalar o pacote de **[!UICONTROL Typology]** devem ser cuidadosamente seguidas. Caso contrário, você poderá encontrar sérios problemas em seus IPs usados para enviar emails.
-
-Para obter mais informações sobre topologias, consulte[esta seção](../../campaign-opt/using/about-campaign-typologies.md).
 
 ### Novas regras de MX
 
