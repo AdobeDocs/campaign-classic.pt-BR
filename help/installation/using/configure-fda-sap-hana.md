@@ -2,15 +2,16 @@
 product: campaign
 title: Configuração do acesso ao SAP HANA
 description: Saiba como configurar o acesso ao SAP HANA no FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 71%
+source-wordcount: '270'
+ht-degree: 70%
 
 ---
 
@@ -36,25 +37,25 @@ A conexão com um banco de dados externo SAP HANA no FDA exige determinadas conf
 
    * **/etc/odbc.ini**
 
-      ```
-      [ODBC]
-      InstallDir=/etc/
-      
-      [HDB]
-      Driver=HDBODBC
-      servernode=localhost:39013 (this value depend of your server)
-      User:SYSTEM
-      ```
+     ```
+     [ODBC]
+     InstallDir=/etc/
+     
+     [HDB]
+     Driver=HDBODBC
+     servernode=localhost:39013 (this value depend of your server)
+     User:SYSTEM
+     ```
 
-      &quot;InstallDir&quot; corresponde ao local do arquivo **odbcinst.ini**.
+     &quot;InstallDir&quot; corresponde ao local do arquivo **odbcinst.ini**.
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [HDBODBC]
-      Description = "SmartCloudPT HANA"
-      Driver = /usr/sap/hdbclient/libodbcHDB.so
-      ```
+     ```
+     [HDBODBC]
+     Description = "SmartCloudPT HANA"
+     Driver = /usr/sap/hdbclient/libodbcHDB.so
+     ```
 
 1. Especifique as variáveis de ambiente do servidor do Adobe Campaign:
 

@@ -2,14 +2,15 @@
 product: campaign
 title: Diretrizes de script e codificação
 description: Saiba mais sobre as diretrizes a serem seguidas ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '755'
 ht-degree: 36%
 
 ---
@@ -28,28 +29,28 @@ Se você criar scripts usando fluxo de trabalho, aplicações web, jssp, siga es
 
 * Se necessário, use funções parametrizadas (instrução prepare) em vez de concatenação de strings.
 
-   Prática incorreta:
+  Prática incorreta:
 
-   ```
-   sqlGetInt( "select iRecipientId from NmsRecipient where sEmail ='" + request.getParameter('email') +  "'  limit 1" )
-   ```
+  ```
+  sqlGetInt( "select iRecipientId from NmsRecipient where sEmail ='" + request.getParameter('email') +  "'  limit 1" )
+  ```
 
-   Prática recomendada:
+  Prática recomendada:
 
-   ```
-   sqlGetInt( "select iRecipientId from NmsRecipient where sEmail = $(sz) limit 1", request.getParameter('email'));
-   ```
+  ```
+  sqlGetInt( "select iRecipientId from NmsRecipient where sEmail = $(sz) limit 1", request.getParameter('email'));
+  ```
 
-   >[!IMPORTANT]
-   >
-   >O sqlSelect não oferece suporte a esse recurso, portanto, é necessário usar a função de consulta da classe DBEngine:
+  >[!IMPORTANT]
+  >
+  >O sqlSelect não oferece suporte a esse recurso, portanto, é necessário usar a função de consulta da classe DBEngine:
 
-   ```
-   var cnx = application.getConnection()
-   var stmt = cnx.query("SELECT sFirstName, sLastName FROM NmsRecipient where sEmail = $(sz)", request.getParameter('email'))
-   for each(var row in stmt) logInfo(row[0] + " : " + row[1])
-   cnx.dispose()
-   ```
+  ```
+  var cnx = application.getConnection()
+  var stmt = cnx.query("SELECT sFirstName, sLastName FROM NmsRecipient where sEmail = $(sz)", request.getParameter('email'))
+  for each(var row in stmt) logInfo(row[0] + " : " + row[1])
+  cnx.dispose()
+  ```
 
 Para evitar injeções de SQL, as funções SQL devem ser adicionadas ao arquivo de inclui na lista de permissões a ser usado no Adobe Campaign. Depois de adicionadas ao incluo na lista de permissões µ, elas se tornam visíveis para os operadores no editor de expressão. Consulte [esta página](../../configuration/using/adding-additional-sql-functions.md).
 
@@ -79,23 +80,23 @@ Além do modelo de segurança baseado em pastas, você pode usar direitos nomead
 
 * Você pode adicionar alguns filtros de sistema (sysFilter) para impedir a leitura/gravação de seus dados (consulte [esta página](../../configuration/using/filtering-schemas.md)).
 
-   ```
-   <sysFilter name="writeAccess">    
-       <condition enabledIf="hasNamedRight('myNewRole')=false" expr="FALSE"/>  
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="writeAccess">    
+      <condition enabledIf="hasNamedRight('myNewRole')=false" expr="FALSE"/>  
+  </sysFilter>
+  ```
 
 * Você também pode proteger algumas ações (método SOAP) definidas em esquemas. Basta definir o atributo de acesso com o direito nomeado correspondente como o valor.
 
-   ```
-   <method name="grantVIPAccess" access="myNewRole">
-       <parameters>
-   ...
-       </parameters>
-   </method>
-   ```
+  ```
+  <method name="grantVIPAccess" access="myNewRole">
+      <parameters>
+  ...
+      </parameters>
+  </method>
+  ```
 
-   Para obter mais informações, consulte [esta página](../../configuration/using/implementing-soap-methods.md).
+  Para obter mais informações, consulte [esta página](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
@@ -146,7 +147,8 @@ A maneira geral de adicionar um captcha no DCE é criar um bloco de personaliza�
    * A Linha 4 permite alterar o tamanho da caixa cinza do captcha (largura/altura) e o comprimento da palavra gerada (minWordSize/maxWordSize).
    * Antes de usar o Google reCAPTCHA, você deve se registrar no Google e criar um novo site reCAPTCHA.
 
-      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
+     `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
+
    Você deve ser capaz de desativar o botão de validação, mas como não temos nenhum botão/link padrão, é melhor fazê-lo no próprio HTML. Para aprender a fazê-lo, consulte [esta página](https://developers.google.com/recaptcha/).
 
 ### Atualização da sua aplicação web
@@ -229,6 +231,6 @@ Para usar o JSON.parse, você precisa incluir &quot;shared/json2.js&quot; em seu
 
 ![](assets/scripting-captcha6.png)
 
-Lista de permissões A partir da build 8797, para usar o URL da API de verificação, você deve adicioná-lo ao arquivo no serverConf adicionando no nó urlPermission:
+Incluir na lista de permissões A partir da build 8797, para usar o URL da API de verificação, você deve adicioná-lo ao arquivo no serverConf adicionando no nó urlPermission:
 
 `<url dnsSuffix="www.google.com" urlRegEx="https://www.google.com/recaptcha/api/siteverify"/>`

@@ -2,16 +2,16 @@
 product: campaign
 title: Sobre cubos
 description: Introdução aos cubos
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 hide: true
 hidefromtoc: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 100%
+source-wordcount: '409'
+ht-degree: 97%
 
 ---
 
@@ -43,22 +43,22 @@ Os principais contextos de uso para cubos são:
 
 * É possível realizar exportações de dados diretamente em um relatório, projetado na guia **[!UICONTROL Reports]** da plataforma do Adobe Campaign.
 
-   Para fazer isso, crie um novo relatório e selecione o cubo que deseja usar.
+  Para fazer isso, crie um novo relatório e selecione o cubo que deseja usar.
 
-   ![](assets/cube_create_new.png)
+  ![](assets/cube_create_new.png)
 
-   Os cubos aparecem como templates baseados em quais relatórios são criados. Depois de escolher um template, clique em **[!UICONTROL Create]** para configurar e exibir o relatório correspondente.
+  Os cubos aparecem como templates baseados em quais relatórios são criados. Depois de escolher um template, clique em **[!UICONTROL Create]** para configurar e exibir o relatório correspondente.
 
-   Você pode adaptar medidas, alterar o modo de exibição ou configurar a tabela e exibir o relatório usando o botão principal.
+  Você pode adaptar medidas, alterar o modo de exibição ou configurar a tabela e exibir o relatório usando o botão principal.
 
-   ![](assets/cube_display_new.png)
+  ![](assets/cube_display_new.png)
 
 * Você também pode fazer referência a um cubo na caixa **[!UICONTROL Query]** de um relatório para usar seus indicadores, conforme mostrado abaixo:
 
-   ![](assets/s_advuser_query_using_a_cube.png)
+  ![](assets/s_advuser_query_using_a_cube.png)
 
 * Você também pode inserir uma tabela dinâmica com base em um cubo em qualquer página de um relatório. Para fazer isso, faça referência ao cubo a ser usado na guia **[!UICONTROL Data]** da tabela dinâmica na página relacionada.
 
-   ![](assets/s_advuser_cube_in_report.png)
+  ![](assets/s_advuser_cube_in_report.png)
 
-   Para saber mais, consulte [Explorar os dados em um relatório](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
+  Para saber mais, consulte [Explorar os dados em um relatório](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).

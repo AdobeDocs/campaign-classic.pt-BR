@@ -2,18 +2,18 @@
 product: campaign
 title: Relatórios de delivery
 description: Relatórios de delivery
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1451'
-ht-degree: 100%
+source-wordcount: '1463'
+ht-degree: 99%
 
 ---
 
-# Relatórios de delivery {#delivery-reports}
+# Relatórios de entrega {#delivery-reports}
 
 
 
@@ -71,9 +71,9 @@ Este relatório combina os indicadores principais para rastrear o comportamento 
 * **[!UICONTROL Clicks on the mirror page link]** : Número de cliques no link para a mirror page. Para ser considerado, o link deve ser definido como tal no assistente do delivery (URLs rastreadas). Consulte esta [página](../../delivery/using/about-delivery-monitoring.md).
 * **[!UICONTROL Estimation of forwards]** : Estimativa do número de emails encaminhados pelos recipients alvos. Esse valor é calculado subtraindo o número de pessoas distintas e o número de recipients distintos que clicaram no email.
 
-   >[!NOTE]
-   >
-   >Para obter mais informações sobre a diferença entre pessoas distintas e recipients alvos, consulte [Pessoas/recipients direcionados](../../reporting/using/indicator-calculation.md#targeted-persons---recipients).
+  >[!NOTE]
+  >
+  >Para obter mais informações sobre a diferença entre pessoas distintas e recipients alvos, consulte [Pessoas/recipients direcionados](../../reporting/using/indicator-calculation.md#targeted-persons---recipients).
 
 **[!UICONTROL 3. Open and click-through rate]**
 
@@ -110,9 +110,9 @@ Esta tabela de valores mostra o detalhamento dos deliveries, aberturas, cliques 
 * **[!UICONTROL Average count of articles per transaction]** : Número médio de itens por compra feita por recipients distintos.
 * **[!UICONTROL Average amount per message]** : Quantidade média de compras geradas por mensagem.
 
-   >[!NOTE]
-   >
-   >Para que uma página, uma transação, um valor ou um artigo visitado seja considerado, uma tag de rastreamento Web deve ser inserida na página da Web correspondente. A configuração de rastreamento Web é apresentada [nesta seção](../../configuration/using/about-web-tracking.md).
+  >[!NOTE]
+  >
+  >Para que uma página, uma transação, um valor ou um artigo visitado seja considerado, uma tag de rastreamento Web deve ser inserida na página da Web correspondente. A configuração de rastreamento Web é apresentada [nesta seção](../../configuration/using/about-web-tracking.md).
 
 **[!UICONTROL 6. Sharing activities to email and social networks]**
 
@@ -130,9 +130,9 @@ As seguintes taxas são exibidas na seção superior do relatório:
 
 * **[!UICONTROL Reactivity]**: Taxa do número de recipients alvos que clicaram em um delivery em relação ao número estimado de recipients alvos que abriram um delivery. Os cliques no link de opt out e na mirror page não são considerados.
 
-   >[!NOTE]
-   >
-   >Para obter mais informações sobre rastreamento de aberturas, consulte [Rastreamento de aberturas](../../reporting/using/indicator-calculation.md#tracking-opens-).
+  >[!NOTE]
+  >
+  >Para obter mais informações sobre rastreamento de aberturas, consulte [Rastreamento de aberturas](../../reporting/using/indicator-calculation.md#tracking-opens-).
 
 * **[!UICONTROL Distinct clicks]**: Número de pessoas distintas que clicaram pelo menos uma vez (excluindo o link de unsubscription e mirror page) em um delivery. A taxa exibida é calculada com base no número de mensagens entregues com êxito.
 * **[!UICONTROL Cumulated clicks]**: Número total de cliques por recipients alvos (excluindo o link de unsubscription e mirror page). A taxa exibida é calculada com base no número de mensagens encaminhadas com êxito.

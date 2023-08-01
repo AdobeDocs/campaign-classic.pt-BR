@@ -2,15 +2,16 @@
 product: campaign
 title: Criação de categorias de ofertas
 description: Criação de categorias de ofertas
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 100%
+source-wordcount: '273'
+ht-degree: 97%
 
 ---
 
@@ -44,19 +45,19 @@ Para criar uma categoria adicional, siga as etapas abaixo:
 
    * Atribuir datas de qualificação pela guia **[!UICONTROL Eligibility]**.
 
-      ![](assets/offer_cat_create_004.png)
+     ![](assets/offer_cat_create_004.png)
 
    * Insira as palavras-chave que podem ser usadas para selecionar ofertas dentro desta categoria, usando o campo **[!UICONTROL Themes]**.
 
-      ![](assets/offer_cat_create_005.png)
+     ![](assets/offer_cat_create_005.png)
 
-      >[!NOTE]
-      >
-      >Ao chamar o mecanismo de oferta, somente a parte do catálogo no qual os temas ou categorias correspondem aos parâmetros é selecionada.
+     >[!NOTE]
+     >
+     >Ao chamar o mecanismo de oferta, somente a parte do catálogo no qual os temas ou categorias correspondem aos parâmetros é selecionada.
 
    * “Impulsione” temporariamente o peso da oferta de uma categoria por um determinado período por meio do campo **[!UICONTROL Multiplier weight]**.
 
-      ![](assets/offer_cat_create_006.png)
+     ![](assets/offer_cat_create_006.png)
 
 Um resumo das regras de qualificação está disponível no painel das ofertas incluídas na categoria. Para visualizá-las, clique no link **[!UICONTROL Schedule and eligibility rules of the offer]**.
 

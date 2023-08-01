@@ -2,12 +2,12 @@
 product: campaign
 title: Trilha de auditoria
 description: Saiba como monitorar sua instância com a Trilha de auditoria do Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Audit Trail, Monitoring
+feature: Audit Trail, Monitoring, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '468'
 ht-degree: 11%
 
 ---
@@ -29,7 +29,7 @@ A Trilha de auditoria consiste em três componentes:
 
 * **Trilha de auditoria do esquema**: verifique as atividades e as últimas modificações feitas em seus esquemas.
 
-   Para obter mais informações sobre schemas, consulte esta página [página](../../configuration/using/data-schemas.md).
+  Para obter mais informações sobre schemas, consulte esta página [página](../../configuration/using/data-schemas.md).
 
 * **Trilha de auditoria do fluxo de trabalho**: verifique as atividades e as últimas modificações feitas nos fluxos de trabalho e, além disso, o estado deles, como:
 
@@ -42,13 +42,13 @@ A Trilha de auditoria consiste em três componentes:
    * Ativar que é igual à ação Executar tarefas pendentes agora
    * Unconditional Stop
 
-   Para obter mais informações sobre fluxos de trabalho, consulte esta [página](../../workflow/using/about-workflows.md).
+  Para obter mais informações sobre fluxos de trabalho, consulte esta [página](../../workflow/using/about-workflows.md).
 
-   Para obter mais informações sobre como monitorar workflows, consulte o [seção dedicada](../../workflow/using/monitoring-workflow-execution.md).
+  Para obter mais informações sobre como monitorar workflows, consulte o [seção dedicada](../../workflow/using/monitoring-workflow-execution.md).
 
 * **Trilha de auditoria da opção**: verifique as atividades e as últimas modificações feitas em suas opções.
 
-   Para obter mais informações sobre opções, consulte esta [página](../../installation/using/configuring-campaign-options.md).
+  Para obter mais informações sobre opções, consulte esta [página](../../installation/using/configuring-campaign-options.md).
 
 ## Acessando a Trilha de auditoria {#accessing-audit-trail}
 

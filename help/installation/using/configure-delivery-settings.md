@@ -2,16 +2,17 @@
 product: campaign
 title: Configuração das configurações de entrega de campanha
 description: Saiba como definir as configurações de entrega do Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Channel Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 5%
+source-wordcount: '487'
+ht-degree: 8%
 
 ---
 
@@ -23,13 +24,13 @@ Os parâmetros de delivery devem ser configurados no **serverConf.xml** pasta.
 
 * **Configuração de DNS**: especifique o domínio de entrega e os endereços IP (ou host) dos servidores DNS usados para responder às consultas DNS do tipo MX feitas pelo módulo MTA a partir do **`<dnsconfig>`** a partir de.
 
-   >[!NOTE]
-   >
-   >A variável **nameServers** é essencial para uma instalação no Windows. Para uma instalação no Linux, ela deve ser deixada em branco.
+  >[!NOTE]
+  >
+  >A variável **nameServers** é essencial para uma instalação no Windows. Para uma instalação no Linux, ela deve ser deixada em branco.
 
-   ```
-   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
-   ```
+  ```
+  <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
+  ```
 
 Dependendo das suas necessidades e configurações, também é possível executar as seguintes configurações: configure um [Retransmissão SMTP](#smtp-relay), adapte o número de [Processos filho de MTA](#mta-child-processes), [Gerenciar tráfego SMTP de saída](#managing-outbound-smtp-traffic-with-affinities).
 

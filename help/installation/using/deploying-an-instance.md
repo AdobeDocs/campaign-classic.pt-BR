@@ -2,15 +2,16 @@
 product: campaign
 title: Implantação de uma instância
 description: Saiba mais sobre o assistente de implantação do Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3391'
 ht-degree: 6%
 
 ---
@@ -477,7 +478,7 @@ O atributo de status pode ter um destes três valores:
 
 * normal: comportamento existente (sem sincronização)
 
-* lista de bloqueios blacklist: o URL é adicionado ao arquivo se retornar um erro 404. A duração (em segundos) do URL que está na inclui na lista de bloqueios é definida por um **timeout** atributo cujo valor padrão é 60s.
+* incluir na lista de bloqueios blacklist: o URL é adicionado ao arquivo se retornar um erro 404. A duração (em segundos) do URL que está na inclui na lista de bloqueios é definida por um **timeout** atributo cujo valor padrão é 60s.
 
 A configuração pronta para uso da sincronização é:
 

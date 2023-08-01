@@ -2,13 +2,14 @@
 product: campaign
 title: Criar filtros
 description: Saiba como criar filtros para uma tabela personalizada
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Profiles, Custom Resources
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 8%
+source-wordcount: '108'
+ht-degree: 9%
 
 ---
 

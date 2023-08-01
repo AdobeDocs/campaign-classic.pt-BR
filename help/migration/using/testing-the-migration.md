@@ -2,16 +2,17 @@
 product: campaign
 title: Teste da migração
 description: Teste da migração
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '713'
 ht-degree: 4%
 
 ---
@@ -55,47 +56,46 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 
 * no **config** comando:
 
-   ```
-   nlserver.exe config <option> -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config <option> -instance:<instance-name>
+  ```
 
 * ou no pós-atualização:
 
-   ```
-   nlserver.exe config -postupgrade <option> -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -postupgrade <option> -instance:<instance-name>
+  ```
 
 >[!NOTE]
 >
 >* Você deve usar o **-instância:`<instanceame>`** opção. Não recomendamos usar o **-allinstances** opção.
 >* O comando Adobe Campaign update (**pós-atualização**) permite sincronizar recursos e atualizar schemas e o banco de dados. Esta operação só pode ser executada uma vez e somente no servidor de aplicativos. Após sincronizar recursos, a variável **pós-atualização** permite detectar se a sincronização gera erros ou avisos.
 
-
 ### Objetos não padrão ou ausentes
 
 * A variável **-showCustomEntities** exibe a lista de todos os objetos não padrão:
 
-   ```
-   nlserver.exe config -showCustomEntities -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -showCustomEntities -instance:<instance-name>
+  ```
 
-   Exemplo de mensagem enviada:
+  Exemplo de mensagem enviada:
 
-   ```
-   xtk_migration:opsecurity2 xtk:entity
-   ```
+  ```
+  xtk_migration:opsecurity2 xtk:entity
+  ```
 
 * A variável **-showDeletedEntities** exibe a lista de todos os objetos padrão que estão ausentes no banco de dados ou no sistema de arquivos. Para cada objeto ausente, o caminho é especificado.
 
-   ```
-   nlserver.exe config -showDeletedEntities -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -showDeletedEntities -instance:<instance-name>
+  ```
 
-   Exemplo de mensagem enviada:
+  Exemplo de mensagem enviada:
 
-   ```
-   Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
-   ```
+  ```
+  Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
+  ```
 
 ### Processo de verificação {#verification-process}
 

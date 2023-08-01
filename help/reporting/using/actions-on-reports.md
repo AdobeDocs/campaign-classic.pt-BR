@@ -2,14 +2,14 @@
 product: campaign
 title: Ações em relatórios
 description: Ações em relatórios
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 100%
+source-wordcount: '555'
+ht-degree: 98%
 
 ---
 
@@ -47,11 +47,11 @@ Para relatórios do tipo **[!UICONTROL List with group]** destinados a serem exp
 
 * Esses relatórios não devem conter linhas vazias.
 
-   ![](assets/export_limitations_remove_empty_line.png)
+  ![](assets/export_limitations_remove_empty_line.png)
 
 * A legenda da lista deve estar oculta.
 
-   ![](assets/export_limitations_hide_label.png)
+  ![](assets/export_limitations_hide_label.png)
 
 * Os relatórios não precisam usar formatação específica definida no nível da célula. É preferível usar **[!UICONTROL Form rendering]** para definir o formato das células na tabela. O **[!UICONTROL Form rendering]** pode ser acessado via **[!UICONTROL Administration > Configuration > Form rendering]**.
 * Não é recomendável inserir conteúdo HTML.

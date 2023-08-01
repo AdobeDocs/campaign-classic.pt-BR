@@ -2,13 +2,14 @@
 product: campaign
 title: Editar formulários
 description: Editar formulários
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 2%
+source-wordcount: '1710'
+ht-degree: 3%
 
 ---
 
@@ -48,39 +49,39 @@ Para visualizar um formulário, clique no link **[!UICONTROL Preview]** guia:
 
 * Tela do console
 
-   Este é o tipo de formulário padrão. O formulário é composto por uma única página.
+  Este é o tipo de formulário padrão. O formulário é composto por uma única página.
 
-   ![](assets/console_screen_form.png)
+  ![](assets/console_screen_form.png)
 
 * Gerenciamento de conteúdo
 
-   Use este tipo de formulário para gerenciamento de conteúdo. Veja isto [caso de uso](../../delivery/using/use-case--creating-content-management.md).
+  Use este tipo de formulário para gerenciamento de conteúdo. Veja isto [caso de uso](../../delivery/using/use-case--creating-content-management.md).
 
-   ![](../../delivery/using/assets/d_ncs_content_form13.png)
+  ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
 * Assistente
 
-   Este formulário inclui várias telas flutuantes ordenadas em sequências específicas. Os usuários navegam de uma tela para outra. [Leia mais](form-structure.md#wizards).
+  Este formulário inclui várias telas flutuantes ordenadas em sequências específicas. Os usuários navegam de uma tela para outra. [Leia mais](form-structure.md#wizards).
 
 * Caixa de ícones
 
-   Este formulário inclui várias páginas. Para navegar no formulário, os usuários selecionam ícones à esquerda do formulário.
+  Este formulário inclui várias páginas. Para navegar no formulário, os usuários selecionam ícones à esquerda do formulário.
 
-   ![](assets/iconbox_form_preview.png)
+  ![](assets/iconbox_form_preview.png)
 
 * Notebook
 
-   Este formulário inclui várias páginas. Para navegar pelo formulário, os usuários selecionam guias na parte superior do formulário.
+  Este formulário inclui várias páginas. Para navegar pelo formulário, os usuários selecionam guias na parte superior do formulário.
 
-   ![](assets/notebook_form_preview.png)
+  ![](assets/notebook_form_preview.png)
 
 * Painel vertical
 
-   Este formulário mostra uma árvore de navegação.
+  Este formulário mostra uma árvore de navegação.
 
 * Painel horizontal
 
-   Este formulário mostra uma lista de itens.
+  Este formulário mostra uma lista de itens.
 
 ## Containers
 
@@ -185,28 +186,28 @@ Para criar um formulário, siga estas etapas:
 
    * Especifique o nome do formulário e o namespace.
 
-      O nome do formulário e o namespace podem corresponder ao esquema de dados relacionado.  Este exemplo mostra um formulário para o `cus:order` esquema de dados:
+     O nome do formulário e o namespace podem corresponder ao esquema de dados relacionado.  Este exemplo mostra um formulário para o `cus:order` esquema de dados:
 
-      ```xml
-      <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
-        […]
-      </form>
-      ```
+     ```xml
+     <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
+       […]
+     </form>
+     ```
 
-      Como alternativa, você pode especificar explicitamente o schema de dados na `entity-schema` atributo.
+     Como alternativa, você pode especificar explicitamente o schema de dados na `entity-schema` atributo.
 
-      ```xml
-      <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
-        […]
-      </form>
-      ```
+     ```xml
+     <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
+       […]
+     </form>
+     ```
 
    * Especifique o rótulo a ser exibido no formulário.
    * Opcionalmente, especifique o tipo de formulário. Se você não especificar um tipo de formulário, o tipo de tela do console será usado por padrão.
 
-      ![](assets/input-form-create-2.png)
+     ![](assets/input-form-create-2.png)
 
-      Se estiver criando um formulário multipáginas, você poderá omitir o tipo de formulário no `<form>` e especifique o tipo em um contêiner.
+     Se estiver criando um formulário multipáginas, você poderá omitir o tipo de formulário no `<form>` e especifique o tipo em um contêiner.
 
 1. Clique em **[!UICONTROL Save]**.
 
@@ -320,6 +321,7 @@ Para alterar o tipo de um formulário existente para `iconbox`, siga estas etapa
           </container>
       </form>
       ```
+
    Como alternativa, remova a variável `type="frame"` atributo do existente `<container>` elementos.
 
 ### Criar um formulário de bloco de anotações
@@ -374,7 +376,7 @@ Este exemplo mostra um formulário complexo:
 
 * O formulário de nível superior é um formulário de caixa de ícones. Este formulário inclui dois contêineres rotulados **Geral** e **Detalhes**.
 
-   Como resultado, o formulário externo mostra a **Geral** e **Detalhes** páginas no nível superior. Para acessar essas páginas, os usuários clicam nos ícones à esquerda do formulário.
+  Como resultado, o formulário externo mostra a **Geral** e **Detalhes** páginas no nível superior. Para acessar essas páginas, os usuários clicam nos ícones à esquerda do formulário.
 
 * O subformulário é um formulário de bloco de anotações aninhado dentro do **Geral** recipiente. O subformulário inclui dois contêineres rotulados **Nome** e **Contato**.
 
@@ -411,7 +413,7 @@ Este exemplo mostra um formulário complexo:
 
 * O formulário de nível superior é um formulário de caixa de ícones. Este formulário inclui dois contêineres rotulados **Geral** e **Detalhes**.
 
-   Como resultado, o formulário externo mostra a **Geral** e **Detalhes** páginas no nível superior. Para acessar essas páginas, os usuários clicam nos ícones à esquerda do formulário.
+  Como resultado, o formulário externo mostra a **Geral** e **Detalhes** páginas no nível superior. Para acessar essas páginas, os usuários clicam nos ícones à esquerda do formulário.
 
 * O subformulário é um formulário de bloco de anotações aninhado dentro do **Geral** recipiente. O subformulário inclui dois contêineres rotulados **Nome** e **Contato**.
 

@@ -2,15 +2,16 @@
 product: campaign
 title: Perfis de operador
 description: Perfis de operador
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 100%
+source-wordcount: '391'
+ht-degree: 98%
 
 ---
 
@@ -42,9 +43,9 @@ Os direitos atribuídos ao gerente de ofertas permitem que eles executem as segu
 * Configurar a qualificação para a oferta.
 * Aprovar ofertas.
 
-   >[!NOTE]
-   >
-   >O gerente de ofertas só pode aprovar uma oferta em dois casos específicos. O primeiro se ninguém tiver sido especificado como revisor, e o segundo se o operador encarregado de criar templates (com o direito de atribuir revisores) especificou ele/ela como revisor no template de oferta em que a oferta foi baseada.
+  >[!NOTE]
+  >
+  >O gerente de ofertas só pode aprovar uma oferta em dois casos específicos. O primeiro se ninguém tiver sido especificado como revisor, e o segundo se o operador encarregado de criar templates (com o direito de atribuir revisores) especificou ele/ela como revisor no template de oferta em que a oferta foi baseada.
 
 ## Gerente de delivery {#delivery-manager}
 
@@ -59,9 +60,9 @@ Os direitos atribuídos aos gerentes de delivery os habilitam a realizar as segu
 * Exibir e modificar categorias de ofertas.
 * Aprovar ofertas se esse gerente de delivery for especificado como um de seus revisores.
 
-   >[!NOTE]
-   >
-   >Os gerentes de delivery só podem aprovar uma oferta se tiverem sido definidos como revisores durante a configuração da oferta.
+  >[!NOTE]
+  >
+  >Os gerentes de delivery só podem aprovar uma oferta se tiverem sido definidos como revisores durante a configuração da oferta.
 
 ## Resumo dos direitos de acordo com o operador {#recap-of-rights-according-to-operator}
 

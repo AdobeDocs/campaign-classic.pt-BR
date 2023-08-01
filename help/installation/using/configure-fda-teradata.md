@@ -2,15 +2,16 @@
 product: campaign
 title: Configuração do acesso ao Teradata
 description: Saiba como configurar o acesso ao Teradata na FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 75%
+source-wordcount: '1767'
+ht-degree: 74%
 
 ---
 
@@ -40,26 +41,26 @@ Usar a campanha [Federated Data Access](../../installation/using/about-fda.md) (
 
    * **/etc/odbc.ini**
 
-      ```
-      [ODBC]
-      InstallDir=/etc/
-      ```
+     ```
+     [ODBC]
+     InstallDir=/etc/
+     ```
 
-      &quot;InstallDir&quot; corresponde ao local do arquivo **odbcinst.ini**.
+     &quot;InstallDir&quot; corresponde ao local do arquivo **odbcinst.ini**.
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [ODBC DRIVERS]
-      teradata=Installed
-      
-      [teradata]
-      Driver=/opt/teradata/client/17.10/lib64/tdataodbc_sb64.so
-      APILevel=CORE
-      ConnectFunctions=YYY
-      DriverODBCVer=3.51
-      SQLLevel=1
-      ```
+     ```
+     [ODBC DRIVERS]
+     teradata=Installed
+     
+     [teradata]
+     Driver=/opt/teradata/client/17.10/lib64/tdataodbc_sb64.so
+     APILevel=CORE
+     ConnectFunctions=YYY
+     DriverODBCVer=3.51
+     SQLLevel=1
+     ```
 
 1. Especifique as variáveis de ambiente do servidor do Adobe Campaign:
 
@@ -70,6 +71,7 @@ Usar a campanha [Federated Data Access](../../installation/using/about-fda.md) (
 >[!NOTE]
 >
 >A conexão com um banco de dados externo de Teradata no FDA exige etapas de configurações adicionais no servidor do Adobe Campaign. [Saiba mais](#teradata-additional-configurations).
+>
 
 ## Conta externa Teradata{#teradata-external}
 

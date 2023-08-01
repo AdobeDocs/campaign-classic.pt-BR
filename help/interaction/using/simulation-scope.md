@@ -2,16 +2,17 @@
 product: campaign
 title: Escopo de simulação
 description: Escopo de simulação
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 100%
+source-wordcount: '248'
+ht-degree: 95%
 
 ---
 
@@ -30,13 +31,13 @@ Os seguintes itens são obrigatórios:
 * Data de contato. Ofertas não qualificadas na data de contato não são consideradas.
 * População do target.
 
-   Se não configurar um filtro no target, toda a tabela de recipients será levada em conta.
+  Se não configurar um filtro no target, toda a tabela de recipients será levada em conta.
 
 * Número de propostas a serem simuladas por target.
 
-   O recipient receberá muitas propostas. Por exemplo, se inserir 5, cada recipient receberá no máximo 5 propostas de oferta.
+  O recipient receberá muitas propostas. Por exemplo, se inserir 5, cada recipient receberá no máximo 5 propostas de oferta.
 
-   ![](assets/offer_simulation_009.png)
+  ![](assets/offer_simulation_009.png)
 
 Para refinar as ofertas a serem consideradas para a simulação, é possível adicionar um ou vários temas (especificados anteriormente nas categorias).
 

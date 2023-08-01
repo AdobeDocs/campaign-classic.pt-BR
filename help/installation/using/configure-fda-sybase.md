@@ -2,15 +2,16 @@
 product: campaign
 title: Configuração do acesso ao Sybase IQ
 description: Saiba como configurar o acesso ao Sybase IQ na FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 73%
+source-wordcount: '326'
+ht-degree: 71%
 
 ---
 
@@ -39,28 +40,28 @@ A conexão com um banco de dados externo Sybase IQ no FDA exige as seguintes con
 
    * **/etc/odbc.ini** (substitua os valores como caracteres `<server_alias>`pelos seus próprios):
 
-      ```
-      [ODBC Data Sources]
-      <server_alias>=libdbodbc.so
-      
-      [<server_alias>]
-      Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
-      Description=<description>
-      Username=<username>
-      Password=<password>
-      ServerName=<server_name>
-      CommLinks=tcpip(host=<host>)
-      ```
+     ```
+     [ODBC Data Sources]
+     <server_alias>=libdbodbc.so
+     
+     [<server_alias>]
+     Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
+     Description=<description>
+     Username=<username>
+     Password=<password>
+     ServerName=<server_name>
+     CommLinks=tcpip(host=<host>)
+     ```
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [ODBC DRIVERS]
-      SAP SybaseIQ=Installed
-      
-      [SAP SybaseIQ]
-      Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
-      ```
+     ```
+     [ODBC DRIVERS]
+     SAP SybaseIQ=Installed
+     
+     [SAP SybaseIQ]
+     Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
+     ```
 
 1. Adicione o caminho para a nova biblioteca libodbc16.so na variável LD_LIBRARY_PATH. Para fazer isso:
 

@@ -2,11 +2,12 @@
 product: campaign
 title: Definir tag de rastreamento Web
 description: Definir tag de rastreamento Web
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '360'
 ht-degree: 2%
 
 ---
@@ -100,23 +101,23 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
 
 * Visita a uma página identificadora &quot;inicial&quot;
 
-   **https://myserver.adobe.com/r/9862?tagid=home**
+  **https://myserver.adobe.com/r/9862?tagid=home**
 
 * Coleta de dados de volume de negócios
 
-   **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
 * Especificação de um campo para localizar o recipient
 
-   **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
-   Um recipient cujo número de conta é 10 é enviado para a home page.
+  Um recipient cujo número de conta é 10 é enviado para a home page.
 
 * Uso de um delivery padrão
 
-   **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
-   Um recipient é enviado para a home page. Essas informações serão armazenadas no delivery com o identificador 230 (e6 no banco de dados 16) a menos que um cookie de sessão contendo um identificador de delivery seja enviado com essa query.
+  Um recipient é enviado para a home page. Essas informações serão armazenadas no delivery com o identificador 230 (e6 no banco de dados 16) a menos que um cookie de sessão contendo um identificador de delivery seja enviado com essa query.
 
 >[!NOTE]
 >

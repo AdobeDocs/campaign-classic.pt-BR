@@ -2,15 +2,16 @@
 product: campaign
 title: Integração de uma oferta via workflow
 description: Integração de uma oferta via workflow
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 100%
+source-wordcount: '1050'
+ht-degree: 99%
 
 ---
 
@@ -39,9 +40,10 @@ A atividade delivery outline, disponível nos workflows da campanha, permite apr
 
    * Se desejar chamar o mecanismo de oferta, marque a caixa **[!UICONTROL Restrict the number of propositions selected]**. Especifique o espaço de oferta e o número de propostas que serão apresentadas no delivery.
 
-      Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
+     Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
 
    * Se não marcar a caixa, todas as ofertas no delivery outline serão apresentadas sem chamar o mecanismo de oferta.
+
    >[!NOTE]
    >
    >A pré-visualização leva em conta o número de ofertas especificadas no delivery. Ao executar um workflow, é o número especificado no delivery outline que é levado em conta.
@@ -80,11 +82,11 @@ Após configurar seu query (consulte o [Guia de workflows](../../workflow/using/
 
    * **[!UICONTROL Search for the best offer in a category]**: marque esta opção e especifique os parâmetros de chamada do mecanismo de oferta (espaços de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros. Recomendamos completar o campo **[!UICONTROL Category]** ou o campo **[!UICONTROL Theme]**, em vez de ambos ao mesmo tempo.
 
-      ![](assets/int_enrichment_offer3.png)
+     ![](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A predefined offer]** : marque esta opção e especifique um espaço de ofertas, uma oferta específica e uma data de contato para configurar diretamente a oferta que deseja adicionar, sem chamar o mecanismo de oferta.
 
-      ![](assets/int_enrichment_offer4.png)
+     ![](assets/int_enrichment_offer4.png)
 
 1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em um delivery](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
 
@@ -171,6 +173,6 @@ Para fazer isso, realize o seguinte processo:
    * Especifique a população de subconjunto usando o filtro disponível e as regras de limitação.
    * Em seguida, selecione a oferta que deseja apresentar ao subconjunto. As ofertas disponíveis são aquelas elegíveis no ambiente de oferta que foi selecionado na etapa anterior.
 
-      ![](assets/int_offer_per_cell1.png)
+     ![](assets/int_offer_per_cell1.png)
 
 1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em um delivery](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).

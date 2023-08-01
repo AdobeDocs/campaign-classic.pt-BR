@@ -2,16 +2,17 @@
 product: campaign
 title: Adaptar sua configuração
 description: Saiba como adaptar sua configuração antes e depois de uma migração para o Campaign v7
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '478'
 ht-degree: 3%
 
 ---
@@ -59,7 +60,7 @@ Ao migrar para o Adobe Campaign v7, os seguintes elementos devem ser configurado
 
 * Senhas
 
-   Você deve configurar o **Admin** e **Interno** senhas. [Saiba mais](../../migration/using/before-starting-migration.md#user-passwords)
+  Você deve configurar o **Admin** e **Interno** senhas. [Saiba mais](../../migration/using/before-starting-migration.md#user-passwords)
 
 <!--
 * Tree structure
@@ -82,33 +83,33 @@ Após a execução **pós-atualização**, verifique e configure os seguintes el
 
 * Mirror pages
 
-   O bloco de personalização da mirror page foi alterado com a v6.x. Essa nova versão melhora a segurança ao acessar essas páginas.
+  O bloco de personalização da mirror page foi alterado com a v6.x. Essa nova versão melhora a segurança ao acessar essas páginas.
 
-   Se você usou o bloco de personalização v5 em suas mensagens, a exibição da mirror page falhará. O Adobe recomenda usar o novo bloco de personalização ao inserir uma mirror page em suas mensagens.
+  Se você usou o bloco de personalização v5 em suas mensagens, a exibição da mirror page falhará. O Adobe recomenda usar o novo bloco de personalização ao inserir uma mirror page em suas mensagens.
 
-   No entanto, como solução temporária (e como as mirror pages ainda estão ativas), você pode voltar para o bloco de personalização antigo para evitar esse problema alterando a opção **[!UICONTROL XtkAcceptOldPasswords]** e defina-o como **[!UICONTROL 1]**. Isso não afetará o uso do novo bloco de personalização da v6.x.
+  No entanto, como solução temporária (e como as mirror pages ainda estão ativas), você pode voltar para o bloco de personalização antigo para evitar esse problema alterando a opção **[!UICONTROL XtkAcceptOldPasswords]** e defina-o como **[!UICONTROL 1]**. Isso não afetará o uso do novo bloco de personalização da v6.x.
 
 * Sintaxe
 
-   Se você encontrar erros relacionados à sintaxe, durante a pós-atualização, ative temporariamente o **allowSQLInjection** opção no **serverConf.xml** arquivo, pois isso dá tempo para reescrever o código. Depois que o código for adaptado, reative a segurança.
+  Se você encontrar erros relacionados à sintaxe, durante a pós-atualização, ative temporariamente o **allowSQLInjection** opção no **serverConf.xml** arquivo, pois isso dá tempo para reescrever o código. Depois que o código for adaptado, reative a segurança.
 
 * Conflitos
 
-   A migração é realizada por meio de uma pós-atualização e os conflitos podem aparecer em relatórios, formulários ou aplicativos da Web. Esses conflitos podem ser resolvidos no console.
+  A migração é realizada por meio de uma pós-atualização e os conflitos podem aparecer em relatórios, formulários ou aplicativos da Web. Esses conflitos podem ser resolvidos no console.
 
 * Tomcat
 
-   Se você personalizou a pasta de instalação, verifique se ela foi atualizada corretamente após a migração.
+  Se você personalizou a pasta de instalação, verifique se ela foi atualizada corretamente após a migração.
 
 * Relatórios
 
-   Todos os relatórios prontos para uso atualmente usam o mecanismo de renderização v6.x. Se você tiver adicionado o código JavaScript nos relatórios, alguns elementos poderão ser afetados.
+  Todos os relatórios prontos para uso atualmente usam o mecanismo de renderização v6.x. Se você tiver adicionado o código JavaScript nos relatórios, alguns elementos poderão ser afetados.
 
 * Aplicações web
 
-   Após a pós-atualização, se houver problemas de conexão com seus aplicativos web identificados, você deverá ativar o **allowUserPassword** e **sessionTokenOnly** opções no **serverConf.xml** arquivo. Para evitar qualquer problema de segurança, essas duas opções devem ser reativadas após a solução do problema.
+  Após a pós-atualização, se houver problemas de conexão com seus aplicativos web identificados, você deverá ativar o **allowUserPassword** e **sessionTokenOnly** opções no **serverConf.xml** arquivo. Para evitar qualquer problema de segurança, essas duas opções devem ser reativadas após a solução do problema.
 
-   Dependendo do tipo de aplicações web e sua configuração, você deve executar manipulações adicionais para garantir que elas funcionem corretamente.
+  Dependendo do tipo de aplicações web e sua configuração, você deve executar manipulações adicionais para garantir que elas funcionem corretamente.
 
 <!--
   If migrating from a v5.11 platform, additional configurations must be carried out. [Learn more](../../migration/using/general-configurations.md#specific-configurations-in-v5-11.md)
@@ -137,7 +138,7 @@ Após a execução **pós-atualização**, verifique e configure os seguintes el
 
 * Interação
 
-   Se você usar **Interação**, é necessário ajustar todos os parâmetros após a migração.
+  Se você usar **Interação**, é necessário ajustar todos os parâmetros após a migração.
 
 <!--
 

@@ -2,12 +2,12 @@
 product: campaign
 title: Interação
 description: Interação
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Workflows, Interaction
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+feature: Workflows, Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 100%
+source-wordcount: '178'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Para mais informações, dependendo da versão do Campaign, consulte estas seç�
 
 ![](assets/do-not-localize/v7.jpeg)[ Documentação do Campaign v7](../../interaction/using/interaction-and-offer-management.md)
 
-![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html?lang=pt-BR)
+![](assets/do-not-localize/v8.png)[ Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html?lang=pt-BR)
 
 
 <table> 

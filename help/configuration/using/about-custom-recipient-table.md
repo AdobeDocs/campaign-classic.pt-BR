@@ -2,13 +2,13 @@
 product: campaign
 title: Sobre tabela de recipient personalizada
 description: Sobre tabela de recipient personalizada
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Custom Resources
+feature: Configuration, Custom Resources
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '679'
 ht-degree: 2%
 
 ---
@@ -40,31 +40,31 @@ O uso de uma tabela de recipient personalizada tem as seguintes limitações:
 
 * O Adobe Campaign não é compatível com vários esquemas de recipient, conhecidos como esquemas de direcionamento, vinculados aos mesmos esquemas de broadlog e/ou trackinglog. Caso contrário, isso pode levar a anomalias na reconciliação de dados posteriormente.
 
-   O gráfico abaixo detalha a estrutura relacional necessária para cada esquema de recipient personalizado:
-   ![](assets/custom_recipient_limitation.png)
+  O gráfico abaixo detalha a estrutura relacional necessária para cada esquema de recipient personalizado:
+  ![](assets/custom_recipient_limitation.png)
 
-   Recomendamos:
+  Recomendamos:
 
    * Dedicar a **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** esquemas para uso imediato **[!UICONTROL nms:Recipientschema]**. Essas duas tabelas de log não devem estar vinculadas a nenhuma tabela de recipient personalizada adicional.
    * Definição de esquemas broadlog e trackinglog personalizados dedicados para cada novo esquema de recipient personalizado. Isso pode ser feito automaticamente ao configurar o target mapping, consulte [Target mapping](../../configuration/using/target-mapping.md).
 
 * Não é possível usar o padrão **[!UICONTROL Services and Subscriptions]** oferecida no produto.
 
-   Isso significa a operação geral detalhada em [nesta seção](../../delivery/using/managing-subscriptions.md) não é aplicável.
+  Isso significa a operação geral detalhada em [nesta seção](../../delivery/using/managing-subscriptions.md) não é aplicável.
 
 * O link com o **[!UICONTROL visitor]** não funciona.
 
-   Assim, para utilizar o **[!UICONTROL Social Marketing]** módulo, você deve configurar a etapa de armazenamento para fazer referência à tabela correta.
+  Assim, para utilizar o **[!UICONTROL Social Marketing]** módulo, você deve configurar a etapa de armazenamento para fazer referência à tabela correta.
 
-   Da mesma forma, ao usar funções de referência, o template de transferência de mensagem inicial padrão deve ser adaptado.
+  Da mesma forma, ao usar funções de referência, o template de transferência de mensagem inicial padrão deve ser adaptado.
 
 * Não é possível adicionar perfis manualmente em uma lista.
 
-   Por conseguinte, o procedimento [nesta seção](../../platform/using/creating-and-managing-lists.md) não é aplicável sem uma configuração adicional.
+  Por conseguinte, o procedimento [nesta seção](../../platform/using/creating-and-managing-lists.md) não é aplicável sem uma configuração adicional.
 
-   >[!NOTE]
-   >
-   >Você ainda pode criar listas de recipients usando workflows. Para obter mais informações, consulte [Criação de uma lista de perfis com base em um fluxo de trabalho](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+  >[!NOTE]
+  >
+  >Você ainda pode criar listas de recipients usando workflows. Para obter mais informações, consulte [Criação de uma lista de perfis com base em um fluxo de trabalho](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 Também recomendamos verificar os valores padrão usados nas diferentes configurações prontas para uso: dependendo das funcionalidades usadas, várias adaptações devem ser realizadas.
 

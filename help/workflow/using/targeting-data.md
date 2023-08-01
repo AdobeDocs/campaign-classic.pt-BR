@@ -2,13 +2,13 @@
 product: campaign
 title: Direcionamento de dados
 description: Saiba mais sobre como direcionar dados em um workflow
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor, Data Management
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
-source-wordcount: '1922'
-ht-degree: 100%
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+workflow-type: tm+mt
+source-wordcount: '1929'
+ht-degree: 99%
 
 ---
 
@@ -90,33 +90,33 @@ As seguintes opções de reconciliação de dados estão disponíveis:
 
 * **[!UICONTROL Keys only]**
 
-   Essa opção pode ser usada se os públicos de entrada forem homogêneos.
+  Essa opção pode ser usada se os públicos de entrada forem homogêneos.
 
 * **[!UICONTROL All columns in common]**
 
-   Esta opção permite reconciliar dados baseado em todas as colunas comuns para os vários públicos do target.
+  Esta opção permite reconciliar dados baseado em todas as colunas comuns para os vários públicos do target.
 
-   O Adobe Campaign identifica colunas com base em seu nome. Um limite de tolerância é aceito: uma coluna &#39;Email&#39; pode ser reconhecida como idêntica a uma coluna &#39;@email&#39;, por exemplo.
+  O Adobe Campaign identifica colunas com base em seu nome. Um limite de tolerância é aceito: uma coluna &#39;Email&#39; pode ser reconhecida como idêntica a uma coluna &#39;@email&#39;, por exemplo.
 
 * **[!UICONTROL A selection of columns]**
 
-   Selecione essa opção para definir a lista de colunas na qual a reconciliação de dados será aplicada.
+  Selecione essa opção para definir a lista de colunas na qual a reconciliação de dados será aplicada.
 
-   Comece selecionando o conjunto principal (aquele que contém os dados de origem) e as colunas a serem usadas na associação.
+  Comece selecionando o conjunto principal (aquele que contém os dados de origem) e as colunas a serem usadas na associação.
 
-   ![](assets/join_reconciliation_options_01.png)
+  ![](assets/join_reconciliation_options_01.png)
 
-   >[!CAUTION]
-   >
-   >Durante a reconciliação de dados, não haverá a eliminação da duplicação dos públicos.
+  >[!CAUTION]
+  >
+  >Durante a reconciliação de dados, não haverá a eliminação da duplicação dos públicos.
 
-   Você pode restringir o tamanho do público a um determinado número de registros. Para fazer isso, clique na opção adequada e especifique o número de registros a serem mantidos.
+  Você pode restringir o tamanho do público a um determinado número de registros. Para fazer isso, clique na opção adequada e especifique o número de registros a serem mantidos.
 
-   Além disso, especifique a prioridade dos públicos de entrada: a seção inferior da janela lista as transições de entrada da atividade de união e permite organizá-las com as setas azuis à direita da janela.
+  Além disso, especifique a prioridade dos públicos de entrada: a seção inferior da janela lista as transições de entrada da atividade de união e permite organizá-las com as setas azuis à direita da janela.
 
-   Os registros serão retirados primeiro do público da primeira transição de entrada na lista, e, se o máximo não tiver sido atingido, eles serão retirados do público da segunda transição de entrada e etc.
+  Os registros serão retirados primeiro do público da primeira transição de entrada na lista, e, se o máximo não tiver sido atingido, eles serão retirados do público da segunda transição de entrada e etc.
 
-   ![](assets/join_limit_nb_priority.png)
+  ![](assets/join_limit_nb_priority.png)
 
 ### Extrair dados conjuntos (Intersecção) {#extracting-joint-data--intersection-}
 
@@ -220,15 +220,15 @@ Depois que os dados forem identificados e preparados, eles poderão ser usados n
 
 * Você pode atualizar os dados no banco de dados após a manipulação de dados nos vários estágios do workflow.
 
-   Para obter mais informações, consulte [Atualizar dados](update-data.md).
+  Para obter mais informações, consulte [Atualizar dados](update-data.md).
 
 * Você também pode atualizar o conteúdo de listas existentes.
 
-   Para obter mais informações, consulte [Atualizar lista](list-update.md).
+  Para obter mais informações, consulte [Atualizar lista](list-update.md).
 
 * Você pode preparar ou iniciar deliveries no workflow diretamente.
 
-   Para obter mais informações, consulte [Delivery](delivery.md), [Controle de delivery](delivery-control.md) e [Delivery contínuo](continuous-delivery.md).
+  Para obter mais informações, consulte [Delivery](delivery.md), [Controle de delivery](delivery-control.md) e [Delivery contínuo](continuous-delivery.md).
 
 ## Gerenciamento de dados {#data-management}
 

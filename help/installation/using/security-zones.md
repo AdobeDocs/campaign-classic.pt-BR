@@ -2,16 +2,17 @@
 product: campaign
 title: Configurar zonas de segurança
 description: Saiba como configurar zonas de segurança
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1464'
-ht-degree: 10%
+source-wordcount: '1489'
+ht-degree: 11%
 
 ---
 
@@ -30,6 +31,7 @@ Os operadores são vinculados a uma zona de segurança a partir de seu perfil no
 >Como um **hospedado** cliente, se você puder acessar [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR), é possível usar a interface de autoatendimento da Zona de Segurança. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR)
 >
 >Outro **híbrido/hospedado** os clientes precisam entrar em contato com a equipe de suporte do Adobe para adicionar IP ao incluo na lista de permissões.
+>
 
 ## Criar zonas de segurança {#creating-security-zones}
 
@@ -150,17 +152,17 @@ Vários casos podem ocorrer:
 
 * Uma sub-rede é referenciada diretamente na zona de segurança e nenhum proxy é configurado: os usuários da sub-rede podem se conectar diretamente ao servidor do Adobe Campaign.
 
-   ![](assets/8101_proxy1.png)
+  ![](assets/8101_proxy1.png)
 
 * Um proxy é especificado para uma sub-rede na zona de segurança: os usuários dessa sub-rede podem acessar o servidor Adobe Campaign por meio desse proxy.
 
-   ![](assets/8101_proxy2.png)
+  ![](assets/8101_proxy2.png)
 
 * Um proxy é incluído em uma sub-rede de zona de segurança: os usuários que têm acesso por meio desse proxy, independentemente da origem, podem acessar o servidor do Adobe Campaign.
 
-   ![](assets/8101_proxy3.png)
+  ![](assets/8101_proxy3.png)
 
-Os endereços IP de proxies que provavelmente acessarão o servidor do Adobe Campaign devem ser inseridos em **`<subnetwork>`** em questão e a sub-rede de primeiro nível **`<subnetwork name="all"/>`**. Por exemplo, aqui para um proxy cujo endereço IP é 10.131.146.102:
+Os endereços IP de proxies que provavelmente acessarão o servidor do Adobe Campaign devem ser inseridos nas **`<subnetwork>`** em questão e a sub-rede de primeiro nível **`<subnetwork name="all"/>`**. Por exemplo, aqui para um proxy cujo endereço IP é 10.131.146.102:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -240,15 +242,15 @@ Depois que as zonas forem definidas e a variável **[!UICONTROL Security zone]**
 
    * Quando allowDebug é definido como false, a saída é:
 
-      ```
-      <redir status='OK' date='...' sourceIP='...'/>
-      ```
+     ```
+     <redir status='OK' date='...' sourceIP='...'/>
+     ```
 
    * Quando allowDebug está definido como true, a saída é:
 
-      ```
-      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
-      ```
+     ```
+     <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+     ```
 
 * Nunca defina allowEmptyPassword, allowUserPassword, allowSQLInjection como true. Estes atributos estão aqui apenas para permitir uma fácil migração das versões 5 e 6.0:
 

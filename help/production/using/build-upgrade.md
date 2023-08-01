@@ -2,16 +2,17 @@
 product: campaign
 title: Introdução a atualizações de build
 description: Saiba mais sobre as principais etapas para atualizar para uma nova build
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 4%
+source-wordcount: '2380'
+ht-degree: 5%
 
 ---
 
@@ -65,7 +66,7 @@ O processo de atualização de build requer que as seguintes pessoas estejam env
 * arquiteto de Adobe: para arquiteturas hospedadas ou híbridas, o arquiteto deve entrar em contato com o Atendimento ao cliente da Adobe Campaign.
 
 * Gerente de projetos:
-   * para instalações no local: o líder de projeto interno do cliente lidera a atualização e gerencia testes de ciclo de vida.
+   * para instalações no local: o líder interno do projeto do cliente lidera a atualização e gerencia testes de ciclo de vida.
 
    * para instalação hospedada: a equipe de hospedagem fará uma parceria com a equipe de Atendimento ao cliente da Adobe Campaign e o cliente para coordenar a linha do tempo de atualização para todas as instâncias.
 
@@ -125,22 +126,22 @@ Para fazer isso, siga as etapas abaixo:
 
    * Verifique se a única parte do delivery é aquela com a qual a ID está definida **0**:
 
-      ```
-      SELECT * FROM neolane.nmsdeliverypart;
-      ```
+     ```
+     SELECT * FROM neolane.nmsdeliverypart;
+     ```
 
    * Verifique se a atualização do status do delivery está correta:
 
-      ```
-      SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
-      ```
+     ```
+     SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
+     ```
 
    * Verifique se a atualização do status do workflow está correta:
 
-      ```
-      SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
-      SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
-      ```
+     ```
+     SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
+     SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
+     ```
 
 ### Desligar serviços
 
@@ -154,6 +155,7 @@ Para substituir todos os arquivos pela nova versão, é necessário que todas as
    >[!NOTE]
    >
    >Verifique se o servidor de redirecionamento (webmdl) está parado, para que o arquivo nlsrvmod.dll usado pelo IIS possa ser substituído pela nova versão.
+   >
 
 1. Valide se nenhuma tarefa está ativa executando o **despejo nlserver** comando. Se não houver tarefas, a saída será semelhante ao seguinte:
 
@@ -188,6 +190,7 @@ Para substituir todos os arquivos pela nova versão, é necessário que todas as
    >[!NOTE]
    >
    >Esta operação só deve ser executada uma vez e somente em um servidor de aplicativos nlserverweb.
+   >
 
    Para sincronizar apenas um banco de dados, execute o seguinte comando:
 
@@ -258,6 +261,7 @@ No contexto de um ambiente mid-sourcing, é necessário executar estas etapas ad
 >[!NOTE]
 >
 >O servidor Mid-Sourcing sempre deve executar a mesma versão (ou mais recente) dos servidores de marketing.
+>
 
 ## Em caso de conflito
 
@@ -345,6 +349,7 @@ Há três opções para resolver conflitos: **Aceitar a nova versão**, **Manter
 
 >[!IMPORTANT]
 >É altamente recomendável resolver conflitos.
+>
 
 ### Executar uma mesclagem{#perform-a-merge}
 
@@ -408,6 +413,7 @@ Estas são as etapas para executar uma mesclagem complexa:
 
 >[!IMPORTANT]
 >Habilidades de desenvolvimento são necessárias para executar mesclagens complexas.
+>
 
 **Tópicos relacionados**
 

@@ -2,11 +2,12 @@
 product: campaign
 title: Recomendações de dimensionamento de hardware para o Campaign Classic v7
 description: Recomendações de dimensionamento de hardware para o Campaign Classic v7
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: '2519'
 ht-degree: 1%
 
 ---
@@ -188,10 +189,10 @@ Essa implantação também inclui chamadas do Centro de mensagens, orientadas po
 Nesse cenário, a Adobe recomenda instalar o Adobe Campaign em quatro máquinas, da seguinte maneira:
 
 * Servidores de aplicativos
-   **Dois sistemas, CPU quad-core de 3 Ghz ou mais, 8 GB de RAM, RAID 1 ou 10, SSD de 80 GB**
+  **Dois sistemas, CPU quad-core de 3 Ghz ou mais, 8 GB de RAM, RAID 1 ou 10, SSD de 80 GB**
 
 * Servidores da Web
-   **Dois sistemas, CPU quad-core de 3 GHz ou mais, 16 GB de RAM, RAID 1 ou 10, SSD de 80 GB**
+  **Dois sistemas, CPU quad-core de 3 GHz ou mais, 16 GB de RAM, RAID 1 ou 10, SSD de 80 GB**
 
 
 Os servidores de aplicativos oferecem suporte direto aos usuários do Console do Campaign e à execução de workflows da campanha. Essa funcionalidade é implantada em dois servidores idênticos para alta disponibilidade, compartilhando um sistema de arquivos NAS (Network-Attached Storage, armazenamento conectado à rede) para permitir o failover.
@@ -229,7 +230,7 @@ Como o tamanho da campanha de email, o volume de mensagens SMS não coloca grand
 * **Complexidade do esquema do banco de dados**
 A quantidade de dados para cada destinatário ativo requer espaço de armazenamento e espaço de buffer de banco de dados, portanto, mais destinatários geralmente exigem mais memória e CPU no servidor de banco de dados. Esquemas complexos também exigem que mais tabelas sejam unidas para segmentação, de modo que as operações de segmentação podem ser executadas muito mais lentamente e exigem mais CPU e memória do banco de dados quando os dados são distribuídos em várias tabelas.
 
-   A memória do servidor de banco de dados é estimada garantindo que o pool de buffer do banco de dados possa ser grande o suficiente para conter todos os dados do destinatário, além de tabelas temporárias para a execução de workflows, além de uma margem para outras operações do banco de dados.
+  A memória do servidor de banco de dados é estimada garantindo que o pool de buffer do banco de dados possa ser grande o suficiente para conter todos os dados do destinatário, além de tabelas temporárias para a execução de workflows, além de uma margem para outras operações do banco de dados.
 
 * **Uso de interação de saída**
 As regras de interação no modo de lote são avaliadas em workflows que transmitem toda a complexidade do cálculo para o banco de dados. O principal fator do esforço no banco de dados é o número total de ofertas qualificadas computadas durante uma chamada do mecanismo (tamanho alvo X número médio de ofertas por recipient antes de manter as N melhores ofertas). A velocidade da CPU do servidor de banco de dados é o primeiro fator de desempenho.
@@ -240,7 +241,7 @@ As regras e ofertas de interação de entrada são avaliadas no banco de dados d
 * **Período de retenção de dados de rastreamento**
 Aumentar a retenção de dados de rastreamento para além de 90 dias requer mais armazenamento no banco de dados e pode retardar o sistema, pois a inserção de novos dados de rastreamento vai para tabelas grandes. Os dados de rastreamento não são úteis para segmentação de campanha após 90 dias, portanto, é recomendado um período de retenção mais curto.
 
-   Os dados de rastreamento devem ser movidos para o Adobe Analytics ou outro sistema de análise se você precisar de uma análise de longo prazo da experiência de marketing do recipient.
+  Os dados de rastreamento devem ser movidos para o Adobe Analytics ou outro sistema de análise se você precisar de uma análise de longo prazo da experiência de marketing do recipient.
 
 ## Virtualização
 

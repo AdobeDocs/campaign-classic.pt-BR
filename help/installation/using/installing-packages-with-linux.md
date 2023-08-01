@@ -2,16 +2,17 @@
 product: campaign
 title: Instalação de pacotes com Linux
 description: Instalação de pacotes com Linux
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 2%
+source-wordcount: '1206'
+ht-degree: 3%
 
 ---
 
@@ -100,27 +101,27 @@ Ao instalar o Adobe Campaign em um sistema operacional Debian 8/9, considere o s
 * O OpenSSL deve ser instalado com antecedência.
 * Instale o libicu52 (Debian 8) ou libicu57 (Debian 9), libprotobuf9 (Debian8) e libc-ares2 com os seguintes comandos:
 
-   ```
-   aptitude install libicu52 (Debian 8) libicu57 (Debian 9)
-   ```
+  ```
+  aptitude install libicu52 (Debian 8) libicu57 (Debian 9)
+  ```
 
-   ```
-   aptitude install libc-ares2
-   ```
+  ```
+  aptitude install libc-ares2
+  ```
 
-   ```
-   aptitude install libprotobuf9 (only Debian 8)
-   ```
+  ```
+  aptitude install libprotobuf9 (only Debian 8)
+  ```
 
 * Instale o JDK7 com o seguinte comando:
 
-   ```
-   aptitude install openjdk-7-jdk (Debian 8)
-   ```
+  ```
+  aptitude install openjdk-7-jdk (Debian 8)
+  ```
 
-   ```
-   aptitude install openjdk-7-jdk (Debian 9)
-   ```
+  ```
+  aptitude install openjdk-7-jdk (Debian 9)
+  ```
 
 ## Personalização de parâmetros {#personalizing-parameters}
 
@@ -178,55 +179,55 @@ Se necessário, edite o **customer.sh** arquivo usando o **vi customer.sh** e ad
 
 * Para o cliente Oracle:
 
-   ```
-   export ORACLE_HOME=/usr/local/instantclient_10_2
-   export TNS_ADMIN=/etc/oracle
-   export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
-   ```
+  ```
+  export ORACLE_HOME=/usr/local/instantclient_10_2
+  export TNS_ADMIN=/etc/oracle
+  export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
+  ```
 
-   O conteúdo da variável de ambiente ORACLE_HOME corresponde ao diretório de instalação do Oracle.
+  O conteúdo da variável de ambiente ORACLE_HOME corresponde ao diretório de instalação do Oracle.
 
-   O conteúdo da variável TNS_ADMIN deve corresponder ao local da **tnsnames.ora** arquivo.
+  O conteúdo da variável TNS_ADMIN deve corresponder ao local da **tnsnames.ora** arquivo.
 
 * Para o LibreOffice:
 
-   Para executar o Adobe Campaign em uma versão existente do LibreOffice, configurações adicionais são necessárias: você precisa especificar os caminhos de acesso para o diretório de instalação. Por exemplo:
+  Para executar o Adobe Campaign em uma versão existente do LibreOffice, configurações adicionais são necessárias: você precisa especificar os caminhos de acesso para o diretório de instalação. Por exemplo:
 
    * Debian
 
-      São fornecidos valores default para OOO_INSTALL_DIR e OOO_BASIS_INSTALL_DIR. Você pode substituí-los em **customer.sh** se o layout da instalação do LibreOffice for diferente:
+     São fornecidos valores default para OOO_INSTALL_DIR e OOO_BASIS_INSTALL_DIR. Você pode substituí-los em **customer.sh** se o layout da instalação do LibreOffice for diferente:
 
-      ```
-      export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
-      export OOO_INSTALL_DIR=/usr/lib/libreoffice/
-      ```
+     ```
+     export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
+     export OOO_INSTALL_DIR=/usr/lib/libreoffice/
+     ```
 
    * CentOs
 
-      Use os seguintes valores padrão:
+     Use os seguintes valores padrão:
 
-      ```
-      export OOO_BASIS_INSTALL_DIR=/usr/lib64/libreoffice/
-      export OOO_INSTALL_DIR=/usr/lib64/libreoffice/
-      ```
+     ```
+     export OOO_BASIS_INSTALL_DIR=/usr/lib64/libreoffice/
+     export OOO_INSTALL_DIR=/usr/lib64/libreoffice/
+     ```
 
 * Para Java Development Kit (JDK):
 
-   Por padrão, o script de configuração do ambiente do Adobe Campaign (`~/nl6/env.sh`) procura o diretório de instalação do JDK. Como esse comportamento não é 100% confiável, é necessário especificar qual JDK precisa ser usado. Para fazer isso, é possível forçar a **JDK_HOME** usando o seguinte comando:
+  Por padrão, o script de configuração do ambiente do Adobe Campaign (`~/nl6/env.sh`) procura o diretório de instalação do JDK. Como esse comportamento não é 100% confiável, é necessário especificar qual JDK precisa ser usado. Para fazer isso, é possível forçar a **JDK_HOME** usando o seguinte comando:
 
-   ```
-   export JDK_HOME=/usr/java/jdk1.6.0_07
-   ```
+  ```
+  export JDK_HOME=/usr/java/jdk1.6.0_07
+  ```
 
-   >[!NOTE]
-   >
-   >Este é um exemplo. Verifique se a versão do JDK usada corresponde ao nome do diretório.
+  >[!NOTE]
+  >
+  >Este é um exemplo. Verifique se a versão do JDK usada corresponde ao nome do diretório.
 
-   Para testar a configuração do JDK, faça logon como o usuário do sistema do Adobe Campaign com o seguinte comando:
+  Para testar a configuração do JDK, faça logon como o usuário do sistema do Adobe Campaign com o seguinte comando:
 
-   ```
-   su - neolane
-   ```
+  ```
+  su - neolane
+  ```
 
 Você deve reiniciar o serviço Adobe Campaign para que as alterações sejam consideradas.
 
@@ -251,29 +252,29 @@ Ao usar o Oracle com o Adobe Campaign, é necessário configurar as camadas de c
 * Usar o cliente completo
 * Definição de TNS
 
-   As definições TNS devem ser adicionadas durante a fase de instalação. Para fazer isso, use os seguintes comandos:
+  As definições TNS devem ser adicionadas durante a fase de instalação. Para fazer isso, use os seguintes comandos:
 
-   ```
-   cd /etc
-   mkdir oracle
-   cd oracle
-   vi tnsnames.ora
-   ```
+  ```
+  cd /etc
+  mkdir oracle
+  cd oracle
+  vi tnsnames.ora
+  ```
 
 * Variáveis de ambiente
 
-   Consulte [Variáveis de ambiente](../../installation/using/installing-packages-with-linux.md#environment-variables).
+  Consulte [Variáveis de ambiente](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 * Configuração do Adobe Campaign
 
-   Para finalizar a instalação do cliente do Oracle para o Adobe Campaign, é necessário criar um link simbólico para o **.so** arquivo usado pelo Adobe Campaign.
+  Para finalizar a instalação do cliente do Oracle para o Adobe Campaign, é necessário criar um link simbólico para o **.so** arquivo usado pelo Adobe Campaign.
 
-   Para fazer isso, use os seguintes comandos:
+  Para fazer isso, use os seguintes comandos:
 
-   ```
-   cd /usr/lib/oracle/10.2.0.4/client/lib
-   ln -s libclntsh.so.10.1 libclntsh.so
-   ```
+  ```
+  cd /usr/lib/oracle/10.2.0.4/client/lib
+  ln -s libclntsh.so.10.1 libclntsh.so
+  ```
 
 Se encontrar um problema, verifique se os pacotes listados no [Documentação de instalação do oracle](https://docs.oracle.com/) estão instalados corretamente.
 

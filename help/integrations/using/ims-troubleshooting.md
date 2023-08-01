@@ -2,16 +2,17 @@
 product: campaign
 title: Solução de problemas com o IMS
 description: Solução de problemas com o IMS
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 100%
+source-wordcount: '419'
+ht-degree: 97%
 
 ---
 
@@ -75,12 +76,12 @@ Reinicie o servidor se alguma alteração for feita nas configurações acima na
 
 * O usuário é redirecionado para a página adobe.com:
 
-   Há um problema com a **[!UICONTROL Callback URL]**. Consulte as etapas anteriores para verificar a configuração **[!UICONTROL Callback URL]**.
+  Há um problema com a **[!UICONTROL Callback URL]**. Consulte as etapas anteriores para verificar a configuração **[!UICONTROL Callback URL]**.
 
 * Mensagem &quot;O login não tem nenhum direito com a expressão correspondente&quot;:
 
-   Consulte as etapas anteriores para verificar a configuração de **[!UICONTROL Association Mask]** e de grupos de operador.
+  Consulte as etapas anteriores para verificar a configuração de **[!UICONTROL Association Mask]** e de grupos de operador.
 
 * O usuário não pode acessar a página de login da Adobe id:
 
-   Consulte as etapas anteriores para verificar a configuração do escopo.
+  Consulte as etapas anteriores para verificar a configuração do escopo.

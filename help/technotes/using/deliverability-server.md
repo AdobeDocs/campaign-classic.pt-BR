@@ -2,8 +2,9 @@
 product: campaign
 title: Atualizar para o novo servidor de avaliação do delivery
 description: Saiba como atualizar para o novo servidor de entrega do Campaign
+feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 50ef144950ca9e79b1b3acdf587ffc13e0beeec4
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 20%
@@ -19,6 +20,7 @@ Como cliente do Campaign Classic, você deve implementar o novo servidor de capa
 >[!NOTE]
 >
 >Para obter mais informações sobre essas alterações, consulte o [Perguntas frequentes](#faq), ou entre em contato com [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
+>
 
 ## O que mudou?{#acc-deliverability-changes}
 
@@ -43,6 +45,7 @@ Como parte da nova integração do servidor de entrega, o Campaign precisa se co
 >[!WARNING]
 >
 >Essas etapas só devem ser executadas para implementações híbridas e no local.
+>
 
 ### Pré-requisitos{#prerequisites}
 

@@ -2,15 +2,16 @@
 product: campaign
 title: Processos de monitoramento
 description: Saiba como monitorar processos do Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3598'
+source-wordcount: '3623'
 ht-degree: 1%
 
 ---
@@ -50,55 +51,55 @@ Navegue até a lista de indicadores do sistema para exibir informações relacio
 
 * **[!UICONTROL Memory]**: informações sobre a memória física (RAM).
 
-   **[!UICONTROL Current value]**: consumo de memória atual.
+  **[!UICONTROL Current value]**: consumo de memória atual.
 
-   **[!UICONTROL Max Value]**: quantidade total de memória instalada.
+  **[!UICONTROL Max Value]**: quantidade total de memória instalada.
 
-   **[!UICONTROL Available]**: quantidade de memória disponível.
+  **[!UICONTROL Available]**: quantidade de memória disponível.
 
-   **[!UICONTROL Warning]**: esse indicador é exibido quando o consumo de memória atinge 80% da quantidade total.
+  **[!UICONTROL Warning]**: esse indicador é exibido quando o consumo de memória atinge 80% da quantidade total.
 
-   **[!UICONTROL Alert]**: esse indicador é exibido quando o consumo de memória atinge 90% da quantidade total.
+  **[!UICONTROL Alert]**: esse indicador é exibido quando o consumo de memória atinge 90% da quantidade total.
 
-   Quando a variável **[!UICONTROL Warning]** e **[!UICONTROL Alert]** forem exibidos indicadores, você poderá resolver o problema adicionando RAM à máquina em que o servidor do Adobe Campaign está instalado. Você também pode decidir instalar o servidor do Adobe Campaign em uma máquina dedicada.
+  Quando a variável **[!UICONTROL Warning]** e **[!UICONTROL Alert]** forem exibidos indicadores, você poderá resolver o problema adicionando RAM à máquina em que o servidor do Adobe Campaign está instalado. Você também pode decidir instalar o servidor do Adobe Campaign em uma máquina dedicada.
 
 * **[!UICONTROL Swap Memory]**: informações relacionadas à memória virtual que corresponde a um arquivo de paginação: uma área no disco rígido que o Windows usa como se fosse a RAM.
 
-   **[!UICONTROL Current value]**: consumo real de memória.
+  **[!UICONTROL Current value]**: consumo real de memória.
 
-   **[!UICONTROL Max Value]**: quantidade total de memória.
+  **[!UICONTROL Max Value]**: quantidade total de memória.
 
-   **[!UICONTROL Available]**: quantidade de memória disponível.
+  **[!UICONTROL Available]**: quantidade de memória disponível.
 
-   **[!UICONTROL Warning]**: esse indicador é exibido quando o consumo de memória atinge 80% da quantidade total.
+  **[!UICONTROL Warning]**: esse indicador é exibido quando o consumo de memória atinge 80% da quantidade total.
 
-   **[!UICONTROL Alert]**: esse indicador é exibido quando o consumo de memória atinge 90% da quantidade total.
+  **[!UICONTROL Alert]**: esse indicador é exibido quando o consumo de memória atinge 90% da quantidade total.
 
-   Quando a variável **[!UICONTROL Warning]** e **[!UICONTROL Alert]** forem exibidos indicadores, você poderá resolver o problema aumentando o tamanho do arquivo do Exchange nas configurações avançadas do Windows.
+  Quando a variável **[!UICONTROL Warning]** e **[!UICONTROL Alert]** forem exibidos indicadores, você poderá resolver o problema aumentando o tamanho do arquivo do Exchange nas configurações avançadas do Windows.
 
 * **[!UICONTROL Disk XXX]**: informações sobre leitores de máquina.
 
-   **[!UICONTROL Current value]**: espaço em disco realmente usado.
+  **[!UICONTROL Current value]**: espaço em disco realmente usado.
 
-   **[!UICONTROL Max Value]**: capacidade total do disco.
+  **[!UICONTROL Max Value]**: capacidade total do disco.
 
-   **[!UICONTROL Available]**: espaço em disco disponível.
+  **[!UICONTROL Available]**: espaço em disco disponível.
 
-   **[!UICONTROL Used]**: porcentagem de disco usada.
+  **[!UICONTROL Used]**: porcentagem de disco usada.
 
-   **[!UICONTROL Warning]**: esse indicador é exibido quando o espaço disponível em disco atinge 80% da capacidade total.
+  **[!UICONTROL Warning]**: esse indicador é exibido quando o espaço disponível em disco atinge 80% da capacidade total.
 
-   **[!UICONTROL Alert]**: esse indicador é exibido quando o espaço disponível em disco atinge 90% da capacidade total.
+  **[!UICONTROL Alert]**: esse indicador é exibido quando o espaço disponível em disco atinge 90% da capacidade total.
 
 * **[!UICONTROL Number of processes too old]**: informações sobre processos do Adobe Campaign que estão ativos por mais de um dia.
 
-   **[!UICONTROL Current value]**: número de processos atualmente ativos.
+  **[!UICONTROL Current value]**: número de processos atualmente ativos.
 
-   **[!UICONTROL Max Value]**: número máximo de processos autorizados (1).
+  **[!UICONTROL Max Value]**: número máximo de processos autorizados (1).
 
-   **[!UICONTROL Alert]**: esse indicador será exibido se o número de processos for igual a 1.
+  **[!UICONTROL Alert]**: esse indicador será exibido se o número de processos for igual a 1.
 
-   Quando a variável **[!UICONTROL Alert]** for exibido, pode ser que o processo relacionado esteja bloqueado pelo mecanismo de banco de dados SQL ou que esteja preso em um loop infinito. A variável **watchdog** O processo fornecido pelo Adobe Campaign reinicia automaticamente todos os processos todos os dias e permite que você resolva esse problema. No entanto, você também pode interromper o processo relacionado sozinho para forçar a reinicialização.
+  Quando a variável **[!UICONTROL Alert]** for exibido, pode ser que o processo relacionado esteja bloqueado pelo mecanismo de banco de dados SQL ou que esteja preso em um loop infinito. A variável **watchdog** O processo fornecido pelo Adobe Campaign reinicia automaticamente todos os processos todos os dias e permite que você resolva esse problema. No entanto, você também pode interromper o processo relacionado sozinho para forçar a reinicialização.
 
 #### Linux {#in-linux}
 
@@ -108,107 +109,107 @@ Navegue até a lista de indicadores do sistema para exibir informações relacio
 
 * **[!UICONTROL Load average (1/5/15 minutes)]**: informações sobre a carga, ou seja, a taxa de uso do processador pelos processos em execução na máquina durante o último minuto, cinco minutos ou quinze minutos
 
-   **[!UICONTROL Current value]**: carga real da máquina.
+  **[!UICONTROL Current value]**: carga real da máquina.
 
-   **[!UICONTROL Max value]**: carga máxima de uso dos processos na máquina
+  **[!UICONTROL Max value]**: carga máxima de uso dos processos na máquina
 
-   **[!UICONTROL Warning]**: esse indicador é exibido quando a carga atinge 80% do valor máximo autorizado no último minuto, cinco minutos ou quinze minutos.
+  **[!UICONTROL Warning]**: esse indicador é exibido quando a carga atinge 80% do valor máximo autorizado no último minuto, cinco minutos ou quinze minutos.
 
-   **[!UICONTROL Alert]**: esse indicador é exibido quando a carga atinge 90% do valor máximo autorizado do último minuto, cinco minutos ou quinze minutos.
+  **[!UICONTROL Alert]**: esse indicador é exibido quando a carga atinge 90% do valor máximo autorizado do último minuto, cinco minutos ou quinze minutos.
 
 * **[!UICONTROL Memory]**  informações relativas à memória física (RAM).
 
-   **[!UICONTROL Current value]**: consumo real de memória.
+  **[!UICONTROL Current value]**: consumo real de memória.
 
-   **[!UICONTROL Max Value]**: quantidade total de memória instalada.
+  **[!UICONTROL Max Value]**: quantidade total de memória instalada.
 
-   **[!UICONTROL Available]**: quantidade de memória disponível.
+  **[!UICONTROL Available]**: quantidade de memória disponível.
 
-   **[!UICONTROL Warning]**: esse indicador é exibido quando o consumo de memória atinge 80% da quantidade total.
+  **[!UICONTROL Warning]**: esse indicador é exibido quando o consumo de memória atinge 80% da quantidade total.
 
-   **[!UICONTROL Alert]**: esse indicador é exibido quando o consumo de memória atinge 90% da quantidade total.
+  **[!UICONTROL Alert]**: esse indicador é exibido quando o consumo de memória atinge 90% da quantidade total.
 
-   Quando a variável **[!UICONTROL Warning]** e **[!UICONTROL Alert]** forem exibidos indicadores, você poderá resolver o problema adicionando RAM à máquina em que o servidor do Adobe Campaign está instalado. Você também pode decidir instalar o servidor do Adobe Campaign em uma máquina dedicada.
+  Quando a variável **[!UICONTROL Warning]** e **[!UICONTROL Alert]** forem exibidos indicadores, você poderá resolver o problema adicionando RAM à máquina em que o servidor do Adobe Campaign está instalado. Você também pode decidir instalar o servidor do Adobe Campaign em uma máquina dedicada.
 
 * **[!UICONTROL Swap Memory]**: informações relacionadas à memória virtual que corresponde a um arquivo de paginação: uma área no disco rígido que o Windows usa como se fosse a RAM.
 
-   **[!UICONTROL Current value]**: consumo real de memória.
+  **[!UICONTROL Current value]**: consumo real de memória.
 
-   **[!UICONTROL Max Value]**: quantidade total de memória.
+  **[!UICONTROL Max Value]**: quantidade total de memória.
 
-   **[!UICONTROL Available]**: quantidade de memória disponível.
+  **[!UICONTROL Available]**: quantidade de memória disponível.
 
-   **[!UICONTROL Warning]**: esse indicador é exibido quando o consumo de memória atinge 80% da quantidade total.
+  **[!UICONTROL Warning]**: esse indicador é exibido quando o consumo de memória atinge 80% da quantidade total.
 
-   **[!UICONTROL Alert]**: esse indicador é exibido quando o consumo de memória atinge 90% da quantidade total.
+  **[!UICONTROL Alert]**: esse indicador é exibido quando o consumo de memória atinge 90% da quantidade total.
 
-   Quando a variável **[!UICONTROL Warning]** e **[!UICONTROL Alert]** forem exibidos indicadores, você poderá resolver o problema aumentando o tamanho do arquivo do exchange.
+  Quando a variável **[!UICONTROL Warning]** e **[!UICONTROL Alert]** forem exibidos indicadores, você poderá resolver o problema aumentando o tamanho do arquivo do exchange.
 
 * **[!UICONTROL Core Files]**: informações sobre os arquivos gerados após a falha de um processo do Adobe Campaign. Esses arquivos permitem diagnosticar os motivos da falha.
 
-   **[!UICONTROL Current Value]**: número de arquivos existentes.
+  **[!UICONTROL Current Value]**: número de arquivos existentes.
 
-   **[!UICONTROL Max Value]**: número máximo de ficheiros autorizados (1).
+  **[!UICONTROL Max Value]**: número máximo de ficheiros autorizados (1).
 
-   **[!UICONTROL Warning]**: esse indicador é exibido quando o número de arquivos se aproxima de 1.
+  **[!UICONTROL Warning]**: esse indicador é exibido quando o número de arquivos se aproxima de 1.
 
-   **[!UICONTROL Alert]**: esse indicador é exibido quando o número de arquivos é igual a 1.
+  **[!UICONTROL Alert]**: esse indicador é exibido quando o número de arquivos é igual a 1.
 
-   Quando um processo não aparece devido a uma falha, ele é mostrado em vermelho na lista de processos e é reiniciado automaticamente pelo **watchdog** processo fornecido pela Adobe Campaign.
+  Quando um processo não aparece devido a uma falha, ele é mostrado em vermelho na lista de processos e é reiniciado automaticamente pelo **watchdog** processo fornecido pela Adobe Campaign.
 
 * **[!UICONTROL Number of shared memory segments]**: informações relacionadas aos segmentos de memória compartilhados por todos os processos do Adobe Campaign.
 
-   **[!UICONTROL Current value]**: número de segmentos de memória em uso no momento.
+  **[!UICONTROL Current value]**: número de segmentos de memória em uso no momento.
 
-   **[!UICONTROL Max Value]**: número máximo de segmentos de memória autorizados (2).
+  **[!UICONTROL Max Value]**: número máximo de segmentos de memória autorizados (2).
 
-   **[!UICONTROL Warning]**: este indicador é exibido quando o número de segmentos de memória atinge 1.
+  **[!UICONTROL Warning]**: este indicador é exibido quando o número de segmentos de memória atinge 1.
 
-   **[!UICONTROL Alert]**: este indicador é exibido quando o número de segmentos de memória atinge 2.
+  **[!UICONTROL Alert]**: este indicador é exibido quando o número de segmentos de memória atinge 2.
 
 * **[!UICONTROL Number of processes too old]**: informações sobre processos que estiveram ativos por mais de um dia.
 
-   **[!UICONTROL Current value]**: número de processos atualmente ativos.
+  **[!UICONTROL Current value]**: número de processos atualmente ativos.
 
-   **[!UICONTROL Max Value]**: número máximo de processos autorizados.
+  **[!UICONTROL Max Value]**: número máximo de processos autorizados.
 
-   **[!UICONTROL Warning]**: esse indicador é exibido quando o número de processos atinge 80% do limite autorizado.
+  **[!UICONTROL Warning]**: esse indicador é exibido quando o número de processos atinge 80% do limite autorizado.
 
-   **[!UICONTROL Alert]**: esse indicador é exibido quando o número de processos atinge 90% do limite autorizado.
+  **[!UICONTROL Alert]**: esse indicador é exibido quando o número de processos atinge 90% do limite autorizado.
 
 * **[!UICONTROL File Handles]**: informações sobre os descritores de arquivo, ou seja, o número de arquivos abertos por processo.
 
-   **[!UICONTROL Current value]**: número atual de descritores de arquivo.
+  **[!UICONTROL Current value]**: número atual de descritores de arquivo.
 
-   **[!UICONTROL Max Value]**: número máximo de descritores de arquivo autorizados pelo sistema operacional.
+  **[!UICONTROL Max Value]**: número máximo de descritores de arquivo autorizados pelo sistema operacional.
 
-   **[!UICONTROL Warning]**: esse indicador é exibido quando o número de descritores de arquivo autorizados atinge o limite de 80%.
+  **[!UICONTROL Warning]**: esse indicador é exibido quando o número de descritores de arquivo autorizados atinge o limite de 80%.
 
-   **[!UICONTROL Alert]**: esse indicador é exibido quando o número de descritores de arquivo autorizados atinge o limite de 90%.
+  **[!UICONTROL Alert]**: esse indicador é exibido quando o número de descritores de arquivo autorizados atinge o limite de 90%.
 
 * **[!UICONTROL Processes]**: informações relativas aos processos da máquina.
 
-   **[!UICONTROL Current value]**: número de processos atualmente ativos.
+  **[!UICONTROL Current value]**: número de processos atualmente ativos.
 
-   **[!UICONTROL Max Value]**: número máximo de processos autorizados.
+  **[!UICONTROL Max Value]**: número máximo de processos autorizados.
 
-   **[!UICONTROL Active Processes]**: número de processos ativos.
+  **[!UICONTROL Active Processes]**: número de processos ativos.
 
-   **[!UICONTROL Inactive Processes]**: número de processos inativos.
+  **[!UICONTROL Inactive Processes]**: número de processos inativos.
 
-   **[!UICONTROL Warning]**: esse indicador é exibido quando o número de processos autorizados atinge o limite de 80%.
+  **[!UICONTROL Warning]**: esse indicador é exibido quando o número de processos autorizados atinge o limite de 80%.
 
-   **[!UICONTROL Alert]**: esse indicador é exibido quando o número de processos autorizados atinge o limite de 90%.
+  **[!UICONTROL Alert]**: esse indicador é exibido quando o número de processos autorizados atinge o limite de 90%.
 
 * **[!UICONTROL Zombie Processes]**: informações sobre os processos que foram interrompidos, mas ainda têm um identificador de processo (PID) e permanecem visíveis na tabela de processos.
 
-   **[!UICONTROL Current value]**: número de processos zumbis ativos no momento.
+  **[!UICONTROL Current value]**: número de processos zumbis ativos no momento.
 
-   **[!UICONTROL Max Value]**: número máximo de processos de autorização zumbis (2).
+  **[!UICONTROL Max Value]**: número máximo de processos de autorização zumbis (2).
 
-   **[!UICONTROL Warning]**: esse indicador é exibido quando o número de processos zumbis se aproxima de 2.
+  **[!UICONTROL Warning]**: esse indicador é exibido quando o número de processos zumbis se aproxima de 2.
 
-   **[!UICONTROL Alert]**: este indicador é exibido quando o número de processos zumbis atinge 2.
+  **[!UICONTROL Alert]**: este indicador é exibido quando o número de processos zumbis atinge 2.
 
 #### Personalizar indicadores {#customized-indicators}
 
@@ -257,7 +258,6 @@ Eles estão agrupados em **Monitoramento** > &#39;Monitoramento SMTP&#39;.
 >* As informações relacionadas ao monitoramento SMTP só estarão disponíveis se o canal de email tiver sido ativado.
 >* A variável **[!UICONTROL SMTP sending statistics]** são oferecidos somente se o servidor de estatísticas for iniciado na instância.
 >
-
 
 ### Estatísticas de envio SMTP {#smtp-sending-statistics}
 
@@ -557,9 +557,9 @@ Esse elemento é usado para preencher a configuração de emails, ou seja,
 * &#39;**noite** O modo &quot; (opcional) é usado para evitar o envio de emails entre o período de tempo especificado. Em vez disso, os dados são consolidados e um email sobre a atividade da noite é enviado após o horário de término (7:00 por padrão).
 * A variável **buildRange** o subelemento (opcional) permite especificar um número de build mínimo e máximo. Um erro será gerado para todos os computadores cujo número de build não se enquadra nesse intervalo
 
-   ```
-   <buildRange minimum="0000" maximum="9999"/>
-   ```
+  ```
+  <buildRange minimum="0000" maximum="9999"/>
+  ```
 
 * Você pode adicionar um **`<sla>`** (opcional) subelemento na variável **propriedades** elemento. Um arquivo de log será gerado sempre que o netreport for executado. O nome do arquivo contém o nome da configuração e a data e hora, por exemplo **dev_06_12_13_16_47_05.tmp**. O arquivo contém as seguintes informações: nome da instância, nome da máquina, nível de gravidade, (0 a 3, de menos crítico para mais crítico), data (formato de carimbo de data e hora), tempo decorrido (em milissegundos) entre a consulta e a resposta, serviço usado (http, ncs, ncsex, redir). Essas informações são separadas por marcas de tabulação e quebras de linha no final de cada serviço.
 
@@ -593,9 +593,9 @@ Esse elemento configura o monitoramento de um determinado servidor no host, ou s
 * **alias** (opcional): nome da máquina monitorada como ele aparecerá no relatório.
 * **sessionToken**: fornece autenticação de logon por meio de um token de sessão autorizado.
 
-   Para configurar o token de sessão, selecione o **monitoramento** operador no console do Adobe Campaign. No **Direitos de acesso** especifique os endereços IP das máquinas autorizadas a monitorar essa instância. Você poderá se conectar à página de monitoramento dessas máquinas usando o **monitoramento** e sem precisar especificar uma senha.
+  Para configurar o token de sessão, selecione o **monitoramento** operador no console do Adobe Campaign. No **Direitos de acesso** especifique os endereços IP das máquinas autorizadas a monitorar essa instância. Você poderá se conectar à página de monitoramento dessas máquinas usando o **monitoramento** e sem precisar especificar uma senha.
 
-   ![](assets/ncs_operators_rights_02.png)
+  ![](assets/ncs_operators_rights_02.png)
 
 * **criticalLevel** (opcional): permite que você classifique os erros para serem exibidos por nível de gravidade. Os valores possíveis são &#39;0&#39; (todos os níveis exibidos), &#39;1&#39; (somente erros altos e críticos exibidos) e &#39;2&#39; (somente erros críticos exibidos). Se este atributo não for fornecido, todos os níveis de erro serão exibidos.
 * **filtro** (opcional): permite excluir determinados erros de workflow, por exemplo **filter=&quot;wkf;wkf1&quot;**. Os rótulos do fluxo de trabalho devem ser separados por ponto e vírgula.

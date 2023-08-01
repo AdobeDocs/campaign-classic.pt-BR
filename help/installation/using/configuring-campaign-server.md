@@ -2,16 +2,17 @@
 product: campaign
 title: Configuração do servidor do Campaign
 description: Configuração do servidor do Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 3%
+source-wordcount: '1603'
+ht-degree: 4%
 
 ---
 
@@ -95,35 +96,35 @@ Há dois tipos de processos: várias instâncias e instância única.
 
 * **várias instâncias**: um único processo é iniciado para todas as instâncias. Este é o caso para **web**, **syslogd** e **trackinglogd** processos.
 
-   A ativação pode ser configurada no **config-default.xml** arquivo.
+  A ativação pode ser configurada no **config-default.xml** arquivo.
 
-   Declaração de um servidor Adobe Campaign para acessar consoles clientes e para redirecionamento (rastreamento):
+  Declaração de um servidor Adobe Campaign para acessar consoles clientes e para redirecionamento (rastreamento):
 
-   ```
-   vi nl6/conf/config-default.xml
-   <web args="-tomcat" autoStart="true"/>  
-   <!-- to start if the machine is also a redirection server -->  
-   <trackinglogd autoStart="true"/>
-   ```
+  ```
+  vi nl6/conf/config-default.xml
+  <web args="-tomcat" autoStart="true"/>  
+  <!-- to start if the machine is also a redirection server -->  
+  <trackinglogd autoStart="true"/>
+  ```
 
-   Neste exemplo, o arquivo é editado usando um **vi** comando no Linux. Ele pode ser editado usando qualquer **.txt** ou **.xml** editor.
+  Neste exemplo, o arquivo é editado usando um **vi** comando no Linux. Ele pode ser editado usando qualquer **.txt** ou **.xml** editor.
 
 * **mono-instance**: um processo é iniciado para cada instância (módulos: **mta**, **wfserver**, **inMail**, **sms** e **stat**).
 
-   A ativação pode ser configurada usando o arquivo de configuração da instância:
+  A ativação pode ser configurada usando o arquivo de configuração da instância:
 
-   ```
-   config-<instance>.xml
-   ```
+  ```
+  config-<instance>.xml
+  ```
 
-   Declaração de um servidor para entrega, execução de instâncias de fluxo de trabalho e recuperação de emails devolvidos:
+  Declaração de um servidor para entrega, execução de instâncias de fluxo de trabalho e recuperação de emails devolvidos:
 
-   ```
-   <mta autoStart="true" statServerAddress="localhost"/>
-   <wfserver autoStart="true"/>  
-   <inMail autoStart="true"/>
-   <stat autoStart="true"/>
-   ```
+  ```
+  <mta autoStart="true" statServerAddress="localhost"/>
+  <wfserver autoStart="true"/>  
+  <inMail autoStart="true"/>
+  <stat autoStart="true"/>
+  ```
 
 **Armazenamento de dados do Campaign**
 
@@ -131,13 +132,13 @@ Você pode configurar o diretório de armazenamento (**var** diretório) de dado
 
 * No Windows, indique o seguinte valor na variável **XTK_VAR_DIR** variável de sistema
 
-   ```
-   D:\log\AdobeCampaign
-   ```
+  ```
+  D:\log\AdobeCampaign
+  ```
 
 * No Linux, acesse a página **customer.sh** e indique: **exportar XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-   Para obter mais informações, consulte [Personalizar parâmetros](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+  Para obter mais informações, consulte [Personalizar parâmetros](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
 ## Segurança e retransmissões de página dinâmicas {#dynamic-page-security-and-relays}

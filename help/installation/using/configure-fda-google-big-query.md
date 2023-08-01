@@ -2,14 +2,15 @@
 product: campaign
 title: Configuração do acesso ao Google BigQuery
 description: Saiba como configurar o acesso ao Google BigQuery no FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '802'
 ht-degree: 9%
 
 ---
@@ -42,19 +43,19 @@ Usar o Adobe Campaign Classic **Federated Data Access** (FDA) para processar inf
 
    * **[!UICONTROL Project]**: criar ou usar um projeto existente.
 
-      Para obter mais informações, consulte esta [página](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
+     Para obter mais informações, consulte esta [página](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Service account]**: crie uma conta de serviço.
 
-      Para obter mais informações, consulte esta [página](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
+     Para obter mais informações, consulte esta [página](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
    * **[!UICONTROL Key File Path]**: a variável **[!UICONTROL Service account]** exige um **[!UICONTROL Key File]** para um [!DNL Google BigQuery] conexão por meio do ODBC.
 
-      Para obter mais informações, consulte esta [página](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
+     Para obter mais informações, consulte esta [página](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
 
    * **[!UICONTROL Dataset]**: **[!UICONTROL Dataset]** é opcional para uma conexão ODBC. Como cada consulta precisa fornecer o conjunto de dados em que a tabela está localizada, especificando um **[!UICONTROL Dataset]** é obrigatório para [!DNL Google BigQuery] Conector FDA no Adobe Campaign Classic.
 
-      Para obter mais informações, consulte esta [página](https://cloud.google.com/bigquery/docs/datasets).
+     Para obter mais informações, consulte esta [página](https://cloud.google.com/bigquery/docs/datasets).
 
 1. No Adobe Campaign Classic, você pode configurar as [!DNL Google BigQuery] conta externa. Para obter mais informações sobre como configurar a conta externa, consulte [nesta seção](#google-external).
 
@@ -94,35 +95,35 @@ Para configurar [!DNL Google BigQuery] no Linux, siga as etapas abaixo:
 
    * Para Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y grep sed tar wget perl curl
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y grep sed tar wget perl curl
+     ```
 
    * Para Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y grep sed tar wget perl curl
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y grep sed tar wget perl curl
+     ```
 
 1. Atualize o sistema antes da instalação:
 
    * Para Red Hat/CentOS:
 
-      ```
-      # install unixODBC driver manager
-      yum install -y unixODBC
-      ```
+     ```
+     # install unixODBC driver manager
+     yum install -y unixODBC
+     ```
 
    * Para Debian:
 
-      ```
-      # install unixODBC driver manager
-      apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
-      ```
+     ```
+     # install unixODBC driver manager
+     apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
+     ```
 
 1. Antes de executar o script, você pode obter mais informações especificando o argumento —help:
 
@@ -152,19 +153,19 @@ O utilitário de Carregamento em massa permite uma transferência mais rápida, 
 
    * Para Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y python3
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y python3
+     ```
 
    * Para Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y python3
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y python3
+     ```
 
 1. Acesse o diretório onde o script está localizado e execute o seguinte script:
 
@@ -195,6 +196,7 @@ O utilitário de Carregamento em massa permite uma transferência mais rápida, 
       * **[!UICONTROL Upload key file to the server]**: selecionar **[!UICONTROL Click here to upload]** se você optar por fazer upload da chave por meio do Adobe Campaign Classic.
 
       * **[!UICONTROL Enter manually the key file path]**: copie/cole o caminho absoluto neste campo se optar por usar uma chave pré-existente.
+
    * **[!UICONTROL Dataset]**: Nome do seu **[!UICONTROL Dataset]**. Para obter mais informações, consulte [Documentação da Google Cloud](https://cloud.google.com/bigquery/docs/datasets-intro).
 
    ![](assets/google-big-query.png)

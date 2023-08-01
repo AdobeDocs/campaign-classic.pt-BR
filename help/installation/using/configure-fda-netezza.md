@@ -2,15 +2,16 @@
 product: campaign
 title: Configuração do acesso ao Netezza
 description: Saiba como configurar o acesso ao Netezza no FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 81%
+source-wordcount: '381'
+ht-degree: 80%
 
 ---
 
@@ -36,33 +37,33 @@ A conexão com um banco de dados externo Netezza no FDA exige as seguintes confi
 
    * **/etc/odbc.ini**
 
-      ```
-      [ODBC]
-      InstallDir=/etc/
-      ```
+     ```
+     [ODBC]
+     InstallDir=/etc/
+     ```
 
-      &quot;InstallDir&quot; corresponde ao local do arquivo odbcinst.ini.
+     &quot;InstallDir&quot; corresponde ao local do arquivo odbcinst.ini.
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [ODBC Drivers]
-      NetezzaSQL = Installed
-      
-      [NetezzaSQL]
-      Driver           = /usr/local/nz/lib/libnzsqlodbc3.so
-      Setup            = /usr/local/nz/lib/libnzsqlodbc3.so
-      APILevel         = 1
-      ConnectFunctions = YYN
-      Description      = Netezza ODBC driver
-      DriverODBCVer    = 03.51
-      DebugLogging     = false
-      LogPath          = /tmp
-      UnicodeTranslationOption = utf8
-      CharacterTranslationOption = all
-      PreFetch         = 256
-      Socket           = 16384
-      ```
+     ```
+     [ODBC Drivers]
+     NetezzaSQL = Installed
+     
+     [NetezzaSQL]
+     Driver           = /usr/local/nz/lib/libnzsqlodbc3.so
+     Setup            = /usr/local/nz/lib/libnzsqlodbc3.so
+     APILevel         = 1
+     ConnectFunctions = YYN
+     Description      = Netezza ODBC driver
+     DriverODBCVer    = 03.51
+     DebugLogging     = false
+     LogPath          = /tmp
+     UnicodeTranslationOption = utf8
+     CharacterTranslationOption = all
+     PreFetch         = 256
+     Socket           = 16384
+     ```
 
 1. Especifique as variáveis de ambiente do servidor do Adobe Campaign:
 

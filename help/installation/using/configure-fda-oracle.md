@@ -2,15 +2,16 @@
 product: campaign
 title: Configuração do acesso ao Oracle
 description: Saiba como configurar o acesso ao Oracle no FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 74%
+source-wordcount: '359'
+ht-degree: 73%
 
 ---
 
@@ -50,18 +51,18 @@ A conexão com um banco de dados externo Oracle no FDA exige as seguintes config
 
    * **libclntsh.so**
 
-      ```
-      cd /usr/lib/oracle/<version>/client<architecture>/lib
-      ln -s libclntsh.so.<version> libclntsh.so
-      ```
+     ```
+     cd /usr/lib/oracle/<version>/client<architecture>/lib
+     ln -s libclntsh.so.<version> libclntsh.so
+     ```
 
    * **libaio1**
 
-      ```
-      aptitude install libaio1
-      or
-      yum install libaio1
-      ```
+     ```
+     aptitude install libaio1
+     or
+     yum install libaio1
+     ```
 
 1. No Campaign Classic, você pode configurar a conta externa do [!DNL Oracle]. Para obter mais informações sobre como configurar a conta externa, consulte [nesta seção](#oracle-external).
 
@@ -98,4 +99,5 @@ A variável [!DNL Oracle] A conta externa do permite conectar a instância do Ca
    * **[!UICONTROL Password]**: Senha da conta do usuário
 
    * **[!UICONTROL Time zone]**: Fuso horário do servidor
+
    ![](assets/oracle_config.png)

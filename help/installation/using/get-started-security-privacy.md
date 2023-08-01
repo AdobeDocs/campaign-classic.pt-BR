@@ -2,15 +2,16 @@
 product: campaign
 title: Lista de verificação de segurança e privacidade
 description: Saiba mais sobre os principais elementos para verificar a segurança e a privacidade
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Privacy, Access Management, Privacy Tools
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 24%
+source-wordcount: '493'
+ht-degree: 23%
 
 ---
 
@@ -51,7 +52,7 @@ O gerenciamento de acesso é uma parte importante do fortalecimento da seguranç
 
 Ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.), sempre siga estas diretrizes:
 
-* **Script** lista de permissões : tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de strings e evite a injeção de SQL adicionando as funções SQL a serem usadas no arquivo de pesquisa.
+* **Script** incluir na lista de permissões : tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de strings e evite a injeção de SQL adicionando as funções SQL a serem usadas no arquivo de pesquisa.
 
 * **Proteger o modelo de dados**: usar direitos nomeados para limitar as ações do operador, adicionar filtros do sistema (sysFilter)
 

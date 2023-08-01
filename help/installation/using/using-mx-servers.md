@@ -2,17 +2,18 @@
 product: campaign
 title: Utilização de servidores MX com o Campaign
 description: Saiba como os servidores MX funcionam com o Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 1%
+source-wordcount: '830'
+ht-degree: 3%
 
 ---
 
@@ -80,7 +81,7 @@ O modo Personalizado é para clientes avançados que desejam definir suas própr
 
 ## Exemplos de rejeição
 
-* **Usuário desconhecido** (rejeição permanente): 550 5.1.1 ... Usuário desconhecido {mx003}
+* **Usuário desconhecido** (rejeição permanente): 550 5.1.1 ... O usuário é desconhecido {mx003}
 * **Caixa de entrada cheia** (rejeição temporária): 550 5.2.2 Cota de usuário excedida
 * **Caixa de Correio Inativa** (rejeição temporária): 550 5.7.1 : endereço do destinatário rejeitado: Caixa de correio inativa, não lançado por mais de 6 meses
 * **Domínio inválido** (rejeição temporária): falha na consulta DNS para &#39;ourdan.com&#39;

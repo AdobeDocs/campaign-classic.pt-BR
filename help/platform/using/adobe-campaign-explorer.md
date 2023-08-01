@@ -3,15 +3,15 @@ product: campaign
 title: Usar o explorador do Adobe Campaign
 description: Saiba como usar o Explorador do Campaign
 feature: Overview
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

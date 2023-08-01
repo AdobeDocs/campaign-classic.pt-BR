@@ -2,14 +2,15 @@
 product: campaign
 title: Implantação empresarial
 description: Implantação empresarial
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1220'
 ht-degree: 6%
 
 ---
@@ -76,7 +77,7 @@ Custos mais altos de hardware e administração.
 
 Nos exemplos a seguir, os parâmetros da instância são:
 
-* Nome da instância: demonstração
+* Nome da instância: demo
 * Máscara DNS: tracking.campaign.net&#42;, console.campaign.net&#42; (o servidor de aplicativos manipula os URLs para conexões e relatórios do console do cliente e para mirror pages e páginas de unsubscription)
 * Idioma: inglês
 * Banco de dados: campaign:demo@dbsrv
@@ -120,19 +121,19 @@ As etapas para instalar o primeiro servidor são:
 
    * Crie a instância por meio do console:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Para obter mais informações, consulte [Criação de uma instância e fazer logon](../../installation/using/creating-an-instance-and-logging-on.md).
+     Para obter mais informações, consulte [Criação de uma instância e fazer logon](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      ou
+     ou
 
    * Crie a instância usando linhas de comando:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
+     ```
 
-      Para obter mais informações, consulte [Criação de uma instância](../../installation/using/command-lines.md#creating-an-instance).
+     Para obter mais informações, consulte [Criação de uma instância](../../installation/using/command-lines.md#creating-an-instance).
 
 1. Edite o **config-demo.xml** arquivo (criado por meio do comando anterior e localizado ao lado da tag **config-default.xml** arquivo), verifique se a variável **mta** (delivery), **wfserver** (workflow), **inMail** (emails de reassociação) e **stat** (estatísticas) estiverem ativados e, em seguida, configurar o endereço do **aplicativo** servidor de estatísticas:
 

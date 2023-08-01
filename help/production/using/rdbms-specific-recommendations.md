@@ -2,16 +2,17 @@
 product: campaign
 title: Recomendações específicas do RDBMS
 description: Recomendações específicas do RDBMS
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 4%
+source-wordcount: '1201'
+ht-degree: 5%
 
 ---
 
@@ -143,7 +144,6 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 >* Para tabelas muito grandes (normalmente acima de 5 Gb), a instrução VACUUM FULL pode se tornar bastante ineficiente e levar muito tempo. O Adobe não recomenda usá-lo para o **YyyNmsBroadLogXxx** tabela.
 >* Essa operação de manutenção pode ser implementada por um workflow do Adobe Campaign, usando um **[!UICONTROL SQL]** atividade. Para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md). Certifique-se de programar a manutenção para um período de baixa atividade que não colida com a janela de backup.
 >
-
 
 ### Reconstrução de um banco de dados {#rebuilding-a-database}
 
@@ -436,19 +436,19 @@ O exemplo abaixo diz respeito ao Microsoft SQL Server 2005. Se você estiver usa
 
    * Se a taxa de fragmentação do índice estiver entre 10% e 40%, recomenda-se uma reorganização.
 
-      Escolha quais bancos de dados e objetos (tabelas ou views) você deseja reorganizar e clique em **[!UICONTROL Next]**.
+     Escolha quais bancos de dados e objetos (tabelas ou views) você deseja reorganizar e clique em **[!UICONTROL Next]**.
 
-      >[!NOTE]
-      >
-      >Dependendo da configuração, você pode escolher as tabelas selecionadas anteriormente ou todas as tabelas do banco de dados.
+     >[!NOTE]
+     >
+     >Dependendo da configuração, você pode escolher as tabelas selecionadas anteriormente ou todas as tabelas do banco de dados.
 
    * Se a taxa de fragmentação do índice for superior a 40%, recomenda-se a reconstrução.
 
-      Selecione as opções que deseja aplicar à tarefa de recriação de índice e clique em **[!UICONTROL Next]**.
+     Selecione as opções que deseja aplicar à tarefa de recriação de índice e clique em **[!UICONTROL Next]**.
 
-      >[!NOTE]
-      >
-      >O processo de recriação de índice é mais restritivo em termos de uso de processador e bloqueia os recursos do banco de dados. Selecione o **[!UICONTROL Keep index online while reindexing]** opção se quiser que o índice fique disponível durante a reconstrução.
+     >[!NOTE]
+     >
+     >O processo de recriação de índice é mais restritivo em termos de uso de processador e bloqueia os recursos do banco de dados. Selecione o **[!UICONTROL Keep index online while reindexing]** opção se quiser que o índice fique disponível durante a reconstrução.
 
 1. Selecione as opções que deseja exibir no relatório de atividades e clique em **[!UICONTROL Next]**.
 1. Verifique a lista de tarefas configuradas para o plano de manutenção e clique em **[!UICONTROL Finish]**.

@@ -3,14 +3,14 @@ product: campaign
 title: Sincronizar aplicativos web
 description: Saiba como sincronizar aplicativos web com o ACS Connector
 feature: ACS Connector
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 

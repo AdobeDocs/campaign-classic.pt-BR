@@ -2,16 +2,17 @@
 product: campaign
 title: Migração de uma plataforma Linux para o Adobe Campaign v7
 description: Saiba como migrar uma plataforma Linux para o Adobe Campaign v7
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 hide: true
 hidefromtoc: true
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -218,36 +219,36 @@ Esta seção mostra como desinstalar pacotes do Adobe Campaign v6.1.
 
    * Entrada **Debian**:
 
-      ```
-      dpkg -l | grep nl
-      ```
+     ```
+     dpkg -l | grep nl
+     ```
 
-      A lista de pacotes instalados é exibida:
+     A lista de pacotes instalados é exibida:
 
-      ```
-      ii  nlserver6                       XXXX                     nlserver6-XXXX
-      ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
-      ```
+     ```
+     ii  nlserver6                       XXXX                     nlserver6-XXXX
+     ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
+     ```
 
    * Entrada **Red Hat**:
 
-      ```
-      rpm -qa | grep nl
-      ```
+     ```
+     rpm -qa | grep nl
+     ```
 
 1. Desinstale os pacotes do Adobe Campaign v6.
 
    * Entrada **Debian**:
 
-      ```
-      dpkg --purge nlserver6 nlthirdparty6
-      ```
+     ```
+     dpkg --purge nlserver6 nlthirdparty6
+     ```
 
    * Entrada **Red Hat**:
 
-      ```
-      rprm -ev nlserver6 nlthirdparty6
-      ```
+     ```
+     rprm -ev nlserver6 nlthirdparty6
+     ```
 
 ## Implantar o Adobe Campaign v7 {#deploying-adobe-campaign-v7}
 
@@ -475,15 +476,16 @@ Para implantar o Adobe Campaign, siga as etapas abaixo:
 
    * Entrada **Debian**:
 
-      ```
-      dpkg -i nlserver6-XXXX-amd64_debX.deb
-      ```
+     ```
+     dpkg -i nlserver6-XXXX-amd64_debX.deb
+     ```
 
    * Entrada **Red Hat**:
 
-      ```
-      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
-      ```
+     ```
+     rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
+     ```
+
    >[!IMPORTANT]
    >
    >Você deve instalar os pacotes com sucesso antes de passar para a próxima etapa.

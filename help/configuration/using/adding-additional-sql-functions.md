@@ -2,12 +2,13 @@
 product: campaign
 title: Adição de funções SQL extras
 description: Saiba como definir funções SQL adicionais
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 0%
+source-wordcount: '1030'
+ht-degree: 1%
 
 ---
 
@@ -66,20 +67,20 @@ As funções a serem adicionadas podem ser encontradas no **arquivo &quot;packag
 * A variável **buildVersion** e **buildNumber** Os campos são obrigatórios. Eles devem corresponder ao número do servidor ao qual o console está conectado. Essas informações podem ser encontradas na caixa &quot;Ajuda/Sobre&quot;.
 * Os seguintes blocos, **entidades** e **funclist** são obrigatórios. Em funcList, os campos &quot;name&quot; e &quot;namespace&quot; são obrigatórios, mas seu nome é deixado para o usuário decidir e ele designa exclusivamente a lista de funções.
 
-   Isso significa que se outra lista de funções com o mesmo par de namespace/nome (aqui &quot;cus::myList&quot;) for importada, as funções importadas anteriormente serão excluídas. Por outro lado, se você alterar esse par de namespace/nome, a nova série de funções importadas será adicionada à série anterior.
+  Isso significa que se outra lista de funções com o mesmo par de namespace/nome (aqui &quot;cus::myList&quot;) for importada, as funções importadas anteriormente serão excluídas. Por outro lado, se você alterar esse par de namespace/nome, a nova série de funções importadas será adicionada à série anterior.
 
 * A variável **grupo** element permite especificar o grupo de funções no qual as funções importadas aparecerão no editor de funções. O atributo @name pode ser um nome que já existe (nesse caso, as funções serão adicionadas ao grupo considerado) ou um novo nome (nesse caso, ele aparecerá em um novo grupo).
 * Lembrete: valores possíveis para o atributo @name no `<group>` elementos são:
 
-   ```
-     name="aggregate"      ( label="Aggregates"         )
-     name="string"             ( label="String"           )
-     name="date"               ( label="Date"             )
-     name="numeric"          ( label="Numeric"        )
-     name="geomarketing" ( label="Geomarketing"     )
-     name="other"              ( label="Others"           )
-     name="window"          ( label="Windowing functions" )
-   ```
+  ```
+    name="aggregate"      ( label="Aggregates"         )
+    name="string"             ( label="String"           )
+    name="date"               ( label="Date"             )
+    name="numeric"          ( label="Numeric"        )
+    name="geomarketing" ( label="Geomarketing"     )
+    name="other"              ( label="Others"           )
+    name="window"          ( label="Windowing functions" )
+  ```
 
 >[!IMPORTANT]
 >
@@ -108,13 +109,13 @@ A variável **@name** o campo refere-se ao nome da função, e &quot;args&quot; 
 * **ajuda** é o campo exibido na parte inferior da janela do editor de expressões.
 * **@display** é uma mensagem informativa.
 
-   >[!NOTE]
-   >
-   >Nos atributos @help e @display, a string &quot;$1&quot; representa o nome fornecido no primeiro parâmetro de função (aqui, &quot;Age&quot;). $2, $3... representariam os seguintes parâmetros. No atributo @body detalhado abaixo, $1 designa o valor do argumento passado para a função durante a chamada.
+  >[!NOTE]
+  >
+  >Nos atributos @help e @display, a string &quot;$1&quot; representa o nome fornecido no primeiro parâmetro de função (aqui, &quot;Age&quot;). $2, $3... representariam os seguintes parâmetros. No atributo @body detalhado abaixo, $1 designa o valor do argumento passado para a função durante a chamada.
 
-   >[!NOTE]
-   >
-   >A descrição deve ser uma cadeia de caracteres XML válidos: observe o uso de &#39;&lt;&#39; e &#39;>&#39; em vez de &lt; e >.
+  >[!NOTE]
+  >
+  >A descrição deve ser uma cadeia de caracteres XML válidos: observe o uso de &#39;&lt;&#39; e &#39;>&#39; em vez de &lt; e >.
 
 * **@type** é o tipo de retorno da função e é um valor padrão (long, string, byte, datetime...). Se for omitido, o servidor determinará o melhor tipo entre os tipos disponíveis na expressão que implementa a função.
 * **@minArgs** e **maxArgs** designa o número de parâmetros (mínimo e máximo) para um parâmetro. Por exemplo, para uma função com 2 parâmetros, minArgs e maxArgs serão 2 e 2. Para 3 parâmetros, mais 1 opcional, eles serão 3 e 4, respectivamente.
@@ -123,9 +124,9 @@ A variável **@name** o campo refere-se ao nome da função, e &quot;args&quot; 
    * A variável **provider** atributo é obrigatório, ele especifica os sistemas de banco de dados para os quais a implementação é fornecida. Como mostrado no exemplo, quando as sintaxes de expressão ou as funções subjacentes diferem, implementações alternativas podem ser fornecidas de acordo com o banco de dados.
    * A variável **@body** O atributo contém a implementação da função. Observação: esta implementação deve ser uma expressão em linguagem de banco de dados (não um bloco de código). Dependendo dos bancos de dados, as expressões podem ser subconsultas (&quot;(selecione a coluna da tabela onde...)&quot;) que retornam apenas um valor único. Por exemplo, esse é o caso no Oracle (a consulta deve ser gravada entre parênteses).
 
-   >[!NOTE]
-   >
-   >Se apenas um ou dois bancos de dados forem consultados pela função definida, sempre poderemos fornecer apenas as definições correspondentes a esses bancos de dados.
+  >[!NOTE]
+  >
+  >Se apenas um ou dois bancos de dados forem consultados pela função definida, sempre poderemos fornecer apenas as definições correspondentes a esses bancos de dados.
 
 ## Descritor de função &#39;Pass-through&#39; {#pass-through--function-descriptor}
 

@@ -2,15 +2,15 @@
 product: campaign
 title: Perguntas frequentes sobre a migração para o Adobe Managed Services (Nuvem pública)
 description: Perguntas frequentes sobre a migração do Campaign Classic para a Nuvem pública
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2215'
-ht-degree: 62%
+source-wordcount: '2222'
+ht-degree: 61%
 
 ---
 
@@ -32,27 +32,27 @@ Os impactos globais no banco de dados e na infraestrutura estão listados abaixo
 
 * **O banco de dados vai mudar? Qual é a versão do novo banco de dados? Qual sistema operacional será usado?**
 
-   A Adobe se reserva o direito de escolher e implantar o mecanismo de gerenciamento de banco de dados mais adequado para atender ao Adobe Campaign Service em condições ideais.
+  A Adobe se reserva o direito de escolher e implantar o mecanismo de gerenciamento de banco de dados mais adequado para atender ao Adobe Campaign Service em condições ideais.
 
-   Além disso, para preservar o melhor nível de segurança, a Adobe não fornecerá informações detalhadas relacionadas à infraestrutura.
+  Além disso, para preservar o melhor nível de segurança, a Adobe não fornecerá informações detalhadas relacionadas à infraestrutura.
 
 * **Existe o risco de perda de dados?**
 
-   O banco de dados será descarregado do datacenter herdado e restaurado na Nuvem pública (AWS). Quando reiniciado no novo data center, o aplicativo será retomado do estado exato em que estava antes da migração. Os usuários não notarão diferença, exceto que algumas tarefas programadas terão sido adiadas.
+  O banco de dados será descarregado do datacenter herdado e restaurado na Nuvem pública (AWS). Quando reiniciado no novo data center, o aplicativo será retomado do estado exato em que estava antes da migração. Os usuários não notarão diferença, exceto que algumas tarefas programadas terão sido adiadas.
 
 * **Há diferenças no tamanho do pacote entre o data center herdado e a Nuvem pública?**
 
-   Estamos provisionando na Nuvem pública (AWS) com novas definições de pacote com base no tamanho atual do banco de dados, tamanho do disco, etc. Por exemplo, se um cliente tiver um servidor de aplicativos em data centers herdados, poderá ter dois servidores de aplicativos na Nuvem pública (AWS) com base nas definições do pacote.
+  Estamos provisionando na Nuvem pública (AWS) com novas definições de pacote com base no tamanho atual do banco de dados, tamanho do disco, etc. Por exemplo, se um cliente tiver um servidor de aplicativos em data centers herdados, poderá ter dois servidores de aplicativos na Nuvem pública (AWS) com base nas definições do pacote.
 
 * **Haverá alteração no número de build ou na versão do Campaign?**
 
-   Como primeiro passo, manteremos o mesmo build do Campaign Classic com a migração.
+  Como primeiro passo, manteremos o mesmo build do Campaign Classic com a migração.
 
-   Em outra etapa, continuaremos a atualizar para a build mais recente do Campaign Classic GA. Para obter mais informações, consulte [esta página](../../rn/using/rn-overview.md).
+  Em outra etapa, continuaremos a atualizar para a build mais recente do Campaign Classic GA. Para obter mais informações, consulte [esta página](../../rn/using/rn-overview.md).
 
 * **Qual é o plano para solucionar problemas após a migração?**
 
-   Testes abrangentes serão realizados antes da migração dos sistemas de produção. No entanto, em caso de problemas, [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) continuará a ser o principal ponto de contato. A Adobe criou uma equipe de especialistas para fornecer suporte avançado, se necessário.
+  Testes abrangentes serão realizados antes da migração dos sistemas de produção. No entanto, em caso de problemas, [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) continuará a ser o principal ponto de contato. A Adobe criou uma equipe de especialistas para fornecer suporte avançado, se necessário.
 
 ## Impactos na capacidade de entrega
 
@@ -62,51 +62,51 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 
 * **Como o IP na inclui na lista de permissões será tratado? Os clientes precisarão adicionar novos endereços IP ao para incluir na lista de permissões o tráfego de entrada do Campaign?**
 
-   O endereço IP dos servidores da Adobe será alterado. Portanto, talvez os clientes precisem adicionar esses novos endereços IP no incluir na lista de permissões em seus sistemas.
+  O endereço IP dos servidores da Adobe será alterado. Portanto, talvez os clientes precisem adicionar esses novos endereços IP no incluir na lista de permissões em seus sistemas.
 
-   [Saiba mais](#config) sobre IP no incluo na lista de permissões.
+  [Saiba mais](#config) sobre IP no incluo na lista de permissões.
 
-* **Lista de permissões Como lidaremos com a porta adicionada ao arquivo de pesquisa para acesso SFTP/FTP?**
+* **Incluir na lista de permissões Como lidaremos com a porta adicionada ao arquivo de pesquisa para acesso SFTP/FTP?**
 
-   Lista de permissões A configuração SFTP + IP no arquivo também será transferida do data center herdado para a Nuvem pública (AWS). Nenhuma ação esperada do cliente.
+  Incluir na lista de permissões A configuração SFTP + IP no arquivo também será transferida do data center herdado para a Nuvem pública (AWS). Nenhuma ação esperada do cliente.
 
 * **Estamos alterando os IPs?**
 
-   O endereço IP dos servidores da Adobe será alterado. Portanto, talvez os clientes precisem adicionar esses novos endereços IP ao incluir na lista de permissões em seus sistemas.
+  O endereço IP dos servidores da Adobe será alterado. Portanto, talvez os clientes precisem adicionar esses novos endereços IP ao incluir na lista de permissões em seus sistemas.
 
-   [Saiba mais](#config) sobre IP no incluo na lista de permissões.
+  [Saiba mais](#config) sobre IP no incluo na lista de permissões.
 
 * **Como a delegação de subdomínios será tratada?**
 
-   Os subdomínios existentes serão transferidos do data center herdado para a Nuvem pública (AWS). Esta parte será gerenciada pela equipe da Adobe Deliverability como parte do processo de migração.
+  Os subdomínios existentes serão transferidos do data center herdado para a Nuvem pública (AWS). Esta parte será gerenciada pela equipe da Adobe Deliverability como parte do processo de migração.
 
-   A Adobe orientará o cliente nos testes necessários para garantir que a configuração esteja funcionando a todo vapor nos novos servidores da Nuvem pública (AWS) após a migração.
+  A Adobe orientará o cliente nos testes necessários para garantir que a configuração esteja funcionando a todo vapor nos novos servidores da Nuvem pública (AWS) após a migração.
 
 * **A migração produzirá novos URLs para rastreamento, recursos e aplicações Web?**
 
-   Não, preservaremos os URLs existentes.
+  Não, preservaremos os URLs existentes.
 
 * **Haverá uma alteração no subdomínio de Neolane.net para campaign.adobe.com?**
 
-   Ambos `neolane.net` e `campaign.adobe.com` estarão em vigor após a migração. Para simplificar: redirecionaremos o neolane.net para novas instâncias na Nuvem pública (AWS), portanto, nenhuma alteração será necessária para o cliente.
+  Ambos `neolane.net` e `campaign.adobe.com` estarão em vigor após a migração. Para simplificar: redirecionaremos o neolane.net para novas instâncias na Nuvem pública (AWS), portanto, nenhuma alteração será necessária para o cliente.
 
 * **Qual é o plano para o aquecimento de IP?**
 
-   Primeiramente, a equipe de Entregabilidade do Adobe avaliará o status da capacidade de entrega da plataforma e recomendará um plano para a mudança para os novos IPs
+  Primeiramente, a equipe de Entregabilidade do Adobe avaliará o status da capacidade de entrega da plataforma e recomendará um plano para a mudança para os novos IPs
 
-   Nenhum aquecimento será necessário após a migração. Pode haver algumas exceções e, nesse caso, o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) entrará em contato com os clientes.
+  Nenhum aquecimento será necessário após a migração. Pode haver algumas exceções e, nesse caso, o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) entrará em contato com os clientes.
 
-   No entanto, o plano é tornar essa operação transparente para a empresa, diferentemente do aumento inicial realizado durante a ativação.
+  No entanto, o plano é tornar essa operação transparente para a empresa, diferentemente do aumento inicial realizado durante a ativação.
 
-   Quando a migração for concluída, a instância do Campaign terá IPs de envio totalmente diferentes. Como uma questão de garantir uma transição sem problemas, a Adobe implementará um aumento dos novos IPs de envio, alternando gradativamente o tráfego dos IPs antigos para os novos.
+  Quando a migração for concluída, a instância do Campaign terá IPs de envio totalmente diferentes. Como uma questão de garantir uma transição sem problemas, a Adobe implementará um aumento dos novos IPs de envio, alternando gradativamente o tráfego dos IPs antigos para os novos.
 
 * **Estamos transferindo o URL na inclui na lista de permissões?**
 
-   Sim, isso é armazenado no arquivo de configuração do servidor que será copiado da origem para a nova instância.
+  Sim, isso é armazenado no arquivo de configuração do servidor que será copiado da origem para a nova instância.
 
 * **Qual deve ser o impacto no subdomínio delegado que usamos para marcar nossa comunicação?**
 
-   Os subdomínios usados para comunicação de marketing permanecem os mesmos. No entanto, dependendo da implementação, são necessárias ações do lado do cliente:
+  Os subdomínios usados para comunicação de marketing permanecem os mesmos. No entanto, dependendo da implementação, são necessárias ações do lado do cliente:
    * No caso de delegação de subdomínio para Adobe (padrão), o Adobe cuida de todas as alterações e garante uma transição contínua.
    * No caso de configuração CNAME (exceção), o cliente é solicitado a implementar alterações, em coordenação com o Adobe.
 
@@ -132,45 +132,45 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
 * **A migração afetará a conectividade com contas externas?**
 
-   Sim. Integrações de terceiros, provedores de SMS, por exemplo, devem adicionar novos endereços IP de servidores de aplicativos Adobe Campaign ao incluo na lista de permissões.
+  Sim. Integrações de terceiros, provedores de SMS, por exemplo, devem adicionar novos endereços IP de servidores de aplicativos Adobe Campaign ao incluo na lista de permissões.
 
-* **A migração afetará a conectividade com o Adobe Analytics usando o conector Genesis? Lista de permissões E quanto à adição de endereços IP do Campaign ao arquivo no lado do Adobe Analytics?**
+* **A migração afetará a conectividade com o Adobe Analytics usando o conector Genesis? Incluir na lista de permissões E quanto à adição de endereços IP do Campaign ao arquivo no lado do Adobe Analytics?**
 
-   Os endereços IP dos servidores de aplicativos do Adobe Campaign serão alterados. Essa etapa será realizada pelo Atendimento ao cliente da Adobe após a migração.
+  Os endereços IP dos servidores de aplicativos do Adobe Campaign serão alterados. Essa etapa será realizada pelo Atendimento ao cliente da Adobe após a migração.
 
 * **A migração afetará a conectividade com outras soluções da Adobe (AEM, Target, etc.)?**
 
-   As integrações são uma combinação de endereços IP declarados no arquivo de inclui na lista de permissões e na configuração da conta do serviço da Web. Isso será de responsabilidade do Atendimento ao cliente Adobe.
+  As integrações são uma combinação de endereços IP declarados no arquivo de inclui na lista de permissões e na configuração da conta do serviço da Web. Isso será de responsabilidade do Atendimento ao cliente Adobe.
 
-   Na inclui na lista de permissões, haverá endereços IP que serão necessários na solução externa, pois o IP dos servidores de aplicativos será alterado. Essas informações serão fornecidas. Outras partes da integração são baseadas no IMS e devem funcionar como estão.
+  Na inclui na lista de permissões, haverá endereços IP que serão necessários na solução externa, pois o IP dos servidores de aplicativos será alterado. Essas informações serão fornecidas. Outras partes da integração são baseadas no IMS e devem funcionar como estão.
 
 * **E quanto ao cliente que não está anexado à ID da organização para integração do IMS?**
 
-   Os clientes que não têm IMS receberão um: uma ID da organização será atribuída à instância.
+  Os clientes que não têm IMS receberão um: uma ID da organização será atribuída à instância.
 
 * **As configurações de várias marcas são afetadas pela migração?**
 
-   Assim que o subdomínio e todas as configurações relacionadas forem transferidos/redirecionados corretamente do data center herdado para a Nuvem pública (AWS), não deve haver impacto.
+  Assim que o subdomínio e todas as configurações relacionadas forem transferidos/redirecionados corretamente do data center herdado para a Nuvem pública (AWS), não deve haver impacto.
 
 * **A conectividade da API é afetada pela migração?**
 
-   O endereço IP dos servidores da Adobe será alterado. Portanto, talvez os clientes precisem adicionar esses novos endereços IP ao incluir na lista de permissões em seus sistemas.
+  O endereço IP dos servidores da Adobe será alterado. Portanto, talvez os clientes precisem adicionar esses novos endereços IP ao incluir na lista de permissões em seus sistemas.
 
-   [Saiba mais](#config) sobre IP na inclui na lista de permissões.
+  [Saiba mais](#config) sobre IP na inclui na lista de permissões.
 
 * **Asseguraremos que todos os parâmetros de configuração de memória JavaScript estejam definidos corretamente após a migração?**
 
-   Copiaremos a configuração da instância do data center herdado para a Nuvem pública (AWS), de modo que esses valores serão preservados após a migração.
+  Copiaremos a configuração da instância do data center herdado para a Nuvem pública (AWS), de modo que esses valores serão preservados após a migração.
 
 * **Existe algum risco de acesso a determinadas extensões de arquivo?**
 
-   O cliente pode querer permitir que os arquivos de fonte sejam carregados na pasta de recursos públicos. Essa configuração é feita na versão atual `config-<instance>.xml` arquivo. Ela será copiada com os arquivos de configuração.
+  O cliente pode querer permitir que os arquivos de fonte sejam carregados na pasta de recursos públicos. Essa configuração é feita na versão atual `config-<instance>.xml` arquivo. Ela será copiada com os arquivos de configuração.
 
 * **O fuso horário está mudando no novo servidor? O cliente poderá manter seu fuso horário atual?**
 
-   Pode mudar de acordo com a localização dos novos servidores. No entanto, o cliente poderá manter o fuso horário atual.
+  Pode mudar de acordo com a localização dos novos servidores. No entanto, o cliente poderá manter o fuso horário atual.
 
-   [Saiba mais](../../workflow/using/managing-time-zones.md) sobre o gerenciamento de fuso horário no Adobe Campaign Classic v7.
+  [Saiba mais](../../workflow/using/managing-time-zones.md) sobre o gerenciamento de fuso horário no Adobe Campaign Classic v7.
 
 
 ## Segurança e permissões
@@ -187,33 +187,33 @@ Os impactos em permissões, certificados e acesso SFTP estão listados abaixo.
 
 * **Vamos transferir todos os certificados para os novos servidores?**
 
-   Sim, todos os certificados serão movidos como parte dessa migração.
+  Sim, todos os certificados serão movidos como parte dessa migração.
 
 * **Precisamos solicitar novas chaves de acesso STP ao cliente?**
 
-   Não, a Adobe copiará as chaves de acesso SFTP como estão no novo servidor.
+  Não, a Adobe copiará as chaves de acesso SFTP como estão no novo servidor.
 
 * **Como as permissões SFTP são tratadas?**
 
-   Estamos garantindo que novos servidores SFTP, usuários, diretórios e arquivos tenham exatamente os mesmos níveis de permissão.
+  Estamos garantindo que novos servidores SFTP, usuários, diretórios e arquivos tenham exatamente os mesmos níveis de permissão.
 
 * **Se a conexão SFTP não puder ser estabelecida, qual será a solução alternativa/plano para manter o cliente em operação?**
 
-   Lista de permissões O único problema de conectividade que pode surgir está relacionado à consulta do cliente. O cliente deve adicionar esse teste em um ambiente que não seja de produção para garantir que funcione, antes de migrar para a produção.
+  Incluir na lista de permissões O único problema de conectividade que pode surgir está relacionado à consulta do cliente. O cliente deve adicionar esse teste em um ambiente que não seja de produção para garantir que funcione, antes de migrar para a produção.
 
 * **Existem configurações de inclui na lista de permissões específicas do data center que precisam ser transferidas?**
 
-   Não, não há nenhuma configuração de inclui na lista de permissões específica do data center para gerenciar.
+  Não, não há nenhuma configuração de inclui na lista de permissões específica do data center para gerenciar.
 
 * **Estamos garantindo que scripts personalizados sejam executados com êxito no novo ambiente?**
 
-   A implementação do cliente pode usar scripts personalizados (Perl/Shell/Python/Java Script) em fluxos de trabalho para manipular arquivos e pastas, por exemplo.
+  A implementação do cliente pode usar scripts personalizados (Perl/Shell/Python/Java Script) em fluxos de trabalho para manipular arquivos e pastas, por exemplo.
 
-   Na instância hospedada, os scripts são executados somente pelo mecanismo JavaScript. Essas implementações específicas podem causar falhas de segurança e problemas após a atualização. Elas não são compatíveis.
+  Na instância hospedada, os scripts são executados somente pelo mecanismo JavaScript. Essas implementações específicas podem causar falhas de segurança e problemas após a atualização. Elas não são compatíveis.
 
 * **Com a integração do IMS, ele funcionará como está em uma nova instância ou será necessária uma atualização de configuração adicional?**
 
-   Como mantemos os mesmos nomes de DNS, ele deve funcionar como está após a migração.
+  Como mantemos os mesmos nomes de DNS, ele deve funcionar como está após a migração.
 
 
 ## Execução da migração
@@ -224,38 +224,37 @@ Os impactos globais durante a migração estão listados abaixo.
 
 * **Precisamos planejar a interrupção da atividade de Marketing durante a migração?**
 
-   A Adobe recomenda desacelerar e, idealmente, pausar todas as execuções pouco antes do desligamento do aplicativo no data center herdado: entregas e fluxos de trabalho. Isso facilitará a reinicialização no Servidor na nuvem (AWS), pois os processos terão tempo para pausar &quot;normalmente&quot; e salvar qualquer estado de execução em andamento.
+  A Adobe recomenda desacelerar e, idealmente, pausar todas as execuções pouco antes do desligamento do aplicativo no data center herdado: entregas e fluxos de trabalho. Isso facilitará a reinicialização no Servidor na nuvem (AWS), pois os processos terão tempo para pausar &quot;normalmente&quot; e salvar qualquer estado de execução em andamento.
 
 * **Esperamos tempo de inatividade do serviço do Adobe Campaign?**
 
-   A migração terá um tempo de inatividade inevitável da plataforma. O objetivo deste plano é orientar para minimizar esse tempo de inatividade.
+  A migração terá um tempo de inatividade inevitável da plataforma. O objetivo deste plano é orientar para minimizar esse tempo de inatividade.
 
-   A transferência de dados entre data centers é parte do processo que impacta o tempo de inatividade. Os dados são armazenados de duas formas:
+  A transferência de dados entre data centers é parte do processo que impacta o tempo de inatividade. Os dados são armazenados de duas formas:
 
    * De longe o mais importante, o banco de dados
    * Arquivos no servidor de aplicativos (importações e exportações de dados)
 
-   A redução do tamanho do banco de dados é da maior importância para acelerar a transferência de dados. Sugestões:
+  A redução do tamanho do banco de dados é da maior importância para acelerar a transferência de dados. Sugestões:
 
    * Reduza os períodos de retenção dos dados históricos (registros de entrega, registros de rastreamento, etc.)
    * Excluir registros inúteis em outras tabelas (entregas, destinatários, tabelas personalizadas)
 
-
 * **Qual é o tempo de inatividade estimado para migrar uma instância?**
 
-   O tempo de inatividade depende totalmente do tamanho do banco de dados do cliente e do armazenamento de arquivos SFTP. Entre em contato com o Atendimento ao cliente para obter uma duração estimada.
+  O tempo de inatividade depende totalmente do tamanho do banco de dados do cliente e do armazenamento de arquivos SFTP. Entre em contato com o Atendimento ao cliente para obter uma duração estimada.
 
 * **E as mensagens enviadas do servidor herdado? Os links sempre estarão acessíveis?**
 
-   Enquanto a migração estiver em execução, somente um serviço permanecerá funcional: redirecionamento de links de email. Todos os destinatários poderão acessar a página de aterrissagem quando clicarem em um email. No entanto, esses cliques não serão rastreados, portanto, as taxas de clique para as entregas que foram iniciadas pouco antes da migração serão menores do que o normal.
+  Enquanto a migração estiver em execução, somente um serviço permanecerá funcional: redirecionamento de links de email. Todos os destinatários poderão acessar a página de aterrissagem quando clicarem em um email. No entanto, esses cliques não serão rastreados, portanto, as taxas de clique para as entregas que foram iniciadas pouco antes da migração serão menores do que o normal.
 
 * **E os ambientes de mid-sourcing/RT?**
 
-   Mid-sourcing e RT são tratados como qualquer outra infraestrutura hospedada.
+  Mid-sourcing e RT são tratados como qualquer outra infraestrutura hospedada.
 
 * **Em que ordem as migrações serão realizadas?**
 
-   Os ambientes serão migrados na seguinte ordem:
+  Os ambientes serão migrados na seguinte ordem:
 
    1. Ambientes de desenvolvimento
    1. Ambientes de preparo
@@ -265,19 +264,19 @@ Os impactos globais durante a migração estão listados abaixo.
 
 * **O que é plano de reversão?**
 
-   O plano de reversão é retornar o DNS e redefinir o banco de dados de origem como leitura e gravação de somente leitura. Eventualmente teremos automação para isso.
+  O plano de reversão é retornar o DNS e redefinir o banco de dados de origem como leitura e gravação de somente leitura. Eventualmente teremos automação para isso.
 
 * **Depois da migração, ainda podemos acessar instâncias antigas?**
 
-   Quando a migração do aplicativo estiver concluída, não haverá plano para executar os processos novamente no data center herdado. Esperamos que todos os dados no data center herdado possam ser apagados, exceto para fins de backup temporário, até que os processos de backup programados sejam executados na Nuvem pública (AWS).
+  Quando a migração do aplicativo estiver concluída, não haverá plano para executar os processos novamente no data center herdado. Esperamos que todos os dados no data center herdado possam ser apagados, exceto para fins de backup temporário, até que os processos de backup programados sejam executados na Nuvem pública (AWS).
 
 * **Quanto tempo de teste será permitido para cada instância após a migração para a Nuvem pública?**
 
-   Dependendo da complexidade do cliente, será necessário um tempo de Bake de pelo menos uma semana entre as migrações do ambiente de Preparo e do ambiente de Produção.
+  Dependendo da complexidade do cliente, será necessário um tempo de Bake de pelo menos uma semana entre as migrações do ambiente de Preparo e do ambiente de Produção.
 
-* **Lista de permissões Quem lidará com a adição de novos IPs ao arquivo?**
+* **Incluir na lista de permissões Quem lidará com a adição de novos IPs ao arquivo?**
 
-   A equipe de Atendimento ao cliente do Adobe cuidará de garantir que o cliente e terceiros possam acessar o novo sistema, adicionando os novos IPs ao incluo na lista de permissões.
+  A equipe de Atendimento ao cliente do Adobe cuidará de garantir que o cliente e terceiros possam acessar o novo sistema, adicionando os novos IPs ao incluo na lista de permissões.
 
 ## Suporte e outros links úteis{#support}
 

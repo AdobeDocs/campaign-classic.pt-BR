@@ -2,16 +2,17 @@
 product: campaign
 title: Integração em um servidor Web para Linux
 description: Saiba como integrar o Campaign a um servidor Web (Linux)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 5%
+source-wordcount: '579'
+ht-degree: 8%
 
 ---
 
@@ -28,9 +29,9 @@ Neste caso:
 * a porta de escuta padrão é 8080. Para alterá-lo, consulte [nesta seção](configure-tomcat.md).
 * Os consoles clientes se conectam usando um URL como:
 
-   ```
-   http://<computer>:8080
-   ```
+  ```
+  http://<computer>:8080
+  ```
 
 No entanto, por motivos de segurança e administração, recomendamos usar um servidor Web dedicado como principal ponto de entrada para o tráfego HTTP quando o computador que executa o Adobe Campaign estiver exposto na Internet e você desejar abrir o acesso ao console fora da rede.
 
@@ -80,7 +81,7 @@ Siga as etapas abaixo:
     a2enmod nlsrv
    ```
 
-   Se você estiver usando o **mod_rewrite** para páginas do Adobe Campaign, é necessário renomear o **nlsrv.load** e **nlsrv.conf** arquivos para **zz-nlsrv.load** e **zz-nlsrv.conf**. Para ativar o módulo, execute o seguinte comando:
+   Se você estiver usando a variável **mod_rewrite** para páginas do Adobe Campaign, é necessário renomear o **nlsrv.load** e **nlsrv.conf** arquivos para **zz-nlsrv.load** e **zz-nlsrv.conf**. Para ativar o módulo, execute o seguinte comando:
 
    ```
    a2enmod zz-nlsrv

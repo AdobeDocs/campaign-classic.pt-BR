@@ -2,14 +2,15 @@
 product: campaign
 title: Implantação independente
 description: Implantação independente
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1084'
 ht-degree: 5%
 
 ---
@@ -68,7 +69,7 @@ Esse tipo de configuração pode ser executado ao gerenciar listas de menos de 1
 * Caixa de entrada de devolução acessível via POP3,
 * Criação de dois aliases DNS:
 
-   * a primeira a ser exposta ao público para rastrear e apontar para o computador no seu IP público;
+   * a primeira a ser exposta ao público para rastrear e apontar o computador no seu IP público;
    * o segundo alias exposto aos usuários internos para acesso ao console e apontando para o mesmo computador.
 
 * Firewall configurado para abrir SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 para Oracle, 5432 para PostgreSQL etc.) portas. Para obter mais informações, consulte [Configuração de rede](../../installation/using/network-configuration.md).
@@ -119,19 +120,19 @@ Siga as etapas abaixo:
 
    * Crie a instância por meio do console:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Para obter mais informações, consulte [Criar uma instância e fazer logon](../../installation/using/creating-an-instance-and-logging-on.md).
+     Para obter mais informações, consulte [Criar uma instância e fazer logon](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      ou
+     ou
 
    * Crie a instância usando linhas de comando:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
+     ```
 
-      Para obter mais informações, consulte [Criação de uma instância](../../installation/using/command-lines.md#creating-an-instance).
+     Para obter mais informações, consulte [Criação de uma instância](../../installation/using/command-lines.md#creating-an-instance).
 
 1. Edite o **config-demo.xml** arquivo (criado na etapa anterior ao lado de **config-default.xml**) e verifique se o **mta** (delivery), **wfserver** (workflow), **inMail** (emails rejeitados) e **stat** (estatísticas) processos são ativados. Em seguida, configure o endereço do servidor de estatísticas:
 
@@ -235,13 +236,13 @@ Siga as etapas abaixo:
    * Delivery de email: endereços de remetente e resposta e a caixa de correio de erro para emails devolvidos.
    * Rastreamento: preencha o URL externo usado para redirecionamento e o URL interno, clique em **Registro no(s) servidor(es) de rastreamento** e, em seguida, valide-o no **demonstração** instância do servidor de rastreamento.
 
-      Para obter mais informações, consulte [Configuração de rastreamento](../../installation/using/deploying-an-instance.md#tracking-configuration).
+     Para obter mais informações, consulte [Configuração de rastreamento](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
-      ![](assets/s_ncs_install_deployment_wiz_09.png)
+     ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-      Como o servidor do Adobe Campaign é usado como o servidor de aplicativos e o servidor de redirecionamento, o URL interno usado para coletar logs de rastreamento e transferir URLs é uma conexão interna direta com o Tomcat (https://localhost:8080).
+     Como o servidor do Adobe Campaign é usado como o servidor de aplicativos e o servidor de redirecionamento, o URL interno usado para coletar logs de rastreamento e transferir URLs é uma conexão interna direta com o Tomcat (https://localhost:8080).
 
    * Gerenciamento de rejeição: insira os parâmetros para lidar com a rejeição de emails (não use o **Emails rejeitados não processados** seção em consideração).
    * Acesso de: forneça os dois URLs para relatórios, formulários web e mirror pages.
 
-      ![](assets/d_ncs_install_web_url.png)
+     ![](assets/d_ncs_install_web_url.png)

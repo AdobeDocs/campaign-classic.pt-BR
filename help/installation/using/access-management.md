@@ -2,12 +2,12 @@
 product: campaign
 title: Gerenciamento de acesso
 description: Saiba mais sobre as práticas recomendadas de gerenciamento de acesso
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Access Management, Permissions
+feature: Installation, Access Management, Permissions
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '383'
 ht-degree: 38%
 
 ---
@@ -46,6 +46,6 @@ A Adobe Campaign oferece três privilégios de alto nível por meio de [direitos
 
 * **EXECUÇÃO DO PROGRAMA** (createProcess): permite a execução de programas externos (no servidor)
 
-* **SQL**: permite a execução de scripts SQL no banco de dados (para que ele possa ignorar o modelo de segurança). Lista de permissões Observação: se você precisar executar cálculos complexos (filtragem, por exemplo), peça ao administrador do banco de dados para criar uma função SQL e adicioná-la ao arquivo. Saiba mais [nesta página](../../installation/using/scripting-coding-guidelines.md).
+* **SQL**: permite a execução de scripts SQL no banco de dados (para que ele possa ignorar o modelo de segurança). Incluir na lista de permissões Observação: se você precisar executar cálculos complexos (filtragem, por exemplo), peça ao administrador do banco de dados para criar uma função SQL e adicioná-la ao arquivo. Saiba mais [nesta página](../../installation/using/scripting-coding-guidelines.md).
 
 * **Conceda-os a poucos operadores (e confiáveis)**

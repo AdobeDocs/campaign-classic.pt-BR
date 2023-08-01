@@ -2,16 +2,17 @@
 product: campaign
 title: Configuração do SpamAssassin
 description: Configuração do SpamAssassin
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 2%
+source-wordcount: '1008'
+ht-degree: 3%
 
 ---
 
@@ -144,16 +145,16 @@ Para instalar e configurar o SpamAssassin no Windows e habilitar a integração 
 
 * Se necessário, instale o Perl e o SpamAssassin usando o seguinte comando:
 
-   ```
-   apt-get install spamassassin libxml-writer-perl
-   ```
+  ```
+  apt-get install spamassassin libxml-writer-perl
+  ```
 
 * No **serverConf.xml** arquivo (disponível em `/usr/local/[INSTALL]/nl6/conf/`), altere o **spamCheck** seguinte linha:
 
-   ```
-   <spamCheck command="perl
-   /usr/local/[NSTALL]/nl6/bin/spamcheck.pl"/>
-   ```
+  ```
+  <spamCheck command="perl
+  /usr/local/[NSTALL]/nl6/bin/spamcheck.pl"/>
+  ```
 
 ### Etapas de instalação no RHEL/CentOS {#installation-steps-in-rhel-centos}
 

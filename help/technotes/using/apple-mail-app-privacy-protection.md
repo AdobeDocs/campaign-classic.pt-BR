@@ -1,9 +1,10 @@
 ---
 product: campaign
 title: Proteção de privacidade de email no aplicativo de email do Apple
+feature: Technote, Privacy, Privacy Tools
 description: Saiba como suas campanhas podem ser afetadas pelo recurso Proteção de privacidade de email da Apple
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '2056'
 ht-degree: 1%
@@ -61,21 +62,21 @@ Para coletar insights dos dados do Adobe Campaign, você pode usar relatórios p
 
 * **[!UICONTROL Operating Systems]** relatório
 
-   Para identificar a proporção de visitantes por sistema operacional e por versão, use este relatório. [Leia mais](../../reporting/using/global-reports.md#operating-systems).
+  Para identificar a proporção de visitantes por sistema operacional e por versão, use este relatório. [Leia mais](../../reporting/using/global-reports.md#operating-systems).
 
-   Você pode visualizar o detalhamento dos visitantes por sistema operacional em relação ao número total de visitantes.
+  Você pode visualizar o detalhamento dos visitantes por sistema operacional em relação ao número total de visitantes.
 
-   ![](../../reporting/using/assets/s_ncs_user_os_report.png)
+  ![](../../reporting/using/assets/s_ncs_user_os_report.png)
 
-   Para cada sistema operacional, é possível visualizar o detalhamento dos visitantes por versão do sistema operacional.
+  Para cada sistema operacional, é possível visualizar o detalhamento dos visitantes por versão do sistema operacional.
 
-   ![](../../reporting/using/assets/s_ncs_user_os_report2.png)
+  ![](../../reporting/using/assets/s_ncs_user_os_report2.png)
 
 * **[!UICONTROL Breakdown of opens]** relatório
 
-   Para identificar a proporção de aberturas de email por sistema operacional, use este relatório. [Leia mais](../../reporting/using/global-reports.md#breakdown-of-opens).
+  Para identificar a proporção de aberturas de email por sistema operacional, use este relatório. [Leia mais](../../reporting/using/global-reports.md#breakdown-of-opens).
 
-   ![](../../reporting/using/assets/dlv_useragent_report.png)
+  ![](../../reporting/using/assets/dlv_useragent_report.png)
 
 ### Determine como o rastreamento de abertura de email é usado {#find-email-open-tracking}
 
@@ -89,21 +90,21 @@ Neste exemplo, um profissional de marketing deseja enviar uma oferta de recompen
 
 * Você pode usar aberturas de email como um critério de direcionamento em uma query.
 
-   Você pode especificar, como uma condição de filtragem, que o tipo de URL dos logs de rastreamento de um delivery específico deve ser definido como **[!UICONTROL Open]**.
+  Você pode especificar, como uma condição de filtragem, que o tipo de URL dos logs de rastreamento de um delivery específico deve ser definido como **[!UICONTROL Open]**.
 
-   ![](assets/identify-email-open-tracking-2.png)
+  ![](assets/identify-email-open-tracking-2.png)
 
 * Você pode usar um filtro predefinido. [Saiba mais](../../workflow/using/creating-a-filter.md).
 
-   ![](assets/identify-email-open-tracking-3.png)
+  ![](assets/identify-email-open-tracking-3.png)
 
-   Você pode usar esse filtro predefinido em atividades de query em workflows.
+  Você pode usar esse filtro predefinido em atividades de query em workflows.
 
-   ![](assets/identify-email-open-tracking-4.png)
+  ![](assets/identify-email-open-tracking-4.png)
 
-   >[!NOTE]
-   >
-   >Em um fluxo de trabalho, não é possível exibir os critérios de direcionamento de um filtro predefinido.
+  >[!NOTE]
+  >
+  >Em um fluxo de trabalho, não é possível exibir os critérios de direcionamento de um filtro predefinido.
 
 Para recuperar a lista de workflows em que as aberturas de email são usadas como critério de direcionamento, você deve consultar o `xtk:workflow` esquema. O conteúdo do workflow é armazenado na variável **[!UICONTROL XML memo (data)]** no formato XML.
 
@@ -326,7 +327,7 @@ Recomendamos que você preserve esses dados por vários motivos:
 
 * Esses dados são retidos pela Adobe Campaign por um período limitado. O período de retenção varia, dependendo da configuração da sua instância.
 
-   Verifique a configuração da sua instância. [Leia mais](../../platform/using/privacy-management.md#data-retention).
+  Verifique a configuração da sua instância. [Leia mais](../../platform/using/privacy-management.md#data-retention).
 
 * Além das alterações recentes do Apple, você pode usar os dados de rastreamento para adicionar imenso valor e impulsionar o engajamento do seu público-alvo.
 * O Apple pode trazer mais alterações ao aplicativo de email nativo e ao recurso de Proteção de privacidade de email.
@@ -433,9 +434,9 @@ Estes exemplos mostram como é possível usar workflows para dividir registros p
 
    1. Um **[!UICONTROL End]** A atividade segue cada **[!UICONTROL Deduplication]** atividade.
 
-   Esse tipo de workflow é útil se você armazenar recipients somente na tabela de recipients predefinida para direcionamento.
+  Esse tipo de workflow é útil se você armazenar recipients somente na tabela de recipients predefinida para direcionamento.
 
-   ![](assets/export-tracking-data-wkf-1.png)
+  ![](assets/export-tracking-data-wkf-1.png)
 
 * O segundo exemplo de fluxo de trabalho inclui estas atividades:
 
@@ -445,8 +446,9 @@ Estes exemplos mostram como é possível usar workflows para dividir registros p
 
       * Em uma transição, a variável **[!UICONTROL Change dimension]** A atividade é usada para encontrar os recipients aos quais o log de rastreamento se refere.
       * Na outra transição, o **[!UICONTROL Split]** A atividade é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
+
    1. Um **[!UICONTROL End]** A atividade de segue cada transição após a variável **[!UICONTROL Split]** atividade.
 
-   Esse tipo de workflow é útil se você armazenar recipients em uma tabela diferente da tabela de recipients predefinida.
+  Esse tipo de workflow é útil se você armazenar recipients em uma tabela diferente da tabela de recipients predefinida.
 
-   ![](assets/export-tracking-data-wkf-2.png)
+  ![](assets/export-tracking-data-wkf-2.png)

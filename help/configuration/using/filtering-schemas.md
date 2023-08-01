@@ -2,11 +2,12 @@
 product: campaign
 title: Esquemas de filtragem
 description: Esquemas de filtragem
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
@@ -23,7 +24,7 @@ Você pode filtrar o acesso ao esquema para usuários específicos, dependendo d
 
 * **readAccess**: fornece acesso somente leitura aos dados do esquema.
 
-   **Aviso** - Todas as tabelas vinculadas devem ser definidas com a mesma restrição. Essa configuração pode afetar o desempenho.
+  **Aviso** - Todas as tabelas vinculadas devem ser definidas com a mesma restrição. Essa configuração pode afetar o desempenho.
 
 * **writeAccess**: fornece acesso de gravação aos dados do esquema.
 
@@ -31,29 +32,29 @@ Esses filtros são inseridos no local principal **element** dos esquemas e, conf
 
 * Restringir permissões de GRAVAÇÃO
 
-   Aqui, o filtro é usado para não permitir permissões WRITE no schema para operadores sem a permissão ADMINISTRATION. Isso significa que somente administradores terão permissões de gravação nas entidades descritas por esse esquema.
+  Aqui, o filtro é usado para não permitir permissões WRITE no schema para operadores sem a permissão ADMINISTRATION. Isso significa que somente administradores terão permissões de gravação nas entidades descritas por esse esquema.
 
-   ```
-   <sysFilter name="writeAccess">      
-    <condition enabledIf="hasNamedRight('admin')=false" expr="FALSE"/>    
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="writeAccess">      
+   <condition enabledIf="hasNamedRight('admin')=false" expr="FALSE"/>    
+  </sysFilter>
+  ```
 
 * Restringir permissões de LEITURA e GRAVAÇÃO:
 
-   Aqui, o filtro é usado para não permitir permissões de LEITURA e GRAVAÇÃO no esquema para todos os operadores. Somente o **interno** conta, representada pela expressão &quot;$(loginId)!=0&quot;, tem essas permissões.
+  Aqui, o filtro é usado para não permitir permissões de LEITURA e GRAVAÇÃO no esquema para todos os operadores. Somente o **interno** conta, representada pela expressão &quot;$(loginId)!=0&quot;, tem essas permissões.
 
-   ```
-   <sysFilter name="readAccess"> 
-    <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
-   </sysFilter>
-   
-   <sysFilter name="writeAccess">  
-    <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="readAccess"> 
+   <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
+  </sysFilter>
+  
+  <sysFilter name="writeAccess">  
+   <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
+  </sysFilter>
+  ```
 
-   Possível **expr** os valores de atributo usados para definir a condição são TRUE ou FALSE.
+  Possível **expr** os valores de atributo usados para definir a condição são TRUE ou FALSE.
 
 >[!NOTE]
 >

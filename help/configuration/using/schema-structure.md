@@ -2,14 +2,15 @@
 product: campaign
 title: Estrutura de esquema
 description: Estrutura de esquema
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1527'
 ht-degree: 12%
 
 ---
@@ -117,9 +118,9 @@ As seguintes regras devem ser seguidas:
 
 * Each **`<element>`** e **`<attribute>`** deve ser identificado por nome através do **name** atributo.
 
-   >[!IMPORTANT]
-   >
-   >O nome do elemento deve ser conciso, de preferência em inglês e incluir apenas caracteres autorizados de acordo com as regras de nomenclatura XML.
+  >[!IMPORTANT]
+  >
+  >O nome do elemento deve ser conciso, de preferência em inglês e incluir apenas caracteres autorizados de acordo com as regras de nomenclatura XML.
 
 * Somente **`<element>`** os elementos podem conter **`<attribute>`** elementos e **`<element>`** elementos na estrutura XML.
 * Um **`<attribute>`** o elemento deve ter um nome exclusivo dentro de um **`<element>`**.
@@ -137,7 +138,7 @@ Os seguintes tipos de dados são aceitos em esquemas:
 
 * **string**: cadeia de caracteres. Exemplos: um nome, uma cidade etc.
 
-   O tamanho pode ser especificado por meio da variável **length** atributo (opcional, valor padrão &quot;255&quot;).
+  O tamanho pode ser especificado por meio da variável **length** atributo (opcional, valor padrão &quot;255&quot;).
 
 * **booleano**: Campo booleano. Exemplo de valores possíveis: true/false, 0/1, yes/no, etc.
 * **byte**, **curto**, **long**: números inteiros (1 byte, 2 bytes, 4 bytes). Exemplos: uma idade, um número de conta, um número de pontos, etc.
@@ -148,9 +149,9 @@ Os seguintes tipos de dados são aceitos em esquemas:
 * **memorando**: campos de texto longo (várias linhas). Exemplos: uma descrição, um comentário etc.
 * **uuid**: campos &quot;uniqueidentifier&quot; para oferecer suporte a uma GUID (compatível somente com o Microsoft SQL Server).
 
-   >[!NOTE]
-   >
-   >Para conter um **uuid** em mecanismos diferentes do Microsoft SQL Server, a função &quot;newuuid()&quot; deve ser adicionada e concluída com seu valor padrão.
+  >[!NOTE]
+  >
+  >Para conter um **uuid** em mecanismos diferentes do Microsoft SQL Server, a função &quot;newuuid()&quot; deve ser adicionada e concluída com seu valor padrão.
 
 Aqui está nosso schema de exemplo com os tipos inseridos:
 
@@ -180,7 +181,7 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
    <td> <strong>MS SQL</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2 se unicode)<br /> </td> 
    <td> VARCHAR (NVARCHAR se unicode)<br /> </td> 
@@ -274,33 +275,33 @@ A variável **`<elements>`** e **`<attributes>`** os elementos do schema de dado
 
 * A variável **rótulo** permite inserir uma breve descrição.
 
-   >[!NOTE]
-   >
-   >O rótulo é associado ao idioma atual da instância.
+  >[!NOTE]
+  >
+  >O rótulo é associado ao idioma atual da instância.
 
-   **Exemplo**:
+  **Exemplo**:
 
-   ```
-   <attribute name="email" type="string" length="80" label="Email"/>
-   ```
+  ```
+  <attribute name="email" type="string" length="80" label="Email"/>
+  ```
 
-   O rótulo pode ser visto no formulário de entrada do console do cliente Adobe Campaign:
+  O rótulo pode ser visto no formulário de entrada do console do cliente Adobe Campaign:
 
-   ![](assets/d_ncs_integration_schema_label.png)
+  ![](assets/d_ncs_integration_schema_label.png)
 
 * A variável **desc** permite inserir uma descrição longa.
 
-   A descrição pode ser vista do formulário de entrada na barra de status da janela principal do console do cliente Adobe Campaign.
+  A descrição pode ser vista do formulário de entrada na barra de status da janela principal do console do cliente Adobe Campaign.
 
-   >[!NOTE]
-   >
-   >A descrição está associada ao idioma atual da instância.
+  >[!NOTE]
+  >
+  >A descrição está associada ao idioma atual da instância.
 
-   **Exemplo**:
+  **Exemplo**:
 
-   ```
-   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
-   ```
+  ```
+  <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
+  ```
 
 ### Valores padrão {#default-values}
 
@@ -313,11 +314,11 @@ O valor deve ser uma expressão compatível com a linguagem XPath. Para obter ma
 * Data atual: **default=&quot;GetDate()&quot;**
 * Contador: **default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
 
-   Neste exemplo, o valor padrão é construído usando a concatenação de uma string e chamando o **ValorContador** com um nome de contador livre. O número retornado é incrementado em um em cada inserção.
+  Neste exemplo, o valor padrão é construído usando a concatenação de uma string e chamando o **ValorContador** com um nome de contador livre. O número retornado é incrementado em um em cada inserção.
 
-   >[!NOTE]
-   >
-   >No console do cliente Adobe Campaign, a variável **[!UICONTROL Administration>Counters]** nó é usado para gerenciar contadores.
+  >[!NOTE]
+  >
+  >No console do cliente Adobe Campaign, a variável **[!UICONTROL Administration>Counters]** nó é usado para gerenciar contadores.
 
 Para vincular um valor padrão a um campo, é possível usar o `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -381,13 +382,13 @@ Os valores da lista discriminada são declarados na variável **`<value>`** elem
 
 * A variável **dbeno** permite definir uma enumeração cujas propriedades são semelhantes às da variável **enum** propriedade.
 
-   No entanto, a **name** O atributo não armazena o valor internamente, ele armazena um código que permite estender as tabelas relacionadas sem modificar o schema.
+  No entanto, a **name** O atributo não armazena o valor internamente, ele armazena um código que permite estender as tabelas relacionadas sem modificar o schema.
 
-   Os valores são definidos por meio da variável **[!UICONTROL Administration>Enumerations]** nó.
+  Os valores são definidos por meio da variável **[!UICONTROL Administration>Enumerations]** nó.
 
-   Essa lista discriminada é usada para especificar a natureza das campanhas, por exemplo.
+  Essa lista discriminada é usada para especificar a natureza das campanhas, por exemplo.
 
-   ![](assets/d_ncs_configuration_schema_dbenum.png)
+  ![](assets/d_ncs_configuration_schema_dbenum.png)
 
 ### Exemplo {#example}
 
@@ -456,7 +457,6 @@ Os elementos são designados pelo nome e os atributos são designados pelo nome 
 >* **location/@city** não é válido; use **`[location/@city]`**
 >* **`[@email]`** e **@email** são equivalentes
 >
-
 
 Também é possível definir expressões complexas, como as seguintes operações aritméticas:
 

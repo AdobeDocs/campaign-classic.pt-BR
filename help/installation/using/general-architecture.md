@@ -2,14 +2,15 @@
 product: campaign
 title: Arquitetura geral do Campaign Classic
 description: Saiba como instalar e configurar o Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -22,15 +23,15 @@ A implantação típica da solução Adobe Campaign consiste nos seguintes compo
 
 * **Ambiente personalizado do cliente**
 
-   Interface gráfica intuitiva na qual os usuários podem se comunicar e rastrear ofertas de marketing, criar campanhas, revisar e gerenciar todas as atividades de marketing, programas e planos, incluindo emails, fluxos de trabalho e páginas de aterrissagem, criar e gerenciar perfis de clientes e definir tipos de público-alvo do cliente.
+  Interface gráfica intuitiva na qual os usuários podem se comunicar e rastrear ofertas de marketing, criar campanhas, revisar e gerenciar todas as atividades de marketing, programas e planos, incluindo emails, fluxos de trabalho e páginas de aterrissagem, criar e gerenciar perfis de clientes e definir tipos de público-alvo do cliente.
 
 * **Ambiente de desenvolvimento**
 
-   Software do lado do servidor que executa as campanhas de marketing por meio de canais de comunicação escolhidos, incluindo emails, SMS, notificações por push, correspondência direta, Web ou redes sociais, com base nas regras e fluxos de trabalho definidos na interface do usuário.
+  Software do lado do servidor que executa as campanhas de marketing por meio de canais de comunicação escolhidos, incluindo emails, SMS, notificações por push, correspondência direta, Web ou redes sociais, com base nas regras e fluxos de trabalho definidos na interface do usuário.
 
 * **Contêineres do Banco de Dados**
 
-   Com base na tecnologia de banco de dados relacional, o banco de dados do Adobe Campaign armazena todas as informações dos clientes, componentes da campanha, ofertas e workflows, bem como resultados da campanha em containers de banco de dados do cliente.
+  Com base na tecnologia de banco de dados relacional, o banco de dados do Adobe Campaign armazena todas as informações dos clientes, componentes da campanha, ofertas e workflows, bem como resultados da campanha em containers de banco de dados do cliente.
 
 O Adobe Campaign é baseado em uma SOA (Service-Oriented Architecture, arquitetura orientada a serviços) e inclui vários módulos funcionais. Esses módulos podem ser implantados em um ou mais computadores, em uma ou várias instâncias, dependendo das restrições em termos de escalabilidade, disponibilidade e isolamento de serviço. O escopo das configurações de implantação é, portanto, muito amplo e abrange um único computador central até configurações que incluem vários servidores dedicados em vários sites.
 

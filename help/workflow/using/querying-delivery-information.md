@@ -2,13 +2,13 @@
 product: campaign
 title: Consulta de informações de delivery
 description: Como consultar informações de delivery
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 feature: Query Editor, Workflows
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1248'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 

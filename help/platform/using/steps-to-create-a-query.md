@@ -2,20 +2,21 @@
 product: campaign
 title: Etapas para criar um query
 description: Etapas para criar um query
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Query Editor
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 100%
+source-wordcount: '853'
+ht-degree: 98%
 
 ---
 
-# Etapas para criar um query{#steps-to-create-a-query}
+# Etapas para criar uma consulta{#steps-to-create-a-query}
 
 
 
@@ -57,7 +58,7 @@ Você pode editar uma expressão inserindo uma fórmula nela ou executando um pr
 
 * A função **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** possibilita ordenar o agrupamento &quot;group by&quot; e selecionar o que foi agrupado (&quot;having&quot;). Essa função se aplica a todos os campos na coluna de saída. Por exemplo, essa opção permite agrupar todas as escolhas de uma coluna de saída e recuperar um tipo específico de informações, como destinatários de idade entre 35 e 50.
 
-   Para obter mais informações, consulte [esta seção](../../workflow/using/querying-using-grouping-management.md).
+  Para obter mais informações, consulte [esta seção](../../workflow/using/querying-using-grouping-management.md).
 
 * A função **[!UICONTROL Remove duplicate rows (DISTINCT)]** permite corrigir resultados idênticos duplicados na coluna de saída. Por exemplo, se você realizar um censo selecionando os campos de sobrenome, nome e email na coluna de saída, os que tiverem dados idênticos serão eliminados, pois isso significa que o mesmo contato foi inserido várias vezes no banco de dados. Sendo assim, somente um resultado será levado em conta.
 
@@ -85,13 +86,13 @@ Após selecionar a opção **[!UICONTROL Filtering conditions]**, você acessar�
 * Para criar um novo filtro, selecione os campos, operadores e valores necessários para a criação da fórmula a ser verificada para que os dados sejam selecionados. É possível combinar várias condições (para saber mais sobre isso, consulte [Definição de condições de filtragem](../../platform/using/defining-filter-conditions.md)).
 * Para usar os filtros salvos anteriormente, abra a lista suspensa clicando no botão **[!UICONTROL Add]**, clique em **[!UICONTROL Predefined filter]** e selecione o filtro desejado.
 
-   ![](assets/query_editor_15.png)
+  ![](assets/query_editor_15.png)
 
 * Os filtros criados no **[!UICONTROL Generic query editor]** estão disponíveis em outros aplicativos de query e vice-versa. Para salvar um filtro, clique no ícone **[!UICONTROL Save]**.
 
-   >[!NOTE]
-   >
-   >Para saber mais sobre como criar e usar filtros, consulte [Opções de filtragem](../../platform/using/filtering-options.md).
+  >[!NOTE]
+  >
+  >Para saber mais sobre como criar e usar filtros, consulte [Opções de filtragem](../../platform/using/filtering-options.md).
 
 Como mostrado no exemplo a seguir, para recuperar todos os destinatários falantes de inglês, selecione: &quot;recipient language **equal to** EN&quot;.
 

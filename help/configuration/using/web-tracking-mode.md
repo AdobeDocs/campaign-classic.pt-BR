@@ -2,11 +2,12 @@
 product: campaign
 title: Modo de rastreamento Web
 description: Saiba como selecionar o modo de rastreamento web
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 exl-id: b0f30c1f-cdc9-4ad2-8a6c-19d5aae4feb3
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '688'
 ht-degree: 1%
 
 ---
@@ -25,7 +26,7 @@ Cada modo tem características específicas. O modo de rastreamento web &quot;pe
 
 >[!IMPORTANT]
 >
->O modo de rastreamento web &quot;anônimo&quot; é ativado por padrão se o pacote &quot;Clientes potenciais&quot; estiver ativado. Em todos os outros casos, o modo de rastreamento web &quot;session&quot; é ativado por padrão.
+>O modo de rastreamento web &quot;anônimo&quot; será ativado por padrão se o pacote &quot;Clientes potenciais&quot; estiver ativado. Em todos os outros casos, o modo de rastreamento web &quot;session&quot; é ativado por padrão.
 >
 >A qualquer momento, o modo padrão pode ser alterado no assistente de implantação da instância.
 

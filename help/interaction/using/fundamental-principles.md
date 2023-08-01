@@ -2,15 +2,16 @@
 product: campaign
 title: Princípios fundamentais
 description: Princípios fundamentais
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 100%
+source-wordcount: '345'
+ht-degree: 98%
 
 ---
 
@@ -24,9 +25,9 @@ Há dois ambientes para cada targeting dimension usada ao gerenciar ofertas:
 
 * Um ambiente de design no qual o gerente de ofertas cuida da criação e categorização de ofertas, como editá-las e do início do processo de aprovação para que elas possam ser usadas. As regras para cada categoria, os espaços de oferta nos quais as ofertas podem ser apresentadas, e os filtros predefinidos usados para definir a elegibilidade de uma oferta também são definidos neste ambiente.
 
-   As categorias também podem ser publicadas manualmente no ambiente online.
+  As categorias também podem ser publicadas manualmente no ambiente online.
 
-   O processo de aprovação de ofertas está detalhado na seção [Aprovação e ativação de uma oferta](../../interaction/using/approving-and-activating-an-offer.md).
+  O processo de aprovação de ofertas está detalhado na seção [Aprovação e ativação de uma oferta](../../interaction/using/approving-and-activating-an-offer.md).
 
 * Um ambiente dinâmico no qual podem ser encontradas ofertas aprovadas do ambiente de design, bem como os vários espaços de oferta, filtros, categorias e regras configurados no ambiente de design. Durante uma chamada para o mecanismo de oferta, o mecanismo sempre usará ofertas do ambiente dinâmico.
 

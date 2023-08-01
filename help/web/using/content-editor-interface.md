@@ -2,14 +2,14 @@
 product: campaign
 title: Interface do editor de conteúdo
 description: Interface do editor de conteúdo
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 100%
+source-wordcount: '545'
+ht-degree: 98%
 
 ---
 
@@ -41,29 +41,29 @@ Ela tem quatro ícones:
 
 * O ícone **Escolher outro conteúdo** permite que o usuário carregue o novo conteúdo de um template (template existente ou template pronto para uso).
 
-   ![](assets/dce_popup_templatechoice.png)
+  ![](assets/dce_popup_templatechoice.png)
 
-   >[!CAUTION]
-   >
-   >O conteúdo selecionado substitui o conteúdo atual.
+  >[!CAUTION]
+  >
+  >O conteúdo selecionado substitui o conteúdo atual.
 
 * O ícone **Salvar como template** permite salvar o conteúdo atual como template. Você deve inserir o rótulo e o nome interno do template. Os templates são armazenados no nó **[!UICONTROL Resources > Templates > Content templates]**.
 
-   ![](assets/dce_popup_savetemplate.png)
+  ![](assets/dce_popup_savetemplate.png)
 
-   Depois de salvo, o template está disponível e pode ser selecionado ao criar o novo conteúdo.
+  Depois de salvo, o template está disponível e pode ser selecionado ao criar o novo conteúdo.
 
-   ![](assets/dce_create_fromtemplate.png)
+  ![](assets/dce_create_fromtemplate.png)
 
 * O ícone **Propriedades da página** permite selecionar informações de conteúdo na parte superior da página HTML.
 
-   ![](assets/dce_popup_headerhtml.png)
+  ![](assets/dce_popup_headerhtml.png)
 
-   >[!NOTE]
-   >
-   >Essas informações correspondem à **`<title>`** e **`<meta>`** às tags HTML na página.
-   >
-   >As palavras-chave devem ser separadas por vírgulas.
+  >[!NOTE]
+  >
+  >Essas informações correspondem à **`<title>`** e **`<meta>`** às tags HTML na página.
+  >
+  >As palavras-chave devem ser separadas por vírgulas.
 
 ## Opções de bloco {#block-options}
 

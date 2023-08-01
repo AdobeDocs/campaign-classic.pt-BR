@@ -2,11 +2,12 @@
 product: campaign
 title: Editar árvore de navegação do Campaign Explorer
 description: Editar árvore de navegação do Campaign Explorer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 exl-id: 204d4a24-267c-4976-90d9-7bf5bee8d116
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---

@@ -2,15 +2,16 @@
 product: campaign
 title: Configuração do acesso ao Synapse
 description: Saiba como configurar o acesso ao Synapse no FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 73%
+source-wordcount: '779'
+ht-degree: 72%
 
 ---
 
@@ -30,7 +31,6 @@ Usar a campanha [Federated Data Access](../../installation/using/about-fda.md) (
 >* Você precisará de privilégios raiz para instalar um driver ODBC.
 >* Os drivers Red Hat Enterprise ODBC fornecidos pela Microsoft também podem ser usados com o CentOS para conexão com o SQL Server.
 >* A versão 13.0 funcionará com o Red Hat 6 e 7.
-
 
 Para configurar o Azure synapse no CentOS, siga as etapas abaixo:
 
@@ -136,9 +136,9 @@ Para configurar o Azure Synapse no Windows:
 * Você precisará de privilégios raiz para instalar um driver ODBC.
 * O Curl é necessário para instalar o pacote msodbcsql. Se ele não estiver instalado, execute o seguinte comando:
 
-   ```
-   sudo apt-get install curl
-   ```
+  ```
+  sudo apt-get install curl
+  ```
 
 Para configurar o Azure Synapse no Debian:
 
@@ -222,7 +222,7 @@ Para criar o [!DNL Azure Synapse] a conta externa siga as etapas abaixo:
 
       * **[!UICONTROL Database]**: Nome do banco de dados
 
-      ![](assets/azure_3.png)
+     ![](assets/azure_3.png)
 
    * Para a autenticação de identidade gerenciada atribuída pelo sistema, você deve especificar:
 
@@ -232,9 +232,7 @@ Para criar o [!DNL Azure Synapse] a conta externa siga as etapas abaixo:
 
       * **[!UICONTROL Options]**: adicione a seguinte sintaxe `Authentication=ActiveDirectoryMsi`
 
-      ![](assets/azure_4.png)
-
-
+     ![](assets/azure_4.png)
 
 1. Clique em **[!UICONTROL Save]**.
 

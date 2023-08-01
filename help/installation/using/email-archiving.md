@@ -2,15 +2,16 @@
 product: campaign
 title: Arquivamento de email
 description: Arquivamento de email
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings, Email
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 5%
+source-wordcount: '1366'
+ht-degree: 7%
 
 ---
 
@@ -36,7 +37,7 @@ Para fazer isso, os arquivos .eml correspondentes aos emails enviados são trans
 
 ## Ativar email Cco (no local) {#activating-email-archiving--on-premise-}
 
-[!BADGE No local e híbrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplicável somente a implantações locais e híbridas"}
+[!BADGE No local e híbrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"}
 
 
 Para ativar o arquivamento de emails com CCO quando o Adobe Campaign for instalado no local, siga as etapas abaixo.
@@ -85,16 +86,16 @@ Depois que o caminho da pasta local for definido, adicione e edite os seguintes 
 
 * **compressionFormat**: formato usado ao compactar os arquivos .eml. Os valores possíveis são:
 
-   **0**: sem compactação (valor padrão)
+  **0**: sem compactação (valor padrão)
 
-   **1**: compactação (formato .zip)
+  **1**: compactação (formato .zip)
 
 * **compressBatchSize**: número de arquivos .eml adicionados a um arquivo (arquivo .zip).
 * **archivingType**: estratégia de arquivamento a ser usada. Os valores possíveis são:
 
-   **0**: cópias brutas de emails enviados são salvas no formato .eml na **dataLogPath** pasta (valor padrão). Uma cópia de arquivamento do **`<deliveryid>-<broadlogid>-sent.eml`** o arquivo é salvo na **dataLogPath/archives** pasta. O caminho do arquivo de email enviado torna-se **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
+  **0**: cópias brutas de emails enviados são salvas no formato .eml na **dataLogPath** pasta (valor padrão). Uma cópia de arquivamento do **`<deliveryid>-<broadlogid>-sent.eml`** o arquivo é salvo na **dataLogPath/archives** pasta. O caminho do arquivo de email enviado torna-se **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
 
-   **1**: cópias brutas de emails enviados são salvas no formato .eml na **dataLogPath** e são enviados ao endereço de email CCO via SMTP. Quando as cópias de email são enviadas para o endereço CCo, o nome do arquivo de arquivamento se torna **`<deliveryid>-<broadlogid>-sent-archived.eml`** e o arquivo for movido para a pasta **dataLogPath/archives** pasta. O caminho do arquivo de email enviado e CCO arquivado é **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+  **1**: cópias brutas de emails enviados são salvas no formato .eml na **dataLogPath** e são enviados ao endereço de email CCO via SMTP. Quando as cópias de email são enviadas para o endereço CCo, o nome do arquivo de arquivamento se torna **`<deliveryid>-<broadlogid>-sent-archived.eml`** e o arquivo for movido para a pasta **dataLogPath/archives** pasta. O caminho do arquivo de email enviado e CCO arquivado é **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
 
 * **expirationDelay**: número de dias que os arquivos .eml são mantidos para arquivamento. Após esse atraso, elas são movidas automaticamente para o estado **dataLogPath/archives** pasta para compactação. Por padrão, os arquivos .eml expiram após dois dias.
 * **purgeArchivesDelay**: número de dias em que os arquivos são mantidos no **dataLogPath/`<archives>`** pasta. Após esse período, eles são excluídos permanentemente. A limpeza começa quando o MTA é iniciado. Por padrão, ele é executado a cada sete dias.
@@ -106,7 +107,7 @@ Ajuste esses parâmetros de acordo com a taxa de transferência de envio de emai
 
 ## Configuração do endereço de email CCO (no local) {#configuring-the-bcc-email-address--on-premise-}
 
-[!BADGE No local e híbrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplicável somente a implantações locais e híbridas"}
+[!BADGE No local e híbrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"}
 
 
 >[!IMPORTANT]
@@ -132,7 +133,7 @@ No **config-`<instance name>.xml`** use os seguintes parâmetros para definir o 
 
 ## Migrar para o novo Email Cco {#updated-email-archiving-system--bcc-}
 
-[!BADGE No local e híbrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplicável somente a implantações locais e híbridas"}
+[!BADGE No local e híbrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"}
 
 
 
@@ -157,7 +158,7 @@ Depois que o email Cco estiver configurado, selecione o **[!UICONTROL Email BCC]
    * Se você usar o mesmo MTA em várias instâncias (desenvolvimento, teste, prod) para um único cliente, as mensagens enviadas de todas as três instâncias serão duplicadas pela opção dataLogPath.
 
 * **Emails por conexão**: o arquivamento de emails com CCO opera abrindo uma conexão e tentando enviar todos os emails por meio dessa conexão. A Adobe recomenda verificar com seu contato técnico interno o número de emails aceitos em uma determinada conexão. Aumentar esse número pode ter um grande impacto na taxa de transferência do Cco.
-* **IPs de envio com CCO**: no momento, os emails com CCO não são enviados por meio dos proxies MTA normais. Em vez disso, uma conexão direta é aberta do servidor MTA para o servidor de email de destino. Lista de permissões Isso significa que talvez seja necessário adicionar outros IPs ao arquivo na rede, dependendo da configuração do servidor de email.
+* **IPs de envio com CCO**: no momento, os emails com CCO não são enviados por meio dos proxies MTA normais. Em vez disso, uma conexão direta é aberta do servidor MTA para o servidor de email de destino. Incluir na lista de permissões Isso significa que talvez seja necessário adicionar outros IPs ao arquivo na rede, dependendo da configuração do servidor de email.
 
 <!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
 

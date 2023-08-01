@@ -2,15 +2,16 @@
 product: campaign
 title: Configuração de segurança do servidor
 description: Saiba mais sobre as práticas recomendadas de configuração do servidor
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 38%
+source-wordcount: '631'
+ht-degree: 37%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 38%
 
 ## Proteção de upload de arquivo
 
-Verifique com os usuários operacionais que tipo de arquivos eles enviam ao servidor usando o Console do cliente do Campaign ou a interface da Web. Lembrando que as necessidades da empresa podem ser:
+Verifique com os usuários operacionais que tipo de arquivos eles carregam no servidor usando o Console do cliente do Campaign ou a interface da Web. Lembrando que as necessidades da empresa podem ser:
 
 * imagens (jpg, gif, png etc.)
 * conteúdo (zip, html, css ...)
@@ -47,7 +48,7 @@ A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflow
 
 Existem três modos de proteção de conexão:
 
-* **Bloqueio** lista de permissões : todos os URLs que não pertencem ao arquivo de classificação são bloqueados, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
+* **Bloqueio** incluir na lista de permissões : todos os URLs que não pertencem ao arquivo de classificação são bloqueados, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
 * **Permissivo** : todos os URLs fora do incluo na lista de permissões são permitidos.
 * **Aviso** : todos os URLs que não estão no arquivo de inclui na lista de permissões são permitidos, mas o interpretador JS emite um aviso, para que o administrador possa coletá-los. Esse modo adiciona mensagens de aviso JST-310027.
 

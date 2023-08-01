@@ -2,14 +2,15 @@
 product: campaign
 title: O arquivo de configuração do servidor
 description: O arquivo de configuração do servidor
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '7955'
+source-wordcount: '7962'
 ht-degree: 42%
 
 ---
@@ -85,7 +86,7 @@ Estes são os diferentes parâmetros da variável **autenticação** nó:
   <tr> 
    <td> defaultMode<br /> </td> 
    <td> Modo de identificação padrão.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'nl'<br /> </td> 
   </tr> 
   <tr> 
@@ -132,13 +133,13 @@ Estes são os diferentes parâmetros da variável **autenticação > XTK** nó:
   <tr> 
    <td> internalPassword<br /> </td> 
    <td> Senha da conta interna.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> internalSecurityZone<br /> </td> 
    <td> Zona de segurança da conta interna: zona autorizada para a conta interna.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'lan'<br /> </td> 
   </tr> 
  </tbody> 
@@ -161,13 +162,13 @@ Estes são os diferentes parâmetros da variável **dataStore** nó. É aqui que
   <tr> 
    <td> exportDirectory<br /> </td> 
    <td> Diretório de exportação: caminho do diretório de destino dos dados exportados.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/export/' <br /> </td> 
   </tr> 
   <tr> 
    <td> extraSandboxedDirectories<br /> </td> 
    <td> Diretórios extras em sandbox: outros caminhos a serem adicionados na sandbox (separados por vírgulas).<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> "/home/customers/,/sftp/' <br /> </td> 
   </tr> 
   <tr> 
@@ -179,7 +180,7 @@ Estes são os diferentes parâmetros da variável **dataStore** nó. É aqui que
   <tr> 
    <td> hosts<br /> </td> 
    <td> Máscaras DNS: lista de máscaras DNS que esta instância fornece (separada por vírgulas; é possível usar * e ? padrões).<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '*'<br /> </td> 
   </tr> 
   <tr> 
@@ -191,19 +192,19 @@ Estes são os diferentes parâmetros da variável **dataStore** nó. É aqui que
   <tr> 
    <td> lang<br /> </td> 
    <td> Idioma da instância (enumeração). Os valores possíveis são 'fr_FR' (Français), 'en_GB' (Inglês (Reino Unido)), 'en_US' (Inglês (EUA)), 'de_DE' (Deutsch) e 'ja_JP' (Japonês).<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'en_US'<br /> </td> 
   </tr> 
   <tr> 
    <td> uploadDirectory<br /> </td> 
    <td> Pasta de upload: caminho do diretório de destino dos dados carregados.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/upload/' <br /> </td> 
   </tr> 
   <tr> 
    <td> uploadAllowlist<br /> </td> 
    <td> Arquivos autorizados a serem baixados separados por “,”. A string deve ser uma expressão Java regular e válida. Consulte <a href="file-res-management.md" target="_blank">Limite de arquivos carregáveis</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '.+' <br /> </td> 
   </tr> 
   <tr> 
@@ -215,19 +216,19 @@ Estes são os diferentes parâmetros da variável **dataStore** nó. É aqui que
   <tr> 
    <td> vaultSecretPath<br /> </td> 
    <td> Caminho secreto no Vault<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '/v1/secret/campaign/'<br /> </td> 
   </tr> 
   <tr> 
    <td> vaultTokenPath<br /> </td> 
    <td> Caminho local do arquivo que contém o token do Vault. $(HOME) pode ser usado neste caminho (mas não em outras variáveis de ambiente).<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '$(HOME)/.vaulttoken'<br /> </td> 
   </tr> 
   <tr> 
    <td> vaultUrl<br /> </td> 
    <td> URL do Hashicorp Vault <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -239,7 +240,7 @@ Estes são os diferentes parâmetros da variável **dataStore** nó. É aqui que
   <tr> 
    <td> workingDirectory<br /> </td> 
    <td> XPath do diretório de trabalho.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> workingDirectory : XPath do diretório de trabalho. Padrão: '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/workspace/'<br /> </td> 
   </tr> 
  </tbody> 
@@ -261,12 +262,12 @@ Estes são os diferentes parâmetros da variável **dataStore > proxyAdjust** n�
   <tr> 
    <td> urlBase<br /> </td> 
    <td> Base a ser usada ao gerar URLs externos. Exemplo: https://server.domain.com<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
    <td> Expressão regular para corresponder os URLs. Exemplo: http://server\.lan\.net.*<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -288,7 +289,7 @@ Estes são os diferentes parâmetros da variável **dataStore > dataSource** nó
   <tr> 
    <td> name<br /> </td> 
    <td> Nome da fonte de dados<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> padrão<br /> </td> 
   </tr> 
  </tbody> 
@@ -315,7 +316,7 @@ No **dataStore > dataSource > dbcnx** , defina as configurações de conexão:
   <tr> 
    <td> dbSchema<br /> </td> 
    <td> Espaço de trabalho<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -327,31 +328,31 @@ No **dataStore > dataSource > dbcnx** , defina as configurações de conexão:
   <tr> 
    <td> fazer logon<br /> </td> 
    <td> Conta<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> senha<br /> </td> 
    <td> Senha<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> provider<br /> </td> 
    <td> Tipo (enumeração). Os valores possíveis são 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC (Sybase ASE, Sybase IQ)), 'Relay' (Retransmissão HTTP para o banco de dados remoto).<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
   <tr> 
    <td> server<br /> </td> 
    <td> Servidor<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> fuso horário<br /> </td> 
    <td> Fuso horário: consulte <a href="../../installation/using/time-zone-management.md" target="_blank">Gerenciamento de fuso horário</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -383,7 +384,7 @@ No **dataStore > dataSource > sqlParams** , configure os parâmetros SQL:
   <tr> 
    <td> funcPrefix<br /> </td> 
    <td> Prefixo de função<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -440,12 +441,12 @@ Para obter informações adicionais, consulte [Gerenciamento de recursos públic
   <tr> 
    <td> name<br /> </td> 
    <td> Nome do diretório virtual <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> caminho<br /> </td> 
    <td> Caminho completo do diretório real<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -474,17 +475,17 @@ Estes são os diferentes parâmetros da variável **dataStore > preprocessComman
   <tr> 
    <td> comando<br /> </td> 
    <td> Linha de comando <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> label<br /> </td> 
    <td> Rótulo de linha de comando<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
    <td> Nome da linha de comando<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -515,13 +516,13 @@ Para obter informações adicionais, consulte esta página [seção](../../insta
   <tr> 
    <td> localDomain<br /> </td> 
    <td> Domain name: nome de domínio padrão. Usado pelo comando SMTP HELO. Por padrão, usa os parâmetros de rede da primeira interface de rede declarada no Windows, ou analisa o arquivo file/etc/resolv.conf no Linux (entrada de domínio ou pesquisa). <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> nameServers<br /> </td> 
    <td> Servidor DNS: lista separada por vírgulas de servidores de nomes de domínio (DNS). Consulte a nota abaixo.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -570,13 +571,13 @@ Para obter informações adicionais, consulte [Restrição de comandos externos 
  <tbody> 
   <tr> 
    <td> blacklistFile<br /> </td> 
-   <td> Lista de permissões Caminho para o arquivo que contém os comandos a serem adicionados ao arquivo. <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> Incluir na lista de permissões Caminho para o arquivo que contém os comandos a serem adicionados ao arquivo. <br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> usuário<br /> </td> 
    <td> Executar comandos como um usuário diferente.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -598,7 +599,7 @@ Estes são os diferentes parâmetros da variável **htmlToPdf** nó. Essa é a c
   <tr> 
    <td> comando<br /> </td> 
    <td> Linha de comando para executar a conversão (no modo "outro").<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -610,7 +611,7 @@ Estes são os diferentes parâmetros da variável **htmlToPdf** nó. Essa é a c
   <tr> 
    <td> modo<br /> </td> 
    <td> Ferramenta a ser usada para a conversão. Os valores possíveis são: phantomjs, wkhtmltopdf, other, disabled<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'phantomjs' <br /> </td> 
   </tr> 
   <tr> 
@@ -657,49 +658,49 @@ Estes são os diferentes parâmetros da variável **ims** nó. Essa é a configu
   <tr> 
    <td> authIMSClientId<br /> </td> 
    <td> ID de cliente<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSClientSecret<br /> </td> 
    <td> Chave secreta (criptografada em AES)<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSCode<br /> </td> 
    <td> Código de autorização (criptografado em AES)<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSEndpoint<br /> </td> 
    <td> URL do servidor IMS<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'https://ims-na1.adobelogin.com'<br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSTAClientId<br /> </td> 
    <td> ID de cliente de conta técnica<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSTAClientSecret<br /> </td> 
    <td> Chave secreta de conta técnica (criptografada em AES)<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSTAId<br /> </td> 
    <td> ID da conta técnica<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSTAPrivateKey<br /> </td> 
    <td> Chave privada da conta técnica (criptografada em AES)<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -753,13 +754,13 @@ Estes são os diferentes parâmetros da variável **mailExchanger** nó. Essa é
   <tr> 
    <td> mxAddress<br /> </td> 
    <td> Servidor SMTP: endereço IP do servidor SMTP para a transferência de emails.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> mxPort<br /> </td> 
    <td> Porta TCP do servidor SMTP usada para a transferência de email.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
  </tbody> 
@@ -782,7 +783,7 @@ Estes são os diferentes parâmetros da variável **módulo** nó. Esta é a con
   <tr> 
    <td> defaultNameSpace<br /> </td> 
    <td> Namespace padrão usado ao criar uma nova entidade.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'cus'<br /> </td> 
   </tr> 
  </tbody> 
@@ -811,13 +812,13 @@ Estes são os diferentes parâmetros da variável **monitoramento** nó. Esta é
   <tr> 
    <td> unixScript<br /> </td> 
    <td> Script Unix executado pelo serviço de monitoramento.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> winScript<br /> </td> 
    <td> Script do Windows a ser executado pelo serviço de monitoramento.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -852,13 +853,13 @@ Estes são os diferentes parâmetros da variável **ooconv** nó. Esta é a conf
   <tr> 
    <td> portRange<br /> </td> 
    <td> Intervalo de portas escutadas pelos servidores OpenOffice.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 8101-8110<br /> </td> 
   </tr> 
   <tr> 
    <td> url<br /> </td> 
    <td> URL do servidor de conversão de documentos.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'http://localhost:8080/nl/jsp/ooconv.jsp'<br /> </td> 
   </tr> 
  </tbody> 
@@ -889,7 +890,7 @@ Para obter informações adicionais, consulte [Configuração de conexão proxy]
   <tr> 
    <td> substituir<br /> </td> 
    <td> Exceções: lista de endereços para os quais os parâmetros de proxy devem ser ignorados.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'localhost*' <br /> </td> 
   </tr> 
   <tr> 
@@ -919,17 +920,17 @@ Para obter informações adicionais, consulte [Configuração de conexão proxy]
   <tr> 
    <td> endereço<br /> </td> 
    <td> Endereço do servidor proxy<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> fazer logon<br /> </td> 
    <td> Logon da conexão com o servidor proxy<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> senha<br /> </td> 
    <td> Senha da conexão com o servidor proxy<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> porta<br /> </td> 
@@ -985,7 +986,7 @@ Para obter informações adicionais, consulte [Proteção de conexão de saída]
   <tr> 
    <td> ação<br /> </td> 
    <td> Ação padrão se o URL não estiver na lista autorizada (enumeração). Os valores possíveis são "ignorar" (autorizar sem mensagem de aviso, isso requer a desabilitação da proteção), "avisar" (autorizar e emitir uma mensagem de aviso) e "negar" (proibir acesso ao URL).<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> negar<br /> </td> 
   </tr> 
   <tr> 
@@ -1015,12 +1016,12 @@ Para obter informações adicionais, consulte [Proteção de conexão de saída]
   <tr> 
    <td> sufixoDNS<br /> </td> 
    <td> Nome do domínio, ou o domínio principal, relacionado ao URL: todo o domínio do URL ou parte dele para verificação, a fim de acelerar a verificação. O URL só é verificado em relação à expressão regular se o domínio contiver dsnSuffix.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
    <td> Regular expression para refinar URLs de validação pertencentes a este domínio: expressão regular que o URL deve verificar, caso corresponda a dnsSuffix.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1106,7 +1107,7 @@ Para obter informações adicionais, consulte [Ativação do arquivamento de ema
   <tr> 
    <td> args<br /> </td> 
    <td> Parâmetros de inicialização<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1136,7 +1137,7 @@ Para obter informações adicionais, consulte [Ativação do arquivamento de ema
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1160,7 +1161,7 @@ Para obter informações adicionais, consulte [Ativação do arquivamento de ema
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Hora do dia em que o processo é reiniciado automaticamente. Consulte <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Reinicialização automática do processo</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -1178,7 +1179,7 @@ Para obter informações adicionais, consulte [Ativação do arquivamento de ema
   <tr> 
    <td> smtpBccAddress<br /> </td> 
    <td> Destino do arquivamento<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1196,7 +1197,7 @@ Para obter informações adicionais, consulte [Ativação do arquivamento de ema
   <tr> 
    <td> smtpRelayAddress<br /> </td> 
    <td> Lista separada por vírgulas de nomes DNS ou endereços IP de retransmissores SMTP a serem usados. <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1225,7 +1226,7 @@ Estes são os diferentes parâmetros da variável **inMail** nó. Essa é a conf
   <tr> 
    <td> args<br /> </td> 
    <td> Parâmetros de inicialização<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1243,13 +1244,13 @@ Estes são os diferentes parâmetros da variável **inMail** nó. Essa é a conf
   <tr> 
    <td> defaultForwardAddress<br /> </td> 
    <td> Endereço de encaminhamento: endereço de transferência de email padrão não processado por uma regra. <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> errorForwardAddress<br /> </td> 
    <td> Address for errors: endereço padrão usado para transferir emails inválidos (codificação MIME incorreta). <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1267,7 +1268,7 @@ Estes são os diferentes parâmetros da variável **inMail** nó. Essa é a conf
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1321,7 +1322,7 @@ Estes são os diferentes parâmetros da variável **inMail** nó. Essa é a conf
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Hora do dia em que o processo é reiniciado automaticamente. Consulte <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Reinicialização automática do processo</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -1362,7 +1363,7 @@ No **inMail > msgDump** configure os seguintes parâmetros. Esta é a configura�
   <tr> 
    <td> msgPath<br /> </td> 
    <td> Caminho de despejo de mensagem.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '/tmp/inMail'<br /> </td> 
   </tr> 
  </tbody> 
@@ -1387,7 +1388,7 @@ Para obter informações adicionais, consulte [Interação - buffer de dados](..
   <tr> 
    <td> args<br /> </td> 
    <td> Parâmetros de inicialização<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1405,7 +1406,7 @@ Para obter informações adicionais, consulte [Interação - buffer de dados](..
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID do JavaScript a ser executada ao iniciar o processo<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1435,7 +1436,7 @@ Para obter informações adicionais, consulte [Interação - buffer de dados](..
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Hora do dia em que o processo é reiniciado automaticamente. Consulte <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Reinicialização automática do processo</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -1476,7 +1477,7 @@ Estes são os diferentes parâmetros da variável **mta** nó. Essa é a configu
   <tr> 
    <td> args<br /> </td> 
    <td> Parâmetros de inicialização<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '-tracefilter:nlmta' <br /> </td> 
   </tr> 
   <tr> 
@@ -1488,13 +1489,13 @@ Estes são os diferentes parâmetros da variável **mta** nó. Essa é a configu
   <tr> 
    <td> dataLogPath<br /> </td> 
    <td> Save path of emails sent: se não estiver vazio, o caminho onde todos os arquivos de origem de emails enviados serão salvos. <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> debugPath<br /> </td> 
    <td> Diretório de despejo:Se não estiver vazio, copie envelopes MIME das mensagens de email enviadas neste diretório. Usado para solução de problemas. <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1512,7 +1513,7 @@ Estes são os diferentes parâmetros da variável **mta** nó. Essa é a configu
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1566,13 +1567,13 @@ Estes são os diferentes parâmetros da variável **mta** nó. Essa é a configu
   <tr> 
    <td> notifRelay<br /> </td> 
    <td> Retransmissão de notificação: HostName: Porta usada para retransmitir notificações.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Hora do dia em que o processo é reiniciado automaticamente. Consulte <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Reinicialização automática do processo</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -1609,7 +1610,7 @@ Estes são os diferentes parâmetros da variável **mta** nó. Essa é a configu
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordenadas do servidor de estatísticas</a>. 
       <br /> 
      </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> Se não estiver definida, a porta padrão será 7777.<br /> </td> 
   </tr> 
   <tr> 
@@ -1639,13 +1640,13 @@ Estes são os diferentes parâmetros da variável **mta** nó. Essa é a configu
   <tr> 
    <td> workingPath<br /> </td> 
    <td> Diretório de trabalho: local dos arquivos temporários usados pelo MTA para se comunicar com seus processos secundários.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/mta/' <br /> </td> 
   </tr> 
   <tr> 
    <td> xMailer<br /> </td> 
    <td> Campo X-Mailer: valor do campo "X-Mailer" no cabeçalho de email SMTP.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'nlserver, Build $(PRODUCT_VERSION)'<br /> </td> 
   </tr>  
  </tbody> 
@@ -1707,7 +1708,7 @@ Para obter informações adicionais, consulte [Retransmissão SMTP](../../instal
   <tr> 
    <td> endereço<br /> </td> 
    <td> Lista separada por vírgulas de nomes DNS ou endereços IP de retransmissores SMTP a serem usados. <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1793,7 +1794,7 @@ Para obter informações adicionais, consulte [Otimização do envio de email](.
   <tr> 
    <td> extraArgs<br /> </td> 
    <td> Argumentos opcionais da linha de comando <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1908,12 +1909,12 @@ Para obter informações adicionais, consulte [Lista de endereços IP a serem us
   <tr> 
    <td> localDomain<br /> </td> 
    <td> Domain name: nome de domínio local vinculado ao endereço IP. Usado ao emitir um comando SMTP HELO.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
    <td> Logical name: nomes vinculados à afinidade por usuários. Os nomes são separados por ponto e vírgula;<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1934,7 +1935,7 @@ Para obter informações adicionais, consulte [Lista de endereços IP a serem us
   <tr> 
    <td> endereço<br /> </td> 
    <td> Endereço físico associado. Por exemplo: '192.168.0.1'<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
@@ -1949,17 +1950,17 @@ Para obter informações adicionais, consulte [Lista de endereços IP a serem us
   <tr> 
    <td> includeDomains<br /> </td> 
    <td> Lista separada por vírgulas de máscaras de domínio a serem incluídas.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> excludeDomains<br /> </td> 
    <td> Lista separada por vírgulas de máscaras de domínio a serem excluídas.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> heloHost<br /> </td> 
    <td> Nome do computador vinculado ao endereço IP. Usado ao emitir um comando SMTP HELO.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2004,7 +2005,7 @@ Estes são os diferentes parâmetros da variável **nmac > retransmissão** nó.
   <tr> 
    <td> endereço<br /> </td> 
    <td> Endereço DNS ou nome da retransmissão a ser usada. <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -2016,7 +2017,7 @@ Estes são os diferentes parâmetros da variável **nmac > retransmissão** nó.
   <tr> 
    <td> trustedCertsChain<br /> </td> 
    <td> Cadeia de certificados (arquivo PEM). Útil ao usar um servidor simulado.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -2039,25 +2040,25 @@ Estes são os diferentes parâmetros da variável **pipeline** nó. Esta é a co
   <tr> 
    <td> appName<br /> </td> 
    <td> Nome do aplicativo gerado na conexão de desenvolvedor quando a chave pública é salva. <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> args<br /> </td> 
    <td> Parâmetros de inicialização<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authGatewayEndpoint<br /> </td> 
    <td> URL para obtenção de um token de gateway.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'https://api.omniture.com' <br /> </td> 
   </tr> 
   <tr> 
    <td> authPrivateKey<br /> </td> 
    <td> Chave privada para obtenção de tokens (criptografada em AES com a opção XtkKey).<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2075,7 +2076,7 @@ Estes são os diferentes parâmetros da variável **pipeline** nó. Esta é a co
   <tr> 
    <td> discoverPipelineEndpoint<br /> </td> 
    <td> URL para descobrir o URL dos serviços de pipeline.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'https://producer-pipeline-pnw.adobe.net'<br /> </td> 
   </tr> 
   <tr> 
@@ -2087,13 +2088,13 @@ Estes são os diferentes parâmetros da variável **pipeline** nó. Esta é a co
   <tr> 
    <td> forcedPipelineEndpoint<br /> </td> 
    <td> URL de escuta: force o URL de escuta dos serviços de pipeline. <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2129,7 +2130,7 @@ Estes são os diferentes parâmetros da variável **pipeline** nó. Esta é a co
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Hora do dia em que o processo é reiniciado automaticamente. Consulte <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Reinicialização automática do processo</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2237,13 +2238,13 @@ Para obter informações adicionais, consulte [Definir zonas de segurança](../.
   <tr> 
    <td> label<br /> </td> 
    <td> Rótulo<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> NewLabel()<br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
    <td> Nome interno<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> NewName() <br /> </td> 
   </tr> 
   <tr> 
@@ -2305,25 +2306,25 @@ Para obter informações adicionais, consulte [Definir zonas de segurança](../.
   <tr> 
    <td> label<br /> </td> 
    <td> Rótulo<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> NewLabel()<br /> </td> 
   </tr> 
   <tr> 
    <td> máscara<br /> </td> 
    <td> Máscara ou endereço<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
    <td> Nome interno<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> NewName() <br /> </td> 
   </tr> 
   <tr> 
    <td> proxy<br /> </td> 
    <td> Máscara ou endereço do proxy (reverso) usado por esta sub-rede para acessar a instância. Nesse caso, o cabeçalho “X-Forwarded-For” será testado em vez desse proxy.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 127.0.0.1 <br /> </td> 
   </tr> 
  </tbody> 
@@ -2346,7 +2347,7 @@ Estes são os diferentes parâmetros da variável **sms** nó. Esta é a configu
   <tr> 
    <td> args<br /> </td> 
    <td> Parâmetros de inicialização<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2370,7 +2371,7 @@ Estes são os diferentes parâmetros da variável **sms** nó. Esta é a configu
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2400,7 +2401,7 @@ Estes são os diferentes parâmetros da variável **sms** nó. Esta é a configu
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Hora do dia em que o processo é reiniciado automaticamente. Consulte <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Reinicialização automática do processo</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2470,7 +2471,7 @@ Estes são os diferentes parâmetros da variável **stat** nó. Essa é a config
   <tr> 
    <td> args<br /> </td> 
    <td> Parâmetros de inicialização<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2482,7 +2483,7 @@ Estes são os diferentes parâmetros da variável **stat** nó. Essa é a config
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2506,7 +2507,7 @@ Estes são os diferentes parâmetros da variável **stat** nó. Essa é a config
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Hora do dia em que o processo é reiniciado automaticamente. Consulte <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Reinicialização automática do processo</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2535,7 +2536,7 @@ Estes são os diferentes parâmetros da variável **syslogd** nó. Esta é a con
   <tr> 
    <td> args<br /> </td> 
    <td> Parâmetros de inicialização<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2547,7 +2548,7 @@ Estes são os diferentes parâmetros da variável **syslogd** nó. Esta é a con
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2577,7 +2578,7 @@ Estes são os diferentes parâmetros da variável **syslogd** nó. Esta é a con
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Hora do dia em que o processo é reiniciado automaticamente. Consulte <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Reinicialização automática do processo</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2606,7 +2607,7 @@ Estes são os diferentes parâmetros da variável **rastreamento** nó. Esta é 
   <tr> 
    <td> args<br /> </td> 
    <td> Parâmetros de inicialização<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2654,7 +2655,7 @@ Estes são os diferentes parâmetros da variável **rastreamento** nó. Esta é 
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID do JavaScript a ser executada ao iniciar o processo <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2690,7 +2691,7 @@ Estes são os diferentes parâmetros da variável **rastreamento** nó. Esta é 
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Hora do dia em que o processo é reiniciado automaticamente. Consulte <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Reinicialização automática do processo</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2737,7 +2738,7 @@ Estes são os diferentes parâmetros da variável **trackinglogd** nó. Esta é 
   <tr> 
    <td> args<br /> </td> 
    <td> Parâmetros de inicialização<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2749,7 +2750,7 @@ Estes são os diferentes parâmetros da variável **trackinglogd** nó. Esta é 
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID do JavaScript a ser executada ao iniciar o processo <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2785,7 +2786,7 @@ Estes são os diferentes parâmetros da variável **trackinglogd** nó. Esta é 
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Hora do dia em que o processo é reiniciado automaticamente. Consulte <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Reinicialização automática do processo</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2828,7 +2829,7 @@ Para obter informações adicionais, consulte esta página [seção](configuring
   <tr> 
    <td> JVMOptions<br /> </td> 
    <td> Opções da JVM transmitidas como uma string.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2846,7 +2847,7 @@ Para obter informações adicionais, consulte esta página [seção](configuring
   <tr> 
    <td> args<br /> </td> 
    <td> Parâmetros de inicialização<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2870,7 +2871,7 @@ Para obter informações adicionais, consulte esta página [seção](configuring
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2894,13 +2895,13 @@ Para obter informações adicionais, consulte esta página [seção](configuring
   <tr> 
    <td> notifRelay<br /> </td> 
    <td> Retransmissão de notificação: HostName: Porta que permite a retransmissão de notificações.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Hora do dia em que o processo é reiniciado automaticamente. Consulte <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Reinicialização automática do processo</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2941,19 +2942,19 @@ Estes são os diferentes parâmetros da variável **web > jsp** nó. Esta é a c
   <tr> 
    <td> downloadPath<br /> </td> 
    <td> Pasta de download: caminho de download dos programas de instalação dos consoles clientes.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/datakit/nl/eng/jsp'<br /> </td> 
   </tr> 
   <tr> 
    <td> foFileName<br /> </td> 
    <td> Caminho do arquivo .fo.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> soapRouter<br /> </td> 
    <td> URL do roteador SOAP (http://myserver/xxx, http://jni ou mailto:xxx).<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'http://jni'<br /> </td> 
   </tr> 
  </tbody> 
@@ -3053,19 +3054,19 @@ Para obter informações adicionais, consulte esta página [seção](../../insta
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
    <td> Caractere(s) proibido(s) (Domínio): lista de caracteres proibidos na seção "authority" de um URI.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '.?#@/:' <br /> </td> 
   </tr> 
   <tr> 
    <td> forbiddenCharsInPath<br /> </td> 
    <td> Caractere(s) proibido(s) (Caminho): lista de caracteres proibidos na seção "caminho" de um URI.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '?#/'<br /> </td> 
   </tr> 
   <tr> 
    <td> modDir<br /> </td> 
    <td> Valor da opção de módulo "mod_dir": lista de arquivos a serem usados durante uma consulta em uma pasta.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 'index.md' <br /> </td> 
   </tr> 
   <tr> 
@@ -3083,7 +3084,7 @@ Para obter informações adicionais, consulte esta página [seção](../../insta
   <tr> 
    <td> tempo limite<br /> </td> 
    <td> Tempo de espera antes de excluir o URL banido.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '60'<br /> </td> 
   </tr> 
  </tbody> 
@@ -3106,7 +3107,7 @@ Para obter informações adicionais, consulte [Segurança e retransmissões de p
   <tr> 
    <td> IPMask<br /> </td> 
    <td> IPs autorizados: lista separada por vírgulas de endereços IP de origem permitidos para usar a retransmissão para essa máscara.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3118,7 +3119,7 @@ Para obter informações adicionais, consulte [Segurança e retransmissões de p
   <tr> 
    <td> hostMask<br /> </td> 
    <td> Alias DNS para retransmissão: lista separada por vírgulas de máscaras de alias DNS para retransmissão (por exemplo: "*.adobe.com").<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3141,14 +3142,14 @@ Para obter informações adicionais, consulte [Segurança e retransmissões de p
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Status de sincronização de um recurso público (enumeração). Lista de bloqueios Os valores possíveis são "normal" (execução normal), "blacklist" (url adicionado ao arquivo de em caso de erro 404) e "spare" (upload de arquivo no servidor reserva, se existente).<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> Status de sincronização de um recurso público (enumeração). Incluir na lista de bloqueios Os valores possíveis são "normal" (execução normal), "blacklist" (url adicionado ao arquivo de em caso de erro 404) e "spare" (upload de arquivo no servidor reserva, se existente).<br /> </td> 
+   <td> String<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
    <td> URL da página de destino: consulte <a href="configure-tomcat.md" target="_blank">Configurar Tomcat</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3160,7 +3161,7 @@ Para obter informações adicionais, consulte [Segurança e retransmissões de p
   <tr> 
    <td> urlPath<br /> </td> 
    <td> Máscara de URLs para retransmissão (por exemplo: “/nl*”, “*.jsp”).<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -3247,12 +3248,12 @@ Para obter informações adicionais, consulte [Gerenciamento de cabeçalhos HTTP
   <tr> 
    <td> name<br /> </td> 
    <td> Nome do cabeçalho<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
   <tr> 
    <td> value<br /> </td> 
    <td> Valor do cabeçalho <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3282,25 +3283,25 @@ Para obter informações adicionais, consulte esta página [seção](../../insta
   <tr> 
    <td> IMSOrgId<br /> </td> 
    <td> ID da organização: identificador de organização exclusivo na Adobe Experience Cloud, usado especialmente para o serviço VisitorID e o SSO do IMS. <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> P3PCompactPolicy<br /> </td> 
    <td> Valor que descreve a política usada para cookies permanentes (em conformidade com o formato de Política compacta P3P). <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> "CAO DSP COR CURa DEVa TAIa NOSSO ÔNIBUS IND UNI COM NAV"<br /> </td> 
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 
    <td> Lista separada por vírgulas de domínios a serem configurados para indicar explicitamente seu domínio para a definição do cookie. <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> databaseId<br /> </td> 
    <td> Identificador de banco de dados associado à instância de rastreamento.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3312,7 +3313,7 @@ Para obter informações adicionais, consulte esta página [seção](../../insta
   <tr> 
    <td> expirationURL<br /> </td> 
    <td> Página para redirecionamentos expirados: URL da página da Web usada por padrão pelo servidor de redirecionamento quando o redirecionamento de uma ação de entrega expira.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3348,7 +3349,7 @@ Para obter informações adicionais, consulte esta página [seção](../../insta
   <tr> 
    <td> trackingPassword<br /> </td> 
    <td> Senha usada pelo servidor de redirecionamento.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -3371,19 +3372,19 @@ Para obter informações adicionais, consulte [Rastreamento redundante](../../in
   <tr> 
    <td> enabledIf<br /> </td> 
    <td> Taken into account if: o servidor de rastreamento será levado em conta se a expressão retornar true. <br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> ID<br /> </td> 
    <td> Nome<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> url<br /> </td> 
    <td> URL do servidor de redirecionamento adicional<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -3407,7 +3408,7 @@ Para obter informações adicionais, consulte [Configuração do SpamAssassin](.
   <tr> 
    <td> comando<br /> </td> 
    <td> Comando a ser executado para avaliar a pontuação de antisspam de um email (por exemplo, "perl spamcheck.pl").<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3431,13 +3432,13 @@ Para obter informações adicionais, consulte [Fluxos de trabalho e afinidades d
   <tr> 
    <td> afinidade<br /> </td> 
    <td> Afinidade<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> args<br /> </td> 
    <td> Parâmetros de inicialização<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3455,7 +3456,7 @@ Para obter informações adicionais, consulte [Fluxos de trabalho e afinidades d
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID do JavaScript a ser executada ao iniciar o processo.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3473,13 +3474,13 @@ Para obter informações adicionais, consulte [Fluxos de trabalho e afinidades d
   <tr> 
    <td> notifRelay<br /> </td> 
    <td> Retransmissão de notificação: HostName: Porta que permite a retransmissão de notificações.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Hora do dia em que o processo é reiniciado automaticamente. Consulte <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Reinicialização automática do processo</a>.<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 

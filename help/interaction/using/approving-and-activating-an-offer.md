@@ -2,16 +2,17 @@
 product: campaign
 title: Aprovação e ativação de uma oferta
 description: Aprovação e ativação de uma oferta
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 100%
+source-wordcount: '634'
+ht-degree: 98%
 
 ---
 
@@ -65,27 +66,27 @@ Aprovar a qualificação de oferta significa aceitar ou rejeitar pesos de oferta
 
 * A lista completa de regras pode ser visualizada clicando em **[!UICONTROL Schedule and eligibility rules]**.
 
-   ![](assets/offer_validate_005.png)
+  ![](assets/offer_validate_005.png)
 
 * Para alterar as regras de qualificação, clique em **[!UICONTROL Reject]** e em **[!UICONTROL Eligibility approval]**.
 
-   ![](assets/offer_validate_007.png)
+  ![](assets/offer_validate_007.png)
 
-   Os vários status são atualizados no painel de ofertas.
+  Os vários status são atualizados no painel de ofertas.
 
-   ![](assets/offer_validate_006.png)
+  ![](assets/offer_validate_006.png)
 
 * Para aceitar a qualificação da oferta, clique em **[!UICONTROL Approve eligibility]**.
 
-   ![](assets/offer_validate_008.png)
+  ![](assets/offer_validate_008.png)
 
-   Aprove a qualificação, adicione um comentário se necessário e clique em **[!UICONTROL Eligibility approval]**.
+  Aprove a qualificação, adicione um comentário se necessário e clique em **[!UICONTROL Eligibility approval]**.
 
-   ![](assets/offer_validate_009.png)
+  ![](assets/offer_validate_009.png)
 
-   Os vários status são atualizados no painel de ofertas.
+  Os vários status são atualizados no painel de ofertas.
 
-   ![](assets/offer_validate_010.png)
+  ![](assets/offer_validate_010.png)
 
 ## Rastreamento de aprovação {#approval-tracking}
 

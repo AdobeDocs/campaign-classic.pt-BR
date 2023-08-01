@@ -2,16 +2,17 @@
 product: campaign
 title: Rastreamento em pilha no Linux
 description: Rastreamento em pilha no Linux
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 11%
+source-wordcount: '144'
+ht-degree: 21%
 
 ---
 
@@ -26,7 +27,6 @@ A **rastreamento de pilha** representa um rastreamento contido em um **core** ar
 >* A **core** o arquivo é nomeado **principal.`<num>`**.
 >* **gdb - O depurador GNU** deve estar instalado no computador.
 >
-
 
 O suporte técnico da Adobe Campaign pode solicitar isso **rastreamento de pilha**. Para obtê-lo, insira os seguintes comandos no Linux:
 

@@ -2,14 +2,15 @@
 product: campaign
 title: Configuração do acesso ao Snowflake
 description: Saiba como configurar o acesso ao Snowflake no FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '519'
 ht-degree: 38%
 
 ---
@@ -37,19 +38,19 @@ Para configurar [!DNL Snowflake] no Linux, siga as etapas abaixo:
 
    * Para Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y grep sed tar wget perl curl
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y grep sed tar wget perl curl
+     ```
 
    * Para Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y grep sed tar wget perl curl
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y grep sed tar wget perl curl
+     ```
 
 1. Antes de executar o script, você pode ter acesso a mais informações com o `--help` opção:
 
@@ -98,12 +99,11 @@ Para configurar [!DNL Snowflake] no Linux, siga as etapas abaixo:
 
       * **[!UICONTROL Password]**: Senha da conta do usuário.
 
-      ![](assets/snowflake.png)
+     ![](assets/snowflake.png)
 
    * Para autenticação de Par de chaves, clique no link **[!UICONTROL Keypair Auth]** guia para usar o **[!UICONTROL Private key]** para autenticar e copiar e colar seu **[!UICONTROL Private key]**.
 
-      ![](assets/snowflake_4.png)
-
+     ![](assets/snowflake_4.png)
 
 1. Clique na guia **[!UICONTROL Parameters]** e depois no botão **[!UICONTROL Deploy functions]** para criar as funções.
 

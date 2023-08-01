@@ -2,11 +2,12 @@
 product: campaign
 title: Mapeamento de banco de dados
 description: Mapeamento de banco de dados
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1981'
 ht-degree: 1%
 
 ---
@@ -46,19 +47,19 @@ As regras de nomenclatura SQL são as seguintes:
 
 * tabela: concatenação do namespace e do nome do schema
 
-   No nosso exemplo, o nome da tabela é inserido por meio do elemento principal do schema na **sqltable** atributo:
+  No nosso exemplo, o nome da tabela é inserido por meio do elemento principal do schema na **sqltable** atributo:
 
-   ```
-   <element name="recipient" sqltable="CusRecipient">
-   ```
+  ```
+  <element name="recipient" sqltable="CusRecipient">
+  ```
 
 * field: nome do elemento precedido por um prefixo definido de acordo com o tipo (&#39;i&#39; para inteiro, &#39;d&#39; para duplo, &#39;s&#39; para string, &#39;ts&#39; para datas etc.)
 
-   O nome do campo é inserido por meio da variável **sqlname** atributo para cada tipo **`<attribute>`** e **`<element>`**:
+  O nome do campo é inserido por meio da variável **sqlname** atributo para cada tipo **`<attribute>`** e **`<element>`**:
 
-   ```
-   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
-   ```
+  ```
+  <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
+  ```
 
 >[!NOTE]
 >
@@ -89,17 +90,17 @@ Para preencher um campo em XML, é necessário adicionar o **xml** com o valor &
 
 * Campo de comentário multilinha:
 
-   ```
-   <element name="comment" xml="true" type="memo" label="Comment"/>
-   ```
+  ```
+  <element name="comment" xml="true" type="memo" label="Comment"/>
+  ```
 
 * Descrição dos dados em formato HTML:
 
-   ```
-   <element name="description" xml="true" type="html" label="Description"/>
-   ```
+  ```
+  <element name="description" xml="true" type="html" label="Description"/>
+  ```
 
-   O tipo &quot;html&quot; permite armazenar o conteúdo do HTML em uma tag CDATA e exibir uma verificação de edição de HTML especial na interface do cliente do Adobe Campaign.
+  O tipo &quot;html&quot; permite armazenar o conteúdo do HTML em uma tag CDATA e exibir uma verificação de edição de HTML especial na interface do cliente do Adobe Campaign.
 
 O uso de campos XML permite adicionar campos sem a necessidade de modificar a estrutura física do banco de dados. Outra vantagem é que você usa menos recursos (tamanho alocado para campos SQL, limite do número de campos por tabela etc.).
 
@@ -137,40 +138,40 @@ Os índices obedecem às seguintes regras:
 
 * Adicionar um índice ao endereço de email e à cidade:
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <dbindex name="email">
-         <keyfield xpath="@email"/> 
-         <keyfield xpath="location/@city"/> 
-       </dbindex>
-   
-       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-       <element name="location" label="Location">
-         <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-       </element>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <dbindex name="email">
+        <keyfield xpath="@email"/> 
+        <keyfield xpath="location/@city"/> 
+      </dbindex>
+  
+      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
+      <element name="location" label="Location">
+        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
+      </element>
+    </element>
+  </srcSchema>
+  ```
 
 * Adicionar um índice exclusivo ao campo de nome &quot;id&quot;:
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <dbindex name="id" unique="true">
-         <keyfield xpath="@id"/> 
-       </dbindex>
-   
-       <dbindex name="email">
-         <keyfield xpath="@email"/> 
-       </dbindex>
-   
-       <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <dbindex name="id" unique="true">
+        <keyfield xpath="@id"/> 
+      </dbindex>
+  
+      <dbindex name="email">
+        <keyfield xpath="@email"/> 
+      </dbindex>
+  
+      <attribute name="id" type="long" label="Identifier"/>
+      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
+    </element>
+  </srcSchema>
+  ```
 
 ## Gerenciamento de chaves {#management-of-keys}
 
@@ -204,86 +205,86 @@ As chaves obedecem às seguintes regras:
 
 * Adicionar uma chave ao endereço de email e à cidade:
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <key name="email">
-         <keyfield xpath="@email"/> 
-         <keyfield xpath="location/@city"/> 
-       </key>
-   
-       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-       <element name="location" label="Location">
-         <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-       </element>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <key name="email">
+        <keyfield xpath="@email"/> 
+        <keyfield xpath="location/@city"/> 
+      </key>
+  
+      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
+      <element name="location" label="Location">
+        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
+      </element>
+    </element>
+  </srcSchema>
+  ```
 
-   O schema gerado:
+  O schema gerado:
 
-   ```
-   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-     <element name="recipient" sqltable="CusRecipient">    
-      <dbindex name="email" unique="true">      
-        <keyfield xpath="@email"/>      
-        <keyfield xpath="location/@city"/>    
-      </dbindex>    
-   
-      <key name="email">      
+  ```
+  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
+    <element name="recipient" sqltable="CusRecipient">    
+     <dbindex name="email" unique="true">      
        <keyfield xpath="@email"/>      
        <keyfield xpath="location/@city"/>    
-      </key>    
-   
-      <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-      <element label="Location" name="location">      
-        <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-      </element>  
-     </element>
-   </schema>
-   ```
+     </dbindex>    
+  
+     <key name="email">      
+      <keyfield xpath="@email"/>      
+      <keyfield xpath="location/@city"/>    
+     </key>    
+  
+     <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
+     <element label="Location" name="location">      
+       <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
+     </element>  
+    </element>
+  </schema>
+  ```
 
 * Adicionar uma chave primária ou interna no campo de nome &quot;id&quot;:
 
-   ```
-   <srcSchema name="recipient" namespace="cus">
-     <element name="recipient">
-       <key name="id" internal="true">
-         <keyfield xpath="@id"/> 
-       </key>
-   
-       <key name="email" noDbIndex="true">
-         <keyfield xpath="@email"/> 
-       </key>
-   
-       <attribute name="id" type="long" label="Identifier"/>
-       <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-     </element>
-   </srcSchema>
-   ```
+  ```
+  <srcSchema name="recipient" namespace="cus">
+    <element name="recipient">
+      <key name="id" internal="true">
+        <keyfield xpath="@id"/> 
+      </key>
+  
+      <key name="email" noDbIndex="true">
+        <keyfield xpath="@email"/> 
+      </key>
+  
+      <attribute name="id" type="long" label="Identifier"/>
+      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
+    </element>
+  </srcSchema>
+  ```
 
-   O schema gerado:
+  O schema gerado:
 
-   ```
-   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-     <element name="recipient" sqltable="CusRecipient">    
-       <key name="email">      
-         <keyfield xpath="@email"/>    
-       </key>    
-   
-       <dbindex name="id" unique="true">      
-         <keyfield xpath="@id"/>    
-       </dbindex>    
-   
-       <key internal="true" name="id">      
+  ```
+  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
+    <element name="recipient" sqltable="CusRecipient">    
+      <key name="email">      
+        <keyfield xpath="@email"/>    
+      </key>    
+  
+      <dbindex name="id" unique="true">      
         <keyfield xpath="@id"/>    
-       </key>    
-   
-       <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
-       <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
-     </element>
-   </schema>
-   ```
+      </dbindex>    
+  
+      <key internal="true" name="id">      
+       <keyfield xpath="@id"/>    
+      </key>    
+  
+      <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
+      <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
+    </element>
+  </schema>
+  ```
 
 ### Chave incremental automática {#auto-incremental-key}
 
@@ -391,11 +392,11 @@ Os links obedecem às seguintes regras:
       * **próprio**: a exclusão da ocorrência de origem leva à exclusão da ocorrência de destino,
       * **owncopy**: o mesmo que **próprio** (em caso de exclusão) ou duplica as ocorrências (em caso de duplicação),
       * **neutro**: não faz nada.
+
    * **revIntegrity** (opcional): integridade no schema do target (opcional, &quot;normal&quot; por padrão),
    * **revCardinality** (opcional): com o valor &quot;single&quot;, preenche cardinalidade com tipo 1-1 (1-N por padrão).
    * **externalJoin** (opcional): força a junção externa
    * **revExternalJoin** (opcional): força a junção externa no link reverso
-
 
 * Um link faz referência a um ou mais campos da tabela de origem para a tabela de destino. Os campos que compõem a associação ( `<join>`  element) não precisam ser preenchidos porque são automaticamente deduzidos por padrão usando a chave interna do schema de público-alvo.
 * Um índice é adicionado automaticamente à chave externa do link no schema estendido.

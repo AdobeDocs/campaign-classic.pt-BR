@@ -2,16 +2,17 @@
 product: campaign
 title: Instalação de um servidor mid-sourcing no Campaign
 description: Esta seção detalha a instalação e a configuração de um servidor mid-sourcing no Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 1%
+source-wordcount: '1020'
+ht-degree: 2%
 
 ---
 
@@ -47,32 +48,32 @@ No entanto, você deve aplicar o seguinte:
 
 * Na etapa **5**, Você deve desativar o **mta** (entrega) e **inMail** (emails devolvidos) módulos. A variável **wfserver** (workflow) no entanto, deve permanecer ativado.
 
-   ```
-   <?xml version='1.0'?>
-   <serverconf>  
-     <shared>    
-       <!-- add lang="eng" to dataStore to force English for the instance -->    
-       <dataStore hosts="console.campaign.net*">      
-         <mapping logical="*" physical="default"/>    
-       </dataStore>  </shared>  
-       <mta autoStart="false"/>  
-       <wfserver autoStart="true"/>  
-       <inMail autoStart="false"/>  
-       <sms autoStart="false"/>  
-       <listProtect autoStart="false"/>
-   </serverconf>
-   ```
+  ```
+  <?xml version='1.0'?>
+  <serverconf>  
+    <shared>    
+      <!-- add lang="eng" to dataStore to force English for the instance -->    
+      <dataStore hosts="console.campaign.net*">      
+        <mapping logical="*" physical="default"/>    
+      </dataStore>  </shared>  
+      <mta autoStart="false"/>  
+      <wfserver autoStart="true"/>  
+      <inMail autoStart="false"/>  
+      <sms autoStart="false"/>  
+      <listProtect autoStart="false"/>
+  </serverconf>
+  ```
 
-   Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#enabling-processes).
+  Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 * Etapas **6**, **9** e **10** não são necessárias.
 * Durante as etapas **12** e **13**, é necessário indicar a porta 8080 no URL de conexão (já que o console se comunica com o Tomcat diretamente, não através do servidor Web). O URL torna-se `http://console.campaign.net:8080`. Durante a etapa **13**, selecione o **[!UICONTROL Issue towards Mid-sourcing]** pacote, bem como aqueles a serem instalados.
 
-   ![](assets/s_ncs_install_midsourcing02.png)
+  ![](assets/s_ncs_install_midsourcing02.png)
 
-   >[!CAUTION]
-   >
-   >O roteamento padrão de deliveries técnicos é substituído automaticamente pelo roteamento de email via Mid-sourcing.
+  >[!CAUTION]
+  >
+  >O roteamento padrão de deliveries técnicos é substituído automaticamente pelo roteamento de email via Mid-sourcing.
 
 ### Instalação e configuração do servidor mid-sourcing {#installing-and-configuring-the-mid-sourcing-server}
 

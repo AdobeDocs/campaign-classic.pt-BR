@@ -2,14 +2,15 @@
 product: campaign
 title: Fluxo de trabalho de limpeza do banco de dados
 description: Saiba como os dados obsoletos são limpos automaticamente
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2823'
+source-wordcount: '2830'
 ht-degree: 1%
 
 ---
@@ -63,16 +64,16 @@ Os campos do **[!UICONTROL Purge of data]** coincidem com as opções a seguir. 
 * Perfis do visitante: **NmsCleanup_VisitorPurgeDelay** (consulte [Limpeza de visitantes](#cleanup-of-visitors))
 * Apresentações da oferta: **NmsCleanup_PropositionPurgeDelay** (consulte [Limpeza de apresentações](#cleanup-of-propositions))
 
-   >[!NOTE]
-   >
-   >A variável **[!UICONTROL Offer propositions]** o campo só está disponível quando a variável **Interação** O módulo do está instalado.
+  >[!NOTE]
+  >
+  >A variável **[!UICONTROL Offer propositions]** o campo só está disponível quando a variável **Interação** O módulo do está instalado.
 
 * Eventos: **NmsCleanup_EventPurgeDelay** (consulte [Limpeza de eventos expirados](#cleansing-expired-events))
 * Eventos arquivados: **NmsCleanup_EventHistoPurgeDelay** (consulte [Limpeza de eventos expirados](#cleansing-expired-events))
 
-   >[!NOTE]
-   >
-   >A variável **[!UICONTROL Events]** e **[!UICONTROL Archived events]** os campos só estarão disponíveis se a variável **Centro de mensagens** O módulo do está instalado.
+  >[!NOTE]
+  >
+  >A variável **[!UICONTROL Events]** e **[!UICONTROL Archived events]** os campos só estarão disponíveis se a variável **Centro de mensagens** O módulo do está instalado.
 
 * Trilha de auditoria: **XtkCleanup_AuditTrailPurgeDelay** (consulte [Limpeza da Trilha de auditoria](#cleanup-of-audit-trail))
 
@@ -132,19 +133,19 @@ Esta tarefa limpa todos os deliveries a serem excluídos ou reciclados.
 
    * Na tabela de exclusão de delivery (**NmsDlvExclusion**), a seguinte query é usada:
 
-      ```sql
-      DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
-      ```
+     ```sql
+     DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
+     ```
 
-      onde **$(l)** é o identificador da entrega.
+     onde **$(l)** é o identificador da entrega.
 
    * Na tabela de cupons (**NmsCouponValue**), a seguinte consulta é usada (com exclusões em massa):
 
-      ```sql
-      DELETE FROM NmsCouponValue WHERE iMessageId IN (SELECT iMessageId FROM NmsCouponValue WHERE EXISTS (SELECT B.iBroadLogId FROM $(BroadLogTableName) B WHERE B.iDeliveryId = $(l) AND B.iBroadLogId = iMessageId ) LIMIT 5000)
-      ```
+     ```sql
+     DELETE FROM NmsCouponValue WHERE iMessageId IN (SELECT iMessageId FROM NmsCouponValue WHERE EXISTS (SELECT B.iBroadLogId FROM $(BroadLogTableName) B WHERE B.iDeliveryId = $(l) AND B.iBroadLogId = iMessageId ) LIMIT 5000)
+     ```
 
-      onde `$(l)` é o identificador da entrega.
+     onde `$(l)` é o identificador da entrega.
 
    * Nas tabelas de log do delivery (**NmsBroadlogXxx**), as exclusões em massa são executadas em lotes de 20.000 registros.
    * Nas tabelas de apresentação de ofertas (**NmsPropositionXxx**), as exclusões em massa são executadas em lotes de 20.000 registros.
@@ -155,13 +156,13 @@ Esta tarefa limpa todos os deliveries a serem excluídos ou reciclados.
    * Na tabela de log do processo em lote (**XtkJobLog**), as exclusões em massa são executadas em lotes de 20.000 registros. Esta tabela contém o log de deliveries a serem excluídos.
    * Na tabela de rastreamento do URL de entrega (**NmsTrackingUrl**), a seguinte query é usada:
 
-      ```sql
-      DELETE FROM NmsTrackingUrl WHERE iDeliveryId=$(l)
-      ```
+     ```sql
+     DELETE FROM NmsTrackingUrl WHERE iDeliveryId=$(l)
+     ```
 
-      onde `$(l)` é o identificador da entrega.
+     onde `$(l)` é o identificador da entrega.
 
-      Esta tabela contém os URLs encontrados nos deliveries a serem excluídos para ativar o rastreamento.
+     Esta tabela contém os URLs encontrados nos deliveries a serem excluídos para ativar o rastreamento.
 
 1. O delivery é excluído da tabela de delivery (**NmsDelivery**):
 

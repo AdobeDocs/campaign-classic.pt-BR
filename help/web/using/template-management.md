@@ -2,18 +2,18 @@
 product: campaign
 title: Gerenciamento de templates
 description: Gerenciamento de templates
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Delivery Templates
 exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 100%
+source-wordcount: '126'
+ht-degree: 92%
 
 ---
 
-# Gerenciamento de templates{#template-management}
+# Gerenciamento de modelo{#template-management}
 
 
 
