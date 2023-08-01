@@ -2,17 +2,17 @@
 product: campaign
 title: Configuração de processos de exportação
 description: Saiba como configurar e executar processos de exportação no Campaign
-fearture: Overview
+feature: Overview
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

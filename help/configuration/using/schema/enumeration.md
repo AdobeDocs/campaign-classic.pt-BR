@@ -2,8 +2,9 @@
 product: campaign
 title: Elementos e atributos de esquema - elemento de enumeração
 description: elemento de enumeração
+feature: Schema Extension
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 6%
@@ -48,7 +49,7 @@ Enumerações são definidas no início de um esquema (antes de o elemento princ
 
 * **basetype (string)**: tipo dos valores armazenados na enumeração.
 
-   Lista de tipos disponíveis:
+  Lista de tipos disponíveis:
 
    * QUALQUER UMA
    * compartimento

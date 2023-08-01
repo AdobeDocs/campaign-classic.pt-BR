@@ -2,8 +2,9 @@
 product: campaign
 title: Elementos e atributos de esquema - elemento element
 description: elemento
+feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '2014'
 ht-degree: 0%
@@ -54,9 +55,9 @@ Existem quatro tipos de `<element>`  elementos no Adobe Campaign:
 
 * **_operation (string)**: define o tipo de gravação no banco de dados.
 
-   Esse atributo é usado principalmente ao estender schemas prontos para uso.
+  Esse atributo é usado principalmente ao estender schemas prontos para uso.
 
-   Os valores acessíveis são:
+  Os valores acessíveis são:
 
    * &quot;none&quot;: apenas reconciliação. Isso significa que o Adobe Campaign recuperará o elemento sem atualizá-lo ou gerar um erro se ele não existir.
    * &quot;insertOrUpdate&quot;: atualização com inserção. Isso significa que o Adobe Campaign atualizará o elemento ou o criará se ele não existir.
@@ -93,14 +94,14 @@ Existem quatro tipos de `<element>`  elementos no Adobe Campaign:
    * &quot;shared&quot;: o conteúdo é armazenado em uma tabela compartilhada por tipo de dados
    * &quot;dedicated&quot;: o conteúdo é armazenado em uma tabela dedicada
 
-   As tabelas de características SQL são criadas automaticamente com base no tipo de característica:
+  As tabelas de características SQL são criadas automaticamente com base no tipo de característica:
 
    * dedicado: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-   Há dois tipos de campos de características: campos simples, onde um único valor é autorizado na característica, e campos de múltipla escolha, onde a característica está vinculada a um elemento de coleção que pode conter vários valores.
+  Há dois tipos de campos de características: campos simples, onde um único valor é autorizado na característica, e campos de múltipla escolha, onde a característica está vinculada a um elemento de coleção que pode conter vários valores.
 
-   Quando uma característica é definida em um esquema, esse esquema deve ter uma chave principal baseada em um único campo (chaves compostas não são autorizadas).
+  Quando uma característica é definida em um esquema, esse esquema deve ter uma chave principal baseada em um único campo (chaves compostas não são autorizadas).
 
 * **featureDate (booleano)**: atributo vinculado ao campo de características &quot;@feature&quot;. Se o valor for &quot;true&quot;, ele permitirá descobrir quando o valor foi atualizado pela última vez.
 * **filterPath (cadeia de caracteres)**: este atributo recebe um Xpath e permite definir um filtro em um campo.
@@ -111,7 +112,7 @@ Existem quatro tipos de `<element>`  elementos no Adobe Campaign:
 * **img (string)**: recebe o caminho de uma imagem vinculada a um elemento. O valor desse atributo é do tipo &quot;namespace:image name&quot;. Por exemplo: img=&quot;cus:myImage.jpg&quot;. Fisicamente, a imagem deve ser importada para o servidor de aplicativos.
 * **integridade (sequência de caracteres)**: integridade referencial da ocorrência da tabela de origem em direção à tabela de destino.
 
-   Os valores acessíveis são:
+  Os valores acessíveis são:
 
    * &quot;define&quot;: a Adobe Campaign não exclui a entidade se ela for referenciada por meio do link
    * &quot;normal&quot;: excluir a ocorrência de origem inicializa as chaves do link na ocorrência de destino (modo padrão), esse tipo de integridade inicializa todas as chaves estrangeiras
@@ -125,14 +126,14 @@ Existem quatro tipos de `<element>`  elementos no Adobe Campaign:
 * **localizável (booleano)**: se estiver ativado, esse atributo informará à ferramenta de coleção para recuperar o valor do atributo &quot;@label&quot; para tradução (uso interno).
 * **nome (MNTOKEN)**: nome interno do elemento que corresponde ao nome da tabela. O valor do atributo &quot;@name&quot; deve ser curto, de preferência em inglês, e estar em conformidade com as restrições de nomenclatura vinculadas ao XML.
 
-   Quando o esquema é gravado no banco de dados, os prefixos são adicionados automaticamente ao nome do campo pelo Adobe Campaign.
+  Quando o esquema é gravado no banco de dados, os prefixos são adicionados automaticamente ao nome do campo pelo Adobe Campaign.
 
    * &quot;i&quot;: prefixo para o tipo &quot;inteiro&quot;.
    * &quot;d&quot;: prefixo do tipo &quot;double&quot;.
    * &quot;s&quot;: prefixo do tipo de sequência de caracteres.
    * &quot;ts&quot;: prefixo do tipo &quot;date&quot;.
 
-   Para definir o nome da tabela de forma autônoma, é necessário usar o atributo &quot;@sqltable&quot; na definição do elemento principal do schema.
+  Para definir o nome da tabela de forma autônoma, é necessário usar o atributo &quot;@sqltable&quot; na definição do elemento principal do schema.
 
 * **noDbIndex (booleano)**: permite especificar que o elemento não será indexado.
 * **ordenado (booleano)**: se o atributo estiver ativado (ordered=&quot;true&quot;), o Adobe Campaign mantém a sequência de declaração do elemento em um elemento de coleção XML.
@@ -148,12 +149,12 @@ Existem quatro tipos de `<element>`  elementos no Adobe Campaign:
 * **revAdvanced (booleano)**: quando ativado, esse atributo especifica que o link oposto é um link &quot;avançado&quot;.
 * **revCardinality (string)**: esse atributo define a cardinalidade de um vínculo entre duas tabelas. É usado em um tipo de &quot;link&quot; `<element>`.
 
-   Os valores possíveis são:
+  Os valores possíveis são:
 
    * &quot;single&quot; : link de tipo simples 1-1
    * &quot;unbound&quot;: link de coleção do tipo 1-N
 
-   Por padrão, se o atributo não for especificado durante a criação do link, a cardinalidade será 1-N.
+  Por padrão, se o atributo não for especificado durante a criação do link, a cardinalidade será 1-N.
 
 * **revDesc (string)**: este atributo recebe uma descrição vinculada ao link oposto.
 * **revExternalJoin (booleano)**: quando ativado, esse atributo permite forçar a associação externa no link oposto.
@@ -172,7 +173,7 @@ Existem quatro tipos de `<element>`  elementos no Adobe Campaign:
 * **translateExpr (cadeia de caracteres)**: se um atributo &quot;@expr&quot; for encontrado, o atributo &quot;@translatedExpr&quot; permitirá redefinir uma expressão correspondente à definida em &quot;@expr&quot; e que será coletada pela ferramenta de tradução (uso interno).
 * **Tipo (MNTOKEN)**: define o tipo de dados armazenado no elemento.
 
-   Lista de tipos disponíveis:
+  Lista de tipos disponíveis:
 
    * QUALQUER UMA
    * compartimento
