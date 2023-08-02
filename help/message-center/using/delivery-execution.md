@@ -3,15 +3,15 @@ product: campaign
 title: Execução da entrega
 description: Saiba mais sobre a execução e o monitoramento da entrega de mensagens transacionais
 feature: Transactional Messaging, Message Center, Monitoring
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '240'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
