@@ -3,15 +3,15 @@ product: campaign
 title: Nível de serviço do Centro de mensagens
 description: Saiba mais sobre o relatório de nível de serviço do Centro de mensagens
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: b8dc9891-84c8-445d-ad6a-d06048c8faaf
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
