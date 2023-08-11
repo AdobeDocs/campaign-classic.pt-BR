@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Ambientes Live/Design
-description: Ambientes Live/Design
+title: Ambientes ao vivo/de design
+description: Ambientes ao vivo/de design
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Ambientes Live/Design{#live-design-environments}
+# Ambientes ao vivo/de design{#live-design-environments}
 
 
 
