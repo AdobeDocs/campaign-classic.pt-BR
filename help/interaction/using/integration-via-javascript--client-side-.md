@@ -3,15 +3,15 @@ product: campaign
 title: Integração via JavaScript (lado do cliente)
 description: Integração via JavaScript (lado do cliente)
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1147'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +179,7 @@ O caso de uso a seguir detalha as configurações a serem feitas no Adobe Campai
 
 1. **Criação de um ambiente e um espaço de oferta**
 
-   Para obter mais informações sobre como criar um ambiente, consulte [Ambientes Live/Design](../../interaction/using/live-design-environments.md).
+   Para obter mais informações sobre como criar um ambiente, consulte [Ambientes ao vivo/de design](../../interaction/using/live-design-environments.md).
 
    Para obter mais informações sobre a criação de um espaço de oferta, consulte [Criação de espaços de oferta](../../interaction/using/creating-offer-spaces.md).
 
