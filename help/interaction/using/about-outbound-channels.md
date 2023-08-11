@@ -3,12 +3,12 @@ product: campaign
 title: Sobre canais de saída
 description: Sobre canais de saída
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: 6e32dadc-097f-4380-b931-88468f3cb3b1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '176'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
