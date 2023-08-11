@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2624'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -233,7 +233,7 @@ Para instalações no local e instalações hospedadas/híbridas que usam o MTA 
 >
 >* As rejeições **assíncronas** ainda são qualificadas pelo processo do InMail por meio das regras **[!UICONTROL Inbound email]**. Para obter mais informações, consulte as [Regras de gerenciamento de email](#email-management-rules).
 >
->* Para instâncias que usam o MTA aprimorado **sem Webhooks**, o **[!UICONTROL Inbound email]** as regras também serão usadas para processar os emails rejeitados síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email usado para emails rejeitados assíncronos.
+>* Para instâncias que usam o MTA aprimorado **sem Webhooks**, as regras **[!UICONTROL Inbound email]** também serão usadas para processar os emails rejeitados síncronos provenientes do MTA aprimorado, usando o mesmo endereço de email usado para os emails rejeitados assíncronos.
 
 Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, quando o delivery de um email falha, o servidor de delivery do Adobe Campaign recebe uma mensagem de erro do servidor de mensagens ou do servidor DNS remoto. A lista de erros é formada por strings contidas na mensagem retornada pelo servidor remoto. Tipos de falhas e motivos são atribuídos a cada mensagem de erro.
 
@@ -255,7 +255,7 @@ Esse processo permite reunir todas as falhas do mesmo tipo e evitar várias entr
 
 Os emails de devolução podem ter o seguinte status de qualificação:
 
-* **[!UICONTROL To qualify]**: o email de devolução não pôde ser qualificado. A qualificação deve ser atribuída à equipe de Deliverability para garantir uma plataforma eficiente de deliverability. Contanto que não seja qualificado, o email de devolução não é usado para enriquecer a lista de regras de gestão de email.
+* **[!UICONTROL To qualify]**: o email de devolução não pôde ser qualificado. A qualificação deve ser atribuída à equipe de capacidade de entrega para garantir uma plataforma eficiente de deliverability. Contanto que não seja qualificado, o email de devolução não é usado para enriquecer a lista de regras de gestão de email.
 * **[!UICONTROL Keep]**: o email de devolução foi qualificado e será usado pelo workflow **Refresh for deliverability** para ser comparado às regras de gerenciamento de email existentes e enriquecer a lista.
 * **[!UICONTROL Ignore]**: o e-mail de rejeição é ignorado pelo MTA do Campaign, o que significa que essa rejeição nunca fará com que o endereço do destinatário seja colocado em quarentena. Ele não será usado pelo workflow **Atualizar para entrega** e não será enviado para instâncias do cliente.
 
@@ -290,7 +290,7 @@ As regras padrão são as seguintes.
 
 >[!IMPORTANT]
 >
->Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](sending-with-enhanced-mta.md), e se sua instância tiver **Webhooks** funcionalidade, a variável **[!UICONTROL Inbound email]** as regras não são mais usadas para mensagens de erro de falha síncrona de entrega. Para obter mais informações, consulte [esta seção](#bounce-mail-qualification).
+>Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](sending-with-enhanced-mta.md) e se a instância tiver a funcionalidade **Webhooks**, as regras **[!UICONTROL Inbound email]** não serão mais usadas para mensagens de erro de falha de entrega síncrona. Para obter mais informações, consulte [esta seção](#bounce-mail-qualification).
 
 Para instalações locais e instalações hospedadas/híbridas que usam o MTA do Campaign herdado, essas regras contêm a lista de strings de caracteres que podem ser retornadas por servidores remotos e que permitem qualificar o erro (**Permanente**, **Temporário** ou **Ignorado**).
 
@@ -321,7 +321,7 @@ Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no
 
 >[!IMPORTANT]
 >
->Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](sending-with-enhanced-mta.md), as regras de taxa de trasferência do delivery **[!UICONTROL MX management]** não são mais usadas. O MTA aprimorado usa regras MX próprias que permitem personalizar a taxa de transferência por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
+>Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](sending-with-enhanced-mta.md), as regras da taxa de transferência da entrega **[!UICONTROL MX management]** não são mais usadas. O MTA aprimorado usa as próprias regras de MX que permitem personalizar a taxa de transferência por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios no o qual você está enviando emails.
 
 Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign:
 
