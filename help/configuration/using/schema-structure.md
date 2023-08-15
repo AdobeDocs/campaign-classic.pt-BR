@@ -3,7 +3,7 @@ product: campaign
 title: Estrutura de esquema
 description: Estrutura de esquema
 feature: Custom Resources
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: configuration
 content-type: reference
 topic-tags: schema-reference

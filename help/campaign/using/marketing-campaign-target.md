@@ -2,12 +2,12 @@
 product: campaign
 title: Audiência da campanha de marketing
 description: Saiba como definir a audiência das campanhas de marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1492'
 ht-degree: 100%
 
 ---
@@ -93,78 +93,79 @@ O direcionamento pode ser programado para execução automática de acordo com u
 
 As ações relacionadas à execução do workflow de definição de metas (inicialização, parada, pausa etc.) são processos **assíncronos** : o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
 
-Os ícones da barra de ferramentas permitem tomar medidas referentes à execução do workflow de direcionamento.
+Os ícones da barra de ferramentas permitem realizar a ação referente à execução do workflow de direcionamento.
 
 * Iniciar ou reiniciar
 
    * O ícone **[!UICONTROL Start]** permite iniciar o workflow para construção do target. Quando você clica nesse ícone, todas as atividades sem uma transição de entrada são ativadas (exceto saltos de ponto de extremidade).
 
-      ![](assets/s_user_segmentation_start.png)
+     ![](assets/s_user_segmentation_start.png)
 
-      O servidor considera a solicitação, conforme mostrado pelo status:
+     O servidor considera a solicitação, conforme mostrado pelo status:
 
-      ![](assets/s_user_segmentation_start_status.png)
+     ![](assets/s_user_segmentation_start_status.png)
 
-      O status do processo muda para **[!UICONTROL Started]**.
+     O status do processo muda para **[!UICONTROL Started]**.
 
    * Você pode reiniciar o workflow de definição de metas por meio do ícone de barra de ferramentas apropriado. Esse comando pode ser útil se o ícone **[!UICONTROL Start]** não estiver disponível, por exemplo, quando a interrupção do workflow para construção do target estiver em andamento. Nesse caso, clique no ícone **[!UICONTROL Restart]** para antecipar a reinicialização. O servidor considera a solicitação, como mostra o status:
 
-      ![](assets/s_user_segmentation_restart_status.png)
+     ![](assets/s_user_segmentation_restart_status.png)
 
-      O processo insere o status **[!UICONTROL Started]**.
+     O processo insere o status **[!UICONTROL Started]**.
 
 * Parar ou pausar
 
    * Os ícones da barra de ferramentas permitem interromper ou pausar um workflow de direcionamento em andamento.
 
-      Ao clicar em **[!UICONTROL Pause]**, as operações em andamento **[!UICONTROL are not]** são pausadas, mas nenhuma outra atividade é iniciada até a próxima reinicialização.
+     Ao clicar em **[!UICONTROL Pause]**, as operações em andamento **[!UICONTROL are not]** são pausadas, mas nenhuma outra atividade é iniciada até a próxima reinicialização.
 
-      ![](assets/s_user_segmentation_pause.png)
+     ![](assets/s_user_segmentation_pause.png)
 
-      O servidor considera o comando, como mostra o status:
+     O servidor considera o comando, como mostra o status:
 
-      ![](assets/s_user_segmentation_pause_status.png)
+     ![](assets/s_user_segmentation_pause_status.png)
 
-      Você também pode pausar um workflow de direcionamento automaticamente quando a execução atinge uma atividade específica. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o workflow para construção do target deve ser pausado e selecione **[!UICONTROL Enable but do not execute]**.
+     Você também pode pausar um workflow de direcionamento automaticamente quando a execução atinge uma atividade específica. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o workflow para construção do target deve ser pausado e selecione **[!UICONTROL Enable but do not execute]**.
 
-      ![](assets/s_user_segmentation_donotexecute.png)
+     ![](assets/s_user_segmentation_donotexecute.png)
 
-      Essa configuração é exibida por um ícone especial.
+     Essa configuração é exibida por um ícone especial.
 
-      ![](assets/s_user_segmentation_pause_activity.png)
+     ![](assets/s_user_segmentation_pause_activity.png)
 
-      >[!NOTE]
-      >
-      >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de definição de metas.
+     >[!NOTE]
+     >
+     >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de definição de metas.
 
-      Clique em **[!UICONTROL Start]** para retomar a execução.
+     Clique em **[!UICONTROL Start]** para retomar a execução.
 
    * Clique no ícone **[!UICONTROL Stop]** para interromper a execução em andamento.
 
-      ![](assets/s_user_segmentation_stop.png)
+     ![](assets/s_user_segmentation_stop.png)
 
-      O servidor considera o comando, como mostra o status:
+     O servidor considera o comando, como mostra o status:
 
-      ![](assets/s_user_segmentation_stop_status.png)
-   Você também pode interromper um workflow de definição de metas automaticamente quando a execução atinge uma atividade. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o workflow para construção do target será interrompido e selecione **[!UICONTROL Do not activate]**.
+     ![](assets/s_user_segmentation_stop_status.png)
 
-   ![](assets/s_user_segmentation_donotactivate.png)
+  Você também pode interromper um workflow de definição de metas automaticamente quando a execução atinge uma atividade. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o workflow para construção do target será interrompido e selecione **[!UICONTROL Do not activate]**.
 
-   ![](assets/s_user_segmentation_unactivation.png)
+  ![](assets/s_user_segmentation_donotactivate.png)
 
-   Essa configuração é exibida por um ícone especial.
+  ![](assets/s_user_segmentation_unactivation.png)
 
-   >[!NOTE]
-   >
-   >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de definição de metas.
+  Essa configuração é exibida por um ícone especial.
+
+  >[!NOTE]
+  >
+  >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de definição de metas.
 
 * Interrupção incondicional
 
-   No Explorer, selecione **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** para acessar e atuar em todos os workflows da campanha.
+  No Explorer, selecione **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** para acessar e atuar em todos os workflows da campanha.
 
-   Você pode interromper o workflow definitivamente clicando no ícone **[!UICONTROL Actions]** e selecionando a interrupção **[!UICONTROL Unconditional]**. Esta ação encerra o fluxo de trabalho da campanha.
+  Você pode interromper o workflow definitivamente clicando no ícone **[!UICONTROL Actions]** e selecionando a interrupção **[!UICONTROL Unconditional]**. Esta ação encerra o fluxo de trabalho da campanha.
 
-   ![](assets/s_user_segmentation_stop_unconditional.png)
+  ![](assets/s_user_segmentation_stop_unconditional.png)
 
 ## Adicionar um grupo de controle {#defining-a-control-group}
 

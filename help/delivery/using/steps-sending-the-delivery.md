@@ -2,13 +2,13 @@
 product: campaign
 title: Configurar e enviar o delivery
 description: Saiba como configurar e enviar o delivery
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1514'
 ht-degree: 100%
 
 ---
@@ -31,20 +31,19 @@ Antes de enviar o delivery, você poderá definir os parâmetros de envio nas pr
 
 * **[!UICONTROL Message batch quantity]**: use essa opção para definir o número de mensagens agrupadas no mesmo pacote de distribuição XML. Se o parâmetro for definido como 0, as mensagens serão automaticamente agrupadas. O tamanho do pacote é definido pelo cálculo `<delivery size>/1024`, com no mínimo 8 e no máximo 256 mensagens por pacote.
 
-   >[!IMPORTANT]
-   >
-   >Quando o delivery é criado duplicando um existente, esse parâmetro é redefinido.
+  >[!IMPORTANT]
+  >
+  >Quando o delivery é criado duplicando um existente, esse parâmetro é redefinido.
 
 * **[!UICONTROL Send using multiple waves]**: use essa opção para enviar suas mensagens em lotes, em vez de enviá-las para todo o público-alvo de uma só vez. [Saiba mais](#sending-using-multiple-waves).
 
 * **[!UICONTROL Test SMTP delivery]**: use essa opção para testar o envio via SMTP. A entrega é processada até a conexão com o servidor SMTP, mas não é enviada: para cada destinatário do delivery, o Campaign se conecta ao servidor do provedor SMTP, executa o comando SMTP RCPT TO e encerra a conexão antes do comando SMTP DATA.
 
-   >[!NOTE]
-   >
-   >* Essa opção não deve ser definida no mid-sourcing.
-   >
-   >* Saiba mais sobre a configuração do servidor SMTP [nesta seção](../../installation/using/configure-delivery-settings.md).
-
+  >[!NOTE]
+  >
+  >* Essa opção não deve ser definida no mid-sourcing.
+  >
+  >* Saiba mais sobre a configuração do servidor SMTP [nesta seção](../../installation/using/configure-delivery-settings.md).
 
 * **[!UICONTROL Email BCC]**: essa opção permite armazenar emails em um sistema externo por meio do CCO. Para isso, basta adicionar um endereço de email de CCO ao destinatário da mensagem. [Saiba mais](sending-messages.md#archiving-emails).
 
@@ -96,11 +95,11 @@ Isso permite adiar o delivery para uma data posterior ou salvar o delivery no ca
 
 * A opção **[!UICONTROL Schedule delivery (no automatic execution)]** permite agendar uma análise provisional do delivery.
 
-   Quando essa configuração é salva, o delivery muda para o status **[!UICONTROL Targeting pending]**. A análise será iniciada na data especificada.
+  Quando essa configuração é salva, o delivery muda para o status **[!UICONTROL Targeting pending]**. A análise será iniciada na data especificada.
 
 * A opção **[!UICONTROL Schedule delivery (automatic execution on planned date)]** permite especificar a data do delivery.
 
-   Clique em **[!UICONTROL Send]** e selecione **[!UICONTROL Postpone delivery]**, depois inicie a análise e confirme o delivery. Quando a análise for concluída, o destinatário do delivery estará pronto e as mensagens serão automaticamente enviadas na data especificada.
+  Clique em **[!UICONTROL Send]** e selecione **[!UICONTROL Postpone delivery]**, depois inicie a análise e confirme o delivery. Quando a análise for concluída, o destinatário do delivery estará pronto e as mensagens serão automaticamente enviadas na data especificada.
 
 Datas e horas são expressas no fuso horário do operador atual. A lista suspensa **[!UICONTROL Time zone]** localizada abaixo do campo de entrada de data do contato permite converter automaticamente a data e a hora inseridas para o fuso horário selecionado.
 
@@ -125,17 +124,18 @@ Para balancear a carga, você pode dividir deliveries em vários lotes. Configur
 
    * Definir o tamanho de cada onda. Por exemplo, se você inserir **[!UICONTROL 30%]** no campo correspondente, cada onda representará 30% das mensagens incluídas no delivery, exceto a última, que representará 10% das mensagens.
 
-      No campo **[!UICONTROL Period]**, especifique o atraso entre o início de duas ondas consecutivas. Por exemplo, se você inserir **[!UICONTROL 2d]**, a primeira onda começará imediatamente, a segunda onda começará em dois dias, a terceira onda em quatro dias e assim por diante.
+     No campo **[!UICONTROL Period]**, especifique o atraso entre o início de duas ondas consecutivas. Por exemplo, se você inserir **[!UICONTROL 2d]**, a primeira onda começará imediatamente, a segunda onda começará em dois dias, a terceira onda em quatro dias e assim por diante.
 
-      ![](assets/s_ncs_user_wizard_waves_create_size.png)
+     ![](assets/s_ncs_user_wizard_waves_create_size.png)
 
    * Defina um calendário para enviar cada onda.
 
-      Na coluna **[!UICONTROL Start]**, especifique o atraso entre o início de duas ondas consecutivas. Na coluna **[!UICONTROL Size]**, insira um número fixo ou uma porcentagem.
+     Na coluna **[!UICONTROL Start]**, especifique o atraso entre o início de duas ondas consecutivas. Na coluna **[!UICONTROL Size]**, insira um número fixo ou uma porcentagem.
 
-      No exemplo abaixo, a primeira onda representa 25% do número total de mensagens incluídas no delivery e iniciará imediatamente. As próximas duas ondas completam o delivery e são definidas para começar em intervalos de seis horas.
+     No exemplo abaixo, a primeira onda representa 25% do número total de mensagens incluídas no delivery e iniciará imediatamente. As próximas duas ondas completam o delivery e são definidas para começar em intervalos de seis horas.
 
-      ![](assets/s_ncs_user_wizard_waves_create.png)
+     ![](assets/s_ncs_user_wizard_waves_create.png)
+
    Uma regra de tipologia específica, **[!UICONTROL Wave scheduling check]**, garante que a última onda seja planejada antes do limite da validade do delivery. As tipologias de campanha e suas regras, configuradas na guia **[!UICONTROL Typology]** das propriedades de delivery, são apresentadas em [Processo de validação com tipologias](steps-validating-the-delivery.md#validation-process-with-typologies).
 
    >[!IMPORTANT]
@@ -152,23 +152,23 @@ Os dois exemplos abaixo são os casos de uso mais comuns para usar várias ondas
 
 * **Durante o processo de aumento**
 
-   Quando os emails são enviados usando uma nova plataforma, os provedores de serviços de Internet (ISPs) suspeitam de endereços IP que não são reconhecidos. Se grandes volumes de emails forem enviados repentinamente, os ISPs freqüentemente os marcam como spam.
+  Quando os emails são enviados usando uma nova plataforma, os provedores de serviços de Internet (ISPs) suspeitam de endereços IP que não são reconhecidos. Se grandes volumes de emails forem enviados repentinamente, os ISPs freqüentemente os marcam como spam.
 
-   Para evitar ser marcado como spam, você poderá aumentar progressivamente o volume enviado usando ondas. Isso deve garantir o desenvolvimento suave da fase de inicialização e permitir que você reduza a taxa geral de endereços inválidos.
+  Para evitar ser marcado como spam, você poderá aumentar progressivamente o volume enviado usando ondas. Isso deve garantir o desenvolvimento suave da fase de inicialização e permitir que você reduza a taxa geral de endereços inválidos.
 
-   Para fazer isso, use a opção **[!UICONTROL Schedule waves according to a calendar]**. Por exemplo, defina a primeira onda para 10%, a segunda para 15% e assim por diante.
+  Para fazer isso, use a opção **[!UICONTROL Schedule waves according to a calendar]**. Por exemplo, defina a primeira onda para 10%, a segunda para 15% e assim por diante.
 
-   ![](assets/s_ncs_user_wizard_waves_ramp-up.png)
+  ![](assets/s_ncs_user_wizard_waves_ramp-up.png)
 
 * **Campanhas envolvendo uma central de atendimento**
 
-   Ao gerenciar uma campanha de fidelidade por telefone, sua organização tem uma capacidade limitada para processar o número de chamadas para contatar os assinantes.
+  Ao gerenciar uma campanha de fidelidade por telefone, sua organização tem uma capacidade limitada para processar o número de chamadas para contatar os assinantes.
 
-   Usando ondas, você poderá restringir o número de mensagens a 20 por dia, que é a capacidade diária de processamento de uma central de atendimento.
+  Usando ondas, você poderá restringir o número de mensagens a 20 por dia, que é a capacidade diária de processamento de uma central de atendimento.
 
-   Para fazer isso, selecione a opção **[!UICONTROL Schedule multiple waves of the same size]**. Insira **[!UICONTROL 20]** como o tamanho da onda e **[!UICONTROL 1d]** no campo **[!UICONTROL Period]**.
+  Para fazer isso, selecione a opção **[!UICONTROL Schedule multiple waves of the same size]**. Insira **[!UICONTROL 20]** como o tamanho da onda e **[!UICONTROL 1d]** no campo **[!UICONTROL Period]**.
 
-   ![](assets/s_ncs_user_wizard_waves_call_center.png)
+  ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
 ## Configurar novas tentativas {#configuring-retries}
 
@@ -192,12 +192,12 @@ Quando a entrega for iniciada, as mensagens (e todas as tentativas) poderão ser
 
 * O campo **[!UICONTROL Delivery duration]** permite inserir o limite de novas tentativas de delivery globais. Isso significa que o Adobe Campaign envia as mensagens começando na data de início e, em seguida, para mensagens que retornam somente um erro, tentativas regulares e configuráveis são executadas até que o limite de validade seja atingido.
 
-   Você também poderá optar por especificar datas. Para fazer isso, selecione **[!UICONTROL Explicitly set validity dates]**. Nesse caso, as datas de entrega e limite de validade também permitem especificar o tempo. O tempo atual é usado por padrão, mas você poderá modificar isso diretamente no campo de entrada.
+  Você também poderá optar por especificar datas. Para fazer isso, selecione **[!UICONTROL Explicitly set validity dates]**. Nesse caso, as datas de entrega e limite de validade também permitem especificar o tempo. O tempo atual é usado por padrão, mas você poderá modificar isso diretamente no campo de entrada.
 
-   >[!IMPORTANT]
-   >
-   >Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](sending-with-enhanced-mta.md), a configuração **[!UICONTROL Delivery duration]** nos deliveries de email do Campaign será usada somente se definida como **3,5 dias ou menos.**. Se você definir um valor superior a 3,5 dias, ele não será levado em consideração.
+  >[!IMPORTANT]
+  >
+  >Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](sending-with-enhanced-mta.md), a configuração **[!UICONTROL Delivery duration]** nos deliveries de email do Campaign será usada somente se definida como **3,5 dias ou menos.**. Se você definir um valor superior a 3,5 dias, ele não será levado em consideração.
 
 * **Limite da validade de recursos**: o campo **[!UICONTROL Validity limit]** é usado para recursos carregados, principalmente para a mirror page e imagens. Os recursos desta página são válidos por um tempo limitado (para economizar espaço em disco).
 
-   Os valores nesse campo podem ser expressos nas unidades listadas [nesta seção](../../platform/using/adobe-campaign-workspace.md#default-units).
+  Os valores nesse campo podem ser expressos nas unidades listadas [nesta seção](../../platform/using/adobe-campaign-workspace.md#default-units).

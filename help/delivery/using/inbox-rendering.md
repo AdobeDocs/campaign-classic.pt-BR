@@ -2,13 +2,13 @@
 product: campaign
 title: Renderização da caixa de entrada   no Campaign
 description: Saiba como capturar renderizações de email e disponibilizá-las em um relatório dedicado
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
 source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '851'
 ht-degree: 100%
 
 ---
@@ -25,6 +25,7 @@ Para permitir isso, o Adobe Campaign aproveita a solução de teste de email bas
 
 >[!CAUTION]
 >A renderização da caixa de entrada não é compatível com [entregas recorrentes](communication-channels.md#recurring-delivery).
+>
 
 O Litmus é um aplicativo de validação e visualização de email com recursos completos. Ele permite que criadores de conteúdo de email visualizem o conteúdo de sua mensagem em mais de 70 renderizadores de email, como a caixa de entrada do Gmail ou o cliente Apple Mail.
 
@@ -90,7 +91,6 @@ Cada vez que você usa o recurso **[!UICONTROL Inbox rendering]** em uma entrega
 >* Cada vez que o relatório de renderização da Caixa de Entrada é gerado, é deduzido um token por cliente da mensagem: um token para a renderização do Outlook 2000, um para a renderização do Outlook 2010, um para a renderização do Apple Mail 9 e assim por diante.
 >* Para a mesma entrega, se você gerar a renderização da Caixa de Entrada novamente, o número de tokens disponíveis será reduzido novamente pelo número de renderizações geradas.
 >
-
 
 O número de tokens disponíveis restantes é exibido no **[!UICONTROL General summary]** do [relatório de renderização da Caixa de entrada](#inbox-rendering-report)
 

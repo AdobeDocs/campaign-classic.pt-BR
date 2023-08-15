@@ -2,13 +2,13 @@
 product: campaign
 title: Automatizar via workflows
 description: Saiba como automatizar o gerenciamento de conteúdo por meio de workflows
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Workflows
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1202'
 ht-degree: 100%
 
 ---
@@ -36,41 +36,41 @@ As propriedades da atividade são divididas em quatro etapas:
 
 * **Especificado pela transição**
 
-   O conteúdo a ser usado foi criado anteriormente. Os processos se referem à instância de conteúdo propagada pelo evento de entrada. O identificador de conteúdo é acessado por meio da variável &quot;contentId&quot; do evento.
+  O conteúdo a ser usado foi criado anteriormente. Os processos se referem à instância de conteúdo propagada pelo evento de entrada. O identificador de conteúdo é acessado por meio da variável &quot;contentId&quot; do evento.
 
 * **Explícito**
 
-   Permite escolher o conteúdo criado anteriormente.
+  Permite escolher o conteúdo criado anteriormente.
 
 * **Calculado por um script**
 
-   Seleciona uma instância de conteúdo com base em um template JavaScript. O código a ser avaliado permite recuperar o identificador de conteúdo.
+  Seleciona uma instância de conteúdo com base em um template JavaScript. O código a ser avaliado permite recuperar o identificador de conteúdo.
 
 * **Novo, criado por meio de um template de publicação**
 
-   Cria um novo conteúdo por meio de um template de publicação. A instância de conteúdo será salva na pasta &quot;string&quot; preenchida.
+  Cria um novo conteúdo por meio de um template de publicação. A instância de conteúdo será salva na pasta &quot;string&quot; preenchida.
 
 ### Atualizar o conteúdo {#update-the-content}
 
 * **Assunto**
 
-   Permite modificar o assunto da ação de delivery ao publicar.
+  Permite modificar o assunto da ação de delivery ao publicar.
 
 * **Acesso aos dados de um feed XML**
 
-   O conteúdo é atualizado de um feed XML de uma fonte externa. Um URL deve ser inserido para que o download de dados ocorra.
+  O conteúdo é atualizado de um feed XML de uma fonte externa. Um URL deve ser inserido para que o download de dados ocorra.
 
-   Uma folha de estilos XSL pode ser usada para transformar os dados XML de entrada.
+  Uma folha de estilos XSL pode ser usada para transformar os dados XML de entrada.
 
 ### Ação a ser executada {#action-to-execute}
 
 * **Salvar**
 
-   Salva o conteúdo criado ou modificado. O identificador do conteúdo salvo é propagado na variável &quot;contentId&quot; do evento de saída.
+  Salva o conteúdo criado ou modificado. O identificador do conteúdo salvo é propagado na variável &quot;contentId&quot; do evento de saída.
 
 * **Gerar**
 
-   Gera os arquivos de saída para cada um dos modelos de transformação com uma publicação do tipo &quot;Arquivo&quot;. A transição de saída é ativada para cada arquivo gerado, com os seguintes parâmetros: o identificador do conteúdo salvo na variável &quot;contentId&quot; e o nome do arquivo na variável &quot;filename&quot;.
+  Gera os arquivos de saída para cada um dos modelos de transformação com uma publicação do tipo &quot;Arquivo&quot;. A transição de saída é ativada para cada arquivo gerado, com os seguintes parâmetros: o identificador do conteúdo salvo na variável &quot;contentId&quot; e o nome do arquivo na variável &quot;filename&quot;.
 
 ### Transição {#transition}
 

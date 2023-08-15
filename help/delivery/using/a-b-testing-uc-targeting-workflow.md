@@ -2,13 +2,13 @@
 product: campaign
 title: Criar um fluxo de trabalho de direcionamento
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: A/B Testing
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '145'
 ht-degree: 100%
 
 ---

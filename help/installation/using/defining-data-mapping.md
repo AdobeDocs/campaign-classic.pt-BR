@@ -3,12 +3,12 @@ product: campaign
 title: Definir mapeamento de dados externos
 description: Saiba como mapear dados em um banco de dados externo
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: a7253ca7-47e5-4def-849d-3ce1c9b948fb
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '201'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 

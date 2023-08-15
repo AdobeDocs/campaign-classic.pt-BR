@@ -2,13 +2,13 @@
 product: campaign
 title: Renderização do formulário
 description: Renderização do formulário
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '999'
 ht-degree: 100%
 
 ---
@@ -80,7 +80,7 @@ Ela permite que você defina as seguintes propriedades:
 * **[!UICONTROL Lines]**: número de linhas para uma zona de tipo **[!UICONTROL Multi-line text]**,
 * **[!UICONTROL Style inline]**: permite que você sobrecarregue a folha de estilos CSS com configurações adicionais. Eles são separados usando os caracteres **;** como mostrado no exemplo abaixo:
 
-   ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
+  ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
 ### Definição de cabeçalhos e rodapés {#defining-headers-and-footers}
 
@@ -148,11 +148,11 @@ Na janela de seleção de campo, você pode escolher entre os seguintes dados:
 
 * A árvore principal contém os parâmetros do contexto de formulário. Os parâmetros padrão incluem o Identificador (que corresponde ao identificador criptografado do recipient), Idioma e Origem.
 
-   Para obter mais informações, consulte esta [página](defining-web-forms-properties.md#form-url-parameters).
+  Para obter mais informações, consulte esta [página](defining-web-forms-properties.md#form-url-parameters).
 
 * A subárvore **[!UICONTROL Recipients]** contém os campos de entrada inseridos no formulário e armazenados no banco de dados.
 
-   Para obter mais informações, consulte [Armazenamento de dados no banco de dados](web-forms-answers.md#storing-data-in-the-database).
+  Para obter mais informações, consulte [Armazenamento de dados no banco de dados](web-forms-answers.md#storing-data-in-the-database).
 
 * A subárvore **[!UICONTROL Variables]** contém as variáveis disponíveis para esse formulário. Para obter mais informações, consulte [Armazenamento de dados em uma variável local](web-forms-answers.md#storing-data-in-a-local-variable).
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Definir propriedades de formulários web
 description: Definir propriedades de formulários web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1218'
 ht-degree: 100%
 
 ---
@@ -136,15 +136,15 @@ Os seguintes parâmetros estão disponíveis por padrão:
 * **origin** para especificar a origem do entrevistado.
 * **_uuid** permite a exibição de formulário antes da publicação e do rastreamento de erros. Esse parâmetro é para uso interno (criação e depuração): quando você acessa o formulário web por meio dessa URL, os registros criados não são levados em consideração no rastreamento (relatórios). A origem é forçada ao valor **[!UICONTROL Adobe Campaign]**.
 
-   Ele é usado com os parâmetros **_preview** e/ou **_debug**:
+  Ele é usado com os parâmetros **_preview** e/ou **_debug**:
 
-   **_preview** para exibir a última versão salva. Esse parâmetro deve ser usado somente na fase de teste.
+  **_preview** para exibir a última versão salva. Esse parâmetro deve ser usado somente na fase de teste.
 
-   **_debug** para exibir o rastreamento da entrada de dados ou calculada nas páginas do formulário. Isso é usado para obter mais informações sobre erros, incluindo uma vez que o formulário foi publicado.
+  **_debug** para exibir o rastreamento da entrada de dados ou calculada nas páginas do formulário. Isso é usado para obter mais informações sobre erros, incluindo uma vez que o formulário foi publicado.
 
-   >[!CAUTION]
-   >
-   >Quando o formulário é exibido por meio de um URL com o parâmetro **_uuid** , o valor do parâmetro **[!UICONTROL origin]** é forçado ao **Adobe Campaign**.
+  >[!CAUTION]
+  >
+  >Quando o formulário é exibido por meio de um URL com o parâmetro **_uuid** , o valor do parâmetro **[!UICONTROL origin]** é forçado ao **Adobe Campaign**.
 
 ## Adição de parâmetros {#adding-parameters}
 

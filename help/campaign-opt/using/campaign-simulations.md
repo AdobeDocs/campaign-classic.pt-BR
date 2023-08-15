@@ -2,12 +2,12 @@
 product: campaign
 title: Simulações de campanha
 description: Introdução às simulações de campanha
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Campaigns
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1252'
 ht-degree: 100%
 
 ---
@@ -113,9 +113,9 @@ Uma vez concluída a execução, abra a simulação e clique na guia **[!UICONTR
    * **[!UICONTROL Initial count]** é o target como foi calculado durante a estimativa no delivery.
    * **[!UICONTROL Final count]** é o número de recipients contados após a simulação.
 
-      A diferença entre as contagens inicial e final reflete a aplicação de várias regras ou filtros configurados antes da simulação.
+     A diferença entre as contagens inicial e final reflete a aplicação de várias regras ou filtros configurados antes da simulação.
 
-      Para saber mais sobre esse cálculo, edite a subguia **[!UICONTROL Exclusions]**.
+     Para saber mais sobre esse cálculo, edite a subguia **[!UICONTROL Exclusions]**.
 
 1. A subguia **[!UICONTROL Exclusions]** permite visualizar a interrupção da exclusão.
 
@@ -207,15 +207,15 @@ No exemplo abaixo, queremos criar um eixo de relatórios adicional com base no s
 
    * **[!UICONTROL Generate target overlap statistics]** permite recuperar todas as estatísticas de sobreposição no relatório de simulação. As sobreposições são recipients a quem são direcionadas, no mínimo, dois deliveires em uma simulação.
 
-      >[!IMPORTANT]
-      >
-      >A seleção dessa opção aumenta consideravelmente o tempo de execução da simulação.
+     >[!IMPORTANT]
+     >
+     >A seleção dessa opção aumenta consideravelmente o tempo de execução da simulação.
 
    * **[!UICONTROL Keep the simulation work table]** permite que você mantenha os rastreamentos de simulação.
 
-      >[!IMPORTANT]
-      >
-      >O salvamento automático dessas tabelas requer uma capacidade de armazenamento significativa: verifique se o banco de dados é grande o suficiente.
+     >[!IMPORTANT]
+     >
+     >O salvamento automático dessas tabelas requer uma capacidade de armazenamento significativa: verifique se o banco de dados é grande o suficiente.
 
 Quando os resultados da simulação forem exibidos, as informações sobre a expressão selecionada serão exibidas na subguia **[!UICONTROL Overlaps]**.
 

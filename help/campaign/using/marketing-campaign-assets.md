@@ -2,12 +2,12 @@
 product: campaign
 title: Documentos da campanha de marketing e delivery outlines
 description: Saiba mais sobre documentos de campanha de marketing e delivery outlines
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '762'
 ht-degree: 100%
 
 ---
@@ -89,19 +89,19 @@ Uma estrutura pode conter itens e campos de personalização, recursos e ofertas
 * Os itens podem ser documentos físicos, por exemplo, que são referenciados e descritos aqui e serão anexados ao delivery.
 * Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de recipients. Assim, é possível criar valores que serão usados em deliveries para um target específico (oferta de boas-vindas, desconto, etc.) Eles são criados no Adobe Campaign e importados para o outline por meio do link **[!UICONTROL Import personalization fields...]**.
 
-   ![](assets/s_ncs_user_op_add_composition_field.png)
+  ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   Eles também podem ser criados diretamente no outline clicando no ícone **[!UICONTROL Add]** à direita da zona de lista.
+  Eles também podem ser criados diretamente no outline clicando no ícone **[!UICONTROL Add]** à direita da zona de lista.
 
-   ![](assets/s_ncs_user_op_add_composition_field_button.png)
+  ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
 * São recursos de marketing gerados no painel de recursos de marketing acessado por meio do link **[!UICONTROL Resources]** da guia **[!UICONTROL Campaigns]**.
 
-   ![](assets/s_ncs_user_mkg_resource_ovv.png)
+  ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
-   >[!NOTE]
-   >
-   >Para obter mais informações sobre recursos de marketing, consulte [esta seção](../../mrm/using/managing-marketing-resources.md).
+  >[!NOTE]
+  >
+  >Para obter mais informações sobre recursos de marketing, consulte [esta seção](../../mrm/using/managing-marketing-resources.md).
 
 ### Selecionar um outline {#selecting-an-outline}
 

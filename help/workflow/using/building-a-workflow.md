@@ -2,12 +2,12 @@
 product: campaign
 title: Criar um workflow
 description: Saiba como criar um fluxo de trabalho
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1630'
 ht-degree: 100%
 
 ---
@@ -87,28 +87,28 @@ Você pode alterar a exibição e o layout do gráfico usando os seguintes eleme
 
 * **Usar a barra de ferramentas**
 
-   A barra de ferramentas de edição do diagrama oferece acesso às funções de layout e de execução do workflow.
+  A barra de ferramentas de edição do diagrama oferece acesso às funções de layout e de execução do workflow.
 
-   ![](assets/s_user_segmentation_wizard_10.png)
+  ![](assets/s_user_segmentation_wizard_10.png)
 
-   Isso permite adaptar o layout da ferramenta de edição: exibição da paleta e da visão geral, tamanho e alinhamento de objetos gráficos.
+  Isso permite adaptar o layout da ferramenta de edição: exibição da paleta e da visão geral, tamanho e alinhamento de objetos gráficos.
 
-   ![](assets/s_user_segmentation_toolbar.png)
+  ![](assets/s_user_segmentation_toolbar.png)
 
-   Os ícones relacionados ao progresso e à exibição de logs são detalhados nestas seções:
+  Os ícones relacionados ao progresso e à exibição de logs são detalhados nestas seções:
 
    * [Exibição do progresso](../../workflow/using/monitoring-workflow-execution.md#displaying-progress)
    * [Exibição de logs](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)
 
 * **Alinhamento de objeto**
 
-   Para alinhar ícones, selecione-os e clique no ícone **[!UICONTROL Align vertically]** ou **[!UICONTROL Align horizontally]**.
+  Para alinhar ícones, selecione-os e clique no ícone **[!UICONTROL Align vertically]** ou **[!UICONTROL Align horizontally]**.
 
-   Use a tecla **CTRL** para selecionar várias atividades dispersas ou desmarcar uma ou mais atividades. Clique no plano de fundo do diagrama para desmarcar tudo.
+  Use a tecla **CTRL** para selecionar várias atividades dispersas ou desmarcar uma ou mais atividades. Clique no plano de fundo do diagrama para desmarcar tudo.
 
 * **Gestão de imagens**
 
-   Você pode personalizar a imagem do plano de fundo do diagrama, bem como aquelas relacionadas às várias atividades. Consulte [Alterar imagens de atividade](managing-activity-images.md).
+  Você pode personalizar a imagem do plano de fundo do diagrama, bem como aquelas relacionadas às várias atividades. Consulte [Alterar imagens de atividade](managing-activity-images.md).
 
 ## Configurar atividades {#configuring-activities}
 

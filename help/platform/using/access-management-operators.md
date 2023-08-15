@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1156'
 ht-degree: 100%
 
 ---
@@ -102,31 +102,31 @@ O link **[!UICONTROL Edit the access parameters...]** permite acessar as seguint
 
 * A opção **[!UICONTROL Disable account]** permite desabilitar a conta do operador: esse usuário não acessará mais o Adobe Campaign.
 
-   >[!NOTE]
-   >
-   >Mesmo que a conta esteja desativada, o operador ainda poderá receber alertas ou notificações do Campaign. Para interromper o envio de notificações do Campaign a esse operador, a Adobe recomenda remover o endereço de email do perfil.
+  >[!NOTE]
+  >
+  >Mesmo que a conta esteja desativada, o operador ainda poderá receber alertas ou notificações do Campaign. Para interromper o envio de notificações do Campaign a esse operador, a Adobe recomenda remover o endereço de email do perfil.
 
 * A opção **[!UICONTROL Forbid access from the rich client]** permite restringir o uso do Adobe Campaign para [acesso à Web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) ou por meio de APIs: o acesso ao console do cliente Adobe Campaign não está mais disponível.
 * É possível vincular uma zona de segurança ao operador. Para obter mais informações, consulte [esta página](../../installation/using/security-zones.md).
 * Também é possível definir uma máscara IP confiável usando o link apropriado.
 
-   O operador poderá se conectar ao Adobe Campaign sem inserir a senha se o endereço IP estiver nessa lista.
+  O operador poderá se conectar ao Adobe Campaign sem inserir a senha se o endereço IP estiver nessa lista.
 
-   Você também pode especificar um conjunto de endereços IP que serão autorizados a se conectar sem uma senha, como no exemplo a seguir:
+  Você também pode especificar um conjunto de endereços IP que serão autorizados a se conectar sem uma senha, como no exemplo a seguir:
 
-   ![](assets/operator_trustip.png)
+  ![](assets/operator_trustip.png)
 
-   >[!NOTE]
-   >
-   >Para manter seguro o acesso à sua plataforma, essa opção deve ser usada com cuidado.
+  >[!NOTE]
+  >
+  >Para manter seguro o acesso à sua plataforma, essa opção deve ser usada com cuidado.
 
 * A opção **[!UICONTROL Restrict to information found in sub-folders of:]** permite limitar os direitos atribuídos ao operador de uma pasta. Somente as subpastas do nó especificado nessa opção estarão visíveis para o usuário:
 
-   ![](assets/s_ncs_user_restrictions_operators.png)
+  ![](assets/s_ncs_user_restrictions_operators.png)
 
-   >[!IMPORTANT]
-   >
-   >Essa é uma restrição muito rígida e deve ser usada com cuidado. Um operador conectado com este tipo de direito pode ver SOMENTE o conteúdo da pasta especificada e não tem acesso a nenhum outro nó da árvore por meio do explorador. No entanto, dependendo das funcionalidades as quais esse operador tem acesso (por exemplo: fluxos de trabalho), o usuário pode exibir dados que normalmente são armazenados em nós que não estão acessíveis.
+  >[!IMPORTANT]
+  >
+  >Essa é uma restrição muito rígida e deve ser usada com cuidado. Um operador conectado com este tipo de direito pode ver SOMENTE o conteúdo da pasta especificada e não tem acesso a nenhum outro nó da árvore por meio do explorador. No entanto, dependendo das funcionalidades as quais esse operador tem acesso (por exemplo: fluxos de trabalho), o usuário pode exibir dados que normalmente são armazenados em nós que não estão acessíveis.
 
 ### Verificar configurações {#check-settings}
 
@@ -136,15 +136,15 @@ Você pode acessar:
 
 * A lista de direitos nas pastas vinculadas ao operador.
 
-   ![](assets/operator_folder_permissions.png)
+  ![](assets/operator_folder_permissions.png)
 
-   >[!NOTE]
-   >
-   >Para obter mais informações, consulte [Gerenciamento de acesso a pastas](#folder-access-management).
+  >[!NOTE]
+  >
+  >Para obter mais informações, consulte [Gerenciamento de acesso a pastas](#folder-access-management).
 
 * O log de aprovações do operador.
 
-   ![](assets/operator_profile_validations.png)
+  ![](assets/operator_profile_validations.png)
 
 * A lista de fóruns de discussão que eles assinaram.
 * Eventos em seu calendário.

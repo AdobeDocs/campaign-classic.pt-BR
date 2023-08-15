@@ -3,7 +3,7 @@ product: campaign
 title: Recomendações de dimensionamento de hardware para o Campaign Classic v7
 description: Recomendações de dimensionamento de hardware para o Campaign Classic v7
 feature: Technote
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
@@ -28,7 +28,7 @@ A instância de marketing é a parte da arquitetura do Adobe Campaign que orient
 
 >[!CAUTION]
 >
->As informações neste documento não se aplicam se você estiver usando uma instância do Adobe Campaign totalmente hospedada (implantada em Adobe Cloud Services).
+>As informações neste documento não se aplicam se você estiver usando uma instância do Adobe Campaign totalmente hospedada (implantada em Adobe Cloud Service).
 
 A compatibilidade de software é detalhada na seção [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 

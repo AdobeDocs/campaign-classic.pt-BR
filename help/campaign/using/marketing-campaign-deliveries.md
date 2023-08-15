@@ -2,12 +2,12 @@
 product: campaign
 title: Deliveries de campanha de marketing
 description: Saiba mais sobre deliveries de campanha de marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1494'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ As entregas podem ser criadas por meio do painel da campanha, de um fluxo de tra
 
 Quando criados a partir de uma campanha, os deliveries serão vinculados a essa campanha e consolidados em seu nível.
 
-![](assets/do-not-localize/how-to-video.png)[ Descubra este recurso no vídeo](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Descubra este recurso no vídeo](#create-email-video)
 
 ## Criar entregas {#creating-deliveries}
 
@@ -68,32 +68,32 @@ Para obter mais informações, consulte [Aprovação de um arquivo de extração
 
 * Depois que o arquivo de extração for aprovado, é possível gerar a prova do email de notificação do roteador. Esta mensagem de email é construída com base em um template de delivery. Deve ser aprovado.
 
-   >[!NOTE]
-   >
-   >Esta etapa só estará disponível se o envio e a aprovação de provas tiverem sido habilitados na janela de aprovações.
+  >[!NOTE]
+  >
+  >Esta etapa só estará disponível se o envio e a aprovação de provas tiverem sido habilitados na janela de aprovações.
 
 ![](assets/s_ncs_user_file_valid_select_BAT.png)
 
 
 * Clique no botão **[!UICONTROL Send a proof]** para criar as provas.
 
-   O target da prova deve ser definido com antecedência.
+  O target da prova deve ser definido com antecedência.
 
-   Você pode criar quantas provas forem necessárias. Elas são acessadas por meio do link **[!UICONTROL Direct mail...]** dos detalhes de delivery.
+  Você pode criar quantas provas forem necessárias. Elas são acessadas por meio do link **[!UICONTROL Direct mail...]** dos detalhes de delivery.
 
-   ![](assets/s_ncs_user_file_notif_submit_proof.png)
+  ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
 * O status do delivery é alterado para **[!UICONTROL To submit]**. Clique no botão **[!UICONTROL Submit proofs]** para iniciar o processo de aprovação.
 
-   ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
+  ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
 * O status do delivery muda para **[!UICONTROL Proof to validate]**, e um botão permite aceitar ou rejeitar a aprovação.
 
-   ![](assets/s_ncs_user_file_notif_supplier_link.png)
+  ![](assets/s_ncs_user_file_notif_supplier_link.png)
 
-   Você pode aceitar ou rejeitar esta aprovação ou retornar à etapa de extração.
+  Você pode aceitar ou rejeitar esta aprovação ou retornar à etapa de extração.
 
-   ![](assets/s_ncs_user_file_notif_supplier_link_confirm.png)
+  ![](assets/s_ncs_user_file_notif_supplier_link_confirm.png)
 
 * O arquivo de extração é enviado ao roteador e o delivery é concluído.
 
@@ -103,11 +103,11 @@ A extração de arquivo inicia duas operações: cálculo de orçamento e cálcu
 
 * A guia **[!UICONTROL Budget]** permite gerenciar os orçamentos da campanha. O total das entradas de custo é exibido no campo **[!UICONTROL Calculates cost]** da guia principal da campanha e o programa ao qual ele pertence. Os montantes também são refletidos no orçamento da campanha.
 
-   O custo real será calculado de acordo com as informações fornecidas pelo roteador. Apenas mensagens enviadas são faturadas.
+  O custo real será calculado de acordo com as informações fornecidas pelo roteador. Apenas mensagens enviadas são faturadas.
 
 * Os estoques são definidos no nó **[!UICONTROL Administration > Campaign management > Stocks]** da árvore, e as estruturas de custo no nó **[!UICONTROL Administration > Campaign management > Service providers]**.
 
-   As linhas de estoque estão visíveis na seção de estoque. Para definir o estoque inicial, abra uma linha de estoque. O estoque é reduzido sempre que um delivery ocorre. Você pode definir um nível de alerta e notificações.
+  As linhas de estoque estão visíveis na seção de estoque. Para definir o estoque inicial, abra uma linha de estoque. O estoque é reduzido sempre que um delivery ocorre. Você pode definir um nível de alerta e notificações.
 
 >[!NOTE]
 >
@@ -190,19 +190,19 @@ Uma estrutura pode conter itens e campos de personalização, recursos e ofertas
 * Os itens podem ser documentos físicos, por exemplo, que são referenciados e descritos aqui e serão anexados ao delivery.
 * Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de recipients. Assim, é possível criar valores que serão usados em deliveries para um target específico (oferta de boas-vindas, desconto, etc.) Eles são criados no Adobe Campaign e importados para o outline por meio do link **[!UICONTROL Import personalization fields...]**.
 
-   ![](assets/s_ncs_user_op_add_composition_field.png)
+  ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   Eles também podem ser criados diretamente no outline clicando no ícone **[!UICONTROL Add]** à direita da zona de lista.
+  Eles também podem ser criados diretamente no outline clicando no ícone **[!UICONTROL Add]** à direita da zona de lista.
 
-   ![](assets/s_ncs_user_op_add_composition_field_button.png)
+  ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
 * Os recursos são de marketing, gerados no painel de recurso de marketing acessado por meio do link **[!UICONTROL Resources]** da guia **[!UICONTROL Campaigns]**.
 
-   ![](assets/s_ncs_user_mkg_resource_ovv.png)
+  ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
-   >[!NOTE]
-   >
-   >Para obter mais informações sobre recursos de marketing, consulte [Gerenciamento de recursos de marketing](../../mrm/using/managing-marketing-resources.md).
+  >[!NOTE]
+  >
+  >Para obter mais informações sobre recursos de marketing, consulte [Gerenciamento de recursos de marketing](../../mrm/using/managing-marketing-resources.md).
 
 #### Selecionar um outline {#selecting-an-outline}
 

@@ -2,11 +2,11 @@
 product: campaign
 title: Gestão dos Recursos de Marketing (MRM)
 description: Gestão dos Recursos de Marketing (MRM)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Targeting Activity
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '99'
 ht-degree: 100%
 
 ---

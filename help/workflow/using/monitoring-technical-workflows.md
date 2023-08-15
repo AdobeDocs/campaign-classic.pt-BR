@@ -2,12 +2,12 @@
 product: campaign
 title: Monitorar fluxos de trabalho técnicos
 description: Monitorar fluxos de trabalho técnicos
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '511'
 ht-degree: 100%
 
 ---
@@ -61,7 +61,7 @@ Para **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
 ## Supervisão de fluxo de trabalho {#workflow-supervision}
 
-O grupo **[!UICONTROL Workflow supervisors]** deve conter operadores que precisam ser informados sobre falhas e quem pode agir a tempo.
+O grupo **[!UICONTROL Workflow supervisors]** deve conter operadores que precisam ser informados sobre falhas e quem pode realizar uma ação a tempo.
 
 ![](assets/monitoring_technical_workflows3.png)
 

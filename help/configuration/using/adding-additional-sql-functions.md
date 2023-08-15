@@ -3,7 +3,7 @@ product: campaign
 title: Adição de funções SQL extras
 description: Saiba como definir funções SQL adicionais
 feature: Configuration, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt

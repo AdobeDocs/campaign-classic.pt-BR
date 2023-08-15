@@ -2,13 +2,13 @@
 product: campaign
 title: Instruções de pré-processamento para URLs rastreados
 description: Saiba mais sobre as instruções de pré-processamento a serem usadas para criar o script do URL de um email e ainda rastrear esse URL
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '654'
 ht-degree: 100%
 
 ---
@@ -35,31 +35,31 @@ Os seguintes exemplos estão entre os mais usados:
 
 * Incluindo o link de mirror page:
 
-   ```
-   <%@ include view="MirrorPage" %>  
-   ```
+  ```
+  <%@ include view="MirrorPage" %>  
+  ```
 
 * URL da mirror page:
 
-   ```
-   View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
-   ```
+  ```
+  View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
+  ```
 
 * URL de unsubscription pronto para uso:
 
-   ```
-   <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
-   ```
+  ```
+  <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
+  ```
 
 * Outros exemplos:
 
-   ```
-   <%@ include file='http://www.google.com' %>
-   <%@ include file='file:///X:/france/service/test.html' %>
-   <%@ include option='NmsServer_URL' %>
-   ```
+  ```
+  <%@ include file='http://www.google.com' %>
+  <%@ include file='file:///X:/france/service/test.html' %>
+  <%@ include option='NmsServer_URL' %>
+  ```
 
-   Use o botão de personalização no assistente do delivery para obter a sintaxe correta.
+  Use o botão de personalização no assistente do delivery para obter a sintaxe correta.
 
 ## [!DNL value] {#value}
 
@@ -88,17 +88,17 @@ Para personalização por email, o objeto de delivery pode ser acessado de duas 
 
 * Utilização do JavaScript:
 
-   ```
-   <%= delivery.myField %>`.
-   ```
+  ```
+  <%= delivery.myField %>`.
+  ```
 
-   No delivery de objetos JavaScript, não há suporte para campos personalizados. Eles funcionam na pré-visualização, mas não no MTA, porque o MTA só pode acessar o esquema de delivery pronto para uso.
+  No delivery de objetos JavaScript, não há suporte para campos personalizados. Eles funcionam na pré-visualização, mas não no MTA, porque o MTA só pode acessar o esquema de delivery pronto para uso.
 
 * Utilização de um pré-processamento:
 
-   ```
-   <%@ value object="delivery"
-   ```
+  ```
+  <%@ value object="delivery"
+  ```
 
 
 **Cuidado**

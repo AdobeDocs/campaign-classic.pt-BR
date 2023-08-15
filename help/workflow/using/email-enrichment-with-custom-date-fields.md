@@ -2,12 +2,12 @@
 product: campaign
 title: Enriquecimento de email com campos de data personalizados
 description: Saiba como enriquecer emails com campos de data personalizados
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '545'
 ht-degree: 100%
 
 ---

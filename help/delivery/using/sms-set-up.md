@@ -2,13 +2,13 @@
 product: campaign
 title: Configurar canal de SMS do Campaign
 description: Saiba como configurar o canal de SMS no Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: SMS
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1734'
 ht-degree: 100%
 
 ---
@@ -349,7 +349,7 @@ Para evitar isso, aplique uma das seguintes soluções, dependendo do provedor q
 * Crie uma conta de provedor para cada conta externa.
 * Use o campo **[!UICONTROL System type]** da guia **[!UICONTROL Mobile]** > **[!UICONTROL Connection settings]** para distinguir cada código curto. Solicite ao seu provedor um valor diferente para cada conta.
 
-   ![](assets/extended_smpp_system-type.png)
+  ![](assets/extended_smpp_system-type.png)
 
 As etapas para configurar uma conta externa usando o conector SMPP genérico estendido estão detalhadas na seção [Criar uma conta externa SMPP](#creating-an-smpp-external-account).
 

@@ -2,12 +2,12 @@
 product: campaign
 title: Código SQL e código JavaScript
 description: Saiba mais sobre atividades de workflow de códigos SQL e JavaScript
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '274'
 ht-degree: 100%
 
 ---
@@ -24,11 +24,11 @@ Uma atividade **[!UICONTROL SQL code]** executa um script SQL. O script é um te
 
 * **[!UICONTROL Script]**
 
-   A área central do editor contém o script a ser executado. Este script é um template JST e, portanto, pode ser configurado de acordo com o contexto do workflow.
+  A área central do editor contém o script a ser executado. Este script é um template JST e, portanto, pode ser configurado de acordo com o contexto do workflow.
 
 * **[!UICONTROL Processing errors]**
 
-   Consulte [Processamento de erros](monitoring-workflow-execution.md#processing-errors).
+  Consulte [Processamento de erros](monitoring-workflow-execution.md#processing-errors).
 
 ## Código JavaScript e código JavaScript avançado {#javascript-code}
 

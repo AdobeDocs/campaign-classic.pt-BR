@@ -2,13 +2,13 @@
 product: campaign
 title: Blocos de personalização
 description: Saiba como usar blocos de personalização
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Personalization
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '873'
 ht-degree: 100%
 
 ---
@@ -100,9 +100,9 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
 * **[!UICONTROL Powered by Adobe Campaign]**: insere o logotipo “Powered by Adobe Campaign”.
 * **[!UICONTROL Mirror page URL]**: insere o URL da mirror page, permitindo que os designers de delivery verifiquem o link.
 
-   >[!NOTE]
-   >
-   >Para saber mais sobre a geração da mirror page, consulte [Gerar a mirror page](sending-messages.md#generating-the-mirror-page).
+  >[!NOTE]
+  >
+  >Para saber mais sobre a geração da mirror page, consulte [Gerar a mirror page](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link to mirror page]**: insere um link para a mirror page (“Se você não conseguir visualizar esta mensagem corretamente, clique aqui”).
 * **[!UICONTROL Unsubscription link]**: insere um link que permite cancelar a inscrição de todos os deliveries (lista de bloqueios).
@@ -111,9 +111,9 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
 * **[!UICONTROL Registration link]**: insere um link de subscrição. que foi definido ao configurar a instância.
 * **[!UICONTROL Registration link (with referrer)]** : insere um link de subscrição, permitindo identificar o visitante e o delivery. O link foi definido ao configurar a instância.
 
-   >[!NOTE]
-   >
-   >Este bloco pode ser usado em deliveries somente para visitantes.
+  >[!NOTE]
+  >
+  >Este bloco pode ser usado em deliveries somente para visitantes.
 
 * **[!UICONTROL Registration confirmation]**: insere um link que permite confirmar a subscrição.
 * **[!UICONTROL Social network sharing links]**: insere botões que permitem que o recipient compartilhe um link para o conteúdo da mirror page no cliente de email, Facebook, Twitter e LinkedIn (consulte [Marketing viral: encaminhar para um amigo](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
@@ -136,9 +136,9 @@ Para criar um bloco de personalização, vá para o explorador e siga as seguint
    * Selecione **[!UICONTROL Visible in the customization menus]** para tornar esse bloco acessível a partir do ícone de inserção do campo de personalização.
    * Se necessário, selecione **[!UICONTROL The content of the personalization block depends upon the format]** para definir dois blocos separados para emails em formato HTML e texto.
 
-      Duas guias são exibidas na seção inferior desse editor (conteúdo HTML e conteúdo de texto) para definir o conteúdo correspondente.
+     Duas guias são exibidas na seção inferior desse editor (conteúdo HTML e conteúdo de texto) para definir o conteúdo correspondente.
 
-      ![](assets/s_ncs_user_personalized_block_b.png)
+     ![](assets/s_ncs_user_personalized_block_b.png)
 
    * Insira o conteúdo (em HTML, texto, JavaScript, etc.) do(s) bloco(s) de personalização e clique em **[!UICONTROL Save]**.
 

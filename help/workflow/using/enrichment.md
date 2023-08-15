@@ -2,12 +2,12 @@
 product: campaign
 title: Enriquecimento
 description: Saiba mais sobre a atividade do workflow de enriquecimento
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1298'
 ht-degree: 100%
 
 ---
@@ -43,11 +43,11 @@ Existem quatro tipos de vinculações:
 * **[!UICONTROL Define a link whose target is still available]**: possibilita definir um vínculo com uma cardinalidade 1-1 entre as tabelas. As condições de associação devem ser definidas por um único registro na tabela do target.
 * **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: possibilita definir um vínculo com uma cardinalidade 0-1 entre as tabelas. A condição de ligação deve ser definida por um registro 0 ou 1 (máx.) na tabela de público alvo.
 
-   Essa opção é configurada na guia **[!UICONTROL Simple Join]** que pode ser acessada por meio do link **[!UICONTROL Edit additional data]** da atividade **[!UICONTROL Enrichment]**.
+  Essa opção é configurada na guia **[!UICONTROL Simple Join]** que pode ser acessada por meio do link **[!UICONTROL Edit additional data]** da atividade **[!UICONTROL Enrichment]**.
 
 * **[!UICONTROL Define a link by searching for a reference among several options]**: esse tipo de link define uma reconciliação em direção a um registro exclusivo. O Adobe Campaign cria um link para uma tabela de target adicionando uma chave externa na tabela de target para armazenar uma referência ao registro exclusivo.
 
-   Essa opção é configurada na guia **[!UICONTROL Reconciliation and deduplication]** que pode ser acessada por meio do link **[!UICONTROL Edit additional data]** da atividade **[!UICONTROL Enrichment]**.
+  Essa opção é configurada na guia **[!UICONTROL Reconciliation and deduplication]** que pode ser acessada por meio do link **[!UICONTROL Edit additional data]** da atividade **[!UICONTROL Enrichment]**.
 
 Os casos de uso que detalham o funcionamento das atividades de Enriquecimento em seu contexto também estão disponíveis nas seguintes seções:
 
@@ -171,11 +171,11 @@ Após configurar sua query (consulte esta [seção](query.md)):
 
    * **[!UICONTROL Search for the best offer in a category]**: marque esta opção e especifique os parâmetros de chamada do mecanismo de oferta (espaços de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros. Recomendamos completar o campo **[!UICONTROL Category]** ou o campo **[!UICONTROL Theme]**, em vez de ambos ao mesmo tempo.
 
-      ![](assets/int_enrichment_offer3.png)
+     ![](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A predefined offer]**: marque esta opção e especifique um espaço de ofertas, uma oferta específica e uma data de contato para configurar diretamente a oferta que deseja adicionar, sem chamar o mecanismo de oferta.
 
-      ![](assets/int_enrichment_offer4.png)
+     ![](assets/int_enrichment_offer4.png)
 
 1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Deliveries entre canais](cross-channel-deliveries.md).
 

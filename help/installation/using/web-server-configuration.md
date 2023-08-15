@@ -3,7 +3,7 @@ product: campaign
 title: Configuração do servidor da web
 description: Saiba mais sobre as principais práticas recomendadas de configuração do servidor Web
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
@@ -11,7 +11,7 @@ exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 

@@ -2,12 +2,12 @@
 product: campaign
 title: Gerenciar fusos horários
 description: Gerenciar fusos horários
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: c2f6033c-30cd-4eb4-adf1-ab2de7510220
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '289'
 ht-degree: 100%
 
 ---
@@ -34,19 +34,19 @@ Os valores possíveis são:
 
 * Fuso horário do servidor
 
-   Usa o fuso horário do servidor de aplicativos Adobe Campaign.
+  Usa o fuso horário do servidor de aplicativos Adobe Campaign.
 
 * Fuso horário do usuário
 
-   Usa o fuso horário do operador do Adobe Campaign que executa o workflow.
+  Usa o fuso horário do operador do Adobe Campaign que executa o workflow.
 
 * Fuso horário do banco de dados
 
-   Usa o fuso horário do servidor de banco de dados usado.
+  Usa o fuso horário do servidor de banco de dados usado.
 
 * Fusos horários específicos
 
-   Usa o fuso horário selecionado.
+  Usa o fuso horário selecionado.
 
 Se o valor **[!UICONTROL By default]** for selecionado, o fuso horário do workflow será aplicado, caso contrário, será usado o do servidor de aplicativos.
 

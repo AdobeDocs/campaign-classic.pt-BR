@@ -2,13 +2,13 @@
 product: campaign
 title: Etapas principais para criar uma pesquisa
 description: Crie sua primeira pesquisa com o Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '928'
 ht-degree: 100%
 
 ---
@@ -53,12 +53,12 @@ Uma pesquisa deve conter **pelo menos** três componentes: uma página, uma caix
 
 * Para criar uma página, selecione o objeto da **[!UICONTROL Page]** na seção à esquerda do editor e o coloque na seção intermediária, conforme mostrado abaixo:
 
-   ![](assets/s_ncs_admin_survey_new_page.png)
+  ![](assets/s_ncs_admin_survey_new_page.png)
 
 * Em seguida, selecione o objeto de **[!UICONTROL Storage]** e o coloque na transição de saída da página.
 * Finalmente, selecione o objeto do **[!UICONTROL End]** e o coloque no final da transição de saída da caixa de armazenamento para obter o diagrama a seguir:
 
-   ![](assets/s_ncs_admin_survey_end.png)
+  ![](assets/s_ncs_admin_survey_end.png)
 
 ## Etapa 4 — criação do conteúdo da página {#step-4---creating-the-page-content}
 
@@ -68,51 +68,51 @@ No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 c
 
 * **Adicionar campos de entrada**
 
-   Para criar o conteúdo da página, você deve editá-lo: para fazer isso, clique duas vezes no objeto **[!UICONTROL Page]**. Clique no primeiro ícone na barra de ferramentas para abrir o assistente de criação de campo. Para criar um campo de entrada para o nome de usuário a ser armazenado no campo correspondente do perfil do recipient, selecione **[!UICONTROL Edit a recipient]**.
+  Para criar o conteúdo da página, você deve editá-lo: para fazer isso, clique duas vezes no objeto **[!UICONTROL Page]**. Clique no primeiro ícone na barra de ferramentas para abrir o assistente de criação de campo. Para criar um campo de entrada para o nome de usuário a ser armazenado no campo correspondente do perfil do recipient, selecione **[!UICONTROL Edit a recipient]**.
 
-   ![](assets/s_ncs_admin_survey_add_field_menu.png)
+  ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
-   Clique no botão **[!UICONTROL Next]** para selecionar o campo para armazenamento de dados no banco de dados. Nesse caso, o campo &quot;Sobrenome&quot;.
+  Clique no botão **[!UICONTROL Next]** para selecionar o campo para armazenamento de dados no banco de dados. Nesse caso, o campo &quot;Sobrenome&quot;.
 
-   ![](assets/s_ncs_admin_survey_choose_field.png)
+  ![](assets/s_ncs_admin_survey_choose_field.png)
 
-   Clique em **[!UICONTROL Finish]** para confirmar a criação do campo.
+  Clique em **[!UICONTROL Finish]** para confirmar a criação do campo.
 
-   Por padrão, quando as informações são armazenadas em um campo já existente no banco de dados, o campo assume o nome do campo selecionado, ou seja, &quot;Sobrenome&quot; neste exemplo. Você pode modificar esse rótulo conforme mostrado abaixo:
+  Por padrão, quando as informações são armazenadas em um campo já existente no banco de dados, o campo assume o nome do campo selecionado, ou seja, &quot;Sobrenome&quot; neste exemplo. Você pode modificar esse rótulo conforme mostrado abaixo:
 
-   ![](assets/s_ncs_admin_survey_change_label.png)
+  ![](assets/s_ncs_admin_survey_change_label.png)
 
-   Agora, crie um campo de entrada para o número da conta de usuário. Repita a operação e selecione o campo &quot;Número da conta&quot;.
+  Agora, crie um campo de entrada para o número da conta de usuário. Repita a operação e selecione o campo &quot;Número da conta&quot;.
 
-   Siga o mesmo procedimento para adicionar um campo para o usuário inserir um endereço de email.
+  Siga o mesmo procedimento para adicionar um campo para o usuário inserir um endereço de email.
 
 * **Criar uma pergunta**
 
-   Para criar uma pergunta, clique com o botão direito do mouse no último elemento da árvore e selecione **[!UICONTROL Containers > Question]** ou clique no ícone **[!UICONTROL Containers]** e selecione **[!UICONTROL Question]**.
+  Para criar uma pergunta, clique com o botão direito do mouse no último elemento da árvore e selecione **[!UICONTROL Containers > Question]** ou clique no ícone **[!UICONTROL Containers]** e selecione **[!UICONTROL Question]**.
 
-   ![](assets/s_ncs_admin_survey_add_qu.png)
+  ![](assets/s_ncs_admin_survey_add_qu.png)
 
-   Insira o rótulo da pergunta e insira o(s) campo(s) de resposta como sub-ramificações da pergunta. Para fazer isso, o nó vinculado à pergunta deve ser selecionado ao criar o campo de resposta. Adicione um **[!UICONTROL drop-down listx]** usando o ícone **[!UICONTROL Selection controls]** ou clicando com o botão direito do mouse, como mostrado abaixo:
+  Insira o rótulo da pergunta e insira o(s) campo(s) de resposta como sub-ramificações da pergunta. Para fazer isso, o nó vinculado à pergunta deve ser selecionado ao criar o campo de resposta. Adicione um **[!UICONTROL drop-down listx]** usando o ícone **[!UICONTROL Selection controls]** ou clicando com o botão direito do mouse, como mostrado abaixo:
 
-   ![](assets/s_ncs_admin_survey_add_list.png)
+  ![](assets/s_ncs_admin_survey_add_list.png)
 
-   Selecione um espaço de armazenamento: selecione um campo de enumeração para recuperar os valores automaticamente (o formato do email, nesse caso).
+  Selecione um espaço de armazenamento: selecione um campo de enumeração para recuperar os valores automaticamente (o formato do email, nesse caso).
 
-   ![](assets/s_ncs_admin_survey_add_itz_list.png)
+  ![](assets/s_ncs_admin_survey_add_itz_list.png)
 
-   Na guia **[!UICONTROL General]**, clique no link **[!UICONTROL Initialize the list of values from the database]**: a tabela de valores é inserida automaticamente.
+  Na guia **[!UICONTROL General]**, clique no link **[!UICONTROL Initialize the list of values from the database]**: a tabela de valores é inserida automaticamente.
 
-   ![](assets/s_ncs_admin_survey_add_value.png)
+  ![](assets/s_ncs_admin_survey_add_value.png)
 
-   Clique em **[!UICONTROL OK]** para fechar o editor e em **[!UICONTROL Save]** salvar as alterações.
+  Clique em **[!UICONTROL OK]** para fechar o editor e em **[!UICONTROL Save]** salvar as alterações.
 
-   >[!NOTE]
-   >
-   >Para cada campo ou pergunta, você pode adaptar o layout da página para atender às suas necessidades, graças às opções na guia **[!UICONTROL Advanced]**. O layout das telas de pesquisa é detalhado [nesta seção](../../web/using/about-web-forms.md).
+  >[!NOTE]
+  >
+  >Para cada campo ou pergunta, você pode adaptar o layout da página para atender às suas necessidades, graças às opções na guia **[!UICONTROL Advanced]**. O layout das telas de pesquisa é detalhado [nesta seção](../../web/using/about-web-forms.md).
 
-   Na tela de detalhes, clique na guia **[!UICONTROL Preview]** para exibir a renderização da pesquisa recém-criada.
+  Na tela de detalhes, clique na guia **[!UICONTROL Preview]** para exibir a renderização da pesquisa recém-criada.
 
-   ![](assets/s_ncs_admin_survey_preview.png)
+  ![](assets/s_ncs_admin_survey_preview.png)
 
 ## Etapa 5 — armazenamento dos dados da pesquisa {#step-5---storing-the-survey-data-}
 
@@ -133,11 +133,11 @@ Para que os usuários possam acessar as páginas HTML, a aplicação deve ser di
 * Clique no botão **[!UICONTROL Publish]** localizado acima do painel de pesquisa.
 * Clique em **[!UICONTROL Start]** para iniciar a publicação e fechar o assistente.
 
-   ![](assets/s_ncs_admin_survey_start_publ.png)
+  ![](assets/s_ncs_admin_survey_start_publ.png)
 
-   O status da pesquisa muda para **online**.
+  O status da pesquisa muda para **online**.
 
-   ![](assets/survey_published.png)
+  ![](assets/survey_published.png)
 
 ## Etapa 7 — compartilhamento da pesquisa online {#step-7---sharing-your-online-survey}
 

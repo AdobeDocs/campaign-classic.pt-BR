@@ -3,7 +3,7 @@ product: campaign
 title: Implantação independente
 description: Implantação independente
 feature: Installation, Architecture, Deployment
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
@@ -11,7 +11,7 @@ exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1084'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -69,7 +69,7 @@ Esse tipo de configuração pode ser executado ao gerenciar listas de menos de 1
 * Caixa de entrada de devolução acessível via POP3,
 * Criação de dois aliases DNS:
 
-   * a primeira a ser exposta ao público para rastrear e apontar o computador no seu IP público;
+   * a primeira a ser exposta ao público para rastrear e apontar para o computador no seu IP público;
    * o segundo alias exposto aos usuários internos para acesso ao console e apontando para o mesmo computador.
 
 * Firewall configurado para abrir SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 para Oracle, 5432 para PostgreSQL etc.) portas. Para obter mais informações, consulte [Configuração de rede](../../installation/using/network-configuration.md).

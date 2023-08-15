@@ -3,12 +3,12 @@ product: campaign
 title: Criação do schema de dados para FDA
 description: Saiba como criar o esquema de dados para FDA
 feature: Installation, Instance Settings, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 45%
+ht-degree: 48%
 
 ---
 

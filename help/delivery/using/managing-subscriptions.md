@@ -2,13 +2,13 @@
 product: campaign
 title: Gerenciar subscrições
 description: Gerenciar subscrições
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Subscriptions
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1110'
 ht-degree: 100%
 
 ---
@@ -54,9 +54,9 @@ Para editar um serviço existente, clique em seu respectivo nome. Para criar um 
 
 * Insira o nome do serviço no campo **[!UICONTROL Label]** e selecione o canal de delivery: email, celular, Facebook, Twitter ou aplicativos móveis.
 
-   >[!NOTE]
-   >
-   >As subscrições do Facebook e do Twitter estão detalhadas [nesta seção](../../social/using/about-social-marketing.md). As subscrições de aplicativos móveis são detalhadas em [Sobre o canal de aplicativos móveis](about-mobile-app-channel.md).
+  >[!NOTE]
+  >
+  >As subscrições do Facebook e do Twitter estão detalhadas [nesta seção](../../social/using/about-social-marketing.md). As subscrições de aplicativos móveis são detalhadas em [Sobre o canal de aplicativos móveis](about-mobile-app-channel.md).
 
 * Para um serviço de tipo de email, selecione o **Modo de delivery**. Os modos possíveis são: **[!UICONTROL Newsletter]** ou **[!UICONTROL Viral]**.
 * Você pode enviar **mensagens de confirmação** para uma subscrição ou unsubscription. Para fazer isso, selecione os templates que devem ser usados para criar os deliveries correspondentes a partir dos campos **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]**. Esses templates devem ser configurados com um target mapping do tipo **[!UICONTROL Subscription]** sem um destino definido. Consulte a seção [Sobre canal de email](about-email-channel.md).
@@ -125,22 +125,22 @@ Para registrar recipients para um serviço de informação, você pode:
 
 * Adicionar manualmente o serviço: para fazer isso, a partir da guia **[!UICONTROL Subscriptions]** do perfil, clique em **[!UICONTROL Add]** e selecione o serviço de informação desejado.
 
-   Para obter mais informações, consulte a seção sobre edição de perfil [nesta seção](../../platform/using/editing-a-profile.md).
+  Para obter mais informações, consulte a seção sobre edição de perfil [nesta seção](../../platform/using/editing-a-profile.md).
 
 * Subscrever automaticamente um conjunto de assinantes a este serviço. A lista de recipients pode vir de uma operação de filtragem, grupo, pasta, importação ou seleção direta usando o mouse. Para inscrever esses recipients, selecione os perfis e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions > Subscribe selection to a service...]**, o serviço desejado e inicie a operação.
 * Importar recipients e inscrevê-los automaticamente em um serviço de informação. Para fazer isso, selecione o serviço na última etapa do assistente de importação.
 
-   Para obter mais informações, consulte [esta seção](../../platform/using/executing-import-jobs.md).
+  Para obter mais informações, consulte [esta seção](../../platform/using/executing-import-jobs.md).
 
 * Usar um formulário da Web para que os recipients possam subscrever-se a um serviço.
 
-   Para obter mais informações, consulte [esta seção](../../web/using/about-web-applications.md).
+  Para obter mais informações, consulte [esta seção](../../web/using/about-web-applications.md).
 
 * Criação de um workflow de direcionamento e uso de uma caixa **[!UICONTROL Subscription service]**.
 
-   ![](assets/s_ncs_user_subscribe_from_wf.png)
+  ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-   Os detalhes sobre fluxos de trabalho e como usá-los estão [nesta seção](../../workflow/using/about-workflows.md).
+  Os detalhes sobre fluxos de trabalho e como usá-los estão [nesta seção](../../workflow/using/about-workflows.md).
 
 ### Cancelamento de subscrição de um recipient em relação a um serviço {#unsubscribing-a-recipient-from-a-service}
 

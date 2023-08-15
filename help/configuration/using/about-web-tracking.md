@@ -3,12 +3,12 @@ product: campaign
 title: Sobre o rastreamento Web
 feature: Configuration, Instance Settings
 description: Sobre o rastreamento Web
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: 91c31703-75e6-47a4-a877-35682dd687a9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 

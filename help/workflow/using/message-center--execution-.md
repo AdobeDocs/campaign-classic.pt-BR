@@ -2,11 +2,11 @@
 product: campaign
 title: Centro de Mensagens (Execução)
 description: Centro de Mensagens (Execução)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '236'
 ht-degree: 100%
 
 ---
@@ -20,9 +20,9 @@ Os workflows detalhados abaixo são instalados com o complemento **Centro de Men
 
 Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-![](assets/do-not-localize/v7.jpeg)[ Documentação do Campaign v7](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg)[Documentação do Campaign v7](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html?lang=pt-BR)
+![](assets/do-not-localize/v8.png)[Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html?lang=pt-BR)
 
 <table> 
  <tbody> 

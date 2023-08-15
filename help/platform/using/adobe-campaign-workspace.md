@@ -2,14 +2,14 @@
 product: campaign
 title: Workspace do Adobe Campaign
 description: Saiba como usar e personalizar o workspace do Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '916'
 ht-degree: 100%
 
 ---
@@ -90,11 +90,11 @@ As listas estão disponíveis no link **[!UICONTROL Lists]** na seção à esque
 
 * Quando você clica em um recurso principal ou em um link, a página relevante substitui a página atual. Para voltar à página anterior, clique no botão **[!UICONTROL Back]** na barra de ferramentas. Para retornar à página inicial, clique no botão **[!UICONTROL Home]**.
 
-   ![](assets/d_ncs_user_interface_back_home_buttons.png)
+  ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
 * No caso de um menu ou atalho para uma tela de exibição (como um aplicativo Web, um programa, um delivery ou um relatório), a página correspondente é exibida em outra guia. Isso permite navegar de uma página para outra usando as guias.
 
-   ![](assets/d_ncs_user_interface_tabs.png)
+  ![](assets/d_ncs_user_interface_tabs.png)
 
 ### Criar um elemento {#creating-an-element}
 

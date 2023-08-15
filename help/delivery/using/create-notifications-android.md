@@ -2,12 +2,12 @@
 product: campaign
 title: Criar uma notificação por push para dispositivos Android
 description: Saiba como criar notificações por push para Android
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Push
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
-source-wordcount: '713'
+workflow-type: tm+mt
+source-wordcount: '720'
 ht-degree: 100%
 
 ---
@@ -25,10 +25,10 @@ Comece criando uma nova entrega.
 Com o Firebase Cloud Messaging, você pode escolher entre dois tipos de mensagens:
 
 * **[!UICONTROL Data message]**, manipulada pelo aplicativo do cliente.
-   <br>As mensagens são enviadas diretamente para o aplicativo móvel que gerará e exibirá a notificação do Android para o dispositivo. As mensagens de dados contêm somente as variáveis personalizadas do aplicativo.
+  <br>As mensagens são enviadas diretamente para o aplicativo móvel que gerará e exibirá a notificação do Android para o dispositivo. As mensagens de dados contêm somente as variáveis personalizadas do aplicativo.
 
 * **[!UICONTROL Notification message]**, manipulada automaticamente pelo SDK do FCM.
-   <br> O FCM exibe automaticamente a mensagem nos dispositivos dos usuários em nome do aplicativo do cliente. As mensagens de notificação contêm um conjunto predefinido de parâmetros e opções, mas ainda podem ser personalizadas com variáveis de aplicativo personalizadas.
+  <br> O FCM exibe automaticamente a mensagem nos dispositivos dos usuários em nome do aplicativo do cliente. As mensagens de notificação contêm um conjunto predefinido de parâmetros e opções, mas ainda podem ser personalizadas com variáveis de aplicativo personalizadas.
 
 Para obter mais informações sobre os tipos de mensagens da Firebase Cloud Messaging, consulte a [documentação do FCM](https://firebase.google.com/docs/cloud-messaging/concept-options?hl=pt-br#notifications_and_data_messages).
 

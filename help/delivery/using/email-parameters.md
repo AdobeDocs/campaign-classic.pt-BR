@@ -2,13 +2,13 @@
 product: campaign
 title: Parâmetros de email
 description: Saiba mais sobre as opções e configurações específicas do delivery por email
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
-workflow-type: ht
-source-wordcount: '900'
+workflow-type: tm+mt
+source-wordcount: '912'
 ht-degree: 100%
 
 ---

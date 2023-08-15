@@ -2,7 +2,7 @@
 product: campaign
 title: Adicionar um campo calculado do tipo lista discriminada
 description: Saiba como adicionar um campo calculado do tipo lista discriminada
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: workflow
 content-type: reference
 topic-tags: use-cases
@@ -10,7 +10,7 @@ feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 100%
 
 ---
@@ -23,15 +23,15 @@ Aqui queremos criar uma consulta com um campo calculado do tipo **[!UICONTROL En
 
 * Qual tabela precisa ser selecionada?
 
-   A tabela de recipient (nms:recipient)
+  A tabela de recipient (nms:recipient)
 
 * Campos a serem selecionados na coluna de saída?
 
-   Last name, First name, Gender
+  Last name, First name, Gender
 
 * Critérios que serão usados para filtrar a informação?
 
-   O idioma  do recipient.
+  O idioma  do recipient.
 
 Siga as etapas abaixo:
 

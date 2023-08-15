@@ -2,13 +2,13 @@
 product: campaign
 title: Adicionar campos a um formulário web
 description: Adicionar campos a um formulário web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2380'
 ht-degree: 100%
 
 ---
@@ -72,39 +72,40 @@ Há cinco tipos diferentes de campos de texto que podem ser inseridos em uma pá
 
 * **Text**: permite que o usuário insira um texto em uma linha.
 
-   ![](assets/s_ncs_admin_survey_txt_ex.png)
+  ![](assets/s_ncs_admin_survey_txt_ex.png)
 
 * **Number**: permite que o usuário insira um texto em uma linha. Para obter mais informações, consulte [Adicionar números](#adding-numbers).
 
-   Quando a página é aprovada, o conteúdo é verificado para garantir que o valor inserido seja compatível com o campo. Para obter mais informações, consulte [Definir configurações de controle](form-rendering.md#defining-control-settings).
+  Quando a página é aprovada, o conteúdo é verificado para garantir que o valor inserido seja compatível com o campo. Para obter mais informações, consulte [Definir configurações de controle](form-rendering.md#defining-control-settings).
 
 * **Password**: permite que o usuário insira texto em uma única linha. Durante a inserção de texto, os caracteres são substituídos por pontos:
 
-   ![](assets/s_ncs_admin_survey_passwd_ex.png)
+  ![](assets/s_ncs_admin_survey_passwd_ex.png)
 
-   >[!CAUTION]
-   >
-   >As senhas são armazenadas de forma não criptografada no banco de dados.
+  >[!CAUTION]
+  >
+  >As senhas são armazenadas de forma não criptografada no banco de dados.
 
 * **Multi-line text**: permite que o usuário insira texto em várias linhas.
 
-   ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
+  ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
 
-   >[!CAUTION]
-   >
-   >Campos de texto multilinha são campos específicos que podem conter código de fim de linha. O espaço de armazenamento deve estar associado a um campo mapeado em um elemento XML, não em um atributo XML.
+  >[!CAUTION]
+  >
+  >Campos de texto multilinha são campos específicos que podem conter código de fim de linha. O espaço de armazenamento deve estar associado a um campo mapeado em um elemento XML, não em um atributo XML.
+  >   
 
 * **Enriched multi-line text**: permite que o usuário insira texto com um layout que será armazenado em formato HTML.
 
-   ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
+  ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
 
-   É possível selecionar o tipo de editor oferecido aos usuários. Para fazer isso, use a caixa suspensa do campo **[!UICONTROL HTML editor]** na guia **[!UICONTROL Advanced]**.
+  É possível selecionar o tipo de editor oferecido aos usuários. Para fazer isso, use a caixa suspensa do campo **[!UICONTROL HTML editor]** na guia **[!UICONTROL Advanced]**.
 
-   ![](assets/webapp_enrich_text_type.png)
+  ![](assets/webapp_enrich_text_type.png)
 
-   O número de ícones exibidos varia dependendo do tipo de editor. Para um editor **[!UICONTROL Advanced]**, a renderização será a seguinte:
+  O número de ícones exibidos varia dependendo do tipo de editor. Para um editor **[!UICONTROL Advanced]**, a renderização será a seguinte:
 
-   ![](assets/webapp_enrich_text_max.png)
+  ![](assets/webapp_enrich_text_max.png)
 
 ### Configurar campos de entrada {#configure-input-fields}
 
@@ -378,7 +379,6 @@ Você pode armazenar o link para esses arquivos em uma variável local ou em um 
 >* Se vários servidores estiverem vinculados à instância (&quot;balanceamento de carga&quot;), você precisará verificar se as chamadas para o formulário web chegam no mesmo servidor.
 >* Essas implementações exigem a assistência da equipe de consulta do Adobe Campaign.
 >
-
 
 ## Inserção de uma constante oculta {#inserting-a-hidden-constant}
 

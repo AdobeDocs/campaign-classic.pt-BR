@@ -3,12 +3,12 @@ product: campaign
 title: Personalização e privacidade
 description: Conheça as práticas recomendadas de segurança para privacidade e personalização
 feature: Installation, Privacy, Privacy Tools, URL Personalization
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -58,7 +58,7 @@ Além disso, você pode usar um aprimoramento para desativar URLs gerados em bui
 
 Se estiver executando na build 19.1.4, você poderá enfrentar problemas com deliveries de notificação por push usando links de rastreamento ou deliveries usando tags âncora. Em caso afirmativo, recomendamos que você desative a assinatura do URL.
 
-Cloud Services Como cliente do Campaign hospedado, gerenciado ou híbrido, você deve entrar em contato com [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para desativar a assinatura do URL.
+Cloud Service Como cliente do Campaign hospedado, gerenciado ou híbrido, você deve entrar em contato com [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para desativar a assinatura do URL.
 
 Se você estiver executando o Campaign em uma arquitetura híbrida, antes de habilitar a assinatura do URL, verifique se a instância hospedada do mid-sourcing foi atualizada da seguinte maneira:
 

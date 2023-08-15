@@ -2,12 +2,12 @@
 product: campaign
 title: Criar uma campanha local
 description: Criar uma campanha local
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1571'
 ht-degree: 100%
 
 ---
@@ -60,24 +60,24 @@ Há quatro tipos de interfaces da web disponíveis:
 
 * **[!UICONTROL By brief]** : a entidade local deve fornecer uma descrição onde descreve as configurações da campanha. Uma vez aprovado o pedido, a entidade central configura e executa a campanha como um todo.
 
-   ![](assets/mkt_distr_6.png)
+  ![](assets/mkt_distr_6.png)
 
 * **[!UICONTROL By form]** : a entidade local tem acesso a um formulário web onde, dependendo do template usado, podem editar o conteúdo, o público-alvo e o tamanho máximo, bem como datas de criação e extração usando campos de personalização. A entidade local pode avaliar o público-alvo e pré-visualizar o conteúdo desse formulário web.
 
-   ![](assets/mkt_distr_8.png)
+  ![](assets/mkt_distr_8.png)
 
-   O formulário oferecido é especificado em um aplicativo web que deve ser selecionado em uma lista suspensa no campo **[!UICONTROL web Interface]** no link do template **[!UICONTROL Advanced campaign settings...]**. Consulte [Criar uma campanha local (por formulário)](examples.md#creating-a-local-campaign--by-form-).
+  O formulário oferecido é especificado em um aplicativo web que deve ser selecionado em uma lista suspensa no campo **[!UICONTROL web Interface]** no link do template **[!UICONTROL Advanced campaign settings...]**. Consulte [Criar uma campanha local (por formulário)](examples.md#creating-a-local-campaign--by-form-).
 
-   >[!NOTE]
-   >
-   >A aplicação web utilizada é um exemplo. É necessário criar um aplicativo web específico para poder usar um formulário. Consulte a [API](../../configuration/using/about-web-services.md).
+  >[!NOTE]
+  >
+  >A aplicação web utilizada é um exemplo. É necessário criar um aplicativo web específico para poder usar um formulário. Consulte a [API](../../configuration/using/about-web-services.md).
 
-   ![](assets/mkt_distr_7.png)
+  ![](assets/mkt_distr_7.png)
 
 * **[!UICONTROL By external form]** : a entidade local tem acesso aos parâmetros da campanha em sua extranet (não do Adobe Campaign). Esses parâmetros são idênticos aos de uma **campanha local (por formulário)**.
 * **[!UICONTROL Pre-set]** : entidade local solicita uma campanha usando o formulário padrão, sem localizá-lo.
 
-   ![](assets/mkt_distr_5.png)
+  ![](assets/mkt_distr_5.png)
 
 ### Valores padrão {#default-values}
 

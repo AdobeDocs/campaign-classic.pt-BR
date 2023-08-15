@@ -2,13 +2,13 @@
 product: campaign
 title: Introdução ao canal de aplicativo móvel
 description: Introdução ao canal de aplicativo para dispositivos móveis no Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Push
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '677'
 ht-degree: 100%
 
 ---
@@ -27,11 +27,11 @@ Dois canais de delivery estão disponíveis:
 
 * Um canal iOS que permite enviar notificações para dispositivos móveis Apple.
 
-   ![](assets/nmac_intro_2.png)
+  ![](assets/nmac_intro_2.png)
 
 * Um canal Android que permite enviar mensagens de dados para dispositivos móveis Android.
 
-   ![](assets/nmac_intro_1.png)
+  ![](assets/nmac_intro_1.png)
 
 Correspondendo a esses dois canais, há duas atividades de delivery nos workflows de campanha:
 
@@ -51,7 +51,6 @@ Correspondendo a esses dois canais, há duas atividades de delivery nos workflow
 >
 >* Verifique se as notificações enviadas para um aplicativo para dispositivos móveis estão em conformidade com os pré-requisitos e condições especificados pela Apple (Serviços de Notificação por Push da Apple) e pelo Google (Firebase Cloud Messaging).
 >* Aviso: em alguns países, a lei exige que você informe os usuários sobre os tipos de dados coletados nos aplicativos móveis e a finalidade do seu processamento. Você deve verificar a legislação.
-
 
 O workflow **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) atualiza a notificação de cancelamentos de subscrições em dispositivos móveis. Para obter mais informações sobre esse fluxo de trabalho, consulte a [lista de workflows técnicos](../../workflow/using/about-technical-workflows.md).
 
@@ -92,15 +91,15 @@ Para verificar se funciona corretamente, use os seguintes comandos:
 
 * Para testes:
 
-   ```
-   api.development.push.apple.com:443
-   ```
+  ```
+  api.development.push.apple.com:443
+  ```
 
 * Na produção:
 
-   ```
-   api.push.apple.com:443
-   ```
+  ```
+  api.push.apple.com:443
+  ```
 
 Se um conector HTTP/2 do iOS for usado, o MTA e o servidor da web deverão ser capazes de contatar APNs na porta 443.
 

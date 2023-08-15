@@ -6,8 +6,8 @@ badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Clas
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
-source-wordcount: '2304'
+workflow-type: tm+mt
+source-wordcount: '2300'
 ht-degree: 100%
 
 ---
@@ -102,13 +102,13 @@ Os seguintes indicadores são usados:
 * **[!UICONTROL Unreachable]** : Tipo de erro que ocorre na string de distribuição de mensagens: incidente na retransmissão SMTP, domínio temporariamente inacessível, etc
 * **[!UICONTROL Not connected]** : Tipo de erro para indicar que o celular do recipient está desligado ou sem rede no momento do envio.
 
-   >[!NOTE]
-   >
-   >Esse indicador apenas diz respeito aos canais móveis. Para obter mais informações, consulte [esta seção](../../delivery/using/sms-channel.md).
+  >[!NOTE]
+  >
+  >Esse indicador apenas diz respeito aos canais móveis. Para obter mais informações, consulte [esta seção](../../delivery/using/sms-channel.md).
 
-   Você pode abrir cada linha da tabela de valores clicando no símbolo `[+]`. Para cada tipo de erro, é possível exibir o detalhamento das mensagens de erro por domínio.
+  Você pode abrir cada linha da tabela de valores clicando no símbolo `[+]`. Para cada tipo de erro, é possível exibir o detalhamento das mensagens de erro por domínio.
 
-   ![](assets/s_ncs_user_errors_report_detail.png)
+  ![](assets/s_ncs_user_errors_report_detail.png)
 
 **[!UICONTROL Breakdown of errors per domain]**
 
@@ -292,9 +292,9 @@ Os seguintes indicadores são usados:
 * **[!UICONTROL Hard bounces]**: porcentagem do número de devoluções permanentes em comparação ao número total de mensagens processadas.
 * **[!UICONTROL Soft bounces]**: porcentagem do número de devoluções temporárias em comparação ao número total de mensagens processadas.
 
-   >[!NOTE]
-   >
-   >Para obter mais informações sobre devoluções permanentes e temporárias, consulte [Gestão de quarentena](../../delivery/using/understanding-quarantine-management.md).
+  >[!NOTE]
+  >
+  >Para obter mais informações sobre devoluções permanentes e temporárias, consulte [Gestão de quarentena](../../delivery/using/understanding-quarantine-management.md).
 
 * **[!UICONTROL Opens]**: porcentagem do número de recipients alvos que abriram uma mensagem pelo menos uma vez em comparação ao número de mensagens processadas com êxito.
 * **[!UICONTROL Clicks]**: porcentagem do número de pessoas que clicaram em um delivery pelo menos uma vez em comparação ao número de mensagens processadas com êxito.

@@ -2,12 +2,12 @@
 product: campaign
 title: Filtrar recipients duplicados
 description: Saiba como filtrar recipients duplicados
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 7cbabbae-375f-4336-9afa-6356f37a79d0
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '154'
 ht-degree: 100%
 
 ---

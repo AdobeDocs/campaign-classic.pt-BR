@@ -3,7 +3,7 @@ product: campaign
 title: Migrar para o Adobe Analytics Connector
 description: Campaign - Perguntas frequentes sobre o Analytics Connector
 feature: Technote, Analytics Integration
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt

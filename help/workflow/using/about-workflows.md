@@ -2,12 +2,12 @@
 product: campaign
 title: Sobre workflows
 description: Automatize processos com workflows, gerencie dados e públicos, envie mensagens e muito mais
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '657'
 ht-degree: 100%
 
 ---
@@ -42,29 +42,29 @@ Cada workflow contém:
 
 * **[!UICONTROL Activities]**
 
-   Uma atividade descreve um template de tarefa. As várias atividades disponíveis são representadas no diagrama por ícones. Cada tipo tem propriedades comuns e específicas. Por exemplo, enquanto todas as atividades têm um nome e rótulo, apenas a atividade **[!UICONTROL Approval]** tem uma atribuição.
+  Uma atividade descreve um template de tarefa. As várias atividades disponíveis são representadas no diagrama por ícones. Cada tipo tem propriedades comuns e específicas. Por exemplo, enquanto todas as atividades têm um nome e rótulo, apenas a atividade **[!UICONTROL Approval]** tem uma atribuição.
 
-   Em um diagrama de workflow, uma determinada atividade pode produzir várias tarefas, principalmente quando houver as ações de loop ou recorrentes (periódicas).
+  Em um diagrama de workflow, uma determinada atividade pode produzir várias tarefas, principalmente quando houver as ações de loop ou recorrentes (periódicas).
 
-   Todas as atividades do workflow são listadas [nesta seção](about-activities.md), incluindo casos de uso e exemplos.
+  Todas as atividades do workflow são listadas [nesta seção](about-activities.md), incluindo casos de uso e exemplos.
 
 * **[!UICONTROL Transitions]**
 
-   As transições permitem vincular atividades e definir sua sequência. Uma transição vincula uma atividade de origem a uma atividade de destino. Há vários tipos de transições, que dependem da atividade de origem. Algumas transições têm parâmetros adicionais, como duração, condição ou filtro.
+  As transições permitem vincular atividades e definir sua sequência. Uma transição vincula uma atividade de origem a uma atividade de destino. Há vários tipos de transições, que dependem da atividade de origem. Algumas transições têm parâmetros adicionais, como duração, condição ou filtro.
 
-   Uma transição que não está vinculada a uma atividade de destino fica em laranja e a cabeça da seta é exibida como um diamante.
+  Uma transição que não está vinculada a uma atividade de destino fica em laranja e a cabeça da seta é exibida como um diamante.
 
-   >[!NOTE]
-   >
-   >Um workflow que contém transições não finalizadas ainda pode ser executado: uma mensagem de aviso será gerada e o workflow será pausado quando atingir a transição, mas não gerará um erro. Dessa forma, é possível iniciar um workflow sem que ele seja concluído e adicioná-lo durante o processo.
+  >[!NOTE]
+  >
+  >Um workflow que contém transições não finalizadas ainda pode ser executado: uma mensagem de aviso será gerada e o workflow será pausado quando atingir a transição, mas não gerará um erro. Dessa forma, é possível iniciar um workflow sem que ele seja concluído e adicioná-lo durante o processo.
 
-   Para obter mais informações sobre como criar um workflow, consulte [esta seção](building-a-workflow.md).
+  Para obter mais informações sobre como criar um workflow, consulte [esta seção](building-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
-   O worktable contém todas as informações transportadas pela transição. Cada workflow usa várias tabelas de trabalho. Os dados transmitidos nessas tabelas podem ser acelerados e usados no ciclo de vida do workflow, desde que não sejam apagados. De fato, tabelas desnecessárias são removidas toda vez que o workflow se torna passivo e possivelmente durante a execução dos maiores workflows para evitar sobrecarga no servidor.
+  O worktable contém todas as informações transportadas pela transição. Cada workflow usa várias tabelas de trabalho. Os dados transmitidos nessas tabelas podem ser acelerados e usados no ciclo de vida do workflow, desde que não sejam apagados. De fato, tabelas desnecessárias são removidas toda vez que o workflow se torna passivo e possivelmente durante a execução dos maiores workflows para evitar sobrecarga no servidor.
 
-   Saiba mais sobre dados e tabelas de workflows [nesta seção](how-to-use-workflow-data.md).
+  Saiba mais sobre dados e tabelas de workflows [nesta seção](how-to-use-workflow-data.md).
 
 ## Princípios fundamentais e práticas recomendadas{#principles-workflows}
 

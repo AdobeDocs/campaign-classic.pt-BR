@@ -2,12 +2,12 @@
 product: campaign
 title: Aguardar
 description: Saiba mais sobre a atividade de workflow Aguardar
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '199'
 ht-degree: 100%
 
 ---
@@ -26,8 +26,8 @@ No campo **[!UICONTROL Duration]**, o valor pode ser expresso na unidade de sua 
 
 * Se as configurações regionais não forem especificadas: **s** para segundos, **m** para minutos, **h** para horas, **d** para dias e **y** para anos. No momento da aprovação, o valor é convertido automaticamente para a unidade mais legível.
 
-   A unidade padrão é dia (**d**).
+  A unidade padrão é dia (**d**).
 
 * Enquanto que, por exemplo, se as configurações regionais forem definidas como &quot;Français&quot;: **s** para segundos, **mn** para minutos, **h** para horas, **j** para dias, **m** para meses e **a** para anos. No momento da aprovação, o valor é convertido automaticamente na unidade mais legível, como no exemplo acima, **90s** foi convertido para **1mn 30s**.
 
-   A unidade padrão é dia (**d**).
+  A unidade padrão é dia (**d**).

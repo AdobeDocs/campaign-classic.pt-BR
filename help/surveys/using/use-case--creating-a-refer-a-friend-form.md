@@ -2,13 +2,13 @@
 product: campaign
 title: Criar uma pesquisa Indique um Amigo
 description: Saiba mais sobre como criar um formulário Indique um Amigo
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '630'
 ht-degree: 100%
 
 ---
@@ -75,17 +75,18 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
    * Selecione a tabela do visitante como target mapping.
 
-      ![](assets/s_ncs_admin_survey_viral_sample_7b.png)
+     ![](assets/s_ncs_admin_survey_viral_sample_7b.png)
 
    * As informações de contato do indicado e as informações de quem indicou são obtidas na tabela do visitante. Elas são inseridas usando o botão de personalização.
 
-      ![](assets/s_ncs_admin_survey_viral_sample_7a.png)
+     ![](assets/s_ncs_admin_survey_viral_sample_7a.png)
 
    * Esse template contém um link para o formulário da competição e o link de subscrição para o indicado se subscrever no boletim informativo.
 
-      O link de subscrição é inserido por um bloco de personalização. Por padrão, ele permite subscrever perfis no serviço de **boletim informativo.** Esse bloco de personalização pode ser alterado para atender a sua necessidade, por exemplo, para subscrever o recipient a um serviço diferente.
+     O link de subscrição é inserido por um bloco de personalização. Por padrão, ele permite subscrever perfis no serviço de **boletim informativo.** Esse bloco de personalização pode ser alterado para atender a sua necessidade, por exemplo, para subscrever o recipient a um serviço diferente.
 
    * O nome interno (&quot;quem indicou&quot; aqui) será usado no script de delivery da mensagem conforme mostrado abaixo.
+
    >[!NOTE]
    >
    >Consulte [esta página](../../delivery/using/about-templates.md) para obter mais informações sobre templates do delivery.

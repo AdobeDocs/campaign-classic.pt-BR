@@ -2,12 +2,12 @@
 product: campaign
 title: Consulta
 description: Saiba mais sobre a atividade do workflow de query
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1636'
 ht-degree: 100%
 
 ---
@@ -94,7 +94,7 @@ Para adicionar dados do banco de dados do Adobe Campaign:
    * Um campo calculado com base nos dados obtidos do público alvo ou em um agregado (número de compras pendentes no último mês, quantidade média de um recibo, etc.). Para obter um exemplo, acesse [Selecionar dados](targeting-data.md#selecting-data).
    * Um novo campo, criado por meio do botão **[!UICONTROL Add]** à direita da lista de colunas de output.
 
-      Também é possível adicionar uma coleção de informações, por exemplo, uma lista de contratos, os últimos 5 deliveries etc. As coleções coincidem com os campos que podem ter múltiplos valores para o mesmo perfil (relação 1-N). Para obter mais informações, consulte [Editar dados adicionais](targeting-data.md#editing-additional-data).
+     Também é possível adicionar uma coleção de informações, por exemplo, uma lista de contratos, os últimos 5 deliveries etc. As coleções coincidem com os campos que podem ter múltiplos valores para o mesmo perfil (relação 1-N). Para obter mais informações, consulte [Editar dados adicionais](targeting-data.md#editing-additional-data).
 
 Para adicionar uma coleção de informações vinculadas a uma população direcionada:
 
@@ -107,11 +107,11 @@ Para adicionar uma coleção de informações vinculadas a uma população direc
 
    * Se um único elemento da coleção coincide com as condições de filtragem desta coleção, selecione **[!UICONTROL Single row]** no campo **[!UICONTROL Data collected]**.
 
-      >[!IMPORTANT]
-      >
-      >Esse modo otimiza o query SQL gerada graças a uma junção direta dos elementos de coleção.
-      >
-      >Se a condição inicial não for respeitada, o resultado pode ser falho (linhas ausentes ou sobrepostas).
+     >[!IMPORTANT]
+     >
+     >Esse modo otimiza o query SQL gerada graças a uma junção direta dos elementos de coleção.
+     >
+     >Se a condição inicial não for respeitada, o resultado pode ser falho (linhas ausentes ou sobrepostas).
 
    * Se você optar por recuperar várias linhas (**[!UICONTROL Limit the line count]**), será possível especificar o número de linhas a serem coletadas.
    * Se as colunas coletadas contiverem agregados, por exemplo, o número de falhas declaradas, a despesa média em um site, etc. você poderá usar o valor **[!UICONTROL Aggregates]**.
@@ -175,28 +175,28 @@ A seção abaixo fornece as práticas recomendadas para otimizar as queries exec
 * Consultas eficientes dependem de índices.
 * Use um índice para todas as associações.
 * A definição de links no esquema determinará as condições da associação. A tabela vinculada deve ter um índice exclusivo na chave primária e a associação deve estar nesse campo.
-* Realize associações definindo chaves em campos numéricos em vez de campos de sequência.
+* Realize associações definindo chaves em campos numéricos em vez de campos de string.
 * Evite realizar associações externas. Sempre que possível, use o registro Zero ID para obter a funcionalidade de associação externa.
 * Use o tipo de dados correto para associações.
 
-   Certifique-se de que a `where` cláusula tenha o mesmo tipo do campo.
+  Certifique-se de que a `where` cláusula tenha o mesmo tipo do campo.
 
-   Um erro comum é: `iBlacklist='3'` where `iBlacklist` é um campo numérico e `3` significa um valor de texto.
+  Um erro comum é: `iBlacklist='3'` where `iBlacklist` é um campo numérico e `3` significa um valor de texto.
 
-   Verifique se você sabe qual será o plano de execução da consulta. Evite varreduras completas de tabelas, especialmente para consultas em tempo real ou consultas quase em tempo real em execução a cada minuto.
+  Verifique se você sabe qual será o plano de execução da consulta. Evite varreduras completas de tabelas, especialmente para consultas em tempo real ou consultas quase em tempo real em execução a cada minuto.
 
-   Para mais informações, dependendo da versão do Campaign, consulte estas seções:
+  Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-   ![](assets/do-not-localize/v7.jpeg)[ Documentação do Campaign v7](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Documentação do Campaign v7](../../configuration/using/database-mapping.md)
 
-   ![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
+  ![](assets/do-not-localize/v8.png)[Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
 
 ### Funções {#functions}
 
 * Cuidado com funções como `Lower(...)`. Quando a função Lower é usada, o Index não é usado.
 * Verifique cuidadosamente as consultas usando a instrução &quot;like&quot; ou as instruções &quot;upper&quot; ou &quot;lower&quot;. Aplique &quot;Upper&quot; na entrada do usuário, não no campo do banco de dados.
 
-   Para saber mais sobre as funções, consulte [esta seção](../../platform/using/defining-filter-conditions.md#list-of-functions).
+  Para saber mais sobre as funções, consulte [esta seção](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
 ### Dimensões de filtro {#filtering-dimensions}
 
@@ -229,10 +229,10 @@ Para saber mais sobre as dimensões do filtro, consulte [esta seção](building-
    * aplicação,
    * volumes.
 
-   >[!NOTE]
-   >
-   >Um recurso que funciona em um ambiente de desenvolvimento pode não funcionar em um ambiente de produção onde os dados podem ser diferentes. Tente identificar as principais diferenças para antecipar os riscos e preparar soluções.
+  >[!NOTE]
+  >
+  >Um recurso que funciona em um ambiente de desenvolvimento pode não funcionar em um ambiente de produção onde os dados podem ser diferentes. Tente identificar as principais diferenças para antecipar os riscos e preparar soluções.
 
 * Faça configurações que correspondam aos volumes de target. Grandes volumes exigem configurações específicas. Uma configuração que funcionou para 100.000 recipients pode não funcionar para 10.000.000 recipients.
 
-   Considere como o sistema será dimensionado quando ele for acionado. Só porque algo funciona em pequena escala não significa que seja adequado com volumes maiores. Os testes devem ser feitos com volumes semelhantes aos da produção. Você também deve avaliar o efeito das alterações nos volumes (número de chamadas, tamanho do banco de dados) nas horas de pico, dias de pico e ao longo da vida útil do projeto.
+  Considere como o sistema será dimensionado quando ele for acionado. Só porque algo funciona em pequena escala não significa que seja adequado com volumes maiores. Os testes devem ser feitos com volumes semelhantes aos da produção. Você também deve avaliar o efeito das alterações nos volumes (número de chamadas, tamanho do banco de dados) nas horas de pico, dias de pico e ao longo da vida útil do projeto.

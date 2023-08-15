@@ -2,12 +2,12 @@
 product: campaign
 title: Gestão de dados SQL
 description: Saiba mais sobre a atividade do workflow de Gestão de dados SQL
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '425'
 ht-degree: 100%
 
 ---
@@ -24,11 +24,11 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
 
 * A atividade está disponível somente para fontes de dados remotas. O pacote **[!UICONTROL FDA]** (Federated Data Access) deve, portanto, ser instalado em sua instância. [Saiba mais](../../installation/using/about-fda.md).
 
-   Para mais informações, dependendo da versão do Campaign, consulte estas seções:
+  Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-   ![](assets/do-not-localize/v7.jpeg)[ Documentação do Campaign v7](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg)[Documentação do Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[  Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=pt-BR)
+  ![](assets/do-not-localize/v8.png)[Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=pt-BR)
 
 * O esquema de saída deve existir no banco de dados e estar vinculado a um banco de dados do FDA.
 * O operador que executa o fluxo de trabalho deve ter o item **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** nomeado corretamente. [Saiba mais](../../platform/using/access-management-named-rights.md).
@@ -59,9 +59,9 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
    * **activity.tableName**: nome SQL da tabela de trabalho de saída
    * **task.incomingTransitionByName(&#39;name&#39;).tableName**: nome SQL da tabela de trabalho transmitida pela transição recebida a ser utilizada (a transição é identificada pelo próprio nome).
 
-      >[!NOTE]
-      >
-      >O valor (&#39;name&#39;) corresponde ao **[!UICONTROL Name]** campo das propriedades de transição.
+     >[!NOTE]
+     >
+     >O valor (&#39;name&#39;) corresponde ao **[!UICONTROL Name]** campo das propriedades de transição.
 
 1. Se o script SQL já tiver comandos para criar uma tabela de trabalho de saída, desmarque a opção **[!UICONTROL Automatically create work table]**. Caso contrário, uma tabela de trabalho será criada automaticamente quando o workflow for executado.
 1. Clique em **[!UICONTROL Ok]** para confirmar a configuração da atividade.

@@ -2,12 +2,12 @@
 product: campaign
 title: Descrição do modelo de dados do Adobe Campaign Classic
 description: Este documento descreve o modelo de dados do Adobe Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Data Model
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2381'
 ht-degree: 2%
 
 ---
@@ -176,7 +176,7 @@ Os seguintes indicadores são atualizados automaticamente durante a execução d
 * Número de reações: **iTransaction**. Número de linhas na tabela de logs de reação.
 * Número de contatos: **iContactReacted**. Número distinto de contatos direcionados na hipótese.
 * Contagem de grupos de controle: **iProofReacted**. Número distinto de contatos de grupos de controle direcionados na hipótese.
-* Taxa de resposta de contatados: **dContactReactedRate**. Taxa de resposta dos contatos direcionados na hipótese.
+* Taxa de resposta de contatos: **dContactReactedRate**. Taxa de resposta dos contatos direcionados na hipótese.
 * Taxa de resposta do grupo de controle: **dProofReactedRate**. Taxa de resposta do grupo de controle de hipóteses.
 * Receita total da população contatada: **dContactReactedTotalAmount**. Receita total dos contatos direcionados na hipótese.
 * Receita média do grupo de controle: **dContactReactedAvgAmount**. Receita média dos contatos do grupo de controle direcionado na hipótese.

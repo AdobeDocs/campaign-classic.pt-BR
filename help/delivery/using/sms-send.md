@@ -2,13 +2,13 @@
 product: campaign
 title: Enviar, monitorar e rastrear SMS
 description: Saiba como enviar, monitorar e rastrear SMS no Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: SMS
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '970'
 ht-degree: 100%
 
 ---
@@ -34,13 +34,13 @@ As seguintes opções estão disponíveis:
 
 * **Endereço do remetente**: permite personalizar o nome do remetente do delivery usando uma string de caracteres alfanuméricos limitada a onze caracteres. O campo não deve ser criado exclusivamente com figuras. Você pode definir uma condição para exibir, por exemplo, nomes diferentes de acordo com o código de área do recipient:
 
-   ```
-   <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
-   ```
+  ```
+  <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
+  ```
 
-   >[!IMPORTANT]
-   >
-   >Verifique a lei em seu país em relação à edição dos nomes dos remetentes. Você também deve verificar se sua operadora oferece essa funcionalidade.
+  >[!IMPORTANT]
+  >
+  >Verifique a lei em seu país em relação à edição dos nomes dos remetentes. Você também deve verificar se sua operadora oferece essa funcionalidade.
 
 * **Modo de transmissão**: transmissão de mensagem por SMS.
 * **Prioridade**: nível de importância atribuída a uma mensagem. A prioridade **[!UICONTROL Normal]** é selecionada por padrão. Pergunte ao seu provedor de serviços sobre o custo do SMS enviado com prioridade **[!UICONTROL High]**.
@@ -72,17 +72,16 @@ O módulo de **sms nlserver** consulta o roteador SMS em intervalos regulares. I
 
 * **Relatórios de status**: exibe logs do delivery para verificar o status das mensagens.
 
-   >[!NOTE]
-   >
-   >Cada SMS enviado é vinculado a uma conta externa em sua chave primária. Deste modo:
-   >
-   > * Os relatórios de status de uma conta externa de SMS excluída não são processados corretamente.
-   > * Uma conta SMS só pode ser vinculada a uma única conta externa para garantir que os relatórios de status sejam atribuídos à conta correta
-
+  >[!NOTE]
+  >
+  >Cada SMS enviado é vinculado a uma conta externa em sua chave primária. Deste modo:
+  >
+  > * Os relatórios de status de uma conta externa de SMS excluída não são processados corretamente.
+  > * Uma conta SMS só pode ser vinculada a uma única conta externa para garantir que os relatórios de status sejam atribuídos à conta correta
 
 * **Unsubscription**: recipients que desejam parar de receber deliveries de SMS podem retornar uma mensagem contendo a palavra PARAR. Se o seu provedor permitir sob os termos do contrato, você poderá recuperar mensagens por meio da atividade de workflow de **SMS de entrada** e criar um query para habilitar a opção **Não entrar em contato com este recipient** para os recipients relacionados.
 
-   Consulte a guia [Workflows](../../workflow/using/architecture.md) .
+  Consulte a guia [Workflows](../../workflow/using/architecture.md) .
 
 ## Esquema InSMS {#insms-schema}
 
@@ -94,11 +93,11 @@ O schema InSMS contém informações relevantes para o SMS de entrada. Uma descr
 * **criada**: a data da mensagem de entrada foi inserida no Adobe Campaign.
 * **extAccount**: conta externa do Adobe Campaign.
 
-   >[!IMPORTANT]
-   >
-   >Os campos a seguir são específicos para NetSize.
-   >
-   >Se o operador em uso não for NetSize, esses campos serão considerados vazios.
+  >[!IMPORTANT]
+  >
+  >Os campos a seguir são específicos para NetSize.
+  >
+  >Se o operador em uso não for NetSize, esses campos serão considerados vazios.
 
 * **alias**: alias da mensagem de entrada.
 * **separator**: separador entre o alias e o corpo da mensagem.

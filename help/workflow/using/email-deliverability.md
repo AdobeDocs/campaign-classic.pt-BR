@@ -2,11 +2,11 @@
 product: campaign
 title: Entregabilidade por email
 description: Saiba mais sobre o pacote Entregabilidade por email
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Deliverability
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '108'
 ht-degree: 100%
 
 ---

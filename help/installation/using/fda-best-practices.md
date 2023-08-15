@@ -3,7 +3,7 @@ product: campaign
 title: Práticas recomendadas e limitações do FDA do Campaign
 description: Saiba mais sobre as práticas recomendadas e limitações ao trabalhar com um banco de dados externo (FDA)
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -11,7 +11,7 @@ exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
 

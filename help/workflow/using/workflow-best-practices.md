@@ -2,12 +2,12 @@
 product: campaign
 title: Práticas recomendadas do fluxo de trabalho
 description: Conheça as práticas recomendadas do workflow do Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1694'
 ht-degree: 100%
 
 ---
@@ -30,19 +30,19 @@ Duas soluções adicionais estão disponíveis para ajudar:
 
 * **Manter o resultado de públicos provisórios entre duas execuções**
 
-   Essa opção mantém tabelas temporárias entre duas execuções de um workflow. Está disponível na guia **[!UICONTROL General]** das propriedades do fluxo de trabalho e pode ser usado para desenvolvimento e testes para monitorar dados e verificar resultados. Você pode usar essa opção em ambientes de desenvolvimento, mas nunca usá-la em ambientes de produção. Manter tabelas temporárias pode resultar no aumento significativo do tamanho de banco de dados e, por fim, atingir o limite de tamanho. Além disso, o backup ficará lento.
+  Essa opção mantém tabelas temporárias entre duas execuções de um workflow. Está disponível na guia **[!UICONTROL General]** das propriedades do fluxo de trabalho e pode ser usado para desenvolvimento e testes para monitorar dados e verificar resultados. Você pode usar essa opção em ambientes de desenvolvimento, mas nunca usá-la em ambientes de produção. Manter tabelas temporárias pode resultar no aumento significativo do tamanho de banco de dados e, por fim, atingir o limite de tamanho. Além disso, o backup ficará lento.
 
-   Somente as tabelas de trabalho da última execução do workflow são mantidas. As tabelas de trabalho das execuções anteriores são removidas pelo fluxo de trabalho **[!UICONTROL cleanup]**, executado diariamente.
+  Somente as tabelas de trabalho da última execução do workflow são mantidas. As tabelas de trabalho das execuções anteriores são removidas pelo fluxo de trabalho **[!UICONTROL cleanup]**, executado diariamente.
 
-   >[!CAUTION]
-   >
-   >Essa opção nunca deve ser verificada em um workflow de produção. Essa opção é usada para analisar os resultados e é projetada apenas para fins de teste e, portanto, deve ser usada apenas em ambientes de desenvolvimento ou de preparo.
+  >[!CAUTION]
+  >
+  >Essa opção nunca deve ser verificada em um workflow de produção. Essa opção é usada para analisar os resultados e é projetada apenas para fins de teste e, portanto, deve ser usada apenas em ambientes de desenvolvimento ou de preparo.
 
 * **Logs de queries SQL no journal**
 
-   Disponível na guia **[!UICONTROL Execution]** das propriedades do fluxo de trabalho, essa opção registrará todos as consultas SQL geradas pela ferramenta a partir das diferentes atividades. É uma boa forma de ver o que está realmente sendo executado pela plataforma. No entanto, essa opção só deve ser usada temporariamente durante o desenvolvimento e não ativada durante a produção.
+  Disponível na guia **[!UICONTROL Execution]** das propriedades do fluxo de trabalho, essa opção registrará todos as consultas SQL geradas pela ferramenta a partir das diferentes atividades. É uma boa forma de ver o que está realmente sendo executado pela plataforma. No entanto, essa opção só deve ser usada temporariamente durante o desenvolvimento e não ativada durante a produção.
 
-Limpe os registros quando não forem mais necessários. O histórico do workflow não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão Actions localizado na barra de ferramentas acima da lista. Selecione Purge history.
+Limpe os registros quando não forem mais necessários. O histórico do workflow não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão Ações localizado na barra de ferramentas acima da lista. Selecione Purge history.
 Para saber como limpar seus registros, consulte esta [documentação](starting-a-workflow.md).
 
 ### Planejamento de workflow {#workflow-planning}
@@ -142,7 +142,7 @@ O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não 
 * Sempre inicie o fluxo de trabalho com uma atividade **[!UICONTROL Start]** ou atividade **[!UICONTROL Scheduler]** . Quando pertinente, também é possível usar uma atividade **[!UICONTROL External signal]**.
 * Ao criar o fluxo de trabalho, use apenas uma atividade **[!UICONTROL Scheduler]** por ramificação. Se a mesma ramificação de um fluxo de trabalho tiver vários schedulers (vinculados uns aos outros), o número de tarefas a serem executadas será multiplicado exponencialmente, o que irá sobrecarregar consideravelmente o banco de dados. Essa regra também se aplica a todas as atividades com uma guia **[!UICONTROL Scheduling & History]**. Saiba mais em [Agendamento](scheduler.md).
 
-   ![](assets/wf-scheduler.png)
+  ![](assets/wf-scheduler.png)
 
 * Use atividades **[!UICONTROL End]** para cada fluxo de trabalho. Isso permite que o Adobe Campaign libere espaço temporário usado para cálculos dentro de workflows. Para obter mais informações, consulte [início e fim](start-and-end.md).
 

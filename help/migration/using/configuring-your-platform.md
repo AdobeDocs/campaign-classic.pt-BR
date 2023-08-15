@@ -3,7 +3,7 @@ product: campaign
 title: Adaptar sua configuração
 description: Saiba como adaptar sua configuração antes e depois de uma migração para o Campaign v7
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
@@ -13,7 +13,7 @@ exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 

@@ -3,7 +3,7 @@ product: campaign
 title: O arquivo de configuração do servidor
 description: O arquivo de configuração do servidor
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
@@ -1720,9 +1720,9 @@ Para obter informações adicionais, consulte [Retransmissão SMTP](../../instal
  </tbody> 
 </table>
 
-### principal {#master}
+### master {#master}
 
-No **mta > principal** configure os seguintes parâmetros. Esta é a configuração do servidor principal.
+No **mta > mestre** configure os seguintes parâmetros. Esta é a configuração do servidor principal.
 
 Para obter informações adicionais, consulte esta página [seção](../../installation/using/configuring-campaign-server.md#mta-child-processes).
 

@@ -2,12 +2,12 @@
 product: campaign
 title: Carregamento de dados (arquivo)
 description: Saiba mais sobre a atividade de workflow de carregamento de dados (arquivo)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1059'
 ht-degree: 100%
 
 ---

@@ -2,12 +2,12 @@
 product: campaign
 title: Alterar imagens de atividade
 description: Saiba como alterar a imagem da atividade
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '163'
 ht-degree: 100%
 
 ---
@@ -20,27 +20,27 @@ As imagens usadas nos diagramas dos vários workflows podem ser alteradas. No en
 
 * Para alterar a imagem de fundo, selecione o workflow de direcionamento desejado e clique na guia **[!UICONTROL Properties]**.
 
-   ![](assets/s_user_segmentation_properties_tab.png)
+  ![](assets/s_user_segmentation_properties_tab.png)
 
-   Para selecionar a imagem a ser usada, clique no ícone **[!UICONTROL Select link]** à direita do campo **[!UICONTROL Background image]**.
+  Para selecionar a imagem a ser usada, clique no ícone **[!UICONTROL Select link]** à direita do campo **[!UICONTROL Background image]**.
 
-   >[!NOTE]
-   >
-   >A largura em pixels da imagem do plano de fundo deve ser em múltiplo de 4.
+  >[!NOTE]
+  >
+  >A largura em pixels da imagem do plano de fundo deve ser em múltiplo de 4.
 
-   ![](assets/s_user_segmentation_background_select.png)
+  ![](assets/s_user_segmentation_background_select.png)
 
-   O ícone **[!UICONTROL Edit link]** permite visualizar a imagem selecionada.
+  O ícone **[!UICONTROL Edit link]** permite visualizar a imagem selecionada.
 
 * Para alterar a imagem associada a uma atividade, clique duas vezes no objeto e, em seguida, clique na guia **[!UICONTROL Advanced]**.
 
-   Para selecionar a imagem a ser usada, clique no ícone **[!UICONTROL Select link]** à direita do campo **[!UICONTROL Image]**.
+  Para selecionar a imagem a ser usada, clique no ícone **[!UICONTROL Select link]** à direita do campo **[!UICONTROL Image]**.
 
-   ![](assets/s_user_segmentation_activity_image.png)
+  ![](assets/s_user_segmentation_activity_image.png)
 
-   O ícone **[!UICONTROL Edit link]** permite visualizar a imagem selecionada.
+  O ícone **[!UICONTROL Edit link]** permite visualizar a imagem selecionada.
 
-   ![](assets/s_user_segmentation_activity_image_select.png)
+  ![](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >

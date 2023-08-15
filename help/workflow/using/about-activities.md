@@ -2,12 +2,12 @@
 product: campaign
 title: Sobre atividades de fluxo de trabalho
 description: Sobre atividades
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '102'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Esta seção descreve todas as atividades disponíveis. De acordo com o nó ou o
 
 As atividades do workflow são agrupadas por categoria. Há quatro guias disponíveis ao mesmo tempo.
 
-Nos workflows da campanha, a guia **[!UICONTROL Events]** é substituída pela guia **[!UICONTROL Deliveries]**. As atividades nesta guia estão detalhadas na seção [Action activities](about-action-activities.md).
+Nos workflows da campanha, a guia **[!UICONTROL Events]** é substituída pela guia **[!UICONTROL Deliveries]**. As atividades nesta guia estão detalhadas na seção [das atividades de Ação](about-action-activities.md).
 
 ![](assets/wf-activity-tabs.png)
 

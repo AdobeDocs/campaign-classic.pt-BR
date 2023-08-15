@@ -2,12 +2,12 @@
 product: campaign
 title: Como usar os dados de workflow
 description: Saiba como usar os dados de workflow
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '415'
 ht-degree: 100%
 
 ---
@@ -26,15 +26,15 @@ Os dados do banco de dados do Adobe Campaign e as listas existentes podem ser at
 
 * A atividade de **[!UICONTROL List update]** permite armazenar worktables em um DataList.
 
-   Você pode selecionar uma lista existente ou criar uma. Nesse caso, o nome e possivelmente a pasta de registro são calculados.
+  Você pode selecionar uma lista existente ou criar uma. Nesse caso, o nome e possivelmente a pasta de registro são calculados.
 
-   ![](assets/s_user_create_list.png)
+  ![](assets/s_user_create_list.png)
 
-   Consulte [Atualização da lista](list-update.md).
+  Consulte [Atualização da lista](list-update.md).
 
 * A atividade **[!UICONTROL Update data]** realiza uma atualização em massa dos campos no banco de dados.
 
-   Para mais informações, consulte [Atualização de dados](update-data.md).
+  Para mais informações, consulte [Atualização de dados](update-data.md).
 
 ### Gestão de assinatura/cancelamento de assinatura {#subscription-unsubscription-management}
 

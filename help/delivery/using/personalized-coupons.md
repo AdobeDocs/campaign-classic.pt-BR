@@ -2,13 +2,13 @@
 product: campaign
 title: Cupons personalizados
 description: Saiba como criar e inserir cupons personalizados
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '897'
 ht-degree: 100%
 
 ---
@@ -109,13 +109,14 @@ No exemplo abaixo, o delivery é criado a partir da Home page. Para obter instru
 
    * Cupom anônimo: **[!UICONTROL Coupon > Coupon code]**
 
-      ![](assets/deliv_coup_10.png)
+     ![](assets/deliv_coup_10.png)
 
    * Cupom individual: **[!UICONTROL Coupon value > Coupon code]**
 
-      ![](assets/deliv_coup_11.png)
+     ![](assets/deliv_coup_11.png)
 
-      O cupom é inserido na mensagem como código em vez do nome que você atribuiu. O código é usado no modelo padrão de dados do Campaign.
+     O cupom é inserido na mensagem como código em vez do nome que você atribuiu. O código é usado no modelo padrão de dados do Campaign.
+
    ![](assets/deliv_coup_12.png)
 
 1. Execute um teste para confirmar o nome atribuído ao cupom. Acesse a guia **[!UICONTROL Preview]** e clique em **[!UICONTROL Test personalization]**. Escolha um recipient para o teste.

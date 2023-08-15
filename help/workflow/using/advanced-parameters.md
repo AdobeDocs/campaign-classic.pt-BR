@@ -2,12 +2,12 @@
 product: campaign
 title: Parâmetros avançados
 description: Parâmetros avançados
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '508'
 ht-degree: 100%
 
 ---
@@ -20,11 +20,11 @@ A janela das propriedades de uma atividade tem uma guia **[!UICONTROL Advanced]*
 
 * uma versão simplificada (para atividades de **[!UICONTROL Start]** e **[!UICONTROL End]**, por exemplo)
 
-   ![](assets/wf-advanced-basic.png)
+  ![](assets/wf-advanced-basic.png)
 
 * uma versão mais detalhada (para a atividade de **[!UICONTROL Query]**, por exemplo)
 
-   ![](assets/wf-advanced-full.png)
+  ![](assets/wf-advanced-full.png)
 
 Os campos a serem inseridos na guia **[!UICONTROL Advanced]** estão detalhados nas seções a seguir.
 

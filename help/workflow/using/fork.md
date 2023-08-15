@@ -2,12 +2,12 @@
 product: campaign
 title: Bifurcação
 description: Saiba mais sobre a atividade de workflow de bifurcação
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '420'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Neste exemplo, diferentes emails são enviados para diferentes grupos de popula�
 * Salve o resultado da query
 * Segmente o resultado para enviar vários deliveries
 
-   ![A atividade Fork segue a interseção de dois queries e precede uma atividade de atualização de lista e uma atividade de Split.](assets/wkf_fork_example.png)
+  ![A atividade Fork segue a interseção de dois queries e precede uma atividade de atualização de lista e uma atividade de Split.](assets/wkf_fork_example.png)
 
 O fluxo de trabalho inclui estas atividades:
 

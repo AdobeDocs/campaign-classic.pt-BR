@@ -2,13 +2,13 @@
 product: campaign
 title: Introdução ao rastreamento
 description: Saiba mais sobre as diretrizes gerais para rastreamento no Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring, Email
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '695'
 ht-degree: 100%
 
 ---
@@ -111,12 +111,12 @@ As seguintes dicas de solução de problemas ajudarão você a resolver os probl
 
 * Verifique se o processo trackinglogd está em execução
 
-   Esse processo lê a memória compartilhada do IIS/Servidor Web e grava os logs de redirecionamento.
+  Esse processo lê a memória compartilhada do IIS/Servidor Web e grava os logs de redirecionamento.
 
-   Você pode acessá-la na Página inicial selecionando a guia Monitoramento na sua instância. Você também pode executar o seguinte comando na instância: `<user>@<instance>:~$ nlserver pdump`
+  Você pode acessá-la na Página inicial selecionando a guia Monitoramento na sua instância. Você também pode executar o seguinte comando na instância: `<user>@<instance>:~$ nlserver pdump`
 
-   Se o processo trackinglogd não for exibido na lista, inicie-o com o seguinte comando na instância: `<user>@<instance>:~$ nlserver start trackinglogd`
+  Se o processo trackinglogd não for exibido na lista, inicie-o com o seguinte comando na instância: `<user>@<instance>:~$ nlserver start trackinglogd`
 
 * Verifique se o fluxo de trabalho técnico de Rastreamento foi executado recentemente.
 
-   Você pode localizar o fluxo de trabalho técnico de Rastreamento nas pastas de workflows técnicos da > Produção > de Administração.
+  Você pode localizar o fluxo de trabalho técnico de Rastreamento nas pastas de workflows técnicos da > Produção > de Administração.

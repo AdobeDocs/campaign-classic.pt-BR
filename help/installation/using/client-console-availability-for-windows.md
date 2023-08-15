@@ -3,7 +3,7 @@ product: campaign
 title: Disponibilidade do console do cliente para Windows
 description: Disponibilidade do console do cliente para Windows
 feature: Installation, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
@@ -12,7 +12,7 @@ exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '353'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 

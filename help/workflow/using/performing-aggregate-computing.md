@@ -2,12 +2,12 @@
 product: campaign
 title: Execução de computação agregada
 description: Saiba como executar a computação agregada em consultas
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '232'
 ht-degree: 100%
 
 ---
@@ -20,15 +20,15 @@ Neste exemplo, devemos contar o número de recipients que vivem em Londres, de a
 
 * Qual tabela precisa ser selecionada?
 
-   A tabela de recipient (**nms:recipient**)
+  A tabela de recipient (**nms:recipient**)
 
 * Quais campos devem ser selecionados na coluna de saída?
 
-   Primary key (with count) e Gender
+  Primary key (with count) e Gender
 
 * Quais condições são usadas para filtrar as informações?
 
-   Com base nos recipients que vivem em Londres.
+  Com base nos recipients que vivem em Londres.
 
 Para criar este exemplo, aplique as seguintes etapas:
 

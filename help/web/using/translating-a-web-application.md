@@ -2,13 +2,13 @@
 product: campaign
 title: Traduzir um aplicativo web
 description: Traduzir um aplicativo web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Apps
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '375'
 ht-degree: 100%
 
 ---
@@ -45,11 +45,11 @@ Para sinalizar as strings a ser traduzidas:
    * Quando o bloco selecionado contiver várias strings/blocos, ele será sinalizado como uma única string a ser traduzida. A string contém então o código HTML dos elementos dentro desse bloco.
    * Quando você deseja sinalizar um bloco que contém várias strings e, se pelo menos uma dessas cadeias já estiver sinalizada, um aviso será exibido. Você pode então remover o sinalizador da string isolada e adicionar todo o bloco.
 
-      ![](assets/dce_translation_4.png)
+     ![](assets/dce_translation_4.png)
 
    * Quando você deseja remover o sinalizador de uma string contida em um bloco que já está sinalizado, não é possível modificar diretamente a opção de conversão de string. No entanto, você pode acessar o bloco contendo a string para alterá-lo.
 
-      ![](assets/dce_translation_2.png)
+     ![](assets/dce_translation_2.png)
 
 1. Depois de concluir a sinalização das strings, volte para a aplicação web e selecione a guia **[!UICONTROL Translations]**.
 1. Selecione **[!UICONTROL Collect the strings to translate]**. As strings sinalizadas no DCE são adicionadas às strings da aplicação web.

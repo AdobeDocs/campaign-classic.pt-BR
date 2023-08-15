@@ -2,13 +2,13 @@
 product: campaign
 title: Gerenciar respostas
 description: Saiba como gerenciar respostas de pesquisas
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '851'
 ht-degree: 100%
 
 ---
@@ -138,7 +138,7 @@ As pontuações podem ser usadas em testes ou scripts.
 
 * Para usar pontuações em testes, use o campo **[!UICONTROL Score]** na fórmula de cálculo de teste, conforme mostrado abaixo:
 
-   ![](assets/s_ncs_admin_survey_score_in_a_test.png)
+  ![](assets/s_ncs_admin_survey_score_in_a_test.png)
 
 * Você pode usar a pontuação em um script.
 
@@ -146,18 +146,18 @@ As pontuações podem ser usadas em testes ou scripts.
 
 * Em uma pesquisa, a próxima página permite atribuir pontuações diferentes aos usuários, dependendo do valor selecionado na lista suspensa:
 
-   ![](assets/s_ncs_admin_survey_score_exa.png)
+  ![](assets/s_ncs_admin_survey_score_exa.png)
 
 * Você pode combinar essa pontuação com um segundo valor, dependendo da opção selecionada:
 
-   ![](assets/s_ncs_admin_survey_score_exb.png)
+  ![](assets/s_ncs_admin_survey_score_exb.png)
 
 * Quando o usuário clica no botão **[!UICONTROL Next]**, os dois valores são somados.
 
-   ![](assets/s_ncs_admin_survey_score_exe.png)
+  ![](assets/s_ncs_admin_survey_score_exe.png)
 
 * As condições podem ser aplicadas para que a página seja exibida de acordo com a pontuação. Isso é configurado da seguinte maneira:
 
-   ![](assets/s_ncs_admin_survey_score_exd.png)
+  ![](assets/s_ncs_admin_survey_score_exd.png)
 
-   ![](assets/s_ncs_admin_survey_score_exg.png)
+  ![](assets/s_ncs_admin_survey_score_exg.png)

@@ -2,12 +2,12 @@
 product: campaign
 title: Extração de dados (arquivo)
 description: Saiba mais sobre a atividade de workflow de extração de dados (arquivo)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '331'
 ht-degree: 100%
 
 ---
@@ -59,7 +59,7 @@ Veja a seguir uma lista de funções agregadas disponíveis:
 
 * **[!UICONTROL Count]** para contar todos os valores não nulos do campo a ser agregado, incluindo valores duplicados (do campo de agregação),
 
-   **[!UICONTROL Distinct]** para contar o número total de valores diferentes e não nulos do campo a ser agregado (valores duplicados são excluídos antes do cálculo),
+  **[!UICONTROL Distinct]** para contar o número total de valores diferentes e não nulos do campo a ser agregado (valores duplicados são excluídos antes do cálculo),
 
 * **[!UICONTROL Sum]** para calcular a soma dos valores de um campo numérico,
 * **[!UICONTROL Minimum value]** para calcular os valores mínimos de um campo (numérico ou não),

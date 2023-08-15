@@ -3,7 +3,7 @@ product: campaign
 title: Configuração das opções do Campaign
 description: Saiba como configurar as opções do Campaign
 feature: Installation, Application Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
@@ -300,7 +300,7 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
-   <td> Configuração de upload de imagem. Os valores podem ser none / tracking / script / list (podem ser substituídos pelas configurações opcionais do operador). </td> 
+   <td> Configuração de upload de imagem. Os valores podem ser none / tracking / script / list (pode ser substituído pelas configurações opcionais do operador). </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 

@@ -2,12 +2,12 @@
 product: campaign
 title: Aprovação
 description: Aprovação
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Approvals
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '553'
 ht-degree: 100%
 
 ---
@@ -26,15 +26,15 @@ Se necessário, é possível atribuir a tarefa de aprovação a um único operad
 
 * Para selecionar um único operador, selecione o valor **[!UICONTROL Operator]** e depois o campo **[!UICONTROL Assignment type]**, então selecione o operador relevante na lista suspensa do campo **[!UICONTROL Assignee]**.
 
-   ![](assets/s_advuser_validation_box_assign.png)
+  ![](assets/s_advuser_validation_box_assign.png)
 
-   >[!CAUTION]
-   >
-   >Somente o operador escolhido será autorizado a aprovar a tarefa.
+  >[!CAUTION]
+  >
+  >Somente o operador escolhido será autorizado a aprovar a tarefa.
 
 * É possível definir uma query para filtrar operadores de aprovação. Para fazer isso, selecione o valor **[!UICONTROL Filter]** no campo **[!UICONTROL Assignment type]** e clique no link **[!UICONTROL Advanced parameters...]** para definir as condições do filtro, conforme mostrado no exemplo a seguir:
 
-   ![](assets/s_advuser_validation_box_filter.png)
+  ![](assets/s_advuser_validation_box_filter.png)
 
 No caso de aprovação única, a transição correspondente à escolha do operador é ativada e a tarefa é concluída: os outros operadores não podem mais responder.
 
@@ -70,8 +70,8 @@ Um exemplo de aprovação é exibido em [Defining approvals](defining-approvals.
 
 * **[!UICONTROL response]**
 
-   Comentário relacionado à resposta
+  Comentário relacionado à resposta
 
 * **[!UICONTROL responseOperator]**
 
-   Identificador do operador que respondeu. Este campo é um valor numérico, mas um campo **[!UICONTROL String]**.
+  Identificador do operador que respondeu. Este campo é um valor numérico, mas um campo **[!UICONTROL String]**.

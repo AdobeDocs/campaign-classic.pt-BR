@@ -2,13 +2,13 @@
 product: campaign
 title: Monitorar a capacidade de entrega no Adobe Campaign
 description: Saiba mais sobre as ferramentas e as diretrizes sobre o monitoramento da capacidade de entrega no Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '543'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ Você também pode usar as seguintes ferramentas:
    * **[!UICONTROL Hard bounces]** indica a qualidade dos dados. Esse número deve ser inferior a 2%.
    * **[!UICONTROL Soft bounces]** indica a reputação. Este número não deve ser superior a 10% para qualquer ISP.
 
-   Para obter mais informações, consulte a seção [Estatísticas do delivery](../../reporting/using/global-reports.md#delivery-statistics).
+  Para obter mais informações, consulte a seção [Estatísticas do delivery](../../reporting/using/global-reports.md#delivery-statistics).
 * Em geral, o [painel de delivery](about-delivery-monitoring.md) oferece acesso:
    * ao [resumo de delivery](delivery-dashboard.md#delivery-summary), que mostra os detalhes do envio e o número de mensagens a enviar, processadas e enviadas com êxito;
    * aos [logs do delivery e o histórico](delivery-dashboard.md#delivery-logs-and-history), que mostram qual público-alvo foi excluído e o porquê;

@@ -2,13 +2,13 @@
 product: campaign
 title: Entender o gerenciamento de quarentena
 description: Entender o gerenciamento de quarentena
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2997'
+source-wordcount: '3009'
 ht-degree: 100%
 
 ---
@@ -39,11 +39,11 @@ A quarentena e a lista de bloqueios não se aplicam ao mesmo objeto:
 
 * A **quarentena** se aplica somente a um **endereço** (ou número de telefone etc.), não ao próprio perfil. Por exemplo, um perfil cujo endereço de email esteja em quarentena pode atualizar seu perfil e inserir um novo endereço, podendo então ser direcionado em ações de delivery novamente. Da mesma forma, se dois perfis tiverem o mesmo número de telefone, ambos serão afetados se o número estiver em quarentena.
 
-   Os endereços em quarentena ou os números de telefone são exibidos nos [logs de exclusão](#identifying-quarantined-addresses-for-a-delivery) (para um delivery) ou na [lista de quarentena](#identifying-quarantined-addresses-for-the-entire-platform) (para toda a plataforma).
+  Os endereços em quarentena ou os números de telefone são exibidos nos [logs de exclusão](#identifying-quarantined-addresses-for-a-delivery) (para um delivery) ou na [lista de quarentena](#identifying-quarantined-addresses-for-the-entire-platform) (para toda a plataforma).
 
 * Por outro lado, com a inclusão na **lista de bloqueios**, o **perfil** não será mais direcionado pelo delivery, por exemplo, depois de um cancelamento de inscrição (recusa de participação) de um determinado canal. Por exemplo, se um perfil na lista de bloqueios para o canal de email tiver dois endereços de email, ambos os endereços serão excluídos do delivery.
 
-   Você pode verificar se um perfil está na lista de bloqueios para um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. Consulte [esta seção](../../platform/using/editing-a-profile.md#general-tab).
+  Você pode verificar se um perfil está na lista de bloqueios para um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. Consulte [esta seção](../../platform/using/editing-a-profile.md#general-tab).
 
 >[!NOTE]
 >
@@ -173,11 +173,10 @@ Abaixo estão as diretrizes recomendadas para esta consulta:
 
    * **Texto de erro (texto de quarentena)** contém “550-5.1.1” E **Texto de erro (texto de quarentena)** contém “support.ISP.com”
 
-   em que “support.ISP.com” pode ser: “support.apple.com” ou “support.google.com” por exemplo
+  em que “support.ISP.com” pode ser: “support.apple.com” ou “support.google.com” por exemplo
 
    * **Atualizar status (@lastModified)** em ou após MM/DD/AAAA HH:MM:SS AM
    * **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:SS PM
-
 
 Depois de ter a lista de recipients afetados, adicione uma atividade **[!UICONTROL Update data]** para definir seu status de endereço de email como **[!UICONTROL Valid]** para que eles sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]**. Também é possível excluí-los da tabela de quarentena.
 
@@ -591,21 +590,21 @@ SR Generic DELIVRD 000|#MESSAGE#
 * Todas as mensagens de erro começam com **SR** para distinguir códigos de erro de SMS de códigos de erro de email.
 * A segunda parte (**Generic** neste exemplo) da mensagem de erro refere-se ao nome da implementação SMSC, como definido no campo **[!UICONTROL SMSC implementation name]** da conta externa do SMS. Consulte [esta página](sms-set-up.md#creating-an-smpp-external-account).
 
-   Como o mesmo código de erro pode ter um significado diferente para cada provedor, esse campo permite que você saiba qual provedor gerou o código de erro. Você pode então encontrar o erro na documentação do provedor relevante.
+  Como o mesmo código de erro pode ter um significado diferente para cada provedor, esse campo permite que você saiba qual provedor gerou o código de erro. Você pode então encontrar o erro na documentação do provedor relevante.
 
 * A terceira parte (**DELIVRD** neste exemplo) da mensagem de erro corresponde ao código de status recuperado do SR usando a extração de status regex definido na conta externa do SMS.
 
-   Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa. Consulte [esta página](sms-set-up.md#creating-an-smpp-external-account).
+  Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa. Consulte [esta página](sms-set-up.md#creating-an-smpp-external-account).
 
-   ![](assets/tech_quarant_error_regex.png)
+  ![](assets/tech_quarant_error_regex.png)
 
-   Por padrão, o regex extrai o campo **stat:** conforme definido pela seção **Apêndice B** da **especificação 3.4 SMPP**.
+  Por padrão, o regex extrai o campo **stat:** conforme definido pela seção **Apêndice B** da **especificação 3.4 SMPP**.
 
 * A quarta parte (**000** neste exemplo) da mensagem de erro corresponde ao código de erro extraído do SR usando a extração de código de erro regex definida na conta externa do SMS.
 
-   Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa. Consulte [esta página](sms-set-up.md#creating-an-smpp-external-account).
+  Esse regex é especificado na guia **[!UICONTROL SMSC specificities]** da conta externa. Consulte [esta página](sms-set-up.md#creating-an-smpp-external-account).
 
-   Por padrão, o regex extrai o campo **err:** conforme definido pela seção **Apêndice B** da **especificação 3.4 SMPP**.
+  Por padrão, o regex extrai o campo **err:** conforme definido pela seção **Apêndice B** da **especificação 3.4 SMPP**.
 
 * Tudo que vem após o símbolo da barra vertical (|) é exibido somente na coluna **[!UICONTROL First text]** da tabela **[!UICONTROL Delivery log qualification]**. Este conteúdo é sempre substituído por **#MESSAGE#** após a mensagem ser normalizada. Esse processo evita ter várias entradas para erros semelhantes e é igual ao dos emails. Para obter mais informações, consulte [Qualificação de email de devolução](understanding-delivery-failures.md#bounce-mail-qualification).
 

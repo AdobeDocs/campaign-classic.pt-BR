@@ -3,14 +3,14 @@ product: campaign
 title: Nota técnica - Atualizações de configuração do Adobe Campaign
 description: Atualizações de configuração do Adobe Campaign
 feature: Technote, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1104'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 

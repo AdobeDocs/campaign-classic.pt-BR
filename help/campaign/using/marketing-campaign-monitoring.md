@@ -2,12 +2,12 @@
 product: campaign
 title: Monitorar campanhas de marketing
 description: Monitorar campanhas de marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Campaigns, Monitoring
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '252'
 ht-degree: 100%
 
 ---
@@ -20,19 +20,19 @@ Para cada campanha, a guia **[!UICONTROL Tracking]** permite visualizar todas as
 
 * O diário de atividades mostra as tarefas realizadas na campanha em geral: criação ou início, aprovação, extração etc. do fluxo de tarefa.
 
-   ![](assets/s_ncs_user_op_edit_exe_tab_a.png)
+  ![](assets/s_ncs_user_op_edit_exe_tab_a.png)
 
 * A subguia **[!UICONTROL Deliveries]** contém todos os deliveries da campanha que podem ser editados nessa visualização. Para fazer isso, selecione o delivery e clique no ícone **[!UICONTROL Detail]**.
 
-   ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
+  ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
 * A subguia **[!UICONTROL Tasks]** agrupa todas as tarefas vinculadas à campanha. Essa visualização permite que você as edite ou exclua. As tarefas estão disponíveis com o aplicativo MRM. Eles são detalhados [nesta seção](../../mrm/using/creating-and-managing-tasks.md).
 
-   ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
+  ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
 * Os workflows criados para gerar mensagens para provedores de serviços são exibidos na subguia **[!UICONTROL Jobs on service providers]**. Clique no ícone **[!UICONTROL Detail]** para exibir o workflow selecionado.
 
-   ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
+  ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
 ## Rastreamento de entrega {#delivery-tracking}
 

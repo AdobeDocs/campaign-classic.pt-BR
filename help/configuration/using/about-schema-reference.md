@@ -2,13 +2,13 @@
 product: campaign
 title: Sobre a referência do esquema no Adobe Campaign Classic
 description: Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Schema Extension
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 11%
+source-wordcount: '388'
+ht-degree: 12%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 11%
 
 Este capítulo descreve como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign.
 
-Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [modelo de dados Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/data-model/about-data-model.html?lang=pt-BR).
+Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte o [modelo de dados Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/data-model/about-data-model.html?lang=pt-BR).
 
 A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de **schema**.
 

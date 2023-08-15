@@ -2,13 +2,13 @@
 product: campaign
 title: Estender um esquema
 description: Saiba como estender um esquema
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 9%
+source-wordcount: '334'
+ht-degree: 11%
 
 ---
 

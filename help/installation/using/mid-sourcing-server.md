@@ -3,7 +3,7 @@ product: campaign
 title: Instalação de um servidor mid-sourcing no Campaign
 description: Esta seção detalha a instalação e a configuração de um servidor mid-sourcing no Campaign
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
@@ -12,7 +12,7 @@ exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 

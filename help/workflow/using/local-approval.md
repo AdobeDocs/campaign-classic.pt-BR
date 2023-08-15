@@ -2,12 +2,12 @@
 product: campaign
 title: Aprovação local
 description: Aprovação local
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '649'
 ht-degree: 100%
 
 ---
@@ -32,11 +32,11 @@ Comece inserindo um rótulo para a atividade e o campo **[!UICONTROL Action to e
 
 * Selecione a opção **[!UICONTROL Target approval notification]** para enviar um email de notificação para supervisores locais antes do delivery, pedindo sua aprovação dos recipients atribuídos a eles.
 
-   ![](assets/local_validation_intro_2.png)
+  ![](assets/local_validation_intro_2.png)
 
 * **Query incremental**: permite executar um query e planejar sua execução. Consulte a seção [Query incremental](incremental-query.md).
 
-   ![](assets/local_validation_intro_3.png)
+  ![](assets/local_validation_intro_3.png)
 
 ## Notificação de aprovação de target {#target-approval-notification}
 
@@ -50,24 +50,24 @@ Os campos a serem inseridos no caso de uma notificação para aprovação de tar
 
 * **[!UICONTROL Distribution context]**: selecione a opção **[!UICONTROL Specified in the transition]** se estiver usando uma atividade do tipo **[!UICONTROL Split]** para limitar o público-alvo. Nesse caso, o template de distribuição é inserido na atividade de Split. Se você não estiver limitando o público-alvo, selecione a opção **[!UICONTROL Explicit]** aqui e insira o template de distribuição no campo **[!UICONTROL Data distribution]**.
 
-   Para obter mais informações sobre como criar um template de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+  Para obter mais informações sobre como criar um template de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Approval management]**
 
    * Selecione o template de delivery e o assunto que será usado para a notificação por email. Um template padrão está disponível: **[!UICONTROL Local approval notification]**. Você também pode adicionar uma descrição que aparecerá acima das listas de recipients nas notificações de aprovação e de feedback.
    * Especifique o **[!UICONTROL Approval type]** que corresponda ao prazo final de aprovação (data ou prazo final do início da aprovação). Nesta data, o workflow começa novamente e os recipients que não foram aprovados não serão considerados no target. Depois que as notificações forem enviadas, a atividade será colocada em fila para que os supervisores locais possam aprovar seus contatos.
 
-      >[!NOTE]
-      >
-      >Por padrão, quando o processo de aprovação é iniciado, a atividade fica pendente por três dias.
+     >[!NOTE]
+     >
+     >Por padrão, quando o processo de aprovação é iniciado, a atividade fica pendente por três dias.
 
-      Você também pode adicionar um ou mais lembretes para informar aos supervisores locais que o prazo final está se aproximando. Para fazer isso, clique em **[!UICONTROL Add a reminder]**.
+     Você também pode adicionar um ou mais lembretes para informar aos supervisores locais que o prazo final está se aproximando. Para fazer isso, clique em **[!UICONTROL Add a reminder]**.
 
 * **[!UICONTROL Complementary set]**: a opção **[!UICONTROL Generate complement]** permite gerar um segundo conjunto que inclui todos os targets não aprovados.
 
-   >[!NOTE]
-   >
-   >Essa opção está desabilitada por padrão.
+  >[!NOTE]
+  >
+  >Essa opção está desabilitada por padrão.
 
 ## Relatório de feedback de delivery {#delivery-feedback-report}
 
@@ -90,19 +90,19 @@ Um operador pode aprovar um delivery de duas formas: usando a página da Web vin
 
 * Aprovação da Web
 
-   O email enviado para operadores do grupo Administrador permite aprovar o target do delivery. A mensagem usa o texto definido e a expressão JavaScript é substituída pelo valor calculado (neste caso, &#39;574&#39;)
+  O email enviado para operadores do grupo Administrador permite aprovar o target do delivery. A mensagem usa o texto definido e a expressão JavaScript é substituída pelo valor calculado (neste caso, &#39;574&#39;)
 
-   Para aprovar o delivery, clique no link relevante e entre no console do Adobe Campaign.
+  Para aprovar o delivery, clique no link relevante e entre no console do Adobe Campaign.
 
-   ![](assets/new-workflow-valid-webaccess.png)
+  ![](assets/new-workflow-valid-webaccess.png)
 
-   Escolha e clique no botão **[!UICONTROL Submit]**.
+  Escolha e clique no botão **[!UICONTROL Submit]**.
 
-   ![](assets/new-workflow-valid-webaccess-confirm.png)
+  ![](assets/new-workflow-valid-webaccess-confirm.png)
 
 * Aprovação através do console
 
-   Na estrutura de árvore, o nó **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** contém a lista de tarefas a serem aprovadas pelo operador conectado atualmente. A lista deve exibir uma linha. Clique duas vezes na linha para responder. A janela a seguir é exibida:
+  Na estrutura de árvore, o nó **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** contém a lista de tarefas a serem aprovadas pelo operador conectado atualmente. A lista deve exibir uma linha. Clique duas vezes na linha para responder. A janela a seguir é exibida:
 
 ![](assets/new-workflow-7.png)
 

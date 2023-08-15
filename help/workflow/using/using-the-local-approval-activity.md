@@ -2,12 +2,12 @@
 product: campaign
 title: Usar a atividade de aprovação local
 description: Saiba como usar a atividade de aprovação local
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1279'
 ht-degree: 100%
 
 ---
@@ -82,9 +82,9 @@ Para obter mais informações sobre como criar um template de distribuição de 
    * **[!UICONTROL Label]**: digite o rótulo do domínio a ser exibido nas notificações de aprovação e de feedback.
    * **[!UICONTROL Group or operator]**: selecione o operador ou grupo de operadores atribuídos ao domínio.
 
-      >[!CAUTION]
-      >
-      >Verifique se os operadores receberam os direitos apropriados.
+     >[!CAUTION]
+     >
+     >Verifique se os operadores receberam os direitos apropriados.
 
 ## Etapa 2: Criação de um fluxo de trabalho de direcionamento {#step-2--creating-the-targeting-workflow}
 

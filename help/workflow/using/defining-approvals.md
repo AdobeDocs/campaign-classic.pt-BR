@@ -2,12 +2,12 @@
 product: campaign
 title: Definir aprovações
 description: As aprovações permitem que os operadores tomem decisões que regem um fluxo de trabalho ou confirmem sua execução contínua
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '848'
 ht-degree: 100%
 
 ---
@@ -89,15 +89,15 @@ Você pode criar quatro tipos de expirações:
 * **Delay before a given date**: a expiração é calculada subtraindo-se um período de uma data especificada. 
 * **Expiration calculated by script**: a expiração é calculada usando o JavaScript.
 
-   O exemplo a seguir calcula uma expiração 24 horas antes da data em que um delivery é iniciado (identificada por **vars.deliveryId**):
+  O exemplo a seguir calcula uma expiração 24 horas antes da data em que um delivery é iniciado (identificada por **vars.deliveryId**):
 
-   ```
-   var delivery = nms.delivery.get(vars.deliveryId)
-   var expiration = delivery.scheduling.contactDate
-   var oneDay = 1000*60*60*24
-   expiration.setTime(expiration.getTime() - oneDay)
-   return expiration
-   ```
+  ```
+  var delivery = nms.delivery.get(vars.deliveryId)
+  var expiration = delivery.scheduling.contactDate
+  var oneDay = 1000*60*60*24
+  expiration.setTime(expiration.getTime() - oneDay)
+  return expiration
+  ```
 
 ## Aprovação múltipla {#multiple-approval}
 

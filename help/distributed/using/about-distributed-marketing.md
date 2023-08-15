@@ -2,12 +2,12 @@
 product: campaign
 title: Introdução ao marketing distribuído
 description: Introdução ao marketing distribuído
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1141'
 ht-degree: 100%
 
 ---
@@ -28,9 +28,9 @@ A entidade central fornece campanhas que entidades locais poderão usar. As camp
 
 * **Entidades centrais**
 
-   As entidades centrais são compostas por operadores de marketing responsáveis por especificar comunicações e ajudar entidades locais a executar sua campanha de marketing.
+  As entidades centrais são compostas por operadores de marketing responsáveis por especificar comunicações e ajudar entidades locais a executar sua campanha de marketing.
 
-   O módulo de marketing distribuído permite à entidade central:
+  O módulo de marketing distribuído permite à entidade central:
 
    * configurar pacotes de campanha de marketing para entidades locais,
    * aumentar o grau de autonomia das entidades locais em relação à sua escolha para comunicação com cliente/prospecto, direcionamento, conteúdo etc.
@@ -39,40 +39,40 @@ A entidade central fornece campanhas que entidades locais poderão usar. As camp
 
 * **Entidades locais**
 
-   As entidades locais podem ser agências, lojas ou grupos de operadores locais específicos (gerentes regionais ou de país, gerentes de marca etc.).
+  As entidades locais podem ser agências, lojas ou grupos de operadores locais específicos (gerentes regionais ou de país, gerentes de marca etc.).
 
-   O Marketing distribuído permite que entidades locais tenham mais autonomia, enquanto otimizam os custos de execução.
+  O Marketing distribuído permite que entidades locais tenham mais autonomia, enquanto otimizam os custos de execução.
 
 * **Localização**
 
-   Localização é a capacidade de uma entidade local modificar o target e o conteúdo de uma campanha. O nível possível de localização depende do tipo de campanha e sua implementação.
+  Localização é a capacidade de uma entidade local modificar o target e o conteúdo de uma campanha. O nível possível de localização depende do tipo de campanha e sua implementação.
 
 * **Lista de pacotes de campanha**
 
-   A lista de pacotes de campanha contém as campanhas disponíveis para entidades locais.
+  A lista de pacotes de campanha contém as campanhas disponíveis para entidades locais.
 
 * **Pacote de campanha**
 
-   Modelo (ou instância de campanha) criado por uma entidade central e disponibilizado para um conjunto de entidades locais.
+  Modelo (ou instância de campanha) criado por uma entidade central e disponibilizado para um conjunto de entidades locais.
 
 * **Campanha local**
 
-   Uma campanha local é uma instância criada a partir de um modelo referenciado da lista de **[!UICONTROL campaign packages]** com um **cronograma de execução específico**. Seu objetivo é atender a uma comunicação local usando um template de campanha que foi criado e configurado pela entidade central.
+  Uma campanha local é uma instância criada a partir de um modelo referenciado da lista de **[!UICONTROL campaign packages]** com um **cronograma de execução específico**. Seu objetivo é atender a uma comunicação local usando um template de campanha que foi criado e configurado pela entidade central.
 
-   O grau de autonomia da entidade local depende da implementação usada.
+  O grau de autonomia da entidade local depende da implementação usada.
 
-   Consulte [Criar uma campanha local](creating-a-local-campaign.md).
+  Consulte [Criar uma campanha local](creating-a-local-campaign.md).
 
 * **Campanha colaborativa**
 
-   Uma campanha colaborativa é uma campanha cujo **cronograma de execução é definido** pela entidade central, que a entidade local pode usar. O conteúdo permanece o mesmo para cada entidade local, mas os custos são compartilhados. Para participarem, as entidades locais se inscrevem na campanha colaborativa.
+  Uma campanha colaborativa é uma campanha cujo **cronograma de execução é definido** pela entidade central, que a entidade local pode usar. O conteúdo permanece o mesmo para cada entidade local, mas os custos são compartilhados. Para participarem, as entidades locais se inscrevem na campanha colaborativa.
 
    * **[!UICONTROL Collaborative campaign (by form)]**: recomendado para campanhas que envolvam até 300 entidades locais. A entidade local pode inserir parâmetros predefinidos para definição de alvos e personalização de conteúdo em um formulário web. O formulário pode ser um formulário do Adobe Campaign ou um formulário externo (cliente extranet). Um administrador funcional pode definir e configurar o formulário com base em um template de formulário definido pelo integrador. Para solicitar a campanha, a entidade local precisa apenas de acesso à web.
    * **[!UICONTROL Collaborative campaign (by campaign)]**: recomendado para campanhas destinadas a dezenas de entidades locais. Esse tipo de campanha cria campanhas filho para cada entidade local. Quando o **[!UICONTROL collaborative campaign (by campaign)]** é aprovado pela entidade central, a campanha é disponibilizada à entidade local, que pode modificá-la. A execução é automaticamente sincronizada entre campanhas pai e filho. A entidade local deve ter acesso a uma instância para solicitar uma campanha e participar dela.
    * **[!UICONTROL Collaborative campaign (by target approval)]**: recomendado para campanhas destinadas a milhares de entidades locais. A entidade local recebe uma lista de contatos que foi predefinida pela entidade central. A entidade local decide se mantém determinados contatos com base no conteúdo da campanha por meio de um formulário web. As entidades locais são selecionadas da lista de contatos selecionados. Para participar da campanha, a entidade local só precisa de acesso à web.
    * **[!UICONTROL Collaborative campaign (simple)]**: esse modo garante a compatibilidade com os processos de execução específicos das versões anteriores.
 
-   Consulte [Criar uma campanha colaborativa](creating-a-collaborative-campaign.md)
+  Consulte [Criar uma campanha colaborativa](creating-a-collaborative-campaign.md)
 
 **Solicitar pacotes de campanha**
 

@@ -2,12 +2,12 @@
 product: campaign
 title: Enviar um relatório a uma lista
 description: Saiba como enviar um relatório para uma lista com um fluxo de trabalho
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '630'
 ht-degree: 100%
 
 ---
@@ -52,25 +52,25 @@ Para saber mais sobre criação de listas, consulte esta [seção](../../platfor
 
    * Clique no link **[!UICONTROL Attachments]**, clique em **[!UICONTROL Add]** e selecione **[!UICONTROL Calculated attachment]**.
 
-      ![](assets/use_case_report_4.png)
+     ![](assets/use_case_report_4.png)
 
    * Acesse o campo **[!UICONTROL Type]** e selecione a quarta opção: **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
 
-      ![](assets/use_case_report_5.png)
+     ![](assets/use_case_report_5.png)
 
-      O valor inserido no campo **[!UICONTROL Label]** não aparecerá no delivery final.
+     O valor inserido no campo **[!UICONTROL Label]** não aparecerá no delivery final.
 
    * Vá para a zona de edição e digite o caminho de acesso e o nome do arquivo.
 
-      ![](assets/use_case_report_6.png)
+     ![](assets/use_case_report_6.png)
 
-      >[!CAUTION]
-      >
-      >O arquivo deve estar presente no servidor. Seu caminho e nome devem ser idênticos aos inseridos na atividade tipo **[!UICONTROL JavaScript code]** do workflow (consulte [Etapa 3 – Criação do workflow](#step-3--creating-the-workflow)).
+     >[!CAUTION]
+     >
+     >O arquivo deve estar presente no servidor. Seu caminho e nome devem ser idênticos aos inseridos na atividade tipo **[!UICONTROL JavaScript code]** do workflow (consulte [Etapa 3 – Criação do workflow](#step-3--creating-the-workflow)).
 
    * Selecione a guia **[!UICONTROL Advanced]** e marque **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Vá para a zona de edição e insira o nome que deseja dar ao anexo na entrega final.
 
-      ![](assets/use_case_report_6bis.png)
+     ![](assets/use_case_report_6bis.png)
 
 ## Etapa 3: Criação do fluxo de trabalho {#step-3--creating-the-workflow}
 
@@ -114,9 +114,9 @@ O seguinte workflow foi criado para este caso de uso. Ele tem três atividades:
    * **var reportName**: insira o nome interno do relatório em aspas duplas. Nesse caso, o nome interno do relatório **Tracking indicator** é &quot;deliveryFeedback&quot;.
    * **caminho var**: insira o caminho de salvamento do arquivo (&quot;tmp/files/&quot;), o nome que deseja dar ao arquivo (&quot;deliveryFeedback&quot;) e a extensão de arquivo (&quot;.pdf&quot;). Nesse caso, usamos o nome interno como o nome do arquivo. Os valores precisam estar entre aspas duplas e separados pelo caractere &quot;+&quot;.
 
-      >[!CAUTION]
-      >
-      >O arquivo deve ser salvo no servidor. É necessário inserir o mesmo caminho e o mesmo nome na guia **[!UICONTROL General]** da janela de edição do anexo calculado (consulte [Etapa 2 – Criação do template de delivery](#step-2--creating-the-delivery-template)).
+     >[!CAUTION]
+     >
+     >O arquivo deve ser salvo no servidor. É necessário inserir o mesmo caminho e o mesmo nome na guia **[!UICONTROL General]** da janela de edição do anexo calculado (consulte [Etapa 2 – Criação do template de delivery](#step-2--creating-the-delivery-template)).
 
    * **var exportFormat**: insira o formato de exportação do arquivo (&quot;PDF&quot;).
    * **var _ctx** (contexto): neste caso, estamos usando o relatório **[!UICONTROL Tracking indicators]** em seu contexto global.
@@ -127,4 +127,5 @@ O seguinte workflow foi criado para este caso de uso. Ele tem três atividades:
    * Para os campos **[!UICONTROL Recipients]** e **[!UICONTROL Content]**, selecione **[!UICONTROL Specified in the delivery]**.
    * **[!UICONTROL Action to execute]** : selecione **[!UICONTROL Prepare and start]**.
    * Desmarque **[!UICONTROL Generate an outbound transition]** e **[!UICONTROL Process errors]**.
+
    ![](assets/use_case_report_11.png)

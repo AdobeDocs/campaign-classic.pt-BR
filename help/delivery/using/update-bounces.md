@@ -2,15 +2,15 @@
 product: campaign
 title: Atualizar qualificação de rejeição após uma interrupção do ISP
 description: Saiba como atualizar a qualificação de rejeição após uma interrupção do ISP
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability
 hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '525'
 ht-degree: 100%
 
 ---
@@ -36,6 +36,7 @@ Observe que se o deferimento for rejeitado com a mensagem “452 ação solicita
 >Você pode verificar o Painel de status do sistema da Apple [nesta página](https://www.apple.com/br/support/systemstatus/){_blank}.
 >
 >Você pode verificar o Painel de status do Google Workspace [nesta página](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
+>
 
 ## Impacto{#update-bounce-impact}
 
@@ -62,7 +63,7 @@ Com base no período do incidente e no ISP, abaixo estão as diretrizes recomend
 
    * **Texto de erro (texto de quarentena)** contém “550-5.1.1” E **Texto de erro (texto de quarentena)** contém “support.ISP.com”
 
-      em que “support.ISP.com” pode ser: “support.apple.com” ou “support.google.com” por exemplo
+     em que “support.ISP.com” pode ser: “support.apple.com” ou “support.google.com” por exemplo
 
    * **Atualizar status (@lastModified)** em ou após MM/DD/AAAA HH:MM:SS AM
    * **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:SS PM

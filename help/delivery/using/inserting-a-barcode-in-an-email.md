@@ -2,12 +2,12 @@
 product: campaign
 title: Inserir código de barras em um email
 description: Inserir código de barras em um email
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email Design
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '525'
 ht-degree: 100%
 
 ---
@@ -31,23 +31,23 @@ Em seguida, configure os seguintes elementos para atender às suas necessidades:
 
    * Para o formato 1D, os seguintes tipos estão disponíveis no Adobe Campaign: Codabar, Code 128, GS1-128 (antigo EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 de 5, POSTNET e Royal Mail (RM4SCC).
 
-      Exemplo de um código de barras 1D:
+     Exemplo de um código de barras 1D:
 
-      ![](assets/barcode_insert_08.png)
+     ![](assets/barcode_insert_08.png)
 
    * Os tipos DataMatrix e PDF417 correspondem ao formato 2D.
 
-      Exemplo de um código de barras 2D:
+     Exemplo de um código de barras 2D:
 
-      ![](assets/barcode_insert_09.png)
+     ![](assets/barcode_insert_09.png)
 
    * Para inserir um código QR, selecione esse tipo e digite a taxa de correção de erro a ser aplicada. Essa taxa define a quantidade de informações repetidas e a tolerância à deterioração.
 
-      ![](assets/barcode_insert_06.png)
+     ![](assets/barcode_insert_06.png)
 
-      Exemplo de código QR:
+     Exemplo de código QR:
 
-      ![](assets/barcode_insert_12.png)
+     ![](assets/barcode_insert_12.png)
 
 1. Insira o tamanho do código de barras que deseja inserir no email: a configuração da escala permite aumentar ou reduzir o tamanho do código de barras, de x1 a x10.
 1. O campo **[!UICONTROL Value]** permite definir o valor do código de barras. Um valor pode corresponder a uma oferta especial e pode ser a função de um critério, ele pode ser o valor de um campo de banco de dados vinculado aos clientes.

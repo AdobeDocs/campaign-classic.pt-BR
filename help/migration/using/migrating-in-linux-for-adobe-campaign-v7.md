@@ -3,7 +3,7 @@ product: campaign
 title: Migração de uma plataforma Linux para o Adobe Campaign v7
 description: Saiba como migrar uma plataforma Linux para o Adobe Campaign v7
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
@@ -13,7 +13,7 @@ exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

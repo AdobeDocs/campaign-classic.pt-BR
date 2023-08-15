@@ -2,12 +2,12 @@
 product: campaign
 title: Editar esquema
 description: Saiba mais sobre a atividade de workflow editar esquema
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: d26966a8-b5db-4fa4-85ec-7ebd770c4ef3
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '122'
 ht-degree: 100%
 
 ---

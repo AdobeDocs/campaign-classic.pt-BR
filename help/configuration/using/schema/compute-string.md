@@ -17,7 +17,7 @@ ht-degree: 5%
 
 ## Modelo de conteúdo {#content-model-1}
 
-string de cálculo:==VAZIO
+string de cálculo:==EMPTY
 
 ## Atributos {#attributes-1}
 

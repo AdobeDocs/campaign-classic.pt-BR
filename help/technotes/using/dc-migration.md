@@ -2,7 +2,7 @@
 product: campaign
 title: Migração para a Nuvem pública
 description: Saiba mais sobre a migração do Campaign Classic para a Nuvem pública
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Technote, Upgrade
 role: User
 level: Beginner
@@ -10,7 +10,7 @@ exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 64%
+ht-degree: 65%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 64%
 
 ## Contexto
 
-Como um cliente importante da Adobe Campaign Classic, temos o compromisso de fornecer a você a melhor experiência e valor. Ao longo dos anos, percebemos o valor e a confiabilidade de hospedar nossos clientes na nuvem.  Como parte da nossa [Iniciativa de atualização anual](../../rn/using/rn-overview.md#yearly-upgrade), estamos mudando todos os nossos clientes para o Adobe Managed Services (Nuvem pública na AWS) para oferecer serviços melhores e mais confiáveis.
+Como um cliente importante da Adobe Campaign Classic, temos o compromisso de fornecer a você a melhor experiência e valor. Ao longo dos anos, percebemos o valor e a confiabilidade de hospedar nossos clientes na nuvem.  Como parte da nossa [Iniciativa de atualização anual](../../rn/using/rn-overview.md#yearly-upgrade)Em seguida, estamos mudando todos os nossos clientes para o Adobe Managed Services (Nuvem pública na AWS) para fornecer serviços melhores e mais confiáveis.
 
 Este programa tem três objetivos principais:
 
@@ -85,7 +85,7 @@ Uma migração pode ser iniciada por [abertura de um novo tíquete de suporte do
 
 Essa migração para a nuvem é **primeiro passo para a [programa de atualização anual](../../rn/using/rn-overview.md#yearly-upgrade)** das instâncias do Adobe Campaign. Essa migração é obrigatória se você estiver hospedado em um data center que não seja a Nuvem pública (AWS).
 
-A nuvem do Adobe Managed Services está hospedada no Amazon Web Services (AWS), um ambiente moderno, seguro e otimizado. [Saiba mais sobre o AWS](https://aws.amazon.com/application-hosting/benefits/).
+A nuvem do Adobe Managed Services é hospedada no Amazon Web Services (AWS), um ambiente moderno, seguro e otimizado. [Saiba mais sobre o AWS](https://aws.amazon.com/application-hosting/benefits/).
 
 O Adobe planeja desativar o data center herdado, as instâncias do Adobe Campaign em execução devem ser transferidas para o novo data center de referência, o AWS.
 

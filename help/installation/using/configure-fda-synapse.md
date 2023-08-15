@@ -3,7 +3,7 @@ product: campaign
 title: Configuração do acesso ao Synapse
 description: Saiba como configurar o acesso ao Synapse no FDA
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -11,7 +11,7 @@ exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 72%
+ht-degree: 73%
 
 ---
 

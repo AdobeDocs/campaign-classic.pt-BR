@@ -2,12 +2,12 @@
 product: campaign
 title: Criar uma lista de resumo
 description: Criar uma lista de resumo
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '981'
 ht-degree: 100%
 
 ---

@@ -2,12 +2,12 @@
 product: campaign
 title: Delivery
 description: Saiba mais sobre a atividade de workflow de tipo Delivery
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '924'
 ht-degree: 100%
 
 ---
@@ -28,33 +28,33 @@ Para configurá-lo, edite a atividade e insira as opções de delivery.
 
    * Atue no delivery especificado na transição de entrada. Para fazer isso, selecione a primeira opção de seção **[!UICONTROL Delivery]** da janela.
 
-      Essa opção pode ser usada quando uma atividade de workflow anterior já criou ou especificou o delivery. Isso pode ter sido feito, como no exemplo abaixo, por uma atividade do mesmo tipo que gerou uma transição de saída.
+     Essa opção pode ser usada quando uma atividade de workflow anterior já criou ou especificou o delivery. Isso pode ter sido feito, como no exemplo abaixo, por uma atividade do mesmo tipo que gerou uma transição de saída.
 
-      No exemplo a seguir, o delivery é criado pela primeira vez. O público e o conteúdo são definidos mais tarde. Em seguida, as informações desses três elementos são inseridas novamente em uma nova atividade de delivery usando a transição de entrada para que isso possa ser enviado.
+     No exemplo a seguir, o delivery é criado pela primeira vez. O público e o conteúdo são definidos mais tarde. Em seguida, as informações desses três elementos são inseridas novamente em uma nova atividade de delivery usando a transição de entrada para que isso possa ser enviado.
 
-      ![](assets/specified_transition_option_exemple.png)
+     ![](assets/specified_transition_option_exemple.png)
 
    * Selecione diretamente o delivery envolvido. Para fazer isso, selecione a opção **[!UICONTROL Explicit]** e selecione o da lista suspensa no campo **[!UICONTROL Delivery]** Delivery.
 
-      A lista exibe deliveries não concluídos contidos na pasta **Deliveries** por padrão. Para acessar outras campanhas, clique no ícone **[!UICONTROL Select link]**.
+     A lista exibe deliveries não concluídos contidos na pasta **Deliveries** por padrão. Para acessar outras campanhas, clique no ícone **[!UICONTROL Select link]**.
 
-      ![](assets/diffusion_edit_1.png)
+     ![](assets/diffusion_edit_1.png)
 
-      Selecione a campanha da lista suspensa no campo **[!UICONTROL Folder]** ou clique em **[!UICONTROL Display sub-levels]** para exibir todos deliveries contidos em subpastas:
+     Selecione a campanha da lista suspensa no campo **[!UICONTROL Folder]** ou clique em **[!UICONTROL Display sub-levels]** para exibir todos deliveries contidos em subpastas:
 
-      ![](assets/diffusion_edit_2.png)
+     ![](assets/diffusion_edit_2.png)
 
-      Após selecionar a ação de delivery, é possível exibir o conteúdo clicando em **[!UICONTROL Edit link]**.
+     Após selecionar a ação de delivery, é possível exibir o conteúdo clicando em **[!UICONTROL Edit link]**.
 
    * Crie um script para calcular o delivery. Para fazer isto, clique na opção **[!UICONTROL Computed by a script]** e depois insira o script. É possível abrir uma janela de entrada clicando na opção **[!UICONTROL Edit...]**. O exemplo a seguir recupera o identificador do delivery:
 
-      ![](assets/diffusion_edit_3.png)
+     ![](assets/diffusion_edit_3.png)
 
    * Criação de novo delivery Para fazer isso, selecione a opção **[!UICONTROL New, created from a template]** e selecione o template do delivery no qual o delivery será baseado.
 
-      ![](assets/diffusion_edit_4.png)
+     ![](assets/diffusion_edit_4.png)
 
-      Clique em **[!UICONTROL Select link]** para procurar as pastas e clique em **[!UICONTROL Edit link]** se desejar visualizar o conteúdo do template selecionado.
+     Clique em **[!UICONTROL Select link]** para procurar as pastas e clique em **[!UICONTROL Edit link]** se desejar visualizar o conteúdo do template selecionado.
 
 1. **Recipients**
 
@@ -88,15 +88,16 @@ Para configurá-lo, edite a atividade e insira as opções de delivery.
 
    * **[!UICONTROL Generate an outbound transition]**
 
-      Cria uma transição de saída que será ativada no final da execução. Você pode escolher se quer recuperar ou não o target do delivery.
+     Cria uma transição de saída que será ativada no final da execução. Você pode escolher se quer recuperar ou não o target do delivery.
 
    * **[!UICONTROL Do not recover target]**
 
-      Não recupera o target da ação de delivery realizada.
+     Não recupera o target da ação de delivery realizada.
 
    * **[!UICONTROL Processing errors]**
 
-      Consulte [Controle de delivery](delivery-control.md).
+     Consulte [Controle de delivery](delivery-control.md).
+
    A guia **Script** permite modificar os parâmetros de delivery.
 
    ![](assets/edit_diffusion_fil_script.png)
@@ -148,11 +149,11 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 
 * filename
 
-   Nome completo do arquivo gerado se a opção **[!UICONTROL File(s) specified by inbound event(s)]** estiver selecionada na seção **[!UICONTROL Recipients]**.
+  Nome completo do arquivo gerado se a opção **[!UICONTROL File(s) specified by inbound event(s)]** estiver selecionada na seção **[!UICONTROL Recipients]**.
 
 * contentId
 
-   Identificador de conteúdo se a opção **[!UICONTROL Specified by inbound events]** estiver selecionada na seção **[!UICONTROL Content]**.
+  Identificador de conteúdo se a opção **[!UICONTROL Specified by inbound events]** estiver selecionada na seção **[!UICONTROL Content]**.
 
 ## Parâmetros de saída {#output-parameters}
 

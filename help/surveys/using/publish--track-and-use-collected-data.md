@@ -2,13 +2,13 @@
 product: campaign
 title: Publicar, rastrear e usar dados coletados
 description: Saiba como publicar, rastrear e usar dados coletados em uma pesquisa
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '843'
 ht-degree: 100%
 
 ---
@@ -65,17 +65,17 @@ Dois outros relatórios sobre pesquisas na web estão disponíveis na guia **[!U
 
 * Geral
 
-   Este relatório contém informações gerais sobre a pesquisa: como o número de respostas é alterado com o tempo e a distribuição por origem e idioma.
+  Este relatório contém informações gerais sobre a pesquisa: como o número de respostas é alterado com o tempo e a distribuição por origem e idioma.
 
-   Exemplo de um relatório geral:
+  Exemplo de um relatório geral:
 
-   ![](assets/s_ncs_admin_survey_report_0.png)
+  ![](assets/s_ncs_admin_survey_report_0.png)
 
 * Detalhamento das respostas
 
-   Este relatório mostra o detalhamento das respostas para cada pergunta. Esse detalhamento só está disponível para respostas dos campos armazenados em containers do tipo **[!UICONTROL Question]**. É válido apenas para controles de seleção (sem detalhamento em campos de texto, por exemplo).
+  Este relatório mostra o detalhamento das respostas para cada pergunta. Esse detalhamento só está disponível para respostas dos campos armazenados em containers do tipo **[!UICONTROL Question]**. É válido apenas para controles de seleção (sem detalhamento em campos de texto, por exemplo).
 
-   ![](assets/s_ncs_admin_survey_report_2.png)
+  ![](assets/s_ncs_admin_survey_report_2.png)
 
 ## Exportação de respostas {#exporting-answers}
 
@@ -145,19 +145,19 @@ Edite a caixa de divisão para configurá-la:
 
 * Comece selecionando o schema adequado na guia **[!UICONTROL General]** e configure o subconjunto:
 
-   ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
+  ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
 * Acesse a guia **[!UICONTROL Sub-sets]** e selecione a opção **[!UICONTROL Limit the selected records]**; depois, clique no link **[!UICONTROL Edit...]**.
 
-   ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
+  ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
 * Selecione a opção **[!UICONTROL Keep only the first records after sorting]** e selecione a coluna de classificação. Marque a opção **[!UICONTROL Descending sort]**.
 
-   ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
+  ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
 * Clique no botão **[!UICONTROL Next]** e limite o número de registros a 5.
 
-   ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
+  ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
 * Clique em **[!UICONTROL Finish]** e reinicie o workflow para aprovar o target.
 

@@ -3,7 +3,7 @@ product: campaign
 title: Diretrizes de script e codificação
 description: Saiba mais sobre as diretrizes a serem seguidas ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.)
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-

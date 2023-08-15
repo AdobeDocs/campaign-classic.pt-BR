@@ -3,7 +3,7 @@ product: campaign
 title: Conectar-se a um banco de dados externo
 description: Saiba como se conectar a um banco de dados externo
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -11,7 +11,7 @@ exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '651'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 

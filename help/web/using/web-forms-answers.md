@@ -2,13 +2,13 @@
 product: campaign
 title: Respostas dos formulários web
 description: Respostas dos formulários web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '872'
 ht-degree: 100%
 
 ---
@@ -26,11 +26,11 @@ Para cada campo de entrada em um formulário, as seguintes opções de armazenam
 
 * **[!UICONTROL Edit a recipient]**
 
-   Você pode selecionar um campo do banco de dados: as respostas dos usuários serão armazenadas nesse campo. Para cada usuário, somente o último valor inserido é salvo: ele é adicionado ao perfil. Consulte [Armazenamento de dados no banco de dados](#storing-data-in-the-database).
+  Você pode selecionar um campo do banco de dados: as respostas dos usuários serão armazenadas nesse campo. Para cada usuário, somente o último valor inserido é salvo: ele é adicionado ao perfil. Consulte [Armazenamento de dados no banco de dados](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 
-   Se não quiser armazenar informações no banco de dados, você poderá usar uma variável. As variáveis locais podem ser declaradas como upstream. Consulte [Armazenamento de dados em uma variável local](#storing-data-in-a-local-variable).
+  Se não quiser armazenar informações no banco de dados, você poderá usar uma variável. As variáveis locais podem ser declaradas como upstream. Consulte [Armazenamento de dados em uma variável local](#storing-data-in-a-local-variable).
 
 ### Armazenamento de dados no banco de dados {#storing-data-in-the-database}
 
@@ -88,25 +88,25 @@ Para cada formulário, as respostas fornecidas podem ser reutilizadas nos campos
 
 * Para um conteúdo armazenado em um campo do banco de dados:
 
-   ```
-   <%=ctx.recipient.@field name%
-   ```
+  ```
+  <%=ctx.recipient.@field name%
+  ```
 
 * Para um conteúdo armazenado em uma variável local:
 
-   ```
-   <%= ctx.vars.variable name %
-   ```
+  ```
+  <%= ctx.vars.variable name %
+  ```
 
 * Para um conteúdo armazenado em um campo de texto HTML:
 
-   ```
-   <%== HTML field name %
-   ```
+  ```
+  <%== HTML field name %
+  ```
 
-   >[!NOTE]
-   >
-   >Diferentemente dos outros campos para os quais os `<%=` caracteres são substituídos por caracteres de escape, o conteúdo HTML é salvo como está, usando a sintaxe `<%==`.
+  >[!NOTE]
+  >
+  >Diferentemente dos outros campos para os quais os `<%=` caracteres são substituídos por caracteres de escape, o conteúdo HTML é salvo como está, usando a sintaxe `<%==`.
 
 ## Salvamento das respostas de formulários Web {#saving-web-forms-answers}
 
@@ -118,15 +118,15 @@ Há duas maneiras de usar essa caixa:
 
 * Se o formulário web for acessado por um link enviado em um email e se o usuário que acessar o aplicativo já estiver no banco de dados, você poderá verificar a opção **[!UICONTROL Update the preloaded record]**. Para obter mais informações, consulte [Entrega de um formulário por email](publishing-a-web-form.md#delivering-a-form-via-email).
 
-   Nesse caso, o Adobe Campaign usa a chave primária criptografada do perfil do usuário, um identificador exclusivo atribuído a cada perfil pelo Adobe Campaign. Você precisa configurar as informações para pré-carregar a caixa de pré-carregamento. Para obter mais informações, consulte [Pré-carregamento dos dados do formulário](publishing-a-web-form.md#pre-loading-the-form-data).
+  Nesse caso, o Adobe Campaign usa a chave primária criptografada do perfil do usuário, um identificador exclusivo atribuído a cada perfil pelo Adobe Campaign. Você precisa configurar as informações para pré-carregar a caixa de pré-carregamento. Para obter mais informações, consulte [Pré-carregamento dos dados do formulário](publishing-a-web-form.md#pre-loading-the-form-data).
 
-   >[!CAUTION]
-   >
-   >Essa opção substitui os dados do usuário, incluindo o endereço de email, se houver um campo no qual inseri-lo. Ela não pode ser usada para criar novos perfis e requer o uso de uma caixa de pré-carregamento no formulário.
+  >[!CAUTION]
+  >
+  >Essa opção substitui os dados do usuário, incluindo o endereço de email, se houver um campo no qual inseri-lo. Ela não pode ser usada para criar novos perfis e requer o uso de uma caixa de pré-carregamento no formulário.
 
 * Para enriquecer os dados dos recipients no banco de dados, edite a caixa de armazenamento e selecione a chave de reconciliação. Para uso interno (normalmente um sistema de intranet) ou para um formulário usado para criar novos perfis por exemplo, você pode selecionar o(s) campo(s) de reconciliação. A caixa oferece todos os campos do banco de dados usados nas várias páginas da aplicação web:
 
-   ![](assets/s_ncs_admin_survey_save_box_edit.png)
+  ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
 Por padrão, os dados são importados para o banco de dados por uma operação **[!UICONTROL Update or insertion]**: se existir no banco de dados, o elemento é atualizado (por exemplo, o informativo selecionado ou o endereço de email inserido). Se não existir, as informações serão adicionadas.
 

@@ -2,12 +2,12 @@
 product: campaign
 title: Delivery outline
 description: Saiba mais sobre a atividade do workflow do Delivery outline
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '274'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ A atividade de **delivery outline**, disponível nos workflows da campanha, perm
 
    * Se desejar chamar o mecanismo de oferta, marque a caixa **[!UICONTROL Restrict the number of propositions selected]**. Especifique o espaço de oferta e o número de propostas que serão apresentadas no delivery.
 
-      Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
+     Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
 
    * Se não marcar a caixa, todas as ofertas no delivery outline serão apresentadas sem chamar o mecanismo de oferta.
 

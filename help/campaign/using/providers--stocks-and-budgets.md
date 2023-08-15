@@ -2,12 +2,12 @@
 product: campaign
 title: Provedores, estoques e orçamentos
 description: Provedores, estoques e orçamentos
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Budget Management, Campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1909'
 ht-degree: 100%
 
 ---
@@ -77,10 +77,10 @@ Para criar um template de serviço e definir seu conteúdo, aplique as seguintes
    * Clique no botão **[!UICONTROL Add]** para definir os tipos de custo associados a esta categoria.
    * Se necessário, associada a uma linha de estoque com cada tipo de custo para que as quantidades usadas sejam relacionadas automaticamente aos estoques existentes.
 
-      >[!NOTE]
-      >
-      >As linhas de estoque são definidas no nó **[!UICONTROL Stock management]**.\
-      >Para obter mais informações, consulte [Estoque e gerenciamento de pedidos](#stock-and-order-management).
+     >[!NOTE]
+     >
+     >As linhas de estoque são definidas no nó **[!UICONTROL Stock management]**.\
+     >Para obter mais informações, consulte [Estoque e gerenciamento de pedidos](#stock-and-order-management).
 
 1. Você pode pré-selecionar um valor para essa categoria de custo, que será oferecida por padrão nas categorias de custo do provedor de serviços (em vez de em branco). Para fazer isso, selecione a opção na coluna **[!UICONTROL Selected]** referente ao tipo de categoria em questão:
 
@@ -100,15 +100,15 @@ Clique na guia **[!UICONTROL Cost structure]** para configurar o cálculo de cus
 
 * Para criar a estrutura de custos, selecione o tipo de mensagem e a categoria de custo relacionada às listas suspensas, bem como o tipo de custo ao qual a regra de cálculo será aplicada. O conteúdo dessas listas suspensas é proveniente das informações inseridas por meio da guia **[!UICONTROL Cost categories]**.
 
-   Você deve atribuir um rótulo à estrutura de custos. Por padrão, ela tem o seguinte delivery outline: **Cost category - Type of cost**.
+  Você deve atribuir um rótulo à estrutura de custos. Por padrão, ela tem o seguinte delivery outline: **Cost category - Type of cost**.
 
-   No entanto, você pode renomeá-la: digite o valor desejado diretamente no campo **[!UICONTROL Label]**.
+  No entanto, você pode renomeá-la: digite o valor desejado diretamente no campo **[!UICONTROL Label]**.
 
 * A fórmula de cálculo de custo é definida na seção inferior da janela.
 
-   Essa fórmula pode ser corrigida (para qualquer número de mensagens) ou calculadas de acordo com o número de mensagens.
+  Essa fórmula pode ser corrigida (para qualquer número de mensagens) ou calculadas de acordo com o número de mensagens.
 
-   Quando depender do número de mensagens, a estrutura de cálculo de custos pode ser **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]** ou **[!UICONTROL Constant by threshold]**.
+  Quando depender do número de mensagens, a estrutura de cálculo de custos pode ser **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]** ou **[!UICONTROL Constant by threshold]**.
 
 #### Estrutura linear {#linear-structure}
 
@@ -146,11 +146,11 @@ Para fazer isso, clique na guia **[!UICONTROL Processes]** para configurar o env
 
 * A seção **[!UICONTROL File extraction]** indica o modelo de exportação usado para o delivery quando esse serviço é selecionado. Você pode indicar o nome do arquivo de saída no campo **[!UICONTROL Extraction file]**. O botão à direita do campo permite inserir variáveis.
 
-   ![](assets/s_ncs_user_supplier_node_02a.png)
+  ![](assets/s_ncs_user_supplier_node_02a.png)
 
 * A seção **[!UICONTROL Notification email]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de recipients.
 
-   Por padrão, os modelos de delivery para mensagens de notificação são salvos no nó **[!UICONTROL Administration > Campaign management > Technical delivery templates]**, que é acessível na visualização geral.
+  Por padrão, os modelos de delivery para mensagens de notificação são salvos no nó **[!UICONTROL Administration > Campaign management > Technical delivery templates]**, que é acessível na visualização geral.
 
 * A seção **[!UICONTROL Post-processing]** permite que você selecione o workflow a ser iniciado após a aprovação do delivery. Se um template de workflow for inserido, uma instância de workflow será criada automaticamente e será iniciada assim que a aprovação entrar em vigor. Esse workflow pode enviar o arquivo de extração para um provedor de serviços externos para processamento, por exemplo.
 
@@ -166,12 +166,12 @@ Quando um serviço é selecionado, as categorias de custo correspondentes ao tip
 
 * Para um delivery de mala direta, você pode selecionar o serviço na janela de configuração.
 
-   ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
+  ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
 
 * Para uma entrega em canais móveis ou telefone, é possível aplicar o mesmo modo de seleção.
 * Para um delivery de email, o serviço é selecionado na guia **[!UICONTROL Advanced]** nas propriedades do delivery, como no exemplo a seguir:
 
-   ![](assets/s_ncs_user_supplier_email_delivery_select.png)
+  ![](assets/s_ncs_user_supplier_email_delivery_select.png)
 
 A coluna **[!UICONTROL Amount to surcharge]** permite que você adicione um custo para essa categoria no contexto do delivery ou tarefa relacionada.
 
@@ -236,7 +236,7 @@ Clique no botão **[!UICONTROL Create]** para definir os parâmetros de estoque.
 
 * Indique a quantidade inicialmente em estoque no campo **[!UICONTROL Initial stock]**. Os campos **[!UICONTROL Consumed]** e **[!UICONTROL In stock]** são calculados automaticamente e atualizados conforme as campanhas avançam.
 
-   ![](assets/s_ncs_user_stocks_create_line.png)
+  ![](assets/s_ncs_user_stocks_create_line.png)
 
 * Indique o limite do qual os operadores devem ser avisados no estoque de pedidos no campo **[!UICONTROL Alert level]**. Quando o nível de alerta for atingido, uma mensagem de aviso será exibida na janela de aprovação de entregas usando esse estoque.
 

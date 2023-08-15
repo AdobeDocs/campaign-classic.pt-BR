@@ -2,13 +2,13 @@
 product: campaign
 title: Definir a população alvo
 description: Saiba como definir a população alvo
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Audiences, Proofs
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1610'
 ht-degree: 100%
 
 ---
@@ -52,23 +52,23 @@ Para selecionar os recipients do delivery, siga as etapas abaixo:
    * **[!UICONTROL Filtering conditions]**: esta opção permite que você defina uma consulta e exiba o resultado. O método para definir queries é apresentado [nesta seção](../../platform/using/creating-filters.md#creating-an-advanced-filter).
    * **[!UICONTROL Subscribers of an information service]**: esta opção permite que você selecione um boletim informativo ao qual os recipients devem ser inscritos para receberem o delivery que está sendo criado.
 
-      ![](assets/s_ncs_user_wizard_email02c.png)
+     ![](assets/s_ncs_user_wizard_email02c.png)
 
    * **[!UICONTROL Recipients of a delivery]**: essa opção permite definir os recipients de um delivery existente como um critério de direcionamento. Você deverá selecionar o delivery na lista:
 
-      ![](assets/s_ncs_user_wizard_email02d.png)
+     ![](assets/s_ncs_user_wizard_email02d.png)
 
    * **[!UICONTROL Delivery recipients belonging to a folder]**: essa opção permite selecionar uma pasta de delivery e apontar os recipients dos deliveries nessa pasta.
 
-      ![](assets/s_ncs_user_wizard_email02e.png)
+     ![](assets/s_ncs_user_wizard_email02e.png)
 
-      Você poderá filtrar o comportamento dos recipients ao selecionar na lista suspensa:
+     Você poderá filtrar o comportamento dos recipients ao selecionar na lista suspensa:
 
-      ![](assets/s_ncs_user_wizard_email02f.png)
+     ![](assets/s_ncs_user_wizard_email02f.png)
 
-      >[!NOTE]
-      >
-      >A opção **[!UICONTROL Include sub-folders]** também permite direcionar os deliveries contidos nas pastas localizadas na estrutura de árvore abaixo do nó selecionado.
+     >[!NOTE]
+     >
+     >A opção **[!UICONTROL Include sub-folders]** também permite direcionar os deliveries contidos nas pastas localizadas na estrutura de árvore abaixo do nó selecionado.
 
    * **[!UICONTROL Recipients included in a folder]**: essa opção permite que você direcione aos perfis contidos em uma pasta específica da árvore.
    * **[!UICONTROL A recipient]**: essa opção permite selecionar um recipient específico dos perfis no banco de dados.
@@ -76,7 +76,7 @@ Para selecionar os recipients do delivery, siga as etapas abaixo:
    * **[!UICONTROL User filters]**: essa opção permite que você acesse os filtros pré-configurados para usá-los como critérios de filtragem para perfis no banco de dados. Os filtros pré-configurados são apresentados [nesta seção](../../platform/using/creating-filters.md#saving-a-filter).
    * A opção **[!UICONTROL Exclude recipients corresponding to this segment]** permite apontar os recipients que não atendem aos critérios de target definidos. Para usar essa opção, selecione a caixa apropriada e, em seguida, aplique o direcionamento, conforme definido anteriormente, para excluir os perfis resultantes.
 
-      ![](assets/s_ncs_user_wizard_email02g.png)
+     ![](assets/s_ncs_user_wizard_email02g.png)
 
 1. Insira um nome para esse direcionamento no campo **[!UICONTROL Label]**. Por padrão, o rótulo será o do primeiro critério de direcionamento. Para uma combinação, é melhor usar um nome explícito.
 1. Clique em **[!UICONTROL Finish]** para validar o direcionamento configurado.
@@ -134,23 +134,23 @@ As seguintes opções estão disponíveis:
 
 * **[!UICONTROL Exclude duplicate addresses during delivery]**. Essa opção está ativa por padrão: permite eliminar endereços de email duplicados durante o delivery. A estratégia aplicada pode variar de acordo com a forma como o Adobe Campaign é usado e o tipo de dados no banco de dados.
 
-   O valor padrão da opção poderá ser configurado para cada template de delivery.
+  O valor padrão da opção poderá ser configurado para cada template de delivery.
 
-   Por exemplo:
+  Por exemplo:
 
    * Delivery de um boletim informativo ou delivery eletrônica de documentos. Nenhuma exclusão de duplicatas, em alguns casos, se os dados não tiverem duplicatas nativas. Um casal que faça assinatura usando o mesmo endereço de email poderá esperar receber duas mensagens de email personalizadas específicas: uma endereçada para cada indivíduo por nome. Nesse caso, essa opção poderá ser desmarcada.
    * Delivery de uma campanha de marketing: a exclusão duplicata é essencial para evitar o envio de muitas mensagens para o mesmo recipient. Nesse caso, essa opção poderá ser selecionada.
 
-      Se você desmarcar esta opção, poderá acessar uma opção adicional: **[!UICONTROL Keep duplicate records (same identifier)]**. Ela permite autorizar vários deliveries a recipients que atendem a vários critérios de definição do target.
+     Se você desmarcar esta opção, poderá acessar uma opção adicional: **[!UICONTROL Keep duplicate records (same identifier)]**. Ela permite autorizar vários deliveries a recipients que atendem a vários critérios de definição do target.
 
-      ![](assets/s_ncs_user_wizard_email02j.png)
+     ![](assets/s_ncs_user_wizard_email02j.png)
 
 * **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ou seja, recipients cujos endereços de email estão na lista de bloqueios (“opt out”). Essa opção deve permanecer selecionada para observar a ética profissional de marketing digital e as leis que regem o comércio eletrônico.
 * **[!UICONTROL Exclude quarantined recipients]**. Essa opção permite excluir do target qualquer perfil que não responda. É altamente recomendável manter essa opção selecionada.
 
-   >[!NOTE]
-   >
-   >Para obter mais informações sobre o gerenciamento de quarentena, consulte [Entender o gerenciamento de quarentena](understanding-quarantine-management.md).
+  >[!NOTE]
+  >
+  >Para obter mais informações sobre o gerenciamento de quarentena, consulte [Entender o gerenciamento de quarentena](understanding-quarantine-management.md).
 
 * **[!UICONTROL Limit delivery]** para um determinado número de mensagens. Essa opção permite que você insira o número máximo de mensagens a serem enviadas. Se o conteúdo do target exceder o número de mensagens indicadas, uma seleção aleatória será aplicada ao target.
 

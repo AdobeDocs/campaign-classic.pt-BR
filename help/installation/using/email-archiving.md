@@ -3,7 +3,7 @@ product: campaign
 title: Arquivamento de email
 description: Arquivamento de email
 feature: Installation, Instance Settings, Email
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations

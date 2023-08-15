@@ -2,12 +2,12 @@
 product: campaign
 title: Supervisão de worflows
 description: Saiba como supervisionar workflows do Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '653'
 ht-degree: 100%
 
 ---
@@ -137,17 +137,17 @@ Este template deve incluir:
 * **o endereço de e-mail do supervisor**.
 * **Conteúdo HTML** para inserir texto personalizado.
 
-   ![](assets/uc_monitoring_workflow_variables_diffusion.png)
+  ![](assets/uc_monitoring_workflow_variables_diffusion.png)
 
-   As três variáveis declaradas (WF_Stop, WF_Paused, WF_Error) correspondem às três variáveis de evento do workflow.
+  As três variáveis declaradas (WF_Stop, WF_Paused, WF_Error) correspondem às três variáveis de evento do workflow.
 
-   Essas variáveis devem ser declaradas na guia **Variables** das propriedades do template de delivery.
+  Essas variáveis devem ser declaradas na guia **Variables** das propriedades do template de delivery.
 
-   Para recuperar **o conteúdo das variáveis de evento do workflow**, é preciso declarar as variáveis específicas para a delivery que será inicializada com valores retornados pelo código JavaScript.
+  Para recuperar **o conteúdo das variáveis de evento do workflow**, é preciso declarar as variáveis específicas para a delivery que será inicializada com valores retornados pelo código JavaScript.
 
-   O template de delivery tem o seguinte conteúdo:
+  O template de delivery tem o seguinte conteúdo:
 
-   ![](assets/uc_monitoring_workflow_model_diffusion.png)
+  ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
 Depois que o template tiver sido criado e aprovado, é necessário configurar a atividade **Delivery** para:
 
@@ -161,21 +161,21 @@ Clique duas vezes na atividade **Delivery** e selecione as seguintes opções:
 * Ação para executar: selecione **Prepare and start**.
 * Desmarque a opção **Process errors**.
 
-   ![](assets/uc_monitoring_workflow_optionmodel.png)
+  ![](assets/uc_monitoring_workflow_optionmodel.png)
 
 * Acesse a guia **Script** da atividade **Delivery**, adicione três variáveis de tipo de **character string** por meio do menu de campo de personalização.
 
-   ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
+  ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
 
-   ![](assets/uc_monitoring_workflow_linkvariables.png)
+  ![](assets/uc_monitoring_workflow_linkvariables.png)
 
-   As três variáveis declaradas são:
+  As três variáveis declaradas são:
 
-   ```
-   delivery.variables._var[0].stringValue = vars.strWorkflowError;
-   delivery.variables._var[1].stringValue = vars.strWorkflowPaused;
-   delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
-   ```
+  ```
+  delivery.variables._var[0].stringValue = vars.strWorkflowError;
+  delivery.variables._var[1].stringValue = vars.strWorkflowPaused;
+  delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
+  ```
 
 Depois que esse workflow de monitoramento for iniciado, ele enviará o seguinte resumo para o recipient:
 

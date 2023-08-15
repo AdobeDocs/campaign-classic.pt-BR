@@ -2,12 +2,12 @@
 product: campaign
 title: Templates de campanha de marketing
 description: Templates de campanha de marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1135'
 ht-degree: 100%
 
 ---
@@ -94,53 +94,53 @@ Os links e as guias a seguir serão exibidos:
 
 * **Grupo de controle**
 
-   Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha. Saiba mais sobre grupos de controle [nesta seção](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+  Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha. Saiba mais sobre grupos de controle [nesta seção](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
-   ![](assets/s_ncs_user_op_template_activate_1.png)
+  ![](assets/s_ncs_user_op_template_activate_1.png)
 
 * **Seed addresses**
 
-   Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha. Saiba mais sobre seed addresses [nesta seção](../../delivery/using/about-seed-addresses.md).
+  Quando este módulo está selecionado, uma guia adicional é adicionada às configurações avançadas do template e às campanhas baseadas nesse template. A configuração pode ser definida por meio do modelo ou individualmente para cada campanha. Saiba mais sobre seed addresses [nesta seção](../../delivery/using/about-seed-addresses.md).
 
-   ![](assets/s_ncs_user_op_template_activate_2.png)
+  ![](assets/s_ncs_user_op_template_activate_2.png)
 
 * **Documentos**
 
-   Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edition]** do template e às campanhas com base nesse template. Os documentos anexados podem ser adicionados do modelo ou individualmente para cada campanha. Saiba mais sobre documentos [nesta seção](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
+  Quando este módulo é selecionado, uma guia adicional é adicionada à guia **[!UICONTROL Edition]** do template e às campanhas com base nesse template. Os documentos anexados podem ser adicionados do modelo ou individualmente para cada campanha. Saiba mais sobre documentos [nesta seção](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
 
-   ![](assets/s_ncs_user_op_template_activate_3.png)
+  ![](assets/s_ncs_user_op_template_activate_3.png)
 
 * **Outline**
 
-   Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir os delivery outlines da campanha. Saiba mais sobre delivery outlines [nesta seção](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+  Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir os delivery outlines da campanha. Saiba mais sobre delivery outlines [nesta seção](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
-   ![](assets/s_ncs_user_op_template_activate_4.png)
+  ![](assets/s_ncs_user_op_template_activate_4.png)
 
 * **Direcionamento e workflows**
 
-   Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais workflows para campanhas com base nesse template. Os workflows também podem ser configurados individualmente para cada campanha com base neste modelo. Saiba mais sobre workflows da campanha [nesta seção](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+  Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais workflows para campanhas com base nesse template. Os workflows também podem ser configurados individualmente para cada campanha com base neste modelo. Saiba mais sobre workflows da campanha [nesta seção](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
-   ![](assets/s_ncs_user_op_template_activate_5.png)
+  ![](assets/s_ncs_user_op_template_activate_5.png)
 
-   Quando este módulo é habilitado, uma guia é adicionada às configurações avançadas da campanha para definir a sequência de execução do processo.
+  Quando este módulo é habilitado, uma guia é adicionada às configurações avançadas da campanha para definir a sequência de execução do processo.
 
-   ![](assets/s_ncs_user_op_template_activate_5a.png)
+  ![](assets/s_ncs_user_op_template_activate_5a.png)
 
 * **Aprovação**
 
-   Se você selecionar a opção **[!UICONTROL Approval]**, será possível selecionar os processos que serão aprovados, assim como os operadores de aprovação. Saiba mais sobre aprovações [nesta seção](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+  Se você selecionar a opção **[!UICONTROL Approval]**, será possível selecionar os processos que serão aprovados, assim como os operadores de aprovação. Saiba mais sobre aprovações [nesta seção](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
-   ![](assets/s_ncs_user_op_template_activate_5b.png)
+  ![](assets/s_ncs_user_op_template_activate_5b.png)
 
-   Você pode optar por habilitar ou não a aprovação do processo por meio da guia **[!UICONTROL Approvals]** da seção de configurações avançadas dos templates. As tarefas para as quais a aprovação é selecionada devem ser aprovadas para que o delivery de mensagens seja autorizado.
+  Você pode optar por habilitar ou não a aprovação do processo por meio da guia **[!UICONTROL Approvals]** da seção de configurações avançadas dos templates. As tarefas para as quais a aprovação é selecionada devem ser aprovadas para que o delivery de mensagens seja autorizado.
 
-   Você deve associar um operador de revisor ou grupo de operadores a cada aprovação habilitada.
+  Você deve associar um operador de revisor ou grupo de operadores a cada aprovação habilitada.
 
 * **Despesas e objetivos**
 
-   Quando esse módulo for selecionado, uma guia **[!UICONTROL Budget]** é adicionada aos detalhes do modelo e às campanhas com base nesse modelo para que o orçamento associado possa ser selecionado.
+  Quando esse módulo for selecionado, uma guia **[!UICONTROL Budget]** é adicionada aos detalhes do modelo e às campanhas com base nesse modelo para que o orçamento associado possa ser selecionado.
 
-   ![](assets/s_ncs_user_op_template_activate_7.png)
+  ![](assets/s_ncs_user_op_template_activate_7.png)
 
 ## Propriedades e execução {#general-configuration}
 
@@ -153,14 +153,14 @@ Ao criar um template de campanha, você precisa inserir as seguintes informaçõ
 * Insira o **rótulo** do template: este rótulo será atribuído por padrão para todas as campanhas criadas através deste template.
 * Selecione a **natureza** da campanha na lista suspensa. Os valores disponíveis nesta lista são os que foram salvos na lista discriminada **[!UICONTROL natureOp]**.
 
-   >[!NOTE]
-   >
-   >Para obter mais informações sobre enumerações, consulte a seção [Introdução](../../platform/using/managing-enumerations.md).
+  >[!NOTE]
+  >
+  >Para obter mais informações sobre enumerações, consulte a seção [Introdução](../../platform/using/managing-enumerations.md).
 
 * Selecione o **tipo de campanha**: exclusiva, recorrente ou periódica. Por padrão, os templates de campanha se aplicam a campanhas exclusivas. As campanhas recorrentes e periódicas são detalhadas [nesta seção](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
 * Especifique a duração da campanha, ou seja, o número de dias em que a campanha ocorrerá. Ao criar uma campanha com base nesse template, as datas de início e término da campanha serão preenchidas automaticamente.
 
-   Se a campanha for recorrente, você deverá especificar as datas de início e término da campanha diretamente no template.
+  Se a campanha for recorrente, você deverá especificar as datas de início e término da campanha diretamente no template.
 
 * Especifique o **programa relacionado** do template: campanhas baseadas neste template serão vinculadas ao programa selecionado.
 

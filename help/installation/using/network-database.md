@@ -3,7 +3,7 @@ product: campaign
 title: Rede, banco de dados e SSL/TLS
 description: Saiba mais sobre rede, banco de dados e práticas recomendadas de configuração SSL/TLS
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
@@ -11,7 +11,7 @@ exl-id: 2a66dfaa-7fff-48de-bdd4-62f3ebfbab19
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 33%
+ht-degree: 37%
 
 ---
 

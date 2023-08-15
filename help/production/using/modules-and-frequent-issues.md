@@ -3,7 +3,7 @@ product: campaign
 title: Módulos e problemas frequentes
 description: Módulos e problemas frequentes
 feature: Monitoring, Troubleshooting
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: production
 content-type: reference
@@ -12,7 +12,7 @@ exl-id: dbd50178-0a16-46ed-bfad-47beb3c2a420
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 

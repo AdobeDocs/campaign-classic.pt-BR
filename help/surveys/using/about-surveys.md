@@ -2,13 +2,13 @@
 product: campaign
 title: Introdução às pesquisas
 description: Introdução às pesquisas do Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '534'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,6 @@ Saiba como criar sua primeira pesquisa [nesta página](getting-started-with-surv
 >* As etapas para criar um formulário Web padrão estão disponíveis, em detalhes, [neste documento](../../web/using/about-web-forms.md).
 >
 >* O gerenciamento de aplicativos Web é detalhado [neste documento](../../web/using/about-web-applications.md). Consulte este capítulo para obter mais informações.
-
 
 ## Escopo do recurso {#campaign-surveys-scope}
 

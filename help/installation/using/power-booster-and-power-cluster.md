@@ -3,7 +3,7 @@ product: campaign
 title: Power Boster e Power Cluster
 description: Power Boster e Power Cluster
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
@@ -11,7 +11,7 @@ exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 

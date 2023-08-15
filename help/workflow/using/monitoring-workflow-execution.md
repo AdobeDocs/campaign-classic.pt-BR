@@ -2,12 +2,12 @@
 product: campaign
 title: Monitorar a execução do fluxo de trabalho
 description: Monitorar a execução do fluxo de trabalho
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2023'
 ht-degree: 100%
 
 ---
@@ -42,23 +42,23 @@ O log contém o histórico ou a trilha de auditoria do workflow. Ele registra to
 
 * Selecione a guia **[!UICONTROL Tracking]** no detalhe. Esta lista contém todas as mensagens de workflow.
 
-   ![](assets/new-workflow-display-log-tab.png)
+  ![](assets/new-workflow-display-log-tab.png)
 
 * Filtrar as mensagens de log por atividade. Para fazer isso, clique em **[!UICONTROL Display the tasks and the log]** na barra de ferramentas acima do diagrama para exibir as guias **[!UICONTROL Log]** e **[!UICONTROL Tasks]** logo abaixo. Selecionar uma atividade para exibir todas as mensagens relacionadas. Esta lista contém todas as mensagens quando nenhuma atividade é selecionada.
 
-   ![](assets/new-workflow-display-log-activity.png)
+  ![](assets/new-workflow-display-log-activity.png)
 
-   >[!NOTE]
-   >
-   >Clicar no plano de fundo do diagrama para anular a seleção de todos os elementos.
+  >[!NOTE]
+  >
+  >Clicar no plano de fundo do diagrama para anular a seleção de todos os elementos.
 
 * Visualizar apenas as mensagens vinculadas a uma determinada tarefa. Para fazer isso, selecione a guia **[!UICONTROL Tasks]** e selecione uma atividade no diagrama para restringir a lista. Clique duas vezes em uma tarefa para exibir as informações. A última guia na janela contém o log.
 
-   ![](assets/new-workflow-display-tasks-activity.png)
+  ![](assets/new-workflow-display-tasks-activity.png)
 
-   O botão **[!UICONTROL Details...]** permite a exibição de todas as informações adicionais sobre a execução da atividade. Por exemplo, você pode exibir o operador de validação e quando aplicável, o comentário inserido durante a aprovação, como no exemplo a seguir:
+  O botão **[!UICONTROL Details...]** permite a exibição de todas as informações adicionais sobre a execução da atividade. Por exemplo, você pode exibir o operador de validação e quando aplicável, o comentário inserido durante a aprovação, como no exemplo a seguir:
 
-   ![](assets/new-workflow-display-tasks-activity-details.png)
+  ![](assets/new-workflow-display-tasks-activity-details.png)
 
 >[!NOTE]
 >
@@ -68,15 +68,15 @@ O log exibe a lista cronológica de mensagens de execução relacionadas às ati
 
 * Log de uma campanha de target
 
-   Depois da execução da campanha de target, clique na guia **[!UICONTROL Tracking]** para exibir o rastreamento de execução.
+  Depois da execução da campanha de target, clique na guia **[!UICONTROL Tracking]** para exibir o rastreamento de execução.
 
-   ![](assets/s_user_segmentation_journal.png)
+  ![](assets/s_user_segmentation_journal.png)
 
-   Todas as mensagens da campanha são exibidas: campanhas realizadas, assim como avisos ou erros.
+  Todas as mensagens da campanha são exibidas: campanhas realizadas, assim como avisos ou erros.
 
 * Log de uma atividade
 
-   Você também pode exibir o log de execução e os detalhes de cada atividade. Há duas maneiras de fazer isso:
+  Você também pode exibir o log de execução e os detalhes de cada atividade. Há duas maneiras de fazer isso:
 
    1. Selecione a atividade de target e clique no ícone **[!UICONTROL Display the tasks and the log]**.
 
@@ -96,7 +96,7 @@ O log exibe a lista cronológica de mensagens de execução relacionadas às ati
 
 ## Remoção dos logs {#purging-the-logs}
 
-O histórico do fluxo de trabalho não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão **[!UICONTROL Actions]** localizado na barra de ferramentas acima da lista. Selecione **[!UICONTROL Purge history]**. As opções disponíveis no menu **[!UICONTROL Actions]** estão detalhadas na seção [Actions toolbar](starting-a-workflow.md)
+O histórico do fluxo de trabalho não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão **[!UICONTROL Actions]** localizado na barra de ferramentas acima da lista. Selecione **[!UICONTROL Purge history]**. As opções disponíveis no menu **[!UICONTROL Actions]** estão detalhadas na seção [da barra de ferramentas de Ações](starting-a-workflow.md)
 
 ![](assets/purge_historique.png)
 
@@ -225,9 +225,9 @@ Observe que:
 * Em JavaScript, um valor indefinido é falso em um teste, permitindo testar a variável da instância mesmo antes de ter inicializado.
 * Você pode monitorar as atividades que não são processadas devido a este mecanismo ao adicionar uma instrução de log ao script de inicialização do final &quot;nenhum&quot;.
 
-   ```
-   logInfo("Workflow already running, parallel execution not allowed.");
-   ```
+  ```
+  logInfo("Workflow already running, parallel execution not allowed.");
+  ```
 
 Nesta seção é apresentado um caso de uso: [Coordenação de atualizações de dados](coordinating-data-updates.md).
 

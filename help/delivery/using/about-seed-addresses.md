@@ -2,13 +2,13 @@
 product: campaign
 title: Sobre seed addresses
 description: Introdução a seed addresses
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Seed Address
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '391'
 ht-degree: 100%
 
 ---
@@ -48,4 +48,3 @@ Para deliveries de mala direta, os seed addresses são adicionados durante a ext
 >* Não deve usar a opção **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 >* Se as coleções de elemento forem extraídas, esses campos têm um valor vazio para os seed addresses, a menos que a opção **[!UICONTROL Single row (expert user)]** esteja selecionada. Para obter mais informações, consulte [esta seção](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
 >
-

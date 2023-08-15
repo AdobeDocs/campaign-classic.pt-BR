@@ -2,13 +2,13 @@
 product: campaign
 title: Criar uma pesquisa
 description: Conheça as principais etapas para criar uma pesquisa
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '794'
 ht-degree: 100%
 
 ---
@@ -92,7 +92,6 @@ Além disso, o local de armazenamento para esse campo de entrada deve ser de **[
 >
 >* Essa funcionalidade só está disponível para formulários do tipo **Pesquisa**.
 >* Essa opção não é compatível com a exibição de pergunta aleatória. [Saiba mais](#adding-questions).
-
 
 ### Adicionar perguntas {#adding-questions}
 

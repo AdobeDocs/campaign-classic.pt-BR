@@ -2,12 +2,12 @@
 product: campaign
 title: Delivery recorrente
 description: Saiba mais sobre a atividade de workflow de delivery recorrente
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '278'
 ht-degree: 100%
 
 ---

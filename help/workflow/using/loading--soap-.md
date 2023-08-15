@@ -2,12 +2,12 @@
 product: campaign
 title: Carregamento (SOAP)
 description: Carregamento (SOAP)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 20414e73-2ba9-44f9-8e16-cb6604933ee0
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '258'
 ht-degree: 100%
 
 ---
@@ -50,6 +50,6 @@ A operação é como descrita a seguir:
    * **[!UICONTROL Initialization]**: estabelece uma conexão SOAP.
    * **[!UICONTROL Iteration]**: executa a chamada para o serviço SOAP. O retorno dessa função deve ser um objeto XML compatível com a descrição do exemplo ou do WSDL.
 
-      O código dessa guia será chamado em um loop pelo Adobe Campaign até que um objeto XML nulo seja retornado.
+     O código dessa guia será chamado em um loop pelo Adobe Campaign até que um objeto XML nulo seja retornado.
 
    * **[!UICONTROL Finalization]**: fecha a conexão e/ou libera outros recursos criados durante o processamento.

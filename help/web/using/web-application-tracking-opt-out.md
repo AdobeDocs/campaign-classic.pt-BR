@@ -2,18 +2,18 @@
 product: campaign
 title: Opt out de rastreamento da aplicação web
 description: Opt out de rastreamento da aplicação web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '682'
 ht-degree: 100%
 
 ---
 
-# Opt out de rastreamento da aplicação web{#web-application-tracking-opt-out}
+# Recusa de rastreamento de aplicativo web{#web-application-tracking-opt-out}
 
 
 
@@ -42,11 +42,11 @@ Se o rastreamento web estiver ativado, você pode ter:
 * Nenhum banner.
 * Configure o banner manualmente em cada página: marque essa opção e selecione o banner em cada página nas propriedades da página.
 
-   ![](assets/pageproperties.png)
+  ![](assets/pageproperties.png)
 
 * Adicione automaticamente o banner a todas as páginas: selecione o banner diretamente nas propriedades da aplicação web.
 
-   ![](assets/optoutconfig.png)
+  ![](assets/optoutconfig.png)
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ As APIs disponíveis no lado do cliente para personalizar o banner são:
 * **NL.ClientWebTracking.forbid()**: define o valor do cookie de opt out para proibir o rastreamento web. O rastreamento web precisa de uma entrada de usuário para ser proibido.
 * **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: fecha o banner de cookie de opt out após o usuário clicar no botão Aceitar ou Recusar. (durante a fase de propagação de eventos de clique)
 
-   bannerDomElt {DOMElement} o elemento DOM raiz do banner de cookie que precisa ser removido
+  bannerDomElt {DOMElement} o elemento DOM raiz do banner de cookie que precisa ser removido
 
 * **NL.ClientWebTracking.hasUserPrefs()**: retorna verdadeiro se o usuário tiver escolhido suas preferências para o rastreamento web.
 * **NL.ClientWebTracking.getUserPrefs()**: retorna o valor de cookie de opt out que define as preferências do usuário.
@@ -93,23 +93,23 @@ Se você precisar gravar uma JSSP, as APIs do lado do servidor estarão disponí
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: gera a marcação para o banner de opt out a ser inserido na página JSSP
 
-   **escapeJs {Boolean}**: verdadeiro quando a marcação gerada precisa de escape para ser usada dentro do JavaScript.
+  **escapeJs {Boolean}**: verdadeiro quando a marcação gerada precisa de escape para ser usada dentro do JavaScript.
 
-   Retorna o HTML da marcação de banner de opt out que precisa ser impressa na página.
+  Retorna o HTML da marcação de banner de opt out que precisa ser impressa na página.
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
-   Retorna &quot;true&quot; se o banner de recusa for exibido após a seleção de um banner de recusa pelo administrador
+  Retorna &quot;true&quot; se o banner de recusa for exibido após a seleção de um banner de recusa pelo administrador
 
-   Esse código é chamado quando o administrador já optou por usar o banner de opt out de rastreamento web.
+  Esse código é chamado quando o administrador já optou por usar o banner de opt out de rastreamento web.
 
-   O banner deve ser exibido se o usuário ainda não tiver escolhido ser rastreado ou não.
+  O banner deve ser exibido se o usuário ainda não tiver escolhido ser rastreado ou não.
 
 * **NL.ServerWebTracking.renderOptOutBanner(escapeJs)**
 
-   Renderiza a marcação para o banner de opt out inserindo-o na página JSSP. Ele é chamado como no Jssp entre &lt;% %>
+  Renderiza a marcação para o banner de opt out inserindo-o na página JSSP. Ele é chamado como no Jssp entre &lt;% %>
 
-   **escapeJs {Boolean}**: verdadeiro quando a marcação gerada precisa de escape para ser usada dentro do JavaScript
+  **escapeJs {Boolean}**: verdadeiro quando a marcação gerada precisa de escape para ser usada dentro do JavaScript
 
 Exemplo de JSSP:
 

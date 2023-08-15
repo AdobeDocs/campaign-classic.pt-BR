@@ -3,7 +3,7 @@ product: campaign
 title: Instalação do console do cliente
 description: Saiba como instalar o console do cliente
 feature: Installation, Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-

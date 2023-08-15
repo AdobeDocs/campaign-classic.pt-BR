@@ -2,12 +2,12 @@
 product: campaign
 title: Configurar o aplicativo para dispositivos móveis para o Android no Adobe Campaign
 description: Saiba como configurar seu aplicativo móvel para Android
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Push
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
-source-wordcount: '959'
+workflow-type: tm+mt
+source-wordcount: '966'
 ht-degree: 100%
 
 ---
@@ -95,7 +95,7 @@ Depois de criar o serviço, é necessário criar o aplicativo Android:
 
    >[!NOTE]
    >
-   > A **[!UICONTROL Integration key]** é totalmente personalizável com o valor da sequência de caracteres, mas precisa ser exatamente a mesma especificada no SDK.
+   > A **[!UICONTROL Integration key]** é totalmente personalizável com o valor da string, mas precisa ser exatamente a mesma especificada no SDK.
 
 1. Selecione o **[!UICONTROL API version]**: HTTP v1 ou HTTP (legado). Essas configurações são detalhadas [nesta seção](#select-api-version)
 

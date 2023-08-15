@@ -2,12 +2,12 @@
 product: campaign
 title: Ciclo de vida dos dados
 description: Saiba mais sobre o ciclo de vida dos dados em workflows
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '516'
 ht-degree: 100%
 
 ---
@@ -28,17 +28,17 @@ Para fazer isso, selecione o menu relevante:
 
 * Exibição do target
 
-   Esse menu exibe os dados disponíveis sobre o público-alvo, bem como a estrutura da tabela de trabalho (guia **[!UICONTROL Schema]**).
+  Esse menu exibe os dados disponíveis sobre o público-alvo, bem como a estrutura da tabela de trabalho (guia **[!UICONTROL Schema]**).
 
-   ![](assets/wf-right-click-display.png)
+  ![](assets/wf-right-click-display.png)
 
-   Para obter mais informações, consulte [Tabelas de trabalho e schema de workflow](monitoring-workflow-execution.md#worktables-and-workflow-schema).
+  Para obter mais informações, consulte [Tabelas de trabalho e schema de workflow](monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Análise do target
 
-   Esse menu permite acessar o assistente de análise descritiva que produz estatísticas e relatórios sobre os dados de transição.
+  Esse menu permite acessar o assistente de análise descritiva que produz estatísticas e relatórios sobre os dados de transição.
 
-   Para obter mais informações, consulte esta [seção](../../reporting/using/using-the-descriptive-analysis-wizard.md).
+  Para obter mais informações, consulte esta [seção](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
 Os dados do target são descartados na execução do workflow Somente a última tabela de trabalho está acessível. Você pode configurar o fluxo de trabalho para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do fluxo de trabalho.
 

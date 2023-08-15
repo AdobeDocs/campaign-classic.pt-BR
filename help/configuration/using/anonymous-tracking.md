@@ -3,12 +3,12 @@ product: campaign
 title: Tracking anônimo
 description: Saiba como configurar o rastreamento anônimo
 feature: Configuration, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 

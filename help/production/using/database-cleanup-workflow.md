@@ -3,7 +3,7 @@ product: campaign
 title: Fluxo de trabalho de limpeza do banco de dados
 description: Saiba como os dados obsoletos são limpos automaticamente
 feature: Monitoring, Workflows
-badge-v7-only: label="v7" type="Informative" tooltip="Aplicável somente ao Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: data-processing

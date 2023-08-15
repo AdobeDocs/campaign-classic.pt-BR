@@ -2,12 +2,12 @@
 product: campaign
 title: Emails de entrada
 description: Saiba mais sobre a atividade de workflow de emails de entrada
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '344'
 ht-degree: 100%
 
 ---
@@ -26,31 +26,31 @@ A primeira guia da atividade de **Emails de Entrada** permite inserir os parâme
 
    * **[!UICONTROL Use an external account]**
 
-      Quando essa opção é ativada, você pode selecionar uma conta POP3 externa em vez de inserir os parâmetros de conexão. O campo **[!UICONTROL External account]** especifica a conta do POP3 externa a ser usada para se conectar ao serviço de email. Este campo só estará visível se a opção &#39;Usar uma conta externa&#39; estiver habilitada.
+     Quando essa opção é ativada, você pode selecionar uma conta POP3 externa em vez de inserir os parâmetros de conexão. O campo **[!UICONTROL External account]** especifica a conta do POP3 externa a ser usada para se conectar ao serviço de email. Este campo só estará visível se a opção &#39;Usar uma conta externa&#39; estiver habilitada.
 
-      Se essa opção não estiver selecionada, especifique os seguintes parâmetros:
+     Se essa opção não estiver selecionada, especifique os seguintes parâmetros:
 
-      ![](assets/email_rec_edit_1b.png)
+     ![](assets/email_rec_edit_1b.png)
 
       * **[!UICONTROL POP3 server]**
 
-         Nome do servidor POP3.
+        Nome do servidor POP3.
 
       * **[!UICONTROL POP3 account]**
 
-         Nome do usuário.
+        Nome do usuário.
 
       * **[!UICONTROL Password]**
 
-         Senha da conta do usuário.
+        Senha da conta do usuário.
 
       * **[!UICONTROL Port]**
 
-         Número da porta de conexão POP3. A porta padrão é 110.
+        Número da porta de conexão POP3. A porta padrão é 110.
+
    * **[!UICONTROL Stop as soon as email is processed]**
 
-      Essa opção permite processar emails individualmente. A atividade ativa sua transição apenas uma vez e depois conclui o processamento, deixando mensagens não processadas no servidor.
-
+     Essa opção permite processar emails individualmente. A atividade ativa sua transição apenas uma vez e depois conclui o processamento, deixando mensagens não processadas no servidor.
 
 1. **[!UICONTROL Script]**
 

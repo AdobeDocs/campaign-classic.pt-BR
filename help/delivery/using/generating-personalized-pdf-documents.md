@@ -2,13 +2,13 @@
 product: campaign
 title: Gerar documentos personalizados em PDF
 description: Saiba como gerar documentos personalizados em PDF
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Personalization
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '454'
 ht-degree: 100%
 
 ---
@@ -43,9 +43,9 @@ O procedimento para gerar tabelas dinâmicas é da seguinte maneira:
 * Em cada célula da segunda linha da tabela, insira os scripts que retornam os valores para exibição.
 * Feche o loop na terceira e última linha da tabela.
 
-   Exemplo de definição de tabela dinâmica:
+  Exemplo de definição de tabela dinâmica:
 
-   ![](assets/s_ncs_pdf_table.png)
+  ![](assets/s_ncs_pdf_table.png)
 
 ## Inserir imagens externas {#inserting-external-images}
 
@@ -68,9 +68,9 @@ Para fazer isso, você precisa configurar um bloco de personalização e, em seg
 * Crie um novo bloco de personalização &quot;Meu logotipo&quot; com &quot;Meu_Logotipo&quot; como um nome interno.
 * Clique no link **[!UICONTROL Advanced parameters...]** e marque a opção **[!UICONTROL "The content of the block is included in an attachment"]**. Isso permite copiar a definição do bloco de personalização diretamente para o conteúdo do arquivo OpenOffice.
 
-   ![](assets/s_ncs_pdf_bloc_option.png)
+  ![](assets/s_ncs_pdf_bloc_option.png)
 
-   Você precisa diferenciar dois tipos de declarações no bloco de personalização:
+  Você precisa diferenciar dois tipos de declarações no bloco de personalização:
 
    * O código do Adobe Campaign dos campos de personalização para os quais as divisas &quot;aberto&quot; e &quot;fechado&quot; devem ser substituídas por caracteres de escape (respectivamente `&lt;` e `&gt;`).
    * O código OpenOffice XML inteiro será copiado para o documento OpenOffice.

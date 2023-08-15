@@ -2,12 +2,12 @@
 product: campaign
 title: Publicar o pacote da campanha
 description: Publicar o pacote da campanha
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '463'
 ht-degree: 100%
 
 ---

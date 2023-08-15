@@ -2,18 +2,18 @@
 product: campaign
 title: Templates de publicação
 description: Templates de publicação
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Templates
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '836'
 ht-degree: 100%
 
 ---
 
-# Templates de publicação{#publication-templates}
+# Modelos de publicação{#publication-templates}
 
 
 
@@ -73,21 +73,21 @@ As seguintes opções de publicação estão disponíveis:
 * A opção **[!UICONTROL Multi-file generation]** ativa um modo de publicação de documento especial. Essa opção consiste em preencher uma tag de particionamento no início de cada página do documento de saída. A geração do conteúdo produzirá um arquivo para cada tag de particionamento preenchida. Esse modo é usado para gerar mini sites a partir de um bloco de conteúdo. Para obter mais informações, consulte [Geração de vários arquivos](#multi-file-generation).
 * O campo **[!UICONTROL Location]** contém o nome do arquivo de saída. O nome pode ser composto de variáveis para gerar um nome de arquivo automático.
 
-   Uma variável é preenchida com o seguinte formato: **`$(<xpath>)`**, onde **`<xpath>`** é o caminho de um campo do esquema de dados do modelo de publicação.
+  Uma variável é preenchida com o seguinte formato: **`$(<xpath>)`**, onde **`<xpath>`** é o caminho de um campo do esquema de dados do modelo de publicação.
 
-   O nome de um arquivo pode consistir em um campo tipo data. Para formatar corretamente esse campo, use a função **$date-format**, usando o caminho do campo e o formato de saída como parâmetros.
+  O nome de um arquivo pode consistir em um campo tipo data. Para formatar corretamente esse campo, use a função **$date-format**, usando o caminho do campo e o formato de saída como parâmetros.
 
-   Por padrão, o formato de construção do nome do arquivo usa as variáveis nos campos &quot;@name&quot; e &quot;@date&quot;:
+  Por padrão, o formato de construção do nome do arquivo usa as variáveis nos campos &quot;@name&quot; e &quot;@date&quot;:
 
-   ```
-   ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
-   ```
+  ```
+  ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
+  ```
 
-   O nome do arquivo gerado terá esta aparência: ct_news12_20110901.htm.
+  O nome do arquivo gerado terá esta aparência: ct_news12_20110901.htm.
 
-   >[!NOTE]
-   >
-   >Para obter mais informações sobre a geração de conteúdo, consulte [Criar uma instância de conteúdo](using-a-content-template.md#creating-a-content-instance).
+  >[!NOTE]
+  >
+  >Para obter mais informações sobre a geração de conteúdo, consulte [Criar uma instância de conteúdo](using-a-content-template.md#creating-a-content-instance).
 
 ### Entrega {#delivery}
 

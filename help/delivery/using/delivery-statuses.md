@@ -2,13 +2,13 @@
 product: campaign
 title: Status de delivery
 description: Saiba mais sobre os status disponíveis no painel do delivery
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '644'
 ht-degree: 100%
 
 ---
@@ -99,11 +99,11 @@ Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pen
 
 * O MTA (Message Transfer Agent), que executa módulos e processos no servidor de delivery e que gerencia o envio de emails, pode não ter sido iniciado ou precisa ser reiniciado.
 
-   Para verificar isso e iniciar o módulo se necessário, siga as seguintes etapas:
+  Para verificar isso e iniciar o módulo se necessário, siga as seguintes etapas:
 
-   >[!NOTE]
-   >
-   >Esta operação pode ser executada com um modelo de hospedagem **no local** ou **híbrido** com acesso ao servidor do Campaign (consulte [modelos de hospedagem](../../installation/using/hosting-models.md)).
+  >[!NOTE]
+  >
+  >Esta operação pode ser executada com um modelo de hospedagem **no local** ou **híbrido** com acesso ao servidor do Campaign (consulte [modelos de hospedagem](../../installation/using/hosting-models.md)).
 
    1. Verifique se os `mta@<instance>` módulos são iniciados nos servidores MTA.
 
@@ -127,13 +127,13 @@ Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pen
 
 * Pode ser que o delivery esteja usando uma afinidade não configurada no servidor emissor.
 
-   Nesse caso, verifique a configuração do gerenciamento de tráfego (afinidade IP) e use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao MTA que gerencia a afinidade. Para obter mais informações sobre afinidades, consulte [esta seção](../../installation/using/configure-delivery-settings.md).
+  Nesse caso, verifique a configuração do gerenciamento de tráfego (afinidade IP) e use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao MTA que gerencia a afinidade. Para obter mais informações sobre afinidades, consulte [esta seção](../../installation/using/configure-delivery-settings.md).
 
 * Quando muitas campanhas são executadas, o status do delivery permanece como &quot;Pendente&quot;.
 
-   O limite de campanhas simultâneas é definido na opção **[!UICONTROL NmsOperation_LimitConcurrency]**. O valor padrão é 10.
+  O limite de campanhas simultâneas é definido na opção **[!UICONTROL NmsOperation_LimitConcurrency]**. O valor padrão é 10.
 
-   Saiba mais sobre opções [nesta página](../../installation/using/configuring-campaign-options.md).
+  Saiba mais sobre opções [nesta página](../../installation/using/configuring-campaign-options.md).
 
 
 **Tópicos relacionados:**

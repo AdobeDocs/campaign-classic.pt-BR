@@ -2,12 +2,12 @@
 product: campaign
 title: Lista de leitura
 description: Saiba mais sobre a atividade de workflow de Lista de leitura
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '495'
 ht-degree: 100%
 
 ---

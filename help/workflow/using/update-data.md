@@ -2,12 +2,12 @@
 product: campaign
 title: Atualizar dados
 description: Saiba mais sobre a atividade de workflow Atualizar dados
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Targeting Activity, Data Management
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '856'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,7 @@ Especificar como identificar os registros no banco de dados:
 
 * Se as entradas de dados se relacionam a uma dimensão de direcionamento existente, selecione a opção **[!UICONTROL By directly using the targeting dimension]** e a selecione no campo **[!UICONTROL Updated dimension]**.
 
-   É possível exibir os campos da dimensão selecionada usando o botão de lupa **[!UICONTROL Edit this link]**.
+  É possível exibir os campos da dimensão selecionada usando o botão de lupa **[!UICONTROL Edit this link]**.
 
 * Caso contrário, especifique um ou mais links que permitirão a identificação dos dados no banco de dados ou uso direto das chaves de reconciliação.
 

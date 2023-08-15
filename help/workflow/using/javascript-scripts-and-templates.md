@@ -2,12 +2,12 @@
 product: campaign
 title: Modelos e scripts JavaScript
 description: Modelos e scripts JavaScript
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1249'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Os scripts são universais em um diagrama de workflow:
 * A atividade de &#39;Teste&#39; avalia expressões JavaScript para ativar a transição apropriada.
 * A maioria dos campos de texto são templates do JavaScript: expressões JavaScript podem ser incluídas entre &lt;%= and %>. Estes campos oferecem um botão que abre uma lista suspensa para ajudá-lo a inserir expressões.
 
-   ![](assets/script-button.png)
+  ![](assets/script-button.png)
 
 ## Objetos expostos {#objects-exposed}
 

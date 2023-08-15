@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '758'
 ht-degree: 100%
 
 ---
@@ -99,13 +99,13 @@ Para modificar permissões, você pode:
 
 * **Substituir um grupo ou um operador**. Para fazer isso, clique em um dos grupos (ou operadores) com direitos à pasta e selecione um novo grupo (ou um novo operador) na lista suspensa:
 
-   ![](assets/s_ncs_user_folder_properties_security02.png)
+  ![](assets/s_ncs_user_folder_properties_security02.png)
 
 * **Autorizar um grupo ou um operador**. Para fazer isso, clique no botão **[!UICONTROL Add]** e selecione o grupo ou operador ao qual deseja atribuir autorizações para essa pasta.
 * **Proibir um grupo ou operador**. Para fazer isso, clique em **[!UICONTROL Delete]** e selecione o grupo ou operador do qual deseja remover a autorização para essa pasta.
 * **Selecionar os direitos atribuídos a um grupo ou a um operador**. Para fazer isso, clique no grupo ou operador relacionado, selecione os direitos de acesso que deseja conceder e desmarque os outros.
 
-   ![](assets/s_ncs_user_folder_properties_security03.png)
+  ![](assets/s_ncs_user_folder_properties_security03.png)
 
 ### Propagar permissões {#propagate-permissions}
 

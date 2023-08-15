@@ -2,12 +2,12 @@
 product: campaign
 title: Acessar campanhas de marketing
 description: Acessar campanhas de marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1206'
 ht-degree: 100%
 
 ---
@@ -71,13 +71,13 @@ Ao editar um programa, use as guias descritas abaixo para procurar e configurar.
 
 * A guia **Programação** exibe o calendário de programas de um mês, semana ou dia, dependendo da guia que você selecionar no cabeçalho do calendário.
 
-   Se necessário, você pode criar uma campanha, um programa ou uma tarefa por esta página.
+  Se necessário, você pode criar uma campanha, um programa ou uma tarefa por esta página.
 
-   ![](assets/s_ncs_user_interface_campaign02.png)
+  ![](assets/s_ncs_user_interface_campaign02.png)
 
 * A guia **Editar** permite personalizar o programa: nome, datas de início e término, orçamento, documentos vinculados etc.
 
-   ![](assets/s_ncs_user_interface_campaign05.png)
+  ![](assets/s_ncs_user_interface_campaign05.png)
 
 #### Procurar campanhas {#browsing-campaigns}
 

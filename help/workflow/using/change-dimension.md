@@ -2,17 +2,17 @@
 product: campaign
 title: Alterar dimensão
 description: Alterar dimensão
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '377'
 ht-degree: 100%
 
 ---
 
-# Alterar dimensão{#change-dimension}
+# Mudar dimensão{#change-dimension}
 
 
 
@@ -52,27 +52,27 @@ Para configurar a atividade de alteração de dimensão, aplique as seguintes et
 
    * Clique no link **[!UICONTROL Add data...]** e selecione **[!UICONTROL Data linked to the filtering dimension]**.
 
-      ![](assets/wf_change-dimension_sample_01.png)
+     ![](assets/wf_change-dimension_sample_01.png)
 
-      >[!NOTE]
-      >
-      >Para obter mais informações sobre como criar e gerenciar colunas adicionais, consulte [Adição de dados](query.md#adding-data).
+     >[!NOTE]
+     >
+     >Para obter mais informações sobre como criar e gerenciar colunas adicionais, consulte [Adição de dados](query.md#adding-data).
 
    * Selecione a dimensão do target anterior (antes da troca de eixo) e selecione **[!UICONTROL Zip Code]** na árvore secundária **[!UICONTROL Location]** do recipient e clique em **[!UICONTROL Edit expression]**.
 
-      ![](assets/wf_change-dimension_sample_02.png)
+     ![](assets/wf_change-dimension_sample_02.png)
 
    * Clique em **[!UICONTROL Advanced selection]** e escolha **[!UICONTROL Edit the formula using an expression]**.
 
-      ![](assets/wf_change-dimension_sample_03.png)
+     ![](assets/wf_change-dimension_sample_03.png)
 
    * Use as funções oferecidas na lista e especifique o cálculo a ser executado.
 
-      ![](assets/wf_change-dimension_sample_04.png)
+     ![](assets/wf_change-dimension_sample_04.png)
 
    * Finalmente, insira o rótulo da coluna que acabou de criar.
 
-      ![](assets/wf_change-dimension_sample_05.png)
+     ![](assets/wf_change-dimension_sample_05.png)
 
 1. Execute o workflow para exibir o resultado dessa configuração. Compare os dados nas tabelas antes e depois da atividade de alteração de dimensão e compare a estrutura das tabelas do workflow, conforme mostrado nos exemplos a seguir:
 

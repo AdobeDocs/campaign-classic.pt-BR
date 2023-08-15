@@ -2,13 +2,13 @@
 product: campaign
 title: "Caso de uso: criar gerenciamento de conteúdo"
 description: "Caso de uso: criar gerenciamento de conteúdo"
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1185'
 ht-degree: 100%
 
 ---
@@ -103,13 +103,13 @@ Para criar um schema de dados, siga as etapas abaixo:
   <tr> 
    <td> Título<br /> </td> 
    <td> Atributo<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> Título<br /> </td> 
   </tr> 
   <tr> 
    <td> Subtítulo<br /> </td> 
    <td> Atributo<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> Nome<br /> </td> 
   </tr> 
   <tr> 
@@ -127,7 +127,7 @@ Para criar um schema de dados, siga as etapas abaixo:
   <tr> 
    <td> Foto do autor<br /> </td> 
    <td> Atributo<br /> </td> 
-   <td> Cadeia de caracteres<br /> </td> 
+   <td> String<br /> </td> 
    <td> URL<br /> </td> 
   </tr> 
   <tr> 
