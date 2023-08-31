@@ -4,17 +4,16 @@ title: Criar uma notificação por push para dispositivos iOS
 description: Saiba como criar notificações por push para iOS
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Push
+role: User, Developer, Data Engineer
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '972'
 ht-degree: 100%
 
 ---
 
 # Criar notificações para iOS{#create-notifications-ios}
-
-
 
 Esta seção detalha os elementos específicos para a entrega de notificações do iOS. Os conceitos globais sobre a criação de entregas são apresentados [nesta seção](steps-about-delivery-creation-steps.md).
 
