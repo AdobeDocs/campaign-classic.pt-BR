@@ -5,17 +5,16 @@ description: Saiba mais sobre o desempenho da entrega e as práticas recomendada
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability
+role: User, Data Engineer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '470'
 ht-degree: 100%
 
 ---
 
 # Práticas recomendadas de desempenho de entrega {#delivery-performances}
-
-
 
 Recomendamos seguir as diretrizes abaixo para garantir que seus deliveries tenham bom desempenho, bem como as verificações de desempenho caso haja problemas com deliveries.
 
