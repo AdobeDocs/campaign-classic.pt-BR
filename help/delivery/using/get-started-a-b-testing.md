@@ -5,16 +5,16 @@ description: Saiba mais sobre o teste A/B no Campaign
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: A/B Testing
+role: User
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '361'
 ht-degree: 100%
 
 ---
 
 # Introdução ao teste A/B {#get-started-a-b-testing}
-
 
 
 O teste A/B permite que você compare várias versões de um delivery entre si, a fim de identificar qual terá o maior impacto na população direcionada.
