@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: A/B Testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 100%
+source-wordcount: '249'
+ht-degree: 96%
 
 ---
 
-# Configurar as entregas no fluxo de trabalho {#step-4--configuring-the-deliveries-in-the-workflow}
-
-
+# Teste AB: configurar os deliveries no fluxo de trabalho {#step-4--configuring-the-deliveries-in-the-workflow}
 
 Depois que [populações forem criadas](a-b-testing-uc-population-samples.md), você poderá configurar as entregas. Nesse caso de uso, as duas primeiras entregas permitem enviar conteúdo diferente às populações A e B. A terceira entrega é a de fallback: ela será enviada aos recipients que não pertencerem a A nem B. O conteúdo será calculado por um script e será idêntico a A ou B, dependendo de qual deles obteve a maior taxa de abertura. Precisamos configurar um período de espera para o terceiro delivery, para descobrir o resultado dos deliveries A e B. É por isso que o terceiro delivery inclui uma atividade **[!UICONTROL Wait]**.
 

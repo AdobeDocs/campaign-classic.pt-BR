@@ -5,16 +5,16 @@ description: Saiba mais sobre como gerenciar a capacidade de delivery no Adobe C
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability
+role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # Controlar conteúdo da mensagem{#control-message-content}
-
 
 
 Para garantir que seus emails cheguem aos recipients e melhorem a taxa de capacidade de delivery de email, eles devem respeitar várias regras. Caso contrário, o conteúdo de determinadas mensagens pode ser detectado como spam. O Adobe Campaign fornece várias ferramentas para fazer com que o conteúdo esteja em conformidade com essas regras.
@@ -43,7 +43,7 @@ Para obter mais informações, consulte [esta página](defining-the-email-conten
 
 ## Personalização {#personalization}
 
-Para melhorar a experiência dos recipients e fazer com que eles abram seu email, o Adobe Campaign permite personalizar as mensagens.
+Para melhorar a experiência dos recipients e fazer com que eles abram seu email, o Adobe Campaign permite personalizar suas mensagens.
 
 Para obter mais informações sobre o uso de campos de personalização no Adobe Campaign, consulte [esta seção](personalization-fields.md).
 

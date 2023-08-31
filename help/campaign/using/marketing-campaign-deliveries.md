@@ -2,10 +2,11 @@
 product: campaign
 title: Deliveries de campanha de marketing
 description: Saiba mais sobre deliveries de campanha de marketing
+role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1494'
 ht-degree: 100%
@@ -38,7 +39,7 @@ Depois que todas as solicitações de aprovação tiverem sido concedidas, o sta
 
 >[!NOTE]
 >
->Se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery, você também poderá permitir que o operador responsável pelo delivery confirme o delivery. Para fazer isso, ative a opção **NMS_ActivateOwnerConfirmation** inserindo **1** como o valor. As opções são gerenciadas no nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** no explorador do Adobe Campaign.
+>Se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery, você também poderá permitir que o operador responsável pelo delivery confirme o delivery. Para fazer isso, ative a opção **NMS_ActivateOwnerConfirmation** inserindo **1** como o valor. As opções são gerenciadas no nó **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** no explorer do Adobe Campaign.
 >  
 >Para desativar essa opção, insira **0** como valor. O processo de confirmação de delivery funcionará como padrão: somente o operador ou grupo de operadores designado ao delivery nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o delivery.
 

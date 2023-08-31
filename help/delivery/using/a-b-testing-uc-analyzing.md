@@ -5,17 +5,16 @@ description: Saiba como executar testes A/B por meio de um caso de uso dedicado
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: A/B Testing
+role: User
 exl-id: e6f39180-d161-4226-810a-10bb1c3682ca
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 100%
+source-wordcount: '117'
+ht-degree: 95%
 
 ---
 
-# Analisar o resultado {#step-8--analyzing-the-result}
-
-
+# Teste AB: analisar o resultado {#step-8--analyzing-the-result}
 
 Depois que os deliveries de teste forem enviados, será possível verificar a quais recipients eles foram enviados e se foram abertos ou não.
 

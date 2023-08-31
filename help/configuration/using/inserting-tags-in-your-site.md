@@ -3,9 +3,10 @@ product: campaign
 title: Inserir tags de rastreamento Web no site
 description: Saiba como inserir tags de rastreamento Web no site
 feature: Configuration
+role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 2%

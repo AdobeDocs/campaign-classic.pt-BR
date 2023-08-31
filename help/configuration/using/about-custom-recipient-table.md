@@ -3,10 +3,11 @@ product: campaign
 title: Sobre tabela de recipient personalizada
 description: Sobre tabela de recipient personalizada
 feature: Configuration, Custom Resources
+role: User, Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 3%
@@ -14,8 +15,6 @@ ht-degree: 3%
 ---
 
 # Usar tabela de recipient personalizada{#about-custom-recipient-table}
-
-
 
 Esta seção detalha os princípios para usar uma tabela de recipient personalizada (ou externa).
 

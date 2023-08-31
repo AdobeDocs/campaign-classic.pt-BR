@@ -4,8 +4,9 @@ title: Descrição do modelo de dados do Adobe Campaign Classic
 description: Este documento descreve o modelo de dados do Adobe Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Data Model
+role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '2381'
 ht-degree: 2%

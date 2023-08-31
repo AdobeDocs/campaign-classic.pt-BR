@@ -4,8 +4,9 @@ title: Configurar o aplicativo para dispositivos móveis para o Android no Adobe
 description: Saiba como configurar seu aplicativo móvel para Android
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Push
+role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '966'
 ht-degree: 100%
@@ -13,8 +14,6 @@ ht-degree: 100%
 ---
 
 # Etapas de configuração para Android
-
-
 
 Depois que o pacote for instalado, você poderá definir as configurações do aplicativo Android no Adobe Campaign Classic.
 

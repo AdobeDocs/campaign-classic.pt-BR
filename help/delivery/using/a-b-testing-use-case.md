@@ -5,17 +5,16 @@ description: Saiba como executar testes A/B por meio de um caso de uso dedicado
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: A/B Testing
+role: User
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 100%
+source-wordcount: '260'
+ht-degree: 96%
 
 ---
 
-# Teste A/B deste caso de uso {#ab-testing-use-case}
-
-
+# Teste AB: Teste A/B deste caso de uso {#ab-testing-use-case}
 
 Nesse caso de uso, vamos comparar dois conteúdos de delivery de e-mail por meio de um workflow para construção do target. A mensagem e o texto são idênticos nas duas remessas: apenas o layout é alterado.
 
