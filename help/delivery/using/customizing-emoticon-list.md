@@ -5,17 +5,16 @@ description: Saiba como personalizar a lista de emoticons ao usar o Adobe Campai
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email, Push
+role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '454'
 ht-degree: 100%
 
 ---
 
 # Personalizar a lista de emoticons {#customize-emoticons}
-
-
 
 A lista de emoticons exibida na janela pop-up é regida por uma lista discriminada que permite exibir valores em uma lista para restringir as opções que o usuário tem para um determinado campo.
 A ordem da lista de emoticons pode ser personalizada; você também pode adicionar outros emoticons à lista.
