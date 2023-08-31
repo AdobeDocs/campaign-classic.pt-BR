@@ -5,17 +5,16 @@ description: Esta seção fornece as informações gerais específicas para o ca
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email
+role: User
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '148'
 ht-degree: 100%
 
 ---
 
 # Sobre o canal de email{#about-email-channel}
-
-
 
 O Adobe Campaign permite a entrega de mensagens eletrônicas personalizadas em massa para uma população-alvo.
 
