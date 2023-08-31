@@ -2,11 +2,12 @@
 product: campaign
 title: Templates de campanha de marketing
 description: Templates de campanha de marketing
+role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '1135'
 ht-degree: 100%
 
@@ -30,7 +31,7 @@ Um modelo integrado é fornecido para criar uma campanha para a qual nenhuma con
 
 Para criar um template de campanha, siga as etapas abaixo:
 
-1. Abra o **Gerenciador** de Campanha.
+1. Abra o **Explorer** de Campanha.
 1. Em **Resources > Templates > Campaign templates**, clique em **New** na barra de ferramentas acima da lista de templates.
 
    ![](assets/create_campaign_template_1.png)
