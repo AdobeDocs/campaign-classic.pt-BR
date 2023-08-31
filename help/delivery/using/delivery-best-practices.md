@@ -5,16 +5,16 @@ description: Saiba mais sobre as práticas recomendadas ao projetar e enviar um 
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability
+role: User
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '115'
 ht-degree: 100%
 
 ---
 
 # Práticas recomendadas de delivery {#delivery-best-practices}
-
 
 
 Conheça as práticas recomendadas relacionadas ao design e envio com o Adobe Campaign. Use os links abaixo para navegar pelos tópicos e encontrar orientação.
