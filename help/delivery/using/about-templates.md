@@ -5,17 +5,16 @@ description: Introdução a modelos de delivery
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Delivery Templates
+role: User
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '288'
 ht-degree: 100%
 
 ---
 
 # Sobre modelos{#about-templates}
-
-
 
 A configuração do delivery pode ser salva em um template de delivery para ser reutilizada. O template pode conter uma configuração completa ou parcial do delivery.
 
