@@ -5,17 +5,16 @@ description: Saiba mais sobre os principais pontos a serem verificados ao gerenc
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability, Troubleshooting
+role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '666'
 ht-degree: 100%
 
 ---
 
 # Solução de problemas da capacidade de entrega{#deliverability-faq}
-
-
 
 Ocorreu algum problema com a capacidade de entrega? Encontre a solução aqui.
 
