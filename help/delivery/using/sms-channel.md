@@ -5,8 +5,9 @@ description: Introdução ao canal de SMS
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: SMS
+role: User
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 100%
@@ -14,9 +15,6 @@ ht-degree: 100%
 ---
 
 # Introdução ao canal de SMS{#sms-channel}
-
-
-
 
 Use o Adobe Campaign para enviar mensagens SMS personalizadas.
 

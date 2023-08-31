@@ -4,8 +4,9 @@ title: Solução de problemas de push
 description: Solução de problemas de push
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Push, Troubleshooting
+role: User
 exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
@@ -13,8 +14,6 @@ ht-degree: 100%
 ---
 
 # Solução de problemas{#troubleshooting}
-
-
 
 Se o dispositivo móvel estiver conectado ao wi-fi e você não estiver recebendo notificações, verifique se as portas FCM/APNS não estão bloqueadas pelo firewall.
 

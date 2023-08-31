@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '437'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
 # Atualizar rejeições incorretas após a interrupção da Apple {#update-bounce-qualification.md}
-
-
 
 ## Contexto
 
@@ -45,13 +43,13 @@ Com base no período do incidente, abaixo estão as diretrizes recomendadas para
 
 * Para instâncias do Campaign com informações de resposta de rejeição SMTP no campo **[!UICONTROL Error text]** da lista de quarentena:
 
-   * **O texto de erro (texto de quarentena)** contém &quot;pesquisa de usuário bem-sucedida, mas nenhum registro de usuário encontrado&quot; E o texto **Erro (texto de quarentena)** contém &quot;support.apple.com&quot;
+   * **Texto de erro (texto de quarentena)** contém &quot;pesquisa de usuário bem-sucedida, mas nenhum registro de usuário encontrado&quot; E **Texto de erro (texto de quarentena)** contém &quot;support.apple.com&quot;
    * **Atualizar status (@lastModified)** em ou após 26/04/2021 07:00:00 AM
    * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 01:00:00 PM
 
 * Para instâncias do Campaign com informações de regra de Email de entrada no campo **[!UICONTROL Error text]** da lista de quarentena:
 
-   * **O texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
+   * **Texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
    * **Domínio de email (@domain)** igual a icloud.com OU **Domínio de email (@domain)** igual a me.com OU **Domínio de email (@domain)** igual a mac.com
    * **Atualizar status (@lastModified)** em ou após 26/04/2021 07:00:00 AM
    * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 01:00:00 PM

@@ -5,8 +5,9 @@ description: Saiba mais sobre as instruções de pré-processamento a serem usad
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring
+role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 100%
@@ -14,8 +15,6 @@ ht-degree: 100%
 ---
 
 # Instruções de pré-processamento {#pre-processing-instructions}
-
-
 
 Você pode usar uma sintaxe específica no conteúdo do delivery para adicionar instruções e criar scripts para o URL do email rastreado. As instruções &lt;%@ não estão em JavaScript: essa sintaxe é específica do Adobe Campaign.
 

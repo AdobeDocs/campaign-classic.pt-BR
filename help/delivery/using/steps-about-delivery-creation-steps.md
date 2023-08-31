@@ -5,8 +5,9 @@ description: Descubra as principais etapas de criação de entregas no Adobe Cam
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Channel Configuration
+role: User
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 100%
@@ -14,8 +15,6 @@ ht-degree: 100%
 ---
 
 # Sobre etapas de criação de entregas {#about-delivery-creation}
-
-
 
 As principais etapas ao criar um delivery são as seguintes:
 
