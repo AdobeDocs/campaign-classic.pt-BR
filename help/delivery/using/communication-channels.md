@@ -5,17 +5,16 @@ description: Criar deliveries para enviar mensagens personalizadas em diferentes
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
+role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '1216'
 ht-degree: 100%
 
 ---
 
 # Canais de comunicação{#communication-channels}
-
-
 
 Com o Adobe Campaign, você pode enviar campanhas em vários canais, incluindo emails, SMS, mensagens pelo LINE, notificações por push e correspondência direta, e medir sua eficácia usando vários [relatórios](../../reporting/using/delivery-reports.md) exclusivos. Essas mensagens são projetadas e enviadas por deliveries, além disso podem ser personalizadas para cada recipient.
 
