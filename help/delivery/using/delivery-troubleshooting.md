@@ -5,17 +5,16 @@ description: Saiba mais sobre o desempenho do delivery e como solucionar problem
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring, Deliverability, Troubleshooting
+role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '803'
 ht-degree: 100%
 
 ---
 
 # Solução de problemas de envio de entrega {#delivery-troubleshooting}
-
-
 
 Esta seção lista problemas comuns que você pode encontrar ao enviar deliveries e como solucioná-los.
 
