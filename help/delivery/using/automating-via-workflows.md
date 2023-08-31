@@ -5,17 +5,16 @@ description: Saiba como automatizar o gerenciamento de conteúdo por meio de wor
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Workflows
+role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '1202'
 ht-degree: 100%
 
 ---
 
 # Automatizar com workflows{#automating-via-workflows}
-
-
 
 ## Atividade de gestão de conteúdo {#content-management-activity}
 
