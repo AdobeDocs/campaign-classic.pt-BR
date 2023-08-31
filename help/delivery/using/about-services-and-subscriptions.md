@@ -5,17 +5,16 @@ description: Introdução a serviços e subscrições no Adobe Campaign
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Subscriptions
+role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '166'
 ht-degree: 100%
 
 ---
 
 # Sobre serviços e subscrições{#about-services-and-subscriptions}
-
-
 
 O Adobe Campaign permite que você crie e administre serviços de informações, como boletins informativos e gerencie as subscrições a esses serviços. Vários serviços podem ser definidos em paralelo, por exemplo: boletins informativos especializados para determinadas categorias de produtos, temas ou áreas de um site, subscrições a vários tipos de mensagens de alerta e notificações em tempo real. Consulte [Gerenciar assinaturas](managing-subscriptions.md).
 
