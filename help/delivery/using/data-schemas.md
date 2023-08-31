@@ -5,17 +5,16 @@ description: Saiba como usar esquemas de dados no Campaign
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Data Model
+role: User, Developer, Data Engineer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '570'
 ht-degree: 100%
 
 ---
 
 # Uso de esquemas de dados no Campaign{#data-schemas}
-
-
 
 Abaixo estão alguns princípios gerais sobre o uso de schemas de dados no Adobe Campaign.
 
