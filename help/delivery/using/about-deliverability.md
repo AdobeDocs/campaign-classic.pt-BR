@@ -8,9 +8,9 @@ feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '736'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Os problemas de capacidade de delivery estão geralmente ligados às medidas de 
 
 ### Taxa da capacidade de delivery
 
-A taxa da capacidade de delivery é o número de mensagens que chegam nas caixas de entrada dos recipients em comparação ao número de mensagens que foram entregues. Para melhorar a capacidade de delivery, você pode trabalhar para aumentar essa taxa.
+A taxa de capacidade de entrega é o número de mensagens que chegam nas caixas de entrada dos destinatários em comparação ao número de mensagens que foram entregues. Para melhorar a capacidade de delivery, você pode trabalhar para aumentar essa taxa.
 
 Com o Adobe Campaign, a taxa da capacidade de delivery depende de vários fatores, principalmente:
 
@@ -81,7 +81,7 @@ Alguns provedores de acesso à Internet consideram automaticamente emails como s
 
 Para obter mais informações, consulte estas seções:
 
-* [Entender as falhas de delivery](understanding-delivery-failures.md)
+* [Entender as falhas de entrega](understanding-delivery-failures.md)
 * [Entender o gerenciamento de quarentena](understanding-quarantine-management.md)
 * [Quarentena × lista de bloqueios](understanding-quarantine-management.md#quarantine-vs-denylist)
 
