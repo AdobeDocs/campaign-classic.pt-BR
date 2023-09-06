@@ -8,13 +8,13 @@ feature: A/B Testing
 role: User
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '122'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Teste AB: definir o delivery final {#step-6--defining-the-final-delivery}
+# Teste A/B: definir a entrega final {#step-6--defining-the-final-delivery}
 
 Depois que o script for criado para selecionar o vencedor do teste A/B, será possível definir os parâmetros do delivery final.
 
