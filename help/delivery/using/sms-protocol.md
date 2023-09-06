@@ -8,9 +8,9 @@ feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8458'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -833,10 +833,10 @@ Mesmo se você não conseguir verificar os registros sozinho, será mais fácil 
 ### Testar o SMS {#test}
 
 * **Enviar SMS com todos os tipos de caracteres**
-Se você precisar enviar SMS com caracteres não GSM ou não ASCII, tente enviar algumas mensagens com o maior número possível de caracteres diferentes. Se você configurar uma tabela de mapeamento de caracteres personalizada, envie pelo menos um SMS para todos os possíveis `data_coding` valores.
+Se você precisar enviar SMS com caracteres não GSM ou não ASCII, tente enviar algumas mensagens com o maior número possível de caracteres diferentes. Se você configurar uma tabela de mapeamento de caracteres personalizada, envie pelo menos um SMS para todos os possíveis Valores de `data_coding`.
 
 * **Verifique se o SR está corretamente processado**
-O SMS deve ser marcado como recebido no log de delivery. O log de delivery deve ser bem-sucedido e ter a seguinte aparência:
+O SMS deve ser marcado como recebido no log de entregas. O log de entrega deve ser bem-sucedido e ter a seguinte aparência:
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
 Verifique se você alterou o nome do provedor de delivery. O registro de delivery nunca deve conter **SR genérico** em ambientes de produção.
 
