@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1206'
 ht-degree: 100%
 
@@ -174,7 +174,7 @@ Esta tabela resume as ações que você pode realizar nas campanhas a partir de 
 | --- | --- |
 | Lista de campanhas, deliveries, ofertas, etc. | Excluir um item da lista |
 | Campanha | Cancelar uma campanha |
-| Delivery | Aprovar o conteúdo e o target do delivery<br/>Enviar o conteúdo do delivery<br/>Confirmar um delivery<br/>Pausar e parar um delivery |
+| Entrega | Aprovar o conteúdo e o target do delivery<br/>Enviar o conteúdo do delivery<br/>Confirmar um delivery<br/>Pausar e parar um delivery |
 | Aplicativo web | Criar um aplicativo web<br/>Editar o conteúdo e as propriedades do aplicativo<br/>Salvar o conteúdo do aplicativo como um modelo<br/>Publicar o aplicativo |
 | Oferta | Aprovar o conteúdo e a elegibilidade da oferta<br/>Desativar uma oferta online |
 | Tarefa | Concluir uma tarefa<br/>Cancelar uma tarefa |
