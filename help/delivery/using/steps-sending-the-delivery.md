@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Configurar e enviar o delivery
-description: Saiba como configurar e enviar o delivery
+title: Configurar e enviar a entrega
+description: Saiba como configurar e enviar a entrega
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Channel Configuration
 role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1514'
 ht-degree: 100%
 
 ---
 
-# Configurar e enviar o delivery {#configuring-and-sending-the-delivery}
+# Configurar e enviar a entrega {#configuring-and-sending-the-delivery}
 
 ## Permissões{#delivery-permissions}
 
@@ -61,7 +61,7 @@ Você poderá fechar o assistente do delivery e controlar a execução do delive
 Após enviar as mensagens, você pode monitorar e rastrear suas entregas. Para obter mais informações, consulte essas seções.
 
 * [Monitorar um delivery](about-delivery-monitoring.md)
-* [Entender as falhas de delivery](understanding-delivery-failures.md)
+* [Entender as falhas de entrega](understanding-delivery-failures.md)
 * [Sobre o rastreamento de mensagens](about-message-tracking.md)
 
 ## Agendar o envio do delivery {#scheduling-the-delivery-sending}
