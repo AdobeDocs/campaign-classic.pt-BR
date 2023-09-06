@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Gerenciar subscrições
+title: Gerenciar assinaturas
 description: Saiba como gerenciar assinaturas no Adobe Campaign
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
@@ -8,9 +8,9 @@ feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1116'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
