@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '437'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -43,19 +43,19 @@ Com base no período do incidente, abaixo estão as diretrizes recomendadas para
 
 * Para instâncias do Campaign com informações de resposta de rejeição SMTP no campo **[!UICONTROL Error text]** da lista de quarentena:
 
-   * **Texto de erro (texto de quarentena)** contém &quot;pesquisa de usuário bem-sucedida, mas nenhum registro de usuário encontrado&quot; E **Texto de erro (texto de quarentena)** contém &quot;support.apple.com&quot;
+   * **O texto de erro (texto de quarentena)** contém “A pesquisa de usuário foi bem-sucedida, mas nenhum registro de usuário foi encontrado” E **o texto de erro (texto de quarentena)** contém “support.apple.com”
    * **Atualizar status (@lastModified)** em ou após 26/04/2021 07:00:00 AM
    * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 01:00:00 PM
 
-* Para instâncias do Campaign com informações de regra de Email de entrada no campo **[!UICONTROL Error text]** da lista de quarentena:
+* Para instâncias do Campaign com informações de regra de email de entrada no campo **[!UICONTROL Error text]** da lista de quarentena:
 
-   * **Texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
-   * **Domínio de email (@domain)** igual a icloud.com OU **Domínio de email (@domain)** igual a me.com OU **Domínio de email (@domain)** igual a mac.com
+   * **O texto de erro (texto de quarentena)** contém “Momen_Code10_InvalidRecipient”
+   * **Domínio de email (@domain)** igual a icloud.com OU **domínio de email (@domain)** igual a me.com OU **domínio de email (@domain)** igual a mac.com
    * **Atualizar status (@lastModified)** em ou após 26/04/2021 07:00:00 AM
    * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 01:00:00 PM
 
 Depois de ter a lista de recipients afetados, você pode defini-los como um status **[!UICONTROL Valid]** para que sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]** ou simplesmente excluí-los da tabela.
 
 **Tópicos relacionados:**
-* [Compreender as falhas de entrega](understanding-delivery-failures.md)
+* [Entender as falhas de entrega](understanding-delivery-failures.md)
 * [Qualificação de email de rejeição](understanding-delivery-failures.md#bounce-mail-qualification)
