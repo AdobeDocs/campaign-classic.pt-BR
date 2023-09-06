@@ -8,9 +8,9 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3009'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,11 +42,11 @@ A quarentena e a lista de bloqueios não se aplicam ao mesmo objeto:
 
 * Por outro lado, com a inclusão na **lista de bloqueios**, o **perfil** não será mais direcionado pelo delivery, por exemplo, depois de um cancelamento de inscrição (recusa de participação) de um determinado canal. Por exemplo, se um perfil na lista de bloqueios para o canal de email tiver dois endereços de email, ambos os endereços serão excluídos do delivery.
 
-  Você pode verificar se um perfil está no incluo na lista de bloqueios para um ou mais canais na **[!UICONTROL No longer contact]** seção do perfil **[!UICONTROL General]** guia. Consulte [esta seção](../../platform/using/editing-a-profile.md#general-tab).
+  Você pode verificar se um perfil está na lista de bloqueios de um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. Consulte [esta seção](../../platform/using/editing-a-profile.md#general-tab).
 
 >[!NOTE]
 >
->A quarentena inclui um **[!UICONTROL Denylisted]** status, que se aplica quando os recipients marcam sua mensagem como spam ou respondem a uma mensagem SMS com uma palavra-chave como &quot;PARAR&quot;. Nesse caso, o endereço envolvido do perfil ou o número de telefone é enviado para quarentena com o **[!UICONTROL Denylisted]** status. Para obter mais informações sobre como gerenciar mensagens SMS PARAR, consulte [esta seção](../../delivery/using/sms-send.md#processing-inbound-messages).
+>A quarentena inclui um status **[!UICONTROL Denylisted]**, que se aplica quando os destinatários marcam sua mensagem como spam ou respondem a uma mensagem SMS com uma palavra-chave, como “PARAR”. Nesse caso, o endereço do perfil envolvido ou o número de telefone é enviado para quarentena com o status **[!UICONTROL Denylisted]**. Para obter mais informações sobre como gerenciar mensagens SMS PARAR, consulte [esta seção](../../delivery/using/sms-send.md#processing-inbound-messages).
 
 ## Identificar endereços em quarentena {#identifying-quarantined-addresses}
 
@@ -163,16 +163,16 @@ Abaixo estão as diretrizes recomendadas para esta consulta:
 
 * Para ambientes do Campaign Classic v7 com informações de regra de email de entrada no campo **[!UICONTROL Error text]** da lista de quarentena:
 
-   * **Texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
+   * **O texto de erro (texto de quarentena)** contém “Momen_Code10_InvalidRecipient”
    * **Domínio de email (@domain)** igual a domain1.com OU **Domínio de email (@domain)** igual a domain2.com OU **Domínio de email (@domain)** igual a domain3.com
    * **Atualizar status (@lastModified)** em ou após MM/DD/AAAA HH:MM:SS AM
    * **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:SS PM
 
 * Para instâncias do Campaign Classic v7 com informações de resposta de rejeição SMTP no campo **[!UICONTROL Error text]** da lista de quarentena:
 
-   * **Texto de erro (texto de quarentena)** contém &quot;550-5.1.1&quot; E **Texto de erro (texto de quarentena)** contém &quot;support.ISP.com&quot;
+   * **O texto de erro (texto de quarentena)** contém “550-5.1.1” E **o texto de erro (texto de quarentena)** contém “support.ISP.com”,
 
-  onde &quot;support.ISP.com&quot; pode ser: &quot;support.apple.com&quot; ou &quot;support.google.com&quot; por exemplo
+  onde “support.ISP.com” pode ser “support.apple.com” ou “support.google.com”, por exemplo
 
    * **Atualizar status (@lastModified)** em ou após MM/DD/AAAA HH:MM:SS AM
    * **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:SS PM
