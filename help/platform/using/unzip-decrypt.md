@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
 source-git-commit: 32c2ce24bdd62724e4b4ff66f4664e8faa259b4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '739'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ O Adobe Campaign permite importar arquivos compactados ou criptografados. Antes 
 
 >[!IMPORTANT]
 >
->Não é possível descompactar arquivos compactados com mais de 4 Gb.
+>Não é possível descompactar arquivos com mais de 4 GB.
 
 Para fazer isso:
 
-1. Use o [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#decrypting-data) para gerar um par de chaves públicas/privadas para permitir a descriptografia de arquivos.
+1. Use o [Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#decrypting-data) para gerar um par de chaves públicas/privadas para permitir a descriptografia de arquivos.
 
    >[!NOTE]
    >
@@ -37,7 +37,7 @@ Para fazer isso:
 
 1. Caso a instalação do Adobe Campaign seja no local, instale o utilitário que deseja usar (por exemplo: GPG, GZIP) e as chaves necessárias (chave de criptografia) no servidor de aplicativos.
 
-   Caso sua instalação do Adobe Campaign seja hospedada pela Adobe, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ter os utilitários necessários instalados no servidor.
+   Caso sua instalação do Adobe Campaign seja hospedada pela Adobe, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para que os utilitários necessários sejam instalados no servidor.
 
 Em seguida, você pode usar os comandos de pré-processamento desejados em seus workflows:
 
