@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Templates de publicação
-description: Templates de publicação
+title: Modelos de publicação
+description: Modelos de publicação
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Templates
 role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '825'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 ## Sobre os modelos de publicação {#about-publication-templates}
 
-O template de publicação faz referência aos recursos usados no processo de publicação, ou seja:
+O modelo de publicação referencia os recursos usados no processo de publicação, ou seja:
 
 * o schema de dados,
 * o formulário de entrada,
