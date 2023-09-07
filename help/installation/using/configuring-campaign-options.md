@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4004'
 ht-degree: 9%
 
 ---
@@ -696,7 +696,7 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
     <ul> 
      <li> <p> <span class="uicontrol">Tipo de dados:</span> Integer</p> </li> 
      <li> <p> <span class="uicontrol">Valor (texto)</span> : 1 </p> </li> 
-    </ul> Essa opção só deve ser usada se a árvore de navegação pronta para uso tiver sofrido muitas alterações.<br /> Para obter mais informações, consulte <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11">esta seção</a>.<br /> </td> 
+    </ul> Essa opção só deve ser usada se a árvore de navegação pronta para uso tiver sofrido muitas alterações.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 

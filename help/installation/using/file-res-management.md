@@ -9,9 +9,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '664'
 ht-degree: 4%
 
 ---
@@ -104,7 +104,7 @@ As conexões FTP/FTPS são definidas no parâmetro proxyFTP:
 
 Se você usar o mesmo proxy para vários tipos de conexão, somente proxyHTTP será definido com useSingleProxy definido como &quot;1&quot; ou &quot;true&quot;.
 
-Se você tiver conexões internas que devem passar pelo proxy, adicione-as no parâmetro de substituição.
+Se você tiver conexões internas que não devem passar pelo proxy, adicione-as no parâmetro de substituição.
 
 Se você quiser desativar temporariamente a conexão proxy, defina o parâmetro ativado como &quot;false&quot; ou &quot;0&quot;.
 

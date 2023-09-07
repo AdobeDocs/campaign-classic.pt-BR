@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '7962'
-ht-degree: 42%
+source-wordcount: '8056'
+ht-degree: 41%
 
 ---
 
@@ -43,6 +43,7 @@ Os primeiros parâmetros estão dentro da variável **compartilhado** nó. Eles 
 * [proxyConfig](#proxyconfig)
 * [threadPool](#threadpool)
 * [urlPermission](#urlpermission)
+* [cusHeaders](#cusheaders)
 * [xtkJobs](#xtkjobs)
 
 **Outros parâmetros**
@@ -997,6 +998,29 @@ Para obter informações adicionais, consulte [Proteção de conexão de saída]
   </tr> 
  </tbody> 
 </table>
+
+## cusHeaders {#cusheaders}
+
+Esse nó permite adicionar cabeçalhos específicos em solicitações executadas ao fazer upload de um arquivo de um servidor externo. As Redes de entrega de conteúdo (CND) podem solicitar um cabeçalho específico para confiar no solicitante. Esses cabeçalhos podem ser usados para melhorar a confiança nas solicitações do Campaign, principalmente ao baixar documentos personalizados para cada recipient na etapa de execução do delivery. Um alto número de solicitações de download de recursos pode ser interpretado como um ataque de DDos. O dnsPattern permite definir nomes de cabeçalho e valores específicos para CDNs diferentes com base no nome de domínio.
+
+```
+  <!-- List of custom headers added to request. 
+         -->
+    <cusHeaders>
+
+    <!-- Pattern of DNS name or domain 
+         value :  dnsPattern: All or part of the URL's domain to verify, * is a wild card Default:  -->
+      <dnsPattern value="">
+
+    <!-- Header Name and Value 
+           headerName :  Header Name 
+           headerValue :  Header Value -->
+        <headerDef headerName="" headerValue=""/>
+
+      </dnsPattern>
+
+    </cusHeaders> 
+```
 
 ### url {#url}
 

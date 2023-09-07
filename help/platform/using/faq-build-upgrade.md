@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 100%
+source-wordcount: '1998'
+ht-degree: 99%
 
 ---
 
@@ -57,7 +57,7 @@ Por exemplo, usando as informações do servidor da captura de tela na seção a
 
 * Uma atualização de build envolveria a mudança da build 9342 para qualquer build posterior a ela. Por exemplo, v7.1 build 9342 para v7.1 build 9342
 
-* Uma atualização de versão envolveria a mudança da versão 6 para qualquer versão mais recente.  Por exemplo, v6.1.1 build 8666 para v7.1 build 9342.
+* Uma atualização de versão envolveria a mudança de uma versão principal anterior para qualquer versão mais recente.
 
 ## Devo fazer backup dos meus dados antes dessas atualizações?
 
