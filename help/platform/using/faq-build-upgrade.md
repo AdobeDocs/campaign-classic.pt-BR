@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1998'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ Exporte qualquer trabalho que seja crítico e deva ser preservado em seus sistem
 
 <!--For more information please [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
-Atualize seu conhecimento dos workflows e delivery de caminho críticos desenvolvidos em seus livros de execução (ou pela equipe/parceiro de consultoria), analisando a documentação fornecida à sua equipe ao final da implementação.
+Atualize seu conhecimento dos workflows e entrega de caminho críticos desenvolvidos em seus livros de execução (ou pela equipe/parceiro de consultoria), analisando a documentação fornecida à sua equipe ao final da implementação.
 
 Identifique tempos de tráfego baixos ou de baixo volume que seriam ideais para janelas de manutenção, pois gerarão menor impacto nos negócios.
 
@@ -125,11 +125,11 @@ Não. O servidor é desligado durante uma atualização para garantir que a inte
 
 ## Os emails continuarão a ser enviados a partir do centro de mensagens durante o processo de atualização?
 
-Quando ocorrer a atualização pelo centro de mensagens (RT), não serão enviados emails da instância. Observe que todos os processos interrompidos quando um sistema do Campaign é desligado são automaticamente retomados quando o sistema é reiniciado. Isso inclui deliveries ativos ou programados, e rastreamento e cálculos de métricas para deliveries enviados anteriormente.
+Quando ocorrer a atualização pelo centro de mensagens (RT), não serão enviados emails da instância. Observe que todos os processos interrompidos quando um sistema do Campaign é desligado são automaticamente retomados quando o sistema é reiniciado. Isso inclui entregas ativas ou programadas, e rastreamento e cálculos de métricas para entregas enviadas anteriormente.
 
-## Os workflows continuarão em execução e enviarão os deliveries?
+## Os workflows continuarão em execução e enviarão as entregas?
 
-Não. Durante a atualização da build, o fluxo de trabalho e os serviços de email são interrompidos. Significa que os workflows não serão executados e os deliveries não serão enviados. Eles serão retomados assim que o sistema for reiniciado. No entanto, a Adobe recomenda que todos os workflows de caminho críticos sejam verificados após uma atualização para garantir que eles estejam em execução e em bom estado de funcionamento.
+Não. Durante a atualização da build, o fluxo de trabalho e os serviços de email são interrompidos. Significa que os workflows não serão executados e as entregas não serão enviadas. Eles serão retomados assim que o sistema for reiniciado. No entanto, a Adobe recomenda que todos os workflows de caminho críticos sejam verificados após uma atualização para garantir que eles estejam em execução e em bom estado de funcionamento.
 
 ## Meus links de rastreamento ainda funcionam durante a atualização?
 
@@ -179,8 +179,8 @@ Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](../../
 
 ### Lista de verificação de pós-atualização do servidor de mensagens em nuvem
 
-1. Enviar um delivery de teste
-   1. Validar os logs do delivery e o workflow relacionado
+1. Enviar uma entrega de teste
+   1. Validar os logs da entrega e o workflow relacionado
    1. Validar se os logs de rastreamento estão atualizados
    1. Validar links de mirror page e rastreamento
 1. Confirmar se todos os workflows técnicos estão no estado inicial
@@ -192,12 +192,11 @@ Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](../../
 * Use a mesma versão do console que a versão de build após a atualização.
 * Você tem algum aplicativo da web que insira dados no banco de dados do Campaign? Em caso afirmativo, execute-os e
 verifique se eles podem inserir novos registros por meio da API.
-* Você pode enviar um email de teste com êxito? Crie um novo delivery usando um modelo conhecido, envie-o para
-um recipient de teste, verifique a personalização, desfaça o vínculo, aplique mirror page a todo o trabalho.
+* Você pode enviar um email de teste com êxito? Crie uma nova entrega usando um modelo conhecido, envie-a para um recipient de teste, verifique a personalização, desfaça o vínculo, aplique mirror page a todo o trabalho.
 * Todos os seus workflows de caminho críticos estão em execução? Verifique os workflows, abra o journal do workflow e verifique se há erros.
 * Todas as pastas estão presentes, visíveis e acessíveis? Navegue por pastas diferentes e verifique se
 todo o conteúdo é exibido e está presente.
-* Seus deliveries estão com o fuso horário correto?
+* Suas entregas estão com o fuso horário correto?
 
    * Verifique a data de criação e a data de modificação com o registro de data e hora e o fuso horário
    * Verifique se a execução do scheduler funciona em um workflow no horário especificado
