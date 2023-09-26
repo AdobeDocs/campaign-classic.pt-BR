@@ -5,9 +5,9 @@ description: Saiba mais sobre a atividade de workflow de delivery recorrente
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 05210269da2a32310c19911a3bc32240c84dc7ad
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '277'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ O processo de configuração dessa atividade é semelhante ao da criação de um
 
 Para obter um exemplo de uso dessa atividade, consulte esta [seção](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
-## Como configurar um delivery recorrente
+## Como configurar um delivery recorrente {#set-up-recurring-delivery}
 
 Um **delivery recorrente** criará uma nova instância de delivery toda vez que for executado. Por exemplo, se o workflow estiver programado para ser executado uma vez por semana, o resultado será 52 deliveries em um ano. Também significa que o log abrangente e os logs de rastreamento serão separados por cada instância do delivery.
 
@@ -46,9 +46,9 @@ Se desejar impedir a execução de um delivery recorrente, cancele completamente
 >
 >Não é possível enviar uma prova de uma atividade do tipo **[!UICONTROL Recurring delivery]**.
 > 
->Para criar um delivery diretamente por meio de um workflow da campanha, use as atividades específicas predefinidas do canal (por exemplo **[!UICONTROL Email delivery]**).
+>Para criar um delivery diretamente por meio de um workflow da campanha, use as atividades específicas predefinidas do canal (por exemplo **[!UICONTROL Recurring delivery]**).
 
-## Vídeo tutorial (#recurring-delivery-video)
+## Tutorial em vídeo {#recurring-delivery-video}
 
 Este vídeo explica como configurar um delivery recorrente e uma atividade de scheduler.
 
