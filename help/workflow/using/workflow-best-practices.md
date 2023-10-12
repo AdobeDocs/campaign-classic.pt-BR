@@ -5,10 +5,10 @@ description: Conheça as práticas recomendadas do workflow do Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 1baf424138c95b16add37d9d556e3a2566a869c2
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 100%
+source-wordcount: '1385'
+ht-degree: 99%
 
 ---
 
@@ -53,23 +53,6 @@ Para saber como limpar seus registros, consulte esta [documentação](starting-a
 * Para reduzir os tempos de execução gerais, substitua atividades demoradas por atividades simplificadas e mais rápidas.
 * Evite executar mais de 20 workflows simultaneamente. Quando muitos workflows são executados ao mesmo tempo, o sistema pode ficar sem recursos e se tornar instável. Para obter mais informações sobre por que o workflow pode não estar sendo iniciado, consulte este [artigo](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html).
 
-### Execução do workflow {#workflow-execution}
-
-**É recomendável não agendar um fluxo de trabalho para execução por mais de 15 minutos**, pois isso pode atrapalhar o desempenho geral do sistema e criar bloqueios no banco de dados.
-
-**Evite deixar os fluxos de trabalho no estado pausado.** Se criar um fluxo de trabalho temporário, certifique-se de que ele será concluído corretamente e não permanecerá no estado **[!UICONTROL paused]**. Se estiver pausado, isso significa que é preciso manter as tabelas temporárias e, portanto, aumentar o tamanho do banco de dados. Atribua supervisores de workflow nas propriedades do workflow para enviar um alerta quando um workflow falhar ou for pausado pelo sistema.
-
-Para evitar workflows no estado pausado:
-
-* Verifique seus workflows regularmente para garantir que não haja erros inesperados.
-* Mantenha seus workflows o mais simples possível, por exemplo, dividindo grandes workflows em vários workflows diferentes. É possível usar as atividades **[!UICONTROL External signal]** para acionar a execução com base na execução de outros fluxos de trabalho.
-* Evite desabilitar atividades com fluxos nos fluxos de trabalho, deixando threads abertos e levando a muitas tabelas temporárias que podem consumir muito espaço. Não mantenha as atividades nos estados **[!UICONTROL Do not enable]** ou **[!UICONTROL Enable but do not execute]** em seus fluxos de trabalho.
-
-**Interromper fluxos de trabalho não utilizados**. Os fluxos de trabalho que continuam em execução mantêm conexões com o banco de dados.
-
-**Use a interrupção incondicional apenas nos casos mais raros**. Não utilize esta ação regularmente. Não executar um encerramento limpo nas conexões geradas pelos workflows com o banco de dados afeta o desempenho.
-
-**Não execute várias solicitações de interrupção no mesmo fluxo de trabalho**. A interrupção de um fluxo de trabalho é um processo assíncrono: a solicitação é registrada e, em seguida, o servidor ou servidores de fluxo de trabalho cancelam as operações em andamento. A interrupção de uma instância de fluxo de trabalho pode demorar, especialmente se o fluxo de trabalho estiver em execução em vários servidores, em que cada um deles deve assumir o controle para cancelar as tarefas em andamento. Para evitar problemas, aguarde a conclusão da operação de interrupção e evite interromper um fluxo de trabalho várias vezes.
 
 ### Opção de Executar no mecanismo {#execute-in-the-engine-option}
 
@@ -135,7 +118,7 @@ O Workflow HeatMap permite aos administradores da plataforma Adobe Campaign moni
 
 Ao desenvolver seu workflow, todas as atividades terão um nome, como todos os objetos do Adobe Campaign. Embora o nome seja gerado pela ferramenta, recomendamos que você renomeie com um nome explícito ao configurá-lo. O risco de fazer isso depois é que pode interromper o workflow com atividades usando o nome de outra atividade anterior. Portanto, seria um trabalho difícil atualizar os nomes depois.
 
-O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não use nomes como **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, mas sim nomes explícitos como **[!UICONTROL querySubscribedRecipients]**. Esse nome aparecerá no diário e, se aplicável, nos logs SQL, e isso ajudará a depurar o fluxo de trabalho ao configurá-lo.
+O nome da atividade pode ser encontrado na guia **[!UICONTROL Advanced]**. Não os deixe nomeados **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, mas forneça nomes explícitos como **[!UICONTROL querySubscribedRecipients]**. Esse nome aparecerá no diário e, se aplicável, nos logs SQL, e isso ajudará a depurar o fluxo de trabalho ao configurá-lo.
 
 ### Primeira e última atividades {#first-and-last-activities}
 
