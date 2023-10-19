@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
 source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '310'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Para fazer isso, é necessário adicionar e configurar uma atividade **[!UICONTR
 
 ![](assets/rtcdp-file-transfer.png)
 
-Em seguida, você pode criar o fluxo de trabalho de acordo com suas necessidades (atualizar o banco de dados usando os dados do segmento, enviar deliveries entre canais para o segmento etc.)
+Em seguida, você pode criar o fluxo de trabalho de acordo com suas necessidades (atualizar o banco de dados usando os dados do segmento, enviar entregas entre canais para o segmento etc.)
 
 Como exemplo, o fluxo de trabalho abaixo faz o download do arquivo do local de armazenamento diariamente e atualiza o banco de dados do Campaign com os dados do segmento.
 
