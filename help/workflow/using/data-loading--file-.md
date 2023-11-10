@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
 source-git-commit: 5723d3d617413070b7aed2be2849acca61c10815
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1082'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ A formatação de coluna permite definir o processamento de valor de cada coluna
 
 >[!NOTE]
 >
->Você pode adicionar quantas colunas desejar. O comprimento máximo dos valores em cada coluna é determinado pelo tipo de dados escolhido.
+>É possível adicionar quantas colunas quiser. O comprimento máximo dos valores em cada coluna é determinado pelo tipo de dados escolhido.
 
 * **[!UICONTROL Ignore column]**: não processa essa coluna durante o carregamento de dados.
 * **[!UICONTROL Data type]**: especifica o tipo de dados esperado para cada coluna.
