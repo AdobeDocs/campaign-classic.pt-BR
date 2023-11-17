@@ -8,10 +8,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 100%
+source-wordcount: '812'
+ht-degree: 92%
 
 ---
 
@@ -87,11 +87,17 @@ Na(s) instância(s) de execução, os workflows técnicos de mensagens transacio
   Os seguintes status de evento estão disponíveis:
 
    * **[!UICONTROL Pending]**: o evento está na fila. Nenhum template de mensagem foi atribuído a ele.
-   * **[!UICONTROL Pending delivery]**: o evento está na fila, um template de mensagem foi atribuído a ele e está sendo processado pelo delivery.
-   * **[!UICONTROL Sent]**: esse status é copiado dos logs do delivery. Significa que o delivery foi enviado.
-   * **[!UICONTROL Ignored by the delivery]**: esse status é copiado dos logs do delivery. Ele significa que o delivery foi ignorado.
-   * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs do delivery. Ele significa que o delivery falhou.
+   * **[!UICONTROL Pending delivery]**: o evento está na fila, um template de mensagem foi atribuído a ele e está sendo processado pela entrega.
+   * **[!UICONTROL Sent]**: esse status é copiado dos logs da entrega. Significa que a entrega foi enviada.
+   * **[!UICONTROL Ignored by the delivery]**: esse status é copiado dos logs da entrega. Ele significa que a entrega foi ignorada.
+   * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs da entrega. Ele significa que a entrega falhou.
    * **[!UICONTROL Event not taken into account]**: o evento não pôde ser vinculado a um template de mensagem. O evento não será processado.
+
+### Agendamento do fluxo de trabalho de arquivamento
+
+Evite modificar o **fluxo de trabalho de arquivamento** cronograma que é executado na instância de controle. Caso contrário, alguns dados de rastreamento que estão sendo extraídos da instância de execução podem ser perdidos.
+
+Se você modificar a programação do workflow de arquivamento, também deverá alterar a variável **fluxo de trabalho de rastreamento** programe na instância de execução para corresponder ao agendamento do workflow de arquivamento na instância de controle.
 
 ## Configurar multimarcas {#configuring-multibranding}
 
