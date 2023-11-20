@@ -7,16 +7,14 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 95%
 
 ---
 
 # Provisionamento do Adobe Analytics Connector {#adobe-analytics-connector-provisioning}
-
-
 
 >[!IMPORTANT]
 >
@@ -31,6 +29,12 @@ A integração entre a autenticação do Adobe Campaign Classic e do Adobe Analy
 * Se estiver implementando um novo conector, a implementação do Adobe IMS é opcional. Sem um usuário do Adobe ID, o Adobe Campaign usará um usuário técnico para sincronizar com o Adobe Analytics.
 
 Para que essa integração funcione, é necessário criar um perfil de produto do Adobe Analytics que será usado exclusivamente para o conector do Analytics. Em seguida, será necessário criar um projeto do Adobe I/O.
+
+<!--
+>[!AVAILABILITY]
+>
+> JWT (JSON Web Tokens) is currently in the process of depreciation and is being replaced with OAuth. The transition is being carried out progressively within Campaign's upcoming releases and documentation will be updated to reflect these updates.
+-->
 
 ## Criar um perfil de produto do Adobe Analytics {#analytics-product-profile}
 
@@ -72,7 +76,9 @@ Para obter mais informações sobre perfis de produto, consulte a [documentaçã
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. Para o recurso **[!UICONTROL Dimensions]**, adicione as **[!UICONTROL Dimensions]** que serão necessárias para configuração posterior.
+1. Para o **[!UICONTROL Dimensions]** adicione a variável **[!UICONTROL Dimensions]** necessário para configurações futuras.
+
+   Verifique se os Dimension escolhidos correspondem aos que serão configurados no [Conta externa](adobe-analytics-connector.md#external-account-classic) e se alinhe ao número de eVars correspondente de [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
 
 1. Para o recurso **[!UICONTROL Report Suite Tools]**, adicione as seguintes permissões:
 
