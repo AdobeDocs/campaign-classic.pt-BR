@@ -4,9 +4,9 @@ title: Atualizar para o novo servidor de avaliação do delivery
 description: Saiba como atualizar para o novo servidor de entrega do Campaign
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1356'
 ht-degree: 20%
 
 ---
@@ -40,12 +40,15 @@ Como um **cliente no local/híbrido**, é necessário atualizar para [Campaign v
 
 ## Etapas de implementação {#implementation-steps}
 
-Como parte da nova integração do servidor de entrega, o Campaign precisa se comunicar com o Adobe Shared Services por meio de uma autenticação baseada no Identity Management Service (IMS). A maneira preferida é usar o Gateway Token baseado em Adobe Developer (também chamado de Technical Account Token ou Adobe IO JWT).
-
 >[!WARNING]
 >
 >Essas etapas só devem ser executadas para implementações híbridas e no local.
+
+Como parte da nova integração do servidor de entrega, o Campaign precisa se comunicar com o Adobe Shared Services por meio de uma autenticação baseada no Identity Management Service (IMS). A maneira preferida é usar o Gateway Token baseado em Adobe Developer (também chamado de Technical Account Token ou Adobe IO JWT).
+
+>[!AVAILABILITY]
 >
+> O JWT (JSON Web Tokens) está atualmente no processo de depreciação e está sendo substituído pelo OAuth. A transição está sendo realizada progressivamente nas próximas versões do Campaign e a documentação será atualizada para refletir essas atualizações.
 
 ### Pré-requisitos{#prerequisites}
 
