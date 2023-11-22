@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '812'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -93,11 +93,11 @@ Na(s) instância(s) de execução, os workflows técnicos de mensagens transacio
    * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs da entrega. Ele significa que a entrega falhou.
    * **[!UICONTROL Event not taken into account]**: o evento não pôde ser vinculado a um template de mensagem. O evento não será processado.
 
-### Agendamento do fluxo de trabalho de arquivamento
+### Cronograma do workflow de arquivamento
 
-Evite modificar o **fluxo de trabalho de arquivamento** cronograma que é executado na instância de controle. Caso contrário, alguns dados de rastreamento que estão sendo extraídos da instância de execução podem ser perdidos.
+Evite modificar o cronograma do **workflow de arquivamento** que é executado na instância de controle. Caso contrário, alguns dados de rastreamento que estão sendo extraídos da instância de execução podem ser perdidos.
 
-Se você modificar a programação do workflow de arquivamento, também deverá alterar a variável **fluxo de trabalho de rastreamento** programe na instância de execução para corresponder ao agendamento do workflow de arquivamento na instância de controle.
+Se você modificar o cronograma do workflow de arquivamento, também precisará alterar o cronograma do **workflow de rastreamento** na instância de execução para corresponder ao cronograma do workflow de arquivamento na instância de controle.
 
 ## Configurar multimarcas {#configuring-multibranding}
 
