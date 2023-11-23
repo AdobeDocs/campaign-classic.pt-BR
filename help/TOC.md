@@ -3,13 +3,13 @@ audience: end-user
 breadcrumb-title: Documentação do Campaign Classic v7
 product: campaign
 title: Manual do Campaign Classic v7
-user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e fornecer campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
+user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e entregar campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
+source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 100%
+source-wordcount: '2532'
+ht-degree: 99%
 
 ---
 
@@ -33,14 +33,14 @@ ht-degree: 100%
       + [Iniciar o Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + Workspace do Adobe Campaign{#campaign-workspace}
          + [Introdução à interface do Campaign](platform/using/adobe-campaign-workspace.md)
-         + [Usar o explorador do Campaign](platform/using/adobe-campaign-explorer.md)
+         + [Usar o explorer do Campaign](platform/using/adobe-campaign-explorer.md)
          + [Procurar e personalizar listas](platform/using/adobe-campaign-ui-lists.md)
       + Perguntas frequentes {#faq}
          + [Principais perguntas](platform/using/common-questions.md)
          + [Conceitos globais](platform/using/faq-key-concepts.md)
          + [Atualização da build](platform/using/faq-build-upgrade.md)
          + [Privacidade](platform/using/privacy-faq.md)
-         + [Públicos](platform/using/faq-audiences.md)
+         + [Públicos-alvo](platform/using/faq-audiences.md)
          + [Criar mensagens](platform/using/faq-designing.md)
          + [Enviar mensagens](platform/using/faq-messages.md)
          + [Workflows](platform/using/faq-workflows.md)
@@ -117,7 +117,7 @@ ht-degree: 100%
    + Etapas principais ao criar uma entrega {#key-steps-when-creating-a-delivery}
       + [Introdução a entregas](delivery/using/steps-about-delivery-creation-steps.md)
       + [Criar e identificar uma entrega](delivery/using/steps-create-and-identify-the-delivery.md)
-      + [Definir o público](delivery/using/steps-defining-the-target-population.md)
+      + [Definir o público-alvo](delivery/using/steps-defining-the-target-population.md)
       + [Validar a entrega](delivery/using/steps-validating-the-delivery.md)
       + [Enviar a entrega](delivery/using/steps-sending-the-delivery.md)
       + Práticas recomendadas para entrega {#delivery-bestpractices}
@@ -652,6 +652,7 @@ ht-degree: 100%
          + [Práticas recomendadas e limitações](installation/using/fda-best-practices.md)
          + Diretrizes de configuração {#config-databases}
             + [Etapas de configuração](installation/using/configure-fda.md)
+            + [Configurar Amazon Redshift](installation/using/configure-fda-redshift.md)
             + [Configurar Azure Synapse](installation/using/configure-fda-synapse.md)
             + [Configurar o Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Configurar Hadoop](installation/using/configure-fda-hadoop.md)
