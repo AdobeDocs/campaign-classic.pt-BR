@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Provisionamento do conector do Adobe Analytics
+title: Provisionamento do Adobe Analytics Connector
 description: Saiba mais sobre o provisionamento do conector do Adobe Analytics
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: 26d1b0bc9886988ff636d322c781a23f95a9bcd0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '732'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 >
 > Essas etapas só devem ser executadas por implementações híbridas e no local.
 >
->Para implementações do Managed Services hospedadas e do Campaign, entre em contato com [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) equipe.
+>Para implementações do Managed Services hospedadas e do Campaign, entre em contato com a equipe de [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 
 A integração entre a autenticação do Adobe Campaign Classic e do Adobe Analytics é compatível com o Adobe Identity Management Service (IMS):
 
@@ -33,7 +33,7 @@ Para que essa integração funcione, é necessário criar um perfil de produto d
 
 >[!AVAILABILITY]
 >
-> O JWT (JSON Web Tokens) está atualmente no processo de depreciação e está sendo substituído pelo OAuth. A transição está sendo realizada progressivamente nas próximas versões do Campaign e a documentação será atualizada para refletir essas atualizações.
+> O JWT (Tokens JSON da Web) está atualmente no processo de descontinuação, sendo substituído pelo OAuth. A transição será realizada progressivamente nas próximas versões do Campaign e a documentação será atualizada para refletir essas atualizações.
 
 ## Criar um perfil de produto do Adobe Analytics {#analytics-product-profile}
 
@@ -75,9 +75,9 @@ Para obter mais informações sobre perfis de produto, consulte a [documentaçã
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. Para o **[!UICONTROL Dimensions]** adicione a variável **[!UICONTROL Dimensions]** necessário para configurações futuras.
+1. Para o recurso **[!UICONTROL Dimensions]**, adicione as **[!UICONTROL Dimensions]** necessárias para configurações futuras.
 
-   Verifique se os Dimension escolhidos correspondem aos que serão configurados no [Conta externa](adobe-analytics-connector.md#external-account-classic) e se alinhe ao número de eVars correspondente de [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
+   Certifique-se de que as Dimensões escolhidas correspondam às que serão configuradas na [Conta externa](adobe-analytics-connector.md#external-account-classic) e se alinhem ao número de eVars correspondente do [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
 
 1. Para o recurso **[!UICONTROL Report Suite Tools]**, adicione as seguintes permissões:
 
