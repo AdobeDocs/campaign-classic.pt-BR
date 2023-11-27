@@ -7,9 +7,9 @@ user-guide-description: Com o Adobe Campaign, é possível usar dados avançados
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2532'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 99%
          + [Otimizar a entrega](delivery/using/optimize-delivery.md)
          + [Usar modelos](delivery/using/use-templates.md)
          + [Criar conteúdo personalizado](delivery/using/design-and-personalize.md)
-         + [Definir o público correto](delivery/using/define-the-right-audience.md)
+         + [Definir o público-alvo correto](delivery/using/define-the-right-audience.md)
          + [Verificar antes de enviar](delivery/using/check-before-sending.md)
          + [Rastrear e monitorar](delivery/using/track-and-monitor.md)
    + Enviar emails {#sending-emails}
@@ -247,7 +247,7 @@ ht-degree: 99%
       + [Introdução a campanhas de marketing](campaign/using/setting-up-marketing-campaigns.md)
       + [Criar e configurar modelos](campaign/using/marketing-campaign-templates.md)
       + [Adicionar entregas](campaign/using/marketing-campaign-deliveries.md)
-      + [Selecionar o público](campaign/using/marketing-campaign-target.md)
+      + [Selecionar o público-alvo](campaign/using/marketing-campaign-target.md)
       + [Gerenciar documentos e ativos](campaign/using/marketing-campaign-assets.md)
       + [Configurar e gerenciar aprovações](campaign/using/marketing-campaign-approval.md)
       + [Monitorar suas campanhas](campaign/using/marketing-campaign-monitoring.md)
@@ -354,12 +354,12 @@ ht-degree: 99%
    + [Caso de uso: exibir relatório sobre as respostas a uma pesquisa online](surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Integrar com a Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Sobre integrações do Campaign](integrations/using/about-campaign-integrations.md)
-   + Compartilhamento de público {#audience-sharing}
-      + [Compartilhar públicos com a [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+   + Compartilhamento de público-alvo {#audience-sharing}
+      + [Compartilhar públicos-alvos com a [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Enviar solicitação à Adobe](integrations/using/submitting-request-to-adobe.md)
-      + [Configurar a integração de públicos compartilhados no [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Configurar a integração de públicos-alvos compartilhados no [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Solução de problemas](integrations/using/troubleshooting.md)
-      + [Importar e exportar públicos](integrations/using/importing-and-exporting-audiences.md)
+      + [Importar e exportar públicos-alvos](integrations/using/importing-and-exporting-audiences.md)
    + Compartilhamento de ativos {#asset-sharing}
       + [Compartilhar ativos com a [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
       + [Configurar acesso ao [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
@@ -375,7 +375,7 @@ ht-degree: 99%
    + Conector ACS {#acs-connector}
       + [Introdução ao  [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Sincronizar perfis](integrations/using/synchronizing-profiles.md)
-      + [Sincronizar públicos](integrations/using/synchronizing-audiences.md)
+      + [Sincronizar públicos-alvos](integrations/using/synchronizing-audiences.md)
       + [Sincronizar aplicativos web](integrations/using/synchronizing-web-applications.md)
       + [Solucionar problemas do [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Adobe Experience Cloud Triggers {#experience-triggers}
@@ -387,7 +387,7 @@ ht-degree: 99%
       + [Solução de problemas de pipeline](integrations/using/pipeline-troubleshooting.md)
    + Origens e destinos da Adobe Experience Platform {#aep-sources-destinations}
       + [Trabalhar com origens e destinos](integrations/using/get-started-sources-destinations.md)
-      + [Assimilar públicos da Adobe Experience Platform no Campaign](integrations/using/ingest-aep-data.md)
+      + [Assimilar públicos-alvos da Adobe Experience Platform no Campaign](integrations/using/ingest-aep-data.md)
       + [Exportar dados do Campaign para a Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Automatizar com workflows {#automating-with-workflows}
    + Introdução a workflows {#introduction}
