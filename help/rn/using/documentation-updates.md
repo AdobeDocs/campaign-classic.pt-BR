@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3645'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 ### Novembro de 2023
 
-O JWT (JSON Web Tokens) está atualmente no processo de depreciação e está sendo substituído pelo OAuth. A transição está sendo realizada progressivamente nas próximas versões do Campaign e a documentação será atualizada para refletir essas atualizações.
+O JWT (Tokens JSON da Web) está atualmente no processo de descontinuação, sendo substituído pelo OAuth. A transição será realizada progressivamente nas próximas versões do Campaign e a documentação será atualizada para refletir essas atualizações.
 
 ### Agosto de 2023
 
@@ -183,9 +183,9 @@ Aprimoramentos do canal LINE - [Saiba mais](../../delivery/using/line-channel.md
 
 Novo conector FDA Vertica Analytics - [Saiba mais](../../installation/using/configure-fda-vertica.md)
 
-Novo conector FDA do Google BigQuery - [Saiba mais](../../installation/using/configure-fda-google-big-query.md)
+Novo conector FDA do Google BigQuery — [Saiba mais](../../installation/using/configure-fda-google-big-query.md)
 
-A descrição do fluxo de trabalho técnico &quot;Faturamento (faturamento)&quot; agora inclui as tarefas originalmente executadas pelo &quot;Número de perfis de faturamento ativos (billingActiveContactCount)&quot;. [Leia mais](../../workflow/using/about-technical-workflows.md)
+A descrição do fluxo de trabalho técnico “Faturamento (faturamento)” agora inclui as tarefas originalmente executadas pelo &quot;Número de perfis de faturamento ativos (billingActiveContactCount)&quot;. [Leia mais](../../workflow/using/about-technical-workflows.md)
 
 ## Maio de 2021 {#may-2021}
 
@@ -216,7 +216,7 @@ O [capítulo de gerenciamento de permissões](../../platform/using/access-manage
 Saiba como criar e gerenciar campanhas por meio destas novas páginas:
 * [Criar e configurar modelos de campanha](../../campaign/using/marketing-campaign-templates.md)
 * [Entregas de campanha de marketing](../../campaign/using/marketing-campaign-deliveries.md)
-* [Selecionar o público das campanhas](../../campaign/using/marketing-campaign-target.md)
+* [Selecionar o público-alvo das campanhas](../../campaign/using/marketing-campaign-target.md)
 * [Gerenciar documentos associados](../../campaign/using/marketing-campaign-assets.md)
 * [Configurar e gerenciar o processo de aprovação](../../campaign/using/marketing-campaign-approval.md)
 
