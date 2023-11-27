@@ -209,7 +209,7 @@ Para obter mais informações, consulte a página [Perfis de produto do Adobe An
 
 >[!NOTE]
 >
->Se estiver usando várias ferramentas de medição de público, você pode selecionar **[!UICONTROL Other]** na lista suspensa **[!UICONTROL Partners]** ao criar a conta externa. Você só pode fazer referência a uma conta externa nas propriedades de entrega: será necessário adaptar a fórmula de URLs rastreadas adicionando os parâmetros esperados pela Adobe e todas as outras ferramentas de medição usadas.
+>Se estiver usando várias ferramentas de medição de público-alvo, você pode selecionar **[!UICONTROL Other]** na lista suspensa **[!UICONTROL Partners]** ao criar a conta externa. Você só pode fazer referência a uma conta externa nas propriedades de entrega: será necessário adaptar a fórmula de URLs rastreadas adicionando os parâmetros esperados pela Adobe e todas as outras ferramentas de medição usadas.
 
 ### Fluxos de trabalho técnicos de processos de análise da Web {#technical-workflows-of-web-analytics-processes}
 
