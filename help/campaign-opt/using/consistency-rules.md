@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Typology Rules, Campaigns
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
 source-git-commit: a37e67ef3f348737a099dab00a84b6854bd52e57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '776'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ As linhas de disponibilidade são somente para fins de informação. Para exclui
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-O número máximo de mensagens que podem ser processadas é dividido uniformemente no intervalo de disponibilidade definido. Isso é particularmente relevante para centrais de chamadas, pois seu número máximo de chamadas por dias é limitado. No caso de entregas de email, a opção **[!UICONTROL Do not limit instantaneous delivery capacity]** permite ignorar esse intervalo de disponibilidade e enviar seus emails ao mesmo tempo.
+O número máximo de mensagens que podem ser processadas é dividido uniformemente no intervalo de disponibilidade definido. Isso é particularmente relevante para centrais de atendimento, pois seu número máximo de chamadas por dia é limitado. No caso de entregas de email, a opção **[!UICONTROL Do not limit instantaneous delivery capacity]** permite ignorar esse intervalo de disponibilidade e enviar seus emails ao mesmo tempo.
 
 ![](assets/campaign_opt_create_capacity_05.png)
 
