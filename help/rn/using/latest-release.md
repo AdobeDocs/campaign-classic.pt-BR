@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
-workflow-type: ht
-source-wordcount: '1869'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '1873'
+ht-degree: 98%
 
 ---
 
@@ -141,7 +141,7 @@ Saiba mais na [matriz de compatibilidade do Campaign](../../rn/using/compatibili
 
 **Recursos obsoletos**
 
-* O marketing social do Facebook agora está obsoleto. Você pode usar a integração do Twitter para publicar em redes sociais ou trabalhar com a Adobe para criar um canal personalizado.
+* O marketing social do Facebook agora está obsoleto. Você pode usar a integração X (anteriormente conhecida como Twitter) para publicar em redes sociais ou trabalhar com o Adobe para criar um canal personalizado.
 * O conector ACS (oferta do Prime) agora está obsoleto. Você pode usar os recursos de exportação/importação do Campaign para extrair e inserir dados em ambos os produtos.
 
 Saiba mais na [página sobre recursos obsoletos e removidos](deprecated-features.md).

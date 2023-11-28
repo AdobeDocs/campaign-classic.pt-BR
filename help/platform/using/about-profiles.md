@@ -7,10 +7,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 100%
+source-wordcount: '853'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Os perfis são centralizados no banco de dados do Adobe Campaign. Há vários me
 
 “**Perfil**” significa um registro de informações (por exemplo: um registro na tabela nmsRecipient ou uma tabela externa contendo uma ID de cookie, uma ID do cliente, um identificador móvel ou outras informações relevantes para um canal específico) representando um cliente final, um prospecto ou um cliente potencial.
 
-No Adobe Campaign, os recipients são os perfis padrão direcionados para envio de deliveries (emails, SMS etc.). Os dados do recipient armazenados no banco de dados permitem filtrar o público-alvo que receberá qualquer entrega e adicionar dados de personalização ao conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar seus deliveries antes que sejam enviados ao público-alvo final.
+No Adobe Campaign, os recipients são os perfis padrão direcionados para envio de entregas (emails, SMS etc.). Os dados do recipient armazenados no banco de dados permitem filtrar o público-alvo que receberá qualquer entrega e adicionar dados de personalização ao conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que sejam enviadas ao público-alvo final.
 
 ![](assets/do-not-localize/how-to-video.png) [Compreender o conceito de perfis em vídeo](#create-profiles-video)
 
@@ -38,7 +38,7 @@ Os perfis podem ser identificados com base no espaço de armazenamento. Isso sig
 
 Os recipients da entrega são armazenados no banco de dados como perfis que contêm as informações vinculadas a eles: sobrenome, nome, endereço, assinaturas, entregas etc. Ao criar campanhas, é possível definir o direcionamento das entregas a uma seleção de perfis da base de acordo com critérios simples ou avançados.
 
-Também é possível criar campanhas direcionadas a destinatários cujos perfis estão armazenados em arquivos, em vez de em banco de dados. Elas são conhecidas como deliveries “externos”. Para obter mais informações sobre esse tipo de entrega, consulte [esta página](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Também é possível criar campanhas direcionadas a destinatários cujos perfis estão armazenados em arquivos, em vez de em banco de dados. Elas são conhecidas como entregas “externas”. Para obter mais informações sobre esse tipo de entrega, consulte [esta página](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
 Os principais métodos para criar perfis de destinatários são os seguintes:
 
@@ -80,7 +80,7 @@ Para acessar funcionalidades e configurações avançadas, clique no ícone **[!
 
 ![](assets/d_ncs_user_interface01.png)
 
-O layout geral do explorador do Adobe Campaign é apresentado [nesta página](../../platform/using/adobe-campaign-explorer.md).
+O layout geral do explorer do Adobe Campaign é apresentado [nesta página](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
@@ -94,11 +94,11 @@ Os perfis ativos são aqueles que são contados para fins de faturamento.
 
 A cobrança só afeta perfis que estão **ativos**. Um perfil é considerado ativo quando ele é visado ou recebe comunicação nos últimos 12 meses por meio de qualquer canal.
 
-Um perfil que se tornou alvo de vários deliveries é contado apenas uma vez.
+Um perfil que se tornou alvo de várias entregas é contado apenas uma vez.
 
 >[!NOTE]
 >
->Os canais Facebook e Twitter não são considerados.
+>Os canais facebook e X (conhecidos formalmente como Twitter) não são considerados.
 
 A contagem de perfis ativos está disponível somente para **Instâncias de marketing**. Não está disponível para Instâncias de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
 

@@ -6,10 +6,10 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '5974'
-ht-degree: 100%
+source-wordcount: '5978'
+ht-degree: 99%
 
 ---
 
@@ -65,7 +65,7 @@ A atividade de Aprovação Local é uma atividade de fluxo de trabalho usada par
 Saiba mais sobre a [Atividade de aprovação local](../../workflow/using/local-approval.md).
 +++
 
-+++**Público**
++++**Público-alvo**
 
 Um público é o conjunto de perfis que atendem aos critérios de uma definição de filtro, com base em regras e atributos.
 
@@ -119,7 +119,7 @@ Learn more about [Interaction](../../interaction/using/interaction-and-offer-man
 
 +++**Canal**
 
-Um canal é um meio pelo qual uma comunicação é enviada. Os canais incorporados no Adobe Campaign são: email, SMS, correspondência direta, notificações por push, LINE e Twitter. Os canais personalizados podem ser implementados para requisitos de canal fora do padrão.
+Um canal é um meio pelo qual uma comunicação é enviada. Os canais incorporados no Adobe Campaign são email, SMS, correspondência direta, notificações por push, LINE e X (anteriormente conhecidos como Twitter). Os canais personalizados podem ser implementados para requisitos de canal fora do padrão.
 
 Saiba mais sobre [Canais](../../delivery/using/communication-channels.md).
 +++
@@ -194,7 +194,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 +++
 -->
 
-+++**Avaliação do delivery**
++++**Avaliação da entrega**
 
 *Contexto: entregabilidade por email*
 
@@ -278,7 +278,7 @@ Saiba mais sobre a [Distribuição de valores](../../platform/using/defining-fil
 +++**Delegação de domínio**
 
 A configuração de subdomínio permite configurar uma subseção do seu domínio (tecnicamente uma &quot;zona DNS&quot;) para usar com o Adobe Campaign.
-A delegação de domínio permite que a Adobe controle e mantenha todos os aspectos do DNS necessários para fornecer, renderizar e rastrear campanhas de email.
+A delegação de domínio permite que a Adobe controle e mantenha todos os aspectos do DNS necessários para entregar, renderizar e rastrear campanhas de email.
 
 Saiba mais sobre [Delegação de domínio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR)
 +++
@@ -556,7 +556,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 +++**Árvore de navegação**
 
-A árvore de navegação é a navegação principal no modo de exibição Explorador do Adobe Campaign. A árvore de navegação funciona como um navegador de arquivos (por exemplo, Windows Explorer). As pastas podem conter subpastas. Selecionar um nó exibe a visualização correspondente ao nó. A visualização exibida é uma lista associada a um esquema e um formulário de entrada para editar a linha selecionada. É possível personalizar a árvore de navegação e definir permissões em pastas.
+A árvore de navegação é a navegação principal no modo de exibição Explorer do Adobe Campaign. A árvore de navegação funciona como um navegador de arquivos (por exemplo, Windows Explorer). As pastas podem conter subpastas. Selecionar um nó exibe a visualização correspondente ao nó. A visualização exibida é uma lista associada a um esquema e um formulário de entrada para editar a linha selecionada. É possível personalizar a árvore de navegação e definir permissões em pastas.
 
 Saiba mais sobre a [Árvore de navegação](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
 +++
@@ -1002,7 +1002,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 +++**Logs de rastreamento**
 
-O fluxo de trabalho técnico de rastreamento recupera os dados de rastreamento depois que o delivery é enviado e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento da entrega. Você pode encontrar informações para aberturas e cliques em um email ou outras interações com uma mensagem recebida pelo recipient.
+O fluxo de trabalho técnico de rastreamento recupera os dados de rastreamento depois que a entrega é enviada e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento da entrega. Você pode encontrar informações para aberturas e cliques em um email ou outras interações com uma mensagem recebida pelo recipient.
 
 Saiba mais sobre [Logs de rastreamento](../../delivery/using/accessing-the-tracking-logs.md).
 +++

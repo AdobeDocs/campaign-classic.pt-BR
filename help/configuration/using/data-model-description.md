@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Data Model
 role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2385'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ Esta tabela corresponde à **nms:recipient** esquema.
 
 O campo iFolderId é a chave externa que vincula o recipient à sua pasta de execução. Para obter mais informações, consulte [XtkFolder](#XtkFolder).
 
-O campo sCountryCode é o código ISO 3166-1 Alfa 2 (2 caracteres) do país associado ao recipient. Na verdade, esse campo é uma chave estrangeira na tabela de referência de país (NmsCountry), que contém os rótulos de país e outros dados de código de país. Se o país não estiver preenchido, o valor &quot;XX&quot; será armazenado (e usado no lugar de um registro de ID zero).
+O campo sCountryCode é o código ISO 3166-1 Alpha 2 (2 caracteres) do país associado ao recipient. Na verdade, esse campo é uma chave estrangeira na tabela de referência de país (NmsCountry), que contém os rótulos de país e outros dados de código de país. Se o país não estiver preenchido, o valor &quot;XX&quot; será armazenado (e usado no lugar de um registro de ID zero).
 
 Para obter mais informações sobre a tabela Recipient, consulte [nesta seção](../../configuration/using/about-data-model.md#default-recipient-table).
 
@@ -140,7 +140,7 @@ Esse conjunto de tabelas está vinculado à variável **Otimização de campanha
 * **NmsVolumeLine**: esta tabela corresponde aos parâmetros de **nms:volumeLine** esquema. Ele contém o conjunto de linhas de disponibilidade das regras de capacidade.
 * **NmsVolumeConsumed**: esta tabela corresponde aos parâmetros de **nms:volumeConsumed** esquema. Ele contém todas as linhas de consumo das regras de capacidade.
 
-## Gestor de resposta {#response-management}
+## Gerenciamento de resposta {#response-management}
 
 Esse conjunto de tabelas está vinculado à variável **Gestor de Resposta** módulo, que permite medir o sucesso e a lucratividade de campanhas de marketing ou apresentações de oferta para todos os canais de comunicação. Para obter mais informações, consulte [Sobre o gestor de resposta](../../response/using/about-response-manager.md).
 
@@ -261,12 +261,12 @@ Esse conjunto de tabelas está vinculado à variável **Canal de aplicativo móv
 
 ## Módulo de marketing social {#social-marketing-module}
 
-Esse conjunto de tabelas está vinculado à variável **Gerenciamento de redes sociais** módulo, que permite interagir com clientes atuais e potenciais via Facebook e Twitter. Para obter mais informações, consulte [Sobre marketing social](../../social/using/about-social-marketing.md).
+Esse conjunto de tabelas está vinculado à variável **Gerenciamento de redes sociais** módulo, que permite interagir com clientes atuais e potenciais via Facebook e X (anteriormente conhecido como Twitter). Para obter mais informações, consulte [Sobre marketing social](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
 * **NmsVisitor**: esta tabela corresponde aos parâmetros de **nms:visitor** esquema. Ele contém informações sobre visitantes.
-* **NmsVisitorSub**: esta tabela corresponde aos parâmetros de **nms:visitorSub** esquema. Ela permite vincular um visitante aos serviços aos quais ele se inscreveu (Twitter ou Facebook).
+* **NmsVisitorSub**: esta tabela corresponde aos parâmetros de **nms:visitorSub** esquema. Ela permite vincular um visitante aos serviços aos quais ele se inscreveu (X ou Facebook).
 * **NmsFriendShipRel**: esta tabela corresponde aos parâmetros de **nms:friendshipRel** esquema. Ela permite vincular visitantes com seus amigos no contexto do serviço do Facebook.
 * **NmsVisitorInterestRel**: esta tabela corresponde aos parâmetros de **nms:visitorInterestRel** esquema. Ela permite vincular visitantes e seus interesses.
 * **NmsInterest**: esta tabela corresponde aos parâmetros de **nms:interest** esquema. Ele contém a lista de interesses de cada visitante.

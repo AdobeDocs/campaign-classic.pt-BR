@@ -1,54 +1,54 @@
 ---
 product: campaign
-title: Criar e identificar o delivery
-description: Criar e identificar o delivery
+title: Criar e identificar a entrega
+description: Criar e identificar a entrega
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Channel Configuration
 role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '283'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 90%
 
 ---
 
-# Criar e identificar o delivery {#create-and-identify-the-delivery}
+# Criar e identificar a entrega {#create-and-identify-the-delivery}
 
-## Criar o delivery {#creating-the-delivery}
+## Criar a entrega {#creating-the-delivery}
 
-Você poderá criar um delivery usando a visão geral ou o menu **[!UICONTROL Create > Delivery]**.
+Você poderá criar uma entrega usando a visão geral ou o menu **[!UICONTROL Create > Delivery]**.
 
 
-Para criar um delivery, clique em **[!UICONTROL Create]** acima da lista de deliveries. Ao criar um novo delivery, você deverá indicar o canal de delivery usado. Para fazer isso, selecione o template de delivery apropriado na lista suspensa no campo **[!UICONTROL Delivery template]**.
+Para criar uma entrega, clique em **[!UICONTROL Create]** acima da lista de entregas. Ao criar uma nova entrega, você deverá indicar o canal de entrega usado. Para fazer isso, selecione o template de entrega apropriado na lista suspensa no campo **[!UICONTROL Delivery template]**.
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
-Um modelo padrão é fornecido para cada canal que você instalou: mala direta, email, fax, telefone, canal móvel (SMS), Facebook, Twitter etc.
+Um modelo padrão é fornecido para cada canal que você instalou: mala direta, email, fax, telefone, canal móvel (SMS), Facebook, X (anteriormente conhecido como Twitter), etc.
 
 >[!NOTE]
 >
 >Os canais oferecidos na lista dependem do contrato de licença.
 
-Você poderá criar novos modelos de delivery para pré-configurar parâmetros específicos de acordo com suas necessidades. Para obter mais informações, consulte [esta seção](about-templates.md).
+Você poderá criar novos modelos de entrega para pré-configurar parâmetros específicos de acordo com suas necessidades. Para obter mais informações, consulte [esta seção](about-templates.md).
 
-## Identificar o delivery {#identifying-the-delivery}
+## Identificar a entrega {#identifying-the-delivery}
 
-Você precisa concluir os parâmetros para identificar o delivery. Para fazer isso:
+Você precisa concluir os parâmetros para identificar a entrega. Para fazer isso:
 
-1. Insira um nome para o delivery no campo **[!UICONTROL Label]**.
+1. Insira um nome para a entrega no campo **[!UICONTROL Label]**.
 
-   Um código de delivery também poderá ser atribuído. O nome do delivery e seu código aparecerão na lista de deliveries, mas não poderão ser vistos pelos recipients.
+   Um código de entrega também poderá ser atribuído. O nome da entrega e seu código aparecerão na lista de entregas, mas não poderão ser vistos pelos recipients.
 
 1. Adicione uma descrição no campo **[!UICONTROL Description]**.
-1. Selecione a natureza do delivery no campo relevante. Essas informações são úteis para o rastreamento do delivery: você poderá filtrar com base nesse critério na lista de delivery ou criar consultas usando esse critério de seleção.
+1. Selecione a natureza da entrega no campo relevante. Essas informações são úteis para o rastreamento da entrega: você poderá filtrar com base nesse critério na lista de entrega ou criar consultas usando esse critério de seleção.
 
    ![](assets/s_ncs_user_email_del_nature.png)
 
 1. Clique em **[!UICONTROL Continue]** para confirmar essas informações e exibir a janela de configuração de mensagem.
 
-O conteúdo do delivery está pronto para ser configurado. A definição do conteúdo do delivery é específica para cada canal. Para obter mais informações, consulte a seção dedicada:
+O conteúdo da entrega está pronto para ser configurado. A definição do conteúdo da entrega é específica para cada canal. Para obter mais informações, consulte a seção dedicada:
 
 * [Definir o conteúdo do email](defining-the-email-content.md)
 * [Definir o conteúdo do SMS](sms-create.md#defining-the-sms-content)

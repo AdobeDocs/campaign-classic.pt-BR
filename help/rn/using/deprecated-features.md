@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1515'
-ht-degree: 100%
+source-wordcount: '1519'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   </tr>
 <tr>
  <td>Marketing social com o Facebook</td>
- <td>O marketing social do Facebook agora está obsoleto. Você pode usar a integração do Twitter para publicar em redes sociais ou trabalhar com a Adobe para criar um canal personalizado.
+ <td>O marketing social do Facebook agora está obsoleto. Você pode usar a integração X (anteriormente conhecida como Twitter) para publicar em redes sociais ou trabalhar com o Adobe para criar um canal personalizado.
  <p></p>
   <p>Data de remoção do público alvo: fim de 2023</p>
   </td>
@@ -77,8 +77,8 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   </td>
  </tr>
     <tr>
-  <td>Relatório de monitoramento técnico da avaliação do delivery<br></td>
-   <td><p>O Relatório de monitoramento técnico da avaliação do delivery não está mais disponível. Ele foi descontinuado na versão 21.1.3 do Campaign.</p>
+  <td>Relatório de monitoramento técnico da avaliação da entrega<br></td>
+   <td><p>O Relatório de monitoramento técnico da avaliação da entrega não está mais disponível. Ele foi descontinuado na versão 21.1.3 do Campaign.</p>
    <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
@@ -137,7 +137,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   </tr> 
    <tr> 
    <td>Canal móvel - Mensagens de push MMS e WAP</td>
-   <td>A partir da versão 18.4 do Campaign, os canais MMS e Wap Push não estarão mais disponíveis. Como substituição, você pode usar os deliveries de <a href="../../delivery/using/sms-channel.md">SMS</a> e <a href="../../delivery/using/about-mobile-app-channel.md">Push</a>.</td>
+   <td>A partir da versão 18.4 do Campaign, os canais MMS e Wap Push não estarão mais disponíveis. Como substituição, você pode usar as entregas de <a href="../../delivery/using/sms-channel.md">SMS</a> e <a href="../../delivery/using/about-mobile-app-channel.md">Push</a>.</td>
   </tr> 
    <tr> 
    <td>Canal móvel - LINE v1</td>

@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2549'
-ht-degree: 100%
+source-wordcount: '2553'
+ht-degree: 98%
 
 ---
 
@@ -275,7 +275,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 * O mapa de calor do fluxo de trabalho foi aprimorado para evitar tempos limite ao executar workflows com várias atividades. (NEO-27423).
 * Correção de um problema que permitia que uma oferta fosse apresentada mesmo se sua data final fosse no passado. Agora, o Campaign Classic considera o carimbo de data e hora completo, em vez de somente a data. (NEO-27590)
 * O link do Google+ foi removido do bloco de personalização **links de compartilhamento de rede social**.
-* Correção de um problema após a implementação de uma correção de erro na última versão. Uma verificação foi adicionada ao nome do host ao conectar usando SSL/TLS, o que resultava em falha de delivery de SMS. A verificação do nome do host foi desativada para a maioria dos protocolos, como POP3, SMS e HTTP com proxy, e a verificação do certificado para a conta externa SMS foi aprimorada com três valores (NEO-29581). [Saiba mais](../../delivery/using/sms-protocol.md#skip-tls)
+* Correção de um problema após a implementação de uma correção de erro na última versão. Uma verificação foi adicionada ao nome do host ao conectar usando SSL/TLS, o que resultava em falha de entrega de SMS. A verificação do nome do host foi desativada para a maioria dos protocolos, como POP3, SMS e HTTP com proxy, e a verificação do certificado para a conta externa SMS foi aprimorada com três valores (NEO-29581). [Saiba mais](../../delivery/using/sms-protocol.md#skip-tls)
 
 **Correções**
 
@@ -284,14 +284,14 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 * Correção de um problema que ocorria ao executar workflows em que um novo campo era adicionado como parte de uma atividade **Enriquecimento** antes de uma atividade de **Entrega** usando um target mapping de **Arquivo externo**: campos indesejados eram adicionados ao target mapping do **Arquivo externo**. (NEO-27687)
 * Correção de um problema que fazia com que alguns caracteres no código fonte fossem alterados ao ser reaberta uma aplicação web criada e salva anteriormente. (NEO-27597)
 * Correção de um problema que ocorria ao atualizar para uma compilação, incluindo o novo mecanismo de assinatura para links de rastreamento (da Compilação 19.1.4 e Campaign 20.2): quando vários modelos eram associados a um evento, a atualização podia fazer com que o modelo errado fosse selecionado ao ser enviada a mensagem transacional. (NEO-28326)
-* Correção de um problema que fazia com que o MTA ficasse sem resposta e não conseguisse processar deliveries, a menos que fosse reiniciado. (NEO-27455)
+* Correção de um problema que fazia com que o MTA ficasse sem resposta e não conseguisse processar entregas, a menos que fosse reiniciado. (NEO-27455)
 * Correção de um problema no banco de dados MSSQL relacionado ao gerenciamento de fuso horário durante operações de carregamento em massa para uma coluna de tipo datetime. (NEO-27375)
 * Correção de um problema de consulta de fluxo de trabalho ao usar funções Redshift xtk. Os SubDays, SubSeconds, SubMinutes e SubHours agora aceitam os tipos de data e hora do Redshift (NEO-24962).
 * Correção de um problema que exibia uma mensagem de erro de script ao tentar a pré-visualização de um relatório com acesso Anônimo. (NEO-27081)
 * Correção de um problema que podia reduzir o uso de memória no servidor durante a execução de uma análise de entrega.
 * Correção de um problema que impedia que a instância funcionasse durante a tentativa de executar consultas complexas específicas.
 * Correção de um problema que impedia a execução do fluxo de trabalho técnico **Sincronizar páginas do Twitter**. (NEO-28634)
-* Correção de um problema que podia exibir uma mensagem de erro relacionada à função decryptPassword durante a tentativa de publicar no Twitter usando o modelo de entrega **Tweet (twitter)**. (NEO-28216)
+* Correção de um problema que podia exibir uma mensagem de erro relacionada à função decryptPassword durante a tentativa de publicar no X (anteriormente conhecido como Twitter) usando o **Tweet (twitter)** template do delivery. (NEO-28216)
 * Correção de um problema que ocorria ao usar uma atividade **JavaScript** para fazer uma solicitação HTTP em um fluxo de trabalho. Após a definição do número da porta no nome do Host, a chamada falhará com o seguinte erro (NEO-29146):
 
 ```

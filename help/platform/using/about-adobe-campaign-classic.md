@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 100%
+source-wordcount: '934'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ O ciclo de campanha de marketing do Adobe Campaign ilustra as principais áreas 
 
 Os perfis (clientes, clientes potenciais, assinantes de boletim informativo etc.) são centralizados no banco de dados do Adobe Campaign. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta on-line via formulários Web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados PII relevantes em uma exibição consolidada para analisar e tomar decisões.
 
-No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (e-mails, SMS etc.). Graças aos dados dos recipients que são armazenados no banco de dados, você poderá filtrar o recipient que receberá qualquer delivery e adicionar dados de personalização ao seu conteúdo de delivery. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que elas sejam enviadas ao destino final.
+No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (e-mails, SMS etc.). Graças aos dados dos recipients que são armazenados no banco de dados, você poderá filtrar o recipient que receberá qualquer entrega e adicionar dados de personalização ao seu conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que elas sejam enviadas ao destino final.
 
 As noções básicas de gerenciamento de perfil são explicadas em [Sobre perfis](../../platform/using/about-profiles.md).
 
@@ -64,7 +64,7 @@ O Adobe Campaign permite monitorar e interpretar o comportamento dos clientes po
 
 ### Integrações com a Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
-Você pode combinar as funcionalidades de delivery e as funcionalidades avançadas de gerenciamento de campanhas do Adobe Campaign com um conjunto de soluções criadas para ajudar a personalizar a experiência de seus usuários: os acionadores do Adobe Experience Manager, Adobe Analytics, Adobe Target ou Adobe Experience Cloud, por exemplo. É possível também integrar o Adobe IMS e fazer logon no Campaign com sua Adobe ID. Para obter mais informações sobre integrações entre soluções e autenticações, consulte [esta seção](../../integrations/using/about-adobe-id.md).
+Você pode combinar as funcionalidades de entrega e as funcionalidades avançadas de gerenciamento de campanhas do Adobe Campaign com um conjunto de soluções criadas para ajudar a personalizar a experiência de seus usuários: os acionadores do Adobe Experience Manager, Adobe Analytics, Adobe Target ou Adobe Experience Cloud, por exemplo. É possível também integrar o Adobe IMS e fazer logon no Campaign com sua Adobe ID. Para obter mais informações sobre integrações entre soluções e autenticações, consulte [esta seção](../../integrations/using/about-adobe-id.md).
 
 ## Principais recursos e complementos {#core-capabilities-and-add-ons}
 
@@ -77,7 +77,7 @@ Os recursos abaixo estão disponíveis. A disponibilidade desses recursos depend
 * [MRM](../../mrm/using/about-marketing-resource-management.md) - gerencie recursos e orçamentos de marketing;
 * [Interação](../../interaction/using/interaction-and-offer-management.md) - gestão de ofertas com o Campaign;
 * [Centro de mensagens](../../message-center/using/about-transactional-messaging.md) - envie mensagens transacionais por e-mail, SMS ou aplicativo para dispositivos móveis;
-* [Marketing social](../../social/using/about-social-marketing.md) - comunique-se nas redes sociais: Facebook, Twitter,
+* [Marketing social](../../social/using/about-social-marketing.md) - comunique-se nas redes sociais: Facebook, X (anteriormente conhecido como Twitter),
 * [Fluxo de trabalho](../../workflow/using/about-workflows.md) / Gestão de dados - automatize processos e gerencie dados com fluxos de trabalho;
 * [Aplicativos da Web](../../web/using/about-web-applications.md) - crie páginas e formulários Web;
 * [Gerenciador de pesquisas](../../surveys/using/about-surveys.md) - crie pesquisas e enquetes on-line;

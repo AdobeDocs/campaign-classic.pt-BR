@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 100%
+source-wordcount: '1791'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ _2 de março de 2021_
 
 A compilação 9032@10c2709 inclui a seguinte correção:
 
-* Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nos deliveries. (NEO-31453, NEO-31454)
+* Correção de uma regressão que impedia o uso de alguns componentes do console, como o seletor de datas e o gerenciamento de imagens nas entregas. (NEO-31453, NEO-31454)
 
 **Somente a atualização do console é obrigatória. Não é necessária nenhuma atualização do servidor.**
 
@@ -138,7 +138,7 @@ A build 9032@3a9dc9c inclui as seguintes correções:
 
 >[!CAUTION]
 >
->Se tiver problemas com notificações por push usando links de rastreamento ou delivery usando tags de âncora, recomendamos desativar o novo mecanismo de assinatura para links de rastreamento. O procedimento está detalhado [nesta página](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)
+>Se tiver problemas com notificações por push usando links de rastreamento ou entrega usando tags de âncora, recomendamos desativar o novo mecanismo de assinatura para links de rastreamento. O procedimento está detalhado [nesta página](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)
 
 * Correção de um problema que impedia a exibição de imagens na entrega de linha. (NEO-23207)
 * Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
@@ -171,7 +171,7 @@ _17 de dezembro de 2019_
 
 A build 9032@d6b8062 inclui a seguinte correção:
 
-* Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, Twitter). (NEO-19595)
+* Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, X - anteriormente conhecido como Twitter). (NEO-19595)
 
 ### Versão 4 do [!DNL Gold Standard]{#gs-4}
 

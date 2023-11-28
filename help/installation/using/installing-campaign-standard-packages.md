@@ -4,11 +4,11 @@ title: Instalar pacotes integrados do Campaign Classic
 description: Saiba como instalar pacotes integrados do Campaign
 feature: Installation, Application Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1282'
 ht-degree: 23%
 
 ---
@@ -61,7 +61,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
  </thead> 
  <tbody> 
   <tr> 
-   <td> Delivery<br /> </td> 
+   <td> Entrega<br /> </td> 
    <td> Monitora deliveries e eventuais problemas encontrados quando as mensagens são enviadas. <a href="../../delivery/using/about-delivery-monitoring.md">Saiba mais</a><br /> </td> 
    <td> Todos</td> 
   </tr> 
@@ -98,7 +98,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr--> 
   <tr> 
    <td> Redes sociais (Marketing social) <br /> </td> 
-   <td> Sincroniza o Adobe Campaign com o Twitter e o Facebook. <a href="../../social/using/about-social-marketing.md">Saiba mais</a> <br /> </td> 
+   <td> Sincroniza o Adobe Campaign com o X (anteriormente conhecido como Twitter) e o Facebook. <a href="../../social/using/about-social-marketing.md">Saiba mais</a> <br /> </td> 
    <td> Todos</td> 
   </tr> 
   <tr> 

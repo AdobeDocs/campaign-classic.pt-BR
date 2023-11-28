@@ -6,26 +6,24 @@ feature: Social Marketing
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '577'
+ht-degree: 94%
 
 ---
 
 # Marketing viral e social{#viral-and-social-marketing}
 
-
-
 O Adobe Campaign permite que você configure ferramentas para incentivar o marketing viral.
 
-Isso permite que os recipients de delivery ou os visitantes do site compartilhem informações com a rede: desde adicionar um link ao seu perfil do Facebook ou do Twitter até enviar uma mensagem para um amigo.
+Isso permite que os recipients de entrega ou visitantes do site compartilhem informações com a rede: desde adicionar um link ao seu perfil do Facebook ou X (conhecido anteriormente como Twitter) até enviar uma mensagem para um amigo.
 
 ![](assets/s_ncs_user_viral_icons.png)
 
 >[!CAUTION]
 >
->Para que os links adicionados funcionem corretamente, a página de espelho correspondente deve estar disponível. Para fazer isso, inclua o link para a página espelho no delivery.
+>Para que os links adicionados funcionem corretamente, a página de espelho correspondente deve estar disponível. Para fazer isso, inclua o link para a página espelho na entrega.
 
 ## Redes sociais: compartilhar um link {#social-networks--sharing-a-link}
 
@@ -92,7 +90,7 @@ Aplique as seguintes etapas:
 
 O compartilhamento e o acesso a informações compartilhadas são rastreados. Essas informações coletadas pelo Adobe Campaign podem ser acessadas em dois lugares:
 
-* na guia **[!UICONTROL Tracking]** do delivery (ou individualmente para cada recipient):
+* na guia **[!UICONTROL Tracking]** da entrega (ou individualmente para cada recipient):
 
   ![](assets/s_ncs_user_network_del_tracking_tab.png)
 

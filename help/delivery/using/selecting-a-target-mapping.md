@@ -7,16 +7,16 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Delivery Templates
 role: User
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '192'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 83%
 
 ---
 
 # Selecionar um target mapping{#selecting-a-target-mapping}
 
-Por padrão, templates de delivery têm como target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient.** O Adobe Campaign oferece outros target mapping para seus deliveries, para serem usados conforme suas necessidades.
+Por padrão, templates de entrega têm como target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient.** O Adobe Campaign oferece outros target mapping para suas entregas, para serem usados conforme suas necessidades.
 
 ![](assets/delivery_select_mapping.png)
 
@@ -24,13 +24,13 @@ Esses mappings são os seguintes:
 
 | Nome | Uso | Schema padrão |
 |---|---|---|
-| Recipients | Enviar delivery aos recipients do banco de dados do Adobe Campaign | nms:recipient |
-| Visitantes | Enviar delivery aos visitantes cujos perfis foram coletados por meio de referência (marketing viral) ou por meio de redes sociais (Facebook, Twitter), por exemplo. | mns:visitor |
-| Subscrições | Enviar delivery aos recipients que assinam um serviço de informações, como um boletim informativo | nms:subscription |
-| Assinaturas do visitante | Enviar delivery aos visitantes que são inscritos em um serviço de informações | nms:visitorSub |
-| Serviço | Publicar em uma conta do Twitter ou uma página do Facebook | nms:service |
-| Operadores | Enviar delivery aos operadores do Adobe Campaign | nms:operator |
-| Arquivo externo | Enviar delivery por meio de um arquivo que contenha todas as informações necessárias para o delivery | Nenhum schema vinculado, nenhum target inserido |
+| Recipients | Entregar aos recipients do banco de dados do Adobe Campaign | nms:recipient |
+| Visitantes | Enviar delivery aos visitantes cujos perfis foram coletados por meio de referência (marketing viral) ou por meio de redes sociais (Facebook, X - anteriormente conhecido como Twitter), por exemplo. | mns:visitor |
+| Subscrições | Entregar aos recipients que assinam um serviço de informações, como um boletim informativo | nms:subscription |
+| Assinaturas do visitante | Entregar aos visitantes que são inscritos em um serviço de informações | nms:visitorSub |
+| Serviço | Publicar em uma conta X ou uma página do Facebook | nms:service |
+| Operadores | Entregar aos operadores do Adobe Campaign | nms:operator |
+| Arquivo externo | Entregar por meio de um arquivo que contenha todas as informações necessárias para a entrega | Nenhum schema vinculado, nenhum target inserido |
 
 >[!NOTE]
 >
