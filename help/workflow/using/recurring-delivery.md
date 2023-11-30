@@ -5,16 +5,14 @@ description: Saiba mais sobre a atividade de workflow de entrega recorrente
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 05210269da2a32310c19911a3bc32240c84dc7ad
-workflow-type: ht
-source-wordcount: '277'
-ht-degree: 100%
+source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 88%
 
 ---
 
 # Entrega recorrente{#recurring-delivery}
-
-
 
 Uma atividade **[!UICONTROL Recurring delivery]** permite configurar uma ocorrência de template de entrega específico para uma campanha.
 
@@ -32,11 +30,15 @@ Para fazer isso:
 
 O processo de configuração dessa atividade é semelhante ao da criação de um template de entrega em termos das opções disponíveis. Para obter mais informações, consulte esta [seção](../../delivery/using/about-templates.md).
 
+>[!CAUTION]
+>
+>Os deliveries recorrentes não oferecem suporte ao envio de provas, incluindo [dados do target](../../workflow/using/data-life-cycle.md#target-data) elementos de personalização.
+
 Para obter um exemplo de uso dessa atividade, consulte esta [seção](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Como configurar uma entrega recorrente {#set-up-recurring-delivery}
 
-Uma **entrega recorrente** criará uma nova instância de entrega toda vez que for executada. Por exemplo, se o workflow estiver programado para ser executado uma vez por semana, o resultado será 52 entregas em um ano. Também significa que o log abrangente e os logs de rastreamento serão separados por cada instância da entrega.
+Uma **entrega recorrente** criará uma nova instância de entrega toda vez que for executada. Por exemplo, se o workflow estiver programado para ser executado uma vez por semana, o resultado será 52 deliveries em um ano. Também significa que o log abrangente e os logs de rastreamento serão separados por cada instância da entrega.
 
 ![Entrega recorrente](assets/delivery_recurring.jpg)
 
