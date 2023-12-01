@@ -5,9 +5,9 @@ description: Saiba mais sobre a atividade de workflow de entrega recorrente
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '292'
 ht-degree: 88%
 
 ---
@@ -32,7 +32,7 @@ O processo de configuração dessa atividade é semelhante ao da criação de um
 
 >[!CAUTION]
 >
->Os deliveries recorrentes não oferecem suporte ao envio de provas, incluindo [dados do target](../../workflow/using/data-life-cycle.md#target-data) elementos de personalização.
+>Os deliveries recorrentes não são compatíveis com a visualização de conteúdo ou o envio de provas, incluindo [dados do target](../../workflow/using/data-life-cycle.md#target-data) elementos de personalização.
 
 Para obter um exemplo de uso dessa atividade, consulte esta [seção](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
