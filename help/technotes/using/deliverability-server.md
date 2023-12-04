@@ -4,10 +4,10 @@ title: Atualizar para o novo servidor de avaliação do delivery
 description: Saiba como atualizar para o novo servidor de entrega do Campaign
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
+source-git-commit: eea3657f1cffa215e1fc1cb1eb8782b83321aae4
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 20%
+source-wordcount: '1252'
+ht-degree: 21%
 
 ---
 
@@ -48,7 +48,7 @@ Como parte da nova integração do servidor de entrega, o Campaign precisa se co
 
 >[!AVAILABILITY]
 >
-> O JWT (JSON Web Tokens) está atualmente no processo de depreciação e está sendo substituído pelo OAuth. A transição está sendo realizada progressivamente nas próximas versões do Campaign e a documentação será atualizada para refletir essas atualizações.
+> O JWT (Tokens JSON da Web) está atualmente em processo de descontinuação, sendo substituído pelo OAuth. A transição será realizada progressivamente nas próximas versões do Campaign e a documentação será atualizada para refletir essas atualizações.
 
 ### Pré-requisitos{#prerequisites}
 
@@ -90,7 +90,7 @@ Se você não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente A
    >
    >Se você já estiver usando a funcionalidade de autenticação JWT do Adobe IO para outra integração, como conector do Analytics ou acionadores de Adobe, será necessário atualizar o projeto adicionando **API do Campaign** para esse projeto.
 
-1. Escolha **[!UICONTROL Add API]**.
+1. Escolher **[!UICONTROL Add API]**.
    ![](assets/Add-API.png)
 1. Na janela **[!UICONTROL Add an API]**, selecione **[!UICONTROL Adobe Campaign]**.
    ![](assets/AC-API.png)
@@ -145,15 +145,7 @@ Para fazer isso:
 
 1. Você deve interromper e reiniciar o servidor para que a modificação seja considerada. Você também pode executar um `config -reload` comando.
 
-### Etapa 3: ativar o novo servidor de capacidade de entrega
-
-Agora você pode ativar o novo servidor de capacidade de entrega. Para fazer isso:
-
-1. Abra o console do cliente e faça logon no Adobe Campaign como Administrador.
-1. Navegue até **Administração > Plataforma > Opções**.
-1. Acesse o `NewDeliverabilityServer_FeatureFlag` e defina o valor como `1`. Essa configuração deve ser executada em todas as instâncias do Campaign (MKT, MID, RT, EXEC). Como um cliente híbrido, entre em contato com o Adobe para ter a opção definida em suas instâncias MID, RT e EXEC.
-
-### Etapa 4: validar sua configuração
+### Etapa 3: validar sua configuração
 
 Para verificar se a integração foi bem-sucedida, siga as etapas abaixo:
 
