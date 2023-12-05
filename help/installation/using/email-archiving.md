@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e808e71ccf949bdaf735cdb2895389f03638bd71
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 7%
+source-wordcount: '1218'
+ht-degree: 4%
 
 ---
 
@@ -80,7 +80,7 @@ Depois que o caminho da pasta local for definido, adicione e edite os seguintes 
 
 ```
 <archiving autoStart="false" compressionFormat="0" compressBatchSize="10000"
-           archivingType="0" expirationDelay="2" purgeArchivesDelay="7"
+           archivingType="1" expirationDelay="2" purgeArchivesDelay="7"
            pollDelay="600" acquireLimit="5000" smtpNbConnection="2"/>
 ```
 
@@ -91,11 +91,12 @@ Depois que o caminho da pasta local for definido, adicione e edite os seguintes 
   **1**: compactação (formato .zip)
 
 * **compressBatchSize**: número de arquivos .eml adicionados a um arquivo (arquivo .zip).
-* **archivingType**: estratégia de arquivamento a ser usada. Os valores possíveis são:
 
-  **0**: cópias brutas de emails enviados são salvas no formato .eml na **dataLogPath** pasta (valor padrão). Uma cópia de arquivamento do **`<deliveryid>-<broadlogid>-sent.eml`** o arquivo é salvo na **dataLogPath/archives** pasta. O caminho do arquivo de email enviado torna-se **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
 
-  **1**: cópias brutas de emails enviados são salvas no formato .eml na **dataLogPath** e são enviados ao endereço de email CCO via SMTP. Quando as cópias de email são enviadas para o endereço CCo, o nome do arquivo de arquivamento se torna **`<deliveryid>-<broadlogid>-sent-archived.eml`** e o arquivo for movido para a pasta **dataLogPath/archives** pasta. O caminho do arquivo de email enviado e CCO arquivado é **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+* **archivingType**: estratégia de arquivamento a ser usada. O único valor possível é **1**. Cópias brutas de emails enviados são salvas no formato .eml na **dataLogPath** e são enviados ao endereço de email CCO via SMTP. Quando as cópias de email são enviadas para o endereço CCo, o nome do arquivo de arquivamento se torna **`<deliveryid>-<broadlogid>-sent-archived.eml`** e o arquivo for movido para a pasta **dataLogPath/archives** pasta. O caminho do arquivo de email enviado e CCO arquivado é **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+
+  <!--
+  **0**: raw copies of sent emails are saved in .eml format to the **dataLogPath** folder (default value). An archiving copy of the **`<deliveryid>-<broadlogid>-sent.eml`** file is saved to the **dataLogPath/archives** folder. The sent email file path becomes **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.-->
 
 * **expirationDelay**: número de dias que os arquivos .eml são mantidos para arquivamento. Após esse atraso, elas são movidas automaticamente para o estado **dataLogPath/archives** pasta para compactação. Por padrão, os arquivos .eml expiram após dois dias.
 * **purgeArchivesDelay**: número de dias em que os arquivos são mantidos no **dataLogPath/`<archives>`** pasta. Após esse período, eles são excluídos permanentemente. A limpeza começa quando o MTA é iniciado. Por padrão, ele é executado a cada sete dias.
@@ -131,23 +132,23 @@ No **config-`<instance name>.xml`** use os seguintes parâmetros para definir o 
 >
 >Além disso, o relé atribui um **[!UICONTROL Sent]** para todos os emails, incluindo aqueles que não foram enviados. Portanto, todas as mensagens são arquivadas.
 
-## Migrar para o novo Email Cco {#updated-email-archiving-system--bcc-}
+<!--
+## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE No local e híbrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"}
-
-
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
->O sistema de arquivamento de emails (Cco) foi alterado com o Adobe Campaign 17.2 (build 8795). Se você estiver atualizando de uma build mais antiga e já estiver usando os recursos de arquivamento de emails, será necessário atualizar manualmente para o novo sistema de arquivamento de emails (Cco).
+>The email archiving system (BCC) changed with Adobe Campaign 17.2 (build 8795). If you are upgrading from an older build and were already using email archiving capabilities, you must upgrade manually to the new email archiving system (BCC).
 
-Para fazer isso, faça as seguintes alterações no **`config-<instance>.xml`** arquivo:
+To do this, make the following changes to the **`config-<instance>.xml`** file:
 
-1. Remova o **zipPath** parâmetro do **`<archiving>`** nó.
-1. Defina o **compressionFormat** parâmetro para **1** se necessário.
-1. Defina o **archivingType** parâmetro para **1**.
+1. Remove the **zipPath** parameter from the **`<archiving>`** node.
+1. Set the **compressionFormat** parameter to **1** if needed.
+1. Set the **archivingType** parameter to **1**.
 
-Depois que o email Cco estiver configurado, selecione o **[!UICONTROL Email BCC]** no template do delivery ou no delivery. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
+Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]** option in the delivery template or the delivery. For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
+-->
 
 ## Práticas recomendadas de Cco de email {#best-practices}
 
