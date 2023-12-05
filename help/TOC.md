@@ -6,10 +6,10 @@ title: Manual do Campaign Classic v7
 user-guide-description: Com o Adobe Campaign, é possível usar dados avançados do cliente para criar, coordenar e entregar campanhas dinâmicas que os clientes realmente desejam, por meio de email, dispositivos móveis, canais offline e muito mais.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 100%
+source-wordcount: '2544'
+ht-degree: 99%
 
 ---
 
@@ -820,6 +820,9 @@ ht-degree: 100%
    + [Procedimento de reversão](migration/using/about-rollback.md)
 + Notas técnicas {#technotes}
    + [Recomendações para dimensionamento de hardware](technotes/using/hardware-sizing.md)
+   + Atualização para IMS{#ims}
+      + [Migrar usuários para o IMS](technotes/using/migrate-users-to-ims.md)
+      + [Migrar operadores técnicos para o Console do desenvolvedor](technotes/using/ims-migration.md)
    + Atualizações e compatibilidade{#technote-migration}
       + [Notas técnicas](technotes/using/technote.md)
       + [Habilitar o Microsoft Edge Chromium](technotes/using/edge-chromium.md)
