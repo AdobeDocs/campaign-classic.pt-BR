@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1519'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   </tr>
 <tr>
  <td>Marketing social com o Facebook</td>
- <td>O marketing social do Facebook agora está obsoleto. Você pode usar a integração X (anteriormente conhecida como Twitter) para publicar em redes sociais ou trabalhar com o Adobe para criar um canal personalizado.
+ <td>O marketing social do Facebook agora está obsoleto. É possível usar a integração com o X (anteriormente conhecido como Twitter) para publicar em redes sociais ou colaborar com a Adobe para criar um canal personalizado.
  <p></p>
   <p>Data de remoção do público alvo: fim de 2023</p>
   </td>
