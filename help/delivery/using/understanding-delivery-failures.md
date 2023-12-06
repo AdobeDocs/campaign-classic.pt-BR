@@ -8,9 +8,9 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2573'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -293,7 +293,7 @@ For hosted or hybrid installations, if you have upgraded to the [Enhanced MTA](s
 
 For on-premise installations and hosted/hybrid installations using the legacy Campaign MTA, these rules contain the list of character strings which can be returned by remote servers and which let you qualify the error (**Hard**, **Soft** or **Ignored**).-->
 
-A variável **[!UICONTROL Inbound email]** As regras do contêm a lista de cadeias de caracteres que podem ser retornadas por servidores remotos e que permitem qualificar o erro (**Rígido**, **Suave** ou **Ignorado**).
+As regras de **[!UICONTROL Inbound email]** contêm a lista de strings de caracteres que podem ser retornadas por servidores remotos e que permitem que você qualifique o erro (**Grave**, **Leve** ou **Ignorado**).
 
 Quando um email não é entregue, o servidor remoto envia uma mensagem de rejeição ao endereço especificado nos [parâmetros da plataforma](../../installation/using/deploying-an-instance.md). O Adobe Campaign compara o conteúdo de cada email rejeitado com as strings da lista de regras e atribui um dos três [tipos de erro](#delivery-failure-types-and-reasons).
 
@@ -316,7 +316,7 @@ Para instalações lno local e instalações hospedadas/híbridas que usam o MTA
 * Você pode escolher se ativa ou não determinados padrões de identificação e chaves de criptografia para verificar o nome do domínio, como **ID do remetente**, **DomainKeys**, **DKIM**, e **S/MIME**.
 * Os parâmetros de **retransmissão SMTP** permitem configurar o endereço IP e a porta de um servidor de retransmissão para um determinado domínio. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no endereço do remetente, verifique se não está assinando seus emails com a **ID do remetente**, que é o padrão de autenticação de email proprietário desatualizado da Microsoft. Se a opção **[!UICONTROL Sender ID]** estiver ativada, desmarque a caixa correspondente e entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Sua capacidade de entrega não será afetada.
+Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no endereço do remetente, verifique se não está assinando seus emails com a **ID do remetente**, que é o padrão de autenticação de email proprietário desatualizado da Microsoft. Se a opção **[!UICONTROL Sender ID]** estiver ativada, desmarque a caixa correspondente e entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html). Sua capacidade de entrega não será afetada.
 
 #### Gerenciamento de MX {#mx-management}
 
