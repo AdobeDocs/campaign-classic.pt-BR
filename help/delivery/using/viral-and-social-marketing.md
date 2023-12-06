@@ -7,17 +7,17 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Marketing viral e social{#viral-and-social-marketing}
 
-O Adobe Campaign permite que você configure ferramentas para incentivar o marketing viral.
+O Adobe Campaign permite configurar ferramentas para incentivar o marketing viral.
 
-Isso permite que os recipients de entrega ou visitantes do site compartilhem informações com a rede: desde adicionar um link ao seu perfil do Facebook ou X (conhecido anteriormente como Twitter) até enviar uma mensagem para um amigo.
+Isso permite que os recipients das entregas ou os visitantes do site compartilhem informações com a rede: desde adicionar um link ao seu perfil do Facebook ou X (anteriormente conhecido como Twitter) até enviar uma mensagem a um amigo.
 
 ![](assets/s_ncs_user_viral_icons.png)
 
