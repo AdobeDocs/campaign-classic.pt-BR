@@ -6,11 +6,13 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Technote, Upgrade
 role: User
 level: Beginner
+solution: Campaign
+version: Classic v7
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 87a27eb96fe9fbcb68a5e961b95cb4588eee85e3
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 65%
+ht-degree: 48%
 
 ---
 
@@ -49,7 +51,7 @@ Este programa tem três objetivos principais:
 * Criptografia de dados em repouso
 * Autenticação aprimorada (IMS)
 
-**Infraestruturas**
+**Infraestrutura**
 
 * Escalabilidade ágil de hardware
 * Restauração mais rápida
@@ -62,7 +64,7 @@ Este programa tem três objetivos principais:
 * Bancos de dados maiores
 * Versão comprovada do Campaign
 
-**Ofereça uma solução robusta e confiável para clientes do Adobe Campaign Classic**
+**Ofereça uma solução robusta e confiável para os clientes da Adobe Campaign Classic**
 
 1. Melhores procedimentos de produção, resultando em maior confiabilidade, reatividade mais rápida em caso de problema, recuperação mais rápida em caso de incidente grave.
 1. Maior capacidade de envio de email. As instâncias hospedadas no novo data center terão a possibilidade de se beneficiar da infraestrutura especializada para entrega de email. Isso pode resultar em maior velocidade de entrega de email ou permitir o uso de menos IPs de envio.
@@ -79,7 +81,7 @@ Este programa tem três objetivos principais:
 
 Para começar essa iniciativa, as contas que exigem essa migração receberão uma comunicação por email da Adobe fornecendo uma linha do tempo e acesso à documentação. Essa será a sua notificação de que sua conta está programada para ser migrada.
 
-Uma migração pode ser iniciada por [abertura de um novo tíquete de suporte do Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=Campaign#support). Use a linha de assunto “Migrar para AWS”.
+Uma migração pode ser iniciada por [abertura de um novo tíquete de suporte do Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=Campaign#support). Use a linha de assunto &quot;Migrar para o AWS&quot;.
 
 ### Essa migração é obrigatória?
 
@@ -91,9 +93,9 @@ O Adobe planeja desativar o data center herdado, as instâncias do Adobe Campaig
 
 Esse é um caminho crítico a seguir, pois seu local atual pode estar exposto a **vulnerabilidades de segurança e desempenho**.
 
-Além disso, essa migração agora é um **pré-requisito para qualquer atualização de Build futura** do Adobe Campaign. A atualização de build não é mais possível no Data Center herdado.
+Além disso, essa migração agora é uma **pré-requisito para qualquer atualização de Build futura** do seu Adobe Campaign. A atualização de build não é mais possível no Data Center herdado.
 
-A Adobe está comprometida em proteger seus dados e colocar você no caminho certo para o futuro do Adobe Campaign. Precisamos da sua parceria para torná-la um sucesso conjunto.
+A Adobe está comprometida em proteger seus dados e colocar você no caminho certo para o futuro do Adobe Campaign. Precisamos de sua parceria para torná-la um sucesso conjunto!
 
 
 **Organizamos uma equipe** de representantes dedicados do Atendimento ao cliente, Gerentes de sucesso do cliente, Gerentes de produtos, Engenheiros, Especialistas em TechOps e Consultores de produtos para auxiliar e garantir que a experiência seja perfeita e contínua. Estamos empenhados em garantir que você tenha as informações relevantes do projeto e de contato.
@@ -157,13 +159,14 @@ Isso significa que a alteração será transparente para os usuários e implemen
 
 **IPs de envio de email**
 
-Primeiro, a equipe de Entregabilidade do Adobe avaliará o status da capacidade de entrega da plataforma e recomendará um plano para a mudança para os novos IPs.
+Primeiro, a Entregabilidade do Adobe avaliará o status da capacidade de entrega da plataforma e recomendará um plano para a mudança para os novos IPs.
 
-A Adobe fornecerá o mesmo número de IPs no novo data center.
+O Adobe fornecerá o mesmo número de IPs no novo data center.
 
 O aumento de novos IPs pode começar assim que os novos IPs forem provisionados.
 
-**Limpeza de aplicativo**  A transferência de dados entre data centers é parte do processo que impacta o tempo de inatividade.
+**Limpeza do aplicativo**
+A transferência de dados entre data centers é parte do processo que impacta o tempo de inatividade.
 
 Os dados são armazenados de duas formas:
 
@@ -181,7 +184,7 @@ Sugestões:
 
 **Pausar execuções**
 
-Recomendamos desacelerar e, idealmente, pausar todas as execuções pouco antes do desligamento do aplicativo no data center herdado: entregas e fluxos de trabalho. Isso facilitará a reinicialização na Nuvem pública (AWS), pois os processos terão tempo para pausar &quot;normalmente&quot; e salvar qualquer estado de execução em andamento. 
+Recomendamos desacelerar e, idealmente, pausar todas as execuções pouco antes do desligamento do aplicativo no data center herdado: entregas e fluxos de trabalho. Isso facilitará a reinicialização na Nuvem pública (AWS), pois os processos terão tempo para pausar &quot;normalmente&quot; e salvar qualquer estado de execução em andamento.
 
 **Durante a migração**
 
