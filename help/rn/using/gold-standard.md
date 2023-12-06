@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1791'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -171,7 +171,7 @@ _17 de dezembro de 2019_
 
 A build 9032@d6b8062 inclui a seguinte correção:
 
-* Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (Facebook, X - anteriormente conhecido como Twitter). (NEO-19595)
+* Correção de um problema de rastreamento nos seguintes canais de comunicação: dispositivos móveis (SMS, MMS), push (iOS, Android) e redes sociais (X, anteriormente conhecido como Twitter, Facebook). (NEO-19595)
 
 ### Versão 4 do [!DNL Gold Standard]{#gs-4}
 
