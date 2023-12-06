@@ -8,9 +8,9 @@ feature: Delivery Templates
 role: User
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '196'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -25,10 +25,10 @@ Esses mappings são os seguintes:
 | Nome | Uso | Schema padrão |
 |---|---|---|
 | Recipients | Entregar aos recipients do banco de dados do Adobe Campaign | nms:recipient |
-| Visitantes | Enviar delivery aos visitantes cujos perfis foram coletados por meio de referência (marketing viral) ou por meio de redes sociais (Facebook, X - anteriormente conhecido como Twitter), por exemplo. | mns:visitor |
+| Visitantes | Entregue aos visitantes cujos perfis foram coletados por meio de referências (marketing viral) ou por meio de redes sociais (X, anteriormente conhecido como Twitter, Facebook), por exemplo. | mns:visitor |
 | Subscrições | Entregar aos recipients que assinam um serviço de informações, como um boletim informativo | nms:subscription |
 | Assinaturas do visitante | Entregar aos visitantes que são inscritos em um serviço de informações | nms:visitorSub |
-| Serviço | Publicar em uma conta X ou uma página do Facebook | nms:service |
+| Serviço | Publicar em uma conta do X ou em uma página do Facebook | nms:service |
 | Operadores | Entregar aos operadores do Adobe Campaign | nms:operator |
 | Arquivo externo | Entregar por meio de um arquivo que contenha todas as informações necessárias para a entrega | Nenhum schema vinculado, nenhum target inserido |
 
