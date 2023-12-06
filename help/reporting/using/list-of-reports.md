@@ -6,9 +6,9 @@ badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Clas
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1018'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -360,7 +360,7 @@ Os relatórios a seguir também são fornecidos internamente. Para obter mais in
   </tr> 
   <tr> 
    <td> Histórico de aquisições de prospecto social (socialVisitorStatistics)<br /> </td> 
-   <td> O histórico de aquisições de prospecto do X (conhecido anteriormente como Twitter) e do Facebook depende do add-on de marketing social.<br /> </td> 
+   <td> O histórico de aquisições de clientes em potencial do X (anteriormente conhecido como Twitter) e do Facebook depende do complemento de marketing social.<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 
