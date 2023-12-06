@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2553'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -291,7 +291,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 * Correção de um problema que podia reduzir o uso de memória no servidor durante a execução de uma análise de entrega.
 * Correção de um problema que impedia que a instância funcionasse durante a tentativa de executar consultas complexas específicas.
 * Correção de um problema que impedia a execução do fluxo de trabalho técnico **Sincronizar páginas do Twitter**. (NEO-28634)
-* Correção de um problema que podia exibir uma mensagem de erro relacionada à função decryptPassword durante a tentativa de publicar no X (anteriormente conhecido como Twitter) usando o **Tweet (twitter)** template do delivery. (NEO-28216)
+* Correção de um problema que podia exibir uma mensagem de erro relacionada à função decryptPassword ao tentar publicar no X (anteriormente conhecido como Twitter) usando o template de entrega **Tweet (twitter)**. (NEO-28216)
 * Correção de um problema que ocorria ao usar uma atividade **JavaScript** para fazer uma solicitação HTTP em um fluxo de trabalho. Após a definição do número da porta no nome do Host, a chamada falhará com o seguinte erro (NEO-29146):
 
 ```
