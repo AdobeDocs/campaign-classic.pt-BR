@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1716'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Para obter mais informações sobre como monitorar workflows técnicos, consulte
 |------|--------|-----------|
 | **Limpeza de alias** (aliasCleansing) | Entrega | Esse workflow padroniza os valores de enumeração. É acionado todos os dias às 3h por padrão. |
 | **Faturamento** (billing) | Entrega | Esse fluxo de trabalho envia o relatório de atividades do sistema para o operador &quot;faturamento&quot; por email. É acionado todo dia 25 de cada mês na instância de marketing. |
-| **Cálculo de estatísticas do Twitter** (statsTwitter) | Redes sociais (Marketing social)  - somente Campaign v7 | Esse workflow calcula estatísticas vinculadas a retweets e visitas em X (anteriormente conhecido como Twitter). |
+| **Cálculo de estatísticas do Twitter** (statsTwitter) | Redes sociais (Marketing social)  - somente Campaign v7 | Este workflow calcula estatísticas vinculadas a retweets e visitas ao X (anteriormente conhecido como Twitter). |
 | **Processos do Campaign** (operationMgt) | Campanhas de marketing (Campaign) | Esse fluxo de trabalho gerencia os processos das campanhas de marketing (inicia o direcionamento, faz a extração de arquivos etc.). Ele também cria workflows relacionados a campanhas recorrentes e periódicas. |
 | **Coletar dados para o serviço HeatMap** (collectDataHeatMapService) | Instalado por padrão | Esse fluxo de trabalho recupera dados exigidos pelo serviço HeatMap. |
 | **Coletar solicitações de privacidade** (collectPrivacyRequests) | Regulamento de Proteção de Dados de Privacidade | Esse fluxo de trabalho gera os dados do recipient armazenados no Adobe Campaign e os disponibiliza para baixar na tela de solicitação de privacidade. |
@@ -49,7 +49,7 @@ Para obter mais informações sobre como monitorar workflows técnicos, consulte
 | **Processos de marketing distribuído** (centralLocalMgt) | Marketing central/local (Marketing distribuído) | Este fluxo de trabalho inicia o processamento relacionado ao uso do módulo de marketing distribuído. Ele inicia a criação de campanhas locais e gerencia notificações de pedidos e disponibilidade de pacotes de campanha. |
 | **Limpeza de evento** (webAnalyticsPurgeWebEvents) | Conectores de análise da Web | Esse fluxo de trabalho permite excluir todos os eventos do campo de banco de dados de acordo com o período configurado no campo Vida útil. |
 | **Exportar audiências para a Adobe Experience Cloud** (exportSharedAudience) | Integração com a Adobe Experience Cloud | Esse fluxo de trabalho exporta públicos-alvo como públicos-alvo/segmentos compartilhados. Esses públicos-alvo podem ser usados nas diferentes soluções da Adobe Experience Cloud que você usa. |
-| **Previsão** (forecasting) | Delivery | Esse fluxo de trabalho analisa as entregas salvas no calendário provisional (cria logs provisionais). É acionado todos os dias à 1h por padrão. |
+| **Previsão** (forecasting) | Entrega | Esse fluxo de trabalho analisa as entregas salvas no calendário provisional (cria logs provisionais). É acionado todos os dias à 1h por padrão. |
 | **Cálculo agregado completo (propositionrcp cube)** (agg_nmspropositionrcp_full) | Dispositivo de oferta (interação) | Esse fluxo de trabalho atualiza o agregado completo do cubo de apresentação da oferta. É acionado todos os dias às 6h por padrão. Esse agregado captura as seguintes dimensões: canal, entrega, oferta de marketing e data. O cubo de apresentação da oferta é usado para gerar relatórios com base em ofertas. Você pode saber mais sobre cubos [nesta seção](../../reporting/using/ac-cubes.md). |
 | **Identificação de contatos convertidos** (webAnalyticsFindConverted) | Conectores de análise da Web | Esse fluxo de trabalho indexa os visitantes do site que concluíram sua compra após uma campanha de remarketing. Os dados recuperados por esse fluxo de trabalho podem ser acessados no relatório de eficiência de remarketing (consulte esta página). |
 | **Importar audiências da Adobe Experience Cloud** (importSharedAudience) | Integração com a Adobe Experience Cloud | Esse fluxo de trabalho permite importar públicos-alvo/segmentos de diferentes soluções da Adobe Experience Cloud para o Adobe Campaign. |
@@ -75,7 +75,7 @@ Para obter mais informações sobre como monitorar workflows técnicos, consulte
 | **Estoque: pedidos e alertas** (stockMgt) | Campanhas de marketing (Campaign) | Esse fluxo de trabalho inicia o cálculo de estoque nas linhas de pedido e gerencia os limites de aviso. |
 | **Sincronização de fãs do Facebook** (syncFacebookFans) | Redes sociais (Marketing social)  - somente Campaign v7 | Esse fluxo de trabalho importa os fãs do Facebook para o Adobe Campaign todos os dias às 7h. |
 | **Sincronização de páginas do Facebook** (syncFacebook) | Redes sociais (Marketing social)  - somente Campaign v7 | Esse fluxo de trabalho sincroniza páginas do Facebook com o Adobe Campaign todos os dias às 7h. |
-| **Sincronização de páginas do Twitter** (syncTwitter) | Redes sociais (Marketing social)  - somente Campaign v7 | Esse workflow importa X seguidores para o Adobe Campaign todos os dias às 7:00 AM. |
+| **Sincronização de páginas do Twitter** (syncTwitter) | Redes sociais (Marketing social)  - somente Campaign v7 | Este workflow importa seguidores do X para o Adobe Campaign todos os dias às 7h. |
 | **Notificação de tarefa** (taskMgt) | Recursos de marketing (MRM)  - somente Campaign v7 | Esse fluxo de trabalho permite enviar mensagens de notificação relacionadas às tarefas em campanhas de marketing. |
 | **Rastreamento** (tracking)) | Entrega | Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de entrega, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. |
 | **Atualizar status do evento** (updateEventsStatus) | Execução de mensagens transacionais (Centro de Mensagens - Execução) | Esse fluxo de trabalho permite atribuir um status a um evento. Os status do evento são descritos a seguir:<ul><li>Pendente: o evento está em uma fila. Nenhum modelo de mensagem foi associado a ele.</li><li>Entrega pendente: o evento está em uma fila, um modelo de mensagem foi associado a ele e está sendo processado no momento pela entrega.</li><li>Enviada: esse status é copiado dos logs da entrega. Significa que a entrega foi enviada.</li><li>Ignorado pela entrega: esse status é copiado dos logs da entrega. Significa que a entrega foi ignorada.</li><li>Erro de entrega: esse status é copiado dos logs da entrega. Significa que a entrega falhou.</li><li>Evento não coberto: o evento falhou ao ser associado a um modelo de mensagem. O evento não será reprocessado.</li></ul> |
