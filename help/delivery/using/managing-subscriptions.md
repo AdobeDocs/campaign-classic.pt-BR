@@ -8,9 +8,9 @@ feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1120'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,11 +51,11 @@ Para editar um serviço existente, clique em seu respectivo nome. Para criar um 
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Insira o nome do serviço no campo **[!UICONTROL Label]** e selecione o canal de delivery: email, celular, Facebook, X (anteriormente conhecido como Twitter) ou aplicativos móveis.
+* Insira o nome do serviço no campo **[!UICONTROL Label]** e selecione o canal de entrega: email, dispositivos móveis, Facebook, X (anteriormente conhecido como Twitter) ou aplicativos móveis.
 
   >[!NOTE]
   >
-  >As subscrições do facebook e X estão detalhadas em [nesta seção](../../social/using/about-social-marketing.md). As subscrições de aplicativos móveis são detalhadas em [Sobre o canal de aplicativos móveis](about-mobile-app-channel.md).
+  >As assinaturas do Facebook e do X estão detalhadas [nesta seção](../../social/using/about-social-marketing.md). As subscrições de aplicativos móveis são detalhadas em [Sobre o canal de aplicativos móveis](about-mobile-app-channel.md).
 
 * Para um serviço de tipo de email, selecione o **Modo de entrega**. Os modos possíveis são: **[!UICONTROL Newsletter]** ou **[!UICONTROL Viral]**.
 * Você pode enviar **mensagens de confirmação** para uma subscrição ou unsubscription. Para fazer isso, selecione os templates que devem ser usados para criar as entregas correspondentes a partir dos campos **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]**. Esses templates devem ser configurados com um target mapping do tipo **[!UICONTROL Subscription]** sem um destino definido. Consulte a seção [Sobre canal de email](about-email-channel.md).
