@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
 source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 88%
+source-wordcount: '288'
+ht-degree: 94%
 
 ---
 
@@ -38,7 +38,7 @@ Para obter um exemplo de uso dessa atividade, consulte esta [seção](sending-a-
 
 ## Como configurar uma entrega recorrente {#set-up-recurring-delivery}
 
-Uma **entrega recorrente** criará uma nova instância de entrega toda vez que for executada. Por exemplo, se o workflow estiver programado para ser executado uma vez por semana, o resultado será 52 deliveries em um ano. Também significa que o log abrangente e os logs de rastreamento serão separados por cada instância da entrega.
+Uma **entrega recorrente** criará uma nova instância de entrega toda vez que for executada. Por exemplo, se o workflow estiver programado para ser executado uma vez por semana, o resultado será 52 entregas em um ano. Também significa que o log abrangente e os logs de rastreamento serão separados por cada instância da entrega.
 
 ![Entrega recorrente](assets/delivery_recurring.jpg)
 
