@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 source-git-commit: e6a2986e5355b32164386e1f6d64f52dc6977632
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '582'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Depois do envio dessa solicitação, a Adobe continuará a provisionar a integra
 >
 >Se você estiver usando o domínio demdex e seguir a sintaxe **ftp-out.demdex.com** para a conta externa de importação e **ftp-in.demdex.com** para a conta externa de exportação, será necessário adaptar apropriadamente sua implementação e ir para o conector do Serviço de Armazenamento Simples (S3) da Amazon para importar ou exportar dados. Para obter mais informações sobre como configurar suas contas externas com o Amazon S3, consulte esta [seção](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
 
-O diagrama a seguir detalha o funcionamento dessa integração. Aqui, AAM significa Adobe Audience Manager e AC para Adobe Campaign.
+O diagrama a seguir detalha o funcionamento dessa integração. Aqui, AAM significa Adobe Audience Manager, e AC significa Adobe Campaign.
 
 ![](assets/aam_diagram.png){align="center"}
 
@@ -89,9 +89,9 @@ Para configurar a fonte de dados do **[!UICONTROL Recipient - Visitor ID]**:
 
 ## Etapa 3: configurar o servidor de rastreamento do Campaign {#step-3--configure-campaign-tracking-server}
 
-Para a configuração da integração com o Serviço Principal de Pessoas ou o Audience Manager, também é necessário configurar o servidor de rastreamento do Campaign.
+Para a configuração da integração com o Serviço principal de pessoas ou o Audience Manager, também é necessário configurar o servidor de rastreamento do Campaign.
 
-Para permitir que públicos-alvo compartilhados funcionem com a ID de visitante, o domínio do servidor de rastreamento deve ser um subdomínio do URL clicado ou do site principal.
+Para permitir que os públicos-alvo compartilhados funcionem com a ID de visitante, o domínio do servidor de rastreamento precisa ser um subdomínio do URL clicado ou do site principal.
 
 >[!IMPORTANT]
 >
@@ -101,6 +101,6 @@ Para permitir que públicos-alvo compartilhados funcionem com a ID de visitante,
 
 Se o serviço de ID do visitante nunca tiver sido configurado em suas propriedades da web ou sites, consulte este [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html?lang=pt-BR) para saber como configurar o serviço ou este [vídeo](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two).
 
-Sincronizar identificadores de clientes com a ID declarada usando o `setCustomerID` no serviço da Experience Cloud ID com o código de integração: `AdobeCampaignID`. A variável `AdobeCampaignID` deve corresponder ao valor do conjunto de Chaves de reconciliação na Fonte de dados do destinatário configurada em [Etapa 2: configurar as Fontes de dados](#step-2--configure-the-data-sources).
+Sincronize identificadores de clientes com a ID declarada, usando a função `setCustomerID` no serviço de ID da Experience Cloud com o código de integração: `AdobeCampaignID`. O `AdobeCampaignID` deve corresponder ao valor do conjunto de chaves de reconciliação na fonte de dados do recipient configurada na [Etapa 2: configure as fontes de dados](#step-2--configure-the-data-sources).
 
-Sua configuração e provisionamento estão finalizados, a integração agora pode ser usada para importar e exportar públicos ou segmentos.
+Sua configuração e provisionamento estão finalizados, a integração agora pode ser usada para importar e exportar públicos-alvo ou segmentos.
