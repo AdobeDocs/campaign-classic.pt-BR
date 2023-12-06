@@ -8,9 +8,9 @@ feature: Channel Configuration
 role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Para criar uma entrega, clique em **[!UICONTROL Create]** acima da lista de entr
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
-Um modelo padrão é fornecido para cada canal que você instalou: mala direta, email, fax, telefone, canal móvel (SMS), Facebook, X (anteriormente conhecido como Twitter), etc.
+Um modelo padrão é fornecido para cada canal instalado: correspondência direta, email, fax, telefone, canal móvel (SMS), Facebook, X (anteriormente conhecido como Twitter) etc.
 
 >[!NOTE]
 >
