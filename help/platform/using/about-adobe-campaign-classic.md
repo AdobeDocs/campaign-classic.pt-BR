@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '934'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Os recursos abaixo estão disponíveis. A disponibilidade desses recursos depend
 * [MRM](../../mrm/using/about-marketing-resource-management.md) - gerencie recursos e orçamentos de marketing;
 * [Interação](../../interaction/using/interaction-and-offer-management.md) - gestão de ofertas com o Campaign;
 * [Centro de mensagens](../../message-center/using/about-transactional-messaging.md) - envie mensagens transacionais por e-mail, SMS ou aplicativo para dispositivos móveis;
-* [Marketing social](../../social/using/about-social-marketing.md) - comunique-se nas redes sociais: Facebook, X (anteriormente conhecido como Twitter),
+* [Marketing social](../../social/using/about-social-marketing.md): comunique-se nas redes sociais: Facebook, X (anteriormente conhecido como Twitter),
 * [Fluxo de trabalho](../../workflow/using/about-workflows.md) / Gestão de dados - automatize processos e gerencie dados com fluxos de trabalho;
 * [Aplicativos da Web](../../web/using/about-web-applications.md) - crie páginas e formulários Web;
 * [Gerenciador de pesquisas](../../surveys/using/about-surveys.md) - crie pesquisas e enquetes on-line;
