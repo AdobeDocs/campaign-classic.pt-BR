@@ -8,9 +8,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '853'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Um perfil que se tornou alvo de várias entregas é contado apenas uma vez.
 
 >[!NOTE]
 >
->Os canais facebook e X (conhecidos formalmente como Twitter) não são considerados.
+>Os canais do Facebook e X (anteriormente conhecido como Twitter) não são considerados.
 
 A contagem de perfis ativos está disponível somente para **Instâncias de marketing**. Não está disponível para Instâncias de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
 
