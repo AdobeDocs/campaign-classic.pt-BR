@@ -8,9 +8,9 @@ feature: Subscriptions
 role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '170'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,4 +22,4 @@ Também é possível permitir que seus recipients de entrega os compartilhem com
 
 >[!NOTE]
 >
->Essa funcionalidade vem como padrão com o Adobe Campaign. O aplicativo opcional, Social Marketing, permite que você entre em contato com seus clientes e clientes potenciais via Facebook e X (anteriormente conhecido como Twitter).
+>Essa funcionalidade vem como padrão com o Adobe Campaign. O aplicativo opcional de marketing social permite entrar em contato com os seus clientes e clientes em potencial pelo Facebook e pelo X (anteriormente conhecido como Twitter).
