@@ -7,9 +7,9 @@ user-guide-description: Com o Adobe Campaign, é possível usar dados avançados
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -821,8 +821,8 @@ ht-degree: 99%
 + Notas técnicas {#technotes}
    + [Recomendações para dimensionamento de hardware](technotes/using/hardware-sizing.md)
    + Atualização para IMS{#ims}
-      + [Migrar usuários para o IMS](technotes/using/migrate-users-to-ims.md)
-      + [Migrar operadores técnicos para o Console do desenvolvedor](technotes/using/ims-migration.md)
+      + [Migração de usuários para o IMS](technotes/using/migrate-users-to-ims.md)
+      + [Migração de operadores técnicos para o Developer Console](technotes/using/ims-migration.md)
    + Atualizações e compatibilidade{#technote-migration}
       + [Notas técnicas](technotes/using/technote.md)
       + [Habilitar o Microsoft Edge Chromium](technotes/using/edge-chromium.md)
