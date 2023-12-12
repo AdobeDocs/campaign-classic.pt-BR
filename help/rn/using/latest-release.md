@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2221'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -23,28 +23,28 @@ Esta página lista novos recursos, melhorias e correções que vêm com a **vers
 [!BADGE Disponibilidade geral]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade geral"}
 
 
-_quarta-feira, 5 de dezembro de 2023_
+_5 de dezembro de 2023_
 
 
 **Melhorias de segurança**
 
 
-* Com o Campaign Classic v7.3.5, o processo de autenticação foi aprimorado e protegido. Os operadores técnicos agora devem usar o Adobe Identity Management System (IMS) para se conectarem ao Campaign. Saiba como migrar as contas técnicas existentes no [esta nota técnica](../../technotes/using/ims-migration.md).
+* Com o Campaign Classic v7.3.5, o processo de autenticação foi aprimorado e protegido. Os operadores técnicos agora devem usar o Adobe Identity Management System (IMS) para se conectarem ao Campaign. Saiba como migrar as contas técnicas já existentes nesta [nota técnica](../../technotes/using/ims-migration.md).
 
-* Além disso, como parte do esforço para reforçar a segurança e o processo de autenticação, a Adobe Campaign recomenda migrar o modo de autenticação do usuário final da autenticação nativa de logon/senha para o Adobe Identity Management System (IMS). Saiba como migrar seus operadores no [esta nota técnica](../../technotes/using/migrate-users-to-ims.md).
+* Além disso, como parte do esforço para aprimorar a segurança e o processo de autenticação, o Adobe Campaign recomenda migrar o modo de autenticação do usuário final da autenticação nativa de logon/senha para o Adobe Identity Management System (IMS). Saiba como migrar operadores [nesta nota técnica](../../technotes/using/migrate-users-to-ims.md).
 
 **Correções**
 
-* Correção de um problema ao usar dados de um banco de dados Google Big Query e atualizar dados em um banco de dados Oracle: todas as chaves eram definidas como `0` na tabela temporária do workflow. (NEO-65091)
-* Correção de um problema que causava a falha de execução de um fluxo de trabalho quando duas consultas em um banco de dados Google Big Query eram combinadas em um **União** atividade de workflow. (NEO-63705)
-* Correção de um problema que solicitava que o usuário autenticasse novamente ao clicar no link `Back` em um relatório de Campanha. (NEO-65087)
-* Correção de um erro no workflow Database Cleanup que ocorria quando um delivery era excluído antes de suas provas de delivery. (NEO-48114)
-* Correção de um problema ao se conectar ao Console do cliente: atualizações recentes na verificação TLS estavam causando um erro de conexão. (NEO-50488)
-* Correção de um problema com a autenticação Proxy HTTP após a pós-atualização do Campaign para a 7.3.1. As solicitações HTTP em workflows do Campaign estavam falhando com `error 407 – proxy auth required is returned`. (NEO-49624)
-* Correção de uma falha intermitente com descriptografia GPG em **Script** atividades de workflow. A mensagem de erro associada era: `gpg: decryption failed: No secret key`. (NEO-50257)
+* Correção de um problema com o uso de dados de um banco de dados do Google Big Query ao atualizar dados em um banco de dados da Oracle: todas as chaves foram definidas como `0` na tabela temporária do workflow. (NEO-65091)
+* Correção de um problema que causava a falha de execução de um workflow quando duas consultas em um banco de dados do Google Big Query eram combinadas em uma atividade de workflow de **União**. (NEO-63705)
+* Correção de um problema que causava a solicitação de uma nova autenticação ao clicar no botão `Back` em um relatório do Campaign. (NEO-65087)
+* Correção de um erro no workflow de Limpeza de banco de dados que acontecia quando uma entrega era excluída antes de suas provas de entrega. (NEO-48114)
+* Correção de um problema de conexão com o Console do cliente: atualizações recentes na verificação TLS estavam causando um erro de conexão. (NEO-50488)
+* Correção de um problema com a autenticação de Proxy HTTP depois da pós-atualização do Campaign para a versão 7.3.1. As solicitações HTTP em workflows do Campaign estavam falhando com `error 407 – proxy auth required is returned`. (NEO-49624)
+* Correção de uma falha intermitente com descriptografia GPG nas atividades de workflow de **Script**. A mensagem de erro associada era: `gpg: decryption failed: No secret key`. (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
-## Versão 7.3.4 - Build 9364 {#release-7-3-4}
+## Versão 7.3.4 — Build 9364 {#release-7-3-4}
 
 [!BADGE Disponibilidade limitada]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
 
@@ -167,7 +167,7 @@ Saiba mais na [matriz de compatibilidade do Campaign](../../rn/using/compatibili
 
 **Recursos obsoletos**
 
-* O marketing social do Facebook agora está obsoleto. Você pode usar a integração X (anteriormente conhecida como Twitter) para publicar em redes sociais ou trabalhar com o Adobe para criar um canal personalizado.
+* O marketing social do Facebook agora está obsoleto. É possível usar a integração com o X (anteriormente conhecido como Twitter) para publicar em redes sociais ou colaborar com a Adobe para criar um canal personalizado.
 * O conector ACS (oferta do Prime) agora está obsoleto. Você pode usar os recursos de exportação/importação do Campaign para extrair e inserir dados em ambos os produtos.
 
 Saiba mais na [página sobre recursos obsoletos e removidos](deprecated-features.md).
@@ -183,7 +183,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](deprecated-features
 **Correções**
 
 * Corrigido um problema que impedia a utilização da opção de fluxo de trabalho **Mesclar linhas selecionadas**. (NEO-48488)
-* Corrigido um problema que impedia que o indicador de **sucesso** de entrega fosse atualizado corretamente ao usar o MTA aprimorado do Adobe Campaign. (NEO-50462)
+* Corrigido um problema que impedia que o indicador de entrega **Sucesso** fosse atualizado corretamente ao usar o MTA aprimorado do Adobe Campaign. (NEO-50462)
 * Corrigido um problema ao redefinir a aprovação do conteúdo em uma entrega de email, que impedia a reaprovação. (NEO-44259)
 * Corrigido um problema que poderia impedir a exibição do botão **Aprovação de entrega**. (NEO-47547)
 * Corrigido um problema de desempenho na guia HTML de uma entrega que poderia ocorrer ao usar um código HTML grande. (NEO-47440)
