@@ -4,9 +4,9 @@ product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 4917efbe0ac119875029305b3f8c3303056cfcc8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '292'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
@@ -16,20 +16,20 @@ ht-degree: 7%
 
 ## Novidades
 
-Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Adobe Campaign Classic v7! Para obter uma lista abrangente de recursos, melhorias e correções, consulte a seção [Notas de versão](rn/using/latest-release.md).  Mantenha-se atualizado com as alterações mais recentes em nossa documentação, acessando o [página de atualizações da documentação](rn/using/documentation-updates.md).
+Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Adobe Campaign Classic v7. Para obter uma lista completa dos recursos, melhorias e correções, consulte as [Notas de versão](rn/using/latest-release.md) detalhadas.  Mantenha-se atualizado com as alterações mais recentes em nossa documentação, acessando a [página de atualizações da documentação](rn/using/documentation-updates.md).
 
 >[!BEGINTABS]
 
 
 >[!TAB A versão de dezembro está disponível.]
 
-Descubra atualizações, aprimoramentos e patches que acompanham o Campaign Classic v7.3.5.
+Conheça os aprimoramentos, atualizações e correções que acompanham o Campaign Classic v7.3.5.
 
 [![imagem](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
->[!TAB Mover para o sistema Adobe Identity Management]
+>[!TAB Migração para o Adobe Identity Management System]
 
-Para reforçar a segurança e o processo de autenticação, a Adobe Campaign recomenda migrar o modo de autenticação do usuário final da autenticação nativa de logon/senha para o Adobe Identity Management System (IMS).
+Para aprimorar a segurança e o processo de autenticação, o Adobe Campaign recomenda migrar o modo de autenticação do usuário final da autenticação nativa de logon/senha para o Adobe Identity Management System (IMS).
 
 [![imagem](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
 
@@ -41,19 +41,19 @@ Para reforçar a segurança e o processo de autenticação, a Adobe Campaign rec
   <tr style="border: 0;">
     <td>
     <a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/start-launch.png"></a></a>
-    <div><strong>Iniciar o Adobe Campaign</strong><br/>Saiba como iniciar o console do cliente do Campaign e conectar-se aos servidores de aplicativos do Campaign.</div>
+    <div><strong>Inicialização do Adobe Campaign</strong><br/>Saiba como iniciar o console do cliente do Campaign e conectar-se aos servidores de aplicativos do Campaign.</div>
     </td>
     <td>
     <a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
-    <div><strong>Adicionar e gerenciar perfis</strong><br/>Explore o gerenciamento de perfis no banco de dados do Adobe Campaign v7 com facilidade. Adicione perfis manualmente ou por meio de importações, refinando os dados do cliente e personalizando campanhas facilmente.</div>
+    <div><strong>Adição e gerenciamento de perfis</strong><br/>Conheça o gerenciamento de perfis no banco de dados do Adobe Campaign v7 com facilidade. Adicione perfis manualmente ou por meio de importações, refinando os dados de clientes e personalizando campanhas facilmente.</div>
     </td>
     <td>
     <a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
-    <div><strong>Automatizar com workflows</strong><br/>Saiba como aproveitar o fluxo de trabalho para projetar processos, incluindo segmentação, execução de campanha, processamento de arquivos, participação humana, entre outros.
+    <div><strong>Automatização com workflows</strong><br/>Saiba como aproveitar workflows para projetar processos, incluindo segmentação, execução de campanha, processamento de arquivos, participação humana, entre outros.
     </div></td>
     <td>
     <a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
-    <div><strong>Criar entregas</strong><br/>Saiba como enviar mensagens em vários canais, como email, SMS, notificações por push etc.</div>
+    <div><strong>Criação de entregas</strong><br/>Saiba como enviar mensagens em vários canais, como email, SMS, notificações por push etc.</div>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -64,45 +64,45 @@ Para reforçar a segurança e o processo de autenticação, a Adobe Campaign rec
     </tr>
 </table>
 
-## Explorar a documentação
+## Conheça a documentação
 
 <table style="table-layout:auto">
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Comece já</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Interface do usuário</a> - <a href="platform/using/ac-glossary.md">Glossário</a> - <a href="platform/using/launching-adobe-campaign.md">Conectar-se ao Campaign</a> - <a href="platform/using/get-started-data-import-export.md">Importar e exportar dados</a> - <a href="platform/using/access-management.md">Permissões</a>
+      <strong>Introdução</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Interface</a> — <a href="platform/using/ac-glossary.md">Glossário</a> — <a href="platform/using/launching-adobe-campaign.md">Conecte-se ao Campaign</a> — <a href="platform/using/get-started-data-import-export.md">Importação e exportação de dados</a> — <a href="platform/using/access-management.md">Permissões</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatizar com workflows</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">Campanha de marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Interação e gerenciamento de ofertas</a> - <a href="delivery/using/about-personalization.md">Personalização</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Relatórios</a>
+      <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatização com workflows</a> — <a href="campaign/using/setting-up-marketing-campaigns.md">Campanha de marketing</a> — <a href="interaction/using/interaction-and-offer-management.md">Interação e gerenciamento de ofertas</a> — <a href="delivery/using/about-personalization.md">Personalização</a> — <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Relatórios</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Enviar mensagens</strong><br/><a href="delivery/using/communication-channels.md">Canais de comunicação</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Enviar provas</a> - <a href="delivery/using/get-started-a-b-testing.md">Teste A/B</a> - <a href="delivery/using/about-message-tracking.md">Rastreamento de mensagens</a> - <a href="delivery/using/about-deliverability.md">Capacidade de entrega</a> - <a href="message-center/using/about-transactional-messaging.md">Mensagens transacionais</a>
+      <strong>Envio de mensagens</strong><br/><a href="delivery/using/communication-channels.md">Canais de comunicação</a> — <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Envio de provas</a> — <a href="delivery/using/get-started-a-b-testing.md">Teste A/B</a> — <a href="delivery/using/about-message-tracking.md">Rastreamento de mensagens</a> — <a href="delivery/using/about-deliverability.md">Capacidade de entrega</a> — <a href="message-center/using/about-transactional-messaging.md">Mensagens transacionais</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>Perfis e públicos</strong><br/><a href="platform/using/adding-profiles.md">Adicionar perfis</a> - <a href="platform/using/creating-and-managing-lists.md">Criar listas</a> - <a href="delivery/using/about-services-and-subscriptions.md">Serviços e assinaturas</a> - <a href="platform/using/privacy-management.md">Privacidade e consentimento</a>
+      <strong>Perfis e públicos-alvo</strong><br/><a href="platform/using/adding-profiles.md">Adição de perfis</a> — <a href="platform/using/creating-and-managing-lists.md">Criação de listas</a> — <a href="delivery/using/about-services-and-subscriptions.md">Serviços e assinaturas</a> — <a href="platform/using/privacy-management.md">Privacidade e consentimento</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
       <br/>
-      <strong>Arquitetura e configuração</strong><br/><a href="production/using/general-architecture.md">Princípios da arquitetura</a> - <a href="production/using/build-upgrade.md">Atualização de uma build</a> - <a href="production/using/configuration.md">Configurar o Campaign</a> - <a href="installation/using/external-accounts.md">Conectar a sistemas externos</a>
+      <strong>Arquitetura e configuração</strong><br/><a href="production/using/general-architecture.md">Princípios da arquitetura</a> — <a href="production/using/build-upgrade.md">Atualização de uma build</a> — <a href="production/using/configuration.md">Configuração do Campaign</a> — <a href="installation/using/external-accounts.md">Conexão com sistemas externos</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>Recursos do desenvolvedor</strong><br/><a href="configuration/using/about-data-model.md">Descrição do modelo de dados</a> - <a href="configuration/using/about-schema-reference.md">Estrutura do esquema</a> - <a href="configuration/using/editing-forms.md">Estrutura do esquema</a> - <a href="configuration/using/about-web-services.md">APIs</a> - <a href="configuration/using/about-custom-recipient-table.md">Tabela de destinatários personalizada</a>
+      <strong>Recursos do desenvolvedor</strong><br/><a href="configuration/using/about-data-model.md">Descrição do modelo de dados</a> — <a href="configuration/using/about-schema-reference.md">Estrutura do esquema</a> — <a href="configuration/using/editing-forms.md">Estrutura do esquema</a> — <a href="configuration/using/about-web-services.md">APIs</a> — <a href="configuration/using/about-custom-recipient-table.md">Tabela de recipients personalizados</a>
     </td>
   </tr>
 </table>
 
 ## Recursos adicionais
 
-[Lista de mensagens de erro](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=pt-BR) - [Descrição do produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Compatibility matrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [Control Panel for Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
+[Lista de mensagens de erro](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=pt-BR) — [Descrição do produto do Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Compatibility matrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [Control Panel for Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
