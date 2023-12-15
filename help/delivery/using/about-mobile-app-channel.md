@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '677'
-ht-degree: 100%
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+workflow-type: tm+mt
+source-wordcount: '684'
+ht-degree: 89%
 
 ---
 
@@ -18,11 +18,7 @@ ht-degree: 100%
 
 O **Canal de aplicativo móvel** permite usar a plataforma do Adobe Campaign para enviar notificações personalizadas para terminais iOS e Android por meio de aplicativos
 
->[!CAUTION]
->
->Este documento detalha o processo de integração de seu aplicativo móvel com a plataforma Adobe Campaign. Ele não fornece informações sobre como criar o aplicativo móvel ou como configurá-lo para gerenciar notificações. Se desejar mais informações sobre isso, consulte a [documentação](https://developer.apple.com/) oficial da Apple e a [documentação](https://developer.android.com/index.html) do Android.
-
-Dois canais de delivery estão disponíveis:
+Dois canais de entrega estão disponíveis:
 
 * Um canal iOS que permite enviar notificações para dispositivos móveis Apple.
 
@@ -32,18 +28,18 @@ Dois canais de delivery estão disponíveis:
 
   ![](assets/nmac_intro_1.png)
 
-Correspondendo a esses dois canais, há duas atividades de delivery nos workflows de campanha:
+  >[!IMPORTANT]
+  >
+  >Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) serão lançadas em 2024 e podem afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push do Android pode precisar ser atualizada para dar suporte a essa alteração. Você já pode verificar e executar ações. Saiba mais nesta página [Nota técnica do Adobe Campaign v8](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+
+Correspondendo a esses dois canais, há duas atividades de delivery nos workflows de campanha. Dois templates de mensagens transacionais também estão disponíveis para o sistema de mensagens transacionais.
 
 ![](assets/nmac_intro_3.png)
 
 
->[!NOTE]
->
->Dois templates de mensagens transacionais também estão disponíveis para o sistema de mensagens transacionais.
-
 É possível definir o comportamento do aplicativo para quando o usuário ativar a notificação para exibir a tela correspondente ao contexto do aplicativo. Por exemplo:
 
-* Uma notificação é enviada ao cliente para avisá-lo que seu pacote deixou o depósito. Ativar a notificação abre uma página com informações sobre o delivery.
+* Uma notificação é enviada ao cliente para avisá-lo que seu pacote deixou o depósito. Ativar a notificação abre uma página com informações sobre a entrega.
 * O usuário adicionou itens ao carrinho, mas deixou o aplicativo sem concluir a compra. Uma notificação é enviada, informando que o carrinho foi abandonado. Quando ativarem a notificação, o item é exibido na tela.
 
 >[!CAUTION]
@@ -55,7 +51,7 @@ O workflow **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) atualiz
 
 O Adobe Campaign é compatível com APNs HTTP/2. Para obter mais informações sobre as etapas de configuração, consulte [esta seção](configuring-the-mobile-application.md).
 
-Para informações gerais sobre como criar um delivery, consulte [esta seção](steps-about-delivery-creation-steps.md).
+Para informações gerais sobre como criar uma entrega, consulte [esta seção](steps-about-delivery-creation-steps.md).
 
 ## Caminho de dados {#data-path}
 
@@ -65,7 +61,7 @@ Os schemas a seguir detalham as etapas que permitem que um aplicativo móvel tro
 * o serviço de notificação: APNs (Apple Push Notification Service) para Apple e FCM (Firebase Cloud Messaging) para Android
 * Adobe Campaign
 
-As três principais etapas do processo de notificação são: registro do aplicativo no Adobe Campaign (coleção de assinaturas), deliveries e rastreamento.
+As três principais etapas do processo de notificação são: registro do aplicativo no Adobe Campaign (coleção de assinaturas), entregas e rastreamento.
 
 ### Etapa 1: coleção de subscrição {#step-1--subscription-collection}
 
@@ -75,7 +71,7 @@ O aplicativo móvel é baixado pelo usuário da App Store ou do Google Play. Est
 
 ### Etapa 2: entrega {#step-2--delivery}
 
-Os profissionais de marketing miram os assinantes de aplicativos. O processo de delivery envia as configurações de conexão para o serviço de notificação (certificado iOS e chave do projeto para Android), a ID de notificação (ID de envio) e o conteúdo da notificação. O serviço de notificação envia notificações para os terminais de destino.
+Os profissionais de marketing miram os assinantes de aplicativos. O processo de entrega envia as configurações de conexão para o serviço de notificação (certificado iOS e chave do projeto para Android), a ID de notificação (ID de envio) e o conteúdo da notificação. O serviço de notificação envia notificações para os terminais de destino.
 
 Estas informações estão disponíveis no Adobe Campaign:
 

@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Push
 role: User, Developer, Data Engineer
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '720'
-ht-degree: 100%
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,8 @@ Com o Firebase Cloud Messaging, você pode escolher entre dois tipos de mensagen
 * **[!UICONTROL Notification message]**, manipulada automaticamente pelo SDK do FCM.
   <br> O FCM exibe automaticamente a mensagem nos dispositivos dos usuários em nome do aplicativo do cliente. As mensagens de notificação contêm um conjunto predefinido de parâmetros e opções, mas ainda podem ser personalizadas com variáveis de aplicativo personalizadas.
 
-Para obter mais informações sobre os tipos de mensagens da Firebase Cloud Messaging, consulte a [documentação do FCM](https://firebase.google.com/docs/cloud-messaging/concept-options?hl=pt-br#notifications_and_data_messages).
+Para obter mais informações sobre os tipos de mensagens da Firebase Cloud Messaging, consulte [Documentação do FCM](https://firebase.google.com/docs/cloud-messaging/concept-options?hl=pt-br#notifications_and_data_messages){target="_blank"}.
+
 
 ## Criar uma mensagem de dados {#creating-data-message}
 
@@ -68,11 +69,7 @@ A imagem e a página da web devem ser exibidas na notificação por push quando 
 
 ## Criar uma mensagem de notificação {#creating-notification-message}
 
->[!NOTE]
->
->Opções adicionais para mensagem de notificação estão disponíveis somente com a configuração da API HTTP v1. Para obter mais informações, consulte esta [seção](configuring-the-mobile-application-android.md#android-service-httpv1).
-
-![](assets/do-not-localize/how-to-video.png) [Saiba como criar uma notificação por push para Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=pt-BR#additional-resources)
+![](assets/do-not-localize/how-to-video.png) [Saiba como criar uma notificação por push para Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=pt-BR#additional-resources){target="_blank"}.
 
 1. Vá até **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
@@ -103,7 +100,7 @@ A imagem e a página da web devem ser exibidas na notificação por push quando 
    * **[!UICONTROL Tag]**: Defina o identificador usado para substituir notificações existentes na gaveta de notificações.
    * **[!UICONTROL Click action]**: Defina a ação associada a um clique do usuário em sua notificação.
 
-   Para obter mais informações sobre **[!UICONTROL Notification options]** e como preencher esses campos, consulte a [documentação do FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
+   Para obter mais informações sobre o **[!UICONTROL Notification options]** e como preencher esses campos, consulte [Documentação do FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 
    ![](assets/nmac_android_8.png)
 
@@ -116,7 +113,7 @@ A imagem e a página da web devem ser exibidas na notificação por push quando 
    * **[!UICONTROL Notification Priority]**: Defina os níveis de prioridade da sua notificação como padrão, mínimo, baixo ou alto. Para obter mais informações, consulte a [documentação do FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
    * **[!UICONTROL Visibility]**: Defina os níveis de visibilidade de sua notificação como público, privado ou secreto. Para obter mais informações, consulte a [documentação do FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
 
-   Para obter mais informações sobre **[!UICONTROL HTTP v1 additional options]** e como preencher esses campos, consulte a [documentação do FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
+   Para obter mais informações sobre o **[!UICONTROL HTTP v1 additional options]** e como preencher esses campos, consulte [Documentação do FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 
    ![](assets/nmac_android_9.png)
 
