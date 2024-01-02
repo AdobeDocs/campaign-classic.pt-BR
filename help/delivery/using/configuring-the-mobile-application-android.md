@@ -7,9 +7,9 @@ feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 92c79e7050124bc707f4d6b87c7952016586002c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Você poderá [criar uma notificação avançada do Android](create-notification
 
 >[!IMPORTANT]
 >
->Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) serão lançadas em 2024 e podem afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push do Android pode precisar ser atualizada para dar suporte a essa alteração. Você já pode verificar e executar ações. Saiba mais nesta página [Nota técnica do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+>Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para Android serão lançadas em 2024 e poderão afetar sua implementação do Adobe Campaign. A configuração dos serviços de assinatura para mensagens por push no Android pode precisar ser atualizada para oferecer suporte a essa alteração. É recomendado verificar isso antecipadamente e tomar as devidas ações. Saiba mais nesta [nota técnica do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=pt-BR){target="_blank"}.
 
 
 ## Configuração da conta externa do Android {#configuring-external-account-android}
@@ -58,7 +58,7 @@ Para escolher qual conector deseja usar, siga estas etapas:
 
 ## Configuração de um serviço Android {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [Saiba como configurar um serviço Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=pt-BR#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Saiba como configurar um serviço do Android no vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=pt-BR#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
 
 1. Acesse o nó **[!UICONTROL Profiles and Targets > Services and subscriptions]** e clique em **[!UICONTROL New]**.
 
@@ -109,9 +109,9 @@ Por padrão, o Adobe Campaign salva uma chave no campo **[!UICONTROL User identi
 
 >[!IMPORTANT]
 >
->Algumas alterações importantes no serviço Android Firebase Cloud Messaging (FCM) serão lançadas em 2024 e podem afetar sua implementação do Adobe Campaign. Como parte do esforço contínuo da Google para melhorar seus serviços, as APIs herdadas do FCM serão descontinuadas em **20 de junho de 2024**. Saiba mais nesta página [Nota técnica do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+>Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para Android serão lançadas em 2024 e poderão afetar sua implementação do Adobe Campaign. Como parte do esforço contínuo do Google para melhorar seus serviços, as APIs herdadas do FCM serão descontinuadas em **20 de junho de 2024**. Saiba mais nesta [nota técnica do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
 
-Depois de criar um serviço e um novo aplicativo móvel, é necessário configurar seu aplicativo móvel. A variável **HTTP (herdado)** A API não deve ser selecionada porque foi descontinuada pelo Google.
+Depois de criar um serviço e um novo aplicativo para dispositivos móveis, é necessário configurar esse aplicativo. A API **HTTP (herdada)** não deve ser selecionada, pois foi descontinuada pelo Google.
 
 Para configurar a versão da API HTTP v1, siga as etapas abaixo:
 
@@ -147,9 +147,9 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 
 ## Estender o esquema appsubscriptionRcp {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [Saiba como estender o esquema appsubscriptionRcp em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=pt-BR#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [Saiba como estender o esquema appsubscriptionRcp no vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=pt-BR#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
-É necessário estender o **appsubscriptionRcp** para definir novos campos adicionais para armazenar parâmetros do aplicativo no banco de dados do Campaign. Esses campos são usados para personalização, por exemplo. Para fazer isso:
+É necessário estender o **appsubscriptionRcp** para definir campos adicionais para armazenar parâmetros do aplicativo no banco de dados do Campaign. Esses campos serão usados para personalização, por exemplo. Para fazer isso:
 
 1. Crie uma extensão do esquema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** e defina os novos campos. Saiba mais sobre extensão de esquema [nesta página](../../configuration/using/about-schema-edition.md)
 
