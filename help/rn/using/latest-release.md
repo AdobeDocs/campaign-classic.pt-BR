@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2258'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ Correção de um problema que poderia fazer com que caracteres japoneses fossem 
 
 >[!AVAILABILITY]
 >
->Uma atualização de patch específica do Campaign v7.3.3.IMS está disponível para esta versão - se nenhum outro patch tiver sido aplicado ao seu ambiente. Ele traz [Atualizações de segurança do Adobe Identity Management System (IMS) fornecidas com a v7.3.5](#release-7-3-5-security) aos ambientes v7.3.3 existentes.
+>Uma atualização de patch específica do Campaign v7.3.3.IMS está disponível para esta versão, se nenhum outro patch tiver sido aplicado ao seu ambiente. Ele traz [Atualizações de segurança do Adobe Identity Management System (IMS) fornecidas com a v7.3.5](#release-7-3-5-security) aos ambientes v7.3.3 já existentes.
 
 
 _20 de março de 2023_
@@ -144,7 +144,7 @@ _20 de março de 2023_
 >
 >A atualização do Console do Cliente é obrigatória. Saiba como atualizar seu console do cliente nesta [página](../../installation/using/installing-the-client-console.md).
 
-### Correções {#release-7-3-3-patches}
+### Patches {#release-7-3-3-patches}
 
 * Correção de um problema que poderia impedir o envio de notificações por push de prova do iOS da instância de controle (contexto de Mensagens transacionais). (NEO-54713)
 * Correção de um problema que impedia a rolagem na guia **Editar** do editor de conteúdo digital (DCE). (NEO-54474)
@@ -194,7 +194,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](deprecated-features
 * Para evitar falhas, o método JS loadLibraryDebug foi removido. (NEO-46968)
 * As referências restantes à biblioteca log4j foram removidas da instalação do Campaign no Windows. (NEO-44851)
 
-### Correções {#release-7-3-2-patches}
+### Patches {#release-7-3-2-patches}
 
 * Corrigido um problema que impedia a utilização da opção de fluxo de trabalho **Mesclar linhas selecionadas**. (NEO-48488)
 * Corrigido um problema que impedia que o indicador de entrega **Sucesso** fosse atualizado corretamente ao usar o MTA aprimorado do Adobe Campaign. (NEO-50462)
