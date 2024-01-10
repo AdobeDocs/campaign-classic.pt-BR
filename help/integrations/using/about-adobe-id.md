@@ -1,44 +1,43 @@
 ---
 product: campaign
-title: Use a Adobe ID no Campaign
-description: Saiba mais sobre a integração do Adobe IMS
+title: Usar sua Adobe ID para se conectar ao Adobe Campaign
+description: Saiba mais sobre a implementação do Adobe IMS no Adobe Campaign
 feature: Configuration
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 100%
+source-wordcount: '143'
+ht-degree: 55%
 
 ---
 
-# Sobre a Adobe ID{#about-adobe-id}
+# Sobre a Adobe ID {#about-adobe-id}
 
 O Sistema de gerenciamento de identidades (IMS) da Adobe ajuda os administradores a criar e gerenciar o acesso do usuário a aplicativos e serviços. Para obter mais informações sobre tipos diferentes de Adobe IDs, consulte [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html).
 
-Usuários do Campaign pode se conectar ao Adobe Campaign usando sua Adobe ID. Essa integração oferece as seguintes vantagens:
+Os usuários do Campaign podem se conectar ao console do Adobe Campaign usando a Adobe ID, em vez da [autenticação de usuário/senha nativa](../../platform/using/access-management-operators.md). Essa implementação oferece as seguintes vantagens:
 
 * A mesma ID pode ser usada para todas as soluções Experience Cloud.
-* Ao usar o Adobe Campaign com diferentes integrações, a conexão é memorizada.
-* Política de gerenciamento da segurança de senhas.
+* A conexão é mantida ao usar o Adobe Campaign com diferentes integrações.
+* Política de gerenciamento de senha mais segura do que logon/senha nativa.
 * Uso de contas de Federated ID (provedor de ID externo).
 
-
+<!--
 >[!IMPORTANT]
 >
->Se você estiver se conectando ao Campaign pelo Serviço de identidade da Adobe (IMS), será necessário atualizar para a compilação mais recente para poder se conectar ao Campaign depois de **30 de junho de 2021**. Essa atualização é obrigatória para o servidor do Campaign e o console do cliente.
+>If you are connecting to Campaign through Adobe Identity Service (IMS), you need to upgrade to the latest build to be able to connect to Campaign after **June 30, 2021**. This upgrade is mandatory for both Campaign server and client console. 
 >
->Dependendo da sua versão atual, é necessário atualizar para uma das seguintes versões:
+>Depending on your current version, you must upgrade to one of the following releases: 
 >
 > * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Campaign 21.1.4](../../rn/using/latest-release.md)
 >
->[Saiba mais sobre atualizações de IMS](../../technotes/using/ims-updates.md)
-
+>[Learn more about IMS updates](../../technotes/using/ims-updates.md)
+-->
 
 ## Mais recursos
 
