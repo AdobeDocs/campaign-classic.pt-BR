@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
 source-git-commit: 49271e291953483ee14709b26ec053217a336718
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '143'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 55%
 
 O Sistema de gerenciamento de identidades (IMS) da Adobe ajuda os administradores a criar e gerenciar o acesso do usuário a aplicativos e serviços. Para obter mais informações sobre tipos diferentes de Adobe IDs, consulte [esta página](https://helpx.adobe.com/br/enterprise/using/identity.html).
 
-Os usuários do Campaign podem se conectar ao console do Adobe Campaign usando a Adobe ID, em vez da [autenticação de usuário/senha nativa](../../platform/using/access-management-operators.md). Essa implementação oferece as seguintes vantagens:
+Os usuários do Campaign podem se conectar ao console do Adobe Campaign usando a Adobe ID, em vez da [autenticação nativa de usuário/senha](../../platform/using/access-management-operators.md). Esta implementação oferece as seguintes vantagens:
 
 * A mesma ID pode ser usada para todas as soluções Experience Cloud.
 * A conexão é mantida ao usar o Adobe Campaign com diferentes integrações.
-* Política de gerenciamento de senha mais segura do que logon/senha nativa.
+* Política de gerenciamento de senha mais segura do que login/senha nativos.
 * Uso de contas de Federated ID (provedor de ID externo).
 
 <!--
