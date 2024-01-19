@@ -10,21 +10,21 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 58552d6e-fbed-4944-85c4-9c14bf60d823
 source-git-commit: 49271e291953483ee14709b26ec053217a336718
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '78'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
 # Implementação de IMS{#implementing-ims}
 
-Uma vez [Configuração do IMS](configuring-ims.md) estiver concluído, você poderá habilitar a conexão.
+Depois que a [configuração do IMS](configuring-ims.md) estiver concluída, você poderá habilitar a conexão.
 
-Para ativar o modo de autenticação IMS no Adobe Campaign, siga estas etapas:
+Para habilitar o modo de autenticação do IMS no Adobe Campaign, siga estas etapas:
 
-1. Abra a tela de conexão do Console do cliente.
+1. Abra a tela de conexão do console do cliente.
 1. Selecione o ambiente para o qual você precisa habilitar a conexão.
-1. Verifique a **[!UICONTROL Connect with an Adobe ID]** e salve as alterações.
+1. Marque a opção **[!UICONTROL Connect with an Adobe ID]** e salve as alterações.
 
    ![](assets/ims_1.png)
 
