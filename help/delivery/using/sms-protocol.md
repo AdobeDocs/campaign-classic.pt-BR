@@ -8,9 +8,9 @@ feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 73fd678d54ba1db647c1c188e8064b28466b3cd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8448'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -412,7 +412,7 @@ O conector Adobe Campaign Classic Extended SMPP pode controlar o número de cone
 
 Para o Adobe Campaign Classic, pode haver um número diferente de conexões de receptor e transmissor:
 
-* **Conexões de transmissor = número de conexões filho do MTA * número de processos filho do MTA * número de MTAs (se a resposta automática estiver definida) * número de conexões filho do MTA**
+* **Conexões do transmissor = número de conexões derivadas do MTA * número de processos derivados do MTA * número de MTAs (se a resposta automática estiver definida) * número de conexões derivadas do MTA**
 
 Como sugerido acima, o processo de SMS do Adobe Campaign Classic abrirá mais conexões de transmissor se a resposta automática estiver ativada. Essas conexões extras são usadas para enviar as respostas automáticas.
 
@@ -832,8 +832,8 @@ Mesmo se você não conseguir verificar os registros sozinho, será mais fácil 
 
 ### Testar o SMS {#test}
 
-* **Enviar SMS com todos os tipos de caracteres**
-Se você precisar enviar SMS com caracteres não GSM ou não ASCII, tente enviar algumas mensagens com o maior número possível de caracteres diferentes. Se você configurar uma tabela de mapeamento de caracteres personalizada, envie pelo menos um SMS para todos os possíveis `data_coding` valores.
+* **Envio de SMS com todos os tipos de caracteres**
+Se você precisar enviar SMS com caracteres que não sejam GSM ou ASCII, tente enviar algumas mensagens com o maior número possível de caracteres diferentes. Se você configurar uma tabela de mapeamento de caracteres personalizada, envie pelo menos um SMS para todos os valores de `data_coding` possíveis.
 
 * **Verifique se o SR está corretamente processado**
 O SMS deve ser marcado como recebido no log de entregas. O log de entrega deve ser bem-sucedido e ter a seguinte aparência:
@@ -842,7 +842,7 @@ Verifique se você alterou o nome do provedor de entrega. O registro de entrega 
 
 * **Verifique se o MO é processado**
 Se você precisar processar o MO (respostas automáticas, armazenamento de MO no banco de dados etc.) tente fazer alguns testes. Envie alguns SMS para todas as palavras-chave de resposta automática e verifique se a resposta é rápida o suficiente, não mais do que alguns segundos.
-Verifique no log se a Adobe Campaign responde com êxito `DELIVER_SM_RESP` (command_status=0).
+Verifique no log se o Adobe Campaign responde com `DELIVER_SM_RESP` com sucesso (command_status=0).
 
 ### Verificar as PDUs {#check-pdus}
 
