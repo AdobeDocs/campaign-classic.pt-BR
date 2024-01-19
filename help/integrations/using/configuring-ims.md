@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
 source-git-commit: 49271e291953483ee14709b26ec053217a336718
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '334'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 65%
 
 >[!IMPORTANT]
 >
->Como usuário de serviços hospedados ou gerenciados do Campaign, sua implementação do Adobe IMS pertence ao Adobe. As etapas descritas abaixo se aplicam apenas a clientes locais e híbridos.
-> A implementação do Adobe IMS só deve ser executada por administradores técnicos do Adobe. Entre em contato com o representante da Adobe para iniciar o processo de implementação.
+>Como usuário de serviços hospedados ou gerenciados do Campaign, sua implementação do Adobe IMS é de propriedade da Adobe. As etapas descritas abaixo se aplicam apenas a clientes locais e híbridos.
+> A implementação do Adobe IMS só deve ser executada por administradores técnicos da Adobe. Entre em contato com seu representante da Adobe para iniciar o processo de implementação.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -34,7 +34,7 @@ ht-degree: 65%
 
 ## Atualização do console {#updating-the-console}
 
-Para usar essa funcionalidade, é fundamental instalar a versão mais recente do console do cliente.
+Para usar esta funcionalidade, é imprescindível instalar a versão mais recente do console do cliente.
 
 ## Instalação do pacote {#installing-the-package}
 
@@ -50,12 +50,12 @@ Configure a conta externa da **Adobe Experience Cloud** no **[!UICONTROL Adminis
 
 Insira a seguinte informação:
 
-* Informações de conexão do servidor IMS usado (ID e segredo). Essas informações são fornecidas pela equipe de Atendimento ao cliente do Adobe. Para obter mais informações, consulte as [Perguntas frequentes dos administradores da Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=pt-BR).
+* Informações de conexão do servidor IMS usado (ID e segredo). Essas informações são fornecidas pela equipe de atendimento ao cliente da Adobe. Para obter mais informações, consulte as [Perguntas frequentes dos administradores da Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=pt-BR).
 
   O endereço do **[!UICONTROL Callback server]** deve ser especificado em **https**. Esse campo corresponde ao URL de acesso da sua instância do Adobe Campaign.
 
 * ID da organização: para encontrar seu ID de organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}.
 
-* Máscara de associação: esse campo permite definir a sintaxe que permitirá que os nomes de configuração no Painel Enterprise sejam sincronizados com os grupos no Adobe Campaign. Se você usar a sintaxe &quot;Campaign - tenant_id - (.&#42;)&quot;, o grupo de segurança criado no Adobe Campaign será vinculado ao nome de configuração &quot;Campaign - tenant_id - internal_name&quot; no Painel Enterprise.
+* Máscara de associação: esse campo permite definir a sintaxe que permitirá que os nomes de configuração no Painel Enterprise sejam sincronizados com os grupos no Adobe Campaign. Se você usar a sintaxe “Campaign - tenant_id - (.&#42;)”, o grupo de segurança criado no Adobe Campaign será vinculado ao nome de configuração “Campaign - tenant_id - internal_name” no Painel Enterprise.
 
-* Informações de conexão do Adobe Experience Cloud, que é o nome do locatário do Adobe Experience Cloud.
+* Informações de conexão da Adobe Experience Cloud, que é o nome do locatário da Adobe Experience Cloud.
