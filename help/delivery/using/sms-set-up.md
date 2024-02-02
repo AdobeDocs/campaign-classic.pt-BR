@@ -7,14 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: SMS
 role: User, Developer, Admin
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '1734'
-ht-degree: 100%
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+workflow-type: tm+mt
+source-wordcount: '1751'
+ht-degree: 99%
 
 ---
 
-# Configurar canal de SMS {#setting-up-sms-channel}
+# Configurar canal de SMS em uma instância independente {#setting-up-sms-channel}
 
 Para enviar para um celular, você precisa:
 
@@ -22,11 +22,11 @@ Para enviar para um celular, você precisa:
 
    Observe que os conectores herdados agora estão obsoletos. Embora os recursos obsoletos ainda estejam disponíveis, eles não serão aprimorados nem terão suporte. Saiba mais [nesta página](../../rn/using/deprecated-features.md).
 
-1. Um template do delivery no qual essa conta externa é referenciada.
+1. Um template da entrega no qual essa conta externa é referenciada.
 
 >[!NOTE]
 >
-> Para envio de SMS, a tipologia deve estar usando uma afinidade de SMS específica criada em **um** container dedicado do servidor de aplicativos. [Saiba mais](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+> Para entregas de SMS, a tipologia deve estar usando uma afinidade de SMS específica criada em **um** container dedicado do servidor de aplicativos. [Saiba mais](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## Criar uma conta externa SMPP {#creating-an-smpp-external-account}
 
@@ -40,7 +40,7 @@ Para obter mais informações sobre o protocolo e as configurações de SMS, con
 Para fazer isso, siga as etapas abaixo:
 
 1. No nó **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** da árvore, clique no ícone **[!UICONTROL New]**.
-1. Defina o tipo de conta como **Roteamento**, o canal como **Celular (SMS)** e o modo de delivery como **Delivery em massa**.
+1. Defina o tipo de conta como **Roteamento**, o canal como **Celular (SMS)** e o modo de entrega como **Entrega em massa**.
 
    ![](assets/extended_smpp_create_account.png)
 
@@ -97,7 +97,7 @@ Para fazer isso, siga as etapas abaixo:
 
 ## Transliteração de caracteres de SMS {#about-character-transliteration}
 
-A transliteração de caracteres pode ser configurada em uma conta externa de delivery de dispositivos móveis SMPP, na guia **[!UICONTROL Mobile]**.
+A transliteração de caracteres pode ser configurada em uma conta externa de entrega de dispositivos móveis SMPP, na guia **[!UICONTROL Mobile]**.
 
 A transliteração consiste em substituir um caractere de um SMS por outro quando esse caractere não é considerado pelo padrão GSM.
 
@@ -297,7 +297,7 @@ CR: retorno
 
 Ao enviar uma mensagem SMS, o Adobe Campaign pode usar uma ou várias codificações de texto. Cada codificação tem seu próprio conjunto específico de caracteres e determina o número de caracteres que cabem em uma mensagem SMS.
 
-Ao configurar uma nova conta externa de delivery de dispositivo móvel SMPP, você pode definir o **[!UICONTROL Mapping of encodings]** na guia **[!UICONTROL Mobile]**: o campo **[!UICONTROL data_coding]** permite que o Adobe Campaign comunique qual codificação é usada para o SMSC.
+Ao configurar uma nova conta externa de entrega de dispositivo móvel SMPP, você pode definir o **[!UICONTROL Mapping of encodings]** na guia **[!UICONTROL Mobile]**: o campo **[!UICONTROL data_coding]** permite que o Adobe Campaign comunique qual codificação é usada para o SMSC.
 
 >[!NOTE]
 >
@@ -328,7 +328,7 @@ Quando um assinante responde a uma mensagem SMS, enviada a ele por meio do Adobe
 >
 >As palavras-chave não diferenciam maiúsculas de minúsculas.
 
-Para cada palavra-chave, especifique um código curto, que é um número usado normalmente para enviar deliveries e servirá como nome de remetente, e então insira a mensagem que será enviada ao assinante.
+Para cada palavra-chave, especifique um código curto, que é um número usado normalmente para enviar entregas e servirá como nome de remetente, e então insira a mensagem que será enviada ao assinante.
 
 Você também pode vincular uma ação à sua resposta automática: **[!UICONTROL Send to quarantine]** ou **[!UICONTROL Remove from quarantine]**. Por exemplo, se um recipient enviar a palavra-chave &quot;PARAR&quot;, ele receberá automaticamente uma confirmação de unsubscription e será enviado à quarentena.
 
@@ -354,13 +354,13 @@ As etapas para configurar uma conta externa usando o conector SMPP genérico est
 
 ## Alterar o modelo de entrega {#changing-the-delivery-template}
 
-O Adobe Campaign oferece um template do delivery para celulares. Esse template está disponível no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Para obter mais informações, consulte a seção [Sobre templates](about-templates.md)
+O Adobe Campaign oferece um template da entrega para celulares. Esse template está disponível no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Para obter mais informações, consulte a seção [Sobre templates](about-templates.md)
 
-Para delivery via canal SMS, você deve criar um template no qual o conector de canal é referenciado.
+Para entrega via canal SMS, você deve criar um template no qual o conector de canal é referenciado.
 
-Para manter o template do delivery nativo, recomendamos que você o duplique e depois configure.
+Para manter o template da entrega nativa, recomendamos que você o duplique e depois configure.
 
-No exemplo abaixo, criamos um template para fazer o delivery de mensagens pela conta SMPP habilitada anteriormente. Para fazer isso:
+No exemplo abaixo, criamos um template para fazer a entrega de mensagens pela conta SMPP habilitada anteriormente. Para fazer isso:
 
 1. Vá para o nó **[!UICONTROL Delivery templates]**
 1. Clique com o botão direito do mouse no modelo **[!UICONTROL Send to mobiles]** e selecione **[!UICONTROL Duplicate]**.
@@ -380,4 +380,4 @@ No exemplo abaixo, criamos um template para fazer o delivery de mensagens pela c
 
    ![](assets/s_user_mobile_template_list.png)
 
-Agora você tem uma conta externa e um template do delivery que possibilita o delivery via SMS.
+Agora você tem uma conta externa e um template da entrega que possibilita a entrega via SMS.

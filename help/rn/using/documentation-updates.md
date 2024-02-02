@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 31705e7dd0ecb4e66fe4a22369995384d3ce39d4
-workflow-type: ht
-source-wordcount: '3680'
-ht-degree: 100%
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+workflow-type: tm+mt
+source-wordcount: '3699'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,8 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 ### Janeiro de 2024 {#jan-2024}
 
 Foram adicionadas informações sobre como o campo postalAddress padrão para correspondência direta é definido e por que é importante garantir que os endereços estejam completos. [Leia mais](../../delivery/using/about-direct-mail-channel.md)
+
+Adição de uma nova página sobre como configurar o canal SMS no Campaign em uma infraestrutura mid-sourcing. [Leia mais](../../delivery/using/sms-set-up-mid.md)
 
 ## 2023
 
