@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 3db5242e2074c6d0530258073ae83c11164d7365
-workflow-type: ht
-source-wordcount: '772'
-ht-degree: 100%
+source-git-commit: e430978dd182eaea082122ef748118e5210b05d5
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 96%
 
 ---
 
@@ -41,8 +41,9 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <tr> 
 <td>CentOs</td>
 <td>
+<p>8.x (somente para ambientes híbridos)</p>
 <p>7.x</p>
-<p><strong>Importante:</strong> se estiver usando o RHEL, desative o SELinux ou faça com que seus arquitetos criem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
+<p><strong>Importante:</strong> se estiver usando o RHEL, desabilite o SELinux ou peça aos seus arquitetos que criem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
 </td>
 </tr>
 <tr>
@@ -57,7 +58,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <td>
 <p>8.x</p>
 <p>7.x</p>
-<p><strong>Importante:</strong> se estiver usando o RHEL, desative o SELinux ou faça com que seus arquitetos criem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
+<p><strong>Importante:</strong> se estiver usando o RHEL, desabilite o SELinux ou peça aos seus arquitetos que criem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
 </td>
 </tr>
 <tr>
@@ -127,7 +128,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>19c</p>
 <p>18c</p>
 <p>12c</p>
-<p>11g   R2</p>
+<p>11g R2</p>
 </td>
 </tr>
 <tr>
@@ -306,7 +307,7 @@ Além disso, os ambientes **Híbrido** e **No local** também podem conectar o C
 <tr><td>Hadoop via HiveSQL</td>
 <td>
 <p>HortonWorks HDP 2.4.X, 2.5.x, 2.6.x</p>
-<p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6))</p>
+<p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
 <td>No mínimo v7.0</td>
@@ -353,7 +354,7 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 
 ### Microsoft WebView2 Runtime
 
-WebView2 Runtime do Microsoft Edge a versão mais recente é obrigatória para o console do cliente do Campaign.
+A versão mais recente do tempo de execução do WebView2 do Microsoft Edge é obrigatória para o console do cliente do Campaign.
 
 Baixe o Microsoft Edge WebView2 no [Site do desenvolvedor Microsoft](https://www.adobe.com/go/acc-ms-webview2-runtime-download).
 
