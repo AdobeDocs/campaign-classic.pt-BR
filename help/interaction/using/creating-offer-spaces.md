@@ -8,9 +8,9 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
-source-wordcount: '988'
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
+source-wordcount: '993'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ A criação de espaço de oferta só pode ser realizada por um **administrador t
 
 O conteúdo do catálogo de ofertas está configurado nos espaços de oferta. Por padrão, o conteúdo pode incluir os seguintes campos: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** e **[!UICONTROL Text content]**. A sequência de campos é configurada no espaço de oferta.
 
-Parâmetros avançados permitem especificar uma chave de identificação de contato (que pode ser feita de vários elementos, o nome e o campo de e-mail ao mesmo tempo, por exemplo). Para obter mais informações, consulte a seção [Apresentação de uma oferta identificada](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer).
+Parâmetros avançados permitem especificar uma chave de identificação de contato (que pode ser feita de vários elementos, o nome e o campo de e-mail ao mesmo tempo, por exemplo). Para obter mais informações, consulte a seção [Apresentação de uma oferta identificada](../../interaction/using/integration-via-javascript-client-side.md#presenting-an-identified-offer).
 
 A renderização HTML ou XML é criada por meio de uma função de renderização. A seqüência dos campos definidos na função de renderização deve ser idêntica à sequência configurada no conteúdo.
 
@@ -96,7 +96,7 @@ Esses valores não são aplicados por padrão: eles precisam ser configurados.
 
 >[!NOTE]
 >
->O status de uma apresentação de oferta será alterado automaticamente para &quot;Presented&quot; se a oferta estiver vinculada a uma delivery com o status &quot;Sent&quot;.
+>O status de uma apresentação de oferta será alterado automaticamente para &quot;Presented&quot; se a oferta estiver vinculada a uma entrega com o status &quot;Sent&quot;.
 
 ### Configuração do status quando a proposta é criada {#configuring-the-status-when-the-proposition-is-created}
 
@@ -146,7 +146,7 @@ Assim que um visitante clica na oferta, e portanto na URL, o status **[!UICONTRO
 
 **Interação de saída**
 
-No caso de uma interação de saída, é possível aplicar automaticamente o status **[!UICONTROL Interested]** a uma apresentação de oferta quando o delivery contiver um link. Basta adicionar o valor **_urlType=&quot;11&quot;** ao link:
+No caso de uma interação de saída, é possível aplicar automaticamente o status **[!UICONTROL Interested]** a uma apresentação de oferta quando a entrega contiver um link. Basta adicionar o valor **_urlType=&quot;11&quot;** ao link:
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>

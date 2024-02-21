@@ -6,8 +6,8 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
 source-wordcount: '439'
 ht-degree: 100%
 
@@ -19,13 +19,13 @@ ht-degree: 100%
 
 ## Sobre modelos de conteúdo {#about-content-templates}
 
-Os templates de conteúdo podem ser referenciados e usados nas remessas diretamente. Consulte [Criação de um delivery via gestão de conteúdo](#creating-a-delivery-via-content-management)
+Os templates de conteúdo podem ser referenciados e usados nas entregas diretamente. Consulte [Criação de uma entrega via gestão de conteúdo](#creating-a-delivery-via-content-management)
 
 Eles também podem ser usados para criar instâncias de conteúdo. Depois de criadas, essas instâncias estão prontas para serem entregues (consulte [Delivery de uma instância de conteúdo](#delivering-a-content-instance)) ou exportadas (consulte [Criação de uma instância de conteúdo](#creating-a-content-instance)).
 
 ## Criação de uma entrega via gerenciamento de conteúdo {#creating-a-delivery-via-content-management}
 
-É possível referenciar um template de conteúdo em um delivery tendo em conta o uso de campos de entrada para inserir conteúdo. Uma guia adicional é incluída no assistente do delivery para definir o conteúdo do delivery.
+É possível referenciar um template de conteúdo em uma entrega tendo em conta o uso de campos de entrada para inserir conteúdo. Uma guia adicional é incluída no assistente da entrega para definir o conteúdo da entrega.
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
@@ -33,11 +33,11 @@ O layout será aplicado automaticamente com base nas configurações selecionada
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Para obter mais informações, consulte o exemplo de implementação completa: [Criação de conteúdo no assistente de entrega](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+Para obter mais informações, consulte o exemplo de implementação completa: [Criação de conteúdo no assistente de entrega](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard).
 
 ## Criação de uma instância de conteúdo {#creating-a-content-instance}
 
-É possível criar conteúdo diretamente na árvore do Adobe Campaign para ser usado em workflows, exportado ou inserido diretamente em novos deliveries.
+É possível criar conteúdo diretamente na árvore do Adobe Campaign para ser usado em workflows, exportado ou inserido diretamente em novas entregas.
 
 Siga as etapas abaixo:
 
@@ -77,11 +77,11 @@ Siga as etapas abaixo:
 
 ## Entrega de uma instância de conteúdo {#delivering-a-content-instance}
 
-Para criar e entregar uma instância de conteúdo, um template do delivery precisa ser vinculado ao template de publicação usado para gerar esse conteúdo. Para obter mais informações, consulte [Delivery](publication-templates.md#delivery).
+Para criar e entregar uma instância de conteúdo, um template do delivery precisa ser vinculado ao template de publicação usado para gerar esse conteúdo. Para obter mais informações, consulte [Entrega](publication-templates.md#delivery).
 
-Além disso, a pasta de armazenamento de conteúdo deve ser dedicada ao conteúdo obtido deste template de publicação (quando uma pasta de conteúdo permite gerar vários tipos de conteúdo, os deliveries não podem ser criados automaticamente).
+Além disso, a pasta de armazenamento de conteúdo deve ser dedicada ao conteúdo obtido deste template de publicação (quando uma pasta de conteúdo permite gerar vários tipos de conteúdo, as entregas não podem ser criadas automaticamente).
 
-Para criar automaticamente um baseado no conteúdo selecionado, clique no ícone **[!UICONTROL Delivery]** Delivery e escolha o template.
+Para criar automaticamente uma entrega baseada no conteúdo selecionado, clique no ícone **[!UICONTROL Delivery]** e escolha o template.
 
 ![](assets/s_ncs_content_folder_create_the_delivery.png)
 

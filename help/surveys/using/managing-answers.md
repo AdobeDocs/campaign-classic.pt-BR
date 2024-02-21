@@ -6,8 +6,8 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
 source-wordcount: '851'
 ht-degree: 100%
 
@@ -101,7 +101,7 @@ Para cada formulário, as respostas fornecidas podem ser usadas em campos ou ró
 
 ### Configurações de armazenamento {#storage-settings}
 
-É possível arquivar respostas de pesquisas em formato XML. Isso permite salvar uma cópia bruta das respostas coletadas, o que pode ser útil caso haja uma padronização excessiva dos dados em uma lista discriminada. [Saiba mais](../../surveys/using/publish--track-and-use-collected-data.md#standardizing-data)
+É possível arquivar respostas de pesquisas em formato XML. Isso permite salvar uma cópia bruta das respostas coletadas, o que pode ser útil caso haja uma padronização excessiva dos dados em uma lista discriminada. [Saiba mais](../../surveys/using/publish-track-and-use-collected-data.md#standardizing-data)
 
 >[!CAUTION]
 >

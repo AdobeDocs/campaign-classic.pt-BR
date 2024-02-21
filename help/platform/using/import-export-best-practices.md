@@ -9,8 +9,8 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
 source-wordcount: '523'
 ht-degree: 100%
 
@@ -61,8 +61,8 @@ Use arquivos compactados para importações e exportações sempre que possível
 
 **Tópicos relacionados:**
 
-* [Atividade de carregamento de dados (arquivo)](../../workflow/using/data-loading--file-.md)
-* [Atividade de extração de dados (arquivo)](../../workflow/using/extraction--file-.md)
+* [Atividade de carregamento de dados (arquivo)](../../workflow/using/data-loading-file.md)
+* [Atividade de extração de dados (arquivo)](../../workflow/using/extraction-file.md)
 
 ## Importar no modo Delta {#importing-in-delta-mode}
 

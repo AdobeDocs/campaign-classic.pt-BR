@@ -8,9 +8,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
-source-wordcount: '3736'
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
+source-wordcount: '3750'
 ht-degree: 100%
 
 ---
@@ -195,7 +195,7 @@ Um provedor de serviços externos pode ser envolvido no gerenciamento de uma tar
 
 Para fazer isso, edite as propriedades da tarefa e selecione o provedor de serviços. As classes de custo associadas ao provedor de serviços são listadas automaticamente na seção central da janela.
 
-Para obter mais informações, consulte [Criar um provedor de serviços e suas categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+Para obter mais informações, consulte [Criar um provedor de serviços e suas categorias de custo](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 Selecione as categorias de custo relacionadas à execução da tarefa. Para fazer isso, selecione o tipo de custo e, se necessário, adicione uma quantidade como sobretaxa.
 
@@ -211,7 +211,7 @@ Quando selecionado, o provedor de serviços é exibido no painel de tarefas:
 
 ### Tarefas atrasadas {#late-tasks}
 
-Uma tarefa está atrasada se tiver atingido sua data final sem seu status mudar para **[!UICONTROL Finished]**. Por padrão, nenhum operador é avisado quando uma tarefa está atrasada. É possível configurar o delivery de um e-mail de notificação: todos os operadores podem ser notificados mesmo se não estiverem envolvidos na tarefa.
+Uma tarefa está atrasada se tiver atingido sua data final sem seu status mudar para **[!UICONTROL Finished]**. Por padrão, nenhum operador é avisado quando uma tarefa está atrasada. É possível configurar a entrega de um e-mail de notificação: todos os operadores podem ser notificados mesmo se não estiverem envolvidos na tarefa.
 
 Vá para a caixa **[!UICONTROL Resources]** e adicione o operador ao campo **[!UICONTROL Assignation]**. Para notificar várias pessoas, selecione um grupo de operadores.
 
@@ -281,7 +281,7 @@ As seguintes tarefas podem ser agendadas:
 
 ### Controlar tarefas {#control-tasks}
 
-Uma **[!UICONTROL Control task]** é vinculada à aprovação de delivery: aprovação de direcionamento, conteúdo, arquivo de extração, orçamento ou prova.
+Uma **[!UICONTROL Control task]** é vinculada à aprovação de entrega: aprovação de direcionamento, conteúdo, arquivo de extração, orçamento ou prova.
 
 ![](assets/s_ncs_user_task_new_control.png)
 

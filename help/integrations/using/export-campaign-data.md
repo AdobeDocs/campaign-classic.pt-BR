@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: ht
-source-wordcount: '504'
+source-wordcount: '477'
 ht-degree: 100%
 
 ---
@@ -32,7 +32,7 @@ Para exportar dados do Campaign Classic para o local de armazenamento de blobs d
 
 Para fazer isso, adicione e configure:
 
-* Uma atividade **[!UICONTROL Data extraction (file)]** para extrair os dados direcionados em um arquivo CSV. Para obter mais informações sobre como configurar esta atividade, consulte [esta seção](../../workflow/using/extraction--file-.md).
+* Uma atividade **[!UICONTROL Data extraction (file)]** para extrair os dados direcionados em um arquivo CSV. Para obter mais informações sobre como configurar esta atividade, consulte [esta seção](../../workflow/using/extraction-file.md).
 
   ![](assets/rtcdp-extract-file.png)
 

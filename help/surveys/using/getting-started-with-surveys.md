@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '928'
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
+source-wordcount: '942'
 ht-degree: 100%
 
 ---
@@ -147,10 +147,10 @@ Quando estiver em produção, a pesquisa é acessível no servidor e você pode 
 
 Para entregar a pesquisa, você pode enviar uma mensagem contendo um link de acesso ao público alvo ou colocar a URL de acesso da pesquisa em uma página da Web, por exemplo.
 
-Você pode monitorar as respostas do usuário por meio de relatórios e logs. Consulte [Monitoramento de resposta](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
+Você pode monitorar as respostas do usuário por meio de relatórios e logs. Consulte [Monitoramento de resposta](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
 
 >[!CAUTION]
 >
 >A URL pública inclui o nome interno da pesquisa. Quando o nome interno é modificado, a URL é atualizada automaticamente: todos os links para a pesquisa também devem ser atualizados.
 >
->Se os deliveries que contêm o link para o formulário já tiverem sido enviados, este link não funcionará mais.
+>Se as entregas que contêm o link para o formulário já tiverem sido enviadas, este link não funcionará mais.

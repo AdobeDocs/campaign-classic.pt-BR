@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Documentos da campanha de marketing e delivery outlines
-description: Saiba mais sobre documentos de campanha de marketing e delivery outlines
+title: Documentos da campanha de marketing e descrições da entrega
+description: Saiba mais sobre documentos de campanha de marketing e descrições da entrega
 role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: ht
 source-wordcount: '762'
 ht-degree: 100%
@@ -21,7 +21,7 @@ Você pode associar vários documentos a uma campanha: relatórios, fotos, pági
 >
 >Esse recurso é reservado para assets e documentos pequenos.
 
-Em uma campanha, você também pode consultar outros itens, como cupons promocionais, ofertas especiais relacionadas a uma marca ou loja específica etc. Quando esses elementos são incluídos em um outline, eles podem ser associados a um delivery de correspondência direta. Consulte [Associar e estruturar recursos vinculados por meio de um delivery outline](#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Em uma campanha, você também pode consultar outros itens, como cupons promocionais, ofertas especiais relacionadas a uma marca ou loja específica etc. Quando esses elementos são incluídos em uma descrição, eles podem ser associados a uma entrega de correspondência direta. Consulte [Associar e estruturar recursos vinculados por meio de uma descrição da entrega](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 >[!NOTE]
 >
@@ -54,17 +54,17 @@ No painel, os documentos associados à campanha são agrupados na seção **[!UI
 
 Eles também podem ser editados e modificados nessa visualização.
 
-## Associar e estruturar recursos vinculados por meio de um delivery outline {#associating-and-structuring-resources-linked-via-a-delivery-outline}
+## Associar e estruturar recursos vinculados por meio de uma entrega outline {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >
->Delivery outlines são usados exclusivamente no contexto de campanhas de correspondência direta.
+>Descrições da entrega são usados exclusivamente no contexto de campanhas de correspondência direta.
 
-Um delivery outline indica um conjunto estruturado de elementos (documentos, lojas, cupons promocionais etc.) criado pela empresa e para uma campanha específica.
+Uma descrição da entrega indica um conjunto estruturado de elementos (documentos, lojas, cupons promocionais etc.) criado pela empresa e para uma campanha específica.
 
-Esses elementos são agrupados em delivery outlines, e cada delivery outline será associado a um delivery; ele será referenciado no arquivo de extração enviado para o **provedor de serviço** para ser anexado ao delivery. Por exemplo, você pode criar um delivery outline que se refere a uma unidade e aos folhetos de marketing que ela usa.
+Esses elementos são agrupados em descrições da entrega, e cada descrição da entrega será associada a uma entrega; ela será referenciada no arquivo de extração enviado para o **provedor de serviço** para ser anexada à entrega. Por exemplo, você pode criar uma descrição da entrega que se refere a uma unidade e aos folhetos de marketing que ela usa.
 
-Para uma campanha, delivery outlines permitem que você estruture elementos externos a serem associados ao delivery de acordo com determinados critérios: a unidade relacionada, a oferta promocional concedida, o convite para um evento local etc.
+Para uma campanha, as descrições das entregas permitem que você estruture elementos externos a serem associados à entrega de acordo com determinados critérios: a unidade relacionada, a oferta promocional concedida, o convite para um evento local etc.
 
 ### Criar um outline {#creating-an-outline}
 
@@ -87,8 +87,8 @@ Em seguida, clique em **[!UICONTROL Add a delivery outline]** e crie a hierarqui
 
 Uma estrutura pode conter itens e campos de personalização, recursos e ofertas:
 
-* Os itens podem ser documentos físicos, por exemplo, que são referenciados e descritos aqui e serão anexados ao delivery.
-* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de recipients. Assim, é possível criar valores que serão usados em deliveries para um target específico (oferta de boas-vindas, desconto, etc.) Eles são criados no Adobe Campaign e importados para o outline por meio do link **[!UICONTROL Import personalization fields...]**.
+* Os itens podem ser documentos físicos, por exemplo, que são referenciados e descritos aqui e serão anexados à entrega.
+* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de recipients. Assim, é possível criar valores que serão usados em entregas para um target específico (oferta de boas-vindas, desconto, etc.) Eles são criados no Adobe Campaign e importados para o outline por meio do link **[!UICONTROL Import personalization fields...]**.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 
@@ -106,7 +106,7 @@ Uma estrutura pode conter itens e campos de personalização, recursos e ofertas
 
 ### Selecionar um outline {#selecting-an-outline}
 
-Para cada delivery, você pode selecionar o outline para associar na seção reservada para o outline da extração, como no exemplo a seguir:
+Para cada entrega, você pode selecionar o outline para associar na seção reservada para o outline da extração, como no exemplo a seguir:
 
 ![](assets/s_ncs_user_op_select_composition.png)
 
@@ -114,7 +114,7 @@ A estrutura selecionada é então exibida na seção inferior da janela. Ele pod
 
 ![](assets/s_ncs_user_op_select_composition_b.png)
 
-A guia **[!UICONTROL Summary]** do delivery também exibe essas informações:
+A guia **[!UICONTROL Summary]** da entrega também exibe essas informações:
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
@@ -122,11 +122,11 @@ A guia **[!UICONTROL Summary]** do delivery também exibe essas informações:
 
 No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no template de exportação associado ao provedor de serviços.
 
-No seguinte exemplo, o rótulo, custo estimado e descrição do outline associado ao delivery serão adicionados no arquivo de extração.
+No seguinte exemplo, o rótulo, custo estimado e descrição do outline associado à entrega serão adicionados no arquivo de extração.
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-O modelo de exportação deve estar associado ao provedor de serviços selecionado para o delivery. Consulte [esta seção](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+O modelo de exportação deve estar associado ao provedor de serviços selecionado para a entrega. Consulte [esta seção](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >

@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: ht
-source-wordcount: '1955'
+source-wordcount: '1961'
 ht-degree: 100%
 
 ---
@@ -63,13 +63,13 @@ Também é possível inserir emoticons na linha do assunto com a janela pop-up *
 >
 >Por motivos de privacidade, recomendamos usar HTTPS para todos os recursos externos.
 
-O conteúdo da mensagem é definido na seção inferior da janela de configuração de delivery.
+O conteúdo da mensagem é definido na seção inferior da janela de configuração de entrega.
 
 As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo com a preferência do recipient. Recomendamos a criação de conteúdo nos dois formatos para garantir que as mensagens possam ser exibidas corretamente em qualquer sistema de email. Para obter mais informações, consulte [Seleção de formatos de mensagem](email-parameters.md#selecting-message-formats).
 
 * Para importar um conteúdo HTML, clique no botão **[!UICONTROL Open]**. Também é possível colar o código-fonte diretamente na subguia **[!UICONTROL Source]**.
 
-  Se estiver usando o [Editor de Conteúdo Digital](../../web/using/about-campaign-html-editor.md) (DCE), consulte [Seleção de um template de conteúdo](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  Se estiver usando o [Editor de Conteúdo Digital](../../web/using/about-campaign-html-editor.md) (DCE), consulte [Seleção de um template de conteúdo](../../web/using/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -118,7 +118,7 @@ Para obter mais informações, consulte [esta seção](defining-interactive-cont
 
 ## Usar gestão de conteúdo {#using-content-management}
 
-O conteúdo da entrega pode ser definido por meio dos formulários de gerenciamento de conteúdo, diretamente no assistente de entrega. Para fazer isso, você deve consultar o template de publicação do gerenciamento de conteúdo que será usado na guia **[!UICONTROL Advanced]** das propriedades de delivery.
+O conteúdo da entrega pode ser definido por meio dos formulários de gerenciamento de conteúdo, diretamente no assistente de entrega. Para fazer isso, você deve consultar o template de publicação do gerenciamento de conteúdo que será usado na guia **[!UICONTROL Advanced]** das propriedades de entrega.
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -145,7 +145,7 @@ Para personalizar a lista de emoticons, consulte esta [página](customizing-emot
 
 ## Adicionar imagens {#adding-images}
 
-As entregas de email em formato HTML podem conter imagens. No assistente do delivery, você pode importar uma página HTML contendo imagens ou inserir imagens diretamente usando o editor de HTML pelo ícone **[!UICONTROL Image]**.
+As entregas de email em formato HTML podem conter imagens. No assistente da entrega, você pode importar uma página HTML contendo imagens ou inserir imagens diretamente usando o editor de HTML pelo ícone **[!UICONTROL Image]**.
 
 
 ### Medidas de proteção {#img-guardrails}
@@ -175,7 +175,7 @@ O assistente de entrega permite adicionar imagens locais ou armazenadas na bibli
 >
 >Para que os recipients possam exibir as imagens incluídas nas mensagens recebidas, essas mensagens devem estar disponíveis em um servidor acessível externamente.
 
-Para gerenciar as imagens por meio do assistente do delivery:
+Para gerenciar as imagens por meio do assistente da entrega:
 
 1. Clique no ícone **[!UICONTROL Tracking & Images]** na barra de ferramentas.
    ![](assets/s_ncs_user_email_del_img_param.png)
@@ -184,7 +184,7 @@ Para gerenciar as imagens por meio do assistente do delivery:
 1. Você pode escolher se deseja incluir as imagens na mensagem de email.
    ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* Você pode carregar imagens manualmente sem esperar a fase de análise de delivery. Para fazer isso, clique em **[!UICONTROL Upload the images straightaway...]**.
+* Você pode carregar imagens manualmente sem esperar a fase de análise de entrega. Para fazer isso, clique em **[!UICONTROL Upload the images straightaway...]**.
 * Você pode especificar outro caminho para acessar as imagens no servidor de rastreamento. Para fazer isso, insira-o no campo **[!UICONTROL Images URL]**. Esse valor substitui o valor definido nos parâmetros do assistente de instalação.
 
 Quando você abre conteúdo HTML com imagens incluídas no assistente do delivery, aparece uma mensagem com a opção de fazer upload das imagens imediatamente, de acordo com os parâmetros da entrega.
@@ -211,7 +211,7 @@ Clique no ícone **[!UICONTROL Tracking & Images]** e, em seguida, na guia **[!U
 Para cada imagem detectada, você pode ver seu status:
 
 * Se uma imagem for armazenada no local ou localizada em outro servidor, mesmo que esse servidor seja visível externamente (em um site da Internet, por exemplo), ela será detectada como **[!UICONTROL Not yet online]**.
-* As imagens são detectadas como **[!UICONTROL Already online]** se tiverem sido carregadas anteriormente durante a criação de outro delivery.
+* As imagens são detectadas como **[!UICONTROL Already online]** se tiverem sido carregadas anteriormente durante a criação de outra entrega.
 * No assistente de implantação, é possível definir as URLs nas quais a detecção de imagem não está habilitada: o upload dessas imagens será **[!UICONTROL Skipped]**.
 
 >[!NOTE]
@@ -293,7 +293,7 @@ Em seguida, configure os seguintes elementos para atender às suas necessidades:
    >
    >Por exemplo, se estiver usando um código de barras do tipo GS1-128 e quiser inserir o número da conta de um recipient, além do valor, clique no botão de personalização e selecione **[!UICONTROL Recipient > Account number]**. Se o número da conta do recipient selecionado for inserido corretamente, ele será considerado pelo código de barras.
 
-Após configurar estes elementos, você pode finalizar seu email e enviá-lo. Para evitar erros, sempre verifique se o conteúdo é exibido corretamente antes de executar um delivery clicando na guia **[!UICONTROL Preview]**.
+Após configurar estes elementos, você pode finalizar seu email e enviá-lo. Para evitar erros, sempre verifique se o conteúdo é exibido corretamente antes de executar uma entrega clicando na guia **[!UICONTROL Preview]**.
 
 ![](assets/barcode_insert_10.png)
 

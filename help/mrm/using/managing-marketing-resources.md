@@ -8,8 +8,8 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
 source-wordcount: '1393'
 ht-degree: 100%
 
@@ -179,15 +179,15 @@ O botão **[!UICONTROL Details]** permite editá-lo e visualizá-lo.
 
 Os recursos adicionados serão exibidos no painel. Eles também poderão ser editados lá.
 
-### Adição de um recurso de marketing a um delivery outline {#adding-a-marketing-resource-to-a-delivery-outline}
+### Adição de um recurso de marketing a uma entrega outline {#adding-a-marketing-resource-to-a-delivery-outline}
 
-Os recursos de marketing podem ser associados a deliveries por meio de delivery outlines.
+Os recursos de marketing podem ser associados a entregas por meio de descrições da entrega.
 
 ![](assets/s_ncs_user_mkg_resource_in_compo.png)
 
 >[!NOTE]
 >
->Para obter mais informações sobre delivery outlines, consulte [Associar e estruturar recursos vinculados por meio de um delivery outline](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+>Para obter mais informações sobre descrição da entrega, consulte [Associar e estruturar recursos vinculados por meio de uma descrição da entrega](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 ## Gerenciamento de estoque {#stock-management}
 
@@ -195,7 +195,7 @@ Você pode associar um recurso de marketing a um ou mais estoques para gerenciar
 
 >[!NOTE]
 >
->Para obter mais informações sobre gerenciamento de estoque no Adobe Campaign, consulte [Gerenciamento de estoque](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
+>Para obter mais informações sobre gerenciamento de estoque no Adobe Campaign, consulte [Gerenciamento de estoque](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
 
 Para associar um recurso de marketing a um estoque, edite o mapa de ações e edite ou crie um estoque. Adicione uma linha de estoque e selecione o recurso de marketing correspondente.
 

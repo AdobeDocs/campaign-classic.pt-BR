@@ -9,8 +9,8 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 58998fa2480a33776507a434ed846541ac19e58b
-workflow-type: tm+mt
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
 source-wordcount: '517'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Em seguida, você pode usar comandos ou códigos na guia **[!UICONTROL Script]**
 **Tópicos relacionados:**
 
 * [Descompactar ou descriptografar um arquivo antes do processamento](../../platform/using/unzip-decrypt.md)
-* [Atividade de extração de dados (arquivo)](../../workflow/using/extraction--file-.md).
+* [Atividade de extração de dados (arquivo)](../../workflow/using/extraction-file.md).
 
 ## Caso de uso: criptografar e exportar dados usando uma chave instalada no Painel de controle {#use-case-gpg-encrypt}
 
@@ -60,7 +60,7 @@ As etapas para executar esse caso de uso são as seguintes:
 
 1. Configure a atividade **[!UICONTROL Query]** para direcionar os dados desejados a partir do banco de dados. Para obter mais informações, consulte [esta seção](../../workflow/using/query.md).
 
-1. Abra a atividade **[!UICONTROL Data extraction (file)]** e configure-a de acordo com suas necessidades. Os conceitos globais sobre como configurar a atividade estão disponíveis [nesta seção](../../workflow/using/extraction--file-.md).
+1. Abra a atividade **[!UICONTROL Data extraction (file)]** e configure-a de acordo com suas necessidades. Os conceitos globais sobre como configurar a atividade estão disponíveis [nesta seção](../../workflow/using/extraction-file.md).
 
    ![](assets/gpg-data-extraction.png)
 

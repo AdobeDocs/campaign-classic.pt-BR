@@ -6,8 +6,8 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
 source-wordcount: '534'
 ht-degree: 100%
 
@@ -51,8 +51,8 @@ O módulo de criação de pesquisa opcional oferece uma interface fácil de usar
 * Extensão dinâmica do banco de dados: criação de respostas que não fazem parte do modelo de dados inicial. [Saiba mais](../../surveys/using/managing-answers.md#storing-collected-answers).
 * Gerenciamento de pontuação. [Saiba mais](../../surveys/using/managing-answers.md#score-management).
 * Exibição aleatória de perguntas. [Saiba mais](../../surveys/using/building-a-survey.md#adding-questions).
-* Rastreamento das respostas em tempo real. [Saiba mais](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
-* Geração de relatórios dedicados. [Saiba mais](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Rastreamento das respostas em tempo real. [Saiba mais](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
+* Geração de relatórios dedicados. [Saiba mais](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys).
 
 
 ## Etapas de implementação {#surveys-implementation-steps}
@@ -61,7 +61,7 @@ Siga as etapas abaixo para criar e entregar uma pesquisa e processar seus result
 
 1. Crie as páginas da pesquisa e seu conteúdo (campos de entrada, listas suspensas, perguntas e etc.).
 1. Definição de como as respostas devem ser salvas. Uma etapa de pré-carregamento de dados pode ser inserida para pré-carregar o formulário com dados já existentes no banco de dados. Você também pode adicionar uma caixa de teste.
-1. Publicar e, em seguida, enviar a pesquisa aos destinatários (por exemplo, incluir link em um delivery ou em um site).
+1. Publicar e, em seguida, enviar a pesquisa aos destinatários (por exemplo, incluir link em uma entrega ou em um site).
 1. Monitore as respostas e visualize os relatórios.
 
 Para obter mais informações sobre configuração e sequenciamento dessas etapas, consulte [este documento](../../web/using/about-web-forms.md). Neste capítulo, são detalhadas somente as configurações específicas para pesquisas.

@@ -8,8 +8,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
 source-wordcount: '324'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Saiba como [explorar seus dados](../../reporting/using/ac-cubes.md) com cubos.
 
 ## Posso criar um relatório com base em respostas a uma pesquisa online? {#can-i-create-a-report-from-answers-to-an-online-survey-}
 
-Leia [este caso de uso](../../surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md) para saber como criar um relatório para exibir respostas a uma pesquisa online.
+Leia [este caso de uso](../../surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md) para saber como criar um relatório para exibir respostas a uma pesquisa online.
 
 ## Como posso compartilhar o acesso ao meu relatório na interface do Campaign? {#how-can-i-share-access-to-my-report}
 

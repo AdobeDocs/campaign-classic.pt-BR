@@ -6,9 +6,9 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: ht
-source-wordcount: '1260'
+source-wordcount: '1255'
 ht-degree: 100%
 
 ---
@@ -25,15 +25,15 @@ Para criar uma campanha de marketing:
 
 1. Defina a população do target: crie um fluxo de trabalho com consultas de direcionamento. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
-1. Crie deliveries: selecione os canais e defina o conteúdo que será enviado. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
+1. Crie entregas: selecione os canais e defina o conteúdo que será enviado. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
 
-1. Aprove deliveries. [Saiba mais](../../campaign/using/marketing-campaign-approval.md).
+1. Aprove entregas. [Saiba mais](../../campaign/using/marketing-campaign-approval.md).
 
-1. Monitore deliveries [Saiba mais](../../campaign/using/marketing-campaign-monitoring.md).
+1. Monitore entregas [Saiba mais](../../campaign/using/marketing-campaign-monitoring.md).
 
-1. Planeje campanhas e custos associados. [Saiba mais](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+1. Planeje campanhas e custos associados. [Saiba mais](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-Quando essas etapas forem concluídas, você poderá iniciar os deliveries (consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), verifique os dados, os processos e as informações relativos aos deliveries e, se necessário, gerencie os documentos associados (consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Você também pode acompanhar a execução das fases de processamento de campanhas e deliveries (consulte [esta seção](../../campaign/using/marketing-campaign-monitoring.md)).
+Quando essas etapas forem concluídas, você poderá iniciar as entregas (consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), verifique os dados, os processos e as informações relativos às entregas e, se necessário, gerencie os documentos associados (consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Você também pode acompanhar a execução das fases de processamento de campanhas e entregas (consulte [esta seção](../../campaign/using/marketing-campaign-monitoring.md)).
 
 ## Criar plano e hierarquia de programa {#creating-plan-and-program-hierarchy}
 
@@ -153,7 +153,7 @@ Para criar a campanha recorrente e executar os workflows de acordo com o agendam
 
    Para cada linha, você pode adicionar as seguintes opções adicionais:
 
-   * **[!UICONTROL To be approved]** : permite forçar as solicitações de aprovação de delivery no workflow.
+   * **[!UICONTROL To be approved]** : permite forçar as solicitações de aprovação de entrega no workflow.
    * **[!UICONTROL To be started]**: permite iniciar o workflow quando a data de início é atingida.
 
    O campo **[!UICONTROL Create in advance for]** permite criar todos os workflows que abrangem o período inserido.

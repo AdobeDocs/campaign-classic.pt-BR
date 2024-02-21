@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Seed Address
 role: User
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: ht
 source-wordcount: '339'
 ht-degree: 100%
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## Seed addresses em uma entrega {#seed-addresses-in-a-delivery}
 
-Para adicionar seed addresses específicos em um delivery, clique no link **[!UICONTROL To]** e selecione a guia **[!UICONTROL Seed addresses]** Seed addresses.
+Para adicionar seed addresses específicos em uma entrega, clique no link **[!UICONTROL To]** e selecione a guia **[!UICONTROL Seed addresses]** Seed addresses.
 
 ![](assets/s_ncs_user_edit_del_addresses_tab.png)
 
@@ -38,7 +38,7 @@ Há três modos de inserção possíveis:
 
    Para fazer isso, clique no link **[!UICONTROL Edit the dynamic condition...]** e insira os parâmetros de seleção do seed address. Por exemplo, você pode incluir todos os seed addresses contidos em uma pasta específica ou seed addresses que pertencem a um departamento específico da sua organização.
 
-   Um exemplo é apresentado nesta seção: [Caso de uso: seleção de seed addresses por critérios](use-case--selecting-seed-addresses-on-criteria.md).
+   Um exemplo é apresentado nesta seção: [Caso de uso: seleção de seed addresses por critérios](use-case-selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Há três modos de inserção possíveis:
 >
 >Para obter mais informações, consulte [Usar uma tabela de recipient externa](using-an-external-recipient-table.md) e a documentação sobre [Renderização de caixa de entrada](inbox-rendering.md).
 
-Para deliveries, você também pode personalizar a maneira como os endereços são inseridos no arquivo de extração. Por padrão, eles são inseridos na ordem de classificação do arquivo de saída, mas você pode optar por inseri-los no final ou no início do arquivo, ou aleatoriamente entre os recipients do target principal.
+Para entregas, você também pode personalizar a maneira como os endereços são inseridos no arquivo de extração. Por padrão, eles são inseridos na ordem de classificação do arquivo de saída, mas você pode optar por inseri-los no final ou no início do arquivo, ou aleatoriamente entre os recipients do target principal.
 
 ![](assets/s_ncs_user_edit_del_addresses_sort.png)
 
@@ -58,4 +58,4 @@ Clique no link **[!UICONTROL Advanced campaign settings...]** e, em seguida, na 
 
 ![](assets/s_ncs_user_edit_op_addresses_tab.png)
 
-Os seed addresses inseridos a partir da campanha serão adicionados ao target de cada delivery na campanha.
+Os seed addresses inseridos a partir da campanha serão adicionados ao target de cada entrega na campanha.

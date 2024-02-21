@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
-source-wordcount: '701'
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
+source-wordcount: '697'
 ht-degree: 100%
 
 ---
@@ -50,12 +50,12 @@ Os aplicativos Web no Adobe Campaign oferecem acesso às seguintes funcionalidad
 * Convites ou notificações por email. Para obter mais informações, consulte esta [página](publishing-a-web-form.md#delivering-a-form-via-email).
 * Personalização de mensagens de erros e mensagens finais. Para obter mais informações, consulte esta [página](defining-web-forms-properties.md#setting-up-an-error-page).
 * Uso de imagens, vídeos, links de hipertexto, captcha, etc. Para obter mais informações, consulte esta [página](editing-content.md).
-* Monitoramento de respostas em tempo real. Para obter mais informações, consulte esta [página](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
+* Monitoramento de respostas em tempo real. Para obter mais informações, consulte esta [página](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
 
 O módulo de criação **Survey** opcional oferece as seguintes funcionalidades adicionais:
 
 * Extensão dinâmica do banco de dados: criação de respostas não incluídas no template de dados inicial. Para obter mais informações, consulte esta [página](../../surveys/using/managing-answers.md#storing-collected-answers).
-* Geração de relatórios dedicados. Para obter mais informações, consulte esta [página](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Geração de relatórios dedicados. Para obter mais informações, consulte esta [página](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys).
 
 Em comparação às aplicações Web, as pesquisas têm uma interface gráfica simplificada com um número reduzido de controles de edição.
 

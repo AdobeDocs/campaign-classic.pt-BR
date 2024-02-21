@@ -8,8 +8,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
 source-wordcount: '348'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Antes de começar a criar e-mails, aprenda os conceitos e as práticas recomenda
 
 [Clique aqui para saber mais](../../delivery/using/delivery-best-practices.md).
 
-## O que é um template do delivery? {#what-is-a-delivery-template-}
+## O que é um template da entrega? {#what-is-a-delivery-template-}
 
 A configuração e os parâmetros de entrega podem ser salvos em um modelo para serem reutilizados.
 
@@ -41,7 +41,7 @@ Saiba como importar um HTML existente para criar e enviar emails no Adobe Campai
 
 ## Como usar o DCE do Campaign para criar um conteúdo de email? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
-[Crie um email com o editor de conteúdo digital do Campaign](../../web/using/use-case--creating-an-email-delivery.md): confira um exemplo para saber como usar o DCE do Campaign para criar um email.
+[Crie um email com o editor de conteúdo digital do Campaign](../../web/using/use-case-creating-an-email-delivery.md): confira um exemplo para saber como usar o DCE do Campaign para criar um email.
 
 ## Como posso criar um boletim informativo baseado em assinaturas no Campaign? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 

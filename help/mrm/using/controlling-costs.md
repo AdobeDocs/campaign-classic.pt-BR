@@ -8,9 +8,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
-source-wordcount: '2475'
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: ht
+source-wordcount: '2495'
 ht-degree: 100%
 
 ---
@@ -35,15 +35,15 @@ As etapas a seguir devem ser aplicadas para implementar o gerenciamento de orça
 
 1. Definir o método de cálculo de custo
 
-   As estruturas de custo são definidas para os provedores de serviços. Consulte [Criar um provedor de serviços e suas categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+   As estruturas de custo são definidas para os provedores de serviços. Consulte [Criar um provedor de serviços e suas categorias de custo](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-1. Definir os custos da campanha (remessas/tarefas)
+1. Definir os custos da campanha (entregas/tarefas)
 
    Os custos incorridos pelas entregas e tarefas são alimentados individualmente ou globalmente para o template de campanha. Consulte [Cálculo de custos e estoques](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
 
 1. Consolidação
 
-   De acordo com o status do progresso das tarefas, remessas e campanhas, os custos serão calculados e passados para o orçamento correspondente.
+   De acordo com o status do progresso das tarefas, entregas e campanhas, os custos serão calculados e passados para o orçamento correspondente.
 
    Quando a criação da campanha está suficientemente avançada, o status do progresso do orçamento pode ser alterado para **[!UICONTROL Specified]**. O custo calculado do programa é então inserido automaticamente com os custos calculados na campanha. Consulte [Compromisso de custo, cálculo e cobrança](#cost-commitment--calculation-and-charging).
 
@@ -77,7 +77,7 @@ Os orçamentos são criados no mapa, através do nó **[!UICONTROL Campaign mana
 
 ### Calcular valores {#calculating-amounts}
 
-Cada orçamento é definido por um valor inicial que será diminuído com os custos das várias campanhas, remessas ou tarefas relacionadas a eles após terem sido agendadas ou realizadas. O status dos valores (planejado, reservado, comprometido, gasto ou faturado) depende do tipo de custo e do nível de comprometimento definido na campanha, no delivery ou na tarefa.
+Cada orçamento é definido por um valor inicial que será diminuído com os custos das várias campanhas, entregas ou tarefas relacionadas a eles após terem sido agendadas ou realizadas. O status dos valores (planejado, reservado, comprometido, gasto ou faturado) depende do tipo de custo e do nível de comprometimento definido na campanha, na entrega ou na tarefa.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ Para campanhas, de acordo com o nível de compromisso, um custo pode ser planeja
 >
 >Quando uma campanha é criada, o status do progresso em **[!UICONTROL Budget]** deve ser definido para **[!UICONTROL Defined]** para que os custos sejam considerados na execução. Se o status for **[!UICONTROL Being edited]**, os custos não são consolidados.
 >   
->A opção **[!UICONTROL Commitment level]** representa uma projeção de custos no futuro antes de serem cobradas no orçamento. De acordo com o progresso de uma campanha, tarefa ou delivery, pode-se decidir atribuir um nível de compromisso mais alto ou mais baixo (1. Planejado, 2. Reservado, 3. Comprometido) usando a caixa de combinação.
+>A opção **[!UICONTROL Commitment level]** representa uma projeção de custos no futuro antes de serem cobradas no orçamento. De acordo com o progresso de uma campanha, tarefa ou entrega, pode-se decidir atribuir um nível de compromisso mais alto ou mais baixo (1. Planejado, 2. Reservado, 3. Comprometido) usando a caixa de combinação.
 
 Por exemplo, o custo planejado estimado de uma campanha da web é 45.000 Euros.
 
@@ -144,23 +144,23 @@ Essas informações são inseridas nos relatórios de orçamento.
 
 ## Adicionar linhas de despesa {#adding-expense-lines}
 
-As linhas de despesa são adicionadas automaticamente ao orçamento. Elas são criadas durante a análise de delivery e quando uma tarefa é concluída.
+As linhas de despesa são adicionadas automaticamente ao orçamento. Elas são criadas durante a análise de entrega e quando uma tarefa é concluída.
 
 ![](assets/s_ncs_user_budget_line_edit.png)
 
-Para cada campanha, delivery ou tarefa, os custos gerados são agrupados nas linhas de despesa do orçamento ao qual são descontadas. Essas linhas de despesas são criadas de acordo com as linhas de custo do provedor de serviços relacionadas e calculadas por meio das estruturas de custo associadas.
+Para cada campanha, entrega ou tarefa, os custos gerados são agrupados nas linhas de despesa do orçamento ao qual são descontadas. Essas linhas de despesas são criadas de acordo com as linhas de custo do provedor de serviços relacionadas e calculadas por meio das estruturas de custo associadas.
 
 Cada linha de despesa contém as seguintes informações:
 
-* A campanha e o delivery ou a tarefa à qual está relacionada
+* A campanha e a entrega ou a tarefa à qual está relacionada
 * A quantia calculada com base nas estruturas de custo ou no custo provisional estimado.
-* Custo real do delivery ou da tarefa
+* Custo real da entrega ou da tarefa
 * A linha correspondente da fatura (somente MRM).
 * Lista de custos calculados pela categoria de custo (se existir uma estrutura de custos).
 
-No exemplo acima, a linha de despesa editada contém os custos calculados para o delivery de **Novos cartões** para a campanha do **Loyalty Spring Pack.** Quando o delivery é editado, a guia **[!UICONTROL Direct Mail]** permite ver como a linha de despesa é calculada.
+No exemplo acima, a linha de despesa editada contém os custos calculados para a entrega de **Novos cartões** para a campanha do **Loyalty Spring Pack.** Quando a entrega é editado, a guia **[!UICONTROL Direct Mail]** permite ver como a linha de despesa é calculada.
 
-O cálculo de custo para esse delivery baseia-se nas categorias de custo selecionadas para o provedor de serviços relacionado:
+O cálculo de custo para essa entrega baseia-se nas categorias de custo selecionadas para o provedor de serviços relacionado:
 
 ![](assets/s_user_edit_del_supplier_costs.png)
 
@@ -170,11 +170,11 @@ De acordo com as categorias de custo selecionadas, as estruturas de custo corres
 
 >[!NOTE]
 >
->As categorias e estruturas de custo são apresentadas em [Criar um provedor de serviços e suas categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+>As categorias e estruturas de custo são apresentadas em [Criar um provedor de serviços e suas categorias de custo](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 ## Compromisso de custo, cálculo e cobrança {#cost-commitment--calculation-and-charging}
 
-Os custos podem ser confirmados para remessas e tarefas. De acordo com o progresso do processo ao qual está relacionada, o status de um custo é atualizado.
+Os custos podem ser confirmados para entregas e tarefas. De acordo com o progresso do processo ao qual está relacionada, o status de um custo é atualizado.
 
 ### Processo de cálculo de custo {#cost-calculation-process}
 
@@ -192,12 +192,12 @@ Os custos dividem-se em três categorias:
 
 1. Custo calculado
 
-   O custo calculado depende do elemento relacionado (campanha, delivery, tarefa etc.) e seu status (sendo editado, em andamento, concluído). Em qualquer caso, se o custo real for especificado, o custo calculado usará essa quantia.
+   O custo calculado depende do elemento relacionado (campanha, entrega, tarefa etc.) e seu status (sendo editado, em andamento, concluído). Em qualquer caso, se o custo real for especificado, o custo calculado usará essa quantia.
 
    Se o custo real não for fornecido, as seguintes regras se aplicam:
 
-   * Para uma campanha que está sendo editada, o custo calculado é o custo provisional estimado da campanha ou, se esse custo não for definido, o custo calculado será a soma de todos os custos provisional das remessas e tarefas da campanha. Se a campanha estiver concluída, o custo calculado da campanha será a soma de todos os custos calculados.
-   * Para um delivery que ainda não foi analisado, o custo calculado é o custo estimado provisional. Se a análise já tiver sido executada, o custo calculado será a soma de todos os custos calculados da estrutura de custos do provedor de serviços e o número de recipients.
+   * Para uma campanha que está sendo editada, o custo calculado é o custo provisional estimado da campanha ou, se esse custo não for definido, o custo calculado será a soma de todos os custos provisional das entregas e tarefas da campanha. Se a campanha estiver concluída, o custo calculado da campanha será a soma de todos os custos calculados.
+   * Para uma entrega que ainda não foi analisada, o custo calculado é o custo estimado provisional. Se a análise já tiver sido executada, o custo calculado será a soma de todos os custos calculados da estrutura de custos do provedor de serviços e o número de recipients.
    * Para uma tarefa em andamento, o custo calculado usa o custo provisional estimado. Se a tarefa for concluída, o custo calculado será a soma de todos os custos calculados nas estruturas de custo do provedor de serviços e o número de dias concluídos.
    * Para o plano de marketing, como para o programa, o custo calculado é a soma dos custos calculados para as campanhas. Se esses custos não forem especificados, o custo calculado usará os custos provisional estimados.
 
@@ -211,7 +211,7 @@ Os custos dividem-se em três categorias:
 
 ### Cálculo e cobrança {#calculation-and-charging}
 
-Os custos são calculados por meio de estruturas de custo e cobrados nos orçamentos selecionados nas campanhas, remessas ou tarefas.
+Os custos são calculados por meio de estruturas de custo e cobrados nos orçamentos selecionados nas campanhas, entregas ou tarefas.
 
 Uma verificação pode ser realizada nos valores comprometidos com as campanhas por meio da aprovação do orçamento. Tarefas estilo marcos adicionais podem ser criadas em uma campanha para configurar outras aprovações. Consulte [Tipos de tarefa](../../mrm/using/creating-and-managing-tasks.md#types-of-task).
 
@@ -219,7 +219,7 @@ Uma verificação pode ser realizada nos valores comprometidos com as campanhas 
 
 Vamos criar uma campanha com:
 
-* Um delivery de mala direta usando as estruturas de custo de um provedor de serviços.
+* Uma entrega de mala direta usando as estruturas de custo de um provedor de serviços.
 * Uma tarefa com um custo fixo.
 * Uma tarefa com um custo diário.
 
@@ -233,13 +233,13 @@ Vamos criar uma campanha com:
 
 #### Etapa 2 - Configurar o provedor de serviços e definir as estruturas de custo {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. Crie um provedor de serviços e um modelo de serviço com a estrutura de custo do nó **[!UICONTROL Administration > Campaigns]**. Para obter mais informações, consulte [Criar um provedor de serviços e suas categorias de custo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+1. Crie um provedor de serviços e um modelo de serviço com a estrutura de custo do nó **[!UICONTROL Administration > Campaigns]**. Para obter mais informações, consulte [Criar um provedor de serviços e suas categorias de custo](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-   Para deliveries de correspondência direta, crie **[!UICONTROL Envelopes]** de categorias de custo (tipos 114x229 e 162x229), **[!UICONTROL Postage]** e **[!UICONTROL Print]** (tipos A3 e A4). E, em seguida, crie as seguintes estruturas de custo:
+   Para entregas de correspondência direta, crie **[!UICONTROL Envelopes]** de categorias de custo (tipos 114x229 e 162x229), **[!UICONTROL Postage]** e **[!UICONTROL Print]** (tipos A3 e A4). E, em seguida, crie as seguintes estruturas de custo:
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
-1. Adicione um custo fixo (nas categorias de custo) cujo cálculo é fixo e cuja quantidade está em branco (na estrutura de custo correspondente) e que será especificada individualmente para cada delivery.
+1. Adicione um custo fixo (nas categorias de custo) cujo cálculo é fixo e cuja quantidade está em branco (na estrutura de custo correspondente) e que será especificada individualmente para cada entrega.
 
    ![](assets/s_user_cost_mgmt_sample_5.png)
 
@@ -273,7 +273,7 @@ Vamos criar uma campanha com:
 
 1. Crie um workflow para a campanha e posicione as atividades de query para selecionar o alvo (aviso, os endereços postais dos recipients devem ser especificados).
 
-1. Crie um delivery de mala direta e selecione o provedor de serviços criado na Etapa 2: as categorias de custo são exibidas automaticamente.
+1. Crie uma entrega de mala direta e selecione o provedor de serviços criado na Etapa 2: as categorias de custo são exibidas automaticamente.
 
 1. Substitua o custo dos envelopes e adicione um custo fixo. Além disso, selecione as categorias, relacionadas a esses custos.
 
@@ -295,7 +295,7 @@ A linha de despesas com relação a entrega é adicionada na guia **[!UICONTROL 
 
 ![](assets/s_user_cost_mgmt_sample_11.png)
 
-O custo calculado para o delivery é atualizado com estas informações:
+O custo calculado para a entrega é atualizado com estas informações:
 
 ![](assets/s_user_cost_mgmt_sample_12.png)
 
@@ -335,13 +335,13 @@ Quando a campanha é configurada, é possível atualizar o status ao alterá-lo 
 
 #### Aprovação de orçamento {#budget-approval}
 
-Quando a aprovação é ativada, um link especial permite aprovar o orçamento do painel de campanha. Esse link é exibido quando o workflow de segmentação foi iniciado e um delivery de mala direta precisa ser aprovado.
+Quando a aprovação é ativada, um link especial permite aprovar o orçamento do painel de campanha. Esse link é exibido quando o workflow de segmentação foi iniciado e uma entrega de mala direta precisa ser aprovada.
 
 ![](assets/s_user_cost_mgmt_sample_19.png)
 
 É possível clicar no link para conceder ou rejeitar a aprovação, ou usar o link no email de notificação, se a notificação tiver sido ativada para esta campanha.
 
-Quando o orçamento tiver sido aprovado e o delivery for concluído, os custos serão automaticamente carregados por meio de um workflow técnico especial.
+Quando o orçamento tiver sido aprovado e a entrega for concluída, os custos serão automaticamente carregados por meio de um workflow técnico especial.
 
 ## Pedidos e faturas {#orders-and-invoices}
 

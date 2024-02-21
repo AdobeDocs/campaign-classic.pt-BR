@@ -6,7 +6,7 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: ht
 source-wordcount: '1206'
 ht-degree: 100%
@@ -40,13 +40,13 @@ O bloco **[!UICONTROL Browsing]** da guia **[!UICONTROL Campaigns]** oferece vá
 >
 >Para saber mais sobre a ergonomia geral do Adobe Campaign, as permissões e o gerenciamento de perfis, consulte [esta seção](../../platform/using/adobe-campaign-workspace.md).
 >
->Todas as funcionalidades relacionadas a canais e deliveries são detalhadas [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Todas as funcionalidades relacionadas a canais e entregas são detalhadas [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ### Calendário da campanha {#campaign-calendar}
 
 Cada campanha pertence a um programa que, por sua vez, pertence a um plano. Os planos, programas e campanhas são acessados por meio do menu **[!UICONTROL Campaign calendar]** na guia **Campanhas**.
 
-Para editar um plano, programa, campanha ou delivery, clique no nome no calendário e clique em **[!UICONTROL Open...]**. Eles são exibidos em uma nova guia, conforme mostrado abaixo:
+Para editar um plano, programa, campanha ou entrega, clique no nome no calendário e clique em **[!UICONTROL Open...]**. Eles são exibidos em uma nova guia, conforme mostrado abaixo:
 
 ![](assets/d_ncs_user_interface_hierar.png)
 
@@ -64,7 +64,7 @@ Os ícones vinculados a cada item permitem visualizar o status: concluído, em a
 
 ### Navegação em um programa de marketing {#browsing-in-a-marketing-program}
 
-O Campaign permite gerenciar um conjunto de programas feitos de várias campanhas de marketing. Cada campanha contém remessas e processos e recursos associados.
+O Campaign permite gerenciar um conjunto de programas feitos de várias campanhas de marketing. Cada campanha contém entregas e processos e recursos associados.
 
 #### Procurar um programa {#browsing-a-program}
 
@@ -101,9 +101,9 @@ As campanhas podem ser acessadas por meio do calendário da campanha, da guia **
 
 #### Painel {#dashboard}
 
-Cada campanha, tarefa, recurso e remessa é centralizado em uma única tela - o painel- que permite gerenciar ações de marketing em colaboração com outras pessoas.
+Cada campanha, tarefa, recurso e entrega é centralizada em uma única tela - o painel- que permite gerenciar ações de marketing em colaboração com outras pessoas.
 
-O painel de controle de uma campanha é usado como interface de controle. Ele acessa os estágios principais de criação e gerenciamento de campanha diretamente: remessas, arquivos de extração, notificações, orçamentos etc.
+O painel de controle de uma campanha é usado como interface de controle. Ele acessa os estágios principais de criação e gerenciamento de campanha diretamente: entregas, arquivos de extração, notificações, orçamentos etc.
 
 ![](assets/s_ncs_user_op_board_start_del.png)
 
@@ -142,7 +142,7 @@ O link **[!UICONTROL Reports]** permite acessar os relatórios da campanha.
 As campanhas são criadas por meio de templates de campanha. É possível configurar templates reutilizáveis para os quais algumas opções estão selecionadas e outras configurações já estão salvas. Para cada campanha, a seguinte funcionalidade é oferecida:
 
 * Referência de [documentos e recursos](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): é possível associar documentos a uma campanha (resumo, relatório, imagens etc.). Todos os formatos de documento são compatíveis.
-* Definir custos: para cada campanha, o Adobe Campaign permite definir [entradas de custo e estruturas de cálculo de custo](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) que podem ser usadas ao criar a campanha de marketing. Por exemplo: custos de impressão, uso de uma agência externa, aluguel de sala. 
+* Definir custos: para cada campanha, o Adobe Campaign permite definir [entradas de custo e estruturas de cálculo de custo](../../campaign/using/providers-stocks-and-budgets.md#defining-cost-categories) que podem ser usadas ao criar a campanha de marketing. Por exemplo: custos de impressão, uso de uma agência externa, aluguel de sala. 
 * Definir objetivos: é possível definir objetivos quantificáveis para uma campanha, por exemplo, número de inscritos, volume de negócios etc. Essas informações são usadas posteriormente nos relatórios de campanha.
 * Gerenciar [seed addresses](../../delivery/using/about-seed-addresses.md) e [grupos de controle](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 * Gerenciar aprovações: é possível selecionar os tratamentos a serem aprovados e, se necessário, selecionar os operadores de revisão ou grupos de operadores. [Saiba mais](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
@@ -153,7 +153,7 @@ As campanhas são criadas por meio de templates de campanha. É possível config
 
 ## Utilização da interface da web {#using-the-web-interface-}
 
-Você pode acessar as telas do console do Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e remessas, bem como relatórios e informações dos perfis em seu banco de dados. Este acesso não habilita a criação de registros. Dependendo dos direitos do operador, você pode visualizar e/ou agir nos dados do banco de dados. Por exemplo, você pode aprovar conteúdo de campanha e segmentação, reiniciar ou parar um delivery etc.
+Você pode acessar as telas do console do Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e remessas, bem como relatórios e informações dos perfis em seu banco de dados. Este acesso não habilita a criação de registros. Dependendo dos direitos do operador, você pode visualizar e/ou agir nos dados do banco de dados. Por exemplo, você pode aprovar conteúdo de campanha e segmentação, reiniciar ou parar uma entrega etc.
 
 1. Faça logon como de costume via https://`<your instance>:<port>/view/home`.
 1. Use os menus para acessar as exibições.
@@ -163,7 +163,7 @@ Você pode acessar as telas do console do Adobe Campaign por meio de um navegado
 Além de navegar entre campanhas e visualizá-las, é possível executar esses tipos de tarefas:
 
 * Monitorar atividade em uma instância
-* Participar de processos de validação como, por exemplo, aprovar ou rejeitar o conteúdo de um delivery
+* Participar de processos de validação como, por exemplo, aprovar ou rejeitar o conteúdo de uma entrega
 * Executar outras ações rápidas como, por exemplo, pausar um fluxo de trabalho
 * Acessar todos os recursos de relatório
 * Participar das discussões do fórum
@@ -172,11 +172,11 @@ Esta tabela resume as ações que você pode realizar nas campanhas a partir de 
 
 | Página  | Ação |
 | --- | --- |
-| Lista de campanhas, deliveries, ofertas, etc. | Excluir um item da lista |
+| Lista de campanhas, entregas, ofertas, etc. | Excluir um item da lista |
 | Campanha | Cancelar uma campanha |
-| Entrega | Aprovar o conteúdo e o target do delivery<br/>Enviar o conteúdo do delivery<br/>Confirmar um delivery<br/>Pausar e parar um delivery |
+| Entrega | Aprovar o conteúdo e o target da entrega<br/>Enviar o conteúdo da entrega<br/>Confirmar uma entrega<br/>Pausar e parar uma entrega |
 | Aplicativo web | Criar um aplicativo web<br/>Editar o conteúdo e as propriedades do aplicativo<br/>Salvar o conteúdo do aplicativo como um modelo<br/>Publicar o aplicativo |
-| Oferta | Aprovar o conteúdo e a elegibilidade da oferta<br/>Desativar uma oferta online |
+| Oferta | Aprovar o conteúdo e a elegibilidade da oferta<br/>Desabilitar uma oferta online |
 | Tarefa | Concluir uma tarefa<br/>Cancelar uma tarefa |
 | Recursos de marketing | Aprovar um recurso<br/>Bloquear e desbloquear um recurso |
 | Pacotes da campanha | Enviar um pacote para aprovação<br/>Aprovar ou rejeitar um pacote<br/>Cancelar um pacote |
@@ -189,8 +189,8 @@ Esta tabela resume as ações que você pode realizar nas campanhas a partir de 
 
 ### Aprovações
 
-Aprovações (de um público alvo ou conteúdo de delivery, por exemplo) podem ser realizadas via acesso web.
+Aprovações (de um público-alvo ou conteúdo de entrega, por exemplo) podem ser realizadas via acesso web.
 
 ![](assets/campaign_web_interface_validation.png)
 
-Você também pode usar o link contido nas mensagens de notificação. Para obter mais informações, consulte [Verificação e aprovação de deliveries](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+Você também pode usar o link contido nas mensagens de notificação. Para obter mais informações, consulte [Verificação e aprovação de entregas](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
