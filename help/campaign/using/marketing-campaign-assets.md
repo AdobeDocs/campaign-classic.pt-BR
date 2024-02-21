@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 100%
 

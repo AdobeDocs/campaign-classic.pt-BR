@@ -6,10 +6,10 @@ feature: Installation, Application Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 23%
+source-wordcount: '1271'
+ht-degree: 11%
 
 ---
 
@@ -66,17 +66,17 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
    <td> Todos</td> 
   </tr> 
   <tr> 
-   <td> Campanhas de marketing (Campaign)<br /> </td> 
+   <td> Campanhas de marketing (Campanha)<br /> </td> 
    <td> Define, otimiza, executa e analisa campanhas de comunicação e marketing. <a href="../../campaign/using/designing-marketing-campaigns.md">Saiba mais</a><br /> </td> 
    <td> Marketing</td>
   </tr> 
   <tr> 
-   <td> Recursos de marketing (MRM) <br /> </td> 
+   <td> Gestão dos Recursos de Marketing (MRM)<br /> </td> 
    <td> Controla ações de marketing em um modo colaborativo fornecendo gerenciamento e rastreamento das tarefas, orçamentos e recursos de marketing. <a href="../../mrm/using/about-marketing-resource-management.md">Saiba mais</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Dispositivo de oferta (interação)<br /> </td> 
+   <td> Mecanismo de oferta (interação)<br /> </td> 
    <td> Responde em tempo real durante uma interação com um determinado contato (um cliente ou target) fazendo uma ou várias ofertas adaptadas.  Opcional. <a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">Saiba mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
   </tr> 
@@ -102,12 +102,12 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
    <td> Todos</td> 
   </tr> 
   <tr> 
-   <td> Controle de mensagens transacionais (Centro de mensagens - Controle)<br /> </td> 
+   <td> Controle de mensagens transacionais (Centro de Mensagens - Controle)<br /> </td> 
    <td> Gerencia mensagens de acionamento geradas por eventos acionados de sistemas de informações. Opcional. <a href="../../message-center/using/about-transactional-messaging.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Execução de mensagens transacionais (Centro de Mensagens - Execução) <br /> </td> 
+   <td> Execução de mensagens transacionais (Centro de mensagens - Execução) <br /> </td> 
    <td> Garante maior disponibilidade e melhor gerenciamento de carga. Opcional. <a href="../../message-center/using/about-transactional-messaging.md">Saiba mais</a><br /> </td> 
    <td> Execução<br /> </td>
   </tr> 
@@ -158,7 +158,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Acesso a dados externos (Federated Data Access)<br /> </td> 
-   <td> Fornece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessá-los sem alterar a estrutura dos dados do Adobe Campaign.  Opcional. <a href="../../workflow/using/accessing-an-external-database--fda-.md">Saiba mais</a> <br /> </td> 
+   <td> Fornece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessá-los sem alterar a estrutura dos dados do Adobe Campaign.  Opcional. <a href="../../workflow/using/accessing-an-external-database-fda.md">Saiba mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
   </tr> 
   <tr> 
@@ -182,7 +182,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Marketing central/local (Marketing distribuído)<br /> </td> 
+   <td> Marketing central/local (marketing distribuído)<br /> </td> 
    <td> Implementa campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Opcional. <a href="../../distributed/using/about-distributed-marketing.md">Saiba mais</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -192,7 +192,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Conectores de análise da Web<br /> </td> 
+   <td> Conectores do Web Analytics<br /> </td> 
    <td> Permite que o Adobe Campaign e o Adobe Analytics interajam por meio do pacote Web Analytics connectors. Não compatível com mensagens transacionais (pacote do centro de mensagens). <a href="../../platform/using/adobe-analytics-connector.md">Saiba mais</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -207,7 +207,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Integração com a Adobe Experience Cloud<br /> </td> 
+   <td> Integração com o Adobe Experience Cloud<br /> </td> 
    <td> Permite importar e exportar públicos/segmentos de diferentes soluções da Adobe Experience Cloud para o Adobe Campaign. Opcional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Saiba mais</a> </td> 
    <td> Marketing</td> 
   </tr> 

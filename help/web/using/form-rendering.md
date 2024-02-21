@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 100%
@@ -156,7 +156,7 @@ Na janela de seleção de campo, você pode escolher entre os seguintes dados:
 
 * A subárvore **[!UICONTROL Variables]** contém as variáveis disponíveis para esse formulário. Para obter mais informações, consulte [Armazenamento de dados em uma variável local](web-forms-answers.md#storing-data-in-a-local-variable).
 
-Para obter mais informações, consulte o caso de uso disponível aqui: [Exibição de opções diferentes de acordo com os valores selecionados](use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
+Para obter mais informações, consulte o caso de uso disponível aqui: [Exibição de opções diferentes de acordo com os valores selecionados](use-cases-web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
 Você também pode condicionar a exibição de páginas de formulário usando o objeto **[!UICONTROL Test]**. Para obter mais informações, consulte esta [página](defining-web-forms-page-sequencing.md#conditional-page-display).
 

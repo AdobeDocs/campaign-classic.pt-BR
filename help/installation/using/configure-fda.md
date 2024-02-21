@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 42%
+ht-degree: 38%
 
 ---
 
@@ -34,10 +34,10 @@ Para definir o acesso a um banco de dados externo com FDA, as etapas de configur
 
 1. Instale os drivers e configure a conta externa que corresponde ao banco de dados no servidor do Adobe Campaign. Consulte as páginas específicas do banco de dados [listado abaixo](#fda-specific-configuration)
 1. Teste a conta externa ou crie uma conexão temporária entre o Adobe Campaign e o banco de dados externo. [Saiba mais](../../installation/using/connecting-to-database.md)
-1. Criar o schema do banco de dados externo no Adobe Campaign. Isso permite identificar a estrutura de dados do banco de dados externo. [Saiba mais](../../installation/using/creating-data-schema.md)
+1. Crie o schema do banco de dados externo no Adobe Campaign. Isso permite identificar a estrutura de dados do banco de dados externo. [Saiba mais](../../installation/using/creating-data-schema.md)
 1. Se necessário, crie um novo target mapping do schema criado anteriormente. Isso é necessário se os recipients dos seus deliveries vierem do banco de dados externo. Essa implementação vem com limitações relacionadas à personalização da mensagem. [Saiba mais](../../installation/using/defining-data-mapping.md)
 
-Após a criação do schema de dados, é possível processar os dados nos workflows do Adobe Campaign. Para obter mais informações, consulte [esta seção](../../workflow/using/accessing-an-external-database--fda-.md).
+Após a criação do schema de dados, é possível processar os dados nos workflows do Adobe Campaign. Para obter mais informações, consulte [esta seção](../../workflow/using/accessing-an-external-database-fda.md).
 
 ## Configuração específica do banco de dados {#fda-specific-configuration}
 

@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
 

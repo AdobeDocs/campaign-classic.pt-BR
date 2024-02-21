@@ -6,9 +6,9 @@ feature: Configuration
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '336'
 ht-degree: 2%
 
 ---
@@ -126,7 +126,7 @@ Quando as páginas da Web são geradas dinamicamente, é possível adicionar a t
 
 Se você quiser controlar as informações enviadas ao servidor de redirecionamento, a maneira mais confiável é executar a consulta HTTP de forma síncrona usando uma linguagem de geração de página.
 
-O URL que você construir deverá obedecer às regras de sintaxe definidas em [Tag de rastreamento Web: definição](../../configuration/using/web-tracking-tag--definition.md).
+O URL que você construir deverá obedecer às regras de sintaxe definidas em [Tag de rastreamento Web: definição](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

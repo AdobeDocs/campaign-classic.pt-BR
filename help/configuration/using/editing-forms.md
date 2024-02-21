@@ -7,7 +7,7 @@ role: Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 3%
@@ -54,7 +54,7 @@ Para visualizar um formulário, clique no link **[!UICONTROL Preview]** guia:
 
 * Gerenciamento de conteúdo
 
-  Use este tipo de formulário para gerenciamento de conteúdo. Veja isto [caso de uso](../../delivery/using/use-case--creating-content-management.md).
+  Use este tipo de formulário para gerenciamento de conteúdo. Veja isto [caso de uso](../../delivery/using/use-case-creating-content-management.md).
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 

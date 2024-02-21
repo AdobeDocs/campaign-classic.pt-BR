@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 100%
 

@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 41%
+ht-degree: 38%
 
 ---
 
@@ -35,7 +35,7 @@ Em várias atividades de workflow do Adobe Campaign, é possível usar os dados 
 
 * **Criar subconjuntos** - A [Split](../../workflow/using/split.md) A atividade permite criar subconjuntos. Você pode usar dados externos para definir os critérios de filtragem a serem usados. Para obter mais informações, consulte [esta página](../../workflow/using/split.md).
 
-* **Carregar banco de dados externo** - Você pode usar os dados externos na [Carregamento de dados](../../workflow/using/data-loading--rdbms-.md) (RDBMS). Saiba mais [nesta página](../../workflow/using/data-loading--rdbms-.md).
+* **Carregar banco de dados externo** - Você pode usar os dados externos na [Carregamento de dados](../../workflow/using/data-loading-rdbms.md) (RDBMS). Saiba mais [nesta página](../../workflow/using/data-loading-rdbms.md).
 
 * **Adição de informações e links** - A [Enriquecimento](../../workflow/using/enrichment.md) A atividade permite adicionar dados à tabela de trabalho do workflow e links para uma tabela externa. Nesse contexto, ele pode usar dados de um banco de dados externo. Saiba mais [nesta página](../../workflow/using/enrichment.md).
 
@@ -49,6 +49,6 @@ Evite o máximo possível as operações que precisam usar o banco de dados tant
 
 * Coletar os dados do banco de dados externo do Adobe Campaign e executar as operações no local.
 
-Se você quiser realizar a personalização de deliveries usando dados do banco de dados externo, colete os dados para usar em um workflow para torná-lo disponível em uma tabela temporária. Em seguida, use os dados da tabela temporária para personalizar seu delivery.
+Se você quiser realizar a personalização de entregas usando dados do banco de dados externo, colete os dados para usar em um workflow para torná-lo disponível em uma tabela temporária. Em seguida, use os dados da tabela temporária para personalizar sua entrega.
 
 A opção FDA está sujeita às limitações do sistema de banco de dados externo que você usa.

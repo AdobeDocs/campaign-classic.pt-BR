@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: e430978dd182eaea082122ef748118e5210b05d5
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 96%
@@ -149,7 +149,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 e SP2</p>
-<p><strong>Importante:</strong> o Microsoft SQL Server não é compatível como banco de dados principal quando o servidor do Campaign está em execução no Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=pt-BR#database-access-layers">Saiba mais</a>.</p>
+<p><strong>Importante:</strong> o Microsoft SQL Server não é compatível como banco de dados principal quando o servidor do Campaign está em execução no Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">Saiba mais</a>.</p>
 </td>
 </tr>
 </tbody>

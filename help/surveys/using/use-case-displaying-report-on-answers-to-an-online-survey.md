@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: "Caso de uso: exibir relatório sobre as respostas a uma pesquisa online"
-description: "Caso de uso: exibir relatório sobre as respostas a uma pesquisa online"
+title: "Caso de uso: exibição do relatório sobre as respostas de uma pesquisa on-line"
+description: "Caso de uso: exibição do relatório sobre as respostas de uma pesquisa on-line"
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
-feature: Reporting, Monitoring, Surveys
+feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
@@ -41,23 +41,23 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 1. Edite a atividade e selecione a pesquisa cujas respostas deseja analisar.
 1. Habilite a opção **[!UICONTROL Select all the answer data]** para coletar todas as informações.
 
-   ![](../../surveys/using/assets/reporting_usecase_1_01.png)
+   ![](assets/reporting_usecase_1_01.png)
 
 1. Selecione as colunas a serem extraídas (neste caso: selecione: todos os campos arquivados. Esses são os campos que contêm as respostas.
 
-   ![](../../surveys/using/assets/reporting_usecase_1_02.png)
+   ![](assets/reporting_usecase_1_02.png)
 
 1. Depois que a caixa de coleção de resposta estiver configurada, posicione uma atividade do tipo **[!UICONTROL List update]** para salvar os dados.
 
-   ![](../../surveys/using/assets/reporting_usecase_1_04.png)
+   ![](assets/reporting_usecase_1_04.png)
 
    Nesta atividade, especifique a lista que deve ser atualizada e desmarque a opção **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**: as respostas são adicionadas à tabela existente. Essa opção permitirá fazer referência à lista em um cubo. O schema vinculado à lista não será recriado em cada atualização, o que garante a integridade do cubo que usa essa lista.
 
-   ![](../../surveys/using/assets/reporting_usecase_1_03.png)
+   ![](assets/reporting_usecase_1_03.png)
 
 1. Inicie o workflow para confirmar sua configuração.
 
-   ![](../../surveys/using/assets/reporting_usecase_1_05.png)
+   ![](assets/reporting_usecase_1_05.png)
 
    A lista especificada é criada e inclui o schema das respostas da pesquisa.
 
@@ -71,11 +71,11 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
 Neste exemplo, o cubo se baseia nos dados da lista alimentados pelo workflow criado anteriormente.
 
-![](../../surveys/using/assets/reporting_usecase_2_01.png)
+![](assets/reporting_usecase_2_01.png)
 
 Defina as dimensões e as medidas a serem exibidas no relatório. Aqui, queremos exibir a data do contrato e o país do entrevistado.
 
-![](../../surveys/using/assets/reporting_usecase_2_02.png)
+![](assets/reporting_usecase_2_02.png)
 
 A guia **[!UICONTROL Preview]** permite controlar a renderização do relatório.
 
@@ -83,8 +83,8 @@ A guia **[!UICONTROL Preview]** permite controlar a renderização do relatório
 
 Em seguida, é possível criar um relatório com base nesse cubo e processar os dados e informações.
 
-![](../../surveys/using/assets/reporting_usecase_3_01.png)
+![](assets/reporting_usecase_3_01.png)
 
 Adapte as informações a serem exibidas com base nas suas necessidades.
 
-![](../../surveys/using/assets/reporting_usecase_3_02.png)
+![](assets/reporting_usecase_3_02.png)

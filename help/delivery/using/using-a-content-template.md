@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 100%
 
