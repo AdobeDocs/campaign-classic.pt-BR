@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '1519'
-ht-degree: 100%
+source-git-commit: f3dc9d56c693f334923d627a28a9e45b92b1c0c3
+workflow-type: tm+mt
+source-wordcount: '1558'
+ht-degree: 99%
 
 ---
 
@@ -48,13 +48,13 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
  <td>Marketing social com o Facebook</td>
  <td>O marketing social do Facebook agora está obsoleto. É possível usar a integração com o X (anteriormente conhecido como Twitter) para publicar em redes sociais ou colaborar com a Adobe para criar um canal personalizado.
  <p></p>
-  <p>Data de remoção do público alvo: fim de 2023</p>
+  <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
 <tr>
  <td>ACS Connector</td>
  <td>O conector ACS (oferta do Prime) agora está obsoleto. Você pode usar os recursos de exportação/importação do Campaign para extrair e inserir dados em ambos os produtos.<p></p>
-  <p>Data de remoção do público alvo: fim de 2023</p>
+  <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
  </tbody> 
@@ -119,7 +119,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
    <td>A partir da versão 19.1 do Campaign, as APIs do Campaign Classic estarão disponíveis em uma página dedicada. Se estiver usando o arquivo jsapi.chm legado, agora deverá consultar a <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR">nova versão online</a>.</td>
   </tr> 
   <tr> 
-   <td>Orquestração de campanha   - Marketing preditivo</td>
+   <td>Orquestração de campanha - Marketing preditivo</td>
    <td>A partir da versão 18.10 do Campaign, os recursos de marketing preditivo não estarão mais disponíveis.</td>
   </tr> 
   <tr> 
