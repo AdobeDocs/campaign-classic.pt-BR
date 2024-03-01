@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 915b550c28c8d7dd9c29ce5142a4a835a39019b4
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 96%
+source-wordcount: '764'
+ht-degree: 92%
 
 ---
 
@@ -41,9 +41,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (somente para ambientes híbridos)</p>
 <p>7.x</p>
-<p><strong>Importante:</strong> se estiver usando o RHEL, desabilite o SELinux ou peça aos seus arquitetos que criem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
 </td>
 </tr>
 <tr>
@@ -58,7 +56,6 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 <td>
 <p>8.x</p>
 <p>7.x</p>
-<p><strong>Importante:</strong> se estiver usando o RHEL, desabilite o SELinux ou peça aos seus arquitetos que criem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
 </td>
 </tr>
 <tr>
@@ -70,6 +67,10 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 </tr>
 </tbody>
 </table>
+
+>[!NOTE]
+>
+>Se você estiver usando o RHEL, deve desativar o SELinux ou fazer com que seus arquitetos gravem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.
 
 ## Servidores da Web{#WebServers}
 
