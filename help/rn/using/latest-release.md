@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
-workflow-type: ht
-source-wordcount: '2295'
+source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
+workflow-type: tm+mt
+source-wordcount: '2278'
 ht-degree: 100%
 
 ---
@@ -188,7 +188,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](deprecated-features
 
 ### Outras alterações  {#release-7-3-2-other}
 
-* Os logs da Web foram aprimorados: os avisos `logonEscalation` agora são exibidos somente para usuários com privilégios de administrador. (NEO-47167)
+<!--* Web logs have been improved: `logonEscalation` warnings are now only displayed for users with admin privileges. (NEO-47167)-->
 * Para evitar erros, o fluxo de trabalho **Coletar dados para o serviço do Heatmap** (collectDataHeatMapService) agora é interrompido por padrão. (NEO-33959)
 * Várias melhorias foram implementadas para otimizar o uso da CPU no painel de campanhas. (NEO-46417)
 * Para evitar falhas, o método JS loadLibraryDebug foi removido. (NEO-46968)
