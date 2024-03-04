@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Estrutura de esquema
+title: Entender a estrutura do esquema no Adobe Campaign
 description: Estrutura de esquema
 feature: Custom Resources
 role: Data Engineer, Developer
@@ -9,18 +9,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 12%
+source-wordcount: '1496'
+ht-degree: 11%
 
 ---
 
-# Estrutura de esquema{#schema-structure}
+# Entender a estrutura do esquema {#schema-structure}
 
-A estrutura básica de um `<srcschema>` é a seguinte:
+A estrutura básica de um schema é descrita abaixo.
 
-```
+## Esquemas de dados  {#data-schema}
+
+Para um `<srcschema>`, a estrutura é a seguinte:
+
+```sql
 <srcSchema>
     <enumeration>
         ...          //definition of enumerations
@@ -63,7 +67,7 @@ A estrutura básica de um `<srcschema>` é a seguinte:
 
 O documento XML de um schema de dados deve conter o **`<srcschema>`** elemento raiz com os atributos **name** e **namespace** para preencher o nome e o namespace do schema.
 
-```
+```sql
 <srcSchema name="schema_name" namespace="namespace">
 ...
 </srcSchema>
@@ -71,7 +75,7 @@ O documento XML de um schema de dados deve conter o **`<srcschema>`** elemento r
 
 Vamos usar o seguinte conteúdo XML para ilustrar a estrutura de um schema de dados:
 
-```
+```sql
 <recipient email="John.doe@aol.com" created="2009/03/12" gender="1"> 
   <location city="London"/>
 </recipient>
@@ -79,7 +83,7 @@ Vamos usar o seguinte conteúdo XML para ilustrar a estrutura de um schema de da
 
 Com seu schema de dados correspondente:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email"/>
@@ -102,11 +106,11 @@ No nosso exemplo, o elemento principal é representado pela seguinte linha:
 <element name="recipient">
 ```
 
-Os elementos **`<attribute>`** e **`<element>`** que seguem o elemento principal permitem definir os locais e os nomes dos itens de dados na estrutura XML.
+A variável **`<attribute>`** e **`<element>`** os elementos que seguem o elemento principal são usados para definir os locais e os nomes dos itens de dados na estrutura XML.
 
 No nosso esquema de amostra, são eles:
 
-```
+```sql
 <attribute name="email"/>
 <attribute name="created"/>
 <attribute name="gender"/>
@@ -115,13 +119,13 @@ No nosso esquema de amostra, são eles:
 </element>
 ```
 
-As seguintes regras devem ser seguidas:
+As seguintes regras se aplicam:
 
 * Each **`<element>`** e **`<attribute>`** deve ser identificado por nome através do **name** atributo.
 
   >[!IMPORTANT]
   >
-  >O nome do elemento deve ser conciso, de preferência em inglês e incluir apenas caracteres autorizados de acordo com as regras de nomenclatura XML.
+  >O nome do elemento deve ser conciso, de preferência em inglês e incluir apenas caracteres permitidos nas regras de nomenclatura XML.
 
 * Somente **`<element>`** os elementos podem conter **`<attribute>`** elementos e **`<element>`** elementos na estrutura XML.
 * Um **`<attribute>`** o elemento deve ter um nome exclusivo dentro de um **`<element>`**.
@@ -131,7 +135,7 @@ As seguintes regras devem ser seguidas:
 
 O tipo de dados é inserido por meio de **type** atributo no **`<attribute>`** e **`<element>`** elementos.
 
-Uma lista detalhada está disponível na descrição do [`<attribute>` element](../../configuration/using/schema/attribute.md) e a variável [`<element>` element](../../configuration/using/schema/element.md)).
+Uma lista detalhada está disponível na descrição do [`<attribute>` element](../../configuration/using/schema/attribute.md) e a variável [`<element>` element](../../configuration/using/schema/element.md).
 
 Quando este atributo não é preenchido, **string** é o tipo de dados padrão, a menos que o elemento contenha elementos secundários. Se isso acontecer, será usado apenas para estruturar os elementos hierarquicamente (**`<location>`** elemento em nosso exemplo).
 
@@ -152,11 +156,11 @@ Os seguintes tipos de dados são aceitos em esquemas:
 
   >[!NOTE]
   >
-  >Para conter um **uuid** em mecanismos diferentes do Microsoft SQL Server, a função &quot;newuuid()&quot; deve ser adicionada e concluída com seu valor padrão.
+  >Para conter um **uuid** no RDBMS que não seja o Microsoft SQL Server, `the newuuid()` deve ser adicionada e concluída com seu valor padrão.
 
 Aqui está nosso schema de exemplo com os tipos inseridos:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email" type="string" length="80"/>
@@ -179,91 +183,76 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
    <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
-   <td> <strong>MS SQL</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> String<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2 se unicode)<br /> </td> 
-   <td> VARCHAR (NVARCHAR se unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Booleano<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NÚMERO(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NÚMERO(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Curto<br /> </td> 
+   <td> Short<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NÚMERO(5)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplo<br /> </td> 
    <td> PRECISÃO DUPLA<br /> </td> 
-   <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Longo<br /> </td> 
    <td> INTEIRO<br /> </td> 
    <td> NÚMERO(10)<br /> </td> 
-   <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> NÚMERO(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Data<br /> </td> 
    <td> DATA<br /> </td> 
    <td> DATA<br /> </td> 
-   <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
    <td> Hora<br /> </td> 
    <td> HORA<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Data e hora<br /> </td> 
    <td> CARIMBO DE DATA E HORA<br /> </td> 
    <td> DATA<br /> </td> 
-   <td> MS SQL &lt; 2008: DATA E HORA<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Data e hora<br /> </td> 
    <td> CARIMBO DE DATA E HORA<br /> </td> 
    <td> DATA<br /> </td> 
-   <td> MS SQL &lt; 2008: DATA E HORA<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
    <td> Período<br /> </td> 
    <td> PRECISÃO DUPLA<br /> </td> 
-   <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Memorando<br /> </td> 
    <td> TEXTO<br /> </td> 
    <td> CLOB (NCLOB se Unicode)<br /> </td> 
-   <td> TEXT (NTEXT se Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> IMAGEM<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -282,17 +271,17 @@ A variável **`<elements>`** e **`<attributes>`** os elementos do schema de dado
 
   **Exemplo**:
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  O rótulo pode ser visto no formulário de entrada do console do cliente Adobe Campaign:
+  O rótulo é exibido no formulário de entrada do console do cliente Adobe Campaign:
 
   ![](assets/d_ncs_integration_schema_label.png)
 
 * A variável **desc** permite inserir uma descrição longa.
 
-  A descrição pode ser vista do formulário de entrada na barra de status da janela principal do console do cliente Adobe Campaign.
+  A descrição é exibida no formulário de entrada na barra de status da janela principal do console do cliente Adobe Campaign.
 
   >[!NOTE]
   >
@@ -300,13 +289,13 @@ A variável **`<elements>`** e **`<attributes>`** os elementos do schema de dado
 
   **Exemplo**:
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
   ```
 
 ### Valores padrão {#default-values}
 
-A variável **padrão** property permite definir uma expressão que retorna um valor padrão na criação de conteúdo.
+Use o **padrão** para definir uma expressão que retorna um valor padrão na criação de conteúdo.
 
 O valor deve ser uma expressão compatível com a linguagem XPath. Para obter mais informações, consulte [Referência com XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
@@ -319,9 +308,9 @@ O valor deve ser uma expressão compatível com a linguagem XPath. Para obter ma
 
   >[!NOTE]
   >
-  >No console do cliente Adobe Campaign, a variável **[!UICONTROL Administration>Counters]** nó é usado para gerenciar contadores.
+  >No console do cliente Adobe Campaign, navegue até o **[!UICONTROL Administration > Counters]** pasta do Explorer para gerenciar contadores.
 
-Para vincular um valor padrão a um campo, é possível usar o `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+Para vincular um valor padrão a um campo, é possível usar o `<default>`  ou  `<sqldefault>`   campo.
 
 `<default>` : permite preencher previamente o campo com um valor padrão ao criar entidades. O valor não será um valor SQL padrão.
 
@@ -329,13 +318,13 @@ Para vincular um valor padrão a um campo, é possível usar o `<default>  or  <
 
 ### Enumerações {#enumerations}
 
-#### Lista discriminada livre {#free-enumeration}
+#### Abrir lista discriminada {#free-enumeration}
 
-A variável **userEnum** property permite definir uma enumeração livre para memorizar e exibir os valores inseridos por meio desse campo. A sintaxe é a seguinte:
+A variável **userEnum** property permite definir uma lista discriminada aberta para armazenar e exibir os valores inseridos por meio desse campo.
 
-**userEnum=&quot;nome da enumeração&quot;**
+A sintaxe é a seguinte:
 
-O nome dado à enumeração pode ser escolhido livremente e compartilhado com outros campos.
+`userEnum="name of enumeration"`
 
 Esses valores são mostrados em uma lista suspensa no formulário de entrada:
 
@@ -343,7 +332,7 @@ Esses valores são mostrados em uma lista suspensa no formulário de entrada:
 
 >[!NOTE]
 >
->No console do cliente Adobe Campaign, a variável **[!UICONTROL Administration > Enumerations]** é usado para gerenciar enumerações.
+>No console do cliente Adobe Campaign, navegue até o **[!UICONTROL Administration > Enumerations]** pasta do Explorer para gerenciar enumerações.
 
 #### Definir enumeração {#set-enumeration}
 
@@ -357,7 +346,7 @@ As enumerações permitem que o usuário selecione um valor em uma lista suspens
 
 Exemplo de uma declaração de enumeração no schema de dados:
 
-```
+```sql
 <enumeration name="gender" basetype="byte" default="0">    
   <value name="unknown" label="Not specified" value="0"/>    
   <value name="male" label="male" value="1"/>   
@@ -369,33 +358,31 @@ Uma enumeração é declarada fora do elemento principal por meio de **`<enumera
 
 As propriedades de enumeração são as seguintes:
 
-* **baseType**: tipo de dados associado aos valores,
-* **rótulo**: descrição da lista discriminada,
-* **name**: nome da enumeração,
-* **padrão**: valor padrão da enumeração.
+* **baseType**: tipo de dados associado aos valores
+* **rótulo**: descrição da enumeração
+* **name**: nome da enumeração
+* **padrão**: valor padrão da enumeração
 
 Os valores da lista discriminada são declarados na variável **`<value>`** elemento com os seguintes atributos:
 
-* **name**: nome do valor armazenado internamente,
-* **rótulo**: rótulo exibido por meio da interface gráfica.
+* **name**: nome do valor armazenado internamente
+* **rótulo**: rótulo exibido na interface gráfica
 
 #### enumeração dbenum {#dbenum-enumeration}
 
-* A variável **dbeno** permite definir uma enumeração cujas propriedades são semelhantes às da variável **enum** propriedade.
+*O **dbeno** permite definir uma enumeração cujas propriedades são semelhantes às da variável **enum** propriedade.
 
-  No entanto, a **name** O atributo não armazena o valor internamente, ele armazena um código que permite estender as tabelas relacionadas sem modificar o schema.
+No entanto, a **name** O atributo não armazena o valor internamente, ele armazena um código que permite estender as tabelas relacionadas sem modificar o schema.
 
-  Os valores são definidos por meio da variável **[!UICONTROL Administration>Enumerations]** nó.
+Essa lista discriminada é usada para especificar a natureza das campanhas, por exemplo.
 
-  Essa lista discriminada é usada para especificar a natureza das campanhas, por exemplo.
-
-  ![](assets/d_ncs_configuration_schema_dbenum.png)
+![](assets/d_ncs_configuration_schema_dbenum.png)
 
 ### Exemplo {#example}
 
 Este é o nosso exemplo de schema com as propriedades preenchidas:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -422,7 +409,7 @@ A variável **desvinculado** O atributo com o valor &quot;true&quot; permite pre
 
 **Exemplo**: definição do **`<group>`** elemento de coleção no esquema.
 
-```
+```sql
 <element name="group" unbound="true" label="List of groups">
   <attribute name="label" type="string" label="Label"/>
 </element>
@@ -430,7 +417,7 @@ A variável **desvinculado** O atributo com o valor &quot;true&quot; permite pre
 
 Com projeção do conteúdo XML:
 
-```
+```sql
 <group label="Group1"/>
 <group label="Group2"/>
 ```
@@ -473,8 +460,8 @@ Você pode acessar a lista de funções disponíveis por meio de qualquer editor
 **Exemplo**:
 
 * **GetDate()**: retorna a data atual
-* **Year(@created)**: retorna o ano da data contida no atributo &quot;criado&quot;.
-* **GetEmailDomain(@email)**: retorna o domínio do endereço de email.
+* **Year(@created)**: retorna o ano da data contida no atributo &quot;created&quot;
+* **GetEmailDomain(@email)**: retorna o domínio do endereço de email
 
 ## Criação de uma string através do comando compute string {#building-a-string-via-the-compute-string}
 
@@ -484,7 +471,7 @@ A variável **String de cálculo** é definido por meio da variável **`<compute
 
 **Exemplo**: cadeia de caracteres de cálculo da tabela de recipients.
 
-```
+```sql
 <srcSchema name="recipient" namespace="nms">  
   <element name="recipient">
     <compute-string expr="@lastName + ' ' + @firstName +' (' + @email + ')' "/>

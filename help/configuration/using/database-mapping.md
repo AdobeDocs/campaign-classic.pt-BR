@@ -6,18 +6,18 @@ feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1984'
 ht-degree: 2%
 
 ---
 
 # Mapeamento de banco de dados{#database-mapping}
 
-O mapeamento SQL do nosso schema de exemplo fornece o seguinte documento XML:
+O mapeamento SQL do schema de amostra descrito [nesta página](schema-structure.md) gera o seguinte documento XML:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
   <enumeration basetype="byte" name="gender">    
     <value label="Not specified" name="unknown" value="0"/>    
@@ -38,27 +38,27 @@ O mapeamento SQL do nosso schema de exemplo fornece o seguinte documento XML:
 
 ## Descrição {#description}
 
-O elemento raiz do esquema não é mais **`<srcschema>`**, mas **`<schema>`**.
+O elemento raiz do esquema foi alterado para **`<srcschema>`** para **`<schema>`**.
 
-Isso nos leva a outro tipo de documento, que é gerado automaticamente a partir do schema de origem, chamado simplesmente de schema. Este esquema será usado pelo aplicativo do Adobe Campaign.
+Esse outro tipo de documento é gerado automaticamente a partir do schema de origem e chamado simplesmente de schema.
 
 Os nomes SQL são determinados automaticamente com base no nome e no tipo do elemento.
 
 As regras de nomenclatura SQL são as seguintes:
 
-* tabela: concatenação do namespace e do nome do schema
+* **tabela**: concatenação do namespace e do nome do schema
 
   No nosso exemplo, o nome da tabela é inserido por meio do elemento principal do schema na **sqltable** atributo:
 
-  ```
+  ```sql
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* field: nome do elemento precedido por um prefixo definido de acordo com o tipo (&#39;i&#39; para inteiro, &#39;d&#39; para duplo, &#39;s&#39; para string, &#39;ts&#39; para datas etc.)
+* **campo**: nome do elemento precedido por um prefixo definido de acordo com o tipo: &#39;i&#39; para inteiro, &#39;d&#39; para duplo, &#39;s&#39; para cadeia de caracteres, &#39;ts&#39; para datas, etc.
 
   O nome do campo é inserido por meio da variável **sqlname** atributo para cada tipo **`<attribute>`** e **`<element>`**:
 
-  ```
+  ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
   ```
 
@@ -68,7 +68,7 @@ As regras de nomenclatura SQL são as seguintes:
 
 O script SQL para criar a tabela gerada a partir do schema estendido é o seguinte:
 
-```
+```sql
 CREATE TABLE CusRecipient(
   iGender NUMERIC(3) NOT NULL Default 0,   
   sCity VARCHAR(50),   
@@ -78,12 +78,12 @@ CREATE TABLE CusRecipient(
 
 As restrições do campo SQL são as seguintes:
 
-* nenhum valor nulo em campos numéricos e de data,
-* os campos numéricos são inicializados como 0.
+* nenhum valor nulo em campos numéricos e de data
+* campos numéricos são inicializados como 0
 
 ## Campos XML {#xml-fields}
 
-Por padrão, qualquer tipo **`<attribute>`** e **`<element>`** O elemento é mapeado em um campo SQL da tabela de esquema de dados. No entanto, você pode fazer referência a esse campo em XML, em vez de SQL, o que significa que os dados são armazenados em um campo de memorando (&quot;mData&quot;) da tabela que contém os valores de todos os campos XML. O armazenamento desses dados é um documento XML que observa a estrutura do schema.
+Por padrão, qualquer  **`<attribute>`** e **`<element>`** O elemento do tipo é mapeado em um campo SQL da tabela de esquema de dados. No entanto, você pode fazer referência a esse campo em XML, em vez de SQL, o que significa que os dados são armazenados em um campo de memorando (&quot;mData&quot;) da tabela que contém os valores de todos os campos XML. O armazenamento desses dados é um documento XML que observa a estrutura do schema.
 
 Para preencher um campo em XML, é necessário adicionar o **xml** com o valor &quot;true&quot; ao elemento em questão.
 
@@ -91,21 +91,19 @@ Para preencher um campo em XML, é necessário adicionar o **xml** com o valor &
 
 * Campo de comentário multilinha:
 
-  ```
+  ```sql
   <element name="comment" xml="true" type="memo" label="Comment"/>
   ```
 
 * Descrição dos dados em formato HTML:
 
-  ```
+  ```sql
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
   O tipo &quot;html&quot; permite armazenar o conteúdo do HTML em uma tag CDATA e exibir uma verificação de edição de HTML especial na interface do cliente do Adobe Campaign.
 
-O uso de campos XML permite adicionar campos sem a necessidade de modificar a estrutura física do banco de dados. Outra vantagem é que você usa menos recursos (tamanho alocado para campos SQL, limite do número de campos por tabela etc.).
-
-A principal desvantagem é que é impossível indexar ou filtrar um campo XML.
+Use campos XML para adicionar novos campos sem modificar a estrutura física do banco de dados. Outra vantagem é que você usa menos recursos (tamanho alocado para campos SQL, limite do número de campos por tabela etc.). No entanto, observe que não é possível indexar ou filtrar um campo XML.
 
 ## Campos indexados {#indexed-fields}
 
@@ -113,7 +111,7 @@ Os índices permitem otimizar o desempenho das consultas SQL usadas na aplicaç�
 
 Um índice é declarado pelo elemento principal do schema de dados.
 
-```
+```sql
 <dbindex name="name_of_index" unique="true/false">
   <keyfield xpath="xpath_of_field1"/>
   <keyfield xpath="xpath_of_field2"/>
@@ -123,23 +121,21 @@ Um índice é declarado pelo elemento principal do schema de dados.
 
 Os índices obedecem às seguintes regras:
 
-* Um índice pode fazer referência a um ou mais campos na tabela.
-* Um índice pode ser exclusivo (para evitar duplicatas) em todos os campos se a variável **único** O atributo contém o valor &quot;true&quot;.
-* O nome SQL do índice é determinado a partir do nome SQL da tabela e do nome do índice.
+* Um índice pode fazer referência a um ou mais campos na tabela
+* Um índice pode ser exclusivo (para evitar duplicatas) em todos os campos se a variável **único** o atributo contém o valor &quot;true&quot;
+* O nome SQL do índice é determinado pelo nome SQL da tabela e pelo nome do índice
 
 >[!NOTE]
 >
->Como padrão, os índices são os primeiros elementos declarados do elemento principal do esquema.
-
->[!NOTE]
+>* Como padrão, os índices são os primeiros elementos declarados do elemento principal do esquema.
 >
->Os índices são criados automaticamente durante o mapeamento de tabela (padrão ou FDA).
+>* Os índices são criados automaticamente durante o mapeamento de tabela (padrão ou FDA).
 
 **Exemplo**:
 
 * Adicionar um índice ao endereço de email e à cidade:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <dbindex name="email">
@@ -157,7 +153,7 @@ Os índices obedecem às seguintes regras:
 
 * Adicionar um índice exclusivo ao campo de nome &quot;id&quot;:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <dbindex name="id" unique="true">
@@ -180,7 +176,7 @@ Uma tabela deve ter pelo menos uma chave para identificar um registro na tabela.
 
 Uma chave é declarada pelo elemento principal do schema de dados.
 
-```
+```sql
 <key name="name_of_key">
   <keyfield xpath="xpath_of_field1"/>
   <keyfield xpath="xpath_of_field2"/>
@@ -188,25 +184,23 @@ Uma chave é declarada pelo elemento principal do schema de dados.
 </key>
 ```
 
-As chaves obedecem às seguintes regras:
+As seguintes regras se aplicam às chaves:
 
-* Uma chave pode fazer referência a um ou mais campos na tabela.
-* Uma chave é conhecida como &quot;primária&quot; (ou &quot;prioridade&quot;) quando é a primeira no esquema a ser preenchida ou se contém a variável **interno** com o valor &quot;true&quot;.
-* Um índice exclusivo é declarado implicitamente para cada definição de chave. A criação de um índice na chave pode ser evitada adicionando o **noDbIndex** com o valor &quot;true&quot;.
-
->[!NOTE]
->
->Como padrão, as chaves são os elementos declarados do elemento principal do esquema após a definição dos índices.
+* Uma chave pode fazer referência a um ou mais campos na tabela
+* Uma chave é conhecida como &quot;primária&quot; (ou &quot;prioridade&quot;) quando é a primeira no esquema a ser preenchida ou se contém a variável **interno** atributo com o valor &quot;true&quot;
+* Um índice exclusivo é declarado implicitamente para cada definição de chave. A criação de um índice na chave pode ser evitada adicionando o **noDbIndex** atributo com o valor &quot;true&quot;
 
 >[!NOTE]
 >
->As chaves são criadas durante o mapeamento de tabela (padrão ou FDA), o Adobe Campaign encontra índices exclusivos.
+>* Como padrão, as chaves são os elementos declarados do elemento principal do esquema após a definição dos índices.
+>
+>* As chaves são criadas durante o mapeamento de tabela (padrão ou FDA), o Adobe Campaign encontra índices exclusivos.
 
 **Exemplo**:
 
 * Adicionar uma chave ao endereço de email e à cidade:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <key name="email">
@@ -224,7 +218,7 @@ As chaves obedecem às seguintes regras:
 
   O schema gerado:
 
-  ```
+  ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
     <element name="recipient" sqltable="CusRecipient">    
      <dbindex name="email" unique="true">      
@@ -247,7 +241,7 @@ As chaves obedecem às seguintes regras:
 
 * Adicionar uma chave primária ou interna no campo de nome &quot;id&quot;:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <key name="id" internal="true">
@@ -266,7 +260,7 @@ As chaves obedecem às seguintes regras:
 
   O schema gerado:
 
-  ```
+  ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
     <element name="recipient" sqltable="CusRecipient">    
       <key name="email">      
@@ -311,7 +305,7 @@ Para declarar uma chave exclusiva, preencha o **autopk** (com o valor &quot;true
 
 Declaração de uma chave incremental no schema de origem:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient" autopk="true">
   ...
@@ -321,7 +315,7 @@ Declaração de uma chave incremental no schema de origem:
 
 O schema gerado:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" autopk="true" pkSequence="XtkNewId" sqltable="CusRecipient"> 
     <dbindex name="id" unique="true">
@@ -370,7 +364,7 @@ Para obter mais informações sobre tabelas FDA, consulte [Acesso a um banco de 
 
 Um link deve ser declarado no schema que contém a chave externa da tabela vinculada por meio do elemento principal:
 
-```
+```sql
 <element name="name_of_link" type="link" target="key_of_destination_schema">
   <join xpath-dst="xpath_of_field1_destination_table" xpath-src="xpath_of_field1_source_table"/>
   <join xpath-dst="xpath_of_field2_destination_table" xpath-src="xpath_of_field2_source_table"/>
@@ -412,7 +406,7 @@ Os links obedecem às seguintes regras:
 
 1-N relacionado à tabela de schema &quot;cus:company&quot;:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     ...
@@ -423,7 +417,7 @@ Os links obedecem às seguintes regras:
 
 O schema gerado:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" sqltable="CusRecipient"> 
     <dbindex name="companyId">      
@@ -444,7 +438,7 @@ A chave estrangeira é adicionada automaticamente em um elemento que usa as mesm
 
 Esquema estendido do target (&quot;cus:company&quot;):
 
-```
+```sql
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
   <element name="company" sqltable="CusCompany" autopk="true"> 
     <dbindex name="id" unique="true">     
@@ -475,7 +469,7 @@ Um link reverso para a tabela &quot;cus:recipient&quot; foi adicionado com os se
 
 Neste exemplo, declararemos um link para a tabela de schema &quot;nms:address&quot;. A associação é uma associação externa e é preenchida explicitamente com o endereço de email do recipient e o campo &quot;@address&quot; da tabela vinculada (&quot;nms:address&quot;).
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient"> 
     ...
@@ -490,7 +484,7 @@ Neste exemplo, declararemos um link para a tabela de schema &quot;nms:address&qu
 
 1-1 relação à tabela de schema &quot;cus:extension&quot;:
 
-```
+```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
@@ -498,7 +492,7 @@ Neste exemplo, declararemos um link para a tabela de schema &quot;nms:address&qu
 
 Link para uma pasta (schema &quot;xtk:folder&quot;):
 
-```
+```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
@@ -508,7 +502,7 @@ O valor padrão retorna o identificador do primeiro arquivo de tipo de parâmetr
 
 Neste exemplo, queremos criar uma chave em um link (&quot;company&quot; para &quot;cus:company&quot; schema) com a variável **xlink** e um campo da tabela (&quot;email&quot;):
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <key name="companyEmail"> 
@@ -524,7 +518,7 @@ Neste exemplo, queremos criar uma chave em um link (&quot;company&quot; para &qu
 
 O schema gerado:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" sqltable="CusRecipient"> 
     <dbindex name="companyId">      

@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: Sobre a referência do esquema no Adobe Campaign Classic
-description: Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign Classic
+title: Introdução a esquemas no Adobe Campaign
+description: Saiba como trabalhar com esquemas e estender o modelo de dados conceituais do banco de dados do Adobe Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 12%
+source-wordcount: '376'
+ht-degree: 2%
 
 ---
 
-# Sobre referência do esquema{#about-schema-reference}
+# Introdução a esquemas {#about-schema-reference}
+
+## O que é um esquema {#what-is-a-schema}
 
 Este capítulo descreve como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign.
 
-Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte o [modelo de dados Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/data-model/about-data-model.html?lang=pt-BR).
+Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte o [modelo de dados Campaign Classic](about-data-model.md).
 
-A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de **schema**.
-
-Um esquema é um documento XML associado a uma tabela de banco de dados. Ele define a estrutura de dados e descreve a definição SQL da tabela:
+No Adobe Campaign, a estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. A **schema** é um documento XML associado a uma tabela de banco de dados. Ele define a estrutura de dados e descreve a definição SQL da tabela:
 
 * O nome da tabela
 * Campos
