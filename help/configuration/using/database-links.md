@@ -5,10 +5,10 @@ description: Mapeamento de banco de dados
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 1%
+source-wordcount: '939'
+ht-degree: 2%
 
 ---
 
@@ -222,3 +222,13 @@ O schema gerado:
 ```
 
 A definição da chave de nome &quot;companyEmail&quot; foi estendida com a chave externa do link &quot;company&quot;. Essa chave gera um índice exclusivo em ambos os campos.
+
+## Saiba mais
+
+Navegue pelos links a seguir para saber mais:
+
+* [Introdução a esquemas](about-schema-reference.md)
+* [Estrutura de esquema](schema-structure.md)
+* [Mapeamento de banco de dados](database-mapping.md)
+* [Gerenciamento de chaves](database-keys.md)
+* [Modelo de dados do Campaign](about-data-model.md)

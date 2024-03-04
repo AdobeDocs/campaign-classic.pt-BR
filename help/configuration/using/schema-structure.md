@@ -9,9 +9,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1517'
 ht-degree: 11%
 
 ---
@@ -485,3 +485,14 @@ Resultado da cadeia de caracteres calculada para um destinatário: **Tom John (j
 >[!NOTE]
 >
 >Se o esquema não contiver uma Cálculo de cadeia de caracteres, uma Cálculo de cadeia de caracteres será preenchida por padrão com os valores da chave primária do esquema.
+
+
+## Saiba mais
+
+Navegue pelos links a seguir para saber mais:
+
+* [Introdução a esquemas](about-schema-reference.md)
+* [Mapeamento de banco de dados](database-mapping.md)
+* [Gerenciamento de links](database-links.md)
+* [Gerenciamento de chaves](database-keys.md)
+* [Modelo de dados do Campaign](about-data-model.md)

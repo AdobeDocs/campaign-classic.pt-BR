@@ -5,10 +5,10 @@ description: Entender o gerenciamento de chaves em esquemas de dados
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 5%
+source-wordcount: '625'
+ht-degree: 6%
 
 ---
 
@@ -180,3 +180,13 @@ Além da definição da chave e de seu índice, um campo numérico chamado &quot
 >
 >Um registro com uma chave primária definida como 0 é inserido automaticamente ao criar a tabela. Esse registro é usado para evitar associações externas, que não são eficazes em tabelas de volume. Por padrão, todas as chaves estrangeiras são inicializadas com o valor 0 para que um resultado sempre possa ser retornado na associação quando o item de dados não for preenchido.
 
+
+## Saiba mais
+
+Navegue pelos links a seguir para saber mais:
+
+* [Introdução a esquemas](about-schema-reference.md)
+* [Estrutura de esquema](schema-structure.md)
+* [Mapeamento de banco de dados](database-mapping.md)
+* [Gerenciamento de links](database-links.md)
+* [Modelo de dados do Campaign](about-data-model.md)
