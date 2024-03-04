@@ -5,7 +5,7 @@ description: Entender o gerenciamento de chaves em esquemas de dados
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
+source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 6%
@@ -28,7 +28,6 @@ Uma chave é declarada pelo elemento principal do schema de dados.
 ```
 
 Uma chave é conhecida como &quot;chave primária&quot; quando é a primeira no esquema a ser preenchida ou se contém a variável `internal` atributo definido como &quot;true&quot;.
-
 
 As seguintes regras se aplicam às chaves:
 
