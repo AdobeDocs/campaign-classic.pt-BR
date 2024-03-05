@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 8bb839bd0118010ac8e3e4bde88f6f3972786ed0
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 100%
+source-wordcount: '1287'
+ht-degree: 72%
 
 ---
 
@@ -81,7 +81,7 @@ Depois que o formulário tiver sido criado, configurado e publicado, você poder
 
 Há três estágios no ciclo de vida de um formulário:
 
-1. **Formulário sendo editado**
+1. **Em edição**
 
    Esta é a fase de design inicial. Quando um novo formulário é criado, ele está na fase de edição. Acesse o formulário, somente para fins de teste, e exija que o parâmetro **[!UICONTROL __uuid]** seja usado no URL. Essa URL pode ser acessada na subguia **[!UICONTROL Preview]**. Consulte [Parâmetros da URL do formulário](defining-web-forms-properties.md#form-url-parameters).
 
@@ -89,21 +89,33 @@ Há três estágios no ciclo de vida de um formulário:
    >
    >Desde que o formulário esteja sendo editado, sua URL de acesso é uma URL especial.
 
-1. **Formulário Online**
+1. **Publicação pendente**
 
-   Quando a fase de design é concluída, o formulário pode ser entregue. Primeiro, precisa ser publicado. Para obter mais informações, consulte [Publicar um formulário](#publishing-a-form).
+   Em alguns casos (como quando [importação de um formulário por meio de um pacote](#import-web-packages)), um formulário web pode ter a **[!UICONTROL Pending publication]** até ficar ativo.
+
+   >[!NOTE]
+   >
+   >Para aplicações web técnicas (disponíveis por meio do **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Web applications]** ), um formulário com a variável **[!UICONTROL Pending publication]** O status é automaticamente [publicado](#publishing-a-form) e obtém o **[!UICONTROL Online]** status.
+
+1. **Online**
+
+   Quando a fase de design é concluída, o formulário pode ser entregue.
+
+   Quando um formulário tem a função **[!UICONTROL Being edited]** ou **[!UICONTROL Pending publication]** status, deve ser [publicado](#publishing-a-form) para estar online e acessível através do URL do formulário web em um navegador.
+
+   Depois de publicado, o formulário estará acessível até expirar.
 
    O formulário será **[!UICONTROL Live]** até expirar.
 
    >[!CAUTION]
    >
-   >Para ser entregue, o URL da pesquisa não deve conter o parâmetro **[!UICONTROL __uuid]**.
+   >Para ser entregue, a URL do formulário não deve conter a **[!UICONTROL __uuid]** parâmetro.
 
-1. **Formulário indisponível**
+1. **Fechado**
 
-   Depois que o formulário for fechado, a fase de delivery será finalizada e o formulário ficará indisponível: ele não estará mais acessível aos usuários.
+   Depois que o formulário for fechado, a fase de entrega será finalizada e o formulário ficará indisponível: ele não estará mais acessível aos usuários.
 
-   A data de expiração pode ser definida na janela de propriedades do formulário. Para obter mais informações, consulte [Disponibilizar um formulário online](#making-a-form-available-online)
+   A data de expiração pode ser definida na janela de propriedades do formulário. Para obter mais informações, consulte [Disponibilização de um formulário online](#making-a-form-available-online).
 
 O status da publicação de um formulário é exibido na lista de formulários.
 
@@ -129,7 +141,7 @@ Para ser acessado por usuários, o formulário deve estar em produção e ter si
 
 ### Entrega de um formulário por email {#delivering-a-form-via-email}
 
-Ao enviar um convite por email, você pode usar a opção **[!UICONTROL Adobe Campaign Encryption]** para reconciliação de dados. Para fazer isso, vá para o assistente do delivery e adapte o link ao formulário adicionando o seguinte parâmetro:
+Ao entregar um convite por email, você pode usar a opção **[!UICONTROL Adobe Campaign Encryption]** para reconciliação de dados. Para fazer isso, vá para o assistente da entrega e adapte o link ao formulário adicionando o seguinte parâmetro:
 
 ```
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">
@@ -156,3 +168,35 @@ Selecione um recipient e clique no botão **[!UICONTROL Detail...]** para exibir
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
 Você pode processar os logs de resposta fornecidos em queries, por exemplo, para direcionar somente aqueles que não responderam ao enviar lembretes ou oferecer comunicações específicas apenas aos que responderam.
+
+### Importação de pacotes de formulários web {#import-web-packages}
+
+Ao exportar e importar um pacote incluindo um formulário web de uma instância para outra instância (por exemplo, de estágio para produção), o status do formulário web na nova instância pode variar de acordo com várias condições. Os diferentes casos estão listados abaixo.
+
+Saiba mais sobre os diferentes status de um formulário web no [nesta seção](#life-cycle-of-a-form).
+
+>[!NOTE]
+>
+>Quando um formulário web é exportado por meio de um pacote, o status do formulário fica visível no conteúdo do pacote resultante.
+
+* Se o status do formulário web foi **[!UICONTROL Pending publication]** ou **[!UICONTROL Online]** quando exportado da primeira instância:
+
+   * O formulário web obtém o **[!UICONTROL Pending publication]** quando importado na nova instância.
+
+   * Se o formulário web já existir na nova instância, ele será substituído pela nova versão do formulário e assumirá a função **[!UICONTROL Pending publication]** status, mesmo que a versão antiga do formulário tenha sido **[!UICONTROL Online]**.
+
+   * Se o formulário existia ou não, o formulário deve ser [publicado](#publishing-a-form) para se tornar **[!UICONTROL Online]** na nova instância e acessível através do URL do formulário web em um navegador.
+
+* Se o status do formulário web foi **[!UICONTROL Being edited]** quando exportado:
+
+   * Se o formulário web for novo na instância em que o pacote for importado, o formulário web obterá o **[!UICONTROL Being edited]** status.
+
+   * Se o formulário web já existir na nova instância, isso será uma modificação em um formulário existente. Se a versão antiga do formulário foi **[!UICONTROL Online]**, a versão antiga permanecerá online até que a nova versão do formulário seja [publicado](#publishing-a-form) novamente na nova instância.
+
+  >[!NOTE]
+  >
+  >Você pode verificar a versão mais recente do seu formulário web usando o **[!UICONTROL Preview]** guia.
+
+<!--For RN:
+* Now, when a web form has the **Pending publication** status, it must be published before it becomes **Online** and accessible through the web form URL in a web browser. [Read more](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+-->
