@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
+source-git-commit: 517f09e508207b14e6b870f926753b2d9a547262
 workflow-type: tm+mt
-source-wordcount: '2278'
-ht-degree: 100%
+source-wordcount: '2319'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,8 @@ _5 de dezembro de 2023_
 * Com o Campaign Classic v7.3.5, o processo de autenticação foi aprimorado e protegido. Os operadores técnicos agora devem usar o Adobe Identity Management System (IMS) para se conectarem ao Campaign. Saiba como migrar as contas técnicas já existentes nesta [nota técnica](../../technotes/using/ims-migration.md).
 
 * Além disso, como parte do esforço para aprimorar a segurança e o processo de autenticação, o Adobe Campaign recomenda migrar o modo de autenticação do usuário final da autenticação nativa de logon/senha para o Adobe Identity Management System (IMS). Saiba como migrar operadores [nesta nota técnica](../../technotes/using/migrate-users-to-ims.md).
+
+* Agora, quando um formulário web tiver a variável **Publicação pendente** não será ativada automaticamente. Para evitar problemas de segurança, ele deve ser publicado antes de se tornar **Online** e acessível por meio da URL do formulário web em um navegador da web. [Leia mais](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 
 ### Correções {#release-7-3-5-patches}
 
