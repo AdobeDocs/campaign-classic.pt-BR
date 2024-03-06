@@ -4,9 +4,9 @@ description: Saiba como migrar operadores técnicos do Campaign para a conta té
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: b2c37e2426d3b6ba5174d4a446320e0f50485a76
+source-git-commit: 17a43a6e2e3ee7a3a2b81545bf96d766e6e97a05
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1734'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 0%
 Como parte do esforço para reforçar a segurança e o processo de autenticação, a partir do Campaign Classic v7.3.5, o processo de autenticação para o Campaign Classic está sendo aprimorado. Os operadores técnicos devem agora utilizar o [Sistema Adobe Identity Management (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **O Adobe recomenda executar essa migração no Campaign v7.3.5 para poder migrar sem problemas para o Campaign v8.**
 
 Um operador técnico é um perfil de usuário do Campaign que foi explicitamente criado para integração com a API. Este artigo detalha as etapas necessárias para migrar um operador técnico para uma conta técnica por meio do console do Adobe Developer.
-
 
 ## Você será afetado?{#ims-impacts}
 
@@ -53,7 +52,7 @@ Essas versões do Campaign estão detalhadas na seção [Notas de versão](../..
 
 * Clientes do Campaign hospedados e do Managed Services
 
-  Para chamadas de API nas instâncias do Centro de mensagens, um perfil de produto deve ter sido criado durante a atualização para o Campaign v7.3.5 (ou outro [Versão compatível com migração IMS](#ims-versions-tech)) ou durante o provisionamento da instância. Este perfil de produto é nomeado como:
+  Para chamadas de API nas instâncias do Centro de mensagens, o perfil de produto (mencionado abaixo) deve ser criado durante a atualização para o Campaign v7.3.5 (ou outro [Versão compatível com migração IMS](#ims-versions-tech)) ou durante o provisionamento da instância. Observe que, se você não vir o perfil do produto, entre em contato com o Gerente de transição ou com o Suporte ao cliente para criar o perfil de produto antes de iniciar a migração IMS. Este perfil de produto é nomeado como:
 
   `campaign - <your campaign instance> - messagecenter`
 
