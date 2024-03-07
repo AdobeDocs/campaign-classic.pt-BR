@@ -10,9 +10,9 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '2632'
+source-wordcount: '2607'
 ht-degree: 1%
 
 ---
@@ -118,7 +118,7 @@ nlserver config -internalpassword
 
 * O rastreamento não funciona mais se a senha estiver vazia. Se esse for o caso, uma mensagem de erro avisará você e solicitará que você a reconfigure.
 * As senhas dos usuários não são mais armazenadas no **xtk:sessionInfo** esquema.
-* As permissões de administração agora são necessárias para usar o **xtk:builder:EvaluateJavaScript** e **xtk:builder:EvaluateJavaScriptTemplate** funções.
+* As permissões de administração agora são necessárias para usar o **`xtk:builder:EvaluateJavaScript`** e **`xtk:builder:EvaluateJavaScriptTemplate`** funções.
 
 Determinados esquemas prontos para uso foram modificados e agora são acessíveis por padrão somente com acesso de gravação para operadores com o **administrador** permissão:
 
@@ -461,7 +461,7 @@ Há três maneiras possíveis de resolver um conflito:
 
   >[!IMPORTANT]
   >
-  >Se você selecionar esse modo de resolução, corre o risco de perder patches na nova versão. Por conseguinte, recomenda-se vivamente que esta opção não seja utilizada ou reservada apenas a operadores especializados.
+  Se você selecionar esse modo de resolução, corre o risco de perder patches na nova versão. Por conseguinte, recomenda-se vivamente que esta opção não seja utilizada ou reservada apenas a operadores especializados.
 
 Se você optar por resolver o conflito manualmente, proceda da seguinte maneira:
 
@@ -508,13 +508,13 @@ Na v7, o conteúdo da oferta foi movido. Na v6.02, o conteúdo estava em cada sc
 
 >[!IMPORTANT]
 >
->Se alguns deliveries usando ofertas configuradas tiverem que ser enviados após a migração, você deverá excluir e recriar todos esses deliveries no v7. Se você não conseguir fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Esse modo não é recomendado porque você não se beneficiará de todos os novos recursos do Interaction v7. Esse é um modo de transição que permite concluir campanhas em andamento antes da migração real para o 6.1. Para obter mais informações sobre este modo, entre em contato conosco.
+Se alguns deliveries usando ofertas configuradas tiverem que ser enviados após a migração, você deverá excluir e recriar todos esses deliveries no v7. Se você não conseguir fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Esse modo não é recomendado porque você não se beneficiará de todos os novos recursos do Interaction v7. Esse é um modo de transição que permite concluir campanhas em andamento antes da migração real para o 6.1. Para obter mais informações sobre este modo, entre em contato conosco.
 
 Um exemplo de um script de movimento (**interactionTo610_full_XX.js**) está disponível no **Migração** na pasta Adobe Campaign v7. Esse arquivo mostra um exemplo de script para um cliente usando uma única representação de email por oferta (a variável **[!UICONTROL htmlSource]** e **[!UICONTROL textSource]** campos). O conteúdo que estava no **NmsEmailOfferView** A tabela foi movida para a tabela de ofertas.
 
 >[!NOTE]
 >
->Usar esse script não permite que você se beneficie das opções de &quot;gerenciamento de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, é necessário repensar as ofertas de catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
+Usar esse script não permite que você se beneficie das opções de &quot;gerenciamento de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, é necessário repensar as ofertas de catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -614,7 +614,7 @@ Este é o procedimento a ser seguido após mover o conteúdo da oferta se você 
 
    >[!NOTE]
    >
-   >Os nomes das categorias e ofertas online são modificados após serem ativadas. No canal de entrada, atualize todas as referências a ofertas e categorias.
+   Os nomes das categorias e ofertas online são modificados após serem ativadas. No canal de entrada, atualize todas as referências a ofertas e categorias.
 
 ## Relatórios {#reports}
 

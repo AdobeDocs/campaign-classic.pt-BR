@@ -9,10 +9,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 100%
+source-wordcount: '1013'
+ht-degree: 96%
 
 ---
 
@@ -68,7 +68,7 @@ Os critérios de aplicação disponíveis na guia **[!UICONTROL General]** permi
 
 Na guia **[!UICONTROL Offer presentation]**, você deve especificar as mesmas dimensões para a regra de apresentação como aquelas configuradas no ambiente.
 
-O **[!UICONTROL Targeting dimension]** coincide com a tabela de recipients (por padrão: nms:recipients) que receberão as apresentações de oferta. O **[!UICONTROL Storage dimension]** coincide com a tabela que contém o histórico de apresentações vinculado ao targeting dimension (por padrão:nms:propositionRcp).
+A variável **[!UICONTROL Targeting dimension]** coincide com a tabela de recipients (por padrão: `nms:recipients`) que receberá as apresentações de oferta. A variável **[!UICONTROL Storage dimension]** coincide com a tabela que contém o histórico de apresentações vinculado ao targeting dimension (por padrão: `nms:propositionRcp`).
 
 ![](assets/offer_typology_009.png)
 
@@ -83,7 +83,7 @@ Este é um período de deslizamento que começa na data de apresentação da ofe
 O período começa **n** dias antes da data de apresentação e termina **n** dias depois, onde **n** corresponde ao número inserido no campo **[!UICONTROL Period considered]**:
 
 * Para espaços de entrada, a data da apresentação é a data de apresentação da oferta.
-* Para espaços de saída, a data da proposta é a data de contato do delivery (por exemplo, a data de delivery inserida em um workflow para construção do target).
+* Para espaços de saída, a data da proposta é a data de contato da entrega (por exemplo, a data da entrega inserida em um workflow para construção do target).
 
 Use as setas para alterar o número de dias ou insira um período diretamente (&quot;2d 6h&quot;, por exemplo).
 
@@ -113,7 +113,7 @@ Esses critérios representam as aplicações mais frequentes das regras de apres
 
   **[!UICONTROL On the same channel only]**: permite excluir apresentações de oferta no canal especificado na guia **[!UICONTROL General]**.
 
-  Por exemplo, o canal especificado para a regra na guia **[!UICONTROL General]** é email. Se as ofertas que a regra se aplica até agora forem oferecidas apenas no canal da Web, o motor de interação pode apresentar as ofertas em um delivery de email. No entanto, uma vez que as ofertas tenham sido apresentadas por email, o motor de interação escolherá um canal diferente para apresentar as ofertas.
+  Por exemplo, o canal especificado para a regra na guia **[!UICONTROL General]** é email. Se as ofertas que a regra se aplica até agora forem oferecidas apenas no canal da Web, o motor de interação pode apresentar as ofertas em uma entrega de email. No entanto, uma vez que as ofertas tenham sido apresentadas por email, o motor de interação escolherá um canal diferente para apresentar as ofertas.
 
   >[!NOTE]
   >

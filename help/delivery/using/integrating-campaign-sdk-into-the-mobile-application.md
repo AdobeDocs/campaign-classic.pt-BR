@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Mobile SDK Integration, Push
 role: User, Developer
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '1002'
-ht-degree: 100%
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+workflow-type: tm+mt
+source-wordcount: '993'
+ht-degree: 97%
 
 ---
 
@@ -94,7 +94,7 @@ Para integrar o SDK do Campaign no aplicativo móvel, o administrador funcional 
 A função de registro permite:
 
 * enviar o ID de notificação ou o ID de envio (deviceToken para iOS e registrationID para Android) para o Adobe Campaign.
-* recuperar a chave de conciliação ou o userKey (email ou número de conta, por exemplo)
+* recuperar a chave de reconciliação ou o userKey (email ou número de conta, por exemplo)
 
 * **No Android**:
 
@@ -297,7 +297,7 @@ A função de registro permite:
 
   >[!NOTE]
   >
-  >A partir da versão 7.0, uma vez implementada a função do **aplicativo:didReceiveRemoteNotification:fetchCompletionHandler**, o sistema operacional passa a chamar apenas essa função. Logo, a função **application:didReceiveRemoteNotification** não é chamada.
+  >A partir da versão 7.0, uma vez que o **`application:didReceiveRemoteNotification:fetchCompletionHandler`** for implementada, o sistema operacional só chamará essa função. A variável **`application:didReceiveRemoteNotification`** portanto, a função não é chamada.
 
 +++
 

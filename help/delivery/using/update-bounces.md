@@ -8,10 +8,10 @@ feature: Deliverability
 hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 100%
+source-wordcount: '495'
+ht-degree: 88%
 
 ---
 
@@ -27,9 +27,9 @@ Problemas globais na Apple ou no Gmail, por exemplo, podem fazer com que algumas
 
 * “550 5.1.1 &#39;endereço de email&#39;: a pesquisa de usuário foi bem-sucedida, mas nenhum registro de usuário foi encontrado.”
 
-* “Recipient do &#39;endereço de email&#39; 550 rejeitado”
+* &quot;Destinatário de 550 &#39;endereço de email&#39; rejeitado&quot;
 
-Observe que se o deferimento for rejeitado com a mensagem “452 ação solicitada cancelada: tente novamente mais tarde”, eles serão automaticamente repetidos e nenhuma ação será necessária. Eles devem melhorar à medida que o ISP recupera a capacidade total.
+Observe que se as rejeições de adiamento com a mensagem &quot;452 ação solicitada anulada: tente novamente mais tarde&quot; estiverem sendo observadas, elas serão repetidas automaticamente e nenhuma ação será necessária. Eles devem melhorar à medida que o ISP recupera a capacidade total.
 
 >[!NOTE]
 >
@@ -54,23 +54,23 @@ Com base no período do incidente e no ISP, abaixo estão as diretrizes recomend
 
 * Para ambientes do Campaign com informações de regra de Email de entrada no campo **[!UICONTROL Error text]** da lista de quarentena:
 
-   * **O texto de erro (texto de quarentena)** contém &quot;Momen_Code10_InvalidRecipient&quot;
+   * **O texto de erro (texto de quarentena)** contém “Momen_Code10_InvalidRecipient”
    * **Domínio de email (@domain)** igual a domain1.com OU **Domínio de email (@domain)** igual a domain2.com OU **Domínio de email (@domain)** igual a domain3.com
-   * **Atualizar status (@lastModified)** em ou após MM/DD/AAAA HH:MM:SS AM
-   * **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:SS PM
+   * **Atualizar status (@lastModified)** em ou depois de `MM/DD/YYYY HH:MM:SS AM`
+   * **Atualizar status (@lastModified)** em ou antes de `MM/DD/YYYY HH:MM:SS PM`
 
 * Para ambientes do Campaign com informações de resposta de rejeição SMTP no campo **[!UICONTROL Error text]** da lista de quarentena:
 
-   * **Texto de erro (texto de quarentena)** contém “550-5.1.1” E **Texto de erro (texto de quarentena)** contém “support.ISP.com”
+   * **O texto de erro (texto de quarentena)** contém “550-5.1.1” E **o texto de erro (texto de quarentena)** contém “support.ISP.com”,
 
-     em que “support.ISP.com” pode ser: “support.apple.com” ou “support.google.com” por exemplo
+     onde “support.ISP.com” pode ser “support.apple.com” ou “support.google.com”, por exemplo
 
-   * **Atualizar status (@lastModified)** em ou após MM/DD/AAAA HH:MM:SS AM
-   * **Atualizar status (@lastModified)** em ou antes de MM/DD/AAAA HH:MM:SS PM
+   * **Atualizar status (@lastModified)** em ou depois de `MM/DD/YYYY HH:MM:SS AM`
+   * **Atualizar status (@lastModified)** em ou antes de  `MM/DD/YYYY HH:MM:SS PM`
 
 
 Depois de ter a lista de recipients afetados, você pode defini-los como um status **[!UICONTROL Valid]** para que sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]** ou simplesmente excluí-los da tabela.
 
 **Tópicos relacionados:**
-* [Compreender as falhas de entrega](understanding-delivery-failures.md)
+* [Entender as falhas de entrega](understanding-delivery-failures.md)
 * [Qualificação de email de rejeição](understanding-delivery-failures.md#bounce-mail-qualification)

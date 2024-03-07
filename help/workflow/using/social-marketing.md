@@ -4,8 +4,8 @@ title: Marketing social
 description: Saiba mais sobre workflows técnicos de marketing social
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!AVAILABILITY]
 >
->:warning: Esse recurso só está disponível no Campaign Classic v7. [Saiba mais](../../social/using/about-social-marketing.md)
+>`:warning:` Esse recurso só está disponível no Campaign Classic v7. [Saiba mais](../../social/using/about-social-marketing.md)
 
 Os workflows detalhados abaixo são instalados com o módulo **Marketing Social** por padrão.
 

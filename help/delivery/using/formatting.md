@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email Design
 role: User, Developer, Data Engineer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '1459'
-ht-degree: 100%
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+workflow-type: tm+mt
+source-wordcount: '1454'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## Modelos JavaScript {#javascript-templates}
 
-Um template JavaScript é um documento HTML ou texto que inclui código JavaScript. Ele é criado da mesma forma que um conteúdo de email em uma ação de delivery.
+Um template JavaScript é um documento HTML ou texto que inclui código JavaScript. Ele é criado da mesma forma que um conteúdo de email em uma ação de entrega.
 
 ### Identificação de um modelo JavaScript {#identification-of-a-javascript-template}
 
@@ -363,7 +363,7 @@ Este exemplo envolve as seguintes etapas:
 
      ![](assets/d_ncs_content_sample_3.png)
 
-1. Você pode então usar esse template de conteúdo em seus deliveries.
+1. Você pode então usar esse template de conteúdo em suas entregas.
 
    Para obter mais informações, consulte [Uso de um template de conteúdo](using-a-content-template.md).
 
@@ -453,7 +453,7 @@ Em nosso exemplo, uma página HTML é gerada no schema &quot;cus:book&quot; exib
 
 ### Exibição de HTML/XML {#displaying-html-xml}
 
-Para exibir um campo **html**, use a opção **disable-output-escaping=&quot;yes&quot;** da diretiva **`<xsl:value-of>`**. Isso permite evitar a substituição de caracteres por sua entidade XML (por exemplo &lt; com &lt;).
+Para exibir um campo **html** , use a opção **disable-output-escaping=&quot;yes&quot;** da diretiva **`<xsl:value-of>`**. Isso permite evitar a substituição de caracteres por sua entidade XML (por exemplo &lt; com &lt;).
 
 A diretiva **`<xsl:text>`** com a opção **disable-output-escaping=&quot;yes&quot;** permite inserir tags JavaScript para campos de personalização ou testes condicionais.
 
@@ -565,7 +565,7 @@ No formulário, o campo para selecionar a imagem será adicionado através da se
 
 ## Exibição de data {#date-display}
 
-No documento de entrada XML, as datas são armazenadas no formato XML interno: **YYYY/MM/DD HH:MM:SS** (exemplo: 2018/10/01 12:23:30).
+No documento de entrada XML, as datas são armazenadas no formato XML interno: **`YYYY/MM/DD HH:MM:SS`** (exemplo `2018/10/01 12:23:30`).
 
 O Adobe Campaign fornece funções de formatação de data para os modelos JavaScript e folhas de estilos XSL detalhadas abaixo.
 

@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '1791'
-ht-degree: 100%
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+workflow-type: tm+mt
+source-wordcount: '1781'
+ht-degree: 99%
 
 ---
 
@@ -98,7 +98,7 @@ _7 de julho de 2020_
 
 A compilação 9032@efd8a94 inclui a seguinte correção:
 
-Correção de um problema que impedia o funcionamento do rastreamento quando o recurso de assinatura era desativado. (NEO-26411)
+Correção de um problema que impedia o funcionamento do rastreamento quando o recurso de assinatura era desabilitado. (NEO-26411)
 
 >[!CAUTION]
 >
@@ -138,7 +138,7 @@ A build 9032@3a9dc9c inclui as seguintes correções:
 
 >[!CAUTION]
 >
->Se tiver problemas com notificações por push usando links de rastreamento ou entrega usando tags de âncora, recomendamos desativar o novo mecanismo de assinatura para links de rastreamento. O procedimento está detalhado [nesta página](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)
+>Se tiver problemas com notificações por push usando links de rastreamento ou entrega usando tags de âncora, recomendamos desabilitar o novo mecanismo de assinatura para links de rastreamento. O procedimento está detalhado [nesta página](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism)
 
 * Correção de um problema que impedia a exibição de imagens na entrega de linha. (NEO-23207)
 * Correção de um problema com a atividade **Transferência de Arquivo**, que impedia que a autenticação com a chave SFTP funcionasse no Debian 9. (NEO-23183)
@@ -253,7 +253,7 @@ Esta seção lista todos os sistemas e componentes compatíveis com builds 19.1 
 <td>RHEL</td>
 <td>
 <p>7.x (64 bits)</p>
-<p><strong>Importante:</strong> se você estiver usando o RHEL, deve desativar o SELinux ou fazer com que seus arquitetos gravem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
+<p><strong>Importante:</strong> se estiver usando o RHEL, desabilite o SELinux ou peça aos seus arquitetos que criem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.</p>
 </td>
 </tr>
 <tr>
@@ -328,7 +328,7 @@ Esta seção lista todos os sistemas e componentes compatíveis com builds 19.1 
 <td>
 <p>18c</p>
 <p>12c</p>
-<p>11g   R2</p>
+<p>11g R2</p>
 </td>
 </tr>
 <tr>
@@ -465,7 +465,7 @@ Esta seção lista todos os sistemas e componentes compatíveis com builds 19.1 
 <tr><td>Hadoop via HiveSQL</td>
 <td>
 <p>HortonWorks HDP 2.4.X, 2.5.x, 2.6.x</p>
-<p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6))</p>
+<p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</p>
 </td>
 </tr>
 </tbody>
@@ -473,7 +473,7 @@ Esta seção lista todos os sistemas e componentes compatíveis com builds 19.1 
 
 ### Console do cliente {#ClientConsoleoperatingsystems}
 
-:warning: os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
+`:warning:` os seguintes sistemas operacionais e navegadores são necessários para usar o Console do cliente do Campaign.
 
 #### Sistemas operacionais
 
