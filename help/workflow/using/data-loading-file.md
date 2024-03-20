@@ -5,7 +5,7 @@ description: Saiba mais sobre a atividade de workflow de carregamento de dados (
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 100%
@@ -13,8 +13,6 @@ ht-degree: 100%
 ---
 
 # Carregamento de dados (arquivo){#data-loading-file}
-
-
 
 ## Uso {#use}
 

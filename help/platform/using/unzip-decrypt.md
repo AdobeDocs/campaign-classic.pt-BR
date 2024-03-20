@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '703'
+ht-degree: 89%
 
 ---
 
@@ -44,7 +44,7 @@ Em seguida, você pode usar os comandos de pré-processamento desejados em seus 
 1. Adicione e configure uma atividade **[!UICONTROL File transfer]** no workflow.
 1. Adicione uma atividade **[!UICONTROL Data loading (file)]** e defina o formato do arquivo.
 1. Marque a opção **[!UICONTROL Pre-process the file]**.
-1. Especifique o comando do pré-processamento que deseja aplicar.
+1. Selecione o comando de pré-processamento que deseja aplicar.
 1. Adicione outras atividades para gerenciar dados provenientes do arquivo.
 1. Salve e execute seu workflow.
 
@@ -87,17 +87,15 @@ As etapas para executar esse caso de uso são as seguintes:
 
 1. Abra a atividade **[!UICONTROL Data loading (file)]** e configure-a de acordo com suas necessidades. Os conceitos globais sobre como configurar a atividade estão disponíveis [nesta seção](../../workflow/using/data-loading-file.md).
 
-   Adicione um estágio de pré-processamento à atividade para descriptografar os dados recebidos. Para isso, selecione a opção **[!UICONTROL Pre-process the file]** e, em seguida, copie e cole este comando de descriptografia no campo **[!UICONTROL Command]**:
-
-   `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
+   Adicione um estágio de pré-processamento à atividade para descriptografar os dados recebidos. Para fazer isso, selecione a variável **[!UICONTROL Pre-process the file]** e selecione **[!UICONTROL Decrypt]** do **[!UICONTROL Command]** lista suspensa:
 
    ![](assets/gpg_load.png)
 
-   >[!CAUTION]
+   >[!NOTE]
    >
-   >Neste exemplo, estamos usando a senha padrão do Painel de controle, que é &quot;passphrase&quot;.
+   >Se forem necessárias alterações nos comandos disponíveis, entre em contato com [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para ajustar as configurações de preProcessCommand.
    >
-   >Caso já tenha tido chaves GPG instaladas em sua instância por meio de uma solicitação do Atendimento ao cliente no passado, a senha pode ter sido alterada e ser diferente da padrão.
+   >Se estiver trabalhando com uma implantação híbrida, você poderá configurar esses comandos diretamente do arquivo de configuração do servidor (serverConf.xml). [Saiba como configurar comandos de pré-processamento no arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 1. Clique em **[!UICONTROL OK]** para confirmar a configuração da atividade.
 
