@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Fatigue Management, Typology Rules, Campaigns
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3343'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -157,7 +157,7 @@ Para restringir os envios realizados em um período de duas semanas, é possíve
 
 ou
 
-1. Enter **7d** no **[!UICONTROL Period considered]** E verifique o **[!UICONTROL Take the deliveries into account in the provisional calendar]** opção: são considerados no cálculo os deliveries realizados até 7 dias antes da data de delivery e os programados até 7 dias após a data de delivery nos quais a regra seja aplicada.
+1. Insira **7d** no campo **[!UICONTROL Period considered]** E marque a opção **[!UICONTROL Take the deliveries into account in the provisional calendar]**: entregas enviadas até 7 dias antes da data de entrega e programadas para até 7 dias após a data de entrega em que a regra aplicada será levada em conta no cálculo.
 
 A data de início do período depende de como o banco de dados está configurado.
 

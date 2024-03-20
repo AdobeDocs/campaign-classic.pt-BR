@@ -8,9 +8,9 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2990'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -165,8 +165,8 @@ Abaixo estão as diretrizes recomendadas para esta consulta:
 
    * **O texto de erro (texto de quarentena)** contém “Momen_Code10_InvalidRecipient”
    * **Domínio de email (@domain)** igual a domain1.com OU **Domínio de email (@domain)** igual a domain2.com OU **Domínio de email (@domain)** igual a domain3.com
-   * **Atualizar status (@lastModified)** em ou depois de `MM/DD/YYYY HH:MM:SS AM`
-   * **Atualizar status (@lastModified)** em ou antes de `MM/DD/YYYY HH:MM:SS PM`
+   * **Atualizar status (@lastModified)** em ou depois de `MM/DD/YYYY HH:MM:SS AM`
+   * **Atualizar status (@lastModified)** em ou antes de `MM/DD/YYYY HH:MM:SS PM`
 
 * Para instâncias do Campaign Classic v7 com informações de resposta de rejeição SMTP no campo **[!UICONTROL Error text]** da lista de quarentena:
 
@@ -174,8 +174,8 @@ Abaixo estão as diretrizes recomendadas para esta consulta:
 
   onde “support.ISP.com” pode ser “support.apple.com” ou “support.google.com”, por exemplo
 
-   * **Atualizar status (@lastModified)** em ou depois de `MM/DD/YYYY HH:MM:SS AM`
-   * **Atualizar status (@lastModified)** em ou antes de  `MM/DD/YYYY HH:MM:SS PM`
+   * **Atualizar status (@lastModified)** em ou depois de `MM/DD/YYYY HH:MM:SS AM`
+   * **Atualizar status (@lastModified)** em ou antes de `MM/DD/YYYY HH:MM:SS PM`
 
 Depois de ter a lista de recipients afetados, adicione uma atividade **[!UICONTROL Update data]** para definir seu status de endereço de email como **[!UICONTROL Valid]** para que eles sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]**. Também é possível excluí-los da tabela de quarentena.
 
@@ -242,7 +242,7 @@ Em sincronia, se o APNs retornar um status &quot;não registrado&quot; para uma 
    <td> Não<br /> </td> 
   </tr> 
   <tr> 
-   <td> Problema de certificado (senha, corrupção, etc.) e testar conexão com problema APNs<br /> </td> 
+   <td> Problema de certificado (senha, corrupção etc.) e conexão de teste com problema de APNs<br /> </td> 
    <td> Falha<br /> </td> 
    <td> Várias mensagens de erro de acordo com o erro<br /> </td> 
    <td> Suave<br /> </td> 

@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
 source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1013'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -66,9 +66,9 @@ Os critérios de aplicação disponíveis na guia **[!UICONTROL General]** permi
 
 ### Dimensões da oferta {#offer-dimensions}
 
-Na guia **[!UICONTROL Offer presentation]**, você deve especificar as mesmas dimensões para a regra de apresentação como aquelas configuradas no ambiente.
+Na guia **[!UICONTROL Offer presentation]**, é necessário especificar as mesmas dimensões para a regra de apresentação que estão configuradas no ambiente.
 
-A variável **[!UICONTROL Targeting dimension]** coincide com a tabela de recipients (por padrão: `nms:recipients`) que receberá as apresentações de oferta. A variável **[!UICONTROL Storage dimension]** coincide com a tabela que contém o histórico de apresentações vinculado ao targeting dimension (por padrão: `nms:propositionRcp`).
+O **[!UICONTROL Targeting dimension]** coincide com a tabela de destinatários (por padrão: `nms:recipients`) que receberão as propostas de oferta. O **[!UICONTROL Storage dimension]** coincide com a tabela que contém o histórico de propostas vinculado à dimensão de direcionamento (por padrão: `nms:propositionRcp`).
 
 ![](assets/offer_typology_009.png)
 

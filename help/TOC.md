@@ -7,9 +7,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 834d6c02536187b348842e6d524c4a83d02b355d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -745,7 +745,7 @@ ht-degree: 99%
       + [Estrutura de esquema](configuration/using/schema-structure.md)
       + [Mapeamento de banco de dados](configuration/using/database-mapping.md)
       + [Gerenciamento de chaves](configuration/using/database-keys.md)
-      + [Gerenciamento de links](configuration/using/database-links.md)
+      + [Gerenciamento de link](configuration/using/database-links.md)
       + Elementos e atributos {#elements-attributes}
          + [Introdução](configuration/using/schema-introduction.md)
          + [Atributo](configuration/using/schema/attribute.md)
@@ -824,7 +824,7 @@ ht-degree: 99%
    + [Procedimento de reversão](migration/using/about-rollback.md)
 + Notas técnicas {#technotes}
    + [Recomendações para dimensionamento de hardware](technotes/using/hardware-sizing.md)
-   + [Atividade de fluxo de trabalho de SMS de entrada para infraestrutura Mid-sourcing](technotes/using/inbound-SMS.md)
+   + [Atividade de fluxo de trabalho de SMS de entrada para infraestrutura mid-sourcing](technotes/using/inbound-SMS.md)
    + Atualização para IMS{#ims}
       + [Migração de usuários para o IMS](technotes/using/migrate-users-to-ims.md)
       + [Migração de operadores técnicos para o Developer Console](technotes/using/ims-migration.md)

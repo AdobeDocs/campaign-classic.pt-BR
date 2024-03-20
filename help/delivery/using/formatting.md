@@ -8,9 +8,9 @@ feature: Email Design
 role: User, Developer, Data Engineer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
 source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1454'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -565,7 +565,7 @@ No formulário, o campo para selecionar a imagem será adicionado através da se
 
 ## Exibição de data {#date-display}
 
-No documento de entrada XML, as datas são armazenadas no formato XML interno: **`YYYY/MM/DD HH:MM:SS`** (exemplo `2018/10/01 12:23:30`).
+No documento de entrada XML, as datas são armazenadas no formato XML interno: **`YYYY/MM/DD HH:MM:SS`** (exemplo `2018/10/01 12:23:30`).
 
 O Adobe Campaign fornece funções de formatação de data para os modelos JavaScript e folhas de estilos XSL detalhadas abaixo.
 

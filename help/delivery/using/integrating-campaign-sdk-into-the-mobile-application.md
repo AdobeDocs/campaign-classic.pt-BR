@@ -7,9 +7,9 @@ feature: Mobile SDK Integration, Push
 role: User, Developer
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
 source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -297,7 +297,7 @@ A função de registro permite:
 
   >[!NOTE]
   >
-  >A partir da versão 7.0, uma vez que o **`application:didReceiveRemoteNotification:fetchCompletionHandler`** for implementada, o sistema operacional só chamará essa função. A variável **`application:didReceiveRemoteNotification`** portanto, a função não é chamada.
+  >A partir da versão 7.0, uma vez implementada a função **`application:didReceiveRemoteNotification:fetchCompletionHandler`**, o sistema operacional passa a chamar apenas essa função. Portanto, a função **`application:didReceiveRemoteNotification`** não é chamada.
 
 +++
 

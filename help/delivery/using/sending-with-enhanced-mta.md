@@ -8,9 +8,9 @@ feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 source-git-commit: bc6f5d569d0c8a5eba4499a854af370258ce83a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1380'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -111,7 +111,7 @@ Para obter mais informações sobre qualificação de rejeição, consulte [esta
 
 ### Entrega
 
-Um delivery não pode ser interrompido depois de ter sido transferido para o MTA aprimorado - mesmo que seja exibido com o **[!UICONTROL Stopped]** Status no Campaign.
+Uma entrega não pode ser interrompida depois de transferida para o MTA aprimorado, mesmo que seja exibida com o status **[!UICONTROL Stopped]** no Campaign.
 
 ### Taxa de transferência de entrega
 

@@ -7,7 +7,7 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '268'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ Para criar um **aplicativo web** simples, é necessário:
 >
 >Uma amostra completa de implementação no contexto de um aplicativo web está disponível [nesta seção](creating-a-landing-page.md).
 
-Para criar uma entrega de email **, é necessário:**
+Para criar uma **entrega de email**, é necessário:
 
 1. Criar uma entrega a partir de um modelo DCE – [Saiba mais](use-case-creating-an-email-delivery.md)
 1. Selecione um conteúdo existente ou crie conteúdo por meio de um [modelo padrão](template-management.md)
