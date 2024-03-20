@@ -5,10 +5,10 @@ description: Saiba mais sobre a atividade de workflow de carregamento de dados (
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
+source-git-commit: 229844437770c460d958724e2dc15941e35939a6
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 92%
 
 ---
 
@@ -28,11 +28,17 @@ A seção superior da janela de configuração dessa atividade permite definir o
 
 ![](assets/s_advuser_wf_etl_file.png)
 
-Você pode definir um pré-processamento a ser executado durante a importação do arquivo, por exemplo, para não precisar descompactar o arquivo no servidor (e, portanto, economizar espaço para o arquivo descompactado), e incluir a descompactação no processamento de arquivo. Selecione a opção **[!UICONTROL Pre-process the file]** e escolha uma das três opções: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) ou **[!UICONTROL Decrypt]** (gpg).
+## Aplicar estágio de pré-processamento {#pre-processing}
+
+Você pode definir um pré-processamento a ser executado durante a importação do arquivo, por exemplo, para não precisar descompactar o arquivo no servidor (e, portanto, economizar espaço para o arquivo descompactado), e incluir a descompactação no processamento de arquivo. [Saiba como descompactar ou descriptografar um arquivo antes do processamento](../../platform/using/unzip-decrypt.md).
+
+Para fazer isso, selecione o **[!UICONTROL Pre-process the file]** e escolha uma das três opções: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) ou **[!UICONTROL Decrypt]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
 
-Para mais informações, consulte esta seção: [Descompactar ou descriptografar um arquivo antes do processamento](../../platform/using/unzip-decrypt.md).
+>[!CAUTION]
+>
+>Se você estiver trabalhando com uma implantação híbrida ou no local, os comandos de pré-processamento podem não funcionar imediatamente, pois a configuração padrão usa &quot;zcat&quot;, que não está disponível no Windows. Nesse caso, é necessário ajustar a variável **preProcessCommand** no arquivo de configuração do servidor (serverConf.xml) para atender às suas necessidades. [Saiba como configurar comandos de pré-processamento no arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 ## Definição do formato de arquivo {#defining-the-file-format}
 
