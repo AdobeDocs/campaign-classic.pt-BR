@@ -74,7 +74,7 @@ As seguintes informações estão disponíveis para cada endereço:
 >
 >Fim do Ano 1: (1&#42;0,33)/(1+0,5)=22%.
 >
-Fim do ano 2: ((1,22&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
+>Fim do ano 2: ((1,22&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
 
 ### Identificar endereços em quarentena nos relatórios da entrega {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -109,7 +109,7 @@ Se um usuário qualificar um email como spam ([loop de feedback](https://experie
 
 >[!NOTE]
 >
-A quarentena no Adobe Campaign diferencia maiúsculas de minúsculas. Certifique-se de importar endereços de email em letras minúsculas, para que não sejam redirecionados posteriormente.
+>A quarentena no Adobe Campaign diferencia maiúsculas de minúsculas. Certifique-se de importar endereços de email em letras minúsculas, para que não sejam redirecionados posteriormente.
 
 Na lista de endereços em quarentena (consulte [Identificação de endereços em quarentena para toda a plataforma](#identifying-quarantined-addresses-for-the-entire-platform)), o campo **[!UICONTROL Error reason]** indica por que o endereço selecionado foi colocado em quarentena.
 
@@ -145,7 +145,7 @@ O status muda então para **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
 >
-Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL Denylisted]** nunca serão removidos, mesmo se receberem um email.
+>Os recipients com um endereço em um status **[!UICONTROL Quarantine]** ou **[!UICONTROL Denylisted]** nunca serão removidos, mesmo se receberem um email.
 
 ### Atualizações manuais {#unquarantine-manual}
 
@@ -292,13 +292,13 @@ Durante a análise de entrega, todos os dispositivos excluídos do target são a
 
 >[!NOTE]
 >
-Para clientes que usam o conector Baidu, aqui estão os diferentes tipos de erros:
+>Para clientes que usam o conector Baidu, aqui estão os diferentes tipos de erros:
 >
-* Problema de conexão no início da entrega: falha do tipo **[!UICONTROL Undefined]**, razão da falha **[!UICONTROL Unreachable]**, a tentativa é executada.
-* Perda de conexão durante uma entrega: erro leve, razão da falha **[!UICONTROL Refused]**, a tentativa é executada.
-* Erro síncrono retornado pelo Baidu durante o envio: erro grave, motivo da falha **[!UICONTROL Refused]**, não haverá nova tentativa.
+>* Problema de conexão no início da entrega: falha do tipo **[!UICONTROL Undefined]**, razão da falha **[!UICONTROL Unreachable]**, a tentativa é executada.
+>* Perda de conexão durante uma entrega: erro leve, razão da falha **[!UICONTROL Refused]**, a tentativa é executada.
+>* Erro síncrono retornado pelo Baidu durante o envio: erro grave, motivo da falha **[!UICONTROL Refused]**, não haverá nova tentativa.
 >
-O Adobe Campaign contata o servidor Baidu a cada 10 minutos para recuperar o status da mensagem enviada e atualiza os broadlogs. Se uma mensagem for declarada como enviada, o status da mensagem nos broadlogs será definido como **[!UICONTROL Received]**. Se o Baidu declarar um erro, o status será definido como **[!UICONTROL Failed]**.
+>O Adobe Campaign contata o servidor Baidu a cada 10 minutos para recuperar o status da mensagem enviada e atualiza os broadlogs. Se uma mensagem for declarada como enviada, o status da mensagem nos broadlogs será definido como **[!UICONTROL Received]**. Se o Baidu declarar um erro, o status será definido como **[!UICONTROL Failed]**.
 
 **Para Android V2**
 
@@ -517,7 +517,7 @@ O mecanismo de quarentena para mensagens SMS é globalmente igual ao processo ge
 
 >[!NOTE]
 >
-A tabela **[!UICONTROL Delivery log qualification]** não se aplica ao conector **SMPP genérico estendido**.
+>A tabela **[!UICONTROL Delivery log qualification]** não se aplica ao conector **SMPP genérico estendido**.
 
 <table> 
  <tbody> 
@@ -576,9 +576,9 @@ Antes de um novo tipo de erro ser qualificado, o motivo da falha é sempre defin
 
 >[!NOTE]
 >
-Os tipos de falha e os motivos para falha são os mesmos dos emails. Consulte [Tipos e motivos de falha de entrega](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Os tipos de falha e os motivos para falha são os mesmos dos emails. Consulte [Tipos e motivos de falha de entrega](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
-Peça ao seu provedor uma lista de códigos e status de erros para definir os tipos apropriados de falhas e os motivos para falha na tabela de qualificação de log de entrega.
+>Peça ao seu provedor uma lista de códigos e status de erros para definir os tipos apropriados de falhas e os motivos para falha na tabela de qualificação de log de entrega.
 
 Exemplo de uma mensagem gerada:
 
