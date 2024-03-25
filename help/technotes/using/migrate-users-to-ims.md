@@ -2,9 +2,9 @@
 title: Migrar operadores do Campaign para o Adobe Identity Management System (IMS)
 description: Saiba como migrar operadores do Campaign para o Adobe Identity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 1879fe179381be654bad876de2423d25049db43c
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1278'
 ht-degree: 2%
 
 ---
@@ -13,9 +13,7 @@ ht-degree: 2%
 
 Como parte do esforço para reforçar a segurança e o processo de autenticação, a Adobe Campaign recomenda migrar o modo de autenticação do usuário final da autenticação nativa de logon/senha para o Adobe Identity Management System (IMS). Todos os operadores devem implementar [Sistema Adobe Identity Management (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectar ao Campaign.
 
-Observe que no Campaign v8, a conexão com usuário/senha (também conhecida como autenticação nativa) não será mais permitida. **O Adobe recomenda executar essa migração no Campaign v7.3.5 para poder migrar sem problemas para o Campaign v8.**
-
-
+Observe que no Campaign v8, a conexão com usuário/senha (também conhecida como autenticação nativa) não é permitida. **O Adobe recomenda executar essa migração no Campaign v7.3.5 para poder migrar sem problemas para o Campaign v8.**
 
 ## O que mudou?{#move-to-ims-changes}
 

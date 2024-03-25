@@ -2,16 +2,15 @@
 product: campaign
 title: Provisionamento do Adobe Analytics Connector
 description: Saiba mais sobre o provisionamento do conector do Adobe Analytics
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplicável somente a implantações locais e híbridas do v7"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: d690a5c4b9779ccd90b50bfbc74df18f0ac60d14
-workflow-type: ht
-source-wordcount: '761'
-ht-degree: 100%
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 95%
 
 ---
 
@@ -69,7 +68,7 @@ Para obter mais informações sobre perfis de produto, consulte a [documentaçã
 
 1. Para o recurso **[!UICONTROL Report Suites]**, adicione os **[!UICONTROL Report Suites]** que serão necessários para uso posterior.
 
-   Se você não tiver conjuntos de relatórios, poderá criá-los seguindo [estas etapas](../../platform/using/adobe-analytics-connector.md#report-suite-analytics).
+   Se você não tiver conjuntos de relatórios, poderá criá-los seguindo [estas etapas](../../platform/using/gs-aa.md).
 
    ![](assets/do-not-localize/triggers_4.png)
 
@@ -81,7 +80,7 @@ Para obter mais informações sobre perfis de produto, consulte a [documentaçã
 
 1. Para o recurso **[!UICONTROL Dimensions]**, adicione as **[!UICONTROL Dimensions]** necessárias para configurações futuras.
 
-   Certifique-se de que as Dimensões escolhidas correspondam às que serão configuradas na [Conta externa](adobe-analytics-connector.md#external-account-classic) e se alinhem ao número de eVars correspondente do [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
+   Verifique se os Dimension escolhidos correspondem aos que serão configurados na Conta externa e se alinham com o número de eVars correspondente do Adobe Analytics.
 
 1. Para o recurso **[!UICONTROL Report Suite Tools]**, adicione as seguintes permissões:
 

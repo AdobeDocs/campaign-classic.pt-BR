@@ -3,12 +3,12 @@ product: campaign
 title: Migrar para o Adobe Analytics Connector
 description: Campaign - Perguntas frequentes sobre o Analytics Connector
 feature: Technote, Analytics Integration
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplicável somente a implantações locais e híbridas do v7"
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 6%
+source-wordcount: '840'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ A partir da versão 21.1.3 do Campaign Classic v7, o Conector de dados do Adobe 
 
 Em 1º de agosto de 2021, o Adobe Campaign Classic foi removido da interface herdada do Data Connectors. No entanto, as integrações existentes do Campaign continuarão a coletar e transmitir dados para o Adobe Analytics até 17 de agosto de 2022. Após essa data, a integração deixará de coletar e transmitir dados para o Adobe Analytics.
 
-Você **deve implementar** a nova integração do Adobe Analytics Connector no Adobe Exchange, que substitui a integração herdada do Data Connectors. Para saber mais sobre o Adobe Analytics Connector, consulte [esta página](../../platform/using/adobe-analytics-connector.md).
+Você **deve implementar** a nova integração do Adobe Analytics Connector no Adobe Exchange, que substitui a integração herdada do Data Connectors. Para saber mais sobre o Adobe Analytics Connector, consulte [esta página](../../platform/using/gs-aa.md).
 
 Em caso de dúvidas sobre essas alterações, leia o [Perguntas frequentes](#faq-aa). Para obter mais informações, entre em contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
@@ -52,7 +52,7 @@ Saiba como verificar sua versão [nesta seção](../../platform/using/launching-
 
 Você precisa atualizar para o Campaign 21.1.3 (ou posterior) **antes de 17 de agosto de 2022**.
 
-Como cliente hospedado, o Adobe trabalhará com você para atualizar sua(s) instância(s) para a versão mais recente. Você poderá então usar [Conector do Adobe Analytics](../../platform/using/adobe-analytics-connector.md).
+Como cliente hospedado, o Adobe trabalhará com você para atualizar sua(s) instância(s) para a versão mais recente. Você poderá então usar [Conector do Adobe Analytics](../../platform/using/gs-aa.md).
 
 Como cliente local/híbrido, é necessário atualizar para uma das versões mais recentes para se beneficiar da nova integração.
 Depois que todas as instâncias forem atualizadas, você poderá [implementar a nova integração](../../platform/using/adobe-analytics-provisioning.md) ao Adobe Analytics Connector e garantir uma transição contínua.
@@ -84,7 +84,7 @@ A integração depende dos dados no Token de conta técnica para a operação di
 
 Se estivermos lendo para obter detalhes de um componente do Analytics (como métricas/dimensões/segmentos/conjuntos de relatórios), a API não retornará esses componentes no resultado (que pode parecer que algo foi excluído no Analytics ou não está presente). A API do Analytics rejeitará essas solicitações e ocorrerá um erro.
 
-A solução é atualizar a **Perfil do produto** no Contexto de usuário do Analytics do token de usuário técnico com os componentes recém-criados/ausentes adicionando esses componentes em [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Para obter mais orientações, entre em contato com [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+A solução é atualizar a **Perfil do produto** no Contexto de usuário do Analytics do token de usuário técnico com os componentes recém-criados/ausentes adicionando esses componentes em [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Para obter mais orientações, entre em contato com [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 
 ## Links úteis
 

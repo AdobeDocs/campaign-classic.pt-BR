@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '1841'
-ht-degree: 61%
+source-wordcount: '1794'
+ht-degree: 58%
 
 ---
 
@@ -48,7 +48,7 @@ A conta externa é criada e adicionada à lista de contas externas.
 
 ## Contas externas específicas de campanha
 
-### Mensagens de rejeição {#bounce-mails-external-account}
+### Emails rejeitados {#bounce-mails-external-account}
 
 A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Para obter mais informações sobre essa conta externa, consulte esta [página](../../workflow/using/inbound-emails.md).
 
@@ -120,7 +120,7 @@ Os seguintes canais podem ser configurados:
 * [Correspondência direta](../../delivery/using/about-direct-mail-channel.md)
 * [Agência](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [X (anteriormente conhecido como Twitter)](../../social/using/about-social-marketing.md)
-* [Canal iOS](../../delivery/using/configuring-the-mobile-application.md)
+* [Canal do iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Canal Android](../../delivery/using/configuring-the-mobile-application-android.md)
 
 ### Roteamento de email {#email-routing-external-account}
@@ -139,7 +139,7 @@ Como cliente local/híbrido, você pode criar novas contas externas de roteament
 
 ### Instância de execução  {#execution-instance-external-account}
 
-Se você tiver uma arquitetura dividida, precisará especificar as instâncias de execução vinculadas à instância de controle e conectá-las. Os templates de mensagem transacional são implantados nas instâncias de execução.
+Se você tiver uma arquitetura dividida, precisará especificar as instâncias de execução vinculadas à instância de controle e conectá-las. Os templates de mensagem transacional são implantados na instância de execução.
 
 ![](assets/ext_account_13.png)
 
@@ -272,7 +272,7 @@ Para se conectar ao console do Adobe Campaign por meio de uma Adobe ID, é neces
 
 * **[!UICONTROL IMS organization ID]**
 
-  ID da sua organização Para encontrar o ID da organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}.
+  ID da sua organização. Para encontrar o ID da organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}.
 
 * **[!UICONTROL Association mask]**
 
@@ -288,13 +288,13 @@ Para se conectar ao console do Adobe Campaign por meio de uma Adobe ID, é neces
 
 Para obter mais informações sobre essa configuração, consulte [esta página](../../integrations/using/configuring-ims.md).
 
-## Web Analytics {#web-analytics-external-account}
+## Análise da web {#web-analytics-external-account}
 
 A conta externa do **[!UICONTROL Web Analytics]** permite encaminhar os dados do Adobe Analytics para o Adobe Campaign no formato de segmentos. Por outro lado, ele envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign para o Adobe Analytics Connector.
 
 ![](assets/ext_account_10.png)
 
-Para essa conta externa, a fórmula de cálculo para as URLs rastreadas deve ser enriquecidas e a conexão entre as duas soluções deve ser aprovada. Para obter mais informações, consulte esta [página](../../platform/using/adobe-analytics-connector.md#external-account-classic).
+Para essa conta externa, a fórmula de cálculo para as URLs rastreadas deve ser enriquecidas e a conexão entre as duas soluções deve ser aprovada. Para obter mais informações, consulte esta [página](../../platform/using/gs-aa.md).
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
@@ -444,7 +444,7 @@ Como você está configurando essa nova conta externa, é necessário fornecer o
 
 * A caixa de seleção **[!UICONTROL Use server side encryption]** permite armazenar o arquivo no modo criptografado S3.
 
-Para saber onde encontrar a ID da chave de acesso e a chave de acesso secreta, consulte a [documentação](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) do Amazon Web Services.
+Para saber onde encontrar a ID da chave de acesso e a chave de acesso secreta, consulte Amazon Web Services [documentação](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
 ### Armazenamento Azure Blob {#azure-blob-external-account}
 

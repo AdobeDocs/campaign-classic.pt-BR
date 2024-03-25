@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 49271e291953483ee14709b26ec053217a336718
-workflow-type: ht
-source-wordcount: '143'
-ht-degree: 100%
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
+source-wordcount: '176'
+ht-degree: 81%
 
 ---
 
@@ -25,6 +25,11 @@ Os usuários do Campaign podem se conectar ao console do Adobe Campaign usando a
 * A conexão é mantida ao usar o Adobe Campaign com diferentes integrações.
 * Política de gerenciamento de senha mais segura do que login/senha nativos.
 * Uso de contas de Federated ID (provedor de ID externo).
+
+>[!IMPORTANT]
+>
+> Observe que no Campaign v8, a conexão com usuário/senha (também conhecida como autenticação nativa) não é permitida. **O Adobe recomenda executar essa migração no Campaign v7.3.5 para poder migrar sem problemas para o Campaign v8.**
+
 
 <!--
 >[!IMPORTANT]

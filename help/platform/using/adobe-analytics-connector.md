@@ -6,11 +6,13 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
-workflow-type: ht
-source-wordcount: '1510'
-ht-degree: 100%
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
+source-wordcount: '1489'
+ht-degree: 99%
 
 ---
 
@@ -121,7 +123,7 @@ Você precisa configurar suas **[!UICONTROL Conversion variables]** e **[!UICONT
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   Para saber como configurar **[!UICONTROL Success events]**, consulte esta [seção](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=pt-BR#admin-tools).
+   Para saber como configurar **[!UICONTROL Success events]**, consulte este [seção](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=pt-BR#admin-tools).
 
    >[!NOTE]
    >
@@ -273,7 +275,7 @@ Para que a Adobe Experience Cloud possa rastrear a atividade nos sites, depois q
 
 Para preparar sua campanha de re-marketing, basta criar templates de entrega para campanhas do tipo re-marketing. Em seguida, configure sua campanha de re-marketing e a vincule a um segmento. Cada segmento deve ter uma campanha de re-marketing diferente.
 
-As campanhas re-marketing são iniciadas automaticamente quando o Adobe Campaign conclui a recuperação dos segmentos que analisam o comportamento das pessoas direcionadas pela campanha inicial. No caso de abandono do carrinho ou visualização do produto sem uma compra, uma entrega é enviada para os recipients relacionados para que o site navegue para o fim da compra.
+As campanhas re-marketing são iniciadas automaticamente quando o Adobe Campaign conclui a recuperação dos segmentos que analisam o comportamento das pessoas direcionadas pela campanha inicial. No caso de abandono do carrinho ou visualização do produto sem uma compra, uma entrega é enviada para os destinatários relacionados para que o site navegue para o fim da compra.
 
 O Adobe Campaign fornece templates de entrega personalizados que você pode usar ou o banco de dados para preparar campanhas.
 

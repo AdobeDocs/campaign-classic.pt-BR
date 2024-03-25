@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Web Analytics
+title: Análise da web
 description: Saiba mais sobre o pacote do Web Analytics
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Analytics Integration
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 100%
+source-wordcount: '185'
+ht-degree: 92%
 
 ---
 
 
-# Web Analytics{#web-analytics}
+# Análise da web{#web-analytics}
 
 
 
-Os workflows detalhados abaixo são instalados com o módulo dos **conectores Web Analytics** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../platform/using/adobe-analytics-connector.md).
+Os workflows detalhados abaixo são instalados com o módulo dos **conectores Web Analytics** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../platform/using/gs-aa.md).
 
 <table> 
  <tbody> 
@@ -33,7 +33,7 @@ Os workflows detalhados abaixo são instalados com o módulo dos **conectores We
   <tr> 
    <td> <span class="uicontrol">Identificação de contatos convertidos</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Este workflow indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados coletados por esse fluxo de trabalho podem ser acessados no <span class="uicontrol">Re-marketing efficiency report</span> (consulte esta <a href="../../platform/using/adobe-analytics-connector.md#creating-a-re-marketing-campaign">página</a>). <br /> </td> 
+   <td> Este workflow indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados recuperados por esse workflow podem ser acessados no <span class="uicontrol">Relatório de eficiência de re-marketing</span>. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Limpeza de eventos</span> <br /> </td> 

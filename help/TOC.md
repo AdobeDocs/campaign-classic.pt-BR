@@ -6,10 +6,10 @@ title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 834d6c02536187b348842e6d524c4a83d02b355d
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
+source-wordcount: '2558'
+ht-degree: 99%
 
 ---
 
@@ -107,8 +107,9 @@ ht-degree: 100%
          + [Conecte-se com o Salesforce.com](platform/using/crm-sfdc.md)
          + [Sincronizar dados com o CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
-         + [Provisionamento do Adobe Analytics Connector](platform/using/adobe-analytics-provisioning.md)
+         + [Introdução ao Adobe Analytics Connector](platform/using/gs-aa.md)
          + [Integração do Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+         + [Provisionamento do Adobe Analytics Connector](platform/using/adobe-analytics-provisioning.md)
          + [Como migrar para o Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Conector de dados do Adobe Analytics](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Opções de ajuda e suporte](support.md)
@@ -183,7 +184,7 @@ ht-degree: 100%
       + [Sobre seed addresses](delivery/using/about-seed-addresses.md)
       + [Criar seed addresses](delivery/using/creating-seed-addresses.md)
       + [Adicionar seed addresses](delivery/using/adding-seed-addresses.md)
-      + [Usar uma tabela externa de recipient](delivery/using/using-an-external-recipient-table.md)
+      + [Usar uma tabela externa de destinatário](delivery/using/using-an-external-recipient-table.md)
       + [Caso de uso: selecionar seed addresses de acordo com os critérios](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
       + [Caso de uso: configurar a substituição de campo](delivery/using/use-case-configuring-the-field-substitution.md)
    + Teste A/B {#a-b-testing}
@@ -295,7 +296,7 @@ ht-degree: 100%
       + [Relatórios de entrega](reporting/using/delivery-reports.md)
       + [Relatórios cumulativos](reporting/using/cumulative-reports.md)
       + [Cálculo do indicador](reporting/using/indicator-calculation.md)
-      + [Pessoa/pessoas e recipients](reporting/using/person-people-recipients.md)
+      + [Pessoa/pessoas e destinatários](reporting/using/person-people-recipients.md)
    + Analisar populações {#analyzing-populations}
       + [Sobre análise descritiva](reporting/using/about-descriptive-analysis.md)
       + [Usar o assistente de análise descritiva](reporting/using/using-the-descriptive-analysis-wizard.md)
@@ -488,14 +489,14 @@ ht-degree: 100%
       + Criar consultas {#designing-queries}
          + [Atualização da lista trimestral usando uma consulta incremental](workflow/using/quarterly-list-update.md)
       + Consulta e filtro {#designing-queries}
-         + [Consultar a tabela de recipients](workflow/using/querying-recipient-table.md)
+         + [Consultar a tabela de destinatários](workflow/using/querying-recipient-table.md)
          + [Consultar informações da entrega](workflow/using/querying-delivery-information.md)
          + [Executar computação de agregado](workflow/using/performing-aggregate-computing.md)
          + [Consultar usando gerenciamento de agrupamento](workflow/using/querying-using-grouping-management.md)
          + [Consultar usando um relacionamento muitos para muitos](workflow/using/querying-using-many-to-many-relationship.md)
          + [Adicionar um campo calculado do tipo lista discriminada](workflow/using/adding-enumeration-type-calculated-field.md)
          + [Criar um filtro](workflow/using/creating-a-filter.md)
-         + [Filtrar recipients duplicados](workflow/using/filtering-duplicated-recipients.md)
+         + [Filtrar destinatários duplicados](workflow/using/filtering-duplicated-recipients.md)
    + Monitorar workflows {#monitoring-workflows}
       + [Monitorar a execução do fluxo de trabalho](workflow/using/monitoring-workflow-execution.md)
       + [Monitorar workflows técnicos](workflow/using/monitoring-technical-workflows.md)
@@ -792,8 +793,8 @@ ht-degree: 100%
    + Hierarquia de navegação {#navigation-hierarchy}
       + [Configurar a hierarquia do Explorer](configuration/using/configuration.md)
       + [Editar a hierarquia do Explorer](configuration/using/edition.md)
-   + Usar tabela de recipient personalizada {#use-a-custom-recipient-table}
-      + [Sobre tabela de recipient personalizada](configuration/using/about-custom-recipient-table.md)
+   + Usar tabela de destinatário personalizada {#use-a-custom-recipient-table}
+      + [Sobre tabela de destinatário personalizada](configuration/using/about-custom-recipient-table.md)
       + [Características do esquema](configuration/using/schema-characteristics.md)
       + [Target mapping](configuration/using/target-mapping.md)
       + [Configuração da interface](configuration/using/configuring-the-interface.md)

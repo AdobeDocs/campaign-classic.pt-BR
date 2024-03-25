@@ -9,9 +9,9 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '736'
 ht-degree: 100%
 
 ---
@@ -45,7 +45,7 @@ Quando o Adobe Campaign é instalado ou integrado a uma instalação existente c
 
 O Serviço de identidade da Adobe Experience Cloud (ID Service) fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud.
 
-Um identificador de visitante único será atribuído aos recipients que geram logs de rastreamento. Essa ID será salva no campo **[!UICONTROL Requester UUID (@sourceID)]** da tabela **[!UICONTROL nms:trackingLogRcp]**. **Os dados de rastreamento dos recipients existentes antes do serviço de ID de visitante foram implementados e, portanto, não serão mais utilizáveis**.
+Um identificador de visitante único será atribuído aos destinatários que geram logs de rastreamento. Essa ID será salva no campo **[!UICONTROL Requester UUID (@sourceID)]** da tabela **[!UICONTROL nms:trackingLogRcp]**. **Os dados de rastreamento dos destinatários existentes antes do serviço de ID de visitante foram implementados e, portanto, não serão mais utilizáveis**.
 
 A ID será reconhecida pelas outras soluções da Adobe Experience Cloud com o mesmo CNAME. [Saiba mais](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/cname.html?lang=pt-BR)
 
@@ -95,7 +95,7 @@ A tabela a seguir fornece acesso à documentação disponível da integração d
   </tr> 
   <tr> 
    <td> <strong>Adobe Analytics Connector</strong><br /> </td> 
-   <td> <strong>O Adobe Analytics Connector</strong> permite que o Adobe Campaign e o Adobe Analytics interajam por meio de segmentos relacionados ao comportamento do usuário após uma campanha de email. Por outro lado, ele envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign para o Adobe Analytics.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Saiba mais</a> sobre a integração do Campaign com o Analytics Connectors.</p><br /> </td> 
+   <td> <strong>O Adobe Analytics Connector</strong> permite que o Adobe Campaign e o Adobe Analytics interajam por meio de segmentos relacionados ao comportamento do usuário após uma campanha de email. Por outro lado, ele envia indicadores e atributos de campanhas de email entregues pelo Adobe Campaign para o Adobe Analytics.<br /> <p><a href="../../platform/using/gs-aa.md">Saiba mais</a> sobre a integração do Campaign com o Analytics Connectors.</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>
