@@ -45,7 +45,7 @@ Você também pode selecionar o tipo de tabela no menu suspenso.
 
 ## Aplicativos Web do tipo Visão geral {#overview-type-web-applications}
 
-A interface do Adobe Campaign usa muitas aplicações web para acessar, gerenciar e interagir com recipients, deliveries, campanhas, estoques, etc.
+A interface do Adobe Campaign usa muitas aplicações web para acessar, gerenciar e interagir com destinatários, entregas, campanhas, estoques, etc.
 
 Elas são vistas na interface do formulário de painéis com apenas uma página.
 

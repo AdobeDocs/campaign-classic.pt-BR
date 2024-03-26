@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 6%
+source-wordcount: '593'
+ht-degree: 2%
 
 ---
 
@@ -19,19 +19,19 @@ ht-degree: 6%
 
 
 
-Para criar um novo banco de dados instância e Adobe Campaign, aplique o seguinte processo:
+Para criar uma nova instância e um banco de dados Adobe Campaign, siga o seguinte processo:
 
 1. Criar a conexão.
-1. Faça logon para criar as instância relacionadas.
+1. Faça logon para criar o instância relacionado.
 1. Criar e configurar o banco de dados.
 
 >[!NOTE]
 >
 >Somente o **identificador interno** pode executar essas operações. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-Quando o console do Adobe Campaign é inicializado, você acessa uma página fazer logon.
+Quando o console do Adobe Campaign é iniciado, você acessa uma fazer logon página.
 
-Para criar uma nova instância, seguir as etapas abaixo:
+Para criar uma nova instância, siga as etapas abaixo:
 
 1. Clique no link no canto superior direito dos campos de credenciais para acessar a janela de configuração de conexão. Esse link pode ser **[!UICONTROL New...]** ou um nome de instância existente.
 
@@ -47,11 +47,11 @@ Para criar uma nova instância, seguir as etapas abaixo:
 
    >[!CAUTION]
    >
-   >Para a URL de conexão, use apenas os seguintes caracteres: `[a-z]` , `[A-Z]` , `[0-9]` e traços (-) ou paradas de forma completa.
+   >Para o URL de conexão, use apenas os seguintes caracteres: `[a-z]`, `[A-Z]`e `[0-9]` dashes (-) ou paradas completas.
 
-1. Clique **[!UICONTROL Ok]** para confirmar as configurações: agora você pode começar com o processo de criação do instância.
-1. **[!UICONTROL Connection settings]** Na janela, digite a **fazer logon interna** e a senha para se conectar ao Adobe Campaign aplicativo servidor. Uma vez conectado, você acessa o assistente de criação do instância para declarar um novo instância
-1. **[!UICONTROL Name]** No campo, digite o nome **do** instância. Como esse nome é usado para gerar um arquivo **de configuração config- `<instance>` . XML** e é usado nos parâmetros de linha de comando para identificar a instância, certifique-se de escolher um nome curto sem caracteres especiais. Por exemplo: **eMarketing**.
+1. Clique **[!UICONTROL Ok]** para confirmar as configurações: agora você pode começar com o processo instância de criação.
+1. **[!UICONTROL Connection settings]** Na janela, insira a **fazer logon interna** e sua senha para se conectar ao servidor Adobe Campaign aplicativo. Depois de conectado, você acessa a criação de instância assistente para declarar uma nova instância
+1. **[!UICONTROL Name]** No campo, insira o nome **da** instância. Como esse nome é usado para gerar um arquivo **de configuração com .xml** e é usado nos parâmetros da linha de comando para identificar o instância, certifique-se`<instance>` de escolher um nome curto sem caracteres especiais. Por exemplo: **eMarketing**.
 
    ![](assets/s_ncs_install_create_instance.png)
 
@@ -61,13 +61,13 @@ Para criar uma nova instância, seguir as etapas abaixo:
 
    O nome do host está entre a cadeia de caracteres **https://** e o primeiro caractere barra **/** do endereço do servidor.
 
-   É possível definir um lista de valores separados por vírgulas.
+   É possível definir uma lista de valores separados por vírgulas.
 
-   Os ? e &#42; caracteres podem ser usados como curingas para substituir um ou vários caracteres (DNS, porta, etc.). Por instância, o valor da **demonstração&#42;** funcionará com &quot;https://demo&quot;, como será com &quot;https://demo:8080&quot; e até &quot;https://demo2&quot;.
+   O? e &#42; os caracteres podem ser usados como curingas para substituir um ou vários caracteres (DNS, porta etc.). Por instância, o **valor de demonstração&#42;** funcionará com &quot;https://demo&quot;, como funcionará com &quot;https://demo:8080&quot; e até mesmo &quot;https://demo2&quot;.
 
-   Os nomes usados devem ser definidos no DNS. Você também pode informar a correspondência entre um nome DNS e um endereço IP no **arquivo c:/Windows/system32/drivers/etc/hosts** no Windows e no **arquivo/etc/hosts** no Linux. Portanto, você deve modificar as configurações de conexão para usar esse nome DNS em solicitar para se conectar à instância escolhida.
+   Os nomes usados devem ser definidos no DNS. Você também pode informar a correspondência entre um nome DNS e um endereço IP no **arquivo c:/windows/system32/drivers/etc/hosts** no Windows e no **arquivo /etc/hosts** no Linux. Portanto, você deve modificar as configurações de conexão para usar esse nome de DNS no solicitar para se conectar ao instância escolhido.
 
-   O servidor deve ser identificado por esse nome, especialmente para fazer upload de imagens em emails.
+   O servidor deve ser identificado por esse nome, especialmente para carregar imagens em emails.
 
    Além disso, o servidor deve ser capaz de se conectar a si mesmo por esse nome e, se possível, por um endereço de loopback - 127.0.0.1 -, especialmente para permitir que os relatórios sejam exportados no formato PDF.
 
@@ -79,8 +79,8 @@ Para criar uma nova instância, seguir as etapas abaixo:
    >
    >O idioma da instância não pode ser modificado após essa etapa. As instâncias do Adobe Campaign não são multilíngues: não é possível alternar a interface de um idioma para outro.
 
-1. Clique **[!UICONTROL Ok]** para confirmar a declaração de instância. Faça logoff e logon novamente para declarar o banco de dados.
+1. Clique **[!UICONTROL Ok]** para confirmar instância declaração. Faça logoff e volte a declarar o banco de dados.
 
    >[!NOTE]
    >
-   >O instância pode ser criado a partir da linha de comando. Para obter mais informações, consulte [ comando linhas ](../../installation/using/command-lines.md) .
+   >A instância pode ser criada a partir da linha de comando. Para obter mais informações, consulte [Comando linhas](../../installation/using/command-lines.md).

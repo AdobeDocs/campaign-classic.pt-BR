@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 100%
 
@@ -113,7 +113,7 @@ Os links e as guias a seguir serão exibidos:
 
 * **Outline**
 
-  Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir os delivery outlines da campanha. Saiba mais sobre delivery outlines [nesta seção](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+  Quando esse módulo é selecionado, uma subguia **[!UICONTROL Delivery outlines]** é adicionada à guia **[!UICONTROL Documents]** para definir as descrições das entregas da campanha. Saiba mais sobre descrições das entregas [nesta seção](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
   ![](assets/s_ncs_user_op_template_activate_4.png)
 
@@ -133,7 +133,7 @@ Os links e as guias a seguir serão exibidos:
 
   ![](assets/s_ncs_user_op_template_activate_5b.png)
 
-  Você pode optar por habilitar ou não a aprovação do processo por meio da guia **[!UICONTROL Approvals]** da seção de configurações avançadas dos templates. As tarefas para as quais a aprovação é selecionada devem ser aprovadas para que o delivery de mensagens seja autorizado.
+  Você pode optar por habilitar ou não a aprovação do processo por meio da guia **[!UICONTROL Approvals]** da seção de configurações avançadas dos templates. As tarefas para as quais a aprovação é selecionada devem ser aprovadas para que a entrega de mensagens seja autorizada.
 
   Você deve associar um operador de revisor ou grupo de operadores a cada aprovação habilitada.
 
@@ -167,7 +167,7 @@ Ao criar um template de campanha, você precisa inserir as seguintes informaçõ
 
 ### Parâmetros de execução do template {#template-execution-parameters}
 
-O link **[!UICONTROL Advanced campaign settings...]** permite configurar as opções avançadas dos modelos para processar o direcionamento do delivery (grupo de controle, seed addresses etc.) e a configuração da medição da campanha e da execução do fluxo de trabalho.
+O link **[!UICONTROL Advanced campaign settings...]** permite configurar as opções avançadas dos modelos para processar o direcionamento da entrega (grupo de controle, seed addresses etc.) e a configuração da medição da campanha e da execução do fluxo de trabalho.
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 

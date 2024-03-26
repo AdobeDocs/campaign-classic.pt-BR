@@ -11,8 +11,8 @@ topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 100%
+source-wordcount: '950'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ Ao iniciar o assistente de exportação, primeiro é necessário selecionar um t
 
 Selecione o tipo de documento a ser exportado, ou seja, o schema dos dados para exportar.
 
-Por padrão, quando a exportação é iniciada a partir do nó **[!UICONTROL Jobs]**, os dados são obtidos a partir da tabela de recipients. Quando a exportação é iniciada a partir de uma lista de dados (do menu **[!UICONTROL right click > Export]**), a tabela à qual os dados pertencem é automaticamente preenchida no campo **[!UICONTROL Document type]**.
+Por padrão, quando a exportação é iniciada a partir do nó **[!UICONTROL Jobs]**, os dados são obtidos a partir da tabela de destinatários. Quando a exportação é iniciada a partir de uma lista de dados (do menu **[!UICONTROL right click > Export]**), a tabela à qual os dados pertencem é automaticamente preenchida no campo **[!UICONTROL Document type]**.
 
 ![](assets/s_ncs_user_export_wizard02.png)
 
@@ -75,7 +75,7 @@ Selecione um formato de saída para o arquivo de exportação. Os formatos a seg
 * Para o formato **[!UICONTROL Text]**, selecione os delimitadores para separar as colunas (guias, vírgulas, ponto e vírgula ou personalizado) e as strings (aspas simples, duplas ou nenhuma).
 * Para **[!UICONTROL text]** e **[!UICONTROL CSV]**, você pode selecionar a opção **[!UICONTROL Use first lines as column titles]**.
 * Indique o formato de data e o formato do número. Para fazer isso, clique no botão **[!UICONTROL Edit]** do campo correspondente e utilize o editor.
-* Para campos que contém os valores enumerados, é possível selecionar a opção **[!UICONTROL Export labels instead of internal values of enumerations]**. Por exemplo, o título pode ser armazenado no formato **1=Sr.**, **2=Srta.**,**3=Sra.**. Se essa opção estiver selecionada, **Sr.**, **Srta.**, **Sra.** serão exportados.
+* Para campos que contém os valores enumerados, é possível selecionar a opção **[!UICONTROL Export labels instead of internal values of enumerations]**. Por exemplo, o título pode ser armazenado no formulário **1=Sr.**, **2=Erro**, **3=Sra.**. Se essa opção estiver selecionada, **Sr.**, **Srta.**, **Sra.** serão exportados.
 
 ## Etapa 4 - Seleção de dados {#step-4---data-selection}
 
@@ -96,7 +96,7 @@ Selecione a ordem de classificação das colunas.
 
 ## Etapa 6 - Condições de filtro {#step-6---filter-conditions-}
 
-Você pode adicionar condições de filtro para evitar a exportação de todos os dados. A configuração dessa filtragem é a mesma que o direcionamento do destinatário no assistente de delivery. Consulte [esta página](../../delivery/using/steps-defining-the-target-population.md).
+Você pode adicionar condições de filtro para evitar a exportação de todos os dados. A configuração dessa filtragem é a mesma que o direcionamento do destinatário no assistente de entrega. Consulte [esta página](../../delivery/using/steps-defining-the-target-population.md).
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 

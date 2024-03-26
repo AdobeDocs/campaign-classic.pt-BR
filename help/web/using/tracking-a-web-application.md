@@ -44,16 +44,16 @@ As principais melhorias apresentadas nessa versão são as seguintes:
 
 Dois modos diferentes podem ser usados para identificar de onde o visitante veio ao acessar um aplicativo web:
 
-1. Enviar um delivery específico para conceder acesso às páginas do aplicativo web: nesse caso, a fonte de tráfego é esse delivery,
-1. Associar a aplicação web a uma fonte de tráfego dedicada: nesse caso, ela deve ser um delivery de tipo &quot;fonte de tráfego&quot; externo. Ela pode ser selecionada nas propriedades da aplicação web ou no target mapping.
+1. Enviar uma entrega específica para conceder acesso às páginas do aplicativo web: nesse caso, a fonte de tráfego é essa entrega,
+1. Associar a aplicação web a uma fonte de tráfego dedicada: nesse caso, ela deve ser uma entrega de tipo &quot;fonte de tráfego&quot; externo. Ela pode ser selecionada nas propriedades da aplicação web ou no target mapping.
 
    ![](assets/trackers_6.png)
 
 Para identificar a fonte de tráfego em uma aplicação web, o Adobe Campaign procura as seguintes informações sucessivamente:
 
-1. o identificador de delivery de origem, se existir (cookie nlId),
-1. o identificador do delivery externo definido nas propriedades da aplicação web, se existir,
-1. o identificador do delivery externo definido no target mapping, se existir.
+1. o identificador de entrega de origem, se existir (cookie nlId),
+1. o identificador da entrega externa definido nas propriedades da aplicação web, se existir,
+1. o identificador da entrega externa definido no target mapping, se existir.
 
 >[!NOTE]
 >

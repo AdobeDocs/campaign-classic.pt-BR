@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Criar deliveries LINE
+title: Criar entregas LINE
 description: Saiba como criar mensagens LINE
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
@@ -8,13 +8,13 @@ feature: Line App
 role: User
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '1165'
+workflow-type: tm+mt
+source-wordcount: '1164'
 ht-degree: 100%
 
 ---
 
-# Criar deliveries LINE{#line-channel}
+# Criar entregas LINE{#line-channel}
 
 
 
@@ -90,7 +90,7 @@ O [!DNL LINE] agora está configurado no Adobe Campaign. Você pode começar a c
 
 >[!NOTE]
 >
->Ao enviar uma entrega [!DNL LINE] a um novo recipient pela primeira vez, você deve adicionar a mensagem oficial do LINE sobre os termos de uso e consentimento em relação a entregas. A mensagem oficial está disponível no [link a seguir](https://terms.line.me/OA_privacy/).
+>Ao enviar uma entrega [!DNL LINE] a um novo destinatário pela primeira vez, você deve adicionar a mensagem oficial do LINE sobre os termos de uso e consentimento em relação a entregas. A mensagem oficial está disponível no [link a seguir](https://terms.line.me/OA_privacy/).
 
 Para criar uma entrega [!DNL LINE], é necessário seguir estas etapas:
 
@@ -104,9 +104,9 @@ Para criar uma entrega [!DNL LINE], é necessário seguir estas etapas:
 
 1. Identifique a entrega com um **[!UICONTROL Label]**, **[!UICONTROL Delivery code]** e **[!UICONTROL Description]**. Para obter mais informações, consulte [esta seção](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 
-1. Clique em **[!UICONTROL Continue]** para criar o delivery de 
+1. Clique em **[!UICONTROL Continue]** para criar a entrega de 
 
-1. No editor de entrega, selecione **[!UICONTROL To]** para direcionar os recipients da entrega [!DNL LINE]. O direcionamento é realizado em **[!UICONTROL Visitor subscriptions (nms:visitorSub)]**.
+1. No editor de entrega, selecione **[!UICONTROL To]** para direcionar os destinatários da entrega [!DNL LINE]. O direcionamento é realizado em **[!UICONTROL Visitor subscriptions (nms:visitorSub)]**.
 
    Para obter mais informações, consulte [Identificação das populações do target](steps-defining-the-target-population.md).
 
@@ -168,7 +168,7 @@ Uma entrega **[!UICONTROL Image and link]**[!DNL LINE] é uma mensagem enviada a
 
   >[!NOTE]
   >
-  >É possível usar a variável **%SIZE%** para otimizar a exibição da imagem de acordo com o tamanho da tela do dispositivo móvel do recipient.
+  >É possível usar a variável **%SIZE%** para otimizar a exibição da imagem de acordo com o tamanho da tela do dispositivo móvel do destinatário.
 
   ![](assets/line_message_04.png)
 
@@ -190,7 +190,7 @@ Uma entrega **[!UICONTROL Image and link]**[!DNL LINE] é uma mensagem enviada a
   >
   >O tamanho 1040x1040 px é obrigatório para cada imagem LINE com link.
 
-  Depois, é preciso adicionar um texto alternativo que será exibido no dispositivo móvel do recipient.
+  Depois, é preciso adicionar um texto alternativo que será exibido no dispositivo móvel do destinatário.
 
 * e **[!UICONTROL Links]**.
 
@@ -226,17 +226,17 @@ Para relatórios de serviço [!DNL LINE], acesse o menu **[!UICONTROL Profiles a
 
 ## Exemplo: criar e enviar uma mensagem LINE personalizada {#example--create-and-send-a-personalized-line-message}
 
-Neste exemplo, vamos criar e configurar uma mensagem de texto e uma imagem contendo dados que serão personalizados de acordo com o recipient.
+Neste exemplo, vamos criar e configurar uma mensagem de texto e uma imagem contendo dados que serão personalizados de acordo com o destinatário.
 
 1. Crie a entrega [!DNL LINE] clicando no botão **[!UICONTROL Create]** na guia **[!UICONTROL Campaign]**.
 
    ![](assets/line_usecase.png)
 
-1. Selecione o template do **[!UICONTROL LINE V2 delivery]** delivery e dê um nome ao delivery.
+1. Selecione o template da entrega **[!UICONTROL LINE V2 delivery]** e dê um nome à entrega.
 
    ![](assets/line_usecase_01.png)
 
-1. Na janela de configuração do delivery, selecione a população do target.
+1. Na janela de configuração da entrega, selecione a população do target.
 
    Para obter mais informações, consulte [Identificação das populações do target](steps-defining-the-target-population.md).
 
@@ -264,9 +264,9 @@ Neste exemplo, vamos criar e configurar uma mensagem de texto e uma imagem conte
 
    ![](assets/line_usecase_08.png)
 
-1. Salve o delivery e clique em **[!UICONTROL Send]** para analisar e enviá-lo para o target.
+1. Salve a entrega e clique em **[!UICONTROL Send]** para analisar e enviá-la para o target.
 
-   O delivery é enviado para o target.
+   A entrega é enviada para o target.
 
    ![](assets/line_usecase_06.png)
 

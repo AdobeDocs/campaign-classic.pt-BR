@@ -6,7 +6,7 @@ feature: Workflows, Interaction, Offers
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '167'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Para mais informações, dependendo da versão do Campaign, consulte estas seç�
   <tr> 
    <td> <span class="uicontrol">Full aggregate calculation (propositionrcp cube)</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
-   <td> Esse workflow atualiza o agregado <strong>completo</strong> do cubo da <strong>Apresentação da oferta. </strong> É acionado todos os dias às 6:00 AM por padrão. Esse agregado captura as seguintes dimensões: canal, delivery, oferta de marketing e data.<br /> O cubo da <strong>Apresentação de oferta</strong> é usado para gerar relatórios com base em ofertas. Você pode saber mais sobre cubos <a href="../../reporting/using/ac-cubes.md">nesta seção</a>.<br /> </td> 
+   <td> Esse workflow atualiza o agregado <strong>completo</strong> do cubo da <strong>Apresentação da oferta. </strong> É acionado todos os dias às 6:00 AM por padrão. Esse agregado captura as seguintes dimensões: canal, entrega, oferta de marketing e data.<br /> O cubo da <strong>Apresentação de oferta</strong> é usado para gerar relatórios com base em ofertas. Você pode saber mais sobre cubos <a href="../../reporting/using/ac-cubes.md">nesta seção</a>.<br /> </td> 
   </tr> 
    <tr> 
    <td> <span class="uicontrol">MessageCenter full aggregate calculation</span> <br /> </td> 

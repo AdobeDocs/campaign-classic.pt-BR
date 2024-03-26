@@ -7,7 +7,7 @@ feature: Query Editor, Workflows
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '263'
 ht-degree: 100%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 100%
 
 
 
-Neste exemplo, devemos executar uma query para localizar todos os domínios de e-mail selecionados mais de 30 vezes durante as deliveries anteriores.
+Neste exemplo, devemos executar uma query para localizar todos os domínios de e-mail selecionados mais de 30 vezes durante as entregas anteriores.
 
 * Qual tabela precisa ser selecionada?
 
-  A tabela de recipient (nms:recipient)
+  A tabela de destinatário (nms:recipient)
 
 * Campos a serem selecionados nas colunas de saída?
 

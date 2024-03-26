@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Usar uma tabela externa de recipient
-description: Usar uma tabela externa de recipient
+title: Usar uma tabela externa de destinatário
+description: Usar uma tabela externa de destinatário
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Audiences
@@ -13,15 +13,15 @@ ht-degree: 100%
 
 ---
 
-# Usar uma tabela externa de recipient{#using-an-external-recipient-table}
+# Usar uma tabela externa de destinatário{#using-an-external-recipient-table}
 
 
 
-Se a tabela do delivery for uma tabela externa, você precisará fazer configurações adicionais. O schema **[!UICONTROL nms:seedmember]** deve ser estendido. Uma guia é adicionada aos seed addresses para definir os campos adequados, como mostrado abaixo:
+Se a tabela da entrega for uma tabela externa, você precisará fazer configurações adicionais. O schema **[!UICONTROL nms:seedmember]** deve ser estendido. Uma guia é adicionada aos seed addresses para definir os campos adequados, como mostrado abaixo:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Nesse caso, para adicionar seed addresses ao delivery, insira os campos adequados diretamente na guia correspondente ou importe os templates de endereços:
+Nesse caso, para adicionar seed addresses à entrega, insira os campos adequados diretamente na guia correspondente ou importe os templates de endereços:
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 

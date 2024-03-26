@@ -8,7 +8,7 @@ feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 source-git-commit: bc6f5d569d0c8a5eba4499a854af370258ce83a2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 100%
 
@@ -115,7 +115,7 @@ Uma entrega não pode ser interrompida depois de transferida para o MTA aprimora
 
 ### Taxa de transferência de entrega
 
-O gráfico de taxa de transferência de entrega do Campaign não exibirá mais a taxa de transferência para os recipients de email. Ele mostrará a velocidade da taxa de transferência da transmissão de suas mensagens do Campaign para o MTA aprimorado.
+O gráfico de taxa de transferência de entrega do Campaign não exibirá mais a taxa de transferência para os destinatários de email. Ele mostrará a velocidade da taxa de transferência da transmissão de suas mensagens do Campaign para o MTA aprimorado.
 
 Para obter mais informações sobre a taxa de transferência da entrega, consulte [esta seção](../../reporting/using/global-reports.md#delivery-throughput).
 

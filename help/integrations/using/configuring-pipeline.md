@@ -10,8 +10,8 @@ content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 100%
+source-wordcount: '920'
+ht-degree: 99%
 
 ---
 
@@ -130,13 +130,13 @@ A lista de parâmetros opcionais pode ser encontrada abaixo:
 
 | Opção | Descrição |
 |:-:|:-:|
-| appName(Herdado) | AppID do aplicativo OAuth registrado no aplicativo Legacy Oath em que a chave pública foi carregada. Para obter mais informações, consulte esta [página](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
+| appName(Legacy) | AppID do aplicativo OAuth registrado no aplicativo Legacy Oath em que a chave pública foi carregada. Para obter mais informações, consulte esta [página](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
 | authGatewayEndpoint(Legacy) | URL para obter tokens de gateway. Padrão: ```https://api.omniture.com``` |
 | authPrivateKey(Legacy) | A chave privada, parte pública carregada no aplicativo Legacy Oath, AES criptografada com a opção XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | A ação de desabilitar a autenticação, conectando sem tokens de gateway é aceita somente por alguns pontos de acesso do pipeline de desenvolvimento. |
 | discoverPipelineEndpoint | URL para descobrir o ponto de acesso dos serviços de pipeline que serão usados para este locatário. Padrão: ```https://producer-pipeline-pnw.adobe.net``` |
 | dumpStatePeriodSec | O período entre dois despejos do processo de estado interno no estado interno ```var/INSTANCE/pipelined.json.``` <br> também está acessível sob demanda aqui: ```http://INSTANCE:7781/pipelined/status``` |
-| forcedPipelineEndpoint | Desative a detecção do PipelineServicesEndpoint e force-a |
+| forcedPipelineEndpoint | Desabilite a detecção do PipelineServicesEndpoint e force-a |
 | monitorServerPort | O processo de pipeline ouvirá nesta porta para fornecer o processo de estado interno aqui: ```http://INSTANCE:PORT/pipelined/status```. <br>O padrão é 7781 |
 | pointerFlushMessageCount | Quando esse número de mensagens é processado, os corretores serão salvos no banco de dados. <br> O padrão é 1000 |
 | pointerFlushPeriodSec | Após esse período, os deslocamentos serão salvos no banco de dados. <br>O padrão é 5 (segundos) |

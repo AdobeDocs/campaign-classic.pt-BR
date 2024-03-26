@@ -7,7 +7,7 @@ feature: Distributed Marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1572'
 ht-degree: 100%
 
 ---
@@ -124,7 +124,7 @@ Para não exibir um campo para fazer upload de documento, digite **[!UICONTROL 0
 
 ### Fluxo de trabalho {#workflow}
 
-Na guia **[!UICONTROL Targeting and workflows]**, crie o fluxo de trabalho que coleta os **[!UICONTROL Default values]** especificados nas **[!UICONTROL Advanced campaign settings...]** e cria os deliveries.
+Na guia **[!UICONTROL Targeting and workflows]**, crie o fluxo de trabalho que coleta os **[!UICONTROL Default values]** especificados nas **[!UICONTROL Advanced campaign settings...]** e cria as entregas.
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
@@ -134,19 +134,19 @@ Clique duas vezes na atividade **[!UICONTROL Query]** para configurá-la de acor
 
 ### Entrega {#delivery}
 
-Na guia **[!UICONTROL Audit]**, clique no ícone **[!UICONTROL Detail...]** para visualizar o **[!UICONTROL Scheduling]** do delivery selecionado.
+Na guia **[!UICONTROL Audit]**, clique no ícone **[!UICONTROL Detail...]** para visualizar o **[!UICONTROL Scheduling]** da entrega selecionada.
 
 ![](assets/mkg_dist_local_op_creation4c.png)
 
-O ícone **[!UICONTROL Scheduling]** permite configurar o contato do delivery e a data de execução.
+O ícone **[!UICONTROL Scheduling]** permite configurar o contato da entrega e a data de execução.
 
 ![](assets/mkg_dist_local_op_creation4d.png)
 
-Se necessário, configure o tamanho máximo do delivery:
+Se necessário, configure o tamanho máximo da entrega:
 
 ![](assets/mkg_dist_local_op_creation4e.png)
 
-Localize o HTML do seu delivery. Por exemplo, no campo **[!UICONTROL Delivery > Current order > Additional fields]**, use o campo **[!UICONTROL Age segment]** para localizar o delivery de acordo com a idade do público-alvo.
+Localize o HTML da sua entrega. Por exemplo, no campo **[!UICONTROL Delivery > Current order > Additional fields]**, use o campo **[!UICONTROL Age segment]** para localizar a entrega de acordo com a idade do público-alvo.
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 

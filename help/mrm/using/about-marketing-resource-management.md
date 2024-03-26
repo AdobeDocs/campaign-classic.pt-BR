@@ -49,7 +49,7 @@ No contexto do Gerenciamento de recursos de marketing do Adobe Campaign, os segu
 >
 >Para obter mais informações sobre o espaço de trabalho do Adobe Campaign, consulte [esta seção](../../platform/using/adobe-campaign-workspace.md).
 >  
->Os deliveries e os canais de comunicação estão detalhados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+>As entregas e os canais de comunicação estão detalhados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 >
 >As funcionalidades da campanha de marketing são detalhadas [nesta seção](../../campaign/using/accessing-marketing-campaigns.md).
 

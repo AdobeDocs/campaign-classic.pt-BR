@@ -8,8 +8,8 @@ feature: Email, Push
 role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '454'
+workflow-type: tm+mt
+source-wordcount: '448'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Para evitar problemas de compatibilidade, recomendamos que você escolha emotico
 1. Clique em **[!UICONTROL Ok]** e **[!UICONTROL Save]** quando a configuração for concluída.
 O novo emoticon será colocado automaticamente na loja.
 
-1. Para exibi-lo na janela **[!UICONTROL Insert emoticon]** dos deliveries, selecione o emoticon recém-criado clicando duas vezes sobre ele.
+1. Para exibi-lo na janela **[!UICONTROL Insert emoticon]** das entregas, selecione o emoticon recém-criado clicando duas vezes sobre ele.
 
 1. Escolha na lista suspensa **[!UICONTROL Display order]** em que ordem o novo emoticon será exibido. Observe que ao selecionar uma ordem de exibição já atribuída, o emoticon existente será movido automaticamente para a loja.
 
@@ -62,7 +62,7 @@ O novo emoticon será colocado automaticamente na loja.
 
 1. Para que as alterações sejam levadas em conta, desconecte e reconecte novamente o Adobe Campaign Classic. Se o novo emoticon ainda não aparecer na janela pop-up **[!UICONTROL Insert emoticon]**, talvez seja necessário limpar o cache. Para obter mais informações, consulte esta [seção](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 
-1. O novo emoticon agora pode ser encontrado nos deliveries na janela pop-up **[!UICONTROL Insert emoticon]** na posição 61, conforme configurado nas etapas anteriores. Para obter mais informações sobre como usar emoticons nos deliveries, consulte esta [página](defining-the-email-content.md#inserting-emoticons).
+1. O novo emoticon agora pode ser encontrado nas entregas na janela pop-up **[!UICONTROL Insert emoticon]** na posição 61, conforme configurado nas etapas anteriores. Para obter mais informações sobre como usar emoticons nas entregas, consulte esta [página](defining-the-email-content.md#inserting-emoticons).
 
    ![](assets/emoticon_4.png)
 

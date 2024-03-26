@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 47%
+source-wordcount: '294'
+ht-degree: 34%
 
 ---
 
@@ -37,12 +37,12 @@ Os diferentes modelos de hospedagem são introduzidos [nesta seção](../../inst
 | Delegação de nome de domínio | Sob demanda | Sob demanda | Indisponível | [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR) |
 | Instalação do SpamAssassin | Sob demanda | Disponível | Disponível | [Saiba mais](../../delivery/using/spamassassin.md) |
 | Acesso aos relatórios de entrega | Disponível | Sob demanda | Disponível | [Saiba mais](../../delivery/using/monitoring-deliverability.md) |
-| Configuração da autenticação LDAP | Não disponível | Disponível | Disponível | [Saiba mais](../../installation/using/connecting-through-ldap.md) |
+| Configuração da autenticação LDAP | Indisponível | Disponível | Disponível | [Saiba mais](../../installation/using/connecting-through-ldap.md) |
 
 
 ## Federated Data Access{#fda}
 
-O Adobe Campaign oferece a opção **Federated Data Access** (FDA) para processar informações armazenadas em um ou mais bancos de dados externos: é possível acessá-los sem alterar a estrutura dos dados do Adobe Campaign. [Saiba mais](../../installation/using/about-fda.md)
+A Adobe Campaign fornece a **Federated Data Access** (FDA) para processar informações armazenadas em um ou mais bancos de dados externos: é possível acessá-los sem alterar a estrutura dos dados do Adobe Campaign. [Saiba mais](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >

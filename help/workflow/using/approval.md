@@ -60,7 +60,7 @@ O campo **[!UICONTROL Title]** contém o título da mensagem: é o assunto da me
 
 A seção inferior do editor permite definir a lista de respostas possíveis. Há uma transição correspondente a cada resposta. O nome é o identificador interno e o rótulo é o texto que será exibido na lista de opções.
 
-Clique no link **[!UICONTROL Advanced parameters...]** para selecionar o template do delivery a ser usado para notificar os operadores. O template padrão (nome interno &quot;notifyAssignee&quot;) pega o título e a mensagem e adiciona um link à página da Web usada para responder.
+Clique no link **[!UICONTROL Advanced parameters...]** para selecionar o template da entrega a ser usado para notificar os operadores. O template padrão (nome interno &quot;notifyAssignee&quot;) pega o título e a mensagem e adiciona um link à página da Web usada para responder.
 
 Esse template pode ser modificado para personalizar o layout de mensagens, mas é preferível fazer uma cópia. O mecanismo do target (arquivo externo, mapeamento do target) não deve ser modificado porque é necessário para que as notificações funcionem corretamente.
 

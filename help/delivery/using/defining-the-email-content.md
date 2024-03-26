@@ -47,9 +47,9 @@ O assunto da mensagem é configurado no campo correspondente. Você pode inseri-
 
 ![](assets/s_ncs_user_wizard_email_object.png)
 
-O conteúdo do campo será substituído pelo valor no perfil do recipient quando a mensagem for enviada.
+O conteúdo do campo será substituído pelo valor no perfil do destinatário quando a mensagem for enviada.
 
-Por exemplo, na mensagem acima, o assunto da mensagem é personalizado para cada recipient com dados do seu perfil.
+Por exemplo, na mensagem acima, o assunto da mensagem é personalizado para cada destinatário com dados do seu perfil.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Também é possível inserir emoticons na linha do assunto com a janela pop-up *
 
 O conteúdo da mensagem é definido na seção inferior da janela de configuração de entrega.
 
-As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo com a preferência do recipient. Recomendamos a criação de conteúdo nos dois formatos para garantir que as mensagens possam ser exibidas corretamente em qualquer sistema de email. Para obter mais informações, consulte [Seleção de formatos de mensagem](email-parameters.md#selecting-message-formats).
+As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo com a preferência do destinatário. Recomendamos a criação de conteúdo nos dois formatos para garantir que as mensagens possam ser exibidas corretamente em qualquer sistema de email. Para obter mais informações, consulte [Seleção de formatos de mensagem](email-parameters.md#selecting-message-formats).
 
 * Para importar um conteúdo HTML, clique no botão **[!UICONTROL Open]**. Também é possível colar o código-fonte diretamente na subguia **[!UICONTROL Source]**.
 
@@ -75,7 +75,7 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
   >
   >O conteúdo HTML deve ser criado antes, e depois importado para o Adobe Campaign. O editor de HTML não foi desenvolvido para criação de conteúdo.
 
-  A subguia **[!UICONTROL Preview]** permite visualizar a renderização de cada conteúdo para um recipient. Os campos de personalização e os elementos condicionais do conteúdo são substituídos pelas informações correspondentes para o perfil selecionado.
+  A subguia **[!UICONTROL Preview]** permite visualizar a renderização de cada conteúdo para um destinatário. Os campos de personalização e os elementos condicionais do conteúdo são substituídos pelas informações correspondentes para o perfil selecionado.
 
   Os botões da barra de ferramentas fornecem acesso aos parâmetros padrão de ações e formatação da página HTML.
 
@@ -93,7 +93,7 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
   >
   >O uso de campos de personalização é apresentado em [Sobre personalização](about-personalization.md).
 
-  As guias na parte inferior da página permitem exibir o código HTML da página que está sendo criada e exibir a renderização da mensagem com sua personalização. Para iniciar essa exibição, clique em **[!UICONTROL Preview]** e selecione um recipient usando o botão **[!UICONTROL Test personalization]** na barra de ferramentas. Você pode selecionar um recipient no(s) target(s) definido(s) ou escolher outro.
+  As guias na parte inferior da página permitem exibir o código HTML da página que está sendo criada e exibir a renderização da mensagem com sua personalização. Para iniciar essa exibição, clique em **[!UICONTROL Preview]** e selecione um destinatário usando o botão **[!UICONTROL Test personalization]** na barra de ferramentas. Você pode selecionar um destinatário no(s) target(s) definido(s) ou escolher outro.
 
   ![](assets/s_ncs_user_wizard_email01_139.png)
 
@@ -173,7 +173,7 @@ O assistente de entrega permite adicionar imagens locais ou armazenadas na bibli
 
 >[!IMPORTANT]
 >
->Para que os recipients possam exibir as imagens incluídas nas mensagens recebidas, essas mensagens devem estar disponíveis em um servidor acessível externamente.
+>Para que os destinatários possam exibir as imagens incluídas nas mensagens recebidas, essas mensagens devem estar disponíveis em um servidor acessível externamente.
 
 Para gerenciar as imagens por meio do assistente da entrega:
 
@@ -244,7 +244,7 @@ Se você selecionar **[!UICONTROL Include the images in the email]**, será poss
 
 O módulo de geração de código de barras permite criar vários tipos de códigos de barras que estão em conformidade com muitos padrões comuns, incluindo códigos de barras 2D.
 
-É possível gerar um código de barras de forma dinâmica como um bitmap usando um valor definido por meio de critérios do cliente. Os códigos de barra personalizados podem ser incluídos em campanhas de email. O recipient pode imprimir a mensagem e mostrá-la à empresa emissora para exame (ao verificar, por exemplo).
+É possível gerar um código de barras de forma dinâmica como um bitmap usando um valor definido por meio de critérios do cliente. Os códigos de barra personalizados podem ser incluídos em campanhas de email. O destinatário pode imprimir a mensagem e mostrá-la à empresa emissora para exame (ao verificar, por exemplo).
 
 Para inserir um código de barras em um email, coloque o cursor no conteúdo onde deseja exibi-lo e clique no botão de personalização. Selecione **[!UICONTROL Include > Barcode...]**.
 
@@ -277,7 +277,7 @@ Em seguida, configure os seguintes elementos para atender às suas necessidades:
 1. Insira o tamanho do código de barras que deseja inserir no email: a configuração da escala permite aumentar ou reduzir o tamanho do código de barras, de x1 a x10.
 1. O campo **[!UICONTROL Value]** permite definir o valor do código de barras. Um valor pode corresponder a uma oferta especial e pode ser a função de um critério, ele pode ser o valor de um campo de banco de dados vinculado aos clientes.
 
-   Este exemplo mostra um código de barras do tipo EAN-8, ao qual foi adicionado o número da conta de um recipient. Para adicionar esse número de conta, clique no botão de personalização à direita do campo **[!UICONTROL Value]** e selecione **[!UICONTROL Recipient > Account number]**.
+   Este exemplo mostra um código de barras do tipo EAN-8, ao qual foi adicionado o número da conta de um destinatário. Para adicionar esse número de conta, clique no botão de personalização à direita do campo **[!UICONTROL Value]** e selecione **[!UICONTROL Recipient > Account number]**.
 
    ![](assets/barcode_insert_15.png)
 
@@ -291,7 +291,7 @@ Em seguida, configure os seguintes elementos para atender às suas necessidades:
    >
    >O botão de personalização à direita do campo **[!UICONTROL Value]** também permite adicionar dados, além do valor. Isso enriquece o código de barras, desde que o padrão do código de barras o aceite.
    >
-   >Por exemplo, se estiver usando um código de barras do tipo GS1-128 e quiser inserir o número da conta de um recipient, além do valor, clique no botão de personalização e selecione **[!UICONTROL Recipient > Account number]**. Se o número da conta do recipient selecionado for inserido corretamente, ele será considerado pelo código de barras.
+   >Por exemplo, se estiver usando um código de barras do tipo GS1-128 e quiser inserir o número da conta de um destinatário, além do valor, clique no botão de personalização e selecione **[!UICONTROL Recipient > Account number]**. Se o número da conta do destinatário selecionado for inserido corretamente, ele será considerado pelo código de barras.
 
 Após configurar estes elementos, você pode finalizar seu email e enviá-lo. Para evitar erros, sempre verifique se o conteúdo é exibido corretamente antes de executar uma entrega clicando na guia **[!UICONTROL Preview]**.
 

@@ -21,17 +21,17 @@ ht-degree: 100%
 
 ## Envio de mensagem transacional {#transactional-message-send}
 
-Na instância de execução, uma vez que o estágio de enriquecimento esteja completo e um template do delivery esteja vinculado ao evento, o delivery será enviado.
+Na instância de execução, uma vez que o estágio de enriquecimento esteja completo e um template da entrega esteja vinculado ao evento, a entrega será enviada.
 
 >[!NOTE]
 >
->O MTA prioriza o processamento das mensagens transacionais ante qualquer outro delivery.
+>O MTA prioriza o processamento das mensagens transacionais ante qualquer outra entrega.
 
-Todos os deliveries são agrupados na pasta **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**.
+Todas as entregas são agrupadas na pasta **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**.
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
-Por padrão, eles são classificados em subpastas por mês de delivery. Essa classificação poderá ser alterada nas propriedades do modelo de mensagem conforme mostrado abaixo.
+Por padrão, elas são classificadas em subpastas por mês de entrega. Essa classificação poderá ser alterada nas propriedades do modelo de mensagem conforme mostrado abaixo.
 
 ![](assets/messagecenter_deliveries_properties_001.png)
 
@@ -41,13 +41,13 @@ Por padrão, eles são classificados em subpastas por mês de delivery. Essa cla
 
 ## Monitoramento de mensagens transacionais {#transactional-message-monitoring}
 
-Para monitorar as mensagens transacionais, verifique os [logs do delivery](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Para monitorar as mensagens transacionais, verifique os [logs da entrega](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
-Os deliveries transacionais enviados da instância de execução são sincronizados de volta à instância de controle por meio de um fluxo de trabalho técnico (**[!UICONTROL Message Center execution instance]**) que é executado a cada hora.
+As entregas transacionais enviadas da instância de execução são sincronizadas de volta à instância de controle por meio de um fluxo de trabalho técnico (**[!UICONTROL Message Center execution instance]**) que é executado a cada hora.
 
 >[!NOTE]
 >
->Os deliveries acumulam semanalmente os eventos com base na atualização mais recente do evento, e não na data de criação do evento. Portanto, ao extrair logs do delivery de mensagens transacionais da instância de controle, a ID do delivery associada a cada ID de log do delivery pode mudar com o tempo, conforme o log é atualizado (por exemplo, quando uma rejeição de entrada é recebida para o evento).
+>As entregas acumulam semanalmente os eventos com base na atualização mais recente do evento, e não na data de criação do evento. Portanto, ao extrair logs da entrega de mensagens transacionais da instância de controle, a ID da entrega associada a cada ID de log da entrega pode mudar com o tempo, conforme o log é atualizado (por exemplo, quando uma rejeição de entrada é recebida para o evento).
 
 <!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 

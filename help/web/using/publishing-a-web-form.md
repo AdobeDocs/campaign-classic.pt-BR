@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 source-git-commit: 8bb839bd0118010ac8e3e4bde88f6f3972786ed0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 100%
 
@@ -69,7 +69,7 @@ A opção **[!UICONTROL Auto-load data referenced in the form]** permite pré-ca
 
 A opção **[!UICONTROL Load additional data]** permite adicionar informações que não são usadas nas páginas do formulário, mas ainda serão pré-carregadas.
 
-É possível, por exemplo, pré-carregar o gênero do recipient e direcionar automaticamente para a página adequada através de uma caixa de teste.
+É possível, por exemplo, pré-carregar o gênero do destinatário e direcionar automaticamente para a página adequada através de uma caixa de teste.
 
 ![](assets/s_ncs_admin_survey_preload_ex.png)
 
@@ -147,7 +147,7 @@ Ao entregar um convite por email, você pode usar a opção **[!UICONTROL Adobe 
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">
 ```
 
-Nesse caso, a chave de reconciliação para o armazenamento de dados deve ser o identificador criptografado do recipient. Para obter mais informações, consulte [Pré-carregamento dos dados do formulário](#pre-loading-the-form-data).
+Nesse caso, a chave de reconciliação para o armazenamento de dados deve ser o identificador criptografado do destinatário. Para obter mais informações, consulte [Pré-carregamento dos dados do formulário](#pre-loading-the-form-data).
 
 Nesse caso, você precisa verificar a opção **[!UICONTROL Update the preloaded record]** na caixa de registro. Para obter mais informações, consulte [Salvar respostas de formulários Web](web-forms-answers.md#saving-web-forms-answers).
 
@@ -163,7 +163,7 @@ A guia **[!UICONTROL Responses]** aparece para permitir que você visualize a id
 
 ![](assets/s_ncs_admin_survey_trace_tab.png)
 
-Selecione um recipient e clique no botão **[!UICONTROL Detail...]** para exibir as respostas fornecidas.
+Selecione um destinatário e clique no botão **[!UICONTROL Detail...]** para exibir as respostas fornecidas.
 
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 

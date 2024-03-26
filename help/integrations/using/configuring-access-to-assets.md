@@ -11,7 +11,7 @@ topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '506'
 ht-degree: 100%
 
 ---
@@ -63,17 +63,17 @@ Para integrar o AEM Assets com o Adobe Campaign, você deve primeiro configurar 
 
 Saiba como integrar o Adobe Campaign e o Adobe Experience Manager na [documentação detalhada](../../integrations/using/about-adobe-experience-manager.md).
 
-Depois de configurar essa integração, você pode configurar um novo template de delivery no Adobe Campaign para usar a biblioteca do AEM Assets. Para fazer isso, siga as etapas abaixo:
+Depois de configurar essa integração, você pode configurar um novo template de entrega no Adobe Campaign para usar a biblioteca do AEM Assets. Para fazer isso, siga as etapas abaixo:
 
-1. Crie um novo template de delivery ou duplique um existente. Para obter mais informações sobre templates de Delivery, consulte [esta página](../../delivery/using/about-templates.md).
+1. Crie um novo template de entrega ou duplique um existente. Para obter mais informações sobre templates de entrega, consulte [esta página](../../delivery/using/about-templates.md).
 1. Edite as **Propriedades** desse template.
 1. Na guia **[!UICONTROL Advanced]**, defina o **[!UICONTROL Content editing mode]** para **DCE**.
 1. Selecione a **[!UICONTROL AEM account]** externa que você precisa usar para acessar a biblioteca dos Ativos AEM.
 
    ![](assets/dam_aem_assets1.png)
 
-Ao inserir imagens no conteúdo de um delivery com base nesse modelo, a opção **[!UICONTROL Select a shared asset]** permite navegar pelas imagens na biblioteca dos Ativos AEM. Saiba mais [nesta seção](../../integrations/using/inserting-a-shared-asset.md).
+Ao inserir imagens no conteúdo de uma entrega com base nesse modelo, a opção **[!UICONTROL Select a shared asset]** permite navegar pelas imagens na biblioteca dos Ativos AEM. Saiba mais [nesta seção](../../integrations/using/inserting-a-shared-asset.md).
 
 >[!NOTE]
 >
->Se o pacote de **[!UICONTROL Integration with the Adobe Experience Cloud]** também estiver instalado na sua instância do Adobe Campaign, você só poderá usar os ativos disponíveis na biblioteca da Adobe Experience Cloud. Para também acessar os ativos na sua biblioteca do AEM Assets, você deve sincronizar o AEM Assets e a Adobe Experience Cloud. Os ativos no AEM Assets também estarão disponíveis na biblioteca da Adobe Experience Cloud. Nesse caso, não é necessário criar um template do delivery específico.
+>Se o pacote de **[!UICONTROL Integration with the Adobe Experience Cloud]** também estiver instalado na sua instância do Adobe Campaign, você só poderá usar os ativos disponíveis na biblioteca da Adobe Experience Cloud. Para também acessar os ativos na sua biblioteca do AEM Assets, você deve sincronizar o AEM Assets e a Adobe Experience Cloud. Os ativos no AEM Assets também estarão disponíveis na biblioteca da Adobe Experience Cloud. Nesse caso, não é necessário criar um template da entrega específico.

@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '471'
 ht-degree: 12%
 
 ---
@@ -37,7 +37,7 @@ A Trilha de auditoria consiste em três componentes:
    * Pause
    * Stop
    * Restart
-   * Cleanup que é igual ao histórico de Expurgação da ação
+   * Limpeza que é igual ao histórico de Expurgação da ação
    * Simular qual é igual ao Início da ação no modo de simulação
    * Ativar que é igual à ação Executar tarefas pendentes agora
    * Unconditional Stop
@@ -105,4 +105,4 @@ Para fazer isso:
 
    ![](assets/audit_trail_6.png)
 
-1. Clique em **[!UICONTROL Save]** .
+1. Clique em **[!UICONTROL Save]**.

@@ -8,7 +8,7 @@ feature: Direct Mail
 role: User
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Por padrão, o arquivo de extração é criado e armazenado no servidor. Você p
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-Para um delivery de correspondência direta, o conteúdo da extração é definido no link **[!UICONTROL Edit the extraction file format...]**.
+Para uma entrega de correspondência direta, o conteúdo da extração é definido no link **[!UICONTROL Edit the extraction file format...]**.
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 

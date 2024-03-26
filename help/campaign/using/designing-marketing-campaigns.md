@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '450'
+workflow-type: tm+mt
+source-wordcount: '445'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Além disso, o módulo **GMarketing Resource Management (MRM)** permite controla
 >[!NOTE]
 >
 >Para obter mais informações sobre as funcionalidades principais do Adobe Campaign, consulte [esta seção](../../platform/using/about-adobe-campaign-classic.md).\
->Os recursos relacionados ao direcionamento de população, personalização de mensagens e delivery de mensagem nos diversos canais são detalhados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Os recursos relacionados à definição de metas de população, personalização de mensagens e entrega de mensagens nos diversos canais são detalhados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra os principais conceitos das campanhas de marketing em vídeo](#video)
 
@@ -49,7 +49,7 @@ Os seguintes conceitos precisam ser conhecidos no contexto do Campaign:
 
 * **Workflow**
 
-  Um workflow de campanha contém as mesmas atividades que para todos os workflows, mas é específico da campanha. Ele permite que você crie e configure fornecimentos para todos os canais disponíveis.
+  Um workflow de campanha contém as mesmas atividades que para todos os workflows, mas é específico da campanha. Ele permite que você crie e configure entregas para todos os canais disponíveis.
 
   Para obter mais informações, consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
@@ -57,9 +57,9 @@ Os seguintes conceitos precisam ser conhecidos no contexto do Campaign:
 
   Dentro da campanha, programa ou plano, você pode declarar uma lista de objetivos. Esses valores são quantificados para serem alcançados. No final da campanha, do programa ou do plano, o módulo MRM permite que você compare os objetivos e os resultados em relatórios dedicados.
 
-* **Delivery outline**
+* **Descrição da entrega**
 
-  Um delivery outline é uma descrição estruturada de um delivery. Cada delivery pode se referir a um delivery outline que contenha, por exemplo, as ofertas relacionadas, documentos a serem anexados ou um link para lojas. Uma oferta pode ser referida no delivery de acordo com o delivery outline selecionado.
+  Uma descrição da entrega é uma descrição estruturada de uma entrega. Cada entrega pode se referir a uma descrição da entrega que contenha, por exemplo, as ofertas relacionadas, documentos a serem anexados ou um link para lojas. Uma oferta pode ser referida na entrega de acordo com a descrição da entrega selecionada.
 
   Para obter mais informações, consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 

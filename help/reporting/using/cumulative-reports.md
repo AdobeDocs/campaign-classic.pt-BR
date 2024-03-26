@@ -17,12 +17,12 @@ ht-degree: 100%
 
 
 
-Você pode exibir relatórios acumulados sobre deliveries. Para fazer isso, selecione os deliveries a serem comparados para obter a lista de relatórios desses deliveries.
+Você pode exibir relatórios acumulados sobre entregas. Para fazer isso, selecione as entregas a serem comparadas para obter a lista de relatórios dessas entregas.
 
 ![](assets/s_ncs_user_report_compare_tab.png)
 
-Para selecionar deliveries não adjacentes na lista, mantenha a tecla CTRL pressionada ao fazer a seleção.
+Para selecionar entregas não adjacentes na lista, mantenha a tecla CTRL pressionada ao fazer a seleção.
 
-Para selecionar deliveries salvos em uma pasta diferente, clique em **[!UICONTROL Display sub-levels]** (acessível pela barra de ferramentas). Eles serão exibidos na mesma lista.
+Para selecionar entregas salvas em uma pasta diferente, clique em **[!UICONTROL Display sub-levels]** (acessível pela barra de ferramentas). Eles serão exibidos na mesma lista.
 
 ![](assets/s_ncs_user_display_children_icon.png)

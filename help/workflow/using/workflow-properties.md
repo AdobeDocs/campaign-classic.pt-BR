@@ -7,7 +7,7 @@ feature: Workflows
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '560'
 ht-degree: 100%
 
 ---
@@ -79,6 +79,6 @@ Esta seção só é exibida nos workflows da campanha.
 
   ![](assets/wf-properties_select-supervisors.png)
 
-  O template padrão **[!UICONTROL Notification to a workflow supervisor]** inclui um link para acessar o painel do Adobe Campaign pela Web para que o recipient possa trabalhar no problema quando estiver conectado.
+  O template padrão **[!UICONTROL Notification to a workflow supervisor]** inclui um link para acessar o painel do Adobe Campaign pela Web para que o destinatário possa trabalhar no problema quando estiver conectado.
 
   Para criar um template personalizado, vá para **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]**.

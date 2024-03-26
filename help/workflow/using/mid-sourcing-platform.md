@@ -28,7 +28,7 @@ Os workflows detalhados abaixo são instalados com o módulo da **plataforma Mid
   <tr> 
    <td> <span class="uicontrol">Indicadores de delivery</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryIndicators</span><br /> </td> 
-   <td> Esse workflow atualiza os indicadores de rastreamento de delivery para um delivery. Esse workflow é acionado a cada hora por padrão.<br /> </td> 
+   <td> Esse workflow atualiza os indicadores de rastreamento de entrega para uma entrega. Esse workflow é acionado a cada hora por padrão.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

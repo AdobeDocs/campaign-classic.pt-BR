@@ -7,7 +7,7 @@ feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1953'
 ht-degree: 100%
 
 ---
@@ -63,7 +63,7 @@ Para criar um subconjunto:
 
    É possível optar por gerar uma única transição de saída (e identificar conjuntos usando o código do segmento, por exemplo): para fazer isso, selecione a opção **[!UICONTROL Generate subsets in the same table]** na guia **[!UICONTROL General]**.
 
-   Se estiver concluído, o código do segmento de cada subconjunto será armazenado automaticamente em uma coluna adicional. Essa coluna estará acessível nos campos de personalização no nível de delivery.
+   Se estiver concluído, o código do segmento de cada subconjunto será armazenado automaticamente em uma coluna adicional. Essa coluna estará acessível nos campos de personalização no nível de entrega.
 
 ## Limitar o número de registros do subconjunto {#limiting-the-number-of-subset-records}
 
@@ -73,10 +73,10 @@ Se não quiser usar toda a população contida em um subconjunto, é possível l
 1. Selecione o tipo de limite escolhido:
 
    * **[!UICONTROL Activate random sampling]**: essa opção obtém uma amostra aleatória dos registros. O tipo de amostragem aleatória aplicada depende do mecanismo do banco de dados.
-   * **[!UICONTROL Keep only the first records after sorting]**: esta opção permite definir uma limitação baseada em uma ou mais ordens de classificação. Ao selecionar o campo **[!UICONTROL Age]** como um critério de classificação e 100 como o limite, somente os 100 recipients mais jovens serão mantidos.
+   * **[!UICONTROL Keep only the first records after sorting]**: esta opção permite definir uma limitação baseada em uma ou mais ordens de classificação. Ao selecionar o campo **[!UICONTROL Age]** como um critério de classificação e 100 como o limite, somente os 100 destinatários mais jovens serão mantidos.
    * **[!UICONTROL Keep the first ones after sorting (criteria, random)]**: esta opção combina as duas opções anteriores. Ele permite definir uma limitação com base em uma ou mais ordens de classificação e, então, aplicar uma seleção aleatória nos primeiros registros se alguns dos registros tiverem os mesmos valores que os critérios definidos.
 
-     Por exemplo, ao selecionar o campo **[!UICONTROL Age]** como critério de classificação e definir um limite de 100, mas os 2000 recipients mais jovens no banco de dados todos têm 18, então 100 recipients serão aleatoriamente selecionados desses 2000.
+     Por exemplo, ao selecionar o campo **[!UICONTROL Age]** como critério de classificação e definir um limite de 100, mas os 2000 destinatários mais jovens no banco de dados todos têm 18, então 100 destinatários serão aleatoriamente selecionados desses 2000.
 
    ![](assets/s_user_segmentation_partage_wz1.png)
 
@@ -148,7 +148,7 @@ O template de distribuição de dados permite limitar o número de registros de 
 
    * **[!UICONTROL Label]**: rótulo para o template de distribuição.
    * **[!UICONTROL Targeting dimension]**: digite a targeting dimension à qual a distribuição de dados será aplicada, **[!UICONTROL Recipient]** por exemplo. Esse schema deve sempre ser compatível com os dados usados no workflow para construção do target.
-   * **[!UICONTROL Distribution field]**: selecione um campo por meio da targeting dimension. Por exemplo, se selecionar o campo **[!UICONTROL Email domain]**, a lista de recipients será dividida por domínio.
+   * **[!UICONTROL Distribution field]**: selecione um campo por meio da targeting dimension. Por exemplo, se selecionar o campo **[!UICONTROL Email domain]**, a lista de destinatários será dividida por domínio.
    * **[!UICONTROL Distribution type]**: selecione a forma como o valor de limitação do target será detalhado na guia **[!UICONTROL Distribution]**: **[!UICONTROL Percentage]** ou **[!UICONTROL Set]**.
    * **[!UICONTROL Assignment type]**: selecione o tipo de atribuição de distribuição de dados. É possível escolher entre atribuição por grupo ou operador ou atribuição por entidade local. A atribuição por entidade local é usada no **Marketing distribuído**. Para obter mais informações, consulte esta [seção](../../distributed/using/about-distributed-marketing.md).
    * **[!UICONTROL Approval storage]**: se usar uma atividade **[!UICONTROL Local approval]** no workflow para construção do target (consulte [Local approval](local-approval.md)), digite o schema no qual os resultados da aprovação serão armazenados. É necessário especificar um schema de armazenamento por schema de target. Se usar o schema de target **[!UICONTROL Recipients]**, insira o schema de armazenamento padrão **[!UICONTROL Local approval of recipients]**.
@@ -161,7 +161,7 @@ O template de distribuição de dados permite limitar o número de registros de 
 
    Os seguintes campos precisam ser inseridos:
 
-   * **[!UICONTROL Approve targeted messages]**: marque esta opção se quiser que todos os recipients sejam pré-selecionados da lista de recipients a serem aprovados. Se esta opção estiver desmarcada, nenhum recipient será pré-selecionado.
+   * **[!UICONTROL Approve targeted messages]**: marque esta opção se quiser que todos os destinatários sejam pré-selecionados da lista de destinatários a serem aprovados. Se esta opção estiver desmarcada, nenhum destinatário será pré-selecionado.
 
      >[!NOTE]
      >
@@ -169,15 +169,15 @@ O template de distribuição de dados permite limitar o número de registros de 
 
      ![](assets/local_validation_notification.png)
 
-   * **[!UICONTROL Delivery label]**: permite definir uma expressão para exibir o rótulo de delivery na notificação de retorno. A expressão padrão fornece informações sobre o rótulo padrão da distribuição (string de computação). É possível modificar essa expressão.
+   * **[!UICONTROL Delivery label]**: permite definir uma expressão para exibir o rótulo de entrega na notificação de retorno. A expressão padrão fornece informações sobre o rótulo padrão da entrega (string de computação). É possível modificar essa expressão.
 
      ![](assets/local_validation_notification_3.png)
 
-   * **[!UICONTROL Grouping field]**: este campo permite definir o agrupamento usado para exibir recipients na aprovação e notificações de retorno.
+   * **[!UICONTROL Grouping field]**: este campo permite definir o agrupamento usado para exibir destinatários na aprovação e notificações de retorno.
 
      ![](assets/local_validation_notification_4.png)
 
-   * **[!UICONTROL Web Interface]**: permite vincular um aplicação web à lista de recipients. Na notificação de aprovação e retorno, cada recipient é clicável e é vinculado ao aplicativo da Web selecionado. O campo **[!UICONTROL Parameters]** (por exemplo **[!UICONTROL recipientId]**) permite configurar o parâmetro adicional a ser utilizado no URL e no aplicativo da web.
+   * **[!UICONTROL Web Interface]**: permite vincular um aplicação web à lista de destinatários. Na notificação de aprovação e retorno, cada destinatário é clicável e é vinculado ao aplicativo da Web selecionado. O campo **[!UICONTROL Parameters]** (por exemplo **[!UICONTROL recipientId]**) permite configurar o parâmetro adicional a ser utilizado no URL e no aplicativo da web.
 
      ![](assets/local_validation_notification_5.png)
 
@@ -219,8 +219,8 @@ Para evitar isso, é possível arrastar e soltar uma atividade de **[!UICONTROL 
 
 A opção **[!UICONTROL Enable overlapping of output populations]** permite gerenciar populações pertencentes a vários subconjuntos:
 
-* Quando a caixa não estiver marcada, a atividade dividida garante que um recipient não esteja presente em várias transições de saída, mesmo que ele atenda aos critérios de vários subconjuntos. Eles estarão no target da primeira guia com critérios correspondentes.
-* Quando a caixa for marcada, os recipients poderão ser encontrados em vários subconjuntos se atenderem aos critérios de filtro. O Adobe Campaign recomenda usar critérios exclusivos.
+* Quando a caixa não estiver marcada, a atividade dividida garante que um destinatário não esteja presente em várias transições de saída, mesmo que ele atenda aos critérios de vários subconjuntos. Eles estarão no target da primeira guia com critérios correspondentes.
+* Quando a caixa for marcada, os destinatários poderão ser encontrados em vários subconjuntos se atenderem aos critérios de filtro. O Adobe Campaign recomenda usar critérios exclusivos.
 
 ## Parâmetros de entrada {#input-parameters}
 

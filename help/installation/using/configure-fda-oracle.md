@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 74%
+source-wordcount: '356'
+ht-degree: 71%
 
 ---
 
@@ -84,7 +84,7 @@ A variável [!DNL Oracle] A conta externa do permite conectar a instância do Ca
 
 1. Do Campaign **[!UICONTROL Explorer]**, selecione **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. Escolha **[!UICONTROL New]**.
+1. Escolher **[!UICONTROL New]**.
 
 1. Selecione **[!UICONTROL External database]** como sua conta externa **[!UICONTROL Type]**.
 

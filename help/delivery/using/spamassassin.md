@@ -8,8 +8,8 @@ feature: Email, Deliverability
 role: User
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '267'
+workflow-type: tm+mt
+source-wordcount: '266'
 ht-degree: 100%
 
 ---
@@ -34,18 +34,18 @@ O SpamAssassin aproveita uma variedade de técnicas de detecção de spam, inclu
 
 ## Usar o SpamAssassin no Campaign {#using-spamassassin}
 
-Após criar seu delivery de email e definir seu conteúdo, siga as etapas abaixo para avaliar os riscos.
+Após criar sua entrega de email e definir seu conteúdo, siga as etapas abaixo para avaliar os riscos.
 
-Para obter mais informações sobre criar e configurar um delivery, consulte [esta página](about-email-channel.md).
+Para obter mais informações sobre criar e configurar uma entrega, consulte [esta página](about-email-channel.md).
 
 1. Acesse a guia **[!UICONTROL Preview]**.
-1. Selecione um recipient para pré-visualizar seu delivery.
+1. Selecione um destinatário para pré-visualizar sua entrega.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
 
    >[!NOTE]
    >
-   >Se você não selecionar um recipient, a verificação anti-spam não poderá ser executada.
+   >Se você não selecionar um destinatário, a verificação anti-spam não poderá ser executada.
 
 1. Uma mensagem de aviso dará o resultado do teste. Se um alto nível de risco for detectado, a seguinte mensagem de aviso será exibida:
 

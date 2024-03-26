@@ -23,7 +23,7 @@ O relatório **[!UICONTROL Offer analysis]** disponibiliza uma visão geral do n
 
 >[!NOTE]
 >
->Essa funcionalidade só é visível online e somente no gerenciador de delivery.
+>Essa funcionalidade só é visível online e somente no gerenciador de entrega.
 
 As estatísticas são classificadas com base em três critérios:
 
@@ -35,7 +35,7 @@ As estatísticas são classificadas com base em três critérios:
 
   ![](assets/offer_report_perspaces.png)
 
-* Por deliveries:
+* Por entregas:
 
   ![](assets/offer_report_perdeliveries.png)
 

@@ -8,7 +8,7 @@ feature: Monitoring, Email Design, Personalization
 role: User
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 # Configurar opções de rastreamento de URL{#personalizing-url-tracking}
 
-As configurações avançadas de rastreamento de mensagem são acessíveis por meio do ícone **[!UICONTROL Tracking & Images]** na barra de ferramentas do assistente de delivery.
+As configurações avançadas de rastreamento de mensagem são acessíveis por meio do ícone **[!UICONTROL Tracking & Images]** na barra de ferramentas do assistente de entrega.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ As configurações avançadas de rastreamento de mensagem são acessíveis por m
 
   >[!CAUTION]
   >
-  >Quando o rastreamento não é ativado em um delivery (ou seja, a opção **[!UICONTROL Activate tracking]** não está selecionada), os relatórios e dados relacionados ao rastreamento não estão disponíveis: os relatórios Opens, Hot click e tracked URLs não exibirão dados, e as guias **[!UICONTROL Tracking logs]** não serão exibidas para esse delivery.
+  >Quando o rastreamento não é ativado em uma entrega (ou seja, a opção **[!UICONTROL Activate tracking]** não está selecionada), os relatórios e dados relacionados ao rastreamento não estão disponíveis: os relatórios Opens, Hot click e tracked URLs não exibirão dados, e as guias **[!UICONTROL Tracking logs]** não serão exibidas para esse entrega.
 
 * A opção Ativar/desativar rastreamento para mensagem é aberta.
 

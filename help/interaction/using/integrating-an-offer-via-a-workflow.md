@@ -19,46 +19,46 @@ ht-degree: 100%
 
 
 
-Fora da atividade de delivery, várias atividades de workflows permitem definir a forma como as ofertas são apresentadas:
+Fora da atividade de entrega, várias atividades de workflows permitem definir a forma como as ofertas são apresentadas:
 
-* Delivery outline
+* Descrição da entrega
 * Enriquecimento
 * Mecanismo de oferta
 * Ofertas por célula
 
 ## Delivery outline {#delivery-outline}
 
-A atividade delivery outline, disponível nos workflows da campanha, permite apresentar ofertas mencionadas em um delivery outline na campanha atual em andamento.
+A atividade Descrição da entrega, disponível nos workflows da campanha, permite apresentar ofertas mencionadas em uma descrição da entrega na campanha atual em andamento.
 
-1. Em um workflow, adicione uma atividade de delivery outline antes de adicionar uma atividade de delivery.
-1. Na atividade de delivery outline, especifique o outline que deseja usar.
+1. Em um workflow, adicione uma atividade de descrição da entrega antes de adicionar uma atividade de entrega.
+1. Na atividade de descrição da entrega, especifique a descrição que deseja usar.
 
-   Para obter mais informações sobre especificação de delivery outlines, consulte o guia [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+   Para obter mais informações sobre especificação de descrição da entrega, consulte o guia [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
-1. Preencha os campos disponíveis de acordo com seu delivery.
+1. Preencha os campos disponíveis de acordo com sua entrega.
 1. Há dois casos possíveis:
 
-   * Se desejar chamar o mecanismo de oferta, marque a caixa **[!UICONTROL Restrict the number of propositions selected]**. Especifique o espaço de oferta e o número de propostas que serão apresentadas no delivery.
+   * Se desejar chamar o mecanismo de oferta, marque a caixa **[!UICONTROL Restrict the number of propositions selected]**. Especifique o espaço de oferta e o número de propostas que serão apresentadas na entrega.
 
      Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
 
-   * Se não marcar a caixa, todas as ofertas no delivery outline serão apresentadas sem chamar o mecanismo de oferta.
+   * Se não marcar a caixa, todas as ofertas na descrição da entrega serão apresentadas sem chamar o mecanismo de oferta.
 
    >[!NOTE]
    >
-   >A pré-visualização leva em conta o número de ofertas especificadas no delivery. Ao executar um workflow, é o número especificado no delivery outline que é levado em conta.
+   >A pré-visualização leva em conta o número de ofertas especificadas na entrega. Ao executar um workflow, é o número especificado na descrição da entrega que é levada em conta.
 
    ![](assets/int_compo_offre_wf1.png)
 
 ## Enriquecimento {#enrichment}
 
-A atividade de enriquecimento permite adicionar ofertas ou links para ofertas de recipients de delivery.
+A atividade de enriquecimento permite adicionar ofertas ou links para ofertas de destinatários de entrega.
 
 >[!NOTE]
 >
 >Para obter mais informações sobre a atividade de enriquecimento, consulte a documentação dedicada no [Guia de workflows](../../workflow/using/enrichment.md).
 
-Por exemplo, é possível enriquecer os dados de uma query de recipient antes de um delivery.
+Por exemplo, é possível enriquecer os dados de uma query de destinatário antes de uma entrega.
 
 ![](assets/int_enrichment_offer1.png)
 
@@ -88,11 +88,11 @@ Após configurar seu query (consulte o [Guia de workflows](../../workflow/using/
 
      ![](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em um delivery](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
 
    >[!NOTE]
    >
-   >O número de propostas disponíveis para pré-visualizar depende da configuração executada na atividade de enriquecimento, ao invés de qualquer configuração possível executada diretamente no delivery.
+   >O número de propostas disponíveis para pré-visualizar depende da configuração executada na atividade de enriquecimento, ao invés de qualquer configuração possível executada diretamente na entrega.
 
 ### Referenciar um link para uma oferta {#referencing-a-link-to-an-offer}
 
@@ -106,19 +106,19 @@ Para fazer isso, realize o seguinte processo:
 
    ![](assets/int_enrichment_link1.png)
 
-1. Especifique a ligação entre os dados da tabela de entrada na atividade de enriquecimento (aqui a tabela de recipients) e a tabela de ofertas. Por exemplo, é possível vincular um código de oferta a um recipient.
+1. Especifique a ligação entre os dados da tabela de entrada na atividade de enriquecimento (aqui a tabela de destinatários) e a tabela de ofertas. Por exemplo, é possível vincular um código de oferta a um destinatário.
 
    ![](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em um delivery](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
 
    >[!NOTE]
    >
-   >O número de propostas disponíveis para a pré-visualização depende da configuração realizada no delivery.
+   >O número de propostas disponíveis para a pré-visualização depende da configuração realizada na entrega.
 
 ### Armazenamento de classificações e pesos de ofertas {#storing-offer-rankings-and-weights}
 
-Por padrão, quando uma atividade de **enriquecimento** é usada para delivery de ofertas, suas classificações e seus pesos não são armazenados na tabela de propostas.
+Por padrão, quando uma atividade de **enriquecimento** é usada para entrega de ofertas, suas classificações e seus pesos não são armazenados na tabela de propostas.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Por padrão, quando uma atividade de **enriquecimento** é usada para delivery d
 
 No entanto, é possível armazenar essas informações da seguinte maneira:
 
-1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma query e antes de uma atividade de delivery. Consulte a seção [Especificação de uma oferta ou de uma chamada para o mecanismo de oferta](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine). 
+1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma query e antes de uma atividade de entrega. Consulte a seção [Especificação de uma oferta ou de uma chamada para o mecanismo de oferta](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine). 
 1. Na janela principal da atividade, selecione **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -137,13 +137,13 @@ No entanto, é possível armazenar essas informações da seguinte maneira:
 
 1. Confirme sua adição e salve seu workflow.
 
-O delivery armazena automaticamente a classificação e o peso das ofertas. Essas informações estão visíveis na guia **[!UICONTROL Offers]** do delivery.
+A entrega armazena automaticamente a classificação e o peso das ofertas. Essas informações estão visíveis na guia **[!UICONTROL Offers]** da entrega.
 
 ## Mecanismo de oferta {#offer-engine}
 
 A atividade de **[!UICONTROL Offer engine]** também permite especificar uma chamada para o mecanismo de oferta antes da entrega.
 
-Essa atividade funciona de acordo com o mesmo princípio que a atividade de enriquecimento com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de um delivery.
+Essa atividade funciona de acordo com o mesmo princípio que a atividade de enriquecimento com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de uma entrega.
 
 ![](assets/int_offerengine_activity2.png)
 
@@ -154,11 +154,11 @@ Após configurar seu query (consulte o [Guia de workflows](../../workflow/using/
 
    >[!NOTE]
    >
-   >Aviso: se você usar essa atividade, somente as apresentações de oferta usadas no delivery serão armazenadas.
+   >Aviso: se você usar essa atividade, somente as apresentações de oferta usadas na entrega serão armazenadas.
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em um delivery](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
 
 ## Ofertas por célula {#offers-by-cell}
 
@@ -175,4 +175,4 @@ Para fazer isso, realize o seguinte processo:
 
      ![](assets/int_offer_per_cell1.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em um delivery](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).

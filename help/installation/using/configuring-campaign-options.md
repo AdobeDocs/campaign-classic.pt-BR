@@ -10,12 +10,12 @@ topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '4004'
-ht-degree: 9%
+source-wordcount: '3838'
+ht-degree: 1%
 
 ---
 
-# Lista de opções do Campaign Classic{#configuring-campaign-options}
+# Lista de opções de Campaign Classic{#configuring-campaign-options}
 
 A variável **[!UICONTROL Administration / Platform / Options]** permite configurar as opções do Adobe Campaign. Alguns deles são incorporados ao instalar o Campaign e outros podem ser adicionados manualmente quando necessário. As opções disponíveis variam de acordo com os pacotes instalados com sua instância.
 
@@ -58,7 +58,7 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_AtivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Permite que o operador encarregado do delivery confirme o envio, se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery.</p><p> Para fazer isso, ative a opção inserindo "1" como o valor. Para desativar essa opção, digite "0".</p><p> O processo de confirmação de delivery funcionará como padrão: somente o operador ou grupo de operadores designado ao delivery nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o delivery. Consulte <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">esta seção</a>.</p> </td> 
+   <td><p> Permite que o operador encarregado do delivery confirme o envio, se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery.</p><p> Para fazer isso, ative a opção inserindo "1" como o valor. Para desativar essa opção, digite "0".</p><p> O processo de confirmação de envio funcionará como padrão: somente o operador ou grupo de operadores designado ao envio nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o envio. Consulte <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">esta seção</a>.</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> O Adobe Campaign usa uma variável global "Nms_DefaultRcpSchema" para dialogar com o banco de dados do recipient padrão (nms:recipient).<br /> O valor da opção deve corresponder ao nome do schema que corresponde à tabela do recipient externo.<br /> </td> 
@@ -300,7 +300,7 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
-   <td> Configuração de upload de imagem. Os valores podem ser none / tracking / script / list (pode ser substituído pelas configurações opcionais do operador). </td> 
+   <td> Configuração do upload de imagens. Os valores podem ser none / tracking / script / list (pode ser substituído pelas configurações opcionais do operador). </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
@@ -336,7 +336,7 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkFileRes_Public_URL</span> <br /> </td> 
-   <td> Novo URL para arquivos de recursos públicos.<br /> </td> 
+   <td> Novo URL para arquivos de recurso público.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -733,7 +733,7 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
-   <td> Essa opção é usada ao importar dados de um sistema de terceiros por meio de um conector CRM. Habilitar a opção  permite coletar apenas objetos modificados desde a última importação. Essa opção deve ser criada e preenchida manualmente conforme abaixo: 
+   <td> Essa opção é usada ao importar dados de um sistema de terceiros por meio de um conector CRM. Habilitar a opção permite coletar apenas objetos modificados desde a última importação. Essa opção deve ser criada e preenchida manualmente conforme abaixo: 
     <ul> 
      <li> <p> <span class="uicontrol">Nome interno</span> : LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</p> </li> 
      <li> <p> <span class="uicontrol">Valor (campo)</span> : data da última importação, com aaaa/MM/dd hh:mm:formato ss. </p> </li> 
@@ -741,11 +741,11 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> O servidor Adobe Target usado para a integração. Essa opção é selecionada por padrão. Esse valor corresponde ao Domain Server do Adobe Target, seguido pelo valor /m2. Por exemplo: tt.omtrdc.net/m2.<br /> Consulte <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">esta seção</a>.<br /> </td> 
+   <td> Servidor do Adobe Target usado para a integração. Essa opção é selecionada por padrão. Esse valor corresponde ao Domain Server do Adobe Target, seguido pelo valor /m2. Por exemplo: tt.omtrdc.net/m2.<br /> Consulte <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">nesta seção</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Nome da organização do Adobe Target. Esse valor corresponde ao nome do Client do Adobe Target.<br /> Consulte <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">esta seção</a>.<br /> </td> 
+   <td> Nome da organização da Adobe Target. Esse valor corresponde ao nome do cliente do Adobe Target.<br /> Consulte <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">nesta seção</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -856,7 +856,7 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ClickFormula</span> <br /> </td> 
-   <td> Script de cálculo de URL rastreado.<br /> </td> 
+   <td> Script de cálculo do URL rastreado.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ExtAccount</span> <br /> </td> 
@@ -872,7 +872,7 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_OpenFormula</span> <br /> </td> 
-   <td> Abrir script de cálculo de URL.<br /> </td> 
+   <td> Abra o script de cálculo do URL.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Password</span> <br /> </td> 
@@ -1047,7 +1047,7 @@ A variável **[!UICONTROL Administration / Platform / Options]** permite configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> Opção que permite especificar o modo de invalidação de formulários web: local por padrão; usa servidores de rastreamento se a opção for “rastreamento”; usa uma lista personalizada se a opção for “outro(s) servidor(es)”.<br /> </td> 
+   <td> Opção que permite especificar o modo de invalidação de formulários web: local por padrão; usa servidores de rastreamento se a opção for "rastreamento"; usa uma lista personalizada se a opção for "outro(s) servidor(es)".<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURLs</span> <br /> </td> 

@@ -124,7 +124,7 @@ Há duas maneiras de usar essa caixa:
   >
   >Essa opção substitui os dados do usuário, incluindo o endereço de email, se houver um campo no qual inseri-lo. Ela não pode ser usada para criar novos perfis e requer o uso de uma caixa de pré-carregamento no formulário.
 
-* Para enriquecer os dados dos recipients no banco de dados, edite a caixa de armazenamento e selecione a chave de reconciliação. Para uso interno (normalmente um sistema de intranet) ou para um formulário usado para criar novos perfis por exemplo, você pode selecionar o(s) campo(s) de reconciliação. A caixa oferece todos os campos do banco de dados usados nas várias páginas da aplicação web:
+* Para enriquecer os dados dos destinatários no banco de dados, edite a caixa de armazenamento e selecione a chave de reconciliação. Para uso interno (normalmente um sistema de intranet) ou para um formulário usado para criar novos perfis por exemplo, você pode selecionar o(s) campo(s) de reconciliação. A caixa oferece todos os campos do banco de dados usados nas várias páginas da aplicação web:
 
   ![](assets/s_ncs_admin_survey_save_box_edit.png)
 

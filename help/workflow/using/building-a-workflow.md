@@ -7,7 +7,7 @@ feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1631'
 ht-degree: 100%
 
 ---
@@ -65,11 +65,11 @@ Criação do diagrama
 
 1. Adicione uma atividade ao selecioná-la na paleta e move-la para o diagrama usando uma operação de arrastar e soltar.
 
-   Adicione uma atividade de **Start** e, em seguida, uma atividade **Delivery** no diagrama.
+   Adicione uma atividade de **Iniciar** e, em seguida, uma atividade **Entrega** no diagrama.
 
    ![](assets/new-workflow-3.png)
 
-1. Vincule as atividades ao arrastar a atividade de transição **Start** e soltar na atividade de **Delivery**.
+1. Vincule as atividades ao arrastar a atividade de transição **Iniciar** e soltar na atividade de **Entrega**.
 
    ![](assets/new-workflow-4.png)
 
@@ -126,7 +126,7 @@ Para entender melhor as atividades e melhorar a legibilidade do fluxo de trabalh
 
 ## Fluxos de trabalho para construção do target {#targeting-workflows}
 
-Os workflows para construção do target permitem que você crie vários targets de delivery. Você pode criar queries, definir uniões ou exclusões com base em critérios específicos, adicionar agendamento, graças às atividades do workflow. O resultado desse target pode ser transferido automaticamente para uma lista que pode servir como target das ações de delivery
+Os workflows para construção do target permitem que você crie vários targets de entrega. Você pode criar queries, definir uniões ou exclusões com base em critérios específicos, adicionar agendamento, graças às atividades do workflow. O resultado desse target pode ser transferido automaticamente para uma lista que pode servir como target das ações de entrega
 
 Além dessas atividades, as opções de Gestão de Dados permitem manipular dados e acessar funções avançadas para solucionar problemas complexos de target. Para obter mais informações, consulte [Gerenciamento de dados](targeting-data.md#data-management).
 
@@ -147,14 +147,14 @@ Os workflows para construção do target dentro da estrutura de uma campanha sã
 As etapas para a criação de um fluxo de trabalho de direcionamento estão detalhadas nestas seções:
 
 1. **Identificar** dados no banco de dados – Consulte [Criar consultas](targeting-data.md#creating-queries)
-1. **Preparar** dados para atender às necessidades do delivery – Consulte [Enriquecer e modificar dados](targeting-data.md#enriching-and-modifying-data)
-1. **Usar** dados para executar atualizações ou dentro de um delivery – Consulte [Atualizar o banco de dados](how-to-use-workflow-data.md#updating-the-database)
+1. **Preparar** dados para atender às necessidades da entrega – Consulte [Enriquecer e modificar dados](targeting-data.md#enriching-and-modifying-data)
+1. **Usar** dados para executar atualizações ou dentro de uma entrega – Consulte [Atualizar o banco de dados](how-to-use-workflow-data.md#updating-the-database)
 
 Os resultados de todos os enriquecimentos e todos tratamentos realizados no target são armazenados e acessíveis em campos de personalização, principalmente para usar criação de mensagens personalizadas. Para obter mais informações, consulte [Dados do target](data-life-cycle.md#target-data)
 
 ### Dimensões de filtragem e direcionamento {#targeting-and-filtering-dimensions}
 
-Durante as operações de segmentação de dados, a chave de direcionamento é mapeada para uma dimensão de filtro. O targeting dimension permite definir o público alvo da operação: recipients, beneficiários de contrato, operadores, assinantes etc. A dimensão de filtro permite selecionar o público com base em determinados critérios: titulares de contratos, assinantes de boletins informativos, etc.
+Durante as operações de segmentação de dados, a chave de direcionamento é mapeada para uma dimensão de filtro. O targeting dimension permite definir o público alvo da operação: destinatários, beneficiários de contrato, operadores, assinantes etc. A dimensão de filtro permite selecionar o público com base em determinados critérios: titulares de contratos, assinantes de boletins informativos, etc.
 
 Por exemplo, para selecionar clientes que têm uma apólice de seguro de vida por mais de 5 anos, selecione a seguinte targeting dimension: **Clients** e a seguinte dimensão do filtro: **Contract holder**. Você pode definir as condições de filtragem na atividade de query
 
@@ -162,7 +162,7 @@ Durante o estágio de seleção de targeting dimensioning dimension, somente as 
 
 Essas duas dimensões devem estar relacionadas. Assim, o conteúdo da lista **[!UICONTROL Filtering dimension]** depende do target dimension especificado no primeiro campo.
 
-Por exemplo, para recipients (**recipients**), as seguintes dimensões de filtro estarão disponíveis:
+Por exemplo, para destinatários (**destinatários**), as seguintes dimensões de filtro estarão disponíveis:
 
 ![](assets/query_filter_target_dimensions_1.png)
 
@@ -178,7 +178,7 @@ Para cada campanha, você pode criar fluxos de trabalho que serão executados na
 
 Esta guia contém as mesmas atividades que todos os workflows. [Saiba mais](#implementation-steps-)
 
-Além de direcionar campanhas, os workflows da campanha permitem criar e configurar deliveries inteiramente para todos os canais disponíveis. Após ser criado no workflow, esses deliveries estão disponíveis no painel da campanha. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md)
+Além de campanhas de target, os workflows da campanha permitem criar e configurar entregas inteiramente para todos os canais disponíveis. Após ser criado no workflow, essas entregas estão disponíveis no painel da campanha. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md)
 
 Todos os workflows da campanha são centralizados no nó **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]**.
 
@@ -188,7 +188,7 @@ Os workflows da campanha e exemplos de implementação são detalhados [nesta p�
 
 ## Workflows técnicos {#technical-workflows}
 
-Os workflows técnicos são fornecidos com o Adobe Campaign, prontos para uso. Eles são operações ou tarefas agendadas para execução periódica no servidor. Eles permitem executar a manutenção no banco de dados, encaminhar as informações de rastreamento sobre os deliveries e configurar processos provisionais nos deliveries. Os workflows técnicos são configurados por meio do nó **[!UICONTROL Administration > Production > Technical workflows]**.
+Os workflows técnicos são fornecidos com o Adobe Campaign, prontos para uso. Eles são operações ou tarefas agendadas para execução periódica no servidor. Eles permitem executar a manutenção no banco de dados, encaminhar as informações de rastreamento sobre as entregas e configurar processos provisionais nas entregas. Os workflows técnicos são configurados por meio do nó **[!UICONTROL Administration > Production > Technical workflows]**.
 
 ![](assets/navtree.png)
 
@@ -224,7 +224,7 @@ Além das propriedades usuais do workflow, as propriedades do template permitem 
 
 >[!CAUTION]
 >
->O comando copiar-colar está disponível em workflows, mas recomendamos que você use o **Duplicate**. Depois que uma atividade é copiada, toda a sua configuração é mantida. Para atividades de delivery (Email, SMS, Notificação por push...), o objeto de delivery anexado à atividade também é copiado, o que pode resultar em falha.
+>O comando copiar-colar está disponível em workflows, mas recomendamos que você use o **Duplicate**. Depois que uma atividade é copiada, toda a sua configuração é mantida. Para atividades de entrega (Email, SMS, Notificação por push...), o objeto da entrega anexado à atividade também é copiado, o que pode resultar em falha.
 
 1. Clique com o botão direito do mouse em um workflow.
 1. Clique em **Duplicate**.

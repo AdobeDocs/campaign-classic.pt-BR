@@ -10,12 +10,12 @@ topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 73%
+source-wordcount: '742'
+ht-degree: 69%
 
 ---
 
-# Configurar o acesso ao Azure Synapse {#configure-access-to-azure-synapse}
+# Configuração do acesso ao Azure synapse {#configure-access-to-azure-synapse}
 
 
 
@@ -24,7 +24,7 @@ Usar a campanha [Federated Data Access](../../installation/using/about-fda.md) (
 1. Configurar o Azure synapse em [CentOS](#azure-centos), [Windows](#azure-windows) ou [Debian](#azure-debian)
 1. Configurar o Azure synapse [conta externa](#azure-external) no Campaign
 
-## Azure Synapse no CentOS {#azure-centos}
+## Azure synapse no CentOS {#azure-centos}
 
 >[!CAUTION]
 >
@@ -107,7 +107,7 @@ Para configurar o Azure synapse no CentOS, siga as etapas abaixo:
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
    ```
 
-## Azure Synapse no Windows {#azure-windows}
+## Azure synapse no Windows {#azure-windows}
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ Para configurar o Azure Synapse no Windows:
 
 1. Como o Azure Synapse Analytics se comunica por meio da porta TCP 1433, é necessário abrir essa porta no Windows Defender Firewall. Para saber mais, consulte a [documentação do Windows](https://docs.microsoft.com/pt-BR/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
-## Azure Synapse no Debian {#azure-debian}
+## Azure synapse no Debian {#azure-debian}
 
 **Pré-requisitos:**
 
@@ -194,7 +194,7 @@ Para configurar o Azure Synapse no Debian:
 
 ## Conta externa do Azure synapse {#azure-external}
 
-A conta externa do [!DNL Azure Synapse] permite conectar a instância do Campaign ao banco de dados externo do Azure Synapse.
+A variável [!DNL Azure Synapse] A conta externa do permite conectar a instância do Campaign ao banco de dados externo do Azure synapse.
 
 Para criar o [!DNL Azure Synapse] a conta externa siga as etapas abaixo:
 

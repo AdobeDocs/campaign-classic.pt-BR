@@ -1,28 +1,28 @@
 ---
 product: campaign
 title: Criar conteúdo personalizado
-description: Saiba como criar conteúdo personalizado em deliveries do Adobe Campaign
+description: Saiba como criar conteúdo personalizado em entregas do Adobe Campaign
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '1300'
+workflow-type: tm+mt
+source-wordcount: '1296'
 ht-degree: 100%
 
 ---
 
 # Criar conteúdo personalizado {#build-personalized-content}
 
-Ao criar o conteúdo da sua mensagem, tente evitar problemas comuns que possam impedir a execução do delivery. Na maioria das vezes, possíveis erros estão relacionados à [personalização](about-personalization.md), [formatação](defining-the-email-content.md#message-content) e [imagens](defining-the-email-content.md#adding-images).
+Ao criar o conteúdo da sua mensagem, tente evitar problemas comuns que possam impedir a execução da entrega. Na maioria das vezes, possíveis erros estão relacionados à [personalização](about-personalization.md), [formatação](defining-the-email-content.md#message-content) e [imagens](defining-the-email-content.md#adding-images).
 
 ## Otimizar personalização {#optimize-personalization}
 
-Para evitar problemas comuns que podem impedir a execução do delivery e melhorar a experiência dos recipients, o Adobe Campaign permite personalizar suas mensagens.
+Para evitar problemas comuns que podem impedir a execução da entrega e melhorar a experiência dos destinatários, o Adobe Campaign permite personalizar suas mensagens.
 
-Você pode usar os dados dos recipients armazenados no banco de dados do Adobe Campaign ou coletados por meio de rastreamento, landing pages, assinaturas, etc.
+Você pode usar os dados dos destinatários armazenados no banco de dados do Adobe Campaign ou coletados por meio de rastreamento, landing pages, assinaturas, etc.
 As noções básicas de personalização são apresentadas [nesta seção](personalization-fields.md).
 
 Verifique se o conteúdo da sua mensagem foi projetado corretamente para evitar erros, que geralmente estão relacionados à personalização.
@@ -39,7 +39,7 @@ O uso incorreto de parâmetros em blocos de personalização pode ser um problem
 
 Para obter mais informações sobre blocos de personalização, consulte [esta seção](personalization-blocks.md).
 
-Você pode preparar dados de personalização em um workflow para melhorar a análise de preparação de delivery. Isso deve ser usado se os dados de personalização vierem de uma tabela através do Federated Data Access (FDA). Esta opção está descrita nesta [seção](personalization-fields.md#optimizing-personalization)
+Você pode preparar dados de personalização em um workflow para melhorar a análise de preparação de entrega. Isso deve ser usado se os dados de personalização vierem de uma tabela através do Federated Data Access (FDA). Esta opção está descrita nesta [seção](personalization-fields.md#optimizing-personalization)
 
 ## Criar conteúdo otimizado {#optimize-content}
 
@@ -73,13 +73,13 @@ Sempre inclua um link de mirror page. A posição preferencial é a parte superi
 
 O link de unsubscription é essencial. Deve ser visível e válido e o formulário deve ser funcional. Por padrão, quando a mensagem é analisada, uma [regra de tipologia](steps-validating-the-delivery.md#validation-process-with-typologies) verifica se um link para opção de não participação foi incluído e gera um aviso caso este esteja ausente.
 
-**Dica**: como o erro humano é sempre possível, verifique se o link para opção de não participação funciona corretamente antes de cada envio. Por exemplo, ao enviar a prova, verifique se o link é válido, se o formulário está online e se o campo “Não contatar mais este recipient” foi alterado para Sim.
+**Dica**: como o erro humano é sempre possível, verifique se o link para opção de não participação funciona corretamente antes de cada envio. Por exemplo, ao enviar a prova, verifique se o link é válido, se o formulário está online e se o campo “Não contatar mais este destinatário” foi alterado para Sim.
 
 Veja [nesta seção](personalization-blocks.md#personalization-blocks-example) como inserir um link para opção de não participação.
 
 ### Tamanho do email
 
-Para evitar problemas de desempenho ou de delivery, o tamanho máximo recomendado de um email é de aproximadamente **35 KB**. Para verificar o tamanho da mensagem, acesse a guia **[!UICONTROL Preview]** e escolha um perfil de teste. Uma vez gerada a mensagem, seu tamanho será exibido no canto superior direito.
+Para evitar problemas de desempenho ou de entrega, o tamanho máximo recomendado de um email é de aproximadamente **35 KB**. Para verificar o tamanho da mensagem, acesse a guia **[!UICONTROL Preview]** e escolha um perfil de teste. Uma vez gerada a mensagem, seu tamanho será exibido no canto superior direito.
 
 Para manter o email abaixo do limite, considere o seguinte:
 
@@ -114,7 +114,7 @@ Para evitar erros comuns de formatação, verifique os seguintes elementos:
 
 * Uso de **caracteres autorizados** em emails: a lista de caracteres válidos para endereços de email é definida na opção &quot;XtkEmail_Characters&quot;. Saiba como acessar as opções do Campaign [nesta seção](../../installation/using/configuring-campaign-options.md). Para trabalhar corretamente com caracteres especiais, o Adobe Campaign precisa ser instalado em Unicode.
 
-* Configuração da **autenticação de email**: verifique se os cabeçalhos de email contêm a assinatura DKIM. Com a autenticação DKIM (Domain Keys Identified Mail), o servidor de email de recebimento pode verificar se uma mensagem foi enviada pela pessoa ou entidade que alega tê-la enviado e se o conteúdo da mensagem foi alterado entre o momento em que foi originalmente enviada (e o DKIM “assinado”) e o momento em que foi recebida. Em geral, esse padrão usa o domínio no cabeçalho “De” ou “Remetente”. Para obter mais informações, consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
+* Configuração da **autenticação de email**: verifique se os cabeçalhos de email contêm a assinatura DKIM. Com a autenticação DKIM (Domain Keys Identified Mail), o servidor de email de recebimento pode verificar se uma mensagem foi enviada pela pessoa ou entidade que alega tê-la enviado e se o conteúdo da mensagem foi alterado entre o momento em que foi originalmente enviada (e o DKIM “assinado”) e o momento em que foi recebida. Em geral, esse padrão usa o domínio no cabeçalho “De” ou “Remetente”. Para obter mais informações, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 
 ### Design de email responsivo
 
@@ -150,14 +150,14 @@ Para serem acessadas de fora, as imagens usadas em emails e recursos públicos v
 
 * Você pode verificar se a configuração da instância ativa o gerenciamento de recursos públicos. [Saiba mais](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* No assistente do delivery, você pode importar uma página HTML contendo imagens ou inserir imagens diretamente usando o editor de HTML pelo ícone **[!UICONTROL Image]**. [Saiba mais](defining-the-email-content.md#adding-images)
+* No assistente da entrega, você pode importar uma página HTML contendo imagens ou inserir imagens diretamente usando o editor de HTML pelo ícone **[!UICONTROL Image]**. [Saiba mais](defining-the-email-content.md#adding-images)
 
-* Caso as imagens não sejam exibidas, verifique se elas estão disponíveis no servidor. Para fazer isso, clique na guia Origem no delivery. Localize suas imagens e copie e cole o URL de cada imagem em um navegador da web. Caso as imagens não sejam exibidas, entre em contato com o administrador de TI ou fornecedor terceirizado e disponibilize seu conteúdo de delivery.
+* Caso as imagens não sejam exibidas, verifique se elas estão disponíveis no servidor. Para fazer isso, clique na guia Origem na entrega. Localize suas imagens e copie e cole o URL de cada imagem em um navegador da web. Caso as imagens não sejam exibidas, entre em contato com o administrador de TI ou fornecedor terceirizado e disponibilize seu conteúdo de entrega.
 
 ## Visualizar sua mensagem {#preview-msg}
 
-A Adobe recomenda visualizar a mensagem para verificar a personalização e como os recipients verão a entrega.
+A Adobe recomenda visualizar a mensagem para verificar a personalização e como os destinatários verão a entrega.
 
-* No assistente do delivery, a subguia **[!UICONTROL Preview]** permite visualizar a renderização de cada conteúdo para um recipient. Os campos de personalização e os elementos condicionais do conteúdo são substituídos pelas informações correspondentes para o perfil selecionado. [Saiba mais](defining-the-email-content.md#message-content)
+* No assistente da entrega, a subguia **[!UICONTROL Preview]** permite visualizar a renderização de cada conteúdo para um destinatário. Os campos de personalização e os elementos condicionais do conteúdo são substituídos pelas informações correspondentes para o perfil selecionado. [Saiba mais](defining-the-email-content.md#message-content)
 
 * Uma verificação automática de antispam é executada durante cada pré-visualização. Na subguia **[!UICONTROL Preview]**, verifique a pontuação de spam do [SpamAssassin](spamassassin.md).  Clique em **[!UICONTROL More...]** para obter mais informações sobre o aviso.  Antes disso, verifique se o SpamAssassin está instalado e configurado corretamente no servidor de aplicativos do Adobe Campaign. [Saiba mais](../../installation/using/configuring-spamassassin.md)

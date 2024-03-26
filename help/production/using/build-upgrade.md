@@ -4,15 +4,15 @@ title: Introdução a atualizações de build
 description: Saiba mais sobre as principais etapas para atualizar para uma nova build
 feature: Monitoring, Upgrade
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2380'
-ht-degree: 5%
+source-wordcount: '2330'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 Esta seção fornecerá uma apresentação detalhada do processo de atualização e das etapas para identificar e resolver conflitos.
 
-A atualização da build deve ser realizada com cautela, seus impactos devem ser totalmente considerados com antecedência e o procedimento deve ser concluído com um alto nível de disciplina. Para garantir uma atualização bem-sucedida, verifique se apenas usuários especialistas executam as etapas descritas abaixo. Além disso, recomendamos entrar em contato com [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) antes de iniciar qualquer atualização.
+A atualização da build deve ser realizada com cautela, seus impactos devem ser totalmente considerados com antecedência e o procedimento deve ser concluído com um alto nível de disciplina. Para garantir uma atualização bem-sucedida, verifique se apenas usuários especialistas executam as etapas descritas abaixo. Além disso, recomendamos entrar em contato com [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) antes de iniciar qualquer atualização.
 
 Os seguintes pré-requisitos são necessários:
 
@@ -209,7 +209,7 @@ Os seguintes serviços precisam ser reiniciados:
 
 ### Atualização dos consoles do cliente
 
-O console do cliente deve estar na mesma build da instância do servidor.
+O console do cliente deve estar na mesma build que a instância do servidor.
 
 Na máquina em que o servidor de aplicativos do Adobe Campaign está instalado (nlserverweb), baixe e copie o arquivo:
 
@@ -251,7 +251,7 @@ Quando as mensagens transacionais (Centro de mensagens) estão ativadas na inst�
 
 No contexto de um ambiente mid-sourcing, é necessário executar estas etapas adicionais para atualizar:
 
-1. Contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para coordenar a atualização do servidor Mid-Sourcing.
+1. Contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para coordenar a atualização do servidor Mid-Sourcing.
 1. Validar se a versão foi atualizada executando um link de teste. Por exemplo:
 
    ```

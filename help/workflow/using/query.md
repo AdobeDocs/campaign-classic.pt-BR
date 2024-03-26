@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1638'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Para mais informações sobre como usar e gerenciar dados adicionais, consulte [
 
 O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, as restrições e os critérios de seleção do público da seguinte maneira:
 
-1. Selecione a targeting dimension e a dimensão de filtro. Por padrão, o target é selecionado dos recipients. A lista de filtros de restrição é igual àquelas usadas para o target de entrega.
+1. Selecione a targeting dimension e a dimensão de filtro. Por padrão, o target é selecionado dos destinatários. A lista de filtros de restrição é igual àquelas usadas para o target de entrega.
 
    O targeting dimension coincide com o tipo de elemento que iremos trabalhar, por exemplo, o público alvo da operação.
 
@@ -124,7 +124,7 @@ Para adicionar uma coleção de informações vinculadas a uma população direc
 
 1. Se você selecionou a opção **[!UICONTROL Limit the line count]**, defina a ordem na qual os dados coletados serão filtrados. Quando o número de linhas coletadas for maior que o número de linhas especificado a ser mantido, a ordem de filtragem permite que você especifique quais linhas manter.
 
-## Exemplo: direcionamento em atributos de recipients simples {#example--targeting-on-simple-recipient-attributes}
+## Exemplo: direcionamento em atributos de destinatários simples {#example--targeting-on-simple-recipient-attributes}
 
 No exemplo a seguir, o query busca identificar homens que moram na França com idades entre 18 e 30. Este query será usado em um workflow que visa fazer uma oferta exclusiva, por exemplo.
 
@@ -134,12 +134,12 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
 
 1. Nomeie o query e selecione o link **[!UICONTROL Edit query...]**.
 1. Selecione **[!UICONTROL Filtering conditions]** na lista de tipos de filtros disponíveis.
-1. Insira os diferentes critérios para o target proposto. Os critérios são combinados usando a opção AND. Para ser incluído na seleção, os recipients terão de cumprir as quatro condições seguintes:
+1. Insira os diferentes critérios para o target proposto. Os critérios são combinados usando a opção AND. Para ser incluído na seleção, os destinatários terão de cumprir as quatro condições seguintes:
 
-   * Recipients cujo título é &quot;Sr.&quot; (também é possível encontrar pelo campo **Sexo** e selecionar **Masculino** como valor).
-   * Recipients abaixo de 30 anos.
-   * Recipients acima de 18 anos.
-   * Recipients que vivem na França.
+   * Destinatários cujo título é &quot;Sr.&quot; (também é possível encontrar pelo campo **Sexo** e selecionar **Masculino** como valor).
+   * Destinatários abaixo de 30 anos.
+   * Destinatários acima de 18 anos.
+   * Destinatários que vivem na França.
 
    ![](assets/query_example.png)
 
@@ -147,12 +147,12 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
 
    ![](assets/query_example_sql.png)
 
-1. Você pode verificar se os seus critérios estão corretos visualizando os recipients que correspondam ao seu query na guia relevante:
+1. Você pode verificar se os seus critérios estão corretos visualizando os destinatários que correspondam ao seu query na guia relevante:
 
    ![](assets/query_example_preview.png)
 
 1. Salve os filtros para usá-los posteriormente clicando em **[!UICONTROL Finish]** > **[!UICONTROL OK]**.
-1. Continue editando seu workflow adicionando outras atividades a ele. Depois de iniciado e após o término da etapa de query anterior, o número de recipients encontrados será exibido. Você pode exibir mais detalhes usando o menu pop-up do mouse (clique com o botão direito do mouse na transição > **[!UICONTROL Display the target...]**).
+1. Continue editando seu workflow adicionando outras atividades a ele. Depois de iniciado e após o término da etapa de query anterior, o número de destinatários encontrados será exibido. Você pode exibir mais detalhes usando o menu pop-up do mouse (clique com o botão direito do mouse na transição > **[!UICONTROL Display the target...]**).
 
    ![](assets/query_example_result.png)
 
@@ -233,6 +233,6 @@ Para saber mais sobre as dimensões do filtro, consulte [esta seção](building-
   >
   >Um recurso que funciona em um ambiente de desenvolvimento pode não funcionar em um ambiente de produção onde os dados podem ser diferentes. Tente identificar as principais diferenças para antecipar os riscos e preparar soluções.
 
-* Faça configurações que correspondam aos volumes de target. Grandes volumes exigem configurações específicas. Uma configuração que funcionou para 100.000 recipients pode não funcionar para 10.000.000 recipients.
+* Faça configurações que correspondam aos volumes de target. Grandes volumes exigem configurações específicas. Uma configuração que funcionou para 100.000 destinatários pode não funcionar para 10.000.000 destinatários.
 
   Considere como o sistema será dimensionado quando ele for acionado. Só porque algo funciona em pequena escala não significa que seja adequado com volumes maiores. Os testes devem ser feitos com volumes semelhantes aos da produção. Você também deve avaliar o efeito das alterações nos volumes (número de chamadas, tamanho do banco de dados) nas horas de pico, dias de pico e ao longo da vida útil do projeto.

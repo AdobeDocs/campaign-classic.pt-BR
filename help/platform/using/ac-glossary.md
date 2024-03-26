@@ -7,8 +7,8 @@ role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '5978'
+workflow-type: tm+mt
+source-wordcount: '5959'
 ht-degree: 100%
 
 ---
@@ -198,7 +198,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 *Contexto: entregabilidade por email*
 
-A entregabilidade permite medir o sucesso das campanhas em chegar à caixa de entrada dos recipients sem rejeição ou sem serem marcadas como spam. Mais precisamente, a entregabilidade de emails refere-se ao conjunto de características que determinam o potencial de uma mensagem de alcançar seu destino por meio de um endereço de email pessoal, dentro de um curto período e com a qualidade esperada em termos de conteúdo e formato.
+A entregabilidade permite medir o sucesso das campanhas em chegar à caixa de entrada dos destinatários sem rejeição ou sem serem marcadas como spam. Mais precisamente, a entregabilidade de emails refere-se ao conjunto de características que determinam o potencial de uma mensagem de alcançar seu destino por meio de um endereço de email pessoal, dentro de um curto período e com a qualidade esperada em termos de conteúdo e formato.
 
 Saiba mais sobre [Entregabilidade](../../delivery/using/about-deliverability.md).
 +++
@@ -212,7 +212,7 @@ Saiba mais sobre [Entregas](../../delivery/using/communication-channels.md).
 
 +++**Análise de entrega**
 
-A análise de entrega é a preparação da entrega. Esse processo combina o conteúdo com os dados de perfil do recipient para produzir o email personalizado que o recipient recebe. A lógica de análise de entrega pode excluir recipients do público-alvo ou interromper a entrega completamente, com base na lógica definida. Esse processo também inclui a avaliação da lógica do conteúdo dinâmico e a inserção de ofertas específicas ao perfil de recipient individual.
+A análise de entrega é a preparação da entrega. Esse processo combina o conteúdo com os dados de perfil do destinatário para produzir o email personalizado que o destinatário recebe. A lógica de análise de entrega pode excluir destinatários do público-alvo ou interromper a entrega completamente, com base na lógica definida. Esse processo também inclui a avaliação da lógica do conteúdo dinâmico e a inserção de ofertas específicas ao perfil de destinatário individual.
 
 Saiba mais sobre [Análise de entrega](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 +++
@@ -297,7 +297,7 @@ E4X é a versão do Javascript usada no Adobe Campaign Classic. Algumas vezes ch
 
 *Contexto: interação de campanha*
 
-Regras de elegibilidade são restrições aplicadas a um ambiente, categoria ou oferta sobre o período de validade, público-alvo e peso. Eles permitem que os operadores garantam que uma oferta esteja alinhada com o contato direcionado. No ambiente da oferta, as regras de elegibilidade incluem regras de apresentação aplicadas às ofertas e aos recipients do público-alvo. Nas categorias, as regras de elegibilidade permitem que os operadores limitem a validade da categoria no tempo, definam temas de aplicativo e determinem os recipients do público-alvo. Eles também podem receber um peso multiplicador por determinado período. Isso permite que os operadores compartilhem as regras para ofertas em outras categorias e simplifiquem a administração. Nas ofertas, as regras de elegibilidade permitem que os operadores limitem a validade de ofertas no tempo e determinem os recipients do público-alvo.
+Regras de elegibilidade são restrições aplicadas a um ambiente, categoria ou oferta sobre o período de validade, público-alvo e peso. Eles permitem que os operadores garantam que uma oferta esteja alinhada com o contato direcionado. No ambiente da oferta, as regras de elegibilidade incluem regras de apresentação aplicadas às ofertas e aos destinatários do público-alvo. Nas categorias, as regras de elegibilidade permitem que os operadores limitem a validade da categoria no tempo, definam temas de aplicativo e determinem os destinatários do público-alvo. Eles também podem receber um peso multiplicador por determinado período. Isso permite que os operadores compartilhem as regras para ofertas em outras categorias e simplifiquem a administração. Nas ofertas, as regras de elegibilidade permitem que os operadores limitem a validade de ofertas no tempo e determinem os destinatários do público-alvo.
 
 Saiba mais sobre [Regras de elegibilidade](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -366,7 +366,7 @@ Saiba mais sobre [Contas externas](../../installation/using/external-accounts.md
 
 *Contexto: otimização de campanha*
 
-O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de recipients e é aplicado com frequência usando uma regra de tipologia.
+O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de destinatários e é aplicado com frequência usando uma regra de tipologia.
 
 Saiba mais sobre [Gerenciamento de fadiga](../../campaign-opt/using/pressure-rules.md).
 +++
@@ -410,7 +410,7 @@ Saiba mais sobre [Exibição de pastas](../../platform/using/adobe-campaign-expl
 
 +++**Formulários**
 
-Formulários definem a representação da interface para um tipo de esquema específico. Formulários são o meio usado para criar e editar facilmente elementos de dados no produto, como Recipients, Entregas e Campanhas. Todos os elementos de interface no Adobe Campaign são criados no próprio produto usando formulários. Observe que os formulários são opcionais e nem todos os esquemas têm formulários.
+Formulários definem a representação da interface para um tipo de esquema específico. Formulários são o meio usado para criar e editar facilmente elementos de dados no produto, como Destinatários, Entregas e Campanhas. Todos os elementos de interface no Adobe Campaign são criados no próprio produto usando formulários. Observe que os formulários são opcionais e nem todos os esquemas têm formulários.
 
 Saiba mais sobre [Formulários](../../configuration/using/identifying-a-form.md).
 +++
@@ -470,14 +470,14 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 *Contexto: interação de campanha*
 
-Uma interação de entrada é uma interação que segue uma chamada recebida gerada pela ação de um contato em um canal, como Web, central de atendimento ou dispositivo móvel. Esse tipo de interação geralmente é processado no modo unitário (ou seja, por recipient).
+Uma interação de entrada é uma interação que segue uma chamada recebida gerada pela ação de um contato em um canal, como Web, central de atendimento ou dispositivo móvel. Esse tipo de interação geralmente é processado no modo unitário (ou seja, por destinatário).
 
 Saiba mais sobre [Interação de entrada](../../interaction/using/about-inbound-channels.md).
 +++
 
 +++**Renderização da caixa de entrada**
 
-A renderização da caixa de entrada é a geração de visualizações de email, o que garante que a mensagem será exibida aos recipients de forma ideal em uma variedade de clientes Web, Webmails e dispositivos. O Adobe Campaign aproveita o Litmus, que permite que os criadores de conteúdo de email visualizem o conteúdo de suas mensagens em mais de 70 renderizadores de email, como a caixa de entrada do Gmail ou o cliente Apple Mail.
+A renderização da caixa de entrada é a geração de visualizações de email, o que garante que a mensagem será exibida aos destinatários de forma ideal em uma variedade de clientes Web, Webmails e dispositivos. O Adobe Campaign aproveita o Litmus, que permite que os criadores de conteúdo de email visualizem o conteúdo de suas mensagens em mais de 70 renderizadores de email, como a caixa de entrada do Gmail ou o cliente Apple Mail.
 
 Saiba mais sobre [Renderização da caixa de entrada](../../delivery/using/delivery-dashboard.md#delivery-rendering).
 +++
@@ -595,7 +595,7 @@ Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-man
 
 *Contexto: Interação do Campaign*
 
-O **Ambiente de design** de oferta é o ambiente no qual os operadores criam ofertas, definem regras de tipologia e selecionam o esquema que será direcionado pelas ofertas. A tabela para armazenar propostas de oferta geradas também é definida pelo ambiente. Por padrão, o complemento Interaction vem com um ambiente de **Design** e um ambiente **Live** vinculado. Ambos os ambientes são pré-configurados para ter como público-alvo a tabela de recipients integrada.
+O **Ambiente de design** de oferta é o ambiente no qual os operadores criam ofertas, definem regras de tipologia e selecionam o esquema que será direcionado pelas ofertas. A tabela para armazenar propostas de oferta geradas também é definida pelo ambiente. Por padrão, o complemento Interaction vem com um ambiente de **Design** e um ambiente **Live** vinculado. Ambos os ambientes são pré-configurados para ter como público-alvo a tabela de destinatários integrada.
 
 Saiba mais sobre [Ambientes de criação de ofertas](../../interaction/using/fundamental-principles.md).
 +++
@@ -640,7 +640,7 @@ Saiba mais sobre [Ambientes de oferta em tempo real](../../interaction/using/fun
 
 *Contexto: interação de campanha*
 
-As regras de apresentação de ofertas são regras de tipologia referenciadas no ambiente de ofertas, que permitem aos operadores excluir ofertas específicas tendo em conta o histórico de propostas do recipient.
+As regras de apresentação de ofertas são regras de tipologia referenciadas no ambiente de ofertas, que permitem aos operadores excluir ofertas específicas tendo em conta o histórico de propostas do destinatário.
 
 Saiba mais sobre [Regras de apresentação da oferta](../../interaction/using/managing-offer-presentation.md#presentation-rules-overview).
 +++
@@ -658,7 +658,7 @@ Saiba mais sobre [Visualização da oferta](../../interaction/using/creating-an-
 
 *Contexto: interação de campanha*
 
-Uma apresentação da oferta é o resultado da ação que consiste em apresentar uma oferta a um contato em um determinado espaço de ofertas, por exemplo, o banner em um site, um conteúdo de email ou SMS. Esse resultado é armazenado na tabela de apresentações da oferta que define a oferta, o recipient e o carimbo de data e hora, fornecendo um registro de todas as ofertas que um recipient recebeu.
+Uma apresentação da oferta é o resultado da ação que consiste em apresentar uma oferta a um contato em um determinado espaço de ofertas, por exemplo, o banner em um site, um conteúdo de email ou SMS. Esse resultado é armazenado na tabela de apresentações da oferta que define a oferta, o destinatário e o carimbo de data e hora, fornecendo um registro de todas as ofertas que um destinatário recebeu.
 
 Saiba mais sobre [Apresentações da oferta](../../interaction/using/creating-offer-spaces.md#offer-proposition-statuses).
 +++
@@ -768,14 +768,14 @@ Saiba mais sobre [Blocos de personalização](../../delivery/using/personalizati
 
 +++**Campo de personalização**
 
-Um campo de personalização é uma única referência de campo de dados usada ao personalizar uma entrega para um recipient específico. O valor de dados real é inserido durante a fase de análise da entrega.
+Um campo de personalização é uma única referência de campo de dados usada ao personalizar uma entrega para um destinatário específico. O valor de dados real é inserido durante a fase de análise da entrega.
 
 Saiba mais sobre [Campos de personalização](../../delivery/using/personalization-fields.md).
 +++
 
 +++**Variáveis de personalização**
 
-As variáveis de personalização são pedaços de código em uma entrega que podem exibir texto diferente a recipients diferentes com base nas informações do recipient. Esses campos podem ser implementados como um campo ou bloco de personalização.
+As variáveis de personalização são pedaços de código em uma entrega que podem exibir texto diferente a destinatários diferentes com base nas informações do destinatário. Esses campos podem ser implementados como um campo ou bloco de personalização.
 
 Saiba mais sobre [Variáveis de personalização](../../delivery/using/about-personalization.md).
 +++
@@ -843,11 +843,11 @@ Saiba mais sobre [Push](../../delivery/using/about-mobile-app-channel.md).
 
 ## Q - T {#sec-5}
 
-+++**Recipient**
++++**Destinatário**
 
-No Adobe Campaign, os recipients são os perfis padrão direcionados para envio de entregas (emails, SMS etc.) aos seus clientes. Os dados do recipient armazenados no banco de dados permitem filtrar o público-alvo e adicionar dados de personalização. Normalmente, são informações pessoais, de contato, demográficas e transacionais, mas podem ser qualquer tipo de informação que seja compatível com marketing e análise.
+No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (emails, SMS etc.) aos seus clientes. Os dados do destinatário armazenados no banco de dados permitem filtrar o público-alvo e adicionar dados de personalização. Normalmente, são informações pessoais, de contato, demográficas e transacionais, mas podem ser qualquer tipo de informação que seja compatível com marketing e análise.
 
-Saiba mais sobre [Recipient](../../configuration/using/about-data-model.md).
+Saiba mais sobre [Destinatário](../../configuration/using/about-data-model.md).
 +++
 
 +++**Função de renderização**
@@ -876,14 +876,14 @@ Saiba mais sobre [Esquemas](../../configuration/using/about-schema-reference.md)
 
 +++**Extensão de esquema**
 
-A extensão de esquema permite personalizar os esquemas prontos para uso para melhor atender aos casos de uso da empresa. Por exemplo, é possível adicionar o campo &quot;Fidelidade&quot; à tabela Recipient.
+A extensão de esquema permite personalizar os esquemas prontos para uso para melhor atender aos casos de uso da empresa. Por exemplo, é possível adicionar o campo &quot;Fidelidade&quot; à tabela Destinatário.
 
 Saiba mais sobre a [Extensão de esquema](../../configuration/using/extending-a-schema.md).
 +++
 
 +++**Seed addresses**
 
-Seed addresses são usados para direcionar destinatários que não correspondem aos critérios de destino definidos. Dessa forma, os recipients que estiverem fora do escopo de entrega podem recebê-lo, como qualquer outro recipient do público-alvo receberia. Eles são adicionados ao público de uma mensagem para detectar qualquer uso fraudulento do banco de dados do recipient ou para garantir a entrega.
+Seed addresses são usados para direcionar destinatários que não correspondem aos critérios de destino definidos. Dessa forma, os destinatários que estiverem fora do escopo de entrega podem recebê-lo, como qualquer outro destinatário do público-alvo receberia. Eles são adicionados ao público de uma mensagem para detectar qualquer uso fraudulento do banco de dados do destinatário ou para garantir a entrega.
 
 Saiba mais sobre [Seed addresses](../../delivery/using/about-seed-addresses.md).
 +++
@@ -1002,14 +1002,14 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 +++**Logs de rastreamento**
 
-O fluxo de trabalho técnico de rastreamento recupera os dados de rastreamento depois que a entrega é enviada e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento da entrega. Você pode encontrar informações para aberturas e cliques em um email ou outras interações com uma mensagem recebida pelo recipient.
+O fluxo de trabalho técnico de rastreamento recupera os dados de rastreamento depois que a entrega é enviada e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento da entrega. Você pode encontrar informações para aberturas e cliques em um email ou outras interações com uma mensagem recebida pelo destinatário.
 
 Saiba mais sobre [Logs de rastreamento](../../delivery/using/accessing-the-tracking-logs.md).
 +++
 
 +++**Mensagens transacionais**
 
-As mensagens transacionais são um módulo do Campaign criado para gerenciar notificações de acionador personalizadas geradas por eventos enviados por um sistema de informações externo. Uma mensagem transacional é uma comunicação individual e única enviada em tempo real a um usuário por um provedor, como um site. É particularmente esperado, pois contém informações importantes que o recipient deseja verificar ou confirmar.
+As mensagens transacionais são um módulo do Campaign criado para gerenciar notificações de acionador personalizadas geradas por eventos enviados por um sistema de informações externo. Uma mensagem transacional é uma comunicação individual e única enviada em tempo real a um usuário por um provedor, como um site. É particularmente esperado, pois contém informações importantes que o destinatário deseja verificar ou confirmar.
 
 Saiba mais sobre [Mensagens transacionais](../../message-center/using/about-transactional-messaging.md).
 +++

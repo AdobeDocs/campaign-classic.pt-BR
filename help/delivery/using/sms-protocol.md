@@ -8,7 +8,7 @@ feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 73fd678d54ba1db647c1c188e8064b28466b3cd2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '8448'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ Um SMS transporta mais informações do que texto. Aqui está uma lista do que v
 
 * O texto, que é limitado a 140 bytes, o que significa entre 70 e 160 caracteres, dependendo da codificação. Consulte [Codificação de texto SMS](sms-protocol.md#sms-text-encoding) abaixo para ver os detalhes e as limitações.
 
-* Um endereço de recipient, às vezes chamado de `ADC` ou `MSISDN`. Esse é o número do dispositivo móvel que receberá o SMS.
+* Um endereço de destinatário, às vezes chamado de `ADC` ou `MSISDN`. Esse é o número do dispositivo móvel que receberá o SMS.
 
 * Um endereço de remetente, que pode ser chamado de `oADC` ou, às vezes, `sender id`. Pode ser um número de telefone no dia a dia, um código curto quando enviado por um provedor ou um nome. O nome é um recurso opcional; nesse caso, você não pode responder ao SMS.
 
@@ -167,7 +167,7 @@ Campos de destaque em uma PDU `SUBMIT_SM`:
 
 * **dest_addr_ton** e **dest_addr_npi**: indica que tipo de endereço de destino é transmitido (por exemplo, formato local ou internacional). O significado desses campos é padronizado, mas como alguns provedores o usam de forma diferente, você deve solicitar ao provedor o valor correto. Definido na conta externa.
 
-* **target_addr**: endereço, número de telefone ou MSISDN do recipient.
+* **target_addr**: endereço, número de telefone ou MSISDN do destinatário.
 
 * **esm_class**: usado para informar se UDH é usado ou não no campo de texto. Ativado automaticamente pelo conector para SMS dividido se o modo `message_payload` não for usado.
 

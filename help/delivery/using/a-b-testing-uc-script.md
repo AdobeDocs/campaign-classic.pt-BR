@@ -8,7 +8,7 @@ feature: A/B Testing
 role: User
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 # Teste A/B: criar o script {#step-5--creating-the-script}
 
 
-A escolha do conteúdo de delivery destinado à população restante é calculada por um script. Este script recupera as informações relacionadas à delivery com a mais alta taxa de abertura e copia o conteúdo para a delivery final.
+A escolha do conteúdo de entrega destinado à população restante é calculada por um script. Este script recupera as informações relacionadas à entrega com a mais alta taxa de abertura e copia o conteúdo para a entrega final.
 
 ## Exemplo de um script {#example-of-a-script}
 
@@ -91,7 +91,7 @@ Para verificar uma explicação detalhada do script, consulte [esta seção](#de
 
 Esta seção detalha as várias partes do script e seu modo operacional.
 
-* A primeira parte do script é uma query. O comando **queryDef** permite recuperar da tabela **NmsDelivery** os deliveries criados executando o workflow para construção do target e ordenando com base na taxa estimada de abertura, então as informações do delivery com a taxa mais alta de abertura são recuperadas.
+* A primeira parte do script é uma query. O comando **queryDef** permite recuperar da tabela **NmsDelivery** as entregas criadas executando o workflow para construção do target e ordenando com base na taxa estimada de abertura, então as informações da entrega com a taxa mais alta de abertura são recuperadas.
 
   ```
   // query the database to find the winner (best open rate)
@@ -111,7 +111,7 @@ Esta seção detalha as várias partes do script e seu modo operacional.
        </queryDef>).ExecuteQuery()
   ```
 
-* A delivery com a taxa mais alta de abertura é duplicada.
+* A entrega com a taxa mais alta de abertura é duplicada.
 
   ```
    // create a new delivery object and initialize it by doing a copy of
@@ -120,14 +120,14 @@ Esta seção detalha as várias partes do script e seu modo operacional.
   delivery.Duplicate("nms:delivery|" + winner.@id)
   ```
 
-* O rótulo da delivery duplicada é modificado e a palavra **final** é adicionada a ele.
+* O rótulo da entrega duplicada é modificado e a palavra **final** é adicionada a ele.
 
   ```
   // append 'final' to the delivery label
   delivery.label = winner.@label + " final"
   ```
 
-* A delivery é copiada no painel de campanha.
+* A entrega é copiada no painel de campanha.
 
   ```
   // link the delivery to the operation to make sure it will be displayed in
@@ -144,14 +144,14 @@ Esta seção detalha as várias partes do script e seu modo operacional.
   delivery.scheduling.delayed = 0
   ```
 
-* A delivery é salva no banco de dados.
+* A entrega é salva no banco de dados.
 
   ```
   // save the delivery in database
   delivery.save()
   ```
 
-* O identificador único da delivery duplicada é armazenado na variável do workflow.
+* O identificador único da entrega duplicada é armazenado na variável do workflow.
 
   ```
   // store the new delivery Id in event variables
@@ -160,7 +160,7 @@ Esta seção detalha as várias partes do script e seu modo operacional.
 
 ## Outros critérios de seleção {#other-selection-criteria}
 
-O exemplo acima permite selecionar o conteúdo de uma delivery com base na taxa de abertura de e-mails. É possível adaptá-la se baseando em outros indicadores específicos de delivery:
+O exemplo acima permite selecionar o conteúdo de uma entrega com base na taxa de abertura de e-mails. É possível adaptá-la se baseando em outros indicadores específicos de entrega:
 
 * Melhor rendimento de cliques: `[indicators/@recipientClickRatio]`,
 * Taxa de reatividade mais alta (e-mail aberto e cliques na mensagem): `[indicators/@reactivity]`,

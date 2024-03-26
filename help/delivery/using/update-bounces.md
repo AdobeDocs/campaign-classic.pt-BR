@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
 source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## Contexto{#update-bounce-context}
 
-No caso de uma interrupção de um ISP, os emails enviados por meio do Campaign não podem ser entregues com êxito ao recipient: esses emails serão marcados incorretamente como rejeições.
+No caso de uma interrupção de um ISP, os emails enviados por meio do Campaign não podem ser entregues com êxito ao destinatário: esses emails serão marcados incorretamente como rejeições.
 
 Problemas globais na Apple ou no Gmail, por exemplo, podem fazer com que algumas mensagens de email enviadas para endereços de email válidos da Apple ou do Gmail sejam incorretamente devolvidas como endereços de email inválidos pelos servidores ISP com as seguintes respostas de devolução:
 
@@ -40,15 +40,15 @@ Observe que se o deferimento for rejeitado com a mensagem “452 ação solicita
 
 ## Impacto{#update-bounce-impact}
 
-No caso de uma interrupção de um ISP, os emails enviados por meio do Campaign não podem ser entregues com êxito ao recipient: esses emails serão marcados incorretamente como rejeições.
+No caso de uma interrupção de um ISP, os emails enviados por meio do Campaign não podem ser entregues com êxito ao destinatário: esses emails serão marcados incorretamente como rejeições.
 
-De acordo com a lógica padrão de manipulação de rejeição, o Adobe Campaign adicionou automaticamente esses recipients à lista de quarentena com uma configuração **[!UICONTROL Status]** de **[!UICONTROL Quarantine]**. Para corrigir isso, você precisa atualizar a tabela de quarentena no Campaign localizando e removendo esses recipients ou alterando seus **[!UICONTROL Status]** para **[!UICONTROL Valid]** para que o fluxo de trabalho de limpeza noturna os remova.
+De acordo com a lógica padrão de manipulação de rejeição, o Adobe Campaign adicionou automaticamente esses destinatários à lista de quarentena com uma configuração **[!UICONTROL Status]** de **[!UICONTROL Quarantine]**. Para corrigir isso, você precisa atualizar a tabela de quarentena no Campaign localizando e removendo esses destinatários ou alterando seus **[!UICONTROL Status]** para **[!UICONTROL Valid]** para que o fluxo de trabalho de limpeza noturna os remova.
 
-Para encontrar os recipients afetados por esse problema, consulte as instruções abaixo.
+Para encontrar os destinatários afetados por esse problema, consulte as instruções abaixo.
 
 ## Processo para atualização{#update-bounce-update}
 
-Você precisa executar uma consulta na tabela de quarentena para filtrar todos os recipients afetados - por exemplo, para Apple, os endereços que incluem @icloud.com, @me.com, @mac.com - que foram potencialmente afetados pela interrupção, para que possam ser removidos da lista de quarentena e incluídos em futuras entregas de email do Campaign.
+Você precisa executar uma consulta na tabela de quarentena para filtrar todos os destinatários afetados - por exemplo, para Apple, os endereços que incluem @icloud.com, @me.com, @mac.com - que foram potencialmente afetados pela interrupção, para que possam ser removidos da lista de quarentena e incluídos em futuras entregas de email do Campaign.
 
 Com base no período do incidente e no ISP, abaixo estão as diretrizes recomendadas para esta consulta.
 
@@ -69,7 +69,7 @@ Com base no período do incidente e no ISP, abaixo estão as diretrizes recomend
    * **Atualizar status (@lastModified)** em ou antes de `MM/DD/YYYY HH:MM:SS PM`
 
 
-Depois de ter a lista de recipients afetados, você pode defini-los como um status **[!UICONTROL Valid]** para que sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]** ou simplesmente excluí-los da tabela.
+Depois de ter a lista de destinatários afetados, você pode defini-los como um status **[!UICONTROL Valid]** para que sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]** ou simplesmente excluí-los da tabela.
 
 **Tópicos relacionados:**
 * [Entender as falhas de entrega](understanding-delivery-failures.md)

@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## Criar um formulário de assinatura com aceitação dupla {#create-a-subscription--form-with-double-opt-in}
 
-Quando você oferece serviços de informação, os recipients precisam se subscrever para receber todas as comunicações vinculadas. Para evitar comunicações inadequadas e verificar se o recipient se subscreveu intencionalmente, recomendamos enviar uma solicitação de confirmação da subscrição para criar um opt in duplo. A subscrição só entrará em vigor depois que o usuário clicar no link incluído na mensagem de confirmação.
+Quando você oferece serviços de informação, os destinatários precisam se subscrever para receber todas as comunicações vinculadas. Para evitar comunicações inadequadas e verificar se o destinatário se subscreveu intencionalmente, recomendamos enviar uma solicitação de confirmação da subscrição para criar um opt in duplo. A subscrição só entrará em vigor depois que o usuário clicar no link incluído na mensagem de confirmação.
 
 Este exemplo é baseado no seguinte cenário:
 
@@ -28,7 +28,7 @@ Este exemplo é baseado no seguinte cenário:
 
 ### Etapa 1 - Criação de serviços de informação {#step-1---creating-information-services}
 
-1. Crie a subscrição no serviço de boletim informativo a ser oferecido aos recipients. Para obter mais informações sobre como criar um boletim informativo, consulte [esta seção](../../delivery/using/about-services-and-subscriptions.md).
+1. Crie a subscrição no serviço de boletim informativo a ser oferecido aos destinatários. Para obter mais informações sobre como criar um boletim informativo, consulte [esta seção](../../delivery/using/about-services-and-subscriptions.md).
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -42,11 +42,11 @@ As mensagens de confirmação são enviadas por um template da entrega dedicado 
 
 1. Em **[!UICONTROL Explorer]** , selecione **[!UICONTROL Resources > Templates > Delivery templates]**.
 1. Crie um template da entrega para enviar as mensagens de confirmação da assinatura.
-1. Clique no botão **[!UICONTROL To]** em **[!UICONTROL Email parameters]** para associar o template da entrega ao target mapping das assinaturas em vez de recipients.
+1. Clique no botão **[!UICONTROL To]** em **[!UICONTROL Email parameters]** para associar o template da entrega ao target mapping das assinaturas em vez de destinatários.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Como os recipients dessa entrega não confirmaram sua aprovação, eles ainda estão incluídos na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, você precisa autorizar as entregas com base nesse template a fim de direcionar recipients incluídos na lista de bloqueios.
+1. Como os destinatários dessa entrega não confirmaram sua aprovação, eles ainda estão incluídos na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, você precisa autorizar as entregas com base nesse template a fim de direcionar destinatários incluídos na lista de bloqueios.
 
    Para fazer isso, clique na guia **[!UICONTROL Exclusions]**.
 
@@ -72,7 +72,7 @@ As mensagens de confirmação são enviadas por um template da entrega dedicado 
 
 ### Etapa 3 – Criação do formulário de assinatura {#step-3---creating-the-subscription-form}
 
-O formulário web habilita a subscrição do recipient e a confirmação da subscrição.
+O formulário web habilita a subscrição do destinatário e a confirmação da subscrição.
 
 O workflow do formulário web incluirá as seguintes atividades:
 
@@ -84,7 +84,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
-1. Na guia **[!UICONTROL Edit]**, precisamos configurar o fluxo de trabalho existente, já que queremos adicionar uma mensagem de confirmação aos recipients que desejam assinar.
+1. Na guia **[!UICONTROL Edit]**, precisamos configurar o fluxo de trabalho existente, já que queremos adicionar uma mensagem de confirmação aos destinatários que desejam assinar.
 
    Para fazer isso, clique duas vezes na caixa **[!UICONTROL Preloading]** e configure-a da seguinte maneira.
 
@@ -96,7 +96,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
-   A atividade **[!UICONTROL Test]** pode se referir ao email do recipient. Nesse caso, configure-a da seguinte maneira:
+   A atividade **[!UICONTROL Test]** pode se referir ao email do destinatário. Nesse caso, configure-a da seguinte maneira:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
@@ -104,7 +104,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   A primeira atividade **[!UICONTROL Script]** incluirá os recipients na lista de bloqueios até que eles confirmem a assinatura do boletim informativo. Seu conteúdo deve ser o seguinte:
+   A primeira atividade **[!UICONTROL Script]** incluirá os destinatários na lista de bloqueios até que eles confirmem a assinatura do boletim informativo. Seu conteúdo deve ser o seguinte:
 
    ```
    ctx.recipient.@blackList=1
@@ -112,7 +112,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   A segunda atividade **[!UICONTROL Script]** autoriza as entregas a serem enviadas aos usuários e faz a assinatura delas no boletim informativo. As duas últimas linhas do script permitirão transferir os recipients da pasta temporária para outra pasta e reconciliar com perfis existentes assim que confirmarem a assinatura.
+   A segunda atividade **[!UICONTROL Script]** autoriza as entregas a serem enviadas aos usuários e faz a assinatura delas no boletim informativo. As duas últimas linhas do script permitirão transferir os destinatários da pasta temporária para outra pasta e reconciliar com perfis existentes assim que confirmarem a assinatura.
 
    ```
    ctx.recipient.@blackList=0
@@ -133,7 +133,7 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Configure a atividade **[!UICONTROL Storage]** para salvar as informações inseridas na página do formulário.
 
-   Essa atividade permite que você crie perfis de recipients em uma pasta temporária dedicada para separá-los dos perfis no banco de dados, para quem as comunicações podem ser enviadas.
+   Essa atividade permite que você crie perfis de destinatários em uma pasta temporária dedicada para separá-los dos perfis no banco de dados, para quem as comunicações podem ser enviadas.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 

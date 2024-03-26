@@ -8,8 +8,8 @@ feature: Templates
 role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '825'
+workflow-type: tm+mt
+source-wordcount: '826'
 ht-degree: 100%
 
 ---
@@ -90,13 +90,13 @@ As seguintes opções de publicação estão disponíveis:
 
 ### Entrega {#delivery}
 
-Essa guia permite selecionar um cenário para iniciar um delivery diretamente no conteúdo. O conteúdo do email será preenchido automaticamente com base no formato de saída (HTML ou Texto).
+Essa guia permite selecionar um cenário para iniciar uma entrega diretamente no conteúdo. O conteúdo do email será preenchido automaticamente com base no formato de saída (HTML ou Texto).
 
 ![](assets/d_ncs_content_model3.png)
 
 >[!NOTE]
 >
->Para obter um exemplo de criação de delivery com base em um conteúdo, consulte [Delivery de uma instância de conteúdo](using-a-content-template.md#delivering-a-content-instance).
+>Para obter um exemplo de criação de entrega com base em um conteúdo, consulte [Entrega de uma instância de conteúdo](using-a-content-template.md#delivering-a-content-instance).
 
 ### Agregador {#aggregator}
 

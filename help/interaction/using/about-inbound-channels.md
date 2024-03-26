@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 exl-id: 33247728-b865-4dfd-814f-2900965a7187
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '208'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 As ofertas podem ser apresentadas em vários espaços de ofertas usando um canal de entrada ou saída. Este capítulo detalha alguns recursos específicos para canais de entrada.
 
-![](assets/do-not-localize/how-to-video.png) Você também pode assistir a este [vídeo](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) que detalha como fornecer uma oferta em um canal de entrada.
+![](assets/do-not-localize/how-to-video.png) Você também pode assistir a este [vídeo](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) que detalha como entregar uma oferta em um canal de entrada.
 
 Para que uma oferta seja selecionada pelo mecanismo de oferta, ela deve ser aprovada e estar disponível em um ambiente em execução. Para saber mais sobre isso, consulte [Aprovação e ativação de uma oferta](../../interaction/using/approving-and-activating-an-offer.md).
 

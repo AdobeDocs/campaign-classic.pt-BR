@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Neste exemplo, queremos oferecer uma competição aos recipients do banco de dados. O formulário Web terá uma seção para inserir respostas e outra para indicar um amigo inserindo seu endereço de email.
+Neste exemplo, queremos oferecer uma competição aos destinatários do banco de dados. O formulário Web terá uma seção para inserir respostas e outra para indicar um amigo inserindo seu endereço de email.
 
 ![](assets/s_ncs_admin_survey_viral_sample_0.png)
 
@@ -35,9 +35,9 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Se o recipient não tiver consentido, você não pode armazená-lo com os recipients no banco de dados. Ele será armazenado temporariamente na tabela de **visitante** (**nms:visitor**) criada para campanhas de marketing viral. Essa tabela é removida regularmente graças às operações de **limpeza**.
+   >Se o destinatário não tiver consentido, você não pode armazená-lo com os destinatários no banco de dados. Ele será armazenado temporariamente na tabela de **visitante** (**nms:visitor**) criada para campanhas de marketing viral. Essa tabela é removida regularmente graças às operações de **limpeza**.
    >
-   >Neste exemplo, queremos direcionar os recipients para sugerir que façam parte da competição recomendada por quem indicou. No entanto, nessa mensagem, também queremos oferecer uma subscrição de um de nossos serviços de informação. Caso se subscrevam, eles podem ser armazenados no banco de dados.
+   >Neste exemplo, queremos direcionar os destinatários para sugerir que façam parte da competição recomendada por quem indicou. No entanto, nessa mensagem, também queremos oferecer uma subscrição de um de nossos serviços de informação. Caso se subscrevam, eles podem ser armazenados no banco de dados.
 
    ![](assets/s_ncs_admin_survey_viral_sample_5.png)
 
@@ -83,7 +83,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
    * Esse template contém um link para o formulário da competição e o link de subscrição para o indicado se subscrever no boletim informativo.
 
-     O link de subscrição é inserido por um bloco de personalização. Por padrão, ele permite subscrever perfis no serviço de **boletim informativo.** Esse bloco de personalização pode ser alterado para atender a sua necessidade, por exemplo, para subscrever o recipient a um serviço diferente.
+     O link de subscrição é inserido por um bloco de personalização. Por padrão, ele permite subscrever perfis no serviço de **boletim informativo.** Esse bloco de personalização pode ser alterado para atender a sua necessidade, por exemplo, para subscrever o destinatário a um serviço diferente.
 
    * O nome interno (&quot;quem indicou&quot; aqui) será usado no script de entrega da mensagem conforme mostrado abaixo.
 
@@ -118,7 +118,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
     </delivery>)
    ```
 
-1. Publique o formulário da competição e envie um convite para os recipients do público alvo inicial. Quando um deles convida um amigo, uma entrega com base no template de **oferta de indicação** é criado.
+1. Publique o formulário da competição e envie um convite para os destinatários do público alvo inicial. Quando um deles convida um amigo, uma entrega com base no template de **oferta de indicação** é criado.
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 
@@ -126,4 +126,4 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
-   Seu perfil contém as informações inseridas por quem indicou. Ele é armazenado com base nas configurações inseridas no script de formulário. Se decidirem subscrever o boletim informativo, eles serão salvos na tabela de recipients.
+   Seu perfil contém as informações inseridas por quem indicou. Ele é armazenado com base nas configurações inseridas no script de formulário. Se decidirem subscrever o boletim informativo, eles serão salvos na tabela de destinatários.

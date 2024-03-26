@@ -17,25 +17,25 @@ ht-degree: 100%
 
 
 
-Os conceitos globais ao validar um delivery são apresentados [nesta seção](steps-validating-the-delivery.md).
+Os conceitos globais ao validar uma entrega são apresentados [nesta seção](steps-validating-the-delivery.md).
 
-O arquivo de output de um delivery de correspondência direta é gerado durante a análise de delivery. O conteúdo do arquivo depende das colunas de output selecionadas (consulte o [Arquivo de Extração](defining-the-direct-mail-content.md#extraction-file)).
+O arquivo de output de uma entrega de correspondência direta é gerado durante a análise de entrega. O conteúdo do arquivo depende das colunas de output selecionadas (consulte o [Arquivo de Extração](defining-the-direct-mail-content.md#extraction-file)).
 
 >[!NOTE]
 >
->A fase de análise é detalhada em [Análise de delivery](steps-validating-the-delivery.md#analyzing-the-delivery).
+>A fase de análise é detalhada em [Análise de entrega](steps-validating-the-delivery.md#analyzing-the-delivery).
 
-Durante a fase de análise, o arquivo é gerado, mas as informações relativas aos recipients (ou seja, logs do delivery) não são atualizadas. Assim, você pode cancelar esse trabalho sem correr nenhum risco.
+Durante a fase de análise, o arquivo é gerado, mas as informações relativas aos destinatários (ou seja, logs da entrega) não são atualizadas. Assim, você pode cancelar esse trabalho sem correr nenhum risco.
 
-Verifique o resultado da análise e o conteúdo do arquivo de output antes de clicar em **[!UICONTROL Confirm delivery]**. Uma mensagem de confirmação permite iniciar o delivery.
+Verifique o resultado da análise e o conteúdo do arquivo de output antes de clicar em **[!UICONTROL Confirm delivery]**. Uma mensagem de confirmação permite iniciar a entrega.
 
 A confirmação do envio inicia a extração dos dados no arquivo especificado.
 
 ![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
-Então, é possível fechar o assistente e examinar os logs por meio da guia **[!UICONTROL Delivery]**, acessível pelos detalhes do delivery.
+Então, é possível fechar o assistente e examinar os logs por meio da guia **[!UICONTROL Delivery]**, acessível pelos detalhes da entrega.
 
-É possível configurar o modo de recuperação de logs na guia **[!UICONTROL Analysis]** das propriedades de delivery.
+É possível configurar o modo de recuperação de logs na guia **[!UICONTROL Analysis]** das propriedades de entrega.
 
 Há dois modos:
 
@@ -44,4 +44,4 @@ Há dois modos:
 
   >[!NOTE]
   >
-  >Nesse caso, o status do delivery também precisa ser alterada para **[!UICONTROL Finished]** pelo usuário assim que os broadlogs forem atualizados.
+  >Nesse caso, o status da entrega também precisa ser alterada para **[!UICONTROL Finished]** pelo usuário assim que os broadlogs forem atualizados.

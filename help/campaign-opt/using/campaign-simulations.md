@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Campaigns
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 100%
 
@@ -19,13 +19,13 @@ ht-degree: 100%
 
 A otimização de campanha permite testar a eficiência de um plano de campanha usando simulações. Isso permite medir o sucesso potencial de uma campanha: receita gerada, volume de destino com base nas regras de tipologia aplicadas, etc.
 
-A simulação permite monitorar e comparar o impacto dos deliveries.
+A simulação permite monitorar e comparar o impacto das entregas.
 
 >[!NOTE]
 >
->Os deliveries preparados no modo Teste não têm impacto entre si ao avaliar uma campanha no marketing distribuído ou contanto que as remessas não estejam programadas no calendário provisional.\
->Isso significa que as regras de pressão e capacidade serão aplicadas apenas aos deliveries no modo **[!UICONTROL Target estimation and message personalization]**. Os deliveries no modo **[!UICONTROL Estimation and approval of the provisional target]** e no **[!UICONTROL Target evaluation]** não são considerados.\
->O modo é escolhido na subguia **[!UICONTROL Typology]** das propriedades do delivery.
+>As entregas preparadas no modo Teste não têm impacto entre si ao avaliar uma campanha no marketing distribuído ou contanto que as entregas não estejam programadas no calendário provisional.\
+>Isso significa que as regras de pressão e capacidade serão aplicadas apenas a entregas no modo **[!UICONTROL Target estimation and message personalization]**. As entregas no modo **[!UICONTROL Estimation and approval of the provisional target]** e no **[!UICONTROL Target evaluation]** não são consideradas.\
+>O modo é escolhido na subguia **[!UICONTROL Typology]** das propriedades da entrega.
 
 ![](assets/simu_campaign_select_delivery_mode.png)
 
@@ -47,17 +47,17 @@ Para criar uma simulação, aplique as seguintes etapas:
 
    ![](assets/simu_campaign_opti_edit.png)
 
-1. Na guia **[!UICONTROL Scope]**, especifique os envios que devem ser considerados nessa simulação. Para fazer isso, clique no botão **[!UICONTROL Add]** e especifique o modo de seleção de delivery a ser levado em consideração.
+1. Na guia **[!UICONTROL Scope]**, especifique as entregas que devem ser considerados nessa simulação. Para fazer isso, clique no botão **[!UICONTROL Add]** e especifique o modo de seleção de entrega a ser levado em consideração.
 
    ![](assets/simu_campaign_opti_edit_scope.png)
 
-   Você pode selecionar cada delivery um por um ou classificá-los por campanha, programa ou plano.
+   Você pode selecionar cada entrega uma por uma ou classificá-las por campanha, programa ou plano.
 
    >[!NOTE]
    >
-   >Caso selecione deliveries por meio de um plano, programa ou campanha, o Adobe Campaign poderá atualizar automaticamente a lista de deliveries a serem considerados sempre que uma simulação for iniciada. Para fazer isso, marque a opção **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]**.
+   >Caso selecione entregas por meio de um plano, programa ou campanha, o Adobe Campaign poderá atualizar automaticamente a lista de entregas a serem consideradas sempre que uma simulação for iniciada. Para fazer isso, marque a opção **[!UICONTROL Refresh the selection of deliveries each time the simulation is started]**.
    >  
-   >Se você não fizer isso, quaisquer deliveries que não estejam disponíveis no plano, programa ou campanha quando a simulação for criada não serão levados em consideração: os deliveries adicionados posteriormente serão ignorados.
+   >Se você não fizer isso, quaisquer entregas que não estejam disponíveis no plano, programa ou campanha quando a simulação for criada não serão levadas em consideração: as entregas adicionadas posteriormente serão ignoradas.
 
    ![](assets/simu_campaign_opti_edit_scope_update.png)
 
@@ -67,7 +67,7 @@ Para criar uma simulação, aplique as seguintes etapas:
 
    Clique em **[!UICONTROL Finish]** para aprovar a seleção.
 
-   Você pode combinar manualmente os deliveries selecionados e deliveries pertencentes a planos, programas ou campanhas.
+   Você pode combinar manualmente as entregas selecionadas e entregas pertencentes a planos, programas ou campanhas.
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
@@ -77,9 +77,9 @@ Para criar uma simulação, aplique as seguintes etapas:
 
    >[!NOTE]
    >
-   >Somente os deliveries cujo objetivo tenha sido calculado são levados em conta no cálculo das simulações (status: **Target ready** ou **Ready to deliver**).
+   >Somente as entregas cujo objetivo tenha sido calculado são levadas em conta no cálculo das simulações (status: **Target ready** ou **Ready to deliver**).
 
-1. Na guia **[!UICONTROL Calculations]**, selecione uma dimensão de análise como, por exemplo, o schema de recipients.
+1. Na guia **[!UICONTROL Calculations]**, selecione uma dimensão de análise como, por exemplo, o schema de destinatários.
 
    ![](assets/simu_campaign_opti_dimension.png)
 
@@ -105,14 +105,14 @@ Para fazer isso, abra o painel de simulação e clique em **[!UICONTROL Start si
 
 ![](assets/simu_campaign_opti_start.png)
 
-Uma vez concluída a execução, abra a simulação e clique na guia **[!UICONTROL Results]** para exibir os destinos calculados para cada delivery.
+Uma vez concluída a execução, abra a simulação e clique na guia **[!UICONTROL Results]** para exibir os destinos calculados para cada entrega.
 
 ![](assets/simu_campaign_opti_results.png)
 
-1. A subguia **[!UICONTROL Deliveries]** lista todos os deliveries considerados na simulação. Ela mostra duas contagens:
+1. A subguia **[!UICONTROL Deliveries]** lista todas as entregas consideradas na simulação. Ela mostra duas contagens:
 
-   * **[!UICONTROL Initial count]** é o target como foi calculado durante a estimativa no delivery.
-   * **[!UICONTROL Final count]** é o número de recipients contados após a simulação.
+   * **[!UICONTROL Initial count]** é o target como foi calculado durante a estimativa na entrega.
+   * **[!UICONTROL Final count]** é o número de destinatários contados após a simulação.
 
      A diferença entre as contagens inicial e final reflete a aplicação de várias regras ou filtros configurados antes da simulação.
 
@@ -122,7 +122,7 @@ Uma vez concluída a execução, abra a simulação e clique na guia **[!UICONTR
 
    ![](assets/simu_campaign_opti_14.png)
 
-1. A subguia **[!UICONTROL Alerts]** agrupa todas as mensagens de alerta geradas durante a simulação. As mensagens de alerta podem ser enviadas no caso de sobrecarga de capacidade (se o número de recipients exceder a capacidade definida, por exemplo).
+1. A subguia **[!UICONTROL Alerts]** agrupa todas as mensagens de alerta geradas durante a simulação. As mensagens de alerta podem ser enviadas no caso de sobrecarga de capacidade (se o número de destinatários exceder a capacidade definida, por exemplo).
 1. A subguia **[!UICONTROL Exploration of the exclusions]** permite criar uma tabela de análise de resultado. O usuário precisa indicar variáveis nos eixos abscissa/ordenadas.
 
    Para um exemplo de criação de tabela de análise, consulte o fim da opção [Exploring results](#exploring-results).
@@ -151,8 +151,8 @@ Para analisar o resultado de uma simulação, edite os relatórios: eles mostram
 
 Os seguintes relatórios são fornecidos como padrão:
 
-* **[!UICONTROL Detail of simulation exclusions]**: esse relatório fornece um gráfico detalhado das causas de exclusão para todos os deliveries relacionados.
-* **[!UICONTROL Simulation summary]**: esse relatório mostra as amostragens excluídas da simulação em todos os deliveries.
+* **[!UICONTROL Detail of simulation exclusions]**: esse relatório fornece um gráfico detalhado das causas de exclusão para todas as entregas relacionadas.
+* **[!UICONTROL Simulation summary]**: esse relatório mostra as amostragens excluídas da simulação em todas as entregas.
 * **[!UICONTROL Summary of exclusions linked to the simulation]**: esse relatório mostra um gráfico das exclusões causadas pela simulação junto com a regra de tipologia aplicada e um gráfico que mostra a taxa de exclusão por regra.
 
 >[!NOTE]
@@ -173,7 +173,7 @@ Sempre que uma simulação é executada, resultados anteriores são substituído
 
 **Exemplo:**
 
-1. Crie uma simulação em um delivery ao qual a tipologia **A** é aplicada.
+1. Crie uma simulação em uma entrega à qual a tipologia **A** é aplicada.
 1. Na guia **[!UICONTROL Reports]**, edite um dos relatórios disponíveis, como o **[!UICONTROL Detail of simulation exclusions]**, por exemplo.
 1. Na seção superior direita do relatório, clique no ícone para criar um novo histórico.
 
@@ -197,16 +197,16 @@ A guia **[!UICONTROL Calculations]** permite definir eixos de relatórios no tar
 
 **Exemplo:**
 
-No exemplo abaixo, queremos criar um eixo de relatórios adicional com base no status dos recipients (&quot;Cliente&quot;, &quot;Prospecto&quot; ou nenhum).
+No exemplo abaixo, queremos criar um eixo de relatórios adicional com base no status dos destinatários (&quot;Cliente&quot;, &quot;Prospecto&quot; ou nenhum).
 
 1. Para definir um eixo de relatórios, selecione a tabela que contém as informações a serem processadas no campo **[!UICONTROL Analysis dimension]**. Essas informações são obrigatórias.
-1. Aqui, queremos selecionar o campo Segmento da tabela de recipients.
+1. Aqui, queremos selecionar o campo Segmento da tabela de destinatários.
 
    ![](assets/simu_campaign_opti_09.png)
 
 1. As seguintes opções estão disponíveis:
 
-   * **[!UICONTROL Generate target overlap statistics]** permite recuperar todas as estatísticas de sobreposição no relatório de simulação. As sobreposições são recipients a quem são direcionadas, no mínimo, dois deliveires em uma simulação.
+   * **[!UICONTROL Generate target overlap statistics]** permite recuperar todas as estatísticas de sobreposição no relatório de simulação. As sobreposições são destinatários a quem são direcionadas, no mínimo, duas entregas em uma simulação.
 
      >[!IMPORTANT]
      >
@@ -220,7 +220,7 @@ No exemplo abaixo, queremos criar um eixo de relatórios adicional com base no s
 
 Quando os resultados da simulação forem exibidos, as informações sobre a expressão selecionada serão exibidas na subguia **[!UICONTROL Overlaps]**.
 
-A sobreposição do target de delivery indica os recipients pretendidos em pelo menos dois deliveries de uma simulação.
+A sobreposição do target de entrega indica os destinatários pretendidos em pelo menos duas entregas de uma simulação.
 
 ![](assets/simu_campaign_opti_13.png)
 

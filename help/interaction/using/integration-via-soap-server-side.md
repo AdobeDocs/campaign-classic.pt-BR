@@ -25,7 +25,7 @@ Os serviços da Web SOAP fornecidos para o gerenciamento de ofertas são diferen
 
 Para uma apresentação de oferta via SOAP, adicione o comando **nms:proposta#Propose** seguido pelos seguintes parâmetros:
 
-* **targetId**: chave primária do recipient (pode ser uma chave composta).
+* **targetId**: chave primária do destinatário (pode ser uma chave composta).
 * **maxCount**: especifica o número de apresentações de oferta para o contato.
 * **contexto**: permite adicionar informações de contexto no schema de espaço. Se o schema usado for **nms:interaction**, **`<empty>`** deverá ser adicionado.
 * **categories**: especifica a(s) categoria(s) que as ofertas devem pertencer.

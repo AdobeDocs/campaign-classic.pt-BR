@@ -8,7 +8,7 @@ feature: Channel Configuration
 role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Você precisa concluir os parâmetros para identificar a entrega. Para fazer iss
 
 1. Insira um nome para a entrega no campo **[!UICONTROL Label]**.
 
-   Um código de entrega também poderá ser atribuído. O nome da entrega e seu código aparecerão na lista de entregas, mas não poderão ser vistos pelos recipients.
+   Um código de entrega também poderá ser atribuído. O nome da entrega e seu código aparecerão na lista de entregas, mas não poderão ser vistos pelos destinatários.
 
 1. Adicione uma descrição no campo **[!UICONTROL Description]**.
 1. Selecione a natureza da entrega no campo relevante. Essas informações são úteis para o rastreamento da entrega: você poderá filtrar com base nesse critério na lista de entrega ou criar consultas usando esse critério de seleção.

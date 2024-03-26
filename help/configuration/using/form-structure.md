@@ -9,7 +9,7 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2401'
 ht-degree: 5%
 
 ---
@@ -188,7 +188,7 @@ O container principal é definido pela variável **type=&quot;notebook&quot;** a
 
 >[!NOTE]
 >
->A **style=&quot;down|up**(por padrão)**&quot;** O recurso força o posicionamento vertical dos rótulos de tabulação abaixo ou acima do controle. Este recurso é opcional.
+>A **style=&quot;down|up**(por padrão)**&quot;** O recurso força o posicionamento vertical dos rótulos de tabulação abaixo ou acima do controle. Esse recurso é opcional.
 >`<container style="down" type="notebook">  … </container>`
 
 #### Lista de ícones {#icon-list}

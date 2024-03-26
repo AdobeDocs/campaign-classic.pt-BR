@@ -16,7 +16,7 @@ ht-degree: 100%
 
 # O que é capacidade de entrega{#about-deliverability}
 
-A capacidade de entrega consiste em medir o sucesso das campanhas em chegar à caixa de entrada dos recipients sem rejeição ou sem serem marcadas como spam. [Saiba por que a capacidade de entrega é importante](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=pt-BR#why-deliverability-matters).
+A capacidade de entrega consiste em medir o sucesso das campanhas em chegar à caixa de entrada dos destinatários sem rejeição ou sem serem marcadas como spam. [Saiba por que a capacidade de entrega é importante](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=pt-BR#why-deliverability-matters).
 
 Mais precisamente, a capacidade de entrega de emails refere-se ao conjunto de características que determinam o potencial de uma mensagem de alcançar seu destino por meio de um endereço de email pessoal, dentro de um curto período e com a qualidade esperada em termos de conteúdo e formato.
 
@@ -65,7 +65,7 @@ Ao configurar, projetar e testar sua mensagem, siga as práticas recomendadas me
 
 ### Verificar consentimento por meio da aceitação dupla {#double-opt-in}
 
-Para evitar o envio de mensagens a endereços inválidos, limitar as comunicações inadequadas e melhorar a reputação do remetente, a Adobe recomenda a implementação de um mecanismo de aceitação dupla. Esse método garante que seus recipients se inscreveram intencionalmente.
+Para evitar o envio de mensagens a endereços inválidos, limitar as comunicações inadequadas e melhorar a reputação do remetente, a Adobe recomenda a implementação de um mecanismo de aceitação dupla. Esse método garante que seus destinatários se inscreveram intencionalmente.
 
 Para obter mais informações, consulte [Criar um formulário de assinatura com aceitação dupla](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
 
@@ -75,7 +75,7 @@ Para obter mais informações sobre as práticas recomendadas ao coletar dados d
 
 O Adobe Campaign gerencia uma lista que reúne reclamações de spam, rejeições permanentes e rejeições temporárias que ocorrem de forma consistente.
 
-Para proteger sua capacidade de entrega, os recipients cujos endereços estão nessa lista são excluídos por padrão de todas as entregas futuras, porque o envio para esses contatos pode prejudicar sua reputação de envio.
+Para proteger sua capacidade de entrega, os destinatários cujos endereços estão nessa lista são excluídos por padrão de todas as entregas futuras, porque o envio para esses contatos pode prejudicar sua reputação de envio.
 
 Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos é muito alta. A quarentena, portanto, evita que você seja adicionado à lista de bloqueios por esses provedores.
 

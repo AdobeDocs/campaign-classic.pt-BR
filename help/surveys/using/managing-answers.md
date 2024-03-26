@@ -57,7 +57,7 @@ Na guia **[!UICONTROL General]** do campo, o link **[!UICONTROL Initialize the l
 
 ![](assets/s_ncs_admin_survey_database_values_2.png)
 
-**Exemplo**: armazenamento dos contratos de um recipient em um campo
+**Exemplo**: armazenamento dos contratos de um destinatário em um campo
 
 Para armazenar diferentes tipos de contratos em um campo, crie um campo de entrada **[!UICONTROL Text]** e selecione a opção **[!UICONTROL Store answers to a question]**.
 
@@ -81,7 +81,7 @@ Elas podem ser visualizadas na guia **[!UICONTROL Answers]** da pesquisa ao exib
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex4.png)
 
-Você também pode filtrar recipients com base em respostas para exibir apenas os usuários que interessam a você. Para fazer isso, crie um workflow de direcionamento e use a caixa **[!UICONTROL Survey responses]**.
+Você também pode filtrar destinatários com base em respostas para exibir apenas os usuários que interessam a você. Para fazer isso, crie um workflow de direcionamento e use a caixa **[!UICONTROL Survey responses]**.
 
 ![](assets/s_ncs_admin_survey_read_responses_wf.png)
 

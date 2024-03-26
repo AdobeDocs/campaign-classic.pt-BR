@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 75%
+source-wordcount: '1636'
+ht-degree: 67%
 
 ---
 
@@ -75,7 +75,7 @@ Usar a campanha [Federated Data Access](../../installation/using/about-fda.md) (
 
 ## Conta externa Teradata{#teradata-external}
 
-A conta externa do Teradata permite conectar sua instância do Campaign ao banco de dados externo do Teradata.
+A conta externa Teradata permite conectar a instância do Campaign ao banco de dados externo do Teradata.
 
 1. Do Campaign **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
@@ -87,17 +87,17 @@ A conta externa do Teradata permite conectar sua instância do Campaign ao banco
 
    * **[!UICONTROL Type]**: escolha a **[!UICONTROL Teradata]** tipo.
 
-   * **[!UICONTROL Server]**: URL ou nome do seu servidor Teradata
+   * **[!UICONTROL Server]**: URL ou nome do servidor do Teradata
 
-   * **[!UICONTROL Account]**: Nome da conta utilizada para acessar o banco de dados Teradata
+   * **[!UICONTROL Account]**: nome da conta usada para acessar o banco de dados do Teradata
 
-   * **[!UICONTROL Password]**: Senha utilizada para conectar ao banco de dados Teradata
+   * **[!UICONTROL Password]**: Senha usada para se conectar ao banco de dados do Teradata
 
    * **[!UICONTROL Database]**: Nome do banco de dados (opcional)
 
    * **[!UICONTROL Options]**: Opções a serem passadas pelo Teradata. Use o seguinte formato: &#39;parameter=value&#39;. Use ponto e vírgula como separador entre valores.
 
-   * **[!UICONTROL Timezone]**: Fuso horário definido no Teradata. [Saiba mais](#timezone)
+   * **[!UICONTROL Timezone]**: fuso horário definido em Teradata. [Saiba mais](#timezone)
 
 O conector é compatível com as seguintes opções:
 
@@ -106,7 +106,7 @@ O conector é compatível com as seguintes opções:
 | TD_MAX_SESSIONS | Especifica o número máximo de sessões de logon que o Transportador Paralelo de Teradata pode adquirir para um trabalho de operador. |
 | TimeZoneName | Nome do fuso horário do servidor. |
 | ConjuntoDeCaracteres | Usado para configurar o conjunto de caracteres de Teradata. <br>[Para obter mais informações, consulte esta página](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
-| PáginaDeCódigoAppIANA | Página de código do aplicativo ODBC. <br>[Para obter mais informações, consulte esta página](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
+| PáginaDeCódigoAppIANA | Página de código do aplicativo ODBC. <br>Para obter mais informações, consulte [esta página](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
 
 ### Adicionar contas externas ODBC adicionais {#add-external}
 
@@ -144,7 +144,7 @@ Para configurar faixas de Query, siga as etapas abaixo:
 
 Se o seguinte erro for exibido durante o teste da conexão **TIM-030008 Data &#39;2&#39;: missing character(s) (iRc=-53)** verifique se o driver ODBC está instalado corretamente e se LD_LIBRARY_PATH (Linux) / PATH (Windows) está definido para o servidor do Campaign.
 
-Erro **ODB-240000 ODBC: [Nome da fonte de dados Microsoft][ODBC Driver Manager] não encontrado e nenhum driver padrão especificado.** ocorre com o Windows se você usar um driver 16.X. O Adobe Campaign espera que o teradata seja nomeados como &#39;{teradata}&#39; em odbcinst.ini.
+Erro **ODB-240000 ODBC: [Nome da fonte de dados Microsoft][ODBC Driver Manager] não encontrado e nenhum driver padrão especificado.** ocorre com o Windows se você usar um driver 16.X. A Adobe Campaign espera que o teradata seja nomeado como &#39;{teradata}&#39; em odbcinst.ini.
 
 * A partir do Campaign 18.10, você poderá adicionar ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; nas opções da conta externa. O número da versão pode mudar; o nome exato pode ser encontrado executando o odbcad32.exe e acessando a guia Drivers.
 
@@ -181,7 +181,7 @@ Configure o fuso horário correto. Ele deve corresponder ao que será definido n
 
 O Adobe Campaign não definirá um modo de proteção (fallback) nos objetos que ele criará no banco de dados. Talvez seja necessário definir um padrão no usuário que o Adobe Campaign usará para se conectar ao banco de dados Teradata usando o seguinte query:
 
-| desativar fallback padrão |
+| desabilitar fallback padrão |
 | :-: |
 | ```MODIFY USER $login$ AS NO FALLBACK;``` |
 
@@ -287,7 +287,7 @@ Para instalar o driver ODBC:
 
 1. Execute setup_wrapper.sh.
 
-### Instalação de ferramentas e utilitários do Teradata {#teradata-tools-installation}
+### Instalação de ferramentas e utilitários de teradata {#teradata-tools-installation}
 
 Para instalar ferramentas:
 

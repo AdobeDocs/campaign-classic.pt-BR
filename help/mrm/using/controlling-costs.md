@@ -197,7 +197,7 @@ Os custos dividem-se em três categorias:
    Se o custo real não for fornecido, as seguintes regras se aplicam:
 
    * Para uma campanha que está sendo editada, o custo calculado é o custo provisional estimado da campanha ou, se esse custo não for definido, o custo calculado será a soma de todos os custos provisional das entregas e tarefas da campanha. Se a campanha estiver concluída, o custo calculado da campanha será a soma de todos os custos calculados.
-   * Para uma entrega que ainda não foi analisada, o custo calculado é o custo estimado provisional. Se a análise já tiver sido executada, o custo calculado será a soma de todos os custos calculados da estrutura de custos do provedor de serviços e o número de recipients.
+   * Para uma entrega que ainda não foi analisada, o custo calculado é o custo estimado provisional. Se a análise já tiver sido executada, o custo calculado será a soma de todos os custos calculados da estrutura de custos do provedor de serviços e o número de destinatários.
    * Para uma tarefa em andamento, o custo calculado usa o custo provisional estimado. Se a tarefa for concluída, o custo calculado será a soma de todos os custos calculados nas estruturas de custo do provedor de serviços e o número de dias concluídos.
    * Para o plano de marketing, como para o programa, o custo calculado é a soma dos custos calculados para as campanhas. Se esses custos não forem especificados, o custo calculado usará os custos provisional estimados.
 
@@ -271,7 +271,7 @@ Vamos criar uma campanha com:
 
 #### Etapa 4 - Criar a entrega de correspondência direta {#step-4---creating-the-direct-mail-delivery}
 
-1. Crie um workflow para a campanha e posicione as atividades de query para selecionar o alvo (aviso, os endereços postais dos recipients devem ser especificados).
+1. Crie um workflow para a campanha e posicione as atividades de query para selecionar o alvo (aviso, os endereços postais dos destinatários devem ser especificados).
 
 1. Crie uma entrega de mala direta e selecione o provedor de serviços criado na Etapa 2: as categorias de custo são exibidas automaticamente.
 

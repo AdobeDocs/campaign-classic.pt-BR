@@ -5,15 +5,15 @@ description: Mapeamento de banco de dados
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
+exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
+source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# Gerenciamento de links {#links--relation-between-tables}
+# Gerenciamento de link {#links--relation-between-tables}
 
 Um link descreve a associação entre uma tabela e outra.
 

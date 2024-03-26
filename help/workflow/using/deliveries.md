@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Deliveries
-description: Saiba mais sobre os workflows de delivery padrão
+title: Entregas
+description: Saiba mais sobre os workflows de entrega padrão
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '331'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Deliveries** por padrão.
+Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Entregas** por padrão.
 
 <table> 
  <tbody> 
@@ -63,12 +63,12 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Deliveri
   <tr> 
    <td> <span class="uicontrol">Previsão</span> <br /> </td> 
    <td> <span class="uicontrol">previsão</span> <br /> </td> 
-   <td> Esse fluxo de trabalho analisa os deliveries salvos no calendário provisional (cria logs provisionais). É acionado todos os dias às 1:00 AM por padrão.<br /> </td> 
+   <td> Esse fluxo de trabalho analisa as entregas salvas no calendário provisional (cria logs provisionais). É acionado todos os dias às 1:00 AM por padrão.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Rastreamento</span> <br /> </td> 
    <td> <span class="uicontrol">tracking</span> <br /> </td> 
-   <td> Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de delivery, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. <br /> </td> 
+   <td> Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de entrega, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

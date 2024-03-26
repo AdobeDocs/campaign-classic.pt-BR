@@ -7,7 +7,7 @@ feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1142'
 ht-degree: 100%
 
 ---
@@ -129,7 +129,7 @@ O procedimento de implementação depende do tipo de pacote de campanha usado e 
 ### Tarefas do integrador {#integrator-side}
 
 1. Criar entidades locais.
-1. Vincule recipients com os operadores que gerenciam entidades locais.
+1. Vincule destinatários com os operadores que gerenciam entidades locais.
 
    ![](assets/mkg_dist_local_entity_association.png)
 

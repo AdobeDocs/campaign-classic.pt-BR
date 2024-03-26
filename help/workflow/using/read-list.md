@@ -40,11 +40,11 @@ As listas podem ser criadas diretamente no Adobe Campaign através do link **[!U
 
 **Exemplo: exclusão de uma lista de endereços enviados**
 
-O exemplo a seguir permite usar uma lista de endereços de email para excluir do target de delivery de email.
+O exemplo a seguir permite usar uma lista de endereços de email para excluir do target de entrega de email.
 
 ![](assets/s_advuser_list_read_sample_1.png)
 
-Os perfis contidos na pasta **Novos Contatos** devem ser target de uma ação de delivery. Os endereços de email a serem excluídos do target são armazenados em uma lista externa. Em nosso exemplo, somente as informações sobre endereços de email são necessárias para exclusão.
+Os perfis contidos na pasta **Novos Contatos** devem ser target de uma ação de entrega. Os endereços de email a serem excluídos do target são armazenados em uma lista externa. Em nosso exemplo, somente as informações sobre endereços de email são necessárias para exclusão.
 
 1. O query de seleção da pasta **Novos Contatos** permite carregar os endereços de email dos perfis selecionados para habilitar o alinhamento com as informações na lista.
 
@@ -68,4 +68,4 @@ Os perfis contidos na pasta **Novos Contatos** devem ser target de uma ação de
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
-1. Em seguida, selecione o campo correspondente ao endereço de email nos dois conjuntos (Origem e Destino). As colunas serão vinculadas e os recipients cujo endereço de email estiver na lista de endereços importados serão excluídos do target.
+1. Em seguida, selecione o campo correspondente ao endereço de email nos dois conjuntos (Origem e Destino). As colunas serão vinculadas e os destinatários cujo endereço de email estiver na lista de endereços importados serão excluídos do target.

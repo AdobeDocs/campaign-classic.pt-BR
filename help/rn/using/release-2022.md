@@ -102,7 +102,7 @@ _1º de março de 2022_
 * Correção de um problema ao usar a conta externa do **Web Analytics** com entregas recorrentes e contínuas, o que causava a perda parcial de dados da conta externa. (NEO-38548)
 * Correção de um problema que atrasava a pós-atualização ao atualizar a tabela NmsActiveContact . (NEO-43206)
 * Correção de um problema de falha pós-atualização que ocorria se as pastas prontas para uso fossem movidas do nó **Administração** para qualquer outro local. (NEO-42875)
-* Correção de um problema ao usar uma atividade de fluxo de trabalho **Atualizar dados**, que poderia impedir que o esquema do recipient fosse atualizado com dados do recipient de um banco de dados externo da Google Cloud. (NEO-42343)
+* Correção de um problema ao usar uma atividade de fluxo de trabalho **Atualizar dados**, que poderia impedir que o esquema do destinatário fosse atualizado com dados do destinatário de um banco de dados externo da Google Cloud. (NEO-42343)
 * Correção de um problema durante a pós-atualização relacionado ao conector do Adobe Analytics. (NEO-43318, NEO-38136)
 * Correção de um problema que substituía o CUID por &#39;VALUE_TO_CHANGE&#39; durante a pós-atualização. (NEO-43267)
 * Correção de um problema que resultava em erros ao sincronizar as instâncias de mid-sourcing e de marketing em uma configuração multimid. (NEO-10432)
@@ -148,7 +148,7 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 * O campo **[!UICONTROL Encrypted identifier]** foi adicionado ao esquema de visitante (nms:visitor). Esse campo é calculado e deve ser usado para aplicativos web. Isso se aplica quando o canal Line é configurado na instância mid-sourcing.
 * As fontes de dados do CRM agora podem ser usadas com a atividade **Alterar fonte de dados**.
 * Uma nova opção foi adicionada nas propriedades de **Gerenciamento de erros** das atividades do fluxo de trabalho: a opção **Abort on error** interrompe automaticamente o fluxo de trabalho. Não será possível reiniciá-lo posteriormente (NEO-29661). [Leia mais](../../workflow/using/advanced-parameters.md#in-case-of-errors)
-* Agora, uma sequência dedicada é usada para gerar as chaves primárias para a tabela nmsGroup, que é usada para criar grupos estatísticos de recipients. Anteriormente, a sequência xtknewId era usada. (NEO-30832)
+* Agora, uma sequência dedicada é usada para gerar as chaves primárias para a tabela nmsGroup, que é usada para criar grupos estatísticos de destinatários. Anteriormente, a sequência xtknewId era usada. (NEO-30832)
 * Adicionado suporte para operações de atualização em lote usando a atividade do conector CRM.
 * Desempenho aprimorado do tempo de processamento de mensagens transacionais. (NEO-40370)
 

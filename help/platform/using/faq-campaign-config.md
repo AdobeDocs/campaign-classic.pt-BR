@@ -10,7 +10,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '759'
 ht-degree: 100%
 
 ---
@@ -43,15 +43,15 @@ Como um usuário especialista, você pode configurar recursos de rastreamento em
 
 ## Como configurar a capacidade de entrega de emails? {#how-to-configure-email-deliverability-}
 
-Além do [Manual de práticas recomendadas de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR), leia as recomendações técnicas de capacidade de delivery para entender como configurar sua instância para maximizar os recursos de delivery do Campaign.
+Além do [Manual de práticas recomendadas de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR), leia as recomendações técnicas de capacidade de entrega para entender como configurar sua instância para maximizar os recursos de entrega do Campaign.
 
 [Clique aqui para saber mais](../../delivery/using/about-deliverability.md).
 
 ## Como posso implementar a aprovação de conteúdo? {#how-can-i-implement-content-approval-}
 
-O Campaign permite configurar processos de aprovação para as principais etapas da campanha de marketing, em modo colaborativo. Para cada campanha você pode aprovar o target, o conteúdo e os custos do delivery. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou de uma conexão com a Web.
+O Campaign permite configurar processos de aprovação para as principais etapas da campanha de marketing, em modo colaborativo. Para cada campanha você pode aprovar o target, o conteúdo e os custos da entrega. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou de uma conexão com a Web.
 
-[Clique aqui para saber mais](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) e descobrir as etapas para implementar a aprovação de conteúdo de delivery no Campaign.
+[Clique aqui para saber mais](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) e descobrir as etapas para implementar a aprovação de conteúdo de entrega no Campaign.
 
 ## Como posso acessar dados armazenados em um banco de dados externo? {#how-can-i-access-data-stored-in-an-external-database-}
 

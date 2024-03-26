@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Consultar a tabela de recipients
-description: Saiba como consultar a tabela de recipients
+title: Consultar a tabela de destinatários
+description: Saiba como consultar a tabela de destinatários
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Query Editor, Workflows
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
@@ -12,21 +12,21 @@ ht-degree: 100%
 
 ---
 
-# Consultar a tabela de recipients {#querying-recipient-table}
+# Consultar a tabela de destinatários {#querying-recipient-table}
 
 
 
-Neste exemplo, queremos recuperar os nomes e e-mails dos recipients cujos domínios de e-mail são &quot;orange.co.uk&quot; e que não estão em Londres.
+Neste exemplo, queremos recuperar os nomes e e-mails dos destinatários cujos domínios de e-mail são &quot;orange.co.uk&quot; e que não estão em Londres.
 
 * Qual tabela devemos selecionar?
 
-  A tabela de recipient (nms:recipient)
+  A tabela de destinatário (nms:recipient)
 
 * Campos a serem selecionados como colunas de saída
 
   E-mail, nome, cidade e número da conta
 
-* Quais são as condições do filtro dos recipients?
+* Quais são as condições do filtro dos destinatários?
 
   domínio de e-mail e cidade
 
@@ -48,7 +48,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 1. Na janela **[!UICONTROL Data filtering]**, refine sua pesquisa: escolha **[!UICONTROL Filtering conditions]** e clique em **[!UICONTROL Next]**.
 1. A janela **[!UICONTROL Target element]** permite inserir as configurações de filtro.
 
-   Defina a seguinte condição de filtro: recipients com um domínio de e-mail igual a &quot;orange.co.uk&quot;. Para fazer isso, escolha **Email domain (@email)** na coluna **[!UICONTROL Expression]**, escolha **equal to** na coluna **[!UICONTROL Operator]** e digite &quot;orange.co.uk&quot; na coluna **[!UICONTROL Value]**.
+   Defina a seguinte condição de filtro: destinatários com um domínio de e-mail igual a &quot;orange.co.uk&quot;. Para fazer isso, escolha **Email domain (@email)** na coluna **[!UICONTROL Expression]**, escolha **equal to** na coluna **[!UICONTROL Operator]** e digite &quot;orange.co.uk&quot; na coluna **[!UICONTROL Value]**.
 
    ![](assets/query_editor_05.png)
 
@@ -76,7 +76,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    A guia **[!UICONTROL Column results]** mostra o resultado da consulta em colunas.
 
-   O resultado mostra todos os recipients com um domínio de e-mail &quot;orange.co.uk&quot; que não vivem em Londres. A coluna &quot;First name&quot; não é mostrada porque foi desmarcada durante o estágio anterior. Os números de conta são classificados em ordem decrescente.
+   O resultado mostra todos os destinatários com um domínio de e-mail &quot;orange.co.uk&quot; que não vivem em Londres. A coluna &quot;First name&quot; não é mostrada porque foi desmarcada durante o estágio anterior. Os números de conta são classificados em ordem decrescente.
 
    ![](assets/query_editor_nveau_12.png)
 

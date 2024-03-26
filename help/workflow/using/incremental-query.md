@@ -7,7 +7,7 @@ feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '363'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Para fazer isso:
 
    * **[!UICONTROL History in days]**
 
-     Os recipients já alvos podem ser registrados em um número máximo de dias a partir do dia de envio do target. Se esse valor for zero, os recipients nunca serão removidos do log.
+     Os destinatários já alvos podem ser registrados em um número máximo de dias a partir do dia de envio do target. Se esse valor for zero, os destinatários nunca serão removidos do log.
 
    * **[!UICONTROL Keep history when starting]**
 

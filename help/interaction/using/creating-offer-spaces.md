@@ -113,7 +113,7 @@ Para fazer isso, realize o seguinte processo:
 
 ### Configuração do status quando a proposta for aceita {#configuring-the-status-when-the-proposition-is-accepted}
 
-Depois que uma apresentação de oferta for aceita, é possível usar um dos valores fornecidos por padrão para configurar o novo status da proposta. A atualização é efetiva quando um recipient clica em um link na oferta, que chama o mecanismo do Interaction.
+Depois que uma apresentação de oferta for aceita, é possível usar um dos valores fornecidos por padrão para configurar o novo status da proposta. A atualização é efetiva quando um destinatário clica em um link na oferta, que chama o mecanismo do Interaction.
 
 Para fazer isso, realize o seguinte processo:
 
@@ -154,11 +154,11 @@ No caso de uma interação de saída, é possível aplicar automaticamente o sta
 
 ## Visualização de oferta por espaço {#offer-preview-per-space}
 
-Nesta guia, é possível exibir as ofertas para as quais o recipient está qualificado por meio de um método escolhido. No exemplo abaixo, o recipient está qualificado para três propostas de ofertas por e-mail.
+Nesta guia, é possível exibir as ofertas para as quais o destinatário está qualificado por meio de um método escolhido. No exemplo abaixo, o destinatário está qualificado para três propostas de ofertas por e-mail.
 
 ![](assets/offer_space_overview_002.png)
 
-Se um recipient não estiver qualificado para ofertas, isso será mostrado na visualização.
+Se um destinatário não estiver qualificado para ofertas, isso será mostrado na visualização.
 
 ![](assets/offer_space_overview_001.png)
 

@@ -6,7 +6,7 @@ badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Clas
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Indicadores de rastreamento (deliveryFeedback)<br /> </td> 
-   <td> Resumo dos principais indicadores para rastrear o comportamento do recipient.<br /> </td> 
+   <td> Resumo dos principais indicadores para rastrear o comportamento do destinatário.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -56,7 +56,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Navegadores (browserStatistics)<br /> </td> 
-   <td> Estatísticas em navegadores usados por recipients que clicaram em mensagens.<br /> </td> 
+   <td> Estatísticas em navegadores usados por destinatários que clicaram em mensagens.<br /> </td> 
    <td> xtk:none<br /> </td> 
   </tr> 
   <tr> 
@@ -101,7 +101,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Sistemas operacionais (osStatistics)<br /> </td> 
-   <td> Estatísticas dos sistemas operacionais usados por recipients que clicaram em uma mensagem.<br /> </td> 
+   <td> Estatísticas dos sistemas operacionais usados por destinatários que clicaram em uma mensagem.<br /> </td> 
    <td> xtk:none<br /> </td> 
   </tr> 
   <tr> 

@@ -8,8 +8,8 @@ feature: Monitoring, Troubleshooting
 role: User
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '770'
+workflow-type: tm+mt
+source-wordcount: '764'
 ht-degree: 100%
 
 ---
@@ -103,11 +103,11 @@ Quando você tenta acessar os links de rastreamento, a seguinte mensagem é exib
    </redirection>
    ```
 
-1. Verifique manualmente se o arquivo &lt;deliveryID>.xml existe no computador no diretório .../nl6/var/&lt;instance_name>/redir/url/&lt;YYYY> (YYYY representa o ano do delivery).
+1. Verifique manualmente se o arquivo &lt;deliveryID>.xml existe no computador no diretório .../nl6/var/&lt;instance_name>/redir/url/&lt;YYYY> (YYYY representa o ano da entrega).
 
 1. Verifique manualmente se &lt;trackingUrlId> pode ser encontrado no arquivo &lt;deliveryID>.xml.
 
-1. Verifique manualmente a existência de broadlogID no delivery deliveryID relacionado.
+1. Verifique manualmente a existência de broadlogID na entrega deliveryID relacionado.
 
 1. Verifique as permissões dos arquivos &lt;deliveryID>.xml no diretório .../nl6/var/&lt;instance_name>/redir/url/year.
 
@@ -212,9 +212,9 @@ Uma opção no arquivo serverConf.xml permite que você defina o número de logs
 
 O valor padrão de logCountPerRequest igual a 1000 pode ser muito pequeno em alguns casos. Os valores aceitos devem estar entre 0 e 10.000.
 
-## Não foi possível vincular logs de rastreamento a recipients {#link-recipients}
+## Não foi possível vincular logs de rastreamento a destinatários {#link-recipients}
 
-No Adobe Campaign Classic, um target mapping deve ser único em termos de esquema de recipient versus esquemas broadlog/trackinglog.
+No Adobe Campaign Classic, um target mapping deve ser único em termos de esquema de destinatário versus esquemas broadlog/trackinglog.
 
 ![](assets/tracking-troubleshooting.png)
 

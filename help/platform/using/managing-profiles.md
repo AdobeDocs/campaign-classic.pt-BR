@@ -41,7 +41,7 @@ Para copiar um destinatário na mesma pasta, clique com o botão direito do mous
 
 ## Excluir destinatários {#deleting-recipients}
 
-Para excluir recipients, mova-os para uma pasta específica e, em seguida, limpe o conteúdo dessa pasta. É **altamente recomendável não usar** a opção **[!UICONTROL Delete]** neste caso.
+Para excluir destinatários, mova-os para uma pasta específica e, em seguida, limpe o conteúdo dessa pasta. É **altamente recomendável não usar** a opção **[!UICONTROL Delete]** neste caso.
 
 Para limpar uma pasta, use o menu **[!UICONTROL Actions > Purge folder]**, acessível clicando com o botão direito do mouse na pasta desejada.
 

@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 12%
+source-wordcount: '569'
+ht-degree: 7%
 
 ---
 
@@ -85,7 +85,7 @@ Se você não atualizou sua versão do Internet Explorer, verá a seguinte mensa
 
 >[!NOTE]
 >
->Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 >
 
 ## Links úteis

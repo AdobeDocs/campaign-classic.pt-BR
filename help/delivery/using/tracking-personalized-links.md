@@ -8,7 +8,7 @@ feature: Personalization
 role: User
 exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Os links no conteúdo de email que contêm personalização precisam de sintaxe específica para serem rastreados.
 
-A utilização do JavaScript no conteúdo de email (HTML ou Texto) permite gerar e enviar conteúdo dinâmico para os recipients, com duas limitações:
+A utilização do JavaScript no conteúdo de email (HTML ou Texto) permite gerar e enviar conteúdo dinâmico para os destinatários, com duas limitações:
 
 * O script não pode acessar o banco de dados diretamente (as funções SQL e API não estão disponíveis),
 * O Adobe Campaign deve ser capaz de detectar URLs para que os links possam ser rastreados. [Saiba mais](detecting-tracking-urls.md)
@@ -27,7 +27,7 @@ Você pode adicionar instruções específicas de pré-processamento para fazer 
 
 Para detecção de rastreamento, o Adobe Campaign incorpora o [Tidy](https://www.html-tidy.org/) para analisar a origem HTML e detectar o padrão. Ele lista todos os URLs do conteúdo para que possam ser rastreados individualmente. O Adobe Campaign usa o Tidy novamente para substituir o URL (`http://myurl.com`) por um URL que aponte para o servidor de redirecionamento do Adobe Campaign.
 
-Por exemplo, no conteúdo inicial: `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` é substituído para um determinado recipient por: `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
+Por exemplo, no conteúdo inicial: `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` é substituído para um determinado destinatário por: `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
 
 Em que:
 

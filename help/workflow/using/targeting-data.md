@@ -192,7 +192,7 @@ Em seguida, precisamos adicionar novos subconjuntos:
 
    ![](assets/wf_split_edit_filtering.png)
 
-1. Se necessário, você pode alterar a dimensão de filtro para cada subconjunto individualmente. Isso permite criar um conjunto para todos os titulares de cartões Gold, um para todos os recipients que clicaram no boletim informativo mais recente e um terceiro para pessoas entre 18 e 25 anos que fizeram uma compra na loja nos últimos 30 dias, tudo usando a mesma atividade de Split. Para fazer isso, selecione a opção **[!UICONTROL Use a specific filtering dimension]** e selecione o contexto da filtragem de dados.
+1. Se necessário, você pode alterar a dimensão de filtro para cada subconjunto individualmente. Isso permite criar um conjunto para todos os titulares de cartões Gold, um para todos os destinatários que clicaram no boletim informativo mais recente e um terceiro para pessoas entre 18 e 25 anos que fizeram uma compra na loja nos últimos 30 dias, tudo usando a mesma atividade de Split. Para fazer isso, selecione a opção **[!UICONTROL Use a specific filtering dimension]** e selecione o contexto da filtragem de dados.
 
    ![](assets/wf_split_change_dimension.png)
 
@@ -208,7 +208,7 @@ Você pode agrupar todos esses subconjuntos em uma única transição de output.
 
 ![](assets/wf_split_select_option_single_output.png)
 
-Por exemplo, você pode colocar uma única atividade de entrega e personalizar o conteúdo da entrega com base no código do segmento de cada conjunto de recipients:
+Por exemplo, você pode colocar uma única atividade de entrega e personalizar o conteúdo da entrega com base no código do segmento de cada conjunto de destinatários:
 
 ![](assets/wf_split_single_output.png)
 
@@ -248,7 +248,7 @@ Para implementar essas operações, o Adobe Campaign oferece:
 >
 >Quando dois workflows são vinculados, a exclusão de um elemento de tabela de origem não significa que todos os dados vinculados a ele serão excluídos.
 >  
->Por exemplo, excluir um recipient por meio de um workflow não resultará na exclusão de todo o histórico de entrega. No entanto, excluir um recipient diretamente na pasta &#39;Recipients&#39; resultará na exclusão de todos os dados vinculados a este recipient.
+>Por exemplo, excluir um destinatário por meio de um workflow não resultará na exclusão de todo o histórico de entrega. No entanto, excluir um destinatário diretamente na pasta &#39;Recipients&#39; resultará na exclusão de todos os dados vinculados a este destinatário.
 
 ### Enriquecer e modificar dados {#enriching-and-modifying-data}
 

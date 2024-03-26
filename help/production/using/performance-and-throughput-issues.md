@@ -4,15 +4,15 @@ title: Problemas de desempenho e de taxa de transferência
 description: Problemas de desempenho e de taxa de transferência
 feature: Monitoring
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 14%
+source-wordcount: '702'
+ht-degree: 8%
 
 ---
 
@@ -57,7 +57,7 @@ Esta é uma lista de artigos relacionados às práticas recomendadas de configur
 * Configuração do TLS: não é recomendável ativar o TLS globalmente, pois ele pode reduzir a taxa de transferência. Em vez disso, as configurações TLS por domínio, gerenciadas pela equipe de avaliação do delivery, devem ser ajustadas de acordo com as necessidades. Consulte esta [página](../../installation/using/email-deliverability.md#mx-configuration) para obter mais informações.
 * DKIM: para garantir o nível de segurança do DKIM, o 1024b é o tamanho de criptografia recomendado pela prática recomendada. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso. Consulte [esta página](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 
-## Problemas na capacidade de delivery {#deliverability-issues}
+## Problemas na capacidade de entrega {#deliverability-issues}
 
 Esta é uma lista de práticas recomendadas e artigos relacionados à capacidade de entrega:
 
@@ -70,4 +70,4 @@ Esta é uma lista de práticas recomendadas e artigos relacionados à capacidade
 
 >[!NOTE]
 >
->Consulte também a [Capacidade de entrega](../../delivery/using/about-deliverability.md) seção. Para obter informações mais detalhadas sobre a capacidade de delivery, consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
+>Consulte também a [Capacidade de entrega](../../delivery/using/about-deliverability.md) seção. Para obter informações mais detalhadas sobre a capacidade de entrega, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).

@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '647'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 **As mensagens transacionais** (Centro de mensagens) são um módulo do Campaign criado para gerenciar notificações de acionador personalizadas geradas por eventos enviados por um sistema de informações externo.
 
-Uma mensagem transacional é uma comunicação individual e única enviada em tempo real a um usuário por um provedor, como um site. É particularmente esperado, pois contém informações importantes que o recipient deseja verificar ou confirmar.
+Uma mensagem transacional é uma comunicação individual e única enviada em tempo real a um usuário por um provedor, como um site. É particularmente esperado, pois contém informações importantes que o destinatário deseja verificar ou confirmar.
 
 Os recursos de mensagens transacionais foram projetados para oferecer suporte à escalabilidade e disponibilizar um serviço 24 horas por dia, 7 dias por semana.
 
@@ -84,7 +84,7 @@ Depois de criar e publicar o modelo de mensagem transacional, se um evento corre
 
 1. Quando o evento é gerado pelo sistema de informações externo, os dados relevantes são enviados para o Campaign por meio dos métodos **PushEvent** e **PushEvents**. Consulte [Coleção de eventos](../../message-center/using/about-event-processing.md#event-collection).
 1. O evento é vinculado ao modelo de mensagem apropriado. Consulte [Roteamento para um modelo](../../message-center/using/about-event-processing.md#routing-towards-a-template).
-1. Quando a etapa de enriquecimento estiver concluída, a entrega será enviada. Consulte [Execução da entrega](../../message-center/using/delivery-execution.md). Cada recipient direcionado recebe uma mensagem personalizada.
+1. Quando a etapa de enriquecimento estiver concluída, a entrega será enviada. Consulte [Execução da entrega](../../message-center/using/delivery-execution.md). Cada destinatário direcionado recebe uma mensagem personalizada.
 
 ## Tópicos relacionados {#related-topics}
 

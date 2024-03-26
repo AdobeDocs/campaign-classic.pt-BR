@@ -7,8 +7,8 @@ hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 76%
+source-wordcount: '657'
+ht-degree: 68%
 
 ---
 
@@ -40,13 +40,13 @@ Como atualizar para um novo build? como monitorar a execução do fluxo de traba
     <td valign="top">
         <ul>
         <li><a href="platform/using/faq-key-concepts.md">Principais conceitos</a></li>
-        <li><a href="platform/using/faq-campaign-config.md">Configurações do Campaign</a></li>
+        <li><a href="platform/using/faq-campaign-config.md">Configurações da campanha</a></li>
         <li><a href="platform/using/faq-reporting.md">Relatórios</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Atualização da build</a></li>
         <li><a href="platform/using/faq-messages.md">Testar, enviar e rastrear mensagens</a></li>
         <li><a href="platform/using/faq-workflows.md">Fluxos de trabalho</a></li>
         <li><a href="platform/using/faq-developers.md">Desenvolvedores</a></li>
-        <li><a href="delivery/using/monitoring-deliverability.md">Capacidade de delivery</a></li>
+        <li><a href="delivery/using/monitoring-deliverability.md">Capacidade de entrega</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -67,15 +67,15 @@ Como atualizar para um novo build? como monitorar a execução do fluxo de traba
         <li><a href="production/using/monitoring-guidelines.md">Ferramentas de monitoramento do Discover</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importar dados com workflows</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Enviar mensagens em várias ondas</a></li>
-        <li><a href="delivery/using/defining-the-email-content.md">Conteúdo do email de design</a></li>
-        <li><a href="delivery/using/delivery-best-practices.md">Práticas recomendadas de delivery</a></li>
+        <li><a href="delivery/using/defining-the-email-content.md">Criar conteúdo de email</a></li>
+        <li><a href="delivery/using/delivery-best-practices.md">Práticas recomendadas de entrega</a></li>
         </ul>
     </td>
     <td valign="top">
         <ul>
         <li><a href="production/using/build-upgrade.md">Atualizar para a build mais recente</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Perguntas frequentes sobre atualização de build</a></li>
-        <li><a href="delivery/using/about-delivery-monitoring.md">Monitorar um delivery</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">Monitorar uma entrega</a></li>
         <li><a href="delivery/using/understanding-quarantine-management.md">Entender o gerenciamento de quarentenas</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Lista de verificação de segurança e privacidade</a></li>
         <li><a href="platform/using/privacy-management.md">Gestão do consentimento e da privacidade</a></li>
@@ -137,7 +137,7 @@ O novo sistema de emissão de bilhetes foi lançado através [Adobe Admin Consol
 
 ### Pergunte aos especialistas.
 
-Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_em branco}.
+Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Acessar o Centro de download do Campaign
 

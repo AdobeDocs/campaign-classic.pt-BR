@@ -10,8 +10,8 @@ content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 100%
+source-wordcount: '1209'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ Exemplo:
 O conteúdo é definido no formato JSON no Adobe Analytics para cada acionador.
 Por exemplo, em um acionador LogoUpload_uploading_Visits:
 
-* **[!UICONTROL eVar01]** pode conter a ID do consumidor em formato String, utilizada para reconciliar com recipients do Adobe Campaign. <br>Deve ser reconciliado para localizar a ID do consumidor, que é a chave primária.
+* **[!UICONTROL eVar01]** pode conter a ID do consumidor em formato String, utilizada para reconciliar com destinatários do Adobe Campaign. <br>Deve ser reconciliado para localizar a ID do consumidor, que é a chave primária.
 
 * **[!UICONTROL timeGMT]** pode conter a hora do acionador no lado do Adobe Analytics no formato UTC Epoch (segundos desde 01/01/1970 UTC).
 
@@ -220,7 +220,7 @@ Os eventos podem ser exibidos com um formulário simples baseado no schema de ev
 
 >[!NOTE]
 >
->O nó do evento pipeline não está incorporado e precisa ser adicionado, assim como o formulário relacionado precisa ser criado no Campaign. Essas operações são restritas unicamente a usuários especialistas. Para obter mais informações, consulte as seções: [Hierarquia de navegação](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy) e [Formas de edição](../../configuration/using/editing-forms.md).
+>O nó do evento pipeline não está incorporado e precisa ser adicionado, assim como o formulário relacionado precisa ser criado no Campaign. Essas operações são restritas unicamente a usuários especialistas. Para obter mais informações, consulte estas seções: [Hierarquia de navegação](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). e [Edição de formulários](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 

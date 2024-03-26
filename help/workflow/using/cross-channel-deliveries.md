@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ No exemplo abaixo, vamos criar um fluxo de trabalho para enviar um email ou SMS 
 
 1. Crie uma campanha.
 1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma **[!UICONTROL Query]** ao workflow.
-1. Configure seu query. Por exemplo, aqui selecionamos os recipients que assinaram notificações por push como o target dimension.
+1. Configure seu query. Por exemplo, aqui selecionamos os destinatários que assinaram notificações por push como o target dimension.
 
    >[!NOTE]
    >
@@ -43,18 +43,18 @@ No exemplo abaixo, vamos criar um fluxo de trabalho para enviar um email ou SMS 
 
    ![](assets/cross_channel_delivery_1.png)
 
-1. Adicione as condições de filtro ao seu query. Nesse caso, selecionamos recipients com um número de celular ou endereço de email.
+1. Adicione as condições de filtro ao seu query. Nesse caso, selecionamos destinatários com um número de celular ou endereço de email.
 
    ![](assets/cross_channel_delivery_2.png)
 
-1. Adicione uma atividade **[!UICONTROL Split]** ao workflow para dividir recipients com um número de celular e aqueles com um endereço de email.
+1. Adicione uma atividade **[!UICONTROL Split]** ao workflow para dividir destinatários com um número de celular e aqueles com um endereço de email.
 1. Na guia **[!UICONTROL Delivery]**, selecione um workflow para cada target.
 
    Crie sua entrega da mesma forma que com um assistente de entrega comum clicando duas vezes na atividade de entrega no seu workflow. Para obter mais informações, consulte esta [página](../../delivery/using/about-email-channel.md).
 
    ![](assets/cross_channel_delivery_3.png)
 
-1. Adicione e configure uma atividade **[!UICONTROL Wait]** para os recipients não receberem muitas entregas de uma vez.
+1. Adicione e configure uma atividade **[!UICONTROL Wait]** para os destinatários não receberem muitas entregas de uma vez.
 1. Adicione uma atividade **[!UICONTROL Split]** para dividir os assinantes de aplicativos móveis iOS ou Android.
 
    Selecione um serviço para cada um dos sistemas operacionais. Para obter mais informações sobre criação de serviços, consulte esta [página](../../delivery/using/configuring-the-mobile-application.md).

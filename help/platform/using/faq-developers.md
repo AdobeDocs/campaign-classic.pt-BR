@@ -10,7 +10,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '515'
 ht-degree: 100%
 
 ---
@@ -39,9 +39,9 @@ No Adobe Campaign, os esquemas de dados são usados para:
 
 Leia os [Primeiros passos com tabelas e esquemas](../../configuration/using/about-schema-edition.md) para entender como trabalhar com esquemas de dados, bem como estender e personalizar o Campaign para atender às suas necessidades.
 
-## Como usar uma tabela de recipients personalizada? {#how-to-use-a-custom-recipient-table-}
+## Como usar uma tabela de destinatários personalizada? {#how-to-use-a-custom-recipient-table-}
 
-No Campaign, é possível criar e implementar uma tabela de recipients diferente da integrada para enviar suas mensagens.
+No Campaign, é possível criar e implementar uma tabela de destinatários diferente da integrada para enviar suas mensagens.
 
 [Clique aqui para saber mais](../../configuration/using/about-custom-recipient-table.md)
 

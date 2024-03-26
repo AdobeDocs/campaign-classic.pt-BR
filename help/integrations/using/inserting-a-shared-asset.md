@@ -20,9 +20,9 @@ Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emai
 
 1. Crie um novo email ou uma nova landing page.
 
-   Se você usar ativos da biblioteca do Adobe Experience Manager Assets, use um template de delivery criado ao [configurar a integração](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets).
+   Se você usar ativos da biblioteca do Adobe Experience Manager Assets, use um template de entrega criado ao [configurar a integração](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets).
 
-   Se não tiver esse template específico, assegure-se de que nas **Propriedades** do delivery a **[!UICONTROL Content editing mode]** (guia **[!UICONTROL Advanced]**) esteja definida como **DCE** e que a conta externa do AEM usada para acessar a biblioteca de recursos do AEM Assets seja fornecida.
+   Se não tiver esse template específico, assegure-se de que nas **Propriedades** da entrega a **[!UICONTROL Content editing mode]** (guia **[!UICONTROL Advanced]**) esteja definida como **DCE** e que a conta externa do AEM usada para acessar a biblioteca de recursos do AEM Assets seja fornecida.
 
 1. Na janela de edição, selecione a opção para adicionar uma imagem:
 

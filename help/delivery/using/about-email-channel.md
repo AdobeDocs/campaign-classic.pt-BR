@@ -8,8 +8,8 @@ feature: Email
 role: User
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '148'
+workflow-type: tm+mt
+source-wordcount: '143'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ O Adobe Campaign permite a entrega de mensagens eletrônicas personalizadas em m
 
 Antes de começar a enviar emails:
 
-* Verifique se os perfis de recipient contêm pelo menos um endereço de email.
+* Verifique se os perfis de destinatário contêm pelo menos um endereço de email.
 * Saiba mais sobre as [Práticas recomendadas da entrega](delivery-best-practices.md) do Adobe Campaign.
 * Leia estas seções para saber mais sobre avaliação de entrega: [Gerenciamento de avaliação de entrega no Campaign](about-deliverability.md) e [Guia de práticas recomendadas de avaliação de entrega](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
@@ -32,4 +32,4 @@ As principais etapas para enviar um email são as seguintes:
 * [Enviar o email](sending-messages.md)
 * [Monitorar a entrega](about-delivery-monitoring.md)
 
-As seções abaixo fornecem as informações específicas ao canal de email. Para obter mais informações sobre como criar um delivery, consulte [esta seção](steps-about-delivery-creation-steps.md).
+As seções abaixo fornecem as informações específicas ao canal de email. Para obter mais informações sobre como criar uma entrega, consulte [esta seção](steps-about-delivery-creation-steps.md).

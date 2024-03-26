@@ -20,7 +20,7 @@ O Adobe Campaign permite a gestão do intervalo entre vários países relacionad
 
 Para mais informações sobre a configuração de fusos horários no Adobe Campaign, consulte o [Guia de instalação do Campaign Classic v7](../../installation/using/time-zone-management.md).
 
-Em um workflow, é possível adaptar os agendamentos de execução de atividades e vincular um fuso horário específico a uma atividade ou ao workflow inteiro. Essa configuração é útil ao importar o arquivo ou dentro da estrutura de agendamento de delivery.
+Em um workflow, é possível adaptar os agendamentos de execução de atividades e vincular um fuso horário específico a uma atividade ou ao workflow inteiro. Essa configuração é útil ao importar o arquivo ou dentro da estrutura de agendamento de entrega.
 
 ## Agendamento de execução {#execution-scheduling}
 

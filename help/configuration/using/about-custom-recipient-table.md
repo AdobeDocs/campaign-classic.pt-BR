@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Sobre tabela de recipient personalizada
-description: Sobre tabela de recipient personalizada
+title: Sobre tabela de destinatário personalizada
+description: Sobre tabela de destinatário personalizada
 feature: Configuration, Custom Resources
 role: User, Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 ---
 
-# Usar tabela de recipient personalizada{#about-custom-recipient-table}
+# Usar tabela de destinatário personalizada{#about-custom-recipient-table}
 
 Esta seção detalha os princípios para usar uma tabela de recipient personalizada (ou externa).
 

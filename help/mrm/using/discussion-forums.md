@@ -76,7 +76,7 @@ Você poderá postar uma mensagem no fórum de um operador se, por exemplo, sua 
 
 Para acessar o fórum de um operador:
 
-* Se você tiver os direitos necessários para acessar o nó do explorador **[!UICONTROL Administration > Access management > Operators]**, abra o painel do operador desejado e clique no link **[!UICONTROL Forum]** no canto superior direito.
+* Se você tiver os direitos necessários para acessar o nó do explorer **[!UICONTROL Administration > Access management > Operators]**, abra o painel do operador desejado e clique no link **[!UICONTROL Forum]** no canto superior direito.
 * Caso contrário, localize o nome do operador no Adobe Campaign (por meio de uma mensagem publicada no fórum por este operador ou uma tarefa atribuída a ele) e clique nele para acessar seu painel. Também é possível pedir ao administrador para criar uma visualização da pasta do operador.
 
 ## Assinar um fórum {#subscribing-to-a-forum}
@@ -109,9 +109,9 @@ Se os operadores inscritos em um fórum não receberem notificações conforme e
 
 * Verifique se os endereços de email estão inseridos nos perfis de operador.
 * Vá para o nó **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** e verifique se o workflow **[!UICONTROL Jobs in discussion forums]** foi iniciado e está livre de erros.
-* Exibir os logs do delivery:
+* Exibir os logs da entrega:
 
-   * Na página inicial do Adobe Campaign, vá para **[!UICONTROL Campaigns > Navigation > Deliveries]**, então abra o delivery de **[!UICONTROL Discussion forum notification]**.
+   * Na página inicial do Adobe Campaign, vá para **[!UICONTROL Campaigns > Navigation > Deliveries]**, então abra a entrega de **[!UICONTROL Discussion forum notification]**.
    * No explorer, acesse **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**, em seguida clique em **[!UICONTROL Discussion forum notifications]**.
 
-  Na caixa **[!UICONTROL Discussion forum notifications]**, os logs do delivery são encontrados na guia **[!UICONTROL Edit > Delivery]**. Também é possível visualizá-los nas guias **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]**.
+  Na caixa **[!UICONTROL Discussion forum notifications]**, os logs da entrega são encontrados na guia **[!UICONTROL Edit > Delivery]**. Também é possível visualizá-los nas guias **[!UICONTROL Tracking > Log]** e **[!UICONTROL Exclusion causes]**.

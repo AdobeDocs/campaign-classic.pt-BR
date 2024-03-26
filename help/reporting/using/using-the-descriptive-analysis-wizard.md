@@ -8,7 +8,7 @@ feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1573'
 ht-degree: 100%
 
 ---
@@ -21,11 +21,11 @@ Para criar um relatório de análise descritiva, use o assistente dedicado. A co
 
 ## Analisar dados no banco de dados {#analyzing-data-in-the-database}
 
-O assistente de análise descritiva pode ser iniciado por meio do menu **[!UICONTROL Tools > Descriptive analysis]**: nesse caso, a análise inclui os recipients por padrão (**nms:recipient**). Aplica-se a todos os dados do banco de dados do Adobe Campaign.
+O assistente de análise descritiva pode ser iniciado por meio do menu **[!UICONTROL Tools > Descriptive analysis]**: nesse caso, a análise inclui os destinatários por padrão (**nms:recipient**). Aplica-se a todos os dados do banco de dados do Adobe Campaign.
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-Para analisar uma tabela diferente da dos recipients padrão (**nms:recipient**), clique no link **[!UICONTROL Advanced settings...]** na última etapa do assistente e selecione a tabela que corresponde às suas configurações, neste caso **cus:individual**:
+Para analisar uma tabela diferente da dos destinatários padrão (**nms:recipient**), clique no link **[!UICONTROL Advanced settings...]** na última etapa do assistente e selecione a tabela que corresponde às suas configurações, neste caso **cus:individual**:
 
 ![](assets/reporting_descriptive_other_schema.png)
 
@@ -33,31 +33,31 @@ Se quiser produzir estatísticas sobre parte dos dados, é possível definir um 
 
 ![](assets/reporting_descriptive_wz_filter.png)
 
-A análise só abordará os recipients do banco de dados com 16 anos de idade ou mais e que moram em Londres.
+A análise só abordará os destinatários do banco de dados com 16 anos de idade ou mais e que moram em Londres.
 
 ## Analisar um conjunto de dados {#analyzing-a-set-of-data}
 
-É possível usar o assistente de análise descritiva por meio de um contexto diferente: uma lista, uma transição de workflow, um ou mais deliveries, uma seleção de recipients, etc.
+É possível usar o assistente de análise descritiva por meio de um contexto diferente: uma lista, uma transição de workflow, uma ou mais entregas, uma seleção de destinatários, etc.
 
-Ele pode ser acessado por vários nós da árvore do Adobe Campaign que apontam para a tabela de recipients.
+Ele pode ser acessado por vários nós da árvore do Adobe Campaign que apontam para a tabela de destinatários.
 
 Abra o assistente de análise descritiva selecionando os itens e clicando com o botão direito. Somente os dados selecionados serão analisados.
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
-* Para um conjunto de **recipients**, selecione os recipients que serão analisados, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Explore...]**, conforme mostrado acima. Se um filtro for aplicado à lista de recipients, somente seu conteúdo será analisado.
+* Para um conjunto de **destinatários**, selecione os destinatários que serão analisados, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Explore...]**, conforme mostrado acima. Se um filtro for aplicado à lista de destinatários, somente seu conteúdo será analisado.
 
-  Para selecionar todos os recipients na pasta ou no filtro atual, use o atalho CTRL+A. Isso significa selecionar até mesmo os recipients não mostrados.
+  Para selecionar todos os destinatários na pasta ou no filtro atual, use o atalho CTRL+A. Isso significa selecionar até mesmo os destinatários não mostrados.
 
-  Para obter um exemplo da análise descritiva dos recipients, consulte [Análise qualitativa de dados](../../reporting/using/use-cases.md#qualitative-data-analysis).
+  Para obter um exemplo da análise descritiva dos destinatários, consulte [Análise qualitativa de dados](../../reporting/using/use-cases.md#qualitative-data-analysis).
 
-* No contexto de um **workflow**, coloque o cursor em uma transição que aponta para a tabela de recipients, clique com o botão direito do mouse e selecione **[!UICONTROL Analyze target]**. Para obter mais informações, consulte o exemplo em [Analisar um público alvo de transição em um fluxo de trabalho](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
-* Para **listas**, selecione uma ou mais listas e aplique o mesmo processo dos recipients.
-* No contexto de um **delivery**, selecione os deliveries cujo target deseja analisar, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Explore the target]**, conforme mostrado abaixo:
+* No contexto de um **workflow**, coloque o cursor em uma transição que aponta para a tabela de destinatários, clique com o botão direito do mouse e selecione **[!UICONTROL Analyze target]**. Para obter mais informações, consulte o exemplo em [Analisar um público alvo de transição em um fluxo de trabalho](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
+* Para **listas**, selecione uma ou mais listas e aplique o mesmo processo dos destinatários.
+* No contexto de uma entrega **, selecione as entregas cujo target deseja analisar, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Explore the target]**, conforme mostrado abaixo:**
 
   ![](assets/reporting_descriptive_from_deliveries.png)
 
-  Exemplos de análises descritivas para entregas são fornecidos aqui: [Analisar uma população](../../reporting/using/use-cases.md#analyzing-a-population), e aqui: [Analisar registros de rastreamento de recipients](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+  Exemplos de análises descritivas para entregas são fornecidos aqui: [Analisar uma população](../../reporting/using/use-cases.md#analyzing-a-population), e aqui: [Analisar registros de rastreamento de destinatários](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 ## Configurar o modelo de distribuição qualitativa {#configuring-the-qualitative-distribution-template}
 
@@ -104,7 +104,7 @@ As opções serão diferentes dependendo do conteúdo do campo:
 
   ![](assets/reporting_descriptive_initialize_modulo.png)
 
-  Esse exemplo permite visualizar o detalhamento dos recipients por faixa etária.
+  Esse exemplo permite visualizar o detalhamento dos destinatários por faixa etária.
 
   ![](assets/reporting_descriptive_initialize_modulo_result.png)
 
@@ -156,7 +156,7 @@ As seguintes operações são possíveis:
 * **[!UICONTROL Standard deviation]** para calcular como os valores retornados estão distribuídos em relação à média,
 * **[!UICONTROL Row percentage distribution]** para calcular a proporção do valor em uma coluna e o valor em uma linha (disponível somente para tabelas),
 * **[!UICONTROL Column percentage distribution]** para calcular a proporção do valor em uma linha para o valor em uma coluna (disponível somente para tabelas),
-* **[!UICONTROL Total percentage distribution]** para calcular a distribuição de recipients relacionados aos valores,
+* **[!UICONTROL Total percentage distribution]** para calcular a distribuição de destinatários relacionados aos valores,
 
   ![](assets/s_ncs_user_report_wizard_026.png)
 
@@ -194,7 +194,7 @@ Quando o relatório contém uma tabela, a célula do resultado do cálculo é co
 
 ![](assets/s_ncs_user_report_wizard_029.png)
 
-Quando o relatório inclui um gráfico, os rótulos da legenda permitem filtrar as informações exibidas: clique em um rótulo para ativar/desativar exibição no gráfico.
+Quando o relatório inclui um gráfico, os rótulos da legenda permitem filtrar as informações exibidas: clique em um rótulo para habilitar/desabilitar exibição no gráfico.
 
 ![](assets/report_display_data_in_graph.png)
 
@@ -202,7 +202,7 @@ Quando o relatório inclui um gráfico, os rótulos da legenda permitem filtrar 
 
 Para gerar uma análise descritiva por conta própria, selecione a opção **New descriptive analysis from a template** se não estiver definida por padrão.
 
-O template **[!UICONTROL Quantitative distribution]** que permite gerar estatísticas em dados que podem ser medidos ou contados (por exemplo, valor da fatura, idade dos recipients).
+O template **[!UICONTROL Quantitative distribution]** que permite gerar estatísticas em dados que podem ser medidos ou contados (por exemplo, valor da fatura, idade dos destinatários).
 
 O modo de configuração de um relatório de análise criado por meio do template **[!UICONTROL Quantitative distribution]** é detalhado em um exemplo de implementação [Quantitative data analysis](../../reporting/using/use-cases.md#quantitative-data-analysis).
 

@@ -8,7 +8,7 @@ feature: Data Management
 role: User, Developer, Data Engineer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Os queries são configurados por meio do template de publicação na guia **[!UI
 
 Os dados recuperados enriquecem o documento de saída XML por meio de seu elemento principal.
 
-Exemplo de retorno de um query no schema do recipient (**nms:recipient**):
+Exemplo de retorno de um query no schema do destinatário (**nms:recipient**):
 
 ```
 <book name="Content Management">
@@ -36,7 +36,7 @@ Exemplo de retorno de um query no schema do recipient (**nms:recipient**):
 </book>
 ```
 
-O elemento **`<collection-recipient>`** representa o elemento de entrada do documento resultante de um query. Os dados recuperados são retornados sob este elemento; em nosso exemplo, uma lista de recipients.
+O elemento **`<collection-recipient>`** representa o elemento de entrada do documento resultante de um query. Os dados recuperados são retornados sob este elemento; em nosso exemplo, uma lista de destinatários.
 
 ### Adição de uma consulta {#adding-a-query}
 
@@ -209,7 +209,7 @@ O conteúdo de cada link referenciado é limitado à chave interna e ao elemento
 
 Um script JavaScript é usado para enriquecer o conteúdo dos links por queries SOAP.
 
-**Exemplo**: Adicionar o nome do recipient ao link &quot;mainContact&quot; e aos links de coleção &quot;contact&quot;:
+**Exemplo**: Adicionar o nome do destinatário ao link &quot;mainContact&quot; e aos links de coleção &quot;contact&quot;:
 
 ```
 // Update <mainContact> link

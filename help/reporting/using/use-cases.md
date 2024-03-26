@@ -25,9 +25,9 @@ As etapas de implementação são detalhadas abaixo, enquanto uma lista completa
 
 ### Identificação de uma população a ser analisada {#identifying-the-population-to-analyze}
 
-Neste exemplo, queremos explorar a população do target dos deliveries incluídos na pasta **Newsletters**.
+Neste exemplo, queremos explorar a população do target das entregas incluídas na pasta **Newsletters**.
 
-Para fazer isso, selecione os deliveries relacionadas e clique com o botão direito do mouse e selecione **[!UICONTROL Action > Explore the target...]**.
+Para fazer isso, selecione as entregas relacionadas e clique com o botão direito do mouse e selecione **[!UICONTROL Action > Explore the target...]**.
 
 ![](assets/reporting_quick_start_1.png)
 
@@ -43,7 +43,7 @@ Para este exemplo, selecione o template **[!UICONTROL Qualitative distribution]*
 
 A próxima etapa permite selecionar os dados a serem exibidos na tabela.
 
-Clique no link **[!UICONTROL Add...]** para selecionar a variável com os dados que serão exibidos. Aqui queremos exibir as cidades dos recipients do delivery em uma linha:
+Clique no link **[!UICONTROL Add...]** para selecionar a variável com os dados que serão exibidos. Aqui queremos exibir as cidades dos destinatários da entrega em uma linha:
 
 ![](assets/reporting_descriptive_quickstart_step_2.png)
 
@@ -99,7 +99,7 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
    Clique em **[!UICONTROL Next]** para aprovar esta etapa.
 
-1. Em seguida, selecione a opção **[!UICONTROL 2 variables]** e especifique que o **[!UICONTROL First variable (abscissa)]** se refere ao status do recipient (prospectos/clientes) e a segunda variável se refere ao país.
+1. Em seguida, selecione a opção **[!UICONTROL 2 variables]** e especifique que o **[!UICONTROL First variable (abscissa)]** se refere ao status do destinatário (prospectos/clientes) e a segunda variável se refere ao país.
 1. Selecione **[!UICONTROL Cylinders]** como um tipo.
 
    ![](assets/s_ncs_user_report_wizard_05.png)
@@ -154,7 +154,7 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
 ## Análise de dados quantitativos {#quantitative-data-analysis}
 
-**Target**: gerar um relatório de análise quantitativa sobre a idade do recipient.
+**Target**: gerar um relatório de análise quantitativa sobre a idade do destinatário.
 
 1. Abra o assistente de análise descritiva e selecione **[!UICONTROL Quantitative distribution]** na lista suspensa.
 
@@ -179,7 +179,7 @@ A última etapa do assistente exibe a tabela e o gráfico.
 **Target**: gerar relatórios sobre a população de um workflow de criação de target.
 
 1. Abra o workflow para criação de target desejado.
-1. Clique com o botão direito do mouse em uma transição que aponte para a tabela de recipients.
+1. Clique com o botão direito do mouse em uma transição que aponte para a tabela de destinatários.
 1. Selecione **[!UICONTROL Analyze target]** no menu suspenso para abrir a janela de análise descritiva.
 
    ![](assets/s_ncs_user_report_wizard_from_transision.png)
@@ -209,11 +209,11 @@ A análise de uma população em um workflow requer que a população ainda este
 >A opção **[!UICONTROL Keep the result of interim populations between two executions]** só deve ser usada em fases de desenvolvimento, mas nunca para um ambiente em produção.\
 >As populações interinas são automaticamente limpas quando o prazo de retenção é atingido. Esse prazo é especificado na guia de propriedades **[!UICONTROL Execution]** do workflow.
 
-## Análise de logs de rastreamento do recipient {#analyzing-recipient-tracking-logs}
+## Análise de logs de rastreamento do destinatário {#analyzing-recipient-tracking-logs}
 
-O assistente de análise descritiva pode gerar relatórios sobre outras tabelas de trabalho. Isso significa poder analisar logs do delivery criando um relatório dedicado.
+O assistente de análise descritiva pode gerar relatórios sobre outras tabelas de trabalho. Isso significa poder analisar logs da entrega criando um relatório dedicado.
 
-Neste exemplo, queremos analisar a taxa de reatividade dos recipients do boletim informativo.
+Neste exemplo, queremos analisar a taxa de reatividade dos destinatários do boletim informativo.
 
 Para fazer isso, siga as etapas abaixo:
 
@@ -223,11 +223,11 @@ Para fazer isso, siga as etapas abaixo:
 
    Selecione uma exibição de tabela e clique em **[!UICONTROL Next]**.
 
-1. Na próxima janela, especifique que a análise aborda deliveries.
+1. Na próxima janela, especifique que a análise aborda entregas.
 
    ![](assets/reporting_descriptive_sample_tracking_2.png)
 
-   Aqui, os rótulos de delivery serão exibidos na primeira coluna.
+   Aqui, os rótulos de entrega serão exibidos na primeira coluna.
 
 1. Exclua a contagem padrão e crie três estatísticas para configurar as estatísticas a serem exibidas na tabela.
 
@@ -271,13 +271,13 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/reporting_descriptive_sample_tracking_9.png)
 
-## Análise de logs de exclusão de delivery {#analyzing-delivery-exclusion-logs}
+## Análise de logs de exclusão de entrega {#analyzing-delivery-exclusion-logs}
 
-Se a análise aborda um delivery, é possível analisar a população excluída. Para fazer isso, selecione os deliveries a serem analisados e clique com o botão direito do mouse para acessar o menu **[!UICONTROL Action > Explore exclusions]**.
+Se a análise aborda uma entrega, é possível analisar a população excluída. Para fazer isso, selecione as entregas a serem analisadas e clique com o botão direito do mouse para acessar o menu **[!UICONTROL Action > Explore exclusions]**.
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 
-Isso o levará ao assistente de análise descritiva e a análise abordará os logs de exclusão de recipients.
+Isso o levará ao assistente de análise descritiva e a análise abordará os logs de exclusão de destinatários.
 
 Por exemplo, é possível exibir os domínios de todos os endereços excluídos e classificá-los por data de exclusão.
 

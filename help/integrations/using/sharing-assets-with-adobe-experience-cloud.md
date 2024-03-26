@@ -11,7 +11,7 @@ topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '173'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ Os serviços de ativos incluem:
 * Armazenamento de ativos, interface de gestão, interface de seleção incorporada (acessada por meio de soluções).
 * Integrações com as soluções Creative Cloud e Experience Cloud.
 
-Ao editar um delivery de email ou uma landing page no Adobe Campaign, você pode colocar os ativos das bibliotecas da Adobe Experience Cloud. Dependendo das soluções que você usa, esses ativos podem ser armazenados no Serviço principal de ativos ou no Adobe Experience Manager Assets.
+Ao editar uma entrega de email ou uma landing page no Adobe Campaign, você pode colocar os ativos das bibliotecas da Adobe Experience Cloud. Dependendo das soluções que você usa, esses ativos podem ser armazenados no Serviço principal de ativos ou no Adobe Experience Manager Assets.
 
 As diferentes bibliotecas disponíveis são detalhadas [neste documento](https://experienceleague.adobe.com/docs/core-services/interface/services/assets/experience-cloud-assets.html?lang=pt-BR).
 

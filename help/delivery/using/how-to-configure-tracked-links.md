@@ -8,8 +8,8 @@ feature: Monitoring
 role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '594'
+workflow-type: tm+mt
+source-wordcount: '586'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Para cada entrega, você pode rastrear a recepção das mensagens e a ativação dos links inseridos no conteúdo da mensagem. Isso permite rastrear o comportamento dos destinatários seguindo as ações de entrega que foram direcionadas.
 
-O rastreamento se aplica a mensagens, mas o rastreamento web permite monitorar como os recipients navegam em um site (páginas visitadas, compras). A configuração de rastreamento web é apresentada [nesta seção](../../configuration/using/about-web-tracking.md).
+O rastreamento se aplica a mensagens, mas o rastreamento web permite monitorar como os destinatários navegam em um site (páginas visitadas, compras). A configuração de rastreamento web é apresentada [nesta seção](../../configuration/using/about-web-tracking.md).
 
 >[!NOTE]
 >
@@ -31,18 +31,18 @@ O rastreamento se aplica a mensagens, mas o rastreamento web permite monitorar c
 * Colchetes [ ]
 * Chaves { }
 
-Neste exemplo, o URL https://www.adobe.com é seguido por um ponto e vírgula. O ponto e vírgula pode ser interpretado pelos clientes de email do recipient como parte do URL. Isso pode quebrar o link. Para evitar esse problema, é possível colocar o URL em delimitadores de uma destas maneiras:
+Neste exemplo, o URL https://www.adobe.com é seguido por um ponto e vírgula. O ponto e vírgula pode ser interpretado pelos clientes de email do destinatário como parte do URL. Isso pode quebrar o link. Para evitar esse problema, é possível colocar o URL em delimitadores de uma destas maneiras:
 * (https://www.adobe.com);
 * [https://www.adobe.com];
 * {https://www.adobe.com};
 
 O rastreamento de mensagens é habilitado por padrão. Para personalizar como URLs são rastreados, siga as etapas abaixo:
 
-1. Selecione a opção **[!UICONTROL Display URLs]** na seção inferior do assistente do delivery, no conteúdo da mensagem.
+1. Selecione a opção **[!UICONTROL Display URLs]** na seção inferior do assistente da entrega, no conteúdo da mensagem.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
-   Ao selecionar um dos URLs rastreados na lista, ele é realçado no conteúdo do delivery, exceto pelo link na página espelhada e no link de cancelamento de subscrição fornecido como padrão.
+   Ao selecionar um dos URLs rastreados na lista, ele é realçado no conteúdo da entrega, exceto pelo link na mirror page e no link de cancelamento de subscrição fornecido como padrão.
 
    ![](assets/s_ncs_user_email_del_show_urls.png)
 
@@ -58,7 +58,7 @@ O rastreamento de mensagens é habilitado por padrão. Para personalizar como UR
 
    >[!NOTE]
    >
-   >Os rótulos dos URLs rastreados e os rótulos podem ser modificados para simplificar a leitura de informações ao rastrear os envios. Dois URLs ou rótulos com o mesmo nome são adicionados ao calcular a contagem de cliques.
+   >Os rótulos dos URLs rastreados e os rótulos podem ser modificados para simplificar a leitura de informações ao rastrear as entregas. Dois URLs ou rótulos com o mesmo nome são adicionados ao calcular a contagem de cliques.
 
 1. Se necessário, altere o modo de rastreamento. Selecione um novo modo na coluna **[!UICONTROL Tracking]** que corresponde ao link direcionado, conforme abaixo:
 

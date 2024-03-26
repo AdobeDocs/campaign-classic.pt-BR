@@ -18,9 +18,9 @@ ht-degree: 100%
 
 Se não forem Administradores, os operadores do Adobe Campaign precisam de direitos de acesso para criar, executar ou modificar workflows.
 
-Em geral, os operadores que atuam com workflows precisam acessar os arquivos que contêm os dados usados durante as várias atividades (recipients, lista de recipients, subscrições, deliveries, etc.) e possivelmente seus arquivos secundários.
+Em geral, os operadores que atuam com workflows precisam acessar os arquivos que contêm os dados usados durante as várias atividades (destinatários, lista de destinatários, subscrições, entregas, etc.) e possivelmente seus arquivos secundários.
 
-Eles também devem ser mapeados com os direitos nomeados que coincidam com as ações executadas pelos workflows que eles afetarão (importação do recipient, acesso à arquivos, fusão, execução de script SQL, etc.).
+Eles também devem ser mapeados com os direitos nomeados que coincidam com as ações executadas pelos workflows que eles afetarão (importação do destinatário, acesso à arquivos, fusão, execução de script SQL, etc.).
 
 Para obter mais informações sobre gerenciamento de operadores e permissões, consulte esta [seção](../../platform/using/access-management.md).
 

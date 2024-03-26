@@ -7,7 +7,7 @@ badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -17,17 +17,17 @@ ht-degree: 100%
 
 O Adobe Campaign permite configurar ferramentas para incentivar o marketing viral.
 
-Isso permite que os recipients das entregas ou os visitantes do site compartilhem informações com a rede: desde adicionar um link ao seu perfil do Facebook ou X (anteriormente conhecido como Twitter) até enviar uma mensagem a um amigo.
+Isso permite que os destinatários das entregas ou os visitantes do site compartilhem informações com a rede: desde adicionar um link ao seu perfil do Facebook ou X (anteriormente conhecido como Twitter) até enviar uma mensagem a um amigo.
 
 ![](assets/s_ncs_user_viral_icons.png)
 
 >[!CAUTION]
 >
->Para que os links adicionados funcionem corretamente, a página de espelho correspondente deve estar disponível. Para fazer isso, inclua o link para a página espelho na entrega.
+>Para que os links adicionados funcionem corretamente, a mirror page correspondente deve estar disponível. Para fazer isso, inclua o link para a mirror page na entrega.
 
 ## Redes sociais: compartilhar um link {#social-networks--sharing-a-link}
 
-Para permitir que os recipients de entrega compartilhem o conteúdo das mensagens com membros de sua rede, você precisa incluir o bloco de personalização correspondente.
+Para permitir que os destinatários de entrega compartilhem o conteúdo das mensagens com membros de sua rede, você precisa incluir o bloco de personalização correspondente.
 
 ![](assets/s_ncs_user_viral_add_link.png)
 
@@ -41,7 +41,7 @@ A renderização será da seguinte forma:
 
 ![](assets/s_ncs_user_viral_add_link_rendering.png)
 
-Quando o recipient clicar no ícone de uma das redes sociais exibidas, ele será automaticamente redirecionado para sua conta e poderá compartilhar o conteúdo da mensagem por meio de um link. Isso permitirá aos membros de sua rede acessarem a comunicação.
+Quando o destinatário clicar no ícone de uma das redes sociais exibidas, ele será automaticamente redirecionado para sua conta e poderá compartilhar o conteúdo da mensagem por meio de um link. Isso permitirá aos membros de sua rede acessarem a comunicação.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ O encaminhamento de mensagens é baseado nos mesmos princípios que os links de 
 Aplique as seguintes etapas:
 
 1. Adicione o bloco de personalização **[!UICONTROL Social network sharing links]** ao corpo da mensagem original.
-1. O recipient da mensagem pode clicar no ícone de **[!UICONTROL Email]** para enviar esta mensagem para um ou mais amigos.
+1. O destinatário da mensagem pode clicar no ícone de **[!UICONTROL Email]** para enviar esta mensagem para um ou mais amigos.
 
    ![](assets/s_ncs_user_viral_email_link.png)
 
@@ -64,7 +64,7 @@ Aplique as seguintes etapas:
 
    ![](assets/s_ncs_user_viral_email_msg.png)
 
-   A mensagem é enviada a eles quando o recipient principal clicar no botão **[!UICONTROL Next]**.
+   A mensagem é enviada a eles quando o destinatário principal clicar no botão **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
@@ -84,13 +84,13 @@ Aplique as seguintes etapas:
 
    Depois de validar, uma mensagem de confirmação será enviada para ele: só será registrado para sempre uma vez que ativar o link na mensagem de confirmação. Essa mensagem é criada com base no modelo **[!UICONTROL Registration confirmation]**, que é armazenado no nó **[!UICONTROL Administration > Campaign management > Technical delivery templates]**.
 
-   O indicado é adicionado à pasta **Recipients** do banco de dados e é inscrito (por padrão) ao serviço de informação do **Boletim informativo**.
+   O indicado é adicionado à pasta **Destinatários** do banco de dados e é inscrito (por padrão) ao serviço de informação do **Boletim informativo**.
 
 ## Rastreamento de compartilhamento em redes sociais {#tracking-social-network-sharing}
 
 O compartilhamento e o acesso a informações compartilhadas são rastreados. Essas informações coletadas pelo Adobe Campaign podem ser acessadas em dois lugares:
 
-* na guia **[!UICONTROL Tracking]** da entrega (ou individualmente para cada recipient):
+* na guia **[!UICONTROL Tracking]** da entrega (ou individualmente para cada destinatário):
 
   ![](assets/s_ncs_user_network_del_tracking_tab.png)
 

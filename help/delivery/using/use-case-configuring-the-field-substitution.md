@@ -17,9 +17,9 @@ ht-degree: 100%
 
 
 
-A substituição de campo aleatório permite atribuir um valor a partir da lista de recipient para os seed addresses que estão vazios quando o usuário usa esse valor em uma entrega (exemplo: nome, cidade, etc.).
+A substituição de campo aleatório permite atribuir um valor a partir da lista de destinatário para os seed addresses que estão vazios quando o usuário usa esse valor em uma entrega (exemplo: nome, cidade, etc.).
 
-Essa substituição permite economizar tempo ao criar a entrega: em vez de adicionar manualmente o valor desejado aos seed addresses, a substituição recupera aleatoriamente esse valor na lista de recipients targets da entrega e o aplica aos seed addresses.
+Essa substituição permite economizar tempo ao criar a entrega: em vez de adicionar manualmente o valor desejado aos seed addresses, a substituição recupera aleatoriamente esse valor na lista de destinatários targets da entrega e o aplica aos seed addresses.
 
 ## Contexto {#context}
 
@@ -44,7 +44,7 @@ Neste exemplo, o gerenciador de entrega criou o boletim informativo.
 
 As instruções sobre como modificar um schema de dados são detalhadas na seção .
 
-Neste exemplo, o schema de dados dos seed addresses pega um valor criado pelo schema de dados dos recipients:
+Neste exemplo, o schema de dados dos seed addresses pega um valor criado pelo schema de dados dos destinatários:
 
 ```
  <attribute label="Favorite literary genre" length="80" name="favoriteLiteraryGenre"
@@ -59,7 +59,7 @@ Para que essa modificação do schema de dados possa ser visualizada no **Formul
 
 1. Abra uma entrega.
 
-   Neste exemplo, a entrega tem dois campos de personalização: o **nome** do recipient e o **gênero literary favorito** do recipient.
+   Neste exemplo, a entrega tem dois campos de personalização: o **nome** do destinatário e o **gênero literary favorito** do destinatário.
 
    ![](assets/dlv_seeds_usecase_25.png)
 

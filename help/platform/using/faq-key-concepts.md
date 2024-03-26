@@ -10,7 +10,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '835'
 ht-degree: 100%
 
 ---
@@ -78,7 +78,7 @@ O Adobe Campaign inclui fluxos de trabalho para organizar a gama completa de pro
 
 Você pode usar um workflow, por exemplo, para baixar um arquivo de um servidor, descompactar e importar registros contidos no banco de dados do Adobe Campaign.
 
-Um workflow também pode envolver um ou mais operadores a serem notificados ou que podem fazer escolhas e aprovar processos. Dessa forma, é possível criar uma ação de delivery, atribuir uma tarefa a um ou mais operadores para trabalhar no conteúdo, especificar alvos e aprovar testes antes de iniciar a delivery.
+Um workflow também pode envolver um ou mais operadores a serem notificados ou que podem fazer escolhas e aprovar processos. Dessa forma, é possível criar uma ação de entrega, atribuir uma tarefa a um ou mais operadores para trabalhar no conteúdo, especificar alvos e aprovar testes antes de iniciar a entrega.
 
 [Clique aqui para saber mais](../../workflow/using/about-workflows.md) sobre fluxos de trabalho. Você também pode ler as [práticas recomendadas de workflow](../../workflow/using/building-a-workflow.md).
 
@@ -108,7 +108,7 @@ Você pode usar o editor de conteúdo digital do Adobe Campaign para criar uma l
 
 ## Como posso rastrear entregas? {#how-can-i-track-deliveries-}
 
-Você pode rastrear e monitorar os deliveries feitos com o Campaign Classic por meio de [relatórios de delivery](../../reporting/using/delivery-reports.md) exclusivos.
+Você pode rastrear e monitorar as entregas feitas com o Campaign Classic por meio de [relatórios de entrega](../../reporting/using/delivery-reports.md) exclusivos.
 
 Saiba mais sobre a gestão de rastreamento no Campaign [nesta página](https://helpx.adobe.com/br/campaign/kb/acc-tracking.html).
 

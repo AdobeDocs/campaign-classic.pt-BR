@@ -71,15 +71,15 @@ Seu boletim informativo agora está pronto e sincronizado no Adobe Campaign.
 
    ![](assets/aem_uc_10.png)
 
-1. Adicione um **[!UICONTROL Label]** ao delivery e clique em **[!UICONTROL Continue]**.
+1. Adicione um **[!UICONTROL Label]** à entrega e clique em **[!UICONTROL Continue]**.
 1. Clique no botão **[!UICONTROL Synchronize]**.
 
    Se esse botão não aparecer na interface, clique no botão **[!UICONTROL Properties]** e selecione a guia **[!UICONTROL Advanced]**. O campo **[!UICONTROL Content editing mode]** deve ser definido no **[!UICONTROL AEM]** com sua instância do AEM no campo **[!UICONTROL AEM account]**.
 
    ![](assets/aem_uc_11.png)
 
-1. Selecione o delivery criado anteriormente no Adobe Experience Manager e clique em **[!UICONTROL Ok]**.
-1. Clique no botão **[!UICONTROL Refresh content]** assim que algumas alterações forem feitas no delivery do AEM.
+1. Selecione a entrega criada anteriormente no Adobe Experience Manager e clique em **[!UICONTROL Ok]**.
+1. Clique no botão **[!UICONTROL Refresh content]** assim que algumas alterações forem feitas na entrega do AEM.
 
    ![](assets/aem_uc_12.png)
 

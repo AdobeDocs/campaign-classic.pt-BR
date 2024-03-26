@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2979'
-ht-degree: 100%
+source-wordcount: '3049'
+ht-degree: 99%
 
 ---
 
@@ -153,13 +153,13 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
   <tr> 
    <td> Visitantes<br /> </td> 
    <td> @totalVisitors<br /> </td> 
-   <td> Número total de recipients alvos para esse navegador que clicaram em um delivery pelo menos uma vez.<br /> </td> 
+   <td> Número total de destinatários alvos para esse navegador que clicaram em uma entrega pelo menos uma vez.<br /> </td> 
    <td> Sum(@visitors)<br /> </td> 
   </tr> 
   <tr> 
    <td> Exibições de página<br /> </td> 
    <td> @totalPages<br /> </td> 
-   <td> Número total de cliques nos links de delivery usando esse navegador, para todos os deliveries.<br /> </td> 
+   <td> Número total de cliques nos links de entrega usando esse navegador, para todas as entregas.<br /> </td> 
    <td> Sum(@pages) <br /> </td> 
   </tr> 
   <tr> 
@@ -221,11 +221,11 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
   <tr> 
    <td> Número de mensagens a serem enviadas<br /> </td> 
    <td> @totalTarget<br /> </td> 
-   <td> Número total de mensagens processadas durante a análise de delivery.<br /> </td> 
+   <td> Número total de mensagens processadas durante a análise de entrega.<br /> </td> 
    <td> sum([properties/@totalTarget])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Número de deliveries bem-sucedidos<br /> </td> 
+   <td> Número de entregas bem-sucedidas<br /> </td> 
    <td> @success<br /> </td> 
    <td> Número de mensagens processadas com êxito <br /> </td> 
    <td> sum([indicators/@success])<br /> </td> 
@@ -358,7 +358,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
   <tr> 
    <td> Novos contatos<br /> </td> 
    <td> @newContacts<br /> </td> 
-   <td> Contagem do número de visitantes vinculados a um recipient.<br /> </td> 
+   <td> Contagem do número de visitantes vinculados a um destinatário.<br /> </td> 
    <td> Fórmula: count(@id)<br /> Filtro: @recipient-id != 0<br /> </td> 
   </tr> 
   <tr> 
@@ -395,13 +395,13 @@ Este relatório é baseado na tabela **[!UICONTROL Internet Browser Statistics]*
   <tr> 
    <td> Visitantes<br /> </td> 
    <td> @totalVisitors / @days<br /> </td> 
-   <td> Média diária do número total de recipients alvos por sistema operacional que clicaram em um delivery pelo menos uma vez.<br /> </td> 
+   <td> Média diária do número total de destinatários alvos por sistema operacional que clicaram em uma entrega pelo menos uma vez.<br /> </td> 
    <td> Sum(@visitors)<br /> </td> 
   </tr> 
   <tr> 
    <td> Páginas exibidas<br /> </td> 
    <td> @totalPages / @days<br /> </td> 
-   <td> Média diária do número total de cliques nos links de delivery por sistemas operacionais para todos os deliveries.<br /> </td> 
+   <td> Média diária do número total de cliques nos links de entrega por sistemas operacionais para todas as entregas.<br /> </td> 
    <td> Sum(@pages)<br /> </td> 
   </tr> 
   <tr> 
@@ -546,13 +546,13 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
   <tr> 
    <td> Estimativa de encaminhamentos<br /> </td> 
    <td> @forward<br /> </td> 
-   <td> Diferença entre o número de pessoas distintas e o número de recipients distintos que clicaram no email pelo menos uma vez.<br /> </td> 
+   <td> Diferença entre o número de pessoas distintas e o número de destinatários distintos que clicaram no email pelo menos uma vez.<br /> </td> 
    <td> @personClick - @recipientClick<br /> </td> 
   </tr> 
   <tr> 
    <td> Envios<br /> </td> 
    <td> @successWithoutSeeds<br /> </td> 
-   <td> Contagem das mensagens para as quais o campo "seed address" é igual a "Não" e com um status igual a "considerado pelo recipient" ou "Enviado" ou "Recebido em celular".<br /> </td> 
+   <td> Contagem das mensagens para as quais o campo "seed address" é igual a "Não" e com um status igual a "considerado pelo destinatário" ou "Enviado" ou "Recebido em celular".<br /> </td> 
    <td> sum([indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
@@ -576,7 +576,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
   <tr> 
    <td> Reatividade bruta<br /> </td> 
    <td> -<br /> </td> 
-   <td> Porcentagem do número de recipients que clicaram em um delivery pelo menos uma vez em comparação ao número de recipients que abriram um delivery pelo menos uma vez.<br /> </td> 
+   <td> Porcentagem do número de destinatários que clicaram em uma entrega pelo menos uma vez em comparação ao número de destinatários que abriram uma entrega pelo menos uma vez.<br /> </td> 
    <td> percent(@recipientClick,@recipientOpen)<br /> </td> 
   </tr> 
   <tr> 
@@ -592,7 +592,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
    <td> count(Iif([url/@type]=1, @id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Cliques do recipient<br /> </td> 
+   <td> Cliques do destinatário<br /> </td> 
    <td> @recipientClick<br /> </td> 
    <td> Contagem distinta de @broadLog-ids com um tipo de URL que é igual a "clique de mail".<br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1, @broadLog-id, 0))<br /> </td> 
@@ -600,7 +600,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery and tracking stati
   <tr> 
    <td> Reatividade estimada<br /> </td> 
    <td> -<br /> </td> 
-   <td> Taxa do número de recipients que clicaram em um delivery pelo menos uma vez em comparação à estimativa de recipients que abriram o delivery pelo menos uma vez.<br /> </td> 
+   <td> Taxa do número de destinatários que clicaram em uma entrega pelo menos uma vez em comparação à estimativa de destinatários que abriram a entrega pelo menos uma vez.<br /> </td> 
    <td> percent(@recipientClick, @estimatedRecipientOpen<br /> </td> 
   </tr> 
   <tr> 
@@ -707,7 +707,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
   <tr> 
    <td> Reatividade<br /> </td> 
    <td> @reactivity<br /> </td> 
-   <td> Taxa do número de recipients alvos que clicaram em um delivery pelo menos uma vez em comparação ao número estimado de recipients alvos que abriram um delivery pelo menos uma vez.<br /> </td> 
+   <td> Taxa do número de destinatários alvos que clicaram em uma entrega pelo menos uma vez em comparação ao número estimado de destinatários alvos que abriram uma entrega pelo menos uma vez.<br /> </td> 
    <td> percent([indicators/@recipientClick], [indicators/@estimatedRecipientOpen])<br /> </td> 
   </tr> 
   <tr> 
@@ -719,7 +719,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
   <tr> 
    <td> Cliques acumulados<br /> </td> 
    <td> @totalClicks<br /> </td> 
-   <td> Taxa do número total de cliques por recipients alvos em comparação ao número de mensagens entregues com êxito.<br /> </td> 
+   <td> Taxa do número total de cliques por destinatários alvos em comparação ao número de mensagens entregues com êxito.<br /> </td> 
    <td> percent([indicators/@totalRecipientClick], [indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
@@ -754,7 +754,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
   <tr> 
    <td> Público inicial<br /> </td> 
    <td> @totalTarget<br /> </td> 
-   <td> Número total de recipients alvos do delivery.<br /> </td> 
+   <td> Número total de destinatários alvos da entrega.<br /> </td> 
    <td> sum([properties/@totalTarget])<br /> </td> 
   </tr> 
   <tr> 
@@ -778,13 +778,13 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
   <tr> 
    <td> Erros<br /> </td> 
    <td> @error<br /> </td> 
-   <td> Número total de erros acumulados durante os deliveries e processamento automático de devolução.<br /> </td> 
+   <td> Número total de erros acumulados durante as entregas e processamento automático de devolução.<br /> </td> 
    <td> sum([indicators/@error])<br /> </td> 
   </tr> 
   <tr> 
    <td> Novos em quarentena<br /> </td> 
    <td> @newQuarantine<br /> </td> 
-   <td> Número de endereços em quarentena após uma falha de delivery (usuário desconhecido, domínio inválido).<br /> </td> 
+   <td> Número de endereços em quarentena após uma falha de entrega (usuário desconhecido, domínio inválido).<br /> </td> 
    <td> sum([indicators/@newQuarantine])<br /> </td> 
   </tr> 
  </tbody> 
@@ -892,7 +892,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statist
 
 ## Detalhamento de aberturas {#breakdown-of-opens-1}
 
-Este relatório baseia-se nas tabelas de **Deliveries** (nms:delivery) e **Logs de rastreamento** (nms:trackingLogRcp)
+Este relatório baseia-se nas tabelas de **Deliveries** (nms:entrega) e **Logs de rastreamento** (nms:trackingLogRcp)
 
 <table> 
  <thead> 
@@ -915,24 +915,24 @@ Este relatório baseia-se nas tabelas de **Deliveries** (nms:delivery) e **Logs 
 
 ## Outros indicadores {#other-indicators}
 
-O indicador **Enviado** (@sent), acessado pelo nó **Deliveries (nms:delivery) > Indicators** corresponde ao número total de SMS enviado ao provedor de serviços. Esse indicador é usado apenas para deliveries de SMS e não deve ser usado para outros tipos de deliveries (não deve ser confundido com os indicadores **@success** e **@processed**).
+O indicador **Enviado** (@sent), acessado pelo nó **Deliveries (nms:delivery) > Indicators** corresponde ao número total de SMS enviado ao provedor de serviços. Esse indicador é usado apenas para entregas de SMS e não deve ser usado para outros tipos de entregas (não deve ser confundido com os indicadores **@success** e **@processed**).
 
 ## Sincronização de indicadores {#indicator-synchronization}
 
-Se você enfrentar dessincronização ou inconsistência de determinados indicadores, selecione o delivery correspondente no navegador do Adobe Campaign, clique com o botão direito do mouse e escolha **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Clique em **[!UICONTROL Next]** e depois em **[!UICONTROL Finish]**.
+Se você enfrentar dessincronização ou inconsistência de determinados indicadores, selecione a entrega correspondente no navegador do Adobe Campaign, clique com o botão direito do mouse e escolha **[!UICONTROL Action>Recompute delivery and tracking indicators]**. Clique em **[!UICONTROL Next]** e depois em **[!UICONTROL Finish]**.
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
 ## Rastreamento de aberturas {#tracking-opens-}
 
-Para que o Adobe Campaign detecte aberturas de mensagem, o recipient deve baixar as imagens no email. Os emails em HTML e Multipart/alternative incluem uma imagem de 0 pixel, que permite detectar mensagens que foram abertas. Como as mensagens em formato de texto não incluem imagens, é impossível detectar se foram abertas ou não. Os valores calculados com base na abertura de mensagem são sempre estimativas, devido à margem de erro vinculada à exibição de imagem.
+Para que o Adobe Campaign detecte aberturas de mensagem, o destinatário deve baixar as imagens no email. Os emails em HTML e Multipart/alternative incluem uma imagem de 0 pixel, que permite detectar mensagens que foram abertas. Como as mensagens em formato de texto não incluem imagens, é impossível detectar se foram abertas ou não. Os valores calculados com base na abertura de mensagem são sempre estimativas, devido à margem de erro vinculada à exibição de imagem.
 
-## Pessoas/recipients direcionados {#targeted-persons---recipients}
+## Pessoas/destinatários direcionados {#targeted-persons---recipients}
 
-Em alguns relatórios, o Adobe Campaign diferencia pessoas alvos e recipients alvos.
+Em alguns relatórios, o Adobe Campaign diferencia pessoas alvos e destinatários alvos.
 
-Os recipients alvos são todos os recipients aos quais o delivery foi enviado.
+Os destinatários alvos são todos os destinatários aos quais a entrega foi enviada.
 
-O número de pessoas inclui recipients alvos, além de todas as pessoas aos quais o email foi encaminhado. Cada vez que há um clique ou uma abertura em um novo navegador (que a mensagem ainda não foi aberta), outra pessoa é adicionada à estatística.
+O número de pessoas inclui destinatários alvos, além de todas as pessoas aos quais o email foi encaminhado. Cada vez que há um clique ou uma abertura em um novo navegador (que a mensagem ainda não foi aberta), outra pessoa é adicionada à estatística.
 
-Por exemplo, se você receber um email (enviado pelo Adobe Campaign) no trabalho e abrir ou clicar nele, você será contado como recipient alvo (ou seja, recipient=1, pessoa=1). Se você encaminhar esse email para dois amigos, o número de recipients ainda será igual a um, enquanto o número de pessoas será igual a três. O valor 3 coincide com cada abertura/clique em um novo navegador.
+Por exemplo, se você receber um email (enviado pelo Adobe Campaign) no trabalho e abrir ou clicar nele, você será contado como destinatário alvo (ou seja, destinatário=1, pessoa=1). Se você encaminhar esse email para dois amigos, o número de destinatários ainda será igual a um, enquanto o número de pessoas será igual a três. O valor 3 coincide com cada abertura/clique em um novo navegador.

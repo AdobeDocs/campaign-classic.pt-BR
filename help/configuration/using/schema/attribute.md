@@ -9,8 +9,8 @@ topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 1%
+source-wordcount: '1558'
+ht-degree: 0%
 
 ---
 
@@ -88,7 +88,7 @@ A sequência em que `<attribute>` Os elementos do são definidos em um `<srcsche
   As tabelas de características SQL são criadas automaticamente com base no tipo de característica:
 
    * dedicado: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+   * compartilhado: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   Há dois tipos de campos de características: campos simples oà¹, em que um único valor é autorizado na característica, e campos de múltipla escolha oà¹, em que a característica está vinculada a um elemento de coleção que pode conter vários valores.
 
@@ -137,25 +137,25 @@ A sequência em que `<attribute>` Os elementos do são definidos em um `<srcsche
    * booleano
    * byte
    * CDATA
-   * datetime
+   * data e hora
    * datetimetz
    * datetimenotz
-   * date
+   * data
    * duplo
    * enum
    * flutuante
    * html
    * int64
-   * Link 
+   * link
    * long
    * memorando
    * MNTOKEN
-   * percent
+   * por cento
    * primarykey
    * curto
    * sequência de caracteres
    * tempo
-   * timespan
+   * intervalo de tempo
    * uuid
 
   Se o atributo &quot;@type&quot; for deixado em branco, o Adobe Campaign vinculará uma string de caracteres (STRING) com um comprimento de 100 ao campo, por padrão.

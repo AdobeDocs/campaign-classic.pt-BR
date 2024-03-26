@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '152'
 ht-degree: 100%
 
 ---
@@ -39,11 +39,11 @@ Para mais informações, dependendo da versão do Campaign, consulte estas seç�
    <td> Esse workflow:<br /> 
     <ul> 
      <li> <p>recupera a lista de eventos processados pela(s) operação(s).</p> </li> 
-     <li> <p>sincroniza com a tabela NmsBroadLogMsg para recuperar as qualificações da mensagem de delivery.</p> </li> 
-     <li> <p>recupera logs de delivery de eventos assim que a sincronização com a tabela NmsBroadLogMsg for concluída.</p> </li> 
-     <li> <p>sincroniza com a tabela NmsTrackingUrl para recuperar o rastreamento para as URLs de delivery.</p> </li> 
+     <li> <p>sincroniza com a tabela NmsBroadLogMsg para recuperar as qualificações da mensagem de entrega.</p> </li> 
+     <li> <p>recupera logs de entrega de eventos assim que a sincronização com a tabela NmsBroadLogMsg for concluída.</p> </li> 
+     <li> <p>sincroniza com a tabela NmsTrackingUrl para recuperar o rastreamento para as URLs de entrega.</p> </li> 
      <li> <p>recupera as URLs de rastreamento de eventos assim que a sincronização com a tabela NmsTrackingUrl for concluída.</p> </li> 
-     <li> <p>permite recuperar todos os endereços de email colocados em quarentena a cada três horas após o envio de um delivery.</p> </li> 
+     <li> <p>permite recuperar todos os endereços de email colocados em quarentena a cada três horas após o envio de uma entrega.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

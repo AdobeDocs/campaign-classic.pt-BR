@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
 source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## Visão geral das regras de apresentação {#presentation-rules-overview}
 
-A interação permite controlar o fluxo de apresentações de oferta usando regras de apresentação. Essas regras, que são específicas à Interação, são regras de tipologia. Elas permitem excluir ofertas com base no histórico de apresentações já feitas a um recipient. Eles são referenciados no ambiente
+A interação permite controlar o fluxo de apresentações de oferta usando regras de apresentação. Essas regras, que são específicas à Interação, são regras de tipologia. Elas permitem excluir ofertas com base no histórico de apresentações já feitas a um destinatário. Eles são referenciados no ambiente
 
 ## Criação e referência a uma regra de apresentação de oferta {#creating-and-referencing-an-offer-presentation-rule}
 
@@ -97,9 +97,9 @@ Use as setas para modificar o número de apresentações de ofertas:
 
 ![](assets/offer_typology_011.png)
 
-## Definição de apresentações e recipients {#defining-propositions-and-recipients}
+## Definição de apresentações e destinatários {#defining-propositions-and-recipients}
 
-A seção **[!UICONTROL Propositions to count]** permite especificar os recipients e as apresentações que levarão à exclusão das ofertas definidas na guia **[!UICONTROL General]** se estas aparecerem um determinado número de vezes no histórico de apresentações.
+A seção **[!UICONTROL Propositions to count]** permite especificar os destinatários e as apresentações que levarão à exclusão das ofertas definidas na guia **[!UICONTROL General]** se estas aparecerem um determinado número de vezes no histórico de apresentações.
 
 ### Filtragem de apresentações {#filtering-propositions}
 
@@ -147,9 +147,9 @@ Esses critérios representam as aplicações mais frequentes das regras de apres
 
   **[!UICONTROL Rejected propositions]**: permite excluir ofertas apresentadas anteriormente que foram rejeitadas.
 
-### Definição de recipients {#defining-recipients}
+### Definição de destinatários {#defining-recipients}
 
-Para especificar os recipients, clique no link **[!UICONTROL Edit the query from the targeting dimension...]** e selecione os recipients relacionados à regra.
+Para especificar os destinatários, clique no link **[!UICONTROL Edit the query from the targeting dimension...]** e selecione os destinatários relacionados à regra.
 
 ![](assets/offer_typology_012.png)
 

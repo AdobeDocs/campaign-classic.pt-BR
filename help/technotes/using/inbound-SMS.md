@@ -1,17 +1,18 @@
 ---
 product: campaign
-title: Atividade de fluxo de trabalho de SMS de entrada para infraestrutura Mid-sourcing
-description: Atividade de fluxo de trabalho de SMS de entrada para infraestrutura Mid-sourcing
+title: Atividade de fluxo de trabalho de SMS de entrada para infraestrutura mid-sourcing
+description: Atividade de fluxo de trabalho de SMS de entrada para infraestrutura mid-sourcing
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-source-git-commit: 85adfe3515480bed559091427ff1acec14a70320
+exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
+source-git-commit: f9a17541596ba2afa96502dc99408b6f99d2cb2b
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
-# Atividade de fluxo de trabalho de SMS de entrada para infraestrutura Mid-sourcing {#inbound-sms}
+# Atividade de fluxo de trabalho de SMS de entrada para infraestrutura mid-sourcing {#inbound-sms}
 
 ## Limitações {#limitations}
 
@@ -145,5 +146,3 @@ ht-degree: 2%
    > * Se houver vários workflows inSMS por instância de Mid-sourcing, a duplicação de dados pode ocorrer, pois a ID SMS de Mid-sourcing permanece constante, enquanto as IDs de conta externa variam.
 
 1. Salve e reinicie o workflow.
-
-

@@ -7,7 +7,7 @@ feature: Query Editor, Workflows
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '397'
 ht-degree: 100%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 100%
 
 
 
-Neste exemplo, queremos recuperar recipients não foram contatados durante os últimos 7 dias. Esta query aborda todas as deliveries.
+Neste exemplo, queremos recuperar destinatários não foram contatados durante os últimos 7 dias. Esta query aborda todas as entregas.
 
 Este exemplo também mostra como configurar um filtro relacionado à escolha de um elemento de coleção (ou nó laranja). Os elementos de coleção estão disponíveis na janela **[!UICONTROL Field to select]**.
 
 * Qual tabela precisa ser selecionada?
 
-  A tabela de recipient (**nms:recipient**)
+  A tabela de destinatário (**nms:recipient**)
 
 * Campos a serem selecionados para a coluna de saída
 
@@ -30,11 +30,11 @@ Este exemplo também mostra como configurar um filtro relacionado à escolha de 
 
 * Com base em quais critérios as informações são filtradas?
 
-  Com base nos registros de delivery de recipients, 7 dias antes de hoje.
+  Com base nos registros de entrega de destinatários, 7 dias antes de hoje.
 
 Siga as etapas abaixo:
 
-1. Abra o editor de query genérico e selecione a tabela Recipient **[!UICONTROL (nms:recipient)]**.
+1. Abra o editor de query genérico e selecione a tabela Destinatário **[!UICONTROL (nms:recipient)]**.
 1. Na janela **[!UICONTROL Data to extract]**, selecione **[!UICONTROL Primary key]**, **[!UICONTROL First name]**, **[!UICONTROL Last name]** e **[!UICONTROL Email]**.
 
    ![](assets/query_editor_nveau_33.png)
@@ -70,7 +70,7 @@ Siga as etapas abaixo:
 
 1. Use a função **[!UICONTROL Add a calculated field]** para inserir uma coluna na janela de visualização de dados.
 
-   Neste exemplo, adicione um campo calculado com o nome e o sobrenome dos recipients em uma única coluna. Clique na função **[!UICONTROL Add a calculated field]**. Na janela **[!UICONTROL Export calculated field definition]**, digite um rótulo e um nome interno e escolha o tipo **[!UICONTROL JavaScript Expression]**. Em seguida, insira a seguinte expressão:
+   Neste exemplo, adicione um campo calculado com o nome e o sobrenome dos destinatários em uma única coluna. Clique na função **[!UICONTROL Add a calculated field]**. Na janela **[!UICONTROL Export calculated field definition]**, digite um rótulo e um nome interno e escolha o tipo **[!UICONTROL JavaScript Expression]**. Em seguida, insira a seguinte expressão:
 
    ```
    var rep = source._firstName+" - "+source._lastName
@@ -83,6 +83,6 @@ Siga as etapas abaixo:
 
    Para obter mais informações sobre adição de campos calculados, consulte esta seção.
 
-1. O resultado é mostrado na janela **[!UICONTROL Data preview]**. Os recipients que não tiverem sido contatados nos últimos 7 dias serão exibidos em ordem alfabética. Os nomes são exibidos em caixa alta e a coluna com nome e sobrenome é criada.
+1. O resultado é mostrado na janela **[!UICONTROL Data preview]**. Os destinatários que não tiverem sido contatados nos últimos 7 dias serão exibidos em ordem alfabética. Os nomes são exibidos em caixa alta e a coluna com nome e sobrenome é criada.
 
    ![](assets/query_editor_nveau_41.png)

@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 37%
+source-wordcount: '394'
+ht-degree: 32%
 
 ---
 
@@ -64,7 +64,7 @@ Siga a etapa abaixo:
 
 **Qual é o impacto?**
 
-A manutenção requer no máximo 25 minutos de inatividade, e durante esse período todos os deliveries, links de rastreamento e chamadas de API não funcionarão.
+A manutenção requer no máximo 25 minutos de inatividade, e durante esse período todas as entregas, links de rastreamento e chamadas de API não funcionarão.
 
 Quando a atualização estiver concluída, todos os links funcionarão conforme esperado.
 

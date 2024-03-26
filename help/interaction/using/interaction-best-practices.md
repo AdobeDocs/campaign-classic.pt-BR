@@ -10,7 +10,7 @@ topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1207'
 ht-degree: 100%
 
 ---
@@ -64,17 +64,17 @@ Esta seção contém recomendações mais detalhadas sobre como gerenciar oferta
 
 ### Utilização de vários espaços de oferta em uma entrega de email {#multiple-offer-spaces}
 
-Ao incluir ofertas em deliveries, elas são geralmente selecionadas em upstream no fluxo de trabalho do Campaign por meio de uma atividade de enriquecimento (ou outra atividade semelhante).
+Ao incluir ofertas em entregas, elas são geralmente selecionadas em upstream no fluxo de trabalho do Campaign por meio de uma atividade de enriquecimento (ou outra atividade semelhante).
 
-Ao selecionar ofertas em uma atividade de enriquecimento, você pode escolher qual espaço de ofertas usar. No entanto, independentemente do espaço de ofertas selecionado, o menu de personalização do delivery depende do espaço de ofertas configurado no delivery.
+Ao selecionar ofertas em uma atividade de enriquecimento, você pode escolher qual espaço de ofertas usar. No entanto, independentemente do espaço de ofertas selecionado, o menu de personalização da entrega depende do espaço de ofertas configurado na entrega.
 
-No exemplo abaixo, o espaço de ofertas selecionado no delivery é **[!UICONTROL Email (Environment - Recipient)]**:
+No exemplo abaixo, o espaço de ofertas selecionado na entrega é **[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-Se o espaço de ofertas selecionado no delivery não tiver uma função de renderização HTML configurada, você não o verá no menu do delivery e ele não estará disponível para seleção. Novamente, isso é independente do espaço de ofertas selecionado na atividade de enriquecimento.
+Se o espaço de ofertas selecionado na entrega não tiver uma função de renderização HTML configurada, você não o verá no menu da entrega e ele não estará disponível para seleção. Novamente, isso é independente do espaço de ofertas selecionado na atividade de enriquecimento.
 
-No exemplo abaixo, a função de renderização HTML está disponível na lista suspensa porque o espaço de ofertas selecionado no delivery tem uma função de renderização:
+No exemplo abaixo, a função de renderização HTML está disponível na lista suspensa porque o espaço de ofertas selecionado na entrega tem uma função de renderização:
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
@@ -84,7 +84,7 @@ Quando você seleciona a proposta, o valor do atributo **[!UICONTROL view]** é 
 * &quot;rendering/html&quot;: html rendering. Ele usa a função de renderização HTML.
 * &quot;offer/view/html&quot;: html content. Ela não usa a função de renderização HTML. Inclui apenas o campo HTML.
 
-Ao incluir vários espaços de ofertas em um único delivery de email e se alguns deles tiverem funções de renderização e outros não, lembre-se de quais ofertas usam quais espaços e quais espaços de ofertas têm funções de renderização.
+Ao incluir vários espaços de ofertas em uma única entrega de email e se alguns deles tiverem funções de renderização e outros não, lembre-se de quais ofertas usam quais espaços e quais espaços de ofertas têm funções de renderização.
 
 Consequentemente, para evitar qualquer problema, recomenda-se que todos os espaços de ofertas tenham uma função de renderização HTML definida, mesmo se ele exigir apenas conteúdo HTML.
 

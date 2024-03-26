@@ -4,15 +4,15 @@ title: Execução do workflow
 description: Execução do workflow
 feature: Monitoring, Workflows
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 16%
+source-wordcount: '650'
+ht-degree: 15%
 
 ---
 
@@ -120,5 +120,5 @@ Para verificar isso e iniciar o módulo se necessário, siga as seguintes etapas
 Se um fluxo de trabalho falhar, siga estas etapas:
 
 1. Verifique o journal do workflow. Para obter mais informações, consulte [Monitoramento da execução do fluxo de trabalho](../../workflow/using/monitoring-workflow-execution.md) e [Exibir logs](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) seções.
-1. Monitorar fluxos de trabalho técnicos. Para obter mais informações, consulte [nesta seção](../../workflow/using/monitoring-technical-workflows.md).
+1. Monitore workflows técnicos. Para obter mais informações, consulte [nesta seção](../../workflow/using/monitoring-technical-workflows.md).
 1. Procure falhas nas atividades individuais do workflow.

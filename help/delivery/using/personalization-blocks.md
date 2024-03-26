@@ -8,8 +8,8 @@ feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '877'
+workflow-type: tm+mt
+source-wordcount: '873'
 ht-degree: 100%
 
 ---
@@ -41,11 +41,11 @@ Para inserir um bloco de personalização em uma mensagem, siga as etapas abaixo
 
    ![](assets/s_ncs_user_personalized_block02.png)
 
-1. O bloco de personalização é então inserido como um script. Ele é adaptado automaticamente ao perfil do recipient quando a personalização é gerada.
+1. O bloco de personalização é então inserido como um script. Ele é adaptado automaticamente ao perfil do destinatário quando a personalização é gerada.
 
    ![](assets/s_ncs_user_personalized_block03.png)
 
-1. Clique na guia **[!UICONTROL Preview]** e selecione um recipient para exibir a personalização.
+1. Clique na guia **[!UICONTROL Preview]** e selecione um destinatário para exibir a personalização.
 
    ![](assets/s_ncs_user_personalized_block04.png)
 
@@ -59,7 +59,7 @@ O código-fonte HTML é inserido no conteúdo de entrega. Por exemplo, o bloco d
 
 ## Exemplo de blocos de personalização {#personalization-blocks-example}
 
-Neste exemplo, criamos um email no qual usamos blocos de personalização para permitir que o recipient exiba a mirror page, compartilhe o boletim informativo em redes sociais e cancele a assinatura de entregas futuras.
+Neste exemplo, criamos um email no qual usamos blocos de personalização para permitir que o destinatário exiba a mirror page, compartilhe o boletim informativo em redes sociais e cancele a assinatura de entregas futuras.
 
 Para fazer isso, precisamos inserir os seguintes blocos de personalização:
 
@@ -78,7 +78,7 @@ Para fazer isso, precisamos inserir os seguintes blocos de personalização:
 
    ![](assets/s_ncs_user_personalized_block_example.png)
 
-1. Clique na guia **[!UICONTROL Preview]** para exibir o resultado personalizado. Você deve selecionar um recipient para exibir a mensagem dele.
+1. Clique na guia **[!UICONTROL Preview]** para exibir o resultado personalizado. Você deve selecionar um destinatário para exibir a mensagem dele.
 
    ![](assets/s_ncs_user_personalized_block_example2.png)
 
@@ -115,7 +115,7 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
   >Este bloco pode ser usado em entregas somente para visitantes.
 
 * **[!UICONTROL Registration confirmation]**: insere um link que permite confirmar a subscrição.
-* **[!UICONTROL Social network sharing links]**: insere botões que permitem que o recipient compartilhe um link para o conteúdo da mirror page com o cliente de email, Facebook, X (anteriormente conhecido como Twitter) e LinkedIn (consulte [Marketing viral: encaminhar para um amigo](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Social network sharing links]**: insere botões que permitem que o destinatário compartilhe um link para o conteúdo da mirror page com o cliente de email, Facebook, X (anteriormente conhecido como Twitter) e LinkedIn (consulte [Marketing viral: encaminhar para um amigo](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]**: geram um código que formata um email com estilos HTML predefinidos. Esses blocos devem ser inseridos no código-fonte da entrega, na seção **[!UICONTROL ...]**, nos tags **`<style>...</style>`**.
 * **[!UICONTROL Offer acceptance URL in unitary mode]**: insere um URL que permite definir uma oferta de Interação para **[!UICONTROL Accepted]** (consulte [esta seção](../../interaction/using/offer-analysis-report.md)).
 

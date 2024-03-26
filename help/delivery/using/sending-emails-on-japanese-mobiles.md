@@ -8,8 +8,8 @@ feature: Email, Email Design
 role: User
 exl-id: 44634227-2340-49c4-b330-740c739ea551
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '732'
+workflow-type: tm+mt
+source-wordcount: '736'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 O Adobe Campaign gerencia três formatos específicos em japonês para email em dispositivos móveis: **Deco-mail** (celulares DoCoMo), **Decore Mail** (celulares Softbank) e **Decoration Mail** (celulares KDDI AU). Esses formatos impõem restrições específicas de codificação, estrutura e tamanho. Saiba mais sobre limitações e recomendações [nesta seção](#limitations-and-recommendations).
 
-Para que o recipient receba corretamente mensagens em um desses formatos, recomendamos selecionar **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** ou **[!UICONTROL Decoration Mail (KDDI AU)]** no perfil correspondente:
+Para que o destinatário receba corretamente mensagens em um desses formatos, recomendamos selecionar **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** ou **[!UICONTROL Decoration Mail (KDDI AU)]** no perfil correspondente:
 
 ![](assets/deco-mail_03.png)
 
@@ -35,7 +35,7 @@ Determinado número de restrições se aplica no envio de emails que serão lido
 Portanto, você deve:
 
 * Usar somente imagens no formato JPEG ou GIF
-* Criar um delivery com seções de texto e HTML que são estritamente inferiores a 10.000 bytes (para KDDI AU e DoCoMo)
+* Criar uma entrega com seções de texto e HTML que são estritamente inferiores a 10.000 bytes (para KDDI AU e DoCoMo)
 * Usar imagens com tamanho total (antes de codificar) abaixo de 100 KB
 * Usar até 20 imagens por mensagem
 * Usar um formato HTML de tamanho reduzido (um número limitado de tags está disponível para cada operador)
@@ -63,17 +63,17 @@ Na guia **[!UICONTROL Preview]** da janela de edição de conteúdo, ao clicar e
 
 ### Executar regra de tipologia {#running-typology-rule}
 
-Além do diagnóstico de pré-visualização, uma segunda verificação é realizada ao enviar uma prova ou um delivery: uma regra de tipologia específica, **[!UICONTROL Deco-mail check]**, é iniciada durante a análise.
+Além do diagnóstico de pré-visualização, uma segunda verificação é realizada ao enviar uma prova ou uma entrega: uma regra de tipologia específica, **[!UICONTROL Deco-mail check]**, é iniciada durante a análise.
 
 >[!IMPORTANT]
 >
->Essa regra de tipologia só será executada se pelo menos um dos recipients estiver configurado para receber emails no formato **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** ou **[!UICONTROL Decoration Mail (KDDI AU)]**.
+>Essa regra de tipologia só será executada se pelo menos um dos destinatários estiver configurado para receber emails no formato **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** ou **[!UICONTROL Decoration Mail (KDDI AU)]**.
 
-Essa regra de tipologia permite verificar se o delivery respeita as [restrições de formato](#limitations-and-recommendations) definidas pelos operadores japoneses, especialmente em relação ao tamanho total do email, ao tamanho das seções HTML e de texto, ao número de imagens nas mensagens e às tags no conteúdo HTML.
+Essa regra de tipologia permite verificar se a entrega respeita as [restrições de formato](#limitations-and-recommendations) definidas pelos operadores japoneses, especialmente em relação ao tamanho total do email, ao tamanho das seções HTML e de texto, ao número de imagens nas mensagens e às tags no conteúdo HTML.
 
 ### Enviar provas {#sending-proofs}
 
-Você pode enviar provas para testar seu delivery. Quando você envia a prova, se estiver usando endereços de substituição, digite os endereços que correspondem ao formato do email do perfil usado.
+Você pode enviar provas para testar sua entrega. Quando você envia a prova, se estiver usando endereços de substituição, digite os endereços que correspondem ao formato do email do perfil usado.
 
 Por exemplo, você pode substituir o endereço de um perfil por test@softbank.ne.jp, se o formato do email desse perfil tiver sido definido antecipadamente no **[!UICONTROL Decore Mail (Softbank)]**.
 
@@ -81,14 +81,14 @@ Por exemplo, você pode substituir o endereço de um perfil por test@softbank.ne
 
 ## Enviar mensagens {#sending-messages}
 
-Para enviar um email para recipients com formatos de email japoneses com o Campaign, há duas opções:
+Para enviar um email para destinatários com formatos de email japoneses com o Campaign, há duas opções:
 
-* Criar dois deliveries: um somente para recipients japoneses e outro para outros recipients. Consulte [esta seção](#designing-a-specific-delivery-for-japanese-formats).
-* Criar um único delivery e o Adobe Campaign detectará automaticamente o formato a ser usado. Consulte [esta seção](#designing-a-delivery-for-all-formats).
+* Criar duas entregas: uma somente para destinatários japoneses e outra para outros destinatários. Consulte [esta seção](#designing-a-specific-delivery-for-japanese-formats).
+* Criar uma única entrega e o Adobe Campaign detectará automaticamente o formato a ser usado. Consulte [esta seção](#designing-a-delivery-for-all-formats).
 
-### Criar um delivery específico para formatos japoneses {#designing-a-specific-delivery-for-japanese-formats}
+### Criar uma entrega específica para formatos japoneses {#designing-a-specific-delivery-for-japanese-formats}
 
-Você pode criar um workflow que contenha dois deliveries: um para ser lido em um celular japonês e outro para recipients com formato do email padrão.
+Você pode criar um workflow que contenha duas entregas: uma para ser lida em um celular japonês e outra para destinatários com formato do email padrão.
 
 Para fazer isso, use a atividade **[!UICONTROL Split]** no workflow e defina os formatos de email japonês (Deco-mail, Decoration Mail e Decore Mail) como condições de filtragem.
 
@@ -96,11 +96,11 @@ Para fazer isso, use a atividade **[!UICONTROL Split]** no workflow e defina os 
 
 ![](assets/deco-mail_07.png)
 
-### Criar um delivery para todos os formatos {#designing-a-delivery-for-all-formats}
+### Criar uma entrega para todos os formatos {#designing-a-delivery-for-all-formats}
 
-Quando o Adobe Campaign gerencia dinamicamente os formatos de acordo com o domínio (perfis com formatos de email definidos como **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** ou **[!UICONTROL Text]**), você pode enviar o mesmo delivery a todos os recipients.
+Quando o Adobe Campaign gerencia dinamicamente os formatos de acordo com o domínio (perfis com formatos de email definidos como **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** ou **[!UICONTROL Text]**), você pode enviar a mesma entrega a todos os destinatários.
 
-O contato da mensagem será exibido corretamente para os usuários em celulares japoneses, assim como para os recipients padrão.
+O contato da mensagem será exibido corretamente para os usuários em celulares japoneses, assim como para os destinatários padrão.
 
 >[!IMPORTANT]
 >

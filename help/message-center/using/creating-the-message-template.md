@@ -32,7 +32,7 @@ Os modelos de mensagem transacional contêm as informações necessárias para p
 
    ![](assets/messagecenter_create_model_001.png)
 
-1. Na janela do delivery, selecione o template do delivery apropriado para o canal que deseja usar.
+1. Na janela da entrega, selecione o template da entrega apropriado para o canal que deseja usar.
 
    ![](assets/messagecenter_create_model_002.png)
 
@@ -54,7 +54,7 @@ Os modelos de mensagem transacional contêm as informações necessárias para p
 
 ## Criar o conteúdo da mensagem {#creating-message-content}
 
-A definição do conteúdo da mensagem transacional é a mesma para deliveries comuns no Adobe Campaign. Por exemplo, para um delivery de email, você pode criar conteúdo em formato HTML ou texto, adicionar anexos ou personalizar o objeto do delivery. Para obter mais informações, consulte o capítulo [Entrega de email](../../delivery/using/about-email-channel.md).
+A definição do conteúdo da mensagem transacional é a mesma para entregas comuns no Adobe Campaign. Por exemplo, para uma entrega de email, você pode criar conteúdo em formato HTML ou texto, adicionar anexos ou personalizar o objeto da entrega. Para obter mais informações, consulte o capítulo [Entrega de email](../../delivery/using/about-email-channel.md).
 
 >[!IMPORTANT]
 >
@@ -68,7 +68,7 @@ Após definir o conteúdo da mensagem, você pode integrar as informações do e
 ![](assets/messagecenter_create_content_001.png)
 
 * Todos os campos de personalização vêm da carga.
-* É possível referenciar um ou vários blocos de personalização em uma mensagem transacional. O conteúdo do bloco será adicionado ao conteúdo de delivery durante a publicação para a instância de execução.
+* É possível referenciar um ou vários blocos de personalização em uma mensagem transacional. O conteúdo do bloco será adicionado ao conteúdo de entrega durante a publicação para a instância de execução.
 
 Para inserir tags de personalização no corpo de uma mensagem de email, siga as etapas abaixo:
 

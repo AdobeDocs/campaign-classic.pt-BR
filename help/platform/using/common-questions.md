@@ -9,7 +9,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '500'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ Como cliente hospedado, você pode se beneficiar da atualização anual do Campa
 
 ## 2. Qual é o fluxo de trabalho de limpeza do banco de dados? {#what-is-the-database-cleanup-workflow-}
 
-O fluxo de trabalho de limpeza do banco de dados exclui dados obsoletos para evitar o seu crescimento exponencial. O workflow técnico interno é acionado automaticamente sem a intervenção do usuário. Também é acessível por meio do nó **[!UICONTROL Administration > Production > Technical workflows]** do explorador do Campaign.
+O fluxo de trabalho de limpeza do banco de dados exclui dados obsoletos para evitar o seu crescimento exponencial. O workflow técnico interno é acionado automaticamente sem a intervenção do usuário. Também é acessível por meio do nó **[!UICONTROL Administration > Production > Technical workflows]** do explorer do Campaign.
 
 [Clique aqui para saber mais](../../production/using/database-cleanup-workflow.md) sobre o fluxo de trabalho de limpeza de banco de dados.
 

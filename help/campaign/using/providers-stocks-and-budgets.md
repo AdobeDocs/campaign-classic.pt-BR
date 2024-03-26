@@ -149,7 +149,7 @@ Para fazer isso, clique na guia **[!UICONTROL Processes]** para configurar o env
 
   ![](assets/s_ncs_user_supplier_node_02a.png)
 
-* A seção **[!UICONTROL Notification email]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de recipients.
+* A seção **[!UICONTROL Notification email]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de destinatários.
 
   Por padrão, os modelos de entrega para mensagens de notificação são salvos no nó **[!UICONTROL Administration > Campaign management > Technical delivery templates]**, que é acessível na visualização geral.
 

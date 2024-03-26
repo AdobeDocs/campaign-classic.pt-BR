@@ -8,22 +8,22 @@ feature: Personalization, Multilingual Messages
 role: User
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '494'
+workflow-type: tm+mt
+source-wordcount: '497'
 ht-degree: 100%
 
 ---
 
 # Conteúdo condicional{#conditional-content}
 
-Ao configurar campos de conteúdo condicional, você pode criar personalização dinâmica com base no perfil do recipient, por exemplo. Blocos de texto e/ou imagens são substituídos quando uma determinada condição é atendida.
+Ao configurar campos de conteúdo condicional, você pode criar personalização dinâmica com base no perfil do destinatário, por exemplo. Blocos de texto e/ou imagens são substituídos quando uma determinada condição é atendida.
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#conditionnal-content-video)
 
 
 ## Usar condições em um email {#using-conditions-in-an-email}
 
-No exemplo abaixo, você aprenderá a criar uma mensagem, personalizada dinamicamente no sexo e interesses do recipient.
+No exemplo abaixo, você aprenderá a criar uma mensagem, personalizada dinamicamente no sexo e interesses do destinatário.
 
 * Exibição mostrando &quot;Mr.&quot; ou &quot;Ms.&quot; de acordo com o valor do campo **[!UICONTROL Gender]** (M ou F) na fonte de dados,
 * Assembly personalizado de um boletim informativo ou ofertas promocionais de acordo com os interesses indicados ou detectados:
@@ -54,13 +54,13 @@ Para criar conteúdo condicional de acordo com o valor de um campo, siga as segu
 
      ![](assets/s_ncs_user_conditional_content04.png)
 
-1. Clique na guia **[!UICONTROL Preview]** para exibir o conteúdo da mensagem de acordo com o recipient do delivery:
+1. Clique na guia **[!UICONTROL Preview]** para exibir o conteúdo da mensagem de acordo com o destinatário da entrega:
 
-   * Selecionando um recipient para o qual a condição é verdadeira:
+   * Selecionando um destinatário para o qual a condição é verdadeira:
 
      ![](assets/s_ncs_user_conditional_content05.png)
 
-   * Selecionando um recipient para o qual a condição não é verdadeira:
+   * Selecionando um destinatário para o qual a condição não é verdadeira:
 
      ![](assets/s_ncs_user_conditional_content06.png)
 
@@ -72,15 +72,15 @@ Você pode adicionar outros casos e definir outro conteúdo de acordo com os val
 >
 >Para respeitar a sintaxe do JavaScript, os caracteres **%> &lt;%** devem ser excluídos após adicionar as condições **Senão** e **Senão se**.
 
-Clique em **[!UICONTROL Preview]** e selecione um recipient para exibir o conteúdo condicional.
+Clique em **[!UICONTROL Preview]** e selecione um destinatário para exibir o conteúdo condicional.
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
 ## Criar email multilíngue {#creating-multilingual-email}
 
-Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo será exibido em um idioma ou em outro, dependendo da preferência de idioma do recipient.
+Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo será exibido em um idioma ou em outro, dependendo da preferência de idioma do destinatário.
 
-1. Crie um email e selecione o público alvo. Neste exemplo, a condição para exibir uma versão ou outra será baseada no valor **Idioma** do perfil do recipient. Neste exemplo, esses valores são definidos como **EN**, **FR**, **ES**.
+1. Crie um email e selecione o público alvo. Neste exemplo, a condição para exibir uma versão ou outra será baseada no valor **Idioma** do perfil do destinatário. Neste exemplo, esses valores são definidos como **EN**, **FR**, **ES**.
 1. No conteúdo HTML de email, clique na guia **[!UICONTROL Source]** e cole o seguinte código:
 
    ```
@@ -102,7 +102,7 @@ Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo ser�
    <% } %>
    ```
 
-1. Teste o conteúdo do email na guia **[!UICONTROL Preview]** selecionando os recipients com as diferentes preferências de idioma.
+1. Teste o conteúdo do email na guia **[!UICONTROL Preview]** selecionando os destinatários com as diferentes preferências de idioma.
 
    >[!NOTE]
    >
@@ -110,7 +110,7 @@ Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo ser�
 
 ## Tutorial em vídeo {#conditionnal-content-video}
 
-Saiba como adicionar conteúdo condicional a um delivery no exemplo de um informativo multilíngue.
+Saiba como adicionar conteúdo condicional a uma entrega no exemplo de um informativo multilíngue.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 

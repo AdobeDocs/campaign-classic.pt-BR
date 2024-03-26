@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Carregar conteúdo do delivery
-description: Carregamento de conteúdo do delivery
+title: Carregar conteúdo da entrega
+description: Carregamento de conteúdo da entrega
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
@@ -12,11 +12,11 @@ ht-degree: 100%
 
 ---
 
-# Carregar conteúdo do delivery{#loading-delivery-content}
+# Carregar conteúdo da entrega{#loading-delivery-content}
 
 
 
-Se o conteúdo de delivery estiver disponível em um arquivo HTML localizado em servidores Amazon S3, FTP ou SFTP, é possível carregar facilmente esse conteúdo nos deliveries do Adobe Campaign.
+Se o conteúdo de entrega estiver disponível em um arquivo HTML localizado em servidores Amazon S3, FTP ou SFTP, é possível carregar facilmente esse conteúdo nas entregas do Adobe Campaign.
 
 Para fazer isso:
 
@@ -36,14 +36,14 @@ Para fazer isso:
 
 1. Adicione uma atividade **[!UICONTROL Delivery]** e conecte-a à transição de saída da atividade **[!UICONTROL File transfer]**. Configure como apresentado a seguir:
 
-   * Delivery: de acordo com suas necessidades, pode ser um delivery específico que já foi criado no sistema ou um novo delivery com base em um template existente.
-   * Recipients: neste exemplo, é considerado que o target é especificado no próprio delivery.
+   * Entrega: de acordo com suas necessidades, pode ser uma entrega específica que já foi criada no sistema ou uma nova entrega com base em um template existente.
+   * Destinatários: neste exemplo, é considerado que o target é especificado na própria entrega.
    * Conteúdo: mesmo que o conteúdo seja importado na atividade anterior, selecione **[!UICONTROL Specified in the delivery]**. Como o conteúdo é importado diretamente de um arquivo localizado em um servidor remoto, ele não tem identificador quando processado pelo workflow e não pode ser identificado como proveniente do evento de entrada.
-   * Ação a executar: selecione **[!UICONTROL Save]** para salvar o delivery e acessá-lo a partir de **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** após a execução do workflow.
+   * Ação a executar: selecione **[!UICONTROL Save]** para salvar a entrega e acessá-la a partir de **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** após a execução do workflow.
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. Na guia **[!UICONTROL Script]** da atividade **[!UICONTROL Delivery]**, adicione o seguinte comando para carregar o conteúdo do arquivo importado no delivery:
+1. Na guia **[!UICONTROL Script]** da atividade **[!UICONTROL Delivery]**, adicione o seguinte comando para carregar o conteúdo do arquivo importado na entrega:
 
    ```
    delivery.content.html.source=loadFile(vars.filename)
@@ -51,7 +51,7 @@ Para fazer isso:
 
    ![](assets/delivery_loadcontent_script.png)
 
-1. Salve e execute o workflow. Um novo delivery com o conteúdo carregado é criado em **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
+1. Salve e execute o workflow. Uma nova entrega com o conteúdo carregado é criada em **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
 >[!NOTE]
 >

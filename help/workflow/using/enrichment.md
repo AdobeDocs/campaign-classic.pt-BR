@@ -7,7 +7,7 @@ feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1304'
 ht-degree: 100%
 
 ---
@@ -103,7 +103,7 @@ Os dados e o schema na saída do estágio de enriquecimento serão como a seguir
 
 É possível utilizar a atividade de enriquecimento para criar um link entre os dados de trabalho e o banco de dados do Adobe Campaign: isto será um link local para o workflow entre os dados de entrada.
 
-Por exemplo, se carregar dados de um arquivo que contenha o número da conta, o país e o e-mail dos recipients, será necessário criar um link para a tabela do país para atualizar essas informações em seus perfis.
+Por exemplo, se carregar dados de um arquivo que contenha o número da conta, o país e o e-mail dos destinatários, será necessário criar um link para a tabela do país para atualizar essas informações em seus perfis.
 
 Para fazer isso, siga as etapas abaixo:
 
@@ -124,7 +124,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Selecione a opção **[!UICONTROL Link definition]** e clique no botão **[!UICONTROL Next]**. Especifique o tipo de link a ser criado. Neste exemplo, devemos reconciliar o país do recipient do arquivo com um país na lista de países disponíveis na tabela dedicada do banco de dados. Escolha a opção **[!UICONTROL Define a link by searching for a reference among several options]**. Selecione a tabela do país no campo **[!UICONTROL Target schema]**.
+1. Selecione a opção **[!UICONTROL Link definition]** e clique no botão **[!UICONTROL Next]**. Especifique o tipo de link a ser criado. Neste exemplo, devemos reconciliar o país do destinatário do arquivo com um país na lista de países disponíveis na tabela dedicada do banco de dados. Escolha a opção **[!UICONTROL Define a link by searching for a reference among several options]**. Selecione a tabela do país no campo **[!UICONTROL Target schema]**.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -150,11 +150,11 @@ Se várias condições de associação forem especificadas, TODAS elas deverão 
 
 ## Inserção de uma proposta de oferta {#inserting-an-offer-proposition}
 
-A atividade de enriquecimento permite adicionar ofertas ou links para ofertas de recipients de delivery.
+A atividade de enriquecimento permite adicionar ofertas ou links para ofertas de destinatários de entrega.
 
 Para obter mais informações sobre a atividade de enriquecimento, consulte esta [seção](enrichment.md).
 
-Por exemplo, é possível enriquecer os dados de uma query de recipient antes de um delivery.
+Por exemplo, é possível enriquecer os dados de uma query de destinatário antes de uma entrega.
 
 ![](assets/int_enrichment_offer1.png)
 
@@ -177,9 +177,9 @@ Após configurar sua query (consulte esta [seção](query.md)):
 
      ![](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Deliveries entre canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
 
-   O número de propostas disponíveis para pré-visualizar depende da configuração executada na atividade de enriquecimento, ao invés de qualquer configuração possível executada diretamente no delivery.
+   O número de propostas disponíveis para pré-visualizar depende da configuração executada na atividade de enriquecimento, ao invés de qualquer configuração possível executada diretamente na entrega.
 
 Para especificar propostas de oferta, também é possível optar por referenciar um link para uma oferta. Para obter mais informações, consulte a seguinte seção [Referência a um link para uma oferta](#referencing-a-link-to-an-offer).
 
@@ -195,25 +195,25 @@ Para fazer isso:
 
    ![](assets/int_enrichment_link1.png)
 
-1. Especifique a ligação entre os dados da tabela de entrada na atividade de enriquecimento (aqui a tabela de recipients) e a tabela de ofertas. Por exemplo, é possível vincular um código de oferta a um recipient.
+1. Especifique a ligação entre os dados da tabela de entrada na atividade de enriquecimento (aqui a tabela de destinatários) e a tabela de ofertas. Por exemplo, é possível vincular um código de oferta a um destinatário.
 
    ![](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Deliveries entre canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
 
    >[!NOTE]
    >
-   >O número de propostas disponíveis para a pré-visualização depende da configuração realizada no delivery.
+   >O número de propostas disponíveis para a pré-visualização depende da configuração realizada na entrega.
 
 ## Armazenamento de classificações e pesos de ofertas {#storing-offer-rankings-and-weights}
 
-Por padrão, quando uma atividade de **enriquecimento** é usada para delivery de ofertas, suas classificações e seus pesos não são armazenados na tabela de propostas.
+Por padrão, quando uma atividade de **enriquecimento** é usada para entrega de ofertas, suas classificações e seus pesos não são armazenados na tabela de propostas.
 
 A atividade **[!UICONTROL Offer engine]** armazena essas informações por padrão.
 
 No entanto, é possível armazenar essas informações da seguinte maneira:
 
-1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma query e antes de uma atividade de delivery.
+1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma query e antes de uma atividade de entrega.
 1. Na janela principal da atividade, selecione **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -224,4 +224,4 @@ No entanto, é possível armazenar essas informações da seguinte maneira:
 
 1. Confirme sua adição e salve seu workflow.
 
-O delivery armazena automaticamente a classificação e o peso das ofertas. Essas informações estão visíveis na guia **[!UICONTROL Offers]** do delivery.
+A entrega armazena automaticamente a classificação e o peso das ofertas. Essas informações estão visíveis na guia **[!UICONTROL Offers]** da entrega.

@@ -7,7 +7,7 @@ feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '849'
 ht-degree: 100%
 
 ---
@@ -42,9 +42,9 @@ Um operador pode responder de uma das duas formas seguintes: validação usando 
 
 A gestão de operador é apresentada nesta [seção](../../platform/using/access-management.md).
 
-Emails de aprovação são enviados continuamente. O template do delivery padrão é **[!UICONTROL notifyAssignee]**: ele é salvo na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Esse cenário pode ser personalizado e também é recomendável fazer uma cópia e alterar templates para cada atividade.
+Emails de aprovação são enviados continuamente. O template da entrega padrão é **[!UICONTROL notifyAssignee]**: ele é salvo na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Esse cenário pode ser personalizado e também é recomendável fazer uma cópia e alterar templates para cada atividade.
 
-Os deliveries criados por meio desse template são armazenados na pasta **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
+As entregas criadas por meio desse template são armazenadas na pasta **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
 
 ## Aprovações pelo console {#approval-via-the-console}
 
@@ -89,7 +89,7 @@ Você pode criar quatro tipos de expirações:
 * **Delay before a given date**: a expiração é calculada subtraindo-se um período de uma data especificada. 
 * **Expiration calculated by script**: a expiração é calculada usando o JavaScript.
 
-  O exemplo a seguir calcula uma expiração 24 horas antes da data em que um delivery é iniciado (identificada por **vars.deliveryId**):
+  O exemplo a seguir calcula uma expiração 24 horas antes da data em que uma entrega é iniciada (identificada por **vars.deliveryId**):
 
   ```
   var delivery = nms.delivery.get(vars.deliveryId)

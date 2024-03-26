@@ -4,15 +4,15 @@ title: Configuração técnica de email
 description: Saiba como configurar o Campaign para controlar a saída de suas instâncias ao entregar emails
 feature: Installation, Deliverability
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 20%
+source-wordcount: '3100'
+ht-degree: 13%
 
 ---
 
@@ -136,7 +136,7 @@ Por padrão, o servidor de estatísticas escuta na porta 7777. Essa porta pode s
 
 >[!IMPORTANT]
 >
->Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), as regras de taxa de trasferência do delivery **[!UICONTROL MX management]** não são mais usadas. O MTA aprimorado usa regras de MX próprias que permitem personalizar a taxa de transferência por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
+>Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), as regras de taxa de transferência da entrega **[!UICONTROL MX management]** não são mais usadas. O MTA aprimorado usa regras de MX próprias que permitem personalizar a taxa de transferência por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
 
 ### Sobre as regras MX {#about-mx-rules}
 
@@ -148,11 +148,11 @@ As regras MX (Mail eXchanger) são as regras que gerenciam a comunicação entre
 
 Essas regras são recarregadas automaticamente todas as manhãs às 6h (horário do servidor) para fornecer regularmente a instância do cliente.
 
-Dependendo das capacidades do material e da política interna, um ISP aceitará um número predefinido de conexões e mensagens por hora. Essas variáveis podem ser modificadas automaticamente pelo sistema ISP, dependendo da reputação do IP e do domínio de envio. Por meio da sua plataforma de deliverability, o Adobe Campaign gerencia mais de 150 regras específicas pelo ISP e, além disso, uma regra genérica para outros domínios.
+Dependendo da capacidade do material e da política interna, um ISP aceitará um número predefinido de conexões e mensagens por hora. Essas variáveis podem ser modificadas automaticamente pelo sistema ISP, dependendo da reputação do IP e do domínio de envio. Por meio da sua plataforma de deliverability, o Adobe Campaign gerencia mais de 150 regras específicas pelo ISP e, além disso, uma regra genérica para outros domínios.
 
 O número máximo de conexões não depende exclusivamente do número de endereços IP públicos usados pelo MTA.
 
-Por exemplo, se você permitiu 5 conexões nas regras MX e configurou 2 IPs públicos, talvez ache que não é possível ter mais de 10 conexões abertas simultaneamente nesse domínio. Isso não é verdade, de fato, o número máximo de conexões se refere a um caminho, e um caminho que é uma combinação de um de nossos IPs públicos de MTA e um IP público do MTA do cliente.
+Por exemplo, se você permitiu cinco conexões nas regras MX e configurou dois IPs públicos, talvez pense que não é possível abrir mais de dez conexões simultaneamente para esse domínio. Isso não é verdade, de fato, o número máximo de conexões se refere a um caminho, e um caminho que é uma combinação de um de nossos IPs públicos de MTA e um IP público do MTA do cliente.
 
 No exemplo abaixo, o usuário tem dois endereços IP públicos configurados e o domínio é yahoo.com.
 
@@ -163,7 +163,7 @@ user:~ user$ host -t mx yahoo.com
                 yahoo.com mail is handled by 1 mta7.am0.yahoodns.net.
 ```
 
-Os registros MX para yahoo.com informam que o yahoo.com tem 3 Mail Exchangers. Para conectar o Peer Mail Exchanger, o MTA solicitará o endereço IP do DNS.
+Registros MX para yahoo.com nos dizem que yahoo.com tem 3 Mail Exchangers. Para conectar o Peer Mail Exchanger, o MTA solicitará o endereço IP do DNS.
 
 ```
 user:~ user$ host -t a mta5.am0.yahoodns.net
@@ -177,7 +177,7 @@ user:~ user$ host -t a mta5.am0.yahoodns.net
                 mta5.am0.yahoodns.net has address 98.138.112.35
 ```
 
-Para este registro, o usuário poderá contatar 8 endereços IP parceiros. Como o usuário tem dois endereços IP públicos, ele recebe 8 * 2 = 16 combinações para acessar os servidores de email yahoo.com. Cada uma dessas combinações é chamada de caminho.
+Para esse registro, o usuário pode entrar em contato com 8 endereços IP de mesmo nível. Como o usuário tem dois endereços IP públicos, ele recebe 8 * 2 = 16 combinações para acessar os servidores de email yahoo.com. Cada uma dessas combinações é chamada de caminho.
 
 O segundo registro MX aparece como:
 
@@ -193,7 +193,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
                 mta6.am0.yahoodns.net has address 66.196.118.33
 ```
 
-4 desses 8 endereços IP já são usados em mta5 (98.136.216.26, 98.138.112.38, 63.250.192.46 e 98.136.217.203). Esse registro permite que o usuário use 4 novos endereços IP. O terceiro registro MX fará o mesmo.
+Quatro desses oito endereços IP já são usados no mta5 (98.136.216.26, 98.138.112.38, 63.250.192.46 e 98.136.217.203). Esse registro permite que o usuário use quatro novos endereços IP. O terceiro registro MX fará o mesmo.
 
 No total, temos 16 endereços IP remotos. Em combinação com nossos dois IPs públicos locais, temos 32 caminhos para alcançar servidores de email yahoo.com.
 
@@ -201,7 +201,7 @@ No total, temos 16 endereços IP remotos. Em combinação com nossos dois IPs p�
 >
 >Se 2 registros MX estiverem fazendo referência ao mesmo endereço IP, este será contado como um caminho e não dois.
 
-Abaixo estão alguns exemplos de uso das regras MX:
+Abaixo estão alguns exemplos de uso de regras MX:
 
 ![](assets/s_ncs_examples_mx_rules.png)
 
@@ -232,7 +232,7 @@ Para recarregar a configuração sem reiniciar o servidor de estatísticas, use 
 
 >[!NOTE]
 >
->Esta linha de comando é preferível a **nlserver restart**. Ela evita que as estatísticas coletadas antes da reinicialização sejam perdidas e evita picos de uso, o que pode ir contra as cotas definidas nas regras MX.
+>Essa linha de comando é preferível a **reinicialização do nlserver**. Ela evita que as estatísticas coletadas antes da reinicialização sejam perdidas e evita picos de uso, o que pode ir contra as cotas definidas nas regras MX.
 
 ### Configuração de regras MX {#configuring-mx-rules}
 
@@ -280,7 +280,7 @@ Os seguintes parâmetros disponíveis para cada regra são:
 
   ![](assets/s_ncs_install_mta_ips.png)
 
-* **[!UICONTROL Shared]**: define o escopo das propriedades para esta regra MX. Quando marcado, todos os parâmetros são compartilhados em todos os IPs disponíveis na instância. Quando desmarcado, as regras MX são definidas para cada IP. O número máximo de mensagens é multiplicado pelo número de IPs disponíveis.
+* **[!UICONTROL Shared]**: define o escopo das propriedades para esta regra MX. Quando marcado, todos os parâmetros serão compartilhados em todos os IPs disponíveis na instância. Quando desmarcadas, as regras MX são definidas para cada IP. O número máximo de mensagens é multiplicado pelo número de IPs disponíveis.
 * **[!UICONTROL Maximum number of connections]**: número máximo de conexões simultâneas com o domínio do remetente.
 * **[!UICONTROL Maximum number of messages]**: número máximo de mensagens que podem ser enviadas em uma conexão. Quando as mensagens excedem esse número, a conexão é fechada e uma nova é aberta.
 * **[!UICONTROL Messages per hour]**: número máximo de mensagens que podem ser enviadas em uma hora para o domínio do remetente.

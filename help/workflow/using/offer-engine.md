@@ -16,9 +16,9 @@ ht-degree: 100%
 
 
 
-A atividade **[!UICONTROL Offer engine]** permite definir uma chamada para o mecanismo de oferta antes de um delivery.
+A atividade **[!UICONTROL Offer engine]** permite definir uma chamada para o mecanismo de oferta antes de uma entrega.
 
-Essa atividade funciona de acordo com o mesmo princípio que a atividade de enriquecimento com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de um delivery.
+Essa atividade funciona de acordo com o mesmo princípio que a atividade de enriquecimento com uma chamada de mecanismo, enriquecendo os dados da população de entrada com uma oferta calculada pelo mecanismo, antes de uma entrega.
 
 ![](assets/int_offerengine_activity2.png)
 
@@ -29,8 +29,8 @@ Após configurar sua query (consulte esta [seção](query.md)):
 
    >[!CAUTION]
    >
-   >Se usar essa atividade, somente as propostas de oferta usadas no fornecimento serão armazenadas.
+   >Se usar essa atividade, somente as propostas de oferta usadas na entrega serão armazenadas.
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Deliveries entre canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas em vários canais](cross-channel-deliveries.md).

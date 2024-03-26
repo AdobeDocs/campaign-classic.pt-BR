@@ -7,15 +7,15 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1492'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # Selecionar o público das campanhas {#marketing-campaign-deliveries}
 
-Em uma campanha de marketing, para cada delivery, é possível definir:
+Em uma campanha de marketing, para cada entrega, é possível definir:
 
 * A audiência – saiba mais em [Criação de audiência em um fluxo de trabalho](#building-the-main-target-in-a-workflow) e [Seleção da população-alvo](#selecting-the-target-population).
 * Um grupo de controle ‒ saiba mais [nesta seção](#defining-a-control-group).
@@ -23,15 +23,15 @@ Em uma campanha de marketing, para cada delivery, é possível definir:
 
 Algumas dessas informações podem ser herdadas do [template de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
-Para criar o público alvo do delivery, você pode definir critérios de filtragem para os recipients no banco de dados. Este modo de seleção de recipient é apresentado [nesta seção](../../delivery/using/steps-defining-the-target-population.md).
+Para criar o público alvo da entrega, você pode definir critérios de filtragem para os destinatários no banco de dados. Este modo de seleção de destinatário é apresentado [nesta seção](../../delivery/using/steps-defining-the-target-population.md).
 
 ## Enviar para um grupo
 
-Você pode importar uma população para uma lista e, depois, direcionar essa lista nos deliveries. Para fazer isso, siga as etapas abaixo:
+Você pode importar uma população para uma lista e, depois, direcionar essa lista nas entregas. Para fazer isso, siga as etapas abaixo:
 
-1. Edite o delivery em questão e clique no link **[!UICONTROL To]** para mudar a população direcionada.
+1. Edite a entrega em questão e clique no link **[!UICONTROL To]** para mudar a população direcionada.
 
-1. Na guia **[!UICONTROL Main target]**, selecione a opção **[!UICONTROL Defined via the database]** e clique em **[!UICONTROL Add]** para selecionar os recipients.
+1. Na guia **[!UICONTROL Main target]**, selecione a opção **[!UICONTROL Defined via the database]** e clique em **[!UICONTROL Add]** para selecionar os destinatários.
 
 ![](assets/s_user_target_group_add.png)
 
@@ -41,7 +41,7 @@ Você pode importar uma população para uma lista e, depois, direcionar essa li
 
 ## Criar a audiência em um fluxo de trabalho de campanha {#building-the-main-target-in-a-workflow}
 
-O objetivo principal de um delivery também pode ser definido no fluxo de trabalho da campanha: este ambiente gráfico permite que você crie um destino usando consultas, testes e operadores: união, desduplicação, compartilhamento etc.
+O objetivo principal de uma entrega também pode ser definido no fluxo de trabalho da campanha: este ambiente gráfico permite que você crie um destino usando consultas, testes e operadores: união, desduplicação, compartilhamento etc.
 
 >[!IMPORTANT]
 >
@@ -92,7 +92,7 @@ Os workflows para construção do target podem ser iniciados manualmente por mei
 
 O direcionamento pode ser programado para execução automática de acordo com um agendamento (agendador) ou um evento (sinal externo, importação de arquivo, etc.).
 
-As ações relacionadas à execução do workflow de definição de metas (inicialização, parada, pausa etc.) são processos **assíncronos** : o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
+As ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são **assíncrono** processes: o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
 
 Os ícones da barra de ferramentas permitem realizar a ação referente à execução do workflow de direcionamento.
 
@@ -170,13 +170,13 @@ Os ícones da barra de ferramentas permitem realizar a ação referente à execu
 
 ## Adicionar um grupo de controle {#defining-a-control-group}
 
-Um grupo de controle é uma população que não receberá o delivery; ele é usado para rastrear o comportamento após o delivery e o impacto da campanha fazendo uma comparação com o comportamento da população do target, que recebeu o delivery.
+Um grupo de controle é uma população que não receberá a entrega; ele é usado para rastrear o comportamento após a entrega e o impacto da campanha fazendo uma comparação com o comportamento da população do target, que recebeu a entrega.
 
 O grupo de controle pode ser extraído do target principal e/ou vir de um grupo ou query específica.
 
 ### Ativar o grupo de controle para uma campanha {#activating-the-control-group-for-a-campaign}
 
-Você pode definir um grupo de controle no nível da campanha. Nesse caso, o grupo de controle será aplicado a cada delivery da campanha em questão.
+Você pode definir um grupo de controle no nível da campanha. Nesse caso, o grupo de controle será aplicado a cada entrega da campanha em questão.
 
 1. Edite a campanha relacionada e clique na guia **[!UICONTROL Edit]**.
 1. Clique em **[!UICONTROL Advanced campaign settings]**.
@@ -190,17 +190,17 @@ Você pode definir um grupo de controle no nível da campanha. Nesse caso, o gru
 
 O procedimento de configuração é apresentado em [Extração do grupo de controle do público-alvo principal](#extracting-the-control-group-from-the-main-target) e [Adicionar um grupo de controle](#adding-a-population).
 
-### Ativar o grupo de controle para um delivery {#activating-the-control-group-for-a-delivery}
+### Ativar o grupo de controle para uma entrega {#activating-the-control-group-for-a-delivery}
 
-Você pode definir um grupo de controle no nível do delivery, nesse caso, o grupo de controle será aplicado a cada delivery da campanha relacionado.
+Você pode definir um grupo de controle no nível da entrega, nesse caso, o grupo de controle será aplicado a cada entrega da campanha relacionada.
 
-Por padrão, a configuração do grupo de controle definida no nível da campanha se aplica a cada delivery dessa campanha. Entretanto, você pode adaptar o grupo de controle de um delivery individual.
+Por padrão, a configuração do grupo de controle definida no nível da campanha se aplica a cada entrega dessa campanha. Entretanto, você pode adaptar o grupo de controle de uma entrega individual.
 
 >[!NOTE]
 >
->Se você tiver definido um grupo de controle para uma campanha e também configurá-lo para um delivery vinculado a essa campanha, somente o grupo de controle definido para o delivery será aplicado.
+>Se você tiver definido um grupo de controle para uma campanha e também configurá-lo para uma entrega vinculada a essa campanha, somente o grupo de controle definido para a entrega será aplicado.
 
-1. Edite o delivery relacionado e clique no link **[!UICONTROL To]** na seção **[!UICONTROL Email parameters]**.
+1. Edite a entrega relacionada e clique no link **[!UICONTROL To]** na seção **[!UICONTROL Email parameters]**.
 
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
@@ -211,16 +211,16 @@ O procedimento de configuração é apresentado em [Extração do grupo de contr
 
 ### Extração do grupo de controle do target principal {#extracting-the-control-group-from-the-main-target}
 
-Você pode extrair recipients do target principal do delivery. Nesse caso, os recipients serão retirados do target das ações de delivery afetadas por essa configuração. Essa extração pode ser aleatória ou pode ser resultado da classificação de recipients.
+Você pode extrair destinatários do target principal da entrega. Nesse caso, os destinatários serão retirados do target das ações de entrega afetadas por essa configuração. Essa extração pode ser aleatória ou pode ser resultado da classificação de destinatários.
 
 ![](assets/s_ncs_user_extract_from_target_population.png)
 
-Para extrair um grupo de controle, ative o grupo de controle para a campanha ou delivery e selecione uma das seguintes opções: **[!UICONTROL Activate random sampling]** ou **[!UICONTROL Keep only the first records after sorting]**.
+Para extrair um grupo de controle, ative o grupo de controle para a campanha ou entrega e selecione uma das seguintes opções: **[!UICONTROL Activate random sampling]** ou **[!UICONTROL Keep only the first records after sorting]**.
 
-* **[!UICONTROL Activate random sampling]**: esta opção aplica amostras aleatórias aos recipients na população direcionada. Se você definir o limite como 100, o grupo de controle será constituído de 100 recipients selecionados aleatoriamente da população direcionada. A amostragem aleatória depende do mecanismo de banco de dados.
-* **[!UICONTROL Keep only the first records after sorting]**: esta opção permite definir uma limitação baseada em uma ou mais ordens de classificação. Se você selecionar o campo **[!UICONTROL Age]** como um critério de classificação e, em seguida, definir 100 como limite, o grupo de controle será constituído dos 100 recipients mais jovens. Por exemplo, pode ser interessante definir um grupo de controle que inclua recipients que façam poucas compras ou recipients que façam compras frequentes e comparar seu comportamento com os recipients contatados.
+* **[!UICONTROL Activate random sampling]**: esta opção aplica amostras aleatórias aos destinatários na população direcionada. Se você definir o limite como 100, o grupo de controle será constituído de 100 destinatários selecionados aleatoriamente da população direcionada. A amostragem aleatória depende do mecanismo de banco de dados.
+* **[!UICONTROL Keep only the first records after sorting]**: esta opção permite definir uma limitação baseada em uma ou mais ordens de classificação. Se você selecionar o campo **[!UICONTROL Age]** como um critério de classificação e, em seguida, definir 100 como limite, o grupo de controle será constituído dos 100 destinatários mais jovens. Por exemplo, pode ser interessante definir um grupo de controle que inclua destinatários que façam poucas compras ou destinatários que façam compras frequentes e comparar seu comportamento com os destinatários contatados.
 
-Clique em **[!UICONTROL Next]** para definir a ordem de classificação (se necessário) e selecione o modo de limitação do recipient.
+Clique em **[!UICONTROL Next]** para definir a ordem de classificação (se necessário) e selecione o modo de limitação do destinatário.
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
@@ -228,7 +228,7 @@ Essa configuração é equivalente a uma atividade de compartilhamento no workfl
 
 ### Usar uma nova população como grupo de controle {#adding-a-population}
 
-Você pode definir uma nova população a ser usada como um grupo de controle. Essa população pode vir de um grupo de recipients ou você pode criá-la por meio de uma query específica.
+Você pode definir uma nova população a ser usada como um grupo de controle. Essa população pode vir de um grupo de destinatários ou você pode criá-la por meio de uma query específica.
 
 ![](assets/s_ncs_user_add_to_target_population.png)
 

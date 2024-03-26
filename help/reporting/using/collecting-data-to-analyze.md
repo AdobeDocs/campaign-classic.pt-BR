@@ -36,7 +36,7 @@ Esse modo de seleção de dados é relevante quando os dados do relatório preci
 
 Para usar dados vinculados a um schema de banco de dados, selecione a opção apropriada no editor de query e configure a query a ser aplicada.
 
-O exemplo a seguir permite coletar o número de recipients para cada país, entre os perfis no banco de dados. Eles podem então ser exibidos em um relatório na forma de uma tabela.
+O exemplo a seguir permite coletar o número de destinatários para cada país, entre os perfis no banco de dados. Eles podem então ser exibidos em um relatório na forma de uma tabela.
 
 ![](assets/reporting_query_from_schema.png)
 
@@ -68,7 +68,7 @@ Para evitar a execução de consultas em todo o banco de dados, os dados precisa
 
 ### Filtro simplificado {#simplified-filter}
 
-É possível selecionar a opção **[!UICONTROL Filter automatically with the context]** para tornar o relatório acessível por meio de um nó específico da árvore, como uma lista, um recipient ou um delivery.
+É possível selecionar a opção **[!UICONTROL Filter automatically with the context]** para tornar o relatório acessível por meio de um nó específico da árvore, como uma lista, um destinatário ou uma entrega.
 
 A opção **[!UICONTROL Filter with the folder]** permite especificar uma pasta e levar em conta somente seu conteúdo. Isso permite filtrar os dados do relatório para mostrar apenas os dados de uma das pastas na árvore, conforme mostrado abaixo:
 

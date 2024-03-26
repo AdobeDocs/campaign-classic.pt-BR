@@ -11,7 +11,7 @@ topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '460'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 
    ![](assets/offer_delivery_example_001.png)
 
-1. Edite o delivery do email e clique no ícone **[!UICONTROL Offers]**.
+1. Edite a entrega do email e clique no ícone **[!UICONTROL Offers]**.
 
    ![](assets/offer_delivery_example_002.png)
 
@@ -40,11 +40,11 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 
    ![](assets/offer_delivery_example_004.png)
 
-1. Defina o número de ofertas na delivery para dois.
+1. Defina o número de ofertas na entrega para dois.
 
    ![](assets/offer_delivery_example_005.png)
 
-1. Feche a janela de gerenciamento de ofertas e crie o conteúdo de sua delivery.
+1. Feche a janela de gerenciamento de ofertas e crie o conteúdo de sua entrega.
 
    ![](assets/offer_delivery_example_006.png)
 
@@ -56,12 +56,12 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 
    ![](assets/offer_delivery_example_008.png)
 
-1. Clique em **[!UICONTROL Preview]** para visualizar as ofertas no delivery e, em seguida, selecione um recipient para visualizar as ofertas que eles receberão.
+1. Clique em **[!UICONTROL Preview]** para visualizar as ofertas na entrega e, em seguida, selecione um destinatário para visualizar as ofertas que eles receberão.
 
    ![](assets/offer_delivery_example_009.png)
 
-1. Salve a delivery e inicie o workflow para construção do target.
-1. Abra o delivery e clique na guia **[!UICONTROL Audit]** dele: é possível ver que o mecanismo de oferta selecionou as propostas a serem feitas dentre as várias ofertas do catálogo.
+1. Salve a entrega e inicie o workflow para construção do target.
+1. Abra a entrega e clique na guia **[!UICONTROL Audit]** dele: é possível ver que o mecanismo de oferta selecionou as propostas a serem feitas dentre as várias ofertas do catálogo.
 
    ![](assets/offer_delivery_example_010.png)
 
@@ -98,13 +98,13 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 
    ![](assets/offer_simulation_example_007.png)
 
-1. Escolha os recipients que deseja direcionar.
+1. Escolha os destinatários que deseja direcionar.
 
    ![](assets/offer_simulation_example_008.png)
 
-1. Configure o número de ofertas a serem enviadas para cada recipient.
+1. Configure o número de ofertas a serem enviadas para cada destinatário.
 
-   No nosso exemplo, o mecanismo de oferta escolherá as 3 ofertas com o peso mais alto para cada recipient.
+   No nosso exemplo, o mecanismo de oferta escolherá as 3 ofertas com o peso mais alto para cada destinatário.
 
    ![](assets/offer_simulation_example_009.png)
 

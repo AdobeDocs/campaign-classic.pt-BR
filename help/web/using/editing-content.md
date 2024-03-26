@@ -8,7 +8,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1230'
 ht-degree: 100%
 
 ---
@@ -242,13 +242,13 @@ Ao selecionar um bloco contendo uma imagem, você acessa as seguintes propriedad
 
 ### Inserção de um campo de personalização {#inserting-a-personalization-field}
 
-A opção **Campo de personalização** do ícone de inserção permite adicionar um campo de banco de dados ao conteúdo, como o nome do recipient. Essa opção só está disponível para blocos tipo texto.
+A opção **Campo de personalização** do ícone de inserção permite adicionar um campo de banco de dados ao conteúdo, como o nome do destinatário. Essa opção só está disponível para blocos tipo texto.
 
 ![](assets/dce_toolbar_textblock_persofield.png)
 
 Por padrão, os campos oferecidos são da tabela **[!UICONTROL Recipient]**. Quando necessário, edite as propriedades da aplicação web para selecionar outra tabela.
 
-O nome do campo aparece no editor, destacado em amarelo. Ele será substituído pelo perfil do recipient de destino quando a personalização for gerada (por exemplo, ao pré-visualizar uma página de destino).
+O nome do campo aparece no editor, destacado em amarelo. Ele será substituído pelo perfil do destinatário de destino quando a personalização for gerada (por exemplo, ao pré-visualizar uma página de destino).
 
 Um exemplo é apresentado na seção [Inserting a personalization field](creating-a-landing-page.md#inserting-a-personalization-field).
 
@@ -258,6 +258,6 @@ A opção de **Bloco de personalização** permite inserir blocos dinâmicos e p
 
 ![](assets/dce_toolbar_textblock_persoblock.png)
 
-Depois de inserido, o nome do bloco de personalização aparece no editor, realçado em amarelo. Ele é adaptado automaticamente ao perfil do recipient quando a personalização é gerada.
+Depois de inserido, o nome do bloco de personalização aparece no editor, realçado em amarelo. Ele é adaptado automaticamente ao perfil do destinatário quando a personalização é gerada.
 
 Para obter mais informações sobre os blocos de personalização integrados e como customizá-los, consulte [esta página](../../delivery/using/personalization-blocks.md).

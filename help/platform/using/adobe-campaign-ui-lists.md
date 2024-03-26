@@ -7,8 +7,8 @@ feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 100%
+source-wordcount: '1160'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Na parte inferior direita da tela da lista, um **[!UICONTROL counter]** mostra q
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-Se um &quot;**?**&quot; aparecer em vez do número à direita, clique no contador para iniciar o cálculo.
+Se um &quot;**?**&quot; for exibido em vez do número à direita, clique no contador para iniciar o cálculo.
 
 ### Carregar mais registros {#loading-more-records}
 
@@ -140,7 +140,7 @@ Por padrão, os parâmetros de exibição definidos se aplicam a todas as listas
 
 No entanto, é possível salvar mais de uma configuração a ser aplicada a pastas diferentes do mesmo tipo. A configuração é salva com as propriedades da pasta contendo os dados e pode ser aplicada novamente.
 
-Por exemplo, para uma pasta de delivery, é possível configurar a seguinte exibição:
+Por exemplo, para uma pasta de entrega, é possível configurar a seguinte exibição:
 
 ![](assets/s_ncs_user_folder_save_config_1.png)
 
@@ -154,7 +154,7 @@ Para salvar essa configuração de lista de modo que ela possa ser reutilizada, 
 
 1. Clique em **[!UICONTROL OK]** e em **[!UICONTROL Save]**.
 
-Você pode aplicar essa configuração a outra pasta **Delivery**:
+Você pode aplicar essa configuração a outra pasta **Entrega**:
 
 ![](assets/s_ncs_user_folder_save_config_3.png)
 

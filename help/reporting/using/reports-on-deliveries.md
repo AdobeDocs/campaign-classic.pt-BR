@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Relatórios sobre deliveries
-description: Relatórios sobre deliveries
+title: Relatórios de entregas
+description: Relatórios de entregas
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
@@ -22,10 +22,10 @@ O Adobe Campaign oferece vários tipos de relatórios, acessíveis através do c
 Os seguintes tipos de relatório estão disponíveis:
 
 * Relatórios sobre toda a plataforma, consulte [Relatórios globais](../../reporting/using/global-reports.md).
-* Relatórios do delivery, consulte [Relatórios do delivery](../../reporting/using/delivery-reports.md).
+* Relatórios da entrega, consulte [Relatórios da entrega](../../reporting/using/delivery-reports.md).
 * Relatórios acumulados, consulte [Relatórios cumulativos](../../reporting/using/cumulative-reports.md).
 
-Você pode acessar relatórios na home page do console do cliente, do painel de relatórios ou da lista de delivery. O modo de exibição de um relatório depende de seu contexto. A lista de relatórios principais está disponível na home page e permite acessar os dados de delivery rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md) para obter mais informações.
+Você pode acessar relatórios na home page do console do cliente, do painel de relatórios ou da lista de entrega. O modo de exibição de um relatório depende de seu contexto. A lista de relatórios principais está disponível na home page e permite acessar os dados de entrega rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md) para obter mais informações.
 
 
 Um campo de pesquisa está disponível no painel do relatório para acesso rápido a um dos relatórios na lista.

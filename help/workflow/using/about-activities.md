@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Esta seção descreve todas as atividades disponíveis. De acordo com o nó ou o contexto em que o workflow é criado/editado, as atividades disponíveis podem variar. Por exemplo, os workflows criados em uma campanha têm atividades de delivery em canais específicos.
+Esta seção descreve todas as atividades disponíveis. De acordo com o nó ou o contexto em que o workflow é criado/editado, as atividades disponíveis podem variar. Por exemplo, os workflows criados em uma campanha têm atividades de entrega em canais específicos.
 
 As atividades do workflow são agrupadas por categoria. Há quatro guias disponíveis ao mesmo tempo.
 

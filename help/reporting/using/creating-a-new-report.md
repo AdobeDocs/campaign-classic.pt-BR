@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Para criar um relatório, siga as etapas abaixo:
 
-1. Abra o navegador do Adobe Campaign e, no nó **[!UICONTROL Administration > Configuration]**, selecione a pasta **[!UICONTROL Reports]**.
+1. Abra o Explorer do Adobe Campaign e, no nó **[!UICONTROL Administration > Configuration]**, selecione a pasta **[!UICONTROL Reports]**.
 1. Clique no botão **[!UICONTROL New]** acima da lista de relatórios.
 1. Selecione **[!UICONTROL Create a new report from a template]** e clique em **[!UICONTROL Next]**.
 

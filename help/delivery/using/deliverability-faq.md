@@ -8,8 +8,8 @@ feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '666'
+workflow-type: tm+mt
+source-wordcount: '660'
 ht-degree: 100%
 
 ---
@@ -55,13 +55,13 @@ Se o problema persistir, entre em contato com os serviços comerciais ou de entr
 
 * **O que significam os diferentes motivos de erro de quarentena?**
 
-  Aqui estão os 10 possíveis motivos: não definido, usuário desconhecido, domínio inválido, endereço incluído na lista de bloqueios, recusado, erro ignorado, inacessível, conta desativada, caixa de correio cheia e não conectado.
+  Aqui estão os 10 possíveis motivos: não definido, usuário desconhecido, domínio inválido, endereço incluído na lista de bloqueios, recusado, erro ignorado, inacessível, conta desabilitada, caixa de correio cheia, não conectado.
 
   Para obter mais informações, consulte [Entendendo o gerenciamento da quarentena](understanding-quarantine-management.md).
 
 ## Remoção da lista de bloqueios {#remove-from-denylist}
 
-* **Um dos meus recipients foi adicionado à lista de bloqueios por engano. Como faço para excluí-los da lista de bloqueios para que eu possa iniciar o envio de mensagens para eles novamente?**
+* **Um dos meus destinatários foi adicionado à lista de bloqueios por engano. Como faço para excluí-los da lista de bloqueios para que eu possa iniciar o envio de mensagens para eles novamente?**
 
    * Vá para **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**.
    * Nos detalhes do registro correspondente, defina o valor do campo **[!UICONTROL Status]** como **[!UICONTROL Valid]**.

@@ -12,7 +12,7 @@ ht-degree: 100%
 ---
 
 
-# Monitoramento da avaliação do delivery (avaliação do delivery por email){#email-deliverability}
+# Monitoramento da avaliação da entrega (avaliação da entrega por email){#email-deliverability}
 
 
 

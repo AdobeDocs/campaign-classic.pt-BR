@@ -10,7 +10,7 @@ topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '147'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 
 
-Você pode [usar workflows](#use-workflows) para importar ou exportar perfis de recipient para o banco de dados do Adobe Campaign, ou configurar [importações genéricas bem como exportar trabalhos](#create-jobs).
+Você pode [usar workflows](#use-workflows) para importar ou exportar perfis de destinatário para o banco de dados do Adobe Campaign, ou configurar [importações genéricas bem como exportar trabalhos](#create-jobs).
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#import-profiles-video)
 

@@ -7,7 +7,7 @@ feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '517'
 ht-degree: 100%
 
 ---
@@ -50,21 +50,21 @@ No entanto, recomendamos que você evite ativar essa opção quando a quantidade
 
 Os dados armazenados na tabela de trabalho do workflow podem ser acessados nos campos de personalização.
 
-Isso permite que você use dados coletados por uma lista ou com base nas respostas de uma pesquisa em um delivery. Para fazer isso, use a seguinte sintaxe:
+Isso permite que você use dados coletados por uma lista ou com base nas respostas de uma pesquisa em uma entrega. Para fazer isso, use a seguinte sintaxe:
 
 ```
 %= targetData.FIELD %
 ```
 
-Os elementos de personalização do tipo **[!UICONTROL Target extension]** (targetData) não estão disponíveis para fluxos de trabalho para construção do target. O target do delivery deve ser construído no fluxo de trabalho e especificado na transição de entrada do delivery.
+Os elementos de personalização do tipo **[!UICONTROL Target extension]** (targetData) não estão disponíveis para fluxos de trabalho para construção do target. O target da entrega deve ser construído no fluxo de trabalho e especificado na transição de entrada da entrega.
 
-Se você quiser criar provas de delivery, o target de prova precisará ser construído com base no modo **[!UICONTROL Address substitution]** para que os dados de personalização possam ser inseridos. Para obter mais informações, consulte esta [seção](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Se você quiser criar provas de entrega, o target de prova precisará ser construído com base no modo **[!UICONTROL Address substitution]** para que os dados de personalização possam ser inseridos. Para obter mais informações, consulte esta [seção](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
 
 No exemplo a seguir, vamos coletar uma lista de informações sobre os clientes, para ser usada em um email personalizado.
 
 Siga as etapas abaixo:
 
-1. Crie um workflow para coletar informações, reconcilie com os dados já existentes no banco de dados, e depois inicie um delivery.
+1. Crie um workflow para coletar informações, reconcilie com os dados já existentes no banco de dados, e depois inicie uma entrega.
 
    ![](assets/wf-targetdata-sample-1.png)
 
@@ -86,19 +86,19 @@ Siga as etapas abaixo:
 
 1. Configure a atividade do tipo **[!UICONTROL Enrichment]** para reconciliar os dados coletados com os existentes no banco de dados do Adobe Campaign.
 
-   Aqui, a chave de conciliação é o número da conta:
+   Aqui, a chave de reconciliação é o número da conta:
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. Em seguida, configure o **[!UICONTROL Delivery]**: ele é criado com base em um template e os recipients são especificados pela transição de entrada.
+1. Em seguida, configure o **[!UICONTROL Delivery]**: ele é criado com base em um template e os destinatários são especificados pela transição de entrada.
 
    ![](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
-   >Somente os dados contidos na transição podem ser usados para personalizar o delivery. Os campos de personalização do tipo **targetData** só estão disponíveis para a população de entrada da atividade de **[!UICONTROL Delivery]**.
+   >Somente os dados contidos na transição podem ser usados para personalizar a entrega. Os campos de personalização do tipo **targetData** só estão disponíveis para a população de entrada da atividade de **[!UICONTROL Delivery]**.
 
-1. No template de delivery, use os campos coletados no fluxo de trabalho.
+1. No template de entrega, use os campos coletados no fluxo de trabalho.
 
    Para fazer isso, insira os campos de personalização do tipo **[!UICONTROL Target extension]**.
 
@@ -106,12 +106,12 @@ Siga as etapas abaixo:
 
    Nesse exemplo, queremos inserir o gênero de música e o tipo de mídia favoritos do cliente (CD ou DVD), conforme declarado no arquivo coletado pelo workflow.
 
-   Como um diferencial, vamos adicionar um cupom para os titulares de cartões de fidelidade, ou seja, recipients para os quais o valor &#39;Cartão&#39; for igual a 1.
+   Como um diferencial, vamos adicionar um cupom para os titulares de cartões de fidelidade, ou seja, destinatários para os quais o valor &#39;Cartão&#39; for igual a 1.
 
    ![](assets/wf-targetdata-sample-6.png)
 
-   Os dados do tipo **[!UICONTROL Target extension]** (targetData) são inseridos em deliveries usando as mesmas características de todos os campos de personalização. Eles também podem ser usados no assunto, rótulos de link ou nos próprios links.
+   Os dados do tipo **[!UICONTROL Target extension]** (targetData) são inseridos em entregas usando as mesmas características de todos os campos de personalização. Eles também podem ser usados no assunto, rótulos de link ou nos próprios links.
 
-   As mensagens endereçadas para os recipients coletados conterão os seguintes dados:
+   As mensagens endereçadas para os destinatários coletados conterão os seguintes dados:
 
    ![](assets/wf-targetdata-sample-7.png)

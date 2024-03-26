@@ -7,7 +7,7 @@ feature: Workflows, Targeting Activity
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1122'
 ht-degree: 100%
 
 ---
@@ -43,7 +43,7 @@ Complemento:
 
 ## Práticas recomendadas {#best-practices}
 
-Durante a desduplicação, os fluxos de entrada são processados separadamente. Se por exemplo, o recipient A for encontrado no resultado da query 1, bem como no resultado da query 2, eles não serão desduplicados.
+Durante a desduplicação, os fluxos de entrada são processados separadamente. Se por exemplo, o destinatário A for encontrado no resultado da query 1, bem como no resultado da query 2, eles não serão desduplicados.
 
 Esse problema precisa ser resolvido da seguinte maneira:
 
@@ -60,7 +60,7 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
 
    ![](assets/s_user_segmentation_dedup_param.png)
 
-1. Selecione o tipo de target para essa atividade (por padrão, a desduplicação vinculada aos recipients) e o critério a ser usado, isto é, o campo cujos valores idênticos permitem identificar duplicatas.
+1. Selecione o tipo de target para essa atividade (por padrão, a desduplicação vinculada aos destinatários) e o critério a ser usado, isto é, o campo cujos valores idênticos permitem identificar duplicatas.
 
    >[!NOTE]
    >
@@ -113,7 +113,7 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
 
 No exemplo a seguir, a desduplicação lida com a união entre três queries.
 
-O objetivo do workflow é definir o target de uma delivery excluindo duplicatas para evitar o envio para o mesmo recipient várias vezes.
+O objetivo do workflow é definir o target de uma entrega excluindo duplicatas para evitar o envio para o mesmo destinatário várias vezes.
 
 As duplicatas identificadas também serão integradas em uma lista de duplicatas dedicada que podem ser reutilizadas se necessário.
 
@@ -126,14 +126,14 @@ As duplicatas identificadas também serão integradas em uma lista de duplicatas
 1. Abra a atividade de desduplicação e clique no link **[!UICONTROL Edit configuration...]** para definir o modo de desduplicação.
 1. Na nova janela, selecione **[!UICONTROL Database schema]**.
 1. Selecione **Recipients** como dimensões de filtragem e direcionamento.
-1. Selecione o campo de ID para as duplicatas de **[!UICONTROL Email]** a fim de enviar o delivery somente uma vez para cada endereço de email, depois clique em **[!UICONTROL Next]**. 
+1. Selecione o campo de ID para as duplicatas de **[!UICONTROL Email]** a fim de enviar a entrega somente uma vez para cada endereço de email, depois clique em **[!UICONTROL Next]**. 
 
    Se desejar basear as IDs duplicadas em um campo específico, selecione **[!UICONTROL Other]** para acessar a lista de campos disponíveis.
 
-1. Escolha manter apenas uma entrada quando o mesmo endereço de email for identificado para vários recipients.
+1. Escolha manter apenas uma entrada quando o mesmo endereço de email for identificado para vários destinatários.
 1. Selecione o modo de desduplicação **[!UICONTROL Choose for me]** para que os registros salvos no caso de duplicatas identificadas sejam escolhidos aleatoriamente, depois clique em **[!UICONTROL Finish]**.
 
-Ao executar o workflow, todos os recipients identificados como duplicatas são excluídos do resultado (e, portanto, da delivery) e adicionada à lista de duplicatas. Essa lista pode ser usada novamente em vez de ter que reidentificar as duplicatas.
+Ao executar o workflow, todos os destinatários identificados como duplicatas são excluídos do resultado (e, portanto, da entrega) e adicionada à lista de duplicatas. Essa lista pode ser usada novamente em vez de ter que reidentificar as duplicatas.
 
 ## Mesclar campos em um único registro de dados {#merging-fields-into-single-record}
 

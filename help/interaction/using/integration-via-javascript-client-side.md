@@ -116,9 +116,9 @@ Para apresentar uma oferta a um contato identificado, o processo é semelhante a
 
    ![](assets/interaction_htmlmode_001.png)
 
-   Neste exemplo, a chave de identificação é composta por ser baseada no e-mail e no nome do recipient.
+   Neste exemplo, a chave de identificação é composta por ser baseada no e-mail e no nome do destinatário.
 
-1. Durante a exibição da página da Web, a avaliação do script permite passar a ID do recipient no mecanismo de oferta. Se a ID for composta, as chaves serão exibidas na mesma sequência usada nas configurações avançadas e separadas por um |.
+1. Durante a exibição da página da Web, a avaliação do script permite passar a ID do destinatário no mecanismo de oferta. Se a ID for composta, as chaves serão exibidas na mesma sequência usada nas configurações avançadas e separadas por um |.
 
    No exemplo a seguir, o contato fez logon no site e foi reconhecido durante a chamada do mecanismo do Interaction graças ao e-mail e ao nome.
 

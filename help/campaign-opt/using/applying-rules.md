@@ -7,17 +7,17 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Typology Rules, Campaigns
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '990'
+workflow-type: tm+mt
+source-wordcount: '994'
 ht-degree: 100%
 
 ---
 
 # Aplicar regras de tipologia{#applying-rules}
 
-## Aplicar uma tipologia a um delivery {#applying-a-typology-to-a-delivery}
+## Aplicar uma tipologia a uma entrega {#applying-a-typology-to-a-delivery}
 
-Para aplicar as regras de tipologia criadas, é necessário associá-las a uma tipologia e depois fazer referência a essa tipologia no delivery. Para fazer isso:
+Para aplicar as regras de tipologia criadas, é necessário associá-las a uma tipologia e depois fazer referência a essa tipologia na entrega. Para fazer isso:
 
 1. Crie uma tipologia de campanha.
 
@@ -28,31 +28,31 @@ Para aplicar as regras de tipologia criadas, é necessário associá-las a uma t
    ![](assets/campaign_opt_pressure_sample_1_6.png)
 
 1. Salve a tipologia: ela será adicionada à lista de tipologias existentes.
-1. Abra o delivery para o qual deseja aplicar as regras.
-1. Abra as propriedades do delivery e acesse a guia **[!UICONTROL Typology]**.
+1. Abra a entrega para a qual deseja aplicar as regras.
+1. Abra as propriedades da entrega e acesse a guia **[!UICONTROL Typology]**.
 1. Selecione a tipologia na lista suspensa.
 
    ![](assets/campaign_opt_pressure_sample_1_7.png)
 
    >[!NOTE]
    >
-   >A tipologia poderá ser definida no template de delivery para ser aplicada automaticamente a todos os deliveries criados usando esse template.
+   >A tipologia pode ser definida no template da entrega para que seja aplicada automaticamente a todas as entregas criadas usando esse modelo.
 
 ## Definir condições de aplicação {#defining-application-conditions}
 
 Você poderá restringir o campo de aplicação de uma regra de acordo com suas necessidades (exceto para regras de controle).
 
-É possível configurar regras de tipologia para que elas se apliquem apenas a certos deliveries aos quais estejam vinculadas ou a certos recipients entre os alvos de um delivery.
+É possível configurar regras de tipologia para que elas se apliquem apenas a certas entregas às quais estejam vinculadas ou a certos destinatários entre os alvos de uma entrega.
 
 Para definir as condições de aplicação de uma regra, clique no link **[!UICONTROL Edit the rule application conditions...]** na guia **[!UICONTROL General]**.
 
-Em seguida, use o editor de query para definir as condições de filtragem. No exemplo a seguir, a regra de capacidade apresenta apenas os deliveries com a palavra &#39;oferta&#39; em seu rótulo ou deliveries criados antes de 1º de abril de 2013.
+Em seguida, use o editor de query para definir as condições de filtragem. No exemplo a seguir, a regra de capacidade apresenta apenas as entregas com a palavra &#39;oferta&#39; em seu rótulo ou entregas criadas antes de 1º de abril de 2013.
 
 ![](assets/campaign_opt_create_capacity_criterion.png)
 
 >[!NOTE]
 >
->Nas regras de filtragem, é possível selecionar a condição do aplicativo de critérios de filtragem: eles podem depender do delivery ou do delivery outline. Para obter mais informações, consulte [Condicionando uma regra de filtragem](filtering-rules.md#conditioning-a-filtering-rule).
+>Nas regras de filtragem, é possível selecionar a condição do aplicativo de critérios de filtragem: eles podem depender da entrega ou da descrição da entrega. Para obter mais informações, consulte [Condicionando uma regra de filtragem](filtering-rules.md#conditioning-a-filtering-rule).
 
 ## Ajustar a frequência de cálculo {#adjusting-calculation-frequency}
 
@@ -68,7 +68,7 @@ A opção **[!UICONTROL Re-apply the rule at the start of personalization]** per
 
 ## Selecionar a fase de aplicação da regra {#selecting-the-rule-application-phase}
 
-As regras de tipologia são aplicadas em uma sequência específica durante as fases de direcionamento, análise e personalização dos envios.
+As regras de tipologia são aplicadas em uma sequência específica durante as fases de direcionamento, análise e personalização das entregas.
 
 ### Ordem de execução {#execution-order}
 
@@ -89,7 +89,7 @@ No modo de operação padrão, as regras são aplicadas na seguinte sequência:
 
 >[!NOTE]
 >
->Ao trabalhar com o módulo Campaign Interaction, regras de elegibilidade de oferta são aplicadas ao mesmo tempo que as regras de filtragem (para ofertas encontradas em delivery outlines) ou durante a fase de personalização, durante a chamada para o mecanismo de oferta.
+>Ao trabalhar com o módulo Campaign Interaction, regras de elegibilidade de oferta são aplicadas ao mesmo tempo que as regras de filtragem (para ofertas encontradas em descrições de entregas) ou durante a fase de personalização, durante a chamada para o mecanismo de oferta.
 
 É possível adaptar a sequência da execução das regras que têm o mesmo tipo ao usar o campo apropriado na guia **[!UICONTROL General]** da regra. Quando várias regras são executadas durante a mesma fase de processamento de mensagens, é possível configurar a sequência de execução no campo **[!UICONTROL Execution sequence]**.
 
@@ -97,7 +97,7 @@ Por exemplo, uma regra de pressão com uma ordem de execução de 20 é executad
 
 ### Regras de controle {#control-rules}
 
-Para regras de **[!UICONTROL Control]**, é possível decidir em qual ponto do ciclo de vida do delivery ela será aplicada (antes ou depois do direcionamento, no início da personalização, no final da análise). Na guia **[!UICONTROL Phase]** da regra de tipologia, selecione o valor a ser aplicado na lista suspensa do campo **[!UICONTROL General]**.
+Para regras de **[!UICONTROL Control]**, é possível decidir em qual ponto do ciclo de vida da entrega ela será aplicada (antes ou depois do direcionamento, no início da personalização, no final da análise). Na guia **[!UICONTROL Phase]** da regra de tipologia, selecione o valor a ser aplicado na lista suspensa do campo **[!UICONTROL General]**.
 
 ![](assets/campaign_opt_define_control_phase.png)
 
@@ -111,7 +111,7 @@ Os valores possíveis são:
 
   Se é necessário saber o target para aplicar a regra de controle, selecione essa fase.
 
-  Por exemplo, a regra de controle **[!UICONTROL Check proof size]** se aplica após cada estágio do targeting: essa regra impede a personalização da mensagem se houver muitos recipients de prova.
+  Por exemplo, a regra de controle **[!UICONTROL Check proof size]** se aplica após cada estágio do targeting: essa regra impede a personalização da mensagem se houver muitos destinatários de prova.
 
 * **[!UICONTROL At the start of personalization]**
 
@@ -125,7 +125,7 @@ Os valores possíveis são:
 
 ### Controle o tráfego SMTP de saída {#control-outgoing-smtp-traffic}
 
-Como opção, é possível usar o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular os deliveries ao servidor de deliveries (MTA) dessa afinidade. Isso permite a restrição do número de emails para envios específicas em máquinas ou endereços de saída.
+Como opção, é possível usar o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular as entregas ao servidor de entregas (MTA) dessa afinidade. Isso permite a restrição do número de emails para entregas específicas em máquinas ou endereços de saída.
 
 ![](assets/campaign_opt_select_ip_affinity.png)
 

@@ -11,7 +11,7 @@ topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '250'
 ht-degree: 100%
 
 ---
@@ -31,11 +31,11 @@ Os seguintes itens são obrigatórios:
 * Data de contato. Ofertas não qualificadas na data de contato não são consideradas.
 * População do target.
 
-  Se não configurar um filtro no target, toda a tabela de recipients será levada em conta.
+  Se não configurar um filtro no target, toda a tabela de destinatários será levada em conta.
 
 * Número de propostas a serem simuladas por target.
 
-  O recipient receberá muitas propostas. Por exemplo, se inserir 5, cada recipient receberá no máximo 5 propostas de oferta.
+  O destinatário receberá muitas propostas. Por exemplo, se inserir 5, cada destinatário receberá no máximo 5 propostas de oferta.
 
   ![](assets/offer_simulation_009.png)
 

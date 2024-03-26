@@ -30,7 +30,7 @@ Assim como para o relatório **[!UICONTROL Message Center service level]**, voc�
 Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** são calculados sobre o período selecionado:
 
 * **[!UICONTROL Average queuing time]**: o tempo médio que processou eventos com êxito no Centro de mensagens. Somente o tempo de processamento é levado em conta.
-* **[!UICONTROL Average message sending time (s)]**: o tempo médio que processou eventos com êxito no Centro de mensagens. Somente o tempo de delivery mta é levado em conta.
+* **[!UICONTROL Average message sending time (s)]**: o tempo médio que processou eventos com êxito no Centro de mensagens. Somente o tempo de entrega mta é levado em conta.
 * **[!UICONTROL Average processing time (s)]**: o tempo médio que processou eventos com êxito no Centro de mensagens. O cálculo leva em conta o tempo do processamento e o tempo de envio mta.
 * **[!UICONTROL Maximum number of queued events]**: número máximo de eventos presentes na fila do Centro de mensagens em um determinado momento.
 * **[!UICONTROL Minimum number of queued events]**: número mínimo de eventos presentes na fila do Centro de mensagens em um determinado momento.

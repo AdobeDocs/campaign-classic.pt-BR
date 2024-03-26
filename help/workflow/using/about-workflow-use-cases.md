@@ -39,7 +39,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Envio de um relatório a uma lista](sending-a-report-to-a-list.md)
 * [Supervisão de workflows](supervising-workflows.md)
 * [Envio de alertas personalizados a operadores](sending-personalized-alerts-to-operators.md)
-* [Configuração de um processo de aprovação de recipient antes do envio de uma entrega](using-the-local-approval-activity.md)
+* [Configuração de um processo de aprovação de destinatário antes do envio de uma entrega](using-the-local-approval-activity.md)
 
 ## Gerenciamento de dados {#management}
 
@@ -59,13 +59,13 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
-* [Consulta à tabela de recipients](querying-recipient-table.md)
+* [Consulta à tabela de destinatários](querying-recipient-table.md)
 * [Consulta de informações de entrega](querying-delivery-information.md)
 * [Execução de computação agregada](performing-aggregate-computing.md)
 * [Consulta ao gerenciamento de agrupamento](querying-using-grouping-management.md)
 * [Consulta usando uma relação muitos para muitos](querying-using-many-to-many-relationship.md)
 * [Adição de um campo calculado do tipo lista discriminada](adding-enumeration-type-calculated-field.md)
 * [Criação de um filtro](creating-a-filter.md)
-* [Filtro de recipients duplicados](filtering-duplicated-recipients.md)
+* [Filtro de destinatários duplicados](filtering-duplicated-recipients.md)
 * [Chamada de uma variável de instância em uma consulta](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
 * [Aplicar uma divisão de porcentagem em uma população](javascript-scripts-and-templates.md#example)

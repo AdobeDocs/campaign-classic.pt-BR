@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Quando a simulação for concluída, é possível analisar seu resultado usando a guia **[!UICONTROL Results]** que é adicionada à janela de simulação e o relatório **[!UICONTROL Breakdown of offers by rank]**, disponível no painel de simulação.
 
-Os resultados da simulação contêm uma análise de propostas por classificação e por recipient. Os eixos de relatório também são levados em conta e mostrados nesta guia.
+Os resultados da simulação contêm uma análise de propostas por classificação e por destinatário. Os eixos de relatório também são levados em conta e mostrados nesta guia.
 
 É possível salvar estes resultados e exportá-los se necessário, criando uma análise descritiva dos resultados. Para fazer isso, clique no link apropriado na janela de resultados.
 

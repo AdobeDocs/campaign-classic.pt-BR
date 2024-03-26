@@ -75,7 +75,7 @@ Para **campanhas colaborativas**, cancelar um pacote inicia várias ações:
 
    ![](assets/mkg_dist_mutual_op_cancelled.png)
 
-1. A campanha de referência é cancelada e todos os processos ativos (workflows, deliveries) são interrompidos,
+1. A campanha de referência é cancelada e todos os processos ativos (workflows, entregas) são interrompidos,
 
    ![](assets/mkg_dist_mutual_op_cancelled1.png)
 

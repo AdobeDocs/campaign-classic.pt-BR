@@ -10,7 +10,7 @@ topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '502'
 ht-degree: 100%
 
 ---
@@ -43,7 +43,7 @@ Quando a publicação estiver concluída, ambos os templates de mensagem que ser
 
 ![](assets/messagecenter_deployed_model_001.png)
 
-Depois que um modelo for publicado, se o evento correspondente for acionado, a instância de execução receberá o evento, o vinculará ao modelo transacional e enviará a mensagem transacional correspondente a cada recipient. Para obter mais informações, consulte [Processamento de evento](../../message-center/using/about-event-processing.md).
+Depois que um modelo for publicado, se o evento correspondente for acionado, a instância de execução receberá o evento, o vinculará ao modelo transacional e enviará a mensagem transacional correspondente a cada destinatário. Para obter mais informações, consulte [Processamento de evento](../../message-center/using/about-event-processing.md).
 
 >[!NOTE]
 >

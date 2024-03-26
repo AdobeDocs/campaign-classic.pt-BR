@@ -10,7 +10,7 @@ topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '967'
 ht-degree: 7%
 
 ---
@@ -35,7 +35,7 @@ Usar o Adobe Campaign Classic **Federated Data Access** (FDA) para processar inf
 
 ### Driver configurado no Windows {#driver-window}
 
-1. Instale o [driver ODBC para Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
+1. Baixe o [Driver ODBC para Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
 
 1. Configure o driver ODBC no Windows. Para obter mais informações, consulte [esta página](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf).
 

@@ -8,7 +8,7 @@ feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1223'
 ht-degree: 100%
 
 ---
@@ -33,9 +33,9 @@ O template de formulário é escolhido durante a criação do formulário. Ele n
 
 ## Armazenamento de dados do formulário {#form-data-storage}
 
-Por padrão, os campos de formulários Web são armazenados na tabela de recipients. Você pode alterar a tabela usada selecionando uma nova tabela no campo **[!UICONTROL Document type]**. O ícone **[!UICONTROL Zoom]** permite visualizar o conteúdo da tabela selecionada.
+Por padrão, os campos de formulários Web são armazenados na tabela de destinatários. Você pode alterar a tabela usada selecionando uma nova tabela no campo **[!UICONTROL Document type]**. O ícone **[!UICONTROL Zoom]** permite visualizar o conteúdo da tabela selecionada.
 
-Por padrão, as respostas são armazenadas na tabela **Formulário de resposta de um recipient**.
+Por padrão, as respostas são armazenadas na tabela **Formulário de resposta de um destinatário**.
 
 ## Configuração de uma página de erro {#setting-up-an-error-page}
 
@@ -123,7 +123,7 @@ A opção **[!UICONTROL Use a specific account]** permite limitar a permissão d
 
 ## Parâmetros de URL do formulário {#form-url-parameters}
 
-É possível incluir parâmetros adicionais na URL de um formulário para personalizar seu conteúdo e inicializar um contexto (idioma, ID do recipient criptografada, empresa, fórmula calculada armazenada em uma variável, etc.). Isso permite que você dê acesso a um formulário por meio de várias URLs diferentes e personalize o conteúdo da página com base no valor do(s) parâmetro(s) indicado(s) na URL.
+É possível incluir parâmetros adicionais na URL de um formulário para personalizar seu conteúdo e inicializar um contexto (idioma, ID do destinatário criptografada, empresa, fórmula calculada armazenada em uma variável, etc.). Isso permite que você dê acesso a um formulário por meio de várias URLs diferentes e personalize o conteúdo da página com base no valor do(s) parâmetro(s) indicado(s) na URL.
 
 Por padrão, o Adobe Campaign oferece parâmetros para pré-visualizar o formulário e verificar erros. Você pode criar novas configurações vinculadas ao formulário, que pode usar os valores de um campo no banco de dados ou de uma variável local.
 

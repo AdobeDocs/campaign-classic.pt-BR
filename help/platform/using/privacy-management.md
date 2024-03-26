@@ -11,7 +11,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '886'
 ht-degree: 100%
 
 ---
@@ -79,7 +79,7 @@ Além dos recursos mais recentes de **Direito de acesso** e **Direito ao esqueci
 
 Consentimento significa a aprovação do Titular dos dados para o tratamento de dados pessoais relativos à pessoa em questão. A obtenção de qualquer consentimento necessário para esse processamento é de responsabilidade do Controlador de Dados. Embora o Adobe Campaign forneça alguns recursos para ajudar o cliente a gerenciar o consentimento relacionado ao serviço, o Adobe não é responsável pelo consentimento. Os clientes devem trabalhar com os próprios serviços jurídicos para determinar seus próprios processos e práticas para qualquer consentimento necessário.
 
-Os recursos para ajudar a gerenciar alguns aspectos do consentimento são fundamentais para o Adobe Campaign desde o início. Por meio do nosso processo de gerenciamento de assinatura, os clientes podem acompanhar quais recipients participaram de quais tipos de assinatura, sejam boletins informativos, promoções diárias ou semanais ou qualquer outro tipo de programa de marketing.
+Os recursos para ajudar a gerenciar alguns aspectos do consentimento são fundamentais para o Adobe Campaign desde o início. Por meio do nosso processo de gerenciamento de assinatura, os clientes podem acompanhar quais destinatários participaram de quais tipos de assinatura, sejam boletins informativos, promoções diárias ou semanais ou qualquer outro tipo de programa de marketing.
 
 ![](assets/privacy-consent-management.png)
 
@@ -97,7 +97,7 @@ A seguir estão os valores de retenção padrão para tabelas integradas. Esteja
 * **Rastreamento consolidado**: 1 ano
 * **Registros de entrega**: 6 meses
 * **Logs de rastreamento**: 1 ano
-* **Deliveries excluídos**: 1 semana
+* **Entregas excluídas**: 1 semana
 * **Importação de rejeitos**: 6 meses
 * **Perfis do visitante**: 1 mês
 * **Apresentações da oferta**: 1 ano
@@ -116,7 +116,7 @@ O Adobe Campaign oferece a capacidade de gerenciar os direitos atribuídos aos v
 
 Um dos benefícios é permitir a gestão da decisão sobre quem poderá acessar os diferentes tipos de dados na empresa. Por exemplo, é possível ter diferentes profissionais de marketing que cubram diversas regiões e cada um deles só poderá acessar os dados da sua região geográfica.
 
-Da mesma forma, essa funcionalidade também permite a configuração de diferentes recursos para cada usuário, como limitar quem pode enviar deliveries, ou algo mais relevante para o Gerenciamento de privacidade, como quem pode alterar ou exportar dados.
+Da mesma forma, essa funcionalidade também permite a configuração de diferentes recursos para cada usuário, como limitar quem pode enviar as entregas, ou algo mais relevante para o Gerenciamento de privacidade, como quem pode alterar ou exportar dados.
 
 ![](assets/privacy-user-management.png)
 

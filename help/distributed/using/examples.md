@@ -7,8 +7,8 @@ feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 100%
+source-wordcount: '1303'
+ht-degree: 99%
 
 ---
 
@@ -80,7 +80,7 @@ Você é o gerente de marketing de uma marca grande de roupas que tem uma loja o
 
 Essa oferta é voltada para os melhores clientes de suas lojas dos EUA, o que significa que eles gastaram mais de US$ 300 desde o início do ano.
 
-Portanto, você decide usar o Marketing Distribuído para criar uma campanha colaborativa (por aprovação de alvo) que permitirá selecionar os melhores clientes das suas lojas (agrupados por região), que receberão o delivery do e-mail com a oferta especial.
+Portanto, você decide usar o Marketing Distribuído para criar uma campanha colaborativa (por aprovação de alvo) que permitirá selecionar os melhores clientes das suas lojas (agrupados por região), que receberão a entrega do e-mail com a oferta especial.
 
 A primeira parte deste exemplo ilustra suas entidades locais que recebem a notificação de criação de campanha e como elas podem usá-lo para avaliar a campanha e a solicitarem.
 
@@ -128,14 +128,14 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
    * o **[!UICONTROL Targeting dimension]**. Aqui, a **distribuição de dados** é executada com os **Recipients**.
    * o **[!UICONTROL Distribution type]**. Você pode escolher um **tamanho fixo** ou um **tamanho como uma porcentagem**.
    * o **[!UICONTROL Assignment type]**. Selecione a opção **Local entity**.
-   * o **[!UICONTROL Distribution type]**. Aqui, ele é o campo **[!UICONTROL Origin (@origin)]** presente na tabela Recipient que permite identificar a relação entre o contato e a entidade local.
+   * o **[!UICONTROL Distribution type]**. Aqui, ele é o campo **[!UICONTROL Origin (@origin)]** presente na tabela Destinatário que permite identificar a relação entre o contato e a entidade local.
    * O campo **[!UICONTROL Approval storage]**. Selecione a opção **Local approval of recipient**.
 
 1. Na guia **[!UICONTROL Breakdown]**, especifique:
 
    * o **[!UICONTROL Distribution field value]**, que corresponde às entidades locais envolvidas na campanha futura.
    * a entidade local **[!UICONTROL label]**.
-   * o **[!UICONTROL Size]** (fixo ou como uma porcentagem). O **valor padrão 0** envolve selecionar todos os recipients vinculados à entidade local.
+   * o **[!UICONTROL Size]** (fixo ou como uma porcentagem). O **valor padrão 0** envolve selecionar todos os destinatários vinculados à entidade local.
 
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
@@ -183,7 +183,7 @@ Agora você pode adicionar um **pacote de campanha** na guia **[!UICONTROL Campa
 
 Você é o gerente de marketing de uma grande marca de maquiagem que tem uma loja online e várias boutiques em todos os EUA. Para liquidar seu estoque de inverno e liberar espaço para seu novo estoque, você decide criar uma oferta especial que vai direcionar duas categorias de cliente: acima dos 30, para quem você oferecerá produtos de cuidados de pele sensíveis pela idade e o abaixo dos 30, para quem oferecerá os produtos mais básicos de tratamento de pele.
 
-Portanto, você decide usar o Marketing Distribuído para criar uma campanha colaborativa (por formulário) que permitirá selecionar clientes de suas diferentes lojas por faixa etária. Esses clientes receberão um delivery de e-mail com uma oferta especial que terá sido personalizada de acordo com suas faixas etárias.
+Portanto, você decide usar o Marketing Distribuído para criar uma campanha colaborativa (por formulário) que permitirá selecionar clientes de suas diferentes lojas por faixa etária. Esses clientes receberão uma entrega de e-mail com uma oferta especial que terá sido personalizada de acordo com suas faixas etárias.
 
 A primeira parte deste exemplo ilustra suas entidades locais que recebem a notificação de criação de campanha e como elas podem usá-lo para avaliar a campanha e a solicitarem.
 
@@ -194,7 +194,7 @@ As etapas são as seguintes:
 **Para a entidade local**
 
 1. Use a notificação de criação de campanha para acessar o formulário online.
-1. Personalize a campanha (target, conteúdo, volume de delivery).
+1. Personalize a campanha (target, conteúdo, volume de entrega).
 1. Verifique estes campos e os modifique se necessário.
 1. Aprove sua participação.
 1. O gerente da entidade local (ou da entidade central) aprova sua configuração e participação.
@@ -203,7 +203,7 @@ As etapas são as seguintes:
 
 1. Crie a campanha colaborativa.
 1. Configure **[!UICONTROL Advanced campaign settings...]** da mesma maneira que uma campanha local.
-1. Configure o workflow da campanha e o delivery da mesma forma que para uma campanha local.
+1. Configure o workflow da campanha e a entrega da mesma forma que para uma campanha local.
 1. Atualize o formulário da Web.
 1. Crie o pacote de campanha e publique-o.
 
@@ -216,7 +216,7 @@ As etapas são as seguintes:
 1. As entidades locais preenchem o formulário personalizado e, em seguida:
 
    * avaliam o target e o orçamento,
-   * pré-visualizam o conteúdo do delivery,
+   * pré-visualizam o conteúdo da entrega,
    * aprovam sua participação.
 
      ![](assets/mkg_dist_use_case_form_8.png)

@@ -7,7 +7,7 @@ badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Clas
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '851'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Para otimizar a criação, o uso e a durabilidade de um relatório, é preciso o
    * Explore os dados no banco de dados e defina medidas. Saiba mais [nesta seção](../../reporting/using/ac-cubes.md)
    * Adicionar indicadores a um relatório existente. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visualização dos dados no banco de dados. Saiba mais [nesta seção](../../reporting/using/about-descriptive-analysis.md)
-   * Criação de novo relatório do delivery. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * Criação de novo relatório da entrega. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)),
    * Exportar dados do banco de dados do Adobe Campaign (por meio de um workflow, consulte [esta seção](../../workflow/using/about-workflows.md)
    * Crie uma tabela dinâmica. Saiba mais [nesta seção](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Explore dados agregados. Saiba mais [nesta seção](../../reporting/using/ac-cubes.md)
@@ -55,11 +55,11 @@ Para otimizar a criação, o uso e a durabilidade de um relatório, é preciso o
 
 1. Definição do conteúdo
 
-   Em seguida, você precisa descobrir qual tipo de dados deseja exibir: indicadores de delivery, relatórios sobre os perfis de banco de dados etc.
+   Em seguida, você precisa descobrir qual tipo de dados deseja exibir: indicadores de entrega, relatórios sobre os perfis de banco de dados etc.
 
    Você também precisa saber a natureza desses dados (simples, resultante de um cálculo, significativo, etc.), seu local (no Adobe Campaign, em um sistema de terceiros), sua frequência de atualização para definir o cálculo de periodicidade (diário, semanal, em tempo real), bem como seu volume.
 
-   Os problemas vinculados aos volumes de dados e atualizações precisam ser pesquisados cuidadosamente para evitar problemas de exibição de relatórios, especialmente em termos de tempo. Portanto, recomendamos a criação de agregados para pré-calcular alguns dados fora do relatório. As tabelas com os logs do delivery e de rastreamento podem incluir milhões de registros: isso significa que os dados precisam ser agregados por meio de um workflow para ser usado em um relatório.
+   Os problemas vinculados aos volumes de dados e atualizações precisam ser pesquisados cuidadosamente para evitar problemas de exibição de relatórios, especialmente em termos de tempo. Portanto, recomendamos a criação de agregados para pré-calcular alguns dados fora do relatório. As tabelas com os logs da entrega e de rastreamento podem incluir milhões de registros: isso significa que os dados precisam ser agregados por meio de um workflow para ser usado em um relatório.
 
 ## Otimizar o design do relatório{#optimizing-report-creation}
 

@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 100%
+source-wordcount: '1506'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ A compartimentalização permite simplificar a exibição de dados agrupando val
 
 Em geral, três tipos de compartimentalização estão disponíveis:
 
-1. Uso de intervalos de valor definidos manualmente. Por exemplo, a idade, o carrinho de compras médio, o número de deliveries abertos, etc.). Para obter mais informações, consulte [Definição de cada compartimento](#defining-each-bin).
+1. Uso de intervalos de valor definidos manualmente. Por exemplo, a idade, o carrinho de compras médio, o número de entregas abertos, etc.). Para obter mais informações, consulte [Definição de cada compartimento](#defining-each-bin).
 1. Dinamicamente, dependendo dos valores de uma enumeração: apenas exibe os valores contidos na enumeração, todos os outros valores são agrupados em &#39;Outros&#39;. Para obter mais informações, consulte [Gestão dinâmica de compartimentos](#dynamically-managing-bins).
 1. Uso de intervalos de valor, todos os outros sendo agrupados. Por exemplo, de 18 a 25 anos, 26 a 59 anos e os outros. Para obter mais informações, consulte [Criação de intervalos de valor](#creating-value-ranges).
 
@@ -52,7 +52,7 @@ No exemplo a seguir, os idiomas são agrupados em três categorias: inglês, ale
 
 Você pode usar uma máscara SQL para combinar vários valores em um filtro. Para fazer isso, marque **[!UICONTROL Yes]** na coluna **[!UICONTROL Use an SQL mask]** e insira o filtro SQL a ser aplicado na coluna **[!UICONTROL Value or expression]**.
 
-No exemplo abaixo, todos os domínios de email que começam com **yahoo** (yahoo.fr, yahoo.com, yahoo.be, etc.) ou com **ymail** (ymail.com, ymail.eu, etc.) serão agrupados no rótulo **YAHOO!**, assim como endereços com o domínio **rocketmail.com**.
+No exemplo abaixo, todos os domínios de email que começam com **yahoo** (yahoo.fr, yahoo.com, yahoo.be etc.) ou com **ymail** (ymail.com, ymail.eu etc.) serão agrupados no rótulo **YAHOO!**, bem como endereços com a **rocketmail.com** domínio.
 
 ![](assets/s_advuser_cube_class_03b.png)
 

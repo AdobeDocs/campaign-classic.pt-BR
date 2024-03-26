@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## Criar um filtro no formato do email dos assinantes {#creating-a-filter-on-the-email-format-of-subscribers}
 
-Este caso de uso demonstrará como criar um filtro para classificar assinaturas de informativo com base no formato do email do recipient.
+Este caso de uso demonstrará como criar um filtro para classificar assinaturas de informativo com base no formato do email do destinatário.
 
 Para fazer isso, precisamos usar um filtro predefinido: esses filtros estão vinculados a um tipo de documento e são acessados por meio do nó **[!UICONTROL Administration > Configuration > Predefined filters]**. Esses filtros de dados podem ser usados para cada tipo de editor (ou documento) no aplicativo.
 
@@ -54,7 +54,7 @@ Siga as etapas abaixo:
    ![](assets/s_ncs_user_filter_parameters.png)
 
 1. Clique em **[!UICONTROL Save]** para adicionar um filtro aos filtros predefinidos desse tipo de lista.
-1. Agora é possível usar esse filtro na guia **[!UICONTROL Subscriptions]** do perfil do recipient e também acessar o filtro “Formato de email desconhecido”, clicando no botão **[!UICONTROL Filters]**.
+1. Agora é possível usar esse filtro na guia **[!UICONTROL Subscriptions]** do perfil do destinatário e também acessar o filtro “Formato de email desconhecido”, clicando no botão **[!UICONTROL Filters]**.
 
    ![](assets/s_ncs_user_filter_on_events.png)
 

@@ -9,8 +9,8 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
-workflow-type: ht
-source-wordcount: '1998'
+workflow-type: tm+mt
+source-wordcount: '2003'
 ht-degree: 100%
 
 ---
@@ -192,7 +192,7 @@ Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](../../
 * Use a mesma versão do console que a versão de build após a atualização.
 * Você tem algum aplicativo da web que insira dados no banco de dados do Campaign? Em caso afirmativo, execute-os e
 verifique se eles podem inserir novos registros por meio da API.
-* Você pode enviar um email de teste com êxito? Crie uma nova entrega usando um modelo conhecido, envie-a para um recipient de teste, verifique a personalização, desfaça o vínculo, aplique mirror page a todo o trabalho.
+* Você pode enviar um email de teste com êxito? Crie uma nova entrega usando um modelo conhecido, envie-a para um destinatário de teste, verifique a personalização, desfaça o vínculo, aplique mirror page a todo o trabalho.
 * Todos os seus workflows de caminho críticos estão em execução? Verifique os workflows, abra o journal do workflow e verifique se há erros.
 * Todas as pastas estão presentes, visíveis e acessíveis? Navegue por pastas diferentes e verifique se
 todo o conteúdo é exibido e está presente.

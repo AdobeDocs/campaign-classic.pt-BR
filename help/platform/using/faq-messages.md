@@ -31,7 +31,7 @@ A análise de entrega é a fase na qual a população de destino é calculada e 
 
 ### Por que devo criar provas? {#why-should-i-create-proofs-}
 
-A Adobe recomenda criar mensagens de prova para verificar seu delivery em um grupo de aprovadores antes de enviá-lo para o target principal. Em seguida, você pode validar o conteúdo da mensagem, a personalização e os parâmetros de entrega.
+A Adobe recomenda criar mensagens de prova para verificar sua entrega em um grupo de aprovadores antes de enviá-la para o target principal. Em seguida, você pode validar o conteúdo da mensagem, a personalização e os parâmetros de entrega.
 
 [Clique aqui para saber mais](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
@@ -48,7 +48,7 @@ Temos assim os seguintes benefícios:
 
 ### Como posso configurar um processo de aprovação antes de enviar mensagens? {#how-can-i-set-up-an-approval-process-before-sending-messages-}
 
-Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda configurar um ciclo de validação de delivery. Verifique se o conteúdo é aprovado com a frequência necessária enviando provas para testar os destinatários. Uma prova deve ser enviada toda vez que uma alteração for feita, para aprovar o conteúdo.
+Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda configurar um ciclo de validação de entrega. Verifique se o conteúdo é aprovado com a frequência necessária enviando provas para testar os destinatários. Uma prova deve ser enviada toda vez que uma alteração for feita, para aprovar o conteúdo.
 
 [Clique aqui para saber mais](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
@@ -68,7 +68,7 @@ Antes de enviar uma entrega a uma grande população, você pode [configurar ond
 
 ### Quais são as principais etapas para criar um email no Campaign? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
-Depois que a entrega do e-mail é criada e validada, é possível enviá-la. Você pode decidir enviar o email para o target principal imediatamente ou agendar o delivery para uma data posterior. Se necessário, antes disso, você também pode estimar o público-alvo.
+Depois que a entrega do e-mail é criada e validada, é possível enviá-la. Você pode decidir enviar o email para o target principal imediatamente ou agendar a entrega para uma data posterior. Se necessário, antes disso, você também pode estimar o público-alvo.
 
 [Clique aqui para saber mais](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
@@ -98,7 +98,7 @@ Para cada URL de mensagem, você pode escolher se irá ativar o rastreamento, al
 
 ### Onde posso acessar logs de entrega e rastreamento? {#where-can-i-access-delivery-and-tracking-logs-}
 
-Saiba como rastrear seus deliveries e entender o comportamento dos recipients [nesta página](../../delivery/using/delivery-dashboard.md).
+Saiba como rastrear suas entregas e entender o comportamento dos destinatários [nesta página](../../delivery/using/delivery-dashboard.md).
 
 ### Onde posso obter relatórios de entrega? {#where-can-i-get-delivery-reports-}
 

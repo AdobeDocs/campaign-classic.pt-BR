@@ -65,7 +65,7 @@ No exemplo a seguir, queremos configurar um formulário web que, quando aprovado
 
    ![](assets/s_ncs_admin_survey_jump_sample3.png)
 
-1. A URL do delivery deve incluir o nome interno do formulário de destino, por exemplo:
+1. A URL da entrega deve incluir o nome interno do formulário de destino, por exemplo:
 
    ```
    https://[myserver]/webForm/APP62?&next=APP22

@@ -99,7 +99,7 @@ As respostas de uma pesquisa podem ser exportadas em um arquivo externo para ser
 
    Isso permite:
 
-   * adicionar colunas ao arquivo de saída e recuperar as informações do recipient (que é armazenado no banco de dados),
+   * adicionar colunas ao arquivo de saída e recuperar as informações do destinatário (que é armazenado no banco de dados),
    * formatar os dados exportados,
    * selecionar o formato de codificação para as informações no arquivo.
 
@@ -117,7 +117,7 @@ As respostas de uma pesquisa podem ser exportadas em um arquivo externo para ser
 
 As informações coletadas por pesquisas online podem ser recuperadas na estrutura de um fluxo de trabalho de direcionamento. Para fazer isso, use a caixa **[!UICONTROL Survey responses]**.
 
-No exemplo a seguir, queremos fazer uma oferta da Web especialmente para os cinco recipients com pelo menos duas crianças e com as pontuações mais altas em uma pesquisa online. As respostas para essa pesquisa são:
+No exemplo a seguir, queremos fazer uma oferta da Web especialmente para os cinco destinatários com pelo menos duas crianças e com as pontuações mais altas em uma pesquisa online. As respostas para essa pesquisa são:
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
@@ -131,7 +131,7 @@ Indique as condições de filtragem para respostas clicando no link **[!UICONTRO
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
-Inicie o workflow para construção do target. O query recupera 8 recipients.
+Inicie o workflow para construção do target. O query recupera 8 destinatários.
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_5.png)
 
@@ -139,7 +139,7 @@ Clique com o botão direito do mouse na transição de saída da caixa de coleç
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_6.png)
 
-Em seguida, coloque uma caixa de divisão no workflow para recuperar os 5 recipients com a pontuação mais alta.
+Em seguida, coloque uma caixa de divisão no workflow para recuperar os 5 destinatários com a pontuação mais alta.
 
 Edite a caixa de divisão para configurá-la:
 

@@ -63,7 +63,7 @@ A Adobe não presta aconselhamento jurídico. Você deve trabalhar com seu próp
 
 * Remova do banco de dados do Adobe Campaign todos os atributos de dados não utilizados.
 
-* Use os dados disponíveis no Adobe Campaign para a finalidade à qual foram coletados e ofereça a seus recipients experiências melhores e personalizadas.
+* Use os dados disponíveis no Adobe Campaign para a finalidade à qual foram coletados e ofereça a seus destinatários experiências melhores e personalizadas.
 
 * Revise e atualize as permissões de acesso aos dados para ajudar a garantir que os usuários do Adobe Campaign possam aproveitar totalmente apenas os dados necessários para executar suas campanhas, mas não acessem dados extras.
 
@@ -99,9 +99,9 @@ Tecnicamente, todos os dados vinculados ao titular dos dados com `integrity="own
 
 Como controlador de dados, você tem a opção de personalizar este processo alterando a integridade dos links definidos nos esquemas de dados (por exemplo, caso tenha uma justificativa comercial para não excluir determinados dados).
 
-### O que acontece com os relatórios quando os logs de delivery e de rastreamento são excluídos?
+### O que acontece com os relatórios quando os logs de entrega e de rastreamento são excluídos?
 
-Os relatórios do Adobe Campaign são baseados em indicadores computados em dados agregados de delivery e logs de rastreamento. Como resultado, a remoção de logs individuais não deve afetar as métricas exibidas nos relatórios.
+Os relatórios do Adobe Campaign são baseados em indicadores computados em dados agregados de entrega e logs de rastreamento. Como resultado, a remoção de logs individuais não deve afetar as métricas exibidas nos relatórios.
 
 ## Reimportar dados {#re-import-data}
 
@@ -115,6 +115,6 @@ Ao receber uma solicitação de exclusão, o controlador de dados precisará gar
 
 ### Um Titular de dados, cujos dados tenham sido apagados do Adobe Campaign, pode ser reinserido?
 
-É possível que um Titular de dados seja aceito novamente ou adicionado como um novo recipient depois que seus dados forem apagados do Adobe Campaign.
+É possível que um Titular de dados seja aceito novamente ou adicionado como um novo destinatário depois que seus dados forem apagados do Adobe Campaign.
 
-É possível usar a trilha de auditoria para detalhar quando a exclusão anterior foi executada e quando o novo recipient foi criado.
+É possível usar a trilha de auditoria para detalhar quando a exclusão anterior foi executada e quando o novo destinatário foi criado.

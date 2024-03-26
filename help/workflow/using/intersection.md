@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
->title="Interseção Atividade de "
+>title="Atividade de intersecção"
 >abstract="Uma atividade do tipo intersecção cria um público alvo a partir da intersecção dos públicos alvos recebidos. Uma intersecção permite extrair somente o público que é comum a todos os resultados da atividade de entrada."
 >additional-url="https://video.tv.adobe.com/v/329373" text="Assista ao vídeo de demonstração"
 
@@ -37,17 +37,17 @@ Marque a opção **[!UICONTROL Generate complement]** se desejar processar o pú
 
 ## Exemplo de intersecção {#intersection-example}
 
-No exemplo a seguir, o objetivo da intersecção é calcular os recipients comuns em três consultas simples para criar uma lista.
+No exemplo a seguir, o objetivo da intersecção é calcular os destinatários comuns em três consultas simples para criar uma lista.
 
 1. Após três queries simples, insira uma atividade do tipo **[!UICONTROL Intersection]**.
 
-   Neste exemplo, os queries direcionam os recipients homens, que moram em Paris e com idade entre 18 e 30 anos, respectivamente.
+   Neste exemplo, os queries direcionam os destinatários homens, que moram em Paris e com idade entre 18 e 30 anos, respectivamente.
 
 1. Configure a intersecção. Para fazer isso, selecione o método de reconciliação **[!UICONTROL Keys only]** desde que as populações resultantes dos queries contenham dados consistentes.
-1. Se você tiver fornecido dados adicionais para os queries, poderá optar por manter apenas aqueles compartilhados por recipients marcando a caixa relevante.
+1. Se você tiver fornecido dados adicionais para os queries, poderá optar por manter apenas aqueles compartilhados por destinatários marcando a caixa relevante.
 1. Se quiser usar o restante dos dados (em relação aos queries, mas não sua intersecção), marque a caixa **[!UICONTROL Generate complement]**.
 1. Adicione uma atividade de atualização da lista após o resultado da intersecção. Você também pode adicionar uma atualização da lista ao complemento que deseja usar.
-1. Execute o workflow Aqui, dois recipients se aplicam a todos os três queries fornecidos ao mesmo tempo. O complemento é composto de cinco recipients que se aplicam apenas a um ou dois queries.
+1. Execute o workflow Aqui, dois destinatários se aplicam a todos os três queries fornecidos ao mesmo tempo. O complemento é composto de cinco destinatários que se aplicam apenas a um ou dois queries.
 
    O resultado da intersecção é enviado para a atualização da primeira lista. Se você optou usar o complemento, ele também será enviado para a segunda atualização da lista.
 

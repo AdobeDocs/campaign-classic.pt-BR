@@ -50,16 +50,16 @@ Os grupos de operadores padrão são:
 
    Esse grupo contém os seguintes direitos nomeados:
 
-   * **[!UICONTROL ADMINISTRATION]**: direito a executar/criar/editar/excluir qualquer objeto, como workflow, delivery, scripts, etc.
+   * **[!UICONTROL ADMINISTRATION]**: direito a executar/criar/editar/excluir qualquer objeto, como workflow, entrega, scripts, etc.
 
 1. **[!UICONTROL Delivery operators]**
 
-   Os operadores nesse grupo são responsáveis pelo gerenciamento de deliveries: eles permitem o acesso aos principais recursos necessários para a criação e preparação de deliveries (tipologias de campanha, mapeamentos de delivery, templates padrão, blocos de personalização, etc.).
+   Os operadores nesse grupo são responsáveis pelo gerenciamento de entregas: eles permitem o acesso aos principais recursos necessários para a criação e preparação de entregas (tipologias de campanha, mapeamentos de entrega, templates padrão, blocos de personalização, etc.).
 
    Esse grupo contém os seguintes direitos nomeados:
 
-   * **[!UICONTROL PREPARE DELIVERIES]**: Direito de criar, editar e iniciar a análise de delivery,
-   * **[!UICONTROL START DELIVERIES]**: Direito de aprovar deliveries anteriormente analisados.
+   * **[!UICONTROL PREPARE DELIVERIES]**: Direito de criar, editar e iniciar a análise de entrega,
+   * **[!UICONTROL START DELIVERIES]**: Direito de aprovar entregas anteriormente analisadas.
 
 1. **[!UICONTROL Campaign managers]**
 
@@ -72,7 +72,7 @@ Os grupos de operadores padrão são:
 
    >[!NOTE]
    >
-   >Esse grupo não permite que os operadores iniciem deliveries.
+   >Esse grupo não permite que os operadores iniciem entregas.
 
 1. **[!UICONTROL Content contributors]**
 
@@ -80,7 +80,7 @@ Os grupos de operadores padrão são:
 
 1. **[!UICONTROL Access to reports]**
 
-   Esse grupo é reservado para operadores externos, para acessar os relatórios do delivery por meio de um acesso à Web.
+   Esse grupo é reservado para operadores externos, para acessar os relatórios da entrega por meio de um acesso à Web.
 
 1. **[!UICONTROL Workflow execution]**
 

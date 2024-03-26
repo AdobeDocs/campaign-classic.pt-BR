@@ -8,7 +8,7 @@ feature: SMS
 role: User
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 100%
 
@@ -20,8 +20,8 @@ Use o Adobe Campaign para enviar mensagens SMS personalizadas.
 
 Antes de começar a enviar SMS:
 
-* Verifique se os perfis de recipient contêm pelo menos um celular em seus perfis.
-* Saiba mais sobre as [Práticas recomendadas de delivery](delivery-best-practices.md) do Adobe Campaign.
+* Verifique se os perfis de destinatário contêm pelo menos um celular em seus perfis.
+* Saiba mais sobre as [Práticas recomendadas de entrega](delivery-best-practices.md) do Adobe Campaign.
 
 As principais etapas para enviar um SMS são as seguintes:
 
@@ -34,7 +34,7 @@ As principais etapas para enviar um SMS são as seguintes:
 
 Além disso, você precisa estar familiarizado com o protocolo e as configurações de SMS. Veja a conexão configurada entre o Adobe Campaign e um provedor SMPP [neste documento](sms-protocol.md)
 
-Para obter informações gerais sobre como criar um delivery, consulte [esta seção](steps-about-delivery-creation-steps.md).
+Para obter informações gerais sobre como criar uma entrega, consulte [esta seção](steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >

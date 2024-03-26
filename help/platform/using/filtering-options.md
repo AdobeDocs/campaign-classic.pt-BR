@@ -49,7 +49,7 @@ Utilize o xis à direita do campo de seleção da pasta para retornar ao modo de
 
 ## Filtrar por status {#filter-by-status}
 
-Dependendo do tipo de informação exibida, é possível aplicar um filtro por status ou por estado. Por exemplo, para deliveries, você pode optar por exibir somente deliveries concluídos como mostrado abaixo:
+Dependendo do tipo de informação exibida, é possível aplicar um filtro por status ou por estado. Por exemplo, para entregas, você pode optar por exibir somente entregas concluídas como mostrado abaixo:
 
 ![](assets/d_ncs_user_interface_filter_delivery.png)
 

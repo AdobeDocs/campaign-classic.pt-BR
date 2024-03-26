@@ -5,13 +5,13 @@ description: Entender o gerenciamento de chaves em esquemas de dados
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
+exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
+source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
-
 
 # Gerenciamento de chaves em esquemas {#management-of-keys}
 
@@ -187,5 +187,5 @@ Navegue pelos links a seguir para saber mais:
 * [Introdução a esquemas](about-schema-reference.md)
 * [Estrutura de esquema](schema-structure.md)
 * [Mapeamento de banco de dados](database-mapping.md)
-* [Gerenciamento de links](database-links.md)
+* [Gerenciamento de link](database-links.md)
 * [Modelo de dados do Campaign](about-data-model.md)

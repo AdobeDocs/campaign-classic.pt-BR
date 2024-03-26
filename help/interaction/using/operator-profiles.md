@@ -11,7 +11,7 @@ exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 
 
-Existem dois tipos de operadores que usam o Interaction: gerentes de oferta e gerentes de delivery. Cada um deles tem direitos específicos que só dão acesso a algumas partes da árvore e da plataforma.
+Existem dois tipos de operadores que usam o Interaction: gerentes de oferta e gerentes de entrega. Cada um deles tem direitos específicos que só dão acesso a algumas partes da árvore e da plataforma.
 
 * **[!UICONTROL Offer manager]** : cria e mantém ofertas. Observe que se as ofertas forem usadas no workflow, o operador precisará estar no **[!UICONTROL Administrator]** ou no grupo de operadores **[!UICONTROL Offer managers]** para executar o workflow.
 * **[!UICONTROL Delivery manager]** : aprova e usa ofertas
@@ -47,22 +47,22 @@ Os direitos atribuídos ao gerente de ofertas permitem que eles executem as segu
   >
   >O gerente de ofertas só pode aprovar uma oferta em dois casos específicos. O primeiro se ninguém tiver sido especificado como revisor, e o segundo se o operador encarregado de criar templates (com o direito de atribuir revisores) especificou ele/ela como revisor no template de oferta em que a oferta foi baseada.
 
-## Gerente de delivery {#delivery-manager}
+## Gerente de entrega {#delivery-manager}
 
 1. Crie um novo operador.
 1. Vá para a janela **[!UICONTROL Groups and named rights]**, clique em **[!UICONTROL Add]** e selecione o grupo **[!UICONTROL Delivery manager]**.
 
    ![](assets/offer_operators_create_002.png)
 
-Os direitos atribuídos aos gerentes de delivery os habilitam a realizar as seguintes tarefas:
+Os direitos atribuídos aos gerentes de entrega habilitam a realizar as seguintes tarefas:
 
 * Exibir ambientes **[!UICONTROL Live]**.
 * Exibir e modificar categorias de ofertas.
-* Aprovar ofertas se esse gerente de delivery for especificado como um de seus revisores.
+* Aprovar ofertas se esse gerente de entrega for especificado como um de seus revisores.
 
   >[!NOTE]
   >
-  >Os gerentes de delivery só podem aprovar uma oferta se tiverem sido definidos como revisores durante a configuração da oferta.
+  >Os gerentes de entrega só podem aprovar uma oferta se tiverem sido definidos como revisores durante a configuração da oferta.
 
 ## Resumo dos direitos de acordo com o operador {#recap-of-rights-according-to-operator}
 
@@ -84,7 +84,7 @@ Os direitos atribuídos aos gerentes de delivery os habilitam a realizar as segu
    <td> Ler<br /> </td> 
   </tr> 
   <tr> 
-   <td> Recipiente - Ambiente<br /> </td> 
+   <td> Destinatário - Ambiente<br /> </td> 
    <td> Ler / Gravar<br /> </td> 
    <td> Ler<br /> </td> 
   </tr> 
@@ -130,8 +130,8 @@ Os direitos atribuídos aos gerentes de delivery os habilitam a realizar as segu
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Gerente de delivery (edição)</strong><br /> </td> 
-   <td> <strong>Gerente de delivery (live)</strong><br /> </td> 
+   <td> <strong>Gerente de entrega (edição)</strong><br /> </td> 
+   <td> <strong>Gerente de entrega (live)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Nível de estrutura de árvore</strong><br /> </td> 
@@ -144,7 +144,7 @@ Os direitos atribuídos aos gerentes de delivery os habilitam a realizar as segu
    <td> Ler<br /> </td> 
   </tr> 
   <tr> 
-   <td> Recipiente - Ambiente<br /> </td> 
+   <td> Destinatário - Ambiente<br /> </td> 
    <td> </td> 
    <td> Ler<br /> </td> 
   </tr> 

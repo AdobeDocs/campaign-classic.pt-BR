@@ -8,7 +8,7 @@ feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2376'
 ht-degree: 100%
 
 ---
@@ -370,7 +370,7 @@ Para inserir um campo para fazer upload em uma página de formulário, selecione
 
 Por padrão, os arquivos carregados são armazenados em arquivos de recurso acessíveis por meio do menu **[!UICONTROL Resources > Online > Public resources]**. Você pode usar um script para alterar esse comportamento. Esse script pode usar as funções definidas na [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR), incluindo as que se referem à manipulação de arquivos.
 
-Você pode armazenar o link para esses arquivos em uma variável local ou em um campo de banco de dados. Por exemplo, você pode estender o schema de recipients para adicionar um link a recursos baseados em arquivo.
+Você pode armazenar o link para esses arquivos em uma variável local ou em um campo de banco de dados. Por exemplo, você pode estender o schema de destinatários para adicionar um link a recursos baseados em arquivo.
 
 >[!CAUTION]
 >
@@ -388,6 +388,6 @@ Este campo não está visível para o usuário, mas pode ser utilizado para enri
 
 Para fazer isso, coloque uma **constante** na página e especifique o valor e o local de armazenamento.
 
-No exemplo a seguir, o arquivo de **origem** do perfil do recipient é preenchido automaticamente sempre que um usuário aprova essa página. A constante não é exibida na página.
+No exemplo a seguir, o arquivo de **origem** do perfil do destinatário é preenchido automaticamente sempre que um usuário aprova essa página. A constante não é exibida na página.
 
 ![](assets/s_ncs_admin_survey_constante.png)

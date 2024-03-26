@@ -57,11 +57,11 @@ No exemplo abaixo, criaremos novas pastas para exibir dados específicos:
 
    ![](assets/s_ncs_user_add_folder_exple.png)
 
-1. Na guia **[!UICONTROL Restriction]**, selecione **[!UICONTROL This folder is a view]**. Todos os deliveries no banco de dados serão exibidos.
+1. Na guia **[!UICONTROL Restriction]**, selecione **[!UICONTROL This folder is a view]**. Todas as entregas no banco de dados serão exibidos.
 
    ![](assets/s_ncs_user_add_folder_exple01.png)
 
-1. Defina os critérios do filtro de delivery no editor de query na seção intermediária da janela: as campanhas correspondentes ao filtro definido serão exibidas.
+1. Defina os critérios do filtro de entrega no editor de query na seção intermediária da janela: as campanhas correspondentes ao filtro definido serão exibidas.
 
    >[!NOTE]
    >
@@ -71,7 +71,7 @@ No exemplo abaixo, criaremos novas pastas para exibir dados específicos:
 
 ![](assets/s_ncs_user_add_folder_exple00.png)
 
-Os seguintes deliveries serão exibidos na visualização:
+As seguintes entregas serão exibidas na visualização:
 
 ![](assets/s_ncs_user_add_folder_exple02.png)
 

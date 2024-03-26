@@ -8,8 +8,8 @@ feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '970'
+workflow-type: tm+mt
+source-wordcount: '974'
 ht-degree: 100%
 
 ---
@@ -18,20 +18,20 @@ ht-degree: 100%
 
 ## Enviar mensagens SMS {#sending-sms-messages}
 
-Para aprovar sua mensagem e enviá-la aos recipients do delivery que está sendo criado, clique em **[!UICONTROL Send]**.
+Para aprovar sua mensagem e enviá-la aos destinatários da entrega que está sendo criada, clique em **[!UICONTROL Send]**.
 
-O processo detalhado da validação e envio de um delivery é apresentado nas seções abaixo:
+O processo detalhado da validação e envio de uma entrega é apresentado nas seções abaixo:
 
 * [Validar a entrega](steps-validating-the-delivery.md)
 * [Enviar a entrega](steps-sending-the-delivery.md)
 
 ## Parâmetros avançados {#advanced-parameters}
 
-O botão **[!UICONTROL Properties]** dá acesso ao parâmetro de delivery avançado. Os parâmetros específicos para deliveries de SMS estão na seção **[!UICONTROL SMS parameters]** da guia **[!UICONTROL Delivery]**.
+O botão **[!UICONTROL Properties]** dá acesso ao parâmetro de entrega avançado. Os parâmetros específicos para entregas de SMS estão na seção **[!UICONTROL SMS parameters]** da guia **[!UICONTROL Delivery]**.
 
 As seguintes opções estão disponíveis:
 
-* **Endereço do remetente**: permite personalizar o nome do remetente do delivery usando uma string de caracteres alfanuméricos limitada a onze caracteres. O campo não deve ser criado exclusivamente com figuras. Você pode definir uma condição para exibir, por exemplo, nomes diferentes de acordo com o código de área do recipient:
+* **Endereço do remetente**: permite personalizar o nome do remetente da entrega usando uma string de caracteres alfanuméricos limitada a onze caracteres. O campo não deve ser criado exclusivamente com figuras. Você pode definir uma condição para exibir, por exemplo, nomes diferentes de acordo com o código de área do destinatário:
 
   ```
   <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
@@ -43,7 +43,7 @@ As seguintes opções estão disponíveis:
 
 * **Modo de transmissão**: transmissão de mensagem por SMS.
 * **Prioridade**: nível de importância atribuída a uma mensagem. A prioridade **[!UICONTROL Normal]** é selecionada por padrão. Pergunte ao seu provedor de serviços sobre o custo do SMS enviado com prioridade **[!UICONTROL High]**.
-* **Tipo de aplicativo**: escolha o aplicativo que deseja atribuir ao delivery de SMS. A opção **[!UICONTROL Direct Marketing]** é selecionada por padrão e é a mais usada.
+* **Tipo de aplicativo**: escolha o aplicativo que deseja atribuir a sua entrega de SMS. A opção **[!UICONTROL Direct Marketing]** é selecionada por padrão e é a mais usada.
 
 **Parâmetros específicos do conector NetSize**
 
@@ -55,21 +55,21 @@ As seguintes opções estão disponíveis:
 
 ![](assets/s_user_mobile_sms_adv_smpp.png)
 
-* **Número máximo de SMS por mensagem**: essa opção permite que você defina o número de SMS para usar ao enviar uma mensagem. Se o número for definido como 0, você poderá usar um SMS para enviar sua mensagem. Se o número de SMS estiver definido como 1 ou 2, por exemplo, e a mensagem exceder esse limite, ele não será enviado.
+* **Número máximo de SMS por mensagem**: essa opção permite que você defina o número de SMS para usar ao enviar uma mensagem. Se o número for definido como 0, você poderá usar um SMS para entregar sua mensagem. Se o número de SMS estiver definido como 1 ou 2, por exemplo, e a mensagem exceder esse limite, ele não será enviado.
 
 ## Monitorar e rastrear SMS {#monitoring-and-tracking-sms-deliveries}
 
 Após enviar as mensagens, você pode monitorar e rastrear suas entregas. Para obter mais informações, consulte essas seções.
 
-* [Monitorar um delivery](about-delivery-monitoring.md)
-* [Entender as falhas de delivery](understanding-delivery-failures.md)
+* [Monitorar uma entrega](about-delivery-monitoring.md)
+* [Entender as falhas de entrega](understanding-delivery-failures.md)
 * [Sobre o rastreamento de mensagens](about-message-tracking.md)
 
 ## Processar mensagens de entrada {#processing-inbound-messages}
 
-O módulo de **sms nlserver** consulta o roteador SMS em intervalos regulares. Isso permite que o Adobe Campaign rastreie o progresso dos deliveries e gerencie os relatórios de status e as solicitações de unsubscription de recipients.
+O módulo de **sms nlserver** consulta o roteador SMS em intervalos regulares. Isso permite que o Adobe Campaign rastreie o progresso das entregas e gerencie os relatórios de status e as solicitações de unsubscription de destinatários.
 
-* **Relatórios de status**: exibe logs do delivery para verificar o status das mensagens.
+* **Relatórios de status**: exibe logs da entrega para verificar o status das mensagens.
 
   >[!NOTE]
   >
@@ -78,7 +78,7 @@ O módulo de **sms nlserver** consulta o roteador SMS em intervalos regulares. I
   > * Os relatórios de status de uma conta externa de SMS excluída não são processados corretamente.
   > * Uma conta SMS só pode ser vinculada a uma única conta externa para garantir que os relatórios de status sejam atribuídos à conta correta
 
-* **Unsubscription**: recipients que desejam parar de receber deliveries de SMS podem retornar uma mensagem contendo a palavra PARAR. Se o seu provedor permitir sob os termos do contrato, você poderá recuperar mensagens por meio da atividade de workflow de **SMS de entrada** e criar um query para habilitar a opção **Não entrar em contato com este recipient** para os recipients relacionados.
+* **Unsubscription**: destinatários que desejam parar de receber entregas de SMS podem retornar uma mensagem contendo a palavra PARAR. Se o seu provedor permitir sob os termos do contrato, você poderá recuperar mensagens por meio da atividade de workflow de **SMS de entrada** e criar um query para habilitar a opção **Não entrar em contato com este destinatário** para os destinatários relacionados.
 
   Consulte a guia [Workflows](../../workflow/using/architecture.md) .
 
@@ -112,9 +112,9 @@ O schema InSMS contém informações relevantes para o SMS de entrada. Uma descr
 
 Quando os assinantes respondem a uma mensagem SMS enviada via Adobe Campaign e usam uma palavra-chave como PARAR, AJUDA ou SIM, é necessário, no mercado dos EUA, configurar mensagens que são automaticamente retornadas.
 
-Por exemplo, se os recipients enviam a palavra-chave PARAR, eles recebem automaticamente uma mensagem de confirmação informando que a assinatura foi cancelada.
+Por exemplo, se os destinatários enviam a palavra-chave PARAR, eles recebem automaticamente uma mensagem de confirmação informando que a assinatura foi cancelada.
 
-O nome do remetente desse tipo de mensagem é um código curto geralmente usado para enviar deliveries.
+O nome do remetente desse tipo de mensagem é um código curto geralmente usado para enviar entregas.
 
 >[!IMPORTANT]
 >
@@ -165,6 +165,6 @@ O nome do remetente desse tipo de mensagem é um código curto geralmente usado 
 
 >[!IMPORTANT]
 >
->Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no painel de delivery. [Saiba mais](delivery-dashboard.md).
+>Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no painel de entrega. [Saiba mais](delivery-dashboard.md).
 >
 >Essas mensagens não são consideradas nas regras de pressão comercial. [Saiba mais](../../campaign-opt/using/pressure-rules.md).

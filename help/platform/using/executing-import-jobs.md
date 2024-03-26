@@ -11,7 +11,7 @@ topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2966'
+source-wordcount: '2976'
 ht-degree: 100%
 
 ---
@@ -210,7 +210,7 @@ As seguintes opções estão disponíveis para cada campo na tabela em relação
 
 Pelo menos uma chave de reconciliação deve ser preenchida para gerenciar a correção de duplicidade.
 
-Uma chave de reconciliação é um conjunto de campos usados para identificar um registro. Por exemplo, ao importar recipients, a chave de reconciliação pode ser o número da conta, o campo “email” ou os campos “Sobrenome, Nome, Empresa”, etc.
+Uma chave de reconciliação é um conjunto de campos usados para identificar um registro. Por exemplo, ao importar destinatários, a chave de reconciliação pode ser o número da conta, o campo “email” ou os campos “Sobrenome, Nome, Empresa”, etc.
 
 Nesse caso, para descobrir se uma linha de um arquivo corresponde a um destinatário existente no banco de dados, o mecanismo de importação compara os valores do arquivo com aqueles do banco de dados para todos os campos da chave. Quando os campos são específicos de um registro, uma comparação entre os dados de origem e de destino pode ser executada, garantindo a integridade dos dados após a importação. Uma segunda chave de reconciliação pode ser preenchida para a mesma tabela; ela é usada para as linhas cuja primeira chave está vazia.
 
@@ -276,7 +276,7 @@ Você pode gerar um arquivo contendo esses registros por meio do ícone **[!UICO
 
 ![](assets/s_ncs_user_import_errors_export.png)
 
-## Etapa 5 - Etapa adicional ao importar recipients {#step-5---additional-step-when-importing-recipients}
+## Etapa 5 - Etapa adicional ao importar destinatários {#step-5---additional-step-when-importing-recipients}
 
 A próxima etapa do assistente de importação permite selecionar ou criar a pasta na qual os dados serão importados, mapear automaticamente destinatários importados com uma lista (nova ou existente) e assinar destinatários a um serviço.
 
@@ -286,11 +286,11 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 >
 >Esta etapa aparece ao importar os destinatários somente e ao usar a tabela de destinatários padrão do Adobe Campaign (**nms:recipient**).
 
-* Clique nos links **[!UICONTROL Edit]** para selecionar a pasta, a lista ou o serviço ao qual deseja associar ou assinar os recipients.
+* Clique nos links **[!UICONTROL Edit]** para selecionar a pasta, a lista ou o serviço ao qual deseja associar ou assinar os destinatários.
 
    1. Importação para uma pasta
 
-      O link **[!UICONTROL Edit...]** da seção **[!UICONTROL Import into a folder]** permite selecionar ou criar a pasta para onde os recipients serão importados. Por padrão, se nenhuma partição for definida, os dados serão importados para a pasta padrão do operador.
+      O link **[!UICONTROL Edit...]** da seção **[!UICONTROL Import into a folder]** permite selecionar ou criar a pasta para onde os destinatários serão importados. Por padrão, se nenhuma partição for definida, os dados serão importados para a pasta padrão do operador.
 
       >[!NOTE]
       >
@@ -310,7 +310,7 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 
    1. Associar com uma lista
 
-      O link **[!UICONTROL Edit...]** na seção **[!UICONTROL Add recipients to a list]** permite selecionar ou criar uma lista para onde os recipients serão importados.
+      O link **[!UICONTROL Edit...]** na seção **[!UICONTROL Add recipients to a list]** permite selecionar ou criar uma lista para onde os destinatários serão importados.
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
@@ -322,13 +322,13 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 
    1. Como assinar um serviço
 
-      Para inscrever todos os recipients importados para um serviço de informações, clique no link **[!UICONTROL Edit...]** da seção **[!UICONTROL Subscribe recipients to a service]** para selecionar ou criar o serviço de informações ao qual os recipients serão inscritos. Você pode selecionar a opção **[!UICONTROL Send a confirmation message]**: o conteúdo desta mensagem é definido no template do delivery associado ao serviço de assinatura.
+      Para inscrever todos os destinatários importados para um serviço de informações, clique no link **[!UICONTROL Edit...]** da seção **[!UICONTROL Subscribe recipients to a service]** para selecionar ou criar o serviço de informações ao qual os destinatários serão inscritos. Você pode selecionar a opção **[!UICONTROL Send a confirmation message]**: o conteúdo desta mensagem é definido no template da entrega associado ao serviço de assinatura.
 
       ![](assets/s_ncs_user_import_wizard05_7.png)
 
       É possível criar um novo serviço para esses destinatários clicando em **[!UICONTROL Select link]** e depois no ícone **[!UICONTROL Create]**. O gerenciamento dos serviços de informação é apresentado [nesta seção](../../delivery/using/managing-subscriptions.md).
 
-* Use o campo **[!UICONTROL Origin]** para adicionar informações sobre a origem dos recipients aos perfis. Essas informações são particularmente úteis na estrutura de uma importação múltipla.
+* Use o campo **[!UICONTROL Origin]** para adicionar informações sobre a origem dos destinatários aos perfis. Essas informações são particularmente úteis na estrutura de uma importação múltipla.
 
 Clique em **[!UICONTROL Next]** para validar essa etapa e exibir a seguinte.
 

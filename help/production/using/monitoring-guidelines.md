@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 27%
+source-wordcount: '750'
+ht-degree: 23%
 
 ---
 
@@ -31,7 +31,7 @@ Informações detalhadas estão disponíveis [aqui](../../production/using/monit
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Monitorar sua instância</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#monitoring-workflows">Monitorar workflows</a></p></td>
-<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Monitorar deliveries</a></p></td>
+<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Monitorar entregas</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Monitorar o banco de dados</a></p></td></tr>
 </table>
 
@@ -99,9 +99,9 @@ Os relatórios SMTP exibem estatísticas de delivery e erros SMTP por domínio. 
 
 **Solução de problemas de entrega**
 Ações específicas podem ser executadas ao encontrar problemas com os deliveries:
-* [Problemas na capacidade de delivery](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+* [Problemas na capacidade de entrega](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
-* [Problemas de desempenho do delivery](../../delivery/using/delivery-performances.md)
+* [Problemas de desempenho da entrega](../../delivery/using/delivery-performances.md)
 * [Problemas com arquivos temporários](../../production/using/temporary-files.md) - *somente modelos de hospedagem no local*
 
 ### Monitoramento do banco de dados {#monitoring-database}

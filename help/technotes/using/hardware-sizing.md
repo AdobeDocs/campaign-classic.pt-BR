@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2576'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,7 @@ Volume estimado:
 | Email | 42 milhões/mês |
 | Correspondência direta | 10 milhões/mês |
 | SMS móvel | 1.000.000/mês |
-| Volume máximo diário de email | 5,000,000 |
+| Volume máximo diário de email | 5.000.000 |
 
 ### Servidores de aplicativos e Web
 

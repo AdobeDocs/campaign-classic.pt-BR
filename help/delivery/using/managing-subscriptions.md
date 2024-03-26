@@ -65,9 +65,9 @@ Depois que o serviço é salvo, ele será adicionado à lista Services and Subsc
 
 ![](assets/s_ncs_user_services_subscriptions.png)
 
-O botão **[!UICONTROL Detail...]** permite examinar as propriedades de subscrição do recipient selecionado.
+O botão **[!UICONTROL Detail...]** permite examinar as propriedades de subscrição do destinatário selecionado.
 
-Você pode modificar as propriedades de subscrição de um recipient.
+Você pode modificar as propriedades de subscrição de um destinatário.
 
 ![](assets/s_ncs_user_services_modify.png)
 
@@ -118,20 +118,20 @@ Você pode configurar mecanismos de subscrição e unsubscription para automatiz
 
 ![](assets/s_ncs_user_subscribe_confirmation.png)
 
-### Subscrever um recipient a um serviço {#subscribing-a-recipient-to-a-service}
+### Subscrever um destinatário a um serviço {#subscribing-a-recipient-to-a-service}
 
-Para registrar recipients para um serviço de informação, você pode:
+Para registrar destinatários para um serviço de informação, você pode:
 
 * Adicionar manualmente o serviço: para fazer isso, a partir da guia **[!UICONTROL Subscriptions]** do perfil, clique em **[!UICONTROL Add]** e selecione o serviço de informação desejado.
 
   Para obter mais informações, consulte a seção sobre edição de perfil [nesta seção](../../platform/using/editing-a-profile.md).
 
-* Subscrever automaticamente um conjunto de assinantes a este serviço. A lista de recipients pode vir de uma operação de filtragem, grupo, pasta, importação ou seleção direta usando o mouse. Para inscrever esses recipients, selecione os perfis e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions > Subscribe selection to a service...]**, o serviço desejado e inicie a operação.
-* Importar recipients e inscrevê-los automaticamente em um serviço de informação. Para fazer isso, selecione o serviço na última etapa do assistente de importação.
+* Subscrever automaticamente um conjunto de assinantes a este serviço. A lista de destinatários pode vir de uma operação de filtragem, grupo, pasta, importação ou seleção direta usando o mouse. Para inscrever esses destinatários, selecione os perfis e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions > Subscribe selection to a service...]**, o serviço desejado e inicie a operação.
+* Importar destinatários e inscrevê-los automaticamente em um serviço de informação. Para fazer isso, selecione o serviço na última etapa do assistente de importação.
 
   Para obter mais informações, consulte [esta seção](../../platform/using/executing-import-jobs.md).
 
-* Usar um formulário da Web para que os recipients possam subscrever-se a um serviço.
+* Usar um formulário da Web para que os destinatários possam subscrever-se a um serviço.
 
   Para obter mais informações, consulte [esta seção](../../web/using/about-web-applications.md).
 
@@ -141,27 +141,27 @@ Para registrar recipients para um serviço de informação, você pode:
 
   Os detalhes sobre fluxos de trabalho e como usá-los estão [nesta seção](../../workflow/using/about-workflows.md).
 
-### Cancelamento de subscrição de um recipient em relação a um serviço {#unsubscribing-a-recipient-from-a-service}
+### Cancelamento de subscrição de um destinatário em relação a um serviço {#unsubscribing-a-recipient-from-a-service}
 
 #### Cancelamento manual de subscrição {#manual-unsubscribing}
 
-por lei, entregas de email devem conter um link para cancelamento. Os recipients podem clicar neste link para atualizar seu perfil e ser excluídos do envio das futuras entregas.
+por lei, entregas de email devem conter um link para cancelamento. Os destinatários podem clicar neste link para atualizar seu perfil e ser excluídos do envio das futuras entregas.
 
-O link padrão para cancelamento de subscrição é inserido por meio do último botão da barra de ferramentas do editor de conteúdo fornecido no assistente de entrega (consulte [Sobre personalização](about-personalization.md)). Quando o recipient clica nesse link, o perfil é adicionado à lista de bloqueios (recusado), significando que este recipient não será mais direcionado para qualquer ação de entrega.
+O link padrão para cancelamento de subscrição é inserido por meio do último botão da barra de ferramentas do editor de conteúdo fornecido no assistente de entrega (consulte [Sobre personalização](about-personalization.md)). Quando o destinatário clica nesse link, o perfil é adicionado à lista de bloqueios (recusado), significando que este destinatário não será mais direcionado para qualquer ação de entrega.
 
-Os recipients podem, no entanto, optar por cancelar a subscrição de um serviço sem cancelar a subscrição de todos os serviços. Para permitir isso, é possível usar um formulário web (consulte [esta seção](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) ou inserir um link personalizado de cancelamento de subscrição (consulte [Blocos de personalização](personalization-blocks.md)).
+Os destinatários podem, no entanto, optar por cancelar a subscrição de um serviço sem cancelar a subscrição de todos os serviços. Para permitir isso, é possível usar um formulário web (consulte [esta seção](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) ou inserir um link personalizado de cancelamento de subscrição (consulte [Blocos de personalização](personalization-blocks.md)).
 
-Também é possível cancelar a subscrição de um recipient manualmente no perfil do recipient. Para fazer isso, clique na guia **[!UICONTROL Subscriptions]** do recipient, selecione o(s) serviço(s) de informações desejado(s) e clique em **[!UICONTROL Delete]**.
+Também é possível cancelar a subscrição de um destinatário manualmente no perfil do destinatário. Para fazer isso, clique na guia **[!UICONTROL Subscriptions]** do destinatário, selecione o(s) serviço(s) de informações desejado(s) e clique em **[!UICONTROL Delete]**.
 
-Por fim, é possível cancelar a subscrição de um ou mais recipients por meio do serviço de informação relacionado. Para fazer isso, clique na guia **[!UICONTROL Subscriptions]** do serviço, selecione os recipients relacionados e clique em **[!UICONTROL Delete]**.
+Por fim, é possível cancelar a subscrição de um ou mais destinatários por meio do serviço de informação relacionado. Para fazer isso, clique na guia **[!UICONTROL Subscriptions]** do serviço, selecione os destinatários relacionados e clique em **[!UICONTROL Delete]**.
 
 #### Cancelamento automático de subscrição {#automatic-unsubscription}
 
-Um serviço de informação pode ter uma duração limitada. Os recipients terão a subscrição cancelada automaticamente quando o período de validade expirar. Este período é especificado na guia **[!UICONTROL Edit]** das propriedades do serviço. Ele é expresso em dias.
+Um serviço de informação pode ter uma duração limitada. Os destinatários terão a subscrição cancelada automaticamente quando o período de validade expirar. Este período é especificado na guia **[!UICONTROL Edit]** das propriedades do serviço. Ele é expresso em dias.
 
 ![](assets/s_ncs_user_services_delay.png)
 
-Você também pode configurar um workflow de cancelamento de subscrições para uma população. Para fazer isso, siga o mesmo procedimento para um workflow de subscrições, mas selecione a opção **[!UICONTROL Unsubscription]**. Consulte [Subscrição de um recipient a um serviço](#subscribing-a-recipient-to-a-service).
+Você também pode configurar um workflow de cancelamento de subscrições para uma população. Para fazer isso, siga o mesmo procedimento para um workflow de subscrições, mas selecione a opção **[!UICONTROL Unsubscription]**. Consulte [Subscrição de um destinatário a um serviço](#subscribing-a-recipient-to-a-service).
 
 ### Rastreamento do assinante {#subscriber-tracking}
 

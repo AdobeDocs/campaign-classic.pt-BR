@@ -8,7 +8,7 @@ feature: Seed Address
 role: User, Data Engineer
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ O Adobe Campaign também permite criar modelos de seed addresses que são import
 Para criar seed addresses, siga as etapas abaixo:
 
 1. Clique no botão **[!UICONTROL New]** acima da lista de seed addresses.
-1. Insira os dados vinculados ao endereço nos campos correspondentes da guia **[!UICONTROL Recipient]**. Os campos disponíveis correspondem aos campos padrão nos perfis dos recipients da entrega (tabela nms:recipient): sobrenome, nome, email, etc.
+1. Insira os dados vinculados ao endereço nos campos correspondentes da guia **[!UICONTROL Recipient]**. Os campos disponíveis correspondem aos campos padrão nos perfis dos destinatários da entrega (tabela nms:recipient): sobrenome, nome, email, etc.
 
    >[!NOTE]
    >

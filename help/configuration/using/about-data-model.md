@@ -9,11 +9,11 @@ exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
-# Introdução ao modelo de dados do Campaign {#about-data-model}
+# Introdução ao modelo de dados do Campaign{#about-data-model}
 
 O modelo de dados conceituais do banco de dados do Adobe Campaign consiste em um conjunto de tabelas incorporadas e sua interação. As principais tabelas e conceitos estão listados nesta página.
 
@@ -62,7 +62,7 @@ No entanto, é possível estender a tabela Recipient, mas não reduzir o número
 
 Além disso, como a tabela Recipient faz parte do produto, tanto a tabela quanto seu formulário associado evoluem à medida que o produto muda. Portanto, é necessária uma manutenção extra para verificar se as extensões ainda são válidas na atualização.
 
-## Extensão do modelo de dados  {#extending-data-model}
+## Extensão do modelo de dados {#extending-data-model}
 
 Ao começar com o Adobe Campaign, é necessário avaliar o modelo de dados padrão para verificar qual tabela é a mais adequada para armazenar seus dados de marketing.
 

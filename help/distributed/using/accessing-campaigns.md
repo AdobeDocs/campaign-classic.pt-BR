@@ -32,7 +32,7 @@ A campanha permanece acessível na visão geral do Campaign, localizada no link 
 
 ## Configurações disponíveis {#available-settings}
 
-As entidades locais podem adaptar o conteúdo da campanha de acordo com suas necessidades, usando todos os elementos do painel de campanha. Sua principal tarefa será adaptar o workflow de definição de alvos e possivelmente personalizar o conteúdo do delivery.
+As entidades locais podem adaptar o conteúdo da campanha de acordo com suas necessidades, usando todos os elementos do painel de campanha. Sua principal tarefa será adaptar o workflow de definição de alvos e possivelmente personalizar o conteúdo da entrega.
 
 ## Execução da campanha {#campaign-execution}
 

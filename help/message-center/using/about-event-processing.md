@@ -10,7 +10,7 @@ topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '700'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Para processar eventos de mensagens transacionais, as seguintes etapas são apli
 1. [Execução da entrega](../../message-center/using/delivery-execution.md)
 1. [Reciclagem de eventos](#event-recycling) cuja entrega vinculada falhou (por meio de um fluxo de trabalho do Adobe Campaign)
 
-Depois que todas as etapas acima forem executadas por meio da instância de execução, cada recipient direcionado receberá uma mensagem personalizada.
+Depois que todas as etapas acima forem executadas por meio da instância de execução, cada destinatário direcionado receberá uma mensagem personalizada.
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Por padrão, o roteamento é baseado nas seguintes informações:
 
 * O tipo de evento
 * O canal a ser usado (por padrão: email)
-* O template do delivery mais recente, com base na data da publicação
+* O template da entrega mais recente, com base na data da publicação
 
 ## Status do evento {#event-statuses}
 
@@ -96,7 +96,7 @@ O **Histórico de Eventos**, em **[!UICONTROL Event history]** > **[!UICONTROL M
 
 ## Reciclagem de eventos {#event-recycling}
 
-Se o delivery de uma mensagem em um canal específico falhar, o Adobe Campaign poderá reenviar a mensagem usando um canal diferente. Por exemplo, se um delivery no canal SMS falhar, a mensagem será reenviada usando o canal de email.
+Se a entrega de uma mensagem em um canal específico falhar, o Adobe Campaign poderá reenviar a mensagem usando um canal diferente. Por exemplo, se uma entrega no canal SMS falhar, a mensagem será reenviada usando o canal de email.
 
 Para fazer isso, é necessário configurar um workflow que recrie todos os eventos com o status **Delivery error** e atribuir um canal diferente a eles.
 

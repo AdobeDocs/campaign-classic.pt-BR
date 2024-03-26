@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Consulta de informações de delivery
-description: Como consultar informações de delivery
+title: Consulta de informações de entrega
+description: Como consultar informações de entrega
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Query Editor, Workflows
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1259'
 ht-degree: 100%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 100%
 
 ## Número de cliques de uma entrega específica {#number-of-clicks-for-a-specific-delivery}
 
-Neste exemplo, estamos procurando coletar o número de cliques de uma delivery específica. Esses cliques são registrados graças aos logs de acompanhamento de recipients coletados por um determinado período. O recipient é identificado por meio de seu endereço de e-mail. Esta consulta usa a tabela **[!UICONTROL Recipient tracking logs]**.
+Neste exemplo, estamos procurando coletar o número de cliques de uma entrega específica. Esses cliques são registrados graças aos logs de acompanhamento de destinatários coletados por um determinado período. O destinatário é identificado por meio de seu endereço de e-mail. Esta consulta usa a tabela **[!UICONTROL Recipient tracking logs]**.
 
 * Qual tabela precisa ser selecionada?
 
-  A tabela de rastreamento de log do recipient (**[!UICONTROL nms:trackingLogRcp]**).
+  A tabela de rastreamento de log do destinatário (**[!UICONTROL nms:trackingLogRcp]**).
 
 * Campos a serem selecionados para colunas de saída?
 
@@ -30,7 +30,7 @@ Neste exemplo, estamos procurando coletar o número de cliques de uma delivery e
 
 * Quais critérios serão usados para filtrar as informações?
 
-  Um período específico e um elemento do rótulo da delivery.
+  Um período específico e um elemento do rótulo da entrega.
 
 Para executar esse exemplo, aplique as seguintes etapas:
 
@@ -58,15 +58,15 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
      ![](assets/query_editor_nveau_19.png)
 
-1. Selecione o outro campo a ser exibido na coluna de saída. Na coluna **[!UICONTROL Available fields]**, abra o nó **[!UICONTROL Recipient]** e escolha **[!UICONTROL Email]**. Marque a caixa **[!UICONTROL Group]** com **[!UICONTROL Yes]** para agrupar os logs de rastreamento por endereço de email. Este grupo vincula cada log ao respectivo recipient.
+1. Selecione o outro campo a ser exibido na coluna de saída. Na coluna **[!UICONTROL Available fields]**, abra o nó **[!UICONTROL Recipient]** e escolha **[!UICONTROL Email]**. Marque a caixa **[!UICONTROL Group]** com **[!UICONTROL Yes]** para agrupar os logs de rastreamento por endereço de email. Este grupo vincula cada log ao respectivo destinatário.
 
    ![](assets/query_editor_nveau_20.png)
 
-1. Configure a classificação de coluna para que os recipients mais ativos (com os maior número de logs de rastreamento) sejam exibidos primeiro. Verifique **[!UICONTROL Yes]** na coluna **[!UICONTROL Descending sort]**.
+1. Configure a classificação de coluna para que os destinatários mais ativos (com os maior número de logs de rastreamento) sejam exibidos primeiro. Verifique **[!UICONTROL Yes]** na coluna **[!UICONTROL Descending sort]**.
 
    ![](assets/query_editor_nveau_64.png)
 
-1. É preciso então, filtrar os logs que interessam, ou seja, aqueles que estão abaixo de 2 semanas e abordam deliveries relacionadas às vendas.
+1. É preciso então, filtrar os logs que interessam, ou seja, aqueles que estão abaixo de 2 semanas e abordam entregas relacionadas às vendas.
 
    Para fazer isso:
 
@@ -74,7 +74,7 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
      ![](assets/query_editor_nveau_22.png)
 
-   * Recuperar logs de rastreamento em um determinado período de uma delivery específica. São necessárias três condições de filtro: duas condições de data para definir o período de pesquisa entre 2 semanas antes da data atual e o dia antes da data atual; e outra condição para restringir a pesquisa a uma delivery específica.
+   * Recuperar logs de rastreamento em um determinado período de uma entrega específica. São necessárias três condições de filtro: duas condições de data para definir o período de pesquisa entre 2 semanas antes da data atual e o dia antes da data atual; e outra condição para restringir a pesquisa a uma entrega específica.
 
      Na janela **[!UICONTROL Target element]**, configure a data a partir da qual os logs de rastreamento serão considerados. Clique em **[!UICONTROL Add]**. Uma linha de condição é exibida. Edite a coluna **[!UICONTROL Expression]** ao clicar na função **[!UICONTROL Edit expression]**. Na janela **[!UICONTROL Field to select]**, selecione **[!UICONTROL Date (@logDate)]**.
 
@@ -94,7 +94,7 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
      ![](assets/query_editor_nveau_65.png)
 
-     Agora, devemos configurar a terceira condição do filtro, ou seja, o rótulo de delivery que nossa query aborda.
+     Agora, devemos configurar a terceira condição do filtro, ou seja, o rótulo de entrega que nossa query aborda.
 
    * Clique na função **[!UICONTROL Add]** para criar outra condição de filtro. Na coluna **[!UICONTROL Expression]**, clique em **[!UICONTROL Edit expression]**. Na janela **[!UICONTROL Field to select]**, escolha **[!UICONTROL Label]** no nó **[!UICONTROL Delivery]**.
 
@@ -102,22 +102,22 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
      ![](assets/query_editor_nveau_66.png)
 
-     Procure uma delivery contendo a palavra &quot;sales&quot;. Se você não lembrar o rótulo exato, é possível escolher o operador **[!UICONTROL contains]** e digitar &quot;vendas&quot; na coluna **[!UICONTROL Value]**.
+     Procure uma entrega contendo a palavra &quot;sales&quot;. Se você não lembrar o rótulo exato, é possível escolher o operador **[!UICONTROL contains]** e digitar &quot;vendas&quot; na coluna **[!UICONTROL Value]**.
 
      ![](assets/query_editor_nveau_25.png)
 
 1. Clique em **[!UICONTROL Next]** até chegar à janela **[!UICONTROL Data preview]**. Nenhuma formatação é necessária.
-1. Na janela **[!UICONTROL Data preview]**, clique em **[!UICONTROL Start the preview of the data]** para ver o número de logs de rastreamento para cada recipient de delivery.
+1. Na janela **[!UICONTROL Data preview]**, clique em **[!UICONTROL Start the preview of the data]** para ver o número de logs de rastreamento para cada destinatário de entrega.
 
    O resultado é exibido em ordem decrescente.
 
    ![](assets/query_editor_tracklog_04.png)
 
-   O número mais alto de logs para um usuário é de 6 para esta delivery. 5 usuários diferentes abriram o e-mail de delivery ou clicaram em um dos links no e-mail.
+   O número mais alto de logs para um usuário é de 6 para esta entrega. 5 usuários diferentes abriram o e-mail de entrega ou clicaram em um dos links no e-mail.
 
-## Recipients que não abriram nenhuma entrega {#recipients-who-did-not-open-any-delivery}
+## Destinatários que não abriram nenhuma entrega {#recipients-who-did-not-open-any-delivery}
 
-Neste exemplo, devemos filtrar recipients que não abriram um e-mail nos últimos 7 dias.
+Neste exemplo, devemos filtrar destinatários que não abriram um e-mail nos últimos 7 dias.
 
 Para criar este exemplo, aplique as seguintes etapas:
 
@@ -146,17 +146,17 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    ![](assets/query_open_4.png)
 
-A transição de saída contém recipients que não abriram um e-mail nos últimos 7 dias.
+A transição de saída contém destinatários que não abriram um e-mail nos últimos 7 dias.
 
-Se, caso contrário, quiser filtrar os recipients que abriram pelo menos um e-mail a sua query deverá ser com mostrado a seguir. Observe que, nesse caso, o **[!UICONTROL Filtering dimension]** deve ser definido como **[!UICONTROL Tracking logs (Recipients)]**.
+Se, caso contrário, quiser filtrar os destinatários que abriram pelo menos um e-mail a sua query deverá ser com mostrado a seguir. Observe que, nesse caso, o **[!UICONTROL Filtering dimension]** deve ser definido como **[!UICONTROL Tracking logs (Recipients)]**.
 
 ![](assets/query_open_5.png)
 
-## Recipients que abriram uma entrega {#recipients-who-have-opened-a-delivery}
+## Destinatários que abriram uma entrega {#recipients-who-have-opened-a-delivery}
 
-O exemplo a seguir mostra como selecionar perfis que abriram uma delivery nas últimas 2 semanas:
+O exemplo a seguir mostra como selecionar perfis que abriram uma entrega nas últimas 2 semanas:
 
-1. Para direcionar perfis que tenham aberto um delivery, é necessário usar os logs de rastreamento. são armazenados em uma tabela vinculada: comece selecionando essa tabela na lista suspensa do campo **[!UICONTROL Filtering dimension]**, como mostrado abaixo:
+1. Para direcionar perfis que tenham aberto uma entrega, é necessário usar os logs de rastreamento. são armazenados em uma tabela vinculada: comece selecionando essa tabela na lista suspensa do campo **[!UICONTROL Filtering dimension]**, como mostrado abaixo:
 
    ![](assets/s_advuser_query_sample1.0.png)
 
@@ -178,23 +178,23 @@ O exemplo a seguir mostra como selecionar perfis que abriram uma delivery nas ú
 
    ![](assets/s_advuser_query_sample1.6.png)
 
-## Filtragem do comportamento de recipients após um delivery {#filtering-recipients--behavior-folllowing-a-delivery}
+## Filtragem do comportamento de destinatários após uma entrega {#filtering-recipients--behavior-folllowing-a-delivery}
 
-Em um workflow, as caixas **[!UICONTROL Query]** e **[!UICONTROL Split]** permitem selecionar um comportamento após um delivery. Essa seleção é realizada por meio do filtro **[!UICONTROL Delivery recipient]**.
+Em um workflow, as caixas **[!UICONTROL Query]** e **[!UICONTROL Split]** permitem selecionar um comportamento após uma entrega. Essa seleção é realizada por meio do filtro **[!UICONTROL Delivery recipient]**.
 
 * Objetivo do exemplo
 
-  Em um workflow de delivery, há várias maneiras de dar seguimento a uma primeira comunicação por e-mail. Esse tipo de operação envolve o uso da caixa **[!UICONTROL Split]**.
+  Em um workflow de entrega, há várias maneiras de dar seguimento a uma primeira comunicação por e-mail. Esse tipo de operação envolve o uso da caixa **[!UICONTROL Split]**.
 
 * Contexto
 
-  Uma delivery &quot;Oferta esportiva de verão&quot; é enviada. Quatro dias após a delivery, duas outras deliverys são enviadas. Uma delas é &quot;oferta de artigos de esportes aquáticos&quot;, o outro é uma continuidade da primeira delivery &quot;oferta esportiva de verão&quot;.
+  Uma entrega &quot;Oferta esportiva de verão&quot; é enviada. Quatro dias após a entrega, duas outras entregas são enviadas. Uma delas é &quot;oferta de artigos de esportes aquáticos&quot;, o outro é uma continuidade da primeira entrega &quot;oferta esportiva de verão&quot;.
 
-  A delivery &quot;oferta de artigos de esportes aquáticos&quot; é enviada aos recipients que clicaram no link &quot;esportes aquáticos&quot; na primeira delivery. Estes cliques mostram que o recipient está interessado no tópico. Faz sentido orientá-los para ofertas semelhantes. No entanto, os recipients que não clicaram na &quot;oferta de esportes de verão&quot; devem receber o mesmo conteúdo novamente.
+  A entrega &quot;oferta de artigos de esportes aquáticos&quot; é enviada aos destinatários que clicaram no link &quot;esportes aquáticos&quot; na primeira entrega. Estes cliques mostram que o destinatário está interessado no tópico. Faz sentido orientá-los para ofertas semelhantes. No entanto, os destinatários que não clicaram na &quot;oferta de esportes de verão&quot; devem receber o mesmo conteúdo novamente.
 
 As etapas a seguir mostram como configurar a caixa **[!UICONTROL Split]** ao integrar dois comportamentos diferentes:
 
-1. Insira a caixa **[!UICONTROL Split]** no workflow. Esta caixa separa os recipients da primeira delivery em duas deliverys subsequentes. A separação ocorre com base nas condições de filtragem vinculadas ao comportamento do recipient durante a primeira delivery.
+1. Insira a caixa **[!UICONTROL Split]** no workflow. Esta caixa separa os destinatários da primeira entrega em duas entregas subsequentes. A separação ocorre com base nas condições de filtragem vinculadas ao comportamento do destinatário durante a primeira entrega.
 
    ![](assets/query_editor_ex_09.png)
 
@@ -210,13 +210,13 @@ As etapas a seguir mostram como configurar a caixa **[!UICONTROL Split]** ao int
 
 1. Na janela **[!UICONTROL Target element]**, selecione o comportamento que deseja aplicar a essa ramificação: **[!UICONTROL Recipients having clicked (email)]**.
 
-   Selecione a opção **[!UICONTROL Delivery specified by the transition]** abaixo. Essa funcionalidade recupera automaticamente as pessoas selecionadas durante a primeira delivery.
+   Selecione a opção **[!UICONTROL Delivery specified by the transition]** abaixo. Essa funcionalidade recupera automaticamente as pessoas selecionadas durante a primeira entrega.
 
-   Esta é a delivery &quot;oferta de artigos de esportes aquáticos&quot;.
+   Esta é a entrega &quot;oferta de artigos de esportes aquáticos&quot;.
 
    ![](assets/query_editor_ex_08.png)
 
-1. Defina a segunda ramificação. Esta ramificação incluirá o e-mail de acompanhamento com o mesmo conteúdo da primeira delivery. Acesse a guia **[!UICONTROL Subsets]** e clique em **[!UICONTROL Add]** para criá-la.
+1. Defina a segunda ramificação. Esta ramificação incluirá o e-mail de acompanhamento com o mesmo conteúdo da primeira entrega. Acesse a guia **[!UICONTROL Subsets]** e clique em **[!UICONTROL Add]** para criá-la.
 
    ![](assets/query_editor_ex_06.png)
 

@@ -31,10 +31,10 @@ Os indicadores exibidos na seção **[!UICONTROL Indicators over the period]** s
 
 * **[!UICONTROL Incoming (throughput event/h)]** : número médio de horas de eventos inseridos na fila do Centro de mensagens.
 * **[!UICONTROL Incoming (event vol)]** : número de eventos inseridos na fila do Centro de mensagens.
-* **[!UICONTROL Outgoing (throughput msg/h)]** : número médio de horas de eventos de saída bem-sucedidos do Centro de mensagens (enviados por um delivery).
-* **[!UICONTROL Outgoing (msg vol)]** : número de eventos de saída bem-sucedidos do Centro de mensagens (enviados por um delivery).
+* **[!UICONTROL Outgoing (throughput msg/h)]** : número médio de horas de eventos de saída bem-sucedidos do Centro de mensagens (enviados por uma entrega).
+* **[!UICONTROL Outgoing (msg vol)]** : número de eventos de saída bem-sucedidos do Centro de mensagens (enviados por uma entrega).
 * **[!UICONTROL Average sending time (seconds)]** : tempo médio gasto no Centro de mensagens para eventos processados com êxito. O cálculo leva em conta o tempo do processamento e o tempo de envio mta.
-* **[!UICONTROL Error rate]**: número de eventos com erros comparados ao número de eventos que entraram na fila do Centro de mensagens. Os erros a seguir são levados em conta: erro de roteamento, evento expirado (evento que está na fila por muito tempo), erro de delivery, ignorado pelo delivery (quarentena, etc.).
+* **[!UICONTROL Error rate]**: número de eventos com erros comparados ao número de eventos que entraram na fila do Centro de mensagens. Os erros a seguir são levados em conta: erro de roteamento, evento expirado (evento que está na fila por muito tempo), erro de entrega, ignorado pela entrega (quarentena, etc.).
 
 >[!NOTE]
 >

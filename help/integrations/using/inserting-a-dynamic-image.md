@@ -11,7 +11,7 @@ topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '822'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Nesta página, aprenda a integrar uma oferta dinâmica do Adobe Target em um email no Adobe Campaign.
 
-O objetivo é criar um delivery com um bloco de imagem que muda dinamicamente de acordo com o país do recipient: os dados são enviados a cada solicitação de mbox e dependem do endereço IP do recipient.
+O objetivo é criar uma entrega com um bloco de imagem que muda dinamicamente de acordo com o país do destinatário: os dados são enviados a cada solicitação de mbox e dependem do endereço IP do destinatário.
 
 Nesta mensagem, as imagens podem variar dinamicamente de acordo com as seguintes experiências do usuário:
 
@@ -36,7 +36,7 @@ Para fazer isso, siga as etapas abaixo:
 
 1. [Inserir a oferta dinâmica em um email](../../integrations/using/inserting-a-dynamic-image.md#inserting-dynamic-offer)
 1. [Criar ofertas de redirecionamento](../../integrations/using/inserting-a-dynamic-image.md#create-redirect-offers)
-1. [Criar públicos](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
+1. [Criar públicos-alvo](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
 1. [Criar uma atividade de direcionamento de experiência](../../integrations/using/inserting-a-dynamic-image.md#creating-targeting-activity)
 1. [Pré-visualizar e enviar o email](../../integrations/using/inserting-a-dynamic-image.md#preview-send-email)
 
@@ -85,7 +85,7 @@ Em nosso caso, precisamos de duas ofertas de redirecionamento, a terceira (a pad
 
 1. Siga o mesmo procedimento para a oferta de redirecionamento restante. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=pt-BR).
 
-## Criar públicos {#audiences-target}
+## Criar públicos-alvo {#audiences-target}
 
 No Target , é necessário criar os dois públicos nos quais as pessoas que visitam a oferta são categorizadas para os diferentes conteúdos a serem entregues. Para cada público, adicione uma regra para definir quem poderá ver a oferta.
 
@@ -105,7 +105,7 @@ No Target , é necessário criar os dois públicos nos quais as pessoas que visi
 
 No Target, é necessário criar uma atividade de direcionamento de experiência, definir as diferentes experiências e associá-las às ofertas correspondentes.
 
-### Definir o público {#defining-the-audience}
+### Definir o público-alvo {#defining-the-audience}
 
 1. Para criar uma atividade de Direcionamento de Experiência, na guia **[!UICONTROL Activities]**, clique em **[!UICONTROL Create Activity]** e em **[!UICONTROL Experience Targeting]**
 

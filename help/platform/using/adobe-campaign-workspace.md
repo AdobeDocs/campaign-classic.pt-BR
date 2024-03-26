@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '923'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ A plataforma do Adobe Campaign pode ser acessada por meio de um console ou por m
 
 A interface de acesso da web é semelhante à interface do console. Em um navegador, você pode usar os mesmos recursos de navegação e exibição do console, mas é possível executar apenas um conjunto reduzido de ações em campanhas. Por exemplo, é possível visualizar e cancelar campanhas, mas não modificar campanhas. Para um determinado operador, uma campanha será exibida com as seguintes opções no console:
 
-![No painel de uma campanha, o operador pode visualizar e cancelar uma campanha, mas também modificá-la e adicionar deliveries, documentos e tarefas a ela.](assets/operation_from_console.png)
+![No painel de uma campanha, o operador pode visualizar e cancelar uma campanha, mas também modificá-la e adicionar entregas, documentos e tarefas a ela.](assets/operation_from_console.png)
 
 Enquanto no acesso pela web, as opções permitirão principalmente a visualização dos seguintes elementos:
 
@@ -80,7 +80,7 @@ As várias funcionalidades da plataforma são divididas em recursos principais: 
 
 A lista de recursos principais que você pode acessar depende dos pacotes e dos complementos instalados e dos seus direitos de acesso.
 
-Cada recurso inclui um conjunto de funcionalidades com base nas necessidades relacionadas à tarefa e ao contexto de uso. Por exemplo, o link **[!UICONTROL Profiles and targets]** leva você até listas de recipients, serviços de assinatura, workflows para construção do target existentes e atalhos para criar esses elementos.
+Cada recurso inclui um conjunto de funcionalidades com base nas necessidades relacionadas à tarefa e ao contexto de uso. Por exemplo, o link **[!UICONTROL Profiles and targets]** leva você até listas de destinatários, serviços de assinatura, workflows para construção do target existentes e atalhos para criar esses elementos.
 
 As listas estão disponíveis no link **[!UICONTROL Lists]** na seção à esquerda da interface **[!UICONTROL Profiles and Targets]**.
 
@@ -92,7 +92,7 @@ As listas estão disponíveis no link **[!UICONTROL Lists]** na seção à esque
 
   ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
-* No caso de um menu ou atalho para uma tela de exibição (como um aplicativo Web, um programa, um delivery ou um relatório), a página correspondente é exibida em outra guia. Isso permite navegar de uma página para outra usando as guias.
+* No caso de um menu ou atalho para uma tela de exibição (como um aplicativo Web, um programa, uma entrega ou um relatório), a página correspondente é exibida em outra guia. Isso permite navegar de uma página para outra usando as guias.
 
   ![](assets/d_ncs_user_interface_tabs.png)
 
@@ -100,9 +100,9 @@ As listas estão disponíveis no link **[!UICONTROL Lists]** na seção à esque
 
 Cada seção de recurso principal permite procurar entre os elementos disponíveis. Para fazer isso, use os atalhos na seção **[!UICONTROL Browsing]**. O link **[!UICONTROL Other choices]** permite acessar todas as outras páginas, independentemente do ambiente.
 
-Você pode criar um novo elemento (delivery, aplicativo web, workflow etc.) usando os atalhos na seção **[!UICONTROL Create]** à esquerda da tela. Use o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
+Você pode criar um novo elemento (entrega, aplicativo web, workflow etc.) usando os atalhos na seção **[!UICONTROL Create]** à esquerda da tela. Use o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
 
-Por exemplo, na página de delivery, use o botão **[!UICONTROL Create]** para criar um novo delivery.
+Por exemplo, na página de entrega, use o botão **[!UICONTROL Create]** para criar uma nova entrega.
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
@@ -158,7 +158,7 @@ Se você clicar em **[!UICONTROL Yes]**, esse valor estará disponível na caixa
 
 ### Unidades padrão {#default-units}
 
-Nos campos que expressam uma duração (por exemplo, período de validade dos recursos de um delivery, prazo de aprovação para uma tarefa, etc.), o valor pode ser expresso nas seguintes **unidades**:
+Nos campos que expressam uma duração (por exemplo, período de validade dos recursos de uma entrega, prazo de aprovação para uma tarefa, etc.), o valor pode ser expresso nas seguintes **unidades**:
 
 * **[!UICONTROL s]** para segundos,
 * **[!UICONTROL mn]** para minutos,

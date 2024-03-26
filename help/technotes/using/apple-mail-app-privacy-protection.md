@@ -6,7 +6,7 @@ description: Saiba como suas campanhas podem ser afetadas pelo recurso Proteçã
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2064'
 ht-degree: 1%
 
 ---
@@ -346,7 +346,7 @@ Para preservar os dados de rastreamento, é necessário exportá-los do Adobe Ca
 
 Por padrão, a variável `nms:Recipient` O esquema está vinculado a três esquemas que devem ser exportados:
 
-| Schema | Conteúdo |
+| Esquema | Conteúdo |
 | --- | --- |
 | nms:trackingLogRcp | Dados de rastreamento, para com, o usuário, a hora e a mensagem relacionada |
 | nms:trackingUrl | Detalhes sobre o link, incluindo a natureza, por exemplo, uma abertura de email ou um click-through |
@@ -362,7 +362,7 @@ Use essas relações para criar uma única consulta de exportação.
 
 Você pode enriquecer esses dados com informações úteis de schemas vinculados:
 
-| Schema | Conteúdo |
+| Esquema | Conteúdo |
 | --- | --- |
 | nms:Recipient | Detalhes relacionados a perfis |
 | nms:Delivery | Informações sobre a mensagem à qual o usuário reagiu |
@@ -402,7 +402,7 @@ Você pode usar um query incremental para extrair apenas os registros que ainda 
 
 Você pode usar fluxos de trabalho para determinar se um destinatário usa o aplicativo de email do Apple. Você pode dividir logs de rastreamento por dispositivo. Por exemplo, você pode usar filtros de consulta para dividir registros por dispositivo iOS:
 
-| aplicação | Sistema operacional ou dispositivo  | Filtro de consulta |
+| Aplicativo | Sistema operacional ou dispositivo  | Filtro de consulta |
 | --- | --- | --- |
 | E-mail do Apple | iOS 15 | `operating System (Browser) contains 'iOS 15' and browser (Browser) contains 'ApplewebKit'` |
 | E-mail do Apple | iOS 14 ou iOS 13 | `browser contains 'AppleWebKit' and operating System of browser contains 'iOS 14' or operating System of browser contains 'iOS 13'` |

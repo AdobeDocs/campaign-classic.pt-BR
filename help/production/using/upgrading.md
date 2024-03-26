@@ -4,15 +4,15 @@ title: Atualização para um novo build
 description: Saiba mais sobre as etapas técnicas para atualizar para uma nova build
 feature: Monitoring, Upgrade
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 6%
+source-wordcount: '1133'
+ht-degree: 3%
 
 ---
 
@@ -75,8 +75,8 @@ Para executar o arquivo de upgrade, siga as etapas abaixo:
    Para baixar esse arquivo, conecte-se à [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) usando suas credenciais de usuário. Saiba mais sobre a Distribuição de software em [esta página](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR).
 
 1. Selecione o modo de instalação: escolha **[!UICONTROL Update or repair]**
-1. Clique em **[!UICONTROL Next]** .
-1. Clique em **[!UICONTROL Finish]** .
+1. Clique em **[!UICONTROL Next]**.
+1. Clique em **[!UICONTROL Finish]**.
 
    O programa de instalação copia os novos arquivos.
 

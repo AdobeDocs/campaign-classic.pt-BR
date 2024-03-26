@@ -23,7 +23,7 @@ Durante uma chamada do mecanismo do Interaction, é possível transferir informa
 
 Para o canal de entrada, pode ser útil recuperar informações como o idioma do navegador da consultoria de pessoas, ou o nome do agente da central de atendimento, por exemplo. Em seguida, é possível usar esses dados de chamada nas regras de qualificação para apresentar uma oferta somente às pessoas que visualizam a página da Web em francês ou inglês.
 
-Em um workflow para criação de target (canal de saída), é possível usar os dados do target durante uma chamada para o mecanismo. Por exemplo, é possível enriquecer o target com dados de uma transação vinculada a um recipient ou um banco de dados externo, por meio do FDA.
+Em um workflow para criação de target (canal de saída), é possível usar os dados do target durante uma chamada para o mecanismo. Por exemplo, é possível enriquecer o target com dados de uma transação vinculada a um destinatário ou um banco de dados externo, por meio do FDA.
 
 ## Configurações de dados adicionais {#additional-data-configuration}
 

@@ -11,8 +11,8 @@ topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3241'
-ht-degree: 100%
+source-wordcount: '3307'
+ht-degree: 99%
 
 ---
 
@@ -186,7 +186,7 @@ Clique duas vezes em um campo disponível para adicioná-lo às colunas de saíd
 
 Campos avançados não são exibidos por padrão. Clique em **[!UICONTROL Display advanced fields]** no canto inferior direito dos campos disponíveis para exibir tudo. Clique novamente para retornar ao modo de exibição anterior.
 
-Por exemplo, na tabela de recipients, os campos avançados são **Boolean 1**, **[!UICONTROL Boolean 2]**, **[!UICONTROL Boolean 3]**, **[!UICONTROL Foreign key of "Folder" link]** etc.
+Por exemplo, na tabela de destinatários, os campos avançados são **Boolean 1**, **[!UICONTROL Boolean 2]**, **[!UICONTROL Boolean 3]**, **[!UICONTROL Foreign key of "Folder" link]** etc.
 
 O exemplo a seguir mostra os campos avançados da tabela de destinatários.
 
@@ -265,7 +265,7 @@ Vincular a uma tabela e elemento de coleção:
 >* Use o botão **[!UICONTROL Add]** (acima da barra de ícones lateral) para adicionar uma coluna de saída na qual editaremos a expressão. Para obter mais informações sobre como editar uma expressão, consulte [esta seção](#building-expressions).
 >* Exclua uma coluna de saída clicando no &#39;x&#39; vermelho (**Excluir**).
 >* Altere a ordem das colunas de saída usando as setas.
->* O **[!UICONTROL Distribution of values]** é uma maneira de exibir a distribuição dos valores do campo selecionado (por exemplo, as distribuições vinculadas às cidades de recipients, idiomas do recipient, etc.).
+>* O **[!UICONTROL Distribution of values]** é uma maneira de exibir a distribuição dos valores do campo selecionado (por exemplo, as distribuições vinculadas às cidades de destinatários, idiomas do destinatário, etc.).
 
 ## Criar campos calculados {#creating-calculated-fields}
 
@@ -320,7 +320,7 @@ Siga as etapas abaixo:
 
    Há vários tipos de fórmulas disponíveis: **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**.
 
-   Selecione **[!UICONTROL Process on an aggregate function]**, **[!UICONTROL Count]** e clique em **[!UICONTROL Next]**.
+   Selecionar **[!UICONTROL Process on an aggregate function]**, e **[!UICONTROL Count]**. Clique em **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_54.png)
 

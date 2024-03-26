@@ -8,7 +8,7 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '772'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Defina o contexto de exibição do relatório na plataforma Adobe Campaign usand
 
 ### Tipo de seleção {#selection-type}
 
-O acesso ao relatório pode ser limitado a um contexto específico ou a um espaço de ofertas, por exemplo, um delivery, um recipient, uma seleção de recipients, etc. Esse acesso é configurado na seção **[!UICONTROL Selection type]** da guia **[!UICONTROL Display]** .
+O acesso ao relatório pode ser limitado a um contexto específico ou a um espaço de ofertas, por exemplo, uma entrega, um destinatário, uma seleção de destinatários, etc. Esse acesso é configurado na seção **[!UICONTROL Selection type]** da guia **[!UICONTROL Display]** .
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
@@ -79,9 +79,9 @@ Para definir a categoria de um relatório, selecione-o por meio da guia **[!UICO
 
 ## Criar um link para um relatório {#creating-a-link-to-a-report-}
 
-É possível tornar um relatório acessível por meio de um nó específico da árvore, como uma lista, um recipient, um delivery, etc. Para fazer isso, basta criar um link para o relatório em questão e especificar a entidade onde deseja torná-lo disponível.
+É possível tornar um relatório acessível por meio de um nó específico da árvore, como uma lista, um destinatário, uma entrega, etc. Para fazer isso, basta criar um link para o relatório em questão e especificar a entidade onde deseja torná-lo disponível.
 
-Como exemplo, vamos criar um link para um relatório para torná-lo acessível por meio de uma lista de recipients.
+Como exemplo, vamos criar um link para um relatório para torná-lo acessível por meio de uma lista de destinatários.
 
 1. Clique em **[!UICONTROL New]** e selecione **[!UICONTROL Create a link to an existing report]** no assistente de criação de relatórios.
 
@@ -91,11 +91,11 @@ Como exemplo, vamos criar um link para um relatório para torná-lo acessível p
 
    ![](assets/s_ncs_advuser_report_wizard_link_02.png)
 
-1. Insira um rótulo e selecione o schema. Neste exemplo, vamos selecionar a tabela de lista de recipients.
+1. Insira um rótulo e selecione o schema. Neste exemplo, vamos selecionar a tabela de lista de destinatários.
 
    ![](assets/s_ncs_advuser_report_wizard_link_03.png)
 
-   Isso significa que o relatório estará acessível por meio de qualquer lista de recipients e que as estatísticas abordarão os recipients na lista selecionada.
+   Isso significa que o relatório estará acessível por meio de qualquer lista de destinatários e que as estatísticas abordarão os destinatários na lista selecionada.
 
 1. Salvamento e exibição seu relatório
 1. Insira a chave do link. Nesse caso, a chave externa do link &quot;Folders&quot;.
@@ -103,7 +103,7 @@ Como exemplo, vamos criar um link para um relatório para torná-lo acessível p
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 
 1. Publique seu relatório.
-1. Vá para uma das listas de recipients e clique no link **[!UICONTROL Reports]**: o relatório que acabou de criar está acessível.
+1. Vá para uma das listas de destinatários e clique no link **[!UICONTROL Reports]**: o relatório que acabou de criar está acessível.
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
 

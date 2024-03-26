@@ -7,8 +7,8 @@ feature: Query Editor, Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 100%
+source-wordcount: '220'
+ht-degree: 93%
 
 ---
 
@@ -56,4 +56,4 @@ A coluna **[!UICONTROL Taken into account if]** permite definir os critérios do
 
 Aqui, **$(/tmp/@text)=&#39;agency&#39;**
 
-A expressão **$(/tmp/@text)!=&#39;&#39;** aplica cada condição quando o campo de entrada não está vazio.
+A variável **$(/tmp/@text)!=&#39;&#39;** A expressão aplica cada condição quando o campo de entrada não está vazio.

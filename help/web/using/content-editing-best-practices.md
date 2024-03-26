@@ -8,7 +8,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '566'
 ht-degree: 100%
 
 ---
@@ -90,7 +90,7 @@ A seção superior do editor exibe mensagens relacionadas ao status do conteúdo
 
 ### Lista de mensagens ao editar uma entrega {#list-of-messages-when-editing-a-delivery}
 
-* O conteúdo do delivery é funcional
+* O conteúdo da entrega é funcional
 * Há n campos ou blocos de personalização para configurar.
-* O conteúdo do delivery está pronto, execute a análise novamente para aplicar as alterações.
-* O delivery está pronto para ser enviado.
+* O conteúdo da entrega está pronto, execute a análise novamente para aplicar as alterações.
+* A entrega está pronta para ser enviada.

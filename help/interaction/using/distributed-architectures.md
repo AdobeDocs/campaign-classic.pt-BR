@@ -10,7 +10,7 @@ topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1021'
 ht-degree: 100%
 
 ---
@@ -58,7 +58,7 @@ Um workflow é criado para cada ambiente e conta externa para a sincronização 
 
 ## Configuração de pacotes {#packages-configuration}
 
-Quaisquer extensões de schema diretamente vinculadas à **Interação** (ofertas, propostas, recipients, etc.) devem ser implantadas nas instâncias de execução.
+Quaisquer extensões de schema diretamente vinculadas à **Interação** (ofertas, propostas, destinatários, etc.) devem ser implantadas nas instâncias de execução.
 
 O pacote de Interação deve ser instalado em todas as instâncias (controle e execução). Dois pacotes adicionais estão disponíveis: um pacote a ser instalado nas instâncias de controle e outro para ser instalado em cada instância de execução.
 

@@ -8,23 +8,23 @@ feature: A/B Testing
 role: User
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '260'
+workflow-type: tm+mt
+source-wordcount: '268'
 ht-degree: 100%
 
 ---
 
 # Teste A/B: teste deste caso de uso {#ab-testing-use-case}
 
-Nesse caso de uso, vamos comparar dois conteúdos de delivery de e-mail por meio de um workflow para construção do target. A mensagem e o texto são idênticos nas duas remessas: apenas o layout é alterado.
+Nesse caso de uso, vamos comparar dois conteúdos de entrega de e-mail por meio de um workflow para construção do target. A mensagem e o texto são idênticos nas duas entregas: apenas o layout é alterado.
 
-A população direcionada é dividida em três grupos: dois grupos de teste e a população restante. Uma versão diferente do delivery é enviado para cada grupo de teste.
+A população direcionada é dividida em três grupos: dois grupos de teste e a população restante. Uma versão diferente da entrega é enviada para cada grupo de teste.
 
-Após o delivery, um período de espera de cinco dias é configurado antes de coletar os resultados das melhores taxas de abertura. O conteúdo do delivery com a pontuação mais alta é então recuperado por um script e enviado à população que não foi usada como um grupo de teste.
+Após a entrega, um período de espera de cinco dias é configurado antes de coletar os resultados das melhores taxas de abertura. O conteúdo da entrega com a pontuação mais alta é então recuperado por um script e enviado à população que não foi usada como um grupo de teste.
 
-Observe que os critérios que decide qual delivery é o melhor pode ser alterado para atender às suas necessidades. Pode ser a taxa de abertura, a taxa de cliques, a taxa de subscrição, o reatividade, etc.
+Observe que os critérios que decide qual entrega é o melhor pode ser alterado para atender às suas necessidades. Pode ser a taxa de abertura, a taxa de cliques, a taxa de subscrição, o reatividade, etc.
 
-Além disso, o teste detalhado nesse caso de uso aborda apenas dois deliveries, mas é possível testar quantas versões forem necessárias. Basta adicionar atividades ao fluxo de trabalho.
+Além disso, o teste detalhado nesse caso de uso aborda apenas duas entregas, mas é possível testar quantas versões forem necessárias. Basta adicionar atividades ao fluxo de trabalho.
 
 As principais etapas para executar esse caso de uso são:
 

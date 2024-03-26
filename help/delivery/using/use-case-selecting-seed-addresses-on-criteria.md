@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Para usar a condição dinâmica, você deve ter:
 
 As etapas para criar uma entrega estão detalhadas na seção [Criar uma entrega por email](creating-an-email-delivery.md).
 
-Neste exemplo, o gerenciador de entrega criou o boletim informativo e selecionou os recipients.
+Neste exemplo, o gerenciador de entrega criou o boletim informativo e selecionou os destinatários.
 
 ![](assets/dlv_seeds_usecase_01.png)
 
@@ -98,9 +98,9 @@ Para obter mais detalhes sobre extensões de esquema, consulte [esta seção](..
 
 #### Estender o esquema de dados de uma tabela vinculada {#extending-the-data-schema-from-a-linked-table}
 
-O esquema de dados de seed addresses pode usar valores de uma tabela vinculada ao esquema de dados do recipient – Recipient (nms).
+O esquema de dados de seed addresses pode usar valores de uma tabela vinculada ao esquema de dados do destinatário – Destinatário (nms).
 
-Por exemplo, o usuário gostaria de integrar a **[!UICONTROL Internet Extension]** localizada na tabela **[!UICONTROL Country]**, que está vinculada ao schema de recipients.
+Por exemplo, o usuário gostaria de integrar a **[!UICONTROL Internet Extension]** localizada na tabela **[!UICONTROL Country]**, que está vinculada ao schema de destinatários.
 
 ![](assets/dlv_seeds_usecase_06.png)
 
@@ -124,7 +124,7 @@ Eles indicam:
 >
 >No nome da tabela vinculada, você deve especificar o **xpath-dst** da tabela vinculada.
 >
->Isso pode ser encontrado no elemento **[!UICONTROL Country]** na tabela de recipients.
+>Isso pode ser encontrado no elemento **[!UICONTROL Country]** na tabela de destinatários.
 
 ![](assets/dlv_seeds_usecase_07.png)
 
@@ -175,7 +175,7 @@ Agora você pode especificar a condição dinâmica dos seed addresses para a en
 
    >[!NOTE]
    >
-   >A extensão de schema criada anteriormente vem do schema de **recipients.** Os valores exibidos na tela acima vêm de uma enumeração do schema do **recipient** .
+   >A extensão de schema criada anteriormente vem do schema de **destinatários.** Os valores exibidos na tela acima vêm de uma enumeração do schema do **destinatário** .
 
 1. Clique em **[!UICONTROL Ok]**.
 
@@ -186,7 +186,7 @@ Agora você pode especificar a condição dinâmica dos seed addresses para a en
 1. Clique em **[!UICONTROL Ok]** para aprovar o query.
 1. Analise seu e clique na guia **[!UICONTROL Delivery]** para acessar os logs de entrega.
 
-   Os seed addresses do departamento de compras são exibidos como entrega pendente, como os dos recipients ou outros seed addresses.
+   Os seed addresses do departamento de compras são exibidos como entrega pendente, como os dos destinatários ou outros seed addresses.
 
    ![](assets/dlv_seeds_usecase_05.png)
 

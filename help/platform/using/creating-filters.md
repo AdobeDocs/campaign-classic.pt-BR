@@ -11,7 +11,7 @@ topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1982'
 ht-degree: 100%
 
 ---
@@ -205,7 +205,7 @@ Os filtros são específicos para cada operador e são reiniciados cada vez que 
 
 É possível criar um **application filter** salvando um filtro avançado: ele pode ser reutilizado clicando com o botão direito do mouse em qualquer lista ou pelo botão **[!UICONTROL Filters]** localizado acima das listas.
 
-Esses filtros também podem ser acessados diretamente pelo assistente de delivery, no estágio de seleção de target (consulte [esta seção](../../delivery/using/creating-an-email-delivery.md) para obter mais informações sobre como criar deliveries). Para criar o filtro de aplicação, você pode:
+Esses filtros também podem ser acessados diretamente pelo assistente de entrega, no estágio de seleção de target (consulte [esta seção](../../delivery/using/creating-an-email-delivery.md) para obter mais informações sobre como criar entregas). Para criar o filtro de aplicação, você pode:
 
 * Converter um filtro avançado em um filtro de aplicação. Para fazer isso, clique em **[!UICONTROL Save]** antes de fechar o editor de filtro avançado.
 
@@ -223,9 +223,9 @@ Esses filtros também podem ser acessados diretamente pelo assistente de deliver
 
 ![](assets/s_ncs_user_filter_combination.png)
 
-## Filtrar recipients {#filtering-recipients}
+## Filtrar destinatários {#filtering-recipients}
 
-Os filtros predefinidos (consulte [Salvar um filtro](#saving-a-filter)) permitem filtrar os perfis dos recipients no banco de dados. É possível editar filtros através do nó **[!UICONTROL Profiles and Targets > Predefined filters]** da árvore. Os filtros são listados na seção superior do espaço de trabalho, por meio do botão **[!UICONTROL Filters]**.
+Os filtros predefinidos (consulte [Salvar um filtro](#saving-a-filter)) permitem filtrar os perfis dos destinatários no banco de dados. É possível editar filtros através do nó **[!UICONTROL Profiles and Targets > Predefined filters]** da árvore. Os filtros são listados na seção superior do espaço de trabalho, por meio do botão **[!UICONTROL Filters]**.
 
 Selecione um filtro para exibir sua definição e para acessar uma pré-visualização dos dados filtrados.
 
@@ -245,23 +245,23 @@ Os filtros predefinidos são:
   </tr> 
   <tr> 
    <td> Aberto<br /> </td> 
-   <td> Seleciona destinatários que abriram um delivery.<br /> </td> 
+   <td> Seleciona destinatários que abriram uma entrega.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aberto, mas não clicado<br /> </td> 
-   <td> Seleciona destinatários que abriram um delivery, mas não clicaram em um link.<br /> </td> 
+   <td> Seleciona destinatários que abriram uma entrega, mas não clicaram em um link.<br /> </td> 
   </tr> 
   <tr> 
    <td> Destinatários inativos<br /> </td> 
-   <td> Seleciona destinatários que não abriram um delivery em X meses.<br /> </td> 
+   <td> Seleciona destinatários que não abriram uma entrega em X meses.<br /> </td> 
   </tr> 
   <tr> 
    <td> Última atividade por tipo de dispositivo<br /> </td> 
-   <td> Seleciona destinatários que clicaram em ou abriram delivery Y usando o dispositivo X nos últimos Z dias.<br /> </td> 
+   <td> Seleciona destinatários que clicaram em ou abriram a entrega Y usando o dispositivo X nos últimos Z dias.<br /> </td> 
   </tr> 
   <tr> 
    <td> Última atividade por tipo de dispositivo (rastreamento)<br /> </td> 
-   <td> Seleciona destinatários que clicaram em ou abriram delivery Y usando o dispositivo X nos últimos Z dias.<br /> </td> 
+   <td> Seleciona destinatários que clicaram em ou abriram a entrega Y usando o dispositivo X nos últimos Z dias.<br /> </td> 
   </tr> 
   <tr> 
    <td> Destinatários não direcionados<br /> </td> 
@@ -269,11 +269,11 @@ Os filtros predefinidos são:
   </tr> 
   <tr> 
    <td> Destinatários muito ativos<br /> </td> 
-   <td> Seleciona destinatários que clicaram em um delivery pelo menos X vezes nos últimos Y meses.<br /> </td> 
+   <td> Seleciona destinatários que clicaram em uma entrega pelo menos X vezes nos últimos Y meses.<br /> </td> 
   </tr> 
   <tr> 
  <td> Incluir endereço de email na lista de bloqueios<br /> </td> 
-    <td> Seleciona os recipients cujo endereço de email está na lista de bloqueios.<br/> </td>
+    <td> Seleciona os destinatários cujo endereço de email está na lista de bloqueios.<br/> </td>
   </tr> 
   <tr> 
    <td> Endereço de email na quarentena<br /> </td> 
@@ -285,7 +285,7 @@ Os filtros predefinidos são:
   </tr> 
   <tr> 
    <td> Não aberto nem clicado<br /> </td> 
-   <td> Seleciona destinatários que não abriram ou não clicaram em um delivery.<br /> </td> 
+   <td> Seleciona destinatários que não abriram ou não clicaram em uma entrega.<br /> </td> 
   </tr> 
   <tr> 
    <td> Novos destinatários (dias)<br /> </td> 
@@ -305,11 +305,11 @@ Os filtros predefinidos são:
   </tr> 
   <tr> 
    <td> Ao clicar em um link específico<br /> </td> 
-   <td> Seleciona destinatários que clicaram em um determinado URL em um delivery.<br /> </td> 
+   <td> Seleciona destinatários que clicaram em um determinado URL em uma entrega.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Por comportamento pós-delivery<br /> </td> 
-   <td> Seleciona destinatários de acordo com seu comportamento após receber um delivery.<br /> </td> 
+   <td> Por comportamento pós-entrega<br /> </td> 
+   <td> Seleciona destinatários de acordo com seu comportamento após receber uma entrega.<br /> </td> 
   </tr> 
   <tr> 
    <td> Por data de criação<br /> </td> 
@@ -321,7 +321,7 @@ Os filtros predefinidos são:
   </tr> 
   <tr> 
    <td> Por número de cliques<br /> </td> 
-   <td> Seleciona destinatários que clicaram em um delivery nos últimos X meses.<br /> </td> 
+   <td> Seleciona destinatários que clicaram em uma entrega nos últimos X meses.<br /> </td> 
   </tr> 
   <tr> 
    <td> Por número de mensagens recebidas<br /> </td> 
@@ -329,7 +329,7 @@ Os filtros predefinidos são:
   </tr> 
   <tr> 
    <td> Por número de aberturas<br /> </td> 
-   <td> Seleciona destinatários que abriram deliveries entre X e Y ao longo da quantidade Z de tempo.<br /> </td> 
+   <td> Seleciona destinatários que abriram entregas entre X e Y ao longo da quantidade Z de tempo.<br /> </td> 
   </tr> 
   <tr> 
    <td> Por nome ou email<br /> </td> 
@@ -369,7 +369,7 @@ Clique na guia **[!UICONTROL Settings]** para acessar as seguintes opções:
   Por exemplo, o filtro **[!UICONTROL By name or login]** é aplicado aos operadores. Essa opção é selecionada e o filtro sempre é oferecido em todas as listas de operadores.
 
 * **[!UICONTROL Filter shared with other operators]**: esta opção permite disponibilizar o filtro para todos os outros operadores no banco de dados atual.
-* **[!UICONTROL Use parameter entry form]**: esta opção permite definir os campos de filtro a serem exibido acima da lista quando esse filtro for selecionado. Esses campos permitem definir as configurações de filtro. Este formulário deve ser inserido no formato XML por meio do botão **[!UICONTROL Form]**. Por exemplo, o filtro pré-configurado **[!UICONTROL Recipients who have opened]**, disponível na lista de destinatários, exibe um campo de filtro que permite selecionar o delivery em que o filtro é direcionado.
+* **[!UICONTROL Use parameter entry form]**: esta opção permite definir os campos de filtro a serem exibido acima da lista quando esse filtro for selecionado. Esses campos permitem definir as configurações de filtro. Este formulário deve ser inserido no formato XML por meio do botão **[!UICONTROL Form]**. Por exemplo, o filtro pré-configurado **[!UICONTROL Recipients who have opened]**, disponível na lista de destinatários, exibe um campo de filtro que permite selecionar a entrega em que o filtro é direcionado.
 
   O botão **[!UICONTROL Preview]** exibe o resultado do filtro selecionado.
 
@@ -377,6 +377,6 @@ Clique na guia **[!UICONTROL Settings]** para acessar as seguintes opções:
 
   Selecione a opção **[!UICONTROL Do not restrict the filter]** se desejar que o usuário pare de substituir esse filtro.
 
-  Essa opção está habilitada para os filtros &quot;Destinatários de um delivery&quot; e &quot;Destinatários de deliveries pertencentes a uma pasta&quot; oferecidos no assistente de delivery que não pode ser sobrecarregado.
+  Essa opção está habilitada para os filtros &quot;Destinatários de uma entrega&quot; e &quot;Destinatários de entregas pertencentes a uma pasta&quot; oferecidos no assistente de entrega que não pode ser sobrecarregado.
 
   ![](assets/s_ncs_user_filter_advanced_param.png)

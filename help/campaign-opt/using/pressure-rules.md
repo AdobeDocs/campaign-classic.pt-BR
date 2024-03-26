@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Fatigue Management, Typology Rules, Campaigns
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3343'
 ht-degree: 100%
 
@@ -17,25 +17,25 @@ ht-degree: 100%
 
 ## Sobre fadiga de marketing {#about-marketing-fatigue}
 
-A implementação do gerenciamento de regras de pressão permite evitar o excesso de solicitações de população no banco de dados, também conhecido como fadiga da marca. Para fazer isso, você pode definir um número máximo de mensagens por recipient. Também permite implementar regras de arbitragem entre campanhas, para enviar a melhor mensagem para o público-alvo.
+A implementação do gerenciamento de regras de pressão permite evitar o excesso de solicitações de população no banco de dados, também conhecido como fadiga da marca. Para fazer isso, você pode definir um número máximo de mensagens por destinatário. Também permite implementar regras de arbitragem entre campanhas, para enviar a melhor mensagem para o público-alvo.
 
 Regras de **pressão** para gerenciar a fadiga da marca, por exemplo: para restringir o número de cartas a serem enviadas a uma população, tanto para selecionar a comunicação que melhor corresponde aos interesses de um grupo de assinantes, quanto para evitar o envio de um SMS para um cliente insatisfeito etc.
 
 As campanhas são selecionadas com base nos limites definidos e no peso da mensagem.
 
-* Um limite é o número mais alto de entregas autorizado para um determinado recipient dentro de um determinado período. Ele pode ser definido ou variável. Ele é definido ou calculado nas configurações da regra de tipologia. Consulte [Número máximo de mensagens](#maximum-number-of-messages).
+* Um limite é o número mais alto de entregas autorizado para um determinado destinatário dentro de um determinado período. Ele pode ser definido ou variável. Ele é definido ou calculado nas configurações da regra de tipologia. Consulte [Número máximo de mensagens](#maximum-number-of-messages).
 * Os pesos das entregas permitem identificar entregas de alta prioridade dentro da estrutura do gerenciamento de pressão. As mensagens com o peso mais alto têm prioridade. Consulte [Peso da mensagem](#message-weight).
 
 A arbitragem consiste em garantir que campanhas agendadas com peso maior do que a campanha em andamento não gerem solicitações de perfil excessivas: se esse for o caso, o perfil será excluído da entrega.
 
 Os critérios de arbitragem (peso e/ou limite da mensagem) podem variar com base em dois tipos de informações:
 
-* preferência de recipient, que são informações declarativas: assinaturas de boletim informativo, status do recipient (cliente ou prospecto),
-* comportamento do recipient: compras, links visitados etc.
+* preferência de destinatário, que são informações declarativas: assinaturas de boletim informativo, status do destinatário (cliente ou prospecto),
+* comportamento do destinatário: compras, links visitados etc.
 
-A regra de arbitragem para definir mensagens qualificadas é aplicada durante o estágio de análise. Para cada recipient e para o período em questão, a mensagem será enviada se a seguinte fórmula for verdadeira: **(number of messages sent) + (number of messages with a greater weight) &lt; threshold**.
+A regra de arbitragem para definir mensagens qualificadas é aplicada durante o estágio de análise. Para cada destinatário e para o período em questão, a mensagem será enviada se a seguinte fórmula for verdadeira: **(number of messages sent) + (number of messages with a greater weight) &lt; threshold**.
 
-Caso contrário, o recipient será **[!UICONTROL Excluded by arbitration]**. Para obter mais informações, consulte [Exclusão após arbitragem](#exclusion-after-arbitration).
+Caso contrário, o destinatário será **[!UICONTROL Excluded by arbitration]**. Para obter mais informações, consulte [Exclusão após arbitragem](#exclusion-after-arbitration).
 
 ## Criação de uma regra de pressão {#creating-a-pressure-rule}
 
@@ -66,7 +66,7 @@ Para criar e configurar uma regra de tipologia **[!UICONTROL Pressure]**, siga e
 
 1. Defina o método para calcular o número mais alto de mensagens.
 
-   O limite representa o número mais alto de mensagens que podem ser enviadas para um recipient durante o período relacionado.
+   O limite representa o número mais alto de mensagens que podem ser enviadas para um destinatário durante o período relacionado.
 
    Por padrão, o limite é constante e você precisa indicar um número máximo de mensagens autorizadas pela regra.
 
@@ -84,10 +84,10 @@ Para criar e configurar uma regra de tipologia **[!UICONTROL Pressure]**, siga e
 
 1. Por padrão, todas as mensagens são consideradas para o cálculo do limite. A guia **[!UICONTROL Restriction]** permite filtrar as mensagens relacionadas à regra de tipologia:
 
-   * A seção superior desta guia permite restringir os recipients relacionados.
+   * A seção superior desta guia permite restringir os destinatários relacionados.
    * A seção inferior desta guia permite que você filtre as mensagens a serem contadas.
 
-     No exemplo a seguir, somente os recipients salvos na pasta **NewContacts** são considerados, sendo relacionados as entregas que começam com **Newsletter**.
+     No exemplo a seguir, somente os destinatários salvos na pasta **NewContacts** são considerados, sendo relacionados as entregas que começam com **Newsletter**.
 
    ![](assets/campaign_opt_create_a_rule_05.png)
 
@@ -97,9 +97,9 @@ Para criar e configurar uma regra de tipologia **[!UICONTROL Pressure]**, siga e
 
 ### Número máximo de mensagens {#maximum-number-of-messages}
 
-Cada regra de pressão define um limite, ou seja, o número máximo de mensagens que podem ser enviadas para um recipient em um determinado período de tempo. Depois que esse limite for atingido, não poderá ocorrer mais entregas até que o final do período seja considerado. Esse processo permite que você exclua automaticamente um recipient de uma entrega se uma mensagem exceder o limite definido, evitando assim um excesso de solicitações.
+Cada regra de pressão define um limite, ou seja, o número máximo de mensagens que podem ser enviadas para um destinatário em um determinado período de tempo. Depois que esse limite for atingido, não poderá ocorrer mais entregas até que o final do período seja considerado. Esse processo permite que você exclua automaticamente um destinatário de uma entrega se uma mensagem exceder o limite definido, evitando assim um excesso de solicitações.
 
-Os valores de limite podem ser constantes ou calculados por uma fórmula com variáveis. Isso significa que, para um determinado período, os limites podem variar de um recipient para outro ou até mesmo para o mesmo recipient.
+Os valores de limite podem ser constantes ou calculados por uma fórmula com variáveis. Isso significa que, para um determinado período, os limites podem variar de um destinatário para outro ou até mesmo para o mesmo destinatário.
 
 ![](assets/campaign_opt_create_a_rule_threshold.png)
 
@@ -109,11 +109,11 @@ Os valores de limite podem ser constantes ou calculados por uma fórmula com var
 
 **Exemplo:**
 
-Você pode indexar o número de mensagens autorizadas de acordo com o segmento ao qual pertence o recipient. Isso significa que um recipient pertencente ao segmento da web pode receber mais mensagens do que outros recipients. Uma fórmula do tipo **[!UICONTROL Iif (@origin='Web', 5, 3)]** autoriza a entrega de 5 mensagens a recipients e 3 para outros segmentos. A configuração será a seguinte:
+Você pode indexar o número de mensagens autorizadas de acordo com o segmento ao qual pertence o destinatário. Isso significa que um destinatário pertencente ao segmento da web pode receber mais mensagens do que outros destinatários. Uma fórmula do tipo **[!UICONTROL Iif (@origin='Web', 5, 3)]** autoriza a entrega de 5 mensagens a destinatários e 3 para outros segmentos. A configuração será a seguinte:
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Para definir o limite, você pode usar uma dimensão vinculada à targeting dimension: por exemplo, para incluir mensagens enviadas aos perfis de recipients armazenados na tabela de visitantes (para saber mais sobre a tabela de visitantes, consulte [esta seção](../../surveys/using/use-case-creating-a-refer-a-friend-form.md)) ou para evitar o envio de mais de uma mensagem por semana para a mesma família de recipients, (o que pode significar vários endereços de email) identificada em uma dimensão vinculada aos recipients.
+Para definir o limite, você pode usar uma dimensão vinculada à targeting dimension: por exemplo, para incluir mensagens enviadas aos perfis de destinatários armazenados na tabela de visitantes (para saber mais sobre a tabela de visitantes, consulte [esta seção](../../surveys/using/use-case-creating-a-refer-a-friend-form.md)) ou para evitar o envio de mais de uma mensagem por semana para a mesma família de destinatários, (o que pode significar vários endereços de email) identificada em uma dimensão vinculada aos destinatários.
 
 Para fazer isso, selecione a opção **[!UICONTROL Count messages on a linked dimension]** e selecione a tabela de visitantes ou de contatos.
 
@@ -121,7 +121,7 @@ Para fazer isso, selecione a opção **[!UICONTROL Count messages on a linked di
 
 Cada entrega tem um peso que representa seu nível de prioridade. Por padrão, o peso de uma entrega é definido como 5. As regras de pressão permitem definir o peso das entregas às quais serão aplicadas.
 
-Os pesos podem ser definidos ou calculados por meio de uma fórmula para se adequar aos recipients. Por exemplo, você pode definir o peso de uma entrega com base nos interesses do recipient.
+Os pesos podem ser definidos ou calculados por meio de uma fórmula para se adequar aos destinatários. Por exemplo, você pode definir o peso de uma entrega com base nos interesses do destinatário.
 
 >[!CAUTION]
 >
@@ -130,14 +130,14 @@ Os pesos podem ser definidos ou calculados por meio de uma fórmula para se adeq
 
 **Exemplo:**
 
-No exemplo a seguir, queremos vincular o peso das newsletters sobre música ao escore de propensão dos recipients. Para fazer isso:
+No exemplo a seguir, queremos vincular o peso das newsletters sobre música ao escore de propensão dos destinatários. Para fazer isso:
 
-1. Crie um novo campo para armazenar escores de propensão do recipient. O campo, **@Music** neste caso, será enriquecido com respostas de pesquisas e questionários on-line, dados de rastreamento coletados, etc.
+1. Crie um novo campo para armazenar escores de propensão do destinatário. O campo, **@Music** neste caso, será enriquecido com respostas de pesquisas e questionários on-line, dados de rastreamento coletados, etc.
 1. Crie uma regra de tipologia para calcular o peso da mensagem com base nesse campo.
 
    ![](assets/campaign_opt_pressure_weight_sample.png)
 
-1. Aplique esta regra a mensagens com os seguintes tópicos: newsletters, ofertas especiais etc. O peso dessas entregas e, portanto, o nível de prioridade, dependerão do escore de propensão de cada recipient.
+1. Aplique esta regra a mensagens com os seguintes tópicos: newsletters, ofertas especiais etc. O peso dessas entregas e, portanto, o nível de prioridade, dependerão do escore de propensão de cada destinatário.
 
 ## Definir o período {#setting-the-period}
 
@@ -184,11 +184,11 @@ As entregas programadas para os dias 12 e 30 de junho não podem ser realizadas:
 
 ![](assets/campaign_opt_pressure_period_sample_1.png)
 
-Todos os recipients dessas entregas são excluídos por arbitragem durante a fase de análise:
+Todos os destinatários dessas entregas são excluídos por arbitragem durante a fase de análise:
 
 ![](assets/campaign_opt_pressure_period_sample_2.png)
 
-Para a mesma regra, ao agrupar as entregas por trimestre, os recipients do **newsletter no.5** também devem ser excluídos e não podem ser enviadas.
+Para a mesma regra, ao agrupar as entregas por trimestre, os destinatários do **newsletter no.5** também devem ser excluídos e não podem ser enviadas.
 
 Finalmente, se nenhum agrupamento for selecionado, somente o **newsletter no.4** não pode ser enviado, já que foi programado para o mesmo período de 2 semanas que os três primeiros boletins.
 
@@ -202,9 +202,9 @@ A arbitragem é reaplicada todas as noites através do fluxo de trabalho técnic
 
 O fluxo de trabalho **[!UICONTROL Forecasting]** pré-calcula os dados do período em andamento (da data de início para a data atual), que permite a aplicação das regras de tipologia durante a análise. Também recalcula os contadores de exclusão para arbitragem a cada noite.
 
-Assim, para cada recipient, o Adobe Campaign verifica se o número de mensagens que devem ser enviadas não excede o limite e assim considera todas as que já foram enviadas no período relacionado. Estas informações são um **indicador**, já que todos os cálculos são atualizados no momento da entrega.
+Assim, para cada destinatário, o Adobe Campaign verifica se o número de mensagens que devem ser enviadas não excede o limite e assim considera todas as que já foram enviadas no período relacionado. Estas informações são um **indicador**, já que todos os cálculos são atualizados no momento da entrega.
 
-Se esse número excede o limite, as regras de arbitragem definidas na tipologia de campanha são aplicadas e os recipients são excluídos das campanhas com um peso menor.
+Se esse número excede o limite, as regras de arbitragem definidas na tipologia de campanha são aplicadas e os destinatários são excluídos das campanhas com um peso menor.
 
 ![](assets/campaign_opt_pressure_exclusion.png)
 
@@ -223,7 +223,7 @@ Para identificar clientes e prospectos, use o campo **[!UICONTROL Status]**, que
 Para criar a regra, aplique as seguintes etapas:
 
 1. Crie uma nova regra de tipologia do tipo **Pressão**.
-1. Edite a guia **[!UICONTROL Pressure]**: na seção **[!UICONTROL Maximum number of messages]**, queremos criar uma fórmula para calcular o limite de acordo com cada recipient. Selecione o valor **[!UICONTROL Depends on the recipient]** no campo **[!UICONTROL Threshold type]** e clique em **[!UICONTROL Edit expression]** à direita do campo **[!UICONTROL Formula]**.
+1. Edite a guia **[!UICONTROL Pressure]**: na seção **[!UICONTROL Maximum number of messages]**, queremos criar uma fórmula para calcular o limite de acordo com cada destinatário. Selecione o valor **[!UICONTROL Depends on the recipient]** no campo **[!UICONTROL Threshold type]** e clique em **[!UICONTROL Edit expression]** à direita do campo **[!UICONTROL Formula]**.
 
    Clique no botão **[!UICONTROL Advanced parameters]** para definir a fórmula de cálculo.
 
@@ -235,7 +235,7 @@ Para criar a regra, aplique as seguintes etapas:
 
 1. Na lista de funções, clique duas vezes na função **Iif** no nó **[!UICONTROL Others]**.
 
-   Em seguida, selecione o **Status** dos recipients na seção **[!UICONTROL Available fields]**.
+   Em seguida, selecione o **Status** dos destinatários na seção **[!UICONTROL Available fields]**.
 
    ![](assets/campaign_opt_pressure_sample_1_3.png)
 
@@ -270,7 +270,7 @@ Para usar essa tipologia em suas entregas, selecione-a nas propriedades de entre
 >
 >A tipologia pode ser definida no template da entrega para que seja aplicada automaticamente a todas as entregas criadas usando esse modelo.
 
-Durante a análise de entrega, os recipients da entrega são excluídos, se aplicável, dependendo do número de entregas já enviados para eles. Para visualizar essas informações, você poderá:
+Durante a análise de entrega, os destinatários da entrega são excluídos, se aplicável, dependendo do número de entregas já enviados para eles. Para visualizar essas informações, você poderá:
 
 * Visualizar o resultado da análise:
 
@@ -286,24 +286,24 @@ Durante a análise de entrega, os recipients da entrega são excluídos, se apli
 
 ### Calcular o peso da entrega com base no comportamento {#calculating-the-delivery-weight-based-on-behavior}
 
-Você pode definir regras de pressão com base no comportamento do recipient: assim, o peso de uma entrega pode se adaptar a critérios que variam de um recipient a outro. Você pode decidir enviar uma mensagem dependendo se um recipient visitou o seu site de Internet, clicou em uma seção específica do último boletim informativo, se inscreveu em um serviço de informação ou até mesmo com base nas respostas de uma pesquisa, um jogo online etc.
+Você pode definir regras de pressão com base no comportamento do destinatário: assim, o peso de uma entrega pode se adaptar a critérios que variam de um destinatário a outro. Você pode decidir enviar uma mensagem dependendo se um destinatário visitou o seu site de Internet, clicou em uma seção específica do último boletim informativo, se inscreveu em um serviço de informação ou até mesmo com base nas respostas de uma pesquisa, um jogo online etc.
 
-No exemplo a seguir, uma entrega com um peso de 5 é criada. Esse peso é melhorado com pontuações de propensão com base no comportamento do recipient: os clientes que já compraram neste site tem uma pontuação de 5, enquanto os clientes que nunca compraram online terão uma pontuação de 4.
+No exemplo a seguir, uma entrega com um peso de 5 é criada. Esse peso é melhorado com pontuações de propensão com base no comportamento do destinatário: os clientes que já compraram neste site tem uma pontuação de 5, enquanto os clientes que nunca compraram online terão uma pontuação de 4.
 
 Para executar esse tipo de configuração, é necessário usar uma fórmula para definir o peso da mensagem. As informações sobre pontuações de propensão e as respostas da pesquisa devem ser acessíveis no modelo de dados. No exemplo, o campo **Propensity** foi adicionado.
 
 Aplique as seguintes etapas de configuração:
 
 1. Crie uma nova regra de tipologia do tipo **Pressão**.
-1. Edite a guia **[!UICONTROL Pressure]**. Para criar uma fórmula de limite que será baseada em cada recipient individual: clique no ícone **[!UICONTROL Edit expression]** à direita do campo **[!UICONTROL Weight formula]**.
+1. Edite a guia **[!UICONTROL Pressure]**. Para criar uma fórmula de limite que será baseada em cada destinatário individual: clique no ícone **[!UICONTROL Edit expression]** à direita do campo **[!UICONTROL Weight formula]**.
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
 
-1. Por padrão, o valor **5** é mostrado na seção superior do editor de expressão. Queremos adicionar a pontuação de propensão de cada recipient a esse peso: coloque o cursor à direita do 5, insira o caractere **+** e selecione o campo **Propensity** .
+1. Por padrão, o valor **5** é mostrado na seção superior do editor de expressão. Queremos adicionar a pontuação de propensão de cada destinatário a esse peso: coloque o cursor à direita do 5, insira o caractere **+** e selecione o campo **Propensity** .
 
    ![](assets/campaign_opt_pressure_sample_2_2.png)
 
-1. Em seguida, adicione um valor maior para recipients que já fizeram uma compra. Para eles, o peso da entrega deverá ser aumentado em 5, enquanto para os outros o aumento será de somente 4.
+1. Em seguida, adicione um valor maior para destinatários que já fizeram uma compra. Para eles, o peso da entrega deverá ser aumentado em 5, enquanto para os outros o aumento será de somente 4.
 
    ![](assets/campaign_opt_pressure_sample_2_3.png)
 
@@ -312,9 +312,9 @@ Aplique as seguintes etapas de configuração:
 
 ### Enviar somente as mensagens com maior peso {#sending-only-the-highest-weighted-messages}
 
-Você deseja enviar não mais do que 2 mensagens na mesma semana, com um limite de 2 mensagens por dia a cada um dos recipients, e você deseja que apenas as mensagens com pesos maiores sejam entregues.
+Você deseja enviar não mais do que 2 mensagens na mesma semana, com um limite de 2 mensagens por dia a cada um dos destinatários, e você deseja que apenas as mensagens com pesos maiores sejam entregues.
 
-Para fazer isso, é necessário agendar várias entregas com pesos diferentes para o mesmo recipient e aplicar uma regra de pressão para excluir as entregas com pesos menores.
+Para fazer isso, é necessário agendar várias entregas com pesos diferentes para o mesmo destinatário e aplicar uma regra de pressão para excluir as entregas com pesos menores.
 
 Primeiro, configure a regra de pressão.
 
@@ -360,9 +360,9 @@ Agora, crie e configure um workflow para cada entrega em que a regra de pressão
 1. Continue de forma semelhante para cada entrega que deve ser enviada. Certifique-se de definir o peso desejado para cada entrega.
 1. Execute os workflows relevantes para preparar e realizar as entregas.
 
-Quando a arbitragem noturna for aplicada, as entregas com os pesos menores para o mesmo recipient serão excluídas. Somente as entregas com o peso mais alto serão consideradas para envio. Para obter mais informações, consulte [Peso da mensagem](#message-weight).
+Quando a arbitragem noturna for aplicada, as entregas com os pesos menores para o mesmo destinatário serão excluídas. Somente as entregas com o peso mais alto serão consideradas para envio. Para obter mais informações, consulte [Peso da mensagem](#message-weight).
 
-Considerando que um email já tenha sido enviado aos recipients relacionados anteriormente durante a semana, a tabela abaixo mostra um exemplo das configurações que poderão ser aplicadas para duas entregas adicionais.
+Considerando que um email já tenha sido enviado aos destinatários relacionados anteriormente durante a semana, a tabela abaixo mostra um exemplo das configurações que poderão ser aplicadas para duas entregas adicionais.
 
 <table> 
  <thead> 
@@ -404,6 +404,6 @@ Considerando que um email já tenha sido enviado aos recipients relacionados ant
  </tbody> 
 </table>
 
-Após a data de extração haver expirado para as duas entregas, a arbitragem noturna será reaplicada antes das datas de contato de ambas as entregas. Isso permite encontrar todas as entregas já enviadas (recipients para os quais uma entrega é processada, registrados pelos logs amplos) ou agendadas para serem enviadas (recipients qualificados para receber uma entrega, registrados pelos logs de previsão).
+Após a data de extração haver expirado para as duas entregas, a arbitragem noturna será reaplicada antes das datas de contato de ambas as entregas. Isso permite encontrar todas as entregas já enviadas (destinatários para os quais uma entrega é processada, registrados pelos logs amplos) ou agendadas para serem enviadas (destinatários qualificados para receber uma entrega, registrados pelos logs de previsão).
 
-Depois que todas as entregas enviadas e potenciais tiverem sido listadas para o período definido na regra de pressão, o Adobe Campaign as classificará por peso, com o maior valor em primeiro lugar. Quando o limite definido na regra de pressão for atingido (aqui, não mais do que 2 emails na mesma semana), os recipients serão excluídos da entrega.
+Depois que todas as entregas enviadas e potenciais tiverem sido listadas para o período definido na regra de pressão, o Adobe Campaign as classificará por peso, com o maior valor em primeiro lugar. Quando o limite definido na regra de pressão for atingido (aqui, não mais do que 2 emails na mesma semana), os destinatários serão excluídos da entrega.

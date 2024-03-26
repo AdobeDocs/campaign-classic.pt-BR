@@ -8,7 +8,7 @@ role: Data Engineer, Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1871'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Para obter mais informações, consulte [Exemplo do método &#39;ExecuteQuery&#3
 
 A variável **ExecuteQuery** O método é apresentado em [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
-### Write {#write}
+### Gravar {#write}
 
 Os comandos Gravar permitem escrever documentos simples ou complexos, com entradas em uma ou mais tabelas da base.
 

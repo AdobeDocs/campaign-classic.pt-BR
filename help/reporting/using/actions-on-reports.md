@@ -8,7 +8,7 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '554'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Selecione o formato que deseja usar para exportar a partir da lista suspensa. (.
 
 Quando um relatório contém várias páginas, é preciso repetir a operação para cada página.
 
-É possível configurar o relatório na exibição do formato PDF, Excel ou OpenOffice. Abra o navegador do Adobe Campaign e selecione o relatório em questão.
+É possível configurar o relatório na exibição do formato PDF, Excel ou OpenOffice. Abra o explorer do Adobe Campaign e selecione o relatório em questão.
 
 Acesse as opções de exportação por meio das atividades **[!UICONTROL Page]** do relatório, na guia **[!UICONTROL Advanced]**.
 

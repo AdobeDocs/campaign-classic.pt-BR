@@ -41,7 +41,7 @@ Você pode executar uma atualização em grande escala, mesclar e inserir dados 
 
 ## Como posso aproveitar os recursos de gestão de dados? {#how-can-i-leverage-data-management-capabilities-}
 
-No Adobe Campaign, você pode aproveitar um conjunto de atividades para resolver problemas complexos de definição de metas oferecendo ferramentas mais eficientes e flexíveis. As atividades de gestão de dados permitem implementar uma gestão consistente de todas as comunicações com um contato usando informações relacionadas a seus contratos, assinaturas, reatividade a remessas, etc. A gestão de dados permite acompanhar o ciclo de vida dos dados durante as operações de segmentação, em particular:
+No Adobe Campaign, você pode aproveitar um conjunto de atividades para resolver problemas complexos de definição de metas oferecendo ferramentas mais eficientes e flexíveis. As atividades de gestão de dados permitem implementar uma gestão consistente de todas as comunicações com um contato usando informações relacionadas a seus contratos, assinaturas, reatividade a entregas, etc. A gestão de dados permite acompanhar o ciclo de vida dos dados durante as operações de segmentação, em particular:
 
 * Simplificação e otimização de processos de target, ao incluir dados que não são modelados no datamart (criando novas tabelas: extensão local para todo workflow para construção do target, dependendo da configuração).
 * Manutenção e transmissão de cálculos de buffer, especialmente durante as fases de construção do target ou para administração de banco de dados.
@@ -57,12 +57,12 @@ Leia [este caso de uso](../../workflow/using/enriching-data.md) para enviar mens
 
 Saiba como dividir um destino em vários subconjuntos [nesta seção](../../workflow/using/split.md).
 
-## Como posso atualizar os dados do recipient de um arquivo externo? {#how-can-i-update-recipient-data-from-an-external-file-}
+## Como posso atualizar os dados do destinatário de um arquivo externo? {#how-can-i-update-recipient-data-from-an-external-file-}
 
 Você pode modificar determinados campos em uma tabela do Campaign com valores de um arquivo de texto externo.
 
 [Clique aqui para saber como](../../platform/using/import-operations-samples.md#example--enrich-the-values-with-those-of-an-external-file).
 
-## Como posso identificar e direcionar novos recipients? {#how-can-i-identify-and-target-new-recipients-}
+## Como posso identificar e direcionar novos destinatários? {#how-can-i-identify-and-target-new-recipients-}
 
-[Este caso de uso](../../workflow/using/using-aggregates.md) ensina como usar agregações para identificar automaticamente os últimos recipients adicionados ao banco de dados e enviar a eles uma mensagem de boas-vindas.
+[Este caso de uso](../../workflow/using/using-aggregates.md) ensina como usar agregações para identificar automaticamente os últimos destinatários adicionados ao banco de dados e enviar a eles uma mensagem de boas-vindas.

@@ -4,15 +4,15 @@ title: Tabelas a serem preservadas
 description: Tabelas a serem preservadas
 feature: Monitoring
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 5%
+source-wordcount: '1146'
+ht-degree: 2%
 
 ---
 
@@ -47,7 +47,7 @@ A lista a seguir contém apenas as tabelas mais sujeitas à fragmentação. Os i
   </tr> 
   <tr> 
    <td> NmsDeliveryPart<br /> </td> 
-   <td> Médio<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
    <td> Tabela de trabalho na qual os registros são inseridos durante a preparação da entrega. Eles são atualizados durante o delivery e finalmente excluídos quando o delivery é concluído.<br /> Essa tabela tende a se fragmentar rapidamente, mesmo que seu tamanho médio seja bastante limitado.<br /> </td> 
   </tr> 
@@ -59,13 +59,13 @@ A lista a seguir contém apenas as tabelas mais sujeitas à fragmentação. Os i
   </tr> 
   <tr> 
    <td> NmsDeliveryStat<br /> </td> 
-   <td> Médio<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
    <td> Esta tabela contém estatísticas sobre o processo de delivery. Seus registros são atualizados regularmente. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsAddress<br /> </td> 
-   <td> Médio<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Atualizações, inserções<br /> </td> 
    <td> Esta tabela contém informações sobre endereços de email. Ele é atualizado com frequência como parte do processo de quarentena (os registros são criados no primeiro erro de delivery, atualizados quando os contadores são alterados e excluídos quando o delivery é bem-sucedido). <br /> </td> 
   </tr> 
@@ -113,7 +113,7 @@ A lista a seguir contém apenas as tabelas mais sujeitas à fragmentação. Os i
   </tr> 
   <tr> 
    <td> NmsEmailErrorStat<br /> </td> 
-   <td> Médio<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
    <td> Essa tabela contém as agregações de erros SMTP classificados por domínio. Inicialmente, contém informações detalhadas que são agregadas pela tarefa de limpeza depois que ela se torna desatualizada. <br /> </td> 
   </tr> 

@@ -22,14 +22,14 @@ O Adobe Campaign inclui um módulo de workflow que possibilita orquestrar a gama
 
 Você pode usar um workflow, por exemplo, para baixar um arquivo de um servidor, descompactar e importar registros contidos no banco de dados do Adobe Campaign.
 
-Um workflow também pode envolver um ou mais operadores a serem notificados ou que podem fazer escolhas e aprovar processos. Dessa forma, é possível criar uma ação de delivery, atribuir uma tarefa a um ou mais operadores para trabalhar no conteúdo, especificar alvos e aprovar testes antes de iniciar a delivery.
+Um workflow também pode envolver um ou mais operadores a serem notificados ou que podem fazer escolhas e aprovar processos. Dessa forma, é possível criar uma ação de entrega, atribuir uma tarefa a um ou mais operadores para trabalhar no conteúdo, especificar alvos e aprovar testes antes de iniciar a entrega.
 
 Os workflows ocorrem em vários contextos e estágios do processo de gestão de campanha.
 
 O Adobe Campaign usa workflows para:
 
 * Executar campanhas de segregação. [Saiba mais](building-a-workflow.md#implementation-steps-)
-* Desenvolva campanhas: para cada campanha, a guia **[!UICONTROL Workflow]** permite desenvolver o público-alvo e criar deliveries. [Saiba mais](building-a-workflow.md#campaign-workflows)
+* Desenvolva campanhas: para cada campanha, a guia **[!UICONTROL Workflow]** permite desenvolver o público-alvo e criar entregas. [Saiba mais](building-a-workflow.md#campaign-workflows)
 * Realizar processos técnicos: limpeza, coleta de informações de rastreamento ou cálculos provisionais. [Saiba mais](building-a-workflow.md#technical-workflows)
 
 Um workflow pode significar uma definição de processo (o modelo de workflow, que é uma representação do que deveria acontecer) e uma instância desse processo (uma instância de workflow, que é uma representação do que realmente está acontecendo).

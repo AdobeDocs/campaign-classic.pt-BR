@@ -27,6 +27,6 @@ Os parâmetros disponíveis são detalhados [neste documento](../../web/using/de
 
 ## Armazenamento de dados de pesquisa {#survey-data-storage}
 
-Por padrão, os campos de formulário web são armazenados na tabela de recipients. Para usar outra tabela, selecione-a no campo **[!UICONTROL Document type]**. O ícone **[!UICONTROL Zoom]** permite visualizar o conteúdo da tabela selecionada.
+Por padrão, os campos de formulário web são armazenados na tabela de destinatários. Para usar outra tabela, selecione-a no campo **[!UICONTROL Document type]**. O ícone **[!UICONTROL Zoom]** permite visualizar o conteúdo da tabela selecionada.
 
 Respostas das pesquisas fornecidas por usuários que não são armazenados nos campos (mas em variáveis locais) são armazenadas nas tabelas **Respostas das pesquisas** . É possível alterar o schema usado com base no campo **[!UICONTROL Library]**. Este campo está disponível somente para **pesquisas**.

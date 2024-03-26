@@ -4,15 +4,15 @@ title: Implantação de uma instância
 description: Saiba mais sobre o assistente de implantação do Campaign
 feature: Installation, Instance Settings, Deployment
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3391'
-ht-degree: 6%
+source-wordcount: '3395'
+ht-degree: 5%
 
 ---
 
@@ -140,7 +140,7 @@ As informações sobre as recuperações são **Períodos de recuperação** e *
 As opções de configuração para quarentenas são as seguintes:
 
 * **[!UICONTROL Duration between two significant errors]** : digite um valor (&quot;1d&quot; por padrão: 1 dia) para definir o tempo que o aplicativo aguarda antes de incrementar o contador de erros, em caso de falha,
-* **[!UICONTROL Maximum number of errors before quarantine]** : quando esse valor é atingido, o endereço de email é colocado em quarentena (por padrão, &quot;5&quot;: o endereço será colocado em quarentena no sexto erro). Isso significa que o contato será automaticamente excluído dos próximos deliveries.
+* **[!UICONTROL Maximum number of errors before quarantine]** : quando esse valor é atingido, o endereço de email é colocado em quarentena (por padrão, &quot;5&quot;: o endereço será colocado em quarentena no sexto erro). Isso significa que o contato será automaticamente excluído das próximas entregas.
 
 ## Gerenciamento de emails devolvidos {#managing-bounced-emails}
 
@@ -360,7 +360,7 @@ O Adobe Campaign permite diferenciar esses três URLs para distribuir a carga em
 >
 >Por motivos de privacidade, recomendamos usar HTTPS para todos os recursos externos.
 
-Para serem vistas de fora, as imagens usadas em e-mails e recursos públicos vinculados a campanhas devem estar presentes em um servidor acessível externamente. Eles podem estar disponíveis para recipients ou operadores externos.
+Para serem vistas de fora, as imagens usadas em emails e recursos públicos vinculados a campanhas devem estar presentes em um servidor acessível externamente. Eles podem estar disponíveis para recipients ou operadores externos.
 
 ![](assets/s_ncs_install_deployment_wiz_img_uploading.png)
 

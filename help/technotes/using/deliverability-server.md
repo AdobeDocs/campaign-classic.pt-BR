@@ -67,7 +67,7 @@ Como cliente local, você também deve verificar se uma campanha **[!UICONTROL P
 
 1. Como Administrador, conecte-se [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Acesse o **Produtos e serviços** seção e verificar **Adobe Campaign** está listado.
-Se você não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
+Se você não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html){_blank} para adicioná-lo.
 1. Clique em **Adobe Campaign** e selecione sua organização.
    **Cuidado**: se você tiver mais de uma organização, selecione a correta. Saiba mais sobre Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 

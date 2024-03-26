@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-O Editor de conteúdo digital oferece **templates padrão** para aplicações web e deliveries.
+O Editor de conteúdo digital oferece **templates padrão** para aplicações web e entregas.
 
 Ao criar uma aplicação web tipo Landing page, o usuário pode escolher um desses templates. Você também pode importar um template HTML criado fora do Adobe Campaign.
 
@@ -29,8 +29,8 @@ Para adicionar um modelo, consulte [Opções globais](content-editor-interface.m
 
 Após configurar uma entrega, você pode salvá-la como modelo e reutilizá-la em entregas futuras.
 
-Na guia **Campanhas**, abra o delivery escolhido. Clique no botão **Salvar como template**, nomeie o template e salve.
+Na guia **Campanhas**, abra a entrega escolhida. Clique no botão **Salvar como template**, nomeie o template e salve.
 
 ![](assets/dce_save_model.png)
 
-O novo template é salvo no nó **Resources > Templates > Content models** no navegador.
+O novo template é salvo no nó **Resources > Templates > Content models** no explorer.

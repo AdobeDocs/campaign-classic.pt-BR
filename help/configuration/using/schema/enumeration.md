@@ -7,7 +7,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 ## Modelo de conteúdo {#content-model-5}
 
-enumeração:==(valor da ajuda|)
+enumeração:==(ajuda| value)
 
 ## Atributos {#attributes-5}
 
@@ -57,10 +57,10 @@ Enumerações são definidas no início de um esquema (antes de o elemento princ
    * booleano
    * byte
    * CDATA
-   * datetime
+   * data e hora
    * datetimetz
    * datetimenotz
-   * date
+   * data
    * Documento DOM
    * DOMElement
    * duplo
@@ -68,16 +68,16 @@ Enumerações são definidas no início de um esquema (antes de o elemento princ
    * flutuante
    * html
    * int64
-   * Link 
+   * link
    * long
    * memorando
    * MNTOKEN
-   * percent
+   * por cento
    * primarykey
    * curto
    * sequência de caracteres
    * tempo
-   * timespan
+   * intervalo de tempo
    * uuid
 
 * **padrão (string)**: Valor padrão. O valor padrão também pode ser um dos valores definidos na lista discriminada.

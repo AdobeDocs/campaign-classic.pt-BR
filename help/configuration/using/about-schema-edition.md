@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 10%
+source-wordcount: '1013'
+ht-degree: 9%
 
 ---
 
@@ -121,7 +121,7 @@ A lista completa de atributos está disponível no [`<attribute>` element](../..
 
 * **@advanced**
 * **@dataPolicy**
-* **@padrão**
+* **@default**
 * **@desc**
 * **@enum**
 * **@expr**
@@ -132,7 +132,7 @@ A lista completa de atributos está disponível no [`<attribute>` element](../..
 * **@required**
 * **@ref**
 * **@xml**
-* **@tipo**
+* **@type**
 
   Para exibir uma tabela listando os mapeamentos para os tipos de dados gerados pelo Adobe Campaign para os diferentes sistemas de gerenciamento de banco de dados, consulte [Mapeamento dos tipos de dados do Adobe Campaign/DBMS](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) seção.
 

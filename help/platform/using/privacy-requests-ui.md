@@ -9,8 +9,8 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '778'
+workflow-type: tm+mt
+source-wordcount: '781'
 ht-degree: 100%
 
 ---
@@ -46,22 +46,22 @@ Os workflows técnicos de privacidade são executados uma vez por dia e processa
 
 ## Lista de tabelas {#list-of-tables}
 
-Ao executar uma solicitação de privacidade de exclusão ou acesso, o Adobe Campaign pesquisa todos os dados do Titular dos dados com base em **[!UICONTROL Reconciliation value]** em todas as tabelas que tenham um link para a tabela do recipient (tipo próprio). 
+Ao executar uma solicitação de privacidade de exclusão ou acesso, o Adobe Campaign pesquisa todos os dados do Titular dos dados com base em **[!UICONTROL Reconciliation value]** em todas as tabelas que tenham um link para a tabela do destinatário (tipo próprio). 
 
 Esta é a lista de recursos prontos para utilização que são considerados ao executar solicitações de privacidade:
 
-* Recipients (recipient)
-* Log de entrega de recipient (broadLogRcp)
-* Log de rastreamento de recipient (trackingLogRcp)
+* Recipients (destinatário)
+* Log de entrega de destinatário (broadLogRcp)
+* Log de rastreamento de destinatário (trackingLogRcp)
 * Log de entrega de evento arquivado (broadLogEventHisto)
-* Conteúdo da lista de recipient (rcpGrpRel)
+* Conteúdo da lista de destinatário (rcpGrpRel)
 * Apresentação da oferta do visitante (propositionVisitor)
 * Visitantes (visitante)
 * Histórico de inscrições (subHisto)
 * Inscrições (inscrição)
-* Apresentação da oferta do recipient (propositionRcp)
+* Apresentação da oferta do destinatário (propositionRcp)
 
-Se você criou tabelas personalizadas que tenham um link para a tabela do recipient (tipo próprio), elas também serão consideradas. Por exemplo, se você tiver uma tabela de transações vinculada à tabela do recipient e uma tabela de detalhes da transação vinculada à tabela de transações, ambas serão consideradas.
+Se você criou tabelas personalizadas que tenham um link para a tabela do destinatário (tipo próprio), elas também serão consideradas. Por exemplo, se você tiver uma tabela de transações vinculada à tabela do destinatário e uma tabela de detalhes da transação vinculada à tabela de transações, ambas serão consideradas.
 
 >[!IMPORTANT]
 >
@@ -76,11 +76,11 @@ Estes são os diferentes status de solicitações de acesso a dados pessoais:
 
 * **[!UICONTROL New]** / **[!UICONTROL Retry pending]**: em andamento, o workflow ainda não processou a solicitação.
 * **[!UICONTROL Processing]** / **[!UICONTROL Retry in progress]**: o workflow está processando a solicitação.
-* **[!UICONTROL Delete pending]**: o workflow identificou todos os dados do recipient que serão excluídos.
+* **[!UICONTROL Delete pending]**: o workflow identificou todos os dados do destinatário que serão excluídos.
 * **[!UICONTROL Delete in progress]**: o workflow está processando a exclusão.
 * **[!UICONTROL Delete Confirmation Pending]** (Solicitação de exclusão no modo de processo de duas etapas): o workflow processou a solicitação de acesso. A confirmação manual é solicitada para executar a exclusão. O botão está disponível por 15 dias.
 * **[!UICONTROL Complete]**: o processamento da solicitação foi concluído sem erros.
-* **[!UICONTROL Error]**: o workflow encontrou um erro. O motivo aparece na lista de solicitações de privacidade na coluna **[!UICONTROL Request status]**. Por exemplo, **[!UICONTROL Error data not found]** significa que nenhum dado de recipient correspondente a **[!UICONTROL Reconciliation value]** do Titular dos dados foi encontrado no banco de dados.
+* **[!UICONTROL Error]**: o workflow encontrou um erro. O motivo aparece na lista de solicitações de privacidade na coluna **[!UICONTROL Request status]**. Por exemplo, **[!UICONTROL Error data not found]** significa que nenhum dado de destinatário correspondente a **[!UICONTROL Reconciliation value]** do Titular dos dados foi encontrado no banco de dados.
 
 ## Processo em duas etapas {#two-step-process}
 
@@ -96,7 +96,7 @@ Com o modo de 2 etapas ativado, o status de uma nova solicitação de exclusão 
 
 ## URL JSSP {#jspp-url}
 
-Ao processar solicitações do Access, o Adobe Campaign gera um JSSP que recupera os dados do recipient do banco de dados e os exporta para um arquivo XML armazenado no computador local. O URL JSSP é definido conforme indicação abaixo:
+Ao processar solicitações do Access, o Adobe Campaign gera um JSSP que recupera os dados do destinatário do banco de dados e os exporta para um arquivo XML armazenado no computador local. O URL JSSP é definido conforme indicação abaixo:
 
 ```
 "$(serverUrl)+'/nms/gdpr.jssp?id='+@id"
@@ -152,4 +152,4 @@ Este é um trecho de código que você pode usar como exemplo na atividade **[!U
 </body> </html>
 ```
 
-Como o acesso ao arquivo de dados do titular de dados é restrito, o acesso anônimo à página da web deve ser desativado. Somente o operador com o direito nomeado **[!UICONTROL Privacy Data Right]** pode fazer logon na página e baixar os dados.
+Como o acesso ao arquivo de dados do titular de dados é restrito, o acesso anônimo à página da web deve ser desabilitado. Somente o operador com o direito nomeado **[!UICONTROL Privacy Data Right]** pode fazer logon na página e baixar os dados.

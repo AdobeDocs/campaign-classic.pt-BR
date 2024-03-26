@@ -6,7 +6,7 @@ feature: Interaction, Offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '237'
 ht-degree: 100%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 100%
 
 
 
-O módulo **Simulation** permite testar a distribuição de ofertas pertencentes a uma categoria ou um ambiente antes de enviar sua proposta para os recipients.
+O módulo **Simulation** permite testar a distribuição de ofertas pertencentes a uma categoria ou um ambiente antes de enviar sua proposta para os destinatários.
 
-A simulação leva em consideração os contextos e as regras de qualificação aplicadas anteriormente às ofertas (consulte [Visão geral do catálogo de ofertas](../../interaction/using/offer-catalog-overview.md)), bem como suas regras de apresentação (consulte [Gestão de apresentação de ofertas](../../interaction/using/managing-offer-presentation.md)). Isso permite testar e refinar várias versões da apresentação de oferta sem realmente usar uma oferta ou sobrecarregar ou não um destino, já que a simulação não tem impacto nos recipients de destino.
+A simulação leva em consideração os contextos e as regras de qualificação aplicadas anteriormente às ofertas (consulte [Visão geral do catálogo de ofertas](../../interaction/using/offer-catalog-overview.md)), bem como suas regras de apresentação (consulte [Gestão de apresentação de ofertas](../../interaction/using/managing-offer-presentation.md)). Isso permite testar e refinar várias versões da apresentação de oferta sem realmente usar uma oferta ou sobrecarregar ou não um destino, já que a simulação não tem impacto nos destinatários de destino.
 
 Para saber como simular uma oferta, leia as etapas abaixo.
 

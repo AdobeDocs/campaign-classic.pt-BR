@@ -8,7 +8,7 @@ feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 100%
 
@@ -18,11 +18,11 @@ ht-degree: 100%
 
 
 
-Graças às funcionalidades de rastreamento, o Adobe Campaign permite que você rastreie as mensagens enviadas e verifique o comportamento dos recipientes: abrir, clicar em links, cancelamento de subscrição, etc.
+Graças às funcionalidades de rastreamento, o Adobe Campaign permite que você rastreie as mensagens enviadas e verifique o comportamento dos destinatárioes: abrir, clicar em links, cancelamento de subscrição, etc.
 
-Essas informações são recuperadas na guia **[!UICONTROL Tracking]** do perfil de cada recipient do delivery. Esta guia apresenta todos os links de URL rastreados e clicados pelo recipient selecionado na lista. Esse é o acúmulo de todos os URLs rastreados nas remessas que ainda estão na tela de envio. A lista pode ser configurada e normalmente contém: o URL clicado, a data e a hora do clique e o documento no qual o URL foi localizado. Para obter mais informações, consulte [esta seção](../../platform/using/editing-a-profile.md#tracking-tab).
+Essas informações são recuperadas na guia **[!UICONTROL Tracking]** do perfil de cada destinatário da entrega. Esta guia apresenta todos os links de URL rastreados e clicados pelo destinatário selecionado na lista. Esse é o acúmulo de todos os URLs rastreados nas entregas que ainda estão na tela de envio. A lista pode ser configurada e normalmente contém: o URL clicado, a data e a hora do clique e o documento no qual o URL foi localizado. Para obter mais informações, consulte [esta seção](../../platform/using/editing-a-profile.md#tracking-tab).
 
-O **painel de delivery** também é fundamental para monitorar seus deliveries e eventuais problemas encontrados durante o envio de mensagens. Para obter mais informações, consulte [esta seção](delivery-dashboard.md).
+O **painel de entrega** também é fundamental para monitorar suas entregas e eventuais problemas encontrados durante o envio de mensagens. Para obter mais informações, consulte [esta seção](delivery-dashboard.md).
 
 O diagrama a seguir mostra os estágios da caixa de diálogo entre o usuário e os vários servidores.
 
@@ -50,7 +50,7 @@ Depois que o rastreamento é configurado e os URLs são preenchidos, o servidor 
 
 **Links rastreados**
 
-Você pode rastrear a recepção de mensagens e a ativação dos links inseridos no conteúdo da mensagem para entender melhor o comportamento dos recipients. [Saiba mais](how-to-configure-tracked-links.md)
+Você pode rastrear a recepção de mensagens e a ativação dos links inseridos no conteúdo da mensagem para entender melhor o comportamento dos destinatários. [Saiba mais](how-to-configure-tracked-links.md)
 
 **Rastreamento de URL**
 
@@ -62,7 +62,7 @@ Os recursos de rastreamento de Campaign Classic permitem que você adicione link
 
 **Logs de rastreamento**
 
-O fluxo de trabalho técnico de rastreamento recupera os dados de rastreamento depois que o delivery é enviado e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento do seu delivery. [Saiba mais](accessing-the-tracking-logs.md)
+O fluxo de trabalho técnico de rastreamento recupera os dados de rastreamento depois que a entrega é enviada e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento da sua entrega. [Saiba mais](accessing-the-tracking-logs.md)
 
 **Testar o rastreamento**
 
@@ -86,23 +86,23 @@ A opção de recusar o rastreamento de aplicações web permite que você interr
 
 **Estatísticas de rastreamento**
 
-Este relatório fornece estatísticas sobre aberturas, cliques e transações e permite rastrear o impacto de marketing do delivery. [Saiba mais](../../reporting/using/delivery-reports.md#tracking-statistics)
+Este relatório fornece estatísticas sobre aberturas, cliques e transações e permite rastrear o impacto de marketing da entrega. [Saiba mais](../../reporting/using/delivery-reports.md#tracking-statistics)
 
 **Fluxos de clique e URLs**
 
-Este relatório mostra a lista de páginas visitadas após um delivery. [Saiba mais](../../reporting/using/delivery-reports.md#urls-and-click-streams)
+Este relatório mostra a lista de páginas visitadas após uma entrega. [Saiba mais](../../reporting/using/delivery-reports.md#urls-and-click-streams)
 
-**Pessoa/pessoas e recipients**
+**Pessoa/pessoas e destinatários**
 
-Entenda melhor a diferença de rastreamento entre uma pessoa/pessoas e um recipient no Adobe Campaign com este exemplo. [Saiba mais](../../reporting/using/person-people-recipients.md)
+Entenda melhor a diferença de rastreamento entre uma pessoa/pessoas e um destinatário no Adobe Campaign com este exemplo. [Saiba mais](../../reporting/using/person-people-recipients.md)
 
 **Indicadores de rastreamento**
 
-Este relatório combina os principais indicadores para rastrear o comportamento dos recipients ao receber o delivery, como abertura, taxas de click-through e fluxos de cliques. [Saiba mais](../../reporting/using/delivery-reports.md#tracking-indicators)
+Este relatório combina os principais indicadores para rastrear o comportamento dos destinatários ao receber a entrega, como abertura, taxas de click-through e fluxos de cliques. [Saiba mais](../../reporting/using/delivery-reports.md#tracking-indicators)
 
 **Cálculo do indicador**
 
-As diferentes tabelas fornecem a lista de indicadores usados nos diferentes relatórios e suas fórmulas de cálculo, dependendo do tipo de delivery. [Saiba mais](../../reporting/using/indicator-calculation.md)
+As diferentes tabelas fornecem a lista de indicadores usados nos diferentes relatórios e suas fórmulas de cálculo, dependendo do tipo de entrega. [Saiba mais](../../reporting/using/indicator-calculation.md)
 
 ## Solução de problemas de rastreamento {#tracking-troubleshooting}
 

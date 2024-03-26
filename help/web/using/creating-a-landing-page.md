@@ -8,7 +8,7 @@ feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '739'
 ht-degree: 100%
 
 ---
@@ -145,7 +145,7 @@ Esta etapa é obrigatória porque permitirá que o aplicativo Web determine a se
 Esta etapa permite personalizar a página de agradecimento. Para fazer isso:
 
 1. Abra a página **[!UICONTROL Thank you]**.
-1. Coloque o cursor em uma área de texto, onde você deseja inserir o nome do recipient.
+1. Coloque o cursor em uma área de texto, onde você deseja inserir o nome do destinatário.
 1. Selecione **[!UICONTROL Personalization field]** no menu **[!UICONTROL Insert]** da barra de ferramentas.
 1. Selecione o nome.
 
@@ -169,4 +169,4 @@ Durante a publicação, é exibido um log. O sistema de publicação analisa tod
 >
 >No log de publicação, os avisos e erros são classificados por atividade.
 
-Agora o formulário está disponível: sua URL está acessível no painel do aplicativo e pode ser enviada para os recipients.
+Agora o formulário está disponível: sua URL está acessível no painel do aplicativo e pode ser enviada para os destinatários.

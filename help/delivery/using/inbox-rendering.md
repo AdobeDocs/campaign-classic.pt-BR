@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Renderização da caixa de entrada   no Campaign
+title: Renderização da caixa de entrada no Campaign
 description: Saiba como capturar renderizações de email e disponibilizá-las em um relatório dedicado
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
@@ -8,9 +8,9 @@ feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '851'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '842'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## Sobre renderização da caixa de entrada {#about-inbox-rendering}
 
-Antes de clicar no botão **Enviar**, verifique se a sua mensagem será exibida aos recipients de forma eficaz em uma variedade de clientes Web, Webmails e dispositivos.
+Antes de clicar no botão **Enviar**, verifique se a sua mensagem será exibida aos destinatários de forma eficaz em uma variedade de clientes Web, Webmails e dispositivos.
 
 Para permitir isso, o Adobe Campaign aproveita a solução de teste de email baseada na Web [Litmus](https://litmus.com/email-testing) para capturar a renderização e disponibilizá-la em um relatório específico. Isso permite que você visualize a mensagem enviada nos diferentes contextos em que ela pode ser recebida e verificar a compatibilidade nos principais desktops e aplicativos.
 
@@ -32,7 +32,7 @@ Os clientes de dispositivos móveis, mensagens e webmail disponíveis para a **R
 
 >[!NOTE]
 >
->A renderização da caixa de entrada não é necessária para testar a personalização nos deliveries. A personalização pode ser verificada com as ferramentas do Adobe Campaign, como **[!UICONTROL Preview]** e [Provas](steps-validating-the-delivery.md#sending-a-proof).
+>A renderização da caixa de entrada não é necessária para testar a personalização nas entregas. A personalização pode ser verificada com as ferramentas do Adobe Campaign, como **[!UICONTROL Preview]** e [Provas](steps-validating-the-delivery.md#sending-a-proof).
 
 ## Ativação da renderização da caixa de entrada {#activating-inbox-rendering}
 
@@ -122,7 +122,7 @@ Para obter mais informações sobre como criar, desenvolver e segmentar uma entr
 
 ## Relatório de renderização da caixa de entrada {#inbox-rendering-report}
 
-Este relatório exibe as renderizações da caixa de entrada como são exibidas para o recipient. As renderizações podem ser diferentes com base em como o recipient abre a entrega de email: em um navegador, em um dispositivo móvel ou por um aplicativo de email.
+Este relatório exibe as renderizações da caixa de entrada como são exibidas para o destinatário. As renderizações podem ser diferentes com base em como o destinatário abre a entrega de email: em um navegador, em um dispositivo móvel ou por um aplicativo de email.
 
 O **[!UICONTROL General summary]** apresenta em uma lista e por meio de uma representação gráfica colorida o número de mensagens recebidas, indesejadas (spam), não recebidas ou com recebimento pendente.
 

@@ -7,7 +7,7 @@ feature: Workflows, Targeting Activity
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '468'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Uma atividade **List update** armazena a população especificada na transição em uma lista de recipients.
+Uma atividade **List update** armazena a população especificada na transição em uma lista de destinatários.
 
 ![](assets/s_user_segmentation_update_group.png)
 
@@ -26,9 +26,9 @@ Ele também pode ser criado por meio das opções **[!UICONTROL Create the list 
 
 ![](assets/s_user_segmentation_update_list_calc.png)
 
-Se a lista já existe, os recipients são adicionados ao conteúdo existente, a menos que a opção **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** esteja habilitada. Nesse caso, o conteúdo da lista é excluído antes da atualização.
+Se a lista já existe, os destinatários são adicionados ao conteúdo existente, a menos que a opção **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** esteja habilitada. Nesse caso, o conteúdo da lista é excluído antes da atualização.
 
-Se desejar que a lista criada ou atualizada use uma tabela diferente da tabela recipient, marque a opção **[!UICONTROL Create or use a list with its own table]**.
+Se desejar que a lista criada ou atualizada use uma tabela diferente da tabela destinatário, marque a opção **[!UICONTROL Create or use a list with its own table]**.
 
 Para usar a opção, as tabelas específicas devem ter sido configuradas em sua instância do Adobe Campaign.
 
@@ -48,14 +48,14 @@ No exemplo a seguir, a atividade de atualização da lista segue uma query direc
 1. Selecione a opção **[!UICONTROL Create the list if necessary (Calculated name)]** para mostrar que a lista é criada quando o primeiro workflow é executado e, em seguida, atualizada com as execuções seguintes.
 1. Selecione a pasta na qual deseja salvar a lista.
 1. Insira um rótulo para a lista. É possível inserir campos dinâmicos para gerar automaticamente o nome a partir da lista. Neste exemplo, a lista tem o mesmo nome que a query para identificar facilmente seu conteúdo.
-1. Deixe a opção **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** marcada para excluir os recipients que não correspondem aos critérios de direcionamento e para inserir os novos na lista.
+1. Deixe a opção **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** marcada para excluir os destinatários que não correspondem aos critérios de direcionamento e para inserir os novos na lista.
 1. Deixe a opção **[!UICONTROL Create or use a list with its own table]** também marcada.
 1. Deixe a opção **[!UICONTROL Generate an outbound transition]** desmarcada.
 1. Clique em **[!UICONTROL Ok]** e inicie o workflow.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
 
-   A lista de recipients correspondentes é então criada ou atualizada.
+   A lista de destinatários correspondentes é então criada ou atualizada.
 
 ## Parâmetros de entrada {#input-parameters}
 
@@ -70,7 +70,7 @@ Identifica a população a ser salva no grupo.
 
 ## Tutorial em vídeo {#video}
 
-Este vídeo mostra como criar uma lista de recipients pelo Explorer.
+Este vídeo mostra como criar uma lista de destinatários pelo Explorer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 

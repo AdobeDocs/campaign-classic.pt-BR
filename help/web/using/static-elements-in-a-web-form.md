@@ -8,7 +8,7 @@ feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1039'
 ht-degree: 100%
 
 ---
@@ -123,7 +123,7 @@ Use campos de personalização para reinjetar o nome de usuário e marca selecio
 >
 >Por motivos de segurança, o valor inserido na fórmula **`<%=`** é substituído por caracteres de escape.
 
-No nosso exemplo, o nome e o sobrenome do recipient são armazenados em um campo do banco de dados, enquanto a marca do carro é armazenada em uma variável. A sintaxe da mensagem personalizada na página 2 será a seguinte:
+No nosso exemplo, o nome e o sobrenome do destinatário são armazenados em um campo do banco de dados, enquanto a marca do carro é armazenada em uma variável. A sintaxe da mensagem personalizada na página 2 será a seguinte:
 
 ![](assets/webapp_perso_vars_include.png)
 

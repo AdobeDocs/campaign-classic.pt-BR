@@ -8,7 +8,7 @@ feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2507'
+source-wordcount: '2515'
 ht-degree: 100%
 
 ---
@@ -33,9 +33,9 @@ Uma tabela do tipo **[!UICONTROL List with group]** permite agrupar dados na tab
 
 Talvez seja necessário analisar várias categorias de dados de uma vez. Uma lista com grupo permite combinar dados e criar estatísticas em vários grupos de dados dentro da mesma tabela. Para fazer isso, é possível criar um grupo na tabela.
 
-No exemplo a seguir, o grupo mostra todas as campanhas no banco de dados, os deliveries e o número de mensagens enviadas por delivery e por campanha.
+No exemplo a seguir, o grupo mostra todas as campanhas no banco de dados, as entregas e o número de mensagens enviadas por entrega e por campanha.
 
-Isso permite listar as campanhas (**[!UICONTROL Label (Campaign)]**, a lista de deliveries (**[!UICONTROL Label]**) vinculada à campanha e permite contar o número de mensagens enviadas por delivery (**[!UICONTROL Processed)]**, antes de adicioná-las a cada campanha (**[!UICONTROL Sum(@processed)]** ).
+Isso permite listar as campanhas (**[!UICONTROL Label (Campaign)]**, a lista de entregas (**[!UICONTROL Label]**) vinculada à campanha e permite contar o número de mensagens enviadas por entrega (**[!UICONTROL Processed)]**, antes de adicioná-las a cada campanha (**[!UICONTROL Sum(@processed)]** ).
 
 ![](assets/s_advuser_ergo_listgroup_005.png)
 
@@ -189,7 +189,7 @@ Na guia Excel:
 
 A guia **[!UICONTROL Click]** permite definir uma ação quando o usuário clicar no conteúdo de uma célula ou da tabela.
 
-No exemplo abaixo, clicar no valor na célula permite exibir a segunda página do relatório: ela conterá informações sobre o delivery na célula.
+No exemplo abaixo, clicar no valor na célula permite exibir a segunda página do relatório: ela conterá informações sobre a entrega na célula.
 
 ![](assets/s_advuser_ergo_listgroup_015.png)
 
@@ -199,7 +199,7 @@ A guia **Extra** permite vincular um visual a seus dados, como uma marca colorid
 
 ## Caso de uso: criar um relatório com uma lista de grupos {#use-case--create-a-report-with-a-group-list}
 
-Neste exemplo, vamos criar um relatório de duas páginas: a primeira página conterá a lista e os deliveries totais por campanha, bem como o número de mensagens enviadas. Os nomes dos deliveries serão links clicáveis e permitirão ir para a segunda página do relatório para exibir a análise dos deliveries por domínio de email para o delivery selecionado com uma tabela e um gráfico. Na segunda página, a tabela servirá como uma legenda para o gráfico.
+Neste exemplo, vamos criar um relatório de duas páginas: a primeira página conterá a lista e as entregas totais por campanha, bem como o número de mensagens enviadas. Os nomes das entregas serão links clicáveis e permitirão ir para a segunda página do relatório para exibir a análise das entregas por domínio de email para a entrega selecionado com uma tabela e um gráfico. Na segunda página, a tabela servirá como uma legenda para o gráfico.
 
 ![](assets/reporting_quick_start_report-final.png)
 
@@ -217,7 +217,7 @@ Acesse o gráfico e adicione os primeiros componentes a serem usados para criar 
 
 ### Etapa 2 – Criar a primeira consulta {#step-2---create-the-first-query}
 
-A primeira query permite coletar os deliveries vinculados a cada campanha. O objetivo é exibir um relatório sobre os vários deliveries do banco de dados do Adobe Campaign vinculados a cada campanha.
+A primeira query permite coletar as entregas vinculadas a cada campanha. O objetivo é exibir um relatório sobre as várias entregas do banco de dados do Adobe Campaign vinculadas a cada campanha.
 
 Clique duas vezes na primeira query para editá-la e siga as etapas abaixo para configurá-la:
 
@@ -228,10 +228,10 @@ Clique duas vezes na primeira query para editá-la e siga as etapas abaixo para 
 
 1. Selecione os seguintes campos:
 
-   * o rótulo do delivery,
-   * a chave primária do delivery,
+   * o rótulo da entrega,
+   * a chave primária da entrega,
    * o rótulo da campanha,
-   * o indicador dos deliveries processados,
+   * o indicador das entregas processadas,
    * a chave externa do link Campaign,
    * o indicador de taxa de erro.
 
@@ -250,7 +250,7 @@ Clique duas vezes na primeira query para editá-la e siga as etapas abaixo para 
 
 1. Clique no botão **[!UICONTROL Next]** duas vezes para chegar à etapa **[!UICONTROL Data filtering]**.
 
-   Adicione uma condição de filtragem para coletar apenas os deliveries vinculados a uma campanha.
+   Adicione uma condição de filtragem para coletar apenas as entregas vinculadas a uma campanha.
 
    A sintaxe desse filtro é a seguinte: &quot;Foreign key of the &#39;Campaigns&#39; link greater than 0&quot;.
 
@@ -262,15 +262,15 @@ Clique duas vezes na primeira query para editá-la e siga as etapas abaixo para 
 
 Nesta etapa, vamos configurar a primeira página do relatório. Para configurá-la, siga as etapas abaixo:
 
-1. Abra a atividade **[!UICONTROL Page]** e insira seu título, por exemplo **Deliveries** neste caso.
+1. Abra a atividade **[!UICONTROL Page]** e insira seu título, por exemplo **Entregas** neste caso.
 
    ![](assets/s_advuser_report_listgroup_003.png)
 
-1. Insira uma lista com um grupo na barra de ferramentas e insira o rótulo, por exemplo: lista de deliveries por campanha.
+1. Insira uma lista com um grupo na barra de ferramentas e insira o rótulo, por exemplo: lista de entregas por campanha.
 
    ![](assets/s_advuser_report_listgroup_004.png)
 
-1. Clique no link **[!UICONTROL Table data XPath...]** e selecione o link de delivery, ou seja, `[query/delivery]`.
+1. Clique no link **[!UICONTROL Table data XPath...]** e selecione o link de entrega, ou seja, `[query/delivery]`.
 
    ![](assets/s_advuser_report_listgroup_005.png)
 
@@ -282,7 +282,7 @@ Nesta etapa, vamos configurar a primeira página do relatório. Para configurá-
 
    ![](assets/s_advuser_report_listgroup_008.png)
 
-   Este grupo permitirá agrupar campanhas e os deliveries vinculadas a elas.
+   Este grupo permitirá agrupar campanhas e as entregas vinculadas a elas.
 
 1. Na janela do grupo, faça referência à **chave externa do link &quot;Campaign&quot;** e feche a janela.
 
@@ -292,11 +292,11 @@ Nesta etapa, vamos configurar a primeira página do relatório. Para configurá-
 
    ![](assets/s_advuser_report_listgroup_009.png)
 
-1. Edite a segunda célula da linha de detalhes e selecione os deliveries **[!UICONTROL Label]**.
+1. Edite a segunda célula da linha de detalhes e selecione as entregas **[!UICONTROL Label]**.
 
    ![](assets/s_advuser_report_listgroup_011.png)
 
-1. Edite o formato dessa célula e abra a guia **[!UICONTROL Click]**. Configure as opções adequadas para que, quando os usuários clicarem no nome de um delivery, ele seja aberto na mesma janela.
+1. Edite o formato dessa célula e abra a guia **[!UICONTROL Click]**. Configure as opções adequadas para que, quando os usuários clicarem no nome de uma entrega, ele seja aberto na mesma janela.
 
    ![](assets/s_advuser_report_listgroup_0111.png)
 
@@ -304,7 +304,7 @@ Nesta etapa, vamos configurar a primeira página do relatório. Para configurá-
 
    ![](assets/s_advuser_report_listgroup_0112.png)
 
-1. Na seção inferior da janela, clique em **[!UICONTROL Add]** e especifique o caminho **`/vars/selectedDelivery`** e a expressão **[!UICONTROL @deliveryId]** correspondente ao alias da chave primária do delivery, conforme definido na query criada anteriormente. Essa fórmula permite acessar o delivery selecionado.
+1. Na seção inferior da janela, clique em **[!UICONTROL Add]** e especifique o caminho **`/vars/selectedDelivery`** e a expressão **[!UICONTROL @deliveryId]** correspondente ao alias da chave primária da entrega, conforme definido na query criada anteriormente. Essa fórmula permite acessar a entrega selecionada.
 
    ![](assets/s_advuser_report_listgroup_010.png)
 
@@ -330,13 +330,13 @@ Nesta etapa, vamos configurar a primeira página do relatório. Para configurá-
 
    ![](assets/s_advuser_report_listgroup_016.png)
 
-1. Selecione essa célula para exibir uma barra de valores que representa a taxa de erro de delivery.
+1. Selecione essa célula para exibir uma barra de valores que representa a taxa de erro de entrega.
 
    Para fazer isso, acesse o formato da célula e vá para a guia **[!UICONTROL More]**. Selecione a entrada **[!UICONTROL Value bar]** na lista suspensa e selecione a opção **[!UICONTROL Hide the cell value]**.
 
    ![](assets/s_advuser_report_listgroup_023.png)
 
-   Agora é possível exibir uma renderização do relatório. Clique na guia **[!UICONTROL Preview]** e selecione a opção **[!UICONTROL Global]**: isso mostra a lista de todos os deliveries no banco de dados do Adobe Campaign que estão vinculados a uma campanha.
+   Agora é possível exibir uma renderização do relatório. Clique na guia **[!UICONTROL Preview]** e selecione a opção **[!UICONTROL Global]**: isso mostra a lista de todas as entregas no banco de dados do Adobe Campaign que estão vinculadas a uma campanha.
 
    ![](assets/s_advuser_report_listgroup_025.png)
 
@@ -350,7 +350,7 @@ Nesta etapa, vamos configurar a primeira página do relatório. Para configurá-
 
    ![](assets/s_advuser_report_listgroup_026.png)
 
-   Mesclar as duas primeiras células da linha de cabeçalho do grupo realinha o título da campanha e a lista de deliveries vinculadas a ela.
+   Mesclar as duas primeiras células da linha de cabeçalho do grupo realinha o título da campanha e a lista de entregas vinculadas a ela.
 
    ![](assets/s_advuser_report_listgroup_027.png)
 
@@ -360,7 +360,7 @@ Nesta etapa, vamos configurar a primeira página do relatório. Para configurá-
 
 ### Etapa 4 – Criação da segunda query {#step-4---create-the-second-query}
 
-Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe de um delivery quando o usuário do relatório clicar nele. Antes de adicionar a query, edite a página criada e habilite a transição de saída para que ela possa ser vinculada à query.
+Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe de uma entrega quando o usuário do relatório clicar nela. Antes de adicionar a query, edite a página criada e habilite a transição de saída para que ela possa ser vinculada à query.
 
 1. Adicione uma nova consulta após a atividade **[!UICONTROL Page]** e edite o schema: selecione o schema **[!UICONTROL Recipient delivery logs]**.
 
@@ -368,24 +368,24 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
 
 1. Edite a query e defina as colunas de saída. Para exibir o número de fornecimentos por domínio de email, é preciso:
 
-   * calcular a soma das chaves primárias para contar o número de logs do delivery:
+   * calcular a soma das chaves primárias para contar o número de logs da entrega:
 
      ![](assets/reporting_quick_start_query-2_count.png)
 
-   * coletar domínios de email dos recipients e informações do grupo neste campo: para fazer isso, selecione a opção **[!UICONTROL Group]** na coluna de nome de domínio.
+   * coletar domínios de email dos destinatários e informações do grupo neste campo: para fazer isso, selecione a opção **[!UICONTROL Group]** na coluna de nome de domínio.
 
    ![](assets/reporting_quick_start_query-2_filter.png)
 
    Vincule os seguintes aliases aos campos:
 
    * contagem (chave primária): **@count**
-   * Domínio de email (recipient): **@domain**
+   * Domínio de email (destinatário): **@domain**
 
      ![](assets/reporting_quick_start_query-2_alias.png)
 
 1. Clique duas vezes no botão **[!UICONTROL Next]**: isso leva à etapa **[!UICONTROL Data filtering]**.
 
-   Adicione uma condição de filtro para coletar apenas as informações vinculadas ao delivery selecionado.
+   Adicione uma condição de filtro para coletar apenas as informações vinculadas à entrega selecionada.
 
    A sintaxe é a seguinte: a chave estrangeira do link &quot;Delivery&quot; é igual ao valor da configuração `$([vars/selectedDelivery])`
 
@@ -429,7 +429,7 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
 
    ![](assets/s_advuser_report_listgroup_020.png)
 
-1. Em seguida, clique em **[!UICONTROL Advanced settings]** e selecione o link para os logs do delivery do recipient.
+1. Em seguida, clique em **[!UICONTROL Advanced settings]** e selecione o link para os logs da entrega do destinatário.
 
    ![](assets/s_advuser_report_listgroup_0201.png)
 
@@ -450,11 +450,11 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
 
 Para exibir o resultado dessa configuração, clique na guia **[!UICONTROL Preview]** e selecione a opção **[!UICONTROL Global]**.
 
-A primeira página do relatório detalha a lista de todos os deliveries incluídos no banco de dados.
+A primeira página do relatório detalha a lista de todas as entregas incluídas no banco de dados.
 
 ![](assets/s_advuser_report_listgroup_021.png)
 
-Se clicar no link de um desses deliveries, ele mostrará o gráfico com a análise dos domínios de email para esse delivery. Agora, essa é a segunda página do relatório e é possível retornar à página anterior clicando no botão apropriado.
+Se clicar no link de uma dessas entregas, ele mostrará o gráfico com a análise dos domínios de email para essa entrega. Agora, essa é a segunda página do relatório e é possível retornar à página anterior clicando no botão apropriado.
 
 ![](assets/s_advuser_report_listgroup_022.png)
 

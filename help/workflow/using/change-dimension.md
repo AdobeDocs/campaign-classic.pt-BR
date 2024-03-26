@@ -7,7 +7,7 @@ feature: Workflows, Targeting Activity
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '378'
 ht-degree: 100%
 
 ---
@@ -44,7 +44,7 @@ Para configurar a atividade de alteração de dimensão, aplique as seguintes et
 
    As setas azuis permitem definir a prioridade de processamento duplicatas.
 
-   No exemplo acima, os recipient serão desduplicados em seu endereço de e-mail primeiro e, em seguida, em seu número de conta, se necessário.
+   No exemplo acima, os destinatário serão desduplicados em seu endereço de e-mail primeiro e, em seguida, em seu número de conta, se necessário.
 
 1. A guia **[!UICONTROL Result]** permite adicionar mais informações.
 
@@ -58,7 +58,7 @@ Para configurar a atividade de alteração de dimensão, aplique as seguintes et
      >
      >Para obter mais informações sobre como criar e gerenciar colunas adicionais, consulte [Adição de dados](query.md#adding-data).
 
-   * Selecione a dimensão do target anterior (antes da troca de eixo) e selecione **[!UICONTROL Zip Code]** na árvore secundária **[!UICONTROL Location]** do recipient e clique em **[!UICONTROL Edit expression]**.
+   * Selecione a dimensão do target anterior (antes da troca de eixo) e selecione **[!UICONTROL Zip Code]** na árvore secundária **[!UICONTROL Location]** do destinatário e clique em **[!UICONTROL Edit expression]**.
 
      ![](assets/wf_change-dimension_sample_02.png)
 

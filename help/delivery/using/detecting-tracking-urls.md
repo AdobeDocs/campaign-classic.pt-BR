@@ -6,7 +6,7 @@ feature: Monitoring
 role: User, Developer, Data Engineer
 exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 ## Exemplo de não detecção
 
-`<%= getURL("http://mynewsletter.com") %>` funciona e envia o conteúdo real da página da Web por email para os recipients. Mas nenhum dos links é rastreado. O motivo para isso é que o MTA executa `"<%=getURL(..."` para cada email antes do envio. Pode ser diferente para cada recipient. Portanto, o Adobe Campaign não pode saber os URLs para rastreamento e atribuir uma ID de tag a eles.
+`<%= getURL("http://mynewsletter.com") %>` funciona e envia o conteúdo real da página da Web por email para os destinatários. Mas nenhum dos links é rastreado. O motivo para isso é que o MTA executa `"<%=getURL(..."` para cada email antes do envio. Pode ser diferente para cada destinatário. Portanto, o Adobe Campaign não pode saber os URLs para rastreamento e atribuir uma ID de tag a eles.
 
-Quando a página para download é a mesma para todos os recipients, a prática recomendada é fazer o seguinte:
+Quando a página para download é a mesma para todos os destinatários, a prática recomendada é fazer o seguinte:
 
 `<%@ include url="http://mynewsletter.com" %>`
 
@@ -42,4 +42,4 @@ Por exemplo, a sintaxe `<a href="http://<%=myURL%>">` não é **segura** e deve 
 * O Tidy pode corrigir incorretamente alguns links, o que pode acontecer aleatoriamente. O sintoma típico é um item de HTML que está visível nas provas de email, mas não na pré-visualização.
 * Utilizar o recurso de escape no URL é problemático. Alguns caracteres no URL podem causar problemas.
 * Não é possível ter um parâmetro com o nome ID em conflito com o parâmetro no URL de redirecionamento.
-* O interesse do rastreamento é então limitado às estatísticas no delivery, já que o Adobe Campaign rastreia de forma indiferente todos os valores possíveis de &quot;myURL&quot;.
+* O interesse do rastreamento é então limitado às estatísticas na entrega, já que o Adobe Campaign rastreia de forma indiferente todos os valores possíveis de &quot;myURL&quot;.

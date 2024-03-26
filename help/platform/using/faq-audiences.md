@@ -10,7 +10,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '261'
 ht-degree: 100%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 100%
 
 Saiba como direcionar uma população e gerenciar públicos no Adobe Campaign.
 
-## Como criar recipients? {#how-to-create-recipients-}
+## Como criar destinatários? {#how-to-create-recipients-}
 
-É possível importar recipients ou criá-los manualmente usando o console do cliente do Campaign. Leia [esta seção](../../platform/using/about-profiles.md) e saiba como criar e gerenciar perfis no Campaign.
+É possível importar destinatários ou criá-los manualmente usando o console do cliente do Campaign. Leia [esta seção](../../platform/using/about-profiles.md) e saiba como criar e gerenciar perfis no Campaign.
 
 ## Como importar perfis? {#how-to-import-profiles-}
 
@@ -38,7 +38,7 @@ Você pode [usar fluxos de trabalho para criar a população alvo](../../campaig
 
 ## Como posso criar uma lista de perfis? {#how-can-i-create-a-list-of-profiles-}
 
-Uma lista é um conjunto estático de recipients que pode ser direcionado em ações de delivery e atualizado durante operações de importação ou execução de workflow. Por exemplo, uma população extraída do banco de dados por uma consulta pode fornecer uma lista.
+Uma lista é um conjunto estático de destinatários que pode ser direcionado em ações de entrega e atualizado durante operações de importação ou execução de workflow. Por exemplo, uma população extraída do banco de dados por uma consulta pode fornecer uma lista.
 
 [Clique aqui para saber mais](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
@@ -46,7 +46,7 @@ Uma lista é um conjunto estático de recipients que pode ser direcionado em aç
 
 ## Como posso excluir informações em duplicidade de uma população antes de enviar uma mensagem? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
-É possível usar um workflow para excluir informações duplicadas do público-alvo de um delivery, evitando assim o envio repetido da mensagem a um mesmo recipient.
+É possível usar um workflow para excluir informações duplicadas do público-alvo de uma entrega, evitando assim o envio repetido da mensagem a um mesmo destinatário.
 
 [Clique aqui para saber mais](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery) com um exemplo.
 

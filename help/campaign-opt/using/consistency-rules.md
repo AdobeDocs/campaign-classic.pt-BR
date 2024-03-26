@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Typology Rules, Campaigns
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
 source-git-commit: a37e67ef3f348737a099dab00a84b6854bd52e57
-workflow-type: ht
-source-wordcount: '776'
+workflow-type: tm+mt
+source-wordcount: '780'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## Sobre as regras de consistência {#about-consistency-rules}
 
-O Adobe Campaign garante comunicações consistentes graças a um conjunto de regras contidas nas tipologias de campanha. Seu objetivo é controlar as entregas enviadas aos recipients, como volume, natureza, relevância etc.
+O Adobe Campaign garante comunicações consistentes graças a um conjunto de regras contidas nas tipologias de campanha. Seu objetivo é controlar as entregas enviadas aos destinatários, como volume, natureza, relevância etc.
 
 As regras de **Capacidade** podem evitar sobrecarga na plataforma relacionada com a entrega de mensagens. Como exemplo, as ofertas especiais que contêm um link de download não devem ser enviadas para muitas pessoas de uma só vez, para evitar a saturação do servidor; as campanhas por telefone não devem exceder a capacidade de processamento das centrais de atendimento etc. Para obter mais informações, consulte [Controlar capacidade](#controlling-capacity).
 

@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 100%
 
@@ -146,7 +146,7 @@ Na janela de seleção de campo, você pode escolher entre os seguintes dados:
 
 ![](assets/s_ncs_admin_survey_condition_select.png)
 
-* A árvore principal contém os parâmetros do contexto de formulário. Os parâmetros padrão incluem o Identificador (que corresponde ao identificador criptografado do recipient), Idioma e Origem.
+* A árvore principal contém os parâmetros do contexto de formulário. Os parâmetros padrão incluem o Identificador (que corresponde ao identificador criptografado do destinatário), Idioma e Origem.
 
   Para obter mais informações, consulte esta [página](defining-web-forms-properties.md#form-url-parameters).
 

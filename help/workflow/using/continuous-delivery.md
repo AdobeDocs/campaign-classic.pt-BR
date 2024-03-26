@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Delivery contínuo
-description: Delivery contínuo
+title: Entrega contínua
+description: Entrega contínua
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '366'
 ht-degree: 100%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 100%
 
 
 
-Uma ação do tipo **Delivery contínuo** permite adicionar novos recipients a um delivery existente. Esse tipo de delivery evita que você tenha que criar um novo delivery toda vez: este modo é frequentemente mais eficiente, em especial para alertas de baixo volume ou notificações enviadas quando necessário.
+Uma ação do tipo **Entrega contínua** permite adicionar novos destinatários a uma entrega existente. Esse tipo de entrega evita que você tenha que criar uma nova entrega toda vez: este modo é frequentemente mais eficiente, em especial para alertas de baixo volume ou notificações enviadas quando necessário.
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#continuous-delivery-video)
 
-Em um nível de template de delivery, você pode especificar um script para calcular o rótulo (e a pasta da campanha) do delivery associado. Se o script calcula um delivery que ainda não existe, ele será criado imediatamente.
+Em um nível de template de entrega, você pode especificar um script para calcular o rótulo (e a pasta da campanha) da entrega associada. Se o script calcula uma entrega que ainda não existe, ele será criado imediatamente.
 
 ![](assets/edit_diffusion_fil.png)
 
@@ -45,23 +45,23 @@ Apenas quando a opção **[!UICONTROL Specified by the inbound event]** está se
 * schema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante do delivery em tempo real. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do público-alvo, **[!UICONTROL schema]** é o esquema do público (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da entrega em tempo real. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do público-alvo, **[!UICONTROL schema]** é o esquema do público (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.
 
-## Como configurar um delivery contínuo
+## Como configurar uma entrega contínua
 
-Esta seção explica como configurar um delivery contínuo.
+Esta seção explica como configurar uma entrega contínua.
 
-O **delivery contínuo** permite adicionar novos recipients a um delivery existente, o que evita a criação de um novo delivery cada vez que um novo recipient for adicionado. Você pode atualizar o criativo diretamente no workflow da campanha e ele atualizará o modelo na pasta Recursos do template do delivery.
+A **entrega contínua** permite adicionar novos destinatários a uma entrega existente, o que evita a criação de uma nova entrega cada vez que um novo destinatário for adicionado. Você pode atualizar o criativo diretamente no workflow da campanha e ele atualizará o modelo na pasta Recursos do template da entrega.
 
-Um delivery contínuo criará um ÚNICO delivery. Logs do delivery (broadLog) e logs de rastreamento que fazem referência a um delivery serão adicionados a cada execução.
+Uma entrega contínua criará uma ÚNICA entrega. Logs da entrega (broadLog) e logs de rastreamento que fazem referência a uma entrega serão adicionados a cada execução.
 
 ![Delivery contínuo](assets/delivery_continuous.jpg)
 
 ## Tutorial em vídeo {#continuous-delivery-video}
 
-Este vídeo mostra como configurar um delivery contínuo com um query incremental.
+Este vídeo mostra como configurar uma entrega contínua com um query incremental.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 

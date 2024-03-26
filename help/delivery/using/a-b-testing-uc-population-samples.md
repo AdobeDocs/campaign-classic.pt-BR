@@ -8,8 +8,8 @@ feature: A/B Testing
 role: User
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '184'
+workflow-type: tm+mt
+source-wordcount: '186'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 100%
 
   ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* Clique no link **[!UICONTROL Edit query]** e selecione o tipo de recipients que deseja direcionar.
+* Clique no link **[!UICONTROL Edit query]** e selecione o tipo de destinatários que deseja direcionar.
 
   ![](assets/use_case_abtesting_createrecipients_002.png)
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ## Configurar a atividade de divisão {#configuring-the-split-activity}
 
-Esta atividade permite criar várias populações: a que recebe a delivery A, aquela que recebe a delivery B e a população restante. A utilização de seleção aleatória permite atingir apenas parte da população de cada delivery.
+Esta atividade permite criar várias populações: a que recebe a entrega A, aquela que recebe a entrega B e a população restante. A utilização de seleção aleatória permite atingir apenas parte da população de cada entrega.
 
 1. Criação da população A:
 

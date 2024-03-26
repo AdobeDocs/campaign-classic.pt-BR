@@ -198,7 +198,7 @@ Siga as etapas abaixo:
 
 ### Criação de um ambiente para contatos anônimos {#creating-an-environment-for-anonymous-contacts}
 
-1. Crie um ambiente de oferta para interações de entrada anônimas por meio do assistente de mapeamento de delivery (mapeamento de **Visitantes** ). Para obter mais informações, consulte [Criação de um ambiente de ofertas](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+1. Crie um ambiente de oferta para interações de entrada anônimas por meio do assistente de mapeamento de entrega (mapeamento de **Visitantes** ). Para obter mais informações, consulte [Criação de um ambiente de ofertas](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
    ![](assets/offer_env_anonymous_003.png)
 
@@ -302,7 +302,7 @@ Para criar os dois espaços de oferta, realize o mesmo procedimento dos espaços
 
 ### Especificação das configurações avançadas dos espaços de ofertas identificados {#specifying-the-advanced-settings-of-the-identified-offer-spaces}
 
-Neste exemplo, a identificação de contato ocorre graças ao endereço de email no banco de dados do Adobe Campaign. Para adicionar o email do recipient ao espaço, siga o seguinte processo:
+Neste exemplo, a identificação de contato ocorre graças ao endereço de email no banco de dados do Adobe Campaign. Para adicionar o email do destinatário ao espaço, siga o seguinte processo:
 
 1. No ambiente identificado, vá para a pasta de espaço de ofertas.
 1. Selecione o espaço de ofertas **Best Offer** e clique em **[!UICONTROL Advanced parameters]**.
@@ -313,7 +313,7 @@ Neste exemplo, a identificação de contato ocorre graças ao endereço de email
 
    ![](assets/offer_inbound_fallback_example_046.png)
 
-1. Clique em **[!UICONTROL Edit expression]**, vá para a tabela de recipients e selecione o campo **[!UICONTROL Email]**.
+1. Clique em **[!UICONTROL Edit expression]**, vá para a tabela de destinatários e selecione o campo **[!UICONTROL Email]**.
 
    ![](assets/offer_inbound_fallback_example_047.png)
 
@@ -396,7 +396,7 @@ Para configurar esses espaços de ofertas na página HTML do site, siga o seguin
 
    ![](assets/offer_inbound_fallback_example_043.png)
 
-   A identificação da pessoa pode ser baseada em um cookie de navegador, um parâmetro de leitura na URL, e-mail ou identificador da pessoa. Se um campo da tabela de recipients diferente da chave primária for usado, ele precisará ser definido nos parâmetros avançados do espaço (consulte [Especificar as configurações avançadas dos espaços de ofertas identificados](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
+   A identificação da pessoa pode ser baseada em um cookie de navegador, um parâmetro de leitura na URL, e-mail ou identificador da pessoa. Se um campo da tabela de destinatários diferente da chave primária for usado, ele precisará ser definido nos parâmetros avançados do espaço (consulte [Especificar as configurações avançadas dos espaços de ofertas identificados](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
 
 1. Insira a URL de chamada.
 
@@ -408,4 +408,4 @@ Ao abrir a página da Web, o script permite chamar o mecanismo do Interaction pa
 
 Neste exemplo, o mecanismo reconhece o ambiente identificado (**EnvNeobankIdnRecip**). Identifica o espaço de oferta (**OSWebBestOfferIdentified**) e a categoria **Best Offer** (**CatBestOffer**) para os primeiros e segundo espaços de oferta na página da Web, bem como o espaço de oferta (**OSWebPartnerIdentified**) e a categoria **Partner** (**CatPartner**) para o terceiro espaço de oferta do site.
 
-Se o mecanismo não puder identificar o recipient, ele alternará para os espaços de oferta anônimos referenciados nos espaços de oferta identificados e em direção às categorias anônimas (**CatPartner** e **CatPartnerAnonym**) conforme especificado no script.
+Se o mecanismo não puder identificar o destinatário, ele alternará para os espaços de oferta anônimos referenciados nos espaços de oferta identificados e em direção às categorias anônimas (**CatPartner** e **CatPartnerAnonym**) conforme especificado no script.

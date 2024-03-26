@@ -8,7 +8,7 @@ feature: Deliverability
 role: User
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 100%
 
@@ -18,19 +18,19 @@ ht-degree: 100%
 
 Quando a mensagem estiver pronta, certifique-se de que seu conteúdo está sendo exibido corretamente, em todos os dispositivos, e de que não contém erros, como personalização incorreta ou links quebrados.
 
-Antes de enviar a mensagem, verifique também se os parâmetros e a configuração estão consistentes com o delivery.
+Antes de enviar a mensagem, verifique também se os parâmetros e a configuração estão consistentes com a entrega.
 
 ## Importância da validação {#validation-is-key}
 
-Antes de enviar um delivery, você precisa garantir que seus recipients receberão a mensagem que você realmente deseja enviar. Para fazer isso é necessário validar o conteúdo da mensagem e os parâmetros do delivery.
+Antes de enviar uma entrega, você precisa garantir que seus destinatários receberão a mensagem que você realmente deseja enviar. Para fazer isso é necessário validar o conteúdo da mensagem e os parâmetros da entrega.
 
-Esta etapa permite detectar e corrigir possíveis erros antes de fazer um delivery ao público-alvo principal.
+Esta etapa permite detectar e corrigir possíveis erros antes de fazer uma entrega ao público-alvo principal.
 
-As etapas para validar um delivery são apresentadas [nesta seção](steps-validating-the-delivery.md).
+As etapas para validar uma entrega são apresentadas [nesta seção](steps-validating-the-delivery.md).
 
 ## Renderização da caixa de entrada {#inbox-and-email-rendering}
 
-A renderização da caixa de entrada permite pré-visualizar as mensagens nos principais clientes de email, verificar o conteúdo e a reputação e descobrir como os recipients estão lendo as mensagens.
+A renderização da caixa de entrada permite pré-visualizar as mensagens nos principais clientes de email, verificar o conteúdo e a reputação e descobrir como os destinatários estão lendo as mensagens.
 
 **Dicas**:
 
@@ -48,11 +48,11 @@ Saiba mais [nesta seção](steps-validating-the-delivery.md#sending-a-proof).
 
 ## Configurar entregas de teste A/B {#a-b-testing-deliveries}
 
-Se você tiver vários conteúdos para um delivery de email, poderá usar o teste A/B para descobrir qual versão terá o maior impacto na população direcionada.
+Se você tiver vários conteúdos para uma entrega de email, poderá usar o teste A/B para descobrir qual versão terá o maior impacto na população direcionada.
 
 **Dicas**:
 
-* Envie as diferentes versões para alguns dos seus recipients
+* Envie as diferentes versões para alguns dos seus destinatários
 
 * Selecione aquela com a maior taxa de sucesso e envie-a para o restante do seu público-alvo
 
@@ -60,7 +60,7 @@ Saiba mais [nesta seção](get-started-a-b-testing.md).
 
 ## Verificar se a mensagem foi entregue {#make-sure-your-message-is-delivered}
 
-Como etapa final, maximize suas chances e aproveite o potencial do Adobe Campaign Classic para garantir que sua mensagem seja de fato entregue aos recipients relevantes.
+Como etapa final, maximize suas chances e aproveite o potencial do Adobe Campaign Classic para garantir que sua mensagem seja de fato entregue aos destinatários relevantes.
 
 ### Passar por um processo de validação
 
@@ -68,23 +68,23 @@ Você pode definir um processo de validação completo, envolvendo operadores e 
 
 ### Usar ondas
 
-Você pode aumentar progressivamente o volume enviado usando ondas. Esse aumento evitará que sua mensagem seja marcada como spam ou pode ser usado quando você quiser restringir o número de mensagens diárias. Ao usar ondas, você pode dividir os deliveries em vários lotes, em vez de enviar grandes volumes de mensagens ao mesmo tempo. Saiba mais [nesta seção](steps-sending-the-delivery.md#sending-using-multiple-waves).
+Você pode aumentar progressivamente o volume enviado usando ondas. Esse aumento evitará que sua mensagem seja marcada como spam ou pode ser usado quando você quiser restringir o número de mensagens diárias. Ao usar ondas, você pode dividir as entregas em vários lotes, em vez de enviar grandes volumes de mensagens ao mesmo tempo. Saiba mais [nesta seção](steps-sending-the-delivery.md#sending-using-multiple-waves).
 
 ### Priorizar mensagens
 
-Você pode definir a ordem de envio para seus deliveries, informando o nível de prioridade. Para fazer isso:
+Você pode definir a ordem de envio para suas entregas, informando o nível de prioridade. Para fazer isso:
 
-1. Edite as propriedades do delivery e selecione a guia **[!UICONTROL Delivery]**.
+1. Edite as propriedades da entrega e selecione a guia **[!UICONTROL Delivery]**.
 
-1. Defina o nível de prioridade do delivery em uma escala de **[!UICONTROL Very low]** a **[!UICONTROL Very high]**.
+1. Defina o nível de prioridade da entrega em uma escala de **[!UICONTROL Very low]** a **[!UICONTROL Very high]**.
 
 >[!NOTE]
 >
->Não é possível definir a ordem de envio de mensagens a partir de um delivery.
+>Não é possível definir a ordem de envio de mensagens a partir de uma entrega.
 
 ### Configurar afinidades de IP
 
-Para controlar melhor o tráfego SMTP de saída, é possível gerenciar afinidades definindo quais endereços IP específicos podem ser usados para cada afinidade. Isso permite a restrição do número de emails para envios específicos em máquinas ou endereços de saída. Você pode, por exemplo, usar uma afinidade por país ou subdomínio. Em seguida, é possível criar uma tipologia por país e vincular cada afinidade à tipologia correspondente.
+Para controlar melhor o tráfego SMTP de saída, é possível gerenciar afinidades definindo quais endereços IP específicos podem ser usados para cada afinidade. Isso permite a restrição do número de emails para entregas específicas em máquinas ou endereços de saída. Você pode, por exemplo, usar uma afinidade por país ou subdomínio. Em seguida, é possível criar uma tipologia por país e vincular cada afinidade à tipologia correspondente.
 
 Você pode:
 
@@ -92,11 +92,11 @@ Você pode:
 
 * Informar os endereços IP que podem ser usados em cada elemento IPAffinity. [Saiba mais](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* Na [tipologia](../../campaign-opt/using/about-campaign-typologies.md) de sua escolha, use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao servidor do delivery (MTA) que gerencia essa afinidade. [Saiba mais](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
+* Na [tipologia](../../campaign-opt/using/about-campaign-typologies.md) de sua escolha, use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular entregas ao servidor da entrega (MTA) que gerencia essa afinidade. [Saiba mais](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
-* Depois que o email for enviado, verifique o cabeçalho para saber a partir de qual endereço IP o delivery foi enviado. O administrador de email deve ajudar você a obter as informações do cabeçalho.
+* Depois que o email for enviado, verifique o cabeçalho para saber a partir de qual endereço IP a entrega foi enviada. O administrador de email deve ajudar você a obter as informações do cabeçalho.
 
-* Para deliveries de SMS, verifique se o canal SMS tem uma afinidade dedicada limitada a **um** container do servidor de aplicativos. [Saiba mais](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+* Para entregas de SMS, verifique se o canal SMS tem uma afinidade dedicada limitada a **um** container do servidor de aplicativos. [Saiba mais](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Você pode:
 
 ### Usar tipologias
 
-Você pode usar as regras de tipologia para excluir parte do público-alvo com base em critérios específicos. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa. Por exemplo, você pode filtrar os recipients menores de idade do público-alvo do seu informativo. Saiba mais [neste exemplo](../../campaign-opt/using/filtering-rules.md).
+Você pode usar as regras de tipologia para excluir parte do público-alvo com base em critérios específicos. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa. Por exemplo, você pode filtrar os destinatários menores de idade do público-alvo do seu informativo. Saiba mais [neste exemplo](../../campaign-opt/using/filtering-rules.md).
 
 ### Evitar anexos
 

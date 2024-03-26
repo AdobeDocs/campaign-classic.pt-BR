@@ -19,7 +19,7 @@ ht-degree: 100%
 
 
 
-Os dados vinculados ao perfil de um recipient podem ser atualizados manualmente ou automaticamente.
+Os dados vinculados ao perfil de um destinatário podem ser atualizados manualmente ou automaticamente.
 
 ## Configurar uma atualização automática {#setting-up-an-automatic-update}
 
@@ -27,7 +27,7 @@ Uma atualização automática pode ser configurada por meio de um fluxo de traba
 
 ## Executar uma atualização em massa {#performing-a-mass-update}
 
-Para executar atualizações manuais, clique com o botão direito do mouse nos recipients selecionados para usar o menu de atalho **[!UICONTROL Actions]** ou use o ícone **[!UICONTROL Actions]**.
+Para executar atualizações manuais, clique com o botão direito do mouse nos destinatários selecionados para usar o menu de atalho **[!UICONTROL Actions]** ou use o ícone **[!UICONTROL Actions]**.
 
 ![](assets/s_ncs_user_action_icon.png)
 
@@ -51,7 +51,7 @@ Selecione ou insira os valores para aplicar aos perfis que serão atualizados.
 
 ![](assets/s_ncs_user_update_wizard01_12.png)
 
-Clique em **[!UICONTROL Distribution of values]** para exibir a distribuição de valores do campo selecionado para os recipients presentes na pasta atual (não apenas os recipients afetados pela atualização).
+Clique em **[!UICONTROL Distribution of values]** para exibir a distribuição de valores do campo selecionado para os destinatários presentes na pasta atual (não apenas os destinatários afetados pela atualização).
 
 ![](assets/s_ncs_user_update_wizard01_2.png)
 
@@ -69,7 +69,7 @@ As informações relativas à execução da atualização são exibidas na seç�
 
 ### Mesclar dados {#merge-data}
 
-Selecione **[!UICONTROL Merge selected lines...]** para iniciar a mesclagem de dois perfis de recipient. Os perfis a serem mesclados devem ser selecionados antes de escolher esta opção. A mesclagem é configurada e iniciada usando um assistente.
+Selecione **[!UICONTROL Merge selected lines...]** para iniciar a mesclagem de dois perfis de destinatário. Os perfis a serem mesclados devem ser selecionados antes de escolher esta opção. A mesclagem é configurada e iniciada usando um assistente.
 
 O assistente exibe os valores a serem recuperados para cada campo preenchido em um ou outro perfil de origem. Se um ou mais campos nos perfis que serão mesclados tiverem valores diferentes, eles serão exibidos na seção **[!UICONTROL List of conflicts]** É possível então selecionar o perfil padrão usando os botões de opção abaixo da lista, como no exemplo a seguir:
 
@@ -113,16 +113,16 @@ Na maioria dos casos, os destinatários assinam um boletim informativo por meio 
    >
    >Este editor permite criar um novo serviço: clique no botão **[!UICONTROL Create]**.
 
-1. Você pode **[!UICONTROL Send a confirmation message]** para recipients. O conteúdo desta mensagem pode ser configurado no cenário de assinatura vinculado ao serviço selecionado.
+1. Você pode **[!UICONTROL Send a confirmation message]** para destinatários. O conteúdo desta mensagem pode ser configurado no cenário de assinatura vinculado ao serviço selecionado.
 1. Clique no botão **[!UICONTROL Start]** para executar o processo de assinatura.
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
 
-A seção superior da janela permite monitorar o processo de execução. O botão **[!UICONTROL Stop]** permite interromper o processo. No entanto, os recipients já processados serão inscritos.
+A seção superior da janela permite monitorar o processo de execução. O botão **[!UICONTROL Stop]** permite interromper o processo. No entanto, os destinatários já processados serão inscritos.
 
 Se você desmarcar a opção **[!UICONTROL Do not keep a trace of this job in the database]**, poderá selecionar (ou criar) a pasta de execução onde as informações desse processo serão armazenadas.
 
-Para verificar o processo, acesse a guia **[!UICONTROL Subscriptions]** nos perfis dos recipients relacionados a esta operação, ou à guia **[!UICONTROL Subscriptions]** acessada por meio do nó **[!UICONTROL Profiles and Targets > Services and Subscriptions]**.
+Para verificar o processo, acesse a guia **[!UICONTROL Subscriptions]** nos perfis dos destinatários relacionados a esta operação, ou à guia **[!UICONTROL Subscriptions]** acessada por meio do nó **[!UICONTROL Profiles and Targets > Services and Subscriptions]**.
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 

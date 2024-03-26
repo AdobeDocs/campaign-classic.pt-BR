@@ -10,7 +10,7 @@ feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '444'
 ht-degree: 100%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 100%
 
 
 
-Aqui queremos criar uma consulta com um campo calculado do tipo **[!UICONTROL Enumerations]**. Este campo gerará uma coluna adicional na janela de visualização de dados. Essa coluna especificará os valores numéricos retornados como resultado para cada recipient (0, 1 e 2). Um gênero será atribuído a cada valor na nova coluna: &quot;Male&quot; para &quot;1&quot;, &quot;Female&quot; para &quot;2&quot; ou &quot;Not indicated&quot; se o valor for igual a &quot;0&quot;.
+Aqui queremos criar uma consulta com um campo calculado do tipo **[!UICONTROL Enumerations]**. Este campo gerará uma coluna adicional na janela de visualização de dados. Essa coluna especificará os valores numéricos retornados como resultado para cada destinatário (0, 1 e 2). Um gênero será atribuído a cada valor na nova coluna: &quot;Male&quot; para &quot;1&quot;, &quot;Female&quot; para &quot;2&quot; ou &quot;Not indicated&quot; se o valor for igual a &quot;0&quot;.
 
 * Qual tabela precisa ser selecionada?
 
-  A tabela de recipient (nms:recipient)
+  A tabela de destinatário (nms:recipient)
 
 * Campos a serem selecionados na coluna de saída?
 
@@ -31,18 +31,18 @@ Aqui queremos criar uma consulta com um campo calculado do tipo **[!UICONTROL En
 
 * Critérios que serão usados para filtrar a informação?
 
-  O idioma  do recipient.
+  O idioma do destinatário.
 
 Siga as etapas abaixo:
 
-1. Abra o editor de query genérico e selecione a tabela Recipient (**[!UICONTROL nms:recipient]**).
+1. Abra o editor de query genérico e selecione a tabela Destinatário (**[!UICONTROL nms:recipient]**).
 1. Na janela **[!UICONTROL Data to extract]**, selecione **[!UICONTROL Last name]**, **[!UICONTROL First name]** e **[!UICONTROL Gender]**.
 
    ![](assets/query_editor_nveau_73.png)
 
 1. Na janela **[!UICONTROL Sorting]**, clique em **[!UICONTROL Next]**: não é necessária nenhuma classificação para este exemplo.
 1. Em **[!UICONTROL Data filtering]**, selecione **[!UICONTROL Filtering conditions]**.
-1. Na janela **[!UICONTROL Target element]**, defina uma condição de filtro para coletar recipients que falam inglês.
+1. Na janela **[!UICONTROL Target element]**, defina uma condição de filtro para coletar destinatários que falam inglês.
 
    ![](assets/query_editor_nveau_74.png)
 
@@ -56,7 +56,7 @@ Siga as etapas abaixo:
 
    ![](assets/query_editor_nveau_76.png)
 
-   Defina os valores **Source** e **Destination** : o valor de destino facilita a leitura da query. Esta query deve retornar o sexo do recipient e o resultado será 0, 1 ou 2.
+   Defina os valores **Source** e **Destination** : o valor de destino facilita a leitura da query. Esta query deve retornar o sexo do destinatário e o resultado será 0, 1 ou 2.
 
    Para cada linha &quot;source-destination&quot; a ser inserida, clique em **[!UICONTROL Add]** em **[!UICONTROL List of enumeration values]**:
 
@@ -84,6 +84,6 @@ Siga as etapas abaixo:
 
    ![](assets/query_editor_nveau_79.png)
 
-   Vamos tomar outro exemplo e dizer que o valor de enumeração &quot;2&quot; não é inserido. Selecione a função **[!UICONTROL Generate an error and reject the line]**: todos os gêneros &quot;2&quot; dos recipients criarão anomalias e as outras informações na linha (nome e sobrenome etc.) não serão exportadas. Um log de erros é exibido no campo **[!UICONTROL Logs generated during export]** da janela de pré-visualização de dados. Este log indica que o valor de enumeração &quot;2&quot; não foi inserido.
+   Vamos tomar outro exemplo e dizer que o valor de enumeração &quot;2&quot; não é inserido. Selecione a função **[!UICONTROL Generate an error and reject the line]**: todos os gêneros &quot;2&quot; dos destinatários criarão anomalias e as outras informações na linha (nome e sobrenome etc.) não serão exportadas. Um log de erros é exibido no campo **[!UICONTROL Logs generated during export]** da janela de pré-visualização de dados. Este log indica que o valor de enumeração &quot;2&quot; não foi inserido.
 
    ![](assets/query_editor_nveau_80.png)

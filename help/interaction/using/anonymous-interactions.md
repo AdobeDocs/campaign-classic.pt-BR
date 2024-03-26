@@ -10,7 +10,7 @@ topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '414'
 ht-degree: 100%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 100%
 
 
 
-![](assets/do-not-localize/how-to-video.png) Assista a este [vídeo](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) para obter uma visão geral de como as ofertas são fornecidas para alvos identificados e anônimos.
+![](assets/do-not-localize/how-to-video.png) Assista a este [vídeo](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) para obter uma visão geral de como as ofertas são entregues para alvos identificados e anônimos.
 
 ## Direcionamento e armazenamento de um ambiente para interações anônimas {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
-Por padrão, o Interaction vem com um ambiente pré-configurado para direcionar à tabela de recipients (ofertas identificadas). Se quiser direcionar a outra tabela (tabela de visitantes para ofertas anônimas ou uma tabela de recipients específica), é preciso usar o assistente de target mapping para criar o ambiente. Para obter mais informações, consulte [Criação de um ambiente de ofertas](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+Por padrão, o Interaction vem com um ambiente pré-configurado para direcionar à tabela de destinatários (ofertas identificadas). Se quiser direcionar a outra tabela (tabela de visitantes para ofertas anônimas ou uma tabela de destinatários específica), é preciso usar o assistente de target mapping para criar o ambiente. Para obter mais informações, consulte [Criação de um ambiente de ofertas](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 Ao criar um ambiente anônimo através do assistente de criação de mapeamento, a caixa **[!UICONTROL Environment dedicated to incoming anonymous interactions]** é automaticamente marcada na guia **[!UICONTROL General]** do ambiente.
 

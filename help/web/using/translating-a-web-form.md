@@ -8,8 +8,8 @@ feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1575'
-ht-degree: 100%
+source-wordcount: '1547'
+ht-degree: 99%
 
 ---
 
@@ -134,7 +134,7 @@ Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translat
 >
 >Os nomes dos arquivos de exportação são gerados automaticamente. Se você realizar a mesma exportação várias vezes, substituirá os arquivos existentes pelos novos. Se precisar manter os arquivos anteriores, altere o **[!UICONTROL Target folder]**, então clique em **[!UICONTROL Start]** novamente para executar a exportação.
 
-Quando você exporta arquivos no **formato CSV**, cada idioma é vinculado a status de status e aprovação. A coluna **Approve?** permite aprovar uma tradução. Essa coluna pode conter os valores **Sim** ou **Não**. Como para o editor integrado (consulte [Gerenciamento de traduções no editor](#managing-translations-in-the-editor)), a aprovação de traduções é opcional e não bloqueia o processo.
+Quando você exporta arquivos no **formato CSV**, cada idioma é vinculado a status de status e aprovação. A variável **Aprovar?** permite aprovar uma tradução. Essa coluna pode conter os valores **Sim** ou **Não**. Como para o editor integrado (consulte [Gerenciamento de traduções no editor](#managing-translations-in-the-editor)), a aprovação de traduções é opcional e não bloqueia o processo.
 
 ### Importação de arquivos {#importing-files}
 

@@ -7,7 +7,7 @@ feature: Workflows
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '885'
 ht-degree: 100%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 100%
 
 ## Introdução {#introduction}
 
-Este caso de uso apresenta como planejar o envio de um e-mail recorrente para uma lista de recipients no dia de seus aniversários.
+Este caso de uso apresenta como planejar o envio de um e-mail recorrente para uma lista de destinatários no dia de seus aniversários.
 
 Para configurar esse caso de uso, criamos o seguinte workflow para construção do target:
 
 ![](assets/birthday-workflow_usecase_1.png)
 
-Esse workflow (execução diária) seleciona todos os recipients que fazem aniversário na data atual.
+Esse workflow (execução diária) seleciona todos os destinatários que fazem aniversário na data atual.
 
 ![](assets/do-not-localize/how-to-video.png) Esse caso de uso também pode ser encontrado no formato de vídeo. Para obter mais informações, consulte o vídeo [Criação de um workflow](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=pt-BR).
 
@@ -34,14 +34,14 @@ Siga estas etapas:
 
 ## Agendamento do envio {#configuring-the-scheduler}
 
-1. Primeiro, adicione um **Scheduler** para acionar o delivery todo dia. No exemplo abaixo, o delivery é criado todos os dias às 6 da manhã.
+1. Primeiro, adicione um **Scheduler** para acionar a entrega todo dia. No exemplo abaixo, a entrega é criada todos os dias às 6 da manhã.
 
    ![](assets/recur_delivery2.png)
 
 
-## Identificação de recipients que fazem aniversário {#identifying-recipients-whose-birthday-it-is}
+## Identificação de destinatários que fazem aniversário {#identifying-recipients-whose-birthday-it-is}
 
-Após configurar a atividade **[!UICONTROL Scheduler]** para que o workflow inicie todos os dias, identifique todos os recipients cuja data de nascimento for igual à data atual.
+Após configurar a atividade **[!UICONTROL Scheduler]** para que o workflow inicie todos os dias, identifique todos os destinatários cuja data de nascimento for igual à data atual.
 
 Para fazer isso, siga as etapas abaixo:
 
@@ -95,31 +95,31 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_user_create_exp_exple03.png)
 
-Vincule o resultado da atividade **[!UICONTROL Query]** a uma atividade **[!UICONTROL Email delivery]** para enviar um email para a lista de todos os recipients aniversariantes.
+Vincule o resultado da atividade **[!UICONTROL Query]** a uma atividade **[!UICONTROL Email delivery]** para enviar um email para a lista de todos os destinatários aniversariantes.
 
-## Incluindo recipients nascidos em 29 de fevereiro (opcional) {#including-recipients-born-on-february-29th--optional-}
+## Incluindo destinatários nascidos em 29 de fevereiro (opcional) {#including-recipients-born-on-february-29th--optional-}
 
-Se desejar incluir todos os recipients que nasceram em 29 de fevereiro, este caso de uso apresentará como planejar o envio de um e-mail recorrente para uma lista de recipients em seus aniversários, seja um ano bissexto ou não.
+Se desejar incluir todos os destinatários que nasceram em 29 de fevereiro, este caso de uso apresentará como planejar o envio de um e-mail recorrente para uma lista de destinatários em seus aniversários, seja um ano bissexto ou não.
 
 As principais etapas de implementação para este caso de uso são:
 
-* Seleção de recipients
+* Seleção de destinatários
 * Seleção se é um ano bissexto ou não
-* Seleção de todos os recipients nascidos em 29 de fevereiro
+* Seleção de todos os destinatários nascidos em 29 de fevereiro
 
 Para configurar esse caso de uso, criamos o seguinte workflow para construção do target:
 
 
 
-Se o ano atual **não for um ano bissexto** e o workflow for executado em 1º de março, precisamos selecionar todos os recipients que teriam seu aniversário no dia anterior (29 de fevereiro) e adicioná-los à lista de recipients. Em qualquer outro caso, nenhuma ação adicional é necessária.
+Se o ano atual **não for um ano bissexto** e o workflow for executado em 1º de março, precisamos selecionar todos os destinatários que teriam seu aniversário no dia anterior (29 de fevereiro) e adicioná-los à lista de destinatários. Em qualquer outro caso, nenhuma ação adicional é necessária.
 
-### Etapa 1: Seleção dos recipients {#step-1--selecting-the-recipients}
+### Etapa 1: Seleção dos destinatários {#step-1--selecting-the-recipients}
 
-Após configurar a atividade **[!UICONTROL Scheduler]** para que o workflow inicie todos os dias, identifique todos os recipients cujos aniversários são no dia atual.
+Após configurar a atividade **[!UICONTROL Scheduler]** para que o workflow inicie todos os dias, identifique todos os destinatários cujos aniversários são no dia atual.
 
 >[!NOTE]
 >
->Se o ano atual for um ano bissexto, todos os recipients nascidos no 29 de fevereiro serão incluídos automaticamente.
+>Se o ano atual for um ano bissexto, todos os destinatários nascidos no 29 de fevereiro serão incluídos automaticamente.
 
 ![](assets/birthday-workflow_usecase_2.png)
 
@@ -129,7 +129,7 @@ Selecionar destinatários cujo aniversário corresponde à data atual é apresen
 
 A atividade **[!UICONTROL Test]** permite verificar se é um ano bissexto e se a data atual é 1º de março.
 
-Se o teste for verificado (o ano não é um ano bissexto, não há 29 de fevereiro e a data atual é de fato 1º de março), a transição **[!UICONTROL True]** é habilitada e os recipients nascidos em 29 de fevereiro serão adicionados ao delivery de 1º de março. Caso contrário, a transição **[!UICONTROL False]** será ativada e somente os recipients nascidos na data atual receberão o delivery.
+Se o teste for verificado (o ano não é um ano bissexto, não há 29 de fevereiro e a data atual é de fato 1º de março), a transição **[!UICONTROL True]** é habilitada e os destinatários nascidos em 29 de fevereiro serão adicionados à entrega de 1º de março. Caso contrário, a transição **[!UICONTROL False]** será ativada e somente os destinatários nascidos na data atual receberão a entrega.
 
 Copie e cole o código abaixo na seção **[!UICONTROL Initialization script]** da guia **[!UICONTROL Advanced]**.
 
@@ -185,17 +185,17 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 
 ![](assets/birthday-workflow_usecase_4.png)
 
-### Etapa 3: Selecionar todos os recipients nascidos em 29 de fevereiro {#step-3--select-any-recipients-born-on-february-29th}
+### Etapa 3: Selecionar todos os destinatários nascidos em 29 de fevereiro {#step-3--select-any-recipients-born-on-february-29th}
 
 Crie uma atividade **[!UICONTROL Fork]** e vincule uma das transições de saída a uma atividade **[!UICONTROL Query]**.
 
-Nesta query, selecione todos os recipients cujas datas de nascimento são 29 de fevereiro.
+Nesta query, selecione todos os destinatários cujas datas de nascimento são 29 de fevereiro.
 
 ![](assets/birthday-workflow_usecase_5.png)
 
 Combine os resultados com uma atividade **[!UICONTROL Union]**.
 
-Vincule os resultados das duas ramificações de atividade **[!UICONTROL Test]** a uma atividade **[!UICONTROL Email delivery]** para enviar um email para a lista de todos os seus recipients aniversariantes, até mesmo àqueles que nasceram em 29 de fevereiro durante um ano não bissexto.
+Vincule os resultados das duas ramificações de atividade **[!UICONTROL Test]** a uma atividade **[!UICONTROL Email delivery]** para enviar um email para a lista de todos os seus destinatários aniversariantes, até mesmo àqueles que nasceram em 29 de fevereiro durante um ano não bissexto.
 
 ## Criação de uma entrega recorrente {#creating-a-recurring-delivery-in-a-targeting-workflow}
 

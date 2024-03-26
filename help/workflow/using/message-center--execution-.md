@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '230'
 ht-degree: 100%
 
 ---
@@ -37,10 +37,10 @@ Para mais informações, dependendo da versão do Campaign, consulte estas seç�
    <td> Esse workflow permite atribuir um status a um evento. Os status do evento são como descritos a seguir:<br /> 
     <ul> 
      <li> <p><strong>Pendente</strong>: o evento está em uma fila. Nenhum template de mensagem foi associado a ele.</p> </li> 
-     <li> <p><strong>Delivery pendente</strong>: o evento está em uma fila, um template de mensagem foi associado a ele e está sendo processado no momento pelo delivery.</p> </li> 
-     <li> <p><strong>Enviado</strong>: esse status é copiado dos logs de delivery. Significa que o delivery foi enviado.</p> </li> 
-     <li> <p><strong>Ignorado pelo delivery</strong>: esse status é copiado dos logs de delivery. Significa que o delivery foi ignorado.</p> </li> 
-     <li> <p><strong>Erro de delivery</strong>: esse status é copiado dos logs de delivery. Significa que o delivery falhou.</p> </li> 
+     <li> <p><strong>Entrega pendente</strong>: o evento está em uma fila, um template de mensagem foi associado a ele e está sendo processado no momento pela entrega.</p> </li> 
+     <li> <p><strong>Enviado</strong>: esse status é copiado dos logs de entrega. Significa que a entrega foi enviada.</p> </li> 
+     <li> <p><strong>Ignorado pela entrega</strong>: esse status é copiado dos logs de entrega. Significa que a entrega foi ignorada.</p> </li> 
+     <li> <p><strong>Erro de entrega</strong>: esse status é copiado dos logs de entrega. Significa que a entrega falhou.</p> </li> 
      <li> <p><strong>Evento não coberto</strong>: o evento falhou ao ser associado a um template de mensagem. O evento não será reprocessado.</p> </li> 
     </ul> </td> 
   </tr> 

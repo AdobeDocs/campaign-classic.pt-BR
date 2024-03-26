@@ -47,13 +47,13 @@ ht-degree: 100%
 
 1. Criando categorias de ofertas em ambientes de design. Para obter mais informações, consulte [Criação de categorias de oferta](../../interaction/using/creating-offer-categories.md).
 1. Criação de ofertas em ambientes de design. Para obter mais informações, consulte [Criação de uma oferta](../../interaction/using/creating-an-offer.md).
-1. Aprovação e publicação de ofertas em um ou vários espaços para torná-las disponíveis em ambientes dinâmicos para o gerente de delivery. Para obter mais informações, consulte [Aprovação e ativação de uma oferta](../../interaction/using/approving-and-activating-an-offer.md).
+1. Aprovação e publicação de ofertas em um ou vários espaços para torná-las disponíveis em ambientes dinâmicos para o gerente de entrega. Para obter mais informações, consulte [Aprovação e ativação de uma oferta](../../interaction/using/approving-and-activating-an-offer.md).
 
 ## Utilização do catálogo de ofertas {#using-the-offer-catalog-}
 
 >[!NOTE]
 >
->As etapas a seguir devem ser executadas por um perfil de **Gerente de delivery** . Eles só podem editar ofertas em ambientes dinâmicos.
+>As etapas a seguir devem ser executadas por um perfil de **Gerente de entrega** . Eles só podem editar ofertas em ambientes dinâmicos.
 
 1. Criação de uma campanha.
-1. Consulta de uma oferta em uma campanha ou uma delivery de campanha. Para obter mais informações, consulte [Sobre canais de saída](../../interaction/using/about-outbound-channels.md).
+1. Consulta de uma oferta em uma campanha ou uma entrega de campanha. Para obter mais informações, consulte [Sobre canais de saída](../../interaction/using/about-outbound-channels.md).

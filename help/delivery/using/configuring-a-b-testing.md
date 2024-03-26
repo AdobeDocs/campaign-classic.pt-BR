@@ -8,8 +8,8 @@ feature: A/B Testing
 role: User
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '223'
+workflow-type: tm+mt
+source-wordcount: '225'
 ht-degree: 100%
 
 ---
@@ -32,10 +32,10 @@ Esta seção detalha como criar um fluxo de trabalho para executar um teste A/B.
 
    ![](assets/ab-testing-complement.png)
 
-1. Para cada subconjunto, adicione a versão do delivery a ser testada.
+1. Para cada subconjunto, adicione a versão da entrega a ser testada.
 
    ![](assets/ab-testing-delivery.png)
 
-Agora, você pode iniciar o fluxo de trabalho. Depois que os deliveries forem enviados, você poderá rastrear o comportamento dos três subconjuntos nos logs do delivery para ver qual assunto foi o mais bem-sucedido.
+Agora, você pode iniciar o fluxo de trabalho. Depois que as entregas forem enviadas, você poderá rastrear o comportamento dos três subconjuntos nos logs da entrega para ver qual assunto foi o mais bem-sucedido.
 
-Os workflows também permitem que você automatize seus processos identificando automaticamente a variante do delivery que teve melhor desempenho e, em seguida, enviando-a à população restante. Para saber mais, consulte este [caso de uso](a-b-testing-use-case.md) dedicado.
+Os workflows também permitem que você automatize seus processos identificando automaticamente a variante da entrega que teve melhor desempenho e, em seguida, enviando-a à população restante. Para saber mais, consulte este [caso de uso](a-b-testing-use-case.md) dedicado.

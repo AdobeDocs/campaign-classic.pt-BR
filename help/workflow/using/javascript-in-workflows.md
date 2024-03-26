@@ -7,7 +7,7 @@ feature: Workflows
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1702'
 ht-degree: 100%
 
 ---
@@ -275,7 +275,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-O loop inclui uma variável de recipient local. Para cada recipient que é retornado na coleção de recipients, o email do recipient é impresso. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR) sobre a função `logInfo`.
+O loop inclui uma variável de destinatário local. Para cada destinatário que é retornado na coleção de destinatários, o email do destinatário é impresso. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR) sobre a função `logInfo`.
 
 #### Resultados de uma operação `getIfExists` 
 
@@ -490,7 +490,7 @@ for each (var w in res.workflow)
 
 #### Exemplo 2: excluir registros
 
-O nome, sobrenome, email e a ID de todos os recipients que se chamam Chris Smith são selecionados. Os resultados são classificados por email, em ordem crescente, e gravados no journal. A operação `delete` é usada para excluir os registros selecionados.
+O nome, sobrenome, email e a ID de todos os destinatários que se chamam Chris Smith são selecionados. Os resultados são classificados por email, em ordem crescente, e gravados no journal. A operação `delete` é usada para excluir os registros selecionados.
 
 ```javascript
 // Build the query, create a query object and hold the object in a variable
@@ -526,7 +526,7 @@ for each (var rec in res.recipient)
 
 #### Exemplo 3: selecionar registros e gravar no journal
 
-Neste exemplo, um método não estático é usado. O email e o ano de nascimento de todos os recipients cujas informações estão armazenadas na pasta **1234** e cujo nome de domínio de email começe com “adobe” são selecionados. Os resultados são classificados por data de nascimento, em ordem decrescente. O email dos recipients é gravado no journal.
+Neste exemplo, um método não estático é usado. O email e o ano de nascimento de todos os destinatários cujas informações estão armazenadas na pasta **1234** e cujo nome de domínio de email começe com “adobe” são selecionados. Os resultados são classificados por data de nascimento, em ordem decrescente. O email dos destinatários é gravado no journal.
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -558,7 +558,7 @@ for each (var w in res.recipient)
 * A operação `update` 
 * A operação `insertOrUpdate`, com o argumento `_key` para identificar o registro a ser atualizado
 
-  Se não especificar a pasta **Recipients**, e houver uma correspondência, o registro será atualizado em qualquer subpasta. Caso contrário, o registro será criado na pasta raiz de **Recipients**.
+  Se não especificar a pasta **Destinatários**, e houver uma correspondência, o registro será atualizado em qualquer subpasta. Caso contrário, o registro será criado na pasta raiz de **Destinatários**.
 
 * A operação `delete` 
 

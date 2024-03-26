@@ -6,7 +6,7 @@ feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Modelo de conteúdo {#content-model-4}
 
-element:==(attribute | cálculo de sequência de caracteres | dbindex | padrão Elemento | | ajuda | ingressar Chave | | sysFilter | traduzidoPadrão)
+element:==(attribute | string de cálculo | dbindex | padrão | element | ajuda | ingressar | key | sysFilter | translateDefault)
 
 ## Atributos {#attributes-4}
 
@@ -97,7 +97,7 @@ Existem quatro tipos de `<element>`  elementos no Adobe Campaign:
   As tabelas de características SQL são criadas automaticamente com base no tipo de característica:
 
    * dedicado: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+   * compartilhado: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   Há dois tipos de campos de características: campos simples, onde um único valor é autorizado na característica, e campos de múltipla escolha, onde a característica está vinculada a um elemento de coleção que pode conter vários valores.
 
@@ -181,25 +181,25 @@ Existem quatro tipos de `<element>`  elementos no Adobe Campaign:
    * booleano
    * byte
    * CDATA
-   * datetime
+   * data e hora
    * datetimetz
    * datetimenotz
-   * date
+   * data
    * duplo
    * enum
    * flutuante
    * html
    * int64
-   * Link 
+   * link
    * long
    * memorando
    * MNTOKEN
-   * percent
+   * por cento
    * primarykey
    * curto
    * sequência de caracteres
    * tempo
-   * timespan
+   * intervalo de tempo
    * uuid
 
 * **não vinculado (booleano)**: se o atributo for ativado (unbound=&quot;true&quot;), o link será declarado como um elemento de coleção para uma cardinalidade 1-N.

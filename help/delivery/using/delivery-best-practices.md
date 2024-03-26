@@ -1,23 +1,23 @@
 ---
 product: campaign
-title: Práticas recomendadas para delivery de campanhas
-description: Saiba mais sobre as práticas recomendadas ao projetar e enviar um delivery
+title: Práticas recomendadas para entrega de campanhas
+description: Saiba mais sobre as práticas recomendadas ao projetar e enviar uma entrega
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability
 role: User
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '115'
+workflow-type: tm+mt
+source-wordcount: '111'
 ht-degree: 100%
 
 ---
 
-# Práticas recomendadas de delivery {#delivery-best-practices}
+# Práticas recomendadas de entrega {#delivery-best-practices}
 
 
-Conheça as práticas recomendadas relacionadas ao design e envio com o Adobe Campaign. Use os links abaixo para navegar pelos tópicos e encontrar orientação.
+Conheça as práticas recomendadas relacionadas ao design da entrega e envio com o Adobe Campaign. Use os links abaixo para navegar pelos tópicos e encontrar orientação.
 
 <table>
 <tr>
@@ -44,7 +44,7 @@ Conheça as práticas recomendadas relacionadas ao design e envio com o Adobe Ca
     </a>
     </div>
     <p>
-    <em>Facilitar e agilizar novos deliveries</em>
+    <em>Facilitar e agilizar novas entregas</em>
     <p>
   </td>
   <td>

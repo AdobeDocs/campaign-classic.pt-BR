@@ -9,8 +9,8 @@ badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 6%
+source-wordcount: '316'
+ht-degree: 5%
 
 ---
 
@@ -28,7 +28,7 @@ O Adobe Campaign usa uma variável global &quot;Nms_DefaultRcpSchema&quot; para 
 1. Altere o valor de **Nms_DefaultRcpSchema** com o nome do schema que corresponde à tabela do recipient externo (neste caso: cus:individual).
 1. Salve as alterações.
 
-## Criação de um novo de formulário {#creating-a-new-form-}
+## Criação de um novo formulário {#creating-a-new-form-}
 
 A criação de um novo formulário permitirá que você exiba e edite os dados da tabela de destinatários externos.
 

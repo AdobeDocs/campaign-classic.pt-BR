@@ -4,15 +4,15 @@ title: Instalação de um servidor mid-sourcing no Campaign
 description: Esta seção detalha a instalação e a configuração de um servidor mid-sourcing no Campaign
 feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 3%
+source-wordcount: '1013'
+ht-degree: 4%
 
 ---
 
@@ -167,7 +167,7 @@ Você deve interromper e reiniciar o servidor para que a modificação seja cons
 **Configuração da plataforma do cliente**
 
 1. Vá para a conta externa de roteamento de mid-sourcing.
-1. No **[!UICONTROL Mid-Sourcing]** especifique os parâmetros de conexão do servidor mid-sourcing.
+1. Na guia **[!UICONTROL Mid-Sourcing]**, especifique os parâmetros de conexão do servidor mid-sourcing.
 
    ![](assets/s_ncs_install_midsourcing_tracking06.png)
 

@@ -7,7 +7,7 @@ feature: Workflows, Targeting Activity, Subscription Services Activity
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 100%
 
 ---
@@ -30,25 +30,25 @@ Para configurá-la, edite a atividade e insira seu rótulo, então selecione a a
 1. Clique em **[!UICONTROL Subscription]** ou em **[!UICONTROL Unsubscription]** para assinar ou cancelar a subscrição da população especificada para ou a partir do serviço de informações selecionado.
 1. Selecione **[!UICONTROL Send a confirmation message]** para notificar os destinatários que a subscrição de um serviço foi realizada ou cancelada.
 
-   O conteúdo dessa mensagem é definido no template de delivery associado ao serviço de assinatura. Para obter mais informações, consulte esta [seção](../../delivery/using/managing-subscriptions.md).
+   O conteúdo dessa mensagem é definido no template de entrega associado ao serviço de assinatura. Para obter mais informações, consulte esta [seção](../../delivery/using/managing-subscriptions.md).
 
-## Exemplo: inscrever uma lista de recipients em um boletim informativo {#example--subscribe-a-list-of-recipients-to-a-newsletter}
+## Exemplo: inscrever uma lista de destinatários em um boletim informativo {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
-Em uma única operação, o workflow a seguir visa fazer uma lista de recipients qualificados para um boletim informativo, destinado a pessoas que trabalham em Paris, a fim de subscrevê-las.
+Em uma única operação, o workflow a seguir visa fazer uma lista de destinatários qualificados para um boletim informativo, destinado a pessoas que trabalham em Paris, a fim de subscrevê-las.
 
-Para fazer isso, também é necessário excluir os recipients que já estão subscritos.
+Para fazer isso, também é necessário excluir os destinatários que já estão subscritos.
 
 >[!CAUTION]
 >
->Antes de subscrever recipients manualmente a um serviço, verifique se esses recipient aceitam receber comunicações.
+>Antes de subscrever destinatários manualmente a um serviço, verifique se esses destinatário aceitam receber comunicações.
 
 ![](assets/subscription_services_example.png)
 
 1. Adicione as três queries a seguir:
 
-   * Uma voltada a recipients com idade entre 18 e 60 anos.
-   * Uma segunda direcionada a recipients que residem em Paris.
-   * Uma terceira direcionada a recipients que não se inscreveram no boletim informativo.
+   * Uma voltada a destinatários com idade entre 18 e 60 anos.
+   * Uma segunda direcionada a destinatários que residem em Paris.
+   * Uma terceira direcionada a destinatários que não se inscreveram no boletim informativo.
 
 1. Adicione uma atividade de interseção para cruzar os resultados diferentes.
 1. Se desejar, insira um list update para manter a lista de subscritos atualizada.
@@ -60,7 +60,7 @@ Para fazer isso, também é necessário excluir os recipients que já estão sub
 1. Selecione a pasta em que o boletim informativo está e em seguida, selecione o boletim informativo na lista exibida.
 1. Deixe a opção **[!UICONTROL Generate outbound transition]** desmarcada para que esta atividade marque o final do workflow e clique em **[!UICONTROL Ok]**.
 
-Durante a execução do workflow, os recipients que correspondem a todas as três queries são adicionados à lista e subscritos ao boletim informativo.
+Durante a execução do workflow, os destinatários que correspondem a todas as três queries são adicionados à lista e subscritos ao boletim informativo.
 
 É possível verificar se a subscrição foi bem-sucedida acessando a guia **[!UICONTROL Subscription]** dos destinatários.
 

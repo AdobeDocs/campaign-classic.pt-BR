@@ -8,8 +8,8 @@ feature: Delivery Templates
 role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '395'
+workflow-type: tm+mt
+source-wordcount: '390'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Save as
 
 ![](assets/s_ncs_user_campaign_save_as_scenario.png)
 
-Essa ação cria um template de entrega a partir da entrega selecionada. Você deve inserir a pasta onde ele é salvo (no campo **[!UICONTROL Folder]**), bem como a pasta onde os deliveries criados com base neste template são criados (no campo **[!UICONTROL Execution folder]**).
+Essa ação cria um template de entrega a partir da entrega selecionada. Você deve inserir a pasta onde ele é salvo (no campo **[!UICONTROL Folder]**), bem como a pasta onde as entregas criadas com base neste template são criadas (no campo **[!UICONTROL Execution folder]**).
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
@@ -61,7 +61,7 @@ Para configurar um template de entrega, siga as seguintes etapas:
 
 1. Complete a categoria **Email parameters** com o assunto do email e o público alvo.
 1. Adicione seu **HTML** content para personalizar seu template, você pode exibir um link de mirror page e um link de unsubscription.
-1. Selecione a guia **Preview.** No menu suspenso **Test personalization**, selecione **Recipient** para visualizar seu template como o perfil escolhido.
+1. Selecione a guia **Preview.** No menu suspenso **Test personalization**, selecione **Destinatário** para visualizar seu template como o perfil escolhido.
 
    ![](assets/delivery_template_5.png)
 

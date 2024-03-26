@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Regras de filtro
-description: Saiba como usar as regras de filtro no Adobe Campaign
+description: Saiba como usar as regras de filtragem no Adobe Campaign
 role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ As regras de filtragem podem estar vinculadas a outros tipos de regras (controle
 
 ## Criar uma regra de filtro {#creating-a-filtering-rule}
 
-Por exemplo, você pode filtrar os assinantes do boletim informativo para evitar que as comunicações sejam enviadas a recipients menores de idade.
+Por exemplo, você pode filtrar os assinantes do boletim informativo para evitar que as comunicações sejam enviadas a destinatários menores de idade.
 
 Para definir esse filtro, aplique as seguintes etapas:
 
@@ -41,7 +41,7 @@ Para definir esse filtro, aplique as seguintes etapas:
 
    ![](assets/campaign_opt_create_filter_04.png)
 
-Quando essa regra for usada em um delivery, os assinantes menores de idade serão excluídos automaticamente. Uma mensagem específica indica a regra do aplicativo:
+Quando essa regra for usada em uma entrega, os assinantes menores de idade serão excluídos automaticamente. Uma mensagem específica indica a regra do aplicativo:
 
 ![](assets/campaign_opt_create_filter_05.png)
 
@@ -53,7 +53,7 @@ Para fazer isso, vá para a guia **[!UICONTROL General]** da regra de tipologia,
 
 ![](assets/campaign_opt_create_filter_06.png)
 
-Nesse caso, mesmo que a regra esteja vinculada a todos os deliveries, ela só será aplicada àqueles que correspondam aos critérios do filtro definido.
+Nesse caso, mesmo que a regra esteja vinculada a todas as entregas, ela só será aplicada àquelas que correspondam aos critérios do filtro definido.
 
 >[!NOTE]
 >
@@ -65,11 +65,11 @@ Nesse caso, mesmo que a regra esteja vinculada a todos os deliveries, ela só se
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-Essas tipologias específicas podem ser vinculadas a um delivery quando o target for selecionado: no assistente do delivery, clique no link **[!UICONTROL To]** e, em seguida, na guia **[!UICONTROL Exclusions]**.
+Essas tipologias específicas podem ser vinculadas a uma entrega quando o target for selecionado: no assistente da entrega, clique no link **[!UICONTROL To]** e, em seguida, na guia **[!UICONTROL Exclusions]**.
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
-Em seguida, selecione o filtro a ser aplicado ao delivery. Para fazer isso, clique no botão **[!UICONTROL Add]** e selecione as tipologias a serem aplicadas.
+Em seguida, selecione o filtro a ser aplicado à entrega. Para fazer isso, clique no botão **[!UICONTROL Add]** e selecione as tipologias a serem aplicadas.
 
 Você também poderá vincular regras de filtragem diretamente por meio desta guia, sem que sejam agrupadas em uma tipologia. Para fazer isso, use a seção inferior da janela.
 
@@ -79,15 +79,15 @@ Você também poderá vincular regras de filtragem diretamente por meio desta gu
 >
 >Somente as regras de filtragem e de tipologia estarão disponíveis na janela de seleção.
 >
->Essas configurações podem ser definidas no template de delivery a ser aplicado automaticamente a todos os novos deliveries criados usando o template.
+>Essas configurações podem ser definidas no template de entrega a ser aplicado automaticamente a todas as novas entregas criadas usando o template.
 >
 
 ## Regras padrão de exclusão de entrega {#default-deliverability-exclusion-rules}
 
-Duas regras de filtragem estão disponíveis por padrão: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante a análise de e-mail, essas regras comparam os endereços de e-mail do recipient com os endereços proibidos ou nomes de domínio contidos em uma lista de supressão global criptografada gerenciada na instância de entrega. Se houver algum positivo, a mensagem não será enviada para esse recipient.
+Duas regras de filtragem estão disponíveis por padrão: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante a análise de e-mail, essas regras comparam os endereços de e-mail do destinatário com os endereços proibidos ou nomes de domínio contidos em uma lista de supressão global criptografada gerenciada na instância de entrega. Se houver algum positivo, a mensagem não será enviada para esse destinatário.
 
 Isso evita a inclusão na lista de bloqueios devido a atividades mal-intencionadas, especialmente o uso de um Spamtrap. Por exemplo, se um Spamtrap for usado para se inscrever em um dos seus formulários web, um email de confirmação será enviado automaticamente para esse Spamtrap e resultará na inclusão automática do endereço utilizado à lista de bloqueios.
 
 >[!NOTE]
 >
->Os endereços e os nomes de domínio contidos na lista de supressão global estão ocultos. Somente o número de recipients excluídos é indicado nos logs de análise de delivery.
+>Os endereços e os nomes de domínio contidos na lista de supressão global estão ocultos. Somente o número de destinatários excluídos é indicado nos logs de análise de entrega.

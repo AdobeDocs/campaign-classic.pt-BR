@@ -12,7 +12,7 @@ hidefromtoc: true
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '879'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ Dependendo da sua implementação, você pode enfrentar vários problemas comuns
  </thead> 
  <tbody> 
   <tr> 
-   <td> recipients (ou qualquer outra dimensão de perfil)<br /> </td> 
+   <td> destinatários (ou qualquer outra dimensão de perfil)<br /> </td> 
    <td> perfis<br /> </td> 
   </tr> 
   <tr> 
@@ -66,13 +66,13 @@ Dependendo da sua implementação, você pode enfrentar vários problemas comuns
  </tbody> 
 </table>
 
-* **Os recipients da minha instância do Campaign v7 não são sincronizados nem visíveis no Campaign Standard.**
+* **Os destinatários da minha instância do Campaign v7 não são sincronizados nem visíveis no Campaign Standard.**
 
   Esse caso pode ocorrer por motivos diferentes:
 
-   * Os recipients recém-criados ou atualizados no Campaign v7. A sincronização é acionada a cada 15 minutos. Isso significa que os recipients atualizados ou recém-criados estarão visíveis no Campaign Standard após a próxima sincronização.
-   * Sua implementação pode ter sido definida para sincronizar apenas recipients de pastas específicas. Os recipients de outras pastas não são sincronizados.
-   * O recipient pode ser sincronizado, mas está visível no Campaign Standard. Verifique os direitos de mapear pastas.
+   * Os destinatários recém-criados ou atualizados no Campaign v7. A sincronização é acionada a cada 15 minutos. Isso significa que os destinatários atualizados ou recém-criados estarão visíveis no Campaign Standard após a próxima sincronização.
+   * Sua implementação pode ter sido definida para sincronizar apenas destinatários de pastas específicas. Os destinatários de outras pastas não são sincronizados.
+   * O destinatário pode ser sincronizado, mas está visível no Campaign Standard. Verifique os direitos de mapear pastas.
 
 * **Não encontro os campos de perfil que preciso para basear meu query no Campaign Standard.**
 
@@ -80,13 +80,13 @@ Dependendo da sua implementação, você pode enfrentar vários problemas comuns
 
   Para garantir que o campo que você deseja usar está disponível, verifique a definição de recurso de perfil em **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
 
-  Além disso, todos os dados anexados aos recipients e armazenados em tabelas relacionadas a nms:recipients não são sincronizados por padrão para o Campaign Standard.
+  Além disso, todos os dados anexados aos destinatários e armazenados em tabelas relacionadas a nms:recipients não são sincronizados por padrão para o Campaign Standard.
 
   Para poder usar dados relacionados, é possível executar seu direcionamento no Campaign v7 e inserir dados adicionais, conforme explicado na seção [Sincronizar públicos](../../integrations/using/synchronizing-audiences.md), ou entre em contato com seu consultor para explorar as possibilidades de personalização.
 
 * **Estou usando outra dimensão de perfil do nms:recipient no Campaign v7, como posso sincronizá-la com o Campaign Standard?**
 
-  O Campaign Standard usa um recurso de target exclusivo chamado **perfis**. A implementação básica do recurso Campaign Standard Connect fornece um mapeamento padrão entre os recipients do Campaign v7 e os perfis do Campaign Standard.
+  O Campaign Standard usa um recurso de target exclusivo chamado **perfis**. A implementação básica do recurso Campaign Standard Connect fornece um mapeamento padrão entre os destinatários do Campaign v7 e os perfis do Campaign Standard.
 
   Se você usar outra dimensão de perfil no Campaign v7 ou se usar várias, elas deverão ser mapeadas com perfis do Campaign Standard. Entre em contato com seu consultor para abordar essa necessidade específica.
 
@@ -98,7 +98,7 @@ Dependendo da sua implementação, você pode enfrentar vários problemas comuns
 
   Além disso, verifique se a opção **[!UICONTROL Share with ACS]** está marcada na atividade **[!UICONTROL List update]** e se o workflow foi executado corretamente.
 
-  Observe que os perfis de recipients contidos na lista devem ter sido sincronizados com o Campaign Standard antes da execução do workflow. Depois de compartilhado com o Campaign Standard, os recipients da lista são reconciliados com perfis do Campaign Standard, significando que eles devem existir lá. Os recipients da lista que não podem ser reconciliados com perfis do Campaign Standard são ignorados.
+  Observe que os perfis de destinatários contidos na lista devem ter sido sincronizados com o Campaign Standard antes da execução do workflow. Depois de compartilhado com o Campaign Standard, os destinatários da lista são reconciliados com perfis do Campaign Standard, significando que eles devem existir lá. Os destinatários da lista que não podem ser reconciliados com perfis do Campaign Standard são ignorados.
 
   Se você compartilhar uma lista feita de perfis e se nenhuma for sincronizada com o Campaign Standard, ele criará um Query vazio de público no Campaign Standard que não pode ser usado.
 

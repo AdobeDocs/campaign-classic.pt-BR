@@ -8,7 +8,7 @@ feature: Channel Configuration
 role: User
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 100%
 
@@ -16,11 +16,11 @@ ht-degree: 100%
 
 # Sobre etapas de criação de entregas {#about-delivery-creation}
 
-As principais etapas ao criar um delivery são as seguintes:
+As principais etapas ao criar uma entrega são as seguintes:
 
-1. **Crie e identifique o delivery**. [Leia mais](steps-create-and-identify-the-delivery.md)
+1. **Crie e identifique a entrega**. [Leia mais](steps-create-and-identify-the-delivery.md)
 
-1. **Defina o conteúdo do delivery**. A definição de conteúdo do delivery é específico para cada canal. Para obter mais informações, consulte a seção dedicada:
+1. **Defina o conteúdo da entrega**. A definição de conteúdo da entrega é específico para cada canal. Para obter mais informações, consulte a seção dedicada:
 
    * [Canal de email](defining-the-email-content.md)
    * [Canal de SMS](sms-create.md#defining-the-sms-content)
@@ -29,10 +29,10 @@ As principais etapas ao criar um delivery são as seguintes:
 
 1. **Definição da população do target** [Leia mais](steps-defining-the-target-population.md)
 
-1. **Envio do delivery** [Leia mais](steps-sending-the-delivery.md)
+1. **Envio da entrega** [Leia mais](steps-sending-the-delivery.md)
 
-1. **Monitorar o delivery** (rastreamento, quarentena, relatórios, etc.). Para obter mais informações, consulte as seções [Monitoramento de deliveries](about-delivery-monitoring.md) e [Rastreamento de deliveries](about-message-tracking.md).
+1. **Monitorar a entrega** (rastreamento, quarentena, relatórios, etc.). Para obter mais informações, consulte as seções [Monitoramento de entregas](about-delivery-monitoring.md) e [Rastreamento de entregas](about-message-tracking.md).
 
 >[!NOTE]
 >
->As etapas descritas abaixo pressupõem que todos os destinatários do target e seus perfis estejam armazenados no banco de dados, exceto no caso de delivery externo (consulte [Seleção de destinatários externos](steps-defining-the-target-population.md#selecting-external-recipients)).
+>As etapas descritas abaixo pressupõem que todos os destinatários do target e seus perfis estejam armazenados no banco de dados, exceto no caso de entrega externa (consulte [Seleção de destinatários externos](steps-defining-the-target-population.md#selecting-external-recipients)).

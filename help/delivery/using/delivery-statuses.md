@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Status de delivery
-description: Saiba mais sobre os status disponíveis no painel do delivery
+title: Status de entrega
+description: Saiba mais sobre os status disponíveis no painel da entrega
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '644'
+workflow-type: tm+mt
+source-wordcount: '640'
 ht-degree: 100%
 
 ---
 
-# Status de delivery {#delivery-statuses}
+# Status de entrega {#delivery-statuses}
 
 
 
@@ -22,17 +22,17 @@ ht-degree: 100%
 
 ajouter screenshot -->
 
-Depois que um delivery é enviado, o painel de delivery exibe um status que permite monitorar se o envio foi bem sucedido. Os possíveis status estão detalhados na seção abaixo.
+Depois que uma entrega é enviada, o painel da entrega exibe um status que permite monitorar se o envio foi bem sucedido. Os possíveis status estão detalhados na seção abaixo.
 
 ![](assets/delivery-status.png)
 
-Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser encontradas e como resolvê-las, consulte [esta página](understanding-delivery-failures.md).
+Para obter mais detalhes sobre as diferentes falhas de entrega que podem ser encontradas e como resolvê-las, consulte [esta página](understanding-delivery-failures.md).
 
 **Tópicos relacionados:**
 
 * [Painel de entrega](delivery-dashboard.md)
 * [Solução de problemas de entrega](delivery-troubleshooting.md)
-* [Introdução à capacidade de delivery](about-deliverability.md)
+* [Introdução à capacidade de entrega](about-deliverability.md)
 
 ## Lista de status de entrega {#list-delivery-statuses}
 
@@ -46,39 +46,39 @@ Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser en
  <tbody> 
   <tr> 
    <td> Sent<br /> </td> 
-   <td> O delivery foi enviado corretamente ao provedor de mensagens (mas o recipient não o recebeu necessariamente).<br /> </td> 
+   <td> A entrega foi enviada corretamente ao provedor de mensagens (mas o destinatário não a recebeu necessariamente).<br /> </td> 
   </tr> 
   <tr> 
    <td> Ignorado<br /> </td> 
-   <td> O delivery não foi enviado ao recipient devido a um erro no endereço. Ele foi incluído na lista de bloqueios, colocado em quarentena, não fornecido ou duplicado. <br /> </td> 
+   <td> A entrega não foi enviada ao destinatário devido a um erro no endereço. Ele foi incluído na lista de bloqueios, colocado em quarentena, não fornecido ou duplicado. <br /> </td> 
   </tr> 
   <tr> 
    <td> Failed<br /> </td> 
-   <td> O delivery não conseguiu alcançar o recipient devido a um endereço inválido ou a uma caixa de entrada cheia, por exemplo. Ele também pode ser vinculado a um problema com blocos de personalização, pois esses blocos podem gerar erros quando os schemas não correspondem ao mapeamento do delivery. Consulte <a href="understanding-delivery-failures.md" target="_blank">Conhecendo as falhas de delivery</a><br /> </td> 
+   <td> A entrega não conseguiu alcançar o destinatário devido a um endereço inválido ou a uma caixa de entrada cheia, por exemplo. Também pode ser um problema com blocos de personalização, pois esses blocos podem gerar erros quando os schemas não correspondem ao mapeamento da entrega. Consulte <a href="understanding-delivery-failures.md" target="_blank">Conhecendo as falhas de entrega</a><br /> </td> 
   </tr>
   <tr> 
    <td> Pending<br /> </td> 
-   <td> O delivery está pronto para ser enviado e será processado pelo servidor de delivery (MTA). Consulte <a href="#pending-status" target="_blank">Status pendente</a>.<br /> </td> 
+   <td> A entrega está pronta para ser enviada e será processada pelo servidor de entrega (MTA). Consulte <a href="#pending-status" target="_blank">Status pendente</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> Not applicable<br /> </td> 
-   <td> O delivery foi levado em conta pelo servidor (MTA), mas não foi processado.<br /> </td> 
+   <td> A entrega foi levada em conta pelo servidor (MTA), mas não foi processada.<br /> </td> 
   </tr>  
   <tr> 
    <td> Delivery canceled<br /> </td> 
-   <td> O delivery foi cancelado por um operador.<br /> </td> 
+   <td> A entrega foi cancelada por um operador.<br /> </td> 
   </tr> 
   <tr> 
    <td> Levado em consideração pelo provedor de serviço<br /> </td> 
-   <td> O provedor de serviços SMS recebeu o delivery.<br /> Para instalações hospedadas ou híbridas, se você atualizou para o <a href="sending-with-enhanced-mta.md" target="_blank">MTA aprimorado</a>, a mensagem foi repassada com êxito do Campaign para o MTA aprimorado.</td> 
+   <td> O provedor de serviços SMS recebeu a entrega.<br /> Para instalações hospedadas ou híbridas, se você atualizou para o <a href="sending-with-enhanced-mta.md" target="_blank">MTA aprimorado</a>, a mensagem foi repassada com êxito do Campaign para o MTA aprimorado.</td> 
   </tr> 
   <tr> 
    <td> Received on mobile<br /> </td> 
-   <td> O recipient recebeu o SMS em seu dispositivo móvel.<br /> </td> 
+   <td> O destinatário recebeu o SMS em seu dispositivo móvel.<br /> </td> 
   </tr>
   <tr> 
    <td> Sent to the service provider<br /> </td> 
-   <td> O delivery foi enviado para o provedor de serviços SMS, mas ainda não foi recebido.<br />
+   <td> A entrega foi enviada para o provedor de serviços SMS, mas ainda não foi recebida.<br />
    </td> 
   </tr> 
   <tr> 
@@ -88,17 +88,17 @@ Para obter mais detalhes sobre as diferentes falhas de delivery que podem ser en
  </tbody> 
 </table>
 
-Para saber como otimizar a capacidade de delivery dos emails do Adobe Campaign, consulte [esta seção](about-deliverability.md). Para obter informações mais detalhadas sobre a capacidade de delivery, consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
+Para saber como otimizar a capacidade de entrega dos emails do Adobe Campaign, consulte [esta seção](about-deliverability.md). Para obter informações mais detalhadas sobre a capacidade de entrega, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 ## Status pendente {#pending-status}
 
-Após confirmar o delivery, você pode ver que o status do delivery é **[!UICONTROL Pending]**. Esse status significa que o processo de execução está aguardando a disponibilidade de alguns recursos.
+Após confirmar a entrega, você pode ver que o status da entrega é **[!UICONTROL Pending]**. Esse status significa que o processo de execução está aguardando a disponibilidade de alguns recursos.
 
-O status **[!UICONTROL Pending]** pode significar que o seu delivery foi agendado e está pendente até a data especificada. Para obter mais informações, consulte a seção [Agendamento de delivery](steps-sending-the-delivery.md#scheduling-the-delivery-sending).
+O status **[!UICONTROL Pending]** pode significar que a sua entrega foi agendada e está pendente até a data especificada. Para obter mais informações, consulte a seção [Agendamento de entrega](steps-sending-the-delivery.md#scheduling-the-delivery-sending).
 
-Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pending]**, poderá ser devido a:
+Se a entrega não estiver sendo enviada e o status permanecer **[!UICONTROL Pending]**, poderá ser devido a:
 
-* O MTA (Message Transfer Agent), que executa módulos e processos no servidor de delivery e que gerencia o envio de emails, pode não ter sido iniciado ou precisa ser reiniciado.
+* O MTA (Message Transfer Agent), que executa módulos e processos no servidor de entrega e que gerencia o envio de emails, pode não ter sido iniciado ou precisa ser reiniciado.
 
   Para verificar isso e iniciar o módulo se necessário, siga as seguintes etapas:
 
@@ -126,9 +126,9 @@ Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pen
       >
       >Substitua `<instance-name>` pelo nome da sua instância (produção, desenvolvimento, etc.). O nome da instância é identificado por meio dos arquivos de configuração: `[path of application]nl6/conf/config-<instance-name>.xml`
 
-* Pode ser que o delivery esteja usando uma afinidade não configurada no servidor emissor.
+* Pode ser que a entrega esteja usando uma afinidade não configurada no servidor emissor.
 
-  Nesse caso, verifique a configuração do gerenciamento de tráfego (afinidade IP) e use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular deliveries ao MTA que gerencia a afinidade. Para obter mais informações sobre afinidades, consulte [esta seção](../../installation/using/configure-delivery-settings.md).
+  Nesse caso, verifique a configuração do gerenciamento de tráfego (afinidade IP) e use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular entregas ao MTA que gerencia a afinidade. Para obter mais informações sobre afinidades, consulte [esta seção](../../installation/using/configure-delivery-settings.md).
 
 * Quando muitas campanhas estão sendo executadas, o status da entrega permanece como “Pendente”.
 
@@ -139,6 +139,6 @@ Se o delivery não estiver sendo enviado e o status permanecer **[!UICONTROL Pen
 
 **Tópicos relacionados:**
 
-* [Histórico e logs do delivery](#delivery-logs-and-history)
+* [Histórico e logs da entrega](#delivery-logs-and-history)
 * [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
 * [Tipos e motivos de falha de entrega](understanding-delivery-failures.md#delivery-failure-types-and-reasons)

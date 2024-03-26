@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1152'
 ht-degree: 100%
 
 ---
@@ -86,7 +86,7 @@ A configuração de fusos horários é descrita [nesta página](../../installati
 
 >[!NOTE]
 >
->Colaborações em diferentes fusos horários exigem o armazenamento de datas em formato UTC. As datas são convertidas no fuso horário apropriado nos seguintes contextos: quando uma data é exibida no fuso horário do usuário, quando os arquivos são importados e exportados, quando um delivery de e-mail é agendado, quando as atividades são agendadas em um workflow (agendador, espera, restrição de tempo e etc.)
+>Colaborações em diferentes fusos horários exigem o armazenamento de datas em formato UTC. As datas são convertidas no fuso horário apropriado nos seguintes contextos: quando uma data é exibida no fuso horário do usuário, quando os arquivos são importados e exportados, quando uma entrega de e-mail é agendada, quando as atividades são agendadas em um workflow (agendador, espera, restrição de tempo e etc.)
 >
 >Restrições e recomendações vinculadas a esses contextos são apresentadas nas seções relacionadas da documentação do Adobe Campaign.
 
@@ -104,7 +104,7 @@ O link **[!UICONTROL Edit the access parameters...]** permite acessar as seguint
 
   >[!NOTE]
   >
-  >Mesmo que a conta esteja desativada, o operador ainda poderá receber alertas ou notificações do Campaign. Para interromper o envio de notificações do Campaign a esse operador, a Adobe recomenda remover o endereço de email do perfil.
+  >Mesmo que a conta esteja desabilitada, o operador ainda poderá receber alertas ou notificações do Campaign. Para interromper o envio de notificações do Campaign a esse operador, a Adobe recomenda remover o endereço de email do perfil.
 
 * A opção **[!UICONTROL Forbid access from the rich client]** permite restringir o uso do Adobe Campaign para [acesso à Web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) ou por meio de APIs: o acesso ao console do cliente Adobe Campaign não está mais disponível.
 * É possível vincular uma zona de segurança ao operador. Para obter mais informações, consulte [esta página](../../installation/using/security-zones.md).
@@ -126,7 +126,7 @@ O link **[!UICONTROL Edit the access parameters...]** permite acessar as seguint
 
   >[!IMPORTANT]
   >
-  >Essa é uma restrição muito rígida e deve ser usada com cuidado. Um operador conectado com este tipo de direito pode ver SOMENTE o conteúdo da pasta especificada e não tem acesso a nenhum outro nó da árvore por meio do explorador. No entanto, dependendo das funcionalidades as quais esse operador tem acesso (por exemplo: fluxos de trabalho), o usuário pode exibir dados que normalmente são armazenados em nós que não estão acessíveis.
+  >Essa é uma restrição muito rígida e deve ser usada com cuidado. Um operador conectado com este tipo de direito pode ver SOMENTE o conteúdo da pasta especificada e não tem acesso a nenhum outro nó da árvore por meio do explorer. No entanto, dependendo das funcionalidades as quais esse operador tem acesso (por exemplo: fluxos de trabalho), o usuário pode exibir dados que normalmente são armazenados em nós que não estão acessíveis.
 
 ### Verificar configurações {#check-settings}
 
@@ -178,7 +178,7 @@ Por padrão, o operador técnico &#39;webapp&#39; tem o direito nomeado ADMINIST
 
    ![](assets/s_ncs_default_operators_webapp_webapp_right.png)
 
-1. Atribua ao operador “webapp” direitos de acesso para leitura e gravação de dados nas pastas que dizem respeito a esse operador, que são principalmente as pastas “Recipient”.
+1. Atribua ao operador “webapp” direitos de acesso para leitura e gravação de dados nas pastas que dizem respeito a esse operador, que são principalmente as pastas “Destinatário”.
 
    ![](assets/s_ncs_default_operators_webapp_folder_access.png)
 

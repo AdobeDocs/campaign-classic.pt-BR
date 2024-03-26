@@ -21,7 +21,7 @@ Nesse caso de uso, você aprenderá as etapas para projetar uma entrega de email
 
 Nosso objetivo final é criar uma entrega com um template personalizado que contém:
 
-* Um endereço direto para um recipient (usando nome e sobrenome)
+* Um endereço direto para um destinatário (usando nome e sobrenome)
 * Dois tipos de links para uma URL externa
 * Uma mirror page
 * Um link para uma aplicação web
@@ -40,7 +40,7 @@ Para criar uma nova entrega, coloque o cursor na guia **Campaigns** e clique em 
 
 ## Etapa 2 - Seleção de um modelo {#step-2---selecting-a-template}
 
-Selecione um template da entrega e nomeie a entrega. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus recipients, no entanto, esse título será exibido na lista de entregas. Clique em **[!UICONTROL Continue]**.
+Selecione um template da entrega e nomeie a entrega. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus destinatários, no entanto, esse título será exibido na lista de entregas. Clique em **[!UICONTROL Continue]**.
 
 ![](assets/dce_delivery_model.png)
 
@@ -64,9 +64,9 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
 
 ## Etapa 4 — design da mensagem {#step-4---designing-the-message}
 
-* Exiba o nome e o sobrenome dos recipients
+* Exiba o nome e o sobrenome dos destinatários
 
-  Para inserir o nome e o sobrenome dos recipients em um campo de texto na entrega, clique no campo de texto escolhido e coloque o cursor onde deseja exibi-los. Clique no primeiro ícone na barra de ferramentas pop-up e, depois, em **[!UICONTROL Personalization block]**. Selecione **[!UICONTROL Greetings]** e clique em **[!UICONTROL OK]**.
+  Para inserir o nome e o sobrenome dos destinatários em um campo de texto na entrega, clique no campo de texto escolhido e coloque o cursor onde deseja exibi-los. Clique no primeiro ícone na barra de ferramentas pop-up e, depois, em **[!UICONTROL Personalization block]**. Selecione **[!UICONTROL Greetings]** e clique em **[!UICONTROL OK]**.
 
   ![](assets/dce_personalizationblock_greetings.png)
 
@@ -92,7 +92,7 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
 
 * Adicionar uma mirror page
 
-  Para permitir que os recipients vejam o conteúdo da entrega em um navegador da Web, você pode integrar um link a uma mirror page na entrega.
+  Para permitir que os destinatários vejam o conteúdo da entrega em um navegador da Web, você pode integrar um link a uma mirror page na entrega.
 
   Clique no campo de texto em que você deseja ver o link publicado. Clique no primeiro ícone na barra de ferramentas pop-up, selecione **[!UICONTROL Personalization block]** e, então, **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Clique em **[!UICONTROL Save]** para confirmar.
 

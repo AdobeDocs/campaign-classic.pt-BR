@@ -7,8 +7,8 @@ feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 15%
+source-wordcount: '249'
+ht-degree: 10%
 
 ---
 
@@ -60,7 +60,7 @@ Se seu ambiente foi atualizado para o Campaign Classic v7.3 (ou posterior), voc�
 
 >[!NOTE]
 >
->Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 >
 
 ## Tópicos relacionados

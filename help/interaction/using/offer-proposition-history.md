@@ -23,7 +23,7 @@ Depois que as apresentações da oferta são feitas, é possível visualizar o h
 
 >[!NOTE]
 >
->Essa funcionalidade só é visível online e somente no gerenciador de delivery.
+>Essa funcionalidade só é visível online e somente no gerenciador de entrega.
 
 * No nível da oferta, clique em **[!UICONTROL Edit]** na guia **[!UICONTROL Propositions]**.
 

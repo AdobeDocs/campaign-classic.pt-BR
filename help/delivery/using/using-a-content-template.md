@@ -29,7 +29,7 @@ Eles também podem ser usados para criar instâncias de conteúdo. Depois de cri
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
-O layout será aplicado automaticamente com base nas configurações selecionadas. Para visualizá-lo, clique em **[!UICONTROL HTML preview]** (ou **[!UICONTROL Text preview]**) e selecione um recipient para testar os elementos de personalização.
+O layout será aplicado automaticamente com base nas configurações selecionadas. Para visualizá-lo, clique em **[!UICONTROL HTML preview]** (ou **[!UICONTROL Text preview]**) e selecione um destinatário para testar os elementos de personalização.
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 

@@ -20,4 +20,4 @@ Uma atividade **Alert** envia uma mensagem a um grupo de operadores. Ela opera d
 
 ![](assets/edit_alerte.png)
 
-Um alerta não é persistente e, portanto, não é visível do console. Os operadores do grupo atribuído devem ter um endereço de e-mail completo para receber a notificação. A configuração dessa atividade é semelhante àquela de um **Approval**. O template de delivery padrão usado para alertar os operadores é o &quot;alertAssignee&quot;.
+Um alerta não é persistente e, portanto, não é visível do console. Os operadores do grupo atribuído devem ter um endereço de e-mail completo para receber a notificação. A configuração dessa atividade é semelhante àquela de um **Approval**. O template de entrega padrão usado para alertar os operadores é o &quot;alertAssignee&quot;.

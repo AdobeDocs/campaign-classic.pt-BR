@@ -60,10 +60,10 @@ Esse elemento permite definir um parâmetro para chamar um método SOAP.
    * booleano
    * byte
    * CDATA
-   * datetime
+   * data e hora
    * datetimetz
    * datetimenotz
-   * date
+   * data
    * Documento DOM
    * DOMElement
    * duplo
@@ -71,16 +71,16 @@ Esse elemento permite definir um parâmetro para chamar um método SOAP.
    * flutuante
    * html
    * int64
-   * Link 
+   * link
    * long
    * memorando
    * MNTOKEN
-   * percent
+   * por cento
    * primarykey
    * curto
    * sequência de caracteres
    * tempo
-   * timespan
+   * intervalo de tempo
    * uuid
 
 ## Exemplos {#examples-9}

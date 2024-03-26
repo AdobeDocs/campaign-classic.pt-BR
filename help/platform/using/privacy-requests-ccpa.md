@@ -11,7 +11,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '567'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,7 @@ Para isso, é necessário estender a tabela Perfis e adicionar um campo **[!UICO
 
 Para usufruir dessa informação, é necessário criar esse campo no Adobe Campaign Classic. Para isso, você adicionará um campo booleano à tabela **[!UICONTROL Recipient]**. Quando um campo é criado, ele se torna automaticamente compatível com a API do Campaign.
 
-Se você usar uma tabela de recipient personalizada, também precisará executar essa operação.
+Se você usar uma tabela de destinatário personalizada, também precisará executar essa operação.
 
 Para obter mais informações sobre como criar um novo campo, consulte a [documentação sobre adição de schema](../../configuration/using/about-schema-edition.md).
 
@@ -58,7 +58,7 @@ Para obter mais informações sobre como criar um novo campo, consulte a [docume
 
    ![](assets/privacy-ccpa-3.png)
 
-1. Clique no nó **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** do explorador. Em **[!UICONTROL Recipient (nms)]**, em “Pacote geral”, adicione um elemento `<input>` e use, para o valor xpath, o caminho relativo definido na etapa 2. Para obter mais informações sobre identificação de formulário, consulte [esta seção](../../configuration/using/identifying-a-form.md).
+1. Clique no nó **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** do explorer. Em **[!UICONTROL Recipient (nms)]**, em “Pacote geral”, adicione um elemento `<input>` e use, para o valor xpath, o caminho relativo definido na etapa 2. Para obter mais informações sobre identificação de formulário, consulte [esta seção](../../configuration/using/identifying-a-form.md).
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>
@@ -66,7 +66,7 @@ Para obter mais informações sobre como criar um novo campo, consulte a [docume
 
    ![](assets/privacy-ccpa-4.png)
 
-1. Desconecte e reconecte. Siga as etapas descritas na próxima seção para verificar se o campo está disponível nos detalhes do recipient.
+1. Desconecte e reconecte. Siga as etapas descritas na próxima seção para verificar se o campo está disponível nos detalhes do destinatário.
 
 ## Uso {#usage}
 
@@ -80,14 +80,14 @@ Para preencher os valores, vários métodos podem ser utilizados:
 
 Você deve garantir que nunca venderá a terceiros as informações pessoais de perfis que recusaram a adesão.
 
-1. Para alterar o status de recusa, acesse **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** e selecione um recipient. Na guia **[!UICONTROL General]**, você verá o campo configurado na seção anterior.
+1. Para alterar o status de recusa, acesse **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]** e selecione um destinatário. Na guia **[!UICONTROL General]**, você verá o campo configurado na seção anterior.
 
    ![](assets/privacy-ccpa-5.png)
 
-1. Configure a lista de recipients para exibir a coluna de recusas. Para saber como configurar a lista, consulte a [documentação detalhada](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+1. Configure a lista de destinatários para exibir a coluna de recusas. Para saber como configurar a lista, consulte a [documentação detalhada](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
    ![](assets/privacy-ccpa-6.png)
 
-1. Você pode clicar na coluna para classificar recipients de acordo com as informações de recusa. Você também pode criar um filtro para exibir somente os recipients que tenham optado por não participar. Para obter mais informações sobre a criação de filtros, consulte [esta seção](../../platform/using/creating-filters.md).
+1. Você pode clicar na coluna para classificar destinatários de acordo com as informações de recusa. Você também pode criar um filtro para exibir somente os destinatários que tenham optado por não participar. Para obter mais informações sobre a criação de filtros, consulte [esta seção](../../platform/using/creating-filters.md).
 
    ![](assets/privacy-ccpa-7.png)

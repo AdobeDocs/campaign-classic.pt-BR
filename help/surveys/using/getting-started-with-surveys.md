@@ -68,7 +68,7 @@ No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 c
 
 * **Adicionar campos de entrada**
 
-  Para criar o conteúdo da página, você deve editá-lo: para fazer isso, clique duas vezes no objeto **[!UICONTROL Page]**. Clique no primeiro ícone na barra de ferramentas para abrir o assistente de criação de campo. Para criar um campo de entrada para o nome de usuário a ser armazenado no campo correspondente do perfil do recipient, selecione **[!UICONTROL Edit a recipient]**.
+  Para criar o conteúdo da página, você deve editá-lo: para fazer isso, clique duas vezes no objeto **[!UICONTROL Page]**. Clique no primeiro ícone na barra de ferramentas para abrir o assistente de criação de campo. Para criar um campo de entrada para o nome de usuário a ser armazenado no campo correspondente do perfil do destinatário, selecione **[!UICONTROL Edit a recipient]**.
 
   ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

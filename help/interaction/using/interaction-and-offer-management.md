@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '275'
 ht-degree: 100%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 100%
 
 A interação permite responder em tempo real durante uma interação com um determinado contato (um cliente ou target) uma única ou várias ofertas adaptadas. Por exemplo, essas podem ser mensagens de comunicação simples, ofertas especiais de um ou vários produtos ou um serviço.
 
-As ofertas são enviadas para contatos por meio de um contato de entrada (site ou call center) ou de saída (delivery de email, mala direta ou SMS dentro de uma campanha de marketing).
+As ofertas são enviadas para contatos por meio de um contato de entrada (site ou call center) ou de saída (entrega de email, mala direta ou SMS dentro de uma campanha de marketing).
 
-Você pode criar um catálogo de ofertas com os canais de entrada e saída para selecionar a melhor oferta para enviar a um contato em um certo contexto. A relevância da oferta para um recipient é definida com base nas regras de elegibilidade. A seleção de uma oferta de um conjunto de ofertas relevantes é determinada usando regras de prioridade. As regras de apresentação de ofertas oferecem o histórico de troca do contato e ajudam a evitar que elas recebam a mesma oferta várias vezes.
+Você pode criar um catálogo de ofertas com os canais de entrada e saída para selecionar a melhor oferta para enviar a um contato em um certo contexto. A relevância da oferta para um destinatário é definida com base nas regras de elegibilidade. A seleção de uma oferta de um conjunto de ofertas relevantes é determinada usando regras de prioridade. As regras de apresentação de ofertas oferecem o histórico de troca do contato e ajudam a evitar que elas recebam a mesma oferta várias vezes.
 
 A interação permite criar e gerenciar um catálogo de ofertas e configurar as regras de elegibilidade e os temas de aplicações vinculados a elas. Dependendo do canal escolhido, o conteúdo da oferta pode ser personalizado graças a várias funções de renderização. Por fim, você pode usar o módulo de simulação para calcular o impacto de uma apresentação de ofertas.
 

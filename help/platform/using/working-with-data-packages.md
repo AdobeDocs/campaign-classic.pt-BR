@@ -11,8 +11,8 @@ topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2454'
-ht-degree: 100%
+source-wordcount: '2477'
+ht-degree: 99%
 
 ---
 
@@ -354,7 +354,7 @@ Sempre importe dentro da mesma versão da plataforma. Você deve verificar se im
 
 >[!IMPORTANT]
 >
->A Adobe não oferece suporte à importação entre diferentes versões.
+>A importação entre versões diferentes não é suportada pelo Adobe.
 <!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
 
 Preste atenção ao schema e à estrutura do banco de dados. A importação do pacote com o schema deve ser seguida pela geração do schema.
@@ -366,7 +366,7 @@ Preste atenção ao schema e à estrutura do banco de dados. A importação do p
 Comece definindo diferentes tipos de pacotes. Serão usados apenas quatro tipos:
 
 **Entidades**
-* Todos os elementos específicos &quot;xtk&quot; e &quot;nms&quot; no Adobe Campaign como schemas, formulários, pastas, templates do delivery etc.
+* Todos os elementos específicos &quot;xtk&quot; e &quot;nms&quot; no Adobe Campaign como schemas, formulários, pastas, templates da entrega etc.
 * Você pode considerar uma entidade como um elemento &quot;admin&quot; e &quot;platform&quot;.
 * Não se deve incluir mais de uma entidade ao fazer upload de um pacote em uma instância do Campaign.
 

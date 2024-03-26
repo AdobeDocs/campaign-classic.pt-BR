@@ -32,7 +32,7 @@ Após a configuração dos modelos, as operações de importação e exportaçã
 
   ![](assets/s_ncs_user_import_from_production.png)
 
-* Por fim, importações e exportações também podem ser iniciadas no explorador do Adobe Campaign.
+* Por fim, importações e exportações também podem ser iniciadas no explorer do Adobe Campaign.
 
   ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 

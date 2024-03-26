@@ -23,7 +23,7 @@ Quando o [modelo de mensagem](../../message-center/using/creating-the-message-te
 
 ## Gerenciar seed addresses em mensagens transacionais {#managing-seed-addresses-in-transactional-messages}
 
-Um seed address permite exibir uma pré-visualização da mensagem, enviar uma prova e testar a personalização da mensagem antes de enviar o delivery de email ou de SMS. Os seed addresses estão vinculados ao delivery e não podem ser usados para outros deliveries.
+Um seed address permite exibir uma pré-visualização da mensagem, enviar uma prova e testar a personalização da mensagem antes de enviar a entrega de email ou de SMS. Os seed addresses estão vinculados à entrega e não podem ser usados para outras entregas.
 
 Para criar seed addresses em uma mensagem transacional, siga as etapas abaixo:
 
@@ -108,9 +108,9 @@ O envio de uma prova envolve o mesmo processo de [entrega regular](../../deliver
 
 Para enviar a prova:
 
-1. Clique no botão **[!UICONTROL Send a proof]** na janela do delivery.
-1. Analise o delivery.
-1. Corrija qualquer erro e confirme o delivery.
+1. Clique no botão **[!UICONTROL Send a proof]** na janela da entrega.
+1. Analise a entrega.
+1. Corrija qualquer erro e confirme a entrega.
 
    ![](assets/messagecenter_send_proof_001.png)
 

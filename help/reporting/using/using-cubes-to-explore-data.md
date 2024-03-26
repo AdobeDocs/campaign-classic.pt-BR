@@ -10,7 +10,7 @@ hidefromtoc: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '977'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 100%
 O Marketing Analytics facilita a criação de relatórios e a identificação e seleção de dados do banco de dados por meio dos cubos. Isso permite:
 
 * Criar relatórios com base em cubos. O processo é detalhado em: [Explorar os dados em um relatório](#exploring-the-data-in-a-report).
-* Coletar os dados no banco de dados e agrupá-los em listas, por exemplo, para identificar e criar públicos alvos e deliveries. Para obter mais informações, consulte [Criar uma população alvo](#building-a-target-population).
+* Coletar os dados no banco de dados e agrupá-los em listas, por exemplo, para identificar e criar targets e entregas. Para obter mais informações, consulte [Criar uma população alvo](#building-a-target-population).
 * Insira uma tabela dinâmica em um relatório, faça referência a um cubo existente nele. Para obter mais informações, consulte [Inserir uma tabela dinâmica em um relatório](#inserting-a-pivot-table-into-a-report).
 
 >[!NOTE]

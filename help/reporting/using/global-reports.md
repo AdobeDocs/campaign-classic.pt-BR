@@ -6,8 +6,8 @@ badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Clas
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '2308'
+workflow-type: tm+mt
+source-wordcount: '2292'
 ht-degree: 100%
 
 ---
@@ -96,11 +96,11 @@ Os seguintes indicadores são usados:
 
 * **[!UICONTROL User unknown]** : Tipo de erro gerado durante a entrega para indicar que o endereço de email é inválido.
 * **[!UICONTROL Invalid domain]** : Tipo de erro gerado ao enviar uma entrega para indicar que o domínio do endereço de email está errado ou não existe.
-* **[!UICONTROL Inbox full]** : Tipo de erro gerado após cinco tentativas de entrega para indicar que a caixa de entrada dos recipients contém muitas mensagens.
+* **[!UICONTROL Inbox full]** : Tipo de erro gerado após cinco tentativas de entrega para indicar que a caixa de entrada dos destinatários contém muitas mensagens.
 * **[!UICONTROL Account disabled]** : Tipo de erro gerado ao enviar uma entrega para indicar que o endereço não existe mais.
 * **[!UICONTROL Rejected]** : Tipo de erro gerado quando um endereço é rejeitado pelo IAP (Provedor de Acesso à Internet), por exemplo, ao seguir uma regra de segurança da aplicação (software antispam).
 * **[!UICONTROL Unreachable]** : Tipo de erro que ocorre na string de distribuição de mensagens: incidente na retransmissão SMTP, domínio temporariamente inacessível, etc
-* **[!UICONTROL Not connected]** : Tipo de erro para indicar que o celular do recipient está desligado ou sem rede no momento do envio.
+* **[!UICONTROL Not connected]** : Tipo de erro para indicar que o celular do destinatário está desligado ou sem rede no momento do envio.
 
   >[!NOTE]
   >
@@ -130,11 +130,11 @@ Você pode abrir cada linha da tabela de valores clicando no símbolo [[+]]. Par
 
 ## Navegadores {#browsers}
 
-Este relatório mostra o detalhamento dos navegadores da Internet usados pelos recipients da entrega para o período relacionado.
+Este relatório mostra o detalhamento dos navegadores da Internet usados pelos destinatários da entrega para o período relacionado.
 
 >[!NOTE]
 >
->Os valores mostrados nesse relatório são estimativas: apenas recipients que clicaram em uma entrega serão considerados.
+>Os valores mostrados nesse relatório são estimativas: apenas destinatários que clicaram em uma entrega serão considerados.
 
 **Estatísticas globais**
 
@@ -144,7 +144,7 @@ As estatísticas globais no uso do navegador são apresentadas na forma de uma t
 
 Os seguintes indicadores são usados:
 
-* **[!UICONTROL Visitors]** : número total de recipients alvos (por navegador de Internet) e que clicaram em uma entrega pelo menos uma vez.
+* **[!UICONTROL Visitors]** : número total de destinatários alvos (por navegador de Internet) e que clicaram em uma entrega pelo menos uma vez.
 * **[!UICONTROL Pages viewed]** : número total de cliques nos links em uma entrega (por navegador de Internet) para todas as entregas.
 * **[!UICONTROL Usage rate]** : essa taxa representa o detalhamento dos visitantes (por navegador de Internet) em relação ao número total de visitantes.
 
@@ -167,7 +167,7 @@ A tabela de valores usa os seguintes indicadores:
 
 ### Compartilhamento em redes sociais {#sharing-to-social-networks}
 
-O marketing viral permite que os recipients das entregas compartilhem informações com sua rede de contatos: eles podem adicionar um link para o perfil deles (X, anteriormente conhecido como Twitter, Facebook etc.) ou enviar uma mensagem a um amigo. Cada compartilhamento e cada acesso às informações compartilhadas é controlado na entrega. Para obter mais informações sobre marketing viral, consulte [esta seção](../../delivery/using/viral-and-social-marketing.md).
+O marketing viral permite que os destinatários das entregas compartilhem informações com sua rede de contatos: eles podem adicionar um link para o perfil deles (X, anteriormente conhecido como Twitter, Facebook etc.) ou enviar uma mensagem a um amigo. Cada compartilhamento e cada acesso às informações compartilhadas é controlado na entrega. Para obter mais informações sobre marketing viral, consulte [esta seção](../../delivery/using/viral-and-social-marketing.md).
 
 Este relatório mostra o detalhamento de mensagens compartilhadas e abertas discriminado por rede social (Facebook, X etc.) e/ou por email.
 
@@ -192,7 +192,7 @@ Na coluna **[!UICONTROL Shares]**, há os seguintes indicadores:
 
 Na coluna **[!UICONTROL Opens]**, há os seguintes indicadores:
 
-* **[!UICONTROL No. of opens]** : número total de mensagens abertas por pessoas que receberam a mensagem encaminhada (por meio do bloco de personalização **[!UICONTROL Links for sharing to social networks]**). Esse valor é igual ao número de vezes de exibição da mirror page. Aberturas por recipients de entrega não são consideradas.
+* **[!UICONTROL No. of opens]** : número total de mensagens abertas por pessoas que receberam a mensagem encaminhada (por meio do bloco de personalização **[!UICONTROL Links for sharing to social networks]**). Esse valor é igual ao número de vezes de exibição da mirror page. Aberturas por destinatários de entrega não são consideradas.
 * **[!UICONTROL Breakdown]** : essa taxa representa o detalhamento de aberturas por rede social em relação ao número total de aberturas.
 * **[!UICONTROL Rate of opens]** : essa taxa representa o detalhamento de aberturas por rede social em relação ao número total de compartilhamentos.
 
@@ -213,16 +213,16 @@ As estatísticas são apresentadas no formato de uma tabela de valores e um grá
 Os seguintes indicadores são usados:
 
 * **[!UICONTROL New contacts]** : número de novas subscrições após o recebimento de uma mensagem compartilhada por email. Esse valor corresponde ao número de pessoas que receberam uma mensagem compartilhada por email, clicado no **[!UICONTROL Subscription link]** e preenchido no formulário de subscrição.
-* **[!UICONTROL Opens]** : número total de mensagens abertas por pessoas para quem a mensagem foi transferida (por meio do bloco de personalização **[!UICONTROL Link for sharing to social networks]**). Esse valor é igual ao número de vezes de exibição da mirror page. Aberturas por recipients de entrega não são consideradas.
+* **[!UICONTROL Opens]** : número total de mensagens abertas por pessoas para quem a mensagem foi transferida (por meio do bloco de personalização **[!UICONTROL Link for sharing to social networks]**). Esse valor é igual ao número de vezes de exibição da mirror page. Aberturas por destinatários de entrega não são consideradas.
 * **[!UICONTROL Sharing activities]** : Número total de mensagens compartilhadas em redes sociais. Esse valor corresponde ao número total de cliques no ícone do bloco de personalização **[!UICONTROL Links for sharing to social networks]**.
 
 ## Sistemas operacionais {#operating-systems}
 
-Este relatório exibe o detalhamento dos sistemas operacionais usados pelos recipients de entrega do período relacionado.
+Este relatório exibe o detalhamento dos sistemas operacionais usados pelos destinatários de entrega do período relacionado.
 
 >[!NOTE]
 >
->Os valores mostrados nesse relatório são estimativas: apenas recipients que clicaram em uma entrega serão considerados.
+>Os valores mostrados nesse relatório são estimativas: apenas destinatários que clicaram em uma entrega serão considerados.
 
 **Estatísticas globais**
 
@@ -232,7 +232,7 @@ As estatísticas de uso global dos sistemas operacionais são apresentadas no fo
 
 Os seguintes indicadores são usados:
 
-* **[!UICONTROL Visitors]** : média diária do número total de recipients alvos (por sistema operacional) que clicaram em uma entrega pelo menos uma vez.
+* **[!UICONTROL Visitors]** : média diária do número total de destinatários alvos (por sistema operacional) que clicaram em uma entrega pelo menos uma vez.
 * **[!UICONTROL Pages viewed]** : média diária do número total de cliques nos links de entrega (por sistema operacional) para todas as entregas.
 * **[!UICONTROL Rate of use]** : essa taxa representa o detalhamento dos visitantes (por sistema operacional) em relação ao número total de visitantes.
 
@@ -296,7 +296,7 @@ Os seguintes indicadores são usados:
   >
   >Para obter mais informações sobre devoluções permanentes e temporárias, consulte [Gestão de quarentena](../../delivery/using/understanding-quarantine-management.md).
 
-* **[!UICONTROL Opens]**: porcentagem do número de recipients alvos que abriram uma mensagem pelo menos uma vez em comparação ao número de mensagens processadas com êxito.
+* **[!UICONTROL Opens]**: porcentagem do número de destinatários alvos que abriram uma mensagem pelo menos uma vez em comparação ao número de mensagens processadas com êxito.
 * **[!UICONTROL Clicks]**: porcentagem do número de pessoas que clicaram em uma entrega pelo menos uma vez em comparação ao número de mensagens processadas com êxito.
 * **[!UICONTROL Unsubscription]**: porcentagem do número de cliques em um link de cancelamento de subscrição em comparação ao número de mensagens processadas com êxito.
 

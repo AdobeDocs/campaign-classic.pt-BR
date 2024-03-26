@@ -9,8 +9,8 @@ level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 62%
+source-wordcount: '2211'
+ht-degree: 41%
 
 ---
 
@@ -36,15 +36,15 @@ Os impactos globais no banco de dados e na infraestrutura estão listados abaixo
 
   Além disso, para preservar o melhor nível de segurança, a Adobe não fornecerá informações detalhadas relacionadas à infraestrutura.
 
-* **Existe o risco de perda de dados?**
+* **Há risco de perda de dados?**
 
   O banco de dados será descarregado do datacenter herdado e restaurado na Nuvem pública (AWS). Quando reiniciado no novo data center, o aplicativo será retomado do estado exato em que estava antes da migração. Os usuários não notarão diferença, exceto que algumas tarefas programadas terão sido adiadas.
 
-* **Há diferenças no tamanho do pacote entre o data center herdado e a Nuvem pública?**
+* **Existem diferenças no tamanho do pacote entre o data center herdado e a Nuvem pública?**
 
   Estamos provisionando na Nuvem pública (AWS) com novas definições de pacote com base no tamanho atual do banco de dados, tamanho do disco, etc. Por exemplo, se um cliente tiver um servidor de aplicativos em data centers herdados, poderá ter dois servidores de aplicativos na Nuvem pública (AWS) com base nas definições do pacote.
 
-* **Haverá alteração no número de build ou na versão do Campaign?**
+* **O número de build ou a versão do Campaign será alterado?**
 
   Como primeiro passo, manteremos o mesmo build do Campaign Classic com a migração.
 
@@ -52,7 +52,7 @@ Os impactos globais no banco de dados e na infraestrutura estão listados abaixo
 
 * **Qual é o plano para solucionar problemas após a migração?**
 
-  Testes abrangentes serão realizados antes da migração dos sistemas de produção. No entanto, em caso de problemas, [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) continuará a ser o principal ponto de contato. A Adobe criou uma equipe de especialistas para fornecer suporte avançado, se necessário.
+  Testes abrangentes serão realizados antes da migração dos sistemas de produção. No entanto, em caso de problemas, [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) continuará a ser o principal ponto de contato. a Adobe criou uma equipe de especialistas para fornecer suporte avançado, se necessário.
 
 ## Impactos na capacidade de entrega
 
@@ -94,7 +94,7 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 
   Primeiramente, a equipe de Entregabilidade do Adobe avaliará o status da capacidade de entrega da plataforma e recomendará um plano para a mudança para os novos IPs
 
-  Nenhum aquecimento será necessário após a migração. Pode haver algumas exceções e, nesse caso, o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) entrará em contato com os clientes.
+  Nenhum aquecimento será necessário após a migração. Pode tratar-se de uma exceção e, nesse caso, [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) entrará em contato com os clientes.
 
   No entanto, o plano é tornar essa operação transparente para a empresa, diferentemente do aumento inicial realizado durante a ativação.
 
@@ -138,7 +138,7 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
   Os endereços IP dos servidores de aplicativos do Adobe Campaign serão alterados. Essa etapa será realizada pelo Atendimento ao cliente da Adobe após a migração.
 
-* **A migração afetará a conectividade com outras soluções da Adobe (AEM, Target, etc.)?**
+* **A migração afetará a conectividade com outras soluções de Adobe (AEM, Target etc.)?**
 
   As integrações são uma combinação de endereços IP declarados no arquivo de inclui na lista de permissões e na configuração da conta do serviço da Web. Isso será de responsabilidade do Atendimento ao cliente Adobe.
 
@@ -185,13 +185,13 @@ Com essa migração para a Nuvem pública (AWS), os ambientes do cliente serão 
 
 Os impactos em permissões, certificados e acesso SFTP estão listados abaixo.
 
-* **Vamos transferir todos os certificados para os novos servidores?**
+* **Vamos mover todos os certificados para os novos servidores?**
 
   Sim, todos os certificados serão movidos como parte dessa migração.
 
 * **Precisamos solicitar novas chaves de acesso STP ao cliente?**
 
-  Não, a Adobe copiará as chaves de acesso SFTP como estão no novo servidor.
+  Não, o Adobe copiará as chaves de acesso SFTP como estão no novo servidor.
 
 * **Como as permissões SFTP são tratadas?**
 
@@ -226,7 +226,7 @@ Os impactos globais durante a migração estão listados abaixo.
 
   A Adobe recomenda desacelerar e, idealmente, pausar todas as execuções pouco antes do desligamento do aplicativo no data center herdado: entregas e fluxos de trabalho. Isso facilitará a reinicialização no Servidor na nuvem (AWS), pois os processos terão tempo para pausar &quot;normalmente&quot; e salvar qualquer estado de execução em andamento.
 
-* **Esperamos tempo de inatividade do serviço do Adobe Campaign?**
+* **Esperamos tempo de inatividade do serviço da Adobe Campaign?**
 
   A migração terá um tempo de inatividade inevitável da plataforma. O objetivo deste plano é orientar para minimizar esse tempo de inatividade.
 

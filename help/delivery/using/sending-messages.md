@@ -8,7 +8,7 @@ feature: Email
 role: User
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 100%
 
@@ -16,20 +16,20 @@ ht-degree: 100%
 
 # Etapas principais para enviar um email {#key-steps-to-send-an-email}
 
-Depois que o email for criado e configurado, você poderá enviá-lo ao público-alvo principal. Esta seção apresenta as etapas principais para verificar e confirmar o delivery de um email.
+Depois que o email for criado e configurado, você poderá enviá-lo ao público-alvo principal. Esta seção apresenta as etapas principais para verificar e confirmar a entrega de um email.
 
-1. Defina todas as configurações específicas para o delivery de email. Para obter mais informações, consulte [Parâmetros de email](email-parameters.md).
+1. Defina todas as configurações específicas para a entrega de email. Para obter mais informações, consulte [Parâmetros de email](email-parameters.md).
 1. Quando o email está pronto, antes de enviá-lo ao público-alvo principal, é recomendável detectar possíveis erros enviando provas. Para obter mais informações, consulte [Enviar uma prova](steps-validating-the-delivery.md#sending-a-proof).
 
 1. Depois de concluído, você deve validar o email iniciando a análise. Para fazer isso, clique em **[!UICONTROL Send]**, selecione uma ação e clique em **[!UICONTROL Analyze]**. Para obter mais informações, consulte [Iniciar a análise](steps-validating-the-delivery.md#analyzing-the-delivery).
 
-1. Quando a análise for concluída, clique em **[!UICONTROL Confirm delivery]** para iniciar o delivery de mensagens aos recipients direcionados. Para obter mais informações, consulte [Confirmar delivery](steps-sending-the-delivery.md#confirming-delivery).
+1. Quando a análise for concluída, clique em **[!UICONTROL Confirm delivery]** para iniciar a entrega de mensagens aos destinatários direcionados. Para obter mais informações, consulte [Confirmar entrega](steps-sending-the-delivery.md#confirming-delivery).
 
    <!--Add screenshot with analysis done and Confirm delivery button activated.-->
 
 >[!NOTE]
 >
->Todo o processo para validar um delivery está descrito [nesta seção](steps-validating-the-delivery.md). As etapas detalhadas completas para configurar e enviar um delivery são apresentadas [nesta seção](steps-sending-the-delivery.md).
+>Todo o processo para validar uma entrega está descrito [nesta seção](steps-validating-the-delivery.md). As etapas detalhadas completas para configurar e enviar uma entrega são apresentadas [nesta seção](steps-sending-the-delivery.md).
 
 As seguintes seções detalham as configurações específicas para a entrega de emails:
 <!--* [Generating the mirror page](generating-mirror-page.md)

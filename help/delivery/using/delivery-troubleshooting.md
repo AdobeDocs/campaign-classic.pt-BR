@@ -1,24 +1,24 @@
 ---
 product: campaign
-title: Solução de problemas de envio de delivery
-description: Saiba mais sobre o desempenho do delivery e como solucionar problemas relacionados ao monitoramento do delivery
+title: Solução de problemas de envio de entrega
+description: Saiba mais sobre o desempenho da entrega e como solucionar problemas relacionados ao monitoramento da entrega
 badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring, Deliverability, Troubleshooting
 role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '803'
+workflow-type: tm+mt
+source-wordcount: '804'
 ht-degree: 100%
 
 ---
 
 # Solução de problemas de envio de entrega {#delivery-troubleshooting}
 
-Esta seção lista problemas comuns que você pode encontrar ao enviar deliveries e como solucioná-los.
+Esta seção lista problemas comuns que você pode encontrar ao enviar entregas e como solucioná-los.
 
-Além disso, siga as práticas recomendadas e a lista de verificação detalhada [nesta página](delivery-performances.md) para garantir que seus deliveries tenham bom desempenho.
+Além disso, siga as práticas recomendadas e a lista de verificação detalhada [nesta página](delivery-performances.md) para garantir que suas entregas tenham bom desempenho.
 
 **Tópicos relacionados:**
 
@@ -28,11 +28,11 @@ Além disso, siga as práticas recomendadas e a lista de verificação detalhada
 
 ## Entregas lentas {#slow-deliveries}
 
-Depois de clicar no botão **[!UICONTROL Send]**, seu delivery parece demorar mais do que o normal. Isso pode ser causado por elementos diferentes:
+Depois de clicar no botão **[!UICONTROL Send]**, sua entrega parece demorar mais do que o normal. Isso pode ser causado por elementos diferentes:
 
 * Alguns provedores de email podem ter adicionado seus endereços IP a uma lista de bloqueios. Neste caso, verifique seus broadlogs e consulte [esta seção](about-deliverability.md).
 
-* Seu delivery pode ser muito grande para ser processado rapidamente, isso pode ocorrer com alta personalização do JavaScript ou se o seu delivery pesa mais do que 60 kbytes. Consulte as [Práticas recomendadas de delivery](delivery-best-practices.md) do Adobe Campaign para saber mais sobre as diretrizes de conteúdo.
+* Sua entrega pode ser muito grande para ser processada rapidamente, isso pode ocorrer com alta personalização do JavaScript ou se a sua entrega pesa mais do que 60 kbytes. Consulte as [Práticas recomendadas de entrega](delivery-best-practices.md) do Adobe Campaign para saber mais sobre as diretrizes de conteúdo.
 
 * Pode ter ocorrido limitação dentro do MTA do Adobe Campaign. Isso é causado por:
 
@@ -44,27 +44,27 @@ Depois de clicar no botão **[!UICONTROL Send]**, seu delivery parece demorar ma
 
 ## Entregas agendadas {#scheduled-deliveries-}
 
-Se os deliveries não forem executados em uma data agendada específica, ela poderá estar relacionada a uma diferença entre o fuso horário dos servidores. A instância mid-sourcing e a instância de produção podem estar em fusos horários diferentes.
+Se as entregas não forem executadas em uma data agendada específica, pode ser por diferença entre o fuso horário dos servidores. A instância mid-sourcing e a instância de produção podem estar em fusos horários diferentes.
 
-Como exemplo, se a ocorrência de mid-sourcing estiver no fuso horário de Brisbane e a instância de produção estiver no fuso horário de Darwin, os fusos horários têm meia hora de diferença um do outro e, no log de auditoria, é possível ver claramente que se o delivery estiver agendado para a produção às 11h56, o mesmo delivery agendado para mid deveria ser às 12h26, com uma diferença de meia hora.
+Como exemplo, se a ocorrência de mid-sourcing estiver no fuso horário de Brisbane e a instância de produção estiver no fuso horário de Darwin, os fusos horários têm meia hora de diferença um do outro e, no log de auditoria, é possível ver claramente que se a entrega estiver agendada para a produção às 11h56, a mesma entrega agendada para mid deveria ser às 12h26, com uma diferença de meia hora.
 
 ## Status de falha {#failed-status}
 
-Se o status de um delivery de email for **[!UICONTROL Failed]**, ele poderá ser vinculado a um problema com blocos de personalização. Os blocos de personalização em um delivery podem gerar erros quando os schemas não correspondem ao mapeamento do delivery, por exemplo.
+Se o status de uma entrega de email for **[!UICONTROL Failed]**, ela poderá ser vinculada a um problema com blocos de personalização. Os blocos de personalização em uma entrega podem gerar erros quando os schemas não correspondem ao mapeamento da entrega, por exemplo.
 
-Os logs do delivery são fundamentais para saber por que um delivery falhou. Aqui estão possíveis erros que você pode detectar nos logs de delivery:
+Os logs da entrega são fundamentais para saber por que uma entrega falhou. Aqui estão possíveis erros que você pode detectar nos logs de entrega:
 
-* Se as mensagens do recipient falharem com uma declaração de erro &quot;Inacessível&quot;:
+* Se as mensagens do destinatário falharem com uma declaração de erro &quot;Inacessível&quot;:
 
   ```
   Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
   ```
 
-  A causa desse problema é quase sempre uma personalização na tentativa do HTML que chama uma tabela ou campo que não foi definido ou mapeado no direcionamento de upstream ou no target mapping do delivery.
+  A causa desse problema é quase sempre uma personalização na tentativa do HTML que chama uma tabela ou campo que não foi definido ou mapeado no direcionamento de upstream ou no target mapping da entrega.
 
-  Para corrigir isso, o workflow e o conteúdo do delivery precisam ser revisados para determinar especificamente qual personalização está tentando chamar a tabela em questão e se a tabela pode ou não ser mapeada. A partir daí, ao remover a chamada para esta tabela no HTML ou ao corrigir o mapping para o delivery pode ser o caminho para a resolução.
+  Para corrigir isso, o workflow e o conteúdo da entrega precisam ser revisados para determinar especificamente qual personalização está tentando chamar a tabela em questão e se a tabela pode ou não ser mapeada. A partir daí, ao remover a chamada para esta tabela no HTML ou ao corrigir o mapping para a entrega pode ser o caminho para a resolução.
 
-* No modelo de implantação mid-sourcing, a seguinte mensagem pode aparecer nos logs de delivery:
+* No modelo de implantação mid-sourcing, a seguinte mensagem pode aparecer nos logs de entrega:
 
   ```
   Error during the call of method 'AppendDeliveryPart' on the mid sourcing server: 'Communication error with the server: please check this one is correctly configured. Code HTTP 408 'Service temporarily unavailable'.
@@ -76,22 +76,22 @@ Os logs do delivery são fundamentais para saber por que um delivery falhou. Aqu
 
   Você também deve reiniciar todos os workflows com uma atividade agendada e todos os workflows com o status de falha. Consulte [esta seção](../../workflow/using/scheduler.md).
 
-* Quando um delivery falha, o seguinte erro pode aparecer nos logs de delivery:
+* Quando uma entrega falha, o seguinte erro pode aparecer nos logs de entrega:
 
   ```
   DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
   ```
 
-  Normalmente, esse erro significa que há um campo ou bloco de personalização no email com mais de um valor para o recipient. Um bloco de personalização está sendo usado e está buscando mais de um registro para um determinado recipient.
+  Normalmente, esse erro significa que há um campo ou bloco de personalização no email com mais de um valor para o destinatário. Um bloco de personalização está sendo usado e está buscando mais de um registro para um determinado destinatário.
 
-  Para resolver isso, verifique os dados de personalização usados e verifique o target para os recipients que têm mais de uma entrada para qualquer um desses campos. Você também pode usar uma atividade **[!UICONTROL Deduplication]** no workflow para construção do target antes da atividade de delivery para verificar se há apenas um campo de personalização por vez. Para obter mais informações sobre desduplicação, consulte [esta página](../../workflow/using/deduplication.md).
+  Para resolver isso, verifique os dados de personalização usados e verifique o target para os destinatários que têm mais de uma entrada para qualquer um desses campos. Você também pode usar uma atividade **[!UICONTROL Deduplication]** no workflow para construção do target antes da atividade de entrega para verificar se há apenas um campo de personalização por vez. Para obter mais informações sobre desduplicação, consulte [esta página](../../workflow/using/deduplication.md).
 
-* Alguns deliveries podem falhar com um erro &quot;Inacessível&quot; informando:
+* Algumas entregas podem falhar com um erro &quot;Inacessível&quot; informando:
 
   ```
   Inbound email bounce (rule 'Auto_replies' has matched this bounce).
   ```
 
-  Isso significa que o delivery teve êxito, mas o Adobe Campaign recebeu uma resposta automática do recipient (por exemplo, uma &quot;ausência temporária&quot;) que corresponde às regras de email de entrada &quot;Respostas_automáticas&quot;.
+  Isso significa que a entrega teve êxito, mas o Adobe Campaign recebeu uma resposta automática do destinatário (por exemplo, uma &quot;ausência temporária&quot;) que corresponde às regras de email de entrada &quot;Respostas_automáticas&quot;.
 
-  O email de resposta automática é ignorado pelo Adobe Campaign e o endereço do recipient não será enviado para a quarentena.
+  O email de resposta automática é ignorado pelo Adobe Campaign e o endereço do destinatário não será enviado para a quarentena.

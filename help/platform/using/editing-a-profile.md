@@ -81,7 +81,7 @@ O botão **[!UICONTROL Detail]** exibe as propriedades da assinatura selecionada
 
 Para obter mais informações, consulte [esta página](../../delivery/using/managing-subscriptions.md).
 
-## Guia Deliveries {#deliveries-tab}
+## Guia Entregas {#deliveries-tab}
 
 Esta tela exibe os logs de entrega do perfil selecionado. Também é possível exibir os rótulos, as datas e os status das ações de entrega endereçadas ao perfil por todos os canais.
 

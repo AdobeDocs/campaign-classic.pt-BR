@@ -8,8 +8,8 @@ feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '2756'
+workflow-type: tm+mt
+source-wordcount: '2767'
 ht-degree: 100%
 
 ---
@@ -24,17 +24,17 @@ O Adobe Campaign trata as contas externas como entidades não relacionadas.
 
 Se você tiver várias contas, siga este procedimento para isolar a conta externa que está causando problemas:
 
-1. Desative todas as contas externas.
+1. Desabilite todas as contas externas.
 1. Ative uma conta externa.
 1. Tente reproduzir o problema.
 1. Se o problema inicial nem sempre ocorrer, faça uma quantidade razoável de tentativas antes de concluir.
-1. Se o problema não ocorrer com essa única conta, desative-a e a reinicie na etapa 2 na próxima conta.
+1. Se o problema não ocorrer com essa única conta, desabilite-a e reinicie na etapa 2 na próxima conta.
 
 Depois de verificar cada conta individualmente, há dois cenários possíveis:
 
 * **O problema ocorreu em uma ou em várias contas**
 
-  Nesse caso, você pode aplicar outros procedimentos de solução de problemas a cada conta individualmente. É melhor desativar outras contas ao diagnosticar uma conta para reduzir o tráfego de rede e o número de logs.
+  Nesse caso, você pode aplicar outros procedimentos de solução de problemas a cada conta individualmente. É melhor desabilitar outras contas ao diagnosticar uma conta para reduzir o tráfego de rede e o número de logs.
 
 * **O problema não ocorreu quando apenas uma conta estava ativa a qualquer momento**
 
@@ -70,7 +70,7 @@ O Adobe Campaign dá suporte à manipulação de vários códigos curtos na mesm
 
 ## Problema de mid-sourcing (hospedado){#issue-mid-sourcing}
 
-* Se o problema ocorrer em um ambiente mid-sourcing, verifique se o delivery e os logs amplos foram criados e atualizados corretamente no servidor mid-sourcing. Se não for o caso, não será um problema de SMS.
+* Se o problema ocorrer em um ambiente mid-sourcing, verifique se a entrega e os logs amplos foram criados e atualizados corretamente no servidor mid-sourcing. Se não for o caso, não será um problema de SMS.
 
 * Se tudo funcionar no servidor intermediário e o SMS for enviado corretamente, mas a instância de marketing não for atualizada corretamente, talvez você tenha um problema de sincronização intermediária.
 
@@ -120,7 +120,7 @@ Como corrigir problemas de estabilidade de conexão:
 
 * Se o reinício do MTA fizer com que o envio do MT funcione novamente por um breve período, provavelmente você terá uma limitação devido a uma conexão instável. Consulte a seção [Problema com conexões instáveis](troubleshooting-sms.md#issues-unstable-connection).
 
-* Verifique se o log amplo está presente e com o status e as datas corretas. Se não for o caso, poderá ser um problema de delivery ou de preparação de delivery.
+* Verifique se o log amplo está presente e com o status e as datas corretas. Se não for o caso, poderá ser um problema de entrega ou de preparação de entrega.
 
 * Verifique se o MTA realmente processa a mensagem. Se não for o caso, talvez não seja um problema de SMS.
 
@@ -178,11 +178,11 @@ Se você corrigiu tudo, mas alguns SR inválidos ainda estão nos buffers do pro
 
 * Se o `SUBMIT_SM MT PDU` que contém a resposta for encontrado nos rastreamentos, mas o SMS não chegar ao telefone celular, você terá que entrar em contato com o provedor para obter assistência na solução de problemas.
 
-## Problema durante a preparação de entrega sem a exclusão de recipient em quarentena (em quarentena pelo recurso de resposta automática) {#issue-delivery-preparation}
+## Problema durante a preparação de entrega sem a exclusão de destinatário em quarentena (em quarentena pelo recurso de resposta automática) {#issue-delivery-preparation}
 
-* Verifique se o formato do número de telefone é exatamente o mesmo na tabela de quarentena e no log de delivery. Caso contrário, consulte esta [seção](sms-protocol.md#automatic-reply) se tiver problemas com o prefixo &quot;+&quot; do formato de número de telefone internacional.
+* Verifique se o formato do número de telefone é exatamente o mesmo na tabela de quarentena e no log de entrega. Caso contrário, consulte esta [seção](sms-protocol.md#automatic-reply) se tiver problemas com o prefixo &quot;+&quot; do formato de número de telefone internacional.
 
-* Verifique os códigos curtos. Poderão correr exclusões se o código curto do recipient for igual ao definido na conta externa ou se estiver vazio (vazio = qualquer código curto). Se apenas um código curto for usado para toda a instância do Adobe Campaign, será mais fácil deixar todos os campos de **código curto** vazios.
+* Verifique os códigos curtos. Poderão correr exclusões se o código curto do destinatário for igual ao definido na conta externa ou se estiver vazio (vazio = qualquer código curto). Se apenas um código curto for usado para toda a instância do Adobe Campaign, será mais fácil deixar todos os campos de **código curto** vazios.
 
 ## Problemas de codificação {#encoding-issues}
 
@@ -266,7 +266,7 @@ Em alguns casos, a captura do tráfego de rede não é necessária. As situaçõ
 
 * Processamento de MO (respostas automáticas, quarentena).
 
-* Erros que não envolvem o tráfego SMPP real: preparação de delivery, problemas da API do centro de mensagens, problemas de fluxo de trabalho etc.
+* Erros que não envolvem o tráfego SMPP real: preparação de entrega, problemas da API do centro de mensagens, problemas de fluxo de trabalho etc.
 
 ## Habilitar rastreamentos SMPP {#enabling-smpp-traces}
 

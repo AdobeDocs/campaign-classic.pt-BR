@@ -36,7 +36,7 @@ Para criar um cubo, clique no botão **[!UICONTROL New]** acima da lista de cubo
 
 ![](assets/s_advuser_cube_create.png)
 
-Selecione o schema de fatos, ou seja, o schema que contém os elementos que deseja explorar. Neste exemplo, vamos selecionar a tabela **Recipient**.
+Selecione o schema de fatos, ou seja, o schema que contém os elementos que deseja explorar. Neste exemplo, vamos selecionar a tabela **Destinatário**.
 
 ![](assets/s_advuser_cube_wz_02.png)
 
@@ -56,15 +56,15 @@ Clique no botão **[!UICONTROL Add]** para criar uma nova dimensão, em seguida,
 
 ![](assets/s_advuser_cube_wz_04.png)
 
-* Comece selecionando a **Idade** do recipient. Para esse campo, você pode definir uma compartimentalização para agrupar idades e facilitar a leitura das informações. Recomendamos o uso de compartimentalização quando houver a probabilidade de vários valores separados.
+* Comece selecionando a **Idade** do destinatário. Para esse campo, você pode definir uma compartimentalização para agrupar idades e facilitar a leitura das informações. Recomendamos o uso de compartimentalização quando houver a probabilidade de vários valores separados.
 
   Para fazer isso, marque a opção **[!UICONTROL Enable binning]**. Os modos de delimitação são detalhados em [Vínculo de dados](../../reporting/using/concepts-and-methodology.md#data-binning).
 
   ![](assets/s_advuser_cube_wz_05.png)
 
-* Adicione uma dimensão do tipo **Data.** Aqui, queremos exibir as datas de criação do perfil de recipient.
+* Adicione uma dimensão do tipo **Data.** Aqui, queremos exibir as datas de criação do perfil de destinatário.
 
-  Para fazer isso, clique em **[!UICONTROL Add]** e selecione o campo **[!UICONTROL Creation date]** na tabela de recipients.
+  Para fazer isso, clique em **[!UICONTROL Add]** e selecione o campo **[!UICONTROL Creation date]** na tabela de destinatários.
 
   ![](assets/s_advuser_cube_wz_06.png)
 
@@ -74,9 +74,9 @@ Clique no botão **[!UICONTROL Add]** para criar uma nova dimensão, em seguida,
 
   Em nosso exemplo, queremos apenas exibir anos, meses e dias já que não é possível trabalhar com semanas e semestres/meses ao mesmo tempo: esses níveis não são compatíveis.
 
-* Crie outra dimensão para analisar dados relativos à cidade do recipient
+* Crie outra dimensão para analisar dados relativos à cidade do destinatário
 
-  Para fazer isso, adicione uma nova dimensão e selecione a cidade no nó **[!UICONTROL Location]** do schema do recipient.
+  Para fazer isso, adicione uma nova dimensão e selecione a cidade no nó **[!UICONTROL Location]** do schema do destinatário.
 
   ![](assets/s_advuser_cube_wz_08.png)
 
@@ -99,7 +99,7 @@ Depois que as dimensões forem definidas, é necessário especificar um modo de 
 Para fazer isso, siga as etapas abaixo:
 
 1. Clique no botão **[!UICONTROL Add]**.
-1. Selecione o tipo de medida e a fórmula a ser aplicada. Aqui queremos contar o número de mulheres entre os recipients.
+1. Selecione o tipo de medida e a fórmula a ser aplicada. Aqui queremos contar o número de mulheres entre os destinatários.
 
    Nossa medida é baseada no schema de fatos e usa o operador **[!UICONTROL Count]**.
 

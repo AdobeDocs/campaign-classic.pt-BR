@@ -8,7 +8,7 @@ feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
 source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1665'
 ht-degree: 100%
 
@@ -108,7 +108,7 @@ Atualmente, essa opção está disponível somente quando as seguintes condiçõ
 
 * A entrega deve ser um email. Por enquanto, os outros canais não são compatíveis.
 * O mid-sourcing ou roteamento externo não deve ser usado, apenas o tipo de roteamento de entrega em massa. É possível verificar o roteamento usado na guia **[!UICONTROL General]** do **[!UICONTROL Delivery properties]**.
-* Não é possível direcionar uma população proveniente de um arquivo externo. Para uma única entrega, clique no link **[!UICONTROL To]** do **[!UICONTROL Email parameters]** e verifique se a opção **[!UICONTROL Defined in the database]** está selecionada. Para uma entrega usada em um workflow, verifique se os recipients estão **[!UICONTROL Specified by the inbound event(s)]** na guia **[!UICONTROL Delivery]**.
+* Não é possível direcionar uma população proveniente de um arquivo externo. Para uma única entrega, clique no link **[!UICONTROL To]** do **[!UICONTROL Email parameters]** e verifique se a opção **[!UICONTROL Defined in the database]** está selecionada. Para uma entrega usada em um workflow, verifique se os destinatários estão **[!UICONTROL Specified by the inbound event(s)]** na guia **[!UICONTROL Delivery]**.
 * É necessário o uso de um banco de dados PostgreSQL.
 
 ### Configurar a prioridade da análise {#analysis-priority-}
@@ -152,7 +152,7 @@ Para enviar uma prova, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Se vários formatos forem criados para a entrega (HTML e Texto), você poderá escolher o formato das mensagens a serem enviadas aos recipients da prova na seção inferior da janela.
+   >Se vários formatos forem criados para a entrega (HTML e Texto), você poderá escolher o formato das mensagens a serem enviadas aos destinatários da prova na seção inferior da janela.
 
    ![](assets/s_ncs_user_email_del_send_proof_formats.png)
 
@@ -164,14 +164,14 @@ Depois que a entrega for analisada, você poderá ver as várias provas enviadas
 
 Você deverá enviar quantas provas forem necessárias até que o conteúdo da entrega esteja finalizado. Depois disso, você poderá enviar a entrega para o target principal e fechar o ciclo de validação.
 
-A guia **[!UICONTROL Advanced]** das propriedades de entrega permite definir as propriedades da prova. Quando necessário, você poderá substituir as regras de exclusão de recipient.
+A guia **[!UICONTROL Advanced]** das propriedades de entrega permite definir as propriedades da prova. Quando necessário, você poderá substituir as regras de exclusão de destinatário.
 
 ![](assets/s_ncs_user_wizard_email01_145.png)
 
 As seguintes opções estão disponíveis:
 
 * A primeira opção permite que você mantenha as duplicatas da prova.
-* As duas opções a seguir permitem manter em quarentena os recipients que estão nas listas de bloqueio e de endereços. Consulte a descrição dessas opções para o target principal em [Personalizar configurações de exclusão](steps-defining-the-target-population.md#customizing-exclusion-settings). Diferentemente do target de uma entrega, em que esses endereços são excluídos por padrão, eles serão mantidos por padrão para o target de uma prova.
+* As duas opções a seguir permitem manter em quarentena os destinatários que estão nas listas de bloqueio e de endereços. Consulte a descrição dessas opções para o target principal em [Personalizar configurações de exclusão](steps-defining-the-target-population.md#customizing-exclusion-settings). Diferentemente do target de uma entrega, em que esses endereços são excluídos por padrão, eles serão mantidos por padrão para o target de uma prova.
 * A opção **[!UICONTROL Keep the delivery code for the proof]** permite que você forneça o mesmo código de entrega que o definido para a entrega com a qual ele está relacionado. Este código é especificado na primeira etapa do assistente de entrega.
 * Por padrão, o assunto da prova tem o prefixo &#39;Proof #&#39;, onde # é o número da prova. É possível alterar esse prefixo no campo **[!UICONTROL Label prefix]**.
 

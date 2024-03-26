@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campa
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
 source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 15%
+source-wordcount: '812'
+ht-degree: 13%
 
 ---
 
@@ -51,7 +51,7 @@ Para melhorar a segurança, foi introduzido um mecanismo de assinatura para rast
 >
 >Quando um URL assinado mal formado é clicado, esse erro é retornado: `Requested URL '…' was not found.`
 
-Além disso, você pode usar um aprimoramento para desativar URLs gerados em builds anteriores. Esse recurso está desativado por padrão. Você pode entrar em contato com [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ativar esse recurso.
+Além disso, você pode usar um aprimoramento para desativar URLs gerados em builds anteriores. Esse recurso está desativado por padrão. Você pode entrar em contato com [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para ativar esse recurso.
 
 Se estiver executando na build 19.1.4, você poderá enfrentar problemas com deliveries de notificação por push usando links de rastreamento ou deliveries usando tags âncora. Em caso afirmativo, recomendamos que você desative a assinatura do URL.
 
@@ -184,4 +184,4 @@ Para proteger suas páginas, siga estas etapas:
 
 ## Solicitações de Privacidade
 
-Consulte [esta página](../../platform/using/privacy-management.md) para obter informações gerais sobre o que é a Gestão de privacidade e quais são as etapas de implementação no Adobe Campaign. Além disso, você encontrará as práticas recomendadas e uma visão geral do processo de usuários e personas.
+Consulte [esta página](../../platform/using/privacy-management.md) para obter informações gerais sobre o que é a Gestão de privacidade e quais são as etapas de implementação no Adobe Campaign. Você também encontrará as práticas recomendadas e uma visão geral do processo de usuários e personas.

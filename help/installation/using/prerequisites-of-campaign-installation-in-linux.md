@@ -4,25 +4,25 @@ title: Pré-requisitos da instalação do Campaign no Linux
 description: Pré-requisitos da instalação do Campaign no Linux
 feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
-badge-v7-prem: label="no local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="No local e híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 4%
+source-wordcount: '923'
+ht-degree: 2%
 
 ---
 
-# Pré-requisitos para instalar o Campaign no Linux{#prerequisites-of-campaign-installation-in-linux}
+# Pré-requisitos para instalar Campaign no Linux{#prerequisites-of-campaign-installation-in-linux}
 
 
 
 ## Pré-requisitos de software {#software-prerequisites}
 
-Esta seção detalha as etapas de configurações preliminares necessárias antes da instalação do Adobe Campaign.
+Esta seção detalha as etapas de configuração preliminares necessárias antes da instalação do Adobe Campaign.
 
 A configuração técnica e de software necessária para instalar o Adobe Campaign está detalhada na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
@@ -43,9 +43,9 @@ Lembrando que os seguintes componentes precisam ser instalados e configurados co
 
 Para instalar o Adobe Campaign no Linux, verifique se você tem as bibliotecas necessárias.
 
-* A biblioteca C deve poder suportar o modo TLS (segmento local de armazenamento). Esse modo está ativo na maioria dos casos, exceto com alguns kernels para os quais o suporte para Xen foi desativado.
+* A biblioteca C deve ser capaz de suportar o modo TLS (Thread Local Storage). Esse modo está ativo na maioria dos casos, exceto com alguns kernels para os quais o suporte Xen foi desativado.
 
-  Para verificar isso, você pode usar o **comando uname-a | grep Xen** por exemplo.
+  Para verificar isso, você pode usar o comando uname -a **| grep xen** , por exemplo.
 
   Se o comando não retornar nada (linha vazia), significa que a configuração está correta.
 
@@ -53,15 +53,15 @@ Para instalar o Adobe Campaign no Linux, verifique se você tem as bibliotecas n
 
   Para distribuições RHEL 7/8, é necessária a versão 1.0 do OpenSSL.
 
-* Para usar o Adobe Campaign, é necessário ter o **libicu** biblioteca instalado.
+* Para usar Adobe Campaign, você precisa ter o **biblioteca libicu** instalado.
 
-  As seguintes versões do **libicu** são suportadas (32 bits ou 64 bits):
+  As seguintes versões de **libicu** são suportadas (32 bits ou 64 bits):
 
    * RHEL 7/8, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
 
-  Para usar o Adobe Campaign, é necessário ter o LIBC-ares biblioteca instalado. No RHEL/CentOS, execute o seguinte comando:
+  Para usar Adobe Campaign, você precisa ter as bibliotecas biblioteca instaladas. No RHEL/CentOS, execute o seguinte comando:
 
   ```
   yum install c-ares
@@ -103,7 +103,7 @@ SELINUX=disabled
 
 ### Fontes para estatísticas de MTA {#fonts-for-mta-statistics}
 
-Em solicitar para relatórios sobre estatísticas MTA (NMS/FRA/JSP/stat. jsp) para serem exibidos corretamente, adicione fontes.
+Em solicitar para que relatórios de estatísticas MTA (nms/fra/jsp/stat.jsp) sejam exibidos corretamente, adicione fontes.
 
 No Debian, adicione o comando:
 
@@ -167,7 +167,7 @@ Para Debian, as seguintes configurações são necessárias:
 
 ### Instalação do LibreOffice para CentOS {#installing-libreoffice-for-centos}
 
-As configurações a seguir são necessárias com o CentOS:
+As seguintes configurações são necessárias com o CentOS:
 
 ```
 yum install libreoffice-headless libreoffice-writer libreoffice-calc
@@ -183,15 +183,15 @@ Verifique também o [Banco de dados](../../installation/using/database.md) seç�
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign oferece suporte a todas as versões do cliente PostgreSQL bibliotecas a partir da versão 7,2: ( **libpq. por exemplo, 5** , **libpq. portanto, 4** , **libpq. assim. 3.2** e **libpq. por exemplo, 3.1** ).
+Adobe Campaign suporta todas as versões do cliente PostgreSQL bibliotecas da versão 7.2: (libpq.so.5 **,** libpq.so.4 **,** libpq.so.3.2 **e** libpq.so.3.1 ****).
 
-Usar o PostgreSQL com Adobe Campaign também requer a instalação do pgcrypto **correspondente** bibliotecas.
+O uso do PostgreSQL com Adobe Campaign também requer a instalação dos bibliotecas pgcrypto **correspondentes**.
 
 ### Oracle {#oracle}
 
-Recupere a versão biblioteca para 64-bit Debian, isto é,: **libclntsh.so** , libclntsh. so. 11.1 **e** libclntsh. portanto, **10.1** .
+Recupere a versão biblioteca para Debian de 64 bits, ou seja: **libclntsh.so**, **libclntsh.so.11.1** e **libclntsh.so.10.1**.
 
-Você pode obter um pacote do RPM do Linux na rede da tecnologia Oracle.
+É possível obter um pacote de RPM do Linux da Oracle Technology Network.
 
 >[!NOTE]
 >
@@ -217,7 +217,7 @@ Se você observar no console do cliente que há atrasos inesperados (uma ou mais
 
 ### DB2 {#db2}
 
-A versão biblioteca suportada é **libdb2.so** .
+A versão biblioteca suportada é **libdb2.so**.
 
 ## Etapas de implementação {#implementation-steps}
 
@@ -225,7 +225,7 @@ As instalações do Adobe Campaign para Linux devem ser realizadas na seguinte s
 
 O processo de instalação é descrito neste capítulo. As etapas de instalação são as seguintes:
 
-* Etapa 1: instalação do servidor aplicativo, consulte [ instalação de pacotes com o Linux ](../../installation/using/installing-packages-with-linux.md) .
-* Etapa 2: integração com um servidor Web (opcional, dependendo dos componentes implantados).
+* Etapa 1: Instalação do servidor de aplicativo, consulte [Instalação de pacotes com Linux](../../installation/using/installing-packages-with-linux.md).
+* Etapa 2: Integração com um servidor da Web (opcional, dependendo dos componentes implantados).
 
-Depois que as etapas de instalação estiverem concluídas, você precisa configurar as instâncias, o banco de dados e o servidor. Para obter mais informações, consulte [ sobre configuração ](../../installation/using/about-initial-configuration.md) inicial.
+Depois que as etapas de instalação forem concluídas, você precisará configurar as instâncias, o banco de dados e o servidor. Para obter mais informações, consulte Sobre a [configuração](../../installation/using/about-initial-configuration.md) inicial.

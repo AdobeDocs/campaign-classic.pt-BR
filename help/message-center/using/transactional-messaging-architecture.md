@@ -6,7 +6,7 @@ feature: Transactional Messaging, Message Center, Architecture
 badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
 source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1110'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ As mensagens transacionais dependem de uma arquitetura específica, composta por
 
 | Instância de controle | Instância de execução |
 |--- |--- |
-| Os usuários do Adobe Campaign fazem logon na instância de controle para: <ul><li>Criar modelos de mensagem transacional</li><li>Gerar a pré-visualização da mensagem usando uma lista de seed</li><li>Exibir relatórios</li><li>Monitorar as instâncias de execução</li></ul> | As instâncias de execução estão aqui para: <ul><li>Receber eventos</li><li>Vinculá-los a modelos de mensagem transacional</li><li>Enviar uma mensagem personalizada para cada recipient</li></ul> |
+| Os usuários do Adobe Campaign fazem logon na instância de controle para: <ul><li>Criar modelos de mensagem transacional</li><li>Gerar a pré-visualização da mensagem usando uma lista de seed</li><li>Exibir relatórios</li><li>Monitorar as instâncias de execução</li></ul> | As instâncias de execução estão aqui para: <ul><li>Receber eventos</li><li>Vinculá-los a modelos de mensagem transacional</li><li>Enviar uma mensagem personalizada para cada destinatário</li></ul> |
 
 ## Instalar instâncias {#installing-instances}
 

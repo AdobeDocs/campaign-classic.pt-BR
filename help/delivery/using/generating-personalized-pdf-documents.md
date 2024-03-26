@@ -8,8 +8,8 @@ feature: Personalization
 role: User
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '454'
+workflow-type: tm+mt
+source-wordcount: '455'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ As seguintes extensões são suportadas: &quot;.docx&quot;, &quot;.doc&quot; e &
 
 Para personalizar seus documentos, as mesmas funcionalidades JavaScript de personalização de email estão disponíveis.
 
-É necessário ativar a opção **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Essa opção é acessível quando você anexa o arquivo ao email de delivery. Para obter mais informações sobre como anexar um arquivo calculado, consulte a seção [Anexar arquivos](attaching-files.md).
+É necessário ativar a opção **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Essa opção é acessível quando você anexa o arquivo ao email de entrega. Para obter mais informações sobre como anexar um arquivo calculado, consulte a seção [Anexar arquivos](attaching-files.md).
 
 Exemplo de personalização de cabeçalho de fatura:
 
@@ -48,11 +48,11 @@ O procedimento para gerar tabelas dinâmicas é da seguinte maneira:
 
 ## Inserir imagens externas {#inserting-external-images}
 
-A inserção de imagens externas é útil se, por exemplo, você deseja personalizar um documento com uma imagem cujo URL é inserido em um campo do recipient.
+A inserção de imagens externas é útil se, por exemplo, você deseja personalizar um documento com uma imagem cujo URL é inserido em um campo do destinatário.
 
 Para fazer isso, você precisa configurar um bloco de personalização e, em seguida, incluir uma chamada para o bloco de personalização no anexo.
 
-**Exemplo: inserir um logotipo personalizado de acordo com o país do recipient**
+**Exemplo: inserir um logotipo personalizado de acordo com o país do destinatário**
 
 **Etapa 1: criar o anexo:**
 
@@ -90,6 +90,6 @@ if (recipient.country.label == "USA")
 <% } %>
 ```
 
-Dependendo do país do recipient, a personalização fica visível no documento vinculado ao delivery:
+Dependendo do país do destinatário, a personalização fica visível no documento vinculado à entrega:
 
 ![](assets/s_ncs_pdf_result.png)

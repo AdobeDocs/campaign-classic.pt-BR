@@ -42,11 +42,11 @@ Há três modos de inserção possíveis:
 
 >[!NOTE]
 >
->Essa opção é usada quando a tabela do recipient usada não é a tabela padrão **nms:recipient** e você está usando a funcionalidade de Renderização da caixa de entrada disponibilizada com o módulo **[!UICONTROL Deliverability]** do Adobe Campaign.
+>Essa opção é usada quando a tabela do destinatário usada não é a tabela padrão **nms:recipient** e você está usando a funcionalidade de Renderização da caixa de entrada disponibilizada com o módulo **[!UICONTROL Deliverability]** do Adobe Campaign.
 >
->Para obter mais informações, consulte [Usar uma tabela de recipient externa](using-an-external-recipient-table.md) e a documentação sobre [Renderização de caixa de entrada](inbox-rendering.md).
+>Para obter mais informações, consulte [Usar uma tabela de destinatário externa](using-an-external-recipient-table.md) e a documentação sobre [Renderização de caixa de entrada](inbox-rendering.md).
 
-Para entregas, você também pode personalizar a maneira como os endereços são inseridos no arquivo de extração. Por padrão, eles são inseridos na ordem de classificação do arquivo de saída, mas você pode optar por inseri-los no final ou no início do arquivo, ou aleatoriamente entre os recipients do target principal.
+Para entregas, você também pode personalizar a maneira como os endereços são inseridos no arquivo de extração. Por padrão, eles são inseridos na ordem de classificação do arquivo de saída, mas você pode optar por inseri-los no final ou no início do arquivo, ou aleatoriamente entre os destinatários do target principal.
 
 ![](assets/s_ncs_user_edit_del_addresses_sort.png)
 

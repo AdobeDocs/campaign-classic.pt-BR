@@ -21,7 +21,7 @@ Para criar um **[!UICONTROL List]** digite list com base na nova tabela de recip
 
 Para obter mais informações sobre listas no Campaign, consulte [nesta seção](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
 
 Para criar um workflow de direcionamento e atualizar recipients em uma tabela de recipients personalizada, siga as etapas abaixo:
 

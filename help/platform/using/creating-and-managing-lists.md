@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '806'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## O que é uma lista? {#about-lists-in-adobe-campaign}
 
-Uma lista é um conjunto estático de perfis que pode ser direcionada em ações de delivery ou atualizada durante as operações de importação ou durante a execução de workflows. Por exemplo, uma população extraída do banco de dados por uma consulta pode fornecer uma lista.
+Uma lista é um conjunto estático de perfis que pode ser direcionada em ações de entrega ou atualizada durante as operações de importação ou durante a execução de workflows. Por exemplo, uma população extraída do banco de dados por uma consulta pode fornecer uma lista.
 
 As listas são criadas e gerenciadas pelo link **[!UICONTROL Lists]** na guia **[!UICONTROL Profiles and targets]**.
 
@@ -78,7 +78,7 @@ A lista de perfis pode ser configurada como qualquer outra lista. Consulte [esta
 >
 >A vinculação de dados a uma lista só pode ser feita com uma lista do tipo **[!UICONTROL Group]**.
 
-Os perfis de um conjunto de perfis podem ser filtrados e vinculados a uma lista. As ações de delivery podem então ser enviadas para essa lista, para direcionar perfis. Para agrupar perfis:
+Os perfis de um conjunto de perfis podem ser filtrados e vinculados a uma lista. As ações de entrega podem então ser enviadas para essa lista, para direcionar perfis. Para agrupar perfis:
 
 1. Selecione os perfis e clique com o botão direito do mouse.
 1. Selecione **[!UICONTROL Actions > Associate selection with a list...]**.
@@ -129,17 +129,17 @@ Para remover um perfil de uma lista, é possível:
 
 ## Tutorial em vídeo {#create-list-video}
 
-### Como criar uma lista de recipients
+### Como criar uma lista de destinatários
 
-Uma lista é um conjunto estático de recipients que pode ser focada em ações de delivery ou atualizada durante as operações de importação ou durante a execução de fluxos de trabalho. Uma lista de recipients também é chamada de público-alvo.
+Uma lista é um conjunto estático de destinatários que pode ser focada em ações de entrega ou atualizada durante as operações de importação ou durante a execução de fluxos de trabalho. Uma lista de destinatários também é chamada de público-alvo.
 
-Aprenda a criar um público-alvo configurando uma lista de recipients do Explorer.
+Aprenda a criar um público-alvo configurando uma lista de destinatários do Explorer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### Como usar um fluxo de trabalho para criar uma lista de recipients {#create-list-in-a-wf-video}
+### Como usar um fluxo de trabalho para criar uma lista de destinatários {#create-list-in-a-wf-video}
 
-Saiba como criar um fluxo de trabalho para direcionar os recipients e como torná-lo recorrente antes de usar a lista em um target de email.
+Saiba como criar um fluxo de trabalho para direcionar os destinatários e como torná-lo recorrente antes de usar a lista em um target de email.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 

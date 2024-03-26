@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 18%
+source-wordcount: '1110'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ Por motivos de segurança, você deve atualizar para uma das versões listadas a
 
 >[!NOTE]
 >
->Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 >
 
 ## Atualizações de segurança {#acc-security-updates}
@@ -101,7 +101,7 @@ Como cliente local/híbrido, você precisa atualizar para uma das versões mais 
 
 Depois que todas as instâncias forem atualizadas, o Console do cliente também precisará ser atualizado para essa versão.
 
-* Saiba como acessar o [Adobe Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR).
+* Saiba como acessar o [Distribuição de software Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR).
 
 * [Saiba como instalar o console do cliente do Campaign](../../installation/using/installing-the-client-console.md).
 

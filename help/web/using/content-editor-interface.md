@@ -23,7 +23,7 @@ A janela de edição do DCE está dividida em três seções diferentes. Elas pe
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. A seção **superior** é uma área de exibição para mensagens do usuário. Essas mensagens indicam o status da aplicação web ou o delivery sendo criado, bem como avisos e mensagens de erro relacionadas ao conteúdo. Para obter mais informações, consulte [Status de conteúdo HTML](content-editing-best-practices.md#html-content-statuses).
+1. A seção **superior** é uma área de exibição para mensagens do usuário. Essas mensagens indicam o status da aplicação web ou a entrega sendo criada, bem como avisos e mensagens de erro relacionadas ao conteúdo. Para obter mais informações, consulte [Status de conteúdo HTML](content-editing-best-practices.md#html-content-statuses).
 1. A seção à **esquerda** da janela é a área para edição de conteúdo. Nessa área, o usuário pode interagir diretamente com o conteúdo usando a barra de ferramentas pop-up: inserir um link em uma imagem, alterar a fonte, excluir um campo, etc. Para obter mais informações, consulte [Edição de formulários](editing-content.md#editing-forms).
 1. A seção à **direita** da janela é a área do painel de controle. Essa área agrupa as diferentes opções do editor, particularmente as relacionadas à configuração do título da página e opções gerais de um bloco: adicionar uma borda, vincular um campo de banco de dados a uma zona de entrada, acessar propriedades da página da Web, etc. Para obter mais informações, consulte as seções [Global options](#global-options) e [Editing content](editing-content.md)
 

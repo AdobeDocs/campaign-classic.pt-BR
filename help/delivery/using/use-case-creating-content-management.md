@@ -40,7 +40,7 @@ Este boletim informativo contém três tipos de elementos:
 
    ![](assets/s_ncs_content_define_element_types.png)
 
-1. Campos de personalização inseridos dinamicamente com base nas informações salvas no banco de dados (nome e sobrenome do recipient nesse caso).
+1. Campos de personalização inseridos dinamicamente com base nas informações salvas no banco de dados (nome e sobrenome do destinatário nesse caso).
 
    ![](assets/s_ncs_content_define_dynamics.png)
 
@@ -397,6 +397,6 @@ Para criar conteúdo diretamente nas entregas, siga as etapas abaixo:
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. Clique na guia **[!UICONTROL HTML preview]** para exibir a renderização. Você precisa selecionar um recipient para testar a personalização.
+1. Clique na guia **[!UICONTROL HTML preview]** para exibir a renderização. Você precisa selecionar um destinatário para testar a personalização.
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)

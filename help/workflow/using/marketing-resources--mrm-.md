@@ -38,7 +38,7 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Recursos
   <tr> 
    <td> <span class="uicontrol">Discussion forum processes</span> <br /> </td> 
    <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
-   <td> Este workflow gerencia o delivery de notificações dos fóruns de discussão. É acionado ao receber um sinal de aprovação.<br /> </td> 
+   <td> Este workflow gerencia a entrega de notificações dos fóruns de discussão. É acionado ao receber um sinal de aprovação.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

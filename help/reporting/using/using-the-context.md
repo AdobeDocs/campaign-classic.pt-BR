@@ -33,13 +33,13 @@ Para fazer isso, clique no link **[!UICONTROL Filter data...]** na guia **[!UICO
 
 ### Exemplo: usar um filtro em um gráfico {#example--use-a-filter-in-a-chart}
 
-No exemplo a seguir, queremos que o gráfico mostre apenas perfis de recipients que vivem na França e que tenham efetuado uma compra durante o ano.
+No exemplo a seguir, queremos que o gráfico mostre apenas perfis de destinatários que vivem na França e que tenham efetuado uma compra durante o ano.
 
 Para definir esse filtro, coloque uma página no gráfico e edite-o. Clique em **[!UICONTROL Filter data]** e crie o filtro que corresponde aos dados que deseja exibir. Para obter mais informações sobre criação de queries no Adobe Campaign, consulte [esta seção](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
-Aqui, queremos exibir a análise por cidade dos recipients selecionados.
+Aqui, queremos exibir a análise por cidade dos destinatários selecionados.
 
 ![](assets/reporting_graph_with_2vars.png)
 
@@ -60,7 +60,7 @@ Siga as etapas abaixo:
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 
-Somente os recipients que atenderem aos critérios de filtragem aparecerão no relatório.
+Somente os destinatários que atenderem aos critérios de filtragem aparecerão no relatório.
 
 ![](assets/s_ncs_advuser_report_display_04.png)
 
@@ -75,7 +75,7 @@ Na página que contém a tabela ou o gráfico, a guia **[!UICONTROL Data]** perm
 * A opção **[!UICONTROL New query]** permite criar uma consulta para coletar dados. Para obter mais informações, consulte [Definir um filtro direto sobre os dados](#defining-a-direct-filter-on-data).
 * A opção **[!UICONTROL Context data]** permite usar os dados de entrada: o contexto do relatório coincide com as informações contidas na transição de entrada da página que contém o gráfico ou a tabela. Esse contexto pode, por exemplo, conter dados coletados por uma atividade **[!UICONTROL Query]** colocada antes da atividade **[!UICONTROL Page]** e para a qual é necessário especificar a tabela e os campos que o relatório aborda.
 
-Por exemplo, em uma caixa de query, crie a seguinte query para os recipients:
+Por exemplo, em uma caixa de query, crie a seguinte query para os destinatários:
 
 ![](assets/s_ncs_advuser_report_datasource_2.png)
 

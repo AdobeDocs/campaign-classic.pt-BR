@@ -8,7 +8,7 @@ feature: Personalization
 role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 # Cupons personalizados{#personalized-coupons}
 
-A adição de cupons aos seus deliveries pode oferecer aos recipients valor aprimorado para produtos e serviços. Você pode usar o módulo de cupom do Campaign para criar um conjunto de cupons que você planeja adicionar às futuras ofertas de marketing. Quando estiver pronto para criar um delivery, atribua os cupons aplicáveis. Como os cupons são válidos para um período de seleção, um cupom atribuído é vinculado exclusivamente à sua mensagem de delivery. Além disso, o Campaign confirma que há cupons suficientes para o número de mensagens antes do envio do delivery.
+A adição de cupons a suas entregas pode oferecer aos destinatários valor aprimorado para produtos e serviços. Você pode usar o módulo de cupom do Campaign para criar um conjunto de cupons que você planeja adicionar às futuras ofertas de marketing. Quando estiver pronto para criar uma entrega, atribua os cupons aplicáveis. Como os cupons são válidos para um período de seleção, um cupom atribuído é vinculado exclusivamente à sua mensagem de entrega. Além disso, o Campaign confirma que há cupons suficientes para o número de mensagens antes do envio da entrega.
 
 >[!NOTE]
 >
@@ -45,9 +45,9 @@ Antes de seguir as etapas abaixo, verifique se você sabe o tipo de cupom que de
 1. Escolha **[!UICONTROL Start date]** e **[!UICONTROL End date]** para definir o período de validade do cupom.
 1. Em **[!UICONTROL Coupon type]**, escolha Anônimo ou Individual.
 
-   **[!UICONTROL Anonymous coupons]** : Um cupom anônimo é idêntico para todos os recipients. Confirme se Anônimo está selecionado no menu **Tipo de cupom** e clique em **Salvar** para gerar o cupom.
+   **[!UICONTROL Anonymous coupons]** : Um cupom anônimo é idêntico para todos os destinatários. Confirme se Anônimo está selecionado no menu **Tipo de cupom** e clique em **Salvar** para gerar o cupom.
 
-   **[!UICONTROL Individual coupons]** : Um cupom individual pode ser personalizado ainda mais com códigos de cupom adicionais. Por exemplo, um cupom individual é criado para uma venda em uma loja de equipamentos esportivos. No entanto, a lista de recipients é longa e não compartilham a mesma paixão por um único esporte. Você pode adicionar nomes de código para o cupom individual com base em um esporte (por exemplo, futebol, futebol americano, beisebol etc.) e enviar cada código para os recipients aplicáveis.
+   **[!UICONTROL Individual coupons]** : Um cupom individual pode ser personalizado ainda mais com códigos de cupom adicionais. Por exemplo, um cupom individual é criado para uma venda em uma loja de equipamentos esportivos. No entanto, a lista de destinatários é longa e não compartilham a mesma paixão por um único esporte. Você pode adicionar nomes de código para o cupom individual com base em um esporte (por exemplo, futebol, futebol americano, beisebol etc.) e enviar cada código para os destinatários aplicáveis.
 
    1. Ao escolher Indivíduo, Cupons abre como uma nova guia na parte inferior esquerda. Acesse a guia **[!UICONTROL Coupons]** e clique em **[!UICONTROL Add]**.
    1. Insira um código exclusivo para o cupom individual quando solicitado pela janela pop-up.
@@ -63,18 +63,18 @@ Antes de seguir as etapas abaixo, verifique se você sabe o tipo de cupom que de
 
 ![](assets/deliv_coup_03.png)
 
-A guia Cupons está disponível apenas com cupons individuais. Depois que um cupom é associado a um delivery, a guia Cupons fornece os seguintes detalhes:
+A guia Cupons está disponível apenas com cupons individuais. Depois que um cupom é associado a uma entrega, a guia Cupons fornece os seguintes detalhes:
 
 * **[!UICONTROL Status]** : Disponibilidade do cupom.
 * **[!UICONTROL Redeemed on]** : A data de resgate do cupom.
 * **[!UICONTROL Channel]** : O canal usado para enviar o cupom.
-* **[!UICONTROL Address]** : Os endereços de email dos recipients.
+* **[!UICONTROL Address]** : Os endereços de email dos destinatários.
 
 Os valores de **[!UICONTROL status]**, **[!UICONTROL channel]** e **[!UICONTROL address]** são automaticamente preenchidos. No entanto, os valores de **[!UICONTROL redeemed on]** não são recuperados pelo Campaign. Eles podem ser concluídos ao importar um arquivo com os detalhes de resgate do cupom.
 
-## Inserir um cupom em um delivery por email {#inserting-a-coupon-into-an-email-delivery}
+## Inserir um cupom em uma entrega por email {#inserting-a-coupon-into-an-email-delivery}
 
-No exemplo abaixo, o delivery é criado a partir da Home page. Para obter instruções detalhadas sobre como criar um delivery, consulte [esta seção](about-email-channel.md). Você também pode adicionar um cupom a um delivery em um workflow.
+No exemplo abaixo, a entrega é criada a partir da Home page. Para obter instruções detalhadas sobre como criar uma entrega, consulte [esta seção](about-email-channel.md). Você também pode adicionar um cupom a uma entrega em um workflow.
 
 1. Acesse **[!UICONTROL Campaigns]** e escolha **[!UICONTROL Deliveries]**.
 1. Clique em **[!UICONTROL Create]**.
@@ -82,8 +82,8 @@ No exemplo abaixo, o delivery é criado a partir da Home page. Para obter instru
    ![](assets/deliv_coup_04.png)
 
 1. Insira um nome em **[!UICONTROL Label]** e clique em **[!UICONTROL Continue]**.
-1. Clique em **[!UICONTROL To]** para adicionar recipients. 
-1. Clique em **[!UICONTROL Add]** para escolher os destinatários do delivery Depois de selecionar seus destinatários, clique em **[!UICONTROL Ok]** para retornar para o delivery.
+1. Clique em **[!UICONTROL To]** para adicionar destinatários. 
+1. Clique em **[!UICONTROL Add]** para escolher os destinatários da entrega Depois de selecionar seus destinatários, clique em **[!UICONTROL Ok]** para retornar para a entrega.
 
    ![](assets/deliv_coup_05.png)
 
@@ -118,7 +118,7 @@ No exemplo abaixo, o delivery é criado a partir da Home page. Para obter instru
 
    ![](assets/deliv_coup_12.png)
 
-1. Execute um teste para confirmar o nome atribuído ao cupom. Acesse a guia **[!UICONTROL Preview]** e clique em **[!UICONTROL Test personalization]**. Escolha um recipient para o teste.
+1. Execute um teste para confirmar o nome atribuído ao cupom. Acesse a guia **[!UICONTROL Preview]** e clique em **[!UICONTROL Test personalization]**. Escolha um destinatário para o teste.
 
    ![](assets/deliv_coup_13.png)
 
@@ -126,7 +126,7 @@ No exemplo abaixo, o delivery é criado a partir da Home page. Para obter instru
 
    ![](assets/deliv_coup_14.png)
 
-1. Na barra de ferramentas, clique em **[!UICONTROL Send]**, no canto superior esquerdo, e escolha como enviar o delivery.
+1. Na barra de ferramentas, clique em **[!UICONTROL Send]**, no canto superior esquerdo, e escolha como enviar a entrega.
 
    ![](assets/deliv_coup_15.png)
 
@@ -136,38 +136,38 @@ No exemplo abaixo, o delivery é criado a partir da Home page. Para obter instru
 
 >[!NOTE]
 >
->Para obter instruções sobre como gerenciar os cupons insuficientes de um delivery, consulte [Gerenciar cupons insuficientes](#managing-insufficient-coupons)
+>Para obter instruções sobre como gerenciar os cupons insuficientes de uma entrega, consulte [Gerenciar cupons insuficientes](#managing-insufficient-coupons)
 
-Para confirmar que o delivery foi bem-sucedido:
+Para confirmar que a entrega foi bem-sucedida:
 
 1. Vá para **[!UICONTROL Explorer > Resources > Campaign management > Coupons]**.
 1. Clique na guia **[!UICONTROL Deliveries]**.
 
    ![](assets/deliv_coup_17.png)
 
-   O status é lido como **[!UICONTROL Finished]** para um delivery bem-sucedido.
+   O status é lido como **[!UICONTROL Finished]** para uma entrega bem-sucedida.
 
 >[!NOTE]
 >
 >Por padrão, o módulo de gestão de cupom usa uma tabela **nms:recipient**. [Saiba mais](../../configuration/using/about-data-model.md#default-recipient-table).
 >
->Aprenda como usar uma tabela de recipient personalizada [nesta página](../../configuration/using/about-custom-recipient-table.md).
+>Aprenda como usar uma tabela de destinatário personalizada [nesta página](../../configuration/using/about-custom-recipient-table.md).
 
 ## Gerenciar cupons insuficientes {#managing-insufficient-coupons}
 
-A análise do delivery para se o número de cupons for menor que de mensagens. Nesse caso, você pode importar mais cupons ou restringir o número de mensagens. Siga as instruções abaixo se desejar limitar o número de mensagens.
+A análise da entrega para se o número de cupons for menor que de mensagens. Nesse caso, você pode importar mais cupons ou restringir o número de mensagens. Siga as instruções abaixo se desejar limitar o número de mensagens.
 
-1. Vá para a janela de delivery do email.
+1. Vá para a janela de entrega do email.
 1. Clique em **[!UICONTROL To]**.
 1. Em **[!UICONTROL Select target]**, acesse a guia **[!UICONTROL Exclusions]**.
 
    ![](assets/deliv_coup_18.png)
 
 1. Na seção de configurações de exclusão, clique em **[!UICONTROL Edit]**.
-1. Insira o número de mensagens que deseja enviar em **[!UICONTROL Limit delivery to...messages]** e clique em **[!UICONTROL Ok]**. Você pode enviar o delivery.
+1. Insira o número de mensagens que deseja enviar em **[!UICONTROL Limit delivery to...messages]** e clique em **[!UICONTROL Ok]**. Você pode enviar a entrega.
 
    ![](assets/deliv_coup_19.png)
 
 >[!NOTE]
 >
->Ao gerenciar um número limitado de cupons, um workflow de delivery permite dividir o delivery com base em seus critérios. É uma boa opção para enviar cupons para um público selecionado sem restringir o target.
+>Ao gerenciar um número limitado de cupons, um workflow de entrega permite dividir a entrega com base em seus critérios. É uma boa opção para enviar cupons para um público selecionado sem restringir o target.

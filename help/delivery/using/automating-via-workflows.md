@@ -8,8 +8,8 @@ feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '1202'
+workflow-type: tm+mt
+source-wordcount: '1200'
 ht-degree: 100%
 
 ---
@@ -53,7 +53,7 @@ As propriedades da atividade são divididas em quatro etapas:
 
 * **Assunto**
 
-  Permite modificar o assunto da ação de delivery ao publicar.
+  Permite modificar o assunto da ação de entrega ao publicar.
 
 * **Acesso aos dados de um feed XML**
 
@@ -77,9 +77,9 @@ A opção **Generate an output transition** permite adicionar uma transição de
 
 ## Exemplos {#examples}
 
-### Automatizar a criação e o delivery de conteúdo {#automating-content-creation-and-delivery}
+### Automatizar a criação e a entrega de conteúdo {#automating-content-creation-and-delivery}
 
-O exemplo a seguir automatiza a criação e o delivery de um bloco de conteúdo.
+O exemplo a seguir automatiza a criação e a entrega de um bloco de conteúdo.
 
 ![](assets/d_ncs_content_workflow2.png)
 
@@ -89,7 +89,7 @@ O conteúdo é configurado através da atividade &quot;Gestão de conteúdo&quot
 
 Uma nova instância de conteúdo é criada por meio do modelo de publicação e da pasta de string de conteúdo.
 
-No nosso exemplo, sobrecarregamos o assunto do delivery. Ele será considerado em vez do inserido no template **[!UICONTROL Delivery]**.
+No nosso exemplo, sobrecarregamos o assunto da entrega. Ele será considerado em vez do inserido no template **[!UICONTROL Delivery]**.
 
 O conteúdo é preenchido automaticamente por um feed XML vindo do URL inserido:
 
@@ -143,21 +143,21 @@ A ação final da atividade é salvar a instância de conteúdo e prosseguir par
 
 O target é realizado por meio da atividade **Query**.
 
-Uma atividade **AND-join** é adicionada para garantir que o delivery só iniciará quando a consulta do target e as atualizações de conteúdo forem concluídas.
+Uma atividade **AND-join** é adicionada para garantir que a entrega só iniciará quando a consulta do target e as atualizações de conteúdo forem concluídas.
 
-A ação do delivery é configurada por meio da atividade **Delivery**:
+A ação da entrega é configurada por meio da atividade **Entrega**:
 
 ![](assets/d_ncs_content_workflow4.png)
 
-Uma nova ação do delivery é criada com base em um template.
+Uma nova ação da entrega é criada com base em um template.
 
-O template do delivery da atividade é usado para selecionar os modelos de transformação do template de publicação. A geração de conteúdo leva em consideração todos os templates HTML e Texto sem os templates do delivery ou aqueles referenciados com o mesmo que a atividade.
+O template da entrega da atividade é usado para selecionar os modelos de transformação do template de publicação. A geração de conteúdo leva em consideração todos os templates HTML e Texto sem os templates da entrega ou aqueles referenciados com o mesmo que a atividade.
 
 O target a ser enviado é digitado por meio do evento de entrada.
 
-O conteúdo de delivery é preenchido por meio do evento de entrada.
+O conteúdo de entrega é preenchido por meio do evento de entrada.
 
-A última etapa para concluir a atividade é preparar e depois iniciar o delivery.
+A última etapa para concluir a atividade é preparar e depois iniciar a entrega.
 
 ### Criar conteúdo para publicação posterior {#creating-content-and-publishing-it-later}
 
@@ -193,33 +193,33 @@ A atividade **Código JavaScript** recupera o nome completo de cada arquivo gera
 
 ### Criar a entrega e seu conteúdo {#creating-the-delivery-and-its-content}
 
-Esse exemplo usa o mesmo conceito do primeiro exemplo, mas cria a ação de delivery na primeira etapa.
+Esse exemplo usa o mesmo conceito do primeiro exemplo, mas cria a ação de entrega na primeira etapa.
 
 ![](assets/d_ncs_content_workflow10.png)
 
-A primeira tarefa **Create delivery** cria a ação de delivery.
+A primeira tarefa **Criar entrega** cria a ação de entrega.
 
 A atividade fork permite o início do cálculo do alvo e a criação da instância de conteúdo ao mesmo tempo.
 
-Depois que as tarefas são executadas, a caixa AND-join ativa a tarefa **Delivery** para iniciar o delivery criado anteriormente no conteúdo e definição de targeting.
+Depois que as tarefas são executadas, a caixa AND-join ativa a tarefa **Delivery** para iniciar a entrega criada anteriormente no conteúdo e definição de targeting.
 
 ![](assets/d_ncs_content_workflow11.png)
 
-A ação do delivery a ser iniciada é preenchida pela transição.
+A ação da entrega a ser iniciada é preenchida pela transição.
 
-O target a ser enviado é digitado por meio do evento de entrada.
+O target a ser entregue é digitado por meio do evento de entrada.
 
-O conteúdo de delivery é preenchido por meio do evento de entrada.
+O conteúdo de entrega é preenchido por meio do evento de entrada.
 
-A ação final da atividade é preparar e iniciar o delivery.
+A ação final da atividade é preparar e iniciar a entrega.
 
 ### Importar conteúdo do FTP {#importing-content-from-ftp}
 
-Se o seu conteúdo do delivery estiver disponível em um arquivo HTML localizado em servidores FTP ou SFTP, é possível carregá-los facilmente nos deliveries do Adobe Campaign. Consulte [esse exemplo](../../workflow/using/loading-delivery-content.md).
+Se o seu conteúdo da entrega estiver disponível em um arquivo HTML localizado em servidores FTP ou SFTP, é possível carregá-los facilmente nas entregas do Adobe Campaign. Consulte [esse exemplo](../../workflow/using/loading-delivery-content.md).
 
 ### Importar conteúdo do conector do Amazon Simple Storage Service (S3)  {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Se o conteúdo do delivery estiver localizado nos buckets do Amazon Simple Storage Service (S3), é possível carregá-los facilmente nos deliveries do Adobe Campaign. Consulte [esse exemplo](../../workflow/using/loading-delivery-content.md).
+Se o conteúdo da entrega estiver localizado nos buckets do Amazon Simple Storage Service (S3), é possível carregá-los facilmente nas entregas do Adobe Campaign. Consulte [esse exemplo](../../workflow/using/loading-delivery-content.md).
 
 ## Atualização semiautomática {#semi-automatic-update}
 
