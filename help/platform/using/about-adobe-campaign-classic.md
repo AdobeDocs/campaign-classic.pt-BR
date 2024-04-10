@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 776560c5f9ba91a5864a7dc950fd7499ceb37d1b
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 100%
+source-wordcount: '919'
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ Você pode combinar as funcionalidades de entrega e as funcionalidades avançada
 
 ## Principais recursos e complementos {#core-capabilities-and-add-ons}
 
-O Adobe Campaign oferece um conjunto de recursos para ajudá-lo a implementar e otimizar as funcionalidades de marketing conversacional de acordo com a sua necessidade e arquitetura. Alguns deles são recursos básicos, enquanto outros dependem da instalação de um pacote e de sua configuração. Uma descrição detalhada do produto está disponível aqui: [descrição do produto Adobe Campaign Classic](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-classic---product-description.html).
+O Adobe Campaign oferece um conjunto de recursos para ajudá-lo a implementar e otimizar as funcionalidades de marketing conversacional de acordo com a sua necessidade e arquitetura. Alguns deles são recursos básicos, enquanto outros dependem da instalação de um pacote e de sua configuração. Uma descrição detalhada do produto está disponível aqui: [Descrição do produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Os recursos abaixo estão disponíveis. A disponibilidade desses recursos dependem do seu contrato de licença.
 
