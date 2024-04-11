@@ -2,14 +2,13 @@
 product: campaign
 title: Criar uma landing page
 description: Criar uma landing page
-badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 100%
+source-wordcount: '736'
+ht-degree: 99%
 
 ---
 

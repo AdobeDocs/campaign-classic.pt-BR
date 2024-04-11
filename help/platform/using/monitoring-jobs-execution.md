@@ -3,16 +3,15 @@ product: campaign
 title: Monitoramento da execução de processos
 description: Saiba como monitorar a execução de processos de importação e exportação
 feature: Monitoring
-badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 100%
+source-wordcount: '193'
+ht-degree: 97%
 
 ---
 

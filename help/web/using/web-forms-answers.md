@@ -2,14 +2,13 @@
 product: campaign
 title: Respostas dos formulários web
 description: Respostas dos formulários web
-badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 100%
+source-wordcount: '869'
+ht-degree: 99%
 
 ---
 

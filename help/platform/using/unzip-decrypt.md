@@ -3,15 +3,14 @@ product: campaign
 title: Descompactação ou descriptografia de um arquivo
 description: Saiba como descompactar ou descriptografar um arquivo no Campaign antes do processamento
 feature: Workflows, Encryption
-badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '700'
 ht-degree: 89%
 
 ---

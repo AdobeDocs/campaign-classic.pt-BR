@@ -2,14 +2,13 @@
 product: campaign
 title: Usar uma tabela externa de destinatário
 description: Usar uma tabela externa de destinatário
-badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Audiences
 exl-id: b6aabc68-707d-4c6c-b008-277609166c6c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 100%
+source-wordcount: '92'
+ht-degree: 95%
 
 ---
 

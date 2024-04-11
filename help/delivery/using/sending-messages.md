@@ -2,15 +2,14 @@
 product: campaign
 title: Etapas principais para enviar um email
 description: Saiba como confirmar o delivery de um email e descubra as especificidades da entrega de mensagens de email
-badge-v7: label="v7" type="Informative" tooltip="Aplicável ao Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email
 role: User
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 100%
+source-wordcount: '223'
+ht-degree: 98%
 
 ---
 
