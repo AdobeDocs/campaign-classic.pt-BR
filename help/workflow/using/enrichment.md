@@ -2,12 +2,11 @@
 product: campaign
 title: Enriquecimento
 description: Saiba mais sobre a atividade do workflow de enriquecimento
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1297'
 ht-degree: 100%
 
 ---

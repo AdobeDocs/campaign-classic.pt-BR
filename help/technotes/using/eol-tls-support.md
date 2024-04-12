@@ -3,15 +3,14 @@ product: campaign
 title: Fim da vida útil do suporte para TLS 1.0 e 1.1
 description: Fim da vida útil do suporte para TLS 1.0 e 1.1
 feature: Technote
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 5%
+source-wordcount: '860'
+ht-degree: 4%
 
 ---
 

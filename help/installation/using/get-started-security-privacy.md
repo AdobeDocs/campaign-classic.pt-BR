@@ -3,15 +3,14 @@ product: campaign
 title: Lista de verificação de segurança e privacidade
 description: Saiba mais sobre os principais elementos para verificar a segurança e a privacidade
 feature: Installation, Privacy, Access Management, Privacy Tools
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 21%
+source-wordcount: '484'
+ht-degree: 20%
 
 ---
 

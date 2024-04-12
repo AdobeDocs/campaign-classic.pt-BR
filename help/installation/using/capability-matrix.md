@@ -3,12 +3,11 @@ product: campaign
 title: Matriz de recursos no local, híbridos e hospedados do Campaign
 description: Saiba mais sobre as principais diferenças entre implantações hospedadas e no local
 feature: Installation, Architecture
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 34%
+source-wordcount: '287'
+ht-degree: 32%
 
 ---
 

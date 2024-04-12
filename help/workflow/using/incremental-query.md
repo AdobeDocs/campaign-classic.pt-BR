@@ -2,12 +2,11 @@
 product: campaign
 title: Query incremental
 description: Saiba mais sobre a atividade do workflow de query incremental
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '356'
 ht-degree: 100%
 
 ---

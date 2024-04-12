@@ -2,12 +2,11 @@
 product: campaign
 title: Emails de entrada
 description: Saiba mais sobre a atividade de workflow de emails de entrada
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '342'
 ht-degree: 100%
 
 ---

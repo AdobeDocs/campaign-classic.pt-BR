@@ -3,14 +3,13 @@ product: campaign
 title: Configuração do acesso ao Hadoop
 description: Saiba como configurar o acesso ao Hadoop no FDA
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '583'
 ht-degree: 77%
 
 ---

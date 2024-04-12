@@ -2,12 +2,11 @@
 product: campaign
 title: File collector
 description: Saiba mais sobre a atividade de workflow de file collector
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 1f87a5fba1298955fa07b9a045b21718c76a7fce
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '524'
 ht-degree: 100%
 
 ---

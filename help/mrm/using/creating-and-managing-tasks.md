@@ -3,14 +3,13 @@ product: campaign
 title: Criar e gerenciar tarefas
 description: Criar e gerenciar tarefas
 feature: Resource Management
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '3750'
+source-wordcount: '3743'
 ht-degree: 100%
 
 ---

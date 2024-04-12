@@ -2,14 +2,13 @@
 product: campaign
 title: Migração para a Nuvem pública
 description: Saiba mais sobre a migração do Campaign Classic para a Nuvem pública
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1533'
 ht-degree: 48%
 
 ---

@@ -3,14 +3,13 @@ product: campaign
 title: Visão geral do catálogo de ofertas
 description: Saiba mais sobre o catálogo de ofertas no Campaign
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 464a6548-1b91-4e09-b620-3b820ef69653
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '131'
 ht-degree: 100%
 
 ---

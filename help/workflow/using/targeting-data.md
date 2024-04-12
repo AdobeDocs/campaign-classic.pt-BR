@@ -2,12 +2,11 @@
 product: campaign
 title: Direcionamento de dados
 description: Saiba mais sobre como direcionar dados em um workflow
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1919'
 ht-degree: 100%
 
 ---

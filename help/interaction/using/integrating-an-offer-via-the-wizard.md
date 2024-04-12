@@ -1,16 +1,15 @@
 ---
 product: campaign
 title: Integração de uma oferta através do assistente
-description: Integração de uma oferta através do assistente
+description: Integração de uma oferta ao assistente
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '803'
 ht-degree: 100%
 
 ---

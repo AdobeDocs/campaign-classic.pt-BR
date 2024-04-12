@@ -2,12 +2,11 @@
 product: campaign
 title: Extração de dados (arquivo)
 description: Saiba mais sobre a atividade de workflow de extração de dados (arquivo)
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '325'
 ht-degree: 96%
 
 ---

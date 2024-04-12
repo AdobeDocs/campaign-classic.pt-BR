@@ -3,12 +3,11 @@ product: campaign
 title: Personalização e privacidade
 description: Conheça as práticas recomendadas de segurança para privacidade e personalização
 feature: Installation, Privacy, Privacy Tools, URL Personalization
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: a2106e55617209f28da42c50008d16188563b2da
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 13%
+source-wordcount: '805'
+ht-degree: 12%
 
 ---
 

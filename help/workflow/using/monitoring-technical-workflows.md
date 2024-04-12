@@ -2,12 +2,11 @@
 product: campaign
 title: Monitorar fluxos de trabalho técnicos
 description: Monitorar fluxos de trabalho técnicos
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '504'
 ht-degree: 100%
 
 ---

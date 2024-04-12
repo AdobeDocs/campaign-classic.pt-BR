@@ -2,12 +2,11 @@
 product: campaign
 title: Execução de computação agregada
 description: Saiba como executar a computação agregada em consultas
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '231'
 ht-degree: 100%
 
 ---

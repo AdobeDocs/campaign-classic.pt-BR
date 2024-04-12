@@ -2,17 +2,16 @@
 product: campaign
 title: Gestão de conteúdo
 description: Gestão de conteúdo
-badge-v7-only: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: eb92a7c7-edfa-4062-b473-6d8b50d35e5f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '417'
 ht-degree: 100%
 
 ---
 
-# Gerenciamento de conteúdo{#content-management}
+# Gestão de conteúdo{#content-management}
 
 
 
