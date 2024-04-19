@@ -2,13 +2,13 @@
 product: campaign
 title: Layout do elemento
 description: Layout do elemento
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

@@ -5,9 +5,9 @@ description: Saiba como procurar e configurar listas
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1153'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Na parte inferior direita da tela da lista, um **[!UICONTROL counter]** mostra q
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-Se um &quot;**?**&quot; for exibido em vez do número à direita, clique no contador para iniciar o cálculo.
+Se um “**?**” aparecer em vez do número à direita, clique no contador para iniciar o cálculo.
 
 ### Carregar mais registros {#loading-more-records}
 

@@ -2,14 +2,14 @@
 product: campaign
 title: Caso de uso de teste A/B
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: A/B Testing
 role: User
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '265'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

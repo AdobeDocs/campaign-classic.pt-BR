@@ -2,14 +2,14 @@
 product: campaign
 title: Status de entrega
 description: Saiba mais sobre os status disponíveis no painel da entrega
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

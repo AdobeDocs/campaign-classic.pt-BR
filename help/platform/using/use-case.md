@@ -3,15 +3,15 @@ product: campaign
 title: Caso de uso
 description: Caso de uso
 feature: Subscriptions, Email, Data Management
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '266'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

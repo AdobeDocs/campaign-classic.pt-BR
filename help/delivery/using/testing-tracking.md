@@ -2,14 +2,14 @@
 product: campaign
 title: Testar o rastreamento de mensagens
 description: Saiba como testar o rastreamento de mensagens
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring
 role: User
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '266'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

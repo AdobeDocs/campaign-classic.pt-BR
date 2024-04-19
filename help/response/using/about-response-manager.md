@@ -3,12 +3,12 @@ product: campaign
 title: Sobre o gestor de resposta
 description: Sobre o gestor de resposta
 feature: Campaigns
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

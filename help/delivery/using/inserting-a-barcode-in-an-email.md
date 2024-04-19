@@ -2,13 +2,13 @@
 product: campaign
 title: Inserir código de barras em um email
 description: Inserir código de barras em um email
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email Design
 role: User
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '531'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

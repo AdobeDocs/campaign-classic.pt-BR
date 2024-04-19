@@ -6,9 +6,9 @@ feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '596'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -108,15 +108,15 @@ No exemplo a seguir, adicionamos **mediaURl** e **mediaExt** para criar notifica
 
    Dois modos estão disponíveis:
 
-   * (Recomendado) **[!UICONTROL Token-based authentication]**: Preencha as configurações de conexão APNs **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** e **[!UICONTROL Bundle Id]** em seguida, selecione o certificado p8 clicando em **[!UICONTROL Enter the private key...]**. Para obter mais informações, **[!UICONTROL Token-based authentication]**, consulte [Documentação do Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+   * (Recomendado) **[!UICONTROL Token-based authentication]**: preencha as configurações de conexão de APNs **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** e **[!UICONTROL Bundle Id]** e selecione seu certificado p8 clicando em **[!UICONTROL Enter the private key...]**. Para saber mais sobre **[!UICONTROL Token-based authentication]**, consulte a [documentação da Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
-   * **[!UICONTROL Certificate-based authentication]**: Clique em **[!UICONTROL Enter the certificate...]** e selecione em seguida a chave p12, inserindo a senha fornecida pelo desenvolvedor de aplicativos para dispositivos móveis.
+   * **[!UICONTROL Certificate-based authentication]**: Clique em **[!UICONTROL Enter the certificate...]** e selecione em seguida a chave p12, inserindo a senha fornecida pelo desenvolvedor de aplicativos móveis.
 
    >[!NOTE]
    >
-   > O Adobe recomenda usar **[!UICONTROL Token-based authentication]** para a configuração do iOS, já que as chaves de autenticação P8 são mais recentes e seguras.
+   > A Adobe recomenda usar **[!UICONTROL Token-based authentication]** para a configuração do iOS, já que as chaves de autenticação P8 são mais recentes e seguras.
 
-1. Use o **[!UICONTROL Test the connection]** botão para validar a configuração.
+1. Use o botão **[!UICONTROL Test the connection]** para validar a configuração.
 
 1. Clique em **[!UICONTROL Next]** para configurar o aplicativo de produção e siga as mesmas etapas descritas acima.
 

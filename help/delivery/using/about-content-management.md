@@ -2,14 +2,14 @@
 product: campaign
 title: Sobre gerenciamento de conteúdo
 description: Introdução ao módulo de gerenciamento de conteúdo do Campaign
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Landing Pages, Email Design
 role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

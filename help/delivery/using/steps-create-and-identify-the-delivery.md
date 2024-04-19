@@ -2,14 +2,14 @@
 product: campaign
 title: Criar e identificar a entrega
 description: Criar e identificar a entrega
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Channel Configuration
 role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

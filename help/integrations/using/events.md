@@ -3,14 +3,14 @@ product: campaign
 title: Configuração de eventos
 description: Saiba como configurar eventos para implementação personalizada
 feature: Triggers
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1206'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -219,7 +219,7 @@ Os eventos podem ser exibidos com um formulário simples baseado no schema de ev
 
 >[!NOTE]
 >
->O nó do evento pipeline não está incorporado e precisa ser adicionado, assim como o formulário relacionado precisa ser criado no Campaign. Essas operações são restritas unicamente a usuários especialistas. Para obter mais informações, consulte estas seções: [Hierarquia de navegação](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). e [Edição de formulários](../../configuration/using/editing-forms.md).
+>O nó do evento pipeline não está incorporado e precisa ser adicionado, assim como o formulário relacionado precisa ser criado no Campaign. Essas operações são restritas unicamente a usuários especialistas. Para obter mais informações, consulte estas seções: [Hierarquia de navegação](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy) e [Edição de formulários](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 

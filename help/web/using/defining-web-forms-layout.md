@@ -2,13 +2,13 @@
 product: campaign
 title: Definir o layout de formulários web
 description: Definir o layout de formulários web
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ No exemplo acima, a renderização será a seguinte:
 
 O layout do formulário web é definido pela página em cada container e pode ser sobrecarregado se necessário.
 
-As páginas são divididas em colunas: cada página contém determinado número de colunas. Cada campo da página ocupa **n** células. Os containers também ocupam determinado número de colunas e os campos que contêm ocupam determinado número de células.
+As páginas são divididas em colunas: cada página contém determinado número de colunas. Cada campo da página ocupa **n** células. Os containers também ocupam um certo número de colunas e os campos que eles contêm ocupam um certo número de células.
 
 Por padrão, as páginas são criadas em uma única coluna e cada elemento ocupa uma célula. Isso significa que os campos são exibidos um embaixo do outro e cada um ocupa uma linha inteira, como mostrado abaixo:
 

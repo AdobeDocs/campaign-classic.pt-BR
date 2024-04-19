@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '384'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 Existem dois tipos de operadores que usam o Interaction: gerentes de oferta e gerentes de entrega. Cada um deles tem direitos específicos que só dão acesso a algumas partes da árvore e da plataforma.
 
-* **[!UICONTROL Offer manager]** : cria e mantém ofertas. Observe que se as ofertas forem usadas no workflow, o operador precisará estar no **[!UICONTROL Administrator]** ou no grupo de operadores **[!UICONTROL Offer managers]** para executar o workflow.
+* **[!UICONTROL Offer manager]**: cria e mantém ofertas. Observe que se as ofertas forem usadas no workflow, o operador precisará estar no **[!UICONTROL Administrator]** ou no grupo de operadores **[!UICONTROL Offer managers]** para executar o workflow.
 * **[!UICONTROL Delivery manager]** : aprova e usa ofertas
 
 As etapas para criar operadores específicos ao Interaction são idênticas às usadas para criar todos os outros operadores na plataforma. Para obter mais informações, consulte [esta seção](../../platform/using/access-management.md). Os direitos são configurados durante a criação do operador.

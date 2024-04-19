@@ -2,15 +2,15 @@
 product: campaign
 title: Provisionamento do Adobe Analytics Connector
 description: Saiba mais sobre o provisionamento do conector do Adobe Analytics
-badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplicável somente a implantações locais e híbridas do v7"
+badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações no local e híbridas do v7"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 >
 > Essas etapas só devem ser executadas por implementações híbridas e no local.
 >
->Para implementações do Managed Services hospedadas e do Campaign, entre em contato com a equipe de [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+>Para implementações do Managed Services hospedadas e do Campaign, entre em contato com a equipe de [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 A integração entre a autenticação do Adobe Campaign Classic e do Adobe Analytics é compatível com o Adobe Identity Management Service (IMS):
 
@@ -80,7 +80,7 @@ Para obter mais informações sobre perfis de produto, consulte a [documentaçã
 
 1. Para o recurso **[!UICONTROL Dimensions]**, adicione as **[!UICONTROL Dimensions]** necessárias para configurações futuras.
 
-   Verifique se os Dimension escolhidos correspondem aos que serão configurados na Conta externa e se alinham com o número de eVars correspondente do Adobe Analytics.
+   Verifique se as dimensões escolhidas correspondem às que serão configuradas na conta externa e estão alinhadas com o número eVars correspondente do Adobe Analytics.
 
 1. Para o recurso **[!UICONTROL Report Suite Tools]**, adicione as seguintes permissões:
 

@@ -7,9 +7,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '905'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 80%
 
 Os perfis são centralizados no banco de dados do Adobe Campaign. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta online via formulários Web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados de PI relevantes em uma exibição consolidada para analisar e tomar decisões.
 
-&quot;**Perfil**&quot; significa um registro de informações (por exemplo: um registro na tabela nmsRecipient ou uma tabela externa contendo uma ID de cookie, uma ID do cliente, um identificador móvel ou outras informações relevantes para um canal específico) representando um cliente final, um prospecto ou um cliente potencial.
+“**Perfil**” é um registro de informações (por exemplo: um registro na tabela nmsRecipient ou uma tabela externa contendo uma ID de cookie, uma ID de cliente, um identificador móvel ou outras informações relevantes de um canal específico) representando um cliente final, um prospecto ou um lead.
 
 No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (emails, SMS etc.). Os dados do destinatário armazenados no banco de dados permitem filtrar o público-alvo que receberá qualquer entrega e adicionar dados de personalização ao conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que sejam enviadas ao público-alvo final.
 
@@ -93,14 +93,14 @@ Um perfil ativo é aquele com o qual o cliente tentou se comunicar nos últimos 
 
 De acordo com seu contrato, cada uma das instâncias do Campaign é provisionada com uma quantidade específica de perfis ativos que são contados para fins de faturamento. Consulte seu contrato mais recente para obter uma referência sobre o número de perfis ativos adquiridos. Saiba mais em [Descrição do produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Você pode monitorar o número de perfis ativos em sua instância diretamente do Painel de controle do Campaign. Para obter mais informações, consulte [Documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR){target="_blank"}.
+Também é possível monitorar o número de perfis ativos em sua instância diretamente do Painel de controle do Campaign. Para obter mais informações, consulte a [documentação do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR){target="_blank"}.
 
-São aplicáveis as seguintes medidas de proteção e limitações:
+As seguintes medidas de proteção e limitações se aplicam:
 
-* Um perfil que se tornou alvo de várias entregas é contado apenas uma vez.
+* Um perfil que foi direcionado em várias entregas é contado apenas uma vez.
 * Perfis direcionados no contexto de Marketing social no X (Twitter) ou Facebook não são considerados como perfis ativos.
-* A contagem de perfis ativos está disponível para **Instâncias de marketing** somente. Não está disponível para Instâncias de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
-* A contagem se baseia na chave primária do recipient. Como consequência, se um perfil estiver presente em duas tabelas de recipients diferentes, ele poderá ser contado duas vezes como um perfil ativo.
+* A contagem de perfis ativos está disponível somente para **Instâncias de marketing**. Não está disponível para Instâncias de execução, ou seja, instâncias de MID (mid-sourcing) e RT (Centro de mensagens/Mensagens em tempo real).
+* A contagem se baseia na chave primária do destinatário. Como consequência, se um perfil estiver presente em duas tabelas de destinatários diferentes, ele poderá ser contado duas vezes como um perfil ativo.
 
 
 ## Tutorial em vídeo {#create-profiles-video}

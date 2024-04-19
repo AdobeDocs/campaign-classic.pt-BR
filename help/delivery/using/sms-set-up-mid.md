@@ -2,14 +2,14 @@
 product: campaign
 title: Configurar o canal de SMS do Campaign em uma infraestrutura de mid-sourcing
 description: Saiba como configurar o canal de SMS no Campaign em uma infraestrutura de mid-sourcing
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: SMS
 role: User, Developer, Admin
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '990'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

@@ -5,7 +5,7 @@ description: Saiba como configurar um modelo de fluxo de trabalho para importaç
 feature: Workflows, Data Management
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1015'
 ht-degree: 100%
 

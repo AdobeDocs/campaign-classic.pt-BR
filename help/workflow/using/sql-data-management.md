@@ -5,7 +5,7 @@ description: Saiba mais sobre a atividade do workflow de Gestão de dados SQL
 feature: Workflows
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
 ht-degree: 100%
 

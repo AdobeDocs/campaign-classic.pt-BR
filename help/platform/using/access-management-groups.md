@@ -8,9 +8,9 @@ role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
 source-git-commit: 4e99ec73f99264e91ca427542e29bd42da88a3f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '512'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Os grupos de operadores padrão são:
 
 1. **[!UICONTROL Access to reports]**
 
-   Esse grupo é reservado para operadores externos, para ativar os ícones de Relatório, Agendamento e Fórum no Painel de Campanha para um operador específico.
+   Esse grupo é reservado para operadores externos, para habilitar os ícones de Relatório, Cronograma e Fórum no Painel do Campaign para um operador específico.
 
 1. **[!UICONTROL Workflow execution]**
 

@@ -3,15 +3,15 @@ product: campaign
 title: Solução de problemas
 description: Solução de problemas
 feature: Audiences, People Core Service Integration, Troubleshooting
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 61bb184e-affa-430c-8571-56e911cd5a3d
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '139'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

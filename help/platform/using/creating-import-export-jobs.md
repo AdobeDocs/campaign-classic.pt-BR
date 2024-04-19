@@ -3,15 +3,15 @@ product: campaign
 title: Criação de processos de importação e exportação
 description: Saiba como criar processos de importação e exportação no Campaign
 feature: Templates
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 85c48712-3704-41db-a255-a07ca8d02ec4
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

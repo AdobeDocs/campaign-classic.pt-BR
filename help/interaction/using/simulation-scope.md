@@ -3,15 +3,15 @@ product: campaign
 title: Escopo de simulação
 description: Escopo de simulação
 feature: Interaction, Offers
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '247'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

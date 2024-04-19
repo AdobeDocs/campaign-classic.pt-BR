@@ -2,14 +2,14 @@
 product: campaign
 title: Solução de problemas de rastreamento
 description: Esta seção fornece perguntas comuns relacionadas à configuração e à implementação do rastreamento no Adobe Campaign
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring, Troubleshooting
 role: User
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

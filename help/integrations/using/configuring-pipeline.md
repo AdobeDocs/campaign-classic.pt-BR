@@ -3,14 +3,14 @@ product: campaign
 title: Configuração do pipeline
 description: Saiba como configurar o pipeline
 feature: Triggers
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '917'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

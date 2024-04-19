@@ -3,15 +3,15 @@ product: campaign
 title: Compactação ou criptografia de um arquivo
 description: Saiba como compactar ou criptografar um arquivo no Campaign antes do processamento
 feature: Data Management, Encryption
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '514'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

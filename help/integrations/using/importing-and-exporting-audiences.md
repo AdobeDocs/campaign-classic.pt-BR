@@ -3,15 +3,15 @@ product: campaign
 title: Importação e exportação de públicos
 description: Importação e exportação de públicos
 feature: Audiences, People Core Service Integration
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '627'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

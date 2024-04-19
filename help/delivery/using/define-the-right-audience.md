@@ -2,14 +2,14 @@
 product: campaign
 title: Definir o público correto
 description: Saiba mais sobre as práticas recomendadas ao selecionar seu público
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Audiences
 role: User
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

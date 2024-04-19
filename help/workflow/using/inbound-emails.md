@@ -5,7 +5,7 @@ description: Saiba mais sobre a atividade de workflow de emails de entrada
 feature: Workflows, Channels Activity
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '342'
 ht-degree: 100%
 

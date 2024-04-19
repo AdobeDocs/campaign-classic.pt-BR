@@ -2,13 +2,13 @@
 product: campaign
 title: Traduzir um formulário web
 description: Traduzir um formulário web
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -133,7 +133,7 @@ Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translat
 >
 >Os nomes dos arquivos de exportação são gerados automaticamente. Se você realizar a mesma exportação várias vezes, substituirá os arquivos existentes pelos novos. Se precisar manter os arquivos anteriores, altere o **[!UICONTROL Target folder]**, então clique em **[!UICONTROL Start]** novamente para executar a exportação.
 
-Quando você exporta arquivos no **formato CSV**, cada idioma é vinculado a status de status e aprovação. A variável **Aprovar?** permite aprovar uma tradução. Essa coluna pode conter os valores **Sim** ou **Não**. Como para o editor integrado (consulte [Gerenciamento de traduções no editor](#managing-translations-in-the-editor)), a aprovação de traduções é opcional e não bloqueia o processo.
+Quando você exporta arquivos no **formato CSV**, cada idioma é vinculado a status de status e aprovação. **Aprovar?** permite aprovar uma tradução. Essa coluna pode conter os valores **Sim** ou **Não**. Como para o editor integrado (consulte [Gerenciamento de traduções no editor](#managing-translations-in-the-editor)), a aprovação de traduções é opcional e não bloqueia o processo.
 
 ### Importação de arquivos {#importing-files}
 

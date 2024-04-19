@@ -3,15 +3,15 @@ product: campaign
 title: Rastrear hipótese
 description: Saiba como rastrear hipóteses no Gestor de resposta do Campaign
 feature: Campaigns, Monitoring, Reporting
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '466'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

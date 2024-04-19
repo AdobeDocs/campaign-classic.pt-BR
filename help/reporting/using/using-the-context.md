@@ -2,13 +2,13 @@
 product: campaign
 title: Usar o contexto em seus relatórios
 description: Saiba como usar o contexto em seus relatórios
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

@@ -4,9 +4,9 @@ title: Análise da web
 description: Saiba mais sobre o pacote do Web Analytics
 feature: Workflows, Analytics Integration
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '178'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Os workflows detalhados abaixo são instalados com o módulo dos **conectores We
   <tr> 
    <td> <span class="uicontrol">Identificação de contatos convertidos</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Este workflow indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados recuperados por esse workflow podem ser acessados no <span class="uicontrol">Relatório de eficiência de re-marketing</span>. <br /> </td> 
+   <td> Este workflow indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados recuperados por esse fluxo de trabalho podem ser acessados no <span class="uicontrol">Relatório de eficiência de remarketing</span>. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Limpeza de eventos</span> <br /> </td> 

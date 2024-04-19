@@ -2,14 +2,14 @@
 product: campaign
 title: Enviar emails em dispositivos móveis japoneses com o Adobe Campaign Classic
 description: Saiba como configurar, criar e enviar emails que serão lidos em um dispositivo móvel japonês
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email, Email Design
 role: User
 exl-id: 44634227-2340-49c4-b330-740c739ea551
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '733'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

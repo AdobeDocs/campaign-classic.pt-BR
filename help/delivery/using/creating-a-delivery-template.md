@@ -2,14 +2,14 @@
 product: campaign
 title: Criar um modelo da entrega
 description: Criar um modelo da entrega
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Delivery Templates
 role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '387'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

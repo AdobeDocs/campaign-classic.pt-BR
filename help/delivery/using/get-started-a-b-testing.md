@@ -2,14 +2,14 @@
 product: campaign
 title: Introdução ao teste A/B
 description: Saiba mais sobre o teste A/B no Campaign
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: A/B Testing
 role: User
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Validação
-description: Validação
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+title: Validando
+description: Validando
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Direct Mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '250'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Validação{#validating}
+# Validando{#validating}
 
 
 

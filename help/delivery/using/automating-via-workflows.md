@@ -2,14 +2,14 @@
 product: campaign
 title: Automatizar via workflows
 description: Saiba como automatizar o gerenciamento de conteúdo por meio de workflows
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1197'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

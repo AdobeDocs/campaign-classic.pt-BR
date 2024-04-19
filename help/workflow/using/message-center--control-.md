@@ -4,7 +4,7 @@ title: Centro de Mensagens (Controle)
 description: Centro de Mensagens (Controle)
 feature: Workflows
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
 ht-degree: 100%
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Criar uma tabela
 description: Criar uma tabela
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2512'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

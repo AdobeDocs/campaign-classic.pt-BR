@@ -3,15 +3,15 @@ product: campaign
 title: Envio de solicitação à Adobe
 description: Envio de solicitação à Adobe
 feature: Audiences, People Core Service Integration
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

@@ -3,15 +3,15 @@ product: campaign
 title: Modelos de importação genérica
 description: Saiba mais sobre as importações genéricas que você pode executar usando processos de importação
 feature: Data Management
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1011'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

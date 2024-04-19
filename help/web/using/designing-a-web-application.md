@@ -2,13 +2,13 @@
 product: campaign
 title: Criar um aplicativo web
 description: Criar um aplicativo web
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

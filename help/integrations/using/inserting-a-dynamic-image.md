@@ -3,15 +3,15 @@ product: campaign
 title: Inserir uma imagem dinâmica
 description: Inserir uma imagem dinâmica
 feature: Target Integration
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '819'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

@@ -2,14 +2,14 @@
 product: campaign
 title: Definir o conteúdo da correspondência direta
 description: Saiba como definir o conteúdo da correspondência direta
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Direct Mail
 role: User
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '176'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

@@ -3,15 +3,15 @@ product: campaign
 title: Práticas recomendadas de importação e exportação
 description: Saiba mais sobre as práticas recomendadas a serem seguidas ao importar ou exportar dados
 feature: Data Management
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

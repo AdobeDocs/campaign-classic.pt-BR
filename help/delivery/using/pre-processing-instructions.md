@@ -2,14 +2,14 @@
 product: campaign
 title: Instruções de pré-processamento para URLs rastreados
 description: Saiba mais sobre as instruções de pré-processamento a serem usadas para criar o script do URL de um email e ainda rastrear esse URL
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring
 role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '653'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

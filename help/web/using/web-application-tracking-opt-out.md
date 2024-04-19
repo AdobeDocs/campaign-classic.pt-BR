@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Opt out de rastreamento da aplicação web
-description: Opt out de rastreamento da aplicação web
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+title: Recusa de rastreamento de aplicativo web
+description: Recusa de rastreamento de aplicativo web
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

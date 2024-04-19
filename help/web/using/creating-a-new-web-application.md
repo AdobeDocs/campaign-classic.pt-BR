@@ -2,13 +2,13 @@
 product: campaign
 title: Criar um novo aplicativo web
 description: Criar um novo aplicativo web
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Apps
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '365'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

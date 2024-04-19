@@ -3,15 +3,15 @@ product: campaign
 title: Trabalhar com o Adobe Campaign e o Adobe Target
 description: Saiba como integrar o Adobe Campaign ao Adobe Target
 feature: Target Integration
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

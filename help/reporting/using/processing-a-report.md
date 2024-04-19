@@ -2,13 +2,13 @@
 product: campaign
 title: Usar um relatório de análise
 description: Usar um relatório de análise
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '825'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

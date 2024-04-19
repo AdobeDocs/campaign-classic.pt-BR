@@ -2,14 +2,14 @@
 product: campaign
 title: Painel de entrega
 description: Saiba mais sobre o uso do painel de entrega para monitoramento de entregas
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1186'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

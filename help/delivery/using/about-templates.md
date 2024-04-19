@@ -2,14 +2,14 @@
 product: campaign
 title: Sobre modelos
 description: Introdução a modelos de entrega
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Delivery Templates
 role: User
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '285'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

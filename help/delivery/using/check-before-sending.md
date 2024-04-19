@@ -2,14 +2,14 @@
 product: campaign
 title: Verificar antes de enviar
 description: Quando a mensagem estiver pronta, execute todas as verificações antes de enviar
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability
 role: User
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '901'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

@@ -2,14 +2,14 @@
 product: campaign
 title: Introdução ao rastreamento de links personalizados
 description: Saiba como incluir links em emails que podem ser personalizados e dar suporte ao rastreamento no Campaign
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Personalization
 role: User
 exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '227'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

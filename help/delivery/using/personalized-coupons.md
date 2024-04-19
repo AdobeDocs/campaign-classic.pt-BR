@@ -2,14 +2,14 @@
 product: campaign
 title: Cupons personalizados
 description: Saiba como criar e inserir cupons personalizados
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Personalization
 role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

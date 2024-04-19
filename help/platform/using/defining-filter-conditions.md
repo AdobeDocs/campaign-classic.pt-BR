@@ -3,15 +3,15 @@ product: campaign
 title: Definição de condições de filtro
 description: Definição de condições de filtro
 feature: Query Editor
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3304'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -319,7 +319,7 @@ Siga as etapas abaixo:
 
    Há vários tipos de fórmulas disponíveis: **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]**, **[!UICONTROL Expression]**.
 
-   Selecionar **[!UICONTROL Process on an aggregate function]**, e **[!UICONTROL Count]**. Clique em **[!UICONTROL Next]**.
+   Selecione **[!UICONTROL Process on an aggregate function]** e **[!UICONTROL Count]**. Clique em **[!UICONTROL Next]**.
 
    ![](assets/query_editor_nveau_54.png)
 

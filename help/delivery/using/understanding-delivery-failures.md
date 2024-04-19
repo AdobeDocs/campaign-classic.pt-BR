@@ -2,14 +2,14 @@
 product: campaign
 title: Entender as falhas de entrega
 description: Entenda as falhas de entrega
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2567'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -165,7 +165,7 @@ Os possíveis motivos para uma falha de entrega são:
    <td> Inacessível </td> 
    <td> Suave/Grave </td> 
    <td> 3 </td> 
-   <td> Ocorreu um erro na cadeia de entrega de mensagens. Pode ser um incidente na retransmissão SMTP, um domínio que está temporariamente inacessível, etc. De acordo com o erro, haverá nova tentativa ao endereço até que o contador de erros atinja 5, ou ele será enviado diretamente para a quarentena.<br /> </td> 
+   <td> Ocorreu um erro na cadeia de entrega de mensagens. Pode ser um incidente na retransmissão SMTP, um domínio que está temporariamente inacessível, etc. De acordo com o erro, haverá uma nova tentativa ao endereço até que o contador de erros atinja 5, ou ele será enviado diretamente para a quarentena.<br /> </td> 
   </tr> 
   <tr> 
    <td> Usuário desconhecido </td> 
@@ -315,7 +315,7 @@ Para instalações lno local e instalações hospedadas/híbridas que usam o MTA
 * Você pode escolher se ativa ou não determinados padrões de identificação e chaves de criptografia para verificar o nome do domínio, como **ID do remetente**, **DomainKeys**, **DKIM**, e **S/MIME**.
 * Os parâmetros de **retransmissão SMTP** permitem configurar o endereço IP e a porta de um servidor de retransmissão para um determinado domínio. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no endereço do remetente, verifique se não está assinando seus emails com a **ID do remetente**, que é o padrão de autenticação de email proprietário desatualizado da Microsoft. Se a opção **[!UICONTROL Sender ID]** estiver ativada, desmarque a caixa correspondente e entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html). Sua capacidade de entrega não será afetada.
+Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no endereço do remetente, verifique se não está assinando seus emails com a **ID do remetente**, que é o padrão de autenticação de email proprietário desatualizado da Microsoft. Se a opção **[!UICONTROL Sender ID]** estiver ativada, desmarque a caixa correspondente e entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Sua capacidade de entrega não será afetada.
 
 #### Gerenciamento de MX {#mx-management}
 

@@ -3,15 +3,15 @@ product: campaign
 title: Descompactação ou descriptografia de um arquivo
 description: Saiba como descompactar ou descriptografar um arquivo no Campaign antes do processamento
 feature: Workflows, Encryption
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '700'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -86,13 +86,13 @@ As etapas para executar esse caso de uso são as seguintes:
 
 1. Abra a atividade **[!UICONTROL Data loading (file)]** e configure-a de acordo com suas necessidades. Os conceitos globais sobre como configurar a atividade estão disponíveis [nesta seção](../../workflow/using/data-loading-file.md).
 
-   Adicione um estágio de pré-processamento à atividade para descriptografar os dados recebidos. Para fazer isso, selecione a variável **[!UICONTROL Pre-process the file]** e selecione **[!UICONTROL Decrypt]** do **[!UICONTROL Command]** lista suspensa:
+   Adicione um estágio de pré-processamento à atividade para descriptografar os dados recebidos. Para fazer isso, selecione a opção **[!UICONTROL Pre-process the file]** e **[!UICONTROL Decrypt]** na lista suspensa **[!UICONTROL Command]**:
 
    ![](assets/gpg_load.png)
 
    >[!NOTE]
    >
-   >Se forem necessárias alterações nos comandos disponíveis, entre em contato com [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para ajustar as configurações de preProcessCommand.
+   >Se forem necessárias alterações nos comandos disponíveis, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ajustar as configurações de preProcessCommand.
    >
    >Se estiver trabalhando com uma implantação híbrida, você poderá configurar esses comandos diretamente do arquivo de configuração do servidor (serverConf.xml). [Saiba como configurar comandos de pré-processamento no arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 

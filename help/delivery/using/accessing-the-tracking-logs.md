@@ -2,14 +2,14 @@
 product: campaign
 title: Acessando os logs de rastreamento
 description: Acessando os logs de rastreamento
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring
 role: User
 exl-id: df494786-5950-4646-aa9c-4dde45845057
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '98'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

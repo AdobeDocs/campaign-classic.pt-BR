@@ -2,14 +2,14 @@
 product: campaign
 title: Solução de problemas de SMS
 description: Saiba como solucionar problemas do canal de SMS
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2764'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

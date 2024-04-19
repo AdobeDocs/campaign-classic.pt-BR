@@ -5,7 +5,7 @@ description: Saiba mais sobre a atividade do workflow de teste
 feature: Workflows
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '187'
 ht-degree: 100%
 

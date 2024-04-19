@@ -2,14 +2,14 @@
 product: campaign
 title: Criar conteúdo personalizado
 description: Saiba como criar conteúdo personalizado em entregas do Adobe Campaign
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1293'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

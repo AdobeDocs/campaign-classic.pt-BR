@@ -2,14 +2,14 @@
 product: campaign
 title: Gerar documentos personalizados em PDF
 description: Saiba como gerar documentos personalizados em PDF
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Personalization
 role: User
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

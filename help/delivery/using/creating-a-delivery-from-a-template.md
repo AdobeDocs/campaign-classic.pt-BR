@@ -2,14 +2,14 @@
 product: campaign
 title: Criar uma entrega a partir de um modelo
 description: Saiba como criar uma entrega a partir de um modelo
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Delivery Templates
 role: User
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

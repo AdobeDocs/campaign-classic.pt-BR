@@ -2,13 +2,13 @@
 product: campaign
 title: Gerenciamento de modelo
 description: Gerenciamento de modelo
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Delivery Templates
 exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '123'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

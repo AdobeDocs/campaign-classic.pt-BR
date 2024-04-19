@@ -3,15 +3,15 @@ product: campaign
 title: Recusar a venda de informações pessoais
 description: Saiba mais sobre a opção de não participação da venda de dados pessoais
 feature: Privacy, Privacy Tools
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '564'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

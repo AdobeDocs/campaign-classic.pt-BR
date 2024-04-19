@@ -3,12 +3,12 @@ product: campaign
 title: Etapas principais para criar um relatório
 description: Aprenda as principais etapas para criar um novo relatório
 feature: Reporting, Monitoring
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '179'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

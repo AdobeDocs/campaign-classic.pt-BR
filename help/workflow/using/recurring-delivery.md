@@ -5,7 +5,7 @@ description: Saiba mais sobre a atividade de workflow de entrega recorrente
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '281'
 ht-degree: 100%
 

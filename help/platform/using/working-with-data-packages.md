@@ -3,15 +3,15 @@ product: campaign
 title: Trabalho com pacotes de dados
 description: Trabalho com pacotes de dados
 feature: Data Management, Package Export/Import
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2474'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -353,7 +353,7 @@ Sempre importe dentro da mesma versão da plataforma. Você deve verificar se im
 
 >[!IMPORTANT]
 >
->A importação entre versões diferentes não é suportada pelo Adobe.
+>A Adobe não oferece suporte à importação entre diferentes versões.
 <!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
 
 Preste atenção ao schema e à estrutura do banco de dados. A importação do pacote com o schema deve ser seguida pela geração do schema.

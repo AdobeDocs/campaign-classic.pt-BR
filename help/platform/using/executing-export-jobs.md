@@ -3,15 +3,15 @@ product: campaign
 title: Configuração de processos de exportação
 description: Saiba como configurar e executar processos de exportação no Campaign
 feature: Overview
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '947'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Selecione um formato de saída para o arquivo de exportação. Os formatos a seg
 * Para o formato **[!UICONTROL Text]**, selecione os delimitadores para separar as colunas (guias, vírgulas, ponto e vírgula ou personalizado) e as strings (aspas simples, duplas ou nenhuma).
 * Para **[!UICONTROL text]** e **[!UICONTROL CSV]**, você pode selecionar a opção **[!UICONTROL Use first lines as column titles]**.
 * Indique o formato de data e o formato do número. Para fazer isso, clique no botão **[!UICONTROL Edit]** do campo correspondente e utilize o editor.
-* Para campos que contém os valores enumerados, é possível selecionar a opção **[!UICONTROL Export labels instead of internal values of enumerations]**. Por exemplo, o título pode ser armazenado no formulário **1=Sr.**, **2=Erro**, **3=Sra.**. Se essa opção estiver selecionada, **Sr.**, **Srta.**, **Sra.** serão exportados.
+* Para campos que contém os valores enumerados, é possível selecionar a opção **[!UICONTROL Export labels instead of internal values of enumerations]**. Por exemplo, o título pode ser armazenado no formulário **1=Mr.**, **2=Miss**, **3=Mrs.**. Se essa opção estiver selecionada, **Sr.**, **Srta.**, **Sra.** serão exportados.
 
 ## Etapa 4 - Seleção de dados {#step-4---data-selection}
 

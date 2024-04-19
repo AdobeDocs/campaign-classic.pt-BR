@@ -2,14 +2,14 @@
 product: campaign
 title: Uso de esquemas de dados no Campaign
 description: Saiba como usar esquemas de dados no Campaign
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Data Model
 role: User, Developer, Data Engineer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

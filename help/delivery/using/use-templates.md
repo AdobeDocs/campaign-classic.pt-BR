@@ -2,13 +2,13 @@
 product: campaign
 title: Usar templates da entrega
 description: Usar templates da entrega
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Delivery Templates
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

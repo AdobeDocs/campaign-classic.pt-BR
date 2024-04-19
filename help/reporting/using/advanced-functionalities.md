@@ -3,12 +3,12 @@ product: campaign
 title: Recursos avançados
 description: Saiba mais sobre recursos avançados ao trabalhar com relatórios
 feature: Reporting, Monitoring
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '610'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

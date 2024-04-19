@@ -5,7 +5,7 @@ description: Saiba mais sobre a atividade de workflow de tipo Delivery
 feature: Workflows, Channels Activity
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '917'
 ht-degree: 100%
 

@@ -2,14 +2,14 @@
 product: campaign
 title: Sobre serviços e subscrições
 description: Introdução a serviços e subscrições no Adobe Campaign
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

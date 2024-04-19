@@ -2,13 +2,13 @@
 product: campaign
 title: Interface do editor de conteúdo
 description: Interface do editor de conteúdo
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

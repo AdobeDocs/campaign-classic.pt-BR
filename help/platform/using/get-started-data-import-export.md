@@ -3,15 +3,15 @@ product: campaign
 title: Introdução à importação e exportação de dados
 description: Saiba mais sobre importação e exportação de dados no Campaign
 feature: Data Management, Encryption
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '334'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

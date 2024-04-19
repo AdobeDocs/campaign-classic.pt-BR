@@ -3,14 +3,14 @@ product: campaign
 title: Criação de boletim informativo no Experience Manager
 description: Criação de boletim informativo no Experience Manager
 feature: Experience Manager Integration
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

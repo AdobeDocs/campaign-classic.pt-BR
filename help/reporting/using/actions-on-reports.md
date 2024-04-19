@@ -3,12 +3,12 @@ product: campaign
 title: Ações em relatórios
 description: Ações em relatórios
 feature: Reporting, Monitoring
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '551'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

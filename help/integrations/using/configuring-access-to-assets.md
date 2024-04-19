@@ -3,15 +3,15 @@ product: campaign
 title: Configuração do acesso ao Assets
 description: Configuração do acesso ao Assets
 feature: Asset Sharing
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

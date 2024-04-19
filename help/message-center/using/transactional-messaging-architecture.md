@@ -5,7 +5,7 @@ description: Esta seção descreve a arquitetura de mensagens transacionais do A
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1103'
 ht-degree: 100%
 

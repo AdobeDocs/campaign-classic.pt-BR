@@ -2,14 +2,14 @@
 product: campaign
 title: Adicionar seed addresses
 description: Adicionar seed addresses
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Seed Address
 role: User
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

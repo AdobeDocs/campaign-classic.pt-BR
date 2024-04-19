@@ -3,12 +3,12 @@ product: campaign
 title: Sobre relatórios integrados do Campaign
 description: Sobre relatórios integrados do Campaign
 feature: Reporting, Monitoring
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '278'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

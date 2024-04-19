@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '501'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Também é possível conectar-se com uma combinação exclusiva de login e senha
 
    Na primeira vez que você acessar o banco de dados, sua senha será fornecida pelo administrador. Depois de conectado, você poderá alterar a senha usando o menu **[!UICONTROL Tools > Change password...]** Os detalhes sobre operadores e conexões estão disponíveis em [Gerenciamento de acesso](../../platform/using/access-management.md).
 
-1. Clique em **[!UICONTROL LOG IN]** para confirmar.<!--You can also press the **Enter** key to launch connection.-->
+1. Clique em **[!UICONTROL LOG IN]** para confirmar.<!--You can also press the **Enter** key to launch connection.-->
 
 Agora, você pode acessar o [Workspace do Adobe Campaign](../../platform/using/adobe-campaign-workspace.md).
 

@@ -3,12 +3,12 @@ product: campaign
 title: Marketing viral e social
 description: Marketing viral e social
 feature: Social Marketing
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '574'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

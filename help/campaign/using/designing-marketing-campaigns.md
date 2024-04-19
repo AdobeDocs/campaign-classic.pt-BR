@@ -6,7 +6,7 @@ role: User
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Além disso, o módulo **GMarketing Resource Management (MRM)** permite controla
 >[!NOTE]
 >
 >Para obter mais informações sobre as funcionalidades principais do Adobe Campaign, consulte [esta seção](../../platform/using/about-adobe-campaign-classic.md).\
->Os recursos relacionados à definição de metas de população, personalização de mensagens e entrega de mensagens nos diversos canais são detalhados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Os recursos relacionados ao direcionamento de população, personalização de mensagens e entrega de mensagens nos diversos canais são detalhados [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra os principais conceitos das campanhas de marketing em vídeo](#video)
 

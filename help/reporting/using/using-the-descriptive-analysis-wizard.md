@@ -2,13 +2,13 @@
 product: campaign
 title: Usar o assistente de análise descritiva
 description: Usar o assistente de análise descritiva
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1570'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Abra o assistente de análise descritiva selecionando os itens e clicando com o 
 
 * No contexto de um **workflow**, coloque o cursor em uma transição que aponta para a tabela de destinatários, clique com o botão direito do mouse e selecione **[!UICONTROL Analyze target]**. Para obter mais informações, consulte o exemplo em [Analisar um público alvo de transição em um fluxo de trabalho](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
 * Para **listas**, selecione uma ou mais listas e aplique o mesmo processo dos destinatários.
-* No contexto de uma entrega **, selecione as entregas cujo target deseja analisar, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Explore the target]**, conforme mostrado abaixo:**
+* No contexto de uma **entrega**, selecione as entregas cujo público alvo deseja analisar, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Explore the target]**, conforme mostrado abaixo:
 
   ![](assets/reporting_descriptive_from_deliveries.png)
 

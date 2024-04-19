@@ -5,7 +5,7 @@ description: Saiba mais sobre a atividade de workflow de transferência de arqui
 feature: Workflows, Data Management
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '563'
 ht-degree: 100%
 

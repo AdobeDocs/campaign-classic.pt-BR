@@ -2,13 +2,13 @@
 product: campaign
 title: Relatórios de entrega
 description: Relatórios de entrega
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1461'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Esta tabela de valores mostra o detalhamento das entregas, aberturas, cliques e 
 
 * **[!UICONTROL Distinct clicks for the population reached]** : Número de pessoas distintas que clicaram em uma entrega pelo menos uma vez.
 * **[!UICONTROL Cumulated clicks]**: Número total de cliques por destinatários alvos, excluindo links de unsubscription e mirror pages.
-* : Número de destinatários alvos distintos que clicaram na mesma entrega pelo menos uma vez.**[!UICONTROL Recipient clicks]**
+* **[!UICONTROL Recipient clicks]**: número de destinatários direcionados distintos que clicaram na mesma entrega pelo menos uma vez.
 * **[!UICONTROL Estimated recipient reactivity]**: Taxa do número de destinatários que clicaram pelo menos uma vez em uma entrega em comparação ao número estimado de destinatários que abriram uma entrega pelo menos uma vez. Os cliques nos links de opt out e mirror pages não são considerados.
 
 **[!UICONTROL 5. Web tracking]**

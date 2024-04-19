@@ -2,13 +2,13 @@
 product: campaign
 title: Atualizar qualificação de rejeição após a interrupção da Apple em 2021
 description: Saiba como atualizar a qualificação de rejeição após a interrupção da Apple em 2021
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '450'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

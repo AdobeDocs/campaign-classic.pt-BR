@@ -2,14 +2,14 @@
 product: campaign
 title: Sobre a capacidade de entrega do Adobe Campaign Classic
 description: Saiba mais sobre como gerenciar a capacidade de entrega no Adobe Campaign
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

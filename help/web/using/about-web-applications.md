@@ -2,13 +2,13 @@
 product: campaign
 title: Introdução a aplicativos web
 description: Crie e compartilhe aplicativos dinâmicos para web, landing pages e pesquisas
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '694'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

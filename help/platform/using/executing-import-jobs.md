@@ -3,15 +3,15 @@ product: campaign
 title: Configurar processos de importação
 description: Saiba como configurar e executar processos de importação no Campaign
 feature: Overview
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2973'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

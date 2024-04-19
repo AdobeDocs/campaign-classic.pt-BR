@@ -5,9 +5,9 @@ description: Saiba como criar um filtro ao executar consultas
 feature: Query Editor, Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -55,4 +55,4 @@ A coluna **[!UICONTROL Taken into account if]** permite definir os critérios do
 
 Aqui, **$(/tmp/@text)=&#39;agency&#39;**
 
-A variável **$(/tmp/@text)!=&#39;&#39;** A expressão aplica cada condição quando o campo de entrada não está vazio.
+A expressão **$(/tmp/@text)!=&#39;&#39;** se aplica a cada condição quando o campo de entrada não está vazio.

@@ -2,14 +2,14 @@
 product: campaign
 title: Definir o conteúdo de email no Adobe Campaign Classic
 description: Saiba como definir o conteúdo de email ao usar o Adobe Campaign
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1958'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

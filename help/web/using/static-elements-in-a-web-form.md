@@ -2,13 +2,13 @@
 product: campaign
 title: Elementos estáticos em um formulário web
 description: Elementos estáticos em um formulário web
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1036'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

@@ -3,13 +3,13 @@ product: campaign
 title: Criar os templates de entrega
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado
 role: User
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

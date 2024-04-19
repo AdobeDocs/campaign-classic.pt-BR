@@ -2,13 +2,13 @@
 product: campaign
 title: Etapas principais para criar uma pesquisa
 description: Crie sua primeira pesquisa com o Campaign
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '939'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

@@ -5,9 +5,9 @@ description: Saiba como iniciar um fluxo de trabalho e descubra a barra de ferra
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1109'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 Um workflow é sempre iniciado manualmente. Ao ser iniciado, ele pode permanecer inativo dependendo das informações especificadas por meio de um scheduler (consulte [Scheduler](scheduler.md)) ou de um agendamento de atividade. 
 
-Ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são **assíncrono** processes: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-la.
+Ações relacionadas à execução do fluxo de trabalho de direcionamento (iniciar, parar, pausar etc.) são processos **assíncronos**: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-la.
 
 A barra de ferramentas permite iniciar e controlar a execução do workflow.
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Propriedades do relatório
 description: Saiba mais sobre as configurações de propriedades do relatório
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
