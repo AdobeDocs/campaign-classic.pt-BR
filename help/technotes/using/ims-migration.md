@@ -4,16 +4,16 @@ description: Saiba como migrar operadores técnicos do Campaign para a conta té
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: c63fea4d400440005ecf3733413c346bd4a2fd18
+source-git-commit: c8ff250c1e4013d4c8271a3a388ddbabcfaeea38
 workflow-type: tm+mt
 source-wordcount: '1744'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Migração de operadores técnicos do Campaign para o Console do Adobe Developer {#migrate-tech-users-to-ims}
 
-Como parte do esforço para reforçar a segurança e o processo de autenticação, a partir do Campaign Classic v7.3.5, o processo de autenticação para o Campaign Classic está sendo aprimorado. Os operadores técnicos devem agora utilizar o [Sistema Adobe Identity Management (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **O Adobe recomenda executar essa migração no Campaign v7.3.5 para poder migrar sem problemas para o Campaign v8.**
+Como parte do esforço para reforçar a segurança e o processo de autenticação, a partir do Campaign Classic v7.3.5, o processo de autenticação para o Campaign Classic está sendo aprimorado. Os operadores técnicos devem agora utilizar o [Sistema Adobe Identity Management (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **A Adobe recomenda executar essa migração no Campaign v7.3.5 para poder migrar sem problemas para o Campaign v8.**
 
 Um operador técnico é um perfil de usuário do Campaign que foi explicitamente criado para integração com a API. Este artigo detalha as etapas necessárias para migrar um operador técnico para uma conta técnica por meio do console do Adobe Developer.
 
@@ -166,7 +166,7 @@ Para experimentar a conexão, siga as etapas detalhadas na [Guia de credenciai
 
 ### Etapa 8 - Atualizar as integrações de API de terceiros {#ims-migration-step-8}
 
-Agora é necessário atualizar as Integrações de API que fazem chamadas para o Adobe Campaign para usar a conta técnica recém-criada.
+Agora você deve atualizar todas as integrações de API que fazem chamadas para o Adobe Campaign para usar a conta técnica recém-criada.
 
 Para obter detalhes sobre as etapas de integração da API, consulte as amostras de código abaixo.
 
