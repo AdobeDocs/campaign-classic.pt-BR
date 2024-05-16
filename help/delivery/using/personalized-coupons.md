@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Personalization
 role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '894'
-ht-degree: 100%
+source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 95%
 
 ---
 
@@ -17,15 +17,17 @@ ht-degree: 100%
 
 A adição de cupons a suas entregas pode oferecer aos destinatários valor aprimorado para produtos e serviços. Você pode usar o módulo de cupom do Campaign para criar um conjunto de cupons que você planeja adicionar às futuras ofertas de marketing. Quando estiver pronto para criar uma entrega, atribua os cupons aplicáveis. Como os cupons são válidos para um período de seleção, um cupom atribuído é vinculado exclusivamente à sua mensagem de entrega. Além disso, o Campaign confirma que há cupons suficientes para o número de mensagens antes do envio da entrega.
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->A gestão de cupons é um pacote que deve ser instalado. Para confirmar se há um gerenciamento de cupom, verifique **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
->
->Os dados de cupom podem ser importados e exportados usando formatos CSV e XML. Para obter detalhes sobre a importação e exportação, consulte [esta seção](../../platform/using/get-started-data-import-export.md).
+>O gerenciamento de cupons não está disponível no Campaign v8 no contexto de uma implantação Corporativa (FFDA). Saiba mais em [Documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+
+A gestão de cupons depende de um pacote que deve ser instalado. Para confirmar se há um gerenciamento de cupom, verifique **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
+
+Os dados de cupom podem ser importados e exportados usando formatos CSV e XML. [Saiba mais](../../platform/using/get-started-data-import-export.md).
 
 ## Criar um cupom {#creating-a-coupon}
 
-O módulo de cupom oferece duas opções ao criar cupons:
+O módulo Gerenciamento de cupom oferece duas opções ao criar cupons:
 
 * **Anônimo**: um cupom genérico para destinatários ou listas de destinatários selecionados.
 * **Individual**: um cupom personalizado para destinatários selecionados.
