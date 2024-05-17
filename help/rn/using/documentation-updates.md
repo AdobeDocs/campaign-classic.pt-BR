@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: c736ac1cda9490548f1e4b56142d61fccaca5c4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3764'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 Uma nota de advertência foi adicionada sobre a criação de usuários com o Adobe Identity Management System (IMS). [Leia mais](../../platform/using/access-management.md)
 
-As opções ausentes para a atividade de workflow Download da Web foram adicionadas. [Leia mais](../../workflow/using/web-download.md)
+As opções ausentes para a atividade de fluxo de trabalho Download da Web foram adicionadas. [Leia mais](../../workflow/using/web-download.md)
 
-Uma nota de advertência foi adicionada à **Alterar dimensão** e **Alterar fonte de dados** atividades sobre seu uso em um workflow. [Leia mais](../../workflow/using/change-data-source.md)
+Uma nota de advertência foi adicionada às atividades **Mudar dimensão** e **Alterar fonte de dados** sobre seu uso em um fluxo de trabalho. [Leia mais](../../workflow/using/change-data-source.md)
 
 ### Março de 2024 {#mar-2024}
 

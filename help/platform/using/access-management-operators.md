@@ -8,9 +8,9 @@ role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1238'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 93%
 
 >[!CAUTION]
 >
->A partir do Campaign Classic v7.3.1, todos os operadores deverão usar [Sistema Adobe Identity Management (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectar ao Campaign.
+>A partir do Campaign Classic v7.3.1, todos os operadores deverão usar o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectar ao Campaign.
 >
->Como parte do esforço para reforçar a segurança e o processo de autenticação, a Adobe Campaign recomenda migrar todos os modos de autenticação de operadores existentes da autenticação nativa de logon/senha para o Adobe Identity Management System (IMS). Saiba como migrar seus operadores no [esta página](../../technotes/using/migrate-users-to-ims.md).
+>Como parte do trabalho para reforçar o processo de segurança e autenticação, o Adobe Campaign recomenda enfaticamente migrar todos os modos de autenticação de operadores da autenticação nativa de logon/senha para o Adobe Identity Management System (IMS). Saiba como migrar operadores [nesta página](../../technotes/using/migrate-users-to-ims.md).
 > 
->Após essa migração, observe que a seção a seguir não se aplica mais.  Saiba como configurar permissões com o Adobe IMS no [Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=pt-BR){target="_blank"}.
+>Após essa migração, observe que a seção a seguir não se aplica mais.  Saiba como configurar permissões com o Adobe IMS na [Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=pt-BR){target="_blank"}.
 
 
 ## Introdução aos operadores do Campaign  {#about-operators}

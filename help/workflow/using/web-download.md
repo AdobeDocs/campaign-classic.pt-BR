@@ -5,9 +5,9 @@ description: Saiba mais sobre a atividade de workflow de Download da web
 feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
 source-git-commit: a0c0c7d13704b0155004e578d6739852ceb43c81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '483'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -59,8 +59,8 @@ A atividade de **download da Web** inicia o download de um arquivo em uma URL ex
 
    O link **[!UICONTROL Advanced parameters...]** possibilita especificar as opções adicionais exibidas abaixo:
 
-   * **[!UICONTROL Follow redirections]**: o redirecionamento de arquivo permite que você use substituições para direcionar a entrada ou saída de dados para um dispositivo de um tipo diferente.
-   * **[!UICONTROL Add the HTTP headers to the file]**: em alguns casos, talvez você queira adicionar outros cabeçalhos HTTP a um arquivo. Normalmente, esses cabeçalhos serão usados para fornecer informações adicionais para fins de solução de problemas, para [Compartilhamento de recursos entre origens (CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS)ou para definir diretivas específicas de armazenamento em cache.
+   * **[!UICONTROL Follow redirections]**: o redirecionamento de arquivo permite usar substituições para direcionar a entrada ou saída de dados para um dispositivo de um tipo diferente.
+   * **[!UICONTROL Add the HTTP headers to the file]**: em alguns casos, talvez você queira adicionar outros cabeçalhos HTTP a um arquivo. Normalmente, esses cabeçalhos serão usados para fornecer informações adicionais para fins de solução de problemas, para [Compartilhamento de recursos entre origens (CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS) ou para definir diretivas específicas de armazenamento em cache.
    * **[!UICONTROL Ignore the HTTP return code]**: os códigos de retorno HTTP, também conhecidos como códigos de status HTTP, indicam o resultado de uma solicitação HTTP.
 
    ![](assets/download_web_edit_advanced.png)
