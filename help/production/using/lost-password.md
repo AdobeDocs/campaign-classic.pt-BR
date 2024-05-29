@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: ef7f3888e010cbe331b5e06cd1ea5e07127a47d2
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 11%
+source-wordcount: '209'
+ht-degree: 8%
 
 ---
 
@@ -28,7 +28,12 @@ Há dois cenários possíveis:
 ## Senha perdida por um operador do Campaign {#password-lost-by-campaign-operator}
 
 Se um operador do Adobe Campaign perder a senha, você poderá alterá-la.
-Para fazer isso, siga as etapas abaixo:
+
+>[!NOTE]
+>
+>Esse procedimento só se aplica aos operadores conectados ao Campaign com autenticação nativa. Para autenticação do Adobe IMS, consulte [esta documentação](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
+
+Para redefinir uma senha do Campaign, siga as etapas abaixo:
 
 1. Conecte-se por meio de um operador com direitos de administrador.
 1. Clique com o botão direito do mouse em um operador.
@@ -45,31 +50,32 @@ Para fazer isso, siga as etapas abaixo:
 >Esta seção se aplica somente a clientes no local.
 
 Se a senha interna for perdida, você deverá reinicializá-la.
+
 Para fazer isso, siga o procedimento abaixo:
 
 1. Edite o **/usr/local/neolane/nl6/conf/serverConf.xml** arquivo.
 
 1. Vá para a **internalPassword** linha.
 
-   ```
+   ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. Exclua a string entre aspas, neste caso: **myPassword**
+1. Exclua a string entre aspas, neste caso: `myPassword`. Você obtém a seguinte linha:
 
-   Dessa forma, você obtém a seguinte linha:
-
-   ```
-   !-- XTK authentication mode internalPassword : Password of internal account -->
-   <xtk internalPassword=""/
+   ```xml
+   <!-- XTK authentication mode internalPassword : Password of internal account -->
+   <xtk internalPassword=""/>
    ```
 
 1. Salvar as alterações e fechar o arquivo.
 
+1. Interrompa o `nlserver` processo
+
 1. Configure a nova senha. Para fazer isso, insira os seguintes comandos:
 
-   ```
+   ```javascript
    nlserver config -internalpassword
    HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    Enter current password.
@@ -78,5 +84,7 @@ Para fazer isso, siga o procedimento abaixo:
    Password: 
    Confirmation 
    ```
+
+1. Inicie o `nlserver` processo
 
 1. Agora você pode usar sua nova senha para se conectar ao **Interno** modo.
