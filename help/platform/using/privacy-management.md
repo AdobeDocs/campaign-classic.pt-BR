@@ -8,20 +8,20 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '883'
-ht-degree: 100%
+source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
+workflow-type: tm+mt
+source-wordcount: '905'
+ht-degree: 81%
 
 ---
 
 # Gerenciamento de privacidade {#privacy-management}
 
 
-
 O Adobe Campaign oferece um conjunto de ferramentas para ajudar você a cumprir as [regras de privacidade](#privacy-management-regulations) (incluindo GDPR, CCPA, PDPA, LGPD).
 
-Estes são os cinco principais recursos oferecidos pelo Adobe Campaign para garantir a conformidade com o GDPR e outras regras de privacidade:
+Estes são os cinco principais recursos oferecidos pelo Adobe Campaign para garantir a conformidade com as regulamentações de privacidade:
+
 * **Direito de acesso**
 * **Direito de exclusão**
 * **Gerenciamento de consentimento**
@@ -40,12 +40,14 @@ It also contains information on important features to manage Privacy ([Consent, 
 
 Os recursos do Adobe Campaign ajudam você a cumprir os seguintes requisitos:
 
-* **O GDPR** ([Regulamento Geral sobre a Proteção de Dados](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en)) é a lei de privacidade da União Europeia (UE) que adequa e moderniza os requisitos de proteção de dados nos países membros da UE.
-* **O CCPA** ([Ato de privacidade do consumidor da Califórnia](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=)) fornece aos residentes da Califórnia novos direitos no que diz respeito a suas informações pessoais e impõe responsabilidades de proteção de dados a determinadas entidades com negócios na Califórnia.
-* O **PDPA** ([Ato de proteção de dados pessoais)](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/) é a nova lei de privacidade que adequa e moderniza os requisitos de proteção de dados na Tailândia.
-* **A LGPD** ([Lei Geral de Proteção de Dados](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf)) entrará em vigor no início de 2021 para todas as empresas que coletam ou processam dados pessoais no Brasil.
+* **GDPR** (Regulamento Geral sobre a Proteção de Dados) é a lei de privacidade da União Europeia (UE) que adequa e moderniza os requisitos de proteção de dados para os países membros da UE.
+* **CCPA** (Ato de privacidade do consumidor da Califórnia) fornece aos residentes da Califórnia novos direitos no que diz respeito a suas informações pessoais e impõe responsabilidades de proteção de dados a determinadas entidades com negócios na Califórnia.
+* **PDPA** (Ato de proteção de dados pessoais) é a lei de privacidade que adequa e moderniza os requisitos de proteção de dados na Tailândia.
+* **LGPD** (Lei Geral de Proteção de Dados) se aplica a todas as empresas que coletam ou processam dados pessoais no Brasil.
+* **CASL** (Lei Anti-Spam Canadense) abrange todas as mensagens enviadas para dentro ou para fora do Canadá, mas não inclui mensagens roteadas através do Canadá,
+* **VCDPA** (Lei de proteção de dados do consumidor da Virgínia) e **CPA** (Lei de Privacidade do Colorado) se aplicam a todas as empresas que realizam negócios ou têm como alvo os residentes nesses estados.
 
-Todos esses regulamentos se aplicam a clientes do Adobe Campaign que detêm dados para residentes nas respectivas regiões ou países mencionados acima (UE, Califórnia, Tailândia e Brasil).
+Todos esses regulamentos se aplicam a clientes do Adobe Campaign que coletam dados de residentes das respectivas regiões ou países mencionados acima.
 
 <!--Several Privacy capabilities are available in Adobe Campaign, including consent management, data retention settings, and rights management. See [Consent, Retention and Roles](#consent-retention-roles). In addition to this, Adobe Campaign helps facilitate your readiness as Data Controller for certain Privacy requests. See [Right to Access and Right to be Forgotten](#right-access-forgotten).-->
 
