@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '746'
-ht-degree: 100%
+source-git-commit: a08b386ff73fd9a2e9b3909c8f8de5e419104ce4
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 81%
 
 ---
 
@@ -38,7 +38,11 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 >[!AVAILABILITY]
 >
-> O JWT (Tokens JSON da Web) está atualmente no processo de descontinuação, sendo substituído pelo OAuth. A transição será realizada progressivamente nas próximas versões do Campaign e a documentação será atualizada para refletir essas atualizações.
+> A credencial da Conta de serviço (JWT) está sendo descontinuada pelo Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem depender da credencial OAuth de servidor para servidor. </br>
+>
+> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a Conta técnica conforme detalhado nesta documentação. As credenciais da Conta de serviço (JWT) existentes continuarão a funcionar até 27 de janeiro de 2025. Além disso, a criação de novas credenciais de Conta de serviço (JWT) no Console do desenvolvedor não será mais possível a partir de 3 de junho de 2024. Uma nova credencial de conta de serviço (JWT) não pode ser criada ou adicionada a um projeto após essa data. </br>
+>
+> * Se você tiver implementado integrações de saída, como a integração Campaign-Analytics ou a integração do Experience Cloud Triggers, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar seu ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para oAuth. Como a criação de novas credenciais de conta de serviço (JWT) no Console do desenvolvedor não será mais possível a partir de 3 de junho de 2024, não será possível criar uma nova integração de saída dependendo do JWT após essa data
 
 1. Acesse o [!DNL Adobe I/O] e faça logon com o acesso de desenvolvedor da sua organização. Verifique se você está conectado ao portal correto da organização.
 

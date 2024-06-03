@@ -4,10 +4,10 @@ title: Atualizar para o novo servidor de avaliação do delivery
 description: Saiba como atualizar para o novo servidor de entrega do Campaign
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: eea3657f1cffa215e1fc1cb1eb8782b83321aae4
+source-git-commit: a08b386ff73fd9a2e9b3909c8f8de5e419104ce4
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 21%
+source-wordcount: '1380'
+ht-degree: 16%
 
 ---
 
@@ -48,7 +48,11 @@ Como parte da nova integração do servidor de entrega, o Campaign precisa se co
 
 >[!AVAILABILITY]
 >
-> O JWT (Tokens JSON da Web) está atualmente em processo de descontinuação, sendo substituído pelo OAuth. A transição será realizada progressivamente nas próximas versões do Campaign e a documentação será atualizada para refletir essas atualizações.
+> A credencial da Conta de serviço (JWT) está sendo descontinuada pelo Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem depender da credencial OAuth de servidor para servidor. </br>
+>
+> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a Conta técnica conforme detalhado nesta documentação. As credenciais da Conta de serviço (JWT) existentes continuarão a funcionar até 27 de janeiro de 2025. Além disso, a criação de novas credenciais de Conta de serviço (JWT) no Console do desenvolvedor não será mais possível a partir de 3 de junho de 2024. Uma nova credencial de conta de serviço (JWT) não pode ser criada ou adicionada a um projeto após essa data. </br>
+>
+> * Se você tiver implementado integrações de saída, como a integração Campaign-Analytics ou a integração do Experience Cloud Triggers, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar seu ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para oAuth. Como a criação de novas credenciais de conta de serviço (JWT) no Console do desenvolvedor não será mais possível a partir de 3 de junho de 2024, não será possível criar uma nova integração de saída dependendo do JWT após essa data
 
 ### Pré-requisitos{#prerequisites}
 
@@ -67,7 +71,7 @@ Como cliente local, você também deve verificar se uma campanha **[!UICONTROL P
 
 1. Como Administrador, conecte-se [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Acesse o **Produtos e serviços** seção e verificar **Adobe Campaign** está listado.
-Se você não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html){_blank} para adicioná-lo.
+Se você não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
 1. Clique em **Adobe Campaign** e selecione sua organização.
    **Cuidado**: se você tiver mais de uma organização, selecione a correta. Saiba mais sobre Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
