@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '1996'
-ht-degree: 100%
+source-git-commit: 991ad88101468c3e7f5d676586dfdd05d63e7c6d
+workflow-type: tm+mt
+source-wordcount: '2042'
+ht-degree: 96%
 
 ---
 
@@ -122,13 +122,17 @@ Não há custo para instalar a atualização de build para clientes hospedados. 
 
 Não. O servidor é desligado durante uma atualização para garantir que a integridade dos dados seja preservada enquanto o produto é atualizado. Depois de concluído, ele é reiniciado e todos os serviços são retomados.
 
+## Ainda posso usar minha instância do Campaign durante o processo de atualização?
+
+Não. A Adobe recomenda desativar quaisquer operações na campanha durante o período de manutenção para evitar a perda ou a ausência de dados. Você não deve criar ou implantar nenhuma campanha, consulta, fluxo de trabalho ou delivery durante a atualização.
+
 ## Os emails continuarão a ser enviados a partir do centro de mensagens durante o processo de atualização?
 
 Quando ocorrer a atualização pelo centro de mensagens (RT), não serão enviados emails da instância. Observe que todos os processos interrompidos quando um sistema do Campaign é desligado são automaticamente retomados quando o sistema é reiniciado. Isso inclui entregas ativas ou programadas, e rastreamento e cálculos de métricas para entregas enviadas anteriormente.
 
 ## Os workflows continuarão em execução e enviarão as entregas?
 
-Não. Durante a atualização da build, o fluxo de trabalho e os serviços de email são interrompidos. Significa que os workflows não serão executados e as entregas não serão enviadas. Eles serão retomados assim que o sistema for reiniciado. No entanto, a Adobe recomenda que todos os workflows de caminho críticos sejam verificados após uma atualização para garantir que eles estejam em execução e em bom estado de funcionamento.
+Não. Durante a atualização da build, o fluxo de trabalho e os serviços de email são interrompidos. Significa que os workflows não serão executados e as entregas não serão enviadas. Eles serão retomados assim que o sistema for reiniciado. No entanto, o Adobe recomenda que todos os workflows de caminho críticos sejam verificados após uma atualização para garantir que eles estejam em execução e em bom estado de funcionamento.
 
 ## Meus links de rastreamento ainda funcionam durante a atualização?
 
