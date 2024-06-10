@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: a08b386ff73fd9a2e9b3909c8f8de5e419104ce4
+source-git-commit: 514f390b5615a504f3805de68f882af54e0c3949
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '875'
 ht-degree: 81%
 
 ---
@@ -40,7 +40,7 @@ Antes de iniciar esta implementação, verifique se você tem:
 >
 > A credencial da Conta de serviço (JWT) está sendo descontinuada pelo Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem depender da credencial OAuth de servidor para servidor. </br>
 >
-> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a Conta técnica conforme detalhado nesta documentação. As credenciais da Conta de serviço (JWT) existentes continuarão a funcionar até 27 de janeiro de 2025. Além disso, a criação de novas credenciais de Conta de serviço (JWT) no Console do desenvolvedor não será mais possível a partir de 3 de junho de 2024. Uma nova credencial de conta de serviço (JWT) não pode ser criada ou adicionada a um projeto após essa data. </br>
+> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a Conta técnica conforme detalhada em [esta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As credenciais da Conta de serviço (JWT) existentes continuarão a funcionar até 27 de janeiro de 2025. Além disso, a criação de novas credenciais de Conta de serviço (JWT) no Console do desenvolvedor não será mais possível a partir de 3 de junho de 2024. Uma nova credencial de conta de serviço (JWT) não pode ser criada ou adicionada a um projeto após essa data. </br>
 >
 > * Se você tiver implementado integrações de saída, como a integração Campaign-Analytics ou a integração do Experience Cloud Triggers, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar seu ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para oAuth. Como a criação de novas credenciais de conta de serviço (JWT) no Console do desenvolvedor não será mais possível a partir de 3 de junho de 2024, não será possível criar uma nova integração de saída dependendo do JWT após essa data
 
