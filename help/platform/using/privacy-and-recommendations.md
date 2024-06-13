@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
 source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1910'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Reserve tempo para acessar a lista de [Verificação de segurança e privacidade
 
 ### Regras de privacidade {#privacy-regulations}
 
-Para gerenciar corretamente a privacidade e os dados pessoais, trabalhe dentro das legislações aplicáveis às regiões onde você opera. Os recursos do Adobe Campaign ajudam você a cumprir os regulamentos listados na [esta página](../../platform/using/privacy-management.md#privacy-management-regulations).
+Para gerenciar corretamente a privacidade e os dados pessoais, trabalhe dentro das legislações aplicáveis às regiões onde você opera. Os recursos do Adobe Campaign ajudam a cumprir os regulamentos listados [nesta página](../../platform/using/privacy-management.md#privacy-management-regulations).
 
 ### Privacidade da Adobe Experience Cloud {#experience-cloud-privacy}
 

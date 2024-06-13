@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
 source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ O Adobe Campaign inclui um módulo gráfico para definir e publicar aplicativos 
 
 >[!AVAILABILITY]
 >
->A gestão de pesquisas não está disponível no Campaign v8 no contexto de uma implantação corporativa (FFDA). Saiba mais em [Documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>A gestão de pesquisa não está disponível no Campaign v8 no contexto de uma implantação corporativa (FFDA). Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
 
 O add-on opcional de **Pesquisa** permite desenvolver um novo tipo de aplicativo Web para criar e gerenciar questionários online, como formulários para adicionar ou modificar informações de perfil, para assinar ou cancelar a inscrição de um serviço de informação ou um formulário de entrada em competição. Depois que as respostas forem coletadas, elas serão armazenadas no banco de dados ou em variáveis locais. O modelo de dados pode ser estendido dinamicamente através das respostas dos questionários. Você pode exibir os resultados em tempo real, filtrar as respostas e analisá-las usando gráficos dedicados.

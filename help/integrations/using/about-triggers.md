@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
 source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 91%
 
 >[!CAUTION]
 >
->Esse recurso não está disponível para uso imediato como parte do produto. Para esta implementação, trabalhe com seu representante da Adobe/Atendimento ao cliente. Em seguida, você poderá seguir as etapas detalhadas nesta [página](../../integrations/using/configuring-pipeline.md#prerequisites).
+>Esse recurso não está disponível para uso imediato como parte do produto. Para esta implementação, trabalhe com seu representante da Adobe/atendimento ao cliente. Em seguida, você poderá seguir as etapas detalhadas nesta [página](../../integrations/using/configuring-pipeline.md#prerequisites).
 
-[!DNL Triggers] O executa ações de marketing em um curto intervalo de tempo após a ação de um usuário. O tempo médio de resposta é de menos de uma hora.
+O [!DNL Triggers] realiza ações de marketing em um curto intervalo de tempo após a ação do usuário. O tempo médio de resposta é de menos de uma hora.
 
 Ele permite integrações mais ágeis, pois a configuração é mínima e não há envolvimento de terceiros.
 Também aceita grandes volumes de tráfego sem afetar o desempenho das atividades de marketing. Como exemplo, a integração pode processar um milhão de acionadores por hora.

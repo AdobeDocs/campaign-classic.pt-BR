@@ -7,9 +7,9 @@ feature: Personalization
 role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '911'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ A adição de cupons a suas entregas pode oferecer aos destinatários valor apri
 
 >[!AVAILABILITY]
 >
->O gerenciamento de cupons não está disponível no Campaign v8 no contexto de uma implantação Corporativa (FFDA). Saiba mais em [Documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>O gerenciamento de cupons não está disponível no Campaign v8 no contexto de uma Implantação corporativa (FFDA). Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
-A gestão de cupons depende de um pacote que deve ser instalado. Para confirmar se há um gerenciamento de cupom, verifique **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
+O gerenciamento de cupons depende de um pacote que deve ser instalado. Para confirmar se há um gerenciamento de cupom, verifique **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 
 Os dados de cupom podem ser importados e exportados usando formatos CSV e XML. [Saiba mais](../../platform/using/get-started-data-import-export.md).
 
 ## Criar um cupom {#creating-a-coupon}
 
-O módulo Gerenciamento de cupom oferece duas opções ao criar cupons:
+O módulo de gerenciamento de cupons oferece duas opções ao criar cupons:
 
 * **Anônimo**: um cupom genérico para destinatários ou listas de destinatários selecionados.
 * **Individual**: um cupom personalizado para destinatários selecionados.

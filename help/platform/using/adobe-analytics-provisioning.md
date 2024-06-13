@@ -8,13 +8,13 @@ role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: 514f390b5615a504f3805de68f882af54e0c3949
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '858'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-# Provisionamento do Adobe Analytics Connector {#adobe-analytics-connector-provisioning}
+# Provisionamento do conector do Adobe Analytics {#adobe-analytics-connector-provisioning}
 
 >[!CAUTION]
 >
@@ -36,11 +36,11 @@ Para que essa integração funcione, é necessário criar um perfil de produto d
 
 >[!AVAILABILITY]
 >
-> A credencial da Conta de serviço (JWT) está sendo descontinuada pelo Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem depender da credencial OAuth de servidor para servidor. </br>
+> A credencial de conta de serviço (JWT) está sendo descontinuada pela Adobe, as integrações do Campaign com soluções e aplicativos Adobe agora devem usam a credencial de servidor para servidor OAuth.</br>
 >
-> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a Conta técnica conforme detalhada em [esta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As credenciais da Conta de serviço (JWT) existentes continuarão a funcionar até 27 de janeiro de 2025. Além disso, a criação de novas credenciais de Conta de serviço (JWT) no Console do desenvolvedor não será mais possível a partir de 3 de junho de 2024. Uma nova credencial de conta de serviço (JWT) não pode ser criada ou adicionada a um projeto após essa data. </br>
+> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As credenciais da conta de serviço (JWT) já existentes continuarão a funcionar até 27 de janeiro de 2025. Além disso, a criação de novas credenciais de conta de serviço (JWT) no Developer Console não é mais possível desde 3 de junho de 2024. Não é possível a criação de uma credencial de conta de serviço (JWT) nova ou sua adição a um projeto desde esta data. </br>
 >
-> * Se você tiver implementado integrações de saída, como a integração Campaign-Analytics ou a integração do Experience Cloud Triggers, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar seu ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para oAuth. Como a criação de novas credenciais de conta de serviço (JWT) no Console do desenvolvedor não será mais possível a partir de 3 de junho de 2024, não será possível criar uma nova integração de saída dependendo do JWT após essa data
+> * Se você tiver implementado integrações de saída, como a integração do Campaign com o Analytics ou a integração dos acionadores da Experience Cloud, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar seu ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para oAuth. Como não é mais possível a criação de novas credenciais de conta de serviço (JWT) no Developer Console desde 3 de junho de 2024, você não pode criar uma nova integração de saída usando o JWT desde essa data
 
 ## Criar um perfil de produto do Adobe Analytics {#analytics-product-profile}
 
