@@ -5,10 +5,10 @@ description: Definir propriedades de formulários web
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '1220'
-ht-degree: 100%
+source-git-commit: 1d4990917fea54e67ed23cd0771295de03a4f01a
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 88%
 
 ---
 
@@ -83,6 +83,32 @@ Os temas são salvos no nó **[!UICONTROL Administration>Configuration>Form rend
 Uma renderização de amostra é exibida na parte inferior da janela de propriedades. O ícone **[!UICONTROL Edit link]** permite visualizar a configuração do tema selecionado.
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
+
+## Logotipo no formulário {#logo-in-the-form}
+
+Você pode alterar o logotipo usado no formulário pelo seu próprio logotipo.
+
+No **[!UICONTROL Rendering]** dentro da **[!UICONTROL Properties]** do seu aplicativo web, clique no ícone de vidro do seu modelo:
+
+![](assets/logo_glass.png)
+
+Na nova janela, clique no link **[!UICONTROL Page layout]** link:
+
+![](assets/logo_pagelayout.png)
+
+É possível alterar o caminho da imagem de logotipo aqui:
+
+![](assets/logo_path.png)
+
+As imagens disponíveis estão em **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]**. Você pode adicionar seu logotipo aqui.
+
+Essas imagens são colocadas no diretório back-end da instância *datakit\nms\fra\img\activities* ou *datakit\nms\eng\img\activities* (eng ou fra, dependendo do idioma da instância).
+
+Para ter uma nova imagem disponível nesse diretório (e em Imagens), entre em contato com o suporte a Adobe para fazer alterações nos diretórios de backend.
+
+Para instâncias locais, você mesmo pode adicionar imagens ao datakit.
+
+A imagem carregada não precisa ser visível do cliente do Campaign. O caminho correto é suficiente para ser usado como um novo logotipo.
 
 ## Textos no formulário {#texts-in-the-form}
 
