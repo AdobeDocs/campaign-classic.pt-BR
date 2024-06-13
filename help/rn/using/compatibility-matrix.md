@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 28302b40d4fa43b400a3e1b6dd3e133976a01418
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -107,7 +107,7 @@ Como cliente local/híbrido, você deve instalar e configurar as ferramentas lis
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Leia mais sobre JDK e Campaign no <a href="https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">esta página</a>.</p>
+<p>Leia mais sobre JDK e Campaign <a href="https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">nesta página</a>.</p>
 </td>
 </tr>
 <tr>
