@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 28302b40d4fa43b400a3e1b6dd3e133976a01418
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/depr
 
 ## Sistemas operacionais {#OperatingSystems}
 
-Como cliente local/híbrido, você deve instalar o Adobe Campaign em um dos sistemas operacionais listados abaixo. Saiba mais sobre as etapas de instalação do Campaign Classic v7 em [esta página](../../installation/using/application-server.md).
+Como cliente local/híbrido, será necessário instalar o Adobe Campaign em um dos sistemas operacionais listados abaixo. Saiba mais sobre as etapas de instalação do Campaign Classic v7 [nesta página](../../installation/using/application-server.md).
 
 
 <table> 
@@ -76,7 +76,7 @@ Como cliente local/híbrido, você deve instalar o Adobe Campaign em um dos sist
 
 ## Servidores da Web {#WebServers}
 
-Como cliente no local/híbrido, dependendo do sistema operacional, você deve integrar o Campaign a um dos servidores Web listados abaixo. Saiba mais sobre as etapas de configuração de servidores Web em [esta página](../../installation/using/integration-into-a-web-server-for-windows.md) (para Windows) e [esta página](../../installation/using/integration-into-a-web-server-for-linux.md) (para Linux) .
+Como cliente local/híbrido, dependendo do sistema operacional, será necessário integrar o Campaign a um dos servidores Web listados abaixo. Saiba mais sobre as etapas de configuração de servidores Web [nesta página](../../installation/using/integration-into-a-web-server-for-windows.md) (para Windows) e [nesta página](../../installation/using/integration-into-a-web-server-for-linux.md) (para Linux).
 
 <table>
 <tbody>
@@ -97,7 +97,7 @@ Como cliente no local/híbrido, dependendo do sistema operacional, você deve in
 
 ## Ferramentas {#Tools}
 
-Como cliente local/híbrido, você deve instalar e configurar as ferramentas listadas abaixo. [Saiba mais](../../installation/using/application-server.md).
+Como cliente local/híbrido, é necessário instalar e configurar as ferramentas listadas abaixo. [Saiba mais](../../installation/using/application-server.md).
 
 <table>
 <tbody>
@@ -127,7 +127,7 @@ Como cliente local/híbrido, você deve instalar e configurar as ferramentas lis
 
 ## Sistema de gerenciamento de banco de dados relacional (RDBMS){#RDBMSservers}
 
-Como cliente local/híbrido, você deve instalar e configurar um dos bancos de dados listados abaixo. [Saiba mais](../../installation/using/creating-and-configuring-the-database.md).
+Como cliente local/híbrido, é necessário instalar e configurar um dos bancos de dados listados abaixo. [Saiba mais](../../installation/using/creating-and-configuring-the-database.md).
 
 
 <table>
@@ -168,7 +168,7 @@ Como cliente local/híbrido, você deve instalar e configurar um dos bancos de d
 >
 >* O driver RDBMS deve corresponder à versão do servidor RDBMS.
 >
->* O PostgreSQL é o RDBMS para ambientes Cloud Service hospedados/gerenciados.
+>* PostgreSQL é o RDBMS para ambientes de serviços em nuvem hospedados/gerenciados.
 
 ## Conectores CRM{#CRMconnectors}
 
