@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 4ee05559-e719-4e6e-b42c-1e82df428871
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 757e3a5395f24e0bdd04737aba0458881e4ea780
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 8%
+source-wordcount: '168'
+ht-degree: 10%
 
 ---
 
@@ -31,7 +31,7 @@ Há três limites diferentes:
 
    * **Tomcat** lado: todas as consultas que chegam de fato ao cliente Adobe Campaign Tomcat.
 
-     Esse limite é configurado na variável **nl6/tomcat-8/conf/server.xml** arquivo. A variável **maxThreads** attribute permite aumentar o limite do número de queries processadas de cada vez. Pode ser alterado para 250, por exemplo.
+     Esse limite é configurado na variável **nl6/tomcat-X/conf/server.xml** arquivo. A variável **maxThreads** attribute permite aumentar o limite do número de queries processadas de cada vez. Pode ser alterado para 250, por exemplo.
 
      ```
      <Connector protocol="HTTP/1.1" port="8080"

@@ -2,32 +2,31 @@
 product: campaign
 title: Compartilhamento de públicos com a Adobe Experience Cloud
 description: Compartilhamento de públicos com a Adobe Experience Cloud
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '304'
-ht-degree: 100%
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 81%
 
 ---
 
-# Compartilhamento de públicos com a Adobe Experience Cloud{#sharing-audiences-with-adobe-experience-cloud}
-
+# Compartilhamento de públicos com a Adobe Experience Cloud {#sharing-audiences-with-adobe-experience-cloud}
 
 
 >[!CAUTION]
 >
 >Para compartilhar públicos com as soluções da Adobe Experience Cloud, é necessário implementar o Adobe Identity Management System. i [Saiba mais sobre o IMS](../../integrations/using/about-adobe-id.md).
 
-Com o Adobe Campaign, você pode compartilhar públicos e segmentos com as soluções Adobe Experience Cloud e os serviços principais. Estão disponíveis duas opções:
+Com o Adobe Campaign, você pode compartilhar públicos e segmentos com os serviços da Adobe Experience Cloud. Estão disponíveis duas opções:
 
-1. Envie dados de segmento da Adobe Experience Platform para o Adobe Campaign. Para implementar essa integração, é necessário conectar a Plataforma de dados do cliente em tempo real (RTCDP) ao Campaign. [Saiba mais nesta seção](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=pt-BR).
+1. Envie dados de segmento da Adobe Experience Platform para o Adobe Campaign. Para implementar essa integração, é necessário conectar a Plataforma de dados do cliente em tempo real (RTCDP) ao Campaign. [Saiba mais nesta seção](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=pt-BR){target="_blank"}.
 
-1. Integre o **Adobe Campaign** com o **serviço principal de pessoas** (também conhecido como **Profiles &amp; Audiences core service**) ou Adobe Audience Manager. Depois será possível:
+1. Integrar **Adobe Campaign** com  **Públicos do Experience Cloud** ou **Adobe Audience Manager**. Depois será possível:
 
    * Importar públicos/segmentos compartilhados de diferentes soluções da Adobe Experience Cloud para o Adobe Campaign. Os públicos podem ser importados por meio de listas no Adobe Campaign.
 
@@ -40,6 +39,5 @@ A integração oferece suporte a dois tipos de Adobe Experience Cloud IDs:
 
   >[!NOTE]
   >
-  > A fonte de dados de ID declarada agora também pode ser usada com a integração do serviço principal Pessoas.
+  > A fonte de dados da ID declarada agora também pode ser usada com a integração do Experience Cloud Assets.
   >
-  >Se você estiver usando a integração do serviço principal Pessoas e quiser adicionar a integração do Audience Manager, será necessária a ajuda de um consultor do Adobe Audience Manager para evitar a perda de todas as sincronizações de ID coletadas durante a transição para o uso dessa fonte de dados de ID declarada em um contexto do Adobe Audience Manager.

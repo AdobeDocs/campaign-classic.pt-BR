@@ -2,16 +2,16 @@
 product: campaign
 title: Importação e exportação de públicos
 description: Importação e exportação de públicos
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '627'
-ht-degree: 100%
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 77%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## Importação de um público-alvo {#importing-an-audience}
 
-Você pode importar públicos-alvo/segmentos do Audience Manager ou do Serviço principal de pessoas para o Adobe Campaign por meio das listas de destinatários.
+Você pode importar públicos/segmentos do Audience Manager para o Adobe Campaign por meio das listas de recipients.
 
 1. Acesse o nó **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Lists]** no explorer do Adobe Campaign.
 1. Na barra de ações, selecione **[!UICONTROL New]** > **[!UICONTROL Create a shared audience...]**.
@@ -44,19 +44,19 @@ Você pode importar públicos-alvo/segmentos do Audience Manager ou do Serviço 
 
 O público é importado por meio de um workflow técnico. A lista importada contém elementos que podem ser reconciliados usando a fonte de dados da AMC. Os elementos que não são reconhecidos pelo Adobe Campaign não são importados.
 
-O processo de importação leva de 24 a 36 horas para sincronizar, quando os segmentos são importados diretamente do Serviço principal de pessoas ou do Audience Manager. Após esse período, é possível encontrar e usar seu novo público no Adobe Campaign.
+O processo de importação leva de 24 a 36 horas para sincronizar, quando os segmentos são importados diretamente do Audience Manager. Após esse período, é possível encontrar e usar seu novo público no Adobe Campaign.
 
 >[!NOTE]
 >
->Se você estiver importando públicos do Adobe Analytics para o Adobe Campaign, esses públicos precisam ser compartilhados primeiro no Serviço Principal de Pessoas ou no Audience Manager. Esse processo leva de 12 a 24 horas, e deve ser adicionado ao tempo de sincronização de 24 a 36 horas com o Campaign.
+>Se você estiver importando públicos do Adobe Analytics para o Adobe Campaign, esses públicos precisam ser compartilhados primeiro no Audience Manager. Esse processo leva de 12 a 24 horas, e deve ser adicionado ao tempo de sincronização de 24 a 36 horas com o Campaign.
 >
->Nesse caso específico, o período de compartilhamento de público pode durar até 60 horas. Para obter mais informações sobre o compartilhamento de público do Adobe Analytics no serviço principal de pessoas e no Audience Manager, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=pt-BR).
+>Nesse caso específico, o período de compartilhamento de público pode durar até 60 horas. Para obter mais informações sobre o compartilhamento de público do Adobe Analytics no Audience Manager, consulte [Documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=pt-BR){target="_blank"}.
 
 Os dados do público são substituídos completamente sempre quando sincronizados. Apenas segmentos podem ser importados. Dados granulares, incluindo pares chave-valor, traços e regras não são compatíveis.
 
 ## Exportação de um público-alvo {#exporting-an-audience}
 
-Você pode exportar um público do Adobe Campaign para o Audience Manager ou o Serviço Principal de Pessoas usando um workflow. Os processos para criar e usar um workflow são detalhados [neste documento](../../workflow/using/building-a-workflow.md). Os públicos exportados são salvos como segmentos no Serviço principal de pessoas:
+Você pode exportar um público do Adobe Campaign para o Audience Manager usando um fluxo de trabalho. Os processos para criar e usar um workflow são detalhados [neste documento](../../workflow/using/building-a-workflow.md). Os públicos exportados são salvos como segmentos:
 
 1. Criação de um novo workflow para construção do target
 1. Usando as diferentes atividades disponíveis, target de conjunto de destinatários.
@@ -80,7 +80,7 @@ Você pode exportar um público do Adobe Campaign para o Audience Manager ou o S
 
 O público é então exportado. A atividade de público salva tem duas transições de saída. A transição principal contém os destinatários que foram exportados com êxito. A transição adicional contém os destinatários que não puderam ser mapeados com uma ID de visitante ou ID declarada.
 
-A sincronização entre o Adobe Campaign e o Serviço principal de pessoas leva de 24 a 36 horas. Após esse período, é possível encontrar seu novo público no Serviço principal de pessoas e reutilizá-lo em outras soluções da Adobe Experience Cloud. Para obter mais informações sobre como usar um público compartilhado do Adobe Campaign no Serviço principal de pessoas da Adobe, consulte esta [documentação](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/t-audience-create.html?lang=pt-BR).
+A sincronização entre soluções leva de 24 a 36 horas. Após esse período, é possível encontrar seu novo público-alvo e reutilizá-lo em outras soluções da Adobe Experience Cloud. Para obter mais informações sobre como usar um público compartilhado do Adobe Campaign, consulte esta [documentação](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/create){target="_blank"}.
 
 >[!NOTE]
 >

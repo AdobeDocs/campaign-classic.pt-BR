@@ -3,8 +3,8 @@ product: campaign
 title: Análise da web
 description: Saiba mais sobre o pacote do Web Analytics
 feature: Workflows, Analytics Integration
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
+workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 
 
-Os workflows detalhados abaixo são instalados com o módulo dos **conectores Web Analytics** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../platform/using/gs-aa.md).
+Os workflows detalhados abaixo são instalados com o módulo dos **conectores Web Analytics** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../integrations/using/gs-aa.md).
 
 <table> 
  <tbody> 

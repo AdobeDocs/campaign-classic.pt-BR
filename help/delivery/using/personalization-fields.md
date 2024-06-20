@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 87%
 
 ---
 
@@ -115,6 +115,26 @@ Durante a visualização ou envio, se a fase de personalização exceder o tempo
 O valor padrão é de 5 segundos.
 
 Se essa opção for definida como 0, não haverá limite de tempo para a fase de personalização.
+
+## Guia Personalização {#personalization-tab}
+
+Nas Propriedades do delivery, você tem uma guia Personalization.
+
+É possível adicionar dados à consulta de perfil da targeting dimension clicando no link **&quot;Editar a consulta de carregamento do perfil do recipient&quot;**. Você pode usar os dados extraídos diretamente em uma expressão para extrair o que realmente precisa. Esses dados serão adicionados ao contexto.
+
+![](assets/persotab-edit.png){zoomable="yes"}
+
+Se os dados que deseja adicionar não estiverem no targeting dimension, clique em **&quot;Adicionar objetos no contexto de execução dos scripts&quot;**.
+
+![](assets/persotab_addobjects.png){zoomable="yes"}
+
+Você pode selecionar o schema de objetos necessário e, em seguida, usar esses dados dentro do código Javascript, que será executado durante a preparação do delivery.
+
+![](assets/persotab_addobjects_articles.png){zoomable="yes"}
+
+Ao adicionar o schema de objetos, você pode selecionar os campos que deseja adicionar ao contexto:
+
+![](assets/persotab_addobjects_fields.png){zoomable="yes"}
 
 ## Tutorial em vídeo {#personalization-fields-video}
 

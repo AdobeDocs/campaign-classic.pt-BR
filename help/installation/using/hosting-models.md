@@ -6,7 +6,7 @@ feature: Installation, Architecture, Deployment
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Como cliente local, antes de começar a implantar o Campaign Classic, atenda aos
 
 ## Híbrido
 
-Quando implantado como um modelo híbrido, o software da solução Adobe Campaign reside no local do cliente e o gerenciamento de execução é fornecido como um serviço em nuvem pela Adobe. A instância de marketing do Adobe Campaign é instalada no firewall do cliente, portanto, as informações de identificação pessoal (PII) permanecem na empresa e somente os dados necessários para personalizar emails são enviados para a nuvem para execução de email. A instância de execução, hospedada na nuvem, recebe as solicitações da instância no local para entregar emails. Essa instância personaliza todos os emails e os entrega. Nenhum tipo de dado é armazenado permanentemente na nuvem.
+Quando implantado como um modelo híbrido, o software da solução Adobe Campaign reside no local do cliente e o gerenciamento de execução é fornecido como um serviço em nuvem pela Adobe. A instância de marketing do Adobe Campaign é instalada no firewall do cliente, portanto, as informações de identificação pessoal (PII) permanecem na empresa e somente os dados necessários para personalizar emails são enviados para a nuvem para execução de email. A instância de execução, hospedada na nuvem, recebe as solicitações da instância local para entregar emails. Essa instância personaliza todos os emails e os entrega. Nenhum tipo de dado é armazenado permanentemente na nuvem.
 
 ![](assets/deployment_hybrid.png)
 

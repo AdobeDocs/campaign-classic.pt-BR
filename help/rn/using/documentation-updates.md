@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
+source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3746'
+ht-degree: 99%
 
 ---
 
@@ -82,7 +82,7 @@ O guia de migração foi atualizado. As referências a versões não compatívei
 
 ## Julho de 2022 {#july-2022}
 
-A transição para o novo servidor de entrega é detalhada em uma nova nota técnica. [Leia mais](../../technotes/using/deliverability-server.md)
+<!--Transition to the new deliverability server is detailed in a new technote. [Read more](../../technotes/using/deliverability-server.md)-->
 
 **Atualizações da documentação que acompanha a versão 7.3.1**
 
@@ -155,11 +155,9 @@ Adição de uma limitação sobre o SMS de Entrada (MO). [Leia mais](../../deliv
 
 Atualização dos detalhes dos logs do processo de migração para a implantação do conector do CRM. [Leia mais](../../migration/using/testing-the-migration.md#verification-process)
 
-Adição de requisitos sobre permissões de IMS para implementar a integração do Adobe Campaign-Adobe Analytics. [Leia mais](../../platform/using/adobe-analytics-provisioning.md)
+Adição de requisitos sobre permissões de IMS para implementar a integração do Adobe Campaign-Adobe Analytics. [Leia mais](../../integrations/using/adobe-analytics-provisioning.md)
 
 Atualização da data de término da vida útil do conector de dados do Adobe Analytics de 1 de março de 2022 para 17 de agosto de 2022. [Leia mais](deprecated-features.md)
-
-Adição de um link para a documentação do SDK móvel da Adobe Experience Platform para saber como configurar a extensão do Campaign no Adobe Launch. [Leia mais](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
 Adição de uma seção sobre como usar o JavaScript para calcular valores, trocar dados e executar operações específicas usando chamadas SOAP.[Leia mais](../../workflow/using/javascript-scripts-and-templates.md)
 
@@ -350,7 +348,7 @@ A página de recursos obsoletos e removidos foi atualizada. [Leia mais](../../rn
 As Notas de versão e a Matriz de compatibilidade da versão [!DNL Gold Standard] agora estão disponíveis em uma página dedicada.
 [Leia mais](../../rn/using/gold-standard.md).
 
-A integração do Triggers, originalmente baseada na configuração da autenticação oAuth para acessar o pipeline, agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/configuring-adobe-io.md)
+A integração do Triggers, originalmente baseada na configuração da autenticação oAuth para acessar o pipeline, agora foi alterada e movida para o Adobe I/O. [Saiba mais](../../integrations/using/about-triggers.md#implement)
 
 **Outras atualizações**
 

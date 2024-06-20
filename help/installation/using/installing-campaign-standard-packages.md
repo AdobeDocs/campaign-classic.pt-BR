@@ -5,9 +5,9 @@ description: Saiba como instalar pacotes integrados do Campaign
 feature: Installation, Application Settings
 badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1264'
 ht-degree: 10%
 
 ---
@@ -192,7 +192,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Conectores do Web Analytics<br /> </td> 
-   <td> Permite que o Adobe Campaign e o Adobe Analytics interajam por meio do pacote Web Analytics connectors. Não compatível com mensagens transacionais (pacote do centro de mensagens). <a href="../../platform/using/gs-aa.md">Saiba mais</a><br /> </td> 
+   <td> Permite que o Adobe Campaign e o Adobe Analytics interajam por meio do pacote Web Analytics connectors. Não compatível com mensagens transacionais (pacote do centro de mensagens). <a href="../../integrations/using/gs-aa.md">Saiba mais</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -202,7 +202,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Integração de públicos compartilhados do Adobe Experience Cloud<br /> </td> 
-   <td> Permite trocar e compartilhar públicos/segmentos com as soluções da Adobe Experience Cloud e os serviços principais. Exige IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Saiba mais</a> <br /> </td> 
+   <td> Permite trocar e compartilhar públicos/segmentos com soluções e aplicativos da Adobe Experience Cloud. Exige IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Saiba mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 

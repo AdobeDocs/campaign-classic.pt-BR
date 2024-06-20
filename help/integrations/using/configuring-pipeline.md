@@ -7,10 +7,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
-workflow-type: ht
-source-wordcount: '875'
-ht-degree: 100%
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+workflow-type: tm+mt
+source-wordcount: '833'
+ht-degree: 92%
 
 ---
 
@@ -31,19 +31,17 @@ Antes de iniciar esta configuração, verifique se você tem:
 * Um acesso de desenvolvedor para sua organização
 * Uma configuração de acionadores válida no Adobe Analytics
 
-## Arquivos de autenticação e configuração {#authentication-configuration}
-
-A autenticação é necessária, pois o pipeline está hospedado na Adobe Experience Cloud. Ela usa um par de chaves pública e privada. Esse processo tem a mesma função de usuário/senha, porém é mais seguro. A autenticação é compatível com a Marketing Cloud por meio do projeto do Adobe Developer.
+A autenticação é necessária, pois o pipeline está hospedado na Adobe Experience Cloud. Ele usa uma autenticação compatível com o por meio de um projeto do Adobe Developer.
 
 ## Etapa 1: criar/atualizar seu projeto do Adobe Developer {#creating-adobe-io-project}
 
-Para clientes hospedados, trabalhe com seu representante da Adobe/atendimento ao cliente e habilite sua organização com tokens de conta do Adobe Developer para a integração com acionadores.
+Você deve habilitar sua organização com tokens de conta da Adobe Developer para a integração de acionadores.
 
-Para clientes no local/híbridos, consulte a página [Configuração do Adobe I/O para Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Observe que é necessário selecionar **[!UICONTROL Adobe Analytics]** ao adicionar a API à credencial do Adobe Developer.
+Saiba como criar sua conta técnica do Adobe no [esta página](../../integrations/using/oauth-technical-account.md). Observe que é necessário selecionar **[!UICONTROL Adobe Analytics]** ao adicionar a API à credencial do Adobe Developer.
 
 ## Etapa 2: configurar a opção de pipeline {#configuring-nmspipeline}
 
-Depois que a autenticação for definida, o pipeline recuperará os eventos. Ele processará somente acionadores configurados no Adobe Campaign. O acionador deve ser gerado pelo Adobe Analytics e enviado para o pipeline que processará somente acionadores configurados no Adobe Campaign.
+Depois que a autenticação for definida, o pipeline recuperará os eventos. Somente os acionadores configurados no Adobe Campaign são processados. O acionador deve ser gerado pelo Adobe Analytics e enviado para o pipeline que processará somente acionadores configurados no Adobe Campaign.
 
 A opção também pode ser configurada com um curinga para capturar todos os acionadores independentemente do nome.
 
@@ -111,7 +109,7 @@ Para configurar a opção Pipeline, siga estas recomendações:
 * O processo `pipelined` também aceita o tópico “aliases”.
 * Você deve sempre reiniciar o processo `pipelined` após realizar alterações.
 
-## Etapa 3: configuração opcional {#step-optional}
+## (opcional) Etapa 3: configuração adicional {#step-optional}
 
 Você pode alterar alguns parâmetros internos de acordo com seus requisitos de carga, mas certifique-se de testá-los antes de aplicá-los ao ambiente de produção.
 

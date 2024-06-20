@@ -7,10 +7,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
-workflow-type: ht
-source-wordcount: '258'
-ht-degree: 100%
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 89%
 
 ---
 
@@ -37,4 +37,26 @@ O processo [!DNL pipelined] está sempre em execução no servidor de marketing 
 
 O processo [!DNL pipelined] faz logon na Experience Cloud usando um serviço de autenticação e envia uma chave privada. O serviço de autenticação retorna um token. O token é usado para a autenticação ao recuperar os eventos.
 
-Para obter mais informações sobre autenticação, consulte esta [página](../../integrations/using/configuring-adobe-io.md).
+## Pré-requisitos {#adobe-io-prerequisites}
+
+Antes de iniciar esta implementação, verifique se você tem:
+
+* um **identificador de organização** válido: o ID da organização é o identificador exclusivo da Adobe Experience Cloud, que é usado, por exemplo, para o serviço de VisitorID e para o Logon único (SSO) no IMS. [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR)
+* um **Acesso de desenvolvedor** para sua organização. O administrador de sistema da organização precisa seguir o procedimento **Adicionar desenvolvedores a um único perfil de produto** detalhado [nesta página](https://helpx.adobe.com/br/enterprise/using/manage-developers.html) para fornecer acesso de desenvolvedor ao `Analytics - {tenantID}` do Perfil do produto do Adobe Analytics que está associado ao Triggers.
+
+## Etapas de implementação {#implement}
+
+Para implementar acionadores do Campaign e do Experience Cloud, siga as etapas abaixo:
+
+1. Crie um projeto OAuth. [Saiba mais](oauth-technical-account.md#oauth-service)
+
+1. Adicione suas credenciais do projeto OAuth no Adobe Campaign. [Saiba mais](oauth-technical-account.md#add-credentials)
+
+1. Atualize o tipo de autenticação para o projeto do Developer Console no arquivo de configuração **config-&lt; instance-name >.xml** do seguinte modo:
+
+   ```
+   <pipelined ... authType="imsJwtToken"  ... />
+   ```
+
+   Em seguida, execute um `config -reload` e uma reinicialização do [!DNL pipelined] para que as alterações sejam consideradas.
+

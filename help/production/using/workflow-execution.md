@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 14%
@@ -91,7 +91,7 @@ Para verificar isso e iniciar o módulo se necessário, siga as seguintes etapas
 
    Um usuário administrador também pode verificar se a variável **wfserver@`<instance>`** O módulo é iniciado no servidor de aplicativos principal usando o comando abaixo.
 
-   ```
+   ```sql
    nlserver pdump
    HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    [...]

@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '681'
-ht-degree: 100%
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
+workflow-type: tm+mt
+source-wordcount: '772'
+ht-degree: 90%
 
 ---
 
@@ -51,6 +51,12 @@ O workflow **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) atualiz
 O Adobe Campaign é compatível com APNs HTTP/2. Para obter mais informações sobre as etapas de configuração, consulte [esta seção](configuring-the-mobile-application.md).
 
 Para informações gerais sobre como criar uma entrega, consulte [esta seção](steps-about-delivery-creation-steps.md).
+
+
+## Configurar canal de notificação por push {#push-notification-configuration}
+
+Para enviar notificações por push com o Adobe Campaign, primeiro você deve configurar o ambiente e o aplicativo. Antes de começar a enviar notificações por push com o Adobe Campaign, é necessário garantir que as configurações e integrações estejam em vigor no aplicativo móvel e para tags na Adobe Experience Platform. O SDK móvel da Adobe Experience Platform fornece APIs de integração do lado do cliente para seus dispositivos móveis por meio de SDKs compatíveis com Android e iOS. A configuração dos SDKs é realizada por meio da interface da coleção de dados para oferecer uma configuração flexível e integrações extensíveis baseadas em regras. Saiba mais em [Documentação do Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings).
+
 
 ## Caminho de dados {#data-path}
 

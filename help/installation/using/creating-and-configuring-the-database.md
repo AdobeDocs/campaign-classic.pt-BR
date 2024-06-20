@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '1329'
-ht-degree: 1%
+source-wordcount: '1306'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +58,7 @@ Identifique o servidor e escolha o tipo de operação a ser executada. Nesse cas
 Dependendo do mecanismo de banco de dados selecionado, as informações de identificação do servidor podem variar.
 
 * Para um **Oracle** preencha o **Nome TNS** definido para o servidor de aplicativos.
-* Para um **PostgreSQL** ou **DB2** deve especificar o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados.
+* Para um **PostgreSQL** deve especificar o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados.
 * Para um **Microsoft SQL Server** deve definir: o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados: **DNS** ou **DNS`\<instance>`** (modo de instância),
 
   >[!CAUTION]
@@ -78,7 +78,6 @@ Para fazer isso, digite o nome e a senha de um **Conta do sistema de administra�
 * **sistema** para um banco de dados Oracle,
 * **sa** para um banco de dados Microsoft SQL Server,
 * **postgres** para um banco de dados PostgreSQL,
-* **db2inst1** para um banco de dados DB2.
 
 ### Etapa 3 - Conexão e características do banco de dados {#step-3---connection-and-characteristics-of-the-database}
 
@@ -89,11 +88,6 @@ A etapa a seguir permite definir as configurações para fazer logon no banco de
 Você precisa definir as seguintes configurações:
 
 * Especifique o nome do banco de dados a ser criado.
-
-  >[!NOTE]
-  >
-  >Para um banco de dados DB2, o nome do banco de dados não deve exceder 8 caracteres.
-
 * Insira a senha da conta vinculada a este banco de dados.
 * Indique se o banco de dados deve ou não estar em Unicode.
 
@@ -182,7 +176,7 @@ Identifique o servidor e escolha o tipo de operação que deseja realizar. Nesse
 Dependendo do mecanismo de banco de dados selecionado, as informações de identificação do servidor podem variar.
 
 * Para um **Oracle** preencha o **Nome TNS** definido para o servidor de aplicativos.
-* Para um **PostgreSQL** ou **DB2** deve especificar o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados.
+* Para um **PostgreSQL** deve especificar o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados.
 * Para um **Microsoft SQL Server** deve definir:
 
    1. o nome DNS (ou endereço IP) definido no servidor de aplicativos para acessar o servidor de banco de dados,

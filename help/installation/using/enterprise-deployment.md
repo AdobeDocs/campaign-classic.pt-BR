@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 6%
@@ -70,7 +70,7 @@ Custos mais altos de hardware e administração.
 >  
 >Se os servidores da aplicação apontarem para uma única instância do banco de dados, após alterar o esquema em uma instância, o esquema não será carregado na outra instância.
 >
->Para recuperar esses problemas, é necessário reinicializar o processo ‘web@default‘ na segunda instância em que ocorreu o erro.
+>Para recuperar esses problemas, é necessário reinicializar o processo &quot;web@default&quot; na segunda instância em que ocorreu o erro.
 
 ### Instalando e configurando o servidor de aplicativos 1 {#installing-and-configuring-the-application-server-1}
 
@@ -89,7 +89,7 @@ As etapas para instalar o primeiro servidor são:
 
 1. Depois que o servidor do Adobe Campaign estiver instalado, inicie o servidor de aplicativos (Web) usando o comando **nlserver web - tomcat** (o módulo Web permite que você inicie o Tomcat no modo de servidor Web independente escutando na porta 8080) e certifique-se de que o Tomcat é iniciado corretamente:
 
-   ```
+   ```sql
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    12:08:18 >   Starting Web server module (pid=28505, tid=-1225184768)...
    12:08:18 >   Tomcat started
@@ -136,7 +136,7 @@ As etapas para instalar o primeiro servidor são:
 
 1. Edite o **config-demo.xml** arquivo (criado por meio do comando anterior e localizado ao lado da tag **config-default.xml** arquivo), verifique se a variável **mta** (delivery), **wfserver** (workflow), **inMail** (emails de reassociação) e **stat** (estatísticas) estiverem ativados e, em seguida, configurar o endereço do **aplicativo** servidor de estatísticas:
 
-   ```
+   ```xml
    <?xml version='1.0'?>
    <serverconf>  
      <shared>    
@@ -156,7 +156,7 @@ As etapas para instalar o primeiro servidor são:
 
 1. Edite o **serverConf.xml** e especifique o domínio de entrega, em seguida, especifique os endereços IP (ou host) dos servidores DNS usados pelo módulo MTA para responder às consultas DNS do tipo MX.
 
-   ```
+   ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
    ```
 
@@ -175,7 +175,7 @@ As etapas para instalar o primeiro servidor são:
    >A partir da versão 20.1, recomendamos usar o seguinte comando (para Linux): **systemctl start nlserver**
 
 
-   ```
+   ```sql
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    syslogd@default (7611) - 9.2 MB
    stat@demo (5988) - 1.5 MB
@@ -214,7 +214,7 @@ Siga as etapas abaixo:
 
 1. Edite o **config-demo.xml** arquivo (criado por meio do comando anterior e localizado ao lado da tag **config-default.xml** arquivo), verifique se a variável **mta** (delivery), **wfserver** (workflow), **inMail** (emails de reassociação) e **stat** (estatísticas) estiverem ativados e, em seguida, configurar o endereço do **aplicativo** servidor de estatísticas:
 
-   ```
+   ```xml
    <?xml version='1.0'?>
    <serverconf>  
      <shared>    
@@ -234,7 +234,7 @@ Siga as etapas abaixo:
 
 1. Edite o **serverConf.xml** e preencha a configuração DNS do módulo MTA:
 
-   ```
+   ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
    ```
 
@@ -266,7 +266,7 @@ As etapas são as seguintes:
 1. Copie o **config-demo.xml** e **serverConf.xml** arquivos criados durante a instalação. No **config-demo.xml** arquivo, ative o **trackinglogd** processar e desativar o **mta**, **inmail**, **wfserver** e **stat** processos.
 1. Edite o **serverConf.xml** arquive e preencha os servidores de rastreamento redundantes nos parâmetros do redirecionamento:
 
-   ```
+   ```xml
    <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
    <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
    ```
@@ -275,13 +275,13 @@ As etapas são as seguintes:
 
    O navegador deve exibir as seguintes mensagens (dependendo do URL redirecionado pelo balanceador de carga):
 
-   ```
+   ```xml
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv1"/>
    ```
 
    ou
 
-   ```
+   ```xml
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv2"/>
    ```
 

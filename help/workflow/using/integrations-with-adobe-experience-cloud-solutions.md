@@ -2,10 +2,10 @@
 product: campaign
 title: Integrações com os workflows de soluções da Adobe Experience Cloud
 description: Saiba mais sobre as integrações com os workflows de soluções da Adobe Experience Cloud
-feature: Workflows, Audiences, People Core Service Integration
+feature: Workflows, Audiences
 topic-tags: technical-workflows
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 100%
 

@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '923'
 ht-degree: 98%
 
 ---
@@ -64,16 +64,16 @@ O administrador do banco de dados precisa combinar esses direitos com os direito
 | **Acesso aos dados do cliente** | Privilégio(s) SELECIONAR em (FUTURO) TABELA(S) ou VISUALIZAÇÃO(es) | Privilégio SELECIONAR | Privilégio SELECIONAR ou SELECIONAR QUALQUER TABELA | Permissão SELECIONAR  | Privilégio SELECIONAR | Privilégio SELECIONAR |
 | **Acesso aos metadados** | Privilégio SELECIONAR no ESQUEMA de INFORMATION_SCHEMA | Privilégio SELECIONAR | Não é necessário nenhum privilégio para usar a instrução DESCREVER | Permissão DEFINIÇÃO DE VISUALIZAÇÃO | Não é necessário nenhum privilégio para usar o comando &quot;\d table&quot; | Privilégio SELECIONAR |
 
-|   | DB2 UDB | Teradata | InfiniDB | Sybase IQ / Sybase ASE | Netezza | AsterData |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Conexão com o banco de dados remoto** | Autoridade CONECTAR | Privilégio CONECTAR | Criar um usuário vinculado a um host remoto que tenha TODOS OS PRIVILÉGIOS | Não é necessário nenhuma permissão para usar a declaração CONECTAR. | Não é necessário nenhum privilégio | Privilégio CONECTAR |
-| **Criar tabelas** | Autoridade CRIAR TABELA | Palavra-chave CRIAR TABELA ou TABELA | Privilégio CRIAR | Autoridade RECURSOS e a permissão CRIAR | Privilégio TABELA | Privilégio CRIAR |
-| **Criar índices** | Privilégio ÍNDICE | Palavra-chave CRIAR ÍNDICE ou ÍNDICE | Privilégio ÍNDICE | Autoridade RECURSOS e a permissão CRIAR | Privilégio ÍNDICE | Privilégio CRIAR |
-| **Criar funções** | Autoridade ESQUEMA_IMPLÍCITO ou privilégio CRIAR EM | Palavra-chave CRIAR FUNÇÃO ou FUNÇÃO | Privilégio CRIAR ROTINA | Autoridade RECURSOS ou autoridade DBA para funções Java | Privilégio FUNÇÃO | Privilégio CRIAR FUNÇÃO |
-| **Criar procedimentos** | Autoridade ESQUEMA_IMPLÍCITO ou privilégio CRIAR EM | Palavra-chave CRIAR PROCEDIMENTO ou PROCEDIMENTO | Privilégio CRIAR ROTINA | Autoridade RECURSOS | Privilégio PROCEDIMENTO | Privilégio CRIAR FUNÇÃO |
-| **Remover objetos (tabelas, índices, funções, procedimentos)** | Privilégio SOLTAR ou privilégio CONTROLE ou proprietário do objeto | SOLTAR &lt; object > ou a palavra-chave relacionada a objetos | Privilégio SOLTAR  | Propriedade do objeto ou da autoridade do DBA | Privilégio SOLTAR | Propriedade do objeto |
-| **Monitoramento de execuções** | Autoridade EXPLICAR | Não é necessário nenhum privilégio para usar a instrução EXPLICAR | Privilégio SELECIONAR | Somente um administrador do sistema pode executar o sp_showplan | Não é necessário nenhum privilégio para usar a instrução EXPLICAR | Não é necessário nenhum privilégio para usar a instrução EXPLICAR |
-| **Gravação de dados** | Privilégios INSERIR e ATUALIZAR ou autoridade ACESSO AOS DADOS | Privilégios INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR | Permissões INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR |
-| **Carregamento de dados em tabelas** | Autoridade CARREGAMENTO | Privilégios SELECIONAR e INSERIR para usar as instruções COPIAR PARA e COPIAR DE respectivamente | Privilégio ARQUIVAR | Seja o proprietário da tabela ou da permissão ALTERAR. Dependendo da opção -gl, CARREGAR TABELA só pode ser executado se o usuário tiver a autoridade do DBA | Privilégios SELECIONAR e INSERIR | Privilégios SELECIONAR e INSERIR |
-| **Acesso aos dados do cliente** | Privilégios INSERIR/ATUALIZAR ou autoridade ACESSO AOS DADOS | Privilégio SELECIONAR | Privilégio SELECIONAR | Permissão SELECIONAR | Privilégio SELECIONAR | Privilégio SELECIONAR |
-| **Acesso aos metadados** | Não é necessário nenhuma autorização para usar a instrução DESCREVER | Privilégio MOSTRAR | Privilégio SELECIONAR | Não é necessária nenhuma permissão para usar a instrução DESCREVER | Não é necessário nenhum privilégio para usar o comando &quot;\d table&quot; | Não é necessário nenhum privilégio para usar o comando MOSTRAR |
+|   | Teradata | InfiniDB | Sybase IQ / Sybase ASE | Netezza | AsterData |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Conexão com o banco de dados remoto** | Privilégio CONECTAR | Criar um usuário vinculado a um host remoto que tenha TODOS OS PRIVILÉGIOS | Não é necessário nenhuma permissão para usar a declaração CONECTAR. | Não é necessário nenhum privilégio | Privilégio CONECTAR |
+| **Criar tabelas** | Palavra-chave CRIAR TABELA ou TABELA | Privilégio CRIAR | Autoridade RECURSOS e a permissão CRIAR | Privilégio TABELA | Privilégio CRIAR |
+| **Criar índices** | Palavra-chave CRIAR ÍNDICE ou ÍNDICE | Privilégio ÍNDICE | Autoridade RECURSOS e a permissão CRIAR | Privilégio ÍNDICE | Privilégio CRIAR |
+| **Criar funções** | Palavra-chave CRIAR FUNÇÃO ou FUNÇÃO | Privilégio CRIAR ROTINA | Autoridade RECURSOS ou autoridade DBA para funções Java | Privilégio FUNÇÃO | Privilégio CRIAR FUNÇÃO |
+| **Criar procedimentos** | Palavra-chave CRIAR PROCEDIMENTO ou PROCEDIMENTO | Privilégio CRIAR ROTINA | Autoridade RECURSOS | Privilégio PROCEDIMENTO | Privilégio CRIAR FUNÇÃO |
+| **Remover objetos (tabelas, índices, funções, procedimentos)** | SOLTAR &lt; object > ou a palavra-chave relacionada a objetos | Privilégio SOLTAR  | Propriedade do objeto ou da autoridade do DBA | Privilégio SOLTAR | Propriedade do objeto |
+| **Monitoramento de execuções** | Não é necessário nenhum privilégio para usar a instrução EXPLICAR | Privilégio SELECIONAR | Somente um administrador do sistema pode executar o sp_showplan | Não é necessário nenhum privilégio para usar a instrução EXPLICAR | Não é necessário nenhum privilégio para usar a instrução EXPLICAR |
+| **Gravação de dados** | Privilégios INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR | Permissões INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR |
+| **Carregamento de dados em tabelas** | Privilégios SELECIONAR e INSERIR para usar as instruções COPIAR PARA e COPIAR DE respectivamente | Privilégio ARQUIVAR | Seja o proprietário da tabela ou da permissão ALTERAR. Dependendo da opção -gl, CARREGAR TABELA só pode ser executado se o usuário tiver a autoridade do DBA | Privilégios SELECIONAR e INSERIR | Privilégios SELECIONAR e INSERIR |
+| **Acesso aos dados do cliente** | Privilégio SELECIONAR | Permissão SELECIONAR | Privilégio SELECIONAR | Privilégio SELECIONAR |
+| **Acesso aos metadados** | Privilégio MOSTRAR | Privilégio SELECIONAR | Não é necessária nenhuma permissão para usar a instrução DESCREVER | Não é necessário nenhum privilégio para usar o comando &quot;\d table&quot; | Não é necessário nenhum privilégio para usar o comando MOSTRAR |

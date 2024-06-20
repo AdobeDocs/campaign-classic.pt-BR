@@ -6,7 +6,7 @@ feature: Technote, Upgrade
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 10%
@@ -27,7 +27,7 @@ Por motivos de segurança, você deve atualizar para uma das versões listadas a
 
 >[!NOTE]
 >
->Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+>Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 >
 
 ## Atualizações de segurança {#acc-security-updates}
@@ -123,11 +123,11 @@ Saiba como verificar sua versão [nesta seção](../../platform/using/launching-
 
 **Como atualizar?**
 
-Depois que as instâncias forem atualizadas para uma versão mais recente, todos os clientes precisarão seguir o [mover procedimento para o novo modo de autenticação](../../integrations/using/configuring-adobe-io.md). Isso requer que você gere o novo token de Adobe I/O e use-o na implementação.  
+Depois que as instâncias forem atualizadas para uma versão mais recente, todos os clientes precisarão seguir o [mover procedimento para o novo modo de autenticação](../../integrations/using/about-triggers.md#implement). Isso requer que você gere o novo token de Adobe I/O e use-o na implementação.  
 
 Além disso, para ambientes híbridos, os clientes precisam garantir que o pipeline de assimilação esteja configurado na instância de mid-sourcing. [Saiba mais](../../integrations/using/configuring-pipeline.md).
 
-[Saiba como migrar para o Adobe I/O](../../integrations/using/configuring-adobe-io.md).
+[Saiba como migrar para o Adobe I/O](../../integrations/using/about-triggers.md#implement).
 
 ## Atualizações de APNs {#acc-apns-updates}
 

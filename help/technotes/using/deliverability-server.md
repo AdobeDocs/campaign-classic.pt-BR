@@ -3,11 +3,13 @@ product: campaign
 title: Atualizar para o novo servidor de avaliação do delivery
 description: Saiba como atualizar para o novo servidor de entrega do Campaign
 feature: Technote, Deliverability
+hide: true
+hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 514f390b5615a504f3805de68f882af54e0c3949
+source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 16%
+source-wordcount: '991'
+ht-degree: 10%
 
 ---
 
@@ -48,11 +50,11 @@ Como parte da nova integração do servidor de entrega, o Campaign precisa se co
 
 >[!AVAILABILITY]
 >
-> A credencial da Conta de serviço (JWT) está sendo descontinuada pelo Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem depender da credencial OAuth de servidor para servidor. </br>
+> A credencial de conta de serviço (JWT) está sendo descontinuada pela Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem usar a credencial de servidor para servidor OAuth. </br>
 >
-> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a Conta técnica conforme detalhada em [esta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As credenciais da Conta de serviço (JWT) existentes continuarão a funcionar até 27 de janeiro de 2025. Além disso, a criação de novas credenciais de Conta de serviço (JWT) no Console do desenvolvedor não será mais possível a partir de 3 de junho de 2024. Uma nova credencial de conta de serviço (JWT) não pode ser criada ou adicionada a um projeto após essa data. </br>
+> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As credenciais da Conta de serviço (JWT) existentes continuarão a funcionar até 27 de janeiro de 2025. </br>
 >
-> * Se você tiver implementado integrações de saída, como a integração Campaign-Analytics ou a integração do Experience Cloud Triggers, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar seu ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para oAuth. Como a criação de novas credenciais de conta de serviço (JWT) no Console do desenvolvedor não será mais possível a partir de 3 de junho de 2024, não será possível criar uma nova integração de saída dependendo do JWT após essa data
+> * Se você tiver implementado integrações de saída, como a integração do Campaign com o Analytics ou a integração dos acionadores da Experience Cloud, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar seu ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para oAuth.
 
 ### Pré-requisitos{#prerequisites}
 
@@ -85,69 +87,13 @@ Se você não conseguir ver **Adobe Campaign** contato [Atendimento ao cliente A
 
 ### Etapa 1: criar/atualizar seu projeto do Adobe Developer {#adobe-io-project}
 
-1. Access [Console do Adobe Developer](https://developer.adobe.com/console/home) e faça logon com o Acesso de desenvolvedor da sua organização. Verifique se você está conectado ao portal correto da organização.
-   **Cuidado**: se você tiver mais de uma organização, selecione a correta. Saiba mais sobre Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
-1. Selecione **[!UICONTROL Create new project]**.
-   ![](assets/New-Project.png)
+Para continuar com a configuração do conector do Adobe Analytics, acesse o console do Adobe Developer e crie seu projeto OAuth de servidor para servidor.
 
-   >[!CAUTION]
-   >
-   >Se você já estiver usando a funcionalidade de autenticação JWT do Adobe IO para outra integração, como conector do Analytics ou acionadores de Adobe, será necessário atualizar o projeto adicionando **API do Campaign** para esse projeto.
-
-1. Escolher **[!UICONTROL Add API]**.
-   ![](assets/Add-API.png)
-1. Na janela **[!UICONTROL Add an API]**, selecione **[!UICONTROL Adobe Campaign]**.
-   ![](assets/AC-API.png)
-1. Se a ID do cliente estiver vazia, selecione **[!UICONTROL Generate a key pair]** para criar um par de chaves público e privado.
-   ![](assets/Generate-a-key-pair.png)
-
-   As chaves serão baixadas automaticamente com uma data de expiração padrão de 365 dias. Depois de expirar, você precisará criar um novo par de chaves e atualizar a integração no arquivo de configuração. Usando a Opção 2, você pode optar por criar e fazer upload manualmente da **[!UICONTROL Public key]** com uma data de expiração mais longa.
-   ![](assets/New-key-pair.png)
-
-   >[!CAUTION]
-   >
-   >Você deve salvar o `config.zip` arquivo quando o prompt de download aparecer, pois você não poderá baixá-lo novamente.
-
-1. Clique em **[!UICONTROL Next]**.
-1. Escolha qualquer **[!UICONTROL Product profile]** existente ou crie um novo, se necessário. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**. Para obter mais informações sobre **[!UICONTROL Product Profiles]**, consulte [esta página](https://helpx.adobe.com/br/enterprise/using/manage-developers.html){_blank}.
-   ![](assets/Product-Profile-API.png)
-
-   Em seguida, clique em **[!UICONTROL Save configured API]**.
-
-1. Em seu projeto, selecione **[!UICONTROL Adobe Campaign]** e copie as seguintes informações em **[!UICONTROL Service Account (JWT)]**
-
-   ![](assets/Config-API.png)
-
-   * **[!UICONTROL Client ID]**
-   * **[!UICONTROL Client Secret]**
-   * **[!UICONTROL Technical account ID]**
-   * **[!UICONTROL Organization ID]**
-
->[!CAUTION]
->
->O certificado do Adobe Developer expirará após 12 meses. Você precisa gerar um novo par de chaves todo ano.
+Consulte [esta página](../../integrations/using/oauth-technical-account.md#oauth-service) para obter a documentação detalhada.
 
 ### Etapa 2: adicionar as credenciais do projeto no Adobe Campaign {#add-credentials-campaign}
 
-A chave privada deve ser codificada no formato base64 UTF-8.
-
-Para fazer isso:
-
-1. Use a chave privada gerada nas etapas acima.
-1. Codifique a chave privada usando o seguinte comando: `base64 ./private.key > private.key.base64`. Isso salvará o conteúdo base64 em um novo arquivo `private.key.base64`.
-
-   >[!NOTE]
-   >
-   >Às vezes, uma linha extra pode ser adicionada automaticamente ao copiar/colar a chave privada. Lembre-se de removê-la antes de codificar sua chave privada.
-
-1. Copie o conteúdo do arquivo `private.key.base64`.
-1. Faça logon via SSH em cada container em que a instância do Adobe Campaign está instalada e adicione as credenciais do Projeto no Adobe Campaign executando o comando a seguir como usuário`neolane`. Isso inserirá as credenciais **[!UICONTROL Technical Account]** no arquivo de configuração da instância.
-
-   ```sql
-   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
-   ```
-
-1. Você deve interromper e reiniciar o servidor para que a modificação seja considerada. Você também pode executar um `config -reload` comando.
+Siga as etapas detalhadas em [esta página](../../integrations/using/oauth-technical-account.md#add-credentials) para adicionar suas credenciais do projeto OAuth no Adobe Campaign.
 
 ### Etapa 3: validar sua configuração
 

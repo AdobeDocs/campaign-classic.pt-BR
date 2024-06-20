@@ -7,11 +7,13 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
+hide: true
+hidefromtoc: true
 exl-id: 61bb184e-affa-430c-8571-56e911cd5a3d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '139'
-ht-degree: 100%
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 74%
 
 ---
 
@@ -32,4 +34,4 @@ No caso de erro, verifique se os seguintes elementos estão configurados correta
 
   Em **[!UICONTROL Administration > Platform > AMC Data sources]**, verifique se a fonte de dados da AMC está definida corretamente.
 
-Alguns dados podem faltar ao compartilhar um público através do Serviço principal de pessoas ou ao importar um público. Somente registros dos quais a ID (&#39;ID do visitante&#39; ou &#39;ID declarada&#39;) podem ser reconciliadas com a dimensão de perfil são transferidas. Os IDs dos segmentos de Serviço principal de pessoas que não são reconhecidos pelo Adobe Campaign não são importados.
+Alguns dados podem faltar ao compartilhar um público por meio do Experience Cloud Audience ou ao importar um público. Somente registros dos quais a ID (&#39;ID do visitante&#39; ou &#39;ID declarada&#39;) podem ser reconciliadas com a dimensão de perfil são transferidas. As IDs dos segmentos que não são reconhecidos pelo Adobe Campaign não são importadas.
