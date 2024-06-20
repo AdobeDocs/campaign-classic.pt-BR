@@ -6,42 +6,52 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8fec4d038eddaa3c5a2aade1b619f2543453d4de
-workflow-type: ht
-source-wordcount: '352'
-ht-degree: 100%
+source-git-commit: d31aa28da06e65664da655b6b082563767b35f7a
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 19%
 
 ---
 
-# Versão mais recente{#latest-release}
+# Versão mais recente {#latest-release}
 
 Esta página lista novos recursos, melhorias e correções que vêm com a **versão mais recente do Campaign v7**. Cada nova build vem com um status que é materializado por uma cor. Saiba mais sobre os status de build do Campaign Classic v7 [nesta página](rn-overview.md).
 
-## Versão 7.3.5 - Build 9368 {#release-7-3-5}
+## Versão 7.4.1 — Build 9383 {#release-7-4-1}
 
 [!BADGE Disponibilidade geral]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade geral"}
 
+_quarta-feira, 18 de junho de 2024_
 
-_5 de dezembro de 2023_
+### Alterações e melhorias {#release-7-4-1-changes}
+
+* Com a credencial Conta de serviço (JWT) sendo descontinuada pelo Adobe, as integrações de saída do Campaign com soluções e aplicativos Adobe agora dependem da credencial de servidor para servidor OAuth. Se você implementou integrações de saída, como integração do Campaign com o Analytics ou integração do Experience Cloud Triggers, será necessário atualizar seu ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para oAuth antes de 27 de janeiro de 2025. [Saiba mais](../../integrations/using/oauth-technical-account.md)
+
+* Depois de [operadores técnicos do Campaign migrados para o Console do desenvolvedor](../../technotes/using/ims-migration.md) e [Transição para IMS para autenticação do usuário final](../../technotes/using/migrate-users-to-ims.md), agora é possível habilitar a interface de usuário e as restrições de API para remover opções e recursos específicos da autenticação nativa. [Saiba mais](../../technotes/using/impact-ims-migration.md)
 
 
-### Aprimoramentos de segurança {#release-7-3-5-security}
+
+### Atualizações de compatibilidade {#release-7-4-1-compat}
+
+A variável [matriz de compatibilidade do Adobe Campaign](compatibility-matrix.md) O foi atualizado com as alterações que vêm com esta nova versão e listado abaixo.
+
+* O Adobe Campaign agora é compatível com o **Microsoft Server 2022** e **RHEL 9** como sistemas operacionais.
+
+* O Adobe Campaign agora é compatível com o **Microsoft SQL Server 2022** e **Oracle 23c** como Sistemas de Gerenciamento de Bancos de Dados de Relações e no FDA (Federated Data Access — Acesso a Dados Federados).
+
+* O Adobe Campaign agora exige pelo menos um Java Development Kit (JDK) 11. No Windows, o JRE deve estar disponível conforme descrito em [nesta seção](../../installation/using/application-server.md#jdk).
+
+* O SDK do Campaign (Neolane) para aplicativos móveis agora está obsoleto. Agora, você deve fazer a transição para o Adobe Experience Platform SDK. [Saiba mais](deprecated-features.md).
+
+  Enquanto isso, para garantir a continuidade do serviço, o Campaign v7.4 vem com:
+
+   * um novo SDK 1.0.27 do Campaign para iOS, compatível com o iOS 16 e 17 e os mais recentes [Requisitos da solicitação de privacidade do Apple iOS](https://developer.apple.com/news/?id=r1henawx){target="_blank"}.
+   * um novo SDK do Campaign para Android 14.
 
 
-* Com o Campaign Classic v7.3.5, o processo de autenticação foi aprimorado e protegido. Os operadores técnicos agora devem usar o Adobe Identity Management System (IMS) para se conectarem ao Campaign. Saiba como migrar as contas técnicas já existentes nesta [nota técnica](../../technotes/using/ims-migration.md).
+### Correções {#release-7-4-1-patches}
 
-* Além disso, como parte do esforço para aprimorar a segurança e o processo de autenticação, o Adobe Campaign recomenda migrar o modo de autenticação do usuário final da autenticação nativa de logon/senha para o Adobe Identity Management System (IMS). Saiba como migrar operadores [nesta nota técnica](../../technotes/using/migrate-users-to-ims.md).
+Esta versão vem com as seguintes correções:
 
-* Agora, quando um formulário web tem o status **Publicação pendente**, ele não é publicado automaticamente. Para evitar problemas de segurança, é necessário publicá-lo antes de ele se tornar **Online** e ficar acessível por meio do URL do formulário web em um navegador da web. [Leia mais](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
-
-### Correções {#release-7-3-5-patches}
-
-* Correção de um problema com o uso de dados de um banco de dados do Google Big Query ao atualizar dados em um banco de dados da Oracle: todas as chaves foram definidas como `0` na tabela temporária do workflow. (NEO-65091)
-* Correção de um problema que causava a falha de execução de um workflow quando duas consultas em um banco de dados do Google Big Query eram combinadas em uma atividade de workflow de **União**. (NEO-63705)
-* Correção de um problema que causava a solicitação de uma nova autenticação ao clicar no botão `Back` em um relatório do Campaign. (NEO-65087)
-* Correção de um erro no workflow de Limpeza de banco de dados que acontecia quando uma entrega era excluída antes de suas provas de entrega. (NEO-48114)
-* Correção de um problema de conexão com o Console do cliente: atualizações recentes na verificação TLS estavam causando um erro de conexão. (NEO-50488)
-* Correção de um problema com a autenticação de Proxy HTTP depois da pós-atualização do Campaign para a versão 7.3.1. As solicitações HTTP em workflows do Campaign estavam falhando com `error 407 – proxy auth required is returned`. (NEO-49624)
-* Correção de uma falha intermitente com descriptografia GPG nas atividades de workflow de **Script**. A mensagem de erro associada era: `gpg: decryption failed: No secret key`. (NEO-50257)
-  <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
+NEO74754, NEO73174, NEO72504, NEO71534, NEO71473, NEO70195, NEO69663, NEO69651, NEO67620, NEO67235, NEO66777, NEO64680, NEO63706, NEO63657, NEO62964, NEO62575, NEO58734, NEO40531, NEO36189, NEO29592
 
