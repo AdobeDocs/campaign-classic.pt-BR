@@ -4,26 +4,26 @@ title: Split
 description: Saiba mais sobre a atividade de workflow Split
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '1946'
-ht-degree: 100%
+source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
+workflow-type: tm+mt
+source-wordcount: '1971'
+ht-degree: 98%
 
 ---
 
 # Divisão{#split}
 
-
-
 Uma atividade do tipo **Split** permite dividir um target em vários subconjuntos. O target é construído com todos os resultados recebidos: todas as atividades anteriores devem ter sido concluídas para que essa atividade seja executada.
 
 Essa atividade não aciona uma união de públicos de entrada. Se várias transições acabarem em uma atividade de Split, é recomendado inserir uma atividade de **[!UICONTROL Union]** na frente.
 
-Para obter um exemplo da atividade de split que está sendo usada, consulte [Criação de subconjuntos usando a atividade de Split](targeting-data.md#creating-subsets-using-the-split-activity)
+>[!NOTE]
+>
+>As operações de divisão não podem ser executadas para tabelas com origens diferentes. Para essa finalidade, é necessário adicionar um **Enriquecimento** atividade antes de **Split** atividade.
 
-Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes públicos usando condições de filtragem é descrito [nesta seção](cross-channel-delivery-workflow.md).
-
-Um exemplo mostrando como usar uma variável de instância em uma atividade de Split está disponível [nesta seção](javascript-scripts-and-templates.md).
+* Para obter um exemplo da atividade de split que está sendo usada, consulte [Criação de subconjuntos usando a atividade de Split](targeting-data.md#creating-subsets-using-the-split-activity)
+* Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes públicos usando condições de filtragem é descrito [nesta seção](cross-channel-delivery-workflow.md).
+* Um exemplo mostrando como usar uma variável de instância em uma atividade de Split está disponível [nesta seção](javascript-scripts-and-templates.md).
 
 Para configurar essa atividade, defina o conteúdo do subconjunto e o rótulo na guia **[!UICONTROL Subsets]** e escolha o targeting dimension na guia **[!UICONTROL General]**.
 

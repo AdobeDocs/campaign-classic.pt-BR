@@ -4,23 +4,24 @@ title: Nota técnica - Ativação do Microsoft Edge Chromium no ambiente do Camp
 description: Campaign — Edge Chromium
 feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8734e6ef26a7342042a5242d54854b7d3a5e6244
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 8%
+source-wordcount: '263'
+ht-degree: 7%
 
 ---
 
-# Como ativar o Microsoft Edge Chromium no seu ambiente {#edge-conf}
-
-
-
+# Como habilitar o Microsoft Edge Chromium em seu ambiente {#edge-conf}
 
 ## O que mudou?
 
 Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML para painéis no console do cliente está usando o Edge Chromium, iniciando com o Campaign Classic v7.3.
 
-Além da instalação do Webview 2 runtime do Microsoft Edge, que agora é [necessário para qualquer instalação do console do cliente](../../installation/using/installing-the-client-console.md#webview), o Microsoft Edge Chromium deve estar ativado em suas instâncias.
+Além da instalação do Webview 2 runtime do Microsoft Edge, que agora é [necessário para qualquer instalação do console do cliente](../../installation/using/installing-the-client-console.md#webview), o Microsoft Edge Chromium deve estar habilitado em sua(s) instância(s).
+
+>[!NOTE]
+>
+>Depois de ativar o Microsoft Edge Chromium, a variável `Ctrl+F` (Windows) ou `Command+F` O atalho (Mac) para abrir a caixa de diálogo de pesquisa do navegador não funcionará mais.
 
 ## Você será afetado?
 
@@ -30,7 +31,7 @@ Se seu ambiente foi atualizado para o Campaign Classic v7.3 (ou posterior), voc�
 
 * Como um **hospedado** cliente, o Adobe já ativou o Microsoft Edge Chromium em sua(s) instância(s). Nenhuma ação adicional é necessária.
 
-* Como um **no local/híbrido** cliente, é necessário ativar o Microsoft Edge Chromium nas instâncias.
+* Como um **no local/híbrido** cliente, é necessário habilitar o Microsoft Edge Chromium em sua(s) instância(s).
 
   Ao atualizar para o Campaign Classic v7.3 (e posterior), um novo `webView2Mode` O atributo está disponível no arquivo de configuração do servidor do Campaign `serverConf.xml`. Este atributo deve ser habilitado.
 
@@ -59,7 +60,7 @@ Se seu ambiente foi atualizado para o Campaign Classic v7.3 (ou posterior), voc�
 
 >[!NOTE]
 >
->Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+>Em caso de dúvidas sobre essas alterações, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 >
 
 ## Tópicos relacionados
