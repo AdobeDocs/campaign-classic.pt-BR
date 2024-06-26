@@ -5,9 +5,9 @@ description: Saiba como iniciar um fluxo de trabalho e descubra a barra de ferra
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1172'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -65,9 +65,9 @@ Os botões da barra de ferramentas são detalhados nesta [seção](../../campaig
 
   As ações **[!UICONTROL Start / Pause / Stop / Restart]** também estão disponíveis por meio dos ícones de execução na barra de ferramentas. Para obter mais informações, consulte esta [seção](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
 
-  Observe que **Restart** A ação não limpa as variáveis de instância do fluxo de trabalho em comparação com **Execução**, **Parar**, e **Início** ações (a limpeza das variáveis de instância ocorre na ação Start ). Ao reiniciar um workflow, as variáveis de instância ainda estão disponíveis para uso com valores preservados. Para limpá-los, você pode:
-   * Executar **Parar** e **Início** ações.
-   * Adicione o código javascript abaixo no final da execução do workflow:
+  Observe que a ação **Reiniciar** não limpa as variáveis da instância do fluxo de trabalho como as ações **Execução**, **Parar** e **Iniciar** (a limpeza das variáveis da instância ocorre a partir da ação Iniciar). Ao reiniciar um fluxo de trabalho, as variáveis da instância ainda estão disponíveis para uso com valores preservados. Para configurá-las, você pode:
+   * Executar as ações **Parar** e **Iniciar**.
+   * Adicionar o código Javascript abaixo no final da execução do fluxo de trabalho:
 
      ```
      var wkf = xtk.workflow.load(instance.id)

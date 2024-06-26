@@ -7,9 +7,9 @@ feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1024'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -118,21 +118,21 @@ Se essa opção for definida como 0, não haverá limite de tempo para a fase de
 
 ## Guia Personalização {#personalization-tab}
 
-Nas Propriedades do delivery, você tem uma guia Personalization.
+A guia Personalização está disponível nas Propriedades da entrega.
 
-É possível adicionar dados à consulta de perfil da targeting dimension clicando no link **&quot;Editar a consulta de carregamento do perfil do recipient&quot;**. Você pode usar os dados extraídos diretamente em uma expressão para extrair o que realmente precisa. Esses dados serão adicionados ao contexto.
+Ela permite adicionar dados à consulta de perfil da dimensão de direcionamento clicando em **“Editar consulta de carregamento do perfil do destinatário”**. Use os dados extraídos diretamente em uma expressão para obter as informações que precisa. Esses dados serão adicionados ao contexto.
 
 ![](assets/persotab-edit.png){zoomable="yes"}
 
-Se os dados que deseja adicionar não estiverem no targeting dimension, clique em **&quot;Adicionar objetos no contexto de execução dos scripts&quot;**.
+Se os dados que deseja adicionar não estiverem na dimensão de direcionamento, clique em **“Adicionar objetos no contexto de execução dos scripts”**.
 
 ![](assets/persotab_addobjects.png){zoomable="yes"}
 
-Você pode selecionar o schema de objetos necessário e, em seguida, usar esses dados dentro do código Javascript, que será executado durante a preparação do delivery.
+É possível selecionar o esquema de objeto necessário e usar esses dados dentro do código Javascript, que será executado durante o preparo da entrega.
 
 ![](assets/persotab_addobjects_articles.png){zoomable="yes"}
 
-Ao adicionar o schema de objetos, você pode selecionar os campos que deseja adicionar ao contexto:
+Ao adicionar o esquema do objeto, selecione os campos que deseja adicionar ao contexto:
 
 ![](assets/persotab_addobjects_fields.png){zoomable="yes"}
 

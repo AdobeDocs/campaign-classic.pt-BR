@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,9 +32,9 @@ _5 de dezembro de 2023_
 
 ### Outras melhorias {#release-7-3-5-other}
 
-A partir desta versão, o rastreamento de links em emails que já foram enviados ainda funcionará durante a atualização. [Leia mais](../../platform/using/faq-build-upgrade.md)
+A partir desta versão, o rastreamento de links em emails já enviados ainda funcionará durante a atualização. [Leia mais](../../platform/using/faq-build-upgrade.md)
 
-### Correções {#release-7-3-5-patches}
+### Patches {#release-7-3-5-patches}
 
 * Correção de um problema com o uso de dados de um banco de dados do Google Big Query ao atualizar dados em um banco de dados da Oracle: todas as chaves foram definidas como `0` na tabela temporária do workflow. (NEO-65091)
 * Correção de um problema que causava a falha de execução de um workflow quando duas consultas em um banco de dados do Google Big Query eram combinadas em uma atividade de workflow de **União**. (NEO-63705)
@@ -81,7 +81,7 @@ _7 de setembro de 2023_
 * O gerenciamento de log de rastreamento foi aprimorado para evitar IDs negativas para lastMsgId. Foi alterado de int32 para int64. (NEO-52290)
 * O workflow de mid-sourcing (estatísticas de entrega) foi adicionado pronto para uso. Esse novo workflow sincroniza os dados estatísticos da entrega (nms:deliveryStat) do mid à instância de marketing. (NEO-36802)
 
-### Correções {#release-7-3-4-patches}
+### Patches {#release-7-3-4-patches}
 
 * Correção de um problema que poderia ocorrer quando uma solicitação de serviço era feita antes do logon do IMS, se a autenticação de chamada de solicitação de serviço estivesse usando um token de serviço. (NEO-64903)
 * Correção de um problema de regressão que poderia levar a problemas de rolagem ao usar o Editor de conteúdo digital. (NEO-64671, NEO-59256)
@@ -140,7 +140,7 @@ _20 de março de 2023_
 * O fluxo de trabalho de faturamento foi aprimorado para otimizar o desempenho. (NEO-47658)
 * O fluxo de trabalho de rastreamento foi aprimorado para otimizar o desempenho no caso de uma entrega grande. (NEO-45064)
 * O gerenciamento de rastreamento foi aprimorado para corrigir possíveis problemas com parâmetros dinâmicos em URLs. O gerenciamento de rastreamento v3 agora aceita URLs do tipo ajax (com parâmetros após um “#”) e impede que ferramentas de terceiros modifiquem URLs de rastreamento. Para aplicar essa alteração, você precisa entrar em contato com a Adobe. (NEO-46535)
-* A partir desta versão, o rastreamento de links em emails que já foram enviados ainda funcionará durante a atualização. [Leia mais](../../platform/using/faq-build-upgrade.md)
+* A partir desta versão, o rastreamento de links em emails já enviados ainda funcionará durante a atualização. [Leia mais](../../platform/using/faq-build-upgrade.md)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
@@ -182,7 +182,7 @@ Saiba mais na [matriz de compatibilidade do Campaign](../../rn/using/compatibili
 * O conector Google BigQuery agora oferece suporte total a campos booleanos. (NEO-49181)
 * Agora você pode configurar a duração da validade dos cookies IMS na seção `Configuration for the redirection service` do arquivo serverConf.xml. Isso se aplica aos seguintes cookies: `uuid230`, `nllastdelid` e `AMCV_` (NEO-42541)
 * O IP agora pode ser oculto na solicitação “/r/test” ao configurar `showSourceIP` como falso no nó de redirecionamento do arquivo serverConf.xml. [Leia mais](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
-* A partir desta versão, o rastreamento de links em emails que já foram enviados ainda funcionará durante a atualização. [Leia mais](../../platform/using/faq-build-upgrade.md)
+* A partir desta versão, o rastreamento de links em emails já enviados ainda funcionará durante a atualização. [Leia mais](../../platform/using/faq-build-upgrade.md)
 
 
 ### Recursos obsoletos  {#release-7-3-2-deprecated}

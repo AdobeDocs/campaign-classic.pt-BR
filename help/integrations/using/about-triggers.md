@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
 source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -46,17 +46,17 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 ## Etapas de implementação {#implement}
 
-Para implementar acionadores do Campaign e do Experience Cloud, siga as etapas abaixo:
+Para implementar acionadores do Campaign e da Experience Cloud, siga as etapas abaixo:
 
 1. Crie um projeto OAuth. [Saiba mais](oauth-technical-account.md#oauth-service)
 
 1. Adicione suas credenciais do projeto OAuth no Adobe Campaign. [Saiba mais](oauth-technical-account.md#add-credentials)
 
-1. Atualize o tipo de autenticação para o projeto do Developer Console no arquivo de configuração **config-&lt; instance-name >.xml** do seguinte modo:
+1. Atualize o tipo de autenticação para Projeto do Developer Console no arquivo de configuração **config-&lt; instance-name >.xml** do seguinte modo:
 
    ```
    <pipelined ... authType="imsJwtToken"  ... />
    ```
 
-   Em seguida, execute um `config -reload` e uma reinicialização do [!DNL pipelined] para que as alterações sejam consideradas.
+   Em seguida, execute um `config -reload` e reinicie o [!DNL pipelined] para aplicar as alterações.
 

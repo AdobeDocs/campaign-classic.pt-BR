@@ -6,9 +6,9 @@ feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '837'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Depois de criar o serviço, é necessário criar o aplicativo Android:
 
    ![](assets/nmac_android.png)
 
-1. Certifique-se de que o mesmo **[!UICONTROL Integration key]** é definido no Adobe Campaign e no código do aplicativo por meio do SDK. <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+1. Verifique se a mesma **[!UICONTROL Integration key]** está definida no Adobe Campaign e no código do aplicativo por meio do SDK. <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ Por padrão, o Adobe Campaign salva uma chave no campo **[!UICONTROL User identi
 
 >[!IMPORTANT]
 >
->Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para Android serão lançadas em 2024 e poderão afetar sua implementação do Adobe Campaign. Como parte do esforço contínuo do Google para melhorar seus serviços, as APIs herdadas do FCM serão descontinuadas em **20 de junho de 2024**. Saiba mais nesta [nota técnica do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+>Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para Android serão lançadas em 2024 e poderão afetar sua implementação do Adobe Campaign. Como parte do esforço contínuo do Google para melhorar seus serviços, as APIs herdadas do FCM serão descontinuadas em **20 de junho de 2024**. Saiba mais nesta [nota técnica do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=pt-BR){target="_blank"}.
 
 Depois de criar um serviço e um novo aplicativo para dispositivos móveis, é necessário configurar esse aplicativo. A API **HTTP (herdada)** não deve ser selecionada, pois foi descontinuada pelo Google.
 
@@ -156,4 +156,4 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 
    >[!CAUTION]
    >
-   >Verifique os nomes da configuração na variável **[!UICONTROL Subscription parameters]** são as mesmas que no código do aplicativo móvel. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+   >Verifique se os nomes da configuração da guia **[!UICONTROL Subscription parameters]** são iguais aos do código do aplicativo móvel. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->

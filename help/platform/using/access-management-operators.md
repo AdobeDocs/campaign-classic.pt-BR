@@ -8,9 +8,9 @@ role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1259'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Esses procedimentos só se aplicam a operadores conectados ao Campaign com autenticação nativa. Para autenticação do Adobe IMS, consulte [esta documentação](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
+>Esses procedimentos só se aplicam a operadores conectados ao Campaign por meio da autenticação nativa. Para a autenticação do Adobe IMS, consulte [esta documentação](https://helpx.adobe.com/br/enterprise/using/manage-users-individually.html#_blank).
 
 Um operador é um usuário do Adobe Campaign que tem permissões para fazer o login e executar ações.
 

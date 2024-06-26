@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Configuração do Console do desenvolvedor para o Adobe Experience Cloud Triggers
-description: Saiba como configurar o Adobe Experience Cloud Triggers do Console do desenvolvedor
+title: Configuração do Developer Console para Adobe Experience Cloud Triggers
+description: Saiba como configurar o Developer Console para Adobe Experience Cloud Triggers
 feature: Triggers
 audience: integrations
 content-type: reference
@@ -12,13 +12,13 @@ exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 hide: true
 hidefromtoc: true
 source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
-# Configuração do Console do desenvolvedor para o Adobe Experience Cloud Triggers {#configuring-adobe-io}
+# Configuração do Developer Console para Adobe Experience Cloud Triggers {#configuring-adobe-io}
 
 <!--
 >[!CAUTION]
@@ -46,24 +46,24 @@ Antes de iniciar esta implementação, verifique se você tem:
 >
 > A credencial de conta de serviço (JWT) está sendo descontinuada pela Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem usar a credencial de servidor para servidor OAuth. </br>
 >
-> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As credenciais da Conta de serviço (JWT) existentes continuarão a funcionar até 27 de janeiro de 2025.</br>
+> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As credenciais da conta de serviço (JWT) existentes continuarão funcionando até 27 de janeiro de 2025.</br>
 >
-> * Se você tiver implementado integrações de saída, como a integração do Campaign com o Analytics ou a integração dos acionadores da Experience Cloud, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar seu ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para oAuth.
+> * Se você tiver implementado integrações de saída, como a integração do Campaign com o Analytics ou a integração dos acionadores da Experience Cloud, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar o ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para o OAuth. 
 
-Para continuar com a configuração do conector do Adobe Analytics, acesse o console do Adobe Developer e crie seu projeto OAuth de servidor para servidor.
+Para continuar com a configuração do conector do Adobe Analytics, acesse o Adobe Developer Console e crie um projeto OAuth de “servidor para servidor”.
 
 Consulte [esta página](oauth-technical-account.md#oauth-service) para obter a documentação detalhada.
 
 ## Etapa 2: adicionar as credenciais do projeto no Adobe Campaign {#add-credentials-campaign}
 
-Siga as etapas detalhadas em [esta página](oauth-technical-account.md#add-credentials) para adicionar suas credenciais do projeto OAuth no Adobe Campaign.
+Siga as etapas detalhadas [nesta página](oauth-technical-account.md#add-credentials) para adicionar suas credenciais do projeto OAuth no Adobe Campaign.
 
-## Etapa 3: atualizar a tag de pipeline {#update-pipelined-tag}
+## Etapa 3: atualizar a tag “pipelined” {#update-pipelined-tag}
 
-Para atualizar [!DNL pipelined] , é necessário atualizar o tipo de autenticação para o projeto do Console do desenvolvedor no arquivo de configuração **config-&lt; instance-name >.xml** do seguinte modo:
+Para atualizar a tag [!DNL pipelined], é necessário atualizar o tipo de autenticação para o projeto do Developer Console no arquivo de configuração **config-&lt; instance-name >.xml** da seguinte maneira:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
 ```
 
-Em seguida, execute um `config -reload` e uma reinicialização do [!DNL pipelined] para que as alterações sejam consideradas.
+Em seguida, execute um `config -reload` e reinicie o [!DNL pipelined] para aplicar as alterações.

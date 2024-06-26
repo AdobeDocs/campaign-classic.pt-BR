@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3746'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 ### Junho de 2024 {#june-2024}
 
-Uma observação foi adicionada para especificar como limpar variáveis de instância ao reiniciar workflows. [Leia mais](../../workflow/using/starting-a-workflow.md)
+Adição de uma nota para especificar como limpar variáveis de instância ao reiniciar fluxos de trabalho. [Leia mais](../../workflow/using/starting-a-workflow.md)
 
 ### Abril de 2024 {#apr-2024}
 

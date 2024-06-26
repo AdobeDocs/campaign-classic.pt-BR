@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '242'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 81%
 >
 >Para compartilhar públicos com as soluções da Adobe Experience Cloud, é necessário implementar o Adobe Identity Management System. i [Saiba mais sobre o IMS](../../integrations/using/about-adobe-id.md).
 
-Com o Adobe Campaign, você pode compartilhar públicos e segmentos com os serviços da Adobe Experience Cloud. Estão disponíveis duas opções:
+O Adobe Campaign permite compartilhar públicos-alvo e segmentos com os serviços da Adobe Experience Cloud. Estão disponíveis duas opções:
 
 1. Envie dados de segmento da Adobe Experience Platform para o Adobe Campaign. Para implementar essa integração, é necessário conectar a Plataforma de dados do cliente em tempo real (RTCDP) ao Campaign. [Saiba mais nesta seção](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=pt-BR){target="_blank"}.
 
-1. Integrar **Adobe Campaign** com  **Públicos do Experience Cloud** ou **Adobe Audience Manager**. Depois será possível:
+1. Integre o **Adobe Campaign** aos **públicos-alvo da Experience Cloud** ou ao **Adobe Audience Manager**. Depois será possível:
 
    * Importar públicos/segmentos compartilhados de diferentes soluções da Adobe Experience Cloud para o Adobe Campaign. Os públicos podem ser importados por meio de listas no Adobe Campaign.
 
@@ -39,5 +39,5 @@ A integração oferece suporte a dois tipos de Adobe Experience Cloud IDs:
 
   >[!NOTE]
   >
-  > A fonte de dados da ID declarada agora também pode ser usada com a integração do Experience Cloud Assets.
+  > A fonte de dados de ID declarada agora também pode ser usada com a integração dos ativos da Experience Cloud.
   >

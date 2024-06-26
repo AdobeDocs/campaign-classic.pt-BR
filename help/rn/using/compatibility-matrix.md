@@ -7,21 +7,21 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: b23632d0718d62d61e94e636937b93aa39bbe43f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # Matriz de compatibilidade {#compatibility-matrix}
 
-No seu [build mais recente](../../rn/using/latest-release.md), o Adobe Campaign Classic v7 é compatível com todos os sistemas e ferramentas listados nesta página. À medida que versões específicas desses sistemas e ferramentas de terceiros atingem o fim da vida útil (EOL) com seus respectivos criadores, o Adobe Campaign não será mais compatível com essas versões, e elas serão removidas de nossa matriz de compatibilidade na versão subsequente do produto. Verifique se você está usando as versões compatíveis de qualquer sistema listado nesta matriz de compatibilidade para evitar problemas. Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/deprecated-features.md).
+A [build mais recente](../../rn/using/latest-release.md) do Adobe Campaign Classic v7 fornece compatibilidade com todos os sistemas e ferramentas listados nesta página. À medida que versões específicas desses sistemas e ferramentas de terceiros atingem o fim da vida útil (EOL) com seus respectivos criadores, o Adobe Campaign não será mais compatível com essas versões, e elas serão removidas de nossa matriz de compatibilidade na próxima versão do produto. Para evitar problemas, verifique se você está usando as versões compatíveis dos sistemas listadas na matriz de compatibilidade. Para saber mais sobre itens obsoletos, visite [esta página](../../rn/using/deprecated-features.md).
 
 Salvo indicação em contrário, todas as versões secundárias são compatíveis.
 
 >[!CAUTION]
 >
->Essa matriz é atualizada regularmente, com novos sistemas e ferramentas compatíveis sendo adicionados e removidos.
+>Essa matriz é atualizada regularmente com a adição de novos sistemas e ferramentas compatíveis e a remoção de itens obsoletos.
 
 ## Sistemas operacionais {#OperatingSystems}
 
@@ -83,7 +83,7 @@ Como cliente local/híbrido, será necessário instalar o Adobe Campaign em um d
 
 >[!IMPORTANT]
 >
->Se você estiver usando o RHEL, deve estar disposto a desativar o [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) ou fazer com que seus arquitetos gravem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.
+>Se estiver usando o RHEL, desabilite o [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) ou solicite a equipe de arquitetura de dados que criem regras personalizadas para garantir que um SELinux habilitado não esteja causando problemas nas operações do Campaign.
 
 ## Servidores da Web {#WebServers}
 
@@ -126,7 +126,7 @@ Como cliente local/híbrido, é necessário instalar e configurar as ferramentas
 <p></p>
 </td>
 <td>
-<p>necessário a partir da v7.4.1</p>
+<p>obrigatório a partir da v7.4.1</p>
 <p>até a v7.4.1</p>
 <p>até a v7.4.1</p>
 </tr>
@@ -218,7 +218,7 @@ Como cliente local/híbrido, é necessário instalar e configurar um dos bancos 
 >
 >* O Microsoft SQL Server não é compatível como banco de dados principal quando o servidor do Campaign está em execução no Linux. [Saiba mais](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
 >
->* Você também pode usar o Amazon RDS para PostgreSQL com as versões especificadas acima.
+>* Também é possível usar o Amazon RDS para PostgreSQL com as versões especificadas acima.
 >
 >* PostgreSQL é o RDBMS para ambientes de serviços em nuvem hospedados/gerenciados.
 
@@ -426,9 +426,9 @@ Baixe o Microsoft Edge WebView2 no [Site do desenvolvedor Microsoft](https://www
 
 ## SDK móvel {#MobileSDK}
 
-Você pode usar o Campaign para [enviar notificações por push](../../delivery/using/about-mobile-app-channel.md), através do SDK do Adobe Experience Platform Mobile, configurando a extensão do Adobe Campaign na interface da Coleção de dados.
+É possível usar o Campaign para [enviar notificações por push](../../delivery/using/about-mobile-app-channel.md) por meio do SDK móvel da Adobe Experience Platform configurando a extensão do Adobe Campaign na interface da coleção de dados.
 
-O SDK do Campaign é [obsoleto](deprecated-features.md) a partir do Campaign v7.4. Para garantir uma transição suave para a implementação existente para o SDK do AEP Mobile, você ainda poderá usá-lo nos sistemas operacionais listados abaixo<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
+O SDK do Campaign foi [descontinuado](deprecated-features.md) a partir do Campaign v7.4. Para garantir uma transição descomplicada da implementação existente para o SDK móvel da AEP, ainda é possível usá-lo nos sistemas operacionais listados abaixo<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
 
 
 <table>
@@ -439,7 +439,7 @@ O SDK do Campaign é [obsoleto](deprecated-features.md) a partir do Campaign v7.
 <p>7 - 14</p>
 <p>com o SDK móvel build 1.1.1.</p>
 <p>O Android 13 e 14 são compatíveis a partir do Campaign v7.4.</p>
-<p>O Android 12 é compatível a partir do Campaign v7.3.</p>
+<p>O Android 12 é compatível a partir do Campaign v7.3</p>
 </td>
 </tr>
 <tr>
@@ -448,7 +448,7 @@ O SDK do Campaign é [obsoleto](deprecated-features.md) a partir do Campaign v7.
 <p>iOS 9 – 17</p>
 <p>com o SDK móvel build 1.0.26.</p>
 <p>O Apple iOS 15 é compatível a partir do Campaign v7.3. </p>
-<p>O Apple iOS 16 e 17 é compatível a partir do Campaign v7.4.</p>
+<p>O Apple iOS 16 e 17 são compatíveis a partir do Campaign v7.4.</p>
 </td>
 </tr>
 </tbody>
@@ -469,6 +469,6 @@ Os seguintes navegadores, em suas versões mais recentes, são compatíveis com 
 >
 >* [Notas de versão do Campaign Classic](../../rn/using/latest-release.md)
 >* [Arquitetura geral do Campaign](../../installation/using/general-architecture.md)
->* [Recomendações para dimensionamento de hardware](../../technotes/using/hardware-sizing.md)
+>* [Recomendações de dimensionamento de hardware](../../technotes/using/hardware-sizing.md)
 >* [Recursos e sistemas obsoletos](../../rn/using/deprecated-features.md)
 >* [Criar procedimento de atualização](../../production/using/build-upgrade.md)

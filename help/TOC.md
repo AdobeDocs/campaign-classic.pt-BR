@@ -7,9 +7,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 99%
    + Pacotes de dados e listas discriminadas {#administration-basics}
       + [Pacotes de dados](platform/using/working-with-data-packages.md)
       + [Listas discriminadas](platform/using/managing-enumerations.md)
-   + Conectores CRM {#connectors}
+   + Conectores de CRM {#connectors}
       + [Introdução aos Conectores CRM](platform/using/crm-connectors.md)
       + [Conecte-se com o Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
       + [Conecte-se com o Salesforce.com](platform/using/crm-sfdc.md)
@@ -352,7 +352,7 @@ ht-degree: 99%
    + [Caso de uso: exibir relatório sobre as respostas a uma pesquisa online](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Integrar com a Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Introdução às integrações do Campaign](integrations/using/about-campaign-integrations.md)
-   + [Crie sua conta técnica do Adobe](integrations/using/oauth-technical-account.md)
+   + [Crie sua conta técnica da Adobe](integrations/using/oauth-technical-account.md)
    + Adobe Experience Cloud Triggers {#experience-triggers}
       + [Trabalhar com o  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configurar pipeline](integrations/using/configuring-pipeline.md)
@@ -363,7 +363,7 @@ ht-degree: 99%
       + [Trabalhar com origens e destinos](integrations/using/get-started-sources-destinations.md)
       + [Assimilar públicos-alvos da Adobe Experience Platform no Campaign](integrations/using/ingest-aep-data.md)
       + [Exportar dados do Campaign para a Adobe Experience Platform](integrations/using/export-campaign-data.md)
-   + Adobe Analytics Connector{#analytics-connector}
+   + Conector do Adobe Analytics{#analytics-connector}
       + [Introdução ao conector do Adobe Analytics](integrations/using/gs-aa.md)
       + [Provisionamento do conector do Adobe Analytics](integrations/using/adobe-analytics-provisioning.md)
    + Compartilhamento de público-alvo {#audience-sharing}
@@ -824,7 +824,7 @@ ht-degree: 99%
 + Notas técnicas {#technotes}
    + [Recomendações para dimensionamento de hardware](technotes/using/hardware-sizing.md)
    + [Atividade de fluxo de trabalho de SMS de entrada para infraestrutura mid-sourcing](technotes/using/inbound-sms-wf.md)
-   + Atualização para IMS{#ims}
+   + Atualização para o IMS{#ims}
       + [Transição para o Adobe IMS](technotes/using/ac-ims.md)
       + [Migração de usuários para o IMS](technotes/using/migrate-users-to-ims.md)
       + [Migração de operadores técnicos para o Developer Console](technotes/using/ims-migration.md)

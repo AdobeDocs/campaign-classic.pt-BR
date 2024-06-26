@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '833'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -31,17 +31,17 @@ Antes de iniciar esta configuração, verifique se você tem:
 * Um acesso de desenvolvedor para sua organização
 * Uma configuração de acionadores válida no Adobe Analytics
 
-A autenticação é necessária, pois o pipeline está hospedado na Adobe Experience Cloud. Ele usa uma autenticação compatível com o por meio de um projeto do Adobe Developer.
+A autenticação é necessária, pois o pipeline está hospedado na Adobe Experience Cloud. Ele usa uma autenticação compatível por meio de um projeto do Adobe Developer.
 
-## Etapa 1: criar/atualizar seu projeto do Adobe Developer {#creating-adobe-io-project}
+## Etapa 1: criar/atualizar o projeto do Adobe Developer {#creating-adobe-io-project}
 
-Você deve habilitar sua organização com tokens de conta da Adobe Developer para a integração de acionadores.
+Você deve habilitar sua organização com tokens de conta do Adobe Developer para a integração de acionadores.
 
-Saiba como criar sua conta técnica do Adobe no [esta página](../../integrations/using/oauth-technical-account.md). Observe que é necessário selecionar **[!UICONTROL Adobe Analytics]** ao adicionar a API à credencial do Adobe Developer.
+Saiba como criar sua conta técnica da Adobe [nesta página](../../integrations/using/oauth-technical-account.md). Observe que é necessário selecionar **[!UICONTROL Adobe Analytics]** ao adicionar a API à credencial do Adobe Developer.
 
 ## Etapa 2: configurar a opção de pipeline {#configuring-nmspipeline}
 
-Depois que a autenticação for definida, o pipeline recuperará os eventos. Somente os acionadores configurados no Adobe Campaign são processados. O acionador deve ser gerado pelo Adobe Analytics e enviado para o pipeline que processará somente acionadores configurados no Adobe Campaign.
+Depois que a autenticação for definida, o pipeline recuperará os eventos. Ele processará somente acionadores configurados no Adobe Campaign. O acionador deve ser gerado pelo Adobe Analytics e enviado para o pipeline que processará somente acionadores configurados no Adobe Campaign.
 
 A opção também pode ser configurada com um curinga para capturar todos os acionadores independentemente do nome.
 
@@ -71,7 +71,7 @@ A opção também pode ser configurada com um curinga para capturar todos os aci
    }
    ```
 
-1. Você também pode optar por colar o seguinte código JSON, que captura todos os acionadores.
+1. Também é possível optar por colar o seguinte código JSON, que captura todos os acionadores.
 
    ```json
    {

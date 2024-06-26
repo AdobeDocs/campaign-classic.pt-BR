@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 78%
 >
 >Como usuário do v7, você deve verificar se o Adobe Identity Management System (IMS) está ativado em seu sistema para prosseguir. [Saiba mais](../../integrations/using/about-adobe-id.md).
 
-Quando o Adobe Identity Management Service (IMS) estiver habilitado para sua organização, você poderá solicitar o provisionamento do [Público-alvo Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} integração com o Campaign. Para fazer isso, envie um email para [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) com as seguintes informações:
+Depois que o Adobe Identity Management Service (IMS) estiver habilitado para sua organização, você poderá solicitar o provisionamento da integração dos [públicos-alvo da Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/services/audiences/overview){target="_blank"} com o Campaign. Para fazer isso, envie um email para [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) com as seguintes informações:
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>Tipo de Solicitação</strong><br /> </td> 
-   <td> Configurar público-alvo - Integração do Campaign </td> 
+   <td> Configurar a integração de públicos-alvo com o Campaign </td> 
   </tr> 
   <tr> 
    <td> <strong>Nome da Organização</strong><br /> </td> 
@@ -39,7 +39,7 @@ Quando o Adobe Identity Management Service (IMS) estiver habilitado para sua org
   </tr> 
   <tr> 
    <td> <strong>Ambiente</strong><br /> </td> 
-   <td> Exemplo: Produção </td> 
+   <td> Exemplo: produção </td> 
   </tr> 
   <!--tr> 
    <td> <strong>AAM or People Service</strong><br /> </td> 

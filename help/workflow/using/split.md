@@ -5,9 +5,9 @@ description: Saiba mais sobre a atividade de workflow Split
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
 source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1971'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Essa atividade não aciona uma união de públicos de entrada. Se várias transi
 
 >[!NOTE]
 >
->As operações de divisão não podem ser executadas para tabelas com origens diferentes. Para essa finalidade, é necessário adicionar um **Enriquecimento** atividade antes de **Split** atividade.
+>Não é possível executar operações de divisão em tabelas com origens diferentes. Para essa finalidade, adicione uma atividade de **Enriquecimento** antes da atividade de **Divisão**.
 
 * Para obter um exemplo da atividade de split que está sendo usada, consulte [Criação de subconjuntos usando a atividade de Split](targeting-data.md#creating-subsets-using-the-split-activity)
 * Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes públicos usando condições de filtragem é descrito [nesta seção](cross-channel-delivery-workflow.md).
