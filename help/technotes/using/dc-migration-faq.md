@@ -6,10 +6,10 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '2204'
-ht-degree: 41%
+source-wordcount: '2225'
+ht-degree: 39%
 
 ---
 
@@ -78,6 +78,10 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 * **Como a delegação de subdomínios será tratada?**
 
   Os subdomínios existentes serão transferidos do data center herdado para a Nuvem pública (AWS). Esta parte será gerenciada pela equipe da Adobe Deliverability como parte do processo de migração.
+
+  >[!NOTE]
+  >
+  >O compromisso da equipe de avaliação do delivery é baseado no contrato, e os clientes devem entrar em contato com o representante da Adobe para obter informações relacionadas ao compromisso de avaliação do delivery.
 
   A Adobe orientará o cliente nos testes necessários para garantir que a configuração esteja funcionando a todo vapor nos novos servidores da Nuvem pública (AWS) após a migração.
 
@@ -157,7 +161,7 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
   [Saiba mais](#config) sobre IP na inclui na lista de permissões.
 
-* **Asseguraremos que todos os parâmetros de configuração de memória JavaScript estejam definidos corretamente após a migração?**
+* **Asseguraremos que todos os parâmetros de configuração de memória do JavaScript estejam definidos corretamente após a migração?**
 
   Copiaremos a configuração da instância do data center herdado para a Nuvem pública (AWS), de modo que esses valores serão preservados após a migração.
 
@@ -208,7 +212,7 @@ Os impactos em permissões, certificados e acesso SFTP estão listados abaixo.
 
   A implementação do cliente pode usar scripts personalizados (Perl/Shell/Python/Java Script) em fluxos de trabalho para manipular arquivos e pastas, por exemplo.
 
-  Na instância hospedada, os scripts são executados somente pelo mecanismo JavaScript. Essas implementações específicas podem causar falhas de segurança e problemas após a atualização. Elas não são compatíveis.
+  Na instância hospedada, os scripts são executados somente pelo mecanismo do JavaScript. Essas implementações específicas podem causar falhas de segurança e problemas após a atualização. Elas não são compatíveis.
 
 * **Com a integração do IMS, ele funcionará como está em uma nova instância ou será necessária uma atualização de configuração adicional?**
 

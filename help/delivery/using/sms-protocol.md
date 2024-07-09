@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '8445'
-ht-degree: 100%
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+workflow-type: tm+mt
+source-wordcount: '8466'
+ht-degree: 99%
 
 ---
 
@@ -382,6 +382,10 @@ Se você precisar controlar com precisão o número de conexões (por exemplo, o
 #### Nome da implementação SMSC {#smsc-implementation-name}
 
 Define o nome da implementação SMSC. Ele deve ser definido com o nome do seu provedor. Entre em contato com o administrador ou com a equipe de capacidade de entrega para saber o que adicionar a esse campo. A função desse campo é descrita na seção [Gerenciamento de erro do SR](sms-protocol.md#sr-error-management).
+
+>[!NOTE]
+>
+>O compromisso da equipe de avaliação do delivery é baseado no contrato, e os clientes devem entrar em contato com o representante da Adobe para obter informações relacionadas ao compromisso de avaliação do delivery.
 
 #### Servidor {#server}
 

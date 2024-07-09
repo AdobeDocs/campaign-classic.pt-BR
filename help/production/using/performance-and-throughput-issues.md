@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '738'
 ht-degree: 7%
 
 ---
 
 # Problemas de desempenho e de taxa de transferência{#performance-and-throughput-issues}
-
-
 
 Primeiro, verifique se a build mais recente está instalada. Isso garante que você tenha os recursos e as correções de erros mais recentes.
 
@@ -54,6 +52,11 @@ Esta é uma lista de artigos relacionados às práticas recomendadas de configur
 
 * Processos e memória MTA e MTAChild: a **mta** O módulo distribui mensagens para seus **mtachild** módulos filhos. Each **mtachild** prepara as mensagens antes de solicitar uma autorização do servidor de estatísticas e enviá-las. Consulte esta [página](../../installation/using/email-deliverability.md) para obter mais informações.
 * Configuração do TLS: não é recomendável ativar o TLS globalmente, pois ele pode reduzir a taxa de transferência. Em vez disso, as configurações TLS por domínio, gerenciadas pela equipe de avaliação do delivery, devem ser ajustadas de acordo com as necessidades. Consulte esta [página](../../installation/using/email-deliverability.md#mx-configuration) para obter mais informações.
+
+  >[!NOTE]
+  >
+  >O compromisso da equipe de avaliação do delivery é baseado no contrato, e os clientes devem entrar em contato com o representante da Adobe para obter informações relacionadas ao compromisso de avaliação do delivery.
+
 * DKIM: para garantir o nível de segurança do DKIM, o 1024b é o tamanho de criptografia recomendado pela prática recomendada. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso. Consulte [esta página](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 
 ## Problemas na capacidade de entrega {#deliverability-issues}
@@ -62,10 +65,15 @@ Esta é uma lista de práticas recomendadas e artigos relacionados à capacidade
 
 * Reputação de IP: se a reputação de IP não for boa o suficiente, haverá um impacto no desempenho. A variável **Monitoramento da entregabilidade** O módulo oferece várias ferramentas para acompanhar o desempenho da capacidade de delivery da sua plataforma. Consulte esta [página](../../delivery/using/monitoring-deliverability.md).
 * Aquecimento de IP: o aquecimento de IP é executado pela equipe de entrega. Isso envolve o aumento gradual do número de emails por meio de novos IPs durante um período de algumas semanas.
+
+  >[!NOTE]
+  >
+  >O compromisso da equipe de avaliação do delivery é baseado no contrato, e os clientes devem entrar em contato com o representante da Adobe para obter informações relacionadas ao compromisso de avaliação do delivery.
+
 * Configuração de afinidade IP: uma configuração de afinidade IP incorreta pode interromper os emails completamente (operador incorreto/nome de afinidade na configuração) ou reduzir a taxa de transferência (pequeno número de IPs na afinidade). Consulte esta [página](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 * Tamanho do email: o tamanho do email desempenha uma função importante na taxa de transferência. O tamanho máximo recomendado do email é de 60 KB. Consulte esta [página](https://helpx.adobe.com/legal/product-descriptions/campaign.html). No [Taxa de transferência de entrega](../../reporting/using/global-reports.md#delivery-throughput) verifique o número de bytes transferidos por hora.
 * Large number of invalid recipients: quando houver um grande número de recipients inválidos, isso poderá afetar a taxa de transferência. O MTA continua tentando enviar emails novamente para destinatários inválidos. Verifique se o banco de dados foi bem mantido.
-* Amount of personalization: se um delivery permanecer em &quot;Personalization in progress&quot;, verifique o JavaScript usado nos blocos de personalização.
+* Quantidade de personalização: se um delivery permanecer em &quot;Personalization em andamento&quot;, verifique a JavaScript usada em blocos de personalização.
 
 >[!NOTE]
 >
