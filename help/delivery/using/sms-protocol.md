@@ -7,9 +7,9 @@ feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8466'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -385,7 +385,7 @@ Define o nome da implementação SMSC. Ele deve ser definido com o nome do seu p
 
 >[!NOTE]
 >
->O compromisso da equipe de avaliação do delivery é baseado no contrato, e os clientes devem entrar em contato com o representante da Adobe para obter informações relacionadas ao compromisso de avaliação do delivery.
+>O compromisso da equipe de capacidade de entrega é baseado no contrato e os clientes devem entrar em contato com seu representante da Adobe para obter informações relacionadas ao compromisso de capacidade de entrega.
 
 #### Servidor {#server}
 
