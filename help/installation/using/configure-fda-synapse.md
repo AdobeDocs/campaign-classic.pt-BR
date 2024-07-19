@@ -18,9 +18,9 @@ ht-degree: 68%
 
 
 
-Usar a campanha [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao **Microsoft Azure synapse Analytics**.
+Use a opção Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao **Microsoft Azure synapse Analytics**.
 
-1. Configurar o Azure synapse em [CentOS](#azure-centos), [Windows](#azure-windows) ou [Debian](#azure-debian)
+1. Configurar o Azure synapse no [CentOS](#azure-centos), [Windows](#azure-windows) ou [Debian](#azure-debian)
 1. Configurar o Azure synapse [conta externa](#azure-external) no Campaign
 
 ## Azure synapse no CentOS {#azure-centos}
@@ -87,7 +87,7 @@ Para configurar o Azure synapse no CentOS, siga as etapas abaixo:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. No Campaign, você pode configurar as [!DNL Azure Synapse] conta externa. Para obter mais informações sobre como configurar a conta externa, consulte [nesta seção](#azure-external).
+1. No Campaign, você pode configurar a conta externa do [!DNL Azure Synapse]. Para obter mais informações sobre como configurar sua conta externa, consulte [esta seção](#azure-external).
 
 1. Como o Azure Synapse Analytics se comunica por meio da porta TCP 1433, é necessário abrir essa porta no firewall. Use o seguinte comando:
 
@@ -124,7 +124,7 @@ Para configurar o Azure Synapse no Windows:
 
 1. Depois que o driver ODBC estiver instalado, você poderá testá-lo se necessário. Para obter mais informações, consulte esta [página](https://docs.microsoft.com/pt-BR/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server).
 
-1. No Campaign Classic, você pode configurar a conta externa do [!DNL Azure Synapse]. Para obter mais informações sobre como configurar a conta externa, consulte [nesta seção](#azure-external).
+1. No Campaign Classic, você pode configurar a conta externa do [!DNL Azure Synapse]. Para obter mais informações sobre como configurar sua conta externa, consulte [esta seção](#azure-external).
 
 1. Como o Azure Synapse Analytics se comunica por meio da porta TCP 1433, é necessário abrir essa porta no Windows Defender Firewall. Para saber mais, consulte a [documentação do Windows](https://docs.microsoft.com/pt-BR/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
@@ -179,7 +179,7 @@ Para configurar o Azure Synapse no Debian:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. No Campaign Classic, você pode configurar a conta externa do [!DNL Azure Synapse]. Para obter mais informações sobre como configurar a conta externa, consulte [nesta seção](#azure-external).
+1. No Campaign Classic, você pode configurar a conta externa do [!DNL Azure Synapse]. Para obter mais informações sobre como configurar sua conta externa, consulte [esta seção](#azure-external).
 
 1. Para configurar iptables no Debian para garantir a conexão com o Azure Synapse Analytics, habilite a porta TCP 1433 de saída para seu nome de host com o seguinte comando:
 
@@ -193,11 +193,11 @@ Para configurar o Azure Synapse no Debian:
 
 ## Conta externa do Azure synapse {#azure-external}
 
-A variável [!DNL Azure Synapse] A conta externa do permite conectar a instância do Campaign ao banco de dados externo do Azure synapse.
+A conta externa [!DNL Azure Synapse] permite conectar a instância do Campaign ao banco de dados externo do Azure synapse.
 
-Para criar o [!DNL Azure Synapse] a conta externa siga as etapas abaixo:
+Para criar sua conta externa do [!DNL Azure Synapse], siga as etapas abaixo:
 
-1. Do Campaign **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Na Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Clique em **[!UICONTROL New]**.
 
@@ -205,11 +205,11 @@ Para criar o [!DNL Azure Synapse] a conta externa siga as etapas abaixo:
 
    ![](assets/azure_1.png)
 
-1. Em **[!UICONTROL Configuration]**, selecione **[!UICONTROL Azure Synapse Analytics]** do **[!UICONTROL Type]** menu suspenso.
+1. Em **[!UICONTROL Configuration]**, selecione **[!UICONTROL Azure Synapse Analytics]** no menu suspenso **[!UICONTROL Type]**.
 
    ![](assets/azure_2.png)
 
-1. Configure o [!DNL Azure Synapse] conta externa:
+1. Configure a conta externa do [!DNL Azure Synapse]:
 
    * Para autenticação padrão, você deve especificar:
 
@@ -229,7 +229,7 @@ Para criar o [!DNL Azure Synapse] a conta externa siga as etapas abaixo:
 
       * **[!UICONTROL Database]**: Nome do banco de dados
 
-      * **[!UICONTROL Options]**: adicione a seguinte sintaxe `Authentication=ActiveDirectoryMsi`
+      * **[!UICONTROL Options]**: Adicionar a seguinte sintaxe `Authentication=ActiveDirectoryMsi`
 
      ![](assets/azure_4.png)
 
@@ -239,4 +239,4 @@ O conector é compatível com as seguintes opções:
 
 | Opção | Descrição |
 |---|---|
-| Autenticação | Tipo de autenticação compatível com o conector. Valor com suporte atual: AtiveDirectoryMSI. </br>Para obter mais informações, consulte [Documento SQL](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) (Exemplo de cadeias de conexão n°8). |
+| Autenticação | Tipo de autenticação compatível com o conector. Valor com suporte atual: AtiveDirectoryMSI. </br>Para obter mais informações, consulte o [documento SQL](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) (Exemplo de cadeias de conexão n°8). |

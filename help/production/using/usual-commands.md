@@ -21,25 +21,25 @@ ht-degree: 6%
 
 Esta seção lista os comandos habituais no Adobe Campaign.
 
-O comando **nlserver** é o comando de entrada para todo o aplicativo do Adobe Campaign.
+O comando **nlserver** é o comando de entrada para todo o aplicativo Adobe Campaign.
 
-Esse comando tem a seguinte sintaxe: **nlserver **`<command>`****`<arguments>`****
+Este comando tem a seguinte sintaxe: **nlserver **`<command>`****`<arguments>`****
 
 O parâmetro **`<command>`** corresponde ao módulo.
 
 >[!NOTE]
 >
->* Em qualquer caso, você pode adicionar a variável **-noconsole** argumento para excluir comentários exibidos depois que os módulos são iniciados.
->* Por outro lado, é possível adicionar o argumento **-verboso** para exibir mais informações.
+>* Em qualquer caso, você pode adicionar o argumento **-noconsole** para excluir comentários exibidos depois que os módulos forem iniciados.
+>* Por outro lado, você pode adicionar o argumento **-verbose** para exibir mais informações.
 >
 
 ## Monitoramento de comandos {#monitoring-commands-}
 
 >[!NOTE]
 >
->Para listar todos os módulos, é necessário usar o **despejo nlserver** comando.
+>Para listar todos os módulos, é necessário usar o comando **nlserver pdump**.
 
-Você pode adicionar o parâmetro **-quem** para listar as conexões em andamento (banco de dados e aplicativo).
+Você pode adicionar o parâmetro **-who** para listar as conexões em andamento (banco de dados e aplicativo).
 
 ```sql
 nlserver pdump -who
@@ -61,9 +61,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Outro comando útil é **monitor nlserver**. Ele lista o arquivo XML de monitoramento (obtido no cliente do Adobe Campaign ou por meio da variável **monitor.jsp** página da Web).
+Outro comando útil é **nlserver monitor**. Ele lista o arquivo XML de monitoramento (obtido no cliente Adobe Campaign ou por meio da página da Web **monitor.jsp**).
 
-Você pode adicionar o parâmetro **-ausente** para listar os módulos ausentes (erro nos módulos, módulos encerrados etc.)
+Você pode adicionar o parâmetro **-missing** para listar os módulos ausentes (erro nos módulos, módulos encerrados, etc.)
 
 ```sql
 nlserver monitor -missing
@@ -89,7 +89,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** corresponde ao nome da instância conforme inserido nos arquivos de configuração ou **padrão** para módulos de instância única.
+>**`<instance>`** corresponde ao nome da instância conforme inserido nos arquivos de configuração, ou **default** para módulos de instância única.
 
 ## Desligar serviços {#shut-down-services}
 
@@ -137,9 +137,9 @@ Da mesma forma, para reiniciar o Adobe Campaign, você pode usar um dos seguinte
 
 ## O comando config {#the-config-command}
 
-A variável **config** permite gerenciar a configuração do servidor, incluindo a reconfiguração da conexão de banco de dados.
+O comando **config** permite gerenciar a configuração do servidor, incluindo a reconfiguração da conexão do banco de dados.
 
-Use o **config** comando do **nlserver** arquivo executável com o **-setdblogin** parâmetro.
+Use o comando **config** do arquivo executável **nlserver** com o parâmetro **-setdblogin**.
 
 ```sql
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -151,16 +151,16 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 Digite a senha.
 
-Para alterar o **interno** senha: **nlserver config -internalpassword**
+Para alterar a senha **interna**: **nlserver config -internalpassword**
 
 >[!IMPORTANT]
 >
->Para fazer logon com a **Interno** identificador, você precisa ter definido uma senha antes. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
+>Para fazer logon com o identificador **Interno**, é necessário definir uma senha antecipadamente. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 >[!NOTE]
 >
->* Em geral, em vez de modificar os arquivos de configuração manualmente, você pode usar o **config** comando
->* Para obter a lista de parâmetros, use o **-?** parâmetro: **Configuração nlserver -?**
+>* Em geral, em vez de modificar manualmente os arquivos de configuração, você pode usar o comando **config**
+>* Para obter a lista de parâmetros, use os parâmetros **-?** parâmetro: **nlserver config -?**
 >* No caso de um banco de dados Oracle, você não deve especificar a conta. A sintaxe será a seguinte:
 >
 >  `nlserver config -setdblogin:Oracle:test6@dbserver`

@@ -51,7 +51,7 @@ openssl x509 -noout -subject -dates
 nmap --script ssl-enum-ciphers -p ${REMPORT} ${REMHOST}
 ```
 
-Você também pode usar uma [sslyze](https://github.com/nabla-c0d3/sslyze/releases) python script que faz as duas coisas.
+Você também pode usar um python script [sslyze](https://github.com/nabla-c0d3/sslyze/releases) que faz as duas coisas.
 
 ```
 python sslyze.py --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --sni=SNI myserver.com

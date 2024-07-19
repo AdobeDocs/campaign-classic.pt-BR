@@ -11,7 +11,7 @@ exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ O servidor de banco de dados pode ser executado em qualquer sistema operacional,
 
 O sistema operacional do servidor de banco de dados não é importante desde que a conectividade com os diferentes componentes do Adobe Campaign esteja disponível.
 
-Verifique também o [Camadas de acesso ao banco de dados](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) seção.
+Verifique também a seção [Camadas de acesso ao banco de dados](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
@@ -45,11 +45,11 @@ As DLLs de acesso são encontradas no site do Microsoft.
 >
 >Nomes de colunas com caracteres multibyte não são suportados.
 
-A variável **NLS_NCHAR_CHARACTERSET** e **NLS_CHARACTERSET** Os parâmetros precisam ser configurados corretamente para que o banco de dados funcione em Unicode ou ANSI.
+Os parâmetros **NLS_NCHAR_CHARACTERSET** e **NLS_CHARACTERSET** precisam ser configurados corretamente para que o banco de dados funcione em Unicode ou ANSI.
 
 O Adobe Campaign usa a codificação de Oracle padrão. Usar outra codificação pode causar problemas de compatibilidade: nesse caso, entre em contato com o suporte técnico.
 
-Para saber mais sobre sua codificação, use o seguinte **sqlplus** comando:
+Para saber mais sobre sua codificação, use o seguinte comando **sqlplus**:
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -76,7 +76,7 @@ sqlplus
 [login] [password]
 ```
 
-Também é possível consultar [Cliente Oracle no Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
+Você também pode consultar o [Oracle Client no Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
 
 ## PostgresSQL {#postgressql}
 
@@ -84,4 +84,4 @@ Recomendamos que você instale o suporte a UTF-8 ao instalar o mecanismo de banc
 
 **Tópicos relacionados**
 
-* [Opção não registrada em tabelas do Adobe Campaign Classic](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Opção não registrada nas tabelas do Adobe Campaign Classic](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)

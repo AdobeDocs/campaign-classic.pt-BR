@@ -32,17 +32,17 @@ Esta página lista etapas específicas a serem executadas antes de iniciar o pro
 
 ## Etapas de migração {#migration-steps}
 
-O procedimento de migração deve ser executado em **all** servidores e em uma ordem específica.
+O procedimento de migração deve ser executado em **todos** servidores e em uma ordem específica.
 
-* No caso de um **plataforma independente** (modo de máquina única), o aplicativo é migrado na íntegra.
-* No caso de um **plataforma padrão** (empresarial), as etapas de migração são as seguintes:
+* No caso de uma **plataforma independente** (modo de computador único), o aplicativo é migrado na sua totalidade.
+* No caso de uma **plataforma padrão** (empresa), as etapas de migração são as seguintes:
 
    1. Migrar o servidor de marketing.
    1. Migrar o servidor de email (mta).
    1. Migrar os servidores de redirecionamento e rastreamento (Apache/IIS).
 
-* No caso de um **Plataforma de mensagens em nuvem**, os servidores de execução são hospedados na Adobe Campaign. Entre em contato com a Adobe Campaign para coordenar a migração entre diferentes servidores.
-* No caso de um **Plataforma Power Boster ou Power Cluster**, as etapas de migração são as seguintes:
+* No caso de uma **plataforma de Cloud Messaging**, os servidores de execução são hospedados na Adobe Campaign. Entre em contato com a Adobe Campaign para coordenar a migração entre diferentes servidores.
+* No caso de uma **plataforma Power Booster ou Power Cluster**, as etapas de migração são as seguintes:
 
    1. Migrar os servidores de redirecionamento e rastreamento (Apache/IIS).
    1. Migre os servidores Power Boster/Cluster.
@@ -50,7 +50,7 @@ O procedimento de migração deve ser executado em **all** servidores e em uma o
 
 ## Senhas de usuário {#user-passwords}
 
-Na v7, **interno** e **administrador** a conexão do operador deve ser protegida por uma senha. É altamente recomendável atribuir senhas a essas contas e a todas as contas de operador, **antes da migração**. Se você não tiver especificado uma senha para **interno**, você não poderá se conectar. Para atribuir uma senha a **interno**, digite o seguinte comando:
+Na v7, a conexão de operador **interna** e **admin** deve ser protegida por uma senha. É altamente recomendável atribuir senhas a essas contas e a todas as contas de operador, **antes da migração**. Se você não tiver especificado uma senha para **internal**, não poderá se conectar. Para atribuir uma senha a **internal**, digite o seguinte comando:
 
 ```
 nlserver config -internalpassword
@@ -58,4 +58,4 @@ nlserver config -internalpassword
 
 >[!CAUTION]
 >
->A variável **interno** a senha deve ser idêntica para todos os servidores de rastreamento. Para obter mais informações, consulte [Identificador interno](../../installation/using/configuring-campaign-server.md#internal-identifier) e [Permissões](../../platform/using/access-management.md) seções.
+>A senha **interna** deve ser idêntica para todos os servidores de rastreamento. Para obter mais informações, consulte as seções [Identificador interno](../../installation/using/configuring-campaign-server.md#internal-identifier) e [Permissões](../../platform/using/access-management.md).

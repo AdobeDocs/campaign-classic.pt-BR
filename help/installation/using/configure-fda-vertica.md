@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Configurar acesso ao [!DNL Vertica Analytics]
-description: Saiba como configurar o acesso ao [!DNL Vertica Analytics] na FDA
+description: Saiba como configurar o acesso ao [!DNL Vertica Analytics] no FDA
 feature: Installation, Federated Data Access
 audience: platform
 content-type: reference
@@ -18,18 +18,18 @@ ht-degree: 24%
 
 
 
-Usar a campanha **Federated Data Access** (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao [!DNL Vertica Analytics].
+Use a opção Campaign **Federated Data Access** (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao [!DNL Vertica Analytics].
 
-1. Configurar [!DNL Vertica Analytics] em [CentOS](#vertica-centos), [Windows](#vertica-windows) ou [Debian](#vertica-debian)
-1. Configure o [!DNL Vertica Analytics] [conta externa](#vertica-external) no Campaign
+1. Configurar [!DNL Vertica Analytics] no [CentOS](#vertica-centos), [Windows](#vertica-windows) ou [Debian](#vertica-debian)
+1. Configurar a [!DNL Vertica Analytics] [conta externa](#vertica-external) no Campaign
 
 ![](assets/snowflake_3.png)
 
 ## [!DNL Vertica Analytics] no CentOS {#vertica-centos}
 
-Para configurar [!DNL Vertica Analytics] No CentOS, siga as etapas abaixo:
+Para configurar o [!DNL Vertica Analytics] no CentOS, siga as etapas abaixo:
 
-1. Baixe os drivers ODBC para o [!DNL Vertica Analytics]. [Clique aqui](https://www.vertica.com/download/vertica/client-drivers/) e faça o download do RPM de Linux mais recente.
+1. Baixe os drivers ODBC para o [!DNL Vertica Analytics]. [Clique aqui](https://www.vertica.com/download/vertica/client-drivers/) e baixe o RPM de Linux mais recente.
 
 1. Em seguida, é necessário instalar o unixODBC com o seguinte comando:
 
@@ -38,7 +38,7 @@ Para configurar [!DNL Vertica Analytics] No CentOS, siga as etapas abaixo:
    yum install unixODBC.x86_64
    ```
 
-1. Se você tiver instalado o [!DNL Vertica Analytics] Servidor, um driver ODBC já estará instalado. Nesse caso, atualize a unidade da seguinte maneira:
+1. Se você já tiver instalado o Servidor [!DNL Vertica Analytics], um driver ODBC já estará instalado. Nesse caso, atualize a unidade da seguinte maneira:
 
    ```
    #Switch to root
@@ -77,7 +77,7 @@ Para configurar [!DNL Vertica Analytics] No CentOS, siga as etapas abaixo:
    rm vertica-client-x.x.x-x.x86_64.rpm
    ```
 
-1. No Adobe Campaign, você pode configurar as [!DNL Vertica Analytics] conta externa. Para obter mais informações sobre como configurar a conta externa, consulte [nesta seção](#vertica-external).
+1. No Adobe Campaign, você pode configurar a conta externa do [!DNL Vertica Analytics]. Para obter mais informações sobre como configurar sua conta externa, consulte [esta seção](#vertica-external).
 
 ## [!DNL Vertica Analytics] no Windows {#vertica-windows}
 
@@ -85,7 +85,7 @@ Para configurar [!DNL Vertica Analytics] No CentOS, siga as etapas abaixo:
 
 1. Configure o driver ODBC no Windows. Para obter mais informações, consulte [esta página](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 
-1. No Adobe Campaign, você pode configurar as [!DNL Vertica Analytics] conta externa. Para obter mais informações sobre como configurar a conta externa, consulte [nesta seção](#vertical-external).
+1. No Adobe Campaign, você pode configurar a conta externa do [!DNL Vertica Analytics]. Para obter mais informações sobre como configurar sua conta externa, consulte [esta seção](#vertical-external).
 
 ## [!DNL Vertica Analytics] no Debian {#vertica-debian}
 
@@ -97,7 +97,7 @@ Para configurar [!DNL Vertica Analytics] No CentOS, siga as etapas abaixo:
    apt-get install unixODBC
    ```
 
-1. Se você tiver instalado o [!DNL Vertica Analytics] Servidor, um driver ODBC já estará instalado. Nesse caso, atualize a unidade da seguinte maneira:
+1. Se você já tiver instalado o Servidor [!DNL Vertica Analytics], um driver ODBC já estará instalado. Nesse caso, atualize a unidade da seguinte maneira:
 
    ```
    #Switch to root
@@ -139,13 +139,13 @@ Para configurar [!DNL Vertica Analytics] No CentOS, siga as etapas abaixo:
    Port = 5433
    ```
 
-1. No Adobe Campaign, você pode configurar as [!DNL Vertica Analytics] conta externa. Para obter mais informações sobre como configurar a conta externa, consulte [nesta seção](#vertica-external).
+1. No Adobe Campaign, você pode configurar a conta externa do [!DNL Vertica Analytics]. Para obter mais informações sobre como configurar sua conta externa, consulte [esta seção](#vertica-external).
 
-## [!DNL Vertica Analytics] conta externa {#vertica-external}
+## Conta externa de [!DNL Vertica Analytics] {#vertica-external}
 
-É necessário criar um [!DNL Vertica Analytics] conta externa para conectar a instância do Campaign à [!DNL Vertica Analytics] banco de dados externo.
+É necessário criar uma conta externa [!DNL Vertica Analytics] para conectar a instância do Campaign ao banco de dados externo [!DNL Vertica Analytics].
 
-1. Do Campaign **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Na Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Clique em **[!UICONTROL New]**.
 

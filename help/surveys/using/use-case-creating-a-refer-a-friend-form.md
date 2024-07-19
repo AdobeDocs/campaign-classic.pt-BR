@@ -2,13 +2,13 @@
 product: campaign
 title: Criar uma pesquisa Indique um Amigo
 description: Saiba mais sobre como criar um formulário Indique um Amigo
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

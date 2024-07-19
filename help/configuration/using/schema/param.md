@@ -7,7 +7,7 @@ exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -45,12 +45,12 @@ Esse elemento permite definir um parâmetro para chamar um método SOAP.
 
 ## Descrição do atributo {#attribute-description-12}
 
-* **desc (string)**: descrição que diz respeito ao `<param>` elemento.
-* **inout (string)**: esse atributo define se o parâmetro está na entrada (in) ou saída (out) da chamada SOAP. Se esse atributo não for especificado, o parâmetro padrão será input (&quot;@inout=in&quot;).
-* **rótulo (string)**: `<param>` rótulo
-* **localizável (string)**: se estiver ativado, esse atributo informará à ferramenta de coleção para recuperar o valor do atributo &quot;@label&quot; para tradução (uso interno).
-* **nome (MNTOKEN)**: nome interno da `<param>`
-* **tipo (string)**: este atributo define o tipo de `<param>` element
+* **desc (cadeia de caracteres)**: descrição que afeta o elemento `<param>`.
+* **inout (string)**: este atributo define se o parâmetro está ou não na entrada (in) ou saída (out) da chamada SOAP. Se esse atributo não for especificado, o parâmetro padrão será input (&quot;@inout=in&quot;).
+* **rótulo (cadeia de caracteres)**: `<param>` rótulo
+* **localizable (string)**: se estiver ativado, este atributo informa à ferramenta de coleção para recuperar o valor do atributo &quot;@label&quot; para tradução (uso interno).
+* **nome (MNTOKEN)**: nome interno do `<param>`
+* **tipo (cadeia de caracteres)**: este atributo define o tipo de elemento `<param>`
 
   Lista de tipos disponíveis:
 

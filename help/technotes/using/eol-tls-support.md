@@ -24,7 +24,7 @@ O Adobe não é mais compatível com sistemas de usuários e sistemas de cliente
 
 ## Por que estou vendo esta página?
 
-Se você vir a seguinte mensagem: **Esta página não pode ser exibida**, isso significa que os aplicativos Adobe, a página da Web ou o serviço que você está tentando acessar exigem uma conexão de rede mais segura com seu navegador da Web, sistema operacional ou aplicativo. É obrigatório usar **TLS 1.2** para comunicações seguras em rede e troca de dados entre sistemas de usuários e aplicativos e serviços da web para o Adobe.
+Se você vir a seguinte mensagem: **Esta página não pode ser exibida**, significa que o Adobe aplicativos, página da Web ou serviço que você está tentando acessar requer uma conexão de rede mais segura com seu navegador da Web, sistema operacional ou aplicativo. É obrigatório usar o **TLS 1.2** para comunicações de rede seguras e troca de dados entre sistemas de usuários e aplicativos e serviços Web do Adobe.
 
 O Adobe descontinuou o suporte para versões anteriores do TLS (incluindo TLS 1.0 e 1.1). Para obter detalhes técnicos sobre o protocolo TLS 1.2, consulte [Perguntas frequentes](#faq).
 
@@ -41,13 +41,13 @@ Você pode baixar e instalar um dos seguintes navegadores populares:
 
 Se você estiver usando outro navegador, verifique se ele é compatível com TLS 1.2.
 
-O sistema operacional e as estruturas de aplicativo também devem ser compatíveis com TLS 1.2. Se atualizar o navegador não resolver o problema, verifique se o computador atende aos requisitos de sistema listados na [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-matrix.md).
+O sistema operacional e as estruturas de aplicativo também devem ser compatíveis com TLS 1.2. Se a atualização do navegador não resolver o problema, verifique se o computador atende aos requisitos de sistema listados na [Matriz de Compatibilidade do Campaign](../../rn/using/compatibility-matrix.md).
 
 ## Perguntas frequentes{#faq}
 
-* **O que é TLS (Transport Layer Security)?**
+* **O que é TLS?**
 
-  [Segurança da camada de transporte](https://en.wikipedia.org/wiki/Transport_Layer_Security) O (TLS) é um protocolo de segurança que fornece privacidade e integridade de dados entre dois aplicativos de comunicação. Ele é amplamente implantado para navegadores da Web e outros aplicativos que exigem que os dados sejam trocados com segurança em uma rede.
+  O [TLS (Transport Layer Security)](https://en.wikipedia.org/wiki/Transport_Layer_Security) é um protocolo de segurança que fornece privacidade e integridade de dados entre dois aplicativos de comunicação. Ele é amplamente implantado para navegadores da Web e outros aplicativos que exigem que os dados sejam trocados com segurança em uma rede.
 
   De acordo com a especificação do protocolo, o TLS inclui duas camadas, o protocolo de Registro TLS e o protocolo de Interação TLS. O protocolo Record oferece segurança de conexão. O protocolo Handshake permite que o servidor e o cliente se autentiquem e negociem algoritmos de criptografia e chaves criptográficas antes da troca de dados.
 
@@ -87,7 +87,7 @@ O sistema operacional e as estruturas de aplicativo também devem ser compatíve
 
 * **Que mensagem de erro será exibida se eu usar um navegador não configurado para TLS 1.2?**
 
-  Depende do navegador que você está usando. Todos os navegadores mencionados em [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-matrix.md) são configurados para usar TLS 1.2. Se você estiver usando um navegador ou uma versão que não consta na lista, atualize o navegador.
+  Depende do navegador que você está usando. Todos os navegadores mencionados na [Matriz de Compatibilidade do Campaign](../../rn/using/compatibility-matrix.md) estão configurados para usar TLS 1.2. Se você estiver usando um navegador ou uma versão que não consta na lista, atualize o navegador.
 
   O Adobe não controla as mensagens de erro geradas pela camada de comunicações SSL. O navegador gera essas mensagens antes de se conectar a aplicativos e serviços Adobe. Este é um exemplo de erro que pode ocorrer com o Internet Explorer 11 no Windows 7:
 

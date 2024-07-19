@@ -16,7 +16,7 @@ ht-degree: 8%
 
 
 
-Para aplicar as modificações feitas nos esquemas, inicie o assistente de atualização de banco de dados. Este assistente pode ser acessado via **[!UICONTROL Tools > Advanced > Update database structure]** . Ele verifica se a estrutura física do banco de dados corresponde à sua descrição lógica e executa os scripts de atualização SQL.
+Para aplicar as modificações feitas nos esquemas, inicie o assistente de atualização de banco de dados. Este assistente pode ser acessado via **[!UICONTROL Tools > Advanced > Update database structure]**. Ele verifica se a estrutura física do banco de dados corresponde à sua descrição lógica e executa os scripts de atualização SQL.
 
 ![](assets/d_ncs_integration_schema_update.png)
 
@@ -24,7 +24,7 @@ Os módulos no banco de dados são automaticamente preenchidos e ativados.
 
 ![](assets/d_ncs_integration_schema_update_select.png)
 
-A variável **[!UICONTROL Add stored procedures]** e **[!UICONTROL Import initialization data]** As opções são usadas para iniciar os scripts SQL iniciais e os pacotes de dados executados quando o banco de dados é criado.
+As opções **[!UICONTROL Add stored procedures]** e **[!UICONTROL Import initialization data]** são usadas para iniciar os scripts SQL iniciais e os pacotes de dados executados quando o banco de dados é criado.
 
 É possível importar um conjunto de dados de um pacote de dados externo. Para fazer isso, selecione **[!UICONTROL Import a package]** e insira o arquivo XML do pacote.
 

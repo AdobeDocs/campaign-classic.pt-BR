@@ -11,7 +11,7 @@ exl-id: c9d427da-6965-4945-90f0-d0770701d55e
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -23,11 +23,11 @@ Os arquivos de log são organizados da seguinte maneira:
 
 ![](assets/d_ncs_directory.png)
 
-Each **nlserver** O módulo gera um arquivo de log salvo no seguinte diretório: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
+Cada módulo **nlserver** gera um arquivo de log salvo no seguinte diretório: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
 
-A variável **syslogd nlserver** O módulo salva os logs no disco. Esse módulo é semelhante ao Unix **syslog daemon**, mas foi adaptado para compatibilidade entre Unix e Windows. Os outros módulos do Adobe Campaign não salvam seus registros no disco; eles delegam essa tarefa à **syslogd** enviando pacotes UDP.
+O módulo **nlserver syslogd** salva os logs no disco. Este módulo é semelhante ao **syslog daemon** do Unix, mas foi adaptado para compatibilidade entre Unix e Windows. Os outros módulos do Adobe Campaign não salvam seus logs no disco. Eles delegam essa tarefa ao módulo **syslogd** enviando pacotes UDP.
 
-Por padrão, a plataforma Adobe Campaign tem a variável **syslogd** módulo instalado nele, mas é possível usar outro **syslog daemon**. Esse módulo cria os arquivos de log no **log** diretório.
+Por padrão, a plataforma Adobe Campaign tem o módulo **syslogd** instalado, mas é possível usar outro **syslog daemon**. Este módulo cria os arquivos de log no diretório **log**.
 
 Os logs dos módulos de várias instâncias são armazenados no seguinte diretório: **`<installation directory>`/var/default/log/**. O mesmo arquivo de log é compartilhado por todas as instâncias (por exemplo, **web.log**).
 
@@ -37,7 +37,7 @@ Os arquivos de log de várias instâncias são listados na seguinte tabela:
 
 | Arquivo | Descrição |
 |---|---|
-| web.log | Logs do módulo da Web (console do cliente, relatórios, API SOAP etc.) |
+| web.log | Registros do módulo da Web (console do cliente, relatórios, API SOAP etc.) |
 | webmdl.log | Logs do módulo de redirecionamento |
 | watchdog.log | Logs do módulo de monitoramento do processo do Adobe Campaign |
 | trackinglogd.log | Logs de rastreamento |
@@ -55,14 +55,14 @@ Os arquivos de log de instância mono são listados na tabela a seguir:
 
 >[!IMPORTANT]
 >
->A variável **redirecionar** o diretório só existe em servidores de redirecionamento. A variável **url** subdiretório contém as correspondências dos URLs a serem redirecionados e o subdiretório **log** contém os logs de rastreamento. Para gerar logs de rastreamento, a variável **trackinglogd** o módulo deve estar em execução.
+>O diretório **redirecionador** existe apenas nos servidores de redirecionamento. O subdiretório **url** contém as correspondências das URLs a serem redirecionadas, e o subdiretório **log** contém os logs de rastreamento. Para gerar logs de rastreamento, o módulo **trackinglogd** deve estar em execução.
 
-Para otimização de desempenho e armazenamento, o arquivo logins.log é dividido em vários arquivos, um a cada dia (logins.yy-mm-dd.log) com um máximo de 365 arquivos retidos. O número de dias pode ser alterado no serverConf.xml, em syslogd (**maxNumberOfLoginsFiles** opção). Consulte a documentação no [arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md#syslogd).
+Para otimização de desempenho e armazenamento, o arquivo logins.log é dividido em vários arquivos, um a cada dia (logins.yy-mm-dd.log) com um máximo de 365 arquivos retidos. O número de dias pode ser alterado no serverConf.xml, em syslogd (opção **maxNumberOfLoginsFiles**). Consulte a documentação no [arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md#syslogd).
 
-Por padrão, os registros são limitados a dois arquivos de 10 MB por módulo e por instância. O segundo arquivo é chamado: **`<modulename>`_2.log**. Portanto, o tamanho dos logs é limitado a 2&#42;10 MB por módulo e por instância.
+Por padrão, os registros são limitados a dois arquivos de 10 MB por módulo e por instância. O segundo arquivo é chamado: **`<modulename>`_2.log**. Portanto, o tamanho dos logs é limitado a 2&#42;10MB por módulo e por instância.
 
-No entanto, você pode manter arquivos maiores. Para habilitar isso, altere o valor de **maxFileSizeMb=&quot;10&quot;** configuração no **syslogd** nó do **conf/serverConf.xml** arquivo. Esse valor representa o tamanho máximo de um arquivo de log, em MB.
+No entanto, você pode manter arquivos maiores. Para habilitar isso, altere o valor da configuração **maxFileSizeMb=&quot;10&quot;** no nó **syslogd** do arquivo **conf/serverConf.xml**. Esse valor representa o tamanho máximo de um arquivo de log, em MB.
 
-Se quiser manter mais níveis de detalhes nos logs, inicie os módulos do Adobe Campaign com o **-verboso** parâmetro:
+Se quiser manter mais níveis de detalhes nos logs, inicie os módulos do Adobe Campaign com o parâmetro **-verbose**:
 
-**nlserver start `<MODULE>`@`<INSTANCE>` -verboso**
+**ninício do lserver `<MODULE>`@`<INSTANCE>` -verbose**

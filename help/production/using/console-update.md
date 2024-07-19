@@ -18,13 +18,13 @@ ht-degree: 10%
 
 
 
-Se você selecionou a variável **[!UICONTROL Do not request console update]** e quiser reativar a solicitação de atualização, siga o seguinte procedimento:
+Se você selecionou a opção **[!UICONTROL Do not request console update]** e deseja reativar a solicitação de atualização, execute o seguinte procedimento:
 
-1. Abra o editor do banco de dados do Registro usando o **regedit** comando no Windows **[!UICONTROL Start > Execute]** menu.
+1. Abra o editor do banco de dados do Registro usando o comando **regedit** no menu **[!UICONTROL Start > Execute]** do Windows.
 
    ![](assets/ncs_console_update_1.png)
 
-1. Na árvore, exiba as opções da variável **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]** nó.
-1. Exclua o **[!UICONTROL confAdvisedUpgrade]** e feche o Editor de registro.
+1. Na árvore, exiba as opções do nó **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]**.
+1. Exclua a entrada **[!UICONTROL confAdvisedUpgrade]** e feche o editor do Registro.
 
    ![](assets/ncs_console_update_2.png)

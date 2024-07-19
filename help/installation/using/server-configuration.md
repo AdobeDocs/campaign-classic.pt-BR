@@ -43,13 +43,13 @@ Se você estiver usando nomes de host diferentes (um público e um para operador
 
 ## Proteção de conexão de saída
 
-A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows, etc.) é limitada. Para permitir um novo URL, o administrador precisa referenciá-lo na [arquivo serverConf.xml](../../installation/using/the-server-configuration-file.md).
+A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows, etc.) é limitada. Para permitir uma nova URL, o administrador precisa referenciá-la no [arquivo serverConf.xml](../../installation/using/the-server-configuration-file.md).
 
 Existem três modos de proteção de conexão:
 
-* **Bloqueio** incluir na lista de permissões : todos os URLs que não pertencem ao arquivo de classificação são bloqueados, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
-* **Permissivo** : todos os URLs fora do incluo na lista de permissões são permitidos.
-* **Aviso** : todos os URLs que não estão no arquivo de inclui na lista de permissões são permitidos, mas o interpretador JS emite um aviso, para que o administrador possa coletá-los. Esse modo adiciona mensagens de aviso JST-310027.
+* **Bloqueio**: todas as URLs fora do arquivo de inclui na lista de permissões são bloqueadas, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
+* **Permissivo**: todas as URLs fora do grupo de inclui na lista de permissões são permitidas.
+* **Aviso**: todas as URLs que não estão na inclui na lista de permissões são permitidas, mas o interpretador JS emite um aviso para que o administrador possa coletá-las. Esse modo adiciona mensagens de aviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -65,11 +65,11 @@ Os clientes existentes provenientes de uma migração podem usar o modo de aviso
 
 ## Restrição de comando (lado do servidor)
 
-Vários comandos estão incluídos no incluo na lista de bloqueios e não podem ser executados usando a função execCommand. Uma segurança extra é fornecida por um usuário Unix dedicado para executar comandos externos. Para instalações hospedadas, essa restrição é aplicada automaticamente. Para instalações no local, é possível configurar manualmente essa restrição seguindo as instruções de [esta página](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Além disso, **[!UICONTROL Script]** e **[!UICONTROL External task]** as atividades de workflow não estão disponíveis (instâncias recém-instaladas).
+Vários comandos estão incluídos no incluo na lista de bloqueios e não podem ser executados usando a função execCommand. Uma segurança extra é fornecida por um usuário Unix dedicado para executar comandos externos. Para instalações hospedadas, essa restrição é aplicada automaticamente. Para instalações locais, você pode configurar manualmente essa restrição seguindo as instruções de [esta página](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Além disso, as atividades de fluxo de trabalho **[!UICONTROL Script]** e **[!UICONTROL External task]** não estão disponíveis (instâncias recém-instaladas).
 
 ## Outras configurações
 
-É possível adicionar cabeçalhos HTTP extras para todas as páginas (para obter mais informações, consulte [esta página](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands)):
+Você pode adicionar cabeçalhos HTTP extras para todas as páginas (para obter mais informações, consulte [esta página](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands)):
 
 * Você pode adicionar alguns cabeçalhos adicionais, como HSTS, X-FRAME-OPTIONS, CSP...
 * Você precisa testá-los em um ambiente de teste antes de aplicá-los na produção.
@@ -78,10 +78,10 @@ Vários comandos estão incluídos no incluo na lista de bloqueios e não podem 
   >
   >O Adobe Campaign pode ser interrompido adicionando determinados cabeçalhos.
 
-O Adobe Campaign permite que você defina uma senha simples no `<dbcnx .../>` elemento. Não use este recurso.
+O Adobe Campaign permite definir uma senha simples no elemento `<dbcnx .../>`. Não use este recurso.
 
-Por padrão, o Adobe Campaign não coloca uma sessão em um IP específico, mas você pode ativá-lo para impedir que a sessão seja roubada. Para fazer isso, no campo [arquivo serverConf.xml](../../installation/using/the-server-configuration-file.md), defina o atributo checkIPConsistent como **true** no `<authentication>` nó.
+Por padrão, o Adobe Campaign não coloca uma sessão em um IP específico, mas você pode ativá-lo para impedir que a sessão seja roubada. Para fazer isso, defina no [arquivo serverConf.xml](../../installation/using/the-server-configuration-file.md) o atributo checkIPConsistent como **true** no nó `<authentication>`.
 
-Por padrão, o MTA do Adobe Campaign não usa uma conexão segura para enviar conteúdo ao servidor SMTP. Esse recurso deve ser habilitado (pode reduzir a velocidade de entrega). Para fazer isso, defina **enableTLS** para **true** no `<smtp ...>` nó.
+Por padrão, o MTA do Adobe Campaign não usa uma conexão segura para enviar conteúdo ao servidor SMTP. Esse recurso deve ser habilitado (pode reduzir a velocidade de entrega). Para fazer isso, defina **enableTLS** como **true** no nó `<smtp ...>`.
 
 Você pode reduzir o tempo de vida de uma sessão no nó de autenticação (atributo sessionTimeOutSec).

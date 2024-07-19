@@ -25,17 +25,17 @@ Há muitos módulos do Adobe Campaign. Alguns operam continuamente, enquanto out
 
 Há três tipos de módulos do Adobe Campaign:
 
-* Módulos de várias instâncias: um único processo é executado para todas as instâncias. Isso se aplica aos seguintes módulos: **web**, **syslogd**, **trackinglogd** e **watchdog** (atividades do **config-default.xml** arquivo).
-* Módulos de instância única: um processo é executado por instância. Isso se aplica aos seguintes módulos: **mta**, **wfserver**, **inMail**, **sms** e **stat** (atividades do **config-`<instance>`.xml** arquivo).
-* Módulos de utilitários: são módulos executados ocasionalmente para executar operações ocasionais ou recorrentes (**cleanup**, **config**, download de logs de rastreamento etc.).
+* Módulos de várias instâncias: um único processo é executado para todas as instâncias. Isso se aplica aos seguintes módulos: **web**, **syslogd**, **trackinglogd** e **watchdog** (atividades do arquivo **config-default.xml**).
+* Módulos de instância única: um processo é executado por instância. Isso se aplica aos seguintes módulos: **mta**, **wfserver**, **inMail**, **sms** e **stat** (atividades do arquivo **config-`<instance>`.xml**).
+* Módulos de utilitário: são módulos executados ocasionalmente para executar operações ocasionais ou recorrentes (**limpeza**, **configuração**, download de logs de rastreamento etc.).
 
-A administração do módulo é executada usando a ferramenta de linha de comando **nlserver** instalado no **compartimento** diretório da pasta de instalação.
+A administração do módulo é executada usando a ferramenta de linha de comando **nlserver** instalada no diretório **bin** da pasta de instalação.
 
-A sintaxe geral do **nlserver** é a seguinte:
+A sintaxe geral da ferramenta **nlserver** é a seguinte:
 
 **nlserver `<command>``<command arguments>`**
 
-Para obter a lista de módulos disponíveis, use o **nlserver** comando.
+Para obter a lista de módulos disponíveis, use o comando **nlserver**.
 
 Os módulos disponíveis são detalhados na tabela a seguir:
 
@@ -50,7 +50,7 @@ Os módulos disponíveis são detalhados na tabela a seguir:
 | importar | Importar para linha de comando: permite enviar para a linha de comando um modelo de importação criado no console do cliente do Adobe Campaign. |
 | inMail | Analisador de email de entrada |
 | installsetup | Disponibilidade do arquivo de instalação do cliente |
-| javascript | Execução de scripts JavaScript, com acesso a APIs SOAP. |
+| javascript | Execução de scripts do JavaScript, com acesso a APIs SOAP. |
 | tarefa | Processamento de linha de comando |
 | mesclar | Mesclagem de formulários |
 | midSourcing | Recuperação de informações de entrega no modo de mid-sourcing |
@@ -83,7 +83,7 @@ O uso do módulo e a sintaxe de seus parâmetros são exibidos usando o seguinte
 
 Exemplo:
 
-**Configuração nlserver -?**
+**nlconfiguração do servidor -?**
 
 ```
 Usage: nlserver [-verbose:<verbose mode>] [-?|h|H] [-version] [-noconsole]

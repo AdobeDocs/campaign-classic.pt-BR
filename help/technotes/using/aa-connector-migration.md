@@ -22,7 +22,7 @@ Em 1º de agosto de 2021, o Adobe Campaign Classic foi removido da interface her
 
 Você **deve implementar** a nova integração do Adobe Analytics Connector no Adobe Exchange, que substitui a integração herdada do Data Connectors. Para saber mais sobre o Adobe Analytics Connector, consulte [esta página](../../integrations/using/gs-aa.md).
 
-Em caso de dúvidas sobre essas alterações, leia o [Perguntas frequentes](#faq-aa). Para obter mais informações, entre em contato [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Para perguntas sobre essas alterações, leia as [Perguntas frequentes](#faq-aa). Para obter mais informações, contate o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 >[!NOTE]
 >
@@ -32,13 +32,13 @@ Em caso de dúvidas sobre essas alterações, leia o [Perguntas frequentes](#faq
 
 Uma nova integração entre o Campaign Classic v7 e o Adobe Analytics está disponível. As principais alterações estão listadas abaixo.
 
-* A variável **Data de contato** A classificação, que era do tipo data, foi descontinuada pelo Adobe Analytics. Para integrações migradas, ele ainda permanecerá do mesmo tipo. Para qualquer **Data de contato** criado pelo Campaign, o tipo será **String**.
+* A Classificação **Data de contato**, que é do tipo data, foi descontinuada pela Adobe Analytics. Para integrações migradas, ele ainda permanecerá do mesmo tipo. Para qualquer **Data de Contato** criada pelo Campaign, o tipo será **Cadeia de caracteres**.
 
-* **Regras de processamento** são criados pela Adobe Campaign como parte das novas integrações. Ou **Regras de processamento** deve ser criado manualmente pelo Adobe Analytics ou usar diretamente a implementação do Javascript do lado do cliente. **Regras de processamento** permanecerão intactos para as integrações existentes.
+* **As Regras de processamento** são criadas pela Adobe Campaign como parte das novas integrações. As **Regras de Processamento** devem ser criadas manualmente a partir do Adobe Analytics ou usar diretamente a implementação do Javascript do lado do cliente. As **Regras de processamento** permanecerão intactas para integrações existentes.
 
 * Os workflows técnicos integrados e seu comportamento permanecem os mesmos. Somente as APIs de back-end usadas pelos workflows para enviar/receber dados de/para o Adobe Analytics foram alteradas.
 
-* Observe que `nlserver` O processo deve ser configurado com o Usuário técnico da conta IMS para que o novo conector funcione. Essa alteração deve ser feita por Adobe. Para implementar isso, entre em contato com o [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* Observe que o processo `nlserver` deve ser configurado com o Usuário de conta técnica IMS para que o novo conector funcione. Essa alteração deve ser feita por Adobe. Para implementar, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * Se você era um usuário de APIs do Adobe Genesis em fluxos de trabalho personalizados para extrair e enviar dados do Adobe Analytics, agora é necessário usar as novas APIs do Adobe Analytics 1.4/2.0. [Saiba mais](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360047148832-Replacements-for-Data-Connector-API-calls)
 
@@ -52,29 +52,29 @@ Saiba como verificar sua versão [nesta seção](../../integrations/using/launch
 
 Você precisa atualizar para o Campaign 21.1.3 (ou posterior) **antes de 17 de agosto de 2022**.
 
-Como cliente hospedado, o Adobe trabalhará com você para atualizar sua(s) instância(s) para a versão mais recente. Você poderá então usar [Conector do Adobe Analytics](../../platform/using/gs-aa.md).
+Como cliente hospedado, o Adobe trabalhará com você para atualizar sua(s) instância(s) para a versão mais recente. Você poderá usar o [conector do Adobe Analytics](../../platform/using/gs-aa.md).
 
 Como cliente local/híbrido, é necessário atualizar para uma das versões mais recentes para se beneficiar da nova integração.
-Depois que todas as instâncias forem atualizadas, você poderá [implementar a nova integração](../../integrations/using/adobe-analytics-provisioning.md) ao Adobe Analytics Connector e garantir uma transição contínua.
+Depois que todas as instâncias forem atualizadas, você poderá [implementar a nova integração](../../integrations/using/adobe-analytics-provisioning.md) com o Adobe Analytics Connector e garantir uma transição contínua.
 
 ## Perguntas frequentes{#faq-aa}
 
-**Como posso obter registros?**
+**Como posso obter logs?**
 
-A configuração da interface do usuário e os workflows são equipados com **verboso** fazendo logon.
+A configuração e os fluxos de trabalho da interface do usuário estão equipados com o log **verbose**.
 
 No modo detalhado, os cabeçalhos de solicitação e resposta também são impressos para cada solicitação de API para o Adobe Analytics.
 
 Como usuário local, você pode implementar o modo detalhado da seguinte maneira:
 
-* Para ativar o modo detalhado para a interface do usuário do: execute novamente o `web` processo no modo detalhado.
-* Para ativar o modo detalhado para o **webAnalytics** workflows: selecione o **Executar no motor** nas propriedades do fluxo de trabalho e execute novamente `wfserver` no modo detalhado.
+* Para habilitar o modo detalhado para a interface do usuário: execute novamente o processo `web` no modo detalhado.
+* Para habilitar o modo detalhado para os fluxos de trabalho do **webAnalytics**: selecione a opção **Executar no mecanismo** nas propriedades do fluxo de trabalho e execute `wfserver` novamente no modo detalhado.
 
-**O que significa o erro &quot;Proprietário da integração não é administrador&quot;?**
+**O que significa o erro &#39;Proprietário da integração não é administrador&#39;?**
 
-Saiba mais sobre a Data Connectors `Integration Owner Not Admin` Erro no [esta página](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
+Saiba mais sobre o Erro `Integration Owner Not Admin` do Data Connectors em [esta página](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
 
-**Depois que a migração para o novo conector é concluída, o que acontece com os dados antigos e os conjuntos de relatórios?**
+**Depois que a migração para o novo conector for concluída, o que acontecerá com os dados e conjuntos de relatórios antigos?**
 
 Após a migração, um novo conector (migrado do conector antigo) começará a enviar dados para o mesmo conjunto de relatórios e os dados existentes não serão afetados: ele será adicionado aos dados existentes.
 
@@ -84,12 +84,12 @@ A integração depende dos dados no Token de conta técnica para a operação di
 
 Se estivermos lendo para obter detalhes de um componente do Analytics (como métricas/dimensões/segmentos/conjuntos de relatórios), a API não retornará esses componentes no resultado (que pode parecer que algo foi excluído no Analytics ou não está presente). A API do Analytics rejeitará essas solicitações e ocorrerá um erro.
 
-A solução é atualizar a **Perfil do produto** no Contexto de usuário do Analytics do token de usuário técnico com os componentes recém-criados/ausentes adicionando esses componentes em [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Para obter mais orientações, entre em contato com [Atendimento ao cliente Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+A solução é atualizar o **Perfil de Produto** no Contexto de Usuário do Analytics do Token de Usuário Técnico com os componentes recém-criados/ausentes adicionando esses componentes no [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Para obter mais orientações, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Links úteis
 
 * [Atualizar o ambiente](../../production/using/build-upgrade.md)
 * [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)
-* [Baixar build de Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
+* [Baixar compilação de Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
 * [Disponibilizar o novo Console do cliente para os usuários](../../installation/using/client-console-availability-for-windows.md)
 * [Instalar o console do cliente do Campaign](../../installation/using/installing-the-client-console.md)

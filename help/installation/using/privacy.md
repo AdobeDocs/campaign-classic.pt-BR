@@ -25,13 +25,13 @@ Ao adicionar links personalizados ao seu conteúdo, sempre evite qualquer person
 
 ### Recomendações
 
-Para validar e garantir que você não esteja usando a tabela acima, execute uma query na tabela de rastreamento de URL via [Editor de consultas genéricas do Campaign](../../platform/using/steps-to-create-a-query.md) ou crie um fluxo de trabalho com critérios de filtro no [atividade de query](../../workflow/using/query.md).
+Para validar e garantir que você não está usando acima, execute uma consulta na tabela de URL de rastreamento por meio do [Editor de consultas genéricas do Campaign](../../platform/using/steps-to-create-a-query.md) ou crie um fluxo de trabalho com critérios de filtragem na [atividade de consulta](../../workflow/using/query.md).
 
 Exemplo:
 
-1. Criar um workflow e adicionar um **Query** atividade. [Saiba mais](../../workflow/using/query.md).
+1. Crie um fluxo de trabalho e adicione uma atividade **Query**. [Saiba mais](../../workflow/using/query.md).
 
-1. Abra o **Query** e crie um filtro no `nmsTrackingUrl` quadro seguinte:
+1. Abra a atividade **Query** e crie um filtro na tabela `nmsTrackingUrl` da seguinte maneira:
 
    `source URL starts with http://<% or source URL starts with https://<%`
 
@@ -48,13 +48,13 @@ Para melhorar a segurança, foi introduzido um mecanismo de assinatura para rast
 
 >[!NOTE]
 >
->Quando um URL assinado mal formado é clicado, esse erro é retornado: `Requested URL '…' was not found.`
+>Quando um URL assinado mal formado é clicado, este erro é retornado: `Requested URL '…' was not found.`
 
-Além disso, você pode usar um aprimoramento para desativar URLs gerados em builds anteriores. Esse recurso está desativado por padrão. Você pode entrar em contato com [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para ativar esse recurso.
+Além disso, você pode usar um aprimoramento para desativar URLs gerados em builds anteriores. Esse recurso está desativado por padrão. Você pode contatar o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para habilitar este recurso.
 
 Se estiver executando na build 19.1.4, você poderá enfrentar problemas com deliveries de notificação por push usando links de rastreamento ou deliveries usando tags âncora. Em caso afirmativo, recomendamos que você desative a assinatura do URL.
 
-Cloud Service Como cliente do Campaign hospedado, gerenciado ou híbrido, você deve entrar em contato com [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para desativar a assinatura do URL.
+Cloud Service Como cliente hospedado, gerenciado ou híbrido do Campaign, você deve entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para desativar a assinatura da URL.
 
 Se você estiver executando o Campaign em uma arquitetura híbrida, antes de habilitar a assinatura do URL, verifique se a instância hospedada do mid-sourcing foi atualizada da seguinte maneira:
 
@@ -68,15 +68,15 @@ Caso contrário, alguns destes problemas poderão ocorrer:
 
 Para desativar URLs gerados em builds anteriores, siga estas etapas em todos os servidores do Campaign ao mesmo tempo:
 
-1. No arquivo de configuração do servidor (`serverConf.xml`), altere o **blockRedirectForUnsignedTrackingLink** opção para **true**.
-1. Reinicie o `nlserver` serviço.
-1. No `tracking` servidor, reinicie o `web` (apache2 no Debian, httpd no CentOS/RedHat, IIS no Windows).
+1. No arquivo de configuração do servidor (`serverConf.xml`), altere a opção **blockRedirectForUnsignedTrackingLink** para **true**.
+1. Reinicie o serviço `nlserver`.
+1. No servidor `tracking`, reinicie o servidor `web` (apache2 em Debian, httpd em CentOS/RedHat, IIS no Windows).
 
 Para habilitar a assinatura do URL, siga estas etapas em todos os servidores do Campaign ao mesmo tempo:
 
-1. No arquivo de configuração do servidor (`serverConf.xml`), alteração **signEmailLinks** opção, para **true**.
+1. No arquivo de configuração do servidor (`serverConf.xml`), altere a opção **signEmailLinks** para **true**.
 1. Reinicie o serviço **nlserver**.
-1. No `tracking` servidor, reinicie o `web` (apache2 no Debian, httpd no CentOS/RedHat, IIS no Windows).
+1. No servidor `tracking`, reinicie o servidor `web` (apache2 em Debian, httpd em CentOS/RedHat, IIS no Windows).
 
 ## Restrição de dados
 
@@ -86,13 +86,13 @@ Esta restrição permite que você remova os campos de senhas, mas deixe a conta
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Navegue até o **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** pasta do explorador do Campaign.
+1. Navegue até a pasta **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** do explorador do Campaign.
 
 1. Criar um esquema de dados, como um **[!UICONTROL Extension of a schema]**.
 
    ![](assets/privacy-data-restriction.png)
 
-1. Escolher **[!UICONTROL External Account]** (extAccount).
+1. Escolha **[!UICONTROL External Account]** (extAccount).
 
 1. Na última tela do assistente, edite seu novo &quot;srcSchema&quot; para restringir o acesso a todos os campos de senha:
 
@@ -149,7 +149,7 @@ Para fazer isso, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Você pode substituir `$(loginId) = 0 or $(login) = 'admin'` com `hasNamedRight('admin')` para permitir que todos os usuários com direitos administrativos vejam essas senhas.
+   >Você pode substituir `$(loginId) = 0 or $(login) = 'admin'` por `hasNamedRight('admin')` para permitir que todos os usuários com direitos de administrador vejam essas senhas.
 
 ## Páginas do Protect com PI
 
@@ -162,7 +162,7 @@ O objetivo desse procedimento é impedir que essas páginas sejam indexadas, evi
 
 Para proteger suas páginas, siga estas etapas:
 
-1. Adicionar um `robots.txt` arquivo na raiz do servidor Web (Apache ou IIS). Este é o conteúdo do arquivo:
+1. Adicione um arquivo `robots.txt` na raiz do seu servidor Web (Apache ou IIS). Este é o conteúdo do arquivo:
 
    ```sql
    # Make changes for all web spiders
@@ -174,13 +174,13 @@ Para proteger suas páginas, siga estas etapas:
 
    Para o Apache, você pode colocar o arquivo em **/var/www/robots.txt** (Debian).
 
-1. Às vezes, adicionar um **robôs.txt** o arquivo não é suficiente em termos de segurança. Por exemplo, se outro site contiver um link para sua página, ele poderá aparecer em um resultado de pesquisa.
+1. Às vezes, adicionar um arquivo **robots.txt** não é suficiente em termos de segurança. Por exemplo, se outro site contiver um link para sua página, ele poderá aparecer em um resultado de pesquisa.
 
-   Além do **robôs.txt** arquivo, aconselha-se adicionar um **X-Robots-Tag** cabeçalho. Você pode fazer isso no Apache ou IIS e no **serverConf.xml** arquivo de configuração.
+   Além do arquivo **robots.txt**, aconselha-se adicionar um cabeçalho **X-Robots-Tag**. Você pode fazer isso no Apache ou IIS e no arquivo de configuração **serverConf.xml**.
 
    Para obter mais informações, consulte [este artigo](https://developers.google.com/search/reference/robots_meta_tag).
 
 
 ## Solicitações de Privacidade
 
-Consulte [esta página](../../platform/using/privacy-management.md) para obter informações gerais sobre o que é a Gestão de privacidade e quais são as etapas de implementação no Adobe Campaign. Você também encontrará as práticas recomendadas e uma visão geral do processo de usuários e personas.
+Consulte [esta página](../../platform/using/privacy-management.md) para obter informações gerais sobre o que é a Gestão de Privacidade e quais são as etapas de implementação no Adobe Campaign. Você também encontrará as práticas recomendadas e uma visão geral do processo de usuários e personas.

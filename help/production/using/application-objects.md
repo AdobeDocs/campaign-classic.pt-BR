@@ -22,11 +22,11 @@ Os objetos incorporados devem ser monitorados e é importante evitar que eles cr
 
 ## Sequência de IDs {#sequence-of-ids}
 
-O Adobe Campaign usa uma sequência de ID que deve ser consumida de acordo: **xtkNewId**. Se a sequência for consumida muito rapidamente (ou seja, a partir de 100.000 por dia), você deverá verificar se ela é consistente com as necessidades da empresa, como o envio de milhões de emails por dia. É possível definir uma sequência dedicada para tabelas específicas. Você pode configurar um workflow para monitorar o uso da ID.
+O Adobe Campaign usa uma sequência de ID que deve ser consumida adequadamente: **xtkNewId**. Se a sequência for consumida muito rapidamente (ou seja, a partir de 100.000 por dia), você deverá verificar se ela é consistente com as necessidades da empresa, como o envio de milhões de emails por dia. É possível definir uma sequência dedicada para tabelas específicas. Você pode configurar um workflow para monitorar o uso da ID.
 
 Quando a sequência atinge mais de 2 bilhões (2.147.483.648 é o número exato), volta a zero. Isso deve ser evitado e cria problemas, e é por isso que essa sequência deve ser monitorada.
 
-Para evitar isso com tabelas grandes, considere usar uma sequência específica. Isso pode ser feito com o **pkSequence** atributo no esquema.
+Para evitar isso com tabelas grandes, considere usar uma sequência específica. Isso pode ser feito com o atributo **pkSequence** no esquema.
 
 Workflows de alta frequência que criam muitos logs consumirão muitas IDs. Portanto, é altamente recomendável evitar muitos registros e altas frequências em workflows.
 
@@ -48,13 +48,13 @@ Os deliveries com mais de dois anos devem ser removidos da instância.
 
 O número de arquivos no disco do servidor de aplicativos não deve aumentar indefinidamente.
 
-Os workflows de importação criam arquivos e, portanto, causam expansão de disco. Isso pode ser evitado usando o padrão [File collector](../../workflow/using/file-collector.md) atividade. O coletor de arquivos move os arquivos para uma pasta temporária e os limpa automaticamente.
+Os workflows de importação criam arquivos e, portanto, causam expansão de disco. Isso pode ser evitado usando a atividade padrão [File collector](../../workflow/using/file-collector.md). O coletor de arquivos move os arquivos para uma pasta temporária e os limpa automaticamente.
 
 Se um workflow importar arquivos e não usar os recursos padrão, ele precisará ser removido para manter o espaço em disco mínimo.
 
 ## Registros e dados transacionais {#transactional-data-and-logs}
 
-A cada [fluxo de trabalho](../../workflow/using/data-life-cycle.md#work-table) que importa dados para o Adobe Campaign faz com que o tamanho do banco de dados aumente.
+Todo [fluxo de trabalho](../../workflow/using/data-life-cycle.md#work-table) que importa dados para o Adobe Campaign faz com que o tamanho do banco de dados aumente.
 
 Verifique se os workflows de limpeza ou limpeza estão em execução e efetivamente limpando registros. Todos os dados e logs transacionais devem ser removidos. A tarefa de limpeza limpa somente as tabelas padrão: rastreamento e logs amplos. Tabelas específicas devem ser removidas por fluxos de trabalho específicos. Consulte [esta seção](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 

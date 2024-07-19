@@ -26,7 +26,7 @@ O Adobe Campaign fornece dois conjuntos de opções de arquitetura predefinidas 
 
   Essa opção oferece suporte a uma única instância de execução adicional dissociada da instância de aplicativo principal do Adobe Campaign. As instâncias de execução dedicadas podem ser hospedadas remotamente ou por terceiros. Quando implementados, a execução do email, o rastreamento, as mirror pages e as mensagens de rejeição são tratadas independentemente das funções da aplicação central.
 
-* **Cluster de energia**
+* **Cluster de Energia**
 
   Essa opção oferece suporte a 2 a N instâncias de execução clusterizadas dissociadas da instância de aplicativo principal do Adobe Campaign em relação a um determinado aplicativo. Os clusters podem ser hospedados remotamente, em implantações distribuídas e por terceiros. Além dos benefícios do isolamento de processos, a opção Adobe Campaign Power Cluster permite redundância e estratégias de scale-out usando hardware comercial para uma evolução simplificada de SLA ou desempenho.
 
@@ -38,7 +38,7 @@ As opções Power Boster e Power Cluster podem ser usadas pelos seguintes aplica
 
 * Campaign
 * Entrega
-* Central de mensagens
+* Centro de mensagens
 
 ## Matriz de recomendações arquitetônicas {#matrix-of-architectural-recommendations}
 
@@ -48,11 +48,11 @@ As opções Power Boster e Power Cluster podem ser usadas pelos seguintes aplica
    <td> </td> 
    <td> <strong>Arquitetura padrão</strong><br /> </td> 
    <td> <strong>Power Booster</strong><br /> </td> 
-   <td> <strong>Cluster de energia</strong><br /> </td> 
+   <td> <strong>Cluster de Energia</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Campanhas de email e interações de saída<br /> </td> 
-   <td> Até aproximadamente 30 milhões de e-mails por mês<br /> </td> 
+   <td> Até aproximadamente 30 milhões de emails por mês<br /> </td> 
    <td> 30 a 100 milhões de emails por mês<br /> </td> 
    <td> Mais de 100 milhões de emails por mês<br /> </td> 
   </tr> 
@@ -64,27 +64,27 @@ As opções Power Boster e Power Cluster podem ser usadas pelos seguintes aplica
   </tr> 
   <tr> 
    <td> Disponibilidade<br /> </td> 
-   <td> O do banco de dados principal<br /> </td> 
-   <td> 24 horas por dia, 7 dias por semana, exceto janelas de manutenção e tempos de inatividade da instância de execução<br /> </td> 
+   <td> O do banco de dados primário<br /> </td> 
+   <td> 24 horas por dia, 7 dias por semana, exceto janelas de manutenção e tempos de inatividade para a instância de execução<br /> </td> 
    <td> Serviço 24/7/365 possível<br /> </td> 
   </tr> 
   <tr> 
    <td> Segurança<br /> </td> 
-   <td> O armazém de dados pode ser acessado na internet pública<br /> </td> 
+   <td> O data mart é potencialmente acessível a partir da internet pública<br /> </td> 
    <td> O armazém de dados está isolado de componentes frontais voltados para a Internet<br /> </td> 
    <td> O armazém de dados está isolado de componentes frontais voltados para a Internet<br /> </td> 
   </tr> 
   <tr> 
    <td> Modelo de implantação<br /> </td> 
    <td> Tudo em um site (pode ser no local ou na nuvem)<br /> </td> 
-   <td> Marketing no local com execução na nuvem possível<br /> </td> 
-   <td> Marketing local com execução na nuvem; execução em diferentes regiões possíveis<br /> </td> 
+   <td> É possível fazer marketing local com execução na nuvem<br /> </td> 
+   <td> Marketing local com execução na nuvem; execução em diferentes regiões possível<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Recomendações {#recommendations}
 
-* Uma instância de execução deve ser dedicada a um serviço. Não é possível instalar um pacote para um serviço que você não assinou. Por exemplo, se você assinar o **Power Booster** opção para a variável **Centro de mensagens** serviço, você só pode instalar o **[!UICONTROL Execution of transactional messages]** na instância de execução dedicada. Verifique o contrato de licença.
+* Uma instância de execução deve ser dedicada a um serviço. Não é possível instalar um pacote para um serviço que você não assinou. Por exemplo, se você assinar a opção **Power Booster** para o serviço **Centro de Mensagens**, poderá instalar o pacote **[!UICONTROL Execution of transactional messages]** somente na instância de execução dedicada. Verifique o contrato de licença.
 * Como as instâncias dedicadas (ou clusters) são instâncias do Adobe Campaign, as recomendações são as mesmas de uma instância principal. Para obter mais informações, consulte [este documento](../../production/using/foreword.md).
 * Para configurar corretamente a instância do ponto de vista de um banco de dados/componentes de hardware, entre em contato com os Adobe Campaign Professional Services.

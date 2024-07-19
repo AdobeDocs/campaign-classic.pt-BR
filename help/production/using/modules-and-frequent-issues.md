@@ -11,7 +11,7 @@ exl-id: dbd50178-0a16-46ed-bfad-47beb3c2a420
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -33,7 +33,7 @@ Esta é uma lista de módulos afetados por problemas frequentes:
   <tr> 
    <td> exportar </td> 
    <td> Execução de um processo de exportação<br /> </td> 
-   <td> O operador que agendou essa exportação precisa reiniciá-la. Delta ou relançamento completo.<br /> </td> 
+   <td> O operador que agendou essa exportação precisa reiniciá-la. Delta ou reinicialização completa.<br /> </td> 
   </tr> 
   <tr> 
    <td> importar </td> 
@@ -42,18 +42,18 @@ Esta é uma lista de módulos afetados por problemas frequentes:
   </tr> 
   <tr> 
    <td> inMail </td> 
-   <td> Leitura da caixa de emails de devolução<br /> </td> 
-   <td> Verifique esse módulo se os emails de devolução não forem mais encaminhados.<br /> </td> 
+   <td> Lendo a caixa de email de devolução<br /> </td> 
+   <td> Verifique este módulo se os emails devolvidos não forem mais encaminhados.<br /> </td> 
   </tr> 
   <tr> 
    <td> mta </td> 
-   <td> Entregar emails<br /> </td> 
-   <td> Verifique esse módulo se os emails não estiverem mais sendo enviados.<br /> </td> 
+   <td> Entregas de emails<br /> </td> 
+   <td> Verifique este módulo se os emails não estiverem mais sendo enviados.<br /> </td> 
   </tr> 
   <tr> 
    <td> stat </td> 
-   <td> Mantém estatísticas de conexão do MTA<br /> </td> 
-   <td> Verifique esse módulo se os emails não estiverem mais sendo enviados.<br /> </td> 
+   <td> Mantém as estatísticas de conexão do MTA<br /> </td> 
+   <td> Verifique este módulo se os emails não estiverem mais sendo enviados.<br /> </td> 
   </tr> 
   <tr> 
    <td> syslogd </td> 
@@ -62,8 +62,8 @@ Esta é uma lista de módulos afetados por problemas frequentes:
   </tr> 
   <tr> 
    <td> rastreamento </td> 
-   <td> Consolidação e recuperação de logs de rastreamento<br /> </td> 
-   <td> Verifique esse módulo se os logs de rastreamento não estiverem mais encaminhados.<br /> </td> 
+   <td> Consolidando e recuperando logs de rastreamento<br /> </td> 
+   <td> Verifique este módulo se os logs de rastreamento não estiverem mais encaminhados.<br /> </td> 
   </tr> 
   <tr> 
    <td> trackinglogd </td> 
@@ -73,17 +73,17 @@ Esta é uma lista de módulos afetados por problemas frequentes:
   <tr> 
    <td> watchdog </td> 
    <td> Instância de inicialização e monitoramento<br /> </td> 
-   <td> Verifique esse módulo se nenhum processo for iniciado.<br /> </td> 
+   <td> Verifique este módulo se nenhum processo for iniciado.<br /> </td> 
   </tr> 
   <tr> 
    <td> web </td> 
    <td> Servidor de aplicativos (HTTP e SOAP)<br /> </td> 
-   <td> Verifique esse módulo se o console e as conexões da web não funcionarem e acione um <strong>xtk:session</strong> erro de tipo<br /> </td> 
+   <td> Verifique este módulo se as conexões do console e da web não funcionarem e acione um erro de tipo <strong>xtk:session</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> wfserver </td> 
    <td> Controla a execução da instância do fluxo de trabalho.<br /> </td> 
-   <td> Se você encontrar algum problema, reinicie este módulo. Se necessário, aplique o procedimento para aumentar a precisão dos registros detalhados na <a href="../../production/using/log-precision.md" target="_blank">Log de precisão</a> seção.<br /> </td> 
+   <td> Se você encontrar algum problema, reinicie este módulo. Se necessário, aplique o procedimento para aumentar a precisão dos logs detalhados na seção <a href="../../production/using/log-precision.md" target="_blank">Precisão do log</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

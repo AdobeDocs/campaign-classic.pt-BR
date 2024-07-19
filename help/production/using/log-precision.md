@@ -11,7 +11,7 @@ exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -29,7 +29,7 @@ Envolve a reinicialização dos processos com um nível mais alto de registros.
 
 O Adobe Campaign pode operar com dois níveis de log:
 
-1. A variável **Detalhado** é o primeiro nível após o nível padrão. O comando a seguir o ativa:
+1. O modo **Verbose** é o primeiro nível após o nível padrão. O comando a seguir o ativa:
 
    ```
    nlserver restart <MODULE_NAME> -verbose 
@@ -41,7 +41,7 @@ O Adobe Campaign pode operar com dois níveis de log:
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
-1. A variável **TraceFilter** , que permite salvar o maior número de logs. Ela é ativada pelo seguinte comando:
+1. O modo **TraceFilter**, que permite salvar o maior número de logs. Ela é ativada pelo seguinte comando:
 
    ```
    nlserver stop <MODULE_NAME>; nlserver <MODULE_NAME> -verbose -tracefilter:*
@@ -49,9 +49,9 @@ O Adobe Campaign pode operar com dois níveis de log:
 
    >[!NOTE]
    >
-   >Se você usar **tracefilter:&#42;**, todos os tipos de log são ativados: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
+   >Se você usar **tracefilter:&#42;**, todos os tipos de log serão ativados: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
    Os tipos de log mais úteis são: **wdbc** (exibe todas as consultas SQL), **soap** (exibe todas as chamadas SOAP), **ldap** (exibe todas as consultas LDAP após a autenticação), **xtkquery** (exibe a lista de todas as querydef).\
-   Você pode usá-los individualmente (**tracefilter:soap,wdbc** por exemplo). Você também pode ativar todas elas e optar por excluir algumas outras: **-tracefilter:&#42;,!soap**
+   Você pode usá-los individualmente (**tracefilter:soap,wdbc**, por exemplo). Você também pode ativar todos eles e optar por excluir alguns outros: **-tracefilter:&#42;,!soap**
 
    Verifique se o erro realmente ocorreu e reinicie o processo da maneira normal:
 
@@ -71,7 +71,7 @@ Antes de enviar este comando, verifique se nenhum trabalho em andamento será af
 nlserver pdump -who
 ```
 
-Em seguida, desligue e reinicie o módulo em **TraceFilter** modo:
+Em seguida, desligue e reinicie o módulo no modo **TraceFilter**:
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
@@ -85,7 +85,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 
 >[!NOTE]
 >
-A variável **Arquivo de rastreamento** permite salvar os logs. Nos exemplos acima, os logs são salvos na variável **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log** arquivos.
+O modo **Tracefile** permite salvar os logs. Nos exemplos acima, os logs são salvos nos arquivos **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log**.
 
 >[!IMPORTANT]
 >

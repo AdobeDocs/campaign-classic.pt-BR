@@ -30,7 +30,7 @@ Cada modo tem características específicas. O modo de rastreamento web &quot;pe
 >
 >A qualquer momento, o modo padrão pode ser alterado no assistente de implantação da instância.
 
-Observe que se estiver usando o método **web permanente** ou **anônimo** modo de rastreamento, você deve adicionar um índice à coluna &quot;sourceID&quot; (uuid230) nas tabelas de rastreamento (trackingLogXXX):
+Observe que, se estiver usando o modo de rastreamento da **web permanente** ou do **anonymous**, você deverá adicionar um índice à coluna &quot;sourceID&quot; (uuid230) nas tabelas de rastreamento (trackingLogXXX):
 
 1. Identifique as tabelas de rastreamento relacionadas ao rastreamento permanente.
 1. Estenda os schemas que correspondem a essas tabelas adicionando as seguintes linhas:
@@ -41,13 +41,13 @@ Observe que se estiver usando o método **web permanente** ou **anônimo** modo 
 </dbindex>
 ```
 
-**Permanente** e **Anônimo** Os modos de rastreamento web incluem duas opções: **Entrega forçada** e **Última entrega**.
+Os modos de rastreamento Web **Permanente** e **Anônimo** incluem duas opções: **Entrega forçada** e **Última entrega**.
 
-A variável **Entrega forçada** option permite especificar o identificador do delivery (@jobid) durante o rastreamento.
+A opção **Entrega forçada** permite especificar o identificador da entrega (@jobid) durante o rastreamento.
 
-A variável **Última entrega** permite vincular o log de rastreamento atual ao último delivery rastreado.
+A opção **Última entrega** permite vincular o log de rastreamento atual à última entrega rastreada.
 
-**Características do rastreamento web da sessão:**
+**Características do rastreamento Web de sessão:**
 
 Este modo cria um log de rastreamento para pessoas com um cookie de sessão. São pessoas que clicaram em um URL em um email enviado pelo Adobe Campaign, permitindo rastrear as seguintes informações:
 
@@ -62,7 +62,7 @@ Com esse modo de rastreamento web, se parte das informações estiver ausente, n
 
 Esse modo é econômico em termos de volume (número limitado de registros na tabela trackingLog) e cálculo (sem reconciliação).
 
-**Características do modo de rastreamento web permanente:**
+**Características do modo de rastreamento Web permanente:**
 
 Esse modo de rastreamento web permite criar um log de rastreamento com base na presença do cookie uuid230 permanente. Se um visitante fechar a sessão, o Adobe Campaign usará o cookie permanente para recuperar as informações sobre ele nos logs de rastreamento anteriores. O Adobe Campaign insere novamente um log de rastreamento se o uuid230 da sessão atual tiver o mesmo valor que um uuid230 já armazenado na tabela de rastreamento.
 
@@ -72,7 +72,7 @@ Por padrão, as pesquisas em logs de rastreamento anteriores são executadas na 
 
 Esse modo custa caro em termos de cálculo durante a reconciliação do log.
 
-**Características do modo de rastreamento web anônimo:**
+**Características do modo de rastreamento Web anônimo:**
 
 Esse modo de rastreamento web permite recuperar um log de rastreamento vinculado à navegação anônima no Adobe Campaign. Um log de rastreamento é criado automaticamente para cada clique em um URL rastreado. Este log tem apenas o valor de uuid230. Durante uma campanha de marketing, um log de rastreamento é criado automaticamente com todas as informações de identificação (consulte Rastreamento de sessão). O Adobe Campaign pesquisará automaticamente nos logs anteriores por um valor &quot;uuid230&quot; igual ao valor do log de rastreamento para esta campanha de marketing. Se valores idênticos forem encontrados, todos os logs de rastreamento anteriores serão inseridos com todas as informações do log de rastreamento da campanha de marketing.
 
@@ -80,12 +80,12 @@ Esse modo é o mais caro em termos de cálculo e volume.
 
 >[!NOTE]
 >
->Se a variável **[!UICONTROL Leads]** for instalado, você precisará fazer o mesmo para a tabela de atividades (**crm:incomingLead**)
+>Se o pacote **[!UICONTROL Leads]** estiver instalado, você precisará fazer o mesmo para a tabela de atividades (**crm:incomingLead**)
 
 O schema a seguir soma as funcionalidades dos três modos de rastreamento Web:
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_schema_mode.png)
 
-**Exemplo de rastreamento web permanente com base no último delivery:**
+**Exemplo de rastreamento web permanente com base na última entrega:**
 
 Florence recebe um delivery, abre o email, clica no link, navega no site de varejo, mas não faz compras. No dia seguinte, Florence retorna ao site de varejo, navega e faz uma compra. Como o rastreamento web permanente (último delivery) está ativado, todos os logs de sua segunda visita serão vinculados ao delivery que foi enviado a ela no dia anterior.

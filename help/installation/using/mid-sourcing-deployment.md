@@ -29,7 +29,7 @@ A comunicação geral entre servidores e processos é realizada de acordo com o 
 ![](assets/s_ncs_install_midsourcing.png)
 
 * Os módulos de gerenciamento de execução e rejeição estão desativados na instância.
-* O aplicativo é configurado para executar mensagens em um servidor remoto de &quot;origem intermediária&quot; orientado por chamadas SOAP (por HTTP ou HTTPS).
+* O aplicativo é configurado para executar mensagens em um servidor remoto de &quot;origem intermediária&quot; que é orientado por chamadas SOAP (por HTTP ou HTTPS).
 
 ## Recursos {#features}
 

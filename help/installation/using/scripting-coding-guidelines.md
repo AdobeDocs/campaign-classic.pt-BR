@@ -20,7 +20,7 @@ ht-degree: 30%
 
 ## Script
 
-Para obter mais detalhes, consulte [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR).
+Para obter mais detalhes, consulte a [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR).
 
 Se você criar scripts usando fluxo de trabalho, aplicações web, jssp, siga estas práticas recomendadas:
 
@@ -55,9 +55,9 @@ Para evitar injeções de SQL, as funções SQL devem ser adicionadas ao arquivo
 
 >[!IMPORTANT]
 >
->Se você estiver usando uma build com mais de 8140, a variável **XtkPassUnknownSQLFunctionsToRDBMS** pode ser definida como &#39;1&#39;. Se quiser proteger seu banco de dados, exclua esta opção (ou defina-a como &#39;0&#39;).
+>Se você estiver usando uma compilação anterior a 8140, a opção **XtkPassUnknownSQLFunctionsToRDBMS** poderá ser definida como &#39;1&#39;. Se quiser proteger seu banco de dados, exclua esta opção (ou defina-a como &#39;0&#39;).
 
-Se você estiver usando a entrada do usuário para construir filtros em queries ou instruções SQL, sempre será necessário escapá-los (consulte [Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) - Proteção de dados: funções de escape). Essas funções são:
+Se você estiver usando a entrada do usuário para criar filtros em consultas ou instruções SQL, sempre será necessário escapá-los (consulte a [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) - Proteção de dados: funções de escape). Essas funções são:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -105,19 +105,19 @@ Além do modelo de segurança baseado em pastas, você pode usar direitos nomead
 
 Se você precisar proteger dados confidenciais (parte de um esquema), dependendo do nível de acesso do operador, não os oculte na definição do formulário (condições enabledIf/visibleIf).
 
-A entidade completa é carregada pela tela, mas você também pode exibi-las na definição da coluna. Para fazer isso, você precisa criar uma tabela de sobreposição. Consultar [esta página](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
+A entidade completa é carregada pela tela, mas você também pode exibi-las na definição da coluna. Para fazer isso, você precisa criar uma tabela de sobreposição. Consulte [esta página](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
 
 ## Adicionar captchas em aplicações web
 
 É uma boa prática adicionar um captcha em páginas de páginas/assinaturas públicas. Infelizmente, adicionar um captcha nas páginas do DCE (Digital Content Editor) não é fácil. Mostraremos como adicionar um captcha v5 ou um reCAPTCHA do Google.
 
-A maneira geral de adicionar um captcha no DCE é criar um bloco de personalização para incluí-lo facilmente no conteúdo da página. Será necessário adicionar um **Script** atividade e um **Teste**.
+A maneira geral de adicionar um captcha no DCE é criar um bloco de personalização para incluí-lo facilmente no conteúdo da página. Você terá que adicionar uma atividade **Script** e um **Test**.
 
 ### Bloco de personalização
 
-1. Ir para **[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]** e criar um novo.
+1. Vá para **[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]** e crie um novo.
 
-1. Use o **[!UICONTROL Web application]** tipo de conteúdo e verificação **[!UICONTROL Visible in the customization menus]**.
+1. Use o tipo de conteúdo **[!UICONTROL Web application]** e verifique **[!UICONTROL Visible in the customization menus]**.
 
    Para obter mais informações, consulte [esta página](../../delivery/using/personalization-blocks.md).
 
@@ -152,17 +152,17 @@ A maneira geral de adicionar um captcha no DCE é criar um bloco de personaliza�
 
 ### Atualização da sua aplicação web
 
-1. Acesse as propriedades da sua aplicação web para adicionar uma variável booleana chamada **captchaValid**.
+1. Acesse as propriedades do seu aplicativo web para adicionar uma variável booleana denominada **captchaValid**.
 
    ![](assets/scripting-captcha.png)
 
-1. Entre a última página e a variável **[!UICONTROL Storage]** atividade, adicionar um **[!UICONTROL Script]** e uma **[!UICONTROL Test]**.
+1. Entre a última página e a atividade **[!UICONTROL Storage]**, adicione um **[!UICONTROL Script]** e um **[!UICONTROL Test]**.
 
-   Conectar a ramificação **[!UICONTROL True]** para o **[!UICONTROL Storage]** e o outro na página que terá o captcha.
+   Conecte a ramificação **[!UICONTROL True]** a **[!UICONTROL Storage]** e a outra à página que terá o captcha.
 
    ![](assets/scripting-captcha2.png)
 
-1. Edite a condição da ramificação True com `"[vars/captchaValid]"` é igual a True.
+1. Edite a condição da ramificação True com `"[vars/captchaValid]"` igual a True.
 
    ![](assets/scripting-captcha3.png)
 

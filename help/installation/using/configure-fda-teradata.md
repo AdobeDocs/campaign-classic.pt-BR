@@ -18,11 +18,11 @@ ht-degree: 67%
 
 
 
-Usar a campanha [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Teradata.
+Use a opção Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao Teradata.
 
-1. Instalar e configurar [Drivers de teradata](#teradata-config)
+1. Instalar e configurar [drivers de Teradata](#teradata-config)
 1. Configurar o Teradata [conta externa](#teradata-external) no Campaign
-1. Configurar [configuração adicional](#teradata-additional-configurations) para Teradata e servidor do Campaign
+1. Definir [configuração adicional](#teradata-additional-configurations) para o servidor do Teradata e do Campaign
 
 ## Configuração de teradata {#teradata-config}
 
@@ -76,7 +76,7 @@ Usar a campanha [Federated Data Access](../../installation/using/about-fda.md) (
 
 A conta externa Teradata permite conectar a instância do Campaign ao banco de dados externo do Teradata.
 
-1. Do Campaign **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. Na Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Clique em **[!UICONTROL New]** e selecione **[!UICONTROL External database]** como **[!UICONTROL Type]**.
 
@@ -84,19 +84,19 @@ A conta externa Teradata permite conectar a instância do Campaign ao banco de d
 
 1. Para configurar a conta externa do **[!UICONTROL Teradata]**, você deve especificar:
 
-   * **[!UICONTROL Type]**: escolha a **[!UICONTROL Teradata]** tipo.
+   * **[!UICONTROL Type]**: Escolha o tipo **[!UICONTROL Teradata]**.
 
-   * **[!UICONTROL Server]**: URL ou nome do servidor do Teradata
+   * **[!UICONTROL Server]**: URL ou nome do seu servidor do Teradata
 
-   * **[!UICONTROL Account]**: nome da conta usada para acessar o banco de dados do Teradata
+   * **[!UICONTROL Account]**: Nome da conta usada para acessar o banco de dados do Teradata
 
-   * **[!UICONTROL Password]**: Senha usada para se conectar ao banco de dados do Teradata
+   * **[!UICONTROL Password]**: Senha usada para conectar ao banco de dados do Teradata
 
    * **[!UICONTROL Database]**: Nome do banco de dados (opcional)
 
    * **[!UICONTROL Options]**: Opções a serem passadas pelo Teradata. Use o seguinte formato: &#39;parameter=value&#39;. Use ponto e vírgula como separador entre valores.
 
-   * **[!UICONTROL Timezone]**: fuso horário definido em Teradata. [Saiba mais](#timezone)
+   * **[!UICONTROL Timezone]**: Fuso horário definido no Teradata. [Saiba mais](#timezone)
 
 O conector é compatível com as seguintes opções:
 
@@ -115,7 +115,7 @@ O conector é compatível com as seguintes opções:
 
 O driver de Teradata fornece sua própria biblioteca ODBC, mas essa biblioteca pode não ser compatível com outras contas externas ODBC.
 
-Se você quiser configurar outra conta externa que também use ODBC, por exemplo, Snowflake, será necessário adicionar uma opção ODBCLib definida para o caminho da biblioteca ODBC padrão (`/usr/lib/x86_64-linux-gnu/libodbc.so` no Debian e `/usr/lib64/libodbc.so` RHEL/CentOS).
+Se você quiser configurar outra conta externa que também use ODBC, por exemplo, Snowflake, será necessário adicionar uma opção ODBCLib definida para o caminho da biblioteca ODBC padrão (`/usr/lib/x86_64-linux-gnu/libodbc.so` no Debian e `/usr/lib64/libodbc.so` no RHEL/CentOS).
 
 ![](assets/ext_account_24.png)
 
@@ -133,9 +133,9 @@ Quando essa opção é configurada, cada vez que um usuário do Campaign executa
 
 Para configurar faixas de Query, siga as etapas abaixo:
 
-1. Use o  **[!UICONTROL Default]** para informar uma faixa de query padrão que será usada se um usuário não tiver nenhuma faixa de query associada. Se este campo estiver vazio, os usuários sem faixa de query não poderão utilizar o Teradata.
+1. Use o **[!UICONTROL Default]** para inserir uma faixa de query padrão que será usada se um usuário não tiver nenhuma faixa de query associada. Se este campo estiver vazio, os usuários sem faixa de query não poderão utilizar o Teradata.
 
-1. Use o **[!UICONTROL Users]** para especificar uma faixa de query para cada usuário. Você pode adicionar quantos pares chave/valor forem necessários, por exemplo, priority=1;workload=high. Se o usuário não tiver nenhuma faixa de query atribuída, o campo **[!UICONTROL Default]** será aplicado.
+1. Use o campo **[!UICONTROL Users]** para especificar uma faixa de consulta para cada usuário. Você pode adicionar quantos pares chave/valor forem necessários, por exemplo, priority=1;workload=high. Se o usuário não tiver nenhuma faixa de query atribuída, o campo **[!UICONTROL Default]** será aplicado.
 
 1. Marque a caixa **[!UICONTROL Active]** para ativar esse recurso
 
@@ -143,7 +143,7 @@ Para configurar faixas de Query, siga as etapas abaixo:
 
 Se o seguinte erro for exibido durante o teste da conexão **TIM-030008 Data &#39;2&#39;: missing character(s) (iRc=-53)** verifique se o driver ODBC está instalado corretamente e se LD_LIBRARY_PATH (Linux) / PATH (Windows) está definido para o servidor do Campaign.
 
-Erro **ODB-240000 ODBC: [Nome da fonte de dados Microsoft][ODBC Driver Manager] não encontrado e nenhum driver padrão especificado.** ocorre com o Windows se você usar um driver 16.X. A Adobe Campaign espera que o teradata seja nomeado como &#39;{teradata}&#39; em odbcinst.ini.
+Erro **ODB-240000 ODBC: [Nome da fonte de dados Microsoft][ODBC Driver Manager] não encontrado e nenhum driver padrão especificado.** ocorre com o Windows se você usar um driver 16.X. O Adobe Campaign espera que o teradata seja nomeado como &#39;{teradata}&#39; em odbcinst.ini.
 
 * A partir do Campaign 18.10, você poderá adicionar ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; nas opções da conta externa. O número da versão pode mudar; o nome exato pode ser encontrado executando o odbcad32.exe e acessando a guia Drivers.
 
@@ -227,7 +227,7 @@ Para instalar o sha2:
 
 ### Instalação UDF_UTF16TO8 {#UDF-UTF16TO8-installation}
 
-Se você quiser usar funções udf_utf16to8 na instância do Adobe Campaign, instale a função user mode no banco de dados do Teradata pelo menu **Kit de ferramentas unicode de teradata**.
+Se você quiser usar funções udf_utf16to8 na sua instância do Adobe Campaign, instale a função user mode no banco de dados do Teradata por meio do **kit de ferramentas Teradata unicode**.
 
 O sha1 do arquivo baixado é o seguinte: e58235f434f52c71316a577cb48e20b97d24f470.
 

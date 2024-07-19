@@ -17,7 +17,7 @@ ht-degree: 22%
 
 ## Painel de monitoramento de instância {#instance-monitoring-dashboard}
 
-A variável **[!UICONTROL Monitoring]** , que pode ser acessada na página inicial do Campaign Classic, é o principal ponto de entrada para ajudar você a monitorar sua instância.
+A guia **[!UICONTROL Monitoring]**, que pode ser acessada na página inicial do Campaign Classic, é o principal ponto de entrada para ajudar você a monitorar sua instância.
 
 Ele fornece um painel do que está ocorrendo na sua instância: seu status (versão de compilação, pacotes instalados etc.), indicadores do sistema, logs, workflows que estão em execução no momento, estado dos últimos deliveries enviados etc.
 
@@ -78,7 +78,7 @@ Ações específicas podem ser executadas ao encontrar problemas com a execuçã
 
 Além do mapa de calor, você pode criar um fluxo de trabalho que permitirá monitorar o status de um conjunto de fluxos de trabalho e enviar mensagens recorrentes aos supervisores. [Clique aqui](../../workflow/using/supervising-workflows.md) para obter mais informações.
 
-**Orientações gerais**
+**Diretrizes gerais**
 
 Seguir as diretrizes e práticas recomendadas ao usar workflows pode ajudar a melhorar o desempenho. Para obter mais informações, consulte esta seção.
 * [Práticas recomendadas para usar workflows](../../workflow/using/workflow-best-practices.md)
@@ -94,14 +94,14 @@ Os relatórios SMTP exibem estatísticas de delivery e erros SMTP por domínio. 
 
 **Práticas recomendadas**
 
-[Práticas recomendadas para envio e design de delivery](../../delivery/using/delivery-best-practices.md) O pode ajudá-lo a melhorar o desempenho.
+[As práticas recomendadas para envio e design de entrega](../../delivery/using/delivery-best-practices.md) podem ajudar você a melhorar o desempenho.
 
 **Solução de problemas de entrega**
 Ações específicas podem ser executadas ao encontrar problemas com os deliveries:
 * [Problemas na capacidade de entrega](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
 * [Problemas de desempenho da entrega](../../delivery/using/delivery-performances.md)
-* [Problemas com arquivos temporários](../../production/using/temporary-files.md) - *somente modelos de hospedagem no local*
+* [Problemas com arquivos temporários](../../production/using/temporary-files.md) - *somente modelos de hospedagem local*
 
 ### Monitoramento do banco de dados {#monitoring-database}
 
@@ -117,28 +117,28 @@ Ações específicas podem ser executadas ao encontrar problemas com desempenhos
 
 **Manutenção do banco de dados**
 
-*somente modelos de hospedagem no local e híbridos*
+*somente modelos de hospedagem local e híbrida*
 
 Recomendamos que você execute a manutenção do banco de dados regularmente para evitar o consumo excessivo de espaço em disco, afetando assim o acesso ao banco de dados. [Clique aqui](../../production/using/recommendations.md) para obter mais informações.
 
 **Backup e restauração**
 
-*somente modelos de hospedagem no local e híbridos*
+*somente modelos de hospedagem local e híbrida*
 
-O backup é essencial para evitar a perda de dados no caso de um problema (seja físico ou relacionado ao sistema) em uma máquina. [Clique aqui](../../production/using/backup.md) para obter mais informações. O procedimento de restauração é descrito em [nesta seção](../../production/using/restoration.md).
+O backup é essencial para evitar a perda de dados no caso de um problema (seja físico ou relacionado ao sistema) em uma máquina. [Clique aqui](../../production/using/backup.md) para obter mais informações. O procedimento de restauração está descrito em [esta seção](../../production/using/restoration.md).
 
 ## Princípios técnicos do Campaign Classic {#campaign-classic-technical-principles}
 
 Os recursos técnicos estão disponíveis na documentação do Campaign Classic. Recomendamos que você se familiarize com esses tópicos antes de executar qualquer operação técnica em sua instância.
 
-**Modelos e recursos de hospedagem**
+**Hospedando modelos e recursos**
 
 * [modelos de hospedagem de Campaign Classic](../../installation/using/hosting-models.md)
 * [Recursos do modelo de hospedagem](../../installation/using/capability-matrix.md)
 
 **Configuração do servidor**
 
-*Somente modelos de hospedagem no local e híbridos*
+*Somente modelos de hospedagem local e híbrida*
 
 * [Configurações do servidor](../../installation/using/configuring-campaign-server.md)
 * [Configuração do arquivo Serverconf.xml](../../installation/using/the-server-configuration-file.md)

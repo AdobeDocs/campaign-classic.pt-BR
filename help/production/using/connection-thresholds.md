@@ -23,15 +23,15 @@ Para servidores com muita carga, o limite de conexão pode ser excedido. Em qual
 
 Há três limites diferentes:
 
-* A variável **Limite de conexão com a Web**, configurado no servidor Web. Para modificá-lo, entre em contato com o administrador do sistema.
+* O **limite de conexão com a Web**, configurado em seu servidor Web. Para modificá-lo, entre em contato com o administrador do sistema.
 
-* A variável **limite de conexão de banco de dados**. Para modificá-lo, contate o administrador do banco de dados.
+* O **limite de conexão do banco de dados**. Para modificá-lo, contate o administrador do banco de dados.
 
-* A variável **Limite de conexão do Adobe Campaign**, disponível em dois lugares:
+* O **limite de conexão do Adobe Campaign**, disponível em dois locais:
 
-   * **Tomcat** lado: todas as consultas que chegam de fato ao cliente Adobe Campaign Tomcat.
+   * Lado do **Tomcat**: todas as consultas que chegam de fato ao cliente Adobe Campaign Tomcat.
 
-     Esse limite é configurado na variável **nl6/tomcat-X/conf/server.xml** arquivo. A variável **maxThreads** attribute permite aumentar o limite do número de queries processadas de cada vez. Pode ser alterado para 250, por exemplo.
+     Esse limite está configurado no arquivo **nl6/tomcat-X/conf/server.xml**. O atributo **maxThreads** permite aumentar o limite do número de consultas processadas de cada vez. Pode ser alterado para 250, por exemplo.
 
      ```
      <Connector protocol="HTTP/1.1" port="8080"
@@ -47,7 +47,7 @@ Há três limites diferentes:
 
    * **Banco de dados**: conjunto de todas as conexões abertas ao mesmo tempo no banco de dados por um processo.
 
-     Esse limite está configurado no arquivo **nl6/conf/serverConf.xml**. A variável **maxCnx** atributo localizado em **pool de fontes de dados** permite aumentar o limite de consultas processadas simultaneamente.
+     Esse limite está configurado no arquivo **nl6/conf/serverConf.xml**. O atributo **maxCnx** localizado no **pool de fontes de dados** permite aumentar o limite de consultas processadas simultaneamente.
 
      ```
          <!-- Data source

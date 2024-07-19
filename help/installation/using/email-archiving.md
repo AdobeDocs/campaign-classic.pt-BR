@@ -28,11 +28,11 @@ Para fazer isso, os arquivos .eml correspondentes aos emails enviados são trans
 
 * O recurso Cco de email é opcional. Verifique o contrato de licença.
 * Para **arquiteturas hospedadas e híbridas**, entre em contato com o executivo da sua conta para ativá-la. O endereço de email de CCO de sua escolha deve ser fornecido à equipe do Adobe que irá configurá-lo para você.
-* Para **instalações no local**, siga as diretrizes abaixo para ativá-la - consulte a [Ativação do email Cco (no local)](#activating-email-archiving--on-premise-) e [Configuração do endereço de email CCO (no local)](#configuring-the-bcc-email-address--on-premise-) seções.
+* Para **instalações no local**, siga as diretrizes abaixo para ativá-lo. Consulte as seções [Ativação do email Cco (no local)](#activating-email-archiving--on-premise-) e [Configuração do endereço de email CCO (no local)](#configuring-the-bcc-email-address--on-premise-).
 * Você só pode usar um endereço de email CCO.
-* Depois que o email Cco for configurado, verifique se o recurso está ativado no template do delivery ou no delivery por meio do **[!UICONTROL Email BCC]** opção. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
+* Depois que o email Cco for configurado, verifique se o recurso está habilitado no modelo de entrega ou no delivery por meio da opção **[!UICONTROL Email BCC]**. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
 * Somente os emails enviados com êxito são considerados. As rejeições não são.
-* O sistema de arquivamento de emails mudou com o Adobe Campaign 17.2 (build 8795). Se você já estava usando o arquivamento de emails, é necessário atualizar manualmente para o novo sistema de email Cco. Para obter mais informações, consulte [Migrar para o novo Email Cco](#updated-email-archiving-system--bcc-) seção.
+* O sistema de arquivamento de emails mudou com o Adobe Campaign 17.2 (build 8795). Se você já estava usando o arquivamento de emails, é necessário atualizar manualmente para o novo sistema de email Cco. Para obter mais informações, consulte a seção [Migração para o novo Email Cco](#updated-email-archiving-system--bcc-).
 
 ## Ativar email Cco (no local) {#activating-email-archiving--on-premise-}
 
@@ -45,7 +45,7 @@ Para ativar o arquivamento de emails com CCO quando o Adobe Campaign for instala
 
 Para permitir a transferência de emails enviados para um endereço de email CCO, cópias brutas exatas de emails enviados devem ser salvas primeiro como arquivos .eml em uma pasta local.
 
-O caminho da pasta local deve ser especificado no campo **config-`<instance>`.xml** arquivo, da configuração. Por exemplo:
+O caminho da pasta local deve ser especificado no arquivo **config-`<instance>`.xml**, da configuração. Por exemplo:
 
 ```
 <mta dataLogPath="C:\emails">
@@ -53,7 +53,7 @@ O caminho da pasta local deve ser especificado no campo **config-`<instance>`.xm
 
 >[!NOTE]
 >
->A equipe que implementa o projeto é responsável por garantir que as configurações de segurança permitam acesso à pasta definida por meio do **dataLogPath** parâmetros.
+>A equipe que está implementando o projeto é responsável por garantir que as configurações de segurança permitam acesso à pasta definida pelos parâmetros **dataLogPath**.
 
 O caminho completo é o seguinte: **`<datalogpath>  YYYY-MM-DDHHh`**. A data e a hora são definidas de acordo com o relógio do servidor MTA (UTC). Por exemplo:
 
@@ -61,7 +61,7 @@ O caminho completo é o seguinte: **`<datalogpath>  YYYY-MM-DDHHh`**. A data e a
 C:\emails\2018-12-02\13h
 ```
 
-O nome do arquivo é **`<deliveryid>-<broadlogid>.eml`** quando o status dos emails não é **[!UICONTROL Sent]**. Quando o status for alterado para **[!UICONTROL Sent]**, o nome do arquivo se torna **`<deliveryid>-<broadlogid>-sent.eml`**. Por exemplo:
+O nome do arquivo morto é **`<deliveryid>-<broadlogid>.eml`** quando o status dos emails não é **[!UICONTROL Sent]**. Depois que o status for alterado para **[!UICONTROL Sent]**, o nome do arquivo será **`<deliveryid>-<broadlogid>-sent.eml`**. Por exemplo:
 
 ```
 C:\emails\2018-12-02\13h\4012-8040-sent.eml
@@ -71,11 +71,11 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >
 >Em uma instância mid-sourcing, o diretório para os emails com CCO está localizado no servidor de mid-sourcing.
 >
->O deliveryID e o broadlogID vêm do servidor mid-sourcing quando o status dos emails não é enviado. Quando o status for alterado para **[!UICONTROL Sent]**, essas IDs vêm do servidor de marketing.
+>O deliveryID e o broadlogID vêm do servidor mid-sourcing quando o status dos emails não é enviado. Depois que o status for alterado para **[!UICONTROL Sent]**, essas IDs serão provenientes do servidor de marketing.
 
 ### Parâmetros {#parameters}
 
-Depois que o caminho da pasta local for definido, adicione e edite os seguintes elementos, conforme desejado na **config-`<instance name>.xml`** arquivo. Abaixo estão os valores padrão:
+Depois que o caminho da pasta local for definido, adicione e edite os seguintes elementos conforme desejado no arquivo **config-`<instance name>.xml`**. Abaixo estão os valores padrão:
 
 ```
 <archiving autoStart="false" compressionFormat="0" compressBatchSize="10000"
@@ -89,21 +89,21 @@ Depois que o caminho da pasta local for definido, adicione e edite os seguintes 
 
   **1**: compactação (formato .zip)
 
-* **compressBatchSize**: número de arquivos .eml adicionados a um arquivo (arquivo .zip).
+* **compressBatchSize**: número de arquivos .eml adicionados a um arquivo morto (arquivo .zip).
 
 
-* **archivingType**: estratégia de arquivamento a ser usada. O único valor possível é **1**. Cópias brutas de emails enviados são salvas no formato .eml na **dataLogPath** e são enviados ao endereço de email CCO via SMTP. Quando as cópias de email são enviadas para o endereço CCo, o nome do arquivo de arquivamento se torna **`<deliveryid>-<broadlogid>-sent-archived.eml`** e o arquivo for movido para a pasta **dataLogPath/archives** pasta. O caminho do arquivo de email enviado e CCO arquivado é **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+* **archivingType**: estratégia de arquivamento a ser usada. O único valor possível é **1**. Cópias brutas de emails enviados são salvas no formato .eml na pasta **dataLogPath** e são enviadas ao endereço de email CCO via SMTP. Depois que as cópias de email forem enviadas para o endereço CCo, o nome do arquivo de arquivamento se tornará **`<deliveryid>-<broadlogid>-sent-archived.eml`** e o arquivo será movido para a pasta **dataLogPath/archives**. O caminho do arquivo de email enviado e CCO arquivado é então **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
 
   <!--
   **0**: raw copies of sent emails are saved in .eml format to the **dataLogPath** folder (default value). An archiving copy of the **`<deliveryid>-<broadlogid>-sent.eml`** file is saved to the **dataLogPath/archives** folder. The sent email file path becomes **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.-->
 
-* **expirationDelay**: número de dias que os arquivos .eml são mantidos para arquivamento. Após esse atraso, elas são movidas automaticamente para o estado **dataLogPath/archives** pasta para compactação. Por padrão, os arquivos .eml expiram após dois dias.
-* **purgeArchivesDelay**: número de dias em que os arquivos são mantidos no **dataLogPath/`<archives>`** pasta. Após esse período, eles são excluídos permanentemente. A limpeza começa quando o MTA é iniciado. Por padrão, ele é executado a cada sete dias.
-* **pollDelay**: verificação da frequência (em segundos) de novos emails enviados recebidos para a **dataLogPath** pasta. Por exemplo, se esse parâmetro for definido como 60, significa que, a cada minuto, o processo de arquivamento passará pelos arquivos .eml dentro do **dataLogPath/`<date and time>`** , aplique uma limpeza se necessário e envie cópias de e-mail para o endereço CCo e/ou compacte os arquivos arquivados sempre que necessário.
-* **acquisitionLimit**: número de arquivos .eml processados de uma só vez antes que o processo de arquivamento seja aplicado novamente de acordo com o **pollDelay** parâmetro. Por exemplo, se você definir a variável **acquisitionLimit** parâmetro para 100 enquanto a variável **pollDelay** for definido como 60, 100 arquivos .eml por minuto serão processados.
+* **expirationDelay**: número de dias que os arquivos .eml são mantidos para arquivamento. Após esse atraso, eles são movidos automaticamente para a pasta **dataLogPath/archives** para compactação. Por padrão, os arquivos .eml expiram após dois dias.
+* **purgeArchivesDelay**: número de dias que os arquivos mortos são mantidos na pasta **dataLogPath/`<archives>`**. Após esse período, eles são excluídos permanentemente. A limpeza começa quando o MTA é iniciado. Por padrão, ele é executado a cada sete dias.
+* **pollDelay**: verificando a frequência (em segundos) de novos emails enviados recebidos para a pasta **dataLogPath**. Por exemplo, se esse parâmetro estiver definido como 60, isso significa que, a cada minuto, o processo de arquivamento passará pelos arquivos .eml dentro das pastas **dataLogPath/`<date and time>`**, aplicará uma limpeza se necessário e enviará cópias de email para o endereço CCO e/ou compactará os arquivos arquivados sempre que necessário.
+* **acquisitionLimit**: número de arquivos .eml processados de uma vez antes que o processo de arquivamento seja aplicado novamente de acordo com o parâmetro **pollDelay**. Por exemplo, se você definir o parâmetro **acquiLimit** como 100 enquanto o parâmetro **pollDelay** estiver definido como 60, 100 arquivos .eml por minuto serão processados.
 * **smtpNbConnection**: número de conexões SMTP com o endereço de email CCO.
 
-Ajuste esses parâmetros de acordo com a taxa de transferência de envio de email. Por exemplo, em uma configuração em que o MTA está enviando 30.000 emails por hora, você pode definir o **pollDelay** para 600, o valor **acquisitionLimit** para 5000 e o **smtpNbConnection** para 2. Isso significa que usando duas conexões SMTP, 5.000 emails serão enviados para o endereço CCO a cada 10 minutos.
+Ajuste esses parâmetros de acordo com a taxa de transferência de envio de email. Por exemplo, em uma configuração em que o MTA está enviando 30.000 emails por hora, você pode definir o parâmetro **pollDelay** como 600, o parâmetro **acquiLimit** como 5000 e o parâmetro **smtpNbConnection** como 2. Isso significa que usando duas conexões SMTP, 5.000 emails serão enviados para o endereço CCO a cada 10 minutos.
 
 ## Configuração do endereço de email CCO (no local) {#configuring-the-bcc-email-address--on-premise-}
 
@@ -114,7 +114,7 @@ Ajuste esses parâmetros de acordo com a taxa de transferência de envio de emai
 >
 >Por motivos de privacidade, os emails com CCO devem ser processados por um sistema de arquivamento capaz de armazenar informações de identificação pessoal (PII) seguras.
 
-No **config-`<instance name>.xml`** use os seguintes parâmetros para definir o servidor de email SMTP para o qual os arquivos armazenados serão transferidos:
+No arquivo **config-`<instance name>.xml`**, use os seguintes parâmetros para definir o servidor de email SMTP para o qual os arquivos armazenados serão transferidos:
 
 ```
 <archiving smtpBccAddress="" smtpEnableTLS="false" smtpRelayAddress="" smtpRelayPort="25"/>
@@ -129,7 +129,7 @@ No **config-`<instance name>.xml`** use os seguintes parâmetros para definir o 
 >
 >Se você estiver usando uma retransmissão SMTP, as alterações nos emails feitas pela retransmissão não serão consideradas no processo de arquivamento.
 >
->Além disso, o relé atribui um **[!UICONTROL Sent]** para todos os emails, incluindo aqueles que não foram enviados. Portanto, todas as mensagens são arquivadas.
+>Além disso, o relé atribui um status de **[!UICONTROL Sent]** a todos os emails, incluindo aqueles que não são enviados. Portanto, todas as mensagens são arquivadas.
 
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
@@ -151,14 +151,14 @@ Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]*
 
 ## Práticas recomendadas de Cco de email {#best-practices}
 
-* **Caixa de correio de endereço CCO**: verifique se ele tem capacidade de recepção suficiente para arquivar todos os emails enviados pelo MTA.
-* **Pool de MTA**: o recurso de arquivamento CCO funciona no nível do MTA. Ele permite duplicar todos os emails enviados pelo MTA. Como o MTA pode ser agrupado em várias instâncias (desenvolvimento, teste ou produção, por exemplo) ou até mesmo em vários clientes (em um ambiente de mid-sourcing), a configuração desse recurso afeta a segurança:
+* **Caixa de correio de endereço CCO**: verifique se ela tem capacidade de recepção suficiente para arquivar todos os emails enviados pelo MTA.
+* **Pool de MTA**: o recurso de arquivamento com CCO funciona no nível do MTA. Ele permite duplicar todos os emails enviados pelo MTA. Como o MTA pode ser agrupado em várias instâncias (desenvolvimento, teste ou produção, por exemplo) ou até mesmo em vários clientes (em um ambiente de mid-sourcing), a configuração desse recurso afeta a segurança:
 
    * Se você compartilhar um MTA com vários clientes e um deles tiver essa opção ativada, esse cliente acessará todos os emails dos outros clientes que compartilham o mesmo MTA. Para evitar essa situação, use um MTA diferente para cada cliente.
    * Se você usar o mesmo MTA em várias instâncias (desenvolvimento, teste, prod) para um único cliente, as mensagens enviadas de todas as três instâncias serão duplicadas pela opção dataLogPath.
 
-* **Emails por conexão**: o arquivamento de emails com CCO opera abrindo uma conexão e tentando enviar todos os emails por meio dessa conexão. A Adobe recomenda verificar com seu contato técnico interno o número de emails aceitos em uma determinada conexão. Aumentar esse número pode ter um grande impacto na taxa de transferência do Cco.
-* **IPs de envio com CCO**: no momento, os emails com CCO não são enviados por meio dos proxies MTA normais. Em vez disso, uma conexão direta é aberta do servidor MTA para o servidor de email de destino. Incluir na lista de permissões Isso significa que talvez seja necessário adicionar outros IPs ao arquivo na rede, dependendo da configuração do servidor de email.
+* **Emails por conexão**: o arquivamento de emails com CCO opera abrindo uma conexão e tentando enviar todos os emails por meio dela. A Adobe recomenda verificar com seu contato técnico interno o número de emails aceitos em uma determinada conexão. Aumentar esse número pode ter um grande impacto na taxa de transferência do Cco.
+* **IPs de envio com CCO**: atualmente, os emails com CCO não são enviados por meio dos proxies do MTA normal. Em vez disso, uma conexão direta é aberta do servidor MTA para o servidor de email de destino. Incluir na lista de permissões Isso significa que talvez seja necessário adicionar outros IPs ao arquivo na rede, dependendo da configuração do servidor de email.
 
 <!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
 

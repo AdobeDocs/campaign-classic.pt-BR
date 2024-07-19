@@ -23,7 +23,7 @@ Para uma plataforma Windows de 32 bits, instale o Adobe Campaign de 32 bits. Par
 
 As etapas de instalação do servidor Adobe Campaign são as seguintes:
 
-1. Executar o arquivo **setup.exe**.
+1. Execute o arquivo **setup.exe**.
 
    ![](assets/s_ncs_install_installer_01.png)
 
@@ -33,12 +33,12 @@ As etapas de instalação do servidor Adobe Campaign são as seguintes:
 
    Vários tipos de instalação estão disponíveis:
 
-   * **[!UICONTROL Installation of an application server]** : instale o servidor de aplicativos do Adobe Campaign e o console do cliente.
-   * **[!UICONTROL Minimal installation (Network)]** : Instalação do computador cliente pela rede. Somente um número limitado de DLLs será instalado no computador, se necessário, e todos os outros componentes serão usados de uma unidade de rede.
-   * **[!UICONTROL Installation of a client]** : instalação dos componentes necessários para o cliente do Adobe Campaign.
-   * **[!UICONTROL Custom installation]** : o usuário escolhe os elementos que serão instalados.
+   * **[!UICONTROL Installation of an application server]** : Instale o servidor de aplicativos Adobe Campaign e o console do cliente.
+   * **[!UICONTROL Minimal installation (Network)]** : Instalação do computador cliente a partir da rede. Somente um número limitado de DLLs será instalado no computador, se necessário, e todos os outros componentes serão usados de uma unidade de rede.
+   * **[!UICONTROL Installation of a client]** : Instalação dos componentes necessários para o cliente do Adobe Campaign.
+   * **[!UICONTROL Custom installation]** : o usuário escolhe os elementos a serem instalados.
 
-   Selecionar **Instalação de um servidor de aplicativos** e passe pelas diferentes etapas, conforme mostrado abaixo:
+   Selecione **Instalação de um servidor de aplicativos** e passe pelas diferentes etapas, conforme mostrado abaixo:
 
    ![](assets/s_ncs_install_installer_02.png)
 
@@ -80,7 +80,7 @@ No task
 
 ## Primeira inicialização do servidor {#first-start-up-of-the-server}
 
-Quando o teste de instalação estiver concluído, abra um prompt de comando através do **[!UICONTROL Start > Programs > Adobe Campaign]** e digite o seguinte comando:
+Quando o teste de instalação estiver concluído, abra um prompt de comando através do menu **[!UICONTROL Start > Programs > Adobe Campaign]** e digite o seguinte comando:
 
 ```sql
 nlserver web
@@ -100,7 +100,7 @@ As seguintes informações são exibidas:
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-Pressione **Ctrl+C** para interromper o processo, digite o seguinte comando:
+Pressione **Ctrl+C** para parar o processo e digite o seguinte comando:
 
 ```sql
 nlserver start web
@@ -135,7 +135,7 @@ As seguintes informações são exibidas:
 
 ## Senha do identificador interno {#password-for-the-internal-identifier}
 
-O servidor do Adobe Campaign define um logon técnico chamado **interno** que tenha todos os direitos em todas as instâncias. Logo após a instalação, o login não terá uma senha. É obrigatório definir um.
+O servidor do Adobe Campaign define um logon técnico chamado **interno** que tem todos os direitos em todas as instâncias. Logo após a instalação, o login não terá uma senha. É obrigatório definir um.
 
 Saiba mais [nesta seção](../../installation/using/configuring-campaign-server.md#internal-identifier).
 

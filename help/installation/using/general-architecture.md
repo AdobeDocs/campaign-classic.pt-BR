@@ -20,7 +20,7 @@ ht-degree: 0%
 
 A implantação típica da solução Adobe Campaign consiste nos seguintes componentes:
 
-* **Ambiente personalizado do cliente**
+* **Ambiente de Cliente Personalizado**
 
   Interface gráfica intuitiva na qual os usuários podem se comunicar e rastrear ofertas de marketing, criar campanhas, revisar e gerenciar todas as atividades de marketing, programas e planos, incluindo emails, fluxos de trabalho e páginas de aterrissagem, criar e gerenciar perfis de clientes e definir tipos de público-alvo do cliente.
 
@@ -42,15 +42,15 @@ O Adobe Campaign é baseado em uma SOA (Service-Oriented Architecture, arquitetu
 
 >[!CAUTION]
 >
->Salvo indicação expressa em contrário, a instalação, as atualizações e a manutenção de todos os componentes de uma plataforma Adobe Campaign são de responsabilidade do(s) administrador(es) da máquina que os hospeda. Isso inclui a implementação dos pré-requisitos para aplicativos do Adobe Campaign e a conformidade com o Campaign [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) entre componentes.
+>Salvo indicação expressa em contrário, a instalação, as atualizações e a manutenção de todos os componentes de uma plataforma Adobe Campaign são de responsabilidade do(s) administrador(es) da máquina que os hospeda. Isso inclui a implementação dos pré-requisitos para aplicativos do Adobe Campaign, bem como a conformidade com a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) do Campaign entre componentes.
 
 ## Camada de apresentação {#presentation-layer}
 
 O aplicativo pode ser acessado de maneiras diferentes, dependendo das necessidades dos usuários: cliente avançado, cliente thin ou integração de API.
 
 * **Cliente avançado**: a principal interface de usuário do aplicativo é um cliente avançado, em outras palavras, um aplicativo nativo (Windows) que se comunica com o servidor de aplicativos do Adobe Campaign exclusivamente com protocolos padrão de Internet (SOAP, HTTP etc.). Esse console oferece excelente facilidade de uso para produtividade, usa pouca largura de banda (por meio do uso de um cache local) e foi projetado para facilitar a implantação. Esse console pode ser implantado a partir de um navegador da Internet, pode ser atualizado automaticamente e não requer nenhuma configuração de rede específica porque gera apenas tráfego HTTP(S).
-* **Thin client**: determinadas partes do aplicativo podem ser acessadas por meio de um navegador da Web simples usando uma interface de usuário HTML, incluindo o módulo de relatórios, estágios de aprovação de entrega, funcionalidades do módulo Marketing distribuído (central/local), monitoramento de instâncias etc. Esse modo permite incluir funcionalidades do Adobe Campaign em uma intranet ou extranet.
-* **Integração por meio das APIs**: em certos casos, o sistema pode ser chamado de um aplicativo externo usando as APIs de serviços da Web expostas por meio do protocolo SOAP.
+* **Thin client**: determinadas partes do aplicativo podem ser acessadas por meio de um navegador da Web simples, usando uma interface de usuário HTML, incluindo o módulo de relatórios, estágios de aprovação de entrega, funcionalidades do módulo Marketing Distribuído (central/local), monitoramento de instâncias etc. Esse modo permite incluir funcionalidades do Adobe Campaign em uma intranet ou extranet.
+* **Integração por meio das APIs**: em certos casos, o sistema pode ser chamado a partir de um aplicativo externo usando as APIs de Serviços Web expostas pelo protocolo SOAP.
 
 ## Camada de aplicativo lógica {#logical-application-layer}
 
@@ -74,7 +74,7 @@ Também lida com workflows técnicos executados periodicamente, incluindo:
 * Limpeza: limpeza do banco de dados. Usado para eliminar registros antigos e evitar que o banco de dados cresça exponencialmente.
 * Faturamento: envio automático de um relatório de atividade para a plataforma (tamanho do banco de dados, número de ações de marketing, número de perfis ativos etc.).
 
-**Servidor de entrega** (nlserver mta)
+**Servidor de Entrega** (nlserver mta)
 
 O Adobe Campaign tem a funcionalidade nativa de transmissão por email. Esse processo funciona como um agente de transferência de email SMTP (MTA). Ele executa a personalização &quot;um para um&quot; das mensagens e lida com a entrega física. Ele funciona usando processos de entrega e lida com tentativas automáticas. Além disso, quando o rastreamento é ativado, ele substitui automaticamente os URLs para que eles apontem para o servidor de redirecionamento.
 
@@ -88,25 +88,25 @@ Para garantir a maior disponibilidade, esse processo é totalmente independente 
 
 Outros processos mais técnicos também estão disponíveis:
 
-**Gestão de emails de devolução** (nlserver inMail)
+**Gerenciamento de emails rejeitados** (nlserver inMail)
 
 Esse processo permite que você colete automaticamente emails de caixas de correio configuradas para receber mensagens devolvidas que são retornadas em caso de falha de delivery. Essas mensagens são submetidas a processamento com base em regras para determinar os motivos para a não entrega (recipient desconhecido, cota excedida etc.) e para atualizar o status do delivery no banco de dados.
 
 Todas essas operações são totalmente automáticas e pré-configuradas.
 
-**Status de entrega do SMS** (nlserver sms)
+**Status de entrega de SMS** (nlserver sms)
 
 Esse processo pesquisa o roteador SMS para coletar o status do progresso e atualizar o banco de dados.
 
-**Gravando mensagens de log** (syslogd nlserver)
+**Gravando mensagens de log** (nlserver syslogd)
 
 Esse processo técnico captura mensagens de registro e rastreamentos gerados por outros processos e os grava no disco rígido. Isso disponibiliza amplas informações para o diagnóstico em caso de problemas.
 
-**Gravação de logs de rastreamento** (nlserver trackinglogd)
+**Gravando logs de rastreamento** (nlserver trackinglogd)
 
 Esse processo salva em disco os logs de rastreamento gerados pelo processo de redirecionamento.
 
-**Gravação de eventos de entrada** (nlserver interactiond)
+**Gravando eventos de entrada** (nlserver interactiond)
 
 Esse processo garante o registro em disco de eventos de entrada, dentro da estrutura de interação.
 

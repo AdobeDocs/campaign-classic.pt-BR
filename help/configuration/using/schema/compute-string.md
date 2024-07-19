@@ -33,15 +33,15 @@ nenhuma
 
 ## Descrição {#description-1}
 
-A variável `<compute-string>` element permite gerar uma cadeia de caracteres com base em uma expressão XTK para exibir um rótulo &quot;criado&quot; na interface com base em vários valores.
+O elemento `<compute-string>` permite gerar uma cadeia de caracteres com base em uma expressão XTK para exibir um rótulo &quot;criado&quot; na interface com base em vários valores.
 
 ## Uso e contexto de uso {#use-and-context-of-use-1}
 
-Quando não `<compute-string>` for definida, uma `<compute-string>` element é inserido por padrão com os valores da chave primária no schema.
+Quando nenhum `<compute-string>` é definido, um elemento `<compute-string>` é inserido por padrão com os valores da chave primária no esquema.
 
 ## Descrição do atributo {#attribute-description-1}
 
-* **expr (string)**: expressão XTK e/ou Xpath
+* **expr (cadeia de caracteres)**: expressão XTK e/ou Xpath
 
 ## Exemplos {#examples-1}
 

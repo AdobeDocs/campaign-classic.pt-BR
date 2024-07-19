@@ -27,7 +27,7 @@ Use a porta Apache Tomcat incorporada como uma prioridade (8080 por padrão) par
 
 ### Servidor de entrega {#delivery-server}
 
-Para o servidor de entrega (**mta nlserver**), as seguintes portas devem estar abertas:
+Para o servidor de entrega (**nlserver mta**), as seguintes portas devem ser abertas:
 
 <table> 
  <tbody> 
@@ -39,7 +39,7 @@ Para o servidor de entrega (**mta nlserver**), as seguintes portas devem estar a
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
    <td> Em qualquer lugar<br /> </td> 
-   <td> Tráfego SMTP para transmissão de email.<br /> </td> 
+   <td> Tráfego SMTP para difusão de email.<br /> </td> 
   </tr> 
   <tr> 
    <td> 53/udp (domínio)<br /> </td> 
@@ -49,19 +49,19 @@ Para o servidor de entrega (**mta nlserver**), as seguintes portas devem estar a
   <tr> 
    <td> 38000/tcp (porta padrão)<br /> </td> 
    <td> Gateway de SMS<br /> </td> 
-   <td> Usado para enviar tráfego SMS para o roteador SMS NetSize [opção].<br /> </td> 
+   <td> Usado para enviar tráfego SMS para o roteador NetSize SMS [opção].<br /> </td> 
   </tr> 
   <tr> 
    <td> 7777/udp<br /> </td> 
    <td> Servidor de estatísticas<br /> </td> 
-   <td> Acesso ao servidor de estatísticas.<br /> </td> 
+   <td> Acessando o servidor de estatísticas.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Email de entrada {#inbound-mail}
 
-Para o processo de recuperação de e-mails de entrada (**nlserver inMail**), as seguintes portas devem estar abertas:
+Para o processo de recuperação de email de entrada (**nlserver inMail**), as seguintes portas devem estar abertas:
 
 <table> 
  <tbody> 
@@ -73,7 +73,7 @@ Para o processo de recuperação de e-mails de entrada (**nlserver inMail**), as
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
    <td> Servidor de email interno<br /> </td> 
-   <td> Tráfego POP3 para coletar mensagens de devolução.<br /> </td> 
+   <td> Tráfego POP3 para coletar mensagens rejeitadas.<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
@@ -97,7 +97,7 @@ Para o servidor de aplicativos (**nlserver web**), as seguintes portas devem est
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
    <td> Em qualquer lugar<br /> </td> 
-   <td> Tráfego HTTP ou HTTPS (incluindo para a oferta de capacidade de delivery).<br /> </td> 
+   <td> Tráfego HTTP ou HTTPS (incluindo para a oferta de capacidade de entrega).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -106,7 +106,7 @@ Quando vários servidores de aplicativos de uma plataforma Adobe Campaign precis
 
 ### Status de entrega do SMS {#sms-delivery-status}
 
-Para rastrear deliveries de SMS (**sms nlserver**), a seguinte porta deve estar aberta:
+Para rastrear entregas de SMS (**nlserver sms**), a seguinte porta deve estar aberta:
 
 <table> 
  <tbody> 
@@ -125,7 +125,7 @@ Para rastrear deliveries de SMS (**sms nlserver**), a seguinte porta deve estar 
 
 ### Cliente avançado {#rich-client}
 
-Para o cliente avançado do Adobe Campaign (**nlclient**), as seguintes portas devem estar abertas:
+Para o cliente avançado Adobe Campaign (**nlclient**), as seguintes portas devem estar abertas:
 
 <table> 
  <tbody> 
@@ -137,7 +137,7 @@ Para o cliente avançado do Adobe Campaign (**nlclient**), as seguintes portas d
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
    <td> Servidor de aplicativos<br /> </td> 
-   <td> tráfego SOAP (HTTP).<br /> </td> 
+   <td> Tráfego SOAP (HTTP).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -202,7 +202,7 @@ Esse servidor hospeda formulários web, mirror pages etc. As seguintes portas pr
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Em qualquer lugar. Necessário quando os formulários web são gerenciados diretamente da plataforma do Adobe Campaign ou quando as mirror pages são usadas.<br /> </td> 
+   <td> Em qualquer lugar. Necessário quando os formulários web são gerenciados diretamente da plataforma Adobe Campaign ou quando as mirror pages são usadas.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -217,14 +217,14 @@ Esse servidor hospeda formulários web, mirror pages etc. As seguintes portas pr
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Todos os computadores que executam o thin client ou rich client.<br /> </td> 
+   <td> Todos os computadores executando o cliente thin ou o cliente rich.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Integração com o Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-A integração entre o Adobe Campaign e o Adobe Experience Manager exige a abertura de várias portas se a instalação estiver &quot;no local&quot;. Para obter mais informações sobre como configurar essa integração, consulte [documentação detalhada](../../integrations/using/about-adobe-experience-manager.md).
+A integração entre o Adobe Campaign e o Adobe Experience Manager exige a abertura de várias portas se a instalação estiver &quot;no local&quot;. Para obter mais informações sobre como configurar essa integração, consulte a [documentação detalhada](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
@@ -238,7 +238,7 @@ A integração entre o Adobe Campaign e o Adobe Experience Manager exige a abert
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Conexão do Adobe Campaign com instâncias de "criação" e "publicação" do AEM. As portas a serem abertas podem ser diferentes das portas padrão, dependendo da configuração do AEM.<br /> </td> 
+   <td> Conexão do Adobe Campaign com as instâncias de "criação" e "publicação" do AEM. As portas a serem abertas podem ser diferentes das portas padrão, dependendo da configuração do AEM.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

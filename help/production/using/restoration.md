@@ -11,7 +11,7 @@ exl-id: ba4db1af-778c-4c34-9a3c-49f41faa49b5
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '76'
-ht-degree: 14%
+ht-degree: 18%
 
 ---
 
@@ -28,4 +28,4 @@ Em um servidor limpo, o procedimento de restauração é o seguinte:
 * criar e recriar o banco de dados,
 * inicie o Adobe Campaign.
 
-Para obter mais informações, consulte **Guia de instalação**.
+Para obter mais informações, consulte o **Guia de Instalação**.

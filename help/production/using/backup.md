@@ -11,7 +11,7 @@ exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '210'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -30,11 +30,11 @@ A maioria dos dados está no banco de dados. Isso representa 99% das informaçõ
 
 Os arquivos são divididos em várias categorias:
 
-* Arquivos de configuração, armazenados em **nl6/conf**, permitem reconfigurar o Adobe Campaign muito rapidamente.
+* Os arquivos de configuração, armazenados em **nl6/conf**, permitem que você reconfigure o Adobe Campaign muito rapidamente.
 
-* Arquivos de redirecionamento, armazenados em  **nl6/var/`<instance-name>`/redir**, estão nos servidores de rastreamento (geralmente chamados de &quot;frontais&quot;) e incluem todos os redirecionamentos de campanha anteriores. Eles ainda são usados por campanhas anteriores.
+* Os arquivos de redirecionamento, armazenados em **nl6/var/`<instance-name>`/redir**, estão nos servidores de rastreamento (geralmente chamados de &quot;frontais&quot;) e incluem todos os redirecionamentos de campanha anteriores. Eles ainda são usados por campanhas anteriores.
 
-* Arquivos de log, armazenados em **nl6/var/`<instance-name>`/log**, pode ser usado para rastrear problemas.
+* Arquivos de log, armazenados em **nl6/var/`<instance-name>`/log**, podem ser usados para rastrear problemas.
 
 Portanto, os diretórios dos quais será feito backup são:
 

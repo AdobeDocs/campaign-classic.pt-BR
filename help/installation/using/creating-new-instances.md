@@ -24,8 +24,8 @@ Para fazer isso, faça logon em um banco de dados existente e siga as etapas aba
 
 1. Declarar uma nova instância
 
-   Ir para **[!UICONTROL Tools > Advanced > Declare a new instance...]** para iniciar o assistente.
+   Vá para **[!UICONTROL Tools > Advanced > Declare a new instance...]** para iniciar o assistente.
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
-   Especifique os parâmetros da nova instância. Para obter mais informações, consulte [Criação de uma instância e fazer logon](../../installation/using/creating-an-instance-and-logging-on.md).
+   Especifique os parâmetros da nova instância. Para obter mais informações, consulte [Criação de uma instância e logon](../../installation/using/creating-an-instance-and-logging-on.md).

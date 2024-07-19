@@ -17,15 +17,15 @@ ht-degree: 2%
 Ao modificar um esquema e salvar as modificações, o esquema estendido é gerado automaticamente. No entanto, talvez seja necessário gerar esquemas novamente manualmente para aplicar modificações. Para fazer isso:
 
 1. Selecione os esquemas que precisam ser gerados novamente.
-1. Clique com o botão direito do mouse e escolha **[!UICONTROL Actions > Regenerate selected schemas...]** .
+1. Clique com o botão direito do mouse e escolha **[!UICONTROL Actions > Regenerate selected schemas...]**.
 1. Clique em **[!UICONTROL OK]** para confirmar e iniciar o processo.
 
-Em seguida, você pode verificar a estrutura do schema gerado nas guias Preview e Documentation. Para obter mais informações, consulte [Princípios](../../configuration/using/data-schemas.md#principles) seção.
+Em seguida, você pode verificar a estrutura do schema gerado nas guias Preview e Documentation. Para obter mais informações, consulte a seção [Princípios](../../configuration/using/data-schemas.md#principles).
 
 >[!NOTE]
 >
 >Se for necessário forçar a regeneração de todos os esquemas, por exemplo, para resolver determinados problemas de dependência nos links reversos, inicie o seguinte comando no servidor de aplicativos do Adobe Campaign:
 >
-> `nlserver config -postupgrade -instance:`&lt;instance_name>` -force`
+> `nlserver config -postupgrade -instance:`&lt;nome_da_instância>` -force`
 >
 >Em seguida, reinicie o servidor de aplicativos do Adobe Campaign e desconecte/reconecte ao console do cliente.

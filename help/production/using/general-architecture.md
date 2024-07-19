@@ -46,7 +46,7 @@ A distribuição de módulos por várias máquinas proporciona grande flexibilid
 
 >[!NOTE]
 >
->Para obter mais informações sobre as várias arquiteturas, consulte [nesta seção](../../installation/using/general-architecture.md).
+>Para obter mais informações sobre as várias arquiteturas, consulte [esta seção](../../installation/using/general-architecture.md).
 
 ## Lista de portas abertas {#list-of-open-ports}
 

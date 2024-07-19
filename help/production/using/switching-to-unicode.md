@@ -11,7 +11,7 @@ exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 
 
-Para um existente **prod** no Linux/PostgreSQL, as etapas para alternar para unicode são as seguintes:
+Para uma instância **prod** existente no Linux/PostgreSQL, as etapas para alternar para unicode são as seguintes:
 
 1. Interrompa os processos gravando no banco de dados:
 
@@ -62,7 +62,7 @@ Para um existente **prod** no Linux/PostgreSQL, as etapas para alternar para uni
    vi config-prod.xml
    ```
 
-   Adicione o **u** caractere na frente do valor relacionado ao identificador do banco de dados (**databaseId**):
+   Adicione o caractere **u** na frente do valor relacionado ao identificador de banco de dados (**databaseId**):
 
    ```
    <web>

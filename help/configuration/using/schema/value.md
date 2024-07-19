@@ -46,13 +46,13 @@ Esse elemento permite definir os valores armazenados em uma enumeração.
 
 ## Descrição do atributo {#attribute-description-16}
 
-* **applicableIf (string)**: esse atributo permite que você torne um valor de enumeração opcional. Ele recebe uma expressão XTK.
-* **desc (string)**: descrição do valor de enumeração.
+* **applicableIf (string)**: este atributo permite que você torne um valor de enumeração opcional. Ele recebe uma expressão XTK.
+* **desc (cadeia de caracteres)**: descrição do valor de enumeração.
 * **enabledIf (cadeia de caracteres)**: condição para ativar o valor de enumeração.
 * **img (string)**: imagem vinculada à enumeração no formulário &quot;namespace:image_name&quot;. A imagem deve ser importada para o servidor de aplicativos.
-* **rótulo (string)**: rótulo do valor de enumeração.
-* **nome (sequência de caracteres)**: nome interno do valor de enumeração.
-* **value (string)**: valor do valor de enumeração. O tipo de valor é definido com base no tipo de enumeração. Se a enumeração for do tipo character string, ela só poderá conter valores do tipo character string.
+* **rótulo (cadeia de caracteres)**: rótulo do valor de enumeração.
+* **nome (cadeia de caracteres)**: nome interno do valor de enumeração.
+* **valor (cadeia de caracteres)**: valor do valor de enumeração. O tipo de valor é definido com base no tipo de enumeração. Se a enumeração for do tipo character string, ela só poderá conter valores do tipo character string.
 
 ## Exemplos {#examples-13}
 

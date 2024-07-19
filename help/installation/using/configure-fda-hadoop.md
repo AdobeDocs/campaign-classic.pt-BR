@@ -18,9 +18,9 @@ ht-degree: 77%
 
 
 
-Usar a campanha **Federated Data Access** (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao Hadoop.
+Use a opção Campaign **Federated Data Access** (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao Hadoop.
 
-1. Configurar [banco de dados Hadoop](#configuring-hadoop)
+1. Configurar o [banco de dados do Hadoop](#configuring-hadoop)
 1. Configurar o Hadoop [conta externa](#hadoop-external) no Campaign
 
 ## Configuração do Hadoop 3.0 {#configuring-hadoop}
@@ -38,7 +38,7 @@ A conexão com um banco de dados externo do Hadoop no FDA exige as seguintes con
    systemctl start nlserver.service
    ```
 
-1. No Campaign Classic, você pode configurar a conta externa do [!DNL Hadoop]. Para obter mais informações sobre como configurar a conta externa, consulte [nesta seção](#hadoop-external).
+1. No Campaign Classic, você pode configurar a conta externa do [!DNL Hadoop]. Para obter mais informações sobre como configurar sua conta externa, consulte [esta seção](#hadoop-external).
 
 ## Conta externa do Hadoop {#hadoop-external}
 
@@ -85,7 +85,7 @@ O conector também é compatível com as seguintes opções de Hive:
 
 ## Configuração do Hadoop 2.1 {#configure-access-hadoop-2}
 
-Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para [Windows](#for-windows) ou [Linux](#for-linux).
+Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para o [Windows](#for-windows) ou [Linux](#for-linux).
 
 ### Hadoop 2.1 para Windows {#for-windows}
 
@@ -101,7 +101,7 @@ Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para [Win
    User/Password: admin/<your password here>
    ```
 
-1. Crie a conta externa do Hadoop, conforme detalhado em [nesta seção](#hadoop-external).
+1. Crie a conta externa do Hadoop, conforme detalhado em [esta seção](#hadoop-external).
 
 ### Hadoop 2.1 para Linux {#for-linux}
 
@@ -188,4 +188,4 @@ Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para [Win
    isql vorac -v
    ```
 
-1. Crie a conta externa do Hadoop, conforme detalhado em [nesta seção](#hadoop-external).
+1. Crie a conta externa do Hadoop, conforme detalhado em [esta seção](#hadoop-external).

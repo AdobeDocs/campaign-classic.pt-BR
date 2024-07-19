@@ -5,7 +5,7 @@ description: Saiba mais sobre as integrações com os workflows de soluções da
 feature: Workflows, Audiences
 topic-tags: technical-workflows
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 100%
 

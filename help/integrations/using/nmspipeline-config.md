@@ -7,7 +7,7 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 audience: integrations
 content-type: reference
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 100%
 

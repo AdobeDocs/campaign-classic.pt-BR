@@ -49,30 +49,30 @@ Um link deve ser declarado no schema que contém a chave externa da tabela vincu
 
 Os links obedecem às seguintes regras:
 
-* A definição de um link é inserida em um **link**-type **`<element>`** com os seguintes atributos:
+* A definição de um link é inserida em um **link**-tipo **`<element>`** com os seguintes atributos:
 
-   * **name**: nome do link da tabela de origem
-   * **público alvo**: nome do schema de destino
+   * **nome**: nome do link da tabela de origem
+   * **target**: nome do esquema de destino
    * **rótulo**: rótulo do link
-   * **revLink** (opcional): nome do link reverso do schema de destino (deduzido automaticamente por padrão)
-   * **integridade** (opcional): integridade referencial da ocorrência da tabela de origem à ocorrência da tabela de destino.
+   * **revLink** (opcional): nome do link reverso do esquema de destino (deduzido automaticamente por padrão)
+   * **integridade** (opcional): integridade referencial da ocorrência da tabela de origem em relação à ocorrência da tabela de destino.
 Os valores possíveis são:
 
       * **definir**: é possível excluir a ocorrência de origem se ela não for mais referenciada por uma ocorrência de destino
-      * **normal**: ao excluir a ocorrência de origem inicializa as chaves do link para a ocorrência de destino (modo padrão), esse tipo de integridade inicializa todas as chaves estrangeiras
-      * **próprio**: excluir a ocorrência de origem leva à exclusão da ocorrência de destino
-      * **owncopy**: o mesmo que **próprio** (em caso de exclusão) ou duplica as ocorrências (em caso de duplicação)
-      * **neutro**: nenhum comportamento específico
+      * **normal**: excluir a ocorrência de origem inicializa as chaves do link para a ocorrência de destino (modo padrão), esse tipo de integridade inicializa todas as chaves estrangeiras
+      * **own**: a exclusão da ocorrência de origem leva à exclusão da ocorrência de destino
+      * **owncopy**: o mesmo que **own** (no caso de exclusão) ou duplica as ocorrências (no caso de duplicação)
+      * **neutral**: nenhum comportamento específico
 
-   * **revIntegrity** (opcional): integridade no schema do target (opcional, &quot;normal&quot; por padrão)
-   * **revCardinality** (opcional): com o valor &quot;único&quot;, preenche cardinalidade com tipo 1-1 (1-N por padrão)
-   * **externalJoin** (opcional): força a junção externa
-   * **revExternalJoin** (opcional): força a junção externa no link reverso
+   * **revIntegrity** (opcional): integridade no esquema de destino (opcional, &quot;normal&quot; por padrão)
+   * **revCardinality** (opcional): com o valor &quot;single&quot; preenche a cardinalidade com o tipo 1-1 (1-N por padrão)
+   * **externalJoin** (opcional): força a associação externa
+   * **revExternalJoin** (opcional): força a associação externa no link reverso
 
-* Um link faz referência a um ou mais campos da tabela de origem para a tabela de destino. Os campos que compõem a associação ( `<join>`  element) não precisam ser preenchidos porque são automaticamente deduzidos por padrão usando a chave interna do schema de público-alvo.
+* Um link faz referência a um ou mais campos da tabela de origem para a tabela de destino. Os campos que compõem a associação (elemento `<join>`) não precisam ser preenchidos porque eles são automaticamente deduzidos por padrão usando a chave interna do esquema de destino.
 * Um índice é adicionado automaticamente à chave externa do link no schema estendido.
 * Um link consiste em dois semilinks, em que o primeiro é declarado do esquema de origem e o segundo é criado automaticamente no esquema estendido do esquema de destino.
-* Uma associação pode ser uma associação externa se a variável **externalJoin** é adicionado, com o valor &quot;true&quot; (compatível com PostgreSQL).
+* Uma junção pode ser uma junção externa se o atributo **externalJoin** for adicionado, com o valor &quot;true&quot; (suportado no PostgreSQL).
 
 >[!NOTE]
 >
@@ -135,10 +135,10 @@ Esquema estendido do target (&quot;cus:company&quot;):
 
 Um link reverso para a tabela &quot;cus:recipient&quot; foi adicionado com os seguintes parâmetros:
 
-* **name**: deduzido automaticamente do nome do schema de origem (pode ser forçado com o atributo &quot;revLink&quot; na definição do link no schema de origem)
+* **name**: deduzido automaticamente do nome do esquema de origem (pode ser forçado com o atributo &quot;revLink&quot; na definição do link no esquema de origem)
 * **revLink**: nome do link reverso
-* **público alvo**: chave do schema vinculado (schema &quot;cus:recipient&quot;)
-* **desvinculado**: o link é declarado como um elemento de coleção para uma cardinalidade 1-N (por padrão)
+* **target**: chave de esquema vinculado (esquema &quot;cus:recipient&quot;)
+* **não associado**: o link é declarado como um elemento de coleção para uma cardinalidade 1-N (por padrão)
 * **integridade**: &quot;define&quot; por padrão (pode ser forçado com o atributo &quot;revIntegrity&quot; na definição do link no esquema de origem).
 
 ## Exemplo: link simples {#example-2}
@@ -176,7 +176,7 @@ O valor padrão retorna o identificador do primeiro arquivo de tipo de parâmetr
 
 ## Exemplo: criar uma chave em um link {#example-5}
 
-Neste exemplo, criamos uma chave em um link (&quot;company&quot; para &quot;cus:company&quot; schema) com a variável **xlink** e um campo da tabela (&quot;email&quot;):
+Neste exemplo, criamos uma chave em um link (&quot;company&quot; para &quot;cus:company&quot;) com o atributo **xlink** e um campo da tabela (&quot;email&quot;):
 
 ```sql
 <srcSchema name="recipient" namespace="cus">

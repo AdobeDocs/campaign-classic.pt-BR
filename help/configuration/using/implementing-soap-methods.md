@@ -12,26 +12,26 @@ ht-degree: 4%
 
 ---
 
-# Implementar métodos SOAP{#implementing-soap-methods}
+# Implementar métodos de SOAP{#implementing-soap-methods}
 
 
 
 ## Introdução {#introduction}
 
-É possível criar métodos SOAP em JavaScript. Essa função simplesmente habilita processos aplicativos, pode evitar o desenvolvimento de JSPs e sua chamada nos formulários.
+É possível criar métodos de SOAP no JavaScript. Essa função simplesmente habilita processos aplicativos, pode evitar o desenvolvimento de JSPs e sua chamada nos formulários.
 
-Esses métodos SOAP se comportam da mesma forma que os definidos nativamente no aplicativo. Os mesmos atributos são suportados: static, key only e const.
+Esses métodos de SOAP se comportam da mesma forma que os definidos nativamente na aplicação. Os mesmos atributos são suportados: static, key only e const.
 
 ## Definir uma biblioteca de métodos {#defining-a-method-library}
 
 A criação de uma biblioteca de métodos envolve dois estágios:
 
 * A declaração do método SOAP,
-* Definição (ou implementação) em JavaScript.
+* Definição (ou implementação) no JavaScript.
 
 ### Declaração {#declaration}
 
-Comece declarando os métodos nos schemas (para obter mais informações sobre como criar e editar schemas, consulte [nesta seção](../../configuration/using/about-schema-edition.md)).
+Comece declarando os métodos nos schemas (para obter mais informações sobre como criar e editar schemas, consulte [esta seção](../../configuration/using/about-schema-edition.md)).
 
 A declaração deles é semelhante à dos métodos nativos, exceto que é necessário adicionar o atributo &quot;biblioteca&quot; especificando o nome da biblioteca de métodos onde a definição está localizada.
 
@@ -73,7 +73,7 @@ O nome da função deve estar em conformidade com o seguinte formato:
 
 Exemplo:
 
-A seguinte função do JavaScript é a implementação do método descrito acima. Deve ser definida na entidade de tipo &quot;JavaScript Code&quot; utilizando o nome &quot;cus:test&quot;.
+A seguinte função do JavaScript é a implementação do método descrito acima. Deve ser definida na entidade de tipo &quot;Código JavaScript&quot; utilizando o nome &quot;cus:test&quot;.
 
 ```
 function nms_recipient_testLog(message)
@@ -88,8 +88,8 @@ A assinatura da função deve incluir um argumento para cada parâmetro &#39;in&
 
 Casos específicos:
 
-* **métodos não estáticos**: a função deve incluir um argumento adicional primeiro, coincidindo com a entidade XML transmitida na forma de um objeto de tipo &quot;xml&quot; (E4X).
-* **métodos do tipo &quot;somente chave&quot;**: a função deve incluir um argumento adicional primeiro, coincidindo com a chave transmitida na forma de cadeias de caracteres.
+* **métodos não estáticos**: a função deve incluir um argumento adicional primeiro, coincidindo com a entidade XML transmitida na forma de um objeto de tipo &#39;xml&#39; (E4X).
+* Métodos de tipo **&quot;somente chave&quot;**: a função deve incluir um argumento adicional primeiro, coincidindo com a chave transmitida na forma de cadeias de caracteres.
 
 **3. Valores retornados**
 

@@ -18,16 +18,16 @@ O princípio básico é a inserção de tags de rastreamento Web em determinadas
 
 Há dois tipos de tags:
 
-* **WEB**: esta tag informa se a página foi visitada,
-* **TRANSAÇÃO**: funciona como uma tag da web, mas com a possibilidade de adicionar informações sobre o volume de negócios gerado, por exemplo (valor da transação, número de itens comprados etc.).
+* **WEB**: esta marca informa se a página foi visitada,
+* **TRANSACTION**: funciona como uma marca da web, mas com a possibilidade de adicionar informações sobre o volume de negócios gerado, por exemplo (valor da transação, número de itens comprados etc.).
 
 Siga as etapas abaixo para configurar essas tags:
 
 1. Identifique as páginas que deseja rastrear e determine o tipo (WEB ou TRANSAÇÃO).
-1. Determine quais informações adicionais você deseja coletar e estenda o **nms:webTrackingLog** esquema com a descrição dessas informações. Por padrão, esse esquema pode armazenar os valores de transação e o número de itens por transação.
+1. Determine quais informações adicionais você deseja coletar e estenda o esquema **nms:webTrackingLog** com a descrição dessas informações. Por padrão, esse esquema pode armazenar os valores de transação e o número de itens por transação.
 1. Criação das tags de rastreamento Web. Há duas maneiras de fazer isso:
 
-   * Insira os URLs correspondentes a essas páginas na plataforma Adobe Campaign e gere e extraia as tags de rastreamento Web associadas (da variável **[!UICONTROL Campaign execution>Resources>Web tracking tags]** do console do cliente).
+   * Insira as URLs correspondentes a essas páginas na plataforma Adobe Campaign e gere e extraia as tags de rastreamento Web associadas (do nó **[!UICONTROL Campaign execution>Resources>Web tracking tags]** do console do cliente).
    * Crie você mesmo as tags de rastreamento Web no modo de &quot;criação instantânea&quot;: os URLs correspondentes a essas páginas serão inseridos automaticamente na plataforma Adobe Campaign.
 
 1. Adicione essas tags estática ou dinamicamente nas páginas que você deseja rastrear.

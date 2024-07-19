@@ -30,7 +30,7 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 1. Faça um backup do banco de dados do ambiente de desenvolvimento.
 1. Pare todos os processos do Adobe Campaign na instância de desenvolvimento.
 1. Faça um backup do banco de dados do ambiente de produção e restaure-o como um ambiente de desenvolvimento.
-1. Antes de iniciar os serviços do Adobe Campaign, execute o **freezeInstance.js** script de cauterização que permite limpar o banco de dados de todos os objetos que estavam em execução quando o backup foi iniciado.
+1. Antes de iniciar os serviços do Adobe Campaign, execute o script de cauterização **freezeInstance.js** que permite limpar o banco de dados de todos os objetos que estavam em execução quando o backup foi iniciado.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -38,7 +38,7 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 
    >[!NOTE]
    >
-   >O comando é iniciado por padrão no **seco** e lista todas as solicitações que foram executadas por esse comando, sem inicializá-las. Para executar solicitações de cauterização, use **executar** no comando.
+   >O comando é iniciado por padrão no modo **dry** e lista todas as solicitações que foram executadas por esse comando, sem inicializá-las. Para executar solicitações de cauterização, use **run** no comando.
 
 1. Verifique se os backups estão corretos tentando restaurá-los. Verifique se você pode acessar o banco de dados, as tabelas, os dados etc.
 1. Testar o procedimento de migração no ambiente de desenvolvimento.
@@ -53,7 +53,7 @@ Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migr
 
 Várias opções permitem medir o impacto de uma migração e identificar os possíveis problemas. Estas opções devem ser executadas:
 
-* no **config** comando:
+* no comando **config**:
 
   ```
   nlserver.exe config <option> -instance:<instance-name>
@@ -67,12 +67,12 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 
 >[!NOTE]
 >
->* Você deve usar o **-instância:`<instanceame>`** opção. Não recomendamos usar o **-allinstances** opção.
->* O comando Adobe Campaign update (**pós-atualização**) permite sincronizar recursos e atualizar schemas e o banco de dados. Esta operação só pode ser executada uma vez e somente no servidor de aplicativos. Após sincronizar recursos, a variável **pós-atualização** permite detectar se a sincronização gera erros ou avisos.
+>* Você deve usar a opção **-instance:`<instanceame>`**. Não recomendamos o uso da opção **-allinstances**.
+>* O comando Adobe Campaign update (**postupgrade**) permite sincronizar recursos e atualizar esquemas e o banco de dados. Esta operação só pode ser executada uma vez e somente no servidor de aplicativos. Após sincronizar recursos, o comando **postupgrade** permite detectar se a sincronização gera erros ou avisos.
 
 ### Objetos não padrão ou ausentes
 
-* A variável **-showCustomEntities** exibe a lista de todos os objetos não padrão:
+* A opção **-showCustomEntities** exibe a lista de todos os objetos não padrão:
 
   ```
   nlserver.exe config -showCustomEntities -instance:<instance-name>
@@ -84,7 +84,7 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
   xtk_migration:opsecurity2 xtk:entity
   ```
 
-* A variável **-showDeletedEntities** exibe a lista de todos os objetos padrão que estão ausentes no banco de dados ou no sistema de arquivos. Para cada objeto ausente, o caminho é especificado.
+* A opção **-showDeletedEntities** exibe a lista de todos os objetos padrão que estão ausentes no banco de dados ou no sistema de arquivos. Para cada objeto ausente, o caminho é especificado.
 
   ```
   nlserver.exe config -showDeletedEntities -instance:<instance-name>
@@ -98,7 +98,7 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 
 ### Processo de verificação {#verification-process}
 
-Integrado como padrão no comando postupgrade, esse processo permite exibir avisos e erros que podem fazer com que a migração falhe. **Se forem exibidos erros, a migração não foi executada.** Se isso acontecer, corrija todos os erros e reinicie o pós-upgrade.
+Integrado como padrão no comando postupgrade, esse processo permite exibir avisos e erros que podem fazer com que a migração falhe. **Se forem exibidos erros, a migração não foi executada.** Se isso acontecer, corrija todos os erros e reinicie a pós-atualização.
 
 Você pode iniciar o processo de verificação por conta própria (sem migração) usando o comando:
 
@@ -116,7 +116,7 @@ As seguintes expressões são pesquisadas (distinção entre maiúsculas e minú
  <thead> 
   <tr> 
    <th> Expressão<br /> </th> 
-   <th> Código de erro<br /> </th> 
+   <th> Código de erro <br /> </th> 
    <th> Tipo de log<br /> </th> 
    <th> Comentários<br /> </th> 
   </tr> 
@@ -141,10 +141,10 @@ As seguintes expressões são pesquisadas (distinção entre maiúsculas e minú
    <td> Este método de conexão não deve mais ser usado.<br /> </td> 
   </tr> 
   <tr> 
-   <td> new SoapMethodCall()<br /> </td> 
+   <td> nova SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Aviso<br /> </td> 
-   <td> Esta função só é suportada quando usada no código JavaScript executado a partir de uma zona de segurança que está em <strong>sessionTokenOnly</strong> modo.<br /> </td> 
+   <td> Esta função só tem suporte quando é usada no código JavaScript executado de uma zona de segurança que está no modo <strong>sessionTokenOnly</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -157,14 +157,14 @@ As seguintes expressões são pesquisadas (distinção entre maiúsculas e minú
    <td> PU-0007<br /> </td> 
    <td> Erro<br /> </td> 
    <td> Esse tipo de implantação não é mais suportado. O Office 365 e o tipo de implantação do conector do Microsoft CRM no local foram descontinuados. 
-   </br>Se estiver usando um desses tipos de implantação obsoletos em uma conta externa, essa conta externa deve ser excluída e você deve executar o <b>pós-atualização</b> comando. 
-   </br>Para alterar para implantação da API da Web, consulte <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Aplicações web</a>.<br /> </td>
+   </br>Se você estiver usando um desses tipos de implantação obsoletos em uma conta externa, essa conta externa deverá ser excluída e você deverá executar o comando <b>postupgrade</b>. 
+   </br>Para alterar para implantação da API Web, consulte <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Aplicativos Web</a>.<br /> </td>
   </tr> 
   <tr> 
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> Erro<br /> </td> 
-   <td> As atividades de ação por demanda do Microsoft CRM, Salesforce e Oracle CRM não estão mais disponíveis. Para configurar a sincronização de dados entre o Adobe Campaign e um sistema CRM, é necessário usar o <a href="../../workflow/using/crm-connector.md" target="_blank">Conector do CRM</a> atividade de direcionamento.<br /> </td>
+   <td> As atividades de ação por demanda do Microsoft CRM, Salesforce e Oracle CRM não estão mais disponíveis. Para configurar a sincronização de dados entre o Adobe Campaign e um sistema CRM, você precisa usar a atividade de direcionamento <a href="../../workflow/using/crm-connector.md" target="_blank">conector do CRM</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>

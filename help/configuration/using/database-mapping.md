@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Mapeamento de banco de dados{#database-mapping}
 
-O mapeamento SQL do schema de amostra descrito [nesta página](schema-structure.md) gera o seguinte documento XML:
+O mapeamento SQL do esquema de exemplo descrito [nesta página](schema-structure.md) gera o seguinte documento XML:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -43,9 +43,9 @@ Os nomes SQL são determinados automaticamente com base no nome e no tipo do ele
 
 As regras de nomenclatura SQL são as seguintes:
 
-* **tabela**: concatenação do namespace e do nome do schema
+* **tabela**: concatenação do nome e do namespace do esquema
 
-  No nosso exemplo, o nome da tabela é inserido por meio do elemento principal do schema na **sqltable** atributo:
+  Em nosso exemplo, o nome da tabela é inserido por meio do elemento principal do esquema no atributo **sqltable**:
 
   ```sql
   <element name="recipient" sqltable="CusRecipient">
@@ -53,7 +53,7 @@ As regras de nomenclatura SQL são as seguintes:
 
 * **campo**: nome do elemento precedido por um prefixo definido de acordo com o tipo: &#39;i&#39; para inteiro, &#39;d&#39; para duplo, &#39;s&#39; para cadeia de caracteres, &#39;ts&#39; para datas, etc.
 
-  O nome do campo é inserido por meio da variável **sqlname** atributo para cada tipo **`<attribute>`** e **`<element>`**:
+  O nome do campo é inserido por meio do atributo **sqlname** para cada **`<attribute>`** e **`<element>`** digitados:
 
   ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -80,11 +80,11 @@ As restrições do campo SQL são as seguintes:
 
 ## Campos XML {#xml-fields}
 
-Por padrão, qualquer  **`<attribute>`** e **`<element>`** O elemento do tipo é mapeado em um campo SQL da tabela de esquema de dados. No entanto, você pode fazer referência a esse campo em XML, em vez de SQL, o que significa que os dados são armazenados em um campo de memorando (&quot;mData&quot;) da tabela que contém os valores de todos os campos XML. O armazenamento desses dados é um documento XML que observa a estrutura do schema.
+Por padrão, qualquer elemento do tipo **`<attribute>`** e **`<element>`** é mapeado em um campo SQL da tabela de esquema de dados. No entanto, você pode fazer referência a esse campo em XML, em vez de SQL, o que significa que os dados são armazenados em um campo de memorando (&quot;mData&quot;) da tabela que contém os valores de todos os campos XML. O armazenamento desses dados é um documento XML que observa a estrutura do schema.
 
-Para preencher um campo em XML, é necessário adicionar o **xml** com o valor &quot;true&quot; ao elemento em questão.
+Para preencher um campo em XML, você deve adicionar o atributo **xml** com o valor &quot;true&quot; ao elemento relacionado.
 
-**Exemplo**: estes são dois exemplos de uso de campo XML.
+**Exemplo**: aqui estão dois exemplos de uso de campo XML.
 
 * Campo de comentário multilinha:
 
@@ -119,7 +119,7 @@ Um índice é declarado pelo elemento principal do schema de dados.
 Os índices obedecem às seguintes regras:
 
 * Um índice pode fazer referência a um ou mais campos na tabela
-* Um índice pode ser exclusivo (para evitar duplicatas) em todos os campos se a variável **único** o atributo contém o valor &quot;true&quot;
+* Um índice pode ser exclusivo (para evitar duplicatas) em todos os campos se o atributo **unique** contiver o valor &quot;true&quot;
 * O nome SQL do índice é determinado pelo nome SQL da tabela e pelo nome do índice
 
 >[!NOTE]

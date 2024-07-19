@@ -18,9 +18,9 @@ ht-degree: 70%
 
 
 
-Usar a campanha [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao SAP HANA.
+Use a opção Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao SAP HANA.
 
-1. Configurar [banco de dados SAP HANA](#sap-config)
+1. Configurar o [banco de dados de SAP HANA](#sap-config)
 1. Configurar o SAP HANA [conta externa](#sap-external) no Campaign
 
 ## drivers SAP HANA {#sap-config}
@@ -65,7 +65,7 @@ A conexão com um banco de dados externo SAP HANA no FDA exige determinadas conf
 
 A conta externa SAP HANA permite conectar a instância do Campaign ao banco de dados externo SAP HANA.
 
-1. Do Campaign **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Na Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Clique em **[!UICONTROL New]** e selecione **[!UICONTROL External database]** como **[!UICONTROL Type]**.
 

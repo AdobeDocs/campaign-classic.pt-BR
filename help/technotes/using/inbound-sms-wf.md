@@ -21,7 +21,7 @@ ht-degree: 5%
 
 ## Implementação {#implementation}
 
-1. Adicione uma extensão à `nms:inSMS` na sua instância de marketing. A extensão adicionará um novo atributo à variável `nms:inSMS` esquema e rastreia a chave primária do registro inSMS proveniente da instância Mid-sourcing.
+1. Adicione uma extensão ao esquema `nms:inSMS` na sua instância de marketing. A extensão adicionará um novo atributo ao esquema `nms:inSMS` e rastreará a chave primária do registro inSMS proveniente da instância Mid-sourcing.
 
    ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
@@ -37,21 +37,21 @@ ht-degree: 5%
 
 1. Para aplicar as modificações feitas nos esquemas, inicie o assistente de atualização de banco de dados. Este assistente pode ser acessado via **Ferramentas** > **Avançado** > **Atualizar estrutura do banco de dados**. Ele verifica se a estrutura física do banco de dados corresponde à sua descrição lógica e executa os scripts de atualização SQL. [Saiba mais](../../configuration/using/updating-the-database-structure.md)
 
-1. Interrompa e faça backup do fluxo de trabalho que contém a **Atividade de SMS de entrada**.
+1. Pare e faça backup do fluxo de trabalho que contém a **atividade de SMS de entrada**.
 
-   Fazer backup do ponteiro de opção correspondente com o seguinte formato `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
+   Faça backup do ponteiro de opção correspondente com o seguinte formato `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
 
 [Saiba mais sobre backup](../../production/using/backup.md)
 
-1. (**OPCIONAL**) se já estiver usando uma atividade Scheduler, abra o workflow e reconfigure-o da seguinte maneira:
+1. (**OPCIONAL**) se já estiver usando uma atividade do Agendador, abra o fluxo de trabalho e reconfigure-o da seguinte maneira:
 
-   1. Replicar as configurações atuais do **Agendar** guia do seu **SMS de entrada** atividade no seu externo **Scheduler** atividade.
+   1. Replique as configurações atuais da guia **Agendamento** da atividade de **SMS de Entrada** na atividade externa **Agendador**.
 
-   1. Desative a configuração atual no **Agendar** guia de **SMS de entrada** atividade.
+   1. Desabilite a configuração atual na guia **Agenda** da atividade de **SMS de Entrada**.
 
       ![](assets/inbound_sms_1.png)
 
-1. Atualize o **SMS de entrada** script personalizado.
+1. Atualize o script personalizado **SMS de entrada**.
 
    Substitua o bloco abaixo. Observe que esse script pode variar se você personalizou esse código anteriormente.
 

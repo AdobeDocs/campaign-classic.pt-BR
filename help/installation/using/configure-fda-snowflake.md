@@ -16,10 +16,10 @@ ht-degree: 32%
 
 # Configuração do acesso ao Snowflake {#configure-access-to-snowflake}
 
-Usar a campanha **Federated Data Access** (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao [!DNL Snowflake].
+Use a opção Campaign **Federated Data Access** (FDA) para processar informações armazenadas em um banco de dados externo. Siga as etapas abaixo para configurar o acesso ao [!DNL Snowflake].
 
-1. Configurar [!DNL Snowflake] em [Linux](#snowflake-linux).
-1. Configure o [!DNL Snowflake] [conta externa](#snowflake-external) no Campaign
+1. Configurar [!DNL Snowflake] no [Linux](#snowflake-linux).
+1. Configurar a [!DNL Snowflake] [conta externa](#snowflake-external) no Campaign
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Usar a campanha **Federated Data Access** (FDA) para processar informações arm
 
 ## Snowflake no Linux {#snowflake-linux}
 
-Para configurar [!DNL Snowflake] no Linux, siga as etapas abaixo:
+Para configurar o [!DNL Snowflake] no Linux, siga as etapas abaixo:
 
 1. Antes da instalação do ODBC, verifique se os seguintes pacotes estão instalados na distribuição Linux:
 
@@ -49,7 +49,7 @@ Para configurar [!DNL Snowflake] no Linux, siga as etapas abaixo:
      apt-get install -y grep sed tar wget perl curl
      ```
 
-1. Antes de executar o script, você pode ter acesso a mais informações com o `--help` opção:
+1. Antes de executar o script, você pode ter acesso a mais informações com a opção `--help`:
 
    ```
    cd /usr/local/neolane/nl6/bin/fda-setup-scripts/
@@ -70,35 +70,35 @@ Para configurar [!DNL Snowflake] no Linux, siga as etapas abaixo:
    systemctl start nlserver.service
    ```
 
-1. No Campaign, você pode configurar as [!DNL Snowflake] conta externa. Para obter mais informações sobre como configurar a conta externa, consulte [nesta seção](#snowflake-external).
+1. No Campaign, você pode configurar a conta externa do [!DNL Snowflake]. Para obter mais informações sobre como configurar sua conta externa, consulte [esta seção](#snowflake-external).
 
 ## conta externa Snowflake {#snowflake-external}
 
-É necessário criar um [!DNL Snowflake] conta externa para conectar a instância do Campaign à [!DNL Snowflake] banco de dados externo.
+É necessário criar uma conta externa [!DNL Snowflake] para conectar a instância do Campaign ao banco de dados externo [!DNL Snowflake].
 
-1. Do Campaign **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Na Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Clique em **[!UICONTROL New]**.
 
 1. Selecione **[!UICONTROL External database]** como sua conta externa **[!UICONTROL Type]**.
 
-1. Em **[!UICONTROL Configuration]**, selecione [!DNL Snowflake] do **[!UICONTROL Type]** menu suspenso.
+1. Em **[!UICONTROL Configuration]**, selecione [!DNL Snowflake] no menu suspenso **[!UICONTROL Type]**.
 
    ![](assets/snowflake_5.png)
 
-1. Adicione **[!UICONTROL Server]** URL e **[!UICONTROL Database]**.
+1. Adicione a URL **[!UICONTROL Server]** e **[!UICONTROL Database]**.
 
-1. Configure o **[!UICONTROL Snowflake]** autenticação de conta externa:
+1. Configurar a autenticação da conta externa do **[!UICONTROL Snowflake]**:
 
    * Para autenticação de conta/senha, você deve especificar:
 
       * **[!UICONTROL Account]**: Nome do usuário
 
-      * **[!UICONTROL Password]**: Senha da conta do usuário.
+      * **[!UICONTROL Password]**: Senha da conta de usuário.
 
      ![](assets/snowflake.png)
 
-   * Para autenticação de Par de chaves, clique no link **[!UICONTROL Keypair Auth]** guia para usar o **[!UICONTROL Private key]** para autenticar e copiar e colar seu **[!UICONTROL Private key]**.
+   * Para autenticação de Par de Chaves, clique na guia **[!UICONTROL Keypair Auth]** para usar seu **[!UICONTROL Private key]** para autenticar e copiar e colar seu **[!UICONTROL Private key]**.
 
      ![](assets/snowflake_4.png)
 
@@ -122,5 +122,5 @@ O conector é compatível com as seguintes opções:
 | WeekStart | Parâmetro de sessão WEEK_START. Por padrão, defina como 0. <br>[Para obter mais informações, consulte esta página](https://docs.snowflake.com/br/sql-reference/parameters.html#week-start). |
 | UseCachedResult | Parâmetro de sessão USE_CACHED_RESULTS. Por padrão, defina como TRUE. Esta opção pode ser usada para desativar os resultados em cache de Snowflake. <br>[Para obter mais informações, consulte esta página](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 | bulkThreads | Número de threads a serem usados para o carregador em massa Snowflake; mais threads significam melhor desempenho para cargas em massa maiores. Por padrão, defina como 1. O número pode ser ajustado, dependendo da contagem de threads do computador. |
-| tamanhoParte | Determina o tamanho do arquivo do bloco do carregador em massa. Por padrão, defina como 128 MB. Pode ser modificado para obter um desempenho melhor, quando usado com bulkThreads. Mais threads ativos simultâneos significam melhor desempenho. <br>Para obter mais informações, consulte [Documentação do Snowflake](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
+| tamanhoParte | Determina o tamanho do arquivo do bloco do carregador em massa. Por padrão, defina como 128 MB. Pode ser modificado para obter um desempenho melhor, quando usado com bulkThreads. Mais threads ativos simultâneos significam melhor desempenho. <br>Para obter mais informações, consulte a [documentação sobre o Snowflake](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
 | NomeEstágio | Nome do estágio interno pré-provisionado. Ele será usado no carregamento em massa em vez de criar um novo estágio temporário. |

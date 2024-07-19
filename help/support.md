@@ -100,7 +100,7 @@ O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho 
 >
 >O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta seção](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
->Observe que sua instância deve ser hospedada no AWS e atualizada com a mais recente [Build do GA](rn/using/rn-overview.md). Saiba como verificar a versão [nesta seção](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
+>Observe que sua instância deve ser hospedada no AWS e atualizada com a [compilação de DG](rn/using/rn-overview.md) mais recente. Saiba como verificar a versão [nesta seção](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
 
 ### Como acessar o Painel de controle?
 
@@ -124,7 +124,7 @@ Você pode monitorar os subdomínios e seus certificados. Saiba mais nestas pág
 ### Configurações de instância
 
 Saiba como gerenciar as configurações de instâncias do Campaign Classic no Painel de controle. Saiba mais nestas páginas:
-* [Adicionar IPs no incluo na lista de permissões](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR) para acessar as instâncias do Campaign
+* incluir na lista de permissões [Adicionar IPs no arquivo de pesquisa](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR) para acessar as instâncias do Campaign
 * [Gerenciar permissões de URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=pt-BR)
 * [Detalhes da instância de acesso](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=pt-BR)
 * [Gerenciar chaves GPG para criptografia de dados](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR)
@@ -133,7 +133,7 @@ Saiba como gerenciar as configurações de instâncias do Campaign Classic no Pa
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-O novo sistema de emissão de bilhetes foi lançado através [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. O novo sistema exige novas contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso por meio da Experience League, e a equipe de Atendimento ao cliente resolverá o problema o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html)
+O novo sistema de emissão de tíquetes foi iniciado pelo [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. O novo sistema exige novas contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso por meio da Experience League, e a equipe de Atendimento ao cliente resolverá o problema o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html)
 
 ### Pergunte aos especialistas.
 
@@ -141,10 +141,10 @@ Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas exi
 
 ### Acessar o Centro de download do Campaign
 
-Como administrador do Campaign, navegue até [esta página](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para acessar o Experience Cloud Software Distribution.
+Como um Administrador do Campaign, navegue até [esta página](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para acessar a Distribuição de Software Experience Cloud.
 
 ### Criar um tíquete ou iniciar um chat
 
 A criação de um caso permite que você entre em contato com a Equipe de suporte ao cliente da Adobe sobre qualquer problema que você tiver com produtos da Adobe. Para ajudar a resolver ou solucionar problemas, o Adobe Admin Console permitirá que você fale com o Suporte ao cliente da Adobe.
 
-Para registrar um problema ou iniciar um chat nesse novo sistema, conecte-se a [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Siga o procedimento detalhado descrito em [esta página](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html){_blank}.
+Para registrar um problema ou iniciar um chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Siga o procedimento detalhado descrito em [esta página](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html){_blank}.

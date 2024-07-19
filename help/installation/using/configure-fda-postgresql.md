@@ -15,7 +15,7 @@ ht-degree: 10%
 
 
 
-Usar a campanha **Federated Data Access** (FDA) opção para processar informações armazenadas em um banco de dados PostgreSQL externo.
+Use a opção Campaign **Federated Data Access** (FDA) para processar informações armazenadas em um banco de dados PostgreSQL externo.
 
 ## Configuração do PostgreSQL {#postgresql-configuration}
 
@@ -23,13 +23,13 @@ Primeiro precisa instalar o Libpq. O Libpq permite que os programas clientes env
 
 Siga as etapas abaixo para configurar o acesso ao [!DNL PostgreSQL]:
 
-* Para o CentOS, execute o seguinte comando `sudo apt-get -y install libpq-dev`.
+* Para CentOS, execute o seguinte comando `sudo apt-get -y install libpq-dev`.
 
-* No Linux, execute o seguinte comando `yum install postgresql-devel`.
+* Para Linux, execute o seguinte comando `yum install postgresql-devel`.
 
-* Para Windows, o Libpq é implementado por meio de `libpq.dll` que está incluído na instalação do Adobe Campaign.
+* Para Windows, o Libpq é implementado por meio de `libpq.dll`, que está incluído na instalação do Adobe Campaign.
 
-No Adobe Campaign, você pode configurar as [!DNL PostgreSQL] conta externa. Para obter mais informações sobre como configurar a conta externa, consulte [nesta seção](#postgresql-external).
+No Adobe Campaign, você pode configurar a conta externa do [!DNL PostgreSQL]. Para obter mais informações sobre como configurar sua conta externa, consulte [esta seção](#postgresql-external).
 
 ## Conta externa PostgreSQL {#postgresql-external}
 
@@ -37,25 +37,25 @@ No Adobe Campaign, você pode configurar as [!DNL PostgreSQL] conta externa. Par
 >
 > O PostgreSQL está disponível no CentOS 7 e 6.
 
-É necessário criar um [!DNL PostgreSQL] conta externa para conectar a instância do Campaign à [!DNL PostgreSQL] banco de dados externo.
+É necessário criar uma conta externa [!DNL PostgreSQL] para conectar a instância do Campaign ao banco de dados externo [!DNL PostgreSQL].
 
-1. Do Campaign **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Na Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Clique em **[!UICONTROL New]**.
 
 1. Selecione **[!UICONTROL External database]** como sua conta externa **[!UICONTROL Type]**.
 
-1. Em **[!UICONTROL Configuration]**, selecione [!DNL PostgreSQL, Greenplum] do **[!UICONTROL Type]** menu suspenso.
+1. Em **[!UICONTROL Configuration]**, selecione [!DNL PostgreSQL, Greenplum] no menu suspenso **[!UICONTROL Type]**.
 
    ![](assets/postgresql_1.png)
 
-1. Configure o **[!UICONTROL PostgreSQL]** autenticação de conta externa:
+1. Configurar a autenticação da conta externa do **[!UICONTROL PostgreSQL]**:
 
-   * **[!UICONTROL Server]**: O URL do [!DNL PostgreSQL] servidor.
+   * **[!UICONTROL Server]**: URL do servidor [!DNL PostgreSQL].
 
    * **[!UICONTROL Account]**: Nome do usuário.
 
-   * **[!UICONTROL Password]**: Senha da conta do usuário.
+   * **[!UICONTROL Password]**: Senha da conta de usuário.
 
    * **[!UICONTROL Database]**: Nome do banco de dados (opcional).
 
@@ -75,7 +75,7 @@ O conector é compatível com as seguintes opções:
 
 | Opção | Descrição |
 |:-:|:-:|
-| PGSQL_CONNECT_TIMEOUT | Espera máxima por conexão, em segundos. <br>Para obter mais informações, consulte [Documentação do PostgreSQL](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT). |
-| PGSQL_KEEPALIVES_IDLE | Número de segundos de inatividade após o qual o TCP deve enviar uma mensagem de manutenção de atividade para o servidor. <br>Para obter mais informações, consulte [Documentação do PostgreSQL](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-IDLE). |
-| PGSQL_KEEPALIVES_INTVL | Número de segundos após o qual a mensagem de manutenção de atividade TCP não confirmada pelo servidor deve ser retransmitida.  <br>Para obter mais informações, consulte [Documentação do PostgreSQL](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-INTERVAL). |
-| PGSQL_KEEPALIVES_CNT | Número de manutenções de atividades de TCP que podem ser perdidas antes que a conexão do cliente com o servidor seja considerada inoperante. <br>Para obter mais informações, consulte [Documentação do PostgreSQL](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-COUNT). |
+| PGSQL_CONNECT_TIMEOUT | Espera máxima por conexão, em segundos. <br>Para obter mais informações, consulte a [documentação do PostgreSQL](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT). |
+| PGSQL_KEEPALIVES_IDLE | Número de segundos de inatividade após o qual o TCP deve enviar uma mensagem de manutenção de atividade para o servidor. <br>Para obter mais informações, consulte a [documentação do PostgreSQL](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-IDLE). |
+| PGSQL_KEEPALIVES_INTVL | Número de segundos após o qual a mensagem de manutenção de atividade TCP não confirmada pelo servidor deve ser retransmitida.  <br>Para obter mais informações, consulte a [documentação do PostgreSQL](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-INTERVAL). |
+| PGSQL_KEEPALIVES_CNT | Número de manutenções de atividades de TCP que podem ser perdidas antes que a conexão do cliente com o servidor seja considerada inoperante. <br>Para obter mais informações, consulte a [documentação do PostgreSQL](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-COUNT). |

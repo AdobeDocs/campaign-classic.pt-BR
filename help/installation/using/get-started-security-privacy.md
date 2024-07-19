@@ -51,11 +51,11 @@ O gerenciamento de acesso é uma parte importante do fortalecimento da seguranç
 
 Ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.), sempre siga estas diretrizes:
 
-* **Script** incluir na lista de permissões : tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de strings e evite a injeção de SQL adicionando as funções SQL a serem usadas no arquivo de pesquisa.
+* **Scripting**: tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de cadeias de caracteres e evite a injeção de SQL adicionando as funções SQL a serem usadas no arquivo de inclui na lista de permissões.
 
-* **Proteger o modelo de dados**: usar direitos nomeados para limitar as ações do operador, adicionar filtros do sistema (sysFilter)
+* **Proteger o modelo de dados**: use direitos nomeados para limitar ações do operador, adicionar filtros do sistema (sysFilter)
 
-* **Adicionar captchas em aplicações web**: saiba como adicionar captchas nas páginas de aterrissagem e páginas de assinatura públicas.
+* **Adicionar captchas em aplicativos da Web**: saiba como adicionar captchas em suas páginas de aterrissagem e páginas de assinatura públicas.
 
 [Leia mais](../../installation/using/scripting-coding-guidelines.md)
 
@@ -76,15 +76,15 @@ Também é fundamental que você siga a segurança do mecanismo de banco de dado
 
 A configuração deve ser executada em todos os servidores. Os arquivos de configuração são do tipo **serverConf.xml** e **`config-<instance>.xml`**. Estes são os principais elementos que precisam ser verificados:
 
-* **Zonas de segurança**: configure zonas de segurança para que elas considerem diretamente os endereços IP dos clientes de um proxy.
+* **Zonas de segurança**: configure zonas de segurança para que elas levem em conta diretamente os endereços IP dos clientes de um proxy.
 
-* **Proteção de upload de arquivo**: limite os tipos de arquivos que podem ser carregados no servidor do Adobe Campaign usando um novo atributo uploadAllowList. Isso pode ser usado no arquivo de configuração do servidor.
+* **Proteção de carregamento de arquivo**: limite os tipos de arquivos que podem ser carregados no servidor do Adobe Campaign usando um novo atributo uploadAllowList. Isso pode ser usado no arquivo de configuração do servidor.
 
-* **Retransmissão**: ajuste a configuração de retransmissão desativando as regras de retransmissão para módulos/aplicativos não utilizados.
+* **Retransmissão**: ajuste a configuração de retransmissão desativando as regras de retransmissão para módulos/aplicativos não usados.
 
 * **Proteção de conexão de saída** e **Restrição de comando** (lado do servidor)
 
-* Você também pode adicionar cabeçalhos HTTP extras, ativar checkIPConsistent, enableTLS, sessionTimeOutSec, etc. Consulte a [Documentação de configuração do servidor do Campaign](../../installation/using/configuring-campaign-server.md) e a variável [Descrição do arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md) para obter mais informações.
+* Você também pode adicionar cabeçalhos HTTP extras, ativar checkIPConsistent, enableTLS, sessionTimeOutSec, etc. Consulte a [Documentação de configuração do servidor de campanha](../../installation/using/configuring-campaign-server.md) e a [Descrição do arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md) para obter mais informações.
 
 [Leia mais](../../installation/using/server-configuration.md)
 

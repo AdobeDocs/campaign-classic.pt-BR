@@ -33,7 +33,7 @@ As telas do assistente contêm as seguintes etapas:
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. Para confirmar as alterações, clique no link **[!UICONTROL Finish]** botão.
+1. Para confirmar as alterações, clique no botão **[!UICONTROL Finish]**.
 
 Um arquivo de extensão, chamado &quot;cus:recipient&quot; em nosso exemplo, é criado automaticamente e o script SQL correspondente é executado:
 
@@ -47,4 +47,4 @@ Um arquivo de extensão, chamado &quot;cus:recipient&quot; em nosso exemplo, é 
 
 >[!NOTE]
 >
->Por padrão, os campos adicionados são declarados com a propriedade **usuário** (com o valor &quot;true&quot;). Isso permite exibir e editar o campo no formulário de entrada do schema estendido usando um controle do tipo &quot;treeEdit&quot; (consulte Formulário de entrada).
+>Por padrão, os campos adicionados são declarados com a propriedade **user** (com o valor &quot;true&quot;). Isso permite exibir e editar o campo no formulário de entrada do schema estendido usando um controle do tipo &quot;treeEdit&quot; (consulte Formulário de entrada).

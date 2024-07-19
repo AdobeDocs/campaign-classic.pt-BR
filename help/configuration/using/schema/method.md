@@ -33,7 +33,7 @@ método:==( ajuda) | parameters)
 
 ## Pais {#parents-10}
 
-`<methods>`  ,  `<interface />`
+`<methods>` , `<interface />`
 
 ## Filhos {#children-10}
 
@@ -46,18 +46,18 @@ Esse elemento permite definir um método SOAP.
 
 ## Uso e contexto de uso {#use-and-context-of-use-7}
 
-Os métodos SOAP habilitam processos de aplicativo.
+Os métodos SOAP permitem processos de aplicação.
 
 O &quot;@library&quot; é necessário para declarar um novo método (não nativo): o namespace e o nome usados para a biblioteca são independentes do namespace e do nome do schema em que a declaração é.
 
 ## Descrição do atributo {#attribute-description-10}
 
-* **acesso (string)**: este atributo define o controle de acesso para usar o método. Se este atributo estiver ausente, a identificação é obrigatória. Os valores disponíveis são: &#39;anonymous&#39;, &#39;admin&#39; e &#39;sql&#39;.
+* **acesso (cadeia de caracteres)**: este atributo define o controle de acesso para usar o método. Se este atributo estiver ausente, a identificação é obrigatória. Os valores disponíveis são: &#39;anonymous&#39;, &#39;admin&#39; e &#39;sql&#39;.
 * **const (booleano)**: se estiver ativado, esse atributo significa que o método declarado alterará a entidade
-* **rótulo (string)**: rótulo do método.
-* **biblioteca (sequência de caracteres)**: este método não é nativo do aplicativo. Esse atributo pega o valor da biblioteca de métodos onde a definição de método é encontrada (nms:mylibrary.js).
+* **rótulo (cadeia de caracteres)**: rótulo do método.
+* **biblioteca (cadeia de caracteres)**: este método não é nativo para o aplicativo. Esse atributo pega o valor da biblioteca de métodos onde a definição de método é encontrada (nms:mylibrary.js).
 * **nome (MNTOKEN)**: nome de método exclusivo.
-* **estático (booleano)**: se esse atributo for ativado, o método será considerado autônomo. Todos os parâmetros devem ser especificados para o método quando ele for chamado.
+* **static (booleano)**: se este atributo for ativado, o método será considerado autônomo, todos os parâmetros deverão ser especificados para o método quando ele for chamado.
 
 ## Exemplos {#examples-7}
 

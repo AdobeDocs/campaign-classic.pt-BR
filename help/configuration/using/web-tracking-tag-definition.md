@@ -20,7 +20,7 @@ Uma tag de rastreamento Web é simplesmente um URL construído com os parâmetro
 
 ## Formato dos dados a enviar {#format-of-the-data-to-be-sent}
 
-O formato de um URL de rastreamento Web é o seguinte: **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
+O formato de uma URL de rastreamento Web é o seguinte: **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
 
 >[!NOTE]
 >
@@ -78,7 +78,8 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                               <p>Parâmetro de URL</p> 
                            </td>
                            <td>
-                              <p>Identificador de entrega a ser usado se não houver cookie de sessão. Esse valor deve ser expresso em hexadecimal.
+                              <p>Identificador de entrega a ser usado se não houver cookie de sessão. Este valor deve ser
+                                 expresso em hexadecimal.
                               </p> 
                            </td> 
                         </tr>
@@ -90,14 +91,16 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
                               <p>Parâmetro de URL</p> 
                            </td>
                            <td>
-                              <p>Parâmetro usado para identificar o usuário da Internet. O formato desse parâmetro é "name=value", onde o nome é um campo do schema do recipient. Esse parâmetro tem prioridade sobre o identificador contido no cookie da sessão.
+                              <p>Parâmetro usado para identificar o usuário da Internet. O formato desse parâmetro é "name=value",
+                                 onde o nome é um campo do schema do recipient. Esse parâmetro tem prioridade sobre
+                                 o identificador contido no cookie de sessão.
                               </p> 
                            </td> 
                         </tr> 
                      </tbody>  
                   </table>
 
-**Alguns URLs de rastreamento Web**
+**Algumas URLs de rastreamento Web**
 
 * Visita a uma página identificadora &quot;inicial&quot;
 
@@ -127,5 +130,5 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
 
 Os seguintes métodos são possíveis:
 
-* Inserir o URL no **&quot;src&quot;** atributo de um HTML **`<img>`** tag incorporada na página da Web que você deseja rastrear.
+* Inserindo a URL no atributo **&quot;src&quot;** de uma marca HTML **`<img>`** incorporada à página da Web que você deseja rastrear.
 * Chamada direta para o servidor de redirecionamento quando a página da Web que você deseja rastrear é gerada.

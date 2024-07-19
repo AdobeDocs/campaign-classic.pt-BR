@@ -11,7 +11,7 @@ exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 16%
 
 
 
-A **rastreamento de pilha** representa um rastreamento contido em um **core** arquivo de tipo. Esse arquivo é gerado no caso de um erro de computador. Ele pode identificar a origem do erro.
+Um **rastreamento de pilha** representa um rastreamento contido em um arquivo de tipo **núcleo**. Esse arquivo é gerado no caso de um erro de computador. Ele pode identificar a origem do erro.
 
 >[!NOTE]
 >
->* A **core** o arquivo é nomeado **principal.`<num>`**.
->* **gdb - O depurador GNU** deve estar instalado no computador.
+>* Um arquivo **core** chama-se **core.`<num>`**.
+>* **gdb - O Depurador GNU** deve estar instalado no computador.
 >
 
-O suporte técnico da Adobe Campaign pode solicitar isso **rastreamento de pilha**. Para obtê-lo, insira os seguintes comandos no Linux:
+O suporte técnico da Adobe Campaign pode solicitar este **rastreamento de pilha**. Para obtê-lo, insira os seguintes comandos no Linux:
 
 ```
 su - neolane
@@ -56,7 +56,7 @@ gdb nlserver <coreFile>
 
 O suporte técnico da Adobe Campaign pode solicitar que você execute este comando usando um executável específico (a ser fornecido por nós).
 
-Nesse caso, basta executar o seguinte comando substituindo **nlserver** com o executável fornecido pela Adobe Campaign:
+Nesse caso, basta executar o seguinte comando substituindo **nlserver** pelo executável fornecido pela Adobe Campaign:
 
 ```
 gdb nlserver <coreFile>

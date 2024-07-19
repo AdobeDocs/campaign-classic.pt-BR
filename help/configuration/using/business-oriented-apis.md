@@ -18,7 +18,7 @@ As APIs de negócios são específicas para cada tipo de objeto. Elas têm efeit
 
 * Entregas:
 
-   * Criação de uma ação de delivery, consulte [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
+   * Criando uma ação de entrega, consulte [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
    * enviar uma campanha (iniciar, pausar, parar, enviar prova),
    * recuperação de logs do delivery.
 
@@ -27,17 +27,17 @@ As APIs de negócios são específicas para cada tipo de objeto. Elas têm efeit
    * início de um workflow,
    * verificação de processos etc.
 
-     Consulte [Métodos SOAP em JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+     Consulte [Métodos SOAP no JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Gestão de conteúdo
-* Gerenciamento de assinaturas, consulte [Assinar (nms:subscription)](#subscribe--nms-subscription-) e [Cancelar assinatura (nms:subscription)](#unsubscribe--nms-subscription-).
+* Gerenciamento de assinatura, consulte [Assinar (nms:subscription)](#subscribe--nms-subscription-) e [Cancelar assinatura (nms:subscription)](#unsubscribe--nms-subscription-).
 * Processos de dados: importações, exportações.
 
 Esta seção detalha o uso dos serviços &quot;Assinar&quot;, &quot;Cancelar assinatura&quot; e &quot;Enviar entrega&quot;.
 
 >[!IMPORTANT]
 >
->[Documentação JSAPI do Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
+>A [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) contém informações adicionais sobre chamadas SOAP e uso de Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
 
 ## Assinar (nms:subscription) {#subscribe--nms-subscription-}
 
@@ -62,7 +62,7 @@ Descrição do método &quot;subscribe&quot; no schema &quot;nms:subscription&qu
 </method>
 ```
 
-A definição da chave de reconciliação deve ser inserida por meio do _**key** atributo no `<recipient>` elemento do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
+A definição da chave de reconciliação deve ser inserida por meio do atributo _**key** no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
 
 Esta chamada não retorna dados, exceto erros.
 
@@ -80,7 +80,7 @@ Atualização do recipient e da assinatura.
 <recipient _key="email, [folder-id]" email= "john.doe@adobe.com" folder-id="1305" firstName="John" lastName="Doe"/>
 ```
 
-### Exemplo de mensagens SOAP {#example-of-soap-messages}
+### Exemplo de mensagens de SOAP {#example-of-soap-messages}
 
 * Consulta:
 
@@ -133,7 +133,7 @@ Descrição do método &quot;Unsubscribe&quot; no schema &quot;nms:subscription&
 </method>
 ```
 
-A definição da chave de reconciliação deve ser inserida por meio do atributo _key no `<recipient>` elemento do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
+A definição da chave de reconciliação deve ser inserida por meio do atributo _key no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
 
 Se o recipient não estiver presente no banco de dados ou não estiver inscrito no serviço de informações relacionado, o serviço não executará nenhuma ação e não gerará um erro.
 
@@ -143,7 +143,7 @@ Se o recipient não estiver presente no banco de dados ou não estiver inscrito 
 
 Esta chamada não retorna dados, exceto erros.
 
-### Exemplo de mensagens SOAP {#example-of-soap-messages-1}
+### Exemplo de mensagens de SOAP {#example-of-soap-messages-1}
 
 Consulta:
 
@@ -204,7 +204,7 @@ Esta chamada não retorna dados, exceto erros.
 
 ### Exemplo de documento XML {#xml-document-example}
 
-Este exemplo é baseado em um template de delivery personalizado de uma fonte de dados externa (um arquivo nesse caso). A configuração é totalmente descrita no template do delivery, de modo que tudo o que falta enviar quando a chamada ocorre é o conteúdo do arquivo do `<externalsource>` elemento.
+Este exemplo é baseado em um template de delivery personalizado de uma fonte de dados externa (um arquivo nesse caso). A configuração está totalmente descrita no modelo de entrega, de modo que tudo o que falta enviar quando a chamada ocorre é o conteúdo do arquivo do elemento `<externalsource>`.
 
 ```
 <delivery>

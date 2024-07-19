@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Editar árvore de navegação do Campaign Explorer{#edition}
 
-A tela para criar e configurar os documentos de configuração da hierarquia de navegação pode ser acessada por meio da **[!UICONTROL Administration > Configuration > Navigation hierarchies]** nó:
+A tela para criar e configurar os documentos de configuração da hierarquia de navegação pode ser acessada por meio do nó **[!UICONTROL Administration > Configuration > Navigation hierarchies]**:
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
@@ -27,7 +27,7 @@ O campo de edição fornece o conteúdo do documento XML:
 
 >[!NOTE]
 >
->O controle de edição &quot;Nome&quot; permite a inserção da chave do documento que consiste no nome e no namespace. Os atributos &quot;name&quot; e &quot;namespace&quot; da variável **`<navtree>`** Os elementos são atualizados automaticamente no campo de edição XML do schema.
+>O controle de edição &quot;Nome&quot; permite a inserção da chave do documento que consiste no nome e no namespace. Os atributos &quot;name&quot; e &quot;namespace&quot; do elemento **`<navtree>`** são atualizados automaticamente no campo de edição XML do esquema.
 
 A visualização gera automaticamente o documento mesclado que contém a configuração completa:
 

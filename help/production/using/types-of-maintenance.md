@@ -11,7 +11,7 @@ exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '505'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## Manutenção de aplicativos {#application-maintenance}
 
-O Adobe Campaign fornece um workflow incorporado que permite agendar determinadas tarefas de manutenção de banco de dados: o **fluxo de trabalho de limpeza do banco de dados**. Esse workflow executa as seguintes tarefas:
+O Adobe Campaign fornece um fluxo de trabalho interno que permite agendar determinadas tarefas de manutenção de banco de dados: o **fluxo de trabalho de limpeza de banco de dados**. Esse workflow executa as seguintes tarefas:
 
 * exclusão de registros expirados,
 * exclusão de registros órfãos e reinicialização de status para objetos expirados,
@@ -68,7 +68,7 @@ Várias estratégias estão disponíveis:
   <tr> 
    <td> Desfragmentação online<br /> </td> 
    <td> A maioria dos mecanismos de banco de dados fornece métodos de desfragmentação.<br /> </td> 
-   <td> Basta usar o método de desfragmentação de banco de dados. Esses métodos geralmente cuidam dos problemas de integridade, bloqueando os dados durante a desfragmentação.<br /> </td> 
+   <td> Basta usar o método de desfragmentação de banco de dados. Esses métodos geralmente resolvem problemas de integridade bloqueando os dados durante a desfragmentação.<br /> </td> 
    <td> Dependendo do banco de dados, esses métodos de desfragmentação podem ser fornecidos como uma opção RDBMS (Oracle) e nem sempre são a maneira mais eficiente de lidar com tabelas maiores.<br /> </td> 
   </tr> 
   <tr> 
@@ -78,9 +78,9 @@ Várias estratégias estão disponíveis:
    <td> Como a tabela é excluída e recriada, o aplicativo não pode ser deixado online, mesmo no modo somente leitura (a tabela não está disponível durante a fase de restauração).<br /> </td> 
   </tr> 
   <tr> 
-   <td> Duplicar, renomear e soltar<br /> </td> 
-   <td> Isso cria uma cópia de uma tabela e seus índices, elimina a existente e renomeia a cópia para ocupar seu lugar.<br /> </td> 
-   <td> Esse método é mais rápido que a primeira abordagem, pois gera menos IOs (nenhuma cópia como arquivo e a leitura desse arquivo).<br /> </td> 
+   <td> Duplicar, renomear e descartar<br /> </td> 
+   <td> Isso cria uma cópia de uma tabela e seus índices, remove a tabela existente e renomeia a cópia para assumir seu lugar.<br /> </td> 
+   <td> Este método é mais rápido que a primeira abordagem, pois gera menos E/Ss (nenhuma cópia como arquivo e leitura deste arquivo).<br /> </td> 
    <td> Requer o dobro de espaço.<br /> Todos os processos ativos que gravam na tabela durante o processo devem ser interrompidos. No entanto, os processos de leitura não serão afetados, pois a tabela é trocada no último momento depois de recriada. <br /> </td> 
   </tr> 
  </tbody> 

@@ -19,7 +19,7 @@ ht-degree: 36%
 
 
 
-Se determinadas **jsp** os trabalhos não são executados com êxito, é necessário forçá-los a recompilar.
+Se determinados trabalhos **jsp** não forem executados com êxito, você deverá forçá-los a recompilar.
 
 Para isso, insira os seguintes comandos:
 
@@ -30,4 +30,4 @@ rm -r work/
 nlserver start web
 ```
 
-A variável **jsp** os processos são gerados novamente na próxima vez que você se conectar.
+Os trabalhos **jsp** são regenerados na próxima vez que você se conectar.

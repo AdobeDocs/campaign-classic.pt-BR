@@ -11,7 +11,7 @@ exl-id: e77800f5-c0ae-446d-8ff3-bc8a18c97dbd
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -25,7 +25,7 @@ Mensagens de erro como a seguir podem ser exibidas (principalmente em logs de en
 
 A causa é a seguinte:
 
-O Adobe Campaign gera arquivos temporários em **/tmp**, e os renomeia para movê-los para **/usr/local/neolane/nl6/var**. Esse erro ocorre quando ambas as pastas (**/tmp** e **/usr/local/neolane/nl6/var**, que é, na verdade, um vínculo simbólico com **/var/nl6**) correspondem a diferentes dispositivos. A variável **df** é utilizado para verificação.
+O Adobe Campaign gera arquivos temporários em **/tmp** e os renomeia para movê-los para **/usr/local/neolane/nl6/var**. Este erro ocorre quando ambas as pastas (**/tmp** e **/usr/local/neolane/nl6/var**, que é, na verdade, um link simbólico para **/var/nl6**) correspondem a dispositivos diferentes. O comando **df** é usado para verificação.
 
 Para corrigir esse problema, os arquivos temporários devem ser gerados no mesmo dispositivo do destino.
 

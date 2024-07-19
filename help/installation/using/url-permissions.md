@@ -11,7 +11,7 @@ exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
@@ -25,21 +25,21 @@ Por padrão, as instâncias não têm permissão para se conectar a URLs externo
 
 >[!NOTE]
 >
->Este procedimento é limitado a **no local** implantações.
+>Este procedimento é restrito a **implantações locais**.
 >
->Como um **hospedado** cliente, se você puder acessar [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR), você pode usar a interface de autoatendimento de permissões de URL. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=pt-BR)
+>Como cliente **hospedado**, se você puder acessar o [Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR), poderá usar a interface de autoatendimento de permissões de URL. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=pt-BR)
 >
->Outro **híbrido/hospedado** os clientes precisam entrar em contato com a equipe de suporte do Adobe para adicionar IP ao incluo na lista de permissões.
+>Outros clientes **híbridos/hospedados** precisam entrar em contato com a equipe de suporte do Adobe para adicionar IP ao incluo na lista de permissões.
 >
 
-Para **Híbrido** e **No local** implantações, o administrador precisa consultar um novo **urlPermission** no **serverConf.xml** arquivo.
+Para implantações **Híbridas** e **No local**, o administrador precisa fazer referência a uma nova **urlPermission** no arquivo **serverConf.xml**.
 
 
 Três modos de proteção de conexão estão disponíveis:
 
-* **Bloqueio** incluir na lista de permissões : todos os URLs que não pertencem ao arquivo de classificação são bloqueados, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
-* **Permissivo**: todos os URLs fora do incluo na lista de permissões são permitidos.
-* **Aviso** incluir na lista de permissões : todos os URLs que não pertencem ao arquivo são permitidos, mas o interpretador JS emite um aviso para que o administrador possa coletá-los. Esse modo adiciona mensagens de aviso JST-310027.
+* **Bloqueio**: todas as URLs fora do arquivo de inclui na lista de permissões são bloqueadas, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
+* **Permissivo**: todas as URLs fora do grupo de inclui na lista de permissões são permitidas.
+* **Aviso**: todas as URLs fora do arquivo de inclui na lista de permissões são permitidas, mas o interpretador JS emite um aviso para que o administrador possa coletá-las. Esse modo adiciona mensagens de aviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -51,9 +51,9 @@ Três modos de proteção de conexão estão disponíveis:
 
 >[!IMPORTANT]
 >
->Por padrão, novas implementações usam a variável **Bloqueio** modo.
+>Por padrão, as novas implementações usam o modo **Bloqueio**.
 >
->Como um cliente existente proveniente de uma migração, você pode usar temporariamente o **Aviso** modo. Analise o tráfego de saída antes de permitir os URLs. Depois que a lista de URLs permitidos for definida, você poderá adicionar os URLs ao incluo na lista de permissões e ativar o **Bloqueio** modo.
+>Como um cliente existente proveniente de uma migração, você pode usar temporariamente o modo **Aviso**. Analise o tráfego de saída antes de permitir os URLs. Após a definição da lista de URLs permitidos, você poderá adicionar as URLs ao incluo na lista de permissões e ativar o modo **Bloqueio**.
 
 Para obter mais informações, consulte esta seção.
 

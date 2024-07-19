@@ -4,12 +4,12 @@ title: Target mapping
 description: Saiba como criar um target mapping
 feature: Application Settings
 role: Data Engineer, Developer
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
 source-wordcount: '499'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -53,7 +53,7 @@ Para fazer isso, siga as etapas abaixo:
    </srcSchema>
    ```
 
-1. Declare seu esquema como uma visualização externa usando o atributo =&quot;true&quot;. Consulte [O atributo de visualização](../../configuration/using/schema-characteristics.md#the-view-attribute).
+1. Declare seu esquema como uma visualização externa usando o atributo =&quot;true&quot;. Consulte [O atributo de exibição](../../configuration/using/schema-characteristics.md#the-view-attribute).
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -83,34 +83,34 @@ Para fazer isso, siga as etapas abaixo:
    ```
 
 1. Clique no nó **[!UICONTROL Administration > Campaign management > Target mappings]**.
-1. Clique em **Novo** botão para abrir o assistente de criação de target mapping.
-1. Insira o **Rótulo** e selecione o schema que acabou de criar na caixa **Dimensão de direcionamento** campo.
+1. Clique no botão **Novo** para abrir o assistente de criação de target mapping.
+1. Insira o campo **Rótulo** e selecione o esquema que você acabou de criar no campo **Targeting dimension**.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. No **Editar formulários de endereço** selecione os campos do schema que correspondem aos vários endereços de delivery. Aqui, podemos mapear o **@email** e **@mobile** campos.
+1. Na janela **Editar formulários de endereço**, selecione os campos do esquema que correspondam aos vários endereços de entrega. Aqui, podemos mapear os campos **@email** e **@mobile**.
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. No seguinte **Armazenamento** , insira o **Sufixo dos esquemas de extensão** para diferenciar os novos esquemas dos esquemas prontos para uso fornecidos pela Adobe Campaign.
+1. Na janela **Storage** a seguir, insira o campo **Suffix of the extension schemas** para diferenciar os novos esquemas dos esquemas prontos para uso fornecidos pela Adobe Campaign.
 
-   Clique em **[!UICONTROL Define new additional fields]** para selecionar a dimensão que deseja direcionar no delivery.
+   Clique em **[!UICONTROL Define new additional fields]** para selecionar a dimensão que deseja direcionar na entrega.
 
    Por padrão, o gerenciamento de exclusão é armazenado na mesma tabela que as mensagens.
 
-   Verifique a **Gerar um esquema de armazenamento para rastreamento** se desejar configurar o armazenamento para o rastreamento vinculado ao target mapping.
+   Marque a caixa **Gerar um esquema de armazenamento para rastreamento** se desejar configurar o armazenamento para o rastreamento vinculado ao target mapping.
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >O Adobe Campaign não é compatível com vários esquemas de recipient, conhecidos como esquemas de direcionamento, vinculados aos mesmos esquemas de broadlog e/ou trackinglog. Caso contrário, isso pode levar a anomalias na reconciliação de dados posteriormente. Para obter mais informações, consulte [Recomendação e limitações](../../configuration/using/about-custom-recipient-table.md) página.
+   >O Adobe Campaign não é compatível com vários esquemas de recipient, conhecidos como esquemas de direcionamento, vinculados aos mesmos esquemas de broadlog e/ou trackinglog. Caso contrário, isso pode levar a anomalias na reconciliação de dados posteriormente. Para obter mais informações, consulte a página [Recomendação e limitações](../../configuration/using/about-custom-recipient-table.md).
 
-1. No **Extensões** selecione os esquemas opcionais que deseja gerar (a lista de esquemas disponíveis depende dos módulos instalados na plataforma Adobe Campaign).
+1. Na janela **Extensões**, selecione os esquemas opcionais que deseja gerar (a lista de esquemas disponíveis depende dos módulos instalados na plataforma Adobe Campaign).
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. Clique em **Salvar** botão para fechar o assistente.
+1. Clique no botão **Salvar** para fechar o assistente.
 
    O assistente usa o schema de início para criar todos os outros schemas necessários para fazer o novo target mapping funcionar.
 

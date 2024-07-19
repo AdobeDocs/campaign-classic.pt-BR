@@ -43,7 +43,7 @@ O Adobe Campaign se baseia em vários processos executados no lado do servidor q
 
 >[!NOTE]
 >
->Para obter mais informações sobre os vários processos do Adobe Campaign, consulte [nesta seção](../../installation/using/general-architecture.md#logical-application-layer).\
+>Para obter mais informações sobre os vários processos do Adobe Campaign, consulte [esta seção](../../installation/using/general-architecture.md#logical-application-layer).\
 >Ao usar a arquitetura do tipo Power Boster ou Power Cluster, você deve aplicar esse processo a todos os servidores Power Boster/Cluster.
 
 Se a nova versão envolver uma alteração na estrutura do banco de dados, recomendamos reiniciar os servidores na seguinte ordem:

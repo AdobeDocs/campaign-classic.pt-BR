@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Proteção de privacidade de email no aplicativo de email do Apple
 
-![Aplicável a v7 e v8](../../assets/common.svg)
+![Aplica-se a v7 e v8](../../assets/common.svg)
 
 ## O que mudou?
 
@@ -29,11 +29,11 @@ O novo recurso da Apple é o formato do que está por vir no setor em termos de 
 
 ### Avalie o impacto dos acionadores da campanha
 
-Avalie como essas alterações afetam os acionadores atuais do Campaign. Identifique os workflows nos quais as aberturas de email são usadas como critério para segmentação, direcionamento ou redirecionamento. Leia o [dicas e truques](#find-email-open-tracking).
+Avalie como essas alterações afetam os acionadores atuais do Campaign. Identifique os workflows nos quais as aberturas de email são usadas como critério para segmentação, direcionamento ou redirecionamento. Leia as [dicas e truques](#find-email-open-tracking).
 
 ### Preservar seus dados
 
-Preserve seus dados e consolide seu conhecimento atual sobre dispositivos. Você pode basear os KPIs (indicadores-chave de desempenho) no agente do usuário. Por exemplo, você pode criar KPIs em torno de perfis de pessoas que usam o iOS e o aplicativo de email da Apple. Leia o [dicas e truques](#preserve-tracking-data).
+Preserve seus dados e consolide seu conhecimento atual sobre dispositivos. Você pode basear os KPIs (indicadores-chave de desempenho) no agente do usuário. Por exemplo, você pode criar KPIs em torno de perfis de pessoas que usam o iOS e o aplicativo de email da Apple. Leia as [dicas e truques](#preserve-tracking-data).
 
 ### Arquivar os logs de rastreamento além do período de retenção
 
@@ -46,7 +46,7 @@ Arquive os logs de rastreamento além do período de retenção do Adobe Campaig
 ### Avaliar a tendência atual em taxas abertas
 
 Determine qual proporção do público-alvo usa o aplicativo de email do Apple em um dispositivo iOS.
-Com essa avaliação, você pode identificar possíveis lacunas anômalas e suas causas. Você pode determinar se uma lacuna se deve a problemas de desempenho da campanha ou à funcionalidade de proteção de privacidade da Apple. Leia o [dicas e truques](#measure-ios-footprint).
+Com essa avaliação, você pode identificar possíveis lacunas anômalas e suas causas. Você pode determinar se uma lacuna se deve a problemas de desempenho da campanha ou à funcionalidade de proteção de privacidade da Apple. Leia as [dicas e truques](#measure-ios-footprint).
 
 ### Reavalie sua estratégia de campanha e métricas de desempenho
 
@@ -60,7 +60,7 @@ Recomendamos explorar os dados disponíveis no momento e avaliar a correlação 
 
 Para coletar insights dos dados do Adobe Campaign, você pode usar relatórios prontos para uso:
 
-* **[!UICONTROL Operating Systems]** relatório
+* Relatório de **[!UICONTROL Operating Systems]**
 
   Para identificar a proporção de visitantes por sistema operacional e por versão, use este relatório. [Leia mais](../../reporting/using/global-reports.md#operating-systems).
 
@@ -72,7 +72,7 @@ Para coletar insights dos dados do Adobe Campaign, você pode usar relatórios p
 
   ![](../../reporting/using/assets/s_ncs_user_os_report2.png)
 
-* **[!UICONTROL Breakdown of opens]** relatório
+* Relatório de **[!UICONTROL Breakdown of opens]**
 
   Para identificar a proporção de aberturas de email por sistema operacional, use este relatório. [Leia mais](../../reporting/using/global-reports.md#breakdown-of-opens).
 
@@ -82,7 +82,7 @@ Para coletar insights dos dados do Adobe Campaign, você pode usar relatórios p
 
 Você pode identificar os workflows nos quais as aberturas de email são usadas como critério para segmentação, direcionamento e redirecionamento.
 
-Para fazer isso, você pode usar o **[!UICONTROL type]** atributo do URL do link rastreado (**[!UICONTROL url/@type]**). Para aberturas de email, esse atributo é definido como **[!UICONTROL Open]**. Esse atributo está disponível no Editor de consultas, o **[!UICONTROL Query]** atividade em um fluxo de trabalho e filtros predefinidos. Você pode usar esse atributo como um critério de direcionamento para campanhas de marketing.
+Para fazer isso, você pode usar o atributo **[!UICONTROL type]** da URL do link rastreado (**[!UICONTROL url/@type]**). Para aberturas de email, este atributo é definido como **[!UICONTROL Open]**. Este atributo está disponível no editor de consultas, na atividade **[!UICONTROL Query]** em um fluxo de trabalho e em filtros predefinidos. Você pode usar esse atributo como um critério de direcionamento para campanhas de marketing.
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -90,7 +90,7 @@ Neste exemplo, um profissional de marketing deseja enviar uma oferta de recompen
 
 * Você pode usar aberturas de email como um critério de direcionamento em uma query.
 
-  Você pode especificar, como uma condição de filtragem, que o tipo de URL dos logs de rastreamento de um delivery específico deve ser definido como **[!UICONTROL Open]**.
+  Você pode especificar, como uma condição de filtragem, que o tipo de URL dos logs de rastreamento de uma entrega específica deve ser definido como **[!UICONTROL Open]**.
 
   ![](assets/identify-email-open-tracking-2.png)
 
@@ -106,7 +106,7 @@ Neste exemplo, um profissional de marketing deseja enviar uma oferta de recompen
   >
   >Em um fluxo de trabalho, não é possível exibir os critérios de direcionamento de um filtro predefinido.
 
-Para recuperar a lista de workflows em que as aberturas de email são usadas como critério de direcionamento, você deve consultar o `xtk:workflow` esquema. O conteúdo do workflow é armazenado na variável **[!UICONTROL XML memo (data)]** no formato XML.
+Para recuperar a lista de fluxos de trabalho em que as aberturas de email são usadas como critério de direcionamento, você deve consultar o esquema `xtk:workflow`. O conteúdo do fluxo de trabalho é armazenado no campo **[!UICONTROL XML memo (data)]** no formato XML.
 
 ![](assets/identify-email-open-tracking-5.png)
 
@@ -114,7 +114,7 @@ Você pode especificar que os workflows devem incluir este conteúdo:
 
 `expr="[url/@type] = 2"`
 
-Este critério de direcionamento significa que o tipo de URL rastreado deve ser definido como **[!UICONTROL Open]**.
+Este critério de direcionamento significa que o tipo de URL rastreada deve ser definido como **[!UICONTROL Open]**.
 
 ![](assets/identify-email-open-tracking-6.png)
 
@@ -139,7 +139,7 @@ Este exemplo mostra uma implementação personalizada em um único fluxo de trab
 >
 >É altamente recomendável testar e validar esse pacote em um ambiente de não produção.
 
-Baixe o [pacote de exemplo](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) e instale-o. [Saiba mais](../../platform/using/working-with-data-packages.md#importing-packages).
+Baixe o [pacote de amostra](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) e instale-o. [Saiba mais](../../platform/using/working-with-data-packages.md#importing-packages).
 
 Após instalar o pacote, você pode acessar o workflow a partir da pasta que contém os workflows técnicos prontos na sua instância:
 
@@ -159,7 +159,7 @@ O workflow inclui estas etapas principais:
 
 O workflow inclui estas etapas detalhadas:
 
-1. A atividade inicial é uma atividade de query na `xtk:workflow` esquema. Essa atividade é usada para encontrar, na instância de acordo, as consultas explícitas do fluxo de trabalho que incluem aberturas de email como um critério de direcionamento.
+1. A atividade inicial é uma atividade de consulta no esquema `xtk:workflow`. Essa atividade é usada para encontrar, na instância de acordo, as consultas explícitas do fluxo de trabalho que incluem aberturas de email como um critério de direcionamento.
 
    ![](assets/identify-email-open-tracking-9.png)
 
@@ -340,11 +340,11 @@ Para preservar os dados de rastreamento, é necessário exportá-los do Adobe Ca
 
 >[!IMPORTANT]
 >
->O exemplo a seguir se concentra no pacote pronto para uso `nms:Recipient` esquema, que é o esquema de perfil padrão. Se você usar mapeamentos de destino personalizados adicionais que são anexados a perfis personalizados, recomendamos estender essa estratégia de exportação para todas as tabelas de logs personalizadas. [Leia mais](../../configuration/using/target-mapping.md).
+>O exemplo a seguir foca no esquema `nms:Recipient` pronto para uso, que é o esquema de perfil padrão. Se você usar mapeamentos de destino personalizados adicionais que são anexados a perfis personalizados, recomendamos estender essa estratégia de exportação para todas as tabelas de logs personalizadas. [Leia mais](../../configuration/using/target-mapping.md).
 
 ##### Princípio
 
-Por padrão, a variável `nms:Recipient` O esquema está vinculado a três esquemas que devem ser exportados:
+Por padrão, o esquema `nms:Recipient` está vinculado a três esquemas que você deve exportar:
 
 | Esquema | Conteúdo |
 | --- | --- |
@@ -382,11 +382,11 @@ Este exemplo mostra como exportar dados de rastreamento do Adobe Campaign.
    A query inicial é usada para recuperar os logs de rastreamento dos últimos três meses.
 Você pode usar um query incremental para extrair apenas os registros que ainda não foram exportados.
 
-   Adicione todas as informações necessárias do **[!UICONTROL Additional data]** nó.
+   Adicione todas as informações necessárias do nó **[!UICONTROL Additional data]**.
 
    ![](assets/export-tracking-data-2.png)
 
-1. Adicionar um **[!UICONTROL Data extraction (file)]** atividade. Mapeie todos os dados do query para um formato de arquivo de extração.
+1. Adicione uma atividade **[!UICONTROL Data extraction (file)]**. Mapeie todos os dados do query para um formato de arquivo de extração.
 
    ![](assets/export-tracking-data-3.png)
 
@@ -425,14 +425,14 @@ Estes exemplos mostram como é possível usar workflows para dividir registros p
 
 * O primeiro exemplo de fluxo de trabalho inclui estas atividades:
 
-   1. O valor inicial **[!UICONTROL Query]** A atividade é usada para selecionar todas as aberturas de email dos últimos três meses.
-   1. A **[!UICONTROL Split]** A atividade é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
+   1. A atividade inicial **[!UICONTROL Query]** é usada para selecionar todas as aberturas de email dos últimos três meses.
+   1. Uma atividade **[!UICONTROL Split]** é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
 
-   1. A **[!UICONTROL Deduplication]** A atividade segue cada **[!UICONTROL Split]** atividade. A variável **[!UICONTROL Deduplication]** A atividade é usada para remover endereços de email duplicados.
+   1. Uma atividade **[!UICONTROL Deduplication]** segue cada atividade **[!UICONTROL Split]**. A atividade **[!UICONTROL Deduplication]** é usada para remover endereços de email duplicados.
 
-      A variável **[!UICONTROL Deduplication]** A atividade é posicionada após o **[!UICONTROL Split]** atividade para evitar a perda de informações sobre recipients que usam vários dispositivos.
+      A atividade **[!UICONTROL Deduplication]** é posicionada após a atividade **[!UICONTROL Split]** para evitar a perda de informações sobre destinatários que usam vários dispositivos.
 
-   1. Um **[!UICONTROL End]** A atividade segue cada **[!UICONTROL Deduplication]** atividade.
+   1. Uma atividade **[!UICONTROL End]** segue cada atividade **[!UICONTROL Deduplication]**.
 
   Esse tipo de workflow é útil se você armazenar recipients somente na tabela de recipients predefinida para direcionamento.
 
@@ -440,14 +440,14 @@ Estes exemplos mostram como é possível usar workflows para dividir registros p
 
 * O segundo exemplo de fluxo de trabalho inclui estas atividades:
 
-   1. O valor inicial **[!UICONTROL Query]** A atividade é usada para selecionar todas as aberturas de email dos últimos três meses.
-   1. A **[!UICONTROL Deduplication]** A atividade é usada para remover endereços de email duplicados.
-   1. A **[!UICONTROL Fork]** atividade é usada:
+   1. A atividade inicial **[!UICONTROL Query]** é usada para selecionar todas as aberturas de email dos últimos três meses.
+   1. Uma atividade **[!UICONTROL Deduplication]** é usada para remover endereços de email duplicados.
+   1. Uma atividade **[!UICONTROL Fork]** é usada:
 
-      * Em uma transição, a variável **[!UICONTROL Change dimension]** A atividade é usada para encontrar os recipients aos quais o log de rastreamento se refere.
-      * Na outra transição, o **[!UICONTROL Split]** A atividade é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
+      * Em uma transição, a atividade **[!UICONTROL Change dimension]** é usada para encontrar os recipients aos quais o log de rastreamento se refere.
+      * Na outra transição, a atividade **[!UICONTROL Split]** é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
 
-   1. Um **[!UICONTROL End]** A atividade de segue cada transição após a variável **[!UICONTROL Split]** atividade.
+   1. Uma atividade **[!UICONTROL End]** segue cada transição após a atividade **[!UICONTROL Split]**.
 
   Esse tipo de workflow é útil se você armazenar recipients em uma tabela diferente da tabela de recipients predefinida.
 

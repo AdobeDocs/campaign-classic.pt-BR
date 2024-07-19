@@ -7,7 +7,7 @@ exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '1140'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -31,13 +31,13 @@ A seção superior da janela de configuração dessa atividade permite definir o
 
 Você pode definir um pré-processamento a ser executado durante a importação do arquivo, por exemplo, para não precisar descompactar o arquivo no servidor (e, portanto, economizar espaço para o arquivo descompactado), e incluir a descompactação no processamento de arquivo. [Saiba como descompactar ou descriptografar um arquivo antes do processamento](../../platform/using/unzip-decrypt.md).
 
-Para fazer isso, selecione o **[!UICONTROL Pre-process the file]** e escolha uma das três opções: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) ou **[!UICONTROL Decrypt]** (gpg).
+Para fazer isso, selecione a opção **[!UICONTROL Pre-process the file]** e escolha uma das três opções: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) ou **[!UICONTROL Decrypt]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
 
 >[!CAUTION]
 >
->Se você estiver trabalhando com uma implantação híbrida ou no local, os comandos de pré-processamento podem não funcionar imediatamente, pois a configuração padrão usa &quot;zcat&quot;, que não está disponível no Windows. Nesse caso, é necessário ajustar a variável **preProcessCommand** no arquivo de configuração do servidor (serverConf.xml) para atender às suas necessidades. [Saiba como configurar comandos de pré-processamento no arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md#preprocesscommand)
+>Se você estiver trabalhando com uma implantação híbrida ou no local, os comandos de pré-processamento podem não funcionar imediatamente, pois a configuração padrão usa &quot;zcat&quot;, que não está disponível no Windows. Nesse caso, você precisa ajustar o nó **preProcessCommand** no arquivo de configuração do servidor (serverConf.xml) para atender às suas necessidades. [Saiba como configurar comandos de pré-processamento no arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 ## Definição do formato de arquivo {#defining-the-file-format}
 

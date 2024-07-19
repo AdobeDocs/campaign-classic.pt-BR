@@ -22,18 +22,18 @@ ht-degree: 3%
 
 Certas alterações importantes no Adobe Campaign v7 exigem configuração específica. Essas configurações podem ser necessárias antes ou depois da migração.
 
-Durante a migração, a variável **NmsRecipient** A tabela é recriada a partir da definição de schemas. Qualquer alteração feita na estrutura SQL desta tabela fora do Adobe Campaign será perdida.
+Durante a migração, a tabela **NmsRecipient** é recriada da definição de esquemas. Qualquer alteração feita na estrutura SQL desta tabela fora do Adobe Campaign será perdida.
 
 Exemplo de elementos a serem verificados:
 
-* Se você tiver adicionado uma coluna (ou um índice) à variável **NmsRecipient** tabela, mas você não a detalhou no schema, isso não será salvo.
-* A variável **tablespace** o atributo recupera seus valores por padrão, em outras palavras, aqueles definidos no assistente de implantação.
-* Se você tiver adicionado uma visualização de referência à variável **NmsRecipient** você deve excluí-la antes de migrar.
+* Se você tiver adicionado uma coluna (ou um índice) à tabela **NmsRecipient**, mas não a tiver detalhado no esquema, ela não será salva.
+* O atributo **tablespace** recupera seus valores por padrão, ou seja, aqueles definidos no assistente de implantação.
+* Se você tiver adicionado um modo de exibição de referência à tabela **NmsRecipient**, exclua-o antes de migrar.
 
 
 ## Antes da migração {#before-the-migration}
 
-Ao migrar para o Adobe Campaign v7, os seguintes elementos devem ser configurados. Esses elementos devem ser abordados antes de iniciar o **pós-atualização**.
+Ao migrar para o Adobe Campaign v7, os seguintes elementos devem ser configurados. Esses elementos devem ser abordados antes de iniciar o **postupgrade**.
 
 <!--
 
@@ -59,7 +59,7 @@ Ao migrar para o Adobe Campaign v7, os seguintes elementos devem ser configurado
 
 * Senhas
 
-  Você deve configurar o **Admin** e **Interno** senhas. [Saiba mais](../../migration/using/before-starting-migration.md#user-passwords)
+  Você deve configurar as senhas **Admin** e **Internal**. [Saiba mais](../../migration/using/before-starting-migration.md#user-passwords)
 
 <!--
 * Tree structure
@@ -78,7 +78,7 @@ Ao migrar para o Adobe Campaign v7, os seguintes elementos devem ser configurado
 
 ## Após a migração {#after-the-migration}
 
-Após a execução **pós-atualização**, verifique e configure os seguintes elementos:
+Depois de executar **postupgrade**, verifique e configure os seguintes elementos:
 
 * Mirror pages
 
@@ -86,11 +86,11 @@ Após a execução **pós-atualização**, verifique e configure os seguintes el
 
   Se você usou o bloco de personalização v5 em suas mensagens, a exibição da mirror page falhará. O Adobe recomenda usar o novo bloco de personalização ao inserir uma mirror page em suas mensagens.
 
-  No entanto, como solução temporária (e como as mirror pages ainda estão ativas), você pode voltar para o bloco de personalização antigo para evitar esse problema alterando a opção **[!UICONTROL XtkAcceptOldPasswords]** e defina-o como **[!UICONTROL 1]**. Isso não afetará o uso do novo bloco de personalização da v6.x.
+  No entanto, como solução temporária (e como as mirror pages ainda estão ativas), você pode voltar para o bloco de personalização antigo para evitar esse problema alterando a opção **[!UICONTROL XtkAcceptOldPasswords]** e definindo-o como **[!UICONTROL 1]**. Isso não afetará o uso do novo bloco de personalização da v6.x.
 
 * Sintaxe
 
-  Se você encontrar erros relacionados à sintaxe, durante a pós-atualização, ative temporariamente o **allowSQLInjection** opção no **serverConf.xml** arquivo, pois isso dá tempo para reescrever o código. Depois que o código for adaptado, reative a segurança.
+  Se você encontrar erros relacionados à sintaxe, durante a pós-atualização, ative temporariamente a opção **allowSQLInjection** no arquivo **serverConf.xml**, pois isso lhe dará tempo para reescrever o código. Depois que o código for adaptado, reative a segurança.
 
 * Conflitos
 
@@ -102,11 +102,11 @@ Após a execução **pós-atualização**, verifique e configure os seguintes el
 
 * Relatórios
 
-  Todos os relatórios prontos para uso atualmente usam o mecanismo de renderização v6.x. Se você tiver adicionado o código JavaScript nos relatórios, alguns elementos poderão ser afetados.
+  Todos os relatórios prontos para uso atualmente usam o mecanismo de renderização v6.x. Se você tiver adicionado o código JavaScript aos relatórios, alguns elementos poderão ser afetados.
 
 * Aplicações web
 
-  Após a pós-atualização, se houver problemas de conexão com seus aplicativos web identificados, você deverá ativar o **allowUserPassword** e **sessionTokenOnly** opções no **serverConf.xml** arquivo. Para evitar qualquer problema de segurança, essas duas opções devem ser reativadas após a solução do problema.
+  Após a pós-atualização, se você tiver algum problema de conexão com seus aplicativos Web identificados, ative as opções **allowUserPassword** e **sessionTokenOnly** no arquivo **serverConf.xml**. Para evitar qualquer problema de segurança, essas duas opções devem ser reativadas após a solução do problema.
 
   Dependendo do tipo de aplicações web e sua configuração, você deve executar manipulações adicionais para garantir que elas funcionem corretamente.
 
@@ -137,7 +137,7 @@ Após a execução **pós-atualização**, verifique e configure os seguintes el
 
 * Interação
 
-  Se você usar **Interação**, é necessário ajustar todos os parâmetros após a migração.
+  Se você usar a **Interação**, deverá ajustar todos os parâmetros após a migração.
 
 <!--
 

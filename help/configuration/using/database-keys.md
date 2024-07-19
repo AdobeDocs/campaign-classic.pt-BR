@@ -26,12 +26,12 @@ Uma chave é declarada pelo elemento principal do schema de dados.
 </key>
 ```
 
-Uma chave é conhecida como &quot;chave primária&quot; quando é a primeira no esquema a ser preenchida ou se contém a variável `internal` atributo definido como &quot;true&quot;.
+Uma chave é conhecida como &quot;chave primária&quot; quando é a primeira no esquema a ser preenchida, ou se contém o atributo `internal` definido como &quot;true&quot;.
 
 As seguintes regras se aplicam às chaves:
 
 * Uma chave pode fazer referência a um ou mais campos na tabela
-* Um índice exclusivo é declarado implicitamente para cada definição de chave. A criação de um índice na chave pode ser impedida definindo o `noDbIndex` atributo para &quot;true&quot;.
+* Um índice exclusivo é declarado implicitamente para cada definição de chave. É possível impedir a criação de um índice na chave definindo o atributo `noDbIndex` como &quot;true&quot;.
 
 >[!NOTE]
 >
@@ -126,21 +126,21 @@ As seguintes regras se aplicam às chaves:
 
 ## Chave incremental automática {#auto-incremental-key}
 
-A chave primária da maioria das tabelas do Adobe Campaign é um inteiro longo de 32 bits gerado automaticamente pelo mecanismo de banco de dados. O cálculo do valor principal depende de uma sequência (por padrão, a variável **XtkNewId** SQL) gerando um número exclusivo no banco de dados inteiro. O conteúdo da chave é inserido automaticamente ao inserir o registro.
+A chave primária da maioria das tabelas do Adobe Campaign é um inteiro longo de 32 bits gerado automaticamente pelo mecanismo de banco de dados. O cálculo do valor da chave depende de uma sequência (por padrão, a função SQL **XtkNewId**) gerando um número exclusivo no banco de dados inteiro. O conteúdo da chave é inserido automaticamente ao inserir o registro.
 
 A vantagem de uma chave incremental é que ela fornece uma chave técnica não modificável para as associações entre tabelas. Além disso, essa chave não ocupa muita memória porque usa um inteiro de dois bytes.
 
-Você pode especificar no esquema de origem o nome da sequência a ser usada com o **pkSequence** atributo. Se este atributo não for fornecido no schema de origem, a variável **XtkNewId** a sequência padrão será usada. O aplicativo usa sequências dedicadas para o **nms:broadLog** e **nms:trackingLog** esquemas (**NmsBroadLogId** e **NmsTrackingLogId** respectivamente) porque essas são as tabelas que contêm mais registros.
+Você pode especificar no esquema de origem o nome da sequência a ser usada com o atributo **pkSequence**. Se este atributo não for fornecido no esquema de origem, a sequência padrão **XtkNewId** será usada. O aplicativo usa sequências dedicadas para os esquemas **nms:broadLog** e **nms:trackingLog** (**NmsBroadLogId** e **NmsTrackingLogId** respectivamente) porque essas são as tabelas que contêm mais registros.
 
-A partir da ACC 18.10, **XtkNewId** não é mais o valor padrão para a sequência nos schemas prontos para uso. Agora é possível criar um esquema ou estender um esquema existente com uma sequência dedicada.
+A partir do ACC 18.10, **XtkNewId** não é mais o valor padrão para a sequência nos esquemas prontos para uso. Agora é possível criar um esquema ou estender um esquema existente com uma sequência dedicada.
 
 >[!IMPORTANT]
 >
 >Ao criar um novo schema ou durante uma extensão de schema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o schema.
 
-Uma sequência referenciada em um esquema do Adobe Campaign (**NmsTrackingLogId** por exemplo) deve ser associado a uma função SQL que retorna o número de IDs nos parâmetros, separados por vírgulas. Esta função deve ser chamada **GetNew** XXX **IDs**, onde **XXX** é o nome da sequência (**GetNewNmsTrackingLogIds** por exemplo). Exibir o **postgres-nms.sql**, **mssql-nms.sql** ou **oracle-nms.sql** arquivos fornecidos com o aplicativo no **datakit/nms/eng/sql/** diretório para recuperar o exemplo de criação de sequência &quot;NmsTrackingLogId&quot; para cada mecanismo de banco de dados.
+Uma sequência referenciada em um esquema Adobe Campaign (**NmsTrackingLogId**, por exemplo) deve ser associada a uma função SQL que retorna o número de IDs nos parâmetros, separadas por vírgulas. Esta função deve ser chamada de **GetNew** XXX **Ids**, onde **XXX** é o nome da sequência (**GetNewNmsTrackingLogIds**, por exemplo). Exiba os arquivos **postgres-nms.sql**, **mssql-nms.sql** ou **oracle-nms.sql** fornecidos com o aplicativo no diretório **datakit/nms/eng/sql/** para recuperar o exemplo de criação de sequência &#39;NmsTrackingLogId&#39; para cada mecanismo de banco de dados.
 
-Para declarar uma chave exclusiva, preencha o **autopk** (com o valor &quot;true&quot;) no elemento principal do schema de dados.
+Para declarar uma chave exclusiva, preencha o atributo **autopk** (com o valor &quot;true&quot;) no elemento principal do esquema de dados.
 
 **Exemplo**:
 

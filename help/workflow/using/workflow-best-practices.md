@@ -5,7 +5,7 @@ description: Conheça as práticas recomendadas do workflow do Campaign
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 100%
 

@@ -11,7 +11,7 @@ exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
 source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 7%
+ht-degree: 13%
 
 ---
 
@@ -33,13 +33,13 @@ Se um operador do Adobe Campaign perder a senha, você poderá alterá-la.
 
 >[!NOTE]
 >
->Esse procedimento só se aplica aos operadores conectados ao Campaign com autenticação nativa. Para autenticação do Adobe IMS, consulte [esta documentação](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
+>Esse procedimento só se aplica aos operadores conectados ao Campaign com autenticação nativa. Para a autenticação do Adobe IMS, consulte [esta documentação](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 Para redefinir uma senha do Campaign, siga as etapas abaixo:
 
 1. Conecte-se por meio de um operador com direitos de administrador.
 1. Clique com o botão direito do mouse em um operador.
-1. Selecionar **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
+1. Selecione **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
 
    ![](assets/operator-passwd.png)
 
@@ -55,16 +55,16 @@ Se a senha interna for perdida, você deverá reinicializá-la.
 
 Para fazer isso, siga o procedimento abaixo:
 
-1. Edite o **/usr/local/neolane/nl6/conf/serverConf.xml** arquivo.
+1. Edite o arquivo **/usr/local/neolane/nl6/conf/serverConf.xml**.
 
-1. Vá para a **internalPassword** linha.
+1. Vá para a linha **internalPassword**.
 
    ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. Exclua a string entre aspas, neste caso: `myPassword`. Você obtém a seguinte linha:
+1. Exclua a cadeia de caracteres entre aspas, neste caso: `myPassword`. Você obtém a seguinte linha:
 
    ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -73,7 +73,7 @@ Para fazer isso, siga o procedimento abaixo:
 
 1. Salvar as alterações e fechar o arquivo.
 
-1. Interrompa o `nlserver` processo.
+1. Pare o processo `nlserver`.
 
 1. Configure a nova senha. Para fazer isso, insira os seguintes comandos:
 
@@ -87,6 +87,6 @@ Para fazer isso, siga o procedimento abaixo:
    Confirmation 
    ```
 
-1. Inicie o `nlserver` processo.
+1. Inicie o processo `nlserver`.
 
-1. Agora você pode usar sua nova senha para se conectar ao **Interno** modo.
+1. Agora você pode usar sua nova senha para se conectar no modo **Interno**.

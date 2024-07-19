@@ -44,25 +44,25 @@ nenhuma
 
 ## Descrição {#description-14}
 
-A variável `<srcschema>` é o elemento raiz de um esquema. É o ponto de entrada para a definição do schema.
+O `<srcschema>` é o elemento raiz de um esquema. É o ponto de entrada para a definição do schema.
 
 ## Uso e contexto de uso {#use-and-context-of-use-9}
 
-A apresentação de esquema está disponível em [Sobre a referência do esquema](../../../configuration/using/about-schema-reference.md) e [Estrutura do esquema](../../../configuration/using/schema-structure.md).
+A apresentação do esquema está disponível em [Sobre a referência do esquema](../../../configuration/using/about-schema-reference.md) e a [Estrutura do esquema](../../../configuration/using/schema-structure.md).
 
 ## Descrição do atributo {#attribute-description-14}
 
-* **criado (datetime)**: este atributo fornece informações sobre a data e a hora da criação do schema. Ele tem um formulário de &quot;Data e hora&quot;. Os valores exibidos são retirados do servidor. A hora é mostrada no formato UTC.
+* **created (datetime)**: este atributo fornece informações sobre a data e a hora da criação do esquema. Ele tem um formulário de &quot;Data e hora&quot;. Os valores exibidos são retirados do servidor. A hora é mostrada no formato UTC.
 * **createdBy-id (long)**: é o identificador do operador que criou o esquema.
-* **desc (string)**: descrição do esquema
-* **entitySchema (string)**: esquema básico no qual a sintaxe e a aprovação se baseiam (por padrão para Adobe Campaign: xtk:srcSchema). Ao salvar o esquema atual, o Adobe Campaign aprovará sua gramática com o esquema declarado no atributo @xtkschema.
-* **extendedSchema (cadeia de caracteres)**: recebe o nome do schema pronto para uso no qual a extensão de schema atual se baseia. O formulário é &quot;namespace:name&quot;.
-* **img (string)**: ícone vinculado ao schema (pode ser definido no assistente de criação de schema).
-* **rótulo (string)**: rótulo do esquema.
-* **labelSingular (cadeia de caracteres)**: rótulo (singular) para exibição na interface.
+* **desc (cadeia de caracteres)**: descrição do esquema
+* **entitySchema (string)**: esquema básico no qual a sintaxe e a aprovação são baseadas (por padrão para Adobe Campaign: xtk:srcSchema). Ao salvar o esquema atual, o Adobe Campaign aprovará sua gramática com o esquema declarado no atributo @xtkschema.
+* **extendedSchema (cadeia de caracteres)**: recebe o nome do esquema predefinido no qual a extensão de esquema atual se baseia. O formulário é &quot;namespace:name&quot;.
+* **img (cadeia de caracteres)**: ícone vinculado ao esquema (pode ser definido no assistente de criação de esquema).
+* **rótulo (cadeia de caracteres)**: rótulo de esquema.
+* **labelSingular (string)**: rótulo (singular) para exibição na interface.
 * **lastModified (datetime)**: este atributo fornece informações sobre a data e a hora da última modificação. Ele tem um formulário de &quot;Data e hora&quot;. Os valores exibidos são retirados do servidor. A hora é mostrada no formato UTC.
-* **biblioteca (booleano)**: uso do schema como uma biblioteca e não como uma entidade. Portanto, esse schema pode ser referenciado por outros schemas graças aos atributos &quot;@ref&quot; e &quot;@template&quot;.
-* **mappingType (string)**:
+* **biblioteca (booleano)**: uso do esquema como uma biblioteca e não como uma entidade. Portanto, esse schema pode ser referenciado por outros schemas graças aos atributos &quot;@ref&quot; e &quot;@template&quot;.
+* **mappingType (cadeia de caracteres)**:
 
    * &quot;sql&quot;: mapeamento de banco de dados
    * &quot;textFile&quot;: mapeamento de arquivo de texto
@@ -70,15 +70,15 @@ A apresentação de esquema está disponível em [Sobre a referência do esquema
    * &quot;binaryFile&quot;: mapeamento de arquivo binário
 
 * **modifiedBy-id (long)**: corresponde ao identificador do operador que alterou o esquema.
-* **nome (sequência de caracteres)**: nome de esquema exclusivo.
-* **namespace (string)**: namespace do esquema (padrão: nms, xtk, nl). Ao criar um novo schema para um projeto, recomendamos que você use um namespace dedicado.
+* **nome (cadeia de caracteres)**: nome de esquema exclusivo.
+* **namespace (cadeia de caracteres)**: namespace do esquema (padrão: nms, xtk, nl). Ao criar um novo schema para um projeto, recomendamos que você use um namespace dedicado.
 * **useRecycleBin (booleano)**: ativa o recurso de lixeira no aplicativo. Os registros excluídos serão colocados no lixo antes da exclusão final. Essa função só está disponível no modo &quot;Delivery&quot;.
-* **exibir (booleano)**: se estiver ativado (@view=&quot;true&quot;), o esquema será usado como uma exibição. O assistente de atualização da estrutura do banco de dados não levará em conta o esquema. Essa opção é usada principalmente para fazer referência a tabelas externas.
-* **xtkschema (string)**: nome do schema que define a gramática do schema (xtk:srcSchema por padrão).
+* **exibição (booleano)**: se estiver ativado (@view=&quot;true&quot;), o esquema será usado como exibição. O assistente de atualização da estrutura do banco de dados não levará em conta o esquema. Essa opção é usada principalmente para fazer referência a tabelas externas.
+* **xtkschema (string)**: nome do esquema que define a gramática do esquema (xtk:srcSchema por padrão).
 
 ## Exemplos {#examples-11}
 
-`<srcschema>` elemento do schema &quot;nms:delivery&quot; pronto para uso
+`<srcschema>` elemento do &quot;nms:delivery&quot; esquema predefinido
 
 ```
 <srcSchema desc="Defines all the settings of a delivery (or delivery template)."  

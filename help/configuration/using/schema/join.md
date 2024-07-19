@@ -39,19 +39,19 @@ Permite definir os campos que criam uma ligação entre tabelas SQL.
 
 ## Uso e contexto de uso {#use-and-context-of-use-5}
 
-A `<join>`  o elemento só pode ser usado se o pai  `<element>`  elemento é do tipo &#39;link&#39;. Isso significa que o elemento pai deve ter o atributo &quot;@type=link&quot; declarado.
+Um elemento `<join>` só poderá ser usado se o elemento `<element>` pai for do tipo &#39;link&#39;. Isso significa que o elemento pai deve ter o atributo &quot;@type=link&quot; declarado.
 
-Não é necessário especificar o nome e o namespace da tabela remota no `<join>`  elemento. Eles precisam ser especificados no pai  `<element>`.
+Não é necessário especificar o nome e o namespace da tabela remota no elemento `<join>`. Eles precisam ser especificados no pai `<element>`.
 
 Por convenção, os links são definidos no final do schema.
 
-Se a variável `<join>` O elemento não é especificado quando o elemento de tipo de link é definido. O link será colocado automaticamente nas chaves primárias de ambas as tabelas.
+Se o elemento `<join>` não for especificado quando o elemento de tipo de link for definido, o link será colocado automaticamente nas chaves primárias de ambas as tabelas.
 
 ## Descrição do atributo {#attribute-description-7}
 
-* **dstFilterExpr (sequência de caracteres)**: este atributo permite restringir o número de valores qualificados na tabela remota.
-* **xpath-dst (sequência de caracteres)**: este atributo recebe um Xpath (atributo @name da tabela remota).
-* **xpath-src (sequência de caracteres)**: este atributo recebe um Xpath (atributo @name no esquema atual).
+* **dstFilterExpr (string)**: este atributo permite restringir o número de valores qualificados na tabela remota.
+* **xpath-dst (string)**: este atributo recebe um Xpath (atributo @name da tabela remota).
+* **xpath-src (cadeia de caracteres)**: este atributo recebe um Xpath (atributo @name no esquema atual).
 
 ## Exemplos {#examples-6}
 

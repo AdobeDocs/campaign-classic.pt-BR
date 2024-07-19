@@ -35,16 +35,16 @@ Pronto para uso, o operador webApp é um administrador. Para melhorar a seguran�
 
 Crie grupos de segurança suficientes para conceder direitos apenas suficientes aos seus operadores para que eles façam o que precisam, e não mais.
 
-Não use o operador administrador (ou não o compartilhe). Crie um operador por usuário físico (para ter uma auditoria/registro preciso). Adicione seus administradores recém-nomeados ao grupo de administradores. Se você não usar o operador administrador, não o exclua e não o desabilite (esse operador é usado internamente para executar o processamento). Mas você pode banir seus [acesso ao console do cliente](../../platform/using/access-management.md) e restringir sua zona de segurança (ao host local).
+Não use o operador administrador (ou não o compartilhe). Crie um operador por usuário físico (para ter uma auditoria/registro preciso). Adicione seus administradores recém-nomeados ao grupo de administradores. Se você não usar o operador administrador, não o exclua e não o desabilite (esse operador é usado internamente para executar o processamento). Mas você pode proibir seu [acesso ao console do cliente](../../platform/using/access-management.md) e restringir sua zona de segurança (ao host local).
 
 Evite adicionar muitos operadores no grupo de administradores (ou com direitos nomeados de administrador). Eles são operadores muito poderosos (podem executar todas as instruções SQL, executar comandos no servidor etc.).
 
-A Adobe Campaign oferece três privilégios de alto nível por meio de [direitos nomeados](../../platform/using/access-management.md#named-rights):
+A Adobe Campaign fornece três privilégios de alto nível através de [direitos nomeados](../../platform/using/access-management.md#named-rights):
 
-* **ADMINISTRAÇÃO** (admin): dá acesso a tudo e permite fazer tudo, ignorando todas as verificações de direitos nomeadas, portanto, inclui os direitos nomeados PROGRAM EXECUTION (createProcess) e SQL
+* **ADMINISTRATION** (admin): dá acesso a tudo e permite fazer tudo, ignorando todas as verificações de direitos nomeados; portanto, inclui os direitos nomeados PROGRAM EXECUTION (createProcess) e SQL
 
-* **EXECUÇÃO DO PROGRAMA** (createProcess): permite a execução de programas externos (no servidor)
+* **PROGRAM EXECUTION** (createProcess): permite a execução de programas externos (no servidor)
 
 * **SQL**: permite a execução de scripts SQL no banco de dados (para que ele possa ignorar o modelo de segurança). Incluir na lista de permissões Observação: se você precisar executar cálculos complexos (filtragem, por exemplo), peça ao administrador do banco de dados para criar uma função SQL e adicioná-la ao arquivo. Saiba mais [nesta página](../../installation/using/scripting-coding-guidelines.md).
 
-* **Conceda-os a poucos operadores (e confiáveis)**
+* **Concedê-las a poucos operadores (e confiáveis)**

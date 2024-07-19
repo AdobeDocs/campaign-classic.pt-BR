@@ -12,7 +12,7 @@ exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '824'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Ao enviar um email, o servidor de software estabelecerá uma conexão com o serv
 
 No protocolo de conexão, as regras devem ser respeitadas para evitar spam e monopolizar servidores. Os mais importantes são:
 
-* **Número máximo de conexões permitidas**: quando esse número é respeitado, os IPs não estão na inclui na lista de bloqueios e os emails não são recusados devido a conexões adicionais.
+* **Número máximo de conexões permitidas**: quando esse número é respeitado, os IPs não estão na inclui na lista de bloqueios e os emails não são recusados devido a conexões extras.
 * **Número máximo de mensagens**: durante a conexão, o número de mensagens permitidas para serem enviadas deve ser definido. Se esse número não for definido, o servidor enviará o máximo possível. Isso resulta na identificação como um remetente de spam e na adição ao incluo na lista de bloqueios pelo ISP.
 * **Mensagens por hora**: para corresponder à sua reputação eletrônica, o Adobe Campaign controlará o número de emails que seus IPs podem enviar por hora. Este sistema irá protegê-lo contra a recusa de e-mail ou/e incluir na lista de bloqueios.
 
@@ -50,7 +50,7 @@ No protocolo de conexão, as regras devem ser respeitadas para evitar spam e mon
 
 O endereço de erro processará rejeições enviadas por ISPs. O processo analisará diferentes códigos de erro SMTP e aplicará a ação correta de acordo com o padrão RegEx.
 
-Por exemplo, um endereço de email tem um feedback &quot;550 usuário desconhecido&quot; enviado por um ISP. Esse código de erro é processado pelo endereço de erro do Adobe Campaign (endereço do caminho de retorno). Esse erro é comparado ao padrão RegEx e a regra correta será aplicada. O email é considerado um *Rejeição permanente* (correspondente ao tipo) e, em seguida, *Usuário desconhecido* (correspondendo ao motivo) e colocados em quarentena após o primeiro loop no sistema.
+Por exemplo, um endereço de email tem um feedback &quot;550 usuário desconhecido&quot; enviado por um ISP. Esse código de erro é processado pelo endereço de erro do Adobe Campaign (endereço do caminho de retorno). Esse erro é comparado ao padrão RegEx e a regra correta será aplicada. O email é considerado uma *Rejeição permanente* (correspondente ao tipo) e, em seguida, um *Usuário desconhecido* (correspondente ao motivo) e colocado em quarentena após o primeiro loop no sistema.
 
 ### Como a Adobe Campaign está gerenciando a TI?
 
@@ -58,13 +58,13 @@ O Adobe Campaign gerencia esse processo com uma correspondência entre um tipo d
 
 * **[!UICONTROL User Unknown]**: endereço que está sintaticamente correto, mas não existe. Esse erro é categorizado como uma rejeição permanente e colocado em quarentena no primeiro erro.
 * **[!UICONTROL Mailbox full]**: Caixa de correio que atingiu a capacidade máxima. Esse erro também pode indicar que o usuário não está mais usando essa caixa de correio. Esse erro é categorizado como uma rejeição temporária e colocado em quarentena no terceiro erro e removido da quarentena após um período de 30 dias.
-* **[!UICONTROL Inactive User]**: a caixa de correio foi desativada pelo ISP devido a um usuário inativo nos últimos 6 meses. Esse erro é categorizado como uma rejeição temporária e colocado em quarentena no terceiro erro.
-* **[!UICONTROL Invalid domain]**: o domínio no endereço de email não existe. Esse erro é categorizado como uma rejeição temporária e colocado em quarentena no terceiro erro.
-* **[!UICONTROL Refused]**: o ISP se recusou a enviar o email aos usuários. Esse erro é categorizado como uma rejeição temporária e não é enviado para quarentena, pois o erro não está vinculado ao endereço de email, mas à reputação de IP ou/ou de um domínio.
+* **[!UICONTROL Inactive User]**: A caixa de correio foi desativada pelo ISP devido a um usuário inativo nos últimos 6 meses. Esse erro é categorizado como uma rejeição temporária e colocado em quarentena no terceiro erro.
+* **[!UICONTROL Invalid domain]**: O domínio no endereço de email não existe. Esse erro é categorizado como uma rejeição temporária e colocado em quarentena no terceiro erro.
+* **[!UICONTROL Refused]**: O ISP recusou-se a entregar o email aos seus usuários. Esse erro é categorizado como uma rejeição temporária e não é enviado para quarentena, pois o erro não está vinculado ao endereço de email, mas à reputação de IP ou/ou de um domínio.
 
 >[!NOTE]
 >
->Para saber mais sobre os tipos e motivos de falha de delivery, consulte esta [seção](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Para saber mais sobre os tipos e motivos de falha de entrega, consulte esta [seção](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 ## Instância de entrega {#deliveratbility-env}
 
@@ -80,15 +80,15 @@ O modo Personalizado é para clientes avançados que desejam definir suas própr
 
 ## Exemplos de rejeição
 
-* **Usuário desconhecido** (rejeição permanente): 550 5.1.1 ... O usuário é desconhecido {mx003}
-* **Caixa de entrada cheia** (rejeição temporária): 550 5.2.2 Cota de usuário excedida
-* **Caixa de Correio Inativa** (rejeição temporária): 550 5.7.1 : endereço do destinatário rejeitado: Caixa de correio inativa, não lançado por mais de 6 meses
+* **Usuário desconhecido** (rejeição permanente): 550 5.1.1... Usuário desconhecido {mx003}
+* **Caixa de correio cheia** (rejeição temporária): 550 5.2.2 Cota de usuário excedida
+* **Caixa de Correio Inativa** (rejeição temporária): 550 5.7.1 : Endereço de destinatário rejeitado: Caixa de Correio Inativa, não será exibida por mais de 6 meses
 * **Domínio inválido** (rejeição temporária): falha na consulta DNS para &#39;ourdan.com&#39;
-* **Recusado** (rejeição temporária): rejeição de email de entrada (a regra &quot;Feedback_loop_Hotmail&quot; correspondeu a essa rejeição)
-* **Inacessível** (rejeição temporária): 421 4.16.55 [TS01] Mensagens de x.x.x.x adiadas temporariamente devido a reclamações excessivas do usuário
+* **Recusado** (rejeição temporária): rejeição de email de entrada (a regra &#39;Feedback_loop_Hotmail&#39; corresponde a essa rejeição)
+* **Inacessível** (rejeição temporária): 421 4.16.55 [TS01] Mensagens de x.x.x.x temporariamente adiadas devido a reclamações excessivas do usuário
 
 **Tópicos relacionados:**
 * [Configuração MX](../../installation/using/email-deliverability.md#mx-configuration)
 * [Configuração técnica de email](../../installation/using/email-deliverability.md)
 * [Entender as falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic - Recommendations técnico](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)
+* [Campaign Classic - Recommendations Técnico](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

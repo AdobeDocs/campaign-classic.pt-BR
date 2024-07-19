@@ -48,7 +48,7 @@ A lista a seguir contém apenas as tabelas mais sujeitas à fragmentação. Os i
    <td> NmsDeliveryPart<br /> </td> 
    <td> Medium<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Tabela de trabalho na qual os registros são inseridos durante a preparação da entrega. Eles são atualizados durante o delivery e finalmente excluídos quando o delivery é concluído.<br /> Essa tabela tende a se fragmentar rapidamente, mesmo que seu tamanho médio seja bastante limitado.<br /> </td> 
+   <td> Tabela de trabalho na qual os registros são inseridos durante a preparação da entrega. Eles são atualizados durante o delivery e finalmente excluídos quando o delivery é concluído.<br /> Esta tabela tende a se fragmentar rapidamente, mesmo que seu tamanho médio seja razoavelmente limitado.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMirrorPageInfo<br /> </td> 
@@ -78,7 +78,7 @@ A lista a seguir contém apenas as tabelas mais sujeitas à fragmentação. Os i
    <td> XtkWorkflowTask<br /> </td> 
    <td> Pequeno<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Cada execução de uma atividade de workflow leva à criação de um registro nesta tabela. O mecanismo de limpeza as exclui após a expiração.<br /> </td> 
+   <td> Cada execução de uma atividade de workflow leva à criação de um registro nesta tabela. O mecanismo de limpeza os exclui após a expiração.<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowEvent<br /> </td> 
@@ -90,7 +90,7 @@ A lista a seguir contém apenas as tabelas mais sujeitas à fragmentação. Os i
    <td> XtkWorkflowJob<br /> </td> 
    <td> Muito pequeno <br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Essa tabela é específica do mecanismo de workflow. Ela permite o envio de comandos para workflows (Start, Stop, Pause, por exemplo). Embora pequena, essa tabela é levada em conta durante a limpeza de tabelas transacionais vinculadas aos workflows.<br /> </td> 
+   <td> Essa tabela é específica do mecanismo de workflow. Ela permite o envio de comandos para workflows (Start, Stop, Pause, por exemplo). Embora pequena, essa tabela é levada em conta durante a limpeza de tabelas transacionais vinculadas aos fluxos de trabalho.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLog<br /> </td> 
@@ -129,7 +129,7 @@ A lista a seguir contém apenas as tabelas mais sujeitas à fragmentação. Os i
    <td> Esta é a maior tabela do sistema. Há um registro por mensagem enviada. Esses registros são inseridos, atualizados para rastrear o status do delivery e excluídos quando o histórico é removido. Observe que na versão 5.10, essa tabela é menor que o equivalente na 4.05 (NmsBroadLog), pois o texto da mensagem SMTP é fatorado na tabela NmsBroadLogMsg na versão 5.10. No entanto, continua sendo essencial reindexar essa tabela regularmente (a cada duas semanas, para começar) e recriá-la completamente de tempos em tempos (uma vez por mês ou quando o desempenho é afetado). <br /> </td> 
   </tr> 
   <tr> 
-   <td> YyyBroadLogXxx (quando uma tabela externa de recipient é usada)<br /> </td> 
+   <td> YyyBroadLogXxx (quando uma tabela de destinatários externos é usada)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
    <td> Igual a NmsBroadLogRcp, mas com uma tabela externa de recipient. Adapte Yyy e Xxx com os valores no mapeamento do delivery. <br /> </td> 
@@ -150,7 +150,7 @@ A lista a seguir contém apenas as tabelas mais sujeitas à fragmentação. Os i
    <td> NmsBroadLogRtEvent (instância de execução do Centro de Mensagens)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Semelhante às outras tabelas de broadlog, mas com o NmsRtEvent em vez de NmsRecipient.<br /> </td> 
+   <td> Semelhante às outras tabelas de broadlog, mas com NmsRtEvent em vez de NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLogRtEvent( instância de execução do Centro de Mensagens)<br /> </td> 
@@ -159,16 +159,16 @@ A lista a seguir contém apenas as tabelas mais sujeitas à fragmentação. Os i
    <td> Semelhante às outras tabelas trackingLog, mas com a tabela NmsRtEvent em vez de NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsRtEvent (instância de execução do Centro de Mensagens)<br /> </td> 
+   <td> NmsRtEvent (Instância de Execução do Centro de Mensagens)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Tabela contendo a fila de eventos do Centro de mensagens. O status desses eventos é atualizado pelo Centro de mensagens à medida que são processados. As exclusões são realizadas durante a limpeza. Recomendamos que você recrie regularmente o índice desta tabela e recrie-o.<br /> </td> 
+   <td> Tabela contendo a fila de eventos do Centro de mensagens. O status desses eventos é atualizado pelo Centro de mensagens à medida que são processados. As exclusões são realizadas durante a limpeza. É recomendável recriar regularmente o índice desta tabela e recriá-lo.<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsEventHisto (instância de controle do Centro de Mensagens)<br /> </td> 
+   <td> NmsEventHisto (Instância de Controle do Centro de Mensagens)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Semelhante a NmsRtEvent. Esta tabela arquiva todos os eventos de todas as instâncias de execução. Ela é usada por nenhum processo em tempo real, somente por relatórios.<br /> </td> 
+   <td> Semelhante a NmsRtEvent. Esta tabela arquiva todos os eventos de todas as instâncias de execução. Não é usado por nenhum processo em tempo real, somente por relatórios.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMobileApp<br /> </td> 
@@ -180,13 +180,13 @@ A lista a seguir contém apenas as tabelas mais sujeitas à fragmentação. Os i
    <td> NmsAppSubscriptionRcp<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações<br /> </td> 
-   <td> Tabela que inclui os identificadores de dispositivos móveis (endereços) usados para enviar a notificação (semelhante a uma tabela de recipients).<br /> </td> 
+   <td> Tabela que inclui os identificadores de dispositivos móveis (endereços) usados para enviar a notificação (semelhante a uma tabela de destinatários).<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLogAppSubRcp<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Semelhante às outras tabelas de broadlog, mas com o NmsappSubscriptionRcp em vez de NmsRecipient.<br /> </td> 
+   <td> Semelhante às outras tabelas de broadlog, mas com NmsappSubscriptionRcp em vez de NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLogAppSubRcp<br /> </td> 

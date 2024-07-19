@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Impactos na versão de 3 dígitos do navegador nos componentes Web do Campaign {#version-100}
 
-O Google e o Mozilla estão avisando que o Chrome e o Firefox podem quebrar alguns sites devido às próximas versões de 3 dígitos.
+A Google e a Mozilla estão avisando que o Chrome e o Firefox podem interromper alguns sites devido às próximas versões de 3 dígitos.
 
-O Chrome v100 está definido para ser lançado em **29 de março de 2022** e Firefox v100 em **3 de maio de 2022**.
+O Chrome v100 está definido para lançamento em **29 de março de 2022** e o Firefox v100 em **3 de maio de 2022**.
 
 A Microsoft lançou o Edge v100 anteriormente em março de 2022.
 
@@ -43,7 +43,7 @@ Com essas configurações, o navegador envia a nova sequência de agente do usu�
 
 Para testar suas páginas da Web com o Mozilla Firefox 100, você pode simular a próxima alteração do agente do usuário em seus aplicativos da Web alterando manualmente a cadeia de caracteres do agente do usuário.
 
-1. Abra o Firefox, insira `about:config` na barra de endereços e pressione enter.
+1. Abra o Firefox, digite `about:config` na barra de endereços e pressione Enter.
 1. Pesquisar por `general.useragent.override`.
 1. Selecione &#39;String&#39; e clique no sinal de mais (+).
 
@@ -58,33 +58,33 @@ Para testar suas páginas da Web com o Mozilla Firefox 100, você pode simular a
 1. Clique no botão de marca de seleção azul para salvar a configuração.
 1. Feche e reinicie o navegador.
 
-Para alterar o agente do usuário de volta para o padrão, basta voltar para `about:config` e pesquisar `general.useragent.override` configuração novamente.  Quando for exibido, clique no ícone de lixeira para excluir a configuração e reinicie o navegador.
+Para alterar o agente de usuário de volta para o padrão, basta voltar para `about:config` e procurar a configuração `general.useragent.override` novamente.  Quando for exibido, clique no ícone de lixeira para excluir a configuração e reinicie o navegador.
 
 ### Teste com o Chrome 100{#test-chrome-100}
 
-Para testar o agente de usuário do Google Chrome 100 em seus próprios aplicativos Web, é possível habilitar esse teste usando as seguintes etapas:
+Para testar o agente do usuário do Google Chrome 100 em seus próprios aplicativos Web, é possível habilitar esse teste usando as seguintes etapas:
 
-1. Abra o Chrome, insira `chrome://flags` na barra de endereços e pressione enter.
-1. Pesquisar `Force major version to 100 in User-Agent` no campo de pesquisa e ative-o conforme mostrado abaixo.
+1. Abra o Chrome, digite `chrome://flags` na barra de endereços e pressione Enter.
+1. Pesquise `Force major version to 100 in User-Agent` no campo de pesquisa e habilite-o como mostrado abaixo.
 
    ![](assets/force-user-agent-chrome.png)
 
 1. Reinicie o navegador.
-1. Feche o `chrome://flags` guia.
+1. Feche a guia `chrome://flags`.
 
-Para alterar o agente do usuário de volta ao padrão, basta seguir esse processo e alterar a configuração do sinalizador para `Default` e reinicie o navegador.
+Para alterar o agente do usuário de volta ao padrão, basta seguir esse processo e alterar a configuração do sinalizador para `Default` e reiniciar o navegador.
 
 
 ### Teste com o Microsoft Edge 100{#test-ms-edge-100}
 
-A partir da v97, os proprietários de sites podem emular esta versão ativando o sinalizador de experimento  `#force-major-version-to-100` in `edge://flags`.
+A partir da v97, os proprietários de sites podem emular esta versão habilitando o sinalizador de experimento `#force-major-version-to-100` em `edge://flags`.
 
-1. Abra o Microsoft Edge, insira `edge://flags` na barra de endereços e pressione enter.
-1. Pesquisar por `force-major-version-to-100` e ative-o conforme mostrado abaixo.
+1. Abra o Microsoft Edge, digite `edge://flags` na barra de endereços e pressione Enter.
+1. Procure pelo campo `force-major-version-to-100` e habilite-o conforme mostrado abaixo.
 
    ![](assets/force-user-agent-edge.png)
 
 1. Reinicie o navegador.
-1. Feche o `edge://flags` guia.
+1. Feche a guia `edge://flags`.
 
-Para alterar o agente do usuário de volta ao padrão, basta seguir esse processo e alterar a configuração do sinalizador para `Default` e reinicie o navegador.
+Para alterar o agente do usuário de volta ao padrão, basta seguir esse processo e alterar a configuração do sinalizador para `Default` e reiniciar o navegador.

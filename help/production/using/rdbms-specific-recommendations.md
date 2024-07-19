@@ -142,10 +142,10 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 >[!NOTE]
 >
 >* A Adobe recomenda começar com tabelas menores: dessa forma, se o processo falhar em tabelas grandes (onde o risco de falha é maior), pelo menos parte da manutenção foi concluída.
->* A Adobe recomenda adicionar as tabelas específicas ao seu modelo de dados, que podem estar sujeitas a atualizações significativas. Este pode ser o caso para **NmsRecipient** se você tiver grandes fluxos diários de replicação de dados.
+>* A Adobe recomenda adicionar as tabelas específicas ao seu modelo de dados, que podem estar sujeitas a atualizações significativas. Este pode ser o caso de **NmsRecipient** se você tiver grandes fluxos diários de replicação de dados.
 >* A instrução VACUUM bloqueará a tabela, que pausa alguns processos enquanto a manutenção é realizada.
->* Para tabelas muito grandes (normalmente acima de 5 Gb), a instrução VACUUM FULL pode se tornar bastante ineficiente e levar muito tempo. O Adobe não recomenda usá-lo para o **YyyNmsBroadLogXxx** tabela.
->* Essa operação de manutenção pode ser implementada por um workflow do Adobe Campaign, usando um **[!UICONTROL SQL]** atividade. Para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md). Certifique-se de programar a manutenção para um período de baixa atividade que não colida com a janela de backup.
+>* Para tabelas muito grandes (normalmente acima de 5 Gb), a instrução VACUUM FULL pode se tornar bastante ineficiente e levar muito tempo. O Adobe não recomenda usá-lo para a tabela **YyyNmsBroadLogXxx**.
+>* Esta operação de manutenção pode ser implementada por um fluxo de trabalho Adobe Campaign, usando uma atividade **[!UICONTROL SQL]**. Para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md). Certifique-se de programar a manutenção para um período de baixa atividade que não colida com a janela de backup.
 >
 
 ### Reconstrução de um banco de dados {#rebuilding-a-database}
@@ -153,9 +153,9 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 O PostgreSQL não fornece uma maneira fácil de executar uma reconstrução de tabela online, pois a instrução VACUUM FULL bloqueia a tabela, impedindo assim a produção regular. Isso significa que a manutenção deve ser executada quando a tabela não for usada. É possível:
 
 * executar a manutenção quando a plataforma do Adobe Campaign for interrompida,
-* interromper os vários subserviços do Adobe Campaign que provavelmente gravarão na tabela que está sendo recriada (**nlserver stop wfserver instance_name** para interromper o processo de fluxo de trabalho).
+* pare os vários subserviços do Adobe Campaign que provavelmente gravarão na tabela que está sendo recriada (**nlserver stop wfserver instance_name** para interromper o processo de fluxo de trabalho).
 
-Este é um exemplo de desfragmentação de tabela usando funções específicas para gerar o DDL necessário. O SQL a seguir permite criar duas novas funções: **GenRebuildTablePart1** e **GenRebuildTablePart2**, que pode ser usado para gerar o DDL necessário para recriar uma tabela.
+Este é um exemplo de desfragmentação de tabela usando funções específicas para gerar o DDL necessário. O SQL a seguir permite criar duas novas funções: **GenRebuildTablePart1** e **GenRebuildTablePart2**, que podem ser usadas para gerar o DDL necessário para recriar uma tabela.
 
 * A primeira função permite criar uma tabela de trabalho (** _tmp** aqui) que é uma cópia da tabela original.
 * A segunda função, então, exclui a tabela original e renomeia a tabela de trabalho e seus índices.
@@ -375,7 +375,7 @@ Este é um exemplo de desfragmentação de tabela usando funções específicas 
  $$ LANGUAGE plpgsql;
 ```
 
-O exemplo a seguir pode ser usado em um workflow para recriar as tabelas necessárias em vez de usar o **aspirar/reconstruir** comando:
+O exemplo a seguir pode ser usado em um fluxo de trabalho para reconstruir as tabelas necessárias em vez de usar o comando **vácuo/rebuild**:
 
 ```
 function sqlGetMemo(strSql)
@@ -412,23 +412,23 @@ Entre em contato com o administrador do banco de dados para descobrir sobre os p
 
 >[!NOTE]
 >
->Para o Microsoft SQL Server, é possível usar o plano de manutenção detalhado em [esta página](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
+>Para o Microsoft SQL Server, você pode usar o plano de manutenção detalhado em [esta página](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
 O exemplo abaixo diz respeito ao Microsoft SQL Server 2005. Se você estiver usando outra versão, entre em contato com o administrador do banco de dados para saber mais sobre os procedimentos de manutenção.
 
 1. Primeiro, conecte-se ao Microsoft SQL Server Management Studio com um logon com direitos de administrador.
-1. Vá para a **[!UICONTROL Management > Maintenance Plans]** pasta, clique com o botão direito do mouse nela e escolha **[!UICONTROL Maintenance Plan Wizard]**.
+1. Vá para a pasta **[!UICONTROL Management > Maintenance Plans]**, clique com o botão direito do mouse nela e escolha **[!UICONTROL Maintenance Plan Wizard]**.
 1. Clique em **[!UICONTROL Next]** quando a primeira página aparecer.
-1. Selecione o tipo de plano de manutenção que deseja criar (programações separadas para cada tarefa ou programação única para todo o plano) e clique no link **[!UICONTROL Change...]** botão.
-1. No **[!UICONTROL Job schedule properties]** selecione as configurações de execução desejadas e clique em **[!UICONTROL OK]** e, em seguida, clique em **[!UICONTROL Next]**.
+1. Selecione o tipo de plano de manutenção que deseja criar (agendamentos separados para cada tarefa ou agendamento único para todo o plano) e clique no botão **[!UICONTROL Change...]**.
+1. Na janela **[!UICONTROL Job schedule properties]**, selecione as configurações de execução desejadas e clique em **[!UICONTROL OK]** e, em seguida, clique em **[!UICONTROL Next]**.
 1. Selecione as tarefas de manutenção que deseja executar e clique em **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
    >Recomendamos executar pelo menos as tarefas de manutenção mostradas abaixo. Você também pode selecionar a tarefa de atualização de estatísticas, embora ela já seja executada pelo workflow de limpeza do banco de dados.
 
-1. Na lista suspensa, selecione o banco de dados no qual deseja executar o **[!UICONTROL Database Check Integrity]** tarefa.
-1. Selecione o banco de dados e clique em **[!UICONTROL OK]** e, em seguida, clique em **[!UICONTROL Next]**.
+1. Na lista suspensa, selecione o banco de dados no qual deseja executar a tarefa **[!UICONTROL Database Check Integrity]**.
+1. Selecione o banco de dados, clique em **[!UICONTROL OK]** e em **[!UICONTROL Next]**.
 1. Configure o tamanho máximo alocado para o banco de dados e clique em **[!UICONTROL Next]**.
 
    >[!NOTE]
@@ -439,7 +439,7 @@ O exemplo abaixo diz respeito ao Microsoft SQL Server 2005. Se você estiver usa
 
    * Se a taxa de fragmentação do índice estiver entre 10% e 40%, recomenda-se uma reorganização.
 
-     Escolha quais bancos de dados e objetos (tabelas ou views) você deseja reorganizar e clique em **[!UICONTROL Next]**.
+     Escolha quais bancos de dados e objetos (tabelas ou modos de exibição) você deseja reorganizar e clique em **[!UICONTROL Next]**.
 
      >[!NOTE]
      >
@@ -451,24 +451,24 @@ O exemplo abaixo diz respeito ao Microsoft SQL Server 2005. Se você estiver usa
 
      >[!NOTE]
      >
-     >O processo de recriação de índice é mais restritivo em termos de uso de processador e bloqueia os recursos do banco de dados. Selecione o **[!UICONTROL Keep index online while reindexing]** opção se quiser que o índice fique disponível durante a reconstrução.
+     >O processo de recriação de índice é mais restritivo em termos de uso de processador e bloqueia os recursos do banco de dados. Selecione a opção **[!UICONTROL Keep index online while reindexing]** se desejar que o índice fique disponível durante a recriação.
 
 1. Selecione as opções que deseja exibir no relatório de atividades e clique em **[!UICONTROL Next]**.
 1. Verifique a lista de tarefas configuradas para o plano de manutenção e clique em **[!UICONTROL Finish]**.
 
    Um resumo do plano de manutenção e os status das várias etapas é exibido.
 
-1. Quando o plano de manutenção estiver concluído, clique em **[!UICONTROL Close]**.
-1. No explorador do Microsoft SQL Server, clique duas vezes na guia **[!UICONTROL Management > Maintenance Plans]** pasta.
+1. Quando o plano de manutenção for concluído, clique em **[!UICONTROL Close]**.
+1. No navegador Microsoft SQL Server, clique duas vezes na pasta **[!UICONTROL Management > Maintenance Plans]**.
 1. Selecione o plano de manutenção do Adobe Campaign: as várias etapas são detalhadas em um workflow.
 
-   Observe que um objeto foi criado na variável **[!UICONTROL SQL Server Agent > Jobs]** pasta. Este objeto permite iniciar o plano de manutenção. No nosso exemplo, há apenas um objeto, pois todas as tarefas de manutenção fazem parte do mesmo plano.
+   Observe que um objeto foi criado na pasta **[!UICONTROL SQL Server Agent > Jobs]**. Este objeto permite iniciar o plano de manutenção. No nosso exemplo, há apenas um objeto, pois todas as tarefas de manutenção fazem parte do mesmo plano.
 
    >[!IMPORTANT]
    >
    >Para que esse objeto seja executado, o Microsoft SQL Server Agent deve estar habilitado.
 
-**Configuração de um banco de dados separado para tabelas de trabalho**
+**Configurando um banco de dados separado para tabelas de trabalho**
 
 >[!NOTE]
 >

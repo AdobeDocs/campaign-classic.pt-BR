@@ -17,9 +17,9 @@ ht-degree: 2%
 
 ## Estender uma tabela {#extending-a-table}
 
-Para estender o **nms:recipient** tabela de recipients do schema, aplique o seguinte procedimento:
+Para estender a tabela de destinatários do esquema **nms:recipient**, siga o procedimento abaixo:
 
-1. Criar o esquema de extensão (**cus:extensão**) utilizando os seguintes dados:
+1. Crie o esquema de extensão (**cus:extension**) usando os seguintes dados:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -40,13 +40,13 @@ Para estender o **nms:recipient** tabela de recipients do schema, aplique o segu
    </srcSchema>
    ```
 
-   Neste exemplo, um campo indexado (**fidelidade**) é adicionado e a variável **localização** elemento (que já existia na lista **nms:recipient** schema) é complementado com um campo enumerado (**área**).
+   Neste exemplo, um campo indexado (**fidelity**) é adicionado, e o elemento **location** (que já existia no esquema **nms:recipient**) é complementado com um campo enumerado (**area**).
 
    >[!IMPORTANT]
    >
-   >Lembre-se de adicionar o **extendedSchema** atributo para fazer referência ao esquema de extensão.
+   >Lembre-se de adicionar o atributo **extendedSchema** para fazer referência ao esquema de extensão.
 
-1. Verifique se o esquema estendido é o **nms:recipient** e que os dados adicionais estão presentes:
+1. Verifique se o esquema estendido é o esquema **nms:recipient** e se os dados adicionais estão presentes:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -101,7 +101,7 @@ Esquema de origem da tabela de pedidos:
 </srcSchema>
 ```
 
-O tipo de tabela é **autopk** para criar uma chave primária gerada automaticamente a ser usada pela associação do link à tabela de recipients.
+O tipo de tabela é **autopk** para criar uma chave primária gerada automaticamente a ser usada pela associação do link à tabela de destinatários.
 
 Esquema gerado:
 
@@ -153,7 +153,7 @@ Uma tabela de extensão permite estender o conteúdo de uma tabela existente em 
 
 A finalidade de uma tabela de extensão é evitar limitações no número de campos compatíveis em uma tabela ou otimizar o espaço ocupado pelos dados, que são consumidos sob demanda.
 
-Criação do schema de tabela de extensão (**cus:recurso**):
+Criando o esquema de tabela de extensão (**cus:feature**):
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -203,7 +203,7 @@ Uma tabela de sobreposição é uma tabela de extensão (cardinalidade 1-1), mas
 
 A tabela de sobreposição contém a chave estrangeira para a tabela a ser estendida. A tabela a ser estendida, portanto, não é modificada. A relação entre as duas tabelas é o valor da chave primária da tabela a ser estendida.
 
-Criação do schema da tabela de overflow (**cus:estouro**):
+Criando o esquema da tabela de estouro (**cus:overflow**):
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -235,9 +235,9 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 Uma tabela de relação permite vincular duas tabelas com cardinalidade N-N. Esta tabela contém apenas as chaves estrangeiras das tabelas a serem vinculadas.
 
-Exemplo de uma tabela de relacionamento entre grupos (**nms:group**) e recipients (**nms:recipient**).
+Exemplo de uma tabela de relação entre grupos (**nms:group**) e destinatários (**nms:recipient**).
 
-Esquema de origem da tabela de relacionamento:
+Esquema Source da tabela de relacionamento:
 
 ```
 <srcSchema name="rcpGrpRel" namespace="cus">
@@ -319,7 +319,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-Em qualquer tabela que use essa tabela de referência, defina um link e adicione o **displayAsField=&quot;true&quot;** atributo.
+Em qualquer tabela que use essa tabela de referência, defina um link e adicione o atributo **displayAsField=&quot;true&quot;**.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -331,7 +331,7 @@ A interface não exibirá um link, mas um campo. Quando os usuários escolhem es
 
 * Para que ele seja preenchido automaticamente, você deve definir uma cadeia de caracteres de cálculo na tabela de referência.
 
-* Adicione o **noDbIndex=&quot;true&quot;** atributo na definição do link para impedir que o Adobe Campaign crie um índice nos valores armazenados na tabela de origem do link.
+* Adicione o atributo **noDbIndex=&quot;true&quot;** na definição do link para impedir que o Adobe Campaign crie um índice nos valores armazenados na tabela de origem do link.
 
 ## Tópicos relacionados
 

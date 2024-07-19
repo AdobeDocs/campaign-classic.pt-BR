@@ -23,8 +23,8 @@ Você pode usar esse servidor Tomcat integrado para atender a solicitações HTT
 
 Neste caso:
 
-* a porta de escuta padrão é 8080. Para alterá-lo, consulte [nesta seção](../../installation/using/configure-tomcat.md).
-* Os consoles clientes se conectam usando um URL como ```https:// `<computer>`:8080```.
+* a porta de escuta padrão é 8080. Para alterá-lo, consulte [esta seção](../../installation/using/configure-tomcat.md).
+* Os consoles clientes se conectam usando uma URL como ```https:// `<computer>`:8080```.
 
 No entanto, por motivos de segurança e administração, recomendamos usar um servidor Web dedicado como principal ponto de entrada para o tráfego HTTP quando o computador que executa o Adobe Campaign estiver exposto na Internet e você desejar abrir o acesso ao console fora da rede.
 
@@ -52,17 +52,17 @@ Para integrar o Adobe Campaign ao servidor Web do Microsoft IIS, siga estas etap
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. A **VBS** O script permite configurar automaticamente os recursos usados pelo servidor Adobe Campaign no diretório virtual que acabamos de criar. Para iniciá-lo, clique duas vezes na guia **iis_neolane_setup.vbs** arquivo localizado na `[INSTALL]\conf` pasta, onde `[INSTALL]` é o caminho para acessar a pasta de instalação do Adobe Campaign.
+1. Um script **VBS** permite configurar automaticamente os recursos usados pelo servidor Adobe Campaign no diretório virtual que acabamos de criar. Para iniciá-lo, clique duas vezes no arquivo **iis_neolane_setup.vbs** localizado na pasta `[INSTALL]\conf`, onde `[INSTALL]` é o caminho para acessar a pasta de instalação do Adobe Campaign.
 
    >[!NOTE]
    >
    >Você deve estar conectado como administrador para executar o script do VBS ou executar o script como administrador.
 
-   Clique em **[!UICONTROL OK]** se o servidor Web for usado como um servidor de redirecionamento de rastreamento, caso contrário, clique em **[!UICONTROL Cancel]**.
+   Clique em **[!UICONTROL OK]** se o servidor Web for usado como um servidor de redirecionamento de rastreamento. Caso contrário, clique em **[!UICONTROL Cancel]**.
 
    Quando vários sites já estiverem configurados no servidor Web, uma página intermediária será exibida para especificar a qual site a instalação se aplica: digite o número vinculado ao site e clique em **[!UICONTROL OK]**.
 
-1. No **[!UICONTROL Content View]** verifique se o site está configurado corretamente com os recursos do Adobe Campaign:
+1. Na guia **[!UICONTROL Content View]**, verifique se o site está configurado corretamente com os recursos do Adobe Campaign:
 
    Se a árvore não for exibida, reinicie o Microsoft IIS.
 
@@ -72,11 +72,11 @@ Em seguida, defina as configurações de segurança para a DLL ISAPI e para os r
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Selecione o **[!UICONTROL Features View]** e clique duas vezes na guia **Autenticação** link.
+1. Selecione a guia **[!UICONTROL Features View]** e clique duas vezes no link **Autenticação**.
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. No **Segurança de Diretório** do site, verifique se o acesso anônimo está ativado. Se necessário, clique no link **[!UICONTROL Edit]** link para alterar as configurações.
+1. Na guia **Segurança de Diretório** do site, verifique se o acesso anônimo está habilitado. Se necessário, clique no link **[!UICONTROL Edit]** para alterar as configurações.
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
@@ -86,7 +86,7 @@ Agora você deve testar se a configuração está correta.
 
 Para fazer isso, siga o procedimento abaixo:
 
-1. Reinicie o servidor Microsoft IIS usando o **iisreset** linha de comando.
+1. Reinicie o servidor do Microsoft IIS usando a linha de comando **iisreset**.
 
 1. Inicie o serviço Adobe Campaign e verifique se ele está em execução.
 
@@ -119,7 +119,7 @@ Você também pode verificar se a DLL ISAPI está carregada corretamente.
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Edite os filtros ISAPI para o site do Adobe Campaign clicando no link **[!UICONTROL Driver mapping]** ícone.
+1. Edite os filtros ISAPI para o site do Adobe Campaign clicando no ícone **[!UICONTROL Driver mapping]**.
 1. A verificação do conteúdo do filtro ISAPI.
 
 
@@ -129,9 +129,9 @@ Ao configurar o servidor Web IIS, um limite de aproximadamente 28 MB é automati
 
 Isso pode ter um impacto no Adobe Campaign, especialmente se você quiser carregar arquivos maiores que esse limite.
 
-Por exemplo, se você usar uma variável **Carregamento de dados (arquivo)** Em um fluxo de trabalho para importar um arquivo de 50 MB, um erro impedirá que o fluxo de trabalho seja executado corretamente.
+Por exemplo, se você usar uma atividade do tipo **Carregamento de dados (arquivo)** em um fluxo de trabalho para importar um arquivo de 50 MB, um erro impedirá que o fluxo de trabalho seja executado corretamente.
 
 Nesse caso, você deve aumentar esse limite.
 
-Para obter mais informações sobre essa opção do Microsoft IIS, consulte a seção &quot;Como&quot; do [Documentação do Microsoft](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}.
+Para obter mais informações sobre esta opção do Microsoft IIS, consulte a seção &quot;Como&quot; da [documentação do Microsoft](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}.
 

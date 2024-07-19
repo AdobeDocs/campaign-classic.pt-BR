@@ -24,8 +24,8 @@ Esta seção detalha a configuração a ser executada no Adobe Campaign v7 ao mi
 
 Além disso:
 
-* Se você migrar da v5.11, também deverá concluir a configuração detalhada em [nesta seção](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
-* Se você migrar da v6.02, também deverá concluir a configuração detalhada em [nesta seção](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
+* Se você migrar da v5.11, também deverá concluir a configuração detalhada em [esta seção](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* Se você migrar da v6.02, também deverá concluir a configuração detalhada em [esta seção](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## Fusos horários {#time-zones}
 
@@ -33,21 +33,21 @@ Além disso:
 
 Na v6.02, o modo &quot;fuso horário múltiplo&quot; só estava disponível para mecanismos de banco de dados PostgreSQL. Agora ele é oferecido independentemente do tipo de mecanismo de banco de dados usado. É altamente recomendável transformar sua base em uma base de &quot;fuso horário múltiplo&quot;.
 
-Para usar o modo TIMESTAMP WITH TIMEZONE, também é necessário adicionar o **-userTimestamp:1** opção para a linha de comando postupgrade.
+Para usar o modo TIMESTAMP WITH TIMEZONE, também é necessário adicionar a opção **-userTimestamptz:1** à linha de comando postupgrade.
 
 >[!IMPORTANT]
 >
->Se a variável **-usetimestamptz:1** for usado com um mecanismo de banco de dados incompatível, o banco de dados será corrompido e você terá que restaurar um backup do banco de dados e executar novamente o comando acima.
+>Se o parâmetro **-usetimestamptz:1** for usado com um mecanismo de banco de dados incompatível, o banco de dados será corrompido e você terá que restaurar um backup do banco de dados e executar novamente o comando acima.
 
 >[!NOTE]
 >
->É possível alterar o fuso horário após a migração por meio do console (**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]** nó).
+>É possível alterar o fuso horário após a migração através do console (**[!UICONTROL Administration > Platform > Options > WdbcTimeZone]** nó).
 >
->Para obter mais informações sobre o gerenciamento de fuso horário, consulte [nesta seção](../../installation/using/time-zone-management.md).
+>Para obter mais informações sobre o gerenciamento de fuso horário, consulte [esta seção](../../installation/using/time-zone-management.md).
 
 ### Oracle {#oracle}
 
-Se você receber um **ORA 01805** erro durante a pós-atualização, isso significa que os arquivos de fuso horário do Oracle entre o servidor de aplicativos e o servidor de banco de dados estão fora de sincronia. Para sincronizá-los novamente, siga as etapas abaixo:
+Se você receber um erro **ORA 01805** durante a pós-atualização, isso significa que os arquivos de fuso horário do Oracle entre o servidor de aplicativos e o servidor de banco de dados estão fora de sincronia. Para sincronizá-los novamente, siga as etapas abaixo:
 
 1. Para identificar o arquivo de fuso horário usado, execute o seguinte comando:
 
@@ -55,7 +55,7 @@ Se você receber um **ORA 01805** erro durante a pós-atualização, isso signif
    select * from v$timezone_file
    ```
 
-   Normalmente, os arquivos de fuso horário são encontrados no **ORACLE_HOME/oracore/zoneinfo/** pasta.
+   Os arquivos de fuso horário geralmente são encontrados na pasta **ORACLE_HOME/oracore/zoneinfo/**.
 
 1. Verifique se os arquivos de fuso horário são idênticos em ambos os servidores.
 
@@ -71,7 +71,7 @@ Para verificar se ambos os lados estão nos mesmos fusos horários:
    genezi -v
    ```
 
-   genezi é um binário encontrado em **$ORACLE_HOME/bin** repositório.
+   genezi é um binário encontrado no repositório **$ORACLE_HOME/bin**.
 
 1. Verifique a versão do arquivo de fuso horário no lado do servidor executando o seguinte comando:
 
@@ -79,7 +79,7 @@ Para verificar se ambos os lados estão nos mesmos fusos horários:
    select * from v$timezone_file
    ```
 
-1. Para alterar o arquivo de fuso horário no lado do cliente, use o **ORA_TZFILE** variável de ambiente.
+1. Para alterar o arquivo de fuso horário no cliente, use a variável de ambiente **ORA_TZFILE**.
 
 ## Segurança {#security}
 
@@ -93,13 +93,13 @@ O Adobe Campaign v7 envolve o conceito de **zonas de segurança**. Cada usuário
 
 **Antes da migração**, peça ajuda ao administrador de rede para definir as zonas de segurança a serem ativadas após a migração.
 
-**Após a pós-atualização** (antes de reiniciar o servidor), você deve configurar as zonas de segurança.
+**Após a pós-atualização** (antes da reinicialização do servidor), você deve configurar as zonas de segurança.
 
-A configuração da zona de segurança foi encontrada em [nesta seção](../../installation/using/security-zones.md).
+Configuração de zona de segurança encontrada em [esta seção](../../installation/using/security-zones.md).
 
 ### Senhas de usuário {#user-passwords}
 
-Na v7, **interno** e **administrador** a conexão do operador deve ser protegida por uma senha. É altamente recomendável atribuir senhas a essas contas e a todas as contas de operador, **antes da migração**. Se você não tiver especificado uma senha para **interno**, você não poderá se conectar. Para atribuir uma senha a **interno**, digite o seguinte comando:
+Na v7, a conexão de operador **interna** e **admin** deve ser protegida por uma senha. É altamente recomendável atribuir senhas a essas contas e a todas as contas de operador, **antes da migração**. Se você não tiver especificado uma senha para **internal**, não poderá se conectar. Para atribuir uma senha a **internal**, digite o seguinte comando:
 
 ```
 nlserver config -internalpassword
@@ -107,7 +107,7 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->A variável **interno** a senha deve ser idêntica para todos os servidores de rastreamento. Para obter mais informações, consulte [nesta seção](../../installation/using/configuring-campaign-server.md#internal-identifier) e [nesta seção](../../platform/using/access-management.md).
+>A senha **interna** deve ser idêntica para todos os servidores de rastreamento. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#internal-identifier) e [esta seção](../../platform/using/access-management.md).
 
 ### Novos recursos na v7 {#new-features-in-v7}
 
@@ -116,10 +116,10 @@ nlserver config -internalpassword
   Os usuários afetados por essa modificação são identificados e listados durante a pós-atualização.
 
 * O rastreamento não funciona mais se a senha estiver vazia. Se esse for o caso, uma mensagem de erro avisará você e solicitará que você a reconfigure.
-* As senhas dos usuários não são mais armazenadas no **xtk:sessionInfo** esquema.
-* As permissões de administração agora são necessárias para usar o **`xtk:builder:EvaluateJavaScript`** e **`xtk:builder:EvaluateJavaScriptTemplate`** funções.
+* As senhas dos usuários não são mais armazenadas no esquema **xtk:sessionInfo**.
+* Permissões administrativas agora são necessárias para usar as funções **`xtk:builder:EvaluateJavaScript`** e **`xtk:builder:EvaluateJavaScriptTemplate`**.
 
-Determinados esquemas prontos para uso foram modificados e agora são acessíveis por padrão somente com acesso de gravação para operadores com o **administrador** permissão:
+Determinados esquemas prontos para uso foram modificados e agora são acessíveis por padrão apenas com acesso de gravação para operadores com a permissão **admin**:
 
 * ncm:publicação
 * nl:monitoring
@@ -154,7 +154,7 @@ Determinados esquemas prontos para uso foram modificados e agora são acessívei
 
 ### Parâmetro Sessiontoken {#sessiontoken-parameter}
 
-Na v5, a variável **sessiontoken** parâmetro funcionado no lado do cliente (lista de telas do tipo visão geral, editor de links etc.) e no lado do servidor (aplicações web, relatórios, jsp, jssp etc.). Na v7, ele só funciona no lado do servidor. Se quiser voltar à funcionalidade completa como na v5, você deverá modificar os links usando esse parâmetro e passar pela página de conexão:
+Na v5, o parâmetro **sessiontoken** funcionou no lado do cliente (lista de telas do tipo visão geral, editor de links etc.) e no lado do servidor (aplicações web, relatórios, jsp, jssp etc.). Na v7, ele só funciona no lado do servidor. Se quiser voltar à funcionalidade completa como na v5, você deverá modificar os links usando esse parâmetro e passar pela página de conexão:
 
 Exemplo de link:
 
@@ -170,11 +170,11 @@ Novo link usando a página de conexão:
 
 >[!IMPORTANT]
 >
->Se você usar um operador vinculado a uma máscara IP confiável, verifique se ela tem os direitos mínimos e se está em uma zona de segurança no **sessionTokenOnly** modo.
+>Se você usar um operador vinculado a uma máscara IP confiável, verifique se ela tem os direitos mínimos e se está em uma zona de segurança no modo **sessionTokenOnly**.
 
 ### Funções SQL {#sql-functions}
 
-Chamadas de função SQL desconhecidas não são mais enviadas naturalmente ao servidor. Atualmente, todas as funções SQL devem ser adicionadas ao **xtk:funcList** schema (para obter mais informações, consulte [nesta seção](../../configuration/using/adding-additional-sql-functions.md)). Ao migrar, uma opção é adicionada durante a pós-atualização, permitindo que você mantenha a compatibilidade com funções SQL não declaradas antigas. Se quiser continuar usando essas funções, verifique se a variável **XtkPassUnknownSQLFunctionsToRDBMS** a opção é de fato definida no **[!UICONTROL Administration > Platform > Options]** nível de nó.
+Chamadas de função SQL desconhecidas não são mais enviadas naturalmente ao servidor. Atualmente, todas as funções SQL devem ser adicionadas ao esquema **xtk:funcList** (para obter mais informações, consulte [esta seção](../../configuration/using/adding-additional-sql-functions.md)). Ao migrar, uma opção é adicionada durante a pós-atualização, permitindo que você mantenha a compatibilidade com funções SQL não declaradas antigas. Se você quiser continuar usando essas funções, verifique se a opção **XtkPassUnknownSQLFunctionsToRDBMS** está realmente definida no nível do nó **[!UICONTROL Administration > Platform > Options]**.
 
 >[!IMPORTANT]
 >
@@ -182,9 +182,9 @@ Chamadas de função SQL desconhecidas não são mais enviadas naturalmente ao s
 
 ### JSSP {#jssp}
 
-Se você quiser autorizar o acesso a determinadas páginas por meio do protocolo HTTP (não HTTPS), nos aplicativos Web, por exemplo, independentemente da configuração realizada nas zonas de segurança, você deve especificar o **httpAllowed=&quot;true&quot;** na regra de retransmissão correspondente.
+Se você quiser autorizar o acesso a determinadas páginas por meio do protocolo HTTP (não HTTPS), em seus aplicativos Web, por exemplo, independentemente da configuração executada nas zonas de segurança, você deve especificar o parâmetro **httpAllowed=&quot;true&quot;** na regra de retransmissão correspondente.
 
-Se você usar JSSPs anônimos, deverá adicionar o **httpAllowed=&quot;true&quot;** em uma regra de retransmissão para seu JSSP (**[!UICONTROL serverConf.xml]** arquivo):
+Se você usa JSSPs anônimos, deve adicionar o parâmetro **httpAllowed=&quot;true&quot;** em uma regra de retransmissão para seu JSSP (arquivo **[!UICONTROL serverConf.xml]**):
 
 Por exemplo:
 
@@ -199,9 +199,9 @@ Por exemplo:
 
 O Adobe Campaign v7 integra um interpretador JavaScript mais recente. No entanto, essa atualização pode levar ao mau funcionamento de determinados scripts. Como o mecanismo anterior era mais permissivo, certas sintaxes funcionariam, o que não é mais o caso com a nova versão do mecanismo.
 
-A variável **[!UICONTROL myObject.@attribute]** A sintaxe agora é válida somente para objetos XML. Essa sintaxe pode ser usada para personalizar deliveries e gestão de conteúdo. Se você usou esse tipo de sintaxe em um objeto não XML, os recursos de personalização não funcionarão mais.
+A sintaxe **[!UICONTROL myObject.@attribute]** agora é válida somente para objetos XML. Essa sintaxe pode ser usada para personalizar deliveries e gestão de conteúdo. Se você usou esse tipo de sintaxe em um objeto não XML, os recursos de personalização não funcionarão mais.
 
-Para todos os outros tipos de objeto, a sintaxe agora é **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Por exemplo, um objeto não XML que usava a seguinte sintaxe: **[!UICONTROL employee.@sn]**, agora deve usar a seguinte sintaxe: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
+Para todos os outros tipos de objeto, a sintaxe agora é **[!UICONTROL myObject`[`&quot;atributo&quot;`]`]**. Por exemplo, um objeto não XML que usou a seguinte sintaxe: **[!UICONTROL employee.@sn]**, agora deve usar a seguinte sintaxe: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
 * Sintaxe anterior:
 
@@ -251,21 +251,21 @@ Não é mais possível usar um atributo XML como chave de tabela.
 
 Para fortalecer a segurança da instância, uma nova sintaxe foi introduzida no Adobe Campaign v7 para substituir a sintaxe baseada em SQLData. Se você usar esses elementos de código com essa sintaxe, será necessário modificá-los. Os principais elementos em causa são:
 
-* Filtragem por subquery: a nova sintaxe é baseada no `<subQuery>`  elemento para definir uma subconsulta
+* Filtragem por subconsulta: a nova sintaxe é baseada no elemento `<subQuery>` para definir uma subconsulta
 * Aggregates: a nova sintaxe é &quot;aggregate function(collection)&quot;
 * Filtragem por junção: a nova sintaxe é `[schemaName:alias:xPath]`
 
 O esquema queryDef (xtk:queryDef) foi modificado:
 
-* um novo `<subQuery>`  elemento está disponível para substituir o SELECT incluído em SQLData
+* um novo elemento `<subQuery>` está disponível para substituir o SELECT incluído em SQLData
 * dois novos valores, &quot;IN&quot; e &quot;NOT IN&quot; são introduzidos para o atributo @setOperator
-* um novo `<where>`  elemento, que é filho do `<node>` element: permite fazer &quot;subseleções&quot; em SELECT
+* um novo elemento `<where>`, que é filho do elemento `<node>`: isso permite fazer &quot;subseleções&quot; em SELECT
 
 Quando um atributo &quot;@expr&quot; é usado, o SQLData pode estar presente. Uma pesquisa pelos seguintes termos pode ser executada: &quot;SQLData&quot;, &quot;aliasSqlTable&quot;, &quot;sql&quot;.
 
-As instâncias do Adobe Campaign v7 são protegidas por padrão. A segurança é fornecida em termos de definições de zonas de segurança no **[!UICONTROL serverConf.xml]** arquivo: o **allowSQLInjection** O atributo gerencia a segurança da sintaxe SQL.
+As instâncias do Adobe Campaign v7 são protegidas por padrão. A segurança é fornecida em termos de definições de zonas de segurança no arquivo **[!UICONTROL serverConf.xml]**: o atributo **allowSQLInjection** gerencia a segurança da sintaxe SQL.
 
-Se ocorrer um erro de SQLData durante a execução pós-atualização, você deverá modificar esse atributo para permitir temporariamente o uso de sintaxes baseadas em SQLData, permitindo que você regrave o código. Para fazer isso, a seguinte opção deve ser alterada no **serverConf.xml** arquivo:
+Se ocorrer um erro de SQLData durante a execução pós-atualização, você deverá modificar esse atributo para permitir temporariamente o uso de sintaxes baseadas em SQLData, permitindo que você regrave o código. Para fazer isso, a seguinte opção deve ser alterada no arquivo **serverConf.xml**:
 
 ```
 allowSQLInjection="true"
@@ -277,7 +277,7 @@ Portanto, reinicie o postupgrade com o seguinte comando:
 nlserver config -postupgrade -instance:<instance_name> -force
 ```
 
-Você deve configurar as zonas de segurança (consulte [Segurança](#security)) e, em seguida, reative a segurança alterando a opção:
+Você deve configurar as zonas de segurança (consulte [Segurança](#security)) e, em seguida, reativar a segurança alterando a opção:
 
 ```
 allowSQLInjection="false"
@@ -337,7 +337,7 @@ Abaixo você encontrará exemplos comparativos entre a sintaxe antiga e a nova.
     </queryFilter>
   ```
 
-**O agregado**
+**A agregação**
 
 Função agregada (coleção)
 
@@ -357,7 +357,7 @@ Função agregada (coleção)
   >
   >As junções são executadas automaticamente para as funções agregadas. Não é mais necessário especificar a condição WHERE O0.iOperationId=iOperationId.
   >
-  >Não é mais possível usar &quot;count(&#42;)&quot;. Você deve usar &quot;countall()&quot;.
+  >Não é mais possível usar a função &quot;count(&#42;)&quot;. Você deve usar &quot;countall()&quot;.
 
 * Sintaxe anterior:
 
@@ -372,7 +372,7 @@ Função agregada (coleção)
                     <where><condition expr="[validation/@sandboxMode]=0 AND @state>=45" /></where></node>
   ```
 
-**Filtros por associações**
+**Filtros por junções**
 
 `[schemaName:alias:xPath]`
 
@@ -393,7 +393,7 @@ O alias é opcional
 
 **Dicas e truques**
 
-Em um `<subQuery>` elemento, para fazer referência a um campo &quot;field&quot; da variável principal `<queryDef>`   use a seguinte sintaxe: `[../@field]`
+Em um elemento `<subQuery>`, para referenciar um campo &quot;field&quot; do `<queryDef>` principal   use a seguinte sintaxe: `[../@field]`
 
 Exemplo:
 
@@ -422,13 +422,13 @@ Exemplo:
 
 A migração é realizada por meio de uma pós-atualização e os conflitos podem aparecer em relatórios, formulários ou aplicativos da Web. Esses conflitos podem ser resolvidos no console.
 
-Após a sincronização do recurso, a variável **pós-atualização** permite detectar se a sincronização gera erros ou avisos.
+Após a sincronização de recursos, o comando **postupgrade** permite detectar se a sincronização gera erros ou avisos.
 
 ### Exibir o resultado da sincronização {#view-the-synchronization-result}
 
 O resultado da sincronização pode ser visualizado de duas maneiras:
 
-* Na interface da linha de comando, os erros são materializados por uma divisa tripla **>>>** e a sincronização é interrompida automaticamente. Os avisos são materializados por uma divisa dupla **>>** e devem ser resolvidos quando a sincronização estiver concluída. No final da pós-atualização, um resumo é exibido no prompt de comando. Por exemplo:
+* Na interface de linha de comando, os erros são materializados por uma divisa tripla **>>** e a sincronização é interrompida automaticamente. Os avisos são materializados por uma divisa dupla **>** e devem ser resolvidos quando a sincronização estiver concluída. No final da pós-atualização, um resumo é exibido no prompt de comando. Por exemplo:
 
   ```
   2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
@@ -441,7 +441,7 @@ O resultado da sincronização pode ser visualizado de duas maneiras:
 
   Se o aviso aborda um conflito de recursos, é necessária atenção do operador para resolvê-lo.
 
-* A variável **pós-atualização_`<server version number>`_hora da pós-atualização`>`.log** o arquivo contém o resultado da sincronização. Ela está disponível por padrão no seguinte diretório: **diretório de instalação/var/`<instance>`pós-atualização**. Os erros e avisos são indicados pela variável **erro** e **aviso** atributos.
+* O arquivo **postupgrade_`<server version number>`_time de postupgrade`>`.log** contém o resultado da sincronização. Ele está disponível por padrão no seguinte diretório: **diretório de instalação/var/`<instance>`postupgrade**. Os erros e avisos são indicados pelos atributos **erro** e **aviso**.
 
 ### Resolver um conflito {#resolve-a-conflict}
 
@@ -454,7 +454,7 @@ Para resolver um conflito, aplique o seguinte processo:
 
 Há três maneiras possíveis de resolver um conflito:
 
-* **[!UICONTROL Declared as resolved]**: requer intervenção do operador antecipadamente.
+* **[!UICONTROL Declared as resolved]**: requer a intervenção do operador antecipadamente.
 * **[!UICONTROL Accept the new version]**: recomendado se os recursos fornecidos com o Adobe Campaign não tiverem sido alterados pelo usuário.
 * **[!UICONTROL Keep the current version]**: significa que a atualização foi rejeitada.
 
@@ -464,7 +464,7 @@ Há três maneiras possíveis de resolver um conflito:
 
 Se você optar por resolver o conflito manualmente, proceda da seguinte maneira:
 
-1. Na seção inferior da janela, procure pela variável **`_conflict_ string`** para localizar as entidades com conflitos. A entidade instalada com a nova versão contém a variável **novo** argumento, a entidade que corresponde à versão anterior contém a variável **cus** argumento.
+1. Na seção inferior da janela, procure por **`_conflict_ string`** para localizar as entidades com conflitos. A entidade instalada com a nova versão contém o argumento **new**. A entidade que corresponde à versão anterior contém o argumento **cus**.
 
    ![](assets/s_ncs_production_conflict002.png)
 
@@ -472,7 +472,7 @@ Se você optar por resolver o conflito manualmente, proceda da seguinte maneira:
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. Vá para o conflito que você teria resolvido. Clique em **[!UICONTROL Actions]** e selecione **[!UICONTROL Declare as resolved]**.
+1. Vá para o conflito que você teria resolvido. Clique no ícone **[!UICONTROL Actions]** e selecione **[!UICONTROL Declare as resolved]**.
 1. Salve as alterações: o conflito agora está resolvido.
 
 <!--
@@ -505,13 +505,13 @@ $(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
 
 ### Conteúdo da oferta {#offer-content}
 
-Na v7, o conteúdo da oferta foi movido. Na v6.02, o conteúdo estava em cada schema de representação (**nms:emailOfferView**). Na v7, o conteúdo agora está no schema de ofertas. Após a pós-atualização, o conteúdo não estará visível na interface. Após a pós-atualização, você deve recriar o conteúdo da oferta ou desenvolver um script que move automaticamente o conteúdo do esquema de representação para o esquema de oferta.
+Na v7, o conteúdo da oferta foi movido. Na v6.02, o conteúdo estava em cada esquema de representação (**nms:emailOfferView**). Na v7, o conteúdo agora está no schema de ofertas. Após a pós-atualização, o conteúdo não estará visível na interface. Após a pós-atualização, você deve recriar o conteúdo da oferta ou desenvolver um script que move automaticamente o conteúdo do esquema de representação para o esquema de oferta.
 
 >[!IMPORTANT]
 >
 Se alguns deliveries usando ofertas configuradas tiverem que ser enviados após a migração, você deverá excluir e recriar todos esses deliveries no v7. Se você não conseguir fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Esse modo não é recomendado porque você não se beneficiará de todos os novos recursos do Interaction v7. Esse é um modo de transição que permite concluir campanhas em andamento antes da migração real para o 6.1. Para obter mais informações sobre este modo, entre em contato conosco.
 
-Um exemplo de um script de movimento (**interactionTo610_full_XX.js**) está disponível no **Migração** na pasta Adobe Campaign v7. Esse arquivo mostra um exemplo de script para um cliente usando uma única representação de email por oferta (a variável **[!UICONTROL htmlSource]** e **[!UICONTROL textSource]** campos). O conteúdo que estava no **NmsEmailOfferView** A tabela foi movida para a tabela de ofertas.
+Um exemplo de script de movimentação (**interactionTo610_full_XX.js**) está disponível na pasta **Migration** da pasta do Adobe Campaign v7. Este arquivo mostra um exemplo de um script para um cliente usando uma única representação de email por oferta (os campos **[!UICONTROL htmlSource]** e **[!UICONTROL textSource]**). O conteúdo que estava na tabela **NmsEmailOfferView** foi movido para a tabela de ofertas.
 
 >[!NOTE]
 >
@@ -589,11 +589,11 @@ logInfo("Done");
 
 Este é o procedimento a ser seguido após mover o conteúdo da oferta se você tiver apenas um ambiente. Nesse caso, vamos tomar &quot;ENV&quot; como exemplo.
 
-1. Em todos os espaços de oferta de ambiente &quot;ENV&quot;, atualize a lista de campos usados. Por exemplo, para um espaço de oferta que usa somente o **[!UICONTROL htmlSource]**, você deve adicionar o **[!UICONTROL view/htmlSource]**.
+1. Em todos os espaços de oferta de ambiente &quot;ENV&quot;, atualize a lista de campos usados. Por exemplo, para um espaço de ofertas que use apenas o **[!UICONTROL htmlSource]**, você deve adicionar o **[!UICONTROL view/htmlSource]**.
 
    ![](assets/migration_interaction_2.png)
 
-1. No **[!UICONTROL Type of Environment]** campo dentro do **[!UICONTROL General]** selecione **[!UICONTROL Live]**.
+1. No campo **[!UICONTROL Type of Environment]**, na guia **[!UICONTROL General]**, selecione **[!UICONTROL Live]**.
 
    ![](assets/migration_interaction_3.png)
 
@@ -607,7 +607,7 @@ Este é o procedimento a ser seguido após mover o conteúdo da oferta se você 
 
 1. Faça o mesmo para todas as ofertas de ambientes &quot;ENV&quot;.
 1. Ative todas as ofertas de ambiente &quot;ENV_DESIGN&quot; nos canais relevantes.
-1. Teste fazer uma oferta entrar em funcionamento. Se você não encontrar problemas, execute tarefas pendentes na tarefa de workflow mais recente **[!UICONTROL Offer notification]** (offerMgt) para que todas as ofertas sejam ativadas.
+1. Teste fazer uma oferta entrar em funcionamento. Se você não encontrar problemas, execute tarefas pendentes na tarefa de fluxo de trabalho mais recente **[!UICONTROL Offer notification]** (offerMgt) para ativar todas as ofertas.
 
    ![](assets/migration_interaction_6.png)
 
@@ -621,7 +621,7 @@ Este é o procedimento a ser seguido após mover o conteúdo da oferta se você 
 
 ### Relatórios padrão {#standard-reports}
 
-Todos os relatórios padrão atualmente usam o mecanismo de renderização v6.x. Se você tiver adicionado JavaScript a esses relatórios, alguns elementos podem não funcionar mais. Na verdade, a versão antiga do JavaScript não é compatível com o mecanismo de renderização da v6.x. Portanto, você deve verificar o código JavaScript e adaptá-lo posteriormente. Você deve testar cada relatório, principalmente a função de exportação.
+Todos os relatórios padrão atualmente usam o mecanismo de renderização v6.x. Se você tiver adicionado JavaScript a esses relatórios, alguns elementos podem não funcionar mais. Na verdade, a versão antiga do JavaScript não é compatível com o mecanismo de renderização v6.x. Portanto, você deve verificar o código JavaScript e adaptá-lo posteriormente. Você deve testar cada relatório, principalmente a função de exportação.
 
 ### Relatórios personalizados {#personalized-reports}
 
@@ -640,9 +640,9 @@ Há duas famílias de aplicativos Web:
 
 ### Aplicativos web identificados {#identified-web-applications}
 
-Assim como para os relatórios ([saiba mais](#reports)), se tiver adicionado o JavaScript, você deverá verificar e adaptar, se necessário. Se quiser se beneficiar do banner azul v7 (contendo as guias azuis), você deverá republicar o aplicativo web.
+Assim como para os relatórios ([saiba mais](#reports)), se você tiver adicionado o JavaScript, deverá verificar e adaptar, se necessário. Se quiser se beneficiar do banner azul v7 (contendo as guias azuis), você deverá republicar o aplicativo web.
 
-Os métodos de conexão da aplicação web foram alterados na v7. Se encontrar problemas de conexão nos aplicativos web identificados, ative temporariamente a variável **allowUserPassword** e **sessionTokenOnly** opções no **serverConf.xml** arquivo. Após a pós-atualização, modifique esses valores de opção:
+Os métodos de conexão da aplicação web foram alterados na v7. Se você encontrar problemas de conexão nos aplicativos Web identificados, ative temporariamente as opções **allowUserPassword** e **sessionTokenOnly** no arquivo **serverConf.xml**. Após a pós-atualização, modifique esses valores de opção:
 
 ```
 allowUserPassword="true"

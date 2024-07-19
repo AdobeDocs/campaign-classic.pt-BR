@@ -25,7 +25,7 @@ Observe que os links de unsubscription podem falhar como qualquer outro link, a 
 
 **Você será afetado?**
 
-Para melhorar a segurança, o mecanismo de assinatura para rastrear links em emails foi introduzido no [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - abril de 2020 - e é ativado por padrão para todos os clientes a partir da Build 19.1.4 (9032@3a9dc9c) e do Campaign 20.2.
+Para melhorar a segurança, o mecanismo de assinatura para rastrear links em emails foi introduzido no [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - abril de 2020 - e é habilitado por padrão para todos os clientes, a partir da Build 19.1.4 (9032@3a9dc9c) e do Campaign 20.2.
 
 Se seu ambiente estiver sendo executado em uma das versões listadas abaixo, você poderá ser afetado:
 
@@ -44,11 +44,11 @@ Saiba como verificar sua versão [nesta seção](../../platform/using/launching-
 
 Como um **cliente hospedado**, o Adobe estará trabalhando com você para atualizar sua configuração em breve.
 
-Como um **cliente no local/híbrido**, é necessário atualizar a configuração.
+Como um **cliente local/híbrido**, você precisa atualizar sua configuração.
 
 Siga a etapa abaixo:
 
-1. No [arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md) (serverConf.xml), alterar **signEmailLinks** para **false**.
+1. No [arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md) (serverConf.xml), altere **signEmailLinks** para **false**.
 1. Reinicie o serviço **nlserver**.
 1. No servidor de rastreamento, reinicie o servidor da Web (apache2 em Debian, httpd em CentOS/RedHat, IIS no Windows).
 
@@ -58,7 +58,7 @@ Siga a etapa abaixo:
 
 >[!NOTE]
 >
->A variável **config-`<instance>`.xml** o arquivo substitui o **serverConf.xml** configurações. Se a variável **signEmailLinks** está presente no  **config-`<instance>`.xml** (onde **instância** é o nome da sua instância), também deve ser ativado para **false**.
+>O arquivo **config-`<instance>`.xml** substitui as configurações de **serverConf.xml**. Se o **signEmailLinks** estiver presente no **config-`<instance>`.xml** (onde **instance** é o nome da sua instância), ele também deverá ser transformado em **false**.
 >
 
 **Qual é o impacto?**

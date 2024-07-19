@@ -7,7 +7,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -80,11 +80,11 @@ Enumerações são definidas no início de um esquema (antes de o elemento princ
    * intervalo de tempo
    * uuid
 
-* **padrão (string)**: Valor padrão. O valor padrão também pode ser um dos valores definidos na lista discriminada.
-* **desc (string)**: descrição da enumeração.
-* **rótulo (string)**: rótulo de enumeração.
-* **nome (sequência de caracteres)**: nome interno da enumeração.
-* **modelo (sequência de caracteres)**: este atributo define uma referência a um `<enumeration>` elemento compartilhado por vários schemas. A definição é copiada automaticamente para o esquema atual.
+* **padrão (cadeia de caracteres)**: valor padrão. O valor padrão também pode ser um dos valores definidos na lista discriminada.
+* **desc (cadeia de caracteres)**: descrição da enumeração.
+* **rótulo (cadeia de caracteres)**: rótulo de enumeração.
+* **nome (cadeia de caracteres)**: nome interno da enumeração.
+* **modelo (cadeia de caracteres)**: este atributo define uma referência a um elemento `<enumeration>` compartilhado por vários esquemas. A definição é copiada automaticamente para o esquema atual.
 
 ## Exemplos {#examples-4}
 

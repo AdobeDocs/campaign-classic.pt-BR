@@ -21,11 +21,11 @@ ht-degree: 1%
 
 Esta seção detalha as etapas preliminares de configuração necessárias antes de instalar o Adobe Campaign.
 
-A configuração técnica e de software necessária para instalar o Adobe Campaign está detalhada na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
+A configuração técnica e de software necessária para a instalação do Adobe Campaign está detalhada na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
 Lembrando que os seguintes componentes precisam ser instalados e configurados corretamente:
 
-* Apache, consulte [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md),
+* Apache, consulte a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md),
 * Java JDK e OpenJDK, consulte [Java Development Kit - JDK](../../installation/using/application-server.md#jdk),
 * Bibliotecas, consulte [Bibliotecas](#libraries),
 * Camadas de acesso ao banco de dados, consulte [Camadas de acesso ao banco de dados](#database-access-layers),
@@ -43,11 +43,11 @@ Para instalar Adobe Campaign no Linux, verifique se você tem a bibliotecas nece
 
   Se o comando não retornar uma linha vazia, significa que a configuração está correta.
 
-* É necessário ter a versão OpenSSL **1.0.2** ou superior.
+* Você deve ter o OpenSSL versão **1.0.2** ou superior.
 
   Para distribuições RHEL, é necessária a versão 1.0 do OpenSSL.
 
-* Para usar o Adobe Campaign, você precisa ter a **libicu** biblioteca instalada.
+* Para usar o Adobe Campaign, você precisa ter a biblioteca **libicu** instalada.
 
 ### SELinux {#selinux}
 
@@ -59,7 +59,7 @@ Para fazer isso, faça logon como root e insira o seguinte comando:
 echo 0 >/selinux/enforce
 ```
 
-Além disso, no **/etc/sysconfig/httpd** , a seguinte linha foi adicionada para fazer referência ao script de configuração do ambiente Adobe Campaign:
+Além disso, no arquivo **/etc/sysconfig/httpd**, a seguinte linha foi adicionada para fazer referência ao script de configuração do ambiente Adobe Campaign:
 
 ```
 . ~neolane/nl6/env.sh
@@ -67,9 +67,9 @@ Além disso, no **/etc/sysconfig/httpd** , a seguinte linha foi adicionada para 
 
 No RHEL e no CentOS, problemas de compatibilidade com as camadas de cliente dos bancos de dados eram observados quando o SELinux estava habilitado. Para ter certeza de que o Adobe Campaign pode operar corretamente, recomendamos desativar o SELinux.
 
-**Aplique o seguinte processo:**
+**Aplicar o seguinte processo:**
 
-* Editar o arquivo **/etc/selinux/config**
+* Edite o arquivo **/etc/selinux/config**
 
 * Modifique a linha SELINUX da seguinte maneira:
 
@@ -138,15 +138,15 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 As camadas de acesso para o mecanismo de banco de dados que você está usando devem ser instaladas no seu servidor e estar acessíveis por meio do Adobe Campaign conta. As versões e os modos de instalação podem variar dependendo do mecanismo de banco de dados usado.
 
-A versão piloto compatível está detalhada no [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
+A versão piloto com suporte está detalhada na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
-Verifique também o [Banco de dados](../../installation/using/database.md) seção.
+Verifique também a seção geral [Banco de Dados](../../installation/using/database.md).
 
 ### PostgreSQL {#postgresql}
 
-O Adobe Campaign é compatível com todas as versões das bibliotecas de clientes PostgreSQL da versão 9.6: **libpq.so.5**.
+O Adobe Campaign oferece suporte a todas as versões das bibliotecas de clientes PostgreSQL da versão 9.6: **libpq.so.5**.
 
-O uso do PostgreSQL com o Adobe Campaign também requer a instalação do correspondente **pgcrypto** bibliotecas.
+O uso do PostgreSQL com Adobe Campaign também requer a instalação das bibliotecas **pgcrypto** correspondentes.
 
 ### Oracle {#oracle}
 
@@ -182,7 +182,7 @@ As instalações do Adobe Campaign para Linux devem ser realizadas na seguinte s
 
 O processo de instalação é descrito neste capítulo. As etapas de instalação são as seguintes:
 
-* Etapa 1: instalação do servidor de aplicativos, consulte [Instalação de pacotes com Linux](../../installation/using/installing-packages-with-linux.md).
+* Etapa 1: instalando o servidor de aplicativos, consulte [Instalando pacotes com Linux](../../installation/using/installing-packages-with-linux.md).
 * Etapa 2: Integração com um servidor Web (opcional, dependendo dos componentes implantados).
 
 Quando as etapas de instalação estiverem concluídas, você precisará configurar as instâncias, o banco de dados e o servidor. Para obter mais informações, consulte [Sobre a configuração inicial](../../installation/using/about-initial-configuration.md).

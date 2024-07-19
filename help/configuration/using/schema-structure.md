@@ -105,7 +105,7 @@ No nosso exemplo, o elemento principal é representado pela seguinte linha:
 <element name="recipient">
 ```
 
-A variável **`<attribute>`** e **`<element>`** os elementos que seguem o elemento principal são usados para definir os locais e os nomes dos itens de dados na estrutura XML.
+Os elementos **`<attribute>`** e **`<element>`** que seguem o elemento principal são usados para definir os locais e os nomes dos itens de dados na estrutura XML.
 
 No nosso esquema de amostra, são eles:
 
@@ -120,42 +120,42 @@ No nosso esquema de amostra, são eles:
 
 As seguintes regras se aplicam:
 
-* Each **`<element>`** e **`<attribute>`** deve ser identificado por nome através do **name** atributo.
+* Cada **`<element>`** e **`<attribute>`** devem ser identificados por nome através do atributo **name**.
 
   >[!IMPORTANT]
   >
   >O nome do elemento deve ser conciso, de preferência em inglês e incluir apenas caracteres permitidos nas regras de nomenclatura XML.
 
-* Somente **`<element>`** os elementos podem conter **`<attribute>`** elementos e **`<element>`** elementos na estrutura XML.
-* Um **`<attribute>`** o elemento deve ter um nome exclusivo dentro de um **`<element>`**.
-* A utilização de **`<elements>`** em cadeias de caracteres de dados de várias linhas é recomendado.
+* Somente elementos **`<element>`** podem conter elementos **`<attribute>`** e elementos **`<element>`** na estrutura XML.
+* Um elemento **`<attribute>`** deve ter um nome exclusivo dentro de um **`<element>`**.
+* É recomendado o uso de **`<elements>`** em cadeias de caracteres de dados de várias linhas.
 
 ## Tipos de dados {#data-types}
 
-O tipo de dados é inserido por meio de **type** atributo no **`<attribute>`** e **`<element>`** elementos.
+O tipo de dados é inserido pelo atributo **type** nos elementos **`<attribute>`** e **`<element>`**.
 
-Uma lista detalhada está disponível na descrição do [`<attribute>` element](../../configuration/using/schema/attribute.md) e a variável [`<element>` element](../../configuration/using/schema/element.md).
+Uma lista detalhada está disponível na descrição do [`<attribute>` elemento](../../configuration/using/schema/attribute.md) e do [`<element>` elemento](../../configuration/using/schema/element.md).
 
-Quando este atributo não é preenchido, **string** é o tipo de dados padrão, a menos que o elemento contenha elementos secundários. Se isso acontecer, será usado apenas para estruturar os elementos hierarquicamente (**`<location>`** elemento em nosso exemplo).
+Quando este atributo não é populado, **string** é o tipo de dados padrão, a menos que o elemento contenha elementos filhos. Em caso afirmativo, ele é usado apenas para estruturar os elementos hierarquicamente (**`<location>`** elemento em nosso exemplo).
 
 Os seguintes tipos de dados são aceitos em esquemas:
 
-* **string**: cadeia de caracteres. Exemplos: um nome, uma cidade etc.
+* **cadeia de caracteres**: cadeia de caracteres. Exemplos: um nome, uma cidade etc.
 
-  O tamanho pode ser especificado por meio da variável **length** atributo (opcional, valor padrão &quot;255&quot;).
+  O tamanho pode ser especificado por meio do atributo **length** (opcional, valor padrão &quot;255&quot;).
 
-* **booleano**: Campo booleano. Exemplo de valores possíveis: true/false, 0/1, yes/no, etc.
-* **byte**, **curto**, **long**: números inteiros (1 byte, 2 bytes, 4 bytes). Exemplos: uma idade, um número de conta, um número de pontos, etc.
-* **duplo**: número de ponto flutuante de precisão dupla. Exemplos: um preço, uma taxa etc.
+* **booleano**: campo booleano. Exemplo de valores possíveis: true/false, 0/1, yes/no, etc.
+* **byte**, **short**, **long**: números inteiros (1 byte, 2 bytes, 4 bytes). Exemplos: uma idade, um número de conta, um número de pontos, etc.
+* **double**: número de ponto flutuante de precisão dupla. Exemplos: um preço, uma taxa etc.
 * **data**, **datetime**: datas e datas + horas. Exemplos: uma data de nascimento, uma data de compra etc.
 * **datetimenotz**: data + hora sem dados de fuso horário.
-* **timespan**: durações. Exemplo: prioridade.
+* **período**: durações. Exemplo: prioridade.
 * **memorando**: campos de texto longo (várias linhas). Exemplos: uma descrição, um comentário etc.
-* **uuid**: campos &quot;uniqueidentifier&quot; para oferecer suporte a uma GUID (compatível somente com o Microsoft SQL Server).
+* **uuid**: campos &quot;uniqueidentifier&quot; para dar suporte a uma GUID (com suporte somente no Microsoft SQL Server).
 
   >[!NOTE]
   >
-  >Para conter um **uuid** no RDBMS que não seja o Microsoft SQL Server, `the newuuid()` deve ser adicionada e concluída com seu valor padrão.
+  >Para conter um campo **uuid** em RDBMS diferente do Microsoft SQL Server, a função `the newuuid()` deve ser adicionada e concluída com seu valor padrão.
 
 Aqui está nosso schema de exemplo com os tipos inseridos:
 
@@ -199,14 +199,14 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
    <td> NÚMERO(3)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Short<br /> </td> 
+   <td> Curto<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NÚMERO(5)<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplo<br /> </td> 
    <td> PRECISÃO DUPLA<br /> </td> 
-   <td> FLOAT<br /> </td> 
+   <td> FLUTUANTE<br /> </td> 
   </tr> 
   <tr> 
    <td> Longo<br /> </td> 
@@ -226,22 +226,22 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
   <tr> 
    <td> Hora<br /> </td> 
    <td> HORA<br /> </td> 
-   <td> FLOAT<br /> </td> 
+   <td> FLUTUANTE<br /> </td> 
   </tr> 
   <tr> 
    <td> Data e hora<br /> </td> 
-   <td> CARIMBO DE DATA E HORA<br /> </td> 
+   <td> CARIMBO DE DATA/HORA<br /> </td> 
    <td> DATA<br /> </td> 
   </tr> 
   <tr> 
-   <td> Data e hora<br /> </td> 
-   <td> CARIMBO DE DATA E HORA<br /> </td> 
+   <td> Datetimenotz<br /> </td> 
+   <td> CARIMBO DE DATA/HORA<br /> </td> 
    <td> DATA<br /> </td> 
   </tr> 
   <tr> 
    <td> Período<br /> </td> 
    <td> PRECISÃO DUPLA<br /> </td> 
-   <td> FLOAT<br /> </td> 
+   <td> FLUTUANTE<br /> </td> 
   </tr> 
   <tr> 
    <td> Memorando<br /> </td> 
@@ -258,11 +258,11 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
 
 ## Propriedades {#properties}
 
-A variável **`<elements>`** e **`<attributes>`** os elementos do schema de dados podem ser enriquecidos com várias propriedades. É possível preencher um rótulo para descrever o elemento atual.
+Os elementos **`<elements>`** e **`<attributes>`** do esquema de dados podem ser enriquecidos com várias propriedades. É possível preencher um rótulo para descrever o elemento atual.
 
 ### Rótulos e descrições {#labels-and-descriptions}
 
-* A variável **rótulo** permite inserir uma breve descrição.
+* A propriedade **label** permite inserir uma breve descrição.
 
   >[!NOTE]
   >
@@ -278,7 +278,7 @@ A variável **`<elements>`** e **`<attributes>`** os elementos do schema de dado
 
   ![](assets/d_ncs_integration_schema_label.png)
 
-* A variável **desc** permite inserir uma descrição longa.
+* A propriedade **desc** permite inserir uma descrição longa.
 
   A descrição é exibida no formulário de entrada na barra de status da janela principal do console do cliente Adobe Campaign.
 
@@ -294,7 +294,7 @@ A variável **`<elements>`** e **`<attributes>`** os elementos do schema de dado
 
 ### Valores padrão {#default-values}
 
-Use o **padrão** para definir uma expressão que retorna um valor padrão na criação de conteúdo.
+Use a propriedade **default** para definir uma expressão que retorne um valor padrão na criação de conteúdo.
 
 O valor deve ser uma expressão compatível com a linguagem XPath. Para obter mais informações, consulte [Referência com XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
@@ -303,13 +303,13 @@ O valor deve ser uma expressão compatível com a linguagem XPath. Para obter ma
 * Data atual: **default=&quot;GetDate()&quot;**
 * Contador: **default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
 
-  Neste exemplo, o valor padrão é construído usando a concatenação de uma string e chamando o **ValorContador** com um nome de contador livre. O número retornado é incrementado em um em cada inserção.
+  Neste exemplo, o valor padrão é construído usando a concatenação de uma cadeia de caracteres e chamando a função **CounterValue** com um nome de contador livre. O número retornado é incrementado em um em cada inserção.
 
   >[!NOTE]
   >
-  >No console do cliente Adobe Campaign, navegue até o **[!UICONTROL Administration > Counters]** pasta do Explorer para gerenciar contadores.
+  >No console do cliente Adobe Campaign, navegue até a pasta **[!UICONTROL Administration > Counters]** do Explorer para gerenciar os contadores.
 
-Para vincular um valor padrão a um campo, é possível usar o `<default>`  ou  `<sqldefault>`   campo.
+Para vincular um valor padrão a um campo, você pode usar o `<default>` ou `<sqldefault>`   campo.
 
 `<default>` : permite preencher previamente o campo com um valor padrão ao criar entidades. O valor não será um valor SQL padrão.
 
@@ -319,7 +319,7 @@ Para vincular um valor padrão a um campo, é possível usar o `<default>`  ou  
 
 #### Abrir lista discriminada {#free-enumeration}
 
-A variável **userEnum** property permite definir uma lista discriminada aberta para armazenar e exibir os valores inseridos por meio desse campo.
+A propriedade **userEnum** permite definir uma enumeração aberta para armazenar e exibir os valores inseridos por meio desse campo.
 
 A sintaxe é a seguinte:
 
@@ -331,13 +331,13 @@ Esses valores são mostrados em uma lista suspensa no formulário de entrada:
 
 >[!NOTE]
 >
->No console do cliente Adobe Campaign, navegue até o **[!UICONTROL Administration > Enumerations]** pasta do Explorer para gerenciar enumerações.
+>No console do cliente Adobe Campaign, navegue até a pasta **[!UICONTROL Administration > Enumerations]** do Explorer para gerenciar enumerações.
 
 #### Definir enumeração {#set-enumeration}
 
-A variável **enum** property permite definir uma enumeração fixa usada quando a lista de valores possíveis é conhecida antecipadamente.
+A propriedade **enum** permite definir uma enumeração fixa usada quando a lista de valores possíveis é conhecida antecipadamente.
 
-A variável **enum** atributo refere-se à definição de uma classe de enumeração preenchida no schema fora do elemento principal.
+O atributo **enum** refere-se à definição de uma classe de enumeração preenchida no esquema fora do elemento principal.
 
 As enumerações permitem que o usuário selecione um valor em uma lista suspensa em vez de inserir o valor em um campo de entrada regular:
 
@@ -353,25 +353,25 @@ Exemplo de uma declaração de enumeração no schema de dados:
 </enumeration>
 ```
 
-Uma enumeração é declarada fora do elemento principal por meio de **`<enumeration>`** elemento.
+Uma enumeração é declarada fora do elemento principal por meio do elemento **`<enumeration>`**.
 
 As propriedades de enumeração são as seguintes:
 
 * **baseType**: tipo de dados associado aos valores
 * **rótulo**: descrição da enumeração
-* **name**: nome da enumeração
+* **nome**: nome da enumeração
 * **padrão**: valor padrão da enumeração
 
-Os valores da lista discriminada são declarados na variável **`<value>`** elemento com os seguintes atributos:
+Os valores de enumeração são declarados no elemento **`<value>`** com os seguintes atributos:
 
-* **name**: nome do valor armazenado internamente
+* **nome**: nome do valor armazenado internamente
 * **rótulo**: rótulo exibido na interface gráfica
 
 #### enumeração dbenum {#dbenum-enumeration}
 
-*O **dbeno** permite definir uma enumeração cujas propriedades são semelhantes às da variável **enum** propriedade.
+*A propriedade **dbenum** permite definir uma enumeração cujas propriedades são semelhantes às da propriedade **enum**.
 
-No entanto, a **name** O atributo não armazena o valor internamente, ele armazena um código que permite estender as tabelas relacionadas sem modificar o schema.
+No entanto, o atributo **name** não armazena o valor internamente, ele armazena um código que permite estender as tabelas relacionadas sem modificar o esquema.
 
 Essa lista discriminada é usada para especificar a natureza das campanhas, por exemplo.
 
@@ -404,9 +404,9 @@ Este é o nosso exemplo de schema com as propriedades preenchidas:
 
 Uma coleção é uma lista de elementos com o mesmo nome e o mesmo nível hierárquico.
 
-A variável **desvinculado** O atributo com o valor &quot;true&quot; permite preencher um elemento de coleção.
+O atributo **unbound** com o valor &quot;true&quot; permite preencher um elemento de coleção.
 
-**Exemplo**: definição do **`<group>`** elemento de coleção no esquema.
+**Exemplo**: definição do elemento de coleção **`<group>`** no esquema.
 
 ```sql
 <element name="group" unbound="true" label="List of groups">
@@ -432,10 +432,10 @@ Os elementos são designados pelo nome e os atributos são designados pelo nome 
 **Exemplo**:
 
 * **@email**: seleciona o email,
-* **location/@city**: seleciona o atributo &quot;city&quot; na variável **`<location>`** element
+* **location/@city**: seleciona o atributo &quot;city&quot; no elemento **`<location>`**
 * **../@email**: seleciona o endereço de email do elemento pai do elemento atual
-* **grupo`[1]/@label`**: seleciona o atributo &quot;label&quot; que é filho do primeiro **`<group>`** elemento de coleção
-* **grupo`[@label='test1']`**: seleciona o atributo &quot;label&quot; que é filho do **`<group>`** elemento e contém o valor &quot;test1&quot;
+* **group`[1]/@label`**: seleciona o atributo &quot;label&quot; que é filho do primeiro elemento de coleção **`<group>`**
+* **group`[@label='test1']`**: seleciona o atributo &quot;label&quot; que é filho do elemento **`<group>`** e contém o valor &quot;test1&quot;
 
 >[!NOTE]
 >
@@ -447,8 +447,8 @@ Os elementos são designados pelo nome e os atributos são designados pelo nome 
 
 Também é possível definir expressões complexas, como as seguintes operações aritméticas:
 
-* **@gender+1**: adiciona 1 ao conteúdo do **gênero** atributo,
-* **@email + &#39;(&#39;+@created+&#39;)&#39;**: constrói uma cadeia de caracteres pegando o valor do endereço de email adicionado à data de criação entre parênteses (para o tipo de cadeia de caracteres, coloque a constante entre aspas).
+* **@gender+1**: adiciona 1 ao conteúdo do atributo **gender**,
+* **@email + &#39;(&#39;+@created+&#39;)&#39;**: constrói uma cadeia de caracteres pegando o valor do endereço de email adicionado à data de criação entre parênteses (para o tipo de cadeia, coloque a constante entre aspas).
 
 Foram adicionadas funções de alto nível às expressões, a fim de enriquecer o potencial dessa linguagem.
 
@@ -464,11 +464,11 @@ Você pode acessar a lista de funções disponíveis por meio de qualquer editor
 
 ## Criação de uma string através do comando compute string {#building-a-string-via-the-compute-string}
 
-A **String de cálculo** é uma expressão XPath usada para construir uma cadeia de caracteres que representa um registro em uma tabela associada ao esquema. **String de cálculo** é usado principalmente na interface gráfica para exibir o rótulo de um registro selecionado.
+Uma **cadeia de caracteres de computação** é uma expressão XPath usada para construir uma cadeia de caracteres que representa um registro em uma tabela associada ao esquema. A **Cálculo de cadeia de caracteres** é usada principalmente na interface gráfica para exibir o rótulo de um registro selecionado.
 
-A variável **String de cálculo** é definido por meio da variável **`<compute-string>`** elemento no elemento principal do schema de dados. Um **expr** O atributo contém uma expressão XPath para calcular a exibição.
+A **Cálculo de cadeia de caracteres** é definida por meio do elemento **`<compute-string>`** sob o elemento principal do esquema de dados. Um atributo **expr** contém uma expressão XPath para calcular a exibição.
 
-**Exemplo**: cadeia de caracteres de cálculo da tabela de recipients.
+**Exemplo**: cadeia de caracteres de cálculo da tabela de destinatários.
 
 ```sql
 <srcSchema name="recipient" namespace="nms">  
@@ -479,7 +479,7 @@ A variável **String de cálculo** é definido por meio da variável **`<compute
 </srcSchema>
 ```
 
-Resultado da cadeia de caracteres calculada para um destinatário: **Tom John (john.doe@aol.com)**
+Resultado da cadeia de caracteres computada para um destinatário: **Doe John (john.doe@aol.com)**
 
 >[!NOTE]
 >

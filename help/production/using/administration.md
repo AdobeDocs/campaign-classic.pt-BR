@@ -17,9 +17,9 @@ ht-degree: 3%
 
 # Administração{#administration}
 
-Inicialização automática dos módulos do Adobe Campaign (**web**, **mta**, **wfserver**, etc.) é fornecido pela **nlserver** servidor.
+Inicialização automática dos módulos do Adobe Campaign (**web**, **mta**, **wfserver**, etc.) é fornecido pelo servidor **nlserver**.
 
-A instalação do Adobe Campaign configura automaticamente o computador para que o **nlserver** o serviço é iniciado durante a sequência de inicialização.
+A instalação do Adobe Campaign configura automaticamente o computador para que o serviço **nlserver** seja inicializado durante a sequência de inicialização.
 
 Os seguintes comandos são usados para iniciar e desligar o serviço Adobe Campaign manualmente:
 
@@ -30,21 +30,21 @@ Os seguintes comandos são usados para iniciar e desligar o serviço Adobe Campa
 
 * No Linux (como raiz):
 
-   * **/etc/init.d/nlserver6 iniciar**
-   * **parada de /etc/init.d/nlserver6**
+   * **/etc/init.d/nlserver6 início**
+   * **/etc/init.d/nlserver6 parada**
 
 >[!NOTE]
 >
->A partir da versão 20.1, recomendamos usar o seguinte comando (para Linux): **systemctl start nlserver** / **systemctl stop nlserver**
+>A partir da versão 20.1, é recomendável usar o seguinte comando (para Linux): **systemctl start nlserver** / **systemctl stop nlserver**
 
-Esta é uma lista dos comandos administrativos usuais acessíveis no Linux (como **Adobe Campaign**):
+Esta é uma lista dos comandos de administração habituais acessíveis no Linux (como **Adobe Campaign**):
 
-* Exibir todos os módulos Adobe Campaign iniciados: **despejo /etc/init.d/nlserver6** ou **Status /etc/init.d/nlserver6**
+* Exibir todos os módulos do Adobe Campaign iniciados: **/etc/init.d/nlserver6 despejo** ou **/etc/init.d/nlserver6 status**
 
   >[!NOTE]
   >
-  >Adicionar o **-quem** parâmetro para o **despejo** permite coletar informações sobre conexões atuais (usuários e processos).\
-  >A variável **Status /etc/init.d/nlserver6** (sem o parâmetro &quot;-who&quot;) retornará:
+  >Adicionar o parâmetro **-who** ao comando **pdump** permite coletar informações sobre as conexões atuais (usuários e processos).\
+  >O comando **/etc/init.d/nlserver6 status** (sem o parâmetro &quot;-who&quot;) retornará:
   >
   >    * 0 se todos os processos estiverem sendo executados.
   >    * 1 se um processo estiver ausente.
@@ -54,52 +54,52 @@ Esta é uma lista dos comandos administrativos usuais acessíveis no Linux (como
 
 * Iniciar/parar um módulo de várias instâncias ou de instâncias mono (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**, **inmail**):
 
-  **nlserver start`<module>[@<instance>]`**
+  **ninício do servidor`<module>[@<instance>]`**
 
-  **nlserver stop`<module>[@<instance>][-immediate][-noconsole]`**
+  **nparada do servidor`<module>[@<instance>][-immediate][-noconsole]`**
 
-  Você também pode usar a variável **reinicialização do nlserver`<module>[@<instance>]`** comando para reiniciar um módulo.
+  Você também pode usar o comando **nlserver restart`<module>[@<instance>]`** para reiniciar um módulo.
 
   Exemplo:
 
-  **nlserver start web**
+  **nlserver iniciar Web**
 
   **nlserver start mta@my_instance**
 
-  **nlserver stop syslogd**
+  **nlserver parar syslogd**
 
-  **nlserver stop wfserver@my_instance**
+  **nlserver parar wfserver@my_instance**
 
-  **nlserver stop web -immediate**
+  **nlserver parar web -immediate**
 
-  **Web de reinicialização do nlserver**
+  **nlserver reiniciar Web**
 
   >[!NOTE]
   >
   >* Se a instância não for especificada, a instância &quot;padrão&quot; será usada.
-  >* Em caso de emergência, utilizar o **-immediate** opção para forçar uma parada imediata no processo (equivalente ao comando Unix **kill - 9**).
-  >* Use o **-noconsole** opção para garantir que o módulo iniciado não exibirá nada no console. Seus registros serão gravados no disco por meio do **syslogd** módulo.
-  >* Use o **-verboso** opção para exibir informações adicionais sobre ações do processo.
+  >* No caso de uma emergência, use a opção **-immediate** para forçar uma parada imediata no processo (equivalente ao comando Unix **kill -9**).
+  >* Use a opção **-noconsole** para garantir que o módulo iniciado não exibirá nada no console. Seus logs serão gravados no disco por meio do módulo **syslogd**.
+  >* Use a opção **-verbose** para exibir informações adicionais sobre ações do processo.
   >
   >   Exemplo:
   >
-  >   **nlserver restart web - verbose**
+  >   **nlserver reiniciar web -verbose**
   >
   >   **nlserver start mta@myinstance -verbose**
   >
-  >   Essa opção adiciona logs adicionais. Recomendamos iniciar os processos novamente sem o **-verboso** depois de encontrar as informações desejadas, para evitar sobrecarga de logs.
+  >   Essa opção adiciona logs adicionais. Recomendamos iniciar os processos novamente sem a opção **-verbose** depois de encontrar as informações desejadas, para evitar sobrecarga de logs.
 
-* Inicie todos os processos do Adobe Campaign (equivalente a iniciar o **nlserver6** serviço):
+* Inicie todos os processos do Adobe Campaign (equivalente a inicializar o serviço **nlserver6**):
 
   **nlserver watchdog -noconsole**
 
-* Encerre todos os processos do Adobe Campaign (equivalente a encerrar o **nlserver6** serviço):
+* Desligue todos os processos do Adobe Campaign (equivalente a desligar o serviço **nlserver6**):
 
-  **desligamento do nlserver**
+  **ndesligamento do servidor**
 
-* Recarregue o **nlserver web** (e o módulo de extensão do servidor Web, quando aplicável) quando a variável **serverConf.xml** e **config-`<instance>  .xml </instance>`** arquivos foram editados.
+* Recarregue a configuração do módulo da Web **nlserver** (e o módulo de extensão do servidor Web, quando aplicável) quando os arquivos **serverConf.xml** e **config-`<instance>  .xml </instance>`** tiverem sido editados.
 
-  **nlserver config - reload**
+  **nlserver config -reload**
 
   >[!NOTE]
   >

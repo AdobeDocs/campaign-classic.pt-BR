@@ -11,17 +11,17 @@ ht-degree: 7%
 
 ---
 
-# Como habilitar o Microsoft Edge Chromium em seu ambiente {#edge-conf}
+# Como ativar o Microsoft Edge Chromium no seu ambiente {#edge-conf}
 
 ## O que mudou?
 
-Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML para painéis no console do cliente está usando o Edge Chromium, iniciando com o Campaign Classic v7.3.
+Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML para painéis no console do cliente estará usando o Edge Chromium, iniciando o Campaign Classic v7.3.
 
-Além da instalação do Webview 2 runtime do Microsoft Edge, que agora é [necessário para qualquer instalação do console do cliente](../../installation/using/installing-the-client-console.md#webview), o Microsoft Edge Chromium deve estar habilitado em sua(s) instância(s).
+Além da instalação do Microsoft Edge Webview 2 runtime, que agora é [necessária para qualquer instalação do console do cliente](../../installation/using/installing-the-client-console.md#webview), o Microsoft Edge Chromium deve ser habilitado em sua(s) instância(s).
 
 >[!NOTE]
 >
->Depois de ativar o Microsoft Edge Chromium, a variável `Ctrl+F` (Windows) ou `Command+F` O atalho (Mac) para abrir a caixa de diálogo de pesquisa do navegador não funcionará mais.
+>Depois de habilitar o Microsoft Edge Chromium, o atalho `Ctrl+F` (Windows) ou `Command+F` (Mac) para abrir a caixa de diálogo de pesquisa do navegador não funcionará mais.
 
 ## Você será afetado?
 
@@ -29,16 +29,16 @@ Se seu ambiente foi atualizado para o Campaign Classic v7.3 (ou posterior), voc�
 
 ## Como atualizar?
 
-* Como um **hospedado** cliente, o Adobe já ativou o Microsoft Edge Chromium em sua(s) instância(s). Nenhuma ação adicional é necessária.
+* Como cliente **hospedado**, o Adobe já habilitou o Microsoft Edge Chromium em sua(s) instância(s). Nenhuma ação adicional é necessária.
 
-* Como um **no local/híbrido** cliente, é necessário habilitar o Microsoft Edge Chromium em sua(s) instância(s).
+* Como cliente do **no local/híbrido**, você precisa habilitar o Microsoft Edge Chromium nas suas instâncias.
 
-  Ao atualizar para o Campaign Classic v7.3 (e posterior), um novo `webView2Mode` O atributo está disponível no arquivo de configuração do servidor do Campaign `serverConf.xml`. Este atributo deve ser habilitado.
+  Ao atualizar para o Campaign Classic v7.3 (e posterior), um novo atributo `webView2Mode` está disponível no arquivo de configuração do servidor do Campaign `serverConf.xml`. Este atributo deve ser habilitado.
 
   Para fazer isso, aplique as seguintes etapas em todos os seus ambientes (MKT, MID, RT):
 
    1. Editar o arquivo de configuração do servidor do Campaign (`serverConf.xml`)
-   1. No `<web>` módulo, definir `webView2Mode = "1"`
+   1. No módulo `<web>`, defina `webView2Mode = "1"`
    1. Execute o seguinte comando para recarregar a configuração do servidor:
 
       ```

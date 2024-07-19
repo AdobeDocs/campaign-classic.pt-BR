@@ -4,12 +4,12 @@ title: Configurar a interface
 description: Saiba como configurar a interface do Campaign
 feature: Application Settings
 role: Data Engineer, Developer
-badge-v8: label="Também se aplica à versão v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -23,8 +23,8 @@ Para exibir e dialogar com a nova tabela de recipients na interface do Adobe Cam
 
 O Adobe Campaign usa uma variável global &quot;Nms_DefaultRcpSchema&quot; para dialogar com o banco de dados do recipient padrão (nms:recipient). Portanto, essa variável precisa ser alterada.
 
-1. Vá para a **[!UICONTROL Administration>Platform>Options]** nó do explorador.
-1. Altere o valor de **Nms_DefaultRcpSchema** com o nome do schema que corresponde à tabela do recipient externo (neste caso: cus:individual).
+1. Vá para o nó **[!UICONTROL Administration>Platform>Options]** do explorador.
+1. Altere o valor da variável **Nms_DefaultRcpSchema** com o nome do esquema que corresponde à tabela externa de recipient (neste caso: cus:individual).
 1. Salve as alterações.
 
 ## Criação de um novo formulário {#creating-a-new-form-}
@@ -35,15 +35,15 @@ A criação de um novo formulário permitirá que você exiba e edite os dados d
 >
 >O nome do formulário deve ser idêntico ao nome do schema relacionado.
 
-1. Vá para a **Administração > Configuração > Formulários de entrada** nó do explorador.
-1. Criar um novo **xtk:form** type **formulário** arquivo.
+1. Vá para o nó **Administration > Configuration > Input forms** do explorador.
+1. Crie um novo arquivo **xtk:form** do tipo **form**.
 1. Descreva todos os monitoramentos e campos necessários dependendo do seu modelo de tabela.
 
    >[!NOTE]
    >
-   >Para saber mais sobre **formulário** arquivos de tipo, consulte [esta página](../../configuration/using/identifying-a-form.md).
+   >Para saber mais sobre os arquivos do tipo **formulário**, consulte [esta página](../../configuration/using/identifying-a-form.md).
 
-   No nosso exemplo atual, a variável **formulário** o arquivo deve se basear no **cus:individual** esquema e, portanto, têm o seguinte layout:
+   No nosso exemplo atual, o arquivo **formulário** deve ser baseado no esquema **cus:individual** e, portanto, deve ter o seguinte layout:
 
    ```
    <container colspan="2">
@@ -63,14 +63,14 @@ A criação de um novo formulário permitirá que você exiba e edite os dados d
 ## Criação de um novo tipo de pasta na hierarquia de navegação {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
 1. Vá para o nó **[!UICONTROL Administration>Configuration>Navigation hierarchies]**
-1. Criar um novo **xtk:navtree** type **navtree** documento.
+1. Crie um novo documento **xtk:navtree** do tipo **navtree**.
 1. Descreva todos os monitoramentos e campos necessários dependendo do seu modelo de tabela.
 
    >[!NOTE]
    >
-   >Para obter mais informações, **navtree** arquivos de tipo, consulte [esta página](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+   >Para obter mais informações sobre os arquivos do tipo **navtree**, consulte [esta página](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
-   No exemplo atual, a variável **navtree** o arquivo deve se basear no **cus:individual** esquema e, portanto, têm o seguinte formato:
+   No exemplo atual, o arquivo **navtree** deve ser baseado no esquema **cus:individual** e, portanto, ter o seguinte formato:
 
    ```
     <model name="root">

@@ -19,25 +19,25 @@ ht-degree: 48%
 
 ## Contexto
 
-Como um cliente importante da Adobe Campaign Classic, temos o compromisso de fornecer a você a melhor experiência e valor. Ao longo dos anos, percebemos o valor e a confiabilidade de hospedar nossos clientes na nuvem.  Como parte da nossa [Iniciativa de atualização anual](../../rn/using/rn-overview.md#yearly-upgrade)Em seguida, estamos mudando todos os nossos clientes para o Adobe Managed Services (Nuvem pública na AWS) para fornecer serviços melhores e mais confiáveis.
+Como um cliente importante da Adobe Campaign Classic, temos o compromisso de fornecer a você a melhor experiência e valor. Ao longo dos anos, percebemos o valor e a confiabilidade de hospedar nossos clientes na nuvem.  Como parte da nossa [Iniciativa de Atualização Anual](../../rn/using/rn-overview.md#yearly-upgrade), estamos mudando todos os nossos clientes para o Adobe Managed Services (Nuvem Pública no AWS) para oferecer serviços melhores e mais confiáveis.
 
 Este programa tem três objetivos principais:
 
 * Solucionar as vulnerabilidades de segurança identificadas ao mover a infraestrutura para um ambiente seguro e moderno (AWS).
-* Eliminar os processos de dimensionamento possivelmente complicados, fornecer acesso aos nossos [MTAs aprimorados](../../delivery/using//sending-with-enhanced-mta.md) e aprimorar todos os níveis de serviço de manutenção.
+* Elimine processos de dimensionamento possivelmente complicados, forneça acesso aos nossos [MTAs aprimorados](../../delivery/using//sending-with-enhanced-mta.md) e melhore todos os níveis de serviço de manutenção.
 * Prepare sua instância para o futuro do Adobe Campaign Classic, incluindo atualizações mais automatizadas e regulares que não exigirão tantos recursos nem tanto tempo.
 
 ### Glossário
 
-* **Atualização de build** - Quando o software Adobe Campaign Classic é atualizado para o número de build seguro mais recente, ele ainda permanece no mesmo nível de build primário/secundário. Por exemplo: Campaign v7 20.2.3 build 9182 para Campaign v7 21.2.5 build 9188. [Saiba mais](../../platform/using/faq-build-upgrade.md).
+* **Atualização de compilação** - Quando o software Adobe Campaign Classic é atualizado para o número de compilação seguro mais recente, ele ainda permanece no mesmo nível de compilação principal/secundário. Por exemplo: Campaign v7 20.2.3 build 9182 para Campaign v7 21.2.5 build 9188. [Saiba mais](../../platform/using/faq-build-upgrade.md).
 * **MID/RT** - Servidores de execução de mensagens hospedados na Adobe Cloud (MID para campanhas em lote e RT para mensagens unitárias em tempo real)
-* **Programa de atualização anual** - este programa proporciona maior segurança, melhor suporte, manutenção e estabilidade aprimoradas. Também facilita as atualizações futuras e dá acesso a novos recursos no Campaign.  [Saiba mais](../../rn/using/rn-overview.md#yearly-upgrade).
-* **AWS** - Amazon Web Services (Amazon Nuvem pública)
-* **SFTP** - Protocolo de transferência segura de arquivo. [Saiba mais](../../platform/using/sftp-server-usage.md).
+* **Programa de Atualização Anual** - este programa oferece segurança aprimorada, suporte aprimorado, manutenção e estabilidade aprimoradas. Também facilita as atualizações futuras e dá acesso a novos recursos no Campaign.  [Saiba mais](../../rn/using/rn-overview.md#yearly-upgrade).
+* **AWS** - Amazon Web Services (Amazon Public Cloud)
+* **SFTP** - Protocolo de Transferência de Arquivo Seguro. [Saiba mais](../../platform/using/sftp-server-usage.md).
 
 
 >[!NOTE]
->A migração do Campaign Classic v7 para a Nuvem pública afeta os clientes que usam o **Adobe Managed Services** somente.
+>A migração do Campaign Classic v7 para a Nuvem pública afeta os clientes que usam somente o **Adobe Managed Services**.
 
 
 ## Benefícios
@@ -61,7 +61,7 @@ Este programa tem três objetivos principais:
 * Bancos de dados maiores
 * Versão comprovada do Campaign
 
-**Ofereça uma solução robusta e confiável para os clientes da Adobe Campaign Classic**
+**Ofereça uma solução robusta e confiável para clientes do Adobe Campaign Classic**
 
 1. Melhores procedimentos de produção, resultando em maior confiabilidade, reatividade mais rápida em caso de problema, recuperação mais rápida em caso de incidente grave.
 1. Maior capacidade de envio de email. As instâncias hospedadas no novo data center terão a possibilidade de se beneficiar da infraestrutura especializada para entrega de email. Isso pode resultar em maior velocidade de entrega de email ou permitir o uso de menos IPs de envio.
@@ -78,11 +78,11 @@ Este programa tem três objetivos principais:
 
 Para começar essa iniciativa, as contas que exigem essa migração receberão uma comunicação por email da Adobe fornecendo uma linha do tempo e acesso à documentação. Essa será a sua notificação de que sua conta está programada para ser migrada.
 
-Uma migração pode ser iniciada por [abertura de um novo tíquete de suporte do Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=Campaign#support). Use a linha de assunto &quot;Migrar para o AWS&quot;.
+Uma migração pode ser iniciada por [abrindo um novo tíquete de suporte do Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=Campaign#support). Use a linha de assunto &quot;Migrar para o AWS&quot;.
 
 ### Essa migração é obrigatória?
 
-Essa migração para a nuvem é **primeiro passo para a [programa de atualização anual](../../rn/using/rn-overview.md#yearly-upgrade)** das instâncias do Adobe Campaign. Essa migração é obrigatória se você estiver hospedado em um data center que não seja a Nuvem pública (AWS).
+Esta migração para a Nuvem é a **primeira etapa para o [programa de atualização anual](../../rn/using/rn-overview.md#yearly-upgrade)** das suas instâncias do Adobe Campaign. Essa migração é obrigatória se você estiver hospedado em um data center que não seja a Nuvem pública (AWS).
 
 A nuvem do Adobe Managed Services é hospedada no Amazon Web Services (AWS), um ambiente moderno, seguro e otimizado. [Saiba mais sobre o AWS](https://aws.amazon.com/application-hosting/benefits/).
 
@@ -90,7 +90,7 @@ O Adobe planeja desativar o data center herdado, as instâncias do Adobe Campaig
 
 Esse é um caminho crítico a seguir, pois seu local atual pode estar exposto a **vulnerabilidades de segurança e desempenho**.
 
-Além disso, essa migração agora é uma **pré-requisito para qualquer atualização de Build futura** do seu Adobe Campaign. A atualização de build não é mais possível no Data Center herdado.
+Além disso, essa migração agora é um **pré-requisito para qualquer atualização de Build futura** do seu Adobe Campaign. A atualização de build não é mais possível no Data Center herdado.
 
 A Adobe está comprometida em proteger seus dados e colocar você no caminho certo para o futuro do Adobe Campaign. Precisamos de sua parceria para torná-la um sucesso conjunto!
 
@@ -105,7 +105,7 @@ Investimos um grande esforço no desenvolvimento de tecnologias que tornarão es
 * Alteração de IP para integrações de dados.
 * Aumento da entregabilidade de novos IPs de envio. No entanto, o plano é tornar essa operação transparente para a empresa, diferentemente do aumento inicial realizado durante a ativação.
 
-Saiba mais sobre a migração do Campaign para o [Perguntas frequentes sobre a Nuvem pública](dc-migration-faq.md).
+Saiba mais em [Perguntas frequentes sobre a migração do Campaign para a Nuvem pública](dc-migration-faq.md).
 
 
 ## Caminho de migração para a Nuvem pública
@@ -179,7 +179,7 @@ Sugestões:
 
 ### Execução
 
-**Pausar execuções**
+**Execuções de pausa**
 
 Recomendamos desacelerar e, idealmente, pausar todas as execuções pouco antes do desligamento do aplicativo no data center herdado: entregas e fluxos de trabalho. Isso facilitará a reinicialização na Nuvem pública (AWS), pois os processos terão tempo para pausar &quot;normalmente&quot; e salvar qualquer estado de execução em andamento.
 

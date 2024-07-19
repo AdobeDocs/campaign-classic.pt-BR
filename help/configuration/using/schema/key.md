@@ -54,10 +54,10 @@ Os primeiros 1000 identificadores são reservados, portanto, se um intervalo de 
 
 ## Descrição do atributo {#attribute-description-8}
 
-* **allowEmptyPart (booleano)**: no caso de uma chave composta, se esse atributo for ativado, a chave será considerada válida se pelo menos uma de suas chaves não estiver vazia. Se esse for o caso, o valor de noção vazio é &quot;0&quot; (booleano ou para todos os tipos de dados numéricos). Por padrão, todas as chaves que compõem uma chave composta precisam ser inseridas.
-* **applicableIf (string)**: esse atributo permite que você torne a chave opcional. Ela define a condição segundo a qual a definição de chave será aplicada. Este atributo recebe uma expressão XTK.
-* **interno (booleano)**: se estiver ativado, esse atributo informará ao Adobe Campaign que a chave é primária.
-* **rótulo (string)**: rótulo da chave.
+* **allowEmptyPart (booleano)**: no caso de uma chave composta, se esse atributo estiver ativado, a chave será considerada válida se pelo menos uma de suas chaves não estiver vazia. Se esse for o caso, o valor de noção vazio é &quot;0&quot; (booleano ou para todos os tipos de dados numéricos). Por padrão, todas as chaves que compõem uma chave composta precisam ser inseridas.
+* **applicableIf (string)**: este atributo permite tornar a chave opcional. Ela define a condição segundo a qual a definição de chave será aplicada. Este atributo recebe uma expressão XTK.
+* **interno (booleano)**: se estiver ativado, esse atributo permitirá que a Adobe Campaign saiba que a chave é primária.
+* **rótulo (cadeia de caracteres)**: rótulo da chave.
 * **nome (MNTOKEN)**: nome interno da chave.
 * **noDbIndex (booleano)**: se estiver ativado (noDbIndex=&quot;true&quot;), o campo correspondente à chave não será indexado.
 
@@ -72,7 +72,7 @@ Declaração de uma chave composta que autoriza o campo &quot;@expr&quot; ou o c
  </key>
 ```
 
-Declaração de uma chave primária no campo &quot;Nome&quot; do tipo STRING em um `<srcschema>`  e a consulta SQL correspondente:
+Declaração de uma chave primária no campo &quot;Nome&quot; do tipo STRING em um `<srcschema>` e a consulta SQL correspondente:
 
 ```
  

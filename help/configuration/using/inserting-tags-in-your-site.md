@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Método simples {#simple-method}
 
-Este método consiste em enviar uma chamada HTTP para o servidor de redirecionamento inserindo uma **`<img>`** tag HTML no código-fonte HTML da página da Web que você deseja rastrear.
+Este método consiste em enviar uma chamada HTTP para o servidor de redirecionamento inserindo uma tag HTML **`<img>`** no código-fonte HTML da página da Web que você deseja rastrear.
 
 >[!IMPORTANT]
 >
@@ -34,13 +34,13 @@ A tag inserida entra em contato com o servidor de redirecionamento.
 
 Ao definir uma página a ser rastreada no console, você pode gerar uma tag de rastreamento Web de amostra para copiar e colar no código-fonte da página da Web.
 
-No entanto, quando você usa tags do tipo TRANSAÇÃO, deve modificar a tag de amostra usando JavaScript para inserir as informações da transação (quantidade, número de itens) e quaisquer informações definidas por um schema de extensão.
+No entanto, quando você usa tags do tipo TRANSAÇÃO, deve modificar a tag de amostra usando o JavaScript para inserir as informações da transação (quantidade, número de itens) e quaisquer informações definidas por um schema de extensão.
 
 ### Inserção estática de tags {#static-insertion-of-tags}
 
 Para executar a inserção estática de tags, basta copiar e colar as tags geradas pelo console ou criadas manualmente na origem da página da Web.
 
-**Exemplo**: inserção de uma tag de rastreamento web em uma página que exibe um formulário.
+**Exemplo**: inserção de uma marca de rastreamento web em uma página que exibe um formulário.
 
 ```
 <html>
@@ -88,7 +88,7 @@ Inserção de uma tag de rastreamento Web do tipo TRANSAÇÃO na página de conf
 
 Quando as páginas da Web são geradas dinamicamente, é possível adicionar a tag de rastreamento Web no momento da geração da página.
 
-**Exemplo**: rastreamento web adicionado às JSPs.
+**Exemplo**: rastreamento web adicionado a JSPs.
 
 ```
 <%@page import="java.util.Random" %>
@@ -125,7 +125,7 @@ Quando as páginas da Web são geradas dinamicamente, é possível adicionar a t
 
 Se você quiser controlar as informações enviadas ao servidor de redirecionamento, a maneira mais confiável é executar a consulta HTTP de forma síncrona usando uma linguagem de geração de página.
 
-O URL que você construir deverá obedecer às regras de sintaxe definidas em [Tag de rastreamento Web: definição](../../configuration/using/web-tracking-tag-definition.md).
+A URL que você construir deve obedecer às regras de sintaxe definidas em [Marca de rastreamento Web: definição](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
@@ -133,7 +133,7 @@ O URL que você construir deverá obedecer às regras de sintaxe definidas em [T
 >
 >O redirecionamento e o rastreamento web usam cookies, e é importante que o servidor web que executa a chamada HTTP síncrona esteja no mesmo domínio que o servidor de redirecionamento. As várias trocas HTTP devem transmitir os cookies &quot;id&quot;, &quot;uuid&quot; e &quot;uuid230&quot;.
 
-**Exemplo**: geração dinâmica em Java, com autenticação de recipient usando seu número de conta.
+**Exemplo**: geração dinâmica em Java, com autenticação de destinatário usando seu número de conta.
 
 ```
 [...]

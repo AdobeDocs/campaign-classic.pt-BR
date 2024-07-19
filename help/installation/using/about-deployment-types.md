@@ -26,4 +26,4 @@ No caso de uma configuração em vários computadores, não é necessário usar 
 >
 >As etapas de configuração da instalação principal só podem ser executadas pelo Adobe para implantações hospedadas pelo Adobe, para configurar os arquivos de configuração do servidor e da instância, por exemplo.
 >
->Para saber mais sobre as principais diferenças entre implantações, consulte o [Modelos de hospedagem](../../installation/using/hosting-models.md) ou à [Diferenças de recursos para implantações locais e hospedadas](../../installation/using/capability-matrix.md).
+>Para saber mais sobre as principais diferenças entre implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou as [Diferenças de recursos para implantações locais e hospedadas](../../installation/using/capability-matrix.md).
