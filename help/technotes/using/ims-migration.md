@@ -199,7 +199,7 @@ curl --location --request POST 'https://<instance_name>.campaign.adobe.com/nl/js
 '
 ```
 
->Java] SampleCode [!TAB 
+>[!TAB Java SampleCode]
 
 ```javascript
 import java.io.BufferedReader;
