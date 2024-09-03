@@ -8,15 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
+source-git-commit: 122d69d3d7474480f7799248413ac89338469ebc
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 100%
+source-wordcount: '909'
+ht-degree: 99%
 
 ---
 
 # Gerenciamento de privacidade {#privacy-management}
-
 
 O Adobe Campaign oferece um conjunto de ferramentas para ajudar a cumprir os [regulamentos sobre privacidade](#privacy-management-regulations) (incluindo GDPR, CCPA, PDPA, LGPD).
 
@@ -106,8 +105,9 @@ A seguir estão os valores de retenção padrão para tabelas integradas. Esteja
 * **Estatísticas de processamento de evento**: 1 ano
 * **Eventos arquivados**: 1 ano
 * **Eventos de pipeline ignorados**: 1 mês
+* **Relatórios dinâmicos**: 13 meses
 
-Assim como excluir, usando a funcionalidade padrão do workflow, é possível configurar períodos de retenção para qualquer tabela personalizada.
+De modo semelhante à exclusão, a funcionalidade padrão do workflow possibilita configurar períodos de retenção para qualquer tabela personalizada.
 
 Entre em contato com os consultores da Adobe ou administradores técnicos para saber mais sobre retenção ou se é necessário definir a retenção para tabelas personalizadas.
 
