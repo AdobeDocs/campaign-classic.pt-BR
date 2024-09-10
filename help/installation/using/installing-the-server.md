@@ -8,18 +8,16 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 3%
+source-wordcount: '384'
+ht-degree: 4%
 
 ---
 
 # Instalação do servidor{#installing-the-server}
 
 ## Execução do programa de instalação {#executing-the-installation-program}
-
-Para uma plataforma Windows de 32 bits, instale o Adobe Campaign de 32 bits. Para uma plataforma Windows de 64 bits, instale o Adobe Campaign de 64 bits.
 
 As etapas de instalação do servidor Adobe Campaign são as seguintes:
 
