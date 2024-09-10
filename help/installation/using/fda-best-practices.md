@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 586456f27dbc039ecb39cc8bd1f6dbdf8af823be
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 37%
+source-wordcount: '456'
+ht-degree: 29%
 
 ---
 
@@ -38,11 +38,13 @@ Em várias atividades de workflow do Adobe Campaign, é possível usar os dados 
 
 * **Adicionando informações e links** - A atividade [Enriquecimento](../../workflow/using/enrichment.md) permite adicionar dados à tabela de trabalho do fluxo de trabalho e links a uma tabela externa. Nesse contexto, ele pode usar dados de um banco de dados externo. Saiba mais [nesta página](../../workflow/using/enrichment.md).
 
-## Limitações do FDA {#limitations}
+## Medidas de proteção e limitações {#fda-limitations}
 
-A opção FDA é feita para manipular os dados em bancos de dados externos em modo de lote em workflows. Para evitar problemas de desempenho, não é recomendável usar o módulo FDA no contexto de operações unitárias, como: personalização, interação, mensagens em tempo real etc.
+A opção FDA foi projetada para manipular os dados em bancos de dados externos em modo de lote em workflows. Para evitar problemas de desempenho, não é recomendável usar o módulo FDA no contexto de operações unitárias, como: personalização, interação, mensagens em tempo real etc.
 
-Evite o máximo possível as operações que precisam usar o banco de dados tanto do Adobe Campaign quanto externo. Para fazer isso, é possível:
+Não há suporte para direcionamento de dados de um banco de dados e filtragem de resultados usando uma dimensão de filtro que pertence a outro banco de dados. Não é possível unir tabelas que estão em diferentes fontes de dados em uma consulta. Você pode superar essa limitação usando outras atividades de workflow, como Alterar dimensão.
+
+Evite o máximo possível as operações que precisam usar o banco de dados tanto do Adobe Campaign quanto externo. A prática recomendada é:
 
 * Exportar o banco de dados do Adobe Campaign para o banco de dados externo e executar as operações somente do banco de dados externo antes de importar novamente os resultados para o Adobe Campaign.
 
