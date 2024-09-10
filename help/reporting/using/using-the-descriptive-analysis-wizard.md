@@ -5,10 +5,10 @@ description: Usar o assistente de análise descritiva
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '1570'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -20,11 +20,11 @@ Para criar um relatório de análise descritiva, use o assistente dedicado. A co
 
 ## Analisar dados no banco de dados {#analyzing-data-in-the-database}
 
-O assistente de análise descritiva pode ser iniciado por meio do menu **[!UICONTROL Tools > Descriptive analysis]**: nesse caso, a análise inclui os destinatários por padrão (**nms:recipient**). Aplica-se a todos os dados do banco de dados do Adobe Campaign.
+O assistente de análise descritiva pode ser iniciado por meio do menu **[!UICONTROL Tools > Descriptive analysis]**: nesse caso, a análise inclui os recipients por padrão (**nms:recipient**). Aplica-se a todos os dados do banco de dados do Adobe Campaign.
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-Para analisar uma tabela diferente da dos destinatários padrão (**nms:recipient**), clique no link **[!UICONTROL Advanced settings...]** na última etapa do assistente e selecione a tabela que corresponde às suas configurações, neste caso **cus:individual**:
+Para analisar uma tabela diferente da dos recipients padrão (**nms:recipient**), clique no link **[!UICONTROL Advanced settings...]** na última etapa do assistente e selecione a tabela que corresponde às suas configurações, neste caso **cus:individual**:
 
 ![](assets/reporting_descriptive_other_schema.png)
 
@@ -36,11 +36,11 @@ A análise só abordará os destinatários do banco de dados com 16 anos de idad
 
 ## Analisar um conjunto de dados {#analyzing-a-set-of-data}
 
-É possível usar o assistente de análise descritiva por meio de um contexto diferente: uma lista, uma transição de workflow, uma ou mais entregas, uma seleção de destinatários, etc.
+É possível usar o assistente de análise descritiva por meio de um contexto diferente: uma lista, uma transição de fluxo de trabalho, um ou mais deliveries, uma seleção de recipients, etc.
 
 Ele pode ser acessado por vários nós da árvore do Adobe Campaign que apontam para a tabela de destinatários.
 
-Abra o assistente de análise descritiva selecionando os itens e clicando com o botão direito. Somente os dados selecionados serão analisados.
+Abra o assistente de análise descritiva selecionando os itens e clicando com o botão direito do mouse. Somente os dados selecionados serão analisados.
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
@@ -64,7 +64,7 @@ O modelo **[!UICONTROL Qualitative distribution]** permite criar estatísticas e
 
 As opções de configuração disponíveis para um relatório criado por meio do modelo **[!UICONTROL Qualitative distribution]** são detalhadas em [Exibir dados na tabela](#displaying-data-in-the-table). Um exemplo completo é detalhado em [Analisar uma população](../../reporting/using/use-cases.md#analyzing-a-population).
 
-Ao utilizar o assistente de análise descritiva para analisar seus dados, as opções disponíveis dependem das configurações escolhidas. Veja os detalhes abaixo.
+Ao usar o assistente de análise descritiva para analisar seus dados, as opções disponíveis dependem das configurações escolhidas. Veja os detalhes abaixo.
 
 ### Compartimentalização de dados {#data-binning}
 
@@ -205,7 +205,7 @@ O template **[!UICONTROL Quantitative distribution]** que permite gerar estatís
 
 O modo de configuração de um relatório de análise criado por meio do template **[!UICONTROL Quantitative distribution]** é detalhado em um exemplo de implementação [Quantitative data analysis](../../reporting/using/use-cases.md#quantitative-data-analysis).
 
-As opções disponíveis ao utilizar o assistente de análise descritiva para criar um relatório quantitativo são detalhadas abaixo.
+As opções disponíveis ao usar o assistente de análise descritiva para criar um relatório quantitativo são detalhadas abaixo.
 
 Comece selecionando a variável que os cálculos abordarão:
 

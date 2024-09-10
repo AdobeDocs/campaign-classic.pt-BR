@@ -5,10 +5,10 @@ description: Relatórios de casos de uso
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '1326'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -118,7 +118,7 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
 **Target**: analisar domínios de email de empresas.
 
-1. Abra o assistente de análise descritiva e selecione somente o modo de visualização **[!UICONTROL Array]**.
+1. Abra o assistente de análise descritiva e selecione somente o modo de exibição **[!UICONTROL Array]**.
 
    ![](assets/s_ncs_user_report_wizard_03a.png)
 
@@ -191,7 +191,7 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
 A análise de uma população em um workflow requer que a população ainda esteja presente na transição. Se o workflow for iniciado, o resultado relacionado à população pode ser removido da transição. Para executar uma análise, é possível:
 
-* Desanexar a transição da atividade de destino e iniciar o workflow para torná-lo ativo. Quando a transição começar a piscar, inicie o assistente da forma normal.
+* Desanexar a transição da atividade de destino e iniciar o workflow para torná-lo ativo. Quando a transição começar a piscar, inicie o assistente da maneira normal.
 
   ![](assets/s_ncs_user_report_wizard_018.png)
 
@@ -276,7 +276,7 @@ Se a análise aborda uma entrega, é possível analisar a população excluída.
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 
-Isso o levará ao assistente de análise descritiva e a análise abordará os logs de exclusão de destinatários.
+Isso o levará ao assistente de análise descritiva e a análise abordará os logs de exclusão de recipients.
 
 Por exemplo, é possível exibir os domínios de todos os endereços excluídos e classificá-los por data de exclusão.
 

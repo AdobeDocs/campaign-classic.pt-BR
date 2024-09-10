@@ -5,10 +5,10 @@ description: Criar uma tabela
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '2512'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -461,6 +461,6 @@ Se clicar no link de uma dessas entregas, ele mostrará o gráfico com a anális
 
 Esse tipo de tabela permite exibir estatísticas calculadas dos dados do banco de dados.
 
-A configuração desses tipos de relatórios é semelhante à utilizada para o assistente de análise descritiva. Para obter mais informações, consulte [esta página](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
+A configuração desses tipos de relatórios é semelhante à usada para o assistente de análise descritiva. Para obter mais informações, consulte [esta página](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
 
 Para obter mais informações sobre criação de uma tabela dinâmica, consulte [esta seção](../../reporting/using/ac-cubes.md).
