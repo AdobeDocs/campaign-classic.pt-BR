@@ -6,10 +6,10 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
 source-wordcount: '5959'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -245,11 +245,11 @@ Uma descrição da entrega é um conjunto estruturado de elementos (documentos, 
 Saiba mais sobre [Correspondência direta](../../delivery/using/about-direct-mail-channel.md).
 +++
 
-+++**Assistente de implantação**
++++**assistente de implantação**
 
 O assistente de implantação define os parâmetros da instância do Campaign, como o namespace padrão, o agendamento de limpeza do banco de dados, os períodos de retenção de dados e outras configurações técnicas.
 
-Saiba mais sobre o [Assistente de implantação](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Saiba mais sobre o [assistente de implantação](../../installation/using/deploying-an-instance.md#deployment-assistant).
 +++
 
 +++**Análise descritiva**
@@ -484,7 +484,7 @@ Saiba mais sobre [Renderização da caixa de entrada](../../delivery/using/deliv
 
 +++**Configurações de instância**
 
-As configurações de instância são detalhes de configuração de uma instância do Adobe Campaign. Essas configurações são definidas no assistente de implantação (Ferramentas>Avançado>Assistente de implantação) ou nos arquivos de configuração do servidor e/ou da instância.
+As configurações de instância são detalhes de configuração de uma instância do Adobe Campaign. Essas configurações são definidas no assistente de implantação (Ferramentas>Avançado>assistente de implantação) ou nos arquivos de configuração do servidor e/ou da instância.
 
 Saiba mais sobre [Configurações de instância](../../installation/using/about-initial-configuration.md).
 
@@ -492,7 +492,7 @@ Saiba mais sobre [Configurações de instância](../../installation/using/about-
 
 +++**Processos (importação e exportação)**
 
-Os processos são gerenciados por um sistema de assistente que simplifica a importação e a exportação de dados para dentro e para fora do produto. Os processos usam o sistema de modelos para simplicidade e consistência e podem ser definidos para execução de acordo com uma programação.
+Os processos são gerenciados por um sistema assistente que simplifica a importação e a exportação de dados para dentro e para fora do produto. Os processos usam o sistema de modelos para simplicidade e consistência e podem ser definidos para execução de acordo com uma programação.
 
 Saiba mais sobre [Importação e exportação de trabalhos](../../platform/using/get-started-data-import-export.md).
 +++

@@ -6,10 +6,10 @@ title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
+source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
 source-wordcount: '2552'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -538,7 +538,7 @@ ht-degree: 100%
       + [Rastreamento de simulação](interaction/using/simulation-tracking.md)
    + Entregar uma oferta {#delivering-an-offer}
       + [Sobre canais de saída](interaction/using/about-outbound-channels.md)
-      + [Integrar uma oferta por meio do assistente](interaction/using/integrating-an-offer-via-the-wizard.md)
+      + [Integrar uma oferta pelo assistente](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [Integrar uma oferta por meio de um fluxo de trabalho](interaction/using/integrating-an-offer-via-a-workflow.md)
    + Interações unitárias {#unitary-interactions}
       + [Sobre canais de entrada](interaction/using/about-inbound-channels.md)
