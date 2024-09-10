@@ -5,10 +5,10 @@ description: Saiba como criar sua conta da API Adobe
 role: User, Admin
 level: Beginner
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
+source-git-commit: 9516101771899e132dbd3d1344c833e82714f775
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 14%
+source-wordcount: '324'
+ht-degree: 16%
 
 ---
 
@@ -20,7 +20,7 @@ As credenciais de autenticação de servidor para servidor permitem que o servid
 
 A credencial da conta de serviço (JWT) está sendo substituída pelo Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem depender da credencial OAuth de servidor para servidor.
 
-Se você implementou integrações de entrada ou saída com o Campaign antes de junho de 2024, atualize seu ambiente do Campaign para v7.4.1 e migre sua conta técnica para oAuth conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}. As credenciais da Conta de Serviço (JWT) existentes continuarão a funcionar até **27 de janeiro de 2025**.
+Se você implementou integrações de entrada ou saída com o Campaign antes de junho de 2024, atualize seu ambiente do Campaign para v7.4.1 e migre sua conta técnica para oAuth conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}. As credenciais da conta de serviço (JWT) já existentes continuarão a funcionar até **27 de janeiro de 2025**. 
 
 Depois que a migração for concluída, você deverá associar sua nova credencial ao Campaign, conforme explicado em [esta seção](#add-credentials).
 
@@ -61,9 +61,16 @@ Para criar sua conta técnica OAuth para novas integrações, siga estas etapas:
    * **[!UICONTROL Technical account ID]**
    * **[!UICONTROL Organization ID]**
 
-## Adicionar credenciais do projeto OAuth no Adobe Campaign {#add-credentials}
+## Adicionar credenciais do projeto OAuth no Campaign {#add-credentials}
 
-Siga as etapas abaixo para adicionar suas credenciais de projeto do OAuth no Adobe Campaign:
+Depois que as etapas acima forem executadas, adicione suas credenciais do projeto OAuth no Adobe Campaign.
+
+>[!NOTE]
+>
+>Como cliente de Cloud Service hospedado ou gerenciado, essas etapas não são necessárias: o Adobe já adicionou suas credenciais de projeto do OAuth ao seu ambiente.
+>
+
+Como cliente no local ou híbrido, siga estas etapas:
 
 1. Faça logon via SSH em cada container em que a instância do Adobe Campaign está instalada.
 
