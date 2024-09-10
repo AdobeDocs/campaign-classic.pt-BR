@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Data Management
 role: User, Developer, Data Engineer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '670'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -39,7 +39,7 @@ O elemento **`<collection-recipient>`** representa o elemento de entrada do docu
 
 ### Adição de uma consulta {#adding-a-query}
 
-Os parâmetros de query são editados por um assistente.
+Os parâmetros de consulta são editados usando um assistente.
 
 1. Na primeira página, especifique o rótulo e o schema que contém os dados a serem recuperados.
 

@@ -5,10 +5,10 @@ description: Usar um relatório de análise
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -126,11 +126,11 @@ Para obter mais informações, consulte [esta página](../../reporting/using/act
 
 ## Reutilizar relatórios e análises existentes {#re-using-existing-reports-and-analyses}
 
-É possível criar relatórios de análise descritiva em dados usando relatórios existentes já armazenados no Adobe Campaign. Esse modo é possível quando as análises foram salvas ou quando os relatórios foram criados e configurados para serem acessados via assistente de análise descritiva.
+É possível criar relatórios de análise descritiva em dados usando relatórios existentes já armazenados no Adobe Campaign. Esse modo é possível quando as análises foram salvas ou quando os relatórios foram criados e configurados para serem acessados por meio do assistente de análise descritiva.
 
 Para descobrir como salvar análises descritivas, consulte [Salvar um relatório de análise](#saving-an-analysis-report).
 
-Para criar relatórios de análise descritiva, o assistente de análise descritiva deve ser executado por uma transição de workflow ou por meio do menu **[!UICONTROL Tools > Descriptive analysis]**.
+Para criar relatórios de análise descritiva, o assistente de análise descritiva deve ser executado por uma transição de fluxo de trabalho ou por meio do menu **[!UICONTROL Tools > Descriptive analysis]**.
 
 1. Selecione **[!UICONTROL Existing analyses and reports]** e clique em **[!UICONTROL Next]**.
 1. Isso permite acessar a lista de relatórios disponíveis. Selecione o relatório que deseja gerar.

@@ -5,10 +5,10 @@ description: Publicar um formulário web
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -140,7 +140,7 @@ Para ser acessado por usuários, o formulário deve estar em produção e ter si
 
 ### Entrega de um formulário por email {#delivering-a-form-via-email}
 
-Ao entregar um convite por email, você pode usar a opção **[!UICONTROL Adobe Campaign Encryption]** para reconciliação de dados. Para fazer isso, vá para o assistente da entrega e adapte o link ao formulário adicionando o seguinte parâmetro:
+Ao entregar um convite por email, você pode usar a opção **[!UICONTROL Adobe Campaign Encryption]** para reconciliação de dados. Para fazer isso, vá para o assistente de delivery e adapte o link ao formulário adicionando o seguinte parâmetro:
 
 ```
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">

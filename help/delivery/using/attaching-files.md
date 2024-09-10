@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Email
 role: User
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '975'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ Para anexar um arquivo local a uma entrega, siga as etapas abaixo.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
 
-Você também pode arrastar e soltar diretamente o arquivo no campo **[!UICONTROL Attachments]** da entrega, ou usar o ícone **[!UICONTROL Attach]** na barra de ferramentas do assistente da entrega,
+Você também pode arrastar e soltar diretamente o arquivo no campo **[!UICONTROL Attachments]** da entrega, ou usar o ícone **[!UICONTROL Attach]** na barra de ferramentas do assistente de entrega,
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 

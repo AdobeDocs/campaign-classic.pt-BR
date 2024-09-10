@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 1%
@@ -57,7 +57,7 @@ A apresentação do esquema está disponível em [Sobre a referência do esquema
 * **desc (cadeia de caracteres)**: descrição do esquema
 * **entitySchema (string)**: esquema básico no qual a sintaxe e a aprovação são baseadas (por padrão para Adobe Campaign: xtk:srcSchema). Ao salvar o esquema atual, o Adobe Campaign aprovará sua gramática com o esquema declarado no atributo @xtkschema.
 * **extendedSchema (cadeia de caracteres)**: recebe o nome do esquema predefinido no qual a extensão de esquema atual se baseia. O formulário é &quot;namespace:name&quot;.
-* **img (cadeia de caracteres)**: ícone vinculado ao esquema (pode ser definido no assistente de criação de esquema).
+* **img (cadeia de caracteres)**: ícone vinculado ao esquema (pode ser definido no assistente de criação de esquemas).
 * **rótulo (cadeia de caracteres)**: rótulo de esquema.
 * **labelSingular (string)**: rótulo (singular) para exibição na interface.
 * **lastModified (datetime)**: este atributo fornece informações sobre a data e a hora da última modificação. Ele tem um formulário de &quot;Data e hora&quot;. Os valores exibidos são retirados do servidor. A hora é mostrada no formato UTC.
@@ -73,7 +73,7 @@ A apresentação do esquema está disponível em [Sobre a referência do esquema
 * **nome (cadeia de caracteres)**: nome de esquema exclusivo.
 * **namespace (cadeia de caracteres)**: namespace do esquema (padrão: nms, xtk, nl). Ao criar um novo schema para um projeto, recomendamos que você use um namespace dedicado.
 * **useRecycleBin (booleano)**: ativa o recurso de lixeira no aplicativo. Os registros excluídos serão colocados no lixo antes da exclusão final. Essa função só está disponível no modo &quot;Delivery&quot;.
-* **exibição (booleano)**: se estiver ativado (@view=&quot;true&quot;), o esquema será usado como exibição. O assistente de atualização da estrutura do banco de dados não levará em conta o esquema. Essa opção é usada principalmente para fazer referência a tabelas externas.
+* **exibição (booleano)**: se estiver ativado (@view=&quot;true&quot;), o esquema será usado como exibição. O assistente de atualização da estrutura do banco de dados não levará o esquema em consideração. Essa opção é usada principalmente para fazer referência a tabelas externas.
 * **xtkschema (string)**: nome do esquema que define a gramática do esquema (xtk:srcSchema por padrão).
 
 ## Exemplos {#examples-11}

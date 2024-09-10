@@ -5,7 +5,7 @@ feature: Application Settings
 description: Saiba como configurar a árvore de navegação do Campaign Explorer
 role: Data Engineer, Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 0%
@@ -101,7 +101,7 @@ O contexto do formulário pode ser atualizado na inicialização a partir da mar
 * Declaração de um comando global para iniciar o formulário &quot;xtk:import&quot;:
 
   ```
-  <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
+  <command desc="Start the data import assistant" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
   ```
 
   Um atalho de teclado é declarado no caractere &#39;I&#39; pela presença de **&amp;** no rótulo do comando.

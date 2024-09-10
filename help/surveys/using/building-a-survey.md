@@ -5,10 +5,10 @@ description: Conheça as principais etapas para criar uma pesquisa
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ As páginas do formulário são criadas usando um editor especial que permite de
 
 ## Adicionar campos {#adding-fields}
 
-Os campos em um formulário permitem aos usuários inserir informações e selecionar opções. Para cada página no formulário, eles são criados por meio do primeiro botão na barra de ferramentas através do menu **[!UICONTROL Add using the wizard]**.
+Os campos em um formulário permitem aos usuários inserir informações e selecionar opções. Para cada página no formulário, eles são criados por meio do primeiro botão na barra de ferramentas através do menu **[!UICONTROL Add using the assistant]**.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

@@ -4,10 +4,10 @@ title: Consulta
 description: Saiba mais sobre a atividade do workflow de query
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 

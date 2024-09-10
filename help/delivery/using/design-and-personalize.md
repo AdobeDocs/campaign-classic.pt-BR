@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1293'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -149,7 +149,7 @@ Para serem acessadas de fora, as imagens usadas em emails e recursos públicos v
 
 * Você pode verificar se a configuração da instância ativa o gerenciamento de recursos públicos. [Saiba mais](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* No assistente da entrega, você pode importar uma página HTML contendo imagens ou inserir imagens diretamente usando o editor de HTML pelo ícone **[!UICONTROL Image]**. [Saiba mais](defining-the-email-content.md#adding-images)
+* No assistente de entrega, você pode importar uma página de HTML contendo imagens ou inserir imagens diretamente usando o editor de HTML pelo ícone **[!UICONTROL Image]**. [Saiba mais](defining-the-email-content.md#adding-images)
 
 * Caso as imagens não sejam exibidas, verifique se elas estão disponíveis no servidor. Para fazer isso, clique na guia Origem na entrega. Localize suas imagens e copie e cole o URL de cada imagem em um navegador da web. Caso as imagens não sejam exibidas, entre em contato com o administrador de TI ou fornecedor terceirizado e disponibilize seu conteúdo de entrega.
 
@@ -157,6 +157,6 @@ Para serem acessadas de fora, as imagens usadas em emails e recursos públicos v
 
 A Adobe recomenda visualizar a mensagem para verificar a personalização e como os destinatários verão a entrega.
 
-* No assistente da entrega, a subguia **[!UICONTROL Preview]** permite visualizar a renderização de cada conteúdo para um destinatário. Os campos de personalização e os elementos condicionais do conteúdo são substituídos pelas informações correspondentes para o perfil selecionado. [Saiba mais](defining-the-email-content.md#message-content)
+* No assistente de entrega, a subguia **[!UICONTROL Preview]** permite visualizar a renderização de cada conteúdo para um destinatário. Os campos de personalização e os elementos condicionais do conteúdo são substituídos pelas informações correspondentes para o perfil selecionado. [Saiba mais](defining-the-email-content.md#message-content)
 
 * Uma verificação automática de antispam é executada durante cada pré-visualização. Na subguia **[!UICONTROL Preview]**, verifique a pontuação de spam do [SpamAssassin](spamassassin.md).  Clique em **[!UICONTROL More...]** para obter mais informações sobre o aviso.  Antes disso, verifique se o SpamAssassin está instalado e configurado corretamente no servidor de aplicativos do Adobe Campaign. [Saiba mais](../../installation/using/configuring-spamassassin.md)

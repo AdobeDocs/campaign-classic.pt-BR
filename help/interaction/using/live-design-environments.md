@@ -7,10 +7,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -33,7 +33,7 @@ Por padrão, o Interaction vem com um ambiente **[!UICONTROL Design]** e um ambi
 
 >[!NOTE]
 >
->Para direcionar outra tabela (tabela de visitantes para ofertas anônimas ou uma tabela de destinatários específica), é necessário usar o assistente de target mapping para criar os ambientes. Para obter mais informações, consulte [Criação de um ambiente de ofertas](#creating-an-offer-environment).
+>Para direcionar outra tabela (tabela de visitantes para ofertas anônimas ou uma tabela de recipients específica), é necessário usar o assistente de target mapping para criar os ambientes. Para obter mais informações, consulte [Criação de um ambiente de ofertas](#creating-an-offer-environment).
 
 ![](assets/offer_environments_overview_002.png)
 

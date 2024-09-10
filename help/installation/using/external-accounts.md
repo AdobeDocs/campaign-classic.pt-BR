@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1757'
-ht-degree: 59%
+ht-degree: 58%
 
 ---
 
@@ -338,7 +338,7 @@ Com o tipo de implantação **[!UICONTROL Web API]** e autenticação **[!UICONT
 
   A URL do servidor Microsoft CRM.
 
-  Para encontrar seu Microsoft CRM **[!UICONTROL Server URL]**, acesse sua conta do Microsoft Dynamics CRM, clique em **Dynamics 365** e selecione seu aplicativo. Você pode encontrar o **[!UICONTROL Server URL]** na barra de endereços do navegador, por exemplo, `https://myserver.crm.dynamics.com/`.
+  Para localizar seu Microsoft CRM **[!UICONTROL Server URL]**, acesse sua conta do Microsoft Dynamics CRM, clique em **Dynamics 365** e selecione seu aplicativo. Você pode encontrar o **[!UICONTROL Server URL]** na barra de endereços do navegador, por exemplo, `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Client identifier]**
 
@@ -356,7 +356,7 @@ Com o tipo de implantação **[!UICONTROL Web API]** e autenticação **[!UICONT
 
   A URL do servidor Microsoft CRM.
 
-  Para encontrar seu Microsoft CRM **[!UICONTROL Server URL]**, acesse sua conta do Microsoft Dynamics CRM, clique em **Dynamics 365** e selecione seu aplicativo. Você pode encontrar o **[!UICONTROL Server URL]** na barra de endereços do navegador, por exemplo, `https://myserver.crm.dynamics.com/`.
+  Para localizar seu Microsoft CRM **[!UICONTROL Server URL]**, acesse sua conta do Microsoft Dynamics CRM, clique em **Dynamics 365** e selecione seu aplicativo. Você pode encontrar o **[!UICONTROL Server URL]** na barra de endereços do navegador, por exemplo, `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
@@ -406,7 +406,7 @@ Para configurar a conta externa do Salesforce CRM para funcionar com o Adobe Cam
 
   Selecione a versão da API.
 
-Para essa conta externa, você precisa configurar o Salesforce CRM com o assistente de configuração.
+Para esta conta externa, você precisa configurar o Salesforce CRM com o assistente de configuração.
 
 Para obter mais informações sobre essa configuração, consulte esta [página](../../platform/using/crm-connectors.md).
 

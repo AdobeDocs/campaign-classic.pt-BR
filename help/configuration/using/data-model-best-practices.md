@@ -4,7 +4,7 @@ title: Práticas recomendadas do modelo de dados
 description: Saiba como trabalhar com o modelo de dados do Campaign Classic
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 1%

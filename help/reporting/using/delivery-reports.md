@@ -5,10 +5,10 @@ description: Relatórios de entrega
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1461'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ Este relatório combina os indicadores principais para rastrear o comportamento 
 * **[!UICONTROL Distinct opens for the population reached]** : Estimativa do número de destinatários alvos que abriram uma mensagem pelo menos uma vez. Cliques em URLs rastreados são considerados, pois os emails precisam ser abertos para se clicar em um link.
 * **[!UICONTROL Sum of opens for the population reached]** : Estimativa do número total de aberturas por destinatários alvos.
 * **[!UICONTROL Clicks on opt-out link]** : Número de cliques no link unsubscription.
-* **[!UICONTROL Clicks on the mirror page link]** : Número de cliques no link para a mirror page. Para ser considerado, o link deve ser definido como tal no assistente da entrega (URLs rastreadas). Consulte esta [página](../../delivery/using/about-delivery-monitoring.md).
+* **[!UICONTROL Clicks on the mirror page link]** : Número de cliques no link para a mirror page. Para ser considerado, o link deve ser definido como tal no assistente de delivery (URLs rastreadas). Consulte esta [página](../../delivery/using/about-delivery-monitoring.md).
 * **[!UICONTROL Estimation of forwards]** : Estimativa do número de emails encaminhados pelos destinatários alvos. Esse valor é calculado subtraindo o número de pessoas distintas e o número de destinatários distintos que clicaram no email.
 
   >[!NOTE]

@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '870'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Você pode definir novos blocos que permitem otimizar a personalização das ent
 
 Para inserir um bloco de personalização em uma mensagem, siga as etapas abaixo:
 
-1. No editor de conteúdo do assistente de entrega, clique no ícone do campo de personalização e selecione o menu **[!UICONTROL Include]**.
+1. No editor de conteúdo do assistente de entrega, clique no ícone de campo personalizado e selecione o menu **[!UICONTROL Include]**.
 1. Selecione um bloco de personalização na lista (a lista exibe os 10 últimos blocos usados) ou clique no menu **[!UICONTROL Other...]** para acessar a lista completa.
 
    ![](assets/s_ncs_user_personalized_block01.png)

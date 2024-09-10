@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2973'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ O Adobe Campaign permite importar dados para o banco de dados de um ou mais arqu
 >
 >É possível importar dados sem mapeá-los com os dados do banco de dados usando a função **[!UICONTROL Import a list]**. Os dados podem ser usados exclusivamente em workflows por meio do objeto **[!UICONTROL Read list]**. Para obter mais informações, consulte [esta página](../../workflow/using/read-list.md).
 
-O assistente de importação permite configurar a importação, definir suas opções (como transformação de dados) e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de importação (simples ou múltipla) e dos direitos do operador.
+O assistente de importação permite configurar uma importação, definir suas opções (como transformação de dados) e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de importação (simples ou múltipla) e dos direitos do operador.
 
 O assistente de importação é exibido após a criação de um novo trabalho de importação (consulte [Criar trabalhos de importação e exportação](../../platform/using/creating-import-export-jobs.md).
 
@@ -61,7 +61,7 @@ Ao iniciar o assistente de importação, primeiro é necessário selecionar um t
 
    ![](assets/s_ncs_user_import_wizard01_3.png)
 
-   Toda vez que um arquivo é adicionado, a tela do assistente **[!UICONTROL File to import]** é exibida. Consulte a seção [Step 2 - Source file selection](#step-2---source-file-selection) e siga as etapas do assistente para definir as opções de importação como para uma importação simples.
+   Toda vez que um arquivo é adicionado, a tela do assistente **[!UICONTROL File to import]** é exibida. Consulte a seção [Etapa 2 - Seleção de arquivo do Source](#step-2---source-file-selection) e siga as etapas no assistente para definir as opções de importação como para uma importação simples.
 
    >[!NOTE]
    >

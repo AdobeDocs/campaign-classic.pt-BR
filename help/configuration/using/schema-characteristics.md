@@ -6,7 +6,7 @@ feature: Custom Resources
 role: Data Engineer, Developer
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 4%

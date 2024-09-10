@@ -5,10 +5,10 @@ description: "Caso de uso: selecionar seed addresses de acordo com critérios"
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -91,7 +91,7 @@ Para obter mais detalhes sobre extensões de esquema, consulte [esta seção](..
 
    ![](assets/dlv_seeds_usecase_14.png)
 
-   Você pode fechar o assistente após o término da atualização.
+   Quando a atualização terminar, você poderá fechar o assistente.
 
 1. Desconecte e reconecte o Adobe Campaign. As alterações feitas no schema de dados do seed address agora estão em vigor. Para ficarem visíveis na tela do seed address, você deve atualizar o **[!UICONTROL Input form]** associado. Consulte a seção [Atualizar o formulário de entrada](#updating-the-input-form).
 

@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2474'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -91,7 +91,7 @@ Um pacote de dados pode ser construído manualmente a partir de qualquer editor 
 
 Os pacotes podem ser exportados de três formas diferentes:
 
-* O **[!UICONTROL Package Export Wizard]** permite exportar um conjunto de objetos em um único pacote. Para obter mais informações, consulte [Exportar um conjunto de objetos em um pacote](#exporting-a-set-of-objects-in-a-package)
+* O **[!UICONTROL Package Export Assistant]** permite exportar um conjunto de objetos em um único pacote. Para obter mais informações, consulte [Exportar um conjunto de objetos em um pacote](#exporting-a-set-of-objects-in-a-package)
 * Um **único objeto** pode ser exportado diretamente em um pacote ao clicar com o botão direito do mouse e depois selecionar **[!UICONTROL Actions > Export in a package]**.
 * As **definições de pacote** permitem criar uma estrutura de pacote em que você adiciona objetos que serão exportados posteriormente em um pacote. Para obter mais informações, consulte [Gerenciar definições de pacote](#managing-package-definitions)
 
@@ -99,7 +99,7 @@ Após a exportação, é possível importar o pacote e todas as entidades adicio
 
 ### Exportar um conjunto de dados em um pacote {#exporting-a-set-of-objects-in-a-package}
 
-O assistente de exportação de pacotes pode ser acessado no menu **[!UICONTROL Tools > Advanced > Export package...]** do console do cliente do Adobe Campaign.
+O assistente de exportação de pacotes pode ser acessado pelo menu **[!UICONTROL Tools > Advanced > Export package...]** do console do cliente do Adobe Campaign.
 
 ![](assets/ncs_datapackage_typepackage.png)
 

@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Monitoring
 role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '653'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Há três tipos de instruções:
 * **[!DNL value]**: para dar acesso aos campos da entrega, às variáveis da entrega e aos objetos personalizados carregados na entrega. [Saiba mais](#value)
 * **[!DNL foreach]**: para executar um loop em uma matriz carregada como um objeto personalizado. [Saiba mais](#foreach)
 
-Elas podem ser testadas diretamente no assistente da entrega. Elas são aplicáveis na pré-visualização de conteúdo e quando você clica no botão de rastreamento para ver a lista dos URLs.
+Elas podem ser testadas diretamente no assistente de entrega. Elas são aplicáveis na pré-visualização de conteúdo e quando você clica no botão de rastreamento para ver a lista dos URLs.
 
 ## [!DNL include] {#include}
 
@@ -57,7 +57,7 @@ Os seguintes exemplos estão entre os mais usados:
   <%@ include option='NmsServer_URL' %>
   ```
 
-  Use o botão de personalização no assistente da entrega para obter a sintaxe correta.
+  Use o botão de personalização no assistente de entrega para obter a sintaxe correta.
 
 ## [!DNL value] {#value}
 

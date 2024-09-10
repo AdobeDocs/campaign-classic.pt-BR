@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ As entregas podem ser realizadas **online** (via email, um dos canais móveis e 
 Dependendo do canal, os modos de entrega poderão ser:
 
 * Entrega direta em massa via Adobe Campaign (modo padrão para canal de email).
-* Entrega externa por meio de um operador especialista que recebe o arquivo de saída gerado pelo assistente de entrega (modo padrão para o canal de mala direta).
+* Delivery externo por meio de um operador especialista que recebe o arquivo de saída gerado pelo assistente de delivery (modo padrão para o canal de mala direta).
 
 As contas externas são configuradas por meio do nó **[!UICONTROL Administration > Platform > External accounts]**. Essa configuração deve ser executada somente por usuários avançados.
 

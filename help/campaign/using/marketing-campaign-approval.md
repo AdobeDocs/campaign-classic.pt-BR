@@ -5,10 +5,10 @@ description: Saiba como gerenciar aprovações de campanhas de marketing
 role: User
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2437'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -321,7 +321,7 @@ Essa opção permite que você defina uma pessoa encarregada da edição de cont
 
    ![](assets/s_ncs_user_validation_submit_content_notif.png)
 
-1. Eles podem fazer logon no console, abrir a entrega e editá-la usando um assistente simplificado para alterar o assunto, o conteúdo HTML e o conteúdo de texto e enviar provas.
+1. Em seguida, eles podem fazer logon no console, abrir o delivery e editá-lo usando um assistente simplificado para alterar o assunto, o conteúdo de HTML e de texto e enviar provas.
 
    ![](assets/s_user_validation_content_edition.png)
 

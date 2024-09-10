@@ -4,7 +4,7 @@ title: Query incremental
 description: Saiba mais sobre a atividade do workflow de query incremental
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 100%
@@ -35,7 +35,7 @@ Para fazer isso:
 1. Na guia **[!UICONTROL Scheduling & History]**, selecione a opção **[!UICONTROL Schedule execution]**. A atividade permanece ativa após a criação e será acionada somente nos horários especificados pelo agendamento para execução do query. No entanto, se a opção estiver desabilitada, o query será executado imediatamente, **de uma só vez**.
 1. Clique no botão **[!UICONTROL Change]**.
 
-   Na janela **[!UICONTROL Schedule editing wizard]**, você pode configurar o tipo de frequência, a recorrência do evento e o período de validade do evento.
+   Na janela **[!UICONTROL Schedule editing assistant]**, você pode configurar o tipo de frequência, a recorrência do evento e o período de validade do evento.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 

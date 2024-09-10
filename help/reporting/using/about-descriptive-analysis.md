@@ -5,10 +5,10 @@ description: Introdução à análise descritiva
 feature: Reporting, Monitoring
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '210'
-ht-degree: 100%
+ht-degree: 70%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Para gerar estatísticas sobre os dados no banco de dados, crie relatórios de análise descritiva usando o assistente dedicado e adapte seu conteúdo e apresentação de acordo com as necessidades.
+Para produzir estatísticas sobre os dados no banco de dados, crie relatórios de análise descritiva usando o assistente dedicado e adapte seu conteúdo e apresentação de acordo com as necessidades.
 
 Esses relatórios abordam populações e devem ser usados somente para analisar volumes de dados pequenos.
 

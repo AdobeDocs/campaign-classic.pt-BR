@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1117'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -146,7 +146,7 @@ Para registrar destinatários para um serviço de informação, você pode:
 
 por lei, entregas de email devem conter um link para cancelamento. Os destinatários podem clicar neste link para atualizar seu perfil e ser excluídos do envio das futuras entregas.
 
-O link padrão para cancelamento de subscrição é inserido por meio do último botão da barra de ferramentas do editor de conteúdo fornecido no assistente de entrega (consulte [Sobre personalização](about-personalization.md)). Quando o destinatário clica nesse link, o perfil é adicionado à lista de bloqueios (recusado), significando que este destinatário não será mais direcionado para qualquer ação de entrega.
+O link padrão para cancelamento de inscrição é inserido por meio do último botão da barra de ferramentas do editor de conteúdo fornecido no assistente de entrega (consulte [Sobre personalização](about-personalization.md)). Quando o destinatário clica nesse link, o perfil é adicionado à lista de bloqueios (recusado), significando que este destinatário não será mais direcionado para qualquer ação de entrega.
 
 Os destinatários podem, no entanto, optar por cancelar a subscrição de um serviço sem cancelar a subscrição de todos os serviços. Para permitir isso, é possível usar um formulário web (consulte [esta seção](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) ou inserir um link personalizado de cancelamento de subscrição (consulte [Blocos de personalização](personalization-blocks.md)).
 

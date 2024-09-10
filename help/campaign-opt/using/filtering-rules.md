@@ -5,10 +5,10 @@ description: Saiba como usar regras de filtragem no Adobe Campaign
 role: User, Data Engineer
 feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -64,7 +64,7 @@ Nesse caso, mesmo que a regra esteja vinculada a todas as entregas, ela só ser�
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-Essas tipologias específicas podem ser vinculadas a uma entrega quando o target for selecionado: no assistente da entrega, clique no link **[!UICONTROL To]** e, em seguida, na guia **[!UICONTROL Exclusions]**.
+Essas tipologias específicas podem ser vinculadas a um delivery quando o target for selecionado: no assistente de delivery, clique no link **[!UICONTROL To]** e, em seguida, na guia **[!UICONTROL Exclusions]**.
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 

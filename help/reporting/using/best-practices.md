@@ -5,10 +5,10 @@ description: Práticas recomendadas para relatórios do Campaign
 feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 

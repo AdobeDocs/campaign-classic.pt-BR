@@ -5,10 +5,10 @@ description: Validando
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Direct Mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ A confirmação do envio inicia a extração dos dados no arquivo especificado.
 
 ![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
-Então, é possível fechar o assistente e examinar os logs por meio da guia **[!UICONTROL Delivery]**, acessível pelos detalhes da entrega.
+Então, é possível fechar o assistente e examinar os logs por meio da guia **[!UICONTROL Delivery]**, acessível pelos detalhes do delivery.
 
 É possível configurar o modo de recuperação de logs na guia **[!UICONTROL Analysis]** das propriedades de entrega.
 

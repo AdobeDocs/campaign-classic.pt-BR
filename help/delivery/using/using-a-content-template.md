@@ -5,10 +5,10 @@ description: Usar um modelo de conteúdo
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Eles também podem ser usados para criar instâncias de conteúdo. Depois de cri
 
 ## Criação de uma entrega via gerenciamento de conteúdo {#creating-a-delivery-via-content-management}
 
-É possível referenciar um template de conteúdo em uma entrega tendo em conta o uso de campos de entrada para inserir conteúdo. Uma guia adicional é incluída no assistente da entrega para definir o conteúdo da entrega.
+É possível referenciar um template de conteúdo em uma entrega tendo em conta o uso de campos de entrada para inserir conteúdo. Uma guia adicional é adicionada ao assistente do delivery para definir o conteúdo do delivery.
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
@@ -32,7 +32,7 @@ O layout será aplicado automaticamente com base nas configurações selecionada
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Para obter mais informações, consulte o exemplo de implementação completa: [Criação de conteúdo no assistente de entrega](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard).
+Para obter mais informações, consulte o exemplo de implementação completa: [Criação de conteúdo no assistente de entrega](use-case-creating-content-management.md#creating-content-in-the-delivery-assistant).
 
 ## Criação de uma instância de conteúdo {#creating-a-content-instance}
 

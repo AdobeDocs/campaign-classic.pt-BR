@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1662'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -138,7 +138,7 @@ Para enviar uma prova, siga as etapas abaixo:
 
 1. Verifique se o target de prova foi configurado conforme descrito em [Definir um target de prova específico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
-1. Clique em **[!UICONTROL Send a proof]** na barra superior do assistente da entrega.
+1. Clique em **[!UICONTROL Send a proof]** na barra superior do assistente de entrega.
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
 
@@ -171,7 +171,7 @@ As seguintes opções estão disponíveis:
 
 * A primeira opção permite que você mantenha as duplicatas da prova.
 * As duas opções a seguir permitem manter em quarentena os destinatários que estão nas listas de bloqueio e de endereços. Consulte a descrição dessas opções para o target principal em [Personalizar configurações de exclusão](steps-defining-the-target-population.md#customizing-exclusion-settings). Diferentemente do target de uma entrega, em que esses endereços são excluídos por padrão, eles serão mantidos por padrão para o target de uma prova.
-* A opção **[!UICONTROL Keep the delivery code for the proof]** permite que você forneça o mesmo código de entrega que o definido para a entrega com a qual ele está relacionado. Este código é especificado na primeira etapa do assistente de entrega.
+* A opção **[!UICONTROL Keep the delivery code for the proof]** permite que você forneça o mesmo código de entrega que o definido para a entrega com a qual ele está relacionado. Esse código é especificado na primeira etapa do assistente de entrega.
 * Por padrão, o assunto da prova tem o prefixo &#39;Proof #&#39;, onde # é o número da prova. É possível alterar esse prefixo no campo **[!UICONTROL Label prefix]**.
 
 ## Processo de validação com tipologias {#validation-process-with-typologies}

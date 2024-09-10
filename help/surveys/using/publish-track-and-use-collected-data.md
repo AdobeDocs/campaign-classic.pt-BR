@@ -5,10 +5,10 @@ description: Saiba como publicar, rastrear e usar dados coletados em uma pesquis
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '843'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

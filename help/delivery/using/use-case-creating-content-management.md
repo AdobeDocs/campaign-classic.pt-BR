@@ -5,10 +5,10 @@ description: "Caso de uso: criar gerenciamento de conteúdo"
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1192'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -382,7 +382,7 @@ Agora é possível criar conteúdo com base nesse modelo de publicação.
 >
 >Para obter mais informações sobre como criar conteúdo, consulte [Usar um modelo de conteúdo](using-a-content-template.md).
 
-### Criar conteúdo no assistente de entrega {#creating-content-in-the-delivery-wizard}
+### Criar conteúdo no assistente de entrega {#creating-content-in-the-delivery-assistant}
 
 Para criar conteúdo diretamente nas entregas, siga as etapas abaixo:
 
@@ -390,7 +390,7 @@ Para criar conteúdo diretamente nas entregas, siga as etapas abaixo:
 
    ![](assets/s_ncs_content_in_delivery.png)
 
-   Uma guia adicional é incluída no assistente da entrega para definir o conteúdo através do formulário de gestão de conteúdo.
+   Uma guia adicional é adicionada ao assistente do delivery para definir o conteúdo através do formulário de gestão de conteúdo.
 
 1. Insira as informações da variável do seu boletim informativo.
 

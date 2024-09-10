@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Monitoring
 role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Neste exemplo, o URL https://www.adobe.com é seguido por um ponto e vírgula. O
 
 O rastreamento de mensagens é habilitado por padrão. Para personalizar como URLs são rastreados, siga as etapas abaixo:
 
-1. Selecione a opção **[!UICONTROL Display URLs]** na seção inferior do assistente da entrega, no conteúdo da mensagem.
+1. Selecione a opção **[!UICONTROL Display URLs]** na seção inferior do assistente de entrega, no conteúdo da mensagem.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
