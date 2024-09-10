@@ -5,10 +5,10 @@ description: Saiba como definir a audiência das campanhas de marketing
 role: User
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
 workflow-type: tm+mt
-source-wordcount: '1485'
-ht-degree: 100%
+source-wordcount: '1492'
+ht-degree: 99%
 
 ---
 
@@ -166,6 +166,10 @@ Os ícones da barra de ferramentas permitem realizar a ação referente à execu
   Você pode interromper o workflow definitivamente clicando no ícone **[!UICONTROL Actions]** e selecionando a interrupção **[!UICONTROL Unconditional]**. Esta ação encerra o fluxo de trabalho da campanha.
 
   ![](assets/s_user_segmentation_stop_unconditional.png)
+
+  >[!CAUTION]
+  >
+  >A interrupção incondicional está restrita aos usuários administradores.
 
 ## Adicionar um grupo de controle {#defining-a-control-group}
 

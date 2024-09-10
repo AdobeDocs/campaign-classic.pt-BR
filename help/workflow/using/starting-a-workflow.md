@@ -4,10 +4,10 @@ title: Iniciar um fluxo de trabalho
 description: Saiba como iniciar um fluxo de trabalho e descubra a barra de ferramentas de ações e o menu de clique com o botão direito do mouse do fluxo de trabalho
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
+source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
 workflow-type: tm+mt
-source-wordcount: '1172'
-ht-degree: 100%
+source-wordcount: '1179'
+ht-degree: 98%
 
 ---
 
@@ -57,7 +57,7 @@ Os botões da barra de ferramentas são detalhados nesta [seção](../../campaig
 
   >[!CAUTION]
   >
-  >Essa opção destina-se somente aos usuários avançados.
+  >A interrupção incondicional está restrita aos usuários administradores.
 
 * **[!UICONTROL Restart]**
 
@@ -108,7 +108,7 @@ Para evitar workflows no estado pausado:
 
 **Interromper fluxos de trabalho não utilizados**. Os fluxos de trabalho que continuam em execução mantêm conexões com o banco de dados.
 
-**Use a interrupção incondicional apenas nos casos mais raros**. Não utilize esta ação regularmente. Não executar um encerramento limpo nas conexões geradas pelos workflows com o banco de dados afeta o desempenho.
+**Use a interrupção incondicional apenas nos casos mais raros**. Essa opção é restrita aos usuários administradores. Não utilize esta ação regularmente. Não executar um encerramento limpo nas conexões geradas pelos workflows com o banco de dados afeta o desempenho.
 
 **Não execute várias solicitações de interrupção no mesmo fluxo de trabalho**. A interrupção de um workflow é um processo assíncrono: a solicitação é registrada e, em seguida, o servidor ou servidores de workflow cancelam as operações em andamento. A interrupção de uma instância de fluxo de trabalho pode demorar, especialmente se o fluxo de trabalho estiver em execução em vários servidores, em que cada um deles deve assumir o controle para cancelar as tarefas em andamento. Para evitar problemas, aguarde a conclusão da operação de interrupção e evite interromper um fluxo de trabalho várias vezes.
 
