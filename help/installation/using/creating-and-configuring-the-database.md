@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 2%
@@ -139,7 +139,7 @@ O estágio final do assistente permite criar o banco de dados. Clique em **[!UIC
 
 Depois que o banco de dados for criado, você poderá se reconectar para finalizar a configuração da instância.
 
-Agora você deve iniciar o assistente de implantação para concluir a configuração da instância. Consulte [Assistente de implantação](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Agora você deve iniciar o assistente de implantação para concluir a configuração da instância. Consulte o [assistente de implantação](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 As configurações de conexão para o banco de dados vinculado à instância são armazenadas no arquivo **`/conf/config-<instance>.xml`** localizado no diretório de instalação do Adobe Campaign.
 
@@ -230,7 +230,7 @@ O estágio final do assistente permite criar o banco de dados. Clique em **[!UIC
 
 Quando a criação do banco de dados for concluída, você poderá se reconectar para finalizar a configuração da instância.
 
-Agora você deve iniciar o assistente de implantação para concluir a configuração da instância. Consulte [Assistente de implantação](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Agora você deve iniciar o assistente de implantação para concluir a configuração da instância. Consulte o [assistente de implantação](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 As configurações de conexão para o banco de dados vinculado à instância são armazenadas no arquivo **`/conf/config-<instance>.xml`** localizado no diretório de instalação do Adobe Campaign.
 

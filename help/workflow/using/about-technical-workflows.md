@@ -4,10 +4,10 @@ title: Workflows técnicos
 description: Saiba mais sobre os workflows técnicos disponíveis com os pacotes do Campaign Classic
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1704'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Para obter mais informações sobre como monitorar workflows técnicos, consulte
 | **Coletar dados para o serviço HeatMap** (collectDataHeatMapService) | Instalado por padrão | Esse fluxo de trabalho recupera dados exigidos pelo serviço HeatMap. |
 | **Coletar solicitações de privacidade** (collectPrivacyRequests) | Regulamento de Proteção de Dados de Privacidade | Esse fluxo de trabalho gera os dados do destinatário armazenados no Adobe Campaign e os disponibiliza para baixar na tela de solicitação de privacidade. |
 | **Cálculo de custo** (budgetMgt) | Campanhas de marketing (Campaign) | Esse fluxo de trabalho inicia o cálculo das linhas de despesas e custos nos orçamentos, planos, programas, campanhas, entregas e tarefas. |
-| **Limpeza do banco de dados** (limpeza) | Entrega | Este é o fluxo de trabalho manutenção do banco de dados: faz diferentes cálculos das estatísticas e dos processos e exclui dados obsoletos do banco de dados de acordo com a configuração definida no assistente de implantação. É acionado todos os dias às 4h por padrão. Para obter mais informações, consulte [esta página](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic). |
+| **Limpeza do banco de dados** (limpeza) | Entrega | Este é o workflow de manutenção do banco de dados: faz diferentes cálculos das estatísticas e dos processos e exclui dados obsoletos do banco de dados de acordo com a configuração definida no assistente de implantação. É acionado todos os dias às 4h por padrão. Para obter mais informações, consulte [esta página](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic). |
 | **Excluir usuários do LINE bloqueados** (deleteBlockedLineUsersV2) | Canal LINE | Esse fluxo de trabalho garante que os dados dos usuários do LINE V2 sejam excluídos após bloquearem a conta oficial do LINE por 180 dias. |
 | **Excluir dados de solicitação de privacidade** (deletePrivacyRequestsData) | Regulamento de Proteção de Dados de Privacidade | Esse fluxo de trabalho exclui os dados do destinatário armazenados no Adobe Campaign. |
 | **Indicadores de entrega** (deliveryIndicators) | Plataforma Mid-sourcing | Esse fluxo de trabalho atualiza os indicadores de rastreamento de entrega para uma entrega. Esse fluxo de trabalho é acionado a cada hora por padrão. |

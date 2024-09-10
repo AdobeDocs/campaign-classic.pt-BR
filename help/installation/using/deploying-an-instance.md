@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '3389'
 ht-degree: 4%
@@ -21,11 +21,11 @@ ht-degree: 4%
 >
 >As configurações do lado do servidor só podem ser executadas pelo Adobe para implantações hospedadas pelo Adobe. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md).
 
-## Assistente de implantação {#deployment-wizard}
+## assistente de implantação {#deployment-assistant}
 
 O Adobe Campaign fornece um assistente gráfico, disponível no console do cliente Adobe Campaign, para definir os parâmetros da instância à qual você vai se conectar.
 
-Para iniciar o assistente de implantação, selecione **Ferramentas > Avançado > Assistente de implantação**.
+Para iniciar o assistente de implantação, selecione **Ferramentas > Avançado > assistente de implantação**.
 
 ![](assets/s_ncs_install_deployment_wiz_01.png)
 
@@ -396,7 +396,7 @@ O campo **máscaras de URL** permite especificar a lista de máscaras de URL a s
 É possível especificar várias máscaras de URL usando uma vírgula para separar cada uma delas.
 
 * Para obter informações sobre como usar e gerenciar imagens em emails, consulte [esta seção](../../delivery/using/defining-the-email-content.md#adding-images).
-* No assistente do delivery, as imagens chamadas desses URLs terão o status &quot;Ignorado&quot;.
+* No assistente de entrega, as imagens chamadas desses URLs terão o status &quot;Ignorado&quot;.
 
 ### Modos de publicação {#publication-modes}
 

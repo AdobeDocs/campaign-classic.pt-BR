@@ -8,22 +8,25 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 2%
+source-wordcount: '1045'
+ht-degree: 1%
 
 ---
 
-# Conexão por meio do LDAP{#connecting-through-ldap}
+# Conexão por meio do LDAP {#connecting-through-ldap}
 
 ## Configuração do Campaign e do LDAP {#configuring-campaign-and-ldap}
 
 >[!NOTE]
 >
->A configuração do LDAP só é possível para instalações locais ou híbridas.
+>* A configuração do LDAP só é possível para instalações locais ou híbridas.
+>
+>* Verifique se o sistema e as versões do openssl são compatíveis com o Campaign na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md). Versões desatualizadas podem afetar sua autenticação LDAP.
+>
 
-A configuração do LDAP é realizada no assistente de implantação. A opção **[!UICONTROL LDAP integration]** deve ser selecionada durante a primeira etapa de configuração. Consulte [Assistente de implantação](../../installation/using/deploying-an-instance.md#deployment-wizard).
+A configuração do LDAP é realizada no assistente de implantação. A opção **[!UICONTROL LDAP integration]** deve ser selecionada durante a primeira etapa de configuração. Consulte o [assistente de implantação](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 A janela permite configurar a identificação de usuários do Adobe Campaign por meio do diretório LDAP especificado.
 
@@ -32,29 +35,19 @@ A janela permite configurar a identificação de usuários do Adobe Campaign por
 * Especifique o endereço do servidor LDAP no campo **[!UICONTROL LDAP server]**. Você pode adicionar o número da porta. Por padrão, a porta usada é 389.
 * Na lista suspensa, selecione o método de autenticação para usuários:
 
-   * Senha criptografada (**md5**)
+   * Senha criptografada (**md5**) - Modo padrão.
 
-     Modo padrão.
-
-   * Senha de texto sem formatação + SSL (**TLS**)
-
-     Todo o procedimento de autenticação (senha incluída) é criptografado. A porta segura 636 não deve ser usada neste modo: o Adobe Campaign alterna automaticamente para o modo seguro.
+   * Senha de texto sem formatação + SSL (**TLS**) - O procedimento de autenticação inteiro (senha incluída) está criptografado. A porta segura 636 não deve ser usada neste modo: o Adobe Campaign alterna automaticamente para o modo seguro.
 
      Quando você usa esse modo de autenticação, no Linux, o certificado é verificado por uma biblioteca de cliente openLDAP. Recomendamos o uso de um certificado SSL válido para que o procedimento de autenticação seja criptografado. Caso contrário, as informações serão em texto simples.
 
      O certificado também é verificado no Windows.
 
-   * Gerenciador de LAN do Windows NT (**NTLM**)
+   * Gerenciador de LAN do Windows NT (**NTLM**) - Autenticação proprietária do Windows. O **[!UICONTROL Unique identifier]** é usado somente para o nome de domínio.
 
-     Autenticação proprietária do Windows. O **[!UICONTROL Unique identifier]** é usado somente para o nome de domínio.
+   * Autenticação de Senha Distribuída (**DPA**) - Autenticação Proprietária do Windows. O **[!UICONTROL Unique identifier]** é usado apenas para o nome de domínio (domain.com).
 
-   * Autenticação de Senha Distribuída (**DPA**)
-
-     Autenticação proprietária do Windows. O **[!UICONTROL Unique identifier]** é usado apenas para o nome de domínio (domain.com).
-
-   * Senha de texto sem formatação
-
-     Sem criptografia (para uso somente em fases de teste).
+   * Senha de texto sem formatação - Sem criptografia (para uso somente em fases de teste).
 
 * Selecione o modo de autenticação do usuário: **[!UICONTROL Automatically compute the unique user identifier]** (consulte a etapa [Cálculo de Nome Diferenciado](#distinguished-name-calculation)) ou **[!UICONTROL Search the unique user identifier in the directory]** (consulte a etapa [Pesquisa de identificadores](#searching-for-identifiers)).
 

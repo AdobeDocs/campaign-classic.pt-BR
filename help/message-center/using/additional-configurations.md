@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 100%
@@ -34,11 +34,11 @@ Para fazer isso, siga as etapas abaixo:
 
 >[!NOTE]
 >
->O número de eventos pendentes na fila é exibido na seção [Indicadores do sistema](../../production/using/monitoring-processes.md#system-indicators) da página de monitoramento do processo do Adobe Campaign. Para obter mais informações sobre o assistente de implantação, consulte [esta seção](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>O número de eventos pendentes na fila é exibido na seção [Indicadores do sistema](../../production/using/monitoring-processes.md#system-indicators) da página de monitoramento do processo do Adobe Campaign. Para obter mais informações sobre o assistente de implantação, consulte [esta seção](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 ## Limpar eventos {#purging-events}
 
-Você pode usar o [assistente de implantação](../../production/using/database-cleanup-workflow.md#deployment-wizard) para definir por quanto tempo os dados devem ser armazenados no banco de dados
+Você pode usar o [assistente de implantação](../../production/using/database-cleanup-workflow.md#deployment-assistant) para definir por quanto tempo os dados devem ser armazenados no banco de dados
 
 A limpeza de eventos é executada automaticamente pelo [Fluxo de trabalho de limpeza de banco de dados](../../production/using/database-cleanup-workflow.md). Esse workflow limpa os eventos recebidos e armazenados nas instâncias de execução e eventos arquivados em uma instância de controle.
 

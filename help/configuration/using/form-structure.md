@@ -6,7 +6,7 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '2398'
 ht-degree: 5%
@@ -613,12 +613,12 @@ A marca **`<check expr="<condition>" />`** combinada com a marca **`<error>`** i
 
 ## Assistentes {#wizards}
 
-Um assistente orienta você durante um conjunto de etapas de entrada de dados na forma de páginas. Os dados inseridos são salvos quando você valida o formulário.
+Um assistente orienta você sobre um conjunto de etapas de entrada de dados no formato de páginas. Os dados inseridos são salvos quando você valida o formulário.
 
 Um assistente tem a seguinte estrutura:
 
 ```xml
-<form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
+<form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Assistant example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
     <input xpath="comment"/>
@@ -632,7 +632,7 @@ Um assistente tem a seguinte estrutura:
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-A presença do atributo **type=&quot;wizard&quot;** no elemento `<form>` permite definir o modo de assistente na construção do formulário. As páginas foram concluídas com base nos elementos `<container>`, que são filhos do elemento `<form>`. O elemento `<container>` de uma página é preenchido com os atributos de título do título e desc para exibir a descrição sob o título da página. Os botões **[!UICONTROL Previous]** e **[!UICONTROL Next]** são adicionados automaticamente para permitir a navegação entre páginas.
+A presença do atributo **type=&quot;wizard&quot;** no elemento `<form>` permite definir o modo assistente na construção do formulário. As páginas foram concluídas com base nos elementos `<container>`, que são filhos do elemento `<form>`. O elemento `<container>` de uma página é preenchido com os atributos de título do título e desc para exibir a descrição sob o título da página. Os botões **[!UICONTROL Previous]** e **[!UICONTROL Next]** são adicionados automaticamente para permitir a navegação entre páginas.
 
 O botão **[!UICONTROL Finish]** salva os dados inseridos e fecha o formulário.
 

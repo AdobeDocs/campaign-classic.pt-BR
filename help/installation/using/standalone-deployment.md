@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1077'
 ht-degree: 5%
@@ -220,7 +220,7 @@ Siga as etapas abaixo:
 
    ![](assets/s_ncs_install_db_oracle_creation01.png)
 
-   Siga as etapas do assistente e crie o banco de dados associado à instância de conexão.
+   Siga as etapas no assistente e crie o banco de dados associado à instância de conexão.
 
    Para obter mais informações, consulte [Criação e configuração do banco de dados](../../installation/using/creating-and-configuring-the-database.md).
 
