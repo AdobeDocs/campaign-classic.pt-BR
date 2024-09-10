@@ -6,7 +6,7 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: de6e86eb2304a88e836c5759b87d7f38446ed357
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 100%
@@ -14,7 +14,6 @@ ht-degree: 100%
 ---
 
 # Controlar conteúdo da mensagem{#control-message-content}
-
 
 Para garantir que seus emails cheguem aos destinatários e melhorem a taxa de capacidade de entrega de email, eles devem respeitar várias regras. Caso contrário, o conteúdo de determinadas mensagens pode ser detectado como spam. O Adobe Campaign fornece várias ferramentas para fazer com que o conteúdo esteja em conformidade com essas regras.
 
@@ -36,7 +35,7 @@ Para obter dicas adicionais para otimizar a capacidade de entrega ao projetar co
 
 Determinados ISPs verificam a validade do endereço do remetente (**[!UICONTROL From]**) antes de aceitar mensagens. Um endereço formado incorretamente pode resultar na rejeição pelo servidor de recebimento.
 
-Verifique se um endereço correto é fornecido no nível da instância (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) ou nos cenários usados com mais frequência.
+Verifique se um endereço correto é fornecido no nível da instância (menu **[!UICONTROL Tools > Advanced > deployment wizard...]**) ou nos cenários usados com mais frequência.
 
 Para obter mais informações, consulte [esta página](defining-the-email-content.md).
 
