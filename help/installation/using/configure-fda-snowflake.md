@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 22420452d4df2e8161c91a42ad0d20ceb4796e82
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 32%
+source-wordcount: '503'
+ht-degree: 31%
 
 ---
 
@@ -21,9 +21,12 @@ Use a opção Campaign **Federated Data Access** (FDA) para processar informaç�
 1. Configurar [!DNL Snowflake] no [Linux](#snowflake-linux).
 1. Configurar a [!DNL Snowflake] [conta externa](#snowflake-external) no Campaign
 
->[!NOTE]
+>[!CAUTION]
 >
->[!DNL Snowflake]O conector de está disponível para implantações locais e hospedadas. Para obter mais informações, consulte [esta página](../../installation/using/capability-matrix.md).
+>* [!DNL Snowflake]O conector de está disponível para implantações locais e hospedadas. Para obter mais informações, consulte [esta página](../../installation/using/capability-matrix.md).
+>
+>* A versão mínima com suporte do driver ODBC [!DNL Snowflake] é **2.24.4**.
+>
 
 ![](assets/snowflake_3.png)
 
