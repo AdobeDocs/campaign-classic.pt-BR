@@ -6,7 +6,7 @@ feature: Technote, Deliverability
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 8d15a5666b5768bc0f17a4391061c4fcb9f76811
+source-git-commit: c42d4022587846081442a39d03546c0ef335c7a0
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Como parte da nova integração do servidor de entrega, o Campaign precisa se co
 >
 > A credencial de conta de serviço (JWT) está sendo descontinuada pela Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem usar a credencial de servidor para servidor OAuth. </br>
 >
-> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As [credenciais da Conta de Serviço (JWT)](oauth-technical-account.md) existentes continuarão a funcionar até 27 de janeiro de 2025. </br>
+> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As [credenciais da Conta de Serviço (JWT)](../../integrations/using/oauth-technical-account.md) existentes continuarão a funcionar até 27 de janeiro de 2025. </br>
 >
 > * Se você tiver implementado integrações de saída, como a integração do Campaign com o Analytics ou a integração dos acionadores da Experience Cloud, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar o ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para o OAuth. 
 
