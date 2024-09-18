@@ -5,10 +5,10 @@ description: Práticas recomendadas para relatórios do Campaign
 feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 99%
+source-wordcount: '852'
+ht-degree: 97%
 
 ---
 
@@ -97,7 +97,7 @@ As recomendações acima permitem otimizar o cálculo do relatório.
 
 Além disso, o Adobe Campaign recomenda as seguintes melhorias:
 
-* Trabalhe o seu modelo de dados: os campos indexados devem ser usados principalmente para melhorar as fórmulas de cálculo.
+* Trabalhe seu modelo de dados: os campos indexados devem ser usados principalmente para melhorar as fórmulas de cálculo.
 
   Para localizar um campo indexado rapidamente, examine o nome da coluna na interface do Adobe Campaign: a seta de classificação está sublinhada em vermelho se o campo estiver indexado.
 
