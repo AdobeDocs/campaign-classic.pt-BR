@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '769'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -126,7 +126,7 @@ Para saber mais sobre essas configurações, consulte a seção **Definição da
 
 A publicação do relatório é obrigatória para compartilhá-lo com outros operadores e exibi-lo na lista de relatórios disponíveis (também consulte [Contexto de exibição do relatório](#report-display-context)). Essa operação deve ser executada novamente cada vez que o relatório for alterado.
 
-1. Abra o assistente de publicação clicando em **[!UICONTROL Publish]** na barra de ferramentas.
+1. Abra o assistente de publicação, clicando em **[!UICONTROL Publish]** na barra de ferramentas.
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 

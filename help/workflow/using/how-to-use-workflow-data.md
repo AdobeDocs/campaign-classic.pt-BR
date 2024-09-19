@@ -5,9 +5,9 @@ description: Saiba como usar os dados de workflow
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Por exemplo, dentro da estrutura de uma entrega de mala direta, você pode inclu
 
 ![](assets/s_advuser_add_data_postal_mail.png)
 
-Além dos campos de personalização habituais, você pode adicionar campos de personalização a partir de estágios do workflow ao conteúdo da entrega. Os dados adicionais definidos nas atividades de workflow podem ser mantidos e acessíveis no assistente de delivery, conforme mostrado no exemplo abaixo, para definir o nome do arquivo de output dentro da estrutura de delivery de mala direta:
+Além dos campos de personalização habituais, você pode adicionar campos de personalização a partir de estágios do workflow ao conteúdo da entrega. Os dados adicionais definidos nas atividades do fluxo de trabalho podem ser mantidos e acessados no assistente de entrega, conforme mostrado no exemplo abaixo, para definir o nome do arquivo de saída dentro da estrutura de entrega de correspondência direta:
 
 ![](assets/s_advuser_using_additional_data.png)
 

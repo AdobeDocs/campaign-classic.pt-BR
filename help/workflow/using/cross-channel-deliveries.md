@@ -5,9 +5,9 @@ description: Saiba mais sobre entregas entre canais
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ No exemplo abaixo, vamos criar um fluxo de trabalho para enviar um email ou SMS 
 1. Adicione uma atividade **[!UICONTROL Split]** ao workflow para dividir destinatários com um número de celular e aqueles com um endereço de email.
 1. Na guia **[!UICONTROL Delivery]**, selecione um workflow para cada target.
 
-   Crie seu delivery da mesma forma que com um assistente de delivery clássico clicando duas vezes na atividade de delivery no seu workflow. Para obter mais informações, consulte esta [página](../../delivery/using/about-email-channel.md).
+   Crie a sua entrega como feito no assistente de entrega clássico, clicando duas vezes na atividade de entrega no seu fluxo de trabalho. Para obter mais informações, consulte esta [página](../../delivery/using/about-email-channel.md).
 
    ![](assets/cross_channel_delivery_3.png)
 

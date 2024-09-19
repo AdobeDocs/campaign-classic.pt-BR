@@ -7,9 +7,9 @@ feature: Monitoring
 role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '653'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Há três tipos de instruções:
 * **[!DNL value]**: para dar acesso aos campos da entrega, às variáveis da entrega e aos objetos personalizados carregados na entrega. [Saiba mais](#value)
 * **[!DNL foreach]**: para executar um loop em uma matriz carregada como um objeto personalizado. [Saiba mais](#foreach)
 
-Elas podem ser testadas diretamente no assistente de entrega. Elas são aplicáveis na pré-visualização de conteúdo e quando você clica no botão de rastreamento para ver a lista dos URLs.
+Os testes podem ser feitos diretamente no assistente de entrega. Eles são aplicados na pré-visualização de conteúdo e quando você clica no botão de rastreamento para ver a lista dos URLs.
 
 ## [!DNL include] {#include}
 

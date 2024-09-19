@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1979'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -204,7 +204,7 @@ Os filtros são específicos para cada operador e são reiniciados cada vez que 
 
 É possível criar um **application filter** salvando um filtro avançado: ele pode ser reutilizado clicando com o botão direito do mouse em qualquer lista ou pelo botão **[!UICONTROL Filters]** localizado acima das listas.
 
-Esses filtros também podem ser acessados diretamente pelo assistente de entrega, no estágio de seleção de público alvo (consulte [esta seção](../../delivery/using/creating-an-email-delivery.md) para obter mais informações sobre como criar entregas). Para criar o filtro de aplicação, você pode:
+Esses filtros também podem ser acessados diretamente por meio do assistente de entrega, no estágio de seleção de público-alvo (consulte [esta seção](../../delivery/using/creating-an-email-delivery.md) para mais informações sobre como criar entregas). Para criar o filtro de aplicação, você pode:
 
 * Converter um filtro avançado em um filtro de aplicação. Para fazer isso, clique em **[!UICONTROL Save]** antes de fechar o editor de filtro avançado.
 
@@ -376,6 +376,6 @@ Clique na guia **[!UICONTROL Settings]** para acessar as seguintes opções:
 
   Selecione a opção **[!UICONTROL Do not restrict the filter]** se desejar que o usuário pare de substituir esse filtro.
 
-  Essa opção está habilitada para os filtros &quot;Destinatários de um delivery&quot; e &quot;Destinatários de deliveries pertencentes a uma pasta&quot; oferecidos no assistente de delivery que não pode ser sobrecarregado.
+  Esta opção está habilitada para os filtros “Destinatários de uma entrega” e “Destinatários de entregas pertencentes a uma pasta” oferecidos no assistente de entrega que não podem ser sobrecarregados.
 
   ![](assets/s_ncs_user_filter_advanced_param.png)

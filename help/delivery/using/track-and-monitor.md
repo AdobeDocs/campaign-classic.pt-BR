@@ -7,9 +7,9 @@ feature: Monitoring, Reporting
 role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '449'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Dica: verifique a configuração do gerenciamento de tráfego (afinidade IP). Pa
 
 Para conhecer melhor o comportamento dos destinatários, você pode acompanhar como eles reagem a uma entrega: recebimento, abertura, cliques em links, assinaturas canceladas etc. No Campaign Classic, essas informações são exibidas na guia Rastreamento dos destinatários direcionados pela entrega e na guia Rastreamento da entrega.
 
-**Dica**: o rastreamento de mensagens é habilitado por padrão. Para configurar URLs, selecione a opção Exibir URLs na seção inferior do assistente do delivery. Para cada URL da mensagem, você pode escolher se deseja ativar o rastreamento.
+**Dica**: o rastreamento de mensagens é habilitado por padrão. Para configurar URLs, selecione a opção “Exibir URLs” na seção inferior do assistente de entrega. Para cada URL da mensagem, você pode escolher se deseja ativar o rastreamento.
 
 Para obter mais informações, consulte a seção [Configuração de rastreamento](how-to-configure-tracked-links.md) e a descrição dos [Indicadores de rastreamento](../../reporting/using/delivery-reports.md#tracking-indicators).
 

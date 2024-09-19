@@ -7,15 +7,15 @@ feature: Monitoring, Email Design, Personalization
 role: User
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '176'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Configurar opções de rastreamento de URL{#personalizing-url-tracking}
 
-As configurações avançadas de rastreamento de mensagem são acessíveis por meio do ícone **[!UICONTROL Tracking & Images]** na barra de ferramentas do assistente de entrega.
+As configurações de rastreamento de mensagem avançadas são acessíveis por meio do ícone **[!UICONTROL Tracking & Images]** na barra de ferramentas do assistente de entrega.
 
 >[!NOTE]
 >

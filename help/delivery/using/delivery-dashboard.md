@@ -7,9 +7,9 @@ feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1186'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ A guia **[!UICONTROL Tracking]** lista o histórico de rastreamento dessa entreg
 >
 >Se o rastreamento não estiver ativado para uma entrega, essa guia não será exibida.
 
-A configuração de rastreamento é executada no estágio apropriado no assistente de delivery. Consulte [Como configurar links rastreados](how-to-configure-tracked-links.md).
+A configuração de rastreamento é realizada no estágio apropriado do assistente de entrega. Consulte [Como configurar links rastreados](how-to-configure-tracked-links.md).
 
 Os dados de **[!UICONTROL Tracking]** são interpretados nos relatórios de entrega. Consulte [esta seção](../../reporting/using/delivery-reports.md).
 

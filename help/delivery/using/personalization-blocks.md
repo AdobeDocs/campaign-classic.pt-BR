@@ -7,9 +7,9 @@ feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '870'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Você pode definir novos blocos que permitem otimizar a personalização das ent
 
 Para inserir um bloco de personalização em uma mensagem, siga as etapas abaixo:
 
-1. No editor de conteúdo do assistente de entrega, clique no ícone de campo personalizado e selecione o menu **[!UICONTROL Include]**.
+1. No editor de conteúdo do assistente de entrega, clique no ícone do campo personalizado e selecione o menu **[!UICONTROL Include]**.
 1. Selecione um bloco de personalização na lista (a lista exibe os 10 últimos blocos usados) ou clique no menu **[!UICONTROL Other...]** para acessar a lista completa.
 
    ![](assets/s_ncs_user_personalized_block01.png)
@@ -71,7 +71,7 @@ Para fazer isso, precisamos inserir os seguintes blocos de personalização:
 >Para saber mais sobre a geração da mirror page, consulte [Gerar a mirror page](sending-messages.md#generating-the-mirror-page).
 
 1. Criar uma nova entrega ou abrir um tipo de entrega de email existente.
-1. No assistente de entrega, clique em **[!UICONTROL Subject]** para editar e inserir o assunto da mensagem.
+1. No assistente de entrega, clique em **[!UICONTROL Subject]** para inserir e editar o assunto da mensagem.
 1. Insira os blocos de personalização no corpo da mensagem. Para fazer isso, clique no conteúdo da mensagem, clique no ícone de campo personalizado e selecione o menu **[!UICONTROL Include]**.
 1. Selecione o primeiro bloco a ser inserido. Renove o procedimento para incluir os dois outros blocos.
 

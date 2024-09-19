@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '825'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -126,11 +126,11 @@ Para obter mais informações, consulte [esta página](../../reporting/using/act
 
 ## Reutilizar relatórios e análises existentes {#re-using-existing-reports-and-analyses}
 
-É possível criar relatórios de análise descritiva em dados usando relatórios existentes já armazenados no Adobe Campaign. Esse modo é possível quando as análises foram salvas ou quando os relatórios foram criados e configurados para serem acessados por meio do assistente de análise descritiva.
+É possível criar relatórios de análise descritiva em dados usando relatórios existentes já armazenados no Adobe Campaign. Este modo é possível quando as análises são salvas ou quando os relatórios são criados e configurados para ser acessados por meio do assistente de análise descritiva.
 
 Para descobrir como salvar análises descritivas, consulte [Salvar um relatório de análise](#saving-an-analysis-report).
 
-Para criar relatórios de análise descritiva, o assistente de análise descritiva deve ser executado por uma transição de fluxo de trabalho ou por meio do menu **[!UICONTROL Tools > Descriptive analysis]**.
+Para criar relatórios de análise descritiva, o assistente de análise descritiva precisa ser executado por meio de uma transição de fluxo de trabalho ou do menu **[!UICONTROL Tools > Descriptive analysis]**.
 
 1. Selecione **[!UICONTROL Existing analyses and reports]** e clique em **[!UICONTROL Next]**.
 1. Isso permite acessar a lista de relatórios disponíveis. Selecione o relatório que deseja gerar.
@@ -143,7 +143,7 @@ Ao criar uma análise descritiva baseada em uma análise existente, é possível
 
 Para criar um histórico, siga as etapas abaixo:
 
-1. Abra uma análise existente ou crie um novo assistente de análise descritiva.
+1. Abra uma análise já existente ou crie um novo assistente de análise descritiva.
 1. Na página de exibição do relatório, clique no botão para criar um histórico na barra de ferramentas e, em seguida, confirme como mostrado abaixo:
 
    ![](assets/reporting_descriptive_historize_icon.png)

@@ -7,9 +7,9 @@ feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1958'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ Para obter mais informações, consulte [esta seção](defining-interactive-cont
 
 ## Usar gestão de conteúdo {#using-content-management}
 
-Você pode definir o conteúdo do delivery usando os formulários de gestão de conteúdo, diretamente no assistente do delivery. Para fazer isso, você deve consultar o template de publicação do gerenciamento de conteúdo que será usado na guia **[!UICONTROL Advanced]** das propriedades de entrega.
+O conteúdo da entrega pode ser definido nos formulários de gerenciamento de conteúdo, diretamente no assistente de entrega. Para fazer isso, você deve consultar o template de publicação do gerenciamento de conteúdo que será usado na guia **[!UICONTROL Advanced]** das propriedades de entrega.
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -144,7 +144,7 @@ Para personalizar a lista de emoticons, consulte esta [página](customizing-emot
 
 ## Adicionar imagens {#adding-images}
 
-As entregas de email em formato HTML podem conter imagens. No assistente de entrega, você pode importar uma página de HTML contendo imagens ou inserir imagens diretamente usando o editor de HTML pelo ícone **[!UICONTROL Image]**.
+As entregas de email em formato HTML podem conter imagens. No assistente de entrega, você pode importar uma página HTML que contenha imagens ou inserir imagens diretamente usando o editor de HTML por meio do ícone **[!UICONTROL Image]**.
 
 
 ### Medidas de proteção {#img-guardrails}
@@ -166,7 +166,7 @@ As imagens podem ser:
 
 ### Inserir e gerenciar imagens {#manage-images}
 
-O assistente de delivery permite adicionar imagens locais ou armazenadas na biblioteca ao conteúdo de mensagens. Para fazer isso, clique no botão **[!UICONTROL Image]** na barra de ferramentas do conteúdo HTML.
+O assistente de entrega permite adicionar imagens locais ou armazenadas na biblioteca ao conteúdo das mensagens. Para fazer isso, clique no botão **[!UICONTROL Image]** na barra de ferramentas do conteúdo HTML.
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -174,7 +174,7 @@ O assistente de delivery permite adicionar imagens locais ou armazenadas na bibl
 >
 >Para que os destinatários possam exibir as imagens incluídas nas mensagens recebidas, essas mensagens devem estar disponíveis em um servidor acessível externamente.
 
-Para gerenciar imagens por meio do assistente do delivery:
+Para gerenciar imagens por meio do assistente de entrega:
 
 1. Clique no ícone **[!UICONTROL Tracking & Images]** na barra de ferramentas.
    ![](assets/s_ncs_user_email_del_img_param.png)
@@ -184,9 +184,9 @@ Para gerenciar imagens por meio do assistente do delivery:
    ![](assets/s_ncs_user_email_del_img_upload.png)
 
 * Você pode carregar imagens manualmente sem esperar a fase de análise de entrega. Para fazer isso, clique em **[!UICONTROL Upload the images straightaway...]**.
-* Você pode especificar outro caminho para acessar as imagens no servidor de rastreamento. Para fazer isso, insira-o no campo **[!UICONTROL Images URL]**. Esse valor substitui o valor definido nos parâmetros do assistente de instalação.
+* Você pode especificar outro caminho para acessar as imagens no servidor de rastreamento. Para fazer isso, insira-o no campo **[!UICONTROL Images URL]**. Este valor substitui o valor definido nos parâmetros do assistente de instalação.
 
-Quando você abre o conteúdo de HTML com imagens incluídas no assistente do delivery, aparece uma mensagem com a opção de carregar as imagens imediatamente, de acordo com os parâmetros do delivery.
+Quando você abre um conteúdo HTML com imagens inclusas no assistente de entrega, aparece uma mensagem com a opção de fazer upload das imagens imediatamente, de acordo com os parâmetros da entrega.
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 

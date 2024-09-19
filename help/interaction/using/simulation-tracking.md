@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: simulating-offers
 exl-id: 490ebbea-9bdc-453e-8a02-c02b095e55e9
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Os resultados da simulação contêm uma análise de propostas por classificaç�
 
 É possível salvar estes resultados e exportá-los se necessário, criando uma análise descritiva dos resultados. Para fazer isso, clique no link apropriado na janela de resultados.
 
-Consulte [esta seção](../../reporting/using/about-descriptive-analysis.md) para obter mais informações sobre o assistente de análise descritiva.
+Consulte [esta seção](../../reporting/using/about-descriptive-analysis.md) para mais informações sobre o assistente de análise descritiva.
 
 ![](assets/offer_simulation_012.png)
 

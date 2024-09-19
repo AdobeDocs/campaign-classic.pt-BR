@@ -6,9 +6,9 @@ role: User
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2437'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -317,11 +317,11 @@ Essa opção permite que você defina uma pessoa encarregada da edição de cont
 
    ![](assets/s_ncs_user_validation_submit_content_edition.png)
 
-1. A pessoa responsável pela edição de conteúdo receberá um e-mail informando que o conteúdo está disponível.
+1. A pessoa responsável pela edição de conteúdo receberá um email informando que o conteúdo está disponível.
 
    ![](assets/s_ncs_user_validation_submit_content_notif.png)
 
-1. Em seguida, eles podem fazer logon no console, abrir o delivery e editá-lo usando um assistente simplificado para alterar o assunto, o conteúdo de HTML e de texto e enviar provas.
+1. Então, ela pode fazer logon no console, abrir a entrega e editá-la com um assistente simplificado para alterar o assunto, o conteúdo HTML e de texto, e enviar provas.
 
    ![](assets/s_user_validation_content_edition.png)
 

@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Por padrão, o Interaction vem com um ambiente **[!UICONTROL Design]** e um ambi
 
 >[!NOTE]
 >
->Para direcionar outra tabela (tabela de visitantes para ofertas anônimas ou uma tabela de recipients específica), é necessário usar o assistente de target mapping para criar os ambientes. Para obter mais informações, consulte [Criação de um ambiente de ofertas](#creating-an-offer-environment).
+>Para direcionar outra tabela (tabela de visitantes para ofertas anônimas ou uma tabela de destinatários específica), é necessário usar o assistente de mapeamento de destinos para criar os ambientes. Para obter mais informações, consulte [Criação de um ambiente de ofertas](#creating-an-offer-environment).
 
 ![](assets/offer_environments_overview_002.png)
 
@@ -41,13 +41,13 @@ Os gerentes de oferta e os gerentes de entrega têm acesso a diferentes modos de
 
 ## Criação de um ambiente de oferta {#creating-an-offer-environment}
 
-Por padrão, o Interaction vem com um ambiente pré-configurado para direcionar à tabela de destinatários (ofertas identificadas). Se quiser direcionar outra tabela (tabela de visitantes para ofertas anônimas ou uma tabela de destinatários específica), será necessário aplicar as seguintes configurações:
+Por padrão, o Interaction vem com um ambiente pré-configurado para direcionar a tabela de destinatários (ofertas identificadas). Se quiser direcionar outra tabela (tabela de visitantes para ofertas anônimas ou uma tabela de destinatários específica), será necessário aplicar as seguintes configurações:
 
 1. Coloque o cursor no nó **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Delivery mappings]**. Clique com o botão direito do mouse no mapeamento de entrega que deseja usar (**[!UICONTROL Visitors]** se quiser usar ofertas anônimas) e selecione **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. Clique em **[!UICONTROL Next]** para prosseguir para a próxima tela no assistente, marque a caixa **[!UICONTROL Generate a storage schema for propositions]** e clique em **[!UICONTROL Save]**.
+1. Clique em **[!UICONTROL Next]** para passar para a próxima tela do assistente, marque a caixa **[!UICONTROL Generate a storage schema for propositions]** e clique em **[!UICONTROL Save]**.
 
    ![](assets/offer_env_anonymous_002.png)
 

@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '851'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -83,15 +83,15 @@ Para obter mais detalhes sobre extensões de esquema, consulte [esta seção](..
 
    ![](assets/dlv_seeds_usecase_12.png)
 
-1. Quando o assistente de atualização for exibido, clique no botão **[!UICONTROL Next]** para acessar a janela de edição de tabelas: as alterações realizadas no schema de dados de seed address exigem uma atualização de estrutura.
+1. Quando o assistente de atualização for exibido, clique no botão **[!UICONTROL Next]** para acessar a janela de edição de tabelas: as alterações realizadas no esquema de dados de seed address exigem uma atualização da estrutura.
 
    ![](assets/dlv_seeds_usecase_13.png)
 
-1. Siga o assistente até chegar à página para executar a atualização. Clique no botão **[!UICONTROL Start]**.
+1. Siga o assistente até chegar à página de execução da atualização. Clique no botão **[!UICONTROL Start]**.
 
    ![](assets/dlv_seeds_usecase_14.png)
 
-   Quando a atualização terminar, você poderá fechar o assistente.
+   Você pode fechar o assistente após o término da atualização.
 
 1. Desconecte e reconecte o Adobe Campaign. As alterações feitas no schema de dados do seed address agora estão em vigor. Para ficarem visíveis na tela do seed address, você deve atualizar o **[!UICONTROL Input form]** associado. Consulte a seção [Atualizar o formulário de entrada](#updating-the-input-form).
 

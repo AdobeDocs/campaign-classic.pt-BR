@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '717'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Há dois tipos de atualizações: atualização em massa para um conjunto de des
 
 Para atualização em massa, utilize **[!UICONTROL Action > Mass update of selected lines...]**. O assistente ajuda a configurar e executar a atualização.
 
-A primeira etapa do assistente é especificar os campos que serão atualizados.
+A primeira etapa do assistente é especificar os campos a serem atualizados.
 
 A seção à esquerda do assistente exibe a lista de campos disponíveis. Utilize o campo **[!UICONTROL Find]** para executar uma pesquisa nesses campos. Pressione a tecla **Enter** para navegar na lista. Os nomes de campos correspondentes à sua entrada aparecem em negrito, conforme mostrado abaixo.
 
@@ -60,7 +60,7 @@ Clique em **[!UICONTROL Distribution of values]** para exibir a distribuição d
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
-Feche esta janela e clique em **[!UICONTROL Next]** para exibir a segunda etapa do assistente de atualização. Nesta etapa, clique em **[!UICONTROL Start]** para iniciar a atualização.
+Feche essa janela e clique em **[!UICONTROL Next]** para exibir a segunda etapa do assistente de atualização. Nesta etapa, clique em **[!UICONTROL Start]** para iniciar a atualização.
 
 ![](assets/s_ncs_user_update_wizard01_4.png)
 
@@ -70,7 +70,7 @@ As informações relativas à execução da atualização são exibidas na seç�
 
 ### Mesclar dados {#merge-data}
 
-Selecione **[!UICONTROL Merge selected lines...]** para iniciar a mesclagem de dois perfis de destinatário. Os perfis a serem mesclados devem ser selecionados antes de escolher esta opção. A mesclagem é configurada e iniciada usando um assistente.
+Selecione **[!UICONTROL Merge selected lines...]** para iniciar a mesclagem de dois perfis de destinatário. Os perfis a serem mesclados devem ser selecionados antes de escolher esta opção. A mesclagem é configurada e iniciada por meio de um assistente.
 
 O assistente exibe os valores a serem recuperados para cada campo preenchido em um ou outro perfil de origem. Se um ou mais campos nos perfis que serão mesclados tiverem valores diferentes, eles serão exibidos na seção **[!UICONTROL List of conflicts]** É possível então selecionar o perfil padrão usando os botões de opção abaixo da lista, como no exemplo a seguir:
 
@@ -95,7 +95,7 @@ O conteúdo de uma lista pode ser exportado. Para configurar e executar a export
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   Para obter mais informações sobre como configurar o assistente de exportação, consulte [esta seção](../../platform/using/executing-export-jobs.md).
+   Para mais informações sobre como configurar o assistente de exportação, consulte [esta seção](../../platform/using/executing-export-jobs.md).
 
 ## Assinar um serviço {#subscribing-to-a-service}
 

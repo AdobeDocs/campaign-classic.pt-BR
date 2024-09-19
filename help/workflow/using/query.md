@@ -5,9 +5,9 @@ description: Saiba mais sobre a atividade do workflow de query
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1631'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
    ![](assets/query_temporary_table.png)
 
-1. Defina os públicos usando o assistente. Os campos a serem inseridos podem variar de acordo com o tipo de target. Você pode visualizar o público-alvo com seus critérios atuais usando a guia **[!UICONTROL Preview]**.
+1. Defina as populações por meio do assistente. Os campos a serem inseridos podem variar de acordo com o tipo de público-alvo. Você pode visualizar o público-alvo com seus critérios atuais usando a guia **[!UICONTROL Preview]**.
 
    Para obter mais informações sobre como criar e usar filtros ou queries, consulte esta [seção](../../platform/using/filtering-options.md).
 

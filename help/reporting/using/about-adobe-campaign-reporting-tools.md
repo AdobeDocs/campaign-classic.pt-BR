@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ O Adobe Campaign fornece várias ferramentas de relatório:
 
    Para obter mais informações, consulte [esta seção](../../reporting/using/about-campaign-built-in-reports.md).
 
-1. **Análise de dados descritiva**: o Adobe Campaign fornece uma ferramenta visual para produzir estatísticas sobre dados no banco de dados. É possível criar relatórios de análise descritiva usando um assistente dedicado e adaptar seu conteúdo e layout dependendo das necessidades.
+1. **Análise de dados descritiva**: o Adobe Campaign fornece uma ferramenta visual para produzir estatísticas sobre dados no banco de dados. É possível criar relatórios de análise descritiva com um assistente dedicado e adaptar seu conteúdo e layout de acordo com as necessidades.
 
    Para obter mais informações, consulte [esta seção](../../reporting/using/about-descriptive-analysis.md).
 

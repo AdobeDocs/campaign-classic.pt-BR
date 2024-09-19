@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2973'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ O Adobe Campaign permite importar dados para o banco de dados de um ou mais arqu
 
 O assistente de importação permite configurar uma importação, definir suas opções (como transformação de dados) e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de importação (simples ou múltipla) e dos direitos do operador.
 
-O assistente de importação é exibido após a criação de um novo trabalho de importação (consulte [Criar trabalhos de importação e exportação](../../platform/using/creating-import-export-jobs.md).
+O assistente de importação é exibido após a criação de um novo trabalho de importação (consulte [Criar trabalhos de importação e exportação](../../platform/using/creating-import-export-jobs.md)).
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ No arquivo de origem, cada linha coincide com um registro. Os dados em registros
 
 ## Etapa 1 - Escolher o template de importação {#step-1---choosing-the-import-template}
 
-Ao iniciar o assistente de importação, primeiro é necessário selecionar um template. Como exemplo, para configurar a importação de destinatários que receberam um boletim informativo, siga as etapas abaixo:
+Ao iniciar o assistente de importação, primeiro é necessário selecionar um modelo. Como exemplo, para configurar a importação de destinatários que receberam um boletim informativo, siga as etapas abaixo:
 
 1. Selecione a pasta **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**.
 1. Clique em **New** e em **Import** para criar o template de importação.
@@ -53,7 +53,7 @@ Ao iniciar o assistente de importação, primeiro é necessário selecionar um t
 1. Insira um nome para essa importação no campo **[!UICONTROL Label]**. Você pode adicionar uma descrição.
 1. Selecione o tipo de importação no campo apropriado. Há dois tipos possíveis de importação: **[!UICONTROL Simple import]** para importar apenas um arquivo e **[!UICONTROL Multiple import]** para importar vários arquivos em uma única execução.
 
-   Para uma importação múltipla, selecione **[!UICONTROL Multiple import]** na lista suspensa **[!UICONTROL Import type]** na primeira tela do assistente de importação.
+   Para uma importação múltipla, selecione **[!UICONTROL Multiple import]** na lista suspensa **[!UICONTROL Import type]**, na primeira tela do assistente de importação.
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
@@ -61,7 +61,7 @@ Ao iniciar o assistente de importação, primeiro é necessário selecionar um t
 
    ![](assets/s_ncs_user_import_wizard01_3.png)
 
-   Toda vez que um arquivo é adicionado, a tela do assistente **[!UICONTROL File to import]** é exibida. Consulte a seção [Etapa 2 - Seleção de arquivo do Source](#step-2---source-file-selection) e siga as etapas no assistente para definir as opções de importação como para uma importação simples.
+   Toda vez que um arquivo é adicionado, a tela do assistente **[!UICONTROL File to import]** é exibida. Consulte a seção [Etapa 2: seleção do arquivo de origem](#step-2---source-file-selection) e siga as etapas do assistente para definir as opções de importação, como feito no caso de uma importação simples.
 
    >[!NOTE]
    >
@@ -277,13 +277,13 @@ Você pode gerar um arquivo contendo esses registros por meio do ícone **[!UICO
 
 ## Etapa 5 - Etapa adicional ao importar destinatários {#step-5---additional-step-when-importing-recipients}
 
-A próxima etapa do assistente de importação permite selecionar ou criar a pasta na qual os dados serão importados, mapear automaticamente destinatários importados com uma lista (nova ou existente) e assinar destinatários a um serviço.
+A próxima etapa do assistente de importação permite selecionar ou criar a pasta para a qual os dados serão importados, mapear automaticamente destinatários importados com uma lista (nova ou já existente) e assinar um serviço para os destinatários.
 
 ![](assets/s_ncs_user_import_wizard05_1.png)
 
 >[!NOTE]
 >
->Esta etapa aparece ao importar os destinatários somente e ao usar a tabela de destinatários padrão do Adobe Campaign (**nms:recipient**).
+>Esta etapa aparece ao importar somente destinatários e ao usar a tabela de destinatários padrão do Adobe Campaign (**nms:recipient**).
 
 * Clique nos links **[!UICONTROL Edit]** para selecionar a pasta, a lista ou o serviço ao qual deseja associar ou assinar os destinatários.
 

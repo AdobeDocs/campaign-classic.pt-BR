@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2373'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 Em um formulário Web, os campos permitem que os usuários insiram informações e selecionem opções. Os formulários web podem oferecer campos de entrada, campos de seleção, conteúdo estático e avançado (captchas, subscrições, etc.).
 
-Quando você usa o assistente para adicionar campos, o tipo de campo é detectado automaticamente com base no campo ou na variável de armazenamento selecionada. É possível editá-lo usando a caixa suspensa **[!UICONTROL Type]** na guia **[!UICONTROL General]**.
+Quando o assistente é utilizado para adicionar campos, o tipo de campo é detectado automaticamente com base no campo ou na variável de armazenamento selecionada. É possível editá-lo usando a caixa suspensa **[!UICONTROL Type]** na guia **[!UICONTROL General]**.
 
 ![](assets/s_ncs_admin_webform_change_type.png)
 
@@ -43,7 +43,7 @@ Especifique o modo de armazenamento de resposta: atualize um campo no banco de d
 >
 >Por padrão, o campo é inserido na parte inferior da árvore atual. Use as setas na barra de ferramentas para movê-lo para cima ou para baixo.
 
-## Assistente de criação de campo {#field-creation-assistant}
+## Assistente de criação de campos {#field-creation-assistant}
 
 Para cada página do formulário, é possível adicionar um campo usando o primeiro botão da barra de ferramentas. Para fazer isso, acesse o menu **[!UICONTROL Add using the assistant]**.
 

@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '694'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Por padrão, o Adobe Campaign fornece um template por aplicação web disponíve
 
 Você pode criar novos templates no nó **[!UICONTROL Resources > Templates > Web Application templates]** da árvore do Adobe Campaign.
 
-O assistente de criação permite selecionar as opções que deseja habilitar, conforme mostrado abaixo.
+O assistente de criação permite selecionar as opções que você deseja habilitar, conforme mostrado abaixo.
 
 ![](assets/webapp_create_template.png)
 

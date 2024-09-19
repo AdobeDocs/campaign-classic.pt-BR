@@ -7,9 +7,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5959'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -490,9 +490,9 @@ Saiba mais sobre [Configurações de instância](../../installation/using/about-
 
 +++
 
-+++**Processos (importação e exportação)**
++++**Trabalhos (importação e exportação)**
 
-Os processos são gerenciados por um sistema assistente que simplifica a importação e a exportação de dados para dentro e para fora do produto. Os processos usam o sistema de modelos para simplicidade e consistência e podem ser definidos para execução de acordo com uma programação.
+Os trabalhos são gerenciados por um sistema assistente que simplifica a importação e exportação de dados para dentro e para fora do produto. Os trabalhos usam o sistema de modelos para simplicidade e consistência e podem ser definidos para execução de acordo com uma programação.
 
 Saiba mais sobre [Importação e exportação de trabalhos](../../platform/using/get-started-data-import-export.md).
 +++

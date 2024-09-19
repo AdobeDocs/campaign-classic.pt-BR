@@ -4,9 +4,9 @@ title: Entregas
 description: Saiba mais sobre os workflows de entrega padrão
 feature: Workflows
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Entregas
   <tr> 
    <td> <span class="uicontrol">Limpeza do banco de dados</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>Este é o workflow de manutenção do banco de dados: faz diferentes cálculos das estatísticas e dos processos e exclui dados obsoletos do banco de dados de acordo com a configuração definida no assistente de implantação. É acionado todos os dias às 4h por padrão.</p> <p>Para obter mais informações, consulte esta <a href="../../production/using/database-cleanup-workflow.md">página</a>.</p> </td> 
+   <td> <p>Este fluxo de trabalho é o de manutenção do banco de dados: ele faz diferentes cálculos das estatísticas e dos processos, e exclui dados obsoletos do banco de dados de acordo com a configuração definida no assistente de implantação. É acionado todos os dias às 4h por padrão.</p> <p>Para obter mais informações, consulte esta <a href="../../production/using/database-cleanup-workflow.md">página</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Limpeza de fluxos de trabalho pausados</span> <br /> </td> 

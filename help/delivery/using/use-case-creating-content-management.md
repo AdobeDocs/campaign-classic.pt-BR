@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1192'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -390,7 +390,7 @@ Para criar conteúdo diretamente nas entregas, siga as etapas abaixo:
 
    ![](assets/s_ncs_content_in_delivery.png)
 
-   Uma guia adicional é adicionada ao assistente do delivery para definir o conteúdo através do formulário de gestão de conteúdo.
+   Outra guia é adicionada ao assistente de entrega para definir o conteúdo por meio do formulário de gerenciamento de conteúdo.
 
 1. Insira as informações da variável do seu boletim informativo.
 

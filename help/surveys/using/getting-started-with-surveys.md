@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '939'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ No exemplo a seguir, estamos usando uma página do tipo **[!UICONTROL Page (v5 c
 
 * **Adicionar campos de entrada**
 
-  Para criar o conteúdo da página, você deve editá-lo: para fazer isso, clique duas vezes no objeto **[!UICONTROL Page]**. Clique no primeiro ícone na barra de ferramentas para abrir o assistente de criação de campos. Para criar um campo de entrada para o nome de usuário a ser armazenado no campo correspondente do perfil do destinatário, selecione **[!UICONTROL Edit a recipient]**.
+  Para criar o conteúdo da página, você deve editá-lo: para fazer isso, clique duas vezes no objeto **[!UICONTROL Page]**. Clique no primeiro ícone da barra de ferramentas para abrir o assistente de criação de campos. Para criar um campo de entrada para o nome de usuário a ser armazenado no campo correspondente do perfil do destinatário, selecione **[!UICONTROL Edit a recipient]**.
 
   ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

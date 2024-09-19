@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2474'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -99,11 +99,11 @@ Após a exportação, é possível importar o pacote e todas as entidades adicio
 
 ### Exportar um conjunto de dados em um pacote {#exporting-a-set-of-objects-in-a-package}
 
-O assistente de exportação de pacotes pode ser acessado pelo menu **[!UICONTROL Tools > Advanced > Export package...]** do console do cliente do Adobe Campaign.
+O assistente de exportação de pacotes pode ser acessado no menu **[!UICONTROL Tools > Advanced > Export package...]** do console do cliente do Adobe Campaign.
 
 ![](assets/ncs_datapackage_typepackage.png)
 
-Para os três tipos de pacotes, o assistente oferece as seguintes etapas:
+Para os três tipos de pacote, o assistente oferece as seguintes etapas:
 
 1. Listar as entidades a serem exportadas por tipo de documento:
 
@@ -305,7 +305,7 @@ Siga as etapas abaixo para exportar um pacote de uma definição de pacote:
 
 O assistente de importação de pacotes pode ser acessado pelo menu principal **[!UICONTROL Tools > Advanced > Import package]** do console do cliente do Adobe Campaign.
 
-É possível importar um pacote de uma exportação executada anteriormente, por exemplo, de outra instância do Adobe Campaign ou um [pacote incorporado](../../installation/using/installing-campaign-standard-packages.md), dependendo dos termos da sua licença.
+É possível importar um pacote de uma exportação executada anteriormente, por exemplo, de outra instância do Adobe Campaign ou um [pacote integrado](../../installation/using/installing-campaign-standard-packages.md), dependendo dos termos da sua licença.
 
 ![](assets/ncs_datapackage_import.png)
 

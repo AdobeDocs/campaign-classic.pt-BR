@@ -6,9 +6,9 @@ feature: Push
 role: User, Developer
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '285'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Como cliente local, você precisa instalar um pacote integrado.
 
 As etapas de instalação são:
 
-1. Acesse o assistente de importação de pacotes de **[!UICONTROL Tools > Advanced > Import package]** no console do cliente Adobe Campaign.
+1. Acesse o assistente de importação de pacotes do **[!UICONTROL Tools > Advanced > Import package]** no console do cliente do Adobe Campaign.
 
    ![](assets/package_ios.png)
 

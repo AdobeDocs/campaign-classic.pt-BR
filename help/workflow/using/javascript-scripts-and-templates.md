@@ -5,9 +5,9 @@ description: Modelos e scripts JavaScript
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1247'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ logInfo("Start date: " + task.creationDate)
 
 A função **[!UICONTROL logInfo(message)]** insere uma mensagem no log.
 
-Clique em **[!UICONTROL OK]** para fechar o assistente de criação e, em seguida, inicie o fluxo de trabalho usando os botões de ação localizados na parte superior direita da lista de fluxos de trabalho. No final da execução, consulte o log. Você verá duas mensagens correspondentes ao script: uma exibe a identificação do workflow, a outra exibe a data em que o script foi ativado.
+Clique em **[!UICONTROL OK]** para fechar o assistente de criação e, em seguida, inicie o fluxo de trabalho, usando os botões de ação localizados na parte superior direita da lista de fluxos de trabalho. No final da execução, consulte o log. Você verá duas mensagens correspondentes ao script: uma exibe a identificação do workflow, a outra exibe a data em que o script foi ativado.
 
 ## Variáveis {#variables}
 

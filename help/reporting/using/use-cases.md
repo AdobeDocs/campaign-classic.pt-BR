@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
 source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1326'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 86%
 
 ## Análise de uma população {#analyzing-a-population}
 
-O exemplo a seguir permite explorar a população direcionada por um conjunto de boletins informativos usando o assistente de análise descritiva.
+O exemplo a seguir permite explorar a população direcionada por um conjunto de boletins informativos, usando-se o assistente de análise descritiva.
 
 As etapas de implementação são detalhadas abaixo, enquanto uma lista completa de opções e descrições está disponível nas outras seções deste capítulo.
 
@@ -60,7 +60,7 @@ Depois que as linhas e colunas tiverem sido definidas, é possível alterar, mov
 
 ### Definição do formato de exibição {#defining-the-display-format}
 
-A próxima etapa do assistente permite selecionar o tipo de gráfico que deseja gerar.
+A próxima etapa do assistente permite selecionar o tipo de gráfico que você deseja gerar.
 
 Nesse caso, escolha o histograma.
 
@@ -118,7 +118,7 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
 **Target**: analisar domínios de email de empresas.
 
-1. Abra o assistente de análise descritiva e selecione somente o modo de exibição **[!UICONTROL Array]**.
+1. Abra o assistente de análise descritiva e selecione somente o modo de visualização **[!UICONTROL Array]**.
 
    ![](assets/s_ncs_user_report_wizard_03a.png)
 
@@ -191,15 +191,15 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
 A análise de uma população em um workflow requer que a população ainda esteja presente na transição. Se o workflow for iniciado, o resultado relacionado à população pode ser removido da transição. Para executar uma análise, é possível:
 
-* Desanexar a transição da atividade de destino e iniciar o workflow para torná-lo ativo. Quando a transição começar a piscar, inicie o assistente da maneira normal.
+* Desanexar a transição da atividade de destino e iniciar o workflow para torná-lo ativo. Quando a transição começar a piscar, inicie o assistente como feito normalmente.
 
   ![](assets/s_ncs_user_report_wizard_018.png)
 
-* Modifique as propriedades do workflow selecionando a opção **[!UICONTROL Keep the result of interim populations between two executions]**. Isso permite iniciar uma análise da transição de sua escolha, mesmo que o workflow tenha terminado.
+* Modifique as propriedades do workflow selecionando a opção **[!UICONTROL Keep the result of interim populations between two executions]**. Isso permite iniciar uma análise da transição de sua escolha, mesmo que o fluxo de trabalho tenha terminado.
 
   ![](assets/s_ncs_user_report_wizard_020.png)
 
-  Se a população foi removida da transição, uma mensagem de erro solicita selecionar a opção relacionada antes de iniciar o assistente de análise descritiva.
+  Se a população tiver sido removida da transição, uma mensagem de erro solicitará que você selecione a opção relacionada antes de iniciar o assistente de análise descritiva.
 
   ![](assets/s_ncs_user_report_wizard_019.png)
 
@@ -216,7 +216,7 @@ Neste exemplo, queremos analisar a taxa de reatividade dos destinatários do bol
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Abra o assistente de análise descritiva via menu **[!UICONTROL Tools > Descriptive analysis]** e altere a tabela de trabalho padrão. Selecione **[!UICONTROL Recipient tracking log]** e adicione um filtro para excluir provas e incluir boletins informativos.
+1. Abra o assistente de análise descritiva por meio do menu **[!UICONTROL Tools > Descriptive analysis]** e altere a tabela de trabalho padrão. Selecione **[!UICONTROL Recipient tracking log]** e adicione um filtro para excluir provas e incluir boletins informativos.
 
    ![](assets/reporting_descriptive_sample_tracking_1.png)
 
@@ -276,7 +276,7 @@ Se a análise aborda uma entrega, é possível analisar a população excluída.
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 
-Isso o levará ao assistente de análise descritiva e a análise abordará os logs de exclusão de recipients.
+Isso levará ao assistente de análise descritiva, e a análise englobará os logs de exclusão de destinatários.
 
 Por exemplo, é possível exibir os domínios de todos os endereços excluídos e classificá-los por data de exclusão.
 

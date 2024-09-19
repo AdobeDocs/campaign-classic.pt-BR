@@ -7,9 +7,9 @@ feature: Monitoring
 role: User
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '169'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Por padrão, a lista de entregas contém os nomes e os status das entregas criad
 
 >[!NOTE]
 >
->Para entregas grandes, convém atualizar esses valores. Para fazer isso, selecione a entrega em questão e clique com o botão direito nela. Selecione **[!UICONTROL Action > Recompute delivery and tracking indicators...]** e depois use o assistente para atualizar essas informações.
+>Para entregas grandes, convém atualizar esses valores. Para fazer isso, selecione a entrega em questão e clique com o botão direito nela. Selecione **[!UICONTROL Action > Recompute delivery and tracking indicators...]** e use o assistente para atualizar essas informações.
 
 **Tópicos relacionados:**
 
