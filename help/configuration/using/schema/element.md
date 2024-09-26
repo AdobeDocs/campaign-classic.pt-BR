@@ -4,9 +4,9 @@ title: Elementos e atributos de esquema - elemento element
 description: elemento
 feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Há quatro tipos de elementos `<element>` no Adobe Campaign:
 * **dbEnum (cadeia de caracteres)**: recebe o nome interno de uma enumeração &quot;fechada&quot;. Os valores de enumeração devem ser definidos em `<srcschema>`.
 * **defOnDuplicate (booleano)**: se este atributo for ativado, quando um registro for duplicado o valor padrão (definido em @default) será automaticamente reaplicado ao registro.
 * **padrão (cadeia de caracteres)**: permite definir o comportamento do elemento (chamada para uma função, valor padrão). Este atributo recebe uma expressão XTK.
-* **desc (string)**: permite inserir uma descrição do elemento. Essa descrição é exibida na barra de status da interface.
+* **desc (string)**: permite inserir uma descrição do elemento. Essa descrição é usada para entender o que é o elemento e para que ele está sendo usado. Você pode exibi-lo no formulário.
 * **displayAsField (booleano)**: se este atributo for ativado, um tipo de &quot;link&quot; `<element>` será exibido como um campo na exibição em árvore dos esquemas (guia &quot;Estrutura&quot;). Dessa forma, é possível exibir um link como um campo local e alterar seu comportamento durante um query. Quando o elemento é encontrado em SELECT de um query, o valor do target do link será usado. Quando o elemento for encontrado no WHERE de um query, a chave subjacente do link será usada.
 * **editar (cadeia de caracteres)**: este atributo especifica o tipo de entrada que será usado no formulário vinculado ao esquema.
 * **enum (cadeia de caracteres)**: recebe o nome da enumeração vinculada ao campo. A enumeração pode ser inserida no mesmo schema ou em um schema remoto.

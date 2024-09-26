@@ -6,18 +6,33 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 100%
+source-wordcount: '903'
+ht-degree: 99%
 
 ---
 
 # Atualizações da versão{#rn-overview}
 
-
-
 O Adobe Campaign Classic lança periodicamente atualizações de produtos que trazem novos recursos, correções de erros e melhorias de desempenho, segurança e usabilidade. Essas atualizações são lançadas como **builds de produto**. Informações detalhadas sobre cada nova build estão disponíveis nas [Notas de versão](latest-release.md).
+
+<!--
+## Product versions
+
+For Campaign, the version naming is the following:
+
+1. Campaign Major version are v7 and v8.
+1. A Minor version is a sub-version of a Major version. For example: v7.3, v7.4.
+1. A Patch version is a post-release fix. For example: v7.3.2, v7.3.3.
+
+
+Aligned with this naming, Campaign has 3 types of upgrades:
+
+1. Major Upgrades - A major upgrade is an upgrade to a new version of Adobe Campaign (ex: v7 to v8)
+1. Minor Upgrades - A minor upgrade brings new features, enhancements and fixes (ex: 7.4.X to 7.5.X)
+1. Patch Upgrades - A patch upgrade includes fixes only (ex: 8.5.1 to 8.5.2)
+-->
 
 ## Status da versão{#rn-statuses}
 
@@ -27,22 +42,8 @@ Cada nova build vem com um status identificado por uma cor nas [Notas de versão
 | Status | Descrição |
 |---|---|
 | [!BADGE Disponibilidade geral]{type=Positive} | Build estável mais recente, validada em produção e recomendada pela Adobe. |
-| [!BADGE Disponibilidade limitada]{type=Neutral} | implantação somente sob demanda. |
-| [!BADGE Candidato a lançamento]{type=Informative} | Build mais recente com novos recursos. |
-| [!BADGE Não está mais disponível]{type=Caution} | Nenhuma implantação. Nenhuma correção de erro. Recomenda-se a atualização para um build mais recente. |
+| [!BADGE Disponibilidade limitada]{type=Informative} | implantação somente sob demanda. |
 | [!BADGE Obsoleto]{type=negative} | Nenhuma implantação. Nenhuma correção de erro. As implementações atuais devem ser atualizadas. |
-
-<!--
-![](assets/do-not-localize/green3.png) **General Availability** (GA) - Latest stable build, validated in production, and recommended by Adobe. 
-
-![](assets/do-not-localize/limited3.png) **Limited Availability** (LA) - On-demand deployment only.
-
-![](assets/do-not-localize/blue3.png) **Release Candidate** (RC) - Latest build with new capabilities.
-
-![](assets/do-not-localize/orange3.png) **No longer available** - No deployment. No bug fix. Update to a newer build is recommended.
-
-![](assets/do-not-localize/red3.png) **Deprecated** - No deployment. No bug fix. Existing implementations must be upgraded.
--->
 
 ## Ciclo da versão{#rn-cycle}
 

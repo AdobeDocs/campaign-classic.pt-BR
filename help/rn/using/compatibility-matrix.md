@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: b23632d0718d62d61e94e636937b93aa39bbe43f
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 100%
+source-wordcount: '843'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ Salvo indicação em contrário, todas as versões secundárias são compatívei
 
 >[!CAUTION]
 >
->Essa matriz é atualizada regularmente com a adição de novos sistemas e ferramentas compatíveis e a remoção de itens obsoletos.
+>Essa matriz é atualizada regularmente, com a adição de novos sistemas e ferramentas compatíveis e a remoção de obsoletos.
 
 ## Sistemas operacionais {#OperatingSystems}
 
@@ -53,7 +53,7 @@ Como cliente local/híbrido, será necessário instalar o Adobe Campaign em um d
 </td>
 </tr>
 <tr>
-<td>RHEL</td>
+<td>Red Hat Enterprise Linux (RHEL)</td>
 <td>
 <p>9.x</p>
 <p>8.x</p>
@@ -83,7 +83,7 @@ Como cliente local/híbrido, será necessário instalar o Adobe Campaign em um d
 
 >[!IMPORTANT]
 >
->Se estiver usando o RHEL, desabilite o [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) ou solicite a equipe de arquitetura de dados que criem regras personalizadas para garantir que um SELinux habilitado não esteja causando problemas nas operações do Campaign.
+>Com o RHEL, você deve desativar o [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) ou fazer com que seus arquitetos gravem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.
 
 ## Servidores da Web {#WebServers}
 
@@ -91,10 +91,12 @@ Como cliente local/híbrido, dependendo do sistema operacional, será necessári
 
 <table>
 <tbody>
+<td><strong>Servidor da Web</strong></td>
+<td><strong>Versão do servidor da Web</strong></td>
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10.0 no Windows Server</p>
+<p>10,0</p>
 </td>
 </tr>
 <tr>

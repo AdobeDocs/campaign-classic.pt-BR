@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1573'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ A sequência em que `<attribute>` elementos são definidos em um `<srcschema>` n
 * **dbEnum (cadeia de caracteres)**: recebe o nome interno de uma enumeração &quot;fechada&quot;. Os valores de enumeração devem ser definidos em `<srcschema>`.
 * **defOnDuplicate (booleano)**: se este atributo for ativado, quando um registro for duplicado o valor padrão (definido em @default) será automaticamente reaplicado ao registro.
 * **default (string)**: permite definir o valor do campo padrão (chamada para uma função, valor padrão). Este atributo recebe uma expressão XTK.
-* **desc (cadeia de caracteres)**: permite inserir uma descrição do atributo. Essa descrição é exibida na barra de status da interface.
+* **desc (cadeia de caracteres)**: permite inserir uma descrição do atributo. Essa descrição é usada para entender o que é o elemento e para que ele está sendo usado. Você pode exibi-lo no formulário.
 * **editar (cadeia de caracteres)**: este atributo especifica o tipo de entrada que será usado no formulário vinculado ao esquema.
 * **enum (cadeia de caracteres)**: recebe o nome da enumeração vinculada ao campo. A enumeração pode ser inserida no mesmo schema ou em um schema remoto.
 * **expr (cadeia de caracteres)**: define uma expressão de pré-cálculo de campo. Este atributo recebe um Xpath ou uma expressão XTK.
@@ -90,7 +90,7 @@ A sequência em que `<attribute>` elementos são definidos em um `<srcschema>` n
    * dedicado: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * compartilhado: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-  Há dois tipos de campos de características: campos simples oà¹, em que um único valor é autorizado na característica, e campos de múltipla escolha oà¹, em que a característica está vinculada a um elemento de coleção que pode conter vários valores.
+  Há dois tipos de campos de características: campos oà<sup>1</sup> simples, onde um único valor é autorizado na característica, e campos oà<sup>1</sup> de múltipla escolha, onde a característica é vinculada a um elemento de coleção que pode conter vários valores.
 
   Quando uma característica é definida em um esquema, esse esquema deve ter uma chave principal baseada em um único campo (chaves compostas não são autorizadas).
 

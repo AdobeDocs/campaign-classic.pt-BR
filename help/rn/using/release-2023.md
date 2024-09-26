@@ -6,7 +6,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 100%
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## Versão 7.3.5 - Build 9368 {#release-7-3-5}
 
-[!BADGE Disponibilidade limitada]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
+[!BADGE Disponibilidade limitada]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
 
 _5 de dezembro de 2023_
 
@@ -50,7 +50,7 @@ A partir desta versão, o rastreamento de links em emails já enviados ainda fun
 
 ## Versão 7.3.4 — Build 9364 {#release-7-3-4}
 
-[!BADGE Disponibilidade limitada]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
+[!BADGE Disponibilidade limitada]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
 
 
 >[!CAUTION]
@@ -120,7 +120,7 @@ Correção de um problema que poderia fazer com que caracteres japoneses fossem 
 
 ## Versão 7.3.3 - Build 9359 {#release-7-3-3}
 
-[!BADGE Disponibilidade limitada]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
+[!BADGE Disponibilidade limitada]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
 
 >[!AVAILABILITY]
 >
@@ -156,7 +156,7 @@ _20 de março de 2023_
 
 ## Versão 7.3.2 - Build 9356 {#release-7-3-2}
 
-[!BADGE Disponibilidade limitada]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
+[!BADGE Disponibilidade limitada]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
 
 
 >[!AVAILABILITY]
