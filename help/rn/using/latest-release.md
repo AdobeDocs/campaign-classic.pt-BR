@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 4be5bf54362240aac1b77298b08b14d3e5542f52
+source-git-commit: 9526d466dc4613410905d9d7265c6471cd1df599
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '387'
 ht-degree: 93%
 
 ---
@@ -49,7 +49,7 @@ A [matriz de compatibilidade do Adobe Campaign](compatibility-matrix.md) foi atu
 
 ### Outras alterações {#release-7-4-1-other}
 
-A partir da v7.4.1, as bibliotecas XML para pacotes RPM Linux não serão mais incluídas no Campaign. Como cliente local ou híbrido, o administrador deve instalar essas bibliotecas.
+A partir da v7.4.1, as bibliotecas XML para pacotes RPM Linux não serão mais incluídas no Campaign. Como cliente local ou híbrido, o administrador deve instalar essas bibliotecas. [Saiba mais](../../installation/using/installing-packages-with-linux.md)
 
 ### Patches {#release-7-4-1-patches}
 
