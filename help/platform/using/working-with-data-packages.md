@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
+workflow-type: tm+mt
 source-wordcount: '2474'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -169,10 +169,10 @@ Conteúdo do pacote:
 <package author="Administrator (admin)" buildNumber="7974" buildVersion="7.1" img=""
 label="" name="" namespace="" vendor="">
  <desc></desc>
- <version buildDate="2013-01-09 10:30:18.954Z"/>
+ <version buildDate="AAAA-MM-DD HH:MM:SS.954Z"/>
  <entities schema="nms:operation">
-  <operation duration="432000" end="2013-01-14" internalName="OP1" label="MyCampaign"
-  modelName="opEmpty" start="2013-01-09">
+  <operation duration="432000" end="AAAA-MM-DD" internalName="OP1" label="MyCampaign"
+  modelName="opEmpty" start="AAAA-MM-DD">
    <controlGroup>
     <where filteringSchema=""/>
    </controlGroup>
@@ -188,7 +188,7 @@ label="" name="" namespace="" vendor="">
    </fcpSeed>
    <owner _operation="none" name="admin" type="0"/>
    <program _operation="none" name="nmsOperations"/>
-   <task end="2013-01-17 10:07:51.000Z" label="MyTask" name="TSK2" start="2013-01-16 10:07:51.000Z"
+   <task end="2023-01-17 10:07:51.000Z" label="MyTask" name="TSK2" start="2023-01-16 10:07:51.000Z"
    status="1">
     <owner _operation="none" name="admin" type="0"/>
     <operation _operation="none" internalName="OP1"/>
@@ -354,7 +354,7 @@ Sempre importe dentro da mesma versão da plataforma. Você deve verificar se im
 >[!IMPORTANT]
 >
 >A Adobe não oferece suporte à importação entre diferentes versões.
-<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
+<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won't be able to help you resolve any issues you encounter.-->
 
 Preste atenção ao schema e à estrutura do banco de dados. A importação do pacote com o schema deve ser seguida pela geração do schema.
 
@@ -365,11 +365,11 @@ Preste atenção ao schema e à estrutura do banco de dados. A importação do p
 Comece definindo diferentes tipos de pacotes. Serão usados apenas quatro tipos:
 
 **Entidades**
-* Todos os elementos específicos &quot;xtk&quot; e &quot;nms&quot; no Adobe Campaign como schemas, formulários, pastas, templates da entrega etc.
+* Todos os elementos específicos &quot;xtk&quot; e &quot;nms&quot; no Adobe Campaign como schemas, formulários, pastas, templates do delivery etc.
 * Você pode considerar uma entidade como um elemento &quot;admin&quot; e &quot;platform&quot;.
 * Não se deve incluir mais de uma entidade ao fazer upload de um pacote em uma instância do Campaign.
 
-<!--Nothing “works” alone. An entity package does not have a specific role or objective.-->
+<!--Nothing "works" alone. An entity package does not have a specific role or objective.-->
 
 Se precisar implantar sua configuração em uma nova instância, você poderá importar todos os pacotes de entidade.
 
@@ -423,7 +423,7 @@ Para ajudar na importação, os pacotes de entidade devem ser ordenados, pois se
 
 #### Pacote 200 {#package-200}
 
-O número do pacote &quot;200&quot; não deve ser utilizado para uma campanha específica: este número será usado para atualizar algo que diz respeito a todas as campanhas.
+O número do pacote &quot;200&quot; não deve ser usado para uma campanha específica: este número será usado para atualizar algo que diz respeito a todas as campanhas.
 
 #### Atualizar pacote {#update-package}
 
