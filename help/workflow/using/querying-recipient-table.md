@@ -4,7 +4,7 @@ title: Consultar a tabela de destinatários
 description: Saiba como consultar a tabela de destinatários
 feature: Query Editor, Workflows
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: d6bed05e083b2e349db331e6016cbb8f91f00eaf
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 100%
@@ -83,6 +83,6 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    ![](assets/query_editor_nveau_13.png)
 
-   A guia **[!UICONTROL Generated QSL queries]** mostra o resultado da consulta no formato SQL.
+   A guia **[!UICONTROL Generated SQL queries]** mostra o resultado da consulta no formato SQL.
 
    ![](assets/query_editor_nveau_14.png)
