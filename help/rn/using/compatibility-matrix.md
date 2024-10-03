@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Salvo indicação em contrário, todas as versões secundárias são compatívei
 
 >[!CAUTION]
 >
->Essa matriz é atualizada regularmente, com a adição de novos sistemas e ferramentas compatíveis e a remoção de obsoletos.
+>Esta matriz é atualizada periodicamente com a adição de novos sistemas e ferramentas compatíveis e a remoção de itens obsoletos.
 
 ## Sistemas operacionais {#OperatingSystems}
 
@@ -83,7 +83,7 @@ Como cliente local/híbrido, será necessário instalar o Adobe Campaign em um d
 
 >[!IMPORTANT]
 >
->Com o RHEL, você deve desativar o [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) ou fazer com que seus arquitetos gravem regras personalizadas de SELinux para verificar se um SELinux habilitado não está causando problemas nas operações do Campaign.
+>Se estiver usando o RHEL, desabilite o [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) ou solicite à equipe de arquitetura que crie regras personalizadas para garantir que um SELinux habilitado não esteja causando problemas nas operações do Campaign.
 
 ## Servidores da Web {#WebServers}
 
@@ -91,8 +91,8 @@ Como cliente local/híbrido, dependendo do sistema operacional, será necessári
 
 <table>
 <tbody>
-<td><strong>Servidor da Web</strong></td>
-<td><strong>Versão do servidor da Web</strong></td>
+<td><strong>Servidor da web</strong></td>
+<td><strong>Versão do servidor da web</strong></td>
 <tr>
 <td>Microsoft IIS</td>
 <td>

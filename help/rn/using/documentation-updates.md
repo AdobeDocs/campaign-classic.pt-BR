@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 3f6bbf2766a61580c4f232d3919fe955d82a7881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3782'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,11 +25,11 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 Os status da versão foram reduzidos e simplificados. [Leia mais](rn-overview.md)
 
-A instalação dos pacotes Linux foi atualizada para a v7.4.1. [Leia mais](../../installation/using/installing-packages-with-linux.md)
+A instalação dos pacotes Linux foi atualizada para a v7.4.1. [Saiba mais](../../installation/using/installing-packages-with-linux.md)
 
 ### Junho de 2024 {#june-2024}
 
-Atualização da seção Notas de versão com aprimoramentos do 7.4.1, atualizações de compatibilidade e patches. [Leia mais](latest-release.md)
+Atualização da seção de notas de versão com as melhorias, atualizações de compatibilidade e correções da versão 7.4.1. [Leia mais](latest-release.md)
 
 Adição de uma nota para especificar como limpar variáveis de instância ao reiniciar fluxos de trabalho. [Leia mais](../../workflow/using/starting-a-workflow.md)
 
