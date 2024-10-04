@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: cc614ed608f1e8229c0ef1ccf35dbac6cb9dddd3
+source-git-commit: e5468f2aa5dc18c2b24c3e80e416e423ad0e13c9
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1233'
 ht-degree: 3%
 
 ---
@@ -132,22 +132,6 @@ Em seguida, você pode instalar os pacotes necessários, conforme detalhado abai
 
 * Distribuição baseada em RPM (RedHat, SuSe)
 
-  Para instalá-los, execute como raiz:
-
-  ```
-  yum install ./nlserver6-v7-XXXX.rpm
-  ```
-
-  XXX é a versão do arquivo.
-
-  O arquivo rpm depende dos pacotes que podem ser encontrados nas distribuições CentOS/Red Hat. Se você não quiser usar algumas dessas dependências, talvez seja necessário usar a opção &quot;nodeps&quot; do rpm:
-
-  ```
-  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
-  ```
-
-  Observe que a maioria das dependências é obrigatória e o `nlserver` não poderá ser iniciado se não estiver instalado. A única exceção é openjdk, você pode instalar outro JDK, se necessário.
-
   Se o pacote `epel-release` não estiver instalado, instale-o. Para fazer isso, insira o seguinte comando, como raiz:
 
   ```
@@ -173,6 +157,14 @@ Em seguida, você pode instalar os pacotes necessários, conforme detalhado abai
   >[!IMPORTANT]
   >
   >Se você ler `Removing:` em vez de `Upgrading:`, cancele o comando. Provavelmente, há alguns erros (listados acima) que explicam a remoção. Nesse caso, corrija esses erros atualizando/instalando as dependências ausentes listadas e tente executar o comando novamente.
+
+  O arquivo rpm depende dos pacotes que podem ser encontrados nas distribuições CentOS/Red Hat. Se você não quiser usar algumas dessas dependências, talvez seja necessário usar a opção &quot;nodeps&quot; do rpm:
+
+  ```
+  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+  ```
+
+  Observe que a maioria das dependências é obrigatória e o `nlserver` não poderá ser iniciado se não estiver instalado. A única exceção é openjdk, você pode instalar outro JDK, se necessário.
 
 * Distribuição baseada em DEB (Debian)
 
