@@ -6,14 +6,14 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
-workflow-type: ht
+source-git-commit: 7b71cac6f4c2fc2e8d30683130adb27eff757b73
+workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 100%
 
 ---
 
-# Atualizações da versão{#rn-overview}
+# Atualizações da versão {#rn-overview}
 
 O Adobe Campaign Classic lança periodicamente atualizações de produtos que trazem novos recursos, correções de erros e melhorias de desempenho, segurança e usabilidade. Essas atualizações são lançadas como **builds de produto**. Informações detalhadas sobre cada nova build estão disponíveis nas [Notas de versão](latest-release.md).
 
@@ -34,10 +34,9 @@ Aligned with this naming, Campaign has 3 types of upgrades:
 1. Patch Upgrades - A patch upgrade includes fixes only (ex: 8.5.1 to 8.5.2)
 -->
 
-## Status da versão{#rn-statuses}
+## Status da versão {#rn-statuses}
 
 Cada nova build vem com um status identificado por uma cor nas [Notas de versão](latest-release.md).
-
 
 | Status | Descrição |
 |---|---|
@@ -45,7 +44,7 @@ Cada nova build vem com um status identificado por uma cor nas [Notas de versão
 | [!BADGE Disponibilidade limitada]{type=Informative} | implantação somente sob demanda. |
 | [!BADGE Obsoleto]{type=negative} | Nenhuma implantação. Nenhuma correção de erro. As implementações atuais devem ser atualizadas. |
 
-## Ciclo da versão{#rn-cycle}
+## Ciclo da versão {#rn-cycle}
 
 O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualizações tem como objetivo disponibilizar a você as mais recentes e melhores atualizações, além de manter seu ambiente protegido e melhorar sua experiência com nosso produto.
 
@@ -53,7 +52,7 @@ O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualiz
 
 Como cliente hospedado, você se beneficia automaticamente da atualização com a última build estável, sem realizar nenhuma ação. Saiba mais na [seção de Atualização anual](#yearly-upgrade). Ao migrar de uma build antiga, a Adobe recomenda atualizar primeiro para essa build.
 
-## Recomendações{#recommendations}
+## Recomendações {#rn-recommendations}
 
 Para garantir uma configuração estável, a Adobe recomenda instalar **o mesmo build** em todos os servidores que estão sendo executados na mesma configuração de cliente.
 
