@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: Casos de uso
-description: Relatórios de casos de uso
+title: Casos de uso de relatórios de análise
+description: Casos de uso de relatórios de análise
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
-workflow-type: ht
-source-wordcount: '1326'
-ht-degree: 100%
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
+workflow-type: tm+mt
+source-wordcount: '1331'
+ht-degree: 99%
 
 ---
 
-# Casos de uso{#use-cases}
-
-
+# Casos de uso de relatórios de análise {#use-cases}
 
 ## Análise de uma população {#analyzing-a-population}
 
