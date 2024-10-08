@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Email, Push
 role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 287d1bf60b39e9e2b389701097995dbea962dec9
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 100%
+source-wordcount: '448'
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 100%
 
 A lista de emoticons exibida na janela pop-up é regida por uma lista discriminada que permite exibir valores em uma lista para restringir as opções que o usuário tem para um determinado campo.
 A ordem da lista de emoticons pode ser personalizada; você também pode adicionar outros emoticons à lista.
-Os emoticons estão disponíveis para email e push. Para obter mais informações, consulte esta [página](defining-the-email-content.md#inserting-emoticons).
+
+Observe que os emoticons só estão disponíveis para email e push. Para obter mais informações, consulte esta [página](defining-the-email-content.md#inserting-emoticons).
 
 ## Adicionar um novo emoticon {#add-new-emoticon}
 
