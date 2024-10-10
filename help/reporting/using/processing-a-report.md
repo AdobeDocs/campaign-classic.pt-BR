@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Gerenciar e configurar seu relatório de análise
-description: Gerenciar e configurar seu relatório de análise
+title: Gerenciar e configurar o seu relatório de análise
+description: Gerenciar e configurar o seu relatório de análise
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '831'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Gerenciar e configurar seu relatório de análise {#processing-a-report}
+# Gerenciar e configurar o seu relatório de análise {#processing-a-report}
 
 ## Salvar um relatório de análise {#saving-an-analysis-report}
 

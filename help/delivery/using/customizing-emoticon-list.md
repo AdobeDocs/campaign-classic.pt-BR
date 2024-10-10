@@ -7,18 +7,18 @@ feature: Email, Push
 role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
 source-git-commit: 287d1bf60b39e9e2b389701097995dbea962dec9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Personalizar a lista de emoticons {#customize-emoticons}
 
 A lista de emoticons exibida na janela pop-up é regida por uma lista discriminada que permite exibir valores em uma lista para restringir as opções que o usuário tem para um determinado campo.
-A ordem da lista de emoticons pode ser personalizada; você também pode adicionar outros emoticons à lista.
+A ordem da lista de emoticons pode ser personalizada. Também é possível adicionar outros emoticons à lista.
 
-Observe que os emoticons só estão disponíveis para email e push. Para obter mais informações, consulte esta [página](defining-the-email-content.md#inserting-emoticons).
+Observe que os emoticons só estão disponíveis para email e push. Para mais informações, consulte esta [página](defining-the-email-content.md#inserting-emoticons).
 
 ## Adicionar um novo emoticon {#add-new-emoticon}
 

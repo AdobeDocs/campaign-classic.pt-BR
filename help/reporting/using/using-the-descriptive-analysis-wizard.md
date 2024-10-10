@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Criar seu primeiro relatório de análise descritiva
-description: Saiba como usar o assistente para criar seu primeiro relatório de análise descritiva
+title: Crie seu primeiro relatório de análise descritiva
+description: Saiba como usar o assistente para criar o seu primeiro relatório de análise descritiva
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1580'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Criar seu primeiro relatório de análise descritiva {#using-the-descriptive-analysis-wizard}
+# Crie seu primeiro relatório de análise descritiva {#using-the-descriptive-analysis-wizard}
 
 Para criar um relatório de análise descritiva, use o assistente dedicado. A configuração depende dos dados a serem analisados e da renderização desejada.
 

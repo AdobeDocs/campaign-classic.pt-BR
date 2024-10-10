@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: O que é análise descritiva
+title: O que é análise descritiva?
 description: Analisar populações com relatórios de análise descritiva
 feature: Reporting, Monitoring
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# O que é análise descritiva {#about-descriptive-analysis}
+# O que é análise descritiva? {#about-descriptive-analysis}
 
 Para gerar estatísticas sobre os dados no banco de dados, crie relatórios de análise descritiva com o assistente específico para isso e adapte seu conteúdo e apresentação de acordo com as suas necessidades.
 

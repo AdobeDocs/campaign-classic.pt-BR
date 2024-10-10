@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2474'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -365,8 +365,8 @@ Preste atenção ao schema e à estrutura do banco de dados. A importação do p
 Comece definindo diferentes tipos de pacotes. Serão usados apenas quatro tipos:
 
 **Entidades**
-* Todos os elementos específicos &quot;xtk&quot; e &quot;nms&quot; no Adobe Campaign como schemas, formulários, pastas, templates do delivery etc.
-* Você pode considerar uma entidade como um elemento &quot;admin&quot; e &quot;platform&quot;.
+* Todos os elementos específicos “xtk” e “nms” no Adobe Campaign, como schemas, formulários, pastas, modelos de entrega etc.
+* Você pode considerar uma entidade como um elemento “admin” e “platform”.
 * Não se deve incluir mais de uma entidade ao fazer upload de um pacote em uma instância do Campaign.
 
 <!--Nothing "works" alone. An entity package does not have a specific role or objective.-->
@@ -390,7 +390,7 @@ Depois de configurado, um recurso pode ser exportado para outro ambiente. Por ex
 
 A primeira solução seria exportar todo o recurso novamente. Mas, para evitar qualquer risco (atualizar elementos indesejados), é mais seguro dispor de um pacote que contenha apenas a correção.
 
-É por isso que recomendamos criar um pacote de &quot;atualização&quot;, contendo apenas um tipo de entidade do recurso.
+É por isso que recomendamos criar um pacote de “update”, contendo apenas um tipo de entidade do recurso.
 
 Uma atualização não pode ser apenas uma correção, mas também um novo elemento do seu pacote de entidade/recurso/campanha. Para evitar a implantação de todo o pacote, é possível exportar um pacote de atualização.
 
@@ -423,11 +423,11 @@ Para ajudar na importação, os pacotes de entidade devem ser ordenados, pois se
 
 #### Pacote 200 {#package-200}
 
-O número do pacote &quot;200&quot; não deve ser usado para uma campanha específica: este número será usado para atualizar algo que diz respeito a todas as campanhas.
+O número do pacote “200” não deve ser utilizado para uma campanha específica: esse número será usado para atualizar algo que diz respeito a todas as campanhas.
 
 #### Atualizar pacote {#update-package}
 
-O último ponto diz respeito à numeração do pacote de atualização. É o número do seu pacote (entidade, recurso ou campanha) com um prefixo &quot;5&quot;. Por exemplo:
+O último ponto diz respeito à numeração do pacote de atualização. É o número do seu pacote (entidade, recurso ou campanha) com o prefixo “5”. Por exemplo:
 * 5001 para atualizar um schema
 * 5200 para atualizar todas as campanhas
 * 5101 para atualizar o recurso 101
@@ -450,7 +450,7 @@ Ao atualizar um pacote, você deve sempre colocar um comentário no campo de des
 
 ![](assets/ncs_datapackage_best-practices-2.png)
 
-Você também deve datar o comentário. Relate sempre seu comentário em um pacote de atualização ao &quot;principal&quot; (pacote sem o prefixo 5).
+Você também deve datar o comentário. Sempre relate o seu comentário em um pacote de atualização ao “principal” (o pacote sem o prefixo 5).
 
 >[!IMPORTANT]
 >

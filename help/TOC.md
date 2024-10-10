@@ -7,9 +7,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2560'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -293,9 +293,9 @@ ht-degree: 99%
       + [Cálculo do indicador](reporting/using/indicator-calculation.md)
       + [Pessoa/pessoas e destinatários](reporting/using/person-people-recipients.md)
    + Analisar populações {#analyzing-populations}
-      + [O que é análise descritiva](reporting/using/about-descriptive-analysis.md)
-      + [Criar seu primeiro relatório de análise descritiva](reporting/using/using-the-descriptive-analysis-wizard.md)
-      + [Gerenciar e configurar seu relatório de análise](reporting/using/processing-a-report.md)
+      + [O que é análise descritiva?](reporting/using/about-descriptive-analysis.md)
+      + [Crie seu primeiro relatório de análise descritiva](reporting/using/using-the-descriptive-analysis-wizard.md)
+      + [Gerenciar e configurar o seu relatório de análise](reporting/using/processing-a-report.md)
       + [Casos de uso de relatórios de análise](reporting/using/use-cases.md)
    + Criar novos relatórios {#creating-new-reports}
       + [Etapas principais para criar um relatório](reporting/using/about-reports-creation-in-campaign.md)
