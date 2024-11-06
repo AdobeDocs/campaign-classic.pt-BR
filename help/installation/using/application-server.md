@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
+source-git-commit: 387bcf39c13cc1f9544433b9441769f4b16b52ca
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '649'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ As versões compatíveis estão detalhadas na [Matriz de compatibilidade](../../
 
 >[!AVAILABILITY]
 >
->* A partir da v7.4.1, o Campaign exige pelo menos o Java JDK 11. Se o servidor do Campaign estiver instalado em um ambiente Windows, você deverá gerar um JRE, pois ele não é mais fornecido por padrão. A variável de ambiente JRE_HOME é necessária para localizar a DLL de tempo de execução do Java (jvm.dll).
+>* A partir da v7.4.1, o Campaign exige pelo menos **Java JDK 11**. Se o servidor do Campaign estiver instalado em um ambiente Windows, o Java Runtime (JRE) não será mais detectado automaticamente. A variável de ambiente JRE_HOME deve ser definida como a pasta onde o Campaign pode localizar o arquivo `bin/server/jvm.dll`. Por exemplo, se o JDK 11 estiver instalado na pasta `C:\Program Files\Java\jdk-11`, o JRE_HOME deverá ser `C:\Program Files\Java\jdk-11`.
 >
 >* A partir da v7.4.1, Tomcat 10.1 é a versão padrão.
 >
