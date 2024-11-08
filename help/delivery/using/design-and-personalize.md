@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '1293'
-ht-degree: 100%
+source-git-commit: d34f75fadb02b4c03acc0c2d7be52df65320ec2d
+workflow-type: tm+mt
+source-wordcount: '1287'
+ht-degree: 98%
 
 ---
 
@@ -123,7 +123,7 @@ O design responsivo garante que o email seja processado de maneira ideal para o 
 
 * Use o modo de visualização e envie provas para testar a renderização no máximo de dispositivos possível
 
-* O módulo do Editor de conteúdo digital (DCE) do Adobe Campaign Classic inclui alguns modelos formatados com design responsivo disponíveis em **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**. Saiba mais [neste artigo](https://theblog.adobe.com/responsive-email-design-101/)
+* O módulo do Editor de Conteúdo Digital (DCE) do Adobe Campaign Classic inclui alguns modelos formatados com design responsivo disponíveis em **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**.
 
 ## Gerenciamento de imagens {#manage-images}
 
