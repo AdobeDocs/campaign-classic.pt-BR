@@ -6,9 +6,9 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '896'
 ht-degree: 100%
 
 ---
@@ -117,10 +117,6 @@ Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui
 
 * [Gerenciamento da privacidade no Campaign](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html)
 
-* [Definir a população do público-alvo](../../delivery/using/define-the-right-audience.md)
-
 * [Criar queries e dados de segmento em workflows](../../workflow/using/targeting-data.md)
 
 * [Selecionar target mapping](../../delivery/using/selecting-a-target-mapping.md)
-
-* [Definir o público - práticas recomendadas](../../delivery/using/define-the-right-audience.md)

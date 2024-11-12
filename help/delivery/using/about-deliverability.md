@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 100%
+source-wordcount: '654'
+ht-degree: 98%
 
 ---
 
@@ -40,9 +40,8 @@ A taxa de capacidade de entrega é o número de mensagens que chegam nas caixas 
 Com o Adobe Campaign, a taxa da capacidade de entrega depende de vários fatores, principalmente:
 
 * Configuração correta das instâncias: entre em contato com o representante da Adobe para obter assistência.
-* Configuração de rede legítima: consulte [esta seção](optimize-delivery.md#network-config) e [Configuração e estratégia do domínio](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#domain-setup-and-strategy).
+* Configuração de rede legítima: consulte [Configuração e estratégia do domínio](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#domain-setup-and-strategy).
 * Reputação do endereço IP: consulte [Estratégia de IP](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#ip-strategy).
-* Qualidade dos endereços direcionados: consulte [Gerenciamento de quarentena](optimize-delivery.md#quarantine-management).
 * Baixas taxas de [reclamação](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html?lang=pt-BR) e [rejeição permanente](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=pt-BR#hard-bounces).
 * Conteúdo da mensagem: consulte [Controlar o conteúdo do email](control-message-content.md).
 * Autenticação de mensagem (SPF, DKIM, DMARC): consulte [esta seção](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
