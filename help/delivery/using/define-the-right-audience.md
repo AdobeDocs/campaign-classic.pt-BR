@@ -8,7 +8,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 100%
@@ -33,7 +33,7 @@ Por padrão, os modelos de entrega no Campaign Classic direcionam os **Recipient
 
 Você pode, por exemplo, entregar deliveries a visitantes cujos perfis tenham sido coletados nas redes sociais, ou a visitantes que estejam inscritos em um serviço de informação.
 
-Esses mapeamentos são apresentados [nesta seção](selecting-a-target-mapping.md).
+Esses mapeamentos são apresentados [nesta seção](steps-defining-the-target-population.md#select-a-target-mapping).
 
 Você também pode criar e usar um target mapping personalizado. Para obter mais informações, consulte [esta seção](../../configuration/using/target-mapping.md).
 

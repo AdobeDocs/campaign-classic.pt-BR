@@ -5,9 +5,9 @@ description: Saiba como definir a população alvo
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1729'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
 1. Selecione o target mapping na lista suspensa **[!UICONTROL Target mapping]**. O target mapping padrão do Adobe Campaign é **[!UICONTROL Recipients]**, com base no schema **nms:recipient**.
 
-   Outros target mappings estão disponíveis e alguns podem ser relacionados à sua configuração específica. Para obter mais informações sobre target mappings, consulte [Selecionar um target mapping](selecting-a-target-mapping.md).
+   Outros target mappings estão disponíveis e alguns podem ser relacionados à sua configuração específica.[Saiba mais](#select-a-target-mapping).
 
 1. Clique no botão **[!UICONTROL Add]** para definir os filtros de restrição.
 
@@ -93,7 +93,7 @@ Para fazer isso:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Por padrão, os destinatários são importados do banco de dados. Você deverá selecionar o **[!UICONTROL Target mapping]**. Para obter mais informações sobre target mappings, consulte [Selecionar um target mapping](selecting-a-target-mapping.md)
+1. Por padrão, os destinatários são importados do banco de dados. Você deverá selecionar o **[!UICONTROL Target mapping]**. [Saiba mais](#select-a-target-mapping)
 
    Você também pode escolher **[!UICONTROL Do not import the recipients into the database]**.
 
@@ -225,6 +225,25 @@ Consulte também:
 * [Selecionar o público alvo da prova](#selecting-the-proof-target)
 * [Sobre seed addresses](about-seed-addresses.md)
 * [Caso de uso: selecionar seed addresses de acordo com critérios](use-case-selecting-seed-addresses-on-criteria.md)
+
+## Selecionar um target mapping {#select-a-target-mapping}
+
+Por padrão, templates de entrega têm como target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient.** O Adobe Campaign oferece outros target mapping para suas entregas, para serem usados conforme suas necessidades.
+
+![](assets/delivery_select_mapping.png)
+
+Esses mappings são os seguintes:
+
+| Nome | Uso | Schema padrão |
+|---|---|---|
+| Recipients | Entregar aos destinatários do banco de dados do Adobe Campaign | nms:recipient |
+| Visitantes | Entregue aos visitantes cujos perfis foram coletados por meio de referências (marketing viral) ou por meio de redes sociais (X, anteriormente conhecido como Twitter, Facebook), por exemplo. | mns:visitor |
+| Subscrições | Entregar aos destinatários que assinam um serviço de informações, como um boletim informativo | nms:subscription |
+| Assinaturas do visitante | Entregar aos visitantes que são inscritos em um serviço de informações | nms:visitorSub |
+| Serviço | Publicar em uma conta do X ou em uma página do Facebook | nms:service |
+| Operadores | Entregar aos operadores do Adobe Campaign | nms:operator |
+| Arquivo externo | Entregar por meio de um arquivo que contenha todas as informações necessárias para a entrega | Nenhum schema vinculado, nenhum target inserido |
+
 
 ## Tutorial em vídeo {#seeds-and-proofs-video}
 

@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
-workflow-type: ht
-source-wordcount: '804'
-ht-degree: 100%
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+workflow-type: tm+mt
+source-wordcount: '793'
+ht-degree: 99%
 
 ---
 
@@ -169,10 +169,6 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Crie uma conta externa por marca com o mesmo nome interno, conforme definido na [instância de execução](#execution-instance) (etapa 1).
 
-1. Criar um modelo de entrega padrão por marca.
-
-   >[!NOTE]
-   >
-   >    Saiba como criar um modelo de entrega [nesta seção](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template).
+1. Crie um [modelo de entrega](../../delivery/using/about-templates.md) por marca.
 
 1. Em **[!UICONTROL Properties]** do modelo de entrega, defina o roteamento para a conta externa da marca.
