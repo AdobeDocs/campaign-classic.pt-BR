@@ -4,16 +4,18 @@ title: Trilha de auditoria
 description: Saiba como monitorar sua instância com a Trilha de auditoria do Campaign
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 6d94ca01f23f7f2409fbdcb4e4c4716d694d527f
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '420'
 ht-degree: 10%
 
 ---
 
 # Trilha de auditoria{#audit-trail}
 
-
+>[!INFO]
+>
+>Saiba mais sobre a funcionalidade Trilha de auditoria na documentação do Adobe Campaign v8.
 
 No Adobe Campaign, o **[!UICONTROL Audit trail]** fornece acesso ao histórico completo de alterações feitas na instância.
 
@@ -24,13 +26,15 @@ O **[!UICONTROL Audit trail]** captura, em tempo real, uma lista abrangente de a
 >O Adobe Campaign não está auditando alterações feitas em direitos de usuário, modelos, personalização ou campanhas.\
 >A trilha de auditoria só pode ser gerenciada por administradores da instância.
 
-A Trilha de auditoria consiste em três componentes:
+![](assets/audit_trail_2.png)
 
-* **Trilha de auditoria do esquema**: verifique as atividades e as últimas modificações feitas em seus esquemas.
++++ Saiba mais sobre entidades disponíveis da Trilha de auditoria
 
-  Para obter mais informações sobre esquemas, consulte esta [página](../../configuration/using/data-schemas.md).
+* **Trilha de auditoria do esquema**: permite explorar as alterações feitas em seus esquemas, bem como identificar quem fez essas modificações e quando elas ocorreram.
 
-* **Trilha de auditoria do fluxo de trabalho**: verifique as atividades e as últimas modificações feitas nos fluxos de trabalho e, além disso, o estado dos fluxos de trabalho, como:
+  Para obter informações detalhadas sobre esquemas, consulte esta [página](../../configuration/using/data-schemas.md).
+
+* A **trilha de auditoria do fluxo de trabalho** rastreia todas as ações relacionadas aos seus fluxos de trabalho, incluindo:
 
    * Start
    * Pause
@@ -45,63 +49,32 @@ A Trilha de auditoria consiste em três componentes:
 
   Para obter mais informações sobre como monitorar fluxos de trabalho, consulte a [seção dedicada](../../workflow/using/monitoring-workflow-execution.md).
 
-* **Trilha de auditoria da opção**: verifique as atividades e as últimas modificações feitas em suas opções.
+* **A opção trilha de auditoria** permite que você verifique as atividades e as últimas modificações feitas em suas opções.
 
   Para obter mais informações sobre opções, consulte esta [página](../../installation/using/configuring-campaign-options.md).
 
-## Acessando a Trilha de auditoria {#accessing-audit-trail}
+* **Trilha de auditoria de entrega** permite que você verifique as atividades e as últimas modificações feitas em suas entregas.
 
-Para acessar o **[!UICONTROL Audit trail]** da sua instância:
+  Para obter mais informações sobre entregas, consulte esta [página](../../delivery/using/communication-channels.md).
 
-1. Acesse o menu **[!UICONTROL Explorer]** da sua instância.
-1. No menu **[!UICONTROL Administration]**, selecione **[!UICONTROL Audit]** .
+* **Conta Externa** permite que você verifique modificações feitas em contas externas, usadas por processos técnicos, como fluxos de trabalho técnicos ou fluxos de trabalho de campanha.
 
-   ![](assets/audit_trail_1.png)
+  Para obter mais informações sobre a conta externa, consulte esta [página](../../installation/using/external-accounts.md).
 
-1. A janela **[!UICONTROL Audit trail]** é aberta com a lista de suas entidades. O Adobe Campaign auditará a criação, edição e exclusão de ações para workflows, opções e esquemas.
+* **Mapeamento de Entrega** permite que você monitore atividades e modificações recentes feitas em seus Mapeamentos de Entrega.
 
-   Selecione uma das entidades para saber mais sobre as últimas modificações.
+  Para obter mais informações sobre mapeamento de entrega, consulte esta [página](../../configuration/using/target-mapping.md).
 
-   ![](assets/audit_trail_2.png)
+* O **Aplicativo Web** permite verificar as modificações feitas em formulários Web no Campaign V8 usados para criar páginas com campos de entrada e seleção e que podem incluir dados do banco de dados.
 
-1. A janela **[!UICONTROL Audit entity]** fornece informações mais detalhadas sobre a entidade escolhida, como:
+  Para obter mais informações sobre o aplicativo Web, consulte esta [página](../../web/using/about-web-applications.md).
 
-   * **[!UICONTROL Type]**: Fluxo de Trabalho, Opções ou Esquemas.
-   * **[!UICONTROL Entity]** : nome interno de suas atividades.
-   * **[!UICONTROL Modified by]** : Nome de usuário da última pessoa que modificou esta entidade pela última vez.
-   * **[!UICONTROL Action]**: Última ação executada nesta entidade: Criada, Editada ou Excluída.
-   * **[!UICONTROL Modification date]** : Data da última ação executada nesta entidade.
+* A **Oferta** permite que você verifique as atividades e as últimas modificações feitas em suas ofertas.
 
-   O bloco de código fornece mais informações sobre o que foi alterado exatamente em sua entidade.
+  Para obter mais informações sobre a oferta, consulte esta [página](../../interaction/using/interaction-and-offer-management.md).
 
-   ![](assets/audit_trail_3.png)
+* **Operador** permite monitorar atividades e modificações recentes feitas em seus Operadores.
 
->[!NOTE]
->
->Por padrão, o período de retenção está definido como 180 dias para **[!UICONTROL Audit logs]**. Para saber mais sobre como alterar o período de retenção, consulte esta [página](../../production/using/database-cleanup-workflow.md#deployment-assistant).
+  Para obter mais informações sobre operadores, consulte esta [página](../../platform/using/access-management-operators.md).
 
-## Ativar/desativar trilha de auditoria {#enable-disable-audit-trail}
-
-A trilha de auditoria pode ser facilmente ativada ou desativada para uma atividade específica se, por exemplo, você quiser salvar algum espaço no banco de dados.
-
-Para fazer isso:
-
-1. Acesse o menu **[!UICONTROL Explorer]** da sua instância.
-1. No menu **[!UICONTROL Administration]**, selecione **[!UICONTROL Platform]** depois **[!UICONTROL Options]**.
-
-   ![](assets/audit_trail_4.png)
-
-1. Selecione uma das seguintes opções dependendo da entidade que você deseja ativar/desativar:
-
-   * Para Fluxo de Trabalho: **[!UICONTROL XtkAudit_Workflows]**
-   * Para esquemas: **[!UICONTROL XtkAudit_DataSchema]**
-   * Para Opções: **[!UICONTROL XtkAudit_Option]**
-   * Para cada entidade: **[!UICONTROL XtkAudit_Enable_All]**
-
-   ![](assets/audit_trail_5.png)
-
-1. Altere o **[!UICONTROL Value]** para 1 se quiser habilitar a entidade ou para 0 se quiser desabilitá-la.
-
-   ![](assets/audit_trail_6.png)
-
-1. Clique em **[!UICONTROL Save]**.
++++
