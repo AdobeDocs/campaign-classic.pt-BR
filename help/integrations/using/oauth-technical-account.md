@@ -5,10 +5,10 @@ description: Saiba como criar sua conta da API Adobe
 role: User, Admin
 level: Beginner
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 2ce7a91aaddb0df412fc0002ff1463d48b2b7c3c
+source-git-commit: 5352426fc68cbcb6519127e5c89c1e9f8619ca6b
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 16%
+source-wordcount: '334'
+ht-degree: 15%
 
 ---
 
@@ -79,3 +79,9 @@ Como cliente no local ou híbrido, siga estas etapas:
    ```
    nlserver config -instance:<instance_name> -setimsoauth:ims-org-id/client-id/technical-account-id/client-secret
    ```
+
+   >[!NOTE]
+   >
+   > Para versões anteriores à 7.4.1, use `setimsauth` ou `setimsjwtauth` em vez de `setimsoauth`.
+
+
