@@ -5,10 +5,10 @@ description: Saiba como solucionar problemas do canal de SMS
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: f660dcbb111e73f12737d96ebf9be2aeccbca8ee
 workflow-type: tm+mt
-source-wordcount: '2755'
-ht-degree: 100%
+source-wordcount: '3044'
+ht-degree: 90%
 
 ---
 
@@ -310,3 +310,30 @@ O resultado deve ser o seguinte:
 ```
 
 Quatro conexões abertas para o processo SMS e duas por filho mta com cinco filhos.
+
+## Diferença entre status de delivery de SMS
+
+Para esclarecer as diferenças entre os status **Enviado**, **Enviado ao Provedor** e **Recebido em Dispositivo Móvel**, consulte as definições detalhadas abaixo:
+
+* **Recebido no Celular**:
+A mensagem foi entregue com êxito ao dispositivo do usuário, com confirmação fornecida pela entrega Terminada por dispositivo móvel (MT) e um Relatório de status (SR).
+
+* **Enviado**:
+A mensagem foi processada com êxito por meio da etapa Mobile Terminated (MT), mas um Relatório de Status (SR) confirmando a entrega para o dispositivo móvel ainda não foi recebido.
+
+* **Enviado ao Provedor**:
+A mensagem foi enviada ao provedor usando o `SUBMIT_SM command`, mas nenhuma confirmação `SUBMIT_SM_RESP` foi recebida do provedor.
+
+As mensagens podem permanecer no status **Enviadas** porque a transição para **Recebidas** depende de um Relatório de Status (SR) do dispositivo do usuário. Se o usuário tiver uma recepção de célula ruim ou outros problemas de conectividade, talvez ele não receba a mensagem imediatamente. Nesses casos, é responsabilidade do provedor repetir o delivery ou explicar por que nenhum SR foi gerado. Se o provedor identificar discrepâncias, deverá garantir que o comportamento do Campaign seja consistente com as expectativas.
+
+Estes são os status padrão do delivery de SMS:
+
+* **Pendente**: a mensagem ainda não foi enviada para o agregador.
+
+* **Levado em Conta pelo Provedor**: a mensagem foi enviada ao agregador e o agregador confirmou a confirmação.
+
+* **Enviado**: o agregador confirmou que a mensagem foi enviada com êxito para a rede móvel do usuário sem nenhum erro imediato.
+
+* **Recebido no Celular**: o dispositivo móvel do usuário confirmou a confirmação e isso foi verificado pelo agregador.
+
+* **Falha**: a mensagem foi enviada ao agregador, que tentou entregar ao dispositivo móvel do usuário por um período definido (por exemplo, várias horas). A entrega falhou devido a problemas de rede, indisponibilidade do dispositivo do usuário ou outros motivos.
