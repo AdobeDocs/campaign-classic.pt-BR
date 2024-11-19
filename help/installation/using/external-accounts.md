@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 8180f77c2824f9b54ae3c924b1cc45532675cf85
 workflow-type: tm+mt
-source-wordcount: '1757'
-ht-degree: 58%
+source-wordcount: '1784'
+ht-degree: 57%
 
 ---
 
@@ -100,6 +100,8 @@ Para configurar um POP3 externo usando o **Microsoft OAuth 2.0**, marque a opç�
 * **[!UICONTROL Azure Redirect URL]**
 
   A URL de redirecionamento pode ser encontrada no menu **Autenticação** do seu aplicativo no portal do Azure. Ele deve terminar com a seguinte sintaxe `nl/jsp/oauth.jsp`, ex.: `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+
+O acesso à Internet é necessário para a instalação e para usar o botão **[!UICONTROL Test Connection]** no console do cliente. Após a configuração, o processo do InMail pode se comunicar com os servidores da Microsoft sem Internet.
 
 Depois de inserir suas credenciais diferentes, você pode clicar em **[!UICONTROL Setup the connection]** para concluir a configuração da conta externa.
 
