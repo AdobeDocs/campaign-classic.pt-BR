@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: "Caso de uso: exibição do relatório sobre as respostas de uma pesquisa on-line"
-description: "Caso de uso: exibição do relatório sobre as respostas de uma pesquisa on-line"
+title: 'Caso de uso: exibição do relatório sobre as respostas de uma pesquisa on-line'
+description: 'Caso de uso: exibição do relatório sobre as respostas de uma pesquisa on-line'
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505

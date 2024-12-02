@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: "Casos de uso: criar visões gerais"
-description: "Casos de uso: criar visões gerais"
+title: 'Casos de uso: criar visões gerais'
+description: 'Casos de uso: criar visões gerais'
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88

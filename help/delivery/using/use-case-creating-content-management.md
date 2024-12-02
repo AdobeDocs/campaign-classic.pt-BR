@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: "Caso de uso: criar gerenciamento de conteúdo"
-description: "Caso de uso: criar gerenciamento de conteúdo"
+title: 'Caso de uso: criar gerenciamento de conteúdo'
+description: 'Caso de uso: criar gerenciamento de conteúdo'
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 100%
 
