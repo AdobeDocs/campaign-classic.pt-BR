@@ -4,10 +4,10 @@ title: Modelos e scripts JavaScript
 description: Modelos e scripts JavaScript
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: d4a2138e03a33092403d5ca00a41a3d7f9aea33e
+workflow-type: tm+mt
 source-wordcount: '1247'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -159,7 +159,7 @@ Este exemplo mostra que a atividade após o **JavaScript Code** acessa as variá
 
 Depois de especificar uma variável de instância em uma atividade, é possível reutilizá-la em uma query de workflow.
 
-Assim, para chamar uma variável **instance.vars.xxx = &quot;yyy&quot;** em um filtro, digite **$(instance/vars/xxx)**.
+Assim, para chamar uma variável **instance.vars.xxx = &quot;yyy&quot;** em um filtro, digite **$(instance/vars/@xxx)**.
 
 Por exemplo:
 
