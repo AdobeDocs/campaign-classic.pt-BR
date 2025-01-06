@@ -4,7 +4,7 @@ title: Recomendações de dimensionamento de hardware para o Campaign Classic v7
 description: Recomendações de dimensionamento de hardware para o Campaign Classic v7
 feature: Technote
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '2569'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Este documento também presume os seguintes tipos de uso para todos os três cen
 
 O Campaign é um aplicativo centrado em banco de dados, e o desempenho do servidor de banco de dados é essencial. A execução de workflows, segmentação, uploads de dados de rastreamento, Interações de entrada, análises e outras atividades geram atividades de banco de dados. Em geral, o tamanho e a frequência dessas operações determinam o tamanho dos servidores de banco de dados.
 
-Os servidores de aplicativos na instância de marketing exigem CPU e memória suficientes para executar workflows e responder a chamadas de API SOAP, incluindo solicitações de usuários do Console do Campaign. Os requisitos de CPU podem ser significativos para workflows que usam interações de saída com regras de oferta complexas, workflows que executam JavaScript personalizado e aplicativos da Web com níveis de tráfego altos.
+Os servidores de aplicativos na instância de marketing exigem CPU e memória suficientes para executar workflows e responder a chamadas de API SOAP, incluindo solicitações de usuários do Console do Campaign. Os requisitos do CPU podem ser significativos para workflows que usam interações de saída com regras de oferta complexas, workflows que executam JavaScript personalizado e aplicativos da web com níveis de tráfego elevados.
 
 Os aplicativos Web do Campaign também podem ser implantados nos servidores de aplicativos da instância de marketing ou em sistemas de servidor Web separados. Como as cargas de trabalho dos aplicativos Web entram em conflito com fluxos de trabalho críticos e usuários do Console do Campaign, os aplicativos Web e as interações de entrada podem ser implantados em servidores separados, para garantir que a funcionalidade principal do Campaign seja executada de forma confiável com bom desempenho.
 
@@ -75,7 +75,7 @@ O Adobe fornece a lista exclusiva de caminhos de URL que podem ser retransmitido
 
 ### Arquitetura
 
-A arquitetura geral é quase idêntica, independentemente dos volumes. Os requisitos de segurança e alta disponibilidade exigem no mínimo quatro servidores; dois servidores se nenhum WebApps for usado. A diferença na configuração varia principalmente na configuração do hardware, como núcleo da CPU e memória.
+A arquitetura geral é quase idêntica, independentemente dos volumes. Os requisitos de segurança e alta disponibilidade exigem no mínimo quatro servidores; dois servidores se nenhum WebApps for usado. A diferença na configuração varia principalmente na configuração do hardware, como o núcleo e a memória do CPU.
 
 ## Cenário 1: implantação de tamanho moderado{#scenario-1}
 
@@ -91,7 +91,7 @@ Volume estimado:
 | SMS móvel | 100 mil/mês |
 | Volume máximo diário de email | 500 |
 
-Para esses volumes, um par de sistemas de servidores de aplicativos da Adobe Campaign fornece toda a funcionalidade para os usuários do cliente Adobe Campaign e para a execução do fluxo de trabalho. Para 5 milhões de destinatários ativos e esse volume de e-mail, as cargas de trabalho do servidor de aplicativos não consomem muita CPU nem E/S; a maior parte da carga está no banco de dados.
+Para esses volumes, um par de sistemas de servidores de aplicativos da Adobe Campaign fornece toda a funcionalidade para os usuários do cliente Adobe Campaign e para a execução do fluxo de trabalho. Para 5 milhões de destinatários ativos e esse volume de e-mail, as cargas de trabalho do servidor de aplicativos não consomem muita CPU ou I/O; a maior parte da carga está no banco de dados.
 
 Os servidores Web da Adobe Campaign são exibidos na zona segura.
 
@@ -113,7 +113,7 @@ O consumo de espaço em disco dos servidores de aplicativos depende do período 
 
 As recomendações de hardware para o servidor de banco de dados são as seguintes:
 
-**CPU de 4 núcleos de 3 Ghz+, 16 GB de RAM, RAID 1 ou 10, SSD de 128 GB no mínimo**
+**CPU de 4 núcleos com mais de 3 Ghz, 16 GB de RAM, RAID 1 ou 10, SSD de 128 GB no mínimo**
 
 A estimativa de memória assume um cache completo de aproximadamente 500.000 recipients para um grande lançamento de campanha, além de espaço em buffer RDBMS para execução de workflows, importação de dados de rastreamento e outras atividades simultâneas.
 
@@ -156,7 +156,7 @@ Consulte [Cenário 1: Implantação de Tamanho Moderado](#scenario-1) para obter
 
 As recomendações de hardware para o servidor de banco de dados são as seguintes:
 
-**CPU de 8 núcleos de 3 Ghz, 64 GB de RAM, RAID 1 ou 10, 2 SSD de 320 GB ou RAID 10, SSD de 640 GB no mínimo**
+**CPU de 8 núcleos e 3 Ghz+, 64 GB de RAM, RAID 1 ou 10, 2 SSD de 320 GB ou RAID 10, SSD de 640 GB no mínimo**
 
 A estimativa de memória assume um cache completo de aproximadamente 5.000.000 recipients para um grande lançamento de campanha, além de espaço em buffer RDBMS para execução de workflows, importação de dados de rastreamento e outras atividades simultâneas.
 
@@ -204,7 +204,7 @@ Consulte [Cenário 1: Implantação de Tamanho Moderado](#scenario-1) para obter
 
 As recomendações de hardware para o servidor de banco de dados são as seguintes:
 
-**CPU de 8 núcleos de 3 Ghz+, 96 GB de RAM, RAID 1 ou 10, SSD mínima de 1,5 TB**
+**CPU de 8 núcleos e 3 Ghz+, 96 GB de RAM, RAID 1 ou 10, SSD mínima de 1,5 TB**
 
 A estimativa de memória assume um cache completo de aproximadamente 12.500.000 recipients para um grande lançamento de campanha, além de espaço em buffer RDBMS para execução de workflows, importação de dados de rastreamento e outras atividades simultâneas.
 
@@ -215,27 +215,27 @@ Estima-se que o espaço em disco necessário no banco de dados para armazenar to
 As suposições feitas para esses cenários têm um impacto significativo nas recomendações de hardware e na arquitetura de implantação. Esta seção discute diretrizes sobre diferentes suposições. Entre em contato com a equipe de consultoria da Adobe Campaign para obter recomendações específicas que atendam aos seus requisitos.
 
 * **Número de Destinatários**
-Os destinatários ativos exigem espaço de armazenamento e espaço de buffer de banco de dados, de modo que mais destinatários geralmente exigem mais memória e capacidade de CPU no servidor de banco de dados. Os aumentos de armazenamento são relativamente pequenos para os próprios recipients, mas podem ser significativos para os dados de rastreamento de eventos mantidos para campanhas de email.
+Os destinatários ativos exigem espaço de armazenamento e espaço de buffer do banco de dados, portanto, mais destinatários geralmente exigem mais memória e capacidade do CPU no servidor de banco de dados. Os aumentos de armazenamento são relativamente pequenos para os próprios recipients, mas podem ser significativos para os dados de rastreamento de eventos mantidos para campanhas de email.
 
 * **Tamanho da campanha de email**
-A frequência de inicializações de campanha afeta os requisitos de CPU do servidor de banco de dados. Combinadas com mala direta, interações de entrada e outros fluxos de trabalho, as operações de segmentação para campanhas de email colocam uma carga significativa no servidor de banco de dados.
+A frequência de inicializações de campanha afeta os requisitos do CPU do servidor de banco de dados. Combinadas com mala direta, interações de entrada e outros fluxos de trabalho, as operações de segmentação para campanhas de email colocam uma carga significativa no servidor de banco de dados.
 
 * **Frequência de Correspondência Direta**
-A frequência das correspondências diretas pode afetar os requisitos de CPU do servidor de banco de dados. Combinadas com lançamentos de campanhas e outros workflows, as operações de segmentação para mala direta colocam uma carga significativa no servidor de banco de dados.
+A frequência das correspondências diretas pode afetar os requisitos do CPU do servidor de banco de dados. Combinadas com lançamentos de campanhas e outros workflows, as operações de segmentação para mala direta colocam uma carga significativa no servidor de banco de dados.
 
 * **Volume da Mensagem SMS**
 Como o tamanho da campanha de email, o volume de mensagens SMS não coloca grandes cargas nos servidores do Campaign localizados no local; a carga está principalmente nos servidores de mensagens da nuvem do Adobe. A segmentação para campanhas de SMS, como email e correspondência direta, pode colocar uma carga significativa no banco de dados de marketing. Portanto, a frequência de inicializações de campanha de SMS e a complexidade da segmentação são mais relevantes do que o volume de mensagens SMS.
 
 * **Complexidade do esquema do banco de dados**
-A quantidade de dados para cada destinatário ativo requer espaço de armazenamento e espaço de buffer de banco de dados, portanto, mais destinatários geralmente exigem mais memória e CPU no servidor de banco de dados. Esquemas complexos também exigem que mais tabelas sejam unidas para segmentação, de modo que as operações de segmentação podem ser executadas muito mais lentamente e exigem mais CPU e memória do banco de dados quando os dados são distribuídos em várias tabelas.
+A quantidade de dados para cada destinatário ativo requer espaço de armazenamento e espaço de buffer de banco de dados, portanto, mais destinatários geralmente exigem mais memória e CPU no servidor de banco de dados. Esquemas complexos também exigem que mais tabelas sejam unidas para segmentação, de modo que as operações de segmentação podem ser executadas muito mais lentamente e exigem mais CPU de banco de dados e memória quando os dados são distribuídos em várias tabelas.
 
   A memória do servidor de banco de dados é estimada garantindo que o pool de buffer do banco de dados possa ser grande o suficiente para conter todos os dados do destinatário, além de tabelas temporárias para a execução de workflows, além de uma margem para outras operações do banco de dados.
 
 * **Uso da Interação de Saída**
-As regras de interação no modo de lote são avaliadas em workflows que transmitem toda a complexidade do cálculo para o banco de dados. O principal fator do esforço no banco de dados é o número total de ofertas qualificadas computadas durante uma chamada do mecanismo (tamanho alvo X número médio de ofertas por recipient antes de manter as N melhores ofertas). A velocidade da CPU do servidor de banco de dados é o primeiro fator de desempenho.
+As regras de interação no modo de lote são avaliadas em workflows que transmitem toda a complexidade do cálculo para o banco de dados. O principal fator do esforço no banco de dados é o número total de ofertas qualificadas computadas durante uma chamada do mecanismo (tamanho alvo X número médio de ofertas por recipient antes de manter as N melhores ofertas). A velocidade do CPU do servidor de banco de dados é o primeiro fator de desempenho.
 
 * **Interações de entrada ou uso da API SOAP**
-As regras e ofertas de interação de entrada são avaliadas no banco de dados de marketing, o que requer recursos significativos do servidor de banco de dados, especialmente CPU. O uso intenso de Interações de entrada ou APIs de SOAP requer servidores da Web separados para separar a carga de trabalho da execução de workflows do Campaign.
+As regras e ofertas de interação de entrada são avaliadas no banco de dados de marketing, o que requer recursos significativos do servidor de banco de dados, especialmente o CPU. O uso intenso de Interações de entrada ou APIs de SOAP requer servidores da Web separados para separar a carga de trabalho da execução de workflows do Campaign.
 
 * **Período de Retenção de Dados de Rastreamento**
 Aumentar a retenção de dados de rastreamento para além de 90 dias requer mais armazenamento no banco de dados e pode retardar o sistema, pois a inserção de novos dados de rastreamento vai para tabelas grandes. Os dados de rastreamento não são úteis para segmentação de campanha após 90 dias, portanto, é recomendado um período de retenção mais curto.

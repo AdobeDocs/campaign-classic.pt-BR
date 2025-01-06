@@ -5,10 +5,10 @@ description: Saiba como instalar pacotes integrados do Campaign
 feature: Installation, Application Settings
 badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1264'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -32,7 +32,7 @@ Os pacotes integrados contêm um conjunto de recursos que podem ser instalados d
 
 Para instalar um pacote incorporado:
 
-1. Acesse o assistente de importação de pacotes de **[!UICONTROL Tools > Advanced > Import package]** no console do cliente Adobe Campaign.
+1. Acesse o assistente de importação de pacotes do **[!UICONTROL Tools > Advanced > Import package]** no console do cliente do Adobe Campaign.
 1. Selecione **[!UICONTROL Install a standard package]**.
 1. Na lista de pacotes, marque os pacotes que deseja instalar.
    >[!NOTE]
@@ -240,7 +240,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
 
 ### Pacote do Centro de mensagens {#message-center-package}
 
-Você deve instalar canais de entrega (Email, Canal móvel, canal de aplicativo móvel, LINE etc.) antes de instalar as mensagens transacionais (pacote do centro de mensagens). Se você tiver iniciado um projeto do Centro de mensagens somente de email e precisar adicionar um novo canal posteriormente, siga estas etapas:
+Você deve instalar os canais de entrega (Email, Canal móvel, Canal de aplicativo móvel, LINE etc.) antes de instalar Mensagens transacionais (Pacote do centro de mensagens). Se você tiver iniciado um projeto do Centro de mensagens somente de email e precisar adicionar um novo canal posteriormente, siga estas etapas:
 
 1. Instale o novo canal, por exemplo, o **Canal móvel**, usando o assistente de importação de pacote ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importe o arquivo ( **[!UICONTROL Tools > Advanced > Import package > File]**) e selecione:
