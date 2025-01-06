@@ -5,7 +5,7 @@ description: Saiba como trabalhar com esquemas e estender o modelo de dados conc
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 44c40bbd8bff16cbe220d3af3a7bb2847762f58b
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
@@ -77,9 +77,9 @@ A chave de identificação de um esquema é uma cadeia de caracteres criada com 
 
 >[!IMPORTANT]
 >
->O nome do namespace deve ser conciso e conter apenas caracteres autorizados de acordo com as regras de nomenclatura XML.
+>* O nome do namespace deve ser conciso e conter apenas caracteres autorizados de acordo com as regras de nomenclatura XML.
 >
->Os identificadores não devem começar com caracteres numéricos.
+>* Os identificadores não devem começar com caracteres numéricos.
 >
->Os namespaces a seguir são reservados para descrições das entidades de sistema necessárias para a operação do aplicativo Adobe Campaign e não devem ser usados: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
-
+>* Os namespaces a seguir são reservados para descrições das entidades de sistema necessárias para a operação do aplicativo Adobe Campaign e não devem ser usados: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
+>
