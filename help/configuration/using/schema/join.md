@@ -4,7 +4,7 @@ title: Elementos e atributos de esquema - elemento join
 description: elemento join
 feature: Schema Extension
 exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 2%
@@ -13,7 +13,6 @@ ht-degree: 2%
 
 # elemento join {#join--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Modelo de conteúdo {#content-model-7}
 
@@ -29,7 +28,7 @@ join:==EMPTY
 
 `<element>`
 
-## Filhos {#children-7}
+## Derivados {#children-7}
 
 nenhuma
 

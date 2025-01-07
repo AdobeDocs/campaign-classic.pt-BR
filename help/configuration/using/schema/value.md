@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 2%
@@ -16,7 +16,6 @@ ht-degree: 2%
 
 # elemento value {#value--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Modelo de conteúdo {#content-model-16}
 
@@ -36,7 +35,7 @@ value:==help
 
 `<enumeration>`
 
-## Filhos {#children-16}
+## Derivados {#children-16}
 
 `<help>`
 

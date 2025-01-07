@@ -4,7 +4,7 @@ title: Elementos e atributos de esquema - elemento element
 description: elemento
 feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '2029'
 ht-degree: 0%
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 # elemento {#element--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Modelo de conteúdo {#content-model-4}
 
@@ -21,7 +20,7 @@ element:==(attribute | string de cálculo | dbindex | padrão | element | ajuda 
 
 ## Atributos {#attributes-4}
 
-_operation (string), advanced (booleano), aggregate (string), applicableIf (string), autopk (booleano), belongingTo (string), convDate (string), dataPolicy (string), dataSource (string), dbEnum (string), defOnDuplicate (booleano), default (string), desc (string), displayAsField (booleano), doesNotSupportDiff (booleano), edit (string), emptyKeyValue (string), enum string), enumImage (string), expandSchemaTarget (string), expr (string), externalJoin (booleano), feature (string), featureDate (booleano), filterPath (string), folderLink (string), folderModel (string), folderProcess (string), fullLoad (booleano), hierarchical (booleano), hierarchicalPath (string), img (string), inout (string), integridade (string), rótulo (string), labelSingular (string), comprimento (string) , localizable (booleano), name (MNTOKEN), noDbIndex (booleano), noKey (booleano), ordered (booleano), overflowtable (booleano), pkSequence (cadeia de caracteres), pkgStatus (cadeia de caracteres), ref (cadeia de caracteres), required (booleano), revAdvanced (booleano), revCardinality (cadeia de caracteres), revDesc (cadeia de caracteres), revExternalJoin (booleano), revIntegrity (cadeia de caracteres), rev vLabel (cadeia de caracteres), revLink (cadeia de caracteres), revTarget (cadeia de caracteres), revVisibleIf (cadeia de caracteres), sql (booleano), sqlname (cadeia de caracteres), sqltable (cadeia de caracteres), tableSpace (cadeia de caracteres), tableSpaceIndex (cadeia de caracteres), target (MNTOKEN), template (cadeia de caracteres), temporaryTable (booleano), convertedDefault (cadeia de caracteres), translateExpr (cadeia de caracteres), type (MNTOKEN), unbound (boolean), userEnuser, user um (string), visibleIf (string), xml (booleano), xmlChildren (booleano)
+_operation (string), advanced (booleano), aggregate (string), applicableIf (string), autopk (booleano), belongingTo (string), convDate (string), dataPolicy (string), dataSource (string), dbEnum (string), defOnDuplicate (booleano), default (string), desc (string), displayAsField (booleano), doesNotSupportDiff (booleano), edit (string), emptyKeyValue (string), enum (string), enumImage (string), expandSchemaTarget (string), expr (string), externalJoin (booleano), feature (string), featureDate (booleano), filterPath (string), folderLink (string), folderModel (string), folderProcess (string), fullLoad (booleano), hierarchical (booleano), hierarchicalPath (string), img (string), inout (string), integridade (string), rótulo (string), labelSingular (string), comprimento (string), localizável (booleano), nome (MNTOKEN), noDbIndex (booleano), noKey (booleano), ordenado (booleano), tabela de estouro (booleano), pkSequence (string), pkgStatus (string), ref (string), obrigatório (booleano), revAdvanced (booleano), revCardinality (string), revDesc (string), revExternalJoin (booleano), revIntegrity (string) revLabel (cadeia de caracteres), revLink (cadeia de caracteres), revTarget (cadeia de caracteres), revVisibleIf (cadeia de caracteres), sql (booleano), sqlname (cadeia de caracteres), sqltable (cadeia de caracteres), tableSpace (cadeia de caracteres), tableSpaceIndex (cadeia de caracteres), target (MNTOKEN), template (cadeia de caracteres), temporaryTable (booleano), translateExpr (cadeia de caracteres), type (MNTOKEN), unbound (booleano), user (booleano), userEnum (string), visibleIf (string), xml (booleano), xmlChildren (booleano)
 
 ## Pais {#parents-4}
 
@@ -29,7 +28,7 @@ _operation (string), advanced (booleano), aggregate (string), applicableIf (stri
 
 `<element>`
 
-## Filhos {#children-4}
+## Derivados {#children-4}
 
 * `<attribute>`
 * `<compute-string>`

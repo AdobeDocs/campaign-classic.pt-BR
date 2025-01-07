@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 1%
@@ -16,7 +16,6 @@ ht-degree: 1%
 
 # elemento attribute {#attribute--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Modelo de conteúdo {#content-model}
 
@@ -24,13 +23,13 @@ attribute:==help
 
 ## Atributos {#attributes}
 
-_operation (string), advanced (booleano), applicableIf (string), autoIncrement (booleano), belongingTo (string), dataPolicy (string), dbEnum (string), defOnDuplicate (booleano), default (string), desc (string), edit (string), enum (string), expr (string), feature (string), featureDate (booleano), img (string), inout (string), label (string), length (string), localizable (booleano) , nome (MNTOKEN), notNull (booleano), pkgStatus (cadeia de caracteres), ref (cadeia de caracteres), obrigatório (booleano), sql (booleano), sqlDefault (cadeia de caracteres), sqlname (cadeia de caracteres), sqltable (cadeia de caracteres), target (MNTOKEN), template (cadeia de caracteres), translateDefault (cadeia de caracteres), translateExpr (cadeia de caracteres), type (MNTOKEN), user (booleano), userEnum (cadeia de caracteres), visibleIf (cadeia de caracteres), xml (booleano)
+_operation (string), advanced (booleano), applicableIf (string), autoIncrement (booleano), belongingTo (string), dataPolicy (string), dbEnum (string), defOnDuplicate (booleano), default (string), desc (string), edit (string), enum (string), expr (string), feature (string), featureDate (booleano), img (string), inout (string), label (string), length (string), localizable (booleano), nome (MNTOKEN), notNull (booleano), pkgStatus (cadeia de caracteres), ref (cadeia de caracteres), obrigatório (booleano), sql (booleano), sqlDefault (cadeia de caracteres), sqlname (cadeia de caracteres), sqltable (cadeia de caracteres), target (MNTOKEN), modelo (cadeia de caracteres), translateDefault (cadeia de caracteres), translateExpr (cadeia de caracteres), tipo (MNTOKEN), usuário (booleano), userEnum (cadeia de caracteres), visibleIf (cadeia de caracteres), (booleano)
 
 ## Pais {#parents}
 
 `<element>`
 
-## Filhos {#children}
+## Derivados {#children}
 
 `<help>`
 
