@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b500b2cbf68fd46bd84ddbfa71cf9431c6b60060
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1005'
 ht-degree: 3%
 
 ---
@@ -125,7 +125,7 @@ No console do cliente, localize a conta de mid-sourcing **Roteamento de email us
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Reinicie o módulo Web usando o seguinte comando: **nlserver restart web**.
+1. Reinicie o módulo Web usando o seguinte comando: ** web**.
 
 Você deve alterar a configuração do servidor mid-sourcing no arquivo serverConf.xml. A linha a seguir deve ser adicionada à seção &quot;Management of affinities with IP addresses&quot;, na linha existente:
 
