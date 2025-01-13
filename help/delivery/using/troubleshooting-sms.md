@@ -6,9 +6,9 @@ feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
 source-git-commit: f660dcbb111e73f12737d96ebf9be2aeccbca8ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3044'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -311,29 +311,26 @@ O resultado deve ser o seguinte:
 
 Quatro conexões abertas para o processo SMS e duas por filho mta com cinco filhos.
 
-## Diferença entre status de delivery de SMS
+## Diferença entre status de entrega de SMS
 
-Para esclarecer as diferenças entre os status **Enviado**, **Enviado ao Provedor** e **Recebido em Dispositivo Móvel**, consulte as definições detalhadas abaixo:
+Para esclarecer as diferenças entre os status **Enviada**, **Enviada ao provedor** e **Recebida em dispositivo móvel**, consulte as definições detalhadas abaixo:
 
-* **Recebido no Celular**:
-A mensagem foi entregue com êxito ao dispositivo do usuário, com confirmação fornecida pela entrega Terminada por dispositivo móvel (MT) e um Relatório de status (SR).
+* **Recebida em dispositivo móvel**: a mensagem foi entregue com sucesso ao dispositivo do usuário, com confirmação fornecida pela entrega Terminada por dispositivo móvel (MT) e um Relatório de status (SR).
 
-* **Enviado**:
-A mensagem foi processada com êxito por meio da etapa Mobile Terminated (MT), mas um Relatório de Status (SR) confirmando a entrega para o dispositivo móvel ainda não foi recebido.
+* **Enviada**: a mensagem foi processada com sucesso por meio da etapa Terminada por dispositivo móvel (MT), mas um Relatório de status (SR) confirmando a entrega para o dispositivo móvel ainda não foi recebido.
 
-* **Enviado ao Provedor**:
-A mensagem foi enviada ao provedor usando o `SUBMIT_SM command`, mas nenhuma confirmação `SUBMIT_SM_RESP` foi recebida do provedor.
+* **Enviada ao provedor**: a mensagem foi enviada ao provedor usando `SUBMIT_SM command`, mas nenhuma confirmação `SUBMIT_SM_RESP` foi recebida do provedor.
 
-As mensagens podem permanecer no status **Enviadas** porque a transição para **Recebidas** depende de um Relatório de Status (SR) do dispositivo do usuário. Se o usuário tiver uma recepção de célula ruim ou outros problemas de conectividade, talvez ele não receba a mensagem imediatamente. Nesses casos, é responsabilidade do provedor repetir o delivery ou explicar por que nenhum SR foi gerado. Se o provedor identificar discrepâncias, deverá garantir que o comportamento do Campaign seja consistente com as expectativas.
+As mensagens podem permanecer no status **Enviada**, porque a transição para **Recebida** depende de um Relatório de status (SR) do dispositivo do usuário. Se o usuário tiver um sinal ruim ou outros problemas de conectividade, talvez não receba a mensagem imediatamente. Nesses casos, é responsabilidade do provedor repetir a entrega ou explicar por que nenhum SR foi gerado. Se o provedor identificar discrepâncias, deverá garantir que o comportamento do Campaign foi consistente com as expectativas.
 
-Estes são os status padrão do delivery de SMS:
+Estes são os status padrão de entrega de SMS:
 
 * **Pendente**: a mensagem ainda não foi enviada para o agregador.
 
-* **Levado em Conta pelo Provedor**: a mensagem foi enviada ao agregador e o agregador confirmou a confirmação.
+* **Levada em consideração pelo provedor**: a mensagem foi enviada ao agregador, que confirmou o recebimento.
 
-* **Enviado**: o agregador confirmou que a mensagem foi enviada com êxito para a rede móvel do usuário sem nenhum erro imediato.
+* **Enviada**: o agregador confirmou que a mensagem foi enviada com sucesso para a rede móvel do usuário sem nenhum erro imediato.
 
-* **Recebido no Celular**: o dispositivo móvel do usuário confirmou a confirmação e isso foi verificado pelo agregador.
+* **Recebida no celular**: o dispositivo móvel do usuário confirmou o recebimento e isso foi verificado pelo agregador.
 
-* **Falha**: a mensagem foi enviada ao agregador, que tentou entregar ao dispositivo móvel do usuário por um período definido (por exemplo, várias horas). A entrega falhou devido a problemas de rede, indisponibilidade do dispositivo do usuário ou outros motivos.
+* **Falhou**: a mensagem foi enviada ao agregador, que tentou entregar ao dispositivo móvel do usuário por um período definido (por exemplo, várias horas). A entrega falhou devido a problemas de rede, indisponibilidade do dispositivo do usuário ou outros motivos.

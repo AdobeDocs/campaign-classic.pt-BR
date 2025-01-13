@@ -5,9 +5,9 @@ description: Modelos e scripts JavaScript
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
 source-git-commit: d4a2138e03a33092403d5ca00a41a3d7f9aea33e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1247'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -157,9 +157,9 @@ Este exemplo mostra que a atividade após o **JavaScript Code** acessa as variá
 
 ### Chamada de uma variável de instância em uma consulta {#calling-an-instance-variable-in-a-query}
 
-Depois de especificar uma variável de instância em uma atividade, é possível reutilizá-la em uma query de workflow.
+Depois de especificar uma variável de instância em uma atividade, é possível reutilizá-la em uma consulta de fluxo de trabalho.
 
-Assim, para chamar uma variável **instance.vars.xxx = &quot;yyy&quot;** em um filtro, digite **$(instance/vars/@xxx)**.
+Assim, para chamar uma variável **instance.vars.xxx = &quot;yyy&quot;** em um filtro, insira **$(instance/vars/@xxx)**.
 
 Por exemplo:
 

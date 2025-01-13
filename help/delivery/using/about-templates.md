@@ -6,9 +6,9 @@ feature: Delivery Templates
 role: User
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
 source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ A configuração da entrega pode ser salva em um template de entrega para ser re
 
 ![](assets/s_user_template_list.png)
 
-Há dois tipos de templates:
+Há dois tipos de modelos:
 
-1. Modelos de entrega nativos do Adobe Campaign - Os modelos nativos NÃO DEVEM ser excluídos do sistema. Eles incluem uma configuração mínima para cada canal de entrega. No entanto, o administrador pode restringir determinadas funções ou oferecer valores padrão aos usuários (rastreamento de ativação, endereços de email de remetentes etc.). Os cenários nativos aparecem em negrito na lista de templates. Eles devem ser duplicados para serem modificados.
+1. Modelos de entrega nativos do Adobe Campaign – Os modelos nativos NÃO DEVEM ser excluídos do sistema. Eles incluem uma configuração mínima para cada canal de entrega. No entanto, o administrador pode restringir determinadas funções ou oferecer valores padrão aos usuários (rastreamento de ativação, endereços de email de remetentes etc.). Os cenários nativos aparecem em negrito na lista de templates. Eles devem ser duplicados para serem modificados.
 
-1. Modelos de entrega predefinidos - O administrador do Adobe Campaign pode criar novos modelos de entrega. Eles podem ser reutilizados por operadores (aqueles com direitos de acesso adequados) ou automaticamente por processos de servidor. Por exemplo, você pode configurar um modelo de entrega de email e, quando os usuários criarem uma entrega usando esse modelo, bastará inserir o texto ou o conteúdo HTML e depois enviá-lo; as outras opções já terão sido definidas pelo administrador.
+1. Modelos de entrega predefinidos – O administrador do Adobe Campaign pode criar novos modelos de entrega. Eles podem ser reutilizados por operadores (aqueles com direitos de acesso adequados) ou automaticamente por processos de servidor. Por exemplo, você pode configurar um modelo de entrega de email e, quando os usuários criarem uma entrega usando esse modelo, bastará inserir o texto ou o conteúdo HTML e depois enviá-lo; as outras opções já terão sido definidas pelo administrador.
 
 
-Saiba como criar e usar modelos de entrega na [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-templates){target="_blank"}.
+Saiba como criar e usar modelos de entrega na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/create-templates){target="_blank"}.

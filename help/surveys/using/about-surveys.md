@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ No Adobe Campaign, use as [aplicativos Web](../../web/using/about-web-forms.md) 
 * Personalizar e definir a posição do campo,
 * Exibição condicional de campos de pesquisa de acordo com as respostas,
 * Exibição de página condicional,
-* Informações de verificação antes da aprovação, dependendo do tipo de dados esperado (número, endereço de email, datas, etc.) e campos obrigatórios,
+* Verifique as informações antes da aprovação, dependendo do tipo de dados esperado (número, endereço de email, datas, etc.) e campos obrigatórios,
 * Enviar convites/notificações por email,
 * Personalizar páginas de erros e páginas finais,
 * Adicionar imagens, vídeos, links de hipertexto, captcha etc. a formulários
