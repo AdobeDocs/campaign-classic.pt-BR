@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: b500b2cbf68fd46bd84ddbfa71cf9431c6b60060
+source-git-commit: ab38c7fd45513c6f7a8ecf7ef8601f0b5a4b5757
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 88%
+source-wordcount: '424'
+ht-degree: 87%
 
 ---
 
@@ -39,7 +39,7 @@ A [matriz de compatibilidade do Adobe Campaign](compatibility-matrix.md) foi atu
 
   >[!CAUTION]
   >
-  >Como cliente local usando o RHEL 9, se quiser usar chaves DKIM/Domain, atualize as configurações do sistema conforme detalhado em [esta seção](../../installation/using/installing-packages-with-linux.md#rhel-9-update).
+  >Como cliente local usando o RHEL 9, se quiser usar a autenticação do DKIM (Domain Keys Identified Mail), atualize as configurações do sistema, conforme detalhado em [esta seção](../../installation/using/installing-packages-with-linux.md#rhel-9-update).
 
 
 * O Adobe Campaign agora é compatível com os sistemas de gerenciamento de banco de dados relacionais **Microsoft SQL Server 2022** e **Oracle 23c**, bem como o Federated Data Access (FDA).
