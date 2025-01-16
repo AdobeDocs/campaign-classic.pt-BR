@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Email
 role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f7da066d32391341e449397d64853fcbae639a59
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Ao criar uma nova entrega ou template da entrega, o Email Cc não é ativado por
 
 >[!NOTE]
 >
->Se estiver usando o Email Cco com MTA aprimorado, essa opção será ativada automaticamente para todas as entregas.
+>Se você estiver usando o Email Cco com [MTA aprimorado](ending-with-enhanced-mta.md), essa opção será habilitada automaticamente para todas as entregas.
 
 Para ativar o Email Cco para um template da entrega de email, siga as etapas abaixo:
 
