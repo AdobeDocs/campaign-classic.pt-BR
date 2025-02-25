@@ -6,10 +6,10 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '799'
-ht-degree: 100%
+source-git-commit: f188c9ce4c47d05638d9d28e2175cb4d32775ba2
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,121 +25,128 @@ As listas são criadas e gerenciadas pelo link **[!UICONTROL Lists]** na guia **
 
 ![](assets/s_ncs_user_interface_group_link.png)
 
-Dois tipos de listas estão disponíveis no Adobe Campaign:
+>[!NOTE]
+>
+>Para saber mais sobre listas e como criá-las e gerenciá-las, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank}.
 
-* Tipo **[!UICONTROL Group]**: as listas do tipo **[!UICONTROL Group]** pertencem a uma lista **estática** de pessoas selecionadas de acordo com critérios específicos. A lista é como uma fotografia de um conjunto de perfis. Ela não é atualizada automaticamente quando perfis são adicionados ao banco de dados.
+<!--
+Two types of lists are available in Adobe Campaign:
 
-  Para obter mais informações sobre como criar uma lista do tipo **[!UICONTROL Group]**, consulte esta [página](#creating-a-profile-list-from-a-group).
+* **[!UICONTROL Group]** type: The **[!UICONTROL Group]** type lists belong to a **static** list of people selected according to specific criteria. The list is like a snapshot of a set of profiles. Please note that it is not updated automatically in the event of profiles being added to the database.
 
-* Tipo **[!UICONTROL List]**: as listas do tipo **[!UICONTROL List]** permitem a utilização de fluxos de trabalho para criar e gerenciar listas. São listas específicas resultantes de importações de dados, que podem ser atualizadas por meio da atividade específica **[!UICONTROL List update]** do workflow.
+  For more information on how to create a **[!UICONTROL Group]** type list, refer to this [page](#creating-a-profile-list-from-a-group).
 
-  Diferentemente da lista do tipo **[!UICONTROL Group]**, essas listas podem ser atualizadas automaticamente com uma atividade **[!UICONTROL Scheduler]** Para ver um exemplo de como criar listas do tipo **[!UICONTROL List]**, consulte [esta página](../../workflow/using/list-update.md).
+* **[!UICONTROL List]** type: The **[!UICONTROL List]** type lists allows you to use workflows to create and manage lists. These will be specific lists resulting from data imports, that can be updated via the dedicated **[!UICONTROL List update]** workflow activity.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#create-list-video)
+  Unlike the **[!UICONTROL Group]** type list, this type list can be automatically updated with a **[!UICONTROL Scheduler]** activity. Note that For an example on how to create **[!UICONTROL List]** type lists, refer to [this page](../../workflow/using/list-update.md).
 
-## Criar uma lista de perfis de um grupo {#creating-a-profile-list-from-a-group}
+![](assets/do-not-localize/how-to-video.png) [Discover this feature in video](#create-list-video)
 
-As listas do tipo **[!UICONTROL Group]** criadas por meio do link **[!UICONTROL Profiles and targets]** devem ser baseadas na tabela de perfil padrão do Adobe Campaign (nms:recipient).
+## Create a profile list from a group {#creating-a-profile-list-from-a-group}
+
+**[!UICONTROL Group]** type lists created via the **[!UICONTROL Profiles and targets]** link must be based on the default Adobe Campaign profile table (nms:recipient).
 
 >[!NOTE]
 >
->Para criar listas contendo outros tipos de dados, é necessário executar um workflow. Por exemplo, consulte a tabela visitante e atualize a lista para criar uma lista de visitantes. Para obter mais informações sobre fluxos de trabalho, consulte [esta seção](../../workflow/using/about-workflows.md).
+>To create lists containing other types of data, you must run a workflow. For example, by using a query on the visitor table then updating the list, you can create a visitor list. For more information on workflows, refer to [this section](../../workflow/using/about-workflows.md).
 
-Para criar uma nova lista do tipo **[!UICONTROL Group]**, siga as seguintes etapas:
+To create a new **[!UICONTROL Group]** type list, apply the following steps:
 
-1. Clique no botão **[!UICONTROL Create]** e selecione **[!UICONTROL New list]**.
+1. Click the **[!UICONTROL Create]** button and select **[!UICONTROL New list]**.
 
    ![](assets/s_ncs_user_new_group.png)
 
-1. Insira as informações na guia **[!UICONTROL Edit]** da janela de criação da lista.
+1. Enter the information in the **[!UICONTROL Edit]** tab of the list creation window.
 
-   * Insira o nome da lista no campo **[!UICONTROL Label]** e, se necessário, altere o nome interno.
-   * Adicione uma descrição para esta lista.
-   * É possível especificar uma data de expiração: quando essa data é atingida, a lista é removida e excluída automaticamente.
+    * Enter the list name in the **[!UICONTROL Label]** field and, if necessary, change the internal name.
+    * Add a description for this list.
+    * You can specify an expiration date: when this date is reached, the list is purged and automatically deleted.
+    
+      ![](assets/list_expiration_date.png)
 
-     ![](assets/list_expiration_date.png)
-
-1. Na guia **[!UICONTROL Content]**, clique em **[!UICONTROL Add]** para selecionar os perfis que pertencem à lista.
+1. In the **[!UICONTROL Content]** tab, click **[!UICONTROL Add]** to select the profiles belonging to the list.
 
    ![](assets/s_ncs_user_add_group.png)
 
-1. Clique em **[!UICONTROL Save]** para salvar a lista. Ela é então adicionada à visão geral das listas.
+1. Click **[!UICONTROL Save]** to save the list. It is then added to the overview of lists.
 
-É possível criar novos perfis diretamente na janela “add profiles” clicando em **[!UICONTROL Create]**. O perfil será adicionado ao banco de dados.
+You can create new profiles directly from the 'add profiles' window by clicking **[!UICONTROL Create]**. The profile will be added to the database.
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
-A lista de perfis pode ser configurada como qualquer outra lista. Consulte [esta seção](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+The profile list can be configured just like other lists. See [this section](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
-## Vincular dados a uma lista {#linking-data-to-a-list}
+## Link data to a list {#linking-data-to-a-list}
 
 >[!NOTE]
 >
->A vinculação de dados a uma lista só pode ser feita com uma lista do tipo **[!UICONTROL Group]**.
+>Linking data to a list can only been done with a **[!UICONTROL Group]** type list.
 
-Os perfis de um conjunto de perfis podem ser filtrados e vinculados a uma lista. As ações de entrega podem então ser enviadas para essa lista, para direcionar perfis. Para agrupar perfis:
+The profiles of a set of profiles can be filtered and linked to a list. Delivery actions may then be sent to this list, to target profiles. To group profiles:
 
-1. Selecione os perfis e clique com o botão direito do mouse.
-1. Selecione **[!UICONTROL Actions > Associate selection with a list...]**.
+1. Select profiles and right-click. 
+1. Select **[!UICONTROL Actions > Associate selection with a list...]**.
 
    ![](assets/s_ncs_user_add_selection_to_group.png)
 
-1. Selecione a lista desejada ou crie uma nova lista utilizando o botão **[!UICONTROL Create]** e clique em **[!UICONTROL Next]**.
+1. Select the desired list or create a new list using the **[!UICONTROL Create]** button, then click **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_add_selection_to_group_2.png)
 
-1. Clique no botão **[!UICONTROL Start]**.
+1. Click the **[!UICONTROL Start]** button.
 
    ![](assets/s_ncs_user_add_selection_to_group_3.png)
 
-A opção **[!UICONTROL Recreate the list]** exclui o conteúdo anterior da lista. Esse modo é otimizado uma vez que nenhuma consulta é necessária para verificar se os perfis já estão vinculados à lista.
+The **[!UICONTROL Recreate the list]** option deletes the earlier content from the list. This mode is optimized since no query is needed to verify whether the profiles are already linked to the list.
 
-Se você desmarcar a opção **[!UICONTROL No trace of this job is saved in the database]**, será possível selecionar (ou criar) a pasta de execução onde as informações vinculadas a esse processo serão armazenadas.
+If you uncheck the **[!UICONTROL No trace of this job is saved in the database]** option, you can select (or create) the execution folder where the information linked to this process will be stored.
 
-A seção superior da janela permite monitorar a execução. O botão **[!UICONTROL Stop]** permite interromper o processo. Os contatos já processados são vinculados à lista.
+The upper section of the window lets you monitor execution. The **[!UICONTROL Stop]** button lets you stop the process. Contacts already processed will be linked to the list.
 
-É possível monitorar o processo na guia **[!UICONTROL Lists]** nos perfis relacionados a esta operação:
+You can monitor the process via the **[!UICONTROL Lists]** tab on the profiles concerned by this operation:
 
 ![](assets/s_ncs_user_add_selection_to_group_4.png)
 
-Também é possível editar a lista usando a página inicial do Adobe Campaign: clique no menu **[!UICONTROL Profiles and Targets > Lists]** e selecione a lista relacionada. A guia **[!UICONTROL Content]** mostra os perfis vinculados a esta lista.
+You can also edit the list via the Adobe Campaign home page: click the **[!UICONTROL Profiles and Targets > Lists]** menu and select the concerned list. The **[!UICONTROL Content]** tab shows the profiles linked to this list.
 
 ![](assets/s_ncs_user_add_selection_to_group_5.png)
 
-## Remover um perfil de uma lista {#removing-a-profile-from-a-list}
+## Remove a profile from a list {#removing-a-profile-from-a-list}
 
-Para remover um perfil de uma lista, é possível:
+To remove a profile from a list, you can:
 
-* Editar a lista, selecionar o perfil na guia **[!UICONTROL Content]** e clicar no ícone **[!UICONTROL Delete]**.
+* Edit the list, select the profile in the **[!UICONTROL Content]** tab, then click the **[!UICONTROL Delete]** icon.
 
   ![](assets/list_remove_a_recipient.png)
 
-* Editar o perfil, clicar na guia **[!UICONTROL List]** e clicar no ícone **[!UICONTROL Delete]**.
+* Edit the profile, click the **[!UICONTROL List]** tab, then click the **[!UICONTROL Delete]** icon. 
 
   ![](assets/recipient_remove_a_list.png)
 
-## Excluir uma lista de perfis {#deleting-a-list-of-profiles}
+## Delete a list of profiles {#deleting-a-list-of-profiles}
 
-É possível excluir uma ou mais listas da lista de grupos na árvore do Adobe Campaign. Para fazer isso, edite a árvore pelo link **[!UICONTROL Advanced > Explorer]** na página inicial do Adobe Campaign. Selecione os grupos relacionados e clique com o botão direito do mouse. Selecione **[!UICONTROL Delete]**. Uma mensagem de aviso solicita que você confirme a exclusão.
+You can delete one or more lists from the group list in the Adobe Campaign tree. To do this, edit the tree via the **[!UICONTROL Advanced > Explorer]** link in the Adobe Campaign home page. Select the group(s) concerned and right-click. Select **[!UICONTROL Delete]**. A warning message asks you to confirm the deletion.
 
 >[!NOTE]
 >
->Quando você exclui uma lista, os perfis na lista não são afetados, mas os dados nesses perfis são atualizados.
+>When you delete a list, the profiles on the list are not affected but the data in their profile is updated.
 
-## Tutorial em vídeo {#create-list-video}
+## Tutorial video {#create-list-video}
 
-### Como criar uma lista de destinatários
+### How to create a list of recipients
 
-Uma lista é um conjunto estático de destinatários que pode ser focada em ações de entrega ou atualizada durante as operações de importação ou durante a execução de fluxos de trabalho. Uma lista de destinatários também é chamada de público-alvo.
+A list is a static set of recipients that can be targeted in delivery actions or updated during import operations or during workflow execution. A list of recipients is also referred to as audience.
 
-Aprenda a criar um público-alvo configurando uma lista de destinatários do Explorer.
+Learn how to create an audience by configuring a list of recipients from the Explorer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### Como usar um fluxo de trabalho para criar uma lista de destinatários {#create-list-in-a-wf-video}
+### How use a workflow to create a list of recipients {#create-list-in-a-wf-video}
 
-Saiba como criar um fluxo de trabalho para direcionar os destinatários e como torná-lo recorrente antes de usar a lista em um target de email.
+Learn how create a workflow in order to target recipients and how to make it recurring before using the list in an email target.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-Vídeos extras com instruções do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+
+-->
