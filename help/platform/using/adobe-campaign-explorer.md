@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 22aa5f76541e6ff1612907ab0b34f0ac468fb9a6
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 100%
+source-wordcount: '87'
+ht-degree: 57%
 
 ---
 
@@ -20,67 +20,74 @@ ht-degree: 100%
 
 O explorer do Adobe Campaign é acessível por meio do ícone da barra de ferramentas. Ele permite que você acesse todos os recursos do Adobe Campaign, as telas de configuração e uma visão mais detalhada de alguns dos elementos da plataforma.
 
-O espaço de trabalho **[!UICONTROL Explorer]** é dividido em três zonas:
+>[!NOTE]
+>
+>Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na documentação do Campaign v8: para saber mais [sobre a interface do usuário](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}, suas [configurações](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank} ou [como gerenciar pastas e exibições no explorador](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+
+
+<!--
+The **[!UICONTROL Explorer]** workspace is divided into three zones:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - Tree**: é possível personalizar o conteúdo da árvore (adicionar, mover ou excluir nós). Esse procedimento destina-se somente a usuários especializados. Para obter mais informações, consulte [esta seção](#about-navigation-hierarchy).).
+**1 - Tree**: you can personalize the content of the tree (add, move, or delete nodes). This procedure is intended for expert users only. For more on this, refer to  [this section](#about-navigation-hierarchy).).
 
-**2 - Lista**: é possível filtrar essa lista, executar pesquisas, adicionar informações ou classificar dados. [Saiba mais](adobe-campaign-ui-lists.md).
+**2 - List**: you can filter this list, run searches, add information, or sort data. [Learn more](adobe-campaign-ui-lists.md).
 
-**3 - Details**: é possível exibir os detalhes do elemento selecionado. O ícone na seção superior direita permite exibir essas informações no formato de tela inteira.
+**3 - Details**: you can display the details of the selected element. The icon in the upper right-hand section lets you display this information in full-screen format.
 
-## Pastas e árvore de navegação{#about-navigation-hierarchy}
+## Folders and navigation tree{#about-navigation-hierarchy}
 
-A árvore de navegação funciona como um navegador de arquivos (por exemplo, Windows Explorer). As pastas podem conter subpastas. Selecionar um nó exibe a visualização correspondente ao nó.
+The navigation tree works like a file browser (e.g. Windows Explorer). Folders may contain sub-folders. Selecting a node displays the view corresponding to the node.
 
-A visualização exibida é uma lista associada a um esquema e um formulário de entrada para editar a linha selecionada.
+The view displayed is a list associated with a schema and an input form to edit the selected line.
 
 ![](assets/d_ncs_integration_navigation.png)
 
-Para adicionar uma nova pasta à árvore, clique com o botão direito do mouse na pasta na ramificação em que deseja inserir uma pasta e selecione **[!UICONTROL Add new folder]**. No menu de atalho, selecione o tipo de arquivo que será criado.
+To add a new folder to the tree, right-click the folder in the branch where you wish to insert a folder, and select **[!UICONTROL Add new folder]** . In the shortcut menu, select the type of file to be created.
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
-Saiba como configurar a árvore de navegação do Campaign [nesta seção](../../configuration/using/configuration.md).
+Learn how to configure Campaign navigation tree [in this section](../../configuration/using/configuration.md).
 
-Saiba como definir permissões em pastas [nesta seção](access-management-folders.md).
+Learn how to set permissions on folders [in this section](access-management-folders.md).
 
-## Práticas recomendadas de configuração de pasta
+## Folder configuration best practices
 
-* **Usar pastas integradas**
+* **Use built-in folders**
 
-  Usar as pastas integradas faz com que as pessoas não envolvidas no projeto usem, mantenham e solucionem problemas do aplicativo com mais facilidade. Você não deve criar estruturas de pastas personalizadas para destinatários, listas, entregas etc., mas usar as pastas padrão, como Administração, Perfis e direcionamentos e Gestão de campanha.
+  Using the built-in folders makes it easier for people not involved in the project to use, maintain and troubleshoot the application. You should not create custom folder structures for recipients, lists, deliveries, etc., but use the standard folders such as Administration, Profiles & Targets, Campaign management.
 
-* **Criar subpastas**
+* **Create sub-folders**
 
-  Coloque workflows técnicos na pasta padrão: Administração/Produção/Workflows técnicos e crie subdiretórios por tipo de fluxo de trabalho.
+  Place technical workflows under the standard folder: Administration / Production / Technical Workflows, and create subdirectories per workflow type.
+  
+* **Set a naming convention**
 
-* **Definir uma convenção de nomenclatura**
+  For example you can name the workflows in alphabetical order, so that they appear sorted in the order of execution.
+  
+  For example:
+  
+  * A1 – import recipients, starts at 10:00;
+  * A2 – import tickets, starts at 11:00.
 
-  Por exemplo, é possível nomear os workflows em ordem alfabética, para que apareçam classificados na ordem de execução.
+* **Create templates for users to start with**
 
-  Por exemplo:
+  Create delivery templates, workflow templates, campaign templates specific to users. This structure can save time and make sure that the right delivery mapping and typologies are used for each user.
 
-   * A1 - importar destinatários, começa às 10h;
-   * A2 - importar tíquetes, começa às 11h.
+## Screen resolution {#screen-resolution}
 
-* **Criar modelos para os usuários começarem com**
-
-  Crie templates de entrega, templates de fluxo de trabalho, templates de campanha específicos para usuários. Essa estrutura pode economizar tempo e garantir que o mapeamento de entrega e as tipologias corretas sejam usadas para cada usuário.
-
-## Resolução da tela {#screen-resolution}
-
-Para uma navegação e usabilidade ideal, a Adobe recomenda usar uma resolução mínima de tela de 1600x900 pixels.
+For optimal navigation and usability, Adobe recommends using a minimum screen resolution of 1600x900 pixels.
 
 >[!CAUTION]
 >
->Resoluções abaixo de 1600x900 pixels não são aceitas pelo Adobe Campaign.
+>Resolutions under 1600x900 pixels are not supported by Adobe Campaign.
 
-No workspace do **[!UICONTROL Explorer]**, se alguma parte da zona **[!UICONTROL Details]** aparecer cortada, amplie-a usando a seta na parte superior da zona ou clique no botão **[!UICONTROL Enlarge]**.
+In the **[!UICONTROL Explorer]** workspace, if some parts of the **[!UICONTROL Details]** zone appear to be truncated, expand it using the arrow on top of the zone or click the **[!UICONTROL Enlarge]** button.
 
 ![](assets/s_ncs_user_resolution.png)
 
-## Procurar e personalizar listas {#browsing-lists}
+## Browse and customize lists {#browsing-lists}
 
-Saiba como procurar, gerenciar e personalizar listas [nesta seção](adobe-campaign-ui-lists.md).
+Learn how to browse, manage and customize lists [in this section](adobe-campaign-ui-lists.md).
+-->
