@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
 source-git-commit: 9734eca149e775bbe4c9ea9553e6a6482ad67da6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '199'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,4 +30,4 @@ Por fim, a capacidade de gerenciamento de orçamento é estendida para direciona
 
 >[!NOTE]
 >
->Para saber mais sobre o MRM para Adobe Campaign e como usá-lo, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}.
+>Para saber mais sobre o MRM do Adobe Campaign e como usá-lo, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}.

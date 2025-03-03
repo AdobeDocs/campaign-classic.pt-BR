@@ -5,9 +5,9 @@ description: Saiba como procurar e configurar listas
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
 source-git-commit: f43b15e61fb286a612f057d8d3bf5a1ff6ecb253
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '66'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 22%
 
 
 
-No console do cliente do Campaign, os dados são exibidos em listas. Você pode adaptar essas listas às suas necessidades. Por exemplo, você pode adicionar colunas, filtrar dados, contar registros, salvar e compartilhar suas configurações.
+No console do cliente do Campaign, os dados são exibidos em listas. Você pode adaptar essas listas às suas necessidades. Por exemplo, é possível adicionar colunas, filtrar dados, contar registros, salvar e compartilhar suas configurações.
 
 >[!NOTE]
 >
->Para saber como gerenciar e personalizar listas no Adobe Campaign, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+>Para saber como gerenciar e personalizar listas no Adobe Campaign, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 <!--
 ## Count records {#counting-records}

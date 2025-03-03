@@ -5,9 +5,9 @@ description: Introdução ao marketing distribuído
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: a6b3c2c23ea5ee35e8829c750c35080d1ff56e00
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '136'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ A entidade central fornece campanhas que entidades locais poderão usar. As camp
 
 >[!NOTE]
 >
->Para saber mais sobre o Marketing Distribuído para Adobe Campaign e como usá-lo, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
+>Para saber mais sobre o marketing distribuído do Adobe Campaign e como usá-lo, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
 
 <!--
 ## Terminology {#terminology}
