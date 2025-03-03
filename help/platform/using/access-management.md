@@ -5,10 +5,10 @@ description: Saiba como conceder acesso aos recursos do Campaign
 badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
+source-git-commit: 2759d65150299e4fa679ea986df8136cd9525370
 workflow-type: tm+mt
 source-wordcount: '342'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
