@@ -3,9 +3,11 @@ product: campaign
 title: Sobre workflows
 description: Automatize processos com workflows, gerencie dados e públicos, envie mensagens e muito mais
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 100%
 
@@ -17,7 +19,7 @@ ht-degree: 100%
 
 ## Sobre workflows{#about-workflows}
 
-O Adobe Campaign inclui um módulo de workflow que possibilita orquestrar a gama completa de processos e tarefas através dos módulos diferentes do servidor do aplicativo. Esse ambiente gráfico abrangente permite criar processos, inclusive segmentação, execução de campanha, processamento de arquivos, participação humana, etc. O mecanismo de workflow executa e rastreia esses processos.
+O Adobe Campaign inclui um módulo de workflow que possibilita orquestrar a gama completa de processos e tarefas através dos módulos diferentes do servidor de aplicativos. Esse ambiente gráfico abrangente permite criar processos, inclusive segmentação, execução de campanha, processamento de arquivos, participação humana, etc. O mecanismo de workflow executa e rastreia esses processos.
 
 Você pode usar um workflow, por exemplo, para baixar um arquivo de um servidor, descompactar e importar registros contidos no banco de dados do Adobe Campaign.
 

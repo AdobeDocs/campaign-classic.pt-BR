@@ -3,8 +3,10 @@ product: campaign
 title: Entrega recorrente
 description: Saiba mais sobre a atividade de workflow de entrega recorrente
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 100%
