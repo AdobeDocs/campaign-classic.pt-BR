@@ -4,9 +4,11 @@ title: Audiência da campanha de marketing
 description: Saiba como definir a audiência das campanhas de marketing
 role: User
 feature: Campaigns, Audiences
+hide: true
+hidefromtoc: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
-workflow-type: ht
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 100%
 
@@ -91,7 +93,7 @@ Os workflows para construção do target podem ser iniciados manualmente por mei
 
 O direcionamento pode ser programado para execução automática de acordo com um agendamento (scheduler) ou um evento (sinal externo, importação de arquivo, etc.).
 
-As ações relacionadas à execução do fluxo de trabalho de direcionamento (iniciar, parar, pausar etc.) são processos **assíncronos**: o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
+As ações relacionadas à execução do workflow de definição de metas (inicialização, parada, pausa etc.) são processos **assíncronos** : o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
 
 Os ícones da barra de ferramentas permitem realizar a ação referente à execução do workflow de direcionamento.
 
