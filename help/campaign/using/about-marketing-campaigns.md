@@ -4,23 +4,41 @@ title: Sobre campanhas de marketing
 description: Definir, otimizar, executar e analisar campanhas de marketing
 role: User
 feature: Campaigns
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+exl-id: 07cfa2b3-4e70-437a-ad5f-15fbfe717d5c
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 86%
+source-wordcount: '296'
+ht-degree: 38%
 
 ---
 
-# Sobre campanhas de marketing{#designing-marketing-campaigns}
+# Orquestrar campanhas de marketing{#designing-marketing-campaigns}
 
 O Adobe Campaign oferece um conjunto de soluções que ajudam você a personalizar e entregar campanhas em todos os seus canais online e offline. Você pode criar, configurar, executar e analisar campanhas de marketing. Todas as campanhas de marketing podem ser gerenciadas a partir de um centro de controle unificado.
 
 As campanhas incluem ações (entregas) e processos (importação ou extração de arquivos), além de recursos (documentos de marketing e outlines de entrega). Eles são usados em campanhas de marketing. As campanhas são parte de um programa, e os programas estão incluídos em um plano de campanha.
 
->[!NOTE]
->
->Para saber mais sobre o gerenciamento de campanhas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Para saber mais sobre o gerenciamento de campanhas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
+![](assets/do-not-localize/campaign.jpg){width="40%"}
+
+Conheça as principais etapas relacionadas ao gerenciamento de campanhas:
+
+* [Introdução](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR){target=_blank}: descubra passo a passo como criar e executar uma campanha de marketing no Adobe Campaign.
+
+* [Crie sua primeira campanha](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=pt-BR){target=_blank}: saiba como agendar e configurar a lógica para orquestrar suas campanhas. Uma campanha centraliza todos os elementos relacionados a uma campanha de marketing: entregas, regras de direcionamento, custos, arquivos de exportação, documentos relacionados etc.
+
+* [Enviar mensagens em uma campanha](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR){target=_blank}: orquestre suas entregas entre canais em suas campanhas: simplifique suas comunicações com a Adobe Campaign por meio de emails personalizados, SMS, notificações por push e mensagens no aplicativo.
+
+![](assets/do-not-localize/add-on.jpg){width="40%"}
+
+Três complementos estão disponíveis para o gerenciamento de campanhas:
+
+* [Otimização de Campanha](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=pt-BR){target=_blank}: este módulo permite controlar, filtrar e monitorar o envio de entregas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.
+
+* [Gerenciamento de Recursos de Marketing](https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=pt-BR){target=_blank}: este módulo permite controlar ações de marketing em um modo colaborativo fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos.
+
+* [Marketing distribuído](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=pt-BR){target=_blank}: este módulo permite controlar ações de marketing em um modo colaborativo fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos.
 
 <!--
 

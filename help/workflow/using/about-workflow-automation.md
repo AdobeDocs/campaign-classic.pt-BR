@@ -3,18 +3,15 @@ product: campaign
 title: Sobre workflows
 description: Automatize processos com workflows, gerencie dados e públicos, envie mensagens e muito mais
 feature: Workflows, Data Management
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+exl-id: 024a7344-9376-4ff3-926a-003148229f9f
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 92%
+source-wordcount: '274'
+ht-degree: 59%
 
 ---
 
-# Introdução a workflows{#gs-workflows}
-
-
-
-## Sobre workflows{#about-workflows}
+# Automatizar com workflows {#gs-workflows}
 
 O Adobe Campaign inclui um módulo de workflow que possibilita orquestrar a gama completa de processos e tarefas através dos módulos diferentes do servidor de aplicativos. Esse ambiente gráfico abrangente permite criar processos, inclusive segmentação, execução de campanha, processamento de arquivos, participação humana, etc. O mecanismo de workflow executa e rastreia esses processos.
 
@@ -24,9 +21,21 @@ Um workflow também pode envolver um ou mais operadores a serem notificados ou q
 
 Os workflows ocorrem em vários contextos e estágios do processo de gestão de campanha.
 
->[!NOTE]
->
->Para saber mais sobre o gerenciamento de fluxos de trabalho, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR){target=_blank}.
+Para saber mais sobre o gerenciamento de fluxos de trabalho, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR){target=_blank}.
+
+![](assets/do-not-localize/workflow.jpg){width="40%"}
+
+Saiba mais sobre as principais etapas relacionadas ao gerenciamento de workflow:
+
+* [Atividades do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=pt-BR){target=_blank}: uma atividade descreve um modelo de tarefa. Os fluxos de trabalho incluem atividades de direcionamento, controle de fluxo, ação e evento.
+
+* [Criar um fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target=_blank}: saiba como criar e executar fluxos de trabalho técnicos, de campanha e de direcionamento.
+
+* [Práticas recomendadas](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}: saiba mais sobre as diretrizes para otimizar o desempenho do fluxo de trabalho do Campaign, melhorar o design do fluxo de trabalho e selecionar as configurações corretas.
+
+* [Monitorar fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}: saiba como monitorar a execução do fluxo de trabalho para garantir que tudo esteja funcionando corretamente.
+
+* [Casos de uso do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}: conheça os diferentes contextos nos quais os fluxos de trabalho podem ser usados e como implementá-los por meio de casos de uso completos.
 
 <!--
 
