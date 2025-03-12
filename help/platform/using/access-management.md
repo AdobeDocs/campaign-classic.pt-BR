@@ -6,9 +6,9 @@ badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Clas
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
 source-git-commit: 2759d65150299e4fa679ea986df8136cd9525370
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '342'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
 source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1128'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ O link **[!UICONTROL Advanced campaign settings...]** permite habilitar e desabi
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-Se um recurso não estiver selecionado, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecerão na interface do template ou em campanhas baseadas nesse template. As guias à esquerda dos detalhes da campanha geralmente coincidem com os processos selecionados no modelo. Por exemplo, se a opção **Expenses and objectives** não estiver selecionada, a guia correspondente a **[!UICONTROL Budget]** não será exibida em campanhas que se baseiam no template.
+Se um recurso não for selecionado, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecerão na interface do modelo ou em campanhas baseadas neste modelo. As guias à esquerda dos detalhes da campanha geralmente coincidem com os processos selecionados no modelo. Por exemplo, se a opção **Expenses and objectives** não estiver selecionada, a guia correspondente a **[!UICONTROL Budget]** não será exibida em campanhas que se baseiam no template.
 
 Além disso, os atalhos para as janelas de configuração são adicionados ao painel de campanha. Quando uma funcionalidade é habilitada, um link direto dá acesso a ela a partir do painel de campanha.
 
@@ -168,7 +168,7 @@ Ao criar um template de campanha, você precisa inserir as seguintes informaçõ
 
 ### Parâmetros de execução do template {#template-execution-parameters}
 
-O link **[!UICONTROL Advanced campaign settings...]** permite configurar as opções avançadas dos modelos para processar o destino de entrega (grupo de controle, seed addresses etc.) e a configuração da medição de campanha e da execução de fluxo de trabalho.
+O link **[!UICONTROL Advanced campaign settings...]** permite que você configure as opções avançadas do modelo para processar o público-alvo de entrega (grupo de controle, seed addresses etc.) e a configuração da medição da campanha e execução do fluxo de trabalho.
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 
