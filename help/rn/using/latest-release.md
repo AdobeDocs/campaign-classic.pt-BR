@@ -6,60 +6,52 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ab38c7fd45513c6f7a8ecf7ef8601f0b5a4b5757
-workflow-type: ht
-source-wordcount: '424'
-ht-degree: 100%
+source-git-commit: bf45c8bcdd41e614f9be09bc0fd6385707159841
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 36%
 
 ---
 
 # Versão mais recente {#latest-release}
 
-Esta página lista novos recursos, melhorias e correções que vêm com a **versão mais recente do Campaign v7**. Cada nova build vem com um status que é materializado por uma cor. Saiba mais sobre os status de build do Campaign Classic v7 [nesta página](rn-overview.md).
+Esta página lista novos recursos, melhorias e correções que vêm com a **versão mais recente do Campaign Classic v7**. Cada nova build vem com um status que é materializado por uma cor. Saiba mais sobre os status de build do Campaign Classic v7 [nesta página](rn-overview.md).
 
-## Versão 7.4.1 - Build 9383 {#release-7-4-1}
+## Versão 7.4.2 - Build 9390 {#release-7-4-2}
 
-[!BADGE Disponibilidade geral]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade geral"}
+[!BADGE Disponibilidade limitada]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
 
-_18 de junho de 2024_
+_sábado, 21 de março de 2025_
 
-### Alterações e melhorias {#release-7-4-1-changes}
+>[!AVAILABILITY]
+>
+>Esta versão está em **Disponibilidade limitada** (LA). É restrito somente a usuários do Hosted/Managed Services. Esta versão estará em breve disponível para clientes híbridos e no local.
 
-* Visto que a Adobe descontinuou a credencial de conta de serviço (JWT), as integrações de saída do Campaign com soluções e aplicativos da Adobe agora dependem da credencial de “servidor para servidor” do OAuth. Se você implementou integrações de saída, como a integração do Campaign com o Analytics ou a integração de acionadores da Experience Cloud, será necessário atualizar o ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para oAuth antes de 27 de janeiro de 2025. [Saiba mais](../../integrations/using/oauth-technical-account.md)
+<!--
+### Compatibility updates {#comp-7-4-2}
 
-* Depois de [migrar os operadores técnicos do Campaign para o Developer Console](../../technotes/using/ims-migration.md) e [fazer a transição para IMS para a autenticação do usuário final](../../technotes/using/migrate-users-to-ims.md), habilite a interface e as restrições da API para remover opções e recursos específicos da autenticação nativa. [Saiba mais](../../technotes/using/impact-ims-migration.md)
+This release comes with the following compatibility updates:
 
+* JQuery library update: fixes multiple UI issues (reports, web apps)
+* PostgreSQL 15 and 16
 
-### Atualizações de compatibilidade {#release-7-4-1-compat}
+-->
 
-A [matriz de compatibilidade do Adobe Campaign](compatibility-matrix.md) foi atualizada com as alterações incluídas nesta nova versão, as quais estão listadas abaixo.
+### Melhorias de segurança {#security-7-4-2}
 
-* O Adobe Campaign agora é compatível com o sistema operacional **Microsoft Server 2022**.
-* O Adobe Campaign agora é compatível com o sistema operacional **RHEL 9**.
+Esta versão vem com várias correções de segurança.
 
-  >[!CAUTION]
-  >
-  >Como cliente local usando RHEL 9, se quiser usar a autenticação DKIM (Domain Keys Identified Mail), atualize as configurações do sistema, conforme detalhado [nesta seção](../../installation/using/installing-packages-with-linux.md#rhel-9-update).
+A conexão com soluções e aplicativos da Adobe por meio da conta externa **[!UICONTROL Adobe Experience Cloud]** foi atualizada para reforçar a segurança.
 
+### Correções {#release-7-4-2-fixes}
 
-* O Adobe Campaign agora é compatível com os sistemas de gerenciamento de banco de dados relacionais **Microsoft SQL Server 2022** e **Oracle 23c**, bem como o Federated Data Access (FDA).
+Essa versão vem com as seguintes correções principais:
 
-* O Adobe Campaign agora exige pelo menos um Java Development Kit (JDK) 11. No Windows, o JRE deve estar disponível conforme descrito [nesta seção](../../installation/using/application-server.md#jdk).
+* Correções de conexão TLS/SMPP
+* Correções do Google BigQuery
+* Correções de MTA
 
-* O SDK do Campaign (Neolane) para aplicativos móveis foi descontinuado Você deve fazer a transição para o SDK da Adobe Experience Platform. [Saiba mais](deprecated-features.md).
+Os seguintes problemas também foram corrigidos nesta versão:
 
-  Enquanto isso, para garantir a continuidade do serviço, o Campaign v7.4 inclui:
-
-   * um novo SDK 1.0.27 do Campaign para iOS, compatível com o iOS 16 e 17 e os mais recentes [requisitos de solicitação de privacidade do Apple iOS](https://developer.apple.com/news/?id=r1henawx){target="_blank"}.
-   * um novo SDK do Campaign para Android 14.
-
-### Outras alterações {#release-7-4-1-other}
-
-A partir da v7.4.1, as bibliotecas de XML para pacotes de RPM do Linux não estão mais incluídas no Campaign. Como cliente local ou híbrido, sua administração precisa instalar estas bibliotecas. [Saiba mais](../../installation/using/installing-packages-with-linux.md)
-
-### Patches {#release-7-4-1-patches}
-
-Esta versão inclui as seguintes correções:
-
-NEO-74754, NEO-73174, NEO-72504, NEO-71534, NEO-71473, NEO-70195, NEO-69663, NEO-69651, NEO-67620, NEO-67235, NEO-66797, NEO-64680, NEO-63706, NEO-63657, NEO-62964, NEO-62575, NEO-58734, NEO-40531, NEO-36189, NEO-29592
+NEO47269, NEO59059, NEO62455, NEO65774, NEO66462, NEO66989, NEO77898, NEO78843, NEO79373, NEO79598, NEO80145, NEO80245, NEO80434, NEO80683, NEO81222, NEO81433, NEO81864, NEO82351, NEO82781, NEO82838, NEO8392 NEO83252, NEO83809, NEO83826, NEO84024, NEO84553, NEO85150
 
