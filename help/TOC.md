@@ -7,9 +7,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2571'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -392,7 +392,7 @@ ht-degree: 99%
       + [Sincronizar públicos-alvos](integrations/using/synchronizing-audiences.md)
       + [Sincronizar aplicativos web](integrations/using/synchronizing-web-applications.md)
       + [Solucionar problemas do [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
-+ [Automatizar com workflows](workflow/using/about-workflow-automation.md)
++ [Automatizar com fluxos de trabalho](workflow/using/about-workflow-automation.md)
 + Automatizar com workflows {#automating-with-workflows}
    + Introdução a workflows {#introduction}
       + [Sobre workflows](workflow/using/about-workflows.md)
