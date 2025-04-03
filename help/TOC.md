@@ -6,9 +6,9 @@ title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3daf88e14792bfc675cd4cbec6571377c9aa9392
+source-git-commit: 1a23e55190ae26edd7193838600a803137f13201
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2571'
 ht-degree: 100%
 
 ---
@@ -237,28 +237,29 @@ ht-degree: 100%
       + [Usar um modelo de conteúdo](delivery/using/using-a-content-template.md)
       + [Enriquecer conteúdo](delivery/using/enriching-content.md)
       + [Automatizar via workflows](delivery/using/automating-via-workflows.md)
-+ [Orquestrar campanhas de marketing](campaign/using/about-marketing-campaigns.md)
++ Orquestrar campanhas de marketing {#orchestrating-campaigns}
+   + [Orquestrar campanhas de marketing](campaign/using/about-marketing-campaigns.md)
    + [Sobre a otimização de campanha](campaign-opt/using/about-campaign-optimization.md)
-      + Sobre campanhas de marketing {#about-marketing-campaigns}
-         + [Criar campanhas de marketing](campaign/using/designing-marketing-campaigns.md)
-         + [Acessar campanhas de marketing](campaign/using/accessing-marketing-campaigns.md)
-      + Orquestrar campanhas {#orchestrate-campaigns}
-         + [Introdução a campanhas de marketing](campaign/using/setting-up-marketing-campaigns.md)
-         + [Criar e configurar modelos](campaign/using/marketing-campaign-templates.md)
-         + [Adicionar entregas](campaign/using/marketing-campaign-deliveries.md)
-         + [Selecionar o público-alvo](campaign/using/marketing-campaign-target.md)
-         + [Gerenciar documentos e ativos](campaign/using/marketing-campaign-assets.md)
-         + [Configurar e gerenciar aprovações](campaign/using/marketing-campaign-approval.md)
-         + [Monitorar suas campanhas](campaign/using/marketing-campaign-monitoring.md)
-         + [Provedores, estoques e orçamentos](campaign/using/providers-stocks-and-budgets.md)
-      + Otimização de campanha {#campaign-optimization}
-         + [Sobre tipologias de campanha](campaign-opt/using/about-campaign-typologies.md)
-         + [Regras de pressão](campaign-opt/using/pressure-rules.md)
-         + [Regras de consistência](campaign-opt/using/consistency-rules.md)
-         + [Regras de controle](campaign-opt/using/control-rules.md)
-         + [Regras de filtragem](campaign-opt/using/filtering-rules.md)
-         + [Aplicar regras](campaign-opt/using/applying-rules.md)
-         + [Simulações de campanha](campaign-opt/using/campaign-simulations.md)
+   + Sobre campanhas de marketing {#about-marketing-campaigns}
+      + [Criar campanhas de marketing](campaign/using/designing-marketing-campaigns.md)
+      + [Acessar campanhas de marketing](campaign/using/accessing-marketing-campaigns.md)
+   + Orquestrar campanhas {#orchestrate-campaigns}
+      + [Introdução a campanhas de marketing](campaign/using/setting-up-marketing-campaigns.md)
+      + [Criar e configurar modelos](campaign/using/marketing-campaign-templates.md)
+      + [Adicionar entregas](campaign/using/marketing-campaign-deliveries.md)
+      + [Selecionar o público-alvo](campaign/using/marketing-campaign-target.md)
+      + [Gerenciar documentos e ativos](campaign/using/marketing-campaign-assets.md)
+      + [Configurar e gerenciar aprovações](campaign/using/marketing-campaign-approval.md)
+      + [Monitorar suas campanhas](campaign/using/marketing-campaign-monitoring.md)
+      + [Provedores, estoques e orçamentos](campaign/using/providers-stocks-and-budgets.md)
+   + Otimização de campanha {#campaign-optimization}
+      + [Sobre tipologias de campanha](campaign-opt/using/about-campaign-typologies.md)
+      + [Regras de pressão](campaign-opt/using/pressure-rules.md)
+      + [Regras de consistência](campaign-opt/using/consistency-rules.md)
+      + [Regras de controle](campaign-opt/using/control-rules.md)
+      + [Regras de filtragem](campaign-opt/using/filtering-rules.md)
+      + [Aplicar regras](campaign-opt/using/applying-rules.md)
+      + [Simulações de campanha](campaign-opt/using/campaign-simulations.md)
 + Gerenciamento de recursos de marketing {#mrm}
    + [Sobre o gerenciamento de recursos de marketing](mrm/using/about-marketing-resource-management.md)
    + [Criar e gerenciar tarefas](mrm/using/creating-and-managing-tasks.md)
