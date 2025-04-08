@@ -7,10 +7,10 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 100%
+source-wordcount: '325'
+ht-degree: 94%
 
 ---
 
@@ -52,10 +52,17 @@ Adicione o comando **nms:interação#UpdateStatus** à URL, seguido desses parâ
 
 ## Exemplo usando uma chamada SOAP {#example-using-a-soap-call}
 
-Veja um exemplo de código para uma chamada SOAP:
+Você encontrará abaixo um exemplo de código para uma chamada SOAP.
+
+Este é um exemplo de URL:
+
+```
+http://<urlOfYourJSSP>?env=liveRcp&sp=<nameSpaceOfferSpace>&t=<targetID>
+```
 
 ```
 <%
+  var env = request.getUTF8Parameter("env");
   var space = request.parameters.sp
   var cnx = new HttpSoapConnection(
     "https://" + request.serverName + ":" + request.serverPort + "/interaction/" + env + "/" + space,
@@ -104,7 +111,7 @@ Veja um exemplo de código para uma chamada SOAP:
       var result = session.Propose(target, count, category, theme, <empty/>)
       var props = result[1]
   %><table><tr><%
-      for each( var propHtml in props.proposition.*.mdSource )
+      for each( var propHtml in props.proposition.*.htmlSource )
       {
         %><td><%=propHtml%></td><%
       }

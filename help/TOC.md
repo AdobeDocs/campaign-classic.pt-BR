@@ -6,10 +6,10 @@ title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: efeb6c7d0969c66ec9bd63f4bf424224c8ca222b
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '2571'
-ht-degree: 100%
+source-wordcount: '2574'
+ht-degree: 99%
 
 ---
 
@@ -849,4 +849,5 @@ ht-degree: 100%
    + Migração para o Adobe Managed Services{#dc-migration}
       + [Migração para a Nuvem pública](technotes/using/dc-migration.md)
       + [Perguntas frequentes](technotes/using/dc-migration-faq.md)
+   + [Funções baseadas em GCM](technotes/using/gcm-functions.md)
 + [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR)
