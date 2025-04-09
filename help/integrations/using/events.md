@@ -6,11 +6,12 @@ feature: Triggers
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
+level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1206'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -113,7 +114,7 @@ Exemplo:
 
 Os eventos são processados um de cada vez, por ordem de deslocamento. Cada thread do [!DNL pipelined] processa uma partição diferente.
 
-O &quot;deslocamento&quot; do último evento recuperado é armazenado no banco de dados. Portanto, se o processo for interrompido, será reiniciado a partir da última mensagem. Esses dados são armazenados no schema incorporado xtk:pipelineOffset.
+O &quot;deslocamento&quot; do último evento recuperado é armazenado no banco de dados. Portanto, se o processo for interrompido, será reiniciado a partir da última mensagem. Esses dados são armazenados no schema integrado xtk:pipelineOffset.
 
 Esse ponteiro é específico para cada instância e para cada consumidor. Portanto, quando muitas instâncias acessam o mesmo pipeline com consumidores diferentes, cada um recebe todas as mensagens na mesma ordem.
 
@@ -219,7 +220,7 @@ Os eventos podem ser exibidos com um formulário simples baseado no schema de ev
 
 >[!NOTE]
 >
->O nó do evento pipeline não está incorporado e precisa ser adicionado, assim como o formulário relacionado precisa ser criado no Campaign. Essas operações são restritas unicamente a usuários especialistas. Para obter mais informações, consulte estas seções: [Hierarquia de navegação](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy) e [Edição de formulários](../../configuration/using/editing-forms.md).
+>O nó do evento pipeline não está integrado e precisa ser adicionado, assim como o formulário relacionado precisa ser criado no Campaign. Essas operações são restritas unicamente a usuários especialistas. Para obter mais informações, consulte estas seções: [Hierarquia de navegação](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy) e [Edição de formulários](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 

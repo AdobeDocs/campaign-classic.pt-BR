@@ -6,11 +6,12 @@ feature: Triggers
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
 content-type: reference
+level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 100%
+source-wordcount: '832'
+ht-degree: 98%
 
 ---
 
@@ -27,7 +28,7 @@ Os acionadores são usados para direcionamento por um fluxo de trabalho de campa
 Antes de iniciar esta configuração, verifique se você tem:
 
 * Um projeto do Adobe Developer
-* Uma ID de organização válida – para encontrar sua ID de organização, consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Um ID de organização válido - Para encontrar seu ID de organização, consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Um acesso de desenvolvedor para sua organização
 * Uma configuração de acionadores válida no Adobe Analytics
 
@@ -128,7 +129,7 @@ A lista de parâmetros opcionais é:
 | pointerFlushMessageCount | Quando esse número de mensagens é processado, os corretores serão salvos no banco de dados. <br> O padrão é 1000 |
 | pointerFlushPeriodSec | Após esse período, os deslocamentos serão salvos no banco de dados. <br>O padrão é 5 (segundos) |
 | processingJSThreads | Número de mensagens de processamento de threads dedicados com conectores JS personalizados. <br> O padrão é 4 |
-| processingThreads | Número de mensagens de processamento de threads dedicados com código incorporado. <br>O padrão é 4 |
+| processingThreads | Número de mensagens de processamento de threads dedicados com código integrado. <br>O padrão é 4 |
 | retryPeriodSec | Atraso entre tentativas em caso de erros de processamento. <br>O padrão é 30 (segundos) |
 | retryValiditySec | Descarte a mensagem se ela não for processada com êxito após esse período (muitas tentativas). <br>O padrão é 300 (segundos) |
 

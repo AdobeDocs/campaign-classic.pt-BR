@@ -6,9 +6,10 @@ feature: Custom Resources
 role: Data Engineer, Developer
 audience: configuration
 content-type: reference
+level: Intermediate, Experienced
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 11%
@@ -19,7 +20,7 @@ ht-degree: 11%
 
 A estrutura básica de um schema é descrita abaixo.
 
-## Esquemas de dados  {#data-schema}
+## Esquemas de dados {#data-schema}
 
 Para um `<srcschema>`, a estrutura é a seguinte:
 
@@ -72,7 +73,7 @@ O documento XML de um schema de dados deve conter o **`<srcschema>`** elemento r
 </srcSchema>
 ```
 
-Vamos usar o seguinte conteúdo XML para ilustrar a estrutura de um schema de dados:
+Vamos usar a seguinte conteúdo XML para ilustrar a estrutura de um schema de dados:
 
 ```sql
 <recipient email="John.doe@aol.com" created="2009/03/12" gender="1"> 
@@ -80,7 +81,7 @@ Vamos usar o seguinte conteúdo XML para ilustrar a estrutura de um schema de da
 </recipient>
 ```
 
-Com seu schema de dados correspondente:
+Com os dados correspondentes schema:
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -107,7 +108,7 @@ No nosso exemplo, o elemento principal é representado pela seguinte linha:
 
 Os elementos **`<attribute>`** e **`<element>`** que seguem o elemento principal são usados para definir os locais e os nomes dos itens de dados na estrutura XML.
 
-No nosso esquema de amostra, são eles:
+Em nosso schema de amostra, estes são:
 
 ```sql
 <attribute name="email"/>
@@ -146,10 +147,10 @@ Os seguintes tipos de dados são aceitos em esquemas:
 
 * **booleano**: campo booleano. Exemplo de valores possíveis: true/false, 0/1, yes/no, etc.
 * **byte**, **short**, **long**: números inteiros (1 byte, 2 bytes, 4 bytes). Exemplos: uma idade, um número de conta, um número de pontos, etc.
-* **double**: número de ponto flutuante de precisão dupla. Exemplos: um preço, uma taxa etc.
-* **data**, **datetime**: datas e datas + horas. Exemplos: uma data de nascimento, uma data de compra etc.
+* **** duplo: número flutuante de precisão duplo. Exemplos: um preço, uma taxa etc.
+* **data**, **data e hora**: datas e datas + horas. Exemplos: uma data de nascimento, uma data de compra etc.
 * **datetimenotz**: data + hora sem dados de fuso horário.
-* **período**: durações. Exemplo: prioridade.
+* **timespan**: durations. Exemplo: antiguidade.
 * **memorando**: campos de texto longo (várias linhas). Exemplos: uma descrição, um comentário etc.
 * **uuid**: campos &quot;uniqueidentifier&quot; para dar suporte a uma GUID (com suporte somente no Microsoft SQL Server).
 
@@ -191,7 +192,7 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
   <tr> 
    <td> Booleano<br /> </td> 
    <td> SMALLINT<br /> </td> 
-   <td> NÚMERO(3)<br /> </td> 
+   <td> NUMBER(3)<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
@@ -230,7 +231,7 @@ A tabela abaixo lista os mapeamentos para os tipos de dados gerados pelo Adobe C
   </tr> 
   <tr> 
    <td> Data e hora<br /> </td> 
-   <td> CARIMBO DE DATA/HORA<br /> </td> 
+   <td> CARIMBO DE DATA E HORA<br /> </td> 
    <td> DATA<br /> </td> 
   </tr> 
   <tr> 
@@ -262,11 +263,11 @@ Os elementos **`<elements>`** e **`<attributes>`** do esquema de dados podem ser
 
 ### Rótulos e descrições {#labels-and-descriptions}
 
-* A propriedade **label** permite inserir uma breve descrição.
+* O **rótulo** propriedade permite inserir uma breve descrição.
 
   >[!NOTE]
   >
-  >O rótulo é associado ao idioma atual da instância.
+  >O rótulo está associado ao idioma atual do instância.
 
   **Exemplo**:
 
@@ -274,13 +275,13 @@ Os elementos **`<elements>`** e **`<attributes>`** do esquema de dados podem ser
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  O rótulo é exibido no formulário de entrada do console do cliente Adobe Campaign:
+  O rótulo é exibido no Adobe Campaign formulário de entrada do console do cliente:
 
   ![](assets/d_ncs_integration_schema_label.png)
 
-* A propriedade **desc** permite inserir uma descrição longa.
+* A **propriedade desc** permite inserir uma longa descrição.
 
-  A descrição é exibida no formulário de entrada na barra de status da janela principal do console do cliente Adobe Campaign.
+  A descrição é exibida no formulário de entrada na barra de status da janela principal Adobe Campaign console do cliente.
 
   >[!NOTE]
   >
@@ -311,9 +312,9 @@ O valor deve ser uma expressão compatível com a linguagem XPath. Para obter ma
 
 Para vincular um valor padrão a um campo, você pode usar o `<default>` ou `<sqldefault>`   campo.
 
-`<default>` : permite preencher previamente o campo com um valor padrão ao criar entidades. O valor não será um valor SQL padrão.
+`<default>` : permite pré-preencher o campo com um valor padrão ao criar entidades. O valor não será um valor SQL padrão.
 
-`<sqldefault>` : permite que você tenha um valor adicionado ao criar um campo. Esse valor aparece como um resultado SQL. Durante uma atualização de schema, somente os novos registros serão afetados por esse valor.
+`<sqldefault>` : permite que você tenha um valor agregado ao criar um campo. Esse valor aparece como um resultado SQL. Durante uma atualização schema, somente os novos registros serão afetados por esse valor.
 
 ### Enumerações {#enumerations}
 
@@ -355,11 +356,11 @@ Exemplo de uma declaração de enumeração no schema de dados:
 
 Uma enumeração é declarada fora do elemento principal por meio do elemento **`<enumeration>`**.
 
-As propriedades de enumeração são as seguintes:
+As lista discriminada propriedades são as seguintes:
 
-* **baseType**: tipo de dados associado aos valores
-* **rótulo**: descrição da enumeração
-* **nome**: nome da enumeração
+* **baseType**: tipo de dados associados aos valores
+* **rótulo**: descrição do lista discriminada
+* **nome**: nome do lista discriminada
 * **padrão**: valor padrão da enumeração
 
 Os valores de enumeração são declarados no elemento **`<value>`** com os seguintes atributos:
@@ -367,11 +368,11 @@ Os valores de enumeração são declarados no elemento **`<value>`** com os segu
 * **nome**: nome do valor armazenado internamente
 * **rótulo**: rótulo exibido na interface gráfica
 
-#### enumeração dbenum {#dbenum-enumeration}
+#### lista discriminada de big data {#dbenum-enumeration}
 
-*A propriedade **dbenum** permite definir uma enumeração cujas propriedades são semelhantes às da propriedade **enum**.
+*O **propriedade dbenum** permite definir uma lista discriminada cujas propriedades são semelhantes às do **propriedade de enum.**
 
-No entanto, o atributo **name** não armazena o valor internamente, ele armazena um código que permite estender as tabelas relacionadas sem modificar o esquema.
+No entanto, o **atributo nome** não armazenamento o valor internamente, ele armazena um código que permite estender as tabelas relacionadas sem modificar suas schema.
 
 Essa lista discriminada é usada para especificar a natureza das campanhas, por exemplo.
 
@@ -433,8 +434,8 @@ Os elementos são designados pelo nome e os atributos são designados pelo nome 
 
 * **@email**: seleciona o email,
 * **location/@city**: seleciona o atributo &quot;city&quot; no elemento **`<location>`**
-* **../@email**: seleciona o endereço de email do elemento pai do elemento atual
-* **group`[1]/@label`**: seleciona o atributo &quot;label&quot; que é filho do primeiro elemento de coleção **`<group>`**
+* **.. /@email**: seleciona o endereço de email do elemento pai do elemento atual
+* **`[1]/@label`** grupo: seleciona o atributo &quot;rótulo&quot; que é filho do primeiro **`<group>`** elemento coleção
 * **group`[@label='test1']`**: seleciona o atributo &quot;label&quot; que é filho do elemento **`<group>`** e contém o valor &quot;test1&quot;
 
 >[!NOTE]
@@ -466,9 +467,9 @@ Você pode acessar a lista de funções disponíveis por meio de qualquer editor
 
 Uma **cadeia de caracteres de computação** é uma expressão XPath usada para construir uma cadeia de caracteres que representa um registro em uma tabela associada ao esquema. A **Cálculo de cadeia de caracteres** é usada principalmente na interface gráfica para exibir o rótulo de um registro selecionado.
 
-A **Cálculo de cadeia de caracteres** é definida por meio do elemento **`<compute-string>`** sob o elemento principal do esquema de dados. Um atributo **expr** contém uma expressão XPath para calcular a exibição.
+A **Cálculo de cadeia de caracteres** é definida por meio do elemento **`<compute-string>`** sob o elemento principal do esquema de dados. Um **atributo expr** contém um expressão XPath para calcular a exibição.
 
-**Exemplo**: cadeia de caracteres de cálculo da tabela de destinatários.
+**Exemplo**: calcular a string da tabela de recipient.
 
 ```sql
 <srcSchema name="recipient" namespace="nms">  
@@ -479,11 +480,11 @@ A **Cálculo de cadeia de caracteres** é definida por meio do elemento **`<comp
 </srcSchema>
 ```
 
-Resultado da cadeia de caracteres computada para um destinatário: **Doe John (john.doe@aol.com)**
+Resultado da sequência computada para um recipient: **Doe John (john.doe@aol.com)**
 
 >[!NOTE]
 >
->Se o esquema não contiver uma Cálculo de cadeia de caracteres, uma Cálculo de cadeia de caracteres será preenchida por padrão com os valores da chave primária do esquema.
+>Se a schema não contiver uma sequência de caracteres de Cálculo, uma sequência de caracteres de Cálculo será preenchida por padrão com os valores da chave primária do schema.
 
 
 ## Saiba mais

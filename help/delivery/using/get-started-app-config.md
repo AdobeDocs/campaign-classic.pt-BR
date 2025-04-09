@@ -4,9 +4,10 @@ title: Configurar o aplicativo para dispositivos móveis no Adobe Campaign
 description: Saiba como iniciar a configuração do aplicativo móvel
 feature: Push
 role: User, Developer
+level: Intermediate, Experienced
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 100%
 
@@ -42,7 +43,7 @@ Como cliente local, você precisa instalar um pacote integrado.
 
 >[!CAUTION]
 >
->Saiba mais sobre os pacotes inctegrados do Campaign, as práticas recomendadas e as recomendações [nesta página](../../installation/using/installing-campaign-standard-packages.md).
+>Saiba mais sobre os pacotes integrados do Campaign, as práticas recomendadas e as recomendações [nesta página](../../installation/using/installing-campaign-standard-packages.md).
 
 As etapas de instalação são:
 

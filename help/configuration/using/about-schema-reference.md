@@ -4,8 +4,9 @@ title: Introdução a esquemas no Adobe Campaign
 description: Saiba como trabalhar com esquemas e estender o modelo de dados conceituais do banco de dados do Adobe Campaign
 feature: Schema Extension
 role: Data Engineer, Developer
+level: Intermediate, Experienced
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 44c40bbd8bff16cbe220d3af3a7bb2847762f58b
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 Este capítulo descreve como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign.
 
-Para compreender melhor as tabelas integradas do Campaign e suas interações, consulte o [modelo de dados Campaign Classic](about-data-model.md).
+Para entender melhor as tabelas integradas do Campaign e suas interações, consulte o [modelo de dados do Campaign Classic](about-data-model.md).
 
 No Adobe Campaign, a estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Um **esquema** é um documento XML associado a uma tabela de banco de dados. Ele define a estrutura de dados e descreve a definição SQL da tabela:
 
