@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3864'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Consulte as [Notas de versão do Adobe Campaign Classic](../../rn/using/latest-r
 
 ### Março de 2025 {#march-2025}
 
-Como parte de uma iniciativa de promoção do Campaign v8, começamos a reorganizar o conjunto de documentação do Campaign Classic. Na versão 7.4.2, estamos lançando o primeiro marco. Os guias a seguir foram substituídos por páginas de aterrissagem, incluindo links para a documentação do v8:
+Como parte de uma iniciativa de promoção do Campaign v8, começamos a reorganizar o conjunto de documentação do Campaign Classic. Na versão 7.4.2, lançaremos o primeiro marco. Os guias a seguir foram substituídos por Landing Pages, incluindo links para a documentação da v8:
 
-* Orquestrar campanhas de marketing: este guia foi substituído por uma [página de aterrissagem](../../campaign/using/about-marketing-campaigns.md).
+* Orquestrar campanhas de marketing: este guia foi substituído por uma [landing page](../../campaign/using/about-marketing-campaigns.md).
 * Gerenciamento de recursos de marketing: este guia foi removido.
 * Marketing distribuído: este guia foi removido.
-* Automatizar com fluxos de trabalho: este guia foi substituído por uma [página de aterrissagem](../../workflow/using/about-workflow-automation.md)
+* Automatizar com fluxos de trabalho: este guia foi substituído por uma [landing page](../../workflow/using/about-workflow-automation.md)
 
 ## 2024
 
