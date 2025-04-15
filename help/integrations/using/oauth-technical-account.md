@@ -5,7 +5,7 @@ description: Saiba como criar sua conta da API do Adobe
 role: User, Admin
 level: Intermediate, Experienced
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 15%
@@ -20,7 +20,7 @@ As credenciais de autenticação de servidor para servidor permitem que o servid
 
 A credencial da conta de serviço (JWT) está sendo substituída pela Adobe. As integrações do Campaign com soluções e aplicativos da Adobe agora devem depender da credencial OAuth de servidor para servidor.
 
-Se você implementou integrações de entrada ou saída com o Campaign antes de junho de 2024, atualize seu ambiente do Campaign para v7.4.1 e migre sua conta técnica para oAuth conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}. As credenciais da conta de serviço (JWT) já existentes continuarão a funcionar até **27 de janeiro de 2025**. 
+Se você implementou integrações de entrada ou saída com o Campaign antes de junho de 2024, atualize seu ambiente do Campaign para v7.4.1 e migre sua conta técnica para oAuth conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}. As credenciais da conta de serviço (JWT) já existentes continuarão a funcionar até **terça-feira, 30 de junho de 2025**. 
 
 Depois que a migração for concluída, você deverá associar sua nova credencial ao Campaign, conforme explicado em [esta seção](#add-credentials).
 

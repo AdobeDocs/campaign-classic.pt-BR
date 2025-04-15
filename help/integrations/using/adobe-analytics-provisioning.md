@@ -7,10 +7,10 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 8d15a5666b5768bc0f17a4391061c4fcb9f76811
+source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '630'
+ht-degree: 85%
 
 ---
 
@@ -38,9 +38,9 @@ Para que essa integração funcione, é necessário criar um perfil de produto d
 >
 > A credencial de conta de serviço (JWT) está sendo descontinuada pela Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem usar a credencial de servidor para servidor OAuth. </br>
 >
-> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As [credenciais da Conta de Serviço (JWT)](oauth-technical-account.md) existentes continuarão a funcionar até 27 de janeiro de 2025.</br>
+> * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As [credenciais da conta de serviço (JWT)](oauth-technical-account.md) já existentes continuarão funcionando até terça-feira, 30 de junho de 2025.</br>
 >
-> * Se você tiver implementado integrações de saída, como a integração do Campaign com o Analytics ou a integração dos acionadores da Experience Cloud, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar seu ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para o OAuth.
+> * Se você tiver implementado integrações de saída, como a integração Campaign-Analytics ou a integração do Experience Cloud Triggers, elas continuarão a funcionar até 30 de junho de 2025. No entanto, antes dessa data, você deve atualizar seu ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para o OAuth.
 
 ## Criar um perfil de produto do Adobe Analytics {#analytics-product-profile}
 
