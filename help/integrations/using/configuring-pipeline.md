@@ -9,9 +9,9 @@ content-type: reference
 level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Os acionadores são usados para direcionamento por um fluxo de trabalho de campa
 Antes de iniciar esta configuração, verifique se você tem:
 
 * Um projeto do Adobe Developer
-* Um ID de organização válido - Para encontrar seu ID de organização, consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Uma ID da organização válida: para encontrar a ID da sua organização, consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Um acesso de desenvolvedor para sua organização
 * Uma configuração de acionadores válida no Adobe Analytics
 

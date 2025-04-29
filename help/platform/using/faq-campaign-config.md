@@ -9,9 +9,9 @@ level: Beginner, Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '752'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Depois de fazer logon, acesse o **[!UICONTROL File]** > **[!UICONTROL Clear the 
 
 ![](assets/faq_soft_cache.png)
 
-Se isso ainda não ajudar, tente limpar o Hard Cache por meio da execução das etapas abaixo.
+Se isso não ajudar, tente limpar o cache rígido por meio das etapas abaixo.
 
 ## Como executar o Hard Cache Clear quando os problemas são específicos da máquina ou do usuário? {#perform-hard-cache-clear}
 

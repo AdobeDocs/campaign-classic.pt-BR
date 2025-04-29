@@ -9,9 +9,9 @@ content-type: reference
 level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1206'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -114,7 +114,7 @@ Exemplo:
 
 Os eventos são processados um de cada vez, por ordem de deslocamento. Cada thread do [!DNL pipelined] processa uma partição diferente.
 
-O &quot;deslocamento&quot; do último evento recuperado é armazenado no banco de dados. Portanto, se o processo for interrompido, será reiniciado a partir da última mensagem. Esses dados são armazenados no schema integrado xtk:pipelineOffset.
+O “deslocamento” do último evento recuperado é armazenado no banco de dados. Portanto, se o processo for interrompido, será reiniciado a partir da última mensagem. Esses dados são armazenados no schema integrado xtk:pipelineOffset.
 
 Esse ponteiro é específico para cada instância e para cada consumidor. Portanto, quando muitas instâncias acessam o mesmo pipeline com consumidores diferentes, cada um recebe todas as mensagens na mesma ordem.
 
