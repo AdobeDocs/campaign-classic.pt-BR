@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9b93603a076b007d66aad52b05e560e17e316eeb
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 100%
+source-wordcount: '854'
+ht-degree: 92%
 
 ---
 
@@ -90,7 +90,7 @@ Cada vez que você usa o recurso **[!UICONTROL Inbox rendering]** em uma entrega
 >* Para a mesma entrega, se você gerar a renderização da Caixa de Entrada novamente, o número de tokens disponíveis será reduzido novamente pelo número de renderizações geradas.
 >
 
-O número de tokens disponíveis restantes é exibido no **[!UICONTROL General summary]** do [relatório de renderização da Caixa de entrada](#inbox-rendering-report)
+O número de tokens disponíveis restantes é exibido no [relatório de renderização da Caixa de Entrada](#inbox-rendering-report).
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -123,13 +123,13 @@ Para obter mais informações sobre como criar, desenvolver e segmentar uma entr
 
 Este relatório exibe as renderizações da caixa de entrada como são exibidas para o destinatário. As renderizações podem ser diferentes com base em como o destinatário abre a entrega de email: em um navegador, em um dispositivo móvel ou por um aplicativo de email.
 
-O **[!UICONTROL General summary]** apresenta em uma lista e por meio de uma representação gráfica colorida o número de mensagens recebidas, indesejadas (spam), não recebidas ou com recebimento pendente.
+A seção superior apresenta a repartição do número de mensagens recebidas, indesejadas (spam), não recebidas ou recebimentos pendentes por meio de uma representação gráfica colorida.
 
-![](assets/s_tn_inbox_rendering_summary.png)
+![](assets/s_tn_inbox_rendering_summary.png){width="40%" align="left"}
 
-Passe o mouse sobre o gráfico para exibir os detalhes para cada cor.
+Passe o mouse sobre o gráfico para exibir os detalhes de cada cor. Clique em um item na lista para ocultar ou exibir a categoria correspondente no gráfico.
 
-O conjunto do relatório está dividido em três partes: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]** e **[!UICONTROL Webmails]**. Role para baixo no relatório para exibir todas as renderizações agrupadas nessas três categorias.
+O conjunto do relatório está dividido em três partes: **[!UICONTROL Mobile]**, **[!UICONTROL Desktop]** e **[!UICONTROL Webmails]**. Role para baixo no relatório para exibir todas as renderizações agrupadas nessas três categorias.
 
 ![](assets/s_tn_inbox_rendering_report.png)
 
