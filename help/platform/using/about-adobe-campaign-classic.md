@@ -91,6 +91,6 @@ Os recursos abaixo estão disponíveis. A disponibilidade desses recursos depend
 
 Este vídeo apresenta os principais recursos e funcionalidades do Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/39519?quality=12&captions=por_br)
 
 Vídeos extras com instruções do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

@@ -39,6 +39,6 @@ Para configurar e executar tarefas de importação e exportação de dados, vá 
 
 Este vídeo explica como importar perfis no Adobe Campaign para uma importação ocasional.
 
->[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31867?quality=12&captions=por_br)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

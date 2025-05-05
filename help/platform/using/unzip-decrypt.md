@@ -106,6 +106,6 @@ As etapas para executar esse caso de uso são as seguintes:
 
 Este vídeo mostra como usar uma chave GPG para descriptografar dados.
 
->[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/41363?quality=12&captions=por_br)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

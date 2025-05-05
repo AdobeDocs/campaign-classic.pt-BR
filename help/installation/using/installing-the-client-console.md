@@ -173,6 +173,6 @@ Para fazer logon em uma instância existente, siga as etapas abaixo:
 
 Este vídeo mostra como instalar e configurar o Adobe Campaign Client.
 
->[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/38272?quality=12&captions=por_br)
 
 Vídeos extras com instruções do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

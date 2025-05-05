@@ -19,7 +19,7 @@ ht-degree: 100%
 >id="ac_workflow_intersection"
 >title="Atividade de intersecção"
 >abstract="Uma atividade do tipo intersecção cria um público alvo a partir da intersecção dos públicos alvos recebidos. Uma intersecção permite extrair somente o público que é comum a todos os resultados da atividade de entrada."
->additional-url="https://video.tv.adobe.com/v/329373" text="Assista ao vídeo de demonstração"
+>additional-url="https://video.tv.adobe.com/v/341377?captions=por_br" text="Assista ao vídeo de demonstração"
 
 
 

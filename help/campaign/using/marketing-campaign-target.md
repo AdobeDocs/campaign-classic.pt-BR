@@ -246,6 +246,6 @@ Você pode definir uma nova população a ser usada como um grupo de controle. E
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31837?quality=12&captions=por_br)
 
 Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
