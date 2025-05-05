@@ -150,7 +150,7 @@ O uso do PostgreSQL com Adobe Campaign também requer a instalação das bibliot
 
 ### Oracle {#oracle}
 
-Recupere a versão biblioteca para Debian de 64 bits, ou seja: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 **ou** libclntsh.so.10.1 **.******
+Recupere a versão biblioteca para Debian de 64 bits, ou seja: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 **ou** libclntsh.so.10.1 **.**&#x200B;**&#x200B;**
 
 É possível obter um pacote de RPM do Linux da Oracle Technology Network.
 

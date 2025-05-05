@@ -458,7 +458,7 @@ Há três maneiras possíveis de resolver um conflito:
 
   >[!IMPORTANT]
   >
-  Se você selecionar esse modo de resolução, corre o risco de perder patches na nova versão. Por conseguinte, recomenda-se vivamente que esta opção não seja utilizada ou reservada apenas a operadores especializados.
+  >Se você selecionar esse modo de resolução, corre o risco de perder patches na nova versão. Por conseguinte, recomenda-se vivamente que esta opção não seja utilizada ou reservada apenas a operadores especializados.
 
 Se você optar por resolver o conflito manualmente, proceda da seguinte maneira:
 
@@ -507,13 +507,13 @@ Na v7, o conteúdo da oferta foi movido. Na v6.02, o conteúdo estava em cada es
 
 >[!IMPORTANT]
 >
-Se alguns deliveries usando ofertas configuradas tiverem que ser enviados após a migração, você deverá excluir e recriar todos esses deliveries no v7. Se você não conseguir fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Esse modo não é recomendado porque você não se beneficiará de todos os novos recursos do Interaction v7. Esse é um modo de transição que permite concluir campanhas em andamento antes da migração real para o 6.1. Para obter mais informações sobre este modo, entre em contato conosco.
+>Se alguns deliveries usando ofertas configuradas tiverem que ser enviados após a migração, você deverá excluir e recriar todos esses deliveries no v7. Se você não conseguir fazer isso, um &quot;modo de compatibilidade&quot; será oferecido. Esse modo não é recomendado porque você não se beneficiará de todos os novos recursos do Interaction v7. Esse é um modo de transição que permite concluir campanhas em andamento antes da migração real para o 6.1. Para obter mais informações sobre este modo, entre em contato conosco.
 
 Um exemplo de script de movimentação (**interactionTo610_full_XX.js**) está disponível na pasta **Migration** da pasta do Adobe Campaign v7. Este arquivo mostra um exemplo de um script para um cliente usando uma única representação de email por oferta (os campos **[!UICONTROL htmlSource]** e **[!UICONTROL textSource]**). O conteúdo que estava na tabela **NmsEmailOfferView** foi movido para a tabela de ofertas.
 
 >[!NOTE]
 >
-Usar esse script não permite que você se beneficie das opções de &quot;gerenciamento de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, é necessário repensar as ofertas de catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
+>Usar esse script não permite que você se beneficie das opções de &quot;gerenciamento de conteúdo&quot; e &quot;funções de renderização&quot;. Para se beneficiar dessas funções, é necessário repensar as ofertas de catálogo, especialmente o conteúdo da oferta e os espaços de configuração.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -613,7 +613,7 @@ Este é o procedimento a ser seguido após mover o conteúdo da oferta se você 
 
    >[!NOTE]
    >
-   Os nomes das categorias e ofertas online são modificados após serem ativadas. No canal de entrada, atualize todas as referências a ofertas e categorias.
+   >Os nomes das categorias e ofertas online são modificados após serem ativadas. No canal de entrada, atualize todas as referências a ofertas e categorias.
 
 ## Relatórios {#reports}
 

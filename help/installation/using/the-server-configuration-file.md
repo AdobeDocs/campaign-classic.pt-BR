@@ -1625,9 +1625,9 @@ Estes são os diferentes parâmetros do nó **mta**. Essa é a configuração do
    <td> statServerAddress<br /> </td> 
    <td> Endereço do servidor de estatísticas de entrega, fornecido como 
     &lt;dns ou ip&gt; 
-      <code>[</code>: 
+      <code>&lbrack;</code>: 
      &lt;porta&gt; 
-       <code>]</code>. Consulte 
+       <code>&rbrack;</code>. Consulte 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordenadas do servidor de estatísticas</a>. 
       <br /> 
      </td> 

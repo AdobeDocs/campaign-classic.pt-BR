@@ -125,7 +125,7 @@ No console do cliente, localize a conta de mid-sourcing **Roteamento de email us
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Reinicie o módulo Web usando o seguinte comando: ** web**.
+1. Reinicie o módulo Web usando o seguinte comando: **&#x200B; web**.
 
 Você deve alterar a configuração do servidor mid-sourcing no arquivo serverConf.xml. A linha a seguir deve ser adicionada à seção &quot;Management of affinities with IP addresses&quot;, na linha existente:
 
@@ -139,9 +139,9 @@ O atributo &#39;@name&#39; deve respeitar as seguintes regras:
 
 &#39;marketing_account_operator_name&#39; está relacionado ao nome interno da conta de mid-sourcing declarada na instância de mid-sourcing.
 
-&#39;affinity_name&#39; está relacionado ao nome arbitrário fornecido para a afinidade. Esse nome deve ser exclusivo. Os caracteres autorizados são `[a-z]``[A-Z]``[0-9]`. O objetivo é declarar um grupo de endereços IP públicos.
+&#39;affinity_name&#39; está relacionado ao nome arbitrário fornecido para a afinidade. Esse nome deve ser exclusivo. Os caracteres autorizados são `[a-z]` `[A-Z]` `[0-9]`. O objetivo é declarar um grupo de endereços IP públicos.
 
-&#39;affinity_group&#39; relaciona a subafinidade declarada no target mapping usado em cada um dos deliveries. A última parte, incluindo o caractere &#39;.&#39; é ignorado se não houver Subafinidade. Os caracteres autorizados são `[a-z]``[A-Z]``[0-9]`.
+&#39;affinity_group&#39; relaciona a subafinidade declarada no target mapping usado em cada um dos deliveries. A última parte, incluindo o caractere &#39;.&#39; é ignorado se não houver Subafinidade. Os caracteres autorizados são `[a-z]` `[A-Z]` `[0-9]`.
 
 Você deve interromper e reiniciar o servidor para que a modificação seja considerada.
 

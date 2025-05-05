@@ -147,7 +147,7 @@ Os seguintes tipos de dados são aceitos em esquemas:
 
 * **booleano**: campo booleano. Exemplo de valores possíveis: true/false, 0/1, yes/no, etc.
 * **byte**, **short**, **long**: números inteiros (1 byte, 2 bytes, 4 bytes). Exemplos: uma idade, um número de conta, um número de pontos, etc.
-* **** duplo: número flutuante de precisão duplo. Exemplos: um preço, uma taxa etc.
+* **&#x200B;**&#x200B;duplo: número flutuante de precisão duplo. Exemplos: um preço, uma taxa etc.
 * **data**, **data e hora**: datas e datas + horas. Exemplos: uma data de nascimento, uma data de compra etc.
 * **datetimenotz**: data + hora sem dados de fuso horário.
 * **timespan**: durations. Exemplo: antiguidade.

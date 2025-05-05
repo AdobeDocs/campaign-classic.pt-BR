@@ -23,7 +23,7 @@ As APIs do Adobe Campaign são usadas no JavaScript dentro do aplicativo e no SO
 >[!IMPORTANT]
 >
 >O número de Chamadas do Engine autorizadas por dia varia de acordo com o contrato de licença. Para obter mais informações, consulte [esta página](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Uma lista de todas as APIs, incluindo sua descrição completa, está disponível em [esta documentação dedicada](https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
+>Uma lista de todas as APIs, incluindo sua descrição completa, está disponível em [esta documentação dedicada] (https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
 
 ## Pré-requisitos {#prerequisites}
 
