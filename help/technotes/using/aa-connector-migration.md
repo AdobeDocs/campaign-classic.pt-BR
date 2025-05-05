@@ -16,7 +16,7 @@ ht-degree: 3%
 
 # Como migrar integrações de Genesis existentes para o Adobe Analytics Connector {#acc-aa-faq}
 
-A partir da versão 21.1.3 do Campaign Classic v7, o Conector de dados do Adobe Analytics não será mais utilizado. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
+A partir da versão 21.1.3 do Campaign Classic v7, o Conector de dados do Adobe Analytics não será mais utilizado. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html?lang=pt-BR)
 
 Em 1º de agosto de 2021, o Adobe Campaign Classic foi removido da interface herdada do Data Connectors. No entanto, as integrações existentes do Campaign continuarão a coletar e transmitir dados para o Adobe Analytics até 17 de agosto de 2022. Após essa data, a integração deixará de coletar e transmitir dados para o Adobe Analytics.
 

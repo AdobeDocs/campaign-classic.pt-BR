@@ -94,7 +94,7 @@ Não é mais possível criar, editar, atualizar ou excluir operadores com autent
 
 Como consequência, essas ações foram desativadas no console do cliente.
 
-A administração dos operadores é centralizada no Adobe Admin Console e as seguintes tarefas agora são gerenciadas exclusivamente por meio desse console. Saiba como criar usuários e atribuir permissões na [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
+A administração dos operadores é centralizada no Adobe Admin Console e as seguintes tarefas agora são gerenciadas exclusivamente por meio desse console. Saiba como criar usuários e atribuir permissões na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
 
 ### Opções indisponíveis {#unavailable-migration}
 

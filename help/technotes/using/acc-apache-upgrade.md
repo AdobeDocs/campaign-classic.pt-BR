@@ -26,7 +26,7 @@ A equipe do Adobe Campaign conduzirá a atividade de atualização de segurança
 
 Espera-se que essa atualização seja executada automaticamente fora do horário comercial normal para que você continue usando o serviço do Campaign sem interrupções.
 
-Suas instâncias de não produção serão atualizadas pelo Adobe primeiro, e suas instâncias de produção serão atualizadas. Como esse é um processo de atualização automático de propriedade do Adobe, nenhuma ação é necessária da sua parte. No entanto, se você tiver algum problema, entre em contato com o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Suas instâncias de não produção serão atualizadas pelo Adobe primeiro, e suas instâncias de produção serão atualizadas. Como esse é um processo de atualização automático de propriedade do Adobe, nenhuma ação é necessária da sua parte. No entanto, se você tiver algum problema, entre em contato com o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support).
 
 
 >[!NOTE]
@@ -57,7 +57,7 @@ Suas instâncias de não produção serão atualizadas pelo Adobe primeiro, e su
 
 * **Que validações precisam ser executadas pelos clientes?**
 
-  Nenhum teste específico é necessário para esta atualização de segurança. Caso algum problema seja observado, entre em contato com o [Adobe Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+  Nenhum teste específico é necessário para esta atualização de segurança. Caso algum problema seja observado, entre em contato com o [Adobe Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support).
 
 
 * **É possível solicitar uma alteração em Data/Hora no slot de atualização de segurança agendado?**
@@ -65,4 +65,4 @@ Suas instâncias de não produção serão atualizadas pelo Adobe primeiro, e su
   Como essa é uma correção de segurança, recomendamos que você se adapte à programação existente.
 
 
-Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support).

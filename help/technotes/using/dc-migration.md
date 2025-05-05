@@ -78,7 +78,7 @@ Este programa tem três objetivos principais:
 
 Para começar essa iniciativa, as contas que exigem essa migração receberão uma comunicação por email da Adobe fornecendo uma linha do tempo e acesso à documentação. Essa será a sua notificação de que sua conta está programada para ser migrada.
 
-Uma migração pode ser iniciada por [abrindo um novo tíquete de suporte do Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=Campaign#support). Use a linha de assunto &quot;Migrar para o AWS&quot;.
+Uma migração pode ser iniciada por [abrindo um novo tíquete de suporte do Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support). Use a linha de assunto &quot;Migrar para o AWS&quot;.
 
 ### Essa migração é obrigatória?
 

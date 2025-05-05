@@ -21,7 +21,7 @@ O Adobe descomissiona o data center herdado: as instâncias do Campaign Classic 
 
 Veja abaixo um conjunto de perguntas comuns sobre esse projeto, o impacto nos ambientes do Campaign e outros recursos úteis.
 
-Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support).
 
 ## Impactos na infraestrutura
 
@@ -51,7 +51,7 @@ Os impactos globais no banco de dados e na infraestrutura estão listados abaixo
 
 * **Qual é o plano para solucionar problemas após a migração?**
 
-  Testes abrangentes serão realizados antes da migração dos sistemas de produção. No entanto, em caso de problemas, o [Adobe do Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=Campaign#support) continuará sendo o principal ponto de contato. a Adobe criou uma equipe de especialistas para fornecer suporte avançado, se necessário.
+  Testes abrangentes serão realizados antes da migração dos sistemas de produção. No entanto, em caso de problemas, o [Adobe do Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support) continuará sendo o principal ponto de contato. a Adobe criou uma equipe de especialistas para fornecer suporte avançado, se necessário.
 
 ## Impactos na capacidade de entrega
 
@@ -97,7 +97,7 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 
   Primeiramente, a equipe de Entregabilidade do Adobe avaliará o status da capacidade de entrega da plataforma e recomendará um plano para a mudança para os novos IPs
 
-  Nenhum aquecimento será necessário após a migração. Pode haver algumas exceções e, nesse caso, o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) entrará em contato com os clientes.
+  Nenhum aquecimento será necessário após a migração. Pode haver algumas exceções e, nesse caso, o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support) entrará em contato com os clientes.
 
   No entanto, o plano é tornar essa operação transparente para a empresa, diferentemente do aumento inicial realizado durante a ativação.
 
