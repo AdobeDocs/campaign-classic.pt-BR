@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >id="ac_workflow_intersection"
 >title="Atividade de intersecção"
 >abstract="Uma atividade do tipo intersecção cria um público alvo a partir da intersecção dos públicos alvos recebidos. Uma intersecção permite extrair somente o público que é comum a todos os resultados da atividade de entrada."
->additional-url="https://video.tv.adobe.com/v/341377?captions=por_br" text="Assista ao vídeo de demonstração"
+>additional-url="https://video.tv.adobe.com/v/329373" text="Assista ao vídeo de demonstração"
 
 
 
