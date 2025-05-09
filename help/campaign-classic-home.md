@@ -19,9 +19,7 @@ ht-degree: 90%
 Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Adobe Campaign Classic v7. Para obter uma lista completa dos recursos, melhorias e correções, consulte as [Notas de versão](rn/using/latest-release.md) detalhadas.  Mantenha-se atualizado com as alterações mais recentes em nossa documentação, acessando a [página de atualizações da documentação](rn/using/documentation-updates.md).
 
 >[!BEGINTABS]
-
-
->A versão de [!TAB abril de 2025 está disponível!]
+>[!TAB A versão de  abril de 2025 está disponível!]
 
 Descubra atualizações, melhorias e correções que acompanham a versão Campaign Classic v7.4.2 - abril de 2025.
 
