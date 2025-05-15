@@ -4,9 +4,9 @@ product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 961f056ca8bf201e8cedcddb3a2b1f1a4e32b08a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,11 @@ ht-degree: 90%
 Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Adobe Campaign Classic v7. Para obter uma lista completa dos recursos, melhorias e correções, consulte as [Notas de versão](rn/using/latest-release.md) detalhadas.  Mantenha-se atualizado com as alterações mais recentes em nossa documentação, acessando a [página de atualizações da documentação](rn/using/documentation-updates.md).
 
 >[!BEGINTABS]
->[!TAB A versão de  abril de 2025 está disponível!]
 
-Descubra atualizações, melhorias e correções que acompanham a versão Campaign Classic v7.4.2 - abril de 2025.
+
+>[!TAB A versão de abril de 2025 já está disponível.]
+
+Confira as atualizações, melhorias e correções da versão v7.4.2 do Campaign Classic de abril de 2025.
 
 [![imagem](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -111,4 +113,4 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
 
 ## Recursos adicionais
 
-[Lista de mensagens de erro](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=pt-BR) - [Descrição do Produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Matriz de compatibilidade](rn/using/compatibility-matrix.md) - [Tutoriais](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
+[Lista de mensagens de erro](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=pt-BR) — [Descrição do produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} — [Matriz de compatibilidade](rn/using/compatibility-matrix.md) — [Tutoriais](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} — [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"}
