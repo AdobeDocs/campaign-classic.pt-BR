@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 100%
+source-wordcount: '142'
+ht-degree: 85%
 
 ---
 
@@ -23,74 +23,78 @@ O Adobe Campaign permite coordenar a criação de campanhas de marketing convers
 >
 >* Os materiais de ajuda nesta coleção se aplicam ao Campaign Classic v7 em sua [build mais recente](../../rn/using/latest-release.md). Um selo específico está disponível quando uma seção também se aplica ao Campaign v8.
 >
->* A documentação do Adobe Campaign v8 está disponível [aqui](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=pt-BR).
+>* Para saber mais sobre o Adobe Campaign e como começar, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}.
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra as principais características e recursos no vídeo](#video)
 
-## Principais recursos {#key-capabilities}
+<!--
 
-O Adobe Campaign fornece uma plataforma para projetar experiências de clientes entre canais, além de um ambiente para a orquestração visual de campanhas, a gestão de interações em tempo real e a execução entre canais.
+## Key capabilities {#key-capabilities}
 
-O ciclo de campanha de marketing do Adobe Campaign ilustra as principais áreas de funcionalidade do produto:
+Adobe Campaign provides a platform for designing cross-channel customer experiences and provides an environment for visual campaign orchestration, real time interaction management and cross channel execution.
+
+The marketing campaign cycle in Adobe Campaign illustrates the main areas of functionality of the product:
 
 ![](assets/d_ncs_user_emarketing.png)
 
-### Perfil de cliente integrado {#integrated-customer-profile}
+### Integrated customer profile {#integrated-customer-profile}
 
-Os perfis (clientes, clientes potenciais, assinantes de boletim informativo etc.) são centralizados no banco de dados do Adobe Campaign. Há vários mecanismos possíveis para obter perfis e criar esse banco de dados: coleta on-line via formulários Web, importação manual ou automática de arquivos de texto, replicação com bancos de dados corporativos ou outros sistemas de informações. Com o Adobe Campaign, você pode incorporar o histórico de marketing, informações de compras, preferências, dados de CRM e quaisquer dados PII relevantes em uma exibição consolidada para analisar e tomar decisões.
+Profiles (customers, prospects, newsletter subscribers, etc.) are centralized in the Adobe Campaign database. There are many possible mechanisms for acquiring profiles and building up this database: on-line collection via web forms, manual or automatic import of text files, replication with company databases or other information systems. With Adobe Campaign, you can incorporate marketing history, purchase information, preferences, CRM data, and any relevant PII data in a consolidated view to analyze and take action.
 
-No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (e-mails, SMS etc.). Graças aos dados dos destinatários que são armazenados no banco de dados, você poderá filtrar o destinatário que receberá qualquer entrega e adicionar dados de personalização ao seu conteúdo de entrega. Existem outros tipos de perfis no banco de dados. Esses perfis foram projetados para diferentes usos. Por exemplo, perfis iniciais são feitos para testar suas entregas antes que elas sejam enviadas ao destino final.
+In Adobe Campaign, recipients are the default profiles targeted for sending deliveries (emails, SMS, etc.). Thanks to the recipient data that are stored in the database, you will be able to filter the target that will receive any given delivery and to add personalization data in your delivery contents. Other types of profiles exist in the database. They are designed for different uses. For example, seed profiles are made to test your deliveries before they are sent to the final target.
 
-As noções básicas de gerenciamento de perfil são explicadas em [Sobre perfis](../../platform/using/about-profiles.md).
+Profile management basics are explained in [About profiles](../../platform/using/about-profiles.md).
 
-### Segmentação direcionada {#targeted-segmentation}
+### Targeted segmentation {#targeted-segmentation}
 
-O Adobe Campaign tem recursos avançados de segmentação e direcionamento que são fáceis de usar e permitem a criação de ofertas diferenciadas e altamente direcionadas. A funcionalidade de análise descritiva permite analisar informações sobre os altos e baixos de suas campanhas de marketing. A gestão de filtros e a funcionalidade do [editor gráfico de consultas](../../platform/using/about-queries-in-campaign.md) permitem filtrar sua população de assinantes e amostras ou criar grupos de destino com base em um número ilimitado de critérios. Os recursos de análise e direcionamento estão descritos [nesta página](../../reporting/using/about-descriptive-analysis.md) e na seção [Criação de filtros](../../platform/using/creating-filters.md).
+Adobe Campaign has powerful, user-friendly segmentation and targeting features that let you create highly targeted, differentiated offers. The descriptive analysis functionality lets you analyze information upstream and downstream of your marketing campaigns, and the filter management and [graphical query editor](../../platform/using/about-queries-in-campaign.md) functionality lets you filter your subscriber population and sample or create target groups based on an unlimited number of criteria. The analysis and targeting features are described in [this page](../../reporting/using/about-descriptive-analysis.md) and in the [Creating filters](../../platform/using/creating-filters.md) section.
 
-A funcionalidade avançada de Gestão de dados amplia os recursos de processamento de dados. Ela simplifica e otimiza o processo de segmentação ao incluir dados não modeladas no datamart. Essa funcionalidade é detalhada [nesta página](../../workflow/using/targeting-data.md#data-management).
+The advanced Data Management functionality extends the data processing capabilities. It simplifies and optimizes the targeting process by including data not modeled in the datamart. This functionality is detailed in [this page](../../workflow/using/targeting-data.md#data-management).
 
-### Orquestração de campanha entre canais {#cross-channel-campaign-orchestration}
+### Cross-channel campaign orchestration {#cross-channel-campaign-orchestration}
 
-O Adobe Campaign permite criar e organizar campanhas direcionadas e personalizadas em vários canais: email, correspondência direta, SMS e notificação por push. Uma única interface fornece todas as funções necessárias para agendar, organizar, configurar, personalizar, automatizar, executar e medir todas as suas campanhas e comunicações. Para obter mais informações sobre como agendar e executar campanhas, consulte [esta página](../../campaign/using/setting-up-marketing-campaigns.md).
+Adobe Campaign lets you design and orchestrate targeted and personalized campaigns on multiple channels: email, direct mail, SMS, push notification. A single interface provides you with all the functions required to schedule, orchestrate, configure, personalize, automate, execute, and measure all your campaigns and communications. For more on scheduling and executing campaigns, refer to [this page](../../campaign/using/setting-up-marketing-campaigns.md).
 
-### Personalização e interação em tempo real {#personalization-and-real-time-interaction}
+### Personalization and real-time interaction {#personalization-and-real-time-interaction}
 
-Atraia a atenção dos clientes e melhore as taxas de resposta com a personalização avançada do conteúdo de mensagens e os cabeçalhos com base em perfis e preferências do cliente. Para obter mais informações sobre a gestão de conteúdo de mensagens e personalização, consulte [esta página](../../delivery/using/about-personalization.md). A gestão colaborativa dos circuitos de conteúdo, notificação e aprovação está detalhada [nesta seção](../../mrm/using/about-marketing-resource-management.md).
+Attract your customers' attention and improve response rates thanks to the advanced personalization of message content and headers based on customer profiles and preferences. For more on message content management and personalization, refer to [this page](../../delivery/using/about-personalization.md). Collaborative management of content, notification and approval circuits are detailed in [this section](../../mrm/using/about-marketing-resource-management.md).
 
-### Análise e relatórios {#analysis-and-reporting}
+### Analysis and reporting {#analysis-and-reporting}
 
-O Adobe Campaign permite monitorar e interpretar o comportamento dos clientes por meio do aprimoramento gradual de seus dados e perfis. As ferramentas de análise e geração de relatórios permitem capitalizar cada nova campanha, melhorar o direcionamento das suas iniciativas de marketing e otimizar seu impacto e o retorno sobre o investimento. Consulte [esta página](../../reporting/using/delivery-reports.md) para obter mais informações.
+Adobe Campaign lets you monitor and interpret the behavior of your customers by gradually enriching their data and profiles. The reporting and analysis tools let you capitalize on each new campaign, target your marketing initiatives better, and optimize their impact and return on investment. Refer to [this page](../../reporting/using/delivery-reports.md) for more information.
 
-### Integrações com a Adobe Experience Cloud {#adobe-experience-cloud-integrations}
+### Adobe Experience Cloud integrations {#adobe-experience-cloud-integrations}
 
-Você pode combinar as funcionalidades de entrega e as funcionalidades avançadas de gerenciamento de campanhas do Adobe Campaign com um conjunto de soluções criadas para ajudar a personalizar a experiência de seus usuários: os acionadores do Adobe Experience Manager, Adobe Analytics, Adobe Target ou Adobe Experience Cloud, por exemplo. É possível também integrar o Adobe IMS e fazer logon no Campaign com sua Adobe ID. Para obter mais informações sobre integrações entre soluções e autenticações, consulte [esta seção](../../integrations/using/about-adobe-id.md).
+You can combine the delivery functionalities and advanced campaign management functionalities of Adobe Campaign with a set of solutions created to help you personalize your users' experience: Adobe Experience Manager, Adobe Analytics, Adobe Target or Adobe Experience Cloud triggers for example. You can also integrate to Adobe IMS and login to Campaign with your Adobe ID. For more on cross-solution and authentication integrations, refer to [this section](../../integrations/using/about-adobe-id.md).
 
-## Principais recursos e complementos {#core-capabilities-and-add-ons}
+## Core capabilities and add-ons {#core-capabilities-and-add-ons}
 
-O Adobe Campaign oferece um conjunto de recursos para ajudá-lo a implementar e otimizar as funcionalidades de marketing conversacional de acordo com a sua necessidade e arquitetura. Alguns deles são recursos básicos, enquanto outros dependem da instalação de um pacote e de sua configuração. Uma descrição detalhada do produto está disponível aqui: [Descrição do produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Adobe Campaign offers a set of capabilities to help you implementing and optimizing the conversational marketing functionalities depending on your needs and your architecture. Some of them are core capabilities and some depend on the installation of a package and on your configuration. A detailed product description is available here: [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Os recursos abaixo estão disponíveis. A disponibilidade desses recursos dependem do seu contrato de licença.
+The following capabilities are available. Depending on your license agreement, some of these capabilities can be available or not in your instance.
 
-* [Canais](../../delivery/using/steps-about-delivery-creation-steps.md) - crie e envie entregas em vários canais: e-mail, SMS, telefone, aplicativo para dispositivos móveis e mala direta;
-* [Campaign](../../campaign/using/designing-marketing-campaigns.md) - organize campanhas entre vários canais;
-* [MRM](../../mrm/using/about-marketing-resource-management.md) - gerencie recursos e orçamentos de marketing;
-* [Interação](../../interaction/using/interaction-and-offer-management.md) - gestão de ofertas com o Campaign;
-* [Centro de mensagens](../../message-center/using/about-transactional-messaging.md) - envie mensagens transacionais por e-mail, SMS ou aplicativo para dispositivos móveis;
-* [Marketing social](../../social/using/about-social-marketing.md): comunique-se nas redes sociais: Facebook, X (anteriormente conhecido como Twitter),
-* [Fluxo de trabalho](../../workflow/using/about-workflows.md) / Gestão de dados - automatize processos e gerencie dados com fluxos de trabalho;
-* [Aplicativos da Web](../../web/using/about-web-applications.md) - crie páginas e formulários Web;
-* [Gerenciador de pesquisas](../../surveys/using/about-surveys.md) - crie pesquisas e enquetes on-line;
-* [Gerenciador de conteúdo](../../delivery/using/about-content-management.md) - gerencie o conteúdo de e-mails;
-* [Marketing distribuído](../../distributed/using/about-distributed-marketing.md) - coordene campanhas para agências centrais e locais;
-* [Gestor de resposta](../../response/using/about-response-manager.md) - gerencie a resposta ao cliente;
-* [Conectores](../../platform/using/about-connectors.md) - use conectores para se comunicar com soluções externas e mecanismos de banco de dados;
-* [Serviços da Web](../../configuration/using/about-web-services.md) - use o Campaign com APIs/Serviços da Web;
-* [Relatórios](../../reporting/using/about-adobe-campaign-reporting-tools.md) - acesse relatórios internos, analise dados e projete seus próprios relatórios.
+* [Channels](../../delivery/using/steps-about-delivery-creation-steps.md) - design and send deliveries on various channels: email, SMS, Line, mobile app, direct mail,
+* [Campaign](../../campaign/using/designing-marketing-campaigns.md) - orchestrate cross-channel campaigns,
+* [MRM](../../mrm/using/about-marketing-resource-management.md) - manage marketing resources and budgets,
+* [Interaction](../../interaction/using/interaction-and-offer-management.md) - managing offers with Campaign,
+* [Message Center](../../message-center/using/about-transactional-messaging.md) - send transactional messages by email, SMS or on mobile app,
+* [Social Marketing](../../social/using/about-social-marketing.md) - communicate on social media: Facebook, X (formerly known as Twitter),
+* [Workflow](../../workflow/using/about-workflows.md) / Data Management - automate processes and manage data with workflows,
+* [Web applications](../../web/using/about-web-applications.md) - create web pages and forms,
+* [Survey Manager](../../surveys/using/about-surveys.md) - create online surveys and polls,
+* [Content Manager](../../delivery/using/about-content-management.md) - manage email content,
+* [Distributed Marketing](../../distributed/using/about-distributed-marketing.md) - coordinate campaigns for central/local agencies,
+* [Response Manager](../../response/using/about-response-manager.md) - manage customer response,
+* [Connectors](../../platform/using/about-connectors.md) - use connectors to communicate with external solutions and database engines,
+* [Web Services](../../configuration/using/about-web-services.md) - use Campaign through APIs/Web Services,
+* [Reporting](../../reporting/using/about-adobe-campaign-reporting-tools.md) - access built-in reports, analyze data and design your own reports.
 
-## Tutorial em vídeo {#video}
+## Tutorial video {#video}
 
-Este vídeo apresenta os principais recursos e funcionalidades do Campaign Classic.
+This video presents Campaign Classic main features and capabilities.
 
->[!VIDEO](https://video.tv.adobe.com/v/39519?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Vídeos extras com instruções do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+
+-->

@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 100%
+source-wordcount: '77'
+ht-degree: 70%
 
 ---
 
@@ -24,86 +24,93 @@ O console do Campaign Client é um cliente avançado que permite a conexão com 
 >
 >Verifique a compatibilidade do sistema e das ferramentas com o Console do cliente do Adobe Campaign na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-## Iniciar o Adobe Campaign {#starting-adobe-campaign}
+>[!NOTE]
+>
+> Para saber como instalar e fazer logon no Adobe Campaign, consulte a apresentação detalhada na [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}.
 
-Você pode iniciar o Adobe Campaign selecionando **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
+<!--
+## Start Adobe Campaign {#starting-adobe-campaign}
 
-A janela de conexão do console do cliente permite selecionar ou configurar bancos de dados existentes e conectar-se a eles usando um nome de usuário e uma senha:
+You can start Adobe Campaign by selecting **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
+
+The client console connection window lets you select or configure existing databases and connect to them using a user name and password:
 
 ![](assets/acc-logon.png)
 
-## Conexão com o Adobe Campaign {#connecting-to-adobe-campaign}
+## Connect to Adobe Campaign {#connecting-to-adobe-campaign}
 
-Você pode se conectar ao Adobe Campaign usando sua Adobe ID. Para obter mais informações, consulte [esta página](../../integrations/using/about-adobe-id.md).
+You can connect to Adobe Campaign using your Adobe ID. For more on this, refer to [this page](../../integrations/using/about-adobe-id.md).
 
-Também é possível conectar-se com uma combinação exclusiva de login e senha:
+You can also connect with a dedicated login/password:
 
-1. Digite o identificador da conta do operador no campo **[!UICONTROL Login]**.
+1. Enter the operator account identifier in the **[!UICONTROL Login]** field.
 
-   Seu identificador é fornecido pelo administrador da plataforma Adobe Campaign.
+   Your identifier is given by the administrator of your Adobe Campaign platform.
 
-1. Digite sua senha no campo **[!UICONTROL Password]**.
+1. Enter your password in the **[!UICONTROL Password]** field.
 
-   Na primeira vez que você acessar o banco de dados, sua senha será fornecida pelo administrador. Depois de conectado, você poderá alterar a senha usando o menu **[!UICONTROL Tools > Change password...]** Os detalhes sobre operadores e conexões estão disponíveis em [Gerenciamento de acesso](../../platform/using/access-management.md).
+   The first time you access the database, your password is the one given to you by the administrator. Once you are connected, you can change your password via the **[!UICONTROL Tools > Change password...]** menu. Details on operators and connections are available in [Access management](../../platform/using/access-management.md).
 
-1. Clique em **[!UICONTROL LOG IN]** para confirmar.<!--You can also press the **Enter** key to launch connection.-->
+1. Click **[!UICONTROL LOG IN]** to confirm.<!--You can also press the **Enter** key to launch connection.
 
-Agora, você pode acessar o [Workspace do Adobe Campaign](../../platform/using/adobe-campaign-workspace.md).
+You can now access [Adobe Campaign workspace](../../platform/using/adobe-campaign-workspace.md).
 
-Alguns atalhos do teclado estão disponíveis em **[!UICONTROL Sign in screen]**:
-* Todos os itens acionáveis podem ser selecionados pelas teclas **Tab** (de cima para baixo) ou **Tab** + **Shift** (de baixo para cima).
-* Para iniciar a conexão, você também pode pressionar a tecla **Enter**.
-* Você pode usar a tecla **Escape** para redefinir os campos **[!UICONTROL Login]** e **[!UICONTROL Password]** para os últimos valores de conexão bem-sucedidos.
+Some keyboard shortcuts are available on the **[!UICONTROL Sign in screen]**:
+* All actionable items are selectable through the **Tab** key (top to bottom) or the **Tab** + **Shift** keys (bottom to top).
+* To launch connection, you can also press the **Enter** key.
+* You can use the **Escape** key to reset the **[!UICONTROL Login]** and **[!UICONTROL Password]** fields to the last successful connection values.
 
-## Configurar conexões {#setting-up-connections}
+## Set up connections {#setting-up-connections}
 
-É possível acessar as configurações de conexão do servidor pelo link acima da zona de entrada.
+You can access the server connection settings via the link above the input zone.
 
 ![](assets/s_ncs_user_connections_management.png)
 
-Na janela **[!UICONTROL Connections]**, clique em **[!UICONTROL Add > Connection]**.
+In the **[!UICONTROL Connections]** window, click **[!UICONTROL Add > Connection]**.
 
-Em seguida, defina as configurações de conexão. Para fazer isso:
+You must then define the connection settings. To do this:
 
-1. Digite um valor em **[!UICONTROL Label]** para atribuir um nome à conexão de banco de dados.
+1. Enter a **[!UICONTROL Label]** to assign a name to your database connection.
 
-1. Adicione o endereço do servidor de aplicativos no campo **[!UICONTROL URL]**. Se você não souber o URL de conexão, entre em contato com o administrador.
+1. Add the address of the application server in the **[!UICONTROL URL]** field. If you do not know the connection URL, contact the administrator.
 
-1. Marque a opção **[!UICONTROL Connect with an Adobe ID]** para que os operadores se conectem ao console usando a Adobe ID. Para obter mais informações, consulte [esta página](../../integrations/using/about-adobe-id.md).
+1. Check **[!UICONTROL Connect with an Adobe ID]** for the operators to connect to the console using their Adobe ID. For more on this, refer to [this page](../../integrations/using/about-adobe-id.md).
 
-1. Clique em **[!UICONTROL OK]** para validar.
+1. Click **[!UICONTROL OK]** to validate.
 
-## Operadores e permissões {#operators-and-permissions}
+## Operators and permissions {#operators-and-permissions}
 
-Os identificadores e senhas dos operadores com acesso ao software e suas respectivas permissões são definidos pelo administrador do sistema no caminho **[!UICONTROL Administration > Access management > Operators]** do Adobe Campaign.
+The identifiers and passwords of operators with access to the software and their respective permissions are defined by your Adobe Campaign system administrator in the **[!UICONTROL Administration > Access management > Operators]** node of the Adobe Campaign tree.
 
-Essa funcionalidade é detalhada na seção [Gerenciamento de acesso](../../platform/using/access-management.md).
+This functionality is detailed in the [Access management](../../platform/using/access-management.md) section.
 
-## Desconectar-se do Adobe Campaign {#disconnecting-from-adobe-campaign}
+## Disconnect from Adobe Campaign {#disconnecting-from-adobe-campaign}
 
-Para desconectar-se do Adobe Campaign, use o primeiro ícone na barra de ícones.
+To disconnect from Adobe Campaign, use the first icon in the icon bar.
 
 ![](assets/s_ncs_user_deconnexion.png)
 
 >[!NOTE]
 >
->Você também pode fechar o aplicativo sem fazer logoff.
+>You can also close the application without logging off first.
 
-## Obtenha a sua versão do Adobe Campaign {#getting-your-campaign-version}
+## Get your Adobe Campaign version {#getting-your-campaign-version}
 
-O menu **[!UICONTROL Help > About...]** permite acessar as seguintes informações:
+The **[!UICONTROL Help > About...]** menu lets you access the following information:
 
-* **número de** versão do console do cliente Campaign e o servidor de aplicativos
-* **número da** compilação do console do cliente Campaign e o servidor de aplicativos
-* um link para entrar em contato com o Atendimento ao cliente da Adobe
-* links para Política de privacidade da Adobe, Termos de uso e Política de cookies
+* **version** number for Campaign client console and application server
+* **build** number for Campaign client console and application server
+* a link to contact Adobe Customer Care
+* links to Adobe Privacy Policy, Terms of Use and Cookies Policy
 
 ![](assets/about-acc.png)
 
-Sempre que entrar em contato com a equipe de Atendimento ao cliente da Adobe, você precisará fornecer o número da versão e o número da compilação do seu console de cliente do Adobe Campaign e do servidor de aplicativos.
+Whenever you reach out to Adobe Customer Care team, you need to provide the version number and build number of your Adobe Campaign client console and application server.
 
-**Tópicos relacionados**:
+**Related topics**:
 
-* [Opções de ajuda e suporte do Adobe Campaign](../../support.md)
-* [Distribuição de Software Adobe Campaign](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
-* [Suporte e sessões especializadas para o Adobe Experience Cloud](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Campaign Help and Support options](../../support.md)
+* [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+
+-->

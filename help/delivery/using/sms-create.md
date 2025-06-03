@@ -4,9 +4,11 @@ title: Criar SMS com o Campaign
 description: Saiba como criar SMS com o Campaign
 feature: SMS
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
-workflow-type: ht
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 100%
 
@@ -62,7 +64,7 @@ Para criar o conteúdo do SMS, siga as etapas abaixo:
 
 1. Se você usar o conector NetSize ou um conector SMPP, é possível personalizar o nome do remetente da entrega. Para obter mais informações, consulte a seção [Advanced parameters](#advanced-parameters).
 
-## Selecionar o público-alvo {#selecting-the-target-population}
+## Selecionar a população de destino {#selecting-the-target-population}
 
 O processo detalhado ao selecionar a população do target de uma entrega é apresentado [nesta seção](steps-defining-the-target-population.md).
 

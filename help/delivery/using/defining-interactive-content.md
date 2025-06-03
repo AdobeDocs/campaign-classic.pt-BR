@@ -5,9 +5,11 @@ description: Saiba como definir o conteúdo de email interativo e dinâmico com 
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 100%
 
@@ -206,6 +208,6 @@ Por exemplo, se uma lista de produtos é incluída no email, ao editar os preço
 
 O vídeo abaixo explica como ativar o AMP no Adobe Campaign e mostra sua utilização.
 
->[!VIDEO](https://video.tv.adobe.com/v/33179?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
 Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

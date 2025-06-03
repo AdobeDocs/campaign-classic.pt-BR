@@ -4,9 +4,11 @@ title: Definir a população alvo
 description: Saiba como definir a população alvo
 feature: Audiences, Proofs
 role: User
+hide: true
+hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 100%
 
@@ -14,7 +16,7 @@ ht-degree: 100%
 
 # Definir a população alvo {#defining-the-target-population}
 
-Para cada entrega, você poderá definir vários tipos de populações do target.
+Para cada entrega, você poderá definir vários tipos de populações de destino.
 
 * **Audiência principal**: perfis que receberão mensagens. [Saiba mais](steps-defining-the-target-population.md#selecting-the-main-target)
 * **Prova**: destinatários de mensagens de prova, envolvidos no ciclo de validação. [Saiba mais](steps-defining-the-target-population.md#defining-a-specific-proof-target)
@@ -135,7 +137,7 @@ As seguintes opções estão disponíveis:
 
   Por exemplo:
 
-   * Entrega de um boletim informativo ou entrega eletrônica de documentos. Nenhuma exclusão de duplicatas, em alguns casos, se os dados não tiverem duplicatas nativas. Um casal que faça assinatura usando o mesmo endereço de email poderá esperar receber duas mensagens de email personalizadas específicas: uma endereçada para cada indivíduo por nome. Nesse caso, essa opção poderá ser desmarcada.
+   * Entrega de um boletim informativo ou entrega eletrônica de documentos. Nenhuma exclusão de duplicatas, em alguns casos, se os dados não tiverem duplicatas nativas. Um casal que faça assinatura usando o mesmo endereço de email poderá esperar receber duas mensagens de email personalizadas específicas: uma endereçada para cada pessoa por nome. Nesse caso, essa opção poderá ser desmarcada.
    * Entrega de uma campanha de marketing: a exclusão duplicata é essencial para evitar o envio de muitas mensagens para o mesmo destinatário. Nesse caso, essa opção poderá ser selecionada.
 
      Se você desmarcar esta opção, poderá acessar uma opção adicional: **[!UICONTROL Keep duplicate records (same identifier)]**. Ela permite autorizar várias entregas a destinatários que atendem a vários critérios de definição do target.
@@ -249,6 +251,6 @@ Esses mappings são os seguintes:
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
->[!VIDEO](https://video.tv.adobe.com/v/35801?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '229'
-ht-degree: 100%
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 88%
 
 ---
 
@@ -28,24 +28,28 @@ Cada nó coincide com uma pasta. Os dados de cada pasta devem ser considerados p
 
 >[!NOTE]
 >
->Para exibir a lista de todos os destinatários no banco de dados, crie uma visualização. Saiba mais em [Pastas e exibições](../../platform/using/access-management-folders.md).
+> * Para exibir a lista de todos os destinatários no banco de dados, crie uma visualização. Saiba mais em [Pastas e exibições](../../platform/using/access-management-folders.md).
+> * Para saber mais sobre como gerenciar perfis, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
-## Mover destinatários {#moving-recipients}
 
-É possível selecionar um ou mais destinatários, arrastá-los da lista de destinatários e soltá-los na pasta desejada. Uma mensagem de aviso solicita que você confirme esta ação.
+<!--
+## Move recipients {#moving-recipients}
 
-## Copiar um destinatário {#copying-a-recipient}
+You can select one or more recipients, drag them from the recipient list, and drop them in the desired folder. A warning message asks you to confirm this action.
 
-Para copiar um destinatário na mesma pasta, clique com o botão direito do mouse no destinatário desejado e selecione **[!UICONTROL Copy]**.
+## Copy a recipient {#copying-a-recipient}
 
-## Excluir destinatários {#deleting-recipients}
+You can copy a recipient in the same folder by right-clicking the desired recipient and selecting **[!UICONTROL Copy]**.
 
-Para excluir destinatários, mova-os para uma pasta específica e, em seguida, limpe o conteúdo dessa pasta. É **altamente recomendável não usar** a opção **[!UICONTROL Delete]** neste caso.
+## Delete recipients {#deleting-recipients}
 
-Para limpar uma pasta, use o menu **[!UICONTROL Actions > Purge folder]**, acessível clicando com o botão direito do mouse na pasta desejada.
+To delete recipients, move them to a specific folder and then purge the content of this folder. It is **strongly recommended not to use** the **[!UICONTROL Delete]** option in this case.
+
+To purge a folder, use the **[!UICONTROL Actions > Purge folder]** menu, accessed by right-clicking the desired folder.
 
 ![](assets/s_ncs_user_purge_folder.png)
 
-Clique em **[!UICONTROL Start]** para iniciar a operação. A seção do meio da janela exibe o status do progresso, conforme mostrado abaixo:
+Click **[!UICONTROL Start]** to launch the operation. The middle section of the window displays the progress status, as shown below:
 
 ![](assets/s_ncs_user_purge_folder_start.png)
+-->
