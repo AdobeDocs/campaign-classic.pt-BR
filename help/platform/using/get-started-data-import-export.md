@@ -27,7 +27,7 @@ O Adobe Campaign Classic fornece recursos de gerenciamento de dados que permitem
 
 >[!NOTE]
 >
->Para saber mais sobre como importar e exportar dados para o Campaign, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}.
+>Para saber mais sobre como importar e exportar dados para o Campaign, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/import){target=_blank}.
 
 
 <!--

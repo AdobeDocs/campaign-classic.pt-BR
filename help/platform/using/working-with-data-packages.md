@@ -29,7 +29,7 @@ O princípio de **pacotes de dados** é exportar uma configuração de dados e i
 
 >[!NOTE]
 >
->Para saber mais sobre pacotes de dados, consulte a [documentação do Campaign v8.](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/packages){target=_blank}
+>Para saber mais sobre pacotes de dados, consulte a [documentação do Campaign v8.](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/packages){target=_blank}
 
 
 <!--

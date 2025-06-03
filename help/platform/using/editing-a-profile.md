@@ -36,7 +36,7 @@ As guias e seu conteúdo dependem da sua configuração e dos pacotes instalados
 
 >[!NOTE]
 >
->Para saber mais sobre como editar perfis e acessá-los, consulte a documentação detalhada na [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
+>Para saber mais sobre como editar perfis e acessá-los, consulte a documentação detalhada na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
 
 

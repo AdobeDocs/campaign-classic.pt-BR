@@ -27,7 +27,7 @@ Esses conectores permitem uma integração de dados rápida e fácil: o Adobe Ca
 >[!NOTE]
 >
 >* Esse recurso está disponível no Adobe Campaign através dos **conectores dedicados do CRM**.
->* Para saber mais sobre conectores CRM e como se conectar ao Microsoft Dynamics e Salesforce, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}.
+>* Para saber mais sobre conectores CRM e como se conectar ao Microsoft Dynamics e Salesforce, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}.
 
 <!--
 ### Compatible systems {#compatible-crm-systems-and-limitations}

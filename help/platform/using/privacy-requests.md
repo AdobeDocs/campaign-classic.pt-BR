@@ -38,7 +38,7 @@ O Adobe Campaign oferece aos controladores de dados duas possibilidades para exe
 >[!NOTE]
 >
 >* Para obter mais informações sobre dados pessoais e as diferentes entidades que gerenciam os dados (Controlador de dados, Operador de dados e Titular de dados), consulte [Dados pessoais e Personalidades](privacy-and-recommendations.md#personal-data).
->* Para saber mais sobre solicitações de privacidade, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy){target=_blank}.
+>* Para saber mais sobre solicitações de privacidade, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/privacy/privacy){target=_blank}.
 
 <!--
 ## Prerequisites {#prerequesites}
