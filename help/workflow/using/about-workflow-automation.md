@@ -38,11 +38,11 @@ Saiba mais sobre as principais etapas relacionadas ao gerenciamento de fluxo de 
 
 * [Criar um fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target=_blank}: saiba como criar e executar fluxos de trabalho de direcionamento, de campanha e técnicos.
 
-* [Práticas recomendadas](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}: saiba mais sobre as diretrizes para otimizar o desempenho do fluxo de trabalho do Campaign, melhorar o design do fluxo de trabalho e selecionar as configurações corretas.
+* [Práticas recomendadas](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR){target=_blank}: saiba mais sobre as diretrizes para otimizar o desempenho do fluxo de trabalho do Campaign, melhorar o design do fluxo de trabalho e selecionar as configurações corretas.
 
-* [Monitorar fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}: saiba como monitorar a execução do fluxo de trabalho para garantir que tudo esteja funcionando corretamente.
+* [Monitorar fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=pt-BR){target=_blank}: saiba como monitorar a execução do fluxo de trabalho para garantir que tudo esteja funcionando corretamente.
 
-* [Casos de uso do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}: conheça os diferentes contextos nos quais os fluxos de trabalho podem ser usados e como implementá-los por meio de casos de uso completos.
+* [Casos de uso do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=pt-BR){target=_blank}: conheça os diferentes contextos nos quais os fluxos de trabalho podem ser usados e como implementá-los por meio de casos de uso completos.
 
 
 >[!ENDTABS]
