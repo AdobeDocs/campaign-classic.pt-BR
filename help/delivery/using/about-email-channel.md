@@ -16,7 +16,7 @@ ht-degree: 7%
 
 Com o Adobe Campaign, crie deliveries de email para enviar emails personalizados para a população do target.
 
-O email continua sendo um dos canais mais eficientes e flexíveis para se envolver com os usuários além do seu aplicativo ou site. Não importa se você está fornecendo conteúdo personalizado, anúncios ou mensagens promocionais: o email oferece controle total sobre a mensagem e o público-alvo. Saiba como configurar e usar ao máximo o canal de email, personalizando conteúdo, direcionando segmentos específicos de usuários e incorporando elementos avançados de multimídia para maximizar o impacto e o envolvimento na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target=_blank}.
+O email continua sendo um dos canais mais eficientes e flexíveis para se envolver com os usuários além do seu aplicativo ou site. Não importa se você está fornecendo conteúdo personalizado, anúncios ou mensagens promocionais: o email oferece controle total sobre a mensagem e o público-alvo. Saiba como configurar e usar ao máximo o canal de email, personalizando conteúdo, direcionando segmentos específicos de usuários e incorporando elementos avançados de multimídia para maximizar o impacto e o envolvimento na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/email){target=_blank}.
 
 
 
@@ -25,30 +25,30 @@ O email continua sendo um dos canais mais eficientes e flexíveis para se envolv
 
 >[!TAB Documentação do canal de email]
 
-Para saber mais sobre o canal de email, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target=_blank}.
+Para saber mais sobre o canal de email, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/email){target=_blank}.
 
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/email){target=_blank}
 
 
 >[!TAB Criação de entrega de email]
 
 Saiba mais sobre as principais etapas relacionadas à criação de delivery de email na documentação do Campaign v8:
 
-* [Criar uma entrega de email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}: saiba mais sobre as diferentes etapas necessárias para criar uma entrega de email.
-* [Definir o conteúdo do email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}: defina o que o email incluirá: remetente, assunto, conteúdo, imagens.
-* [Definir conteúdo interativo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}: use o formato interativo AMP for Email para enviar emails dinâmicos.
-* [Enviar emails em dispositivos móveis japoneses](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}: use um dos três formatos específicos em japonês para email em dispositivos móveis.
-* [Anexar arquivos a um email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}: conheça as diferentes maneiras de anexar um ou mais arquivos a um email.
+* [Criar uma entrega de email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=pt-BR){target="_blank"}: saiba mais sobre as diferentes etapas necessárias para criar uma entrega de email.
+* [Definir o conteúdo do email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR){target="_blank"}: defina o que o email incluirá: remetente, assunto, conteúdo, imagens.
+* [Definir conteúdo interativo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=pt-BR){target="_blank"}: use o formato interativo AMP for Email para enviar emails dinâmicos.
+* [Enviar emails em dispositivos móveis japoneses](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=pt-BR){target="_blank"}: use um dos três formatos específicos em japonês para email em dispositivos móveis.
+* [Anexar arquivos a um email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=pt-BR){target="_blank"}: conheça as diferentes maneiras de anexar um ou mais arquivos a um email.
 
 
 >[!TAB Parâmetros de email]
 
 Consulte estas páginas para saber mais sobre parâmetros de email na documentação do Campaign v8:
 
-* [Link para a mirror page](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}: configure a mirror page para garantir que seus clientes sempre tenham a melhor experiência de renderização.
-* [Adicionar um endereço com CCO](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}: configure o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma.
-* [Definir parâmetros de email adicionais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html){target="_blank"}: saiba mais sobre as opções e os parâmetros disponíveis nas propriedades de entrega.
+* [Link para a mirror page](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=pt-BR){target="_blank"}: configure a mirror page para garantir que seus clientes sempre tenham a melhor experiência de renderização.
+* [Adicionar um endereço com CCO](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html?lang=pt-BR){target="_blank"}: configure o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma.
+* [Definir parâmetros de email adicionais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=pt-BR){target="_blank"}: saiba mais sobre as opções e os parâmetros disponíveis nas propriedades de entrega.
 
 Consulte também esta [página](sending-with-enhanced-mta.md) para saber mais sobre o MTA aprimorado.
 
@@ -65,7 +65,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 The key steps to send an email are as follows:
 
