@@ -6,9 +6,9 @@ title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: 67e5a52666b7a57d1fc17d308a124948bf81f432
 workflow-type: tm+mt
-source-wordcount: '2573'
+source-wordcount: '2572'
 ht-degree: 88%
 
 ---
@@ -125,7 +125,7 @@ ht-degree: 88%
          + [Definir o público-alvo correto](delivery/using/define-the-right-audience.md)
          + [Verificar antes de enviar](delivery/using/check-before-sending.md)
          + [Rastrear e monitorar](delivery/using/track-and-monitor.md)
-+ Enviar emails {#sending-emails}
++ Emails {#sending-emails}
 + [Criar uma entrega de email](delivery/using/creating-an-email-delivery.md)
 + [Definir o conteúdo do email](delivery/using/defining-the-email-content.md)
 + [Definir conteúdo interativo](delivery/using/defining-interactive-content.md)
