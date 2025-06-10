@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 1e88021c9209bd23c3c949380f553473e890a9ce
 workflow-type: tm+mt
 source-wordcount: '2571'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 91%
    + Primeiros passos com o Adobe Campaign {#starting-with-adobe-campaign}
       + [Introdução ao Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
       + [Iniciar o Adobe Campaign](platform/using/launching-adobe-campaign.md)
-      + Workspace do Adobe Campaign{#campaign-workspace}
+      + Espaço de trabalho do Adobe Campaign{#campaign-workspace}
          + [Introdução à interface do Campaign](platform/using/adobe-campaign-workspace.md)
          + [Usar o explorer do Campaign](platform/using/adobe-campaign-explorer.md)
          + [Procurar e personalizar listas](platform/using/adobe-campaign-ui-lists.md)
@@ -99,7 +99,7 @@ ht-degree: 91%
       + [Criar e gerenciar grupos](platform/using/access-management-groups.md)
       + [Usar direitos nomeados para configurar permissões](platform/using/access-management-named-rights.md)
       + [Gerenciar o acesso a pastas](platform/using/access-management-folders.md)
-   + Pacotes de dados e enumerações {#administration-basics}
+   + Pacotes de dados e listas discriminadas {#administration-basics}
       + [Pacotes de dados](platform/using/working-with-data-packages.md)
       + [Listas discriminadas](platform/using/managing-enumerations.md)
    + Conectores CRM  {#connectors}
@@ -168,7 +168,7 @@ ht-degree: 91%
       + [Criar um modelo de entrega](delivery/using/creating-a-delivery-template.md)
       + [Selecionar um target mapping](delivery/using/selecting-a-target-mapping.md)
       + [Criar uma entrega de um modelo](delivery/using/creating-a-delivery-from-a-template.md)
-   + Personalizar deliveries {#personalizing-deliveries}
+   + Personalizar entregas {#personalizing-deliveries}
       + [Sobre personalização](delivery/using/about-personalization.md)
       + [Campos de personalização](delivery/using/personalization-fields.md)
       + [Blocos de personalização](delivery/using/personalization-blocks.md)
@@ -183,7 +183,7 @@ ht-degree: 91%
       + [Usar uma tabela externa de destinatário](delivery/using/using-an-external-recipient-table.md)
       + [Caso de uso: selecionar seed addresses de acordo com os critérios](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
       + [Caso de uso: configurar a substituição de campo](delivery/using/use-case-configuring-the-field-substitution.md)
-   + Teste AB {#a-b-testing}
+   + Teste A/B {#a-b-testing}
       + [Introdução ao teste A/B](delivery/using/get-started-a-b-testing.md)
       + [Configurar teste A/B](delivery/using/configuring-a-b-testing.md)
       + Caso de uso {#use-case}
@@ -220,7 +220,7 @@ ht-degree: 91%
       + [Acessar os logs de rastreamento](delivery/using/accessing-the-tracking-logs.md)
       + [Rastreamento de teste](delivery/using/testing-tracking.md)
       + [Solução de problemas do rastreamento](delivery/using/tracking-troubleshooting.md)
-   + Gerenciamento de avaliação de entrega {#deliverability-management}
+   + Gerenciamento de capacidade de entrega {#deliverability-management}
       + [O que é capacidade de entrega](delivery/using/about-deliverability.md)
       + [Controlar conteúdo da mensagem](delivery/using/control-message-content.md)
       + [Monitoramento da capacidade de entrega](delivery/using/monitoring-deliverability.md)
@@ -314,8 +314,8 @@ ht-degree: 91%
       + [Configurar acesso ao relatório](reporting/using/configuring-access-to-the-report.md)
       + [Ações em relatórios](reporting/using/actions-on-reports.md)
    + [Criar relatórios com cubos](reporting/using/ac-cubes.md)
-+ Criar conteúdo da Web {#designing-content}
-   + Aplicações web {#web-applications}
++ Criar conteúdo da web {#designing-content}
+   + Aplicativos web {#web-applications}
       + [Introdução a aplicativos web](web/using/about-web-applications.md)
       + [Criar um novo aplicativo web](web/using/creating-a-new-web-application.md)
       + [Criar um aplicativo web](web/using/designing-a-web-application.md)
@@ -323,7 +323,7 @@ ht-degree: 91%
       + [Traduzir um aplicativo web](web/using/translating-a-web-application.md)
       + [Rastrear visitas em um aplicativo web](web/using/tracking-a-web-application.md)
       + [Recusa de rastreamento de aplicativo web](web/using/web-application-tracking-opt-out.md)
-   + Editar conteúdo do HTML {#editing-html-content}
+   + Editar conteúdo HTML {#editing-html-content}
       + [Introdução ao editor de HTML](web/using/about-campaign-html-editor.md)
       + [Gerenciamento de modelo](web/using/template-management.md)
       + [Interface do editor de conteúdo](web/using/content-editor-interface.md)
@@ -353,10 +353,10 @@ ht-degree: 91%
    + [Configurar pesquisas](surveys/using/configuring-surveys.md)
    + [Caso de uso: criar um formulário de indicação](surveys/using/use-case-creating-a-refer-a-friend-form.md)
    + [Caso de uso: exibir relatório sobre as respostas a uma pesquisa online](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
-+ Integrar ao Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
++ Integrar com a Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Introdução às integrações do Campaign](integrations/using/about-campaign-integrations.md)
    + [Crie sua conta técnica da Adobe](integrations/using/oauth-technical-account.md)
-   + Acionadores da Adobe Experience Cloud {#experience-triggers}
+   + Adobe Experience Cloud Triggers {#experience-triggers}
       + [Trabalhar com o  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configurar pipeline](integrations/using/configuring-pipeline.md)
       + [Configurar eventos para implementação personalizada](integrations/using/events.md)
@@ -369,7 +369,7 @@ ht-degree: 91%
    + Adobe Analytics Connector{#analytics-connector}
       + [Introdução ao conector do Adobe Analytics](integrations/using/gs-aa.md)
       + [Provisionamento do conector do Adobe Analytics](integrations/using/adobe-analytics-provisioning.md)
-   + Compartilhamento de público {#audience-sharing}
+   + Compartilhamento de público-alvo {#audience-sharing}
       + [Compartilhar públicos-alvos com a [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Enviar solicitação à Adobe](integrations/using/submitting-request-to-adobe.md)
       + [Configurar a integração de públicos-alvos compartilhados no [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
@@ -387,7 +387,7 @@ ht-degree: 91%
       + [Trabalhar com o  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurar a integração com o [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserir uma imagem dinâmica](integrations/using/inserting-a-dynamic-image.md)
-   + ACS Connector {#acs-connector}
+   + Conector ACS {#acs-connector}
       + [Introdução ao  [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Sincronizar perfis](integrations/using/synchronizing-profiles.md)
       + [Sincronizar públicos-alvos](integrations/using/synchronizing-audiences.md)
@@ -402,7 +402,7 @@ ht-degree: 91%
       + [Dados do público alvo](workflow/using/targeting-data.md)
       + [Usar dados de fluxo de trabalho](workflow/using/how-to-use-workflow-data.md)
       + [Práticas recomendadas de fluxo de trabalho](workflow/using/workflow-best-practices.md)
-   + Executar um workflow {#executing-a-workflow}
+   + Executar um fluxo de trabalho {#executing-a-workflow}
       + [Iniciar um fluxo de trabalho](workflow/using/starting-a-workflow.md)
       + [Ciclo de vida do fluxo de trabalho](workflow/using/workflow-life-cycle.md)
       + [Ciclo de vida dos dados](workflow/using/data-life-cycle.md)
@@ -470,7 +470,7 @@ ht-degree: 91%
       + [Emails de entrada](workflow/using/inbound-emails.md)
       + [SMS de entrada](workflow/using/inbound-sms.md)
    + Casos de uso {#use-cases}
-      + [Sobre casos de uso de workflows](workflow/using/about-workflow-use-cases.md)
+      + [Sobre casos de uso de fluxos de trabalho](workflow/using/about-workflow-use-cases.md)
       + Entregas {#deliveries}
          + [Usar a atividade de aprovação local](workflow/using/using-the-local-approval-activity.md)
          + [Enviar email de aniversário](workflow/using/sending-a-birthday-email.md)
@@ -489,8 +489,8 @@ ht-degree: 91%
       + [Usar a funcionalidade de mesclagem da atividade de desduplicação](workflow/using/deduplication-merge.md)
       + [Configurar um fluxo de trabalho de importação recorrente](workflow/using/recurring-import-workflow.md)
    + Criar consultas {#designing-queries}
-      + [Atualização da lista trimestral usando um query incremental](workflow/using/quarterly-list-update.md)
-   + Query e filtro {#designing-queries}
+      + [Atualização da lista trimestral usando uma consulta incremental](workflow/using/quarterly-list-update.md)
+   + Consulta e filtro {#designing-queries}
       + [Consultar a tabela de destinatários](workflow/using/querying-recipient-table.md)
       + [Consultar informações da entrega](workflow/using/querying-delivery-information.md)
       + [Executar computação de agregado](workflow/using/performing-aggregate-computing.md)
@@ -499,7 +499,7 @@ ht-degree: 91%
       + [Adicionar um campo calculado do tipo lista discriminada](workflow/using/adding-enumeration-type-calculated-field.md)
       + [Criar um filtro](workflow/using/creating-a-filter.md)
       + [Filtrar destinatários duplicados](workflow/using/filtering-duplicated-recipients.md)
-   + Monitorar workflows {#monitoring-workflows}
+   + Monitorar fluxos de trabalho {#monitoring-workflows}
       + [Monitorar a execução do fluxo de trabalho](workflow/using/monitoring-workflow-execution.md)
       + [Monitorar workflows técnicos](workflow/using/monitoring-technical-workflows.md)
       + [HeatMap de fluxo de trabalho](workflow/using/heatmap.md)
@@ -518,7 +518,7 @@ ht-degree: 91%
       + [Interação e gestão de ofertas](interaction/using/interaction-and-offer-management.md)
       + [Glossário](interaction/using/i-glossary.md)
       + [Práticas recomendadas de interação](interaction/using/interaction-best-practices.md)
-   + Operação Geral {#general-operation}
+   + Operação geral {#general-operation}
       + [Etapas de implementação](interaction/using/implementation-steps.md)
       + [Princípios fundamentais](interaction/using/fundamental-principles.md)
    + Gerenciar ambientes {#managing-environments}
@@ -570,7 +570,7 @@ ht-degree: 91%
       + [Arquitetura de mensagens transacionais](message-center/using/transactional-messaging-architecture.md)
       + [Configurar instâncias](message-center/using/configuring-instances.md)
       + [Configurações adicionais](message-center/using/additional-configurations.md)
-   + Templates de mensagem {#message-templates}
+   + Modelos de mensagem {#message-templates}
       + [Criar tipos de evento](message-center/using/creating-event-types.md)
       + [Criar modelos de mensagem](message-center/using/creating-the-message-template.md)
       + [Testar modelos de mensagem](message-center/using/testing-message-templates.md)
@@ -585,10 +585,10 @@ ht-degree: 91%
       + [Nível de serviço do Centro de mensagens](message-center/using/message-center-service-level.md)
       + [Tempo de processamento do Centro de mensagens](message-center/using/message-center-processing-time.md)
    + [Caso de uso](message-center/using/transactional-email-with-attachments.md)
-+ Integrar com redes sociais {#integrating-with-social-media}
++ Integrar a redes sociais {#integrating-with-social-media}
    + [Sobre marketing social](social/using/about-social-marketing.md)
 + Guia de instalação e configuração {#installing-campaign-classic}
-   + Princípios da arquitetura {#architecture-and-hosting-models}
+   + Princípios de arquitetura {#architecture-and-hosting-models}
       + [Arquitetura geral](installation/using/general-architecture.md)
       + Modelos de hospedagem{#hosting-models-lp}
          + [Modelos de hospedagem do Campaign](installation/using/hosting-models.md)
@@ -805,7 +805,7 @@ ht-degree: 91%
       + [Criação de uma lista de perfis com base em um fluxo de trabalho](configuration/using/creating-a-profile-list-with-a-workflow.md)
       + [Gerenciamento de workflows](configuration/using/managing-workflows.md)
       + [Gerenciamento de relatórios](configuration/using/managing-reports.md)
-   + Configuração do rastreamento Web {#setting-up-web-tracking}
+   + Configuração do rastreamento web {#setting-up-web-tracking}
       + [Sobre o rastreamento Web](configuration/using/about-web-tracking.md)
       + [Modo de rastreamento Web](configuration/using/web-tracking-mode.md)
       + [Tag de rastreamento Web: definição](configuration/using/web-tracking-tag-definition.md)
@@ -828,7 +828,7 @@ ht-degree: 91%
 + Notas técnicas {#technotes}
    + [Recomendações para dimensionamento de hardware](technotes/using/hardware-sizing.md)
    + [Atividade de fluxo de trabalho de SMS de entrada para infraestrutura mid-sourcing](technotes/using/inbound-sms-wf.md)
-   + Atualização para IMS{#ims}
+   + Atualização para o IMS{#ims}
       + [Transição para o Adobe IMS](technotes/using/ac-ims.md)
       + [Migração de usuários para o IMS](technotes/using/migrate-users-to-ims.md)
       + [Migração de operadores técnicos para o Developer Console](technotes/using/ims-migration.md)
