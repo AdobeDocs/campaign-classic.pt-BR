@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ As guias e seu conteúdo dependem da sua configuração e dos pacotes instalados
 
 >[!NOTE]
 >
->Para saber mais sobre como editar perfis e acessá-los, consulte a documentação detalhada na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
+>Para saber mais sobre como editar perfis e acessá-los, consulte a explicação detalhada na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
 
 

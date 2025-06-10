@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '61'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Na maioria dos casos, os perfis são [importados para o Campaign por meio de um 
 
 >[!NOTE]
 >
->Para saber mais sobre como criar perfis no Console do Adobe Campaign, consulte a [documentação do Campaign v8.](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
+>Para saber como criar perfis no Adobe Campaign Console, consulte a [documentação do Campaign v8.](https://experienceleague.adobe.com/pt-br/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
 
 <!--

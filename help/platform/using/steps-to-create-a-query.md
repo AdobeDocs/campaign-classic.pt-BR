@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ As etapas para criar um query no Adobe Campaign são as seguintes:
 >
 >* Todas essas etapas estão disponíveis no editor de query genérico. Quando um query é criado em outro contexto, algumas etapas podem ser deixadas de fora.\
 >Apresentamos a atividade de query [nesta seção](../../workflow/using/query.md).
->* Para saber mais sobre Consultas e como criá-las, consulte a [documentação do Campaign v8](../../workflow/using/query.md).
+>* Para saber mais sobre consultas e como criá-las, consulte a [documentação do Campaign v8](../../workflow/using/query.md).
 
 <!--
 ## Step 1 - Choose a table {#step-1---choose-a-table}

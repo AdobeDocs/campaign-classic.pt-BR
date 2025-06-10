@@ -8,9 +8,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,6 +28,6 @@ As consultas são criadas usando campos da tabela selecionada ou usando uma fór
 
 >[!NOTE]
 >
->Para saber mais sobre Consultas e como criá-las, consulte a [documentação do Campaign v8](../../workflow/using/query.md).
+>Para saber mais sobre consultas e como criá-las, consulte a [documentação do Campaign v8](../../workflow/using/query.md).
 
-![Captura de tela mostrando um exemplo de uma Consulta.](assets/query_recipients_4.png)
+![Captura de tela com um exemplo de consulta.](assets/query_recipients_4.png)

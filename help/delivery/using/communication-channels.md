@@ -6,25 +6,25 @@ feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '182'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
 # Canais de comunicação{#communication-channels}
 
-Com o Adobe Campaign, você pode enviar campanhas entre canais, incluindo e-mails, SMS, notificações push e correspondências diretas e medir a eficiência usando vários relatórios dedicados. Essas mensagens são projetadas e enviadas em entregas, além disso podem ser personalizadas para cada destinatário.
+Com o Adobe Campaign, você pode enviar campanhas entre canais, incluindo e-mails, SMS, notificações push e correspondências diretas e medir a eficiência usando vários relatórios dedicados. Essas mensagens são projetadas e enviadas em entregas, e podem ser personalizadas para cada destinatário.
 
-As funcionalidades principais incluem definição de metas, definição e personalização de mensagens, execução de comunicações e relatórios operacionais associados.
+As funcionalidades principais incluem direcionamento, definição e personalização de mensagens, execução de comunicações e os relatórios operacionais associados.
 
-Saiba mais sobre as principais etapas relacionadas à criação de delivery na documentação do Campaign v8:
+Conheça as principais etapas relacionadas à criação de entregas na documentação do Campaign v8:
 
-* [Criar a entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#create-the-delivery){target="_blank"}: saiba como criar uma única entrega de uma só vez.
+* [Criar a entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#create-the-delivery){target="_blank"}: aprenda a criar uma entrega individual e única.
 * [Definir o conteúdo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#content-of-the-delivery){target="_blank"}: configure o conteúdo de entrega específico para cada canal.
 * [Especificar o público-alvo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#target-population){target="_blank"}: defina vários tipos de público-alvo: público-alvo principal, público-alvo de prova, seed addresses e grupos de controle.
 * [Validar a entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#validate-the-delivery){target="_blank"}: saiba como validar a entrega antes de enviá-la para o destino principal.
-* [Enviar a entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#configuring-and-sending-the-delivery){target="_blank"}: defina as configurações de entrega e defina como enviar suas mensagens.
+* [Enviar a entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#configuring-and-sending-the-delivery){target="_blank"}: defina as configurações de entrega e como enviar suas mensagens.
 * [Práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=pt-BR){target="_blank"}: consulte as práticas recomendadas relacionadas aos recursos de entrega do Campaign.
 
 Consulte também esta [página](delivery-settings.md) para saber mais sobre configurações específicas de entrega do Campaign Classic.
@@ -33,7 +33,7 @@ Consulte também esta [página](delivery-settings.md) para saber mais sobre conf
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
 
 >[!NOTE]
 >

@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cdbcfc5aa0614e41ce76cb777fec58fbd01797d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Esta página lista novos recursos, melhorias e correções que vêm com a **vers
 
 [!BADGE Disponibilidade limitada]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
 
-_terça-feira, 12 de maio de 2025_
+_12 de maio de 2025_
 
-Essa build inclui as seguintes correções:
+Esta build inclui as seguintes correções:
 
-* Correção de um problema pós-atualização encontrado em configurações que não eram do Oracle. (NEO-87012)
-* Correção de um problema de backend TLS / HTTPS que afetava o console do cliente e o servidor. (NEO-87432)
+* Correção de um problema após a atualização encontrado em configurações alternativas à Oracle. (NEO-87012)
+* Correção de um problema de back-end TLS/HTTPS que afetava o console do cliente e o servidor. (NEO-87432)
 
 ### Build 9390 {#build-9390}
 
