@@ -42,7 +42,7 @@ Há dois tipos de permissões que você pode conceder a um usuário:
 
 >[!NOTE]
 >
-> * Antes de começar a definir as permissões, a Adobe recomenda que você leia a [Lista de verificação de configuração de segurança](https://helpx.adobe.com/campaign/kb/acc-security.html).
+> * Antes de começar a definir as permissões, a Adobe recomenda que você leia a [Lista de verificação de configuração de segurança](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
 > * Para saber mais sobre permissões, consulte a explicação detalhada na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
 <!--
