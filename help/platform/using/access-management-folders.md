@@ -7,10 +7,10 @@ feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 6e83067cef2b08b5bee37610bfef515714756ada
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 98%
+source-wordcount: '517'
+ht-degree: 91%
 
 ---
 
@@ -55,16 +55,21 @@ Para distinguir visualizações de pastas, o nome de cada visualização é exib
 
 ### Adicionar pastas e criar visualizações {#adding-folders-and-creating-views}
 
+>[!IMPORTANT]
+>
+>As pastas prontas para uso não devem ser marcadas como visualização.
+
+
 No exemplo abaixo, criaremos novas pastas para exibir dados específicos:
 
 1. Crie uma nova pasta do tipo **[!UICONTROL Deliveries]** e a nomeie como **Deliveries France**.
 1. Clique com o botão direito do mouse nessa pasta e selecione **[!UICONTROL Properties...]**.
 
-   ![](assets/s_ncs_user_add_folder_exple.png)
+   ![Captura de tela mostrando um clique com o botão direito nas propriedades](assets/s_ncs_user_add_folder_exple.png)
 
 1. Na guia **[!UICONTROL Restriction]**, selecione **[!UICONTROL This folder is a view]**. Todas as entregas no banco de dados serão exibidos.
 
-   ![](assets/s_ncs_user_add_folder_exple01.png)
+   ![Tela mostrando a caixa de exibição que está sendo marcada](assets/s_ncs_user_add_folder_exple01.png)
 
 1. Defina os critérios do filtro de entrega no editor de query na seção intermediária da janela: as campanhas correspondentes ao filtro definido serão exibidas.
 
@@ -74,7 +79,7 @@ No exemplo abaixo, criaremos novas pastas para exibir dados específicos:
 
    Com as seguintes condições de filtro:
 
-![](assets/s_ncs_user_add_folder_exple00.png)
+![Captura de tela mostrando as diferentes condições de filtro](assets/s_ncs_user_add_folder_exple00.png)
 
 As seguintes entregas serão exibidas na visualização:
 
@@ -84,46 +89,48 @@ As seguintes entregas serão exibidas na visualização:
 >
 >Ao gerenciar os eventos de [mensagens transacionais](../../message-center/using/about-transactional-messaging.md), as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações nas instâncias de execução, pois isso pode levar a problemas de direito de acesso. Para obter mais informações sobre a coleção do evento, consulte [esta seção](../../message-center/using/about-event-processing.md#event-collection).
 
-## Permissões em uma pasta
+<!--
+## Permissions on a folder
 
-### Editar permissões em uma pasta {#edit-permissions-on-a-folder}
+### Edit permissions on a folder {#edit-permissions-on-a-folder}
 
-Para editar permissões em uma pasta específica da árvore, siga as etapas abaixo:
+To edit permissions on a specific folder of the tree, follow the steps below:
 
-1. Clique com o botão direito do mouse na pasta e selecione **[!UICONTROL Properties...]**.
+1. Right-click on the folder and select **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. Clique na guia **[!UICONTROL Security]** para visualizar as autorizações nessa pasta.
+1. Click the **[!UICONTROL Security]** tab to view authorizations on this folder.
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
-### Modificar permissões {#modify-permissions}
+### Modify permissions {#modify-permissions}
 
-Para modificar permissões, você pode:
+To modify permissions, you can:
 
-* **Substituir um grupo ou um operador**. Para fazer isso, clique em um dos grupos (ou operadores) com direitos à pasta e selecione um novo grupo (ou um novo operador) na lista suspensa:
+* **Replace a group or an operator**. To do this, click one of the groups (or operators) with rights to the folder, and select a new group (or a new operator) from the drop-down list:
 
   ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **Autorizar um grupo ou um operador**. Para fazer isso, clique no botão **[!UICONTROL Add]** e selecione o grupo ou operador ao qual deseja atribuir autorizações para essa pasta.
-* **Proibir um grupo ou operador**. Para fazer isso, clique em **[!UICONTROL Delete]** e selecione o grupo ou operador do qual deseja remover a autorização para essa pasta.
-* **Selecionar os direitos atribuídos a um grupo ou a um operador**. Para fazer isso, clique no grupo ou operador relacionado, selecione os direitos de acesso que deseja conceder e desmarque os outros.
+* **Authorize a group or an operator**. To do this, click the **[!UICONTROL Add]** button and select the group or operator to which you want to assign authorizations for this folder.
+* **Forbid a group or an operator**. To do this, click **[!UICONTROL Delete]** and select the group or operator from which you want to remove authorization for this folder.
+* **Select the rights assigned to a group or an operator**. To do this, click the group or operator concerned, then select the access rights you want to grant and deselect the others.
 
   ![](assets/s_ncs_user_folder_properties_security03.png)
 
-### Propagar permissões {#propagate-permissions}
+### Propagate permissions {#propagate-permissions}
 
-Você pode propagar autorizações e direitos de acesso. Para fazer isso, selecione a opção **[!UICONTROL Propagate]** nas propriedades da pasta.
+You can propagate authorizations and access rights. To do this, select the **[!UICONTROL Propagate]** option in the folder properties.
 
-As autorizações definidas nessa janela serão aplicadas a todas as subpastas do nó atual. É possível sobrecarregar essas autorizações para cada uma das subpastas.
+The authorizations defined in this window will then be applied to all the sub-folders of the current node. You can then overload these authorizations for each of the sub-folders.
 
 >[!NOTE]
 >
->Limpar essa opção para uma pasta não a limpa automaticamente para as subpastas. Você deve limpá-la explicitamente para cada uma das subpastas.
+>Clearing this option for a folder does not automatically clear it for the sub-folders. You must clear it explicitly for each of the sub-folders.
 
-### Conceder acesso a todos os operadores {#grant-access-to-all-operators}
+### Grant access to all operators {#grant-access-to-all-operators}
 
-Na guia **[!UICONTROL Security]**, se a opção **[!UICONTROL System folder]** estiver selecionada, todos os operadores terão acesso a esses dados, independentemente dos direitos. Se essa opção for desmarcada, você deverá adicionar explicitamente o operador (ou seu grupo) à lista de autorizações para que ele tenha acesso.
+In the **[!UICONTROL Security]** tab, if the **[!UICONTROL System folder]** option is selected, all operators will have access to this data, regardless of their rights. If this option is cleared, you must explicitly add the operator (or their group) to the list of authorizations in order for them to have access.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)
+-->
