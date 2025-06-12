@@ -26,10 +26,10 @@ Como parte da iniciativa de promoção do Campaign v8, a documentação do Campa
 
 >[!TAB Documentação de canais de comunicação]
 
-Para saber mais sobre canais de comunicação, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}.
+Para saber mais sobre canais de comunicação, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=pt-BR){target=_blank}.
 
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=pt-BR){target=_blank}
 
 
 >[!TAB Conteúdo e público-alvo da entrega]
@@ -51,7 +51,7 @@ Consulte estas páginas para saber mais sobre validação de delivery, envio e p
 
 >[!ENDTABS]
 
-As configurações a seguir são específicas do Campaign Classic. Para outras configurações de entrega, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
+As configurações a seguir são específicas do Campaign Classic. Para outras configurações de entrega, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=pt-BR){target="_blank"}.
 
 +++ **Análise de entrega**
 
@@ -126,7 +126,7 @@ Quando a entrega for iniciada, as mensagens (e todas as tentativas) poderão ser
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}. 
 
 >[!NOTE]
 >
