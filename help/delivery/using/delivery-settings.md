@@ -4,7 +4,10 @@ title: Sobre configurações de deliveries
 description: Conheça as configurações específicas de delivery do v7
 feature: Channel Configuration
 role: User
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+hide: true
+hidefromtoc: true
+exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
+source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 95%
@@ -13,7 +16,7 @@ ht-degree: 95%
 
 # Configurações de entrega {#about-delivery-settings}
 
-As configurações a seguir são específicas do Campaign Classic. Para outras configurações de entrega, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=pt-BR){target="_blank"}.
+As configurações a seguir são específicas do Campaign Classic. Para outras configurações de entrega, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
 
 ## Análise de entrega {#delivery-analysis}
 
