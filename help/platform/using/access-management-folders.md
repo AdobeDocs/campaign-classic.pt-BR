@@ -8,9 +8,9 @@ role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 source-git-commit: 6e83067cef2b08b5bee37610bfef515714756ada
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,9 +67,9 @@ No exemplo abaixo, criaremos novas pastas para exibir dados específicos:
 
    ![Captura de tela mostrando um clique com o botão direito nas propriedades](assets/s_ncs_user_add_folder_exple.png)
 
-1. Na guia **[!UICONTROL Restriction]**, selecione **[!UICONTROL This folder is a view]**. Todas as entregas no banco de dados serão exibidos.
+1. Na guia **[!UICONTROL Restriction]**, selecione **[!UICONTROL This folder is a view]**. Todas as entregas no banco de dados serão exibidas.
 
-   ![Tela mostrando a caixa de exibição que está sendo marcada](assets/s_ncs_user_add_folder_exple01.png)
+   ![Tela mostrando a caixa de visualização que está sendo marcada](assets/s_ncs_user_add_folder_exple01.png)
 
 1. Defina os critérios do filtro de entrega no editor de query na seção intermediária da janela: as campanhas correspondentes ao filtro definido serão exibidas.
 
