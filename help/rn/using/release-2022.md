@@ -5,11 +5,13 @@ description: Saiba mais sobre as versões do Campaign Classic 2022
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 100%
+source-wordcount: '2099'
+ht-degree: 99%
 
 ---
 
@@ -133,7 +135,7 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 
   Correções críticas foram aplicadas em relação à API da web do Microsoft Dynamics Connector:
 
-   * Correção de um problema durante uma importação acionada por um workflow, que fazia com que os valores nulos de campos do tipo string fossem salvos como Null em vez de valores vazios.
+   * Correção de um problema durante uma importação acionada por um fluxo de trabalho, que fazia com que os valores nulos de campos do tipo string fossem salvos como Null em vez de valores vazios.
    * Correção de um problema que resultava no seguinte erro para importação ou exportação de dados usando chamadas de API da Web: “URI inválido: o esquema de URI é muito longo”.
    * Correção de vários problemas ao importar dados contendo campos de pesquisa a partir do Microsoft Dynamics 365.
 

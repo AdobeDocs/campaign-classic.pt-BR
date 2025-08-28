@@ -5,11 +5,13 @@ description: Saiba mais sobre as versões do Campaign Classic 2023
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '2337'
-ht-degree: 100%
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
+workflow-type: tm+mt
+source-wordcount: '2336'
+ht-degree: 99%
 
 ---
 
@@ -36,13 +38,13 @@ A partir desta versão, o rastreamento de links em emails já enviados ainda fun
 
 ### Patches {#release-7-3-5-patches}
 
-* Correção de um problema com o uso de dados de um banco de dados do Google Big Query ao atualizar dados em um banco de dados da Oracle: todas as chaves foram definidas como `0` na tabela temporária do workflow. (NEO-65091)
-* Correção de um problema que causava a falha de execução de um workflow quando duas consultas em um banco de dados do Google Big Query eram combinadas em uma atividade de workflow de **União**. (NEO-63705)
+* Correção de um problema com o uso de dados de um banco de dados do Google Big Query ao atualizar dados em um banco de dados da Oracle: todas as chaves foram definidas como `0` na tabela temporária do fluxo de trabalho. (NEO-65091)
+* Correção de um problema que causava a falha de execução de um fluxo de trabalho quando duas consultas em um banco de dados do Google Big Query eram combinadas em uma atividade de fluxo de trabalho de **União**. (NEO-63705)
 * Correção de um problema que causava a solicitação de uma nova autenticação ao clicar no botão `Back` em um relatório do Campaign. (NEO-65087)
-* Correção de um erro no workflow de Limpeza de banco de dados que acontecia quando uma entrega era excluída antes de suas provas de entrega. (NEO-48114)
+* Correção de um erro no fluxo de trabalho de limpeza de banco de dados que acontecia quando uma entrega era excluída antes de suas provas de entrega. (NEO-48114)
 * Correção de um problema de conexão com o Console do cliente: atualizações recentes na verificação TLS estavam causando um erro de conexão. (NEO-50488)
-* Correção de um problema com a autenticação de Proxy HTTP depois da pós-atualização do Campaign para a versão 7.3.1. As solicitações HTTP em workflows do Campaign estavam falhando com `error 407 – proxy auth required is returned`. (NEO-49624)
-* Correção de uma falha intermitente com descriptografia GPG nas atividades de workflow de **Script**. A mensagem de erro associada era: `gpg: decryption failed: No secret key`. (NEO-50257)
+* Correção de um problema com a autenticação de Proxy HTTP depois da pós-atualização do Campaign para a versão 7.3.1. As solicitações HTTP em fluxos de trabalho do Campaign estavam falhando com `error 407 – proxy auth required is returned`. (NEO-49624)
+* Correção de uma falha intermitente com descriptografia GPG nas atividades de fluxo de trabalho de **Script**. A mensagem de erro associada era: `gpg: decryption failed: No secret key`. (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
 
@@ -79,7 +81,7 @@ _7 de setembro de 2023_
 * A conta externa do BigQuery foi aprimorada com novas opções para configurar o SDK do GCloud. (NEO-63879) [Leia mais](../../installation/using/configure-fda-google-big-query.md#google-external)
 * Uma nova seção `cusHeader` foi adicionada ao arquivo de configuração do servidor (serverConf.xml). Ela permite adicionar cabeçalhos personalizados ao fazer upload de um arquivo de um servidor externo. (NEO-58339) [Leia mais](../../installation/using/the-server-configuration-file.md#cusheaders).
 * O gerenciamento de log de rastreamento foi aprimorado para evitar IDs negativas para lastMsgId. Foi alterado de int32 para int64. (NEO-52290)
-* O workflow de mid-sourcing (estatísticas de entrega) foi adicionado pronto para uso. Esse novo workflow sincroniza os dados estatísticos da entrega (nms:deliveryStat) do mid à instância de marketing. (NEO-36802)
+* O fluxo de trabalho de mid-sourcing (estatísticas de entrega) foi adicionado pronto para uso. Este novo fluxo de trabalho sincroniza os dados estatísticos de entrega (nms:deliveryStat) do meio para a instância de marketing. (NEO-36802)
 
 ### Patches {#release-7-3-4-patches}
 
@@ -89,11 +91,11 @@ _7 de setembro de 2023_
 * Correção de um problema que poderia impedir a exibição correta de aplicativos da Web no modo de compatibilidade v5. (NEO-63174)
 * Correção de um problema que impedia que operadores não administradores enviassem entregas do webAnalytics. (NEO-62750)
 * Correção de um problema para impedir que os navegadores adicionem espaços extras ao usar conteúdo condicional em uma entrega. (NEO-62132)
-* Correção de um problema de regressão que impedia o funcionamento correto do cálculo de contatos ativos no workflow de faturamento ao usar esquemas de público-alvo associados a vários esquemas de log. (NEO-61468)
+* Correção de um problema de regressão que impedia o funcionamento correto do cálculo de contatos ativos no fluxo de trabalho de faturamento ao usar esquemas de público-alvo associados a vários esquemas de log. (NEO-61468)
 * Correção de um problema que poderia resultar em um erro e impedir a rolagem da tela ao editar o conteúdo de uma entrega. (NEO-61364)
 * Correção de um problema que fazia com que uma janela pop-up fosse aberta ao clicar em uma imagem no editor de conteúdo de email. (NEO-60752)
 * Correção de um problema que poderia resultar na codificação incorreta de caracteres especiais no conteúdo HTML de uma entrega em vários navegadores. (NEO-60081)
-* Correção de um problema de sincronização que poderia ocorrer ao usar a atividade de workflow inSMS. (NEO-59544)
+* Correção de um problema de sincronização que poderia ocorrer ao usar a atividade de fluxo de trabalho inSMS. (NEO-59544)
 * Correção de um problema ao usar o conector do Big Query com campos de data e hora ou de carimbo de data e hora. (NEO-59502, NEO-49768)
 * Correção de um problema que impedia o uso de relatórios de entrega cumulativos. (NEO-59211)
 * Correção de um problema que poderia resultar em erros ao compartilhar públicos-alvo com o Serviço principal de pessoas. (NEO-58637)
@@ -105,17 +107,17 @@ _7 de setembro de 2023_
 * Correção de um problema da chave de cache que poderia gerar problemas de renderização. (NEO-51516, NEO-49995)
 * Correção de um problema que poderia resultar em um erro de validação ao enviar uma entrega de correspondência direta usando targetMapping com aprovações. (NEO-50758)
 * Correção de um problema no gerenciamento de consultas que poderia afetar o desempenho da entrega. (NEO-49991)
-* Correção de um problema ao usar contas externas em atividades de entrega de workflow da campanha que poderia levar a problemas de configuração da conta externa. (NEO-49959)
+* Correção de um problema ao usar contas externas em atividades de entrega de fluxo de trabalho da campanha que poderia levar a problemas de configuração da conta externa. (NEO-49959)
 * Correção de um problema de desempenho ao enviar notificações por push. (NEO-49953)
 Correção de um problema que poderia fazer com que caracteres japoneses fossem exibidos incorretamente ao exportar relatórios (NEO-49308).
 * Correção de um problema que fazia com que o relatório de erros do Tomcat exibisse mais detalhes de erros do que deveria. (NEO-49029)
 * Correção de um problema que poderia resultar em erro de entrega ao usar um grande número de ofertas. (NEO-48807)
-* Correção de um problema que poderia impedir o funcionamento adequado da atividade de workflow **Atualizar dados**. (NEO-48140)
+* Correção de um problema que poderia impedir o funcionamento adequado da atividade de fluxo de trabalho **Atualizar dados**. (NEO-48140)
 * Correção de um problema que poderia impedir a sincronização dos dados de rastreamento de cliques para entregas usando uma conta externa diferente do email.(NEO-47277)
 * Correção de um problema que poderia impedir a sincronização de logs de rastreamento em tempo real na instância de marketing do Centro de mensagens. (NEO-42540)
 * Correção de um problema que impedia a exibição do prefixo do espaço de trabalho na janela de descoberta de um esquema para tabelas de banco de dados do Snowflake. (NEO-40297)
 * Correção de um problema que impedia que tags de `<img-amp>` funcionassem no conteúdo de email. (NEO-38685)
-* Correção de um problema que poderia causar uma falha do workflow de arquivamento do Centro de mensagens ao usar uma retransmissão HTTP. (NEO-33783)
+* Correção de um problema que poderia causar uma falha do fluxo de trabalho de arquivamento do Centro de mensagens ao usar uma retransmissão HTTP. (NEO-33783)
 * Correção de um problema que poderia causar erros de nome e tamanho de fonte no editor de conteúdo de email. (NEO-61342)
 
 ## Versão 7.3.3 - Build 9359 {#release-7-3-3}
