@@ -21,7 +21,7 @@ Em 30 de junho de 2021, foram feitas alterações nos recursos de logon do [Adob
 
 ## O que mudou?
 
-O Adobe Identity Management Service (IMS) parou de oferecer suporte a versões antigas do Internet Explorer em **30 de junho de 2021**. [Saiba mais](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+O Adobe Identity Management Service (IMS) parou de oferecer suporte a versões antigas do Internet Explorer em **30 de junho de 2021**. [Saiba mais](https://helpx.adobe.com/br/x-productkb/global/update-operating-system-and-browser.html).
 
 A Adobe deseja preservar a funcionalidade do IMS para todos os clientes após 30 de junho de 2021. O IMS faz parte da estrutura de segurança que permite aos usuários fazer logon no console do cliente, ou seja, no Adobe Campaign.
 
@@ -78,7 +78,7 @@ A seguinte mensagem de aviso estará visível para os usuários se eles precisar
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-Se aparecer esse aviso, instale as atualizações mais recentes do sistema operacional que você está usando. [Saiba mais](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
+Se aparecer esse aviso, instale as atualizações mais recentes do sistema operacional que você está usando. [Saiba mais](https://helpx.adobe.com/br/x-productkb/global/update-operating-system-and-browser.html)
 
 Se você não atualizou sua versão do Internet Explorer, verá a seguinte mensagem e não poderá mais se conectar ao Adobe Campaign:
 
