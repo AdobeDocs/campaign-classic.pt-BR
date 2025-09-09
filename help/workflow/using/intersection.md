@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity
 hide: true
 hidefromtoc: true
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 3ffa32fbaa588904b79a1343c39f5b5b5f2b134f
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '432'
 ht-degree: 100%
 
 ---
@@ -18,21 +18,17 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
 >title="Atividade de intersecção"
->abstract="Uma atividade do tipo intersecção cria um público alvo a partir da intersecção dos públicos alvos recebidos. Uma intersecção permite extrair somente o público que é comum a todos os resultados da atividade de entrada."
->additional-url="https://video.tv.adobe.com/v/341377?captions=por_br" text="Assista ao vídeo de demonstração"
-
-
-
+>abstract="Uma atividade do tipo intersecção cria um público alvo a partir da intersecção dos públicos alvos recebidos. Uma intersecção permite extrair somente a população que é comum a todos os resultados da atividade de entrada."
 
 Uma atividade do tipo **intersecção** cria um público alvo a partir da intersecção dos targets recebidos.
 
-Uma intersecção permite extrair somente o público que é comum a todos os resultados da atividade de entrada. O target é criado com todos os resultados recebidos: todas as atividades anteriores devem então ser concluídas antes que a intersecção possa ser executada. Para configurar essa atividade, você precisa inserir um rótulo para ela, bem como as opções referentes ao resultado.
+Uma intersecção permite extrair somente a população que é comum a todos os resultados da atividade de entrada. O target é criado com todos os resultados recebidos: todas as atividades anteriores devem então ser concluídas antes que a intersecção possa ser executada. Para configurar essa atividade, você precisa inserir um rótulo para ela, bem como as opções referentes ao resultado.
 
 ![](assets/s_user_segmentation_inter.png)
 
 Para obter mais informações sobre como configurar e usar a atividade de intersecção, consulte [Extraindo dados conjuntos (Intersecção)](targeting-data.md#extracting-joint-data--intersection-).
 
-Marque a opção **[!UICONTROL Generate complement]** se desejar processar o público restante. O complemento conterá a união dos resultados de todas as atividades de entrada menos a intersecção. Uma transição de saída adicional será adicionada à atividade, da seguinte maneira:
+Marque a opção **[!UICONTROL Generate complement]** se desejar processar a população restante. O complemento conterá a união dos resultados de todas as atividades de entrada menos a intersecção. Uma transição de saída adicional será adicionada à atividade, da seguinte maneira:
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
@@ -48,7 +44,7 @@ No exemplo a seguir, o objetivo da intersecção é calcular os destinatários c
 1. Se você tiver fornecido dados adicionais para os queries, poderá optar por manter apenas aqueles compartilhados por destinatários marcando a caixa relevante.
 1. Se quiser usar o restante dos dados (em relação aos queries, mas não sua intersecção), marque a caixa **[!UICONTROL Generate complement]**.
 1. Adicione uma atividade de atualização da lista após o resultado da intersecção. Você também pode adicionar uma atualização da lista ao complemento que deseja usar.
-1. Execute o workflow Aqui, dois destinatários se aplicam a todos os três queries fornecidos ao mesmo tempo. O complemento é composto de cinco destinatários que se aplicam apenas a um ou dois queries.
+1. Execute o fluxo de trabalho Aqui, dois destinatários se aplicam a todos os três queries fornecidos ao mesmo tempo. O complemento é composto de cinco destinatários que se aplicam apenas a um ou dois queries.
 
    O resultado da intersecção é enviado para a atualização da primeira lista. Se você optou usar o complemento, ele também será enviado para a segunda atualização da lista.
 
@@ -57,14 +53,14 @@ No exemplo a seguir, o objetivo da intersecção é calcular os destinatários c
 ## Parâmetros de entrada {#input-parameters}
 
 * tableName
-* schema
+* esquema
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
 ## Parâmetros de saída {#output-parameters}
 
 * tableName
-* schema
+* esquema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da intersecção. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente **[!UICONTROL nms:recipient]**) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da intersecção. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o esquema da população (normalmente **[!UICONTROL nms:recipient]**) e **[!UICONTROL recCount]** é o número de elementos na tabela.
