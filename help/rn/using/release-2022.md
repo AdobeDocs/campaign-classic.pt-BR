@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
 source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2099'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Consulte a [Matriz de compatibilidade do Campaign](../../rn/using/compatibility-
 * Correção de um erro da build anterior que impedia os usuários de redimensionar a página de logon do IMS. (NEO-30085)
 * Correção de um erro que ocorria ao instalar o pacote do gerenciador de conteúdo em uma instância existente. (NEO-32349)
 * Correção de um problema no menu **Campanhas** em que a mensagem “operação em andamento” era exibida continuamente. (NEO-44904)
-* Com o Adobe Analytics ativado, foi corrigido um problema que removia a BID (Broadlog ID) e a CID (ID da campanha) do URL ao enviar um email com um URL sem salvar a entrega. (NEO-38678)
+* Com o Adobe Analytics habilitado, foi corrigido um problema que removia a BID (Broadlog ID) e a CID (ID da campanha) do URL ao enviar um email com um URL sem salvar a entrega. (NEO-38678)
 * Correção de um problema que ocorria ao fazer upload de uma imagem para a pasta Recursos públicos em uma instância com configuração específica do Centro de mensagens. A seguinte mensagem de erro era exibida: “Não foi possível carregar as imagens para os servidores de rastreamento”. (NEO-38546, NEO-45572)
 * Correção de um problema que fazia com que o sistema falhasse ao regenerar uma configuração, no caso de arquivos mal configurados. (NEO-38752)
 * Correção de um problema que poderia resultar na atualização incorreta dos indicadores de entrega. (NEO-44827)
@@ -167,7 +167,7 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 * Correção de um problema que impedia o funcionamento do console do Campaign Classic ao clicar com o botão direito do mouse em qualquer uma das pastas da guia Explorer (NEO-38884).
 * Correção de um erro ao usar um modelo de entrega criado anteriormente e vinculado a uma conta do Web Analytics em uma nova entrega, no qual a configuração do Web Analytics ficava ausente. (NEO-28666)
 * Correção de um problema que podia impedir a pré-visualização de entregas de dispositivos móveis que foram anexados a um fluxo de trabalho.
-* Correção de um erro que impedia que URLs de rastreamento personalizadas fossem redirecionadas quando o mecanismo de assinatura da URL para links de rastreamento era ativado.
+* Correção de um erro que impedia que URLs de rastreamento personalizadas fossem redirecionadas quando o mecanismo de assinatura da URL para links de rastreamento era habilitado.
 * Correção de um problema que poderia causar falhas após a atualização devido a um problema de gerenciamento de índice.
 * Correção de um erro que ocorria ao usar tipos de dados de campo de pesquisa com o Microsoft Dynamics CRM em atividades de fluxo de trabalho de **Importação** ou **Exportação**.
 * Correção de um problema que podia impedir os usuários de fazerem logon no console devido a um problema de configuração de proxy. (NEO-38388)

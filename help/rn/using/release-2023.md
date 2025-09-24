@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2336'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ _7 de setembro de 2023_
 * A conta externa do BigQuery foi aprimorada com novas opções para configurar o SDK do GCloud. (NEO-63879) [Leia mais](../../installation/using/configure-fda-google-big-query.md#google-external)
 * Uma nova seção `cusHeader` foi adicionada ao arquivo de configuração do servidor (serverConf.xml). Ela permite adicionar cabeçalhos personalizados ao fazer upload de um arquivo de um servidor externo. (NEO-58339) [Leia mais](../../installation/using/the-server-configuration-file.md#cusheaders).
 * O gerenciamento de log de rastreamento foi aprimorado para evitar IDs negativas para lastMsgId. Foi alterado de int32 para int64. (NEO-52290)
-* O fluxo de trabalho de mid-sourcing (estatísticas de entrega) foi adicionado pronto para uso. Este novo fluxo de trabalho sincroniza os dados estatísticos de entrega (nms:deliveryStat) do meio para a instância de marketing. (NEO-36802)
+* O fluxo de trabalho de mid-sourcing (estatísticas de entrega) foi adicionado pronto para uso. Esse novo fluxo de trabalho sincroniza os dados estatísticos da entrega (nms:deliveryStat) da mid à instância de marketing. (NEO-36802)
 
 ### Patches {#release-7-3-4-patches}
 

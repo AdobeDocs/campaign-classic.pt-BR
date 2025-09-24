@@ -7,7 +7,7 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2569'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ ht-degree: 100%
          + [Públicos-alvo](platform/using/faq-audiences.md)
          + [Criar mensagens](platform/using/faq-designing.md)
          + [Enviar mensagens](platform/using/faq-messages.md)
-         + [Workflows](platform/using/faq-workflows.md)
+         + [Fluxos de trabalho](platform/using/faq-workflows.md)
          + [Configuração](platform/using/faq-campaign-config.md)
          + [Relatórios](platform/using/faq-reporting.md)
          + [Desenvolvimento](platform/using/faq-developers.md)
@@ -70,7 +70,7 @@ ht-degree: 100%
    + [Criar e gerenciar listas](platform/using/creating-and-managing-lists.md)
    + Importar e exportar dados {#importing-and-exporting-data}
       + [Introdução à importação e exportação de dados](platform/using/get-started-data-import-export.md)
-      + [Usar workflows para importar e exportar dados](platform/using/import-export-workflows.md)
+      + [Usar fluxos de trabalho para importar e exportar dados](platform/using/import-export-workflows.md)
       + Criar importações e exportações genéricas {#generic-imports-exports}
          + [Introdução às importações e exportações genéricas](platform/using/about-generic-imports-exports.md)
          + [Criar modelos de importação e exportação](platform/using/creating-import-export-templates.md)
@@ -99,9 +99,9 @@ ht-degree: 100%
       + [Criar e gerenciar grupos](platform/using/access-management-groups.md)
       + [Usar direitos nomeados para configurar permissões](platform/using/access-management-named-rights.md)
       + [Gerenciar o acesso a pastas](platform/using/access-management-folders.md)
-   + Pacotes de dados e listas discriminadas {#administration-basics}
+   + Pacotes de dados e enumerações {#administration-basics}
       + [Pacotes de dados](platform/using/working-with-data-packages.md)
-      + [Listas discriminadas](platform/using/managing-enumerations.md)
+      + [Enumerações](platform/using/managing-enumerations.md)
    + Conectores CRM  {#connectors}
       + [Introdução aos Conectores CRM](platform/using/crm-connectors.md)
       + [Conecte-se com o Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
@@ -236,7 +236,7 @@ ht-degree: 100%
       + [Modelos de publicação](delivery/using/publication-templates.md)
       + [Usar um modelo de conteúdo](delivery/using/using-a-content-template.md)
       + [Enriquecer conteúdo](delivery/using/enriching-content.md)
-      + [Automatizar via workflows](delivery/using/automating-via-workflows.md)
+      + [Automatizar via fluxos de trabalho](delivery/using/automating-via-workflows.md)
 + [Orquestrar campanhas de marketing](campaign/using/about-marketing-campaigns.md)
 + Orquestrar campanhas de marketing {#orchestrating-campaigns}
    + [Sobre a otimização de campanha](campaign-opt/using/about-campaign-optimization.md)
@@ -270,7 +270,7 @@ ht-degree: 100%
    + [Sobre marketing distribuído](distributed/using/about-distributed-marketing.md)
    + [Criar uma campanha local](distributed/using/creating-a-local-campaign.md)
    + [Criar uma campanha colaborativa](distributed/using/creating-a-collaborative-campaign.md)
-   + [Publicar o pacote da campanha](distributed/using/publishing-the-campaign-package.md)
+   + [Publicar o pacote de campanha](distributed/using/publishing-the-campaign-package.md)
    + [Acessar campanhas](distributed/using/accessing-campaigns.md)
    + [Rastrear uma campanha](distributed/using/tracking-a-campaign.md)
    + [Casos de uso](distributed/using/examples.md)
@@ -394,8 +394,8 @@ ht-degree: 100%
       + [Solucionar problemas do [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatizar com fluxos de trabalho](workflow/using/about-workflow-automation.md)
 + Automatizar com fluxos de trabalho {#automating-with-workflows}
-   + Introdução a workflows {#introduction}
-      + [Sobre workflows](workflow/using/about-workflows.md)
+   + Introdução a fluxos de trabalho {#introduction}
+      + [Sobre fluxos de trabalho](workflow/using/about-workflows.md)
       + [Sobre atividades](workflow/using/about-activities.md)
       + [Criar um fluxo de trabalho](workflow/using/building-a-workflow.md)
       + [Dados do público alvo](workflow/using/targeting-data.md)
@@ -478,7 +478,7 @@ ht-degree: 100%
          + [Enriquecimento de email com campos de data personalizados](workflow/using/email-enrichment-with-custom-date-fields.md)
    + Monitoramento {#monitoring}
       + [Enviar um relatório a uma lista](workflow/using/sending-a-report-to-a-list.md)
-      + [Supervisionar os workflows](workflow/using/supervising-workflows.md)
+      + [Supervisionar os fluxos de trabalho](workflow/using/supervising-workflows.md)
       + [Enviar alertas personalizados aos operadores](workflow/using/sending-personalized-alerts-to-operators.md)
    + Gerenciamento de dados {#data-management}
       + [Coordenar atualizações de dados](workflow/using/coordinating-data-updates.md)
@@ -495,26 +495,26 @@ ht-degree: 100%
       + [Executar computação de agregado](workflow/using/performing-aggregate-computing.md)
       + [Consultar usando gerenciamento de agrupamento](workflow/using/querying-using-grouping-management.md)
       + [Consultar usando um relacionamento muitos para muitos](workflow/using/querying-using-many-to-many-relationship.md)
-      + [Adicionar um campo calculado do tipo lista discriminada](workflow/using/adding-enumeration-type-calculated-field.md)
+      + [Adicionar um campo calculado do tipo enumeração](workflow/using/adding-enumeration-type-calculated-field.md)
       + [Criar um filtro](workflow/using/creating-a-filter.md)
       + [Filtrar destinatários duplicados](workflow/using/filtering-duplicated-recipients.md)
    + Monitorar fluxos de trabalho {#monitoring-workflows}
       + [Monitorar a execução do fluxo de trabalho](workflow/using/monitoring-workflow-execution.md)
-      + [Monitorar workflows técnicos](workflow/using/monitoring-technical-workflows.md)
+      + [Monitorar fluxos de trabalho técnicos](workflow/using/monitoring-technical-workflows.md)
       + [HeatMap de fluxo de trabalho](workflow/using/heatmap.md)
    + Gerenciamento avançado {#advanced-management}
       + [Propriedades do fluxo de trabalho](workflow/using/workflow-properties.md)
       + [Parâmetros avançados](workflow/using/advanced-parameters.md)
       + [Modelos e scripts JavaScript](workflow/using/javascript-scripts-and-templates.md)
-      + [Exemplos de código JavaScript em workflows](workflow/using/javascript-in-workflows.md)
+      + [Exemplos de código JavaScript em fluxos de trabalho](workflow/using/javascript-in-workflows.md)
       + [Acessar um banco de dados externo](workflow/using/accessing-an-external-database-fda.md)
       + [Gerenciar permissões](workflow/using/managing-rights.md)
       + [Alterar imagens de atividade](workflow/using/managing-activity-images.md)
       + [Gerenciar fusos horários](workflow/using/managing-time-zones.md)
-      + [Workflows técnicos](workflow/using/about-technical-workflows.md)
+      + [Fluxos de trabalho técnicos](workflow/using/about-technical-workflows.md)
 + Gerenciar ofertas {#managing-offers}
    + Introdução à interação {#interaction-overview}
-      + [Interação e gestão de ofertas](interaction/using/interaction-and-offer-management.md)
+      + [Interação e gerenciamento de ofertas](interaction/using/interaction-and-offer-management.md)
       + [Glossário](interaction/using/i-glossary.md)
       + [Práticas recomendadas de interação](interaction/using/interaction-best-practices.md)
    + Operação geral {#general-operation}
@@ -755,7 +755,7 @@ ht-degree: 100%
          + [Condição](configuration/using/schema/condition.md)
          + [Índice DB](configuration/using/schema/db-index.md)
          + [Elemento](configuration/using/schema/element.md)
-         + [Lista discriminada](configuration/using/schema/enumeration.md)
+         + [Enumeração](configuration/using/schema/enumeration.md)
          + [Ajuda](configuration/using/schema/help.md)
          + [Associar-se](configuration/using/schema/join.md)
          + [Chave](configuration/using/schema/key.md)
@@ -802,7 +802,7 @@ ht-degree: 100%
       + [Seed addresses](configuration/using/seed-addresses.md)
       + [Criação de filtros](configuration/using/creating-filters.md)
       + [Criação de uma lista de perfis com base em um fluxo de trabalho](configuration/using/creating-a-profile-list-with-a-workflow.md)
-      + [Gerenciamento de workflows](configuration/using/managing-workflows.md)
+      + [Gerenciamento de fluxos de trabalho](configuration/using/managing-workflows.md)
       + [Gerenciamento de relatórios](configuration/using/managing-reports.md)
    + Configuração do rastreamento web {#setting-up-web-tracking}
       + [Sobre o rastreamento Web](configuration/using/about-web-tracking.md)
