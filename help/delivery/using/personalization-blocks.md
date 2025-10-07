@@ -146,6 +146,6 @@ Para criar um bloco de personalização, vá para o explorer e siga as seguintes
 
 Saiba como criar blocos de conteúdo dinâmico e como usá-los para personalizar o conteúdo da sua entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/340472?quality=12&captions=por_br)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
