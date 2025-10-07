@@ -29,7 +29,7 @@ As mensagens entregues pelo Adobe Campaign podem ser personalizadas de várias m
 
 Com o Adobe Campaign, personalize seus deliveries para enviar mensagens que correspondam ao perfil e aos interesses de cada recipient.
 
-O Personalization ajuda a tornar suas mensagens mais relevantes e envolventes. Você pode usar os dados do recipient para adaptar o conteúdo, adicionar campos dinâmicos ou exibir informações diferentes com base em condições. Saiba como configurar e usar recursos de personalização em suas entregas na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+O Personalization ajuda a tornar suas mensagens mais relevantes e envolventes. Você pode usar os dados do recipient para adaptar o conteúdo, adicionar campos dinâmicos ou exibir informações diferentes com base em condições. Saiba como configurar e usar recursos de personalização em suas entregas na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=pt-BR){target=_blank}.
 
 Como parte da iniciativa de promoção do Campaign v8, a documentação do Campaign Classic foi reorganizada. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8.
 
@@ -37,10 +37,10 @@ Como parte da iniciativa de promoção do Campaign v8, a documentação do Campa
 
 >[!TAB Documentação de personalização de conteúdo]
 
-Para saber mais sobre a personalização de conteúdo, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Para saber mais sobre a personalização de conteúdo, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=pt-BR){target=_blank}.
 
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=pt-BR){target=_blank}
 
 
 >[!TAB Criação de entregas por email]
@@ -50,7 +50,7 @@ Conheça as principais etapas relacionadas à criação de entregas de email na 
 * [Criar uma entrega de email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=pt-BR){target="_blank"}: saiba mais sobre as diferentes etapas necessárias para criar uma entrega de email.
 * [Definir o conteúdo do email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR){target="_blank"}: defina o que o email incluirá: remetente, assunto, conteúdo, imagens.
 * [Definir conteúdo interativo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=pt-BR){target="_blank"}: use o formato interativo AMP for Email para enviar emails dinâmicos.
-* [Enviar emails em dispositivos móveis japoneses](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}: use um dos três formatos em japonês específicos para email em dispositivos móveis.
+* [Enviar emails em dispositivos móveis japoneses](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=pt-BR){target="_blank"}: use um dos três formatos em japonês específicos para email em dispositivos móveis.
 * [Anexar arquivos a um email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=pt-BR){target="_blank"}: conheça as diferentes maneiras de anexar um ou mais arquivos a um email.
 
 
@@ -77,7 +77,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 The key steps to send an email are as follows:
 
