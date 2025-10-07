@@ -5,9 +5,11 @@ description: Saiba como usar campos de personalização
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
+workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 100%
 
@@ -71,13 +73,13 @@ Ao criar um email, iremos inserir o nome do destinatário e depois adicionar a d
 
    >[!NOTE]
    >
-   >Quando uma entrega faz parte de um workflow, você pode usar os dados da tabela de workflow temporário. Esses dados são agrupados no menu **[!UICONTROL Target extension]**. Para obter mais informações, consulte [esta seção](../../workflow/using/data-life-cycle.md#target-data).
+   >Quando uma entrega faz parte de um fluxo de trabalho, você pode usar os dados da tabela de fluxo de trabalho temporário. Esses dados são agrupados no menu **[!UICONTROL Target extension]**. Para obter mais informações, consulte [esta seção](../../workflow/using/data-life-cycle.md#target-data).
 
 ## Otimização da personalização {#optimizing-personalization}
 
 Você pode otimizar a personalização usando uma opção dedicada: **[!UICONTROL Prepare the personalization data with a workflow]**, disponível na guia **[!UICONTROL Analysis]** das propriedades de entrega. Para saber mais sobre como analisar a entrega, consulte [esta seção](steps-validating-the-delivery.md#analyzing-the-delivery).
 
-Durante a análise de entrega, essa opção cria e executa automaticamente um workflow que armazena todos os dados vinculados ao público-alvo em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
+Durante a análise de entrega, essa opção cria e executa automaticamente um fluxo de trabalho que armazena todos os dados vinculados ao Target em uma tabela temporária, incluindo dados de tabelas vinculadas na FDA.
 
 Marcar essa opção pode melhorar muito o desempenho da análise de entrega quando muitos dados estão sendo processados, especialmente se os dados de personalização vêm de uma tabela externa por meio do FDA. Para saber mais, consulte [Acesso a um banco de dados externo (FDA)](../../installation/using/about-fda.md).
 
@@ -86,19 +88,19 @@ Por exemplo, se estiver tendo problemas de desempenho com entrega de um grande n
 Para usar essa opção, siga as etapas abaixo:
 
 1. Crie uma campanha. Para obter mais informações, consulte [esta seção](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao workflow. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/query.md).
-1. Adicione uma atividade **[!UICONTROL Email delivery]** ao workflow e depois a abra. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/delivery.md).
+1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao fluxo de trabalho. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/query.md).
+1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/delivery.md).
 1. Vá até a guia **[!UICONTROL Analysis]** do **[!UICONTROL Delivery properties]** e selecione a opção **[!UICONTROL Prepare the personalization data with a workflow]**.
 
    ![](assets/perso_optimization.png)
 
-1. Configure a entrega e comece o workflow para iniciar a análise.
+1. Configure a entrega e comece o fluxo de trabalho para iniciar a análise.
 
-Depois que a análise é feita, os dados da personalização são armazenados em uma tabela temporária por meio de um workflow temporário criado em tempo real durante a análise.
+Depois que a análise é feita, os dados da personalização são armazenados em uma tabela temporária por meio de um fluxo de trabalho temporário criado em tempo real durante a análise.
 
-Este workflow não está visível na interface do Adobe Campaign. É para ser apenas um meio técnico para armazenar e manipular rapidamente os dados de personalização.
+Este fluxo de trabalho não está visível na interface do Adobe Campaign. É para ser apenas um meio técnico para armazenar e manipular rapidamente os dados de personalização.
 
-Após a conclusão da análise, vá para as **[!UICONTROL Properties]** do workflow e selecione a guia **[!UICONTROL Variables]**. Você pode ver o nome da tabela temporária que pode ser usada para fazer uma chamada SQL para exibir as IDs que ela contém.
+Após a conclusão da análise, vá para as **[!UICONTROL Properties]** do fluxo de trabalho e selecione a guia **[!UICONTROL Variables]**. Você pode ver o nome da tabela temporária que pode ser usada para fazer uma chamada SQL para exibir as IDs que ela contém.
 
 ![](assets/perso_optimization_temp_table.png)
 
@@ -140,6 +142,6 @@ Ao adicionar o esquema do objeto, selecione os campos que deseja adicionar ao co
 
 Saiba como adicionar um campo de personalização à linha de assunto e ao conteúdo de uma entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/31843?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

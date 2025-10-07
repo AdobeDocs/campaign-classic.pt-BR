@@ -5,11 +5,13 @@ description: Saiba como usar blocos de personalização
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
+workflow-type: tm+mt
 source-wordcount: '870'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -111,7 +113,7 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
 
   >[!NOTE]
   >
-  >Este bloco pode ser usado em entregas somente para visitantes.
+  >Este bloco pode ser usado em entregas direcionadas somente para visitantes.
 
 * **[!UICONTROL Registration confirmation]**: insere um link que permite confirmar a subscrição.
 * **[!UICONTROL Social network sharing links]**: insere botões que permitem que o destinatário compartilhe um link para o conteúdo da mirror page com o cliente de email, Facebook, X (anteriormente conhecido como Twitter) e LinkedIn (consulte [Marketing viral: encaminhar para um amigo](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
@@ -144,6 +146,6 @@ Para criar um bloco de personalização, vá para o explorer e siga as seguintes
 
 Saiba como criar blocos de conteúdo dinâmico e como usá-los para personalizar o conteúdo da sua entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/340472?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

@@ -5,9 +5,11 @@ description: Saiba como adicionar conteúdo condicional
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Personalization, Multilingual Messages
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
+workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 100%
 
@@ -22,7 +24,7 @@ Ao configurar campos de conteúdo condicional, você pode criar personalização
 
 ## Usar condições em um email {#using-conditions-in-an-email}
 
-No exemplo abaixo, você aprenderá a criar uma mensagem, personalizada dinamicamente no sexo e interesses do destinatário.
+No exemplo abaixo, você aprenderá a criar uma mensagem, personalizada dinamicamente no gênero e interesses do destinatário.
 
 * Exibição mostrando &quot;Mr.&quot; ou &quot;Ms.&quot; de acordo com o valor do campo **[!UICONTROL Gender]** (M ou F) na fonte de dados,
 * Assembly personalizado de um boletim informativo ou ofertas promocionais de acordo com os interesses indicados ou detectados:
@@ -79,7 +81,7 @@ Clique em **[!UICONTROL Preview]** e selecione um destinatário para exibir o co
 
 Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo será exibido em um idioma ou em outro, dependendo da preferência de idioma do destinatário.
 
-1. Crie um email e selecione o público alvo. Neste exemplo, a condição para exibir uma versão ou outra será baseada no valor **Idioma** do perfil do destinatário. Neste exemplo, esses valores são definidos como **EN**, **FR**, **ES**.
+1. Crie um email e selecione a população de destino. Neste exemplo, a condição para exibir uma versão ou outra será baseada no valor **Idioma** do perfil do destinatário. Neste exemplo, esses valores são definidos como **EN**, **FR**, **ES**.
 1. No conteúdo HTML de email, clique na guia **[!UICONTROL Source]** e cole o seguinte código:
 
    ```
@@ -105,12 +107,12 @@ Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo ser�
 
    >[!NOTE]
    >
-   >Como nenhuma versão alternativa foi definida no conteúdo do email, filtre o público-alvo antes de enviar o email.
+   >Como nenhuma versão alternativa foi definida no conteúdo do email, filtre a população de destino antes de enviar o email.
 
 ## Tutorial em vídeo {#conditionnal-content-video}
 
 Saiba como adicionar conteúdo condicional a uma entrega no exemplo de um informativo multilíngue.
 
->[!VIDEO](https://video.tv.adobe.com/v/31844?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
