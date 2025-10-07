@@ -4,9 +4,11 @@ title: Criar uma notificação por push para dispositivos iOS
 description: Saiba como criar notificações por push para iOS
 feature: Push
 role: User, Developer, Data Engineer
+hide: true
+hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 100%
 
@@ -64,11 +66,11 @@ Para criar uma notificação por push para dispositivos iOS, siga as etapas abai
 
 1. Na guia **[!UICONTROL Sound and Badge]**, é possível editar as seguintes opções:
 
-   * **[!UICONTROL Clean Badge]**: ative essas opções para atualizar o valor do selo.
+   * **[!UICONTROL Clean Badge]**: habilite essas opções para atualizar o valor do selo.
 
    * **[!UICONTROL Value]**: defina um número que será usado para exibir o número de novas informações não lidas diretamente no ícone do aplicativo.
 
-   * **[!UICONTROL Critical alert mode]**: ative essa opção para adicionar som à sua notificação, mesmo que o telefone do usuário esteja configurado no modo de foco ou se o iPhone estiver sem áudio.
+   * **[!UICONTROL Critical alert mode]**: habilite essa opção para adicionar som à sua notificação, mesmo que o telefone do usuário esteja configurado no modo de foco ou se o iPhone estiver sem áudio.
 
    * **[!UICONTROL Name]**: selecione o som a ser reproduzido pelo terminal móvel quando a notificação for recebida.
 

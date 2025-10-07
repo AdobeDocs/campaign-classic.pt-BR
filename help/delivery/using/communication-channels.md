@@ -5,10 +5,10 @@ description: Criar entregas para enviar mensagens personalizadas em diferentes c
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
-workflow-type: ht
-source-wordcount: '927'
-ht-degree: 100%
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+workflow-type: tm+mt
+source-wordcount: '943'
+ht-degree: 98%
 
 ---
 
@@ -39,6 +39,10 @@ Conheça as principais etapas relacionadas à criação de entregas, conteúdo e
 * [Criar a entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#create-the-delivery){target="_blank"}: aprenda a criar uma entrega individual e única.
 * [Definir o conteúdo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#content-of-the-delivery){target="_blank"}: configure o conteúdo de entrega específico para cada canal.
 * [Especificar o público-alvo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#target-population){target="_blank"}: defina vários tipos de público-alvo: público-alvo principal, público-alvo de prova, seed addresses e grupos de controle.
+* [Trabalhar com modelos de entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}: saiba como definir modelos para facilitar a criação de entregas.
+
+
+
 
 
 >[!TAB Validação e envio de entrega]
@@ -126,7 +130,7 @@ Quando a entrega for iniciada, as mensagens (e todas as tentativas) poderão ser
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
 
 >[!NOTE]
 >

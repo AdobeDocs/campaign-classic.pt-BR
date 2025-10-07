@@ -4,9 +4,11 @@ title: Validando
 description: Validando
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Direct Mail
+hide: true
+hidefromtoc: true
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 100%
 
@@ -39,7 +41,7 @@ Então, é possível fechar o assistente e examinar os logs de entrega por meio 
 Há dois modos:
 
 * **[!UICONTROL Messages are considered sent after validation]** (modo padrão): neste modo de função, todos os broadlogs são atualizados quando o operador confirma o envio (seu status passa de &#39;Entrega pendente&#39; para &#39;Enviado&#39;) e o delivery é automaticamente definido como **[!UICONTROL Finished]**.
-* **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** : esse modo permite atualizar os logs via um arquivo externo enviado pelo provedor de serviço. Nesse caso, um workflow para processar essas informações precisa ser usado para atualizar o status broadlog.
+* **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** : esse modo permite atualizar os logs via um arquivo externo enviado pelo provedor de serviço. Nesse caso, um fluxo de trabalho para processar essas informações precisa ser usado para atualizar o status broadlog.
 
   >[!NOTE]
   >

@@ -5,11 +5,13 @@ description: Saiba como configurar seu aplicativo móvel para iOS
 feature: Push
 role: User, Developer
 level: Intermediate, Experienced
+hide: true
+hidefromtoc: true
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -58,7 +60,7 @@ O conector iOS está configurado. Você pode começar a criar seu serviço.
 
    >[!NOTE]
    >
-   >O target mapping **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** padrão é vinculado à tabela de destinatários. Para utilizar um mapeamento de alvo diferente, é necessário criar um novo e inseri-lo no campo **[!UICONTROL Target mapping]** do serviço. Para obter mais informações sobre como criar o target mapping, consulte o [Guia de configuração](../../configuration/using/about-custom-recipient-table.md).
+   >O target mapping padrão **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** está vinculado à tabela de destinatários. Para utilizar um mapeamento de alvo diferente, é necessário criar um novo e inseri-lo no campo **[!UICONTROL Target mapping]** do serviço. Para obter mais informações sobre como criar o target mapping, consulte o [Guia de configuração](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
@@ -85,7 +87,7 @@ No exemplo a seguir, adicionamos **mediaURl** e **mediaExt** para criar notifica
 
    ![](assets/nmac_ios_3.png)
 
-1. A guia **[!UICONTROL Subscription parameters]** permite definir o mapeamento com uma extensão do schema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**.
+1. A guia **[!UICONTROL Subscription parameters]** permite definir o mapeamento com uma extensão do esquema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**.
 
    >[!NOTE]
    >

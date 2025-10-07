@@ -6,10 +6,10 @@ title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: faed7f54dc72937b24ee1ece80d17150a513fa39
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '2565'
-ht-degree: 100%
+source-wordcount: '2561'
+ht-degree: 99%
 
 ---
 
@@ -144,8 +144,8 @@ ht-degree: 100%
       + [Criar um SMS](delivery/using/sms-create.md)
       + [Migrar para o conector SMPP genérico estendido](delivery/using/unsupported-connector-migration.md)
    + [Enviar mensagens LINE](delivery/using/line-channel.md)
+   + [Enviar notificações por push](delivery/using/about-mobile-app-channel.md)
    + Enviar notificações por push {#sending-push-notifications}
-      + [Introdução ao canal de aplicativo móvel](delivery/using/about-mobile-app-channel.md)
       + [Integrar o SDK do Campaign no aplicativo para dispositivos móveis](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + Configurar o aplicativo para dispositivos móveis{#configure-the-mobile-app}
          + [Introdução à configuração do aplicativo](delivery/using/get-started-app-config.md)
@@ -155,8 +155,8 @@ ht-degree: 100%
          + [Criar uma mensagem de push para iOS](delivery/using/create-notifications-ios.md)
          + [Criar uma mensagem de push para Android](delivery/using/create-notifications-android.md)
       + [Solução de problemas](delivery/using/troubleshooting.md)
+   + [Enviar malas diretas](delivery/using/about-direct-mail-channel.md)
    + Enviar correspondência direta {#sending-direct-mail}
-      + [Sobre o canal de correspondência direta](delivery/using/about-direct-mail-channel.md)
       + [Criar uma entrega de correspondência direta](delivery/using/creating-a-direct-mail-delivery.md)
       + [Definir o conteúdo da correspondência direta](delivery/using/defining-the-direct-mail-content.md)
       + [Validar](delivery/using/validating.md)

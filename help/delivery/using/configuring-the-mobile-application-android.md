@@ -5,11 +5,13 @@ description: Saiba como configurar seu aplicativo móvel para Android
 feature: Push
 role: User, Developer
 level: Intermediate, Experienced
+hide: true
+hidefromtoc: true
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
-source-wordcount: '837'
-ht-degree: 100%
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+workflow-type: tm+mt
+source-wordcount: '843'
+ht-degree: 92%
 
 ---
 
@@ -44,7 +46,7 @@ Para escolher qual conector deseja usar, siga estas etapas:
 1. Selecione a conta externa **[!UICONTROL Android routing]**.
 1. Na guia **[!UICONTROL Connector]**, preencha o campo **[!UICONTROL JavaScript used in the connector]**:
 
-   Para Android V2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
+   Para o Android V2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
 
    >[!NOTE]
    >
@@ -69,7 +71,7 @@ Para escolher qual conector deseja usar, siga estas etapas:
 
    >[!NOTE]
    >
-   >O target mapping **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** padrão é vinculado à tabela de destinatários. Para utilizar um mapeamento de alvo diferente, é necessário criar um novo e inseri-lo no campo **[!UICONTROL Target mapping]** do serviço. Para obter mais informações sobre como criar o target mapping, consulte [esta seção](../../configuration/using/about-custom-recipient-table.md).
+   >O target mapping padrão **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** está vinculado à tabela de destinatários. Para utilizar um mapeamento de alvo diferente, é necessário criar um novo e inseri-lo no campo **[!UICONTROL Target mapping]** do serviço. Para obter mais informações sobre como criar o target mapping, consulte [esta seção](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
