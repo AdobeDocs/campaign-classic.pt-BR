@@ -6,9 +6,9 @@ title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2574'
 ht-degree: 96%
 
 ---
@@ -92,10 +92,11 @@ ht-degree: 96%
    + [Definir condições de filtro - HIDDEN](platform/using/defining-filter-conditions.md)
    + Permissões {#permissions}
       + [Introdução a permissões](platform/using/access-management.md)
-      + [Criar e gerenciar operadores](platform/using/access-management-operators.md)
-      + [Criar e gerenciar grupos](platform/using/access-management-groups.md)
+      + Autenticação nativa (herdada) {#native}
+         + [Criar e gerenciar operadores](platform/using/access-management-operators.md)
+         + [Criar e gerenciar grupos](platform/using/access-management-groups.md)
       + [Usar direitos nomeados para configurar permissões](platform/using/access-management-named-rights.md)
-      + [Gerenciar o acesso a pastas](platform/using/access-management-folders.md)
+      + [Gerenciar acesso a pastas - OCULTO](platform/using/access-management-folders.md)
    + Conectores CRM  {#connectors}
       + [Introdução aos Conectores CRM](platform/using/crm-connectors.md)
       + [Conecte-se com o Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
@@ -375,7 +376,7 @@ ht-degree: 96%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Trabalhar com o  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurar a integração](integrations/using/configuring-the-integration.md)
-      + [Criar um informativo do [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Criar um informativo do [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Trabalhar com o  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurar a integração com o [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)

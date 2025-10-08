@@ -7,10 +7,10 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
-source-wordcount: '1259'
-ht-degree: 100%
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
+workflow-type: tm+mt
+source-wordcount: '1235'
+ht-degree: 96%
 
 ---
 
@@ -18,11 +18,9 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->* A partir do Campaign Classic v7.3.1, todos os operadores deverão usar o [Sistema de gerenciamento de identidades (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectar ao Campaign.
->  >Como parte do trabalho para reforçar o processo de segurança e autenticação, o Adobe Campaign recomenda enfaticamente migrar todos os modos de autenticação de operadores da autenticação nativa de logon/senha para o Adobe Identity Management System (IMS). Saiba como migrar operadores [nesta página](../../technotes/using/migrate-users-to-ims.md).
-> 
->* Após essa migração, observe que a seção a seguir não se aplica mais.  Aprenda como configurar permissões com o Adobe IMS na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=pt-BR){target="_blank"}.
-
+>Esses procedimentos só se aplicam a operadores conectados ao Campaign com a autenticação nativa herdada. A partir do Campaign Classic v7.3.1, todos os operadores devem usar o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectarem ao Campaign. [Saiba mais](../../technotes/using/migrate-users-to-ims.md)
+>
+>Ao se conectar ao Campaign com sua Adobe ID, a seguinte seção não se aplica mais. Aprenda como configurar permissões com o Adobe IMS na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=pt-BR){target="_blank"}.
 
 ## Introdução aos operadores do Campaign {#about-operators}
 
@@ -96,7 +94,7 @@ A configuração de fusos horários é descrita [nesta página](../../installati
 
 >[!NOTE]
 >
->Colaborações em diferentes fusos horários exigem o armazenamento de datas em formato UTC. As datas são convertidas no fuso horário apropriado nos seguintes contextos: quando uma data é exibida no fuso horário do usuário, quando os arquivos são importados e exportados, quando uma entrega de e-mail é agendada, quando as atividades são agendadas em um workflow (agendador, espera, restrição de tempo e etc.)
+>Colaborações em diferentes fusos horários exigem o armazenamento de datas em formato UTC. As datas são convertidas no fuso horário apropriado nos seguintes contextos: quando uma data é exibida no fuso horário do usuário, quando os arquivos são importados e exportados, quando uma entrega de e-mail é agendada, quando as atividades são agendadas em um fluxo de trabalho (agendador, espera, restrição de tempo e etc.)
 >
 >Restrições e recomendações vinculadas a esses contextos são apresentadas nas seções relacionadas da documentação do Adobe Campaign.
 
@@ -196,4 +194,4 @@ Por padrão, o operador técnico &#39;webapp&#39; tem o direito nomeado ADMINIST
 
 >[!NOTE]
 >
->Para obter mais informações sobre Diretrizes de segurança, consulte a [lista de verificação de configuração do Adobe Campaign Security](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
+>Para obter mais informações sobre Diretrizes de segurança, consulte a [lista de verificação de configuração do Adobe Campaign Security](https://helpx.adobe.com/campaign/kb/acc-security.html).

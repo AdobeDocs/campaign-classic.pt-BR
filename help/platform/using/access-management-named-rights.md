@@ -2,23 +2,18 @@
 product: campaign
 title: Usar direitos nomeados para configurar permissões
 description: Saiba como usar direitos nomeados para configurar permissões
-badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '492'
 ht-degree: 100%
 
 ---
 
 # Usar direitos nomeados para configurar permissões{#named-rights}
-
->[!NOTE]
->
->Esta página se aplica somente a operadores conectados ao Campaign com autenticação nativa. Para a autenticação do Adobe IMS, consulte [esta documentação](https://helpx.adobe.com/br/enterprise/using/manage-permissions-and-roles.html).
 
 Por padrão, o Adobe Campaign propõe um conjunto de direitos nomeados que permitem definir as autorizações atribuídas aos operadores e grupos de operadores. Esses direitos podem ser editados no nó **[!UICONTROL Administration > Access management > Named rights]** da árvore.
 
@@ -26,9 +21,9 @@ Por padrão, o Adobe Campaign propõe um conjunto de direitos nomeados que permi
 
 Esses direitos são os seguintes:
 
-* **[!UICONTROL ADMINISTRATION]**: operadores com o direito **[!UICONTROL ADMINISTRATION]** têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como workflow, entrega, scripts etc.
+* **[!UICONTROL ADMINISTRATION]**: operadores com o direito **[!UICONTROL ADMINISTRATION]** têm acesso total na instância. Os usuários administradores podem executar/criar/editar/excluir qualquer objeto, como fluxo de trabalho, entrega, scripts etc.
 
-* **[!UICONTROL APPROVAL ADMINISTRATION]**: é possível definir várias etapas de aprovação em workflows e entregas para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com o direito **[!UICONTROL APPROVAL ADMINISTRATION]** podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas.
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: é possível definir várias etapas de aprovação em fluxos de trabalho e entregas para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com o direito **[!UICONTROL APPROVAL ADMINISTRATION]** podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas.
 
 * **[!UICONTROL CENTRAL]**: direito de gerenciamento central (marketing distribuído).
 
@@ -36,9 +31,9 @@ Esses direitos são os seguintes:
 
 * **[!UICONTROL EDIT FOLDERS]**: direito de alterar as propriedades da pasta, como nome interno, rótulo, imagem associada, pedido de subpastas etc.
 
-* **[!UICONTROL EXPORT]**: os usuários podem exportar dados de suas instâncias do Adobe Campaign para um arquivo no servidor ou computador local usando a atividade de workflow **[!UICONTROL EXPORT]**.
+* **[!UICONTROL EXPORT]**: os usuários podem exportar dados de suas instâncias do Adobe Campaign para um arquivo no servidor ou computador local usando a atividade de fluxo de trabalho **[!UICONTROL EXPORT]**.
 
-* **[!UICONTROL FILES ACCESS]**: direito de ler e gravar o acesso de arquivos por meio de um script que pode ser gravado na atividade de workflow **[!UICONTROL JavaScript]** para arquivos de leitura/gravação em um servidor.
+* **[!UICONTROL FILES ACCESS]**: direito de ler e gravar o acesso de arquivos por meio de um script que pode ser gravado na atividade de fluxo de trabalho **[!UICONTROL JavaScript]** para arquivos de leitura/gravação em um servidor.
 
 * **[!UICONTROL IMPORT]**: direito de importação de dados genéricos. **[!UICONTROL IMPORT]** permite importar dados para qualquer outra tabela, enquanto o direito **[!UICONTROL RECIPIENT IMPORT]** permite importar somente para a tabela do destinatário.
 
@@ -46,7 +41,7 @@ Esses direitos são os seguintes:
 
 * **[!UICONTROL LOCAL]**: direito para gerenciamento local (marketing distribuído).
 
-* **[!UICONTROL MERGE]**: direito de unir os registros selecionados em um. Se houver destinatários duplicados, o direito **[!UICONTROL MERGE]** permitirá que o usuário selecione os duplicados e os mescle em um destinatário primário.
+* **[!UICONTROL MERGE]**: direito de mesclar os registros selecionados em um. Se houver destinatários duplicados, o direito **[!UICONTROL MERGE]** permitirá que o usuário selecione os duplicados e os mescle em um destinatário primário.
 
 * **[!UICONTROL PREPARE DELIVERIES]**: direito de criar, editar e salvar uma entrega. Os usuários com o direito **[!UICONTROL PREPARE DELIVERIES]** também podem iniciar o processo de análise da entrega.
 
@@ -62,7 +57,7 @@ Esses direitos são os seguintes:
 
 * **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: direito de escrever seus próprios scripts SQL usando a atividade de gerenciamento de dados SQL, para criar e preencher tabelas de trabalho (consulte [esta seção](../../workflow/using/sql-data-management.md)).
 
-* **[!UICONTROL WORKFLOW]**: direito de executar workflows. Sem esse direito, os usuários não podem iniciar, parar ou reiniciar workflows.
+* **[!UICONTROL WORKFLOW]**: direito de executar fluxos de trabalho. Sem esse direito, os usuários não podem iniciar, parar ou reiniciar fluxos de trabalho.
 
 * **[!UICONTROL WEBAPP]**: direito de usar aplicações web.
 
@@ -76,4 +71,4 @@ Os grupos padrão e os direitos nomeados permitem que os operadores acessem dete
 
 A matriz de direitos de acesso do Adobe Campaign está disponível [aqui](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![imagem](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=pt-BR)
+[![imagem](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)

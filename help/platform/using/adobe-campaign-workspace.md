@@ -6,7 +6,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 67c4fa449e12b04dab4673bffdc5c2c8b541db69
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 73%
@@ -59,7 +59,7 @@ Você pode escolher entre estes idiomas:
 * Alemão
 * Japonês
 
-O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Para obter mais informações sobre como criar uma instância, consulte esta [página](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -108,9 +108,9 @@ Por exemplo, na página de entrega, use o botão **[!UICONTROL Create]** para cr
 
 O explorer do Adobe Campaign é acessível por meio do ícone da barra de ferramentas. Ele permite que você acesse todos os recursos do Adobe Campaign, as telas de configuração e uma visão mais detalhada de alguns dos elementos da plataforma.
 
-Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na documentação do Campaign v8 (console):
+Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na **documentação do Campaign v8 (console)**:
 
-* [Visão geral da interface do usuário do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Visão geral da interface do usuário do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Configurações da interface do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -144,4 +144,4 @@ Saiba mais sobre como **trabalhar com enumerações** na [documentação do Adob
 
 Este vídeo apresenta o espaço de trabalho do Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/39535?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

@@ -7,10 +7,10 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 100%
+source-wordcount: '574'
+ht-degree: 86%
 
 ---
 
@@ -18,7 +18,9 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Esses procedimentos só se aplicam a operadores conectados ao Campaign por meio da autenticação nativa. Para a autenticação do Adobe IMS, consulte [esta documentação](https://helpx.adobe.com/br/enterprise/using/user-groups.html).
+>Esses procedimentos só se aplicam a operadores conectados ao Campaign com a autenticação nativa herdada. A partir do Campaign Classic v7.3.1, todos os operadores devem usar o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectarem ao Campaign. [Saiba mais](../../technotes/using/migrate-users-to-ims.md)
+>
+>Ao se conectar ao Campaign com sua Adobe ID, a seguinte seção não se aplica mais. Aprenda como configurar permissões com o Adobe IMS na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=pt-BR){target="_blank"}.
 
 Os grupos de operadores são criados por meio do nó **[!UICONTROL Administration > Access management > Operator groups]** na árvore.
 
@@ -52,11 +54,11 @@ Os grupos de operadores padrão são:
 
    Esse grupo contém os seguintes direitos nomeados:
 
-   * **[!UICONTROL ADMINISTRATION]**: direito a executar/criar/editar/excluir qualquer objeto, como workflow, entrega, scripts, etc.
+   * **[!UICONTROL ADMINISTRATION]**: direito a executar/criar/editar/excluir qualquer objeto, como fluxo de trabalho, entrega, scripts, etc.
 
 1. **[!UICONTROL Delivery operators]**
 
-   Os operadores nesse grupo são responsáveis pelo gerenciamento de entregas: eles permitem o acesso aos principais recursos necessários para a criação e preparação de entregas (tipologias de campanha, mapeamentos de entrega, templates padrão, blocos de personalização, etc.).
+   Os operadores nesse grupo são responsáveis pelo gerenciamento de entregas: eles permitem o acesso aos principais recursos necessários para a criação e preparação de entregas (tipologias de campanha, mapeamentos de entrega, modelos padrão, blocos de personalização, etc.).
 
    Esse grupo contém os seguintes direitos nomeados:
 
@@ -65,12 +67,12 @@ Os grupos de operadores padrão são:
 
 1. **[!UICONTROL Campaign managers]**
 
-   Os operadores nesse grupo podem gerenciar campanhas de marketing: permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.) no âmbito da estrutura de **[!UICONTROL Campaign]** (módulo opcional do Adobe Campaign).
+   Os operadores nesse grupo podem gerenciar campanhas de marketing: permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.) na estrutura de **[!UICONTROL Campaign]** (módulo opcional do Adobe Campaign).
 
    Esse grupo contém os seguintes direitos nomeados:
 
    * **[!UICONTROL INSERT FOLDERS]**: direito de inserir pastas à árvore do Adobe Campaign (se você tiver o direito de editar ramificações),
-   * **[!UICONTROL WORKFLOW]**: direito de usar workflows.
+   * **[!UICONTROL WORKFLOW]**: direito de usar fluxos de trabalho.
 
    >[!NOTE]
    >
@@ -86,11 +88,11 @@ Os grupos de operadores padrão são:
 
 1. **[!UICONTROL Workflow execution]**
 
-   Esse grupo permite atribuir aos operadores o direito de gerenciar workflows que não estão relacionados a campanhas.
+   Esse grupo permite atribuir aos operadores o direito de gerenciar fluxos de trabalho que não estão relacionados a campanhas.
 
 1. **[!UICONTROL Workflow supervisors]**
 
-   Os operadores nesse grupo recebem uma notificação por e-mail no caso de alertas relativos aos workflows da campanha.
+   Os operadores nesse grupo recebem uma notificação por e-mail no caso de alertas relativos aos fluxos de trabalho da campanha.
 
 1. Gerenciamento local / central
 
