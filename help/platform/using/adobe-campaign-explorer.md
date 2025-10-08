@@ -7,22 +7,23 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 22aa5f76541e6ff1612907ab0b34f0ac468fb9a6
-workflow-type: ht
+hide: true
+hidefromtoc: true
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 100%
+ht-degree: 59%
 
 ---
 
-# Usar o explorer do Adobe Campaign {#using-adobe-campaign-explorer}
-
+# Usar o explorer do Adobe Campaign
 
 
 O explorer do Adobe Campaign é acessível por meio do ícone da barra de ferramentas. Ele permite que você acesse todos os recursos do Adobe Campaign, as telas de configuração e uma visão mais detalhada de alguns dos elementos da plataforma.
 
 >[!NOTE]
 >
->Para saber mais sobre o explorer do Adobe Campaign, consulte estas páginas na documentação do Campaign v8: para saber mais [sobre a interface](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}, suas [configurações](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank} ou [como gerenciar pastas e exibições no explorer](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+>Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na documentação do Campaign v8: para saber mais [sobre a interface do usuário](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}, suas [configurações](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank} ou [como gerenciar pastas e exibições no explorador](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 <!--

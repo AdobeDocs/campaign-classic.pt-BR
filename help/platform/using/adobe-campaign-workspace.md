@@ -6,16 +6,14 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '916'
-ht-degree: 100%
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+workflow-type: tm+mt
+source-wordcount: '858'
+ht-degree: 92%
 
 ---
 
 # Workspace do Adobe Campaign{#adobe-campaign-workspace}
-
-
 
 ## Explorar a interface do Adobe Campaign {#about-adobe-campaign-interface}
 
@@ -29,7 +27,7 @@ Na seção central da home page, você pode usar links para acessar o portal de 
 
 >[!NOTE]
 >
->Os recursos do Adobe Campaign disponíveis para você dependem dos módulos e complementos instalados. Alguns deles também podem não estar disponíveis, dependendo das suas permissões e de configurações específicas.
+>Os recursos do Adobe Campaign disponíveis na instância dependem dos módulos e complementos instalados. Alguns deles também podem não estar disponíveis, dependendo das suas permissões e de configurações específicas.
 >
 >Antes de instalar qualquer módulo ou add-on, você precisa verificar o contrato de licença ou entrar em contato com o executivo da conta da Adobe.
 
@@ -61,7 +59,7 @@ Você pode escolher entre cinco idiomas diferentes:
 * Alemão
 * Japonês
 
-O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte esta [seção](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#formats){target=_blank}.
 
 Para obter mais informações sobre como criar uma instância, consulte esta [página](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -79,7 +77,7 @@ As várias funcionalidades da plataforma são divididas em recursos principais: 
 
 A lista de recursos principais que você pode acessar depende dos pacotes e dos complementos instalados e dos seus direitos de acesso.
 
-Cada recurso inclui um conjunto de funcionalidades com base nas necessidades relacionadas à tarefa e ao contexto de uso. Por exemplo, o link **[!UICONTROL Profiles and targets]** leva você até listas de destinatários, serviços de assinatura, workflows para construção do target existentes e atalhos para criar esses elementos.
+Cada recurso inclui um conjunto de funcionalidades com base nas necessidades relacionadas à tarefa e ao contexto de uso. Por exemplo, o link **[!UICONTROL Profiles and targets]** leva você até listas de destinatários, serviços de assinatura, fluxos de trabalho de segmentação existentes e atalhos para criar esses elementos.
 
 As listas estão disponíveis no link **[!UICONTROL Lists]** na seção à esquerda da interface **[!UICONTROL Profiles and Targets]**.
 
@@ -106,70 +104,37 @@ Por exemplo, na página de entrega, use o botão **[!UICONTROL Create]** para cr
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
 
-## Formatos e unidades {#formats-and-units}
+## Usar o explorer do Adobe Campaign {#using-adobe-campaign-explorer}
 
-### Data e hora {#date-and-time}
+O explorer do Adobe Campaign é acessível por meio do ícone da barra de ferramentas. Ele permite que você acesse todos os recursos do Adobe Campaign, as telas de configuração e uma visão mais detalhada de alguns dos elementos da plataforma.
 
-O idioma escolhido para o Adobe Campaign Classic afeta os formatos de data e hora.
+Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na documentação do Campaign v8 (console):
 
-O idioma é selecionado durante a instalação do Campaign e não pode ser alterado posteriormente. Você pode selecionar: inglês (EUA), inglês (EN), francês, alemão ou japonês. Para obter mais informações, consulte [esta página](../../installation/using/creating-an-instance-and-logging-on.md).
+* [Visão geral da interface do usuário do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}
 
-As principais diferenças entre inglês americano e inglês do Reino Unido são:
+* [Configurações da interface do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-<table> 
- <thead> 
-  <tr> 
-   <th> Formatos<br /> </th> 
-   <th> Inglês (US)<br /> </th> 
-   <th> Inglês (EN)<br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-   <td> Data<br /> </td> 
-   <td> A semana começa no domingo<br /> </td> 
-   <td> A semana começa na segunda-feira<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> Data abreviada<br /> </td> 
-   <td> <p>%2M/%2D/%4Y</p><p><strong>ex: 09/25/2018</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y</p><p><strong>ex: 25/09/2018</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td> Data abreviada com hora<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>ex: 25/09/2018 22:47:25</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>ex: 25/09/2018 22:47:25</strong></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [Gerenciar pastas e modos de exibição no explorador](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
-### Adicionar valores em uma lista discriminada {#add-values-in-an-enumeration}
 
-Usando os campos de entrada com uma lista suspensa, você pode inserir um valor de lista discriminada, que pode ser armazenado e oferecido como uma opção na lista suspensa. Por exemplo, no campo **[!UICONTROL City]** da guia **[!UICONTROL General]** de um perfil de destinatário, você pode inserir Londres. Ao pressionar Enter para confirmar esse valor, uma mensagem pergunta se você deseja salvar esse valor para a enumeração associada ao campo.
+## Trabalhar com listas {#manage-and-customize-lists}
 
-![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
-
-Se você clicar em **[!UICONTROL Yes]**, esse valor estará disponível na caixa de combinação do campo relevante (neste caso: **[!UICONTROL London]**).
+No console do cliente do Campaign, os dados são exibidos em listas. Você pode adaptar essas listas às suas necessidades. Por exemplo, é possível adicionar colunas, filtrar dados, contar registros, salvar e compartilhar suas configurações.
 
 >[!NOTE]
 >
->As enumerações (também conhecidas como &quot;listas detalhadas&quot;) são gerenciadas pelo administrador através da seção **[!UICONTROL Administration > Platform > Enumerations]**. Para obter mais informações, consulte [Gerenciamento de listas discriminadas](../../platform/using/managing-enumerations.md).
+>Para saber como gerenciar e personalizar listas no Adobe Campaign, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
-### Unidades padrão {#default-units}
+## Gerenciar enumerações{#managing-enumerations}
 
-Nos campos que expressam uma duração (por exemplo, período de validade dos recursos de uma entrega, prazo de aprovação para uma tarefa, etc.), o valor pode ser expresso nas seguintes **unidades**:
+Uma enumeração (também chamada de lista discriminada) é uma lista predefinida de valores que você pode usar para preencher determinados campos. As enumerações ajudam a padronizar valores de campos, tornando a inserção de dados mais consistente e simplificando as consultas.
 
-* **[!UICONTROL s]** para segundos,
-* **[!UICONTROL mn]** para minutos,
-* **[!UICONTROL h]** para horas,
-* **[!UICONTROL d]** para dias.
+Quando definidos, os valores são exibidos em uma lista suspensa. Um valor pode ser selecionado diretamente ou inserido por meio da inserção preditiva, que sugere e conclui as inserções correspondentes. Alguns campos incluem enumerações predefinidas, e enumerações adicionais podem ser criadas, se necessário.
 
-![](assets/enter_unit_sample.png)
+Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Tutorial em vídeo {#video}
 
 Este vídeo apresenta o espaço de trabalho do Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/39535?quality=12&captions=por_br)
-
-Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

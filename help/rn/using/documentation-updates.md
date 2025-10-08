@@ -5,9 +5,11 @@ description: Esta página lista todos os novos recursos e atualizações na docu
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: ht
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+workflow-type: tm+mt
 source-wordcount: '3864'
 ht-degree: 100%
 
@@ -180,7 +182,7 @@ Atualização da data de término da vida útil do conector de dados do Adobe An
 
 Adição de uma seção sobre como usar o JavaScript para calcular valores, trocar dados e executar operações específicas usando chamadas SOAP.[Leia mais](../../workflow/using/javascript-scripts-and-templates.md)
 
-Adição de amostras de implementação de códigos JavaScript em workflows. [Leia mais](../../workflow/using/javascript-in-workflows.md)
+Adição de amostras de implementação de códigos JavaScript em fluxos de trabalho. [Leia mais](../../workflow/using/javascript-in-workflows.md)
 
 
 ## Outubro de 2021{#oct-2021}
@@ -201,7 +203,7 @@ A descrição do [fluxo de trabalho técnico de faturamento](../../production/us
 
 ## Agosto de 2021{#aug-2021}
 
-Adição de uma nova atividade de workflow: Alterar fonte de dados - [Saiba mais](../../workflow/using/change-data-source.md)
+Adição de uma nova atividade de fluxo de trabalho: Alterar fonte de dados - [Saiba mais](../../workflow/using/change-data-source.md)
 
 Os emblemas de aplicabilidade foram adicionados às páginas de documentação: **Aplica-se a v7**, somente para recursos do Campaign Classic v7 e **Aplica-se a v7 e v8**, para recursos comuns.
 
@@ -262,7 +264,7 @@ Saiba como criar e gerenciar campanhas por meio destas novas páginas:
 * [Gerenciar documentos associados](../../campaign/using/marketing-campaign-assets.md)
 * [Configurar e gerenciar o processo de aprovação](../../campaign/using/marketing-campaign-approval.md)
 
-Foram adicionadas informações à seção de atividade **[!UICONTROL Advanced JavaScript]** sobre como usar o método task.setCompleted() para finalizar a tarefa e impedir futuras recuperações. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+Foram adicionadas informações à seção de atividade **[!UICONTROL Advanced JavaScript]** sobre como usar o método task.setCompleted() para encerrar a tarefa e impedir futuras recuperações. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
 A seção [Capacidade de entrega](../../delivery/using/about-deliverability.md) foi atualizada e agora inclui links para o novo [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR). Todas as informações genéricas relacionadas à capacidade de entrega que podem ser aplicadas a várias soluções da Adobe foram movidas para o [Apêndice do manual de práticas recomendadas](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=pt-BR#additional-resources).
 
@@ -280,7 +282,7 @@ Os atalhos de teclado disponíveis na nova tela de logon para conexão com o Ado
 
 **Outras atualizações**
 
-Uma nova seção foi adicionada com informações detalhadas sobre como executar o teste A/B usando workflows. [Leia mais](../../delivery/using/get-started-a-b-testing.md)
+Uma nova seção foi adicionada com informações detalhadas sobre como executar o teste A/B usando fluxos de trabalho. [Leia mais](../../delivery/using/get-started-a-b-testing.md)
 
 A seção do MTA aprimorado do Adobe Campaign foi movida para [este local](../../delivery/using/sending-with-enhanced-mta.md).
 
@@ -304,7 +306,7 @@ A API Oracle On Demand agora está obsoleta como um CRM conectado ao Campaign. [
 
 Saiba como descobrir a versão atual do servlet Web Tomcat incorporado usado em uma instância do Adobe Campaign [aqui](../../production/using/locate-tomcat-version.md).
 
-A lista de workflows técnicos com seus pacotes associados foi aprimorada e centralizada em uma página única. [Leia mais](../../workflow/using/about-technical-workflows.md)
+A lista de fluxos de trabalho técnicos com seus pacotes associados foi aprimorada e centralizada em uma página única. [Leia mais](../../workflow/using/about-technical-workflows.md)
 
 A seção de solução de problemas do manual de **Monitoramento** foi reorganizada e aprimorada com uma landing page. [Leia mais](../../production/using/troubleshooting.md).
 
@@ -425,7 +427,7 @@ Os vídeos do passo a passo estão disponíveis nos seguintes tópicos:
 
 Foram adicionadas informações sobre as verificações e ações a serem executadas ao obter o erro “Não foi possível resolver o nome do host” após a conexão com um servidor FTP. [Leia mais](../../platform/using/sftp-server-usage.md)
 
-Novos casos de uso são mencionados na lista de [casos de uso de workflow](../../workflow/using/about-workflow-use-cases.md):
+Novos casos de uso são mencionados na lista de [casos de uso de fluxo de trabalho](../../workflow/using/about-workflow-use-cases.md):
 
 * Automação de criação, edição e publicação de conteúdo
 * Configuração de um processo de aprovação de destinatário antes do envio de uma entrega
@@ -456,7 +458,7 @@ As práticas recomendadas foram adicionadas na seção atividade de **[!UICONTRO
 
 A seção Remoção de um endereço em quarentena foi atualizada. Ela esclarece os casos em que os endereços são removidos automaticamente da lista de quarentena. [Leia mais](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-Casos de uso foram adicionados em como [criptografar](../../platform/using/zip-encrypt.md) e [descriptografar](../../platform/using/unzip-decrypt.md) dados usando o Painel de controle e workflows do Campaign.
+Casos de uso foram adicionados em como [criptografar](../../platform/using/zip-encrypt.md) e [descriptografar](../../platform/using/unzip-decrypt.md) dados usando o Painel de controle e fluxos de trabalho do Campaign.
 
 A página de integração do Experience Cloud Triggers e Adobe Campaign Classic foi movida [para cá](../../integrations/using/about-triggers.md).
 
@@ -472,7 +474,7 @@ Leis de privacidade da Tailândia e do Brasil – [Leia mais](https://helpx.adob
 
 **Outras atualizações de documentação que vêm com a versão**
 
-A nova opção que permite desfazer a publicação de um template de mensagem transacional está documentada [nesta seção](../../message-center/using/publishing-message-templates.md#template-unpublication).
+A nova opção que permite desfazer a publicação de um modelo de mensagem transacional está documentada [nesta seção](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
 As novas opções que permitem definir limitações ao enviar emails que incluem imagens baixadas de um URL personalizado e anexos foram adicionadas à lista de opções do Campaign Classic. [Leia mais](../../installation/using/configuring-campaign-options.md#delivery)
 
@@ -564,11 +566,11 @@ A matriz de compatibilidade foi atualizada com os conectores do Hadoop 3.0 e Sno
 
 Uma prática recomendada na afinidade IP foi adicionada ao guia de instalação. [Leia mais](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-A seção workflow de limpeza de banco de dados foi atualizada. Os números de lotes fornecidos agora refletem a implementação do código. [Leia mais](../../production/using/database-cleanup-workflow.md)
+A seção fluxo de trabalho de limpeza de banco de dados foi atualizada. Os números de lotes fornecidos agora refletem a implementação do código. [Leia mais](../../production/using/database-cleanup-workflow.md)
 
 Uma limitação no FDA sobre HTTP foi adicionada ao guia de mensagens transacionais. [Leia mais](../../production/using/database-cleanup-workflow.md)
 
-Adicionamos informações sobre a nova opção que permite definir um período de tempo limite para as atividades de workflow **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]**. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md)
+Adicionamos informações sobre a nova opção que permite definir um período de tempo limite para as atividades de fluxo de trabalho **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]**. [Leia mais](../../workflow/using/sql-code-and-javascript-code.md)
 
 Adicionamos informações sobre a nova visualização **[!UICONTROL Start Pending]** disponível no nó **[!UICONTROL Administration]** > **[!UICONTROL Audit]** > **[!UICONTROL Workflows Status]**. [Leia mais](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
@@ -580,7 +582,7 @@ A página **Matriz de recursos no local e hospedada do Campaign Classic** foi at
 
 A página **Matriz de recursos do Campaign Classic** foi atualizada. [Leia mais](https://helpx.adobe.com/br/campaign/kb/compatibility-matrix.html)
 
-O novo **[!UICONTROL Cleanup of Nmsaddress]** workflow está documentado [aqui](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
+O novo **[!UICONTROL Cleanup of Nmsaddress]** fluxo de trabalho está documentado [aqui](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
 Uma limitação foi adicionada ao usar uma atividade de consulta em um fluxo de trabalho. [Leia mais](../../workflow/using/query.md).
 
