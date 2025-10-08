@@ -6,7 +6,7 @@ title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
 source-wordcount: '2559'
 ht-degree: 99%
@@ -39,16 +39,16 @@ ht-degree: 99%
    + [Conectores do Campaign](platform/using/about-connectors.md)
    + Perguntas frequentes {#faq}
       + [Principais perguntas](platform/using/common-questions.md)
-         + [Conceitos globais](platform/using/faq-key-concepts.md)
-         + [Atualização da build](platform/using/faq-build-upgrade.md)
-         + [Privacidade](platform/using/privacy-faq.md)
-         + [Públicos-alvo](platform/using/faq-audiences.md)
-         + [Criar mensagens](platform/using/faq-designing.md)
-         + [Enviar mensagens](platform/using/faq-messages.md)
-         + [Fluxos de trabalho](platform/using/faq-workflows.md)
-         + [Configuração](platform/using/faq-campaign-config.md)
-         + [Relatórios](platform/using/faq-reporting.md)
-         + [Desenvolvimento](platform/using/faq-developers.md)
+      + [Conceitos globais](platform/using/faq-key-concepts.md)
+      + [Atualização da build](platform/using/faq-build-upgrade.md)
+      + [Privacidade](platform/using/privacy-faq.md)
+      + [Públicos-alvo](platform/using/faq-audiences.md)
+      + [Criar mensagens](platform/using/faq-designing.md)
+      + [Enviar mensagens](platform/using/faq-messages.md)
+      + [Fluxos de trabalho](platform/using/faq-workflows.md)
+      + [Configuração](platform/using/faq-campaign-config.md)
+      + [Relatórios](platform/using/faq-reporting.md)
+      + [Desenvolvimento](platform/using/faq-developers.md)
    + [Glossário](platform/using/ac-glossary.md)
    + Privacidade {#privacy}
       + [Privacidade e consentimento](platform/using/privacy-and-recommendations.md)
@@ -376,7 +376,7 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Trabalhar com o  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurar a integração](integrations/using/configuring-the-integration.md)
-      + [Criar um informativo do [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Criar um informativo do [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Trabalhar com o  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurar a integração com o [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)

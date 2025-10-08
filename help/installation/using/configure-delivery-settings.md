@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 7%
+source-wordcount: '484'
+ht-degree: 10%
 
 ---
 
@@ -51,7 +51,7 @@ Nesse caso, esses parâmetros são definidos pela configuração do servidor SMT
 
 ## Processos filho de MTA {#mta-child-processes}
 
-É possível controlar o número de processos filhos (maxSpareServers por padrão 2) para otimizar o desempenho de broadcast de acordo com a potência da CPU dos servidores e os recursos de rede disponíveis. Essa configuração deve ser feita na seção **`<master>`** da configuração do MTA em cada computador individual.
+É possível controlar o número de processos filhos (maxSpareServers por padrão 2) para otimizar o desempenho de transmissão de acordo com a potência CPU dos servidores e os recursos de rede disponíveis. Essa configuração deve ser feita na seção **`<master>`** da configuração do MTA em cada computador individual.
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
@@ -63,7 +63,7 @@ Consulte também [Otimização do envio de email](../../installation/using/email
 
 >[!IMPORTANT]
 >
->A configuração de afinidade precisa ser consistente de um servidor para outro. Recomendamos que você entre em contato com o Adobe para configuração de afinidade, já que as alterações de configuração devem ser replicadas em todos os servidores de aplicativos que executam o MTA.
+>A configuração de afinidade precisa ser consistente de um servidor para outro. Recomendamos que você entre em contato com a Adobe para obter a configuração de afinidade, pois as alterações de configuração devem ser replicadas em todos os servidores de aplicativos que executam o MTA.
 
 Você pode melhorar o tráfego SMTP de saída por meio de afinidades com endereços IP.
 
@@ -88,7 +88,8 @@ Para fazer isso, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Enumerações são detalhadas em [este documento](../../platform/using/managing-enumerations.md).
+   >Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+
 
    Você pode selecionar a afinidade a ser usada, conforme mostrado abaixo para tipologias:
 

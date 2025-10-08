@@ -5,10 +5,10 @@ description: Relatórios de entrega
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '1461'
-ht-degree: 100%
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
+workflow-type: tm+mt
+source-wordcount: '1467'
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ Você pode acompanhar a execução de entregas por meio de vários relatórios a
    * **[!UICONTROL Tracking statistics]** : consulte [Estatísticas de rastreamento](#tracking-statistics).
    * **[!UICONTROL URLs and click streams]** : consulte [URLs e fluxos de clique](#urls-and-click-streams).
    * **[!UICONTROL Tracking indicators]** : consulte [Indicadores de rastreamento](#tracking-indicators).
-   * **[!UICONTROL Non-deliverables and bounces]** : consulte [Não entregues e devoluções](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
+   * **[!UICONTROL Non-deliverables and bounces]** : consulte [Não entregáveis e rejeições](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
    * **[!UICONTROL User activities]** : consulte [Atividades do usuário](../../reporting/using/global-reports.md#user-activities).
    * **[!UICONTROL Delivery summary]** : consulte [Resumo da entrega](#delivery-summary).
    * **[!UICONTROL Subscription tracking]** : consulte [Rastreamento de subscrição](../../reporting/using/global-reports.md#subscription-tracking).
@@ -86,7 +86,7 @@ Esta tabela de valores mostra o detalhamento das entregas, aberturas, cliques e 
 
 >[!NOTE]
 >
->Os nomes de domínio exibidos neste relatório são definidos na lista discriminada usada no nível de cubo. Para alterar, adicionar ou remover domínios padrão, edite a lista discriminada **[!UICONTROL Domains]** e modifique valores e aliases. Para obter mais informações, consulte [esta seção](../../platform/using/managing-enumerations.md). A categoria **[!UICONTROL Others]** inclui nomes de domínio que não pertencem a nenhum valor da lista discriminada.
+>Os nomes de domínio exibidos neste relatório são definidos na lista discriminada usada no nível de cubo. Para alterar, adicionar ou remover domínios padrão, edite a lista discriminada **[!UICONTROL Domains]** e modifique valores e aliases. Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}. A categoria **[!UICONTROL Others]** inclui nomes de domínio que não pertencem a nenhum valor da lista discriminada.
 
 **[!UICONTROL 4. Generated click streams]**
 
