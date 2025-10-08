@@ -169,7 +169,7 @@ se o idioma for o primeiro ou único parâmetro da URL. Por exemplo: **https://m
 &lang=xx
 ```
 
-se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myserver/webApp/APP34?status=1&lang=en**
 
 Os idiomas e os dicionários de tradução disponíveis como padrão estão listados abaixo.
 
@@ -430,7 +430,7 @@ Você pode adicionar **?lang=es** ou **=lang=de** para exibi-la em espanhol ou a
 >[!NOTE]
 >
 >Se outros parâmetros já estiverem sendo usados para essa aplicação web, adicione **&amp;lang=**.\
->Por exemplo: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>Por exemplo: **https://myserver/webApp/APP34?status=1&lang=en**
 
 ## Configuração avançada de tradução {#advanced-translation-configuration}
 
