@@ -144,4 +144,4 @@ Saiba mais sobre como **trabalhar com enumerações** na [documentação do Adob
 
 Este vídeo apresenta o espaço de trabalho do Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/39535?quality=12&captions=por_br)
