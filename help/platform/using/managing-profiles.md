@@ -31,7 +31,6 @@ Cada nó coincide com uma pasta. Os dados de cada pasta devem ser considerados p
 >[!NOTE]
 >
 > * Para exibir a lista de todos os destinatários no banco de dados, crie uma visualização. Saiba mais na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
-
 > * Para saber mais sobre como gerenciar perfis, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
