@@ -7,8 +7,8 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
+workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 100%
 
@@ -42,23 +42,23 @@ Para criar uma oferta, aplique as seguintes etapas:
 
    ![](assets/offer_create_004.png)
 
-## Configuração da qualificação para a oferta {#configuring-offer-eligibility}
+## Configuração da elegibilidade para a oferta {#configuring-offer-eligibility}
 
 Na guia **[!UICONTROL Eligibility]**, defina o período em que a oferta será válida e poderá ser apresentada, os filtros a serem aplicados ao alvo e o peso da oferta.
 
-### Definição do período de qualificação de uma oferta {#defining-the-eligibility-period-of-an-offer}
+### Definição do período de elegibilidade de uma oferta {#defining-the-eligibility-period-of-an-offer}
 
-Para definir o período de qualificação da oferta, use as listas suspensas e selecione uma data inicial e final no calendário.
+Para definir o período de elegibilidade da oferta, use as listas suspensas e selecione uma data inicial e final no calendário.
 
 ![](assets/offer_eligibility_create_002.png)
 
-Fora dessas datas, a oferta não será selecionada pelo mecanismo do Interaction. Se também tiver configurado datas de qualificação para a categoria de oferta, o período mais restritivo será aplicado.
+Fora dessas datas, a oferta não será selecionada pelo mecanismo do Interaction. Se também tiver configurado datas de elegibilidade para a categoria de oferta, o período mais restritivo será aplicado.
 
 ### Filtros do alvo {#filters-on-the-target}
 
 É possível aplicar filtros ao alvo da oferta.
 
-Para fazer isso, clique no link **[!UICONTROL Edit query]** e selecione o filtro que deseja aplicar. (Consulte [esta seção](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+Para fazer isso, clique no link **[!UICONTROL Edit query]** e selecione o filtro que deseja aplicar. Consulte [esta seção](../../platform/using/about-adobe-campaign-classic.md).
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -92,7 +92,7 @@ Para criar um peso em uma oferta, aplique as seguintes etapas:
    >
    >Se nenhum peso for inserido (0), o target não será considerado qualificado para a oferta.
 
-1. Se desejar que o peso seja aplicado por um determinado período, defina datas de qualificação.
+1. Se desejar que o peso seja aplicado por um determinado período, defina datas de elegibilidade.
 
    ![](assets/offer_weight_create_002.png)
 
@@ -112,9 +112,9 @@ Para criar um peso em uma oferta, aplique as seguintes etapas:
    >
    >Se um target for elegível para vários pesos de uma oferta selecionada, o mecanismo manterá o melhor (mais alto) peso. Ao ligar para o mecanismo de oferta, uma oferta é selecionada no máximo uma vez por contato.
 
-### Resumo das regras de qualificação de oferta {#a-summary-of-offer-eligibility-rules}
+### Resumo das regras de elegibilidade de oferta {#a-summary-of-offer-eligibility-rules}
 
-Quando a configuração for concluída, um resumo das regras de eligibilidade estará disponível no painel de ofertas.
+Quando a configuração for concluída, um resumo das regras de elegibilidade estará disponível no painel de ofertas.
 
 Para fazer isso, clique no link **[!UICONTROL Schedule and eligibility rules]**.
 

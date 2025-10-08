@@ -4,7 +4,7 @@ title: Personalização e privacidade
 description: Conheça as práticas recomendadas de segurança para privacidade e personalização
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 12%
@@ -25,7 +25,7 @@ Ao adicionar links personalizados ao seu conteúdo, sempre evite qualquer person
 
 ### Recomendações
 
-Para validar e garantir que você não está usando acima, execute uma consulta na tabela de URL de rastreamento por meio do [Editor de consultas genéricas do Campaign](../../platform/using/steps-to-create-a-query.md) ou crie um fluxo de trabalho com critérios de filtragem na [atividade de consulta](../../workflow/using/query.md).
+Para validar e garantir que você não está usando acima, execute uma consulta na tabela de URL de rastreamento por meio do [Editor de consultas genéricas do Campaign](../../platform/using/about-queries-in-campaign.md) ou crie um fluxo de trabalho com critérios de filtragem na [atividade de consulta](../../workflow/using/query.md).
 
 Exemplo:
 
@@ -54,7 +54,7 @@ Além disso, você pode usar um aprimoramento para desativar URLs gerados em bui
 
 Se estiver executando na build 19.1.4, você poderá enfrentar problemas com deliveries de notificação por push usando links de rastreamento ou deliveries usando tags âncora. Em caso afirmativo, recomendamos que você desative a assinatura do URL.
 
-Cloud Service Como cliente hospedado, gerenciado ou híbrido do Campaign, você deve entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para desativar a assinatura da URL.
+Como cliente do Campaign hospedado, do Managed Cloud Services ou híbrido, você deve entrar em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para desativar a assinatura da URL.
 
 Se você estiver executando o Campaign em uma arquitetura híbrida, antes de habilitar a assinatura do URL, verifique se a instância hospedada do mid-sourcing foi atualizada da seguinte maneira:
 
@@ -151,7 +151,7 @@ Para fazer isso, siga as etapas abaixo:
    >
    >Você pode substituir `$(loginId) = 0 or $(login) = 'admin'` por `hasNamedRight('admin')` para permitir que todos os usuários com direitos de administrador vejam essas senhas.
 
-## Páginas do Protect com PI
+## Proteger páginas com PI
 
 Recomendamos enfaticamente que os clientes locais protejam as páginas que podem conter informações pessoais (PIs), como mirror pages, aplicativos web, etc.
 
