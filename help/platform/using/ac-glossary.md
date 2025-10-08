@@ -6,10 +6,10 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
-workflow-type: ht
-source-wordcount: '5959'
-ht-degree: 100%
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+workflow-type: tm+mt
+source-wordcount: '6002'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Saiba mais sobre [Teste A/B](../../delivery/using/get-started-a-b-testing.md).
 
 +++**Gerenciamento de acesso**
 
-O gerenciamento de acesso permite que administradores atribuam acesso e permissões aos usuários do Adobe Campaign. As permissões incluem a capacidade de exibir e/ou usar recursos do Adobe Campaign, como executar workflows, definir esquemas e gerenciar públicos.
+O gerenciamento de acesso permite que administradores atribuam acesso e permissões aos usuários do Adobe Campaign. As permissões incluem a capacidade de exibir e/ou usar recursos do Adobe Campaign, como executar workflows, definir esquemas e gerenciar públicos-alvos.
 
 Saiba mais sobre [Gerenciamento de acesso](access-management.md).
 +++
@@ -67,14 +67,14 @@ Saiba mais sobre a [Atividade de aprovação local](../../workflow/using/local-a
 
 +++**Público-alvo**
 
-Um público é o conjunto de perfis que atendem aos critérios de uma definição de filtro, com base em regras e atributos.
+Um público-alvo é o conjunto de perfis que atendem aos critérios de uma definição de filtro, com base em regras e atributos.
 
-Saiba mais sobre [Públicos](../../campaign/using/marketing-campaign-target.md).
+Saiba mais sobre [públicos-alvos](../../campaign/using/marketing-campaign-target.md).
 +++
 
 +++**Trilha de auditoria**
 
-A trilha de auditoria captura em tempo real uma lista abrangente de ações e eventos que ocorrem na sua instância do Adobe Campaign. Ele inclui uma maneira de autoatendimento para acessar um histórico de dados que ajudam a responder perguntas como: o que aconteceu com seus workflows e quem os atualizou por último ou o que seus usuários fizeram na instância .
+A trilha de auditoria captura em tempo real uma lista abrangente de ações e eventos que ocorrem na sua instância do Adobe Campaign. Ele inclui uma maneira de autoatendimento para acessar um histórico de dados que ajudam a responder perguntas como: o que aconteceu com seus fluxos de trabalho e quem os atualizou por último ou o que seus usuários fizeram na instância .
 
 Saiba mais sobre [Trilha de auditoria](../../production/using/audit-trail.md).
 +++
@@ -100,7 +100,7 @@ Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-man
 
 +++**Campanha**
 
-O Campaign é uma interface para coordenar, definir e executar campanhas de marketing. Campanhas podem conter dados relacionados a workflows, entregas, documentos e outros em uma única interface fácil de usar.
+O Campaign é uma interface para coordenar, definir e executar campanhas de marketing. Campanhas podem conter dados relacionados a fluxos de trabalho, entregas, documentos e outros em uma única interface fácil de usar.
 
 Saiba mais sobre [Campanhas](../../campaign/using/designing-marketing-campaigns.md).
 +++
@@ -119,7 +119,7 @@ Learn more about [Interaction](../../interaction/using/interaction-and-offer-man
 
 +++**Canal**
 
-Um canal é um meio pelo qual uma comunicação é enviada. Os canais incorporados no Adobe Campaign são email, SMS, correspondência direta, notificações por push, LINE e X (anteriormente conhecido como Twitter). Os canais personalizados podem ser implementados para requisitos de canal fora do padrão.
+Um canal é um meio pelo qual uma comunicação é enviada. Os canais integrados no Adobe Campaign são email, SMS, correspondência direta, notificações por push, LINE e X (anteriormente conhecido como Twitter). Os canais personalizados podem ser implementados para requisitos de canal fora do padrão.
 
 Saiba mais sobre [Canais](../../delivery/using/communication-channels.md).
 +++
@@ -140,7 +140,7 @@ Saiba mais sobre [Aprovação de conteúdo](../../campaign/using/marketing-campa
 
 +++**Grupos de controle**
 
-Use Grupos de controle para medir o impacto de suas campanhas excluindo parte dos públicos. Os operadores podem comparar o comportamento da população do público-alvo que recebeu a mensagem com o comportamento dos contatos que não foram direcionados. Com base nos logs de envio, os operadores também poderão direcionar um grupo de controle em campanhas futuras.
+Use Grupos de controle para medir o impacto de suas campanhas excluindo parte dos públicos-alvos. Os operadores podem comparar o comportamento da população do público-alvo que recebeu a mensagem com o comportamento dos contatos que não foram direcionados. Com base nos logs de envio, os operadores também poderão direcionar um grupo de controle em campanhas futuras.
 
 Saiba mais sobre [Grupos de controle](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
@@ -205,7 +205,7 @@ Saiba mais sobre [Entregabilidade](../../delivery/using/about-deliverability.md)
 
 +++**Entrega**
 
-Uma entrega é um item específico de comunicação de marketing que é enviado para um público em um canal específico (email, SMS, notificação por push etc.). Também conhecido como &quot;contato&quot; na terminologia de marketing.
+Uma entrega é um item específico de comunicação de marketing que é enviado para um público-alvo em um canal específico (email, SMS, notificação por push etc.). Também conhecido como &quot;contato&quot; na terminologia de marketing.
 
 Saiba mais sobre [Entregas](../../delivery/using/communication-channels.md).
 +++
@@ -263,7 +263,7 @@ Saiba mais sobre [Análise descritiva](../../reporting/using/about-descriptive-a
 
 *Contexto: marketing distribuído*
 
-O complemento Marketing Distribuído oferece aos operadores do Campaign um espaço de trabalho colaborativo para implementar campanhas entre entidades centrais (sedes, departamentos de marketing, etc.) e entidades locais (pontos de venda, agências regionais, etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **lista de pacotes do Campaign**, em que modelos de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
+O complemento Marketing Distribuído oferece aos operadores do Campaign um espaço de trabalho colaborativo para implementar campanhas entre entidades centrais (sedes, departamentos de marketing, etc.) e entidades locais (pontos de venda, agências regionais, etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **lista de pacotes de campanha**, em que modelos de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
 
 Saiba mais sobre o [Marketing distribuído](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -342,16 +342,18 @@ Saiba mais sobre [Atividade de enriquecimento](../../workflow/using/enrichment.m
 
 +++**Enumerações**
 
-Uma lista discriminada é um tipo de dados definido em esquemas ou no nível da Platform que define os valores de entrada válidos para um campo. Listas discriminadas aparecem na interface e nos construtores de consultas como uma lista de opções.
+Uma enumeração é um tipo de dados definido em esquemas ou no nível da Platform que define os valores de entrada válidos para um campo. Enumerações aparecem na interface e nos construtores de consultas como uma lista de opções.
 
-Saiba mais sobre [Listas discriminadas](../../platform/using/managing-enumerations.md).
+Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 +++
 
 +++**Visualização do Explorer**
 
-A visualização do Explorer é uma exibição hierárquica das pastas que contêm artefatos e dados do Adobe Campaign. Observe que o sistema de pastas no Adobe Campaign não funciona como uma visualização de árvore típica, em que cada pasta retém dados de um tipo específico, como Entregas, Workflows ou Ofertas.
+A visualização do Explorer é uma exibição hierárquica das pastas que contêm artefatos e dados do Adobe Campaign. Observe que o sistema de pastas no Adobe Campaign não funciona como uma visualização de árvore típica, em que cada pasta retém dados de um tipo específico, como Entregas, Fluxos de trabalho ou Ofertas.
 
-Saiba mais sobre [Visualização do Explorer](../../platform/using/adobe-campaign-explorer.md).
+
+Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+
 +++
 
 +++**Contas externas**
@@ -388,7 +390,7 @@ Saiba mais sobre [Aprovação de extração de arquivo](../../delivery/using/val
 
 +++**Dimensão do filtro**
 
-A dimensão do filtro é o esquema que contém os dados ou atributos usados por uma consulta para filtrar as linhas desejadas. O esquema Dimensão do filtro deve ser vinculado diretamente à Targeting dimension definida para permitir que o Adobe Campaign cruze a associação do banco de dados e retorne as linhas do entrevistado.
+A dimensão do filtro é o esquema que contém os dados ou atributos usados por uma consulta para filtrar as linhas desejadas. O esquema Dimensão do filtro deve ser vinculado diretamente à dimensão de direcionamento definida para permitir que o Adobe Campaign cruze a associação do banco de dados e retorne as linhas do entrevistado.
 
 Saiba mais sobre [Dimensão do filtro](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
 +++
@@ -397,14 +399,15 @@ Saiba mais sobre [Dimensão do filtro](../../workflow/using/building-a-workflow.
 
 Uma pasta é um item de visualização do Explorer que mantém registros de banco de dados de um tipo de dados específico. A exceção é o tipo Pasta genérica usado como um elemento organizador que não contém dados propriamente dito, apenas outras pastas.
 
-Saiba mais sobre [Pastas](../../platform/using/adobe-campaign-explorer.md).
+Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+
 +++
 
 +++**Exibição de pasta**
 
 A Exibição de pastas é um tipo de pasta especial do Explorer usada para exibir todos os registros de um tipo de dados selecionado, independentemente da pasta à qual pertence. As Exibições de pastas são usadas como uma ferramenta administrativa para gerenciar dados particionados ou que são distribuídos entre muitas pastas.
 
-Saiba mais sobre [Exibição de pastas](../../platform/using/adobe-campaign-explorer.md).
+Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 +++
 
 +++**Formulários**
@@ -426,7 +429,7 @@ Learn more about [Generated SQL queries](../../platform/using/steps-to-create-a-
 
 +++**Heatmap**
 
-Campaign Heatmap é uma tabela que mostra informações de execução do fluxo de trabalho para um período de 24 horas. Ele exibe a distribuição de workflows entre o período por hora e intervalos de 5 minutos. O Heatmap é usado para avaliar a carga do servidor e determinar as atividades do fluxo de trabalho que estão consumindo mais recursos.
+Campaign Heatmap é uma tabela que mostra informações de execução do fluxo de trabalho para um período de 24 horas. Ele exibe a distribuição de fluxos de trabalho entre o período por hora e intervalos de 5 minutos. O Heatmap é usado para avaliar a carga do servidor e determinar as atividades do fluxo de trabalho que estão consumindo mais recursos.
 
 Saiba mais sobre [HeatMap](../../workflow/using/heatmap.md).
 +++
@@ -491,7 +494,7 @@ Saiba mais sobre [Configurações de instância](../../installation/using/about-
 
 +++**Trabalhos (importação e exportação)**
 
-Os trabalhos são gerenciados por um sistema assistente que simplifica a importação e exportação de dados para dentro e para fora do produto. Os trabalhos usam o sistema de modelos para simplicidade e consistência e podem ser definidos para execução de acordo com uma programação.
+Os trabalhos são gerenciados por um sistema assistente que simplifica a importação e exportação de dados para dentro e para fora do produto. Os processos usam o sistema de modelos para simplicidade e consistência e podem ser definidos para execução de acordo com um cronograma.
 
 Saiba mais sobre [Importação e exportação de trabalhos](../../platform/using/get-started-data-import-export.md).
 +++
@@ -557,7 +560,8 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 A árvore de navegação é a navegação principal no modo de exibição Explorer do Adobe Campaign. A árvore de navegação funciona como um navegador de arquivos (por exemplo, Windows Explorer). As pastas podem conter subpastas. Selecionar um nó exibe a visualização correspondente ao nó. A visualização exibida é uma lista associada a um esquema e um formulário de entrada para editar a linha selecionada. É possível personalizar a árvore de navegação e definir permissões em pastas.
 
-Saiba mais sobre a [Árvore de navegação](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
+Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+
 +++
 
 +++**Objetivos**
@@ -582,7 +586,7 @@ Saiba mais sobre o [Catálogo de ofertas](../../interaction/using/offer-catalog-
 
 *Contexto: Interação com o Campaign*
 
-Um contato de oferta é um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a um targeting dimension. Contatos anônimos e não identificados são atribuídos ao targeting dimension do visitante. Há dois tipos de contatos, identificados e anônimos:
+Um contato de oferta é um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a uma dimensão de direcionamento. Contatos anônimos e não identificados são atribuídos à dimensão de direcionamento de visitantes. Há dois tipos de contatos, identificados e anônimos:
 
 * **Identified contact**: um contato que foi identificado voluntariamente no canal. Em interações de saída, o contato é identificado automaticamente.
 * **Anonymous contact**: um contato que não tenha assinado voluntariamente por meio do canal, mas pode ser identificado implicitamente por meio de um cookie. Essa terminologia é usada apenas para interações de entrada.
@@ -621,7 +625,7 @@ Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-man
 
 *Contexto: interação de campanha*
 
-O ambiente de oferta é a pasta raiz que define um catálogo de ofertas, seus espaços disponíveis e os filtros predefinidos do ambiente. Os operadores precisam criar um ambiente para cada targeting dimension. Há dois tipos de ambientes de oferta: Design e Em tempo real.
+O ambiente de oferta é a pasta raiz que define um catálogo de ofertas, seus espaços disponíveis e os filtros predefinidos do ambiente. Os operadores precisam criar um ambiente para cada dimensão de direcionamento. Há dois tipos de ambientes de oferta: Design e Em tempo real.
 
 Saiba mais sobre [Ambientes de oferta](../../interaction/using/fundamental-principles.md).
 +++
@@ -675,7 +679,7 @@ Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-man
 
 *Contexto: interação de campanha*
 
-Uma simulação de oferta permite que operadores testem a distribuição de ofertas em um escopo definido (data de entrega, segmento de público-alvo, número de ofertas, tema, etc.) antes de enviá-las. Pode ser usada para ajustar as prioridades da oferta e as regras de qualificação para maximizar a eficiência da oferta.
+Uma simulação de oferta permite que operadores testem a distribuição de ofertas em um escopo definido (data de entrega, segmento de público-alvo, número de ofertas, tema, etc.) antes de enviá-las. Pode ser usada para ajustar as prioridades da oferta e as regras de elegibilidade para maximizar a eficiência da oferta.
 
 Saiba mais sobre [Simulações de oferta](../../interaction/using/about-offers-simulation.md).
 +++
@@ -950,7 +954,7 @@ Saiba mais sobre [Atividades de direcionamento](../../workflow/using/about-targe
 
 +++**Dimensão de direcionamento**
 
-Targeting dimension é o tipo de dados produzido (retornado) por uma consulta ou outras atividades de fluxos de trabalho. Observe que o Adobe Campaign retorna somente a chave primária das linhas de banco de dados do entrevistado, independentemente da consulta usada para obtê-las.
+Dimensão de direcionamento é o tipo de dados produzido (retornado) por uma consulta ou outras atividades de fluxos de trabalho. Observe que o Adobe Campaign retorna somente a chave primária das linhas de banco de dados do entrevistado, independentemente da consulta usada para obtê-las.
 
 Saiba mais sobre [Targeting dimension](../../workflow/using/targeting-data.md).
 +++
@@ -974,9 +978,9 @@ Learn more about [Tasks](../../workflow/using/about-workflows.md).
 +++
 -->
 
-+++**Template**
++++**Modelo**
 
-Um modelo é um elemento de design usado para criar um objeto. Ele contém configurações do objeto e, opcionalmente, o conteúdo do objeto. O sistema de modelos é usado para criar entregas, campanhas, workflows e muitos outros elementos do Adobe Campaign. Os modelos de fábrica disponíveis são definidos pelos pacotes instalados. Os modelos podem ser duplicados e personalizados, conforme necessário pelos Operadores do Campaign.
+Um modelo é um elemento de design usado para criar um objeto. Ele contém configurações do objeto e, opcionalmente, o conteúdo do objeto. O sistema de modelos é usado para criar entregas, campanhas, fluxos de trabalho e muitos outros elementos do Adobe Campaign. Os modelos de fábrica disponíveis são definidos pelos pacotes instalados. Os modelos podem ser duplicados e personalizados, conforme necessário pelos Operadores do Campaign.
 +++
 
 <!--
@@ -1044,7 +1048,7 @@ Saiba mais sobre [Tipologias](../../campaign-opt/using/about-campaign-typologies
 
 *Contexto: Otimização de campanha*
 
-As regras de tipologia são regras comerciais que são implementadas como parte da fase de análise da entrega. As regras de tipologia são verificações sobre o conteúdo da entrega (regras de controle) ou do público-alvo da entrega (regras de filtragem) ou de outra lógica (regras de pressão) que impõem requisitos comerciais. As regras são elementos granulares que podem ser incluídos em uma ou mais tipologias.
+As regras de tipologia são regras de negócios que são implementadas como parte da fase de análise da entrega. As regras de tipologia são verificações sobre o conteúdo da entrega (regras de controle) ou do público-alvo da entrega (regras de filtragem) ou de outra lógica (regras de pressão) que impõem requisitos comerciais. As regras são elementos granulares que podem ser incluídos em uma ou mais tipologias.
 
 Saiba mais sobre [Regras de tipologia](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++

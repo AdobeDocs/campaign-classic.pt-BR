@@ -3,9 +3,9 @@ keywords: Campaign Classic;página inicial;tópicos populares
 product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 961f056ca8bf201e8cedcddb3a2b1f1a4e32b08a
-workflow-type: ht
-source-wordcount: '357'
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+workflow-type: tm+mt
+source-wordcount: '342'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Novidades
 
-Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Adobe Campaign Classic v7. Para obter uma lista completa dos recursos, melhorias e correções, consulte as [Notas de versão](rn/using/latest-release.md) detalhadas.  Mantenha-se atualizado com as alterações mais recentes em nossa documentação, acessando a [página de atualizações da documentação](rn/using/documentation-updates.md).
+Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Adobe Campaign Classic v7. Para obter uma lista de todos os recursos, melhorias e correções, confira as [Notas de versão](rn/using/latest-release.md) detalhadas.
 
 >[!BEGINTABS]
 
@@ -57,7 +57,7 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     </td>
     <td>
     <a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
-    <div><strong>Automatização com workflows</strong><br/>Saiba como aproveitar workflows para projetar processos, incluindo segmentação, execução de campanha, processamento de arquivos, participação humana, entre outros.
+    <div><strong>Automatização com fluxos de trabalho</strong><br/>Saiba como aproveitar fluxos de trabalho para projetar processos, incluindo segmentação, execução de campanha, processamento de arquivos, participação humana, entre outros.
     </div></td>
     <td>
     <a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>

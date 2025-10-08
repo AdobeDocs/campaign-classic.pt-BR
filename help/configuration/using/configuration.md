@@ -5,9 +5,9 @@ feature: Application Settings
 description: Saiba como configurar a árvore de navegação do Campaign Explorer
 role: Data Engineer, Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Como usuário especialista, você pode adicionar pastas à árvore do explorador e personalizá-la.
 
-Saiba mais sobre o explorador do Campaign e a hierarquia de navegação [nesta seção](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Os tipos de pastas usados pela lista de navegação são descritos em um documento XML que obedece à gramática do esquema **xtk:navtree**.
 
@@ -265,7 +265,7 @@ Os comandos são exibidos na mesma ordem declarada no documento XML.
 
 Um separador de comandos permite exibir uma barra de separação entre comandos. Ela é identificada pelo valor **&#39;-&#39;** contido no rótulo do comando.
 
-A presença opcional da marca **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre APIs SOAP, consulte a [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR).
+A presença opcional da marca **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre as APIs do SOAP, consulte a [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR).
 
 O contexto do formulário pode ser atualizado na inicialização por meio da marca **`<enter>`**. Para obter mais informações sobre essa tag, consulte a documentação do formulário de entrada.
 
