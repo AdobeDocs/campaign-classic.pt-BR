@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Como usuário especialista, você pode adicionar pastas à árvore do explorador e personalizá-la.
 
-Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Os tipos de pastas usados pela lista de navegação são descritos em um documento XML que obedece à gramática do esquema **xtk:navtree**.
 
