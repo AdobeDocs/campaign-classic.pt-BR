@@ -7,9 +7,9 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '121'
 ht-degree: 100%
 
 ---
@@ -18,9 +18,7 @@ ht-degree: 100%
 
 
 
-O Adobe Campaign Classic fornece importações e exportações genéricas. Eles permitem, por exemplo, extrair uma lista de clientes ou prospectos que se tornarão parte de uma população de público alvo ou fornecer dados de arquivos externos ao seu banco de dados.
-
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
+O Adobe Campaign Classic fornece importações e exportações genéricas. Eles permitem, por exemplo, extrair uma lista de clientes ou clientes potenciais que se tornarão parte de uma população de público alvo ou fornecer dados de arquivos externos ao seu banco de dados.
 
 As importações e exportações genéricas são gerenciadas no nó **[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]** da árvore do Adobe Campaign.
 

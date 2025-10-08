@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '2987'
-ht-degree: 100%
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+workflow-type: tm+mt
+source-wordcount: '2984'
+ht-degree: 99%
 
 ---
 
@@ -41,8 +41,7 @@ A quarentena e a lista de bloqueios não se aplicam ao mesmo objeto:
 
 * Por outro lado, com a inclusão na **lista de bloqueios**, o **perfil** não será mais direcionado pela entrega, por exemplo, depois de um cancelamento de inscrição (recusa de participação) de um determinado canal. Por exemplo, se um perfil na lista de bloqueios para o canal de email tiver dois endereços de email, ambos os endereços serão excluídos da entrega.
 
-  Você pode verificar se um perfil está na lista de bloqueios de um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil. Consulte [esta seção](../../platform/using/editing-a-profile.md#general-tab).
-
+  Incluir na lista de bloqueios Você pode verificar se um perfil está no arquivo de pesquisa para um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil.
 >[!NOTE]
 >
 >A quarentena inclui um status **[!UICONTROL Denylisted]**, que se aplica quando os destinatários marcam sua mensagem como spam ou respondem a uma mensagem SMS com uma palavra-chave, como “PARAR”. Nesse caso, o endereço do perfil envolvido ou o número de telefone é enviado para quarentena com o status **[!UICONTROL Denylisted]**. Para obter mais informações sobre como gerenciar mensagens SMS PARAR, consulte [esta seção](../../delivery/using/sms-send.md#processing-inbound-messages).
@@ -120,7 +119,7 @@ Ao contrário de erros graves, os erros recuperáveis não enviam um endereço i
 
 As tentativas serão executadas no decorrer da [duração da entrega](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period). Quando o contador de erros atinge o limite da cota, o endereço vai para a quarentena. Para obter mais informações, consulte [Tentativas após uma falha temporária de entrega](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
-O contador de erros será reinicializado se o último erro significativo ocorrer há mais de 10 dias. O status do endereço é alterado para **Válido** e excluído da lista de quarentenas pelo workflow de [limpeza do banco de dados](../../production/using/database-cleanup-workflow.md).
+O contador de erros será reinicializado se o último erro significativo ocorrer há mais de 10 dias. O status do endereço é alterado para **Válido** e excluído da lista de quarentenas pelo fluxo de trabalho de [limpeza do banco de dados](../../production/using/database-cleanup-workflow.md).
 
 
 Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](sending-with-enhanced-mta.md), o número máximo de tentativas a efetuar em caso de status **[!UICONTROL Erroneous]**, e o atraso mínimo entre tentativas agora se baseiam no desempenho histórico e atual de um IP em um determinado domínio.
@@ -186,7 +185,7 @@ Os itens colocados em quarentena são tokens de dispositivo.
 
 ### Quarentena do iOS {#ios-quarantine}
 
-O protocolo HTTP/V2 permite um feedback e status direto para cada entrega por push. Se o conector do protocolo HTTP/V2 for usado, o serviço de feedback não será mais chamado pelo workflow **[!UICONTROL mobileAppOptOutMgt]**. Um token é considerado não registrado quando um aplicativo móvel é desinstalado ou reinstalado.
+O protocolo HTTP/V2 permite um feedback e status direto para cada entrega por push. Se o conector do protocolo HTTP/V2 for usado, o serviço de feedback não será mais chamado pelo fluxo de trabalho **[!UICONTROL mobileAppOptOutMgt]**. Um token é considerado não registrado quando um aplicativo móvel é desinstalado ou reinstalado.
 
 Em sincronia, se o APNs retornar um status &quot;não registrado&quot; para uma mensagem, o token do público alvo será colocado imediatamente em quarentena.
 
@@ -285,7 +284,7 @@ A cada notificação, o Adobe Campaign recebe os erros síncronos diretamente do
 * Cota de dispositivo excedida: sem tentativa, erro leve, o motivo da falha é **[!UICONTROL Refused]**.
 * Token inválido ou não registrado, erro inesperado, problema da conta do remetente: sem tentativa, erro grave, o motivo de falha é **[!UICONTROL Refused]**.
 
-O workflow **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para atualizar a tabela **AppSubscriptionRcp**. Para os tokens declarados não registrados ou inválidos, o campo **Desabilitado** é definido como **Verdadeiro** e a subscrição vinculada a esse token de dispositivo será excluída automaticamente das entregas futuras.
+O fluxo de trabalho **[!UICONTROL mobileAppOptOutMgt]** é executado a cada 6 horas para atualizar a tabela **AppSubscriptionRcp**. Para os tokens declarados não registrados ou inválidos, o campo **Desabilitado** é definido como **Verdadeiro** e a subscrição vinculada a esse token de dispositivo será excluída automaticamente das entregas futuras.
 
 Durante a análise de entrega, todos os dispositivos excluídos do target são automaticamente adicionados à tabela **excludeLogAppSubRcp** .
 
@@ -490,7 +489,7 @@ O mecanismo de quarentena do Android V2 usa o mesmo processo que o Android V1, o
    <td> Não<br /> </td> 
   </tr>
     <tr> 
-   <td> Autenticação: escopo Oauth inválido ou público de token de ID fornecido<br /> </td> 
+   <td> Autenticação: escopo Oauth inválido ou público-alvo de token de ID fornecido<br /> </td> 
    <td> Falha<br /> </td> 
    <td> unauthorized_client</td> 
    <td> Ignorado</td> 

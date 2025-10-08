@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '1117'
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+workflow-type: tm+mt
+source-wordcount: '1103'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Para editar um serviço existente, clique em seu respectivo nome. Para criar um 
   >As assinaturas do Facebook e do X estão detalhadas [nesta seção](../../social/using/about-social-marketing.md). As subscrições de aplicativos móveis são detalhadas em [Sobre o canal de aplicativos móveis](about-mobile-app-channel.md).
 
 * Para um serviço de tipo de email, selecione o **Modo de entrega**. Os modos possíveis são: **[!UICONTROL Newsletter]** ou **[!UICONTROL Viral]**.
-* Você pode enviar **mensagens de confirmação** para uma subscrição ou unsubscription. Para fazer isso, selecione os templates que devem ser usados para criar as entregas correspondentes a partir dos campos **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]**. Esses templates devem ser configurados com um target mapping do tipo **[!UICONTROL Subscription]** sem um destino definido. Consulte a seção [Sobre canal de email](about-email-channel.md).
+* Você pode enviar **mensagens de confirmação** para uma subscrição ou unsubscription. Para fazer isso, selecione os modelos que devem ser usados para criar as entregas correspondentes a partir dos campos **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]**. Esses modelos devem ser configurados com um target mapping do tipo **[!UICONTROL Subscription]** sem um destino definido. Consulte a seção [Sobre canal de email](about-email-channel.md).
 * Por padrão, as subscrições são ilimitadas. É possível desmarcar a opção **[!UICONTROL Unlimited]** para definir uma duração de validade do serviço. A duração pode ser especificada em dias (**[!UICONTROL d]**) ou meses (**[!UICONTROL m]** ).
 
 Depois que o serviço é salvo, ele será adicionado à lista Services and Subscriptions: Clique no nome para editá-lo. Várias guias estão disponíveis. A guia **[!UICONTROL Subscriptions]** permite visualizar a lista de assinantes do serviço de informação (guia **[!UICONTROL Active subscriptions]**) ou o histórico de subscrição/cancelar subscrição (guia **[!UICONTROL History]**). Além disso, é possível adicionar e excluir assinantes a partir desta guia. Consulte [Adição e exclusão de assinantes](#adding-and-deleting-subscribers)
@@ -78,7 +78,7 @@ Na guia **[!UICONTROL Subscriptions]** de um serviço de informação, clique em
 
 Para excluir os assinantes, selecione-os e clique em **[!UICONTROL Delete]**. Além disso, é possível clicar com o botão direito do mouse na lista de assinantes e selecionar **[!UICONTROL Delete]**.
 
-Em ambos os casos, se um template de entrega para cancelamentos de subscrição estiver anexado ao serviço, é possível enviar uma mensagem de confirmação para os usuários relacionados (consulte [Criação de um serviço de informações](#creating-an-information-service)). Um aviso permite validar ou não esta entrega:
+Em ambos os casos, se um modelo de entrega para cancelamentos de subscrição estiver anexado ao serviço, é possível enviar uma mensagem de confirmação para os usuários relacionados (consulte [Criação de um serviço de informações](#creating-an-information-service)). Um aviso permite validar ou não esta entrega:
 
 ![](assets/s_ncs_user_services_update.png)
 
@@ -113,7 +113,7 @@ Você pode configurar mecanismos de subscrição e unsubscription para automatiz
 >É possível enviar uma mensagem de confirmação para os assinantes novos.\
 >O conteúdo dessa mensagem é definido na configuração do serviço de informação por meio dos campos **[!UICONTROL Subscription]** ou **[!UICONTROL Unsubscription]**.
 >
->As mensagens de confirmação são criadas por meio dos templates de entrega especificados nesses campos. Esses target mappings devem ser **[!UICONTROL Subscriptions]**.
+>As mensagens de confirmação são criadas por meio dos modelos de entrega especificados nesses campos. Esses target mappings devem ser **[!UICONTROL Subscriptions]**.
 
 ![](assets/s_ncs_user_subscribe_confirmation.png)
 
@@ -122,8 +122,6 @@ Você pode configurar mecanismos de subscrição e unsubscription para automatiz
 Para registrar destinatários para um serviço de informação, você pode:
 
 * Adicionar manualmente o serviço: para fazer isso, a partir da guia **[!UICONTROL Subscriptions]** do perfil, clique em **[!UICONTROL Add]** e selecione o serviço de informação desejado.
-
-  Para obter mais informações, consulte a seção sobre edição de perfil [nesta seção](../../platform/using/editing-a-profile.md).
 
 * Subscrever automaticamente um conjunto de assinantes a este serviço. A lista de destinatários pode vir de uma operação de filtragem, grupo, pasta, importação ou seleção direta usando o mouse. Para inscrever esses destinatários, selecione os perfis e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions > Subscribe selection to a service...]**, o serviço desejado e inicie a operação.
 * Importar destinatários e inscrevê-los automaticamente em um serviço de informação. Para isso, selecione o serviço em questão na última etapa do assistente de importação.
@@ -134,7 +132,7 @@ Para registrar destinatários para um serviço de informação, você pode:
 
   Para obter mais informações, consulte [esta seção](../../web/using/about-web-applications.md).
 
-* Criação de um workflow de direcionamento e uso de uma caixa **[!UICONTROL Subscription service]**.
+* Criação de um fluxo de trabalho de segmentação e uso de uma caixa **[!UICONTROL Subscription service]**.
 
   ![](assets/s_ncs_user_subscribe_from_wf.png)
 
@@ -160,7 +158,7 @@ Um serviço de informação pode ter uma duração limitada. Os destinatários t
 
 ![](assets/s_ncs_user_services_delay.png)
 
-Você também pode configurar um workflow de cancelamento de subscrições para uma população. Para fazer isso, siga o mesmo procedimento para um workflow de subscrições, mas selecione a opção **[!UICONTROL Unsubscription]**. Consulte [Subscrição de um destinatário a um serviço](#subscribing-a-recipient-to-a-service).
+Você também pode configurar um fluxo de trabalho de cancelamento de subscrições para uma população. Para fazer isso, siga o mesmo procedimento para um fluxo de trabalho de subscrições, mas selecione a opção **[!UICONTROL Unsubscription]**. Consulte [Subscrição de um destinatário a um serviço](#subscribing-a-recipient-to-a-service).
 
 ### Rastreamento do assinante {#subscriber-tracking}
 

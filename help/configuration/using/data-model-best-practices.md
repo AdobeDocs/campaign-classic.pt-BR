@@ -4,9 +4,9 @@ title: Práticas recomendadas do modelo de dados
 description: Saiba como trabalhar com o modelo de dados do Campaign Classic
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '4013'
+source-wordcount: '4005'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Este documento descreve as principais recomendações ao projetar o modelo de da
 
 Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [esta seção](../../configuration/using/about-data-model.md).
 
-Leia [esta documentação](../../configuration/using/about-schema-reference.md) para começar a usar os esquemas do Campaign. Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign neste documento [1&rbrace;.](../../configuration/using/about-schema-edition.md)
+Leia [esta documentação](../../configuration/using/about-schema-reference.md) para começar a usar os esquemas do Campaign. Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign neste documento [1}.](../../configuration/using/about-schema-edition.md)
 
 ## Visão geral {#overview}
 
@@ -69,7 +69,7 @@ Para garantir uma boa arquitetura e desempenho do sistema, siga as práticas rec
 * O atributo **expr** permite definir um atributo de esquema como um campo calculado em vez de um valor de conjunto físico em uma tabela. Isso pode permitir o acesso às informações em um formato diferente (como idade e data de nascimento, por exemplo), sem a necessidade de armazenar ambos os valores. Essa é uma boa maneira de evitar campos duplicados. Por exemplo, a tabela Recipient usa uma expressão para o domínio, que já está presente no campo email.
 * No entanto, quando o cálculo da expressão é complexo, não é recomendável usar o atributo **expr**, pois o cálculo instantâneo pode afetar o desempenho das suas consultas.
 * O tipo **XML** é uma boa maneira de evitar a criação de muitos campos. Mas também ocupa espaço em disco, pois usa uma coluna CLOB no banco de dados. Ela também pode levar a consultas SQL complexas e afetar o desempenho.
-* O comprimento de um campo **cadeia** deve ser sempre definido com a coluna. Por padrão, o comprimento máximo no Adobe Campaign é de 255, mas o Adobe recomenda manter o campo mais curto, se você já souber que o tamanho não excederá um comprimento mais curto.
+* O comprimento de um campo **cadeia** deve ser sempre definido com a coluna. Por padrão, o comprimento máximo no Adobe Campaign é de 255, mas a Adobe recomenda manter o campo mais curto se você já souber que o tamanho não excederá um comprimento mais curto.
 * É aceitável ter um campo mais curto no Adobe Campaign do que no sistema de origem se você tiver certeza de que o tamanho no sistema de origem foi superestimado e não seria atingido. Isso pode significar uma string menor ou um inteiro menor no Adobe Campaign.
 
 ### Escolha de campos {#choice-of-fields}
@@ -103,7 +103,7 @@ A tabela a seguir descreve esses identificadores e sua finalidade.
 | Identificador | Descrição | Práticas recomendadas |
 |--- |--- |--- |
 | ID | <ul><li>A id é a chave primária física de uma tabela do Adobe Campaign. Para tabelas prontas para uso, é um número gerado de 32 bits de uma sequência</li><li>Normalmente, esse identificador é exclusivo de uma instância específica do Adobe Campaign. </li><li>Uma ID gerada automaticamente pode ser visível em uma definição de esquema. Pesquisar o atributo *autopk=&quot;true&quot;*.</li></ul> | <ul><li>Identificadores gerados automaticamente não devem ser usados como referência em um fluxo de trabalho ou em uma definição de pacote.</li><li>Não se deve supor que a ID sempre será um número crescente.</li><li>A ID em uma tabela pronta para uso é um número de 32 bits e esse tipo não deve ser alterado. Esse número é retirado de uma &quot;sequência&quot; abordada na seção com o mesmo nome.</li></ul> |
-| Nome (ou nome interno) | <ul><li>Essas informações são um identificador exclusivo de um registro em uma tabela. Esse valor pode ser atualizado manualmente, geralmente com um nome gerado.</li><li>Esse identificador mantém seu valor quando implantado em uma instância diferente do Adobe Campaign e não deve estar vazio.</li></ul> | <ul><li>Renomeie o nome do registro gerado pelo Adobe Campaign se o objeto deve ser implantado de um ambiente para outro.</li><li>Quando um objeto tiver um atributo de namespace (*schema*, por exemplo), esse namespace comum será aproveitado em todos os objetos personalizados criados. Alguns namespaces reservados não devem ser usados: *nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*.</li><li>Quando um objeto não tem namespace (*workflow* ou *delivery*, por exemplo), essa noção de namespace seria adicionada como um prefixo de um objeto de nome interno: *namespaceMyObjectName*.</li><li>Não use caracteres especiais como espaço &quot;&quot;, ponto e vírgula &quot;:&quot; ou hífen &quot;-&quot;. Todos esses caracteres seriam substituídos por um sublinhado &quot;_&quot; (caractere permitido). Por exemplo, &quot;abc-def&quot; e &quot;abc:def&quot; seriam armazenados como &quot;abc_def&quot; e se substituiriam.</li></ul> |
+| Nome (ou nome interno) | <ul><li>Essas informações são um identificador exclusivo de um registro em uma tabela. Esse valor pode ser atualizado manualmente, geralmente com um nome gerado.</li><li>Esse identificador mantém seu valor quando implantado em uma instância diferente do Adobe Campaign e não deve estar vazio.</li></ul> | <ul><li>Renomeie o nome do registro gerado pelo Adobe Campaign se o objeto deve ser implantado de um ambiente para outro.</li><li>Quando um objeto tiver um atributo de namespace (*schema*, por exemplo), esse namespace comum será aproveitado em todos os objetos personalizados criados. Alguns namespaces reservados não devem ser usados: *nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*.</li><li>Quando um objeto não tem namespace (*workflow* ou *delivery*, por exemplo), essa noção de namespace seria adicionada como um prefixo de um objeto de nome interno: *namespaceMyObjectName*.</li><li>Não use caracteres especiais como espaço &quot; &quot;, ponto e vírgula &quot;:&quot; ou hífen &quot;-&quot;. Todos esses caracteres seriam substituídos por um sublinhado &quot;_&quot; (caractere permitido). Por exemplo, &quot;abc-def&quot; e &quot;abc:def&quot; seriam armazenados como &quot;abc_def&quot; e se substituiriam.</li></ul> |
 | Rótulo | <ul><li>O rótulo é o identificador comercial de um objeto ou registro no Adobe Campaign.</li><li>Esse objeto permite espaços e caracteres especiais.</li><li>Isso não garante a exclusividade de um registro.</li></ul> | <ul><li>É recomendável determinar uma estrutura para seus rótulos de objeto.</li><li>Essa é a solução mais simples para identificar um registro ou objeto para um usuário do Adobe Campaign.</li></ul> |
 
 ## Chaves internas personalizadas {#custom-internal-keys}
@@ -146,13 +146,13 @@ Quando uma tabela personalizada está sendo criada no Adobe Campaign com uma cha
 
 Por padrão, uma sequência personalizada terá valores que variam de +1.000 a +2,1BB. Tecnicamente, é possível obter uma gama completa de 4BB habilitando ids negativas. Isso deve ser usado com cuidado e uma ID será perdida ao passar de números negativos para positivos: o registro 0 normalmente é ignorado pelo Adobe Campaign em consultas SQL geradas.
 
-Para saber mais sobre a exaustão das sequências, assista a [este vídeo](https://helpx.adobe.com/br/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Para saber mais sobre a exaustão das sequências, assista a [este vídeo](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Índices {#indexes}
 
-Os índices são essenciais para o desempenho. Quando você declarar uma chave no esquema, o Adobe criará automaticamente um índice nos campos da chave. Você também pode declarar mais índices para consultas que não usam a chave.
+Os índices são essenciais para o desempenho. Ao declarar uma chave no esquema, o Adobe criará automaticamente um índice nos campos da chave. Você também pode declarar mais índices para consultas que não usam a chave.
 
-A Adobe recomenda definir índices adicionais, pois pode melhorar o desempenho.
+A Adobe recomenda definir índices adicionais, pois isso pode melhorar o desempenho.
 
 No entanto, lembre-se do seguinte:
 
@@ -165,12 +165,13 @@ No entanto, lembre-se do seguinte:
 * Selecione cuidadosamente os índices que precisam ser definidos.
 * Não remova índices nativos de tabelas prontas para uso.
 
-<!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you’ve completed this important import, it is possible to enable the index(es).-->
+<!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you've completed this important import, it is possible to enable the index(es).-->
 
 ### Exemplo
 
 O gerenciamento de índices pode se tornar muito complexo, portanto, é importante entender como eles funcionam. Para ilustrar essa complexidade, vamos ver um exemplo básico, como pesquisar destinatários filtrando o nome e o sobrenome. Para fazer isso:
-1. Vá para a pasta que lista todos os destinatários no banco de dados. Para obter mais informações, consulte [Gerenciamento de perfis](../../platform/using/managing-profiles.md).
+
+1. Navegue até a pasta que lista todos os destinatários no banco de dados.
 1. Clique com o botão direito no campo **[!UICONTROL First name]**.
 1. Selecione **[!UICONTROL Filter on this field]**.
 
@@ -210,7 +211,7 @@ Cuidado com a integridade &quot;própria&quot; em tabelas grandes. A exclusão d
 
 Declarar um link como uma associação externa não é bom para o desempenho. O registro de id zero emula a funcionalidade de associação externa. Não é necessário declarar junções externas se o link usar o autopk.
 
-Embora seja possível unir qualquer tabela em um fluxo de trabalho, o Adobe recomenda definir links comuns entre os recursos diretamente na definição da estrutura de dados.
+Embora seja possível unir qualquer tabela em um fluxo de trabalho, a Adobe recomenda definir links comuns entre os recursos diretamente na definição da estrutura de dados.
 
 O link deve ser definido em alinhamento com os dados reais nas tabelas. Uma definição incorreta poderia afetar os dados recuperados por meio de links, por exemplo, registros duplicados inesperadamente.
 

@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '684'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Graças às funcionalidades de rastreamento, o Adobe Campaign permite que você rastreie as mensagens enviadas e verifique o comportamento dos destinatárioes: abrir, clicar em links, cancelamento de subscrição, etc.
 
-Essas informações são recuperadas na guia **[!UICONTROL Tracking]** do perfil de cada destinatário da entrega. Esta guia apresenta todos os links de URL rastreados e clicados pelo destinatário selecionado na lista. Esse é o acúmulo de todos os URLs rastreados nas entregas que ainda estão na tela de envio. A lista pode ser configurada e normalmente contém: o URL clicado, a data e a hora do clique e o documento no qual o URL foi localizado. Para obter mais informações, consulte [esta seção](../../platform/using/editing-a-profile.md#tracking-tab).
+Essas informações são recuperadas na guia **[!UICONTROL Tracking]** do perfil de cada destinatário da entrega. Esta guia apresenta todos os links de URL rastreados e clicados pelo destinatário selecionado na lista. Esse é o acúmulo de todos os URLs rastreados nas entregas que ainda estão na tela de envio. A lista pode ser configurada e normalmente contém: o URL clicado, a data e a hora do clique e o documento no qual o URL foi localizado.
 
 O **painel de entrega** também é fundamental para monitorar suas entregas e eventuais problemas encontrados durante o envio de mensagens. Para obter mais informações, consulte [esta seção](delivery-dashboard.md).
 
