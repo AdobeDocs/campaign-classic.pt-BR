@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 1e0e75c6f0dd5a32584291205047f835e951ee9c
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 82%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 82%
 
 ## Explorar a interface do Adobe Campaign {#about-adobe-campaign-interface}
 
-Depois de se conectar ao banco de dados, você acessará a home page do Adobe Campaign, um painel de controle formado por links e atalhos que permitem acessar recursos, dependendo da sua instalação, bem como as configurações gerais da plataforma.
+Depois de se conectar ao banco de dados, você acessa a home page do Adobe Campaign. Essa página é seu painel de controle: é composta por links e atalhos que permitem acessar recursos do, dependendo da instalação e das configurações gerais da plataforma.
 
-Na seção central da home page, você pode usar links para acessar o portal de documentação on-line do Campaign, o fórum e o site de suporte.
+Na seção central da home page, você pode usar links para acessar o portal de documentação do Campaign, a comunidade e o site de Atendimento ao cliente da Adobe.
 
 ![](assets/d_ncs_user_interface_home.png)
 
@@ -51,7 +51,7 @@ O idioma é selecionado ao instalar a instância do Adobe Campaign Classic.
 
 ![](assets/language.png)
 
-Você pode escolher entre cinco idiomas diferentes:
+Você pode escolher entre estes idiomas:
 
 * Inglês (Reino Unido)
 * Inglês (EUA)
@@ -59,7 +59,7 @@ Você pode escolher entre cinco idiomas diferentes:
 * Alemão
 * Japonês
 
-O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Para obter mais informações sobre como criar uma instância, consulte esta [página](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -110,7 +110,7 @@ O explorer do Adobe Campaign é acessível por meio do ícone da barra de ferram
 
 Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na documentação do Campaign v8 (console):
 
-* [Visão geral da interface do usuário do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Visão geral da interface do usuário do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Configurações da interface do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -125,7 +125,7 @@ Ao navegar pela Campanha, os dados são exibidos em listas. Aplique filtros inco
 
 >[!NOTE]
 >
->Para saber como acessar, projetar e compartilhar filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+>Para saber como acessar, projetar e compartilhar filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
 ## Trabalhar com listas {#manage-and-customize-lists}
@@ -148,4 +148,4 @@ Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign 
 
 Este vídeo apresenta o espaço de trabalho do Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/39535?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
