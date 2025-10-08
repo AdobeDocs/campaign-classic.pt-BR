@@ -4,11 +4,12 @@ title: Opções de ajuda e suporte para o Campaign Classic
 description: Precisa de suporte para o Campaign Classic? Você está no lugar certo.
 feature: Troubleshooting
 hidefromtoc: true
+hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 68%
+source-wordcount: '653'
+ht-degree: 72%
 
 ---
 
@@ -65,7 +66,7 @@ Como atualizar para um novo build? como monitorar a execução do fluxo de traba
         <li><a href="workflow/using/monitoring-technical-workflows.md">Monitoramento do fluxo de trabalho técnico</a></li>
         <li><a href="delivery/using/about-message-tracking.md">Entender o gerenciamento de rastreamento</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Ferramentas de monitoramento do Discover</a></li>
-        <li><a href="platform/using/import-export-workflows.md">Importar dados com workflows</a></li>
+        <li><a href="platform/using/import-export-workflows.md">Importar dados com fluxos de trabalho</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Enviar mensagens em várias ondas</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Criar conteúdo de email</a></li>
         <li><a href="delivery/using/delivery-best-practices.md">Práticas recomendadas de entrega</a></li>
@@ -81,7 +82,7 @@ Como atualizar para um novo build? como monitorar a execução do fluxo de traba
         <li><a href="platform/using/privacy-management.md">Gestão do consentimento e da privacidade</a></li>
         <li><a href="platform/using/steps-to-create-a-query.md">Criar uma query</a></li>
         <li><a href="workflow/using/querying-recipient-table.md">Amostras de consulta</a></li>
-        <li><a href="workflow/using/building-a-workflow.md">Criar um workflow</a></li>
+        <li><a href="workflow/using/building-a-workflow.md">Criar um fluxo de trabalho</a></li>
         </ul>
     </td>
     </tr>
@@ -133,18 +134,18 @@ Saiba como gerenciar as configurações de instâncias do Campaign Classic no Pa
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-O novo sistema de emissão de tíquetes foi iniciado pelo [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. O novo sistema exige novas contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso por meio da Experience League, e a equipe de Atendimento ao cliente resolverá o problema o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html)
+O novo sistema de emissão de tíquetes foi iniciado pelo [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. O novo sistema exige novas contas individuais para cada usuário, com as permissões corretas. Se você não conseguir fazer logon com sua Adobe ID, solicite acesso por meio da Experience League, e a equipe de Atendimento ao cliente resolverá seu problema o mais rápido possível. [Saiba mais](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html)
 
 ### Pergunte aos especialistas.
 
-Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){_blank}.
+Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Acessar o Centro de download do Campaign
 
-Como um Administrador do Campaign, navegue até [esta página](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para acessar a Distribuição de Software Experience Cloud.
+Como Administrador do Campaign, navegue até [esta página](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) para acessar a Distribuição de software da Experience Cloud.
 
 ### Criar um tíquete ou iniciar um chat
 
 A criação de um caso permite que você entre em contato com a Equipe de suporte ao cliente da Adobe sobre qualquer problema que você tiver com produtos da Adobe. Para ajudar a resolver ou solucionar problemas, o Adobe Admin Console permitirá que você fale com o Suporte ao cliente da Adobe.
 
-Para registrar um problema ou iniciar um chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Siga o procedimento detalhado descrito em [esta página](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html){_blank}.
+Para registrar um problema ou iniciar uma sessão de chat nesse novo sistema, conecte-se ao [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Siga o procedimento detalhado descrito [nesta página](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html){_blank}.
