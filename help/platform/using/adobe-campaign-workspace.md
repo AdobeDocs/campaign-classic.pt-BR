@@ -6,7 +6,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 92%
@@ -59,7 +59,7 @@ Você pode escolher entre cinco idiomas diferentes:
 * Alemão
 * Japonês
 
-O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui#formats){target=_blank}.
+O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Para obter mais informações sobre como criar uma instância, consulte esta [página](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -137,4 +137,4 @@ Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign 
 
 Este vídeo apresenta o espaço de trabalho do Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/39535?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

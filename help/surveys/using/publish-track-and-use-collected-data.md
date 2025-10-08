@@ -5,9 +5,9 @@ description: Saiba como publicar, rastrear e usar dados coletados em uma pesquis
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '855'
 ht-degree: 98%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 
 
-Depois que o formulário tiver sido criado, configurado e publicado, é possível compartilhar o link com o público e acompanhar as respostas.
+Depois que o formulário tiver sido criado, configurado e publicado, é possível compartilhar o link com o público-alvo e acompanhar as respostas.
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ No exemplo a seguir, queremos fazer uma oferta da Web especialmente para os cinc
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
-No workflow para construção do target, as **[!UICONTROL Survey responses]** serão configuradas da seguinte maneira:
+No fluxo de trabalho de segmentação, as **[!UICONTROL Survey responses]** serão configuradas da seguinte maneira:
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_1.png)
 
@@ -130,7 +130,7 @@ Indique as condições de filtragem para respostas clicando no link **[!UICONTRO
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
-Inicie o workflow para construção do target. O query recupera 8 destinatários.
+Inicie o fluxo de trabalho de segmentação. O query recupera 8 destinatários.
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_5.png)
 
@@ -138,11 +138,11 @@ Clique com o botão direito do mouse na transição de saída da caixa de coleç
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_6.png)
 
-Em seguida, coloque uma caixa de divisão no workflow para recuperar os 5 destinatários com a pontuação mais alta.
+Em seguida, coloque uma caixa de divisão no fluxo de trabalho para recuperar os 5 destinatários com a pontuação mais alta.
 
 Edite a caixa de divisão para configurá-la:
 
-* Comece selecionando o schema adequado na guia **[!UICONTROL General]** e configure o subconjunto:
+* Comece selecionando o esquema adequado na guia **[!UICONTROL General]** e configure o subconjunto:
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
@@ -158,8 +158,8 @@ Edite a caixa de divisão para configurá-la:
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
-* Clique em **[!UICONTROL Finish]** e reinicie o workflow para aprovar o target.
+* Clique em **[!UICONTROL Finish]** e reinicie o fluxo de trabalho para aprovar a segmentação.
 
 ## Padronização de dados {#standardizing-data}
 
-É possível configurar processos de padronização no Adobe Campaign para dados coletados usando aliases. Permite padronizar os dados armazenados no banco de dados: para fazer isso, defina aliases nas listas discriminadas que contêm as informações relevantes. [Saiba mais](../../platform/using/managing-enumerations.md#about-enumerations)
+É possível configurar processos de padronização no Adobe Campaign para dados coletados usando aliases. Permite padronizar os dados armazenados no banco de dados: para fazer isso, defina aliases nas listas discriminadas que contêm as informações relevantes. Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.

@@ -5,10 +5,10 @@ description: Exemplos de edição de esquemas
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 2%
+source-wordcount: '671'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Para estender a tabela de destinatários do esquema **nms:recipient**, siga o procedimento abaixo:
 
-1. Crie o esquema de extensão (**cus:extension**) usando os seguintes dados:
+1. Crie o esquema de extensão (**cus:extension**) usando estes dados:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -147,7 +147,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 >
 >O comando SQL INSERT INTO no final do script permite inserir um registro de identificador definido como 0 para simular associações externas.
 
-## Tabela de extensão {#extension-table}
+## Tabela de extensões {#extension-table}
 
 Uma tabela de extensão permite estender o conteúdo de uma tabela existente em uma tabela vinculada de cardinalidade 1-1.
 
@@ -222,7 +222,7 @@ Criando o esquema da tabela de estouro (**cus:overflow**):
 
 >[!NOTE]
 >
->A chave primária da tabela de overflow é o link para a tabela a ser estendida (schema &quot;nms:recipient&quot; em nosso exemplo).
+>A chave primária da tabela de estouro é o link para a tabela a ser estendida (esquema &quot;nms:recipient&quot; em nosso exemplo).
 
 O script SQL de criação de tabela é o seguinte:
 
@@ -235,7 +235,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 Uma tabela de relação permite vincular duas tabelas com cardinalidade N-N. Esta tabela contém apenas as chaves estrangeiras das tabelas a serem vinculadas.
 
-Exemplo de uma tabela de relação entre grupos (**nms:group**) e destinatários (**nms:recipient**).
+Exemplo de tabela de relação entre grupos (**nms:group**) e destinatários (**nms:recipient**).
 
 Esquema Source da tabela de relacionamento:
 
@@ -335,8 +335,9 @@ A interface não exibirá um link, mas um campo. Quando os usuários escolhem es
 
 ## Tópicos relacionados
 
-* [Trabalhar com enumerações](../../platform/using/managing-enumerations.md)
+* Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 * [Introdução aos esquemas do Campaign](../../configuration/using/about-schema-edition.md)
 
 * [Atualização da estrutura do banco de dados](../../configuration/using/updating-the-database-structure.md)
+

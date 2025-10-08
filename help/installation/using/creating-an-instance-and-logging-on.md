@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 9%
@@ -72,7 +72,7 @@ Para criar uma nova instância, siga as etapas abaixo:
 
 1. Na lista suspensa **[!UICONTROL Language]**, selecione o **idioma da instância**: inglês (EUA), inglês (Reino Unido), francês ou japonês.
 
-   As diferenças entre o inglês dos EUA e o inglês do Reino Unido estão descritas na [documentação do Campaign v8 (console)](.https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui#formats).
+   As diferenças entre o inglês dos EUA e o inglês do Reino Unido estão descritas na [documentação do Campaign v8 (console)](.https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui).
 
    >[!CAUTION]
    >
