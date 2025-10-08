@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Consulta
-description: Saiba mais sobre a atividade do workflow de query
+description: Saiba mais sobre a atividade do fluxo de trabalho Consulta
 feature: Workflows, Targeting Activity, Query Editor
 hide: true
 hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '1631'
-ht-degree: 100%
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+workflow-type: tm+mt
+source-wordcount: '1630'
+ht-degree: 98%
 
 ---
 
@@ -30,11 +30,11 @@ Para obter mais informações sobre amostras de query, consulte [esta seção](q
 
 Para mais informações sobre como usar e gerenciar dados adicionais, consulte [Adicionar dados](#adding-data).
 
-O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, as restrições e os critérios de seleção do público da seguinte maneira:
+O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, as restrições e os critérios de seleção da população da seguinte maneira:
 
-1. Selecione a targeting dimension e a dimensão de filtro. Por padrão, o target é selecionado dos destinatários. A lista de filtros de restrição é igual àquelas usadas para o target de entrega.
+1. Selecione a dimensão de direcionamento e filtro. Por padrão, o target é selecionado dos destinatários. A lista de filtros de restrição é igual àquelas usadas para o direcionamento de entrega.
 
-   O targeting dimension coincide com o tipo de elemento que iremos trabalhar, por exemplo, o público alvo da operação.
+   A dimensão de direcionamento coincide com o tipo de elemento que iremos trabalhar, por exemplo, a população de destino da operação.
 
    A dimensão do filtro permite coletar esses elementos, por exemplo, informações relacionadas à pessoa alvo (contratos, liquidações completas e finais etc.).
 
@@ -42,11 +42,11 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
    ![](assets/s_user_segmentation_query_edit.png)
 
-   Um query pode ser baseado em dados a partir da transição de entrada, se necessário, selecionando **[!UICONTROL Temporary schema]** ao escolher o targeting e a dimensão de filtro.
+   Um query pode ser baseado em dados a partir da transição de entrada, se necessário, selecionando **[!UICONTROL Temporary schema]** ao escolher as dimensões de direcionamento e de filtro.
 
    ![](assets/query_temporary_table.png)
 
-1. Defina as populações por meio do assistente. Os campos a serem inseridos podem variar de acordo com o tipo de público-alvo. Você pode visualizar o público-alvo com seus critérios atuais usando a guia **[!UICONTROL Preview]**.
+1. Defina as populações por meio do assistente. Os campos a serem inseridos podem variar de acordo com o tipo de público-alvo. Você pode visualizar a população de destino com seus critérios atuais usando a guia **[!UICONTROL Preview]**.
 
    Para obter mais informações sobre como criar e usar filtros ou queries, consulte esta [seção](../../platform/using/filtering-options.md).
 
@@ -54,9 +54,9 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
 1. Se você selecionou **[!UICONTROL Filtering conditions]** na etapa 1 ou usou a opção **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]**, será necessário adicionar manualmente os critérios de filtragem posteriormente.
 
-   Você também pode adicionar condições de agrupamento de dados marcando a caixa correspondente. Para fazer isso, a dimensão de filtro deve ser diferente do targeting dimension do query. Para obter mais informações sobre agrupamento, consulte esta [seção](querying-using-grouping-management.md).
+   Você também pode adicionar condições de agrupamento de dados marcando a caixa correspondente. Para fazer isso, a dimensão de filtro deve ser diferente da dimensão de direcionamento do query. Para obter mais informações sobre agrupamento, consulte esta [seção](querying-using-grouping-management.md).
 
-   Você também pode adicionar mais critérios usando o Construtor de Expressões e combinando com as opções lógicas AND, OR e EXCEPT. Em seguida, é possível pré-visualizar o **[!UICONTROL Corresponding SQL query...]** para sua combinação de critérios. Para obter mais informações, consulte [esta seção](../../platform/using/defining-filter-conditions.md#building-expressions).
+   Você também pode adicionar mais critérios usando o Construtor de Expressões e combinando com as opções lógicas AND, OR e EXCEPT. Em seguida, é possível pré-visualizar o **[!UICONTROL Corresponding SQL query...]** para sua combinação de critérios. Para obter mais informações, consulte [esta seção](../../platform/using/about-queries-in-campaign.md).
 
    Salve seu filtro se quiser reutilizá-lo posteriormente.
 
@@ -64,7 +64,7 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
 ## Adicionar dados {#adding-data}
 
-As colunas adicionais permitem coletar informações adicionais sobre o público alvo, como, por exemplo, números de contrato, assinaturas de boletins informativos ou origem. Esses dados podem ser armazenados no banco de dados do Adobe Campaign ou em um banco de dados externo.
+As colunas adicionais permitem coletar informações adicionais sobre a população de destino, como, por exemplo, números de contrato, assinaturas de boletins informativos ou origem. Esses dados podem ser armazenados no banco de dados do Adobe Campaign ou em um banco de dados externo.
 
 O link **[!UICONTROL Add data...]** permite selecionar os dados adicionais a serem coletados.
 
@@ -92,7 +92,7 @@ Para adicionar dados do banco de dados do Adobe Campaign:
 
    Você pode adicionar:
 
-   * Um campo calculado com base nos dados obtidos do público alvo ou em um agregado (número de compras pendentes no último mês, quantidade média de um recibo, etc.). Para obter um exemplo, acesse [Selecionar dados](targeting-data.md#selecting-data).
+   * Um campo calculado com base nos dados obtidos da população de destino ou em um agregado (número de compras pendentes no último mês, quantidade média de um recibo, etc.). Para obter um exemplo, acesse [Selecionar dados](targeting-data.md#selecting-data).
    * Um novo campo, criado por meio do botão **[!UICONTROL Add]** à direita da lista de colunas de output.
 
      Também é possível adicionar uma coleção de informações, por exemplo, uma lista de contratos, as últimas 5 entregas etc. As coleções coincidem com os campos que podem ter múltiplos valores para o mesmo perfil (relação 1-N). Para obter mais informações, consulte [Editar dados adicionais](targeting-data.md#editing-additional-data).
@@ -127,7 +127,7 @@ Para adicionar uma coleção de informações vinculadas a uma população direc
 
 ## Exemplo: direcionamento em atributos de destinatários simples {#example--targeting-on-simple-recipient-attributes}
 
-No exemplo a seguir, o query busca identificar homens que moram na França com idades entre 18 e 30. Este query será usado em um workflow que visa fazer uma oferta exclusiva, por exemplo.
+No exemplo a seguir, o query busca identificar homens que moram na França com idades entre 18 e 30. Este query será usado em um fluxo de trabalho que visa fazer uma oferta exclusiva, por exemplo.
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
 1. Selecione **[!UICONTROL Filtering conditions]** na lista de tipos de filtros disponíveis.
 1. Insira os diferentes critérios para o target proposto. Os critérios são combinados usando a opção AND. Para ser incluído na seleção, os destinatários terão de cumprir as quatro condições seguintes:
 
-   * Destinatários cujo título é &quot;Sr.&quot; (também é possível encontrar pelo campo **Sexo** e selecionar **Masculino** como valor).
+   * Destinatários cujo título é &quot;Sr.&quot; (também é possível encontrar pelo campo **Gênero** e selecionar **Masculino** como valor).
    * Destinatários abaixo de 30 anos.
    * Destinatários acima de 18 anos.
    * Destinatários que vivem na França.
@@ -153,19 +153,19 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
    ![](assets/query_example_preview.png)
 
 1. Salve os filtros para usá-los posteriormente clicando em **[!UICONTROL Finish]** > **[!UICONTROL OK]**.
-1. Continue editando seu workflow adicionando outras atividades a ele. Depois de iniciado e após o término da etapa de query anterior, o número de destinatários encontrados será exibido. Você pode exibir mais detalhes usando o menu pop-up do mouse (clique com o botão direito do mouse na transição > **[!UICONTROL Display the target...]**).
+1. Continue editando seu fluxo de trabalho adicionando outras atividades a ele. Depois de iniciado e após o término da etapa de query anterior, o número de destinatários encontrados será exibido. Você pode exibir mais detalhes usando o menu pop-up do mouse (clique com o botão direito do mouse na transição > **[!UICONTROL Display the target...]**).
 
    ![](assets/query_example_result.png)
 
 ## Parâmetros de saída {#output-parameters}
 
 * tableName
-* schema
+* esquema
 * recCount
 
-Esse conjunto de três valores identifica o público alvo do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica a população de destino do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de destino, **[!UICONTROL schema]** é o esquema da população (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
-Este valor é o schema da tabela de trabalho. Esse parâmetro é válido para todas as transições com **[!UICONTROL tableName]** e **[!UICONTROL schema]**.
+Este valor é o esquema da tabela de trabalho. Esse parâmetro é válido para todas as transições com **[!UICONTROL tableName]** e **[!UICONTROL schema]**.
 
 ## Otimização das queries {#optimizing-queries}
 
@@ -197,7 +197,7 @@ A seção abaixo fornece as práticas recomendadas para otimizar as queries exec
 * Cuidado com funções como `Lower(...)`. Quando a função Lower é usada, o Index não é usado.
 * Verifique cuidadosamente as consultas usando a instrução &quot;like&quot; ou as instruções &quot;upper&quot; ou &quot;lower&quot;. Aplique &quot;Upper&quot; na entrada do usuário, não no campo do banco de dados.
 
-  Para saber mais sobre as funções, consulte [esta seção](../../platform/using/defining-filter-conditions.md#list-of-functions).
+  Para saber mais sobre as funções, consulte [esta seção](../../platform/using/about-queries-in-campaign.md).
 
 ### Dimensões de filtro {#filtering-dimensions}
 

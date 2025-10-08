@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+workflow-type: tm+mt
 source-wordcount: '947'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -32,20 +32,20 @@ O assistente de exportação é exibido após a criação de um novo trabalho de
 Ao iniciar o assistente de exportação, primeiro é necessário selecionar um modelo. Como exemplo, para configurar a exportação de destinatários que se registraram recentemente, siga as etapas abaixo:
 
 1. Selecione a pasta **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**.
-1. Clique em **Novo** e em **Exportar** para criar o template de exportação.
+1. Clique em **New** e em **Export** para criar o modelo de exportação.
 
    ![](assets/s_ncs_user_export_wizard01.png)
 
 1. Clique na seta à direita do campo **[!UICONTROL Export template]** para selecionar o modelo ou clique em **[!UICONTROL Select link]** para navegar na árvore.
 
-   O modelo nativo é **[!UICONTROL New text export]**. Este template não deve ser modificado, mas você pode duplicá-lo para configurar um novo template. Por padrão, os modelos de exportação são salvos no nó **[!UICONTROL Resources > Templates > Job templates]**.
+   O modelo nativo é **[!UICONTROL New text export]**. Este modelo não deve ser modificado, mas você pode duplicá-lo para configurar um novo modelo. Por padrão, os modelos de exportação são salvos no nó **[!UICONTROL Resources > Templates > Job templates]**.
 
 1. Insira um nome para a exportação no campo **[!UICONTROL Label]**. Você pode adicionar uma descrição.
 1. Selecione o tipo de exportação. Existem dois tipos possíveis de exportação: **[!UICONTROL Simple export]** para exportar apenas um arquivo e **[!UICONTROL Multiple export]** para exportar vários arquivos em uma única execução, de um ou mais tipos de documento de origem.
 
 ## Etapa 2 - Tipo de arquivo a ser exportado {#step-2---type-of-file-to-export}
 
-Selecione o tipo de documento a ser exportado, ou seja, o schema dos dados para exportar.
+Selecione o tipo de documento a ser exportado, ou seja, o esquema dos dados para exportar.
 
 Por padrão, quando a exportação é iniciada a partir do nó **[!UICONTROL Jobs]**, os dados são obtidos a partir da tabela de destinatários. Quando a exportação é iniciada a partir de uma lista de dados (do menu **[!UICONTROL right click > Export]**), a tabela à qual os dados pertencem é automaticamente preenchida no campo **[!UICONTROL Document type]**.
 
@@ -85,7 +85,7 @@ Selecione os campos a serem exportados. Para fazer isso:
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Clique no botão **[!UICONTROL Add]** para chamar as funções. Para obter mais informações, consulte a [Lista de funções](../../platform/using/defining-filter-conditions.md#list-of-functions).
+1. Clique no botão **[!UICONTROL Add]** para chamar as funções. Para obter mais informações, consulte a [Lista de funções](../../platform/using/about-queries-in-campaign.md).
 
 ## Etapa 5 - Classificar colunas {#step-5---sorting-columns}
 

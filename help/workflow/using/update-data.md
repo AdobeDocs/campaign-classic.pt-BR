@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Atualizar dados
-description: Saiba mais sobre a atividade de workflow Atualizar dados
+description: Saiba mais sobre a atividade de fluxo de trabalho Atualizar dados
 feature: Workflows, Targeting Activity, Data Management
 hide: true
 hidefromtoc: true
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ O campo **[!UICONTROL Operation type]** permite escolher o processo que deve ser
 * **[!UICONTROL Insert or update]**: adiciona os dados ou os atualiza quando já foram adicionados.
 * **[!UICONTROL Insert]**: apenas adiciona dados.
 * **[!UICONTROL Update]**: apenas atualiza os dados.
-* **[!UICONTROL Update and merge collections]**: atualiza os dados e escolhe um registro principal e, em seguida, vincula os elementos ligados às duplicações neste registro principal. As duplicatas podem ser excluídas sem criar elementos anexados órfãos.
+* **[!UICONTROL Update and merge collections]**: atualiza os dados e escolhe um registro principal e, em seguida, vincula os elementos ligados às duplicações neste registro principal. Os duplicados podem ser excluídos sem criar elementos anexados órfãos.
 * **[!UICONTROL Delete]**: excluir dados.
 
 ![](assets/s_advuser_update_data_1.png)
@@ -67,22 +67,22 @@ Os campos **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONT
 
 A atualização de registro é executada somente para registros contendo pelo menos uma diferença. Se os valores forem iguais, nenhuma atualização será executada.
 
-O link **[!UICONTROL Advanced parameters]** permite especificar as opções adicionais para lidar com a atualização de dados, assim como gerenciar as duplicatas. Também é possível:
+O link **[!UICONTROL Advanced parameters]** permite especificar as opções adicionais para lidar com a atualização de dados, assim como gerenciar os duplicados. Também é possível:
 
 * **[!UICONTROL Disable automatic key management]**.
 * **[!UICONTROL Disable audit]**.
 * **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**. Essa opção é selecionada automaticamente por padrão.
 * **[!UICONTROL Update all columns with matching names]**.
 * Especifique condições que consideram elementos de origem usando uma expressão no **[!UICONTROL Enabled if]**.
-* Especifique condições que consideram duplicatas usando uma expressão. Se selecionar a opção **[!UICONTROL Ignore records which concern the same target]**, somente o primeiro item na lista de expressões será considerado.
+* Especifique condições que consideram duplicados usando uma expressão. Se selecionar a opção **[!UICONTROL Ignore records which concern the same target]**, somente o primeiro item na lista de expressões será considerado.
 
 **[!UICONTROL Generate an outbound transition]**
 
-Cria uma transição de saída que será ativada no final da execução. A atualização normalmente sinaliza o final de um workflow para construção do target e, portanto, a opção não é ativada por padrão.
+Cria uma transição de saída que será ativada no final da execução. A atualização normalmente sinaliza o final de um fluxo de trabalho de segmentação e, portanto, a opção não é ativada por padrão.
 
 **[!UICONTROL Generate an outbound transition for the rejects]**
 
-Cria uma transição de saída contendo registros que não foram processados corretamente após a atualização (por exemplo, se houver uma duplicata). A atualização geralmente marca o final de um workflow para construção do target e, portanto, a opção não é ativada por padrão.
+Cria uma transição de saída contendo registros que não foram processados corretamente após a atualização (por exemplo, se houver um duplicado). A atualização geralmente marca o final de um fluxo de trabalho de segmentação e, portanto, a opção não é ativada por padrão.
 
 ## Atualizar e mesclar coleções {#updating-and-merging-collections}
 
@@ -90,7 +90,7 @@ Atualizar dados e mesclar coleções permite atualizar os dados contidos em um r
 
 >[!NOTE]
 >
->Essa opção também permite processar referências a registros secundários de tabelas de trabalho do workflow (targetWorkflow), entregas (targetDelivery) e listas (targetList). Se precisar, esses links aparecem na lista onde os campos e coleções são selecionados.
+>Essa opção também permite processar referências a registros secundários de tabelas de trabalho do fluxo de trabalho (targetWorkflow), entregas (targetDelivery) e listas (targetList). Se precisar, esses links aparecem na lista onde os campos e coleções são selecionados.
 
 1. Selecione a operação **[!UICONTROL Update and merge collections]**.
 
@@ -102,7 +102,7 @@ Atualizar dados e mesclar coleções permite atualizar os dados contidos em um r
 
 1. Selecione as coleções a serem movidas para o registro primário e os campos a serem atualizados.
 
-   Insira as regras que se aplicam a eles assim que um ou vários registros secundários são identificados. Para fazer isso, é possível usar o Construtor de expressões. Para obter mais informações, consulte esta [seção](../../platform/using/defining-filter-conditions.md#building-expressions). Por exemplo, ao especificar que é o valor atualizado mais recentemente de todos os registros diferentes que devem ser mantidos.
+   Insira as regras que se aplicam a eles assim que um ou vários registros secundários são identificados. Para fazer isso, é possível usar o Construtor de expressões. Para obter mais informações, consulte esta [seção](../../platform/using/about-queries-in-campaign.md). Por exemplo, ao especificar que é o valor atualizado mais recentemente de todos os registros diferentes que devem ser mantidos.
 
    Em seguida, insira as condições a serem consideradas na regra.
 
@@ -118,11 +118,11 @@ Os dados de registros secundários são associados ao registro principal se as r
 
 ## Exemplo: Atualizar os dados após um enriquecimento {#example--update-data-following-an-enrichment}
 
-A seção do caso de uso [Etapa 2: Gravação de dados enriquecidos na seção da tabela &#39;Purchases&#39;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) que detalha a criação de uma lista de recapitulação e oferece um exemplo de atualização de dados após uma atividade de enriquecimento.
+A seção do caso de uso [Etapa 2: Gravação de dados enriquecidos na seção da tabela “Compras”](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) que detalha a criação de uma lista de recapitulação e oferece um exemplo de atualização de dados após uma atividade de enriquecimento.
 
 ## Parâmetros de entrada {#input-parameters}
 
 * tableName
-* schema
+* esquema
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.

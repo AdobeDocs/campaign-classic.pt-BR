@@ -5,10 +5,10 @@ description: Editar conteúdo
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 100%
+source-wordcount: '1226'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Para adicionar uma condição de visibilidade, selecione um bloco e insira a con
 
 >[!NOTE]
 >
->A edição de expressão avançada é apresentada [nesta página](../../platform/using/defining-filter-conditions.md#list-of-functions).
+>A edição de expressão avançada é apresentada [nesta página](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -56,7 +56,7 @@ Você pode vincular campos de banco de dados à zona de entrada, ao botão de op
 
 >[!NOTE]
 >
->Os campos padrão são aqueles no schema de armazenamento da aplicação web.
+>Os campos padrão são aqueles no esquema de armazenamento da aplicação web.
 
 O **campo** zona de entrada permite selecionar um campo de banco de dados com o campo de formulário.
 
@@ -68,7 +68,7 @@ A opção de **campo Obrigatório** permite autorizar a aprovação da página s
 
 Para botões de opção e caixas de seleção, é **necessária uma configuração adicional**.
 
-Na verdade, se o template usado não contiver um valor por padrão, você deve preenchê-lo no editor.
+Na verdade, se o modelo usado não contiver um valor por padrão, você deve preenchê-lo no editor.
 
 Para fazer isso:
 

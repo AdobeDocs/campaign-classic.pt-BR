@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 92%
+source-wordcount: '963'
+ht-degree: 82%
 
 ---
 
@@ -59,7 +59,7 @@ Você pode escolher entre cinco idiomas diferentes:
 * Alemão
 * Japonês
 
-O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Para obter mais informações sobre como criar uma instância, consulte esta [página](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -110,11 +110,22 @@ O explorer do Adobe Campaign é acessível por meio do ícone da barra de ferram
 
 Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na documentação do Campaign v8 (console):
 
-* [Visão geral da interface do usuário do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Visão geral da interface do usuário do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Configurações da interface do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
 * [Gerenciar pastas e modos de exibição no explorador](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+
+
+## Filtrar dados {#filters}
+
+A filtragem de dados é o processo de restringir um conjunto de dados somente aos registros que correspondem a critérios específicos. Esse subconjunto pode ser usado para ações direcionadas (como atualizações ou criação de público-alvo) ou para análise.
+
+Ao navegar pela Campanha, os dados são exibidos em listas. Aplique filtros incorporados para acessar rapidamente um subconjunto definido, como endereços em quarentena, destinatários não direcionados ou registros em um intervalo de idade ou data de criação específico. Além disso, você pode criar filtros personalizados, salvá-los para uso futuro e compartilhá-los com outros usuários do Campaign.
+
+>[!NOTE]
+>
+>Para saber como acessar, projetar e compartilhar filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 
 ## Trabalhar com listas {#manage-and-customize-lists}
@@ -123,7 +134,7 @@ No console do cliente do Campaign, os dados são exibidos em listas. Você pode 
 
 >[!NOTE]
 >
->Para saber como gerenciar e personalizar listas no Adobe Campaign, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+>Para saber como gerenciar e personalizar listas, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 ## Gerenciar enumerações{#managing-enumerations}
 
@@ -137,4 +148,4 @@ Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign 
 
 Este vídeo apresenta o espaço de trabalho do Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/39535?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
