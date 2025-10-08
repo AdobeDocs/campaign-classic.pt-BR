@@ -188,9 +188,9 @@ A seção abaixo fornece as práticas recomendadas para otimizar as queries exec
 
   Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-  ![](assets/do-not-localize/v7.jpeg)[Documentação do Campaign v7](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg) [Documentação do Campaign v7](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png)[Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
+  ![](assets/do-not-localize/v8.png) [Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
 
 ### Funções {#functions}
 
