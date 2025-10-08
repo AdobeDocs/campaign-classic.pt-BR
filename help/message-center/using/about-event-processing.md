@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '693'
-ht-degree: 100%
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
+workflow-type: tm+mt
+source-wordcount: '697'
+ht-degree: 97%
 
 ---
 
@@ -51,13 +51,13 @@ Eventos gerados pelo sistema de informações podem ser coletados usando dois mo
 
 * A criação de um fluxo de trabalho permite recuperar eventos importando arquivos ou por meio de um gateway SQL (com a opção [Federated Data Access](../../installation/using/about-fda.md)).
 
-Depois que são coletados, os eventos são divididos por workflows técnicos entre as filas em tempo real e em lote das instâncias de execução enquanto aguardam a vinculação a um modelo de mensagem.
+Depois que são coletados, os eventos são divididos por fluxos de trabalho técnicos entre as filas em tempo real e em lote das instâncias de execução enquanto aguardam a vinculação a um modelo de mensagem.
 
 ![](assets/messagecenter_events_queues_001.png)
 
 >[!NOTE]
 >
->Na instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações, pois isso pode causar problemas de direito de acesso. Para obter mais informações sobre como configurar uma pasta como visualização, consulte [esta seção](../../platform/using/access-management-folders.md).
+>Na instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações, pois isso pode causar problemas de direito de acesso. Para obter mais informações sobre como configurar uma pasta como exibição, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 ## Roteamento para um modelo {#routing-towards-a-template}
 
@@ -77,7 +77,7 @@ Por padrão, o roteamento é baseado nas seguintes informações:
 
 * O tipo de evento
 * O canal a ser usado (por padrão: email)
-* O template da entrega mais recente, com base na data da publicação
+* O modelo da entrega mais recente, com base na data da publicação
 
 ## Status do evento {#event-statuses}
 
@@ -97,8 +97,8 @@ O **Histórico de Eventos**, em **[!UICONTROL Event history]** > **[!UICONTROL M
 
 Se a entrega de uma mensagem em um canal específico falhar, o Adobe Campaign poderá reenviar a mensagem usando um canal diferente. Por exemplo, se uma entrega no canal SMS falhar, a mensagem será reenviada usando o canal de email.
 
-Para fazer isso, é necessário configurar um workflow que recrie todos os eventos com o status **Delivery error** e atribuir um canal diferente a eles.
+Para fazer isso, é necessário configurar um fluxo de trabalho que recrie todos os eventos com o status **Delivery error** e atribuir um canal diferente a eles.
 
 >[!CAUTION]
 >
->Essa etapa só poderá ser executada usando um workflow e, portanto, é reservada a usuários experts. Para obter mais informações, entre em contato com o executivo da sua conta da Adobe.
+>Essa etapa só poderá ser executada usando um fluxo de trabalho e, portanto, é reservada a usuários experts. Para obter mais informações, entre em contato com o executivo da sua conta da Adobe.

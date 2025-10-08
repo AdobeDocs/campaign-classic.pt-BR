@@ -6,10 +6,10 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '2019'
-ht-degree: 99%
+source-wordcount: '2020'
+ht-degree: 97%
 
 ---
 
@@ -271,7 +271,7 @@ Para fazer isso:
 
 1. Clique com o botão direito do mouse na pasta onde deseja adicionar a exibição.
 1. Em **[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**, selecione a exibição que deseja adicionar.
-1. Ao adicionar a pasta à árvore, certifique-se de configurá-la como uma exibição, para que ela exiba todos os fluxos de trabalho, qualquer que seja a pasta de origem. Para obter mais informações sobre como configurar as exibições, consulte [esta seção](../../platform/using/access-management-folders.md).
+1. Depois que a pasta for adicionada à árvore, certifique-se de configurá-la como uma visualização, para que ela exiba todos os workflows, qualquer que seja a pasta de origem. Para obter mais informações sobre como configurar exibições, consulte [esta seção](../../platform/using/about-adobe-campaign-classic.md).
 
 Além dessas exibições, é possível configurar as pastas de filtros que permitem filtrar a lista de fluxos de trabalho de acordo com o status de execução. Para fazer isso:
 
