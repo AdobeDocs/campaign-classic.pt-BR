@@ -63,7 +63,7 @@ Agora, você pode acessar o [Workspace do Adobe Campaign](../../platform/using/a
 
 ![](assets/s_ncs_user_connections_management.png)
 
-Saiba como configurar conexões na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}.
+Saiba como configurar conexões na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}.
 
 ## Operadores e permissões {#operators-and-permissions}
 

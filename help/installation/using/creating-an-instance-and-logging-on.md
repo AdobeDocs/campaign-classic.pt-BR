@@ -72,7 +72,7 @@ Para criar uma nova instância, siga as etapas abaixo:
 
 1. Na lista suspensa **[!UICONTROL Language]**, selecione o **idioma da instância**: inglês (EUA), inglês (Reino Unido), francês ou japonês.
 
-   As diferenças entre o inglês dos EUA e o inglês do Reino Unido estão descritas na [documentação do Campaign v8 (console)](.https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#formats).
+   As diferenças entre o inglês dos EUA e o inglês do Reino Unido estão descritas na [documentação do Campaign v8 (console)](.https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui#formats).
 
    >[!CAUTION]
    >
