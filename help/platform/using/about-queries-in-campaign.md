@@ -2,15 +2,14 @@
 product: campaign
 title: Sobre query no Campaign
 description: Sobre query no Campaign
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: 0bbe3bd199c664d30513a0c50203248d703451cd
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,10 +28,10 @@ O Editor de consultas genérico centraliza todos os recursos de consulta. Ela pe
 
 >[!TAB Consultar o banco de dados]
 
-As etapas para criar uma consulta estão detalhadas na **[documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
+As etapas para criar uma consulta estão detalhadas na **[documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
 
 
 >[!TAB Adicionar uma consulta em um fluxo de trabalho]
@@ -43,9 +42,9 @@ Saiba mais sobre as principais etapas relacionadas à criação de consultas no 
 
 >[!TAB Condições de filtro]
 
-Para criar sua query, você deve selecionar as condições de filtragem no editor de query. Os recursos e casos de uso disponíveis estão detalhados na **[documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+Para criar sua query, você deve selecionar as condições de filtragem no editor de query. Os recursos e casos de uso disponíveis estão detalhados na **[documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
 
 >[!ENDTABS]
 
