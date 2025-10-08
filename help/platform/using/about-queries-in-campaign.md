@@ -29,10 +29,10 @@ O Editor de consultas genérico centraliza todos os recursos de consulta. Ela pe
 
 >[!TAB Consultar o banco de dados]
 
-As etapas para criar uma consulta estão detalhadas na **[documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
+As etapas para criar uma consulta estão detalhadas na **[documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
 
 
 >[!TAB Adicionar uma consulta em um fluxo de trabalho]
@@ -43,9 +43,9 @@ Saiba mais sobre as principais etapas relacionadas à criação de consultas no 
 
 >[!TAB Condições de filtro]
 
-Para criar sua query, você deve selecionar as condições de filtragem no editor de query. Os recursos e casos de uso disponíveis estão detalhados na **[documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+Para criar sua query, você deve selecionar as condições de filtragem no editor de query. Os recursos e casos de uso disponíveis estão detalhados na **[documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
 
 >[!ENDTABS]
 
