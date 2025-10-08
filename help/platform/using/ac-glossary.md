@@ -6,10 +6,10 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '6002'
-ht-degree: 99%
+source-wordcount: '6010'
+ht-degree: 98%
 
 ---
 
@@ -352,7 +352,7 @@ Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign 
 A visualização do Explorer é uma exibição hierárquica das pastas que contêm artefatos e dados do Adobe Campaign. Observe que o sistema de pastas no Adobe Campaign não funciona como uma visualização de árvore típica, em que cada pasta retém dados de um tipo específico, como Entregas, Fluxos de trabalho ou Ofertas.
 
 
-Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -399,7 +399,7 @@ Saiba mais sobre [Dimensão do filtro](../../workflow/using/building-a-workflow.
 
 Uma pasta é um item de visualização do Explorer que mantém registros de banco de dados de um tipo de dados específico. A exceção é o tipo Pasta genérica usado como um elemento organizador que não contém dados propriamente dito, apenas outras pastas.
 
-Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -407,7 +407,7 @@ Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe
 
 A Exibição de pastas é um tipo de pasta especial do Explorer usada para exibir todos os registros de um tipo de dados selecionado, independentemente da pasta à qual pertence. As Exibições de pastas são usadas como uma ferramenta administrativa para gerenciar dados particionados ou que são distribuídos entre muitas pastas.
 
-Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 +++
 
 +++**Formulários**
@@ -560,7 +560,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 A árvore de navegação é a navegação principal no modo de exibição Explorer do Adobe Campaign. A árvore de navegação funciona como um navegador de arquivos (por exemplo, Windows Explorer). As pastas podem conter subpastas. Selecionar um nó exibe a visualização correspondente ao nó. A visualização exibida é uma lista associada a um esquema e um formulário de entrada para editar a linha selecionada. É possível personalizar a árvore de navegação e definir permissões em pastas.
 
-Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Saiba mais sobre a interface do usuário do Campaign na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -794,7 +794,7 @@ Saiba mais sobre [Planos](../../campaign/using/setting-up-marketing-campaigns.md
 
 Filtros predefinidos são consultas que foram salvas para reutilização. O uso de filtros predefinidos aumenta a produtividade (porque são criados apenas uma vez), ajuda a criar consistência (porque todos os profissionais de marketing podem usá-los) e diminui as habilidades necessárias para o profissional de marketing, pois podem usar código ou lógica que talvez não consigam criar sozinhos.
 
-Saiba mais sobre [Filtros predefinidos](../../platform/using/creating-filters.md#filtering-recipients).
+Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 +++
 
 <!--

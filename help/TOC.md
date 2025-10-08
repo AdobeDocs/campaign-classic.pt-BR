@@ -6,10 +6,10 @@ title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 97%
+source-wordcount: '2570'
+ht-degree: 96%
 
 ---
 
@@ -37,6 +37,7 @@ ht-degree: 97%
    + [Procurar e personalizar listas - OCULTO](platform/using/adobe-campaign-ui-lists.md)
    + [Enumerações - OCULTO](platform/using/managing-enumerations.md)
    + [Conectores do Campaign](platform/using/about-connectors.md)
+   + [Criar consultas no Campaign](platform/using/about-queries-in-campaign.md)
    + Perguntas frequentes {#faq}
       + [Principais perguntas](platform/using/common-questions.md)
       + [Conceitos globais](platform/using/faq-key-concepts.md)
@@ -84,10 +85,9 @@ ht-degree: 97%
          + [Práticas recomendadas de importação e exportação](platform/using/import-export-best-practices.md)
          + [Práticas recomendadas e solução de problemas do servidor SFTP](platform/using/sftp-server-usage.md)
    + Filtrar dados {#filtering-data}
-      + [Opções de filtro](platform/using/filtering-options.md)
-      + [Criar filtros](platform/using/creating-filters.md)
-      + [Caso de uso](platform/using/use-case.md)
-   + [Criar consultas no Campaign](platform/using/about-queries-in-campaign.md)
+      + [Opções de filtro - OCULTAS](platform/using/filtering-options.md)
+      + [Criar filtros - OCULTOS](platform/using/creating-filters.md)
+      + [Caso de uso - Oculto](platform/using/use-case.md)
    + [Etapas para criar um query - HIDDEN](platform/using/steps-to-create-a-query.md)
    + [Definir condições de filtro - HIDDEN](platform/using/defining-filter-conditions.md)
    + Permissões {#permissions}
@@ -375,7 +375,7 @@ ht-degree: 97%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Trabalhar com o  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurar a integração](integrations/using/configuring-the-integration.md)
-      + [Criar um informativo do [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Criar um informativo do [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Trabalhar com o  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurar a integração com o [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)

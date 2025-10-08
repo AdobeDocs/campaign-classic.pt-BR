@@ -6,10 +6,10 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '2018'
-ht-degree: 100%
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+workflow-type: tm+mt
+source-wordcount: '2019'
+ht-degree: 99%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 
 
-Esta seção apresenta informações sobre como monitorar a execução de workflows.
+Esta seção apresenta informações sobre como monitorar a execução de fluxos de trabalho.
 
-Também está disponível [nesta sessão](supervising-workflows.md#supervising-workflows), um caso de uso que detalha a criação de workflows que permite monitorar o status de um conjunto de workflows &quot;pausados&quot;, &quot;interrompidos&quot; ou &quot;com erros&quot;.
+Também está disponível [nesta sessão](supervising-workflows.md#supervising-workflows), um caso de uso que detalha a criação de fluxos de trabalho que permite monitorar o status de um conjunto de fluxos de trabalho &quot;pausados&quot;, &quot;interrompidos&quot; ou &quot;com erros&quot;.
 
 Além disso, os administradores da instância podem usar a **Trilha de auditoria** para verificar as atividades, as últimas modificações feitas e o status dos fluxos de trabalho. Para obter mais informações, consulte o [Manual de produção do Campaign Classic v7](../../production/using/audit-trail.md).
 
@@ -39,9 +39,9 @@ Quando essa opção é selecionada, as atividades executadas são exibidas em az
 
 ## Exibição de logs {#displaying-logs}
 
-O log contém o histórico ou a trilha de auditoria do workflow. Ele registra todas as ações do usuário, todas as operações executadas e erros encontrados. É possível:
+O log contém o histórico ou a trilha de auditoria do fluxo de trabalho. Ele registra todas as ações do usuário, todas as operações executadas e erros encontrados. É possível:
 
-* Selecione a guia **[!UICONTROL Tracking]** no detalhe. Esta lista contém todas as mensagens de workflow.
+* Selecione a guia **[!UICONTROL Tracking]** no detalhe. Esta lista contém todas as mensagens de fluxo de trabalho.
 
   ![](assets/new-workflow-display-log-tab.png)
 
@@ -63,13 +63,13 @@ O log contém o histórico ou a trilha de auditoria do workflow. Ele registra to
 
 >[!NOTE]
 >
->O log não é removido quando um workflow é reiniciado. Todas as mensagens são mantidas. Se desejar descartar as mensagens de uma execução anterior, você deve limpar o histórico.
+>O log não é removido quando um fluxo de trabalho é reiniciado. Todas as mensagens são mantidas. Se desejar descartar as mensagens de uma execução anterior, você deve limpar o histórico.
 
-O log exibe a lista cronológica de mensagens de execução relacionadas às atividades do workflow para construção do target.
+O log exibe a lista cronológica de mensagens de execução relacionadas às atividades do fluxo de trabalho de segmentação.
 
-* Log de uma campanha de target
+* Log de uma campanha de direcionamento
 
-  Depois da execução da campanha de target, clique na guia **[!UICONTROL Tracking]** para exibir o rastreamento de execução.
+  Depois da execução da campanha de direcionamento, clique na guia **[!UICONTROL Tracking]** para exibir o rastreamento de execução.
 
   ![](assets/s_user_segmentation_journal.png)
 
@@ -103,11 +103,11 @@ O histórico do fluxo de trabalho não é removido automaticamente: todas as men
 
 ## Esquema de fluxo de trabalho e tabelas de trabalho {#worktables-and-workflow-schema}
 
-O workflow transmite tabelas de trabalho que podem ser manipuladas por determinadas atividades. O Adobe Campaign permite, por meio de atividades de Gestão de Dados, modificar, renomear e enriquecer as colunas das tabelas de trabalho do workflow, por exemplo, para alinhar com a nomenclatura dependendo das necessidades do cliente, para coletar informações adicionais sobre o cobeneficiários de um contrato etc.
+O fluxo de trabalho transmite tabelas de trabalho que podem ser manipuladas por determinadas atividades. O Adobe Campaign permite, por meio de atividades de Gestão de Dados, modificar, renomear e enriquecer as colunas das tabelas de trabalho do fluxo de trabalho, por exemplo, para alinhar com a nomenclatura dependendo das necessidades do cliente, para coletar informações adicionais sobre o cobeneficiários de um contrato etc.
 
 Também é possível criar vínculos entre várias dimensões de trabalho e definir alterações de dimensão. Por exemplo, para cada contrato registrado no banco de dados, direcione o titular principal e use dados de cotitular nas informações adicionais.
 
-As tabelas de trabalho do workflow é excluído automaticamente quando o workflow fica passivo. Para manter uma tabela de trabalho, salve-a em uma lista por meio da atividade **[!UICONTROL List update]** (consulte [Atualização da lista](list-update.md)).
+As tabelas de trabalho do fluxo de trabalho é excluído automaticamente quando o fluxo de trabalho fica passivo. Para manter uma tabela de trabalho, salve-a em uma lista por meio da atividade **[!UICONTROL List update]** (consulte [Atualização da lista](list-update.md)).
 
 ## Gestão de erros {#managing-errors}
 
@@ -115,27 +115,27 @@ Quando ocorre um erro, o fluxo de trabalho é pausado e a atividade está sendo 
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
-No Adobe Campaign Explorer, a lista de workflows exibe uma coluna **[!UICONTROL Failed]** por padrão.
+No Adobe Campaign Explorer, a lista de fluxos de trabalho exibe uma coluna **[!UICONTROL Failed]** por padrão.
 
 ![](assets/wf-explorer_errors_col.png)
 
-Quando um workflow está com erro, os operadores pertencentes ao grupo de supervisão do workflow são notificados por email, desde que seus endereços de email estejam listados em seus perfis. Esse grupo é selecionado no campo **[!UICONTROL Supervisor(s)]** das propriedades do workflow.
+Quando um fluxo de trabalho está com erro, os operadores pertencentes ao grupo de supervisão do fluxo de trabalho são notificados por email, desde que seus endereços de email estejam listados em seus perfis. Esse grupo é selecionado no campo **[!UICONTROL Supervisor(s)]** das propriedades do fluxo de trabalho.
 
 ![](assets/wf-properties_select-supervisors.png)
 
-O conteúdo da notificação é configurado no template padrão **[!UICONTROL Workflow manager notification]** : Este modelo é selecionado na guia **[!UICONTROL Execution]** das propriedades do workflow. A notificação mostra o nome do workflow com erro e a tarefa relacionada.
+O conteúdo da notificação é configurado no template padrão **[!UICONTROL Workflow manager notification]** : Este modelo é selecionado na guia **[!UICONTROL Execution]** das propriedades do fluxo de trabalho. A notificação mostra o nome do fluxo de trabalho com erro e a tarefa relacionada.
 
 Exemplo de notificação:
 
 ![](assets/wf-notification_error-msg.png)
 
-O link permite acessar o console do Adobe Campaign no modo da Web e trabalhar no workflow com erro após fazer logon.
+O link permite acessar o console do Adobe Campaign no modo da Web e trabalhar no fluxo de trabalho com erro após fazer logon.
 
 ![](assets/wf-notification_error-console.png)
 
-Você pode configurar o workflow para que ele não pause e continue a execução em caso de erros. Para fazer isso, edite as **[!UICONTROL Properties]** do workflow e, na seção **[!UICONTROL Error management]**, selecione a opção **[!UICONTROL Ignore]** no campo **[!UICONTROL In case of error]**. Você pode então especificar o número de erros consecutivos que podem ser ignorados antes que o processo seja pausado.
+Você pode configurar o fluxo de trabalho para que ele não pause e continue a execução em caso de erros. Para fazer isso, edite as **[!UICONTROL Properties]** do fluxo de trabalho e, na seção **[!UICONTROL Error management]**, selecione a opção **[!UICONTROL Ignore]** no campo **[!UICONTROL In case of error]**. Você pode então especificar o número de erros consecutivos que podem ser ignorados antes que o processo seja pausado.
 
-Nesse caso, a tarefa com erro é anulada. Esse modo é particularmente adequado para workflows projetados para tentar novamente a campanha mais tarde (ações periódicas).
+Nesse caso, a tarefa com erro é anulada. Esse modo é particularmente adequado para fluxos de trabalho projetados para tentar novamente a campanha mais tarde (ações periódicas).
 
 ![](assets/wf_edit_properties_for_error_mgt.png)
 
@@ -147,23 +147,23 @@ Para obter mais informações sobre a solução de problemas de execução de fl
 
 ## Processamento de erros {#processing-errors}
 
-Com relação às atividades, a opção **[!UICONTROL Process errors]** exibe uma transição específica que é habilitada ao gerar um erro. Nesse caso, o workflow não entra no modo de erro e a execução continua.
+Com relação às atividades, a opção **[!UICONTROL Process errors]** exibe uma transição específica que é habilitada ao gerar um erro. Nesse caso, o fluxo de trabalho não entra no modo de erro e a execução continua.
 
 Os erros considerados são erros do sistema de arquivos (o arquivo não pôde ser movido, o diretório não pôde ser acessado etc.).
 
 Essa opção não processa erros relacionados à configuração de atividade, ou seja, valores inválidos. Erros relacionados à configuração com falha não permitirão essa transição (o diretório não existe, etc.).
 
-Se um workflow está pausado (manualmente ou automaticamente após um erro), o botão **[!UICONTROL Start]** reinicia-o a partir de onde parou. A atividade incorreta (ou atividade pausada) será executada novamente. As atividades anteriores não são executadas novamente.
+Se um fluxo de trabalho está pausado (manualmente ou automaticamente após um erro), o botão **[!UICONTROL Start]** reinicia-o a partir de onde parou. A atividade incorreta (ou atividade pausada) será executada novamente. As atividades anteriores não são executadas novamente.
 
-Para executar novamente todas as atividades do workflow, use o botão **[!UICONTROL Restart]**.
+Para executar novamente todas as atividades do fluxo de trabalho, use o botão **[!UICONTROL Restart]**.
 
-Se você modificar atividades já executadas, as alterações não serão consideradas quando a execução do workflow for reiniciada.
+Se você modificar atividades já executadas, as alterações não serão consideradas quando a execução do fluxo de trabalho for reiniciada.
 
-Se você modificar atividades não executadas, elas serão consideradas quando a execução do workflow for reiniciada.
+Se você modificar atividades não executadas, elas serão consideradas quando a execução do fluxo de trabalho for reiniciada.
 
-Se você modificar atividades em pausa, as alterações não serão consideradas corretamente quando o workflow for reiniciado.
+Se você modificar atividades em pausa, as alterações não serão consideradas corretamente quando o fluxo de trabalho for reiniciado.
 
-Se possível, recomendamos reiniciar completamente o workflow após realizar as modificações.
+Se possível, recomendamos reiniciar completamente o fluxo de trabalho após realizar as modificações.
 
 ## Supervisão de instância {#instance-supervision}
 
@@ -173,29 +173,29 @@ Para acessar essa página, acesse a guia **[!UICONTROL Monitoring]** e clique no
 
 ![](assets/wf-monitoring_from-homepage.png)
 
-Para exibir todos os workflows, clique no link **[!UICONTROL Workflows]**. Use a lista suspensa para exibir os workflows na plataforma com base em seu estado.
+Para exibir todos os fluxos de trabalho, clique no link **[!UICONTROL Workflows]**. Use a lista suspensa para exibir os fluxos de trabalho na plataforma com base em seu estado.
 
 ![](assets/wf-monitoring_edit-wf.png)
 
-Clique no link em um workflow com erros para abri-lo e visualizar seu log.
+Clique no link em um fluxo de trabalho com erros para abri-lo e visualizar seu log.
 
 ![](assets/wf-monitoring_edit-task-wf.png)
 
 ## Evitar várias execuções simultâneas {#preventing-simultaneous-multiple-executions}
 
-Um único workflow pode ter várias execuções ativas ao mesmo tempo. Isso deve ser evitado em alguns casos.
+Um único fluxo de trabalho pode ter várias execuções ativas ao mesmo tempo. Isso deve ser evitado em alguns casos.
 
-Por exemplo, você pode ter um scheduler acionando a execução do workflow a cada hora, mas, às vezes, a execução do workflow inteiro demora mais de uma hora. Talvez você queira ignorar a execução se o workflow já estiver em execução.
+Por exemplo, você pode ter um scheduler acionando a execução do fluxo de trabalho a cada hora, mas, às vezes, a execução do fluxo de trabalho inteiro demora mais de uma hora. Talvez você queira ignorar a execução se o fluxo de trabalho já estiver em execução.
 
-Se você tiver uma atividade de sinal no início do workflow, talvez queira ignorar o sinal se o workflow estiver em execução.
+Se você tiver uma atividade de sinal no início do fluxo de trabalho, talvez queira ignorar o sinal se o fluxo de trabalho estiver em execução.
 
 O princípio geral é o seguinte:
 
 ![](assets/workflow-reentrancy-protection-principle.png)
 
-A solução é usar uma variável de instância. As variáveis de instância são compartilhadas por todas as execuções paralelas dos workflows.
+A solução é usar uma variável de instância. As variáveis de instância são compartilhadas por todas as execuções paralelas dos fluxos de trabalho.
 
-Um exemplo de workflow de teste simples:
+Um exemplo de fluxo de trabalho de teste simples:
 
 ![](assets/wkf_simultaneous_execution1.png)
 
@@ -221,8 +221,8 @@ instance.vars.isRunning = false
 
 Observe que:
 
-* Você pode verificar o valor atual da variável da instância por meio da guia **Variáveis** nas **Propriedades** do workflow.
-* As variáveis de instância são redefinidas quando você reinicia um workflow.
+* Você pode verificar o valor atual da variável da instância por meio da guia **Variáveis** nas **Propriedades** do fluxo de trabalho.
+* As variáveis de instância são redefinidas quando você reinicia um fluxo de trabalho.
 * Em JavaScript, um valor indefinido é falso em um teste, permitindo testar a variável da instância mesmo antes de ter inicializado.
 * Você pode monitorar as atividades que não são processadas devido a este mecanismo ao adicionar uma instrução de log ao script de inicialização do final &quot;nenhum&quot;.
 
@@ -234,34 +234,34 @@ Nesta seção é apresentado um caso de uso: [Coordenação de atualizações de
 
 ## Manutenção do banco de dados {#database-maintenance}
 
-Os workflows usam muitas tabelas de trabalho que consomem espaço e acabam reduzindo o desempenho da plataforma inteira se não houver manutenção. Para saber mais sobre a manutenção de banco de dados, consulte esta [seção](../../production/using/tables-to-maintain.md).
+Os fluxos de trabalho usam muitas tabelas de trabalho que consomem espaço e acabam reduzindo o desempenho da plataforma inteira se não houver manutenção. Para saber mais sobre a manutenção de banco de dados, consulte esta [seção](../../production/using/tables-to-maintain.md).
 
-O workflow de **limpeza do banco de dados** pode ser acessado por meio do nó **Administração > Produção > Workflows técnicos**, permite excluir dados obsoletos para evitar o crescimento exponencial do banco de dados. O workflow é acionado automaticamente sem a intervenção do usuário. Consulte o [Manual de produção do Campaign Classic v7](../../production/using/database-cleanup-workflow.md).
+O fluxo de trabalho de **limpeza do banco de dados** pode ser acessado por meio do nó **Administração > Produção > Fluxos de trabalho técnicos**, permite excluir dados obsoletos para evitar o crescimento exponencial do banco de dados. O fluxo de trabalho é acionado automaticamente sem a intervenção do usuário. Consulte o [Manual de produção do Campaign Classic v7](../../production/using/database-cleanup-workflow.md).
 
-Você também pode criar workflows técnicos específicos para limpar o consumo de espaço desnecessário de dados. Consulte o [Manual de produção do Campaign Classic v7](../../production/using/application-objects.md) e esta [seção](#purging-the-logs).
+Você também pode criar fluxos de trabalho técnicos específicos para limpar o consumo de espaço desnecessário de dados. Consulte o [Manual de produção do Campaign Classic v7](../../production/using/application-objects.md) e esta [seção](#purging-the-logs).
 
-## Manuseio de workflows pausados {#handling-of-paused-workflows}
+## Manuseio de fluxos de trabalho pausados {#handling-of-paused-workflows}
 
-Por padrão, se um workflow estiver pausado, suas tabelas de trabalho nunca serão apagadas. A partir do build 8880, os workflows pausados por muito tempo são interrompidos automaticamente e suas tabelas de trabalho são removidas. Esse comportamento é acionado da seguinte maneira:
+Por padrão, se um fluxo de trabalho estiver pausado, suas tabelas de trabalho nunca serão apagadas. A partir do build 8880, os fluxos de trabalho pausados por muito tempo são interrompidos automaticamente e suas tabelas de trabalho são removidas. Esse comportamento é acionado da seguinte maneira:
 
 * Os fluxos de trabalho pausados por mais de sete dias aparecem como um aviso no painel de monitoramento (e na API de monitoramento) e uma notificação é enviada ao grupo supervisor.
-* O mesmo acontece toda semana, quando o workflow técnico **[!UICONTROL cleanupPausedWorkflows]** é acionado. Para obter mais informações sobre o fluxo de trabalho, consulte [esta seção](delivery.md).
-* Após quatro notificações (ou seja, um mês no estado pausado por padrão), o fluxo de trabalho é interrompido incondicionalmente. Um log aparece no fluxo de trabalho após sua interrupção. As tabelas são removidas na próxima execução **[!UICONTROL cleanup]** do workflow
+* O mesmo acontece toda semana, quando o fluxo de trabalho técnico **[!UICONTROL cleanupPausedWorkflows]** é acionado. Para obter mais informações sobre o fluxo de trabalho, consulte [esta seção](delivery.md).
+* Após quatro notificações (ou seja, um mês no estado pausado por padrão), o fluxo de trabalho é interrompido incondicionalmente. Um log aparece no fluxo de trabalho após sua interrupção. As tabelas são removidas na próxima execução **[!UICONTROL cleanup]** do fluxo de trabalho
 
 Esses períodos podem ser configurados por meio da opção NmsServer_PausedWorkflowPeriod.
 
-Os supervisores de workflow são notificados. O criador e o último usuário que modificou o workflow também são notificados. Os administradores não recebem as notificações.
+Os supervisores de fluxo de trabalho são notificados. O criador e o último usuário que modificou o fluxo de trabalho também são notificados. Os administradores não recebem as notificações.
 
-## Filtragem de workflows de acordo com seu status{#filtering-workflows-status}
+## Filtragem de fluxos de trabalho de acordo com seu status{#filtering-workflows-status}
 
-A interface do Campaign Classic permite monitorar o status de execução de todos os workflows na instância usando **visualizações** predefinidas. Para acessar essas exibições, abra o nó **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]**.
+A interface do Campaign Classic permite monitorar o status de execução de todos os fluxos de trabalho na instância usando **visualizações** predefinidas. Para acessar essas exibições, abra o nó **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]**.
 
 As seguintes visualizações estão disponíveis:
 
-* **[!UICONTROL Running]**: lista todos os workflows em execução.
-* **[!UICONTROL Paused]**: lista todos os workflows pausados.
-* **[!UICONTROL Failed]**: lista todos os workflows com falha.
-* **[!UICONTROL Start Pending]**: lista todos os workflows que estão esperando para serem iniciados pelo processo operationMgt. Essa visualização está disponível somente com o pacote **Campanhas de marketing**. Saiba mais no [Manual de instalação do Campaign Classic v7](../../installation/using/installing-campaign-standard-packages.md)).
+* **[!UICONTROL Running]**: lista todos os fluxos de trabalho em execução.
+* **[!UICONTROL Paused]**: lista todos os fluxos de trabalho pausados.
+* **[!UICONTROL Failed]**: lista todos os fluxos de trabalho com falha.
+* **[!UICONTROL Start Pending]**: lista todos os fluxos de trabalho que estão esperando para serem iniciados pelo processo operationMgt. Essa visualização está disponível somente com o pacote **Campanhas de marketing**. Saiba mais no [Manual de instalação do Campaign Classic v7](../../installation/using/installing-campaign-standard-packages.md)).
 
 ![](assets/workflow-monitoring-views.png)
 
@@ -271,17 +271,14 @@ Para fazer isso:
 
 1. Clique com o botão direito do mouse na pasta onde deseja adicionar a exibição.
 1. Em **[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**, selecione a exibição que deseja adicionar.
-1. Ao adicionar a pasta à árvore, certifique-se de configurá-la como uma exibição, para que ela exiba todos os workflows, qualquer que seja a pasta de origem. Para obter mais informações sobre como configurar as exibições, consulte [esta seção](../../platform/using/access-management-folders.md).
+1. Ao adicionar a pasta à árvore, certifique-se de configurá-la como uma exibição, para que ela exiba todos os fluxos de trabalho, qualquer que seja a pasta de origem. Para obter mais informações sobre como configurar as exibições, consulte [esta seção](../../platform/using/access-management-folders.md).
 
-Além dessas exibições, é possível configurar as pastas de filtros que permitem filtrar a lista de workflows de acordo com o status de execução. Para fazer isso:
+Além dessas exibições, é possível configurar as pastas de filtros que permitem filtrar a lista de fluxos de trabalho de acordo com o status de execução. Para fazer isso:
 
-1. Acesse uma pasta do tipo workflow e selecione o menu **[!UICONTROL Filters]** / **[!UICONTROL Advanced filter]**.
-1. Configure o filtro para que o campo **[!UICONTROL @status]** do workflow seja igual ao estado escolhido.
+1. Acesse uma pasta do tipo fluxo de trabalho e selecione o menu **[!UICONTROL Filters]** / **[!UICONTROL Advanced filter]**.
+1. Configure o filtro para que o campo **[!UICONTROL @status]** do fluxo de trabalho seja igual ao estado escolhido.
 1. Salve e nomeie o filtro. Assim ele estará disponível diretamente na lista de filtros.
 
 ![](assets/workflow-monitoring-filter.png)
 
-Para obter mais informações, consulte esta seção.
-
-* [Criação filtros avançados](../../platform/using/creating-filters.md#creating-an-advanced-filter)
-* [Salvar filtros](../../platform/using/creating-filters.md#saving-a-filter)
+Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.

@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
-source-wordcount: '1729'
-ht-degree: 100%
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Para cada entrega, você poderá definir vários tipos de populações de destino.
 
-* **Audiência principal**: perfis que receberão mensagens. [Saiba mais](steps-defining-the-target-population.md#selecting-the-main-target)
+* **Público-alvo principal**: perfis que receberão mensagens. [Saiba mais](steps-defining-the-target-population.md#selecting-the-main-target)
 * **Prova**: destinatários de mensagens de prova, envolvidos no ciclo de validação. [Saiba mais](steps-defining-the-target-population.md#defining-a-specific-proof-target)
 * **Seed addresses**: destinatários que estão fora do target da entrega, mas receberão a entrega (somente no contexto de uma campanha de marketing). [Saiba mais](about-seed-addresses.md)
 * **Grupos de controle**: população que não receberá a entrega, usado para rastrear o comportamento e o impacto da campanha (somente no contexto de uma campanha de marketing). [Saiba mais](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
@@ -34,7 +34,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Selecione o target mapping na lista suspensa **[!UICONTROL Target mapping]**. O target mapping padrão do Adobe Campaign é **[!UICONTROL Recipients]**, com base no schema **nms:recipient**.
+1. Selecione o target mapping na lista suspensa **[!UICONTROL Target mapping]**. O target mapping padrão do Adobe Campaign é **[!UICONTROL Recipients]**, com base no esquema **nms:recipient**.
 
    Outros target mappings estão disponíveis e alguns podem ser relacionados à sua configuração específica.[Saiba mais](#select-a-target-mapping).
 
@@ -44,11 +44,11 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
    ![](assets/s_ncs_user_wizard_email02b.png)
 
-   Você poderá selecionar destinatários usando os tipos de metas definidos no banco de dados. Para usar um tipo de target, selecione-o e clique em **[!UICONTROL Next]**. Para cada target, você poderá exibir os destinatários relacionados ao clicar na guia **[!UICONTROL Preview]**. Para certos tipos de target, o botão **[!UICONTROL Refine target]** permite combinar vários critérios de definição do target.
+   Você poderá selecionar destinatários usando os tipos de direcionamento definidos no banco de dados. Para usar um tipo de target, selecione-o e clique em **[!UICONTROL Next]**. Para cada target, você poderá exibir os destinatários relacionados ao clicar na guia **[!UICONTROL Preview]**. Para certos tipos de target, o botão **[!UICONTROL Refine target]** permite combinar vários critérios de direcionamento.
 
    Os seguintes tipos de target são oferecidos por padrão:
 
-   * **[!UICONTROL Filtering conditions]**: esta opção permite que você defina uma consulta e exiba o resultado. O método para definir queries é apresentado [nesta seção](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+   * **[!UICONTROL Filtering conditions]**: esta opção permite que você defina uma consulta e exiba o resultado. Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * **[!UICONTROL Subscribers of an information service]**: esta opção permite que você selecione um boletim informativo ao qual os destinatários devem ser inscritos para receberem a entrega que está sendo criada.
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -72,7 +72,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
    * **[!UICONTROL Recipients included in a folder]**: essa opção permite que você direcione aos perfis contidos em uma pasta específica da árvore.
    * **[!UICONTROL A recipient]**: essa opção permite selecionar um destinatário específico dos perfis no banco de dados.
    * **[!UICONTROL A list of recipients]**: essa opção permite direcionar a uma lista de destinatários. As listas são apresentadas [nesta seção](../../platform/using/creating-and-managing-lists.md).
-   * **[!UICONTROL User filters]**: essa opção permite que você acesse os filtros pré-configurados para usá-los como critérios de filtragem para perfis no banco de dados. Os filtros pré-configurados são apresentados [nesta seção](../../platform/using/creating-filters.md#saving-a-filter).
+   * **[!UICONTROL User filters]**: essa opção permite que você acesse os filtros pré-configurados para usá-los como critérios de filtragem para perfis no banco de dados. Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * A opção **[!UICONTROL Exclude recipients corresponding to this segment]** permite apontar os destinatários que não atendem aos critérios de target definidos. Para usar essa opção, selecione a caixa apropriada e, em seguida, aplique o direcionamento, conforme definido anteriormente, para excluir os perfis resultantes.
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -80,7 +80,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 1. Insira um nome para esse direcionamento no campo **[!UICONTROL Label]**. Por padrão, o rótulo será o do primeiro critério de direcionamento. Para uma combinação, é melhor usar um nome explícito.
 1. Clique em **[!UICONTROL Finish]** para validar o direcionamento configurado.
 
-   Os critérios de definição do target definidos são resumidos na seção central da guia de configuração do target principal. Clique em um critério para exibir seu conteúdo (configuração e visualização). Para excluir um critério, clique na cruz localizada depois de seu rótulo.
+   Os critérios de direcionamento definidos são resumidos na seção central da guia de configuração do target principal. Clique em um critério para exibir seu conteúdo (configuração e visualização). Para excluir um critério, clique na cruz localizada depois de seu rótulo.
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
@@ -117,7 +117,7 @@ Você poderá optar por excluir endereços que atingiram um determinado número 
 
 >[!NOTE]
 >
->Se dois destinatários tiverem o mesmo nome, sobrenome, código postal e cidade em uma entrega direta de mala direta, ocorrerá um erro de duplicação. A duplicata não será levada em consideração.
+>Se dois destinatários tiverem o mesmo nome, sobrenome, código postal e cidade em uma entrega direta de correspondência direta, ocorrerá um erro de duplicação. A duplicata não será levada em consideração.
 
 A guia **[!UICONTROL Exclusions]** é usada para limitar o número de mensagens.
 
@@ -133,14 +133,14 @@ As seguintes opções estão disponíveis:
 
 * **[!UICONTROL Exclude duplicate addresses during delivery]**. Essa opção está ativa por padrão: permite eliminar endereços de email duplicados durante a entrega. A estratégia aplicada pode variar de acordo com a forma como o Adobe Campaign é usado e o tipo de dados no banco de dados.
 
-  O valor padrão da opção poderá ser configurado para cada template de entrega.
+  O valor padrão da opção poderá ser configurado para cada modelo de entrega.
 
   Por exemplo:
 
-   * Entrega de um boletim informativo ou entrega eletrônica de documentos. Nenhuma exclusão de duplicatas, em alguns casos, se os dados não tiverem duplicatas nativas. Um casal que faça assinatura usando o mesmo endereço de email poderá esperar receber duas mensagens de email personalizadas específicas: uma endereçada para cada pessoa por nome. Nesse caso, essa opção poderá ser desmarcada.
-   * Entrega de uma campanha de marketing: a exclusão duplicata é essencial para evitar o envio de muitas mensagens para o mesmo destinatário. Nesse caso, essa opção poderá ser selecionada.
+   * Entrega de um boletim informativo ou entrega eletrônica de documentos. Nenhuma exclusão de duplicados, em alguns casos, se os dados não tiverem duplicados nativos. Um casal que faça assinatura usando o mesmo endereço de email poderá esperar receber duas mensagens de email personalizadas específicas: uma endereçada para cada pessoa por nome. Nesse caso, essa opção poderá ser desmarcada.
+   * Entrega de uma campanha de marketing: a exclusão dos duplicados é essencial para evitar o envio de muitas mensagens para o mesmo destinatário. Nesse caso, essa opção poderá ser selecionada.
 
-     Se você desmarcar esta opção, poderá acessar uma opção adicional: **[!UICONTROL Keep duplicate records (same identifier)]**. Ela permite autorizar várias entregas a destinatários que atendem a vários critérios de definição do target.
+     Se você desmarcar esta opção, poderá acessar uma opção adicional: **[!UICONTROL Keep duplicate records (same identifier)]**. Ela permite autorizar várias entregas a destinatários que atendem a vários critérios de direcionamento.
 
      ![](assets/s_ncs_user_wizard_email02j.png)
 
@@ -230,13 +230,13 @@ Consulte também:
 
 ## Selecionar um target mapping {#select-a-target-mapping}
 
-Por padrão, templates de entrega têm como target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient.** O Adobe Campaign oferece outros target mapping para suas entregas, para serem usados conforme suas necessidades.
+Por padrão, modelos de entrega têm como target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient**. O Adobe Campaign oferece outros target mapping para suas entregas, para serem usados conforme suas necessidades.
 
 ![](assets/delivery_select_mapping.png)
 
 Esses mappings são os seguintes:
 
-| Nome | Uso | Schema padrão |
+| Nome | Uso | Esquema padrão |
 |---|---|---|
 | Recipients | Entregar aos destinatários do banco de dados do Adobe Campaign | nms:recipient |
 | Visitantes | Entregue aos visitantes cujos perfis foram coletados por meio de referências (marketing viral) ou por meio de redes sociais (X, anteriormente conhecido como Twitter, Facebook), por exemplo. | mns:visitor |
@@ -244,13 +244,13 @@ Esses mappings são os seguintes:
 | Assinaturas do visitante | Entregar aos visitantes que são inscritos em um serviço de informações | nms:visitorSub |
 | Serviço | Publicar em uma conta do X ou em uma página do Facebook | nms:service |
 | Operadores | Entregar aos operadores do Adobe Campaign | nms:operator |
-| Arquivo externo | Entregar por meio de um arquivo que contenha todas as informações necessárias para a entrega | Nenhum schema vinculado, nenhum target inserido |
+| Arquivo externo | Entregar por meio de um arquivo que contenha todas as informações necessárias para a entrega | Nenhum esquema vinculado, nenhum target inserido |
 
 
 ## Tutorial em vídeo {#seeds-and-proofs-video}
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
->[!VIDEO](https://video.tv.adobe.com/v/35801?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
