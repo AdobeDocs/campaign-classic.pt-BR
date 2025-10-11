@@ -70,7 +70,7 @@ Para strings que nunca foram traduzidas, o campo **[!UICONTROL Text]** fica vazi
 
 ### Filtragem de strings {#filtering-strings}
 
-Por padrão, cada idioma de tradução da aplicação Web é exibido. Há dois filtros padrão: idioma e status. Clique no botão **[!UICONTROL Filters]** e, em seguida, clique em **[!UICONTROL By language or status]** para exibir as caixas suspensas correspondentes. Você também pode criar um filtro avançado. Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Por padrão, cada idioma de tradução da aplicação Web é exibido. Há dois filtros padrão: idioma e status. Clique no botão **[!UICONTROL Filters]** e, em seguida, clique em **[!UICONTROL By language or status]** para exibir as caixas suspensas correspondentes. Você também pode criar um filtro avançado. Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 

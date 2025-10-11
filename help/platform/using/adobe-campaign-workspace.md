@@ -123,7 +123,7 @@ A filtragem de dados é o processo de restringir um conjunto de dados somente ao
 
 Ao navegar pela Campanha, os dados são exibidos em listas. Aplique filtros incorporados para acessar rapidamente um subconjunto definido, como endereços em quarentena, destinatários não direcionados ou registros em um intervalo de idade ou data de criação específico. Além disso, você pode criar filtros personalizados, salvá-los para uso futuro e compartilhá-los com outros usuários do Campaign.
 
-Saiba como **acessar, criar e compartilhar filtros** na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Saiba como **acessar, criar e compartilhar filtros** na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
 ## Trabalhar com listas {#manage-and-customize-lists}

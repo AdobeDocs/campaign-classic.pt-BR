@@ -87,7 +87,7 @@ Você deve garantir que nunca venderá a terceiros as informações pessoais de 
 
    ![](assets/privacy-ccpa-6.png)
 
-1. Você pode clicar na coluna para classificar destinatários de acordo com as informações de recusa. Você também pode criar um filtro para exibir somente os destinatários que tenham optado por não participar. Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+1. Você pode clicar na coluna para classificar destinatários de acordo com as informações de recusa. Você também pode criar um filtro para exibir somente os destinatários que tenham optado por não participar. Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
    ![](assets/privacy-ccpa-7.png)
