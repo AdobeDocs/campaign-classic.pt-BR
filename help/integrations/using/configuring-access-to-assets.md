@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 100%
+source-wordcount: '499'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Esta seção detalha as etapas de configuração necessárias no Adobe Campaign 
 Para usar a integração entre o Adobe Campaign e o Experience Cloud Assets, você deve ter:
 
 * Uma organização da Adobe Experience Cloud
-* Ativação do modo de autenticação do Adobe IMS
+* Habilitação do modo de autenticação do Adobe IMS
 
 Para habilitar a conexão entre o Adobe Campaign e a Adobe Experience Cloud, configure a conexão via IMS (serviço de conexão Adobe ID). Essa configuração é detalhada no documento [Conexão pela Adobe ID. ](../../integrations/using/about-adobe-id.md) Ela inclui:
 
@@ -55,15 +55,15 @@ Para habilitar a conexão entre o Adobe Campaign e a Adobe Experience Cloud, con
 
 Para integrar o AEM Assets com o Adobe Campaign, você deve primeiro configurar a integração entre o Adobe Experience Manager e o Adobe Campaign. Esta configuração exige principalmente:
 
-* Instalação do pacote interno **[!UICONTROL AEM Integration]**
+* Instalação do pacote integrado **[!UICONTROL AEM Integration]**
 * Configuração de uma conta externa específica do Adobe Experience Manager
 
 Saiba como integrar o Adobe Campaign e o Adobe Experience Manager na [documentação detalhada](../../integrations/using/about-adobe-experience-manager.md).
 
-Depois de configurar essa integração, você pode configurar um novo template de entrega no Adobe Campaign para usar a biblioteca do AEM Assets. Para fazer isso, siga as etapas abaixo:
+Depois de configurar essa integração, você pode configurar um novo modelo de entrega no Adobe Campaign para usar a biblioteca do AEM Assets. Para fazer isso, siga as etapas abaixo:
 
-1. Crie um novo template de entrega ou duplique um existente. Para obter mais informações sobre templates de entrega, consulte [esta página](../../delivery/using/about-templates.md).
-1. Edite as **Propriedades** desse template.
+1. Crie um novo modelo de entrega ou duplique um existente. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+1. Edite as **Propriedades** desse modelo.
 1. Na guia **[!UICONTROL Advanced]**, defina o **[!UICONTROL Content editing mode]** para **DCE**.
 1. Selecione a **[!UICONTROL AEM account]** externa que você precisa usar para acessar a biblioteca dos Ativos AEM.
 
@@ -73,4 +73,4 @@ Ao inserir imagens no conteúdo de uma entrega com base nesse modelo, a opção 
 
 >[!NOTE]
 >
->Se o pacote de **[!UICONTROL Integration with the Adobe Experience Cloud]** também estiver instalado na sua instância do Adobe Campaign, você só poderá usar os ativos disponíveis na biblioteca da Adobe Experience Cloud. Para também acessar os ativos na sua biblioteca do AEM Assets, você deve sincronizar o AEM Assets e a Adobe Experience Cloud. Os ativos no AEM Assets também estarão disponíveis na biblioteca da Adobe Experience Cloud. Nesse caso, não é necessário criar um template da entrega específico.
+>Se o pacote de **[!UICONTROL Integration with the Adobe Experience Cloud]** também estiver instalado na sua instância do Adobe Campaign, você só poderá usar os ativos disponíveis na biblioteca da Adobe Experience Cloud. Para também acessar os ativos na sua biblioteca do AEM Assets, você deve sincronizar o AEM Assets e a Adobe Experience Cloud. Os ativos no AEM Assets também estarão disponíveis na biblioteca da Adobe Experience Cloud. Nesse caso, não é necessário criar um modelo da entrega específico.

@@ -7,14 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3831'
+source-wordcount: '3834'
 ht-degree: 1%
 
 ---
 
-# Lista de opções de Campaign Classic{#configuring-campaign-options}
+# Lista de opções do Campaign Classic{#configuring-campaign-options}
 
 O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as opções do Adobe Campaign. Alguns deles são incorporados ao instalar o Campaign e outros podem ser adicionados manualmente quando necessário. As opções disponíveis variam de acordo com os pacotes instalados com sua instância.
 
@@ -57,8 +57,9 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_AtivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Permite que o operador encarregado do delivery confirme o envio, se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery.</p><p> Para fazer isso, ative a opção inserindo "1" como o valor. Para desativar essa opção, digite "0".</p><p> O processo de confirmação de envio funcionará como padrão: somente o operador ou grupo de operadores designado ao envio nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o envio. Consulte <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">esta seção</a>.</p> </td> 
-   <tr> 
+   <td><p> Permite que o operador encarregado do delivery confirme o envio, se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery.</p><p> Para fazer isso, ative a opção inserindo "1" como o valor. Para desativar essa opção, digite "0".</p><p> O processo de confirmação de envio funcionará como padrão: somente o operador ou grupo de operadores designado ao envio nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o envio. Consulte <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery" target="_blank">esta seção</a>.</p> </td>
+
+<tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> O Adobe Campaign usa uma variável global "Nms_DefaultRcpSchema" para dialogar com o banco de dados do recipient padrão (nms:recipient).<br /> O valor da opção deve corresponder ao nome do esquema que corresponde à tabela do destinatário externo.<br /> </td> 
   </tr> 
@@ -208,7 +209,7 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Esta opção é usada pelo fluxo de trabalho técnico <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> ao contar o número de entregas em execução.</p>Ele permite definir o número de dias nos quais os deliveries com status inconsistente serão excluídos da contagem de deliveries em execução.</p><p>Por padrão, o valor é definido como "7", o que significa que os deliveries inconsistentes com mais de 7 dias serão excluídos.</p></td> 
+   <td><p>Esta opção é usada pelo fluxo de trabalho técnico <span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a></span> ao contar o número de entregas em execução.</p>Ele permite definir o número de dias nos quais os deliveries com status inconsistente serão excluídos da contagem de deliveries em execução.</p><p>Por padrão, o valor é definido como "7", o que significa que os deliveries inconsistentes com mais de 7 dias serão excluídos.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -364,7 +365,7 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Permite monitorar a execução do fluxo de trabalho técnico <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>. Quando ativadas (valor "1"), as informações de execução são registradas nos logs de auditoria do fluxo de trabalho.<br /> </td> 
+   <td> Permite monitorar a execução do fluxo de trabalho técnico <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a>. Quando ativadas (valor "1"), as informações de execução são registradas nos logs de auditoria do fluxo de trabalho.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -724,11 +725,11 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">AEMResourceTypeFilter</span> <br /> </td> 
-   <td> Tipos de recursos de AEM que podem ser usados no Adobe Campaign. Os valores devem ser separados por vírgulas.<br /> </td> 
+   <td> Tipos de recursos do AEM que podem ser usados no Adobe Campaign. Os valores devem ser separados por vírgulas.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Permite configurar Experience Cloud Triggers. O tipo de dados é "long text" e deve estar no formato JSON. Consulte <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Como usar Acionadores do Experience Cloud com o Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Permite configurar o Experience Cloud Triggers. O tipo de dados é "long text" e deve estar no formato JSON. Consulte <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Como usar o Experience Cloud Triggers com o Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
@@ -756,7 +757,7 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
-   <td> Opções de conector de teradata.<br /> </td> 
+   <td> Opções de conector do Teradata.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 

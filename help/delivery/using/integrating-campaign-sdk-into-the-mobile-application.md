@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 100%
+source-wordcount: '983'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->A Adobe recomenda fortemente o uso do SDK móvel da Adobe Experience Platform através da configuração da extensão do Adobe Campaign na interface da coleção de dados. O SDK móvel da Adobe Experience Platform ajuda a potencializar as soluções e os serviços da Adobe Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é realizada por meio da interface da coleção de dados para oferecer uma configuração flexível e integrações extensíveis baseadas em regras. [Saiba mais na documentação do Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}
+>A Adobe recomenda fortemente o uso do SDK móvel da Adobe Experience Platform através da configuração da extensão do Adobe Campaign na interface da coleção de dados. O SDK móvel da Adobe Experience Platform ajuda a potencializar as soluções e os serviços da Adobe Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é realizada por meio da interface da coleção de dados para oferecer uma configuração flexível e integrações extensíveis baseadas em regras. [Saiba mais na documentação do Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 Para obter o SDK do Campaign (antes conhecido como Neolane SDK), entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
@@ -48,7 +48,7 @@ Você encontrará abaixo as etapas para a integração do SDK do Campaign.
 
   A partir da versão 1.0.26 do SDK, essa permissão não é mais usada.
 
-* **No iOS**: os arquivos **libNeolaneSDK.a** e **Neolane_SDK.h** devem estar vinculados ao projeto. A partir da versão 1.0.24 do SDK, a opção **ENABLE_BITCODE** é ativada.
+* **No iOS**: os arquivos **libNeolaneSDK.a** e **Neolane_SDK.h** devem estar vinculados ao projeto. A partir da versão 1.0.24 do SDK, a opção **ENABLE_BITCODE** é habilitada.
 
   >[!NOTE]
   >
@@ -64,10 +64,10 @@ Para integrar o SDK do Campaign no aplicativo móvel, o administrador funcional 
 
   >[!NOTE]
   >
-  >Essa chave de integração é inserida no console do Adobe Campaign, na guia **[!UICONTROL Information]** do serviço dedicado ao aplicativo móvel. Consulte [Configuração de um aplicativo para dispositivos móveis no Adobe Campaign](configuring-the-mobile-application.md).
+  >Essa chave de integração é inserida no console do Adobe Campaign, na guia **[!UICONTROL Information]** do serviço dedicado ao aplicativo móvel. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
 
 * **Um URL de rastreamento**: que corresponde ao endereço do servidor de rastreamento do Adobe Campaign.
-* **Um URL de marketing**: para ativar a coleta de assinaturas.
+* **Um URL de marketing**: para habilitar a coleta de assinaturas.
 
 * **No Android**:
 

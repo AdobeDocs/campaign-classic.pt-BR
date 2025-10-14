@@ -7,10 +7,10 @@ feature: Campaigns, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: ht
-source-wordcount: '1199'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ O bloco **[!UICONTROL Browsing]** da guia **[!UICONTROL Campaigns]** oferece vá
 >
 >Para saber mais sobre a ergonomia geral do Adobe Campaign, as permissões e o gerenciamento de perfis, consulte [esta seção](../../platform/using/adobe-campaign-workspace.md).
 >
->Todas as funcionalidades relacionadas a canais e entregas são detalhadas [nesta seção](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Todas as funcionalidades relacionadas a canais e entregas são detalhadas na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ### Calendário da campanha {#campaign-calendar}
 
@@ -57,7 +57,7 @@ Você pode filtrar as informações exibidas no calendário da campanha; para is
 
 >[!NOTE]
 >
->Quando você filtrar em uma data, todas as campanhas com uma data de início posterior à data especificada e/ou com uma data final anterior à data especificada serão exibidas. Selecione datas usando os calendários à direita de cada campo.
+>Quando você filtrar em uma data, todas as campanhas com uma data inicial posterior à data especificada e/ou com uma data final anterior à data especificada serão exibidas. Selecione datas usando os calendários à direita de cada campo.
 
 Também é possível usar o campo **[!UICONTROL Search]** para filtrar os itens exibidos.
 
@@ -71,13 +71,13 @@ O Campaign permite gerenciar um conjunto de programas feitos de várias campanha
 
 Ao editar um programa, use as guias descritas abaixo para procurar e configurar.
 
-* A guia **Programação** exibe o calendário de programas de um mês, semana ou dia, dependendo da guia que você selecionar no cabeçalho do calendário.
+* A guia **Cronograma** exibe o calendário de programas de um mês, semana ou dia, dependendo da guia que você selecionar no cabeçalho do calendário.
 
   Se necessário, você pode criar uma campanha, um programa ou uma tarefa por esta página.
 
   ![](assets/s_ncs_user_interface_campaign02.png)
 
-* A guia **Editar** permite personalizar o programa: nome, datas de início e término, orçamento, documentos vinculados etc.
+* A guia **Editar** permite personalizar o programa: nome, datas inicial e final, orçamento, documentos vinculados etc.
 
   ![](assets/s_ncs_user_interface_campaign05.png)
 
@@ -116,9 +116,9 @@ Com o Adobe Campaign você pode configurar processos colaborativos para a criaç
 >
 >A configuração dos modelos de campanha é apresentada em [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
-#### Programação {#schedule}
+#### Cronograma {#schedule}
 
-Uma campanha centraliza um conjunto de entregas. Para cada campanha, a programação oferece uma visão global de todos os componentes, permitindo exibir as tarefas e entregas e acessá-los com facilidade.
+Uma campanha centraliza um conjunto de entregas. Para cada campanha, o cronograma oferece uma visão global de todos os componentes, permitindo exibir as tarefas e entregas e acessá-los com facilidade.
 
 ![](assets/campaign_planning_tab.png)
 
@@ -140,7 +140,7 @@ O link **[!UICONTROL Reports]** permite acessar os relatórios da campanha.
 
 #### Configuração {#configuration}
 
-As campanhas são criadas por meio de templates de campanha. É possível configurar templates reutilizáveis para os quais algumas opções estão selecionadas e outras configurações já estão salvas. Para cada campanha, a seguinte funcionalidade é oferecida:
+As campanhas são criadas por meio de modelos de campanha. É possível configurar modelos reutilizáveis para os quais algumas opções estão selecionadas e outras configurações já estão salvas. Para cada campanha, a seguinte funcionalidade é oferecida:
 
 * Referência de [documentos e recursos](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): é possível associar documentos a uma campanha (resumo, relatório, imagens etc.). Todos os formatos de documento são compatíveis.
 * Definir custos: para cada campanha, o Adobe Campaign permite definir [entradas de custo e estruturas de cálculo de custo](../../campaign/using/providers-stocks-and-budgets.md#defining-cost-categories) que podem ser usadas ao criar a campanha de marketing. Por exemplo: custos de impressão, uso de uma agência externa, aluguel de sala. 
@@ -154,7 +154,7 @@ As campanhas são criadas por meio de templates de campanha. É possível config
 
 ## Utilização da interface da web {#using-the-web-interface-}
 
-Você pode acessar as telas do console do Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e remessas, bem como relatórios e informações dos perfis em seu banco de dados. Este acesso não habilita a criação de registros. Dependendo dos direitos do operador, você pode visualizar e/ou agir nos dados do banco de dados. Por exemplo, você pode aprovar conteúdo de campanha e segmentação, reiniciar ou parar uma entrega etc.
+Você pode acessar as telas do console do Adobe Campaign por meio de um navegador da Internet para exibir todas as campanhas e remessas, bem como relatórios e informações dos perfis em seu banco de dados. Este acesso não habilita a criação de registros. Dependendo dos direitos do operador, você pode visualizar e/ou agir nos dados do banco de dados. Por exemplo, você pode aprovar conteúdo de campanha e direcionamento, reiniciar ou parar uma entrega etc.
 
 1. Faça logon como de costume via https://`<your instance>:<port>/view/home`.
 1. Use os menus para acessar as exibições.
@@ -180,7 +180,7 @@ Esta tabela resume as ações que você pode realizar nas campanhas a partir de 
 | Oferta | Aprovar o conteúdo e a elegibilidade da oferta<br/>Desabilitar uma oferta online |
 | Tarefa | Concluir uma tarefa<br/>Cancelar uma tarefa |
 | Recursos de marketing | Aprovar um recurso<br/>Bloquear e desbloquear um recurso |
-| Pacotes da campanha | Enviar um pacote para aprovação<br/>Aprovar ou rejeitar um pacote<br/>Cancelar um pacote |
+| Pacote de campanha | Enviar um pacote para aprovação<br/>Aprovar ou rejeitar um pacote<br/>Cancelar um pacote |
 | Pedidos da campanha | Criar um pedido<br/>Aceitar ou rejeitar um pedido <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
 | Estoque | Excluir uma linha do estoque |
 | Simulação de oferta | Iniciar e parar uma simulação |

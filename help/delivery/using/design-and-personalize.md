@@ -8,16 +8,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
-workflow-type: ht
-source-wordcount: '1287'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1307'
+ht-degree: 97%
 
 ---
 
 # Criar conteúdo personalizado {#build-personalized-content}
 
-Ao criar o conteúdo da sua mensagem, tente evitar problemas comuns que possam impedir a execução da entrega. Na maioria das vezes, possíveis erros estão relacionados à [personalização](about-personalization.md), [formatação](defining-the-email-content.md#message-content) e [imagens](defining-the-email-content.md#adding-images).
+Ao criar o conteúdo da sua mensagem, tente evitar problemas comuns que possam impedir a execução da entrega. Na maioria das vezes, possíveis erros estão relacionados à [personalização](about-personalization.md), [formatação](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"} e [imagens](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 ## Otimizar personalização {#optimize-personalization}
 
@@ -40,7 +40,7 @@ O uso incorreto de parâmetros em blocos de personalização pode ser um problem
 
 Para obter mais informações sobre blocos de personalização, consulte [esta seção](personalization-blocks.md).
 
-Você pode preparar dados de personalização em um workflow para melhorar a análise de preparação de entrega. Isso deve ser usado se os dados de personalização vierem de uma tabela através do Federated Data Access (FDA). Esta opção está descrita nesta [seção](personalization-fields.md#optimizing-personalization)
+Você pode preparar dados de personalização em um fluxo de trabalho para melhorar a análise de preparação de entrega. Isso deve ser usado se os dados de personalização vierem de uma tabela através do Federated Data Access (FDA). Esta opção está descrita nesta [seção](personalization-fields.md#optimizing-personalization)
 
 ## Criar conteúdo otimizado {#optimize-content}
 
@@ -58,7 +58,7 @@ Ao criar e-mails, lembre-se das práticas recomendadas gerais abaixo.
 
 ### Linha de assunto
 
-Trabalhe a [linha de assunto](defining-the-email-content.md#message-content) para melhorar as taxas de abertura:
+Saiba mais sobre a linha de assunto na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#sender){target="_blank"} para melhorar as taxas de abertura:
 
 * Evite assuntos muito longos. Use no máximo 50 caracteres
 
@@ -101,7 +101,7 @@ Saiba mais [nesta seção](sms-set-up.md#creating-an-smpp-external-account).
 
 **Dicas**:
 
-* Para manter todos os caracteres inalterados nas mensagens SMS, a fim de não alterar os nomes próprios por exemplo, não ative a transliteração.
+* Para manter todos os caracteres inalterados nas mensagens SMS, a fim de não alterar os nomes próprios por exemplo, não habilite a transliteração.
 
 * No entanto, se suas mensagens SMS contiverem muitos caracteres que não forem considerados pelo padrão GSM, habilite a transliteração para limitar os custos de envio das mensagens.
 
@@ -149,9 +149,9 @@ Tente tornar as imagens responsivas e redimensionáveis. Observe que isso pode t
 
 Para serem acessadas de fora, as imagens usadas em emails e recursos públicos vinculados a campanhas devem estar presentes em um servidor acessível externamente.
 
-* Você pode verificar se a configuração da instância ativa o gerenciamento de recursos públicos. [Saiba mais](../../installation/using/deploying-an-instance.md#managing-public-resources)
+* Você pode verificar se a configuração da instância habilita o gerenciamento de recursos públicos. [Saiba mais](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* No assistente de entrega, você pode importar uma página HTML que contenha imagens ou inserir imagens diretamente pelo editor de HTML por meio do ícone **[!UICONTROL Image]**. [Saiba mais](defining-the-email-content.md#adding-images)
+* No assistente de entrega, você pode importar uma página HTML que contenha imagens ou inserir imagens diretamente pelo editor de HTML por meio do ícone **[!UICONTROL Image]**. Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 * Caso as imagens não sejam exibidas, verifique se elas estão disponíveis no servidor. Para fazer isso, clique na guia Origem na entrega. Localize suas imagens e copie e cole o URL de cada imagem em um navegador da web. Caso as imagens não sejam exibidas, entre em contato com o administrador de TI ou fornecedor terceirizado e disponibilize seu conteúdo de entrega.
 
@@ -159,6 +159,6 @@ Para serem acessadas de fora, as imagens usadas em emails e recursos públicos v
 
 A Adobe recomenda visualizar a mensagem para verificar a personalização e como os destinatários verão a entrega.
 
-* No assistente de entrega, a subguia **[!UICONTROL Preview]** permite visualizar a renderização de cada conteúdo para um destinatário. Os campos de personalização e os elementos condicionais do conteúdo são substituídos pelas informações correspondentes para o perfil selecionado. [Saiba mais](defining-the-email-content.md#message-content)
+* No assistente de entrega, a subguia **[!UICONTROL Preview]** permite visualizar a renderização de cada conteúdo para um destinatário. Os campos de personalização e os elementos condicionais do conteúdo são substituídos pelas informações correspondentes para o perfil selecionado. Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 
 * Uma verificação automática de antispam é executada durante cada pré-visualização. Na subguia **[!UICONTROL Preview]**, verifique a pontuação de spam do [SpamAssassin](spamassassin.md).  Clique em **[!UICONTROL More...]** para obter mais informações sobre o aviso.  Antes disso, verifique se o SpamAssassin está instalado e configurado corretamente no servidor de aplicativos do Adobe Campaign. [Saiba mais](../../installation/using/configuring-spamassassin.md)

@@ -5,10 +5,10 @@ description: Relatórios de entrega
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1467'
-ht-degree: 99%
+source-wordcount: '1470'
+ht-degree: 98%
 
 ---
 
@@ -158,7 +158,7 @@ Esse relatório fornece todas as informações principais sobre a entrega.
 Essa seção tem dois indicadores:
 
 * **[!UICONTROL Initial population]** : Número total de destinatários alvos da entrega.
-* **[!UICONTROL Messages rejected by the rule]** : Número de endereços ignorados durante a análise ao aplicar regras de tipologia: endereço em falta, em quarentena, na lista de bloqueios, etc. Para obter mais informações sobre regras de tipologia, consulte esta [página](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Messages rejected by the rule]** : Número de endereços ignorados durante a análise ao aplicar regras de tipologia: endereço em falta, em quarentena, na lista de bloqueios, etc. Para obter mais informações sobre regras de tipologia, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 **[!UICONTROL Causes of exclusion]**
 

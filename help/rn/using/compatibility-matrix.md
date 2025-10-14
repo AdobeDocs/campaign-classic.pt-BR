@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: ht
-source-wordcount: '846'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '857'
+ht-degree: 97%
 
 ---
 
@@ -437,7 +437,7 @@ Os sistemas operacionais e navegadores a seguir são **necessários** para usar 
 
 A versão mais recente do WebView2 Runtime do Microsoft Edge é obrigatória para o console do cliente do Campaign.
 
-Baixe o Microsoft Edge WebView2 no [Site do desenvolvedor Microsoft](https://www.adobe.com/go/acc-ms-webview2-runtime-download_br).
+Baixe o Microsoft Edge WebView2 no [Site do desenvolvedor Microsoft](https://www.adobe.com/go/acc-ms-webview2-runtime-download).
 
 
 ## SDK móvel {#MobileSDK}
@@ -472,7 +472,7 @@ O SDK do Campaign foi [descontinuado](deprecated-features.md) a partir do Campai
 
 ## Navegadores {#Browsers}
 
-Os seguintes navegadores, em suas versões mais recentes, são compatíveis com o Campaign para [Acesso da web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+Os seguintes navegadores, em sua versão mais recente, são compatíveis com o Campaign para acesso à web. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html#use-the-web-interface-){target=_blank}.
 
 * Google Chrome
 * Microsoft Edge

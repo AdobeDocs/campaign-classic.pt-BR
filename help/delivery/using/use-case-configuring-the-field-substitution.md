@@ -5,10 +5,10 @@ description: 'Caso de uso: configurar a substituição de campo'
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 100%
+source-wordcount: '456'
+ht-degree: 97%
 
 ---
 
@@ -29,11 +29,11 @@ O gerente de entrega integrou um campo de personalização vinculado ao gênero 
 Para usar a substituição de campo aleatório, você deve ter:
 
 * uma entrega com um ou vários campos de personalização,
-* seed addresses cujo **schema de dados** é modificado de acordo com os campos de personalização usados na entrega.
+* seed addresses cujo **esquema de dados** é modificado de acordo com os campos de personalização usados na entrega.
 
 ## Criar uma entrega {#step-1---creating-a-delivery}
 
-As etapas para criar uma entrega estão detalhadas na seção [Criar uma entrega por email](creating-an-email-delivery.md).
+As etapas para criar uma entrega estão detalhadas na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=pt-BR){target="_blank"}.
 
 Neste exemplo, o gerenciador de entrega criou o boletim informativo.
 
@@ -41,9 +41,9 @@ Neste exemplo, o gerenciador de entrega criou o boletim informativo.
 
 ## Editar o esquema de dados dos seed addresses {#editing-the-seed-addresses-data-schema}
 
-As instruções sobre como modificar um schema de dados são detalhadas na seção .
+As instruções sobre como modificar um esquema de dados são detalhadas na seção .
 
-Neste exemplo, o schema de dados dos seed addresses pega um valor criado pelo schema de dados dos destinatários:
+Neste exemplo, o esquema de dados dos seed addresses pega um valor criado pelo esquema de dados dos destinatários:
 
 ```
  <attribute label="Favorite literary genre" length="80" name="favoriteLiteraryGenre"
@@ -52,7 +52,7 @@ Neste exemplo, o schema de dados dos seed addresses pega um valor criado pelo sc
 
 Essa enumeração permite especificar o gênero literário favorito de seus clientes.
 
-Para que essa modificação do schema de dados possa ser visualizada no **Formulário de entrada** dos seed addresses, você deve atualizá-lo. Consulte a seção [Atualizar o formulário de entrada](use-case-selecting-seed-addresses-on-criteria.md#updating-the-input-form).
+Para que essa modificação do esquema de dados possa ser visualizada no **Formulário de entrada** dos seed addresses, você deve atualizá-lo. Consulte a seção [Atualizar o formulário de entrada](use-case-selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
 ## Configuração da personalização {#configuring-personalization}
 
@@ -62,9 +62,9 @@ Para que essa modificação do schema de dados possa ser visualizada no **Formul
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Configure sua lista de entrega e seus seed addresses. Consulte [Identificar as populações alvo](steps-defining-the-target-population.md).
+1. Configure sua lista de entrega e seus seed addresses. Consulte [Identificar as populações de destino](steps-defining-the-target-population.md).
 
-   Neste exemplo, o usuário seleciona usuários cujo **gênero literário favorito** é ficção científica como o principal público alvo.
+   Neste exemplo, o usuário seleciona usuários cujo **gênero literário favorito** é ficção científica como a principal população de destino.
 
    ![](assets/dlv_seeds_usecase_26.png)
 

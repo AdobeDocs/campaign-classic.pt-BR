@@ -1,25 +1,25 @@
 ---
 product: campaign
-title: Automatizar via workflows
-description: Saiba como automatizar o gerenciamento de conteúdo por meio de workflows
+title: Automatizar via fluxos de trabalho
+description: Saiba como automatizar o gerenciamento de conteúdo por meio de fluxos de trabalho
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 100%
+source-wordcount: '1201'
+ht-degree: 93%
 
 ---
 
-# Automatizar com workflows{#automating-via-workflows}
+# Automatizar com fluxos de trabalho{#automating-via-workflows}
 
-## Atividade de gestão de conteúdo {#content-management-activity}
+## Atividade de Gerenciamento de conteúdo {#content-management-activity}
 
-A criação, edição e publicação de conteúdo pode ser automatizada usando um workflow configurado por meio da interface do cliente do Adobe Campaign.
+Criar, editar e publicar conteúdo pode ser automatizado usando um fluxo de trabalho configurado através da interface do cliente do Adobe Campaign.
 
-A atividade **Content management** é acessada pela barra de ferramentas **[!UICONTROL Tools]** do diagrama de workflow.
+A atividade **Content management** é acessada pela barra de ferramentas **[!UICONTROL Tools]** do diagrama de fluxo de trabalho.
 
 As propriedades da atividade são divididas em quatro etapas:
 
@@ -42,11 +42,11 @@ As propriedades da atividade são divididas em quatro etapas:
 
 * **Calculado por um script**
 
-  Seleciona uma instância de conteúdo com base em um template JavaScript. O código a ser avaliado permite recuperar o identificador de conteúdo.
+  Seleciona uma instância de conteúdo com base em um modelo JavaScript. O código a ser avaliado permite recuperar o identificador de conteúdo.
 
-* **Novo, criado por meio de um template de publicação**
+* **Novo, criado por meio de um modelo de publicação**
 
-  Cria um novo conteúdo por meio de um template de publicação. A instância de conteúdo será salva na pasta &quot;string&quot; preenchida.
+  Cria um novo conteúdo por meio de um modelo de publicação. A instância de conteúdo será salva na pasta &quot;string&quot; preenchida.
 
 ### Atualizar o conteúdo {#update-the-content}
 
@@ -72,7 +72,7 @@ As propriedades da atividade são divididas em quatro etapas:
 
 ### Transição {#transition}
 
-A opção **Generate an output transition** permite adicionar uma transição de saída à atividade **[!UICONTROL Content management]** para vincular uma nova atividade à execução do workflow. Após verificar essa opção, insira um rótulo para a transição.
+A opção **Generate an output transition** permite adicionar uma transição de saída à atividade **[!UICONTROL Content management]** para vincular uma nova atividade à execução do fluxo de trabalho. Após verificar essa opção, insira um rótulo para a transição.
 
 ## Exemplos {#examples}
 
@@ -82,13 +82,13 @@ O exemplo a seguir automatiza a criação e a entrega de um bloco de conteúdo.
 
 ![](assets/d_ncs_content_workflow2.png)
 
-O conteúdo é configurado através da atividade &quot;Gestão de conteúdo&quot;:
+O conteúdo é configurado através da atividade &quot;Gerenciamento de conteúdo&quot;:
 
 ![](assets/d_ncs_content_workflow3.png)
 
 Uma nova instância de conteúdo é criada por meio do modelo de publicação e da pasta de string de conteúdo.
 
-No nosso exemplo, sobrecarregamos o assunto da entrega. Ele será considerado em vez do inserido no template **[!UICONTROL Delivery]**.
+No nosso exemplo, sobrecarregamos o assunto da entrega. Ele será considerado em vez do inserido no modelo **[!UICONTROL Delivery]**.
 
 O conteúdo é preenchido automaticamente por um feed XML vindo do URL inserido:
 
@@ -101,7 +101,7 @@ O conteúdo é preenchido automaticamente por um feed XML vindo do URL inserido:
 </book>
 ```
 
-O formato de dados não corresponde ao schema de dados inserido no template de publicação (**cus:book** no nosso exemplo); o elemento **`<section>`** deve ser substituído pelo elemento **`<chapter>`**. É necessário aplicar a folha de estilos &quot;cus:book-workflow.xsl&quot; para fazer as alterações necessárias.
+O formato de dados não corresponde ao esquema de dados inserido no modelo de publicação (**cus:book** em nosso exemplo); o elemento **`<section>`** deve ser substituído pelo elemento **`<chapter>`**. É necessário aplicar a folha de estilos &quot;cus:book-workflow.xsl&quot; para fazer as alterações necessárias.
 
 Código de origem da folha de estilos XSLT usada:
 
@@ -140,7 +140,7 @@ Código de origem da folha de estilos XSLT usada:
 
 A ação final da atividade é salvar a instância de conteúdo e prosseguir para a próxima tarefa.
 
-O target é realizado por meio da atividade **Query**.
+O direcionamento é realizado por meio da atividade **Query**.
 
 Uma atividade **AND-join** é adicionada para garantir que a entrega só iniciará quando a consulta do target e as atualizações de conteúdo forem concluídas.
 
@@ -148,9 +148,9 @@ A ação da entrega é configurada por meio da atividade **Entrega**:
 
 ![](assets/d_ncs_content_workflow4.png)
 
-Uma nova ação da entrega é criada com base em um template.
+Uma nova ação da entrega é criada com base em um modelo.
 
-O template da entrega da atividade é usado para selecionar os modelos de transformação do template de publicação. A geração de conteúdo leva em consideração todos os templates HTML e Texto sem os templates da entrega ou aqueles referenciados com o mesmo que a atividade.
+O template da entrega da atividade é usado para selecionar os modelos de transformação do template de publicação. A geração de conteúdo leva em consideração todos os modelos HTML e Texto sem os modelos da entrega ou aqueles referenciados com o mesmo que a atividade.
 
 O target a ser enviado é digitado por meio do evento de entrada.
 
@@ -164,13 +164,13 @@ Este exemplo cria um bloco de conteúdo e uma publicação de arquivo de lançam
 
 ![](assets/d_ncs_content_workflow5.png)
 
-A primeira tarefa de **Gestão de conteúdo** cria uma instância de conteúdo.
+A primeira tarefa de **Gerenciamento de conteúdo** cria uma instância de conteúdo.
 
 ![](assets/d_ncs_content_workflow6.png)
 
 >[!NOTE]
 >
->A guia **[!UICONTROL Publication]** da janela dos templates de transformação deve ser preenchida com o local do target a ser gerado.
+>A guia **[!UICONTROL Publication]** da janela dos modelos de transformação deve ser preenchida com o local do target a ser gerado.
 
 Uma atividade de espera é adicionada para pausar a próxima transição por uma semana.
 
@@ -200,7 +200,7 @@ A primeira tarefa **Criar entrega** cria a ação de entrega.
 
 A atividade fork permite o início do cálculo do alvo e a criação da instância de conteúdo ao mesmo tempo.
 
-Depois que as tarefas são executadas, a caixa AND-join ativa a tarefa **Delivery** para iniciar a entrega criada anteriormente no conteúdo e definição de targeting.
+Depois que as tarefas são executadas, a caixa AND-join ativa a tarefa **Delivery** para iniciar a entrega criada anteriormente no conteúdo e direcionamento.
 
 ![](assets/d_ncs_content_workflow11.png)
 
@@ -214,11 +214,13 @@ A ação final da atividade é preparar e iniciar a entrega.
 
 ### Importar conteúdo do FTP {#importing-content-from-ftp}
 
-Se o seu conteúdo da entrega estiver disponível em um arquivo HTML localizado em servidores FTP ou SFTP, é possível carregá-los facilmente nas entregas do Adobe Campaign. Consulte [esse exemplo](../../workflow/using/loading-delivery-content.md).
+Se o seu conteúdo da entrega estiver disponível em um arquivo HTML localizado em servidores FTP ou SFTP, é possível carregá-los facilmente nas entregas do Adobe Campaign. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+
 
 ### Importar conteúdo do conector do Amazon Simple Storage Service (S3)  {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Se o conteúdo da entrega estiver localizado nos buckets do Amazon Simple Storage Service (S3), é possível carregá-los facilmente nas entregas do Adobe Campaign. Consulte [esse exemplo](../../workflow/using/loading-delivery-content.md).
+Se o conteúdo da entrega estiver localizado nos buckets do Amazon Simple Storage Service (S3), é possível carregá-los facilmente nas entregas do Adobe Campaign. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+
 
 ## Atualização semiautomática {#semi-automatic-update}
 
@@ -250,7 +252,7 @@ O método **GetAndTransform** deve ser declarado no elemento **`<enter>`** da ta
 
 A saída atualiza o conteúdo com base no caminho inserido no último parâmetro.
 
-**Exemplo**: Para ilustrar este exemplo, começamos do schema &quot;cus:book&quot;.
+**Exemplo**: para ilustrar este exemplo, começamos do esquema &quot;cus:book&quot;.
 
 Um formulário de entrada de controle de edição de atualização semiautomático é adicionado:
 
@@ -270,6 +272,6 @@ Um formulário de entrada de controle de edição de atualização semiautomáti
 
 A zona de edição permite a inserção do nome do arquivo a ser recuperado. O URL é construído com base neste nome, por exemplo: https://myserver.adobe.com/incomin/data.xml
 
-O formato dos dados a serem recuperados é o mesmo do exemplo 1 da automação do workflow. Usaremos a folha de estilos &quot;cus:book-workflow.xsl&quot; vista neste exemplo.
+O formato dos dados a serem recuperados é o mesmo do exemplo 1 da automação do fluxo de trabalho. Usaremos a folha de estilos &quot;cus:book-workflow.xsl&quot; vista neste exemplo.
 
 O resultado da execução do trabalho atualiza a instância do conteúdo do caminho &#39;.&#39;.

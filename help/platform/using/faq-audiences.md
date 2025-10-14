@@ -1,24 +1,24 @@
 ---
 product: campaign
-title: Perguntas frequentes sobre perfis e públicos
+title: Perguntas frequentes sobre perfis e públicos-alvos
 description: Perguntas frequentes sobre o Campaign Classic
 feature: Audiences, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '254'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 82%
 
 ---
 
-# Perguntas frequentes sobre perfis e públicos {#audiences-faq}
+# Perguntas frequentes sobre perfis e públicos-alvos {#audiences-faq}
 
 
 
-Saiba como direcionar uma população e gerenciar públicos no Adobe Campaign.
+Saiba como direcionar uma população e gerenciar públicos-alvos no Adobe Campaign.
 
 ## Como criar destinatários? {#how-to-create-recipients-}
 
@@ -32,12 +32,11 @@ Descubra casos de uso fáceis para [importar perfis](../../platform/using/import
 
 ## Como posso definir a população alvo de uma campanha de marketing? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
-Você pode [usar fluxos de trabalho para criar a população alvo](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) de uma campanha de marketing.
-
+Você pode usar fluxos de trabalho para criar o público-alvo de uma campanha de marketing. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#build-the-main-target-in-a-workflow.html){target="_blank"}.
 
 ## Como posso criar uma lista de perfis? {#how-can-i-create-a-list-of-profiles-}
 
-Uma lista é um conjunto estático de destinatários que pode ser direcionado em ações de entrega e atualizado durante operações de importação ou execução de workflow. Por exemplo, uma população extraída do banco de dados por uma consulta pode fornecer uma lista.
+Uma lista é um conjunto estático de destinatários que pode ser direcionado em ações de entrega e atualizado durante operações de importação ou execução de fluxo de trabalho. Por exemplo, uma população extraída do banco de dados por uma consulta pode fornecer uma lista.
 
 [Clique aqui para saber mais](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
@@ -45,9 +44,9 @@ Uma lista é um conjunto estático de destinatários que pode ser direcionado em
 
 ## Como posso excluir informações em duplicidade de uma população antes de enviar uma mensagem? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
-É possível usar um workflow para excluir informações duplicadas do público-alvo de uma entrega, evitando assim o envio repetido da mensagem a um mesmo destinatário.
+É possível usar um fluxo de trabalho para excluir informações duplicadas do público-alvo de uma entrega, evitando assim o envio repetido da mensagem a um mesmo destinatário.
 
-[Clique aqui para saber mais](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery) com um exemplo.
+Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
 
 ## Como identificar e direcionar assinantes a um informativo? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
@@ -55,4 +54,4 @@ Conheça o gerenciamento de subscrições do Campaign e saiba como [enviar uma m
 
 ## Qual é a prática recomendada para excluir perfis de uma população alvo? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-Leia [esta página](../../workflow/using/read-list.md) para saber como excluir uma lista de perfis da população alvo.
+Saiba como excluir uma lista de perfis de seu público-alvo na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.

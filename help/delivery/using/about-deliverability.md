@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
-workflow-type: ht
-source-wordcount: '654'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 99%
 
 ---
 
@@ -56,10 +56,10 @@ O Adobe Campaign fornece várias ferramentas para acompanhar e melhorar o desemp
 
 Ao configurar, projetar e testar sua mensagem, siga as práticas recomendadas mencionadas nas seções listadas abaixo. Aproveitar todos os recursos fornecidos pelo Adobe Campaign ajuda a melhorar a capacidade de entrega.
 
-* [Práticas recomendadas de entrega](delivery-best-practices.md)
+* [Práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=pt-BR){target="_blank"}.
 * [Controlar o conteúdo do email](control-message-content.md)
-* [Renderização da caixa de entrada](inbox-rendering.md)
-* [Envio de uma prova](steps-validating-the-delivery.md#sending-a-proof)
+* [Renderização da caixa de entrada  ](inbox-rendering.md)
+* [Envio de uma prova](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}
 
 ### Verificar consentimento por meio da aceitação dupla {#double-opt-in}
 

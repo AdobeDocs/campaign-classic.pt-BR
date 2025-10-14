@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Renderização da caixa de entrada no Campaign
-description: Saiba como capturar renderizações de email e disponibilizá-las em um relatório dedicado
+description: Saiba como capturar e-mail rendering e disponibilizá-los em um relatório dedicado
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 9b93603a076b007d66aad52b05e560e17e316eeb
-workflow-type: ht
-source-wordcount: '854'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '863'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Os clientes de dispositivos móveis, mensagens e webmail disponíveis para a **R
 
 >[!NOTE]
 >
->A renderização da caixa de entrada não é necessária para testar a personalização nas entregas. A personalização pode ser verificada com as ferramentas do Adobe Campaign, como **[!UICONTROL Preview]** e [Provas](steps-validating-the-delivery.md#sending-a-proof).
+>A renderização da caixa de entrada não é necessária para testar a personalização nas entregas. O Personalization pode ser verificado com as ferramentas do Adobe Campaign, como o **[!UICONTROL Preview]** e provas. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ## Ativação da renderização da caixa de entrada {#activating-inbox-rendering}
 
@@ -100,14 +100,14 @@ Normalmente, o recurso de renderização da Caixa de Entrada é usado para testa
 
 Após criar sua entrega de email e definir seu conteúdo, assim como a população alvo, siga as etapas abaixo.
 
-Para obter mais informações sobre como criar, desenvolver e segmentar uma entrega, consulte [esta seção](about-email-channel.md).
+Para obter mais informações sobre como criar, desenvolver e direcionar uma entrega, consulte [esta seção](about-email-channel.md).
 
 1. Na barra superior da entrega, clique no botão **[!UICONTROL Inbox rendering]**.
 1. Selecione **[!UICONTROL Analyze]** para iniciar o processo de captura.
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Uma prova é enviada. Você pode acessar as miniaturas de renderização nessa prova alguns minutos após o envio dos emails. Para obter mais informações sobre o envio de provas, consulte [esta seção](steps-validating-the-delivery.md#sending-a-proof).
+   Uma prova é enviada. Você pode acessar as miniaturas de renderização nessa prova alguns minutos após o envio dos emails. Para obter mais informações sobre o envio de provas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 1. Após ser enviada, a prova aparece na lista de entregas. Clique duas vezes nela.
 

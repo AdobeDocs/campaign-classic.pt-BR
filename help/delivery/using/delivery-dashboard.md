@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '1186'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 98%
 
 ---
 
@@ -34,8 +34,8 @@ Estas são as informações que você pode monitorar usando as várias guias dis
 **Tópicos relacionados:**
 
 * [Noções básicas sobre falhas de entrega](understanding-delivery-failures.md)
-* [Noções básicas sobre gestão de quarentena](understanding-quarantine-management.md)
-* [Práticas recomendadas de entrega](delivery-best-practices.md)
+* [Compreensão do gerenciamento de quarentena](understanding-quarantine-management.md)
+* [Práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=pt-BR){target="_blank"}
 * [Gerenciamento da capacidade de entrega](about-deliverability.md)
 
 ## Resumo da entrega {#delivery-summary}
@@ -64,7 +64,7 @@ Para uma entrega, você pode exibir (por exemplo) apenas os destinatários com u
 
 O link **[!UICONTROL Display the mirror page for this message...]** permite exibir a mirror page do conteúdo da entrega selecionado na lista em uma nova janela.
 
-A mirror page só está disponível para as entregas para as quais o conteúdo HTML foi definido. Para obter mais informações, consulte [Geração da mirror page](sending-messages.md#generating-the-mirror-page).
+A mirror page só está disponível para as entregas para as quais o conteúdo HTML foi definido. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=pt-BR){target="_blank"}.
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -74,7 +74,7 @@ A guia **[!UICONTROL Tracking]** lista o histórico de rastreamento dessa entreg
 
 >[!NOTE]
 >
->Se o rastreamento não estiver ativado para uma entrega, essa guia não será exibida.
+>Se o rastreamento não estiver habilitado para uma entrega, essa guia não será exibida.
 
 A configuração de rastreamento é realizada no estágio apropriado do assistente de entrega. Consulte [Como configurar links rastreados](how-to-configure-tracked-links.md).
 
@@ -98,7 +98,7 @@ A guia **[!UICONTROL Audit]** contém o log de entrega e todas as mensagens rela
 
 O botão **[!UICONTROL Refresh]** permite atualizar os dados. Use o botão **[!UICONTROL Filters]** para definir um filtro nos dados.
 
-Ícones especiais permitem identificar erros ou avisos. Consulte [Análise de entrega](steps-validating-the-delivery.md#analyzing-the-delivery).
+Ícones especiais permitem identificar erros ou avisos. Consulte esta seção na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 A subguia **[!UICONTROL Proofs]** permite visualizar a lista de provas que foram enviadas.
 
@@ -112,13 +112,13 @@ No painel de entrega, convêm verificar as mensagens processadas e os logs de en
 
 Alguns indicadores ou status podem estar incorretos ou não atualizados, isso pode ser resolvido com as seguintes soluções:
 
-* Se o status da entrega estiver incorreto, verifique se todas as aprovações necessárias foram feitas para essa entrega ou se os workflows **[!UICONTROL operationMgt]** e **[!UICONTROL deliveryMgt]** estão sendo executados sem erros. Isso também pode ser porque a entrega está usando uma afinidade não configurada na instância de envio.
+* Se o status da entrega estiver incorreto, verifique se todas as aprovações necessárias foram feitas para essa entrega ou se os fluxos de trabalho **[!UICONTROL operationMgt]** e **[!UICONTROL deliveryMgt]** estão sendo executados sem erros. Isso também pode ser porque a entrega está usando uma afinidade não configurada na instância de envio.
 
-* Se os indicadores de entrega ainda forem zero e se você estiver em uma configuração mid-sourcing, verifique o workflow técnico **[!UICONTROL Mid-sourcing (delivery counters)]**. Inicie-o se o status não for **[!UICONTROL Started]**. Você pode tentar recalcular os indicadores clicando com o botão direito do mouse na entrega relevante no gerenciador do Adobe Campaign e selecionando **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. Para obter mais informações sobre indicadores de rastreamento, consulte esta [seção](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Se os indicadores de entrega ainda forem zero e se você estiver em uma configuração mid-sourcing, verifique o fluxo de trabalho técnico **[!UICONTROL Mid-sourcing (delivery counters)]**. Inicie-o se o status não for **[!UICONTROL Started]**. Você pode tentar recalcular os indicadores clicando com o botão direito do mouse na entrega relevante no gerenciador do Adobe Campaign e selecionando **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. Para obter mais informações sobre indicadores de rastreamento, consulte esta [seção](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 * Se o contador de entrega não corresponder à sua entrega, tente recalcular os indicadores clicando com o botão direito do mouse na entrega relevante no explorador do Adobe Campaign e selecionando **[!UICONTROL Recompute delivery and tracking indicators]** > **[!UICONTROL Actions]** para sincronizar novamente. Para obter mais informações sobre indicadores de rastreamento, consulte esta [seção](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-* Se o seu contador de entrega não estiver atualizado para implantações de mid-sourcing, verifique se o workflow técnico **[!UICONTROL Mid-Sourcing (Delivery counters)]** está em execução. Para obter mais informações, consulte esta [página](../../installation/using/mid-sourcing-deployment.md).
+* Se o seu contador de entrega não estiver atualizado para implantações de mid-sourcing, verifique se o fluxo de trabalho técnico **[!UICONTROL Mid-Sourcing (Delivery counters)]** está em execução. Para obter mais informações, consulte esta [página](../../installation/using/mid-sourcing-deployment.md).
 
 Você também pode rastrear suas entregas com relatórios diferentes através do painel de entrega. Para obter mais informações, consulte esta [seção](../../reporting/using/delivery-reports.md).
 

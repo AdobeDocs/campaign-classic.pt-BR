@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
-source-wordcount: '437'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 94%
 
 ---
 
@@ -22,14 +22,14 @@ Para criar uma nova entrega de SMS, siga as etapas abaixo:
 
 >[!NOTE]
 >
->Os conceitos globais sobre a criação de entrega são apresentados [nesta seção](steps-about-delivery-creation-steps.md).
+>Os conceitos globais sobre a criação de delivery são apresentados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 1. Crie uma nova entrega, por exemplo, no painel Entrega.
-1. Selecione o template da entrega **Sent to mobiles (SMPP)** que você criou anteriormente. Para obter mais informações, consulte a seção [Alterar o template da entrega](sms-set-up.md#changing-the-delivery-template).
+1. Selecione o modelo da entrega **Sent to mobiles (SMPP)** que você criou anteriormente. Para obter mais informações, consulte a seção [Alterar o modelo da entrega](sms-set-up.md#changing-the-delivery-template).
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identifique a entrega com um rótulo, código e descrição. Para obter mais informações, consulte [esta seção](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifique a entrega com um rótulo, código e descrição. Para obter mais informações, consulte esta seção na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#create-the-delivery){target="_blank"}.
 1. Clique em **[!UICONTROL Continue]** para confirmar essas informações e exibir a janela de configuração de mensagem.
 
 ## Definir o conteúdo do SMS {#defining-the-sms-content}

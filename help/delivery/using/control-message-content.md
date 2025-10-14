@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
-workflow-type: ht
-source-wordcount: '748'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '760'
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ Para obter dicas adicionais para otimizar a capacidade de entrega ao projetar co
 
 >[!NOTE]
 >
->Para obter mais informações sobre a edição de conteúdo de email, consulte [Definir o conteúdo do email](defining-the-email-content.md).
+>Para obter mais informações sobre edição de conteúdo de email, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR){target="_blank"}.
 
 ## Endereço do remetente {#sender-address}
 
@@ -37,7 +37,7 @@ Determinados ISPs verificam a validade do endereço do remetente (**[!UICONTROL 
 
 Verifique se um endereço correto é fornecido no nível da instância (menu **[!UICONTROL Tools > Advanced > deployment wizard...]**) ou nos cenários usados com mais frequência.
 
-Para obter mais informações, consulte [esta página](defining-the-email-content.md).
+Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR){target="_blank"}.
 
 ## Personalização {#personalization}
 
@@ -47,7 +47,7 @@ Para obter mais informações sobre o uso de campos de personalização no Adobe
 
 ## Formulário e link para opção de não participação {#opt-out}
 
-Por padrão, quando a mensagem é analisada, uma [regra de tipologia](steps-validating-the-delivery.md#validation-process-with-typologies) verifica se um link para opção de não participação foi incluído e gera um aviso caso ele esteja ausente. É possível alterar essa regra para gerar um erro ao invés de um simples aviso e, assim, impedir que uma entrega saia sem esse link.
+Por padrão, quando a mensagem é analisada, uma regra de tipologia verifica se há um link de opt-out e gera um aviso se estiver faltando. Você pode alterar essa regra para gerar um erro em vez de um simples aviso e impedir que um delivery saia sem esse link. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 Você deve verificar se o link de opt-out funciona corretamente antes de cada vez que enviar. Por exemplo, ao enviar a prova, verifique se o link é válido, se o formulário está online e se a validação altera o valor do campo **[!UICONTROL No longer contact this recipient]** para **[!UICONTROL Yes]**. Você deve fazer essa verificação sistematicamente, pois sempre é possível que ocorra um erro humano ao inserir o link ou ao alterar o formulário.
 

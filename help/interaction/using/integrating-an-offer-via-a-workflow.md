@@ -1,24 +1,24 @@
 ---
 product: campaign
-title: Integração de uma oferta via workflow
-description: Integração de uma oferta via workflow
+title: Integração de uma oferta via fluxo de trabalho
+description: Integração de uma oferta via fluxo de trabalho
 feature: Interaction, Offers, Workflows
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
-workflow-type: ht
-source-wordcount: '1043'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1044'
+ht-degree: 96%
 
 ---
 
-# Integração de uma oferta via workflow{#integrating-an-offer-via-a-workflow}
+# Integração de uma oferta via fluxo de trabalho{#integrating-an-offer-via-a-workflow}
 
 
 
-Fora da atividade de entrega, várias atividades de workflows permitem definir a forma como as ofertas são apresentadas:
+Fora da atividade de entrega, várias atividades de fluxos de trabalho permitem definir a forma como as ofertas são apresentadas:
 
 * Descrição da entrega
 * Enriquecimento
@@ -27,25 +27,25 @@ Fora da atividade de entrega, várias atividades de workflows permitem definir a
 
 ## Delivery outline {#delivery-outline}
 
-A atividade Descrição da entrega, disponível nos workflows da campanha, permite apresentar ofertas mencionadas em uma descrição da entrega na campanha atual em andamento.
+A atividade Descrição da entrega, disponível nos fluxos de trabalho da campanha, permite apresentar ofertas mencionadas em uma descrição da entrega na campanha atual em andamento.
 
-1. Em um workflow, adicione uma atividade de descrição da entrega antes de adicionar uma atividade de entrega.
+1. Em um fluxo de trabalho, adicione uma atividade de descrição da entrega antes de adicionar uma atividade de entrega.
 1. Na atividade de descrição da entrega, especifique a descrição que deseja usar.
 
-   Para obter mais informações sobre especificação de descrição da entrega, consulte o guia [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+   Para obter mais informações sobre especificação de delivery outlines, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
 
 1. Preencha os campos disponíveis de acordo com sua entrega.
 1. Há dois casos possíveis:
 
    * Se desejar chamar o mecanismo de oferta, marque a caixa **[!UICONTROL Restrict the number of propositions selected]**. Especifique o espaço de oferta e o número de propostas que serão apresentadas na entrega.
 
-     Os pesos da oferta e as regras de qualificação serão considerados pelo mecanismo de oferta.
+     Os pesos da oferta e as regras de elegibilidade serão considerados pelo mecanismo de oferta.
 
    * Se não marcar a caixa, todas as ofertas na descrição da entrega serão apresentadas sem chamar o mecanismo de oferta.
 
    >[!NOTE]
    >
-   >A pré-visualização leva em conta o número de ofertas especificadas na entrega. Ao executar um workflow, é o número especificado na descrição da entrega que é levada em conta.
+   >A pré-visualização leva em conta o número de ofertas especificadas na entrega. Ao executar um fluxo de trabalho, é o número especificado na descrição da entrega que é levada em conta.
 
    ![](assets/int_compo_offre_wf1.png)
 
@@ -55,7 +55,7 @@ A atividade de enriquecimento permite adicionar ofertas ou links para ofertas de
 
 >[!NOTE]
 >
->Para obter mais informações sobre a atividade de enriquecimento, consulte a documentação dedicada no [Guia de workflows](../../workflow/using/enrichment.md).
+>Para obter mais informações sobre a atividade de enriquecimento, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 
 Por exemplo, é possível enriquecer os dados de uma query de destinatário antes de uma entrega.
 
@@ -68,7 +68,7 @@ Há dois métodos para especificar apresentações de oferta.
 
 ### Especificação de oferta ou de chamada para o mecanismo de oferta {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-Após configurar seu query (consulte o [Guia de workflows](../../workflow/using/query.md)):
+Após configurar sua consulta (consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}):
 
 1. Adicione e abra uma atividade de enriquecimento.
 1. Na guia **[!UICONTROL Enrichment]**, selecione **[!UICONTROL Add data]**.
@@ -101,7 +101,7 @@ Para fazer isso, realize o seguinte processo:
 
 1. Selecione **[!UICONTROL Add data]** na guia **[!UICONTROL Enrichment]** da atividade.
 1. Na janela onde você escolhe o tipo de dados a serem adicionados, selecione **[!UICONTROL A link]**.
-1. Selecione o tipo de link que deseja estabelecer, assim como seu target. Nesse caso, o target é o schema de oferta.
+1. Selecione o tipo de link que deseja estabelecer, assim como seu target. Nesse caso, o target é o esquema de oferta.
 
    ![](assets/int_enrichment_link1.png)
 
@@ -134,7 +134,7 @@ No entanto, é possível armazenar essas informações da seguinte maneira:
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
-1. Confirme sua adição e salve seu workflow.
+1. Confirme sua adição e salve seu fluxo de trabalho.
 
 A entrega armazena automaticamente a classificação e o peso das ofertas. Essas informações estão visíveis na guia **[!UICONTROL Offers]** da entrega.
 
@@ -146,7 +146,7 @@ Essa atividade funciona de acordo com o mesmo princípio que a atividade de enri
 
 ![](assets/int_offerengine_activity2.png)
 
-Após configurar seu query (consulte o [Guia de workflows](../../workflow/using/query.md)):
+Após configurar seu query (consulte o [Guia de fluxos de trabalho](../../workflow/using/query.md)):
 
 1. Adicione e abra uma atividade de **[!UICONTROL Offer engine]**.
 1. Preencha os vários campos disponíveis para especificar a chamada para oferecer parâmetros de mecanismo (espaço de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros.

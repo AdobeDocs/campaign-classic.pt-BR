@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 100%
+source-wordcount: '568'
+ht-degree: 94%
 
 ---
 
@@ -60,7 +60,7 @@ Depois que os endereços forem criados, você poderá exibir sua pré-visualiza�
 
 ## Dados de personalização {#personalization-data}
 
-É possível usar dados no template de mensagem para testar a personalização da mensagem transacional. Essa funcionalidade é usada para gerar uma pré-visualização ou enviar uma prova. Você também pode exibir a renderização da mensagem para vários provedores de acesso à Internet. Para obter mais informações, consulte [Renderização da caixa de entrada](../../delivery/using/inbox-rendering.md).
+É possível usar dados no modelo de mensagem para testar a personalização da mensagem transacional. Essa funcionalidade é usada para gerar uma pré-visualização ou enviar uma prova. Você também pode exibir a renderização da mensagem para vários provedores de acesso à Internet. Para obter mais informações, consulte [Renderização da caixa de entrada](../../delivery/using/inbox-rendering.md).
 
 O objetivo desses dados é testar suas mensagens antes da entrega final. Essas mensagens não coincidem com os dados reais que serão processados. Entretanto, a estrutura XML deve ser idêntica à do evento armazenado na instância de execução, conforme mostrado abaixo:
 
@@ -100,7 +100,7 @@ Com os seed addresses, você também pode exibir a renderização da mensagem pa
 
 Você pode testar a entrega de mensagens enviando uma prova para um seed address criado anteriormente.
 
-O envio de uma prova envolve o mesmo processo de [entrega regular](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). No entanto, com mensagens transacionais, é necessário realizar as seguintes operações antecipadamente:
+O envio de uma prova envolve o mesmo processo de entrega regular. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}. No entanto, com mensagens transacionais, é necessário realizar as seguintes operações antecipadamente:
 
 * Crie um ou mais [seed addresses](#managing-seed-addresses-in-transactional-messages) com [dados de personalização](#personalization-data).
 * [Criar o conteúdo da mensagem](../../message-center/using/creating-the-message-template.md#creating-message-content).
@@ -117,7 +117,7 @@ Para enviar a prova:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-É possível acessar as provas em cada modelo através da guia **[!UICONTROL Audit]**. Para obter mais informações, consulte [Enviar uma prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+É possível acessar as provas em cada modelo através da guia **[!UICONTROL Audit]**. Para obter mais detalhes, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ![](assets/messagecenter_send_proof_003.png)
 

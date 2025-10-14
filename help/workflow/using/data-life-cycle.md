@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Ciclo de vida dos dados
-description: Saiba mais sobre o ciclo de vida dos dados em workflows
+description: Saiba mais sobre o ciclo de vida dos dados em fluxos de trabalho
 feature: Workflows, Data Management
 hide: true
 hidefromtoc: true
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '510'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '516'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## Tabela de trabalho {#work-table}
 
-Nos workflows, os dados transportados de uma atividade para outra são armazenados em uma tabela de trabalho temporária.
+Nos fluxos de trabalho, os dados transportados de uma atividade para outra são armazenados em uma tabela de trabalho temporária.
 
 Esses dados podem ser exibidos e analisados clicando com o botão direito do mouse na transição apropriada.
 
@@ -29,11 +29,11 @@ Para fazer isso, selecione o menu relevante:
 
 * Exibição do target
 
-  Esse menu exibe os dados disponíveis sobre o público-alvo, bem como a estrutura da tabela de trabalho (guia **[!UICONTROL Schema]**).
+  Esse menu exibe os dados disponíveis sobre a população de destino, bem como a estrutura da tabela de trabalho (guia **[!UICONTROL Schema]**).
 
   ![](assets/wf-right-click-display.png)
 
-  Para obter mais informações, consulte [Tabelas de trabalho e schema de workflow](monitoring-workflow-execution.md#worktables-and-workflow-schema).
+  Para obter mais informações, consulte [Tabelas de trabalho e esquema de fluxo de trabalho](monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Análise do target
 
@@ -41,7 +41,7 @@ Para fazer isso, selecione o menu relevante:
 
   Para obter mais informações, consulte esta [seção](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
-Os dados do target são descartados na execução do workflow Somente a última tabela de trabalho está acessível. Você pode configurar o fluxo de trabalho para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do fluxo de trabalho.
+Os dados do target são descartados na execução do fluxo de trabalho Somente a última tabela de trabalho está acessível. Você pode configurar o fluxo de trabalho para que todas as tabelas de trabalho permaneçam acessíveis: marque a opção **[!UICONTROL Keep the result of interim populations between two executions]** nas propriedades do fluxo de trabalho.
 
 No entanto, recomendamos que você evite ativar essa opção quando a quantidade de dados for significativa.
 
@@ -49,7 +49,7 @@ No entanto, recomendamos que você evite ativar essa opção quando a quantidade
 
 ## Dados do target {#target-data}
 
-Os dados armazenados na tabela de trabalho do workflow podem ser acessados nos campos de personalização.
+Os dados armazenados na tabela de trabalho do fluxo de trabalho podem ser acessados nos campos de personalização.
 
 Isso permite que você use dados coletados por uma lista ou com base nas respostas de uma pesquisa em uma entrega. Para fazer isso, use a seguinte sintaxe:
 
@@ -57,15 +57,15 @@ Isso permite que você use dados coletados por uma lista ou com base nas respost
 %= targetData.FIELD %
 ```
 
-Os elementos de personalização do tipo **[!UICONTROL Target extension]** (targetData) não estão disponíveis para fluxos de trabalho para construção do target. O target da entrega deve ser construído no fluxo de trabalho e especificado na transição de entrada da entrega.
+Os elementos de personalização do tipo **[!UICONTROL Target extension]** (targetData) não estão disponíveis para fluxos de trabalho de direcionamento. O target da entrega deve ser construído no fluxo de trabalho e especificado na transição de entrada da entrega.
 
-Se você quiser criar provas de entrega, o target de prova precisará ser construído com base no modo **[!UICONTROL Address substitution]** para que os dados de personalização possam ser inseridos. Para obter mais informações, consulte esta [seção](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Se você quiser criar provas de entrega, o target de prova precisará ser construído com base no modo **[!UICONTROL Address substitution]** para que os dados de personalização possam ser inseridos. Para obter mais informações, consulte esta seção na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#target-population){target="_blank"}.
 
 No exemplo a seguir, vamos coletar uma lista de informações sobre os clientes, para ser usada em um email personalizado.
 
 Siga as etapas abaixo:
 
-1. Crie um workflow para coletar informações, reconcilie com os dados já existentes no banco de dados, e depois inicie uma entrega.
+1. Crie um fluxo de trabalho para coletar informações, reconcilie com os dados já existentes no banco de dados, e depois inicie uma entrega.
 
    ![](assets/wf-targetdata-sample-1.png)
 
@@ -91,7 +91,7 @@ Siga as etapas abaixo:
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. Em seguida, configure o **[!UICONTROL Delivery]**: ele é criado com base em um template e os destinatários são especificados pela transição de entrada.
+1. Em seguida, configure o **[!UICONTROL Delivery]**: ele é criado com base em um modelo e os destinatários são especificados pela transição de entrada.
 
    ![](assets/wf-targetdata-sample-4.png)
 
@@ -99,13 +99,13 @@ Siga as etapas abaixo:
    >
    >Somente os dados contidos na transição podem ser usados para personalizar a entrega. Os campos de personalização do tipo **targetData** só estão disponíveis para a população de entrada da atividade de **[!UICONTROL Delivery]**.
 
-1. No template de entrega, use os campos coletados no fluxo de trabalho.
+1. No modelo de entrega, use os campos coletados no fluxo de trabalho.
 
    Para fazer isso, insira os campos de personalização do tipo **[!UICONTROL Target extension]**.
 
    ![](assets/wf-targetdata-sample-5.png)
 
-   Nesse exemplo, queremos inserir o gênero de música e o tipo de mídia favoritos do cliente (CD ou DVD), conforme declarado no arquivo coletado pelo workflow.
+   Nesse exemplo, queremos inserir o gênero de música e o tipo de mídia favoritos do cliente (CD ou DVD), conforme declarado no arquivo coletado pelo fluxo de trabalho.
 
    Como um diferencial, vamos adicionar um cupom para os titulares de cartões de fidelidade, ou seja, destinatários para os quais o valor &#39;Cartão&#39; for igual a 1.
 

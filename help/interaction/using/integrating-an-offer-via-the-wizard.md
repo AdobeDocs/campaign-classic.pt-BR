@@ -7,10 +7,10 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '803'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Para apresentar uma oferta durante uma campanha de marketing, basta criar uma a�
 
 ![](assets/offer_delivery_009.png)
 
-Saiba mais sobre entregas de correspondência direta [nesta seção](../../delivery/using/about-direct-mail-channel.md). Saiba mais sobre campanhas de marketing [nesta seção](../../campaign/using/setting-up-marketing-campaigns.md).
+Saiba mais sobre entregas de correspondência direta [nesta seção](../../delivery/using/about-direct-mail-channel.md). Saiba mais sobre campanhas de marketing na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR){target=_blank}.
 
 ### Etapas principais para inserir uma oferta em uma entrega {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -90,7 +90,7 @@ A entrega pode ser personalizada usando os campos da oferta ou, no caso de um em
 
 Também é possível apresentar ofertas em uma entrega usando descrições da entrega.
 
-Para obter mais informações sobre descrição da entrega, consulte o guia [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Para obter mais informações sobre delivery outlines, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
 
 1. Crie uma nova campanha ou acesse uma campanha existente.
 1. Acesse as descrições das entregas por meio das guias da campanha **[!UICONTROL Edit]** > **[!UICONTROL Documents]**.
@@ -98,7 +98,7 @@ Para obter mais informações sobre descrição da entrega, consulte o guia [Cam
 
    ![](assets/int_compo_offre1.png)
 
-1. Crie uma entrega cujas descrição você pode acessar (por exemplo, uma entrega de mala direta).
+1. Crie uma entrega cujas descrição você pode acessar (por exemplo, uma entrega de correspondência direta).
 1. Ao editar a entrega, clique em **[!UICONTROL Select a delivery outline]**.
 
    >[!NOTE]

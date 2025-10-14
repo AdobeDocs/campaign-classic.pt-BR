@@ -4,10 +4,10 @@ title: Enviar emails transacionais com anexos
 description: Saiba como enviar emails transacionais com anexos individuais e/ou personalizados usando o Adobe Campaign
 feature: Transactional Messaging, Message Center
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 100%
+source-wordcount: '667'
+ht-degree: 98%
 
 ---
 
@@ -64,11 +64,11 @@ O diagrama abaixo mostra as diferentes etapas ao implementar este cenário:
 
 Para adicionar um anexo de email rapidamente a uma mensagem transacional, siga as etapas abaixo:
 
-1. Comece criando seu anexo. Para obter mais informações, consulte [esta seção](../../delivery/using/attaching-files.md#attach-a-personalized-file).
+1. Comece criando seu anexo. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"}.
 
    Isso permite anexar os arquivos a um email, mesmo se eles não estiverem hospedados na instância de execução.
 
-1. Você pode enviar emails por meio de um gatilho de mensagem SOAP Na chamada SOAP, há um parâmetro de URL (attachmentURL).
+1. Você pode enviar emails por meio de um acionador de mensagem SOAP Na chamada SOAP, há um parâmetro de URL (attachmentURL).
 
    Para saber mais sobre solicitações SOAP, consulte [Descrição do evento](../../message-center/using/event-description.md).
 

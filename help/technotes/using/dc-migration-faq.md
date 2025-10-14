@@ -6,9 +6,9 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2225'
+source-wordcount: '2226'
 ht-degree: 40%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 40%
 
 
 
-O Adobe descomissiona o data center herdado: as instâncias do Campaign Classic devem ser transferidas para o Public Cloud Amazon Web Services (AWS). [Saiba mais sobre esta iniciativa](dc-migration.md).
+A Adobe desativa o data center herdado: as instâncias do Campaign Classic devem ser transferidas para o Public Cloud Amazon Web Services (AWS). [Saiba mais sobre esta iniciativa](dc-migration.md).
 
 Veja abaixo um conjunto de perguntas comuns sobre esse projeto, o impacto nos ambientes do Campaign e outros recursos úteis.
 
-Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support).
+Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## Impactos na infraestrutura
 
@@ -51,7 +51,7 @@ Os impactos globais no banco de dados e na infraestrutura estão listados abaixo
 
 * **Qual é o plano para solucionar problemas após a migração?**
 
-  Testes abrangentes serão realizados antes da migração dos sistemas de produção. No entanto, em caso de problemas, o [Adobe do Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support) continuará sendo o principal ponto de contato. a Adobe criou uma equipe de especialistas para fornecer suporte avançado, se necessário.
+  Testes abrangentes serão realizados antes da migração dos sistemas de produção. No entanto, em caso de problemas, o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) continuará sendo o principal ponto de contato. A Adobe criou uma equipe de especialistas para fornecer suporte avançado, se necessário.
 
 ## Impactos na capacidade de entrega
 
@@ -95,9 +95,9 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 
 * **Qual é o plano para o Aquecimento de IP?**
 
-  Primeiramente, a equipe de Entregabilidade do Adobe avaliará o status da capacidade de entrega da plataforma e recomendará um plano para a mudança para os novos IPs
+  Primeiramente, a equipe de Entregabilidade da Adobe avaliará o status da capacidade de entrega da plataforma e recomendará um plano para a mudança para os novos IPs
 
-  Nenhum aquecimento será necessário após a migração. Pode haver algumas exceções e, nesse caso, o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support) entrará em contato com os clientes.
+  Nenhum aquecimento será necessário após a migração. Pode haver algumas exceções e, nesse caso, o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) entrará em contato com os clientes.
 
   No entanto, o plano é tornar essa operação transparente para a empresa, diferentemente do aumento inicial realizado durante a ativação.
 
@@ -110,8 +110,8 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 * **Qual deve ser o impacto no subdomínio delegado que usamos para marcar nossa comunicação?**
 
   Os subdomínios usados para comunicação de marketing permanecem os mesmos. No entanto, dependendo da implementação, são necessárias ações do lado do cliente:
-   * No caso de delegação de subdomínio para Adobe (padrão), o Adobe cuida de todas as alterações e garante uma transição contínua.
-   * No caso de configuração CNAME (exceção), o cliente é solicitado a implementar alterações, em coordenação com o Adobe.
+   * No caso de delegação de subdomínio para o Adobe (padrão), a Adobe cuida de todas as alterações e garante uma transição contínua.
+   * No caso de configuração CNAME (exceção), o cliente é solicitado a implementar as alterações, em coordenação com a Adobe.
 
 ## Impactos na configuração e na conectividade
 
@@ -137,13 +137,13 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
   Sim. Integrações de terceiros, provedores de SMS, por exemplo, devem adicionar novos endereços IP de servidores de aplicativos Adobe Campaign ao incluo na lista de permissões.
 
-* **A migração afetará a conectividade com o Adobe Analytics usando o conector Genesis? Incluir na lista de permissões E quanto à adição de endereços IP do Campaign ao arquivo no Adobe Analytics?**
+* **A migração afetará a conectividade com o Adobe Analytics usando o conector do Genesis? Incluir na lista de permissões E quanto à adição de endereços IP do Campaign ao arquivo no Adobe Analytics?**
 
   Os endereços IP dos servidores de aplicativos do Adobe Campaign serão alterados. Essa etapa será realizada pelo Atendimento ao cliente da Adobe após a migração.
 
-* **A migração afetará a conectividade com outras soluções de Adobe (AEM, Target, etc.)?**
+* **A migração afetará a conectividade com outras soluções da Adobe (AEM, Target, etc.)?**
 
-  As integrações são uma combinação de endereços IP declarados no arquivo de inclui na lista de permissões e na configuração da conta do serviço da Web. Isso será de responsabilidade do Atendimento ao cliente Adobe.
+  As integrações são uma combinação de endereços IP declarados no arquivo de inclui na lista de permissões e na configuração da conta do serviço da Web. Isso será de responsabilidade do Atendimento ao cliente da Adobe.
 
   Na inclui na lista de permissões, haverá endereços IP que serão necessários na solução externa, pois o IP dos servidores de aplicativos será alterado. Essas informações serão fornecidas. Outras partes da integração são baseadas no IMS e devem funcionar como estão.
 
@@ -173,7 +173,7 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
   Pode mudar de acordo com a localização dos novos servidores. No entanto, o cliente poderá manter o fuso horário atual.
 
-  [Saiba mais](../../workflow/using/managing-time-zones.md) sobre o gerenciamento de fuso horário no Adobe Campaign Classic v7.
+  Saiba mais sobre o gerenciamento de fuso horário na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
 
 
 ## Segurança e permissões
@@ -194,7 +194,7 @@ Os impactos em permissões, certificados e acesso SFTP estão listados abaixo.
 
 * **Precisamos solicitar novas chaves de acesso STP ao cliente?**
 
-  Não, o Adobe copiará as chaves de acesso SFTP como estão no novo servidor.
+  Não, a Adobe copiará as chaves de acesso SFTP como estão no novo servidor.
 
 * **Como as permissões SFTP são tratadas?**
 
@@ -279,7 +279,7 @@ Os impactos globais durante a migração estão listados abaixo.
 
 * incluir na lista de permissões **Quem lidará com a adição de novos IPs ao arquivo?**
 
-  A equipe de Atendimento ao cliente do Adobe cuidará de garantir que o cliente e terceiros possam acessar o novo sistema, adicionando os novos IPs ao incluo na lista de permissões.
+  A equipe de Atendimento ao cliente da Adobe cuidará de garantir que o cliente e terceiros possam acessar o novo sistema, adicionando os novos IPs ao incluo na lista de permissões.
 
 ## Suporte e outros links úteis{#support}
 

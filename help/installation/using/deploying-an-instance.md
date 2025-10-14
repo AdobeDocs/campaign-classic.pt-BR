@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3389'
-ht-degree: 4%
+source-wordcount: '3397'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->As configurações do lado do servidor só podem ser executadas pelo Adobe para implantações hospedadas pelo Adobe. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md).
+>As configurações do lado do servidor só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md).
 
 ## assistente de implantação {#deployment-assistant}
 
@@ -79,13 +79,12 @@ Esses parâmetros podem ser sobrecarregados em templates do delivery e individua
 Indique os seguintes parâmetros:
 
 * **[!UICONTROL Sender name]** : Insira o nome do remetente.
-* **[!UICONTROL Sender address]** : Digite o endereço de email do remetente. Ao enviar emails do Adobe Campaign, a caixa de correio **Endereço do Remetente** não é monitorada e os usuários de marketing não podem acessá-la. O Adobe Campaign também não oferece a capacidade de responder automaticamente ou encaminhar emails recebidos nessa caixa de correio. Saiba mais sobre as Práticas recomendadas de entrega [nesta documentação](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html?lang=pt-BR){_blank}.
+* **[!UICONTROL Sender address]** : Digite o endereço de email do remetente. Ao enviar emails do Adobe Campaign, a caixa de correio **Endereço do Remetente** não é monitorada e os usuários de marketing não podem acessá-la. O Adobe Campaign também não oferece a capacidade de responder automaticamente ou encaminhar emails recebidos nessa caixa de correio. Saiba mais sobre as Práticas recomendadas de entrega [nesta documentação](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
 
 * **[!UICONTROL Reply address text]** : Digite o nome usado quando o destinatário clicar no botão **[!UICONTROL Reply]**.
 * **[!UICONTROL Reply address]** : Digite o endereço de email a ser usado quando o destinatário clicar no botão **[!UICONTROL Reply]** no software cliente de email. A finalidade do campo **Endereço de Resposta** é quando você deseja que o destinatário responda a um endereço diferente do **Endereço do Remetente**.  Esse endereço deve ser um endereço de email válido, vinculado a uma caixa de correio monitorada e hospedado pelo cliente.  Pode ser uma caixa de correio de suporte, por exemplo, `customer-care@customer.com`, em que os emails são lidos e respondidos.
 
-* **[!UICONTROL Error address]** : Insira o endereço de email das mensagens com erros. Esse é o endereço técnico usado para lidar com emails devolvidos, incluindo emails recebidos pelo servidor do Adobe Campaign devido a endereços de destino inexistentes. Esse endereço deve ser um endereço de email válido, vinculado a uma caixa de correio monitorada e hospedado pelo cliente. Pode ser uma caixa de entrada de devolução, por exemplo, `errors@customer.com`. Este endereço pode ser alterado para uma entrega ou nos modelos de entrega, na guia **SMTP** das propriedades de entrega/modelo de entrega. [Saiba mais](../../delivery/using/email-parameters.md#managing-bounce-emails-managing-bounce-emails).
-
+* **[!UICONTROL Error address]** : Insira o endereço de email das mensagens com erros. Esse é o endereço técnico usado para lidar com emails devolvidos, incluindo emails recebidos pelo servidor do Adobe Campaign devido a endereços de destino inexistentes. Esse endereço deve ser um endereço de email válido, vinculado a uma caixa de correio monitorada e hospedado pelo cliente. Pode ser uma caixa de entrada de devolução, por exemplo, `errors@customer.com`. Este endereço pode ser alterado para uma entrega ou nos modelos de entrega, na guia **SMTP** das propriedades de entrega/modelo de entrega. Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}.
 
 Além disso, você pode especificar as **máscaras** autorizadas para o endereço do remetente e o endereço de erro. Se necessário, essas máscaras podem ser separadas por vírgulas. Essa configuração é opcional. Quando os campos são inseridos, o Adobe Campaign verifica no momento do delivery (durante a análise, se o endereço não incluir nenhuma variável) se os endereços são válidos. Esse modo operacional garante que não sejam usados endereços que possam causar problemas de delivery. Os endereços de entrega devem ser configurados no servidor de entrega.
 
@@ -176,7 +175,7 @@ As rejeições não processadas não são exibidas na interface do Adobe Campaig
 
 >[!IMPORTANT]
 >
->Para encaminhar emails de devolução não processados, o Adobe recomenda preencher apenas o campo **[!UICONTROL Address for errors]**. No entanto, verifique se o endereço usado é verificado regularmente, pois isso pode sobrecarregar seu servidor de email. Entre em contato com o executivo de sua conta para obter mais informações.
+>Para encaminhar emails de rejeição não processados, a Adobe recomenda preencher somente o campo **[!UICONTROL Address for errors]**. No entanto, verifique se o endereço usado é verificado regularmente, pois isso pode sobrecarregar seu servidor de email. Entre em contato com o executivo de sua conta para obter mais informações.
 
 ## Configuração de rastreamento {#tracking-configuration}
 
@@ -277,7 +276,7 @@ De volta à janela anterior, uma mensagem confirma o registro no nível do servi
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_ok.png)
 
-Os parâmetros vinculados às pesquisas de URL **não devem ser modificados** para uma instalação padrão. Para todos os outros parâmetros, entre em contato com o Adobe.
+Os parâmetros vinculados às pesquisas de URL **não devem ser modificados** para uma instalação padrão. Para todos os outros parâmetros, entre em contato com a Adobe.
 
 ## Parâmetros do canal móvel {#mobile-channel-parameters}
 
@@ -342,7 +341,7 @@ Use esta página para preencher os URLs do servidor para:
 1. Acesse o servidor de aplicativos para recursos não expostos na Web: formulários, intranet, páginas de confirmação.
 1. Acesse as mirror pages dos deliveries.
 
-   Uma mirror page é uma página dinâmica que exibe o conteúdo do email. Ele é acessado por um link inserido na mensagem enviada ao recipient e pode conter elementos personalizados. A mirror page dá ao recipient a possibilidade de ler a mensagem em um navegador da Internet em vez do software de email, independentemente do formato de delivery (texto ou HTML). No entanto, as mirror pages só serão geradas para um determinado delivery se o conteúdo de HTML necessário tiver sido definido.
+   Uma mirror page é uma página dinâmica que exibe o conteúdo do email. Ele é acessado por um link inserido na mensagem enviada ao recipient e pode conter elementos personalizados. A mirror page dá ao recipient a possibilidade de ler a mensagem em um navegador da Internet em vez do software de email, independentemente do formato de delivery (texto ou HTML). No entanto, as mirror pages só serão geradas para um determinado delivery se o conteúdo necessário do HTML tiver sido definido.
 
 O Adobe Campaign permite diferenciar esses três URLs para distribuir a carga em várias plataformas.
 
@@ -383,7 +382,7 @@ Em um delivery, você pode usar imagens armazenadas na biblioteca de recursos p�
 
   Esse valor pode ser sobreposto para cada delivery.
 
-* Para recursos públicos, a URL **https://** server **/res/** instance **&#x200B;**&#x200B;onde **instance**&#x200B;é o nome da instância de rastreamento.
+* Para recursos públicos, a URL **https://** server **/res/** instance ****onde **instance**é o nome da instância de rastreamento.
 
 ### Detecção de imagem de entrega {#delivery-image-detection}
 
@@ -395,7 +394,7 @@ O campo **máscaras de URL** permite especificar a lista de máscaras de URL a s
 
 É possível especificar várias máscaras de URL usando uma vírgula para separar cada uma delas.
 
-* Para obter informações sobre como usar e gerenciar imagens em emails, consulte [esta seção](../../delivery/using/defining-the-email-content.md#adding-images).
+* Para obter informações sobre como usar e gerenciar imagens em emails, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 * No assistente de entrega, as imagens chamadas desses URLs terão o status &quot;Ignorado&quot;.
 
 ### Modos de publicação {#publication-modes}

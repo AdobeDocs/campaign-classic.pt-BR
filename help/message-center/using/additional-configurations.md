@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '793'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Para fazer isso, siga as etapas abaixo:
 
 Você pode usar o [assistente de implantação](../../production/using/database-cleanup-workflow.md#deployment-assistant) para definir por quanto tempo os dados devem ser armazenados no banco de dados
 
-A limpeza de eventos é executada automaticamente pelo [Fluxo de trabalho de limpeza de banco de dados](../../production/using/database-cleanup-workflow.md). Esse workflow limpa os eventos recebidos e armazenados nas instâncias de execução e eventos arquivados em uma instância de controle.
+A limpeza de eventos é executada automaticamente pelo [Fluxo de trabalho de limpeza de banco de dados](../../production/using/database-cleanup-workflow.md). Esse fluxo de trabalho limpa os eventos recebidos e armazenados nas instâncias de execução e eventos arquivados em uma instância de controle.
 
 Use as setas conforme o caso para alterar as configurações de limpeza:
 
@@ -55,19 +55,19 @@ Configurações de limpeza de eventos em uma instância de execução:
 Para obter mais informações sobre o fluxo de trabalho de limpeza de banco de dados, consulte [esta seção](../../production/using/database-cleanup-workflow.md).
 
 
-## Workflows técnicos {#technical-workflows}
+## Fluxos de trabalho técnicos {#technical-workflows}
 
-Você deve garantir que os workflows técnicos na instância de controle e as diferentes instâncias de execução tenham sido criados e iniciados realmente antes de implantar qualquer template de mensagem transacional.
+Você deve garantir que os fluxos de trabalho técnicos na instância de controle e as diferentes instâncias de execução tenham sido criados e iniciados realmente antes de implantar qualquer modelo de mensagem transacional.
 
-Os vários workflows técnicos relacionados a mensagens transacionais (Centro de Mensagens) são divididos entre a instância de controle e a(s) instância(s) de execução.
+Os vários fluxos de trabalho técnicos relacionados a mensagens transacionais (Centro de Mensagens) são divididos entre a instância de controle e a(s) instância(s) de execução.
 
-### Workflows da instância de controle {#control-instance-workflows}
+### Fluxos de trabalho da instância de controle {#control-instance-workflows}
 
-Na instância de controle, caso tenha uma ou várias instâncias de execução registradas, é necessário criar um fluxo de trabalho de arquivamento para cada conta externa **[!UICONTROL Message Center execution instance]**. Clique no botão **[!UICONTROL Create the archiving workflow]** para criar e iniciar o workflow.
+Na instância de controle, caso tenha uma ou várias instâncias de execução registradas, é necessário criar um fluxo de trabalho de arquivamento para cada conta externa **[!UICONTROL Message Center execution instance]**. Clique no botão **[!UICONTROL Create the archiving workflow]** para criar e iniciar o fluxo de trabalho.
 
 ![](assets/messagecenter_archiving_002.png)
 
-Os workflows de arquivamento podem ser acessados na pasta **Administration > Production > Message Center**. Depois de criados, os workflows de arquivamento são iniciados automaticamente.
+Os fluxos de trabalho de arquivamento podem ser acessados na pasta **Administration > Production > Message Center**. Depois de criados, os fluxos de trabalho de arquivamento são iniciados automaticamente.
 
 <!--**Minimal architecture**
 
@@ -75,28 +75,28 @@ Once the control and execution modules are installed on the same instance, you m
 
 ![](assets/messagecenter_archiving_001.png)-->
 
-### Workflows da instância de execução {#execution-instance-workflows}
+### Fluxo de trabalho da instância de execução {#execution-instance-workflows}
 
-Na(s) instância(s) de execução, os workflows técnicos de mensagens transacionais podem ser acessados na pasta **Administration > Production > Message Center.** Você só precisa iniciá-los. Os workflows na lista são:
+Na(s) instância(s) de execução, os fluxos de trabalho técnicos de mensagens transacionais podem ser acessados na pasta **Administration > Production > Message Center.** Você só precisa iniciá-los. Os fluxos de trabalho na lista são:
 
-* **[!UICONTROL Processing batch events]** (internal name: **[!UICONTROL batchEventsProcessing]** ): esse fluxo de trabalho permite dividir eventos em lote em uma fila antes que eles sejam vinculados a um template de mensagem.
-* **[!UICONTROL Processing real time events]** (internal name: **[!UICONTROL rtEventsProcessing]** ): esse workflow permite dividir eventos em tempo real em uma fila antes que eles sejam vinculados a um template de mensagem.
-* **[!UICONTROL Update event status]** (internal name: **[!UICONTROL updateEventStatus]** ): esse workflow permite que você atribua um status ao evento.
+* **[!UICONTROL Processing batch events]** (internal name: **[!UICONTROL batchEventsProcessing]** ): esse fluxo de trabalho permite dividir eventos em lote em uma fila antes que eles sejam vinculados a um modelo de mensagem.
+* **[!UICONTROL Processing real time events]** (internal name: **[!UICONTROL rtEventsProcessing]** ): esse fluxo de trabalho permite dividir eventos em tempo real em uma fila antes que eles sejam vinculados a um modelo de mensagem.
+* **[!UICONTROL Update event status]** (internal name: **[!UICONTROL updateEventStatus]** ): esse fluxo de trabalho permite que você atribua um status ao evento.
 
   Os seguintes status de evento estão disponíveis:
 
-   * **[!UICONTROL Pending]**: o evento está na fila. Nenhum template de mensagem foi atribuído a ele.
-   * **[!UICONTROL Pending delivery]**: o evento está na fila, um template de mensagem foi atribuído a ele e está sendo processado pela entrega.
+   * **[!UICONTROL Pending]**: o evento está na fila. Nenhum modelo de mensagem foi atribuído a ele.
+   * **[!UICONTROL Pending delivery]**: o evento está na fila, um modelo de mensagem foi atribuído a ele e está sendo processado pela entrega.
    * **[!UICONTROL Sent]**: esse status é copiado dos logs da entrega. Significa que a entrega foi enviada.
    * **[!UICONTROL Ignored by the delivery]**: esse status é copiado dos logs da entrega. Ele significa que a entrega foi ignorada.
    * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs da entrega. Ele significa que a entrega falhou.
-   * **[!UICONTROL Event not taken into account]**: o evento não pôde ser vinculado a um template de mensagem. O evento não será processado.
+   * **[!UICONTROL Event not taken into account]**: o evento não pôde ser vinculado a um modelo de mensagem. O evento não será processado.
 
-### Cronograma do workflow de arquivamento
+### Cronograma do fluxo de trabalho de arquivamento
 
-Evite modificar o cronograma do **workflow de arquivamento** que é executado na instância de controle. Caso contrário, alguns dados de rastreamento que estão sendo extraídos da instância de execução podem ser perdidos.
+Evite modificar o cronograma do **fluxo de trabalho de arquivamento** que é executado na instância de controle. Caso contrário, alguns dados de rastreamento que estão sendo extraídos da instância de execução podem ser perdidos.
 
-Se você modificar o cronograma do workflow de arquivamento, também precisará alterar o cronograma do **workflow de rastreamento** na instância de execução para corresponder ao cronograma do workflow de arquivamento na instância de controle.
+Se você modificar o cronograma do fluxo de trabalho de arquivamento, também precisará alterar o cronograma do **fluxo de trabalho de rastreamento** na instância de execução para corresponder ao cronograma do fluxo de trabalho de arquivamento na instância de controle.
 
 ## Configurar multimarcas {#configuring-multibranding}
 
@@ -120,7 +120,7 @@ Na(s) instância(s) de execução, siga as etapas abaixo:
    >
    >Saiba como criar uma conta externa do tipo instância de execução [nesta seção](../../message-center/using/configuring-instances.md#control-instance).
 
-1. Estenda o esquema nms:extAccount para adicionar o URL de rastreamento:
+1. Estenda o esquema nms:extAccount para adicionar a URL de rastreamento:
 
    ```
    <attribute advanced="true" desc="URL of the tracking servers" label="Tracking server URL"
@@ -169,6 +169,6 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Crie uma conta externa por marca com o mesmo nome interno, conforme definido na [instância de execução](#execution-instance) (etapa 1).
 
-1. Criar um [modelo de entrega](../../delivery/using/about-templates.md) por marca.
+1. Criar um modelo de entrega por marca. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 1. Em **[!UICONTROL Properties]** do modelo de entrega, defina o roteamento para a conta externa da marca.

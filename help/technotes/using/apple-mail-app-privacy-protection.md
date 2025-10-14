@@ -4,7 +4,7 @@ title: Proteção de privacidade de email no aplicativo de email do Apple
 feature: Technote, Privacy, Privacy Tools
 description: Saiba como suas campanhas podem ser afetadas pelo recurso Proteção de privacidade de email da Apple
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 1%
@@ -25,7 +25,7 @@ O Adobe Campaign fornece a capacidade de usar pixels de rastreamento para rastre
 
 ## Que ações devo realizar?
 
-O novo recurso da Apple é o formato do que está por vir no setor em termos de proteção da privacidade de email. Recomendamos que você siga as recomendações do Adobe.
+O novo recurso da Apple é o formato do que está por vir no setor em termos de proteção da privacidade de email. Recomendamos que você siga as recomendações da Adobe.
 
 ### Avalie o impacto dos acionadores da campanha
 
@@ -94,7 +94,7 @@ Neste exemplo, um profissional de marketing deseja enviar uma oferta de recompen
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* Você pode usar um filtro predefinido. [Saiba mais](../../workflow/using/creating-a-filter.md).
+* Você pode usar um filtro predefinido. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
 
   ![](assets/identify-email-open-tracking-3.png)
 
@@ -131,7 +131,7 @@ Este exemplo mostra uma implementação personalizada em um único fluxo de trab
 
 >[!IMPORTANT]
 >
->O pacote é fornecido apenas como exemplo e não é suportado pelo Adobe como um recurso do produto.
+>O pacote é fornecido apenas como exemplo e não é compatível com o Adobe como um recurso do produto.
 >
 >Talvez seja necessário adaptar o código de amostra à implementação da campanha.
 >
@@ -260,7 +260,7 @@ O workflow inclui estas etapas detalhadas:
 
    ![](assets/identify-email-open-tracking-20.png)
 
-   Se a lista não estiver vazia, ela será inserida em uma tabela de HTML para notificações por email.
+   Se a lista não estiver vazia, ela será inserida em uma tabela do HTML para notificações por email.
 
    ![](assets/identify-email-open-tracking-21.png)
 

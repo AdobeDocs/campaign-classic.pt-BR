@@ -6,10 +6,10 @@ feature: SMS
 role: User, Developer, Admin
 level: Experienced
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
-source-wordcount: '981'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 98%
 
 ---
 
@@ -118,7 +118,7 @@ Para fazer isso, siga as etapas abaixo:
 
    Em seguida, entre em contato com seu provedor, dependendo do escolhido, que fornecerá o valor a ser inserido no campo **[!UICONTROL SMSC implementation name]**.
 
-   Você pode definir o número de conexões para o provedor por MTA secundário. Por padrão, é definido como 1.
+   Você pode definir o número de conexões para o provedor por MTA filho. Por padrão, é definido como 1.
 
 1. Por padrão, o número de caracteres em um SMS atende aos padrões GSM.
 
@@ -142,7 +142,7 @@ Para fazer isso, siga as etapas abaixo:
 
    Para obter mais informações, consulte [esta seção](sms-set-up.md#about-text-encodings).
 
-1. Na guia **[!UICONTROL SMSC specificities]**, a opção **[!UICONTROL Send full phone number]** é desabilitada por padrão. Não ative se quiser respeitar o protocolo SMPP e transferir apenas dígitos ao servidor do provedor SMS (SMSC).
+1. Na guia **[!UICONTROL SMSC specificities]**, a opção **[!UICONTROL Send full phone number]** é desabilitada por padrão. Não habilite se quiser respeitar o protocolo SMPP e transferir apenas dígitos ao servidor do provedor SMS (SMSC).
 
    Contudo, tendo em conta que determinados provedores exigem o uso do prefixo &quot;+&quot;, recomenda-se verificar com seu provedor e, se necessário, eles irão sugerir que seja habilitada.
 
@@ -154,7 +154,7 @@ Para fazer isso, siga as etapas abaixo:
 
 ## Alterar o modelo de entrega {#changing-the-delivery-template}
 
-O Adobe Campaign oferece um modelo de entrega móvel localizado no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Para obter mais informações, consulte a seção [Sobre os modelos](about-templates.md).
+O Adobe Campaign oferece um modelo de entrega móvel localizado no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 Para enviar mensagens por meio do canal de SMS, você deve criar um modelo que inclua uma referência ao conector de canal.
 
@@ -166,7 +166,7 @@ No exemplo abaixo, geramos um modelo para facilitar a entrega de mensagens por m
 
    ![](assets/delivery_template_mid_1.png)
 
-1. Altere o rótulo do template, por exemplo **Enviado para dispositivos móveis (SMPP)**.
+1. Altere o rótulo do modelo, por exemplo **Enviado para dispositivos móveis (SMPP)**.
 
    ![](assets/delivery_template_mid_2.png)
 
@@ -176,11 +176,11 @@ No exemplo abaixo, geramos um modelo para facilitar a entrega de mensagens por m
 
    ![](assets/delivery_template_mid_3.png)
 
-1. Clique em **[!UICONTROL Save]** para criar o template.
+1. Clique em **[!UICONTROL Save]** para criar o modelo.
 
    ![](assets/delivery_template_mid_4.png)
 
-Agora você tem uma conta externa e um template da entrega que possibilita a entrega via SMS.
+Agora você tem uma conta externa e um modelo da entrega que possibilita a entrega via SMS.
 
 ## Tópicos relacionados {#related-topics}
 

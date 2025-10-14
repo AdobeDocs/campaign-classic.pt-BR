@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 100%
+source-wordcount: '839'
+ht-degree: 94%
 
 ---
 
@@ -55,9 +55,9 @@ Veja um conjunto de direitos e restrições que autorizam ou impedem:
 
 ## Como garantir a conformidade da privacidade com o Campaign? {#how-to-be-gdpr-compliant-with-campaign-}
 
-O Adobe Campaign oferece um conjunto de ferramentas que ajuda na Conformidade da Privacidade para o GDPR e CCPA.
+O Adobe Campaign oferece um conjunto de ferramentas que ajuda na Conformidade da Privacidade para o RGPD e CCPA.
 
-Consulte [este documento](privacy-and-recommendations.md) para entender as ferramentas e as funcionalidades que o Adobe Campaign fornece, bem como as práticas recomendadas para ajudá-lo a estar de acordo com o GDPR ao usar nosso serviço. As etapas de implementação do Campaign Classic estão descritas [neste artigo](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html).
+Consulte [este documento](privacy-and-recommendations.md) para entender as ferramentas e as funcionalidades que o Adobe Campaign fornece, bem como as práticas recomendadas para ajudá-lo a estar de acordo com o RGPD ao usar nosso serviço. As etapas de implementação do Campaign Classic estão descritas [neste artigo](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html).
 
 ## Quais conceitos da interface do usuário do Campaign eu devo conhecer? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
@@ -67,19 +67,19 @@ Leia [esta seção](../../platform/using/adobe-campaign-workspace.md) para saber
 
 ## Como posso selecionar o público-alvo de minhas mensagens? {#how-can-i-select-the-target-population-of-my-messages-}
 
-Com o Adobe Campaign, você pode usar estratégias diferentes para criar audiências e selecionar destinatários.
+Com o Adobe Campaign, você pode usar estratégias diferentes para criar públicos-alvos e selecionar destinatários.
 
-[Clique aqui para saber mais](../../delivery/using/steps-defining-the-target-population.md).
+Clique aqui para saber mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#target-population){target="_blank"}.
 
 ## O que é um fluxo de trabalho? {#what-is-a-workflow-}
 
-O Adobe Campaign inclui fluxos de trabalho para organizar a gama completa de processos e tarefas em diferentes módulos do servidor de aplicativos. Esse ambiente gráfico abrangente permite criar processos, inclusive segmentação, execução de campanha, processamento de arquivos, participação humana, etc. O mecanismo de workflow executa e rastreia esses processos.
+O Adobe Campaign inclui fluxos de trabalho para organizar a gama completa de processos e tarefas em diferentes módulos do servidor de aplicativos. Esse ambiente gráfico abrangente permite criar processos, inclusive segmentação, execução de campanha, processamento de arquivos, participação humana, etc. O mecanismo de fluxo de trabalho executa e rastreia esses processos.
 
-Você pode usar um workflow, por exemplo, para baixar um arquivo de um servidor, descompactar e importar registros contidos no banco de dados do Adobe Campaign.
+Você pode usar um fluxo de trabalho, por exemplo, para baixar um arquivo de um servidor, descompactar e importar registros contidos no banco de dados do Adobe Campaign.
 
-Um workflow também pode envolver um ou mais operadores a serem notificados ou que podem fazer escolhas e aprovar processos. Dessa forma, é possível criar uma ação de entrega, atribuir uma tarefa a um ou mais operadores para trabalhar no conteúdo, especificar alvos e aprovar testes antes de iniciar a entrega.
+Um fluxo de trabalho também pode envolver um ou mais operadores a serem notificados ou que podem fazer escolhas e aprovar processos. Dessa forma, é possível criar uma ação de entrega, atribuir uma tarefa a um ou mais operadores para trabalhar no conteúdo, especificar alvos e aprovar testes antes de iniciar a entrega.
 
-[Clique aqui para saber mais](../../workflow/using/about-workflows.md) sobre fluxos de trabalho. Você também pode ler as [práticas recomendadas de workflow](../../workflow/using/building-a-workflow.md).
+[Clique aqui para saber mais](../../workflow/using/about-workflows.md) sobre fluxos de trabalho. Você também pode ler as práticas recomendadas de workflow na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target="_blank"}.
 
 ## Como criar e enviar o primeiro email? {#how-to-create-and-send-a-first-email-}
 
@@ -93,7 +93,7 @@ Saiba como configurar sua plataforma e enviar mensagens SMS [nesta seção](../.
 
 ## Como enviar notificações por push? {#how-to-send-push-notifications-}
 
-Saiba como usar o Adobe Campaign para [enviar uma notificação por push personalizada](../../delivery/using/create-notifications-ios.md) a dispositivos iOS e Android por meio de aplicativos.
+Saiba como usar o Adobe Campaign para enviar uma notificação por push personalizada na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}.
 
 ## Como criar e compartilhar uma pesquisa online? {#how-to-design-and-share-an-online-survey-}
 

@@ -8,10 +8,10 @@ content-type: reference
 level: Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Por ser uma solução aberta, o Adobe Campaign está pronto para a personalizaç
 
 ## Qual é o modelo de dados do Campaign? {#what-is-the-campaign-data-model}
 
-O modelo de dados conceituais do banco de dados do Adobe Campaign consiste em um conjunto de tabelas integradas e sua interação. A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de schema. Para saber mais sobre schemas do Adobe Campaign, [consulte esta seção](../../configuration/using/about-schema-edition.md).
+O modelo de dados conceituais do banco de dados do Adobe Campaign consiste em um conjunto de tabelas integradas e sua interação. A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de esquema. Para saber mais sobre esquemas do Adobe Campaign, [consulte esta seção](../../configuration/using/about-schema-edition.md).
 
 [Clique aqui para saber mais sobre o modelo de dados do Campaign](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/data-model/about-data-model.html?lang=pt-BR).
 
@@ -51,11 +51,11 @@ O editor de consulta do Adobe Campaign é uma ferramenta poderosa para explorar 
 
 A ferramenta de query do Adobe Campaign pode ser encontrada em vários níveis do software: para criar uma população do target, segmentação de clientes, logs de rastreamento de extração e filtragem, filtros de compilação etc.
 
-Você pode consultar o banco de dados do Campaign usando o editor de consulta genérico. Ele é acessado no menu **Tools > Generic query editor...**. Ele permite extrair informações armazenadas em um banco de dados e organizar, agrupar, classificar etc. O usuário pode, por exemplo, recuperar destinatários que clicaram mais de &quot;n&quot; vezes no link de um boletim informativo em um determinado período. Essa ferramenta permite coletar, classificar e exibir resultados com base nas suas necessidades. Além disso, combina todas as possibilidades de query do Adobe Campaign. Ela permite, por exemplo, criar e salvar filtros de restrição. Isso significa que um filtro de usuário criado no Editor de query genérico pode ser usado na caixa Query de um workflow de direcionamento etc.
+Você pode consultar o banco de dados do Campaign usando o editor de consulta genérico. Ele é acessado no menu **Tools > Generic query editor...**. Ele permite extrair informações armazenadas em um banco de dados e organizar, agrupar, classificar etc. O usuário pode, por exemplo, recuperar destinatários que clicaram mais de &quot;n&quot; vezes no link de um boletim informativo em um determinado período. Essa ferramenta permite coletar, classificar e exibir resultados com base nas suas necessidades. Além disso, combina todas as possibilidades de query do Adobe Campaign. Ela permite, por exemplo, criar e salvar filtros de restrição. Isso significa que um filtro de usuário criado no Editor de query genérico pode ser usado na caixa Query de um fluxo de trabalho de segmentação etc.
 
 As consultas são criadas usando campos da tabela selecionada ou usando uma fórmula. Os princípios mais importantes para criar uma consulta no banco de dados do Campaign estão descritos [nesta página](../../platform/using/about-queries-in-campaign.md).
 
-[Clique aqui](../../workflow/using/query.md) para conhecer o editor de consulta do Campaign.
+Saiba mais sobre consultas à [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 ## Como posso importar um pacote de dados? {#how-can-i-import-a-data-package-}
 

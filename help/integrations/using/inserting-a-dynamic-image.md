@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 100%
+source-wordcount: '822'
+ht-degree: 98%
 
 ---
 
@@ -86,19 +86,19 @@ Em nosso caso, precisamos de duas ofertas de redirecionamento, a terceira (a pad
 
 ## Criar públicos-alvo {#audiences-target}
 
-No Target , é necessário criar os dois públicos nos quais as pessoas que visitam a oferta são categorizadas para os diferentes conteúdos a serem entregues. Para cada público, adicione uma regra para definir quem poderá ver a oferta.
+No Target , é necessário criar os dois públicos-alvos nos quais as pessoas que visitam a oferta são categorizadas para os diferentes conteúdos a serem entregues. Para cada público-alvo, adicione uma regra para definir quem poderá ver a oferta.
 
-1. Para criar um novo público no Target, na guia **[!UICONTROL Audiences]**, clique em **[!UICONTROL Create Audience]**.
+1. Para criar um novo público-alvo no Target, na guia **[!UICONTROL Audiences]**, clique em **[!UICONTROL Create Audience]**.
 
    ![](assets/audiences_1.png)
 
-1. Adicione um nome ao público.
+1. Adicione um nome ao público-alvo.
 
    ![](assets/audiences_2.png)
 
 1. Clique **[!UICONTROL Add a rule]** e selecione uma categoria. A regra usa critérios específicos para direcionar os visitantes. É possível refinar as regras adicionando condições ou criando novas regras em outras categorias.
 
-1. Siga o mesmo procedimento para os públicos restantes.
+1. Siga o mesmo procedimento para os públicos-alvos restantes.
 
 ## Criar uma atividade de direcionamento de experiência {#creating-targeting-activity}
 
@@ -112,11 +112,11 @@ No Target, é necessário criar uma atividade de direcionamento de experiência,
 
 1. Selecione **[!UICONTROL Form]** como **[!UICONTROL Experience Composer]**.
 
-1. Escolha um público ao clicar no botão **[!UICONTROL Change audience]**.
+1. Escolha um público-alvo ao clicar no botão **[!UICONTROL Change audience]**.
 
    ![](assets/target_10_2.png)
 
-1. Selecione o público criado nas etapas anteriores.
+1. Selecione o público-alvo criado nas etapas anteriores.
 
    ![](assets/target_10_3.png)
 
@@ -124,7 +124,7 @@ No Target, é necessário criar uma atividade de direcionamento de experiência,
 
 ### Definir a localização e o conteúdo {#defining-location-content}
 
-Adicione um conteúdo para cada público:
+Adicione um conteúdo para cada público-alvo:
 
 1. Selecione o nome do local escolhido ao inserir a oferta dinâmica no Adobe Campaign.
 
@@ -154,7 +154,7 @@ A seção **[!UICONTROL Reporting Settings]** permite selecionar uma ação e ed
 
 ## Pré-visualizar e enviar o email {#preview-send-email}
 
-No Adobe Campaign, agora você pode visualizar seu e-mail e testar sua renderização em diferentes recipients. Você notará que a imagem muda de acordo com as diferentes experiências criadas. Para saber mais sobre a criação de email, consulte esta [página](../../delivery/using/defining-the-email-content.md).
+No Adobe Campaign, agora você pode visualizar seu e-mail e testar sua renderização em diferentes recipients. Você notará que a imagem muda de acordo com as diferentes experiências criadas. Para saber mais sobre a criação de email, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR){target="_blank"}.
 
 Agora você está pronto para enviar seu email, incluindo uma oferta dinâmica do Target.
 

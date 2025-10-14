@@ -5,9 +5,9 @@ description: Este documento descreve o modelo de dados do Adobe Campaign
 feature: Data Model
 role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2354'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Para acessar a descrição de cada tabela, vá para **[!UICONTROL Admin > Config
 
 >[!NOTE]
 >
->A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de schema. Para obter mais informações sobre esquemas do Adobe Campaign, leia [esta seção](../../configuration/using/about-schema-reference.md).
+>A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de esquema. Para obter mais informações sobre esquemas do Adobe Campaign, leia [esta seção](../../configuration/using/about-schema-reference.md).
 
 ## Descrição dos principais quadros {#description-main-tables}
 
@@ -113,7 +113,7 @@ Este conjunto de tabelas está vinculado ao módulo **Delivery**, que permite mo
 
 ## Gerenciamento de campanhas {#campaign-management}
 
-Este conjunto de tabelas está vinculado ao módulo **Campanhas de marketing**, que permite definir, otimizar, executar e analisar campanhas de comunicação e marketing. Para obter mais informações, consulte [Sobre campanhas de marketing](../../campaign/using/designing-marketing-campaigns.md).
+Este conjunto de tabelas está vinculado ao módulo **Campanhas de marketing**, que permite definir, otimizar, executar e analisar campanhas de comunicação e marketing. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 
@@ -129,7 +129,8 @@ Este conjunto de tabelas está vinculado ao módulo **Campanhas de marketing**, 
 
 ## Consistência de comunicação {#communication-consistency}
 
-Este conjunto de tabelas está vinculado ao módulo **Otimização de Campanha**, que permite controlar, filtrar e monitorar o envio de entregas. Para obter mais informações, consulte [Sobre tipologias da campanha](../../campaign-opt/using/about-campaign-typologies.md).
+Este conjunto de tabelas está vinculado ao módulo **Otimização de Campanha**, que permite controlar, filtrar e monitorar o envio de entregas. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=pt-BR){target="_blank"}.
+
 
 ![](assets/data-model_typology.png)
 
@@ -266,6 +267,6 @@ Este conjunto de tabelas está vinculado ao módulo **Gerenciamento de redes soc
 
 * **NmsVisitor**: esta tabela corresponde ao esquema **nms:visitor**. Ele contém informações sobre visitantes.
 * **NmsVisitorSub**: esta tabela corresponde ao esquema **nms:visitorSub**. Ela permite vincular um visitante aos serviços aos quais ele se inscreveu (X ou Facebook).
-* **NmsFriendShipRel**: esta tabela corresponde ao esquema **nms:friendshipRel**. Ela permite vincular visitantes com seus amigos no contexto do serviço do Facebook.
+* **NmsFriendShipRel**: esta tabela corresponde ao esquema **nms:friendshipRel**. Ele permite vincular visitantes com seus amigos no contexto do serviço do Facebook.
 * **NmsVisitorInterestRel**: esta tabela corresponde ao esquema **nms:visitorInterestRel**. Ela permite vincular visitantes e seus interesses.
 * **NmsInterest**: esta tabela corresponde ao esquema **nms:interest**. Ele contém a lista de interesses de cada visitante.

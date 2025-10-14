@@ -4,10 +4,10 @@ title: Introdução a mensagens transacionais
 description: Saiba mais sobre o princípio operacional de mensagens transacionais do Adobe Campaign Classic e as principais etapas
 feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '640'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 99%
 
 ---
 
@@ -88,6 +88,6 @@ Depois de criar e publicar o modelo de mensagem transacional, se um evento corre
 ## Tópicos relacionados {#related-topics}
 
 * [Introdução a canais de comunicação](../../delivery/using/communication-channels.md)
-* [Etapas principais de criação da entrega](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [Etapas principais de criação da entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
 * [Arquitetura de mensagens transacionais](../../message-center/using/transactional-messaging-architecture.md)
 * [Acessar relatórios de mensagens transacionais](../../message-center/using/about-transactional-messaging-reports.md)

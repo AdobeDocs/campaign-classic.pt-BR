@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 4%
+source-wordcount: '1235'
+ht-degree: 3%
 
 ---
 
@@ -84,7 +84,7 @@ Para ajudar você a configurar planos de manutenção, esta seção lista alguma
 
 >[!IMPORTANT]
 >
->O Adobe recomenda não executar o VACUUM FULL nas configurações do banco de dados hospedado no Campaign Adobe. A manutenção sugerida é um guia apenas para instalações no local. Para implementações e esquemas de tabela personalizados, use VACUUM FULL por sua conta e risco, pois o VACUUM - sem monitoramento - pode bloquear exclusivamente tabelas que causam consultas paralisadas e, em alguns casos, bloquear todo o banco de dados.
+>A Adobe recomenda não executar o VACUUM FULL nas configurações de banco de dados hospedadas pela Adobe do Campaign. A manutenção sugerida é um guia apenas para instalações no local. Para implementações e esquemas de tabela personalizados, use VACUUM FULL por sua conta e risco, pois o VACUUM - sem monitoramento - pode bloquear exclusivamente tabelas que causam consultas paralisadas e, em alguns casos, bloquear todo o banco de dados.
 
 No PostgreSQL, você pode usar estas palavras-chave típicas:
 
@@ -144,8 +144,8 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 >* A Adobe recomenda começar com tabelas menores: dessa forma, se o processo falhar em tabelas grandes (onde o risco de falha é maior), pelo menos parte da manutenção foi concluída.
 >* A Adobe recomenda adicionar as tabelas específicas ao seu modelo de dados, que podem estar sujeitas a atualizações significativas. Este pode ser o caso de **NmsRecipient** se você tiver grandes fluxos diários de replicação de dados.
 >* A instrução VACUUM bloqueará a tabela, que pausa alguns processos enquanto a manutenção é realizada.
->* Para tabelas muito grandes (normalmente acima de 5 Gb), a instrução VACUUM FULL pode se tornar bastante ineficiente e levar muito tempo. O Adobe não recomenda usá-lo para a tabela **YyyNmsBroadLogXxx**.
->* Esta operação de manutenção pode ser implementada por um fluxo de trabalho Adobe Campaign, usando uma atividade **[!UICONTROL SQL]**. Para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md). Certifique-se de programar a manutenção para um período de baixa atividade que não colida com a janela de backup.
+>* Para tabelas muito grandes (normalmente acima de 5 Gb), a instrução VACUUM FULL pode se tornar bastante ineficiente e levar muito tempo. A Adobe não recomenda usá-lo para a tabela **YyyNmsBroadLogXxx**.
+>* Esta operação de manutenção pode ser implementada por um fluxo de trabalho Adobe Campaign, usando uma atividade **[!UICONTROL SQL]**. Certifique-se de programar a manutenção para um período de baixa atividade que não colida com a janela de backup.
 >
 
 ### Reconstrução de um banco de dados {#rebuilding-a-database}
@@ -157,7 +157,7 @@ O PostgreSQL não fornece uma maneira fácil de executar uma reconstrução de t
 
 Este é um exemplo de desfragmentação de tabela usando funções específicas para gerar o DDL necessário. O SQL a seguir permite criar duas novas funções: **GenRebuildTablePart1** e **GenRebuildTablePart2**, que podem ser usadas para gerar o DDL necessário para recriar uma tabela.
 
-* A primeira função permite criar uma tabela de trabalho (**&#x200B; _tmp** aqui) que é uma cópia da tabela original.
+* A primeira função permite criar uma tabela de trabalho (** _tmp** aqui) que é uma cópia da tabela original.
 * A segunda função, então, exclui a tabela original e renomeia a tabela de trabalho e seus índices.
 * Usar duas funções em vez de uma significa que, se a primeira falhar, você não corre o risco de excluir a tabela original.
 

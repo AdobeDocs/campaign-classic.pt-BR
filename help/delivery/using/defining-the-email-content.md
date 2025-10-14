@@ -8,10 +8,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
-source-wordcount: '1958'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1961'
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
 * Para importar um conteúdo HTML, clique no botão **[!UICONTROL Open]**. Também é possível colar o código-fonte diretamente na subguia **[!UICONTROL Source]**.
 
-  Se estiver usando o [Editor de Conteúdo Digital](../../web/using/about-campaign-html-editor.md) (DCE), consulte [Seleção de um template de conteúdo](../../web/using/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
+  Se estiver usando o [Editor de Conteúdo Digital](../../web/using/about-campaign-html-editor.md) (DCE), consulte [Seleção de um modelo de conteúdo](../../web/using/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >
@@ -113,17 +113,17 @@ As mensagens são enviadas em formato de texto ou HTML por padrão, de acordo co
 
 ## Definir o conteúdo interativo {#amp-for-email-format}
 
-O Adobe Campaign possibilita experimentar o novo formato interativo [AMP for email](https://amp.dev/pt_br/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
+O Adobe Campaign possibilita experimentar o novo formato interativo [AMP for Email](https://amp.dev/pt_br/about/email/), que permite o envio de emails dinâmicos, sob determinadas condições.
 
-Para obter mais informações, consulte [esta seção](defining-interactive-content.md).
+Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=pt-BR){target="_blank"}.
 
-## Usar gestão de conteúdo {#using-content-management}
+## Usar gerenciamento de conteúdo {#using-content-management}
 
-O conteúdo da entrega pode ser definido nos formulários de gerenciamento de conteúdo, diretamente no assistente de entrega. Para fazer isso, você deve consultar o template de publicação do gerenciamento de conteúdo que será usado na guia **[!UICONTROL Advanced]** das propriedades de entrega.
+O conteúdo da entrega pode ser definido nos formulários de gerenciamento de conteúdo, diretamente no assistente de entrega. Para fazer isso, você deve consultar o modelo de publicação do gerenciamento de conteúdo que será usado na guia **[!UICONTROL Advanced]** das propriedades de entrega.
 
 ![](assets/s_ncs_content_in_delivery.png)
 
-Uma guia adicional permite inserir conteúdo que será integrado e formatado automaticamente de acordo com as regras de gestão de conteúdo.
+Uma guia adicional permite inserir conteúdo que será integrado e formatado automaticamente de acordo com as regras de gerenciamento de conteúdo.
 
 ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
@@ -162,7 +162,7 @@ As imagens podem ser:
 * Uma imagem local ou de um servidor
 * Uma imagem armazenada na biblioteca de recursos públicos do Adobe Campaign
 
-  Os recursos públicos podem ser acessados por meio do nó **[!UICONTROL Resources > Online]** da hierarquia do Adobe Campaign. Elas são agrupadas em uma biblioteca e podem ser incluídas em mensagens de email, mas também podem ser usadas para campanhas ou tarefas, ou para gestão de conteúdo.
+  Os recursos públicos podem ser acessados por meio do nó **[!UICONTROL Resources > Online]** da hierarquia do Adobe Campaign. Elas são agrupadas em uma biblioteca e podem ser incluídas em mensagens de email, mas também podem ser usadas para campanhas ou tarefas, ou para gerenciamento de conteúdo.
 
 * Um ativo compartilhado com a Adobe Experience Cloud. Consulte [esta seção](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 

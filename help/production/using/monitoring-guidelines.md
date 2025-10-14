@@ -4,10 +4,10 @@ title: Diretrizes de monitoramento
 description: Conheça as diretrizes e práticas recomendadas para monitorar processos e instâncias do Campaign
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 22%
+source-wordcount: '758'
+ht-degree: 21%
 
 ---
 
@@ -25,11 +25,11 @@ Informações detalhadas estão disponíveis [aqui](../../production/using/monit
 
 ![](assets/monitoring_tab.png)
 
-## Monitoramento de processos Campaign Classic {#monitoring-campaign-classic-processes}
+## Monitoramento de processos do Campaign Classic {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Monitorar sua instância</a></p></td>
-<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#monitoring-workflows">Monitorar workflows</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#monitoring-workflows">Monitorar fluxos de trabalho</a></p></td>
 <td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Monitorar entregas</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Monitorar o banco de dados</a></p></td></tr>
 </table>
@@ -64,7 +64,7 @@ O Painel de controle do Campaign permite gerenciar várias configurações da su
 
 **Workflow HeatMap**
 
-O Workflow HeatMap forneceu uma representação visual de todos os workflows que estão sendo executados em sua instância. Ele permite monitorar facilmente a carga na instância e planejar os workflows de acordo. [Clique aqui](../../workflow/using/heatmap.md) para obter mais informações.
+O Workflow HeatMap forneceu uma representação visual de todos os workflows que estão sendo executados em sua instância. Ele permite monitorar facilmente a carga na instância e planejar os workflows de acordo. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html?lang=pt-BR){target="_blank"}.
 
 **Trilha de auditoria**
 
@@ -76,13 +76,13 @@ Ações específicas podem ser executadas ao encontrar problemas com a execuçã
 
 **Monitoramento do status do fluxo de trabalho**
 
-Além do mapa de calor, você pode criar um fluxo de trabalho que permitirá monitorar o status de um conjunto de fluxos de trabalho e enviar mensagens recorrentes aos supervisores. [Clique aqui](../../workflow/using/supervising-workflows.md) para obter mais informações.
+Além do mapa de calor, você pode criar um fluxo de trabalho que permitirá monitorar o status de um conjunto de fluxos de trabalho e enviar mensagens recorrentes aos supervisores. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}.
 
 **Diretrizes gerais**
 
 Seguir as diretrizes e práticas recomendadas ao usar workflows pode ajudar a melhorar o desempenho. Para obter mais informações, consulte esta seção.
-* [Práticas recomendadas para usar workflows](../../workflow/using/workflow-best-practices.md)
-* [Monitoramento da execução do fluxo de trabalho](../../workflow/using/monitoring-workflow-execution.md)
+* [Práticas recomendadas para usar fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [Monitoramento da execução do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### Monitoramento de entregas {#monitoring-deliveries}
 
@@ -94,7 +94,7 @@ Os relatórios SMTP exibem estatísticas de delivery e erros SMTP por domínio. 
 
 **Práticas recomendadas**
 
-[As práticas recomendadas para envio e design de entrega](../../delivery/using/delivery-best-practices.md) podem ajudar você a melhorar o desempenho.
+Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=pt-BR){target="_blank"} para saber mais sobre as práticas recomendadas para envio de entrega e design com o objetivo de melhorar o desempenho.
 
 **Solução de problemas de entrega**
 Ações específicas podem ser executadas ao encontrar problemas com os deliveries:
@@ -133,7 +133,7 @@ Os recursos técnicos estão disponíveis na documentação do Campaign Classic.
 
 **Hospedando modelos e recursos**
 
-* [modelos de hospedagem de Campaign Classic](../../installation/using/hosting-models.md)
+* [Modelos de hospedagem do Campaign Classic](../../installation/using/hosting-models.md)
 * [Recursos do modelo de hospedagem](../../installation/using/capability-matrix.md)
 
 **Configuração do servidor**
@@ -147,9 +147,9 @@ Os recursos técnicos estão disponíveis na documentação do Campaign Classic.
 
 **Princípios gerais**
 
-* [Arquitetura de Campaign Classic](../../production/using/general-architecture.md)
-* [módulos Campaign Classic](../../production/using/operating-principle.md)
-* [opções de Campaign Classic](../../installation/using/configuring-campaign-options.md)
+* [Arquitetura do Campaign Classic](../../production/using/general-architecture.md)
+* [Módulos do Campaign Classic](../../production/using/operating-principle.md)
+* [Opções do Campaign Classic](../../installation/using/configuring-campaign-options.md)
 * [Como configurar a inicialização automática dos módulos](../../production/using/administration.md)
 * [Princípio de configuração da campanha](../../production/using/configuration-principle.md)
 * [Procedimentos de solução de problemas](../../production/using/performance-and-throughput-issues.md)

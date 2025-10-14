@@ -8,10 +8,10 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 100%
+source-wordcount: '1025'
+ht-degree: 98%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 100%
 
 Há várias possibilidades para criar/vincular hipóteses a uma oferta de campanha ou entrega:
 
-* Na pasta **[!UICONTROL Measurement hypotheses]**, criando uma nova hipótese com base em um template existente e vinculando-a a uma entrega existente.
+* Na pasta **[!UICONTROL Measurement hypotheses]**, criando uma nova hipótese com base em um modelo existente e vinculando-a a uma entrega existente.
 * Através da guia **[!UICONTROL Edit]** > **[!UICONTROL Measurement]** em uma campanha.
 * Com a opção **[!UICONTROL Measurement]** de uma entrega criado de uma campanha.
 
-A hipótese só poderá ser calculada depois que a campanha de marketing tiver sido iniciada e os destinatários tiverem recebido a entrega. Se a hipótese for baseada em uma apresentação da oferta, a última necessidade deverá ser apresentada e ainda estar ativa. A oferta e a entrega são criados por meio da pasta **[!UICONTROL Measurement hypotheses]** e se baseiam em um template de hipótese. No entanto, é possível fazer referência a uma hipótese diretamente na entrega ou na campanha, antes que esta tenha início. Nesse caso, as hipóteses serão calculadas automaticamente no momento em que a campanha de marketing tiver início, com base nas configurações de execução. [Saiba mais](hypothesis-templates.md#hypothesis-template-execution-settings)
+A hipótese só poderá ser calculada depois que a campanha de marketing tiver sido iniciada e os destinatários tiverem recebido a entrega. Se a hipótese for baseada em uma apresentação da oferta, a última necessidade deverá ser apresentada e ainda estar ativa. A oferta e a entrega são criados por meio da pasta **[!UICONTROL Measurement hypotheses]** e se baseiam em um modelo de hipótese. No entanto, é possível fazer referência a uma hipótese diretamente na entrega ou na campanha, antes que esta tenha início. Nesse caso, as hipóteses serão calculadas automaticamente no momento em que a campanha de marketing tiver início, com base nas configurações de execução. [Saiba mais](hypothesis-templates.md#hypothesis-template-execution-settings)
 
 ## Criar uma hipótese em tempo real em uma entrega {#creating-a-hypothesis-on-the-fly-on-a-delivery}
 
@@ -40,7 +40,7 @@ Para criar uma hipótese em uma entrega existente, aplique o seguinte processo:
 
    ![](assets/response_hypothesis_instance_creation_002.png)
 
-1. Na janela da hipótese, selecione um template criado anteriormente. [Saiba mais](hypothesis-templates.md)
+1. Na janela da hipótese, selecione um modelo criado anteriormente. [Saiba mais](hypothesis-templates.md)
 
    ![](assets/response_hypothesis_instance_creation_003.png)
 
@@ -48,7 +48,7 @@ Para criar uma hipótese em uma entrega existente, aplique o seguinte processo:
 
    >[!NOTE]
    >
-   >As configurações definidas no template e invisíveis nesta etapa também são mantidas na memória e reatribuído à hipótese em andamento.
+   >As configurações definidas no modelo e invisíveis nesta etapa também são mantidas na memória e reatribuído à hipótese em andamento.
 
    ![](assets/response_hypothesis_instance_creation_004.png)
 
@@ -59,16 +59,16 @@ Para criar uma hipótese em uma entrega existente, aplique o seguinte processo:
 1. É possível personalizar a hipótese editando as guias **[!UICONTROL General]**, **[!UICONTROL Transactions]** e **[!UICONTROL Scope]**. [Saiba mais](hypothesis-templates.md#creating-a-hypothesis-model)
 1. Comece a hipótese clicando em **[!UICONTROL Start]**.
 
-   Um workflow é criado automaticamente para executar a mensuração. O nome é definido automaticamente de acordo com a configuração da hipótese.
+   Um fluxo de trabalho é criado automaticamente para executar a mensuração. O nome é definido automaticamente de acordo com a configuração da hipótese.
 
    >[!CAUTION]
    >
    >É possível acessar se a caixa **[!UICONTROL Keep execution workflow]** estiver marcada.\
-   >Essa opção deve ser ativada somente para fins de depuração, caso ocorra um erro durante a execução da hipótese. Os workflows gerados automaticamente são salvos na pasta **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Objects created automatically]** > **[!UICONTROL Campaign workflows]** no explorer do Adobe Campaign.
+   >Essa opção deve ser ativada somente para fins de depuração, caso ocorra um erro durante a execução da hipótese. Os fluxos de trabalho gerados automaticamente são salvos na pasta **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Objects created automatically]** > **[!UICONTROL Campaign workflows]** no explorer do Adobe Campaign.
    > 
-   >Além disso, os workflows gerados automaticamente não devem ser modificados. Qualquer modificação eventual em outro lugar é desconsiderada para cálculos posteriores.
+   >Além disso, os fluxos de trabalho gerados automaticamente não devem ser modificados. Qualquer modificação eventual em outro lugar é desconsiderada para cálculos posteriores.
    >
-   >Se essa opção está marcada, exclua o workflow após a execução.
+   >Se essa opção está marcada, exclua o fluxo de trabalho após a execução.
 
    ![](assets/response_hypothesis_instance_creation_006.png)
 
@@ -80,12 +80,12 @@ Para criar uma hipótese em uma entrega existente, aplique o seguinte processo:
 
 ## Referenciar uma hipótese em uma entrega de campanha {#referencing-a-hypothesis-in-a-campaign-delivery}
 
-É possível fazer referência a uma hipótese em uma campanha de marketing antes de ela ser iniciada. Nesse caso, a hipótese será iniciada automaticamente quando a entrega for enviada, com base nas configurações de execução definidas no template da hipótese. Para criar uma hipótese em uma entrega, aplique o seguinte processo:
+É possível fazer referência a uma hipótese em uma campanha de marketing antes de ela ser iniciada. Nesse caso, a hipótese será iniciada automaticamente quando a entrega for enviada, com base nas configurações de execução definidas no modelo da hipótese. Para criar uma hipótese em uma entrega, aplique o seguinte processo:
 
 1. Dependendo das suas necessidades, você pode criar um ou mais modelos do tipo **[!UICONTROL Delivery]**, conforme descrito [nesta seção](hypothesis-templates.md#creating-a-hypothesis-model)
-1. Criar uma campanha de marketing e os workflows para construção do target.
+1. Criar uma campanha de marketing e os fluxos de trabalho de segmentação.
 1. Na janela da entrega, clique no ícone **[!UICONTROL Delivery measurement]**.
-1. Selecione o template da hipótese (a query configurada no template é exibida na janela de hipótese).
+1. Selecione o modelo da hipótese (a query configurada no modelo é exibida na janela de hipótese).
 
    A hipótese será calculada automaticamente quando a campanha for concluída, com base nas datas configuradas no modelo. [Saiba mais](hypothesis-templates.md#hypothesis-template-execution-settings)
 
@@ -100,11 +100,11 @@ Você pode fazer referência diretamente a uma hipótese no nível da campanha. 
 
    ![](assets/response_hypothesis_instance_creation_010.png)
 
-1. Clique em **[!UICONTROL Add]** e selecione um template de hipótese.
+1. Clique em **[!UICONTROL Add]** e selecione um modelo de hipótese.
 
    ![](assets/response_hypothesis_instance_creation_011.png)
 
-   Agora uma hipótese baseada nesse template é referenciada por padrão em cada nova entrega da campanha.
+   Agora uma hipótese baseada nesse modelo é referenciada por padrão em cada nova entrega da campanha.
 
    ![](assets/response_hypothesis_instance_creation_012.png)
 
@@ -138,7 +138,7 @@ Criar uma hipótese em uma apresentação da oferta é semelhante à criação e
 
    ![](assets/response_hypothesis_instance_offer_007.png)
 
-   Se a opção **[!UICONTROL Update offer proposition status]** foi habilitada no template da hipótese, o status da apresentação da oferta é alterado automaticamente, fornecendo feedback sobre o impacto da campanha (para mais informações, consulte [Transações](hypothesis-templates.md#transactions)).
+   Se a opção **[!UICONTROL Update offer proposition status]** foi habilitada no modelo da hipótese, o status da apresentação da oferta é alterado automaticamente, fornecendo feedback sobre o impacto da campanha (para mais informações, consulte [Transações](hypothesis-templates.md#transactions)).
 
 ## Exemplo: criar uma hipótese vinculada a uma entrega {#example--creating-a-hypothesis-linked-to-a-delivery}
 
@@ -146,23 +146,23 @@ Neste exemplo, queremos criar uma hipótese vinculada a uma entrega. Essa hipót
 
 Em seguida, refine a consulta herdada do modelo para fazer uma hipótese em um artigo específico da tabela de compras.
 
-1. Crie uma campanha e uma entrega. [Saiba mais](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)
+1. Crie uma campanha e uma entrega. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR){target=_blank}.
 
-   Nesse exemplo há uma entrega do tipo mala direta.
+   Nesse exemplo há uma entrega do tipo correspondência direta.
 
-1. Configurar um endereço de origem: o template de hipótese criado anteriormente foi configurado para levar um grupo de controle em consideração nos resultados da reação.
+1. Configurar um endereço de origem: o modelo de hipótese criado anteriormente foi configurado para levar um grupo de controle em consideração nos resultados da reação.
 
    ![](assets/response_hypothesis_delivery_example_007.png)
 
    >[!NOTE]
    >
-   >Para obter mais informações, consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+   >Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}.
 
 1. Abra o **[!UICONTROL Direct mail delivery]** e clique no ícone **[!UICONTROL Delivery measurement]** e, em seguida, clique em **[!UICONTROL Add]**.
 
    ![](assets/response_hypothesis_delivery_example_002.png)
 
-1. Escolha na lista suspensa o template de hipótese criado anteriormente.
+1. Escolha na lista suspensa o modelo de hipótese criado anteriormente.
 
    ![](assets/response_hypothesis_delivery_example_004.png)
 
@@ -178,7 +178,7 @@ Em seguida, refine a consulta herdada do modelo para fazer uma hipótese em um a
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Inicie o fluxo de trabalho de direcionamento e execute as verificações necessárias até a conclusão da campanha. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)
+1. Inicie o fluxo de trabalho de direcionamento e execute as verificações necessárias até a conclusão da campanha. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery){target=_blank}.
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 

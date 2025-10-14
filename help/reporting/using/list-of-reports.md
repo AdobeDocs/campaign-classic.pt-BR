@@ -5,10 +5,10 @@ description: Lista de relatórios
 badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 100%
+source-wordcount: '1020'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## Relatórios de entregas {#reports-on-deliveries}
 
-Os relatórios internos fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
+Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
 Para obter mais informações sobre o conteúdo desses relatórios, consulte [esta seção](../../reporting/using/delivery-reports.md).
 
@@ -27,7 +27,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   <tr> 
    <td> <strong>Rótulo e nome interno</strong><br /> </td> 
    <td> <strong>Descrição</strong><br /> </td> 
-   <td> <strong>Schema</strong><br /> </td> 
+   <td> <strong>Esquema</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Atividades do usuário (recipientActivity)<br /> </td> 
@@ -41,7 +41,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Falhas e devoluções (erros)<br /> </td> 
-   <td> Devoluções e não entregues por causa e domínio.<br /> </td> 
+   <td> Rejeições e não entregáveis por causa e domínio.<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -119,11 +119,11 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
 
 ## Relatórios sobre campanhas {#reports-on-campaigns}
 
-Os relatórios sobre campanhas se relacionam aos dados na tabela de **nms:operation** .
+Os relatórios sobre campanhas se relacionam aos dados na tabela **nms:operation**.
 
-Os relatórios internos fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
+Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
-Para obter mais informações sobre o conteúdo desses relatórios, consulte [esta seção](../../campaign/using/designing-marketing-campaigns.md).
+Para obter mais informações sobre o conteúdo desses relatórios, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 <table> 
  <tbody> 
@@ -145,7 +145,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
   </tr> 
   <tr> 
    <td> Falhas e devoluções (operationErrors)<br /> </td> 
-   <td> Devoluções e não entregues por causa do domínio, depende do Campaign.<br /> </td> 
+   <td> Rejeições e não entregáveis por causa do domínio, depende do Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> Exploração de linhas de custo (budgetExplorerOperation)<br /> </td> 
@@ -180,9 +180,9 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
 
 ## Relatórios sobre serviços {#reports-on-services}
 
-Os relatórios sobre serviços diz respeito aos dados na tabela de **nms:service** .
+Os relatórios sobre serviços dizem respeito aos dados na tabela **nms:service**.
 
-Os relatórios internos fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
+Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
 Para obter mais informações sobre o conteúdo desses relatórios, consulte os guias relacionados.
 
@@ -194,7 +194,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte os 
   </tr> 
   <tr> 
    <td> Aquisições de fã (socialAcquisitionsByWebapp)<br /> </td> 
-   <td> Quais aplicativos Web permitiram aquisições de prospecto? Depende de add-on de marketing social.<br /> </td> 
+   <td> Quais aplicativos Web permitiram aquisições de clientes potenciais? Depende de add-on de marketing social.<br /> </td> 
   </tr> 
   <tr> 
    <td> Detalhamento de subscrições (mobileAppDistribution)<br /> </td> 
@@ -217,16 +217,16 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte os 
 
 ## Relatórios de orçamento {#budget-reports}
 
-Os relatórios internos fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
+Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
-Para obter mais informações sobre o conteúdo desses relatórios, consulte [esta seção](../../campaign/using/designing-marketing-campaigns.md).
+Para obter mais informações sobre o conteúdo desses relatórios, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>Rótulo e nome interno</strong><br /> </td> 
    <td> <strong>Descrição</strong><br /> </td> 
-   <td> <strong>Schema</strong><br /> </td> 
+   <td> <strong>Esquema</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Custos vinculados ao(s) programa(s) (budgetProgramCost)<br /> </td> 
@@ -273,9 +273,9 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
 
 ## Relatórios sobre simulações {#reports-on-simulations}
 
-Os relatórios sobre simulações dizem respeito aos dados na tabela de **nms:simulation**.
+Os relatórios sobre simulações dizem respeito aos dados na tabela **nms:simulation**.
 
-Os relatórios internos fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
+Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
 Para obter mais informações sobre o conteúdo desses relatórios, consulte os guias relacionados.
 
@@ -310,9 +310,9 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte os 
 
 ## Relatórios sobre aplicativos web {#reports-on-web-applications}
 
-Os relatórios em aplicativos Web dizem respeito aos dados na tabela de **nms:WebApp** .
+Os relatórios em aplicativos Web dizem respeito aos dados na tabela **nms:WebApp**.
 
-Os relatórios internos fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
+Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
 Para obter mais informações sobre o conteúdo desses relatórios, consulte [esta seção](../../web/using/about-web-applications.md).
 
@@ -339,14 +339,14 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
 
 ## Outros relatórios OOTB {#other-ootb-reports}
 
-Os relatórios a seguir também são fornecidos internamente. Para obter mais informações, consulte o documento na funcionalidade relacionada a eles.
+Os relatórios a seguir também podem ser integrados. Para obter mais informações, consulte o documento na funcionalidade relacionada a eles.
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>Rótulo e nome interno</strong><br /> </td> 
    <td> <strong>Descrição</strong><br /> </td> 
-   <td> <strong>Schema</strong><br /> </td> 
+   <td> <strong>Esquema</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Análise de oferta (offerAnalysis)<br /> </td> 
@@ -359,8 +359,8 @@ Os relatórios a seguir também são fornecidos internamente. Para obter mais in
    <td> nms:webEvent<br /> </td> 
   </tr> 
   <tr> 
-   <td> Histórico de aquisições de prospecto social (socialVisitorStatistics)<br /> </td> 
-   <td> O histórico de aquisições de clientes em potencial do X (anteriormente conhecido como Twitter) e do Facebook depende do complemento de marketing social.<br /> </td> 
+   <td> Histórico de aquisições de clientes potenciais em redes sociais (socialVisitorStatistics)<br /> </td> 
+   <td> O histórico de aquisições de clientes potenciais do X (anteriormente conhecido como Twitter) e do Facebook depende do complemento de marketing social.<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 

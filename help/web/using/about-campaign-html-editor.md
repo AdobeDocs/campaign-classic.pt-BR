@@ -5,10 +5,10 @@ description: Introdução ao Campaign DCE
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 100%
+source-wordcount: '271'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-O **Editor de conteúdo digital (DCE)** é um editor de conteúdo HTML que permite criar ou modificar facilmente templates em formato HTML no Adobe Campaign.
+O **Editor de conteúdo digital (DCE)** é um editor de conteúdo HTML que permite criar ou modificar facilmente modelos em formato HTML no Adobe Campaign.
 
 O Editor de conteúdo digital permite inserir e formatar elementos de página e mapear campos de banco de dados com elementos de uma página HTML. Esse editor está disponível ao criar uma página para um aplicativo web ou entregas com base em um modelo de DCE.
 
@@ -39,7 +39,7 @@ A operação geral é a seguinte:
 Para criar um **aplicativo web** simples, é necessário:
 
 1. Criar um aplicativo web – [Saiba mais](creating-a-landing-page.md)
-1. Selecione conteúdo existente ou crie conteúdo por meio de um template padrão – [Saiba mais](template-management.md)
+1. Selecione conteúdo existente ou crie conteúdo por meio de um modelo padrão – [Saiba mais](template-management.md)
 1. Editar e configurar conteúdo – [Saiba mais](editing-content.md)
 1. Publicar o aplicativo web – [Saiba mais](creating-a-landing-page.md#step-3---publishing-content)
 
@@ -52,7 +52,7 @@ Para criar uma **entrega de email**, é necessário:
 1. Criar uma entrega a partir de um modelo DCE – [Saiba mais](use-case-creating-an-email-delivery.md)
 1. Selecione um conteúdo existente ou crie conteúdo por meio de um [modelo padrão](template-management.md)
 1. Edite e configure conteúdo online
-1. Enviar a entrega – [Saiba mais](../../delivery/using/steps-about-delivery-creation-steps.md)
+1. Enviar a entrega - Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
 
 >[!NOTE]
 >

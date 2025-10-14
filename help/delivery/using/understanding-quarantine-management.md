@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2984'
-ht-degree: 99%
+source-wordcount: '3008'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Alguns provedores de acesso à Internet consideram automaticamente emails como s
 
 Além disso, a quarentena ajuda a reduzir os custos de envio de SMS, excluindo números de telefone incorretos das entregas.
 
-Para obter mais informações sobre as práticas recomendadas para proteger e otimizar suas entregas, consulte [esta página](delivery-best-practices.md).
+Para obter mais informações sobre as práticas recomendadas para proteger e otimizar suas entregas, consulte esta página na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=pt-BR){target="_blank"}.
 
 ### Quarentena versus Lista de bloqueios {#quarantine-vs-denylist}
 
@@ -117,14 +117,14 @@ Na lista de endereços em quarentena (consulte [Identificação de endereços em
 
 Ao contrário de erros graves, os erros recuperáveis não enviam um endereço imediatamente para quarentena, mas incrementam um contador de erros.
 
-As tentativas serão executadas no decorrer da [duração da entrega](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period). Quando o contador de erros atinge o limite da cota, o endereço vai para a quarentena. Para obter mais informações, consulte [Tentativas após uma falha temporária de entrega](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+As tentativas serão executadas durante a duração do delivery. Consulte esta [página](communication-channels.md) em **Envio de entrega** > **Definir o período de validade**. Quando o contador de erros atinge o limite da cota, o endereço vai para a quarentena. Para obter mais informações, consulte [Tentativas após uma falha temporária de entrega](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 O contador de erros será reinicializado se o último erro significativo ocorrer há mais de 10 dias. O status do endereço é alterado para **Válido** e excluído da lista de quarentenas pelo fluxo de trabalho de [limpeza do banco de dados](../../production/using/database-cleanup-workflow.md).
 
 
 Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](sending-with-enhanced-mta.md), o número máximo de tentativas a efetuar em caso de status **[!UICONTROL Erroneous]**, e o atraso mínimo entre tentativas agora se baseiam no desempenho histórico e atual de um IP em um determinado domínio.
 
-Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, você pode modificar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes no [assistente de implantação](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) ou [no nível da entrega](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, você pode modificar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes no [assistente de implantação](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) ou no nível de entrega. Veja esta [página](communication-channels.md) em **Envio de entrega** > **Configurar novas tentativas**.
 
 
 ## Remover um endereço da quarentena {#removing-a-quarantined-address}

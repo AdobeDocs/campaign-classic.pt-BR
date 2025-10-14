@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Assimilar segmentos da Adobe Experience Platform no Campaign
-description: Saiba como assimilar públicos da Adobe Experience Platform no Campaign Classic
+description: Saiba como assimilar públicos-alvos da Adobe Experience Platform no Campaign Classic
 feature: Experience Platform Integration
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 100%
+source-wordcount: '299'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Para assimilar públicos da Adobe Experience Platform no Campaign e usá-los em seus workflows, primeiro é necessário conectar o Adobe Campaign como um **Destino** da Adobe Experience Platform e configurá-lo com o segmento a ser exportado.
+Para assimilar públicos-alvos da Adobe Experience Platform no Campaign e usá-los em seus workflows, primeiro é necessário conectar o Adobe Campaign como um **Destino** da Adobe Experience Platform e configurá-lo com o segmento a ser exportado.
 
 Depois que o Destino for configurado, os dados serão exportados para o local de armazenamento e você precisará criar um fluxo de trabalho dedicado no Campaign Classic para assimilá-los.
 
@@ -35,7 +35,7 @@ Agora você pode configurar um fluxo de trabalho do Campaign Classic para assimi
 
 Depois que o Campaign Classic for configurado como um Destino, será necessário criar um fluxo de trabalho dedicado para importar o arquivo que foi exportado pela Adobe Experience Platform.
 
-Para fazer isso, é necessário adicionar e configurar uma atividade **[!UICONTROL File transfer]**. Para obter mais informações sobre como configurar essa atividade, consulte [esta seção](../../workflow/using/file-transfer.md).
+Para fazer isso, é necessário adicionar e configurar uma atividade **[!UICONTROL File transfer]**. Para obter mais informações sobre como configurar essa atividade, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/rtcdp-file-transfer.png)
 

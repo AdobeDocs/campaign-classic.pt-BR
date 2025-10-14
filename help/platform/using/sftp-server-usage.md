@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: ht
-source-wordcount: '1075'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1076'
+ht-degree: 98%
 
 ---
 
@@ -25,11 +25,11 @@ Ao gerenciar arquivos e dados para fins de ETL, esses arquivos são armazenados 
 
   O formato de chave compatível é SSH-2 RSA 2048. PuTTYgen é a ferramenta para gerar chaves SSH para Windows, e ssh-keygen, para Linux. É possível fazer upload de chaves SSH públicas por meio do Painel de controle do Campaign. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
-* Use em lotes em uploads de SFTP e em workflows.
+* Use em lotes em uploads de SFTP e em fluxos de trabalho.
 
 * Manipule erros/exceções.
 
-* Por padrão, todas as pastas criadas estão em modo de leitura/gravação somente para o seu identificador. Ao criar pastas que precisam ser acessadas pelo Campaign, certifique-se de configurá-las com direitos de leitura/gravação para todo o grupo. Caso contrário, os workflows podem não ser capazes de criar/excluir arquivos como são executados em um identificador diferente no mesmo grupo por motivos de segurança.
+* Por padrão, todas as pastas criadas estão em modo de leitura/gravação somente para o seu identificador. Ao criar pastas que precisam ser acessadas pelo Campaign, certifique-se de configurá-las com direitos de leitura/gravação para todo o grupo. Caso contrário, os fluxos de trabalho podem não ser capazes de criar/excluir arquivos como são executados em um identificador diferente no mesmo grupo por motivos de segurança.
 
 * Os IPs públicos a partir dos quais você está tentando iniciar a conexão SFTP devem ser adicionados à lista de permissões na instância do Campaign. Os IPs públicos podem ser adicionados por meio do Painel de controle. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
@@ -43,15 +43,15 @@ Para evitar esses problemas, a Adobe recomenda seguir as práticas recomendadas 
 
 >[!NOTE]
 >
->* É possível monitorar o armazenamento do servidor SFTP com o [Painel de controle](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/sftp-management/sftp-storage-management){target="_blank"} do Campaign Classic.
+>* Você pode monitorar o armazenamento do servidor SFTP com o [Painel de Controle](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/sftp-management/sftp-storage-management){target="_blank"} do Campaign Classic.
 >
->* O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de administrador estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).{target="_blank"}
+>* O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel){target="_blank"}.
 >
 >* Observe que sua instância deve estar atualizada com a [build mais recente disponível](../../rn/using/rn-overview.md). Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
 
 * As capacidades do tamanho do servidor variam de acordo com sua licença. Em qualquer caso, mantenha o mínimo de dados possíveis e somente pelo tempo necessário (o limite máximo de tempo é 15 dias).
 
-* Use workflows para excluir corretamente os dados (gerencie a retenção de workflows consumindo os dados).
+* Use fluxos de trabalho para excluir corretamente os dados (gerencie a retenção de fluxos de trabalho consumindo os dados).
 
 * Ocasionalmente, conecte-se no SFTP para verificar diretamente o que encontra-se lá.
 
@@ -68,7 +68,7 @@ Além disso, ao especificar no Campaign Classic um caminho para um servidor SFTP
 
 ## Problemas de conexão com o servidor SFTP hospedado pela Adobe {#sftp-server-troubleshooting}
 
-A seção abaixo lista as informações a serem verificadas e fornecidas à equipe de suporte da Adobe por meio do [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} ao encontrar problemas de conexão com os servidores SFTP hospedados pela Adobe.
+A seção abaixo lista as informações a serem verificadas e fornecidas à equipe de suporte da Adobe por meio do [Serviço de Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} ao encontrar problemas de conexão com os servidores SFTP hospedados pela Adobe.
 
 1. Verifique se a sua instância está em execução. Para fazer isso, abra o navegador e faça uma chamada **[!UICONTROL GET]** no ponto de extremidade da instância **[!UICONTROL /r/test]**:
 
@@ -107,7 +107,7 @@ A seção abaixo lista as informações a serem verificadas e fornecidas à equi
 
 Esta seção fornece informações sobre as verificações e ações a serem executadas ao obter o erro “Não foi possível resolver o nome do host” após a conexão com o servidor FTP pelo Campaign Classic.
 
-O journal de workflow mostra os seguintes logs:
+O journal de fluxo de trabalho mostra os seguintes logs:
 
 ```xml
 16/05/2016 12:49:03    fileTransfer    Upload error in cURL
@@ -117,7 +117,7 @@ O journal de workflow mostra os seguintes logs:
 16/05/2016 12:49:03    fileTransfer    1 file(s) to transfer
 ```
 
-Este erro ocorre ao tentar conectar o servidor FTP a partir de um workflow e baixar os arquivos do servidor enquanto você ainda pode se conectar via FTP usando o FileZilla ou WinSCP.
+Este erro ocorre ao tentar conectar o servidor FTP a partir de um fluxo de trabalho e baixar os arquivos do servidor enquanto você ainda pode se conectar via FTP usando o FileZilla ou WinSCP.
 
 Esse erro indica que o nome de domínio do servidor FTP não pôde ser resolvido corretamente. Para solucionar problemas, faça o seguinte:
 
@@ -132,13 +132,13 @@ Esse erro indica que o nome de domínio do servidor FTP não pôde ser resolvido
 
 1. Solução de problemas de **logs de seção**:
 
-   1. No workflow, dê um duplo clique na atividade de [transferência de arquivos](../../workflow/using/file-transfer.md).
+   1. No fluxo de trabalho, dê um duplo clique na atividade de [transferência de arquivos](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
    1. Acesse a guia **[!UICONTROL File Transfer]** e clique em **[!UICONTROL Advanced Parameters]**.
    1. Marque a opção **[!UICONTROL Display the session logs]**.
 
       ![](assets/sftp-error-display-logs.png)
 
-   1. Acesse a auditoria de workflow e verifique se os logs mostram o erro “Não foi possível resolver o nome do host”.
+   1. Acesse a auditoria de fluxo de trabalho e verifique se os logs mostram o erro “Não foi possível resolver o nome do host”.
 
 1. Se o servidor SFTP for hospedado pela Adobe, verifique através do Atendimento ao cliente se o IP foi adicionado à lista de permissões.
 

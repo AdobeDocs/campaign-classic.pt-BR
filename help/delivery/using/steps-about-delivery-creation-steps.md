@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
-source-wordcount: '130'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 67%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 As principais etapas ao criar uma entrega são as seguintes:
 
-1. **Crie e identifique a entrega**. [Leia mais](steps-create-and-identify-the-delivery.md)
+1. **Crie e identifique a entrega**. Leia mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#create-the-delivery){target="_blank"}.
 
 1. **Defina o conteúdo da entrega**. A definição de conteúdo da entrega é específico para cada canal. Para obter mais informações, consulte a seção dedicada:
 
@@ -27,7 +27,7 @@ As principais etapas ao criar uma entrega são as seguintes:
    * [Canal de correspondência direta](defining-the-direct-mail-content.md)
    * [Canal de aplicativo para dispositivos móveis](about-mobile-app-channel.md)
 
-1. **Definição da população do target** [Leia mais](steps-defining-the-target-population.md)
+1. **Definição da população do target** Leia mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message#target-population.html){target="_blank"}.
 
 1. **Envio da entrega** [Leia mais](steps-sending-the-delivery.md)
 
@@ -35,4 +35,4 @@ As principais etapas ao criar uma entrega são as seguintes:
 
 >[!NOTE]
 >
->As etapas descritas abaixo pressupõem que todos os destinatários do target e seus perfis estejam armazenados no banco de dados, exceto no caso de entrega externa (consulte [Seleção de destinatários externos](steps-defining-the-target-population.md#selecting-external-recipients)).
+>As etapas descritas abaixo pressupõem que todos os destinatários do target e seus perfis estejam armazenados no banco de dados, exceto no caso de entrega externa (consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.

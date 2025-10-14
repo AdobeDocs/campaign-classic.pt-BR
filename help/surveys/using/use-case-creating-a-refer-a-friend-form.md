@@ -5,10 +5,10 @@ description: Saiba mais sobre como criar um formulário Indique um Amigo
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 100%
+source-wordcount: '630'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Se o destinatário não tiver consentido, você não pode armazená-lo com os destinatários no banco de dados. Ele será armazenado temporariamente na tabela de **visitante** (**nms:visitor**) criada para campanhas de marketing viral. Essa tabela é removida regularmente graças às operações de **limpeza**.
+   >Se o destinatário não tiver consentido, você não pode armazená-lo com os destinatários no banco de dados. Eles serão armazenados temporariamente na tabela **visitor** (**nms:visitor**) criada para campanhas de marketing viral. Essa tabela é removida regularmente graças às operações de **limpeza**.
    >
    >Neste exemplo, queremos direcionar os destinatários para sugerir que façam parte da competição recomendada por quem indicou. No entanto, nessa mensagem, também queremos oferecer uma subscrição de um de nossos serviços de informação. Caso se subscrevam, eles podem ser armazenados no banco de dados.
 
@@ -64,13 +64,13 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
-1. Em seguida, crie o template da entrega vinculado ao serviço de informação criado durante a etapa 1. Ele será selecionado no campo **[!UICONTROL Choose scenario]** do serviço de informações.
+1. Em seguida, crie o modelo da entrega vinculado ao serviço de informação criado durante a etapa 1. Ele será selecionado no campo **[!UICONTROL Choose scenario]** do serviço de informações.
 
-   O template da entrega usado para criar a mensagem de oferta de referência contém as seguintes informações:
+   O modelo da entrega usado para criar a mensagem de oferta de referência contém as seguintes informações:
 
    ![](assets/s_ncs_admin_survey_viral_sample_7.png)
 
-   Esse template tem as seguintes características:
+   Esse modelo tem as seguintes características:
 
    * Selecione a tabela do visitante como target mapping.
 
@@ -80,7 +80,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
      ![](assets/s_ncs_admin_survey_viral_sample_7a.png)
 
-   * Esse template contém um link para o formulário da competição e o link de subscrição para o indicado se subscrever no boletim informativo.
+   * Esse modelo contém um link para o formulário da competição e o link de subscrição para o indicado se subscrever no boletim informativo.
 
      O link de subscrição é inserido por um bloco de personalização. Por padrão, ele permite subscrever perfis no serviço de **boletim informativo.** Esse bloco de personalização pode ser alterado para atender a sua necessidade, por exemplo, para subscrever o destinatário a um serviço diferente.
 
@@ -88,7 +88,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Consulte [esta página](../../delivery/using/about-templates.md) para obter mais informações sobre templates da entrega.
+   >Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"} para obter mais informações sobre modelos de entrega.
 
 1. Crie o segundo script para entregar as mensagens de subscrição.
 
@@ -117,7 +117,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
     </delivery>)
    ```
 
-1. Publique o formulário da competição e envie um convite para os destinatários do público alvo inicial. Quando um deles convida um amigo, uma entrega com base no template de **oferta de indicação** é criado.
+1. Publique o formulário da competição e envie um convite para os destinatários do público alvo inicial. Quando um deles convida um amigo, uma entrega com base no modelo de **oferta de indicação** é criado.
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 

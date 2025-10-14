@@ -7,10 +7,10 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: ht
-source-wordcount: '1485'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Para criar uma entrega vinculada a uma campanha, clique no link **[!UICONTROL Ad
 
 ![](assets/campaign_op_add_delivery.png)
 
-As configurações sugeridas são adequadas aos diferentes tipos de entrega: correspondência direta, email, canais móveis. [Saiba mais](../../delivery/using/steps-about-delivery-creation-steps.md).
+As configurações sugeridas são adequadas aos diferentes tipos de entrega: correspondência direta, email, canais móveis. Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ## Iniciar uma entrega {#starting-a-delivery}
 
@@ -54,21 +54,21 @@ Uma mensagem de confirmação permite que você proteja esta ação.
 
 ### Iniciar uma entrega offline {#starting-an-offline-delivery}
 
-Após todas as aprovações serem concedidas, o status da entrega será alterado para **[!UICONTROL Pending extraction]**. Os arquivos de extração são criados por um workflow especial, que em uma configuração padrão, inicia automaticamente quando uma entrega de mala direta está com extração pendente. Quando um processo está em andamento, ele é exibido no painel e pode ser editado através do link.
+Após todas as aprovações serem concedidas, o status da entrega será alterado para **[!UICONTROL Pending extraction]**. Os arquivos de extração são criados por um fluxo de trabalho especial, que em uma configuração padrão, inicia automaticamente quando uma entrega de mala direta está com extração pendente. Quando um processo está em andamento, ele é exibido no painel e pode ser editado através do link.
 
 >[!NOTE]
 >
->Os workflows técnicos relacionados ao pacote do Campaign são apresentados na [Lista de workflows técnicos](../../workflow/using/about-technical-workflows.md).
+>Os fluxos de trabalho técnicos relacionados ao pacote de campanha são apresentados na [Lista de fluxos de trabalho técnicos](../../workflow/using/about-technical-workflows.md).
 
 **Etapa 1 - Aprovação de arquivo**
 
-Após executar o workflow de extração com sucesso, o arquivo de extração deve ser aprovado (fornecido de forma que a aprovação do arquivo de extração tenha sido selecionada nas configurações da entrega).
+Após executar o fluxo de trabalho de extração com sucesso, o arquivo de extração deve ser aprovado (fornecido de forma que a aprovação do arquivo de extração tenha sido selecionada nas configurações da entrega).
 
 Para obter mais informações, consulte [Aprovação de um arquivo de extração](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
 
 **Etapa 2 - Aprovação da mensagem para o provedor de serviços**
 
-* Depois que o arquivo de extração for aprovado, é possível gerar a prova do email de notificação do roteador. Esta mensagem de email é construída com base em um template de entrega. Deve ser aprovado.
+* Depois que o arquivo de extração for aprovado, é possível gerar a prova do email de notificação do roteador. Esta mensagem de email é construída com base em um modelo de entrega. Deve ser aprovado.
 
   >[!NOTE]
   >
@@ -123,7 +123,7 @@ Você pode associar vários documentos a uma campanha: relatório, foto, página
 >
 >Esse modo é reservado para documentos pequenos.
 
-Em uma campanha que você também pode consultar outros itens, como cupons promocionais, ofertas especiais relacionadas a uma filial específica ou loja, etc. Quando esses elementos estão incluídos em uma descrição, eles podem ser associados a uma entrega de mala direta. [Saiba mais](#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Em uma campanha que você também pode consultar outros itens, como cupons promocionais, ofertas especiais relacionadas a uma filial específica ou loja, etc. Quando esses elementos estão incluídos em uma descrição, eles podem ser associados a uma entrega de correspondência direta. [Saiba mais](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ Os documentos podem ser associados no nível da campanha (documentos contextuais
 
 A guia **[!UICONTROL Documents]** contém:
 
-* A lista de todos os documentos necessários para o conteúdo (template, imagens etc.) que pode ser baixado localmente pelos operadores do Adobe Campaign com direitos adequados,
+* A lista de todos os documentos necessários para o conteúdo (modelo, imagens etc.) que pode ser baixado localmente pelos operadores do Adobe Campaign com direitos adequados,
 * Documentos contendo informações para o roteador, se houver.
 
 Os documentos são vinculados ao programa ou à campanha através da guia **[!UICONTROL Edit > Documents]**.
@@ -174,9 +174,9 @@ Para criar um outline, clique na guia **[!UICONTROL Delivery outlines]** da camp
 
 >[!NOTE]
 >
->Se essa guia não estiver presente, significa que esse recurso não está disponível para esta campanha. Consulte a configuração do template de campanha.
+>Se essa guia não estiver presente, significa que esse recurso não está disponível para esta campanha. Consulte a configuração do modelo de campanha.
 >   
->Para obter mais informações, consulte [templates de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Para obter mais informações, consulte [Modelos de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
@@ -190,11 +190,11 @@ Em seguida, clique em **[!UICONTROL Add a delivery outline]** e crie a hierarqui
 Uma estrutura pode conter itens e campos de personalização, recursos e ofertas:
 
 * Os itens podem ser documentos físicos, por exemplo, que são referenciados e descritos aqui e serão anexados à entrega.
-* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de destinatários. Assim, é possível criar valores a serem utilizados em entregas para um público-alvo específico (oferta de boas-vindas, desconto etc.). Eles são criados no Adobe Campaign e importados para o estrutura por meio do link **[!UICONTROL Import personalization fields...]**.
+* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de destinatários. Assim, é possível criar valores a serem utilizados em entregas para um público-alvo específico (oferta de boas-vindas, desconto etc.). Eles são criados no Adobe Campaign e importados para a estrutura por meio do link **[!UICONTROL Import personalization fields...]**.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 
-  Eles também podem ser criados diretamente no contorno clicando no ícone **[!UICONTROL Add]** à direita da zona de lista.
+  Eles também podem ser criados diretamente na estrutura clicando no ícone **[!UICONTROL Add]** à direita da zona de lista.
 
   ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
@@ -222,7 +222,7 @@ A guia **[!UICONTROL Summary]** da entrega também exibe essas informações:
 
 #### Resultado da extração {#extraction-result}
 
-No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no template de exportação associado ao provedor de serviços.
+No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no modelo de exportação associado ao provedor de serviços.
 
 No seguinte exemplo, o rótulo, custo estimado e descrição do outline associado à entrega serão adicionados no arquivo de extração.
 
@@ -238,6 +238,6 @@ O modelo de exportação deve estar associado ao provedor de serviços seleciona
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/31837?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

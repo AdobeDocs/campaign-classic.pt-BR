@@ -6,18 +6,18 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: A/B Testing
 role: User
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 100%
+source-wordcount: '150'
+ht-degree: 71%
 
 ---
 
 # Teste A/B: criar um fluxo de trabalho de direcionamento {#step-1--creating-a-targeting-workflow}
 
-É necessário criar o workflow na guia **[!UICONTROL Targeting and Workflows]** de uma campanha. Ele é composto de uma atividade **[!UICONTROL Query]**, uma atividade **[!UICONTROL Split]** vinculada às duas atividades **[!UICONTROL Email delivery]**, uma atividade **[!UICONTROL Wait]**, uma atividade **[!UICONTROL JavaScript code]** e uma atividade **[!UICONTROL Delivery]**.
+É necessário criar o fluxo de trabalho na guia **[!UICONTROL Targeting and Workflows]** de uma campanha. Ele é composto de uma atividade **[!UICONTROL Query]**, uma atividade **[!UICONTROL Split]** vinculada às duas atividades **[!UICONTROL Email delivery]**, uma atividade **[!UICONTROL Wait]**, uma atividade **[!UICONTROL JavaScript code]** e uma atividade **[!UICONTROL Delivery]**.
 
-1. Caso ainda não o tenha feito, crie uma campanha (para saber mais, consulte [esta seção](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
+1. Caso ainda não o tenha feito, crie uma campanha. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR){target=_blank}.
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Altere o rótulo do fluxo de trabalho existente ou clique em **[!UICONTROL Add]** para criar um novo (para obter mais informações, consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)).
+1. Altere o rótulo do fluxo de trabalho existente ou clique em **[!UICONTROL Add]** para criar um novo (para mais informações sobre isso, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=pt-BR){target="_blank"}.
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 

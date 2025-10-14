@@ -4,9 +4,9 @@ title: Personalização e privacidade
 description: Conheça as práticas recomendadas de segurança para privacidade e personalização
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '817'
 ht-degree: 12%
 
 ---
@@ -25,11 +25,11 @@ Ao adicionar links personalizados ao seu conteúdo, sempre evite qualquer person
 
 ### Recomendações
 
-Para validar e garantir que você não está usando acima, execute uma consulta na tabela de URL de rastreamento por meio do [Editor de consultas genéricas do Campaign](../../platform/using/about-queries-in-campaign.md) ou crie um fluxo de trabalho com critérios de filtragem na [atividade de consulta](../../workflow/using/query.md).
+Para validar e garantir que você não esteja usando a tabela acima, execute uma consulta na tabela de URL de rastreamento por meio do [Editor de consultas genéricas do Campaign](../../platform/using/about-queries-in-campaign.md) ou crie um fluxo de trabalho com critérios de filtragem na atividade de consulta. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 Exemplo:
 
-1. Crie um fluxo de trabalho e adicione uma atividade **Query**. [Saiba mais](../../workflow/using/query.md).
+1. Crie um fluxo de trabalho e adicione uma atividade **Query**. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 1. Abra a atividade **Query** e crie um filtro na tabela `nmsTrackingUrl` da seguinte maneira:
 

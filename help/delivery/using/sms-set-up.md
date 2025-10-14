@@ -6,10 +6,10 @@ feature: SMS
 role: User, Developer, Admin
 level: Experienced
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
-source-wordcount: '1739'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1736'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Para enviar para um celular, você precisa:
 
    Observe que os conectores herdados agora estão obsoletos. Embora os recursos obsoletos ainda estejam disponíveis, eles não serão aprimorados nem terão suporte. Saiba mais [nesta página](../../rn/using/deprecated-features.md).
 
-1. Um template da entrega no qual essa conta externa é referenciada.
+1. Um modelo da entrega no qual essa conta externa é referenciada.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Para fazer isso, siga as etapas abaixo:
 
    Em seguida, entre em contato com seu provedor, dependendo do escolhido, que fornecerá o valor a ser inserido no campo **[!UICONTROL SMSC implementation name]**.
 
-   Você pode definir o número de conexões para o provedor por MTA secundário. Por padrão, é definido como 1.
+   Você pode definir o número de conexões para o provedor por MTA filho. Por padrão, é definido como 1.
 
 1. Por padrão, o número de caracteres em um SMS atende aos padrões GSM.
 
@@ -84,7 +84,7 @@ Para fazer isso, siga as etapas abaixo:
 
    Para obter mais informações, consulte [esta seção](#about-text-encodings).
 
-1. Na guia **[!UICONTROL SMSC specificities]**, a opção **[!UICONTROL Send full phone number]** é desabilitada por padrão. Não ative se quiser respeitar o protocolo SMPP e transferir apenas dígitos ao servidor do provedor SMS (SMSC).
+1. Na guia **[!UICONTROL SMSC specificities]**, a opção **[!UICONTROL Send full phone number]** é desabilitada por padrão. Não habilite se quiser respeitar o protocolo SMPP e transferir apenas dígitos ao servidor do provedor SMS (SMSC).
 
    Contudo, tendo em conta que determinados provedores exigem o uso do prefixo &quot;+&quot;, recomenda-se verificar com seu provedor e, se necessário, eles irão sugerir que seja habilitada.
 
@@ -353,20 +353,20 @@ As etapas para configurar uma conta externa usando o conector SMPP genérico est
 
 ## Alterar o modelo de entrega {#changing-the-delivery-template}
 
-O Adobe Campaign oferece um template da entrega para celulares. Esse template está disponível no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Para obter mais informações, consulte a seção [Sobre templates](about-templates.md)
+O Adobe Campaign oferece um modelo da entrega para celulares. Esse modelo está disponível no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
-Para entrega via canal SMS, você deve criar um template no qual o conector de canal é referenciado.
+Para entrega via canal SMS, você deve criar um modelo no qual o conector de canal é referenciado.
 
-Para manter o template da entrega nativa, recomendamos que você o duplique e depois configure.
+Para manter o modelo da entrega nativa, recomendamos que você o duplique e depois configure.
 
-No exemplo abaixo, criamos um template para fazer a entrega de mensagens pela conta SMPP habilitada anteriormente. Para fazer isso:
+No exemplo abaixo, criamos um modelo para fazer a entrega de mensagens pela conta SMPP habilitada anteriormente. Para fazer isso:
 
 1. Vá para o nó **[!UICONTROL Delivery templates]**
 1. Clique com o botão direito do mouse no modelo **[!UICONTROL Send to mobiles]** e selecione **[!UICONTROL Duplicate]**.
 
    ![](assets/s_user_mobile_template_change_01.png)
 
-1. Altere o rótulo do template, por exemplo **Enviado para dispositivos móveis (SMPP)**.
+1. Altere o rótulo do modelo, por exemplo **Enviado para dispositivos móveis (SMPP)**.
 
    ![](assets/s_user_mobile_template_change_02.png)
 
@@ -375,8 +375,8 @@ No exemplo abaixo, criamos um template para fazer a entrega de mensagens pela co
 
    ![](assets/s_user_mobile_template_change_03.png)
 
-1. Clique em **[!UICONTROL Save]** para criar o template.
+1. Clique em **[!UICONTROL Save]** para criar o modelo.
 
    ![](assets/s_user_mobile_template_list.png)
 
-Agora você tem uma conta externa e um template da entrega que possibilita a entrega via SMS.
+Agora você tem uma conta externa e um modelo da entrega que possibilita a entrega via SMS.

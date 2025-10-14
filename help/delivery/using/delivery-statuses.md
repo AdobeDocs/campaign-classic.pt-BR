@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Monitoring, Deliverability
 role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '638'
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ Para obter mais detalhes sobre as diferentes falhas de entrega que podem ser enc
   </tr> 
   <tr> 
    <td> Failed<br /> </td> 
-   <td> A entrega não conseguiu alcançar o destinatário devido a um endereço inválido ou a uma caixa de entrada cheia, por exemplo. Também pode ser um problema com blocos de personalização, pois esses blocos podem gerar erros quando os schemas não correspondem ao mapeamento da entrega. Consulte <a href="understanding-delivery-failures.md" target="_blank">Conhecendo as falhas de entrega</a><br /> </td> 
+   <td> A entrega não conseguiu alcançar o destinatário devido a um endereço inválido ou a uma caixa de entrada cheia, por exemplo. Também pode ser um problema com blocos de personalização, pois esses blocos podem gerar erros quando os esquemas não correspondem ao mapeamento da entrega. Consulte <a href="understanding-delivery-failures.md" target="_blank">Conhecendo as falhas de entrega</a><br /> </td> 
   </tr>
   <tr> 
    <td> Pending<br /> </td> 
@@ -93,7 +93,7 @@ Para saber como otimizar a capacidade de entrega dos emails do Adobe Campaign, c
 
 Após confirmar a entrega, você pode ver que o status da entrega é **[!UICONTROL Pending]**. Esse status significa que o processo de execução está aguardando a disponibilidade de alguns recursos.
 
-O status **[!UICONTROL Pending]** pode significar que a sua entrega foi agendada e está pendente até a data especificada. Para obter mais informações, consulte a seção [Agendamento de entrega](steps-sending-the-delivery.md#scheduling-the-delivery-sending).
+O status **[!UICONTROL Pending]** pode significar que a sua entrega foi agendada e está pendente até a data especificada. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}
 
 Se a entrega não estiver sendo enviada e o status permanecer **[!UICONTROL Pending]**, poderá ser devido a:
 

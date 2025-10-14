@@ -5,10 +5,10 @@ description: Saiba como enviar, monitorar e rastrear SMS no Campaign
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
 source-wordcount: '887'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -80,13 +80,11 @@ O módulo de **sms nlserver** consulta o roteador SMS em intervalos regulares. I
   > * Os relatórios de status de uma conta externa de SMS excluída não são processados corretamente.
   > * Uma conta SMS só pode ser vinculada a uma única conta externa para garantir que os relatórios de status sejam atribuídos à conta correta
 
-* **Unsubscription**: destinatários que desejam parar de receber entregas de SMS podem retornar uma mensagem contendo a palavra PARAR. Se o seu provedor permitir sob os termos do contrato, você poderá recuperar mensagens por meio da atividade de workflow de **SMS de entrada** e criar um query para habilitar a opção **Não entrar em contato com este destinatário** para os destinatários relacionados.
-
-  Consulte a guia [Workflows](../../workflow/using/architecture.md) .
+* **Unsubscription**: destinatários que desejam parar de receber entregas de SMS podem retornar uma mensagem contendo a palavra PARAR. Se o seu provedor permitir sob os termos do contrato, você poderá recuperar mensagens por meio da atividade de fluxo de trabalho de **SMS de entrada** e criar um query para habilitar a opção **Não entrar em contato com este destinatário** para os destinatários relacionados.
 
 ## Esquema InSMS {#insms-schema}
 
-O schema InSMS contém informações relevantes para o SMS de entrada. Uma descrição desses campos está disponível por meio do atributo desc.
+O esquema InSMS contém informações relevantes para o SMS de entrada. Uma descrição desses campos está disponível por meio do atributo desc.
 
 * **mensagem**: conteúdo do SMS recebido.
 * **origem**: número do celular na origem da mensagem.
@@ -169,4 +167,4 @@ O nome do remetente desse tipo de mensagem é um código curto geralmente usado 
 >
 >Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no painel de entrega. [Saiba mais](delivery-dashboard.md).
 >
->Essas mensagens não são consideradas nas regras de pressão comercial. [Saiba mais](../../campaign-opt/using/pressure-rules.md).
+>Essas mensagens não são consideradas nas regras de pressão comercial. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-optimization/pressure-rules){target="_blank"}.

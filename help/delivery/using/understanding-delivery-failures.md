@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
-workflow-type: ht
-source-wordcount: '2567'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '2578'
+ht-degree: 98%
 
 ---
 
@@ -123,7 +123,7 @@ Os possíveis motivos para uma falha de entrega são:
    <td> Caixa de entrada cheia </td> 
    <td> Suave </td> 
    <td> 5 </td> 
-   <td> A caixa de entrada deste usuário está cheia e não pode receber mais mensagens. Este perfil será alvo novamente até que a contagem de erros chegue a 5. Após isso, o registro será definido como Status de Quarentena e não haverá nenhuma tentativa nova.<br /> Esse tipo de erro é gerenciado por um processo de limpeza, o endereço é definido como um status válido após 30 dias.<br /> Aviso: para que o endereço seja removido automaticamente da lista de endereços em quarentena, o workflow técnico de limpeza do banco de dados deve ser iniciado.<br /> </td> 
+   <td> A caixa de entrada deste usuário está cheia e não pode receber mais mensagens. Este perfil será alvo novamente até que a contagem de erros chegue a 5. Após isso, o registro será definido como Status de Quarentena e não haverá nenhuma tentativa nova.<br /> Esse tipo de erro é gerenciado por um processo de limpeza, o endereço é definido como um status válido após 30 dias.<br /> Aviso: para que o endereço seja removido automaticamente da lista de endereços em quarentena, o fluxo de trabalho técnico de limpeza do banco de dados deve ser iniciado.<br /> </td> 
   </tr> 
   <tr> 
    <td> Não conectado </td> 
@@ -188,9 +188,9 @@ Se uma mensagem falhar devido a um erro **suave** ou **grave** que é temporári
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](sending-with-enhanced-mta.md), as configurações de tentativas de entrega não são mais usadas pelo Campaign. As tentativas de rejeição temporária e o intervalo de tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição que retornam do domínio de email da mensagem.
 
-Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, para modificar a duração de uma entrega, vá para os parâmetros avançados da entrega ou template da entrega e especifique a duração desejada no campo correspondente. Consulte [Definição do período de validade](steps-sending-the-delivery.md#defining-validity-period).
+Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, para modificar a duração de uma entrega, vá para os parâmetros avançados da entrega ou modelo da entrega e especifique a duração desejada no campo correspondente. Consulte esta [página](communication-channels.md) em **Envio de entrega** > **Definir o período de validade**.
 
-A configuração padrão permite cinco tentativas em intervalos de uma hora, seguidas por uma nova tentativa por dia, por quatro dias. O número de tentativas pode ser alterado globalmente (entre em contato com o administrador técnico da Adobe) ou para cada entrega ou modelo da entrega. Consulte [Configurar novas tentativas](steps-sending-the-delivery.md#configuring-retries).
+A configuração padrão permite cinco tentativas em intervalos de uma hora, seguidas por uma nova tentativa por dia, por quatro dias. O número de tentativas pode ser alterado globalmente (entre em contato com o administrador técnico da Adobe) ou para cada entrega ou modelo da entrega. Veja esta [página](communication-channels.md) em **Envio de entrega** > **Configurar novas tentativas**.
 
 ## Erros síncronos e assíncronos {#synchronous-and-asynchronous-errors}
 
@@ -243,7 +243,7 @@ A mensagem retornada pelo servidor remoto na primeira ocorrência desse tipo de 
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-O Adobe Campaign filtra essa mensagem para excluir o conteúdo variável (como IDs, datas, endereços de email, números de telefone etc.) e exibe o resultado filtrado na coluna **[!UICONTROL Text]**. As variáveis são substituídas por **`#xxx#`**, exceto os endereços que são substituídos por **`*`**.
+O Adobe Campaign filtra esta mensagem para excluir o conteúdo variável (como IDs, datas, endereços de email, números de telefone etc.) e exibe o resultado filtrado na coluna **[!UICONTROL Text]**. As variáveis são substituídas por **`#xxx#`**, exceto os endereços que são substituídos por **`*`**.
 
 Esse processo permite reunir todas as falhas do mesmo tipo e evitar várias entradas para erros semelhantes na tabela de qualificação do log de entrega.
 
@@ -254,8 +254,8 @@ Esse processo permite reunir todas as falhas do mesmo tipo e evitar várias entr
 Os emails de devolução podem ter o seguinte status de qualificação:
 
 * **[!UICONTROL To qualify]**: o email de devolução não pôde ser qualificado. A qualificação deve ser atribuída à equipe de capacidade de entrega para garantir uma plataforma eficiente de deliverability. Contanto que não seja qualificado, o email de devolução não é usado para enriquecer a lista de regras de gestão de email.
-* **[!UICONTROL Keep]**: o email de devolução foi qualificado e será usado pelo workflow **Refresh for deliverability** para ser comparado às regras de gerenciamento de email existentes e enriquecer a lista.
-* **[!UICONTROL Ignore]**: o e-mail de rejeição é ignorado pelo MTA do Campaign, o que significa que essa rejeição nunca fará com que o endereço do destinatário seja colocado em quarentena. Ele não será usado pelo workflow **Atualizar para entrega** e não será enviado para instâncias do cliente.
+* **[!UICONTROL Keep]**: o email de devolução foi qualificado e será usado pelo fluxo de trabalho **Refresh for deliverability** para ser comparado às regras de gerenciamento de email existentes e enriquecer a lista.
+* **[!UICONTROL Ignore]**: o e-mail de rejeição é ignorado pelo MTA do Campaign, o que significa que essa rejeição nunca fará com que o endereço do destinatário seja colocado em quarentena. Ele não será usado pelo fluxo de trabalho **Atualizar para entrega** e não será enviado para instâncias do cliente.
 
 ![](assets/deliverability_qualif_status.png)
 
@@ -298,7 +298,7 @@ Quando um email não é entregue, o servidor remoto envia uma mensagem de rejei�
 
 >[!NOTE]
 >
->O usuário pode criar as próprias regras. Ao importar um pacote e ao atualizar dados por meio do workflow **Atualizar para deliverability**, as regras criadas pelo usuário são substituídas.
+>O usuário pode criar as próprias regras. Ao importar um pacote e ao atualizar dados por meio do fluxo de trabalho **Atualizar para deliverability**, as regras criadas pelo usuário são substituídas.
 
 Para obter mais informações sobre qualificação de envio de emails, consulte [esta seção](#bounce-mail-qualification).
 
@@ -315,7 +315,7 @@ Para instalações lno local e instalações hospedadas/híbridas que usam o MTA
 * Você pode escolher se ativa ou não determinados padrões de identificação e chaves de criptografia para verificar o nome do domínio, como **ID do remetente**, **DomainKeys**, **DKIM**, e **S/MIME**.
 * Os parâmetros de **retransmissão SMTP** permitem configurar o endereço IP e a porta de um servidor de retransmissão para um determinado domínio. Para obter mais informações, consulte [esta seção](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no endereço do remetente, verifique se não está assinando seus emails com a **ID do remetente**, que é o padrão de autenticação de email proprietário desatualizado da Microsoft. Se a opção **[!UICONTROL Sender ID]** estiver ativada, desmarque a caixa correspondente e entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Sua capacidade de entrega não será afetada.
+Se suas mensagens forem exibidas no Outlook com **[!UICONTROL on behalf of]** no endereço do remetente, verifique se não está assinando seus emails com a **ID do remetente**, que é o padrão de autenticação de email proprietário desatualizado da Microsoft. Se a opção **[!UICONTROL Sender ID]** estiver habilitada, desmarque a caixa correspondente e entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Sua capacidade de entrega não será afetada.
 
 #### Gerenciamento de MX {#mx-management}
 

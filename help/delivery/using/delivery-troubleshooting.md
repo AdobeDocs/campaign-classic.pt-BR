@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Monitoring, Deliverability, Troubleshooting
 role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 100%
+source-wordcount: '809'
+ht-degree: 87%
 
 ---
 
@@ -31,7 +31,7 @@ Depois de clicar no botão **[!UICONTROL Send]**, sua entrega parece demorar mai
 
 * Alguns provedores de email podem ter adicionado seus endereços IP a uma lista de bloqueios. Neste caso, verifique seus broadlogs e consulte [esta seção](about-deliverability.md).
 
-* Sua entrega pode ser muito grande para ser processada rapidamente, isso pode ocorrer com alta personalização do JavaScript ou se a sua entrega pesa mais do que 60 kbytes. Consulte as [Práticas recomendadas de entrega](delivery-best-practices.md) do Adobe Campaign para saber mais sobre as diretrizes de conteúdo.
+* Sua entrega pode ser muito grande para ser processada rapidamente, isso pode ocorrer com alta personalização do JavaScript ou se a sua entrega pesa mais do que 60 kbytes. Consulte as [Práticas recomendadas de entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=pt-BR){target="_blank"} do Adobe Campaign v8.  para saber mais sobre as diretrizes de conteúdo.
 
 * Pode ter ocorrido limitação dentro do MTA do Adobe Campaign. Isso é causado por:
 
@@ -45,11 +45,11 @@ Depois de clicar no botão **[!UICONTROL Send]**, sua entrega parece demorar mai
 
 Se as entregas não forem executadas em uma data agendada específica, pode ser por diferença entre o fuso horário dos servidores. A instância mid-sourcing e a instância de produção podem estar em fusos horários diferentes.
 
-Como exemplo, se a ocorrência de mid-sourcing estiver no fuso horário de Brisbane e a instância de produção estiver no fuso horário de Darwin, os fusos horários têm meia hora de diferença um do outro e, no log de auditoria, é possível ver claramente que se a entrega estiver agendada para a produção às 11h56, a mesma entrega agendada para mid deveria ser às 12h26, com uma diferença de meia hora.
+Como exemplo, se a instância mid-sourcing estiver no fuso horário Brisbane e a instância de produção estiver no fuso horário de Darwin, os fusos horários têm meia hora de diferença um do outro e, no log de auditoria, é possível ver claramente que se a entrega está agendada para produção em 11:56, o mesmo delivery agendado para mid deve ser em 12:26, com uma diferença de meia hora.
 
 ## Status de falha {#failed-status}
 
-Se o status de uma entrega de email for **[!UICONTROL Failed]**, ela poderá ser vinculada a um problema com blocos de personalização. Os blocos de personalização em uma entrega podem gerar erros quando os schemas não correspondem ao mapeamento da entrega, por exemplo.
+Se o status de uma entrega de email for **[!UICONTROL Failed]**, ela poderá ser vinculada a um problema com blocos de personalização. Os blocos de personalização em uma entrega podem gerar erros quando os esquemas não correspondem ao mapeamento da entrega, por exemplo.
 
 Os logs da entrega são fundamentais para saber por que uma entrega falhou. Aqui estão possíveis erros que você pode detectar nos logs de entrega:
 
@@ -61,7 +61,7 @@ Os logs da entrega são fundamentais para saber por que uma entrega falhou. Aqui
 
   A causa desse problema é quase sempre uma personalização na tentativa do HTML que chama uma tabela ou campo que não foi definido ou mapeado no direcionamento de upstream ou no target mapping da entrega.
 
-  Para corrigir isso, o workflow e o conteúdo da entrega precisam ser revisados para determinar especificamente qual personalização está tentando chamar a tabela em questão e se a tabela pode ou não ser mapeada. A partir daí, ao remover a chamada para esta tabela no HTML ou ao corrigir o mapping para a entrega pode ser o caminho para a resolução.
+  Para corrigir isso, o fluxo de trabalho e o conteúdo da entrega precisam ser revisados para determinar especificamente qual personalização está tentando chamar a tabela em questão e se a tabela pode ou não ser mapeada. A partir daí, ao remover a chamada para esta tabela no HTML ou ao corrigir o mapping para a entrega pode ser o caminho para a resolução.
 
 * No modelo de implantação mid-sourcing, a seguinte mensagem pode aparecer nos logs de entrega:
 
@@ -73,7 +73,7 @@ Os logs da entrega são fundamentais para saber por que uma entrega falhou. Aqui
 
   Para resolver isso, recomendamos executar um vácuo e reindexação no banco de dados. Para obter mais informações sobre manutenção de banco de dados, consulte [esta seção](../../production/using/recommendations.md).
 
-  Você também deve reiniciar todos os workflows com uma atividade agendada e todos os workflows com o status de falha. Consulte [esta seção](../../workflow/using/scheduler.md).
+  Você também deve reiniciar todos os fluxos de trabalho com uma atividade agendada e todos os fluxos de trabalho com o status de falha. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 * Quando uma entrega falha, o seguinte erro pode aparecer nos logs de entrega:
 
@@ -83,7 +83,7 @@ Os logs da entrega são fundamentais para saber por que uma entrega falhou. Aqui
 
   Normalmente, esse erro significa que há um campo ou bloco de personalização no email com mais de um valor para o destinatário. Um bloco de personalização está sendo usado e está buscando mais de um registro para um determinado destinatário.
 
-  Para resolver isso, verifique os dados de personalização usados e verifique o target para os destinatários que têm mais de uma entrada para qualquer um desses campos. Você também pode usar uma atividade **[!UICONTROL Deduplication]** no workflow para construção do target antes da atividade de entrega para verificar se há apenas um campo de personalização por vez. Para obter mais informações sobre desduplicação, consulte [esta página](../../workflow/using/deduplication.md).
+  Para resolver isso, verifique os dados de personalização usados e verifique o target para os destinatários que têm mais de uma entrada para qualquer um desses campos. Você também pode usar uma atividade **[!UICONTROL Deduplication]** no fluxo de trabalho de segmentação antes da atividade de entrega para verificar se há apenas um campo de personalização por vez. Para obter mais informações sobre desduplicação, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
 
 * Algumas entregas podem falhar com um erro &quot;Inacessível&quot; informando:
 

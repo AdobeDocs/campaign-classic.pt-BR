@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Monitoring, Email Design, Personalization
 role: User
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '176'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '179'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ As configurações de rastreamento de mensagem avançadas são acessíveis por m
 
 >[!NOTE]
 >
->A gestão de imagens em emails também é configurada nessa janela. Consulte [Adicionar imagens](defining-the-email-content.md#adding-images).
+>A gestão de imagens em emails também é configurada nessa janela. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 

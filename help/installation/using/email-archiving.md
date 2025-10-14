@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 3%
@@ -24,13 +24,13 @@ No entanto, o próprio Adobe Campaign não gerencia arquivos arquivados. Ela per
 
 Para fazer isso, os arquivos .eml correspondentes aos emails enviados são transferidos para um servidor remoto, como um servidor de email SMTP. O destino do arquivamento é um endereço de email com CCO (invisível para os recipients do delivery) que você deve especificar.
 
-## Recommendations e limitações {#recommendations-and-limitations}
+## Recomendações e limitações {#recommendations-and-limitations}
 
 * O recurso Cco de email é opcional. Verifique o contrato de licença.
-* Para **arquiteturas hospedadas e híbridas**, entre em contato com o executivo da sua conta para ativá-la. O endereço de email de CCO de sua escolha deve ser fornecido à equipe do Adobe que irá configurá-lo para você.
+* Para **arquiteturas hospedadas e híbridas**, entre em contato com o executivo da sua conta para ativá-la. O endereço de email de CCO de sua escolha deve ser fornecido à equipe do Adobe que o configurará para você.
 * Para **instalações no local**, siga as diretrizes abaixo para ativá-lo. Consulte as seções [Ativação do email Cco (no local)](#activating-email-archiving--on-premise-) e [Configuração do endereço de email CCO (no local)](#configuring-the-bcc-email-address--on-premise-).
 * Você só pode usar um endereço de email CCO.
-* Depois que o email Cco for configurado, verifique se o recurso está habilitado no modelo de entrega ou no delivery por meio da opção **[!UICONTROL Email BCC]**. Para obter mais informações, consulte [esta seção](../../delivery/using/sending-messages.md#archiving-emails).
+* Depois que o email Cco for configurado, verifique se o recurso está habilitado no modelo de entrega ou no delivery por meio da opção **[!UICONTROL Email BCC]**. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}.
 * Somente os emails enviados com êxito são considerados. As rejeições não são.
 * O sistema de arquivamento de emails mudou com o Adobe Campaign 17.2 (build 8795). Se você já estava usando o arquivamento de emails, é necessário atualizar manualmente para o novo sistema de email Cco. Para obter mais informações, consulte a seção [Migração para o novo Email Cco](#updated-email-archiving-system--bcc-).
 
@@ -134,7 +134,7 @@ No arquivo **config-`<instance name>.xml`**, use os seguintes parâmetros para d
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >

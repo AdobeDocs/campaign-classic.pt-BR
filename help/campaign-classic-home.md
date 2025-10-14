@@ -3,9 +3,9 @@ keywords: Campaign Classic;página inicial;tópicos populares
 product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '341'
 ht-degree: 97%
 
 ---
@@ -60,7 +60,7 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <div><strong>Automatização com fluxos de trabalho</strong><br/>Saiba como aproveitar fluxos de trabalho para projetar processos, incluindo segmentação, execução de campanha, processamento de arquivos, participação humana, entre outros.
     </div></td>
     <td>
-    <a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
+    <a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
     <div><strong>Criação de entregas</strong><br/>Saiba como enviar mensagens em vários canais, como email, SMS, notificações por push etc.</div>
     </td>
   </tr>
@@ -68,7 +68,7 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
 
@@ -84,7 +84,7 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatização com workflows</a> — <a href="campaign/using/setting-up-marketing-campaigns.md">Campanha de marketing</a> — <a href="interaction/using/interaction-and-offer-management.md">Interação e gerenciamento de ofertas</a> — <a href="delivery/using/about-personalization.md">Personalização</a> — <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Relatórios</a>
+      <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatização com workflows</a> — <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR" target="_blank">Campanha de marketing</a> — <a href="interaction/using/interaction-and-offer-management.md">Interação e gerenciamento de ofertas</a> — <a href="delivery/using/about-personalization.md">Personalização</a> — <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Relatórios</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">

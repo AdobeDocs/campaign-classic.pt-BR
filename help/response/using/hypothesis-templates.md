@@ -8,10 +8,10 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1387'
-ht-degree: 100%
+source-wordcount: '1390'
+ht-degree: 98%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 100%
 
 ## Cria um modelo de hipótese {#creating-a-hypothesis-model}
 
-A configuração do template de hipótese permite definir o contexto para mensurar as reações, seja para uma entrega ou para uma oferta. É onde as várias tabelas de mensuração são referenciadas, assim como aquelas que definem as relações entre individuais, hipóteses e a tabela de transações.
+A configuração do modelo de hipótese permite definir o contexto para mensurar as reações, seja para uma entrega ou para uma oferta. É onde as várias tabelas de mensuração são referenciadas, assim como aquelas que definem as relações entre individuais, hipóteses e a tabela de transações.
 
-Aplique as seguintes etapas para criar um template de hipótese:
+Aplique as seguintes etapas para criar um modelo de hipótese:
 
 1. No explorer do Adobe Campaign, clique em **[!UICONTROL Resources>Templates>Hypothesis templates]**.
 
@@ -51,21 +51,21 @@ Aplique as seguintes etapas para criar um template de hipótese:
 
 A guia **[!UICONTROL General]** permite especificar as opções gerais do modelo. Os campos disponíveis são:
 
-* **[!UICONTROL Hypothesis type]**: permite determinar se o template deve ser destinado à hipótese sobre entregas ou ofertas.
+* **[!UICONTROL Hypothesis type]**: permite determinar se o modelo deve ser destinado à hipótese sobre entregas ou ofertas.
 
   É possível optar por criar uma hipótese que será aplicada tanto em entregas quanto em ofertas.
 
   >[!NOTE]
   >
-  >Se o template for aplicável a ofertas, a opção **[!UICONTROL Update offer proposition status]** estará disponível na guia **[!UICONTROL Transactions]**.
+  >Se o modelo for aplicável a ofertas, a opção **[!UICONTROL Update offer proposition status]** estará disponível na guia **[!UICONTROL Transactions]**.
 
-* **[!UICONTROL Measurement with control group]**: permite indicar se um grupo de controle foi definido para a entrega ou campanha, assim como incluí-lo nos indicadores de mensuração. O grupo de controle, que não recebe entregas, permite medir o impacto da campanha após a entrega, comparando-o com a amostragem alvo que recebeu a entrega.
+* **[!UICONTROL Measurement with control group]**: permite indicar se um grupo de controle foi definido para a entrega ou campanha, assim como incluí-lo nos indicadores de mensuração. O grupo de controle, que não recebe entregas, permite medir o impacto da campanha após a entrega, comparando-o com a população de destino que recebeu a entrega.
 
   >[!NOTE]
   >
-  >Se o template está configurado para assumir um grupo de controle em conta, mas nenhum grupo está definido na entrega relacionada à hipótese, os resultados são baseados somente em destinatários direcionados.
+  >Se o modelo está configurado para assumir um grupo de controle em conta, mas nenhum grupo está definido na entrega relacionada à hipótese, os resultados são baseados somente em destinatários direcionados.
 
-  Para mais informações sobre como definir e configurar um grupo de controle, consulte [esta seção](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+  Para obter mais informações sobre como definir e configurar um grupo de controle, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}.
 
 * **[!UICONTROL Channel]**: é possível escolher um canal específico ou disponibilizar o modelo da hipótese em todos os canais no console do Adobe Campaign selecionando **[!UICONTROL All channels]** na lista suspensa. Se o modelo for configurado para um canal específico, é possível filtrar automaticamente as entregas por canal ao criar a hipótese. [Saiba mais](creating-hypotheses.md)
 
@@ -78,7 +78,7 @@ A guia **[!UICONTROL General]** permite especificar as opções gerais do modelo
 
 A guia **[!UICONTROL General]** do modelo também permite especificar os parâmetros de execução da hipótese. As opções disponíveis são:
 
-* **[!UICONTROL Schedule execution for a time of low activity]**: permite agendar a aplicação da hipótese para otimizar desempenhos do Adobe Campaign. Quando essa opção é marcada, o workflow do processamento em campanhas executa o cálculo de hipóteses durante o tempo de inatividade.
+* **[!UICONTROL Schedule execution for a time of low activity]**: permite agendar a aplicação da hipótese para otimizar desempenhos do Adobe Campaign. Quando essa opção é marcada, o fluxo de trabalho do processamento em campanhas executa o cálculo de hipóteses durante o tempo de inatividade.
 
   ![](assets/response_exec_settings_002.png)
 
@@ -105,13 +105,13 @@ A guia **[!UICONTROL General]** do modelo também permite especificar os parâme
       ![](assets/response_frequency_execution_003.png)
 
 * **[!UICONTROL Log SQL queries in journal]**: esta função é destinada para usuários especialistas. Ele permite adicionar uma guia à auditoria da hipótese de mensuração para mostrar queries SQL. Isso permite a detecção de possíveis defeitos se uma simulação terminar com erros.
-* **[!UICONTROL Keep execution workflow]**: permite manter o fluxo de trabalho gerado automaticamente no início do cálculo da hipótese. Na hipótese criada a partir de um template que tem essa opção marcada, o workflow gerado está disponível para seguir o processo.
+* **[!UICONTROL Keep execution workflow]**: permite manter o fluxo de trabalho gerado automaticamente no início do cálculo da hipótese. Na hipótese criada a partir de um modelo que tem essa opção marcada, o fluxo de trabalho gerado está disponível para seguir o processo.
 
   >[!CAUTION]
   >
   >Essa opção deve ser ativada somente para fins de depuração, caso ocorra um erro durante a execução da hipótese.\
-  >Além disso, os workflows gerados automaticamente não devem ser modificados. Qualquer modificação eventual em outro lugar é desconsiderada para cálculos posteriores.\
-  >Se essa opção está marcada, exclua o workflow após a execução.
+  >Além disso, os fluxos de trabalho gerados automaticamente não devem ser modificados. Qualquer modificação eventual em outro lugar é desconsiderada para cálculos posteriores.\
+  >Se essa opção está marcada, exclua o fluxo de trabalho após a execução.
 
 ### Transações {#transactions}
 
@@ -120,12 +120,12 @@ Esta guia contém vários campos e tabelas que permitem salvar o histórico das 
 * **[!UICONTROL Schema (reaction log storage)]**: selecione a tabela de reação de destinatário. A tabela pronta para uso no Adobe Campaign é a **NmsRemaMatchRcp**.
 * **[!UICONTROL Transaction schema]**: escolha a tabela relacionada à hipótese, ou seja, a tabela de transação ou a de compra.
 * **[!UICONTROL Querying schema]**: escolha os critérios para filtrar a hipótese.
-* **[!UICONTROL Link to individuals]**: escolha o vínculo entre as Pessoas físicas e a tabela usada como schema de transações.
-* **[!UICONTROL Link to the household]**: seleciona o vínculo para a família no schema de transações se desejar incluir todos os membros de uma organização em uma hipótese. Este campo é opcional.
+* **[!UICONTROL Link to individuals]**: escolha o vínculo entre as Pessoas físicas e a tabela usada como esquema de transações.
+* **[!UICONTROL Link to the household]**: seleciona o vínculo para a família no esquema de transações se desejar incluir todos os membros de uma organização em uma hipótese. Este campo é opcional.
 * **[!UICONTROL Transaction date]**: este campo é opcional, mas recomendado, pois permite a definição de um escopo para o cálculo de hipótese.
-* **[!UICONTROL Measurement period]**: permite a configuração de datas de início e término para que as hipóteses sejam executadas e as linhas de compra sejam recuperadas.
+* **[!UICONTROL Measurement period]**: permite a configuração de datas inicial e final para que as hipóteses sejam executadas e as linhas de compra sejam recuperadas.
 
-  Quando a hipótese está vinculada a uma entrega, a mensuração é acionada automaticamente por alguns dias após a data de contato da mala direta ou após a data do email ou SMS.
+  Quando a hipótese está vinculada a uma entrega, a mensuração é acionada automaticamente por alguns dias após a data de contato da correspondência direta ou após a data do email ou SMS.
 
   ![](assets/response_measurement_001.png)
 
@@ -185,14 +185,14 @@ Depois de definir a tabela de transações e os campos que são relacionados, é
 
 ## Exemplo: criar um modelo de hipótese em uma entrega {#example--creating-a-hypothesis-template-on-a-delivery}
 
-Neste exemplo é criado um template de hipótese em uma entrega do tipo mala direta. A tabela de transações (**Compras** no exemplo) que a hipótese está baseada contém linhas de compra vinculadas aos artigos ou produtos. O template é configurado para criar hipóteses em artigos ou produtos da tabela de compras.
+Neste exemplo é criado um modelo de hipótese em uma entrega do tipo mala direta. A tabela de transações (**Compras** no exemplo) que a hipótese está baseada contém linhas de compra vinculadas aos artigos ou produtos. O template é configurado para criar hipóteses em artigos ou produtos da tabela de compras.
 
 1. No explorer do Adobe Campaign, vá para o nó **[!UICONTROL Resources > Templates > Hypothesis templates]**.
-1. Clique em **[!UICONTROL New]** para criar um template.
+1. Clique em **[!UICONTROL New]** para criar um modelo.
 
    ![](assets/response_hypothesis_model_example_001.png)
 
-1. Alterar o rótulo do template.
+1. Alterar o rótulo do modelo.
 
    ![](assets/response_hypothesis_model_example_002.png)
 
@@ -202,7 +202,7 @@ Neste exemplo é criado um template de hipótese em uma entrega do tipo mala dir
 
    >[!NOTE]
    >
-   >Como o template é específico para a entrega de mala direta, a hipótese criada através desse template pode não estar vinculada a nenhum outro tipo de entrega.
+   >Como o modelo é específico para a entrega de mala direta, a hipótese criada através desse modelo pode não estar vinculada a nenhum outro tipo de entrega.
 
 1. Na guia **[!UICONTROL Transactions]**, selecione a tabela de reações do destinatário.
 
@@ -234,6 +234,6 @@ Neste exemplo é criado um template de hipótese em uma entrega do tipo mala dir
 
    ![](assets/response_hypothesis_model_example_011.png)
 
-   O template criado permite a execução da hipótese nos produtos ou artigos da tabela de compras.
+   O modelo criado permite a execução da hipótese nos produtos ou artigos da tabela de compras.
 
-1. Clique em **[!UICONTROL Save]** para registrar o template.
+1. Clique em **[!UICONTROL Save]** para registrar o modelo.

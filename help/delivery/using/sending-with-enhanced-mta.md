@@ -5,10 +5,10 @@ description: Saiba mais sobre o escopo e as especificidades do envio de emails c
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
-workflow-type: ht
-source-wordcount: '1368'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1380'
+ht-degree: 97%
 
 ---
 
@@ -121,7 +121,7 @@ Para obter mais informações sobre a taxa de transferência da entrega, consult
 
 As configurações de nova tentativa da entrega não são mais usadas pelo Campaign. As tentativas de rejeição temporária e o intervalo de tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição que retornam do domínio de email da mensagem.
 
-Para obter mais informações sobre tentativas, consulte [esta seção](steps-sending-the-delivery.md#configuring-retries).
+Para obter mais informações sobre tentativas, consulte esta [página](communication-channels.md) em **Envio de entrega** > **Configurar tentativas**.
 
 ### Período de validade
 
@@ -131,7 +131,7 @@ Por exemplo, se o período de validade for definido como o valor padrão de 5 di
 
 Quando uma mensagem estiver na fila do MTA aprimorado por 3,5 dias e não for entregue, o tempo limite expirará, e seu status será atualizado de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** nos logs do delivery.
 
-Para obter mais informações sobre o período de validade, consulte [esta seção](steps-sending-the-delivery.md#defining-validity-period).
+Para obter mais informações sobre o período de validade, consulte esta [página](communication-channels.md) em **Envio de entrega** > **Definir o período de validade**.
 
 ### Assinatura DKIM
 
@@ -140,7 +140,7 @@ Para obter mais informações sobre DKIM, consulte o [Manual de práticas recome
 
 ### Relatórios de sucesso da entrega
 
-Na exibição **[!UICONTROL Summary]** de um painel de [entrega de email](delivery-dashboard.md), a porcentagem de **[!UICONTROL Success]** começa em 100% e diminui progressivamente por todo o [período de validade da entrega](steps-sending-the-delivery.md#defining-validity-period), conforme as rejeições temporárias e permanentes são relatadas do MTA aprimorado para o Campaign.
+Na exibição **[!UICONTROL Summary]** de um painel de [entrega de email](delivery-dashboard.md), a porcentagem de **[!UICONTROL Success]** começa em 100% e diminui progressivamente por todo o [período de validade da entrega](communication-channels.md), conforme as rejeições temporárias e permanentes são relatadas do MTA aprimorado para o Campaign.
 
 De fato, todas as mensagens são exibidas como **[!UICONTROL Sent]** no [enviando logs](delivery-dashboard.md#delivery-logs-and-history) assim que são transmitidas com êxito do Campaign para o MTA aprimorado. Eles permanecem com esse status, a menos que uma [rejeição](understanding-delivery-failures.md#delivery-failure-types-and-reasons) para essa mensagem seja comunicada do MTA aprimorado para o Campaign.
 

@@ -5,10 +5,10 @@ description: Criar entregas para enviar mensagens personalizadas em diferentes c
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 98%
+source-wordcount: '947'
+ht-degree: 91%
 
 ---
 
@@ -18,9 +18,7 @@ Com o Adobe Campaign, você pode enviar campanhas entre canais, incluindo e-mail
 
 As funcionalidades principais incluem direcionamento, definição e personalização de mensagens, execução de comunicações e os relatórios operacionais associados.
 
-Como parte da iniciativa de promoção do Campaign v8, a documentação do Campaign Classic foi reorganizada. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8.
-
-
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentação do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis exclusivamente no conjunto de documentação do Campaign v8.
 
 >[!BEGINTABS]
 
@@ -34,12 +32,12 @@ Para saber mais sobre os canais de comunicação, consulte a [documentação do 
 
 >[!TAB Conteúdo e público-alvo da entrega]
 
-Conheça as principais etapas relacionadas à criação de entregas, conteúdo e público-alvo na documentação do Campaign v8:
+Saiba mais sobre as principais etapas relacionadas à criação de entrega, conteúdo e público-alvo **na documentação do Campaign v8**:
 
 * [Criar a entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#create-the-delivery){target="_blank"}: aprenda a criar uma entrega individual e única.
 * [Definir o conteúdo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#content-of-the-delivery){target="_blank"}: configure o conteúdo de entrega específico para cada canal.
 * [Especificar o público-alvo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#target-population){target="_blank"}: defina vários tipos de público-alvo: público-alvo principal, público-alvo de prova, seed addresses e grupos de controle.
-* [Trabalhar com modelos de entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=pt-BR){target="_blank"}: saiba como definir modelos para facilitar a criação de entregas.
+* [Trabalhar com modelos de entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}: saiba como definir modelos para facilitar a criação de entregas.
 
 
 
@@ -47,7 +45,7 @@ Conheça as principais etapas relacionadas à criação de entregas, conteúdo e
 
 >[!TAB Validação e envio de entrega]
 
-Consulte estas páginas para saber mais sobre a validação de entrega, envio e práticas recomendadas na documentação do Campaign v8:
+Consulte estas páginas para saber mais sobre validação de entrega, envio e práticas recomendadas **na documentação do Campaign v8**:
 
 * [Validar a entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#validate-the-delivery){target="_blank"}: saiba como validar a entrega antes de enviá-la para o destino principal.
 * [Enviar a entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#configuring-and-sending-the-delivery){target="_blank"}: defina as configurações de entrega e como enviar suas mensagens.
@@ -104,7 +102,7 @@ Para instalações no local e instalações hospedadas/híbridas usando o MTA he
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Por padrão, cinco tentativas são agendadas para o primeiro dia da entrega, com um intervalo mínimo de uma hora distribuído pelas 24 horas do dia. Uma nova tentativa por dia é programada depois disso e até o prazo da entrega, que é definido na guia **[!UICONTROL Validity]**. Consulte [Definir o período de validade](#defining-validity-period).
+Por padrão, cinco tentativas são agendadas para o primeiro dia da entrega, com um intervalo mínimo de uma hora distribuído pelas 24 horas do dia. Uma nova tentativa por dia é programada depois disso e até o prazo da entrega, que é definido na guia **[!UICONTROL Validity]**. Consulte a seção abaixo.
 
 **Definir o período de validade**
 
@@ -130,7 +128,7 @@ Quando a entrega for iniciada, as mensagens (e todas as tentativas) poderão ser
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
 
 >[!NOTE]
 >

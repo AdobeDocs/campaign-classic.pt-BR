@@ -5,9 +5,9 @@ description: Saiba como instalar pacotes integrados do Campaign
 feature: Installation, Application Settings
 badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1270'
 ht-degree: 10%
 
 ---
@@ -66,12 +66,12 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Campanhas de marketing (Campanha)<br /> </td> 
-   <td> Define, otimiza, executa e analisa campanhas de comunicação e marketing. <a href="../../campaign/using/designing-marketing-campaigns.md">Saiba Mais</a><br /> </td> 
+   <td> Define, otimiza, executa e analisa campanhas de comunicação e marketing. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">Saiba Mais</a><br /> </td> 
    <td> Marketing</td>
   </tr> 
   <tr> 
    <td> Gestão dos Recursos de Marketing (MRM)<br /> </td> 
-   <td> Controla ações de marketing em um modo colaborativo fornecendo gerenciamento e rastreamento das tarefas, orçamentos e recursos de marketing. <a href="../../mrm/using/about-marketing-resource-management.md">Saiba Mais</a> <br /> </td> 
+   <td> Controla ações de marketing em um modo colaborativo fornecendo gerenciamento e rastreamento das tarefas, orçamentos e recursos de marketing. <a href="https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=pt-BR" target="_blank">Saiba Mais</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -97,7 +97,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr--> 
   <tr> 
    <td> Redes sociais (Marketing social) <br /> </td> 
-   <td> Sincroniza o Adobe Campaign com o X (anteriormente conhecido como Twitter) e o Facebook. <a href="../../social/using/about-social-marketing.md">Saiba Mais</a> <br /> </td> 
+   <td> Sincroniza o Adobe Campaign com X (anteriormente conhecido como Twitter) e Facebook. <a href="../../social/using/about-social-marketing.md">Saiba Mais</a> <br /> </td> 
    <td> Todos</td> 
   </tr> 
   <tr> 
@@ -157,12 +157,12 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Acesso a dados externos (Federated Data Access)<br /> </td> 
-   <td> Fornece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessá-los sem alterar a estrutura dos dados do Adobe Campaign.  Opcional. <a href="../../workflow/using/accessing-an-external-database-fda.md">Saiba Mais</a> <br /> </td> 
+   <td> Fornece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessá-los sem alterar a estrutura dos dados do Adobe Campaign.  Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Saiba Mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
   </tr> 
   <tr> 
    <td> Otimização de campanha<br /> </td> 
-   <td> Controla, filtra e monitora o envio de deliveries para que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa. Opcional. <a href="../../campaign-opt/using/about-campaign-typologies.md">Saiba Mais</a> <br /> </td> 
+   <td> Controla, filtra e monitora o envio de deliveries para que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa. Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=pt-BR" target="_blank">Saiba Mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -182,7 +182,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Marketing Central/Local (Marketing Distribuído)<br /> </td> 
-   <td> Implementa campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Opcional. <a href="../../distributed/using/about-distributed-marketing.md">Saiba Mais</a><br /> </td> 
+   <td> Implementa campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=pt-BR" target="_blank">Saiba Mais</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -196,8 +196,8 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> Integração com AEM<br /> </td> 
-   <td> Permite gerenciar o conteúdo dos deliveries de email, bem como seus formulários diretamente no Adobe Experience Manager, a fim de se beneficiar das funcionalidades de edição de conteúdo do AEM, bem como das capacidades de delivery do Adobe Campaign. <a href="../../integrations/using/about-adobe-experience-manager.md">Saiba Mais</a> <br /> </td> 
+   <td> Integração com o AEM<br /> </td> 
+   <td> Permite gerenciar o conteúdo dos deliveries de email, bem como os formulários diretamente no Adobe Experience Manager, para se beneficiar das funcionalidades de edição de conteúdo do AEM, bem como das capacidades de delivery do Adobe Campaign. <a href="../../integrations/using/about-adobe-experience-manager.md">Saiba Mais</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -227,7 +227,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Suporte ao AMP<br /> </td> 
-   <td> Permite usar o novo AMP interativo para formato de email e enviar emails dinâmicos. Opcional. <a href="../../delivery/using/defining-interactive-content.md">Saiba Mais</a> <br /> </td> 
+   <td> Permite usar o novo AMP interativo para formato de email e enviar emails dinâmicos. Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=pt-BR" target="_blank">Saiba Mais</a> <br /> </td> 
    <td> Todos </td> 
   </tr> 
   <tr> 

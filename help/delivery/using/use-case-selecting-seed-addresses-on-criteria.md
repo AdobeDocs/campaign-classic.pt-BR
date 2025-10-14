@@ -5,10 +5,10 @@ description: 'Caso de uso: selecionar seed addresses de acordo com critérios'
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 100%
+source-wordcount: '850'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Para usar a condição dinâmica, você deve ter:
 
 ## Etapa 1 - Criar uma entrega  {#step-1---creating-a-delivery}
 
-As etapas para criar uma entrega estão detalhadas na seção [Criar uma entrega por email](creating-an-email-delivery.md).
+As etapas para criar uma entrega estão detalhadas na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=pt-BR){target="_blank"}.
 
 Neste exemplo, o gerenciador de entrega criou o boletim informativo e selecionou os destinatários.
 
@@ -49,12 +49,12 @@ Para obter mais detalhes sobre extensões de esquema, consulte [esta seção](..
 
    ![](assets/dlv_seeds_usecase_09.png)
 
-1. Selecione o schema de origem **[!UICONTROL Seed addresses]**, insira **doc** como o **[!UICONTROL Namespace]** e clique em **[!UICONTROL Ok]**.
+1. Selecione o esquema de origem **[!UICONTROL Seed addresses]**, insira **doc** como o **[!UICONTROL Namespace]** e clique em **[!UICONTROL Ok]**.
 
    ![](assets/dlv_seeds_usecase_10.png)
 
 1. Clique em **[!UICONTROL Save]**.
-1. Na janela de edição do schema, copie as linhas abaixo e cole na área indicada na captura de tela.
+1. Na janela de edição do esquema, copie as linhas abaixo e cole na área indicada na captura de tela.
 
    ```
      <element name="common">
@@ -76,7 +76,7 @@ Para obter mais detalhes sobre extensões de esquema, consulte [esta seção](..
 
    ![](assets/dlv_seeds_usecase_29.png)
 
-   Nesse caso, você está especificando que uma nova lista discriminada chamada **[!UICONTROL Department]** foi criada na tabela de seed addresses e é baseada no template de enumeração **[!UICONTROL @company]** padrão (rotulada com o nome **Company** no formulário de seed address).
+   Nesse caso, você está especificando que uma nova lista discriminada chamada **[!UICONTROL Department]** foi criada na tabela de seed addresses e é baseada no modelo de enumeração **[!UICONTROL @company]** padrão (rotulada com o nome **Company** no formulário de seed address).
 
 1. Clique em **[!UICONTROL Save]**.
 1. Na seção **[!UICONTROL Tools > Advanced]** selecione a opção **[!UICONTROL Update database structure]**.
@@ -93,17 +93,17 @@ Para obter mais detalhes sobre extensões de esquema, consulte [esta seção](..
 
    Você pode fechar o assistente após o término da atualização.
 
-1. Desconecte e reconecte o Adobe Campaign. As alterações feitas no schema de dados do seed address agora estão em vigor. Para ficarem visíveis na tela do seed address, você deve atualizar o **[!UICONTROL Input form]** associado. Consulte a seção [Atualizar o formulário de entrada](#updating-the-input-form).
+1. Desconecte e reconecte o Adobe Campaign. As alterações feitas no esquema de dados do seed address agora estão em vigor. Para ficarem visíveis na tela do seed address, você deve atualizar o **[!UICONTROL Input form]** associado. Consulte a seção [Atualizar o formulário de entrada](#updating-the-input-form).
 
 #### Estender o esquema de dados de uma tabela vinculada {#extending-the-data-schema-from-a-linked-table}
 
 O esquema de dados de seed addresses pode usar valores de uma tabela vinculada ao esquema de dados do destinatário – Destinatário (nms).
 
-Por exemplo, o usuário gostaria de integrar a **[!UICONTROL Internet Extension]** localizada na tabela **[!UICONTROL Country]**, que está vinculada ao schema de destinatários.
+Por exemplo, o usuário gostaria de integrar a **[!UICONTROL Internet Extension]** localizada na tabela **[!UICONTROL Country]**, que está vinculada ao esquema de destinatários.
 
 ![](assets/dlv_seeds_usecase_06.png)
 
-Portanto, ele deve estender o schema de dados dos seed addresses como detalhado na seção . No entanto, as linhas de código a serem integradas na **etapa 4** são as seguintes:
+Portanto, ele deve estender o esquema de dados dos seed addresses como detalhado na seção . No entanto, as linhas de código a serem integradas na **etapa 4** são as seguintes:
 
 ```
 <element name="country">
@@ -174,7 +174,7 @@ Agora você pode especificar a condição dinâmica dos seed addresses para a en
 
    >[!NOTE]
    >
-   >A extensão de schema criada anteriormente vem do schema de **destinatários.** Os valores exibidos na tela acima vêm de uma enumeração do schema do **destinatário** .
+   >A extensão de esquema criada anteriormente vem do esquema de **destinatários.** Os valores exibidos na tela acima vêm de uma enumeração do esquema do **destinatário** .
 
 1. Clique em **[!UICONTROL Ok]**.
 

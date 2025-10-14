@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3094'
+source-wordcount: '3096'
 ht-degree: 13%
 
 ---
@@ -25,11 +25,11 @@ A seção a seguir fornece uma visão geral da configuração necessária para c
 
 >[!NOTE]
 >
->Algumas configurações só podem ser executadas por Adobe para implantações hospedadas por Adobe, por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md).
+>Algumas configurações só podem ser executadas pelo Adobe para implantações hospedadas pelo Adobe, por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md).
 
 Para obter mais informações sobre os conceitos e as práticas recomendadas relacionadas à capacidade de entrega com o Adobe Campaign, consulte esta [seção](../../delivery/using/about-deliverability.md).
 
-Para aprofundar o assunto, incluindo todas as recomendações técnicas relacionadas ao envio e recebimento eficientes de emails por uma plataforma Adobe, consulte o [Manual de práticas recomendadas de capacidade de entrega do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
+Para aprofundar o assunto, incluindo todas as recomendações técnicas relacionadas ao envio e recebimento eficientes de emails por uma plataforma Adobe, consulte o [Manual de práticas recomendadas de capacidade de delivery do Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 ## Princípio operacional {#operating-principle}
 
@@ -192,7 +192,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
                 mta6.am0.yahoodns.net has address 66.196.118.33
 ```
 
-Quatro desses oito endereços IP já são usados no mta5 (98.136.216.26, 98.138.112.38, 63.250.192.46 e 98.136.217.203). Esse registro permite que o usuário use quatro novos endereços IP. O terceiro registro MX fará o mesmo.
+Quatro destes oito endereços IP já estão sendo usados no mta5 (98.136.216.26, 98.138.112.38, 63.250.192.46 e 98.136.217.203). Esse registro permite que o usuário use quatro novos endereços IP. O terceiro registro MX fará o mesmo.
 
 No total, temos 16 endereços IP remotos. Em combinação com nossos dois IPs públicos locais, temos 32 caminhos para alcançar servidores de email yahoo.com.
 
@@ -316,22 +316,22 @@ Você pode definir o formato das mensagens enviadas, para que o conteúdo exibid
 
 Para fazer isso, vá para o documento **[!UICONTROL Management of email formats]**, localizado em **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
 
-Este documento contém uma lista de todos os domínios predefinidos que correspondem aos formatos japoneses gerenciados pelo Adobe Campaign. Para obter mais informações, consulte [este documento](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Este documento contém uma lista de todos os domínios predefinidos que correspondem aos formatos japoneses gerenciados pelo Adobe Campaign. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 ![](assets/mail_rule_sets.png)
 
 O parâmetro **estrutura MIME** (Extensões de Email de Internet Multipropósito) permite definir a estrutura de mensagens que será enviada para clientes de email diferentes. Há três opções disponíveis:
 
-* **Multipart**: a mensagem é enviada no formato de texto ou HTML. Se o formato HTML não for aceito, a mensagem ainda poderá ser exibida no formato de texto.
+* **Multipart**: a mensagem é enviada em formato de texto ou HTML. Se o formato HTML não for aceito, a mensagem ainda poderá ser exibida no formato de texto.
 
   Por padrão, a estrutura multipart é **multipart/alternative**, mas automaticamente se torna **multipart/related** quando uma imagem é adicionada à mensagem. Alguns provedores esperam o formato **multipart/related** por padrão. A opção **[!UICONTROL Force multipart/related]** impõe esse formato mesmo se nenhuma imagem estiver anexada.
 
-* **HTML**: somente uma mensagem HTML é enviada. Se o formato HTML não for aceito, a mensagem não será exibida.
+* **HTML**: somente uma mensagem do HTML é enviada. Se o formato HTML não for aceito, a mensagem não será exibida.
 * **Texto**: uma mensagem no formato somente texto é enviada. A vantagem das mensagens em formato de texto é seu tamanho muito pequeno.
 
 Se a opção **[!UICONTROL Image inclusion]** estiver habilitada, elas serão exibidas diretamente no corpo do email. As imagens serão carregadas e os links de URL serão substituídos pelo conteúdo.
 
-Esta opção é usada principalmente pelo mercado japonês para **Deco-mail**, **Decore Mail** ou **Decoration Mail**. Para obter mais informações, consulte [este documento](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Esta opção é usada principalmente pelo mercado japonês para **Deco-mail**, **Decore Mail** ou **Decoration Mail**. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 >[!IMPORTANT]
 >
