@@ -440,7 +440,7 @@ A seção de atividade de **[!UICONTROL AND-join]** foi aprimorada com informaç
 
 Um caso de uso sobre como atualizar automaticamente uma lista usando uma consulta incremental foi adicionado aos casos de uso de fluxo de trabalho. [Leia mais](../../workflow/using/about-workflow-use-cases.md)
 
-As [Notas de versão](../../rn/using/latest-release.md) foram reorganizadas: uma [página de visão geral](../../rn/using/latest-release.md) foi adicionada com informações sobre status de criação, processo de atualização, recomendações e links importantes. Uma página dedicada às versões do [[!DNL Gold Standard] também foi ](../../rn/using/gold-standard.md) adicionada e a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) foi integrada.
+As [Notas de versão](../../rn/using/latest-release.md) foram reorganizadas: uma [página de visão geral](../../rn/using/latest-release.md) foi adicionada com informações sobre status de criação, processo de atualização, recomendações e links importantes. Uma página dedicada às versões do [[!DNL Gold Standard] também foi &#x200B;](../../rn/using/gold-standard.md) adicionada e a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) foi integrada.
 
 Uma nova seção foi adicionada com diretrizes relacionadas ao monitoramento do Campaign Classic. [Leia mais](../../production/using/monitoring-guidelines.md)
 

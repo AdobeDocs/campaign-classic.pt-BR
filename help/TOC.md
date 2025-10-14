@@ -376,7 +376,7 @@ ht-degree: 72%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Trabalhar com o  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurar a integração](integrations/using/configuring-the-integration.md)
-      + [Criar um informativo do [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Criar um informativo do [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Trabalhar com o  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurar a integração com o [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)

@@ -206,7 +206,7 @@ A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais co
 
 A Adobe não oferece suporte aos seguintes mecanismos de banco de dados, pois foram descontinuados pelo editor. Os clientes que executam essas versões precisam atualizar para a versão mais recente ou mudar para outra.
 
-Consulte a [Matriz de compatibilidade do Campaign ](../../rn/using/compatibility-matrix.md) para acessar a lista de versões compatíveis.
+Consulte a [Matriz de compatibilidade do Campaign &#x200B;](../../rn/using/compatibility-matrix.md) para acessar a lista de versões compatíveis.
 
 **FEDERATED DATA ACCESS (FDA)** 
 

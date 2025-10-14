@@ -20,7 +20,7 @@ As entregas podem ser criadas por meio do painel da campanha, de um fluxo de tra
 
 Quando criados a partir de uma campanha, as entregas serão vinculadas a essa campanha e consolidadas em seu nível.
 
-![](assets/do-not-localize/how-to-video.png)[Descubra este recurso no vídeo](#create-email-video)
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#create-email-video)
 
 ## Criar entregas {#creating-deliveries}
 
