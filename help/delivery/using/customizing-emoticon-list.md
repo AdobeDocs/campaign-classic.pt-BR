@@ -18,7 +18,7 @@ ht-degree: 93%
 A lista de emoticons exibida na janela pop-up é regida por uma enumeração que permite exibir valores em uma lista para restringir as opções que o usuário tem para um determinado campo.
 A ordem da lista de emoticons pode ser personalizada. Também é possível adicionar outros emoticons à lista.
 
-Observe que os emoticons só estão disponíveis para email e push. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}.
+Observe que os emoticons só estão disponíveis para email e push. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR#inserting-emoticons){target="_blank"}.
 
 
 ## Adicionar um novo emoticon {#add-new-emoticon}
@@ -63,7 +63,7 @@ O novo emoticon será colocado automaticamente na loja.
 
 1. Para que as alterações sejam levadas em conta, desconecte e reconecte novamente o Adobe Campaign Classic. Se o novo emoticon ainda não aparecer na janela pop-up **[!UICONTROL Insert emoticon]**, talvez seja necessário limpar o cache. Para obter mais informações, consulte esta [seção](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 
-1. O novo emoticon agora pode ser encontrado nas entregas na janela pop-up **[!UICONTROL Insert emoticon]** na posição 61, conforme configurado nas etapas anteriores. Para obter mais informações sobre como usar emoticons nos deliveries, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}.
+1. O novo emoticon agora pode ser encontrado nas entregas na janela pop-up **[!UICONTROL Insert emoticon]** na posição 61, conforme configurado nas etapas anteriores. Para obter mais informações sobre como usar emoticons nos deliveries, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR#inserting-emoticons){target="_blank"}.
 
    ![](assets/emoticon_4.png)
 

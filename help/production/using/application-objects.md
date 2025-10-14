@@ -40,7 +40,7 @@ Esse método também destaca os usuários que criam muitos objetos.
 
 ## Entregas {#deliveries}
 
-Deve haver menos de 1000 deliveries na instância a qualquer momento. Ter muitos deliveries consome espaço no banco de dados e gera problemas. Uma instância que cria mais de 10 deliveries por dia deve ser verificada em relação aos requisitos de negócios. Considere usar deliveries contínuos para criar menos deliveries. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html){target="_blank"}.
+Deve haver menos de 1000 deliveries na instância a qualquer momento. Ter muitos deliveries consome espaço no banco de dados e gera problemas. Uma instância que cria mais de 10 deliveries por dia deve ser verificada em relação aos requisitos de negócios. Considere usar deliveries contínuos para criar menos deliveries. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html?lang=pt-BR){target="_blank"}.
 
 Os deliveries com mais de dois anos devem ser removidos da instância.
 
@@ -48,14 +48,14 @@ Os deliveries com mais de dois anos devem ser removidos da instância.
 
 O número de arquivos no disco do servidor de aplicativos não deve aumentar indefinidamente.
 
-Os workflows de importação criam arquivos e, portanto, causam expansão de disco. Isso pode ser evitado usando a atividade padrão [File collector](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-collector.html){target="_blank"}. O coletor de arquivos move os arquivos para uma pasta temporária e os limpa automaticamente.
+Os workflows de importação criam arquivos e, portanto, causam expansão de disco. Isso pode ser evitado usando a atividade padrão [File collector](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-collector.html?lang=pt-BR){target="_blank"}. O coletor de arquivos move os arquivos para uma pasta temporária e os limpa automaticamente.
 
 Se um workflow importar arquivos e não usar os recursos padrão, ele precisará ser removido para manter o espaço em disco mínimo.
 
 ## Registros e dados transacionais {#transactional-data-and-logs}
 
-Todo fluxo de trabalho que importa dados para o Adobe Campaign faz com que o tamanho do banco de dados aumente. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}.
+Todo fluxo de trabalho que importa dados para o Adobe Campaign faz com que o tamanho do banco de dados aumente. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=pt-BR){target="_blank"}.
 
-Verifique se os workflows de limpeza ou limpeza estão em execução e efetivamente limpando registros. Todos os dados e logs transacionais devem ser removidos. A tarefa de limpeza limpa somente as tabelas padrão: rastreamento e logs amplos. Tabelas específicas devem ser removidas por fluxos de trabalho específicos. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+Verifique se os workflows de limpeza ou limpeza estão em execução e efetivamente limpando registros. Todos os dados e logs transacionais devem ser removidos. A tarefa de limpeza limpa somente as tabelas padrão: rastreamento e logs amplos. Tabelas específicas devem ser removidas por fluxos de trabalho específicos. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=pt-BR){target="_blank"}.
 
 Fique atento aos dados transacionais de classificação por vencimento verificando a data de criação mais antiga dos registros.

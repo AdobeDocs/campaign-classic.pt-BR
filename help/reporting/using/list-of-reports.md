@@ -123,7 +123,7 @@ Os relatórios sobre campanhas se relacionam aos dados na tabela **nms:operation
 
 Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
-Para obter mais informações sobre o conteúdo desses relatórios, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Para obter mais informações sobre o conteúdo desses relatórios, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=pt-BR){target=_blank}.
 
 <table> 
  <tbody> 
@@ -219,7 +219,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte os 
 
 Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
-Para obter mais informações sobre o conteúdo desses relatórios, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Para obter mais informações sobre o conteúdo desses relatórios, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=pt-BR){target=_blank}.
 
 <table> 
  <tbody> 

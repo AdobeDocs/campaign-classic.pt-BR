@@ -19,7 +19,7 @@ As configurações de rastreamento de mensagem avançadas são acessíveis por m
 
 >[!NOTE]
 >
->A gestão de imagens em emails também é configurada nessa janela. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
+>A gestão de imagens em emails também é configurada nessa janela. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR#adding-images){target="_blank"}.
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 

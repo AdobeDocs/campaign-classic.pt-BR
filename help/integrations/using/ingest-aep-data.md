@@ -35,7 +35,7 @@ Agora você pode configurar um fluxo de trabalho do Campaign Classic para assimi
 
 Depois que o Campaign Classic for configurado como um Destino, será necessário criar um fluxo de trabalho dedicado para importar o arquivo que foi exportado pela Adobe Experience Platform.
 
-Para fazer isso, é necessário adicionar e configurar uma atividade **[!UICONTROL File transfer]**. Para obter mais informações sobre como configurar essa atividade, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+Para fazer isso, é necessário adicionar e configurar uma atividade **[!UICONTROL File transfer]**. Para obter mais informações sobre como configurar essa atividade, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
 
 ![](assets/rtcdp-file-transfer.png)
 

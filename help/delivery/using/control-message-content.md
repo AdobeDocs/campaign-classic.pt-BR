@@ -47,7 +47,7 @@ Para obter mais informações sobre o uso de campos de personalização no Adobe
 
 ## Formulário e link para opção de não participação {#opt-out}
 
-Por padrão, quando a mensagem é analisada, uma regra de tipologia verifica se há um link de opt-out e gera um aviso se estiver faltando. Você pode alterar essa regra para gerar um erro em vez de um simples aviso e impedir que um delivery saia sem esse link. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Por padrão, quando a mensagem é analisada, uma regra de tipologia verifica se há um link de opt-out e gera um aviso se estiver faltando. Você pode alterar essa regra para gerar um erro em vez de um simples aviso e impedir que um delivery saia sem esse link. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=pt-BR){target="_blank"}.
 
 Você deve verificar se o link de opt-out funciona corretamente antes de cada vez que enviar. Por exemplo, ao enviar a prova, verifique se o link é válido, se o formulário está online e se a validação altera o valor do campo **[!UICONTROL No longer contact this recipient]** para **[!UICONTROL Yes]**. Você deve fazer essa verificação sistematicamente, pois sempre é possível que ocorra um erro humano ao inserir o link ou ao alterar o formulário.
 

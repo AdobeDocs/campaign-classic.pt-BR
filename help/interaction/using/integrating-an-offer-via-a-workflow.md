@@ -55,7 +55,7 @@ A atividade de enriquecimento permite adicionar ofertas ou links para ofertas de
 
 >[!NOTE]
 >
->Para obter mais informações sobre a atividade de enriquecimento, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
+>Para obter mais informações sobre a atividade de enriquecimento, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=pt-BR){target="_blank"}.
 
 Por exemplo, é possível enriquecer os dados de uma query de destinatário antes de uma entrega.
 
@@ -68,7 +68,7 @@ Há dois métodos para especificar apresentações de oferta.
 
 ### Especificação de oferta ou de chamada para o mecanismo de oferta {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-Após configurar sua consulta (consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}):
+Após configurar sua consulta (consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=pt-BR){target="_blank"}):
 
 1. Adicione e abra uma atividade de enriquecimento.
 1. Na guia **[!UICONTROL Enrichment]**, selecione **[!UICONTROL Add data]**.

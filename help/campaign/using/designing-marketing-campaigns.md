@@ -24,7 +24,7 @@ Além disso, o módulo **GMarketing Resource Management (MRM)** permite controla
 >[!NOTE]
 >
 >Para obter mais informações sobre as funcionalidades principais do Adobe Campaign, consulte [esta seção](../../platform/using/about-adobe-campaign-classic.md).\
->Os recursos relacionados ao direcionamento de população, personalização de mensagens e entrega de mensagens nos vários canais são detalhados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Os recursos relacionados ao direcionamento de população, personalização de mensagens e entrega de mensagens nos vários canais são detalhados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}.
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra os principais conceitos das campanhas de marketing em vídeo](#video)
 

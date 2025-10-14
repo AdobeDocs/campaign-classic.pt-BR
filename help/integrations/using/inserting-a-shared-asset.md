@@ -26,7 +26,7 @@ Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emai
 
 1. Na janela de edição, selecione a opção para adicionar uma imagem:
 
-   * Se estiver usando o [modo de edição padrão](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}, selecione **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
+   * Se estiver usando o [modo de edição padrão](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR#adding-images){target="_blank"}, selecione **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_standard.png)
 

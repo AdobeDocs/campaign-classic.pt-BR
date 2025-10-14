@@ -169,6 +169,6 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Crie uma conta externa por marca com o mesmo nome interno, conforme definido na [instância de execução](#execution-instance) (etapa 1).
 
-1. Criar um modelo de entrega por marca. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+1. Criar um modelo de entrega por marca. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=pt-BR){target="_blank"}.
 
 1. Em **[!UICONTROL Properties]** do modelo de entrega, defina o roteamento para a conta externa da marca.

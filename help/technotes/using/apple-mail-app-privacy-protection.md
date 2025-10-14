@@ -94,7 +94,7 @@ Neste exemplo, um profissional de marketing deseja enviar uma oferta de recompen
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* Você pode usar um filtro predefinido. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
+* Você pode usar um filtro predefinido. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=pt-BR){target="_blank"}.
 
   ![](assets/identify-email-open-tracking-3.png)
 

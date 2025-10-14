@@ -26,13 +26,13 @@ Saiba como executar etapas de teste e validação antes de enviar mensagens dent
 
 A análise de entrega é a fase na qual a população de destino é calculada e o conteúdo de entrega é preparado. Uma vez concluída, a entrega estará pronta para ser enviada. Consulte os registros para verificar se tudo está certo.
 
-Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=pt-BR){target="_blank"}.
 
 ### Por que devo criar provas? {#why-should-i-create-proofs-}
 
 A Adobe recomenda criar mensagens de prova para verificar sua entrega em um grupo de aprovadores antes de enviá-la para o target principal. Em seguida, você pode validar o conteúdo da mensagem, a personalização e os parâmetros de entrega.
 
-Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=pt-BR){target="_blank"}.
 
 ### Como usar seed addresses no Adobe Campaign? {#how-to-use-seed-addresses-in-adobe-campaign-}
 
@@ -49,7 +49,7 @@ Temos assim os seguintes benefícios:
 
 Para detectar possíveis erros na configuração da mensagem, a Adobe recomenda configurar um ciclo de validação de entrega. Verifique se o conteúdo é aprovado com a frequência necessária enviando provas para testar os destinatários. Uma prova deve ser enviada toda vez que uma alteração for feita, para aprovar o conteúdo.
 
-Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=pt-BR){target="_blank"}.
 
 ### O que é uma regra de tipologia? {#what-is-a-typology-rule-}
 
@@ -63,19 +63,19 @@ Saiba como enviar mensagens em vários canais com o Adobe Campaign.
 
 ### Como posso enviar emails em ondas? {#how-can-i-send-emails-in-waves-}
 
-Antes de enviar uma entrega a uma grande população, você pode configurar ondas para dividir as mensagens em vários lotes e equilibrar a carga. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#sending-using-multiple-waves){target="_blank"}.
+Antes de enviar uma entrega a uma grande população, você pode configurar ondas para dividir as mensagens em vários lotes e equilibrar a carga. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=pt-BR#sending-using-multiple-waves){target="_blank"}.
 
 ### Quais são as principais etapas para criar um email no Campaign? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
 Depois que a entrega do e-mail é criada e validada, é possível enviá-la. Você pode decidir enviar o email para o target principal imediatamente ou agendar a entrega para uma data posterior. Se necessário, antes disso, você também pode estimar a população de destino.
 
-Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=pt-BR){target="_blank"}.
 
 ### Como agendar uma entrega? {#how-to-schedule-a-delivery-}
 
 É possível adiar a entrega de mensagens para agendar a entrega ou gerenciar as regras de pressão e evitar o excesso de solicitações em relação a uma população.
 
-Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}.
+Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=pt-BR#schedule-delivery-sending){target="_blank"}.
 
 ### Posso adicionar um anexo aos emails? {#can-i-add-an-attachment-to-emails-}
 

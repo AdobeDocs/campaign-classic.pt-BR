@@ -88,6 +88,6 @@ Depois de criar e publicar o modelo de mensagem transacional, se um evento corre
 ## Tópicos relacionados {#related-topics}
 
 * [Introdução a canais de comunicação](../../delivery/using/communication-channels.md)
-* [Etapas principais de criação da entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+* [Etapas principais de criação da entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}
 * [Arquitetura de mensagens transacionais](../../message-center/using/transactional-messaging-architecture.md)
 * [Acessar relatórios de mensagens transacionais](../../message-center/using/about-transactional-messaging-reports.md)

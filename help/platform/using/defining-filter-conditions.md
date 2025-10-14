@@ -292,7 +292,7 @@ Existem quatro tipos de campos calculados:
 
   É possível usar o valor de origem de uma coluna e fornecer um valor de destino. Esse valor de destino será exibido na nova coluna de saída.
 
-  Há um exemplo de adição do tipo de campo calculado **[!UICONTROL Enumerations]**. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}.
+  Há um exemplo de adição do tipo de campo calculado **[!UICONTROL Enumerations]**. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html?lang=pt-BR){target="_blank"}.
 
   ![](assets/query_editor_nveau_63.png)
 

@@ -98,7 +98,7 @@ A guia **[!UICONTROL Audit]** contém o log de entrega e todas as mensagens rela
 
 O botão **[!UICONTROL Refresh]** permite atualizar os dados. Use o botão **[!UICONTROL Filters]** para definir um filtro nos dados.
 
-Ícones especiais permitem identificar erros ou avisos. Consulte esta seção na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Ícones especiais permitem identificar erros ou avisos. Consulte esta seção na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=pt-BR){target="_blank"}.
 
 A subguia **[!UICONTROL Proofs]** permite visualizar a lista de provas que foram enviadas.
 

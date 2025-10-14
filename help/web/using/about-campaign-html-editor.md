@@ -52,7 +52,7 @@ Para criar uma **entrega de email**, é necessário:
 1. Criar uma entrega a partir de um modelo DCE – [Saiba mais](use-case-creating-an-email-delivery.md)
 1. Selecione um conteúdo existente ou crie conteúdo por meio de um [modelo padrão](template-management.md)
 1. Edite e configure conteúdo online
-1. Enviar a entrega - Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+1. Enviar a entrega - Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}
 
 >[!NOTE]
 >

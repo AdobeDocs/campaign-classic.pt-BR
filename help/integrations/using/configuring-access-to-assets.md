@@ -62,7 +62,7 @@ Saiba como integrar o Adobe Campaign e o Adobe Experience Manager na [documenta�
 
 Depois de configurar essa integração, você pode configurar um novo modelo de entrega no Adobe Campaign para usar a biblioteca do AEM Assets. Para fazer isso, siga as etapas abaixo:
 
-1. Crie um novo modelo de entrega ou duplique um existente. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+1. Crie um novo modelo de entrega ou duplique um existente. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=pt-BR){target="_blank"}.
 1. Edite as **Propriedades** desse modelo.
 1. Na guia **[!UICONTROL Advanced]**, defina o **[!UICONTROL Content editing mode]** para **DCE**.
 1. Selecione a **[!UICONTROL AEM account]** externa que você precisa usar para acessar a biblioteca dos Ativos AEM.

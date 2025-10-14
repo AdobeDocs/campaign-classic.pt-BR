@@ -64,7 +64,7 @@ O diagrama abaixo mostra as diferentes etapas ao implementar este cenário:
 
 Para adicionar um anexo de email rapidamente a uma mensagem transacional, siga as etapas abaixo:
 
-1. Comece criando seu anexo. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"}.
+1. Comece criando seu anexo. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=pt-BR#attach-a-personalized-file){target="_blank"}.
 
    Isso permite anexar os arquivos a um email, mesmo se eles não estiverem hospedados na instância de execução.
 

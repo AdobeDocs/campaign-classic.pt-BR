@@ -36,7 +36,7 @@ Em seguida, você pode usar comandos ou códigos na guia **[!UICONTROL Script]**
 **Tópicos relacionados:**
 
 * [Descompactar ou descriptografar um arquivo antes do processamento](../../platform/using/unzip-decrypt.md)
-* [Atividade de extração de dados (arquivo)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}
+* [Atividade de extração de dados (arquivo)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=pt-BR){target="_blank"}
 
 ## Caso de uso: criptografar e exportar dados usando uma chave instalada no Painel de controle {#use-case-gpg-encrypt}
 
@@ -57,9 +57,9 @@ As etapas para executar esse caso de uso são as seguintes:
    * Atividade **[!UICONTROL JavaScript code]**: criptografar os dados que serão extraídos.
    * Atividade **[!UICONTROL File transfer]**: enviar os dados para uma fonte externa (neste exemplo, um servidor SFTP).
 
-1. Configure a atividade **[!UICONTROL Query]** para direcionar os dados desejados a partir do banco de dados. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+1. Configure a atividade **[!UICONTROL Query]** para direcionar os dados desejados a partir do banco de dados. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=pt-BR){target="_blank"}.
 
-1. Abra a atividade **[!UICONTROL Data extraction (file)]** e configure-a de acordo com suas necessidades. Os conceitos globais sobre como configurar a atividade estão disponíveis na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+1. Abra a atividade **[!UICONTROL Data extraction (file)]** e configure-a de acordo com suas necessidades. Os conceitos globais sobre como configurar a atividade estão disponíveis na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=pt-BR){target="_blank"}.
 
    ![](assets/gpg-data-extraction.png)
 
@@ -81,7 +81,7 @@ As etapas para executar esse caso de uso são as seguintes:
 
    ![](assets/gpg-script.png)
 
-1. Abra a atividade **[!UICONTROL File transfer]** e especifique o servidor SFTP para o qual deseja enviar o arquivo. Os conceitos globais sobre como configurar a atividade estão disponíveis na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+1. Abra a atividade **[!UICONTROL File transfer]** e especifique o servidor SFTP para o qual deseja enviar o arquivo. Os conceitos globais sobre como configurar a atividade estão disponíveis na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
 
    ![](assets/gpg-file-transfer.png)
 

@@ -31,7 +31,7 @@ Os clientes de dispositivos móveis, mensagens e webmail disponíveis para a **R
 
 >[!NOTE]
 >
->A renderização da caixa de entrada não é necessária para testar a personalização nas entregas. O Personalization pode ser verificado com as ferramentas do Adobe Campaign, como o **[!UICONTROL Preview]** e provas. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+>A renderização da caixa de entrada não é necessária para testar a personalização nas entregas. O Personalization pode ser verificado com as ferramentas do Adobe Campaign, como o **[!UICONTROL Preview]** e provas. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=pt-BR){target="_blank"}.
 
 ## Ativação da renderização da caixa de entrada {#activating-inbox-rendering}
 
@@ -107,7 +107,7 @@ Para obter mais informações sobre como criar, desenvolver e direcionar uma ent
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Uma prova é enviada. Você pode acessar as miniaturas de renderização nessa prova alguns minutos após o envio dos emails. Para obter mais informações sobre o envio de provas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+   Uma prova é enviada. Você pode acessar as miniaturas de renderização nessa prova alguns minutos após o envio dos emails. Para obter mais informações sobre o envio de provas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=pt-BR){target="_blank"}.
 
 1. Após ser enviada, a prova aparece na lista de entregas. Clique duas vezes nela.
 

@@ -31,11 +31,11 @@ Para exportar dados do Campaign Classic para o local de armazenamento de blobs d
 
 Para fazer isso, adicione e configure:
 
-* Uma atividade **[!UICONTROL Data extraction (file)]** para extrair os dados direcionados em um arquivo CSV. Para obter mais informações sobre como configurar essa atividade, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* Uma atividade **[!UICONTROL Data extraction (file)]** para extrair os dados direcionados em um arquivo CSV. Para obter mais informações sobre como configurar essa atividade, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=pt-BR){target="_blank"}.
 
   ![](assets/rtcdp-extract-file.png)
 
-* Uma atividade **[!UICONTROL File transfer]** para transferir o arquivo CSV para o local de armazenamento. Para obter mais informações sobre como configurar essa atividade, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+* Uma atividade **[!UICONTROL File transfer]** para transferir o arquivo CSV para o local de armazenamento. Para obter mais informações sobre como configurar essa atividade, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
 
   ![](assets/rtcdp-file-transfer.png)
 

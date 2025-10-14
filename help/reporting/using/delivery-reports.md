@@ -158,7 +158,7 @@ Esse relatório fornece todas as informações principais sobre a entrega.
 Essa seção tem dois indicadores:
 
 * **[!UICONTROL Initial population]** : Número total de destinatários alvos da entrega.
-* **[!UICONTROL Messages rejected by the rule]** : Número de endereços ignorados durante a análise ao aplicar regras de tipologia: endereço em falta, em quarentena, na lista de bloqueios, etc. Para obter mais informações sobre regras de tipologia, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+* **[!UICONTROL Messages rejected by the rule]** : Número de endereços ignorados durante a análise ao aplicar regras de tipologia: endereço em falta, em quarentena, na lista de bloqueios, etc. Para obter mais informações sobre regras de tipologia, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=pt-BR){target="_blank"}.
 
 **[!UICONTROL Causes of exclusion]**
 

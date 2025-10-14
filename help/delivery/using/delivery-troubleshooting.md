@@ -73,7 +73,7 @@ Os logs da entrega são fundamentais para saber por que uma entrega falhou. Aqui
 
   Para resolver isso, recomendamos executar um vácuo e reindexação no banco de dados. Para obter mais informações sobre manutenção de banco de dados, consulte [esta seção](../../production/using/recommendations.md).
 
-  Você também deve reiniciar todos os fluxos de trabalho com uma atividade agendada e todos os fluxos de trabalho com o status de falha. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
+  Você também deve reiniciar todos os fluxos de trabalho com uma atividade agendada e todos os fluxos de trabalho com o status de falha. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=pt-BR){target="_blank"}.
 
 * Quando uma entrega falha, o seguinte erro pode aparecer nos logs de entrega:
 
@@ -83,7 +83,7 @@ Os logs da entrega são fundamentais para saber por que uma entrega falhou. Aqui
 
   Normalmente, esse erro significa que há um campo ou bloco de personalização no email com mais de um valor para o destinatário. Um bloco de personalização está sendo usado e está buscando mais de um registro para um determinado destinatário.
 
-  Para resolver isso, verifique os dados de personalização usados e verifique o target para os destinatários que têm mais de uma entrada para qualquer um desses campos. Você também pode usar uma atividade **[!UICONTROL Deduplication]** no fluxo de trabalho de segmentação antes da atividade de entrega para verificar se há apenas um campo de personalização por vez. Para obter mais informações sobre desduplicação, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
+  Para resolver isso, verifique os dados de personalização usados e verifique o target para os destinatários que têm mais de uma entrada para qualquer um desses campos. Você também pode usar uma atividade **[!UICONTROL Deduplication]** no fluxo de trabalho de segmentação antes da atividade de entrega para verificar se há apenas um campo de personalização por vez. Para obter mais informações sobre desduplicação, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=pt-BR){target="_blank"}.
 
 * Algumas entregas podem falhar com um erro &quot;Inacessível&quot; informando:
 

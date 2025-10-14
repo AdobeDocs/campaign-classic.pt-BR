@@ -65,7 +65,7 @@ A guia **[!UICONTROL General]** permite especificar as opções gerais do modelo
   >
   >Se o modelo está configurado para assumir um grupo de controle em conta, mas nenhum grupo está definido na entrega relacionada à hipótese, os resultados são baseados somente em destinatários direcionados.
 
-  Para obter mais informações sobre como definir e configurar um grupo de controle, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}.
+  Para obter mais informações sobre como definir e configurar um grupo de controle, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=pt-BR#add-a-control-group){target=_blank}.
 
 * **[!UICONTROL Channel]**: é possível escolher um canal específico ou disponibilizar o modelo da hipótese em todos os canais no console do Adobe Campaign selecionando **[!UICONTROL All channels]** na lista suspensa. Se o modelo for configurado para um canal específico, é possível filtrar automaticamente as entregas por canal ao criar a hipótese. [Saiba mais](creating-hypotheses.md)
 

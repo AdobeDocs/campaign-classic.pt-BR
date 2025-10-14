@@ -35,4 +35,4 @@ As principais etapas ao criar uma entrega são as seguintes:
 
 >[!NOTE]
 >
->As etapas descritas abaixo pressupõem que todos os destinatários do target e seus perfis estejam armazenados no banco de dados, exceto no caso de entrega externa (consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.
+>As etapas descritas abaixo pressupõem que todos os destinatários do target e seus perfis estejam armazenados no banco de dados, exceto no caso de entrega externa (consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#selecting-external-recipients){target="_blank"}.

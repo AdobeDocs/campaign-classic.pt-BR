@@ -316,7 +316,7 @@ Você pode definir o formato das mensagens enviadas, para que o conteúdo exibid
 
 Para fazer isso, vá para o documento **[!UICONTROL Management of email formats]**, localizado em **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
 
-Este documento contém uma lista de todos os domínios predefinidos que correspondem aos formatos japoneses gerenciados pelo Adobe Campaign. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
+Este documento contém uma lista de todos os domínios predefinidos que correspondem aos formatos japoneses gerenciados pelo Adobe Campaign. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=pt-BR){target="_blank"}.
 
 ![](assets/mail_rule_sets.png)
 
@@ -331,7 +331,7 @@ O parâmetro **estrutura MIME** (Extensões de Email de Internet Multipropósito
 
 Se a opção **[!UICONTROL Image inclusion]** estiver habilitada, elas serão exibidas diretamente no corpo do email. As imagens serão carregadas e os links de URL serão substituídos pelo conteúdo.
 
-Esta opção é usada principalmente pelo mercado japonês para **Deco-mail**, **Decore Mail** ou **Decoration Mail**. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
+Esta opção é usada principalmente pelo mercado japonês para **Deco-mail**, **Decore Mail** ou **Decoration Mail**. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=pt-BR){target="_blank"}.
 
 >[!IMPORTANT]
 >

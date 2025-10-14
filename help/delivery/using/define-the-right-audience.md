@@ -19,7 +19,7 @@ ht-degree: 90%
 
 A população de destino é fundamental: crie suas listas cuidadosamente, teste seus emails em clientes de email populares e dispositivos móveis e verifique se suas listas de email estão atualizadas (sem endereços desconhecidos ou obsoletos). Você também pode enviar provas que ajudam a configurar um ciclo de validação completo.
 
-Saiba mais sobre as populações de públicos-alvos nesta seção na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+Saiba mais sobre as populações de públicos-alvos nesta seção na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}.
 
 ## Direcionar ao público-alvo correto {#target-the-right-audience}
 
@@ -39,7 +39,7 @@ Você também pode criar e usar um target mapping personalizado. Para obter mais
 
 ## Destinatários externos {#external-recipients}
 
-Você pode enviar entregas para destinatários armazenados em um arquivo externo em vez de salvos no banco de dados. Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.
+Você pode enviar entregas para destinatários armazenados em um arquivo externo em vez de salvos no banco de dados. Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#selecting-external-recipients){target="_blank"}.
 
 ## Enviar para os assinantes {#send-to-subscribers}
 
@@ -50,7 +50,7 @@ Para enviar mensagens aos assinantes de um informativo, é possível direcionar 
 
 Para testar sua entrega, use provas antes de enviar para o público-alvo principal.
 
-Selecione os destinatários de prova apropriados, porque eles validam a forma e o conteúdo da mensagem. As etapas para definir os recipients de prova são apresentadas na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}.
+Selecione os destinatários de prova apropriados, porque eles validam a forma e o conteúdo da mensagem. As etapas para definir os recipients de prova são apresentadas na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#select-the-proof-target){target="_blank"}.
 
 Os seed addresses são usados para direcionar destinatários que não correspondem aos critérios de direcionamento definidos para testar uma entrega antes de enviar ao público-alvo principal. Eles são apresentados [nesta seção](about-seed-addresses.md).
 

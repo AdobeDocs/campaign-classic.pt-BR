@@ -46,7 +46,7 @@ Uma lista é um conjunto estático de destinatários que pode ser direcionado em
 
 É possível usar um fluxo de trabalho para excluir informações duplicadas do público-alvo de uma entrega, evitando assim o envio repetido da mensagem a um mesmo destinatário.
 
-Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
+Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=pt-BR){target="_blank"}.
 
 ## Como identificar e direcionar assinantes a um informativo? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
@@ -54,4 +54,4 @@ Conheça o gerenciamento de subscrições do Campaign e saiba como [enviar uma m
 
 ## Qual é a prática recomendada para excluir perfis de uma população alvo? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-Saiba como excluir uma lista de perfis de seu público-alvo na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.
+Saiba como excluir uma lista de perfis de seu público-alvo na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=pt-BR){target="_blank"}.

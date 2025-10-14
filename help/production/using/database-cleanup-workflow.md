@@ -32,7 +32,7 @@ A limpeza do banco de dados é configurada em dois níveis: no agendador de work
 
 >[!NOTE]
 >
->Para obter mais informações sobre o scheduler, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
+>Para obter mais informações sobre o scheduler, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=pt-BR){target="_blank"}.
 
 Por padrão, o fluxo de trabalho **[!UICONTROL Database cleanup]** é configurado para iniciar diariamente às 4h. O scheduler permite alterar a frequência de acionamento do workflow. As seguintes frequências estão disponíveis:
 

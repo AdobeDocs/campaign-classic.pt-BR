@@ -60,8 +60,8 @@ Use arquivos compactados para importações e exportações sempre que possível
 
 **Tópicos relacionados:**
 
-* [Atividade de carregamento de dados (arquivo)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
-* [Atividade de extração de dados (arquivo)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* [Atividade de carregamento de dados (arquivo)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=pt-BR){target="_blank"}
+* [Atividade de extração de dados (arquivo)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=pt-BR){target="_blank"}.
 
 ## Importar no modo Delta {#importing-in-delta-mode}
 

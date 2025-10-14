@@ -30,13 +30,13 @@ Essa opção melhora significativamente o desempenho ao executar a etapa de pers
 
 Em várias atividades de workflow do Adobe Campaign, é possível usar os dados armazenados em um banco de dados externo.
 
-* **Filtrar dados externos** - A atividade Query permite adicionar dados externos e usá-los nas configurações de filtro definidas. Para obter mais informações, consulte a [documentação do Campaign v8]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}.
+* **Filtrar dados externos** - A atividade Query permite adicionar dados externos e usá-los nas configurações de filtro definidas. Para obter mais informações, consulte a [documentação do Campaign v8]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=pt-BR){target="_blank"}.
 
-* **Criar subconjuntos** - A atividade Split permite criar subconjuntos. Você pode usar dados externos para definir os critérios de filtragem a serem usados. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
+* **Criar subconjuntos** - A atividade Split permite criar subconjuntos. Você pode usar dados externos para definir os critérios de filtragem a serem usados. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=pt-BR){target="_blank"}.
 
-* **Carregar banco de dados externo** - Você pode usar os dados externos na atividade de carregamento de dados (RDBMS). Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html){target="_blank"}.
+* **Carregar banco de dados externo** - Você pode usar os dados externos na atividade de carregamento de dados (RDBMS). Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html?lang=pt-BR){target="_blank"}.
 
-* **Adicionando informações e links** - A atividade de Enriquecimento permite adicionar dados à tabela de trabalho do fluxo de trabalho e links a uma tabela externa. Nesse contexto, ele pode usar dados de um banco de dados externo. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
+* **Adicionando informações e links** - A atividade de Enriquecimento permite adicionar dados à tabela de trabalho do fluxo de trabalho e links a uma tabela externa. Nesse contexto, ele pode usar dados de um banco de dados externo. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=pt-BR){target="_blank"}.
 
 ## Medidas de proteção e limitações {#fda-limitations}
 

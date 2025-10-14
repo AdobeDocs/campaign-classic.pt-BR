@@ -43,7 +43,7 @@ Enquanto no acesso pela web, as opções permitirão principalmente a visualiza�
 
 ![Em um navegador, o mesmo operador só pode visualizar e cancelar a campanha.](assets/operation_from_web.png)
 
-Saiba mais sobre como usar a interface da Web na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html#use-the-web-interface-){target=_blank}.
+Saiba mais sobre como usar a interface da Web na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=pt-BR#use-the-web-interface-){target=_blank}.
 
 ### Idiomas {#languages}
 
@@ -59,7 +59,7 @@ Você pode escolher entre estes idiomas:
 * Alemão
 * Japonês
 
-O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Para obter mais informações sobre como criar uma instância, consulte esta [página](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -110,7 +110,7 @@ O explorer do Adobe Campaign é acessível por meio do ícone da barra de ferram
 
 Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na **documentação do Campaign v8 (console)**:
 
-* [Visão geral da interface do usuário do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Visão geral da interface do usuário do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Configurações da interface do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -123,7 +123,7 @@ A filtragem de dados é o processo de restringir um conjunto de dados somente ao
 
 Ao navegar pela Campanha, os dados são exibidos em listas. Aplique filtros incorporados para acessar rapidamente um subconjunto definido, como endereços em quarentena, destinatários não direcionados ou registros em um intervalo de idade ou data de criação específico. Além disso, você pode criar filtros personalizados, salvá-los para uso futuro e compartilhá-los com outros usuários do Campaign.
 
-Saiba como **acessar, criar e compartilhar filtros** na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Saiba como **acessar, criar e compartilhar filtros** na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
 ## Trabalhar com listas {#manage-and-customize-lists}

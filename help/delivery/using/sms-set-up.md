@@ -353,7 +353,7 @@ As etapas para configurar uma conta externa usando o conector SMPP genérico est
 
 ## Alterar o modelo de entrega {#changing-the-delivery-template}
 
-O Adobe Campaign oferece um modelo da entrega para celulares. Esse modelo está disponível no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+O Adobe Campaign oferece um modelo da entrega para celulares. Esse modelo está disponível no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=pt-BR){target="_blank"}.
 
 Para entrega via canal SMS, você deve criar um modelo no qual o conector de canal é referenciado.
 

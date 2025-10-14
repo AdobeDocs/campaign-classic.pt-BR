@@ -26,7 +26,7 @@ Para obter mais informações sobre fluxos de trabalho, consulte estas seções:
 * [Sobre fluxos de trabalho](../../workflow/using/about-workflows.md)
 * [Iniciando um fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=pt-BR){target="_blank"}.
 * [Ciclo de vida do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR){target="_blank"}.
-* [Práticas recomendadas para usar fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}.
+* [Práticas recomendadas para usar fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR){target="_blank"}.
 
 ## Iniciar assim que possível em campanhas {#start-as-soon-as-possible-in-campaigns}
 
@@ -34,7 +34,7 @@ Em alguns casos, os fluxos de trabalho executados de uma campanha não são inic
 
 Pode haver várias causas para esse problema. Siga as etapas abaixo para resolvê-lo:
 
-1. Verifique o status do fluxo de trabalho técnico [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}. Esse workflow gerencia jobs ou workflows dentro de uma campanha. Se falhar, os workflows não serão iniciados/interrompidos. Reinicie-o para retomar a execução dos workflows da campanha.
+1. Verifique o status do fluxo de trabalho técnico [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=pt-BR){target="_blank"}. Esse workflow gerencia jobs ou workflows dentro de uma campanha. Se falhar, os workflows não serão iniciados/interrompidos. Reinicie-o para retomar a execução dos workflows da campanha.
 
    Para obter mais informações sobre o monitoramento de workflows técnicos, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=pt-BR){target="_blank"}.
 
@@ -73,13 +73,13 @@ Pode haver várias causas para esse problema. Siga as etapas abaixo para resolv�
 
    Para resolver esse problema, interrompa os fluxos de trabalho indesejados e exclua os deliveries com falha. Se o limite for atingido, permitirá a execução de novos processos.
 
-   Para verificar o número de fluxos de trabalho em execução da sua instância, recomendamos usar os modos de exibição predefinidos, acessíveis por padrão na pasta **[!UICONTROL Administration]** / **[!UICONTROL Audit]**. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+   Para verificar o número de fluxos de trabalho em execução da sua instância, recomendamos usar os modos de exibição predefinidos, acessíveis por padrão na pasta **[!UICONTROL Administration]** / **[!UICONTROL Audit]**. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=pt-BR){target="_blank"}.
 
    >[!IMPORTANT]
    >
    >O aumento do limite da opção **[!UICONTROL NmsOperation_LimitConcurrency]** pode causar problemas de desempenho na sua instância. Em qualquer caso, não faça isso por conta própria e entre em contato com o contato da Adobe Campaign.
 
-Para obter mais informações sobre como monitorar os fluxos de trabalho, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+Para obter mais informações sobre como monitorar os fluxos de trabalho, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=pt-BR){target="_blank"}.
 
 ## Início em andamento {#start-in-progress}
 
@@ -118,6 +118,6 @@ Para verificar isso e iniciar o módulo se necessário, siga as seguintes etapas
 
 Se um fluxo de trabalho falhar, siga estas etapas:
 
-1. Verifique o journal do workflow. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+1. Verifique o journal do workflow. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=pt-BR){target="_blank"}.
 1. Monitore workflows técnicos. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=pt-BR){target="_blank"}.
 1. Procure falhas nas atividades individuais do workflow.

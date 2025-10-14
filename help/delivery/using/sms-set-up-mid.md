@@ -154,7 +154,7 @@ Para fazer isso, siga as etapas abaixo:
 
 ## Alterar o modelo de entrega {#changing-the-delivery-template}
 
-O Adobe Campaign oferece um modelo de entrega móvel localizado no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+O Adobe Campaign oferece um modelo de entrega móvel localizado no nó **[!UICONTROL Resources > Templates > Delivery templates]**. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=pt-BR){target="_blank"}.
 
 Para enviar mensagens por meio do canal de SMS, você deve criar um modelo que inclua uma referência ao conector de canal.
 

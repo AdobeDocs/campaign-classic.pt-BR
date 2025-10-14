@@ -20,7 +20,7 @@ Para criar uma nova entrega de email, siga as etapas abaixo:
 
 >[!NOTE]
 >
->Os conceitos globais sobre a criação de delivery são apresentados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Os conceitos globais sobre a criação de delivery são apresentados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}.
 
 1. Crie uma nova entrega, por exemplo, no painel Entrega.
 1. Selecione o modelo da entrega **Entrega de email (mensagem)** ou qualquer modelo da entrega de email que você criou. Para obter mais informações sobre modelos da entrega, consulte [esta seção](about-templates.md).

@@ -88,7 +88,7 @@ Para configurar e criar o bloco de referência, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"} para obter mais informações sobre modelos de entrega.
+   >Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=pt-BR){target="_blank"} para obter mais informações sobre modelos de entrega.
 
 1. Crie o segundo script para entregar as mensagens de subscrição.
 

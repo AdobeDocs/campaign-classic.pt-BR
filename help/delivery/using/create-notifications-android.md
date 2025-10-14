@@ -16,7 +16,7 @@ ht-degree: 96%
 
 # Criar notificações para Android{#create-notificaations-android}
 
-Use o Adobe Campaign para enviar notificações por push em dispositivos Android. Os conceitos globais sobre a criação de delivery são apresentados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+Use o Adobe Campaign para enviar notificações por push em dispositivos Android. Os conceitos globais sobre a criação de delivery são apresentados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}.
 
 Comece criando uma nova entrega.
 

@@ -37,7 +37,7 @@ Saiba mais sobre as principais etapas relacionadas à criação de entrega de em
 * [Criar uma entrega de email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=pt-BR){target="_blank"}: saiba mais sobre as diferentes etapas necessárias para criar uma entrega de email.
 * [Definir o conteúdo do email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR){target="_blank"}: defina o que o email incluirá: remetente, assunto, conteúdo, imagens.
 * [Definir conteúdo interativo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=pt-BR){target="_blank"}: use o formato interativo AMP for Email para enviar emails dinâmicos.
-* [Enviar emails em dispositivos móveis japoneses](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}: use um dos três formatos em japonês específicos para email em dispositivos móveis.
+* [Enviar emails em dispositivos móveis japoneses](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=pt-BR){target="_blank"}: use um dos três formatos em japonês específicos para email em dispositivos móveis.
 * [Anexar arquivos a um email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=pt-BR){target="_blank"}: conheça as diferentes maneiras de anexar um ou mais arquivos a um email.
 
 
@@ -64,7 +64,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 The key steps to send an email are as follows:
 

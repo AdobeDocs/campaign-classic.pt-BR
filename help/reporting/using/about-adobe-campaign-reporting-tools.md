@@ -20,7 +20,7 @@ Além dos [relatórios integrados](../../reporting/using/about-campaign-built-in
 
 O Adobe Campaign não é uma ferramenta de relatório especializada: os relatórios criados no Adobe Campaign permitem principalmente visualizar dados agregados. Relatórios do Adobe Campaign, que são dedicados a analisar e representar dados, não foram projetados para exportações de banco de dados.
 
-Para exportar dados do banco de dados do Adobe Campaign, é preciso criar um fluxo de trabalho e usar uma atividade de exportação de dados. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}.
+Para exportar dados do banco de dados do Adobe Campaign, é preciso criar um fluxo de trabalho e usar uma atividade de exportação de dados. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=pt-BR){target="_blank"}.
 
 O Adobe Campaign fornece várias ferramentas de relatório:
 

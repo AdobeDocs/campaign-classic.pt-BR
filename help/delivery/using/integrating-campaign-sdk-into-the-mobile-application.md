@@ -64,7 +64,7 @@ Para integrar o SDK do Campaign no aplicativo móvel, o administrador funcional 
 
   >[!NOTE]
   >
-  >Essa chave de integração é inserida no console do Adobe Campaign, na guia **[!UICONTROL Information]** do serviço dedicado ao aplicativo móvel. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
+  >Essa chave de integração é inserida no console do Adobe Campaign, na guia **[!UICONTROL Information]** do serviço dedicado ao aplicativo móvel. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=pt-BR){target="_blank"}.
 
 * **Um URL de rastreamento**: que corresponde ao endereço do servidor de rastreamento do Adobe Campaign.
 * **Um URL de marketing**: para habilitar a coleta de assinaturas.

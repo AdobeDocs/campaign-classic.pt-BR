@@ -132,7 +132,7 @@ Esse erro indica que o nome de domínio do servidor FTP não pôde ser resolvido
 
 1. Solução de problemas de **logs de seção**:
 
-   1. No fluxo de trabalho, dê um duplo clique na atividade de [transferência de arquivos](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+   1. No fluxo de trabalho, dê um duplo clique na atividade de [transferência de arquivos](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
    1. Acesse a guia **[!UICONTROL File Transfer]** e clique em **[!UICONTROL Advanced Parameters]**.
    1. Marque a opção **[!UICONTROL Display the session logs]**.
 

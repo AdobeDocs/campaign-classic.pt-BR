@@ -28,7 +28,7 @@ Para criar uma entrega vinculada a uma campanha, clique no link **[!UICONTROL Ad
 
 ![](assets/campaign_op_add_delivery.png)
 
-As configurações sugeridas são adequadas aos diferentes tipos de entrega: correspondência direta, email, canais móveis. Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+As configurações sugeridas são adequadas aos diferentes tipos de entrega: correspondência direta, email, canais móveis. Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}.
 
 ## Iniciar uma entrega {#starting-a-delivery}
 

@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!INFO]
 >
->Saiba mais sobre a funcionalidade Trilha de auditoria na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
+>Saiba mais sobre a funcionalidade Trilha de auditoria na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/audit-trail).
 
 No Adobe Campaign, o **[!UICONTROL Audit trail]** fornece acesso ao histórico completo de alterações feitas na instância.
 
@@ -47,7 +47,7 @@ O **[!UICONTROL Audit trail]** captura, em tempo real, uma lista abrangente de a
 
   Para obter mais informações sobre fluxos de trabalho, consulte esta [página](../../workflow/using/about-workflows.md).
 
-  Para obter mais informações sobre como monitorar workflows, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+  Para obter mais informações sobre como monitorar workflows, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=pt-BR){target="_blank"}.
 
 
 * **A opção trilha de auditoria** permite que você verifique as atividades e as últimas modificações feitas em suas opções.

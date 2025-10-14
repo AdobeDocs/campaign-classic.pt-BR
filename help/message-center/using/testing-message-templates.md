@@ -100,7 +100,7 @@ Com os seed addresses, você também pode exibir a renderização da mensagem pa
 
 Você pode testar a entrega de mensagens enviando uma prova para um seed address criado anteriormente.
 
-O envio de uma prova envolve o mesmo processo de entrega regular. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}. No entanto, com mensagens transacionais, é necessário realizar as seguintes operações antecipadamente:
+O envio de uma prova envolve o mesmo processo de entrega regular. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=pt-BR){target="_blank"}. No entanto, com mensagens transacionais, é necessário realizar as seguintes operações antecipadamente:
 
 * Crie um ou mais [seed addresses](#managing-seed-addresses-in-transactional-messages) com [dados de personalização](#personalization-data).
 * [Criar o conteúdo da mensagem](../../message-center/using/creating-the-message-template.md#creating-message-content).
@@ -117,7 +117,7 @@ Para enviar a prova:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-É possível acessar as provas em cada modelo através da guia **[!UICONTROL Audit]**. Para obter mais detalhes, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+É possível acessar as provas em cada modelo através da guia **[!UICONTROL Audit]**. Para obter mais detalhes, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=pt-BR){target="_blank"}.
 
 ![](assets/messagecenter_send_proof_003.png)
 
