@@ -5,9 +5,9 @@ description: Saiba como instalar pacotes integrados do Campaign
 feature: Installation, Application Settings
 badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1271'
 ht-degree: 10%
 
 ---
@@ -66,7 +66,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Campanhas de marketing (Campanha)<br /> </td> 
-   <td> Define, otimiza, executa e analisa campanhas de comunicação e marketing. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=pt-BR" target="_blank">Saiba Mais</a><br /> </td> 
+   <td> Define, otimiza, executa e analisa campanhas de comunicação e marketing. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">Saiba Mais</a><br /> </td> 
    <td> Marketing</td>
   </tr> 
   <tr> 
@@ -157,7 +157,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Acesso a dados externos (Federated Data Access)<br /> </td> 
-   <td> Fornece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessá-los sem alterar a estrutura dos dados do Adobe Campaign.  Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=pt-BR" target="_blank">Saiba Mais</a> <br /> </td> 
+   <td> Fornece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessá-los sem alterar a estrutura dos dados do Adobe Campaign.  Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Saiba Mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
   </tr> 
   <tr> 
@@ -172,7 +172,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Gerenciamento de Cupom<br /> </td> 
-   <td> Cria um conjunto de cupons para adicionar às próximas ofertas de marketing. Opcional. <a href="../../delivery/using/personalized-coupons.md">Saiba Mais</a> <br /> </td> 
+   <td> Cria um conjunto de cupons para adicionar às próximas ofertas de marketing. Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Saiba Mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 

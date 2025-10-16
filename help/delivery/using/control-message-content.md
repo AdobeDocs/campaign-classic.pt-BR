@@ -6,10 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 92%
+source-wordcount: '765'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,7 @@ Siga os princípios listados abaixo ao criar o conteúdo da mensagem:
 * [Endereço do remetente](#sender-address): o endereço deve identificar explicitamente o remetente. O domínio deve ser de propriedade do remetente e registrado por ele. O registro de domínio não deve ser privatizado.
 * [Personalização](#personalization): personalizar o conteúdo e definir um tempo de envio por destinatário aumenta as chances de sua mensagem ser aberta.
 * Imagens e texto: respeitar uma proporção adequada de texto/imagem (por exemplo, 60% de texto e 40% de imagens).
-* [Link de unsubscription &#x200B;](#opt-out) e landing page: o link de unsubscription é essencial. Deve ser visível e válido e o formulário deve ser funcional.
+* [Link de unsubscription ](#opt-out) e landing page: o link de unsubscription é essencial. Deve ser visível e válido e o formulário deve ser funcional.
 * Pré-visualização: use as ferramentas oferecidas pelo Adobe Campaign para verificar e otimizar o conteúdo do seu email ([renderização de caixa de entrada](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
 Para obter dicas adicionais para otimizar a capacidade de entrega ao projetar conteúdo, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=pt-BR).
@@ -43,15 +43,15 @@ Para obter mais informações, consulte a [documentação do Campaign v8](https:
 
 Para melhorar a experiência dos destinatários e fazer com que eles abram seu email, o Adobe Campaign permite personalizar as mensagens.
 
-Para obter mais informações sobre o uso de campos de personalização no Adobe Campaign, consulte [esta seção](personalization-fields.md).
+Para obter mais informações sobre como usar campos de personalização no Adobe Campaign, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/personalize/personalization-fields){target="_blank"}.
 
 ## Formulário e link para opção de não participação {#opt-out}
 
-Por padrão, quando a mensagem é analisada, uma regra de tipologia verifica se há um link de opt-out e gera um aviso se estiver faltando. Você pode alterar essa regra para gerar um erro em vez de um simples aviso e impedir que um delivery saia sem esse link. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=pt-BR){target="_blank"}.
+Por padrão, quando a mensagem é analisada, uma regra de tipologia verifica se há um link de opt-out e gera um aviso se estiver faltando. Você pode alterar essa regra para gerar um erro em vez de um simples aviso e impedir que um delivery saia sem esse link. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 Você deve verificar se o link de opt-out funciona corretamente antes de cada vez que enviar. Por exemplo, ao enviar a prova, verifique se o link é válido, se o formulário está online e se a validação altera o valor do campo **[!UICONTROL No longer contact this recipient]** para **[!UICONTROL Yes]**. Você deve fazer essa verificação sistematicamente, pois sempre é possível que ocorra um erro humano ao inserir o link ou ao alterar o formulário.
 
-Saiba como inserir um link para opção de não participação [nesta seção](personalization-blocks.md#personalization-blocks-example)
+Saiba como inserir uma opção de não participação na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 Se for detectado um problema de cancelamento de subscrição após o início da entrega, ainda será possível realizar um cancelamento de subscrição manualmente (usando a função de atualização em massa, por exemplo) para os destinatários que clicam no link de opt-out, mesmo que não tenham conseguido confirmar sua escolha.
 

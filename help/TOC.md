@@ -6,9 +6,9 @@ title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2744'
 ht-degree: 72%
 
 ---
@@ -164,11 +164,11 @@ ht-degree: 72%
       + [Criar um delivery a partir de um modelo - HIDDEN](delivery/using/creating-a-delivery-from-a-template.md)
    + Personalizar entregas {#personalizing-deliveries}
       + [Sobre personalização](delivery/using/about-personalization.md)
-      + [Campos de personalização](delivery/using/personalization-fields.md)
-      + [Blocos de personalização](delivery/using/personalization-blocks.md)
-      + [Conteúdo condicional](delivery/using/conditional-content.md)
-      + [Cupons personalizados](delivery/using/personalized-coupons.md)
-      + [Gerar documentos personalizados em PDF](delivery/using/generating-personalized-pdf-documents.md)
+      + [Campos de personalização - OCULTOS](delivery/using/personalization-fields.md)
+      + [Blocos de personalização - OCULTOS](delivery/using/personalization-blocks.md)
+      + [Conteúdo condicional - OCULTO](delivery/using/conditional-content.md)
+      + [Cupons personalizados - OCULTOS](delivery/using/personalized-coupons.md)
+      + [Gerar documentos personalizados do PDF - OCULTOS](delivery/using/generating-personalized-pdf-documents.md)
       + [Personalizar a lista de emoticons](delivery/using/customizing-emoticon-list.md)
    + Usar seed addresses {#using-seed-addresses}
       + [Sobre seed addresses](delivery/using/about-seed-addresses.md)
@@ -376,7 +376,7 @@ ht-degree: 72%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Trabalhar com o  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurar a integração](integrations/using/configuring-the-integration.md)
-      + [Criar um informativo do [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Criar um informativo do [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Trabalhar com o  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurar a integração com o [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)

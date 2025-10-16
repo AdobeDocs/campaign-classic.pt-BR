@@ -5,10 +5,10 @@ description: Recusa de rastreamento de aplicativo web
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ Se um usuário final usar o opt out de rastreamento comportamental por meio de c
 
 Para ser exibido em aplicações web ou Landing pages, o banner precisa ser configurado.
 
-O Adobe Campaign é fornecido com um banner de exemplo que você deve adaptar às suas necessidades. Essa versão do banner aparece como um bloco de personalização localizado na pasta do modelo de conteúdo. Consulte [esta página](../../delivery/using/personalization-blocks.md).
+O Adobe Campaign é fornecido com um banner de exemplo que você deve adaptar às suas necessidades. Essa versão do banner aparece como um bloco de personalização localizado na pasta do modelo de conteúdo. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 >[!IMPORTANT]
 >
@@ -92,7 +92,7 @@ Se você precisar gravar uma JSSP, as APIs do lado do servidor estarão disponí
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: gera a marcação para o banner de opt out a ser inserido na página JSSP
 
-  **escapeJs {Boolean}**: verdadeiro quando a marcação gerada precisa de escape para ser usada dentro do JavaScript.
+  **escapeJs{Boolean}**: verdadeiro quando a marcação gerada precisa de escape para ser usada dentro do JavaScript.
 
   Retorna o HTML da marcação de banner de opt out que precisa ser impressa na página.
 
@@ -108,7 +108,7 @@ Se você precisar gravar uma JSSP, as APIs do lado do servidor estarão disponí
 
   Renderiza a marcação para o banner de opt out inserindo-o na página JSSP. Ele é chamado como no Jssp entre &lt;% %>
 
-  **escapeJs {Boolean}**: verdadeiro quando a marcação gerada precisa de escape para ser usada dentro do JavaScript
+  **escapeJs{Boolean}**: verdadeiro quando a marcação gerada precisa de escape para ser usada dentro do JavaScript
 
 Exemplo de JSSP:
 

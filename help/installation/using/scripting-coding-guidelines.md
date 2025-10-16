@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '743'
 ht-degree: 30%
 
 ---
@@ -119,7 +119,7 @@ A maneira geral de adicionar um captcha no DCE é criar um bloco de personaliza�
 
 1. Use o tipo de conteúdo **[!UICONTROL Web application]** e verifique **[!UICONTROL Visible in the customization menus]**.
 
-   Para obter mais informações, consulte [esta página](../../delivery/using/personalization-blocks.md).
+   Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
    Veja um exemplo de um **captcha do Campaign**:
 
@@ -176,7 +176,7 @@ A maneira geral de adicionar um captcha no DCE é criar um bloco de personaliza�
 
 >[!IMPORTANT]
 >
->Para a integração do reCAPTCHA, é necessário adicionar JavaScript do lado do cliente no HTML (em `<head>...</head>`):
+>Para a integração do reCAPTCHA, é necessário adicionar o JavaScript do lado do cliente no HTML (em `<head>...</head>`):
 >
 >`<script src="https://www.google.com/recaptcha/api.js" async defer></script>`
 

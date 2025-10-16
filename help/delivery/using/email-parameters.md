@@ -7,10 +7,10 @@ role: User, Developer, Data Engineer
 hide: true
 hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+workflow-type: tm+mt
+source-wordcount: '905'
+ht-degree: 96%
 
 ---
 
@@ -30,16 +30,16 @@ Para obter mais informações sobre a configuração e práticas recomendadas de
 >
 >A Cco de email é um recurso opcional. Verifique seu contrato de licença e entre em contato com o executivo da sua conta para ativá-la.
 
-Ao criar uma nova entrega ou template da entrega, o Email Cc não é ativado por padrão. Você precisa ativá-lo manualmente no nível da entrega de email ou do template da entrega.
+Ao criar uma nova entrega ou template da entrega, o Email Cc não é ativado por padrão. Você precisa habilitá-lo manualmente no nível da entrega de email ou do template da entrega.
 
 >[!NOTE]
 >
 >Se estiver usando o Email CCO com [MTA aprimorado](sending-with-enhanced-mta.md), essa opção será habilitada automaticamente para todas as entregas.
 
-Para ativar o Email Cco para um template da entrega de email, siga as etapas abaixo:
+Para habilitar o Cco de Email para um template da entrega de email, siga as etapas abaixo:
 
 1. Acesse **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** ou **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
-1. Selecione a entrega de sua escolha ou duplique o template de entrega **de email** integrado e selecione o template duplicado.
+1. Selecione a entrega de sua escolha ou duplique o modelo de entrega **de email** integrado e selecione o modelo duplicado.
 1. Clique no botão **Propriedades**.
 1. Selecione a guia **[!UICONTROL Delivery]**.
 1. Verifique a opção **Email Cco**. Uma cópia de todas as mensagens enviadas para cada entrega com base neste modelo será enviada para o endereço Cco de email que foi configurado.
@@ -82,7 +82,7 @@ Selecione o formato do email na seção inferior da janela:
 
 A mirror page é uma página HTML acessível online através de um navegador da Web. Seu conteúdo é idêntico ao email.
 
-Por padrão, a mirror page é gerada se o link for inserido no conteúdo do email. Para obter mais informações sobre a inserção de blocos de personalização, consulte [Blocos de personalização](personalization-blocks.md).
+Por padrão, a mirror page é gerada se o link for inserido no conteúdo do email. Para obter mais informações sobre a inserção de blocos de personalização, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 Nas propriedades de entrega, o campo **[!UICONTROL Mode]** da guia **[!UICONTROL Validity]** permite modificar o modo de geração desta página.
 
@@ -128,7 +128,7 @@ Para obter mais informações sobre gerenciamento de rejeição de emails, consu
 
 É possível adicionar cabeçalhos SMTP às entregas Para fazer isso, use a seção relevante da guia **[!UICONTROL SMTP]** na entrega.
 
-O script inserido nessa janela deve referenciar um cabeçalho por linha no seguinte formulário: **name:value**.
+O script inserido nesta janela deve referenciar um cabeçalho por linha no seguinte formulário: **name:value**.
 
 Os valores são codificados automaticamente se necessário.
 
