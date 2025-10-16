@@ -66,7 +66,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Campanhas de marketing (Campanha)<br /> </td> 
-   <td> Define, otimiza, executa e analisa campanhas de comunicação e marketing. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">Saiba Mais</a><br /> </td> 
+   <td> Define, otimiza, executa e analisa campanhas de comunicação e marketing. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=pt-BR" target="_blank">Saiba Mais</a><br /> </td> 
    <td> Marketing</td>
   </tr> 
   <tr> 
@@ -157,7 +157,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Acesso a dados externos (Federated Data Access)<br /> </td> 
-   <td> Fornece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessá-los sem alterar a estrutura dos dados do Adobe Campaign.  Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Saiba Mais</a> <br /> </td> 
+   <td> Fornece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessá-los sem alterar a estrutura dos dados do Adobe Campaign.  Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=pt-BR" target="_blank">Saiba Mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
   </tr> 
   <tr> 

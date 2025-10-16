@@ -22,7 +22,7 @@ O Editor de conteúdo digital permite inserir e formatar elementos de página e 
 
 >[!NOTE]
 >
->Se precisar adicionar um código JavaScript do lado do servidor, use blocos de personalização. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+>Se precisar adicionar um código JavaScript do lado do servidor, use blocos de personalização. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ Para criar uma **entrega de email**, é necessário:
 1. Criar uma entrega a partir de um modelo DCE – [Saiba mais](use-case-creating-an-email-delivery.md)
 1. Selecione um conteúdo existente ou crie conteúdo por meio de um [modelo padrão](template-management.md)
 1. Edite e configure conteúdo online
-1. Enviar a entrega - Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+1. Enviar a entrega - Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}
 
 >[!NOTE]
 >

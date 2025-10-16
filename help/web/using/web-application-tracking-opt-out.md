@@ -28,7 +28,7 @@ Se um usuário final usar o opt out de rastreamento comportamental por meio de c
 
 Para ser exibido em aplicações web ou Landing pages, o banner precisa ser configurado.
 
-O Adobe Campaign é fornecido com um banner de exemplo que você deve adaptar às suas necessidades. Essa versão do banner aparece como um bloco de personalização localizado na pasta do modelo de conteúdo. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+O Adobe Campaign é fornecido com um banner de exemplo que você deve adaptar às suas necessidades. Essa versão do banner aparece como um bloco de personalização localizado na pasta do modelo de conteúdo. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.
 
 >[!IMPORTANT]
 >
