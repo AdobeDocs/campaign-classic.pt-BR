@@ -212,7 +212,7 @@ O Editor de conteúdo digital permite trabalhar em **qualquer tipo de imagem** c
 
 ### Adição/exclusão/duplicação de uma imagem {#adding---deleting---duplicating-an-image}
 
-Para inserir uma imagem, selecione um bloco tipo Imagem e clique no ícone Imagem. ****
+Para inserir uma imagem, selecione um bloco tipo Imagem e clique no ícone Imagem. **&#x200B;**
 
 ![](assets/dce_insert_image.png)
 
