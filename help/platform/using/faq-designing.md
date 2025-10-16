@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 435314fa5907c16166cf7ff6741ff7ad0412d04b
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 83%
+source-wordcount: '362'
+ht-degree: 77%
 
 ---
 
@@ -30,13 +30,13 @@ Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com
 
 A configuração e os parâmetros de entrega podem ser salvos em um modelo para serem reutilizados.
 
-Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=pt-BR){target="_blank"}.
+Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 ## Posso importar facilmente um HTML existente para criar um email no Campaign? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
 Saiba como importar um HTML existente para criar e enviar emails no Adobe Campaign com um único clique.
 
-Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR#message-content){target="_blank"}.
+Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 
 ## Como usar o DCE do Campaign para criar um conteúdo de email? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
@@ -50,16 +50,16 @@ Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com
 
 As mensagens entregues pelo Adobe Campaign podem ser personalizadas de várias maneiras diferentes, relacionadas ao conteúdo ou à aparência das mensagens. Essas maneiras podem ser combinadas de acordo com os critérios obtidos especialmente dos perfis do destinatário. Em geral, o Adobe Campaign permite:
 
-* Personalizar o formato da mensagem. Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR#message-content){target="_blank"}.
-* Inserir campos de personalização dinâmicos. [Clique aqui para saber mais](../../delivery/using/personalization-fields.md).
-* Inserir blocos de personalização predefinidos ou criar seu próprio bloco. [Clique aqui para saber mais](../../delivery/using/personalization-blocks.md).
-* Criar conteúdo condicional. [Clique aqui para saber mais](../../delivery/using/conditional-content.md) e leia [esta seção](../../delivery/using/conditional-content.md).
+* Personalizar o formato da mensagem. Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
+* Inserir campos de personalização dinâmicos. Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}.
+* Inserir blocos de personalização predefinidos ou criar seu próprio bloco. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+* Criar conteúdo condicional. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditional-content.html){target="_blank"}.
 
 ## Posso enviar mensagens em vários idiomas? {#can-i-send-multilingual-messages-}
 
 É possível enviar mensagens multilíngues para seus destinatários, de acordo com as preferências ou com o país, por exemplo.
 
-Para fazer isso, você pode localizar o conteúdo da mensagem e personalizá-lo de acordo o perfil do destinatário, usando [condições](../../delivery/using/conditional-content.md). Você também pode usar fluxos de trabalho para selecionar a versão da mensagem a ser enviada dependendo de um teste no idioma preferencial. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=pt-BR){target="_blank"}.
+Para fazer isso, você pode localizar o conteúdo da mensagem e personalizá-lo de acordo o perfil do destinatário, usando [condições](../../delivery/using/conditional-content.md). Você também pode usar fluxos de trabalho para selecionar a versão da mensagem a ser enviada dependendo de um teste no idioma preferencial. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
 ## Como posso traduzir um formulário web? {#how-can-i-localize-a-webform-}
 
