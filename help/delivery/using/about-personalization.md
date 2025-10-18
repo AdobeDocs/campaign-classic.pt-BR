@@ -45,8 +45,8 @@ Saiba mais sobre as principais etapas relacionadas ao conteúdo condicional e à
 Consulte estas páginas para saber mais sobre cupons personalizados, documentos do PDF e personalização de emoticons **na documentação do Campaign v8**:
 
 * [Cupons personalizados](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/ppersonalized-coupons.html){target="_blank"}: saiba como criar e atribuir cupons personalizados ou anônimos em suas entregas de email.
-* [Gerar documentos personalizados do PDF](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html){target="_blank"}: saiba como gerar anexos do PDF com conteúdo personalizado para cada destinatário.
-* [Personalizar a lista de emoticons](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html){target="_blank"}: saiba como adicionar e gerenciar emoticons para aprimorar mensagens de email.
+* [Gerar documentos personalizados do PDF](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html?lang=pt-BR){target="_blank"}: saiba como gerar anexos do PDF com conteúdo personalizado para cada destinatário.
+* [Personalizar a lista de emoticons](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html?lang=pt-BR){target="_blank"}: saiba como adicionar e gerenciar emoticons para aprimorar mensagens de email.
 
 >[!ENDTABS]
 
