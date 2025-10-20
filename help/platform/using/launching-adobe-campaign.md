@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '428'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -32,18 +32,18 @@ A janela de conexão do console do cliente permite selecionar ou configurar banc
 
 ## Conexão com o Adobe Campaign {#connecting-to-adobe-campaign}
 
-### Conectar-se ao Adobe ID
+### Conectar-se com o seu Adobe ID
 
 Os usuários do Campaign se conectam ao console do Adobe Campaign usando a Adobe ID, por meio do Sistema de gerenciamento de identidades (IMS) da Adobe. É possível usar a mesma ID em todas as soluções da Adobe. A conexão é salva ao usar o Adobe Campaign com outras soluções. Saiba mais sobre o Adobe IMS [nesta página](https://helpx.adobe.com/br/enterprise/using/identity.html).
 
 Para configurar a conexão do Campaign Classic v7 com o Adobe Identity Management Service (IMS), consulte [esta página](../../integrations/using/about-adobe-id.md).
 
-Quando a configuração estiver concluída, saiba como se conectar ao Campaign com sua Adobe ID na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/connect){target=_blank}.
+Quando a configuração for concluída, saiba como se conectar ao Campaign com o seu Adobe ID na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/connect){target=_blank}.
 
 
-### Conectar-se com um logon/senha
+### Conectar-se com logon/senha
 
-Você também pode se conectar com um login/senha dedicado. Essa conexão é conhecida como a &quot;Autenticação nativa&quot; do Campaign:
+Também é possível conectar-se com uma combinação exclusiva de logon e senha. Essa conexão é conhecida como “Autenticação nativa” do Campaign:
 
 1. Digite o identificador da conta do operador no campo **[!UICONTROL Login]**.
 
@@ -55,7 +55,7 @@ Você também pode se conectar com um login/senha dedicado. Essa conexão é con
 
 1. Clique em **[!UICONTROL LOG IN]** para confirmar.
 
-Agora, você pode acessar o [Workspace do Adobe Campaign](../../platform/using/adobe-campaign-workspace.md).
+Agora você pode acessar o [espaço de trabalho do Adobe Campaign](../../platform/using/adobe-campaign-workspace.md).
 
 ## Configurar conexões {#setting-up-connections}
 

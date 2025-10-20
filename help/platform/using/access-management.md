@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Introdução a permissões
+title: Introdução às permissões
 description: Saiba como conceder acesso aos recursos do Campaign
 badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
 source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
-# Introdução a permissões{#access-management}
+# Introdução às permissões{#access-management}
 
 
 >[!CAUTION]
@@ -48,7 +48,7 @@ Para saber como definir **permissões em pastas**, consulte a **[documentação 
 
 >[!TAB Autenticação nativa]
 
-A autenticação nativa com logon/senha ainda está disponível no Campaign v7. No entanto, para reforçar a segurança e o processo de autenticação, a Adobe Campaign recomenda [migrar o modo de autenticação do usuário final](../../technotes/using/ac-ims.md) da autenticação nativa para o Adobe Identity Management System (IMS). Observe que no Campaign v8, a conexão com a autenticação nativa não é permitida.
+A autenticação nativa com logon/senha ainda está disponível no Campaign v7, mas para reforçar a segurança e o processo de autenticação, o Adobe Campaign recomenda [migrar o modo de autenticação do usuário final](../../technotes/using/ac-ims.md) da autenticação nativa para o Adobe Identity Management System (IMS). Observe que, no Campaign v8, a conexão com autenticação nativa não é permitida.
 
 [![imagem](../../assets/do-not-localize/learn-more-button.svg)](../../technotes/using/ac-ims.md)
 
@@ -70,8 +70,8 @@ There are two types of permissions you can grant to a user:
 
 >[!NOTE]
 >
-> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
-> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
+> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/campaign/kb/acc-security.html).
+> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
 Learn how to grant access and set up permissions in these sections:
 

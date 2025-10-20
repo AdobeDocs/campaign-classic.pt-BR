@@ -10,9 +10,9 @@ exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
 hide: true
 hidefromtoc: true
 source-git-commit: d3a603bbb70dc63e72b6eed87a6503e155aff54e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '137'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Cada nó coincide com uma pasta. Os dados de cada pasta devem ser considerados p
 >
 > * Para exibir a lista de todos os destinatários no banco de dados, crie uma visualização. Saiba mais na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 >
-> * Para saber mais sobre como gerenciar perfis, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+> * Para saber mais sobre como gerenciar os seus perfis, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 <!--

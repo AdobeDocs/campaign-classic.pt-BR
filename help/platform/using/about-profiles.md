@@ -7,9 +7,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ No Adobe Campaign, os destinatários são os perfis padrão direcionados para en
 
 >[!TAB Documentação de perfis]
 
-Para saber mais sobre o perfil, como criá-lo e editá-lo, consulte a documentação detalhada na **[documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}**.
+Para saber mais sobre perfis, como criá-los e editá-los, consulte a explicação detalhada na **[documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}**.
 
 [![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
 
@@ -121,9 +121,9 @@ The general layout of the Adobe Campaign explorer is presented in [this page](..
 
 An active profile is a profile that customer has attempted to communicate with during the past 12 months via any channel.
 
-According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=pt-BR){target="_blank"}.
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
 The following guardrails and limitations apply:
 
@@ -139,13 +139,13 @@ Learn how to access profile data, sort and filter profiles and manually create a
 
 This video also explains the compliance of Adobe Campaign Classic with General Data Protection Regulations. 
 
->[!VIDEO](https://video.tv.adobe.com/v/326754?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **See also**
 
-* [Privacy management in Campaign](https://helpx.adobe.com/br/campaign/kb/acc-privacy.html)
+* [Privacy management in Campaign](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
 
 * [Create queries and segment data in workflows](../../workflow/using/targeting-data.md)
 

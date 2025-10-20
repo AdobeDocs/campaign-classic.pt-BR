@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
 source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1131'
 ht-degree: 100%
 
@@ -157,7 +157,7 @@ Ao criar um modelo de campanha, você precisa inserir as seguintes informações
 
   >[!NOTE]
   >
-  >Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+  >Saiba mais sobre como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 * Selecione o **tipo de campanha**: exclusiva, recorrente ou periódica. Por padrão, os modelos de campanha se aplicam a campanhas exclusivas. As campanhas recorrentes e periódicas são detalhadas [nesta seção](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
 * Especifique a duração da campanha, ou seja, o número de dias em que a campanha ocorrerá. Ao criar uma campanha com base nesse modelo, as datas inicial e final da campanha serão preenchidas automaticamente.

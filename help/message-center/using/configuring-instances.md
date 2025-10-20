@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
 source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1237'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -185,7 +185,7 @@ Na árvore de todas as instâncias de execução, crie uma pasta por operador (*
 
 Para usar várias instâncias de controle, essa configuração deve ser executada em TODAS as instâncias de execução.
 
-1. Crie uma pasta por operador no nó **[!UICONTROL Administration > Production > Message Center]**: **Folder 1** e **Folder 2**. Saiba mais sobre pastas e exibições na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+1. Crie uma pasta por operador no nó **[!UICONTROL Administration > Production > Message Center]**: **Folder 1** e **Folder 2**. Saiba mais sobre pastas e visualizações na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
    ![](assets/messagecenter_multi_control_3.png)
 

@@ -8,9 +8,9 @@ role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
 source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '574'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->Esses procedimentos só se aplicam aos operadores que se conectam ao Campaign com a **autenticação nativa herdada**. A partir do Campaign Classic v7.3.1, todos os operadores devem usar o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectarem ao Campaign. [Saiba mais](../../technotes/using/migrate-users-to-ims.md)
+>Estes procedimentos aplicam-se somente a operadores conectados ao Campaign por meio da **autenticação nativa herdada**. A partir do Campaign Classic v7.3.1, todos os operadores deverão usar o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para conectar-se ao Campaign. [Saiba mais](../../technotes/using/migrate-users-to-ims.md)
 >
->Ao se conectar ao Campaign com sua Adobe ID, a seguinte seção não se aplica mais. Aprenda como configurar permissões com o Adobe IMS na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=pt-BR){target="_blank"}.
+>Ao conectar-se ao Campaign com o seu Adobe ID, a seção a seguir não se aplica mais. Saiba como configurar permissões com o Adobe IMS na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=pt-BR){target="_blank"}.
 
 Os grupos de operadores são criados por meio do nó **[!UICONTROL Administration > Access management > Operator groups]** na árvore.
 
@@ -67,7 +67,7 @@ Os grupos de operadores padrão são:
 
 1. **[!UICONTROL Campaign managers]**
 
-   Os operadores nesse grupo podem gerenciar campanhas de marketing: permite acessar os objetos vinculados às campanhas (planos, programas, workflows, orçamentos, etc.) na estrutura de **[!UICONTROL Campaign]** (módulo opcional do Adobe Campaign).
+   Os operadores neste grupo podem gerenciar campanhas de marketing: isso permite acessar os objetos vinculados às campanhas (planos, programas, fluxos de trabalho, orçamentos etc.) dentro da estrutura do **[!UICONTROL Campaign]** (módulo opcional do Adobe Campaign).
 
    Esse grupo contém os seguintes direitos nomeados:
 

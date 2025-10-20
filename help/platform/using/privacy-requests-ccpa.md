@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
 source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Para obter mais informações sobre como criar um novo campo, consulte a [docume
 
 Para preencher os valores, vários métodos podem ser utilizados:
 
-* Usar a interface do Campaign ao editar os detalhes do recipient
+* Usar a interface do Campaign ao editar os detalhes do destinatário
 * Uso da API
 * Através de um fluxo de trabalho de importação
 
@@ -87,7 +87,7 @@ Você deve garantir que nunca venderá a terceiros as informações pessoais de 
 
    ![](assets/privacy-ccpa-6.png)
 
-1. Você pode clicar na coluna para classificar destinatários de acordo com as informações de recusa. Você também pode criar um filtro para exibir somente os destinatários que tenham optado por não participar. Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+1. Você pode clicar na coluna para classificar destinatários de acordo com as informações de recusa. Você também pode criar um filtro para exibir somente os destinatários que tenham optado por não participar. Para mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
    ![](assets/privacy-ccpa-7.png)

@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
 source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1155'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Quando um destinatário clica no link de cancelar subscrição em um e-mail envi
 
 ## Criar um novo destinatário {#creating-a-new-recipient}
 
-1. Crie um novo destinatário no Campaign v7 para replicação no Campaign Standard. Insira o máximo possível de informações, incluindo o sobrenome, nome, endereço de email e endereço postal do destinatário. No entanto, não escolha um **[!UICONTROL Salutation]** já que ele será adicionado na próxima seção, [Editar um destinatário](#editing-a-recipient).
+1. Crie um novo destinatário no Campaign v7 para replicação no Campaign Standard. Insira o máximo possível de informações, incluindo o sobrenome, nome, endereço de email e endereço postal do destinatário. No entanto, não escolha um **[!UICONTROL Salutation]**, já que ele será adicionado na próxima seção, [Editar um destinatário](#editing-a-recipient).
 
    ![](assets/acs_connect_profile_sync_01.png)
 
@@ -57,11 +57,11 @@ Quando um destinatário clica no link de cancelar subscrição em um e-mail envi
 
 As etapas abaixo para alterar um ponto único de dados oferecem um exemplo simples de como o Campaign v7 se torna o banco de dados principal do Campaign Standard ao usar a replicação de dados. Modificar ou excluir dados replicados no Campaign v7 tem o mesmo efeito nos dados correspondentes no Campaign Standard.
 
-1. Escolha o destinatário recém-criado em [Criar um novo destinatário](#creating-a-new-recipient) e edite o nome dele. Por exemplo, escolha um **[!UICONTROL Salutation]** para o recipient (como Sr. ou Sra.).
+1. Escolha o destinatário recém-criado em [Criar um novo destinatário](#creating-a-new-recipient) e edite o nome do destinatário. Por exemplo, escolha um **[!UICONTROL Salutation]** para o destinatário (por exemplo, Sr. ou Sra.).
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Confirme se o nome do recipient foi atualizado no Campaign Standard. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=pt-BR).
+1. Confirme que o nome do destinatário foi atualizado no Campaign Standard. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=pt-BR).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -170,10 +170,10 @@ Siga as instruções em [Criar um fluxo de trabalho](#creating-a-workflow) e [Cr
 
    ![](assets/acs_connect_profile_sync_21.png)
 
-1. Os dados do destinatário no Campaign v7 são atualizados para refletir que o usuário cancelou a subscrição. Confirme se a caixa **[!UICONTROL No longer contact (by any channel)]** está marcada para o destinatário.
+1. Os dados do destinatário no Campaign v7 são atualizados para refletir que o usuário cancelou a subscrição. Confirme que a caixa **[!UICONTROL No longer contact (by any channel)]** está marcada para o destinatário.
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Vá para o Campaign Standard e abra os detalhes do perfil do destinatário. Confirme se uma caixa de seleção aparece ao lado de **[!UICONTROL No longer contact (by any channel)]**. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=pt-BR).
+1. Acesse o Campaign Standard e abra os detalhes do perfil do destinatário. Confirme se uma caixa de seleção aparece ao lado de **[!UICONTROL No longer contact (by any channel)]**. Para saber onde encontrar perfis no Campaign Standard, consulte [Noções básicas de navegação](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=pt-BR).
 
    ![](assets/acs_connect_profile_sync_23.png)

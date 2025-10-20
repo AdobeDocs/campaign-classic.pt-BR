@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
 source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '494'
 ht-degree: 100%
 
@@ -113,6 +113,6 @@ Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo ser�
 
 Saiba como adicionar conteúdo condicional a uma entrega no exemplo de um informativo multilíngue.
 
->[!VIDEO](https://video.tv.adobe.com/v/31844?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

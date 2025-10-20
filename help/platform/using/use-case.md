@@ -10,9 +10,9 @@ exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
 hide: true
 hidefromtoc: true
 source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Siga as etapas abaixo:
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   Você pode acessar esses campos para definir condições de filtro no corpo do editor de filtro. Um filtro de aplicativo é definido exatamente da mesma maneira como um filtro avançado. Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   Você pode acessar esses campos para definir condições de filtro no corpo do editor de filtro. Um filtro de aplicativo é definido exatamente da mesma maneira como um filtro avançado. Para mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
 1. Crie um novo filtro em assinaturas para exibir somente assinaturas com um formato do email indefinido:

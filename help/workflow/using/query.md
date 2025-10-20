@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1630'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -163,7 +163,7 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
 * esquema
 * recCount
 
-Esse conjunto de três valores identifica a população de destino do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de destino, **[!UICONTROL schema]** é o esquema da população (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica a população de destino do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de público-alvo, **[!UICONTROL schema]** é o esquema da população (normalmente, nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 Este valor é o esquema da tabela de trabalho. Esse parâmetro é válido para todas as transições com **[!UICONTROL tableName]** e **[!UICONTROL schema]**.
 
@@ -188,9 +188,9 @@ A seção abaixo fornece as práticas recomendadas para otimizar as queries exec
 
   Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-  ![](assets/do-not-localize/v7.jpeg) [Documentação do Campaign v7](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Documentação do Campaign v7](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
+  ![](assets/do-not-localize/v8.png)[Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
 
 ### Funções {#functions}
 

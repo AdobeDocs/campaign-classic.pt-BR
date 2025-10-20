@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
 source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '254'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -33,13 +33,13 @@ Neste exemplo, devemos executar uma query para localizar todos os domínios de e
 
 Para criar este exemplo, aplique as seguintes etapas:
 
-1. Abra o **[!UICONTROL Generic query editor]** e escolha a tabela Recipient (**nms:recipient**).
+1. Abra o **[!UICONTROL Generic query editor]** e escolha a tabela “Destinatários” (**nms:recipient**).
 
    ![](assets/query_editor_02.png)
 
 1. Na janela **[!UICONTROL Data to extract]**, selecione os campos **[!UICONTROL Email domain]** e **[!UICONTROL Primary key]**. Execute uma contagem no campo **[!UICONTROL Primary key]**.
 
-   Para obter mais informações sobre a contagem da chave primária, consulte [this section](../../platform/using/about-queries-in-campaign.md).
+   Para obter mais informações sobre a contagem da chave primária, consulte [esta seção](../../platform/using/about-queries-in-campaign.md).
 
 1. Marque a caixa **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**.
 
@@ -52,7 +52,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 1. Em **[!UICONTROL Data filtering]**, selecione **[!UICONTROL Filtering conditions]**. Vá para a janela **[!UICONTROL Target elements]** e clique em **[!UICONTROL Next]**.
 1. Na janela **[!UICONTROL Data grouping]**, selecione o **[!UICONTROL Email domain]** clicando em **[!UICONTROL Add]**.
 
-   Esta janela de agrupamento de dados é exibida somente se a caixa **[!UICONTROL Handle groupings (GROUP BY + HAVING])** foi marcada.
+   Esta janela de agrupamento de dados será exibida somente se a caixa **[!UICONTROL Handle groupings (GROUP BY + HAVING])** tiver sido marcada.
 
    ![](assets/query_editor_blocklist_04.png)
 

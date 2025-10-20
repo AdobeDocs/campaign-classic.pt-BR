@@ -9,9 +9,9 @@ content-type: reference
 level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1200'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -114,7 +114,7 @@ Exemplo:
 
 Os eventos são processados um de cada vez, por ordem de deslocamento. Cada thread do [!DNL pipelined] processa uma partição diferente.
 
-O “deslocamento” do último evento recuperado é armazenado no banco de dados. Portanto, se o processo for interrompido, será reiniciado a partir da última mensagem. Esses dados são armazenados no esquema interno xtk:pipelineOffset.
+O “deslocamento” do último evento recuperado é armazenado no banco de dados. Portanto, se o processo for interrompido, ele reinicia a partir da última mensagem. Esses dados são armazenados no esquema xtk integrado:pipelineOffset.
 
 Esse ponteiro é específico para cada instância e para cada consumidor. Portanto, quando muitas instâncias acessam o mesmo pipeline com consumidores diferentes, cada um recebe todas as mensagens na mesma ordem.
 
@@ -220,7 +220,7 @@ Os eventos podem ser exibidos com um formulário simples baseado no esquema de e
 
 >[!NOTE]
 >
->O nó do evento pipeline não está integrado e precisa ser adicionado, assim como o formulário relacionado precisa ser criado no Campaign. Essas operações são restritas unicamente a usuários especialistas. Para obter mais informações, consulte [Edição de formulários](../../configuration/using/editing-forms.md).
+>O nó do evento pipeline não está integrado e precisa ser adicionado, assim como o formulário relacionado precisa ser criado no Campaign. Essas operações são restritas unicamente a usuários especialistas. Para mais informações, consulte [Edição de formulários](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 

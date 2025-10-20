@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '870'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -140,12 +140,12 @@ Para criar um bloco de personalização, vá para o explorer e siga as seguintes
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Insira o conteúdo (em HTML, texto, JavaScript, etc.) do(s) bloco(s) de personalização e clique em **[!UICONTROL Save]**.
+   * Insira o conteúdo (em HTML, texto, JavaScript etc.) do(s) bloco(s) de personalização e clique em **[!UICONTROL Save]**.
 
 ## Tutorial em vídeo {#personalization-blocks-video}
 
 Saiba como criar blocos de conteúdo dinâmico e como usá-los para personalizar o conteúdo da sua entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/340472?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

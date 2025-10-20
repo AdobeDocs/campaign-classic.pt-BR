@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '697'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Depois que são coletados, os eventos são divididos por fluxos de trabalho téc
 
 >[!NOTE]
 >
->Na instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações, pois isso pode causar problemas de direito de acesso. Para obter mais informações sobre como configurar uma pasta como exibição, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+>Na instância de execução, as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações, pois isso pode causar problemas de direito de acesso. Para mais informações sobre como configurar uma pasta como visualização, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 ## Roteamento para um modelo {#routing-towards-a-template}
 

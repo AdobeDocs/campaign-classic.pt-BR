@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Para escolher qual conector deseja usar, siga estas etapas:
 
    >[!NOTE]
    >
-   >O target mapping padrão **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** está vinculado à tabela de destinatários. Para utilizar um mapeamento de alvo diferente, é necessário criar um novo e inseri-lo no campo **[!UICONTROL Target mapping]** do serviço. Para obter mais informações sobre como criar o target mapping, consulte [esta seção](../../configuration/using/about-custom-recipient-table.md).
+   >O target mapping **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** padrão é vinculado à tabela de destinatários. Para utilizar um target mapping diferente, é necessário criar um novo e inseri-lo no campo **[!UICONTROL Target mapping]** do serviço. Para obter mais informações sobre como criar o target mapping, consulte [esta seção](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
@@ -151,7 +151,7 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 
 ![](assets/do-not-localize/how-to-video.png) [Saiba como estender o esquema appsubscriptionRcp no vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=pt-BR#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
-É necessário estender o **appsubscriptionRcp** para definir campos adicionais para armazenar parâmetros do aplicativo no banco de dados do Campaign. Esses campos serão usados para personalização, por exemplo. Para fazer isso:
+É necessário estender o **appsubscriptionRcp** para definir campos adicionais para armazenar parâmetros do aplicativo no banco de dados do Campaign. Esses campos serão usados para personalização, por exemplo. Para isso:
 
 1. Crie uma extensão do esquema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** e defina os novos campos. Saiba mais sobre extensão de esquema [nesta página](../../configuration/using/about-schema-edition.md)
 

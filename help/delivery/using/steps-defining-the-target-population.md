@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1730'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Selecione o target mapping na lista suspensa **[!UICONTROL Target mapping]**. O target mapping padrão do Adobe Campaign é **[!UICONTROL Recipients]**, com base no esquema **nms:recipient**.
+1. Selecione o target mapping na lista suspensa **[!UICONTROL Target mapping]**. O target mapping padrão do Adobe Campaign é **[!UICONTROL Recipients]**, baseado no esquema **nms:recipient**.
 
    Outros target mappings estão disponíveis e alguns podem ser relacionados à sua configuração específica.[Saiba mais](#select-a-target-mapping).
 
@@ -48,7 +48,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
    Os seguintes tipos de target são oferecidos por padrão:
 
-   * **[!UICONTROL Filtering conditions]**: esta opção permite que você defina uma consulta e exiba o resultado. Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   * **[!UICONTROL Filtering conditions]**: esta opção permite que você defina uma consulta e exiba o resultado. Para mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * **[!UICONTROL Subscribers of an information service]**: esta opção permite que você selecione um boletim informativo ao qual os destinatários devem ser inscritos para receberem a entrega que está sendo criada.
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -72,7 +72,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
    * **[!UICONTROL Recipients included in a folder]**: essa opção permite que você direcione aos perfis contidos em uma pasta específica da árvore.
    * **[!UICONTROL A recipient]**: essa opção permite selecionar um destinatário específico dos perfis no banco de dados.
    * **[!UICONTROL A list of recipients]**: essa opção permite direcionar a uma lista de destinatários. As listas são apresentadas [nesta seção](../../platform/using/creating-and-managing-lists.md).
-   * **[!UICONTROL User filters]**: essa opção permite que você acesse os filtros pré-configurados para usá-los como critérios de filtragem para perfis no banco de dados. Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   * **[!UICONTROL User filters]**: essa opção permite que você acesse os filtros pré-configurados para usá-los como critérios de filtragem para perfis no banco de dados. Para mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * A opção **[!UICONTROL Exclude recipients corresponding to this segment]** permite apontar os destinatários que não atendem aos critérios de target definidos. Para usar essa opção, selecione a caixa apropriada e, em seguida, aplique o direcionamento, conforme definido anteriormente, para excluir os perfis resultantes.
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -88,7 +88,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
 
 Você poderá iniciar uma entrega nos destinatários que não estão salvos no banco de dados, mas armazenados em um arquivo externo. Por exemplo, enviaremos aqui uma entrega para os destinatários importados de um arquivo de texto.
 
-Para fazer isso:
+Para isso:
 
 1. Clique no link **[!UICONTROL To]** para selecionar os destinatários da sua entrega.
 1. Selecione a opção **[!UICONTROL Defined in an external file]**.
@@ -230,7 +230,7 @@ Consulte também:
 
 ## Selecionar um target mapping {#select-a-target-mapping}
 
-Por padrão, modelos de entrega têm como target **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient**. O Adobe Campaign oferece outros target mapping para suas entregas, para serem usados conforme suas necessidades.
+Por padrão, modelos de entrega direcionam **[!UICONTROL Recipients]**. O target mapping, portanto, usa os campos da tabela **nms:recipient**. O Adobe Campaign oferece outros target mapping para suas entregas, para serem usados conforme suas necessidades.
 
 ![](assets/delivery_select_mapping.png)
 
@@ -251,6 +251,6 @@ Esses mappings são os seguintes:
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
->[!VIDEO](https://video.tv.adobe.com/v/35801?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

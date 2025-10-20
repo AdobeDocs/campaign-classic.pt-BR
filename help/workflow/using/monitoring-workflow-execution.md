@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2020'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -271,9 +271,9 @@ Para fazer isso:
 
 1. Clique com o botão direito do mouse na pasta onde deseja adicionar a exibição.
 1. Em **[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**, selecione a exibição que deseja adicionar.
-1. Depois que a pasta for adicionada à árvore, certifique-se de configurá-la como uma visualização, para que ela exiba todos os workflows, qualquer que seja a pasta de origem. Para obter mais informações sobre como configurar exibições, consulte [esta seção](../../platform/using/about-adobe-campaign-classic.md).
+1. Após adicionar a pasta à árvore, certifique-se de configurá-la como uma visualização, para que ela exiba todos os fluxos de trabalho, seja qual for a pasta de origem. Para mais informações sobre como configurar visualizações, consulte [esta seção](../../platform/using/about-adobe-campaign-classic.md).
 
-Além dessas exibições, é possível configurar as pastas de filtros que permitem filtrar a lista de fluxos de trabalho de acordo com o status de execução. Para fazer isso:
+Além dessas exibições, é possível configurar as pastas de filtros que permitem filtrar a lista de fluxos de trabalho de acordo com o status de execução. Para isso:
 
 1. Acesse uma pasta do tipo fluxo de trabalho e selecione o menu **[!UICONTROL Filters]** / **[!UICONTROL Advanced filter]**.
 1. Configure o filtro para que o campo **[!UICONTROL @status]** do fluxo de trabalho seja igual ao estado escolhido.
@@ -281,4 +281,4 @@ Além dessas exibições, é possível configurar as pastas de filtros que permi
 
 ![](assets/workflow-monitoring-filter.png)
 
-Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Para mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.

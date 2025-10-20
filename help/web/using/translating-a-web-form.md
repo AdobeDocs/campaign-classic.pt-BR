@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1549'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Para strings que nunca foram traduzidas, o campo **[!UICONTROL Text]** fica vazi
 
 ### Filtragem de strings {#filtering-strings}
 
-Por padrão, cada idioma de tradução da aplicação Web é exibido. Há dois filtros padrão: idioma e status. Clique no botão **[!UICONTROL Filters]** e, em seguida, clique em **[!UICONTROL By language or status]** para exibir as caixas suspensas correspondentes. Você também pode criar um filtro avançado. Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Por padrão, cada idioma de tradução da aplicação Web é exibido. Há dois filtros padrão: idioma e status. Clique no botão **[!UICONTROL Filters]** e, em seguida, clique em **[!UICONTROL By language or status]** para exibir as caixas suspensas correspondentes. Você também pode criar um filtro avançado. Para mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
@@ -169,7 +169,7 @@ se o idioma for o primeiro ou único parâmetro da URL. Por exemplo: **https://m
 &lang=xx
 ```
 
-se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myserver/webApp/APP34?status=1&lang=en**
+se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 Os idiomas e os dicionários de tradução disponíveis como padrão estão listados abaixo.
 
@@ -430,7 +430,7 @@ Você pode adicionar **?lang=es** ou **=lang=de** para exibi-la em espanhol ou a
 >[!NOTE]
 >
 >Se outros parâmetros já estiverem sendo usados para essa aplicação web, adicione **&amp;lang=**.\
->Por exemplo: **https://myserver/webApp/APP34?status=1&lang=en**
+>Por exemplo: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## Configuração avançada de tradução {#advanced-translation-configuration}
 
