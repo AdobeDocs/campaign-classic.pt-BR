@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: bba3f23637dd67a1557203c5ed1b93a6cb044870
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 96%
+source-wordcount: '850'
+ht-degree: 90%
 
 ---
 
@@ -101,6 +101,12 @@ Se você modificar o cronograma do fluxo de trabalho de arquivamento, também pr
 ## Configurar multimarcas {#configuring-multibranding}
 
 Esta seção descreve uma solução para configurar URLs de página de rastreamento e mirror page por marca, para mensagens transacionais no Adobe Campaign.
+
+### Nota de compatibilidade {#compatibility-note}
+
+Essa configuração de marca herdada não é compatível com o novo modelo [marca centralizada](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"} introduzido no Campaign v8.
+
+Se o ambiente existente usar essa configuração herdada, ele não poderá ser migrado diretamente para o novo modelo de marca centralizada. É necessária uma reimplementação completa das configurações da marca para a adoção do novo sistema.
 
 ### Pré-requisitos {#prerequisites}
 
