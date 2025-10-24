@@ -104,7 +104,7 @@ Esta seção descreve uma solução para configurar URLs de página de rastreame
 
 ### Nota de compatibilidade {#compatibility-note}
 
-Essa configuração de marca herdada não é compatível com o novo modelo [marca centralizada](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"} introduzido no Campaign v8.
+Essa configuração de marca herdada não é compatível com o novo modelo [marca centralizada](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=pt-BR){target="_blank"} introduzido no Campaign v8.
 
 Se o ambiente existente usar essa configuração herdada, ele não poderá ser migrado diretamente para o novo modelo de marca centralizada. É necessária uma reimplementação completa das configurações da marca para a adoção do novo sistema.
 
