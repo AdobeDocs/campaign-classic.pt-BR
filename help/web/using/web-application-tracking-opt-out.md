@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ As APIs disponíveis no lado do cliente para personalizar o banner são:
 * **NL.ClientWebTracking.forbid()**: define o valor do cookie de opt out para proibir o rastreamento web. O rastreamento web precisa de uma entrada de usuário para ser proibido.
 * **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: fecha o banner de cookie de opt out após o usuário clicar no botão Aceitar ou Recusar. (durante a fase de propagação de eventos de clique)
 
-  bannerDomElt {DOMElement} o elemento DOM raiz do banner de cookie que precisa ser removido
+  bannerDomElt {DOMElement} o elemento DOM raiz do banner de cookies que precisa ser removido
 
 * **NL.ClientWebTracking.hasUserPrefs()**: retorna verdadeiro se o usuário tiver escolhido suas preferências para o rastreamento web.
 * **NL.ClientWebTracking.getUserPrefs()**: retorna o valor de cookie de opt out que define as preferências do usuário.
@@ -92,9 +92,9 @@ Se você precisar gravar uma JSSP, as APIs do lado do servidor estarão disponí
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: gera a marcação para o banner de opt out a ser inserido na página JSSP
 
-  **escapeJs{Boolean}**: verdadeiro quando a marcação gerada precisa de escape para ser usada dentro do JavaScript.
+  **escapeJs{Boolean}**: verdadeiro quando a marcação gerada precisa ser escapada para ser usada no JavaScript.
 
-  Retorna o HTML da marcação de banner de opt out que precisa ser impressa na página.
+  Retorna o HTML da marcação de banner de recusa que precisa ser impressa na página.
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
@@ -108,7 +108,7 @@ Se você precisar gravar uma JSSP, as APIs do lado do servidor estarão disponí
 
   Renderiza a marcação para o banner de opt out inserindo-o na página JSSP. Ele é chamado como no Jssp entre &lt;% %>
 
-  **escapeJs{Boolean}**: verdadeiro quando a marcação gerada precisa de escape para ser usada dentro do JavaScript
+  **escapeJs{Boolean}**: verdadeiro quando a marcação gerada precisa ser escapada para ser usada no JavaScript
 
 Exemplo de JSSP:
 

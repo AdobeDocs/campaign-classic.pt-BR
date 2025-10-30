@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ O Adobe Campaign permite exportar arquivos compactados ou criptografados. Ao def
 
 Para fazer isso:
 
-1. Instale um par de chaves GPG para sua instância usando o [Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#encrypting-data).
+1. Instale um par de chaves GPG para sua instância usando o [Painel de controle](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/gpg-keys-management#encrypting-data).
 
    >[!NOTE]
    >
@@ -36,7 +36,7 @@ Em seguida, você pode usar comandos ou códigos na guia **[!UICONTROL Script]**
 **Tópicos relacionados:**
 
 * [Descompactar ou descriptografar um arquivo antes do processamento](../../platform/using/unzip-decrypt.md)
-* [Atividade de extração de dados (arquivo)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=pt-BR){target="_blank"}
+* [Atividade de extração de dados (arquivo)](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file){target="_blank"}
 
 ## Caso de uso: criptografar e exportar dados usando uma chave instalada no Painel de controle {#use-case-gpg-encrypt}
 
@@ -46,7 +46,7 @@ Nesse caso de uso, criaremos um fluxo de trabalho para criptografar e exportar d
 
 As etapas para executar esse caso de uso são as seguintes:
 
-1. Gere um par de chaves GPG (público/privado) usando um utilitário GPG e, em seguida, instale a chave pública no Painel de controle. As etapas detalhadas estão disponíveis na [documentação do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#encrypting-data).
+1. Gere um par de chaves GPG (público/privado) usando um utilitário GPG e, em seguida, instale a chave pública no Painel de controle. As etapas detalhadas estão disponíveis na [documentação do Painel de controle](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/gpg-keys-management#encrypting-data).
 
 1. Crie um fluxo de trabalho para exportação de dados no Campaign Classic e criptografe-o usando a chave privada que foi instalada através do Painel de controle. Para fazer isso, criaremos um fluxo de trabalho da seguinte maneira:
 
@@ -59,7 +59,7 @@ As etapas para executar esse caso de uso são as seguintes:
 
 1. Configure a atividade **[!UICONTROL Query]** para direcionar os dados desejados a partir do banco de dados. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=pt-BR){target="_blank"}.
 
-1. Abra a atividade **[!UICONTROL Data extraction (file)]** e configure-a de acordo com suas necessidades. Os conceitos globais sobre como configurar a atividade estão disponíveis na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=pt-BR){target="_blank"}.
+1. Abra a atividade **[!UICONTROL Data extraction (file)]** e configure-a de acordo com suas necessidades. Os conceitos globais sobre como configurar a atividade estão disponíveis na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file){target="_blank"}.
 
    ![](assets/gpg-data-extraction.png)
 
@@ -91,6 +91,6 @@ As etapas para executar esse caso de uso são as seguintes:
 
 Este vídeo mostra como usar uma chave GPG para criptografar dados e também está disponível em
 
->[!VIDEO](https://video.tv.adobe.com/v/41332?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

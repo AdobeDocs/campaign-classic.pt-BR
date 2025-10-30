@@ -6,9 +6,9 @@ badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Clas
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
 
 ## Relatórios sobre campanhas {#reports-on-campaigns}
 
-Os relatórios sobre campanhas se relacionam aos dados na tabela **nms:operation**.
+Os relatórios sobre campanhas referem-se aos dados na tabela **nms:operation** .
 
 Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
@@ -180,7 +180,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte a [
 
 ## Relatórios sobre serviços {#reports-on-services}
 
-Os relatórios sobre serviços dizem respeito aos dados na tabela **nms:service**.
+Os relatórios sobre serviços referem-se aos dados na tabela **nms:service**.
 
 Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
@@ -273,7 +273,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte a [
 
 ## Relatórios sobre simulações {#reports-on-simulations}
 
-Os relatórios sobre simulações dizem respeito aos dados na tabela **nms:simulation**.
+Os relatórios sobre simulações referem-se aos dados na tabela **nms:simulation**.
 
 Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
@@ -310,7 +310,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte os 
 
 ## Relatórios sobre aplicativos web {#reports-on-web-applications}
 
-Os relatórios em aplicativos Web dizem respeito aos dados na tabela **nms:WebApp**.
+Os relatórios sobre aplicativos web referem-se aos dados na tabela **nms:WebApp**.
 
 Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 

@@ -7,9 +7,9 @@ feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1201'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ O conteúdo é preenchido automaticamente por um feed XML vindo do URL inserido:
 </book>
 ```
 
-O formato de dados não corresponde ao esquema de dados inserido no modelo de publicação (**cus:book** em nosso exemplo); o elemento **`<section>`** deve ser substituído pelo elemento **`<chapter>`**. É necessário aplicar a folha de estilos &quot;cus:book-workflow.xsl&quot; para fazer as alterações necessárias.
+O formato de dados não corresponde ao esquema de dados inserido no modelo de publicação (**cus:book** no nosso exemplo). O elemento **`<section>`** deve ser substituído pelo elemento **`<chapter>`**. É necessário aplicar a folha de estilos &quot;cus:book-workflow.xsl&quot; para fazer as alterações necessárias.
 
 Código de origem da folha de estilos XSLT usada:
 
@@ -219,7 +219,7 @@ Se o seu conteúdo da entrega estiver disponível em um arquivo HTML localizado 
 
 ### Importar conteúdo do conector do Amazon Simple Storage Service (S3)  {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Se o conteúdo da entrega estiver localizado nos buckets do Amazon Simple Storage Service (S3), é possível carregá-los facilmente nas entregas do Adobe Campaign. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=pt-BR){target="_blank"}.
+Se o conteúdo da entrega estiver localizado nos buckets do Amazon Simple Storage Service (S3), é possível carregá-lo facilmente nas entregas do Adobe Campaign. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=pt-BR){target="_blank"}.
 
 
 ## Atualização semiautomática {#semi-automatic-update}

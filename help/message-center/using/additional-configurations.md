@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 source-git-commit: bba3f23637dd67a1557203c5ed1b93a6cb044870
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '850'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -104,9 +104,9 @@ Esta seção descreve uma solução para configurar URLs de página de rastreame
 
 ### Nota de compatibilidade {#compatibility-note}
 
-Essa configuração de marca herdada não é compatível com o novo modelo [marca centralizada](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=pt-BR){target="_blank"} introduzido no Campaign v8.
+Essa configuração de identidade visual legada não é compatível com o novo modelo de [identidade visual centralizada](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=pt-BR){target="_blank"} introduzido no Campaign v8.
 
-Se o ambiente existente usar essa configuração herdada, ele não poderá ser migrado diretamente para o novo modelo de marca centralizada. É necessária uma reimplementação completa das configurações da marca para a adoção do novo sistema.
+Se o ambiente existente usar essa configuração legada, ele não poderá ser migrado diretamente para o novo modelo de identidade visual centralizada. É necessária uma reimplementação completa das configurações de identidade visual para a adoção do novo sistema.
 
 ### Pré-requisitos {#prerequisites}
 
@@ -135,9 +135,9 @@ Na(s) instância(s) de execução, siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Saiba como estender um esquema existente na seção [Extensão de um esquema](../../configuration/using/extending-a-schema.md).
+   >Saiba como estender um esquema na seção [Extensão de um esquema](../../configuration/using/extending-a-schema.md).
 
-1. Modifique o formulário nms:extAccount:
+1. Modifique o formulário nms:extAccount: 
 
    ```
    <container label="Message domain branding" type="frame">
@@ -175,6 +175,6 @@ Para fazer isso, siga as etapas abaixo:
 
 1. Crie uma conta externa por marca com o mesmo nome interno, conforme definido na [instância de execução](#execution-instance) (etapa 1).
 
-1. Criar um modelo de entrega por marca. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=pt-BR){target="_blank"}.
+1. Crie um modelo de entrega por marca. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=pt-BR){target="_blank"}.
 
 1. Em **[!UICONTROL Properties]** do modelo de entrega, defina o roteamento para a conta externa da marca.

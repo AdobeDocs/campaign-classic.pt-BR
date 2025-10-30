@@ -7,9 +7,9 @@ feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -146,9 +146,9 @@ por lei, entregas de email devem conter um link para cancelamento. Os destinatá
 
 O link padrão para cancelamento de assinatura é inserido por meio do último botão da barra de ferramentas do editor de conteúdo fornecido no assistente de entrega (consulte [Sobre a personalização](about-personalization.md)). Quando o destinatário clica nesse link, o perfil é adicionado à lista de bloqueios (recusado), significando que este destinatário não será mais direcionado para qualquer ação de entrega.
 
-Os destinatários podem, no entanto, optar por cancelar a subscrição de um serviço sem cancelar a subscrição de todos os serviços. Para permitir isso, você pode usar um formulário web (consulte [esta seção](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) ou inserir um link personalizado de cancelamento de assinatura. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.
+Os destinatários podem, no entanto, optar por cancelar a assinatura de um serviço sem cancelar a de todos os serviços. Para permitir isso, use um formulário da web (consulte [esta seção](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) ou insira um link personalizado de cancelamento de assinatura. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.
 
-Também é possível cancelar a subscrição de um destinatário manualmente no perfil do destinatário. Para fazer isso, clique na guia **[!UICONTROL Subscriptions]** do destinatário, selecione o(s) serviço(s) de informações desejado(s) e clique em **[!UICONTROL Delete]**.
+Também é possível cancelar a assinatura de um destinatário manualmente no perfil do destinatário. Para fazer isso, clique na guia **[!UICONTROL Subscriptions]** do destinatário, selecione o(s) serviço(s) de informações desejado(s) e clique em **[!UICONTROL Delete]**.
 
 Por fim, é possível cancelar a subscrição de um ou mais destinatários por meio do serviço de informação relacionado. Para fazer isso, clique na guia **[!UICONTROL Subscriptions]** do serviço, selecione os destinatários relacionados e clique em **[!UICONTROL Delete]**.
 

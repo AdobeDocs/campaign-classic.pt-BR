@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '807'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ A entrega pode ser personalizada usando os campos da oferta ou, no caso de um em
 
 Também é possível apresentar ofertas em uma entrega usando descrições da entrega.
 
-Para obter mais informações sobre delivery outlines, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
+Para obter mais informações sobre as descrições de entregas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html?lang=pt-BR){target="_blank"}.
 
 1. Crie uma nova campanha ou acesse uma campanha existente.
 1. Acesse as descrições das entregas por meio das guias da campanha **[!UICONTROL Edit]** > **[!UICONTROL Documents]**.

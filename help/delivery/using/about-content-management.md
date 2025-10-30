@@ -7,9 +7,9 @@ feature: Landing Pages, Email Design
 role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ O módulo Adobe Campaign Content Manager é um [pacote integrado](../../installa
 
 >[!NOTE]
 >
->Esta seção se refere ao módulo Gerenciamento de conteúdo. Para obter mais informações sobre como projetar o conteúdo de deliveries de emails, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR){target="_blank"}.
+>Esta seção se refere ao módulo Gerenciamento de conteúdo. Para obter mais informações sobre como projetar o conteúdo de entregas de email, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR){target="_blank"}.
 
 O módulo &quot;Gerenciamento de conteúdo&quot; incorpora o grupo de trabalho, o fluxo de trabalho e a funcionalidade de agregação de conteúdo. Isso permite que uma mensagem seja formatada automaticamente: email, correspondência, SMS, Web, etc.
 

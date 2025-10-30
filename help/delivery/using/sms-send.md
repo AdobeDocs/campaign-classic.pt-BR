@@ -6,9 +6,9 @@ feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -167,4 +167,4 @@ O nome do remetente desse tipo de mensagem é um código curto geralmente usado 
 >
 >Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no painel de entrega. [Saiba mais](delivery-dashboard.md).
 >
->Essas mensagens não são consideradas nas regras de pressão comercial. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-optimization/pressure-rules){target="_blank"}.
+>Essas mensagens não são consideradas nas regras de pressão comercial. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=pt-BR){target="_blank"}.

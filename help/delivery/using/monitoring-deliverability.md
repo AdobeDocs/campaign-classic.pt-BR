@@ -7,9 +7,9 @@ feature: Deliverability
 role: User, Admin
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -54,6 +54,6 @@ Estas são algumas diretrizes adicionais sobre o monitoramento da capacidade de 
 * Verifique se as [tentativas](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) estão configuradas corretamente (30 minutos para o período de nova tentativa e mais de 20 tentativas) nos modelos da entrega.
 * Verifique regularmente se a caixa de [rejeição](understanding-delivery-failures.md#bounce-mail-management) está acessível e se a conta não está prestes a expirar.
 * Verifique a taxa de transferência de cada delivery, que pode ser acessada no [painel de delivery](delivery-dashboard.md), para garantir que ela seja consistente com a validade do conteúdo do delivery (por exemplo, &quot;vendas rápidas&quot; devem ser entregues em minutos, não em dias).
-* Ao usar as ondas, verifique se cada onda tem tempo suficiente para terminar antes que a próxima seja acionada. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=pt-BR#sending-using-multiple-waves){target="_blank"}.
+* Ao usar as ondas, verifique se cada uma tem tempo suficiente para terminar antes que a próxima seja acionada. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=pt-BR#sending-using-multiple-waves){target="_blank"}.
 * Verifique se o número de erros e as novas [quarentenas](understanding-quarantine-management.md) estão consistentes com outras entregas.
 * Consulte detalhadamente os [logs da entrega](delivery-dashboard.md#delivery-logs-and-history) para verificar o tipo de erro destacado (lista de bloqueios, problemas de DNS, regras anti-spam, etc.).

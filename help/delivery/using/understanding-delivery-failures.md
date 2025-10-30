@@ -7,9 +7,9 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2578'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -188,7 +188,7 @@ Se uma mensagem falhar devido a um erro **suave** ou **grave** que é temporári
 >
 >Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](sending-with-enhanced-mta.md), as configurações de tentativas de entrega não são mais usadas pelo Campaign. As tentativas de rejeição temporária e o intervalo de tempo entre elas são determinados pelo MTA aprimorado com base no tipo e na gravidade das respostas de rejeição que retornam do domínio de email da mensagem.
 
-Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, para modificar a duração de uma entrega, vá para os parâmetros avançados da entrega ou modelo da entrega e especifique a duração desejada no campo correspondente. Consulte esta [página](communication-channels.md) em **Envio de entrega** > **Definir o período de validade**.
+Para instalações no local e hospedadas/híbridas usando o MTA herdado do Campaign, para modificar a duração de uma entrega, vá para os parâmetros avançados da entrega ou modelo da entrega e especifique a duração desejada no campo correspondente. Consulte esta [página](communication-channels.md) em **Envio de entrega** > **Definir o período de validade**.
 
 A configuração padrão permite cinco tentativas em intervalos de uma hora, seguidas por uma nova tentativa por dia, por quatro dias. O número de tentativas pode ser alterado globalmente (entre em contato com o administrador técnico da Adobe) ou para cada entrega ou modelo da entrega. Veja esta [página](communication-channels.md) em **Envio de entrega** > **Configurar novas tentativas**.
 
@@ -243,7 +243,7 @@ A mensagem retornada pelo servidor remoto na primeira ocorrência desse tipo de 
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-O Adobe Campaign filtra esta mensagem para excluir o conteúdo variável (como IDs, datas, endereços de email, números de telefone etc.) e exibe o resultado filtrado na coluna **[!UICONTROL Text]**. As variáveis são substituídas por **`#xxx#`**, exceto os endereços que são substituídos por **`*`**.
+O Adobe Campaign filtra essa mensagem para excluir o conteúdo variável (como IDs, datas, endereços de email, números de telefone, etc.) e exibe o resultado filtrado na coluna **[!UICONTROL Text]**. As variáveis são substituídas por **`#xxx#`**, exceto os endereços que são substituídos por **`*`**.
 
 Esse processo permite reunir todas as falhas do mesmo tipo e evitar várias entradas para erros semelhantes na tabela de qualificação do log de entrega.
 

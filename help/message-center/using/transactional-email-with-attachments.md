@@ -5,9 +5,9 @@ description: Saiba como enviar emails transacionais com anexos individuais e/ou 
 feature: Transactional Messaging, Message Center
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '667'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ O diagrama abaixo mostra as diferentes etapas ao implementar este cenário:
 
 Para adicionar um anexo de email rapidamente a uma mensagem transacional, siga as etapas abaixo:
 
-1. Comece criando seu anexo. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=pt-BR#attach-a-personalized-file){target="_blank"}.
+1. Comece criando seu anexo. Para mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/attaching-files#attach-a-personalized-file){target="_blank"}.
 
    Isso permite anexar os arquivos a um email, mesmo se eles não estiverem hospedados na instância de execução.
 

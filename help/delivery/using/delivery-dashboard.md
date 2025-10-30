@@ -7,9 +7,9 @@ feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Para uma entrega, você pode exibir (por exemplo) apenas os destinatários com u
 
 O link **[!UICONTROL Display the mirror page for this message...]** permite exibir a mirror page do conteúdo da entrega selecionado na lista em uma nova janela.
 
-A mirror page só está disponível para as entregas para as quais o conteúdo HTML foi definido. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=pt-BR){target="_blank"}.
+A mirror page só está disponível para as entregas para as quais o conteúdo HTML foi definido. Para mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/mirror-page){target="_blank"}.
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 

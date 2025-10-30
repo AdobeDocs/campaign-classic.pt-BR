@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2983'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -284,7 +284,7 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 
 >[!NOTE]
 >
->Esta etapa aparece ao importar destinatários somente e ao usar a tabela de destinatários padrão do Adobe Campaign (**nms:recipient**).
+>Esta etapa aparece ao importar somente destinatários e ao usar a tabela de destinatários padrão do Adobe Campaign (**nms:recipient**).
 
 * Clique nos links **[!UICONTROL Edit]** para selecionar a pasta, a lista ou o serviço ao qual deseja associar ou assinar os destinatários.
 

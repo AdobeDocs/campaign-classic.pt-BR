@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Saiba como enviar mensagens em vários canais com o Adobe Campaign.
 
 ### Como posso enviar emails em ondas? {#how-can-i-send-emails-in-waves-}
 
-Antes de enviar uma entrega a uma grande população, você pode configurar ondas para dividir as mensagens em vários lotes e equilibrar a carga. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=pt-BR#sending-using-multiple-waves){target="_blank"}.
+Antes de enviar uma entrega a uma grande população, é possível configurar ondas para dividir as mensagens em vários lotes e equilibrar a carga. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=pt-BR#sending-using-multiple-waves){target="_blank"}.
 
 ### Quais são as principais etapas para criar um email no Campaign? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
@@ -73,9 +73,9 @@ Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com
 
 ### Como agendar uma entrega? {#how-to-schedule-a-delivery-}
 
-É possível adiar a entrega de mensagens para agendar a entrega ou gerenciar as regras de pressão e evitar o excesso de solicitações em relação a uma população.
+É possível adiar a entrega de mensagens para agendá-la ou gerenciar as regras de pressão e evitar o excesso de solicitações em relação a uma população.
 
-Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=pt-BR#schedule-delivery-sending){target="_blank"}.
+Saiba mais na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/validate/configure-and-send#schedule-delivery-sending){target="_blank"}.
 
 ### Posso adicionar um anexo aos emails? {#can-i-add-an-attachment-to-emails-}
 

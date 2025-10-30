@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '105'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Para criar uma nova entrega de correspondência direta, siga as etapas abaixo:
 
 >[!NOTE]
 >
->Os conceitos globais sobre a criação de delivery são apresentados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}.
+>Os conceitos globais sobre a criação de entregas são apresentados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}.
 
 1. Crie uma nova entrega, por exemplo, no painel Entrega.
 1. Selecione o modelo da entrega **Entrega por correspondência direta (papel)**.

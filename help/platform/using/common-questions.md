@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 Precisa de ajuda enquanto trabalha com o Campaign Classic? Leia abaixo as 10 principais perguntas e outras dúvidas frequentes nesta página. Você também pode:
 
 * [Assistir aos vídeos tutoriais](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR)
-* Não consegue encontrar a resposta? [Pergunte a um especialista](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt)
+* Não consegue encontrar a resposta? [Pergunte a um especialista](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
 * Precisa de suporte? [Consulte as opções de suporte e ajuda do Campaign](../../support.md)
 
 ## &#x200B;1. Como posso atualizar o Campaign para a versão mais recente? {#how-can-i-upgrade-campaign-to-the-latest-version-}
@@ -52,7 +52,7 @@ O Adobe Campaign vem com um conjunto de painéis e ferramentas para monitorar su
 
 ## &#x200B;5. Posso monitorar a execução do fluxo de trabalho? {#can-i-monitor-workflow-execution}
 
-Entenda como monitorar a execução do fluxo de trabalho do Campaign na [documentação do Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution
+Entenda como monitorar a execução de fluxo de trabalho do Campaign na [documentação do Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution
 .html){target="_blank"}.
 
 ## &#x200B;6. Como posso me conectar ao Campaign Classic? {#how-can-i-connect-to-campaign-classic-}

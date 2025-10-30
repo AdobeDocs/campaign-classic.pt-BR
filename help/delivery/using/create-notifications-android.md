@@ -8,15 +8,15 @@ hide: true
 hidefromtoc: true
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '650'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Criar notificações para Android{#create-notificaations-android}
 
-Use o Adobe Campaign para enviar notificações por push em dispositivos Android. Os conceitos globais sobre a criação de delivery são apresentados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}.
+Use o Adobe Campaign para enviar notificações por push em dispositivos Android. Os conceitos globais sobre a criação de entregas são apresentados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}.
 
 Comece criando uma nova entrega.
 
@@ -70,7 +70,7 @@ A imagem e a página da web devem ser exibidas na notificação por push quando 
 
 ## Criar uma mensagem de notificação {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [Saiba como criar uma notificação por push do Android em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=pt-BR#additional-resources){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Saiba como criar uma notificação por push para Android no vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=pt-BR#additional-resources){target="_blank"}.
 
 1. Vá até **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 

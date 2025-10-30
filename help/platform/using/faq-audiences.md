@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ Saiba como direcionar uma população e gerenciar públicos-alvos no Adobe Campa
 
 Descubra casos de uso fáceis para [importar perfis](../../platform/using/import-operations-samples.md) no seu banco de dados.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html?lang=pt-BR)
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](https://experienceleague.adobe.com/pt-br/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles)
 
 ## Como posso definir a população alvo de uma campanha de marketing? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
-Você pode usar fluxos de trabalho para criar o público-alvo de uma campanha de marketing. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#build-the-main-target-in-a-workflow.html){target="_blank"}.
+É possível usar fluxos de trabalho para criar a população do público-alvo de uma campanha de marketing. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#build-the-main-target-in-a-workflow.html?lang=pt-BR){target="_blank"}.
 
 ## Como posso criar uma lista de perfis? {#how-can-i-create-a-list-of-profiles-}
 
@@ -54,4 +54,4 @@ Conheça o gerenciamento de subscrições do Campaign e saiba como [enviar uma m
 
 ## Qual é a prática recomendada para excluir perfis de uma população alvo? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-Saiba como excluir uma lista de perfis de seu público-alvo na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=pt-BR){target="_blank"}.
+Saiba como excluir uma lista de perfis da população do público-alvo na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=pt-BR){target="_blank"}.

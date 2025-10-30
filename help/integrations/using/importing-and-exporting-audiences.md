@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '592'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ O processo de importação leva de 24 a 36 horas para sincronizar quando os segm
 >
 >Se estiver importando públicos-alvo do Adobe Analytics para o Adobe Campaign, eles precisam ser compartilhados primeiro no Audience Manager. Esse processo leva de 12 a 24 horas, e deve ser adicionado ao tempo de sincronização de 24 a 36 horas com o Campaign.
 >
->Nesse caso específico, o período de compartilhamento de público-alvo pode durar até 60 horas. Para obter mais informações sobre o compartilhamento de público do Adobe Analytics no Audience Manager, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=pt-BR){target="_blank"}.
+>Nesse caso específico, o período de compartilhamento de público-alvo pode durar até 60 horas. Para obter mais informações sobre o compartilhamento de público-alvo do Adobe Analytics no Audience Manager, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=pt-BR){target="_blank"}.
 
 Os dados do público-alvo são substituídos completamente sempre quando sincronizados. Apenas segmentos podem ser importados. Dados granulares, incluindo pares chave-valor, traços e regras não são compatíveis.
 
@@ -80,7 +80,7 @@ Os dados do público-alvo são substituídos completamente sempre quando sincron
 
 O público-alvo é então exportado. A atividade de público-alvo salva tem duas transições de saída. A transição principal contém os destinatários que foram exportados com êxito. A transição adicional contém os destinatários que não puderam ser mapeados com uma ID de visitante ou ID declarada.
 
-A sincronização entre soluções leva de 24 a 36 horas. Após esse período, é possível encontrar seu novo público-alvo e reutilizá-lo em outras soluções da Adobe Experience Cloud. Para obter mais informações sobre como usar um público compartilhado do Adobe Campaign, consulte esta [documentação](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/services/audiences/create){target="_blank"}.
+A sincronização entre soluções leva de 24 a 36 horas. Após esse período, é possível encontrar seu novo público-alvo e reutilizá-lo em outras soluções da Adobe Experience Cloud. Para obter mais informações sobre como usar um público-alvo compartilhado do Adobe Campaign, consulte esta [documentação](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/services/audiences/create){target="_blank"}.
 
 >[!NOTE]
 >

@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '905'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Para obter mais informações sobre gerenciamento de rejeição de emails, consu
 
 É possível adicionar cabeçalhos SMTP às entregas Para fazer isso, use a seção relevante da guia **[!UICONTROL SMTP]** na entrega.
 
-O script inserido nesta janela deve referenciar um cabeçalho por linha no seguinte formulário: **name:value**.
+O script inserido nessa janela deve referenciar um cabeçalho por linha no seguinte formulário: **nome:value**.
 
 Os valores são codificados automaticamente se necessário.
 

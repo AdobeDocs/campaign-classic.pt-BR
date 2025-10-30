@@ -9,16 +9,16 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '709'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
 # Descompactar ou descriptografar um arquivo {#unzipping-or-decrypting-a-file-before-processing}
 
-O Adobe Campaign permite importar arquivos compactados ou criptografados. Antes de serem lidos em uma atividade [Data loading (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=pt-BR){target="_blank"}), você pode definir um pré-processamento para descompactar ou descriptografar o arquivo.
+O Adobe Campaign permite importar arquivos compactados ou criptografados. Antes de ser lido em uma atividade [Carregamento de dados (arquivo)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=pt-BR){target="_blank"}, é possível definir um pré-processamento para descompactar ou descriptografar o arquivo.
 
 >[!IMPORTANT]
 >
@@ -26,7 +26,7 @@ O Adobe Campaign permite importar arquivos compactados ou criptografados. Antes 
 
 Para fazer isso:
 
-1. Use o [Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#decrypting-data) para gerar um par de chaves públicas/privadas para permitir a descriptografia de arquivos.
+1. Use o [Painel de controle](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data) para gerar um par de chaves públicas/privadas para permitir a descriptografia de arquivos.
 
    >[!NOTE]
    >
@@ -52,7 +52,7 @@ Um exemplo é apresentado no caso de uso abaixo.
 **Tópicos relacionados:**
 
 * [Atividade de carregamento de dados (arquivo)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=pt-BR){target="_blank"}.
-* [Compactar ou criptografar um arquivo](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=pt-BR){target="_blank"}.
+* [Compactar ou criptografar um arquivo](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file){target="_blank"}.
 
 ## Caso de uso: importação de dados criptografados usando uma chave gerada pelo Painel de controle {#use-case-gpg-decrypt}
 
@@ -62,7 +62,7 @@ Nesse caso de uso, criaremos um fluxo de trabalho para importar dados que foram 
 
 As etapas para executar esse caso de uso são as seguintes:
 
-1. Use o Painel de controle para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR#decrypting-data).
+1. Use o Painel de controle para gerar um par de chaves (público/privado). As etapas detalhadas estão disponíveis na [documentação do Painel de controle](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data).
 
    * A chave pública será compartilhada com o sistema externo, que a usará para criptografar os dados que serão enviados para o Campaign.
    * A chave privada será usada pelo Campaign Classic para descriptografar os dados criptografados recebidos.
@@ -107,6 +107,6 @@ As etapas para executar esse caso de uso são as seguintes:
 
 Este vídeo mostra como usar uma chave GPG para descriptografar dados.
 
->[!VIDEO](https://video.tv.adobe.com/v/41363?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

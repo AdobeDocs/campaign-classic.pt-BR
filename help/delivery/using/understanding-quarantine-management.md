@@ -7,9 +7,9 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3008'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Alguns provedores de acesso à Internet consideram automaticamente emails como s
 
 Além disso, a quarentena ajuda a reduzir os custos de envio de SMS, excluindo números de telefone incorretos das entregas.
 
-Para obter mais informações sobre as práticas recomendadas para proteger e otimizar suas entregas, consulte esta página na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre as práticas recomendadas para proteger e otimizar entregas, consulte esta página na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=pt-BR){target="_blank"}.
 
 ### Quarentena versus Lista de bloqueios {#quarantine-vs-denylist}
 
@@ -41,7 +41,7 @@ A quarentena e a lista de bloqueios não se aplicam ao mesmo objeto:
 
 * Por outro lado, com a inclusão na **lista de bloqueios**, o **perfil** não será mais direcionado pela entrega, por exemplo, depois de um cancelamento de inscrição (recusa de participação) de um determinado canal. Por exemplo, se um perfil na lista de bloqueios para o canal de email tiver dois endereços de email, ambos os endereços serão excluídos da entrega.
 
-  Incluir na lista de bloqueios Você pode verificar se um perfil está no arquivo de pesquisa para um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil.
+  Você pode verificar se um perfil está na lista de bloqueios de um ou mais canais na seção **[!UICONTROL No longer contact]** da guia **[!UICONTROL General]** do perfil.
 >[!NOTE]
 >
 >A quarentena inclui um status **[!UICONTROL Denylisted]**, que se aplica quando os destinatários marcam sua mensagem como spam ou respondem a uma mensagem SMS com uma palavra-chave, como “PARAR”. Nesse caso, o endereço do perfil envolvido ou o número de telefone é enviado para quarentena com o status **[!UICONTROL Denylisted]**. Para obter mais informações sobre como gerenciar mensagens SMS PARAR, consulte [esta seção](../../delivery/using/sms-send.md#processing-inbound-messages).
@@ -117,14 +117,14 @@ Na lista de endereços em quarentena (consulte [Identificação de endereços em
 
 Ao contrário de erros graves, os erros recuperáveis não enviam um endereço imediatamente para quarentena, mas incrementam um contador de erros.
 
-As tentativas serão executadas durante a duração do delivery. Consulte esta [página](communication-channels.md) em **Envio de entrega** > **Definir o período de validade**. Quando o contador de erros atinge o limite da cota, o endereço vai para a quarentena. Para obter mais informações, consulte [Tentativas após uma falha temporária de entrega](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+As tentativas serão realizadas no decorrer da duração da entrega. Consulte esta [página](communication-channels.md) em **Envio de entrega** > **Definir o período de validade**. Quando o contador de erros atinge o limite da cota, o endereço vai para a quarentena. Para obter mais informações, consulte [Tentativas após uma falha temporária de entrega](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 O contador de erros será reinicializado se o último erro significativo ocorrer há mais de 10 dias. O status do endereço é alterado para **Válido** e excluído da lista de quarentenas pelo fluxo de trabalho de [limpeza do banco de dados](../../production/using/database-cleanup-workflow.md).
 
 
 Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](sending-with-enhanced-mta.md), o número máximo de tentativas a efetuar em caso de status **[!UICONTROL Erroneous]**, e o atraso mínimo entre tentativas agora se baseiam no desempenho histórico e atual de um IP em um determinado domínio.
 
-Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, você pode modificar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes no [assistente de implantação](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) ou no nível de entrega. Veja esta [página](communication-channels.md) em **Envio de entrega** > **Configurar novas tentativas**.
+Para instalações no local e instalações hospedadas/híbridas usando o MTA herdado do Campaign, você pode modificar o número de erros e o período entre dois erros. Para fazer isso, altere as configurações correspondentes no [assistente de implantação](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) ou no nível da entrega. Veja esta [página](communication-channels.md) em **Envio de entrega** > **Configurar novas tentativas**.
 
 
 ## Remover um endereço da quarentena {#removing-a-quarantined-address}

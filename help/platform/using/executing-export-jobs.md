@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '950'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 Os trabalhos de exportação permitem acessar e extrair dados do banco de dados: contatos, clientes, listas, segmentos etc.
 
-Por exemplo, pode ser útil usar dados de rastreamento de campanha (histórico de rastreamento etc.) em uma planilha. Os dados de output podem estar em formato txt, CSV, TAB ou XML.
+Por exemplo, pode ser útil usar dados de rastreamento de campanhas (histórico de rastreamento etc.) em uma planilha. Os dados de saída podem estar em formato TXT, CSV, TAB ou XML.
 
 O assistente de exportação permite configurar uma exportação, definir suas opções e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de exportação (simples ou múltipla) e dos direitos do operador.
 
@@ -78,7 +78,7 @@ Selecione um formato de saída para o arquivo de exportação. Os formatos a seg
 
 ## Etapa 4 - Seleção de dados {#step-4---data-selection}
 
-Selecione os campos a serem exportados. Para fazer isso:
+Selecione os campos a serem exportados. Para isso:
 
 1. Clique duas vezes nos campos desejados na lista **[!UICONTROL Available fields]** para adicioná-los à seção **[!UICONTROL Output columns]**.
 1. Use as setas à direita da lista para definir a ordem dos campos no arquivo de saída.

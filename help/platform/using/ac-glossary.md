@@ -7,9 +7,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6197'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Learn more about [ACS Connector](../../integrations/using/acs-connector-principl
 Uma atividade é um item da paleta, que é adicionado a um fluxo de trabalho para definir uma funcionalidade de execução. A atividade é um container que executa uma tarefa. Em um diagrama de fluxo de trabalho, uma determinada atividade pode produzir várias tarefas, principalmente quando houver ações recorrentes (periódicas) ou em loop.
 
 Saiba mais sobre atividades de fluxo de trabalho na [documentação do Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities
-.html){target="_blank"}.
+.html?lang=pt-BR){target="_blank"}.
 +++
 
 +++**Perfil ativo**
@@ -135,7 +135,7 @@ Saiba mais sobre o [Console do Cliente](../../platform/using/adobe-campaign-work
 
 Aprovação de conteúdo é o processo no qual um Operador ou grupo de Operadores à parte aprova o conteúdo de uma entrega antes que ela possa ser enviada.
 
-Saiba mais sobre a aprovação de conteúdo na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre a aprovação de conteúdo na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"}.
 
 +++
 
@@ -315,7 +315,7 @@ Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-man
 
 O recurso Cco de email envia uma cópia exata no formato EML de um email entregue correspondente, que é salvo em um endereço de email CCO dedicado, onde os emails podem ser processados e arquivados pelo remetente em um sistema externo.
 
-Saiba mais sobre Email Cco na [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}.
+Saiba mais sobre CCO do email na [Documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html?lang=pt-BR){target="_blank"}.
 +++
 
 <!--
@@ -370,7 +370,7 @@ Saiba mais sobre [Contas externas](../../installation/using/external-accounts.md
 
 O gerenciamento de fadiga controla a frequência e a quantidade de mensagens para evitar a solicitação excessiva de destinatários e é aplicado com frequência usando uma regra de tipologia.
 
-Saiba mais sobre o gerenciamento de fadiga na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-optimization/pressure-rules){target="_blank"}.
+Saiba mais sobre o gerenciamento de fadiga na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=pt-BR){target="_blank"}.
 +++
 
 +++**Federated Data Access (FDA)**
@@ -393,7 +393,7 @@ Saiba mais sobre a aprovação de extração de arquivo na [documentação do Ca
 
 A dimensão do filtro é o esquema que contém os dados ou atributos usados por uma consulta para filtrar as linhas desejadas. O esquema Dimensão do filtro deve ser vinculado diretamente à dimensão de direcionamento definida para permitir que o Adobe Campaign cruze a associação do banco de dados e retorne as linhas do entrevistado.
 
-Saiba mais sobre a dimensão do filtro na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=pt-BR#targeting-and-filtering-dimensions){target="_blank"}.
+Saiba mais sobre a dimensão do filtro na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows#targeting-and-filtering-dimensions){target="_blank"}.
 +++
 
 +++**Pasta**
@@ -432,7 +432,7 @@ Learn more about [Generated SQL queries](../../platform/using/steps-to-create-a-
 
 Campaign Heatmap é uma tabela que mostra informações de execução do fluxo de trabalho para um período de 24 horas. Ele exibe a distribuição de fluxos de trabalho entre o período por hora e intervalos de 5 minutos. O Heatmap é usado para avaliar a carga do servidor e determinar as atividades do fluxo de trabalho que estão consumindo mais recursos.
 
-Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html?lang=pt-BR){target="_blank"}.
+Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/monitoring-workflows/heatmap){target="_blank"}.
 +++
 
 +++**Implantação híbrida**
@@ -522,7 +522,7 @@ Saiba mais sobre [Cache local](../../platform/using/faq-campaign-config.md#perfo
 
 O módulo **Gerenciamento dos recursos de marketing (MRM)** no Adobe Campaign permite controlar ações de marketing em um modo colaborativo, fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos. Os operadores do Adobe Campaign podem coordenar as ações e aprovar seu progresso em todos os estágios por meio de processos de validação completos e ferramentas de rastreamento apropriadas: relatórios, rastreamento de aprovações, notificações, fóruns de discussão etc.
 
-Saiba mais sobre o MRM na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre o MRM na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"}.
 +++
 
 <!--
@@ -767,7 +767,7 @@ Saiba mais sobre o [Monitoramento de desempenho](../../production/using/monitori
 
 O Adobe Campaign oferece blocos de personalização integrados que podem ser inseridos nas entregas. Eles são dinâmicos, personalizados e contêm uma renderização específica. Por exemplo, você pode adicionar um logotipo, uma mensagem de saudação ou um link para uma mirror page. Vários blocos de personalização estão disponíveis por padrão. Você também pode definir blocos de personalização personalizados que permitirão otimizar a personalização da entrega. Os dados reais são inseridos em cada mensagem gerada durante a fase de análise da entrega.
 
-Saiba mais sobre os blocos de personalização na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre blocos de personalização na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.
 +++
 
 +++**Campo de personalização**
@@ -788,14 +788,14 @@ Saiba mais sobre [Variáveis de personalização](../../delivery/using/about-per
 
 Um plano é um tipo de pasta usado para organizar atividades de marketing com base no calendário. As pastas de plano na visualização do Explorer definem unidades baseadas em tempo, como um ano, trimestre ou mês. As pastas de plano podem ser aninhadas e podem conter outras pastas de plano, pastas de programa ou campanhas.
 
-Saiba mais sobre os planos na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR){target=_blank}.
+Saiba mais sobre planos na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR){target=_blank}.
 +++
 
 +++**Filtros predefinidos**
 
 Filtros predefinidos são consultas que foram salvas para reutilização. O uso de filtros predefinidos aumenta a produtividade (porque são criados apenas uma vez), ajuda a criar consistência (porque todos os profissionais de marketing podem usá-los) e diminui as habilidades necessárias para o profissional de marketing, pois podem usar código ou lógica que talvez não consigam criar sozinhos.
 
-Para obter mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Para mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 +++
 
 <!--
@@ -913,14 +913,14 @@ Saiba mais sobre [Serviços](../../delivery/using/about-services-and-subscriptio
 
 No Painel de controle, é possível interagir com todos os servidores SFTP conectados às instâncias do Campaign às quais você tem acesso. O Painel de controle permite executar ações em seus servidores SFTP, como Monitorar a capacidade de armazenamento, Gerenciar endereços IP para permitir listagens e gerenciar chaves SSH públicas.
 
-Saiba mais sobre [Gerenciamento de SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=pt-BR).
+Saiba mais sobre [Gerenciamento de SFTP](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/sftp-management/about-sftp-management).
 +++
 
 +++**Atividade de subscrição no serviço**
 
 Uma atividade de fluxo de trabalho de serviços de Subscrição permite criar ou excluir uma subscrição para um serviço de informações para população especificada na transição.
 
-Saiba mais sobre a atividade de serviços de assinatura na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre a atividade Serviços de assinatura na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=pt-BR){target="_blank"}.
 +++
 
 +++**Aprovação de público-alvo**
@@ -929,14 +929,14 @@ Saiba mais sobre a atividade de serviços de assinatura na [documentação do Ca
 
 Aprovação de público-alvo é o processo no qual o direcionamento final de uma entrega é aprovado por um Operador ou grupo de Operadores separado (após a fase de análise ter gerado o público-alvo) antes que a entrega possa ser enviada.
 
-Saiba mais sobre a atividade de Aprovação do Target na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre a atividade Aprovação de público-alvo na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html?lang=pt-BR){target="_blank"}.
 +++
 
 +++**Dados do público-alvo**
 
 Os dados do público-alvo são os dados armazenados na tabela de trabalho (transição) de um fluxo de trabalho. Esses dados estão disponíveis na entrega para personalização do conteúdo da entrega ou para definir a lógica de elementos dinâmicos da entrega.
 
-Saiba mais sobre os dados do target na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=pt-BR#target-data){target="_blank"}.
+Saiba mais sobre dados de público-alvo na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=pt-BR#target-data){target="_blank"}.
 +++
 
 +++**Target mapping**
@@ -950,15 +950,15 @@ Saiba mais sobre o target mapping na [documentação do Campaign v8](https://exp
 
 As atividades de direcionamento são atividades de fluxo de trabalho específicas para direcionamento, manipulação de dados de população e atividades de filtragem. Essas atividades permitem construir um ou mais públicos-alvos definindo conjuntos e dividindo ou combinando-os usando operações de intersecção, união ou exclusão.
 
-Saiba mais sobre as atividades de direcionamento na [documentação do Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities
-.html){target="_blank"}.
+Saiba mais sobre atividades de direcionamento na [documentação do Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities
+.html?lang=pt-BR){target="_blank"}.
 +++
 
 +++**Dimensão de direcionamento**
 
 Dimensão de direcionamento é o tipo de dados produzido (retornado) por uma consulta ou outras atividades de fluxos de trabalho. Observe que o Adobe Campaign retorna somente a chave primária das linhas de banco de dados do entrevistado, independentemente da consulta usada para obtê-las.
 
-Saiba mais sobre targeting dimension na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre a dimensão de direcionamento na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=pt-BR){target="_blank"}.
 +++
 
 +++**Atividade de tarefa**
@@ -967,7 +967,7 @@ Saiba mais sobre targeting dimension na [documentação do Campaign v8](https://
 
 A atividade de fluxo de trabalho Tarefa incorpora a ação humana à lógica de um fluxo de trabalho. Você pode especificar dois cenários: o primeiro se a tarefa estiver concluída e um segundo se a tarefa não estiver concluída. Casos de uso típicos são para incorporação de ações offline em uma campanha ou para ações personalizadas, como aprovações.
 
-Saiba mais sobre a atividade de tarefas na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre a atividade perguntar na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/mrm/creating-and-managing-tasks){target="_blank"}.
 +++
 
 <!--

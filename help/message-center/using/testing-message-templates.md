@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '568'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ Com os seed addresses, você também pode exibir a renderização da mensagem pa
 
 Você pode testar a entrega de mensagens enviando uma prova para um seed address criado anteriormente.
 
-O envio de uma prova envolve o mesmo processo de entrega regular. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=pt-BR){target="_blank"}. No entanto, com mensagens transacionais, é necessário realizar as seguintes operações antecipadamente:
+O envio de uma prova envolve o mesmo processo de uma entrega regular. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=pt-BR){target="_blank"}. No entanto, com mensagens transacionais, é necessário realizar as seguintes operações antecipadamente:
 
 * Crie um ou mais [seed addresses](#managing-seed-addresses-in-transactional-messages) com [dados de personalização](#personalization-data).
 * [Criar o conteúdo da mensagem](../../message-center/using/creating-the-message-template.md#creating-message-content).

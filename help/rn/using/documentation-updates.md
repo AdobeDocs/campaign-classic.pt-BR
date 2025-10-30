@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3865'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -419,7 +419,7 @@ Os vídeos do passo a passo estão disponíveis nos seguintes tópicos:
 
 * [Como personalizar emails usando campos de personalização](../../delivery/using/personalization-fields.md)
 
-* [Como gerenciar seed e provas em um email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#target-population){target="_blank"}.
+* [Como gerenciar seeds e provas em um email](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#target-population){target="_blank"}.
 
 * [Como configurar uma entrega recorrente](../../workflow/using/recurring-delivery.md)
 
@@ -440,7 +440,7 @@ A seção de atividade de **[!UICONTROL AND-join]** foi aprimorada com informaç
 
 Um caso de uso sobre como atualizar automaticamente uma lista usando uma consulta incremental foi adicionado aos casos de uso de fluxo de trabalho. [Leia mais](../../workflow/using/about-workflow-use-cases.md)
 
-As [Notas de versão](../../rn/using/latest-release.md) foram reorganizadas: uma [página de visão geral](../../rn/using/latest-release.md) foi adicionada com informações sobre status de criação, processo de atualização, recomendações e links importantes. Uma página dedicada às versões do [[!DNL Gold Standard] também foi &#x200B;](../../rn/using/gold-standard.md) adicionada e a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) foi integrada.
+As [Notas de versão](../../rn/using/latest-release.md) foram reorganizadas: uma [página de visão geral](../../rn/using/latest-release.md) foi adicionada com informações sobre status de criação, processo de atualização, recomendações e links importantes. Uma página dedicada às versões do [[!DNL Gold Standard] também foi ](../../rn/using/gold-standard.md) adicionada e a [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) foi integrada.
 
 Uma nova seção foi adicionada com diretrizes relacionadas ao monitoramento do Campaign Classic. [Leia mais](../../production/using/monitoring-guidelines.md)
 

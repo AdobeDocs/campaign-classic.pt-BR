@@ -9,9 +9,9 @@ level: Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '511'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Por ser uma solução aberta, o Adobe Campaign está pronto para a personalizaç
 
 O modelo de dados conceituais do banco de dados do Adobe Campaign consiste em um conjunto de tabelas integradas e sua interação. A estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de esquema. Para saber mais sobre esquemas do Adobe Campaign, [consulte esta seção](../../configuration/using/about-schema-edition.md).
 
-[Clique aqui para saber mais sobre o modelo de dados do Campaign](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/data-model/about-data-model.html?lang=pt-BR).
+[Clique aqui para saber mais sobre o modelo de dados do Campaign](https://helpx.adobe.com/br/campaign/kb/acc-datamodel.html).
 
 As práticas recomendadas estão listadas [neste artigo](../../configuration/using/data-model-best-practices.md).
 

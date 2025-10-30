@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1025'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -178,7 +178,7 @@ Em seguida, refine a consulta herdada do modelo para fazer uma hipótese em um a
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Inicie o fluxo de trabalho de direcionamento e execute as verificações necessárias até a conclusão da campanha. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=pt-BR#start-a-delivery){target=_blank}.
+1. Inicie o fluxo de trabalho de direcionamento e execute as verificações necessárias até a conclusão da campanha. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries#start-a-delivery){target=_blank}.
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 

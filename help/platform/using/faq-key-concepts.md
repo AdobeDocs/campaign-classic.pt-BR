@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '839'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -79,13 +79,13 @@ Você pode usar um fluxo de trabalho, por exemplo, para baixar um arquivo de um 
 
 Um fluxo de trabalho também pode envolver um ou mais operadores a serem notificados ou que podem fazer escolhas e aprovar processos. Dessa forma, é possível criar uma ação de entrega, atribuir uma tarefa a um ou mais operadores para trabalhar no conteúdo, especificar alvos e aprovar testes antes de iniciar a entrega.
 
-[Clique aqui para saber mais](../../workflow/using/about-workflows.md) sobre fluxos de trabalho. Você também pode ler as práticas recomendadas de workflow na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target="_blank"}.
+[Clique aqui para saber mais](../../workflow/using/about-workflows.md) sobre fluxos de trabalho. Leia também as práticas recomendadas para fluxos de trabalho na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target="_blank"}.
 
 ## Como criar e enviar o primeiro email? {#how-to-create-and-send-a-first-email-}
 
 [Clique aqui para saber mais](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Descubra neste vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=pt-BR)
+![](assets/do-not-localize/how-to-video.png) [Descubra neste vídeo](https://experienceleague.adobe.com/pt-br/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email)
 
 ## Como enviar mensagens SMS? {#how-to-send-sms-messages-}
 

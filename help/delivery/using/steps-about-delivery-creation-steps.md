@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '144'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ As principais etapas ao criar uma entrega são as seguintes:
    * [Canal de correspondência direta](defining-the-direct-mail-content.md)
    * [Canal de aplicativo para dispositivos móveis](about-mobile-app-channel.md)
 
-1. **Definição da população do target** Leia mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message#target-population.html){target="_blank"}.
+1. **Definição da população do público-alvo** Leia mais na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message#target-population.html?lang=pt-BR){target="_blank"}.
 
 1. **Envio da entrega** [Leia mais](steps-sending-the-delivery.md)
 
@@ -35,4 +35,4 @@ As principais etapas ao criar uma entrega são as seguintes:
 
 >[!NOTE]
 >
->As etapas descritas abaixo pressupõem que todos os destinatários do target e seus perfis estejam armazenados no banco de dados, exceto no caso de entrega externa (consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#selecting-external-recipients){target="_blank"}.
+>As etapas descritas neste capítulo pressupõem que todos os destinatários direcionados e seus perfis estejam armazenados no banco de dados, exceto no caso de entrega externa (consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#selecting-external-recipients){target="_blank"}).

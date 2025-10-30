@@ -7,9 +7,9 @@ feature: Monitoring, Deliverability, Troubleshooting
 role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Depois de clicar no botão **[!UICONTROL Send]**, sua entrega parece demorar mai
 
 Se as entregas não forem executadas em uma data agendada específica, pode ser por diferença entre o fuso horário dos servidores. A instância mid-sourcing e a instância de produção podem estar em fusos horários diferentes.
 
-Como exemplo, se a instância mid-sourcing estiver no fuso horário Brisbane e a instância de produção estiver no fuso horário de Darwin, os fusos horários têm meia hora de diferença um do outro e, no log de auditoria, é possível ver claramente que se a entrega está agendada para produção em 11:56, o mesmo delivery agendado para mid deve ser em 12:26, com uma diferença de meia hora.
+Como exemplo, se a instância de mid-sourcing está no fuso horário de Brisbane e a instância de produção está no fuso horário de Darwin, os fusos horários têm meia hora de diferença entre si. Então, no log de auditoria, é possível ver claramente que, se a entrega está agendada para a produção às 11:56, a mesma entrega agendada para a mid-sourcing deverá ser às 12:26, com uma diferença de meia hora.
 
 ## Status de falha {#failed-status}
 
@@ -83,7 +83,7 @@ Os logs da entrega são fundamentais para saber por que uma entrega falhou. Aqui
 
   Normalmente, esse erro significa que há um campo ou bloco de personalização no email com mais de um valor para o destinatário. Um bloco de personalização está sendo usado e está buscando mais de um registro para um determinado destinatário.
 
-  Para resolver isso, verifique os dados de personalização usados e verifique o target para os destinatários que têm mais de uma entrada para qualquer um desses campos. Você também pode usar uma atividade **[!UICONTROL Deduplication]** no fluxo de trabalho de segmentação antes da atividade de entrega para verificar se há apenas um campo de personalização por vez. Para obter mais informações sobre desduplicação, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=pt-BR){target="_blank"}.
+  Para resolver isso, verifique os dados de personalização usados e verifique o target para os destinatários que têm mais de uma entrada para qualquer um desses campos. Você também pode usar uma atividade **[!UICONTROL Deduplication]** no fluxo de trabalho de segmentação antes da atividade de entrega para verificar se há apenas um campo de personalização por vez. Para obter mais informações sobre a desduplicação, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=pt-BR){target="_blank"}.
 
 * Algumas entregas podem falhar com um erro &quot;Inacessível&quot; informando:
 

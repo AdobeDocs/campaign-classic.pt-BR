@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Os dados vinculados ao perfil de um destinatário podem ser atualizados manualme
 
 ## Configurar uma atualização automática {#setting-up-an-automatic-update}
 
-Uma atualização automática pode ser configurada por meio de um fluxo de trabalho. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=pt-BR){target="_blank"}.
+Uma atualização automática pode ser configurada por meio de um fluxo de trabalho. Para mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=pt-BR){target="_blank"}.
 
 ## Executar uma atualização em massa {#performing-a-mass-update}
 

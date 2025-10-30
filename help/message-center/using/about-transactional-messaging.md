@@ -5,9 +5,9 @@ description: Saiba mais sobre o princípio operacional de mensagens transacionai
 feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '641'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1229'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Você pode vincular campos de banco de dados à zona de entrada, ao botão de op
 
 O **campo** zona de entrada permite selecionar um campo de banco de dados com o campo de formulário.
 
-Por padrão, os campos oferecidos são aqueles na tabela **nms:recipient**.
+Por padrão, os campos oferecidos são os da tabela **nms:recipient**.
 
 ![](assets/dce_field_selection.png)
 
@@ -70,7 +70,7 @@ Para botões de opção e caixas de seleção, é **necessária uma configuraç�
 
 Na verdade, se o modelo usado não contiver um valor por padrão, você deve preenchê-lo no editor.
 
-Para fazer isso:
+Para isso:
 
 * Clique no ícone **[!UICONTROL Edit]**.
 
@@ -212,7 +212,7 @@ O Editor de conteúdo digital permite trabalhar em **qualquer tipo de imagem** c
 
 ### Adição/exclusão/duplicação de uma imagem {#adding---deleting---duplicating-an-image}
 
-Para inserir uma imagem, selecione um bloco tipo Imagem e clique no ícone Imagem. **&#x200B;**
+Para inserir uma imagem, selecione um bloco tipo Imagem e clique no ícone Imagem. ****
 
 ![](assets/dce_insert_image.png)
 
@@ -259,4 +259,4 @@ A opção de **Bloco de personalização** permite inserir blocos dinâmicos e p
 
 Depois de inserido, o nome do bloco de personalização aparece no editor, realçado em amarelo. Ele é adaptado automaticamente ao perfil do destinatário quando a personalização é gerada.
 
-Para obter mais informações sobre blocos de personalização integrados e como customizá-los, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.
+Para obter mais informações sobre blocos de personalização integrados e como defini-los, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.

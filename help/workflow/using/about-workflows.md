@@ -5,17 +5,17 @@ description: Automatize processos com workflows, gerencie dados e públicos-alvo
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
 # Automatizar com fluxos de trabalho {#gs-workflows}
 
-Os fluxos de trabalho da Adobe Campaign permitem que sua equipe simplifique e automatize processos de negócios completos na plataforma. Com uma interface gráfica intuitiva, você pode projetar e gerenciar fluxos de trabalho que coordenam tarefas como segmentação de dados, execução de campanha, manuseio de arquivos e até mesmo aprovações de usuários — tudo em um só lugar.
+Os fluxos de trabalho do Adobe Campaign permitem que sua equipe simplifique e automatize processos de negócios completos na plataforma. Com uma interface gráfica intuitiva, é possível projetar e gerenciar fluxos de trabalho que coordenam tarefas como segmentação de dados, execução de campanha, manuseio de arquivos e até mesmo aprovações de usuários. Tudo em um só lugar.
 
-Por exemplo, você pode automatizar um processo para recuperar um arquivo de um servidor remoto, extrair seu conteúdo e carregar facilmente os dados no servidor Adobe Campaign - reduzindo o esforço manual e aumentando a eficiência operacional. O motor de workflow garante que cada etapa seja executada de forma confiável e rastreada para visibilidade e controle.
+Por exemplo, é possível automatizar o processo de recuperar um arquivo de um servidor remoto, extrair seu conteúdo e enviar facilmente os dados para o servidor do Adobe Campaign, reduzindo o esforço manual e aumentando a eficiência operacional. O motor de fluxo de trabalho garante que cada etapa seja executada de forma confiável e rastreada para visibilidade e controle.
 
 >[!BEGINTABS]
 
@@ -29,9 +29,9 @@ Para saber mais sobre o gerenciamento de fluxos de trabalho, consulte a [documen
 
 >[!TAB Links úteis]
 
-Saiba mais sobre as principais etapas relacionadas ao gerenciamento de fluxo de trabalho na documentação do Campaign v8:
+Conheça as principais etapas relacionadas ao gerenciamento de fluxo de trabalho na documentação do Campaign v8:
 
-* [Atividades do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=pt-BR){target=_blank}: uma atividade é um modelo de tarefa. Os fluxos de trabalho incluem atividades de direcionamento, controle de fluxo, ação e evento.
+* [Atividades de fluxo de trabalho](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}: uma atividade é um modelo de tarefa. Os fluxos de trabalho incluem atividades de direcionamento, controle de fluxo, ação e evento.
 
 * [Criar um fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=pt-BR){target=_blank}: saiba como criar e executar fluxos de trabalho de direcionamento, de campanha e técnicos.
 
@@ -39,7 +39,7 @@ Saiba mais sobre as principais etapas relacionadas ao gerenciamento de fluxo de 
 
 * [Monitorar fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=pt-BR){target=_blank}: saiba como monitorar a execução do fluxo de trabalho para garantir que tudo esteja funcionando corretamente.
 
-* [Casos de uso do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=pt-BR){target=_blank}: saiba mais sobre os contextos nos quais os fluxos de trabalho podem ser usados e como implementá-los em casos de uso completos.
+* [Casos de uso de fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=pt-BR){target=_blank}: saiba mais sobre os contextos nos quais os fluxos de trabalho podem ser usados e como implementá-los através de casos de uso completos.
 
 
 >[!ENDTABS]

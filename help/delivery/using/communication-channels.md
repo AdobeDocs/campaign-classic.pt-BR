@@ -6,9 +6,9 @@ feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '947'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Com o Adobe Campaign, você pode enviar campanhas entre canais, incluindo e-mail
 
 As funcionalidades principais incluem direcionamento, definição e personalização de mensagens, execução de comunicações e os relatórios operacionais associados.
 
-Como parte da transição do Campaign v7 para o v8, o conjunto de documentação do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis exclusivamente no conjunto de documentação do Campaign v8.
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8.
 
 >[!BEGINTABS]
 
@@ -32,7 +32,7 @@ Para saber mais sobre os canais de comunicação, consulte a [documentação do 
 
 >[!TAB Conteúdo e público-alvo da entrega]
 
-Saiba mais sobre as principais etapas relacionadas à criação de entrega, conteúdo e público-alvo **na documentação do Campaign v8**:
+Conheça as principais etapas relacionadas à criação de entregas, conteúdo e público-alvo **na documentação do Campaign v8**:
 
 * [Criar a entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#create-the-delivery){target="_blank"}: aprenda a criar uma entrega individual e única.
 * [Definir o conteúdo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#content-of-the-delivery){target="_blank"}: configure o conteúdo de entrega específico para cada canal.
@@ -45,7 +45,7 @@ Saiba mais sobre as principais etapas relacionadas à criação de entrega, cont
 
 >[!TAB Validação e envio de entrega]
 
-Consulte estas páginas para saber mais sobre validação de entrega, envio e práticas recomendadas **na documentação do Campaign v8**:
+Consulte estas páginas para saber mais sobre a validação de entregas, envio e práticas recomendadas **na documentação do Campaign v8**:
 
 * [Validar a entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#validate-the-delivery){target="_blank"}: saiba como validar a entrega antes de enviá-la para o destino principal.
 * [Enviar a entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR#configuring-and-sending-the-delivery){target="_blank"}: defina as configurações de entrega e como enviar suas mensagens.
@@ -128,7 +128,7 @@ Quando a entrega for iniciada, as mensagens (e todas as tentativas) poderão ser
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
 
 >[!NOTE]
 >

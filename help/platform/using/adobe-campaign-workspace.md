@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '965'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 72%
 
 ## Explorar a interface do Adobe Campaign {#about-adobe-campaign-interface}
 
-Depois de se conectar ao banco de dados, você acessa a home page do Adobe Campaign. Essa página é seu painel de controle: é composta por links e atalhos que permitem acessar recursos do, dependendo da instalação e das configurações gerais da plataforma.
+Depois de conectar-se ao banco de dados, você acessará a página inicial do Adobe Campaign. Essa página é o seu painel de controle, sendo composta por links e atalhos que permitem acessar recursos, dependendo da instalação e das configurações gerais da plataforma.
 
-Na seção central da home page, você pode usar links para acessar o portal de documentação do Campaign, a comunidade e o site de Atendimento ao cliente da Adobe.
+Na seção central da página inicial, você pode usar links para acessar o portal de documentação do Campaign, a comunidade e o site de atendimento ao cliente da Adobe.
 
 ![](assets/d_ncs_user_interface_home.png)
 
@@ -43,7 +43,7 @@ Enquanto no acesso pela web, as opções permitirão principalmente a visualiza�
 
 ![Em um navegador, o mesmo operador só pode visualizar e cancelar a campanha.](assets/operation_from_web.png)
 
-Saiba mais sobre como usar a interface da Web na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=pt-BR#use-the-web-interface-){target=_blank}.
+Saiba mais sobre como usar a interface da web na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=pt-BR#use-the-web-interface-){target=_blank}.
 
 ### Idiomas {#languages}
 
@@ -59,7 +59,7 @@ Você pode escolher entre estes idiomas:
 * Alemão
 * Japonês
 
-O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para obter mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+O idioma escolhido para a instância do Adobe Campaign Classic pode afetar os formatos de data e hora. Para mais informações, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Para obter mais informações sobre como criar uma instância, consulte esta [página](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -112,16 +112,16 @@ Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na
 
 * [Visão geral da interface do usuário do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
-* [Configurações da interface do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
+* [Configurações da IU do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-* [Gerenciar pastas e modos de exibição no explorador](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+* [Gerenciar pastas e visualizações no explorador](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 ## Filtrar dados {#filters}
 
-A filtragem de dados é o processo de restringir um conjunto de dados somente aos registros que correspondem a critérios específicos. Esse subconjunto pode ser usado para ações direcionadas (como atualizações ou criação de público-alvo) ou para análise.
+A filtragem de dados é o processo de restringir um conjunto de dados somente aos registros que correspondam a critérios específicos. Esse subconjunto pode ser usado para ações direcionadas (como atualizações ou criação de públicos-alvo) ou para análise.
 
-Ao navegar pela Campanha, os dados são exibidos em listas. Aplique filtros incorporados para acessar rapidamente um subconjunto definido, como endereços em quarentena, destinatários não direcionados ou registros em um intervalo de idade ou data de criação específico. Além disso, você pode criar filtros personalizados, salvá-los para uso futuro e compartilhá-los com outros usuários do Campaign.
+Ao navegar pelo Campaign, os dados são exibidos em listas. Aplique filtros integrados para acessar rapidamente um subconjunto definido, como endereços em quarentena, destinatários não direcionados ou registros dentro de uma faixa etária ou com uma data de criação específica. Além disso, você pode criar filtros personalizados, salvá-los para uso futuro e compartilhá-los com outros usuários do Campaign.
 
 Saiba como **acessar, criar e compartilhar filtros** na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
@@ -138,10 +138,10 @@ Uma enumeração (também chamada de lista discriminada) é uma lista predefinid
 
 Quando definidos, os valores são exibidos em uma lista suspensa. Um valor pode ser selecionado diretamente ou inserido por meio da inserção preditiva, que sugere e conclui as inserções correspondentes. Alguns campos incluem enumerações predefinidas, e enumerações adicionais podem ser criadas, se necessário.
 
-Saiba mais sobre como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Tutorial em vídeo {#video}
 
 Este vídeo apresenta o espaço de trabalho do Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/39535?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

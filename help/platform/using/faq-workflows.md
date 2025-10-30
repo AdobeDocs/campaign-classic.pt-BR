@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ Saiba mais sobre as práticas recomendadas para importar dados [nesta seção](.
 
 ## Posso monitorar a execução do fluxo de trabalho? {#can-i-monitor-workflow-execution-}
 
-Entenda como monitorar a execução do fluxo de trabalho do Campaign na [documentação do Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution
-.html){target="_blank"}.
+Entenda como monitorar a execução de fluxo de trabalho do Campaign na [documentação do Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution
+.html?lang=pt-BR){target="_blank"}.
 
 ## Como posso atualizar dados do Campaign com um fluxo de trabalho? {#how-can-i-update-campaign-data-with-a-workflow-}
 
@@ -47,15 +47,15 @@ No Adobe Campaign, você pode aproveitar um conjunto de atividades para resolver
 * Manutenção e transmissão de cálculos de buffer, especialmente durante as fases de construção do target ou para administração de banco de dados.
 * Acesso a bases externas (opcional): bancos de dados heterogêneos considerados durante o processo de direcionamento.
 
-Saiba como projetar metas complexas e trabalhar com seus dados combinando atividades de fluxo de trabalho para gestão de dados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=pt-BR){target="_blank"}.
+Saiba como projetar públicos-alvos complexos e trabalhar com dados combinando atividades de fluxo de trabalho de gerenciamento de dados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=pt-BR){target="_blank"}.
 
 ## Posso automatizar o envio de mensagens personalizadas? {#can-i-automate-personalized-messages-sending-}
 
-Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=pt-BR){target="_blank"} para saber como enviar mensagens personalizadas às pessoas de acordo com suas pontuações mais altas em uma competição.
+Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/use-cases/data-management/enrich-data){target="_blank"} para saber como enviar mensagens personalizadas de acordo com as pontuações mais altas de uma competição.
 
-## Como dividir um público-alvo em subconjuntos com um workflow? {#how-can-i-split-an-audience-in-subsets-with-a-workflow-}
+## Como dividir um público-alvo em subconjuntos com um fluxo de trabalho? {#how-can-i-split-an-audience-in-subsets-with-a-workflow-}
 
-Saiba como dividir um destino em vários subconjuntos na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=pt-BR){target="_blank"}.
+Saiba como dividir um público-alvo em vários subconjuntos na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=pt-BR){target="_blank"}.
 
 ## Como posso atualizar os dados do destinatário de um arquivo externo? {#how-can-i-update-recipient-data-from-an-external-file-}
 
@@ -65,4 +65,4 @@ Você pode modificar determinados campos em uma tabela do Campaign com valores d
 
 ## Como posso identificar e direcionar novos destinatários? {#how-can-i-identify-and-target-new-recipients-}
 
-Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html?lang=pt-BR){target="_blank"} para saber como usar agregações para identificar automaticamente os últimos destinatários adicionados ao banco de dados e enviar a eles uma mensagem de boas-vindas.
+Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html?lang=pt-BR){target="_blank"} para saber como usar agregados e identificar automaticamente os últimos destinatários adicionados ao banco de dados para enviá-los uma mensagem de boas-vindas.

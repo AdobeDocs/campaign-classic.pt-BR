@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1491'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ As entregas podem ser criadas por meio do painel da campanha, de um fluxo de tra
 
 Quando criados a partir de uma campanha, as entregas serão vinculadas a essa campanha e consolidadas em seu nível.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Descubra este recurso no vídeo](#create-email-video)
 
 ## Criar entregas {#creating-deliveries}
 
@@ -238,6 +238,6 @@ O modelo de exportação deve estar associado ao provedor de serviços seleciona
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/31837?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
