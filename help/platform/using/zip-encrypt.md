@@ -91,6 +91,6 @@ As etapas para executar esse caso de uso são as seguintes:
 
 Este vídeo mostra como usar uma chave GPG para criptografar dados e também está disponível em
 
->[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/41332?captions=por_br&quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

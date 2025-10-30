@@ -142,6 +142,6 @@ Ao adicionar o esquema do objeto, selecione os campos que deseja adicionar ao co
 
 Saiba como adicionar um campo de personalização à linha de assunto e ao conteúdo de uma entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31843?captions=por_br&quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
