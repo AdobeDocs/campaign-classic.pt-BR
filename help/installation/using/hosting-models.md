@@ -50,7 +50,7 @@ Como cliente local, antes de começar a implantar o Campaign Classic, cuide dos 
 * Saiba mais sobre recomendações relacionadas aos mecanismos de banco de dados [nesta seção](../../installation/using/database.md).
 * Verifique se as camadas de acesso ao banco de dados necessárias estão instaladas no servidor e acessíveis na conta do Adobe Campaign. [Saiba mais](../../installation/using/application-server.md).
 * Configure suas redes, pois alguns processos precisam se comunicar com outros ou acessar a LAN e a Internet. Isso significa que algumas portas TCP precisam estar abertas para esses processos. [Saiba mais](../../installation/using/network-configuration.md) sobre os requisitos de configuração de rede.
-* Leia a [lista de verificação de segurança e privacidade do Campaign](https://helpx.adobe.com/campaign/kb/acc-security.html).
+* Leia a [lista de verificação de segurança e privacidade do Campaign](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
 * Verifique as diretrizes gerais para a estimativa dos requisitos de hardware para a implantação local [neste artigo](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html).
 
 ## Híbrido
