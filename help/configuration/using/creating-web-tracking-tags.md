@@ -3,9 +3,9 @@ product: campaign
 title: Criar tags de rastreamento Web
 description: Saiba como criar tags de rastreamento Web
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Para gerar o código HTML a ser inserido na página:
 * Insira o rótulo da tag: ele será mostrado nos logs de rastreamento,
 * Indicar o URL de origem: este campo é para fins de informação e permite indicar a página rastreada (opcional),
 * Se necessário, insira um período de validade,
-* Clique em **[!UICONTROL Generate]** código de HTML.
+* Clique em **[!UICONTROL Generate]** código HTML.
 
 Em seguida, copie o código gerado e cole-o na página a ser rastreada.
 

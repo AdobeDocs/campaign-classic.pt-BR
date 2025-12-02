@@ -3,11 +3,11 @@ product: campaign
 title: Mapeamento de banco de dados
 description: Mapeamento de banco de dados
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '924'
 ht-degree: 2%
 
 ---
@@ -112,7 +112,7 @@ A definição do link é complementada pelos campos que compõem a junção, ou 
 
 A chave estrangeira é adicionada automaticamente em um elemento que usa as mesmas características do campo associado na tabela de destino, com a seguinte convenção de nomenclatura: nome do esquema de destino seguido do nome do campo associado (&quot;company-id&quot; no nosso exemplo).
 
-Esquema estendido do target (&quot;cus:company&quot;):
+Esquema estendido do destino (&quot;cus:company&quot;):
 
 ```sql
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
@@ -143,7 +143,7 @@ Um link reverso para a tabela &quot;cus:recipient&quot; foi adicionado com os se
 
 ## Exemplo: link simples {#example-2}
 
-Neste exemplo, declaramos um link para a tabela de schema &quot;nms:address&quot;. A associação é uma associação externa e é preenchida explicitamente com o endereço de email do recipient e o campo &quot;@address&quot; da tabela vinculada (&quot;nms:address&quot;).
+Neste exemplo, declaramos um link para a tabela de schema &quot;nms:address&quot;. A associação é uma associação externa e é preenchida explicitamente com o endereço de email do destinatário e o campo &quot;@address&quot; da tabela vinculada (&quot;nms:address&quot;).
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -166,7 +166,7 @@ Neste exemplo, criamos uma relação 1-1 para a tabela de schema &quot;cus:exten
 
 ## Exemplo: link para uma pasta {#example-4}
 
-Neste exemplo, declaramos um link para uma pasta (schema &quot;xtk:folder&quot;):
+Neste exemplo, declaramos um link para uma pasta (esquema &quot;xtk:folder&quot;):
 
 ```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
@@ -176,7 +176,7 @@ O valor padrão retorna o identificador do primeiro arquivo de tipo de parâmetr
 
 ## Exemplo: criar uma chave em um link {#example-5}
 
-Neste exemplo, criamos uma chave em um link (&quot;company&quot; para &quot;cus:company&quot;) com o atributo **xlink** e um campo da tabela (&quot;email&quot;):
+Neste exemplo, criamos uma chave em um link (&quot;company&quot; para o schema &quot;cus:company&quot;) com o atributo **xlink** e um campo da tabela (&quot;email&quot;):
 
 ```sql
 <srcSchema name="recipient" namespace="cus">

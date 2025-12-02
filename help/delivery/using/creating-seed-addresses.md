@@ -4,12 +4,12 @@ title: Criar seed addresses
 description: Saiba como criar e usar seed addresses
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Seed Address
-role: User, Data Engineer
+role: User, Developer
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 100%
+source-wordcount: '421'
+ht-degree: 94%
 
 ---
 
@@ -26,7 +26,7 @@ O Adobe Campaign também permite criar modelos de seed addresses que são import
 Para criar seed addresses, siga as etapas abaixo:
 
 1. Clique no botão **[!UICONTROL New]** acima da lista de seed addresses.
-1. Insira os dados vinculados ao endereço nos campos correspondentes da guia **[!UICONTROL Recipient]**. Os campos disponíveis correspondem aos campos padrão nos perfis dos destinatários da entrega (tabela nms:recipient): sobrenome, nome, email, etc.
+1. Insira os dados vinculados ao endereço nos campos correspondentes da guia **[!UICONTROL Recipient]**. Os campos disponíveis correspondem aos campos padrão nos perfis dos recipients do delivery (tabela nms:recipient): nome, nome, email, etc.
 
    >[!NOTE]
    >
@@ -38,7 +38,7 @@ Para criar seed addresses, siga as etapas abaixo:
 
 1. Na guia **[!UICONTROL Address fields]**, insira os valores que serão inseridos nos logs de entrega durante a fase de análise (na tabela **[!UICONTROL nms:broadLog]**).
 
-1. Na guia **[!UICONTROL Additional data]**, insira os dados de personalização usados para as entregas criadas nos workflows de gestão de dados, aos quais você deseja atribuir um valor específico.
+1. Na guia **[!UICONTROL Additional data]**, insira os dados de personalização usados para as entregas criadas nos fluxos de trabalho de gestão de dados, aos quais você deseja atribuir um valor específico.
 
    >[!NOTE]
    >
@@ -46,9 +46,9 @@ Para criar seed addresses, siga as etapas abaixo:
 
 ## Criação de modelos de seed address {#creating-seed-address-templates}
 
-Para criar templates de endereço que serão importados e podem ser modificados para cada entrega, o processo é o mesmo que definir um novo seed address. A única diferença é que os templates de seed address devem ser armazenados em uma pasta do tipo &#39;template&#39;.
+Para criar modelos de endereço que serão importados e podem ser modificados para cada entrega, o processo é o mesmo que definir um novo seed address. A única diferença é que os modelos de seed address devem ser armazenados em uma pasta do tipo &#39;modelo&#39;.
 
-Para definir uma pasta de template, siga o seguinte processo:
+Para definir uma pasta de modelo, siga o seguinte processo:
 
 1. Crie uma nova pasta do tipo **[!UICONTROL Seed addresses]**, clique com o botão direito do mouse na pasta e selecione **[!UICONTROL Properties...]**.
 

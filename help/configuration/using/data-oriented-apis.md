@@ -3,11 +3,11 @@ product: campaign
 title: APIs orientadas por dados
 description: APIs orientadas por dados
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
@@ -74,11 +74,11 @@ Definição do método &quot;ExecuteQuery&quot; no esquema &quot;xtk:queryDef&qu
 
 >[!NOTE]
 >
->Este é um método &quot;const&quot;. Os parâmetros de entrada são incluídos em um documento XML no formato do schema &quot;xtk:queryDef&quot;.
+>Este é um método &quot;const&quot;. Os parâmetros de entrada são incluídos em um documento XML no formato do esquema &quot;xtk:queryDef&quot;.
 
 ### Formato do documento XML da consulta de entrada {#format-of-the-xml-document-of-the-input-query}
 
-A estrutura do documento XML da consulta é descrita no schema &quot;xtk:queryDef &quot;. Este documento descreve as cláusulas de uma consulta SQL: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
+A estrutura do documento XML da consulta é descrita no esquema &quot;xtk:queryDef &quot;. Este documento descreve as cláusulas de uma consulta SQL: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -141,7 +141,7 @@ A sintaxe **XPath** é usada para localizar dados com base no esquema de entrada
 
 #### Exemplo com a operação &#39;get&#39; {#example-with-the--get--operation}
 
-Recupera o sobrenome e o nome de um recipient (schema &quot;nms:recipient&quot;) com um filtro no email.
+Recupera o sobrenome e o nome de um destinatário (esquema &quot;nms:recipient&quot;) com um filtro no email.
 
 ```xml
 <queryDef schema="nms:recipient" operation="get">
@@ -306,7 +306,7 @@ Essa sintaxe simplifica a query quando mais de dois dados são usados na condiç
   </where>
   ```
 
-  Para recuperar os campos da pasta do schema &quot;nms:recipient&quot;:
+  Para recuperar os campos da pasta do esquema &quot;nms:recipient&quot;:
 
   ```xml
   <select>
@@ -391,7 +391,7 @@ Para evitar a associação de um parâmetro, o atributo &quot;noSqlBind&quot; de
 
 O parâmetro return é um documento XML no formato do schema associado à consulta.
 
-Exemplo de retorno do schema &quot;nms:recipient&quot; em uma operação &quot;get&quot;:
+Exemplo de retorno do esquema &quot;nms:recipient&quot; em uma operação &quot;get&quot;:
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -442,7 +442,7 @@ Em vez de:
 </recipient>
 ```
 
-### Exemplo de mensagens de SOAP {#example-of-soap-messages}
+### Exemplo de mensagens do SOAP {#example-of-soap-messages}
 
 * Consulta:
 
@@ -494,7 +494,7 @@ Este documento é complementado por instruções para configurar os procedimento
 
 A chamada não retorna nenhum dado, exceto erros.
 
-Definição dos métodos &quot;Write&quot; e &quot;WriteCollection&quot; no schema &quot;xtk:session&quot;:
+Definição dos métodos &quot;Write&quot; e &quot;WriteCollection&quot; no esquema &quot;xtk:session&quot;:
 
 ```xml
 <method name="Write" static="true">
@@ -583,7 +583,7 @@ A definição da chave da entidade principal (&quot;nms:recipient&quot;) consist
 
 #### Exemplo 2 {#example-2}
 
-Atualização da empresa (tabela vinculada no schema &quot;cus:company&quot;) de um recipient:
+Atualizando a empresa (tabela vinculada no esquema &quot;cus:company&quot;) de um destinatário:
 
 ```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -611,7 +611,7 @@ Adicionar um recipient a um grupo com a tabela de relação de grupo (&quot;nms:
 
 Por padrão, todos os elementos de coleção devem ser preenchidos para atualizar os elementos de coleção XML. Os dados do banco de dados serão substituídos por dados do documento de entrada. Se o documento contiver apenas os elementos a serem atualizados, você deverá preencher o atributo &quot;_operation&quot; em todos os elementos de coleção a serem atualizados para forçar uma mesclagem com os dados XML do banco de dados.
 
-### Exemplo de mensagens de SOAP {#example-of-soap-messages-1}
+### Exemplo de mensagens do SOAP {#example-of-soap-messages-1}
 
 * Consulta:
 

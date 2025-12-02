@@ -3,11 +3,11 @@ product: campaign
 title: Métodos SOAP em JavaScript
 feature: Configuration, Instance Settings
 description: Métodos SOAP em JavaScript
-role: Data Engineer, Developer
+role: Developer
 exl-id: 62020447-fe59-4363-994d-de4d8032bbd7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '134'
 ht-degree: 9%
 
 ---
@@ -18,9 +18,9 @@ Este é o JavaScript executado no servidor do Adobe Campaign.
 
 ## Métodos estáticos {#static-methods}
 
-Os métodos estáticos de SOAP são acessados chamando um método no objeto que representa o esquema. Os esquemas são propriedades de objetos &#39;namespace&#39;. Esses namespaces são variáveis globais, portanto, por exemplo, as variáveis xtk ou nms representam os namespaces correspondentes
+Os métodos estáticos do SOAP são acessados chamando um método no objeto que representa o esquema. Os esquemas são propriedades de objetos &#39;namespace&#39;. Esses namespaces são variáveis globais, portanto, por exemplo, as variáveis xtk ou nms representam os namespaces correspondentes
 
-O exemplo a seguir invoca o método PostEvent estático do schema xtk:workflow:
+O exemplo a seguir invoca o método PostEvent estático do esquema xtk:workflow:
 
 ```
 xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false) 
@@ -28,9 +28,9 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 ## Métodos não estáticos {#non-static-methods}
 
-Para usar métodos SOAP não estáticos, é necessário primeiro recuperar uma entidade usando os métodos &quot;get&quot; ou &quot;create&quot; nos schemas correspondentes.
+Para usar métodos SOAP não estáticos, é necessário primeiro recuperar uma entidade usando os métodos &quot;get&quot; ou &quot;create&quot; nos esquemas correspondentes.
 
-O exemplo a seguir invoca o método ExecuteQuery do schema &quot;xtk:queryDef&quot;:
+O exemplo a seguir invoca o método ExecuteQuery do esquema &quot;xtk:queryDef&quot;:
 
 ```
 var query = xtk.queryDef.create(

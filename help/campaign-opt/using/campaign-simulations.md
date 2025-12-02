@@ -2,13 +2,13 @@
 product: campaign
 title: Simulações de campanha
 description: Introdução às simulações de campanha
-role: User, Data Engineer
+role: User, Developer
 feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: ht
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Para criar uma simulação, aplique as seguintes etapas:
 
    ![](assets/simu_campaign_opti_01.png)
 
-1. Insira o template e o nome da simulação. Clique em **[!UICONTROL Save]** para criar a simulação.
+1. Insira o modelo e o nome da simulação. Clique em **[!UICONTROL Save]** para criar a simulação.
 
    ![](assets/simu_campaign_opti_02.png)
 
@@ -80,7 +80,7 @@ Para criar uma simulação, aplique as seguintes etapas:
    >
    >Somente as entregas cujo objetivo tenha sido calculado são levadas em conta no cálculo das simulações (status: **Target ready** ou **Ready to deliver**).
 
-1. Na guia **[!UICONTROL Calculations]**, selecione uma dimensão de análise como, por exemplo, o schema de destinatários.
+1. Na guia **[!UICONTROL Calculations]**, selecione uma dimensão de análise como, por exemplo, o esquema de destinatários.
 
    ![](assets/simu_campaign_opti_dimension.png)
 
@@ -153,7 +153,7 @@ Para analisar o resultado de uma simulação, edite os relatórios: eles mostram
 Os seguintes relatórios são fornecidos como padrão:
 
 * **[!UICONTROL Detail of simulation exclusions]**: esse relatório fornece um gráfico detalhado das causas de exclusão para todas as entregas relacionadas.
-* **[!UICONTROL Simulation summary]**: esse relatório mostra as amostragens excluídas da simulação em todas as entregas.
+* **[!UICONTROL Simulation summary]**: esse relatório mostra as populações excluídas da simulação em todas as entregas.
 * **[!UICONTROL Summary of exclusions linked to the simulation]**: esse relatório mostra um gráfico das exclusões causadas pela simulação junto com a regra de tipologia aplicada e um gráfico que mostra a taxa de exclusão por regra.
 
 >[!NOTE]
@@ -193,12 +193,12 @@ A guia **[!UICONTROL Calculations]** permite definir eixos de relatórios no tar
 
 >[!NOTE]
 >
->Recomendamos definir eixos de cálculo nos templates de simulação, em vez de individualmente para cada simulação.\
+>Recomendamos definir eixos de cálculo nos modelos de simulação, em vez de individualmente para cada simulação.\
 >Os modelos de simulação são salvos no nó **[!UICONTROL Resources > Templates > Simulation templates]** da árvore do Adobe Campaign.
 
 **Exemplo:**
 
-No exemplo abaixo, queremos criar um eixo de relatórios adicional com base no status dos destinatários (&quot;Cliente&quot;, &quot;Prospecto&quot; ou nenhum).
+No exemplo abaixo, queremos criar um eixo de relatórios adicional com base no status dos destinatários (&quot;Cliente&quot;, &quot;Cliente potencial&quot; ou nenhum).
 
 1. Para definir um eixo de relatórios, selecione a tabela que contém as informações a serem processadas no campo **[!UICONTROL Analysis dimension]**. Essas informações são obrigatórias.
 1. Aqui, queremos selecionar o campo Segmento da tabela de destinatários.

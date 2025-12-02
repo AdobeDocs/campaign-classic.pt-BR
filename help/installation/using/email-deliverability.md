@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '3096'
 ht-degree: 13%
@@ -135,7 +135,7 @@ Por padrão, o servidor de estatísticas escuta na porta 7777. Esta porta pode s
 
 >[!IMPORTANT]
 >
->Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), as regras de taxa de transferência da entrega **[!UICONTROL MX management]** não são mais usadas. O MTA aprimorado usa regras de MX próprias que permitem personalizar a taxa de transferência por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios em que você está enviando emails.
+>Para instalações hospedadas ou híbridas, se você atualizou para o [MTA aprimorado](../../delivery/using/sending-with-enhanced-mta.md), as regras da taxa de transferência da entrega **[!UICONTROL MX management]** não são mais usadas. O MTA aprimorado usa as próprias regras de MX que permitem personalizar a taxa de transferência por domínio com base na sua própria reputação histórica de email e no feedback em tempo real proveniente dos domínios no o qual você está enviando emails.
 
 ### Sobre as regras MX {#about-mx-rules}
 
@@ -216,7 +216,7 @@ Essas mensagens serão entregues o mais rápido possível.
 
 As regras a serem seguidas para MX são definidas no documento **[!UICONTROL MX management]** do nó **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** da árvore.
 
-Se o documento **[!UICONTROL MX management]** não existir no nó, você poderá criá-lo manualmente. Para fazer isso:
+Se o documento **[!UICONTROL MX management]** não existir no nó, você poderá criá-lo manualmente. Para isso:
 
 1. Crie um novo conjunto de regras de email.
 1. Escolha o modo **[!UICONTROL MX management]**.
@@ -395,14 +395,14 @@ Os parâmetros são os seguintes:
 
 No exemplo anterior, com condições normais, os endereços serão distribuídos da seguinte maneira:
 
-    * &quot;1&quot;: 5 / (5+5+1) = 45%
-    * &quot;2&quot;: 5 / (5+5+1) = 45%
-    * &quot;3&quot;: 1 / (5+5+1) = 10%
+* &quot;1&quot;: 5 / (5+5+1) = 45%
+* &quot;2&quot;: 5 / (5+5+1) = 45%
+* &quot;3&quot;: 1 / (5+5+1) = 10%
 
 Se, por exemplo, o primeiro endereço não puder ser usado para um determinado MX, as mensagens serão enviadas da seguinte maneira:
 
-    * &quot;2&quot;: 5 / (5+1) = 83%
-    * &quot;3&quot;: 1 / (5+1) = 17%
+* &quot;2&quot;: 5 / (5+1) = 83%
+* &quot;3&quot;: 1 / (5+1) = 17%
 
 * **includeDomains**: permite reservar este endereço IP para emails pertencentes a um domínio específico. Esta é uma lista de máscaras que podem conter um ou mais curingas (&#39;&#42;&#39;). Se o atributo não for especificado, todos os domínios poderão usar esse endereço IP.
 

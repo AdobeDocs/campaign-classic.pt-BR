@@ -3,12 +3,12 @@ product: campaign
 title: Gerenciar relatórios
 description: Gerenciar relatórios
 feature: Reporting, Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '152'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 
 
-Os relatórios baseados em um esquema específico dos recipients padrão do Adobe Campaign (nm:recipient ou schema vinculado) devem ser recriados para considerar os dados da tabela personalizada e suas tabelas vinculadas pelo target mapping (consulte a seção [Target mapping](../../configuration/using/target-mapping.md)).
+Os relatórios baseados em um esquema específico dos recipients padrão do Adobe Campaign (nm:recipient ou esquema vinculado) devem ser recriados para levar em conta os dados da tabela personalizada e suas tabelas vinculadas pelo target mapping (consulte a seção [Target mapping](../../configuration/using/target-mapping.md)).
 
 Para criar novos relatórios, consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md).
 

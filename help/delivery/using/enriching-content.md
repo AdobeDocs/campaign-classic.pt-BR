@@ -4,12 +4,12 @@ title: Enriquecimento de conteúdo
 description: Enriquecimento de conteúdo
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Data Management
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '670'
-ht-degree: 100%
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 87%
 
 ---
 
@@ -19,11 +19,11 @@ Agregadores permitem enriquecer o conteúdo com dados externos. Esses dados vêm
 
 ## Consultas genéricas {#generic-queries}
 
-Os queries são configurados por meio do template de publicação na guia **[!UICONTROL Aggregator]**.
+Os queries são configurados por meio do modelo de publicação na guia **[!UICONTROL Aggregator]**.
 
 Os dados recuperados enriquecem o documento de saída XML por meio de seu elemento principal.
 
-Exemplo de retorno de um query no schema do destinatário (**nms:recipient**):
+Exemplo de retorno de um query no esquema do recipient (**nms:recipient**):
 
 ```
 <book name="Content Management">
@@ -67,20 +67,20 @@ Os links permitem recuperar dados externos vinculados ao conteúdo.
 
 Existem dois tipos de dados vinculados:
 
-* Links de conteúdo: esse é o modo de gestão de conteúdo nativo. O conteúdo do link é automaticamente integrado no documento de saída XML.
+* Links de conteúdo: esse é o modo de gerenciamento de conteúdo nativo. O conteúdo do link é automaticamente integrado no documento de saída XML.
 * Links para tabelas externas dão acesso a todas as outras tabelas do banco de dados com a restrição de recuperar os dados do link selecionado com um agregador.
 
 ### Link para um esquema de conteúdo {#link-to-a-content-schema}
 
-Um link de conteúdo é declarado no schema de dados da seguinte maneira:
+Um link de conteúdo é declarado no esquema de dados da seguinte maneira:
 
 ```
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-A definição do link é preenchida em uma **string** tipo **`<element>`**, e o atributo **expandSchemaTarget** faz referência ao schema target (&quot;cus:chapter&quot; em nosso exemplo). O schema referenciado deve ser um schema de conteúdo.
+A definição do link é preenchida em uma **cadeia** tipo **`<element>`**, e o atributo **expandSchemaTarget** faz referência ao esquema de destino (&quot;cus:chapter&quot; em nosso exemplo). O esquema referenciado deve ser um esquema de conteúdo.
 
-O conteúdo do elemento target enriquece o elemento link, ou seja, o elemento **`<chapter>`** em nosso schema de exemplo:
+O conteúdo do elemento target enriquece o elemento link, ou seja, o elemento **`<chapter>`** em nosso esquema de exemplo:
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -104,7 +104,7 @@ O ícone **[!UICONTROL Magnifier]** permite a abertura do formulário de ediçã
 
 #### Coleção de links {#link-collection}
 
-Para preencher uma coleção de links, adicione o atributo **unbound=&quot;true&quot;** à definição do elemento do link no schema de dados:
+Para preencher uma coleção de links, adicione o atributo **unbound=&quot;true&quot;** à definição do elemento do link no esquema de dados:
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
@@ -130,15 +130,15 @@ Uma coluna padrão é exibida para mostrar a **Cálculo de string** dos elemento
 
 ### Links para tabelas externas {#links-to-external-tables}
 
-Um link para uma tabela externa é declarado no schema de dados da seguinte maneira:
+Um link para uma tabela externa é declarado no esquema de dados da seguinte maneira:
 
 ```
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-A definição do link é preenchida em um **link** tipo **`<element>`**, e o atributo **target** faz referência ao schema target (&quot;nms:recipient&quot; em nosso exemplo).
+A definição do link é preenchida em um **link** tipo **`<element>`**, e o atributo **target** faz referência ao esquema de destino (&quot;nms:recipient&quot; em nosso exemplo).
 
-Por convenção, os links devem ser declarados do elemento principal do schema de dados.
+Por convenção, os links devem ser declarados do elemento principal do esquema de dados.
 
 O **Compute string** e a chave do elemento target enriquecem os atributos **`<name>-id`** e **`<name>-cs`** no elemento principal.
 
@@ -255,6 +255,6 @@ O resultado obtido após a execução do script:
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-O conteúdo do código JavaScript é adicionado por meio da pasta **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** e deve ser preenchido no template de publicação para cada transformação.
+O conteúdo do código JavaScript é adicionado por meio da pasta **[!UICONTROL Administration > Configuration > Content management > JavaScript Codes]** e deve ser preenchido no modelo de publicação para cada transformação.
 
 ![](assets/d_ncs_content_link5.png)

@@ -4,12 +4,12 @@ title: Instruções de pré-processamento para URLs rastreados
 description: Saiba mais sobre as instruções de pré-processamento a serem usadas para criar o script do URL de um email e ainda rastrear esse URL
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring
-role: User, Data Engineer, Developer
+role: User, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '653'
-ht-degree: 100%
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 94%
 
 ---
 
@@ -74,7 +74,7 @@ Em que:
 * **[!DNL object]**: nome do objeto (por exemplo: entrega, provedor e assim por diante).
 O objeto pode ser:
    * **[!DNL delivery]**: para a entrega atual (consulte os detalhes e as restrições na subseção abaixo).
-   * **[!DNL provider]**: para o provedor/roteamento atual da entrega (nms:externalAccount).
+   * **[!DNL provider]**: para o provedor/roteamento de entrega atual (nms:externalAccount).
    * Um objeto de script extra: se um objeto for carregado no contexto por meio de: **Propriedades** > **Personalização** > **Adicionar objetos no contexto de execução**.
    * Item do loop foreach: consulte a seção [Foreach](#foreach) abaixo.
 * **[!DNL xpath]**: xpath do campo.
@@ -101,7 +101,7 @@ Para personalização por email, o objeto de entrega pode ser acessado de duas f
 
 **Cuidado**
 
-Se você estiver usando a seguinte instrução para entregas enviadas via mid-sourcing, o campo personalizado **@myCustomField** deverá ser adicionado ao esquema nms:delivery nas plataformas de marketing e mid-sourcing:
+Se você estiver usando a seguinte instrução para deliveries enviados via mid-sourcing, o campo personalizado **@myCustomField** deverá ser adicionado ao esquema nms:delivery nas plataformas de marketing e mid-sourcing:
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>

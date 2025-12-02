@@ -3,11 +3,11 @@ product: campaign
 title: Referência do esquema
 description: Lista de referência de esquema
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '89'
 ht-degree: 21%
 
 ---
@@ -25,7 +25,7 @@ Lista de referências:
 * [Condição](schema/condition.md)
 * [Índice DB](schema/db-index.md)
 * [Elemento](schema/element.md)
-* [Lista discriminada](schema/enumeration.md)
+* [Enumeração](schema/enumeration.md)
 * [Ajuda](schema/help.md)
 * [Associar-se](schema/join.md)
 * [Chave](schema/key.md)

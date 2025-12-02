@@ -3,9 +3,9 @@ product: campaign
 title: Definir tag de rastreamento Web
 description: Definir tag de rastreamento Web
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 2%
@@ -108,17 +108,17 @@ A tabela a seguir fornece uma lista de parâmetros especiais suportados pelo ser
 
 * Coleta de dados de volume de negócios
 
-  **https://myserver.adobe.com/r/4567?tagid=command&amount=100&article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
 * Especificação de um campo para localizar o recipient
 
-  **https://myserver.adobe.com/r/2353?tagid=home&rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
   Um recipient cujo número de conta é 10 é enviado para a home page.
 
 * Uso de um delivery padrão
 
-  **https://myserver.adobe.com/r/2456?tagid=home&jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
   Um recipient é enviado para a home page. Essas informações serão armazenadas no delivery com o identificador 230 (e6 no banco de dados 16) a menos que um cookie de sessão contendo um identificador de delivery seja enviado com essa query.
 

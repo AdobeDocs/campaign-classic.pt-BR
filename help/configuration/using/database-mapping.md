@@ -3,12 +3,12 @@ product: campaign
 title: Mapeamento de banco de dados
 description: Mapeamento de banco de dados
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '526'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -92,13 +92,13 @@ Para preencher um campo em XML, você deve adicionar o atributo **xml** com o va
   <element name="comment" xml="true" type="memo" label="Comment"/>
   ```
 
-* Descrição dos dados em formato HTML:
+* Descrição dos dados no formato HTML:
 
   ```sql
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
-  O tipo &quot;html&quot; permite armazenar o conteúdo do HTML em uma tag CDATA e exibir uma verificação de edição de HTML especial na interface do cliente do Adobe Campaign.
+  O tipo &quot;html&quot; permite armazenar o conteúdo do HTML em uma tag CDATA e exibir uma verificação de edição especial do HTML na interface do cliente do Adobe Campaign.
 
 Use campos XML para adicionar novos campos sem modificar a estrutura física do banco de dados. Outra vantagem é que você usa menos recursos (tamanho alocado para campos SQL, limite do número de campos por tabela etc.). No entanto, observe que não é possível indexar ou filtrar um campo XML.
 

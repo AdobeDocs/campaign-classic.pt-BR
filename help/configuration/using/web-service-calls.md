@@ -3,11 +3,11 @@ product: campaign
 title: Chamadas de serviço da Web
 description: Chamadas de serviço da Web
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Informações gerais {#general-information}
 
-Todos os métodos de API são apresentados no formato de serviços da Web. Isso permite gerenciar todas as funções do Adobe Campaign por meio de chamadas SOAP, que são o ponto de entrada nativo do servidor de aplicativos Adobe Campaign. O próprio console do Adobe Campaign usa apenas chamadas SOAP.
+Todos os métodos de API são apresentados no formato de serviços da Web. Isso permite gerenciar todas as funções do Adobe Campaign por meio de chamadas do SOAP, que são o ponto de entrada nativo do servidor de aplicativos do Adobe Campaign. O próprio console Adobe Campaign usa apenas chamadas SOAP.
 
 Os serviços da Web permitem criar muitos aplicativos a partir de um sistema de terceiros:
 
@@ -45,7 +45,7 @@ Um serviço Web é descrito na gramática dos esquemas de dados e está disponí
 
 Temos aqui um exemplo da definição do método chamado **GenerateForm**.
 
-A descrição do serviço começa com o elemento `<method>`. A lista de parâmetros do método foi concluída do elemento `<parameters>`. Cada parâmetro é especificado por um nome, um tipo (Boolean, string, DOMElement, etc.) e uma descrição. O atributo &quot;inout&quot; com o valor &quot;out&quot; permite especificar que o parâmetro &quot;result&quot; está na saída da chamada SOAP.
+A descrição do serviço começa com o elemento `<method>`. A lista de parâmetros do método foi concluída do elemento `<parameters>`. Cada parâmetro é especificado por um nome, um tipo (Boolean, string, DOMElement, etc.) e uma descrição. O atributo &quot;inout&quot; com o valor &quot;out&quot; permite especificar que o parâmetro &quot;result&quot; está na saída da chamada do SOAP.
 
 A presença do atributo &quot;static&quot; (com o valor &quot;true&quot;) descreve esse método como estático, o que significa que todos os parâmetros do método devem ser declarados.
 
@@ -64,7 +64,7 @@ Exemplo do método &quot;ExecuteQuery&quot; do tipo &quot;const&quot; do esquema
 </method>
 ```
 
-O parâmetro de entrada desse método é um documento XML no formato do schema &quot;xtk:queryDef&quot;.
+O parâmetro de entrada deste método é um documento XML no formato do esquema &quot;xtk:queryDef&quot;.
 
 ## Descrição do serviço Web: WSDL {#web-service-description--wsdl}
 
@@ -226,12 +226,12 @@ Quando acessada pelo console, é:
 * transmitido na resposta de logon (no cabeçalho HTTP)
 * usado em cada query (no cabeçalho HTTP)
 
-De um POST e GET HTTP:
+A partir de um POST e GET HTTP:
 
 * o servidor conclui os links com o token
 * o servidor adiciona um campo oculto a formulários
 
-De uma chamada SOAP:
+A partir de uma chamada do SOAP:
 
 * ele é adicionado aos cabeçalhos de chamada
 

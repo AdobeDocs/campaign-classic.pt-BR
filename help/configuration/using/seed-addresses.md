@@ -2,14 +2,14 @@
 product: campaign
 title: Seed addresses
 description: Seed addresses
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Seed Address
 level: Intermediate, Experienced
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '326'
 ht-degree: 12%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 12%
 
 
 
-Se a tabela do recipient for uma tabela personalizada, configurações adicionais serão necessárias. O schema **[!UICONTROL nms:seedMember]** deve ser estendido. Uma guia adicional é adicionada aos seed addresses para definir os campos adequados, conforme mostrado abaixo:
+Se a tabela do recipient for uma tabela personalizada, configurações adicionais serão necessárias. O esquema **[!UICONTROL nms:seedMember]** deve ser estendido. Uma guia adicional é adicionada aos seed addresses para definir os campos adequados, conforme mostrado abaixo:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -26,7 +26,7 @@ Para obter mais informações sobre como usar seed addresses, consulte [esta se�
 
 ## Implementação {#implementation}
 
-O esquema **nms:seedMember** e o formulário vinculado pronto para uso devem ser estendidos para configuração do cliente, para fazer referência a todos os campos necessários. A definição do schema contém comentários detalhando seu modo de configuração.
+O esquema **nms:seedMember** e o formulário vinculado prontos para uso devem ser estendidos para configuração do cliente, para fazer referência a todos os campos necessários. A definição do schema contém comentários detalhando seu modo de configuração.
 
 Definição do schema estendido da tabela de recipients:
 
@@ -71,7 +71,7 @@ Siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >A extensão do esquema **nms:seedMember** deve estar em conformidade com as estruturas de uma campanha e de um delivery no Adobe Campaign.
+   >A extensão do esquema **nms:seedMember** deve estar em conformidade com as estruturas de uma campanha e uma entrega no Adobe Campaign.
 
    >[!IMPORTANT]
    >
@@ -80,7 +80,7 @@ Siga as etapas abaixo:
    >    
    >    * Durante a extensão, você deve especificar um **nome SQL (@sqlname)** para o campo &#39;email&#39;. O nome SQL deve ser diferente do &#39;sEmail&#39; reservado para o esquema do recipient.
    >    * Você deve atualizar a estrutura do banco de dados com o esquema criado ao estender **nms:seedMember**.
-   >    * Na extensão **nms:seedMember**, o campo que contém o endereço de email deve ter **name=&quot;email&quot;** como um atributo. O nome SQL deve ser diferente de &#39;sEmail&#39;, que já é usado para o esquema do recipient. Este atributo deve ser declarado imediatamente sob o elemento **`<element name="custom_cus_person" />`**.
+   >    * Na extensão **nms:seedMember**, o campo contendo o endereço de email deve ter **name=&quot;email&quot;** como um atributo. O nome SQL deve ser diferente de &#39;sEmail&#39;, que já é usado para o esquema do recipient. Este atributo deve ser declarado imediatamente sob o elemento **`<element name="custom_cus_person" />`**.
    >    
    >
 

@@ -3,10 +3,10 @@ product: campaign
 title: Protocolo e configurações do conector de SMS
 description: Saiba mais sobre o conector SMS e como configurá-lo
 feature: SMS
-role: Developer, Data Engineer
+role: Developer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
-workflow-type: ht
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
 source-wordcount: '8457'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Este documento o guiará durante a configuração da conexão entre o Adobe Camp
 
 Ao enviar SMS em massa por um provedor SMS, você encontrará três tipos diferentes de SMS:
 
-* **SMS MT (Terminado por dispositivo móvel)**: um SMS emitido pelo Adobe Campaign para telefones celulares por meio do provedor SMPP.
+* **SMS MT (Encerrado por dispositivo móvel)**: um SMS emitido pelo Adobe Campaign para telefones celulares por meio do provedor SMPP.
 
 * **SMS MO (Originado por dispositivo móvel)**: um SMS enviado por um dispositivo móvel para o Adobe Campaign por meio do provedor SMPP.
 
@@ -167,7 +167,7 @@ Campos de destaque em uma PDU `SUBMIT_SM`:
 
 * **target_addr**: endereço, número de telefone ou MSISDN do destinatário.
 
-* **esm_class**: usado para informar se UDH é usado ou não no campo de texto. Ativado automaticamente pelo conector para SMS dividido se o modo `message_payload` não for usado.
+* **esm_class**: usado para informar se UDH é usado ou não no campo de texto. Habilitado automaticamente pelo conector para SMS dividido se o modo `message_payload` não for usado.
 
 * **priority_flag**: prioridade dessa mensagem sobre outras. É ligado à prioridade da própria entrega.
 
@@ -183,7 +183,7 @@ O Adobe Campaign é compatível com estes campos opcionais:
 
 * **dest_addr_subunit**: usado para especificar o target do SMS: flash, dispositivo móvel ou cartão SIM. Definido nas propriedades da entrega.
 
-* **message_payload**: quando ativado na conta externa, mensagens longas serão enviadas em uma única PDU, e o texto será transmitido nesse campo, em vez do campo `short_message`.
+* **message_payload**: quando habilitado na conta externa, mensagens longas serão enviadas em uma única PDU, e o texto será transmitido nesse campo, em vez do campo `short_message`.
 
 #### SUBMIT_SM_RESP {#submit-sm-resp}
 
@@ -235,9 +235,9 @@ Essa PDU reconhece que a conexão está ativa.
 
 O SMS multiparte, ou SMS longo, consiste em um SMS enviado em várias partes. Devido a limitações técnicas no protocolo de rede móvel, um SMS não pode ter mais de 140 bytes. Caso contrário, precisará ser dividido. Consulte a seção [codificação de texto SMS](sms-protocol.md#sms-text-encoding) para saber mais sobre o número de caracteres que um SMS pode conter.
 
-Cada parte de uma mensagem longa é um SMS individual. Essas partes viajam independentemente na rede e são montadas pelo telefone celular receptor. Para lidar com tentativas e problemas de conectividade, o Adobe Campaign envia essas partes em ordem inversa e solicita um SR somente na primeira parte da mensagem, a última enviada. Como o telefone celular só exibe uma mensagem quando a primeira parte é recebida, as tentativas de partes adicionais não produzem duplicatas no telefone celular.
+Cada parte de uma mensagem longa é um SMS individual. Essas partes viajam independentemente na rede e são montadas pelo telefone celular receptor. Para lidar com tentativas e problemas de conectividade, o Adobe Campaign envia essas partes em ordem inversa e solicita um SR somente na primeira parte da mensagem, a última enviada. Como o telefone celular só exibe uma mensagem quando a primeira parte é recebida, as tentativas de partes adicionais não produzem duplicados no telefone celular.
 
-O número máximo de SMS por mensagem pode ser definido por entrega usando a configuração **Número máximo de SMS por mensagem** no **Template da entrega**. As mensagens que ultrapassarem esse limite terão falha durante o envio, com o motivo de falha de SMS muito longo.
+O número máximo de SMS por mensagem pode ser definido por entrega usando a configuração **Número máximo de SMS por mensagem** no **Modelo da entrega**. As mensagens que ultrapassarem esse limite terão falha durante o envio, com o motivo de falha de SMS muito longo.
 
 Há duas maneiras de enviar SMS longos:
 
@@ -264,7 +264,7 @@ Para se adaptar ao gerenciamento de erros, o sistema de mensagem de banda larga 
 Como mencionado acima, existem dois tipos diferentes de erros:
 
 * respostas síncronas em `SUBMIT_SM_RESP` que ocorrem imediatamente após a mensagem ser enviada ao SMSC
-* recebimentos que poderão vir muito mais tarde, quando o celular tiver recebido a mensagem ou quando a mensagem atingir o tempo limite. Nesse caso, o erro é encontrado em um SR.
+* recebimentos que poderão vir muito mais tarde, quando o celular tiver recebido a mensagem ou quando a mensagem expirar. Nesse caso, o erro é encontrado em um SR.
 
 Quando um SR é recebido, o status e o erro podem ser encontrados em seu campo `short_message` (exemplo para implementações em conformidade com o Apêndice B). O campo `short_message` da PDU é frequentemente chamado de **campo de texto**, pois contém texto no MT. No caso de SR, contém informações técnicas, mais um subcampo chamado **Texto**. Esses dois campos são diferentes e `short_message` na verdade contém o campo **Texto** e outras informações.
 
@@ -414,9 +414,9 @@ O conector Adobe Campaign Classic Extended SMPP pode controlar o número de cone
 
 Para o Adobe Campaign Classic, pode haver um número diferente de conexões de receptor e transmissor:
 
-* **Conexões do transmissor = número de conexões derivadas do MTA * número de processos derivados do MTA * número de MTAs (se a resposta automática estiver definida) * número de conexões derivadas do MTA**
+* **Conexões do transmissor = número de conexões filhas do MTA * número de processos filhos do MTA * número de MTAs (se a resposta automática estiver definida) * número de conexões filhas do MTA**
 
-Como sugerido acima, o processo de SMS do Adobe Campaign Classic abrirá mais conexões de transmissor se a resposta automática estiver ativada. Essas conexões extras são usadas para enviar as respostas automáticas.
+Como sugerido acima, o processo de SMS do Adobe Campaign Classic abrirá mais conexões de transmissor se a resposta automática estiver habilitada. Essas conexões extras são usadas para enviar as respostas automáticas.
 
 * **Conexões de receptor = número de conexões filho do MTA**
 
@@ -428,7 +428,7 @@ Use o TLS para se conectar ao provedor. A conexão será criptografada. A conex�
 
 #### Habilitar rastreamentos SMPP detalhados no arquivo de log {#enable-verbose-log-file}
 
-Essa configuração descarta todo o tráfego SMPP no arquivos de log. Geralmente é necessário ajustar parâmetros durante a configuração inicial. Isso deve ser ativado ao solucionar problemas do conector e comparado ao tráfego visto pelo provedor.
+Essa configuração descarta todo o tráfego SMPP no arquivos de log. Geralmente é necessário ajustar parâmetros durante a configuração inicial. Isso deve ser habilitado ao solucionar problemas do conector e comparado ao tráfego visto pelo provedor.
 
 No Adobe Campaign Classic, o output do log está no log de MTA para tráfego relacionado ao MT e no log de SMS para tráfego relacionado ao MO e ao SR.
 
@@ -460,13 +460,13 @@ Consulte [Definir um mapeamento específico das configurações de codificaçõe
 
 #### Armazenar o MO recebido no banco de dados {#incoming-mo-storing}
 
-Quando ativado, o MO recebido será armazenado na tabela inSMS do banco de dados. Esta tabela pode ser consultada usando a atividade de query de qualquer fluxo de trabalho.
+Quando habilitado, o MO recebido será armazenado na tabela inSMS do banco de dados. Esta tabela pode ser consultada usando a atividade de query de qualquer fluxo de trabalho.
 
 O Adobe Campaign Classic sempre armazena todos os MOs no banco de dados do InSMS. Portanto, essa opção não está disponível.
 
-#### Ativar atualizações de KPI em tempo real durante o processamento de SR {#real-time-kpi}
+#### Habilitar atualizações de KPI em tempo real durante o processamento de SR {#real-time-kpi}
 
-Quando ativados, os KPIs serão atualizados em tempo real na página principal da entrega ao receber o SR do erro.
+Quando habilitados, os KPIs serão atualizados em tempo real na página principal da entrega ao receber o SR do erro.
 
 A desvantagem pode ser o baixo desempenho devido à contenção do banco de dados gerado. Se desabilitadas, as estatísticas são atualizadas pelo fluxo de trabalho **syncformexec** , em execução a cada 20 minutos.
 
@@ -579,13 +579,13 @@ Isso significa que o MTA tentará codificar a mensagem no GSM. Se for bem-sucedi
 
 Se a mensagem não puder ser codificada no GSM, será codificada em UCS-2 e definirá `data_coding` como 8.
 
-#### Ativar message_payload {#enable-message-payload}
+#### Habilitar message_payload {#enable-message-payload}
 
 Quando desmarcada, o SMS longo será dividido pelo MTA e enviado em vários `SUBMIT_SM PDU`s com UDH. A mensagem será recomposta pelo telefone celular, seguindo os dados UDH.
 
 Quando marcado, o SMS longo será enviado em uma PDU SUBMIT_SM, colocando o texto no campo opcional message_payload. Consulte a [especificação SMPP](sms-protocol.md#ACS-SMPP-connector) para obter detalhes sobre isso.
 
-Se esse recurso estiver ativado, o Adobe Campaign não poderá contar as partes do SMS individualmente: todas as mensagens serão contadas como enviadas em uma parte.
+Se esse recurso estiver habilitado, o Adobe Campaign não poderá contar as partes do SMS individualmente: todas as mensagens serão contadas como enviadas em uma parte.
 
 #### Enviar o número de telefone completo {#send-full-phone-number}
 
@@ -597,9 +597,9 @@ Esse recurso também afeta o comportamento do recurso de lista de bloqueios de r
 
 #### Ignorar verificação de certificado TLS {#skip-tls}
 
-Quando o TLS estiver ativado, ignorar todas as verificações de certificado.
+Quando o TLS estiver habilitado, ignorar todas as verificações de certificado.
 
-Quando marcado, a conexão não é mais segura. Ela não deve ser ativada na produção.
+Quando marcado, a conexão não é mais segura. Ela não deve ser habilitada na produção.
 
 Pode ser útil para depuração ou teste.
 
@@ -687,7 +687,7 @@ Isso indica o formato da ID capturada pelo regex `Extraction` da ID no SR. Os va
 
 Se marcado, o conteúdo dos campos opcionais será anexado ao texto processado pelos regex acima. O texto terá o formato `0xTAG:VALUE`, `0xTAG` sendo o valor hexadecimal de quatro dígitos da tag em maiúsculas, por exemplo, `0x002E`.
 
-Por exemplo, convém capturar a ID no campo `receipted_message_id`. Para isso, ative essa caixa de seleção. O seguinte texto será adicionado ao status:
+Por exemplo, convém capturar a ID no campo `receipted_message_id`. Para isso, habilite essa caixa de seleção. O seguinte texto será adicionado ao status:
 
 ```
 0x001E:05e3299e-8d37-49d0-97c6-8e4fe60c7739
@@ -711,7 +711,7 @@ Se marcado, o campo **Texto** será mantido durante o processamento do texto de 
 
 Isso será útil se o provedor colocar dados importantes nesse campo, como a ID ou o status. Normalmente, esse campo pode ser descartado com segurança, pois pode conter texto com uma codificação não ASCII e prejudicar o processamento de regex.
 
-Se essa opção for ativada, poderá ocorrer uma falha de segurança muito pequena se o regex `Extraction` da ID no campo SR não for suficientemente específico. O conteúdo do campo **Texto** pode ser analisado como uma ID, e um invasor pode usá-lo para injetar IDs forjadas, o que pode levar a uma situação de negação de serviço parcial.
+Se essa opção for habilitada, poderá ocorrer uma falha de segurança muito pequena se o regex `Extraction` da ID no campo SR não for suficientemente específico. O conteúdo do campo **Texto** pode ser analisado como uma ID, e um invasor pode usá-lo para injetar IDs forjadas, o que pode levar a uma situação de negação de serviço parcial.
 
 **Tag de ID de serviço**
 
@@ -823,13 +823,13 @@ Esta lista de verificação fornece uma lista de itens que você deve verificar 
 
 ### Verifique se há conflitos de conta externa {#external-account-conflict}
 
-Verifique se você não tem contas externas SMS antigas. Se você deixar a conta de teste desabilitada, correrá o risco de ela ser reativada no sistema de produção e gerar possíveis conflitos.
+Verifique se você não tem contas externas SMS antigas. Se você deixar a conta de teste desabilitada, correrá o risco de ela ser reabilitada no sistema de produção e gerar possíveis conflitos.
 
 Se você tiver várias contas na mesma instância do Adobe Campaign que se conectam ao mesmo provedor, entre em contato com o provedor para garantir que realmente diferenciam as conexões entre essas contas. Ter várias contas com o mesmo login requer configuração extra.
 
 ### Habilitar rastreamentos SMPP detalhados durante verificações {#enable-verbose}
 
-Você deve sempre ativar rastreamentos SMPP detalhados durante as verificações.
+Você deve sempre habilitar rastreamentos SMPP detalhados durante as verificações.
 Mesmo se você não conseguir verificar os registros sozinho, será mais fácil para o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ajudá-lo.
 
 ### Testar o SMS {#test}
@@ -895,4 +895,4 @@ Mesmo se o SMS for bem-sucedido, entre em contato com o provedor para verificar 
 
 ### Desabilitar rastreamentos de SMPP detalhados {#disable-verbose}
 
-Quando todas as verificações forem concluídas, a última ação será **Desabilitar rastreamentos SMPP detalhados** para não gerar muitos logs. Você pode reativá-los para fins de solução de problemas mesmo em sistemas de produção.
+Quando todas as verificações forem concluídas, a última ação será **Desabilitar rastreamentos SMPP detalhados** para não gerar muitos logs. Você pode reabilitá-los para fins de solução de problemas mesmo em sistemas de produção.

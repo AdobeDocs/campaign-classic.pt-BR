@@ -3,11 +3,11 @@ product: campaign
 title: Gerenciamento de chaves em esquemas de dados
 description: Entender o gerenciamento de chaves em esquemas de dados
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '617'
 ht-degree: 6%
 
 ---
@@ -130,13 +130,13 @@ A chave primária da maioria das tabelas do Adobe Campaign é um inteiro longo d
 
 A vantagem de uma chave incremental é que ela fornece uma chave técnica não modificável para as associações entre tabelas. Além disso, essa chave não ocupa muita memória porque usa um inteiro de dois bytes.
 
-Você pode especificar no esquema de origem o nome da sequência a ser usada com o atributo **pkSequence**. Se este atributo não for fornecido no esquema de origem, a sequência padrão **XtkNewId** será usada. O aplicativo usa sequências dedicadas para os esquemas **nms:broadLog** e **nms:trackingLog** (**NmsBroadLogId** e **NmsTrackingLogId** respectivamente) porque essas são as tabelas que contêm mais registros.
+Você pode especificar no esquema de origem o nome da sequência a ser usada com o atributo **pkSequence**. Se este atributo não for fornecido no esquema de origem, a sequência padrão **XtkNewId** será usada. O aplicativo usa sequências dedicadas para os esquemas **nms:broadLog** e **nms:trackingLog** (**NmsBroadLogId** e **NmsTrackingLogId**, respectivamente) porque essas são as tabelas que contêm mais registros.
 
 A partir do ACC 18.10, **XtkNewId** não é mais o valor padrão para a sequência nos esquemas prontos para uso. Agora é possível criar um esquema ou estender um esquema existente com uma sequência dedicada.
 
 >[!IMPORTANT]
 >
->Ao criar um novo schema ou durante uma extensão de schema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o schema.
+>Ao criar um novo esquema ou durante uma extensão de esquema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o esquema.
 
 Uma sequência referenciada em um esquema Adobe Campaign (**NmsTrackingLogId**, por exemplo) deve ser associada a uma função SQL que retorna o número de IDs nos parâmetros, separadas por vírgulas. Esta função deve ser chamada de **GetNew** XXX **Ids**, onde **XXX** é o nome da sequência (**GetNewNmsTrackingLogIds**, por exemplo). Exiba os arquivos **postgres-nms.sql**, **mssql-nms.sql** ou **oracle-nms.sql** fornecidos com o aplicativo no diretório **datakit/nms/eng/sql/** para recuperar o exemplo de criação de sequência &#39;NmsTrackingLogId&#39; para cada mecanismo de banco de dados.
 

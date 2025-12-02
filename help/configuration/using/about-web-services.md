@@ -3,11 +3,11 @@ product: campaign
 title: Sobre serviços da Web
 description: Sobre serviços da Web
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '644'
 ht-degree: 3%
 
 ---
@@ -18,19 +18,19 @@ ht-degree: 3%
 
 O servidor de aplicativos Adobe Campaign foi projetado para oferecer abertura e fácil integração com sistemas de informações da empresa cada vez mais diversos e complexos.
 
-As APIs do Adobe Campaign são usadas no JavaScript dentro do aplicativo e no SOAP fora dele. Eles compõem uma biblioteca de funções genéricas que podem ser enriquecidas. Para obter mais informações, consulte [Implementando métodos de SOAP](../../configuration/using/implementing-soap-methods.md).
+As APIs do Adobe Campaign são usadas no JavaScript dentro do aplicativo e no SOAP fora dele. Eles compõem uma biblioteca de funções genéricas que podem ser enriquecidas. Para obter mais informações, consulte [Implementação de métodos do SOAP](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
 >O número de Chamadas do Engine autorizadas por dia varia de acordo com o contrato de licença. Para obter mais informações, consulte [esta página](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Uma lista de todas as APIs, incluindo sua descrição completa, está disponível em [esta documentação dedicada] (https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR.
+>Uma lista de todas as APIs, incluindo sua descrição completa, está disponível em [esta documentação dedicada]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
 
 ## Pré-requisitos {#prerequisites}
 
 Antes de usar as APIs do Adobe Campaign, você precisa se familiarizar com os seguintes tópicos:
 
 * Javascript
-* Protocolo SOAP
+* protocolo SOAP
 * Modelo de dados do Adobe Campaign
 
 ## Uso de APIs do Adobe Campaign {#using-adobe-campaign-apis}
@@ -61,9 +61,9 @@ O schema a seguir mostra os vários recursos envolvidos no uso das APIs do Adobe
 
 ![](assets/s_ncs_integration_webservices_schema_pres.png)
 
-## Exemplo de mensagem SOAP no método &#39;ExecuteQuery&#39; {#example-of-a-soap-message-on-the--executequery--method--}
+## Exemplo de mensagem SOAP no método &quot;ExecuteQuery&quot; {#example-of-a-soap-message-on-the--executequery--method--}
 
-Neste exemplo, uma consulta SOAP invoca o método &quot;ExecuteQuery&quot;, que usa uma cadeia de caracteres como parâmetro para autenticação (token de sessão) e um conteúdo XML para a descrição da consulta a ser executada.
+Neste exemplo, uma consulta SOAP chama o método &quot;ExecuteQuery&quot;, que usa uma cadeia de caracteres como parâmetro para autenticação (token de sessão) e um conteúdo XML para a descrição da consulta a ser executada.
 
 Para obter mais informações, consulte [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
 
@@ -71,7 +71,7 @@ Para obter mais informações, consulte [ExecuteQuery (xtk:queryDef)](../../conf
 >
 >A descrição WSDL deste serviço está concluída no exemplo mostrado aqui: [Descrição do serviço Web: WSDL](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
-### consulta SOAP {#soap-query}
+### consulta do SOAP {#soap-query}
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -97,7 +97,7 @@ O método a ser chamado é inserido no elemento `<executequery>` do corpo da men
 
 No SOAP, os parâmetros são reconhecidos por ordem de aparência. O primeiro parâmetro, `<__sessiontoken>`, pega a cadeia de autenticação, o segundo parâmetro é a descrição XML da consulta do elemento `<querydef>`.
 
-### Resposta ao SOAP {#soap-response}
+### Resposta do SOAP {#soap-response}
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>

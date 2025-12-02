@@ -4,12 +4,12 @@ title: Formatação
 description: Formatação
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Email Design
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
-workflow-type: ht
-source-wordcount: '1451'
-ht-degree: 100%
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
+source-wordcount: '1446'
+ht-degree: 94%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 100%
 
 ## Modelos JavaScript {#javascript-templates}
 
-Um template JavaScript é um documento HTML ou texto que inclui código JavaScript. Ele é criado da mesma forma que um conteúdo de email em uma ação de entrega.
+Um modelo JavaScript é um documento HTML ou texto que inclui código JavaScript. Ele é criado da mesma forma que um conteúdo de email em uma ação de entrega.
 
 ### Identificação de um modelo JavaScript {#identification-of-a-javascript-template}
 
-Um template JavaScript é identificado por seu nome e namespace como schemas e formulários. No entanto, é recomendável adicionar a opção **.js** ao nome do template.
+Um modelo JavaScript é identificado por seu nome e namespace como esquemas e formulários. No entanto, é recomendável adicionar a opção **.js** ao nome do modelo.
 
 ### Estrutura de um modelo JavaScript {#structure-of-a-javascript-template}
 
-Exemplo de um template de formatação HTML de JavaScript baseado no schema &quot;cus:book&quot;:
+Exemplo de um modelo de formatação do JavaScript HTML com base no esquema &quot;cus:book&quot;:
 
 ```
 <html>
@@ -157,9 +157,9 @@ Exemplos:
 
 ### Inclusão de um modelo JavaScript {#including-a-javascript-template}
 
-É possível constituir uma biblioteca de funções ou variáveis para uso posterior. Para fazer isso, importe o template JavaScript com a função **eval.** Isso permite enriquecer contextos com funções adicionais declaradas em outros templates JavaScript.
+É possível constituir uma biblioteca de funções ou variáveis para uso posterior. Para fazer isso, importe o modelo JavaScript com a função **eval.** Isso permite enriquecer contextos com funções adicionais declaradas em outros modelos JavaScript.
 
-**Exemplo**: importação do template **common.jsp**.
+**Exemplo**: importação do modelo **common.jsp**.
 
 ```
 <% eval(xtk.javascript.get("cus:common.js").data);  %>
@@ -167,13 +167,13 @@ Exemplos:
 
 ### Edição de um modelo JavaScript {#editing-a-javascript-template}
 
-A zona de edição permite que você preencha o conteúdo do template JavaScript:
+A zona de edição permite que você preencha o conteúdo do modelo JavaScript:
 
 ![](assets/d_ncs_content_form16.png)
 
 >[!NOTE]
 >
->O schema do modelo de dados associados deve ser preenchido para a inicialização de objetos JavaScript.
+>O esquema do modelo de dados associados deve ser preenchido para a inicialização de objetos JavaScript.
 
 Para gerar a pré-visualização do documento de saída a qualquer momento, selecione um conteúdo e um formato de saída (HTML, Texto, XML) e clique em **[!UICONTROL Generate]**:
 
@@ -185,13 +185,13 @@ Para gerar a pré-visualização do documento de saída a qualquer momento, sele
 
 ### Exemplo de como criar e usar um modelo JavaScript {#example-of-how-to-create-and-use-a-javascript-template}
 
-Abaixo você encontrará a configuração necessária para implementar a seguinte gestão de conteúdo usando um template JavaScript:
+Abaixo você encontrará a configuração necessária para implementar o seguinte gerenciamento de conteúdo de conteúdo usando um modelo JavaScript:
 
 ![](assets/d_ncs_content_sample_1.png)
 
 Este exemplo envolve as seguintes etapas:
 
-1. Crie o seguinte schema (neste caso: **neo:news**):
+1. Crie o seguinte esquema (neste caso: **neo:news**):
 
    ```
    <srcSchema _cs="Invitation (neo)"   entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Invitation" mappingType="sql" name="news" namespace="neo" xtkschema="xtk:srcSchema">
@@ -230,7 +230,7 @@ Este exemplo envolve as seguintes etapas:
    </srcSchema>
    ```
 
-1. Crie o formulário de do tipo **[!UICONTROL Content management]** vinculado (**neo:news**)
+1. Criar o formulário de tipo **[!UICONTROL Content management]** vinculado (**neo:news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -262,7 +262,7 @@ Este exemplo envolve as seguintes etapas:
    </form>
    ```
 
-1. Crie os templates JavaScript com o conteúdo de mensagem para formatos HTML e Texto.
+1. Crie os modelos JavaScript com o conteúdo de mensagem para formatos HTML e Texto.
 
    * No nosso exemplo, para HTML:
 
@@ -352,7 +352,7 @@ Este exemplo envolve as seguintes etapas:
      %>
      ```
 
-1. Agora crie o template de publicação usado para ambos os formatos:
+1. Agora crie o modelo de publicação usado para ambos os formatos:
 
    * Para HTML:
 
@@ -362,9 +362,9 @@ Este exemplo envolve as seguintes etapas:
 
      ![](assets/d_ncs_content_sample_3.png)
 
-1. Você pode então usar esse template de conteúdo em suas entregas.
+1. Você pode então usar esse modelo de conteúdo em suas entregas.
 
-   Para obter mais informações, consulte [Uso de um template de conteúdo](using-a-content-template.md).
+   Para obter mais informações, consulte [Uso de um modelo de conteúdo](using-a-content-template.md).
 
 ## Folha de estilos XSL {#xsl-stylesheets}
 
@@ -374,9 +374,9 @@ Essa transformação é detalhada em XML em um documento conhecido como folha de
 
 ### Identificação de uma folha de estilos {#identifying-a-stylesheet}
 
-Uma folha de estilos é identificada por seu nome e namespace, como schemas e formulários. No entanto, é recomendável adicionar a extensão **.xsl** ao nome da folha de estilos.
+Uma folha de estilos é identificada por seu nome e namespace, como esquemas e formulários. No entanto, é recomendável adicionar a extensão **.xsl** ao nome da folha de estilos.
 
-A chave de identificação de uma folha de estilos é uma string formada pelo namespace e pelo nome separados por dois pontos, por exemplo: **cus:book.xls**.
+A chave de identificação de uma folha de estilos é uma cadeia de caracteres formada pelo namespace e pelo nome separados por dois pontos, por exemplo: **cus:book.xsl**.
 
 ### Estrutura de uma folha de estilos {#structure-of-a-stylesheet}
 
@@ -442,9 +442,9 @@ As instruções a seguir descrevem a configuração da folha de estilos para a f
 </xsl:template>
 ```
 
-Por padrão, o processador XSLT busca o **template** que se aplica ao nó raiz ou principal do documento XML de entrada. A construção do documento de saída começa com este **template**.
+Por padrão, o processador XSLT busca o **modelo** que se aplica ao nó raiz ou principal do documento XML de entrada. A construção do documento de saída começa com este **modelo**.
 
-Em nosso exemplo, uma página HTML é gerada no schema &quot;cus:book&quot; exibindo o nome do livro e a lista de capítulos.
+Em nosso exemplo, uma página do HTML é gerada a partir do esquema &quot;cus:book&quot; exibindo o nome do livro e a lista de capítulos.
 
 >[!NOTE]
 >
@@ -478,7 +478,7 @@ Exemplos:
 
 ### Inclusão de folha de estilos {#including-stylesheets}
 
-É possível construir uma biblioteca de templates ou variáveis a serem compartilhadas entre várias folhas de estilos. O **template** &quot;longMonth&quot;, apresentado acima, é um exemplo típico da vantagem de localizar um template remotamente em uma folha de estilos para que ele possa ser reutilizado posteriormente.
+É possível construir uma biblioteca de modelos ou variáveis a serem compartilhadas entre várias folhas de estilos. O **modelo** &quot;longMonth&quot;, apresentado acima, é um exemplo típico da vantagem de localizar um modelo remotamente em uma folha de estilos para que ele possa ser reutilizado posteriormente.
 
 A diretiva **`<xsl:include>`** indica o nome da folha de estilos a ser incluída no documento.
 
@@ -542,7 +542,7 @@ Exemplo de como usar a opção de colocação de imagem e seu uso com uma imagem
 
 Também é possível usar **[!UICONTROL Public resources]** para declarar imagens e carregá-las no servidor, dependendo das configurações de instância inseridas no assistente de implantação.
 
-Você poderá então acionar essas imagens em conteúdos. Para fazer isso, use a seguinte sintaxe no schema de gestão de conteúdo:
+Você poderá então acionar essas imagens em conteúdos. Para fazer isso, use a seguinte sintaxe no esquema de gerenciamento de conteúdo:
 
 ```
 <element label="Image" name="image" target="xtk:fileRes" type="link"/>

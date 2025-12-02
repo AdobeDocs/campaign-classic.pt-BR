@@ -4,7 +4,7 @@ title: Matriz de recursos no local, híbridos e hospedados do Campaign
 description: Saiba mais sobre as principais diferenças entre implantações hospedadas e no local
 feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 32%
@@ -52,6 +52,6 @@ O Adobe Campaign fornece a opção **Federated Data Access** (FDA) para processa
 
 * [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md)
 * [Notas de versão](../../rn/using/latest-release.md)
-* [Atualizações de Campaign Classic](../../rn/using/rn-overview.md)
+* [Atualizações do Campaign Classic](../../rn/using/rn-overview.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
-* [Versões [!DNL Gold Standard] &#x200B;](../../rn/using/gold-standard.md)
+* [Versões [!DNL Gold Standard] ](../../rn/using/gold-standard.md)

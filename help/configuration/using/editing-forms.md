@@ -3,10 +3,10 @@ product: campaign
 title: Editar formulários
 description: Editar formulários
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1707'
 ht-degree: 3%
@@ -491,7 +491,7 @@ Leia mais sobre [campos de expressão](form-structure.md#expression-field) e [co
 
 ### Validar valores
 
-Você pode usar chamadas de SOAP do JavaScript para validar dados de formulário a partir do Console. Use essas chamadas para validação complexa, por exemplo, para verificar um valor em relação a uma lista de valores autorizados. [Leia mais](form-structure.md#soap-methods).
+Você pode usar chamadas do JavaScript SOAP para validar dados de formulário a partir do Console. Use essas chamadas para validação complexa, por exemplo, para verificar um valor em relação a uma lista de valores autorizados. [Leia mais](form-structure.md#soap-methods).
 
 1. Crie uma função de validação em um arquivo JS.
 

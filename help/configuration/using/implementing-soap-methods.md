@@ -3,24 +3,24 @@ product: campaign
 title: Implementação de métodos SOAP
 description: Implementação de métodos SOAP
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '417'
 ht-degree: 4%
 
 ---
 
-# Implementar métodos de SOAP{#implementing-soap-methods}
+# Implementar métodos do SOAP{#implementing-soap-methods}
 
 
 
 ## Introdução {#introduction}
 
-É possível criar métodos de SOAP no JavaScript. Essa função simplesmente habilita processos aplicativos, pode evitar o desenvolvimento de JSPs e sua chamada nos formulários.
+É possível criar métodos do SOAP no JavaScript. Essa função simplesmente habilita processos aplicativos, pode evitar o desenvolvimento de JSPs e sua chamada nos formulários.
 
-Esses métodos de SOAP se comportam da mesma forma que os definidos nativamente na aplicação. Os mesmos atributos são suportados: static, key only e const.
+Esses métodos do SOAP se comportam da mesma maneira que os definidos nativamente no aplicativo. Os mesmos atributos são suportados: static, key only e const.
 
 ## Definir uma biblioteca de métodos {#defining-a-method-library}
 
@@ -73,7 +73,7 @@ O nome da função deve estar em conformidade com o seguinte formato:
 
 Exemplo:
 
-A seguinte função do JavaScript é a implementação do método descrito acima. Deve ser definida na entidade de tipo &quot;Código JavaScript&quot; utilizando o nome &quot;cus:test&quot;.
+A seguinte função do JavaScript é a implementação do método descrito acima. Ele deve ser definido na entidade de tipo &quot;Código JavaScript&quot; usando o nome &quot;cus:test&quot;.
 
 ```
 function nms_recipient_testLog(message)

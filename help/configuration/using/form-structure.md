@@ -3,12 +3,12 @@ product: campaign
 title: Estrutura do formulário
 description: Estrutura do formulário
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2394'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,7 @@ O documento XML do formulário de entrada deve conter o elemento raiz `<form>` c
 </form>
 ```
 
-Por padrão, um formulário é associado ao schema de dados com o mesmo nome e namespace. Para associar um formulário a um nome diferente, defina o atributo **entity-schema** do elemento `<form>` como o nome da chave do esquema. Para ilustrar a estrutura de um formulário de entrada, descrevamos uma interface usando o schema de exemplo &quot;cus:recipient&quot;:
+Por padrão, um formulário é associado ao schema de dados com o mesmo nome e namespace. Para associar um formulário a um nome diferente, defina o atributo **entity-schema** do elemento `<form>` como o nome da chave do esquema. Para ilustrar a estrutura de um formulário de entrada, vamos descrever uma interface usando o schema de exemplo &quot;cus:recipient&quot;:
 
 ```xml
 <srcSchema name="recipient" namespace="cus">
@@ -57,9 +57,9 @@ O formulário de entrada com base no schema de exemplo:
 </form>
 ```
 
-A descrição dos controles de edição começa no elemento raiz `<form>`. Um controle de edição é inserido em um elemento **`<input>`** com o atributo **xpath** contendo o caminho do campo do schema.
+A descrição dos controles de edição começa no elemento raiz `<form>`. Um controle de edição é inserido em um elemento **`<input>`** com o atributo **xpath** contendo o caminho do campo do esquema.
 
-O controle de edição se adapta automaticamente ao tipo de dados correspondente e usa o rótulo definido no schema.
+O controle de edição se adapta automaticamente ao tipo de dados correspondente e usa o rótulo definido no esquema.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Por padrão, cada campo é exibido em uma única linha e ocupa todo o espaço di
 
 ## Formatação {#formatting}
 
-O layout dos controles se parece com o layout usado em tabelas de HTML, com a possibilidade de dividir um controle em várias colunas, entrelaçar elementos ou especificar a ocupação do espaço disponível. No entanto, lembre-se de que a formatação só permite dividir a área por proporções; não é possível especificar dimensões fixas para um objeto.
+O layout dos controles é semelhante ao layout usado nas tabelas do HTML, com a possibilidade de dividir um controle em várias colunas, entrelaçar elementos ou especificar a ocupação do espaço disponível. No entanto, lembre-se de que a formatação só permite dividir a área por proporções; não é possível especificar dimensões fixas para um objeto.
 
 Para exibir os controles do exemplo acima em duas colunas:
 
@@ -378,7 +378,7 @@ Exemplo de uma tabela de relação em um esquema:
 </srcSchema>
 ```
 
-Para nosso exemplo, começamos com o formulário de entrada do schema &quot;cus:recipient&quot;. A lista deve exibir as associações com assinaturas para serviços e permitir que você adicione uma assinatura selecionando um serviço existente.
+Para nosso exemplo, começamos com o formulário de entrada do esquema &quot;cus:recipient&quot;. A lista deve exibir as associações com assinaturas para serviços e permitir que você adicione uma assinatura selecionando um serviço existente.
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
@@ -519,7 +519,7 @@ Uma caixa de seleção reflete um estado booleano (selecionado ou não). Por pad
 
 ![](assets/d_ncs_integration_form_exemple20.png)
 
-## Lista discriminada {#enumeration}
+## Enumeração {#enumeration}
 
 <!-- to be completed -->
 

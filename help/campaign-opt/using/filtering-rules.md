@@ -2,21 +2,21 @@
 product: campaign
 title: Regras de filtragem
 description: Saiba como usar regras de filtragem no Adobe Campaign
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: ht
-source-wordcount: '510'
-ht-degree: 100%
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
+source-wordcount: '509'
+ht-degree: 98%
 
 ---
 
 # Regras de filtragem{#filtering-rules}
 
-Regras de filtragem permitem definir as mensagens a serem excluídas com base nos critérios definidos em uma query. Essas regras estão vinculadas a uma targeting dimension.
+Regras de filtragem permitem definir as mensagens a serem excluídas com base nos critérios definidos em uma query. Essas regras estão vinculadas a uma dimensão de direcionamento.
 
 As regras de filtragem podem estar vinculadas a outros tipos de regras (controle, pressão etc.) em tipologias ou agrupadas em uma tipologia **Filtragem** dedicada. Para obter mais informações, consulte [Criação e uso de uma tipologia de filtragem](#creating-and-using-a-filtering-typology).
 
@@ -80,7 +80,7 @@ Você também poderá vincular regras de filtragem diretamente por meio desta gu
 >
 >Somente as regras de filtragem e de tipologia estarão disponíveis na janela de seleção.
 >
->Essas configurações podem ser definidas no template de entrega a ser aplicado automaticamente a todas as novas entregas criadas usando o template.
+>Essas configurações podem ser definidas no modelo de entrega a ser aplicado automaticamente a todas as novas entregas criadas usando o modelo.
 >
 
 ## Regras padrão de exclusão de entrega {#default-deliverability-exclusion-rules}

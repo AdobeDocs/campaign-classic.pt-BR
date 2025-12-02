@@ -3,10 +3,10 @@ product: campaign
 title: Sobre tabela de destinatário personalizada
 description: Sobre tabela de destinatário personalizada
 feature: Configuration, Custom Resources
-role: User, Data Engineer, Developer
+role: User, Developer
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 3%
@@ -32,7 +32,7 @@ Essa funcionalidade permite que o Adobe Campaign processe dados de um banco de d
 
 Esta seção descreve os pontos principais que permitem mapear tabelas existentes no Adobe Campaign e a configuração a ser aplicada para executar deliveries com base em qualquer tabela. Por fim, descreve como fornecer aos usuários interfaces de consulta tão práticas quanto aquelas disponíveis com a tabela de recipient integrada. Para entender o material apresentado nesta seção, é necessário um bom conhecimento dos princípios de design de tela e esquema.
 
-## Recommendations e limitações {#recommendations-and-limitations}
+## Recomendações e limitações {#recommendations-and-limitations}
 
 O uso de uma tabela de recipient personalizada tem as seguintes limitações:
 

@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 98%
+source-wordcount: '922'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ Primeiro, para que o usuário possa realizar operações em um banco de dados ex
 
 1. Salve o direito nomeado e o vincule ao usuário escolhido a partir do nó **[!UICONTROL Administration > Access Management > Operators]** do Adobe Campaign Explorer.
 
-Em seguida, para processar os dados contidos em um banco de dados externo, o usuário do Adobe Campaign deve ter pelo menos direitos &quot;Write&quot; no banco de dados. Assim, ele poderá criar worktables. Eles são excluídos automaticamente pelo Adobe Campaign.
+Em seguida, para processar os dados contidos em um banco de dados externo, o usuário do Adobe Campaign deve ter pelo menos direitos &quot;Write&quot; no banco de dados. Assim, ele poderá criar tabelas de trabalho. Eles são excluídos automaticamente pelo Adobe Campaign.
 
 Em geral, são necessários os seguintes direitos:
 
@@ -75,5 +75,5 @@ O administrador do banco de dados precisa combinar esses direitos com os direito
 | **Monitoramento de execuções** | Não é necessário nenhum privilégio para usar a instrução EXPLICAR | Privilégio SELECIONAR | Somente um administrador do sistema pode executar o sp_showplan | Não é necessário nenhum privilégio para usar a instrução EXPLICAR | Não é necessário nenhum privilégio para usar a instrução EXPLICAR |
 | **Gravação de dados** | Privilégios INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR | Permissões INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR |
 | **Carregamento de dados em tabelas** | Privilégios SELECIONAR e INSERIR para usar as instruções COPIAR PARA e COPIAR DE respectivamente | Privilégio ARQUIVAR | Seja o proprietário da tabela ou da permissão ALTERAR. Dependendo da opção -gl, CARREGAR TABELA só pode ser executado se o usuário tiver a autoridade do DBA | Privilégios SELECIONAR e INSERIR | Privilégios SELECIONAR e INSERIR |
-| **Acesso aos dados do cliente** | Privilégio SELECIONAR | Permissão SELECIONAR | Privilégio SELECIONAR | Privilégio SELECIONAR |
+| **Acesso aos dados do cliente** | Privilégio SELECIONAR | Permissão SELECIONAR | Privilégio SELECIONAR | Privilégio SELECIONAR |  |
 | **Acesso aos metadados** | Privilégio MOSTRAR | Privilégio SELECIONAR | Não é necessária nenhuma permissão para usar a instrução DESCREVER | Não é necessário nenhum privilégio para usar o comando &quot;\d table&quot; | Não é necessário nenhum privilégio para usar o comando MOSTRAR |

@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Desduplicação
-description: Saiba mais sobre a atividade de workflow de desduplicação
+description: Saiba mais sobre a atividade de fluxo de trabalho de desduplicação
 feature: Workflows, Targeting Activity
 hide: true
 hidefromtoc: true
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '1115'
-ht-degree: 100%
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
+source-wordcount: '1114'
+ht-degree: 97%
 
 ---
 
@@ -17,20 +17,20 @@ ht-degree: 100%
 
 
 
-A desduplicação exclui duplicatas dos resultados das atividades de entrada. A desduplicação pode ser executada no endereço de e-mail, número de telefone ou outro campo.
+A desduplicação exclui duplicados dos resultados das atividades de entrada. A desduplicação pode ser executada no endereço de e-mail, número de telefone ou outro campo.
 
 A atividade **[!UICONTROL Deduplication]** é usada para remover linhas duplicadas de um conjunto de dados. Por exemplo, os registros abaixo podem ser considerados duplicados, pois têm o mesmo endereço de email e o mesmo celular e/ou telefone residencial.
 
 | Data da última modificação | Nome | Sobrenome | Email | Telefone celular | Telefone |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 03/02/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 | 19/05/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 22/07/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
-A atividade **[!UICONTROL Deduplication]** tem a capacidade de manter uma linha inteira como o registro exclusivo após a identificação de duplicatas. Por exemplo, no caso de uso acima, se a atividade estiver configurada para manter somente o registro com o **[!UICONTROL Date]** mais antigo, o resultado será:
+A atividade **[!UICONTROL Deduplication]** tem a capacidade de manter uma linha inteira como o registro exclusivo após a identificação de duplicados. Por exemplo, no caso de uso acima, se a atividade estiver configurada para manter somente o registro com o **[!UICONTROL Date]** mais antigo, o resultado será:
 
 | Data | Nome | Sobrenome | Email | Telefone celular | Telefone |
------|----------|------------|-------|--------------|------
+|-----|----------|------------|-------|--------------|------|
 | 03/02/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
 O registro principal selecionado transportará os dados sem mesclar os dados de campo com outros dados relevantes nas linhas duplicadas.
@@ -38,7 +38,7 @@ O registro principal selecionado transportará os dados sem mesclar os dados de 
 Complemento:
 
 | Data | Nome | Sobrenome | Email | Telefone celular | Telefone |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 19/05/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 22/07/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
@@ -48,8 +48,8 @@ Durante a desduplicação, os fluxos de entrada são processados separadamente. 
 
 Esse problema precisa ser resolvido da seguinte maneira:
 
-* Crie uma atividade **Union** para unificar cada fluxo de entrada.
-* Crie uma atividade **Deduplication** após a atividade **Union**.
+* Crie uma atividade **União** para unificar cada fluxo de entrada.
+* Crie uma atividade **Desduplicação** após a atividade **União**.
 
 ![](assets/dedup_bonnepratique.png)
 
@@ -61,7 +61,7 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
 
    ![](assets/s_user_segmentation_dedup_param.png)
 
-1. Selecione o tipo de target para essa atividade (por padrão, a desduplicação vinculada aos destinatários) e o critério a ser usado, isto é, o campo cujos valores idênticos permitem identificar duplicatas.
+1. Selecione o tipo de target para essa atividade (por padrão, a desduplicação está vinculada aos destinatários) e o critério a ser usado, isto é, o campo cujos valores idênticos permitem identificar duplicados.
 
    >[!NOTE]
    >
@@ -75,13 +75,13 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
-1. Na lista suspensa, selecione o método de desduplicação a ser usado e insira o número de duplicatas a serem mantidas.
+1. Na lista suspensa, selecione o método de desduplicação a ser usado e insira o número de duplicados a serem mantidos.
 
    ![](assets/s_user_segmentation_dedup_param4.png)
 
    Os métodos seguintes estão disponíveis:
 
-   * **[!UICONTROL Choose for me]**: seleciona aleatoriamente o registro a ser mantido fora das duplicatas.
+   * **[!UICONTROL Choose for me]**: seleciona aleatoriamente o registro que será mantido fora dos duplicados.
    * **[!UICONTROL Following a list of values]**: permite definir uma prioridade de valor para um ou mais campos. Para definir os valores, selecione um campo ou crie uma expressão e adicione o(s) valor(es) à tabela apropriada. Para definir um novo campo, clique no botão **[!UICONTROL Add]** localizado acima da lista de valores.
 
      ![](assets/s_user_segmentation_dedup_param5.png)
@@ -102,39 +102,39 @@ Para configurar uma desduplicação, insira o rótulo, o método e os critérios
 
    A seção intermediária da janela resume a configuração definida.
 
-   Na seção inferior da janela do editor de atividades, é possível modificar o rótulo da transição de saída do objeto gráfico e inserir um código de segmento que será associado ao resultado da atividade. Esse código pode ser usado posteriormente como um critério de target.
+   Na seção inferior da janela do editor de atividades, é possível modificar o rótulo da transição de saída do objeto gráfico e inserir um código de segmento que será associado ao resultado da atividade. Esse código pode ser usado posteriormente como um critério de direcionamento.
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-1. Marque a opção **[!UICONTROL Generate complement]** se desejar explorar a população restante. O complemento consiste de todas as duplicatas. Uma transição adicional será adicionada à atividade, da seguinte maneira:
+1. Marque a opção **[!UICONTROL Generate complement]** se desejar explorar a população restante. O complemento consiste de todos os duplicados. Uma transição adicional será adicionada à atividade, da seguinte maneira:
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## Exemplo: identificar as duplicatas antes de uma entrega {#example--identify-the-duplicates-before-a-delivery}
+## Exemplo: identificar os duplicados antes de uma entrega {#example--identify-the-duplicates-before-a-delivery}
 
 No exemplo a seguir, a desduplicação lida com a união entre três queries.
 
-O objetivo do workflow é definir o target de uma entrega excluindo duplicatas para evitar o envio para o mesmo destinatário várias vezes.
+O objetivo do fluxo de trabalho é definir o target de uma entrega excluindo duplicados para evitar o envio para o mesmo destinatário várias vezes.
 
-As duplicatas identificadas também serão integradas em uma lista de duplicatas dedicada que podem ser reutilizadas se necessário.
+Os duplicados identificados também serão integrados em uma lista de duplicados dedicada que podem ser reutilizados se necessário.
 
 ![](assets/deduplication_example.png)
 
-1. Adicione e vincule as várias atividades necessárias para que o workflow funcione conforme mostrado acima.
+1. Adicione e vincule as várias atividades necessárias para que o fluxo de trabalho funcione conforme mostrado acima.
 
-   A atividade Union é usada aqui para &quot;unificar&quot; as três queries em uma única transição. Assim, a desduplicação não funcionará para cada query individualmente, mas para toda a query. Para obter mais informações sobre este assunto, consulte [Melhores práticas](#best-practices).
+   A atividade União é usada aqui para &quot;unificar&quot; as três consultas em uma única transição. Assim, a desduplicação não funcionará para cada query individualmente, mas para toda a query. Para obter mais informações sobre este assunto, consulte [Melhores práticas](#best-practices).
 
 1. Abra a atividade de desduplicação e clique no link **[!UICONTROL Edit configuration...]** para definir o modo de desduplicação.
 1. Na nova janela, selecione **[!UICONTROL Database schema]**.
 1. Selecione **Recipients** como dimensões de filtragem e direcionamento.
-1. Selecione o campo de ID para as duplicatas de **[!UICONTROL Email]** a fim de enviar a entrega somente uma vez para cada endereço de email, depois clique em **[!UICONTROL Next]**. 
+1. Selecione o campo de ID para os duplicados de **[!UICONTROL Email]** a fim de enviar a entrega somente uma vez para cada endereço de email, depois clique em **[!UICONTROL Next]**. 
 
    Se desejar basear as IDs duplicadas em um campo específico, selecione **[!UICONTROL Other]** para acessar a lista de campos disponíveis.
 
 1. Escolha manter apenas uma entrada quando o mesmo endereço de email for identificado para vários destinatários.
-1. Selecione o modo de desduplicação **[!UICONTROL Choose for me]** para que os registros salvos no caso de duplicatas identificadas sejam escolhidos aleatoriamente, depois clique em **[!UICONTROL Finish]**.
+1. Selecione o modo de desduplicação **[!UICONTROL Choose for me]** para que os registros salvos no caso de duplicados identificados sejam escolhidos aleatoriamente, depois clique em **[!UICONTROL Finish]**.
 
-Ao executar o workflow, todos os destinatários identificados como duplicatas são excluídos do resultado (e, portanto, da entrega) e adicionada à lista de duplicatas. Essa lista pode ser usada novamente em vez de ter que reidentificar as duplicatas.
+Ao executar o fluxo de trabalho, todos os destinatários identificados como duplicados são excluídos do resultado (e, portanto, da entrega) e adicionada à lista de duplicados. Essa lista pode ser usada novamente em vez de ter que tornar a identificar os duplicados.
 
 ## Mesclar campos em um único registro de dados {#merging-fields-into-single-record}
 
@@ -165,16 +165,16 @@ Para fazer isso, siga estes passos:
 ## Parâmetros de entrada {#input-parameters}
 
 * tableName
-* schema
+* esquema
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
 ## Parâmetros de saída {#output-parameters}
 
 * tableName
-* schema
+* esquema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da desduplicação. **[!UICONTROL tableName]** é o nome da tabela que salva os identificadores de direcionamento, **[!UICONTROL schema]** é o esquema da população (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da desduplicação. **[!UICONTROL tableName]** é o nome da tabela que salva os identificadores de destino, **[!UICONTROL schema]** é o esquema da população (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.

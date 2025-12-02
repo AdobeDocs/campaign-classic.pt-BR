@@ -4,24 +4,24 @@ title: Uso de esquemas de dados no Campaign
 description: Saiba como usar esquemas de dados no Campaign
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Data Model
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 100%
+source-wordcount: '566'
+ht-degree: 98%
 
 ---
 
 # Uso de esquemas de dados no Campaign{#data-schemas}
 
-Abaixo estão alguns princípios gerais sobre o uso de schemas de dados no Adobe Campaign.
+Abaixo estão alguns princípios gerais sobre o uso de esquemas de dados no Adobe Campaign.
 
-Para saber mais sobre como criar e configurar schemas de dados no Adobe Campaign, consulte [esta seção](../../configuration/using/about-schema-edition.md).
+Para saber mais sobre como criar e configurar esquemas de dados no Adobe Campaign, consulte [esta seção](../../configuration/using/about-schema-edition.md).
 
 ## Estrutura de esquema {#schema-structure}
 
-O documento XML de um schema de dados deve conter o **`<srcschema>`** elemento raiz com os atributos **name** e **namespace** para preencher o nome e o namespace do schema.
+O documento XML de um esquema de dados deve conter o **`<srcschema>`** elemento raiz com os atributos **name** e **namespace** para preencher o nome e o namespace do esquema.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -29,17 +29,17 @@ O documento XML de um schema de dados deve conter o **`<srcschema>`** elemento r
 </srcSchema>
 ```
 
-O ponto de entrada do schema é seu elemento principal. É fácil identificar porque ele tem o mesmo nome do schema e deve se originar do elemento raiz. A descrição do conteúdo começa com esse elemento.
+O ponto de entrada do esquema é seu elemento principal. É fácil identificar porque ele tem o mesmo nome do esquema e deve ser filho do elemento raiz. A descrição do conteúdo começa com esse elemento.
 
-Em um schema de gestão de conteúdo, o elemento principal é representado pela seguinte linha:
+Em um esquema de gerenciamento de conteúdo, o elemento principal é representado pela seguinte linha:
 
 ```
 <element name="book" template="ncm:content" xmlChildren="true">
 ```
 
-O atributo **template** digitado no elemento principal permite estender o schema com propriedades genéricas para todas as definições de conteúdo, como o nome, a data de criação, o autor, a string associada, etc.
+O atributo **modelo** digitado no elemento principal permite estender o esquema com propriedades genéricas para todas as definições de conteúdo, como o nome, a data de criação, o autor, a string associada, etc.
 
-Essas propriedades são descritas no schema **ncm:content**.
+Essas propriedades são descritas no esquema **ncm:content**.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Essas propriedades são descritas no schema **ncm:content**.
 
 >[!CAUTION]
 >
->Ao criar um novo schema ou durante uma extensão de schema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o schema.
+>Ao criar um novo esquema ou durante uma extensão de esquema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o esquema.
 
 ## Tipos de dados {#data-types}
 
@@ -71,9 +71,9 @@ Este é um exemplo de um esquema de gerenciamento de conteúdo com os tipos pree
 
 ## Propriedades {#properties}
 
-Várias propriedades podem ser utilizadas para enriquecer os elementos **`<element>`** e **`<attribute>`** do schema de dados.
+Várias propriedades podem ser utilizadas para enriquecer os elementos **`<element>`** e **`<attribute>`** do esquema de dados.
 
-As principais propriedades utilizadas na gestão de conteúdo são as seguintes:
+As principais propriedades utilizadas no gerenciamento de conteúdo são as seguintes:
 
 * **label**: descrição curta,
 * **desc**: descrição longa,
@@ -81,7 +81,7 @@ As principais propriedades utilizadas na gestão de conteúdo são as seguintes:
 * **userEnum**: enumeração livre para armazenar e exibir os valores inseridos por meio desse campo,
 * **enum**: enumeração fixa usada quando a lista de valores possíveis é conhecida antecipadamente.
 
-Este é o nosso exemplo de schema com as propriedades preenchidas:
+Este é o nosso exemplo de esquema com as propriedades preenchidas:
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -124,11 +124,11 @@ No nosso exemplo, os itens **`<chapter>`** e **`<page>`** são elementos de cole
 
 ## Referência de elemento {#element-referencing}
 
-A referência de elemento é usado em muitos schemas de conteúdo. Ela permite fatorar a definição de um elemento **`<element>`** para que ele possa ser referenciado em outros elementos com a mesma estrutura.
+A referência de elemento é usado em muitos esquemas de conteúdo. Ela permite fatorar a definição de um elemento **`<element>`** para que ele possa ser referenciado em outros elementos com a mesma estrutura.
 
 O atributo **ref** no elemento a ser referenciado deve ser preenchido com o caminho (XPath) do elemento de referência.
 
-**Exemplo**: adição de uma seção do **Appendix** com a mesma estrutura do elemento **`<chapter>`** do nosso schema de exemplo.
+**Exemplo**: adição de uma seção do **Appendix** com a mesma estrutura do elemento **`<chapter>`** do nosso esquema de exemplo.
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -154,7 +154,7 @@ A estrutura do capítulo é movida para o elemento com o nome &quot;seção&quot
 
 Um **Cálculo de string** é uma expressão XPath usada para criar uma string representando uma instância de conteúdo.
 
-Aqui está nosso schema de exemplo com seu **Cálculo de string**:
+Aqui está nosso esquema de exemplo com seu **Cálculo de string**:
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -167,12 +167,12 @@ Aqui está nosso schema de exemplo com seu **Cálculo de string**:
 
 ## Edição de esquemas {#editing-schemas}
 
-O campo de edição permite a inserção do conteúdo XML do schema de origem:
+O campo de edição permite a inserção do conteúdo XML do esquema de origem:
 
 ![](assets/d_ncs_integration_schema_edition.png)
 
-Quando o schema de origem é salvo, a geração do schema estendido é iniciada automaticamente.
+Quando o esquema de origem é salvo, a geração do esquema estendido é iniciada automaticamente.
 
 >[!NOTE]
 >
->O controle de edição **Name** permite a inserção da chave do schema, que consiste no nome e no namespace. Os atributos **name** e **namespace** do elemento raiz do schema são atualizados automaticamente no campo de edição XML.
+>O controle de edição **Name** permite a inserção da chave do esquema, que consiste no nome e no namespace. Os atributos **name** e **namespace** do elemento raiz do esquema são atualizados automaticamente no campo de edição XML.

@@ -4,17 +4,17 @@ title: Sobre importações e exportações genéricas
 description: Saiba mais sobre importações e exportações genéricas
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Overview
-role: User, Data Architect
+role: User, Developer
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
-workflow-type: ht
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 100%
 
 ---
 
-# Introdução a trabalhos de importação e exportação {#about-generic-imports-exports}
+# Introdução a processos de importação e exportação {#about-generic-imports-exports}
 
 
 
@@ -25,6 +25,6 @@ As importações e exportações genéricas são gerenciadas no nó **[!UICONTRO
 As etapas para executar operações de importação e exportação genéricas são as seguintes:
 
 1. [Criar um modelo de importação ou exportação](../../platform/using/creating-import-export-templates.md) (opcional).
-1. [Criar um trabalho de importação ou exportação](../../platform/using/creating-import-export-jobs.md).
-1. Configure e execute o trabalho de [importação](../../platform/using/executing-import-jobs.md) ou [exportação](../../platform/using/executing-export-jobs.md).
-1. [Monitore](../../platform/using/monitoring-jobs-execution.md) a execução do trabalho.
+1. [Criar um processo de importação ou exportação](../../platform/using/creating-import-export-jobs.md).
+1. Configure e execute o processo de [importação](../../platform/using/executing-import-jobs.md) ou [exportação](../../platform/using/executing-export-jobs.md).
+1. [Monitore](../../platform/using/monitoring-jobs-execution.md) a execução do processo.

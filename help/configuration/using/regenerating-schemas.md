@@ -3,9 +3,9 @@ product: campaign
 title: Gerar esquemas novamente
 description: Saiba como regenerar esquemas do Campaign
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Gerar esquemas novamente{#regenerating-schemas}
 
-Ao modificar um esquema e salvar as modificações, o esquema estendido é gerado automaticamente. No entanto, talvez seja necessário gerar esquemas novamente manualmente para aplicar modificações. Para fazer isso:
+Ao modificar um esquema e salvar as modificações, o esquema estendido é gerado automaticamente. No entanto, talvez seja necessário gerar esquemas novamente manualmente para aplicar modificações. Para isso:
 
 1. Selecione os esquemas que precisam ser gerados novamente.
 1. Clique com o botão direito do mouse e escolha **[!UICONTROL Actions > Regenerate selected schemas...]**.

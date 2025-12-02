@@ -3,11 +3,11 @@ product: campaign
 title: Sobre a edição de esquema
 description: Introdução à edição de esquema
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1005'
 ht-degree: 9%
 
 ---
@@ -20,7 +20,7 @@ A Adobe Campaign emprega esquemas de dados para:
 * Definir links entre os diferentes objetos de dados no aplicativo Campaign.
 * Definir e descrever os campos individuais incluídos em cada objeto.
 
-Para entender melhor as tabelas integradas do Campaign e suas interações, consulte [esta seção](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/data-model/about-data-model.html?lang=pt-BR).
+Para entender melhor as tabelas integradas do Campaign e suas interações, consulte [esta seção](https://helpx.adobe.com/br/campaign/kb/acc-datamodel.html).
 
 ## Extensão ou criação de esquemas {#extending-or-creating-schemas}
 
@@ -106,7 +106,7 @@ Neste exemplo, em vez de permitir que o atributo **@autopk** crie uma chave prim
 
 >[!IMPORTANT]
 >
->Ao criar um novo schema ou durante uma extensão de schema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o schema.
+>Ao criar um novo esquema ou durante uma extensão de esquema, você precisa manter o mesmo valor de sequência da chave primária (@pkSequence) para todo o esquema.
 
 Para saber mais sobre chaves, consulte a seção [Gerenciamento de chaves](../../configuration/using/database-mapping.md#management-of-keys).
 

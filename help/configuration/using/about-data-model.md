@@ -3,9 +3,9 @@ product: campaign
 title: Introdução ao modelo de dados do Campaign Classic
 description: Saiba como estender o modelo de dados, editar esquemas, usar APIs e muito mais no Campaign
 feature: Data Model, Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 6%
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # Introdução ao modelo de dados do Campaign{#about-data-model}
 
-O modelo de dados conceituais do banco de dados do Adobe Campaign consiste em um conjunto de tabelas incorporadas e sua interação. As principais tabelas e conceitos estão listados nesta página.
+O modelo de dados conceituais do banco de dados do Adobe Campaign consiste em um conjunto de tabelas integradas e sua interação. As principais tabelas e conceitos estão listados nesta página.
 
 ## Visão geral {#data-model-overview}
 
@@ -108,13 +108,13 @@ Os benefícios de usar uma tabela de Recipient personalizada são os seguintes:
 
 Saiba mais sobre o modelo de dados do Campaign nestas seções:
 
-* **Descrição das tabelas principais** - Para obter mais informações sobre a descrição do modelo de dados de Campaign Classic padrão, consulte [esta seção](../../configuration/using/data-model-description.md).
+* **Descrição das tabelas principais** - Para obter mais informações sobre a descrição do modelo de dados padrão do Campaign Classic, consulte [esta seção](../../configuration/using/data-model-description.md).
 
 * **Descrição completa de cada tabela** - Para acessar a descrição completa de cada tabela, vá para **[!UICONTROL Admin > Configuration > Data schemas]**, selecione um recurso da lista e clique na guia **[!UICONTROL Documentation]**.
 
   ![](assets/data-model_documentation-tab.png)
 
 
-* **Esquemas de campanha** - A estrutura física e lógica dos dados transportados no aplicativo está descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de schema. Para obter mais informações sobre esquemas do Adobe Campaign, leia [esta seção](../../configuration/using/about-schema-reference.md).
+* **Esquemas de campanha** - A estrutura física e lógica dos dados transportados no aplicativo está descrita em XML. Ela obedece a uma gramática específica do Adobe Campaign, chamada de esquema. Para obter mais informações sobre esquemas do Adobe Campaign, leia [esta seção](../../configuration/using/about-schema-reference.md).
 
 * **Práticas recomendadas do modelo de dados** - Saiba mais sobre a arquitetura do modelo de dados do Campaign e as práticas recomendadas relacionadas, em [esta seção](../../configuration/using/data-model-best-practices.md#data-model-architecture).

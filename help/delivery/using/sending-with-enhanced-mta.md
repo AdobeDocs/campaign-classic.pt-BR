@@ -5,10 +5,10 @@ description: Saiba mais sobre o escopo e as especificidades do envio de emails c
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1380'
-ht-degree: 100%
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
+source-wordcount: '1379'
+ht-degree: 99%
 
 ---
 
@@ -161,6 +161,5 @@ A tabela abaixo mostra as diferentes etapas no processo de envio com os KPIs cor
 | A mensagem foi transmitida com êxito do Campaign para o MTA aprimorado | A porcentagem de **[!UICONTROL Success]** começa em 100% | Enviado |
 | Mensagens com rejeição permanente são relatadas de volta do MTA aprimorado | A porcentagem de **[!UICONTROL Success]** é reduzida de maneira apropriada | Com falha |
 | Mensagens com rejeição temporária são relatadas de volta do MTA aprimorado | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Enviado |
-| Tentativas de mensagens com rejeição temporária são bem-sucedidas | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Enviado | A porcentagem de **[!UICONTROL Success]** é aumentada de maneira apropriada | Enviado |
+| Tentativas de mensagens com rejeição temporária são bem-sucedidas | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** \|  **[!UICONTROL Success]** porcentagem aumenta de acordo | Enviado |
 | Falha nas tentativas de mensagens com rejeição temporária | A porcentagem de **[!UICONTROL Success]** é reduzida de maneira apropriada | Com falha |
-

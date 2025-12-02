@@ -3,11 +3,11 @@ product: campaign
 title: APIs direcionadas por empresas
 description: APIs direcionadas por empresas
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '618'
 ht-degree: 2%
 
 ---
@@ -27,17 +27,17 @@ As APIs de negócios são específicas para cada tipo de objeto. Elas têm efeit
    * início de um workflow,
    * verificação de processos etc.
 
-     Consulte [Métodos SOAP no JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+     Consulte [Métodos do SOAP no JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
-* Gestão de conteúdo
-* Gerenciamento de assinatura, consulte [Assinar (nms:subscription)](#subscribe--nms-subscription-) e [Cancelar assinatura (nms:subscription)](#unsubscribe--nms-subscription-).
+* Gerenciamento de conteúdo
+* Gerenciamento de assinaturas, consulte [Assinar (nms:subscription)](#subscribe--nms-subscription-) e [Cancelar assinatura (nms:subscription)](#unsubscribe--nms-subscription-).
 * Processos de dados: importações, exportações.
 
 Esta seção detalha o uso dos serviços &quot;Assinar&quot;, &quot;Cancelar assinatura&quot; e &quot;Enviar entrega&quot;.
 
 >[!IMPORTANT]
 >
->A [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) contém informações adicionais sobre chamadas SOAP e uso de Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
+>A [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
 
 ## Assinar (nms:subscription) {#subscribe--nms-subscription-}
 
@@ -47,10 +47,10 @@ Os seguintes parâmetros são necessários para chamar o serviço:
 
 * uma autenticação,
 * nome interno do serviço de assinatura,
-* um documento XML que contém as informações do recipient (do schema &quot;nms:recipient&quot;),
+* um documento XML que contém as informações do destinatário (do esquema &quot;nms:recipient&quot;),
 * um booleano para criação de recipients, se ainda não houver um.
 
-Descrição do método &quot;subscribe&quot; no schema &quot;nms:subscription&quot;:
+Descrição do método &quot;subscribe&quot; no esquema &quot;nms:subscription&quot;:
 
 ```
 <method name="Subscribe" static="true">
@@ -62,7 +62,7 @@ Descrição do método &quot;subscribe&quot; no schema &quot;nms:subscription&qu
 </method>
 ```
 
-A definição da chave de reconciliação deve ser inserida por meio do atributo _&#x200B;**key** no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
+A definição da chave de reconciliação deve ser inserida por meio do atributo _**key** no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
 
 Esta chamada não retorna dados, exceto erros.
 
@@ -80,7 +80,7 @@ Atualização do recipient e da assinatura.
 <recipient _key="email, [folder-id]" email= "john.doe@adobe.com" folder-id="1305" firstName="John" lastName="Doe"/>
 ```
 
-### Exemplo de mensagens de SOAP {#example-of-soap-messages}
+### Exemplo de mensagens do SOAP {#example-of-soap-messages}
 
 * Consulta:
 
@@ -120,9 +120,9 @@ Os seguintes parâmetros são necessários para chamar o serviço:
 
 * uma autenticação,
 * Nome interno do serviço do qual cancelar a assinatura,
-* um documento XML que contém as informações do recipient (do schema &quot;nms:recipient&quot;),
+* um documento XML que contém as informações do destinatário (do esquema &quot;nms:recipient&quot;),
 
-Descrição do método &quot;Unsubscribe&quot; no schema &quot;nms:subscription&quot;:
+Descrição do método &quot;Unsubscribe&quot; no esquema &quot;nms:subscription&quot;:
 
 ```
 <method name="Unsubscribe" static="true">
@@ -143,7 +143,7 @@ Se o recipient não estiver presente no banco de dados ou não estiver inscrito 
 
 Esta chamada não retorna dados, exceto erros.
 
-### Exemplo de mensagens de SOAP {#example-of-soap-messages-1}
+### Exemplo de mensagens do SOAP {#example-of-soap-messages-1}
 
 Consulta:
 
@@ -198,7 +198,7 @@ Descrição do método no schema:
 
 Um template do delivery deve ser criado no console do cliente do Adobe Campaign. Ele contém os parâmetros comuns a todos os deliveries (endereço do remetente ou duração da validade da mensagem).
 
-O documento XML de entrada é um fragmento de template de delivery que obedece à estrutura do schema &quot;nms:delivery&quot;. Ele conterá todos os dados adicionais que não puderam ser definidos estaticamente no template do delivery (por exemplo, lista de recipients ao target).
+O documento XML de entrada é um fragmento de modelo de entrega que obedece à estrutura do esquema &quot;nms:delivery&quot;. Ele conterá todos os dados adicionais que não puderam ser definidos estaticamente no template do delivery (por exemplo, lista de recipients ao target).
 
 Esta chamada não retorna dados, exceto erros.
 

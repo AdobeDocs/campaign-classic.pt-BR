@@ -3,12 +3,12 @@ product: campaign
 title: Descrição do modelo de dados do Adobe Campaign Classic
 description: Este documento descreve o modelo de dados do Adobe Campaign
 feature: Data Model
-role: Data Engineer, Developer
+role: Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '2354'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -113,7 +113,7 @@ Este conjunto de tabelas está vinculado ao módulo **Delivery**, que permite mo
 
 ## Gerenciamento de campanhas {#campaign-management}
 
-Este conjunto de tabelas está vinculado ao módulo **Campanhas de marketing**, que permite definir, otimizar, executar e analisar campanhas de comunicação e marketing. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=pt-BR){target=_blank}.
+Este conjunto de tabelas está vinculado ao módulo **Campanhas de marketing**, que permite definir, otimizar, executar e analisar campanhas de comunicação e marketing. Para mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=pt-BR){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 

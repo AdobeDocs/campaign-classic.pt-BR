@@ -3,11 +3,11 @@ product: campaign
 title: Esquemas de filtragem
 description: Esquemas de filtragem
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
@@ -60,15 +60,15 @@ Esses filtros são inseridos no nível **element** principal dos esquemas e, com
 >
 >Se nenhum filtro for especificado, todos os operadores terão permissões de leitura e gravação no esquema.
 
-## Esquemas integrados do Protect {#protecting-built-in-schemas}
+## Proteger esquemas integrados {#protecting-built-in-schemas}
 
 Por padrão, os esquemas integrados só podem ser acessados com permissões WRITE para operadores com direitos ADMINISTRATION:
 
-* ncm:publicação
+* ncm:publishing
 * nl:monitoring
 * nms:calendar
 * xtk:builder
-* xtk:conexões
+* xtk:connections
 * xtk:dbInit
 * xtk:entityBackupNew
 * xtk:entityBackupOriginal
@@ -105,7 +105,7 @@ Você ainda pode modificar os filtros de sistema dos esquemas prontos para uso q
 
 >[!NOTE]
 >
->No entanto, o Adobe recomenda que você não modifique os parâmetros padrão para garantir a segurança ideal.
+>No entanto, a Adobe recomenda que você não modifique os parâmetros padrão para garantir a segurança ideal.
 
 1. Crie uma extensão para o esquema relacionado ou abra uma extensão existente.
 1. Adicione um elemento filho **`<sysfilter name="<filter name>" _operation="delete"/>`** no elemento principal para excluir a aplicação do filtro sob o mesmo no esquema de origem.

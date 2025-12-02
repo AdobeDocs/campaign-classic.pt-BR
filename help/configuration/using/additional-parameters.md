@@ -3,11 +3,11 @@ product: campaign
 title: Parâmetros adicionais de rastreamento Web
 description: Saiba mais sobre parâmetros de rastreamento Web
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Sua plataforma Adobe Campaign oferece dois parâmetros de rastreamento Web do ti
 * **amount**: representa a quantidade de uma transação,
 * **artigo**: representa o número de itens em uma transação.
 
-Esses parâmetros são definidos no esquema **nms:webTrackingLog** e são alguns dos indicadores vistos nos relatórios.
+Esses parâmetros estão definidos no esquema **nms:webTrackingLog** e são alguns dos indicadores vistos nos relatórios.
 
 Para definir parâmetros adicionais, é necessário estender esse schema.
 

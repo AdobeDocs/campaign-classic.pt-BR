@@ -3,9 +3,9 @@ product: campaign
 title: Atualização da estrutura do banco de dados
 description: Atualização da estrutura do banco de dados
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: 6c1e061b-8636-4285-8d83-97474544d252
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 8%

@@ -3,12 +3,12 @@ product: campaign
 title: Configurar a árvore de navegação do explorador do Campaign
 feature: Application Settings
 description: Saiba como configurar a árvore de navegação do Campaign Explorer
-role: Data Engineer, Developer
+role: Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1183'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

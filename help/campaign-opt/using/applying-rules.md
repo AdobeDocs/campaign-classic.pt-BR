@@ -2,13 +2,13 @@
 product: campaign
 title: Aplicar regras de tipologia
 description: Saiba como aplicar regras de tipologia
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: ht
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Você poderá restringir o campo de aplicação de uma regra de acordo com suas 
 
 Para definir as condições de aplicação de uma regra, clique no link **[!UICONTROL Edit the rule application conditions...]** na guia **[!UICONTROL General]**.
 
-Em seguida, use o editor de query para definir as condições de filtragem. No exemplo a seguir, a regra de capacidade apresenta apenas as entregas com a palavra &#39;oferta&#39; em seu rótulo ou entregas criadas antes de 1º de abril de 2013.
+Em seguida, use o editor de consultas para definir as condições de filtragem. No exemplo a seguir, a regra de capacidade apresenta apenas as entregas com a palavra &#39;oferta&#39; em seu rótulo ou entregas criadas antes de 1º de abril de 2013.
 
 ![](assets/campaign_opt_create_capacity_criterion.png)
 
@@ -57,11 +57,11 @@ Em seguida, use o editor de query para definir as condições de filtragem. No e
 
 ## Ajustar a frequência de cálculo {#adjusting-calculation-frequency}
 
-As arbitragens são reexecutadas automaticamente todas as noites através do workflow de limpeza de banco de dados. No entanto, os valores podem ser salvos além desse período.
+As arbitragens são reexecutadas automaticamente todas as noites através do fluxo de trabalho de limpeza de banco de dados. No entanto, os valores podem ser salvos além desse período.
 
 De fato, alguns cálculos usam valores que não são alterados diariamente. Portanto, seria irrelevante para os dados recalcular todos os dias e sobrecarregar o banco de dados para nada. Por exemplo, se um processo enriquece o banco de dados de marketing com pontuações do cliente e informações de compra em uma base semanal, os dados baseados nesses valores não precisarão serem recalculados todos os dias.
 
-Para fazer isso, o campo **[!UICONTROL Frequency]** da guia **[!UICONTROL General]** permite a definição de um período máximo durante o qual o targeting é salvo. Por padrão, o valor **0** indica que o cálculo permanece válido até a próxima execução de uma nova arbitragem diária.
+Para fazer isso, o campo **[!UICONTROL Frequency]** da guia **[!UICONTROL General]** permite a definição de um período máximo durante o qual o direcionamento é salvo. Por padrão, o valor **0** indica que o cálculo permanece válido até a próxima execução de uma nova arbitragem diária.
 
 Para salvar os resultados além deste período, insira um valor maior do que 12 no campo **[!UICONTROL Frequency]**: depois que esse período expirar, todas as regras serão reaplicadas.
 
@@ -112,7 +112,7 @@ Os valores possíveis são:
 
   Se é necessário saber o target para aplicar a regra de controle, selecione essa fase.
 
-  Por exemplo, a regra de controle **[!UICONTROL Check proof size]** se aplica após cada estágio do targeting: essa regra impede a personalização da mensagem se houver muitos destinatários de prova.
+  Por exemplo, a regra de controle **[!UICONTROL Check proof size]** se aplica após cada estágio do direcionamento: essa regra impede a personalização da mensagem se houver muitos destinatários de prova.
 
 * **[!UICONTROL At the start of personalization]**
 

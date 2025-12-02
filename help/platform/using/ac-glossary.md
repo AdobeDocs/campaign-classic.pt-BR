@@ -3,11 +3,11 @@ product: campaign
 title: Glossário do Adobe Campaign
 description: Glossário do Adobe Campaign
 feature: Overview
-role: User, Data Architect
+role: User, Developer
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: ht
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
 source-wordcount: '6197'
 ht-degree: 100%
 
@@ -493,11 +493,11 @@ Saiba mais sobre [Configurações de instância](../../installation/using/about-
 
 +++
 
-+++**Trabalhos (importação e exportação)**
++++**Processos (importação e exportação)**
 
-Os trabalhos são gerenciados por um sistema assistente que simplifica a importação e exportação de dados para dentro e para fora do produto. Os processos usam o sistema de modelos para simplicidade e consistência e podem ser definidos para execução de acordo com um cronograma.
+Os processos são gerenciados por um sistema assistente que simplifica a importação e exportação de dados para dentro e para fora do produto. Os processos usam o sistema de modelos para simplicidade e consistência e podem ser definidos para execução de acordo com um cronograma.
 
-Saiba mais sobre [Importação e exportação de trabalhos](../../platform/using/get-started-data-import-export.md).
+Saiba mais sobre [processos de importação e exportação](../../platform/using/get-started-data-import-export.md).
 +++
 
 +++**Listas**
