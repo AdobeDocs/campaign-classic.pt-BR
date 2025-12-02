@@ -3,12 +3,13 @@ audience: end-user
 breadcrumb-title: Documentação do Campaign Classic v7
 product: campaign
 title: Manual do Campaign Classic v7
+user-guide-title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 3fc803ba8b7e367e199ba47ef05ba64d5f801506
 workflow-type: tm+mt
-source-wordcount: '2744'
+source-wordcount: '2748'
 ht-degree: 100%
 
 ---
@@ -483,7 +484,7 @@ ht-degree: 100%
       + [Configurar um fluxo de trabalho de importação recorrente - OCULTO](workflow/using/recurring-import-workflow.md)
    + Criar consultas {#designing-queries}
       + [Atualização da lista trimestral usando uma consulta incremental – OCULTO](workflow/using/quarterly-list-update.md)
-   + Consulta e filtro {#designing-queries}
+   + Consulta e filtro {#query-and-filter-hidden}
       + [Consultar a tabela de destinatários – OCULTO](workflow/using/querying-recipient-table.md)
       + [Consultar informações da entrega – OCULTO](workflow/using/querying-delivery-information.md)
       + [Executar computação agregada - OCULTO](workflow/using/performing-aggregate-computing.md)
