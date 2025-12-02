@@ -62,7 +62,7 @@ Descrição do método &quot;subscribe&quot; no esquema &quot;nms:subscription&q
 </method>
 ```
 
-A definição da chave de reconciliação deve ser inserida por meio do atributo _**key** no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
+A definição da chave de reconciliação deve ser inserida por meio do atributo _&#x200B;**key** no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
 
 Esta chamada não retorna dados, exceto erros.
 
