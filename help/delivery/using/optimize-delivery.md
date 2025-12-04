@@ -8,8 +8,8 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
-workflow-type: ht
+source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
+workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Vários fatores podem afetar diretamente o desempenho do servidor e retardar a p
 
   **Dica** - Para evitar isso, coordene a programação de entregas com os outros membros da equipe, garantindo um melhor desempenho.
 
-* A execução do workflow: o monitoramento de seus workflows é essencial para evitar problemas de desempenho na plataforma. Siga as diretrizes listadas [neste documento](../../workflow/using/workflow-best-practices.md#execution-and-performance).
+* A execução do fluxos de trabalho: o monitoramento de seus fluxos de trabalho é essencial para evitar problemas de desempenho na plataforma. Siga as diretrizes listadas [neste documento](../../workflow/using/workflow-best-practices.md#execution-and-performance).
 
 * Caso seja elegível, você poderá aproveitar os [recursos do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR) para monitorar sua plataforma usando as funcionalidades de [monitoramento de desempenho](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=pt-BR).
 
@@ -67,7 +67,7 @@ Ao começar a enviar e-mails em uma nova plataforma, você pode usar uma lista d
 
 * Os destinatários cujos endereços estão em quarentena são excluídos por padrão durante a análise de entrega: não são direcionados. Isso irá acelerar as entregas, pois a taxa de erro tem um efeito significativo na velocidade da entrega. Um endereço de email pode ser colocado em quarentena, por exemplo, quando a caixa de entrada estiver cheia ou se o endereço não existir. [Saiba mais](#identifying-quarantined-addresses-for-a-delivery)
 
-* O Adobe Campaign gerencia endereços incorretos de acordo com o tipo de erro retornado. Para obter mais informações, consulte [esta seção](understanding-quarantine-management.md).
+* O Adobe Campaign gerencia endereços incorretos de acordo com o tipo de erro retornado. Para obter mais informações, consulte [esta seção](delivery-failures-quarantine.md).
 
 
 * Alguns provedores de acesso à Internet consideram automaticamente emails como spam se a taxa de endereços inválidos é muito alta. A quarentena, portanto, evita que você seja adicionado à lista de bloqueios por esses provedores.
