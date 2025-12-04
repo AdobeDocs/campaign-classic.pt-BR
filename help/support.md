@@ -6,10 +6,10 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 85bafbac26b5f127499f35f373e96ecfd12b1db8
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 72%
+source-wordcount: '631'
+ht-degree: 70%
 
 ---
 
@@ -33,21 +33,15 @@ Obtenha suporte usando as perguntas frequentes, as práticas recomendadas, os re
 
 ### Perguntas frequentes
 
-Como atualizar para um novo build? como monitorar a execução do fluxo de trabalho? o que é o fluxo de trabalho de limpeza do banco de dados? [Leia as 10 principais perguntas](platform/using/common-questions.md).
-
 <table>
     <tr><td><strong>Perguntas e respostas sobre tópicos</strong></td><td><strong>Problemas comuns</strong></td><td><strong>Práticas recomendadas</strong></td><td><strong>Como</strong></td></tr>
     <tr>
     <td valign="top">
         <ul>
-        <li><a href="platform/using/faq-key-concepts.md">Principais conceitos</a></li>
-        <li><a href="platform/using/faq-campaign-config.md">Configurações da campanha</a></li>
-        <li><a href="platform/using/faq-reporting.md">Relatórios</a></li>
+        <li><a href="platform/using/faq-campaign-classic-v7.md">Perguntas frequentes sobre o Campaign Classic v7</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Atualização da build</a></li>
-        <li><a href="platform/using/faq-messages.md">Testar, enviar e rastrear mensagens</a></li>
-        <li><a href="platform/using/faq-workflows.md">Fluxos de trabalho</a></li>
-        <li><a href="platform/using/faq-developers.md">Desenvolvedores</a></li>
-        <li><a href="delivery/using/monitoring-deliverability.md">Capacidade de entrega</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html" target="_blank">Perguntas frequentes abrangentes sobre o Campaign v8</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">Monitoramento de entrega</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -113,7 +107,7 @@ O Painel de controle está disponível diretamente na Adobe Experience Cloud. El
 
 ### Gerenciamento de SFTP
 
-No Painel de controle, é possível interagir com todos os servidores SFTP conectados às instâncias do Campaign às quais você tem acesso. Você pode monitorar a capacidade de armazenamento, gerenciar endereços IP na inclui na lista de permissões e chaves SSH públicas. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=pt-BR) para obter mais informações.
+No Painel de controle, é possível interagir com todos os servidores SFTP conectados às instâncias do Campaign às quais você tem acesso. Você pode monitorar a capacidade de armazenamento, gerenciar endereços IP no incluo na lista de permissões e chaves SSH públicas. [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/sftp-management/about-sftp-management) para obter mais informações.
 
 ### Subdomínios e certificados
 
@@ -125,7 +119,7 @@ Você pode monitorar os subdomínios e seus certificados. Saiba mais nestas pág
 ### Configurações de instância
 
 Saiba como gerenciar as configurações de instâncias do Campaign Classic no Painel de controle. Saiba mais nestas páginas:
-* incluir na lista de permissões [Adicionar IPs no arquivo de pesquisa](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR) para acessar as instâncias do Campaign
+* [Adicionar IPs no incluo na lista de permissões](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR) para acessar as instâncias do Campaign
 * [Gerenciar permissões de URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=pt-BR)
 * [Detalhes da instância de acesso](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=pt-BR)
 * [Gerenciar chaves GPG para criptografia de dados](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=pt-BR)
@@ -138,7 +132,7 @@ O novo sistema de emissão de tíquetes foi iniciado pelo [Adobe Admin Console](
 
 ### Pergunte aos especialistas.
 
-Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){_blank}.
+Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Acessar o Centro de download do Campaign
 

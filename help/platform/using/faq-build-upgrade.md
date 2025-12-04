@@ -1,21 +1,26 @@
 ---
 product: campaign
 title: Perguntas frequentes sobre atualização de build
-description: Perguntas frequentes sobre atualizações de build do Campaign
+description: Perguntas frequentes sobre atualizações de build do Campaign Classic v7
 feature: Upgrade, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
+source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
 workflow-type: tm+mt
-source-wordcount: '2026'
-ht-degree: 100%
+source-wordcount: '2066'
+ht-degree: 97%
 
 ---
 
 # Perguntas frequentes sobre atualização de build {#build-upgrade-faq}
 
+Estas perguntas frequentes abordam perguntas sobre atualizações de build do Campaign Classic v7, especialmente para implantações locais e híbridas.
+
+>[!NOTE]
+>
+>Para obter respostas abrangentes a perguntas comuns do Campaign sobre fluxos de trabalho, entregas, públicos e muito mais, consulte as [Perguntas frequentes abrangentes sobre o Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
 
 O Adobe Campaign é atualizado regularmente. Se você conhece as [Notas de versão](../../rn/using/rn-overview.md) publicadas, provavelmente sabe que a cada ano são lançadas em média 2/3 das versões secundárias, repletas de novos recursos, melhorias e correções. Além disso, periodicamente liberamos builds apenas com correções cumulativas. Essa frequência regular de atualizações tem como objetivo fazer com que você tenha disponível as atualizações melhores e mais recentes, além de manter seu ambiente totalmente protegido e de melhorar obviamente sua experiência com nosso produto.
 
@@ -101,7 +106,7 @@ Exporte qualquer trabalho que seja crítico e deva ser preservado em seus sistem
 
 <!--For more information please [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
-Atualize seu conhecimento dos workflows e entrega de caminho críticos desenvolvidos em seus livros de execução (ou pela equipe/parceiro de consultoria), analisando a documentação fornecida à sua equipe ao final da implementação.
+Atualize seu conhecimento dos fluxos de trabalho e entrega de caminho críticos desenvolvidos em seus livros de execução (ou pela equipe/parceiro de consultoria), analisando a documentação fornecida à sua equipe ao final da implementação.
 
 Identifique tempos de tráfego baixos ou de baixo volume que seriam ideais para janelas de manutenção, pois gerarão menor impacto nos negócios.
 
@@ -129,9 +134,9 @@ Não. A Adobe recomenda desabilitar quaisquer operações na campanha durante o 
 
 Quando ocorrer a atualização pelo centro de mensagens (RT), não serão enviados emails da instância. Observe que todos os processos interrompidos quando um sistema do Campaign é desligado são automaticamente retomados quando o sistema é reiniciado. Isso inclui entregas ativas ou programadas, e rastreamento e cálculos de métricas para entregas enviadas anteriormente.
 
-## Os workflows continuarão em execução e enviarão as entregas?
+## Os fluxos de trabalho continuarão em execução e enviarão as entregas?
 
-Não. Durante a atualização da build, o fluxo de trabalho e os serviços de email são interrompidos. Significa que os workflows não serão executados e as entregas não serão enviadas. Eles serão retomados assim que o sistema for reiniciado. No entanto, a Adobe recomenda que todos os fluxos de trabalho de caminho crítico sejam verificados após uma atualização para garantir que estejam em execução e em bom estado de funcionamento.
+Não. Durante a atualização da build, o fluxo de trabalho e os serviços de email são interrompidos. Significa que os fluxos de trabalho não serão executados e as entregas não serão enviadas. Eles serão retomados assim que o sistema for reiniciado. No entanto, a Adobe recomenda que todos os fluxos de trabalho de caminho crítico sejam verificados após uma atualização para garantir que estejam em execução e em bom estado de funcionamento.
 
 ## Meus links de rastreamento ainda funcionam durante a atualização?
 
@@ -182,10 +187,10 @@ Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](../../
 ### Lista de verificação de pós-atualização do servidor de mensagens em nuvem
 
 1. Enviar uma entrega de teste
-   1. Validar os logs da entrega e o workflow relacionado
+   1. Validar os logs da entrega e o fluxo de trabalho relacionado
    1. Validar se os logs de rastreamento estão atualizados
    1. Validar links de mirror page e rastreamento
-1. Confirmar se todos os workflows técnicos estão no estado inicial
+1. Confirmar se todos os fluxos de trabalho técnicos estão no estado inicial
 1. Verificar se todos os processos também estão ativos
 
 ### Lista de verificação pós atualização do servidor de marketing
@@ -195,14 +200,15 @@ Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](../../
 * Você tem algum aplicativo da web que insira dados no banco de dados do Campaign? Em caso afirmativo, execute-os e
 verifique se eles podem inserir novos registros por meio da API.
 * Você pode enviar um email de teste com êxito? Crie uma nova entrega usando um modelo conhecido, envie-a para um destinatário de teste, verifique a personalização, desfaça o vínculo, aplique mirror page a todo o trabalho.
-* Todos os seus workflows de caminho críticos estão em execução? Verifique os workflows, abra o journal do workflow e verifique se há erros.
+* Todos os seus fluxos de trabalho de caminho críticos estão em execução? Verifique os fluxos de trabalho, abra o journal do fluxos de trabalho e verifique
+se há erros.
 * Todas as pastas estão presentes, visíveis e acessíveis? Navegue por pastas diferentes e verifique se
 todo o conteúdo é exibido e está presente.
 * Suas entregas estão com o fuso horário correto?
 
    * Verifique a data de criação e a data de modificação com o registro de data e hora e o fuso horário
-   * Verifique se a execução do scheduler funciona em um workflow no horário especificado
-   * Procure a lista de workflows que apresentam status PAUSED e FAILED. Inicie-os e monitore-os
+   * Verifique se a execução do scheduler funciona em um fluxo de trabalho no horário especificado
+   * Procure a lista de fluxos de trabalho que apresentam status PAUSED e FAILED. Inicie-os e monitore-os
    * Execute o teste AB para um cenário
    * Teste notificações por push junto com a funcionalidade de rastreamento para deep links
    * Teste de envio de SMS

@@ -4,7 +4,7 @@ title: Matriz de recursos no local, híbridos e hospedados do Campaign
 description: Saiba mais sobre as principais diferenças entre implantações hospedadas e no local
 feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 32%
@@ -35,7 +35,7 @@ Os diferentes modelos de hospedagem foram introduzidos [nesta seção](../../ins
 | Compactação/descompactação de arquivos | Sob demanda | Disponível | Disponível | [Saiba mais](../../platform/using/unzip-decrypt.md) |
 | Delegação de nome de domínio | Sob demanda | Sob demanda | Indisponível | [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR) |
 | Instalação do SpamAssassin | Sob demanda | Disponível | Disponível | [Saiba mais](../../delivery/using/spamassassin.md) |
-| Acesso aos relatórios de entrega | Disponível | Sob demanda | Disponível | [Saiba mais](../../delivery/using/monitoring-deliverability.md) |
+| Acesso aos relatórios de entrega | Disponível | Sob demanda | Disponível | [Saiba mais](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | Configuração da autenticação LDAP | Indisponível | Disponível | Disponível | [Saiba mais](../../installation/using/connecting-through-ldap.md) |
 
 
@@ -54,4 +54,4 @@ O Adobe Campaign fornece a opção **Federated Data Access** (FDA) para processa
 * [Notas de versão](../../rn/using/latest-release.md)
 * [Atualizações do Campaign Classic](../../rn/using/rn-overview.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
-* [Versões [!DNL Gold Standard] &#x200B;](../../rn/using/gold-standard.md)
+* [Versões [!DNL Gold Standard] ](../../rn/using/gold-standard.md)

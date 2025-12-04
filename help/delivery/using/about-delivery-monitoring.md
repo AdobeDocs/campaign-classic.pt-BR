@@ -2,55 +2,111 @@
 product: campaign
 title: Introdução ao monitoramento de entrega
 description: Saiba mais sobre os recursos de monitoramento de entrega do Campaign Classic
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '698'
+ht-degree: 72%
 
 ---
 
 # Introdução ao monitoramento de entrega {#about-delivery-monitoring}
 
-O monitoramento de entregas, após serem enviadas, é uma etapa essencial para garantir que as campanhas de marketing sejam eficientes e atinjam os clientes.
+>[!IMPORTANT]
+>
+>Esta página documenta os **recursos de monitoramento específicos do Campaign Classic v7** para implantações híbridas e locais.
 
-Nesta seção, você aprenderá mais sobre as informações que podem ser monitoradas após o envio de uma entrega, bem como sobre as falhas de entrega e gerenciamento de quarentenas.
+## Recursos de monitoramento
 
-<img src="assets/do-not-localize/icon_monitor.svg" width="60px">
+### Monitoramento de entrega {#monitoring-deliveries}
 
-**Monitore suas entregas**
+**Para implantações híbridas/no local do Campaign Classic v7**, é necessário monitoramento adicional para os recursos do servidor e a configuração do MTA (Mail Transfer Agent).
 
-A lista de entregas permite que você veja todas as entregas criadas em um único local.
+#### Solução de problemas de entregas pendentes {#pending-deliveries}
 
-Um painel dedicado está disponível para cada entrega. Isso permite o monitoramento de possíveis problemas encontrados durante o envio, bem como vários tipos de informações relacionadas com a entrega: relatórios, mirror pages, exclusões, logs de rastreamento, renderização, etc.
+E se as entregas não estiverem sendo enviadas e seu status permanecer **Pendente**?
 
-* [Acesso à lista de entregas](list-of-deliveries.md)
-* [Painel de entrega](delivery-dashboard.md)
+* O processo de execução está aguardando a disponibilidade de alguns recursos. O MTA pode não ter sido iniciado.
+Verifique se os módulos mta@instance estão abertos nos servidores MTA e, caso necessário, inicie o módulo MTA. [Saiba mais](../../production/using/administration.md).
 
-<img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
+* Pode ser que a entrega esteja usando uma afinidade não configurada na instância de envio.
+Dica: verifique a configuração do gerenciamento de tráfego (afinidade IP). Para obter mais informações, consulte Controlar tráfego SMTP de saída.
 
-**Desempenhos de entrega seguro**
+>[!NOTE]
+>
+>Essas etapas só podem ser executadas por um usuário especialista em instalações locais.
 
-Para garantir que suas entregas tenham bom desempenho, várias diretrizes devem ser seguidas. Problemas comuns que você pode encontrar ao enviar entregas também estão disponíveis para ajudá-lo a enviar entregas com mais eficiência.
+### Monitoramento da capacidade de entrega {#deliverability-monitoring}
 
+#### Instalação do pacote de entrega {#deliverability-package}
+
+Esse recurso está disponível por meio de um pacote dedicado no Adobe Campaign. Para usá-lo, esse pacote deve ser instalado. Depois de concluído, reinicie o servidor para que o pacote seja considerado.
+
+* Para clientes hospedados e híbridos, a opção **Deliverability monitoring** é configurada em sua instância pelo suporte técnico e consultores da Adobe. Para obter mais informações, entre em contato com o executivo da sua conta Adobe.
+
+* Para instalações no local, você deve instalar o pacote **[!UICONTROL Deliverability monitoring (Email Deliverability)]** por meio do menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Para obter mais informações, consulte [Instalar pacotes padrão do Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
+
+#### Fluxo de trabalho da capacidade de entrega {#deliverability-workflow}
+
+No Adobe Campaign Classic, o **Monitoramento da capacidade de entrega** é gerenciado pelo fluxo de trabalho **[!UICONTROL Refresh for deliverability]**. Ele é instalado por padrão em todas as instâncias e permite inicializar a lista de regras de qualificação de email de devolução, a lista de domínios e a lista de MXs. Quando o pacote **[!UICONTROL Deliverability monitoring (Email Deliverability)]** estiver instalado, esse fluxo de trabalho será executado durante a noite para atualizar regularmente a lista de regras e permitir que você gerencie ativamente a capacidade de entrega da plataforma.
+
+**O pacote de avaliação de entrega dá acesso a:**
+
+* [Relatórios de renderização da Caixa de entrada](inbox-rendering.md), que permitem que você pré-visualize as mensagens nos principais clientes de email para verificar o conteúdo e a reputação.
+* Visão geral da qualidade da mensagem (caixa de entrada, spam).
+
+#### Ferramentas de monitoramento {#monitoring-tools}
+
+**Para instalações locais**, você pode usar as seguintes ferramentas de monitoramento:
+
+* O relatório **[!UICONTROL Delivery throughput]** fornece uma visão geral de todo o rendimento da plataforma em um determinado período. Para obter mais informações, consulte [esta seção](../../reporting/using/global-reports.md#delivery-throughput).
+* Cada entrega gera um relatório de estatísticas de transmissão para os diferentes provedores de serviço da Internet (ISPs). Ele mostra algumas métricas de qualidade e reputação dos dados que podem afetar a capacidade de entrega, incluindo os seguintes números:
+   * **[!UICONTROL Hard bounces]** indica a qualidade dos dados. Esse número deve ser inferior a 2%.
+   * **[!UICONTROL Soft bounces]** indica a reputação. Este número não deve ser superior a 10% para qualquer ISP.
+
+  Para obter mais informações, consulte a seção [Estatísticas da entrega](../../reporting/using/global-reports.md#delivery-statistics).
+
+#### Diretrizes de monitoramento {#monitoring-guidelines}
+
+**Para instalações locais**, estas são algumas diretrizes adicionais sobre o monitoramento da capacidade de entrega:
+
+* Verifique regularmente a [taxa de transferência da entrega](../../reporting/using/global-reports.md#delivery-throughput) de toda a plataforma para verificar se ela é consistente com a configuração original.
+* Verifique se as [tentativas](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) estão configuradas corretamente (30 minutos para o período de nova tentativa e mais de 20 tentativas) nos modelos da entrega.
+* Verifique regularmente se a caixa de [rejeição](understanding-delivery-failures.md#bounce-mail-management) está acessível e se a conta não está prestes a expirar.
+* Verifique a taxa de transferência de cada delivery, que pode ser acessada no [painel de delivery](delivery-dashboard.md), para garantir que ela seja consistente com a validade do conteúdo do delivery (por exemplo, &quot;vendas rápidas&quot; devem ser entregues em minutos, não em dias).
+* Ao usar as ondas, verifique se cada onda tem tempo suficiente para terminar antes que a próxima seja acionada.
+* Verifique se o número de erros e as novas [quarentenas](understanding-quarantine-management.md) estão consistentes com outras entregas.
+* Consulte detalhadamente os [logs da entrega](delivery-dashboard.md#delivery-logs-and-history) para verificar o tipo de erro destacado (lista de bloqueios, problemas de DNS, regras anti-spam, etc.).
+
+### Solução de problemas {#delivery-troubleshooting}
+
+Ações específicas podem ser executadas ao encontrar problemas com entregas em **implantações híbridas/locais**:
+
+* [Problemas na capacidade de entrega](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+* [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
+* [Problemas de desempenho da entrega](delivery-performances.md)
+* [Problemas com arquivos temporários](../../production/using/temporary-files.md) – *somente clientes locais*
+
+## Tópicos gerais de monitoramento
+
+**Monitorar suas entregas:**
+
+* [Monitorar suas entregas na interface do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentação do Campaign v8)
 * [Desempenhos da entrega e práticas recomendadas](delivery-performances.md)
-* [Solução de problemas de envio de entrega](delivery-troubleshooting.md)
+* [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentação do Campaign v8 - guia abrangente para v7 e v8)
 
-<img src="assets/do-not-localize/icon_failure.svg" width="60px">
+Configuração específica do **v7:**
 
-**Entender as falhas da entrega**
+* [Configuração do gerenciamento de emails de devolução](understanding-delivery-failures.md) (v7 híbrido/no local)
+* [Gerenciamento de quarentena](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentação do Campaign v8 - guia abrangente para v7 e v8)
+* [Configuração de quarentena](understanding-quarantine-management.md) (v7 híbrido/no local)
 
-Quando uma mensagem não pode ser enviada a um perfil, o servidor remoto envia automaticamente uma mensagem de erro, que é recebida pela plataforma do Adobe Campaign, que determina se o endereço de email ou o número de telefone deve ir para a quarentena.
+**Rastrear mensagens:**
 
-[Entender falhas de entrega](understanding-delivery-failures.md) é uma etapa fundamental para melhorar as campanhas de marketing.
+* [Introdução ao rastreamento de mensagens](about-message-tracking.md)
 
-<img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
+## Tópicos relacionados
 
-**Entender o gerenciamento de quarentenas**
-
-O Adobe Campaign gerencia uma lista de endereços em quarentena. Os destinatários cujo endereço está em quarentena são excluídos por padrão durante a análise de entrega e não serão direcionados.
-
-[Nesta seção](understanding-quarantine-management.md) você encontrará informações sobre como identificar e gerenciar endereços em quarentena e aprenderá mais sobre as condições para enviar um endereço à quarentena.
+* [Status de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentação do Campaign v8)

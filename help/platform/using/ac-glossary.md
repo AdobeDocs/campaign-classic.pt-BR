@@ -6,10 +6,10 @@ feature: Overview
 role: User, Developer
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 17ac1e0d68d2945b01aecc7c45fc5be7e6bd38af
 workflow-type: tm+mt
-source-wordcount: '6197'
-ht-degree: 100%
+source-wordcount: '6204'
+ht-degree: 99%
 
 ---
 
@@ -511,7 +511,7 @@ Saiba mais sobre [Listas](../../platform/using/creating-and-managing-lists.md).
 
 O cache local são as informações armazenadas localmente no computador do operador. As informações em cache são usadas pelo console para reduzir o tráfego necessário para o servidor e melhorar o desempenho. A limpeza periódica do cache local (no menu Arquivo) atualiza as informações armazenadas e melhora o desempenho e a estabilidade.
 
-Saiba mais sobre [Cache local](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
+Saiba mais sobre [Cache local](../../platform/using/faq-campaign-classic-v7.md#how-do-i-clear-console-cache).
 +++
 
 ## M - P {#sec-4}
@@ -1009,7 +1009,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 O fluxo de trabalho técnico de rastreamento recupera os dados de rastreamento depois que a entrega é enviada e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento da entrega. Você pode encontrar informações para aberturas e cliques em um email ou outras interações com uma mensagem recebida pelo destinatário.
 
-Saiba mais sobre [Logs de rastreamento](../../delivery/using/accessing-the-tracking-logs.md).
+Saiba mais sobre [Logs de rastreamento no Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"} ou [rastreamento específico para v7](../../delivery/using/about-message-tracking.md).
 +++
 
 +++**Mensagens transacionais**

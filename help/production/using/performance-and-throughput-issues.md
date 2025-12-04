@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 13%
@@ -23,9 +23,9 @@ Consulte as [Notas de versão](../../rn/using/latest-release.md) para obter mais
 
 ## Hardware e infraestrutura {#hardware-and-infrastructure}
 
-As diretrizes gerais para os requisitos de hardware para o Campaign Classic local estão detalhadas nesta [página](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html).
+As diretrizes gerais para requisitos de hardware para Campaign Classic no local estão detalhadas nesta [página](https://helpx.adobe.com/br/campaign/kb/hardware-sizing-guide.html).
 
-A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que permite visualizar facilmente quanto espaço é usado por vários tipos de tabelas no banco de dados, bem como o espaço usado no site SFTP. Além disso, fornece ferramentas para permitir a limpeza de dados desnecessários. Entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) se precisar implementar essa ferramenta. Estas são algumas coisas importantes a serem verificadas usando essa ferramenta:
+A equipe de consultoria pode fornecer aos clientes hospedados uma ferramenta que permite visualizar facilmente quanto espaço é usado por vários tipos de tabelas no banco de dados, bem como o espaço usado no site SFTP. Além disso, fornece ferramentas para permitir a limpeza de dados desnecessários. Entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) se precisar implementar essa ferramenta. Estas são algumas coisas importantes a serem verificadas usando essa ferramenta:
 
 * Se o tamanho do índice for maior que o tamanho da tabela, será necessário um vácuo.
 * Verifique as tabelas que têm o máximo de expansão. Se essas tabelas forem usadas com frequência, elas precisam ser aspiradas.
@@ -57,13 +57,13 @@ Esta é uma lista de artigos relacionados às práticas recomendadas de configur
   >
   >O compromisso da equipe de capacidade de entrega é baseado no contrato e os clientes devem entrar em contato com seu representante da Adobe para obter informações relacionadas ao compromisso de capacidade de entrega.
 
-* DKIM: para garantir o nível de segurança do DKIM, o 1024b é o tamanho de criptografia recomendado pela prática recomendada. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso. Consulte [esta página](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
+* DKIM: para garantir o nível de segurança do DKIM, 1024b é o tamanho de criptografia recomendado pela prática recomendada. As chaves DKIM inferiores não serão consideradas válidas pela maioria dos provedores de acesso. Consulte [esta página](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 
 ## Problemas na capacidade de entrega {#deliverability-issues}
 
 Esta é uma lista de práticas recomendadas e artigos relacionados à capacidade de entrega:
 
-* Reputação de IP: se a reputação de IP não for boa o suficiente, haverá um impacto no desempenho. O módulo **Deliverability Monitoring** oferece várias ferramentas para rastrear o desempenho de deliverability da sua plataforma. Consulte esta [página](../../delivery/using/monitoring-deliverability.md).
+* Reputação de IP: se a reputação de IP não for boa o suficiente, haverá um impacto no desempenho. O módulo **Deliverability Monitoring** oferece várias ferramentas para rastrear o desempenho de deliverability da sua plataforma. Consulte esta [página](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring).
 * Aquecimento de IP: o aquecimento de IP é executado pela equipe de entrega. Isso envolve o aumento gradual do número de emails por meio de novos IPs durante um período de algumas semanas.
 
   >[!NOTE]
@@ -71,7 +71,7 @@ Esta é uma lista de práticas recomendadas e artigos relacionados à capacidade
   >O compromisso da equipe de capacidade de entrega é baseado no contrato e os clientes devem entrar em contato com seu representante da Adobe para obter informações relacionadas ao compromisso de capacidade de entrega.
 
 * Configuração de afinidade IP: uma configuração de afinidade IP incorreta pode interromper os emails completamente (operador incorreto/nome de afinidade na configuração) ou reduzir a taxa de transferência (pequeno número de IPs na afinidade). Consulte esta [página](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* Tamanho do email: o tamanho do email desempenha uma função importante na taxa de transferência. O tamanho máximo recomendado do email é de 60 KB. Consulte esta [página](https://helpx.adobe.com/br/legal/product-descriptions/campaign.html). No relatório [Taxa de transferência de entrega](../../reporting/using/global-reports.md#delivery-throughput), verifique o número de bytes transferidos por hora.
+* Tamanho do email: o tamanho do email desempenha uma função importante na taxa de transferência. O tamanho máximo recomendado do email é de 60 KB. Consulte esta [página](https://helpx.adobe.com/legal/product-descriptions/campaign.html). No relatório [Taxa de transferência de entrega](../../reporting/using/global-reports.md#delivery-throughput), verifique o número de bytes transferidos por hora.
 * Large number of invalid recipients: quando houver um grande número de recipients inválidos, isso poderá afetar a taxa de transferência. O MTA continua tentando enviar emails novamente para destinatários inválidos. Verifique se o banco de dados foi bem mantido.
 * Quantidade de personalização: se um delivery permanecer em &quot;Personalization em andamento&quot;, verifique a JavaScript usada em blocos de personalização.
 
