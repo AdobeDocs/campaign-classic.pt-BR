@@ -7,7 +7,7 @@ user-guide-title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
+source-git-commit: a0b8f6adef371bad5342524aaf4ce30f3933f2da
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 99%
@@ -186,7 +186,8 @@ ht-degree: 99%
       + [Gerenciar subscrições](delivery/using/managing-subscriptions.md)
       + [Marketing viral e social](delivery/using/viral-and-social-marketing.md)
    + Monitorar entregas {#monitoring-deliveries}
-      + [Introdução ao monitoramento de entrega](delivery/using/about-delivery-monitoring.md)
+      + [Monitorar o desempenho do delivery](delivery/using/about-delivery-monitoring.md)
+      + [Rastrear mensagens](delivery/using/about-message-tracking.md)
       + [Desempenho da entrega e solução de problemas](delivery/using/delivery-performance-troubleshooting.md)
       + [Falhas de entrega e gerenciamento de quarentena](delivery/using/delivery-failures-quarantine.md)
       + [Avançado: personalizar logs do delivery](delivery/using/customize-delivery-logs.md)
@@ -351,7 +352,7 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Trabalhar com o  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurar a integração](integrations/using/configuring-the-integration.md)
-      + [Criar um informativo do [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Criar um informativo do [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Trabalhar com o  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurar a integração com o [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
