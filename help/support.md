@@ -58,7 +58,7 @@ Obtenha suporte usando as perguntas frequentes, as práticas recomendadas, os re
         <ul>
         <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR" target="_blank">Práticas recomendadas de fluxo de trabalho</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Monitoramento do fluxo de trabalho técnico</a></li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Entender o gerenciamento de rastreamento</a></li>
+        <li><a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Entender o gerenciamento de rastreamento</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Ferramentas de monitoramento do Discover</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importar dados com fluxos de trabalho</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Enviar mensagens em várias ondas</a></li>
@@ -132,7 +132,7 @@ O novo sistema de emissão de tíquetes foi iniciado pelo [Adobe Admin Console](
 
 ### Pergunte aos especialistas.
 
-Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
+Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){_blank}.
 
 ### Acessar o Centro de download do Campaign
 

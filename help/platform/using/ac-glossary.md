@@ -222,7 +222,7 @@ Saiba mais sobre a análise de entrega na [documentação do Campaign v8](https:
 
 Os logs de entrega contêm informações geradas ao enviar uma mensagem. Esses logs mostram os detalhes do envio, que mensagem foi preparada, ignorada, enviada ou que está com falha. Elas podem ser acessadas diretamente no painel de entrega.
 
-Saiba mais sobre [Logs de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+Saiba mais sobre [Logs de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 +++
 
 <!--

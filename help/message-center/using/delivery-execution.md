@@ -40,7 +40,7 @@ Por padrão, elas são classificadas em subpastas por mês de entrega. Essa clas
 
 ## Monitoramento de mensagens transacionais {#transactional-message-monitoring}
 
-Para monitorar as mensagens transacionais, verifique os [logs da entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+Para monitorar as mensagens transacionais, verifique os [logs da entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
 As entregas transacionais enviadas da instância de execução são sincronizadas de volta à instância de controle por meio de um fluxo de trabalho técnico (**[!UICONTROL Message Center execution instance]**) que é executado a cada hora.
 
