@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '233'
-ht-degree: 100%
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## Envio de mensagem transacional {#transactional-message-send}
 
-Na instância de execução, uma vez que o estágio de enriquecimento esteja completo e um template da entrega esteja vinculado ao evento, a entrega será enviada.
+Na instância de execução, uma vez que o estágio de enriquecimento esteja completo e um modelo da entrega esteja vinculado ao evento, a entrega será enviada.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Por padrão, elas são classificadas em subpastas por mês de entrega. Essa clas
 
 ## Monitoramento de mensagens transacionais {#transactional-message-monitoring}
 
-Para monitorar as mensagens transacionais, verifique os [logs da entrega](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Para monitorar as mensagens transacionais, verifique os [logs da entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
 As entregas transacionais enviadas da instância de execução são sincronizadas de volta à instância de controle por meio de um fluxo de trabalho técnico (**[!UICONTROL Message Center execution instance]**) que é executado a cada hora.
 

@@ -5,7 +5,7 @@ description: Saiba mais sobre os recursos de monitoramento de entrega do Campaig
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 60%
@@ -86,7 +86,7 @@ Ações específicas podem ser executadas ao encontrar problemas com entregas em
 
 * [Problemas na capacidade de entrega](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
-* [Problemas de desempenho da entrega](delivery-performances.md)
+* [Problemas de desempenho da entrega](delivery-performance-troubleshooting.md)
 * [Problemas com arquivos temporários](../../production/using/temporary-files.md) – *somente clientes locais*
 
 ## Monitore seus deliveries

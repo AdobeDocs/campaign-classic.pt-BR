@@ -6,7 +6,7 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 8a2a3239c08521765592491a6fe88c94d9db0640
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 70%
@@ -47,7 +47,7 @@ Obtenha suporte usando as perguntas frequentes, as práticas recomendadas, os re
     <td valign="top">
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">Problemas de desempenho e de taxa de transferência</a></li>
-        <li><a href="delivery/using/delivery-performances.md">Desempenho da entrega</a></li>
+        <li><a href="delivery/using/delivery-performance-troubleshooting.md">Desempenho da entrega</a></li>
         <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR" target="_blank">Otimizar o desempenho do fluxo de trabalho</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Solução de problemas de execução de fluxo de trabalho</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Uso do servidor SFTP</a></li>
@@ -132,7 +132,7 @@ O novo sistema de emissão de tíquetes foi iniciado pelo [Adobe Admin Console](
 
 ### Pergunte aos especialistas.
 
-Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){_blank}.
+Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Acessar o Centro de download do Campaign
 

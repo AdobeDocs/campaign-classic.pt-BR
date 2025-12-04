@@ -6,7 +6,7 @@ feature: Overview
 role: User, Developer
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '6202'
 ht-degree: 99%
@@ -482,7 +482,7 @@ Saiba mais sobre [Interação de entrada](../../interaction/using/about-inbound-
 
 A renderização da caixa de entrada é a geração de visualizações de email, o que garante que a mensagem será exibida aos destinatários de forma ideal em uma variedade de clientes Web, Webmails e dispositivos. O Adobe Campaign aproveita o Litmus, que permite que os criadores de conteúdo de email visualizem o conteúdo de suas mensagens em mais de 70 renderizadores de email, como a caixa de entrada do Gmail ou o cliente Apple Mail.
 
-Saiba mais sobre [Renderização da caixa de entrada](../../delivery/using/delivery-dashboard.md#delivery-rendering).
+Saiba mais sobre [Renderização da caixa de entrada](../../delivery/using/inbox-rendering.md).
 +++
 
 +++**Configurações de instância**

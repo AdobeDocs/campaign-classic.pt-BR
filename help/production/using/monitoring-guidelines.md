@@ -4,10 +4,10 @@ title: Diretrizes de monitoramento
 description: Conheça as diretrizes e práticas recomendadas para monitorar processos e instâncias do Campaign
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 21%
+ht-degree: 23%
 
 ---
 
@@ -64,7 +64,7 @@ O Painel de controle do Campaign permite gerenciar várias configurações da su
 
 **Workflow HeatMap**
 
-O Workflow HeatMap forneceu uma representação visual de todos os workflows que estão sendo executados em sua instância. Ele permite monitorar facilmente a carga na instância e planejar os workflows de acordo. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html?lang=pt-BR){target="_blank"}.
+O Workflow HeatMap forneceu uma representação visual de todos os workflows que estão sendo executados em sua instância. Ele permite monitorar facilmente a carga na instância e planejar os workflows de acordo. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/monitoring-workflows/heatmap){target="_blank"}.
 
 **Trilha de auditoria**
 
@@ -76,7 +76,7 @@ Ações específicas podem ser executadas ao encontrar problemas com a execuçã
 
 **Monitoramento do status do fluxo de trabalho**
 
-Além do mapa de calor, você pode criar um fluxo de trabalho que permitirá monitorar o status de um conjunto de fluxos de trabalho e enviar mensagens recorrentes aos supervisores. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=pt-BR){target="_blank"}.
+Além do mapa de calor, você pode criar um fluxo de trabalho que permitirá monitorar o status de um conjunto de fluxos de trabalho e enviar mensagens recorrentes aos supervisores. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}.
 
 **Diretrizes gerais**
 
@@ -100,7 +100,7 @@ Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/do
 Ações específicas podem ser executadas ao encontrar problemas com os deliveries:
 * [Problemas na capacidade de entrega](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemas de exibição de imagem](../../production/using/image-display-issues.md)
-* [Problemas de desempenho da entrega](../../delivery/using/delivery-performances.md)
+* [Problemas de desempenho da entrega](../../delivery/using/delivery-performance-troubleshooting.md)
 * [Problemas com arquivos temporários](../../production/using/temporary-files.md) - *somente modelos de hospedagem local*
 
 ### Monitoramento do banco de dados {#monitoring-database}
