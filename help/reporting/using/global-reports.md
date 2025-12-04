@@ -5,10 +5,10 @@ description: Relatórios globais
 badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
 source-wordcount: '2292'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Para exibir relatórios, clique em seus nomes. Os seguintes relatórios estão d
 * **[!UICONTROL Operating systems]**: consulte [Sistemas operacionais](#operating-systems).
 * **[!UICONTROL URLs and click streams]**: consulte [URLs e fluxos de clique](../../reporting/using/delivery-reports.md#urls-and-click-streams).
 * **[!UICONTROL Tracking indicators]** : consulte [Indicadores de rastreamento](../../reporting/using/delivery-reports.md#tracking-indicators).
-* **[!UICONTROL Non-deliverables and bounces]** : consulte [Não entregues e devoluções](#non-deliverables-and-bounces).
+* **[!UICONTROL Non-deliverables and bounces]** : consulte [Não entregáveis e rejeições](#non-deliverables-and-bounces).
 * **[!UICONTROL User activities]** : consulte [Atividades do usuário](#user-activities).
 * **[!UICONTROL Subscription tracking]** : consulte [Rastreamento de subscrição](#subscription-tracking).
 * **[!UICONTROL Delivery summary]** : consulte [Resumo da entrega](../../reporting/using/delivery-reports.md#delivery-summary).
@@ -70,9 +70,9 @@ As seguintes opções estão disponíveis:
 * **[!UICONTROL Clicks]** : Número total de cliques nos links nas entregas. Cliques em links de unsubscription e mirror pages não são considerados.
 * **[!UICONTROL Transactions]** : Número total de transações depois que uma mensagem é recebida. Para que uma transação seja considerada, uma tag do tipo de transação de rastreamento Web deve ser inserida na página da Web correspondente. A configuração de rastreamento Web é apresentada [nesta seção](../../configuration/using/about-web-tracking.md).
 
-## Não entregues e devolvidos {#non-deliverables-and-bounces}
+## Não entregáveis e rejeições {#non-deliverables-and-bounces}
 
-Este relatório mostra o detalhamento de não entregues, bem como uma análise de devoluções por domínio de Internet.
+Este relatório mostra o detalhamento de não entregáveis, bem como uma análise de rejeições por domínio de Internet.
 
 **[!UICONTROL Number of messages processed]** representa o número total de mensagens processadas pelo servidor de entrega. Esse valor é menor do que o número de mensagens a serem entregues quando alguns deliveries tiverem sido interrompidos ou pausados (antes de serem processados pelo servidor).
 
@@ -82,9 +82,9 @@ Este relatório mostra o detalhamento de não entregues, bem como uma análise d
 
 >[!NOTE]
 >
->Os erros exibidos nesse relatório acionam o processo de quarentena. Para obter mais informações sobre a gestão de quarentena, consulte [Gestão de Quarentena](../../delivery/using/understanding-quarantine-management.md).
+>Os erros exibidos nesse relatório acionam o processo de quarentena. Para obter mais informações sobre a gestão de quarentena, consulte [Gestão de Quarentena](../../delivery/using/delivery-failures-quarantine.md).
 
-A primeira seção desse relatório mostra o detalhamento de não entregues no formulário de uma tabela de valores e um gráfico.
+A primeira seção desse relatório mostra o detalhamento de não entregáveis no formulário de uma tabela de valores e um gráfico.
 
 Para cada tipo de erro, temos:
 
@@ -167,9 +167,9 @@ A tabela de valores usa os seguintes indicadores:
 
 ### Compartilhamento em redes sociais {#sharing-to-social-networks}
 
-O marketing viral permite que os destinatários das entregas compartilhem informações com sua rede de contatos: eles podem adicionar um link para o perfil deles (X, anteriormente conhecido como Twitter, Facebook etc.) ou enviar uma mensagem a um amigo. Cada compartilhamento e cada acesso às informações compartilhadas é controlado na entrega. Para obter mais informações sobre marketing viral, consulte [esta seção](../../delivery/using/viral-and-social-marketing.md).
+O marketing viral permite que os recipients do delivery compartilhem informações com sua rede de contatos: eles podem adicionar um link ao seu perfil (Facebook, X - anteriormente conhecido como Twitter, etc.) ou enviar uma mensagem para um amigo. Cada compartilhamento e cada acesso às informações compartilhadas é controlado na entrega. Para obter mais informações sobre marketing viral, consulte [esta seção](../../delivery/using/viral-and-social-marketing.md).
 
-Este relatório mostra o detalhamento de mensagens compartilhadas e abertas discriminado por rede social (Facebook, X etc.) e/ou por email.
+Este relatório mostra o detalhamento de mensagens compartilhadas e abertas em redes sociais (Facebook, X, etc.) e/ou por email.
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -202,7 +202,7 @@ Esta seção inclui dois gráficos que representam o detalhamento de atividades 
 
 ## Estatísticas de atividades de compartilhamento {#statistics-on-sharing-activities}
 
-Este relatório mostra a evolução dos compartilhamentos em redes sociais (X, anteriormente conhecido como Twitter, Facebook, email, etc.) ao longo do tempo.
+Este relatório mostra a evolução dos compartilhamentos em redes sociais (Facebook, X - anteriormente conhecido como Twitter, email, etc.).
 
 Para obter mais informações sobre marketing viral, consulte [esta seção](../../delivery/using/viral-and-social-marketing.md).
 
@@ -294,7 +294,7 @@ Os seguintes indicadores são usados:
 
   >[!NOTE]
   >
-  >Para obter mais informações sobre devoluções permanentes e temporárias, consulte [Gestão de quarentena](../../delivery/using/understanding-quarantine-management.md).
+  >Para obter mais informações sobre devoluções permanentes e temporárias, consulte [Gestão de quarentena](../../delivery/using/delivery-failures-quarantine.md).
 
 * **[!UICONTROL Opens]**: porcentagem do número de destinatários alvos que abriram uma mensagem pelo menos uma vez em comparação ao número de mensagens processadas com êxito.
 * **[!UICONTROL Clicks]**: porcentagem do número de pessoas que clicaram em uma entrega pelo menos uma vez em comparação ao número de mensagens processadas com êxito.
