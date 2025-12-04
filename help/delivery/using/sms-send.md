@@ -165,6 +165,6 @@ O nome do remetente desse tipo de mensagem é um código curto geralmente usado 
 
 >[!IMPORTANT]
 >
->Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no painel de entrega. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+>Esses tipos de mensagens automáticas não mantêm um histórico. Portanto, não aparecem no painel de entrega. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 >
 >Essas mensagens não são consideradas nas regras de pressão comercial. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=pt-BR){target="_blank"}.

@@ -143,7 +143,7 @@ Para balancear a carga, você pode dividir entregas em vários lotes. Configure 
    >
    >Você também deverá permitir tempo suficiente para novas tentativas ao configurar as últimas ondas. Consulte [esta seção](steps-sending-the-delivery.md#configuring-retries).
 
-1. Para monitorar seus envios, vá para os logs de entrega. Consulte [esta página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+1. Para monitorar seus envios, vá para os logs de entrega. Consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
    Você pode ver as entregas que já foram enviadas nas ondas processadas (status **[!UICONTROL Sent]**) e as entregas a serem enviadas nas ondas restantes (status **[!UICONTROL Pending]**).
 

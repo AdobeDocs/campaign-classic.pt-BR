@@ -140,9 +140,9 @@ Para obter mais informações sobre DKIM, consulte o [Manual de práticas recome
 
 ### Relatórios de sucesso da entrega
 
-Na exibição **[!UICONTROL Summary]** de um [painel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} de entrega de email, a porcentagem de **[!UICONTROL Success]** começa em 100% e diminui progressivamente por todo o [período de validade](communication-channels.md) da entrega, conforme as rejeições temporárias e permanentes são relatadas do MTA aprimorado para o Campaign.
+Na exibição **[!UICONTROL Summary]** de um [painel](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} de entrega de email, a porcentagem de **[!UICONTROL Success]** começa em 100% e diminui progressivamente por todo o [período de validade](communication-channels.md) da entrega, conforme as rejeições temporárias e permanentes são relatadas do MTA aprimorado para o Campaign.
 
-De fato, todas as mensagens são exibidas como **[!UICONTROL Sent]** nos [enviando logs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} assim que são transmitidas com êxito do Campaign para o MTA aprimorado. Eles permanecem com esse status, a menos que uma [rejeição](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) para essa mensagem seja comunicada do MTA aprimorado para o Campaign.
+De fato, todas as mensagens são exibidas como **[!UICONTROL Sent]** nos [enviando logs](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} assim que são transmitidas com êxito do Campaign para o MTA aprimorado. Eles permanecem com esse status, a menos que uma [rejeição](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) para essa mensagem seja comunicada do MTA aprimorado para o Campaign.
 
 Quando mensagens de rejeição permanente são relatadas do MTA aprimorado, seu status muda de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** e a porcentagem de **[!UICONTROL Success]** é diminuída de maneira apropriada.
 
