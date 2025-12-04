@@ -5,10 +5,10 @@ description: Saiba mais sobre o escopo e as especificidades do envio de emails c
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
 workflow-type: tm+mt
-source-wordcount: '1379'
-ht-degree: 99%
+source-wordcount: '1381'
+ht-degree: 93%
 
 ---
 
@@ -140,9 +140,9 @@ Para obter mais informações sobre DKIM, consulte o [Manual de práticas recome
 
 ### Relatórios de sucesso da entrega
 
-Na exibição **[!UICONTROL Summary]** de um painel de [entrega de email](delivery-dashboard.md), a porcentagem de **[!UICONTROL Success]** começa em 100% e diminui progressivamente por todo o [período de validade da entrega](communication-channels.md), conforme as rejeições temporárias e permanentes são relatadas do MTA aprimorado para o Campaign.
+Na exibição **[!UICONTROL Summary]** de um [painel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} de entrega de email, a porcentagem de **[!UICONTROL Success]** começa em 100% e diminui progressivamente por todo o [período de validade](communication-channels.md) da entrega, conforme as rejeições temporárias e permanentes são relatadas do MTA aprimorado para o Campaign.
 
-De fato, todas as mensagens são exibidas como **[!UICONTROL Sent]** no [enviando logs](delivery-dashboard.md#delivery-logs-and-history) assim que são transmitidas com êxito do Campaign para o MTA aprimorado. Eles permanecem com esse status, a menos que uma [rejeição](understanding-delivery-failures.md#delivery-failure-types-and-reasons) para essa mensagem seja comunicada do MTA aprimorado para o Campaign.
+De fato, todas as mensagens são exibidas como **[!UICONTROL Sent]** nos [enviando logs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} assim que são transmitidas com êxito do Campaign para o MTA aprimorado. Eles permanecem com esse status, a menos que uma [rejeição](understanding-delivery-failures.md#delivery-failure-types-and-reasons) para essa mensagem seja comunicada do MTA aprimorado para o Campaign.
 
 Quando mensagens de rejeição permanente são relatadas do MTA aprimorado, seu status muda de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** e a porcentagem de **[!UICONTROL Success]** é diminuída de maneira apropriada.
 

@@ -6,9 +6,9 @@ feature: Overview
 role: User, Developer
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 8a2a3239c08521765592491a6fe88c94d9db0640
+source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
 workflow-type: tm+mt
-source-wordcount: '6201'
+source-wordcount: '6202'
 ht-degree: 99%
 
 ---
@@ -222,7 +222,7 @@ Saiba mais sobre a análise de entrega na [documentação do Campaign v8](https:
 
 Os logs de entrega contêm informações geradas ao enviar uma mensagem. Esses logs mostram os detalhes do envio, que mensagem foi preparada, ignorada, enviada ou que está com falha. Elas podem ser acessadas diretamente no painel de entrega.
 
-Saiba mais sobre [Logs de entrega](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Saiba mais sobre [Logs de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 +++
 
 <!--
