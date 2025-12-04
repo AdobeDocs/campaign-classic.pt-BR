@@ -6,9 +6,9 @@ feature: Overview
 role: User, Developer
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 17ac1e0d68d2945b01aecc7c45fc5be7e6bd38af
+source-git-commit: 8a2a3239c08521765592491a6fe88c94d9db0640
 workflow-type: tm+mt
-source-wordcount: '6204'
+source-wordcount: '6201'
 ht-degree: 99%
 
 ---
@@ -1009,7 +1009,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 O fluxo de trabalho técnico de rastreamento recupera os dados de rastreamento depois que a entrega é enviada e o rastreamento ativado. Esses dados podem ser encontrados na guia Rastreamento da entrega. Você pode encontrar informações para aberturas e cliques em um email ou outras interações com uma mensagem recebida pelo destinatário.
 
-Saiba mais sobre [Logs de rastreamento no Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"} ou [rastreamento específico para v7](../../delivery/using/about-message-tracking.md).
+Saiba mais sobre [Logs de rastreamento no Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}.
 +++
 
 +++**Mensagens transacionais**

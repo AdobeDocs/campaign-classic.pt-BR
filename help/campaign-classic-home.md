@@ -3,10 +3,10 @@ keywords: Campaign Classic;página inicial;tópicos populares
 product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '341'
-ht-degree: 100%
+source-git-commit: 8a2a3239c08521765592491a6fe88c94d9db0640
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 99%
 
 ---
 
@@ -89,7 +89,7 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Envio de mensagens</strong><br/><a href="delivery/using/communication-channels.md">Canais de comunicação</a> — <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Envio de provas</a> — <a href="delivery/using/get-started-a-b-testing.md">Teste A/B</a> — <a href="delivery/using/about-message-tracking.md">Rastreamento de mensagens</a> — <a href="delivery/using/about-deliverability.md">Capacidade de entrega</a> — <a href="message-center/using/about-transactional-messaging.md">Mensagens transacionais</a>
+      <strong>Envio de mensagens</strong><br/><a href="delivery/using/communication-channels.md">Canais de comunicação</a> — <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Envio de provas</a> — <a href="delivery/using/get-started-a-b-testing.md">Teste A/B</a> — <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Rastreamento de mensagens</a> — <a href="delivery/using/about-deliverability.md">Capacidade de entrega</a> — <a href="message-center/using/about-transactional-messaging.md">Mensagens transacionais</a>
     </td>
   </tr>
   <tr style="border: 0;">
