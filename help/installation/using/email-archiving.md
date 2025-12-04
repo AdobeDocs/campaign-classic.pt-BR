@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 3%
@@ -30,7 +30,7 @@ Para fazer isso, os arquivos .eml correspondentes aos emails enviados são trans
 * Para **arquiteturas hospedadas e híbridas**, entre em contato com o executivo da sua conta para ativá-la. O endereço de email de CCO de sua escolha deve ser fornecido à equipe do Adobe que o configurará para você.
 * Para **instalações no local**, siga as diretrizes abaixo para ativá-lo. Consulte as seções [Ativação do email Cco (no local)](#activating-email-archiving--on-premise-) e [Configuração do endereço de email CCO (no local)](#configuring-the-bcc-email-address--on-premise-).
 * Você só pode usar um endereço de email CCO.
-* Depois que o email Cco for configurado, verifique se o recurso está habilitado no modelo de entrega ou no delivery por meio da opção **[!UICONTROL Email BCC]**. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}.
+* Depois que o email Cco for configurado, verifique se o recurso está habilitado no modelo de entrega ou no delivery por meio da opção **[!UICONTROL Email BCC]**. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html?lang=pt-BR){target="_blank"}.
 * Somente os emails enviados com êxito são considerados. As rejeições não são.
 * O sistema de arquivamento de emails mudou com o Adobe Campaign 17.2 (build 8795). Se você já estava usando o arquivamento de emails, é necessário atualizar manualmente para o novo sistema de email Cco. Para obter mais informações, consulte a seção [Migração para o novo Email Cco](#updated-email-archiving-system--bcc-).
 
@@ -134,7 +134,7 @@ No arquivo **config-`<instance name>.xml`**, use os seguintes parâmetros para d
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
@@ -158,7 +158,7 @@ Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]*
    * Se você usar o mesmo MTA em várias instâncias (desenvolvimento, teste, prod) para um único cliente, as mensagens enviadas de todas as três instâncias serão duplicadas pela opção dataLogPath.
 
 * **Emails por conexão**: o arquivamento de emails com CCO opera abrindo uma conexão e tentando enviar todos os emails por meio dela. A Adobe recomenda verificar com seu contato técnico interno o número de emails aceitos em uma determinada conexão. Aumentar esse número pode ter um grande impacto na taxa de transferência do Cco.
-* **IPs de envio com CCO**: atualmente, os emails com CCO não são enviados por meio dos proxies do MTA normal. Em vez disso, uma conexão direta é aberta do servidor MTA para o servidor de email de destino. Incluir na lista de permissões Isso significa que talvez seja necessário adicionar outros IPs ao arquivo na rede, dependendo da configuração do servidor de email.
+* **IPs de envio com CCO**: atualmente, os emails com CCO não são enviados por meio dos proxies do MTA normal. Em vez disso, uma conexão direta é aberta do servidor MTA para o servidor de email de destino. Isso significa que talvez seja necessário adicionar outros IPs ao incluo na lista de permissões na rede, dependendo da configuração do servidor de email.
 
 <!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
 
@@ -184,6 +184,6 @@ Consequently, make sure:
 
 ### Limitations
 
-* Email BCC with Enhanced MTA delivers to the BCC email address before delivering to the recipients, which can result in BCC messages being sent even though the original deliveries may have bounced. For more on bounces, see [Understanding delivery failures](../../delivery/using/understanding-delivery-failures.md).
+* Email BCC with Enhanced MTA delivers to the BCC email address before delivering to the recipients, which can result in BCC messages being sent even though the original deliveries may have bounced. For more on bounces, see [Understanding delivery failures](../../delivery/using/delivery-failures-quarantine.md).
 
 * There is no reporting available on the delivery status of the emails sent to the BCC email address.-->

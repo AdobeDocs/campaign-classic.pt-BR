@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '823'
 ht-degree: 3%
 
 ---
@@ -64,7 +64,7 @@ O Adobe Campaign gerencia esse processo com uma correspondência entre um tipo d
 
 >[!NOTE]
 >
->Para saber mais sobre os tipos e motivos de falha de entrega, consulte esta [seção](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Para saber mais sobre os tipos e motivos de falha de entrega, consulte esta [seção](../../delivery/using/delivery-failures-quarantine.md#delivery-failure-types-and-reasons).
 
 ## Instância de entrega {#deliveratbility-env}
 
@@ -80,7 +80,7 @@ O modo Personalizado é para clientes avançados que desejam definir suas própr
 
 ## Exemplos de rejeição
 
-* **Usuário desconhecido** (rejeição permanente): 550 5.1.1... Usuário desconhecido {mx003}
+* **Usuário desconhecido** (rejeição permanente): 550 5.1.1... O usuário é desconhecido {mx003}
 * **Caixa de correio cheia** (rejeição temporária): 550 5.2.2 Cota de usuário excedida
 * **Caixa de Correio Inativa** (rejeição temporária): 550 5.7.1 : Endereço de destinatário rejeitado: Caixa de Correio Inativa, não será exibida por mais de 6 meses
 * **Domínio inválido** (rejeição temporária): falha na consulta DNS para &#39;ourdan.com&#39;
@@ -90,5 +90,5 @@ O modo Personalizado é para clientes avançados que desejam definir suas própr
 **Tópicos relacionados:**
 * [Configuração MX](../../installation/using/email-deliverability.md#mx-configuration)
 * [Configuração técnica de email](../../installation/using/email-deliverability.md)
-* [Entender as falhas de entrega](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic - Recommendations Técnico](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=pt-BR)
+* [Entender as falhas de entrega](../../delivery/using/delivery-failures-quarantine.md)
+* [Campaign Classic - Recomendações técnicas](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

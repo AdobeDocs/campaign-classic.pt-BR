@@ -7,7 +7,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 100%
@@ -130,9 +130,9 @@ Para enviar uma prova e a entrega final, use o mesmo processo que as entregas de
 
 Após enviar as mensagens, você pode monitorar e rastrear suas entregas. Para obter mais informações, consulte essas seções.
 
-* [Quarentenas de notificação por push](understanding-quarantine-management.md#push-notification-quarantines)
+* [Quarentenas de notificação por push](delivery-failures-quarantine.md#push-notification-quarantines)
 * [Monitoramento de uma entrega](about-delivery-monitoring.md)
-* [Compreensão de falhas de entrega](understanding-delivery-failures.md)
+* [Compreensão de falhas de entrega](delivery-failures-quarantine.md)
 
 ## Criação de uma notificação avançada do iOS {#creating-ios-delivery}
 

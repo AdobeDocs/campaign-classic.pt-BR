@@ -5,14 +5,14 @@ description: Saiba como atualizar a qualificação de rejeição após a interru
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
-# Atualizar rejeições incorretas após a interrupção da Apple {#update-bounce-qualification.md}
+# Atualizar rejeições incorretas após a interrupção do Apple {#update-bounce-qualification.md}
 
 ## Contexto
 
@@ -56,5 +56,5 @@ Com base no período do incidente, abaixo estão as diretrizes recomendadas para
 Depois de ter a lista de destinatários afetados, você pode defini-los como um status **[!UICONTROL Valid]** para que sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]** ou simplesmente excluí-los da tabela.
 
 **Tópicos relacionados:**
-* [Entender as falhas de entrega](understanding-delivery-failures.md)
-* [Qualificação de email de rejeição](understanding-delivery-failures.md#bounce-mail-qualification)
+* [Entender as falhas de entrega](delivery-failures-quarantine.md)
+* [Qualificação de email de rejeição](delivery-failures-quarantine.md#bounce-mail-qualification)

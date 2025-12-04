@@ -7,9 +7,9 @@ feature: Deliverability
 hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '490'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Observe que se o deferimento for rejeitado com a mensagem “452 ação solicita
 >
 >Você pode verificar o Painel de status do sistema da Apple [nesta página](https://www.apple.com/br/support/systemstatus/){_blank}.
 >
->Você pode verificar o Painel de status do Google Workspace [nesta página](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
+>Você pode verificar o Painel de status do Google Workspace [nesta página](https://www.google.com/appsstatus#hl=en&v=status){_blank}.
 >
 
 ## Impacto{#update-bounce-impact}
@@ -71,5 +71,5 @@ Com base no período do incidente e no ISP, abaixo estão as diretrizes recomend
 Depois de ter a lista de destinatários afetados, você pode defini-los como um status **[!UICONTROL Valid]** para que sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]** ou simplesmente excluí-los da tabela.
 
 **Tópicos relacionados:**
-* [Entender as falhas de entrega](understanding-delivery-failures.md)
-* [Qualificação de email de rejeição](understanding-delivery-failures.md#bounce-mail-qualification)
+* [Entender as falhas de entrega](delivery-failures-quarantine.md)
+* [Qualificação de email de rejeição](delivery-failures-quarantine.md#bounce-mail-qualification)

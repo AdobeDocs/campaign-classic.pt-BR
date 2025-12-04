@@ -6,7 +6,7 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 70%
@@ -51,14 +51,14 @@ Obtenha suporte usando as perguntas frequentes, as práticas recomendadas, os re
         <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR" target="_blank">Otimizar o desempenho do fluxo de trabalho</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Solução de problemas de execução de fluxo de trabalho</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Uso do servidor SFTP</a></li>
-        <li><a href="delivery/using/understanding-delivery-failures.md">Entender as falhas de entrega</a></li>
+        <li><a href="delivery/using/delivery-failures-quarantine.md">Entender as falhas de entrega</a></li>
         </ul>
     </td>
    <td valign="top">
         <ul>
         <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR" target="_blank">Práticas recomendadas de fluxo de trabalho</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Monitoramento do fluxo de trabalho técnico</a></li>
-        <li><a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Entender o gerenciamento de rastreamento</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Entender o gerenciamento de rastreamento</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Ferramentas de monitoramento do Discover</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importar dados com fluxos de trabalho</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Enviar mensagens em várias ondas</a></li>
@@ -71,7 +71,7 @@ Obtenha suporte usando as perguntas frequentes, as práticas recomendadas, os re
         <li><a href="production/using/build-upgrade.md">Atualizar para a build mais recente</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Perguntas frequentes sobre atualização de build</a></li>
         <li><a href="delivery/using/about-delivery-monitoring.md">Monitorar uma entrega</a></li>
-        <li><a href="delivery/using/understanding-quarantine-management.md">Entender o gerenciamento de quarentenas</a></li>
+        <li><a href="delivery/using/delivery-failures-quarantine.md">Entender o gerenciamento de quarentenas</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Lista de verificação de segurança e privacidade</a></li>
         <li><a href="platform/using/privacy-management.md">Gestão do consentimento e da privacidade</a></li>
         <li><a href="platform/using/about-queries-in-campaign.md">Criar uma query</a></li>
@@ -132,7 +132,7 @@ O novo sistema de emissão de tíquetes foi iniciado pelo [Adobe Admin Console](
 
 ### Pergunte aos especialistas.
 
-Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){_blank}.
+Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Acessar o Centro de download do Campaign
 

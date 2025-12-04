@@ -5,7 +5,7 @@ description: Saiba mais sobre o escopo e as especificidades do envio de emails c
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 93%
@@ -105,7 +105,7 @@ As qualificações de rejeição na tabela **[!UICONTROL Delivery log qualificat
 >
 >O MTA aprimorado qualifica a rejeição de SMTP e envia essa qualificação de volta ao Campaign no formato de um código de rejeição mapeado para um motivo de rejeição e qualificação do Campaign.
 
-Para obter mais informações sobre qualificação de rejeição, consulte [esta seção](understanding-delivery-failures.md#bounce-mail-qualification).
+Para obter mais informações sobre qualificação de rejeição, consulte [esta seção](delivery-failures-quarantine.md#bounce-mail-qualification).
 
 ### Entrega
 
@@ -142,11 +142,11 @@ Para obter mais informações sobre DKIM, consulte o [Manual de práticas recome
 
 Na exibição **[!UICONTROL Summary]** de um [painel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} de entrega de email, a porcentagem de **[!UICONTROL Success]** começa em 100% e diminui progressivamente por todo o [período de validade](communication-channels.md) da entrega, conforme as rejeições temporárias e permanentes são relatadas do MTA aprimorado para o Campaign.
 
-De fato, todas as mensagens são exibidas como **[!UICONTROL Sent]** nos [enviando logs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} assim que são transmitidas com êxito do Campaign para o MTA aprimorado. Eles permanecem com esse status, a menos que uma [rejeição](understanding-delivery-failures.md#delivery-failure-types-and-reasons) para essa mensagem seja comunicada do MTA aprimorado para o Campaign.
+De fato, todas as mensagens são exibidas como **[!UICONTROL Sent]** nos [enviando logs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} assim que são transmitidas com êxito do Campaign para o MTA aprimorado. Eles permanecem com esse status, a menos que uma [rejeição](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) para essa mensagem seja comunicada do MTA aprimorado para o Campaign.
 
 Quando mensagens de rejeição permanente são relatadas do MTA aprimorado, seu status muda de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** e a porcentagem de **[!UICONTROL Success]** é diminuída de maneira apropriada.
 
-Quando mensagens de rejeição temporária são relatadas do MTA aprimorado, elas ainda são exibidas como **[!UICONTROL Sent]** e a porcentagem de **[!UICONTROL Success]** ainda não é atualizada. As mensagens de rejeição temporária são então [tentadas](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) durante todo o período de validade da entrega:
+Quando mensagens de rejeição temporária são relatadas do MTA aprimorado, elas ainda são exibidas como **[!UICONTROL Sent]** e a porcentagem de **[!UICONTROL Success]** ainda não é atualizada. As mensagens de rejeição temporária são então [tentadas](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure) durante todo o período de validade da entrega:
 
 * Se uma tentativa for bem-sucedida antes do fim do período de validade, o status da mensagem permanecerá como **[!UICONTROL Sent]** e a porcentagem de **[!UICONTROL Success]** permanecerá inalterada.
 

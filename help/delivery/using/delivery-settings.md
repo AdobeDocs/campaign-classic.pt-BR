@@ -7,16 +7,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
-source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '696'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
 # Configurações de entrega {#about-delivery-settings}
 
-As configurações a seguir são específicas do Campaign Classic. Para outras configurações de entrega, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=pt-BR){target="_blank"}.
+As seguintes configurações são específicas do Campaign Classic. Para outras configurações de entrega, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/gs-message){target="_blank"}.
 
 ## Análise de entrega {#delivery-analysis}
 
@@ -24,13 +24,13 @@ As configurações a seguir são específicas do Campaign Classic. Para outras c
 
 Para acelerar o preparo da entrega, é possível marcar a opção **[!UICONTROL Prepare the delivery parts in the database]** antes de iniciar a análise.
 
-Ao ativar esta opção, o preparo da entrega é executado diretamente no banco de dados, o que pode acelerar significativamente a análise.
+Ao habilitar esta opção, o preparo da entrega é executado diretamente no banco de dados, o que pode acelerar significativamente a análise.
 
 Atualmente, essa opção está disponível somente quando as seguintes condições são atendidas:
 
 * A entrega deve ser um email. Por enquanto, os outros canais não são compatíveis.
 * O mid-sourcing ou roteamento externo não deve ser usado, apenas o tipo de roteamento de entrega em massa. É possível verificar o roteamento usado na guia **[!UICONTROL General]** do **[!UICONTROL Delivery properties]**.
-* Não é possível direcionar uma população proveniente de um arquivo externo. Para uma única entrega, clique no link **[!UICONTROL To]** do **[!UICONTROL Email parameters]** e verifique se a opção **[!UICONTROL Defined in the database]** está selecionada. Para uma entrega usada em um workflow, verifique se os destinatários estão **[!UICONTROL Specified by the inbound event(s)]** na guia **[!UICONTROL Delivery]**.
+* Não é possível direcionar uma população proveniente de um arquivo externo. Para uma única entrega, clique no link **[!UICONTROL To]** do **[!UICONTROL Email parameters]** e verifique se a opção **[!UICONTROL Defined in the database]** está selecionada. Para uma entrega usada em um fluxo de trabalho, verifique se os destinatários estão **[!UICONTROL Specified by the inbound event(s)]** na guia **[!UICONTROL Delivery]**.
 * É necessário o uso de um banco de dados PostgreSQL.
 
 ### Configurar a prioridade da análise {#analysis-priority-}
@@ -39,21 +39,21 @@ Quando a entrega é parte de uma campanha, a guia **[!UICONTROL Advanced]** ofer
 
 Antes de enviar, cada entrega é analisada. A duração da análise depende do arquivo de extração de entrega. Quanto mais significativo for o tamanho do arquivo, mais tempo levará a análise, fazendo com que as entregas aguardem.
 
-As opções para **[!UICONTROL Message preparation by the scheduler]** permitem priorizar a análise de entrega em um workflow da campanha.
+As opções para **[!UICONTROL Message preparation by the scheduler]** permitem priorizar a análise de entrega em um fluxo de trabalho da campanha.
 
 ![](assets/delivery_analysis_priority.png)
 
-Se uma entrega for muito grande, é melhor atribuir uma prioridade baixa a ele para evitar o atraso na análise de outras entregas do workflow.
+Se uma entrega for muito grande, é melhor atribuir uma prioridade baixa para evitar o atraso na análise de outras entregas do fluxo de trabalho.
 
 >[!NOTE]
 >
->Para garantir que as análises de entrega maiores não retardem o progresso dos workflows, você poderá agendar suas execuções marcando **[!UICONTROL Schedule execution for a time of low activity]**.
+>Para garantir que as análises de entrega maiores não retardem o progresso dos fluxos de trabalho, você poderá agendar suas execuções marcando **[!UICONTROL Schedule execution for a time of low activity]**.
 
 ## Envio de entrega {#delivery-sending}
 
 ### Configurar novas tentativas {#configuring-retries}
 
-As mensagens temporariamente não entregues devido a um erro **Suave** ou **Ignorado** estão sujeitas a uma repetição automática. Os tipos de falha de entrega são apresentados nesta [seção](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+As mensagens temporariamente não entregues devido a um erro **Suave** ou **Ignorado** estão sujeitas a uma repetição automática. Os tipos de falha de entrega são apresentados nesta [seção](delivery-failures-quarantine.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >
@@ -71,7 +71,7 @@ Quando a entrega for iniciada, as mensagens (e todas as tentativas) poderão ser
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
-* O campo **[!UICONTROL Delivery duration]** permite inserir o limite de novas tentativas de entrega globais. Isso significa que o Adobe Campaign envia as mensagens começando na data de início e, em seguida, para mensagens que retornam somente um erro, tentativas regulares e configuráveis são executadas até que o limite de validade seja atingido.
+* O campo **[!UICONTROL Delivery duration]** permite inserir o limite de novas tentativas de entrega globais. Isso significa que o Adobe Campaign envia as mensagens começando na data inicial e, em seguida, para mensagens que retornam somente um erro, tentativas regulares e configuráveis são executadas até que o limite de validade seja atingido.
 
   Você também poderá optar por especificar datas. Para fazer isso, selecione **[!UICONTROL Explicitly set validity dates]**. Nesse caso, as datas de entrega e limite de validade também permitem especificar o tempo. O tempo atual é usado por padrão, mas você poderá modificar isso diretamente no campo de entrada.
 

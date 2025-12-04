@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 99%
@@ -61,7 +61,7 @@ Você poderá fechar o assistente de entrega e rastrear a execução da entrega 
 Após enviar as mensagens, você pode monitorar e rastrear suas entregas. Para obter mais informações, consulte essas seções.
 
 * [Monitorar uma entrega](about-delivery-monitoring.md)
-* [Entender as falhas de entrega](understanding-delivery-failures.md)
+* [Entender as falhas de entrega](delivery-failures-quarantine.md)
 * [Sobre o rastreamento de mensagens](about-message-tracking.md)
 
 ## Agendar o envio da entrega {#scheduling-the-delivery-sending}
@@ -171,7 +171,7 @@ Os dois exemplos abaixo são os casos de uso mais comuns para usar várias ondas
 
 ## Configurar novas tentativas {#configuring-retries}
 
-As mensagens temporariamente não entregues devido a um erro **Suave** ou **Ignorado** estão sujeitas a uma repetição automática. Os tipos de falha de entrega são apresentados nesta [seção](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+As mensagens temporariamente não entregues devido a um erro **Suave** ou **Ignorado** estão sujeitas a uma repetição automática. Os tipos de falha de entrega são apresentados nesta [seção](delivery-failures-quarantine.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >
