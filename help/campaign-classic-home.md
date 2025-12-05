@@ -89,7 +89,7 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Envio de mensagens</strong><br/><a href="delivery/using/communication-channels.md">Canais de comunicação</a> — <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Envio de provas</a> — <a href="delivery/using/get-started-a-b-testing.md">Teste A/B</a> — <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Rastreamento de mensagens</a> — <a href="delivery/using/about-deliverability.md">Capacidade de entrega</a> — <a href="message-center/using/about-transactional-messaging.md">Mensagens transacionais</a>
+      <strong>Envio de mensagens</strong><br/><a href="delivery/using/communication-channels.md">Canais de comunicação</a> — <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Envio de provas</a> — <a href="delivery/using/get-started-a-b-testing.md">Teste A/B</a> — <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Rastreamento de mensagens</a> — <a href="delivery/using/about-deliverability.md">Capacidade de entrega</a> — <a href="message-center/using/about-transactional-messaging.md">Mensagens transacionais</a>
     </td>
   </tr>
   <tr style="border: 0;">
