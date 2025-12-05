@@ -7,9 +7,9 @@ user-guide-title: Manual do Campaign Classic v7
 user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
+source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2682'
 ht-degree: 99%
 
 ---
@@ -38,7 +38,6 @@ ht-degree: 99%
    + [Navegar e personalizar listas - OCULTO](platform/using/adobe-campaign-ui-lists.md)
    + [Enumerações - OCULTO](platform/using/managing-enumerations.md)
    + [Conectores do Campaign](platform/using/about-connectors.md)
-   + [Criar consultas no Campaign](platform/using/about-queries-in-campaign.md)
    + Perguntas frequentes {#faq}
       + [Perguntas frequentes sobre o Campaign Classic](platform/using/faq-campaign-classic-v7.md)
       + [Atualização da build](platform/using/faq-build-upgrade.md)
@@ -352,7 +351,7 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Trabalhar com o  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurar a integração](integrations/using/configuring-the-integration.md)
-      + [Criar um informativo do [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Criar um informativo do [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Trabalhar com o  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurar a integração com o [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
