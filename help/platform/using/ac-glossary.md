@@ -5,8 +5,10 @@ description: Glossário do Adobe Campaign
 feature: Overview
 role: User, Developer
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
+source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
 workflow-type: tm+mt
 source-wordcount: '6202'
 ht-degree: 99%
@@ -222,7 +224,7 @@ Saiba mais sobre a análise de entrega na [documentação do Campaign v8](https:
 
 Os logs de entrega contêm informações geradas ao enviar uma mensagem. Esses logs mostram os detalhes do envio, que mensagem foi preparada, ignorada, enviada ou que está com falha. Elas podem ser acessadas diretamente no painel de entrega.
 
-Saiba mais sobre [Logs de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+Saiba mais sobre [Logs de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 +++
 
 <!--
