@@ -8,24 +8,24 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 100%
 
 ---
 
-# Configurar trabalhos de exportação {#executing-export-jobs}
+# Configurar processos de exportação {#executing-export-jobs}
 
 
 
-Os trabalhos de exportação permitem acessar e extrair dados do banco de dados: contatos, clientes, listas, segmentos etc.
+Os processos de exportação permitem acessar e extrair dados do banco de dados: contatos, clientes, listas, segmentos etc.
 
 Por exemplo, pode ser útil usar dados de rastreamento de campanhas (histórico de rastreamento etc.) em uma planilha. Os dados de saída podem estar em formato TXT, CSV, TAB ou XML.
 
 O assistente de exportação permite configurar uma exportação, definir suas opções e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de exportação (simples ou múltipla) e dos direitos do operador.
 
-O assistente de exportação é exibido após a criação de um novo trabalho de exportação (consulte [Criar trabalhos de importação e exportação](../../platform/using/creating-import-export-jobs.md).
+O assistente de exportação é exibido após a criação de um novo processo de exportação (consulte [Criar processos de importação e exportação](../../platform/using/creating-import-export-jobs.md).
 
 ## Etapa 1 – Escolher o modelo de exportação {#step-1---choosing-the-export-template}
 
@@ -55,7 +55,7 @@ Por padrão, quando a exportação é iniciada a partir do nó **[!UICONTROL Job
 
   >[!NOTE]
   >
-  >Os trabalhos de importação e exportação automáticos são sempre executados no servidor.
+  >Os processos de importação e exportação automáticos são sempre executados no servidor.
   >
   >Para exportar apenas alguns dados, clique em **[!UICONTROL Advanced parameters]** e insira o número de linhas que devem ser exportadas no campo apropriado.
 
@@ -85,7 +85,7 @@ Selecione os campos a serem exportados. Para isso:
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Clique no botão **[!UICONTROL Add]** para chamar as funções. Para obter mais informações, consulte a [Lista de funções](../../platform/using/about-queries-in-campaign.md).
+1. Clique no botão **[!UICONTROL Add]** para chamar as funções. Para obter mais informações, consulte a [Lista de funções](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ## Etapa 5 - Classificar colunas {#step-5---sorting-columns}
 
@@ -133,4 +133,4 @@ Clique em **[!UICONTROL Start]** para iniciar a exportação de dados.
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-Você pode monitorar a execução do trabalho de importação (consulte [Monitorar trabalhos de exportação](../../platform/using/monitoring-jobs-execution.md).
+Você pode monitorar a execução do processo de importação (consulte [Monitorar processos de exportação](../../platform/using/monitoring-jobs-execution.md).

@@ -7,10 +7,10 @@ badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Clas
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '1506'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Em geral, três tipos de compartimentalização estão disponíveis:
 1. Dinamicamente, dependendo dos valores de uma enumeração: apenas exibe os valores contidos na enumeração, todos os outros valores são agrupados em &#39;Outros&#39;. Para obter mais informações, consulte [Gestão dinâmica de compartimentos](#dynamically-managing-bins).
 1. Uso de intervalos de valor, todos os outros sendo agrupados. Por exemplo, de 18 a 25 anos, 26 a 59 anos e os outros. Para obter mais informações, consulte [Criação de intervalos de valor](#creating-value-ranges).
 
-Para ativar a compartimentalização, marque a caixa apropriada ao criar a dimensão.
+Para habilitar a compartimentalização, marque a caixa apropriada ao criar a dimensão.
 
 ![](assets/s_advuser_cube_class_00.png)
 
@@ -52,7 +52,7 @@ No exemplo a seguir, os idiomas são agrupados em três categorias: inglês, ale
 
 Você pode usar uma máscara SQL para combinar vários valores em um filtro. Para fazer isso, marque **[!UICONTROL Yes]** na coluna **[!UICONTROL Use an SQL mask]** e insira o filtro SQL a ser aplicado na coluna **[!UICONTROL Value or expression]**.
 
-No exemplo abaixo, todos os domínios de email que começam com **yahoo** (yahoo.fr, yahoo.com, yahoo.be, etc.) ou com **ymail** (ymail.com, ymail.eu etc.) serão agrupados no rótulo **YAHOO!**, bem como endereços com o domínio **rocketmail.com**.
+No exemplo abaixo, todos os domínios de email que começam com **yahoo** (yahoo.fr, yahoo.com, yahoo.be, etc.) ou com **ymail** (ymail.com, ymail.eu, etc.) serão agrupados no rótulo **YAHOO!**, bem como endereços com o domínio **rocketmail.com**.
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -63,7 +63,7 @@ Os valores podem ser gerenciados dinamicamente por enumerações. Isso significa
 Para criar esse tipo de compartimentalização de valor, siga as etapas abaixo:
 
 1. Crie uma nova dimensão e habilite a compartimentalização.
-1. Selecione a opção **[!UICONTROL Dynamically link the values to an enumeration]** e selecione a lista discriminada correspondente.
+1. Selecione a opção **[!UICONTROL Dynamically link the values to an enumeration]** e selecione a enumeração correspondente.
 
    ![](assets/s_advuser_cube_class_04.png)
 
@@ -95,7 +95,7 @@ Também é possível gerar compartimentos automaticamente. Para fazer isso, cliq
 
   No exemplo a seguir, o Adobe Campaign cria automaticamente quatro slots de valor do mesmo tamanho para exibir os valores no banco de dados.
 
-Nesse caso, o filtro selecionado no schema de fatos é ignorado.
+Nesse caso, o filtro selecionado no esquema de fatos é ignorado.
 
 ### Enumerações {#enumerations}
 
@@ -105,11 +105,11 @@ O Adobe Campaign também oferece uma enumeração em domínios que permite exibi
 
 ![](assets/nmx_report_sample.png)
 
-Ele é criado usando o seguinte template:
+Ele é criado usando o seguinte modelo:
 
 ![](assets/nmx_enum_domain.png)
 
-Para criar um relatório usando essa lista discriminada, crie um Cubo usando a dimensão **[!UICONTROL Email domain]**. Escolha a opção **[!UICONTROL Enable binning]** e então **[!UICONTROL Dynamically link the values to an enumeration]**. Em seguida, selecione a enumeração de **Domínios** como mostrado acima. Todos os valores que não têm alias especificado serão reagrupados no rótulo **Outros** .
+Para criar um relatório usando essa enumeração, crie um Cubo usando a dimensão **[!UICONTROL Email domain]**. Escolha a opção **[!UICONTROL Enable binning]** e então **[!UICONTROL Dynamically link the values to an enumeration]**. Em seguida, selecione a enumeração de **Domínios** como mostrado acima. Todos os valores que não têm alias especificado serão reagrupados no rótulo **Outros** .
 
 ![](assets/nmx_add_dimension.png)
 
@@ -119,7 +119,7 @@ Você só precisa modificar a enumeração para atualizar o relatório relaciona
 
 ![](assets/nmx_add_alias.png)
 
-A lista discriminada **[!UICONTROL Domains]** é usada para gerar relatórios internos que exibem a lista de domínios. Para adaptar o conteúdo desses relatórios, você pode editar essa lista.
+A enumeração **[!UICONTROL Domains]** é usada para gerar relatórios integrados que exibem a lista de domínios. Para adaptar o conteúdo desses relatórios, você pode editar essa lista.
 
 Você pode criar outras enumerações reservadas para compartimentalização e usá-las em outros Cubos: todos os valores de alias serão reagrupados nas posições especificadas na primeira guia de enumeração.
 
@@ -127,13 +127,13 @@ Você pode criar outras enumerações reservadas para compartimentalização e u
 
 Os maiores volumes de dados podem ser calculados em agregações.
 
-Agregações são úteis ao manipular grandes volumes de dados. Eles são atualizados automaticamente com base nas configurações definidas na caixa de workflow dedicada, para integrar os dados a serem coletados mais recentemente nos indicadores
+Agregações são úteis ao manipular grandes volumes de dados. Eles são atualizados automaticamente com base nas configurações definidas na caixa de fluxo de trabalho dedicada, para integrar os dados a serem coletados mais recentemente nos indicadores
 
 As agregações são definidas na guia relevante de cada cubo.
 
 >[!NOTE]
 >
->O workflow para atualizar cálculos de agregação pode ser configurado na própria agregação ou a agregação pode ser atualizada por meio de um workflow externo vinculado ao cubo relevante.
+>O fluxo de trabalho para atualizar cálculos de agregação pode ser configurado na própria agregação ou a agregação pode ser atualizada por meio de um fluxo de trabalho externo vinculado ao cubo relevante.
 
 Para criar uma nova agregação, siga as etapas abaixo:
 
@@ -171,7 +171,7 @@ Para definir uma nova medida, siga as etapas abaixo:
 
 1. Se necessário e dependendo do operador, escolha a expressão que a operação aborda.
 
-   O botão **[!UICONTROL Advanced selection]** permite criar fórmulas de cálculo complexas. Para obter mais informações, consulte [esta seção](../../platform/using/about-queries-in-campaign.md).
+   O botão **[!UICONTROL Advanced selection]** permite criar fórmulas de cálculo complexas. Para obter mais informações, consulte [esta seção](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
@@ -235,7 +235,7 @@ Para confirmar essas alterações, é preciso salvar o relatório.
 
 É possível criar filtros para visualizar uma seção dos dados.
 
-Para fazer isso:
+Para isso:
 
 1. Clique no ícone **[!UICONTROL Add a filter]**.
 

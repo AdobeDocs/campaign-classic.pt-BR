@@ -6,8 +6,8 @@ feature: Workflows, Targeting Activity, Data Management
 hide: true
 hidefromtoc: true
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
-workflow-type: ht
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 100%
 
@@ -102,7 +102,7 @@ Atualizar dados e mesclar coleções permite atualizar os dados contidos em um r
 
 1. Selecione as coleções a serem movidas para o registro primário e os campos a serem atualizados.
 
-   Insira as regras que se aplicam a eles assim que um ou vários registros secundários são identificados. Para fazer isso, é possível usar o Construtor de expressões. Para obter mais informações, consulte esta [seção](../../platform/using/about-queries-in-campaign.md). Por exemplo, ao especificar que é o valor atualizado mais recentemente de todos os registros diferentes que devem ser mantidos.
+   Insira as regras que se aplicam a eles assim que um ou vários registros secundários são identificados. Para fazer isso, é possível usar o Construtor de expressões. Para obter mais informações, consulte esta [seção](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign). Por exemplo, ao especificar que é o valor atualizado mais recentemente de todos os registros diferentes que devem ser mantidos.
 
    Em seguida, insira as condições a serem consideradas na regra.
 

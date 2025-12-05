@@ -5,7 +5,7 @@ description: Saiba como usar o contexto em seus relatórios
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 100%
@@ -34,11 +34,11 @@ Para fazer isso, clique no link **[!UICONTROL Filter data...]** na guia **[!UICO
 
 No exemplo a seguir, queremos que o gráfico mostre apenas perfis de destinatários que vivem na França e que tenham efetuado uma compra durante o ano.
 
-Para definir esse filtro, coloque uma página no gráfico e edite-o. Clique em **[!UICONTROL Filter data]** e crie o filtro que corresponde aos dados que deseja exibir. Para obter mais informações sobre criação de queries no Adobe Campaign, consulte [esta seção](../../platform/using/about-queries-in-campaign.md).
+Para definir esse filtro, coloque uma página no gráfico e edite-o. Clique em **[!UICONTROL Filter data]** e crie o filtro que corresponde aos dados que deseja exibir. Para obter mais informações sobre criação de queries no Adobe Campaign, consulte [esta seção](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
-Aqui, queremos exibir a análise por cidade dos destinatários selecionados.
+Aqui, queremos exibir o detalhamento por cidade dos destinatários selecionados.
 
 ![](assets/reporting_graph_with_2vars.png)
 

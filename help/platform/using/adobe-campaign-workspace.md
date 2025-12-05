@@ -6,10 +6,10 @@ feature: Overview
 role: Developer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 100%
+source-wordcount: '1166'
+ht-degree: 95%
 
 ---
 
@@ -69,13 +69,13 @@ Para obter mais informações sobre como criar uma instância, consulte esta [p�
 
 ## Elementos básicos de navegação {#navigation-basics}
 
-### Procurar páginas {#browsing-pages}
-
 As várias funcionalidades da plataforma são divididas em recursos principais: use os links exibidos na seção superior da interface para acessá-las.
 
 ![](assets/overview_home.png)
 
 A lista de recursos principais que você pode acessar depende dos pacotes e dos complementos instalados e dos seus direitos de acesso.
+
+### Procurar páginas {#browsing-pages}
 
 Cada recurso inclui um conjunto de funcionalidades com base nas necessidades relacionadas à tarefa e ao contexto de uso. Por exemplo, o link **[!UICONTROL Profiles and targets]** leva você até listas de destinatários, serviços de assinatura, fluxos de trabalho de segmentação existentes e atalhos para criar esses elementos.
 
@@ -114,10 +114,12 @@ Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na
 
 * [Configurações da IU do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-* [Gerenciar pastas e visualizações no explorador](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+* [Gerenciar pastas e modos de exibição no explorador](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
 
 
-## Filtrar dados {#filters}
+## Trabalhar com dados {#work-with-data}
+
+### Filtrar dados {#filters}
 
 A filtragem de dados é o processo de restringir um conjunto de dados somente aos registros que correspondam a critérios específicos. Esse subconjunto pode ser usado para ações direcionadas (como atualizações ou criação de públicos-alvo) ou para análise.
 
@@ -125,14 +127,51 @@ Ao navegar pelo Campaign, os dados são exibidos em listas. Aplique filtros inte
 
 Saiba como **acessar, criar e compartilhar filtros** na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
+### Consultar o banco de dados{#about-queries-in-campaign}
 
-## Trabalhar com listas {#manage-and-customize-lists}
+A ferramenta de consulta está disponível em vários níveis do aplicativo e pode ser usada para definir as populações do público-alvo, segmentar clientes, extrair e filtrar logs de rastreamento, criar filtros e muito mais.
+
++++Sobre o editor de query genérico
+
+Ela fornece um assistente dedicado, o editor de consulta genérica, acessível pelo menu **[!UICONTROL Tools > Generic query editor...]**. Esse editor permite que as consultas a banco de dados extraiam, organizem, agrupem e ordenem informações. Por exemplo, ele pode recuperar destinatários que clicaram mais de n vezes em um link de boletim informativo durante um determinado período.
+
+O editor de query genérico centraliza todos os recursos de consulta. Ele permite criar e armazenar filtros de restrição, que podem ser reutilizados em outros contextos, como a caixa de consulta de um fluxo de trabalho de direcionamento.
+
+![Acessar o editor de consultas e selecionar uma tabela](assets/query_editor_nveau_21.png)
+
++++
+
+>[!BEGINTABS]
+
+>[!TAB Consultar o banco de dados]
+
+As etapas para criar uma consulta estão detalhadas na **[documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
+
+
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+
+
+>[!TAB Adicionar uma consulta a um fluxo de trabalho]
+
+Saiba mais sobre as principais etapas relacionadas à criação de consultas no contexto de um fluxo de trabalho na **[documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
+
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+
+>[!TAB Condições de filtragem]
+
+Para criar a sua consulta, você precisa selecionar as condições de filtragem no editor de consultas. Os recursos e casos de uso disponíveis estão detalhados na **[documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+
+>[!ENDTABS]
+
+### Gerenciar listas {#manage-and-customize-lists}
 
 No console do cliente do Campaign, os dados são exibidos em listas. Você pode adaptar essas listas às suas necessidades. Por exemplo, é possível adicionar colunas, filtrar dados, contar registros, salvar e compartilhar suas configurações.
 
 Saiba como **gerenciar e personalizar listas** na [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
-## Gerenciar enumerações{#managing-enumerations}
+### Gerenciar enumerações{#managing-enumerations}
 
 Uma enumeração (também chamada de lista discriminada) é uma lista predefinida de valores que você pode usar para preencher determinados campos. As enumerações ajudam a padronizar valores de campos, tornando a inserção de dados mais consistente e simplificando as consultas.
 
@@ -144,4 +183,4 @@ Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign 
 
 Este vídeo apresenta o espaço de trabalho do Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/39535?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

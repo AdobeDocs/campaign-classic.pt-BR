@@ -8,7 +8,7 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '6202'
 ht-degree: 99%
@@ -224,7 +224,7 @@ Saiba mais sobre a análise de entrega na [documentação do Campaign v8](https:
 
 Os logs de entrega contêm informações geradas ao enviar uma mensagem. Esses logs mostram os detalhes do envio, que mensagem foi preparada, ignorada, enviada ou que está com falha. Elas podem ser acessadas diretamente no painel de entrega.
 
-Saiba mais sobre [Logs de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+Saiba mais sobre [Logs de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 +++
 
 <!--
@@ -275,7 +275,7 @@ Saiba mais sobre Marketing distribuído na [documentação do Campaign v8](https
 
 A Distribuição de valores é uma ferramenta que mostra a distribuição dos valores de um atributo de esquema que existe atualmente no banco de dados. Isso ajuda a determinar quais valores estão disponíveis, suas contagens e porcentagens e evitar problemas com capitalização e ortografia de valores ao criar uma consulta ou expressão.
 
-Saiba mais sobre a [Distribuição de valores](../../platform/using/about-queries-in-campaign.md)
+Saiba mais sobre a [Distribuição de valores](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)
 +++
 
 +++**Delegação de domínio**

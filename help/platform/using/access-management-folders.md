@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 hide: true
 hidefromtoc: true
-source-git-commit: b27b85b126e002c0ea8b5d71da1ed60e1e817980
-workflow-type: ht
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 100%
 
@@ -73,11 +73,11 @@ No exemplo abaixo, criaremos novas pastas para exibir dados específicos:
 
    ![Tela mostrando a caixa de visualização que está sendo marcada](assets/s_ncs_user_add_folder_exple01.png)
 
-1. Defina os critérios do filtro de entrega no editor de query na seção intermediária da janela: as campanhas correspondentes ao filtro definido serão exibidas.
+1. Defina os critérios do filtro de entrega no editor de consultas na seção intermediária da janela: as campanhas correspondentes ao filtro definido serão exibidas.
 
    >[!NOTE]
    >
-   >O editor de query é apresentado [nesta seção](../../platform/using/about-queries-in-campaign.md).
+   >O editor de consultas é apresentado [nesta seção](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
    Com as seguintes condições de filtro:
 

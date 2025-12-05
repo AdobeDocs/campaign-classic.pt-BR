@@ -5,7 +5,7 @@ description: Saiba como gerenciar respostas de pesquisas
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '848'
 ht-degree: 100%
@@ -80,7 +80,7 @@ Elas podem ser visualizadas na guia **[!UICONTROL Answers]** da pesquisa ao exib
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex4.png)
 
-Você também pode filtrar destinatários com base em respostas para exibir apenas os usuários que interessam a você. Para fazer isso, crie um workflow de direcionamento e use a caixa **[!UICONTROL Survey responses]**.
+Você também pode filtrar destinatários com base em respostas para exibir apenas os usuários que interessam a você. Para fazer isso, crie um fluxo de trabalho de segmentação e use a caixa **[!UICONTROL Survey responses]**.
 
 ![](assets/s_ncs_admin_survey_read_responses_wf.png)
 
@@ -96,7 +96,7 @@ Para cada formulário, as respostas fornecidas podem ser usadas em campos ou ró
 
 >[!NOTE]
 >
->Para outros tipos de campos, a sintaxe é detalhada [nesta seção](../../platform/using/about-queries-in-campaign.md).
+>Para outros tipos de campos, a sintaxe é detalhada [nesta seção](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ### Configurações de armazenamento {#storage-settings}
 
