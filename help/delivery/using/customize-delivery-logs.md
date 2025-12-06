@@ -16,11 +16,11 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->Orientações abrangentes sobre como acessar a lista de entrega e usar o painel de entrega estão documentadas na [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Esse conteúdo se aplica aos usuários do Campaign Classic v7 e do Campaign v8.
+>Orientações abrangentes sobre como acessar a lista de entrega e usar o painel de entrega estão documentadas na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Esse conteúdo se aplica aos usuários do Campaign Classic v7 e do Campaign v8.
 >
 >Esta página documenta as **personalizações avançadas específicas do Campaign Classic v7** para implantações híbridas e locais.
 
-Para monitorar entregas na interface do Campaign, consulte a [documentação do Campaign v8 sobre como monitorar entregas na interface do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+Para monitorar entregas na interface do Campaign, consulte a [documentação do Campaign v8 sobre como monitorar entregas na interface do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 ## Personalizar logs do delivery {#use-case}
 
@@ -113,9 +113,9 @@ Abaixo está o que você deve ver na guia **[!UICONTROL Delivery]** após as mod
 
 ## Tópicos relacionados
 
-* [Monitorar entregas na interface do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentação do Campaign v8)
-* [Status de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentação do Campaign v8)
-* [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentação do Campaign v8)
-* [Gerenciamento de quarentena](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentação do Campaign v8)
+* [Monitorar entregas na interface do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentação do Campaign v8)
+* [Status de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentação do Campaign v8)
+* [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentação do Campaign v8)
+* [Gerenciamento de quarentena](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentação do Campaign v8)
 * [Extensão de um esquema](../../configuration/using/extending-a-schema.md) (v7 híbrido/no local)
 

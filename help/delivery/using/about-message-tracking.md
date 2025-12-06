@@ -16,12 +16,12 @@ ht-degree: 64%
 
 >[!IMPORTANT]
 >
->Para obter a **orientação geral de rastreamento** que se aplica ao Campaign Classic v7 e ao Campaign v8, consulte a [documentação de rastreamento de mensagens do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}:
+>Para obter a **orientação geral de rastreamento** que se aplica ao Campaign Classic v7 e ao Campaign v8, consulte a [documentação de rastreamento de mensagens do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}:
 >
->* [Configurar links rastreados](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
->* [Configurar opções de rastreamento de URL](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
->* [Rastrear links personalizados](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
->* [Acessar logs de rastreamento](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
+>* [Configurar links rastreados](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
+>* [Configurar opções de rastreamento de URL](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
+>* [Rastrear links personalizados](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
+>* [Acessar logs de rastreamento](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
 >* [Rastreamento de teste](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
 >* [Rastreamento de relatórios](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
@@ -82,7 +82,7 @@ A opção de recusar o rastreamento de aplicações web permite que você interr
 
 As seguintes dicas de solução de problemas se aplicam a **implantações híbridas/no local do Campaign Classic v7**. Algumas informações também podem se aplicar às implantações locais do Campaign v8. Para obter ajuda com o Managed Cloud Services do Campaign v8, entre em contato com o representante da Adobe.
 
-Para obter as etapas básicas de solução de problemas de rastreamento no Campaign v8, consulte a [Documentação sobre solução de problemas de rastreamento no Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
+Para obter as etapas básicas de solução de problemas de rastreamento no Campaign v8, consulte a [Documentação sobre solução de problemas de rastreamento no Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
 
 ### Verificações básicas {#basic-checks}
 

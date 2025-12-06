@@ -60,8 +60,8 @@ As tarefas de manutenção regulares incluem:
 >
 >Orientações abrangentes sobre a solução de problemas de delivery estão documentadas na documentação do Campaign v8, aplicável aos usuários do Campaign Classic v7 e do Campaign v8:
 >
->* Falhas de entrega comuns e soluções: [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
->* Diagnóstico de entrega lenta: [Monitorar entregas na interface do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
+>* Falhas de entrega comuns e soluções: [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
+>* Diagnóstico de entrega lenta: [Monitorar entregas na interface do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
 >* Práticas recomendadas de entrega: [Práticas recomendadas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
 >
 >Esta seção documenta a **solução de problemas específica do Campaign Classic v7** para implantações híbridas e locais.
@@ -100,13 +100,13 @@ Verifique o status do fluxo de trabalho em **[!UICONTROL Administration]** > **[
 
 >[!NOTE]
 >
->Para usuários do Campaign v8 Managed Cloud Services, os workflows técnicos e o monitoramento da infraestrutura são gerenciados pela Adobe. Concentre-se no conteúdo de entrega e no direcionamento conforme descrito na [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
+>Para usuários do Campaign v8 Managed Cloud Services, os workflows técnicos e o monitoramento da infraestrutura são gerenciados pela Adobe. Concentre-se no conteúdo de entrega e no direcionamento conforme descrito na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
 ## Tópicos relacionados
 
-* [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentação do Campaign v8)
+* [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentação do Campaign v8)
 * [Práticas recomendadas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentação do Campaign v8)
-* [Monitorar entregas na interface do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentação do Campaign v8)
+* [Monitorar entregas na interface do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentação do Campaign v8)
 * [Manutenção do banco de dados](../../production/using/recommendations.md) (v7 híbrido/no local)
 * [Entregabilidade de email](../../installation/using/email-deliverability.md) (v7 híbrido/no local)
 * [Desempenhos do banco de dados](../../production/using/database-performances.md) (v7 híbrido/no local)

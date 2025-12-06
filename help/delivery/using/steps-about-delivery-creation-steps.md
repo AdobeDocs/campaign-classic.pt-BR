@@ -31,7 +31,7 @@ As principais etapas ao criar uma entrega são as seguintes:
 
 1. **Envio da entrega** [Leia mais](steps-sending-the-delivery.md)
 
-1. **Monitorar a entrega** (rastreamento, quarentena, relatórios, etc.). Para obter mais informações, consulte as seções [Monitoramento de entregas](about-delivery-monitoring.md) e [Rastreamento de mensagens](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}.
+1. **Monitorar a entrega** (rastreamento, quarentena, relatórios, etc.). Para obter mais informações, consulte as seções [Monitoramento de entregas](about-delivery-monitoring.md) e [Rastreamento de mensagens](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}.
 
 >[!NOTE]
 >

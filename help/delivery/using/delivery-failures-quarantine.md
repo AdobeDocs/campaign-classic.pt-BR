@@ -18,14 +18,14 @@ ht-degree: 33%
 >
 >Orientações abrangentes sobre falhas de delivery e gerenciamento de quarentena estão documentadas na documentação do Campaign v8. Esse conteúdo se aplica aos usuários do Campaign Classic v7 e do Campaign v8:
 >
->* [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} - Abrange tipos de falha, motivos de erro, erros síncronos/assíncronos, gerenciamento de tentativas e solução de problemas
->* [Gerenciamento de quarentena](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} - Abrange quarentena versus inclui na lista de bloqueios, limites de erro suaves, relatórios de quarentena e remoção de endereço
+>* [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} - Abrange tipos de falha, motivos de erro, erros síncronos/assíncronos, gerenciamento de tentativas e solução de problemas
+>* [Gerenciamento de quarentena](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} - Abrange quarentena versus inclui na lista de bloqueios, limites de erro suaves, relatórios de quarentena e remoção de endereço
 >
 >Esta página documenta a **configuração específica do Campaign Classic v7** para email de devolução e gerenciamento de quarentena em implantações híbridas e locais.
 
 ## Compreensão de falhas de entrega
 
-Para obter conceitos comuns de falha de entrega, tipos de erro e orientação para solução de problemas, consulte a [documentação de Noções básicas sobre falhas de entrega do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
+Para obter conceitos comuns de falha de entrega, tipos de erro e orientação para solução de problemas, consulte a [documentação de Noções básicas sobre falhas de entrega do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
 ## Configuração de email de devolução {#bounce-mail-config}
 
@@ -127,7 +127,7 @@ Essas regras estão disponíveis no assistente de implantação e podem ser pers
 
 * **[!UICONTROL Limit]**: o número máximo de mensagens permitidas por período.
 
-* **[!UICONTROL Type]**: o tipo de erro (grave, suave ou ignorado) usado para determinar o comportamento de envio. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} para obter as definições de tipo de erro.
+* **[!UICONTROL Type]**: o tipo de erro (grave, suave ou ignorado) usado para determinar o comportamento de envio. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} para obter as definições de tipo de erro.
 
 Para obter mais informações sobre gestão MX, consulte [esta seção](../../installation/using/email-deliverability.md#about-mx-rules).
 
@@ -137,7 +137,7 @@ Para obter mais informações sobre gestão MX, consulte [esta seção](../../in
 
 ## Gerenciamento de quarentena {#quarantine-management}
 
-Para obter orientação abrangente sobre gerenciamento de quarentena, consulte a [documentação sobre o gerenciamento de quarentena do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}.
+Para obter orientação abrangente sobre gerenciamento de quarentena, consulte a [documentação sobre o gerenciamento de quarentena do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}.
 
 ## Configuração de quarentena {#quarantine-config}
 
@@ -189,7 +189,7 @@ Para o Campaign Classic v7, as quarentenas de notificação por push seguem o me
 
 Para notificações por push do **iOS** e do **Android**, o mecanismo de quarentena usa tokens de dispositivo em vez de endereços de email. Quando um aplicativo móvel é desinstalado ou reinstalado, o token associado é colocado em quarentena.
 
-Para obter informações detalhadas sobre cenários de quarentena de notificação por push (tipos de erro do iOS e do Android, comportamento de repetição etc.), consulte a [Documentação de noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}, que inclui tabelas de tipo de erro de notificação por push abrangentes.
+Para obter informações detalhadas sobre cenários de quarentena de notificação por push (tipos de erro do iOS e do Android, comportamento de repetição etc.), consulte a [Documentação de noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}, que inclui tabelas de tipo de erro de notificação por push abrangentes.
 
 ### Especificações da quarentena de SMS {#sms-quarantine-specifics}
 
@@ -201,14 +201,14 @@ O mecanismo de quarentena de SMS varia dependendo do conector usado:
 
 * **Conector SMPP genérico estendido**: o gerenciamento de erros é tratado de forma diferente usando expressões regulares (regexes) para analisar mensagens de Relatório de Status (SR) retornadas pelo provedor SMSC.
 
-Para obter informações detalhadas sobre cenários de quarentena de SMS e tipos de erro, consulte a documentação [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}, que inclui tabelas abrangentes de tipos de erro de SMS.
+Para obter informações detalhadas sobre cenários de quarentena de SMS e tipos de erro, consulte a documentação [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}, que inclui tabelas abrangentes de tipos de erro de SMS.
 
 ## Tópicos relacionados
 
-* [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentação do Campaign v8)
-* [Gerenciamento de quarentena](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentação do Campaign v8)
+* [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentação do Campaign v8)
+* [Gerenciamento de quarentena](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentação do Campaign v8)
 * [Práticas recomendadas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentação do Campaign v8)
-* [Status de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentação do Campaign v8)
+* [Status de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentação do Campaign v8)
 * [Fluxo de trabalho de limpeza do banco de dados](../../production/using/database-cleanup-workflow.md) (v7 híbrido/no local)
 * [Configurar novas tentativas de entrega](communication-channels.md) (v7 híbrido/no local)
 * [Atualizar qualificação de rejeição](update-bounce-qualification.md) (v7 híbrido/no local)
