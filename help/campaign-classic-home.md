@@ -84,7 +84,7 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatização com workflows</a> — <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR" target="_blank">Campanha de marketing</a> — <a href="interaction/using/interaction-and-offer-management.md">Interação e gerenciamento de ofertas</a> — <a href="delivery/using/about-personalization.md">Personalização</a> — <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Relatórios</a>
+      <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatização com fluxos de trabalho</a> — <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR" target="_blank">Campanha de marketing</a> — <a href="interaction/using/interaction-and-offer-management.md">Interação e gerenciamento de ofertas</a> — <a href="delivery/using/about-personalization.md">Personalização</a> — <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Relatórios</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
