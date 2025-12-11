@@ -6,9 +6,9 @@ badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Clas
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2292'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Você pode configurar os valores exibidos alterando a escala de tempo: visualiza
 >
 >O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
->Observe que sua instância deve ser atualizada com a build mais recente do [Gold Standard](../../rn/using/gold-standard.md) ou a build mais recente do GA (21.1.3) [. &#x200B;](../../rn/using/latest-release.md) Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Observe que sua instância deve ser atualizada com a build mais recente do [Gold Standard](../../rn/using/gold-standard.md) ou a build mais recente do GA (21.1.3)[. ](../../rn/using/latest-release.md) Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Atividades do usuário {#user-activities}
 
@@ -167,9 +167,9 @@ A tabela de valores usa os seguintes indicadores:
 
 ### Compartilhamento em redes sociais {#sharing-to-social-networks}
 
-O marketing viral permite que os recipients do delivery compartilhem informações com sua rede de contatos: eles podem adicionar um link ao seu perfil (Facebook, X - anteriormente conhecido como Twitter, etc.) ou enviar uma mensagem para um amigo. Cada compartilhamento e cada acesso às informações compartilhadas é controlado na entrega. Para obter mais informações sobre marketing viral, consulte [esta seção](../../delivery/using/viral-and-social-marketing.md).
+O marketing viral permite que os destinatários da entrega compartilhem informações com suas redes de contatos: podem adicionar um link ao perfil (Facebook, X – conhecido anteriormente como Twitter, etc.) ou enviar uma mensagem para amigos. Cada compartilhamento e cada acesso às informações compartilhadas é controlado na entrega. Para obter mais informações sobre marketing viral, consulte [esta seção](../../delivery/using/viral-and-social-marketing.md).
 
-Este relatório mostra o detalhamento de mensagens compartilhadas e abertas em redes sociais (Facebook, X, etc.) e/ou por email.
+Esse relatório mostra o detalhamento de mensagens compartilhadas e abertas em redes sociais (Facebook, X, etc.) e/ou por email.
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -202,7 +202,7 @@ Esta seção inclui dois gráficos que representam o detalhamento de atividades 
 
 ## Estatísticas de atividades de compartilhamento {#statistics-on-sharing-activities}
 
-Este relatório mostra a evolução dos compartilhamentos em redes sociais (Facebook, X - anteriormente conhecido como Twitter, email, etc.).
+Esse relatório mostra a evolução dos compartilhamentos em redes sociais (Facebook, X - anteriormente conhecido como Twitter, email, etc.) ao longo do tempo.
 
 Para obter mais informações sobre marketing viral, consulte [esta seção](../../delivery/using/viral-and-social-marketing.md).
 

@@ -7,9 +7,9 @@ feature: Email Design
 role: User, Developer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1446'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Um modelo JavaScript é identificado por seu nome e namespace como esquemas e fo
 
 ### Estrutura de um modelo JavaScript {#structure-of-a-javascript-template}
 
-Exemplo de um modelo de formatação do JavaScript HTML com base no esquema &quot;cus:book&quot;:
+Exemplo de um modelo de formatação HTML JavaScript baseado no schema &quot;cus:book&quot;:
 
 ```
 <html>
@@ -191,7 +191,7 @@ Abaixo você encontrará a configuração necessária para implementar o seguint
 
 Este exemplo envolve as seguintes etapas:
 
-1. Crie o seguinte esquema (neste caso: **neo:news**):
+1. Crie o seguinte schema (neste caso: **neo:news**):
 
    ```
    <srcSchema _cs="Invitation (neo)"   entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Invitation" mappingType="sql" name="news" namespace="neo" xtkschema="xtk:srcSchema">
@@ -230,7 +230,7 @@ Este exemplo envolve as seguintes etapas:
    </srcSchema>
    ```
 
-1. Criar o formulário de tipo **[!UICONTROL Content management]** vinculado (**neo:news**)
+1. Crie o formulário do tipo **[!UICONTROL Content management]** vinculado (**neo:news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -376,11 +376,11 @@ Essa transformação é detalhada em XML em um documento conhecido como folha de
 
 Uma folha de estilos é identificada por seu nome e namespace, como esquemas e formulários. No entanto, é recomendável adicionar a extensão **.xsl** ao nome da folha de estilos.
 
-A chave de identificação de uma folha de estilos é uma cadeia de caracteres formada pelo namespace e pelo nome separados por dois pontos, por exemplo: **cus:book.xsl**.
+A chave de identificação de uma folha de estilo é uma string formada pelo namespace e pelo nome, separados por dois pontos, por exemplo: **cus:book.xsl**.
 
 ### Estrutura de uma folha de estilos {#structure-of-a-stylesheet}
 
-Exemplo de uma folha de estilos de formatação HTML com base no schema de exemplo &quot;cus:book&quot;:
+Exemplo de uma folha de estilo de formatação em HTML com base no schema de exemplo &quot;cus:book&quot;:
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -444,7 +444,7 @@ As instruções a seguir descrevem a configuração da folha de estilos para a f
 
 Por padrão, o processador XSLT busca o **modelo** que se aplica ao nó raiz ou principal do documento XML de entrada. A construção do documento de saída começa com este **modelo**.
 
-Em nosso exemplo, uma página do HTML é gerada a partir do esquema &quot;cus:book&quot; exibindo o nome do livro e a lista de capítulos.
+Em nosso exemplo, uma página HTML é gerada a partir do schema &quot;cus:book&quot; exibindo o nome do livro e a lista de capítulos.
 
 >[!NOTE]
 >

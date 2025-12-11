@@ -6,9 +6,9 @@ feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: ba53107ce06c0484070cbe0943ba439d33d5f710
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1267'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 64%
 >* [Configurar opções de rastreamento de URL](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
 >* [Rastrear links personalizados](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
 >* [Acessar logs de rastreamento](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
->* [Rastreamento de teste](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
->* [Rastreamento de relatórios](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
+>* [Rastreamento de teste](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
+>* [Relatórios de rastreamento](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
 >**Esta página documenta apenas os recursos de rastreamento específicos do Campaign Classic v7**, principalmente para implantações híbridas e locais.
 
@@ -31,34 +31,34 @@ ht-degree: 64%
 
 ### Configuração de rastreamento {#configure-tracking}
 
-Para o Campaign Classic v7 **implantações híbridas/no local**, é necessário configurar o rastreamento no nível da instância antes de usá-lo.
+Para **implantações híbridas/locais** do Campaign Classic v7, é necessário configurar o rastreamento no nível da instância antes de usá-lo.
 
 >[!NOTE]
 >
->Para o Campaign v8 Managed Cloud Services, a configuração de rastreamento é executada pela Adobe.
+>Para o Campaign v8 Managed Cloud Services, a configuração de rastreamento é realizada pela Adobe.
 
 **Princípio operacional**
 
-Antes de usar o rastreamento, é necessário configurá-lo para a sua instância. A configuração precisa ser executada no(s) servidor(es) de aplicativos e no(s) servidor(es) da Web do Adobe Campaign.
+Antes de usar o rastreamento, é necessário configurá-lo para a sua instância. A configuração precisa ser realizada no(s) servidor(es) de aplicativos e no(s) servidor(es) da web do Adobe Campaign.
 
 No Campaign, há dois tipos de rastreamento:
 
-* **Rastreamento web**: este modo permite rastrear visitas às páginas do seu site
-* **Rastreamento de mensagens**: esse modo permite rastrear as entregas de mensagens e o comportamento do destinatário
+* **Rastreamento web**: este modo permite rastrear visitas às páginas do site
+* **Rastreamento de mensagens**: este modo permite rastrear as entregas de mensagens e o comportamento do destinatário
 
-O modo de rastreamento é selecionado durante a instalação. Para instalações no local, a configuração de rastreamento deve ser definida no nível da instância. [Saiba mais](../../installation/using/deploying-an-instance.md#operating-principle)
+O modo de rastreamento é selecionado durante a instalação. Para instalações locais, a configuração de rastreamento deve ser definida no nível da instância. [Saiba mais](../../installation/using/deploying-an-instance.md#operating-principle)
 
 **Servidor de rastreamento**
 
-Para configurar o rastreamento, sua instância deve ser declarada e registrada nos servidores de rastreamento. O servidor de rastreamento é usado para registrar e recuperar informações sobre URLs clicados pelos recipients.
+Para configurar o rastreamento, sua instância deve ser declarada e registrada nos servidores de rastreamento. O servidor de rastreamento é usado para registrar e recuperar informações sobre URLs clicados pelos destinatários.
 
-Para instalações no local, o servidor de rastreamento geralmente é um servidor Web que executa o aplicativo Web do Adobe Campaign. O URL do servidor de rastreamento deve ser definido na configuração da instância. [Saiba mais](../../installation/using/deploying-an-instance.md#tracking-server)
+Para instalações locais, o servidor de rastreamento geralmente é um servidor da web que executa o aplicativo web do Adobe Campaign. O URL do servidor de rastreamento deve ser definido na configuração da instância. [Saiba mais](../../installation/using/deploying-an-instance.md#tracking-server)
 
 **Salvar o rastreamento**
 
 Depois que o rastreamento é configurado e os URLs são preenchidos, o servidor de rastreamento deve ser registrado. O registro permite que o Adobe Campaign salve informações de rastreamento e forneça relatórios e estatísticas sobre atividades rastreadas.
 
-Para instalações locais, as informações de rastreamento são armazenadas no banco de dados e recuperadas por meio de workflows técnicos. O fluxo de trabalho técnico **Rastreamento** processa e armazena os dados de rastreamento coletados do servidor de redirecionamento. [Saiba mais](../../installation/using/deploying-an-instance.md#saving-tracking)
+Para instalações locais, as informações de rastreamento são armazenadas no banco de dados e recuperadas por meio de fluxos de trabalho técnicos. O fluxo de trabalho técnico **Rastreamento** processa e armazena os dados de rastreamento coletados do servidor de redirecionamento. [Saiba mais](../../installation/using/deploying-an-instance.md#saving-tracking)
 
 ### Rastreamento de aplicativo web {#web-application-tracking}
 
@@ -80,9 +80,9 @@ A opção de recusar o rastreamento de aplicações web permite que você interr
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-As seguintes dicas de solução de problemas se aplicam a **implantações híbridas/no local do Campaign Classic v7**. Algumas informações também podem se aplicar às implantações locais do Campaign v8. Para obter ajuda com o Managed Cloud Services do Campaign v8, entre em contato com o representante da Adobe.
+As seguintes dicas de solução de problemas se aplicam a **implantações híbridas/locais do Campaign Classic v7**. Algumas informações também podem se aplicar às implantações locais do Campaign v8. Para obter ajuda com o Campaign v8 Managed Cloud Services, entre em contato com o representante da Adobe.
 
-Para obter as etapas básicas de solução de problemas de rastreamento no Campaign v8, consulte a [Documentação sobre solução de problemas de rastreamento no Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
+Para as etapas básicas de solução de problemas de rastreamento no Campaign v8, consulte a [Documentação de solução de problemas de rastreamento no Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
 
 ### Verificações básicas {#basic-checks}
 
@@ -90,15 +90,15 @@ Para obter as etapas básicas de solução de problemas de rastreamento no Campa
 
 Esse processo lê a memória compartilhada do IIS/Servidor Web e grava os logs de redirecionamento.
 
-Você pode acessá-la na Página inicial selecionando a guia Monitoramento na sua instância. Você também pode executar o seguinte comando na instância: `<user>@<instance>:~$ nlserver pdump`
+É possível acessá-lo na Página inicial selecionando a guia Monitoramento da instância. Você também pode executar o seguinte comando na instância: `<user>@<instance>:~$ nlserver pdump`
 
 Se o processo trackinglogd não aparecer na lista, inicie-o com o seguinte comando na instância: `<user>@<instance>:~$ nlserver start trackinglogd`
 
-**Verifique se o fluxo de trabalho técnico de Acompanhamento foi executado recentemente**
+**Verifique se o fluxo de trabalho técnico de Rastreamento foi executado recentemente**
 
-Você pode localizar o fluxo de trabalho técnico de Rastreamento nas pastas de workflows técnicos da > Produção > de Administração.
+Você pode localizar o fluxo de trabalho técnico de Rastreamento nas pastas Administração > Produção > Workflows técnicos.
 
-### Solução avançada de problemas {#advanced-troubleshooting}
+### Solução de problemas avançada {#advanced-troubleshooting}
 
 +++O fluxo de trabalho de rastreamento está falhando
 
@@ -108,7 +108,7 @@ Você pode localizar o fluxo de trabalho técnico de Rastreamento nas pastas de 
 
 O arquivo de log de rastreamento corrompido .../nl6/var/&lt;instance_name>/redir/log/0x0000 log pode interromper o fluxo de trabalho de rastreamento. Para detectar facilmente linhas corrompidas e removê-las para retomar o fluxo de trabalho de rastreamento, você pode usar os comandos abaixo.
 
-**Sei em qual arquivo a linha corrompida está**
+**Sei em qual arquivo está a linha corrompida**
 
 Nesse caso, linhas corrompidas podem ser encontradas no arquivo de log 0x00000000000A0000.log, mas o mesmo processo pode ser aplicado a um conjunto de arquivos, um por um.
 
@@ -213,7 +213,7 @@ Siga estas etapas ao atualizar a opção NmsTracking_Pointer:
 
 +++
 
-+++O rastreamento não funciona com algum WebMail
++++O rastreamento não funciona com alguns serviços de WebMail
 
 Você pode personalizar a fórmula de rastreamento de cliques e especificar uma fórmula de rastreamento do Adobe Analytics personalizada.
 
@@ -310,10 +310,10 @@ No Adobe Campaign Classic, um target mapping deve ser único em termos de esquem
 
 Não é possível usar vários esquemas de direcionamento com o mesmo esquema trackinglog, pois o fluxo de trabalho de rastreamento não conseguirá reconciliar os dados com a id de direcionamento.
 
-Se você não quiser usar o target mapping pronto para uso com nms:recipient, recomendamos as seguintes abordagens:
+Se não quiser utilizar o target mapping pronto para uso com nms:recipient, recomendamos as seguintes abordagens:
 
-* Se você quiser usar o targeting dimension personalizado, será necessário criar o esquema broadLog/trackingLog personalizado usando nms:broadlog como modelo (por exemplo, nms:broadLogRcp, nms:broadLogSvc etc.).
+* Se quiser usar a dimensão de direcionamento personalizada, será necessário criar o esquema broadLog/trackingLog personalizado com nms:broadlog como modelo (por exemplo: nms:broadLogRcp, nms:broadLogSvc,etc.).
 
-* Se você quiser usar OOB trackingLogRcp/broadLogRcp, o targeting dimension precisará ser nms:recipient e a dimensão de filtragem poderá ser um esquema personalizado.
+* Se quiser usar OOB trackingLogRcp/broadLogRcp, a dimensão de direcionamento precisará ser nms:recipient e a dimensão de filtragem poderá ser um schema personalizado.
 
 +++

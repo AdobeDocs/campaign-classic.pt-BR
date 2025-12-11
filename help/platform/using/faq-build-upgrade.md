@@ -8,19 +8,19 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2066'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Perguntas frequentes sobre atualização de build {#build-upgrade-faq}
 
-Estas perguntas frequentes abordam perguntas sobre atualizações de build do Campaign Classic v7, especialmente para implantações locais e híbridas.
+Esta seção de perguntas frequentes aborda dúvidas sobre atualizações de build do Campaign Classic v7, especialmente para implantações locais e híbridas.
 
 >[!NOTE]
 >
->Para obter respostas abrangentes a perguntas comuns do Campaign sobre fluxos de trabalho, entregas, públicos e muito mais, consulte as [Perguntas frequentes abrangentes sobre o Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
+>Para obter respostas abrangentes para perguntas comuns do Campaign sobre fluxos de trabalho, entregas, públicos-alvo e mais, consulte as [Perguntas frequentes abrangentes sobre o Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=pt-BR){target="_blank"}.
 
 O Adobe Campaign é atualizado regularmente. Se você conhece as [Notas de versão](../../rn/using/rn-overview.md) publicadas, provavelmente sabe que a cada ano são lançadas em média 2/3 das versões secundárias, repletas de novos recursos, melhorias e correções. Além disso, periodicamente liberamos builds apenas com correções cumulativas. Essa frequência regular de atualizações tem como objetivo fazer com que você tenha disponível as atualizações melhores e mais recentes, além de manter seu ambiente totalmente protegido e de melhorar obviamente sua experiência com nosso produto.
 

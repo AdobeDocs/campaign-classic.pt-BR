@@ -7,9 +7,9 @@ feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: b2b188ee3f202c247ceac1f59a49b7ad1771d537
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -79,8 +79,8 @@ Alguns provedores de acesso à Internet consideram automaticamente emails como s
 
 Para obter mais informações, consulte estas seções:
 
-* [Entender as falhas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentação do Campaign v8 - guia abrangente)
-* [Entender o gerenciamento de quarentena](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentação do Campaign v8 - guia abrangente)
+* [Saiba mais sobre as falhas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentação do Campaign v8 — guia abrangente)
+* [Saiba mais sobre o gerenciamento de quarentena](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentação do Campaign v8 - guia abrangente)
 
 ### Usar ferramentas de monitoramento e relatórios
 

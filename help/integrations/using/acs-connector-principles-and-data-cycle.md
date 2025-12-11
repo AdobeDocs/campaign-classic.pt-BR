@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
 source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2034'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -148,13 +148,13 @@ Os fluxos de trabalho de replicação a seguir estão disponíveis como modelos 
 * **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication): esse fluxo de trabalho incremental replica as aplicações Web selecionados para o Campaign Standard. As aplicações Web do Campaign v7 aparecerão como landing pages no Campaign Standard. Consulte o caso de uso [Sincronizar aplicações web](../../integrations/using/synchronizing-web-applications.md).
 * **[!UICONTROL `[ACS] New replication`]** (newReplication): esse fluxo de trabalho incremental é um exemplo que pode ser usado para replicar uma tabela personalizada. Consulte [Implementação avançada](#advanced-implementation).
 * **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification): esse fluxo de trabalho incremental replica mensagens de entrega do Campaign Standard para o Campaign v7.
-* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): este fluxo de trabalho incremental replica IDs de entrega, registros abrangentes de email e logs de rastreamento de email do Campaign Standard para o Campaign v7. Somente leva em conta entregas enviadas do Campaign Standard para perfis que fazem parte da tabela nms:recipients do Campaign v7.
+* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): este fluxo de trabalho incremental replica IDs de entrega, registros abrangentes de email e logs de rastreamento de email do Campaign Standard para o Campaign v7. Leva em consideração somente entregas enviadas do Campaign Standard para perfis que fazem parte da tabela nms:recipients do Campaign v7.
 
   >[!NOTE]
   >
   > Caso ambas as instâncias do Campaign Classic e do Campaign Standard sejam usadas para enviar emails com URLs rastreadas, um problema com tagIds de URL duplicadas pode ocorrer durante a sincronização. Para evitar que isso aconteça, atualize a atividade **Atualizar URLs de rastreamento** (writerTrackingUrls) no fluxo de trabalho e adicione o prefixo “ACS” à expressão de origem @tagId.
 
-* **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): este fluxo de trabalho incremental replica IDs de entrega, registros abrangentes de email e logs de rastreamento de email do Campaign Standard para o Campaign v7. Somente leva em conta deliveries enviadas do Campaign Standard para perfis que fazem parte de uma tabela específica (para definir, diferente de nms:recipients) do Campaign v7.
+* **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): este fluxo de trabalho incremental replica IDs de entrega, registros abrangentes de email e logs de rastreamento de email do Campaign Standard para o Campaign v7. Leva em consideração somente entregas enviadas do Campaign Standard para perfis que fazem parte de uma tabela específica (a definir, diferente de nms:recipients) do Campaign v7.
 
 ### Campos de destinatário padrão {#default-recipient-fields}
 

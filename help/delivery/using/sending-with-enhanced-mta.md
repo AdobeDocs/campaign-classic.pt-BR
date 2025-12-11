@@ -6,9 +6,9 @@ feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1381'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -142,7 +142,7 @@ Para obter mais informações sobre DKIM, consulte o [Manual de práticas recome
 
 Na exibição **[!UICONTROL Summary]** de um [painel](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} de entrega de email, a porcentagem de **[!UICONTROL Success]** começa em 100% e diminui progressivamente por todo o [período de validade](communication-channels.md) da entrega, conforme as rejeições temporárias e permanentes são relatadas do MTA aprimorado para o Campaign.
 
-De fato, todas as mensagens são exibidas como **[!UICONTROL Sent]** nos [enviando logs](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} assim que são transmitidas com êxito do Campaign para o MTA aprimorado. Eles permanecem com esse status, a menos que uma [rejeição](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) para essa mensagem seja comunicada do MTA aprimorado para o Campaign.
+De fato, todas as mensagens são exibidas como **[!UICONTROL Sent]** nos [logs de envio](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} assim que são retransmitidas com êxito do Campaign para o MTA aprimorado. Elas permanecem com esse status, a menos que uma [rejeição](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) para essas mensagens seja comunicada do MTA aprimorado para o Campaign.
 
 Quando mensagens de rejeição permanente são relatadas do MTA aprimorado, seu status muda de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** e a porcentagem de **[!UICONTROL Success]** é diminuída de maneira apropriada.
 
@@ -161,5 +161,5 @@ A tabela abaixo mostra as diferentes etapas no processo de envio com os KPIs cor
 | A mensagem foi transmitida com êxito do Campaign para o MTA aprimorado | A porcentagem de **[!UICONTROL Success]** começa em 100% | Enviado |
 | Mensagens com rejeição permanente são relatadas de volta do MTA aprimorado | A porcentagem de **[!UICONTROL Success]** é reduzida de maneira apropriada | Com falha |
 | Mensagens com rejeição temporária são relatadas de volta do MTA aprimorado | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** | Enviado |
-| Tentativas de mensagens com rejeição temporária são bem-sucedidas | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** \|  **[!UICONTROL Success]** porcentagem aumenta de acordo | Enviado |
+| Tentativas de mensagens com rejeição temporária são bem-sucedidas | Nenhuma alteração na porcentagem de **[!UICONTROL Success]** \| Porcentagem de **[!UICONTROL Success]** aumenta de acordo | Enviado |
 | Falha nas tentativas de mensagens com rejeição temporária | A porcentagem de **[!UICONTROL Success]** é reduzida de maneira apropriada | Com falha |

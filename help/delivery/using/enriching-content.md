@@ -7,9 +7,9 @@ feature: Data Management
 role: User, Developer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '666'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Os queries são configurados por meio do modelo de publicação na guia **[!UICO
 
 Os dados recuperados enriquecem o documento de saída XML por meio de seu elemento principal.
 
-Exemplo de retorno de um query no esquema do recipient (**nms:recipient**):
+Exemplo de retorno de uma consulta no schema do destinatário (**nms:recipient**):
 
 ```
 <book name="Content Management">
@@ -78,7 +78,7 @@ Um link de conteúdo é declarado no esquema de dados da seguinte maneira:
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-A definição do link é preenchida em uma **cadeia** tipo **`<element>`**, e o atributo **expandSchemaTarget** faz referência ao esquema de destino (&quot;cus:chapter&quot; em nosso exemplo). O esquema referenciado deve ser um esquema de conteúdo.
+A definição do link é preenchida em um **`<element>`** do tipo **string** e o atributo **expandSchemaTarget** faz referência ao esquema de destino (&quot;cus:chapter&quot; em nosso exemplo). O esquema referenciado deve ser um esquema de conteúdo.
 
 O conteúdo do elemento target enriquece o elemento link, ou seja, o elemento **`<chapter>`** em nosso esquema de exemplo:
 
@@ -136,13 +136,13 @@ Um link para uma tabela externa é declarado no esquema de dados da seguinte man
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-A definição do link é preenchida em um **link** tipo **`<element>`**, e o atributo **target** faz referência ao esquema de destino (&quot;nms:recipient&quot; em nosso exemplo).
+A definição do link é preenchida em um **`<element>`** do tipo **link** e o atributo **destino** faz referência ao schema de destino (&quot;nms:recipient&quot; em nosso exemplo).
 
 Por convenção, os links devem ser declarados do elemento principal do esquema de dados.
 
 O **Compute string** e a chave do elemento target enriquecem os atributos **`<name>-id`** e **`<name>-cs`** no elemento principal.
 
-No nosso exemplo, o link é preenchido no schema &quot;cus:book&quot;, o conteúdo dos dados do link está contido nos atributos &quot;mainContact-id&quot; e &quot;mainContact-cs&quot;:
+No nosso exemplo, o link é preenchido no schema &quot;cus:book&quot;, o conteúdo dos dados do link está nos atributos &quot;mainContact-id&quot; e &quot;mainContact-cs&quot;:
 
 ```
 <book computeString="Content management" date="2006/06/08" id="6106" language="en" mainContact-cs="John Doe (john.doe@adobe.com)" mainContact-id="3012" name="Content management" xtkschema="cus:book">
