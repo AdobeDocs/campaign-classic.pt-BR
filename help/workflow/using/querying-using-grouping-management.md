@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '254'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Neste exemplo, devemos executar uma query para localizar todos os domínios de e-mail selecionados mais de 30 vezes durante as entregas anteriores.
+Neste exemplo, devemos executar uma consulta para localizar todos os domínios de e-mail selecionados mais de 30 vezes durante as entregas anteriores.
 
 * Qual tabela precisa ser selecionada?
 

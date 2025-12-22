@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1166'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ Por exemplo, na página de entrega, use o botão **[!UICONTROL Create]** para cr
 
 ## Usar o explorer do Adobe Campaign {#using-adobe-campaign-explorer}
 
-O explorer do Adobe Campaign é acessível por meio do ícone da barra de ferramentas. Ele permite que você acesse todos os recursos do Adobe Campaign, as telas de configuração e uma visão mais detalhada de alguns dos elementos da plataforma.
+O explorer do Adobe Campaign é acessível por meio do ícone da barra de ferramentas. Ele permite acessar todos os recursos do Adobe Campaign, as telas de configuração e uma exibição mais detalhada de alguns dos elementos da plataforma.
 
 Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na **documentação do Campaign v8 (console)**:
 
@@ -114,7 +114,7 @@ Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na
 
 * [Configurações da IU do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-* [Gerenciar pastas e modos de exibição no explorador](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
+* [Gerenciar pastas e visualizações no explorer](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
 
 
 ## Trabalhar com dados {#work-with-data}
@@ -131,7 +131,7 @@ Saiba como **acessar, criar e compartilhar filtros** na [documentação do Campa
 
 A ferramenta de consulta está disponível em vários níveis do aplicativo e pode ser usada para definir as populações do público-alvo, segmentar clientes, extrair e filtrar logs de rastreamento, criar filtros e muito mais.
 
-+++Sobre o editor de query genérico
++++Sobre o editor de consultas genérico
 
 Ela fornece um assistente dedicado, o editor de consulta genérica, acessível pelo menu **[!UICONTROL Tools > Generic query editor...]**. Esse editor permite que as consultas a banco de dados extraiam, organizem, agrupem e ordenem informações. Por exemplo, ele pode recuperar destinatários que clicaram mais de n vezes em um link de boletim informativo durante um determinado período.
 
@@ -183,4 +183,4 @@ Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign 
 
 Este vídeo apresenta o espaço de trabalho do Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/39535?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

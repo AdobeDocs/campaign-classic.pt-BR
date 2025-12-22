@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1531'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -197,6 +197,6 @@ Quando a entrega for iniciada, as mensagens (e todas as tentativas) poderão ser
   >
   >Para instalações hospedadas ou híbridas, se você tiver atualizado para o [MTA aprimorado](sending-with-enhanced-mta.md), a configuração **[!UICONTROL Delivery duration]** nas entregas de email do Campaign será usada somente se definida como **3,5 dias ou menos.**. Se você definir um valor superior a 3,5 dias, ele não será levado em consideração.
 
-* **Limite da validade de recursos**: o campo **[!UICONTROL Validity limit]** é usado para recursos carregados, principalmente para a mirror page e imagens. Os recursos desta página são válidos por um tempo limitado (para economizar espaço em disco).
+* **Limite da validade de recursos**: o campo **[!UICONTROL Validity limit]** é usado para recursos carregados, principalmente para a mirror page e imagens. Os recursos desta página são válidos por tempo limitado (para economizar espaço em disco).
 
-  Os valores neste campo podem ser expressos nas seguintes unidades: **s** para segundos, **m** para minutos, **h** para horas, **d** para dias (padrão) e **y** para anos.
+  Os valores neste campo podem ser expressos nas seguintes unidades: **s** para segundos, **m** para minutos, **h** para horas, **d** para dias (padrão) e **a** para anos.

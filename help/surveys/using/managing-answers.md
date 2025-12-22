@@ -6,7 +6,7 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '848'
 ht-degree: 100%
 
@@ -84,7 +84,7 @@ Você também pode filtrar destinatários com base em respostas para exibir apen
 
 ![](assets/s_ncs_admin_survey_read_responses_wf.png)
 
-Crie o query com base nos perfis que você deseja recuperar. No exemplo a seguir, o query permite selecionar perfis com pelo menos dois contratos, incluindo um contrato do tipo A.
+Crie a consulta com base nos perfis que você deseja recuperar. No exemplo a seguir, a consulta permite selecionar perfis com pelo menos dois contratos, incluindo um contrato do tipo A.
 
 ![](assets/s_ncs_admin_survey_read_responses_edit.png)
 

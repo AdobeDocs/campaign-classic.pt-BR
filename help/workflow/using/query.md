@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1630'
 ht-degree: 100%
 
@@ -19,12 +19,12 @@ ht-degree: 100%
 
 ## Criar uma consulta {#creating-a-query}
 
-Uma consulta permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado do query e inserir dados adicionais nele.
-Para obter mais informações sobre amostras de query, consulte [esta seção](querying-recipient-table.md).
+Uma consulta permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado da consulta e inserir dados adicionais nele.
+Para obter mais informações sobre amostras de consulta, consulte [esta seção](querying-recipient-table.md).
 
 >[!NOTE]
 >
->As atividades de query não são compatíveis com campos CLOB ao usar o Oracle.
+>As atividades de consulta não são compatíveis com campos CLOB ao usar o Oracle.
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
@@ -42,7 +42,7 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
    ![](assets/s_user_segmentation_query_edit.png)
 
-   Um query pode ser baseado em dados a partir da transição de entrada, se necessário, selecionando **[!UICONTROL Temporary schema]** ao escolher as dimensões de direcionamento e de filtro.
+   Um consulta pode ser baseada em dados a partir da transição de entrada, se necessário, selecionando **[!UICONTROL Temporary schema]** ao escolher as dimensões de direcionamento e de filtro.
 
    ![](assets/query_temporary_table.png)
 
@@ -54,7 +54,7 @@ O link **[!UICONTROL Edit query...]** permite definir o tipo de direcionamento, 
 
 1. Se você selecionou **[!UICONTROL Filtering conditions]** na etapa 1 ou usou a opção **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]**, será necessário adicionar manualmente os critérios de filtragem posteriormente.
 
-   Você também pode adicionar condições de agrupamento de dados marcando a caixa correspondente. Para fazer isso, a dimensão de filtro deve ser diferente da dimensão de direcionamento do query. Para obter mais informações sobre agrupamento, consulte esta [seção](querying-using-grouping-management.md).
+   Você também pode adicionar condições de agrupamento de dados marcando a caixa correspondente. Para fazer isso, a dimensão de filtro deve ser diferente da dimensão de direcionamento da consulta. Para obter mais informações sobre agrupamento, consulte esta [seção](querying-using-grouping-management.md).
 
    Você também pode adicionar mais critérios usando o Construtor de Expressões e combinando com as opções lógicas AND, OR e EXCEPT. Em seguida, é possível pré-visualizar o **[!UICONTROL Corresponding SQL query...]** para sua combinação de critérios. Para obter mais informações, consulte [esta seção](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
@@ -86,7 +86,7 @@ Para adicionar dados do banco de dados do Adobe Campaign:
 
    ![](assets/query_add_columns.png)
 
-1. Se os dados pertencerem à dimensão de filtro do query, basta selecioná-lo na lista de campos disponíveis para exibi-lo nas colunas de output.
+1. Se os dados pertencerem à dimensão de filtro da consulta, basta selecioná-la na lista de campos disponíveis para exibi-la nas colunas de output.
 
    ![](assets/wf_add_data_field_selection.png)
 
@@ -110,7 +110,7 @@ Para adicionar uma coleção de informações vinculadas a uma população direc
 
      >[!IMPORTANT]
      >
-     >Esse modo otimiza o query SQL gerada graças a uma junção direta dos elementos de coleção.
+     >Esse modo otimiza a consulta SQL gerada graças a uma junção direta dos elementos de coleção.
      >
      >Se a condição inicial não for respeitada, o resultado pode ser falho (linhas ausentes ou sobrepostas).
 
@@ -127,13 +127,13 @@ Para adicionar uma coleção de informações vinculadas a uma população direc
 
 ## Exemplo: direcionamento em atributos de destinatários simples {#example--targeting-on-simple-recipient-attributes}
 
-No exemplo a seguir, o query busca identificar homens que moram na França com idades entre 18 e 30. Este query será usado em um fluxo de trabalho que visa fazer uma oferta exclusiva, por exemplo.
+No exemplo a seguir, a consulta busca identificar homens que moram na França com idades entre 18 e 30. Este consulta será usado em um fluxo de trabalho que visa fazer uma oferta exclusiva, por exemplo.
 
 >[!NOTE]
 >
->Os exemplos de query são apresentados [nesta seção](querying-recipient-table.md).
+>Os exemplos de consulta são apresentados [nesta seção](querying-recipient-table.md).
 
-1. Nomeie o query e selecione o link **[!UICONTROL Edit query...]**.
+1. Nomeie a consulta e selecione o link **[!UICONTROL Edit query...]**.
 1. Selecione **[!UICONTROL Filtering conditions]** na lista de tipos de filtros disponíveis.
 1. Insira os diferentes critérios para o target proposto. Os critérios são combinados usando a opção AND. Para ser incluído na seleção, os destinatários terão de cumprir as quatro condições seguintes:
 
@@ -148,12 +148,12 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
 
    ![](assets/query_example_sql.png)
 
-1. Você pode verificar se os seus critérios estão corretos visualizando os destinatários que correspondam ao seu query na guia relevante:
+1. Você pode verificar se os seus critérios estão corretos visualizando os destinatários que correspondam a sua consulta na guia relevante:
 
    ![](assets/query_example_preview.png)
 
 1. Salve os filtros para usá-los posteriormente clicando em **[!UICONTROL Finish]** > **[!UICONTROL OK]**.
-1. Continue editando seu fluxo de trabalho adicionando outras atividades a ele. Depois de iniciado e após o término da etapa de query anterior, o número de destinatários encontrados será exibido. Você pode exibir mais detalhes usando o menu pop-up do mouse (clique com o botão direito do mouse na transição > **[!UICONTROL Display the target...]**).
+1. Continue editando seu fluxo de trabalho adicionando outras atividades a ele. Depois de iniciado e após o término da etapa da consulta anterior, o número de destinatários encontrados será exibido. Você pode exibir mais detalhes usando o menu pop-up do mouse (clique com o botão direito do mouse na transição > **[!UICONTROL Display the target...]**).
 
    ![](assets/query_example_result.png)
 
@@ -163,7 +163,7 @@ No exemplo a seguir, o query busca identificar homens que moram na França com i
 * esquema
 * recCount
 
-Esse conjunto de três valores identifica a população de destino do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de público-alvo, **[!UICONTROL schema]** é o esquema da população (normalmente, nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica a população de destino da consulta. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de público-alvo, **[!UICONTROL schema]** é o esquema da população (normalmente, nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 Este valor é o esquema da tabela de trabalho. Esse parâmetro é válido para todas as transições com **[!UICONTROL tableName]** e **[!UICONTROL schema]**.
 

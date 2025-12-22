@@ -6,7 +6,7 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
 ht-degree: 100%
 
@@ -48,14 +48,14 @@ A renderização terá esta aparência:
 
 ### Exemplo: usar um filtro em uma tabela dinâmica {#example--use-a-filter-in-a-pivot-table}
 
-Neste exemplo, o filtro permite exibir somente clientes não parisienses na tabela dinâmica, sem usar outra query antecipadamente.
+Neste exemplo, o filtro permite exibir somente clientes não parisienses na tabela dinâmica, sem usar outra consulta antecipadamente.
 
 Siga as etapas abaixo:
 
 1. Coloque uma página no gráfico e edite-o.
 1. Crie uma tabela dinâmica.
 1. Vá para a guia **[!UICONTROL Data]** e selecione o cubo a ser usado.
-1. Clique no link **[!UICONTROL Filter data...]** e defina a seguinte query para remover a Adobe da lista de empresas.
+1. Clique no link **[!UICONTROL Filter data...]** e defina a seguinte consulta para remover a Adobe da lista de empresas.
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 
@@ -74,7 +74,7 @@ Na página que contém a tabela ou o gráfico, a guia **[!UICONTROL Data]** perm
 * A opção **[!UICONTROL New query]** permite criar uma consulta para coletar dados. Para obter mais informações, consulte [Definir um filtro direto sobre os dados](#defining-a-direct-filter-on-data).
 * A opção **[!UICONTROL Context data]** permite usar os dados de entrada: o contexto do relatório coincide com as informações contidas na transição de entrada da página que contém o gráfico ou a tabela. Esse contexto pode, por exemplo, conter dados coletados por uma atividade **[!UICONTROL Query]** colocada antes da atividade **[!UICONTROL Page]** e para a qual é necessário especificar a tabela e os campos que o relatório aborda.
 
-Por exemplo, em uma caixa de query, crie a seguinte query para os destinatários:
+Por exemplo, em uma caixa de consulta, crie a seguinte consulta para os destinatários:
 
 ![](assets/s_ncs_advuser_report_datasource_2.png)
 
@@ -84,6 +84,6 @@ O local de dados é inferido automaticamente. Se necessário, é possível forç
 
 ![](assets/s_ncs_advuser_report_datasource_4.png)
 
-Quando selecionar os dados que as estatísticas abordarão, os campos disponíveis correspondem aos dados especificados na query.
+Quando selecionar os dados que as estatísticas abordarão, os campos disponíveis correspondem aos dados especificados na consulta.
 
 ![](assets/s_ncs_advuser_report_datasource_1.png)

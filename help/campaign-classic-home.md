@@ -4,9 +4,9 @@ product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Introdução</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Interface do usuário</a> - <a href="platform/using/launching-adobe-campaign.md">Conectar-se ao Campaign</a> - <a href="platform/using/get-started-data-import-export.md">Importar e exportar dados</a> - <a href="platform/using/access-management.md">Permissões</a>
+      <strong>Introdução</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Interface</a> – <a href="platform/using/launching-adobe-campaign.md">Conecte-se ao Campaign</a> – <a href="platform/using/get-started-data-import-export.md">Importação e exportação de dados</a> – <a href="platform/using/access-management.md">Permissões</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
