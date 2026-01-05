@@ -8,7 +8,7 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2682'
 ht-degree: 100%
 
@@ -88,7 +88,7 @@ ht-degree: 100%
          + [Criar e gerenciar grupos](platform/using/access-management-groups.md)
       + [Usar direitos nomeados para configurar permissões](platform/using/access-management-named-rights.md)
       + [Gerenciar acesso a pastas - OCULTO](platform/using/access-management-folders.md)
-   + Conectores CRM  {#connectors}
+   + Conectores CRM {#connectors}
       + [Introdução aos Conectores CRM](platform/using/crm-connectors.md)
       + [Conecte-se com o Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
       + [Conecte-se com o Salesforce.com](platform/using/crm-sfdc.md)
@@ -182,7 +182,7 @@ ht-degree: 100%
          + [Analisar o resultado](delivery/using/a-b-testing-uc-analyzing.md)
    + Serviços e assinaturas {#subscriptions-and-referrals}
       + [Sobre serviços e subscrições](delivery/using/about-services-and-subscriptions.md)
-      + [Gerenciar subscrições](delivery/using/managing-subscriptions.md)
+      + [Gerenciar assinaturas](delivery/using/managing-subscriptions.md)
       + [Marketing viral e social](delivery/using/viral-and-social-marketing.md)
    + Monitorar entregas {#monitoring-deliveries}
       + [Monitorar desempenho da entrega](delivery/using/about-delivery-monitoring.md)
@@ -190,7 +190,7 @@ ht-degree: 100%
       + [Desempenho da entrega e solução de problemas](delivery/using/delivery-performance-troubleshooting.md)
       + [Falhas de entrega e gerenciamento de quarentena](delivery/using/delivery-failures-quarantine.md)
       + [Avançado: logs de entrega personalizados](delivery/using/customize-delivery-logs.md)
-   + Gerenciamento de capacidade de entrega {#deliverability-management}
+   + Gerenciamento de avaliação de entrega {#deliverability-management}
       + [O que é capacidade de entrega](delivery/using/about-deliverability.md)
       + [Controlar conteúdo da mensagem](delivery/using/control-message-content.md)
       + [Renderização da caixa de entrada](delivery/using/inbox-rendering.md)
@@ -298,7 +298,7 @@ ht-degree: 100%
       + [Interface do editor de conteúdo](web/using/content-editor-interface.md)
       + [Editar conteúdo](web/using/editing-content.md)
       + [Práticas recomendadas de edição de conteúdo](web/using/content-editing-best-practices.md)
-      + [Criar uma landing page](web/using/creating-a-landing-page.md)
+      + [Criar uma página de destino](web/using/creating-a-landing-page.md)
       + [Caso de uso: criar uma entrega de email](web/using/use-case-creating-an-email-delivery.md)
    + Formulários web {#web-forms}
       + [Introdução aos formulários web](web/using/about-web-forms.md)
@@ -605,7 +605,7 @@ ht-degree: 100%
       + [Definir permissões de URL](installation/using/url-permissions.md)
       + [Arquivos e recursos](installation/using/file-res-management.md)
       + [Configurar Tomcat](installation/using/configure-tomcat.md)
-      + [Definir configurações de entrega](installation/using/configure-delivery-settings.md)
+      + [Definir as configurações de entrega](installation/using/configure-delivery-settings.md)
       + [Configurações técnicas de email](installation/using/email-deliverability.md)
       + [Utilização de servidores MX com o Campaign](installation/using/using-mx-servers.md)
       + [Configurar email Cco](installation/using/email-archiving.md)
