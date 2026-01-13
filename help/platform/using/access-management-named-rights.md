@@ -25,13 +25,13 @@ Esses direitos são os seguintes:
 
   >[!IMPORTANT]
   >
-  >**Depois de migrar para o IMS:** depois de migrar para o Adobe Identity Management System (IMS), qualquer Perfil de Produto ou Direito Nomeado que contenha a palavra &quot;admin&quot; em seu nome (como &quot;Administradores&quot;, &quot;admin&quot;, &quot;administradores&quot; etc.) concederá acesso automaticamente ao Painel de Controle do Campaign. Recomendamos evitar o uso de &quot;administrador&quot; em nomes de Direito nomeado ou Função, a menos que você pretenda que esses usuários tenham acesso ao Painel de controle do Campaign. Saiba mais sobre [migração do IMS](../../technotes/using/migrate-users-to-ims.md) e [gerenciamento do acesso ao Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+  >**Depois de migrar para o IMS:** depois de migrar para o Adobe Identity Management System (IMS), qualquer Perfil de Produto ou Direito Nomeado que contenha a palavra &quot;admin&quot; em seu nome (como &quot;Administradores&quot;, &quot;admin&quot;, &quot;administradores&quot; etc.) concederá acesso automaticamente ao Painel de Controle do Campaign. Recomendamos evitar o uso de &quot;administrador&quot; em nomes de Direito nomeado ou Função, a menos que você pretenda que esses usuários tenham acesso ao Painel de controle do Campaign. Saiba mais sobre [migração do IMS](../../technotes/using/migrate-users-to-ims.md) e [gerenciamento do acesso ao Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR){target="_blank"}.
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**: é possível definir várias etapas de aprovação em fluxos de trabalho e entregas para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com o direito **[!UICONTROL APPROVAL ADMINISTRATION]** podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas.
 
   >[!IMPORTANT]
   >
-  >**Após migrar para IMS:** Perfis de produto ou Direitos nomeados que contenham a palavra &quot;administrador&quot; (como &quot;Administrador de aprovação&quot;) concederão acesso ao Painel de Controle do Campaign. Saiba mais sobre [migração do IMS](../../technotes/using/migrate-users-to-ims.md) e [gerenciamento do acesso ao Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+  >**Após migrar para IMS:** Perfis de produto ou Direitos nomeados que contenham a palavra &quot;administrador&quot; (como &quot;Administrador de aprovação&quot;) concederão acesso ao Painel de Controle do Campaign. Saiba mais sobre [migração do IMS](../../technotes/using/migrate-users-to-ims.md) e [gerenciamento do acesso ao Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR){target="_blank"}.
 
 * **[!UICONTROL CENTRAL]**: direito de gerenciamento central (marketing distribuído).
 
@@ -79,4 +79,4 @@ Os grupos padrão e os direitos nomeados permitem que os operadores acessem dete
 
 A matriz de direitos de acesso do Adobe Campaign está disponível [aqui](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![imagem](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
+[![imagem](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=pt-BR)
