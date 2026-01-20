@@ -11,7 +11,7 @@ ht-degree: 7%
 **Gerado**: 13/01/2026\
 **Total de Arquivos**: 111
 
----
+&#x200B;---
 
 ## Resumo de 📈
 
@@ -25,7 +25,7 @@ ht-degree: 7%
 
 **🎯Impacto na reorganização**: 67 arquivos a serem excluídos (60% de redução)
 
----
+&#x200B;---
 
 ## 📋 Análise de arquivo concluída
 
@@ -44,7 +44,7 @@ ht-degree: 7%
 
 **Resumo**: 7 DELETE, 0 MANTER, 0 MOVER, 1 REVISÃO
 
----
+&#x200B;---
 
 ### Email 📧 (18 arquivos)
 
@@ -64,7 +64,7 @@ ht-degree: 7%
 
 **Resumo**: 16 DELETE, 0 MANTER, 0 MOVER, 2 REVISAR
 
----
+&#x200B;---
 
 ### 📱 SMS (7 arquivos)
 
@@ -80,7 +80,7 @@ ht-degree: 7%
 
 **Resumo**: 5 DELETE, 1 MANTER, 0 MOVER, 1 REVISÃO
 
----
+&#x200B;---
 
 ### 🔔 Notificações por push (9 arquivos)
 
@@ -95,7 +95,7 @@ ht-degree: 7%
 
 **Resumo**: 8 DELETE, 0 MANTER, 0 MOVER, 1 REVISÃO
 
----
+&#x200B;---
 
 ### 📮 Correspondência direta (4 arquivos)
 
@@ -108,7 +108,7 @@ ht-degree: 7%
 
 **Resumo**: 4 DELETE, 0 MANTER, 0 MOVER, 0 REVISAR
 
----
+&#x200B;---
 
 ### 🎯 Personalization (8 arquivos)
 
@@ -123,7 +123,7 @@ ht-degree: 7%
 
 **Resumo**: 6 DELETE, 1 MANTER, 0 MOVER, 1 REVISÃO
 
----
+&#x200B;---
 
 ### 📋 Modelos e sementes (6 arquivos)
 
@@ -136,7 +136,7 @@ ht-degree: 7%
 
 **Resumo**: 6 DELETE, 0 MANTER, 0 MOVER, 0 REVISAR
 
----
+&#x200B;---
 
 ### Monitoramento de 📊 (14 arquivos)
 
@@ -149,7 +149,7 @@ ht-degree: 7%
 
 **Resumo**: 12 DELETE, 0 MANTER, 1 MOVER, 1 REVISÃO
 
----
+&#x200B;---
 
 ### Solução de problemas do 🔧 (9 arquivos)
 
@@ -163,7 +163,7 @@ ht-degree: 7%
 
 **Resumo**: 4 DELETE, 2 MANTER, 2 MOVER, 1 REVISÃO
 
----
+&#x200B;---
 
 ### 📬 Entregabilidade (8 arquivos)
 
@@ -176,7 +176,7 @@ ht-degree: 7%
 
 **Resumo**: 4 DELETE, 3 MANTER, 0 MOVER, 1 REVISÃO
 
----
+&#x200B;---
 
 ## ✅ Deve Manter - Recursos Específicos Do v7
 
@@ -190,7 +190,7 @@ ht-degree: 7%
 | `monitoring-deliverability.md` | Ferramentas de monitoramento no local | &quot;As ferramentas de monitoramento da capacidade de entrega no local são específicas para o Campaign v7&quot; |
 | ... | *(14 mais arquivos específicos do v7)* | Vários selos somente v7 |
 
----
+&#x200B;---
 
 ## 🗑️ Vitórias rápidas - Seguro para excluir agora
 
@@ -223,7 +223,7 @@ ht-degree: 7%
 
 **Total**: **67 arquivos** seguros para excluir imediatamente
 
----
+&#x200B;---
 
 ## ➡️ Conteúdo a ser migrado primeiro
 
@@ -240,7 +240,7 @@ ht-degree: 7%
 
 **Processo**: Migrar conteúdo → Atualizar v8 → Excluir da v7
 
----
+&#x200B;---
 
 ## Revisão Manual de 🔍 Necessária
 
@@ -253,36 +253,22 @@ ht-degree: 7%
 | `sending-emails-on-japanese-mobiles.md` | 0% | Específico ao Japão, verificar relevância | Verificar se ainda for necessário |
 | ... | *(15 mais)* | Vários resultados parciais | Comparação manual |
 
----
+&#x200B;---
 
 ## 🎯 Plano de execução
 
-### Semana 1: Exclusões rápidas
-- [ ] Excluir arquivos de email (16)
-- [ ] Excluir arquivos SMS (5)
-- [ ] Excluir arquivos Push (8)
-- [ ] Excluir arquivos de correspondência direta (4)
-- [ ] Excluir arquivos de modelos (6)
-- [ ] Excluir arquivos de monitoramento (12)
-- **Total**: 51 arquivos excluídos
+### Semana 1: Exclusões rápidas- [ ] Excluir arquivos de email (16)- [ ] Excluir arquivos SMS (5)- [ ] Excluir arquivos Push (8)- [ ] Excluir arquivos de correspondência direta (4)- [ ] Excluir arquivos de modelos (6)- [ ] Excluir arquivos de monitoramento (12)- **Total**: 51 arquivos excluídos
 
-### Semana 2: migração de conteúdo
-- [ ] Migrar dicas de solução de problemas (2 arquivos)
-- [ Práticas recomendadas de migração do ] (3 arquivos)
-- [ ] Migrar padrões avançados (3 arquivos)
-- [ ] Excluir após a migração (total de 8 arquivos)
+### Semana 2: migração de conteúdo- [ ] Migrar dicas de solução de problemas (2 arquivos)- [ Práticas recomendadas de migração do ] (3 arquivos)- [ ] Migrar padrões avançados (3 arquivos)- [ ] Excluir após a migração (total de 8 arquivos)
 
-### Semana 3: Insígnia e revisão
-- [ ] Arquivos específicos do Badge v7 (18 arquivos)
-- [ ] Revisar correspondências parciais (18 arquivos)
-- [ ] Tome as decisões finais
+### Semana 3: Insígnia e revisão- [ ] Arquivos específicos do Badge v7 (18 arquivos)- [ ] Revisar correspondências parciais (18 arquivos)- [ ] Tome as decisões finais
 
----
+&#x200B;---
 
 **Linha do Tempo Estimada**: 3 semanas\
 **Resultado Esperado**: 111 → 44 arquivos (redução de 60%)
 
----
+&#x200B;---
 
 **Última atualização**: 13/01/2026\
 **Próxima Ação**: Executar exclusões da Semana 1

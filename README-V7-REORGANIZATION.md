@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **2 prompts para análise e organizador la doc v7 → v8**
 
----
+&#x200B;---
 
 ## 📁 Fichiers
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 | `PROMPT-1-OVERVIEW-ALL-FOLDERS.md` | Vue d&#39;ensemble de TOUS les folders v7 | `v7-reorganization-overview.md` |
 | `PROMPT-2-DETAILED-FOLDER.md` | Analisar correspondência de % avec da pasta détaillée d&#39;UN | `[folder]-detailed-analysis.md` |
 
----
+&#x200B;---
 
 ## Utilização de 🚀
 
@@ -45,7 +45,7 @@ open PROMPT-1-OVERVIEW-ALL-FOLDERS.md
 
 **Alvo** : ~50-60 páginas Markdown
 
----
+&#x200B;---
 
 ### 2️⃣ a pasta Analyze Détaillée d&#39;un
 
@@ -78,7 +78,7 @@ open PROMPT-2-DETAILED-FOLDER.md
 
 **Alvo** : ~30-40 páginas Markdown
 
----
+&#x200B;---
 
 ## 📊 Exemplo de saída
 
@@ -117,66 +117,35 @@ open PROMPT-2-DETAILED-FOLDER.md
 ...
 ```
 
----
+&#x200B;---
 
 ## 🎯 Fluxo de trabalho recomendado
 
-### Semana 1 : Vue d&#39;ensemble
-1. Exécuter **Prompt 1** → Obtenir `v7-reorganization-overview.md`
-2. Identificador les folders prioritaires
-3. Partes interessadas do Partager avec
+### Semana 1 : Vue d&#39;ensemble1. Exécuter **Prompt 1** → Obtenir `v7-reorganization-overview.md`2. Identificador les folders prioritaires3. Partes interessadas do Partager avec
 
-### Semaine 2-4 : Analisar détaillée
-1. Prioridade de pasta do cartão de memória:
-   - Exécuter **Prompt 2**
-   - Obtenir `[folder]-detailed-analysis.md`
-   - Valider les Decisions
-   - Iniciador menos ações
+### Semaine 2-4 : Analisar détaillée1. Prioridade de pasta do cartão de memória:   - Exécuter **Prompt 2**   - Obtenir `[folder]-detailed-analysis.md`   - Valider les Decisions   - Iniciador menos ações
 
-### Semaine 5+ : Execução
-1. Supprimer les fichiers identifiés (DELETE)
-2. Badger les fichiers somente v7 (KEEP)
-3. Migrer le contenu manquant (MOVER)
-4. Revisor les cas ambigus (AVALIAÇÃO)
+### Semaine 5+ : Execução1. Supprimer les fichiers identifiés (DELETE)2. Badger les fichiers somente v7 (KEEP)3. Migrer le contenu manquant (MOVER)4. Revisor les cas ambigus (AVALIAÇÃO)
 
----
+&#x200B;---
 
 ## 💡 Dicas
 
-### Despejar menos prompts
-- ✅ Copiadora/coleira l&#39;intégralité du prompt
-- ✅ Formato le do modificador Ne pass
-- ✅ Segmento do adaptador le chemin du folder (Prompt 2)
+### Despejar menos prompts- ✅ Copiadora/coleira l&#39;intégralité du prompt- ✅ Formato le do modificador Ne pass- ✅ Segmento do adaptador le chemin du folder (Prompt 2)
 
-### Despejar menos saídas
-- 📝 Output en Markdown (pas HTML)
-- 🔗 Automáticas de linhas de cliques
-- ✅ Caixas de seleção para rastreamento
-- 📊 Estatísticas definidas pourcentages
-- 🎨 Emojis et icônes
+### Despejar menos saídas- 📝 Output en Markdown (pas HTML)- 🔗 Automáticas de linhas de cliques- ✅ Caixas de seleção para rastreamento- 📊 Estatísticas definidas pourcentages- 🎨 Emojis et icônes
 
-### Pour l&#39;analyze
-- 🎯 pastas do Commerce par les gros (entrega, fluxo de trabalho)
-- ⚡ Prioriser les quick wins (95-100% de correspondência)
-- 🔍 Manual do revisor les cas ambigus (&lt;70% de correspondência)
-- ✅ Valider avec SME avant supressão maciça
+### Pour l&#39;analyze- 🎯 pastas do Commerce par les gros (entrega, fluxo de trabalho)- ⚡ Prioriser les quick wins (95-100% de correspondência)- 🔍 Manual do revisor les cas ambigus (&lt;70% de correspondência)- ✅ Valider avec SME avant supressão maciça
 
----
+&#x200B;---
 
 ## ⚠️ Importante
 
-### Avant de supprimer
-1. ✅ Vérifier l&#39;équivalent v8
-2. ✅ Vérifier qu&#39;il n&#39;y a pas de contenu v7-specific
-3. ✅ Metros à hora `redirects.csv`
-4. ✅ Valider avec un expert (pour les premiers)
+### Avant de supprimer1. ✅ Vérifier l&#39;équivalent v82. ✅ Vérifier qu&#39;il n&#39;y a pas de contenu v7-specific3. ✅ Metros à hora `redirects.csv`4. ✅ Valider avec un expert (pour les premiers)
 
-### Pour les fichiers somente v7
-1. ✅ Ajouter un badge au début du fichier
-2. ✅ Expliquer pourquoi c&#39;est somente v7
-3. ✅ Limitações do Lien vers v8
+### Pour les fichiers somente v71. ✅ Ajouter un badge au début du fichier2. ✅ Expliquer pourquoi c&#39;est somente v73. ✅ Limitações do Lien vers v8
 
----
+&#x200B;---
 
 ## Suporte do 🆘
 
@@ -185,7 +154,7 @@ open PROMPT-2-DETAILED-FOLDER.md
 - Output trop long → Demander un currsumé
 - Besoin d&#39;aide → Ping l&#39;équipe doc
 
----
+&#x200B;---
 
 **Dernière mise à jour** : 13/01/2026
 

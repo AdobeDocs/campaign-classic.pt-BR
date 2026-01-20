@@ -11,7 +11,7 @@ ht-degree: 24%
 **Total de pastas**: 21\
 **Total de arquivos**: ~1.500
 
----
+&#x200B;---
 
 ## 📈 Resumo executivo
 
@@ -25,7 +25,7 @@ ht-degree: 24%
 
 **🎯Redução estimada**: 60-75% (1.500 → 400-600 arquivos)
 
----
+&#x200B;---
 
 ## Análise de pasta 📁 por prioridade
 
@@ -41,7 +41,7 @@ ht-degree: 24%
 | 📂 `/migration/` | 8 | Migração v6.1 → v7 | Específico ao v7 | ✅ MANTER TUDO |
 | **TOTAL** | **108** | **7%** | - | **Medalha como somente v7** |
 
----
+&#x200B;---
 
 ### 🔴 Prioridade 2: 60-70% DELETE - Alta Duplicação
 
@@ -54,7 +54,7 @@ ht-degree: 24%
 | 📂 `/campaign/` | 11 | 2 (18 %) | 7 (64 %) | 1 (9%) | 1 (9%) | Gerenciamento de campanhas no v8 |
 | **TOTAL** | **336** | **59** | **190** | **28** | **59** | **Alto potencial de redução** |
 
----
+&#x200B;---
 
 ### 🟡 Prioridade 3: 30-50% MISTA - Análise Detalhada Necessária
 
@@ -68,7 +68,7 @@ ht-degree: 24%
 | 📂 `/message-center/` | 16 | 60% | 30% | Mensagens transacionais |
 | **TOTAL** | **230** | **~55%** | **~25%** | **Requer revisão pasta por pasta** |
 
----
+&#x200B;---
 
 ## 🎯 Vitórias rápidas - Semana 1
 
@@ -89,7 +89,7 @@ ht-degree: 24%
 - ✅ `query.md` (fluxo de trabalho) → `campaign/v8/automation/workflow/query`
 - ✅ `about-workflows.md` → `campaign/v8/automation/workflow`
 
----
+&#x200B;---
 
 ## 📋 Detalhamento detalhado da pasta
 
@@ -121,7 +121,7 @@ ht-degree: 24%
 - 🗑️ `creating-an-email-delivery.md` → 95% em `campaign-web/v8/email/create-email`
 - 🗑️ `sms-channel.md` → 90% em `campaign-web/v8/msg/send-sms`
 
----
+&#x200B;---
 
 ### 📂 Fluxo de trabalho (`/help/workflow/using/`) - 121 arquivos
 
@@ -148,7 +148,7 @@ ht-degree: 24%
 - 🗑️ `split.md` → 95% em `campaign/v8/automation/workflow/split`
 - 🗑️ `enrichment.md` → 95% em `campaign/v8/automation/workflow/enrichment`
 
----
+&#x200B;---
 
 ### 📂 Instalação (`/help/installation/using/`) - 75 arquivos
 
@@ -165,7 +165,7 @@ ht-degree: 24%
 
 **Motivo**: v8 é somente nuvem, todos os documentos de configuração locais são específicos do v7.
 
----
+&#x200B;---
 
 ### 📂 Web (`/help/web/using/`) - 26 arquivos
 
@@ -179,40 +179,19 @@ ht-degree: 24%
 
 **Motivo**: v7 tem estrutura completa de Aplicativos Web e v8 simplificou Páginas de Aterrissagem.
 
----
+&#x200B;---
 
 ## Plano de ação ✅
 
-### Semana 1: Exclusões de Alto Impacto
-- [ ] `/delivery/`: Excluir 67 arquivos (email, SMS, noções básicas de push)
-- [ ] `/workflow/`: Excluir 60 arquivos (atividades comuns)
-- [ ] `/reporting/`: Excluir 22 arquivos (relatórios padrão)
-- [ ] `/platform/`: Excluir 34 arquivos (recursos comuns)
-- [ ] `/campaign/`: Excluir 7 arquivos (gerenciamento de campanha)
-- **Total**: 190 arquivos excluídos (13% de redução)
+### Semana 1: Exclusões de Alto Impacto- [ ] `/delivery/`: Excluir 67 arquivos (email, SMS, noções básicas de push)- [ ] `/workflow/`: Excluir 60 arquivos (atividades comuns)- [ ] `/reporting/`: Excluir 22 arquivos (relatórios padrão)- [ ] `/platform/`: Excluir 34 arquivos (recursos comuns)- [ ] `/campaign/`: Excluir 7 arquivos (gerenciamento de campanha)- **Total**: 190 arquivos excluídos (13% de redução)
 
-### Semana 2: emblema específico do v7
-- [ ] `/installation/`: Arquivos de selo 71 como &quot;v7 somente no local&quot;
-- [ ] `/mrm/`: Arquivos de selo 5 como &quot;Não disponível no v8 FFDA&quot;
-- [ ] `/surveys/`: Arquivos de selo 8 como &quot;Não disponível no v8 FFDA&quot;
-- [ ] `/distributed/`: Arquivos de selo 7 como &quot;Não disponível no v8 FFDA&quot;
-- [ ] `/web/`: Marcar 24 arquivos como &quot;Aplicativos Web v7&quot;
-- **Total**: 115 arquivos com medalha
+### Semana 2: emblema específico do v7- [ ] `/installation/`: Arquivos de selo 71 como &quot;v7 somente no local&quot;- [ ] `/mrm/`: Arquivos de selo 5 como &quot;Não disponível no v8 FFDA&quot;- [ ] `/surveys/`: Arquivos de selo 8 como &quot;Não disponível no v8 FFDA&quot;- [ ] `/distributed/`: Arquivos de selo 7 como &quot;Não disponível no v8 FFDA&quot;- [ ] `/web/`: Marcar 24 arquivos como &quot;Aplicativos Web v7&quot;- **Total**: 115 arquivos com medalha
 
-### Semana 3: migração de conteúdo
-- [ ] Migrar dicas de solução de problemas do `/delivery/` para o v8
-- [ ] Migrar práticas recomendadas de fluxo de trabalho para v8
-- [ ] Migrar padrões avançados do `/platform/` para v8
-- **Total**: 40 arquivos migrados e excluídos
+### Semana 3: migração de conteúdo- [ ] Migrar dicas de solução de problemas do `/delivery/` para o v8- [ ] Migrar práticas recomendadas de fluxo de trabalho para v8- [ ] Migrar padrões avançados do `/platform/` para v8- **Total**: 40 arquivos migrados e excluídos
 
-### Semana 4: Revisão Manual
-- [ ] Revisar `/configuration/` conteúdo misto
-- [ ] Revise a disponibilidade do conector `/integrations/`
-- [ ] Revisão `/interaction/` cobertura do mecanismo de oferta
-- [ ] Revisar o status do recurso `/response/`
-- **Total**: 50 arquivos revisados e decididos
+### Semana 4: Revisão Manual- [ ] Revisar `/configuration/` conteúdo misto- [ ] Revise a disponibilidade do conector `/integrations/`- [ ] Revisão `/interaction/` cobertura do mecanismo de oferta- [ ] Revisar o status do recurso `/response/`- **Total**: 50 arquivos revisados e decididos
 
----
+&#x200B;---
 
 ## 📊 Resultados esperados
 
@@ -228,7 +207,7 @@ ht-degree: 24%
 
 **Meta final**: 1.500 → 400-600 arquivos (redução de 60-73%)
 
----
+&#x200B;---
 
 ## 🎯 Métricas de sucesso
 
@@ -240,7 +219,7 @@ ht-degree: 24%
 | Links quebrados | 0 | ⏳ pendente(s) |
 | Aprovação da parte interessada | ✅ | ⏳ pendente(s) |
 
----
+&#x200B;---
 
 **Última atualização**: 13/01/2026\
 **Próxima revisão**: após a semana 1 da execução

@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **Copie e cole este prompt inteiro no Cursor/ChatGPT para analisar qualquer pasta v7**
 
----
+&#x200B;---
 
 ## 📋 O PROMPT (COPIAR DAQUI) ⬇️
 
@@ -187,57 +187,27 @@ Generate a complete Markdown report with this structure:
 Generate the complete Markdown report now.
 ```
 
----
+&#x200B;---
 
 ## 🎯 INSTRUÇÕES DE DEMONSTRAÇÃO
 
-### Etapa 1: mostrar o prompt
-1. Abrir este arquivo (`DEMO-PROMPT-STANDALONE.md`)
-2. Role até a seção &quot;THE PROMPT&quot;
-3. Diga: *&quot;Este é o nosso prompt de análise automatizada&quot;*
+### Etapa 1: mostrar o prompt1. Abrir este arquivo (`DEMO-PROMPT-STANDALONE.md`)2. Role até a seção &quot;THE PROMPT&quot;3. Diga: *&quot;Este é o nosso prompt de análise automatizada&quot;*
 
-### Etapa 2: Copiar o prompt
-1. Selecione tudo, desde &quot;# Análise de documentação do Campaign v7&quot; até o fim
-2. Copiar para a área de transferência
-3. Diga: *&quot;Acabei de copiar o prompt inteiro...&quot;*
+### Etapa 2: Copiar o prompt1. Selecione tudo, desde &quot;# Análise de documentação do Campaign v7&quot; até o fim2. Copiar para a área de transferência3. Diga: *&quot;Acabei de copiar o prompt inteiro...&quot;*
 
-### Etapa 3: Colar e executar
-1. Abrir Cursor
-2. Cole o prompt
-3. Diga: *&quot;...e cole-o no Cursor&quot;*
-4. Pressionar Enter
+### Etapa 3: Colar e executar1. Abrir Cursor2. Cole o prompt3. Diga: *&quot;...e cole-o no Cursor&quot;*4. Pressionar Enter
 
-### Etapa 4: Mostrar resultados
-1. Aguardar a geração (~30-60 segundos)
-2. Rolar pelo relatório gerado
-3. Destacar seções principais:
-   - Estatísticas do resumo de 📊
-   - 📋 Tabela arquivo por arquivo
-   - ✅ Deve manter a seção
-   - 🗑️ Vitórias rápidas
-   - 🎯 Plano de execução
+### Etapa 4: Mostrar resultados1. Aguardar a geração (~30-60 segundos)2. Rolar pelo relatório gerado3. Destacar seções principais:   - Estatísticas do resumo de 📊   - 📋 Tabela arquivo por arquivo   - ✅ Deve manter a seção   - 🗑️ Vitórias rápidas   - 🎯 Plano de execução
 
-### Etapa 5: Momento Uau
-1. Mostrar a visualização da marcação
-2. Aponte:
-   - *&quot;111 arquivos analisados automaticamente&quot;*
-   - *&quot;67 arquivos seguros para exclusão (60% de redução)&quot;*
-   - *&quot;18 arquivos específicos v7 identificados&quot;*
-   - *&quot;Concluir plano de execução com linhas do tempo&quot;*
+### Etapa 5: Momento Uau1. Mostrar a visualização da marcação2. Aponte:   - *&quot;111 arquivos analisados automaticamente&quot;*   - *&quot;67 arquivos seguros para exclusão (60% de redução)&quot;*   - *&quot;18 arquivos específicos v7 identificados&quot;*   - *&quot;Concluir plano de execução com linhas do tempo&quot;*
 
----
+&#x200B;---
 
 ## DICAS DE DEMONSTRAÇÃO DO 💡
 
-### Tornar interativo
-**Pergunte ao público-alvo**: *&quot;Qual pasta devemos analisar?&quot;*
-- entrega ✅ (111 arquivos - impressionante)
-- fluxo de trabalho ✅ (121 arquivos - ainda maior)
-- web ✅ (26 arquivos - demonstração rápida)
-- relatórios ✅ (32 arquivos - rápido)
+### Tornar interativo&#x200B;**Pergunte ao público-alvo**: *&quot;Qual pasta devemos analisar?&quot;*- entrega ✅ (111 arquivos - impressionante)- fluxo de trabalho ✅ (121 arquivos - ainda maior)- web ✅ (26 arquivos - demonstração rápida)- relatórios ✅ (32 arquivos - rápido)
 
-### Personalizar em tempo real
-**Mostrar flexibilidade**: alterar o caminho da pasta no prompt:
+### Personalizar em tempo real&#x200B;**Mostrar flexibilidade**: alterar o caminho da pasta no prompt:
 
 ```
 /help/workflow/using/  → Analyze workflows
@@ -245,19 +215,13 @@ Generate the complete Markdown report now.
 /help/platform/using/  → Analyze platform
 ```
 
-### Realçar os principais recursos
-1. **Automação**: *&quot;Nenhum trabalho manual necessário&quot;*
-2. **Precisão**: *&quot;Usa a documentação do v8 para comparação&quot;*
-3. **Acionável**: *&quot;Plano pronto para executar com caixas de seleção&quot;*
-4. **Smart**: *&quot;Identifica automaticamente recursos específicos do v7&quot;*
+### Realçar os principais recursos1. **Automação**: *&quot;Nenhum trabalho manual necessário&quot;*2. **Precisão**: *&quot;Usa a documentação do v8 para comparação&quot;*3. **Acionável**: *&quot;Plano pronto para executar com caixas de seleção&quot;*4. **Smart**: *&quot;Identifica automaticamente recursos específicos do v7&quot;*
 
-### Comparação de tempo
-**Antes**: *&quot;Análise manual = 2-3 dias por pasta&quot;*\
-**Depois**: *&quot;Análise automatizada = 30 segundos por pasta&quot;*
+### Comparação de tempo&#x200B;**Antes**: *&quot;Análise manual = 2-3 dias por pasta&quot;*\**Depois**: *&quot;Análise automatizada = 30 segundos por pasta&quot;*
 
 **ROI**: *&quot;21 pastas × 2 dias = 42 dias → 15 minutos&quot;*
 
----
+&#x200B;---
 
 ## 📊 VISUALIZAÇÃO DE SAÍDA ESPERADA
 
@@ -304,7 +268,7 @@ Week 2: Badge 18 files
 Week 3: Review 18 files
 ```
 
----
+&#x200B;---
 
 ## SCRIPT DE DEMONSTRAÇÃO 🎬
 
@@ -336,7 +300,7 @@ Week 3: Review 18 files
 **Fechar**:
 > &quot;Esse mesmo processo funciona para todas as 21 pastas. O que costumava levar 6 semanas agora leva 15 minutos.&quot;
 
----
+&#x200B;---
 
 ## 🚀 PRONTO PARA A DEMONSTRAÇÃO.
 

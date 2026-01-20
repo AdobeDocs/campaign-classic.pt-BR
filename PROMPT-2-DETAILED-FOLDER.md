@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **Génère un rapport Markdown détaillé pour UN folder avec % de match**
 
----
+&#x200B;---
 
 ## PROMPT CE DE COPIADORA 📋
 
@@ -465,7 +465,7 @@ Include:
 Make all links clickable (v7 files + Experience League URLs).
 ```
 
----
+&#x200B;---
 
 ## USO
 
@@ -475,12 +475,13 @@ Make all links clickable (v7 files + Experience League URLs).
    ```
    📁 **Analyze**: /Users/.../help/[YOUR-FOLDER]/using/
    ```
+
 3. **Colar no Cursor**
 4. **Executar análise**
 5. **Obter relatório completo do Markdown**
 6. **Salvar como**: `[folder]-detailed-analysis.md`
 
----
+&#x200B;---
 
 ## EXEMPLOS DE PASTA
 
@@ -490,7 +491,7 @@ Tentar com:
 - `/help/platform/using/` (61 arquivos)
 - `/help/web/using/` (26 arquivos)
 
----
+&#x200B;---
 
 ## VISUALIZAÇÃO DE SAÍDA
 
