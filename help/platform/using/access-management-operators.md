@@ -8,7 +8,7 @@ role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 100%
 
@@ -84,7 +84,7 @@ Após criar o perfil do operador, você pode adicionar ou atualizar suas informa
 
 >[!NOTE]
 >
->O campo **[!UICONTROL Session timeout]** permite ajustar o atraso antes do tempo limite da sessão FDA. Para obter mais informações, consulte [Sobre o Federated Data Access](../../installation/using/about-fda.md).
+>O campo **[!UICONTROL Session timeout]** permite ajustar o atraso antes do tempo-limite da sessão FDA. Para obter mais informações, consulte [Sobre o Federated Data Access](../../installation/using/about-fda.md).
 
 ## Definir o fuso horário do operador {#time-zone-of-the-operator}
 
@@ -194,4 +194,4 @@ Por padrão, o operador técnico &#39;webapp&#39; tem o direito nomeado ADMINIST
 
 >[!NOTE]
 >
->Para obter mais informações sobre Diretrizes de segurança, consulte a [lista de verificação de configuração do Adobe Campaign Security](https://helpx.adobe.com/br/campaign/kb/acc-security.html).
+>Para obter mais informações sobre Diretrizes de segurança, consulte a [lista de verificação de configuração do Adobe Campaign Security](https://helpx.adobe.com/campaign/kb/acc-security.html).

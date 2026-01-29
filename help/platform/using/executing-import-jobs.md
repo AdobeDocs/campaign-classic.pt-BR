@@ -9,13 +9,13 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2983'
 ht-degree: 100%
 
 ---
 
-# Configurar trabalhos de importação {#executing-import-jobs}
+# Configurar processos de importação {#executing-import-jobs}
 
 
 
@@ -27,7 +27,7 @@ O Adobe Campaign permite importar dados para o banco de dados de um ou mais arqu
 
 O assistente de importação permite configurar uma importação, definir suas opções (como transformação de dados) e iniciar a execução. É uma série de telas cujo conteúdo depende do tipo de importação (simples ou múltipla) e dos direitos do operador.
 
-O assistente de importação é exibido após a criação de um novo trabalho de importação (consulte [Criar trabalhos de importação e exportação](../../platform/using/creating-import-export-jobs.md)).
+O assistente de importação é exibido após a criação de um novo processo de importação (consulte [Criar processos de importação e exportação](../../platform/using/creating-import-export-jobs.md)).
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ O link **[!UICONTROL Advanced parameters]** permite acessar as seguintes opçõe
 
    * **[!UICONTROL Start the job in a detached process]**
 
-     Essa opção é selecionada por padrão. Permite desanexar a execução da importação para que não afete outras tarefas em andamento no banco de dados.
+     Essa opção é selecionada por padrão. Permite desanexar a execução da importação para que não afete outros processos em andamento no banco de dados.
 
    * **[!UICONTROL Do not update enumerations]**
 
@@ -92,7 +92,7 @@ O link **[!UICONTROL Advanced parameters]** permite acessar as seguintes opçõe
 
 * **[!UICONTROL Variables]** Guia
 
-  É possível definir variáveis associadas à tarefa que será acessível nos editores de consulta e campos calculados. Para criar uma variável, clique em **[!UICONTROL Add]** e utilize o editor de variáveis.
+  É possível definir variáveis associadas ao processo que será acessível nos editores de consultas e campos calculados. Para criar uma variável, clique em **[!UICONTROL Add]** e utilize o editor de variáveis.
 
   >[!IMPORTANT]
   >
@@ -338,4 +338,4 @@ A última etapa do assistente permite iniciar a importação de dados. Para faze
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Você pode monitorar a execução do trabalho de importação (consulte [Monitorar execução de trabalhos](../../platform/using/monitoring-jobs-execution.md).
+Você pode monitorar a execução do processo de importação (consulte [Monitorar execução de processos](../../platform/using/monitoring-jobs-execution.md).
