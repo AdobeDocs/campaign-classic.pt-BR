@@ -1,22 +1,22 @@
 ---
-source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
-workflow-type: tm+mt
-source-wordcount: '2684'
-ht-degree: 76%
-
----
-—product: campaign
+product: campaign
 title: Configurar e gerenciar o processo de aprovação
 description: Saiba como gerenciar aprovações de campanhas de marketing
 language: en
-função: usuário
-recurso: Aprovações, Campanhas
-ocultar: sim
-hidefromtoc: sim
+role: User
+feature: Approvals, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
----
-# Configurar e gerenciar o processo de aprovação {#approving-marketing-campaigns}
+source-git-commit: df014d3f3029a61176e5117e27f3d2e8228fc407
+workflow-type: tm+mt
+source-wordcount: '2665'
+ht-degree: 78%
 
+---
+
+
+# Configurar e gerenciar o processo de aprovação {#approving-marketing-campaigns}
 
 Cada etapa de um delivery pode estar sujeita a aprovação para garantir o monitoramento total e controle dos processos de campanha. Isso inclui direcionamento, conteúdo, orçamento, extração e envio de uma prova.
 
