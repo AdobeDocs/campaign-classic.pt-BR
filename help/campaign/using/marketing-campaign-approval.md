@@ -1,85 +1,86 @@
 ---
-product: campaign
-title: Configurar e gerenciar o processo de aprovação
-description: Saiba como gerenciar aprovações de campanhas de marketing
-role: User
-feature: Approvals, Campaigns
-hide: true
-hidefromtoc: true
-exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: ht
-source-wordcount: '2437'
-ht-degree: 100%
+source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
+workflow-type: tm+mt
+source-wordcount: '2684'
+ht-degree: 76%
 
 ---
-
+—product: campaign
+title: Configurar e gerenciar o processo de aprovação
+description: Saiba como gerenciar aprovações de campanhas de marketing
+language: en
+função: usuário
+recurso: Aprovações, Campanhas
+ocultar: sim
+hidefromtoc: sim
+exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
+---
 # Configurar e gerenciar o processo de aprovação {#approving-marketing-campaigns}
 
 
-Cada etapa de uma entrega pode estar sujeita a aprovação para garantir o monitoramento total e controle dos vários processos da campanha: direcionamento, conteúdo, orçamento, extração e envio de uma prova.
+Cada etapa de um delivery pode estar sujeita a aprovação para garantir o monitoramento total e controle dos processos de campanha. Isso inclui direcionamento, conteúdo, orçamento, extração e envio de uma prova.
 
-As mensagens de notificação são enviadas aos operadores do Adobe Campaign que são revisores designados para informá-los sobre uma solicitação de aprovação. Verifique se os revisores têm as **permissões apropriadas** para aprovação e se sua zona de segurança está definida corretamente. [Saiba mais](#selecting-reviewers).
+As mensagens de notificação são enviadas aos operadores [!DNL Adobe Campaign] que são revisores designados para informá-los de uma solicitação de aprovação. Verifique se os revisores têm as **permissões apropriadas** para aprovação e se sua zona de segurança está definida corretamente. [Saiba mais sobre a seleção de revisores](#selecting-reviewers).
 
-O procedimento de aprovação é apresentado [nesta seção](#checking-and-approving-deliveries).
+O procedimento de aprovação é apresentado em [visão geral do procedimento de aprovação](#checking-and-approving-deliveries).
 
 >[!NOTE]
 >
 >Somente o proprietário da entrega pode iniciar uma entrega. Para que outro operador (ou grupo de operadores) possa iniciar uma entrega, é necessário adicioná-los como revisores no campo **[!UICONTROL Delivery start:]**.\
->[Saiba mais](#selecting-reviewers).
+>[Saiba mais sobre a seleção de revisores](#selecting-reviewers).
 
 ## Princípio operacional {#operating-principle-}
 
 Por exemplo, a mensageml padrão para aprovação de orçamento será a seguinte:
 
-![](assets/s_user_validation_link_in_mail.png)
+![Email de notificação de aprovação com link de validação](assets/s_user_validation_link_in_mail.png)
 
 Os operadores do revisor podem optar por aprovar ou não o orçamento.
 
-![](assets/s_user_validation_page_confirm.png)
+![Página de confirmação de aprovação com opções de aceitar ou rejeitar](assets/s_user_validation_page_confirm.png)
 
-Assim que o operador validar, a aprovação ou a rejeição do trabalho será encaminhada para o painel de entrega.
+Assim que o operador validar, a aprovação ou a rejeição do processo será encaminhada para o painel de entrega.
 
-![](assets/s_user_validation_link_in_op_board.png)
+![Painel de campanha mostrando o link de aprovação para um trabalho](assets/s_user_validation_link_in_op_board.png)
 
-As informações também estão disponíveis nos logs de aprovação da campanha. Esses logs são acessados por meio da guia **[!UICONTROL Edit > Tracking > Approvals]**.
+As informações também estão disponíveis nos logs de aprovação da campanha. Esses logs são acessados pela guia **[!UICONTROL Edit > Tracking > Approvals]**.
 
-![](assets/s_user_validation_log_in_op_edit_tab.png)
+![Guia de edição de campanha mostrando o log de aprovação](assets/s_user_validation_log_in_op_edit_tab.png)
 
 Essas notificações são enviadas aos operadores afetados para cada processo para o qual a aprovação foi habilitada.
 
-As aprovações podem ser habilitadas para o template de campanha, para cada campanha individualmente ou para uma entrega.
+As aprovações podem ser habilitadas para o modelo de campanha, para cada campanha individualmente ou para uma entrega.
 
-Todas as tarefas que exigem aprovação são selecionadas no template da campanha (guias **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**), como operadores em mudança de aprovação (eles receberão notificações, a menos que essa opção não esteja habilitada). Para obter mais informações, consulte [esta seção](#approving-processes).
+Todas as tarefas que exigem aprovação são selecionadas no modelo de campanha (guias **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**). Os operadores de aprovação também são selecionados lá e recebem notificações, a menos que essa opção esteja desativada. Para obter mais informações, consulte [etapas para aprovar uma entrega](#approving-processes).
 
 Essas configurações podem ser substituídas para cada campanha criada usando este modelo e individualmente para cada entrega de campanha: clique no botão **[!UICONTROL Properties]** e, em seguida, na guia **[!UICONTROL Approvals]**.
 
 No seguinte exemplo, o conteúdo da entrega não exigirá aprovações:
 
-![](assets/s_user_validation_select_process_from_del.png)
+![Configurações de aprovação de entrega com seleção de processo](assets/s_user_validation_select_process_from_del.png)
 
 ## Selecionar revisores {#selecting-reviewers}
 
 Para cada tipo de aprovação, os operadores ou grupos de operadores encarregados da aprovação são selecionados na lista suspensa na entrega. Mais operadores podem ser adicionados usando o link **[!UICONTROL Edit...]**. Essa janela também permite editar o prazo de aprovação.
 
-![](assets/s_user_validation_add_operator.png)
+![Adicionar caixa de diálogo de revisor para operadores de aprovação](assets/s_user_validation_add_operator.png)
 
 Se nenhum revisor for especificado, o gerente da campanha será responsável pela aprovação e receberá as notificações. O gerente da campanha é especificado na guia **[!UICONTROL Edit > Properties]** da campanha:
 
-![](assets/s_user_op_manager_field.png)
+![Propriedades da campanha mostrando o campo de gerente](assets/s_user_op_manager_field.png)
 
 >[!NOTE]
 >
->Todos os outros operadores do Adobe Campaign com direitos de **[!UICONTROL Administrator]** também podem aprovar tarefas, mas não receberão notificações.\
+>Todos os outros operadores [!DNL Adobe Campaign] com direitos **[!UICONTROL Administrator]** também podem aprovar trabalhos, mas não receberão notificações.\
 >Por padrão, o gerente de campanha não pode realizar a aprovação ou iniciar as entregas se os operadores de aprovação tiverem sido definidos. Você pode modificar esse comportamento e autorizar que o gerenciador de campanha aprove/inicie entregas criando a opção **NmsCampaign_Activate_OwnerConfirmation** com o valor **1**.
 
 ## Modos de aprovação {#approval-modes}
 
 ### Aprovação por meio do painel {#approval-via-the-dashboard}
 
-Para aprovar uma tarefa através do console ou da interface da Web, clique no link apropriado no painel de campanha. As tarefas também podem ser aprovadas por meio do rastreamento de entrega ou pelo painel de entrega.
+Para aprovar um processo através do console ou da interface da Web, clique no link apropriado no painel de campanha. Os processos também podem ser aprovados por meio do rastreamento de entrega ou pelo painel de entrega.
 
-![](assets/s_user_validation_from_console.png)
+![Ações de aprovação do painel de campanha no console](assets/s_user_validation_from_console.png)
 
 Verifique as informações a serem aprovadas, escolha aceitar ou rejeitar a aprovação e, se necessário, insira um comentário. Clique em **[!UICONTROL Ok]** para salvar.
 
@@ -91,11 +92,11 @@ Verifique as informações a serem aprovadas, escolha aceitar ou rejeitar a apro
 
 Clique no link disponível na mensagem de notificação (consulte [Notificações](#notifications)). Você precisa fazer logon, conforme mostrado abaixo:
 
-![](assets/s_user_validation__log_in.png)
+![Página de logon de aprovação para link de notificação](assets/s_user_validation__log_in.png)
 
 Selecione **[!UICONTROL Accept]** ou **[!UICONTROL Reject]** e insira um comentário se necessário.
 
-![](assets/s_user_validation_save_target_validation.png)
+![Página de aprovação com aceitação ou rejeição e comentário](assets/s_user_validation_save_target_validation.png)
 
 Clique em **[!UICONTROL Validate]**.
 
@@ -109,71 +110,71 @@ As informações estão disponíveis em vários lugares:
 
 * No log de aprovação da campanha, na subguia **[!UICONTROL Approvals]** da guia **[!UICONTROL Edit > Tracking]**:
 
-  ![](assets/s_user_validation_log_from_op.png)
+  ![Lista de logs de aprovação da campanha](assets/s_user_validation_log_from_op.png)
 
 * No log de entrega da campanha, na subguia **[!UICONTROL Deliveries]** da guia **[!UICONTROL Edit > Tracking]**:
 
-  ![](assets/s_user_validation_log_from_delivery_list.png)
+  ![Lista de logs de entrega com status de aprovação](assets/s_user_validation_log_from_delivery_list.png)
 
 * Para aprovar o status de aprovação de cada entrega, clique na opção **[!UICONTROL Hide/show log]** da guia **[!UICONTROL Summary]**.
 
-  ![](assets/s_user_validation_log_delivery.png)
+  ![Resumo da entrega mostrando o log de aprovação](assets/s_user_validation_log_delivery.png)
 
 * Essas informações também podem ser acessadas através da guia **[!UICONTROL Tracking > Approvals]** de cada entrega:
 
-  ![](assets/s_user_validation_log_from_exe_tab.png)
+  ![Guia Aprovações de rastreamento de entrega](assets/s_user_validation_log_from_exe_tab.png)
 
 >[!NOTE]
 >
->Após um operador ter aprovado ou rejeitado uma tarefa, os outros operadores de revisão não podem mais atuar sobre a aprovação.
+>Após um operador ter aprovado ou rejeitado um processo, os outros operadores de revisão não podem mais atuar sobre a aprovação.
 
 ### Aprovação automática e manual {#automatic-and-manual-approval}
 
-Ao criar um workflow de definição de metas, se a aprovação for automática (modo padrão), o Adobe Campaign exibe o link de aprovação ou envia uma notificação assim que uma aprovação é necessária.
+Ao criar um fluxo de trabalho de direcionamento, se a aprovação for automática (modo padrão), [!DNL Adobe Campaign] exibirá o link de aprovação ou enviará uma notificação assim que uma aprovação for necessária.
 
-Para escolher o modo de aprovação (manual ou automático), clique na guia **[!UICONTROL Edit > Properties]** da campanha ou do template da campanha e em seguida em **[!UICONTROL Advanced campaign settings...]** e, por fim, na guia **[!UICONTROL Approvals]**.
+Para escolher o modo de aprovação (manual ou automático), clique na guia **[!UICONTROL Edit > Properties]** da campanha ou do modelo da campanha e em seguida em **[!UICONTROL Advanced campaign settings...]** e, por fim, na guia **[!UICONTROL Approvals]**.
 
-![](assets/s_user_validation_select_mode.png)
+![Configurações de aprovação com modo manual e automático](assets/s_user_validation_select_mode.png)
 
 >[!NOTE]
 >
 >O modo de aprovação selecionado será aplicado a todas as e ntregas da campanha.
 
-Quando um workflow de direcionamento está sendo criado, a aprovação manual permite que você evite criar links de aprovação ou enviar notificações automaticamente. O painel de campanha oferece um link **[!UICONTROL Submit targeting for approval]** para iniciar o processo de aprovação manualmente.
+Quando um fluxo de trabalho de segmentação está sendo criado, a aprovação manual permite que você evite criar links de aprovação ou enviar notificações automaticamente. O painel de campanha oferece um link **[!UICONTROL Submit targeting for approval]** para iniciar o processo de aprovação manualmente.
 
-As mensagens de confirmação permitem autorizar aprovações nas tarefas selecionadas para essa entrega.
+As mensagens de confirmação permitem autorizar aprovações nos processos selecionados para essa entrega.
 
-Os botões de aprovação são exibidos no painel de campanha (para essa entrega), no painel de entrega e no controle de entrega. Se as notificações estiverem ativadas, elas serão enviadas em paralelo.
+Os botões de aprovação são exibidos no painel de campanha (para essa entrega), no painel de entrega e no controle de entrega. Se as notificações estiverem habilitadas, elas serão enviadas em paralelo.
 
 Esse método de ativação de aprovações permite que você trabalhe com o direcionamento sem enviar notificações falsas para os revisores.
 
 ## Notificações {#notifications}
 
-As notificações são mensagens de e-mail específicas enviadas para os revisores para informá-los de que um processo está pendente de aprovação. Quando o operador clica no link da mensagem, é exibida uma página de autenticação. Após fazer logon, o operador pode exibir as informações e aprovar ou rejeitar a tarefa. Um comentário também pode ser inserido na janela de aprovação.
+As notificações são mensagens de e-mail específicas enviadas para os revisores para informá-los de que um processo está pendente de aprovação. Quando o operador clica no link da mensagem, é exibida uma página de autenticação. Após fazer logon, o operador pode exibir as informações e aprovar ou rejeitar o processo. Um comentário também pode ser inserido na janela de aprovação.
 
 O conteúdo dos e-mails de notificação pode ser personalizado. Consulte [Conteúdo de notificação](#notification-content).
 
 ### Habilitar/desabilitar notificação {#enabling-disabling-notification}
 
-Por padrão, as mensagens de notificação são enviadas se a aprovação da tarefa relacionada estiver habilitada no template de campanha, da campanha ou da entrega. As notificações podem, porém, estar desabilitadas para autorizar aprovações somente do console.
+Por padrão, as mensagens de notificação são enviadas se a aprovação do processo relacionado estiver habilitada no modelo de campanha, da campanha ou da entrega. As notificações podem, porém, estar desabilitadas para autorizar aprovações somente do console.
 
-Para fazer isso, edite a janela de aprovação da campanha ou do template da campanha (guias **[!UICONTROL Edit > Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**) e selecione **[!UICONTROL Do not enable notification sending]**.
+Para fazer isso, edite a janela de aprovação da campanha ou do modelo da campanha (guias **[!UICONTROL Edit > Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**) e selecione **[!UICONTROL Do not enable notification sending]**.
 
-![](assets/s_user_validation_notif_desactivate.png)
+![Configurações de aprovação com notificações desabilitadas](assets/s_user_validation_notif_desactivate.png)
 
 ### Conteúdo de notificação {#notification-content}
 
-O conteúdo da notificação é definido em um template específico: **[!UICONTROL Notification of validations for the marketing campaign]**. Esse modelo é salvo na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]** da árvore do Adobe Campaign.
+O conteúdo da notificação é definido em um modelo específico: **[!UICONTROL Notification of validations for the marketing campaign]**. Este modelo foi salvo na pasta **[!UICONTROL Administration > Campaign management > Technical delivery templates]** da árvore [!DNL Adobe Campaign].
 
 ## Revisar e aprovar entregas {#checking-and-approving-deliveries}
 
-O Adobe Campaign permite configurar processos de aprovação para os principais estágios da campanha de marketing em modo de colaboração.
+[!DNL Adobe Campaign] permite configurar processos de aprovação para os principais estágios da campanha de marketing em modo colaborativo.
 
-Para entregas de correspondência direta, os operadores do Adobe Campaign podem exibir o arquivo de extração antes que seja enviada ao roteador e, se necessário, podem alterar o formato e reenviar a extração. Consulte [Aprovar um arquivo de extração](#approving-an-extraction-file).
+Para entregas de correspondência direta, os operadores [!DNL Adobe Campaign] podem exibir o arquivo de extração antes que ele seja enviado ao roteador e, se necessário, podem alterar o formato e reiniciar a extração. Consulte [Aprovar um arquivo de extração](#approving-an-extraction-file).
 
-Para cada campanha, você pode aprovar o target, o conteúdo (consulte [Aprovar conteúdo](#approving-content)) e os custos da entrega. Os operadores do Adobe Campaign responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou por meio de uma conexão com a Web. Consulte [Etapas para aprovar uma entrega](#approving-processes).
+Para cada campanha, você pode aprovar o target, o conteúdo (consulte [Aprovar conteúdo](#approving-content)) e os custos da entrega. [!DNL Adobe Campaign] operadores responsáveis pela aprovação podem ser notificados por email, podendo aceitar ou rejeitar a aprovação por meio do console ou por meio de uma conexão com a web. Consulte [Etapas para aprovar uma entrega](#approving-processes).
 
-Quando essas fases de validação estiverem concluídas, a entrega poderá ser iniciada. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery).
+Quando essas fases de validação estiverem concluídas, a entrega poderá ser iniciada. [Saiba mais sobre como iniciar uma entrega](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery).
 
 ### Etapas para aprovar uma entrega {#approving-processes}
 
@@ -183,42 +184,42 @@ Neste ponto, o status da campanha é **[!UICONTROL To validate]**.
 
 >[!NOTE]
 >
->Para selecionar os processos que exigem uma aprovação, modifique o template de campanha. Para obter mais informações, consulte [Templates de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Para selecionar os processos que exigem uma aprovação, modifique o modelo de campanha. Para obter mais informações, consulte [Modelos de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 >
 
-![](assets/s_ncs_user_edit_del_to_validate.png)
+![Painel de campanha mostrando o status de entrega Para validar](assets/s_ncs_user_edit_del_to_validate.png)
 
 >[!NOTE]
 >
->Em um workflow de direcionamento, se um erro vinculado a um problema de configuração ocorrer durante a preparação da mensagem, o link **[!UICONTROL Restart message preparation]** será mostrado no painel. Corrija o erro e clique neste link para reiniciar a preparação da mensagem, ignorando o estágio de definição de metas.
+>Em um fluxo de trabalho de segmentação, se um erro vinculado a um problema de configuração ocorrer durante a preparação da mensagem, o link **[!UICONTROL Restart message preparation]** será mostrado no painel. Corrija o erro e clique neste link para reiniciar a preparação da mensagem, ignorando o estágio de direcionamento.
 
-![](assets/s_user_validation_relaunch_message_preparation.png)
+![Link do painel para reiniciar a preparação da mensagem](assets/s_user_validation_relaunch_message_preparation.png)
 
 Para cada entrega na campanha, você pode aprovar os seguintes processos:
 
-* **Definição de metas, conteúdo e orçamento**
+* **Direcionamento, conteúdo e orçamento**
 
-  Quando as opções **[!UICONTROL Enable target approval]**, **[!UICONTROL Enable content approval]** ou **[!UICONTROL Enable budget approval]** são selecionadas na janela de configurações de aprovação de tarefas, os links relevantes são mostrados no painel da campanha para as entregas relacionadas.
+  Quando as opções **[!UICONTROL Enable target approval]**, **[!UICONTROL Enable content approval]** ou **[!UICONTROL Enable budget approval]** são selecionadas na janela de configurações de aprovação de processos, os links relevantes são mostrados no painel da campanha para as entregas relacionadas.
 
   >[!NOTE]
   >
-  >A aprovação de orçamento só estará disponível se a aprovação de definição de metas estiver habilitada na janela de configurações de aprovação. O link para aprovação do orçamento é exibido somente após o target ter sido analisado. Além disso, esse link é exibido junto com o link para aprovação do target.
+  >A aprovação de orçamento só estará disponível se a aprovação de direcionamento estiver habilitada na janela de configurações de aprovação. O link para aprovação do orçamento é exibido somente após o target ter sido analisado. Além disso, esse link é exibido junto com o link para aprovação do target.
 
   Se as opções **[!UICONTROL Assign content editing]** ou **[!UICONTROL External content approval]** forem selecionadas na janela de configurações de aprovação, o painel exibirá os links **[!UICONTROL Available content]** e **[!UICONTROL External content approval]**.
 
   A aprovação de conteúdo permite que você acesse as provas enviadas.
 
-* **Aprovação de extração (entrega de mala direta)**
+* **Aprovação de extração (entrega de correspondência direta)**
 
   Quando a opção **[!UICONTROL Enable extraction approval]** está selecionada na janela de configurações de aprovação, o arquivo extraído deve ser aprovado antes que o roteador possa ser notificado.
 
   Um link **[!UICONTROL Approve content]** fica disponível no painel de campanha conforme mostrado abaixo:
 
-  ![](assets/s_ncs_user_edit_file_valid.png)
+  ![Painel de aprovação mostrando o link para aprovar conteúdo](assets/s_ncs_user_edit_file_valid.png)
 
   Os arquivos de extração podem ser pré-visualizados por meio da caixa de aprovação e, em seguida, aceitos ou rejeitados.
 
-  ![](assets/s_ncs_user_edit_file_valid_preview_file.png)
+  ![Visualização do arquivo de extração na caixa de diálogo de aprovação](assets/s_ncs_user_edit_file_valid_preview_file.png)
 
   >[!NOTE]
   >
@@ -228,38 +229,38 @@ Para cada entrega na campanha, você pode aprovar os seguintes processos:
 
   A opção **[!UICONTROL Enable individual approval of each associated delivery]** é usada para uma entrega principal associado a entregas secundárias. Por padrão, essa opção não está selecionada, para que uma aprovação geral da entrega principal possa ser realizada. Se essa opção estiver selecionada, cada entrega deverá ser aprovada individualmente.
 
-  ![](assets/s_ncs_user_task_valid_associate.png)
+  ![Opção para habilitar aprovação individual de entregas associadas](assets/s_ncs_user_task_valid_associate.png)
 
 ### Selecionar aprovação de processos {#choosing-the-processes-to-be-approved}
 
-As fases de aprovação são definidas com o modelo associado à campanha. Você deve selecionar os elementos que serão aprovados do modelo e especificar os operadores do Adobe Campaign que serão responsáveis por essas aprovações. Para obter mais informações sobre templates de campanha, consulte [esta seção](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+As fases de aprovação são definidas com o modelo associado à campanha. Você deve selecionar os elementos a serem aprovados do modelo e especificar os operadores [!DNL Adobe Campaign] responsáveis por essas aprovações. Para obter mais informações sobre templates de campanha, consulte [templates de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 >[!NOTE]
 >
->A configuração de aprovação para a campanha (ou para o template de campanha) será aplicada a todas as entregas futuras vinculadas a esta campanha. Quaisquer alterações de configuração não serão aplicadas às entregas anteriores.
+>A configuração de aprovação para a campanha (ou para o modelo de campanha) será aplicada a todas as entregas futuras vinculadas a esta campanha. Quaisquer alterações de configuração não serão aplicadas às entregas anteriores.
 
 Essas informações podem ser sobrepostas para cada campanha e entrega.
 
 Para uma campanha, clique na guia **[!UICONTROL Edit > Properties]**, em seguida no link **[!UICONTROL Advanced campaign settings...]** e finalmente na subguia **[!UICONTROL Approvals]** para acessar a página de configuração de aprovações.
 
-Você pode selecionar e desmarcar os processos a aprovar e designar os operadores do Adobe Campaign responsáveis pela aprovação. Eles podem ser operadores individuais, um grupo de operadores ou uma lista de operadores.
+Você pode selecionar e desmarcar os processos a aprovar e designar [!DNL Adobe Campaign] operadores encarregados da aprovação. Eles podem ser operadores individuais, um grupo de operadores ou uma lista de operadores.
 
 Para selecionar uma lista de operadores, clique no link **[!UICONTROL Edit...]** à direita do campo que designa o primeiro revisor e adicione quantos operadores forem necessários, conforme mostrado abaixo:
 
-![](assets/s_user_validation_add_operator.png)
+![Adicionar caixa de diálogo de revisor para operadores de aprovação](assets/s_user_validation_add_operator.png)
 
 >[!NOTE]
 >
->* Se uma lista de revisores for definida, um trabalho será aprovado assim que um revisor aceitá-lo. O link de aprovação relevante não é mais oferecido no painel. Quando o envio de notificações estiver habilitado, se outro revisor clicar no link de aprovação na mensagem de notificação, será exibida uma notificação de que outro operador já aprovou a tarefa.
+>* Se uma lista de revisores for definida, um processo será aprovado assim que um revisor aceitá-lo. O link de aprovação relevante não é mais oferecido no painel. Quando o envio de notificações estiver habilitado, se outro revisor clicar no link de aprovação na mensagem de notificação, será exibida uma notificação de que outro operador já aprovou o processo.
 >* Você pode definir um agendamento de aprovação para a campanha na seção inferior da janela de edição do revisor. Por padrão, os revisores têm três dias a partir da data de envio para aprovar um processo. É possível configurar um lembrete que é enviado automaticamente para os operadores relacionados antes do prazo de aprovação.
 >* Você pode adicionar lembretes desta seção.
 >
 
-![](assets/s_ncs_user_edit_op_valid_calendar.png)
+![Configurações de lembrete e calendário de aprovação](assets/s_ncs_user_edit_op_valid_calendar.png)
 
 Para cada entrega, clique no botão **[!UICONTROL Audit]** e na guia **[!UICONTROL Approvals]** para exibir e editar datas de aprovação e lembretes automáticos.
 
-![](assets/s_ncs_user_edit_del_valid.png)
+![Guia Aprovações de entrega com datas e lembretes](assets/s_ncs_user_edit_del_valid.png)
 
 >[!NOTE]
 >
@@ -269,7 +270,7 @@ Para cada entrega, clique no botão **[!UICONTROL Audit]** e na guia **[!UICONTR
 
 >[!CAUTION]
 >
->Para aprovar um conteúdo, um ciclo de prova é obrigatório. As provas permitem aprovar a exibição de informações e dados de personalização e verificar se os links estão funcionando. Saiba como criar uma prova [nesta seção](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+>Para aprovar um conteúdo, um ciclo de prova é obrigatório. As provas permitem aprovar a exibição de informações e dados de personalização e verificar se os links estão funcionando. Saiba como criar uma prova em [criar uma prova](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 >
 >As funcionalidades de aprovação de conteúdo detalhadas abaixo estão relacionadas à entrega de prova.
 
@@ -277,7 +278,7 @@ Para cada entrega, clique no botão **[!UICONTROL Audit]** e na guia **[!UICONTR
 
 1. Depois de criar uma nova entrega, o gerente de campanha clica no link **[!UICONTROL Submit content]** no painel de campanha para iniciar o ciclo de aprovação de conteúdo.
 
-   ![](assets/s_ncs_user_validation_submit_content_validation.png)
+   ![Link do painel da campanha para enviar conteúdo para aprovação](assets/s_ncs_user_validation_submit_content_validation.png)
 
    >[!NOTE]
    >
@@ -287,7 +288,7 @@ Para cada entrega, clique no botão **[!UICONTROL Audit]** e na guia **[!UICONTR
 
    * por e-mail de notificação:
 
-     ![](assets/s_ncs_user_del_content_valid_bat_notif.png)
+     ![Email de notificação de aprovação de conteúdo para provas](assets/s_ncs_user_del_content_valid_bat_notif.png)
 
      >[!NOTE]
      >
@@ -295,13 +296,13 @@ Para cada entrega, clique no botão **[!UICONTROL Audit]** e na guia **[!UICONTR
 
    * por console ou interface da Web, controle de entrega, painel de entrega ou painel de campanha:
 
-     ![](assets/s_ncs_user_validation_content_bat_op.png)
+     ![Rastreamento de entrega mostrando a lista de provas de conteúdo](assets/s_ncs_user_validation_content_bat_op.png)
 
      >[!NOTE]
      >
      >Este painel da campanha permite exibir a lista de provas que foram enviadas, clicando no link **[!UICONTROL Inbox rendering...]**. Para exibir o conteúdo, clique no ícone **[!UICONTROL Detail]** à direita da lista.
 
-     ![](assets/s_ncs_user_validation_content_BAT_details.png)
+     ![Exibição de detalhes da prova para aprovação do conteúdo](assets/s_ncs_user_validation_content_BAT_details.png)
 
 1. Um email de notificação é enviado para a pessoa responsável pela campanha informando se o conteúdo foi aprovado ou não.
 
@@ -309,7 +310,7 @@ Para cada entrega, clique no botão **[!UICONTROL Audit]** e na guia **[!UICONTR
    >
    >A pessoa responsável pela campanha pode reiniciar o ciclo de aprovação de conteúdo a qualquer momento. Para fazer isso, clique no link da linha **[!UICONTROL Content status]** do painel da campanha (no nível de entrega) e, em seguida, clique em **[!UICONTROL Reset content approval to submit it again]**.
 
-   ![](assets/s_user_validation_relaunch_content_validation.png)
+   ![Link do painel da campanha para reiniciar a aprovação do conteúdo](assets/s_user_validation_relaunch_content_validation.png)
 
 #### Atribuir edição de conteúdo {#assign-content-editing}
 
@@ -317,15 +318,15 @@ Essa opção permite que você defina uma pessoa encarregada da edição de cont
 
 1. Depois de criar uma nova entrega, a pessoa responsável pela campanha clica no link **[!UICONTROL Submit content editing]** no painel de campanha para iniciar o ciclo de edição de conteúdo.
 
-   ![](assets/s_ncs_user_validation_submit_content_edition.png)
+   ![Link do painel da campanha para enviar edição de conteúdo](assets/s_ncs_user_validation_submit_content_edition.png)
 
 1. A pessoa responsável pela edição de conteúdo receberá um email informando que o conteúdo está disponível.
 
-   ![](assets/s_ncs_user_validation_submit_content_notif.png)
+   ![Email de notificação de edição de conteúdo](assets/s_ncs_user_validation_submit_content_notif.png)
 
 1. Então, ela pode fazer logon no console, abrir a entrega e editá-la com um assistente simplificado para alterar o assunto, o conteúdo HTML e de texto, e enviar provas.
 
-   ![](assets/s_user_validation_content_edition.png)
+   ![Assistente simplificado para edição de conteúdo de entrega](assets/s_user_validation_content_edition.png)
 
    >[!NOTE]
    >
@@ -335,21 +336,21 @@ Essa opção permite que você defina uma pessoa encarregada da edição de cont
 
    Para isso, elas podem:
 
-   * clicar no link **[!UICONTROL Available content]** através do console do Adobe Campaign.
+   * clicar no link **[!UICONTROL Available content]** por meio do console [!DNL Adobe Campaign].
 
-     ![](assets/s_ncs_user_validation_submit_content_available.png)
+     ![Link do console para disponibilizar conteúdo](assets/s_ncs_user_validation_submit_content_available.png)
 
    * clicar no link da mensagem de notificação e, em seguida, aprovar a disponibilidade do conteúdo.
 
-     ![](assets/s_ncs_user_validation_submit_content_available2.png)
+     ![Link de notificação para aprovar a disponibilidade do conteúdo](assets/s_ncs_user_validation_submit_content_available2.png)
 
      O operador pode adicionar um comentário antes de enviar o conteúdo para a pessoa responsável pela campanha.
 
-     ![](assets/s_ncs_user_validation_submit_content_available3.png)
+     ![Campo Comentário antes do envio da disponibilidade de conteúdo](assets/s_ncs_user_validation_submit_content_available3.png)
 
      A mensagem de notificação permite que o revisor aprove ou rejeite o conteúdo.
 
-     ![](assets/s_ncs_user_validation_submit_content_available4.png)
+     ![Resposta de aprovação para disponibilidade de conteúdo](assets/s_ncs_user_validation_submit_content_available4.png)
 
 #### Aprovação de conteúdo externo {#external-content-approval}
 
@@ -362,19 +363,19 @@ Essa opção permite que você defina um operador externo responsável por aprov
    >
    >Esses links só estarão disponíveis se uma ou mais provas tiverem sido enviadas. Caso contrário, a renderização da entrega só estará disponível através do console ou da interface da Web.
 
-   ![](assets/s_user_validation_external_content.png)
+   ![Email de aprovação de conteúdo externo com links de prova](assets/s_user_validation_external_content.png)
 
 ### Aprovar um arquivo de extração {#approving-an-extraction-file}
 
-Para entregas offline, o Adobe Campaign gera um arquivo de extração que, dependendo de como é configurado, é enviado ao roteador. Seu conteúdo depende do template de exportação usado.
+Para entregas offline, o [!DNL Adobe Campaign] gera um arquivo de extração que, dependendo de como é configurado, é enviado ao roteador. Seu conteúdo depende do modelo de exportação usado.
 
-Quando o conteúdo, o direcionamento e o orçamento são aprovados, a entrega é alterada para **[!UICONTROL Extraction pending]** até que o workflow de extração das campanhas seja iniciado.
+Quando o conteúdo, a segmentação e o orçamento são aprovados, a entrega é alterada para **[!UICONTROL Extraction pending]** até que o fluxo de trabalho de extração das campanhas seja iniciado.
 
-![](assets/s_ncs_user_waiting_file_extraction.png)
+![Status de entrega mostrando extração pendente](assets/s_ncs_user_waiting_file_extraction.png)
 
 Na data da solicitação de extração, o arquivo de extração é criado, e o status da entrega muda para **[!UICONTROL File to approve]**.
 
-![](assets/s_ncs_user_file_extract_to_valid.png)
+![Status da entrega mostrando o arquivo a ser aprovado](assets/s_ncs_user_file_extract_to_valid.png)
 
 É possível visualizar o conteúdo do arquivo extraído (clicando no nome), aprová-lo ou, se necessário, alterar o formato e iniciar novamente a extração utilizando os links no painel.
 

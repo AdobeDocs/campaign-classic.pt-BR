@@ -7,26 +7,26 @@ feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '441'
-ht-degree: 100%
+source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 76%
 
 ---
 
 # Projetar e executar campanhas de marketing{#designing-marketing-campaigns}
 
 
-O Adobe Campaign permite que você defina, otimize, execute e analise campanhas de comunicação e marketing. O Adobe Campaign atua como uma central de execução e pedido unificada para estratégias de marketing. Para obter mais informações, consulte [Acessar campanhas](../../distributed/using/accessing-campaigns.md) e [Criar campanhas de marketing](../../campaign/using/setting-up-marketing-campaigns.md).
+O [!DNL Adobe Campaign] permite que você defina, otimize, execute e analise campanhas de comunicação e marketing. [!DNL Adobe Campaign] atua como uma central de execução e pedido unificada para estratégias de marketing. Para obter mais informações, consulte [Acessar campanhas](../../distributed/using/accessing-campaigns.md) e [Criar campanhas de marketing](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Além disso, o módulo **GMarketing Resource Management (MRM)** permite controlar ações de marketing em um modo colaborativo fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos. O Gerenciamento de recursos de marketing permite otimizar e regular o gerenciamento de processos internos e externos, recursos e campanhas de marketing, bem como relações de terceiros (agências, impressoras etc.). Para obter mais informações, consulte [esta seção](../../mrm/using/about-marketing-resource-management.md).
+Além disso, o módulo **GMarketing Resource Management (MRM)** permite controlar ações de marketing em um modo colaborativo fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos. O Gerenciamento de recursos de marketing permite otimizar e regular o gerenciamento de processos internos e externos, recursos e campanhas de marketing. Também oferece suporte a relações de terceiros (agências, impressoras etc.). Para obter mais informações, consulte [esta seção](../../mrm/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
->Para obter mais informações sobre as funcionalidades principais do Adobe Campaign, consulte [esta seção](../../platform/using/about-adobe-campaign-classic.md).\
->Os recursos relacionados ao direcionamento de população, personalização e entrega de mensagens nos diversos canais são detalhados na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}.
+>Para obter mais informações sobre as funcionalidades principais do [!DNL Adobe Campaign], consulte [esta seção](../../platform/using/about-adobe-campaign-classic.md).\
+>Os recursos relacionados ao direcionamento de população, personalização de mensagens e delivery de mensagens nos vários canais são detalhados em [!DNL Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra os principais conceitos das campanhas de marketing em vídeo](#video)
+![Miniatura do vídeo explicativo](assets/do-not-localize/how-to-video.png) [Descubra os principais conceitos das campanhas de marketing em vídeo](#video)
 
 ## Conceitos principais {#core-concepts}
 
@@ -68,6 +68,6 @@ Os seguintes conceitos precisam ser conhecidos no contexto do Campaign:
 
 Este vídeo apresenta os principais conceitos das campanhas de marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/326576?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras com instruções [!DNL Campaign Classic] estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
