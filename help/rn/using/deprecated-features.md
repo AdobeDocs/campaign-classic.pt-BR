@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1658'
-ht-degree: 100%
+source-git-commit: 66387e2e008051901fe3385f571d7fe798829100
+workflow-type: tm+mt
+source-wordcount: '1675'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   </td>
 </tr>
 <tr>
- <td>ACS Connector</td>
+ <td>Conector ACS</td>
  <td><p>O conector ACS (oferta do Prime) agora está obsoleto. Você pode usar os recursos de exportação/importação do Campaign para extrair e inserir dados em ambos os produtos.</p>
   <!--p>Target removal date: End of 2023</p-->
   </td>
@@ -83,7 +83,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
     <tr>
   <td>Relatório de monitoramento técnico da avaliação da entrega<br></td>
    <td><p>O Relatório de monitoramento técnico da avaliação da entrega não está mais disponível. Ele foi descontinuado na versão 21.1.3 do Campaign.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -137,7 +137,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   <tr> 
    <td>API decryptString</td>
    <td><p>Começando pela versão 18.6 do Campaign, por motivos de segurança, a API <em>decryptString</em> não estará mais disponível por padrão nas novas instalações.</p> 
-   <p>No contexto de uma pós-atualização para 18.6 (e posterior), essa API não é mais ativada e foi substituída pela função <em>decryptPassword. </em> <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=pt-BR&hl=decrypt">Saiba mais</a></p></td>
+   <p>No contexto de uma pós-atualização para 18.6 (e posterior), essa API não é mais ativada e foi substituída pela função <em>decryptPassword. </em> <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Saiba mais</a></p></td>
   </tr> 
    <tr> 
    <td>Canal móvel - Mensagens de push MMS e WAP</td>
@@ -171,6 +171,8 @@ O Console do cliente do Adobe Campaign Classic não pode mais ser executado nos 
 >A partir da versão 20.1 do Campaign, o Console do Cliente do Campaign Classic de 32 bits não será mais compatível com as versões mais recentes do Campaign. Você precisa usar o Console do Cliente de 64 bits.
 
 ### Sistemas operacionais {#o-s-eol}
+
+* A partir da versão 7.3.4, o Adobe Campaign não será mais compatível com o Red Hat Enterprise Linux (RHEL) 7.
 
 * A partir da versão 7.3.1, o Adobe Campaign não será mais compatível com Windows 8 e Windows Server 2012.
 
