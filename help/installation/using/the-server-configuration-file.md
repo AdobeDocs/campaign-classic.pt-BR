@@ -410,7 +410,7 @@ No nó **dataStore > dataSource > pool**, configure os parâmetros do pool de co
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Número máximo de conexões permitidas antes de recusar uma nova conexão. Veja esta <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">nota técnica</a>.<br /> </td> 
+   <td> Número máximo de conexões permitidas antes de recusar uma nova conexão. Veja esta <a href="https://helpx.adobe.com/br/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">nota técnica</a>.<br /> </td> 
    <td> Curto<br /> </td> 
   </tr> 
   <tr> 
