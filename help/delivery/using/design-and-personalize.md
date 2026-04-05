@@ -8,9 +8,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1307'
+source-git-commit: 0d8cef312371192ee97f88eb33276df9d7fb11f6
+workflow-type: tm+mt
+source-wordcount: '1304'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Ao criar o conteúdo da sua mensagem, tente evitar problemas comuns que possam i
 
 Para evitar problemas comuns que podem impedir a execução da entrega e melhorar a experiência dos destinatários, o Adobe Campaign permite personalizar suas mensagens.
 
-Você pode usar os dados dos destinatários armazenados no banco de dados do Adobe Campaign ou coletados por meio de rastreamento, landing pages, assinaturas, etc.
+Você pode usar os dados dos destinatários armazenados no banco de dados do Adobe Campaign ou coletados por meio de rastreamento, páginas de destino, assinaturas, etc.
 As noções básicas de personalização são apresentadas [nesta seção](personalization-fields.md).
 
 Verifique se o conteúdo da sua mensagem foi projetado corretamente para evitar erros, que geralmente estão relacionados à personalização.
@@ -32,11 +32,13 @@ Verifique se o conteúdo da sua mensagem foi projetado corretamente para evitar 
 
 O uso incorreto de parâmetros em blocos de personalização pode ser um problema. Por exemplo, as variáveis em JavaScript devem ser usadas da seguinte forma:
 
-    &lt;%
-    
-    var brand = &quot;xxx&quot;
-    
+```
+    <%
+
+    var brand = "xxx"
+
     %>
+```
 
 Para obter mais informações sobre blocos de personalização, consulte [esta seção](personalization-blocks.md).
 
@@ -86,7 +88,7 @@ Para manter o email abaixo do limite, considere o seguinte:
 
 * Remover estilos redundantes ou em desuso
 
-* Mover um conteúdo de email para uma landing page
+* Mover um conteúdo de email para uma página de destino
 
 * Minimizar o uso de código
 

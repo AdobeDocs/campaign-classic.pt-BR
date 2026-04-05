@@ -5,10 +5,10 @@ description: Saiba mais sobre o escopo e as especificidades do envio de emails c
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
-workflow-type: ht
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
 source-wordcount: '1381'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,8 @@ O Momentum representa uma tecnologia MTA inovadora e de alto desempenho, que inc
 
 **Quais são os benefícios?**
 
-* Os clientes do Adobe Campaign que usam o MTA aprimorado observaram um <!--300%-->grande aumento na velocidade geral de taxa de transferência e uma <!--90%+-->redução significativa nas rejeições temporárias.
+* Os clientes do Adobe Campaign que usam o MTA aprimorado observaram um <!--300%-->grande aumento na velocidade geral da taxa de transferência e uma redução significativa nas rejeições temporárias.
+  <!--90%+-->
 * O MTA aprimorado usa a mais recente tecnologia MTA para oferecer a você as velocidades de taxa de transferência ideais para sua entrega de email.
 * Adaptando-se instantânea e automaticamente ao feedback que recebe, ele também garante uma entrega de email mais preciso e inteligente com dados de entrega em tempo real.
 
@@ -129,7 +130,7 @@ A configuração do período de validade em suas entregas do Campaign só será 
 
 Por exemplo, se o período de validade for definido como o valor padrão de 5 dias no Campaign, as mensagens com rejeição temporária entrarão na fila de tentativas do MTA aprimorado e serão repetidas apenas por até 3,5 dias a partir do momento em que a mensagem chegar ao MTA aprimorado. Nesse caso, o valor definido no Campaign não será usado.
 
-Quando uma mensagem estiver na fila do MTA aprimorado por 3,5 dias e não for entregue, o tempo limite expirará, e seu status será atualizado de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** nos logs do delivery.
+Quando uma mensagem estiver na fila do MTA aprimorado por 3,5 dias e não for entregue, o tempo-limite expirará, e seu status será atualizado de **[!UICONTROL Sent]** para **[!UICONTROL Failed]** nos logs do delivery.
 
 Para obter mais informações sobre o período de validade, consulte esta [página](communication-channels.md) em **Envio de entrega** > **Definir o período de validade**.
 

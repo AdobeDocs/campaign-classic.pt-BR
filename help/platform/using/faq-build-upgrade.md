@@ -7,8 +7,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
-workflow-type: ht
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
 source-wordcount: '2066'
 ht-degree: 100%
 
@@ -67,7 +67,8 @@ Por exemplo, usando as informações do servidor da captura de tela na seção a
 A Adobe fará um backup do seu sistema antes de qualquer alteração. No entanto, se houver trabalho de personalização crítico que esteja em seu sistema de não produção (servidores de desenvolvimento ou de preparo temporário), é ALTAMENTE RECOMENDADO exportar esse trabalho como um pacote antes de qualquer atualização.
 
 <!--
-![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
+![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+-->
 
 ## Quando ocorrerão as atualizações?
 

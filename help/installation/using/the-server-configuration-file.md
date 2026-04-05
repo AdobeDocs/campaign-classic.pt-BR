@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '8067'
+source-wordcount: '8066'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ A configuração geral do Adobe Campaign é definida no arquivo **serverConf.xml
 
 >[!NOTE]
 >
->As configurações do lado do servidor só podem ser executadas pelo Adobe para implantações hospedadas pelo Adobe. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md). As etapas de instalação e configuração para modelos hospedados e híbridos são apresentadas nesta [seção](../../installation/using/hosting-models.md).
+>As configurações do lado do servidor só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md). As etapas de instalação e configuração para modelos hospedados e híbridos são apresentadas nesta [seção](../../installation/using/hosting-models.md).
 
 Os primeiros parâmetros estão dentro do nó **shared**. Eles estão relacionados à instância. Eles são possivelmente usados por todos os comandos nlserver (nlserver web, nlserver wfserver etc.). As outras seções estão relacionadas a um subcomando nlserver específico.
 
@@ -410,7 +410,7 @@ No nó **dataStore > dataSource > pool**, configure os parâmetros do pool de co
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Número máximo de conexões permitidas antes de recusar uma nova conexão. Veja esta <a href="https://helpx.adobe.com/br/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">nota técnica</a>.<br /> </td> 
+   <td> Número máximo de conexões permitidas antes de recusar uma nova conexão. Veja esta <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">nota técnica</a>.<br /> </td> 
    <td> Curto<br /> </td> 
   </tr> 
   <tr> 
@@ -569,7 +569,7 @@ Para obter mais informações, consulte [Restrição de comandos externos autori
  <tbody> 
   <tr> 
    <td> blacklistFile<br /> </td> 
-   <td> Incluir na lista de permissões Caminho para o arquivo que contém os comandos a serem adicionados ao arquivo. <br /> </td> 
+   <td> Caminho para o arquivo que contém os comandos a serem adicionados ao incluo na lista de permissões. <br /> </td> 
    <td> String<br /> </td> 
   </tr> 
   <tr> 
@@ -582,7 +582,7 @@ Para obter mais informações, consulte [Restrição de comandos externos autori
 
 ## htmlToPdf {#htmltopdf}
 
-Estes são os diferentes parâmetros do nó **htmlToPdf**. Essa é a configuração do serviço para converter páginas da Web em documentos PDF.
+Estes são os diferentes parâmetros do nó **htmlToPdf**. Essa é a configuração do serviço para converter páginas da Web em documentos do PDF.
 
 <table> 
  <thead> 
@@ -1625,9 +1625,9 @@ Estes são os diferentes parâmetros do nó **mta**. Essa é a configuração do
    <td> statServerAddress<br /> </td> 
    <td> Endereço do servidor de estatísticas de entrega, fornecido como 
     &lt;dns ou ip&gt; 
-      <code>&lbrack;</code>: 
+      <code>[</code>: 
      &lt;porta&gt; 
-       <code>&rbrack;</code>. Consulte 
+       <code>]</code>. Consulte 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordenadas do servidor de estatísticas</a>. 
       <br /> 
      </td> 
@@ -1640,12 +1640,14 @@ Estes são os diferentes parâmetros do nó **mta**. Essa é a configuração do
    <td> Booleano<br /> </td> 
    <td> verdadeiro <br /> </td> 
   </tr> 
-  <!--tr> 
+  <!--
+  tr> 
    <td> statServerVersion<br /> </td> 
    <td> Protocol version used: communication protocol version (1 for a v5.11 and 6.0.2 server, 2 for a v6.1 server).<br /> </td> 
    <td> String<br /> </td> 
    <td> If undefined, the latest version is used. <br /> </td> 
-  </tr--> 
+  </tr
+  --> 
   <tr> 
    <td> useMomentum<br /> </td> 
    <td> Se definido como "true", sua instância está usando o <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">MTA aprimorado</a>.<br /> </td> 
@@ -1856,7 +1858,7 @@ Para obter informações adicionais, consulte [Otimização do envio de email](.
   </tr> 
   <tr> 
    <td> soapConnectorTimeoutSec<br /> </td> 
-   <td> Tempo limite (em segundos) após o qual uma conexão SOAP de um conector de entrega é abandonada.<br /> </td> 
+   <td> Tempo limite (em segundos) após o qual uma conexão SOAP para um conector de entrega é abandonada.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -3163,7 +3165,7 @@ Para obter informações adicionais, consulte a [seção Segurança e retransmis
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Status de sincronização de um recurso público (enumeração). Incluir na lista de bloqueios Os valores possíveis são 'normal' (execução normal), 'blacklist' (URL adicionada ao arquivo de em caso de erro 404) e 'spare' (upload de arquivo no servidor reserva, se existente).<br /> </td> 
+   <td> Status de sincronização de um recurso público (enumeração). Os valores possíveis são 'normal' (execução normal), 'blacklist' (URL adicionada ao arquivo de em caso de erro 404) e 'spare' (upload de arquivo no servidor reserva, se existente).<br /> </td> 
    <td> String<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
@@ -3311,7 +3313,7 @@ Para obter informações adicionais, consulte esta [seção](../../installation/
    <td> P3PCompactPolicy<br /> </td> 
    <td> Valor que descreve a política usada para cookies permanentes (em conformidade com o formato de Política compacta P3P). <br /> </td> 
    <td> String<br /> </td> 
-   <td> 'CAO DSP COR CURa DEVa TAIa NOSSO BUS IND UNI COM NAV'<br /> </td> 
+   <td> 'CAO DSP COR CURa DEVa TAIa NOSSA BUS IND UNI COM NAV'<br /> </td> 
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 

@@ -4,8 +4,8 @@ title: Arquitetura de mensagens transacionais
 description: Esta seção descreve a arquitetura de mensagens transacionais do Adobe Campaign Classic e os canais disponíveis para entregar mensagens transacionais
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 100%
 
@@ -87,11 +87,12 @@ No entanto, se iniciou um projeto de mensagens transacionais no canal de email e
 
 1. Instale o canal necessário, como, por exemplo, o **Canal móvel**, por meio do assistente de importação de pacotes (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
 1. Faça uma importação de arquivo (**[!UICONTROL Tools > Advanced > Import package... > File]**) e selecione o arquivo **datakitnms **`[Your language]`**packagemessageCenter.xml**.
-1. No **[!UICONTROL XML content of the data to import]**, mantenha somente o template da entrega que corresponde ao canal adicionado. Por exemplo, se o **Canal móvel** foi adicionado, mantenha somente o elemento de **entidades** que corresponde ao **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Caso tenha adicionado o **Canal de aplicativo móvel**, mantenha somente a **mensagem transacional do iOS** (iosTriggerMessage) e a **mensagem transacional do Android** (androidTriggerMessage).
+1. No **[!UICONTROL XML content of the data to import]**, mantenha somente o modelo da entrega que corresponde ao canal adicionado. Por exemplo, se o **Canal móvel** foi adicionado, mantenha somente o elemento de **entidades** que corresponde ao **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Caso tenha adicionado o **Canal de aplicativo móvel**, mantenha somente a **mensagem transacional do iOS** (iosTriggerMessage) e a **mensagem transacional do Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
-<!--## Transactional messages and inbound Interaction {#transactional-messages-and-inbound-interaction}
+<!--
+## Transactional messages and inbound Interaction {#transactional-messages-and-inbound-interaction}
 
 When combined with the Inbound Interaction module, transactional messaging enables you to insert a marketing offer dedicated to the recipient into the message.
 
@@ -124,7 +125,9 @@ Create your delivery templates the way you would for an email campaign:
 * Add the offer to your transactional message template.
 * Check the preview, send a proof and publish the template.
 
-You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).
+
+-->
 
 ### Notificações por push transacionais {#transactional-messaging-and-push-notifications}
 
@@ -171,7 +174,7 @@ Este é um exemplo de um evento que contém essas informações:
 
 >[!NOTE]
 >
->A criação de templates de mensagem permanece igual.
+>A criação de modelos de mensagem permanece igual.
 
 ### Mensagens transacionais e LINE {#transactional-messaging-and-line}
 
@@ -223,7 +226,7 @@ Em seguida, do **[!UICONTROL Explorer]**, em **[!UICONTROL External account]** >
    * **[!UICONTROL Password]**: digite a senha da conta usada para acessar a instância de execução.
    * **[!UICONTROL Data Source]** : digite a seguinte sintaxe **`nms:extAccount:ID`** da conta do banco de dados externo na instância de execução.
 
-1. Crie uma conta externa **[!UICONTROL Execution instance]** em sua instância de **marketing** usando a seguinte configuração para criar o workflow de sincronização de dados:
+1. Crie uma conta externa **[!UICONTROL Execution instance]** em sua instância de **marketing** usando a seguinte configuração para criar o fluxo de trabalho de sincronização de dados:
 
    ![](assets/line_config_mc_2.png)
 
@@ -242,6 +245,6 @@ Em seguida, do **[!UICONTROL Explorer]**, em **[!UICONTROL External account]** >
    * **[!UICONTROL Method]** : selecione **[!UICONTROL Federated Data Access (FDA)]**.
    * **[!UICONTROL FDA account]**: selecione a conta FDA no menu suspenso.
    * Clique no botão **[!UICONTROL Create the archiving workflow]**.
-   * Clique no botão **[!UICONTROL Create data synchronization workflow]** para criar o workflow de sincronização de dados do LINE.
+   * Clique no botão **[!UICONTROL Create data synchronization workflow]** para criar o fluxo de trabalho de sincronização de dados do LINE.
 
 1. Agora você pode começar a [criar mensagens transacionais](../../message-center/using/creating-the-message-template.md).

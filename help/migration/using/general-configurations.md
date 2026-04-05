@@ -9,10 +9,10 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 0%
+source-wordcount: '2517'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +31,11 @@ Além disso:
 
 Na v6.02, o modo &quot;fuso horário múltiplo&quot; só estava disponível para mecanismos de banco de dados PostgreSQL. Agora ele é oferecido independentemente do tipo de mecanismo de banco de dados usado. É altamente recomendável transformar sua base em uma base de &quot;fuso horário múltiplo&quot;.
 
-Para usar o modo TIMESTAMP WITH TIMEZONE, também é necessário adicionar a opção **-userTimestamptz:1** à linha de comando postupgrade.
+Para usar o modo TIMESTAMP WITH TIMEZONE, também é necessário adicionar a opção **-userTimestamp:1** à linha de comando postupgrade.
 
 >[!IMPORTANT]
 >
->Se o parâmetro **-usetimestamptz:1** for usado com um mecanismo de banco de dados incompatível, o banco de dados será corrompido e você terá que restaurar um backup do banco de dados e executar novamente o comando acima.
+>Se o parâmetro **-usetimestamptz:1** for usado com um mecanismo de banco de dados incompatível, seu banco de dados será corrompido e você terá que restaurar um backup do banco de dados e executar novamente o comando acima.
 
 >[!NOTE]
 >
@@ -53,13 +53,13 @@ Se você receber um erro **ORA 01805** durante a pós-atualização, isso signif
    select * from v$timezone_file
    ```
 
-   Os arquivos de fuso horário geralmente são encontrados na pasta **ORACLE_HOME/oracore/zoneinfo/**.
+   Normalmente, os arquivos de fuso horário são encontrados na pasta **ORACLE_HOME/oracore/zoneinfo/**.
 
 1. Verifique se os arquivos de fuso horário são idênticos em ambos os servidores.
 
 Para obter mais informações, visite: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
-Um desalinhamento de fuso horário entre cliente e servidor também pode causar alguns atrasos. É por isso que recomendamos usar a mesma versão da biblioteca do Oracle nos lados do cliente e do servidor. Ambos os fusos horários devem ser os mesmos.
+Um desalinhamento de fuso horário entre cliente e servidor também pode causar alguns atrasos. É por isso que recomendamos usar a mesma versão da biblioteca do Oracle no cliente e no servidor. Ambos os fusos horários devem ser os mesmos.
 
 Para verificar se ambos os lados estão nos mesmos fusos horários:
 
@@ -119,11 +119,11 @@ nlserver config -internalpassword
 
 Determinados esquemas prontos para uso foram modificados e agora são acessíveis por padrão apenas com acesso de gravação para operadores com a permissão **admin**:
 
-* ncm:publicação
+* ncm:publishing
 * nl:monitoring
 * nms:calendar
 * xtk:builder
-* xtk:conexões
+* xtk:connections
 * xtk:dbInit
 * xtk:entityBackupNew
 * xtk:entityBackupOriginal
@@ -152,7 +152,7 @@ Determinados esquemas prontos para uso foram modificados e agora são acessívei
 
 ### Parâmetro Sessiontoken {#sessiontoken-parameter}
 
-Na v5, o parâmetro **sessiontoken** funcionou no lado do cliente (lista de telas do tipo visão geral, editor de links etc.) e no lado do servidor (aplicações web, relatórios, jsp, jssp etc.). Na v7, ele só funciona no lado do servidor. Se quiser voltar à funcionalidade completa como na v5, você deverá modificar os links usando esse parâmetro e passar pela página de conexão:
+Na v5, o parâmetro **sessiontoken** funcionou no lado do cliente (lista de telas do tipo visão geral, editor de links etc.) e no lado do servidor (aplicativos web, relatórios, jsp, jssp etc.). Na v7, ele só funciona no lado do servidor. Se quiser voltar à funcionalidade completa como na v5, você deverá modificar os links usando esse parâmetro e passar pela página de conexão:
 
 Exemplo de link:
 
@@ -623,13 +623,14 @@ Todos os relatórios padrão atualmente usam o mecanismo de renderização v6.x.
 
 ### Relatórios personalizados {#personalized-reports}
 
-<!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
+<!--
+If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
 -->
-Para se beneficiar das novas funcionalidades do relatório, é necessário republicar os relatórios. Nesse caso, verifique todos os scripts e os altere se necessário. Em relação à exportação de PDF, se você tiver adicionado um script específico para o Open Office, ele não funcionará mais com o novo mecanismo de exportação de PDF (PhantomJS).
+Para se beneficiar das novas funcionalidades do relatório, é necessário republicar os relatórios. Nesse caso, verifique todos os scripts e os altere se necessário. Em relação à exportação do PDF, se você tiver adicionado um script específico do Open Office, ele não funcionará mais com o novo mecanismo de exportação do PDF (PhantomJS).
 
-## Aplicações web {#web-applications}
+## Aplicativos web {#web-applications}
 
 Há duas famílias de aplicativos Web:
 

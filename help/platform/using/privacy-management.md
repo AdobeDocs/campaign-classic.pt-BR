@@ -8,8 +8,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 122d69d3d7474480f7799248413ac89338469ebc
-workflow-type: ht
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 # Gerenciamento de privacidade {#privacy-management}
 
-O Adobe Campaign oferece um conjunto de ferramentas para ajudar a cumprir os [regulamentos sobre privacidade](#privacy-management-regulations) (incluindo GDPR, CCPA, PDPA, LGPD).
+O Adobe Campaign oferece um conjunto de ferramentas para ajudar a cumprir os [regulamentos sobre privacidade](#privacy-management-regulations) (incluindo RGPD, CCPA, PDPA, LGPD).
 
 Estes são os cinco principais recursos oferecidos pelo Adobe Campaign para garantir a conformidade com regulamentos sobre privacidade:
 
@@ -31,15 +31,17 @@ Estes são os cinco principais recursos oferecidos pelo Adobe Campaign para gara
 
 Para obter mais informações, consulte [Direito de acesso e direito de ser esquecido](#right-access-forgotten) e [Consentimento, retenção e funções](#consent-retention-roles).
 
-<!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
+<!--
+This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
-It also contains information on important features to manage Privacy ([Consent, Retention and Roles](#consent-retention-roles)), as well as best practices to help you with your Privacy compliance when using Adobe Campaign.-->
+It also contains information on important features to manage Privacy ([Consent, Retention and Roles](#consent-retention-roles)), as well as best practices to help you with your Privacy compliance when using Adobe Campaign.
+-->
 
 ## Regulamentos sobre o gerenciamento de privacidade {#privacy-management-regulations}
 
 Os recursos do Adobe Campaign ajudam a cumprir os seguintes regulamentos:
 
-* O **GDPR** (Regulamento Geral sobre a Proteção de Dados) é a lei de privacidade da União Europeia (UE) que adequa e moderniza os requisitos de proteção de dados para os países membros da UE.
+* O **RGPD** (Regulamento Geral sobre a Proteção de Dados) é a lei de privacidade da União Europeia (UE) que adequa e moderniza os requisitos de proteção de dados para os países membros da UE.
 * A **CCPA** (Lei de Privacidade do Consumidor da Califórnia) oferece aos habitantes da Califórnia novos direitos, no que diz respeito a suas informações pessoais, e impõe responsabilidades sobre a proteção de dados a determinadas entidades com negócios no estado.
 * A **PDPA** (Lei de Proteção de Dados Pessoais) é a lei de privacidade que adequa e moderniza os requisitos de proteção de dados na Tailândia.
 * A **LGPD** (Lei Geral de Proteção de Dados) aplica-se a todas as empresas que coletam ou processam dados pessoais no Brasil.
@@ -64,15 +66,18 @@ Para facilitar a conformidade com a privacidade, o Adobe Campaign permite manipu
 
 Para saber como criar solicitações de **Acesso** e **Exclusão** e como o Adobe Campaign as processa, consulte as [etapas de implementação](../../platform/using/privacy-requests.md).
 
-<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=pt-BR).
-https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html-->
+<!--
+Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
+
+https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html
+-->
 
 ## Consentimento, retenção e funções {#consent-retention-roles}
 
 Além dos recursos mais recentes de **Direito de acesso** e **Direito ao esquecimento**, o Adobe Campaign oferece outros recursos importantes, essenciais para a privacidade:
 
 * [Gerenciamento do consentimento](#consent-management): funcionalidade de assinatura para gerenciamento de preferências
-* [Retenção de dados](#data-retention): períodos de retenção de dados em todas as tabelas de log padrão; períodos de retenção adicionais podem ser configurados com workflows
+* [Retenção de dados](#data-retention): períodos de retenção de dados em todas as tabelas de log padrão; períodos de retenção adicionais podem ser configurados com fluxos de trabalho
 * [Gerenciamento de direitos](#rights-management): acesso a dados gerenciados por direito nomeado     
 
 ### Gerenciamento de consentimento {#consent-management}
@@ -107,7 +112,7 @@ A seguir estão os valores de retenção padrão para tabelas integradas. Esteja
 * **Eventos de pipeline ignorados**: 1 mês
 * **Relatórios dinâmicos**: 13 meses
 
-De modo semelhante à exclusão, a funcionalidade padrão do workflow possibilita configurar períodos de retenção para qualquer tabela personalizada.
+De modo semelhante à exclusão, a funcionalidade padrão do fluxo de trabalho possibilita configurar períodos de retenção para qualquer tabela personalizada.
 
 Entre em contato com os consultores da Adobe ou administradores técnicos para saber mais sobre retenção ou se é necessário definir a retenção para tabelas personalizadas.
 

@@ -8,8 +8,8 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 100%
 
@@ -33,8 +33,10 @@ Depois que o email for criado e configurado, você poderá enviá-lo ao público
 >Todo o processo para validar uma entrega está descrito [nesta seção](steps-validating-the-delivery.md). As etapas detalhadas completas para configurar e enviar uma entrega são apresentadas [nesta seção](steps-sending-the-delivery.md).
 
 As seguintes seções detalham as configurações específicas para a entrega de emails:
-<!--* [Generating the mirror page](generating-mirror-page.md)
-* [Email BCC](email-bcc.md)-->
+<!--
+* [Generating the mirror page](generating-mirror-page.md)
+* [Email BCC](email-bcc.md)
+-->
 * [Parâmetros de email](email-parameters.md)
 * [Envio de emails com o MTA aprimorado](sending-with-enhanced-mta.md)
 * [Enviar emails em dispositivos móveis japoneses](sending-emails-on-japanese-mobiles.md)

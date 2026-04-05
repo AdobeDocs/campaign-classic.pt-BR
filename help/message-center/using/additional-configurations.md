@@ -7,8 +7,8 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: bba3f23637dd67a1557203c5ed1b93a6cb044870
-workflow-type: ht
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 100%
 
@@ -69,11 +69,13 @@ Na instância de controle, caso tenha uma ou várias instâncias de execução r
 
 Os fluxos de trabalho de arquivamento podem ser acessados na pasta **Administration > Production > Message Center**. Depois de criados, os fluxos de trabalho de arquivamento são iniciados automaticamente.
 
-<!--**Minimal architecture**
+<!--
+**Minimal architecture**
 
 Once the control and execution modules are installed on the same instance, you must create the archiving workflow using the deployment wizard. Click the **[!UICONTROL Create the archiving workflow]** button to create and start the workflow.
 
-![](assets/messagecenter_archiving_001.png)-->
+![](assets/messagecenter_archiving_001.png)
+-->
 
 ### Fluxo de trabalho da instância de execução {#execution-instance-workflows}
 

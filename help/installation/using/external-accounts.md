@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1791'
-ht-degree: 54%
+ht-degree: 56%
 
 ---
 
@@ -47,7 +47,7 @@ A conta externa é criada e adicionada à lista de contas externas.
 
 ### Emails rejeitados {#bounce-mails-external-account}
 
-A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Para obter mais informações sobre essa conta externa, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=pt-BR){target="_blank"}.
+A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Para obter mais informações sobre essa conta externa, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
@@ -87,11 +87,11 @@ Para configurar um POP3 externo usando o **Microsoft OAuth 2.0**, marque a opç�
 
 * **[!UICONTROL Azure tenant]**
 
-  A ID do Azure (ou a ID do Diretório (locatário)) pode ser encontrada na lista suspensa do **Essentials** da visão geral do seu aplicativo no portal do Azure.
+  A Azure ID (ou a ID do diretório (locatário)) pode ser encontrada na lista suspensa do **Essentials** da sua visão geral do aplicativo, no portal do Azure.
 
 * **[!UICONTROL Azure Client ID]**
 
-  A ID do cliente (ou a ID do aplicativo (cliente)) pode ser encontrada na lista suspensa do **Essentials** da visão geral do seu aplicativo no portal do Azure.
+  A ID do cliente (ou a ID do aplicativo (cliente)) pode ser encontrada na lista suspensa do **Essentials** da sua visão geral do aplicativo, no portal do Azure.
 
 * **[!UICONTROL Azure Client secret]**
 
@@ -159,7 +159,7 @@ Para obter mais informações sobre essa configuração, consulte esta [página]
 
 ### FTP {#ftp-external-account}
 
-A conta externa FTP permite configurar e testar o acesso a um servidor fora do Adobe Campaign. Para configurar conexões com sistemas externos, como servidores FTP 898 usados para transferências de arquivos, você pode criar suas próprias contas externas. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
+A conta externa FTP permite configurar e testar o acesso a um servidor fora do Adobe Campaign. Para configurar conexões com sistemas externos, como servidores FTP 898 usados para transferências de arquivos, você pode criar suas próprias contas externas. Para mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
 
 Para fazer isso, especifique nesta conta externa o endereço e as credenciais usadas para estabelecer a conexão com o servidor FTP.
 
@@ -189,7 +189,7 @@ Para saber onde localizar essas credenciais, consulte esta [página](https://hel
 
 ### SFTP {#sftp-external-account}
 
-A conta externa SFTP permite configurar e testar o acesso a um servidor fora do Adobe Campaign. Para configurar conexões com sistemas externos, como SFTP usado para transferências de arquivos, você pode criar suas próprias contas externas. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
+A conta externa SFTP permite configurar e testar o acesso a um servidor fora do Adobe Campaign. Para configurar conexões com sistemas externos, como SFTP usado para transferências de arquivos, você pode criar suas próprias contas externas. Para mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
 
 ![](assets/ext_account_4.png)
 
@@ -209,7 +209,8 @@ A conta externa SFTP permite configurar e testar o acesso a um servidor fora do 
 
   Senha usada para conectar ao servidor SFTP.
 
-<!--To add SSH keys on Windows:
+<!--
+To add SSH keys on Windows:
 
 1. Create the **HOME** environment variable with value set as the installation directory.
 
@@ -447,7 +448,7 @@ Para saber onde encontrar a ID da chave de acesso e a chave de acesso secreta, c
 
 ### Armazenamento Azure Blob {#azure-blob-external-account}
 
-A conta externa **Azure Blob Storage** pode ser usada para importar ou exportar dados para a Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
+A conta externa **Azure Blob storage** pode ser usada para importar ou exportar dados para o Adobe Campaign usando uma atividade de fluxo de trabalho **[!UICONTROL Transfer file]**. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
 
 ![](assets/ext_account_23.png)
 
@@ -455,7 +456,7 @@ Para configurar o **[!UICONTROL Azure external account]** para funcionar com o A
 
 * **[!UICONTROL Server]**
 
-  URL do seu servidor de armazenamento Azure Blob.
+  URL do servidor de armazenamento Azure Blob.
 
 * **[!UICONTROL Encryption]**
 

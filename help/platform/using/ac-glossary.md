@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: ht
-source-wordcount: '6202'
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
+source-wordcount: '6200'
 ht-degree: 100%
 
 ---
@@ -288,7 +288,8 @@ Saiba mais sobre [Delegação de domínio](https://experienceleague.adobe.com/do
 ## E - H {#sec-2}
 
 <!--
-----DEPRECATED------>
+----DEPRECATED----
+-->
 +++**E4X**
 
 E4X é a versão do Javascript usada no Adobe Campaign Classic. Algumas vezes chamado de ECMAScript, essa é uma extensão do Javascript que permite a combinação de Javascript e elementos primitivos de XML no mesmo código. Observe que o E4X é classificado como uma linguagem obsoleta.
@@ -1021,7 +1022,7 @@ As mensagens transacionais são um módulo do Campaign criado para gerenciar not
 Saiba mais sobre [Mensagens transacionais](../../message-center/using/about-transactional-messaging.md).
 +++
 
-&lt;!------- ÚTIL AQUI??----->
+<!-- USEFUL HERE?? -->
 +++**Campanhas acionadas**
 
 As campanhas acionadas são campanhas que são executadas quando uma solicitação de API é recebida em um fluxo de trabalho. As chamadas de API são consumidas por uma atividade de Sinal no fluxo de trabalho, cuja execução é iniciada.
@@ -1077,7 +1078,7 @@ Saiba mais sobre [Aplicativos da Web](../../web/using/about-web-applications.md)
 
 +++**Fluxo de trabalho**
 
-Um fluxo de trabalho é uma representação visual do fluxo de execução da campanha. Permite que você organize a gama completa de processos e tarefas em diferentes módulos do servidor de aplicativos. Esse ambiente gráfico abrangente permite criar processos, inclusive segmentação, execução de campanha, processamento de arquivos, participação humana etc. O mecanismo de fluxo de trabalho executa e rastreia esses processos.
+Um fluxo de trabalho é uma representação visual do fluxo de execução da campanha. Permite que você organize a gama completa de processos e tarefas em diferentes módulos do servidor de aplicativos. Esse ambiente gráfico abrangente permite criar processos, inclusive segmentação, execução de campanha, processamento de arquivos, participação humana, etc. O mecanismo de fluxo de trabalho executa e rastreia esses processos.
 
 Saiba mais sobre [Fluxos de trabalho](../../workflow/using/about-workflows.md)
 +++

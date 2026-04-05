@@ -5,8 +5,8 @@ description: Publicar um formulário web
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 100%
 
@@ -130,7 +130,7 @@ Para alterar o estado de um formulário, você precisa publicá-lo. Para fazer i
 
 Para ser acessado por usuários, o formulário deve estar em produção e ter sido iniciado, ou seja, estar em seu período de vigência. As datas de validade são inseridas por meio do link **[!UICONTROL Properties]** do formulário.
 
-* Use os campos na seção **[!UICONTROL Project]** para inserir datas de início e término do formulário.
+* Use os campos na seção **[!UICONTROL Project]** para inserir datas inicial e final do formulário.
 
   ![](assets/webapp_availability_date.png)
 
@@ -196,6 +196,7 @@ Saiba mais sobre os diferentes status de um formulário web [nesta seção](#lif
   >
   >É possível verificar a versão mais recente do seu formulário web na guia **[!UICONTROL Preview]**.
 
-<!--For RN:
+<!--
+For RN:
 * Now, when a web form has the **Pending publication** status, it must be published before it becomes **Online** and accessible through the web form URL in a web browser. [Read more](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 -->
