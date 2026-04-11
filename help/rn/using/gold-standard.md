@@ -5,11 +5,10 @@ description: Notas de versão e Matriz de compatibilidade do Campaign Classic [!
 feature: Release Notes
 role: User
 level: Beginner
-hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 100%
 
@@ -32,7 +31,7 @@ _7 de setembro de 2021_
 
 A build 9032@554dbcd inclui a seguinte correção:
 
-* Correção de um problema que resultava em um erro 500 ao abrir o link para um aplicativo web em uma entrega de linha com rastreamento ativado.
+* Correção de um problema que resultava em um erro 500 ao abrir o link para um aplicativo web em uma entrega de linha com rastreamento habilitado.
 
 _27 de agosto de 2021_
 
@@ -135,7 +134,7 @@ _29 de abril de 2020_
 
 A build 9032@3a9dc9c inclui as seguintes correções:
 
-* A segurança no rastreamento de links no email foi aprimorada. Ela é ativada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser ativado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism).
+* A segurança no rastreamento de links no email foi aprimorada. Ela é habilitada por padrão para todos os clientes. Um recurso de segurança adicional e aprimorado está disponível e pode ser habilitado ao acessar o Atendimento ao cliente. Mais detalhes sobre o recurso e as etapas para clientes não hospedados para habilitá-lo podem ser encontrados na [lista de verificação de Segurança e Privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
@@ -146,13 +145,13 @@ A build 9032@3a9dc9c inclui as seguintes correções:
 * Correção de um problema que poderia afetar a notificação via push quando enviada em alta frequência. (NEO-20516)
 * Correção de um problema no gerenciamento de respostas de oferta que resulta em falhas no servidor da Web. (NEO-19482)
 * Correção de um erro no gerenciamento do LibreOffice que impede a exportação de relatórios. (NEO-20982)
-* Correção de um problema que causa um erro ao atualizar vários workflows por meio do uso de uma atividade de pesquisa.
+* Correção de um problema que causa um erro ao atualizar vários fluxos de trabalho por meio do uso de uma atividade de pesquisa.
 * Melhora do gerenciamento do LibreOffice para evitar falhas na pré-visualização de email com arquivos .odt.
 * Melhora no gerenciamento da conexão do Apache para evitar latência no serviço da Web.
 * Melhora na exibição da tag da versão (7 dígitos) no menu **Sobre**.
 * Correção de uma prevenção no gerenciamento de listas que impede a publicação de ofertas.
-* Correção de uma regressão que resulta em falha do workflow de limpeza.
-* Correção de uma regressão menor nos logs de workflow de limpeza.
+* Correção de uma regressão que resulta em falha do fluxo de trabalho de limpeza.
+* Correção de uma regressão menor nos logs de fluxo de trabalho de limpeza.
 
 ### Versão 6 do [!DNL Gold Standard]{#gs-6}
 

@@ -1,12 +1,11 @@
 ---
 product: campaign
 title: Carregamento de dados (arquivo)
-description: Saiba mais sobre a atividade de workflow de carregamento de dados (arquivo)
+description: Saiba mais sobre a atividade de fluxo de trabalho Carregamento de dados (arquivo)
 feature: Workflows, Data Management Activity
 hide: true
-hidefromtoc: true
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 93%
@@ -17,7 +16,7 @@ ht-degree: 93%
 
 ## Uso {#use}
 
-A atividade **[!UICONTROL Data loading (File)]** permite acessar uma fonte de dados externos diretamente e usá-la no Adobe Campaign. De fato, todos os dados necessários para operações de target nem sempre são encontrados no banco de dados do Adobe Campaign: ele pode ser disponibilizado em arquivos externos.
+A atividade **[!UICONTROL Data loading (File)]** permite acessar uma fonte de dados externos diretamente e usá-la no Adobe Campaign. De fato, todos os dados necessários para operações de direcionamento nem sempre são encontrados no banco de dados do Adobe Campaign: ele pode ser disponibilizado em arquivos externos.
 
 O arquivo a ser carregado pode ser especificado pela transição ou calculado durante a execução dessa atividade. Por exemplo, pode ser a lista de 10 produtos favoritos de um cliente cujas compras são gerenciadas em um banco de dados externo.
 
@@ -108,7 +107,7 @@ O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carrega
 
    ![](assets/s_advuser_load_file_sample_2.png)
 
-   Para fazer isso, clique no botão **[!UICONTROL Change...]** localizado na seção inferior direita da ferramenta de edição e configure a programação.
+   Para fazer isso, clique no botão **[!UICONTROL Change...]** localizado na seção inferior direita da ferramenta de edição e configure o cronograma.
 
    Para obter mais informações, consulte [Scheduler](scheduler.md).
 
@@ -137,6 +136,6 @@ O exemplo a seguir permite coletar um arquivo no servidor todos os dias, carrega
 
    ![](assets/s_advuser_load_file_sample_6.png)
 
-1. Então especifique os processos a serem executados para cada tipo de público. No nosso exemplo, vamos **[!UICONTROL Update the data]** no banco de dados. Para fazer isso, posicione uma atividade **[!UICONTROL Update data]** no final de cada transição de saída da atividade Split.
+1. Então especifique os processos a serem executados para cada tipo de população. No nosso exemplo, vamos **[!UICONTROL Update the data]** no banco de dados. Para fazer isso, posicione uma atividade **[!UICONTROL Update data]** no final de cada transição de saída da atividade Split.
 
    A atividade **[!UICONTROL Update data]** está detalhada na seção [Update data](update-data.md).

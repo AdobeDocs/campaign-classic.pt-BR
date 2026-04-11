@@ -4,10 +4,9 @@ title: Atualizar agregado
 description: Saiba mais sobre a atividade de fluxo de trabalho Atualizar agregado
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 100%
 
@@ -19,7 +18,7 @@ ht-degree: 100%
 
 Agregados são definidos em nível de cubo para fins de relatório. Uma guia **[!UICONTROL Workflow]** está disponível ao configurar uma agregação.
 
-Agregações são úteis ao manipular grandes volumes de dados. Eles são atualizados automaticamente com base nas configurações definidas na caixa de workflow dedicada, para integrar os dados a serem coletados mais recentemente nos indicadores
+Agregações são úteis ao manipular grandes volumes de dados. Eles são atualizados automaticamente com base nas configurações definidas na caixa de fluxo de trabalho dedicada, para integrar os dados a serem coletados mais recentemente nos indicadores
 
 As agregações são definidas na guia relevante de cada cubo.
 

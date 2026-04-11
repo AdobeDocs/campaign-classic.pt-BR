@@ -5,10 +5,9 @@ description: Saiba como criar e executar campanhas de marketing
 role: User
 feature: Campaigns, Cross Channel Orchestration, Programs
 hide: true
-hidefromtoc: true
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 100%
 
@@ -22,7 +21,7 @@ As campanhas incluem ações (entregas) e processos (importação ou extração 
 
 Para criar uma campanha de marketing:
 
-1. Crie uma campanha: descubra campanhas e suas características: etiqueta, tipo, datas de início e término, orçamento, recursos associados, gerentes e participantes. [Saiba mais](#creating-a-campaign).
+1. Crie uma campanha: descubra campanhas e suas características: etiqueta, tipo, datas inicial e final, orçamento, recursos associados, gerentes e participantes. [Saiba mais](#creating-a-campaign).
 
 1. Defina a população do target: crie um fluxo de trabalho com consultas de direcionamento. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
@@ -74,7 +73,7 @@ As campanhas também podem ser criadas por meio de um programa. Para fazer isso,
 
 Ao criar uma campanha por meio da guia **[!UICONTROL Schedule]** de um programa, a campanha é vinculada automaticamente ao programa relacionado. O campo **[!UICONTROL Program]** está oculto nesse caso.
 
-Na janela de criação da campanha, selecione o modelo da campanha e adicione um nome e uma descrição da campanha. Você também pode especificar as datas de início e término da campanha.
+Na janela de criação da campanha, selecione o modelo da campanha e adicione um nome e uma descrição da campanha. Você também pode especificar as datas inicial e final da campanha.
 
 Clique em **[!UICONTROL OK]** para criar a campanha. Ela será adicionada ao cronograma do programa.
 
@@ -98,123 +97,123 @@ Você será direcionado ao painel da campanha.
 
 ## Campanhas recorrentes e periódicas {#recurring-and-periodic-campaigns}
 
-Uma campanha recorrente é uma campanha baseada em um template específico, cujos workflows são configurados para serem executados de acordo com um agendamento associado. Portanto, os workflows serão recorrentes dentro de uma campanha. O direcionamento é duplicado em cada execução e os vários processos e populações do target são rastreados. Também é possível executar os direcionamentos antecipadamente, por meio do período de cobertura durante a criação automática de workflow, para iniciar simulações com estimativas de destino.
+Uma campanha recorrente é uma campanha baseada em um modelo específico, cujos fluxos de trabalho são configurados para serem executados de acordo com um agendamento associado. Portanto, os fluxos de trabalho serão recorrentes dentro de uma campanha. O direcionamento é duplicado em cada execução e os vários processos e populações de destino são rastreados. Também é possível executar as segmentações antecipadamente, por meio do período de cobertura durante a criação automática de fluxo de trabalho, para iniciar simulações com estimativas de segmentos.
 
-Uma campanha periódica é uma campanha criada automaticamente de acordo com o agendamento de execução de seu template.
+Uma campanha periódica é uma campanha criada automaticamente de acordo com o agendamento de execução de seu modelo.
 
 ### Criar uma campanha recorrente {#creating-a-recurring-campaign}
 
-As campanhas recorrentes são criadas com base em um template específico que define o template do fluxo de trabalho que será executado e a programação de execução.
+As campanhas recorrentes são criadas com base em um modelo específico que define o modelo do fluxo de trabalho que será executado e o cronograma de execução.
 
-#### Criar um template para campanhas recorrentes {#creating-the-campaign-template}
+#### Criar um modelo para campanhas recorrentes {#creating-the-campaign-template}
 
-1. Crie um template de campanha **[!UICONTROL Recurring]**.
+1. Crie um modelo de campanha **[!UICONTROL Recurring]**.
 
    >[!NOTE]
    >
-   >Recomenda-se duplicar o template padrão em vez de criar um template vazio.
+   >Recomenda-se duplicar o modelo padrão em vez de criar um modelo vazio.
 
    ![](assets/s_ncs_user_op_template_recur_tab.png)
 
-1. Insira o nome do template e a duração da campanha.
+1. Insira o nome do modelo e a duração da campanha.
 
    ![](assets/s_ncs_user_op_template_recur_duplicate.png)
 
-1. Para esse tipo de campanha, uma guia **[!UICONTROL Schedule]** é adicionada para criar o agendamento de execução do template.
+1. Para esse tipo de campanha, uma guia **[!UICONTROL Schedule]** é adicionada para criar o agendamento de execução do modelo.
 
-Nesta guia, especifique as datas de execução planejadas das campanhas com base neste template.
+Nesta guia, especifique as datas de execução planejadas das campanhas com base neste modelo.
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do workflow. Para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md).
+O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do fluxo de trabalho. Para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
->A configuração do agendamento de execução deve ser realizada cuidadosamente para evitar sobrecarga do banco de dados. As campanhas recorrentes duplicam o(s) fluxo(s) de trabalho de seu template dependendo do cronograma especificado. A implementação da criação de workflow excessivamente frequente pode dificultar a operação do banco de dados.
+>A configuração do agendamento de execução deve ser realizada cuidadosamente para evitar sobrecarga do banco de dados. As campanhas recorrentes duplicam o(s) fluxo(s) de trabalho de seu modelo dependendo do cronograma especificado. A implementação da criação de fluxo de trabalho excessivamente frequente pode dificultar a operação do banco de dados.
 
-1. Especifique um valor no campo **[!UICONTROL Create in advance for]** para criar os workflows correspondentes ao período indicado.
-1. Crie o template de workflow a ser usado em campanhas com base nesse template, com os parâmetros de definição de metas e uma ou mais remessas genéricas.
+1. Especifique um valor no campo **[!UICONTROL Create in advance for]** para criar os fluxos de trabalho correspondentes ao período indicado.
+1. Crie o modelo de fluxo de trabalho a ser usado em campanhas com base nesse modelo, com os parâmetros de definição de metas e uma ou mais remessas genéricas.
 
    >[!NOTE]
    >
-   >Esse workflow deve ser salvo como um template de workflow recorrente. Para fazer isso, edite as propriedades do workflow e selecione na guia **[!UICONTROL Recurring workflow template]** a opção **[!UICONTROL Execution]**.
+   >Esse fluxo de trabalho deve ser salvo como um modelo de fluxo de trabalho recorrente. Para fazer isso, edite as propriedades do fluxo de trabalho e selecione na guia **[!UICONTROL Recurring workflow template]** a opção **[!UICONTROL Execution]**.
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
 #### Criar a campanha recorrente {#create-the-recurring-campaign}
 
-Para criar a campanha recorrente e executar os workflows de acordo com o agendamento definido no template, aplique o seguinte procedimento:
+Para criar a campanha recorrente e executar os fluxos de trabalho de acordo com o agendamento definido no modelo, aplique o seguinte procedimento:
 
-1. Crie uma nova campanha com base em um template de campanha recorrente.
-1. Preencha o agendamento de execução do workflow.
+1. Crie uma nova campanha com base em um modelo de campanha recorrente.
+1. Preencha o agendamento de execução do fluxo de trabalho.
 
    ![](assets/s_ncs_user_op_recur_planning.png)
 
-1. O agendamento da campanha permite que você insira uma data de início ou execução automática de workflow para cada linha.
+1. O agendamento da campanha permite que você insira uma data inicial ou execução automática de fluxo de trabalho para cada linha.
 
    Para cada linha, você pode adicionar as seguintes opções adicionais:
 
-   * **[!UICONTROL To be approved]** : permite forçar as solicitações de aprovação de entrega no workflow.
-   * **[!UICONTROL To be started]**: permite iniciar o workflow quando a data de início é atingida.
+   * **[!UICONTROL To be approved]** : permite forçar as solicitações de aprovação de entrega no fluxo de trabalho.
+   * **[!UICONTROL To be started]**: permite iniciar o fluxo de trabalho quando a data inicial é atingida.
 
-   O campo **[!UICONTROL Create in advance for]** permite criar todos os workflows que abrangem o período inserido.
+   O campo **[!UICONTROL Create in advance for]** permite criar todos os fluxos de trabalho que abrangem o período inserido.
 
-   Após a execução do workflow **[!UICONTROL Jobs on campaigns]**, os workflows dedicados são criados com base nas ocorrências definidas no agendamento da campanha. Um workflow é criado para cada data de execução.
+   Após a execução do fluxos de trabalho **[!UICONTROL Jobs on campaigns]**, os fluxos de trabalho dedicados são criados com base nas ocorrências definidas no agendamento da campanha. Um fluxo de trabalho é criado para cada data de execução.
 
-1. Os workflows recorrentes são criados automaticamente a partir do template de workflow presente na campanha. Eles ficam visíveis na guia **[!UICONTROL Targeting and workflows]** da campanha.
+1. Os fluxos de trabalho recorrentes são criados automaticamente a partir do modelo de fluxo de trabalho presente na campanha. Eles ficam visíveis na guia **[!UICONTROL Targeting and workflows]** da campanha.
 
    ![](assets/s_ncs_user_op_recur_planning_wfs.png)
 
-   O rótulo de uma instância de workflow recorrente consiste no rótulo do seu template e no número do workflow, sendo que entre eles há o caractere &quot;#&quot;.
+   O rótulo de uma instância de fluxo de trabalho recorrente consiste no rótulo do seu modelo e no número do fluxo de trabalho, sendo que entre eles há o caractere &quot;#&quot;.
 
-   Os workflows criados a partir do agendamento são associados automaticamente a ele na coluna **[!UICONTROL Workflow]** da guia **[!UICONTROL Schedule]**.
+   Os fluxos de trabalho criados a partir do agendamento são associados automaticamente a ele na coluna **[!UICONTROL Workflow]** da guia **[!UICONTROL Schedule]**.
 
    ![](assets/s_ncs_user_op_recur_planning_wfs_1.png)
 
-   Cada workflow pode ser editado desta guia.
+   Cada fluxo de trabalho pode ser editado desta guia.
 
    ![](assets/s_ncs_user_op_recur_planning_wf_edit.png)
 
    >[!NOTE]
    >
-   >A data de início da linha de agendamento associada ao workflow está disponível em uma variável do workflow com a seguinte sintaxe:\
+   >A data inicial da linha de agendamento associada ao fluxo de trabalho está disponível em uma variável do fluxo de trabalho com a seguinte sintaxe:\
    >`$date(instance/vars/@startPlanningDate)`
 
 ### Criar uma campanha periódica {#creating-a-periodic-campaign}
 
-Uma campanha periódica é uma campanha baseada em um template específico que permite criar instâncias de campanha com base em um agendamento de execução. As instâncias de campanha são criadas automaticamente com base em um template de campanha periódico, dependendo da frequência definida no cronograma do template.
+Uma campanha periódica é uma campanha baseada em um modelo específico que permite criar instâncias de campanha com base em um agendamento de execução. As instâncias de campanha são criadas automaticamente com base em um modelo de campanha periódico, dependendo da frequência definida no cronograma do modelo.
 
-#### Criar o template da campanha {#creating-the-campaign-template-1}
+#### Criar o modelo da campanha {#creating-the-campaign-template-1}
 
-1. Crie um template de campanha **[!UICONTROL Periodic]**, preferencialmente duplicando um template de campanha existente.
+1. Crie um modelo de campanha **[!UICONTROL Periodic]**, preferencialmente duplicando um modelo de campanha existente.
 
    ![](assets/s_ncs_user_op_template_period_create.png)
 
-1. Digite as propriedades do template.
+1. Digite as propriedades do modelo.
 
    >[!NOTE]
    >
-   >O operador que o template está atribuído precisa ter os direitos apropriados para criar campanhas no programa selecionado.
+   >O operador que o modelo está atribuído precisa ter os direitos apropriados para criar campanhas no programa selecionado.
 
-1. Crie o workflow associado a este template. Ele será duplicado em cada campanha periódica criada pelo template.
+1. Crie o fluxo de trabalho associado a este modelo. Ele será duplicado em cada campanha periódica criada pelo modelo.
 
    ![](assets/s_ncs_user_op_template_period_wf.png)
 
    >[!NOTE]
    >
-   >Este workflow é um template de workflow. Ele não pode ser executado do template de campanha.
+   >Este fluxo de trabalho é um modelo de fluxo de trabalho. Ele não pode ser executado do modelo de campanha.
 
-1. Conclua o agendamento de execução como para um template de campanha recorrente: clique no botão **[!UICONTROL Add]** e defina as datas de início e término ou preencha o agendamento de execução por meio do link.
+1. Conclua o agendamento de execução como para um modelo de campanha recorrente: clique no botão **[!UICONTROL Add]** e defina as datas inicial e final ou preencha o agendamento de execução por meio do link.
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
    >[!IMPORTANT]
    >
-   >Os templates de campanha periódicos criam novas campanhas de acordo com o agendamento definido acima. Portanto, deve ser concluída com cuidado, para evitar sobrecarga do banco de dados do Adobe Campaign.
+   >Os modelos de campanha periódicos criam novas campanhas de acordo com o agendamento definido acima. Portanto, deve ser concluída com cuidado, para evitar sobrecarga do banco de dados do Adobe Campaign.
 
-1. Quando a data de início da execução for atingida, a campanha correspondente será criada automaticamente. Leva em conta todas as características do template.
+1. Quando a data inicial da execução for atingida, a campanha correspondente será criada automaticamente. Leva em conta todas as características do modelo.
 
-   Cada campanha pode ser editada por meio do agendamento do template.
+   Cada campanha pode ser editada por meio do agendamento do modelo.
 
    ![](assets/s_ncs_user_op_template_period_planning.png)
 
@@ -224,6 +223,6 @@ Cada campanha periódica contém os mesmos elementos. Uma vez criado, ele é ger
 
 Este vídeo mostra como criar um plano de marketing, programas e campanhas.
 
->[!VIDEO](https://video.tv.adobe.com/v/326560?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/326560?captions=por_br&quality=12)
 
 Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

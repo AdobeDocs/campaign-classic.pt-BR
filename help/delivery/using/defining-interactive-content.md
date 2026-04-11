@@ -6,10 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Email Design
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 100%
 
@@ -45,7 +44,7 @@ O AMP for Email é compatível com emails existentes. A versão do AMP da mensag
 
 Para obter mais informações sobre o formato, a especificação e os requisitos do AMP for Email, consulte a [documentação do desenvolvedor do AMP](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email).
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#amp-email-video)
+![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#amp-email-video)
 
 ## As principais etapas para usar o AMP for Email com o Adobe Campaign {#key-steps-to-use-amp}
 
@@ -69,7 +68,7 @@ Para criar um email por meio do uso do formato AMP, siga as etapas abaixo.
 >
 >Siga os requisitos e especificações detalhados do AMP for Email na [Documentação do desenvolvedor do AMP](https://amp.dev/documentation/guides-and-tutorials/learn/email_fundamentals/?format=email). Também é possível consultar as [Práticas recomendadas do AMP for Email](https://amp.dev/documentation/guides-and-tutorials/develop/amp_email_best_practices/?format=email).
 
-1. Ao criar a entrega de email, selecione qualquer template.
+1. Ao criar a entrega de email, selecione qualquer modelo.
 
    >[!NOTE]
    >
@@ -85,7 +84,7 @@ Para criar um email por meio do uso do formato AMP, siga as etapas abaixo.
    >
    >Para obter mais informações sobre a criação do primeiro email AMP, consulte a [documentação do desenvolvedor do AMP](https://amp.dev/documentation/guides-and-tutorials/start/create_email/?format=email).
 
-   Por exemplo, é possível usar o componente de lista de produtos do template do AMP e manter uma lista de produtos de um sistema de terceiros ou mesmo dentro do Adobe Campaign. Sempre que você ajusta um preço ou outro elemento, ele é refletido automaticamente quando os destinatários abrem o email na sua caixa de entrada.
+   Por exemplo, é possível usar o componente de lista de produtos do modelo do AMP e manter uma lista de produtos de um sistema de terceiros ou mesmo dentro do Adobe Campaign. Sempre que você ajusta um preço ou outro elemento, ele é refletido automaticamente quando os destinatários abrem o email na sua caixa de entrada.
 
 1. Personalize o conteúdo do AMP conforme necessário, como faria com o formato HTML no Adobe Campaign, com campos e blocos de personalização.
 
@@ -208,6 +207,6 @@ Por exemplo, se uma lista de produtos é incluída no email, ao editar os preço
 
 O vídeo abaixo explica como ativar o AMP no Adobe Campaign e mostra sua utilização.
 
->[!VIDEO](https://video.tv.adobe.com/v/33179?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/33179?captions=por_br&quality=12&learn=on)
 
 Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

@@ -8,9 +8,8 @@ content-type: reference
 topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
 hide: true
-hidefromtoc: true
-source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 100%
 
@@ -20,9 +19,9 @@ ht-degree: 100%
 
 
 
-Você pode [usar fluxos de trabalho](#use-workflows) para importar ou exportar perfis de destinatário para o banco de dados do Adobe Campaign, ou configurar [importações genéricas bem como exportar trabalhos](#create-jobs).
+Você pode [usar fluxos de trabalho](#use-workflows) para importar ou exportar perfis de destinatário para o banco de dados do Adobe Campaign, ou configurar [processos genéricos de importação e exportação](#create-jobs).
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#import-profiles-video)
+![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#import-profiles-video)
 
 >[!NOTE]
 >
@@ -48,7 +47,7 @@ To configure and execute data imports and exports jobs, go to the **[!UICONTROL 
 
 This video explains how to import profiles in Adobe Campaign, for an occasional import.
 
->[!VIDEO](https://video.tv.adobe.com/v/31867?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/31867?captions=por_br&quality=12)
 
 Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 -->

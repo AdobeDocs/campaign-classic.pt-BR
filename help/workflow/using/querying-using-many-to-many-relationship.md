@@ -4,12 +4,11 @@ title: Consultar usando uma relação muitos para muitos
 description: Saiba como executar consultas usando uma relação muitos para muitos
 feature: Query Editor, Workflows
 hide: true
-hidefromtoc: true
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '390'
-ht-degree: 100%
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 96%
 
 ---
 
@@ -17,13 +16,13 @@ ht-degree: 100%
 
 
 
-Neste exemplo, queremos recuperar destinatários não foram contatados durante os últimos 7 dias. Esta query aborda todas as entregas.
+Neste exemplo, queremos recuperar destinatários não foram contatados durante os últimos 7 dias. Esta consulta aborda todas as entregas.
 
 Este exemplo também mostra como configurar um filtro relacionado à escolha de um elemento de coleção (ou nó laranja). Os elementos de coleção estão disponíveis na janela **[!UICONTROL Field to select]**.
 
 * Qual tabela precisa ser selecionada?
 
-  A tabela de destinatário (**nms:recipient**)
+  A tabela de destinatários (**nms:recipient**)
 
 * Campos a serem selecionados para a coluna de saída
 
@@ -35,7 +34,7 @@ Este exemplo também mostra como configurar um filtro relacionado à escolha de 
 
 Siga as etapas abaixo:
 
-1. Abra o editor de query genérico e selecione a tabela Destinatário **[!UICONTROL (nms:recipient)]**.
+1. Abra o editor de consulta genérico e selecione a tabela Recipient **[!UICONTROL (nms:recipient)]**.
 1. Na janela **[!UICONTROL Data to extract]**, selecione **[!UICONTROL Primary key]**, **[!UICONTROL First name]**, **[!UICONTROL Last name]** e **[!UICONTROL Email]**.
 
    ![](assets/query_editor_nveau_33.png)

@@ -4,10 +4,9 @@ title: Amostras de marketing distribuído
 description: Amostras de marketing distribuído
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 100%
 
@@ -27,13 +26,13 @@ A interface web tipo **By form** envolve o uso de um **aplicativo web**. Depende
 >
 >O aplicativo web usado neste exemplo não é fornecido com o Adobe Campaign. Para usar um formulário em uma campanha, você deve criar o aplicativo web dedicado.
 
-Ao criar o template de campanha, clique no ícone **[!UICONTROL Zoom]** dentro da opção **[!UICONTROL Web interface]** do link **[!UICONTROL Advanced campaign settings...]** para acessar os detalhes do aplicativo web.
+Ao criar o modelo de campanha, clique no ícone **[!UICONTROL Zoom]** dentro da opção **[!UICONTROL Web interface]** do link **[!UICONTROL Advanced campaign settings...]** para acessar os detalhes do aplicativo web.
 
 ![](assets/mkg_dist_local_op_form1.png)
 
 >[!NOTE]
 >
->Os parâmetros da aplicação Web estão disponíveis somente no template de campanha.
+>Os parâmetros da aplicação Web estão disponíveis somente no modelo de campanha.
 
 Na guia **[!UICONTROL Edit]**, selecione a atividade **Campaign order** e a abra para acessar o conteúdo.
 
@@ -145,7 +144,7 @@ Depois que as verificações foram aprovadas, a campanha poderá iniciar automat
 #### Criar uma campanha colaborativa {#creating-a-collaborative-campaign}
 
 1. No nó **[!UICONTROL Campaign management > Campaign]**, crie um novo **[!UICONTROL collaborative campaign (by target approval)]**.
-1. Na guia **[!UICONTROL Targeting and workflows]**, crie um workflow para sua campanha. Deve conter uma atividade **Split** na qual o **[!UICONTROL Record count limitation]** é definido pela atividade **[!UICONTROL Data distribution]**.
+1. Na guia **[!UICONTROL Targeting and workflows]**, crie um fluxo de trabalho para sua campanha. Deve conter uma atividade **Split** na qual o **[!UICONTROL Record count limitation]** é definido pela atividade **[!UICONTROL Data distribution]**.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
@@ -204,7 +203,7 @@ As etapas são as seguintes:
 
 1. Crie a campanha colaborativa.
 1. Configure **[!UICONTROL Advanced campaign settings...]** da mesma maneira que uma campanha local.
-1. Configure o workflow da campanha e a entrega da mesma forma que para uma campanha local.
+1. Configure o fluxo de trabalho da campanha e a entrega da mesma forma que para uma campanha local.
 1. Atualize o formulário da Web.
 1. Crie o pacote de campanha e publique-o.
 
@@ -228,7 +227,7 @@ As etapas são as seguintes:
 
 ### Lado da entidade central {#central-entity-side-1}
 
-1. Para implementar uma campanha colaborativa (por formulário), você deve criar uma campanha usando a template **Campanha colaborativa (por formulário)**.
+1. Para implementar uma campanha colaborativa (por formulário), você deve criar uma campanha usando o modelo **Collaborative campaign (by form)**.
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
@@ -236,7 +235,7 @@ As etapas são as seguintes:
 
    ![](assets/mkg_dist_use_case_form_2.png)
 
-1. Configure o workflow da campanha e o formulário da Web. Consulte [Criar uma campanha local (por formulário)](#creating-a-local-campaign--by-form-).
+1. Configure o fluxo de trabalho da campanha e o formulário da Web. Consulte [Criar uma campanha local (por formulário)](#creating-a-local-campaign--by-form-).
 1. Crie seu pacote de campanha especificando o cronograma de execução e as entidades locais envolvidas.
 
    ![](assets/mkg_dist_use_case_form_3.png)

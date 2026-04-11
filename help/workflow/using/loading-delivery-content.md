@@ -4,10 +4,9 @@ title: Carregar conteúdo da entrega
 description: Carregamento de conteúdo da entrega
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%
 
@@ -27,8 +26,8 @@ Para fazer isso:
 
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
-1. Crie um novo workflow, por exemplo, em **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
-1. Adicione uma atividade **[!UICONTROL File transfer]** ao workflow e a configure especificando:
+1. Crie um novo fluxo de trabalho, por exemplo, em **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
+1. Adicione uma atividade **[!UICONTROL File transfer]** ao fluxo de trabalho e a configure especificando:
 
    * A conta externa a ser usada para se conectar ao servidor S3 ou (S)FTP.
    * O caminho do arquivo no servidor S3 ou (S)FTP.
@@ -37,10 +36,10 @@ Para fazer isso:
 
 1. Adicione uma atividade **[!UICONTROL Delivery]** e conecte-a à transição de saída da atividade **[!UICONTROL File transfer]**. Configure como apresentado a seguir:
 
-   * Entrega: de acordo com suas necessidades, pode ser uma entrega específica que já foi criada no sistema ou uma nova entrega com base em um template existente.
+   * Entrega: de acordo com suas necessidades, pode ser uma entrega específica que já foi criada no sistema ou uma nova entrega com base em um modelo existente.
    * Destinatários: neste exemplo, é considerado que o target é especificado na própria entrega.
-   * Conteúdo: mesmo que o conteúdo seja importado na atividade anterior, selecione **[!UICONTROL Specified in the delivery]**. Como o conteúdo é importado diretamente de um arquivo localizado em um servidor remoto, ele não tem identificador quando processado pelo workflow e não pode ser identificado como proveniente do evento de entrada.
-   * Ação a executar: selecione **[!UICONTROL Save]** para salvar a entrega e acessá-la a partir de **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** após a execução do workflow.
+   * Conteúdo: mesmo que o conteúdo seja importado na atividade anterior, selecione **[!UICONTROL Specified in the delivery]**. Como o conteúdo é importado diretamente de um arquivo localizado em um servidor remoto, ele não tem identificador quando processado pelo fluxo de trabalho e não pode ser identificado como proveniente do evento de entrada.
+   * Ação a executar: selecione **[!UICONTROL Save]** para salvar a entrega e acessá-la a partir de **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]** após a execução do fluxo de trabalho.
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
@@ -52,7 +51,7 @@ Para fazer isso:
 
    ![](assets/delivery_loadcontent_script.png)
 
-1. Salve e execute o workflow. Uma nova entrega com o conteúdo carregado é criada em **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
+1. Salve e execute o fluxo de trabalho. Uma nova entrega com o conteúdo carregado é criada em **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
 >[!NOTE]
 >

@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: Sincronizar perfis
-description: Saiba como sincronizar perfis com o ACS Connector
+description: Saiba como sincronizar perfis com o Conector ACS
 feature: ACS Connector
 hide: true
-hidefromtoc: true
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 100%
 
@@ -17,7 +16,7 @@ ht-degree: 100%
 
 
 
-O ACS Connector replica dados do Campaign v7 para o Campaign Standard. Os dados recebidos do Campaign v7 podem ser usados no Campaign Standard para criar entregas. É possível ver como os perfis são sincronizados executando as operações listadas abaixo.
+O Conector ACS replica dados do Campaign v7 para o Campaign Standard. Os dados recebidos do Campaign v7 podem ser usados no Campaign Standard para criar entregas. É possível ver como os perfis são sincronizados executando as operações listadas abaixo.
 
 * **Add new recipients**: crie um novo destinatário no Campaign v7 e confirme se um perfil correspondente foi replicado para o Campaign Standard. Consulte [Criar um novo destinatário](#creating-a-new-recipient).
 * **Atualizar destinatários**: edite um novo destinatário no Campaign v7 e exiba o perfil correspondente no Campaign Standard para confirmar se a atualização foi replicada. Consulte [Editar um destinatário](#editing-a-recipient).
@@ -27,7 +26,7 @@ O ACS Connector replica dados do Campaign v7 para o Campaign Standard. Os dados 
 
 ## Pré-requisitos {#prerequisites}
 
-As seções a seguir descrevem como o ACS Connector ajuda a adicionar e editar destinatários no Campaign v7 e, em seguida, usá-los em uma entrega do Campaign Standard. O ACS Connector requer o seguinte:
+As seções a seguir descrevem como o Conector ACS ajuda a adicionar e editar destinatários no Campaign v7 e, em seguida, usá-los em uma entrega do Campaign Standard. O Conector ACS requer o seguinte:
 
 * Destinatários no Campaign v7 replicados para o Campaign Standard.
 * Direitos de usuário para executar fluxos de trabalho no Campaign v7 e Campaign Standard.
@@ -51,7 +50,7 @@ Quando um destinatário clica no link de cancelar subscrição em um e-mail envi
 
    ![](assets/acs_connect_profile_sync_02.png)
 
-   Por padrão, a replicação periódica do ACS Connector ocorre uma vez a cada 15 minutos. Para obter mais informações, consulte [Replicação de dados](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication).
+   Por padrão, a replicação periódica do Conector ACS ocorre uma vez a cada 15 minutos. Para obter mais informações, consulte [Replicação de dados](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication).
 
 ## Editar um destinatário {#editing-a-recipient}
 
@@ -65,7 +64,7 @@ As etapas abaixo para alterar um ponto único de dados oferecem um exemplo simpl
 
    ![](assets/acs_connect_profile_sync_04.png)
 
-   Por padrão, a replicação periódica do ACS Connector ocorre uma vez a cada 15 minutos. Para obter mais informações, consulte [Replicação de dados](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication).
+   Por padrão, a replicação periódica do Conector ACS ocorre uma vez a cada 15 minutos. Para obter mais informações, consulte [Replicação de dados](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication).
 
 ## Criar um fluxo de trabalho {#creating-a-workflow}
 
@@ -137,7 +136,7 @@ Siga as etapas abaixo para adicionar uma entrega de e-mail a um fluxo de trabalh
 
    ![](assets/acs_connect_profile_sync_14.png)
 
-1. Clique no ícone da pasta para escolher a landing page.
+1. Clique no ícone da pasta para escolher a página de destino.
 
    ![](assets/acs_connect_profile_sync_15.png)
 

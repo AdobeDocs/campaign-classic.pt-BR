@@ -4,10 +4,9 @@ title: Atualizar lista
 description: Atualizar lista
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 100%
 
@@ -33,26 +32,26 @@ Se desejar que a lista criada ou atualizada use uma tabela diferente da tabela d
 
 Para usar a opção, as tabelas específicas devem ter sido configuradas em sua instância do Adobe Campaign.
 
-Geralmente, salvar um target em uma lista marca o final de um workflow. Por padrão, a atividade **[!UICONTROL List update]** não tem uma transição de saída. Marque a opção **[!UICONTROL Generate an outbound transition]** para adicionar uma.
+Geralmente, salvar um target em uma lista marca o final de um fluxo de trabalho. Por padrão, a atividade **[!UICONTROL List update]** não tem uma transição de saída. Marque a opção **[!UICONTROL Generate an outbound transition]** para adicionar uma.
 
 ![](assets/do-not-localize/how-to-video.png) [Descubra como criar uma lista de recipients pelo Explorer em vídeo](#video)
 
 ## Exemplo: atualização de lista {#example--list-update}
 
-No exemplo a seguir, a atividade de atualização da lista segue uma query direcionada a homens com mais de 30 anos vivendo na França. A lista será inicialmente criada a partir dos resultados da query. Ela será atualizada sempre que for iniciada a partir do workflow. Ela pode, por exemplo, ser usada regularmente para ofertas promocionais direcionadas em campanhas.
+No exemplo a seguir, a atividade de atualização da lista segue uma consulta direcionada a homens com mais de 30 anos vivendo na França. A lista será inicialmente criada a partir dos resultados da consulta. Ela será atualizada sempre que for iniciada a partir do fluxo de trabalho. Ela pode, por exemplo, ser usada regularmente para ofertas promocionais direcionadas em campanhas.
 
 1. Adicione um **[!UICONTROL list update activity]** diretamente após uma consulta, depois abra-a para editá-la.
 
-   Para obter mais informações sobre como criar uma consulta em um workflow, consulte [Query](query.md).
+   Para obter mais informações sobre como criar uma consulta em um fluxo de trabalho, consulte [Query](query.md).
 
 1. É possível selecionar um rótulo para a atividade.
-1. Selecione a opção **[!UICONTROL Create the list if necessary (Calculated name)]** para mostrar que a lista é criada quando o primeiro workflow é executado e, em seguida, atualizada com as execuções seguintes.
+1. Selecione a opção **[!UICONTROL Create the list if necessary (Calculated name)]** para mostrar que a lista é criada quando o primeiro fluxo de trabalho é executado e, em seguida, atualizada com as execuções seguintes.
 1. Selecione a pasta na qual deseja salvar a lista.
-1. Insira um rótulo para a lista. É possível inserir campos dinâmicos para gerar automaticamente o nome a partir da lista. Neste exemplo, a lista tem o mesmo nome que a query para identificar facilmente seu conteúdo.
+1. Insira um rótulo para a lista. É possível inserir campos dinâmicos para gerar automaticamente o nome a partir da lista. Neste exemplo, a lista tem o mesmo nome que a consulta para identificar facilmente seu conteúdo.
 1. Deixe a opção **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** marcada para excluir os destinatários que não correspondem aos critérios de direcionamento e para inserir os novos na lista.
 1. Deixe a opção **[!UICONTROL Create or use a list with its own table]** também marcada.
 1. Deixe a opção **[!UICONTROL Generate an outbound transition]** desmarcada.
-1. Clique em **[!UICONTROL Ok]** e inicie o workflow.
+1. Clique em **[!UICONTROL Ok]** e inicie o fluxo de trabalho.
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
 
@@ -61,7 +60,7 @@ No exemplo a seguir, a atividade de atualização da lista segue uma query direc
 ## Parâmetros de entrada {#input-parameters}
 
 * tableName
-* schema
+* esquema
 
 Identifica a população a ser salva no grupo.
 

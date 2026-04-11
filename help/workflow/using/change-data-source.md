@@ -3,10 +3,9 @@ title: Alterar fonte de dados
 description: Saiba mais sobre a atividade de Alteração da fonte de dados
 feature: Workflows, Data Management, Federated Data Access
 hide: true
-hidefromtoc: true
 exl-id: d7bf9d62-6f9e-415f-8160-446210f6392e
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 100%
 
@@ -16,21 +15,21 @@ ht-degree: 100%
 
 >[!NOTE]
 >
-> A atividade **[!UICONTROL Change data source]** só está disponível com o pacote **[!UICONTROL Access to external data (Federated Data Access)]**. Para mais informações sobre pacotes incorporados do Adobe Campaign Classic, consulte esta [página](../../installation/using/installing-campaign-standard-packages.md).
+> A atividade **[!UICONTROL Change data source]** só está disponível com o pacote **[!UICONTROL Access to external data (Federated Data Access)]**. Para mais informações sobre pacotes integrados do Adobe Campaign Classic, consulte esta [página](../../installation/using/installing-campaign-standard-packages.md).
 
-A atividade **[!UICONTROL Change data source]** permite alterar a fonte de dados de um workflow **[!UICONTROL Working table]**. Isso oferece mais flexibilidade para gerenciar dados em diferentes fontes de dados, como FDA, FFDA e o banco de dados local.
+A atividade **[!UICONTROL Change data source]** permite alterar a fonte de dados de um fluxo de trabalho **[!UICONTROL Working table]**. Isso oferece mais flexibilidade para gerenciar dados em diferentes fontes de dados, como FDA, FFDA e o banco de dados local.
 
-O **[!UICONTROL Working table]** permite que o workflow do Adobe Campaign Classic manipule dados e compartilhe dados com as atividades do workflow.
+O **[!UICONTROL Working table]** permite que o fluxo de trabalho do Adobe Campaign Classic manipule dados e compartilhe dados com as atividades do fluxo de trabalho.
 Por padrão, a **[!UICONTROL Working table]** é criada no mesmo banco de dados da fonte de dados que consultamos.
 
 Por exemplo, ao consultar a tabela **[!UICONTROL Profiles]**, armazenada no banco de dados em nuvem, você criará um **[!UICONTROL Working table]** no mesmo banco de dados em nuvem.
 Para alterar isso, você pode adicionar a atividade **[!UICONTROL Change Data Source]** e escolher uma fonte de dados diferente para sua **[!UICONTROL Working table]**.
 
-Observe que, ao usar a atividade **[!UICONTROL Change Data Source]**, será necessário alternar de volta para o banco de dados em nuvem para continuar a execução do workflow.
+Observe que, ao usar a atividade **[!UICONTROL Change Data Source]**, será necessário alternar de volta para o banco de dados em nuvem para continuar a execução do fluxo de trabalho.
 
 Para usar a atividade **[!UICONTROL Change Data Source]**:
 
-1. Criar um workflow.
+1. Criar um fluxo de trabalho.
 
 1. Consulte seus destinatários alvos com uma atividade de **[!UICONTROL Query]**.
 
@@ -42,7 +41,7 @@ Para usar a atividade **[!UICONTROL Change Data Source]**:
 
 1. Clique duas vezes na atividade **[!UICONTROL Change data source]** para selecionar **[!UICONTROL Default data source]**.
 
-   A tabela de trabalho, que contém o resultado do query, é então movida para o banco de dados PostgreSQL padrão.
+   A tabela de trabalho, que contém o resultado da consulta, é então movida para o banco de dados PostgreSQL padrão.
 
    ![](assets/change-data-source_2.png)
 
@@ -56,4 +55,4 @@ Para usar a atividade **[!UICONTROL Change Data Source]**:
 
    ![](assets/change-data-source_3.png)
 
-1. Agora, você pode iniciar o seu workflow.
+1. Agora, você pode iniciar o seu fluxo de trabalho.

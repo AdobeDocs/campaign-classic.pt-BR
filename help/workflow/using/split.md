@@ -1,14 +1,13 @@
 ---
 product: campaign
 title: Split
-description: Saiba mais sobre a atividade de workflow Split
+description: Saiba mais sobre a atividade de fluxo de trabalho de divisão
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '1971'
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
+source-wordcount: '1970'
 ht-degree: 100%
 
 ---
@@ -17,14 +16,14 @@ ht-degree: 100%
 
 Uma atividade do tipo **Split** permite dividir um target em vários subconjuntos. O target é construído com todos os resultados recebidos: todas as atividades anteriores devem ter sido concluídas para que essa atividade seja executada.
 
-Essa atividade não aciona uma união de públicos de entrada. Se várias transições acabarem em uma atividade de Split, é recomendado inserir uma atividade de **[!UICONTROL Union]** na frente.
+Essa atividade não aciona uma união de populações de entrada. Se várias transições acabarem em uma atividade de Split, é recomendado inserir uma atividade de **[!UICONTROL Union]** na frente.
 
 >[!NOTE]
 >
 >Não é possível executar operações de divisão em tabelas com origens diferentes. Para essa finalidade, adicione uma atividade de **Enriquecimento** antes da atividade de **Divisão**.
 
 * Para obter um exemplo da atividade de split que está sendo usada, consulte [Criação de subconjuntos usando a atividade de Split](targeting-data.md#creating-subsets-using-the-split-activity)
-* Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes públicos usando condições de filtragem é descrito [nesta seção](cross-channel-delivery-workflow.md).
+* Um exemplo ilustrando como usar a atividade de Split para segmentar o target em diferentes populações usando condições de filtragem é descrito [nesta seção](cross-channel-delivery-workflow.md).
 * Um exemplo mostrando como usar uma variável de instância em uma atividade de Split está disponível [nesta seção](javascript-scripts-and-templates.md).
 
 Para configurar essa atividade, defina o conteúdo do subconjunto e o rótulo na guia **[!UICONTROL Subsets]** e escolha o targeting dimension na guia **[!UICONTROL General]**.
@@ -34,7 +33,7 @@ Para configurar essa atividade, defina o conteúdo do subconjunto e o rótulo na
 Para criar um subconjunto:
 
 1. Clique no rótulo no campo correspondente e selecione o filtro a ser aplicado.
-1. Para filtrar o público de entrada, selecione a **[!UICONTROL Add a filtering condition]** opção e clique no **[!UICONTROL Edit...]** link.
+1. Para filtrar a população de entrada, selecione a **[!UICONTROL Add a filtering condition]** opção e clique no **[!UICONTROL Edit...]** link.
 
    Selecione o tipo de filtro a ser aplicado aos dados para incluí-lo neste conjunto.
 
@@ -125,9 +124,9 @@ Por exemplo, se você selecionar o campo **[!UICONTROL Language]** como um campo
 
 ## Limite de números de registros de subconjunto por distribuição de dados {#limiting-the-number-of-subset-records-per-data-distribution}
 
-Se os campos de agrupamento contiverem um número muito grande de valores ou se quiser evitar redefinir os valores para cada nova atividade dividida, o Adobe Campaign permitirá criar uma limitação por distribuição de dados. Ao selecionar valores de limitação de dados (para saber mais sobre esse assunto, veja a seção [Creating subsets](#creating-subsets)), selecione a opção **[!UICONTROL By data distribution]** e selecione um template no menu suspenso. A criação de um template de distribuição de dados é demonstrada abaixo.
+Se os campos de agrupamento contiverem um número muito grande de valores ou se quiser evitar redefinir os valores para cada nova atividade dividida, o Adobe Campaign permitirá criar uma limitação por distribuição de dados. Ao selecionar valores de limitação de dados (para saber mais sobre esse assunto, veja a seção [Creating subsets](#creating-subsets)), selecione a opção **[!UICONTROL By data distribution]** e selecione um modelo no menu suspenso. A criação de um modelo de distribuição de dados é demonstrada abaixo.
 
-Para obter um exemplo da atividade **[!UICONTROL Local approval]** com um template de distribuição, consulte [Uso da atividade de aprovação local](using-the-local-approval-activity.md).
+Para obter um exemplo da atividade **[!UICONTROL Local approval]** com um modelo de distribuição, consulte [Uso da atividade de aprovação local](using-the-local-approval-activity.md).
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
@@ -135,28 +134,28 @@ Para obter um exemplo da atividade **[!UICONTROL Local approval]** com um templa
 >
 >Para usar essa função, é necessário adquirir o módulo Marketing Distribuído, que é uma opção do Campaign. Verifique o contrato de licença.
 
-O template de distribuição de dados permite limitar o número de registros de uma lista de valores de agrupamento. Aplique as seguintes etapas para criar um template de distribuição de dados:
+O modelo de distribuição de dados permite limitar o número de registros de uma lista de valores de agrupamento. Aplique as seguintes etapas para criar um modelo de distribuição de dados:
 
-1. Para criar o template de distribuição de dados, vá para o nó **[!UICONTROL Resources > Campaign management > Data distribution]** e clique em **[!UICONTROL New]**.
+1. Para criar o modelo de distribuição de dados, vá para o nó **[!UICONTROL Resources > Campaign management > Data distribution]** e clique em **[!UICONTROL New]**.
 
    ![](assets/local_validation_data_distribution_1.png)
 
-1. A guia **[!UICONTROL General]** permite inserir o rótulo e o contexto de execução da distribuição (targeting dimension, campo de distribuição).
+1. A guia **[!UICONTROL General]** permite inserir o rótulo e o contexto de execução da distribuição (dimensão de direcionamento, campo de distribuição).
 
    ![](assets/local_validation_data_distribution_2.png)
 
    Os seguintes campos precisam ser inseridos:
 
-   * **[!UICONTROL Label]**: rótulo para o template de distribuição.
-   * **[!UICONTROL Targeting dimension]**: digite a targeting dimension à qual a distribuição de dados será aplicada, **[!UICONTROL Recipient]** por exemplo. Esse schema deve sempre ser compatível com os dados usados no workflow para construção do target.
-   * **[!UICONTROL Distribution field]**: selecione um campo por meio da targeting dimension. Por exemplo, se selecionar o campo **[!UICONTROL Email domain]**, a lista de destinatários será dividida por domínio.
+   * **[!UICONTROL Label]**: rótulo para o modelo de distribuição.
+   * **[!UICONTROL Targeting dimension]**: digite a dimensão de direcionamento à qual a distribuição de dados será aplicada, **[!UICONTROL Recipient]** por exemplo. Esse esquema deve sempre ser compatível com os dados usados no fluxo de trabalho de segmentação.
+   * **[!UICONTROL Distribution field]**: selecione um campo por meio da dimensão de direcionamento. Por exemplo, se selecionar o campo **[!UICONTROL Email domain]**, a lista de destinatários será dividida por domínio.
    * **[!UICONTROL Distribution type]**: selecione a forma como o valor de limitação do target será detalhado na guia **[!UICONTROL Distribution]**: **[!UICONTROL Percentage]** ou **[!UICONTROL Set]**.
    * **[!UICONTROL Assignment type]**: selecione o tipo de atribuição de distribuição de dados. É possível escolher entre atribuição por grupo ou operador ou atribuição por entidade local. A atribuição por entidade local é usada no **Marketing distribuído**. Para obter mais informações, consulte esta [seção](../../distributed/using/about-distributed-marketing.md).
-   * **[!UICONTROL Approval storage]**: se usar uma atividade **[!UICONTROL Local approval]** no workflow para construção do target (consulte [Local approval](local-approval.md)), digite o schema no qual os resultados da aprovação serão armazenados. É necessário especificar um schema de armazenamento por schema de target. Se usar o schema de target **[!UICONTROL Recipients]**, insira o schema de armazenamento padrão **[!UICONTROL Local approval of recipients]**.
+   * **[!UICONTROL Approval storage]**: se usar uma atividade **[!UICONTROL Local approval]** no fluxo de trabalho de segmentação (consulte [Local approval](local-approval.md)), digite o esquema no qual os resultados da aprovação serão armazenados. É necessário especificar um esquema de armazenamento por esquema de direcionamento. Se usar o esquema de direcionamento **[!UICONTROL Recipients]**, insira o esquema de armazenamento padrão **[!UICONTROL Local approval of recipients]**.
 
      No caso de uma limitação simples por agrupamento de dados sem aprovação local, não é necessário inserir o campo **[!UICONTROL Approvals storage]**.
 
-1. Se estiver usando uma atividade **[!UICONTROL Local approval]** (consulte [Local approval](local-approval.md)), insira as **[!UICONTROL Advanced settings]** para o template de distribuição:
+1. Se estiver usando uma atividade **[!UICONTROL Local approval]** (consulte [Local approval](local-approval.md)), insira as **[!UICONTROL Advanced settings]** para o modelo de distribuição:
 
    ![](assets/local_validation_data_distribution_3.png)
 
@@ -226,16 +225,16 @@ A opção **[!UICONTROL Enable overlapping of output populations]** permite gere
 ## Parâmetros de entrada {#input-parameters}
 
 * tableName
-* schema
+* esquema
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
 ## Parâmetros de saída {#output-parameters}
 
 * tableName
-* schema
+* esquema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da exclusão. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da exclusão. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de público-alvo, **[!UICONTROL schema]** é o esquema da população (normalmente, nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.

@@ -4,10 +4,9 @@ title: Usar a atividade de aprovação local
 description: Saiba como usar a atividade de aprovação local
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 100%
 
@@ -17,19 +16,19 @@ ht-degree: 100%
 
 
 
-A atividade **[!UICONTROL Local approval]** integrada em um workflow de direcionamento permite a configuração de um processo de aprovação do destinatário antes que a entrega seja enviada.
+A atividade **[!UICONTROL Local approval]** integrada em um fluxo de trabalho de segmentação permite a configuração de um processo de aprovação do destinatário antes que a entrega seja enviada.
 
 >[!CAUTION]
 >
 >Para usar essa função, é necessário adquirir o módulo Marketing Distribuído, que é uma opção do Campaign. Verifique o contrato de licença.
 
-Para configurar esse caso de uso, criamos o seguinte workflow para construção do target:
+Para configurar esse caso de uso, criamos o seguinte fluxo de trabalho de segmentação:
 
 ![](assets/local_validation_workflow.png)
 
 As principais etapas do ciclo de aprovação de conteúdo são:
 
-1. A amostragem resultante do direcionamento pode ser limitada graças a uma atividade tipo **[!UICONTROL Split]** que usa um template de distribuição de dados.
+1. A população resultante do direcionamento pode ser limitada graças a uma atividade tipo **[!UICONTROL Split]** que usa um template de distribuição de dados.
 
    ![](assets/local_validation_intro_1.png)
 
@@ -37,11 +36,11 @@ As principais etapas do ciclo de aprovação de conteúdo são:
 
    ![](assets/local_validation_intro_4.png)
 
-1. Ao atingir o prazo final para aprovação, o workflow será iniciado novamente. Neste exemplo, a atividade **[!UICONTROL Delivery]** é iniciada e a entrega é enviada aos targets aprovados.
+1. Ao atingir o prazo final para aprovação, o fluxo de trabalho será iniciado novamente. Neste exemplo, a atividade **[!UICONTROL Delivery]** é iniciada e a entrega é enviada aos targets aprovados.
 
    >[!NOTE]
    >
-   >Ao atingir o prazo final, os destinatários que não tiverem sido aprovados serão excluídos do target.
+   >Ao atingir o prazo final, os destinatários que não tiverem sido aprovados serão excluídos do direcionamento.
 
    ![](assets/local_validation_intro_6.png)
 
@@ -51,11 +50,11 @@ As principais etapas do ciclo de aprovação de conteúdo são:
 
 ## Etapa 1: Criação do modelo de distribuição de dados {#step-1--creating-the-data-distribution-template-}
 
-O modelo de distribuição de dados permite limitar o público resultante do direcionamento com base no agrupamento de dados, permitindo atribuir cada valor a um supervisor local. Neste exemplo, definimos o campo **[!UICONTROL Email address domain]** como um campo de distribuição e atribuímos um domínio a cada supervisor local
+O modelo de distribuição de dados permite limitar a população resultante do direcionamento com base no agrupamento de dados, permitindo atribuir cada valor a um supervisor local. Neste exemplo, definimos o campo **[!UICONTROL Email address domain]** como um campo de distribuição e atribuímos um domínio a cada supervisor local
 
-Para obter mais informações sobre como criar um template de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Para obter mais informações sobre como criar um modelo de distribuição de dados, consulte [Limitação do número de registros de subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
-1. Para criar o template de distribuição de dados, vá para o nó **[!UICONTROL Resources > Campaign management > Data distribution]** e clique em **[!UICONTROL New]**.
+1. Para criar o modelo de distribuição de dados, vá para o nó **[!UICONTROL Resources > Campaign management > Data distribution]** e clique em **[!UICONTROL New]**.
 
    ![](assets/local_validation_data_distribution_1.png)
 
@@ -63,9 +62,9 @@ Para obter mais informações sobre como criar um template de distribuição de 
 
    ![](assets/local_validation_data_distribution_2.png)
 
-1. Insira o **[!UICONTROL Label]** e o **[!UICONTROL Distribution context]**. Neste exemplo, selecionamos o schema de direcionamento **[!UICONTROL Recipient]** e o campo **[!UICONTROL Email domain]** como um campo de distribuição. A lista de destinatários será dividida por domínio.
+1. Insira o **[!UICONTROL Label]** e o **[!UICONTROL Distribution context]**. Neste exemplo, selecionamos o esquema de direcionamento **[!UICONTROL Recipient]** e o campo **[!UICONTROL Email domain]** como um campo de distribuição. A lista de destinatários será dividida por domínio.
 1. No campo **[!UICONTROL Distribution type]**, selecione como o valor de limitação de target será expresso na guia **[!UICONTROL Distribution]**. Aqui, escolhemos **[!UICONTROL Percentage]**.
-1. No campo **[!UICONTROL Approval storage]**, insira o schema de armazenamento das aprovações que correspondem ao schema de definição do target em uso. Aqui vamos usar o schema de armazenamento padrão: **[!UICONTROL Local approval of recipients]**.
+1. No campo **[!UICONTROL Approval storage]**, insira o esquema de armazenamento das aprovações que correspondem ao esquema de direcionamento em uso. Aqui vamos usar o esquema de armazenamento padrão: **[!UICONTROL Local approval of recipients]**.
 1. Depois clique no link **[!UICONTROL Advanced parameters]**.
 
    ![](assets/local_validation_data_distribution_3.png)
@@ -89,7 +88,7 @@ Para obter mais informações sobre como criar um template de distribuição de 
 
 ## Etapa 2: Criação de um fluxo de trabalho de direcionamento {#step-2--creating-the-targeting-workflow}
 
-Para configurar esse caso de uso, criamos o seguinte workflow para construção do target:
+Para configurar esse caso de uso, criamos o seguinte fluxo de trabalho de segmentação:
 
 ![](assets/local_validation_workflow.png)
 
@@ -104,13 +103,13 @@ As seguintes atividades foram adicionadas:
 * Uma segunda atividade **[!UICONTROL Local approval]**,
 * Uma atividade **[!UICONTROL End]**.
 
-### Consultas, Intersecção e Split {#queries--intersection-and-split}
+### Consultas, Intersecção e Divisão {#queries--intersection-and-split}
 
-O direcionamento de upstream é composto de duas consultas, uma intersecção e um Split. O público resultante do direcionamento pode ser limitado por meio de uma atividade **[!UICONTROL Split]** usando um template de distribuição de dados.
+O direcionamento de upstream é composto de duas consultas, uma intersecção e um Split. A população resultante do direcionamento pode ser limitado por meio de uma atividade **[!UICONTROL Split]** usando um modelo de distribuição de dados.
 
-Para obter mais informações sobre como configurar uma atividade Split, consulte [Split](split.md). A criação de um template de distribuição de dados é detalhada em [Limitação do número de registros do subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Para obter mais informações sobre como configurar uma atividade Split, consulte [Split](split.md). A criação de um modelo de distribuição de dados é detalhada em [Limitação do número de registros do subconjunto por distribuição de dados](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
-Se não quiser limitar o público da query, não utilize as atividades **[!UICONTROL Query]**, **[!UICONTROL Intersection]** e **[!UICONTROL Split]**. Nesse caso, complete o template de distribuição de dados na primeira atividade **[!UICONTROL Local approval]**.
+Se não quiser limitar a população da consulta, não utilize as atividades **[!UICONTROL Query]**, **[!UICONTROL Intersection]** e **[!UICONTROL Split]**. Nesse caso, complete o modelo de distribuição de dados na primeira atividade **[!UICONTROL Local approval]**.
 
 1. Na seção **[!UICONTROL Record count limitation]**, selecione a opção **[!UICONTROL Limit the selected records]** e clique no link **[!UICONTROL Edit]**.
 
@@ -124,11 +123,11 @@ Se não quiser limitar o público da query, não utilize as atividades **[!UICON
 
    ![](assets/local_validation_split_2.png)
 
-1. Selecione a opção **[!UICONTROL By data distribution]** e o template de distribuição criado anteriormente (consulte [Etapa 1: criação do template de distribuição de dados](#step-1--creating-the-data-distribution-template-)) e clique em **[!UICONTROL Finish]**.
+1. Selecione a opção **[!UICONTROL By data distribution]** e o modelo de distribuição criado anteriormente (consulte [Etapa 1: criação do modelo de distribuição de dados](#step-1--creating-the-data-distribution-template-)) e clique em **[!UICONTROL Finish]**.
 
    ![](assets/local_validation_split_3.png)
 
-No template de distribuição, limitamos o público a 10% por valor de agrupamento, o que coincide com os valores exibidos no workflow (340 como entrada e 34 como saída).
+No modelo de distribuição, limitamos o população a 10% por valor de agrupamento, o que coincide com os valores exibidos no fluxo de trabalho (340 como entrada e 34 como saída).
 
 ![](assets/local_validation_intro_1.png)
 
@@ -145,10 +144,10 @@ Os seguintes campos precisam ser inseridos:
 1. Na seção **[!UICONTROL Action to execute]** selecione a opção **[!UICONTROL Target approval notification]**.
 1. Na seção **[!UICONTROL Distribution context]** selecione a opção **[!UICONTROL Specified in the transition]**.
 
-   Se não quiser limitar o público-alvo, selecione a opção **[!UICONTROL Explicit]** e insira o template de distribuição criado anteriormente no campo **[!UICONTROL Data distribution]**.
+   Se não quiser limitar a população de destino, selecione a opção **[!UICONTROL Explicit]** e insira o modelo de distribuição criado anteriormente no campo **[!UICONTROL Data distribution]**.
 
-1. Na seção **[!UICONTROL Notification]**, selecione o template da entrega e o assunto a ser usado para o email de notificação. Aqui, escolhemos o template padrão: **[!UICONTROL Local approval notification]**.
-1. Na seção **[!UICONTROL Approval schedule]**, mantivemos o prazo de aprovação padrão (3 dias) e adicionamos um lembrete. A entrega será enviada 3 dias após o início da aprovação. Ao atingir o prazo final de aprovação, os destinatários que não foram aprovados não serão considerados.
+1. Na seção **[!UICONTROL Notification]**, selecione o modelo da entrega e o assunto a ser usado para o email de notificação. Aqui, escolhemos o modelo padrão: **[!UICONTROL Local approval notification]**.
+1. Na seção **[!UICONTROL Approval schedule]**, mantivemos o prazo de aprovação padrão (3 dias) e adicionamos um lembrete. A entrega será enviada 3 dias após o início da aprovação. Ao atingir o prazo final de aprovação, os destinatários que não foram aprovados não serão considerados no direcionamento.
 
 O email de notificação enviado pela atividade **[!UICONTROL Local approval]** para supervisores locais é o seguinte:
 
@@ -170,7 +169,7 @@ Os seguintes campos precisam ser inseridos.
 
 1. Na seção **[!UICONTROL Action to execute]**, selecione **[!UICONTROL Delivery feedback report]**.
 1. Na seção **[!UICONTROL Delivery]**, selecione **[!UICONTROL Specified in the transition]**.
-1. Na seção **[!UICONTROL Notification]**, selecione o template da entrega e o assunto a ser usado para o email de notificação.
+1. Na seção **[!UICONTROL Notification]**, selecione o modelo da entrega e o assunto a ser usado para o email de notificação.
 
 Quando o prazo configurado na atividade de espera é atingido, a segunda atividade do tipo **[!UICONTROL Local approval]** envia o email de notificação a seguir para cada supervisor local:
 
@@ -180,11 +179,11 @@ Quando o prazo configurado na atividade de espera é atingido, a segunda ativida
 
 Toda vez que a atividade de aprovação local começa, uma tarefa de aprovação é criada. O administrador pode controlar cada tarefa de aprovação.
 
-Vá para o workflow para construção do target da sua campanha e clique na guia **[!UICONTROL Local approval tasks]**.
+Vá para o fluxo de trabalho de segmentação da sua campanha e clique na guia **[!UICONTROL Local approval tasks]**.
 
 ![](assets/local_validation_admin_1.png)
 
-A lista de tarefas de aprovação local também pode ser acessada pela guia **[!UICONTROL Approval tasks]** do template de distribuição de dados.
+A lista de tarefas de aprovação local também pode ser acessada pela guia **[!UICONTROL Approval tasks]** do modelo de distribuição de dados.
 
 ![](assets/local_validation_admin_2.png)
 
@@ -195,9 +194,9 @@ Selecione a tarefa que deseja monitorar e clique no botão **[!UICONTROL Detail]
 Essa guia exibe as seguintes informações:
 
 * o rótulo da tarefa e sua ID
-* o template de distribuição usado
+* o modelo de distribuição usado
 * o número de mensagens de target
-* o workflow e campanha vinculados
+* o fluxo de trabalho e campanha vinculados
 * o cronograma da tarefa
 
 A guia **[!UICONTROL Distribution]** da tarefa permite visualizar os logs de aprovação, o status, o número de mensagens direcionadas, a data de aprovação e o operador que aprovou a entrega.
@@ -212,7 +211,7 @@ Essa guia exibe as seguintes informações:
 
 * a tarefa de aprovação vinculada
 * o status de aprovação (**[!UICONTROL Approved]** ou **[!UICONTROL Pending]**)
-* o template de distribuição usado
+* o modelo de distribuição usado
 * o supervisor local que aprovou e a data de aprovação
 * o número de mensagens de target e aprovadas
 

@@ -6,13 +6,12 @@ feature: Resource Management
 audience: campaign
 content-type: reference
 hide: true
-hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
-workflow-type: ht
-source-wordcount: '3743'
-ht-degree: 100%
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
+source-wordcount: '3741'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +27,7 @@ As tarefas são anexadas à campanha e podem ter dependências, ou seja, tarefas
 
 Todas as tarefas são agrupadas em uma lista acessível pela guia **Campanhas**. Para obter mais informações, consulte [Acessar tarefas](#accessing-tasks).
 
-Elas podem ser exibidas na programação do programa ao qual pertencem.
+Elas podem ser exibidas na cronograma do programa ao qual pertencem.
 
 ![](assets/d_ncs_user_tasks_in_planning.png)
 
@@ -106,7 +105,7 @@ Eles são selecionados usando o ícone **[!UICONTROL Resources]** na barra de fe
 
 Clique em **[!UICONTROL Ok]** e então insira a taxa de uso: isso representa a carga atribuída ao operador durante a execução da tarefa. Essa taxa é apenas uma indicação e é expressa como uma porcentagem.
 
-Por exemplo, para uma tarefa cuja programação de execução foi definida como 10 dias, um operador cuja taxa de utilização é de 50% estará mobilizado nessa tarefa pela metade do tempo de trabalho dele, durante os 10 dias.
+Por exemplo, para uma tarefa cujo cronograma de execução foi definido como 10 dias, um operador cuja taxa de utilização é de 50% estará mobilizado nessa tarefa pela metade do tempo de trabalho dele, durante os 10 dias.
 
 Para cada operador, você pode inserir uma carga de trabalho agendada e uma carga de trabalho real. Essas durações também são somente para fins de informação.
 
@@ -148,7 +147,7 @@ Os documentos referenciados aparecerão nas notificações enviadas aos operador
 
 ![](assets/s_ncs_user_task_notification_documents.png)
 
-### Programação de execução {#execution-schedule}
+### Cronograma de execução {#execution-schedule}
 
 O período de validade de uma tarefa é indicado nos campos **[!UICONTROL Start]** e **[!UICONTROL End]**. A carga agendada expressa a carga de trabalho a ser executada durante o período. É expresso em dias ou horas.
 
@@ -170,7 +169,7 @@ Também são visíveis na guia da campanha.
 
 ![](assets/s_ncs_user_task_percentage_done_from_op.png)
 
-Se a data de término do cronograma de execução da tarefa tiver sido atingida, mas a tarefa não estiver concluída, a tarefa terá o status **[!UICONTROL Late]**. Uma mensagem de aviso também será exibida para alertar os operadores.
+Se a data final do cronograma de execução da tarefa tiver sido atingida, mas a tarefa não estiver concluída, a tarefa terá o status **[!UICONTROL Late]**. Uma mensagem de aviso também será exibida para alertar os operadores.
 
 Para obter mais informações, consulte [Status de progresso de uma tarefa](#progress-status-of-a-task).
 
@@ -220,7 +219,7 @@ Vá para a caixa **[!UICONTROL Resources]** e adicione o operador ao campo **[!U
 
 ### Notificações iniciais {#initial-notifications}
 
-Quando uma tarefa é criada ou modificada com uma data de início no futuro, o Adobe Campaign oferece enviar um e-mail para a pessoa encarregada da tarefa para que saibam quando ela é iniciada.
+Quando uma tarefa é criada ou modificada com uma data inicial no futuro, o Adobe Campaign oferece enviar um e-mail para a pessoa encarregada da tarefa para que saibam quando ela é iniciada.
 
 ![](assets/mrm_task_first_notif.png)
 
@@ -231,7 +230,7 @@ Para agendar uma notificação, vá para a caixa **[!UICONTROL Resources]** e us
 ![](assets/mrm_task_alert_before.png)
 
 * Para tarefas em campanhas, selecione uma data e hora específica.
-* Para tarefas em templates de campanha, o tempo de notificação é expresso como o tempo restante antes que a tarefa seja iniciada (por exemplo, se inserido 2d no campo **[!UICONTROL Initial notification]**, o email será enviado 2 dias antes da data de início da tarefa).
+* Para tarefas em modelos de campanha, o tempo de notificação é expresso como o tempo restante antes que a tarefa seja iniciada (por exemplo, se inserido 2d no campo **[!UICONTROL Initial notification]**, o email será enviado 2 dias antes da data inicial da tarefa).
 
 Quando agendada uma notificação, ao salvar a tarefa, o Adobe Campaign ainda oferece enviar uma notificação imediatamente. É possível enviá-lo e isso não substituirá a notificação agendada.
 
@@ -264,7 +263,7 @@ Nos fluxos de trabalho da campanha, a atividade **[!UICONTROL Task]** é encontr
 
 ## Tipos de tarefa {#types-of-task}
 
-Ao criar tarefas por meio de uma campanha, pode-se criar tarefas específicas. O tipo de tarefa é definido no template selecionado.
+Ao criar tarefas por meio de uma campanha, pode-se criar tarefas específicas. O tipo de tarefa é definido no modelo selecionado.
 
 ![](assets/s_ncs_user_task_select_template.png)
 
@@ -372,9 +371,9 @@ Uma tarefa de notificação pode ter os seguintes status:
 
 Durante a criação, os seguintes elementos devem ser inseridos na tarefa:
 
-* **[!UICONTROL Assigned to]**: o operador ou grupo de operadores que receberá o email. Se reatribuir a tarefa quando o e-mail tiver sido enviado, o e-mail não será enviado para o novo operador (para que isso aconteça, é necessário reiniciar a tarefa e alterar sua data de início).
+* **[!UICONTROL Assigned to]**: o operador ou grupo de operadores que receberá o email. Se reatribuir a tarefa quando o e-mail tiver sido enviado, o e-mail não será enviado para o novo operador (para que isso aconteça, é necessário reiniciar a tarefa e alterar sua data inicial).
 * **Task start date**: data em que o e-mail de notificação será enviado. Essa data deve ocorrer no futuro a partir momento da gravação da tarefa.
-* **Task end date**: data na qual o status da tarefa é alterado para **[!UICONTROL Finished]**. Por padrão, a data final é idêntica à data de início. No entanto, atribuir uma duração à tarefa permite que simbolizar a quantidade de tempo que o operador tem para agir no cronograma, se necessário.
+* **Task end date**: data na qual o status da tarefa é alterado para **[!UICONTROL Finished]**. Por padrão, a data final é idêntica à data inicial. No entanto, atribuir uma duração à tarefa permite que simbolizar a quantidade de tempo que o operador tem para agir no cronograma, se necessário.
 * **[!UICONTROL Description]**: o texto inserido aqui aparecerá no corpo do email de notificação.
 
   ![](assets/mrm_task_notif_dashboard_msg.png)
@@ -391,7 +390,7 @@ O botão **[!UICONTROL Properties]** em cada tarefa permite definir os vínculos
 
 Use o campo **[!UICONTROL Linked task]** para associar tarefas a uma tarefa de agrupamento. Consulte [Tipos de tarefa](#types-of-task).
 
-No exemplo a seguir, a aprovação de definição de alvos é dividida em quatro subtarefas.
+No exemplo a seguir, a aprovação de direcionamento é dividida em quatro subtarefas.
 
 ![](assets/s_ncs_user_task_linked_tasks.png)
 
@@ -409,9 +408,9 @@ A dependência entre tarefas é representada por setas no painel de campanha.
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-No caso de tarefas agrupadas, o Adobe Campaign atribui automaticamente a data de término da tarefa pai à tarefa filho como data de início. Por exemplo, se uma tarefa de **Criação de convite** terminar em 15 de outubro às 3:30 P.M., a tarefa filho **Enviar e-mail de convite** será iniciada em 15 de outubro às 3:30 P.M.
+No caso de tarefas agrupadas, o Adobe Campaign atribui automaticamente a data final da tarefa pai à tarefa filho como data inicial. Por exemplo, se uma tarefa filho de **Criar convite** terminar em 15 de outubro às 3:30PM, a tarefa filho **Enviar email de convite** será iniciada em 15 de outubro às 3:30PM.
 
-Além disso, se adiar o fim de uma tarefa pai, algumas de suas tarefas filho poderão ser afetadas: essas são as tarefas filho cujo status é **[!UICONTROL Scheduled]** e cuja data de início é anterior à nova data de término da tarefa pai. A duração da tarefa permanece a mesma. Se a data de início de uma tarefa filho for posterior à nova data de término da tarefa pai, a tarefa filho não será afetada.
+Além disso, se adiar o fim de uma tarefa pai, algumas de suas tarefas filho poderão ser afetadas: essas são as tarefas filho cujo status é **[!UICONTROL Scheduled]** e cuja data inicial é anterior à nova data final da tarefa pai. A duração da tarefa permanece a mesma. Se a data inicial de uma tarefa filho for posterior à nova data final da tarefa pai, a tarefa filho não será afetada.
 
 **Exemplo**
 
@@ -427,11 +426,11 @@ Os status da tarefa podem ser visualizados no mapa de tarefas. O status de execu
 
 Uma tarefa pode ser: **[!UICONTROL Scheduled]**, **[!UICONTROL In progress]**, **[!UICONTROL Finished]**, **[!UICONTROL Canceled]**, **[!UICONTROL Pending approval]** ou **[!UICONTROL Rejected]**.
 
-* Quando uma tarefa é criada, ela é **[!UICONTROL Scheduled]** se a data de início estiver no futuro. Ela mantém esse status até que a data de início seja alcançada.
+* Quando uma tarefa é criada, ela é **[!UICONTROL Scheduled]** se a data inicial estiver no futuro. Ela mantém esse status até que a data inicial seja alcançada.
 * Depois de iniciada, a tarefa é **[!UICONTROL In progress]**. Quando a pessoa encarregada da tarefa a fecha, ela muda para **[!UICONTROL Finished]**.
 * Se um revisor tiver sido definido, a tarefa será **[!UICONTROL Pending approval]** assim que a pessoa encarregada dela a feche e até que o revisor a aprove. Se o revisor a rejeitar, a tarefa será **[!UICONTROL Rejected]**.
 * Uma tarefa pode ser cancelada pela pessoa responsável por meio do painel ou pelo **[!UICONTROL Task map]** clicando no botão **[!UICONTROL Cancel]**.
-* Para agendar uma tarefa, insira uma data de início no futuro. É possível enviar uma primeira notificação para os operadores do Adobe Campaign envolvidos na execução da tarefa. Consulte [Ciclo de vida completo da tarefa](#complete-task-life-cycle).
+* Para agendar uma tarefa, insira uma data inicial no futuro. É possível enviar uma primeira notificação para os operadores do Adobe Campaign envolvidos na execução da tarefa. Consulte [Ciclo de vida completo da tarefa](#complete-task-life-cycle).
 
 >[!NOTE]
 >
@@ -453,7 +452,7 @@ Abaixo estão os estágios de um ciclo completo de vida de tarefa para o qual a 
 
 1. A pessoa encarregada cria a tarefa e preenche os vários campos. Para obter mais informações, consulte [Criar uma nova tarefa](#creating-a-new-task).
 
-   Ao criar e editar uma tarefa **agendada no futuro** (desde que a data de início da tarefa não seja atingida), é possível enviar uma notificação aos participantes e gerentes para que eles saibam que uma nova tarefa foi agendada.
+   Ao criar e editar uma tarefa **agendada no futuro** (desde que a data inicial da tarefa não seja atingida), é possível enviar uma notificação aos participantes e gerentes para que eles saibam que uma nova tarefa foi agendada.
 
    ![](assets/s_ncs_user_task_planed_send_message.png)
 
@@ -461,7 +460,7 @@ Abaixo estão os estágios de um ciclo completo de vida de tarefa para o qual a 
 
    Quando uma tarefa é criada e agendada para o futuro, seu status é **[!UICONTROL Scheduled]**.
 
-1. Na data de início da tarefa, a pessoa responsável e os participantes recebem uma notificação informando que a tarefa foi iniciada. Seu status muda para **[!UICONTROL In progress]**.
+1. Na data inicial da tarefa, a pessoa responsável e os participantes recebem uma notificação informando que a tarefa foi iniciada. Seu status muda para **[!UICONTROL In progress]**.
 1. Depois de concluir a seção atribuída a eles, os participantes podem aprovar a tarefa através:
 
    * do e-mail de notificação.
@@ -469,7 +468,7 @@ Abaixo estão os estágios de um ciclo completo de vida de tarefa para o qual a 
 
      ![](assets/s_ncs_user_task_start_rea.png)
 
-1. Sempre que um participante aprovar uma tarefa, o status do progresso da tarefa será atualizado.
+1. Sempre que um participante aprovar um processo, o status do progresso da tarefa será atualizado.
 
    ![](assets/s_ncs_user_task_percentage_done_op.png)
 

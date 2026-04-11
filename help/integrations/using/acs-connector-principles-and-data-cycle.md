@@ -4,10 +4,9 @@ title: Introdução ao Conector ACS
 description: Princípios do Conector ACS e ciclo de dados
 feature: ACS Connector
 hide: true
-hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '2034'
 ht-degree: 100%
 
@@ -55,11 +54,11 @@ O Conector ACS replica os seguintes itens periodicamente do Campaign v7 para o C
 * **Destinatários**
 * **Subscrições**
 * **Serviços**
-* **Landing pages**
+* **Páginas de destino**
 
 Por padrão, a replicação periódica do Conector ACS ocorre uma vez a cada 15 minutos. A extensão da replicação periódica pode ser ajustada às suas necessidades. Entre em contato com seu consultor se alterações forem necessárias.
 
-A replicação de dados para destinatários, assinaturas, serviços e landing pages é incremental, o que significa que somente novos destinatários e modificações nos destinatários existentes são replicados do Campaign v7 para o Campaign Standard. No entanto, a replicação para um público-alvo ocorre em uma única instância. Você pode criar um público-alvo no Campaign v7 e depois replicá-lo uma vez para o Campaign Standard. A replicação é imediata e não pode ser configurada para atualizações regulares. Para obter instruções, consulte [Sincronizar públicos-alvos](../../integrations/using/synchronizing-audiences.md).
+A replicação de dados para destinatários, assinaturas, serviços e páginas de destino é incremental, o que significa que somente novos destinatários e modificações nos destinatários existentes são replicados do Campaign v7 para o Campaign Standard. No entanto, a replicação para um público-alvo ocorre em uma única instância. Você pode criar um público-alvo no Campaign v7 e depois replicá-lo uma vez para o Campaign Standard. A replicação é imediata e não pode ser configurada para atualizações regulares. Para obter instruções, consulte [Sincronizar públicos-alvos](../../integrations/using/synchronizing-audiences.md).
 
 >[!NOTE]
 >
@@ -145,7 +144,7 @@ Os fluxos de trabalho de replicação a seguir estão disponíveis como modelos 
 
 * **[!UICONTROL `[ACS] Profile replication`]** (newProfileReplication): esse fluxo de trabalho incremental replica os destinatários para o Campaign Standard. Por padrão, ele replica todos os campos de destinatários prontos para uso. Consulte [Campos de destinatário padrão](#default-recipient-fields).
 * **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication): esse fluxo de trabalho incremental replica os serviços escolhidos para o Campaign Standard. Consulte o caso de uso [Sincronizar aplicações web](../../integrations/using/synchronizing-web-applications.md).
-* **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication): esse fluxo de trabalho incremental replica as aplicações Web selecionados para o Campaign Standard. As aplicações Web do Campaign v7 aparecerão como landing pages no Campaign Standard. Consulte o caso de uso [Sincronizar aplicações web](../../integrations/using/synchronizing-web-applications.md).
+* **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication): esse fluxo de trabalho incremental replica as aplicações Web selecionados para o Campaign Standard. As aplicações Web do Campaign v7 aparecerão como páginas de destino no Campaign Standard. Consulte o caso de uso [Sincronizar aplicações web](../../integrations/using/synchronizing-web-applications.md).
 * **[!UICONTROL `[ACS] New replication`]** (newReplication): esse fluxo de trabalho incremental é um exemplo que pode ser usado para replicar uma tabela personalizada. Consulte [Implementação avançada](#advanced-implementation).
 * **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification): esse fluxo de trabalho incremental replica mensagens de entrega do Campaign Standard para o Campaign v7.
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): este fluxo de trabalho incremental replica IDs de entrega, registros abrangentes de email e logs de rastreamento de email do Campaign Standard para o Campaign v7. Leva em consideração somente entregas enviadas do Campaign Standard para perfis que fazem parte da tabela nms:recipients do Campaign v7.

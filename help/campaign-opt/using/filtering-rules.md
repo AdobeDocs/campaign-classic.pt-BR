@@ -5,10 +5,9 @@ description: Saiba como usar regras de filtragem no Adobe Campaign
 role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
-hidefromtoc: true
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 100%
 
@@ -16,7 +15,7 @@ ht-degree: 100%
 
 # Regras de filtragem{#filtering-rules}
 
-Regras de filtragem permitem definir as mensagens a serem excluídas com base nos critérios definidos em uma query. Essas regras estão vinculadas a uma dimensão de direcionamento.
+Regras de filtragem permitem definir as mensagens a serem excluídas com base nos critérios definidos em uma consulta. Essas regras estão vinculadas a uma dimensão de direcionamento.
 
 As regras de filtragem podem estar vinculadas a outros tipos de regras (controle, pressão etc.) em tipologias ou agrupadas em uma tipologia **Filtragem** dedicada. Para obter mais informações, consulte [Criação e uso de uma tipologia de filtragem](#creating-and-using-a-filtering-typology).
 

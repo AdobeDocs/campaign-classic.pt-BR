@@ -5,12 +5,11 @@ description: Sobre tipologias de campanha
 role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
-hidefromtoc: true
 exl-id: b500bde4-6c81-4420-b1bf-e8eff1c53877
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '104'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +17,13 @@ ht-degree: 79%
 
 Otimização de Campanha é o módulo do Adobe Campaign que permite controlar, filtrar e monitorar o envio de entregas. Para evitar conflitos entre campanhas, o Adobe Campaign pode testar várias combinações aplicando regras de restrição específicas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#typologies-video)
+![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#typologies-video)
 
 Dependendo da sua oferta, a Otimização de Campanha pode estar incluída ou ser um complemento. Verifique o contrato de licença.
 
 >[!NOTE]
 >
->Para saber mais sobre a Otimização de Campanha para Adobe Campaign e como usá-la, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=pt-BR){target=_blank}.
+>Para saber mais sobre a otimização de campanha do Adobe Campaign e como usá-la, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=pt-BR){target=_blank}.
 
 <!--
 

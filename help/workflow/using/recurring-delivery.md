@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: Entrega recorrente
-description: Saiba mais sobre a atividade de workflow de entrega recorrente
+description: Saiba mais sobre a atividade de fluxo de trabalho de entrega recorrente
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 100%
 
@@ -15,21 +14,21 @@ ht-degree: 100%
 
 # Entrega recorrente{#recurring-delivery}
 
-Uma atividade **[!UICONTROL Recurring delivery]** permite configurar uma ocorrência de template de entrega específico para uma campanha.
+Uma atividade **[!UICONTROL Recurring delivery]** permite configurar uma ocorrência de modelo de entrega específico para uma campanha.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#recurring-delivery-video)
+![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#recurring-delivery-video)
 
 Essa atividade só está disponível na guia **[!UICONTROL Targeting and workflows]** localizada em uma campanha.
 
 Para fazer isso:
 
-1. Selecione o template de entrega no qual a atividade será baseada.
+1. Selecione o modelo de entrega no qual a atividade será baseada.
 
    ![](assets/recurring_delivery_001.png)
 
-1. Configure o template de entrega.
+1. Configure o modelo de entrega.
 
-O processo de configuração dessa atividade é semelhante ao da criação de um template de entrega em termos das opções disponíveis. Para obter mais informações, consulte esta [seção](../../delivery/using/about-templates.md).
+O processo de configuração dessa atividade é semelhante ao da criação de um modelo de entrega em termos das opções disponíveis. Para obter mais informações, consulte esta [seção](../../delivery/using/about-templates.md).
 
 >[!CAUTION]
 >
@@ -39,7 +38,7 @@ Para obter um exemplo de uso dessa atividade, consulte esta [seção](sending-a-
 
 ## Como configurar uma entrega recorrente {#set-up-recurring-delivery}
 
-Uma **entrega recorrente** criará uma nova instância de entrega toda vez que for executada. Por exemplo, se o workflow estiver programado para ser executado uma vez por semana, o resultado será 52 entregas em um ano. Também significa que o log abrangente e os logs de rastreamento serão separados por cada instância da entrega.
+Uma **entrega recorrente** criará uma nova instância de entrega toda vez que for executada. Por exemplo, se o fluxo de trabalho estiver programado para ser executado uma vez por semana, o resultado será 52 entregas em um ano. Também significa que o log abrangente e os logs de rastreamento serão separados por cada instância da entrega.
 
 ![Entrega recorrente](assets/delivery_recurring.jpg)
 
@@ -49,12 +48,12 @@ Se desejar impedir a execução de uma entrega recorrente, cancele completamente
 >
 >Não é possível enviar uma prova de uma atividade do tipo **[!UICONTROL Recurring delivery]**.
 > 
->Para criar uma entrega diretamente por meio de um workflow da campanha, use as atividades específicas predefinidas do canal (por exemplo **[!UICONTROL Recurring delivery]**).
+>Para criar uma entrega diretamente por meio de um fluxo de trabalho da campanha, use as atividades específicas predefinidas do canal (por exemplo **[!UICONTROL Recurring delivery]**).
 
 ## Tutorial em vídeo {#recurring-delivery-video}
 
 Este vídeo explica como configurar uma entrega recorrente e uma atividade de scheduler.
 
->[!VIDEO](https://video.tv.adobe.com/v/31846?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/31846?captions=por_br&quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

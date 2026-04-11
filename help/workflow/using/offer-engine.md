@@ -4,10 +4,9 @@ title: Mecanismo de oferta
 description: Mecanismo de oferta
 feature: Workflows, Interaction
 hide: true
-hidefromtoc: true
 exl-id: 8db4b04f-7754-4a49-ab72-afc916888ebb
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 100%
 
@@ -23,7 +22,7 @@ Essa atividade funciona de acordo com o mesmo princípio que a atividade de enri
 
 ![](assets/int_offerengine_activity2.png)
 
-Após configurar sua query (consulte esta [seção](query.md)):
+Após configurar sua consulta (consulte esta [seção](query.md)):
 
 1. Adicione e abra uma atividade de **[!UICONTROL Offer engine]**.
 1. Preencha os vários campos disponíveis para especificar a chamada para oferecer parâmetros de mecanismo (espaço de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros.

@@ -1,14 +1,13 @@
 ---
 product: campaign
-title: Usar templates da entrega
-description: Usar templates da entrega
+title: Usar modelos de entrega
+description: Usar modelos de entrega
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Delivery Templates
 hide: true
-hidefromtoc: true
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 100%
 
@@ -18,15 +17,15 @@ ht-degree: 100%
 
 
 
-Os templates da entrega oferecem mais eficiência ao fornecer cenários prontos para os tipos mais comuns de atividades. Com modelos, os profissionais de marketing podem implantar novas campanhas com personalização mínima em um período de tempo menor.
+Os modelos da entrega oferecem mais eficiência ao fornecer cenários prontos para os tipos mais comuns de atividades. Com modelos, os profissionais de marketing podem implantar novas campanhas com personalização mínima em um período de tempo menor.
 
-Saiba mais sobre templates da entrega [nesta seção](about-templates.md).
+Saiba mais sobre modelos da entrega [nesta seção](about-templates.md).
 
 ## Introdução a modelos de entrega {#gs-templates}
 
-Um [template da entrega](about-templates.md) permite definir uma única vez um conjunto de propriedades técnicas e funcionais que atendam às suas necessidades e que possam ser reutilizadas para entregas futuras. Você pode economizar tempo e padronizar entregas quando necessário.
+Um [modelo da entrega](about-templates.md) permite definir uma única vez um conjunto de propriedades técnicas e funcionais que atendam às suas necessidades e que possam ser reutilizadas para entregas futuras. Você pode economizar tempo e padronizar entregas quando necessário.
 
-Quando você gerencia várias marcas no Adobe Campaign, a Adobe recomenda ter um subdomínio por marca. Por exemplo, um banco pode ter vários subdomínios correspondentes a cada uma de suas agências regionais. Se um banco for proprietário do domínio bluebank.com, seus subdomínios podem ser @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Ter um template da entrega por subdomínio permite usar sempre os parâmetros pré-configurados certos para cada marca, o que evita erros e economiza tempo.
+Quando você gerencia várias marcas no Adobe Campaign, a Adobe recomenda ter um subdomínio por marca. Por exemplo, um banco pode ter vários subdomínios correspondentes a cada uma de suas agências regionais. Se um banco for proprietário do domínio bluebank.com, seus subdomínios podem ser @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, etc. Ter um modelo da entrega por subdomínio permite usar sempre os parâmetros pré-configurados certos para cada marca, o que evita erros e economiza tempo.
 
 **Dica**: para evitar erros de configuração, recomendamos duplicar um modelo nativo e alterar suas propriedades em vez de criar um novo modelo.
 
@@ -44,7 +43,7 @@ Quando você gerencia várias marcas no Adobe Campaign, a Adobe recomenda ter um
 
 Para configurar endereços na interface do Campaign, siga os passos abaixo:
 
-1. No [template da entrega](about-templates.md), clique no link **[!UICONTROL From]**. Na janela **[!UICONTROL Email header parameters]**, preencha os seguintes campos:
+1. No [modelo da entrega](about-templates.md), clique no link **[!UICONTROL From]**. Na janela **[!UICONTROL Email header parameters]**, preencha os seguintes campos:
 
    ![](assets/d_best_practices_email_header.png)
 
@@ -66,7 +65,7 @@ Para configurar um grupo de controle, clique no link **[!UICONTROL To]**. Na jan
 
 Uma tipologia contém regras de verificação aplicadas durante a fase de análise, antes de enviar qualquer mensagem.
 
-Na guia **[!UICONTROL Typology]** das propriedades do template, altere a tipologia padrão de acordo com suas necessidades.
+Na guia **[!UICONTROL Typology]** das propriedades do modelo, altere a tipologia padrão de acordo com suas necessidades.
 
 Por exemplo, para controlar melhor o tráfego de saída, você pode definir quais endereços IP podem ser usados, estabelecendo uma afinidade por subdomínio e criando uma tipologia por afinidade. As afinidades são definidas no arquivo de configuração da instância. Entre em contato com o administrador do Adobe Campaign.
 

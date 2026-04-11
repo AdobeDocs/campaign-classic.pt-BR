@@ -3,9 +3,8 @@ product: campaign
 title: Fluxos de trabalho de regulamento de proteção de dados de privacidade
 description: Saiba mais sobre os fluxos de trabalho do Regulamento de proteção de dados de privacidade
 hide: true
-hidefromtoc: true
 feature: Workflows, Privacy
-source-git-commit: 0d8cef312371192ee97f88eb33276df9d7fb11f6
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 100%

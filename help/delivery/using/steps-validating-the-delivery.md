@@ -5,10 +5,9 @@ description: Saiba como validar uma entrega
 feature: Deliverability, Email Rendering, Proofs
 role: User
 hide: true
-hidefromtoc: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1653'
 ht-degree: 100%
 
@@ -102,13 +101,13 @@ Essa guia fornece acesso às seguintes opções:
 
 Para acelerar o preparo da entrega, é possível marcar a opção **[!UICONTROL Prepare the delivery parts in the database]** antes de iniciar a análise.
 
-Ao ativar esta opção, o preparo da entrega é executado diretamente no banco de dados, o que pode acelerar significativamente a análise.
+Ao habilitar esta opção, o preparo da entrega é executado diretamente no banco de dados, o que pode acelerar significativamente a análise.
 
 Atualmente, essa opção está disponível somente quando as seguintes condições são atendidas:
 
 * A entrega deve ser um email. Por enquanto, os outros canais não são compatíveis.
 * O mid-sourcing ou roteamento externo não deve ser usado, apenas o tipo de roteamento de entrega em massa. É possível verificar o roteamento usado na guia **[!UICONTROL General]** do **[!UICONTROL Delivery properties]**.
-* Não é possível direcionar uma população proveniente de um arquivo externo. Para uma única entrega, clique no link **[!UICONTROL To]** do **[!UICONTROL Email parameters]** e verifique se a opção **[!UICONTROL Defined in the database]** está selecionada. Para uma entrega usada em um workflow, verifique se os destinatários estão **[!UICONTROL Specified by the inbound event(s)]** na guia **[!UICONTROL Delivery]**.
+* Não é possível direcionar uma população proveniente de um arquivo externo. Para uma única entrega, clique no link **[!UICONTROL To]** do **[!UICONTROL Email parameters]** e verifique se a opção **[!UICONTROL Defined in the database]** está selecionada. Para uma entrega usada em um fluxo de trabalho, verifique se os destinatários estão **[!UICONTROL Specified by the inbound event(s)]** na guia **[!UICONTROL Delivery]**.
 * É necessário o uso de um banco de dados PostgreSQL.
 
 ### Configurar a prioridade da análise {#analysis-priority-}
@@ -117,15 +116,15 @@ Quando a entrega é parte de uma campanha, a guia **[!UICONTROL Advanced]** ofer
 
 Antes de enviar, cada entrega é analisada. A duração da análise depende do arquivo de extração de entrega. Quanto mais significativo for o tamanho do arquivo, mais tempo levará a análise, fazendo com que as entregas aguardem.
 
-As opções para **[!UICONTROL Message preparation by the scheduler]** permitem priorizar a análise de entrega em um workflow da campanha.
+As opções para **[!UICONTROL Message preparation by the scheduler]** permitem priorizar a análise de entrega em um fluxo de trabalho da campanha.
 
 ![](assets/delivery_analysis_priority.png)
 
-Se uma entrega for muito grande, é melhor atribuir uma prioridade baixa a ele para evitar o atraso na análise de outras entregas do workflow.
+Se uma entrega for muito grande, é melhor atribuir uma prioridade baixa para evitar o atraso na análise de outras entregas do fluxo de trabalho.
 
 >[!NOTE]
 >
->Para garantir que as análises de entrega maiores não retardem o progresso dos workflows, você poderá agendar suas execuções marcando **[!UICONTROL Schedule execution for a time of low activity]**.
+>Para garantir que as análises de entrega maiores não retardem o progresso dos fluxos de trabalho, você poderá agendar suas execuções marcando **[!UICONTROL Schedule execution for a time of low activity]**.
 
 ## Enviar uma prova {#sending-a-proof}
 

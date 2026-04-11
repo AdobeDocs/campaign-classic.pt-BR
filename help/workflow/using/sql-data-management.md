@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: Gestão de dados SQL
-description: Saiba mais sobre a atividade do workflow de Gestão de dados SQL
+description: Saiba mais sobre a atividade do fluxo de trabalho Gestão de dados SQL
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 100%
 
@@ -41,13 +40,13 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
 
    >[!CAUTION]
    >
-   >O schema de saída está fixo e não pode ser editado.
+   >O esquema de saída está fixo e não pode ser editado.
 
 1. Adicione o script SQL.
 
    >[!CAUTION]
    >
-   >É a responsabilidade do gravador de script SQL garantir que o script SQL esteja funcional e que suas referências (nomes de campos, etc.) estejam de acordo com o schema de saída.
+   >É a responsabilidade do gravador de script SQL garantir que o script SQL esteja funcional e que suas referências (nomes de campos, etc.) estejam de acordo com o esquema de saída.
 
    Para carregar um código SQL existente, selecione a opção **[!UICONTROL The SQL script is contained in an entity stored in the database]**. Os scripts SQL devem ser criados e armazenados no menu **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**.
 
@@ -64,10 +63,10 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
      >
      >O valor (&#39;name&#39;) corresponde ao **[!UICONTROL Name]** campo das propriedades de transição.
 
-1. Se o script SQL já tiver comandos para criar uma tabela de trabalho de saída, desmarque a opção **[!UICONTROL Automatically create work table]**. Caso contrário, uma tabela de trabalho será criada automaticamente quando o workflow for executado.
+1. Se o script SQL já tiver comandos para criar uma tabela de trabalho de saída, desmarque a opção **[!UICONTROL Automatically create work table]**. Caso contrário, uma tabela de trabalho será criada automaticamente quando o fluxo de trabalho for executado.
 1. Clique em **[!UICONTROL Ok]** para confirmar a configuração da atividade.
 
-A atividade está configurada agora. Ela está pronta para ser executada no workflow
+A atividade está configurada agora. Ela está pronta para ser executada no fluxo de trabalho
 
 >[!CAUTION]
 >

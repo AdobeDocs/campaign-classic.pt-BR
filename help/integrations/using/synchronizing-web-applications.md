@@ -1,12 +1,11 @@
 ---
 product: campaign
 title: Sincronizar aplicativos web
-description: Saiba como sincronizar aplicativos web com o ACS Connector
+description: Saiba como sincronizar aplicativos web com o Conector ACS
 feature: ACS Connector
 hide: true
-hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 100%
@@ -60,7 +59,7 @@ No Campaign v7, os seguintes objetos foram criados:
 
 ## Replicar os dados {#replicating-the-data}
 
-Para replicar os dados necessários entre o Campaign v7 e o Campaign Standard, vários modelos de fluxo de trabalho de replicação estão disponíveis. O workflow **[!UICONTROL Profiles replication]** replica automaticamente todos os destinatários do Campaign v7 para o Campaign Standard. Consulte [Workflows técnicos e de replicação](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). O workflow **[!UICONTROL Landing pages replication]** permite a replicação dos aplicativos web que queremos usar no Campaign Standard.
+Para replicar os dados necessários entre o Campaign v7 e o Campaign Standard, vários modelos de fluxo de trabalho de replicação estão disponíveis. O fluxo de trabalho **[!UICONTROL Profiles replication]** replica automaticamente todos os destinatários do Campaign v7 para o Campaign Standard. Consulte [Fluxos de trabalho técnicos e de replicação](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). O fluxo de trabalho **[!UICONTROL Landing pages replication]** permite a replicação dos aplicativos web que queremos usar no Campaign Standard.
 
 ![](assets/acs_connect_lp_1.png)
 
@@ -74,7 +73,7 @@ Para verificar se os dados foram replicados corretamente, siga essas etapas no C
 
    ![](assets/acs_connect_lp_8.png)
 
-1. Na barra superior, clique em **[!UICONTROL Marketing activities]** e procure pelo aplicativo web do Campaign v7. Ela aparece como uma landing page no Campaign Standard.
+1. Na barra superior, clique em **[!UICONTROL Marketing activities]** e procure pelo aplicativo web do Campaign v7. Ela aparece como uma página de destino no Campaign Standard.
 
    ![](assets/acs_connect_lp_9.png)
 
@@ -84,16 +83,16 @@ Para verificar se os dados foram replicados corretamente, siga essas etapas no C
 
 ## Criar e enviar o email {#designing-and-sending-the-email}
 
-Nessa parte, veremos como incluir um link, em um email do Campaign Standard, na landing page replicada de uma aplicação Web do Campaign v7.
+Nessa parte, veremos como incluir um link, em um email do Campaign Standard, na página de destino replicada de uma aplicação Web do Campaign v7.
 
 As etapas para criar, projetar e enviar o email são iguais de um email clássico. Consulte a documentação do [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=pt-BR) .
 
-1. Crie um novo email e escolha um ou mais perfis replicados como o público.
+1. Crie um novo email e escolha um ou mais perfis replicados como o público-alvo.
 1. Editar seu conteúdo e inserir um **[!UICONTROL Link to a landing page]**.
 
    ![](assets/acs_connect_lp_12.png)
 
-1. Selecione a landing page que foi replicada da aplicação Web do Campaign v7.
+1. Selecione a página de destino que foi replicada da aplicação Web do Campaign v7.
 
    ![](assets/acs_connect_lp_13.png)
 
@@ -122,7 +121,7 @@ Quando o destinatário atualiza seus dados pela aplicação Web, o Adobe Campaig
 
    ![](assets/acs_connect_lp_18.png)
 
-1. Aguarde alguns minutos para que o workflow de replicação de perfil seja executado.
+1. Aguarde alguns minutos para que o fluxo de trabalho de replicação de perfil seja executado.
 1. No Campaign Standard, acesse o perfil do destinatário para verificar se os dados atualizados foram replicados corretamente do Campaign v7.
 
    ![](assets/acs_connect_lp_19.png)

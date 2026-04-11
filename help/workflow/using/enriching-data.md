@@ -4,10 +4,9 @@ title: Enriquecer dados
 description: Saiba mais sobre a atividade do fluxo de trabalho de enriquecimento
 feature: Workflows, Enrichment Activity
 hide: true
-hidefromtoc: true
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 100%
 
@@ -37,11 +36,11 @@ Um contato encontrado na tabela **[!UICONTROL Recipients]** pode ser vinculado a
 
 O objetivo desse caso de uso é enviar entregas personalizadas às pessoas que faziam parte da competição mais recente, dependendo de suas pontuações mais altas. O destinatário com a pontuação mais alta obtém o primeiro prêmio, o destinatário com a segunda pontuação mais alta recebe um prêmio de consolação e todos os outros obtêm uma mensagem desejando uma sorte melhor da próxima vez.
 
-Para configurar esse caso de uso, criamos o seguinte workflow para construção do target:
+Para configurar esse caso de uso, criamos o seguinte fluxo de trabalho de segmentação:
 
 ![](assets/uc1_enrich_3.png)
 
-Para criar o workflow, aplique as seguintes etapas:
+Para criar o fluxo de trabalho, aplique as seguintes etapas:
 
 1. Duas atividades **[!UICONTROL Query]** e uma atividade **[!UICONTROL Intersection]** são adicionadas para direcionar novos assinantes que entraram por último na competição.
 1. A atividade **[!UICONTROL Enrichment]** permite adicionar dados armazenados na tabela **[!UICONTROL Competition results]**. O campo **[!UICONTROL Score]**, onde a personalização de entrega ocorrerá, é adicionado à tabela de trabalho do fluxo de trabalho.
@@ -50,11 +49,11 @@ Para criar o workflow, aplique as seguintes etapas:
 
 ## Etapa 1: Direcionamento {#step-1--targeting}
 
-A primeira query nos permite selecionar destinatários que foram adicionados ao banco de dados nos últimos seis meses.
+A primeira consulta nos permite selecionar destinatários que foram adicionados ao banco de dados nos últimos seis meses.
 
 ![](assets/uc1_enrich_4.png)
 
-A segunda query nos permite selecionar os destinatários que faziam parte da última competição.
+A segunda consulta nos permite selecionar os destinatários que faziam parte da última competição.
 
 ![](assets/uc1_enrich_5.png)
 
@@ -92,7 +91,7 @@ Clique com o botão direito do mouse na transição de entrada da atividade de e
 
 ![](assets/uc1_enrich_13.png)
 
-O schema vinculado é:
+O esquema vinculado é:
 
 ![](assets/uc1_enrich_15.png)
 
@@ -100,7 +99,7 @@ Renovar esta operação na transição de saída da atividade de enriquecimento.
 
 ![](assets/uc1_enrich_12.png)
 
-O schema correspondente também foi enriquecido.
+O esquema correspondente também foi enriquecido.
 
 ![](assets/uc1_enrich_14.png)
 
@@ -122,6 +121,6 @@ Para classificar os destinatários com base em suas pontuações, uma atividade 
 
    ![](assets/uc1_enrich_19.png)
 
-1. Adicione uma atividade do tipo **[!UICONTROL Delivery]** para cada subconjunto, usando um template de entrega diferente para cada um.
+1. Adicione uma atividade do tipo **[!UICONTROL Delivery]** para cada subconjunto, usando um modelo de entrega diferente para cada um.
 
    ![](assets/uc1_enrich_20.png)

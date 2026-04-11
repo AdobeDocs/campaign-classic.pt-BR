@@ -5,10 +5,9 @@ description: Modelos de campanha de marketing
 role: User
 feature: Campaigns, Templates
 hide: true
-hidefromtoc: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1131'
 ht-degree: 100%
 
@@ -64,7 +63,7 @@ As várias guias e subguias do modelo de campanha permitem que você acesse as c
 
 ## Selecionar módulos {#select-modules}
 
-O link **[!UICONTROL Advanced campaign settings...]** permite habilitar e desabilitar tarefas para as campanhas com base neste modelo. Selecione os recursos que deseja habilitar nas campanhas criadas com base neste modelo.
+O link **[!UICONTROL Advanced campaign settings...]** permite habilitar e desabilitar processos para as campanhas com base neste modelo. Selecione os recursos que deseja habilitar nas campanhas criadas com base neste modelo.
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
@@ -134,7 +133,7 @@ Os links e as guias a seguir serão exibidos:
 
   ![](assets/s_ncs_user_op_template_activate_5b.png)
 
-  Você pode optar por habilitar ou não a aprovação do processo por meio da guia **[!UICONTROL Approvals]** da seção de configurações avançadas dos modelos. As tarefas para as quais a aprovação é selecionada devem ser aprovadas para que a entrega de mensagens seja autorizada.
+  Você pode optar por habilitar ou não a aprovação do processo por meio da guia **[!UICONTROL Approvals]** da seção de configurações avançadas dos modelos. Os processos para os quais a aprovação é selecionada devem ser aprovados para que a entrega de mensagens seja autorizada.
 
   Você deve associar um operador de revisor ou grupo de operadores a cada aprovação habilitada.
 

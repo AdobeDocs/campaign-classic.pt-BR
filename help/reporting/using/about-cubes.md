@@ -5,9 +5,8 @@ description: Introdução aos cubos
 feature: Reporting, Monitoring
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 hide: true
-hidefromtoc: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 100%
@@ -46,7 +45,7 @@ Os principais contextos de uso para cubos são:
 
   ![](assets/cube_create_new.png)
 
-  Os cubos aparecem como templates baseados em quais relatórios são criados. Depois de escolher um template, clique em **[!UICONTROL Create]** para configurar e exibir o relatório correspondente.
+  Os cubos aparecem como modelos baseados em quais relatórios são criados. Depois de escolher um modelo, clique em **[!UICONTROL Create]** para configurar e exibir o relatório correspondente.
 
   Você pode adaptar medidas, alterar o modo de exibição ou configurar a tabela e exibir o relatório usando o botão principal.
 

@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: Código SQL e código JavaScript
-description: Saiba mais sobre atividades de workflow de códigos SQL e JavaScript
+description: Saiba mais sobre atividades de fluxo de trabalho de códigos SQL e JavaScript
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 100%
 
@@ -19,13 +18,13 @@ ht-degree: 100%
 
 ## Código SQL {#sql-code}
 
-Uma atividade **[!UICONTROL SQL code]** executa um script SQL. O script é um template JST.
+Uma atividade **[!UICONTROL SQL code]** executa um script SQL. O script é um modelo JST.
 
 ![](assets/sql_code.png)
 
 * **[!UICONTROL Script]**
 
-  A área central do editor contém o script a ser executado. Este script é um template JST e, portanto, pode ser configurado de acordo com o contexto do workflow.
+  A área central do editor contém o script a ser executado. Este script é um modelo JST e, portanto, pode ser configurado de acordo com o contexto do fluxo de trabalho.
 
 * **[!UICONTROL Processing errors]**
 
@@ -33,10 +32,10 @@ Uma atividade **[!UICONTROL SQL code]** executa um script SQL. O script é um te
 
 ## Código JavaScript e código JavaScript avançado {#javascript-code}
 
-As atividades **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]** executam um script JavaScript no contexto de um workflow. Para obter mais informações sobre scripts, consulte essas seções:
+As atividades **[!UICONTROL JavaScript code]** e **[!UICONTROL Advanced JavaScript code]** executam um script JavaScript no contexto de um fluxo de trabalho. Para obter mais informações sobre scripts, consulte essas seções:
 
 * [Modelos e scripts JavaScript](javascript-scripts-and-templates.md)
-* [Exemplos de código JavaScript em workflows](javascript-in-workflows.md)
+* [Exemplos de código JavaScript em fluxos de trabalho](javascript-in-workflows.md)
 
 ### Atraso de execução {#exec-delay}
 
@@ -63,7 +62,7 @@ Para ignorar esse limite, é necessário definir o valor como **0**.
 * **[!UICONTROL Transitions]**: Você pode definir várias transições de atividade de output.
 * **[!UICONTROL Schedule]**: A guia **[!UICONTROL Schedule]** permite agendar quando acionar a atividade.
 
-O JavaScript avançado é uma tarefa persistente e será retomado periodicamente se não for marcado como concluído. Para finalizar a tarefa e evitar futuras recuperações, você deve usar o método **task.setCompleted()** na seção **[!UICONTROL Next calls]**:
+O JavaScript avançado é uma tarefa persistente e será retomado periodicamente se não for marcado como concluído. Para encerrar a tarefa e evitar futuras recuperações, você deve usar o método **task.setCompleted()** na seção **[!UICONTROL Next calls]**:
 
 ```
 task.postEvent(task.transitionByName("ok")); // to transition to Ok branch

@@ -1,13 +1,12 @@
 ---
 product: campaign
-title: Criar um workflow
+title: Criar um fluxo de trabalho
 description: Saiba como criar um fluxo de trabalho
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 100%
 
@@ -17,15 +16,15 @@ ht-degree: 100%
 
 
 
-Esta seção detalha os principais princípios e as práticas recomendadas para criação de workflow no Campaign.
+Esta seção detalha os principais princípios e as práticas recomendadas para criação de fluxo de trabalho no Campaign.
 
-* Para criação de um workflow, consulte [Criação de um novo workflow](#creating-a-new-workflow)
-* Para design do diagrama de workflow, consulte [Adicionar e vincular atividades](#adding-and-linking-activities)
+* Para criação de um fluxo de trabalho, consulte [Criação de um novo fluxo de trabalho](#creating-a-new-workflow)
+* Para design do diagrama de fluxo de trabalho, consulte [Adicionar e vincular atividades](#adding-and-linking-activities)
 * Para acessar parâmetros e propriedades de atividades, consulte [Configuração de atividades](#configuring-activities)
-* Para design de workflows para construção do target, consulte [workflows para construção do target](#targeting-workflows)
-* Use workflows para executar uma campanha. Consulte [Workflows do Campaign](#campaign-workflows)
-* Para acessar e criar workflows técnicos, consulte [Workflows técnicos](#technical-workflows)
-* Para usar templates para criar workflows, consulte [Templates de workflow](#workflow-templates)
+* Para design de fluxos de trabalho de segmentação, consulte [fluxos de trabalho de segmentação](#targeting-workflows)
+* Use fluxos de trabalho para executar uma campanha. Consulte [Fluxos de trabalho do Campaign](#campaign-workflows)
+* Para acessar e criar fluxos de trabalho técnicos, consulte [Fluxos de trabalho técnicos](#technical-workflows)
+* Para usar modelos para criar fluxos de trabalho, consulte [Modelos de fluxo de trabalho](#workflow-templates)
 
 ## Criar um novo fluxo de trabalho {#creating-a-new-workflow}
 
@@ -43,11 +42,11 @@ Insira um rótulo e clique em **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
->Quando você modificar o nome interno de uma atividade de workflow ou o próprio workflow, certifique-se de salvá-lo antes de fechá-lo para que o novo nome interno seja considerado corretamente.
+>Quando você modifica o nome interno de uma atividade de fluxo de trabalho ou o próprio fluxo de trabalho, certifique-se de salvá-lo antes de fechá-lo para que o novo nome interno seja considerado corretamente.
 
 ## Adicionar e vincular atividades {#adding-and-linking-activities}
 
-Defina agora as várias atividades e as vincule no diagrama. Nessa fase de configuração, podemos ver o rótulo do diagrama e o status do workflow (Edição em andamento). A seção inferior da janela é usada para editar apenas o diagrama. Ela contém uma barra de ferramentas, uma paleta de atividades (à esquerda) e o próprio diagrama (à direita).
+Defina agora as várias atividades e as vincule no diagrama. Nessa fase de configuração, podemos ver o rótulo do diagrama e o status do fluxo de trabalho (Edição em andamento). A seção inferior da janela é usada para editar apenas o diagrama. Ela contém uma barra de ferramentas, uma paleta de atividades (à esquerda) e o próprio diagrama (à direita).
 
 ![](assets/new-workflow-2.png)
 
@@ -55,11 +54,11 @@ Defina agora as várias atividades e as vincule no diagrama. Nessa fase de confi
 >
 >Se a paleta não é exibida, clique no primeiro botão na barra de ferramentas para exibi-la.
 
-As atividades são agrupadas por categoria dentro das diferentes guias da paleta. As guias e atividades disponíveis podem variar dependendo do tipo de workflow (workflow técnicos, para construção do target ou da campanha).
+As atividades são agrupadas por categoria dentro das diferentes guias da paleta. As guias e atividades disponíveis podem variar dependendo do tipo de fluxo de trabalho (fluxo de trabalho técnicos, de segmentação ou da campanha).
 
-* A primeira guia contém atividades de targeting e de manipulação de dados. Essas atividades são detalhadas em [Atividades de direcionamento](about-targeting-activities.md).
+* A primeira guia contém atividades de direcionamento e de manipulação de dados. Essas atividades são detalhadas em [Atividades de direcionamento](about-targeting-activities.md).
 * A segunda guia contém as atividades de agendamento, que são usadas principalmente para coordenar outras atividades. Essas atividades são detalhadas em [Atividades de controle de fluxo](about-flow-control-activities.md).
-* A terceira guia contém ferramentas e ações que podem ser usadas no workflow. Essas atividades são detalhadas em [Atividades da ação](about-action-activities.md).
+* A terceira guia contém ferramentas e ações que podem ser usadas no fluxo de trabalho. Essas atividades são detalhadas em [Atividades da ação](about-action-activities.md).
 * A quarta guia contém atividades que dependem de um determinado evento, como o recibo de um email ou a entrada de um arquivo em um servidor. Essas atividades são detalhadas em [Atividades de evento](about-event-activities.md).
 
 Criação do diagrama
@@ -82,13 +81,13 @@ Criação do diagrama
 
 >[!CAUTION]
 >
->É possível copiar e colar atividades dentro de um mesmo workflow. No entanto, não recomendamos atividades de copiar e colar em workflows diferentes. Algumas configurações anexadas a atividades como Delivery e Scheduler podem gerar conflitos e erros ao executar o workflow de destino. Em vez disso, recomendamos usar **Duplicate** nos workflows. Para obter mais informações, consulte [Duplicar workflows](#duplicating-workflows).
+>É possível copiar e colar atividades dentro de um mesmo fluxo de trabalho. No entanto, não recomendamos atividades de copiar e colar em fluxos de trabalho diferentes. Algumas configurações anexadas a atividades como Entrega e Scheduler podem gerar conflitos e erros ao executar o fluxo de trabalho de destino. Em vez disso, recomendamos usar **Duplicate** nos fluxos de trabalho. Para obter mais informações, consulte [Duplicar fluxos de trabalho](#duplicating-workflows).
 
 Você pode alterar a exibição e o layout do gráfico usando os seguintes elementos:
 
 * **Usar a barra de ferramentas**
 
-  A barra de ferramentas de edição do diagrama oferece acesso às funções de layout e de execução do workflow.
+  A barra de ferramentas de edição do diagrama oferece acesso às funções de layout e de execução do fluxo de trabalho.
 
   ![](assets/s_user_segmentation_wizard_10.png)
 
@@ -117,7 +116,7 @@ Clique duas vezes em uma atividade para configurá-la ou clique com o botão dir
 
 >[!NOTE]
 >
->As atividades de workflow da campanha são detalhadas [nesta seção](about-activities.md).
+>As atividades de fluxo de trabalho da campanha são detalhadas [nesta seção](about-activities.md).
 
 As primeiras guias contêm a configuração básica. A guia **[!UICONTROL Advanced]** contém os parâmetros adicionais, que são usados principalmente para definir o comportamento em caso de erro, especificando a duração da execução para uma atividade e para inserir um script de inicialização.
 
@@ -125,25 +124,25 @@ Para entender melhor as atividades e melhorar a legibilidade do fluxo de trabalh
 
 ![](assets/example1-comment.png)
 
-## Fluxos de trabalho para construção do target {#targeting-workflows}
+## Workflows de direcionamento {#targeting-workflows}
 
-Os workflows para construção do target permitem que você crie vários targets de entrega. Você pode criar queries, definir uniões ou exclusões com base em critérios específicos, adicionar agendamento, graças às atividades do workflow. O resultado desse target pode ser transferido automaticamente para uma lista que pode servir como target das ações de entrega
+Os fluxos de trabalho de segmentação permitem que você crie vários targets de entrega. Você pode criar queries, definir uniões ou exclusões com base em critérios específicos, adicionar agendamento, graças às atividades do fluxo de trabalho. O resultado desse target pode ser transferido automaticamente para uma lista que pode servir como direcioncimento das ações de entrega
 
-Além dessas atividades, as opções de Gestão de Dados permitem manipular dados e acessar funções avançadas para solucionar problemas complexos de target. Para obter mais informações, consulte [Gerenciamento de dados](targeting-data.md#data-management).
+Além dessas atividades, as opções de Gestão de Dados permitem manipular dados e acessar funções avançadas para solucionar problemas complexos de direcionamento. Para obter mais informações, consulte [Gerenciamento de dados](targeting-data.md#data-management).
 
-Todas essas atividades podem ser encontradas na primeira guia do workflow.
+Todas essas atividades podem ser encontradas na primeira guia do fluxo de trabalho.
 
 >[!NOTE]
 >
->As atividades de target são detalhadas [nesta seção](about-activities.md).
+>As atividades de direcionamento são detalhadas [nesta seção](about-activities.md).
 
-Os fluxos de trabalho para construção do target podem ser criados e editados por meio do nó **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** da árvore do Adobe Campaign ou através do menu **[!UICONTROL Profiles and Targets > Targeting workflows]** da página inicial.
+Os workflows de direcionamento podem ser criados e editados por meio do nó **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** da árvore do Adobe Campaign ou através do menu **[!UICONTROL Profiles and Targets > Targeting workflows]** da página inicial.
 
 ![](assets/target_wf.png)
 
-Os workflows para construção do target dentro da estrutura de uma campanha são armazenados com todos os workflows da campanha.
+Os fluxos de trabalho de segmentação dentro da estrutura de uma campanha são armazenados com todos os fluxos de trabalho da campanha.
 
-### Etapas principais para criar um fluxo de trabalho para construção do target {#implementation-steps-}
+### Etapas principais para criar um workflow de direcionamento {#implementation-steps-}
 
 As etapas para a criação de um fluxo de trabalho de direcionamento estão detalhadas nestas seções:
 
@@ -151,17 +150,17 @@ As etapas para a criação de um fluxo de trabalho de direcionamento estão deta
 1. **Preparar** dados para atender às necessidades da entrega – Consulte [Enriquecer e modificar dados](targeting-data.md#enriching-and-modifying-data)
 1. **Usar** dados para executar atualizações ou dentro de uma entrega – Consulte [Atualizar o banco de dados](how-to-use-workflow-data.md#updating-the-database)
 
-Os resultados de todos os enriquecimentos e todos tratamentos realizados no target são armazenados e acessíveis em campos de personalização, principalmente para usar criação de mensagens personalizadas. Para obter mais informações, consulte [Dados do target](data-life-cycle.md#target-data)
+Os resultados de todos os enriquecimentos e todos tratamentos realizados no direcionamento são armazenados e acessíveis em campos de personalização, principalmente para usar criação de mensagens personalizadas. Para obter mais informações, consulte [Dados do target](data-life-cycle.md#target-data)
 
 ### Dimensões de filtragem e direcionamento {#targeting-and-filtering-dimensions}
 
-Durante as operações de segmentação de dados, a chave de direcionamento é mapeada para uma dimensão de filtro. O targeting dimension permite definir o público alvo da operação: destinatários, beneficiários de contrato, operadores, assinantes etc. A dimensão de filtro permite selecionar o público com base em determinados critérios: titulares de contratos, assinantes de boletins informativos, etc.
+Durante as operações de segmentação de dados, a chave de direcionamento é mapeada para uma dimensão de filtro. A dimensão de direcionamento permite definir a população de destino da operação: destinatários, beneficiários de contrato, operadores, assinantes etc. A dimensão de filtro permite selecionar a população com base em determinados critérios: titulares de contratos, assinantes de boletins informativos, etc.
 
-Por exemplo, para selecionar clientes que têm uma apólice de seguro de vida por mais de 5 anos, selecione a seguinte targeting dimension: **Clients** e a seguinte dimensão do filtro: **Contract holder**. Você pode definir as condições de filtragem na atividade de query
+Por exemplo, para selecionar clientes que têm uma apólice de seguro de vida por mais de 5 anos, selecione a seguinte dimensão de direcionamento: **Clients** e a seguinte dimensão do filtro: **Contract holder**. Você pode definir as condições de filtragem na atividade de consulta
 
-Durante o estágio de seleção de targeting dimensioning dimension, somente as dimensões de filtro compatíveis são apresentadas na interface.
+Durante o estágio de seleção da dimensão de direcionamento, somente as dimensões de filtro compatíveis são apresentadas na interface.
 
-Essas duas dimensões devem estar relacionadas. Assim, o conteúdo da lista **[!UICONTROL Filtering dimension]** depende do target dimension especificado no primeiro campo.
+Essas duas dimensões devem estar relacionadas. Assim, o conteúdo da lista **[!UICONTROL Filtering dimension]** depende da dimensão de direcionamento especificada no primeiro campo.
 
 Por exemplo, para destinatários (**destinatários**), as seguintes dimensões de filtro estarão disponíveis:
 
@@ -173,71 +172,71 @@ Enquanto para **Aplicações Web**, a lista conterá as seguintes dimensões de 
 
 ## Fluxos de trabalho da campanha {#campaign-workflows}
 
-Para cada campanha, você pode criar fluxos de trabalho que serão executados na guia **[!UICONTROL Targeting and workflows]**. Esses workflows são específicos da campanha.
+Para cada campanha, você pode criar fluxos de trabalho que serão executados na guia **[!UICONTROL Targeting and workflows]**. Esses fluxos de trabalho são específicos da campanha.
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
-Esta guia contém as mesmas atividades que todos os workflows. [Saiba mais](#implementation-steps-)
+Esta guia contém as mesmas atividades que todos os fluxos de trabalho. [Saiba mais](#implementation-steps-)
 
-Além de campanhas de target, os workflows da campanha permitem criar e configurar entregas inteiramente para todos os canais disponíveis. Após ser criado no workflow, essas entregas estão disponíveis no painel da campanha. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md)
+Além de campanhas de segmentação, os fluxos de trabalho da campanha permitem criar e configurar entregas inteiramente para todos os canais disponíveis. Após ser criado no fluxo de trabalho, essas entregas estão disponíveis no painel da campanha. [Saiba mais](../../campaign/using/marketing-campaign-deliveries.md)
 
-Todos os workflows da campanha são centralizados no nó **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]**.
+Todos os fluxos de trabalho da campanha são centralizados no nó **[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]**.
 
 ![](assets/campaigns_wf.png)
 
-Os workflows da campanha e exemplos de implementação são detalhados [nesta página](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+Os fluxos de trabalho da campanha e exemplos de implementação são detalhados [nesta página](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
-## Workflows técnicos {#technical-workflows}
+## Fluxos de trabalho técnicos {#technical-workflows}
 
-Os workflows técnicos são fornecidos com o Adobe Campaign, prontos para uso. Eles são operações ou tarefas agendadas para execução periódica no servidor. Eles permitem executar a manutenção no banco de dados, encaminhar as informações de rastreamento sobre as entregas e configurar processos provisionais nas entregas. Os workflows técnicos são configurados por meio do nó **[!UICONTROL Administration > Production > Technical workflows]**.
+Os fluxos de trabalho técnicos são fornecidos com o Adobe Campaign, prontos para uso. Eles são operações ou processos agendados para execução periódica no servidor. Eles permitem executar a manutenção no banco de dados, encaminhar as informações de rastreamento sobre as entregas e configurar processos provisionais nas entregas. Os fluxos de trabalho técnicos são configurados por meio do nó **[!UICONTROL Administration > Production > Technical workflows]**.
 
 ![](assets/navtree.png)
 
-Templates nativos estão disponíveis para criar workflows técnicos. Eles podem ser configurados para atender às suas necessidades.
+Modelos nativos estão disponíveis para criar fluxos de trabalho técnicos. Eles podem ser configurados para atender às suas necessidades.
 
 A subpasta **[!UICONTROL Campaign process]** centraliza os fluxos de trabalho necessários para executar processos nas campanhas: notificação de tarefa, gestão de estoque, cálculo de custos, etc.
 
 >[!NOTE]
 >
->A lista de workflows técnicos instalados com cada módulo está disponível em uma [seção dedicada](about-technical-workflows.md).
+>A lista de fluxos de trabalho técnicos instalados com cada módulo está disponível em uma [seção dedicada](about-technical-workflows.md).
 
-Você pode criar outros workflows técnicos no nó **[!UICONTROL Administration > Production > Technical workflows]** da estrutura da árvore. No entanto, essa função é reservada para usuários avançados.
+Você pode criar outros fluxos de trabalho técnicos no nó **[!UICONTROL Administration > Production > Technical workflows]** da estrutura da árvore. No entanto, essa função é reservada para usuários avançados.
 
-As atividades oferecidas são as mesmas para os workflows para construção do target. [Saiba mais](#implementation-steps-)
+As atividades oferecidas são as mesmas para os fluxos de trabalho de segmentação. [Saiba mais](#implementation-steps-)
 
-## Templates de workflow {#workflow-templates}
+## Modelos de fluxo de trabalho {#workflow-templates}
 
-Os templates de workflows possuem a configuração geral das propriedades e possivelmente uma série de atividades concatenadas em um diagrama. Essa configuração pode ser reutilizada para criar novos workflows com um determinado número de elementos pré-configurados
+Os modelos de fluxos de trabalho possuem a configuração geral das propriedades e possivelmente uma série de atividades concatenadas em um diagrama. Essa configuração pode ser reutilizada para criar novos fluxos de trabalho com um determinado número de elementos pré-configurados
 
-Você pode criar novos templates de workflow com base em templates existentes ou alterar um workflow para um template diretamente.
+Você pode criar novos modelos de fluxo de trabalho com base em modelos existentes ou alterar um fluxo de trabalho para um modelo diretamente.
 
 Os modelos de fluxo de trabalho são salvos no nó **[!UICONTROL Resources > Templates > Workflow templates]** da árvore do Adobe Campaign.
 
 ![](assets/s_advuser_wf_template_tree.png)
 
-Além das propriedades usuais do workflow, as propriedades do template permitem especificar o arquivo de execução para workflows criados com base nesse template.
+Além das propriedades usuais do fluxo de trabalho, as propriedades do modelo permitem especificar o arquivo de execução para fluxos de trabalho criados com base nesse modelo.
 
 ![](assets/s_advuser_wf_template_properties.png)
 
-## Workflows duplicados {#duplicating-workflows}
+## Fluxos de trabalho duplicados {#duplicating-workflows}
 
-É possível duplicar diferentes tipos de workflows: Após a duplicação, as modificações do workflow não são transferidas para a cópia do workflow.
+É possível duplicar diferentes tipos de fluxos de trabalho: Após a duplicação, as modificações do fluxo de trabalho não são transferidas para a cópia do fluxo de trabalho.
 
 >[!CAUTION]
 >
->O comando copiar-colar está disponível em workflows, mas recomendamos que você use o **Duplicate**. Depois que uma atividade é copiada, toda a sua configuração é mantida. Para atividades de entrega (Email, SMS, Notificação por push...), o objeto da entrega anexado à atividade também é copiado, o que pode resultar em falha.
+>O comando copiar-colar está disponível em fluxos de trabalho, mas recomendamos que você use o **Duplicate**. Depois que uma atividade é copiada, toda a sua configuração é mantida. Para atividades de entrega (Email, SMS, Notificação por push...), o objeto da entrega anexado à atividade também é copiado, o que pode resultar em falha.
 
-1. Clique com o botão direito do mouse em um workflow.
+1. Clique com o botão direito do mouse em um fluxo de trabalho.
 1. Clique em **Duplicate**.
 
    ![](assets/duplicate-workflows.png)
 
-1. Na janela do workflow, altere o rótulo do workflow.
+1. Na janela do fluxo de trabalho, altere o rótulo do fluxo de trabalho.
 1. Clique em **Save**.
 
 O recurso de duplicação não está diretamente disponível na visualização de uma campanha.
 
-No entanto, é possível criar uma visualização para exibir todos os workflows na sua instância. Nesta visualização, é possível duplicar workflows usando **Duplicate to**.
+No entanto, é possível criar uma visualização para exibir todos os fluxos de trabalho na sua instância. Nesta visualização, é possível duplicar fluxos de trabalho usando **Duplicate to**.
 
 **Criar uma visualização**
 
@@ -253,14 +252,14 @@ A nova pasta **Workflows** é criada.
 
    ![](assets/folder-is-a-view.png)
 
-A pasta agora é preenchida com todos os workflows da sua instância.
+A pasta agora é preenchida com todos os fluxos de trabalho da sua instância.
 
 **Duplicar um fluxo de trabalho de campanha**
 
-1. Selecione um workflow de campanha na visualização do workflow.
+1. Selecione um fluxo de trabalho de campanha na visualização do fluxo de trabalho.
 1. Clique com o botão direito do mouse em **Duplicate to**.
    ![](assets/duplicate-to-right-click.png)
 1. Altere o rótulo.
 1. Clique em **Save**.
 
-Você pode ver o workflow duplicado na visualização workflow.
+Você pode ver o fluxo de trabalho duplicado na visualização fluxo de trabalho.

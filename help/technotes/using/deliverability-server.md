@@ -4,12 +4,11 @@ title: Atualizar para o novo servidor de avaliação do delivery
 description: Saiba como atualizar para o novo servidor de entrega do Campaign
 feature: Technote, Deliverability
 hide: true
-hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: c42d4022587846081442a39d03546c0ef335c7a0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '986'
+ht-degree: 16%
 
 ---
 
@@ -21,7 +20,7 @@ Como cliente do Campaign Classic, você deve implementar o novo servidor de aval
 
 >[!NOTE]
 >
->Para obter mais informações sobre essas alterações, consulte as [Perguntas frequentes](#faq) ou entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
+>Para obter mais informações sobre essas alterações, consulte as [Perguntas frequentes](#faq) ou entre em contato com o [Atendimento ao Cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
 >
 
 ## O que mudou?{#acc-deliverability-changes}
@@ -36,9 +35,9 @@ Todos os clientes foram afetados e devem atualizar para o [Campaign v7.2.2](../.
 
 ## Como atualizar?{#acc-deliverability-update}
 
-Como **cliente hospedado**, o Adobe trabalhará com você para atualizar sua(s) instância(s) para a versão mais recente e criar o projeto no Adobe Developer Console.
+Como um **cliente hospedado**, a Adobe trabalhará com você para atualizar sua(s) instância(s) para a versão mais recente e criar o projeto no Adobe Developer Console.
 
-Como **cliente local/híbrido**, você precisa atualizar para o [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (ou mais) para se beneficiar do novo servidor de avaliação de entrega. Depois que todas as instâncias forem atualizadas, você deverá [implementar a nova integração](#implementation-steps) para o servidor de entrega do Adobe e garantir uma transição contínua.
+Como **cliente local/híbrido**, você precisa atualizar para o [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (ou mais) para se beneficiar do novo servidor de avaliação de entrega. Depois que todas as instâncias forem atualizadas, você deverá [implementar a nova integração](#implementation-steps) com o servidor de avaliação de entrega do Adobe e garantir uma transição contínua.
 
 ## Etapas de implementação {#implementation-steps}
 
@@ -65,7 +64,7 @@ Antes de iniciar a implementação, verifique a configuração da instância.
 1. Verifique se o valor da opção `DmRendering_cuid` está preenchido.
 
    * Se a opção estiver preenchida, é possível iniciar a implementação.
-   * Se nenhum valor for preenchido, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para obter seu CUID.
+   * Se nenhum valor for preenchido, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para obter sua CUID.
 
    Essa opção deve ser preenchida em todas as instâncias do Campaign (MKT, MID, RT, EXEC) com o valor correto. Como um cliente híbrido, entre em contato com o Adobe para ter a opção definida em suas instâncias MID, RT e EXEC.
 
@@ -73,7 +72,7 @@ Como cliente local, você também deve verificar se uma Campanha **[!UICONTROL P
 
 1. Como Administrador, conecte-se ao [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Acesse a seção **Produtos e Serviços** e verifique se o **Adobe Campaign** está listado.
-Se você não conseguir ver o **Adobe Campaign**, entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
+Se você não conseguir ver o **Adobe Campaign**, contate o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
 1. Clique em **Adobe Campaign** e selecione sua Organização.
    **Atenção**: se você tiver mais de uma organização, certifique-se de selecionar a correta. Saiba mais sobre as Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR#ims-org-id){_blank}.
 
@@ -82,7 +81,7 @@ Se você não conseguir ver o **Adobe Campaign**, entre em contato com o [Adobe 
 
 >[!CAUTION]
 >
->Como cliente local, se um firewall estiver implementado da sua parte, você deverá adicionar esta url `https://deliverability-service.adobe.io` à sua inclui na lista de permissões. [Saiba mais](../../installation/using/url-permissions.md).
+>Como cliente local, se um firewall estiver implementado em seu lado, você deverá adicionar esta url `https://deliverability-service.adobe.io` ao seu incluo na lista de permissões. [Saiba mais](../../installation/using/url-permissions.md).
 
 
 ### Etapa 1: criar/atualizar o projeto do Adobe Developer {#adobe-io-project}

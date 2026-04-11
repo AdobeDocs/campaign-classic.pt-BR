@@ -4,9 +4,8 @@ title: Criar indicadores
 description: Criar indicadores
 feature: Reporting, Monitoring
 hide: true
-hidefromtoc: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 100%
@@ -36,7 +35,7 @@ Para criar um cubo, clique no botão **[!UICONTROL New]** acima da lista de cubo
 
 ![](assets/s_advuser_cube_create.png)
 
-Selecione o schema de fatos, ou seja, o schema que contém os elementos que deseja explorar. Neste exemplo, vamos selecionar a tabela **Destinatário**.
+Selecione o esquema de fatos, ou seja, o esquema que contém os elementos que deseja explorar. Neste exemplo, vamos selecionar a tabela **Destinatário**.
 
 ![](assets/s_advuser_cube_wz_02.png)
 
@@ -48,7 +47,7 @@ Clique no link **[!UICONTROL Filter the source data...]** para aplicar os cálcu
 
 ## Definir dimensões {#defining-dimensions}
 
-As dimensões coincidem com os eixos de análise definidos para cada Cubo com base em seu schema de fato relacionado. Essas são as dimensões exploradas na análise, como tempo (ano, mês, data...), uma classificação de produtos ou contratos (família, referência, etc.), um segmento de população (por cidade, faixa etária, status, etc.).
+As dimensões coincidem com os eixos de análise definidos para cada Cubo com base em seu esquema de fato relacionado. Essas são as dimensões exploradas na análise, como tempo (ano, mês, data...), uma classificação de produtos ou contratos (família, referência, etc.), um segmento de população (por cidade, faixa etária, status, etc.).
 
 Esses eixos de análise estão disponíveis na guia **[!UICONTROL Dimension]** do Cubo.
 
@@ -76,7 +75,7 @@ Clique no botão **[!UICONTROL Add]** para criar uma nova dimensão, em seguida,
 
 * Crie outra dimensão para analisar dados relativos à cidade do destinatário
 
-  Para fazer isso, adicione uma nova dimensão e selecione a cidade no nó **[!UICONTROL Location]** do schema do destinatário.
+  Para fazer isso, adicione uma nova dimensão e selecione a cidade no nó **[!UICONTROL Location]** do esquema do destinatário.
 
   ![](assets/s_advuser_cube_wz_08.png)
 
@@ -101,7 +100,7 @@ Para fazer isso, siga as etapas abaixo:
 1. Clique no botão **[!UICONTROL Add]**.
 1. Selecione o tipo de medida e a fórmula a ser aplicada. Aqui queremos contar o número de mulheres entre os destinatários.
 
-   Nossa medida é baseada no schema de fatos e usa o operador **[!UICONTROL Count]**.
+   Nossa medida é baseada no esquema de fatos e usa o operador **[!UICONTROL Count]**.
 
    ![](assets/s_advuser_cube_wz_11.png)
 
@@ -117,7 +116,7 @@ Para fazer isso, siga as etapas abaixo:
 
 ## Criar um relatório baseado em um cubo {#creating-a-report-based-on-a-cube}
 
-Depois que o cubo é configurado, ele pode ser usado como um template para criar um novo relatório.
+Depois que o cubo é configurado, ele pode ser usado como um modelo para criar um novo relatório.
 
 Para fazer isso:
 

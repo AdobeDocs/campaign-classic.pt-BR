@@ -4,10 +4,9 @@ title: Criar uma campanha local
 description: Criar uma campanha local
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 100%
 
@@ -17,12 +16,12 @@ ht-degree: 100%
 
 
 
-Uma campanha local é uma instância criada a partir de um modelo referenciado da lista de **[!UICONTROL campaign packages]** com um **cronograma de execução específico**. Seu objetivo é atender a uma comunicação local usando um template de campanha que foi criado e configurado pela entidade central. Os principais estágios para a implementação de uma operação local são:
+Uma campanha local é uma instância criada a partir de um modelo referenciado da lista de **[!UICONTROL campaign packages]** com um **cronograma de execução específico**. Seu objetivo é atender a uma comunicação local usando um modelo de campanha que foi criado e configurado pela entidade central. Os principais estágios para a implementação de uma operação local são:
 
 **Para a entidade central**
 
-1. Criar um template de campanha local.
-1. Criar um pacote de campanha a partir de um template.
+1. Criar um modelo de campanha local.
+1. Criar um pacote de campanha a partir de um modelo.
 1. Publicar um pacote de campanha
 1. Aprovar pedidos
 
@@ -31,7 +30,7 @@ Uma campanha local é uma instância criada a partir de um modelo referenciado d
 1. Solicitar a campanha
 1. Executar campanhas
 
-## Criar um template de campanha local {#creating-a-local-campaign-template}
+## Criar um modelo de campanha local {#creating-a-local-campaign-template}
 
 Para criar um pacote de campanha, primeiro crie o **modelo de campanha** por meio do nó **[!UICONTROL Resources > Templates]**.
 
@@ -39,7 +38,7 @@ Para criar um novo modelo local, duplique o template padrão **[!UICONTROL Local
 
 ![](assets/mkg_dist_local_op_creation.png)
 
-Nomeie seu template de campanha e preencha os campos disponíveis.
+Nomeie seu modelo de campanha e preencha os campos disponíveis.
 
 ![](assets/mkg_dist_local_op_creation1.png)
 
@@ -53,7 +52,7 @@ Na guia **Marketing distribuído**, você pode escolher o tipo de interface da W
 
 A interface da web corresponde a um formulário a ser preenchido pela entidade local ao solicitar a campanha.
 
-Selecione o tipo de interface da web a ser aplicada às campanhas criadas a partir do template:
+Selecione o tipo de interface da web a ser aplicada às campanhas criadas a partir do modelo:
 
 ![](assets/mkt_distr_1.png)
 
@@ -63,11 +62,11 @@ Há quatro tipos de interfaces da web disponíveis:
 
   ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** : a entidade local tem acesso a um formulário web onde, dependendo do template usado, podem editar o conteúdo, o público-alvo e o tamanho máximo, bem como datas de criação e extração usando campos de personalização. A entidade local pode avaliar o público-alvo e pré-visualizar o conteúdo desse formulário web.
+* **[!UICONTROL By form]** : a entidade local tem acesso a um formulário web onde, dependendo do modelo usado, podem editar o conteúdo, o público-alvo e o tamanho máximo, bem como datas de criação e extração usando campos de personalização. A entidade local pode avaliar o público-alvo e pré-visualizar o conteúdo desse formulário web.
 
   ![](assets/mkt_distr_8.png)
 
-  O formulário oferecido é especificado em um aplicativo web que deve ser selecionado em uma lista suspensa no campo **[!UICONTROL web Interface]** no link do template **[!UICONTROL Advanced campaign settings...]**. Consulte [Criar uma campanha local (por formulário)](examples.md#creating-a-local-campaign--by-form-).
+  O formulário oferecido é especificado em um aplicativo web que deve ser selecionado em uma lista suspensa no campo **[!UICONTROL web Interface]** no link do modelo **[!UICONTROL Advanced campaign settings...]**. Consulte [Criar uma campanha local (por formulário)](examples.md#creating-a-local-campaign--by-form-).
 
   >[!NOTE]
   >
@@ -111,7 +110,7 @@ Você pode permitir que operadores de entidades locais vinculem documentos (arqu
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
-Ao solicitar um pacote de campanha, o formulário sugere vincular quantos documentos forem indicados no campo correspondente no template.
+Ao solicitar um pacote de campanha, o formulário sugere vincular quantos documentos forem indicados no campo correspondente no modelo.
 
 ![](assets/s_advuser_mkg_dist_add_docs.png)
 
@@ -151,17 +150,17 @@ Localize o HTML da sua entrega. Por exemplo, no campo **[!UICONTROL Delivery > C
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-Salve seu template de campanha. Agora você pode usá-lo na visualização **[!UICONTROL Campaign packages]** na guia **[!UICONTROL Campaigns]** clicando no botão **[!UICONTROL Create]**.
+Salve seu modelo de campanha. Agora você pode usá-lo na visualização **[!UICONTROL Campaign packages]** na guia **[!UICONTROL Campaigns]** clicando no botão **[!UICONTROL Create]**.
 
 ![](assets/mkt_distr_9.png)
 
 >[!NOTE]
 >
->Os templates de campanha e suas configurações gerais estão detalhados em [Templates do Campaign](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Os modelos de campanha e suas configurações gerais estão detalhados em [Modelos do Campaign](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ## Criação do pacote de campanha {#creating-the-campaign-package}
 
-Para que o template de campanha fique disponível para entidades locais, ele precisa ser adicionado à lista. Para fazer isso, a agência central precisa criar um novo pacote.
+Para que o modelo de campanha fique disponível para entidades locais, ele precisa ser adicionado à lista. Para fazer isso, a agência central precisa criar um novo pacote.
 
 Siga as etapas abaixo:
 
@@ -170,11 +169,11 @@ Siga as etapas abaixo:
 
    ![](assets/mkg_dist_add_an_entry.png)
 
-1. A seção acima da janela permite selecionar o template do pacote de campanha especificado [anteriormente](#creating-a-local-campaign-template).
+1. A seção acima da janela permite selecionar o modelo do pacote de campanha especificado [anteriormente](#creating-a-local-campaign-template) .
 
-   Por padrão, o template **[!UICONTROL New local campaign package (localEmpty)]** é usado para campanhas locais.
+   Por padrão, o modelo **[!UICONTROL New local campaign package (localEmpty)]** é usado para campanhas locais.
 
-1. Especifique o rótulo, a pasta e a programação de execução do pacote de campanha.
+1. Especifique o rótulo, a pasta e o cronograma de execução do pacote de campanha.
 
 ### Datas {#dates}
 

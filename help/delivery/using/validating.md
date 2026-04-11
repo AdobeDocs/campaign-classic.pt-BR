@@ -5,10 +5,9 @@ description: Validando
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Direct Mail
 hide: true
-hidefromtoc: true
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 100%
 
@@ -26,7 +25,7 @@ O arquivo de output de uma entrega de correspondência direta é gerado durante 
 >
 >A fase de análise é detalhada em [Análise de entrega](steps-validating-the-delivery.md#analyzing-the-delivery).
 
-Durante a fase de análise, o arquivo é gerado, mas as informações relativas aos destinatários (ou seja, logs da entrega) não são atualizadas. Assim, você pode cancelar esse trabalho sem correr nenhum risco.
+Durante a fase de análise, o arquivo é gerado, mas as informações relativas aos destinatários (ou seja, logs da entrega) não são atualizadas. Assim, você pode cancelar esse processo sem correr nenhum risco.
 
 Verifique o resultado da análise e o conteúdo do arquivo de output antes de clicar em **[!UICONTROL Confirm delivery]**. Uma mensagem de confirmação permite iniciar a entrega.
 

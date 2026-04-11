@@ -6,10 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Personalization, Multilingual Messages
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 100%
 
@@ -19,7 +18,7 @@ ht-degree: 100%
 
 Ao configurar campos de conteúdo condicional, você pode criar personalização dinâmica com base no perfil do destinatário, por exemplo. Blocos de texto e/ou imagens são substituídos quando uma determinada condição é atendida.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#conditionnal-content-video)
+![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#conditionnal-content-video)
 
 
 ## Usar condições em um email {#using-conditions-in-an-email}
@@ -111,7 +110,7 @@ Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo ser�
 
 ## Tutorial em vídeo {#conditionnal-content-video}
 
-Saiba como adicionar conteúdo condicional a uma entrega no exemplo de um informativo multilíngue.
+Saiba como adicionar conteúdo condicional a uma entrega no caso de um informativo multilíngue.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31844?captions=por_br&quality=12)
 

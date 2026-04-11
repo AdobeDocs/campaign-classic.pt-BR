@@ -4,10 +4,9 @@ title: Enviar alertas personalizados aos operadores
 description: Saiba como enviar alertas personalizados aos operadores
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
 
@@ -19,12 +18,12 @@ ht-degree: 100%
 
 Neste exemplo, queremos enviar um alerta para um operador que conterá os nomes dos perfis que abriram um boletim informativo, mas não clicaram no link que ele continha.
 
-Os campos de nome e sobrenome dos perfis são vinculados à targeting dimension **[!UICONTROL Recipients]**, enquanto a atividade **[!UICONTROL Alert]** é vinculada à targeting dimension **[!UICONTROL Operator]**. Como resultado, não há nenhum campo disponível entre as duas dimensões de target para executar uma reconciliação e recuperar os campos de nome e sobrenome e exibi-los na atividade Alert.
+Os campos de nome e sobrenome dos perfis são vinculados à dimensão de direcionamento **[!UICONTROL Recipients]**, enquanto a atividade **[!UICONTROL Alert]** é vinculada à dimensão de direcionamento **[!UICONTROL Operator]**. Como resultado, não há nenhum campo disponível entre as duas dimensões de direcionamento para executar uma reconciliação e recuperar os campos de nome e sobrenome e exibi-los na atividade Alert.
 
-O processo é criar um workflow como abaixo:
+O processo é criar um fluxo de trabalho como abaixo:
 
 1. Use uma atividade **[!UICONTROL Query]** para direcionar dados.
-1. Adicione uma atividade **[!UICONTROL JavaScript code]** no workflow para salvar o formulário de preenchimento da consulta à variável de instância.
+1. Adicione uma atividade **[!UICONTROL JavaScript code]** no fluxo de trabalho para salvar o formulário de preenchimento da consulta à variável de instância.
 1. Utilize uma atividade **[!UICONTROL Test]** para verificar a contagem de população.
 1. Use uma atividade **[!UICONTROL Alert]** para enviar um alerta para um operador, dependendo do resultado da atividade **[!UICONTROL Test]**.
 
@@ -46,9 +45,9 @@ var query = xtk.queryDef.create(
   var items = query.ExecuteQuery();
 ```
 
-Verifique se o código Javascript corresponde às suas informações de workflow:
+Verifique se o código Javascript corresponde às suas informações de fluxo de trabalho:
 
-* A tag **[!UICONTROL queryDef schema]** deve corresponder ao nome da targeting dimension usada na atividade de consulta.
+* A tag **[!UICONTROL queryDef schema]** deve corresponder ao nome da dimensão de direcionamento usada na atividade de consulta.
 * A tag **[!UICONTROL node expr]** deve corresponder ao nome dos campos que você deseja recuperar.
 
 ![](assets/uc_operator_3.png)
@@ -63,7 +62,7 @@ Para recuperar essas informações, siga as etapas abaixo:
 
    ![](assets/uc_operator_5.png)
 
-1. A targeting dimension e os nomes de campos da consulta são exibidos na lista.
+1. A dimensão de direcionamento e os nomes de campos da consulta são exibidos na lista.
 
    ![](assets/uc_operator_6.png)
 

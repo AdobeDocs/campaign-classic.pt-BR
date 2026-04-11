@@ -1,28 +1,27 @@
 ---
 product: campaign
-title: Audiência da campanha de marketing
-description: Saiba como definir a audiência das campanhas de marketing
+title: Público-alvo da campanha de marketing
+description: Saiba como definir o público-alvo das campanhas de marketing
 role: User
 feature: Campaigns, Audiences
 hide: true
-hidefromtoc: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 100%
 
 ---
 
-# Selecionar o público das campanhas {#marketing-campaign-deliveries}
+# Selecionar o público-alvo das campanhas {#marketing-campaign-deliveries}
 
 Em uma campanha de marketing, para cada entrega, é possível definir:
 
-* A audiência – saiba mais em [Criação de audiência em um fluxo de trabalho](#building-the-main-target-in-a-workflow) e [Seleção da população-alvo](#selecting-the-target-population).
+* O público-alvo – saiba mais em [Criação de público-alvo em um fluxo de trabalho](#building-the-main-target-in-a-workflow) e [Seleção da população-alvo](#selecting-the-target-population).
 * Um grupo de controle ‒ saiba mais [nesta seção](#defining-a-control-group).
 * Seed addresses – saiba mais [nesta seção](../../delivery/using/about-seed-addresses.md).
 
-Algumas dessas informações podem ser herdadas do [template de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+Algumas dessas informações podem ser herdadas do [modelo de campanha](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 Para criar o público alvo da entrega, você pode definir critérios de filtragem para os destinatários no banco de dados. Este modo de seleção de destinatário é apresentado [nesta seção](../../delivery/using/steps-defining-the-target-population.md).
 
@@ -40,21 +39,21 @@ Você pode importar uma população para uma lista e, depois, direcionar essa li
 
 ![](assets/s_user_target_group_next.png)
 
-## Criar a audiência em um fluxo de trabalho de campanha {#building-the-main-target-in-a-workflow}
+## Criar o público-alvo em um fluxo de trabalho de campanha {#building-the-main-target-in-a-workflow}
 
 O objetivo principal de uma entrega também pode ser definido no fluxo de trabalho da campanha: este ambiente gráfico permite que você crie um destino usando consultas, testes e operadores: união, desduplicação, compartilhamento etc.
 
 >[!IMPORTANT]
 >
->Você não deve adicionar mais de 28 workflows a uma campanha. Acima desse limite, os workflows adicionais não ficam visíveis na interface e podem gerar erros.
+>Você não deve adicionar mais de 28 fluxos de trabalho a uma campanha. Acima desse limite, os fluxos de trabalho adicionais não ficam visíveis na interface e podem gerar erros.
 
-### Criar o workflow {#creating-a-targeting-workflow}
+### Criar o fluxo de trabalho {#creating-a-targeting-workflow}
 
-A definição de alvos pode ser criada por meio de uma combinação de condições de filtragem em uma sequência gráfica em um workflow. Você pode criar populações e subpopulações que serão direcionadas de acordo com suas necessidades. Para exibir o editor de workflow, clique na guia **[!UICONTROL Targeting and workflows]** no painel de campanha.
+A segmentação pode ser criada por meio de uma combinação de condições de filtragem em uma sequência gráfica em um fluxo de trabalho. Você pode criar populações e subpopulações que serão direcionadas de acordo com suas necessidades. Para exibir o editor de fluxo de trabalho, clique na guia **[!UICONTROL Targeting and workflows]** no painel de campanha.
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
-A população do target é extraída do banco de dados do Adobe Campaign através de uma ou mais queries colocadas em um workflow. Para saber como criar uma query, consulte [esta seção](../../workflow/using/query.md).
+A população do target é extraída do banco de dados do Adobe Campaign através de uma ou mais consultas colocadas em um fluxo de trabalho. Para saber como criar uma consulta, consulte [esta seção](../../workflow/using/query.md).
 
 Você pode iniciar queries e compartilhar populações por meio de caixas como União, Intersecção, Compartilhamento, Exclusão, etc.
 
@@ -62,15 +61,15 @@ Selecione os objetos nas listas à esquerda do espaço de trabalho e vincule a e
 
 ![](assets/s_ncs_user_edit_op_wf_tab_a.png)
 
-No diagrama, vincule as queries de definição de metas e agendamento necessárias para a construção de target no diagrama. Você pode executar o direcionamento enquanto a construção está em andamento para verificar a população extraída do banco de dados.
+No diagrama, vincule as queries de direcionamento e agendamento necessárias para a construção de target no diagrama. Você pode executar o direcionamento enquanto a construção está em andamento para verificar a população extraída do banco de dados.
 
 >[!NOTE]
 >
 >Os exemplos e o procedimento para definir queries são apresentados [nesta seção](../../workflow/using/query.md).
 
-A seção à esquerda do editor contém uma biblioteca de objetos gráficos que representam atividades. A primeira guia contém as atividades de definição de metas e a segunda contém as atividades de controle de fluxo, que são usadas ocasionalmente para coordenar as atividades de definição de metas.
+A seção à esquerda do editor contém uma biblioteca de objetos gráficos que representam atividades. A primeira guia contém as atividades de direcionamento e a segunda contém as atividades de controle de fluxo, que são usadas ocasionalmente para coordenar as atividades de direcionamento.
 
-As funções de execução e formatação do workflow de direcionamento são acessíveis pela barra de ferramentas do editor de diagrama.
+As funções de execução e formatação do fluxo de trabalho de segmentação são acessíveis pela barra de ferramentas do editor de diagrama.
 
 ![](assets/s_user_campaign_segmentation05.png)
 
@@ -78,28 +77,28 @@ As funções de execução e formatação do workflow de direcionamento são ace
 >
 >As atividades disponíveis para criar o diagrama e todos os recursos de exibição e layout estão detalhados no guia [Automating with workflows](../../workflow/using/architecture.md).
 
-Você pode criar vários workflows para construção do target para uma única campanha. Para adicionar um workflow:
+Você pode criar vários fluxos de trabalho de segmentação para uma única campanha. Para adicionar um fluxo de trabalho:
 
-1. Acesse a seção superior esquerda da área de criação do workflow, clique com o botão direito do mouse e clique em **[!UICONTROL Add]**. Você também pode usar o botão **[!UICONTROL New]** localizado acima dessa área.
+1. Acesse a seção superior esquerda da área de criação do fluxo de trabalho, clique com o botão direito do mouse e clique em **[!UICONTROL Add]**. Você também pode usar o botão **[!UICONTROL New]** localizado acima dessa área.
 
    ![](assets/s_ncs_user_add_a_wf.png)
 
-1. Selecione o template **[!UICONTROL New workflow]** e o nome deste workflow.
-1. Clique em **[!UICONTROL OK]** para confirmar a criação do workflow e, em seguida, crie o diagrama para esse workflow.
+1. Selecione o modelo **[!UICONTROL New workflow]** e o nome deste fluxo de trabalho.
+1. Clique em **[!UICONTROL OK]** para confirmar a criação do fluxo de trabalho e, em seguida, crie o diagrama para esse fluxo de trabalho.
 
-### Executar o workflow {#executing-a-workflow}
+### Executar o fluxo de trabalho {#executing-a-workflow}
 
-Os workflows para construção do target podem ser iniciados manualmente por meio do botão **[!UICONTROL Start]** na barra de ferramentas, desde que você tenha os direitos apropriados.
+Os fluxos de trabalho de segmentação podem ser iniciados manualmente por meio do botão **[!UICONTROL Start]** na barra de ferramentas, desde que você tenha os direitos apropriados.
 
 O direcionamento pode ser programado para execução automática de acordo com um agendamento (scheduler) ou um evento (sinal externo, importação de arquivo, etc.).
 
-As ações relacionadas à execução do workflow de definição de metas (inicialização, parada, pausa etc.) são processos **assíncronos** : o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
+As ações relacionadas à execução do fluxo de trabalho de definição de metas (inicialização, parada, pausa etc.) são processos **assíncronos** : o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
 
-Os ícones da barra de ferramentas permitem realizar a ação referente à execução do workflow de direcionamento.
+Os ícones da barra de ferramentas permitem realizar a ação referente à execução do fluxo de trabalho de segmentação.
 
 * Iniciar ou reiniciar
 
-   * O ícone **[!UICONTROL Start]** permite iniciar o workflow para construção do target. Quando você clica nesse ícone, todas as atividades sem uma transição de entrada são ativadas (exceto saltos de ponto de extremidade).
+   * O ícone **[!UICONTROL Start]** permite iniciar o fluxo de trabalho de segmentação. Quando você clica nesse ícone, todas as atividades sem uma transição de entrada são ativadas (exceto saltos de ponto de extremidade).
 
      ![](assets/s_user_segmentation_start.png)
 
@@ -109,7 +108,7 @@ Os ícones da barra de ferramentas permitem realizar a ação referente à execu
 
      O status do processo muda para **[!UICONTROL Started]**.
 
-   * Você pode reiniciar o workflow de definição de metas por meio do ícone de barra de ferramentas apropriado. Esse comando pode ser útil se o ícone **[!UICONTROL Start]** não estiver disponível, por exemplo, quando a interrupção do workflow para construção do target estiver em andamento. Nesse caso, clique no ícone **[!UICONTROL Restart]** para antecipar a reinicialização. O servidor considera a solicitação, como mostra o status:
+   * Você pode reiniciar o fluxo de trabalho de segmentação por meio do ícone de barra de ferramentas apropriado. Esse comando pode ser útil se o ícone **[!UICONTROL Start]** não estiver disponível, por exemplo, quando a interrupção do fluxo de trabalho para construção do target estiver em andamento. Nesse caso, clique no ícone **[!UICONTROL Restart]** para antecipar a reinicialização. O servidor considera a solicitação, como mostra o status:
 
      ![](assets/s_user_segmentation_restart_status.png)
 
@@ -117,7 +116,7 @@ Os ícones da barra de ferramentas permitem realizar a ação referente à execu
 
 * Parar ou pausar
 
-   * Os ícones da barra de ferramentas permitem interromper ou pausar um workflow de direcionamento em andamento.
+   * Os ícones da barra de ferramentas permitem interromper ou pausar um fluxo de trabalho de direcionamento em andamento.
 
      Ao clicar em **[!UICONTROL Pause]**, as operações em andamento **[!UICONTROL are not]** são pausadas, mas nenhuma outra atividade é iniciada até a próxima reinicialização.
 
@@ -127,7 +126,7 @@ Os ícones da barra de ferramentas permitem realizar a ação referente à execu
 
      ![](assets/s_user_segmentation_pause_status.png)
 
-     Você também pode pausar um workflow de direcionamento automaticamente quando a execução atinge uma atividade específica. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o workflow para construção do target deve ser pausado e selecione **[!UICONTROL Enable but do not execute]**.
+     Você também pode pausar um fluxo de trabalho de segmentação automaticamente quando a execução atinge uma atividade específica. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o fluxo de trabalho de segmentação deve ser pausado e selecione **[!UICONTROL Enable but do not execute]**.
 
      ![](assets/s_user_segmentation_donotexecute.png)
 
@@ -137,7 +136,7 @@ Os ícones da barra de ferramentas permitem realizar a ação referente à execu
 
      >[!NOTE]
      >
-     >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de definição de metas.
+     >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de direcionamento.
 
      Clique em **[!UICONTROL Start]** para retomar a execução.
 
@@ -149,7 +148,7 @@ Os ícones da barra de ferramentas permitem realizar a ação referente à execu
 
      ![](assets/s_user_segmentation_stop_status.png)
 
-  Você também pode interromper um workflow de definição de metas automaticamente quando a execução atinge uma atividade. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o workflow para construção do target será interrompido e selecione **[!UICONTROL Do not activate]**.
+  Você também pode interromper um fluxo de trabalho de definição de metas automaticamente quando a execução atinge uma atividade. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o fluxo de trabalho para construção do target será interrompido e selecione **[!UICONTROL Do not activate]**.
 
   ![](assets/s_user_segmentation_donotactivate.png)
 
@@ -159,13 +158,13 @@ Os ícones da barra de ferramentas permitem realizar a ação referente à execu
 
   >[!NOTE]
   >
-  >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de definição de metas.
+  >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de direcionamento.
 
 * Interrupção incondicional
 
-  No Explorer, selecione **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** para acessar e atuar em todos os workflows da campanha.
+  No Explorer, selecione **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** para acessar e atuar em todos os fluxos de trabalho da campanha.
 
-  Você pode interromper o workflow definitivamente clicando no ícone **[!UICONTROL Actions]** e selecionando a interrupção **[!UICONTROL Unconditional]**. Esta ação encerra o fluxo de trabalho da campanha.
+  Você pode interromper o fluxo de trabalho definitivamente clicando no ícone **[!UICONTROL Actions]** e selecionando a interrupção **[!UICONTROL Unconditional]**. Esta ação encerra o fluxo de trabalho da campanha.
 
   ![](assets/s_user_segmentation_stop_unconditional.png)
 
@@ -177,7 +176,7 @@ Os ícones da barra de ferramentas permitem realizar a ação referente à execu
 
 Um grupo de controle é uma população que não receberá a entrega; ele é usado para rastrear o comportamento após a entrega e o impacto da campanha fazendo uma comparação com o comportamento da população do target, que recebeu a entrega.
 
-O grupo de controle pode ser extraído do target principal e/ou vir de um grupo ou query específica.
+O grupo de controle pode ser extraído do target principal e/ou vir de um grupo ou consulta específica.
 
 ### Ativar o grupo de controle para uma campanha {#activating-the-control-group-for-a-campaign}
 
@@ -220,7 +219,7 @@ Você pode extrair destinatários do target principal da entrega. Nesse caso, os
 
 ![](assets/s_ncs_user_extract_from_target_population.png)
 
-Para extrair um grupo de controle, ative o grupo de controle para a campanha ou entrega e selecione uma das seguintes opções: **[!UICONTROL Activate random sampling]** ou **[!UICONTROL Keep only the first records after sorting]**.
+Para extrair um grupo de controle, habilite o grupo de controle para a campanha ou entrega e selecione uma das seguintes opções: **[!UICONTROL Activate random sampling]** ou **[!UICONTROL Keep only the first records after sorting]**.
 
 * **[!UICONTROL Activate random sampling]**: esta opção aplica amostras aleatórias aos destinatários na população direcionada. Se você definir o limite como 100, o grupo de controle será constituído de 100 destinatários selecionados aleatoriamente da população direcionada. A amostragem aleatória depende do mecanismo de banco de dados.
 * **[!UICONTROL Keep only the first records after sorting]**: esta opção permite definir uma limitação baseada em uma ou mais ordens de classificação. Se você selecionar o campo **[!UICONTROL Age]** como um critério de classificação e, em seguida, definir 100 como limite, o grupo de controle será constituído dos 100 destinatários mais jovens. Por exemplo, pode ser interessante definir um grupo de controle que inclua destinatários que façam poucas compras ou destinatários que façam compras frequentes e comparar seu comportamento com os destinatários contatados.
@@ -229,23 +228,23 @@ Clique em **[!UICONTROL Next]** para definir a ordem de classificação (se nece
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Essa configuração é equivalente a uma atividade de compartilhamento no workflow, que permite dividir o target em subconjuntos. O grupo de controle é um desses subconjuntos. Consulte [esta seção](../../workflow/using/architecture.md) para obter mais informações.
+Essa configuração é equivalente a uma atividade de compartilhamento no fluxo de trabalho, que permite dividir o target em subconjuntos. O grupo de controle é um desses subconjuntos. Consulte [esta seção](../../workflow/using/architecture.md) para obter mais informações.
 
 ### Usar uma nova população como grupo de controle {#adding-a-population}
 
-Você pode definir uma nova população a ser usada como um grupo de controle. Essa população pode vir de um grupo de destinatários ou você pode criá-la por meio de uma query específica.
+Você pode definir uma nova população a ser usada como um grupo de controle. Essa população pode vir de um grupo de destinatários ou você pode criá-la por meio de uma consulta específica.
 
 ![](assets/s_ncs_user_add_to_target_population.png)
 
 >[!NOTE]
 >
->O editor de query do Adobe Campaign é apresentado [nesta seção](../../workflow/using/query.md).
+>O editor de consultas do Adobe Campaign é apresentado [nesta seção](../../workflow/using/query.md).
 
 
 #### Tutorial em vídeo {#create-email-video}
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/31837?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/31837?captions=por_br&quality=12)
 
 Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

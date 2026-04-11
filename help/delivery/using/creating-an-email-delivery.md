@@ -1,20 +1,19 @@
 ---
 product: campaign
-title: Criar uma entrega por email
+title: Crie uma entrega por email
 description: Saiba como criar uma entrega por email
 feature: Email
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
 
 ---
 
-# Criar uma entrega por email{#creating-an-email-delivery}
+# Crie uma entrega por email{#creating-an-email-delivery}
 
 Para criar uma nova entrega de email, siga as etapas abaixo:
 

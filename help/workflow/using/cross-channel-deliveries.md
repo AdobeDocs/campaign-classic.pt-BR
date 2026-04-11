@@ -4,10 +4,9 @@ title: Entregas entre canais
 description: Saiba mais sobre entregas entre canais
 feature: Workflows, Channels Activity
 hide: true
-hidefromtoc: true
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 100%
 
@@ -35,8 +34,8 @@ Você pode especificar um target para o upstream de entrega de fluxo de trabalho
 No exemplo abaixo, vamos criar um fluxo de trabalho para enviar um email ou SMS a assinantes de notificação por push e, em seguida, uma notificação por push uma semana depois. Para fazer isso:
 
 1. Crie uma campanha.
-1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma **[!UICONTROL Query]** ao workflow.
-1. Configure seu query. Por exemplo, aqui selecionamos os destinatários que assinaram notificações por push como o target dimension.
+1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma **[!UICONTROL Query]** ao fluxo de trabalho.
+1. Configure a consulta. Por exemplo, aqui selecionamos os destinatários que assinaram notificações por push como o target dimension.
 
    >[!NOTE]
    >
@@ -44,11 +43,11 @@ No exemplo abaixo, vamos criar um fluxo de trabalho para enviar um email ou SMS 
 
    ![](assets/cross_channel_delivery_1.png)
 
-1. Adicione as condições de filtro ao seu query. Nesse caso, selecionamos destinatários com um número de celular ou endereço de email.
+1. Adicione as condições de filtro à sua consulta. Nesse caso, selecionamos destinatários com um número de celular ou endereço de email.
 
    ![](assets/cross_channel_delivery_2.png)
 
-1. Adicione uma atividade **[!UICONTROL Split]** ao workflow para dividir destinatários com um número de celular e aqueles com um endereço de email.
+1. Adicione uma atividade **[!UICONTROL Split]** ao fluxo de trabalho para dividir destinatários com um número de celular e aqueles com um endereço de email.
 1. Na guia **[!UICONTROL Delivery]**, selecione um workflow para cada target.
 
    Crie a sua entrega como feito no assistente de entrega clássico, clicando duas vezes na atividade de entrega no seu fluxo de trabalho. Para obter mais informações, consulte esta [página](../../delivery/using/about-email-channel.md).

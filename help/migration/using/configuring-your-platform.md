@@ -7,9 +7,8 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
-hidefromtoc: true
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 3%
@@ -84,7 +83,7 @@ Depois de executar **postupgrade**, verifique e configure os seguintes elementos
 
   O bloco de personalização da mirror page foi alterado com a v6.x. Essa nova versão melhora a segurança ao acessar essas páginas.
 
-  Se você usou o bloco de personalização v5 em suas mensagens, a exibição da mirror page falhará. O Adobe recomenda usar o novo bloco de personalização ao inserir uma mirror page em suas mensagens.
+  Se você usou o bloco de personalização v5 em suas mensagens, a exibição da mirror page falhará. A Adobe recomenda usar o novo bloco de personalização ao inserir uma mirror page em suas mensagens.
 
   No entanto, como solução temporária (e como as mirror pages ainda estão ativas), você pode voltar para o bloco de personalização antigo para evitar esse problema alterando a opção **[!UICONTROL XtkAcceptOldPasswords]** e definindo-o como **[!UICONTROL 1]**. Isso não afetará o uso do novo bloco de personalização da v6.x.
 

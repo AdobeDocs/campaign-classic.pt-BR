@@ -5,10 +5,9 @@ description: Saiba mais sobre documentos de campanha de marketing e descrições
 role: User
 feature: Campaigns
 hide: true
-hidefromtoc: true
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 100%
 
@@ -34,7 +33,7 @@ Os documentos podem ser associados no nível da campanha (documentos contextuais
 
 A guia **[!UICONTROL Documents]** contém:
 
-* A lista de todos os documentos necessários para o conteúdo (template, imagens etc.) que pode ser baixado localmente pelos operadores do Adobe Campaign com direitos adequados,
+* A lista de todos os documentos necessários para o conteúdo (modelo, imagens etc.) que pode ser baixado localmente pelos operadores do Adobe Campaign com direitos adequados,
 * Documentos contendo informações para o roteador, se houver.
 
 Os documentos são vinculados ao programa ou à campanha através da guia **[!UICONTROL Edit > Documents]**.
@@ -73,7 +72,7 @@ Para criar um outline, clique na guia **[!UICONTROL Delivery outlines]** da camp
 
 >[!NOTE]
 >
->Se essa guia não estiver presente, significa que esse recurso não está disponível para esta campanha. Consulte a configuração do template de campanha.
+>Se essa guia não estiver presente, significa que esse recurso não está disponível para esta campanha. Consulte a configuração do modelo de campanha.
 >   
 >Para saber mais sobre modelos, consulte [esta seção](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
@@ -121,7 +120,7 @@ A guia **[!UICONTROL Summary]** da entrega também exibe essas informações:
 
 ### Resultado da extração {#extraction-result}
 
-No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no template de exportação associado ao provedor de serviços.
+No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no modelo de exportação associado ao provedor de serviços.
 
 No seguinte exemplo, o rótulo, custo estimado e descrição do outline associado à entrega serão adicionados no arquivo de extração.
 

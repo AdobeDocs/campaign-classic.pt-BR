@@ -5,10 +5,9 @@ description: Provedores, estoques e orçamentos
 role: User
 feature: Budget Management, Campaigns
 hide: true
-hidefromtoc: true
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 100%
 
@@ -16,21 +15,21 @@ ht-degree: 100%
 
 # Provedores, estoques e orçamentos{#providers-stocks-and-budgets}
 
-O Adobe Campaign permite que você defina provedores de serviços que estarão envolvidos nas tarefas realizadas nas campanhas. As informações relacionadas aos provedores de serviços e as estruturas de custo relacionadas são definidas pelo administrador do Adobe Campaign a partir da visualização principal. O provedor de serviços é referenciado a partir da entrega e suas estruturas de custo permitem o cálculo de custos associados a essa entrega, bem como o gerenciamento do estoque.
+O Adobe Campaign permite que você defina provedores de serviços que estarão envolvidos nos processos realizados nas campanhas. As informações relacionadas aos provedores de serviços e as estruturas de custo relacionadas são definidas pelo administrador do Adobe Campaign a partir da visualização principal. O provedor de serviços é referenciado a partir da entrega e suas estruturas de custo permitem o cálculo de custos associados a essa entrega, bem como o gerenciamento do estoque.
 
 ## Criação de provedores de serviços e estruturas de custo {#creating-service-providers-and-their-cost-structures}
 
-Cada provedor de serviços é salvo em um arquivo com detalhes de contato, modelos de serviço e tarefas relacionadas.
+Cada provedor de serviços é salvo em um arquivo com detalhes de contato, modelos de serviço e processos relacionados.
 
 Os provedores de serviços são configurados no nó **[!UICONTROL Administration > Campaign management]** da árvore.
 
-As tarefas realizadas durante as entregas são realizadas por provedores de serviços, especialmente para mala direta e canais móveis. Esses provedores de serviços podem, por exemplo, estar envolvidos na impressão ou distribuição de mensagens. Essas tarefas envolvem configurações e custos que são específicos para cada provedor de serviços. A configuração dos provedores de serviços envolve quatro estágios:
+Os processos realizados durante as entregas são realizados por provedores de serviços, especialmente para correspondência direta e canais móveis. Esses provedores de serviços podem, por exemplo, estar envolvidos na impressão ou distribuição de mensagens. Esses processos envolvem configurações e custos que são específicos para cada provedor de serviços. A configuração dos provedores de serviços envolve quatro estágios:
 
 1. Criação de um provedor de serviços no Adobe Campaign
 
    Consulte [Adicionar um provedor de serviço](#adding-a-service-provider).
 
-1. Definindo categorias de custo e estruturas de templates de serviço associados
+1. Definindo categorias de custo e estruturas de modelos de serviço associados
 
    Consulte [Definição de categorias de custo](#defining-cost-categories) e [Definição da estrutura de custo](#defining-the-cost-structure).
 
@@ -57,15 +56,15 @@ Você pode criar quantos provedores de serviços forem necessários para suas en
 
 #### Definição de categorias de custo {#defining-cost-categories}
 
-Você deve associar templates de serviço a cada provedor de serviços. Nesses templates, você deve primeiro identificar as categorias de custo e se necessário o estoque em questão. Em seguida, você deve criar as regras de cálculo de custo para cada categoria, por meio das estruturas de custo.
+Você deve associar modelos de serviço a cada provedor de serviços. Nesses modelos, você deve primeiro identificar as categorias de custo e se necessário o estoque em questão. Em seguida, você deve criar as regras de cálculo de custo para cada categoria, por meio das estruturas de custo.
 
 >[!NOTE]
 >
 >Para obter mais informações, consulte [Definição da estrutura de custo](#defining-the-cost-structure).
 
-Uma categoria de custo é uma entidade que contém um conjunto de custos qualificados para um tipo de entrega (e-mail, mala direta, etc.) ou para uma tarefa. As categorias de custo são agrupadas nos templates de serviços associados aos provedores de serviço. Cada provedor de serviço pode referenciar um ou mais templates de serviço.
+Uma categoria de custo é uma entidade que contém um conjunto de custos qualificados para um tipo de entrega (e-mail, correspondência direta, etc.) ou para uma tarefa. As categorias de custo são agrupadas nos modelos de serviços associados aos provedores de serviço. Cada provedor de serviço pode referenciar um ou mais modelos de serviço.
 
-Para criar um template de serviço e definir seu conteúdo, aplique as seguintes etapas:
+Para criar um modelo de serviço e definir seu conteúdo, aplique as seguintes etapas:
 
 1. Na guia **[!UICONTROL Services]** do provedor de serviço, clique no botão **[!UICONTROL Add]** e nomeie o modelo de serviço.
 
@@ -150,15 +149,15 @@ Para fazer isso, clique na guia **[!UICONTROL Processes]** para configurar o env
 
   ![](assets/s_ncs_user_supplier_node_02a.png)
 
-* A seção **[!UICONTROL Notification email]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o template usado para criar a mensagem de alerta e o grupo de destinatários.
+* A seção **[!UICONTROL Notification email]** permite especificar o modelo para notificar os provedores de serviço depois que os arquivos forem enviados. Selecione o modelo usado para criar a mensagem de alerta e o grupo de destinatários.
 
   Por padrão, os modelos de entrega para mensagens de notificação são salvos no nó **[!UICONTROL Administration > Campaign management > Technical delivery templates]**, que é acessível na visualização geral.
 
-* A seção **[!UICONTROL Post-processing]** permite que você selecione o workflow a ser iniciado após a aprovação da entrega. Se um template de workflow for inserido, uma instância de workflow será criada automaticamente e será iniciada assim que a aprovação entrar em vigor. Esse workflow pode enviar o arquivo de extração para um provedor de serviços externos para processamento, por exemplo.
+* A seção **[!UICONTROL Post-processing]** permite que você selecione o fluxo de trabalho a ser iniciado após a aprovação da entrega. Se um modelo de fluxo de trabalho for inserido, uma instância de fluxo de trabalho será criada automaticamente e será iniciada assim que a aprovação entrar em vigor. Esse fluxo de trabalho pode enviar o arquivo de extração para um provedor de serviços externos para processamento, por exemplo.
 
 ### Associação de um serviço a uma campanha {#associating-a-service-with-a-campaign}
 
-Os serviços estão associados a campanhas via entregas ou tarefas. Os provedores de serviço estão vinculados a templates de entrega para oferecer seus serviços nas entregas criadas por meio desse template.
+Os serviços estão associados a campanhas via entregas ou tarefas. Os provedores de serviço estão vinculados a modelos de entrega para oferecer seus serviços nas entregas criadas por meio desse modelo.
 
 Quando um serviço é selecionado, as categorias de custo correspondentes ao tipo de entrega (correspondência direta, email, etc.) são automaticamente indicadas na tabela central juntamente com as opções de processamento definidas.
 
@@ -166,7 +165,7 @@ Quando um serviço é selecionado, as categorias de custo correspondentes ao tip
 >
 >Se nenhuma categoria de custo for exibida quando um serviço for selecionado, isso significa que nenhuma categoria de custo foi definida para esse tipo de processo. Por exemplo, para uma entrega de email, se nenhuma categoria de custo do tipo **[!UICONTROL Email]** tiver sido definida, nenhuma categoria será exibida, e a seleção do serviço não terá efeito.
 
-* Para uma entrega de mala direta, você pode selecionar o serviço na janela de configuração.
+* Para uma entrega de correspondência direta, você pode selecionar o serviço na janela de configuração.
 
   ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
 

@@ -5,9 +5,8 @@ description: Saiba como conectar o Campaign e o Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 hide: true
-hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 100%
 
@@ -48,7 +47,7 @@ No Campaign Classic:
 >[!CAUTION]
 > Ao conectar o Adobe Campaign com o Microsoft Dynamics, não é possível:
 > * Instalar plug-ins que podem alterar o comportamento do CRM, o que pode levar a problemas de compatibilidade com o Adobe Campaign
-> * Selecionar várias listas discriminadas
+> * Selecionar várias enumerações
 
 ## Configurar o Microsoft Dynamics CRM {#config-crm-microsoft}
 
@@ -134,7 +133,7 @@ O usuário do aplicativo é o usuário que o aplicativo registrado acima usará.
 
 1. No [Microsoft Azure](https://portal.azure.com), clique em **Aplicativo admin**.
 1. Vá para **Usuários > Usuários ativos** e clique no usuário recém-criado.
-1. Clique em **Editar licenças de produto** e selecione o **Plano de Envolvimento do Cliente do Dynamics 365**.
+1. Clique em **Editar licenças de produto** e selecione o **Plano de Engajamento do Cliente do Dynamics 365**.
 1. Clique em **Fechar**.
 
 **Etapa 3**: criar um usuário do aplicativo no Dynamics CRM
@@ -171,7 +170,7 @@ Para conectar o Microsoft Dynamics 365 e o Campaign, é necessário criar e conf
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
-1. Clique no link **[!UICONTROL Microsoft CRM configuration assistant...]**. O Adobe Campaign detecta automaticamente as tabelas do template de dados do Microsoft Dynamics.
+1. Clique no link **[!UICONTROL Microsoft CRM configuration assistant...]**. O Adobe Campaign detecta automaticamente as tabelas do modelo de dados do Microsoft Dynamics.
 
    ![](assets/crm_connectors_msdynamics_02.png)
 
@@ -211,7 +210,7 @@ Os tipos de atributos suportados/não suportados do Microsoft Dynamics 365 estã
 | Tipos básicos: booleano, datetime, decimal, float, duplo, integer, bigint, string | Sim |
 | Dinheiro (como duplo) | Sim |
 | memo, entityname, primarykey, uniqueidentifier (como strings) | Sim |
-| Status, lista de opções (armazenamos os valores possíveis na lista discriminada), estado (string) | Sim |
+| Status, lista de opções (armazenamos os valores possíveis nas enumerações), estado (string) | Sim |
 | proprietário (como string) | Sim |
 | Pesquisa (somente pesquisas de referência de entidade única) | Sim |
 | cliente | Não |
