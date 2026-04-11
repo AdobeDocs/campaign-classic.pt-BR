@@ -54,6 +54,6 @@ Se desejar impedir a execução de uma entrega recorrente, cancele completamente
 
 Este vídeo explica como configurar uma entrega recorrente e uma atividade de scheduler.
 
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31846?captions=por_br&quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
