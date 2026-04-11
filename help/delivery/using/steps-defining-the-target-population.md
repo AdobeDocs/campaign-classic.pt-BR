@@ -5,10 +5,9 @@ description: Saiba como definir a população alvo
 feature: Audiences, Proofs
 role: User
 hide: true
-hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1730'
 ht-degree: 100%
 
@@ -163,7 +162,7 @@ As seguintes opções estão disponíveis:
 
 A prova é uma mensagem especial que permite testar uma entrega antes de enviá-la para o target principal. Os destinatários de prova são responsáveis pela aprovação do formulário e do conteúdo da mensagem.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#seeds-and-proofs-video)
 
 
 Para selecionar o target das provas, siga as etapas abaixo:
@@ -251,6 +250,6 @@ Esses mappings são os seguintes:
 
 Este vídeo mostra como adicionar seeds e provas a um email existente e o procedimento para o seu envio.
 
->[!VIDEO](https://video.tv.adobe.com/v/35801?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

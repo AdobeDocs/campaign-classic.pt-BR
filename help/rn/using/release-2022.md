@@ -6,10 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 hide: true
-hidefromtoc: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
-source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '2099'
 ht-degree: 100%
 
@@ -163,7 +162,7 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 * Correção de um problema que poderia exibir mensagens de erro de script ao tentar criar e configurar relatórios (NEO-38393).
 * Correção de um problema que causava falha no fluxo de trabalho de rastreamento do Oracle devido a grandes volumes de indicadores de entrega sendo atualizados simultaneamente (NEO-39653).
 * Correção de um problema que impedia o envio de uma entrega devido a um erro ao executar uma tipologia de controle (NEO-39833).
-* Correção de um problema nas landing pages que impedia que caracteres especiais fossem exibidos corretamente nas páginas HTML das respostas de pesquisas online (NEO-39438).
+* Correção de um problema nas páginas de destino que impedia que caracteres especiais fossem exibidos corretamente nas páginas HTML das respostas de pesquisas online (NEO-39438).
 * Correção de um problema que impedia o funcionamento do console do Campaign Classic ao clicar com o botão direito do mouse em qualquer uma das pastas da guia Explorer (NEO-38884).
 * Correção de um erro ao usar um modelo de entrega criado anteriormente e vinculado a uma conta do Web Analytics em uma nova entrega, no qual a configuração do Web Analytics ficava ausente. (NEO-28666)
 * Correção de um problema que podia impedir a pré-visualização de entregas de dispositivos móveis que foram anexados a um fluxo de trabalho.
@@ -173,7 +172,7 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 * Correção de um problema que podia impedir os usuários de fazerem logon no console devido a um problema de configuração de proxy. (NEO-38388)
 * Correção de um problema de regressão que impedia o funcionamento correto da funcionalidade **Limpar pasta**. (NEO-37459)
 * Correção de um problema que resultava em um erro de solicitação incorreta ao usar campos de dados XML com a conta do Microsoft Dynamics CRM se o XML em questão contivesse aspas duplas.
-* Correção de um problema que ocasionava o registro incorreto de problemas de tempo limite de rede como interrupções de script, em vez de erros de rede. Esse problema ocorria no caso de solicitações HTTP que eram incluídas em atividades JavaScript. (NEO-38079)
+* Correção de um problema que ocasionava o registro incorreto de problemas de tempo-limite de rede como interrupções de script, em vez de erros de rede. Esse problema ocorria no caso de solicitações HTTP que eram incluídas em atividades JavaScript. (NEO-38079)
 * Correção de um problema que retornava resultados incorretos ao executar as funções HoursDiff e MinutesDiff do Amazon Redshift para tentar extrair o componente de tempo.(NEO-31673)
 * Correção de um problema que impedia o carregamento do relatório **Hot Clicks** em entregas desde o build 9182. (NEO-28900)
 * Correção de um erro que substituía o símbolo &amp; em um URL pela entidade de caractere de referência (`&amp;`), impedindo usuários de acessarem o URL vinculado a um código QR. (NEO-28621)

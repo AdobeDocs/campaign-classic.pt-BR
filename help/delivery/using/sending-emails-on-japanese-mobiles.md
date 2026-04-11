@@ -6,10 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Email, Email Design
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 100%
 
@@ -89,9 +88,9 @@ Para enviar um email para destinatários com formatos de email japoneses com o C
 
 ### Criar uma entrega específica para formatos japoneses {#designing-a-specific-delivery-for-japanese-formats}
 
-Você pode criar um workflow que contenha duas entregas: uma para ser lida em um celular japonês e outra para destinatários com formato do email padrão.
+Você pode criar um fluxo de trabalho que contenha duas entregas: uma para ser lida em um celular japonês e outra para destinatários com formato do email padrão.
 
-Para fazer isso, use a atividade **[!UICONTROL Split]** no workflow e defina os formatos de email japonês (Deco-mail, Decoration Mail e Decore Mail) como condições de filtragem.
+Para fazer isso, use a atividade **[!UICONTROL Split]** no fluxo de trabalho e defina os formatos de email japonês (Deco-mail, Decoration Mail e Decore Mail) como condições de filtragem.
 
 ![](assets/deco-mail_08.png)
 

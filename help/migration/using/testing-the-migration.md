@@ -7,9 +7,8 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
-hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 0%
@@ -24,7 +23,7 @@ ht-degree: 0%
 
 Dependendo da sua configuração, há várias maneiras de realizar testes de migração.
 
-Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migração. Os ambientes Adobe Campaign estão sujeitos à licença: verifique seu contrato de licença ou entre em contato com o representante da Adobe.
+Você deve ter um ambiente de teste/desenvolvimento para realizar testes de migração. Os ambientes do Adobe Campaign estão sujeitos à licença: verifique seu contrato de licença ou entre em contato com o representante da Adobe.
 
 1. Interrompa todos os desenvolvimentos em andamento e transfira-os para o ambiente de produção.
 1. Faça um backup do banco de dados do ambiente de desenvolvimento.

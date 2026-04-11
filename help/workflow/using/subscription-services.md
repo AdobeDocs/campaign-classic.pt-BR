@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: Serviços de assinatura
-description: Saiba mais sobre a atividade do workflow de serviços de assinatura
+description: Saiba mais sobre a atividade de fluxo de trabalho Serviços de assinatura
 feature: Workflows, Targeting Activity, Subscription Services Activity
 hide: true
-hidefromtoc: true
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 100%
 
@@ -26,16 +25,16 @@ Para configurá-la, edite a atividade e insira seu rótulo, então selecione a a
 1. Insira o rótulo da atividade.
 1. Selecione **[!UICONTROL Generate an outbound transition]** para criar uma transição no final da execução.
 
-   Geralmente, a subscrição de um target em um serviço de informações marca o final do workflow para construção do target, por isso a opção não está ativada por padrão.
+   Geralmente, a assinatura de um segmento em um serviço de informações marca o final do fluxo de trabalho de segmentação, por isso a opção não está ativada por padrão.
 
 1. Clique em **[!UICONTROL Subscription]** ou em **[!UICONTROL Unsubscription]** para assinar ou cancelar a subscrição da população especificada para ou a partir do serviço de informações selecionado.
 1. Selecione **[!UICONTROL Send a confirmation message]** para notificar os destinatários que a subscrição de um serviço foi realizada ou cancelada.
 
-   O conteúdo dessa mensagem é definido no template de entrega associado ao serviço de assinatura. Para obter mais informações, consulte esta [seção](../../delivery/using/managing-subscriptions.md).
+   O conteúdo dessa mensagem é definido no modelo de entrega associado ao serviço de assinatura. Para obter mais informações, consulte esta [seção](../../delivery/using/managing-subscriptions.md).
 
 ## Exemplo: inscrever uma lista de destinatários em um boletim informativo {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
-Em uma única operação, o workflow a seguir visa fazer uma lista de destinatários qualificados para um boletim informativo, destinado a pessoas que trabalham em Paris, a fim de subscrevê-las.
+Em uma única operação, o fluxo de trabalho a seguir visa fazer uma lista de destinatários qualificados para um boletim informativo, destinado a pessoas que trabalham em Paris, para que assinem.
 
 Para fazer isso, também é necessário excluir os destinatários que já estão subscritos.
 
@@ -47,7 +46,7 @@ Para fazer isso, também é necessário excluir os destinatários que já estão
 
 1. Adicione as três queries a seguir:
 
-   * Uma voltada a destinatários com idade entre 18 e 60 anos.
+   * Uma direcionada a destinatários com idade entre 18 e 60 anos.
    * Uma segunda direcionada a destinatários que residem em Paris.
    * Uma terceira direcionada a destinatários que não se inscreveram no boletim informativo.
 
@@ -59,15 +58,15 @@ Para fazer isso, também é necessário excluir os destinatários que já estão
    Se desejar, é possível informar os destinatários sobre a subscrição do boletim informativo marcando a caixa **[!UICONTROL Send a confirmation message]**.
 
 1. Selecione a pasta em que o boletim informativo está e em seguida, selecione o boletim informativo na lista exibida.
-1. Deixe a opção **[!UICONTROL Generate outbound transition]** desmarcada para que esta atividade marque o final do workflow e clique em **[!UICONTROL Ok]**.
+1. Deixe a opção **[!UICONTROL Generate outbound transition]** desmarcada para que esta atividade marque o final do fluxo de trabalho e clique em **[!UICONTROL Ok]**.
 
-Durante a execução do workflow, os destinatários que correspondem a todas as três queries são adicionados à lista e subscritos ao boletim informativo.
+Durante a execução do fluxo de trabalho, os destinatários que correspondem a todas as três queries são adicionados à lista e subscritos ao boletim informativo.
 
 É possível verificar se a subscrição foi bem-sucedida acessando a guia **[!UICONTROL Subscription]** dos destinatários.
 
 ## Parâmetros de entrada {#input-parameters}
 
 * tableName
-* schema
+* esquema
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.

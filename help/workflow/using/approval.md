@@ -4,10 +4,9 @@ title: Aprovação
 description: Aprovação
 feature: Workflows, Approvals
 hide: true
-hidefromtoc: true
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
 
@@ -33,7 +32,7 @@ Se necessário, é possível atribuir a tarefa de aprovação a um único operad
   >
   >Somente o operador escolhido será autorizado a aprovar a tarefa.
 
-* É possível definir uma query para filtrar operadores de aprovação. Para fazer isso, selecione o valor **[!UICONTROL Filter]** no campo **[!UICONTROL Assignment type]** e clique no link **[!UICONTROL Advanced parameters...]** para definir as condições do filtro, conforme mostrado no exemplo a seguir:
+* É possível definir uma consulta para filtrar operadores de aprovação. Para fazer isso, selecione o valor **[!UICONTROL Filter]** no campo **[!UICONTROL Assignment type]** e clique no link **[!UICONTROL Advanced parameters...]** para definir as condições do filtro, conforme mostrado no exemplo a seguir:
 
   ![](assets/s_advuser_validation_box_filter.png)
 
@@ -41,7 +40,7 @@ No caso de aprovação única, a transição correspondente à escolha do operad
 
 No caso de várias aprovações, as transições correspondentes à escolha de cada operador são habilitadas. A tarefa é concluída quando todos os operadores do grupo responderam ou quando a tarefa expirou.
 
-Essa atividade não bloqueia o processamento e o workflow pode executar outras tarefas enquanto aguarda uma resposta.
+Essa atividade não bloqueia o processamento e o fluxo de trabalho pode executar outras tarefas enquanto aguarda uma resposta.
 
 Um operador pode aprovar as tarefas atribuídas a esse operador a partir do console. Um operador com direitos de administrador pode exibir e excluir as tarefas atribuídas a qualquer operador, mas não pode responder a elas.
 
@@ -57,13 +56,13 @@ As variáveis de personalização podem ser usadas na mensagem enviada aos revis
 
 ![](assets/edit_validation.png)
 
-O campo **[!UICONTROL Title]** contém o título da mensagem: é o assunto da mensagem de email enviada. O título, bem como o corpo da mensagem, são templates JavaScript e, portanto, podem conter valores calculados de acordo com o contexto do workflow.
+O campo **[!UICONTROL Title]** contém o título da mensagem: é o assunto da mensagem de email enviada. O título, bem como o corpo da mensagem, são modelos JavaScript e, portanto, podem conter valores calculados de acordo com o contexto do fluxo de trabalho.
 
 A seção inferior do editor permite definir a lista de respostas possíveis. Há uma transição correspondente a cada resposta. O nome é o identificador interno e o rótulo é o texto que será exibido na lista de opções.
 
-Clique no link **[!UICONTROL Advanced parameters...]** para selecionar o template da entrega a ser usado para notificar os operadores. O template padrão (nome interno &quot;notifyAssignee&quot;) pega o título e a mensagem e adiciona um link à página da Web usada para responder.
+Clique no link **[!UICONTROL Advanced parameters...]** para selecionar o modelo da entrega a ser usado para notificar os operadores. O modelo padrão (nome interno &quot;notifyAssignee&quot;) pega o título e a mensagem e adiciona um link à página da Web usada para responder.
 
-Esse template pode ser modificado para personalizar o layout de mensagens, mas é preferível fazer uma cópia. O mecanismo do target (arquivo externo, mapeamento do target) não deve ser modificado porque é necessário para que as notificações funcionem corretamente.
+Esse modelo pode ser modificado para personalizar o layout de mensagens, mas é preferível fazer uma cópia. O mecanismo do direcionamento (arquivo externo, mapeamento do target) não deve ser modificado porque é necessário para que as notificações funcionem corretamente.
 
 Um exemplo de aprovação é exibido em [Defining approvals](defining-approvals.md)
 

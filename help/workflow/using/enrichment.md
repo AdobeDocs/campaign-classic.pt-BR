@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: Enriquecimento
-description: Saiba mais sobre a atividade do workflow de enriquecimento
+description: Saiba mais sobre a atividade do fluxo de trabalho Enriquecimento
 feature: Workflows, Enrichment Activity, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 100%
 
@@ -58,7 +57,7 @@ Os casos de uso que detalham o funcionamento das atividades de Enriquecimento em
 
 ## Adição de informações {#adding-information}
 
-Use a atividade **[!UICONTROL Enrichment]** para adicionar colunas a uma tabela de trabalho: essa atividade pode ser usada como um complemento para uma atividade de query.
+Use a atividade **[!UICONTROL Enrichment]** para adicionar colunas a uma tabela de trabalho: essa atividade pode ser usada como um complemento para uma atividade de consulta.
 
 A configuração de colunas adicionais é apresentada em [Adding data](query.md#adding-data).
 
@@ -76,7 +75,7 @@ Clique com o botão direito na transição de entrada da atividade de enriquecim
 
 ![](assets/enrichment_content_before.png)
 
-A tabela de trabalho contém os seguintes dados e o schema associado:
+A tabela de trabalho contém os seguintes dados e o esquema associado:
 
 ![](assets/enrichment_content_before_a.png)
 
@@ -88,7 +87,7 @@ Veja que os dados relacionados ao perfil idades foram adicionados:
 
 ![](assets/enrichment_content_after_a.png)
 
-O schema correspondente também foi enriquecido.
+O esquema correspondente também foi enriquecido.
 
 ## Gerenciamento de dados adicionais {#managing-additional-data}
 
@@ -96,13 +95,13 @@ Desmarque a opção **[!UICONTROL Keep all additional data from the main set]** 
 
 ![](assets/enrichment_edit_without_additional.png)
 
-Os dados e o schema na saída do estágio de enriquecimento serão como a seguir:
+Os dados e o esquema na saída do estágio de enriquecimento serão como a seguir:
 
 ![](assets/enrichment_content_after_without_additional.png)
 
 ## Criação de um link {#creating-a-link}
 
-É possível utilizar a atividade de enriquecimento para criar um link entre os dados de trabalho e o banco de dados do Adobe Campaign: isto será um link local para o workflow entre os dados de entrada.
+É possível utilizar a atividade de enriquecimento para criar um link entre os dados de trabalho e o banco de dados do Adobe Campaign: isto será um link local para o fluxo de trabalho entre os dados de entrada.
 
 Por exemplo, se carregar dados de um arquivo que contenha o número da conta, o país e o e-mail dos destinatários, será necessário criar um link para a tabela do país para atualizar essas informações em seus perfis.
 
@@ -133,7 +132,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/enrichment_add_a_link_select_join.png)
 
-Na saída desta atividade de enriquecimento, o schema temporário conterá o link para a tabela de países:
+Na saída desta atividade de enriquecimento, o esquema temporário conterá o link para a tabela de países:
 
 ![](assets/enrichment_external_link_schema.png)
 
@@ -141,7 +140,7 @@ Na saída desta atividade de enriquecimento, o schema temporário conterá o lin
 
 A atividade de enriquecimento pode ser usada para configurar a reconciliação de dados, incluindo quando os dados tiverem sido carregados no banco de dados. Nesse caso, a guia **[!UICONTROL Reconciliation]** permite definir o link entre os dados no banco de dados do Adobe Campaign e os dados na tabela de trabalho.
 
-Selecione a opção **[!UICONTROL Identify the targeting document based on work data]**, especifique o schema em que deseja criar um link e defina as condições de ligação: para fazer isto, selecione os campos a serem reconciliados nos dados de trabalho (**[!UICONTROL Source expression]**) e na targeting dimension (**[!UICONTROL Destination expression]**).
+Selecione a opção **[!UICONTROL Identify the targeting document based on work data]**, especifique o esquema em que deseja criar um link e defina as condições de ligação: para fazer isto, selecione os campos a serem reconciliados nos dados de trabalho (**[!UICONTROL Source expression]**) e na dimensão de direcionamento (**[!UICONTROL Destination expression]**).
 
 É possível usar um ou mais critérios de reconciliação.
 
@@ -155,11 +154,11 @@ A atividade de enriquecimento permite adicionar ofertas ou links para ofertas de
 
 Para obter mais informações sobre a atividade de enriquecimento, consulte esta [seção](enrichment.md).
 
-Por exemplo, é possível enriquecer os dados de uma query de destinatário antes de uma entrega.
+Por exemplo, é possível enriquecer os dados de uma consulta de destinatário antes de uma entrega.
 
 ![](assets/int_enrichment_offer1.png)
 
-Após configurar sua query (consulte esta [seção](query.md)):
+Após configurar sua consulta (consulte esta [seção](query.md)):
 
 1. Adicione e abra uma atividade de enriquecimento.
 1. Na guia **[!UICONTROL Enrichment]**, selecione **[!UICONTROL Add data]**.
@@ -192,7 +191,7 @@ Para fazer isso:
 
 1. Selecione **[!UICONTROL Add data]** na guia **[!UICONTROL Enrichment]** da atividade.
 1. Na janela onde você escolhe o tipo de dados a serem adicionados, selecione **[!UICONTROL A link]**.
-1. Selecione o tipo de link que deseja estabelecer, assim como seu target. Nesse caso, o target é o schema de oferta.
+1. Selecione o tipo de link que deseja estabelecer, assim como seu target. Nesse caso, o target é o esquema de oferta.
 
    ![](assets/int_enrichment_link1.png)
 
@@ -214,7 +213,7 @@ A atividade **[!UICONTROL Offer engine]** armazena essas informações por padr�
 
 No entanto, é possível armazenar essas informações da seguinte maneira:
 
-1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma query e antes de uma atividade de entrega.
+1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma consulta e antes de uma atividade de entrega.
 1. Na janela principal da atividade, selecione **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -223,6 +222,6 @@ No entanto, é possível armazenar essas informações da seguinte maneira:
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
-1. Confirme sua adição e salve seu workflow.
+1. Confirme sua adição e salve seu fluxo de trabalho.
 
 A entrega armazena automaticamente a classificação e o peso das ofertas. Essas informações estão visíveis na guia **[!UICONTROL Offers]** da entrega.

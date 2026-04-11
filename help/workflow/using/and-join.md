@@ -4,10 +4,9 @@ title: AND-join
 description: AND-join
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 100%
 
@@ -17,7 +16,7 @@ ht-degree: 100%
 
 
 
-Um join inicia sua transição de saída somente quando todas as transições de entrada são ativadas, ou seja, quando todas as atividades anteriores são concluídas. Isso permite verificar se determinadas atividades foram concluídas antes de continuar a executar o workflow.
+Um join aciona sua transição de saída somente quando todas as transições de entrada são ativadas, ou seja, quando todas as atividades anteriores são concluídas. Isso permite verificar se determinadas atividades foram concluídas antes de continuar a executar o fluxo de trabalho.
 
 Por exemplo, você pode usar uma atividade AND-join no contexto de criação de conteúdo e automação de envio de entrega, para garantir que uma entrega seja iniciada somente depois que as etapas de consulta de públicos-alvos e atualizações de conteúdo forem concluídas. Um caso de uso específico está disponível [nesta seção](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
 

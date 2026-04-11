@@ -4,10 +4,9 @@ title: Monitorar a execução do fluxo de trabalho
 description: Monitorar a execução do fluxo de trabalho
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 100%
 
@@ -33,7 +32,7 @@ O ícone **[!UICONTROL Display progress information]** permite exibir o status e
 
 ![](assets/s_user_segmentation_toolbar_progr.png)
 
-Quando essa opção é selecionada, as atividades executadas são exibidas em azul, as atividades pendentes piscam, os avisos são exibidos em laranja e os erros em vermelho. Essa opção também exibe o resultado das atividades na transição de saída, seguido do rótulo do resultado conforme definido nas propriedades da atividade e da duração da tarefa se ela exceder um segundo
+Quando essa opção é selecionada, as atividades executadas são exibidas em azul, as atividades pendentes piscam, os avisos são exibidos em laranja e os erros em vermelho. Essa opção também exibe o resultado das atividades na transição de saída, seguido do rótulo do resultado conforme definido nas propriedades da atividade e da duração do processo se ele exceder um segundo
 
 ![](assets/s_user_segmentation_results.png)
 

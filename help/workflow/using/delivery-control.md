@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: Controle de entregas
-description: Saiba mais sobre a atividade de workflow de controle de entrega
+description: Saiba mais sobre a atividade de fluxo de trabalho de controle de entrega
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: c7cface2-0837-4e6a-91dc-b8353010a7a4
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
 
@@ -23,7 +22,7 @@ Isso pode ser a entrega especificada na transição, uma entrega selecionada exp
 
 ![](assets/edit_diffusion_act.png)
 
-Se você selecionar **[!UICONTROL Start]**, a atividade executará todas as etapas necessárias para iniciar a entrega (cálculo de direcionamento, preparação de conteúdo, entrega). Se algumas dessas etapas já foram executadas por uma atividade anterior do workflow, elas não serão executadas novamente. Por exemplo, se a estimativa de direcionamento já foi executada por uma atividade do tipo **[!UICONTROL Delivery]** (consulte [Entrega](delivery.md)), a atividade **[!UICONTROL Act on the delivery]** iniciará as etapas restantes (preparação de conteúdo e entrega).
+Se você selecionar **[!UICONTROL Start]**, a atividade executará todas as etapas necessárias para iniciar a entrega (cálculo de direcionamento, preparação de conteúdo, entrega). Se algumas dessas etapas já foram executadas por uma atividade anterior do fluxo de trabalho, elas não serão executadas novamente. Por exemplo, se a estimativa de direcionamento já foi executada por uma atividade do tipo **[!UICONTROL Delivery]** (consulte [Entrega](delivery.md)), a atividade **[!UICONTROL Act on the delivery]** iniciará as etapas restantes (preparação de conteúdo e entrega).
 
 As seguintes opções estão disponíveis:
 

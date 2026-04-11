@@ -1,13 +1,12 @@
 ---
 product: campaign
-title: Sobre casos de uso de workflows
-description: Saiba mais sobre os casos de uso que você pode executar usando workflows do Campaign Classic
+title: Sobre casos de uso de fluxos de trabalho
+description: Saiba mais sobre os casos de uso que você pode executar usando fluxos de trabalho do Campaign Classic
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 100%
 
@@ -17,9 +16,9 @@ ht-degree: 100%
 
 
 
-Nesta seção você encontrará vários casos de uso que usam os recursos dos workflows do Campaign.
+Nesta seção você encontrará vários casos de uso que usam os recursos dos fluxos de trabalho do Campaign.
 
-Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows podem ser usados e a atender às suas necessidades.
+Eles ajudarão você a descobrir os diferentes contextos nos quais os fluxos de trabalho podem ser usados e a atender às suas necessidades.
 
 ## Entregas {#deliveries}
 
@@ -38,7 +37,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
 * [Envio de um relatório a uma lista](sending-a-report-to-a-list.md)
-* [Supervisão de workflows](supervising-workflows.md)
+* [Supervisão de fluxos de trabalho](supervising-workflows.md)
 * [Envio de alertas personalizados a operadores](sending-personalized-alerts-to-operators.md)
 * [Configuração de um processo de aprovação de destinatário antes do envio de uma entrega](using-the-local-approval-activity.md)
 
@@ -52,7 +51,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Utilização de agregações](using-aggregates.md)
 * [Importação de dados criptografados usando uma chave gerada pelo Painel de controle](../../platform/using/unzip-decrypt.md)
 * [Criptografia e exportação de dados usando uma chave instalada no Painel de controle](how-to-use-workflow-data.md#use-case-gpg-encrypt)
-* [Atualização da lista trimestral usando um query incremental](quarterly-list-update.md)
+* [Atualização da lista trimestral usando uma consulta incremental](quarterly-list-update.md)
 * [Utilização da funcionalidade de mesclagem de atividades de desduplicação](deduplication-merge.md)
 * [Configuração de um fluxo de trabalho de importação recorrente](recurring-import-workflow.md)
 
@@ -65,7 +64,7 @@ Eles ajudarão você a descobrir os diferentes contextos nos quais os workflows 
 * [Execução de computação agregada](performing-aggregate-computing.md)
 * [Consulta ao gerenciamento de agrupamento](querying-using-grouping-management.md)
 * [Consulta usando uma relação muitos para muitos](querying-using-many-to-many-relationship.md)
-* [Adição de um campo calculado do tipo lista discriminada](adding-enumeration-type-calculated-field.md)
+* [Adição de um campo calculado do tipo enumeração](adding-enumeration-type-calculated-field.md)
 * [Criação de um filtro](creating-a-filter.md)
 * [Filtro de destinatários duplicados](filtering-duplicated-recipients.md)
 * [Chamada de uma variável de instância em uma consulta](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)

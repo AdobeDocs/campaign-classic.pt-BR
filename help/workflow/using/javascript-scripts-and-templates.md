@@ -4,12 +4,11 @@ title: Modelos e scripts JavaScript
 description: Modelos e scripts JavaScript
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '1247'
-ht-degree: 100%
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
+source-wordcount: '1243'
+ht-degree: 97%
 
 ---
 
@@ -19,20 +18,20 @@ ht-degree: 100%
 
 Os scripts permitem o cálculo de valores, a troca de dados entre tarefas diferentes em andamento e a execução de operações específicas usando chamadas SOAP.
 
-Os scripts são universais em um diagrama de workflow:
+Os scripts são universais em um diagrama de fluxo de trabalho:
 
 * todas as atividades têm scripts de inicialização. Um script de inicialização é executado quando a atividade é ativada e pode ser usado para inicializar variáveis e modificar as propriedades.
 * A atividade &#39;código JavaScript&#39; é simplesmente usada para executar um script.
 * A atividade de &#39;Teste&#39; avalia expressões JavaScript para ativar a transição apropriada.
-* A maioria dos campos de texto são templates do JavaScript: expressões JavaScript podem ser incluídas entre &lt;%= and %>. Estes campos oferecem um botão que abre uma lista suspensa para ajudá-lo a inserir expressões.
+* A maioria dos campos de texto são modelos do JavaScript: expressões JavaScript podem ser incluídas entre &lt;%= and %>. Estes campos oferecem um botão que abre uma lista suspensa para ajudá-lo a inserir expressões.
 
   ![](assets/script-button.png)
 
 ## Objetos expostos {#objects-exposed}
 
-Os JavaScripts executado no contexto de um workflow acessa uma série de objetos globais adicionais.
+Os JavaScripts executado no contexto de um fluxo de trabalho acessa uma série de objetos globais adicionais.
 
-* **instance**: representa o workflow que está sendo executado. O esquema deste objeto é **xtk:workflow**.
+* **instance**: representa o fluxo de trabalho que está sendo executado. O esquema deste objeto é **xtk:workflow**.
 * **task**: representa as tarefas que estão sendo executadas. O esquema deste objeto é **xtk:workflowTask**.
 * **event**: representa os eventos que ativam a tarefa que está sendo executada. O esquema deste objeto é **xtk:workflowEvent**. Este objeto não é inicializado para atividades tipo **AND-join** que foram ativadas a partir de várias transições.
 * **events**: representa a lista de eventos que ativou a tarefa atual. O esquema deste objeto é **xtk:workflowEvent**. Essa tabela normalmente contém um elemento, mas pode conter vários para atividades tipo **AND-join** ativadas com base em várias transições.
@@ -48,7 +47,7 @@ As propriedades disponíveis para esses objetos podem ser visualizadas em uma li
 
 **Exemplo**
 
-Neste exemplo, e nos exemplos a seguir, crie um workflow que inclua uma atividade de **código JavaScript** e uma atividade **final** como exibido no diagrama a seguir.
+Neste exemplo, e nos exemplos a seguir, crie um fluxo de trabalho que inclua uma atividade de **código JavaScript** e uma atividade **final** como exibido no diagrama a seguir.
 
 ![](assets/script-1.png)
 
@@ -61,7 +60,7 @@ logInfo("Start date: " + task.creationDate)
 
 A função **[!UICONTROL logInfo(message)]** insere uma mensagem no log.
 
-Clique em **[!UICONTROL OK]** para fechar o assistente de criação e, em seguida, inicie o fluxo de trabalho, usando os botões de ação localizados na parte superior direita da lista de fluxos de trabalho. No final da execução, consulte o log. Você verá duas mensagens correspondentes ao script: uma exibe a identificação do workflow, a outra exibe a data em que o script foi ativado.
+Clique em **[!UICONTROL OK]** para fechar o assistente de criação e, em seguida, inicie o fluxo de trabalho, usando os botões de ação localizados na parte superior direita da lista de fluxos de trabalho. No final da execução, consulte o log. Você verá duas mensagens correspondentes ao script: uma exibe a identificação do fluxo de trabalho, a outra exibe a data em que o script foi ativado.
 
 ## Variáveis {#variables}
 
@@ -77,7 +76,7 @@ As variáveis de tarefa (**[!UICONTROL task.vars.xxx]**) são comparáveis às v
 
 ### Variáveis do evento {#event-variables}
 
-As variáveis de evento (**[!UICONTROL vars.xxx]**) permitem a troca de dados entre as tarefas primárias de um processo de workflow. Essas variáveis são passadas pela tarefa que ativou a tarefa em andamento. É possível modificá-las e definir novas. Então, elas são passadas para as atividades seguintes.
+As variáveis de evento (**[!UICONTROL vars.xxx]**) permitem a troca de dados entre as tarefas primárias de um processo de fluxo de trabalho. Essas variáveis são passadas pela tarefa que ativou a tarefa em andamento. É possível modificá-las e definir novas. Então, elas são passadas para as atividades seguintes.
 
 >[!CAUTION]
 >
@@ -97,7 +96,7 @@ Certas variáveis de evento são modificadas ou lidas pelas várias atividades. 
 
 Neste exemplo, uma variável de instância é usada para calcular dinamicamente a porcentagem dividida que será aplicada em uma população.
 
-1. Crie um workflow e adicione uma atividade Start.
+1. Crie um fluxo de trabalho e adicione uma atividade Start.
 
 1. Adicione e configure uma atividade de código JavaScript para definir uma variável de instância.
 
@@ -123,13 +122,13 @@ Neste exemplo, uma variável de instância é usada para calcular dinamicamente 
 
 1. Certifique-se de que o complemento seja gerado em uma transição separada da atividade Split e adicione as atividades End após cada transição de saída.
 
-1. Salve e execute o workflow. A amostragem dinâmica é aplicada de acordo com a variável de instância.
+1. Salve e execute o fluxo de trabalho. A amostragem dinâmica é aplicada de acordo com a variável de instância.
 
    ![](assets/js_ex4.png)
 
 **Exemplo 2**
 
-1. Pegue o workflow do exemplo anterior e substitua o script da atividade **JavaScript Code** pelo seguinte script:
+1. Pegue o fluxo de trabalho do exemplo anterior e substitua o script da atividade **JavaScript Code** pelo seguinte script:
 
    ```
    instance.vars.foo = "bar1"
@@ -145,7 +144,7 @@ Neste exemplo, uma variável de instância é usada para calcular dinamicamente 
    logInfo("task.vars.foo = " + task.vars.foo)
    ```
 
-1. Inicie o workflow e examine o log.
+1. Inicie o fluxo de trabalho e examine o log.
 
    ```
    Workflow finished
@@ -169,7 +168,7 @@ Por exemplo:
 
    ![](assets/wkf_js_activity_1.png)
 
-1. Criar uma query cujo direcionamento e dimensões de filtro são os destinatários. Nas condições, especifique que deseja localizar todos os destinatários que receberam a entrega especificada pela variável .
+1. Criar uma consulta cujo direcionamento e dimensões de filtro são os destinatários. Nas condições, especifique que deseja localizar todos os destinatários que receberam a entrega especificada pela variável .
 
    Como lembrete, essas informações são armazenadas nos logs de entrega.
 
@@ -193,7 +192,7 @@ Além das funções JavaScript padrão, as funções especiais estão disponíve
 
 Sob determinadas condições, é possível modificar uma propriedade de uma atividade no momento da execução.
 
-A maioria das propriedades de atividades pode ser calculada dinamicamente, usando um template JavaScript ou porque as propriedades do workflow permitem explicitamente que o valor seja calculado por um script.
+A maioria das propriedades de atividades pode ser calculada dinamicamente, usando um modelo JavaScript ou porque as propriedades do fluxo de trabalho permitem explicitamente que o valor seja calculado por um script.
 
 No entanto, para outras propriedades, é necessário usar o script de inicialização. Este script é avaliado antes que a tarefa seja executada. A variável **[!UICONTROL activity]** faz referência à atividade correspondente à tarefa. As propriedades dessa atividade podem ser modificadas e afetarão somente essa tarefa.
 

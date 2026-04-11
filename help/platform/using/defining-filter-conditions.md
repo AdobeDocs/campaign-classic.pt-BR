@@ -8,10 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 hide: true
-hidefromtoc: true
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '3307'
 ht-degree: 100%
 
@@ -181,7 +180,7 @@ O detalhe do campo selecionado é visível na parte inferior da janela. Por exem
 >
 >Use a ferramenta **[!UICONTROL Search]** para localizar um campo disponível.
 
-Clique duas vezes em um campo disponível para adicioná-lo às colunas de saída. No final da query, cada campo selecionado cria uma coluna na janela **[!UICONTROL Data preview]**.
+Clique duas vezes em um campo disponível para adicioná-lo às colunas de saída. No final da consulta, cada campo selecionado cria uma coluna na janela **[!UICONTROL Data preview]**.
 
 ![](assets/query_editor_nveau_01.png)
 
@@ -1019,7 +1018,7 @@ Ele permite selecionar campos nas tabelas do banco de dados e adicionar funçõe
   </tr> 
   <tr> 
    <td> <strong>PartitionBy</strong><br /> </td> 
-   <td> Partições do resultado de um query em uma tabela<br /> </td> 
+   <td> Partições do resultado de uma consulta em uma tabela<br /> </td> 
    <td> PartitionBy(&lt;valor 1&gt;)<br /> </td>  
   </tr> 
   <tr> 

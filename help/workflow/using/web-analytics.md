@@ -3,10 +3,9 @@ product: campaign
 title: Análise da web
 description: Saiba mais sobre o pacote do Web Analytics
 hide: true
-hidefromtoc: true
 feature: Workflows, Analytics Integration
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 100%
 
@@ -17,7 +16,7 @@ ht-degree: 100%
 
 
 
-Os workflows detalhados abaixo são instalados com o módulo dos **conectores Web Analytics** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../integrations/using/gs-aa.md).
+Os fluxos de trabalho detalhados abaixo são instalados com o módulo dos **conectores Web Analytics** por padrão. Para obter mais informações sobre esse módulo, consulte esta[seção](../../integrations/using/gs-aa.md).
 
 <table> 
  <tbody> 
@@ -34,7 +33,7 @@ Os workflows detalhados abaixo são instalados com o módulo dos **conectores We
   <tr> 
    <td> <span class="uicontrol">Identificação de contatos convertidos</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Este workflow indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados recuperados por esse fluxo de trabalho podem ser acessados no <span class="uicontrol">Relatório de eficiência de remarketing</span>. <br /> </td> 
+   <td> Este fluxo de trabalho indexa os visitantes do site que concluíram sua compra após uma campanha de re-marketing. Os dados recuperados por esse fluxo de trabalho podem ser acessados no <span class="uicontrol">Relatório de eficiência de remarketing</span>. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Limpeza de eventos</span> <br /> </td> 
@@ -44,7 +43,7 @@ Os workflows detalhados abaixo são instalados com o módulo dos **conectores We
   <tr> 
    <td> <span class="uicontrol">Recuperação de eventos da Web</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsGetWebEvents</span> <br /> </td> 
-   <td> A cada hora, este workflow baixa segmentos do comportamento do usuário na Internet em um determinado site, os coloca no banco de dados do Adobe Campaign e inicia o workflow de re-marketing. <br /> </td> 
+   <td> A cada hora, este fluxo de trabalho baixa segmentos do comportamento do usuário na Internet em um determinado site, os coloca no banco de dados do Adobe Campaign e inicia o fluxo de trabalho de re-marketing. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

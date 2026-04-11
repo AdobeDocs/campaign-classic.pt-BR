@@ -5,12 +5,11 @@ description: Saiba mais sobre as atualizações do Campaign Classic 2021
 feature: Release Notes
 role: User
 level: Beginner
-hidefromtoc: true
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 100%
+source-wordcount: '2579'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +31,7 @@ _8 de outubro de 2021_
 
 * Correção do fluxo de trabalho de faturamento disponível na build 9342, que requer uma reinicialização manual do fluxo de trabalho para que a correção seja aplicada. Agora, a pós-atualização reinicia automaticamente o fluxo de trabalho.
 
-* Correção de um problema que podia impedir a gestão adequada de ofertas ao usar o módulo de **Interação** com a opção [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
+* Correção de um problema que podia impedir um gerenciamento de ofertas adequado de ofertas ao usar o módulo de **Interação** com a opção [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
 * Correção do erro “A afinidade de IP xxx não foi encontrada no mid server xxx” que podia ocorrer no envio de uma entrega ao usar mais de uma afinidade de IP em uma instância de multi mid-sourcing. (NEO-37514)
 
@@ -50,7 +49,7 @@ _7 de setembro de 2021_
 
 * Após o fim da vida útil, o Flash foi removido de todos os recursos e componentes relacionados do Campaign e substituído pelo HTML5. O tipo de gráfico **Medição** foi removido. (NEO-30330) [Leia mais](../../reporting/using/creating-a-chart.md)
 * Ao instalar o console do cliente no Windows, o instalador agora verifica se há um nó de registro pai e cria um se estiver ausente. Isso evita possíveis problemas ao iniciar o console. (NEO-34854)
-* O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados à forma como as ferramentas de terceiros (clientes de email, navegadores de Internet etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
+* O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados às formas com que ferramentas de terceiros (clientes de email, navegadores de internet etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
 
 **Outras alterações**
 
@@ -91,7 +90,7 @@ _5 de junho de 2021_
 <tr>
 <td>
 <p>A nova atividade de fluxo de trabalho <b>Alterar fonte de dados</b> permite alterar a fonte de dados de uma tabela de trabalho do fluxo de trabalho. Isso proporciona mais flexibilidade no gerenciamento de dados em diferentes fontes de dados (FDA e banco de dados local).</p>
-<p>Nos workflows do Adobe Campaign, os dados são gerenciados usando tabelas de trabalho (ou temporárias). Conforme o fluxo de trabalho é executado, as tabelas de trabalho compartilham dados entre atividades de fluxo de trabalho. Por padrão, as tabelas de trabalho são criadas no mesmo banco de dados da fonte de dados que consultamos.</p>
+<p>Nos fluxos de trabalho do Adobe Campaign, os dados são gerenciados usando tabelas de trabalho (ou temporárias). Conforme o fluxo de trabalho é executado, as tabelas de trabalho compartilham dados entre atividades de fluxo de trabalho. Por padrão, as tabelas de trabalho são criadas no mesmo banco de dados da fonte de dados que consultamos.</p>
 <p>Para obter mais informações, consulte a <a href="../../workflow/using/change-data-source.md">documentação detalhada</a>.</p>
 </td>
 </tr>
@@ -128,7 +127,7 @@ _5 de junho de 2021_
 <ul> 
 <li><p>Suporte para tipo de mensagem de vídeo LINE</p></li>
 <li><p>Suporte para API de registro de parceiro LINE</p></li>
-<li><p>Suporte para nova tentativa de envio de mensagem em caso de erro do lado do servidor LINE ou tempo limite da rede</p></li>
+<li><p>Suporte para nova tentativa de envio de mensagem em caso de erro do lado do servidor LINE ou tempo-limite da rede</p></li>
 </ul>
 <p>Para obter mais informações consulte a <a href="../../delivery/using/line-channel.md">documentação detalhada</a>.</p>
 </td> 
@@ -205,7 +204,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 
 **Correções**
 
-* Correção de um problema ao editar o tempo limite da sessão para fazer logoff de usuários após um período específico em que os usuários permaneceram conectados mesmo após o tempo definido.
+* Correção de um problema ao editar o tempo-limite da sessão para fazer logoff de usuários após um período específico em que os usuários permaneceram conectados mesmo após o tempo definido.
 * Correção de um problema em que as entregas eram exibidas somente como leitura, mas ainda podiam ser editadas nas propriedades de entregas.
 * Correção de um erro que fazia com que a barra de ferramentas de edição desaparecesse ao projetar um aplicativo web.
 * Correção de um erro que exibia a versão de texto de um email com cabeçalhos do Adobe Campaign Classic ao adicionar um link a um email. (NEO-29211
@@ -213,13 +212,13 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 * Correção de um problema que ocorria após a execução do fluxo de trabalho de sincronização do centro de mensagens. Toda vez que uma pasta de objetos de entrega era movida para uma pasta personalizada, o fluxo de trabalho movia as entregas de volta para a pasta genérica **Histórico de mensagem transacional**. (NEO-27445)
 * Correção de um problema que exibia uma mensagem de erro ao tentar exibir os relatórios **Estatísticas de transmissão**, **Indicadores de rastreamento** e **Estatísticas de atividades de compartilhamento**.
 * A atividade de fluxo de trabalho **Oracle por demanda** foi removida da interface após a desativação do conector Oracle CRM.
-* Correção de um problema que interrompia a execução de workflows de processamento após a reinicialização diária do módulo do servidor de fluxo de trabalho (wfserver). (NEO-30047)
+* Correção de um problema que interrompia a execução de fluxos de trabalho de processamento após a reinicialização diária do módulo do servidor de fluxo de trabalho (wfserver). (NEO-30047)
 * Correção de um problema que impedia a atualização do documento de gerenciamento MX, o que poderia afetar negativamente a reputação do IP. (NEO-29897)
 * Correção de problemas que causavam falhas do processo da Web ao receber uma chamada SOAP. (NEO-28796) (NEO-29600)
 * Correção de um problema que causava a falha da criação do índice SAP HANA FDA. (NEO-29664)
 * Correção de um problema que poderia manter mensagens transacionais no estado **Aguardando** ao executar chamadas SOAP contendo um cabeçalho. (NEO-28737)
 * Correção de um problema que ocorria ao usar o conector FDA do Teradata: todas as tabelas temporárias foram criadas em apenas um nó do cluster, o que poderia acabar consumindo todo o espaço do spool e causar falha no Teradata. As tabelas temporárias agora são geradas em muitos nós. (NEO-28230)
-* Correção de um problema ao usar aplicações Web que fazia com que tags de rastreamento gerassem chaves primárias incorretas no esquema **nms:trackingURL**. (NEO-27931)
+* Correção de um problema ao usar aplicações Web que fazia com que as tags de rastreamento gerassem chaves primárias incorretas no esquema **nms:trackingURL**. (NEO-27931)
 * A compatibilidade com o ODBC 3.x foi aprimorada para garantir a precisão da mensagem de erro.
 * Correção de um problema que poderia resultar em falhas do console quando modelos de conteúdo personalizados eram usados em entregas de email. (NEO-31547)
 * Correção de um problema que impedia o Tomcat de enviar respostas válidas devido a uma conexão lenta ou um tamanho de resposta grande. (NEO-30858)
@@ -272,7 +271,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 **Outras alterações**
 
 * A velocidade de transferência foi aprimorada para grandes logs de rastreamento usando compactação.
-* O mapa de calor do fluxo de trabalho foi aprimorado para evitar tempos limite ao executar workflows com várias atividades. (NEO-27423).
+* O mapa de calor do fluxo de trabalho foi aprimorado para evitar tempos-limite ao executar workflows com várias atividades. (NEO-27423).
 * Correção de um problema que permitia que uma oferta fosse apresentada mesmo se sua data final fosse no passado. Agora, o Campaign Classic considera o carimbo de data e hora completo, em vez de somente a data. (NEO-27590)
 * O link do Google+ foi removido do bloco de personalização **links de compartilhamento de rede social**.
 * Correção de um problema após a implementação de uma correção de erro na última versão. Uma verificação foi adicionada ao nome do host ao conectar usando SSL/TLS, o que resultava em falha de entrega de SMS. A verificação do nome do host foi desativada para a maioria dos protocolos, como POP3, SMS e HTTP com proxy, e a verificação do certificado para a conta externa SMS foi aprimorada com três valores (NEO-29581). [Saiba mais](../../delivery/using/sms-protocol.md#skip-tls)
@@ -281,7 +280,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 
 * Correção de um problema que impedia que os atalhos do teclado Tab, Enter e Escape funcionassem na nova tela de logon.
 * Correção de um problema de atualização que fazia com que o nome de um fluxo de trabalho recém-criado fosse substituído pelo valor padrão após o salvamento (NEO-26106).
-* Correção de um problema que ocorria ao executar workflows em que um novo campo era adicionado como parte de uma atividade **Enriquecimento** antes de uma atividade de **Entrega** usando um target mapping de **Arquivo externo**: campos indesejados eram adicionados ao target mapping do **Arquivo externo**. (NEO-27687)
+* Correção de um problema que ocorria ao executar fluxos de trabalho em que um novo campo era adicionado como parte de uma atividade **Enriquecimento** antes de uma atividade de **Entrega** usando um target mapping de **Arquivo externo**: campos indesejados eram adicionados ao target mapping do **Arquivo externo**. (NEO-27687)
 * Correção de um problema que fazia com que alguns caracteres no código fonte fossem alterados ao ser reaberta uma aplicação web criada e salva anteriormente. (NEO-27597)
 * Correção de um problema que ocorria ao atualizar para uma compilação, incluindo o novo mecanismo de assinatura para links de rastreamento (da Compilação 19.1.4 e Campaign 20.2): quando vários modelos eram associados a um evento, a atualização podia fazer com que o modelo errado fosse selecionado ao ser enviada a mensagem transacional. (NEO-28326)
 * Correção de um problema que fazia com que o MTA ficasse sem resposta e não conseguisse processar entregas, a menos que fosse reiniciado. (NEO-27455)
@@ -291,7 +290,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 * Correção de um problema que podia reduzir o uso de memória no servidor durante a execução de uma análise de entrega.
 * Correção de um problema que impedia que a instância funcionasse durante a tentativa de executar consultas complexas específicas.
 * Correção de um problema que impedia a execução do fluxo de trabalho técnico **Sincronizar páginas do Twitter**. (NEO-28634)
-* Correção de um problema que podia exibir uma mensagem de erro relacionada à função decryptPassword ao tentar publicar no X (anteriormente conhecido como Twitter) usando o template de entrega **Tweet (twitter)**. (NEO-28216)
+* Correção de um problema que podia exibir uma mensagem de erro relacionada à função decryptPassword ao tentar publicar no X (anteriormente conhecido como Twitter) usando o modelo de entrega **Tweet (twitter)**. (NEO-28216)
 * Correção de um problema que ocorria ao usar uma atividade **JavaScript** para fazer uma solicitação HTTP em um fluxo de trabalho. Após a definição do número da porta no nome do Host, a chamada falhará com o seguinte erro (NEO-29146):
 
 ```
@@ -318,4 +317,4 @@ XTK-170024 The temporary 'temp:deliveryEmail-all' schema is not defined in the c
 The maximum number of connections has been reached (50) by connections pool 'nms:extAccount:acsDefaultRelayAccount XXX'. The server is overloaded. Please try again later.
 ```
 
-* Correção de um erro no SMS quando ocorriam problemas de conexão entre o servidor e o provedor. A conexão seria automaticamente desabilitada pelo MTA derivado. O Adobe Campaign Classic não tentava se conectar a essa conexão com falha, desde que um novo derivado não tivesse sido iniciado.
+* Correção de um erro no SMS quando ocorriam problemas de conexão entre o servidor e o provedor. A conexão seria automaticamente desabilitada pelo MTA filho. O Adobe Campaign Classic não tentava se conectar a essa conexão com falha, desde que um novo filho não tivesse sido iniciado.

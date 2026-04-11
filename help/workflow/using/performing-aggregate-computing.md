@@ -4,12 +4,11 @@ title: Execução de computação agregada
 description: Saiba como executar a computação agregada em consultas
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '231'
-ht-degree: 100%
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 98%
 
 ---
 
@@ -17,11 +16,11 @@ ht-degree: 100%
 
 
 
-Neste exemplo, devemos contar o número de destinatários que vivem em Londres, de acordo com o sexo.
+Neste exemplo, devemos contar o número de destinatários que vivem em Londres, de acordo com o gênero.
 
 * Qual tabela precisa ser selecionada?
 
-  A tabela de destinatário (**nms:recipient**)
+  A tabela de destinatários (**nms:recipient**)
 
 * Quais campos devem ser selecionados na coluna de saída?
 
@@ -33,7 +32,7 @@ Neste exemplo, devemos contar o número de destinatários que vivem em Londres, 
 
 Para criar este exemplo, aplique as seguintes etapas:
 
-1. Em **[!UICONTROL Data to extract]**, defina uma contagem para a chave primária (como mostrado no exemplo anterior). Adicione o campo **[!UICONTROL Gender]** na coluna de saída. Marque a opção **[!UICONTROL Group]** na coluna **[!UICONTROL Gender]**. Dessa forma, os destinatários serão agrupados por sexo.
+1. Em **[!UICONTROL Data to extract]**, defina uma contagem para a chave primária (como mostrado no exemplo anterior). Adicione o campo **[!UICONTROL Gender]** na coluna de saída. Marque a opção **[!UICONTROL Group]** na coluna **[!UICONTROL Gender]**. Dessa forma, os destinatários serão agrupados por gênero.
 
    ![](assets/query_editor_nveau_27.png)
 
@@ -44,7 +43,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    >[!NOTE]
    >
-   >Os valores diferenciam maiúsculas de minúsculas. Se o valor &quot;Londres&quot; é inserido na condição sem uma letra maiúscula e a lista de destinatários contiver a palavra &quot;Londres&quot; com uma letra maiúscula, então a query falha.
+   >Os valores diferenciam maiúsculas de minúsculas. Se o valor &quot;Londres&quot; é inserido na condição sem uma letra maiúscula e a lista de destinatários contiver a palavra &quot;Londres&quot; com uma letra maiúscula, então a consulta falha.
 
 1. Na janela **[!UICONTROL Data formatting]**, clique em **[!UICONTROL Next]**: nenhuma formatação é necessária para este exemplo.
 1. Na janela de pré-visualização, clique em **[!UICONTROL Launch data preview]**.

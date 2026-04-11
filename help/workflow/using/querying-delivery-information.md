@@ -4,10 +4,9 @@ title: Consulta de informações de entrega
 description: Como consultar informações de entrega
 feature: Query Editor, Workflows
 hide: true
-hidefromtoc: true
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 100%
 
@@ -27,7 +26,7 @@ Neste exemplo, estamos procurando coletar o número de cliques de uma entrega es
 
 * Campos a serem selecionados para colunas de saída?
 
-  Primary key (with count) e Email.
+  Chave primária (with count) e Email.
 
 * Quais critérios serão usados para filtrar as informações?
 
@@ -47,7 +46,7 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
      ![](assets/query_editor_tracklog_06.png)
 
-   * Na janela **[!UICONTROL Formula type]**, execute um processo na função agregada. Esse processo será uma contagem de chaves primária.
+   * Na janela **[!UICONTROL Formula type]**, execute um processo na função agregada. Esse processo será uma contagem de chaves primárias.
 
      Selecione **[!UICONTROL Process on an aggregate function]** na seção **[!UICONTROL Aggregate]** e clique em **[!UICONTROL Count]**.
 
@@ -87,7 +86,7 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
      ![](assets/query_editor_nveau_24.png)
 
-   * Para selecionar a data de término da pesquisa de log de rastreamento, crie uma segunda condição clicando em **[!UICONTROL Add]**. Na coluna **[!UICONTROL Expression]**, escolha novamente **[!UICONTROL Date (@logDate)]**.
+   * Para selecionar a data final da pesquisa de log de rastreamento, crie uma segunda condição clicando em **[!UICONTROL Add]**. Na coluna **[!UICONTROL Expression]**, escolha novamente **[!UICONTROL Date (@logDate)]**.
 
      Selecione o operador **[!UICONTROL less than]**. Na coluna **[!UICONTROL Value]**, clique em **[!UICONTROL Edit expression]**. Para o processamento de datas, vá para a janela **[!UICONTROL Formula type]**, digite &quot;1&quot; em **[!UICONTROL Current date minus n days]**.
 
@@ -95,7 +94,7 @@ Para executar esse exemplo, aplique as seguintes etapas:
 
      ![](assets/query_editor_nveau_65.png)
 
-     Agora, devemos configurar a terceira condição do filtro, ou seja, o rótulo de entrega que nossa query aborda.
+     Agora, devemos configurar a terceira condição do filtro, ou seja, o rótulo de entrega que nossa consulta aborda.
 
    * Clique na função **[!UICONTROL Add]** para criar outra condição de filtro. Na coluna **[!UICONTROL Expression]**, clique em **[!UICONTROL Edit expression]**. Na janela **[!UICONTROL Field to select]**, escolha **[!UICONTROL Label]** no nó **[!UICONTROL Delivery]**.
 
@@ -122,7 +121,7 @@ Neste exemplo, devemos filtrar destinatários que não abriram um e-mail nos úl
 
 Para criar este exemplo, aplique as seguintes etapas:
 
-1. Arraste e solte uma atividade **[!UICONTROL Query]** em um workflow e abra a atividade.
+1. Arraste e solte uma atividade **[!UICONTROL Query]** em um fluxo de trabalho e abra a atividade.
 1. Clique em **[!UICONTROL Edit query]** e defina as dimensões do filtro e do direcionamento para **[!UICONTROL Recipients]**.
 
    ![](assets/query_recipients_1.png)
@@ -149,7 +148,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 
 A transição de saída contém destinatários que não abriram um e-mail nos últimos 7 dias.
 
-Se, caso contrário, quiser filtrar os destinatários que abriram pelo menos um e-mail a sua query deverá ser com mostrado a seguir. Observe que, nesse caso, o **[!UICONTROL Filtering dimension]** deve ser definido como **[!UICONTROL Tracking logs (Recipients)]**.
+Se, caso contrário, quiser filtrar os destinatários que abriram pelo menos um e-mail, a sua consulta deverá ser como a seguinte. Observe que, nesse caso, o **[!UICONTROL Filtering dimension]** deve ser definido como **[!UICONTROL Tracking logs (Recipients)]**.
 
 ![](assets/query_open_5.png)
 
@@ -181,11 +180,11 @@ O exemplo a seguir mostra como selecionar perfis que abriram uma entrega nas úl
 
 ## Filtragem do comportamento de destinatários após uma entrega {#filtering-recipients--behavior-folllowing-a-delivery}
 
-Em um workflow, as caixas **[!UICONTROL Query]** e **[!UICONTROL Split]** permitem selecionar um comportamento após uma entrega. Essa seleção é realizada por meio do filtro **[!UICONTROL Delivery recipient]**.
+Em um fluxo de trabalho, as caixas **[!UICONTROL Query]** e **[!UICONTROL Split]** permitem selecionar um comportamento após uma entrega. Essa seleção é realizada por meio do filtro **[!UICONTROL Delivery recipient]**.
 
 * Objetivo do exemplo
 
-  Em um workflow de entrega, há várias maneiras de dar seguimento a uma primeira comunicação por e-mail. Esse tipo de operação envolve o uso da caixa **[!UICONTROL Split]**.
+  Em um fluxo de trabalho de entrega, há várias maneiras de dar seguimento a uma primeira comunicação por e-mail. Esse tipo de operação envolve o uso da caixa **[!UICONTROL Split]**.
 
 * Contexto
 
@@ -195,7 +194,7 @@ Em um workflow, as caixas **[!UICONTROL Query]** e **[!UICONTROL Split]** permit
 
 As etapas a seguir mostram como configurar a caixa **[!UICONTROL Split]** ao integrar dois comportamentos diferentes:
 
-1. Insira a caixa **[!UICONTROL Split]** no workflow. Esta caixa separa os destinatários da primeira entrega em duas entregas subsequentes. A separação ocorre com base nas condições de filtragem vinculadas ao comportamento do destinatário durante a primeira entrega.
+1. Insira a caixa **[!UICONTROL Split]** no fluxo de trabalho. Esta caixa separa os destinatários da primeira entrega em duas entregas subsequentes. O detalhamento ocorre com base nas condições de filtragem vinculadas ao comportamento do destinatário durante a primeira entrega.
 
    ![](assets/query_editor_ex_09.png)
 

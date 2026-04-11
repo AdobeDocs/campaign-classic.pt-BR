@@ -1,19 +1,18 @@
 ---
 product: campaign
-title: Publicar o pacote da campanha
-description: Publicar o pacote da campanha
+title: Publicar o pacote de campanha
+description: Publicar o pacote de campanha
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 100%
 
 ---
 
-# Publicar o pacote da campanha{#publishing-the-campaign-package}
+# Publicar o pacote de campanha{#publishing-the-campaign-package}
 
 
 
@@ -41,7 +40,7 @@ Uma mensagem de notificação é enviada ao revisor para confirmar a disponibili
 
 ## Adicionar outros revisores {#adding-other-reviewers}
 
-É possível adicionar outros revisores a partir do link **[!UICONTROL Edit...]**, localizado na guia **[!UICONTROL Approval parameters...]** do pacote da campanha.
+É possível adicionar outros revisores a partir do link **[!UICONTROL Edit...]**, localizado na guia **[!UICONTROL Approval parameters...]** do pacote de campanha.
 
 ![](assets/s_advuser_mkg_dist_select_op_valid.png)
 
@@ -59,7 +58,7 @@ Depois que estiver definido e o pacote for enviado para aprovação, o cronogram
 
 ## Aprovar via console do Adobe Campaign {#approving-via-the-adobe-campaign-console}
 
-Se nenhum revisor tiver sido especificado ou se nenhum dos operadores notificados tiver aprovado o pacote, o botão **[!UICONTROL Approve the package]** permitirá prosseguir diretamente para a aprovação no **[!UICONTROL Dashboard]** do pacote da campanha ou da visão geral dos pacotes.
+Se nenhum revisor tiver sido especificado ou se nenhum dos operadores notificados tiver aprovado o pacote, o botão **[!UICONTROL Approve the package]** permitirá prosseguir diretamente para a aprovação no **[!UICONTROL Dashboard]** do pacote de campanha ou da visão geral dos pacotes.
 
 ![](assets/s_advuser_mkg_dist_valid_button.png)
 

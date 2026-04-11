@@ -5,10 +5,9 @@ description: Monitorar campanhas de marketing
 role: User
 feature: Campaigns, Monitoring
 hide: true
-hidefromtoc: true
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
 
@@ -18,9 +17,9 @@ ht-degree: 100%
 
 ## Rastrear uma campanha {#tracking-a-campaign}
 
-Para cada campanha, a guia **[!UICONTROL Tracking]** permite visualizar todas as tarefas e os status. As seguintes informações podem ser acessadas por meio desta subguia:
+Para cada campanha, a guia **[!UICONTROL Tracking]** permite visualizar todos os processos e os status. As seguintes informações podem ser acessadas por meio desta subguia:
 
-* O diário de atividades mostra as tarefas realizadas na campanha em geral: criação ou início, aprovação, extração etc. do fluxo de tarefa.
+* O diário de atividades mostra os processos realizados na campanha em geral: criação ou início, aprovação, extração etc. do fluxo de tarefa.
 
   ![](assets/s_ncs_user_op_edit_exe_tab_a.png)
 
@@ -32,7 +31,7 @@ Para cada campanha, a guia **[!UICONTROL Tracking]** permite visualizar todas as
 
   ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
-* Os workflows criados para gerar mensagens para provedores de serviços são exibidos na subguia **[!UICONTROL Jobs on service providers]**. Clique no ícone **[!UICONTROL Detail]** para exibir o workflow selecionado.
+* Os fluxos de trabalho criados para gerar mensagens para provedores de serviços são exibidos na subguia **[!UICONTROL Jobs on service providers]**. Clique no ícone **[!UICONTROL Detail]** para exibir o fluxo de trabalho selecionado.
 
   ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 

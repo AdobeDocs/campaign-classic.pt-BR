@@ -6,11 +6,10 @@ feature: Resource Management
 audience: campaign
 content-type: reference
 hide: true
-hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 100%
 
@@ -109,7 +108,7 @@ A inscrição de um fórum permite seguir as discussões. Inscritos receberão u
 Se os operadores inscritos em um fórum não receberem notificações conforme esperado:
 
 * Verifique se os endereços de email estão inseridos nos perfis de operador.
-* Vá para o nó **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** e verifique se o workflow **[!UICONTROL Jobs in discussion forums]** foi iniciado e está livre de erros.
+* Vá para o nó **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** e verifique se o fluxo de trabalho **[!UICONTROL Jobs in discussion forums]** foi iniciado e está livre de erros.
 * Exibir os logs da entrega:
 
    * Na página inicial do Adobe Campaign, vá para **[!UICONTROL Campaigns > Navigation > Deliveries]**, então abra a entrega de **[!UICONTROL Discussion forum notification]**.

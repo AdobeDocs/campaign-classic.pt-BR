@@ -1,65 +1,64 @@
 ---
 product: campaign
-title: Supervisão de worflows
-description: Saiba como supervisionar workflows do Campaign
+title: Supervisão de fluxos de trabalho
+description: Saiba como supervisionar fluxos de trabalho do Campaign
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 100%
 
 ---
 
-# Caso de uso: supervisionar workflows{#supervising-workflows}
+# Caso de uso: supervisionar fluxos de trabalho{#supervising-workflows}
 
 
 
-Esse caso de uso detalha a criação de um workflow que permite monitorar o status de um conjunto de workflows que são &quot;pausados&quot;, &quot;interrompido&quot; ou &quot;com erros&quot;.
+Esse caso de uso detalha a criação de um fluxo de trabalho que permite monitorar o status de um conjunto de fluxos de trabalho que são &quot;pausados&quot;, &quot;interrompido&quot; ou &quot;com erros&quot;.
 
 Seu objetivo é:
 
-* Usar um workflow para monitorar um grupo de workflows de negócios.
+* Usar um fluxo de trabalho para monitorar um grupo de fluxos de trabalho de negócios.
 * Enviar uma mensagem para um supervisor por meio de uma atividade &quot;entrega&quot;.
 
-Para monitorar o status de um conjunto de workflows, siga estas etapas:
+Para monitorar o status de um conjunto de fluxos de trabalho, siga estas etapas:
 
-1. Crie o workflow de sincronização.
-1. Escreva o JavaScript para determinar se os workflows estão pausados, interrompidos ou com erros.
+1. Crie o fluxo de trabalho de sincronização.
+1. Escreva o JavaScript para determinar se os fluxos de trabalho estão pausados, interrompidos ou com erros.
 1. Crie a atividade **[!UICONTROL Test]**.
-1. Prepare o template de entrega.
+1. Prepare o modelo de entrega.
 
 >[!NOTE]
 >
->Além do workflow, o **Workflow Heatmap** do Campaign permite analisar os detalhes dos workflows executados no momento. Para obter mais informações, consulte a [seção dedicada](heatmap.md).
+>Além do fluxos de trabalho, o **Workflow Heatmap** do Campaign permite analisar os detalhes dos fluxos de trabalho executados no momento. Para obter mais informações, consulte a [seção dedicada](heatmap.md).
 >
->Para obter mais informações sobre como **monitorar a execução dos workflows**, consulte [esta seção](monitoring-workflow-execution.md).
+>Para obter mais informações sobre como **monitorar a execução dos fluxos de trabalho**, consulte [esta seção](monitoring-workflow-execution.md).
 
-## Etapa 1: Criação do workflow de monitoramento {#step-1--creating-the-monitoring-workflow}
+## Etapa 1: Criação do fluxo de trabalho de monitoramento {#step-1--creating-the-monitoring-workflow}
 
-A pasta de workflow que vamos monitorar é a pasta **&quot;CustomWorkflows&quot;** armazenada no nó **Administration > Production > Technical workflows.** Esta pasta contém um conjunto de workflows de negócios.
+A pasta de fluxos de trabalho que vamos monitorar é a pasta **&quot;CustomWorkflows&quot;** armazenada no nó **Administration > Production > Technical workflows.** Esta pasta contém um conjunto de fluxos de trabalho de negócios.
 
-O **Monitoring workflow** é armazenado na raiz da pasta Technical Workflows. O rótulo usado é **&quot;Monitoring&quot;**.
+O **Fluxo de trabalho de monitoramento** é armazenado na raiz da pasta Technical Workflows. O rótulo usado é **&quot;Monitoring&quot;**.
 
-O schema a seguir mostra a sequência de atividades:
+O esquema a seguir mostra a sequência de atividades:
 
 ![](assets/uc_monitoring_workflow_overview.png)
 
-Este workflow é composto por:
+Este fluxo de trabalho é composto por:
 
 * uma atividade **&quot;Start&quot;** .
-* uma atividade **&quot;JavaScript code&quot;** responsável pela análise da pasta de workflows corporativos.
-* uma atividade **&quot;Test&quot;** para enviar uma entrega ao supervisor ou reiniciar o workflow.
+* uma atividade **&quot;JavaScript code&quot;** responsável pela análise da pasta de fluxos de trabalho corporativos.
+* uma atividade **&quot;Test&quot;** para enviar uma entrega ao supervisor ou reiniciar o fluxo de trabalho.
 * uma atividade **&quot;Entrega&quot;** responsável pelo layout da mensagem.
-* uma atividade **&quot;Wait&quot;** que controla os tempos de lead entre as iterações do workflow.
+* uma atividade **&quot;Wait&quot;** que controla os tempos de lead entre as iterações do fluxo de trabalho.
 
 ## Etapa 2: Gravação do JavaScript {#step-2--writing-the-javascript}
 
-A primeira parte do código JavaScript coincides com um **query (queryDef)** que permite identificar os workflows com status &quot;pause&quot; (@state == 13), &quot;error&quot; (@failed == 1) ou &quot;stopped&quot; (@state == 20).
+A primeira parte do código JavaScript coincides com um **query (queryDef)** que permite identificar os fluxos de trabalho com status &quot;pause&quot; (@state == 13), &quot;error&quot; (@failed == 1) ou &quot;stopped&quot; (@state == 20).
 
-O **nome interno** da pasta de workflow a monitorar é fornecido na seguinte condição:
+O **nome interno** da pasta de fluxo de trabalho a monitorar é fornecido na seguinte condição:
 
 ```
 <condition boolOperator="AND" expr="[folder/@name] = 'Folder20'" internalId="1"/>
@@ -91,11 +90,11 @@ var queryWkfError = xtk.queryDef.create(
 var ndWkfError = queryWkfError.ExecuteQuery(); 
 ```
 
-A segunda parte do código JavaScript permite **exibir uma mensagem para cada workflow** com base no status recuperado durante a query.
+A segunda parte do código JavaScript permite **exibir uma mensagem para cada fluxo de trabalho** com base no status recuperado durante a consulta.
 
 >[!NOTE]
 >
->As strings criadas devem ser carregadas nas variáveis de evento do workflow.
+>As strings criadas devem ser carregadas nas variáveis de evento do fluxo de trabalho.
 
 ```
 for each ( var wkf in ndWkfError.workflow ) 
@@ -119,13 +118,13 @@ vars.strWorkflowStop = strStop;
 
 ## Etapa 3: Criação da atividade &quot;Test&quot; {#step-3--creating-the--test--activity}
 
-A atividade &quot;Test&quot; permite determinar se uma entrega precisa ser enviada ou se o workflow de monitoramento precisa executar outro ciclo com base na atividade &quot;Wait&quot;.
+A atividade &quot;Test&quot; permite determinar se uma entrega precisa ser enviada ou se o fluxo de trabalho de monitoramento precisa executar outro ciclo com base na atividade &quot;Wait&quot;.
 
 Uma entrega é realizada ao supervisor **se pelo menos uma das três variáveis de evento &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot; ou &quot;vars.strWorkflowStop&quot; for não nulas.**
 
 ![](assets/uc_monitoring_workflow_test.png)
 
-A atividade &quot;Wait&quot; pode ser configurada para reiniciar o workflow de monitoramento em intervalos regulares. Para esse caso de uso, **o tempo de espera é definido como uma hora**.
+A atividade &quot;Wait&quot; pode ser configurada para reiniciar o fluxo de trabalho de monitoramento em intervalos regulares. Para esse caso de uso, **o tempo de espera é definido como uma hora**.
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
@@ -133,31 +132,31 @@ A atividade &quot;Wait&quot; pode ser configurada para reiniciar o workflow de m
 
 A atividade &quot;Entrega&quot; baseia-se em um **template de entrega** armazenado no nó **Resources > Templates > Templates de entrega**.
 
-Este template deve incluir:
+Este modelo deve incluir:
 
 * **o endereço de e-mail do supervisor**.
 * **Conteúdo HTML** para inserir texto personalizado.
 
   ![](assets/uc_monitoring_workflow_variables_diffusion.png)
 
-  As três variáveis declaradas (WF_Stop, WF_Paused, WF_Error) correspondem às três variáveis de evento do workflow.
+  As três variáveis declaradas (WF_Stop, WF_Paused, WF_Error) correspondem às três variáveis de evento do fluxo de trabalho.
 
-  Essas variáveis devem ser declaradas na guia **Variables** das propriedades do template de entrega.
+  Essas variáveis devem ser declaradas na guia **Variables** das propriedades do modelo de entrega.
 
-  Para recuperar **o conteúdo das variáveis de evento do workflow**, é preciso declarar as variáveis específicas para a entrega que será inicializada com valores retornados pelo código JavaScript.
+  Para recuperar **o conteúdo das variáveis de evento do fluxo de trabalho**, é preciso declarar as variáveis específicas para a entrega que será inicializada com valores retornados pelo código JavaScript.
 
-  O template de entrega tem o seguinte conteúdo:
+  O modelo de entrega tem o seguinte conteúdo:
 
   ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
-Depois que o template tiver sido criado e aprovado, é necessário configurar a atividade **Entrega** para:
+Depois que o modelo tiver sido criado e aprovado, é necessário configurar a atividade **Entrega** para:
 
-* vincular a atividade &quot;Entrega&quot; ao template de entrega criado anteriormente.
-* vincular as variáveis de evento do workflow àquelas específicas do template de entrega.
+* vincular a atividade &quot;Entrega&quot; ao modelo de entrega criado anteriormente.
+* vincular as variáveis de evento do fluxo de trabalho àquelas específicas do modelo de entrega.
 
 Clique duas vezes na atividade **Entrega** e selecione as seguintes opções:
 
-* Entrega: selecione **New, created from a template** e selecione o template de entrega criado anteriormente.
+* Entrega: selecione **New, created from a template** e selecione o modelo de entrega criado anteriormente.
 * Para os campos **Destinatários e Conteúdo**, selecione **Especificado na entrega**.
 * Ação para executar: selecione **Prepare and start**.
 * Desmarque a opção **Process errors**.
@@ -178,6 +177,6 @@ Clique duas vezes na atividade **Entrega** e selecione as seguintes opções:
   delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
   ```
 
-Depois que esse workflow de monitoramento for iniciado, ele enviará o seguinte resumo para o destinatário:
+Depois que esse fluxo de trabalho de monitoramento for iniciado, ele enviará o seguinte resumo para o destinatário:
 
 ![](assets/uc_monitoring_workflow_mailfinal.png)

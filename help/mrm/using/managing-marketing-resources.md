@@ -6,11 +6,10 @@ feature: Resource Management
 audience: campaign
 content-type: reference
 hide: true
-hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 100%
 
@@ -141,26 +140,26 @@ Para publicar um recurso, clique no botão **[!UICONTROL Publish]** na zona de e
 
 ![](assets/s_ncs_user_mkg_resource_available.png)
 
-É possível também automatizar a publicação de um recurso por meio de um workflow.
+É possível também automatizar a publicação de um recurso por meio de um fluxo de trabalho.
 
 Publicar um recurso significa torná-lo disponível para uso (por outra tarefa, por exemplo). Publicações como tal variam dependendo da natureza do seu recurso: para um panfleto, publicar pode significar enviar o arquivo para uma impressora, para uma agência da Web, pode significar publicá-lo em um site etc.
 
-Para que o Adobe Campaign publique, você precisa criar um workflow adequado e vinculá-lo ao recurso. Para fazer isso, abra a caixa do recurso **[!UICONTROL Advanced settings]** e selecione o fluxo de trabalho desejado no campo **[!UICONTROL Post-processing]**.
+Para que o Adobe Campaign publique, você precisa criar um fluxo de trabalho adequado e vinculá-lo ao recurso. Para fazer isso, abra a caixa do recurso **[!UICONTROL Advanced settings]** e selecione o fluxo de trabalho desejado no campo **[!UICONTROL Post-processing]**.
 
 ![](assets/mrm_asset_postprocessing_workflow.png)
 
-O workflow será executado:
+O fluxo de trabalho será executado:
 
 * Quando o revisor clicar no link **[!UICONTROL Publish resource]** (ou, se nenhum revisor foi definido, a pessoa encarregada do recurso).
 * Se o recurso for gerenciado por meio de uma tarefa de criação de recurso de marketing, ele será executado quando a tarefa for definida como **[!UICONTROL Finished]**, desde que a caixa **[!UICONTROL Publish the marketing resource]** esteja marcada na tarefa (Consulte [Tarefa de criação de recurso de marketing](../../mrm/using/creating-and-managing-tasks.md#marketing-resource-creation-task))
 
-Se um fluxo de trabalho não for iniciado imediatamente (se ele for interrompido, por exemplo), o status do recurso será alterado para **[!UICONTROL Pending publication]**. Quando o fluxo de trabalho for iniciado, o status do recurso será alterado para **[!UICONTROL Published]**. Este status não leva em conta os possíveis erros no processo de publicação. Verifique o status do seu workflow para verificar se ele foi executado corretamente.
+Se um fluxo de trabalho não for iniciado imediatamente (se ele for interrompido, por exemplo), o status do recurso será alterado para **[!UICONTROL Pending publication]**. Quando o fluxo de trabalho for iniciado, o status do recurso será alterado para **[!UICONTROL Published]**. Este status não leva em conta os possíveis erros no processo de publicação. Verifique o status do seu fluxo de trabalho para verificar se ele foi executado corretamente.
 
 ## Vincular um recurso a uma campanha {#linking-a-resource-to-a-campaign}
 
 ### Referência a um recurso de marketing {#referencing-a-marketing-resource}
 
-Os recursos de marketing podem ser associados a campanhas, desde que este recurso tenha sido selecionado no template de campanha.
+Os recursos de marketing podem ser associados a campanhas, desde que este recurso tenha sido selecionado no modelo de campanha.
 
 >[!NOTE]
 >

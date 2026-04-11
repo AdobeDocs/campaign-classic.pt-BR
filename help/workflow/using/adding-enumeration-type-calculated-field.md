@@ -1,22 +1,21 @@
 ---
 product: campaign
-title: Adicionar um campo calculado do tipo lista discriminada
-description: Saiba como adicionar um campo calculado do tipo lista discriminada
+title: Adicionar um campo calculado do tipo Enumeração
+description: Aprenda a adicionar um campo calculado do tipo Enumeração
 audience: workflow
 content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '437'
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
 
-# Adicionar um campo calculado do tipo lista discriminada {#adding-an-enumeration-type-calculated-field}
+# Adicionar um campo calculado do tipo Enumeração {#adding-an-enumeration-type-calculated-field}
 
 
 
@@ -24,7 +23,7 @@ Aqui queremos criar uma consulta com um campo calculado do tipo **[!UICONTROL En
 
 * Qual tabela precisa ser selecionada?
 
-  A tabela de destinatário (nms:recipient)
+  A tabela de destinatários (nms:recipient)
 
 * Campos a serem selecionados na coluna de saída?
 
@@ -36,7 +35,7 @@ Aqui queremos criar uma consulta com um campo calculado do tipo **[!UICONTROL En
 
 Siga as etapas abaixo:
 
-1. Abra o editor de query genérico e selecione a tabela Destinatário (**[!UICONTROL nms:recipient]**).
+1. Abra o editor de consultas genérico e selecione a tabela Destinatário (**[!UICONTROL nms:recipient]**).
 1. Na janela **[!UICONTROL Data to extract]**, selecione **[!UICONTROL Last name]**, **[!UICONTROL First name]** e **[!UICONTROL Gender]**.
 
    ![](assets/query_editor_nveau_73.png)
@@ -57,7 +56,7 @@ Siga as etapas abaixo:
 
    ![](assets/query_editor_nveau_76.png)
 
-   Defina os valores **Source** e **Destination** : o valor de destino facilita a leitura da query. Esta query deve retornar o sexo do destinatário e o resultado será 0, 1 ou 2.
+   Defina os valores **Source** e **Destination** : o valor de destino facilita a leitura da consulta. Esta consulta deve retornar o gênero do destinatário e o resultado será 0, 1 ou 2.
 
    Para cada linha &quot;source-destination&quot; a ser inserida, clique em **[!UICONTROL Add]** em **[!UICONTROL List of enumeration values]**:
 
@@ -73,7 +72,7 @@ Siga as etapas abaixo:
 1. Na janela **[!UICONTROL Data formatting]**, clique em **[!UICONTROL Next]**.
 1. Na janela da pré-visualização, **[!UICONTROL start the preview of the data]**.
 
-   A coluna adicional define o sexo de 0, 1 e 2:
+   A coluna adicional define o gênero de 0, 1 e 2:
 
    * 0 para &quot;Não indicado&quot;
    * 1 para &quot;Masculino&quot;
@@ -81,7 +80,7 @@ Siga as etapas abaixo:
 
    ![](assets/query_editor_nveau_78.png)
 
-   Por exemplo, se você não inserir o gênero &quot;2&quot; em **[!UICONTROL List of enumeration values]** e a função **[!UICONTROL Generate a warning and continue]** do campo **[!UICONTROL In other cases]** for selecionada, você receberá um log de aviso. Este log indica que o sexo &quot;2&quot; (Feminino) não foi digitado. Exibido no campo **[!UICONTROL Logs generated during export]** da janela de pré-visualização de dados.
+   Por exemplo, se você não inserir o gênero &quot;2&quot; em **[!UICONTROL List of enumeration values]** e a função **[!UICONTROL Generate a warning and continue]** do campo **[!UICONTROL In other cases]** for selecionada, você receberá um log de aviso. Este log indica que o gênero &quot;2&quot; (Feminino) não foi digitado. Exibido no campo **[!UICONTROL Logs generated during export]** da janela de pré-visualização de dados.
 
    ![](assets/query_editor_nveau_79.png)
 

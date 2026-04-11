@@ -5,9 +5,8 @@ description: Gerenciar dados entre o Campaign e o CRM
 feature: Microsoft CRM Integration, Salesforce Integration
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 hide: true
-hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 100%
 
@@ -108,7 +107,7 @@ Por padrão, os seguintes campos são usados (na ordem especificada):
 A ativação da opção **[!UICONTROL Automatic index]** gera três variáveis que podem ser usadas no fluxo de trabalho de sincronização por meio de uma atividade do tipo **[!UICONTROL JavaScript code]**. Essas atividades são:
 
 * **vars.crmOptionName**: representa o nome da opção que contém a data de última importação.
-* **vars.crmStartImport**: representa a data de início (incluída) da última recuperação de dados.
+* **vars.crmStartImport**: representa a data inicial (incluída) da última recuperação de dados.
 * **vars.crmEndDate**: representa a data final (excluída) da última recuperação de dados.
 
   >[!NOTE]
@@ -145,7 +144,7 @@ A ordem das colunas na lista é a ordem de classificação:
 
 ### Identificação de registro {#record-identification}
 
-Em vez de importar elementos incluídos (e possivelmente filtrados) no CRM, você pode usar uma população calculada previamente no workflow.
+Em vez de importar elementos incluídos (e possivelmente filtrados) no CRM, você pode usar uma população calculada anteriormente no fluxo de trabalho.
 
 Para fazer isso, selecione a opção **[!UICONTROL Use the population calculated upstream]** e especifique o campo que contém o identificador remoto.
 
@@ -157,7 +156,7 @@ Em seguida, selecione os campos da população de entrada que deseja importar, c
 
 A exportação de dados do Adobe Campaign para o CRM permite copiar todo o conteúdo para um banco de dados do CRM.
 
-Para exportar dados para o CRM, você precisa criar o seguinte tipo de workflow:
+Para exportar dados para o CRM, você precisa criar o seguinte tipo de fluxo de trabalho:
 
 ![](assets/crm_export_diagram.png)
 
@@ -188,7 +187,7 @@ Para uma exportação, aplique a seguinte configuração à atividade do **[!UIC
 
    >[!NOTE]
    >
-   >A lista de registros a serem exportados e o resultado da exportação são salvas em um arquivo temporário que permanece acessível até que o workflow seja concluído ou reiniciado. Isso permite que você inicie o processo novamente em caso de erro, sem correr o risco de exportar o mesmo registro várias vezes ou perder dados.
+   >A lista de registros a serem exportados e o resultado da exportação são salvas em um arquivo temporário que permanece acessível até que o fluxo de trabalho seja concluído ou reiniciado. Isso permite que você inicie o processo novamente em caso de erro, sem correr o risco de exportar o mesmo registro várias vezes ou perder dados.
 
 ## Configurações adicionais {#additional-configurations}
 
@@ -228,7 +227,7 @@ As rejeições são coletadas com o código de erro e a mensagem relacionada, is
 >
 >Mesmo quando a opção **[!UICONTROL Process rejects]** não está habilitada, um aviso é gerado para cada coluna rejeitada com um código de erro e uma mensagem.
 
-A transição **[!UICONTROL Reject]** de saída permite que você acesse o schema de saída que contém as colunas específicas relevantes para mensagens e códigos de erro. Para o Salesforce.com, essa coluna é **errorSymbol** (símbolo de erro, diferente do código de erro), **errorMessage** (descrição do contexto de erro).
+A transição **[!UICONTROL Reject]** de saída permite que você acesse o esquema de saída que contém as colunas específicas relevantes para mensagens e códigos de erro. Para o Salesforce.com, essa coluna é **errorSymbol** (símbolo de erro, diferente do código de erro), **errorMessage** (descrição do contexto de erro).
 
 ## Importar objetos excluídos no CRM {#importing-objects-deleted-in-the-crm}
 

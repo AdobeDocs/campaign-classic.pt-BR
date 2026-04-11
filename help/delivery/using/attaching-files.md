@@ -6,10 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Email
 role: User
 hide: true
-hidefromtoc: true
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 100%
 
@@ -32,7 +31,7 @@ Há dois casos possíveis:
 
 >[!NOTE]
 >
->Esse tipo de configuração é geralmente executada nos templates da entrega. Para obter mais informações, consulte [Sobre templates](about-templates.md).
+>Esse tipo de configuração é geralmente executada nos modelos da entrega. Para obter mais informações, consulte [Sobre modelos](about-templates.md).
 
 ## Medidas de proteção {#attachments-guardrails}
 
@@ -80,7 +79,7 @@ Para criar um anexo personalizado, siga estas etapas:
 
 As seguintes opções estão disponíveis:
 
-* **O nome do arquivo é especificado ao criar o template da entrega**
+* **O nome do arquivo é especificado ao criar o modelo da entrega**
 * **O conteúdo do arquivo é personalizado e convertido em PDF durante a entrega de cada mensagem**
 * **O nome do arquivo é computado durante a análise de entrega (não pode depender do perfil do destinatário)**
 * **O nome do arquivo é computado no momento da entrega para cada destinatário (pode depender do destinatário)**
@@ -129,7 +128,7 @@ Você pode calcular o nome do anexo durante a preparação da entrega. Para faze
 
 >[!NOTE]
 >
->Essa opção é usada somente quando a entrega é enviada por um processo externo ou um workflow.
+>Essa opção é usada somente quando a entrega é enviada por um processo externo ou um fluxo de trabalho.
 
 1. Especifique o rótulo que deseja aplicar ao anexo.
 1. Especifique o caminho de acesso do arquivo e seu nome exato na janela de definição.
@@ -152,7 +151,7 @@ Ao selecionar o anexo, você pode escolher a opção **[!UICONTROL The file name
 
 >[!NOTE]
 >
->Essa opção é usada somente quando a entrega é enviada por um processo externo ou um workflow.
+>Essa opção é usada somente quando a entrega é enviada por um processo externo ou um fluxo de trabalho.
 
 1. Especifique o rótulo que deseja aplicar ao anexo.
 1. Especifique o caminho de acesso do arquivo e seu nome exato na janela de definição. Se o nome do arquivo for personalizado, você poderá usar os Campos de personalização para os valores relevantes.

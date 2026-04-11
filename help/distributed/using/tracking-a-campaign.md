@@ -4,10 +4,9 @@ title: Rastrear uma campanha
 description: Saiba como rastrear uma campanha com o Marketing distribuído do Campaign
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 100%
 
@@ -70,13 +69,13 @@ O campo **[!UICONTROL Comment]** permite justificar o cancelamento.
 
 Para **campanhas locais**, cancelar um pacote o remove da lista de campanhas de marketing disponíveis.
 
-Para **campanhas colaborativas**, cancelar um pacote inicia várias ações:
+Para **campanhas colaborativas**, cancelar um pacote aciona várias ações:
 
 1. Quaisquer pedidos relacionados a este pacote serão cancelados,
 
    ![](assets/mkg_dist_mutual_op_cancelled.png)
 
-1. A campanha de referência é cancelada e todos os processos ativos (workflows, entregas) são interrompidos,
+1. A campanha de referência é cancelada e todos os processos ativos (fluxos de trabalho, entregas) são interrompidos,
 
    ![](assets/mkg_dist_mutual_op_cancelled1.png)
 

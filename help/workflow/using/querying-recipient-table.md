@@ -4,12 +4,11 @@ title: Consultar a tabela de destinatários
 description: Saiba como consultar a tabela de destinatários
 feature: Query Editor, Workflows
 hide: true
-hidefromtoc: true
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '392'
-ht-degree: 100%
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +20,7 @@ Neste exemplo, queremos recuperar os nomes e e-mails dos destinatários cujos do
 
 * Qual tabela devemos selecionar?
 
-  A tabela de destinatário (nms:recipient)
+  A tabela de destinatários (nms:recipient)
 
 * Campos a serem selecionados como colunas de saída
 
@@ -53,7 +52,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    ![](assets/query_editor_05.png)
 
-1. Se necessário, clique no botão **[!UICONTROL Distribution of values]** para visualizar uma distribuição baseada no domínio de email de prospectos. Uma porcentagem está disponível para cada domínio de e-mail no banco de dados. Domínios diferentes de &quot;orange.co.uk&quot; são exibidos até o filtro ser aplicado.
+1. Se necessário, clique no botão **[!UICONTROL Distribution of values]** para visualizar uma distribuição baseada no domínio de email de clientes potenciais. Uma porcentagem está disponível para cada domínio de e-mail no banco de dados. Domínios diferentes de &quot;orange.co.uk&quot; são exibidos até o filtro ser aplicado.
 
    Um resumo da consulta é exibido na parte inferior da janela: **Email domain equal to &#39;orange.co.uk&#39;**.
 
@@ -61,7 +60,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    ![](assets/query_editor_nveau_17.png)
 
-1. Agora, vamos alterar a query para localizar os contatos que não moram em Londres.
+1. Agora, vamos alterar a consulta para localizar os contatos que não moram em Londres.
 
    Selecione **[!UICONTROL City (location/@city)]** na coluna **[!UICONTROL Expression]**, **[!UICONTROL different from]** como operador e insira **[!UICONTROL London]** na coluna **[!UICONTROL Value]**.
 
@@ -73,7 +72,7 @@ Para criar este exemplo, aplique as seguintes etapas:
 
    ![](assets/query_editor_nveau_15.png)
 
-1. Na janela **[!UICONTROL Data preview]**, clique em **[!UICONTROL Start the preview of the data]**. Essa função calcula o resultado da query.
+1. Na janela **[!UICONTROL Data preview]**, clique em **[!UICONTROL Start the preview of the data]**. Essa função calcula o resultado da consulta.
 
    A guia **[!UICONTROL Column results]** mostra o resultado da consulta em colunas.
 

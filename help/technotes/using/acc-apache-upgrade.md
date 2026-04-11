@@ -4,9 +4,8 @@ title: Nota técnica - Adobe Campaign - Atualização de segurança da versão A
 description: Adobe Campaign - Atualização de segurança da versão do Apache
 feature: Technote, Upgrade
 hide: true
-hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 2%
@@ -20,13 +19,13 @@ ht-degree: 2%
 
 O Adobe Campaign funciona com ferramentas de terceiros e a compatibilidade é atualizada regularmente, a fim de implementar somente as versões compatíveis e se beneficiar das correções e melhorias mais recentes.
 
-O Adobe Campaign inclui o Apache Tomcat, que atua como ponto de entrada no servidor de aplicativos via HTTP e é integrado ao Apache Web Server. O Apache Software Foundation lançou o Apache HTTP Server 2.4.53. Esta versão aborda vulnerabilidades que podem permitir que um invasor remoto assuma o controle de um sistema afetado. Saiba mais em [Comunicado do Apache 2.4.53](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
+O Adobe Campaign inclui o Apache Tomcat, que atua como ponto de entrada no servidor de aplicativos via HTTP e é integrado ao Apache Web Server. O Apache Software Foundation lançou o Apache HTTP Server 2.4.53. Esta versão aborda vulnerabilidades que podem permitir que um invasor remoto assuma o controle de um sistema afetado. Saiba mais em [Anúncio do Apache 2.4.53](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
 
-A equipe do Adobe Campaign conduzirá a atividade de atualização de segurança da versão do Apache até **15 de junho de 2022** para atenuar essa vulnerabilidade do Apache e tornar seu ambiente de instância mais seguro. Essa atualização se aplica a todos os clientes do Campaign Classic v7 Managed Services, Campaign v8 e clientes do Campaign Standard que estejam executando em uma versão vulnerável do Apache HTTP Server. Se você for afetado, o Adobe já entrará em contato com você para informá-lo sobre essa atualização.
+A equipe do Adobe Campaign conduzirá a atividade de atualização de segurança da versão do Apache até **15 de junho de 2022** para atenuar essa vulnerabilidade do Apache e tornar seu ambiente de instância mais seguro. Essa atualização se aplica a todos os clientes do Campaign Classic v7 Managed Services, Campaign v8 e Campaign Standard que estejam executando em uma versão vulnerável do Apache HTTP Server. Se você for afetado, a Adobe já entrou em contato com você para informá-lo sobre essa atualização.
 
 Espera-se que essa atualização seja executada automaticamente fora do horário comercial normal para que você continue usando o serviço do Campaign sem interrupções.
 
-Suas instâncias de não produção serão atualizadas pelo Adobe primeiro, e suas instâncias de produção serão atualizadas. Como esse é um processo de atualização automático de propriedade do Adobe, nenhuma ação é necessária da sua parte. No entanto, se você tiver algum problema, entre em contato com o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support).
+Suas instâncias de não produção serão atualizadas pela Adobe primeiro, depois suas instâncias de produção serão atualizadas. Como esse é um processo de atualização automática de propriedade da Adobe, nenhuma ação é necessária da sua parte. No entanto, se você tiver algum problema, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
@@ -57,7 +56,7 @@ Suas instâncias de não produção serão atualizadas pelo Adobe primeiro, e su
 
 * **Que validações precisam ser executadas pelos clientes?**
 
-  Nenhum teste específico é necessário para esta atualização de segurança. Caso algum problema seja observado, entre em contato com o [Adobe Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support).
+  Nenhum teste específico é necessário para esta atualização de segurança. Caso algum problema seja observado, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 * **É possível solicitar uma alteração em Data/Hora no slot de atualização de segurança agendado?**
@@ -65,4 +64,4 @@ Suas instâncias de não produção serão atualizadas pelo Adobe primeiro, e su
   Como essa é uma correção de segurança, recomendamos que você se adapte à programação existente.
 
 
-Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support).
+Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).

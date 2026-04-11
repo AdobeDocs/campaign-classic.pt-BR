@@ -3,13 +3,12 @@ product: campaign
 title: Opções de ajuda e suporte para o Campaign Classic
 description: Precisa de suporte para o Campaign Classic? Você está no lugar certo.
 feature: Troubleshooting
-hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 70%
+ht-degree: 71%
 
 ---
 
@@ -40,7 +39,7 @@ Obtenha suporte usando as perguntas frequentes, as práticas recomendadas, os re
         <ul>
         <li><a href="platform/using/faq-campaign-classic-v7.md">Perguntas frequentes sobre o Campaign Classic v7</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Atualização da build</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html" target="_blank">Perguntas frequentes abrangentes sobre o Campaign v8</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=pt-BR" target="_blank">Perguntas frequentes abrangentes sobre o Campaign v8</a></li>
         <li><a href="delivery/using/about-delivery-monitoring.md">Monitoramento de entrega</a></li>
         </ul>
     </td>
@@ -71,10 +70,10 @@ Obtenha suporte usando as perguntas frequentes, as práticas recomendadas, os re
         <li><a href="production/using/build-upgrade.md">Atualizar para a build mais recente</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Perguntas frequentes sobre atualização de build</a></li>
         <li><a href="delivery/using/about-delivery-monitoring.md">Monitorar uma entrega</a></li>
-        <li><a href="delivery/using/delivery-failures-quarantine.md">Entender o gerenciamento de quarentenas</a></li>
+        <li><a href="delivery/using/delivery-failures-quarantine.md">Entender o gerenciamento de quarentena</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Lista de verificação de segurança e privacidade</a></li>
         <li><a href="platform/using/privacy-management.md">Gestão do consentimento e da privacidade</a></li>
-        <li><a href="platform/using/adobe-campaign-workspace.md#about-queries-in-campaign">Criar uma query</a></li>
+        <li><a href="platform/using/adobe-campaign-workspace.md#about-queries-in-campaign">Criar uma consulta</a></li>
         <li><a href="workflow/using/querying-recipient-table.md">Amostras de consulta</a></li>
         <li><a href="workflow/using/building-a-workflow.md">Criar um fluxo de trabalho</a></li>
         </ul>
@@ -93,7 +92,7 @@ O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho 
 
 >[!NOTE]
 >
->O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta seção](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
+>O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a uma pessoa estão detalhadas [nesta seção](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
 >Observe que sua instância deve ser hospedada no AWS e atualizada com a [compilação de DG](rn/using/rn-overview.md) mais recente. Saiba como verificar a versão [nesta seção](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
 
@@ -101,7 +100,7 @@ O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho 
 
 O Painel de controle está disponível diretamente na Adobe Experience Cloud. Ele pode ser acessado apenas por usuários administradores. [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=pt-BR) para obter mais informações.
 
-### Perguntas frequentes sobre o Painel de controle
+### Perguntas frequentes do Painel de Controle do Campaign
 
 [Clique aqui](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR) para acessar as Perguntas frequentes sobre o Painel de controle do Campaign.
 
@@ -132,7 +131,7 @@ O novo sistema de emissão de tíquetes foi iniciado pelo [Adobe Admin Console](
 
 ### Pergunte aos especialistas.
 
-Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){_blank}.
+Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Acessar o Centro de download do Campaign
 

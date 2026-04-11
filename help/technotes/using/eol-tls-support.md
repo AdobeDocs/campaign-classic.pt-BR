@@ -7,9 +7,8 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 hide: true
-hidefromtoc: true
 exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
-source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 4%
@@ -20,11 +19,11 @@ ht-degree: 4%
 
 
 
-O Adobe não é mais compatível com sistemas de usuários e sistemas de clientes que não são compatíveis com o protocolo TLS 1.2. Se você continuar a usar versões mais antigas do TLS, poderá perder o acesso a todos os produtos e serviços da Adobe.
+O Adobe não oferece mais suporte a sistemas de usuários e de clientes que não estejam em conformidade com o protocolo TLS 1.2. Se você continuar a usar versões mais antigas do TLS, poderá perder o acesso a todos os produtos e serviços da Adobe.
 
 ## Por que estou vendo esta página?
 
-Se você vir a seguinte mensagem: **Esta página não pode ser exibida**, significa que o Adobe aplicativos, página da Web ou serviço que você está tentando acessar requer uma conexão de rede mais segura com seu navegador da Web, sistema operacional ou aplicativo. É obrigatório usar o **TLS 1.2** para comunicações de rede seguras e troca de dados entre sistemas de usuários e aplicativos e serviços Web do Adobe.
+Se você vir a seguinte mensagem: **Esta página não pode ser exibida**, significa que os aplicativos, a página da Web ou o serviço da Adobe que você está tentando acessar exigem uma conexão de rede mais segura com seu navegador da Web, sistema operacional ou aplicativo. É obrigatório usar o **TLS 1.2** para comunicações de rede seguras e troca de dados entre sistemas de usuários e aplicativos e serviços Web da Adobe.
 
 O Adobe descontinuou o suporte para versões anteriores do TLS (incluindo TLS 1.0 e 1.1). Para obter detalhes técnicos sobre o protocolo TLS 1.2, consulte [Perguntas frequentes](#faq).
 
@@ -53,11 +52,11 @@ O sistema operacional e as estruturas de aplicativo também devem ser compatíve
 
 * **Qual é o impacto?**
 
-  Os padrões de conformidade de segurança do Adobe exigem a desativação de protocolos mais antigos a partir de maio de 2018 e exigem o uso do TLS 1.2 como a versão atualizada. Se o seu sistema não for compatível com TLS 1.2, o acesso a alguns aplicativos e serviços do Adobe será restrito.
+  Os padrões de conformidade em segurança da Adobe exigem a desativação de protocolos mais antigos a partir de maio de 2018 e exigem o uso do TLS 1.2 como a versão atualizada. Se o seu sistema não for compatível com TLS 1.2, o acesso a alguns aplicativos e serviços da Adobe será restrito.
 
 * **Como o TLS afeta você?**
 
-  Você só pode se envolver com alguns aplicativos e serviços Adobe por meio de uma conexão de rede segura. O TLS ajuda a garantir que a conexão entre seu navegador e esses aplicativos e serviços da Web seja segura e confiável.
+  Você só pode se envolver com alguns aplicativos e serviços da Adobe por meio de uma conexão de rede segura. O TLS ajuda a garantir que a conexão entre seu navegador e esses aplicativos e serviços da Web seja segura e confiável.
 
   À medida que novos navegadores e sistemas operacionais são lançados, os padrões de segurança são atualizados para garantir níveis mais altos de privacidade e integridade dos dados. No entanto, as versões mais antigas desses navegadores ou SO não são atualizadas para incluir os padrões mais recentes.
 
@@ -71,25 +70,25 @@ O sistema operacional e as estruturas de aplicativo também devem ser compatíve
 
 * **Por que o Adobe está desabilitando o suporte para TLS 1.0 e 1.1?**
 
-  O Adobe tem padrões de conformidade de segurança que exigem a desativação do suporte para protocolos mais antigos. Um desses padrões garante a conformidade com o PCI (Payment Card Industry, setor de cartões de pagamento). O servidor de adaptação PCI é um conjunto de padrões de segurança que exigem que as organizações aceitem, processem, armazenem ou transmitam informações de cartão de crédito para manter um ambiente seguro.
+  A Adobe tem padrões de conformidade em segurança que exigem a desativação do suporte para protocolos mais antigos. Um desses padrões garante a conformidade com o PCI (Payment Card Industry, setor de cartões de pagamento). O servidor de adaptação PCI é um conjunto de padrões de segurança que exigem que as organizações aceitem, processem, armazenem ou transmitam informações de cartão de crédito para manter um ambiente seguro.
 
   A conformidade com o PCI exige o uso do TLS 1.1 ou superior a partir de maio de 2018.
 
-* **Por que o Adobe está exigindo o uso de TLS 1.2 em vez de permitir TLS 1.1 ou TLS 1.0?**
+* **Por que a Adobe está exigindo o uso do TLS 1.2 em vez de permitir o TLS 1.1 ou o TLS 1.0?**
 
-  A maioria das solicitações de aplicativos e serviços da Web para Adobe são originados de sistemas de usuários compatíveis com TLS 1.2, com baixo tráfego de sistemas TLS 1.1.
+  A maioria das solicitações de aplicativos e serviços da Web do Adobe é originada de sistemas de usuários compatíveis com TLS 1.2, com baixo tráfego de sistemas TLS 1.1.
 
-  O Adobe migrou para TLS 1.2 para que seus aplicativos e serviços da Web sejam acessados com mais segurança.
+  O Adobe migrou para o TLS 1.2 para que seus aplicativos e serviços da Web sejam acessados com mais segurança.
 
 * **Qual é a última data em que posso usar uma versão mais antiga do TLS?**
 
-  O Adobe incentiva os usuários a abandonarem rapidamente as versões mais antigas para evitar a exposição a vulnerabilidades de segurança. Para obter mais informações, entre em contato com o Atendimento ao cliente da Adobe ou com o gerente de sucesso do cliente.
+  O Adobe incentiva os usuários a abandonar rapidamente as versões mais antigas para evitar a exposição a vulnerabilidades de segurança. Para obter mais informações, entre em contato com o Atendimento ao cliente da Adobe ou com o gerente de sucesso do cliente.
 
 * **Que mensagem de erro será exibida se eu usar um navegador não configurado para TLS 1.2?**
 
   Depende do navegador que você está usando. Todos os navegadores mencionados na [Matriz de Compatibilidade do Campaign](../../rn/using/compatibility-matrix.md) estão configurados para usar TLS 1.2. Se você estiver usando um navegador ou uma versão que não consta na lista, atualize o navegador.
 
-  O Adobe não controla as mensagens de erro geradas pela camada de comunicações SSL. O navegador gera essas mensagens antes de se conectar a aplicativos e serviços Adobe. Este é um exemplo de erro que pode ocorrer com o Internet Explorer 11 no Windows 7:
+  A Adobe não controla mensagens de erro geradas pela camada de comunicações SSL. O navegador gera essas mensagens antes de se conectar aos aplicativos e serviços da Adobe. Este é um exemplo de erro que pode ocorrer com o Internet Explorer 11 no Windows 7:
 
   ![](assets/do-not-translate/page-not-displayed.png)
 

@@ -1,12 +1,11 @@
 ---
 product: campaign
 title: Entregas
-description: Saiba mais sobre os workflows de entrega padrão
+description: Saiba mais sobre os fluxos de trabalho de entrega padrão
 hide: true
-hidefromtoc: true
 feature: Workflows
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 100%
 
@@ -39,12 +38,12 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Entregas
   <tr> 
    <td> <span class="uicontrol">Limpeza de alias</span> <br /> </td> 
    <td> <span class="uicontrol">aliasCleansing</span> <br /> </td> 
-   <td> Esse workflow padroniza os valores de enumeração. É acionado todos os dias às 3:00 AM por padrão.<br /> </td> 
+   <td> Esse fluxo de trabalho padroniza os valores de enumeração. É acionado todos os dias às 3:00 AM por padrão.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Atualizar para capacidade de entrega</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td> Esse workflow permite criar a lista de regras de qualificação de email de devolução, bem como a lista de domínios e MXs na plataforma. Este workflow funciona somente se a porta HTTPS estiver aberta. Essas listas não são atualizadas a menos que o módulo Deliverability esteja instalado.<br /> </td> 
+   <td> Esse fluxo de trabalho permite criar a lista de regras de qualificação de email de devolução, bem como a lista de domínios e MXs na plataforma. Este fluxo de trabalho funciona somente se a porta HTTPS estiver aberta. Essas listas não são atualizadas a menos que o módulo Deliverability esteja instalado.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Limpeza do banco de dados</span> <br /> </td> 
@@ -54,12 +53,12 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Entregas
   <tr> 
    <td> <span class="uicontrol">Limpeza de fluxos de trabalho pausados</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>Triggers is translated correctly in this case. Esse fluxo de trabalho analisa fluxos de trabalho pausados que têm a severidade definida como normal e emite avisos e notificações quando ficam pausados por muito tempo. Após um mês, os workflows técnicos pausados são interrompidos definitivamente. Por padrão, é acionado toda segunda-feira às 5h.</p> <p>Para obter mais informações, consulte <a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Manuseio de fluxos de trabalho pausados</a>.</p></td> 
+   <td> <p>Triggers is translated correctly in this case. Esse fluxo de trabalho analisa fluxos de trabalho pausados que têm a severidade definida como normal e emite avisos e notificações quando ficam pausados por muito tempo. Após um mês, os fluxos de trabalho técnicos pausados são interrompidos definitivamente. Por padrão, é acionado toda segunda-feira às 5h.</p> <p>Para obter mais informações, consulte <a href="monitoring-workflow-execution.md#handling-of-paused-workflows" target="_blank">Manuseio de fluxos de trabalho pausados</a>.</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Notificação da oferta</span> <br /> </td> 
    <td> <span class="uicontrol">offerMgt</span> <br /> </td> 
-   <td> Esse workflow implanta ofertas aprovadas no ambiente online, bem como todas as categorias contidas no catálogo de oferta.<br /> </td> 
+   <td> Esse fluxo de trabalho implanta ofertas aprovadas no ambiente online, bem como todas as categorias contidas no catálogo de oferta.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Previsão</span> <br /> </td> 
@@ -69,7 +68,7 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Entregas
   <tr> 
    <td> <span class="uicontrol">Rastreamento</span> <br /> </td> 
    <td> <span class="uicontrol">tracking</span> <br /> </td> 
-   <td> Esse workflow realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de entrega, principalmente aqueles usados pelos workflows de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. <br /> </td> 
+   <td> Esse fluxo de trabalho realiza a recuperação e a consolidação de informações de rastreamento. Também garante o recálculo de rastreamento e estatísticas de entrega, principalmente aqueles usados pelos fluxos de trabalho de arquivamento do Centro de Mensagens. Por padrão, é acionado uma vez por hora. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

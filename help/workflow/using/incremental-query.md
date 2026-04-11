@@ -1,40 +1,39 @@
 ---
 product: campaign
-title: Query incremental
-description: Saiba mais sobre a atividade do workflow de query incremental
+title: Consulta incremental
+description: Saiba mais sobre a atividade do fluxo de trabalho de consulta incremental
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '356'
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
+source-wordcount: '355'
 ht-degree: 100%
 
 ---
 
-# Query incremental{#incremental-query}
+# Consulta incremental{#incremental-query}
 
 
 
-Um query incremental permite selecionar periodicamente um target com base em um critério, enquanto exclui as pessoas já alvos desse critério.
+Uma consulta incremental permite selecionar periodicamente um target com base em um critério, enquanto exclui as pessoas já alvos desse critério.
 
-O público que já foi alvo é armazenado na memória pela instância de workflow e por atividade, ou seja, dois workflows iniciados do mesmo template não compartilham o mesmo log. Por outro lado, duas tarefas baseadas no mesmo query incremental para a mesma instância de workflow usarão o mesmo log.
+A população que já foi alvo é armazenada na memória pela instância de fluxo de trabalho e por atividade, ou seja, dois fluxos de trabalho iniciados do mesmo modelo não compartilham o mesmo log. Por outro lado, duas tarefas baseadas na mesma consulta incremental para a mesma instância de fluxo de trabalho usarão o mesmo log.
 
-O query é definido da mesma forma que queries padrão, mas sua execução é agendada.
+A consulta é definida da mesma forma que as consultas padrão, mas sua execução é agendada.
 
 **Tópicos relacionados:**
 
-* [Caso de uso: atualização da lista trimestral usando um query incremental](quarterly-list-update.md)
+* [Caso de uso: atualização da lista trimestral usando uma consulta incremental](quarterly-list-update.md)
 * [Criação de consulta](query.md#creating-a-query)
 
 >[!CAUTION]
 >
->Se o resultado de um query incremental for igual a **0** durante uma de suas execuções, o workflow será pausado até a próxima execução programada do query. As transições e as atividades que seguem o query incremental não são, portanto, processadas antes da execução a seguir.
+>Se o resultado de uma consulta incremental for igual a **0** durante uma de suas execuções, o fluxo de trabalho será pausado até a próxima execução programada da consulta. As transições e as atividades que seguem a consulta incremental não são, portanto, processadas antes da execução a seguir.
 
 Para fazer isso:
 
-1. Na guia **[!UICONTROL Scheduling & History]**, selecione a opção **[!UICONTROL Schedule execution]**. A atividade permanece ativa após a criação e será acionada somente nos horários especificados pelo agendamento para execução do query. No entanto, se a opção estiver desabilitada, o query será executado imediatamente, **de uma só vez**.
+1. Na guia **[!UICONTROL Scheduling & History]**, selecione a opção **[!UICONTROL Schedule execution]**. A atividade permanece ativa após a criação e será acionada somente nos horários especificados pelo agendamento para execução da consulta. No entanto, se a opção estiver desabilitada, a consulta será executada imediatamente, **de uma só vez**.
 1. Clique no botão **[!UICONTROL Change]**.
 
    Na janela **[!UICONTROL Schedule editing assistant]**, você pode configurar o tipo de frequência, a recorrência do evento e o período de validade do evento.
@@ -64,7 +63,7 @@ Para fazer isso:
 ## Parâmetros de saída {#output-parameters}
 
 * tableName
-* schema
+* esquema
 * recCount
 
-Esse conjunto de três valores identifica o público alvo do query. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de target, **[!UICONTROL schema]** é o schema do público (normalmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica a população de destino da consulta. **[!UICONTROL tableName]** é o nome da tabela que registra os identificadores de público-alvo, **[!UICONTROL schema]** é o esquema da população (normalmente, nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.

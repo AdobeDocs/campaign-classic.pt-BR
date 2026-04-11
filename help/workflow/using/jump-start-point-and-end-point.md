@@ -4,9 +4,8 @@ title: Jump (ponto inicial e ponto final)
 description: Jump (ponto inicial e ponto final)
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 100%
@@ -27,7 +26,7 @@ Elas vão de uma atividade para outra, como no exemplo a seguir:
 
 Para cada transição de tipo &quot;ponto inicial&quot;, uma transição de tipo &quot;ponto final&quot; deve ser posicionada.
 
-É possível inserir vários pontos iniciais e pontos finais no mesmo workflow. Eles são identificados por um número que deve ser inserido nos parâmetros:
+É possível inserir vários pontos iniciais e pontos finais no mesmo fluxo de trabalho. Eles são identificados por um número que deve ser inserido nos parâmetros:
 
 ![](assets/s_user_segmentation_jump_in.png)
 

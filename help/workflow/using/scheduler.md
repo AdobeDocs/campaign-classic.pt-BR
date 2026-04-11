@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: 'Scheduler '
-description: Saiba mais sobre a atividade de workflow do Scheduler
+description: Saiba mais sobre a atividade de fluxo de trabalho Agendador
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 100%
 
@@ -23,15 +22,15 @@ A atividade **[!UICONTROL Scheduler]** deve ser considerada como um início agen
 
 ## Práticas recomendadas {#best-practices}
 
-* É recomendável não agendar um workflow para execução por mais de 15 minutos, pois pode atrapalhar o desempenho geral do sistema e criar bloqueios no banco de dados.
+* É recomendável não agendar um fluxo de trabalho para execução por mais de 15 minutos, pois pode atrapalhar o desempenho geral do sistema e criar bloqueios no banco de dados.
 
-* Nunca use mais de uma atividade **[!UICONTROL Scheduler]** por ramificação em um workflow. Consulte [Uso de atividades](workflow-best-practices.md#using-activities).
+* Nunca use mais de uma atividade **[!UICONTROL Scheduler]** por ramificação em um fluxo de trabalho. Consulte [Uso de atividades](workflow-best-practices.md#using-activities).
 
-* O uso de uma atividade do scheduler pode gerar várias execuções ao mesmo tempo de um workflow em andamento. Por exemplo, você pode ter um scheduler acionando a execução do workflow a cada hora, mas, às vezes, a execução do workflow inteiro demora mais de uma hora.
+* O uso de uma atividade do programador pode levar a várias execuções ao mesmo tempo de um fluxo de trabalho em andamento. Por exemplo, você pode ter um scheduler acionando a execução do fluxo de trabalho a cada hora, mas, às vezes, a execução do fluxo de trabalho inteiro demora mais de uma hora.
 
-  Talvez você queira ignorar a execução se o workflow já estiver em execução. Para obter mais informações sobre como evitar execuções simultâneas de um workflow, consulte [esta página](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
+  Talvez você queira ignorar a execução se o fluxo de trabalho já estiver em execução. Para obter mais informações sobre como evitar execuções simultâneas de um fluxo de trabalho, consulte [esta página](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
-* Observe que a transição pode ser ativada várias horas depois caso o workflow esteja executando uma tarefa de longo prazo, como uma importação, ou se o módulo wfserver for interrompido por um momento. Nesse caso, pode ser necessário restringir a execução da tarefa ativada pelo scheduler para um determinado intervalo de tempo.
+* Observe que a transição pode ser ativada várias horas depois caso o fluxo de trabalho esteja executando uma tarefa de longo prazo, como uma importação, ou se o módulo wfserver for interrompido por um momento. Nesse caso, pode ser necessário restringir a execução da tarefa ativada pelo scheduler para um determinado intervalo de tempo.
 
 ## Configuração de atividade do Scheduler {#configuring-scheduler-activity}
 

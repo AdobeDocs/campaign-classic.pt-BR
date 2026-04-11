@@ -1,12 +1,11 @@
 ---
 product: campaign
 title: Carregamento de dados (RDBMS)
-description: Saiba mais sobre a atividade do workflow de carregamento de dados (RDBMS)
+description: Saiba mais sobre a atividade do fluxo de trabalho de carregamento de dados (RDBMS)
 feature: Workflows, Data Management Activity
 hide: true
-hidefromtoc: true
 exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 100%
@@ -19,7 +18,7 @@ ht-degree: 100%
 
 A atividade **[!UICONTROL Data loading (RDBMS)]** permite acessar esse banco de dados externo diretamente e coletar apenas os dados necessários para o direcionamento.
 
-Para melhorar o desempenho, recomendamos o uso da atividade de query (onde os dados de um banco de dados externo podem ser usados). Para obter mais informações, consulte [Acesso a um banco de dados externo (FDA)](accessing-an-external-database-fda.md).
+Para melhorar o desempenho, recomendamos o uso da atividade de consulta (onde os dados de um banco de dados externo podem ser usados). Para obter mais informações, consulte [Acesso a um banco de dados externo (FDA)](accessing-an-external-database-fda.md).
 
 A operação é como descrita a seguir:
 
@@ -27,7 +26,7 @@ A operação é como descrita a seguir:
 
    ![](assets/s_advuser_wf_sgbd_sample_1.png)
 
-   O nome da tabela inserido no campo correspondente é usado como um template para coletar dados no banco de dados externo. O nome da tabela processada pelo workflow pode ser calculado ou transmitido pela transição de entrada da atividade de carregamento de dados. Para selecionar a tabela a ser usada, clique no link **[!UICONTROL Advanced..]**. e selecione a opção **[!UICONTROL Specified in the transition]** ou **[!UICONTROL Explicit]**.
+   O nome da tabela inserido no campo correspondente é usado como um modelo para coletar dados no banco de dados externo. O nome da tabela processada pelo fluxo de trabalho pode ser calculado ou transmitido pela transição de entrada da atividade de carregamento de dados. Para selecionar a tabela a ser usada, clique no link **[!UICONTROL Advanced..]**. e selecione a opção **[!UICONTROL Specified in the transition]** ou **[!UICONTROL Explicit]**.
 
    ![](assets/s_advuser_wf_sgbd_sample_5.png)
 
@@ -37,4 +36,4 @@ A operação é como descrita a seguir:
 
 1. Você pode definir um filtro nesses dados. Para fazer isso, clique em **[!UICONTROL Edit query....]**.
 
-   Os dados coletados desta forma podem ser usados durante o ciclo de vida do workflow.
+   Os dados coletados desta forma podem ser usados durante o ciclo de vida do fluxo de trabalho.

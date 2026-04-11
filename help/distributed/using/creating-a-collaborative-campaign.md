@@ -4,10 +4,9 @@ title: Criar uma campanha colaborativa
 description: Saiba como criar uma campanha colaborativa
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 100%
 
@@ -17,7 +16,7 @@ ht-degree: 100%
 
 
 
-A entidade central cria campanhas colaborativas de templates de campanha de **Marketing distribuído** . Consulte [esta página](about-distributed-marketing.md#collaborative-campaign).
+A entidade central cria campanhas colaborativas de modelos de campanha de **Marketing distribuído** . Consulte [esta página](about-distributed-marketing.md#collaborative-campaign).
 
 ## Criar uma campanha colaborativa {#creating-a-collaborative-campaign}
 
@@ -27,7 +26,7 @@ Para configurar uma campanha colaborativa, clique no nó **[!UICONTROL Campaign 
 >
 >Além de **[!UICONTROL collaborative campaigns (by campaign)]**, essas campanhas podem ser configuradas e executadas por meio de uma interface da web.
 
-O processo de configuração de um banco de dados da campanha colaborativa é semelhante ao do template de campanha local. As especificações dos diferentes tipos de campanhas colaborativas são detalhadas abaixo.
+O processo de configuração de um banco de dados da campanha colaborativa é semelhante ao do modelo de campanha local. As especificações dos diferentes tipos de campanhas colaborativas são detalhadas abaixo.
 
 ### Por formulário {#by-form}
 
@@ -39,9 +38,9 @@ Na guia **[!UICONTROL Edit]**, clique no link **[!UICONTROL Advanced campaign se
 
 Selecione a interface da web **By form**. Esse tipo de interface permite criar campos de personalização que serão usados por entidades locais ao solicitar uma campanha. Consulte [Criar uma campanha local (por formulário)](examples.md#creating-a-local-campaign--by-form-).
 
-Salve sua campanha. Agora você pode usá-lo na visualização **Pacotes do Campaign** na guia **Campaign** clicando no botão **[!UICONTROL Create]**.
+Salve sua campanha. Agora você pode usá-lo na visualização **Pacotes de campanha** na guia **Campaign** clicando no botão **[!UICONTROL Create]**.
 
-A visualização **[!UICONTROL Campaign Package]** permite que você use templates de campanha locais (prontos para utilização ou duplicados), bem como campanhas de referência para campanhas colaborativas, com o objetivo de criar campanhas para suas diferentes entidades organizacionais.
+A visualização **[!UICONTROL Campaign Package]** permite que você use modelos de campanha locais (prontos para utilização ou duplicados), bem como campanhas de referência para campanhas colaborativas, com o objetivo de criar campanhas para suas diferentes entidades organizacionais.
 
 ![](assets/mkg_dist_mutual_op_form1b.png)
 
@@ -55,7 +54,7 @@ Ao solicitar a campanha, a entidade local pode concluir os critérios predefinid
 
 Uma vez que um pedido de **Campanha colaborativa (por campanha)** é aprovado pela entidade central, uma campanha filho é criada para a entidade local. Após disponível para ela, a entidade local pode modificar:
 
-* o workflow da campanha,
+* o fluxo de trabalho da campanha,
 * regras de tipologia,
 * e campos de personalização.
 
@@ -75,13 +74,13 @@ Para criar uma campanha colaborativa (por aprovação de público alvo), o model
 >
 >Nesse modo, a entidade central não precisa especificar as entidades locais.
 
-O workflow da campanha deve integrar a atividade do tipo de **aprovação Local.** Os parâmetros de atividade são os seguintes:
+O fluxo de trabalho da campanha deve integrar a atividade do tipo de **aprovação Local.** Os parâmetros de atividade são os seguintes:
 
 * **[!UICONTROL Action to perform]** : Notificação de aprovação de target.
 * **[!UICONTROL Distribution context]** : Explícito.
 * **[!UICONTROL Data distribution]** : Distribuição de entidade local.
 
-A distribuição de dados do tipo de **distribuição de entidade local** deve ser criada. O template de distribuição de dados permite limitar o número de registros de uma lista de valores de agrupamento. Em **[!UICONTROL Resources > Campaign management > Data distribution]**, clique no ícone **[!UICONTROL New]** para criar uma nova **[!UICONTROL Data distribution]**. Para obter mais informações sobre distribuição de dados, consulte o guia [Workflows](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-).
+A distribuição de dados do tipo de **distribuição de entidade local** deve ser criada. O modelo de distribuição de dados permite limitar o número de registros de uma lista de valores de agrupamento. Em **[!UICONTROL Resources > Campaign management > Data distribution]**, clique no ícone **[!UICONTROL New]** para criar uma nova **[!UICONTROL Data distribution]**. Para obter mais informações sobre distribuição de dados, consulte o guia [Fluxos de trabalho](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-).
 
 ![](assets/mkg_dist_data_distribution.png)
 
@@ -103,7 +102,7 @@ A entidade local pode excluir determinados contatos com base no conteúdo da cam
 
 ### Simples {#simple}
 
-Para criar uma campanha colaborativa simples, o template **[!UICONTROL Collaborative campaign (simple)]** deve ser selecionado.
+Para criar uma campanha colaborativa simples, o modelo **[!UICONTROL Collaborative campaign (simple)]** deve ser selecionado.
 
 ## Criação de um pacote de campanha colaborativa {#creating-a-collaborative-campaign-package}
 
@@ -115,7 +114,7 @@ Siga as etapas abaixo:
 1. Clique no botão **[!UICONTROL Create]**.
 1. A seção na parte superior da janela permite selecionar o modelo **[!UICONTROL New collaborative package (mutualizedEmpty)]**.
 1. Selecione a campanha de referência.
-1. Especifique o rótulo, a pasta e a programação de execução do pacote de campanha.
+1. Especifique o rótulo, a pasta e o cronograma de execução do pacote de campanha.
 
 ### Datas {#dates}
 
@@ -157,7 +156,7 @@ A configuração de notificações é idêntica às notificações de uma entida
 
 ## Solicitar uma campanha {#ordering-a-campaign}
 
-Quando uma campanha colaborativa é adicionada à lista de pacotes de campanha, as entidades locais pertencentes ao público definido pela entidade central são notificadas (as **campanhas colaborativas (por aprovação de alvo)** não têm um público predefinido). A mensagem enviada contém um link que permite se registrar na campanha, conforme mostrado abaixo:
+Quando uma campanha colaborativa é adicionada à lista de pacotes de campanha, as entidades locais pertencentes ao público-alvo definido pela entidade central são notificadas (as **campanhas colaborativas (por aprovação de alvo)** não têm um público-alvo predefinido). A mensagem enviada contém um link que permite se registrar na campanha, conforme mostrado abaixo:
 
 ![](assets/mkg_dist_mutual_op_notification.png)
 

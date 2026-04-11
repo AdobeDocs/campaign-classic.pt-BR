@@ -4,9 +4,8 @@ title: Problema de assinatura de URLs rastreados
 description: Problema de assinatura de URLs rastreados
 feature: Technote
 hide: true
-hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 31%
@@ -42,7 +41,7 @@ Saiba como verificar sua versão [nesta seção](../../platform/using/launching-
 
 **Como atualizar?**
 
-Como um **cliente hospedado**, o Adobe estará trabalhando com você para atualizar sua configuração em breve.
+Como um **cliente hospedado**, a Adobe estará trabalhando com você para atualizar sua configuração em breve.
 
 Como um **cliente local/híbrido**, você precisa atualizar sua configuração.
 

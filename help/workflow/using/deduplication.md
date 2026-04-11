@@ -4,10 +4,9 @@ title: Desduplicação
 description: Saiba mais sobre a atividade de fluxo de trabalho de desduplicação
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 100%
 
@@ -44,7 +43,7 @@ Complemento:
 
 ## Práticas recomendadas {#best-practices}
 
-Durante a desduplicação, os fluxos de entrada são processados separadamente. Se por exemplo, o destinatário A for encontrado no resultado da query 1, bem como no resultado da query 2, eles não serão desduplicados.
+Durante a desduplicação, os fluxos de entrada são processados separadamente. Se por exemplo, o destinatário A for encontrado no resultado da consulta 1, bem como no resultado da consulta 2, eles não serão desduplicados.
 
 Esse problema precisa ser resolvido da seguinte maneira:
 
@@ -122,7 +121,7 @@ Os duplicados identificados também serão integrados em uma lista de duplicados
 
 1. Adicione e vincule as várias atividades necessárias para que o fluxo de trabalho funcione conforme mostrado acima.
 
-   A atividade União é usada aqui para &quot;unificar&quot; as três consultas em uma única transição. Assim, a desduplicação não funcionará para cada query individualmente, mas para toda a query. Para obter mais informações sobre este assunto, consulte [Melhores práticas](#best-practices).
+   A atividade União é usada aqui para &quot;unificar&quot; as três consultas em uma única transição. Assim, a desduplicação não funcionará para cada consulta individualmente, mas para toda a consulta. Para obter mais informações sobre este assunto, consulte [Melhores práticas](#best-practices).
 
 1. Abra a atividade de desduplicação e clique no link **[!UICONTROL Edit configuration...]** para definir o modo de desduplicação.
 1. Na nova janela, selecione **[!UICONTROL Database schema]**.

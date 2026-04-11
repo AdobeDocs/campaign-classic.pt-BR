@@ -4,10 +4,9 @@ title: Alterar imagens de atividade
 description: Saiba como alterar a imagem da atividade
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 100%
 
@@ -17,9 +16,9 @@ ht-degree: 100%
 
 
 
-As imagens usadas nos diagramas dos vários workflows podem ser alteradas. No entanto, elas devem estar em conformidade com determinadas restrições. Estes são os estágios de implementação:
+As imagens usadas nos diagramas dos vários fluxos de trabalho podem ser alteradas. No entanto, elas devem estar em conformidade com determinadas restrições. Estes são os estágios de implementação:
 
-* Para alterar a imagem de fundo, selecione o workflow de direcionamento desejado e clique na guia **[!UICONTROL Properties]**.
+* Para alterar a imagem de fundo, selecione o fluxo de trabalho de segmentação desejado e clique na guia **[!UICONTROL Properties]**.
 
   ![](assets/s_user_segmentation_properties_tab.png)
 

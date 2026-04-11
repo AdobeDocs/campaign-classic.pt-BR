@@ -5,10 +5,9 @@ description: Acessar campanhas de marketing
 role: User
 feature: Campaigns, Cross Channel Orchestration
 hide: true
-hidefromtoc: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 100%
 
@@ -35,7 +34,7 @@ O bloco **[!UICONTROL Browsing]** da guia **[!UICONTROL Campaigns]** oferece vá
 * **Calendário da campanha**: calendário de planos, programas de marketing, entregas e campanhas. Consulte [Calendário da campanha](#campaign-calendar).
 * **Campanhas**: acesso às campanhas contidas em todos os programas de marketing.
 * **Remessas**: acesso às remessas vinculadas às campanhas.
-* **Aplicativos Web**: acesso a aplicativos Web (formulários, landing pages etc.).
+* **Aplicativos Web**: acesso a aplicativos Web (formulários, páginas de destino etc.).
 
 >[!NOTE]
 >
@@ -102,7 +101,7 @@ As campanhas podem ser acessadas por meio do calendário da campanha, da guia **
 
 #### Painel {#dashboard}
 
-Cada campanha, tarefa, recurso e entrega é centralizada em uma única tela - o painel- que permite gerenciar ações de marketing em colaboração com outras pessoas.
+Para cada campanha, processos, recursos e entregas são centralizados em uma única tela - o painel- que permite gerenciar ações de marketing em colaboração com outras pessoas.
 
 O painel de controle de uma campanha é usado como interface de controle. Ele acessa os estágios principais de criação e gerenciamento de campanha diretamente: entregas, arquivos de extração, notificações, orçamentos etc.
 

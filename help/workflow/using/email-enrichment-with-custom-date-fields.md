@@ -4,10 +4,9 @@ title: Enriquecimento de email com campos de data personalizados
 description: Saiba como enriquecer emails com campos de data personalizados
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 100%
 
@@ -95,7 +94,7 @@ Após a atividade **[!UICONTROL Enrichment]**, você pode adicionar uma entrega.
 1. Clique em **[!UICONTROL Save]** para criar a entrega de email.
 1. Verifique na **[!UICONTROL Approval]** guia da entrega de e-mail **[!UICONTROL Properties]** se a opção **[!UICONTROL Confirm delivery before sending option]** está marcada.
 
-   Em seguida, inicie o workflow para enriquecer a transição de saída com as informações de direcionamento.
+   Em seguida, inicie o fluxo de trabalho para enriquecer a transição de saída com as informações de direcionamento.
 
    ![](assets/uc_enrichment_18.png)
 

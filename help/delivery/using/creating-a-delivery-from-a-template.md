@@ -4,11 +4,10 @@ title: Criar uma entrega a partir de um modelo
 description: Saiba como criar uma entrega a partir de um modelo
 feature: Delivery Templates
 hide: true
-hidefromtoc: true
 role: User
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 100%
 
@@ -28,11 +27,11 @@ Caso contrário, clique na pasta **[!UICONTROL Select link]** à direita do camp
 
 Selecione o diretório desejado no campo **[!UICONTROL Folder]** ou clique no ícone **[!UICONTROL Display sub-levels]** para exibir o conteúdo dos diretórios nas subárvores do diretório atual.
 
-Selecione o template de entrega a ser usado e clique em **[!UICONTROL Ok]**.
+Selecione o modelo de entrega a ser usado e clique em **[!UICONTROL Ok]**.
 
 ## Executar o modelo {#executing-the-template}
 
-Você pode iniciar a execução de um template diretamente da lista de templates sem criar uma entrega primeiro. Para fazer isso, selecione o template a ser executado e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions>Execute the delivery template...]**.
+Você pode iniciar a execução de um modelo diretamente da lista de modelos sem criar uma entrega primeiro. Para fazer isso, selecione o modelo a ser executado e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions>Execute the delivery template...]**.
 
 Você também pode usar **[!UICONTROL File>Actions>Execute the delivery template...]**.
 
@@ -40,7 +39,7 @@ Você também pode usar **[!UICONTROL File>Actions>Execute the delivery template
 
 Insira os parâmetros de entrega e clique em **[!UICONTROL Send]**.
 
-Essa ação gera uma entrega na pasta anexada ao template. O nome dessa entrega é o nome do template de entrega do qual foi criado.
+Essa ação gera uma entrega na pasta anexada ao modelo. O nome dessa entrega é o nome do modelo de entrega do qual foi criado.
 
 >[!NOTE]
 >

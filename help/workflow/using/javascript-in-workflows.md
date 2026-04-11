@@ -1,27 +1,26 @@
 ---
 product: campaign
-title: Exemplos de código JavaScript em workflows
-description: Estes exemplos mostram como é possível usar o código JavaScript em um workflow
+title: Exemplos de código JavaScript em fluxos de trabalho
+description: Estes exemplos mostram como é possível usar o código JavaScript em um fluxo de trabalho
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1695'
 ht-degree: 100%
 
 ---
 
-# Exemplos de código JavaScript em workflows{#javascript-in-workflows}
+# Exemplos de código JavaScript em fluxos de trabalho{#javascript-in-workflows}
 
 
 
-Estes exemplos mostram como é possível usar o código JavaScript em um workflow:
+Estes exemplos mostram como é possível usar o código JavaScript em um fluxo de trabalho:
 
 * [Gravar no banco de dados](#write-example)
 * [Consultar o banco de dados](#read-example)
-* [Acionar um workflow usando um método SOAP estático](#trigger-example)
+* [Acionar um fluxo de trabalho usando um método SOAP estático](#trigger-example)
 * [Interagir com o banco de dados usando um método SOAP não estático](#interact-example)
 
 [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=pt-BR) sobre métodos SOAP estáticos e não estáticos.
@@ -30,31 +29,31 @@ Nesses exemplos, a extensão ECMAScript for XML (E4X) é usada. Com esta extens�
 
 Para experimentar estes exemplos, siga estas etapas:
 
-1. Crie um workflow e adicione essas atividades ao workflow:
+1. Crie um fluxo de trabalho e adicione essas atividades ao fluxo de trabalho:
    1. Iniciar atividade
    1. Atividade de código JavaScript
    1. Finalizar atividade
 
-   [Saiba mais](building-a-workflow.md) sobre a criação de workflows.
+   [Saiba mais](building-a-workflow.md) sobre a criação de fluxos de trabalho.
 
 1. Adicione o código JavaScript a uma atividade. [Saiba mais](advanced-parameters.md).
-1. Salve o workflow.
+1. Salve o fluxo de trabalho.
 1. Teste os exemplos:
-   1. Inicie o workflow. [Saiba mais](starting-a-workflow.md).
+   1. Inicie o fluxo de trabalho. [Saiba mais](starting-a-workflow.md).
    1. Abra o journal. [Saiba mais](monitoring-workflow-execution.md#displaying-logs).
 
 ## Exemplo 1: gravar no banco de dados{#write-example}
 
-Para gravar no banco de dados, é possível usar o método estático `Write` no schema `xtk:session`:
+Para gravar no banco de dados, é possível usar o método estático `Write` no esquema `xtk:session`:
 
 1. Componha uma solicitação de gravação em XML.
 
 1. Grave o registro:
 
-   1. Chame o método `Write` no schema `xtk:session`.
+   1. Chame o método `Write` no esquema `xtk:session`.
 
       >[!IMPORTANT]
-      > Se estiver usando o Adobe Campaign v8, recomendamos o uso do mecanismo de preparo com as APIs de **Assimilação** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target="_blank"}.
+      > Se estiver usando o Adobe Campaign v8, recomendamos o uso do mecanismo de preparo com as APIs de **Ingestão** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target="_blank"}.
 
    1. Transmita o código XML como argumento para a solicitação de gravação.
 
@@ -68,7 +67,7 @@ Visto que `insert` é a operação padrão, não é necessário especificá-la.
 
 Especifique essas informações como atributos XML:
 
-* O schema da tabela a ser modificada
+* O esquema da tabela a ser modificada
 * Os campos a serem preenchidos na tabela
 
 Exemplo:
@@ -86,7 +85,7 @@ Use a operação `_update`. [Saiba mais](../../configuration/using/data-oriented
 
 Especifique essas informações como atributos XML:
 
-* O schema da tabela a ser modificada
+* O esquema da tabela a ser modificada
 * Os campos a serem atualizados na tabela 
 * O argumento principal necessário para identificar o registro a ser atualizado
 
@@ -106,7 +105,7 @@ Use o método `DeleteCollection`. [Saiba mais](https://experienceleague.adobe.co
 
 Especifique estas informações:
 
-* O schema da tabela a ser modificada
+* O esquema da tabela a ser modificada
 * A cláusula `where` necessária para identificar o registro a ser atualizado, na forma de um elemento XML
 
 Exemplo:
@@ -123,7 +122,7 @@ xtk.session.DeleteCollection(
 
 ### Etapa 2: gravar o registro
 
-Chame o método `Write` não estático no schema `xtk:session`:
+Chame o método `Write` não estático no esquema `xtk:session`:
 
 ```javascript
 xtk.session.Write(myXML)
@@ -131,7 +130,7 @@ xtk.session.Write(myXML)
 
 Nenhum valor é retornado para este método.
 
-Adicione o código completo a uma atividade de código JavaScript no workflow:
+Adicione o código completo a uma atividade de código JavaScript no fluxo de trabalho:
 
 ```javascript
 var myXML = <recipient xtkschema="nms:recipient"
@@ -167,7 +166,7 @@ Sintaxe:
 
 Especifique estas informações:
 
-* O schema da tabela a ser lida
+* O esquema da tabela a ser lida
 * A operação
 * As colunas a serem retornadas, em uma cláusula `select` 
 * As condições, em uma cláusula `where` 
@@ -195,7 +194,7 @@ Insira as cláusulas `select`, `where` e `orderBy` como elementos XML:
   </select>
   ```
 
-  Com o schema `nms:recipient`, os elementos são retornados desta forma:
+  Com o esquema `nms:recipient`, os elementos são retornados desta forma:
 
   ```xml
   <recipient firstName="Bo" lastName="Didley"/>
@@ -239,7 +238,7 @@ var query = xtk.queryDef.create(
     </queryDef>)
 ```
 
-Prefixe o método `create(`*`content`*`)` com o schema da entidade a ser criada.
+Prefixe o método `create(`*`content`*`)` com o esquema da entidade a ser criada.
 
 O argumento *`content`* é um argumento de string, e é opcional. Esse argumento contém o código XML que descreve a entidade.
 
@@ -292,7 +291,7 @@ Se não houver correspondência, um elemento vazio será retornado:
 <recipient/>
 ```
 
-É possível consultar o nó primário da chave, como por exemplo, o atributo `@id`:
+É possível consultar o nó da chave primária, como por exemplo, o atributo `@id`:
 
 ```javascript
 if (res.@id !=undefined)
@@ -313,7 +312,7 @@ Se não houver correspondência, um erro será retornado.
 
 >[!TIP]
 >
->Caso saiba que há uma correspondência, use a operação `get`. Caso contrário, use a operação `getIfExists`. Ao utilizar esta prática recomendada, os erros revelarão problemas inesperados. Caso utilize a operação `get`, não use a instrução `try…catch`. O problema é tratado pelo processo de tratamento de erros do workflow.
+>Caso saiba que há uma correspondência, use a operação `get`. Caso contrário, use a operação `getIfExists`. Ao utilizar esta prática recomendada, os erros revelarão problemas inesperados. Caso utilize a operação `get`, não use a instrução `try…catch`. O problema é tratado pelo processo de tratamento de erros do fluxo de trabalho.
 
 #### Resultado de uma operação `count` 
 
@@ -332,7 +331,7 @@ if (res.@count > 0)
     }
 ```
 
-Para a operação `select`, adicione este código a uma atividade de código JavaScript no workflow:
+Para a operação `select`, adicione este código a uma atividade de código JavaScript no fluxo de trabalho:
 
 ```javascript
 var myXML =
@@ -356,27 +355,27 @@ Visto que `select` é a operação padrão, não é necessário especificá-la.
 Este vídeo mostra como ler a partir do banco de dados:
 >[!VIDEO](https://video.tv.adobe.com/v/18475/?learn=on)
 
-## Acionar um workflow {#trigger-example}
+## Acionar um fluxo de trabalho {#trigger-example}
 
-É possível acionar workflows programaticamente, por exemplo, em workflows técnicos ou para processar informações que um usuário inseriu em uma página de aplicativo web.
+É possível acionar fluxos de trabalho programaticamente, por exemplo, em fluxos de trabalho técnicos ou para processar informações que um usuário inseriu em uma página de aplicativo web.
 
-O acionamento do workflow funciona por meio do uso de eventos. É possível usar estes recursos para eventos:
+O acionamento do fluxo de trabalho funciona por meio do uso de eventos. É possível usar estes recursos para eventos:
 
 * Para publicar um evento, é possível usar o método estático `PostEvent`. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=pt-BR).
 * Para receber um evento, é possível usar a atividade **[!UICONTROL External signal]**. [Saiba mais](external-signal.md).
 
-É possível acionar workflows de diferentes maneiras:
+É possível acionar fluxos de trabalho de diferentes maneiras:
 
-* É possível acionar um workflow em linha, ou seja, a partir do script principal de uma atividade **[!UICONTROL JavaScript code]**.
-* É possível acionar um workflow ao concluir outro:
-   * Adicione um script de inicialização à atividade **[!UICONTROL End]** do workflow inicial.
-   * Adicione a atividade **[!UICONTROL External signal]** no início do workflow desejado.
+* É possível acionar um fluxo de trabalho em linha, ou seja, a partir do script principal de uma atividade **[!UICONTROL JavaScript code]**.
+* É possível acionar um fluxo de trabalho ao concluir outro:
+   * Adicione um script de inicialização à atividade **[!UICONTROL End]** do fluxo de trabalho inicial.
+   * Adicione a atividade **[!UICONTROL External signal]** no início do fluxo de trabalho desejado.
 
-     Após a conclusão do workflow inicial, um evento é postado. A transição de saída é ativada e as variáveis do evento são preenchidas. Em seguida, o evento é recebido pelo workflow desejado.
+     Após a conclusão do fluxo de trabalho inicial, um evento é postado. A transição de saída é ativada e as variáveis do evento são preenchidas. Em seguida, o evento é recebido pelo fluxo de trabalho desejado.
 
      >[!TIP]
      >
-     >Como prática recomendada, ao adicionar um script a uma atividade, coloque o nome da atividade entre hifens duplos. Por exemplo: `-- end --`. [Saiba mais](workflow-best-practices.md) sobre as práticas recomendadas de workflow.
+     >Como prática recomendada, ao adicionar um script a uma atividade, coloque o nome da atividade entre hifens duplos. Por exemplo: `-- end --`. [Saiba mais](workflow-best-practices.md) sobre as práticas recomendadas de fluxo de trabalho.
 
 Sintaxe do método `PostEvent`:
 
@@ -390,7 +389,7 @@ PostEvent(
 )
 ```
 
-Neste exemplo, após a conclusão do workflow, um texto curto é passado para a atividade de **sinal** do workflow **wkfExampleReceiver**:
+Neste exemplo, após a conclusão do fluxo de trabalho, um texto curto é passado para a atividade de **sinal** do fluxo de trabalho **wkfExampleReceiver**:
 
 ```javascript
 var strLabel = "Adobe Campaign, Marketing that delivers"
@@ -402,26 +401,26 @@ xtk.workflow.PostEvent(
     false)
 ```
 
-Como o último parâmetro é definido como `false`, o workflow **wkfExampleReceiver** é acionado toda vez que o workflow inicial é concluído.
+Como o último parâmetro é definido como `false`, o fluxo de trabalho **wkfExampleReceiver** é acionado toda vez que o fluxo de trabalho inicial é concluído.
 
-Ao acionar workflows, lembre-se dos seguintes princípios:
+Ao acionar fluxos de trabalho, lembre-se dos seguintes princípios:
 
 * O comando `PostEvent` é executado de forma assíncrona. O comando é colocado na fila do servidor. O método retorna após a publicação do evento.
-* O workflow desejado deve ser iniciado. Caso contrário, um erro será gravado no arquivo de log.
-* Se o workflow desejado for suspenso, o comando `PostEvent` é enfileirado até que o workflow seja retomado.
+* O fluxo de trabalho desejado deve ser iniciado. Caso contrário, um erro será gravado no arquivo de log.
+* Se o fluxo de trabalho desejado for suspenso, o comando `PostEvent` é enfileirado até que o fluxo de trabalho seja retomado.
 * A atividade acionada não requer que uma tarefa esteja em andamento.
 
 Este vídeo mostra como usar métodos de API estáticos:
 >[!VIDEO](https://video.tv.adobe.com/v/18481/?learn=on)
 
-Este vídeo mostra como acionar workflows:
+Este vídeo mostra como acionar fluxos de trabalho:
 >[!VIDEO](https://video.tv.adobe.com/v/18485/?learn=on)
 
 ## Interagir com o banco de dados {#interact-example}
 
 Estes exemplos mostram como executar essas ações:
 
-* Use os métodos `get` e `create` em schemas para usar métodos SOAP não estáticos
+* Use os métodos `get` e `create` em esquemas para usar métodos SOAP não estáticos
 * Criar métodos que executam consultas SQL
 * Use o método `write` para inserir, atualizar e excluir registros
 
@@ -467,7 +466,7 @@ Siga estas etapas:
 
 #### Exemplo 1: selecionar registros e gravar no journal
 
-Os nomes internos dos workflows localizados na pasta **wfExamples** são selecionados. Os resultados são classificados por nome interno, em ordem crescente, e gravados no journal.
+Os nomes internos dos fluxos de trabalho localizados na pasta **wfExamples** são selecionados. Os resultados são classificados por nome interno, em ordem crescente, e gravados no journal.
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -554,7 +553,7 @@ for each (var w in res.recipient)
 
 ### Método `Write`
 
-É possível inserir, atualizar e excluir registros. É possível usar o método `Write` em qualquer schema no Adobe Campaign. Como esse método é estático, não é necessário criar um objeto. É possível usar estas operações:
+É possível inserir, atualizar e excluir registros. É possível usar o método `Write` em qualquer esquema no Adobe Campaign. Como esse método é estático, não é necessário criar um objeto. É possível usar estas operações:
 
 * A operação `update` 
 * A operação `insertOrUpdate`, com o argumento `_key` para identificar o registro a ser atualizado
@@ -564,7 +563,7 @@ for each (var w in res.recipient)
 * A operação `delete` 
 
 >[!IMPORTANT]
-> Caso utilize o Adobe Campaign v8, recomendamos utilizar o mecanismo de preparo com as APIs de **Assimilação** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target="_blank"}.
+> Caso utilize o Adobe Campaign v8, recomendamos utilizar o mecanismo de preparo com as APIs de **Ingestão** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target="_blank"}.
 
 #### Exemplo 1: inserir ou atualizar um registro
 
@@ -607,7 +606,7 @@ xtk.session.Write(
 Este vídeo mostra como usar métodos de API não estáticos:
 >[!VIDEO](https://video.tv.adobe.com/v/18477/?learn=on)
 
-Este vídeo mostra um exemplo de uso de um método de API não estático em um workflow:
+Este vídeo mostra um exemplo de uso de um método de API não estático em um fluxo de trabalho:
 >[!VIDEO](https://video.tv.adobe.com/v/18476/?learn=on)
 
 ## Tópicos relacionados

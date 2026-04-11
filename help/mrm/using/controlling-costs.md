@@ -6,11 +6,10 @@ feature: Resource Management
 audience: campaign
 content-type: reference
 hide: true
-hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '2488'
 ht-degree: 100%
 
@@ -40,7 +39,7 @@ As etapas a seguir devem ser aplicadas para implementar o gerenciamento de orça
 
 1. Definir os custos da campanha (entregas/tarefas)
 
-   Os custos incorridos pelas entregas e tarefas são alimentados individualmente ou globalmente para o template de campanha. Consulte [Cálculo de custos e estoques](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
+   Os custos incorridos pelas entregas e tarefas são alimentados individualmente ou globalmente para o modelo de campanha. Consulte [Cálculo de custos e estoques](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
 
 1. Consolidação
 
@@ -62,7 +61,7 @@ Os orçamentos são criados no mapa, através do nó **[!UICONTROL Campaign mana
 
 * Definir o período de validade
 
-  Especifique as datas de início e término. Estas informações são apenas indicativas.
+  Especifique as datas inicial e final. Estas informações são apenas indicativas.
 
 * Despesas
 
@@ -189,7 +188,7 @@ Os custos dividem-se em três categorias:
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
-   É possível associar cada custo com uma categoria para que a divisão de custos por categoria de despesa possa ser visualizada posteriormente no orçamento relacionado e nos relatórios de orçamento.
+   É possível associar cada custo com uma categoria para que o detalhamento de custos por categoria de despesa possa ser visualizada posteriormente no orçamento relacionado e nos relatórios de orçamento.
 
 1. Custo calculado
 
@@ -220,7 +219,7 @@ Uma verificação pode ser realizada nos valores comprometidos com as campanhas 
 
 Vamos criar uma campanha com:
 
-* Uma entrega de mala direta usando as estruturas de custo de um provedor de serviços.
+* Uma entrega de correspondência direta usando as estruturas de custo de um provedor de serviços.
 * Uma tarefa com um custo fixo.
 * Uma tarefa com um custo diário.
 
@@ -250,7 +249,7 @@ Vamos criar uma campanha com:
 
    ![](assets/s_user_cost_mgmt_sample_6.png)
 
-   * **[!UICONTROL Creation]** (**tipo de template de conteúdo**), com uma estrutura de custo **diária** de 300 euros:
+   * **[!UICONTROL Creation]** (**tipo de modelo de conteúdo**), com uma estrutura de custo **diária** de 300 euros:
 
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
@@ -272,9 +271,9 @@ Vamos criar uma campanha com:
 
 #### Etapa 4 - Criar a entrega de correspondência direta {#step-4---creating-the-direct-mail-delivery}
 
-1. Crie um workflow para a campanha e posicione as atividades de query para selecionar o alvo (aviso, os endereços postais dos destinatários devem ser especificados).
+1. Crie um fluxo de trabalho para a campanha e posicione as atividades de consulta para selecionar o alvo (aviso, os endereços postais dos destinatários devem ser especificados).
 
-1. Crie uma entrega de mala direta e selecione o provedor de serviços criado na Etapa 2: as categorias de custo são exibidas automaticamente.
+1. Crie uma entrega de correspondência direta e selecione o provedor de serviços criado na Etapa 2: as categorias de custo são exibidas automaticamente.
 
 1. Substitua o custo dos envelopes e adicione um custo fixo. Além disso, selecione as categorias, relacionadas a esses custos.
 
@@ -284,7 +283,7 @@ Vamos criar uma campanha com:
    >
    >Se uma das categorias de custo não for usada, ela não gerará nenhuma despesa.
 
-1. Inicie o workflow que acabou de criar para iniciar a análise e calcular os custos.
+1. Inicie o fluxo de trabalho que acabou de criar para iniciar a análise e calcular os custos.
 
    ![](assets/s_user_cost_mgmt_sample_10.png)
 
@@ -300,7 +299,7 @@ O custo calculado para a entrega é atualizado com estas informações:
 
 ![](assets/s_user_cost_mgmt_sample_12.png)
 
-Ao editar o custo calculado, é possível verificar a divisão de custo e o status e a data do cálculo de custo.
+Ao editar o custo calculado, é possível verificar o detalhamento de custo e o status e a data do cálculo de custo.
 
 #### Etapa 5 - Criar tarefas {#step-5---creating-tasks}
 
@@ -318,7 +317,7 @@ Vamos adicionar a essa campanha as duas tarefas para as quais as estruturas de c
 
    Quando a tarefa for salva, o custo calculado é especificado com o valor inserido para o custo provisional estimado.
 
-   Quando a tarefa for concluída (com o status **[!UICONTROL Finished]**), o custo calculado é atualizado automaticamente com o custo do Quarto grande, conforme inserido na estrutura de custos. Esse custo também aparece nesta categoria da divisão de custos.
+   Quando a tarefa for concluída (com o status **[!UICONTROL Finished]**), o custo calculado é atualizado automaticamente com o custo do Quarto grande, conforme inserido na estrutura de custos. Esse custo também aparece nesta categoria do detalhamento de custos.
 
 1. Em seguida, crie uma segunda tarefa de acordo com o mesmo procedimento; agendada por cinco dias e relacionada à estrutura de custos criada anteriormente.
 
@@ -336,13 +335,13 @@ Quando a campanha é configurada, é possível atualizar o status ao alterá-lo 
 
 #### Aprovação de orçamento {#budget-approval}
 
-Quando a aprovação é ativada, um link especial permite aprovar o orçamento do painel de campanha. Esse link é exibido quando o workflow de segmentação foi iniciado e uma entrega de mala direta precisa ser aprovada.
+Quando a aprovação é ativada, um link especial permite aprovar o orçamento do painel de campanha. Esse link é exibido quando o fluxo de trabalho de segmentação foi iniciado e uma entrega de mala direta precisa ser aprovada.
 
 ![](assets/s_user_cost_mgmt_sample_19.png)
 
 É possível clicar no link para conceder ou rejeitar a aprovação, ou usar o link no email de notificação, se a notificação tiver sido ativada para esta campanha.
 
-Quando o orçamento tiver sido aprovado e a entrega for concluída, os custos serão automaticamente carregados por meio de um workflow técnico especial.
+Quando o orçamento tiver sido aprovado e a entrega for concluída, os custos serão automaticamente carregados por meio de um fluxo de trabalho técnico especial.
 
 ## Pedidos e faturas {#orders-and-invoices}
 
@@ -372,6 +371,6 @@ As faturas de cada provedor de serviços são exibidas na guia **[!UICONTROL Inv
 
 ![](assets/s_ncs_user_invoice_from_supplier.png)
 
-A guia **[!UICONTROL Details]** permite visualizar o conteúdo da fatura.
+A guia **[!UICONTROL Details]** permite exibir o conteúdo da fatura.
 
 Clique em **[!UICONTROL Add]** para criar uma nova fatura.

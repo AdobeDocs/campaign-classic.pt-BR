@@ -4,9 +4,8 @@ title: Nota técnica - Atualizações de configuração do Adobe Campaign
 description: Atualizações de configuração do Adobe Campaign
 feature: Technote, Upgrade
 hide: true
-hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 10%
@@ -19,11 +18,11 @@ ht-degree: 10%
 
 A infraestrutura e as configurações devem ser atualizadas regularmente com as compilações e correções de produto mais recentes. Essas correções são necessárias para garantir a continuidade do serviço e a segurança. Além disso, as atualizações serão necessárias para se alinharem a alterações de terceiros.
 
-Como um **cliente hospedado ou Managed Services**, o Adobe informará você sobre atualizações de compilação em intervalos regulares. Você deverá fazer upgrade de acordo com as recomendações para garantir a conformidade.
+Como um **cliente hospedado ou Managed Services**, a Adobe informará você sobre atualizações de compilação em intervalos regulares. Você deverá fazer upgrade de acordo com as recomendações para garantir a conformidade.
 
 Como um **cliente no local ou híbrido**, você deve atualizar sua implementação em intervalos regulares de acordo com as compilações mais recentes.
 
-Por motivos de segurança, você deve atualizar para uma das versões listadas abaixo. Além das etapas de atualização padrão, algumas tarefas manuais devem ser realizadas para garantir que seu ambiente esteja seguro e pronto para futuras alterações do Adobe ou de sistemas de terceiros.
+Por motivos de segurança, você deve atualizar para uma das versões listadas abaixo. Além das etapas de atualização padrão, algumas tarefas manuais devem ser executadas para garantir que seu ambiente esteja seguro e pronto para futuras alterações do Adobe ou de sistemas de terceiros.
 
 >[!NOTE]
 >
@@ -51,15 +50,15 @@ Saiba como verificar sua versão [nesta seção](../../platform/using/launching-
 
 Você precisa atualizar para uma das builds mais recentes listadas acima.
 
-* Como cliente híbrido, o Adobe informará sobre as datas de atualização programadas para suas instâncias de mid-sourcing. A Adobe recomenda que você também atualize sua instância de marketing.
+* Como cliente híbrido, a Adobe informará sobre as datas de atualização programadas para suas instâncias de mid-sourcing. A Adobe recomenda que você também atualize sua instância de marketing.
 
-  A nova build é compatível com a versão Campaign Classic 17.9, mas o Adobe recomenda que todas as instâncias sejam atualizadas para solucionar vulnerabilidades de segurança
+  A nova build tem compatibilidade com versões anteriores da Campaign Classic versão 17.9, mas a Adobe recomenda que todas as instâncias sejam atualizadas para solucionar vulnerabilidades de segurança
 
 * Como cliente local, você deve atualizar as instâncias de marketing e mid-sourcing para a build mais recente.
 
 >[!CAUTION]
 >
->Se não for possível atualizar dentro do período recomendado, **contate a equipe de Atendimento ao Cliente da Adobe para aplicar uma correção manual de segurança em curto prazo em suas instâncias**.
+>Se não for possível atualizar dentro do período recomendado, **entre em contato com a equipe de Atendimento ao cliente da Adobe para aplicar uma correção de segurança manual de curto prazo em suas instâncias**.
 >
 
 ## Atualização do console do cliente do Campaign Classic  {#acc-cc-updates}
@@ -73,7 +72,7 @@ As **versões de console** disponíveis abaixo devem ser instaladas para resolve
 
 ## Atualização do Adobe Identity Management System (IMS)
 
-O IMS (Adobe Identity Service) deixará de oferecer suporte a versões antigas do Internet Explorer a partir de **30 de junho de 2021**. [Saiba mais](https://helpx.adobe.com/br/x-productkb/global/update-operating-system-and-browser.html).
+O Adobe Identity Service (IMS) deixará de oferecer suporte a versões antigas do Internet Explorer a partir de **30 de junho de 2021**. [Saiba mais](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Uma atualização do console do cliente do Campaign é necessária para garantir a compatibilidade com o Adobe IMS.
 
@@ -94,7 +93,7 @@ Saiba como verificar sua versão [nesta seção](../../platform/using/launching-
 
 **Como atualizar?**
 
-Como cliente hospedado, o Adobe trabalhará com você para atualizar suas instâncias para a versão mais recente em breve.
+Como cliente hospedado, a Adobe trabalhará com você para atualizar suas instâncias para a versão mais recente em breve.
 
 Como cliente local/híbrido, você precisa atualizar para uma das versões mais recentes para se beneficiar do novo Console do cliente e garantir uma transição contínua **antes de 30 de junho de 2021**.
 
@@ -104,13 +103,13 @@ Depois que todas as instâncias forem atualizadas, o Console do cliente também 
 
 * [Saiba como instalar o Console do Cliente do Campaign](../../installation/using/installing-the-client-console.md).
 
-## Integração com o Experience Cloud Triggers {#acc-triggers-updates}
+## Integração com acionadores da Experience Cloud {#acc-triggers-updates}
 
-O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autenticação da integração de acionadores, originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline de assimilação, foi movida para o Adobe I/O. O modo de autenticação oAuth herdado com o Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=pt) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md#step-optional) para a Adobe.
+O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autenticação da integração de acionadores, originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline de assimilação, foi movida para o Adobe I/O. O modo de autenticação oAuth herdado com o Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md#step-optional) para a Adobe.
 
 **Você será afetado?**
 
-Se suas instâncias estiverem em execução em uma versão **mais antiga do que a Campaign 19.1.8, 20.2.4, Gold Standard 11**, você estará usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth: **é necessário atualizar para uma versão mais recente e mover para o Adobe I/O**.
+Se suas instâncias estiverem sendo executadas em uma versão **mais antiga do que a Campaign 19.1.8, 20.2.4, Gold Standard 11**, você estará usando uma versão mais antiga da integração de acionadores por meio da autenticação oAuth: **é necessário atualizar para uma versão mais recente e migrar para o Adobe I/O**.
 
 A atualização para uma das novas versões listadas abaixo é obrigatória:
 
@@ -123,7 +122,7 @@ Saiba como verificar sua versão [nesta seção](../../platform/using/launching-
 
 **Como atualizar?**
 
-Depois que as instâncias forem atualizadas para uma versão mais recente, todos os clientes precisarão seguir o [procedimento para passar para o novo modo de autenticação](../../integrations/using/about-triggers.md#implement). Isso requer que você gere o novo token de Adobe I/O e use-o na implementação.  
+Depois que as instâncias forem atualizadas para uma versão mais recente, todos os clientes precisarão seguir o [procedimento para passar para o novo modo de autenticação](../../integrations/using/about-triggers.md#implement). Isso requer que você gere o novo token do Adobe I/O e use-o na implementação.  
 
 Além disso, para ambientes híbridos, os clientes precisam garantir que o pipeline de assimilação esteja configurado na instância de mid-sourcing. [Saiba mais](../../integrations/using/configuring-pipeline.md).
 
@@ -143,7 +142,7 @@ Saiba como verificar sua versão [nesta seção](../../platform/using/launching-
 
 **Como atualizar?**
 
-Como cliente hospedado, se você atualizou para a nova build, o Adobe já atualizou suas instâncias para a API baseada em HTTP/2.
+Como cliente hospedado, se você atualizou para a nova build, o Adobe já atualizou sua(s) instância(s) para a API baseada em HTTP/2.
 
 Como cliente local/híbrido, você precisa atualizar sua configuração.
 
@@ -159,7 +158,7 @@ Se você estiver usando o Campaign para enviar notificações por push em dispos
 
 **Como atualizar?**
 
-Como cliente hospedado, nenhuma ação é necessária: o Adobe já incorporou o novo certificado raiz ao seu ambiente.
+Como cliente hospedado, nenhuma ação é necessária: a Adobe já incorporou o novo certificado raiz ao seu ambiente.
 
 Como cliente local/híbrido, você precisa atualizar sua configuração para garantir uma transição contínua **antes de 29 de março de 2021**.
 
@@ -169,5 +168,5 @@ Como cliente local/híbrido, você precisa atualizar sua configuração para gar
 
 * [Atualizar o ambiente](../../production/using/build-upgrade.md)
 * [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)
-* [Baixar compilação de Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/br/campaign.html)
+* [Baixar compilação do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Disponibilizar o novo Console do cliente para os usuários](../../installation/using/client-console-availability-for-windows.md)

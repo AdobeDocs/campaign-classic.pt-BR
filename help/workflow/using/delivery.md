@@ -1,15 +1,14 @@
 ---
 product: campaign
 title: Delivery
-description: Saiba mais sobre a atividade de workflow de tipo Delivery
+description: Saiba mais sobre a atividade de fluxo de trabalho de tipo Delivery
 feature: Workflows, Channels Activity
 hide: true
-hidefromtoc: true
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '917'
-ht-degree: 100%
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 96%
 
 ---
 
@@ -29,9 +28,9 @@ Para configurá-la, edite a atividade e insira as opções de entrega.
 
    * Atue na entrega especificada na transição de entrada. Para fazer isso, selecione a primeira opção de seção **[!UICONTROL Delivery]** da janela.
 
-     Essa opção pode ser usada quando uma atividade de workflow anterior já criou ou especificou a entrega. Isso pode ter sido feito, como no exemplo abaixo, por uma atividade do mesmo tipo que gerou uma transição de saída.
+     Essa opção pode ser usada quando uma atividade de fluxo de trabalho anterior já criou ou especificou a entrega. Isso pode ter sido feito, como no exemplo abaixo, por uma atividade do mesmo tipo que gerou uma transição de saída.
 
-     No exemplo a seguir, a entrega é criada pela primeira vez. O público e o conteúdo são definidos mais tarde. Em seguida, as informações desses três elementos são inseridas novamente em uma nova atividade de entrega usando a transição de entrada para que isso possa ser enviado.
+     No exemplo a seguir, a entrega é criada pela primeira vez. A população e o conteúdo são definidos mais tarde. Em seguida, as informações desses três elementos são inseridas novamente em uma nova atividade de entrega usando a transição de entrada para que isso possa ser enviado.
 
      ![](assets/specified_transition_option_exemple.png)
 
@@ -51,11 +50,11 @@ Para configurá-la, edite a atividade e insira as opções de entrega.
 
      ![](assets/diffusion_edit_3.png)
 
-   * Criação de nova entrega Para fazer isso, selecione a opção **[!UICONTROL New, created from a template]** e selecione o template da entrega no qual a entrega será baseada.
+   * Criação de nova entrega Para fazer isso, selecione a opção **[!UICONTROL New, created from a template]** e selecione o modelo da entrega no qual a entrega será baseada.
 
      ![](assets/diffusion_edit_4.png)
 
-     Clique em **[!UICONTROL Select link]** para procurar as pastas e clique em **[!UICONTROL Edit link]** se desejar visualizar o conteúdo do template selecionado.
+     Clique em **[!UICONTROL Select link]** para procurar as pastas e clique em **[!UICONTROL Edit link]** se desejar visualizar o conteúdo do modelo selecionado.
 
 1. **Recipients**
 
@@ -83,7 +82,7 @@ Para configurá-la, edite a atividade e insira as opções de entrega.
    * **[!UICONTROL Send a proof]**: esta opção permite enviar uma prova da entrega. Esta ação é equivalente ao clicar em **[!UICONTROL Send a proof]** na barra de ferramentas de uma entrega com **Entrega**
    * **[!UICONTROL Prepare and start]**: esta opção inicia o processo de análise completa (cálculo de target e preparação de conteúdo) e envia a entrega. Esta ação é equivalente a clicar na opção **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** e **[!UICONTROL Confirm delivery]** ao enviar uma entrega ao target principal com **Entrega**.
 
-   A atividade **[!UICONTROL Act on a delivery]** usada mais no workflow permite iniciar todas as etapas restantes necessárias para iniciar a entrega (cálculo de target, preparação de conteúdo, entrega). Para obter mais informações, consulte [Controle de entrega](delivery-control.md).
+   A atividade **[!UICONTROL Act on a delivery]** usada mais no fluxo de trabalho permite iniciar todas as etapas restantes necessárias para iniciar a entrega (cálculo de target, preparação de conteúdo, entrega). Para obter mais informações, consulte [Controle de entrega](delivery-control.md).
 
    As seguintes opções também estão disponíveis:
 
@@ -103,21 +102,21 @@ Para configurá-la, edite a atividade e insira as opções de entrega.
 
    ![](assets/edit_diffusion_fil_script.png)
 
-## Exemplo: workflow de entrega {#example--delivery-workflow}
+## Exemplo: fluxo de trabalho de entrega {#example--delivery-workflow}
 
-Crie um novo workflow e adicione atividades conforme mostrado no gráfico abaixo:
+Crie um novo fluxo de trabalho e adicione atividades conforme mostrado no gráfico abaixo:
 
 ![](assets/new-workflow-5.png)
 
 Abra a atividade de **Entrega** e defina as propriedades da seguinte maneira:
 
-* Na seção **[!UICONTROL Delivery]**, selecione **[!UICONTROL New, created from a template]** e selecione um template de entrega.
+* Na seção **[!UICONTROL Delivery]**, selecione **[!UICONTROL New, created from a template]** e selecione um modelo de entrega.
 * Na seção **[!UICONTROL Recipients]**, selecione **[!UICONTROL Specified in the delivery]**.
 * Na seção **[!UICONTROL Action to execute]**, mantenha a opção **[!UICONTROL Prepare]**.
 
 ![](assets/new-workflow-param-delivery.png)
 
-Clique em **[!UICONTROL OK]** para fechar a janela das propriedades. Você acabou de configurar uma atividade que consiste na criação e preparação de uma nova entrega com base em um template de entrega cujo destino será especificado.
+Clique em **[!UICONTROL OK]** para fechar a janela das propriedades. Você acabou de configurar uma atividade que consiste na criação e preparação de uma nova entrega com base em um modelo de entrega cujo destino será especificado.
 
 Abra a atividade de **Aprovação** e defina as propriedades da seguinte maneira:
 
@@ -140,7 +139,7 @@ Identificador de entrega, se a opção **[!UICONTROL Specified in the transition
 
 * deliveryId
 * tableName
-* schema
+* esquema
 
 Cada evento de entrada deve especificar um target definido por esses parâmetros.
 
@@ -159,10 +158,10 @@ Cada evento de entrada deve especificar um target definido por esses parâmetros
 ## Parâmetros de saída {#output-parameters}
 
 * tableName
-* schema
+* esquema
 * recCount
 
-Esse conjunto de três valores identifica o target resultante da entrega. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do target,**[!UICONTROL schema]** é o schema do público (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
+Esse conjunto de três valores identifica o target resultante da entrega. **[!UICONTROL tableName]** é o nome da tabela que memoriza os identificadores do destino, **[!UICONTROL schema]** é o esquema da população (geralmente nms:recipient) e **[!UICONTROL recCount]** é o número de elementos na tabela.
 
 A transição associada ao complemento tem os mesmos parâmetros.
 

@@ -5,9 +5,8 @@ description: Saiba como conectar o Campaign e o Salesforce
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 hide: true
-hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 100%
 
@@ -40,10 +39,10 @@ Conta usada para fazer logon no Salesforce CRM.
 Senha usada para fazer logon no Salesforce CRM.
 
    * **[!UICONTROL Client identifier]**
-Para saber onde encontrar o identificador do cliente, consulte esta [página](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Para saber onde encontrar o identificador do cliente, consulte esta [página](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL Security token]**
-Para saber onde encontrar o token de segurança, consulte esta [página](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Para saber onde encontrar o token de segurança, consulte esta [página](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL API version]**
 Selecione a versão da API.
@@ -55,7 +54,7 @@ Selecione a versão da API.
    >
    >Para aprovar a configuração, você precisa fazer logoff e voltar ao console do Adobe Campaign.
 
-1. Verifique o schema gerado no Adobe Campaign no nó **[!UICONTROL Administration > Configuration > Data schemas]**.
+1. Verifique o esquema gerado no Adobe Campaign no nó **[!UICONTROL Administration > Configuration > Data schemas]**.
 
    Exemplo do esquema do **Salesforce**:
 
@@ -63,7 +62,7 @@ Selecione a versão da API.
 
 1. Após a criação do esquema, você pode sincronizar enumerações automaticamente do Salesforce para o Adobe Campaign.
 
-   Para fazer isso, clique no link **[!UICONTROL Synchronizing enumerations...]** e selecione a lista discriminada do Adobe Campaign que corresponde à lista discriminada do Salesforce.
+   Para fazer isso, clique no link **[!UICONTROL Synchronizing enumerations...]** e selecione a lista discriminada do Adobe Campaign que corresponde à enumeração do Salesforce.
 
 
 
@@ -71,7 +70,7 @@ Selecione a versão da API.
 
    >[!NOTE]
    >
-   >É possível substituir todos os valores de uma lista discriminada do Adobe Campaign pelos valores do CRM: para fazer isso, selecione **[!UICONTROL Yes]** na coluna **[!UICONTROL Replace]**.
+   >É possível substituir todos os valores de uma enumeração do Adobe Campaign pelos valores do CRM: para fazer isso, selecione **[!UICONTROL Yes]** na coluna **[!UICONTROL Replace]**.
 
 
    Clique em **[!UICONTROL Next]** e depois em **[!UICONTROL Start]** para começar a importar a lista.
@@ -82,7 +81,7 @@ Selecione a versão da API.
 
    >[!NOTE]
    >
-   > Não há suporte para a seleção de várias listas discriminadas.
+   > Não há suporte para a seleção de várias enumerações.
 
 O Campaign e o Salesforce.com agora estão conectados. Você pode configurar a sincronização de dados entre os dois sistemas.
 
