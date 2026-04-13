@@ -5,7 +5,7 @@ description: Saiba como atualizar para o novo servidor de entrega do Campaign
 feature: Technote, Deliverability
 hide: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 16%
@@ -74,7 +74,7 @@ Como cliente local, você também deve verificar se uma Campanha **[!UICONTROL P
 1. Acesse a seção **Produtos e Serviços** e verifique se o **Adobe Campaign** está listado.
 Se você não conseguir ver o **Adobe Campaign**, contate o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
 1. Clique em **Adobe Campaign** e selecione sua Organização.
-   **Atenção**: se você tiver mais de uma organização, certifique-se de selecionar a correta. Saiba mais sobre as Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR#ims-org-id){_blank}.
+   **Atenção**: se você tiver mais de uma organização, certifique-se de selecionar a correta. Saiba mais sobre as Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
 1. Verifique se **[!UICONTROL Product profile]** existe. Caso contrário, crie-o. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**.
 

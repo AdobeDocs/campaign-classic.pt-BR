@@ -5,7 +5,7 @@ description: Entrega contínua
 feature: Workflows, Channels Activity
 hide: true
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 92%
@@ -63,6 +63,6 @@ Uma entrega contínua criará uma ÚNICA entrega. Logs da entrega (broadLog) e l
 
 Este vídeo mostra como configurar uma entrega contínua com uma consulta incremental.
 
->[!VIDEO](https://video.tv.adobe.com/v/31845?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

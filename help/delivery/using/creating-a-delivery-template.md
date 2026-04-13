@@ -6,7 +6,7 @@ feature: Delivery Templates
 hide: true
 role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 100%
@@ -73,18 +73,18 @@ Para configurar um modelo de entrega, siga as seguintes etapas:
 
 O vídeo a seguir mostra como configurar um modelo para uma entrega ad hoc.
 
->[!VIDEO](https://video.tv.adobe.com/v/31864?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
 ### Como configurar propriedades de modelos de entrega
 
 O vídeo a seguir mostra como definir as propriedades do modelo de entrega e explica em detalhes cada propriedade.
 
->[!VIDEO](https://video.tv.adobe.com/v/34572?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
 ### Como implantar um modelo de entrega ad-hoc
 
 Este vídeo explica como implantar um modelo de entrega de email ad-hoc, bem como a diferença entre uma entrega de email e um fluxo de trabalho de entrega.
 
->[!VIDEO](https://video.tv.adobe.com/v/31865?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
