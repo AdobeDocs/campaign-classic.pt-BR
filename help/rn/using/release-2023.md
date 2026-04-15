@@ -7,7 +7,7 @@ role: User
 level: Beginner
 hide: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
 workflow-type: tm+mt
 source-wordcount: '2336'
 ht-degree: 100%
@@ -227,3 +227,4 @@ Saiba mais na [página sobre recursos obsoletos e removidos](deprecated-features
 * Corrigido um problema que resultava em erro quando um usuário com direitos de acesso de leitura para a pasta nmsDeliveryMapping tentava executar uma campanha ou fluxo de trabalho. (NEO-48230)
 * Corrigido um problema que impedia o funcionamento da função `JSPContext.sqlExecWithOneParam`. (NEO-50066)
 * Correção de vários erros de redirecionamento. (NEO-50030)
+
