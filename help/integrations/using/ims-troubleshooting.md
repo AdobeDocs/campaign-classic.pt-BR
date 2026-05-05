@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f7f88eac33921f60dfe72ce2200132c5ac6acf49
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 100%
+source-wordcount: '501'
+ht-degree: 87%
 
 ---
 
@@ -66,7 +66,7 @@ A ID do cliente corresponde à conta externa do Campaign e a provisionada pela I
 
 Verifique se o segredo do cliente inserido está correto.
 
-**Reinício do servidor**
+**Reiniciar o servidor**
 
 Reinicie o servidor se alguma alteração for feita nas configurações acima na conta externa do Campaign
 
@@ -83,3 +83,16 @@ Reinicie o servidor se alguma alteração for feita nas configurações acima na
 * O usuário não pode acessar a página de login da Adobe id:
 
   Consulte as etapas anteriores para verificar a configuração do escopo.
+
+**Problemas de cache do WebView2**
+
+Se tiver problemas ao entrar no **[!UICONTROL Client Console]** com sua Adobe ID, tente limpar o cache local do WebView2. Na maioria dos casos, isso resolve o problema. Siga as etapas abaixo:
+
+1. Feche o **[!UICONTROL Client Console]** e pare qualquer processo `nlclient` em execução.
+
+1. Excluir todas as pastas `webview2` e `webview2Cache` dos seguintes locais:
+
+   * `C:\ProgramData\Neolane\NL_5\nlclient\`
+   * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
+
+1. Reinicie o **[!UICONTROL Client Console]** e entre com sua Adobe ID. As pastas de cache serão automaticamente recriadas na próxima inicialização.
