@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2391'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ A partir desta versão, o rastreamento de links em emails já enviados ainda fun
 * Correção de um problema que causava a solicitação de uma nova autenticação ao clicar no botão `Back` em um relatório do Campaign. (NEO-65087)
 * Correção de um erro no fluxo de trabalho de limpeza de banco de dados que acontecia quando uma entrega era excluída antes de suas provas de entrega. (NEO-48114)
 * Correção de um problema de conexão com o Console do cliente: atualizações recentes na verificação TLS estavam causando um erro de conexão. (NEO-50488)
-* Correção de um problema com a autenticação Proxy HTTP após a pós-atualização do Campaign para a 7.3.1. As solicitações HTTP em fluxos de trabalho do Campaign falhavam com `error 407 – proxy auth required is returned`. (NEO-49624)
+* Corrigimos um problema com a autenticação do proxy HTTP após a atualização do Campaign para a versão 7.3.1. As solicitações HTTP em fluxos de trabalho do Campaign falhavam com `error 407 – proxy auth required is returned`. (NEO-49624)
 * Correção de uma falha intermitente com descriptografia GPG nas atividades de fluxo de trabalho de **Script**. A mensagem de erro associada era: `gpg: decryption failed: No secret key`. (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
@@ -108,11 +108,11 @@ _7 de setembro de 2023_
 * Correção de um problema no gerenciamento de consultas que poderia afetar o desempenho da entrega. (NEO-49991)
 * Correção de um problema ao usar contas externas em atividades de entrega de fluxo de trabalho da campanha que poderia levar a problemas de configuração da conta externa. (NEO-49959)
 * Correção de um problema de desempenho ao enviar notificações por push. (NEO-49953)
-Correção de um problema que fazia com que caracteres japoneses fossem exibidos incorretamente ao exportar relatórios (NEO-49308).
+Corrigimos um problema que podia causar a exibição incorreta de caracteres japoneses ao exportar relatórios (NEO-49308).
 * Correção de um problema que fazia com que o relatório de erros do Tomcat exibisse mais detalhes de erros do que deveria. (NEO-49029)
 * Correção de um problema que poderia resultar em erro de entrega ao usar um grande número de ofertas. (NEO-48807)
 * Correção de um problema que poderia impedir o funcionamento adequado da atividade de fluxo de trabalho **Atualizar dados**. (NEO-48140)
-* Correção de um problema que impedia a sincronização dos dados de rastreamento de cliques para entregas usando uma conta externa diferente do email.(NEO-47277)
+* Corrigimos um problema que poderia impedir a sincronização dos dados de rastreamento de cliques para entregas realizadas por meio de uma conta externa diferente de email. (NEO-47277)
 * Correção de um problema que poderia impedir a sincronização de logs de rastreamento em tempo real na instância de marketing do Centro de mensagens. (NEO-42540)
 * Correção de um problema que impedia a exibição do prefixo do espaço de trabalho na janela de descoberta de um esquema para tabelas de banco de dados do Snowflake. (NEO-40297)
 * Correção de um problema que impedia que tags de `<img-amp>` funcionassem no conteúdo de email. (NEO-38685)

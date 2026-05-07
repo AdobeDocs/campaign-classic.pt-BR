@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1767'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -83,12 +83,12 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
     <tr>
   <td>Relatório de monitoramento técnico da avaliação da entrega<br></td>
    <td><p>O Relatório de monitoramento técnico da avaliação da entrega não está mais disponível. Ele foi descontinuado na versão 21.1.3 do Campaign.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
   <td>Autenticação OAuth (OAuth e JWT)<br></td>
-  <td><p> A autenticação da integração de acionadores para acessar o pipeline (originalmente baseada na configuração de autenticação OAuth) foi alterada e movida para o Adobe I/O. Este modo de autenticação foi descontinuado no Campaign 20.3.<p>
+  <td><p>A autenticação da integração de acionadores para acessar o pipeline (originalmente baseada na configuração de autenticação OAuth) foi alterada e movida para o Adobe I/O. Este modo de autenticação foi descontinuado no Campaign 20.3.<p>
   <p>Se você estava usando a integração do Triggers, saiba como adaptar sua implementação <a href="../../integrations/using/about-triggers.md#implement">nesta página</a>.</p> 
   <p>Para obter mais informações sobre a depreciação da Autenticação OAuth, consulte esta <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">página</a></p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
@@ -108,7 +108,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   </tr>
    <tr> 
    <td>Autenticação do Windows NT<br></td>
-   <td><p>A partir da versão 20.3 do Campaign, a autenticação do Windows NT foi removida dos métodos de autenticação disponíveis ao configurar um novo banco de dados com um Microsoft SQL Server. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Saiba mais</a></p></td>
+   <td><p>A partir da versão 20.3 do Campaign, a autenticação do Windows NT foi removida dos métodos de autenticação disponíveis ao configurar um novo banco de dados com o Microsoft SQL Server. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Saiba mais</a></p></td>
   </tr>
    <tr> 
    <td>Arquivamento de email baseado em arquivo<br></td>
@@ -137,7 +137,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   <tr> 
    <td>API decryptString</td>
    <td><p>Começando pela versão 18.6 do Campaign, por motivos de segurança, a API <em>decryptString</em> não estará mais disponível por padrão nas novas instalações.</p> 
-   <p>No contexto de uma pós-atualização para 18.6 (e posterior), essa API não é mais ativada e foi substituída pela função <em>decryptPassword. </em> <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=pt-BR&hl=decrypt">Saiba mais</a></p></td>
+   <p>No contexto de uma pós-atualização para 18.6 (e posterior), essa API não é mais ativada e foi substituída pela função <em>decryptPassword. </em> <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Saiba mais</a></p></td>
   </tr> 
    <tr> 
    <td>Canal móvel - Mensagens de push MMS e WAP</td>
@@ -210,7 +210,7 @@ A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais co
 
 A Adobe não oferece suporte aos seguintes mecanismos de banco de dados, pois foram descontinuados pelo editor. Os clientes que executam essas versões precisam atualizar para a versão mais recente ou mudar para outra.
 
-Consulte a [Matriz de compatibilidade do Campaign &#x200B;](../../rn/using/compatibility-matrix.md) para acessar a lista de versões compatíveis.
+Consulte a [Matriz de compatibilidade do Campaign ](../../rn/using/compatibility-matrix.md) para acessar a lista de versões compatíveis.
 
 **FEDERATED DATA ACCESS (FDA)**
 
@@ -234,10 +234,10 @@ O Campaign Classic não é compatível com os seguintes servidores no Federated 
 * MySQL 5.1.
 * O InfiniDB chegou ao fim da vida útil.
 * Teradata 13, 13.1.
-* Netezza 6.02, 7.0. O Netezza chegou ao fim da vida útil.
-* AsterData 5.0. AsterData chegou ao fim da vida útil.
+* Netezza 6.02, 7.0. O Netezza chegou ao fim do ciclo de vida.
+* AsterData 5.0. O AsterData chegou ao fim do ciclo de vida.
 * Sybase IQ 15.2, 15.4, 15.5 e Sybase ASE 15.0.
-* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. O Adobe Campaign Classic ainda é compatível com as versões listadas do Hadoop via HiveSQL por meio do Federated Data Access (FDA), mas essas versões são mescladas com: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
+* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. O Adobe Campaign Classic ainda oferece suporte às versões listadas do Hadoop via HiveSQL por meio do Federated Data Access (FDA), mas essas versões foram integradas com: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
 
 **SERVIDOR RDBMS**
 
