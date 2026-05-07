@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2670'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ _7 de setembro de 2021_
 
 * Após o fim da vida útil, o Flash foi removido de todos os recursos e componentes relacionados do Campaign e substituído pelo HTML5. O tipo de gráfico **Medição** foi removido. (NEO-30330) [Leia mais](../../reporting/using/creating-a-chart.md)
 * Ao instalar o console do cliente no Windows, o instalador agora verifica se há um nó de registro pai e cria um se estiver ausente. Isso evita possíveis problemas ao iniciar o console. (NEO-34854)
-* O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados à forma como as ferramentas de terceiros (clientes de email, navegadores de Internet etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
+* O recurso de assinatura de rastreamento foi aprimorado para evitar erros relacionados à forma como ferramentas de terceiros (clientes de email, navegadores da Internet, etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
 
 **Outras alterações**
 
@@ -218,7 +218,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 * Correção de um problema que causava a falha da criação do índice SAP HANA FDA. (NEO-29664)
 * Correção de um problema que poderia manter mensagens transacionais no estado **Aguardando** ao executar chamadas SOAP contendo um cabeçalho. (NEO-28737)
 * Correção de um problema que ocorria ao usar o conector FDA do Teradata: todas as tabelas temporárias foram criadas em apenas um nó do cluster, o que poderia acabar consumindo todo o espaço do spool e causar falha no Teradata. As tabelas temporárias agora são geradas em muitos nós. (NEO-28230)
-* Correção de um problema ao usar aplicações Web que fazia com que as tags de rastreamento gerassem chaves primárias incorretas no esquema **nms:trackingURL**. (NEO-27931)
+* Corrigimos um problema que ocorria ao usar aplicativos web e que fazia com que as tags de rastreamento gerassem chaves primárias incorretas no esquema **nms:trackingURL**. (NEO-27931)
 * A compatibilidade com o ODBC 3.x foi aprimorada para garantir a precisão da mensagem de erro.
 * Correção de um problema que poderia resultar em falhas do console quando modelos de conteúdo personalizados eram usados em entregas de email. (NEO-31547)
 * Correção de um problema que impedia o Tomcat de enviar respostas válidas devido a uma conexão lenta ou um tamanho de resposta grande. (NEO-30858)

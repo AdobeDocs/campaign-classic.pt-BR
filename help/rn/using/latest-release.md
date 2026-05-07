@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: b9a716f327b8fdd68c3bf36dbe864535308def30
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 27%
 
 Esta página lista novos recursos, melhorias e correções que vêm com a **versão mais recente do Campaign Classic v7**. Cada nova build vem com um status que é materializado por uma cor. Saiba mais sobre os status de build do Campaign Classic v7 [nesta página](rn-overview.md).
 
-## Versão 7.4.3 - Build 9394 {#release-7-4-3}
+## Versão 7.4.3 – Build 9394 {#release-7-4-3}
 
 [!BADGE Disponibilidade geral]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade geral"}
 
@@ -33,12 +33,12 @@ _16 de março de 2026_
 
 ### Correções {#fixes-7-4-3}
 
-* Correção de um problema em que o componente de código de barras permitia um parâmetro de altura não vinculado, o que poderia resultar em uma vulnerabilidade de segurança. (NEO-89984)
-* Correção de um problema em que os campos de enumeração em listas criadas por meio de workflows não tinham atributos de nome temporários, fazendo com que rótulos de enumeração incorretos ou em branco fossem exibidos na interface. (NEO-91158)
-* Correção de um problema em que as estatísticas de delivery não eram totalmente recalculadas para algumas deliveries, afetando particularmente os indicadores de sucesso. (NEO-88106)
-* Correção de um problema em que a preparação do delivery falhava com erros de personalização ao usar campos targetData em workflows com atividades de desduplicação. (NEO-87693)
-* Correção de um problema em que a concatenação de campos de sequência de caracteres únicos com outras sequências falhava no PostgreSQL 15 devido a requisitos de conversão de tipo. (NEO-88028)
-* Correção de um problema em que os logs de rastreamento de campanhas colaborativas em Marketing distribuído não eram gravados no banco de dados devido a uma incompatibilidade entre IDs de entrega pai e filho. (NEO-86836)
-* Correção de um problema em que os logs do delivery mostravam mensagens como canceladas mesmo que fossem enviadas com êxito, afetando principalmente os deliveries com agendamento de onda. (NEO-78933)
-* Correção de um problema em que o fluxo de trabalho de limpeza do banco de dados não limpava dados com eficiência, o que poderia afetar o desempenho. (NEO-76439)
+* Corrigimos um problema em que o componente de código de barras permitia um parâmetro de altura ilimitado, o que poderia causar uma vulnerabilidade de segurança. (NEO-89984)
+* Corrigimos um problema em que os campos de enumeração em listas criadas por meio de fluxos de trabalho não possuíam atributos de nome temporário, o que fazia com que rótulos de enumeração incorretos ou em branco fossem exibidos na interface. (NEO-91158)
+* Corrigimos um problema em que as estatísticas de entrega não eram totalmente recalculadas para algumas entregas, o que afetava especialmente os indicadores de sucesso. (NEO-88106)
+* Corrigimos um problema em que a preparação da entrega falhava devido a erros de personalização ao usar campos targetData em fluxos de trabalho com atividades de desduplicação. (NEO-87693)
+* Corrigimos um problema em que a concatenação de campos de strings de caractere único com outras strings falhava no PostgreSQL 15 devido a requisitos de conversão de tipos. (NEO-88028)
+* Corrigimos um problema em que os logs de rastreamento das campanhas colaborativas no marketing distribuído não estavam sendo gravados no banco de dados devido a uma incompatibilidade entre as IDs de entrega pai e filho. (NEO-86836)
+* Corrigimos um problema em que os logs de entrega exibiam mensagens como canceladas, mesmo que tivessem sido enviadas com sucesso, afetando especialmente as entregas com agendamento por lotes. (NEO-78933)
+* Corrigimos um problema em que o fluxo de trabalho de limpeza do banco de dados não estava eliminando os dados de forma eficiente, o que poderia afetar o desempenho. (NEO-76439)
 
