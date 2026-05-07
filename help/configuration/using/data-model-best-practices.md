@@ -146,7 +146,7 @@ Quando uma tabela personalizada está sendo criada no Adobe Campaign com uma cha
 
 Por padrão, uma sequência personalizada terá valores que variam de +1.000 a +2,1BB. Tecnicamente, é possível obter uma gama completa de 4BB habilitando ids negativas. Isso deve ser usado com cuidado e uma ID será perdida ao passar de números negativos para positivos: o registro 0 normalmente é ignorado pelo Adobe Campaign em consultas SQL geradas.
 
-Para saber mais sobre a exaustão das sequências, assista a [este vídeo](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Para saber mais sobre a exaustão das sequências, assista a [este vídeo](https://helpx.adobe.com/br/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Índices {#indexes}
 
