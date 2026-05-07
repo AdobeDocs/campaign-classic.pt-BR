@@ -6,7 +6,7 @@ feature: Reporting, Monitoring
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '929'
 ht-degree: 100%
 
 ---
@@ -23,13 +23,13 @@ Para criar um relatório, siga as etapas abaixo:
 
    ![](assets/s_ncs_advuser_report_wizard_new_01.png)
 
-1. Selecione o template do relatório na lista suspensa.
+1. Selecione o modelo do relatório na lista suspensa.
 
    * **[!UICONTROL Extended report]** permite criar um relatório configurado usando um gráfico.
    * O relatório **[!UICONTROL Qualitative distribution]** permite criar estatísticas baseadas em todos os tipos de dados (nome da empresa, domínio de email etc.).
    * O relatório **[!UICONTROL Quantitative distribution]** relatório permite criar estatísticas em dados que podem ser medidos ou contados (valor da fatura, idade do destinatário etc.).
 
-   Para obter mais informações sobre esses templates de relatórios, consulte [esta seção](../../reporting/using/about-descriptive-analysis.md).
+   Para obter mais informações sobre esses modelos de relatórios, consulte [esta seção](../../reporting/using/about-descriptive-analysis.md).
 
 1. Insira o nome do relatório e sua descrição nos campos correspondentes. Especifique o **[!UICONTROL schema]** no qual o relatório será aplicado.
 
@@ -63,7 +63,7 @@ Para criar um relatório, dependendo da natureza e do contexto, é preciso ident
 
    Esses dados serão exibidos (ou não) no relatório, dependendo da configuração da página.
 
-1. Coloque uma ou mais atividades **[!UICONTROL Page]** para definir a representação gráfica dos dados coletados. É possível inserir tabelas, gráficos, campos de entrada e condição de uma ou mais páginas ou elementos da página. O conteúdo exibido é totalmente configurável.
+1. Coloque uma ou mais atividades **[!UICONTROL Page]** para definir a representação gráfica dos dados coletados. É possível inserir tabelas, gráficos, campos de entrada e condicionar a exibição de uma ou mais páginas ou elementos da página. O conteúdo exibido é totalmente configurável.
 
    Para obter mais informações, consulte [Elementos estáticos](#static-elements).
 
@@ -112,7 +112,7 @@ Também é possível clicar com o botão direito do mouse no nó onde deseja adi
 Um **[!UICONTROL Page]** pode incluir os seguintes elementos:
 
 * Barra, pizza, tipo de curva **[!UICONTROL charts]** etc.
-* Tabela dinâmica, lista com grupo ou Análise **[!UICONTROL tables]**.
+* Tabela dinâmica, lista com grupo ou detalhamento **[!UICONTROL tables]**.
 * Texto ou número tipo **[!UICONTROL Input controls]**.
 * Lista suspensa, caixa de seleção, botão de opção, múltipla escolha, data ou matriz tipo **[!UICONTROL Selection controls]**.
 * Editor de link, Constante, seleção de pasta tipo **[!UICONTROL Advanced controls]**.

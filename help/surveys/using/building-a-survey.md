@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '793'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Selecione o modelo de pesquisa (**[!UICONTROL newSurvey]** por padrão).
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-As páginas do formulário são criadas usando um editor especial que permite definir e configurar campos de entrada (texto), campos de seleção (listas, caixas de seleção etc.) e elementos estáticos (imagens, conteúdo HTML etc.). Elas podem ser coletadas em &quot;containers&quot; e dispostas de acordo com os requisitos. [Saiba mais](#adding-questions)).
+As páginas do formulário são criadas usando um editor especial que permite definir e configurar campos de entrada (texto), campos de seleção (listas, caixas de seleção etc.) e elementos estáticos (imagens, conteúdo do HTML etc.). Elas podem ser coletadas em &quot;containers&quot; e dispostas de acordo com os requisitos. [Saiba mais](#adding-questions)).
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Ao adicionar um campo a uma pesquisa, você precisa selecionar seu tipo. As segu
    >
    >Os modos de armazenamento e importações de campo são detalhados [nesta seção](../../surveys/using/managing-answers.md#storing-collected-answers).
 
-A natureza do campo a ser adicionado (lista suspensa, campo de texto, caixas de seleção etc.) se adapta ao modo de armazenamento selecionado. É possível alterá-lo por meio do campo **[!UICONTROL Type]** da guia **[!UICONTROL General]**, mas mantenha a consistência com o tipo de dados.
+A natureza do campo a ser adicionado (lista suspensa, campo de texto, caixas de seleção etc.) adapta-se ao modo de armazenamento selecionado. É possível alterá-lo por meio do campo **[!UICONTROL Type]** da guia **[!UICONTROL General]**, mas mantenha a consistência com o tipo de dados.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 

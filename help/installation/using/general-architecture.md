@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Arquitetura geral do Campaign Classic
-description: Aprenda a instalar e configurar Campaign Classic
+description: Saiba como instalar e configurar o Campaign Classic
 feature: Installation, Architecture
 audience: installation
 content-type: reference
@@ -10,7 +10,7 @@ topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 
 
-A solução Adobe Campaign típica implantação consiste nos seguintes componentes:
+A implantação típica da solução Adobe Campaign consiste nos seguintes componentes:
 
-* **Ambiente personalizado do cliente**
+* **Ambiente de Cliente Personalizado**
 
   Interface gráfica intuitiva na qual os usuários podem se comunicar e rastrear ofertas de marketing, criar campanhas, revisar e gerenciar todas as atividades de marketing, programas e planos, incluindo emails, fluxos de trabalho e páginas de aterrissagem, criar e gerenciar perfis de clientes e definir tipos de público-alvo do cliente.
 
@@ -47,17 +47,17 @@ O Adobe Campaign é baseado em uma SOA (Service-Oriented Architecture, arquitetu
 
 ## Camada de apresentação {#presentation-layer}
 
-O aplicativo pode ser acessado de diferentes maneiras, dependendo das necessidades dos usuários: rich client, Thin client ou API integration.
+O aplicativo pode ser acessado de maneiras diferentes, dependendo das necessidades dos usuários: cliente avançado, cliente thin ou integração de API.
 
 * **Cliente avançado**: a principal interface de usuário do aplicativo é um cliente avançado, em outras palavras, um aplicativo nativo (Windows) que se comunica com o servidor de aplicativos do Adobe Campaign exclusivamente com protocolos padrão de Internet (SOAP, HTTP etc.). Esse console oferece excelente facilidade de uso para produtividade, usa pouca largura de banda (por meio do uso de um cache local) e foi projetado para facilitar a implantação. Esse console pode ser implantado a partir de um navegador da Internet, pode ser atualizado automaticamente e não requer nenhuma configuração de rede específica porque gera apenas tráfego HTTP(S).
 * **Thin client**: determinadas partes do aplicativo podem ser acessadas por meio de um navegador da Web simples usando uma interface de usuário do HTML, incluindo o módulo de relatórios, estágios de aprovação de entrega, funcionalidades do módulo Marketing Distribuído (central/local), monitoramento de instâncias etc. Esse modo permite incluir funcionalidades do Adobe Campaign em uma intranet ou extranet.
 * **Integração por meio das APIs**: em certos casos, o sistema pode ser chamado a partir de um aplicativo externo usando as APIs de Serviços Web expostas pelo protocolo SOAP.
 
-## Camada de aplicativo lógica {#logical-application-layer}
+## Camada de aplicação lógica {#logical-application-layer}
 
-Adobe Campaign é uma única plataforma com diferentes aplicativos que se combinam para criar uma arquitetura aberta e dimensionável. A plataforma de Adobe Campaign é escrita em uma camada de aplicativo flexível e é facilmente configurável para atender às necessidades comerciais de uma empresa. Isso acomoda as crescentes necessidades da empresa a partir de uma perspectiva funcional, bem como de uma perspectiva técnica. A arquitetura distribuída garante que o sistema linear escalabilidade escala de milhares de mensagens para milhões de mensagens.
+O Adobe Campaign é uma plataforma única com diferentes aplicativos que se combinam para criar uma arquitetura aberta e escalável. A plataforma Adobe Campaign foi criada em uma camada de aplicativo flexível e pode ser facilmente configurada para atender às necessidades de negócios da empresa. Isso acomoda as necessidades crescentes da empresa de uma perspectiva funcional, bem como de uma perspectiva técnica. A arquitetura distribuída garante escalabilidade linear do sistema, de milhares a milhões de mensagens.
 
-Adobe Campaign depende de um conjunto de processos de lado do servidor que trabalham juntos.
+O Adobe Campaign depende de um conjunto de processos do lado do servidor que funcionam juntos.
 
 Os principais processos são:
 
@@ -73,9 +73,9 @@ Também lida com workflows técnicos executados periodicamente, incluindo:
 
 * Rastreamento: recuperação e consolidação de logs de rastreamento. Ela permite recuperar os logs do servidor de redirecionamento e criar os indicadores agregados usados pelo módulo de relatórios.
 * Limpeza: limpeza do banco de dados. Usado para eliminar registros antigos e evitar que o banco de dados cresça exponencialmente.
-* Faturamento: envio automático de um relatório de atividade para a plataforma (tamanho do banco de dados, número de ações do marketing, número de perfis ativos etc.).
+* Faturamento: envio automático de um relatório de atividade para a plataforma (tamanho do banco de dados, número de ações de marketing, número de perfis ativos etc.).
 
-**Servidor de** entrega (nlserver mta)
+**Servidor de Entrega** (nlserver mta)
 
 O Adobe Campaign tem a funcionalidade nativa de transmissão por email. Esse processo funciona como um agente de transferência de email SMTP (MTA). Ele executa a personalização &quot;um para um&quot; das mensagens e lida com a entrega física. Ele funciona usando processos de entrega e lida com tentativas automáticas. Além disso, quando o rastreamento é ativado, ele substitui automaticamente os URLs para que eles apontem para o servidor de redirecionamento.
 
@@ -83,9 +83,9 @@ Esse processo pode lidar com a personalização e o envio automático para um ro
 
 **Servidor de redirecionamento** (nlserver webmdl)
 
-Para email, Adobe Campaign lida automaticamente com aberturas e rastreamento de cliques (rastreamento transacionais no nível do site é uma possibilidade adicional). Para isso, os URLs incorporados nas mensagens de email são reescritos solicitar para apontar para essa módulo, que registra a passagem das usuário da internet antes de redirecioná-las para a URL necessária.
+Para emails, o Adobe Campaign lida automaticamente com o rastreamento de cliques e aberturas (o rastreamento transacional no nível do site é uma outra possibilidade). Para isso, os URLs incorporados nas mensagens de email são reescritos para apontar para esse módulo, que registra a passagem do usuário da Internet antes de redirecioná-lo para o URL necessário.
 
-Para garantir maior disponibilidade, esse processo é totalmente independente do banco de dados: os outros processos do servidor se comunicam com ele usando chamadas SOAP (HTTP, HTTP(S) e XML) somente. Tecnicamente, essa funcionalidade é implementada em uma extensão módulo de um servidor HTTP (extensão ISAPI em IIS, ou um DSO Apache módulo etc.) e está disponível apenas no Windows.
+Para garantir a maior disponibilidade, esse processo é totalmente independente do banco de dados: os outros processos do servidor se comunicam com ele usando chamadas do SOAP (HTTP, HTTP(S) e XML) apenas. Tecnicamente, essa funcionalidade é implementada em um módulo de extensão de um servidor HTTP (extensão ISAPI no IIS, ou um módulo DSO Apache etc.) e está disponível somente no Windows.
 
 Outros processos mais técnicos também estão disponíveis:
 
@@ -99,9 +99,9 @@ Todas essas operações são totalmente automáticas e pré-configuradas.
 
 Esse processo pesquisa o roteador SMS para coletar o status do progresso e atualizar o banco de dados.
 
-**Gravação de mensagens** de log (nlserver syslogd)
+**Gravando mensagens de log** (nlserver syslogd)
 
-Esse processo técnico captura mensagens de log e rastreamentos gerados pelos outros processos e as grava no disco rígido. Isso disponibiliza amplas informações para diagnóstico em caso de problemas.
+Esse processo técnico captura mensagens de registro e rastreamentos gerados por outros processos e os grava no disco rígido. Isso disponibiliza amplas informações para o diagnóstico em caso de problemas.
 
 **Gravando logs de rastreamento** (nlserver trackinglogd)
 
@@ -113,11 +113,11 @@ Esse processo garante o registro em disco de eventos de entrada, dentro da estru
 
 **Supervisão de módulos** (watchdog nlserver)
 
-Esse processo técnico atua como um processo primário que gera os outros. Ele também os monitora e os relaunifica automaticamente em caso de incidentes, mantendo assim o tempo máximo de atividade do sistema.
+Esse processo técnico atua como um processo primário que gera os outros. Ele também os monitora e reinicia automaticamente em caso de incidentes, mantendo o máximo de tempo de atividade do sistema.
 
-**Servidor de** estatísticas (nlserver stat)
+**Servidor de estatísticas** (nlserver stat)
 
-Esse processo mantém estatísticas sobre o número de conexões, as mensagens enviadas para cada servidor de email para as quais as mensagens são enviadas, bem como suas limitações (maior número de conexões simultâneas, mensagens por hora/e ou conexão). Também permite federar várias instâncias ou máquinas se elas compartilham os mesmos endereços IP públicos.
+Esse processo mantém estatísticas sobre o número de conexões, as mensagens enviadas para cada servidor de e-mail para o qual as mensagens são enviadas, bem como suas limitações (maior número de conexões simultâneas, mensagens por hora/e/ou conexão). Ela também permite federar várias instâncias ou máquinas se compartilharem os mesmos endereços IP públicos.
 
 >[!NOTE]
 >

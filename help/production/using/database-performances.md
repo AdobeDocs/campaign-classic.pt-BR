@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: 33dcfd4b-51fd-44f4-98e0-23eafb79d7da
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 9%
+source-wordcount: '518'
+ht-degree: 13%
 
 ---
 
@@ -28,7 +28,7 @@ A maioria dos problemas de desempenho está vinculada à manutenção do banco d
 
 ## Configuração {#configuration}
 
-Verifique se a configuração inicial da plataforma Adobe Campaign ainda é válida e, se necessário, reavalie as necessidades do cliente em termos de capacidade de entrega ou tamanho do banco de dados. Também recomendamos executar uma verificação completa de hardware (CPU, RAM, sistema de E/S).
+Verifique se a configuração inicial da plataforma Adobe Campaign ainda é válida e, se necessário, reavalie as necessidades do cliente em termos de capacidade de entrega ou tamanho do banco de dados. Também recomendamos executar uma verificação completa de hardware (CPU, RAM, sistema IO).
 
 >[!NOTE]
 >

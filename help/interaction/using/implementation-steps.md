@@ -5,7 +5,7 @@ description: Etapas de implementação do módulo Interação do Campaign
 feature: Interaction, Offers
 exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 >As etapas a seguir devem ser executadas por um perfil **Administrador** e apenas em ambientes de design.
 
 1. Criar perfis de usuário. Para obter mais informações, consulte [Perfis de operador](../../interaction/using/operator-profiles.md).
-1. Criar um ambiente de oferta pelo direcionamento da dimensão. Para obter mais informações, consulte [Criação de um ambiente de ofertas](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+1. Criar um ambiente de oferta pela dimensão de direcionamento. Para obter mais informações, consulte [Criação de um ambiente de ofertas](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 1. Criar regras de tipologia para cada ambiente. Para obter mais informações, consulte [Criação e referência de uma regra de apresentação de oferta](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule).
 1. Criar espaços de oferta para cada ambiente e configurar funções de renderização. Para obter mais informações, consulte [Criação de espaços de oferta](../../interaction/using/creating-offer-spaces.md).
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >Quando um espaço é criado no canal de entrada da Web, também é necessária uma configuração no site em que a oferta será exibida.
+   >Quando um espaço é criado no canal da web de entrada, também é necessária uma configuração no site em que a oferta será exibida.
 
 ## Gerenciamento do catálogo de ofertas {#managing-the-offer-catalog-}
 

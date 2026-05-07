@@ -6,8 +6,8 @@ feature: Installation, Instance Settings, Federated Data Access
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 47%
+source-wordcount: '189'
+ht-degree: 46%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 47%
 
 
 
-Para criar um schema em um banco de dados externo:
+Para criar um esquema em um banco de dados externo:
 
-1. Clique no botão **[!UICONTROL New]** acima da lista dos schemas de dados e escolha **[!UICONTROL Access external data]**.
+1. Clique no botão **[!UICONTROL New]** acima da lista dos esquemas de dados e escolha **[!UICONTROL Access external data]**.
 
    ![](assets/wf_new_schema_fda.png)
 
@@ -31,7 +31,7 @@ Para criar um schema em um banco de dados externo:
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Clique em **[!UICONTROL OK]** para confirmar. O Adobe Campaign detecta automaticamente a estrutura da tabela selecionada e gera o schema lógico. Observe que o Adobe Campaign não gera links.
+1. Clique em **[!UICONTROL OK]** para confirmar. O Adobe Campaign detecta automaticamente a estrutura da tabela selecionada e gera o esquema lógico. Observe que o Adobe Campaign não gera links.
 
 1. Clique em **[!UICONTROL Save]** para confirmar a criação.
 

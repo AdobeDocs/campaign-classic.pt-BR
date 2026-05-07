@@ -9,8 +9,8 @@ topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 100%
+source-wordcount: '711'
+ht-degree: 82%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 100%
 
 
 
-Durante uma chamada do mecanismo do Interaction, é possível transferir informações contextuais adicionais. Esses dados podem vir dos dados de destino armazenados na tabela de trabalho de um workflow (canal de saída) ou dos dados de chamada enviados pelo site durante a chamada (canal de entrada). É possível usar esses dados adicionais nas regras de qualificação, na personalização da oferta e também pode armazená-lo em uma tabela de propostas.
+Durante uma chamada do mecanismo do Interaction, é possível transferir informações contextuais adicionais. Esses dados podem vir dos dados de destino armazenados na tabela de trabalho de um fluxo de trabalho (canal de saída) ou dos dados de chamada enviados pelo site durante a chamada (canal de entrada). É possível usar esses dados adicionais nas regras de elegibilidade, na personalização da oferta e também pode armazená-lo em uma tabela de propostas.
 
-Para o canal de entrada, pode ser útil recuperar informações como o idioma do navegador da consultoria de pessoas, ou o nome do agente da central de atendimento, por exemplo. Em seguida, é possível usar esses dados de chamada nas regras de qualificação para apresentar uma oferta somente às pessoas que visualizam a página da Web em francês ou inglês.
+Para o canal de entrada, pode ser útil recuperar informações como o idioma do navegador da consultoria de pessoas, ou o nome do agente da central de atendimento, por exemplo. Em seguida, é possível usar esses dados de chamada nas regras de elegibilidade para apresentar uma oferta somente às pessoas que visualizam a página da Web em francês ou inglês.
 
-Em um workflow para criação de target (canal de saída), é possível usar os dados do target durante uma chamada para o mecanismo. Por exemplo, é possível enriquecer o target com dados de uma transação vinculada a um destinatário ou um banco de dados externo, por meio do FDA.
+Em um fluxo de trabalho de segmentação (canal de saída), é possível usar os dados do target durante uma chamada para o mecanismo. Por exemplo, é possível enriquecer o target com dados de uma transação vinculada a um destinatário ou um banco de dados externo, por meio do FDA.
 
 ## Configurações de dados adicionais {#additional-data-configuration}
 
-É necessário estender o schema **de nms:interação** vinculado ao ambiente e declarar a lista de campos adicionais que serão usados durante uma chamada para o mecanismo do Interaction. Ao criar a regra de elegibilidade ou personalizar uma oferta, esses campos ficarão acessíveis pelo nó **Interaction** (consulte [Uso de dados adicionais](#using-additional-data)).
+É necessário estender o esquema **nms:interaction** vinculado ao ambiente e declarar a lista de campos adicionais que serão usados durante uma chamada para o mecanismo do Interaction. Ao criar a regra de elegibilidade ou personalizar uma oferta, esses campos ficarão acessíveis pelo nó **Interaction** (consulte [Uso de dados adicionais](#using-additional-data)).
 
 Para o canal de entrada, é necessário adicionar os campos de dados de chamada no nó **Interação**.
 
@@ -38,7 +38,7 @@ Para o canal de entrada, é necessário adicionar os campos de dados de chamada 
 
 >[!NOTE]
 >
->Há suporte para coleções XML no canal de entrada, mas os links para outros schemas não possuem.
+>Há suporte para coleções XML no canal de entrada, mas os links para outros esquemas não possuem.
 
 Para o canal de saída, é necessário adicionar um elemento **targetData** contendo os campos adicionais no nó **Interaction**.
 
@@ -52,9 +52,9 @@ Para o canal de saída, é necessário adicionar um elemento **targetData** cont
 
 >[!NOTE]
 >
->Não há suporte para coleções no canal de saída. No entanto, é possível criar links para outros schemas.
+>Não há suporte para coleções no canal de saída. No entanto, é possível criar links para outros esquemas.
 
-Se quiser armazenar esses dados na tabela de propostas, também é necessário estender o schema **nms:propositionRcp** e declarar esses campos.
+Se quiser armazenar esses dados na tabela de propostas, também é necessário estender o esquema **nms:propositionRcp** e declarar esses campos.
 
 ```
 <element label="Recipient offer propositions" labelSingular="Recipient offer proposition" name="propositionRcp">
@@ -67,7 +67,7 @@ Se quiser armazenar esses dados na tabela de propostas, também é necessário e
 
 ### Canal de entrada (página da Web) {#input-channel--web-page-}
 
-Para transferir dados adicionais ao chamar o mecanismo, é necessário adicionar a variável **interactionGlobalCtx** no código JavaScript da página da Web. Insira o nó **Interaction** que contém os dados de chamada nesta variável. É preciso respeitar a mesma estrutura xml que está no schema **nms:interaction.** Consulte: [Configuração de dados adicionais](#additional-data-configuration).
+Para transferir dados adicionais ao chamar o mecanismo, é necessário adicionar a variável **interactionGlobalCtx** no código JavaScript da página da Web. Insira o nó **Interaction** que contém os dados de chamada nesta variável. É necessário respeitar a mesma estrutura xml que está no esquema **nms:interaction**. Consulte: [Configuração de dados adicionais](#additional-data-configuration).
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
@@ -75,13 +75,13 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### Canal de saída {#output-channel}
 
-É necessário criar um workflow para criação de target para carregar dados adicionais na tabela de trabalho respeitando a mesma estrutura XML e os mesmos nomes internos que no schema **nms:interaction.** Consulte: [Configuração de dados adicionais](#additional-data-configuration).
+É necessário criar um fluxo de trabalho de direcionamento para carregar dados adicionais na tabela de trabalho respeitando a mesma estrutura XML e os mesmos nomes internos que no esquema **nms:interaction**. Consulte: [Configuração de dados adicionais](#additional-data-configuration).
 
 ## Uso de dados adicionais {#using-additional-data}
 
 ### Regras de elegibilidade {#eligibility-rules}
 
-É possível usar os dados adicionais nas regras de qualificação para ofertas, categorias e pesos.
+É possível usar os dados adicionais nas regras de elegibilidade para ofertas, categorias e pesos.
 
 Por exemplo, é possível optar por apresentar a oferta apenas para pessoas que visualizam a página em inglês.
 
@@ -101,7 +101,7 @@ Também é possível usar esses dados adicionais ao personalizar uma oferta. Por
 >
 >É necessário limitar a personalização nos canais para os quais os dados são definidos. No nosso exemplo, estamos limitando a regra no canal da Web de entrada.
 
-Se tiver personalizado uma oferta usando dados adicionais, esses dados não aparecerão na visualização por padrão porque não estão disponíveis no banco de dados. Na guia **[!UICONTROL Example of call data]** do ambiente, é preciso adicionar amostras de valor para usar na pré-visualização. Respeite a mesma estrutura xml que está na extensão de schema **de nms:interação.** Para obter mais informações, consulte [Configuração de dados adicionais](#additional-data-configuration).
+Se tiver personalizado uma oferta usando dados adicionais, esses dados não aparecerão na visualização por padrão porque não estão disponíveis no banco de dados. Na guia **[!UICONTROL Example of call data]** do ambiente, é preciso adicionar amostras de valor para usar na pré-visualização. Respeite a mesma estrutura xml que está na extensão de esquema **nms:interaction**. Para obter mais informações, consulte [Configuração de dados adicionais](#additional-data-configuration).
 
 ![](assets/ita_calldata_preview.png)
 
@@ -115,7 +115,7 @@ Durante uma chamada para o mecanismo, é possível armazenar dados adicionais na
 
 >[!NOTE]
 >
->É necessário estender o schema **nms:propositionRcp** e declarar os campos que conterão os dados a serem armazenados. Para obter mais informações: [Configuração de dados adicionais](#additional-data-configuration).
+>Você deve ter estendido o esquema **nms:propositionRcp** e declarado os campos que conterão os dados a serem armazenados. Para obter mais informações: [Configuração de dados adicionais](#additional-data-configuration).
 
 No espaço de ofertas, vá para a guia **[!UICONTROL Storage]** e clique no botão **[!UICONTROL Add]**.
 

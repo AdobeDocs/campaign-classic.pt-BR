@@ -9,7 +9,7 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '450'
 ht-degree: 22%
 
 ---
@@ -51,7 +51,7 @@ O gerenciamento de acesso é uma parte importante do fortalecimento da seguranç
 
 Ao desenvolver no Adobe Campaign (workflows, Javascript, JSSP etc.), sempre siga estas diretrizes:
 
-* **Scripting**: tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de cadeias de caracteres e evite a injeção de SQL adicionando as funções SQL a serem usadas no arquivo de inclui na lista de permissões.
+* **Scripting**: tente evitar instruções SQL. Use funções parametrizadas em vez de concatenação de cadeias de caracteres e evite a injeção de SQL adicionando as funções SQL a serem usadas no incluo na lista de permissões.
 
 * **Proteger o modelo de dados**: use direitos nomeados para limitar ações do operador, adicionar filtros do sistema (sysFilter)
 
@@ -95,7 +95,7 @@ A configuração deve ser executada em todos os servidores. Os arquivos de confi
 Várias práticas recomendadas devem ser seguidas ao configurar o servidor Web (Apache/IIS):
 
 * Desabilitar versão e cifras antigas do SSL
-* Remova o método TRACE
+* Remover o método TRACE
 * Remova o banner
 * Limitar o tamanho da consulta para impedir que arquivos importantes sejam carregados
 

@@ -8,7 +8,7 @@ role: User
 exl-id: 9528b67a-8ba7-45d6-a2c0-06ac117d5324
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '97'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-1. Clique em **[!UICONTROL Start]** para iniciar o workflow.
+1. Clique em **[!UICONTROL Start]** para iniciar o fluxo de trabalho.
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
    ![](assets/use_case_abtesting_startwkfl_002.png)
 
-   Nesse caso, o template B foi escolhido.
+   Nesse caso, o modelo B foi escolhido.
 
 1. Após o conteúdo da terceira entrega ser determinado, aprove o target e o conteúdo.
 

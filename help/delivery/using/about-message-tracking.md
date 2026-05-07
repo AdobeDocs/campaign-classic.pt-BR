@@ -6,8 +6,8 @@ feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: ba53107ce06c0484070cbe0943ba439d33d5f710
-workflow-type: ht
-source-wordcount: '1267'
+workflow-type: tm+mt
+source-wordcount: '1364'
 ht-degree: 100%
 
 ---
@@ -70,11 +70,11 @@ Para instalações locais, as informações de rastreamento são armazenadas no 
 
 **Rastreamento de uma aplicação web**
 
-Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicativo Web, como formulários e landing pages. [Saiba mais](../../web/using/tracking-a-web-application.md)
+Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicativo Web, como formulários e páginas de destino. [Saiba mais](../../web/using/tracking-a-web-application.md)
 
 **Recusar rastreamento da aplicação web**
 
-A opção de recusar o rastreamento de aplicações web permite que você interrompa o rastreamento dos comportamentos da Web de usuários finais que recusam o rastreamento comportamental. Você pode incluir a capacidade de exibir um banner em aplicações web ou landing pages para permitir que os usuários recusem. [Saiba mais](../../web/using/web-application-tracking-opt-out.md)
+A opção de recusar o rastreamento de aplicações web permite que você interrompa o rastreamento dos comportamentos da Web de usuários finais que recusam o rastreamento comportamental. Você pode incluir a capacidade de exibir um banner em aplicações web ou páginas de destino para permitir que os usuários recusem. [Saiba mais](../../web/using/web-application-tracking-opt-out.md)
 
 ## Solução de problemas de rastreamento {#tracking-troubleshooting}
 

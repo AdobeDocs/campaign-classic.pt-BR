@@ -9,7 +9,7 @@ topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '987'
 ht-degree: 100%
 
 ---
@@ -78,7 +78,7 @@ Uma apresentação de oferta pode ter vários status dependendo das interações
 
 >[!NOTE]
 >
->O status da apresentação de oferta não é atualizado imediatamente. Ele é realizado pelo workflow de rastreamento que é acionado a cada hora.
+>O status da apresentação de oferta não é atualizado imediatamente. Ele é realizado pelo fluxo de trabalho de rastreamento que é acionado a cada hora.
 
 ### Lista de status {#status-list}
 
@@ -161,4 +161,4 @@ Se um destinatário não estiver qualificado para ofertas, isso será mostrado n
 
 ![](assets/offer_space_overview_001.png)
 
-A visualização pode ignorar contextos quando eles são restritos a um espaço. Este é o caso quando o schema de interação foi estendido para adicionar campos referenciados em um espaço usando um canal de entrada (para saber mais sobre isso, consulte [Exemplo de extensão](../../interaction/using/extension-example.md)).
+A visualização pode ignorar contextos quando eles são restritos a um espaço. Este é o caso quando o esquema de interação foi estendido para adicionar campos referenciados em um espaço usando um canal de entrada (para saber mais sobre isso, consulte [Exemplo de extensão](../../interaction/using/extension-example.md)).

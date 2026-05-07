@@ -9,7 +9,7 @@ topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '97'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 
 
-Filtros predefinidos permitem criar regras de qualificação para a população de destino que podem ser facilmente reutilizados durante a criação da oferta. Eles são específicos para cada ambiente e consideram os parâmetros de oferta.
+Filtros predefinidos permitem criar regras de elegibilidade para a população de destino que podem ser facilmente reutilizados durante a criação da oferta. Eles são específicos para cada ambiente e consideram os parâmetros de oferta.
 
 Para criar um filtro, siga as seguintes etapas:
 
@@ -38,7 +38,7 @@ Para criar um filtro, siga as seguintes etapas:
 
    ![](assets/offer_filter_create_003.png)
 
-1. Selecione um operador e um valor se necessário, então salve a query.
+1. Selecione um operador e um valor se necessário, então salve a consulta.
 
    ![](assets/offer_filter_create_004.png)
 

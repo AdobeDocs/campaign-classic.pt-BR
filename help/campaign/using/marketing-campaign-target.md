@@ -8,8 +8,8 @@ hide: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 100%
+source-wordcount: '1508'
+ht-degree: 97%
 
 ---
 
@@ -92,7 +92,7 @@ Os fluxos de trabalho de segmentação podem ser iniciados manualmente por meio 
 
 O direcionamento pode ser programado para execução automática de acordo com um agendamento (scheduler) ou um evento (sinal externo, importação de arquivo, etc.).
 
-As ações relacionadas à execução do fluxo de trabalho de definição de metas (inicialização, parada, pausa etc.) são processos **assíncronos** : o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
+As ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são processos **assíncronos**: o comando é salvo e entrará em vigor assim que o servidor estiver disponível para aplicá-lo.
 
 Os ícones da barra de ferramentas permitem realizar a ação referente à execução do fluxo de trabalho de segmentação.
 
@@ -170,7 +170,7 @@ Os ícones da barra de ferramentas permitem realizar a ação referente à execu
 
   >[!CAUTION]
   >
-  >A interrupção incondicional é restrita aos usuários administradores. 
+  >A interrupção incondicional é restrita aos usuários administradores.
 
 ## Adicionar um grupo de controle {#defining-a-control-group}
 
@@ -245,6 +245,6 @@ Você pode definir uma nova população a ser usada como um grupo de controle. E
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/31837?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

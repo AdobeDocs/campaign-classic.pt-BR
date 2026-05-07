@@ -7,8 +7,8 @@ hide: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 16%
+source-wordcount: '1052'
+ht-degree: 17%
 
 ---
 
@@ -49,11 +49,11 @@ Como parte da nova integração do servidor de entrega, o Campaign precisa se co
 
 >[!AVAILABILITY]
 >
-> A credencial de conta de serviço (JWT) está sendo descontinuada pela Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem usar a credencial de servidor para servidor OAuth. </br>
+> A credencial Conta de serviço (JWT) está sendo substituída pela Adobe. As integrações do Campaign com as soluções e os aplicativos da Adobe agora devem depender da credencial servidor para servidor do OAuth. </br>
 >
 > * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As [credenciais da Conta de Serviço (JWT)](../../integrations/using/oauth-technical-account.md) existentes continuarão a funcionar até 27 de janeiro de 2025. </br>
 >
-> * Se você tiver implementado integrações de saída, como a integração do Campaign com o Analytics ou a integração dos acionadores da Experience Cloud, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar o ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para o OAuth. 
+> * Se você tiver implementado integrações de saída, como a integração do Campaign com o Analytics ou a integração dos acionadores da Experience Cloud, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar o ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para o OAuth.
 
 ### Pré-requisitos{#prerequisites}
 
@@ -74,7 +74,7 @@ Como cliente local, você também deve verificar se uma Campanha **[!UICONTROL P
 1. Acesse a seção **Produtos e Serviços** e verifique se o **Adobe Campaign** está listado.
 Se você não conseguir ver o **Adobe Campaign**, contate o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
 1. Clique em **Adobe Campaign** e selecione sua Organização.
-   **Atenção**: se você tiver mais de uma organização, certifique-se de selecionar a correta. Saiba mais sobre as Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR#ims-org-id){_blank}.
+   **Atenção**: se você tiver mais de uma organização, certifique-se de selecionar a correta. Saiba mais sobre as Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
 1. Verifique se **[!UICONTROL Product profile]** existe. Caso contrário, crie-o. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**.
 

@@ -7,9 +7,9 @@ role: User, Developer
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
-source-wordcount: '199'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 91%
 
 ---
 
@@ -25,7 +25,7 @@ Os conectores disponíveis estão listados abaixo:
 
 Você também pode integrar o Campaign com vários outros sistemas, como:
 
-* Soluções da Adobe Experience Cloud: Adobe Experience Manager, Adobe Target, Adobe Audience Manager, acionadores da Experience Cloud etc. [Saiba mais](../../integrations/using/about-campaign-integrations.md)
+* Soluções da Adobe Experience Cloud: Adobe Experience Manager, Adobe Target, Adobe Audience Manager, acionadores Experience Cloud etc. [Saiba mais](../../integrations/using/about-campaign-integrations.md)
 * Adobe Identity Management System (IMS) para logon único (SSO): para proteger o acesso à sua instância do Campaign e conectar-se ao Adobe Campaign com a mesma Adobe ID das outras soluções da Adobe Experience Cloud. [Saiba mais](../../integrations/using/about-adobe-id.md).
 * Diretório LDAP, para unificar o gerenciamento de acesso. [Saiba mais](../../installation/using/connecting-through-ldap.md).
 

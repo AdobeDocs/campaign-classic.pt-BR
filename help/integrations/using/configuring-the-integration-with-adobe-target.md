@@ -9,7 +9,7 @@ topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '198'
 ht-degree: 100%
 
 ---
@@ -34,8 +34,8 @@ Para configurar essa integração no Adobe Campaign, siga as etapas abaixo:
 
    Com este pacote, você tem acesso aos ativos compartilhados por meio do Digital Asset Manager.
 
-1. Ative a conexão pelo IMS (serviço de conexão da Adobe ID) para usar imagens compartilhadas pela Adobe Experience Cloud em seus emails. [Saiba mais](../../integrations/using/about-adobe-id.md)
-1. Navegue até **[!UICONTROL Administration > Platform > Options]** para configurar as opções de servidor e organização (Locatário) do Adobe Target: 
+1. Habilite a conexão pelo IMS (serviço de conexão da Adobe ID) para usar imagens compartilhadas pela Adobe Experience Cloud em seus emails. [Saiba mais](../../integrations/using/about-adobe-id.md)
+1. Navegue até **[!UICONTROL Administration > Platform > Options]** para configurar as opções de servidor e organização (Locatário) do Adobe Target:
 
    ![](assets/tar_options.png)
 

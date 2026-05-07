@@ -6,7 +6,7 @@ feature: Interaction, Offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '264'
 ht-degree: 100%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 100%
 
 O módulo **Simulation** permite testar a distribuição de ofertas pertencentes a uma categoria ou um ambiente antes de enviar sua proposta para os destinatários.
 
-A simulação leva em consideração os contextos e as regras de qualificação aplicadas anteriormente às ofertas (consulte [Visão geral do catálogo de ofertas](../../interaction/using/offer-catalog-overview.md)), bem como suas regras de apresentação (consulte [Gestão de apresentação de ofertas](../../interaction/using/managing-offer-presentation.md)). Isso permite testar e refinar várias versões da apresentação de oferta sem realmente usar uma oferta ou sobrecarregar ou não um destino, já que a simulação não tem impacto nos destinatários de destino.
+A simulação leva em consideração os contextos e as regras de elegibilidade aplicadas anteriormente às ofertas (consulte [Visão geral do catálogo de ofertas](../../interaction/using/offer-catalog-overview.md)), bem como suas regras de apresentação (consulte [Gestão de apresentação de ofertas](../../interaction/using/managing-offer-presentation.md)). Isso permite testar e refinar várias versões da apresentação de oferta sem realmente usar uma oferta ou sobrecarregar ou não um destino, já que a simulação não tem impacto nos destinatários de destino.
 
 Para saber como simular uma oferta, leia as etapas abaixo.
 
-![](assets/do-not-localize/how-to-video.png)[ Você também pode assistir a este vídeo](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com).
+![](assets/do-not-localize/how-to-video.png)[ Você também pode assistir a este vídeo](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com).
 
 ## Etapas principais para a criação de uma simulação {#main-steps-for-creating-a-simulation}
 

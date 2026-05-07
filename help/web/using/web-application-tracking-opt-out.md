@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: ht
-source-wordcount: '676'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-O Adobe Campaign permite que você interrompa o rastreamento de comportamentos da Web de usuários finais que usam o opt out do rastreamento comportamental por meio de cookies ou web beacons. O recurso inclui a habilidade de exibir um banner para apresentar ao usuário final essa opção; você pode adicionar esses banners em aplicações web ou landing pages.
+O Adobe Campaign permite que você interrompa o rastreamento de comportamentos da Web de usuários finais que usam o opt out do rastreamento comportamental por meio de cookies ou web beacons. O recurso inclui a habilidade de exibir um banner para apresentar ao usuário final essa opção; você pode adicionar esses banners em aplicações web ou páginas de destino.
 
 Se um usuário final usar o opt out de rastreamento comportamental por meio de cookies ou Web beacons, essas informações serão transmitidas ao servidor de rastreamento do Adobe Campaign com APIs JavaScript. Observe que algumas jurisdições podem exigir que o Cliente apresente aos usuários finais um opt in antes que um opt out possa ser oferecido (ou ter outros requisitos legais) e é responsabilidade do cliente estar em conformidade com as leis aplicáveis.
 
@@ -26,7 +26,7 @@ Se um usuário final usar o opt out de rastreamento comportamental por meio de c
 
 ## Configuração do banner {#configuring-the-banner-}
 
-Para ser exibido em aplicações web ou Landing pages, o banner precisa ser configurado.
+Para ser exibido em aplicações web ou Páginas de destino, o banner precisa ser configurado.
 
 O Adobe Campaign é fornecido com um banner de exemplo que você deve adaptar às suas necessidades. Essa versão do banner aparece como um bloco de personalização localizado na pasta do modelo de conteúdo. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.
 

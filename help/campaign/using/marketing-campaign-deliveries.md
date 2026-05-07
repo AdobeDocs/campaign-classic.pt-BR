@@ -8,8 +8,8 @@ hide: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 100%
+source-wordcount: '1511'
+ht-degree: 89%
 
 ---
 
@@ -134,7 +134,7 @@ Os documentos podem ser associados no nível da campanha (documentos contextuais
 
 A guia **[!UICONTROL Documents]** contém:
 
-* A lista de todos os documentos necessários para o conteúdo (modelo, imagens etc.) que pode ser baixado localmente pelos operadores do Adobe Campaign com direitos adequados,
+* A lista de todos os documentos necessários para o conteúdo (modelo, imagens etc.) que podem ser baixados localmente por operadores do Adobe Campaign com direitos adequados,
 * Documentos contendo informações para o roteador, se houver.
 
 Os documentos são vinculados ao programa ou à campanha através da guia **[!UICONTROL Edit > Documents]**.
@@ -161,7 +161,7 @@ Eles também podem ser editados e modificados nessa visualização.
 >
 >As estruturas de entrega são usadas exclusivamente no contexto de campanhas de correspondência direta.
 
-Uma descrição da entrega indica um conjunto estruturado de elementos (documentos, ramificações/lojas, cupons promocionais etc.) criados na empresa e para uma campanha específica.
+Um delivery outline indica um conjunto estruturado de elementos (documentos, filiais/lojas, cupons promocionais etc.) criado na empresa e para uma campanha específica.
 
 Esses elementos são agrupados em descrições das entregas e uma descrição da entrega específica será associada a uma entrega; ela será referenciado no arquivo de extração enviado ao **provedor de serviços** para ser anexada à entrega. Por exemplo, você pode criar uma descrição da entrega que se refere a uma unidade e aos folhetos de marketing que ela usa.
 
@@ -189,7 +189,7 @@ Em seguida, clique em **[!UICONTROL Add a delivery outline]** e crie a hierarqui
 Uma estrutura pode conter itens e campos de personalização, recursos e ofertas:
 
 * Os itens podem ser documentos físicos, por exemplo, que são referenciados e descritos aqui e serão anexados à entrega.
-* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de destinatários. Assim, é possível criar valores a serem utilizados em entregas para um público-alvo específico (oferta de boas-vindas, desconto etc.). Eles são criados no Adobe Campaign e importados para a estrutura por meio do link **[!UICONTROL Import personalization fields...]**.
+* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de destinatários. Assim, é possível criar valores que serão usados em deliveries para um target específico (oferta de boas-vindas, desconto etc.) Eles são criados no Adobe Campaign e importados para o outline por meio do link **[!UICONTROL Import personalization fields...]**.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 
@@ -221,7 +221,7 @@ A guia **[!UICONTROL Summary]** da entrega também exibe essas informações:
 
 #### Resultado da extração {#extraction-result}
 
-No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no modelo de exportação associado ao provedor de serviços.
+No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no template de exportação associado ao provedor de serviços.
 
 No seguinte exemplo, o rótulo, custo estimado e descrição do outline associado à entrega serão adicionados no arquivo de extração.
 
@@ -237,6 +237,6 @@ O modelo de exportação deve estar associado ao provedor de serviços seleciona
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/31837?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

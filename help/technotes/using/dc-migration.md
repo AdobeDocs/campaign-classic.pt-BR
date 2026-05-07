@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 48%
+source-wordcount: '1557'
+ht-degree: 47%
 
 ---
 
@@ -78,15 +78,15 @@ Este programa tem três objetivos principais:
 
 Para começar essa iniciativa, as contas que exigem essa migração receberão uma comunicação por email da Adobe fornecendo uma linha do tempo e acesso à documentação. Essa será a sua notificação de que sua conta está programada para ser migrada.
 
-Uma migração pode ser iniciada por [abrindo um novo tíquete de suporte do Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support). Use a linha de assunto &quot;Migrar para o AWS&quot;.
+Uma migração pode ser iniciada por [abrindo um novo tíquete de suporte do Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=Campaign#support). Use a linha de assunto &quot;Migrar para o AWS&quot;.
 
 ### Essa migração é obrigatória?
 
 Esta migração para a Nuvem é a **primeira etapa para o [programa de atualização anual](../../rn/using/rn-overview.md#yearly-upgrade)** das suas instâncias do Adobe Campaign. Essa migração é obrigatória se você estiver hospedado em um data center que não seja a Nuvem pública (AWS).
 
-A nuvem do Adobe Managed Services é hospedada no Amazon Web Services (AWS), um ambiente moderno, seguro e otimizado. [Saiba mais sobre o AWS](https://aws.amazon.com/application-hosting/benefits/).
+A nuvem do Adobe Managed Services está hospedada no Amazon Web Services (AWS), um ambiente moderno, seguro e otimizado. [Saiba mais sobre o AWS](https://aws.amazon.com/application-hosting/benefits/).
 
-O Adobe planeja desativar o data center herdado, as instâncias do Adobe Campaign em execução devem ser transferidas para o novo data center de referência, o AWS.
+A Adobe planeja desativar o data center herdado, as instâncias do Adobe Campaign em execução devem ser transferidas para o novo data center de referência, o AWS.
 
 Esse é um caminho crítico a seguir, pois seu local atual pode estar exposto a **vulnerabilidades de segurança e desempenho**.
 
@@ -156,9 +156,9 @@ Isso significa que a alteração será transparente para os usuários e implemen
 
 **IPs de envio de email**
 
-Primeiro, a Entregabilidade do Adobe avaliará o status da capacidade de entrega da plataforma e recomendará um plano para a mudança para os novos IPs.
+Primeiro, a equipe de Entregabilidade da Adobe avaliará o status da capacidade de entrega da plataforma e recomendará um plano para a mudança para os novos IPs.
 
-O Adobe fornecerá o mesmo número de IPs no novo data center.
+A Adobe fornecerá o mesmo número de IPs no novo data center.
 
 O aumento de novos IPs pode começar assim que os novos IPs forem provisionados.
 

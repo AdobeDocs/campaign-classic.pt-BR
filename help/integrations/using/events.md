@@ -9,8 +9,8 @@ content-type: reference
 level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
-workflow-type: ht
-source-wordcount: '1200'
+workflow-type: tm+mt
+source-wordcount: '1204'
 ht-degree: 100%
 
 ---
@@ -235,7 +235,7 @@ A frequência deve ser definida como 15 minutos para otimizar a carga de trabalh
 
 ### Opções de reconciliação de unidade em JavaScript {#options-unit-reconciliation}
 
-É possível executar o query de reconciliação para cada acionador no JavaScript. Ele tem um impacto maior no desempenho e oferece resultados mais rápidos. Pode ser necessário para casos específicos de utilização quando for necessária reatividade.
+É possível executar a consulta de reconciliação para cada acionador no JavaScript. Ele tem um impacto maior no desempenho e oferece resultados mais rápidos. Pode ser necessário para casos específicos de utilização quando for necessária reatividade.
 
 A implementação pode ser difícil se nenhum índice estiver definido em shopper_id. Se os critérios estiverem em um servidor de banco de dados separado do servidor de marketing, será usado um link de banco de dados com desempenho inadequado.
 
@@ -246,4 +246,4 @@ Os acionadores são processados em uma hora. O volume pode ser de aproximadament
 ### Fluxo de trabalho de campanha {#campaign-workflow}
 
 O fluxo de trabalho de campanha do acionador geralmente é semelhante a outras campanhas recorrentes já usadas.
-Por exemplo, pode iniciar com um query nos acionadores que procuram eventos específicos durante o último dia. Esse público-alvo é usado para enviar o email. Enriquecimentos ou dados podem vir do acionador. Pode ser usado com segurança pelo Marketing, pois não requer configuração.
+Por exemplo, pode iniciar com uma consulta nos acionadores que procuram eventos específicos durante o último dia. Esse público-alvo é usado para enviar o email. Enriquecimentos ou dados podem vir do acionador. Pode ser usado com segurança pelo Marketing, pois não requer configuração.

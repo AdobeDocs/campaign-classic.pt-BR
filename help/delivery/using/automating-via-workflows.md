@@ -7,8 +7,8 @@ feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1201'
+workflow-type: tm+mt
+source-wordcount: '1229'
 ht-degree: 100%
 
 ---
@@ -206,7 +206,7 @@ Depois que as tarefas são executadas, a caixa AND-join ativa a tarefa **Deliver
 
 A ação da entrega a ser iniciada é preenchida pela transição.
 
-O target a ser entregue é digitado por meio do evento de entrada.
+O target a ser enviado é digitado por meio do evento de entrada.
 
 O conteúdo de entrega é preenchido por meio do evento de entrada.
 
@@ -217,7 +217,7 @@ A ação final da atividade é preparar e iniciar a entrega.
 Se o seu conteúdo da entrega estiver disponível em um arquivo HTML localizado em servidores FTP ou SFTP, é possível carregá-los facilmente nas entregas do Adobe Campaign. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=pt-BR){target="_blank"}.
 
 
-### Importar conteúdo do conector do Amazon Simple Storage Service (S3)  {#importing-content-from-amazon-simple-storage-service--s3--connector}
+### Importar conteúdo do conector do Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
 Se o conteúdo da entrega estiver localizado nos buckets do Amazon Simple Storage Service (S3), é possível carregá-lo facilmente nas entregas do Adobe Campaign. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=pt-BR){target="_blank"}.
 
@@ -274,4 +274,4 @@ A zona de edição permite a inserção do nome do arquivo a ser recuperado. O U
 
 O formato dos dados a serem recuperados é o mesmo do exemplo 1 da automação do fluxo de trabalho. Usaremos a folha de estilos &quot;cus:book-workflow.xsl&quot; vista neste exemplo.
 
-O resultado da execução do trabalho atualiza a instância do conteúdo do caminho &#39;.&#39;.
+O resultado da execução do processo atualiza a instância do conteúdo do caminho &#39;.&#39;.

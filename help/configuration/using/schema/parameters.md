@@ -26,7 +26,7 @@ nenhuma
 
 `<method>`
 
-## Derivados {#children-13}
+## Filhos {#children-13}
 
 `<param>`
 

@@ -7,8 +7,8 @@ feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 100%
+source-wordcount: '978'
+ht-degree: 95%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 100%
 
 ## Criar um formulário de assinatura com aceitação dupla {#create-a-subscription--form-with-double-opt-in}
 
-Quando você oferece serviços de informação, os destinatários precisam se subscrever para receber todas as comunicações vinculadas. Para evitar comunicações inadequadas e verificar se o destinatário se subscreveu intencionalmente, recomendamos enviar uma solicitação de confirmação da subscrição para criar um opt in duplo. A subscrição só entrará em vigor depois que o usuário clicar no link incluído na mensagem de confirmação.
+Quando você oferece serviços de informação, os destinatários precisam se subscrever para receber todas as comunicações vinculadas. Para evitar comunicações inadequadas e garantir que o recipient tenha assinado intencionalmente, recomendamos enviar uma solicitação de confirmação da assinatura para criar uma aceitação dupla. A assinatura só entrará em vigor depois que o usuário clicar no link incluído na mensagem de confirmação.
 
 Este exemplo é baseado no seguinte cenário:
 
 1. Criação de um formulário de subscrição do boletim informativo em um site que contém uma caixa de seleção para subscrição de um serviço temporário. Esse serviço permitirá que você entregue mensagens de confirmação da subscrição.
-1. Criação da entrega de confirmação da subscrição com um template da entrega vinculado ao formulário web. Ele contém o link de confirmação que chama o formulário da subscrição do boletim informativo e exibe uma mensagem de aprovação de subscrição.
+1. Criação da entrega de confirmação da subscrição com um modelo da entrega vinculado ao formulário web. Ele contém o link de confirmação que chama o formulário da subscrição do boletim informativo e exibe uma mensagem de aprovação de subscrição.
 
 ### Etapa 1 - Criação de serviços de informação {#step-1---creating-information-services}
 
@@ -31,21 +31,21 @@ Este exemplo é baseado no seguinte cenário:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
-1. Crie um segundo serviço de informação, um serviço temporário vinculado a um template da entrega para enviar mensagens de confirmação da subscrição.
+1. Crie um segundo serviço de informação, um serviço temporário vinculado a um modelo da entrega para enviar mensagens de confirmação da subscrição.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
 ### Etapa 2 - Criação de mensagens de confirmação {#step-2---creating-confirmation-messages}
 
-As mensagens de confirmação são enviadas por um template da entrega dedicado referenciado no nível de serviço temporário.
+As mensagens de confirmação são enviadas por um modelo da entrega dedicado referenciado no nível de serviço temporário.
 
 1. Em **[!UICONTROL Explorer]** , selecione **[!UICONTROL Resources > Templates > Delivery templates]**.
-1. Crie um template da entrega para enviar as mensagens de confirmação da assinatura.
-1. Clique no botão **[!UICONTROL To]** em **[!UICONTROL Email parameters]** para associar o template da entrega ao target mapping das assinaturas em vez de destinatários.
+1. Crie um modelo da entrega para enviar as mensagens de confirmação da subscrição.
+1. Clique no botão **[!UICONTROL To]** em **[!UICONTROL Email parameters]** para associar o modelo da entrega ao target mapping das assinaturas em vez de destinatários.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Como os destinatários dessa entrega não confirmaram sua aprovação, eles ainda estão incluídos na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, você precisa autorizar as entregas com base nesse template a fim de direcionar destinatários incluídos na lista de bloqueios.
+1. Como os destinatários dessa entrega não confirmaram sua aprovação, eles ainda estão incluídos na lista de bloqueios do banco de dados. Para que eles recebam essa comunicação, você precisa autorizar as entregas com base nesse modelo a fim de direcionar destinatários incluídos na lista de bloqueios.
 
    Para fazer isso, clique na guia **[!UICONTROL Exclusions]**.
 
@@ -65,7 +65,7 @@ As mensagens de confirmação são enviadas por um template da entrega dedicado 
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3.png)
 
-1. Finalmente, vincule esse template ao serviço temporário criado anteriormente.
+1. Finalmente, vincule esse modelo ao serviço temporário criado anteriormente.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
@@ -73,13 +73,13 @@ As mensagens de confirmação são enviadas por um template da entrega dedicado 
 
 O formulário web habilita a subscrição do destinatário e a confirmação da subscrição.
 
-O workflow do formulário web incluirá as seguintes atividades:
+O fluxo de trabalho do formulário web incluirá as seguintes atividades:
 
 ![](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Crie um formulário web e escolha o template **[!UICONTROL Newsletter subscription (subNewsletter)]**.
+1. Crie um formulário web e escolha o modelo **[!UICONTROL Newsletter subscription (subNewsletter)]**.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
@@ -146,7 +146,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
-1. Depois que o formulário web é criado e configurado, você pode referenciá-lo no template da entrega para enviar mensagens de confirmação.
+1. Depois que o formulário web é criado e configurado, você pode referenciá-lo no modelo da entrega para enviar mensagens de confirmação.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
 

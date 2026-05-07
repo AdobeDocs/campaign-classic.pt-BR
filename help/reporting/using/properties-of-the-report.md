@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 100%
+source-wordcount: '440'
+ht-degree: 94%
 
 ---
 
@@ -28,7 +28,7 @@ Na guia **[!UICONTROL General]** das propriedades do relatório, é possível ed
 
 * O rótulo e o nome interno do relatório. O **[!UICONTROL Internal name]** é usado no URL final do relatório. Não deve ser alterado após a criação do relatório.
 
-* A **Pasta** do relatório é selecionada durante a criação do relatório. Uma prática recomendada é criar uma pasta dedicada para relatórios personalizados para que eles não sejam misturados com [relatórios incorporados](../../reporting/using/about-campaign-built-in-reports.md).
+* A **Pasta** do relatório é selecionada durante a criação do relatório. Uma prática recomendada é criar uma pasta dedicada para relatórios personalizados para que eles não sejam misturados com [relatórios integrados](../../reporting/using/about-campaign-built-in-reports.md).
 
 * O **Armazenamento** é selecionado ao criar o relatório. Para alterar a tabela que o relatório aborda, clique no ícone **[!UICONTROL Select link]** à direita do campo **[!UICONTROL Document type]**.
 
@@ -57,7 +57,7 @@ As opções possíveis são:
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 
-O idioma de edição é o idioma escrito. Quando adicionar um idioma, a subguia aparece na página de edição do relatório.
+O idioma de edição é o idioma escrito. Ao adicionar um idioma, a subguia aparece na página de edição do relatório.
 
 ![](assets/s_ncs_advuser_report_properties_05a.png)
 
@@ -71,7 +71,7 @@ Na guia **[!UICONTROL Rendering]**, é possível personalizar o modo de exibiç�
 
 * O tipo de navegação no relatório: por botões ou links.
 * A posição padrão dos rótulos para elementos do relatório. Essa posição pode ser sobrescrita em cada elemento.
-* O template ou tema usado para gerar páginas de relatório.
+* O modelo ou tema usado para gerar páginas de relatório.
 
 ![](assets/s_ncs_advuser_report_properties_08.png)
 

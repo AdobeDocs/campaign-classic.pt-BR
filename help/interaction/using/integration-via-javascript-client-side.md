@@ -10,7 +10,7 @@ exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
 source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
 workflow-type: tm+mt
 source-wordcount: '1139'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -52,8 +52,8 @@ Os seguintes casos de uso detalham as possíveis opções para integrar ofertas 
 
    A página HTML deve incluir um
 
-   elemento com um atributo @id com o valor do nome interno do espaço de oferta criado (&quot;i_internal name space&quot;). A oferta será inserida neste 
-elemento pelo Interaction.
+   elemento com um atributo @id com o valor do nome interno do espaço de oferta criado (&quot;i_internal name space&quot;). A oferta será inserida neste
+elemento por interação.
 
    No nosso exemplo, o atributo @id recebe o valor &quot;i_SPC12&quot;, onde &quot;SPC12&quot; é o nome interno do espaço de oferta criado anteriormente:
 
@@ -182,11 +182,11 @@ O caso de uso a seguir detalha as configurações a serem feitas no Adobe Campai
 
    Para obter mais informações sobre a criação de um espaço de oferta, consulte [Criação de espaços de oferta](../../interaction/using/creating-offer-spaces.md).
 
-1. **Extensão do schema de ofertas para adicionar novos campos**
+1. **Extensão do esquema de ofertas para adicionar novos campos**
 
    Esse esquema definirá os seguintes campos: Title number 2 e price.
 
-   O nome do schema no exemplo é **cus:offer**.
+   O nome do esquema no exemplo é **cus:offer**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2 AAAA-MM-DD HH:MM:SS.762Z" createdBy-id="0"
@@ -219,7 +219,7 @@ O caso de uso a seguir detalha as configurações a serem feitas no Adobe Campai
 
    >[!NOTE]
    >
-   >Você pode estender o schema de ofertas para adicionar novos campos em modo de lote e unitário e em qualquer formato (texto, HTML e XML).
+   >Você pode estender o esquema de ofertas para adicionar novos campos em modo de lote e unitário e em qualquer formato (texto, HTML e XML).
 
 1. **Extensão da fórmula de oferta para editar novos campos e modificar um campo existente**
 

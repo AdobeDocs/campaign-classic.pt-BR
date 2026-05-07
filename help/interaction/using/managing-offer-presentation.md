@@ -10,7 +10,7 @@ topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1013'
 ht-degree: 100%
 
 ---
@@ -51,13 +51,13 @@ A interação permite controlar o fluxo de apresentações de oferta usando regr
 
 ### Critérios de aplicação {#application-criteria-}
 
-Os critérios de aplicação disponíveis na guia **[!UICONTROL General]** permitem especificar as ofertas às quais a regra de apresentação será aplicada. Para fazer isso, é necessário criar um query e escolher as ofertas relacionadas, conforme descrito abaixo.
+Os critérios de aplicação disponíveis na guia **[!UICONTROL General]** permitem especificar as ofertas às quais a regra de apresentação será aplicada. Para fazer isso, é necessário criar uma consulta e escolher as ofertas relacionadas, conforme descrito abaixo.
 
-1. Na regra de tipologia, clique no link **[!UICONTROL Edit the rule application conditions...]** para criar sua query.
+1. Na regra de tipologia, clique no link **[!UICONTROL Edit the rule application conditions...]** para criar sua consulta.
 
    ![](assets/offer_typology_006.png)
 
-1. Na janela de query, é possível aplicar um filtro nas ofertas às quais deseja aplicar uma regra de tipologia.
+1. Na janela de consulta, é possível aplicar um filtro nas ofertas às quais deseja aplicar uma regra de tipologia.
 
    Por exemplo, você pode selecionar uma categoria de oferta.
 
@@ -73,7 +73,7 @@ O **[!UICONTROL Targeting dimension]** coincide com a tabela de destinatários
 
 >[!NOTE]
 >
->Você também pode usar tabelas não padrão. Se quiser usar um targeting dimension específico, é necessário criar tabelas e um ambiente dedicado usando o targeting mapping. Para obter mais informações, consulte [Criação de um ambiente de ofertas](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+>Você também pode usar tabelas não padrão. Se quiser usar uma dimensão de direcionamento específica, é necessário criar tabelas e um ambiente dedicado usando o targeting mapping. Para obter mais informações, consulte [Criação de um ambiente de ofertas](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 ### Período {#period}
 
@@ -82,7 +82,7 @@ Este é um período de deslizamento que começa na data de apresentação da ofe
 O período começa **n** dias antes da data de apresentação e termina **n** dias depois, onde **n** corresponde ao número inserido no campo **[!UICONTROL Period considered]**:
 
 * Para espaços de entrada, a data da apresentação é a data de apresentação da oferta.
-* Para espaços de saída, a data da proposta é a data de contato da entrega (por exemplo, a data da entrega inserida em um workflow para construção do target).
+* Para espaços de saída, a data da proposta é a data de contato da entrega (por exemplo, a data da entrega inserida em um fluxo de trabalho de segmentação).
 
 Use as setas para alterar o número de dias ou insira um período diretamente (&quot;2d 6h&quot;, por exemplo).
 
@@ -106,7 +106,7 @@ Você pode selecionar critérios de filtragem para excluir apresentações com b
 
 ![](assets/offer_typology_014.png)
 
-Esses critérios representam as aplicações mais frequentes das regras de apresentação. Para usar outros critérios, é possível criar uma query usando o link **[!UICONTROL Limit propositions...]**. Para obter mais informações, consulte a seção [Criação de uma consulta nas apresentações](#creating-a-query-on-propositions).
+Esses critérios representam as aplicações mais frequentes das regras de apresentação. Para usar outros critérios, é possível criar uma consulta usando o link **[!UICONTROL Limit propositions...]**. Para obter mais informações, consulte a seção [Criação de uma consulta nas apresentações](#creating-a-query-on-propositions).
 
 * **Filtro no canal**
 
@@ -118,7 +118,7 @@ Esses critérios representam as aplicações mais frequentes das regras de apres
   >
   >Estamos falando sobre o canal e não o espaço. Se a regra precisar excluir uma oferta no canal da Web, a oferta destinada a ser apresentada em um site em dois espaços (em um banner e no corpo da página, por exemplo), não será exibida no site se já tiver sido apresentada antes.
   >
-  >Para um workflow envolvendo a apresentação, as regras são devidamente levadas em conta se estiverem configuradas em **[!UICONTROL All channels]**.
+  >Para um fluxo de trabalho envolvendo a apresentação, as regras são devidamente levadas em conta se estiverem configuradas em **[!UICONTROL All channels]**.
 
 * **Filtro na oferta**
 
@@ -152,9 +152,9 @@ Para especificar os destinatários, clique no link **[!UICONTROL Edit the query 
 
 ![](assets/offer_typology_012.png)
 
-### Criação de um query em apresentações {#creating-a-query-on-propositions}
+### Criação de uma consulta em apresentações {#creating-a-query-on-propositions}
 
-Para especificar as apresentações que serão contadas por meio de uma query, clique no link **[!UICONTROL Limit propositions...]** e especifique os critérios que serão considerados.
+Para especificar as apresentações que serão contadas por meio de uma consulta, clique no link **[!UICONTROL Limit propositions...]** e especifique os critérios que serão considerados.
 
 No exemplo a seguir, as apresentações a serem contadas após duas apresentações são aquelas na categoria **Ofertas especiais**, para o espaço **Call center**, com um peso abaixo de **20**.
 

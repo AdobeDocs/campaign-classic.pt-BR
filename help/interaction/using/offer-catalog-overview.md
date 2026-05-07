@@ -9,7 +9,7 @@ topic-tags: managing-an-offer-catalog
 exl-id: 464a6548-1b91-4e09-b620-3b820ef69653
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '132'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ Um catálogo de ofertas faz parte de um único ambiente, que deve ser especifica
 
 O gerenciamento de ofertas é realizado por meio de uma árvore de pastas no Adobe Campaign.
 
-Antes de criar as ofertas, primeiro especifique um ambiente (consulte a [Visão geral dos ambientes](../../interaction/using/environments-overview.md)). Ele conterá todas as características (qualificação, restrições de target, regras de apresentação) de um conjunto de ofertas, classificadas em categorias, bem como a lista de espaços.
+Antes de criar as ofertas, primeiro especifique um ambiente (consulte a [Visão geral dos ambientes](../../interaction/using/environments-overview.md)). Ele conterá todas as características (elegibilidade, restrições de target, regras de apresentação) de um conjunto de ofertas, classificadas em categorias, bem como a lista de espaços.
 
 >[!IMPORTANT]
 >

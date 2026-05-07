@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Introdução a aplicativos web
-description: Crie e compartilhe aplicativos dinâmicos para web, landing pages e pesquisas
+description: Crie e compartilhe aplicativos dinâmicos para web, páginas de destino e pesquisas
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '694'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ Este capítulo fornece uma visão geral de como gerenciar as aplicações web.
 
 >[!NOTE]
 >
->Consulte a [lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html) para saber como otimizar a segurança para aplicativos web.
+>Consulte a [lista de verificação de segurança e privacidade](https://helpx.adobe.com/campaign/kb/acc-security.html) para saber como otimizar a segurança para aplicativos web.
 
 >[!CAUTION]
 >
@@ -45,15 +45,15 @@ Os aplicativos Web no Adobe Campaign oferecem acesso às seguintes funcionalidad
 * Exibição condicional de campos de pesquisa de acordo com as respostas. Para obter mais informações, consulte esta [página](form-rendering.md#defining-fields-conditional-display).
 * Exibição aleatória de perguntas. Para obter mais informações, consulte esta [página](../../surveys/using/building-a-survey.md#adding-questions).
 * Exibição de página condicional. Para obter mais informações, consulte esta [página](defining-web-forms-page-sequencing.md#conditional-page-display).
-* A verificação de informações antes da validação, dependendo do tipo de dados esperado (número, endereço de email, data, etc.) e dos campos obrigatórios. Para obter mais informações, consulte esta [página](form-rendering.md#defining-control-settings).
+* Verificação de informações antes da validação, dependendo do tipo de dados esperado (número, endereço de email, data etc.) e os campos obrigatórios. Para obter mais informações, consulte esta [página](form-rendering.md#defining-control-settings).
 * Convites ou notificações por email. Para obter mais informações, consulte esta [página](publishing-a-web-form.md#delivering-a-form-via-email).
 * Personalização de mensagens de erros e mensagens finais. Para obter mais informações, consulte esta [página](defining-web-forms-properties.md#setting-up-an-error-page).
-* Uso de imagens, vídeos, links de hipertexto, captcha, etc. Para obter mais informações, consulte esta [página](editing-content.md).
+* Uso de imagens, vídeos, links de hipertexto, captcha etc. Para obter mais informações, consulte esta [página](editing-content.md).
 * Monitoramento de respostas em tempo real. Para obter mais informações, consulte esta [página](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
 
 O módulo de criação **Survey** opcional oferece as seguintes funcionalidades adicionais:
 
-* Extensão dinâmica do banco de dados: criação de respostas não incluídas no template de dados inicial. Para obter mais informações, consulte esta [página](../../surveys/using/managing-answers.md#storing-collected-answers).
+* Extensão dinâmica do banco de dados: criação de respostas não incluídas no modelo de dados inicial. Para obter mais informações, consulte esta [página](../../surveys/using/managing-answers.md#storing-collected-answers).
 * Geração de relatórios dedicados. Para obter mais informações, consulte esta [página](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys).
 
 Em comparação às aplicações Web, as pesquisas têm uma interface gráfica simplificada com um número reduzido de controles de edição.
@@ -81,18 +81,18 @@ Os aplicativos web são criados por meio do link **[!UICONTROL Web Applications]
 
 Os aplicativos web são armazenados no nó **[!UICONTROL Resources > Online > Web Applications]** da árvore do Adobe Campaign. As configurações estão divididas nas seguintes pastas:
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: contém os templates de renderização para a apresentação do formulário Web (aplicativos e pesquisas). O template permite gerar o formulário. Ele também usa uma folha de estilos CSS. Essa folha de estilos pode ser sobrecarregada no nível do template. Para obter mais informações, consulte [esta página](form-rendering.md#selecting-the-form-rendering-template).
-* **[!UICONTROL Resources > Templates > Web application templates]**: contém templates de formulário. Para criar um formulário ou um aplicativo Web, você deve começar com um modelo.
+* **[!UICONTROL Administration > Configuration > Form renderings]**: contém os modelos de renderização para a apresentação do formulário Web (aplicativos e pesquisas). O modelo permite gerar o formulário. Ele também usa uma folha de estilos CSS. Essa folha de estilos pode ser sobrecarregada no nível do modelo. Para obter mais informações, consulte [esta página](form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Resources > Templates > Web application templates]**: contém modelos de formulário. Para criar um formulário ou um aplicativo Web, você deve começar com um modelo.
 
 ## Modelos de aplicativo web {#web-application-templates}
 
-Por padrão, o Adobe Campaign fornece um template por aplicação web disponível.
+Por padrão, o Adobe Campaign fornece um modelo por aplicação web disponível.
 
 >[!NOTE]
 >
->Você pode converter uma aplicação web existente em um template. Para fazer isso, selecione o formulário e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions > Save as template...]**.
+>Você pode converter uma aplicação web existente em um modelo. Para fazer isso, selecione o formulário e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions > Save as template...]**.
 
-Você pode criar novos templates no nó **[!UICONTROL Resources > Templates > Web Application templates]** da árvore do Adobe Campaign.
+Você pode criar novos modelos no nó **[!UICONTROL Resources > Templates > Web Application templates]** da árvore do Adobe Campaign.
 
 O assistente de criação permite selecionar as opções que você deseja habilitar, conforme mostrado abaixo.
 

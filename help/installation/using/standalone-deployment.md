@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1094'
 ht-degree: 5%
 
 ---
@@ -239,7 +239,7 @@ Siga as etapas abaixo:
 
      ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-     Como o servidor do Adobe Campaign é usado como o servidor de aplicativos e o servidor de redirecionamento, o URL interno usado para coletar logs de rastreamento e transferir URLs é uma conexão interna direta com o Tomcat (https://localhost:8080).
+     Como o servidor do Adobe Campaign é usado como servidor de aplicativos e servidor de redirecionamento, a URL interna usada para coletar logs de rastreamento e transferir URLs é uma conexão interna direta com o Tomcat (https://localhost:8080).
 
    * Gerenciamento de rejeição: insira os parâmetros para manipular emails de rejeição (não considere a seção **Emails de rejeição não processados**).
    * Acesso de: forneça os dois URLs para relatórios, formulários web e mirror pages.

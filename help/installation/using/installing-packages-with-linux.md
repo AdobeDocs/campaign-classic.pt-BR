@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
 source-git-commit: ab38c7fd45513c6f7a8ecf7ef8601f0b5a4b5757
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 2%
+source-wordcount: '1145'
+ht-degree: 4%
 
 ---
 
@@ -54,7 +54,7 @@ Para instalar o Adobe Campaign em um sistema operacional RPM (RHEL, CentOS), sig
    yum install nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
-   O arquivo rpm depende dos pacotes que podem ser encontrados nas distribuições CentOS/Red Hat. Se você não quiser usar algumas dessas dependências (por exemplo, se você quiser usar o JDK do Oracle em vez do OpenJDK), talvez precise usar a opção &quot;nodeps&quot; de rpm:
+   O arquivo rpm depende dos pacotes que podem ser encontrados nas distribuições CentOS/Red Hat. Se você não quiser usar algumas dessas dependências (por exemplo, se você quiser usar o Oracle JDK em vez do OpenJDK), talvez precise usar a opção &quot;nodeps&quot; de rpm:
 
    ```sql
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
@@ -206,7 +206,7 @@ systemctl start nlserver
 
 ### Cliente Oracle no Linux {#oracle-client-in-linux}
 
-Ao usar o Oracle com o Adobe Campaign, é necessário configurar as camadas de cliente do Oracle no Linux.
+Ao usar o Oracle com o Adobe Campaign, é necessário configurar as camadas do cliente Oracle no Linux.
 
 * Usar o cliente completo
 * Definição de TNS
@@ -226,7 +226,7 @@ Ao usar o Oracle com o Adobe Campaign, é necessário configurar as camadas de c
 
 * Configuração do Adobe Campaign
 
-  Para finalizar a instalação do cliente do Oracle para Adobe Campaign, você precisa criar um link simbólico para o arquivo **.so** usado pelo Adobe Campaign.
+  Para finalizar a instalação do cliente Oracle para Adobe Campaign, você precisa criar um link simbólico para o arquivo **.so** usado pelo Adobe Campaign.
 
   Para fazer isso, use os seguintes comandos:
 

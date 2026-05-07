@@ -9,8 +9,8 @@ content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
 source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 100%
+source-wordcount: '722'
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ A configuração do ID da organização não é válida.
 
 1. Verifique se o ID da organização (ImsOrgId) está definido no arquivo serverConf.xml.
 1. Verifique se um ID de organização vazio no arquivo de configuração da instância pode substituir o padrão. Em caso afirmativo, remova-o.
-1. Verifique se o ID da organização está correto. Para encontrar o ID da organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}
+1. Verifique se o ID da organização está correto. Para encontrar seu ID de organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}
 
 **Falha no pipeline com &quot;chave inválida&quot;**
 

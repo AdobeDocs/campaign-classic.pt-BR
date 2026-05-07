@@ -6,9 +6,9 @@ feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
 source-git-commit: f660dcbb111e73f12737d96ebf9be2aeccbca8ee
-workflow-type: ht
-source-wordcount: '3044'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '3072'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ O Adobe Campaign trata as contas externas como entidades não relacionadas.
 Se você tiver várias contas, siga este procedimento para isolar a conta externa que está causando problemas:
 
 1. Desabilite todas as contas externas.
-1. Ative uma conta externa.
+1. Habilite uma conta externa.
 1. Tente reproduzir o problema.
 1. Se o problema inicial nem sempre ocorrer, faça uma quantidade razoável de tentativas antes de concluir.
 1. Se o problema não ocorrer com essa única conta, desabilite-a e reinicie na etapa 2 na próxima conta.
@@ -102,7 +102,7 @@ Como corrigir problemas de estabilidade de conexão:
 
 * Conexões instáveis raramente são a causa principal. Muitas vezes, é o resultado de outro problema que aciona uma desconexão. Encontrar a causa raiz é a prioridade.
 
-* Ative rastreamentos SMPP detalhados. Você precisará deles para ver o que está acontecendo quando a conexão for reiniciada.
+* Habilite rastreamentos SMPP detalhados. Você precisará deles para ver o que está acontecendo quando a conexão for reiniciada.
 
 * Se o provedor envia `BIND PDU`s, algo pode estar errado. Pergunte ao provedor por que `UNBING` é enviado.
 
@@ -122,9 +122,9 @@ Como corrigir problemas de estabilidade de conexão:
 
 * Verifique se o MTA realmente processa a mensagem. Se não for o caso, talvez não seja um problema de SMS.
 
-* Verifique se o conector de SMS está associado ao equipamento do provedor. Solicite feedback ao provedor para garantir que todos os sistemas estejam se comunicando corretamente. Consulte `BIND_TRANSMITTER` e `BIND_TRANSCEIVER PDU`s para obter informações sobre o processo de associação. Talvez seja necessário ativar os rastreamentos SMPP para solucionar problemas corretamente.
+* Verifique se o conector de SMS está associado ao equipamento do provedor. Solicite feedback ao provedor para garantir que todos os sistemas estejam se comunicando corretamente. Consulte `BIND_TRANSMITTER` e `BIND_TRANSCEIVER PDU`s para obter informações sobre o processo de associação. Talvez seja necessário habilitar os rastreamentos SMPP para solucionar problemas corretamente.
 
-* Com os rastreamentos SMPP ativados, verifique se `SUBMIT_SM PDU` contém as informações certas.
+* Com os rastreamentos SMPP habilitados, verifique se `SUBMIT_SM PDU` contém as informações certas.
 
 * Verifique se o provedor responde com um `SUBMIT_SM_RESP PDU` com um valor &quot;OK&quot; (código 0). Verifique se a PDU chega com um atraso razoável: qualquer tempo superior a 1 segundo deve ser discutido com o provedor. Geralmente, chega em menos de 100 ms.
 
@@ -134,19 +134,19 @@ Como corrigir problemas de estabilidade de conexão:
 
 ## Os MTs são duplicados (o mesmo SMS é enviado várias vezes seguidas){#duplicated-MT}
 
-Duplicatas frequentemente são causadas por tentativas. É normal haver duplicatas ao tentar enviar mensagens novamente. Você deve tentar remover a causa raiz das tentativas.
+Duplicados frequentemente são causados por tentativas. É normal haver duplicados ao tentar enviar mensagens novamente. Você deve tentar remover a causa raiz das tentativas.
 
-* Se duplicatas forem enviadas com um intervalo de exatamente 60 segundos, provavelmente será um problema referente ao provedor, que não envia um `SUBMIT_SM_RESP` com rapidez suficiente.
+* Se forem enviados duplicados com um intervalo de exatamente 60 segundos, provavelmente será um problema referente ao provedor, que não envia um `SUBMIT_SM_RESP` com rapidez suficiente.
 
 * Se há muitos `BIND/UNBIND`, você tem uma conexão instável. Consulte a seção [Problema com conexões instáveis](troubleshooting-sms.md#issues-unstable-connection) para obter soluções antes de tentar resolver problemas de mensagens duplicadas.
 
-Diminuição na quantidade de duplicatas quando há uma nova tentativa:
+Diminuição na quantidade de duplicados quando há uma nova tentativa:
 
 * Diminua a janela de envio. A janela de envio deve ser grande o suficiente para abranger a latência `SUBMIT_SM_RESP`. Seu valor representa o número máximo de mensagens que poderão ser duplicadas se ocorrer um erro enquanto a janela estiver cheia.
 
 ## Problema ao processar SR (recibos de entrega) {#issue-process-SR}
 
-* Você precisará de rastreamentos SMPP ativados para realizar qualquer tipo de solução de problemas de SR.
+* Você precisará de rastreamentos SMPP habilitados para realizar qualquer tipo de solução de problemas de SR.
 
 * Verifique se `DELIVER_SM PDU` vem do provedor e se está corretamente formado.
 
@@ -164,7 +164,7 @@ Se você corrigiu tudo, mas alguns SR inválidos ainda estão nos buffers do pro
 
 ## Problema ao processar o MO (e lista de bloqueio/resposta automática){#issue-process-MO}
 
-* Ativar rastreamentos SMPP durante testes. Se você não ativar o TLS, deverá fazer uma captura de rede ao solucionar problemas do MO para verificar se as PDUs contêm as informações corretas e estão formatadas adequadamente.
+* Habilitar rastreamentos SMPP durante testes. Se você não habilitar o TLS, deverá fazer uma captura de rede ao solucionar problemas do MO para verificar se as PDUs contêm as informações corretas e estão formatadas adequadamente.
 
 * Ao capturar tráfego de rede ou analisar rastreamentos SMPP, capture toda a conversa com o MO e seu MT de resposta se uma resposta estiver configurada.
 
@@ -172,7 +172,7 @@ Se você corrigiu tudo, mas alguns SR inválidos ainda estão nos buffers do pro
 
 * Se `DELIVER_SM PDU` for exibido, verifique se ele foi confirmado pelo Adobe Campaign com um `DELIVER_SM_RESP PDU` bem-sucedido (código 0). Esse RESP garante que toda a lógica de processamento foi aplicada pelo Adobe Campaign (resposta automática e lista de permissão/bloqueio). Se esse não for o caso, procure uma mensagem de erro nos logs de processo do SMS.
 
-* Se as respostas automáticas estiverem ativadas, verifique se `SUBMIT_SM` foi enviado ao provedor. Caso contrário, você encontrará uma mensagem de erro nos logs de processo de SMS.
+* Se as respostas automáticas estiverem habilitadas, verifique se `SUBMIT_SM` foi enviado ao provedor. Caso contrário, você encontrará uma mensagem de erro nos logs de processo de SMS.
 
 * Se o `SUBMIT_SM MT PDU` que contém a resposta for encontrado nos rastreamentos, mas o SMS não chegar ao telefone celular, você terá que entrar em contato com o provedor para obter assistência na solução de problemas.
 
@@ -216,7 +216,7 @@ Envie diferentes tipos de caracteres especiais ao testar. Por exemplo, a codific
 
 Sempre que buscar assistência para um problema de SMS, seja para abrir um tíquete de suporte para o Adobe Campaign, para o provedor de SMS ou qualquer tipo de comunicação sobre o problema, você precisará incluir as informações a seguir para ter certeza de que ele será qualificado corretamente. A qualificação correta dos problemas é fundamental para resolvê-los mais rapidamente.
 
-* **Ative as mensagens SMPP detalhadas** quando o problema surgir. A maioria dos problemas de SMS é impossível de resolver sem isso.
+* **Habilite as mensagens SMPP detalhadas** quando o problema surgir. A maioria dos problemas de SMS é impossível de resolver sem isso.
 
 * Se o problema estiver relacionado ao tráfego de SMS, entre em contato primeiro com o provedor. A plataforma dele é mais adequada para o diagnóstico eficiente dos problemas de tráfego de SMS em tempo real.
 
@@ -254,7 +254,7 @@ Em todas as outras situações, tente analisar as mensagens SMPP detalhadas prim
 
 Em alguns casos, a captura do tráfego de rede não é necessária. As situações mais comuns são:
 
-* TLS ativado: por definição, o tráfego TLS é criptografado para que não possa ser capturado.
+* TLS habilitado: por definição, o tráfego TLS é criptografado para que não possa ser capturado.
 
 * Problemas de desempenho: os logs contêm todas as informações necessárias para rastrear problemas de desempenho.
 
@@ -270,14 +270,14 @@ Em alguns casos, a captura do tráfego de rede não é necessária. As situaçõ
 
 O novo conector dá suporte a logs estendidos por meio de rastreamentos: SMPP. Os rastreamentos são enviados no log MTA, não na saída padrão.
 
-**Ativação por conta externa (método preferencial)**
+**Habilitação por conta externa (método preferencial)**
 
-1. Na **conta externa**, marque **Ativar rastreamentos SMPP detalhados no arquivo de log**.
+1. Na **conta externa**, marque **Habilitar rastreamentos SMPP detalhados no arquivo de log**.
 1. Aguarde 10 minutos para permitir que o servidor recarregue as contas externas.
 
 Deve estar ativo agora.
 
-**Ativação na configuração**
+**Habilitação na configuração**
 
 No arquivo `config-instance.xml`, defina os seguintes parâmetros:
 
@@ -315,11 +315,14 @@ Quatro conexões abertas para o processo SMS e duas por filho mta com cinco filh
 
 Para esclarecer as diferenças entre os status **Enviada**, **Enviada ao provedor** e **Recebida em dispositivo móvel**, consulte as definições detalhadas abaixo:
 
-* **Recebida em dispositivo móvel**: a mensagem foi entregue com sucesso ao dispositivo do usuário, com confirmação fornecida pela entrega Terminada por dispositivo móvel (MT) e um Relatório de status (SR).
+* **Recebido no Celular**:
+A mensagem foi entregue com êxito ao dispositivo do usuário, com confirmação fornecida pela entrega Terminada por dispositivo móvel (MT) e um Relatório de status (SR).
 
-* **Enviada**: a mensagem foi processada com sucesso por meio da etapa Terminada por dispositivo móvel (MT), mas um Relatório de status (SR) confirmando a entrega para o dispositivo móvel ainda não foi recebido.
+* **Enviado**:
+A mensagem foi processada com êxito por meio da etapa Mobile Terminated (MT), mas um Relatório de Status (SR) confirmando a entrega para o dispositivo móvel ainda não foi recebido.
 
-* **Enviada ao provedor**: a mensagem foi enviada ao provedor usando `SUBMIT_SM command`, mas nenhuma confirmação `SUBMIT_SM_RESP` foi recebida do provedor.
+* **Enviado ao Provedor**:
+A mensagem foi enviada para o provedor usando o `SUBMIT_SM command`, mas nenhuma confirmação `SUBMIT_SM_RESP` foi recebida do provedor.
 
 As mensagens podem permanecer no status **Enviada**, porque a transição para **Recebida** depende de um Relatório de status (SR) do dispositivo do usuário. Se o usuário tiver um sinal ruim ou outros problemas de conectividade, talvez não receba a mensagem imediatamente. Nesses casos, é responsabilidade do provedor repetir a entrega ou explicar por que nenhum SR foi gerado. Se o provedor identificar discrepâncias, deverá garantir que o comportamento do Campaign foi consistente com as expectativas.
 

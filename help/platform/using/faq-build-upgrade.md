@@ -9,8 +9,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 100%
+source-wordcount: '2105'
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ Saiba mais [nesta seção](../../platform/using/launching-adobe-campaign.md#gett
 
 ## O que significa o status da build?
 
-Desde o Campaign Classic 19.2, um status está associado a cada build 
+Desde o Campaign Classic 19.2, um status está associado a cada build
 
 Saiba mais [nesta seção](../../rn/using/rn-overview.md).
 
@@ -200,9 +200,10 @@ Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](../../
 * Use a mesma versão do console que a versão de build após a atualização.
 * Você tem algum aplicativo da web que insira dados no banco de dados do Campaign? Em caso afirmativo, execute-os e
 verifique se eles podem inserir novos registros por meio da API.
-* Você pode enviar um email de teste com êxito? Crie uma nova entrega usando um modelo conhecido, envie-a para um destinatário de teste, verifique a personalização, desfaça o vínculo, aplique mirror page a todo o trabalho.
-* Todos os seus fluxos de trabalho de caminho críticos estão em execução? Verifique os fluxos de trabalho, abra o journal do fluxos de trabalho e verifique
-se há erros.
+* Você pode enviar um email de teste com êxito? Crie um novo delivery usando um modelo conhecido, envie-o para
+um recipient de teste, verificar personalização, desfazer vínculo, mirror page, todo o trabalho.
+* Todos os seus fluxos de trabalho de caminho críticos estão em execução? Verifique os workflows, abra o journal do workflow e verifique
+que não há erros.
 * Todas as pastas estão presentes, visíveis e acessíveis? Navegue por pastas diferentes e verifique se
 todo o conteúdo é exibido e está presente.
 * Suas entregas estão com o fuso horário correto?

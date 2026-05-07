@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 985cf088-7546-4875-8e11-cafe5bd3e323
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 29%
+source-wordcount: '209'
+ht-degree: 27%
 
 ---
 
@@ -28,11 +28,11 @@ Antes de começar a trabalhar com o conector Adobe Campaign-Adobe Analytics, con
 * O complemento do conector do Web Analytics deve ser instalado em seu ambiente, por meio do pacote dedicado.
 
    * Para implementações híbridas e no local, siga as etapas de provisionamento detalhadas nesta [página](adobe-analytics-provisioning.md).
-   * Como um usuário Hoster ou Managed Cloud Service, entre em contato com a Adobe para conectar o Campaign com os serviços e as soluções da Adobe Experience Cloud.
+   * Como um usuário do Hoster ou do Managed Cloud Services, entre em contato com a Adobe para conectar o Campaign com os serviços e as soluções da Adobe Experience Cloud.
 
 
 ## Configuração e utilização {#adobe-analytics-connector-usage}
 
 Para habilitar esta integração, você deve criar sua conta técnica do Adobe conforme detalhada em [esta página](oauth-technical-account.md).
 
-Saiba como trabalhar com o Adobe Campaign e o Adobe Analytics na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
+Saiba como trabalhar com o Adobe Campaign e o Adobe Analytics na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.

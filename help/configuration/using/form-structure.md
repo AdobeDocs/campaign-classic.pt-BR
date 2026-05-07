@@ -8,7 +8,7 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '2394'
+source-wordcount: '2411'
 ht-degree: 5%
 
 ---
@@ -235,7 +235,7 @@ Um contêiner de visibilidade é definido pelo atributo **type=&quot;visibleGrou
 Exemplos de sintaxe de condição:
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: testa a igualdade nos dados do tipo cadeia de caracteres. O valor de comparação deve estar entre aspas.
-* **visibleIf=&quot;@gender >= 1 e @gender != 2&quot;**: condição em um valor numérico.
+* **visibleIf=&quot;@gender >= 1 and @gender != 2&quot;**: condição em um valor numérico.
 * **visibleIf=&quot;@boolean1=true ou @boolean2=false&quot;**: teste em campos booleanos.
 
 #### Ativar container {#enabling-container}

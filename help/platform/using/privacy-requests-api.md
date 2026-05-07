@@ -9,8 +9,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: a93bac61-f615-4178-bc12-0f056e48687d
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 100%
+source-wordcount: '662'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 O Adobe Campaign fornece uma **API** que permite configurar um processo automático de solicitação de acesso a dados pessoais.
 
-Com a API, o processo de privacidade geral é o mesmo que o [utilizado com a interface](privacy-requests-ui.md). A única diferença é a criação da solicitação de acesso a dados pessoais. Em vez de criar a solicitação no Adobe Campaign, um POST contendo as informações da solicitação é enviado para o Campaign. Para cada solicitação, uma nova entrada é adicionada na tela **[!UICONTROL Privacy Requests]**. Os workflows técnicos de privacidade processam a solicitação, da mesma forma que uma solicitação adicionada usando a interface.
+Com a API, o processo de privacidade geral é o mesmo que o [utilizado com a interface](privacy-requests-ui.md). A única diferença é a criação da solicitação de acesso a dados pessoais. Em vez de criar a solicitação no Adobe Campaign, um POST contendo as informações da solicitação é enviado para o Campaign. Para cada solicitação, uma nova entrada é adicionada na tela **[!UICONTROL Privacy Requests]**. Os fluxos de trabalho técnicos de privacidade processam a solicitação, da mesma forma que uma solicitação adicionada usando a interface.
 
 Se você estiver usando a API para enviar solicitação de acesso a dados pessoais, recomendamos que ative o **processo de duas etapas** durante as primeiras solicitações de exclusão para testar os dados retornados. Após a conclusão dos testes, o processo de duas etapas pode ser desativado para que o processo de solicitação de exclusão possa ser executado automaticamente.
 
@@ -54,13 +54,13 @@ A API JS **[!UICONTROL CreateRequestByName]** é definida da seguinte maneira.
 >
 >Se você estiver migrando para a versão 20.2 e já estiver usando a API, precisará adicionar o campo &quot;regulation&quot;, como mostrado acima. Se você estiver usando uma build anterior, poderá continuar a usar a API sem o campo &quot;regulation&quot;.
 
-## Chamada de API externamente   {#invoking-api-externally}
+## Chamada de API externamente {#invoking-api-externally}
 
 Este é um exemplo de como chamar a API externamente (autenticação por meio da API e detalhes específicos sobre a API de privacidade). Para obter mais informações sobre a API de privacidade, consulte a [documentação da API](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html?lang=pt-BR). Você também pode consultar a [documentação de chamadas de serviço da web](../../configuration/using/web-service-calls.md).
 
 Primeiro, é necessário executar a autenticação por meio da API:
 
-1. Baixe o **xtk:session** WSDL por meio deste url: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=xtk:sessão**.
+1. Baixe o WSDL **xtk:session** por meio desta URL: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=xtk:session**.
 
 1. Use o método &quot;Logon&quot; e forneça um nome de usuário e senha como parâmetros na solicitação. Você receberá uma resposta contendo um token de sessão. Veja um exemplo de utilização de SoapUI.
 
@@ -70,7 +70,7 @@ Primeiro, é necessário executar a autenticação por meio da API:
 
 Em seguida, chame a API de privacidade:
 
-1. Baixe o WSDL com este URL: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=nms:privacyRequest**.
+1. Baixe o WSDL desta URL: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=nms:privacyRequest**.
 
 1. Use **[!UICONTROL CreateRequestByName]** para criar uma solicitação específica de acesso a dados pessoais.
 
@@ -94,7 +94,7 @@ Este é um exemplo de como você pode chamar a API a partir de um JS dentro do C
 >
 >Se você estiver migrando para a versão 20.2 e já estiver usando a API, precisará adicionar o campo “regulation”. Se você estiver usando uma build anterior, poderá continuar a usar a API sem o campo “regulation”.
 
-* Se você estiver **usando uma build anterior (com o pacote GDPR)** é possível continuar a usar a API sem o campo “regulation”, como mostrado abaixo:
+* Se você estiver **usando uma build anterior (com o pacote RGPD)** é possível continuar a usar a API sem o campo “regulation”, como mostrado abaixo:
 
   ```
   loadLibrary("nms:gdpr.js");

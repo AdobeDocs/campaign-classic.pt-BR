@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 78%
+source-wordcount: '376'
+ht-degree: 79%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 78%
 
 Use a opção Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao Netezza.
 
-1. Instalar e configurar [drivers de Netezza](#netezza-config)
-1. Configurar o Netezza [conta externa](#netezza-external) no Campaign
+1. Instalar e configurar [drivers do Netezza](#netezza-config)
+1. Configurar a [conta externa](#netezza-external) do Netezza no Campaign
 
 ## Configuração do Netezza {#netezza-config}
 
@@ -92,6 +92,6 @@ A conta externa do Netezza permite conectar a instância do Campaign ao banco de
 
 >[!NOTE]
 >
->As operações em schemas que contêm chaves primárias geradas automaticamente não são consideradas.
+>As operações em esquemas que contêm chaves primárias geradas automaticamente não são consideradas.
 >
->A tabela utilizará a cláusula **Organizar em** no primeiro índice definido no schema. Como esta cláusula é limitada de 1 até 4 colunas com Netezza, este índice não pode conter mais de 4 colunas.
+>A tabela utilizará a cláusula **Organizar em** no primeiro índice definido no esquema. Como esta cláusula é limitada de 1 até 4 colunas com Netezza, este índice não pode conter mais de 4 colunas.

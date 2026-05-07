@@ -10,7 +10,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '916'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Todos esses regulamentos aplicam-se a clientes do Adobe Campaign que coletam dad
 
 >[!NOTE]
 >
->Para obter mais informações sobre dados pessoais e as diferentes entidades que gerenciam os dados (Controlador de dados, Operador de dados e Titular de dados), consulte [Dados pessoais e personas](../../platform/using/privacy-and-recommendations.md#personal-data).
+>Para obter mais informações sobre dados pessoais e as diferentes entidades que gerenciam os dados (Controlador de dados, Operador de dados e Titular de dados), consulte [Dados pessoais e Personalidades](../../platform/using/privacy-and-recommendations.md#personal-data).
 
 ## Direito de acesso e Direito ao esquecimento {#right-access-forgotten}
 
@@ -67,9 +67,9 @@ Para facilitar a conformidade com a privacidade, o Adobe Campaign permite manipu
 Para saber como criar solicitações de **Acesso** e **Exclusão** e como o Adobe Campaign as processa, consulte as [etapas de implementação](../../platform/using/privacy-requests.md).
 
 <!--
-Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=pt-BR).
+Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 
-https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=pt-BR
+https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html
 -->
 
 ## Consentimento, retenção e funções {#consent-retention-roles}
@@ -78,7 +78,7 @@ Além dos recursos mais recentes de **Direito de acesso** e **Direito ao esqueci
 
 * [Gerenciamento do consentimento](#consent-management): funcionalidade de assinatura para gerenciamento de preferências
 * [Retenção de dados](#data-retention): períodos de retenção de dados em todas as tabelas de log padrão; períodos de retenção adicionais podem ser configurados com fluxos de trabalho
-* [Gerenciamento de direitos](#rights-management): acesso a dados gerenciados por direito nomeado     
+* [Gerenciamento de direitos](#rights-management): acesso a dados gerenciados por direito nomeado
 
 ### Gerenciamento de consentimento {#consent-management}
 
@@ -90,8 +90,7 @@ Os recursos para ajudar a gerenciar alguns aspectos do consentimento são fundam
 
 Para obter mais informações sobre o Gerenciamento de consentimento, consulte a [documentação detalhada](../../delivery/using/managing-subscriptions.md).
 
-Além das ferramentas de Gestão do consentimento oferecidas pelo Adobe Campaign, você tem a possibilidade de monitorar a opção do cliente pela recusa da venda de informações pessoais.
-Consulte [esta seção](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
+Além das ferramentas de Gestão do consentimento oferecidas pelo Adobe Campaign, você tem a possibilidade de monitorar a opção do cliente pela recusa da venda de informações pessoais. Consulte [esta seção](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
 ### Retenção de dados {#data-retention}
 

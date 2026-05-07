@@ -6,8 +6,8 @@ feature: SMS
 role: User
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '382'
+workflow-type: tm+mt
+source-wordcount: '484'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Use o Adobe Campaign para enviar mensagens de texto aos seus clientes em seus dispositivos móveis. Você pode criar, personalizar e visualizar mensagens em formato de texto no editor de SMS.
 
-O SMS é um canal direto e altamente eficaz para alcançar usuários onde quer que estejam. Com altas taxas de abertura e entrega quase instantânea, o SMS é ideal para alertas urgentes, atualizações transacionais e mensagens promocionais concisas. Use o SMS para complementar a estratégia entre canais e fornecer comunicação impactante em tempo real. Saiba como configurar e usar o canal de SMS de maneira eficaz na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/sms/sms){target=_blank}.
+O SMS é um canal direto e altamente eficaz para alcançar usuários onde quer que estejam. Com altas taxas de abertura e entrega quase instantânea, o SMS é ideal para alertas urgentes, atualizações transacionais e mensagens promocionais concisas. Use o SMS para complementar a estratégia entre canais e fornecer comunicação impactante em tempo real. Saiba como configurar e usar o canal de SMS de maneira eficaz na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=pt-BR){target=_blank}.
 
 Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8.
 

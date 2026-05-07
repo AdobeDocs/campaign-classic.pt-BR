@@ -6,8 +6,8 @@ feature: Reporting, Monitoring
 exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 100%
+source-wordcount: '350'
+ht-degree: 96%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 
 
-A exploração de dados no banco de dados é oferecida pelo módulo **Marketing Analytics.** Ele permite analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo do relatório. Além disso, o Marketing Analytics permite criar relatórios e populações do target. Uma vez identificados, eles são armazenados em listas que podem ser usadas no Adobe Campaign (targeting, segmentação, etc.).
+A exploração de dados no banco de dados é oferecida pelo módulo **Marketing Analytics.** Ele permite analisar e medir dados, calcular estatísticas, simplificar e otimizar a criação e o cálculo do relatório. Além disso, o Marketing Analytics permite criar relatórios e populações de destino. Uma vez identificados, eles são armazenados em listas que podem ser usadas no Adobe Campaign (direcionamento, segmentação, etc.).
 
-Os cubos são usados para gerar determinados relatórios internos, incluindo relatórios da entrega (rastreamento de entrega, cliques, aberturas, etc.). Os relatórios baseados em cubos só podem ser usados como padrão para volumes de dados em 5 milhões de linhas de fatos.
+Os cubos são usados para gerar determinados relatórios integrados, incluindo relatórios da entrega (rastreamento de entrega, cliques, aberturas, etc.). Os relatórios baseados em cubos só podem ser usados como padrão para volumes de dados em 5 milhões de linhas de fatos.
 
 É possível ampliar o recursos de exploração e análise do banco de dados e, ao mesmo tempo, facilitar para os usuários finais a configuração de relatórios e tabelas: basta selecionar um cubo existente (totalmente configurado) ao criar os relatórios ou as tabelas para processar cálculos, medidas e estatísticas.
 
-Depois que tiverem sido criados e configurados, os cubos serão usados em caixas de query de relatório e aplicação web. Eles podem ser utilizados e manipulados dentro de tabelas dinâmicas.
+Depois que tiverem sido criados e configurados, os cubos serão usados em caixas de consulta de relatório e aplicação web. Eles podem ser utilizados e manipulados dentro de tabelas dinâmicas.
 
 >[!CAUTION]
 >
@@ -29,20 +29,20 @@ Depois que tiverem sido criados e configurados, os cubos serão usados em caixas
 
 Use o módulo Marketing Analytics do Campaign para:
 
-1. Criar cubos, 
+1. Criar cubos,
 
-   * agregar e armazenar dados em uma tabela de trabalho para pré-calcular indicadores com base nas necessidades do usuário, 
-   * reduzir o volume de dados envolvidos nos vários cálculos usados para relatórios e consultas, otimizando significativamente os tempos de cálculo do indicador, 
+   * agregar e armazenar dados em uma tabela de trabalho para pré-calcular indicadores com base nas necessidades do usuário,
+   * reduzir o volume de dados envolvidos nos vários cálculos usados para relatórios e consultas, otimizando significativamente os tempos de cálculo do indicador,
    * simplificar o acesso aos dados e permitir que os usuários manipulem dados (sejam pré-agregados ou não) que dependem de várias dimensões.
 
-1. Criar tabelas dinâmicas, 
+1. Criar tabelas dinâmicas,
 
-   * explorar dados calculados e medidas configuradas, 
-   * selecionar os dados a serem exibidos, bem como o seu modo de exibição, 
-   * personalizar as medidas e os indicadores usados, 
+   * explorar dados calculados e medidas configuradas,
+   * selecionar os dados a serem exibidos, bem como o seu modo de exibição,
+   * personalizar as medidas e os indicadores usados,
    * e oferecer ferramentas de análise interativa a usuários sem conhecimento técnico.
 
-1. Criar um query usando dados calculados e agregados em um cubo.
+1. Criar uma consulta usando dados calculados e agregados em um cubo.
 1. Identificar populações e referenciá-las em listas.
 
-Saiba como criar e usar cubos na [Documentação do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=pt-BR){target="_blank"}.
+Saiba como criar e usar cubos na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=pt-BR){target="_blank"}.

@@ -9,7 +9,7 @@ topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Modelo de conteúdo {#content-model-14}
 
-srcSchema:==(attribute | createdBy | dados | element | enumeração | ajuda | interface | Métodos | modifiedBy)
+srcSchema:==(attribute | createdBy | dados Elemento | | enumeração | ajuda | interface | métodos | modificado por)
 
 ## Atributos {#attributes-14}
 
@@ -29,7 +29,7 @@ created (datetime), createdBy-id (long), desc (string), entitySchema (string), e
 
 nenhuma
 
-## Derivados {#children-14}
+## Filhos {#children-14}
 
 * `<attribute>`
 * `<createdby>`
@@ -54,7 +54,7 @@ A apresentação do esquema está disponível em [Sobre a referência do esquema
 * **created (datetime)**: este atributo fornece informações sobre a data e a hora da criação do esquema. Ele tem um formulário de &quot;Data e hora&quot;. Os valores exibidos são retirados do servidor. A hora é mostrada no formato UTC.
 * **createdBy-id (long)**: é o identificador do operador que criou o esquema.
 * **desc (cadeia de caracteres)**: descrição do esquema
-* **entitySchema (string)**: esquema básico no qual a sintaxe e a aprovação são baseadas (por padrão para Adobe Campaign: xtk:srcSchema). Ao salvar o esquema atual, o Adobe Campaign aprovará sua gramática com o esquema declarado no atributo @xtkschema.
+* **entitySchema (string)**: esquema básico no qual a sintaxe e a aprovação se baseiam (por padrão para Adobe Campaign: xtk:srcSchema). Ao salvar o esquema atual, o Adobe Campaign aprovará sua gramática com o esquema declarado no atributo @xtkschema.
 * **extendedSchema (cadeia de caracteres)**: recebe o nome do esquema predefinido no qual a extensão de esquema atual se baseia. O formulário é &quot;namespace:name&quot;.
 * **img (cadeia de caracteres)**: ícone vinculado ao esquema (pode ser definido no assistente de criação de esquemas).
 * **rótulo (cadeia de caracteres)**: rótulo de esquema.
@@ -73,7 +73,7 @@ A apresentação do esquema está disponível em [Sobre a referência do esquema
 * **namespace (cadeia de caracteres)**: namespace do esquema (padrão: nms, xtk, nl). Ao criar um novo schema para um projeto, recomendamos que você use um namespace dedicado.
 * **useRecycleBin (booleano)**: ativa o recurso de lixeira no aplicativo. Os registros excluídos serão colocados no lixo antes da exclusão final. Essa função só está disponível no modo &quot;Delivery&quot;.
 * **exibição (booleano)**: se estiver ativado (@view=&quot;true&quot;), o esquema será usado como exibição. O assistente de atualização da estrutura do banco de dados não levará o esquema em consideração. Essa opção é usada principalmente para fazer referência a tabelas externas.
-* **xtkschema (string)**: nome do esquema que define a gramática do esquema (xtk:srcSchema por padrão).
+* **xtkschema (cadeia de caracteres)**: nome do esquema que define a gramática do esquema (xtk:srcSchema por padrão).
 
 ## Exemplos {#examples-11}
 

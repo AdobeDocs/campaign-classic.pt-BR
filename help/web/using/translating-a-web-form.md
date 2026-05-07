@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
-workflow-type: ht
-source-wordcount: '1549'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1592'
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ A guia **[!UICONTROL Translations]** permite inserir traduções para as strings
 
 Na primeira vez que você abrir essa guia, ela não conterá dados. Clique no link **[!UICONTROL Collect the strings to translate]** para atualizar as strings no aplicativo web.
 
-O Adobe Campaign coleta rótulos de campos e strings definidas nas guias **[!UICONTROL Texts]** de todos os elementos estáticos: blocos HTML, Javascript etc. Os elementos estáticos são detalhados em [Estáticos elementos em um formulário web](static-elements-in-a-web-form.md).
+O Adobe Campaign coleta rótulos de campos e cadeias de caracteres definidas nas guias **[!UICONTROL Texts]** de todos os elementos estáticos: blocos HTML, Javascript etc. Os elementos estáticos são detalhados em [Elementos estáticos em um formulário web](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -133,7 +133,7 @@ Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translat
 >
 >Os nomes dos arquivos de exportação são gerados automaticamente. Se você realizar a mesma exportação várias vezes, substituirá os arquivos existentes pelos novos. Se precisar manter os arquivos anteriores, altere o **[!UICONTROL Target folder]**, então clique em **[!UICONTROL Start]** novamente para executar a exportação.
 
-Quando você exporta arquivos no **formato CSV**, cada idioma é vinculado a status de status e aprovação. **Aprovar?** permite aprovar uma tradução. Essa coluna pode conter os valores **Sim** ou **Não**. Como para o editor integrado (consulte [Gerenciamento de traduções no editor](#managing-translations-in-the-editor)), a aprovação de traduções é opcional e não bloqueia o processo.
+Quando você exporta arquivos no **formato CSV**, cada idioma é vinculado a status de status e aprovação. A **Aprovação?** permite aprovar uma tradução. Essa coluna pode conter os valores **Sim** ou **Não**. Como para o editor integrado (consulte [Gerenciamento de traduções no editor](#managing-translations-in-the-editor)), a aprovação de traduções é opcional e não bloqueia o processo.
 
 ### Importação de arquivos {#importing-files}
 
@@ -440,7 +440,7 @@ Você pode adicionar **?lang=es** ou **=lang=de** para exibi-la em espanhol ou a
 
 ### Tradução de strings do sistema {#translating-the-system-strings}
 
-As strings do sistema são strings prontas para uso, utilizadas por todas as aplicações web. Por exemplo: botoes **[!UICONTROL Next]**, **[!UICONTROL Previous]**, **[!UICONTROL Approve]**, mensagens **[!UICONTROL Loading]** etc. Por padrão, alguns idiomas contêm um dicionário com traduções para essas strings. A lista de idiomas é detalhada em [Alteração do idioma de exibição dos formulários](#changing-forms-display-language).
+As strings do sistema são strings prontas para uso, utilizadas por todas as aplicações web. Por exemplo: **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** botões, **[!UICONTROL Loading]** mensagens, etc. Por padrão, alguns idiomas contêm um dicionário com traduções para essas cadeias de caracteres. A lista de idiomas é detalhada em [Alteração do idioma de exibição dos formulários](#changing-forms-display-language).
 
 Se você traduzir a aplicação web para um idioma para o qual o dicionário do sistema não foi traduzido, uma mensagem de aviso será exibida para avisá-lo que algumas traduções estão ausentes.
 

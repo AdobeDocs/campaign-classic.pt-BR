@@ -7,7 +7,7 @@ hide: true
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1134'
 ht-degree: 100%
 
 ---
@@ -126,7 +126,7 @@ Os duplicados identificados também serão integrados em uma lista de duplicados
 1. Abra a atividade de desduplicação e clique no link **[!UICONTROL Edit configuration...]** para definir o modo de desduplicação.
 1. Na nova janela, selecione **[!UICONTROL Database schema]**.
 1. Selecione **Recipients** como dimensões de filtragem e direcionamento.
-1. Selecione o campo de ID para os duplicados de **[!UICONTROL Email]** a fim de enviar a entrega somente uma vez para cada endereço de email, depois clique em **[!UICONTROL Next]**. 
+1. Selecione o campo de ID para os duplicados de **[!UICONTROL Email]** a fim de enviar a entrega somente uma vez para cada endereço de email, depois clique em **[!UICONTROL Next]**.
 
    Se desejar basear as IDs duplicadas em um campo específico, selecione **[!UICONTROL Other]** para acessar a lista de campos disponíveis.
 

@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 31%
+source-wordcount: '380'
+ht-degree: 33%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 31%
 
 
 
-A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows, etc.) pelas instâncias do Campaign Classic é limitada. Esses são os URLs que permitem que as instâncias funcionem corretamente.
+A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows etc.) pelas instâncias do Campaign Classic é limitada. Esses são os URLs que permitem que as instâncias funcionem corretamente.
 
 Por padrão, as instâncias não têm permissão para se conectar a URLs externos. No entanto, é possível adicionar URLs externos à lista de URLs autorizados para que sua instância possa se conectar a eles. Dessa forma, você pode conectar as instâncias do Campaign a sistemas externos, como servidores ou sites SFTP para habilitar a transferência de arquivos e/ou dados.
 
@@ -29,7 +29,7 @@ Por padrão, as instâncias não têm permissão para se conectar a URLs externo
 >
 >Como cliente **hospedado**, se você puder acessar o [Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR), poderá usar a interface de autoatendimento de permissões de URL. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=pt-BR)
 >
->Outros clientes **híbridos/hospedados** precisam entrar em contato com a equipe de suporte do Adobe para adicionar IP ao incluo na lista de permissões.
+>Outros clientes **híbridos/hospedados** precisam entrar em contato com a equipe de suporte da Adobe para adicionar IP ao incluo na lista de permissões.
 >
 
 Para implantações **Híbridas** e **No local**, o administrador precisa fazer referência a uma nova **urlPermission** no arquivo **serverConf.xml**.
@@ -37,9 +37,9 @@ Para implantações **Híbridas** e **No local**, o administrador precisa fazer 
 
 Três modos de proteção de conexão estão disponíveis:
 
-* **Bloqueio**: todas as URLs fora do arquivo de inclui na lista de permissões são bloqueadas, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
-* **Permissivo**: todas as URLs fora do grupo de inclui na lista de permissões são permitidas.
-* **Aviso**: todas as URLs fora do arquivo de inclui na lista de permissões são permitidas, mas o interpretador JS emite um aviso para que o administrador possa coletá-las. Esse modo adiciona mensagens de aviso JST-310027.
+* **Bloqueio**: todas as URLs fora do incluo na lista de permissões são bloqueadas, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
+* **Permissivo**: todas as URLs fora do incluo na lista de permissões são permitidas.
+* **Aviso**: todas as URLs fora do incluo na lista de permissões são permitidas, mas o interpretador JS emite um aviso para que o administrador possa coletá-las. Esse modo adiciona mensagens de aviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -53,11 +53,11 @@ Três modos de proteção de conexão estão disponíveis:
 >
 >Por padrão, as novas implementações usam o modo **Bloqueio**.
 >
->Como um cliente existente proveniente de uma migração, você pode usar temporariamente o modo **Aviso**. Analise o tráfego de saída antes de permitir os URLs. Após a definição da lista de URLs permitidos, você poderá adicionar as URLs ao incluo na lista de permissões e ativar o modo **Bloqueio**.
+>Como um cliente existente proveniente de uma migração, você pode usar temporariamente o modo **Aviso**. Analise o tráfego de saída antes de permitir os URLs. Após definir a lista de URLs permitidas, você pode adicionar as URLs ao incluo na lista de permissões e ativar o modo **Bloqueio**.
 
 Para obter mais informações, consulte esta seção.
 
-* [Documentação do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR)
+* [Documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/control-panel-home)
 * [Modelos de hospedagem](hosting-models.md)
 * [Configuração do servidor do Campaign](configuring-campaign-server.md)
 * [Parâmetros do arquivo de configuração do servidor do Campaign](the-server-configuration-file.md)

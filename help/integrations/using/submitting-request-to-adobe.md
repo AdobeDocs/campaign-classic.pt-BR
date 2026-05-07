@@ -10,8 +10,8 @@ topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 82%
+source-wordcount: '146'
+ht-degree: 76%
 
 ---
 
@@ -35,7 +35,7 @@ Depois que o Adobe Identity Management Service (IMS) for habilitado para sua org
   </tr> 
   <tr> 
    <td> <strong>ID da organização</strong><br /> </td> 
-   <td> ID da sua organização. <br> Para encontrar o ID da organização, consulte <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR">esta página</a></td> 
+   <td> Sua ID da organização. <br> Para encontrar seu ID de organização, consulte <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR">esta página</a></td> 
   </tr> 
   <tr> 
    <td> <strong>Ambiente</strong><br /> </td> 

@@ -7,7 +7,7 @@ hide: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2040'
 ht-degree: 100%
 
 ---
@@ -251,7 +251,7 @@ Esses períodos podem ser configurados por meio da opção NmsServer_PausedWorkf
 
 Os supervisores de fluxo de trabalho são notificados. O criador e o último usuário que modificou o fluxo de trabalho também são notificados. Os administradores não recebem as notificações.
 
-## Filtragem de fluxos de trabalho de acordo com seu status{#filtering-workflows-status}
+## Filtragem de fluxos de trabalho de acordo com seu status {#filtering-workflows-status}
 
 A interface do Campaign Classic permite monitorar o status de execução de todos os fluxos de trabalho na instância usando **visualizações** predefinidas. Para acessar essas exibições, abra o nó **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]**.
 

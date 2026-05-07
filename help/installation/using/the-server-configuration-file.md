@@ -9,8 +9,8 @@ topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '8066'
-ht-degree: 5%
+source-wordcount: '8103'
+ht-degree: 8%
 
 ---
 
@@ -410,7 +410,7 @@ No nó **dataStore > dataSource > pool**, configure os parâmetros do pool de co
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Número máximo de conexões permitidas antes de recusar uma nova conexão. Veja esta <a href="https://helpx.adobe.com/br/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">nota técnica</a>.<br /> </td> 
+   <td> Número máximo de conexões permitidas antes de recusar uma nova conexão. Veja esta <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">nota técnica</a>.<br /> </td> 
    <td> Curto<br /> </td> 
   </tr> 
   <tr> 
@@ -540,11 +540,7 @@ Para obter informações adicionais, consulte esta [seção](../../installation/
 
 >[!NOTE]
 >
->Observação em **nameServers**: por padrão, usa a rede
->parâmetros da primeira interface de rede declarada no Windows
->não definido no UNIX. Define os servidores de nomes de domínio (DNS)
->usado pelo MTA para declarar o Mail Exchanger para
->um domínio.
+>Observação em **nameServers**: por padrão, usa a rede>parâmetros da primeira interface de rede declarada no Windows>não definido no UNIX. Define os servidores de nomes de domínio (DNS)>usado pelo MTA para declarar o Mail Exchanger para>um domínio.
 >
 >Se esse valor não estiver definido, o MTA buscará essas informações na configuração da rede do host. Se vários DNS forem possíveis, os diferentes endereços DNS deverão ser separados por vírgula (exemplo: 212.155.207.1,212.155.207.2). Se o servidor de entrega tiver várias interfaces de rede, a lista de DNS usada pelo MTA será a primeira. Nesse caso, recomendamos especificar o parâmetro **nameServer** para evitar ambiguidades.
 
@@ -1276,7 +1272,7 @@ Estes são os diferentes parâmetros do nó **inMail**. Essa é a configuração
   </tr> 
   <tr> 
    <td> ignoreSize<br /> </td> 
-   <td> Ignore message size: é usado para ignorar o tamanho de uma mensagem retornada por servidores POP3. Nesse caso, o módulo espera um '.' ao final das mensagens. <br /> </td> 
+   <td> Ignore message size: é usado para ignorar o tamanho de uma mensagem retornada por servidores POP3. Nesse caso, o módulo espera um "." no final das mensagens. <br /> </td> 
    <td> Booleano<br /> </td> 
    <td> falso<br /> </td> 
   </tr> 
@@ -1545,7 +1541,7 @@ Estes são os diferentes parâmetros do nó **mta**. Essa é a configuração do
   </tr> 
   <tr> 
    <td> logLevel<br /> </td> 
-   <td> Exibir nível de mensagens de log. Nível de severidade dos logs gravados no banco de dados. As mensagens de log geradas pelo MTA nem sempre são gravadas no banco de dados. Com esse parâmetro, você pode definir o nível a partir do qual considera que uma mensagem deve ser gravada no banco de dados. Se você definir o nível 2, mensagens de nível 1 e 0 também serão gravadas, enquanto que se definir o nível 1, somente mensagens de nível 1 e 0 serão gravadas. Os valores possíveis são: 0 (erros), 1 (aviso), 2 (informações)<br /> </td> 
+   <td> Exibir nível das mensagens de log. Nível de severidade dos logs gravados no banco de dados. As mensagens de log geradas pelo MTA nem sempre são gravadas no banco de dados. Com esse parâmetro, você pode definir o nível a partir do qual considera que uma mensagem deve ser gravada no banco de dados. Se você definir o nível 2, mensagens de nível 1 e 0 também serão gravadas, enquanto que se definir o nível 1, somente mensagens de nível 1 e 0 serão gravadas. Os valores possíveis são: 0 (erros), 1 (aviso), 2 (informações)<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1625,9 +1621,9 @@ Estes são os diferentes parâmetros do nó **mta**. Essa é a configuração do
    <td> statServerAddress<br /> </td> 
    <td> Endereço do servidor de estatísticas de entrega, fornecido como 
     &lt;dns ou ip&gt; 
-      <code>&lbrack;</code>: 
+      <code>[</code>: 
      &lt;porta&gt; 
-       <code>&rbrack;</code>. Consulte 
+       <code>]</code>. Consulte 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordenadas do servidor de estatísticas</a>. 
       <br /> 
      </td> 
@@ -1761,7 +1757,7 @@ Para obter informações adicionais, consulte esta [seção](../../installation/
  <tbody> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> Frequência de sondagem do banco de dados dos trabalhos a serem entregues. Esse valor indica a frequência de sondagem do banco de dados (em segundos). Para obter a lista de tarefas aguardando entrega, o MTA pesquisa o banco de dados regularmente. Quando não há trabalho aguardando, o período de polling é definido por esse valor. Caso contrário, se um trabalho tiver sido transferido para um servidor filho, essa duração da sondagem será automaticamente reduzida para um segundo, para que um novo trabalho possa ser processado novamente o mais rápido possível, ou seja, assim que um servidor filho estiver disponível novamente. Isso não significa que a consulta do banco de dados será feita a cada segundo até que um servidor derivado esteja disponível novamente. Na verdade, um acesso ao banco de dados só é feito quando pelo menos um servidor filho se torna disponível.<br /> </td> 
+   <td> Frequência de consulta ao banco de dados dos processos a serem entregues. Esse valor indica a frequência de sondagem do banco de dados (em segundos). Para obter a lista de tarefas aguardando entrega, o MTA pesquisa o banco de dados regularmente. Quando não há trabalho aguardando, o período de polling é definido por esse valor. Caso contrário, se um trabalho tiver sido transferido para um servidor filho, essa duração da sondagem será automaticamente reduzida para um segundo, para que um novo trabalho possa ser processado novamente o mais rápido possível, ou seja, assim que um servidor filho estiver disponível novamente. Isso não significa que a consulta do banco de dados será feita a cada segundo até que um servidor derivado esteja disponível novamente. Na verdade, um acesso ao banco de dados só é feito quando pelo menos um servidor filho se torna disponível.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
@@ -1779,19 +1775,19 @@ Para obter informações adicionais, consulte esta [seção](../../installation/
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> Número máximo de servidores derivados. Representa o número máximo de servidores em execução. É recomendável limitar esse número a um nível ideal compatível com os recursos de memória do servidor. Isso pode ser verificado durante um delivery. A memória usada não deve exceder um terço da memória física disponível, caso contrário, a memória virtual será usada. Consulte <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">processos filhos de MTA</a>.<br /> </td> 
+   <td> Número máximo de servidores filhos. Representa o número máximo de servidores em execução. É recomendável limitar esse número a um nível ideal compatível com os recursos de memória do servidor. Isso pode ser verificado durante um delivery. A memória usada não deve exceder um terço da memória física disponível, caso contrário, a memória virtual será usada. Consulte <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">processos filhos de MTA</a>.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> minSpareServers<br /> </td> 
-   <td> Número mínimo de servidores derivados. O MTA tenta manter pelo menos esse número de servidores em execução. Se houver menos, ele reiniciará novos servidores a cada segundo até atingir esse valor.<br /> </td> 
+   <td> Número mínimo de servidores filhos. O MTA tenta manter pelo menos esse número de servidores em execução. Se houver menos, ele reiniciará novos servidores a cada segundo até atingir esse valor.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
    <td> startSpareServers<br /> </td> 
-   <td> Número de servidores derivados na inicialização. O número de servidores derivados é monitorado dinamicamente; quando o MTA é iniciado, ele cria quantos servidores derivados forem indicados por esse valor. Normalmente, os servidores derivados não podem ser iniciados mais rapidamente do que um servidor por segundo para salvar os recursos do host. No entanto, quando o MTA é iniciado, essa limitação é anulada para que os servidores derivados estejam disponíveis o mais rápido possível.<br /> </td> 
+   <td> Número de servidores filhos na inicialização. O número de servidores derivados é monitorado dinamicamente; quando o MTA é iniciado, ele cria quantos servidores derivados forem indicados por esse valor. Normalmente, os servidores derivados não podem ser iniciados mais rapidamente do que um servidor por segundo para salvar os recursos do host. No entanto, quando o MTA é iniciado, essa limitação é anulada para que os servidores derivados estejam disponíveis o mais rápido possível.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1822,7 +1818,7 @@ Para obter informações adicionais, consulte [Otimização do envio de email](.
   </tr> 
   <tr> 
    <td> idleChildTimeoutSec<br /> </td> 
-   <td> Tempo limite até que os servidores derivados ociosos sejam interrompidos. Se um servidor derivado possuir um tempo de inatividade maior que esse parâmetro, ele se autodestruirá automaticamente para liberar recursos do host.<br /> </td> 
+   <td> Tempo-limite até que os servidores derivados ociosos sejam parados. Se um servidor derivado possuir um tempo de inatividade maior que esse parâmetro, ele se autodestruirá automaticamente para liberar recursos do host.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
@@ -1840,7 +1836,7 @@ Para obter informações adicionais, consulte [Otimização do envio de email](.
   </tr> 
   <tr> 
    <td> maxMsgPerChild<br /> </td> 
-   <td> Contagem máxima de mensagens por servidor derivado. Cada filho de MTA processa esse número de mensagens e é desativado. É importante especificar um número para que os vazamentos de memória ou recursos no MTA sejam inofensivos (normalmente alguns milhares). Mesmo se não houver vazamentos de memória conhecidos no código MTA, os mecanismos JavaScript e XSL incorporados não serão totalmente confiáveis.<br /> </td> 
+   <td> Contagem máxima de mensagens por servidor filho. Cada filho de MTA processa esse número de mensagens e é desativado. É importante especificar um número para que os vazamentos de memória ou recursos no MTA sejam inofensivos (normalmente alguns milhares). Mesmo se não houver vazamentos de memória conhecidos no código MTA, os mecanismos JavaScript e XSL incorporados não serão totalmente confiáveis.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 5000000<br /> </td> 
   </tr> 
@@ -1897,7 +1893,7 @@ No nó **mta > filho > smtp**, configure os seguintes parâmetros. Essa é a con
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
-   <td> Tempo limite de sessão ociosa. Esse parâmetro só é usado se a sessão for reutilizada para transmitir várias mensagens a um determinado domínio. Quando o MTA conclui a transmissão de mensagens, a sessão SMTP que ele usou não é fechada sistematicamente. Se uma mensagem estiver pronta para ser enviada para esse mesmo domínio, a mesma sessão SMTP será reutilizada e, por esse motivo, a sessão não é encerrada automaticamente. O parâmetro IdleSessionTimeout permite definir o tempo durante o qual uma sessão SMTP pode permanecer ativa aguardando outra mensagem. Após o término da duração, a sessão será encerrada automaticamente.<br /> </td> 
+   <td> Tempo-limite de sessão ociosa. Esse parâmetro só é usado se a sessão for reutilizada para transmitir várias mensagens a um determinado domínio. Quando o MTA conclui a transmissão de mensagens, a sessão SMTP que ele usou não é fechada sistematicamente. Se uma mensagem estiver pronta para ser enviada para esse mesmo domínio, a mesma sessão SMTP será reutilizada e, por esse motivo, a sessão não é encerrada automaticamente. O parâmetro IdleSessionTimeout permite definir o tempo durante o qual uma sessão SMTP pode permanecer ativa aguardando outra mensagem. Após o término da duração, a sessão será encerrada automaticamente.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -1909,7 +1905,7 @@ No nó **mta > filho > smtp**, configure os seguintes parâmetros. Essa é a con
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
-   <td> Número máximo de sessões SMTP por servidor derivado. Para entregar uma mensagem, o MTA inicializa uma conexão SMTP com o MTA do recipient. O número máximo de sessões SMTP simultâneas e ativas para um determinado servidor derivado é limitado por esse valor. Se você multiplicar esse valor por maxSpareServers, obterá o número máximo de mensagens que podem ser processadas simultaneamente por um determinado servidor derivado.<br /> </td> 
+   <td> Número máximo de sessões SMTP por servidor filho. Para entregar uma mensagem, o MTA inicializa uma conexão SMTP com o MTA do recipient. O número máximo de sessões SMTP simultâneas e ativas para um determinado servidor derivado é limitado por esse valor. Se você multiplicar esse valor por maxSpareServers, obterá o número máximo de mensagens que podem ser processadas simultaneamente por um determinado servidor derivado.<br /> </td> 
    <td> Longo<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 

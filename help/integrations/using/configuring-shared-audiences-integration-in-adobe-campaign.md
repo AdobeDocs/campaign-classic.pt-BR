@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Configuração da integração de públicos compartilhados no Adobe Campaign
-description: Saiba como configurar a integração de públicos compartilhada
+title: Configuração da integração de públicos-alvos compartilhados no Adobe Campaign
+description: Saiba como configurar a integração de públicos-alvos compartilhada
 feature: Audiences
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: integrations
@@ -10,12 +10,12 @@ topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '617'
 ht-degree: 100%
 
 ---
 
-# Configuração da integração de públicos compartilhados no Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
+# Configuração da integração de públicos-alvos compartilhados no Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
 
 
 Depois do envio dessa solicitação, a Adobe continuará a provisionar a integração e entrará em contato para fornecer detalhes e informações para você finalizar a configuração:
@@ -40,8 +40,8 @@ Primeiro, precisamos configurar ou verificar as contas externas no Adobe Campaig
 1. Clique no ícone **[!UICONTROL Explorer]**.
 1. Vá para **[!UICONTROL Administration > Platform > External accounts]**. As contas SFTP mencionadas devem ter sido configuradas pela Adobe e as informações necessárias devem ter sido comunicadas a você.
 
-   * **[!UICONTROL importSharedAudience]**: conta dedicada à importação de públicos.
-   * **[!UICONTROL exportSharedAudience]**: conta dedicada à exportação de públicos.
+   * **[!UICONTROL importSharedAudience]**: conta dedicada à importação de públicos-alvos.
+   * **[!UICONTROL exportSharedAudience]**: conta dedicada à exportação de públicos-alvos.
 
    ![](assets/aam_config_1.png)
 

@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 2%
+source-wordcount: '1329'
+ht-degree: 3%
 
 ---
 
@@ -126,7 +126,7 @@ A janela **[!UICONTROL Creation steps]** permite exibir e editar o script SQL us
    * **WdbcOptions_TableSpaceWork**: tabelas de trabalho sem esquema
    * **WdbcOptions_TableSpaceWorkIndex**: índice de tabelas de trabalho sem esquema
 
-* Para um banco de dados do Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas do Oracle, normalmente como membro do grupo **oinstall**.
+* Para um banco de dados Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas Oracle, normalmente como membro do grupo **oinstall**.
 * A opção **[!UICONTROL Set or change the administrator password]** permite inserir a senha vinculada ao operador do Adobe Campaign com direitos de administrador.
 
   Recomendamos definir uma senha de administrador de conta da Adobe Campaign para fins de segurança.
@@ -198,7 +198,7 @@ Você precisa definir as seguintes configurações:
   >[!NOTE]
   >
   >Verifique se o nome do esquema e o nome do usuário correspondem. A maneira recomendada de criar o banco de dados é por meio do cliente do console de campanha.
-  >Para um banco de dados do Oracle, não é necessário inserir o nome da conta.
+  >Para um banco de dados Oracle, não é necessário inserir o nome da conta.
 
 * Indique se o banco de dados deve ser Unicode ou não.
 
@@ -217,7 +217,7 @@ A janela **[!UICONTROL Creation steps]** permite exibir e editar o script SQL us
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
 * Para bancos de dados Oracle, Microsoft SQL Server ou PostgreSQL, o administrador pode definir os **parâmetros de armazenamento** a serem usados ao criar objetos de banco de dados.
-* Para um banco de dados do Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas do Oracle, normalmente como membro do grupo **oinstall**.
+* Para um banco de dados Oracle, o usuário do Adobe Campaign deve ter acesso às bibliotecas Oracle, normalmente como membro do grupo **oinstall**.
 * A opção **[!UICONTROL Set or change the administrator password]** permite inserir a senha vinculada ao operador do Adobe Campaign com direitos de administrador.
 
   Recomendamos definir uma senha de administrador de conta da Adobe Campaign para fins de segurança.

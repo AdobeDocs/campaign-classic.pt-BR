@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
 source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 13%
+source-wordcount: '252'
+ht-degree: 22%
 
 ---
 
@@ -33,7 +33,7 @@ Se um operador do Adobe Campaign perder a senha, você poderá alterá-la.
 
 >[!NOTE]
 >
->Esse procedimento só se aplica aos operadores conectados ao Campaign com autenticação nativa. Para a autenticação do Adobe IMS, consulte [esta documentação](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
+>Esse procedimento só se aplica aos operadores conectados ao Campaign com autenticação nativa. Para a autenticação do Adobe IMS, consulte [esta documentação](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 Para redefinir uma senha do Campaign, siga as etapas abaixo:
 

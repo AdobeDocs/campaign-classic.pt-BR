@@ -9,7 +9,7 @@ topic-tags: interaction-overview
 exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1109'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Abaixo está a definição dos elementos principais de interação.
 
-* **Ambiente**: conjunto que inclui um catálogo de oferta e ganchos (espaços de ofertas). Você precisa criar um ambiente por targeting dimension. Há dois tipos de ambientes:
+* **Ambiente**: conjunto que inclui um catálogo de oferta e ganchos (espaços de ofertas). Você precisa criar um ambiente por dimensão de direcionamento. Há dois tipos de ambientes:
 
    * **Ambiente de design**: o ambiente no qual as ofertas são criadas e/ou regras de tipologia são definidas (regras que determinarão as ofertas para apresentar ou não a uma pessoa alvo). A tabela de pessoas físicas que serão alvos das ofertas e a tabela para armazenar todas as propostas de oferta também são definidas aqui. O nó **[!UICONTROL Design environment]** contém subpastas de espaço de ofertas, filtros predefinidos e categorias de ofertas. Para cada **[!UICONTROL Design environment]** existe um **[!UICONTROL Live environment]** somente leitura correspondente, gerado a partir desse mesmo **[!UICONTROL Design environment]**.
    * **Ambiente dinâmico**: ambiente vinculado a um **[!UICONTROL Design environment]**. Ele contém ofertas somente leitura cujo conteúdo e elegibilidade foram aprovados por meio do **[!UICONTROL Design environment]**. Eles devem ser marcados para serem apresentados em um site ou inseridos em uma mensagem.
@@ -39,7 +39,7 @@ Abaixo está a definição dos elementos principais de interação.
 
   >[!NOTE]
   >
-  >As categorias derivadas herdam os temas identificados na categoria principal.
+  >As categorias filhas herdam os temas identificados na categoria pai.
 
 * **Regras de elegibilidade**: restrições aplicadas a um ambiente, categoria ou oferta sobre o período de validade, público-alvo e peso. Eles permitem garantir que uma oferta esteja alinhada com o contato alvo.
 
@@ -50,16 +50,16 @@ Abaixo está a definição dos elementos principais de interação.
   Nas ofertas, as regras de elegibilidade permitem limitar a validade de ofertas no tempo e determinar as pessoas a serem públicos-alvo.
 
 * **Arbitragem**: selecionar ofertas que serão exibidas em um ambiente (ofertas elegíveis). As classificações do princípio de arbitragem organiza as ofertas pela prioridade de acordo com os critérios definidos nas categorias, ofertas e ofertas de contexto.
-* **Contato**: um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a um targeting dimension. Há dois tipos de contatos:
+* **Contato**: um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a uma dimensão de direcionamento. Há dois tipos de contatos:
 
    * **[!UICONTROL Identified contact]** : um contato que foi identificado voluntariamente no canal. Em interações de saída, o contato é identificado automaticamente.
    * **[!UICONTROL Anonymous contact]** : um contato que não tenha assinado voluntariamente por meio do canal, mas pode ser identificado implicitamente por meio de um cookie. Essa terminologia é usada apenas para interações de entrada.
 
      >[!NOTE]
      >
-     >Contatos anônimos e não identificados são atribuídos ao targeting dimension do visitante.
+     >Contatos anônimos e não identificados são atribuídos à dimensão de direcionamento do visitante.
 
-* **Interação de saída**: chamada para o motor de interação de uma lista de contatos (usada para entrega de emails, mala direta etc.). As mesmas regras e processos são aplicados a cada contato. Esse tipo de interação geralmente é processado em modo de lote.
+* **Interação de saída**: chamada para o motor de interação de uma lista de contatos (usada para entrega de emails, correspondência direta etc.). As mesmas regras e processos são aplicados a cada contato. Esse tipo de interação geralmente é processado em modo de lote.
 * **Interação de entrada**: interação seguindo uma chamada recebida gerada pela ação de um contato no canal. Esse tipo de interação geralmente é processado no modo unitário.
 * **Modo de lote**: o modo de lote permite selecionar a melhor oferta para um conjunto de contatos. As regras de elegibilidade/priorização são aplicadas a todos os contatos do conjunto. Esse modo geralmente é usado para interações de saída.
 * **Modo Unitário**: um único contato é processado de cada vez. Esse modo geralmente é usado para interações de entrada e mensagens transacionais.

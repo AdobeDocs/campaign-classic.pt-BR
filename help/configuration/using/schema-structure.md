@@ -11,7 +11,7 @@ topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1519'
 ht-degree: 11%
 
 ---
@@ -310,7 +310,7 @@ O valor deve ser uma expressão compatível com a linguagem XPath. Para obter ma
   >
   >No console do cliente Adobe Campaign, navegue até a pasta **[!UICONTROL Administration > Counters]** do Explorer para gerenciar os contadores.
 
-Para vincular um valor padrão a um campo, você pode usar o `<default>` ou `<sqldefault>`   campo.
+Para vincular um valor padrão a um campo, é possível usar o campo `<default>` ou `<sqldefault>`.
 
 `<default>` : permite preencher previamente o campo com um valor padrão ao criar entidades. O valor não será um valor SQL padrão.
 

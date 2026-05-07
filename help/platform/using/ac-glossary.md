@@ -9,8 +9,8 @@ hide: true
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '6200'
-ht-degree: 100%
+source-wordcount: '6654'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Learn more about [ACS Connector](../../integrations/using/acs-connector-principl
 Uma atividade é um item da paleta, que é adicionado a um fluxo de trabalho para definir uma funcionalidade de execução. A atividade é um container que executa uma tarefa. Em um diagrama de fluxo de trabalho, uma determinada atividade pode produzir várias tarefas, principalmente quando houver ações recorrentes (periódicas) ou em loop.
 
 Saiba mais sobre atividades de fluxo de trabalho na [documentação do Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities
-.html?lang=pt-BR){target="_blank"}.
+.html){target="_blank"}.
 +++
 
 +++**Perfil ativo**
@@ -242,7 +242,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *Contexto: correspondência direta*
 
-A descrição de entrega indica um conjunto estruturado de elementos (documentos, lojas, cupons promocionais, etc.) criados pela empresa para uma campanha específica. Ela é usada no contexto de entregas de correspondência direta.
+Um delivery outline é um conjunto estruturado de elementos (documentos, lojas, cupons promocionais etc.) criado pela empresa e para uma campanha específica. Ela é usada no contexto de entregas de correspondência direta.
 
 Saiba mais sobre [Correspondência direta](../../delivery/using/about-direct-mail-channel.md).
 +++
@@ -265,7 +265,7 @@ Saiba mais sobre [Análise descritiva](../../reporting/using/about-descriptive-a
 
 *Contexto: marketing distribuído*
 
-O complemento Marketing Distribuído oferece aos operadores do Campaign um espaço de trabalho colaborativo para implementar campanhas entre entidades centrais (sedes, departamentos de marketing, etc.) e entidades locais (pontos de venda, agências regionais, etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **lista de pacotes de campanha**, em que modelos de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
+O complemento de Marketing distribuído oferece aos operadores do Campaign um espaço de trabalho colaborativo para implementar campanhas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **lista de pacotes de campanha**, em que modelos de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
 
 Saiba mais sobre Marketing distribuído na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=pt-BR){target="_blank"}.
 +++
@@ -279,7 +279,8 @@ Saiba mais sobre a [Distribuição de valores](../../platform/using/adobe-campai
 
 +++**Delegação de domínio**
 
-A configuração de subdomínios permite definir uma subseção do domínio (tecnicamente, uma “zona DNS”) para uso com o Adobe Campaign. A delegação de domínio permite que a Adobe controle e mantenha todos os aspectos do DNS necessários para entregar, renderizar e rastrear campanhas de email.
+A configuração de subdomínios permite definir uma subseção do domínio (tecnicamente, uma “zona DNS”) para uso com o Adobe Campaign.
+A delegação de domínio permite que a Adobe controle e mantenha todos os aspectos do DNS necessários para entregar, renderizar e rastrear campanhas de email.
 
 Saiba mais sobre [Delegação de domínio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR)
 +++
@@ -682,7 +683,7 @@ Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-man
 
 *Contexto: interação de campanha*
 
-Uma simulação de oferta permite que operadores testem a distribuição de ofertas em um escopo definido (data de entrega, segmento de público-alvo, número de ofertas, tema, etc.) antes de enviá-las. Pode ser usada para ajustar as prioridades da oferta e as regras de elegibilidade para maximizar a eficiência da oferta.
+Uma simulação de oferta permite que os operadores testem a distribuição de ofertas em um escopo definido (data de entrega, segmento de destino, número de ofertas, tema etc.) antes de realmente enviar as ofertas. Pode ser usada para ajustar as prioridades da oferta e as regras de elegibilidade para maximizar a eficiência da oferta.
 
 Saiba mais sobre [Simulações de oferta](../../interaction/using/about-offers-simulation.md).
 +++
@@ -851,7 +852,7 @@ Saiba mais sobre [Push](../../delivery/using/about-mobile-app-channel.md).
 
 +++**Destinatário**
 
-No Adobe Campaign, os destinatários são os perfis padrão direcionados para envio de entregas (emails, SMS, etc.) a clientes. Os dados do destinatário armazenados no banco de dados permitem filtrar o público-alvo e adicionar dados de personalização. Normalmente, são informações pessoais, de contato, demográficas e transacionais, mas podem ser qualquer tipo de informação que seja compatível com marketing e análise.
+No Adobe Campaign, os recipients são os perfis padrão direcionados para envio de deliveries (emails, SMS etc.) aos seus clientes. Os dados do destinatário armazenados no banco de dados permitem filtrar o público-alvo e adicionar dados de personalização. Normalmente, são informações pessoais, de contato, demográficas e transacionais, mas podem ser qualquer tipo de informação que seja compatível com marketing e análise.
 
 Saiba mais sobre [Destinatário](../../configuration/using/about-data-model.md).
 +++
@@ -889,7 +890,7 @@ Saiba mais sobre a [Extensão de esquema](../../configuration/using/extending-a-
 
 +++**Seed addresses**
 
-Seed addresses são usados para direcionar destinatários que não correspondem aos critérios de destino definidos. Dessa forma, os destinatários que estiverem fora do escopo de entrega podem recebê-lo, como qualquer outro destinatário do público-alvo receberia. Eles são adicionados ao público-alvo de uma mensagem para detectar qualquer uso fraudulento do seu banco de dados de destinatários ou para garantir a entrega.
+Seed addresses são usados para direcionar destinatários que não correspondem aos critérios de destino definidos. Dessa forma, os destinatários que estiverem fora do escopo de entrega podem recebê-lo, como qualquer outro destinatário target receberia. Eles são adicionados ao público-alvo de uma mensagem para detectar qualquer uso fraudulento do seu banco de dados de destinatários ou para garantir a entrega.
 
 Saiba mais sobre [Seed addresses](../../delivery/using/about-seed-addresses.md).
 +++
@@ -952,8 +953,8 @@ Saiba mais sobre o target mapping na [documentação do Campaign v8](https://exp
 
 As atividades de direcionamento são atividades de fluxo de trabalho específicas para direcionamento, manipulação de dados de população e atividades de filtragem. Essas atividades permitem construir um ou mais públicos-alvos definindo conjuntos e dividindo ou combinando-os usando operações de intersecção, união ou exclusão.
 
-Saiba mais sobre atividades de direcionamento na [documentação do Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities
-.html?lang=pt-BR){target="_blank"}.
+Saiba mais sobre as atividades de direcionamento na [documentação do Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities
+.html){target="_blank"}.
 +++
 
 +++**Dimensão de direcionamento**

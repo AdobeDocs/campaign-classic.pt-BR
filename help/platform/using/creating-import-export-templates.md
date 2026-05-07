@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Criação de templates de importação e exportação
-description: Saiba como criar templates de importação e exportação no Campaign
+title: Criação de modelos de importação e exportação
+description: Saiba como criar modelos de importação e exportação no Campaign
 feature: Templates
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ---
 
-# Criar templates de importação e exportação {#creating-import-export-templates}
+# Criar modelos de importação e exportação {#creating-import-export-templates}
 
 
 
@@ -25,7 +25,7 @@ Por padrão, três modelos de importação e um modelo de exportação estão pr
 
 * O modelo nativo **[!UICONTROL Import denylist]** já está configurado para importar uma lista de endereços de email que foram adicionados à lista de bloqueios.
 
-* Os templates **[!UICONTROL New text import]** e **[!UICONTROL New text export]** permitem configurar uma importação ou exportação do zero.
+* Os modelos **[!UICONTROL New text import]** e **[!UICONTROL New text export]** permitem configurar uma importação ou exportação do zero.
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
@@ -33,5 +33,5 @@ Por padrão, três modelos de importação e um modelo de exportação estão pr
 
 O processo para configurar um modelo é o mesmo apresentado nestas seções:
 
-* [Configurar um trabalho de importação](../../platform/using/executing-import-jobs.md)
-* [Configurar um trabalho de exportação](../../platform/using/executing-export-jobs.md)
+* [Configurar um processo de importação](../../platform/using/executing-import-jobs.md)
+* [Configurar um processo de exportação](../../platform/using/executing-export-jobs.md)

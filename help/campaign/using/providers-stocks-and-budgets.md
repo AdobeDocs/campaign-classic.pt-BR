@@ -8,8 +8,8 @@ hide: true
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 100%
+source-wordcount: '1924'
+ht-degree: 96%
 
 ---
 
@@ -62,7 +62,7 @@ Você deve associar modelos de serviço a cada provedor de serviços. Nesses mod
 >
 >Para obter mais informações, consulte [Definição da estrutura de custo](#defining-the-cost-structure).
 
-Uma categoria de custo é uma entidade que contém um conjunto de custos qualificados para um tipo de entrega (e-mail, correspondência direta, etc.) ou para uma tarefa. As categorias de custo são agrupadas nos modelos de serviços associados aos provedores de serviço. Cada provedor de serviço pode referenciar um ou mais modelos de serviço.
+Uma categoria de custo é uma entidade que contém um conjunto de custos qualificados para um tipo de delivery (email, correspondência direta, etc.) ou para uma tarefa. As categorias de custo são agrupadas nos modelos de serviços associados aos provedores de serviço. Cada provedor de serviço pode referenciar um ou mais modelos de serviço.
 
 Para criar um modelo de serviço e definir seu conteúdo, aplique as seguintes etapas:
 
@@ -159,7 +159,7 @@ Para fazer isso, clique na guia **[!UICONTROL Processes]** para configurar o env
 
 Os serviços estão associados a campanhas via entregas ou tarefas. Os provedores de serviço estão vinculados a modelos de entrega para oferecer seus serviços nas entregas criadas por meio desse modelo.
 
-Quando um serviço é selecionado, as categorias de custo correspondentes ao tipo de entrega (correspondência direta, email, etc.) são automaticamente indicadas na tabela central juntamente com as opções de processamento definidas.
+Quando um serviço é selecionado, as categorias de custo correspondentes ao tipo de delivery (mala direta, email, etc.) são automaticamente indicadas na tabela central juntamente com as opções de processamento que foram definidas.
 
 >[!NOTE]
 >

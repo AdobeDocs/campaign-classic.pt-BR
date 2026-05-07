@@ -9,8 +9,8 @@ topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2829'
-ht-degree: 0%
+source-wordcount: '2862'
+ht-degree: 1%
 
 ---
 
@@ -91,7 +91,7 @@ Na data e hora definidas no agendador do fluxo de trabalho (consulte [O agendado
 
 ### Listas para excluir a limpeza {#lists-to-delete-cleanup}
 
-A primeira tarefa executada pelo fluxo de trabalho **[!UICONTROL Database cleanup]** exclui todos os grupos com **deleteStatus != 0** atributo de **NmsGroup**. Os registros vinculados a esses grupos e que existem em outras tabelas também são excluídos.
+A primeira tarefa executada pelo fluxo de trabalho **[!UICONTROL Database cleanup]** exclui todos os grupos com o atributo **deleteStatus != 0** do **NmsGroup**. Os registros vinculados a esses grupos e que existem em outras tabelas também são excluídos.
 
 1. As listas a serem excluídas são recuperadas usando a seguinte consulta SQL:
 

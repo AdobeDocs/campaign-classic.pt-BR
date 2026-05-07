@@ -7,7 +7,7 @@ hide: true
 exl-id: 72b17b48-093a-4eb9-a848-3c1570e49b61
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '153'
 ht-degree: 100%
 
 ---
@@ -31,4 +31,4 @@ Para fazer isso:
 
      ![](assets/int_offer_per_cell1.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas em vários canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).

@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## Implantação de ambientes {#deploying-environments}
 
-Há dois ambientes para cada targeting dimension usada ao gerenciar ofertas:
+Há dois ambientes para cada dimensão de direcionamento usada ao gerenciar ofertas:
 
 * Um ambiente de design no qual o gerente de ofertas cuida da criação e categorização de ofertas, como editá-las e do início do processo de aprovação para que elas possam ser usadas. As regras para cada categoria, os espaços de oferta nos quais as ofertas podem ser apresentadas, e os filtros predefinidos usados para definir a elegibilidade de uma oferta também são definidos neste ambiente.
 

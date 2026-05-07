@@ -9,8 +9,8 @@ hide: true
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ Antes de seguir as etapas abaixo, verifique se você sabe o tipo de cupom que de
 
    **[!UICONTROL Anonymous coupons]** : Um cupom anônimo é idêntico para todos os destinatários. Confirme se Anônimo está selecionado no menu **Tipo de cupom** e clique em **Salvar** para gerar o cupom.
 
-   **[!UICONTROL Individual coupons]** : Um cupom individual pode ser personalizado ainda mais com códigos de cupom adicionais. Por exemplo, um cupom individual é criado para uma venda em uma loja de equipamentos esportivos. No entanto, a lista de destinatários é longa e não compartilham a mesma paixão por um único esporte. Você pode adicionar nomes de código para o cupom individual com base em um esporte (por exemplo, futebol, futebol americano, beisebol etc.) e enviar cada código para os destinatários aplicáveis.
+   **[!UICONTROL Individual coupons]** : Um cupom individual pode ser personalizado ainda mais com códigos de cupom adicionais. Por exemplo, um cupom individual é criado para uma venda em uma loja de equipamentos esportivos. No entanto, a lista de destinatários é longa e não compartilham a mesma paixão por um único esporte. Você pode adicionar nomes de código para o cupom individual com base em um esporte (por exemplo, futebol americano, beisebol etc.) e enviar cada código para os recipients aplicáveis.
 
    1. Ao escolher Indivíduo, Cupons abre como uma nova guia na parte inferior esquerda. Acesse a guia **[!UICONTROL Coupons]** e clique em **[!UICONTROL Add]**.
    1. Insira um código exclusivo para o cupom individual quando solicitado pela janela pop-up.
@@ -84,7 +84,7 @@ No exemplo abaixo, a entrega é criada a partir da Home page. Para obter instru�
    ![](assets/deliv_coup_04.png)
 
 1. Insira um nome em **[!UICONTROL Label]** e clique em **[!UICONTROL Continue]**.
-1. Clique em **[!UICONTROL To]** para adicionar destinatários. 
+1. Clique em **[!UICONTROL To]** para adicionar destinatários.
 1. Clique em **[!UICONTROL Add]** para escolher os destinatários da entrega Depois de selecionar seus destinatários, clique em **[!UICONTROL Ok]** para retornar para a entrega.
 
    ![](assets/deliv_coup_05.png)

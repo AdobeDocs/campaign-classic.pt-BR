@@ -7,8 +7,8 @@ hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 71%
+source-wordcount: '842'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ Obtenha suporte usando as perguntas frequentes, as práticas recomendadas, os re
 
 <table>
     <tr>
-        <td><img src="platform/using/assets/do-not-localize/icon-faq.svg" width="60px"><p><a href="#faq">Problemas comuns e melhores práticas</a></p></td>
+        <td><img src="platform/using/assets/do-not-localize/icon-faq.svg" width="60px"><p><a href="#faq">Problemas comuns e práticas recomendadas</a></p></td>
         <td><img src="platform/using/assets/do-not-localize/icon-control-panel.svg" width="60px"><p><a href="#control-panel">Painel de controle do Campaign</a></p></td>
         <td><img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px"><p><a href="#support">Solicitação de ajuda</a></p></td>
     </tr>
@@ -70,7 +70,7 @@ Obtenha suporte usando as perguntas frequentes, as práticas recomendadas, os re
         <li><a href="production/using/build-upgrade.md">Atualizar para a build mais recente</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Perguntas frequentes sobre atualização de build</a></li>
         <li><a href="delivery/using/about-delivery-monitoring.md">Monitorar uma entrega</a></li>
-        <li><a href="delivery/using/delivery-failures-quarantine.md">Entender o gerenciamento de quarentena</a></li>
+        <li><a href="delivery/using/delivery-failures-quarantine.md">Entender o gerenciamento de quarentenas</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Lista de verificação de segurança e privacidade</a></li>
         <li><a href="platform/using/privacy-management.md">Gestão do consentimento e da privacidade</a></li>
         <li><a href="platform/using/adobe-campaign-workspace.md#about-queries-in-campaign">Criar uma consulta</a></li>
@@ -131,7 +131,7 @@ O novo sistema de emissão de tíquetes foi iniciado pelo [Adobe Admin Console](
 
 ### Pergunte aos especialistas.
 
-Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){_blank}.
+Associe-se à Comunidade do Campaign Classic: procure respostas em perguntas existentes ou faça sua pergunta à comunidade. [Participe da conversa](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Acessar o Centro de download do Campaign
 

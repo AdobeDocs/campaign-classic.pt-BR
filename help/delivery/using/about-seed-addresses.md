@@ -21,7 +21,7 @@ Uma vez que a principal razão para utilizá-los é **sua proteção da lista de
 
 Além disso, os seed addresses permitem **pré-visualizar e testar a personalização e renderização de entregas** antes do envio, enviando provas (consulte [Usar seed addresses como prova](steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](steps-defining-the-target-population.md#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 O recurso de seed addresses tem os seguintes benefícios:
 
@@ -37,11 +37,11 @@ Esses seed addresses são adicionados ao target das entregas ao serem importados
 >
 >Um exemplo de como estender a tabela de seed addresses é apresentado nesta seção: [Caso de uso: seleção de seed addresses em critérios](use-case-selecting-seed-addresses-on-criteria.md).
 
-Para entregas de mala direta, os seed addresses são adicionados durante a extração e combinados no documento de saída.
+Para entregas de correspondência direta, os seed addresses são adicionados durante a extração e combinados no documento de saída.
 
 >[!IMPORTANT]
 >
->Para entregas de mala direta, o formato do arquivo de extração deve estar em conformidade com as seguintes limitações:
+>Para entregas de correspondência direta, o formato do arquivo de extração deve estar em conformidade com as seguintes limitações:
 >
 >* Não deve usar a opção **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 >* Se as coleções de elemento forem extraídas, esses campos têm um valor vazio para os seed addresses, a menos que a opção **[!UICONTROL Single row (expert user)]** esteja selecionada. Para obter mais informações, consulte [esta seção](../../platform/using/executing-export-jobs.md#step-7---data-formatting).

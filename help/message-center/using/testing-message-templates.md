@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '568'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 94%
 
 ---
 
@@ -38,7 +38,7 @@ Para criar seed addresses em uma mensagem transacional, siga as etapas abaixo:
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. Digite o identificador externo: esse campo opcional permite inserir uma chave de negócios (ID exclusiva, nome + email, etc.) que é comum a todos os aplicativos em seu site, usado para identificar seus perfis. Se esse campo também estiver presente no banco de dados de marketing do Adobe Campaign, você poderá reconciliar um evento com um perfil no banco de dados.
+1. Insira o identificador externo: esse campo opcional permite inserir uma chave de negócios (ID exclusiva, nome + email etc.) que é comum a todos os aplicativos em seu site, usado para identificar seus perfis. Se esse campo também estiver presente no banco de dados de marketing do Adobe Campaign, você poderá reconciliar um evento com um perfil no banco de dados.
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 

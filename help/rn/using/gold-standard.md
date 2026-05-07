@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 'Versões [!DNL Gold Standard] '
+title: Versões [!DNL Gold Standard]
 description: Notas de versão e Matriz de compatibilidade do Campaign Classic [!DNL Gold Standard]
 feature: Release Notes
 role: User
@@ -9,18 +9,18 @@ hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 100%
+source-wordcount: '2018'
+ht-degree: 98%
 
 ---
 
-# Versões [!DNL Gold Standard] {#gold-standard}
+# Versões [!DNL Gold Standard]{#gold-standard}
 
 
 
 Encontre nesta página as notas de versão e a matriz de compatibilidade para versões [!DNL Gold Standard].
 
-## Notas de versão [!DNL Gold Standard] 
+## Notas de versão [!DNL Gold Standard]
 
 
 ### Versão 12 do [!DNL Gold Standard]{#gs-12}
@@ -37,7 +37,7 @@ _27 de agosto de 2021_
 
 A build 9032@99a3894 inclui as seguintes correções:
 
-* O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados às formas com que ferramentas de terceiros (clientes de email, navegadores de internet etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
+* O recurso de assinatura de rastreamento foi aprimorado para evitar erros vinculados à forma como as ferramentas de terceiros (clientes de email, navegadores de Internet etc.) lidam com caracteres especiais. Os parâmetros de URL agora são codificados.
 * Correção de um problema com seletores de data que poderia resultar na exibição de uma mensagem de erro de bloqueador por parte de um console. (NEO-36345)
 
 ### Versão 11 do [!DNL Gold Standard]{#gs-11}
@@ -57,7 +57,7 @@ A compilação 9032@d030c36 inclui a seguinte correção:
 >
 > * Se você estiver se conectando ao Campaign com sua Adobe ID, por meio do Adobe Identity Management Service (IMS), a atualização é obrigatória para o servidor do Campaign e o console do cliente poderem se conectar ao Campaign depois de **30 de junho de 2021**. [Saiba mais](../../technotes/using/ims-updates.md)
 > * Esta versão inclui uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização agora é obrigatória para reforçar a segurança do ambiente.
-> * Se estiver usando a integração de acionadores da Experience Cloud por meio da autenticação OAuth, é necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/about-triggers.md#implement). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=pt) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md#step-optional) para a Adobe.
+> * Se estiver usando a integração de acionadores da Experience Cloud por meio da autenticação OAuth, é necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/about-triggers.md#implement). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md#step-optional) para a Adobe.
 >
 >Saiba mais na seção [[!DNL Gold Standard] ](../../rn/using/gold-standard.md)
 
@@ -84,9 +84,6 @@ O build 9032@d3b452f inclui os seguintes aprimoramentos e correções:
 * Após o [fim do suporte para o protocolo binário herdado APNs do iOS](https://developer.apple.com/news/?id=c88acm2b), todas as instâncias que usam esse protocolo serão atualizadas para o protocolo HTTP/2 após a atualização.
 
 * Correção de um problema de segurança para reforçar a proteção contra situações de SSRF (Server Side Request Forgery). (NEO-27777)
-
-
-
 
 * Correção de um problema que resultava em falha em fluxos de trabalho ao executar uma atividade de **Enriquecimento**. (NEO-17338)
 
@@ -121,10 +118,6 @@ As seguintes correções estão relacionadas ao mecanismo de segurança do link 
 * Correção de um problema que impedia o funcionamento do rastreamento de URLs usando fragmentos em parâmetros de personalização (tags de âncora com sinal de hashtag). (NEO-25774)
 * Correção de um problema com o serviço anti-phishing. (NEO-25283)
 * Correção de um problema de rastreamento ao usar fórmulas de rastreamento personalizadas específicas. (NEO-25277)
-
-
-
-
 
 ### Versão 8 do [!DNL Gold Standard]{#gs-8}
 
@@ -221,7 +214,7 @@ A build inicial 19.1.4 inclui as seguintes correções:
 * Correção de vários problemas com o agendamento de fluxos de trabalho. Os fluxos de trabalho eram agendados para serem executados uma vez por dia sem levar em consideração a configuração do programador. (NEO-16619, NEO-16426)
 
 
-## Matriz de compatibilidade [!DNL Gold Standard] {#compatibility-matrix-gs}
+## Matriz de compatibilidade [!DNL Gold Standard]{#compatibility-matrix-gs}
 
 Esta seção lista todos os sistemas e componentes compatíveis com builds 19.1 do **Adobe Campaign Classic[!DNL Gold Standard]**. Os produtos e as versões que não fazem parte dessa lista não são compatíveis com esta versão do Adobe Campaign.
 

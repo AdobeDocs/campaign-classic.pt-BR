@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '347'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ Para exportar dados do banco de dados do Adobe Campaign, é preciso criar um flu
 
 O Adobe Campaign fornece várias ferramentas de relatório:
 
-1. **Relatórios integrados**: o Adobe Campaign oferece um conjunto de relatórios sobre entregas, campanhas, atividades da plataforma, funcionalidades opcionais, etc. Estes relatórios estão disponíveis através das várias funcionalidades a que se referem. Eles podem ser adaptados para atender às necessidades específicas.
+1. **Relatórios internos**: o Adobe Campaign oferece um conjunto de relatórios sobre entregas, campanhas, atividades da plataforma, funcionalidades opcionais, etc. Estes relatórios estão disponíveis através das várias funcionalidades a que se referem. Eles podem ser adaptados para atender às necessidades específicas.
 
    Para obter mais informações, consulte [esta seção](../../reporting/using/about-campaign-built-in-reports.md).
 
@@ -34,7 +34,7 @@ O Adobe Campaign fornece várias ferramentas de relatório:
 
 1. **Relatórios personalizados**: o Adobe Campaign permite criar relatórios sobre os dados no banco de dados. Depois que eles tiverem sido criados, eles são acessíveis nos contextos apropriados.
 
-   Dependendo da complexidade das queries, cálculos e volumes, os dados analisados nesses relatórios podem ser coletados por meio de uma query e pré-agregados em uma lista (fluxo de trabalho do tipo &quot;gestão de dados&quot;) ou em um Cubo (usando Marketing Analytics). Ele será exibido na forma de uma tabela dinâmica ou uma lista de grupos.
+   Dependendo da complexidade das consultas, cálculos e volumes, os dados analisados nesses relatórios podem ser coletados por meio de uma consulta e pré-agregados em uma lista (fluxo de trabalho do tipo &quot;gestão de dados&quot;) ou em um Cubo (usando Marketing Analytics). Ele será exibido na forma de uma tabela dinâmica ou uma lista de grupos.
 
    Para obter mais informações, consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md).
 

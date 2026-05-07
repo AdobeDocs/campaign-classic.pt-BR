@@ -9,7 +9,7 @@ content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '288'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ Essa integração pode ser usada para criar um boletim informativo no Adobe Expe
 
 **No Adobe Experience Manager:**
 
-1. Na instância do autor do AEM, clique no logotipo do **Adobe Experience** no lado superior esquerdo da página e selecione **[!UICONTROL Sites]**.
+1. Na instância de criação do AEM, clique no logotipo do **Adobe Experience** no lado superior esquerdo da página e selecione **[!UICONTROL Sites]**.
 
    ![](assets/aem_uc_1.png)
 
@@ -45,11 +45,11 @@ Essa integração pode ser usada para criar um boletim informativo no Adobe Expe
 
    ![](assets/aem_uc_5.png)
 
-1. Na primeira lista suspensa, selecione **[!UICONTROL Publish to Adobe Campaign]** como modelo de workflow e clique em **[!UICONTROL Start workflow]**.
+1. Na primeira lista suspensa, selecione **[!UICONTROL Publish to Adobe Campaign]** como modelo de fluxo de trabalho e clique em **[!UICONTROL Start workflow]**.
 
    ![](assets/aem_uc_6.png)
 
-1. Em seguida, como a etapa anterior, inicie o workflow **[!UICONTROL Approve for Campaign]**.
+1. Em seguida, como a etapa anterior, inicie o fluxo de trabalho **[!UICONTROL Approve for Campaign]**.
 1. Um aviso de isenção de responsabilidade aparece na parte superior da página. Clique em **[!UICONTROL Complete]** para confirmar a revisão e clique em **[!UICONTROL Ok]**.
 
    ![](assets/aem_uc_7.png)

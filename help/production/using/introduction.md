@@ -9,7 +9,7 @@ topic-tags: updating-adobe-campaign
 exl-id: 3e39a0d2-ff7e-4233-82bb-2b360f696a33
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Esta seção apresenta o procedimento a ser aplicado para atualizar o Adobe Camp
 >[!NOTE]
 >
 >Para instâncias de serviços hospedados/gerenciados, você deve entrar em contato com o administrador do Adobe.\
->Para instâncias no local, você pode obter assistência dos consultores do Adobe.
+>Para instâncias no local, você pode obter assistência dos consultores da Adobe.
 
 A atualização deve ser aplicada a todos os servidores nos quais o Adobe Campaign está instalado.
 

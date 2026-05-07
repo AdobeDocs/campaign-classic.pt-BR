@@ -7,8 +7,8 @@ hide: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 100%
+source-wordcount: '716'
+ht-degree: 97%
 
 ---
 
@@ -130,7 +130,7 @@ Para fazer isso:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. É possível alternar os eixos da dimensão, excluí-los, adicionar novas medidas etc. As possíveis operações são detalhadas [nesta página](../../reporting/using/using-cubes-to-explore-data.md).
+1. É possível alternar os eixos da dimensão, excluí-los, adicionar novas medidas etc. As possíveis operações estão detalhadas em [esta página](../../reporting/using/using-cubes-to-explore-data.md).
 
    Para fazer isso, use os ícones apropriados:
 

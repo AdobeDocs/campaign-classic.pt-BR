@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 08628efb-9186-4b67-9431-310d4bc276b4
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '137'
 ht-degree: 6%
 
 ---
@@ -24,6 +24,6 @@ No caso de uma configuração em vários computadores, não é necessário usar 
 
 >[!NOTE]
 >
->As etapas de configuração da instalação principal só podem ser executadas pelo Adobe para implantações hospedadas pelo Adobe, para configurar os arquivos de configuração do servidor e da instância, por exemplo.
+>As etapas de configuração da instalação principal só podem ser executadas pela Adobe para implantações hospedadas pelo Adobe, para configurar os arquivos de configuração do servidor e da instância, por exemplo.
 >
 >Para saber mais sobre as principais diferenças entre implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou as [Diferenças de recursos para implantações locais e hospedadas](../../installation/using/capability-matrix.md).

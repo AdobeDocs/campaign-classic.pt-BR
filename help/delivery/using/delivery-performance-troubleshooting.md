@@ -7,8 +7,8 @@ role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
 source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 5%
+source-wordcount: '791'
+ht-degree: 19%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Orientações abrangentes sobre o desempenho do delivery e as práticas recomendadas estão documentadas na página [Práticas recomendadas de delivery do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices). Esse conteúdo se aplica aos usuários do Campaign Classic v7 e do Campaign v8.
+>Orientações abrangentes sobre o desempenho do delivery e as práticas recomendadas estão documentadas na página [Práticas recomendadas de delivery do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/start/delivery-best-practices). Esse conteúdo se aplica aos usuários do Campaign Classic v7 e do Campaign v8.
 >
 >Esta página documenta **configurações específicas do Campaign Classic v7** para otimização de desempenho e solução de problemas em implantações híbridas e locais.
 
-Para obter práticas recomendadas abrangentes sobre desempenho de entrega, otimização de plataforma, gerenciamento de quarentena, manutenção de banco de dados e recomendações de agendamento, consulte a [documentação de Práticas recomendadas de entrega do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}.
+Para obter práticas recomendadas abrangentes sobre desempenho de entrega, otimização de plataforma, gerenciamento de quarentena, manutenção de banco de dados e recomendações de agendamento, consulte a [documentação de Práticas recomendadas de entrega do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}.
 
 ## Otimização do desempenho {#performance-optimization}
 
@@ -36,7 +36,7 @@ Para **implantações híbridas/no local do Campaign Classic v7**, as seguintes 
 
 >[!NOTE]
 >
->Para usuários do Campaign v8 Managed Cloud Services, a otimização da infraestrutura e a configuração do MTA são gerenciadas pela Adobe. Consulte as [Práticas recomendadas de entrega do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} para obter as recomendações de desempenho aplicáveis à sua implantação.
+>Para usuários do Campaign v8 Managed Cloud Services, a otimização da infraestrutura e a configuração do MTA são gerenciadas pela Adobe. Consulte as [Práticas recomendadas de entrega do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} para obter as recomendações de desempenho aplicáveis à sua implantação.
 
 ### Manutenção do banco de dados {#database-maintenance}
 
@@ -62,7 +62,7 @@ As tarefas de manutenção regulares incluem:
 >
 >* Falhas de entrega comuns e soluções: [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
 >* Diagnóstico de entrega lenta: [Monitorar entregas na interface do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
->* Práticas recomendadas de entrega: [Práticas recomendadas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
+>* Práticas recomendadas de entrega: [Práticas recomendadas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
 >
 >Esta seção documenta a **solução de problemas específica do Campaign Classic v7** para implantações híbridas e locais.
 
@@ -105,7 +105,7 @@ Verifique o status do fluxo de trabalho em **[!UICONTROL Administration]** > **[
 ## Tópicos relacionados
 
 * [Noções básicas sobre falhas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentação do Campaign v8)
-* [Práticas recomendadas de entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentação do Campaign v8)
+* [Práticas recomendadas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentação do Campaign v8)
 * [Monitorar entregas na interface do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentação do Campaign v8)
 * [Manutenção do banco de dados](../../production/using/recommendations.md) (v7 híbrido/no local)
 * [Entregabilidade de email](../../installation/using/email-deliverability.md) (v7 híbrido/no local)

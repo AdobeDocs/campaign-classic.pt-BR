@@ -7,7 +7,7 @@ role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '733'
 ht-degree: 100%
 
 ---
@@ -85,7 +85,7 @@ As etapas de instalação são:
 
 1. **[!UICONTROL Close]** a janela de instalação.
 
-Quando esta etapa for concluída, você poderá configurar os seus aplicativos para Android e iOS. Consulte a [documentação](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=pt-BR){target="_blank"} do Campaign v8.
+Quando esta etapa estiver concluída, você poderá configurar seus aplicativos Android e iOS. Consulte a [documentação](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=pt-BR){target="_blank"} do Campaign v8.
 
 +++
 

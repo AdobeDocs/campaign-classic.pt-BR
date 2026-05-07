@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
 source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 71%
+source-wordcount: '347'
+ht-degree: 63%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 71%
 Use a opção Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao Oracle.
 
 1. Configurar o Oracle no [Linux](#oracle-linux) ou [Windows](#azure-windows)
-1. Configurar o Oracle [conta externa](#oracle-external) no Campaign
+1. Configurar a [conta externa](#oracle-external) do Oracle no Campaign
 
 ## Oracle no Linux {#oracle-linux}
 
@@ -71,9 +71,9 @@ A conexão com um banco de dados externo Oracle no FDA exige as seguintes config
 
 1. Instale o software cliente Oracle.
 
-1. Na pasta C:\Oracle, crie um arquivo **tnsnames.ora** contendo sua definição TNS.
+1. Na pasta C:Oracle, crie um arquivo **tnsnames.ora** contendo sua definição TNS.
 
-1. Adicione uma variável de ambiente TNS_ADMIN com C:\Oracle como valor e reinicie o computador.
+1. Adicione uma variável de ambiente TNS_ADMIN com C:Oracle como valor e reinicie a máquina.
 
 1. No Campaign Classic, você pode configurar a conta externa do [!DNL Oracle]. Para obter mais informações sobre como configurar sua conta externa, consulte [esta seção](#oracle-external).
 

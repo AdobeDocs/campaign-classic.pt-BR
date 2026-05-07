@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: b9a716f327b8fdd68c3bf36dbe864535308def30
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 28%
+source-wordcount: '294'
+ht-degree: 27%
 
 ---
 
@@ -21,11 +21,11 @@ Esta página lista novos recursos, melhorias e correções que vêm com a **vers
 
 [!BADGE Disponibilidade geral]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade geral"}
 
-_terça-feira, 16 de março de 2026_
+_16 de março de 2026_
 
 >[!CAUTION]
 >
-> A atualização do Console do cliente é obrigatória.
+> A atualização do Console do Cliente é obrigatória.
 
 ### Melhorias de segurança {#security-7-4-3}
 

@@ -9,7 +9,7 @@ topic-tags: additional-configurations
 exl-id: 7250b885-0606-466a-bfc2-6dd3cc5a012d
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '301'
 ht-degree: 14%
 
 ---
@@ -24,7 +24,7 @@ No Adobe Campaign, uma **zona de buffer de dados** foi introduzida no módulo de
 
 Ela só afeta a interação de entrada, seja por uma chamada (com ou sem dados de chamada) ou por uma atualização de status (updateStatus).
 
-Para evitar uma fila ao gravar propostas relacionadas a um destinatário, um novo processo gera uma **zona de buffer de dados** que permite que as propostas sejam **gravadas de forma assíncrona**. Essa zona de buffer de dados é lida e esvaziada periodicamente. O período padrão está no espaço de aproximadamente um segundo. A gravação da proposta é, portanto, agrupada.
+Para evitar uma fila ao gravar propostas relacionadas a um destinatário, um novo processo gera uma **zona de buffer de dados** que permite que as propostas sejam **gravadas de forma assíncrona**. Essa zona de buffer de dados é lida e esvaziada periodicamente. O período padrão está no espaço de aproximadamente um segundo.A redação da proposta é, portanto, agrupada.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ A zona de buffer de dados **configuração** pode ser feita no arquivo de config
 
 >[!CAUTION]
 >
->Algumas configurações só podem ser executadas por Adobe para implantações hospedadas por Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md).
+>Algumas configurações só podem ser executadas pela Adobe para implantações hospedadas pela Adobe. Por exemplo, para acessar os arquivos de configuração do servidor e da instância. Para saber mais sobre as diferentes implantações, consulte a seção [Modelos de hospedagem](../../installation/using/hosting-models.md) ou [esta página](../../installation/using/capability-matrix.md).
 >
 >Quaisquer alterações feitas na configuração exigem uma reinicialização do servidor Web (Apache:IIS) e dos processos do Adobe Campaign.\
 >Depois de configurar a zona de buffer de dados, verifique se uma configuração de hardware adaptada está disponível. (quantidade de memória presente).

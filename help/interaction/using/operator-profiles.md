@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Existem dois tipos de operadores que usam o Interaction: gerentes de oferta e gerentes de entrega. Cada um deles tem direitos específicos que só dão acesso a algumas partes da árvore e da plataforma.
 
-* **[!UICONTROL Offer manager]**: cria e mantém ofertas. Observe que se as ofertas forem usadas no workflow, o operador precisará estar no **[!UICONTROL Administrator]** ou no grupo de operadores **[!UICONTROL Offer managers]** para executar o workflow.
+* **[!UICONTROL Offer manager]**: cria e mantém ofertas. Observe que se as ofertas forem usadas no fluxo de trabalho, o operador precisará estar no **[!UICONTROL Administrator]** ou no grupo de operadores **[!UICONTROL Offer managers]** para executar o fluxo de trabalho.
 * **[!UICONTROL Delivery manager]** : aprova e usa ofertas
 
 As etapas para criar operadores específicos ao Interaction são idênticas às usadas para criar todos os outros operadores na plataforma. Para obter mais informações, consulte [esta seção](../../platform/using/access-management.md). Os direitos são configurados durante a criação do operador.
@@ -39,12 +39,12 @@ Os direitos atribuídos ao gerente de ofertas permitem que eles executem as segu
 * Configurar funções de administração (espaços e filtros predefinidos).
 * Criar e alterar categorias.
 * Criar ofertas.
-* Configurar a qualificação para a oferta.
+* Configurar a elegibilidade para a oferta.
 * Aprovar ofertas.
 
   >[!NOTE]
   >
-  >O gerente de ofertas só pode aprovar uma oferta em dois casos específicos. O primeiro se ninguém tiver sido especificado como revisor, e o segundo se o operador encarregado de criar templates (com o direito de atribuir revisores) especificou ele/ela como revisor no template de oferta em que a oferta foi baseada.
+  >O gerente de ofertas só pode aprovar uma oferta em dois casos específicos. O primeiro se ninguém tiver sido especificado como revisor, e o segundo se o operador encarregado de criar modelos (com o direito de atribuir revisores) especificou ele/ela como revisor no modelo de oferta em que a oferta foi baseada.
 
 ## Gerente de entrega {#delivery-manager}
 

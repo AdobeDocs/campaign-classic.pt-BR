@@ -9,8 +9,8 @@ topic-tags: schema-reference
 exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 2%
+source-wordcount: '147'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ value:==help
 
 `<enumeration>`
 
-## Derivados {#children-16}
+## Filhos {#children-16}
 
 `<help>`
 
@@ -48,7 +48,7 @@ Esse elemento permite definir os valores armazenados em uma enumeração.
 * **applicableIf (string)**: este atributo permite que você torne um valor de enumeração opcional. Ele recebe uma expressão XTK.
 * **desc (cadeia de caracteres)**: descrição do valor de enumeração.
 * **enabledIf (cadeia de caracteres)**: condição para ativar o valor de enumeração.
-* **img (string)**: imagem vinculada à enumeração no formulário &quot;namespace:image_name&quot;. A imagem deve ser importada para o servidor de aplicativos.
+* **img (cadeia de caracteres)**: imagem vinculada à enumeração no formulário &quot;namespace:image_name&quot;. A imagem deve ser importada para o servidor de aplicativos.
 * **rótulo (cadeia de caracteres)**: rótulo do valor de enumeração.
 * **nome (cadeia de caracteres)**: nome interno do valor de enumeração.
 * **valor (cadeia de caracteres)**: valor do valor de enumeração. O tipo de valor é definido com base no tipo de enumeração. Se a enumeração for do tipo character string, ela só poderá conter valores do tipo character string.

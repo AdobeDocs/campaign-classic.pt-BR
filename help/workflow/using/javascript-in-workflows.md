@@ -7,8 +7,8 @@ hide: true
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 100%
+source-wordcount: '1825'
+ht-degree: 99%
 
 ---
 
@@ -86,7 +86,7 @@ Use a operação `_update`. [Saiba mais](../../configuration/using/data-oriented
 Especifique essas informações como atributos XML:
 
 * O esquema da tabela a ser modificada
-* Os campos a serem atualizados na tabela 
+* Os campos a serem atualizados na tabela
 * O argumento principal necessário para identificar o registro a ser atualizado
 
 Exemplo:
@@ -168,9 +168,9 @@ Especifique estas informações:
 
 * O esquema da tabela a ser lida
 * A operação
-* As colunas a serem retornadas, em uma cláusula `select` 
-* As condições, em uma cláusula `where` 
-* Os critérios de filtragem, em uma cláusula `orderBy` 
+* As colunas a serem retornadas, em uma cláusula `select`
+* As condições, em uma cláusula `where`
+* Os critérios de filtragem, em uma cláusula `orderBy`
 
 É possível usar estas operações:
 
@@ -277,7 +277,7 @@ for each (var rcp in res:recipient)
 
 O loop inclui uma variável de destinatário local. Para cada destinatário que é retornado na coleção de destinatários, o email do destinatário é impresso. [Saiba mais](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR) sobre a função `logInfo`.
 
-#### Resultados de uma operação `getIfExists` 
+#### Resultados de uma operação `getIfExists`
 
 Cada correspondência é retornada como um elemento:
 
@@ -300,7 +300,7 @@ if (res.@id !=undefined)
     }
 ```
 
-#### Resultado de uma operação `get` 
+#### Resultado de uma operação `get`
 
 Uma correspondência é retornada como um elemento:
 
@@ -314,7 +314,7 @@ Se não houver correspondência, um erro será retornado.
 >
 >Caso saiba que há uma correspondência, use a operação `get`. Caso contrário, use a operação `getIfExists`. Ao utilizar esta prática recomendada, os erros revelarão problemas inesperados. Caso utilize a operação `get`, não use a instrução `try…catch`. O problema é tratado pelo processo de tratamento de erros do fluxo de trabalho.
 
-#### Resultado de uma operação `count` 
+#### Resultado de uma operação `count`
 
 Um elemento com o atributo `count` é retornado:
 
@@ -435,7 +435,7 @@ Siga estas etapas:
 
    Use o loop `for each` para recuperar os resultados.
 
-### Sintaxe do método `queryDef` com uma cláusula `select` 
+### Sintaxe do método `queryDef` com uma cláusula `select`
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -555,15 +555,15 @@ for each (var w in res.recipient)
 
 É possível inserir, atualizar e excluir registros. É possível usar o método `Write` em qualquer esquema no Adobe Campaign. Como esse método é estático, não é necessário criar um objeto. É possível usar estas operações:
 
-* A operação `update` 
+* A operação `update`
 * A operação `insertOrUpdate`, com o argumento `_key` para identificar o registro a ser atualizado
 
   Se não especificar a pasta **Destinatários**, e houver uma correspondência, o registro será atualizado em qualquer subpasta. Caso contrário, o registro será criado na pasta raiz de **Destinatários**.
 
-* A operação `delete` 
+* A operação `delete`
 
 >[!IMPORTANT]
-> Caso utilize o Adobe Campaign v8, recomendamos utilizar o mecanismo de preparo com as APIs de **Ingestão** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target="_blank"}.
+> Se estiver usando o Adobe Campaign v8, recomendamos o uso do mecanismo de preparo com as APIs de **Ingestão** e **Atualização/exclusão de dados** para o método `Write` em uma tabela Snowflake. [Leia mais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=pt-BR){target="_blank"}.
 
 #### Exemplo 1: inserir ou atualizar um registro
 
@@ -617,11 +617,11 @@ Este vídeo mostra um exemplo de uso de um método de API não estático em um f
 
 ### Documentação da API
 
-* [Exemplos de chamadas SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=pt-BR)
+* [Exemplos de chamadas do SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=pt-BR)
 * Métodos:
-   * [Create](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=pt-BR)
+   * [Criar](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=pt-BR)
    * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=pt-BR)
    * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=pt-BR)
    * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=pt-BR)
-   * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=pt-BR)
+   * [Gravar](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=pt-BR)
 * [função logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=pt-BR)

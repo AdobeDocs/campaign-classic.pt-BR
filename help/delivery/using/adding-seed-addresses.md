@@ -9,7 +9,7 @@ exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Há três modos de inserção possíveis:
 
 1. Importe modelos de endereços e adapte-os de acordo com suas necessidades.
 
-   Para fazer isso, clique no link **[!UICONTROL Import seed templates...]** e selecione a pasta que contém os templates de endereço. Para obter mais informações, consulte [esta seção](creating-seed-addresses.md#creating-seed-address-templates).
+   Para fazer isso, clique no link **[!UICONTROL Import seed templates...]** e selecione a pasta que contém os modelos de endereço. Para obter mais informações, consulte [esta seção](creating-seed-addresses.md#creating-seed-address-templates).
 
    Se necessário, depois da execução, clique duas vezes neles ou no botão **[!UICONTROL Detail...]** para adaptar o conteúdo de cada endereço.
 
@@ -41,7 +41,7 @@ Há três modos de inserção possíveis:
 
 >[!NOTE]
 >
->Essa opção é usada quando a tabela do destinatário usada não é a tabela padrão **nms:recipient** e você está usando a funcionalidade de Renderização da caixa de entrada disponibilizada com o módulo **[!UICONTROL Deliverability]** do Adobe Campaign.
+>Essa opção é usada quando a tabela do recipient usada não é a tabela padrão **nms:recipient** e você está usando a funcionalidade de Renderização da Caixa de Entrada fornecida com o módulo **[!UICONTROL Deliverability]** do Adobe Campaign.
 >
 >Para obter mais informações, consulte [Usar uma tabela de destinatário externa](using-an-external-recipient-table.md) e a documentação sobre [Renderização de caixa de entrada](inbox-rendering.md).
 

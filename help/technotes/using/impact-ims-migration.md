@@ -4,7 +4,7 @@ description: Saiba como ativar os impactos da interface de migração do Adobe I
 exl-id: 8b13fe4d-d8d3-43b3-bbe4-c8c5574f585a
 source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '463'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Depois de [migrar os operadores técnicos do Campaign para o Developer Console](
 
 Para finalizar a migração para o Adobe Identify Management System (IMS), você deve bloquear a criação de novos usuários nativos, o logon de usuários nativos e o acesso à API para operadores nativos. Seu ambiente é então protegido e padronizado.
 
-Como um Cloud Service gerenciado/usuário hospedado, entre em contato com a Adobe para ativar essa restrição e as atualizações associadas na interface do usuário do produto.
+Como um usuário gerenciado do Cloud Service/hospedado, entre em contato com a Adobe para ativar essa restrição e as atualizações associadas na interface do usuário do produto.
 
 Como usuário no local/híbrido, siga estas etapas:
 
@@ -66,7 +66,7 @@ Observe que alguns operadores têm permissão para se conectar ao Adobe Campaign
 </serverConf>
 ```
 
-Incluir na lista de permissões Se você precisar adicionar um operador ao arquivo, adicione um novo elemento `allowOperator` com o nome do operador. Por exemplo, se você deseja adicionar um novo operador com o nome `test`, atualize esta seção da seguinte maneira:
+Se você precisar adicionar um operador ao incluo na lista de permissões, adicione um novo elemento `allowOperator` com o nome do operador. Por exemplo, se você deseja adicionar um novo operador com o nome `test`, atualize esta seção da seguinte maneira:
 
 ```xml
 <serverConf>
@@ -94,7 +94,7 @@ Não é mais possível criar, editar, atualizar ou excluir operadores com autent
 
 Como consequência, essas ações foram desativadas no console do cliente.
 
-A administração dos operadores é centralizada no Adobe Admin Console e as seguintes tarefas agora são gerenciadas exclusivamente por meio desse console. Saiba como criar usuários e atribuir permissões na [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
+A administração dos operadores é centralizada no Adobe Admin Console e as seguintes tarefas agora são gerenciadas exclusivamente por meio desse console. Saiba como criar usuários e atribuir permissões na [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
 
 ### Opções indisponíveis {#unavailable-migration}
 
@@ -120,4 +120,4 @@ Após a migração, as seguintes tarefas não estarão mais disponíveis no cons
 >* [Migração de usuários finais para o IMS](migrate-users-to-ims.md)
 >* [Migração de operadores técnicos para o console do Adobe Developer](ims-migration.md)
 >* [notas de versão mais recentes do Adobe Campaign Classic v7](../../rn/using/latest-release.md)
->* [O que é o Sistema Adobe Identity Management (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"}
+>* [O que é o Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"}

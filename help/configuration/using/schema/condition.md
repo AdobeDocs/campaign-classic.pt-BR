@@ -28,7 +28,7 @@ condition:==EMPTY
 
 `<sysfilter>`
 
-## Derivados {#children-2}
+## Filhos {#children-2}
 
 nenhuma
 

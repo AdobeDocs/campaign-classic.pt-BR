@@ -6,7 +6,7 @@ feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '4005'
+source-wordcount: '4078'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Este documento descreve as principais recomendações ao projetar o modelo de da
 
 Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [esta seção](../../configuration/using/about-data-model.md).
 
-Leia [esta documentação](../../configuration/using/about-schema-reference.md) para começar a usar os esquemas do Campaign. Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign neste documento [1&rbrace;.](../../configuration/using/about-schema-edition.md)
+Leia [esta documentação](../../configuration/using/about-schema-reference.md) para começar a usar os esquemas do Campaign. Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign neste documento [1}.](../../configuration/using/about-schema-edition.md)
 
 ## Visão geral {#overview}
 
@@ -146,7 +146,7 @@ Quando uma tabela personalizada está sendo criada no Adobe Campaign com uma cha
 
 Por padrão, uma sequência personalizada terá valores que variam de +1.000 a +2,1BB. Tecnicamente, é possível obter uma gama completa de 4BB habilitando ids negativas. Isso deve ser usado com cuidado e uma ID será perdida ao passar de números negativos para positivos: o registro 0 normalmente é ignorado pelo Adobe Campaign em consultas SQL geradas.
 
-Para saber mais sobre a exaustão das sequências, assista a [este vídeo](https://helpx.adobe.com/br/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Para saber mais sobre a exaustão das sequências, assista a [este vídeo](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Índices {#indexes}
 
@@ -169,7 +169,7 @@ No entanto, lembre-se do seguinte:
 
 ### Exemplo
 
-O gerenciamento de índices pode se tornar muito complexo, portanto, é importante entender como eles funcionam. Para ilustrar essa complexidade, vamos ver um exemplo básico, como pesquisar destinatários filtrando o nome e o sobrenome. Para fazer isso:
+O gerenciamento de índices pode se tornar muito complexo, portanto, é importante entender como eles funcionam. Para ilustrar essa complexidade, vamos ver um exemplo básico, como pesquisar destinatários filtrando o nome e o sobrenome. Para isso:
 
 1. Navegue até a pasta que lista todos os destinatários no banco de dados.
 1. Clique com o botão direito no campo **[!UICONTROL First name]**.
@@ -223,7 +223,7 @@ Por padrão, o Adobe Campaign criará um link usando a chave primária da tabela
 
 Um índice será adicionado aos atributos usados em um link.
 
-A variável   os links criado por e modificado por último estão presentes em muitas tabelas. É possível desativar o índice usando o atributo noDbIndex no link, se essas informações não estiverem sendo usadas pela empresa.
+Os links criado por e modificado por último estão presentes em muitas tabelas. É possível desativar o índice usando o atributo noDbIndex no link, se essas informações não estiverem sendo usadas pela empresa.
 
 ### Cardinalidade {#cardinality}
 

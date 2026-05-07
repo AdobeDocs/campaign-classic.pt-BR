@@ -7,7 +7,7 @@ feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
 source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '869'
 ht-degree: 98%
 
 ---
@@ -130,7 +130,7 @@ Indique as condições de filtragem para respostas clicando no link **[!UICONTRO
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
-Inicie o fluxo de trabalho de segmentação. O query recupera 8 destinatários.
+Inicie o fluxo de trabalho de segmentação. A consulta recupera 8 destinatários.
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_5.png)
 
@@ -162,4 +162,4 @@ Edite a caixa de divisão para configurá-la:
 
 ## Padronização de dados {#standardizing-data}
 
-É possível configurar processos de padronização no Adobe Campaign para dados coletados usando aliases. Permite padronizar os dados armazenados no banco de dados: para fazer isso, defina aliases nas listas discriminadas que contêm as informações relevantes. Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+É possível configurar processos de padronização no Adobe Campaign para dados coletados usando aliases. Permite padronizar os dados armazenados no banco de dados: para fazer isso, defina aliases nas listas discriminadas que contêm as informações relevantes. Saiba mais sobre como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.

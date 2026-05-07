@@ -9,8 +9,8 @@ hide: true
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 78%
+source-wordcount: '2672'
+ht-degree: 76%
 
 ---
 
@@ -353,7 +353,7 @@ Essa opção permite que você defina uma pessoa encarregada da edição de cont
 
 #### Aprovação de conteúdo externo {#external-content-approval}
 
-Essa opção permite que você defina um operador externo responsável por aprovar a renderização da entrega, como consistência de comunicação da marca, taxas etc. Se a opção **[!UICONTROL External content approval]** estiver selecionada na janela de configurações de aprovação, várias etapas de aprovação serão adicionadas entre a aprovação do conteúdo e a entrega da notificação à pessoa responsável pelo conteúdo:
+Essa opção permite definir um operador externo encarregado de aprovar a renderização do delivery, como consistência de comunicação da marca, taxas etc. Quando a opção **[!UICONTROL External content approval]** é selecionada na janela de configurações de aprovação, várias etapas de aprovação são adicionadas entre a aprovação do conteúdo e o delivery da notificação à pessoa responsável pelo conteúdo:
 
 1. O gerente de conteúdo externo recebe um e-mail de notificação informando que o conteúdo foi aprovado e solicitando aprovação externa.
 1. O e-mail de notificação contém links para as provas enviadas, o que permite visualizar a renderização de entrega e um botão para aprovação ou rejeição do conteúdo da entrega.

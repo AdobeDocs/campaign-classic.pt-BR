@@ -7,8 +7,8 @@ hide: true
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1919'
-ht-degree: 100%
+source-wordcount: '1931'
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ Em **[!UICONTROL Union]** ou **[!UICONTROL Intersection]** digite atividades, é
 
 ### Reconciliação com dados adicionais {#reconciliation-with-additional-data}
 
-Durante as fases de reconciliação de dados (**[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc. você pode selecionar as colunas a serem usadas para reconciliação de dados das colunas adicionais. Para fazer isso, configure uma reconciliação em uma seleção de colunas e especifique o conjunto principal. Em seguida, selecione as colunas na coluna inferior da janela, como mostrado no exemplo a seguir:
+Durante as fases de reconciliação de dados (atividades **[!UICONTROL Union]**, **[!UICONTROL Intersection]** etc.), você pode selecionar as colunas a serem usadas para reconciliação de dados nas colunas adicionais. Para fazer isso, configure uma reconciliação em uma seleção de colunas e especifique o conjunto principal. Em seguida, selecione as colunas na coluna inferior da janela, como mostrado no exemplo a seguir:
 
 ![](assets/select-column-and-join.png)
 

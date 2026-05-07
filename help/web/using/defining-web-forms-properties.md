@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
 source-git-commit: 1d4990917fea54e67ed23cd0771295de03a4f01a
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1379'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Você pode configurar e personalizar totalmente os formulários web para atender aos seus requisitos. Os parâmetros devem ser inseridos na janela de propriedades.
 
-A janela de propriedades é acessível por meio do botão **[!UICONTROL Properties]** na barra de ferramentas do formulário web. Essa janela permite que você acesse um intervalo de configurações específicas ao formulário web. Algumas configurações podem resultar da configuração do template.
+A janela de propriedades é acessível por meio do botão **[!UICONTROL Properties]** na barra de ferramentas do formulário web. Essa janela permite que você acesse um intervalo de configurações específicas ao formulário web. Algumas configurações podem resultar da configuração do modelo.
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
@@ -28,7 +28,7 @@ Na guia **[!UICONTROL General]** da janela de propriedades, você pode modificar
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
-O template de formulário é escolhido durante a criação do formulário. Ele não pode ser alterado posteriormente. Para obter mais informações sobre como criar e gerenciar modelos de formulário, consulte [Uso de um modelo de formulário web](using-a-web-form-template.md).
+O modelo de formulário é escolhido durante a criação do formulário. Ele não pode ser alterado posteriormente. Para obter mais informações sobre como criar e gerenciar modelos de formulário, consulte [Uso de um modelo de formulário web](using-a-web-form-template.md).
 
 ## Armazenamento de dados do formulário {#form-data-storage}
 
@@ -42,7 +42,7 @@ Você pode configurar uma página de erro: essa página será exibida caso ocorr
 
 A página de erro é definida na guia correspondente da janela de propriedades do formulário.
 
-Por padrão, ela mostra as seguintes informações:
+Por padrão, ela exibe as seguintes informações:
 
 ![](assets/s_ncs_admin_survey_default_error_page.png)
 

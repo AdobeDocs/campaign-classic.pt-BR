@@ -26,6 +26,6 @@ Em seguida, você pode verificar a estrutura do schema gerado nas guias Preview 
 >
 >Se for necessário forçar a regeneração de todos os esquemas, por exemplo, para resolver determinados problemas de dependência nos links reversos, inicie o seguinte comando no servidor de aplicativos do Adobe Campaign:
 >
-> `nlserver config -postupgrade -instance:`&lt;nome_da_instância>` -force`
+> `nlserver config -postupgrade -instance:`&lt;instance_name>` -force`
 >
 >Em seguida, reinicie o servidor de aplicativos do Adobe Campaign e desconecte/reconecte ao console do cliente.

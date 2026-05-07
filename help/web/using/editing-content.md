@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: ht
-source-wordcount: '1229'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1250'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Para adicionar uma condição de visibilidade, selecione um bloco e insira a con
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-Essas condições adotam a sintaxe da expressão XTK (por exemplo, **ctx.recipient.@email != &quot;&quot;** or **ctx.recipient.@status==&quot;0&quot;**). Por padrão, todos os campos são visíveis.
+Essas condições adotam a sintaxe da expressão XTK (por exemplo **ctx.recipient.@email != &quot;&quot;** ou **ctx.recipient.@status=&quot;0&quot;**). Por padrão, todos os campos são visíveis.
 
 >[!NOTE]
 >

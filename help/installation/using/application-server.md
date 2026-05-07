@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 2%
+source-wordcount: '677'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +27,7 @@ O gerador dinâmico de páginas da Web usa a tecnologia JSP. Para isso, um mecan
 
 Primeiro, instale um JDK nos computadores em que deseja executar o servidor de aplicativos do Adobe Campaign (processo **nlserver web**) porque ele incorpora um contêiner de servlet, o Apache Tomcat, usado para gerar páginas dinâmicas da Web (relatórios, formulários Web etc.).
 
-O aplicativo foi aprovado para o Java Development Kit (JDK) desenvolvido pelo Oracle e para o **OpenJDK**.
+O aplicativo foi aprovado para o Java Development Kit (JDK) desenvolvido pela Oracle e para o **OpenJDK**.
 
 As versões compatíveis estão detalhadas na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md) do Campaign.
 

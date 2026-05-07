@@ -6,8 +6,8 @@ feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 32%
+source-wordcount: '323'
+ht-degree: 43%
 
 ---
 
@@ -41,7 +41,7 @@ Os diferentes modelos de hospedagem foram introduzidos [nesta seção](../../ins
 
 ## Federated Data Access{#fda}
 
-O Adobe Campaign fornece a opção **Federated Data Access** (FDA) para processar informações armazenadas em um ou mais bancos de dados externos: é possível acessá-los sem alterar a estrutura dos dados do Adobe Campaign. [Saiba mais](../../installation/using/about-fda.md)
+O Adobe Campaign oferece a opção **Federated Data Access** (FDA) para processar informações armazenadas em um ou mais bancos de dados externos: é possível acessá-los sem alterar a estrutura dos dados do Adobe Campaign. [Saiba mais](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
@@ -54,4 +54,4 @@ O Adobe Campaign fornece a opção **Federated Data Access** (FDA) para processa
 * [Notas de versão](../../rn/using/latest-release.md)
 * [Atualizações do Campaign Classic](../../rn/using/rn-overview.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
-* [Versões [!DNL Gold Standard] &#x200B;](../../rn/using/gold-standard.md)
+* [Versões [!DNL Gold Standard]](../../rn/using/gold-standard.md)

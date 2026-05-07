@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '1014'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -45,27 +45,27 @@ Ofertas excluídas no ambiente de design são desabilitadas em todas as instânc
 
 ![](assets/interaction_powerbooster_schema2.png)
 
-Um workflow é criado para cada ambiente e conta externa para a sincronização de propostas. A frequência de sincronização pode ser ajustada para cada ambiente e conta externa.
+Um fluxo de trabalho é criado para cada ambiente e conta externa para a sincronização de propostas. A frequência de sincronização pode ser ajustada para cada ambiente e conta externa.
 
 ## Limitações {#limitations}
 
 * Se usar a função de fallback de um ambiente anônimo para um ambiente identificado, esses dois ambientes deverão estar na mesma instância de execução.
 * A sincronização entre várias instâncias de execução não é executada em tempo real. As interações do mesmo contato devem ser enviadas para a mesma instância. A instância de controle deve ser dedicada ao canal de saída (sem tempo real).
-* O banco de dados de marketing não é sincronizado automaticamente. Os dados de marketing usados nos pesos e regras de qualificação devem ser duplicados em instâncias de execução. Esse processo não é fornecido como padrão, é necessário desenvolvê-lo durante o período de integração.
+* O banco de dados de marketing não é sincronizado automaticamente. Os dados de marketing usados nos pesos e regras de elegibilidade devem ser duplicados em instâncias de execução. Esse processo não é fornecido como padrão, é necessário desenvolvê-lo durante o período de integração.
 * A sincronização de propostas é realizada exclusivamente pela conexão FDA.
 * Se usar o Interaction e o Message Center na mesma instância, a sincronização ocorrerá por meio do protocolo FDA nos dois casos.
 
 ## Configuração de pacotes {#packages-configuration}
 
-Quaisquer extensões de schema diretamente vinculadas à **Interação** (ofertas, propostas, destinatários, etc.) devem ser implantadas nas instâncias de execução.
+Quaisquer extensões de esquema diretamente vinculadas à **Interação** (ofertas, propostas, recipients, etc.) deve ser implantado nas instâncias de execução.
 
 O pacote de Interação deve ser instalado em todas as instâncias (controle e execução). Dois pacotes adicionais estão disponíveis: um pacote a ser instalado nas instâncias de controle e outro para ser instalado em cada instância de execução.
 
 >[!NOTE]
 >
->Ao instalar o pacote, os campos do tipo **longo** da tabela **nms:proposition**, como ID da proposta, tornam-se campos de tipo **int64.** Esse tipo de dado é detalhado [nesta seção](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Ao instalar o pacote, os campos do tipo **long** da tabela **nms:proposition**, como a ID da proposta, tornam-se campos de tipo **int64**. Esse tipo de dado é detalhado [nesta seção](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-A duração da retenção de dados deve ser configurada em cada instância (por meio da janela **[!UICONTROL Data purge]** no assistente de implantação). Em instâncias de execução, esse período deve corresponder à profundidade histórica necessária para as regras de tipologia (período de deslizamento) e as regras de qualificação serem calculadas.
+A duração da retenção de dados deve ser configurada em cada instância (por meio da janela **[!UICONTROL Data purge]** no assistente de implantação). Em instâncias de execução, esse período deve corresponder à profundidade histórica necessária para as regras de tipologia (período de deslizamento) e as regras de elegibilidade serem calculadas.
 
 Nas instâncias de controle:
 
@@ -99,9 +99,9 @@ Nas instâncias de controle:
 
      >[!NOTE]
      >
-     >Se encontrar um erro, poderá consultar os workflows de sincronização e oferecer notificações. Eles podem ser encontrados nos workflows técnicos do aplicativo.
+     >Se encontrar um erro, poderá consultar os fluxos de trabalho de sincronização e oferecer notificações. Eles podem ser encontrados nos fluxos de trabalho técnicos do aplicativo.
 
-Se, por motivos de otimização, apenas parte do banco de dados de marketing for duplicado nas instâncias de execução, é possível especificar um schema restrito vinculado ao ambiente para permitir que os usuários usem apenas dados que estejam disponíveis nas instâncias de execução. É possível criar uma oferta usando dados que não estão disponíveis em instâncias de execução. Para fazer isso, é necessário desativar a regra nos outros canais limitando essa regra no canal de saída (campo **[!UICONTROL Taken into account if]**).
+Se, por motivos de otimização, apenas parte do banco de dados de marketing for duplicado nas instâncias de execução, é possível especificar um esquema restrito vinculado ao ambiente para permitir que os usuários usem apenas dados que estejam disponíveis nas instâncias de execução. É possível criar uma oferta usando dados que não estão disponíveis em instâncias de execução. Para fazer isso, é necessário desativar a regra nos outros canais limitando essa regra no canal de saída (campo **[!UICONTROL Taken into account if]**).
 
 ![](assets/ita_filtering.png)
 
@@ -114,8 +114,8 @@ Aqui está uma lista de opções de manutenção disponíveis na instância de c
 >Essas opções só devem ser usadas para casos de manutenção específicos.
 
 * **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: última data em que um ambiente foi sincronizado em uma determinada instância.
-* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: última data em que as propostas de um determinado schema foram sincronizadas de uma instância para outra.
-* **`NmsInteraction_MapWorkflowId`**: uma opção contendo a lista de todos os workflows de sincronização gerados.
+* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: última data em que as propostas de um determinado esquema foram sincronizadas de uma instância para outra.
+* **`NmsInteraction_MapWorkflowId`**: uma opção contendo a lista de todos os fluxos de trabalho de sincronização gerados.
 
 A seguinte opção está disponível nas instâncias de execução:
 
@@ -170,7 +170,7 @@ ALTER TABLE nmspropositionrcp
 
 A edição do tamanho de um tipo **Number** não resulta na alteração dos valores ou do índice. Portanto, é imediato.
 
-A query a ser executada é a seguinte:
+A consulta a ser executada é a seguinte:
 
 ```
 ALTER TABLE nmspropositionrcp MODIFY (

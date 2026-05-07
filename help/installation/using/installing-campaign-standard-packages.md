@@ -7,8 +7,8 @@ badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://exp
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 10%
+source-wordcount: '1381'
+ht-degree: 14%
 
 ---
 
@@ -71,7 +71,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Gestão dos Recursos de Marketing (MRM)<br /> </td> 
-   <td> Controla ações de marketing em um modo colaborativo fornecendo gerenciamento e rastreamento das tarefas, orçamentos e recursos de marketing. <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/automation/mrm/about-marketing-resource-management" target="_blank">Saiba Mais</a> <br /> </td> 
+   <td> Controla ações de marketing em um modo colaborativo fornecendo gerenciamento e rastreamento das tarefas, orçamentos e recursos de marketing. <a href="https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=pt-BR" target="_blank">Saiba Mais</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -159,7 +159,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Acesso a dados externos (Federated Data Access)<br /> </td> 
-   <td> Fornece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessá-los sem alterar a estrutura dos dados do Adobe Campaign.  Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=pt-BR" target="_blank">Saiba Mais</a> <br /> </td> 
+   <td> Fornece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessá-los sem alterar a estrutura dos dados do Adobe Campaign.  Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Saiba Mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
   </tr> 
   <tr> 
@@ -174,7 +174,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Gerenciamento de Cupom<br /> </td> 
-   <td> Cria um conjunto de cupons para adicionar às próximas ofertas de marketing. Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=pt-BR" target="_blank">Saiba Mais</a> <br /> </td> 
+   <td> Cria um conjunto de cupons para adicionar às próximas ofertas de marketing. Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Saiba Mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -242,7 +242,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
 
 ### Pacote do Centro de mensagens {#message-center-package}
 
-Você deve instalar os canais de entrega (Email, Canal móvel, Canal de aplicativo móvel, LINE etc.) antes de instalar Mensagens transacionais (Pacote do centro de mensagens). Se você tiver iniciado um projeto do Centro de mensagens somente de email e precisar adicionar um novo canal posteriormente, siga estas etapas:
+Você deve instalar canais de entrega (Email, Canal móvel, canal de aplicativo móvel, LINE etc.) antes de instalar as mensagens transacionais (pacote do centro de mensagens). Se você tiver iniciado um projeto do Centro de mensagens somente de email e precisar adicionar um novo canal posteriormente, siga estas etapas:
 
 1. Instale o novo canal, por exemplo, o **Canal móvel**, usando o assistente de importação de pacote ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importe o arquivo ( **[!UICONTROL Tools > Advanced > Import package > File]**) e selecione:

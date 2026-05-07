@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: e37cf5d4-382b-4156-81f3-c5e94a51db70
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 68%
+source-wordcount: '69'
+ht-degree: 76%
 
 ---
 
@@ -19,6 +19,6 @@ ht-degree: 68%
 
 
 
-O Adobe Campaign usa as codificações de Oracle padrão.
+O Adobe Campaign usa as codificações padrão do Oracle.
 
 Se você usar outros diferentes, poderá ocorrer uma incompatibilidade. Para obter mais informações, consulte [esta seção](../../installation/using/database.md#oracle).

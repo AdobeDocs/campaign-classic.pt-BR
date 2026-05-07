@@ -6,8 +6,8 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Apps, Reporting, Monitoring
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
-workflow-type: ht
-source-wordcount: '410'
+workflow-type: tm+mt
+source-wordcount: '411'
 ht-degree: 100%
 
 ---
@@ -33,9 +33,9 @@ As principais melhorias apresentadas nessa versão são as seguintes:
 
   Os principais indicadores são os seguintes:
 
-   * **Conversion rate**: número de pessoas que exibiram todas as etapas de um caminho de navegação.
+   * **Taxa de conversão**: número de pessoas que exibiram todas as etapas de um caminho de navegação.
    * **Bounce rate**: número de pessoas que exibiram apenas a primeira etapa
-   * **Conversion tunnel**: taxa de perda entre cada etapa.
+   * **Funil de conversão**: taxa de perda entre cada etapa.
 
   Além disso, um gráfico de tipo **Setor** mostra a população de acordo com sua origem.
 

@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ---
 
-# Criar trabalhos de importação e exportação {#creating-import-export-jobs}
+# Criar processos de importação e exportação {#creating-import-export-jobs}
 
 
 
@@ -23,7 +23,7 @@ Após a configuração dos modelos, as operações de importação e exportaçã
 
 * Na seção **[!UICONTROL Profiles and targets]** do espaço de trabalho do Adobe Campaign, clique no link **[!UICONTROL Jobs]**: isso permitirá o acesso à lista de importações e exportações existentes.
 
-  Clique no botão **[!UICONTROL Create]** e selecione o tipo de trabalho que deseja executar.
+  Clique no botão **[!UICONTROL Create]** e selecione o tipo de processo que deseja executar.
 
   ![](assets/s_ncs_user_import_from_home.png)
 
@@ -36,7 +36,7 @@ Após a configuração dos modelos, as operações de importação e exportaçã
   ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 
 
-Todos estes são assistentes de importação ou exportação de dados abertos. Eles estão detalhados nestas seções:
+Todos estes são assistentes de importação ou exportação de dados abertos. Elas estão detalhados nestas seções:
 
-* [Configurar um trabalho de importação](../../platform/using/executing-import-jobs.md)
-* [Configurar um trabalho de exportação](../../platform/using/executing-export-jobs.md)
+* [Configurar um processo de importação](../../platform/using/executing-import-jobs.md)
+* [Configurar um processo de exportação](../../platform/using/executing-export-jobs.md)

@@ -9,8 +9,8 @@ hide: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 100%
+source-wordcount: '1047'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Por exemplo, o campo de personalização com a sintaxe **&lt;%= recipient.LastNa
 
 Os campos de personalização podem vir de dois tipos de fonte de dados, de acordo com o modo de entrega selecionado:
 
-* O banco de dados do Adobe Campaign é a fonte de dados. Este é o caso mais comum, com, por exemplo, &#39;campos de personalização de destinatário&#39;. Esses são todos os campos definidos na tabela de destinatários, sejam os campos padrão (normalmente: sobrenome, nome, endereço, cidade, data de nascimento, etc.) ou campos definidos pelo usuário.
+* O banco de dados do Adobe Campaign é a fonte de dados. Este é o caso mais comum, com, por exemplo, &#39;campos de personalização de destinatário&#39;. Esses são todos os campos definidos na tabela de recipients, sejam os campos padrão (normalmente: sobrenome, nome, endereço, cidade, data de nascimento etc.) ou campos definidos pelo usuário.
 * Um arquivo externo é a fonte de dados. Esses são todos os campos definidos nas colunas do arquivo apresentados como entrada durante uma entrega usando os dados encontrados em um arquivo externo.
 
 >[!NOTE]
@@ -141,6 +141,6 @@ Ao adicionar o esquema do objeto, selecione os campos que deseja adicionar ao co
 
 Saiba como adicionar um campo de personalização à linha de assunto e ao conteúdo de uma entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/31843?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

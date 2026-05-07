@@ -8,7 +8,7 @@ role: User
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '363'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ No exemplo abaixo, o target da entrega foi dividido em dois grupos, cada um repr
 
 ![](assets/a-b-testing-schema.png)
 
-Com o Campaign Classic, o teste A/B é implementado por meio de workflows, em que você especifica a população a ser direcionada, bem como os grupos que receberão cada variante (consulte [Configurar um teste A/B](configuring-a-b-testing.md)).
+Com o Campaign Classic, o teste A/B é implementado por meio de fluxos de trabalho, em que você especifica a população a ser direcionada, bem como os grupos que receberão cada variante (consulte [Configurar um teste A/B](configuring-a-b-testing.md)).
 
 As principais etapas são:
 
@@ -38,4 +38,4 @@ As principais etapas são:
 
 >[!NOTE]
 >
->Os workflows também permitem que você automatize seus processos identificando automaticamente a variante da entrega que teve melhor desempenho e, em seguida, enviando-a à população restante. Para saber mais, consulte este [caso de uso](a-b-testing-use-case.md) dedicado.
+>Os fluxos de trabalho também permitem que você automatize seus processos identificando automaticamente a variante da entrega que teve melhor desempenho e, em seguida, enviando-a à população restante. Para saber mais, consulte este [caso de uso](a-b-testing-use-case.md) dedicado.

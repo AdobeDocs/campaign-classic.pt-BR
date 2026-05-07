@@ -6,8 +6,8 @@ feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
-workflow-type: ht
-source-wordcount: '852'
+workflow-type: tm+mt
+source-wordcount: '857'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Para otimizar a criação, o uso e a durabilidade de um relatório, é preciso o
    * Adicionar indicadores a um relatório existente. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visualização dos dados no banco de dados. Saiba mais [nesta seção](../../reporting/using/about-descriptive-analysis.md)
    * Criação de novo relatório da entrega. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Exportar dados do banco de dados do Adobe Campaign (por meio de um workflow, consulte [esta seção](../../workflow/using/about-workflows.md)
+   * Exportar dados do banco de dados do Adobe Campaign (por meio de um fluxo de trabalho, consulte [esta seção](../../workflow/using/about-workflows.md)
    * Crie uma tabela dinâmica. Saiba mais [nesta seção](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Explore dados agregados. Saiba mais [nesta seção](../../reporting/using/ac-cubes.md)
    * Use um assistente para analisar dados. Saiba mais [nesta seção](../../reporting/using/about-descriptive-analysis.md)
@@ -59,7 +59,7 @@ Para otimizar a criação, o uso e a durabilidade de um relatório, é preciso o
 
    Você também precisa saber a natureza desses dados (simples, resultante de um cálculo, significativo, etc.), seu local (no Adobe Campaign, em um sistema de terceiros), sua frequência de atualização para definir o cálculo de periodicidade (diário, semanal, em tempo real), bem como seu volume.
 
-   Os problemas vinculados aos volumes de dados e atualizações precisam ser pesquisados cuidadosamente para evitar problemas de exibição de relatórios, especialmente em termos de tempo. Portanto, recomendamos a criação de agregados para pré-calcular alguns dados fora do relatório. As tabelas com os logs da entrega e de rastreamento podem incluir milhões de registros: isso significa que os dados precisam ser agregados por meio de um workflow para ser usado em um relatório.
+   Os problemas vinculados aos volumes de dados e atualizações precisam ser pesquisados cuidadosamente para evitar problemas de exibição de relatórios, especialmente em termos de tempo. Portanto, recomendamos a criação de agregados para pré-calcular alguns dados fora do relatório. As tabelas com os logs da entrega e de rastreamento podem incluir milhões de registros: isso significa que os dados precisam ser agregados por meio de um fluxo de trabalho para ser usado em um relatório.
 
 ## Otimizar o design do relatório{#optimizing-report-creation}
 
@@ -75,13 +75,13 @@ Especificamente:
 
 * Ao usar o módulo Marketing Analytics, os dados de relatórios não devem exceder 10 milhões de linhas.
 
-Também recomendamos calcular agregados à noite e usar esses dados agregados diretamente nos relatórios. Esses agregados devem ser criados por meio de workflows dedicados de Gestão de Dados (queries SQL).
+Também recomendamos calcular agregados à noite e usar esses dados agregados diretamente nos relatórios. Esses agregados devem ser criados por meio de fluxos de trabalho dedicados de Gestão de Dados (queries SQL).
 
 Você também pode calcular relatórios durante a noite e criar um histórico automaticamente que possa ser visualizado a qualquer momento, sem sobrecarregar o banco de dados.
 
 ### Consultas {#queries}
 
-Recomendamos usar queries SQL sempre que possível e evitar o pós-processamento JavaScript. Se necessário, use uma atividade de script em um workflow e exclua os dados usados para o cálculo. Você também pode usar dados arquivados para acelerar o tempo de processamento.
+Recomendamos usar queries SQL sempre que possível e evitar o pós-processamento JavaScript. Se necessário, use uma atividade de script em um fluxo de trabalho e exclua os dados usados para o cálculo. Você também pode usar dados arquivados para acelerar o tempo de processamento.
 
 Nesse caso, a seguinte sintaxe deve ser usada:
 

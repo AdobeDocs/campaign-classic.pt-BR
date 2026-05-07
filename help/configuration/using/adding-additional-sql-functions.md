@@ -7,7 +7,7 @@ role: Developer
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ As funções a serem adicionadas podem ser encontradas no arquivo **&quot;pacote
 
 Se quiser adicionar funções a vários grupos diferentes, você pode fazer com que vários elementos `<group>` sejam rastreados na mesma lista.
 
-Finalmente, um elemento `<group>` pode conter a definição de uma ou várias funções, que é a finalidade do arquivo de pacote. O `<function>`   O elemento é detalhado no parágrafo a seguir.
+Finalmente, um elemento `<group>` pode conter a definição de uma ou várias funções, que é a finalidade do arquivo de pacote. O elemento `<function>` é detalhado no parágrafo a seguir.
 
 ## Descritor de função &lt;function>&lt;/function> {#function-descriptor--function-}
 
@@ -122,7 +122,7 @@ O campo **@name** faz referência ao nome da função, e &quot;args&quot; é a l
 * Finalmente, o elemento **providerPart** fornece a implementação da função.
 
    * O atributo **provider** é obrigatório e especifica os sistemas de banco de dados para os quais a implementação é fornecida. Como mostrado no exemplo, quando as sintaxes de expressão ou as funções subjacentes diferem, implementações alternativas podem ser fornecidas de acordo com o banco de dados.
-   * O atributo **@body** contém a implementação da função. Observação: esta implementação deve ser uma expressão em linguagem de banco de dados (não um bloco de código). Dependendo dos bancos de dados, as expressões podem ser subconsultas (&quot;(selecione a coluna da tabela onde...)&quot;) que retornam apenas um valor único. Por exemplo, esse é o caso no Oracle (a consulta deve ser gravada entre parênteses).
+   * O atributo **@body** contém a implementação da função. Observação: esta implementação deve ser uma expressão em linguagem de banco de dados (não um bloco de código). Dependendo dos bancos de dados, as expressões podem ser subconsultas (&quot;(selecione a coluna da tabela onde...)&quot;) retornando apenas um valor único. Por exemplo, esse é o caso no Oracle (a consulta deve ser gravada entre parênteses).
 
   >[!NOTE]
   >

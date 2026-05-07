@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '617'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Em seguida, você pode usar comandos ou códigos na guia **[!UICONTROL Script]**
 
 Nesse caso de uso, criaremos um fluxo de trabalho para criptografar e exportar dados usando uma chave instalada no Painel de controle.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#video)
+![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](#video)
 
 As etapas para executar esse caso de uso são as seguintes:
 
@@ -52,7 +52,7 @@ As etapas para executar esse caso de uso são as seguintes:
 
    ![](assets/gpg-workflow-encrypt.png)
 
-   * Atividade **[!UICONTROL Query]**: neste exemplo, queremos executar um query para direcionar os dados do banco de dados que queremos exportar.
+   * Atividade **[!UICONTROL Query]**: neste exemplo, queremos executar uma consulta para direcionar os dados do banco de dados que queremos exportar.
    * Atividade **[!UICONTROL Data extraction (file)]**: extrair os dados em um arquivo.
    * Atividade **[!UICONTROL JavaScript code]**: criptografar os dados que serão extraídos.
    * Atividade **[!UICONTROL File transfer]**: enviar os dados para uma fonte externa (neste exemplo, um servidor SFTP).
@@ -85,12 +85,12 @@ As etapas para executar esse caso de uso são as seguintes:
 
    ![](assets/gpg-file-transfer.png)
 
-1. Agora você pode executar o fluxo de trabalho. Após a execução, o direcionamento de dados pelo query será exportado para o servidor SFTP em um arquivo .gpg criptografado.
+1. Agora você pode executar o fluxo de trabalho. Após a execução, o direcionamento de dados pela consulta será exportado para o servidor SFTP em um arquivo .gpg criptografado.
 
 ## Tutorial em vídeo {#video}
 
 Este vídeo mostra como usar uma chave GPG para criptografar dados e também está disponível em
 
->[!VIDEO](https://video.tv.adobe.com/v/41332?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

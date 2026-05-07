@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 8e20391d-3628-4d0c-b413-c34e046ae810
 source-git-commit: bf45c8bcdd41e614f9be09bc0fd6385707159841
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ A [matriz de compatibilidade do Adobe Campaign](compatibility-matrix.md) foi atu
 
   Enquanto isso, para garantir a continuidade do serviço, o Campaign v7.4 inclui:
 
-   * um novo SDK 1.0.27 do Campaign para iOS, compatível com o iOS 16 e 17 e os mais recentes [requisitos de solicitação de privacidade do Apple iOS](https://developer.apple.com/news/?id=r1henawx){target="_blank"}.
+   * um novo Campaign SDK 1.0.27 para iOS, compatível com o iOS 16 e 17, e os [requisitos de solicitação de privacidade do Apple iOS](https://developer.apple.com/news/?id=r1henawx){target="_blank"} mais recentes.
    * um novo SDK do Campaign para Android 14.
 
 ### Outras alterações {#release-7-4-1-other}

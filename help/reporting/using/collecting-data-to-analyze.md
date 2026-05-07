@@ -20,7 +20,7 @@ Os dados a serem usados para criar o relatório podem ser selecionados diretamen
 
 Esta atividade oferece três métodos diferentes:
 
-1. Criação de uma query utilizando os dados no banco de dados.
+1. Criação de uma consulta utilizando os dados no banco de dados.
 1. Processamento dos dados contidos em uma lista.
 1. Uso dos dados contidos em um cubo existente.
 
@@ -34,7 +34,7 @@ Esse modo de seleção de dados é relevante quando os dados do relatório preci
 
 ## Usar os dados de um esquema {#using-the-data-from-a-schema}
 
-Para usar dados vinculados a um schema de banco de dados, selecione a opção apropriada no editor de query e configure a query a ser aplicada.
+Para usar dados vinculados a um esquema de banco de dados, selecione a opção apropriada no editor de consultas e configure a consulta a ser aplicada.
 
 O exemplo a seguir permite coletar o número de destinatários para cada país, entre os perfis no banco de dados. Eles podem então ser exibidos em um relatório na forma de uma tabela.
 
@@ -44,7 +44,7 @@ O exemplo a seguir permite coletar o número de destinatários para cada país, 
 
 Para criar um relatório, é possível usar dados de uma lista de dados importados.
 
-Para fazer isso, selecione a opção **[!UICONTROL Use an imported list]** na caixa de query e selecione a lista relacionada.
+Para fazer isso, selecione a opção **[!UICONTROL Use an imported list]** na caixa de consulta e selecione a lista relacionada.
 
 ![](assets/reporting_query_from_list.png)
 
@@ -52,7 +52,7 @@ Clique no link **[!UICONTROL Edit query...]** para definir os dados que serão c
 
 ## Usar um cubo {#using-a-cube}
 
-É possível selecionar um cubo para definir a query.
+É possível selecionar um cubo para definir a consulta.
 
 ![](assets/reporting_query_from_cube.png)
 

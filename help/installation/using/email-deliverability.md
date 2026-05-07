@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '3096'
-ht-degree: 13%
+source-wordcount: '3163'
+ht-degree: 15%
 
 ---
 
@@ -51,7 +51,7 @@ O módulo **mta** distribui mensagens para seus módulos filho **mtachild**. Cad
 As etapas são as seguintes:
 
 1. O **mta** seleciona mensagens qualificadas e atribui a elas uma **mtachild** disponível.
-1. O **mtachild** carrega todas as informações necessárias para criar a mensagem (conteúdo, elementos de personalização, anexos, imagens, etc.) e encaminha a mensagem ao **Formatador de Tráfego de Email**.
+1. O **mtachild** carrega todas as informações necessárias para criar a mensagem (conteúdo, elementos de personalização, anexos, imagens etc.) e encaminha a mensagem para o **Formatador de Tráfego de Email**.
 1. Assim que o formador de tráfego de email receber a autorização do servidor de estatísticas (**smtp stat**), a mensagem será enviada ao destinatário.
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)

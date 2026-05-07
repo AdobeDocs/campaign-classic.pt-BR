@@ -7,7 +7,7 @@ role: Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '923'
 ht-degree: 1%
 
 ---
@@ -215,7 +215,7 @@ O token de segurança tem as seguintes características:
 * ele é armazenado no console do Adobe Campaign
 * quando acessado pela Web:
 
-   * ele é armazenado em um documento.propriedade __securityToken
+   * ela é armazenada em um documento. propriedade__securityToken
    * os URLs da página são atualizados para atualizar o token de segurança
    * os formulários também são atualizados por um campo oculto contendo o token
 

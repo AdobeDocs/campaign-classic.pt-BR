@@ -9,8 +9,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 37%
+source-wordcount: '630'
+ht-degree: 34%
 
 ---
 
@@ -35,7 +35,7 @@ O Adobe Campaign não restringe o tamanho do arquivo. Mas você pode fazê-lo co
 
 Consulte [esta página](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) para obter mais informações.
 
-Por padrão, todas as páginas dinâmicas são automaticamente retransmitidas para o servidor Tomcat local da máquina cujo módulo da Web foi iniciado. É possível optar por não retransmitir alguns deles. Se alguns módulos do Adobe Campaign não estiverem sendo usados (como aplicação Web, interação, algum jsp), podem ser removidos das regras de retransmissão. 
+Por padrão, todas as páginas dinâmicas são automaticamente retransmitidas para o servidor Tomcat local da máquina cujo módulo da Web foi iniciado. É possível optar por não retransmitir alguns deles. Se alguns módulos do Adobe Campaign não estiverem sendo usados (como aplicação Web, interação, algum jsp), podem ser removidos das regras de retransmissão.
 
 Pronto para uso, forçamos a capacidade de exibir recursos do usuário final usando http (httpAllowed=&quot;true&quot;). Como estas páginas podem mostrar algum PII (como conteúdo de email, endereço), cupons de resgate, ofertas, você deverá forçar novamente o HTTPS nesses caminhos.
 
@@ -43,13 +43,13 @@ Se você estiver usando nomes de host diferentes (um público e um para operador
 
 ## Proteção de conexão de saída
 
-A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows, etc.) é limitada. Para permitir uma nova URL, o administrador precisa referenciá-la no [arquivo serverConf.xml](../../installation/using/the-server-configuration-file.md).
+A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows etc.) é limitada. Para permitir uma nova URL, o administrador precisa referenciá-la no [arquivo serverConf.xml](../../installation/using/the-server-configuration-file.md).
 
 Existem três modos de proteção de conexão:
 
-* **Bloqueio**: todas as URLs fora do arquivo de inclui na lista de permissões são bloqueadas, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
-* **Permissivo**: todas as URLs fora do grupo de inclui na lista de permissões são permitidas.
-* **Aviso**: todas as URLs que não estão na inclui na lista de permissões são permitidas, mas o interpretador JS emite um aviso para que o administrador possa coletá-las. Esse modo adiciona mensagens de aviso JST-310027.
+* **Bloqueio**: todas as URLs fora do incluo na lista de permissões são bloqueadas, com uma mensagem de erro. Este é o modo padrão depois de um pós-upgrade.
+* **Permissivo**: todas as URLs fora do incluo na lista de permissões são permitidas.
+* **Aviso**: todas as URLs fora do incluo na lista de permissões são permitidas, mas o interpretador JS emite um aviso para que o administrador possa coletá-las. Esse modo adiciona mensagens de aviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -59,7 +59,7 @@ Existem três modos de proteção de conexão:
 </urlPermission>
 ```
 
-Novos clientes usarão o modo de bloqueio. Se ele quiser permitir um novo URL, será necessário entrar em contato com o administrador para adicioná-lo ao arquivo de inclui na lista de permissões.
+Novos clientes usarão o modo de bloqueio. Se ele quiser permitir um novo URL, será necessário entrar em contato com o administrador para adicioná-lo ao incluo na lista de permissões.
 
 Os clientes existentes provenientes de uma migração podem usar o modo de aviso por algum tempo. Enquanto isso, é necessário analisar o tráfego de saída antes de autorizar os URLS.
 

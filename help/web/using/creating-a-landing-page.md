@@ -1,32 +1,32 @@
 ---
 product: campaign
-title: Criar uma landing page
-description: Criar uma landing page
+title: Criar uma página de destino
+description: Criar uma página de destino
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 100%
+source-wordcount: '739'
+ht-degree: 96%
 
 ---
 
-# Criar uma landing page{#creating-a-landing-page}
+# Criar uma página de destino{#creating-a-landing-page}
 
 
 
-## Sobre a criação de landing pages {#about-landing-pages-creation}
+## Sobre a criação de páginas de destino {#about-landing-pages-creation}
 
-Este caso de uso mostra o uso do Editor digital para criar uma Landing page no console do Adobe Campaign.
+Este caso de uso mostra o uso do Editor digital para criar uma Página de destino no console do Adobe Campaign.
 
-Antes de começar a configurar a Landing page no Adobe Campaign, verifique se você tem **um ou mais templates** para representar a(s) página(s) HTML.
+Antes de começar a configurar a Página de destino no Adobe Campaign, verifique se você tem **um ou mais modelos** para representar a(s) página(s) HTML.
 
-O principal objetivo desse caso de uso é fazer com que os campos de formulário da Landing page correspondam aos campos internos no Adobe Campaign usando as funções no DCE.
+O principal objetivo desse caso de uso é fazer com que os campos de formulário da Página de destino correspondam aos campos internos no Adobe Campaign usando as funções no DCE.
 
-## Criação da landing page {#creating-the-landing-page}
+## Criação da página de destino {#creating-the-landing-page}
 
-Para criar um novo aplicativo web tipo landing page, siga estas etapas:
+Para criar um novo aplicativo web tipo página de destino, siga estas etapas:
 
 1. Vá para a guia **[!UICONTROL Campaigns]**, clique no link **[!UICONTROL Web application]** e clique no botão **[!UICONTROL Create]**.
 1. Selecione o modelo **[!UICONTROL New landing page]**, insira um rótulo e clique em **[!UICONTROL Save]**.
@@ -54,13 +54,13 @@ Você obterá a seguinte sequência:
 
 Nesta seção, vamos examinar como **importar conteúdo HTML** para cada página da aplicação Web.
 
-Um template deve conter:
+Um modelo deve conter:
 
 * um arquivo **HTML** (obrigatório)
 * um ou mais arquivos **CSS** (opcional)
 * uma ou mais **imagens** (opcional)
 
-Para carregar o template na primeira página, siga as etapas abaixo:
+Para carregar o modelo na primeira página, siga as etapas abaixo:
 
 1. Abra a primeira atividade **[!UICONTROL Page]** da aplicação web.
 1. Selecione **[!UICONTROL From a file]** para buscar seu modelo de conteúdo.
@@ -89,7 +89,7 @@ Aplique essas etapas para cada página inserida na aplicação web.
 
 >[!CAUTION]
 >
->**O DCE executa o código JavaScript para a página HTML carregada.** Erros JavaScript no template HTML que podem aparecer na interface do Adobe Campaign. Esses erros não estão relacionados ao editor. Para garantir que não haja erros nos arquivos importados, recomenda-se testar em um navegador antes de importar os arquivos para o DCE.
+>**O DCE executa o código JavaScript para a página HTML carregada.** Erros de JavaScript no template HTML que podem aparecer na interface do Adobe Campaign. Esses erros não estão relacionados ao editor. Para garantir que não haja erros nos arquivos importados, recomenda-se testar em um navegador antes de importar os arquivos para o DCE.
 
 ## Etapa 2 - Configuração do conteúdo {#step-2---configuring-the-content}
 

@@ -9,8 +9,8 @@ content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '2097'
+workflow-type: tm+mt
+source-wordcount: '2102'
 ht-degree: 100%
 
 ---
@@ -102,7 +102,7 @@ Siga o procedimento detalhado em [Criar um ambiente de oferta](../../interaction
 
    ![](assets/offer_inbound_anonymous_example_013.png)
 
-1. Selecione o template de oferta anônimo pronto para uso ou um template criado anteriormente.
+1. Selecione o modelo de oferta anônimo pronto para uso ou um modelo criado anteriormente.
 
    ![](assets/offer_inbound_anonymous_example_014.png)
 
@@ -224,7 +224,7 @@ Para criar o espaço de ofertas para corresponder à categoria **Melhor Oferta**
    >
    >A função de renderização deve nomear os campos usados para o espaço na ordem em que foram selecionados anteriormente, assim as ofertas são exibidas corretamente.
 
-1. Use o mesmo processo para criar um espaço de oferta de canal Web de entrada para corresponder à categoria **Parceiro** .
+1. Use o mesmo processo para criar um espaço de oferta de canal da web de entrada para corresponder à categoria **Parceiro** .
 
    ![](assets/offer_inbound_fallback_example_026.png)
 

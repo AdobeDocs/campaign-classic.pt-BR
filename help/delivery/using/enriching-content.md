@@ -7,8 +7,8 @@ feature: Data Management
 role: User, Developer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
-source-wordcount: '666'
+workflow-type: tm+mt
+source-wordcount: '669'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Exemplo de retorno de uma consulta no schema do destinatário (**nms:recipient**
 </book>
 ```
 
-O elemento **`<collection-recipient>`** representa o elemento de entrada do documento resultante de um query. Os dados recuperados são retornados sob este elemento; em nosso exemplo, uma lista de destinatários.
+O elemento **`<collection-recipient>`** representa o elemento de entrada do documento resultante de uma consulta. Os dados recuperados são retornados sob este elemento; em nosso exemplo, uma lista de destinatários.
 
 ### Adição de uma consulta {#adding-a-query}
 
@@ -47,7 +47,7 @@ Os parâmetros de consulta são editados por meio de um assistente.
 
    >[!NOTE]
    >
-   >O campo de edição **Caminho** é usado para renomear o elemento de saída do query.
+   >O campo de edição **Caminho** é usado para renomear o elemento de saída da consulta.
 
 1. A próxima página permite que você selecione os dados a serem recuperados.
 
@@ -57,7 +57,7 @@ Os parâmetros de consulta são editados por meio de um assistente.
 
    ![](assets/d_ncs_content_query3.png)
 
-1. A última página inicia uma pré-visualização dos dados retornados pelo query.
+1. A última página inicia uma pré-visualização dos dados retornados pela consulta.
 
    ![](assets/d_ncs_content_query4.png)
 
