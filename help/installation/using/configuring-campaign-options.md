@@ -9,8 +9,8 @@ topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '3834'
-ht-degree: 1%
+source-wordcount: '3898'
+ht-degree: 3%
 
 ---
 
@@ -57,11 +57,11 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_AtivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Permite que o operador encarregado do delivery confirme o envio, se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery.</p><p> Para fazer isso, ative a opção inserindo "1" como o valor. Para desativar essa opção, digite "0".</p><p> O processo de confirmação de envio funcionará como padrão: somente o operador ou grupo de operadores designado ao envio nas propriedades de delivery (ou um administrador) poderá confirmar e realizar o envio. Consulte <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries#start-a-delivery" target="_blank">esta seção</a>.</p> </td>
+   <td><p> Permite que o operador encarregado do delivery confirme o envio, se um operador ou grupo de operadores específico for designado para iniciar um delivery nas propriedades do delivery.</p><p> Para fazer isso, ative a opção inserindo "1" como o valor. Para desativar essa opção, digite "0".</p><p> O processo de confirmação de entrega funcionará como padrão: somente o operador ou grupo de operadores designado para a entrega nas propriedades de entrega (ou um administrador) poderá confirmar e realizar a entrega. Consulte <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries#start-a-delivery" target="_blank">esta seção</a>.</p> </td>
 
 <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> O Adobe Campaign usa uma variável global "Nms_DefaultRcpSchema" para dialogar com o banco de dados do recipient padrão (nms:recipient).<br /> O valor da opção deve corresponder ao nome do esquema que corresponde à tabela do destinatário externo.<br /> </td> 
+   <td> O Adobe Campaign usa uma variável global "Nms_DefaultRcpSchema" para dialogar com o banco de dados de recipient padrão (nms:recipient).<br /> O valor da opção deve corresponder ao nome do esquema que corresponde à tabela de destinatários externos.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
@@ -149,7 +149,7 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> Nome comum do cliente. Usado em algumas mensagens de aviso exibidas para os destinatários.<br /> "Você está recebendo esta mensagem porque entrou em contato com a ‘Organização’ ou com uma empresa afiliada. Não receber mais mensagens de `Organization`<br /> </td> 
+   <td> Nome comum do cliente. Usado em algumas mensagens de aviso exibidas para os destinatários.<br /> "Você está recebendo esta mensagem porque entrou em contato com uma ‘Organização’ ou empresa afiliada. Não receber mais mensagens de `Organization`<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -173,7 +173,7 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
-   <td> Lista de endereços de email de encaminhamento autorizado (do módulo de processamento de emails de entrada). Os endereços devem ser separados por vírgulas (ou * para permitir todos). Por exemplo, xyz@abc.com,pqr@abc.com.<br /> </td> 
+   <td> Lista de endereços de email de encaminhamento autorizado (do módulo de processamento de emails de entrada). Os endereços devem ser separados por vírgulas (ou * para permitir todos). E.g. xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
@@ -197,7 +197,7 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> Permite que um período máximo (expresso em horas) seja especificado como limite para o número de broadlogs recuperados toda vez que o workflow de sincronização é executado.</a>.<br /> </td> 
+   <td> Permite que um período máximo (expresso em horas) seja especificado como limite para o número de broadlogs recuperados toda vez que o fluxo de trabalho de sincronização é executado.</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
@@ -233,7 +233,7 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> A URL do servidor de mirror page (por padrão, deve ser idêntica a NmsTracking_ServerUrl).<br /> É o valor padrão de entregas de email quando a URL não está especificada na definição de roteamento.<br /> </td> 
+   <td> A URL do servidor de mirror page (por padrão, deve ser idêntica a NmsTracking_ServerUrl).<br /> É o valor padrão de entregas de email quando a URL não é especificada na definição de roteamento.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
@@ -317,7 +317,7 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> Permite definir o servidor no qual as imagens usadas nos deliveries são armazenadas para permitir que o navegador as obtenha.<br /> Para versões de compilação &lt;= 5098, usamos a URL das imagens que foram carregadas na instância.<br /> Para versões de compilação &gt; 5098, usamos a URL pública da entrega ou a URL da opção <span class="uicontrol">XtkFileRes_Public_URL</span>.<br /> </td> 
+   <td> Permite definir o servidor no qual as imagens usadas nas entregas são armazenadas para permitir que o navegador as obtenha.<br /> Para versões de compilação &lt;= 5098, usamos o URL das imagens que foram carregadas na instância.<br /> Para versões de compilação &gt; 5098, usamos a URL pública da entrega ou a URL da opção <span class="uicontrol">XtkFileRes_Public_URL</span>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
@@ -693,7 +693,7 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span> <br /> </td> 
-   <td> Durante a migração, a estrutura de árvore é reorganizada automaticamente com base nos novos padrões de versão.<br /> Essa opção permite desabilitar a migração automática da árvore de navegação. Se você o utilizar, após a migração, será necessário excluir pastas obsoletas, adicionar as novas pastas e executar todas as verificações necessárias.<br /> 
+   <td> Durante a migração, a estrutura de árvore é reorganizada automaticamente com base nos novos padrões de versão.<br /> Essa opção permite desativar a migração automática da árvore de navegação. Se você o utilizar, após a migração, será necessário excluir pastas obsoletas, adicionar as novas pastas e executar todas as verificações necessárias.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">Tipo de dados:</span> Inteiro</p> </li> 
      <li> <p> <span class="uicontrol">Valor (texto)</span> : 1 </p> </li> 
@@ -746,7 +746,7 @@ O nó **[!UICONTROL Administration / Platform / Options]** permite configurar as
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Nome da organização da Adobe Target. Esse valor corresponde ao nome do cliente do Adobe Target.<br /> Consulte <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">esta seção</a>.<br /> </td> 
+   <td> Nome da organização da Adobe Target. Este valor corresponde ao nome do Cliente Adobe Target.<br /> Consulte <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">esta seção</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 

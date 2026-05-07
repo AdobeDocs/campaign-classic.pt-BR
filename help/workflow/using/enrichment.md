@@ -7,8 +7,8 @@ hide: true
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 100%
+source-wordcount: '1301'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Existem quatro tipos de vinculações:
 
 * **[!UICONTROL Define a collection]**: permite definir um vínculo com uma cardinalidade 1-N entre as tabelas.
 * **[!UICONTROL Define a link whose target is still available]**: possibilita definir um vínculo com uma cardinalidade 1-1 entre as tabelas. As condições de associação devem ser definidas por um único registro na tabela do target.
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: possibilita definir um vínculo com uma cardinalidade 0-1 entre as tabelas. A condição de ligação deve ser definida por um registro 0 ou 1 (máx.) na tabela de público alvo.
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: possibilita definir um vínculo com uma cardinalidade 0-1 entre as tabelas. A condição de associação deve ser definida por 0 ou 1 (máx.) registro na tabela do target.
 
   Essa opção é configurada na guia **[!UICONTROL Simple Join]** que pode ser acessada por meio do link **[!UICONTROL Edit additional data]** da atividade **[!UICONTROL Enrichment]**.
 
@@ -177,7 +177,7 @@ Após configurar sua consulta (consulte esta [seção](query.md)):
 
      ![](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
 
    O número de propostas disponíveis para pré-visualizar depende da configuração executada na atividade de enriquecimento, ao invés de qualquer configuração possível executada diretamente na entrega.
 
@@ -199,7 +199,7 @@ Para fazer isso:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Consulte [Entregas entre canais](cross-channel-deliveries.md).
 
    >[!NOTE]
    >

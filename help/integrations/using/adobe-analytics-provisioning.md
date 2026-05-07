@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 85%
+source-wordcount: '702'
+ht-degree: 81%
 
 ---
 
@@ -36,7 +36,7 @@ Para que essa integração funcione, é necessário criar um perfil de produto d
 
 >[!AVAILABILITY]
 >
-> A credencial de conta de serviço (JWT) está sendo descontinuada pela Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem usar a credencial de servidor para servidor OAuth. </br>
+> A credencial Conta de serviço (JWT) está sendo substituída pela Adobe. As integrações do Campaign com as soluções e os aplicativos da Adobe agora devem depender da credencial servidor para servidor do OAuth. </br>
 >
 > * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As [credenciais da conta de serviço (JWT)](oauth-technical-account.md) já existentes continuarão funcionando até terça-feira, 30 de junho de 2025.</br>
 >

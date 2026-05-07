@@ -5,8 +5,8 @@ description: Saiba como enviar emails transacionais com anexos individuais e/ou 
 feature: Transactional Messaging, Message Center
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '667'
+workflow-type: tm+mt
+source-wordcount: '684'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Nesse cenário, os anexos não são pré-criados, mas adicionados instantaneamen
 * Além disso, se o anexo estiver associado a uma transação (como no exemplo acima), talvez seja necessário que ele contenha dados dinâmicos gerados durante o processo do cliente.
 * Anexar arquivos PDF otimiza a segurança, pois é possível criptografá-los e enviá-los por HTTPS.
 
-## Recommendations e medidas de proteção {#important-notes}
+## Recomendações e medidas de proteção {#important-notes}
 
 Para evitar problemas de desempenho, as imagens incluídas nos emails não podem exceder 100 KB. Esse limite, definido por padrão, pode ser alterado na opção `NmsDelivery_MaxDownloadedImageSize`. No entanto, a Adobe recomenda fortemente evitar imagens grandes em entregas por email.
 

@@ -9,8 +9,8 @@ topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 1%
+source-wordcount: '523'
+ht-degree: 8%
 
 ---
 
@@ -40,7 +40,7 @@ Esse método também destaca os usuários que criam muitos objetos.
 
 ## Entregas {#deliveries}
 
-Deve haver menos de 1000 deliveries na instância a qualquer momento. Ter muitos deliveries consome espaço no banco de dados e gera problemas. Uma instância que cria mais de 10 deliveries por dia deve ser verificada em relação aos requisitos de negócios. Considere usar deliveries contínuos para criar menos deliveries. Para obter mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html?lang=pt-BR){target="_blank"}.
+Deve haver menos de 1000 deliveries na instância a qualquer momento. Ter muitos deliveries consome espaço no banco de dados e gera problemas. Uma instância que cria mais de 10 deliveries por dia deve ser verificada em relação aos requisitos de negócios. Considere usar deliveries contínuos para criar menos deliveries. Para mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html?lang=pt-BR){target="_blank"}.
 
 Os deliveries com mais de dois anos devem ser removidos da instância.
 

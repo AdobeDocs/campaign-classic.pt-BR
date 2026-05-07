@@ -8,17 +8,17 @@ content-type: reference
 topic-tags: asset-sharing
 exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '220'
+workflow-type: tm+mt
+source-wordcount: '233'
 ht-degree: 100%
 
 ---
 
 # Inserção de um ativo compartilhado{#inserting-a-shared-asset}
 
-Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emails e landing pages da seguinte maneira:
+Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emails e páginas de destino da seguinte maneira:
 
-1. Crie um novo email ou uma nova landing page.
+1. Crie um novo email ou uma nova página de destino.
 
    Se você usar ativos da biblioteca do Adobe Experience Manager Assets, use um modelo de entrega criado ao [configurar a integração](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets).
 

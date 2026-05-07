@@ -8,8 +8,8 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: 49ac279b-bc67-4311-b0a4-0e23f2a99c52
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '120'
+workflow-type: tm+mt
+source-wordcount: '125'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ Para criar um ambiente de teste (modo sandbox), siga as etapas abaixo:
 
    ![](assets/offer_env_creation_001.png)
 
-1. Em seguida, acesse a pasta que acabou de criar e adicione um **[!UICONTROL Offer environment]** usando os menus de atalho.
+1. Em seguida, acesse a pasta que acabou de criar e adicione um **[!UICONTROL Offer environment]** usando os menus do botão direito do mouse.
 
    ![](assets/offer_env_creation_001bis.png)
 

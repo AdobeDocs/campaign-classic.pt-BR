@@ -6,8 +6,8 @@ feature: Reporting, Monitoring
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
 source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
-workflow-type: ht
-source-wordcount: '538'
+workflow-type: tm+mt
+source-wordcount: '541'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Para criar um gráfico em um relatório, siga as etapas abaixo:
 
 1. Clique na guia **[!UICONTROL Data]** para definir a fonte de dados e a série a ser calculada.
 
-   A estatística a ser exibida no gráfico pode ser calculada com base em um query ou nos dados de contexto, ou seja, os dados fornecidos pela transição de entrada da página atual (para obter mais informações, consulte [Usar dados de contexto](../../reporting/using/using-the-context.md#using-context-data)).
+   A estatística a ser exibida no gráfico pode ser calculada com base em uma consulta ou nos dados de contexto, ou seja, os dados fornecidos pela transição de entrada da página atual (para obter mais informações, consulte [Usar dados de contexto](../../reporting/using/using-the-context.md#using-context-data)).
 
    * Clique no link **[!UICONTROL Filter data...]** para definir os critérios de filtragem para os dados no banco de dados.
 
@@ -62,7 +62,7 @@ Ele também pode ser alterado por meio da seção **[!UICONTROL Chart type]** da
 
 As variantes dependem do tipo de gráfico selecionado. Elas são selecionadas por meio do link **[!UICONTROL Variants...]**.
 
-### Análise: gráficos de pizza {#breakdown--pie-charts}
+### Detalhamento: gráficos de pizza {#breakdown--pie-charts}
 
 Esse tipo de representação gráfica permite exibir uma visão geral dos elementos medidos.
 

@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
 source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 1%
+source-wordcount: '854'
+ht-degree: 3%
 
 ---
 
@@ -35,11 +35,11 @@ Lembrando que os seguintes componentes precisam ser instalados e configurados co
 
 ### Bibliotecas {#libraries}
 
-Para instalar Adobe Campaign no Linux, verifique se você tem a bibliotecas necessária.
+Para instalar o Adobe Campaign no Linux, verifique se você tem as bibliotecas necessárias.
 
-* A biblioteca C deve ser capaz de suportar o modo TLS (Thread Local Storage). Esse modo está ativo na maioria dos casos, exceto com alguns kernels para os quais o suporte Xen foi desativado.
+* A biblioteca C deve ser capaz de suportar o modo TLS (Thread Local Storage, Armazenamento local da thread). Esse modo está ativo na maioria dos casos, exceto com alguns kernels para os quais o suporte ao Xen foi desativado.
 
-  Para verificar isso, você pode usar o comando uname -a **| grep xen** , por exemplo.
+  Para verificar isso, você pode usar o **uname -a comando | grep xen**, por exemplo.
 
   Se o comando não retornar uma linha vazia, significa que a configuração está correta.
 
@@ -51,7 +51,7 @@ Para instalar Adobe Campaign no Linux, verifique se você tem a bibliotecas nece
 
 ### SELinux {#selinux}
 
-Quando usada, a módulo do SELinux deve ser configurada corretamente.
+Quando usado, o módulo SELinux deve ser configurado corretamente.
 
 Para fazer isso, faça logon como root e insira o seguinte comando:
 
@@ -95,15 +95,15 @@ dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  deja
 
 ### Fontes para instâncias japonesas {#fonts-for-japanese-instances}
 
-Fontes de caracteres específicos são necessárias para as instâncias de Japonês em solicitar para exportar os relatórios para o formato PDF.
+As fontes de caracteres específicos são necessárias para as instâncias japonesas para exportar os relatórios para o formato PDF.
 
-Em Debian, adicione o comando:
+No Debian, adicione o comando:
 
 ```
 apt install fonts-ipafont
 ```
 
-Para RHEL, adicione o seguinte comando:
+Para o RHEL, adicione o seguinte comando:
 
 ```
 dnf install epel-release # if required
@@ -120,7 +120,7 @@ Para Debian, as seguintes configurações são necessárias:
    apt-get install libreoffice-writer libreoffice-calc libreoffice-java-common
    ```
 
-1. Instale as seguintes fontes (opcional, mas altamente recomendada para instâncias Japonês):
+1. Instale as seguintes fontes (opcional, mas altamente recomendado para instâncias japonesas):
 
    ```
    apt-get install fonts-ipafont
@@ -136,7 +136,7 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 ## Camadas de acesso ao banco de dados {#database-access-layers}
 
-As camadas de acesso para o mecanismo de banco de dados que você está usando devem ser instaladas no seu servidor e estar acessíveis por meio do Adobe Campaign conta. As versões e os modos de instalação podem variar dependendo do mecanismo de banco de dados usado.
+As camadas de acesso do mecanismo de banco de dados que você está usando devem estar instaladas no servidor e acessíveis por meio da conta do Adobe Campaign. As versões e os modos de instalação podem variar dependendo do mecanismo de banco de dados usado.
 
 A versão piloto com suporte está detalhada na [Matriz de compatibilidade](../../rn/using/compatibility-matrix.md).
 
@@ -150,29 +150,29 @@ O uso do PostgreSQL com Adobe Campaign também requer a instalação das bibliot
 
 ### Oracle {#oracle}
 
-Recupere a versão biblioteca para Debian de 64 bits, ou seja: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 **ou** libclntsh.so.10.1 **.**&#x200B;**&#x200B;**
+Recupere a versão da biblioteca para Debian de 64 bits, ou seja: **libclntsh.so**, **libclntsh.so.19.1**, **libclntsh.so.18.1**, **libclntsh.so.12.1**, **libclntsh.so.11.1** ou **libclntsh.so.10.1**.
 
-É possível obter um pacote de RPM do Linux da Oracle Technology Network.
+Obtenha um pacote RPM de Linux na Oracle Technology Network.
 
 >[!NOTE]
 >
->Se você já tiver instalado o cliente Oracle, mas a ambiente global (para instância: /etc/perfil) não estiver configurada corretamente, você pode adicionar informações ausentes ao **script nl6/customer.sh** Para obter mais informações, consulte as [variáveis](../../installation/using/installing-packages-with-linux.md#environment-variables) Ambiente.
+>Se você já tiver instalado o cliente Oracle, mas o ambiente global (por exemplo: /etc/profile) não estiver configurado corretamente, você pode adicionar informações ausentes ao script **nl6/customer.sh**. Para obter mais informações, consulte [Variáveis de ambiente](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 **Resolução de problemas e práticas recomendadas**
 
-Os problemas podem ocorrer após um cliente do Oracle ou uma atualização do servidor, alteração de versão ou na primeira instalação da instância.
+Os problemas podem ocorrer após um cliente Oracle ou uma atualização de servidor, alteração de versão ou na primeira instalação da instância.
 
-Se você observar no console do cliente que há atrasos inesperados (uma ou mais horas) nos logs, fluxo de trabalho, último processamento, próximo processamento e assim por diante, pode haver um problema entre a biblioteca do cliente Oracle e o Servidor Oracle. Para evitar esses problemas
+Se você observar no console do cliente que há atrasos inesperados (uma ou mais horas) nos logs, fluxo de trabalho, último processamento, próximo processamento e assim por diante, pode haver um problema entre a biblioteca do cliente Oracle e o Oracle Server. Para evitar esses problemas
 
 1. Certifique-se de usar o **cliente completo**.
 
-   Vários problemas foram identificados ao usar a versão do Oracle Instant Client. Além disso, é impossível alterar o arquivo de Fuso horário no cliente instantâneo.
+   Vários problemas foram identificados ao usar a versão do Oracle Instant Client. Além disso, é impossível alterar o arquivo de fuso horário no cliente instantâneo.
 
-1. Verifique se a versão **do** cliente e a versão **do servidor do** banco de dados são as **mesmas**.
+1. Verifique se a **versão do cliente** e a **versão do servidor de banco de dados** são a **mesma**.
 
-   A combinação de versões apesar da matriz de compatibilidade do Oracle e da recomendação para alinhar as versões de cliente e servidor é conhecida por causar problemas.
+   A combinação de versões apesar da matriz de compatibilidade da Oracle e da recomendação para alinhar as versões de cliente e servidor é conhecida por causar problemas.
 
-   Verifique também o valor de ORACLE_HOME para certificar-se de que ele aponte para a versão de cliente esperada (caso haja várias versões instaladas na máquina).
+   Verifique também o valor de ORACLE_HOME para garantir que ele aponte para a versão de cliente esperada (caso haja várias versões instaladas na máquina).
 
 1. Verifique se o cliente e o servidor usam o mesmo **arquivo de fuso horário**.
 

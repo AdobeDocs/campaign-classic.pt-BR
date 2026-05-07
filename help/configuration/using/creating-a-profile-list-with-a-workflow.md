@@ -8,7 +8,7 @@ role: User
 exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '194'
 ht-degree: 18%
 
 ---
@@ -25,7 +25,7 @@ Para obter mais informações sobre listas no Campaign, consulte [esta seção](
 Para criar um workflow de direcionamento e atualizar recipients em uma tabela de recipients personalizada, siga as etapas abaixo:
 
 1. Vá para o nó **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** do explorador.
-1. Criação de um novo workflow para construção do target
+1. Criação de um novo fluxo de trabalho de segmentação
 1. Coloque uma atividade **Query** seguida por uma atividade **List update**.
 
    ![](assets/mapping_create_list_workflow01.png)

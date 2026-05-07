@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '749'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 91%
 
 ---
 
@@ -24,17 +24,17 @@ As mensagens transacionais dependem do modelo de dados do Adobe Campaign e usam 
 
 ## Métodos SOAP {#soap-methods}
 
-Esta seção detalha os métodos SOAP associados aos schemas do módulo de mensagens transacionais.
+Esta seção detalha os métodos SOAP associados aos esquemas do módulo de mensagens transacionais.
 
-Dois métodos SOAP **PushEvent** ou **PushEvents** estão vinculados aos dois dataschemas **nms:rtEvent** e **nms:BatchEvent.** É o sistema de informações que determina se um evento é do tipo &quot;batch&quot; ou &quot;em tempo real&quot;.
+Dois métodos SOAP **PushEvent** ou **PushEvents** estão vinculados aos dois dataschemas **nms:rtEvent** e **nms:BatchEvent**. É o sistema de informações que determina se um evento é do tipo &quot;batch&quot; ou &quot;em tempo real&quot;.
 
 * O **PushEvent** permite inserir um único evento na mensagem,
 * O **PushEvents** permite inserir uma série de eventos na mensagem.
 
 O caminho WSDL para acessar ambos os métodos é:
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** para acessar o schema do tipo em tempo real.
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** para acessar o schema do tipo batch.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** para acessar o esquema do tipo em tempo real.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** para acessar o esquema de tipo lote.
 
 Para obter mais informações sobre a geração de um arquivo WSDL, consulte [esta seção](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
@@ -112,7 +112,7 @@ Os elementos **`<rtevent>`** e **`<batchevent>`** têm um conjunto de atributos,
 >
 >O elemento **`<batchevent>`** permite adicionar o evento à fila &quot;batch&quot;. O **`<rtevent>`** adiciona o evento à fila em &quot;tempo real&quot;.
 
-Os atributos obrigatórios dos elementos **`<rtevent>`** e **`<batchevent>`** são @type and @email. O valor de @type deve ser igual ao valor da lista discriminada definido ao configurar a instância de execução. Esse valor permite definir o template a ser vinculado ao conteúdo do evento durante a entrega.
+Os atributos obrigatórios dos elementos **`<rtevent>`** e **`<batchevent>`** são @type and @email. O valor de @type deve ser igual ao valor da lista discriminada definido ao configurar a instância de execução. Esse valor permite definir o modelo a ser vinculado ao conteúdo do evento durante a entrega.
 
 `<rtevent> configuration example:`
 
@@ -124,11 +124,11 @@ Neste exemplo, dois canais são fornecidos: o endereço de email e o número do 
 
 Se quiser adiar uma entrega de evento, adicione o campo **[!UICONTROL scheduled]** seguido da data preferida. O evento será transformado em uma mensagem nessa data.
 
-É recomendável preencher os atributos @wishedChannel e @emailFormat com valores numéricos. A tabela de função que vincula valores numéricos e rótulos é encontrada na descrição do schema de dados.
+É recomendável preencher os atributos @wishedChannel e @emailFormat com valores numéricos. A tabela de função que vincula valores numéricos e rótulos é encontrada na descrição do esquema de dados.
 
 >[!NOTE]
 >
->Uma descrição detalhada de todos os atributos autorizados, bem como seus valores estão disponíveis na descrição do schema de dados **nms:rtEvent** e **nms:BatchEvent**.
+>Uma descrição detalhada de todos os atributos autorizados, bem como seus valores estão disponíveis na descrição do esquema de dados **nms:rtEvent** e **nms:BatchEvent**.
 
 O elemento **`<ctx>`** contém os dados da mensagem. Seu conteúdo XML está aberto, o que significa que ele pode ser configurado dependendo do conteúdo a ser entregue.
 
@@ -181,7 +181,7 @@ Se o valor do identificador de retorno for estritamente maior que zero, isso sig
 
 No entanto, se houver falha no processo do evento, o método retornará uma mensagem de erro ou um valor igual a zero.
 
-* Exemplo de processamento de um evento que falhou quando o query não contém um login ou o operador especificado não tem os direitos necessários:
+* Exemplo de processamento de um evento que falhou quando a consulta não contém um login ou o operador especificado não tem os direitos necessários:
 
   ```
   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -195,7 +195,7 @@ No entanto, se houver falha no processo do evento, o método retornará uma mens
   </SOAP-ENV:Envelope>
   ```
 
-* Exemplo de evento que falhou devido a um erro no query (a classificação XML não cumpriu com):
+* Exemplo de evento que falhou devido a um erro na consulta (a classificação XML não cumpriu com):
 
   ```
   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">

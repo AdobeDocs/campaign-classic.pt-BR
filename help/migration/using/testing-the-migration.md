@@ -10,7 +10,7 @@ hide: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Várias opções permitem medir o impacto de uma migração e identificar os pos
 
 ### Processo de verificação {#verification-process}
 
-Integrado como padrão no comando postupgrade, esse processo permite exibir avisos e erros que podem fazer com que a migração falhe. **Se forem exibidos erros, a migração não foi executada.** Se isso acontecer, corrija todos os erros e reinicie a pós-atualização.
+Integrado como padrão no comando postupgrade, esse processo permite exibir avisos e erros que podem fazer com que a migração falhe. **Se forem exibidos erros, a migração não foi executada.** Se isso acontecer, corrija todos os erros e reinicie o pós-upgrade.
 
 Você pode iniciar o processo de verificação por conta própria (sem migração) usando o comando:
 

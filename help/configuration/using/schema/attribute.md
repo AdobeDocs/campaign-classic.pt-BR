@@ -29,7 +29,7 @@ _operation (string), advanced (booleano), applicableIf (string), autoIncrement (
 
 `<element>`
 
-## Derivados {#children}
+## Filhos {#children}
 
 `<help>`
 
@@ -146,8 +146,8 @@ A sequência em que `<attribute>` elementos são definidos em um `<srcschema>` n
    * html
    * int64
    * link
-   * long
-   * memorando
+   * longo
+   * nota
    * MNTOKEN
    * por cento
    * primarykey

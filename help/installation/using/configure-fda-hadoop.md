@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 77%
+source-wordcount: '628'
+ht-degree: 78%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 77%
 
 Use a opção Campaign **Federated Data Access** (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao Hadoop.
 
-1. Configurar o [banco de dados do Hadoop](#configuring-hadoop)
-1. Configurar o Hadoop [conta externa](#hadoop-external) no Campaign
+1. Configurar o [banco de dados Hadoop](#configuring-hadoop)
+1. Configurar a [conta externa](#hadoop-external) do Hadoop no Campaign
 
 ## Configuração do Hadoop 3.0 {#configuring-hadoop}
 
@@ -85,7 +85,7 @@ O conector também é compatível com as seguintes opções de Hive:
 
 ## Configuração do Hadoop 2.1 {#configure-access-hadoop-2}
 
-Se precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para o [Windows](#for-windows) ou [Linux](#for-linux).
+Se você precisar se conectar ao Hadoop 2.1, siga as etapas descritas abaixo para o [Windows](#for-windows) ou o [Linux](#for-linux).
 
 ### Hadoop 2.1 para Windows {#for-windows}
 

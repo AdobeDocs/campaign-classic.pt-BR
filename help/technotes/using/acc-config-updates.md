@@ -7,8 +7,8 @@ hide: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 10%
+source-wordcount: '1178'
+ht-degree: 14%
 
 ---
 
@@ -168,5 +168,5 @@ Como cliente local/híbrido, você precisa atualizar sua configuração para gar
 
 * [Atualizar o ambiente](../../production/using/build-upgrade.md)
 * [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)
-* [Baixar compilação do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Baixar build do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Disponibilizar o novo Console do cliente para os usuários](../../installation/using/client-console-availability-for-windows.md)

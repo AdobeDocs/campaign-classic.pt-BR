@@ -8,7 +8,7 @@ hide: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '3335'
+source-wordcount: '3362'
 ht-degree: 100%
 
 ---
@@ -319,7 +319,7 @@ Para fazer isso, é necessário agendar várias entregas com pesos diferentes pa
 Primeiro, configure a regra de pressão.
 
 1. Criar uma regra de pressão. Para obter mais informações, consulte [Criar uma regra de pressão](#creating-a-pressure-rule).
-1. Na guia **[!UICONTROL General]**, selecione a opção **[!UICONTROL Re-apply the rule at the start of personalization]**. 
+1. Na guia **[!UICONTROL General]**, selecione a opção **[!UICONTROL Re-apply the rule at the start of personalization]**.
 
    ![](assets/campaign_opt_pressure_example_5.png)
 

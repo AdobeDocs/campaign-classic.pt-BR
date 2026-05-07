@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 4%
+source-wordcount: '753'
+ht-degree: 6%
 
 ---
 
@@ -133,5 +133,5 @@ Por exemplo, se você usar uma atividade do tipo **Carregamento de dados (arquiv
 
 Nesse caso, você deve aumentar esse limite.
 
-Para obter mais informações sobre esta opção do Microsoft IIS, consulte a seção &quot;Como&quot; da [documentação do Microsoft](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}.
+Para obter mais informações sobre essa opção do Microsoft IIS, consulte a seção &quot;Como&quot; da [documentação do Microsoft](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}.
 

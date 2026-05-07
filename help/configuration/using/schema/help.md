@@ -24,15 +24,15 @@ nenhuma
 
 ## Pais {#parents-6}
 
-`<srcschema>` , `<element>`   ,   `<attribute>`    ,    `<enumeration>`     ,     `<value>`      ,     `<param />`,      `<method />`
+`<srcschema>`  ,  `<element>`   ,   `<attribute>`    ,    `<enumeration>`     ,     `<value>`      ,     `<param />`,      `<method />`
 
-## Derivados {#children-6}
+## Filhos {#children-6}
 
 nenhuma
 
 ## Descrição {#description-6}
 
-Este elemento permite descrever um `<element>` ou `<attribute>`   elemento. Ele só pode conter texto e é armazenado em XML no banco de dados.
+Este elemento permite descrever um elemento `<element>` ou `<attribute>`. Ele só pode conter texto e é armazenado em XML no banco de dados.
 
 ## Descrição do atributo {#attribute-description-6}
 

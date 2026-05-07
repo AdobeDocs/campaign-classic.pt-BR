@@ -7,7 +7,7 @@ role: Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ A estrutura do documento XML da consulta é descrita no esquema &quot;xtk:queryD
 </queryDef>
 ```
 
-Uma subconsulta ( `<subquery>` ) pode ser definida em um elemento `<condition> `. A sintaxe de um   `<subquery> `   o elemento é baseado na sintaxe de um    `<querydef>`.
+Uma subconsulta ( `<subquery>` ) pode ser definida em um elemento `<condition> `. A sintaxe de um elemento `<subquery> ` é baseada na sintaxe de um `<querydef>`.
 
 Exemplo de um `<subquery>  : </subquery>`
 
@@ -369,7 +369,7 @@ Essa sintaxe simplifica a query quando mais de dois dados são usados na condiç
 
 O vínculo de parâmetros permite que o mecanismo defina os valores dos parâmetros usados na consulta. Isso é muito útil, pois o mecanismo é responsável pelo escape de valores e há o benefício adicional de um cache para os parâmetros a serem recuperados.
 
-Quando um query é construído, os valores &quot;vinculados&quot; são substituídos por um caractere (? no ODBC, `#[index]#` em postgres...) no corpo da consulta SQL.
+Quando um query é construído, os valores &quot;vinculados&quot; são substituídos por um caractere (? em ODBC, `#[index]#` em postgres...) no corpo da consulta SQL.
 
 ```xml
 <select>

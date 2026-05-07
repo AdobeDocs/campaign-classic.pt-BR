@@ -6,8 +6,8 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '436'
+workflow-type: tm+mt
+source-wordcount: '438'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## Sobre modelos de conteúdo {#about-content-templates}
 
-Os templates de conteúdo podem ser referenciados e usados nas entregas diretamente. Consulte [Criação de uma entrega via gestão de conteúdo](#creating-a-delivery-via-content-management)
+Os modelos de conteúdo podem ser referenciados e usados nas entregas diretamente. Consulte [Criação de uma entrega via gerenciamento de conteúdo](#creating-a-delivery-via-content-management)
 
 Eles também podem ser usados para criar instâncias de conteúdo. Depois de criadas, essas instâncias estão prontas para serem entregues (consulte [Delivery de uma instância de conteúdo](#delivering-a-content-instance)) ou exportadas (consulte [Criação de uma instância de conteúdo](#creating-a-content-instance)).
 
@@ -36,7 +36,7 @@ Para mais informações, consulte o exemplo de implementação completa: [Criar 
 
 ## Criação de uma instância de conteúdo {#creating-a-content-instance}
 
-É possível criar conteúdo diretamente na árvore do Adobe Campaign para ser usado em workflows, exportado ou inserido diretamente em novas entregas.
+É possível criar conteúdo diretamente na árvore do Adobe Campaign para ser usado em fluxos de trabalho, exportado ou inserido diretamente em novas entregas.
 
 Siga as etapas abaixo:
 
@@ -44,7 +44,7 @@ Siga as etapas abaixo:
 
    ![](assets/s_ncs_content_folder_properties.png)
 
-1. Selecione os templates de publicação que estarão ativos para esta pasta.
+1. Selecione os modelos de publicação que estarão ativos para esta pasta.
 
    ![](assets/s_ncs_content_folder_templates.png)
 
@@ -70,17 +70,17 @@ Siga as etapas abaixo:
 
    >[!NOTE]
    >
-   >Você pode autorizar a geração de conteúdos não aprovados. Para fazer isso, altere a opção relevante no template de publicação. Para obter mais informações, consulte [Criação e configuração do template](publication-templates.md#creating-and-configuring-the-template).
+   >Você pode autorizar a geração de conteúdos não aprovados. Para fazer isso, altere a opção relevante no modelo de publicação. Para obter mais informações, consulte [Criação e configuração do modelo](publication-templates.md#creating-and-configuring-the-template).
 
    O conteúdo HTML e texto é gerado por padrão na pasta da **publicação** da instância do Adobe Campaign. Você pode alterar a pasta da publicação graças à opção **NcmPublishingDir**.
 
 ## Entrega de uma instância de conteúdo {#delivering-a-content-instance}
 
-Para criar e entregar uma instância de conteúdo, um template do delivery precisa ser vinculado ao template de publicação usado para gerar esse conteúdo. Para obter mais informações, consulte [Entrega](publication-templates.md#delivery).
+Para criar e entregar uma instância de conteúdo, um modelo do delivery precisa ser vinculado ao modelo de publicação usado para gerar esse conteúdo. Para obter mais informações, consulte [Entrega](publication-templates.md#delivery).
 
-Além disso, a pasta de armazenamento de conteúdo deve ser dedicada ao conteúdo obtido deste template de publicação (quando uma pasta de conteúdo permite gerar vários tipos de conteúdo, as entregas não podem ser criadas automaticamente).
+Além disso, a pasta de armazenamento de conteúdo deve ser dedicada ao conteúdo obtido deste modelo de publicação (quando uma pasta de conteúdo permite gerar vários tipos de conteúdo, as entregas não podem ser criadas automaticamente).
 
-Para criar automaticamente uma entrega baseada no conteúdo selecionado, clique no ícone **[!UICONTROL Delivery]** e escolha o template.
+Para criar automaticamente uma entrega baseada no conteúdo selecionado, clique no ícone **[!UICONTROL Delivery]** e escolha o modelo.
 
 ![](assets/s_ncs_content_folder_create_the_delivery.png)
 

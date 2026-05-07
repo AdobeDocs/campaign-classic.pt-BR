@@ -7,7 +7,7 @@ hide: true
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1251'
 ht-degree: 97%
 
 ---
@@ -197,4 +197,4 @@ A maioria das propriedades de atividades pode ser calculada dinamicamente, usand
 No entanto, para outras propriedades, é necessário usar o script de inicialização. Este script é avaliado antes que a tarefa seja executada. A variável **[!UICONTROL activity]** faz referência à atividade correspondente à tarefa. As propriedades dessa atividade podem ser modificadas e afetarão somente essa tarefa.
 
 **Tópicos relacionados**
-[Exemplos de código JavaScript em workflows](javascript-in-workflows.md)
+[Exemplos de código JavaScript em fluxos de trabalho](javascript-in-workflows.md)

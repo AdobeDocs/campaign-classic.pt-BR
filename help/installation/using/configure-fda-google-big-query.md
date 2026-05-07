@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 6%
+source-wordcount: '1042'
+ht-degree: 7%
 
 ---
 
@@ -34,7 +34,7 @@ Use a opção **Federated Data Access** (FDA) do Adobe Campaign Classic para pro
 
 ### Driver configurado no Windows {#driver-window}
 
-1. Baixe o driver ODBC [para Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
+1. Instale o [driver ODBC para Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
 
 1. Configure o driver ODBC no Windows. Para obter mais informações, consulte [esta página](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf).
 
@@ -62,11 +62,11 @@ Use a opção **Federated Data Access** (FDA) do Adobe Campaign Classic para pro
 
 >[!NOTE]
 >
->É necessário ter o Python instalado para que o SDK da Google Cloud funcione.
+>O Python precisa estar instalado para que o Google Cloud SDK funcione.
 >
 >Recomendamos o uso do Python3; consulte esta [página](https://www.python.org/downloads/).
 
-O utilitário de Carregamento em massa permite uma transferência mais rápida, alcançada pelo SDK da Google Cloud.
+O utilitário de Carregamento em massa permite uma transferência mais rápida, alcançada por meio do Google Cloud SDK.
 
 1. Baixe o arquivo morto do Windows de 64 bits (x86_64) desta [página](https://cloud.google.com/sdk/docs/downloads-versioned-archives) e extraia-o no diretório correspondente.
 
@@ -86,7 +86,7 @@ O utilitário de Carregamento em massa permite uma transferência mais rápida, 
 
 ### Driver configurado no Linux {#driver-linux}
 
-Antes de configurar o driver, observe que o script e os comandos devem ser executados pelo usuário raiz. Também é recomendável usar o Google DNS 8.8.8.8 ao executar o script.
+Antes de configurar o driver, observe que o script e os comandos devem ser executados pelo usuário raiz. Também é recomendável usar o DNS 8.8.8.8 do Google durante a execução do script.
 
 Para configurar o [!DNL Google BigQuery] no Linux, siga as etapas abaixo:
 
@@ -142,11 +142,11 @@ Para configurar o [!DNL Google BigQuery] no Linux, siga as etapas abaixo:
 
 >[!NOTE]
 >
->É necessário ter o Python instalado para que o SDK da Google Cloud funcione.
+>O Python precisa estar instalado para que o Google Cloud SDK funcione.
 >
 >Recomendamos o uso do Python3; consulte esta [página](https://www.python.org/downloads/).
 
-O utilitário de Carregamento em massa permite uma transferência mais rápida, alcançada pelo SDK da Google Cloud.
+O utilitário de Carregamento em massa permite uma transferência mais rápida, alcançada por meio do Google Cloud SDK.
 
 1. Antes da instalação do ODBC, verifique se os seguintes pacotes estão instalados na distribuição Linux:
 
@@ -209,8 +209,8 @@ O conector é compatível com as seguintes opções:
 | PortaProxy | Número da porta em que o proxy está sendo executado, por exemplo, 8080 |
 | ProxyUid | Nome de usuário usado para o proxy autenticado |
 | ProxyPwd | Senha do ProxyUid |
-| bqpath | Observe que isso é aplicável somente para a ferramenta de carregamento em massa (SDK da nuvem). </br> Para evitar o uso da variável PATH ou se o diretório google-cloud-sdk tiver que ser movido para outro local, você poderá especificar com essa opção o caminho exato para o diretório bin do sdk da nuvem no servidor. |
-| GCloudConfigName | Observe que isso é aplicável a partir da versão 7.3.4 e somente para a ferramenta de carregamento em massa (SDK da nuvem).</br> O SDK da Google Cloud usa configurações para carregar dados em tabelas do BigQuery. A configuração chamada `accfda` armazena os parâmetros para carregar os dados. No entanto, essa opção permite que os usuários especifiquem um nome diferente para a configuração. |
-| GCloudDefaultConfigName | Observe que isso é aplicável a partir da versão 7.3.4 e somente para a ferramenta de carregamento em massa (SDK da nuvem).</br> A configuração ativa do SDK da Google Cloud não pode ser excluída sem antes transferir a marca ativa para uma nova configuração. Essa configuração temporária é necessária para recriar a configuração principal para carregar dados. O nome padrão para a configuração temporária é `default`, que pode ser alterado se necessário. |
-| GCloudRecreateConfig | Observe que isso é aplicável a partir da versão 7.3.4 e somente para a ferramenta de carregamento em massa (SDK da nuvem).</br> Quando definido como `false`, o mecanismo de carregamento em massa não tenta recriar, excluir ou modificar as configurações do SDK da Google Cloud. Em vez disso, ele continua com o carregamento de dados usando a configuração existente na máquina. Esse recurso é importante quando outras operações dependem das configurações do SDK da Google Cloud. </br> Se o usuário habilitar esta opção de mecanismo sem uma configuração adequada, o mecanismo de carregamento em massa emitirá uma mensagem de aviso: `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`. Para evitar mais erros, ele será revertido para o usando o mecanismo de carregamento em massa de Inserção de matriz ODBC padrão. |
+| bqpath | Observe que isso é aplicável somente para a ferramenta de carregamento em massa (Cloud SDK). </br> Para evitar o uso da variável PATH ou se o diretório google-cloud-sdk tiver que ser movido para outro local, é possível especificar com essa opção o caminho exato para o diretório bin do sdk da nuvem no servidor. |
+| GCloudConfigName | Observe que isso é aplicável a partir da versão 7.3.4 e somente para a ferramenta de carregamento em massa (Cloud SDK).</br> A Google Cloud SDK usa configurações para carregar dados em tabelas do BigQuery. A configuração chamada `accfda` armazena os parâmetros para carregar os dados. No entanto, essa opção permite que os usuários especifiquem um nome diferente para a configuração. |
+| GCloudDefaultConfigName | Observe que isso é aplicável a partir da versão 7.3.4 e somente para a ferramenta de carregamento em massa (Cloud SDK).</br> A configuração ativa do Google Cloud SDK não pode ser excluída sem antes transferir a tag ativa para uma nova configuração. Essa configuração temporária é necessária para recriar a configuração principal para carregar dados. O nome padrão para a configuração temporária é `default`, que pode ser alterado se necessário. |
+| GCloudRecreateConfig | Observe que isso é aplicável a partir da versão 7.3.4 e somente para a ferramenta de carregamento em massa (Cloud SDK).</br> Quando definido como `false`, o mecanismo de carregamento em massa não tenta recriar, excluir ou modificar as configurações do Google Cloud SDK. Em vez disso, ele continua com o carregamento de dados usando a configuração existente na máquina. Esse recurso é importante quando outras operações dependem das configurações do Google Cloud SDK. </br> Se o usuário habilitar esta opção de mecanismo sem uma configuração adequada, o mecanismo de carregamento em massa emitirá uma mensagem de aviso: `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`. Para evitar mais erros, ele será revertido para o usando o mecanismo de carregamento em massa de Inserção de matriz ODBC padrão. |
 

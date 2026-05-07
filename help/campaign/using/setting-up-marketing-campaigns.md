@@ -8,7 +8,7 @@ hide: true
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1259'
 ht-degree: 100%
 
 ---
@@ -225,4 +225,4 @@ Este vídeo mostra como criar um plano de marketing, programas e campanhas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/326560?captions=por_br&quality=12)
 
-Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
+Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

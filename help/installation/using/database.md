@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Recomendações para o banco de dados Campaign Classic
+title: Recomendações para o Campaign Classic Database
 description: Recomendações do banco de dados
 feature: Installation, Instance Settings
 badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 6%
+source-wordcount: '310'
+ht-degree: 11%
 
 ---
 
@@ -47,7 +47,7 @@ As DLLs de acesso são encontradas no site do Microsoft.
 
 Os parâmetros **NLS_NCHAR_CHARACTERSET** e **NLS_CHARACTERSET** precisam ser configurados corretamente para que o banco de dados funcione em Unicode ou ANSI.
 
-O Adobe Campaign usa a codificação de Oracle padrão. Usar outra codificação pode causar problemas de compatibilidade: nesse caso, entre em contato com o suporte técnico.
+O Adobe Campaign usa a codificação padrão do Oracle. Usar outra codificação pode causar problemas de compatibilidade: nesse caso, entre em contato com o suporte técnico.
 
 Para saber mais sobre sua codificação, use o seguinte comando **sqlplus**:
 
@@ -84,4 +84,4 @@ Recomendamos que você instale o suporte a UTF-8 ao instalar o mecanismo de banc
 
 **Tópicos relacionados**
 
-* [Opção não registrada nas tabelas do Adobe Campaign Classic](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Opção não registrada em tabelas do Adobe Campaign Classic](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)

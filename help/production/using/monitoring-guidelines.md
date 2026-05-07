@@ -6,8 +6,8 @@ feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 23%
+source-wordcount: '835'
+ht-degree: 28%
 
 ---
 
@@ -81,7 +81,7 @@ Além do mapa de calor, você pode criar um fluxo de trabalho que permitirá mon
 **Diretrizes gerais**
 
 Seguir as diretrizes e práticas recomendadas ao usar workflows pode ajudar a melhorar o desempenho. Para obter mais informações, consulte esta seção.
-* [Práticas recomendadas para usar fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR){target="_blank"}
+* [Práticas recomendadas para usar workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR){target="_blank"}
 * [Monitoramento da execução do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=pt-BR){target="_blank"}
 
 ### Monitoramento de entregas {#monitoring-deliveries}

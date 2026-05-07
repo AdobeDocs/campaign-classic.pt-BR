@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '999'
 ht-degree: 100%
 
 ---
@@ -18,26 +18,26 @@ ht-degree: 100%
 
 ## Seleção do modelo de renderização do formulário {#selecting-the-form-rendering-template}
 
-As configurações de formulário permitem selecionar o modelo usado para gerar as páginas. Para acessá-las, clique no botão **[!UICONTROL Properties]** na barra de ferramentas de detalhes do formulário e selecione a guia **[!UICONTROL Rendering]**. Há vários templates (folhas de estilos) disponíveis por padrão.
+As configurações de formulário permitem selecionar o modelo usado para gerar as páginas. Para acessá-las, clique no botão **[!UICONTROL Properties]** na barra de ferramentas de detalhes do formulário e selecione a guia **[!UICONTROL Rendering]**. Há vários modelos (folhas de estilos) disponíveis por padrão.
 
 ![](assets/s_ncs_admin_survey_rendering_select.png)
 
-A seção inferior do editor permite exibir uma renderização do template selecionado.
+A seção inferior do editor permite exibir uma renderização do modelo selecionado.
 
-O recurso de zoom permite editar o template selecionado.
+O recurso de zoom permite editar o modelo selecionado.
 
 ![](assets/s_ncs_admin_survey_render_edit.png)
 
-É possível modificar ou substituir esses templates. Para fazer isso, clique no link **[!UICONTROL Page layout...]** e personalize as informações.
+É possível modificar ou substituir esses modelos. Para fazer isso, clique no link **[!UICONTROL Page layout...]** e personalize as informações.
 
 ![](assets/s_ncs_admin_survey_render_edit_param.png)
 
-É possível:
+Você pode:
 
 * Alterar a imagem usada como um logotipo e adaptar seu tamanho,
-* Especificar também o caminho para acessar a imagem de pré-visualização quando os usuários selecionam esse template de renderização.
+* Especificar também o caminho para acessar a imagem de pré-visualização quando os usuários selecionam esse modelo de renderização.
 
-A guia **[!UICONTROL Headers/Footers]** permite alterar as informações exibidas nos cabeçalhos e rodapés de cada página de formulário usando esse template.
+A guia **[!UICONTROL Headers/Footers]** permite alterar as informações exibidas nos cabeçalhos e rodapés de cada página de formulário usando esse modelo.
 
 ![](assets/s_ncs_admin_survey_render_edit_header.png)
 
@@ -55,7 +55,7 @@ Os campos **[!UICONTROL Position]** permitem definir a posição dos elementos n
 
 >[!NOTE]
 >
->Os templates de renderização estão armazenados no nó **[!UICONTROL Administration > Configuration > Form rendering]**.\
+>Os modelos de renderização estão armazenados no nó **[!UICONTROL Administration > Configuration > Form rendering]**.\
 >Para obter mais informações, consulte [Personalização da renderização de formulários](#customizing-form-rendering).
 
 ## Personalização da renderização de formulários {#customizing-form-rendering}

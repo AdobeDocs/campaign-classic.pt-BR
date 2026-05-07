@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '224'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Os modelos são configurações reutilizáveis que permitem criar novos formulários. Por padrão, os modelos de formulário são armazenados com os modelos de aplicações web no nó **[!UICONTROL Resources > Templates > Web application templates]**.
+Os modelos de formulário são configurações reutilizáveis que permitem criar novos formulários. Por padrão, os modelos de formulário são armazenados com os modelos de aplicações web no nó **[!UICONTROL Resources > Templates > Web application templates]**.
 
 Aqui é possível criar novos modelos ou converter um formulário existente em um modelo.
 
@@ -26,7 +26,7 @@ Um formulário pode ser alterado para um modelo e sua configuração pode ser re
 
 ![](assets/s_ncs_admin_survey_saveastemplate.png)
 
-Essa ação abre a janela para a criação de aplicações Web. É possível inserir o nome e a descrição do template, além de selecionar a pasta onde será salvo.
+Essa ação abre a janela para a criação de aplicações Web. É possível inserir o nome e a descrição do modelo, além de selecionar a pasta onde será salvo.
 
 ## Criar um novo modelo de formulário {#create-a-new-form-template}
 
@@ -34,10 +34,10 @@ Para criar um modelo de formulário Web, clique com o botão direito do mouse na
 
 ![](assets/s_ncs_admin_survey_createtemplate.png)
 
-Digite o nome do template. No campo **[!UICONTROL Instance folder]**, selecione a pasta onde são salvos os formulários Web criados com base nesse modelo. O campo **[!UICONTROL Nature]** permite adicionar as informações descritivas para classificar e/ou filtrar os vários modelos de aplicações web.
+Digite o nome do modelo. No campo **[!UICONTROL Instance folder]**, selecione a pasta onde são salvos os formulários Web criados com base nesse modelo. O campo **[!UICONTROL Nature]** permite adicionar as informações descritivas para classificar e/ou filtrar os vários modelos de aplicações web.
 
 ![](assets/s_ncs_admin_survey_createtemplate_details.png)
 
 Clique no botão **[!UICONTROL Save]** para criar o modelo e, em seguida, crie o conteúdo e defina os parâmetros.
 
-Agora é possível selecionar esse template ao criar um novo formulário.
+Agora é possível selecionar esse modelo ao criar um novo formulário.

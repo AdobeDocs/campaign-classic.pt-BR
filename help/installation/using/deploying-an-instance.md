@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '3397'
-ht-degree: 5%
+source-wordcount: '3479'
+ht-degree: 6%
 
 ---
 
@@ -476,7 +476,7 @@ O atributo de status pode ter um destes três valores:
 
 * normal: comportamento existente (sem sincronização)
 
-* incluir na lista de bloqueios blacklist: o URL é adicionado ao arquivo se retornar um erro 404. A duração (em segundos) do URL que está na inclui na lista de bloqueios é definida por um atributo **timeout** cujo valor padrão é 60s.
+* blacklist: o URL é adicionado ao arquivo se retornar um erro 404. A duração (em segundos) do URL que está na inclui na lista de bloqueios é definida por um atributo **timeout** cujo valor padrão é 60s.
 
 A configuração pronta para uso da sincronização é:
 

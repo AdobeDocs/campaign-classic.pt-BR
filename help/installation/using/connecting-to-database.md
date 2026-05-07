@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 97%
+source-wordcount: '644'
+ht-degree: 95%
 
 ---
 
@@ -49,13 +49,13 @@ Você pode definir espaços de tabela de trabalho específicos para as tabelas e
 
 ## Como criar uma conexão temporária {#creating-a-temporary-connection}
 
-Você pode definir diretamente uma conexão com um banco de dados externo a partir de atividades do workflow. Nesse caso, ele estará em um banco de dados externo local, reservado para ser usado em um workflow atual, ou seja, não será salvo nas contas externas. Esse tipo de conexão específica pode ser criada em atividades diferentes do fluxo de trabalho, particularmente as atividades **[!UICONTROL Query]**, o **[!UICONTROL Data loading (RDBMS)]**, a atividade **[!UICONTROL Enrichment]** ou a atividade **[!UICONTROL Split]**.
+Você pode definir diretamente uma conexão com um banco de dados externo a partir de atividades do fluxo de trabalho. Nesse caso, ele estará em um banco de dados externo local, reservado para ser usado em um fluxo de trabalho atual, ou seja, não será salvo nas contas externas. Esse tipo de conexão específica pode ser criada em atividades diferentes do fluxo de trabalho, particularmente as atividades **[!UICONTROL Query]**, o **[!UICONTROL Data loading (RDBMS)]**, a atividade **[!UICONTROL Enrichment]** ou a atividade **[!UICONTROL Split]**.
 
 >[!CAUTION]
 >
 >Esse tipo de configuração não é recomendado, mas pode ser utilizado periodicamente para coletar dados. No entanto, você deve criar uma conta externa, conforme apresentada na seção [Criação de uma conexão compartilhada](#creating-a-shared-connection).
 
-Por exemplo, na atividade de query, as etapas para criar uma conexão periódica com um banco de dados externo são as seguintes:
+Por exemplo, na atividade de consulta, as etapas para criar uma conexão periódica com um banco de dados externo são as seguintes:
 
 1. Clique em **[!UICONTROL Add data...]** e selecione as opções **[!UICONTROL External data]**.
 1. Selecione a opção **[!UICONTROL Locally defining the data source]**.
@@ -95,14 +95,14 @@ Por exemplo, na atividade de query, as etapas para criar uma conexão periódica
 
 Você pode proteger o acesso a um banco de dados externo ao configurar uma conta FDA externa.
 
-Para fazer isso, adicione &quot;**:ssl**&quot; após o endereço e o endereço do servidor da porta usada. Por exemplo: **192.168.0.52:4501:ssl**.
+Para fazer isso, adicione &quot;**:ssl**&quot; depois do endereço e do endereço do servidor da porta usada. Por exemplo: **192.168.0.52:4501:ssl**.
 
 Os dados serão enviados por meio do protocolo SSL seguro.
 
 ## Configurações adicionais {#additional-configurations}
 
-Se necessário, você pode criar o schema para processamento de dados em um banco de dados externo. Da mesma forma, o Adobe Campaign permite definir o mapeamento nos dados em uma tabela externa. Essas configurações são gerais e não se aplicam exclusivamente aos workflows.
+Se necessário, você pode criar o esquema para processamento de dados em um banco de dados externo. Da mesma forma, o Adobe Campaign permite definir o mapeamento nos dados em uma tabela externa. Essas configurações são gerais e não se aplicam exclusivamente aos fluxos de trabalho.
 
 >[!NOTE]
 >
->Para obter mais informações sobre como criar schemas no Adobe Campaign e definir um novo mapeamento de dados, consulte [esta página](../../configuration/using/about-schema-edition.md).
+>Para obter mais informações sobre como criar esquemas no Adobe Campaign e definir um novo mapeamento de dados, consulte [esta página](../../configuration/using/about-schema-edition.md).

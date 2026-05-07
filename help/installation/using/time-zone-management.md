@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 2%
+source-wordcount: '981'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Princípio operacional {#operating-principle}
 
-O Adobe Campaign permite expressar datas em função de seu fuso horário: isso permite que usuários internacionais trabalhem em vários fusos horários do mundo inteiro. Cada país que usa a mesma instância pode gerenciar a execução de campanhas, rastreamento, arquivamento etc. dependendo da hora local.
+O Adobe Campaign permite expressar datas em função de seu fuso horário: isso permite que usuários internacionais trabalhem em vários fusos horários do mundo inteiro. Cada país que usa a mesma instância pode gerenciar a execução de campanhas, rastreamento, arquivamento etc., dependendo do horário local.
 
 Para permitir o uso da plataforma Adobe Campaign em escala internacional, todas as datas usadas pelos sistemas devem ser vinculáveis a um fuso horário. Uma data cujo fuso horário é conhecido pode, portanto, ser importada para qualquer outro fuso horário, ou independentemente do fuso horário.
 
@@ -102,6 +102,6 @@ Exemplo de valores possíveis:
 
   Esses valores são obtidos do banco de dados tz (Olson). Para obter mais informações, consulte [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
-## Fuso horário do servidor e do banco de dados do Oracle
+## Fuso horário do servidor e do banco de dados Oracle
 
 Para o banco de dados principal, o Campaign usa o fuso horário do servidor para definir o fuso horário da sessão na conexão de banco de dados. A opção &quot;WdbcTimeZone&quot; não tem impacto. Portanto, o fuso horário do servidor deve corresponder ao fuso horário do banco de dados principal usado pelo Campaign. Se não for possível alterar o fuso horário do servidor, o fuso horário usado pelo Campaign poderá ser substituído pela configuração da variável de ambiente TZ em customer.sh.

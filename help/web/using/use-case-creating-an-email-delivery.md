@@ -7,7 +7,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '755'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Nesse caso de uso, você aprenderá as etapas para projetar uma entrega de email usando o Adobe Campaign Digital Content Editor (DCE).
 
-Nosso objetivo final é criar uma entrega com um template personalizado que contém:
+Nosso objetivo final é criar uma entrega com um modelo personalizado que contém:
 
 * Um endereço direto para um destinatário (usando nome e sobrenome)
 * Dois tipos de links para uma URL externa
@@ -27,7 +27,7 @@ Nosso objetivo final é criar uma entrega com um template personalizado que cont
 
 >[!NOTE]
 >
->Antes de começar, você deve ter pelo menos um **template HTML** configurado para hospedar o conteúdo de suas entregas futuras.
+>Antes de começar, você deve ter pelo menos um **modelo HTML** configurado para hospedar o conteúdo de suas entregas futuras.
 >
 >No **[!UICONTROL Properties]** da entrega, verifique se **[!UICONTROL Content editing mode]** (na guia **[!UICONTROL Advanced]**) está definido como **[!UICONTROL DCE]**. Para garantir a operação ideal do editor, consulte [Práticas recomendadas de edição de conteúdo](content-editing-best-practices.md).
 
@@ -39,7 +39,7 @@ Para criar uma nova entrega, coloque o cursor na guia **Campaigns** e clique em 
 
 ## Etapa 2 - Seleção de um modelo {#step-2---selecting-a-template}
 
-Selecione um template da entrega e nomeie a entrega. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus destinatários, no entanto, esse título será exibido na lista de entregas. Clique em **[!UICONTROL Continue]**.
+Selecione um modelo da entrega e nomeie a entrega. Esse nome só será visível para os usuários do console do Adobe Campaign e não por seus destinatários, no entanto, esse título será exibido na lista de entregas. Clique em **[!UICONTROL Continue]**.
 
 ![](assets/dce_delivery_model.png)
 
@@ -47,7 +47,7 @@ Selecione um template da entrega e nomeie a entrega. Esse nome só será visíve
 
 O Editor de conteúdo digital vem com vários modelos prontos para uso com várias estruturas (colunas, áreas de texto, etc.).
 
-Selecione o template de conteúdo que deseja usar e clique no botão **[!UICONTROL Start with the selected content]** para exibir o template na entrega criada.
+Selecione o modelo de conteúdo que deseja usar e clique no botão **[!UICONTROL Start with the selected content]** para exibir o modelo na entrega criada.
 
 ![](assets/dce_select_model.png)
 
@@ -55,7 +55,7 @@ Você também pode importar um conteúdo HTML criado fora do Adobe Campaign sele
 
 ![](assets/dce_select_from_file_template.png)
 
-Você pode salvar esse conteúdo como um template para uso futuro. Após criar um template de conteúdo personalizado, é possível pré-visualizá-lo na lista de templates. Para saber mais, consulte [Gerenciamento de template](template-management.md).
+Você pode salvar esse conteúdo como um modelo para uso futuro. Após criar um modelo de conteúdo personalizado, é possível pré-visualizá-lo na lista de modelos. Para saber mais, consulte [Gerenciamento de modelo](template-management.md).
 
 >[!CAUTION]
 >
@@ -103,7 +103,7 @@ Você pode salvar esse conteúdo como um template para uso futuro. Após criar u
 
 * Integrar um link a uma aplicação web
 
-  O Editor de conteúdo digital permite integrar links às aplicações web no console do Adobe Campaign, como uma landing page ou uma página de formulário. Para saber mais, consulte [Vincular a uma aplicação web](editing-content.md#link-to-a-web-application).
+  O Editor de conteúdo digital permite integrar links às aplicações web no console do Adobe Campaign, como uma página de destino ou uma página de formulário. Para saber mais, consulte [Vincular a uma aplicação web](editing-content.md#link-to-a-web-application).
 
   Selecione um campo de texto para seu link para uma aplicação web e clique no primeiro ícone. Escolha **[!UICONTROL Link to a Web application]** e selecione a aplicação desejada clicando no ícone no final do campo **Web Application**.
 

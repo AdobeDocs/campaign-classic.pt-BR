@@ -10,9 +10,9 @@ level: Intermediate, Experienced
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
-source-wordcount: '700'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 94%
 
 ---
 
@@ -62,8 +62,8 @@ A tabela a seguir fornece acesso à documentação disponível da integração d
    <td> Configure a integração entre o Adobe Campaign e a Adobe Real-time Customer Data Platform (RTCDP) para compartilhar dados de segmentos e importar públicos-alvo para o Adobe Campaign.<br /> <p><a href="../../integrations/using/get-started-sources-destinations.md">Saiba mais</a> sobre o Campaign – integração da Plataforma de dados do cliente em tempo real da Adobe</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Sistema de gerenciamento de identidade (IMS) da Adobe - Adobe ID</strong><br />  </td> 
-   <td> Configure o Adobe IMS para se conectar ao Adobe Campaign com a mesma Adobe ID das outras soluções da Adobe Experience Cloud.<br /> Para usar determinadas funcionalidades vinculadas às integrações da Adobe Experience Cloud, é necessário fazer logon com uma Adobe ID.<br /> <p><a href="../../integrations/using/about-adobe-id.md">Saiba mais</a> sobre a implementação da Adobe ID com o Adobe Campaign.</p><br /> </td> 
+   <td> <strong>Sistema de gerenciamento de identidade (IMS) da Adobe - Adobe ID</strong><br /> </td> 
+   <td> Configure o Adobe IMS para se conectar ao Adobe Campaign com o mesmo Adobe ID das outras soluções da Adobe Experience Cloud.<br /> Um Adobe ID deve ser usado para fazer logon para usar determinadas funcionalidades vinculadas às integrações do Adobe Experience Cloud.<br /> <p><a href="../../integrations/using/about-adobe-id.md">Saiba mais</a> sobre a implementação da Adobe ID com o Adobe Campaign.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
@@ -79,11 +79,11 @@ A tabela a seguir fornece acesso à documentação disponível da integração d
   </tr> 
   <tr> 
    <td> <strong>Ativos</strong><br /> </td> 
-   <td> Configure essa integração para inserir ativos da sua biblioteca da Adobe Experience Cloud em emails e landing pages criadas no Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">Saiba mais</a> sobre a integração do Adobe Campaign e o Assets</p><br /> </td> 
+   <td> Configure essa integração para inserir ativos da sua biblioteca da Adobe Experience Cloud em emails e páginas de destino criadas no Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">Saiba mais</a> sobre a integração do Adobe Campaign e o Assets</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>AEM Assets</strong><br /> </td> 
-   <td> Configure essa integração para inserir ativos de sua biblioteca do <strong>AEM Assets</strong> em emails e landing pages criadas no Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">Saiba mais</a> sobre a integração Adobe Campaign – AEM Assets.</p><br /> </td> 
+   <td> Configure essa integração para inserir ativos de sua biblioteca do <strong>AEM Assets</strong> em emails e páginas de destino criadas no Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">Saiba mais</a> sobre a integração Adobe Campaign – AEM Assets.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Experience Cloud Triggers</strong><br /> </td> 

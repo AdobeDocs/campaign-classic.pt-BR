@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
 source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1251'
 ht-degree: 6%
 
 ---
@@ -42,8 +42,8 @@ Custos mais altos de hardware e administração.
 
 ### Equipamento recomendado {#recommended-equipment}
 
-* Servidores de aplicativos: CPU quad-core de 2 Ghz, 4 GB de RAM, disco rígido SATA RAID 1 de software de 80 GB.
-* Servidores de redirecionamento: CPU quad-core de 2 Ghz, 4 GB de RAM, disco rígido SATA RAID 1 de software de 80 GB.
+* Servidores de aplicativos: CPU quad-core de 2 GHz, 4 GB de RAM, disco rígido SATA RAID 1 de software de 80 GB.
+* Servidores de redirecionamento: CPU quad-core de 2 GHz, 4 GB de RAM, RAID de software, disco rígido SATA de 80 GB.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Custos mais altos de hardware e administração.
 * Criação de dois aliases DNS no balanceador de carga:
 
    * a primeira exposta ao público para rastreamento e apontamento do balanceador de carga em um endereço IP virtual (VIP) e que é então distribuída aos dois servidores frontais,
-   * o segundo é exposto aos usuários internos para acesso por meio do console e aponta para um balanceador de carga em um endereço IP virtual (VIP) e que é então distribuído aos dois servidores de aplicativos.
+   * o segundo é exposto aos usuários internos para acesso por meio do console, apontando para um balanceador de carga em um endereço IP virtual (VIP) e que é então distribuído aos dois servidores de aplicativos.
 
 * Firewall configurado para abrir STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 para Oracle, 5432 para PostgreSQL etc.) portas. Para obter mais informações, consulte a seção [Acesso ao banco de dados](../../installation/using/network-configuration.md#database-access).
 

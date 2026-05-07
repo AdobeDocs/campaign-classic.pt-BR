@@ -6,9 +6,9 @@ feature: SMS
 role: Developer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
-source-wordcount: '8457'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '8524'
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,7 @@ Um SMS transporta mais informações do que texto. Aqui está uma lista do que v
 
 ## Protocolo SMPP {#smpp-protocol}
 
-O Adobe Campaign Classic dá suporte ao protocolo SMPP versão 3.4. Esse é um protocolo generalizado que permite enviar SMS a um provedor (SMSC) e receber SMS, bem como recibos. Para obter mais informações, consulte a [documentação do SMPP](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
+O Adobe Campaign Classic oferece suporte ao protocolo SMPP versão 3.4. Esse é um protocolo generalizado que permite enviar SMS a um provedor (SMSC) e receber SMS, bem como recibos. Para obter mais informações, consulte a [documentação do SMPP](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
 
 O equipamento de rede do lado do provedor de serviço SMS é frequentemente chamado de SMSC.
 
@@ -540,11 +540,11 @@ Quando a conexão TCP for perdida, o conector aguardará esse número de segundo
 
 #### Período de vigência do MT {#expiration-period}
 
-Tempo limite entre `SUBMIT_SM` e o `SUBMIT_SM_RESP` correspondente. Se `RESP` não for recebido a tempo, a mensagem será considerada como tendo sofrido falha, e a política global de novas tentativas do MTA será aplicada.
+Tempo-limite entre `SUBMIT_SM` e o `SUBMIT_SM_RESP` correspondente. Se `RESP` não for recebido a tempo, a mensagem será considerada como tendo sofrido falha, e a política global de novas tentativas do MTA será aplicada.
 
-#### Tempo limite da associação {#bind-timeout}
+#### Tempo-limite da associação {#bind-timeout}
 
-Tempo limite entre a tentativa de conexão TCP e a resposta `BIND_*_RESP`. Quando o tempo limite for atingido, a conexão será fechada pelo conector do Adobe Campaign e aguardará pelo tempo antes da reconexão antes de tentar novamente.
+Tempo-limite entre a tentativa de conexão TCP e a resposta `BIND_*_RESP`. Quando o tempo limite for atingido, a conexão será fechada pelo conector do Adobe Campaign e aguardará pelo tempo antes da reconexão antes de tentar novamente.
 
 #### período enquire_link {#enquire-link-period}
 
@@ -671,7 +671,7 @@ Isso indica o formato da ID retornada no campo `message_id` de `SUBMIT_SM_RESP P
 
 * **Número decimal**: espera-se que a ID seja um número decimal no formato ASCII. Espaços à esquerda e à direita e zeros à esquerda são removidos quando essa configuração é usada.
 
-* **Número hexadecimal**: espera-se que a ID seja um número hexadecimal no formato ASCII, sem 0x à esquerda nem h à direita. A ID é convertida em um número decimal antes de ser armazenada no banco de dados.
+* **Número hexadecimal**: espera-se que a identificação seja um número hexadecimal no formato ASCII, sem 0x à esquerda nem h à direita. A ID é convertida em um número decimal antes de ser armazenada no banco de dados.
 
 * **String hexadecimal**: espera-se que a ID seja um texto codificado em ASCII que seja uma string de bytes codificada como hexadecimal. Por exemplo, na PDU, você encontrará `0x34 0x31 0x34 0x32 0x34 0x33`, o que significa ASCII &quot;414243&quot;. Essa string é então decodificada como uma string hexadecimal de bytes, e você obtém &quot;ABC&quot; como resultado: você armazenará a ID &quot;ABC&quot; no banco de dados.
 
@@ -834,16 +834,16 @@ Mesmo se você não conseguir verificar os registros sozinho, será mais fácil 
 
 ### Testar o SMS {#test}
 
-* **Envio de SMS com todos os tipos de caracteres**
-Se você precisar enviar SMS com caracteres que não sejam GSM ou ASCII, tente enviar algumas mensagens com o maior número possível de caracteres diferentes. Se você configurar uma tabela de mapeamento de caracteres personalizada, envie pelo menos um SMS para todos os valores de `data_coding` possíveis.
+* **Enviar SMS com todos os tipos de caracteres**
+Se você precisar enviar SMS com caracteres não GSM ou não ASCII, tente enviar algumas mensagens com o maior número possível de caracteres diferentes. Se você configurar uma tabela de mapeamento de caracteres personalizada, envie pelo menos um SMS para todos os valores de `data_coding` possíveis.
 
 * **Verifique se o SR está corretamente processado**
-O SMS deve ser marcado como recebido no log de entregas. O log de entrega deve ser bem-sucedido e ter a seguinte aparência:
+O SMS deve ser marcado como recebido no log de delivery. O log de entrega deve ser bem-sucedido e ter a seguinte aparência:
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
 Verifique se você alterou o nome do provedor de entrega. O registro de entrega nunca deve conter **SR genérico** em ambientes de produção.
 
-* **Verifique se o MO é processado**
-Se você precisar processar o MO (respostas automáticas, armazenamento de MO no banco de dados, etc.), tente fazer alguns testes. Envie alguns SMS para todas as palavras-chave de resposta automática e verifique se a resposta é rápida o suficiente, não mais do que alguns segundos.
+* **Verificar se o MO é processado**
+Se você precisar processar o MO (respostas automáticas, armazenamento de MO no banco de dados etc.) tente fazer alguns testes. Envie alguns SMS para todas as palavras-chave de resposta automática e verifique se a resposta é rápida o suficiente, não mais do que alguns segundos.
 Verifique no log se o Adobe Campaign responde com `DELIVER_SM_RESP` com sucesso (command_status=0).
 
 ### Verificar as PDUs {#check-pdus}

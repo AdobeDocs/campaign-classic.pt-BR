@@ -8,8 +8,8 @@ content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1044'
+workflow-type: tm+mt
+source-wordcount: '1077'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ A atividade de enriquecimento permite adicionar ofertas ou links para ofertas de
 >
 >Para mais informações sobre a atividade de enriquecimento, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=pt-BR){target="_blank"}.
 
-Por exemplo, é possível enriquecer os dados de uma query de destinatário antes de uma entrega.
+Por exemplo, é possível enriquecer os dados de uma consulta de destinatário antes de uma entrega.
 
 ![](assets/int_enrichment_offer1.png)
 
@@ -87,7 +87,7 @@ Após configurar a consulta (consulte a [documentação do Campaign v8](https://
 
      ![](assets/int_enrichment_offer4.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
 
    >[!NOTE]
    >
@@ -109,7 +109,7 @@ Para fazer isso, realize o seguinte processo:
 
    ![](assets/int_enrichment_link2.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
 
    >[!NOTE]
    >
@@ -125,7 +125,7 @@ Por padrão, quando uma atividade de **enriquecimento** é usada para entrega de
 
 No entanto, é possível armazenar essas informações da seguinte maneira:
 
-1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma query e antes de uma atividade de entrega. Consulte a seção [Especificação de uma oferta ou de uma chamada para o mecanismo de oferta](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine). 
+1. Crie uma chamada para o mecanismo de oferta em uma atividade de enriquecimento feita após uma consulta e antes de uma atividade de entrega. Consulte a seção [Especificação de uma oferta ou de uma chamada para o mecanismo de oferta](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
 1. Na janela principal da atividade, selecione **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -146,7 +146,7 @@ Essa atividade funciona de acordo com o mesmo princípio que a atividade de enri
 
 ![](assets/int_offerengine_activity2.png)
 
-Após configurar seu query (consulte o [Guia de fluxos de trabalho](../../workflow/using/query.md)):
+Após configurar a consulta (consulte o [Guia de fluxos de trabalho](../../workflow/using/query.md)):
 
 1. Adicione e abra uma atividade de **[!UICONTROL Offer engine]**.
 1. Preencha os vários campos disponíveis para especificar a chamada para oferecer parâmetros de mecanismo (espaço de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros.
@@ -157,7 +157,7 @@ Após configurar seu query (consulte o [Guia de fluxos de trabalho](../../workfl
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
 
 ## Ofertas por célula {#offers-by-cell}
 
@@ -174,4 +174,4 @@ Para fazer isso, realize o seguinte processo:
 
      ![](assets/int_offer_per_cell1.png)
 
-1. Em seguida, configure uma atividade de entrega que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
+1. Em seguida, configure uma atividade de delivery que corresponda ao canal escolhido. Para obter mais informações, consulte a seção [Inserção de uma apresentação de oferta em uma entrega](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).

@@ -6,7 +6,7 @@ feature: Schema Extension
 exl-id: fb0862f9-5dcc-49f2-b99b-9822aaf3a680
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '104'
 ht-degree: 4%
 
 ---
@@ -25,9 +25,9 @@ campo-chave:==EMPTY
 
 ## Pais {#parents-9}
 
-`<key>` , `<dbindex />`
+`<key>`  ,  `<dbindex />`
 
-## Derivados {#children-9}
+## Filhos {#children-9}
 
 nenhuma
 

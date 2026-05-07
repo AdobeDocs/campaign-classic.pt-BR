@@ -6,8 +6,8 @@ feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
-workflow-type: ht
-source-wordcount: '888'
+workflow-type: tm+mt
+source-wordcount: '906'
 ht-degree: 100%
 
 ---
@@ -80,7 +80,7 @@ O módulo de **sms nlserver** consulta o roteador SMS em intervalos regulares. I
   > * Os relatórios de status de uma conta externa de SMS excluída não são processados corretamente.
   > * Uma conta SMS só pode ser vinculada a uma única conta externa para garantir que os relatórios de status sejam atribuídos à conta correta
 
-* **Unsubscription**: destinatários que desejam parar de receber entregas de SMS podem retornar uma mensagem contendo a palavra PARAR. Se o seu provedor permitir sob os termos do contrato, você poderá recuperar mensagens por meio da atividade de fluxo de trabalho de **SMS de entrada** e criar um query para habilitar a opção **Não entrar em contato com este destinatário** para os destinatários relacionados.
+* **Unsubscription**: destinatários que desejam parar de receber entregas de SMS podem retornar uma mensagem contendo a palavra PARAR. Se o seu provedor permitir sob os termos do contrato, você poderá recuperar mensagens por meio da atividade de fluxo de trabalho de **SMS de entrada** e criar uma consulta para habilitar a opção **Não entrar em contato com este destinatário** para os destinatários relacionados.
 
 ## Esquema InSMS {#insms-schema}
 

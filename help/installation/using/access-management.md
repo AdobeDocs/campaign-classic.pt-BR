@@ -6,7 +6,7 @@ feature: Installation, Access Management, Permissions
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '377'
 ht-degree: 38%
 
 ---
@@ -45,6 +45,6 @@ A Adobe Campaign fornece três privilégios de alto nível através de [direitos
 
 * **PROGRAM EXECUTION** (createProcess): permite a execução de programas externos (no servidor)
 
-* **SQL**: permite a execução de scripts SQL no banco de dados (para que ele possa ignorar o modelo de segurança). Incluir na lista de permissões Observação: se você precisar executar cálculos complexos (filtragem, por exemplo), peça ao administrador do banco de dados para criar uma função SQL e adicioná-la ao arquivo. Saiba mais [nesta página](../../installation/using/scripting-coding-guidelines.md).
+* **SQL**: permite a execução de scripts SQL no banco de dados (para que ele possa ignorar o modelo de segurança). Observação: se você precisar executar cálculos complexos (filtragem, por exemplo), peça ao administrador do banco de dados para criar uma função SQL e adicioná-la ao incluo na lista de permissões. Saiba mais [nesta página](../../installation/using/scripting-coding-guidelines.md).
 
 * **Concedê-las a poucos operadores (e confiáveis)**

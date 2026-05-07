@@ -9,7 +9,7 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2710'
 ht-degree: 68%
 
 ---
@@ -89,7 +89,7 @@ ht-degree: 68%
          + [Criar e gerenciar grupos](platform/using/access-management-groups.md)
       + [Usar direitos nomeados para configurar permissões](platform/using/access-management-named-rights.md)
       + {hide-from-toc}[Gerenciar acesso a pastas - OCULTO](platform/using/access-management-folders.md)
-   + Conectores CRM  {#connectors}
+   + Conectores CRM {#connectors}
       + [Introdução aos Conectores CRM](platform/using/crm-connectors.md)
       + {hide-from-toc}[Conectar-se ao Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
       + {hide-from-toc}[Conectar-se ao Salesforce.com](platform/using/crm-sfdc.md)
@@ -365,7 +365,7 @@ ht-degree: 68%
       + {hide-from-toc}[Solucionar problemas de [!DNL ACS Connector] - OCULTO](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatizar com fluxos de trabalho](workflow/using/about-workflows.md)
 + Automatizar com fluxos de trabalho {#automating-with-workflows}
-   + Introdução aos fluxos de trabalho {#introduction}
+   + Introdução a fluxos de trabalho {#introduction}
       + {hide-from-toc}[Sobre atividades - OCULTO](workflow/using/about-activities.md)
       + {hide-from-toc}[Criar um fluxo de trabalho - OCULTO](workflow/using/building-a-workflow.md)
       + {hide-from-toc}[Dados de destino - OCULTOS](workflow/using/targeting-data.md)
@@ -822,4 +822,4 @@ ht-degree: 68%
       + [Migração para a Nuvem pública](technotes/using/dc-migration.md)
       + [Perguntas frequentes](technotes/using/dc-migration-faq.md)
    + [Funções baseadas em GCM](technotes/using/gcm-functions.md)
-+ [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR)
++ [Painel de controle do Campaign](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/control-panel-home)

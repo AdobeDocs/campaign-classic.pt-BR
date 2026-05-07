@@ -7,8 +7,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '547'
+ht-degree: 83%
 
 ---
 
@@ -23,8 +23,8 @@ A janela de edição do DCE está dividida em três seções diferentes. Elas pe
 ![](assets/dce_decoupe_window_nb.png)
 
 1. A seção **superior** é uma área de exibição para mensagens do usuário. Essas mensagens indicam o status da aplicação web ou a entrega sendo criada, bem como avisos e mensagens de erro relacionadas ao conteúdo. Para obter mais informações, consulte [Status de conteúdo HTML](content-editing-best-practices.md#html-content-statuses).
-1. A seção à **esquerda** da janela é a área para edição de conteúdo. Nessa área, o usuário pode interagir diretamente com o conteúdo usando a barra de ferramentas pop-up: inserir um link em uma imagem, alterar a fonte, excluir um campo, etc. Para obter mais informações, consulte [Edição de formulários](editing-content.md#editing-forms).
-1. A seção à **direita** da janela é a área do painel de controle. Essa área agrupa as diferentes opções do editor, particularmente as relacionadas à configuração do título da página e opções gerais de um bloco: adicionar uma borda, vincular um campo de banco de dados a uma zona de entrada, acessar propriedades da página da Web, etc. Para obter mais informações, consulte as seções [Global options](#global-options) e [Editing content](editing-content.md)
+1. A seção à **esquerda** da janela é a área para edição de conteúdo. Nessa área, o usuário pode interagir diretamente com o conteúdo usando a barra de ferramentas pop-up: inserir um link em uma imagem, alterar a fonte, excluir um campo etc. Para obter mais informações, consulte [Edição de formulários](editing-content.md#editing-forms).
+1. A seção à **direita** da janela é a área do painel de controle. Essa área agrupa as diferentes opções do editor, particularmente as relacionadas à configuração do cabeçalho da página e opções gerais de um bloco: adicionar uma borda, vincular um campo de banco de dados a uma zona de entrada, acessar propriedades da página da Web etc. Para obter mais informações, consulte as seções [Opções globais](#global-options) e [Edição de conteúdo](editing-content.md).
 
 ## Opções globais {#global-options}
 
@@ -38,7 +38,7 @@ Ela tem quatro ícones:
 
 * O ícone **Display/Hide blocks** permite exibir quadros azuis ao redor dos blocos de conteúdo (correspondentes à tag HTML `<div>`).
 
-* O ícone **Escolher outro conteúdo** permite que o usuário carregue o novo conteúdo de um template (template existente ou template pronto para uso).
+* O ícone **Escolher outro conteúdo** permite que o usuário carregue o novo conteúdo de um modelo (modelo existente ou modelo pronto para uso).
 
   ![](assets/dce_popup_templatechoice.png)
 
@@ -46,11 +46,11 @@ Ela tem quatro ícones:
   >
   >O conteúdo selecionado substitui o conteúdo atual.
 
-* O ícone **Salvar como template** permite salvar o conteúdo atual como template. Você deve inserir o rótulo e o nome interno do template. Os templates são armazenados no nó **[!UICONTROL Resources > Templates > Content templates]**.
+* O ícone **Salvar como modelo** permite salvar o conteúdo atual como modelo. Você deve inserir o rótulo e o nome interno do modelo. Os modelos são armazenados no nó **[!UICONTROL Resources > Templates > Content templates]**.
 
   ![](assets/dce_popup_savetemplate.png)
 
-  Depois de salvo, o template está disponível e pode ser selecionado ao criar o novo conteúdo.
+  Depois de salvo, o modelo está disponível e pode ser selecionado ao criar o novo conteúdo.
 
   ![](assets/dce_create_fromtemplate.png)
 
@@ -70,7 +70,7 @@ A seção à direita do editor agrupa as principais opções que permitem que vo
 
 ![](assets/dce_right_section.png)
 
-É possível:
+Você pode:
 
 * Determine a exibição de um ou vários blocos, consulte [Definição de uma condição de visibilidade](editing-content.md#defining-a-visibility-condition),
 * Defina as bordas e os quadros, consulte [Adição de uma borda e um plano de fundo](editing-content.md#adding-a-border-and-background),

@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '769'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '770'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Defina o contexto de exibição do relatório na plataforma Adobe Campaign usand
 
 ### Tipo de seleção {#selection-type}
 
-O acesso ao relatório pode ser limitado a um contexto específico ou a um espaço de ofertas, por exemplo, uma entrega, um destinatário, uma seleção de destinatários, etc. Esse acesso é configurado na seção **[!UICONTROL Selection type]** da guia **[!UICONTROL Display]** .
+O acesso ao relatório pode ser limitado a um contexto específico ou a um espaço de ofertas, por exemplo, um delivery, um recipient, uma seleção de recipients etc. Esse acesso é configurado na seção **[!UICONTROL Selection type]** da guia **[!UICONTROL Display]**.
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
@@ -40,7 +40,7 @@ Você pode selecionar a escala a ser usada com base nas suas necessidades: 1 a 1
 
 ### Condições de exibição {#display-conditions}
 
-Também é possível determinar as condições de exibição do relatório por meio de uma query.
+Também é possível determinar as condições de exibição do relatório por meio de uma consulta.
 
 ![](assets/s_ncs_advuser_report_visibility_5.png)
 
@@ -48,7 +48,7 @@ No exemplo a seguir, o relatório é exibido se o canal principal da campanha fo
 
 ![](assets/s_ncs_advuser_report_visibility_6.png)
 
-Isso significa que, se o canal principal da campanha for mala direta, o relatório não estará disponível nos relatórios da campanha.
+Isso significa que, se o canal principal da campanha for correspondência direta, o relatório não estará disponível nos relatórios da campanha.
 
 ### Autorização de acesso {#access-authorization}
 
@@ -74,7 +74,7 @@ Para definir a categoria de um relatório, selecione-o por meio da guia **[!UICO
 
 ![](assets/report_select_category.png)
 
-É possível inserir uma nova categoria aqui e adicioná-la à lista de categorias disponíveis. A numeração correspondente é atualizada automaticamente.
+É possível inserir uma nova categoria aqui e adicioná-la à lista de categorias disponíveis. A enumeração correspondente é atualizada automaticamente.
 
 ## Criar um link para um relatório {#creating-a-link-to-a-report-}
 
@@ -86,11 +86,11 @@ Como exemplo, vamos criar um link para um relatório para torná-lo acessível p
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
-1. Selecione o relatório que deseja criar um link usando a lista suspensa. Neste exemplo, vamos selecionar o relatório **Análise por país**.
+1. Selecione o relatório que deseja criar um link usando a lista suspensa. Neste exemplo, vamos selecionar o relatório **Detalhamento por país**.
 
    ![](assets/s_ncs_advuser_report_wizard_link_02.png)
 
-1. Insira um rótulo e selecione o schema. Neste exemplo, vamos selecionar a tabela de lista de destinatários.
+1. Insira um rótulo e selecione o esquema. Neste exemplo, vamos selecionar a tabela de lista de destinatários.
 
    ![](assets/s_ncs_advuser_report_wizard_link_03.png)
 

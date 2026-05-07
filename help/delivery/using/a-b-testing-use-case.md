@@ -8,14 +8,14 @@ role: User
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '267'
 ht-degree: 100%
 
 ---
 
 # Teste A/B: teste deste caso de uso {#ab-testing-use-case}
 
-Nesse caso de uso, vamos comparar dois conteúdos de entrega de e-mail por meio de um workflow para construção do target. A mensagem e o texto são idênticos nas duas entregas: apenas o layout é alterado.
+Nesse caso de uso, vamos comparar dois conteúdos de entrega de e-mail por meio de um fluxo de trabalho de segmentação de trabalho de segmentação. A mensagem e o texto são idênticos nas duas entregas: apenas o layout é alterado.
 
 A população direcionada é dividida em três grupos: dois grupos de teste e a população restante. Uma versão diferente da entrega é enviada para cada grupo de teste.
 

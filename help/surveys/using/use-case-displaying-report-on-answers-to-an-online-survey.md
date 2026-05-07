@@ -7,7 +7,7 @@ feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '489'
 ht-degree: 100%
 
 ---
@@ -22,9 +22,9 @@ No exemplo a seguir, queremos coletar respostas de uma pesquisa on-line e exibi-
 
 Siga as etapas abaixo:
 
-1. Criação de um workflow para recuperar as respostas à pesquisa e armazená-las em uma lista.
+1. Criação de um fluxo de trabalho para recuperar as respostas à pesquisa e armazená-las em uma lista.
 1. Criação de um cubo usando os dados na lista.
-1. Criação de um relatório com a tabela dinâmica e visualização da análise das respostas.
+1. Criação de um relatório com a tabela dinâmica e visualização do detalhamento das respostas.
 
 Antes de começar neste caso de uso, é preciso ter acesso a uma pesquisa e um conjunto de respostas para analisar.
 
@@ -36,7 +36,7 @@ Antes de começar neste caso de uso, é preciso ter acesso a uma pesquisa e um c
 
 Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
-1. Crie um workflow e coloque uma atividade **[!UICONTROL Answers to a survey]**. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../surveys/using/publish-track-and-use-collected-data.md#using-the-collected-data).
+1. Crie um fluxo de trabalho e coloque uma atividade **[!UICONTROL Answers to a survey]**. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../surveys/using/publish-track-and-use-collected-data.md#using-the-collected-data).
 1. Edite a atividade e selecione a pesquisa cujas respostas deseja analisar.
 1. Habilite a opção **[!UICONTROL Select all the answer data]** para coletar todas as informações.
 
@@ -50,15 +50,15 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
    ![](assets/reporting_usecase_1_04.png)
 
-   Nesta atividade, especifique a lista que deve ser atualizada e desmarque a opção **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**: as respostas são adicionadas à tabela existente. Essa opção permitirá fazer referência à lista em um cubo. O schema vinculado à lista não será recriado em cada atualização, o que garante a integridade do cubo que usa essa lista.
+   Nesta atividade, especifique a lista que deve ser atualizada e desmarque a opção **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**: as respostas são adicionadas à tabela existente. Essa opção permitirá fazer referência à lista em um cubo. O esquema vinculado à lista não será recriado em cada atualização, o que garante a integridade do cubo que usa essa lista.
 
    ![](assets/reporting_usecase_1_03.png)
 
-1. Inicie o workflow para confirmar sua configuração.
+1. Inicie o fluxo de trabalho para confirmar sua configuração.
 
    ![](assets/reporting_usecase_1_05.png)
 
-   A lista especificada é criada e inclui o schema das respostas da pesquisa.
+   A lista especificada é criada e inclui o esquema das respostas da pesquisa.
 
 1. Adicione um programador para automatizar a coleta diária das respostas e a atualização da lista.
 
@@ -68,7 +68,7 @@ Para coletar as respostas da pesquisa, siga as etapas abaixo:
 
 É possível então criar o cubo e configurar suas medidas: elas serão usados para criar os indicadores que serão mostrados no relatório. Para obter mais informações sobre a criação e configuração de cubos, consulte [Sobre os cubos](../../reporting/using/ac-cubes.md).
 
-Neste exemplo, o cubo se baseia nos dados da lista alimentados pelo workflow criado anteriormente.
+Neste exemplo, o cubo se baseia nos dados da lista alimentados pelo fluxo de trabalho criado anteriormente.
 
 ![](assets/reporting_usecase_2_01.png)
 

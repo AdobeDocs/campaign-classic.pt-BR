@@ -6,9 +6,9 @@ badge: label="v7" type="Informative" tooltip="Aplica-se somente ao Campaign Clas
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1020'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 97%
 
 ---
 
@@ -339,7 +339,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
 
 ## Outros relatórios OOTB {#other-ootb-reports}
 
-Os relatórios a seguir também podem ser integrados. Para obter mais informações, consulte o documento na funcionalidade relacionada a eles.
+Os relatórios a seguir também são fornecidos internamente. Para obter mais informações, consulte o documento na funcionalidade relacionada a elas.
 
 <table> 
  <tbody> 

@@ -9,8 +9,8 @@ hide: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 100%
+source-wordcount: '1390'
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ As noções básicas de personalização são apresentadas [nesta seção](perso
 
 Verifique se o conteúdo da sua mensagem foi projetado corretamente para evitar erros, que geralmente estão relacionados à personalização.
 
-**Dicas**: em campos de personalização provenientes de arquivos externos disponibilizados por fornecedores terceirizados, o conteúdo HTML externo pode estar incorreto. Para evitar isso, verifique a sintaxe, o uso de tags, caracteres, etc. Por exemplo, uma tag de personalização do Adobe Campaign apresenta sempre o seguinte formato: &lt;%=table.field%>. Para obter mais informações, consulte [esta seção](about-personalization.md).
+**Dicas**: em campos de personalização provenientes de arquivos externos disponibilizados por fornecedores terceirizados, o conteúdo HTML externo pode estar incorreto. Para evitar isso, verifique a sintaxe, o uso de tags, caracteres, etc. Por exemplo, uma tag de personalização do Adobe Campaign sempre tem o seguinte formato: &lt;%=table.field%>. Para obter mais informações, consulte [esta seção](about-personalization.md).
 
 O uso incorreto de parâmetros em blocos de personalização pode ser um problema. Por exemplo, as variáveis em JavaScript devem ser usadas da seguinte forma:
 
@@ -126,7 +126,7 @@ O design responsivo garante que o email seja processado de maneira ideal para o 
 
 * Use o modo de visualização e envie provas para testar a renderização no máximo de dispositivos possível
 
-* O módulo do editor de conteúdo digital (DCE) do Adobe Campaign Classic inclui alguns modelos formatados com design responsivo para dispositivos móveis disponíveis em **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**. 
+* O módulo do editor de conteúdo digital (DCE) do Adobe Campaign Classic inclui alguns modelos formatados com design responsivo para dispositivos móveis disponíveis em **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**.
 
 ## Gerenciamento de imagens {#manage-images}
 

@@ -6,8 +6,8 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '2373'
+workflow-type: tm+mt
+source-wordcount: '2397'
 ht-degree: 100%
 
 ---
@@ -134,7 +134,7 @@ Para adicionar uma caixa suspensa a uma página de formulário, clique no botão
 
 Selecione o modo de armazenamento de resposta e confirme sua escolha.
 
-Defina os rótulos e os valores da lista na seção inferior da guia **[!UICONTROL General]**. Se as informações forem armazenadas em um campo existente do banco de dados e esse for um campo de lista discriminada, é possível preencher os valores automaticamente clicando em **[!UICONTROL Initialize the list of values from the database]**, conforme mostrado abaixo:
+Defina os rótulos e os valores da lista na seção inferior da guia **[!UICONTROL General]**. Se as informações forem armazenadas em um campo existente do banco de dados e esse for um campo de enumeração, é possível preencher os valores automaticamente clicando em **[!UICONTROL Initialize the list of values from the database]**, conforme mostrado abaixo:
 
 ![](assets/s_ncs_admin_survey_database_values.png)
 
@@ -218,7 +218,7 @@ Adicione a mesma quantidade de botões de opção que houver de rótulos. A vant
 
 >[!NOTE]
 >
->Não é possível ativar a seleção múltipla em um aplicativo Web.
+>Não é possível habilitar a seleção múltipla em um aplicativo Web.
 >No entanto, é possível inserir um campo do tipo **[!UICONTROL Multiple choice]** em um aplicativo Web, mas isso não permitirá que o usuário selecione vários valores.
 
 ## Adição de grades {#adding-grids}
@@ -369,7 +369,7 @@ Para inserir um campo para fazer upload em uma página de formulário, selecione
 
 Por padrão, os arquivos carregados são armazenados em arquivos de recurso acessíveis por meio do menu **[!UICONTROL Resources > Online > Public resources]**. Você pode usar um script para alterar esse comportamento. Esse script pode usar as funções definidas na [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR), incluindo as que se referem à manipulação de arquivos.
 
-Você pode armazenar o link para esses arquivos em uma variável local ou em um campo de banco de dados. Por exemplo, você pode estender o schema de destinatários para adicionar um link a recursos baseados em arquivo.
+Você pode armazenar o link para esses arquivos em uma variável local ou em um campo de banco de dados. Por exemplo, você pode estender o esquema de destinatários para adicionar um link a recursos baseados em arquivo.
 
 >[!CAUTION]
 >

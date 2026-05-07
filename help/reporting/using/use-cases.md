@@ -6,8 +6,8 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: ht
-source-wordcount: '1331'
+workflow-type: tm+mt
+source-wordcount: '1338'
 ht-degree: 100%
 
 ---
@@ -30,9 +30,9 @@ Para fazer isso, selecione as entregas relacionadas e clique com o botão direit
 
 ### Seleção de um tipo de análise {#selecting-a-type-of-analysis}
 
-Na primeira etapa do assistente, é possível selecionar o template de análise descritiva a ser usado. Por padrão, o Adobe Campaign oferece dois templates: **[!UICONTROL Qualitative distribution]** e **[!UICONTROL Quantitative distribution]**. Para obter mais informações, consulte a seção [Configuração do template de distribuição qualitativa](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template). As várias renderizações são apresentadas na seção [Sobre análise descritiva](../../reporting/using/about-descriptive-analysis.md).
+Na primeira etapa do assistente, é possível selecionar o modelo de análise descritiva a ser usado. Por padrão, o Adobe Campaign oferece dois modelos: **[!UICONTROL Qualitative distribution]** e **[!UICONTROL Quantitative distribution]**. Para obter mais informações, consulte a seção [Configuração do modelo de distribuição qualitativa](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template). As várias renderizações são apresentadas na seção [Sobre análise descritiva](../../reporting/using/about-descriptive-analysis.md).
 
-Para este exemplo, selecione o template **[!UICONTROL Qualitative distribution]** e escolha uma exibição com um gráfico e tabela (matriz). Nomeie o relatório (&quot;Análise descritiva&quot;) e clique em **[!UICONTROL Next]**.
+Para este exemplo, selecione o modelo **[!UICONTROL Qualitative distribution]** e escolha uma exibição com um gráfico e tabela (matriz). Nomeie o relatório (&quot;Análise descritiva&quot;) e clique em **[!UICONTROL Next]**.
 
 ![](assets/reporting_descriptive_quickstart_step_1.png)
 
@@ -88,7 +88,7 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
 ### Exemplo de exibição de gráfico {#example-of-a-chart-display}
 
-**Target**: gerar um relatório de análise no local de clientes em potencial ou de clientes.
+**Target**: gerar um relatório de análise no local de clientes potenciais ou de clientes.
 
 1. Abra o assistente de análise descritiva e selecione somente **[!UICONTROL Chart]**.
 
@@ -96,7 +96,7 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
    Clique em **[!UICONTROL Next]** para aprovar esta etapa.
 
-1. Em seguida, selecione a opção **[!UICONTROL 2 variables]** e especifique que o **[!UICONTROL First variable (abscissa)]** se refere ao status do destinatário (prospectos/clientes) e a segunda variável se refere ao país.
+1. Em seguida, selecione a opção **[!UICONTROL 2 variables]** e especifique que o **[!UICONTROL First variable (abscissa)]** se refere ao status do destinatário (clientes potenciais/clientes) e a segunda variável se refere ao país.
 1. Selecione **[!UICONTROL Cylinders]** como um tipo.
 
    ![](assets/s_ncs_user_report_wizard_05.png)
@@ -106,7 +106,7 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
    ![](assets/s_ncs_user_report_wizard_04.png)
 
-   Passe o mouse sobre uma barra para ver o número exato de clientes ou prospectos desse país.
+   Passe o mouse sobre uma barra para ver o número exato de clientes ou clientes potenciais desse país.
 
 1. Habilite ou desabilite a exibição de um dos países com base na legenda.
 
@@ -116,7 +116,7 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
 **Target**: analisar domínios de email de empresas.
 
-1. Abra o assistente de análise descritiva e selecione somente o modo de visualização **[!UICONTROL Array]**.
+1. Abra o assistente de análise descritiva e selecione somente o modo de exibição **[!UICONTROL Array]**.
 
    ![](assets/s_ncs_user_report_wizard_03a.png)
 
@@ -171,11 +171,11 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
    ![](assets/s_ncs_user_report_wizard_013.png)
 
-## Análise do target de transição em um workflow {#analyzing-a-transition-target-in-a-workflow}
+## Análise do target de transição em um fluxo de trabalho {#analyzing-a-transition-target-in-a-workflow}
 
-**Target**: gerar relatórios sobre a população de um workflow de criação de target.
+**Target**: gerar relatórios sobre a população de um fluxo de trabalho de segmentação.
 
-1. Abra o workflow para criação de target desejado.
+1. Abra o fluxo de trabalho de segmentação desejado.
 1. Clique com o botão direito do mouse em uma transição que aponte para a tabela de destinatários.
 1. Selecione **[!UICONTROL Analyze target]** no menu suspenso para abrir a janela de análise descritiva.
 
@@ -187,13 +187,13 @@ A última etapa do assistente exibe a tabela e o gráfico.
 
 ### Recomendações de análise do target {#target-analyze-recommendations}
 
-A análise de uma população em um workflow requer que a população ainda esteja presente na transição. Se o workflow for iniciado, o resultado relacionado à população pode ser removido da transição. Para executar uma análise, é possível:
+A análise de uma população em um fluxo de trabalho requer que a população ainda esteja presente na transição. Se o fluxo de trabalho for iniciado, o resultado relacionado à população pode ser removido da transição. Para executar uma análise, é possível:
 
-* Desanexar a transição da atividade de destino e iniciar o workflow para torná-lo ativo. Quando a transição começar a piscar, inicie o assistente como feito normalmente.
+* Desanexar a transição da atividade de destino e iniciar o fluxo de trabalho para torná-lo ativo. Quando a transição começar a piscar, inicie o assistente como feito normalmente.
 
   ![](assets/s_ncs_user_report_wizard_018.png)
 
-* Modifique as propriedades do workflow selecionando a opção **[!UICONTROL Keep the result of interim populations between two executions]**. Isso permite iniciar uma análise da transição de sua escolha, mesmo que o fluxo de trabalho tenha terminado.
+* Modifique as propriedades do fluxo de trabalho selecionando a opção **[!UICONTROL Keep the result of interim populations between two executions]**. Isso permite iniciar uma análise da transição de sua escolha, mesmo que o fluxo de trabalho tenha terminado.
 
   ![](assets/s_ncs_user_report_wizard_020.png)
 
@@ -204,7 +204,7 @@ A análise de uma população em um workflow requer que a população ainda este
 >[!CAUTION]
 >
 >A opção **[!UICONTROL Keep the result of interim populations between two executions]** só deve ser usada em fases de desenvolvimento, mas nunca para um ambiente em produção.\
->As populações interinas são automaticamente limpas quando o prazo de retenção é atingido. Esse prazo é especificado na guia de propriedades **[!UICONTROL Execution]** do workflow.
+>As populações interinas são automaticamente limpas quando o prazo de retenção é atingido. Esse prazo é especificado na guia de propriedades **[!UICONTROL Execution]** do fluxo de trabalho.
 
 ## Análise de logs de rastreamento do destinatário {#analyzing-recipient-tracking-logs}
 

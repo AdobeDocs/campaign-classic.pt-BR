@@ -9,7 +9,7 @@ topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '521'
 ht-degree: 100%
 
 ---
@@ -30,9 +30,9 @@ O gancho **[!UICONTROL Dynamic offer]** é configurado com o peso da oferta no A
 
 ## Carregamento de target {#target-loading}
 
-Este gancho permite enriquecer o perfil do contato (que foi carregado pela query pronta para uso) com dados adicionais de um sistema externo.
+Este gancho permite enriquecer o perfil do contato (que foi carregado pela consulta pronta para uso) com dados adicionais de um sistema externo.
 
-Os dados coletados devem ser inseridos no nó de dados da chamada (nó Interaction). O integrador deve ter estendido o schema de dados de chamada antecipadamente para definir a estrutura dos dados coletados. O usuário pode acessar esses dados da mesma forma que os dados de chamada padrão (em regras de qualificação e nível de personalização).
+Os dados coletados devem ser inseridos no nó de dados da chamada (nó Interaction). O integrador deve ter estendido o esquema de dados de chamada antecipadamente para definir a estrutura dos dados coletados. O usuário pode acessar esses dados da mesma forma que os dados de chamada padrão (em regras de elegibilidade e nível de personalização).
 
 **Parâmetros de entrada:**
 
@@ -47,7 +47,7 @@ Os dados coletados devem ser inseridos no nó de dados da chamada (nó Interacti
 
 >[!NOTE]
 >
->O parâmetro **xmlInteraction** contém os dados de chamada e o perfil do contato que foi carregado pela query pronta para uso.
+>O parâmetro **xmlInteraction** contém os dados de chamada e o perfil do contato que foi carregado pela consulta pronta para uso.
 
 **Exemplo:**
 
@@ -118,9 +118,9 @@ return aReturnedProps;
 
 ## Oferta dinâmica {#dynamic-offer}
 
-Este gancho permite fazer uma chamada para um mecanismo externo para selecionar uma lista de produtos vinculados a uma oferta. Ele é configurado na oferta após as regras de qualificação e antes do aplicativo de regras de tipologia.
+Este gancho permite fazer uma chamada para um mecanismo externo para selecionar uma lista de produtos vinculados a uma oferta. Ele é configurado na oferta após as regras de elegibilidade e antes do aplicativo de regras de tipologia.
 
-O integrador deve estender o schema **PropositionRcp** anteriormente com as informações adicionais sobre o produto. Para especificar onde esses dados serão armazenados, um link **[!UICONTROL Proposition being processed]** está disponível na guia **[!UICONTROL Storage]** do espaço.
+O integrador deve estender o esquema **PropositionRcp** anteriormente com as informações adicionais sobre o produto. Para especificar onde esses dados serão armazenados, um link **[!UICONTROL Proposition being processed]** está disponível na guia **[!UICONTROL Storage]** do espaço.
 
 ![](assets/interaction_hooks_3.png)
 

@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: ht
-source-wordcount: '1166'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1316'
+ht-degree: 97%
 
 ---
 
@@ -97,7 +97,7 @@ As listas estão disponíveis no link **[!UICONTROL Lists]** na seção à esque
 
 Cada seção de recurso principal permite procurar entre os elementos disponíveis. Para fazer isso, use os atalhos na seção **[!UICONTROL Browsing]**. O link **[!UICONTROL Other choices]** permite acessar todas as outras páginas, independentemente do ambiente.
 
-Você pode criar um novo elemento (entrega, aplicativo da web, fluxo de trabalho, etc.) usando os atalhos na seção **[!UICONTROL Create]**, à esquerda da tela. Use o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
+Você pode criar um novo elemento (entrega, aplicativo da Web, fluxo de trabalho etc.) usando os atalhos na seção **[!UICONTROL Create]**, à esquerda da tela. Use o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
 
 Por exemplo, na página de entrega, use o botão **[!UICONTROL Create]** para criar uma nova entrega.
 
@@ -114,7 +114,7 @@ Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na
 
 * [Configurações da IU do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-* [Gerenciar pastas e visualizações no explorer](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
+* [Gerenciar pastas e visualizações no explorador](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
 
 
 ## Trabalhar com dados {#work-with-data}

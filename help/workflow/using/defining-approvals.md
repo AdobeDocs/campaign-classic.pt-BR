@@ -85,8 +85,8 @@ A opção **[!UICONTROL Do not terminate the task]** deixa a aprovação ativa q
 Você pode criar quatro tipos de expirações:
 
 * **Delay after task start**: a expiração é calculada adicionando-se um período de tempo especificado à data em que a aprovação é ativada.
-* **Delay after a given date**: a expiração é calculada adicionando um período a uma data especificada. 
-* **Delay before a given date**: a expiração é calculada subtraindo-se um período de uma data especificada. 
+* **Delay after a given date**: a expiração é calculada adicionando um período a uma data especificada.
+* **Delay before a given date**: a expiração é calculada subtraindo-se um período de uma data especificada.
 * **Expiration calculated by script**: a expiração é calculada usando o JavaScript.
 
   O exemplo a seguir calcula uma expiração 24 horas antes da data em que uma entrega é iniciada (identificada por **vars.deliveryId**):

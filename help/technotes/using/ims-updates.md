@@ -7,8 +7,8 @@ hide: true
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 6%
+source-wordcount: '617'
+ht-degree: 10%
 
 ---
 
@@ -94,5 +94,5 @@ Se você não atualizou sua versão do Internet Explorer, verá a seguinte mensa
 * [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)
 * [Disponibilizar o novo Console do cliente para os usuários](../../installation/using/client-console-availability-for-windows.md)
 * [Instalar o console do cliente do Campaign](../../installation/using/installing-the-client-console.md)
-* [Acessar a Distribuição de Software da Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR)
-* [Baixar compilação do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Acessar a Distribuição de software da Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR)
+* [Baixar build do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)

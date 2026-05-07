@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 5%
+source-wordcount: '470'
+ht-degree: 8%
 
 ---
 
@@ -37,7 +37,7 @@ Os arquivos de log de várias instâncias são listados na seguinte tabela:
 
 | Arquivo | Descrição |
 |---|---|
-| web.log | Registros do módulo da Web (console do cliente, relatórios, API SOAP etc.) |
+| web.log | Logs do módulo da Web (console do cliente, relatórios, API do SOAP etc.) |
 | webmdl.log | Logs do módulo de redirecionamento |
 | watchdog.log | Logs do módulo de monitoramento do processo do Adobe Campaign |
 | trackinglogd.log | Logs de rastreamento |

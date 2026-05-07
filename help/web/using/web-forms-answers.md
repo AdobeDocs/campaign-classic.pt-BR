@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '869'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 99%
 
 ---
 
@@ -39,13 +39,13 @@ Para salvar os dados em um campo existente do banco de dados, clique no ícone *
 
 >[!NOTE]
 >
->O documento de referência padrão é o schema **nms:recipient.** Para exibi-lo ou escolher um novo, selecione o formulário na lista e clique no botão **[!UICONTROL Properties]**.
+>O documento de referência padrão é o esquema **nms:recipient**. Para exibi-lo ou escolher um novo, selecione o formulário na lista e clique no botão **[!UICONTROL Properties]**.
 
 ### Armazenamento de dados em uma variável local {#storing-data-in-a-local-variable}
 
 Você pode usar variáveis locais de modo que, mesmo que os dados não sejam armazenados no banco de dados, ele pode ser reutilizado na página ou nas outras páginas, por exemplo, para colocar condições na exibição de um campo ou para personalizar uma mensagem.
 
-Isso significa que você pode utilizar o valor de um campo não salvo para autorizar a visualização de um grupo de opções na página. Na página abaixo, o tipo de veículo não está armazenado no banco de dados:
+Isso significa que você pode utilizar o valor de um campo não salvo para autorizar a exibição de um grupo de opções na página. Na página abaixo, o tipo de veículo não está armazenado no banco de dados:
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 

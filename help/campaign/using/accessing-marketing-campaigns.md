@@ -8,7 +8,7 @@ hide: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1198'
 ht-degree: 100%
 
 ---
@@ -46,7 +46,7 @@ O bloco **[!UICONTROL Browsing]** da guia **[!UICONTROL Campaigns]** oferece vá
 
 Cada campanha pertence a um programa que, por sua vez, pertence a um plano. Os planos, programas e campanhas são acessados por meio do menu **[!UICONTROL Campaign calendar]** na guia **Campanhas**.
 
-Para editar um plano, programa, campanha ou entrega, clique no nome no calendário e clique em **[!UICONTROL Open...]**. Eles são exibidos em uma nova guia, conforme mostrado abaixo:
+Para editar um plano, programa, campanha ou entrega, clique no nome no calendário e clique em **[!UICONTROL Open...]**. Ele é exibido em uma nova guia, conforme mostrado abaixo:
 
 ![](assets/d_ncs_user_interface_hierar.png)
 
@@ -142,14 +142,14 @@ O link **[!UICONTROL Reports]** permite acessar os relatórios da campanha.
 As campanhas são criadas por meio de modelos de campanha. É possível configurar modelos reutilizáveis para os quais algumas opções estão selecionadas e outras configurações já estão salvas. Para cada campanha, a seguinte funcionalidade é oferecida:
 
 * Referência de [documentos e recursos](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): é possível associar documentos a uma campanha (resumo, relatório, imagens etc.). Todos os formatos de documento são compatíveis.
-* Definir custos: para cada campanha, o Adobe Campaign permite definir [entradas de custo e estruturas de cálculo de custo](../../campaign/using/providers-stocks-and-budgets.md#defining-cost-categories) que podem ser usadas ao criar a campanha de marketing. Por exemplo: custos de impressão, uso de uma agência externa, aluguel de sala. 
+* Definir custos: para cada campanha, o Adobe Campaign permite definir [entradas de custo e estruturas de cálculo de custo](../../campaign/using/providers-stocks-and-budgets.md#defining-cost-categories) que podem ser usadas ao criar a campanha de marketing. Por exemplo: custos de impressão, uso de uma agência externa, aluguel de sala.
 * Definir objetivos: é possível definir objetivos quantificáveis para uma campanha, por exemplo, número de inscritos, volume de negócios etc. Essas informações são usadas posteriormente nos relatórios de campanha.
 * Gerenciar [seed addresses](../../delivery/using/about-seed-addresses.md) e [grupos de controle](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 * Gerenciar aprovações: é possível selecionar os tratamentos a serem aprovados e, se necessário, selecionar os operadores de revisão ou grupos de operadores. [Saiba mais](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
 
 >[!NOTE]
 >
->Para acessar as configurações da campanha e fazer alterações, clique no link **[!UICONTROL Advanced campaign parameters...]** na guia **[!UICONTROL Edit]**. 
+>Para acessar as configurações da campanha e fazer alterações, clique no link **[!UICONTROL Advanced campaign parameters...]** na guia **[!UICONTROL Edit]**.
 
 ## Utilização da interface da web {#using-the-web-interface-}
 

@@ -28,7 +28,7 @@ Os fluxos de trabalho detalhados são instalados com o módulo **Marketing Distr
   <tr> 
    <td> <span class="uicontrol">Processos de marketing distribuído</span> <br /> </td> 
    <td> <span class="uicontrol">centralLocalMgt</span> <br /> </td> 
-   <td> Esse fluxo de trabalho executa processos vinculados ao uso do módulo de marketing distribuído. Ele inicia a criação de campanha local e gerencia notificações vinculadas a pedidos e à disponibilidade do pacote de campanha.<br /> </td> 
+   <td> Este fluxo de trabalho inicia o processamento relacionado ao uso do módulo de marketing distribuído. Ele inicia a criação de campanha local e gerencia notificações vinculadas a pedidos e à disponibilidade do pacote de campanha.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

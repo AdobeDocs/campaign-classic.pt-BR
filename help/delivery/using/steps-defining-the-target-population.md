@@ -8,7 +8,7 @@ hide: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1763'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ Para selecionar os destinatários da entrega, siga as etapas abaixo:
    Os seguintes tipos de target são oferecidos por padrão:
 
    * **[!UICONTROL Filtering conditions]**: esta opção permite que você defina uma consulta e exiba o resultado. Para mais informações sobre filtros, consulte a [documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
-   * **[!UICONTROL Subscribers of an information service]**: esta opção permite que você selecione um boletim informativo ao qual os destinatários devem ser inscritos para receberem a entrega que está sendo criada.
+   * **[!UICONTROL Subscribers of an information service]**: esta opção permite selecionar um boletim informativo no qual os destinatários devem ser inscritos para receberem a entrega que está sendo criada.
 
      ![](assets/s_ncs_user_wizard_email02c.png)
 

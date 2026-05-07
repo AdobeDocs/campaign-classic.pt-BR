@@ -8,8 +8,8 @@ role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 100%
+source-wordcount: '843'
+ht-degree: 97%
 
 ---
 
@@ -29,9 +29,9 @@ O documento XML de um formulário de entrada deve conter o elemento raiz **`<for
 </form>
 ```
 
-Por padrão, um formulário é associado ao schema de dados que tem o mesmo nome e namespace. Para associar um formulário a um nome diferente, insira a chave do schema no atributo **entity-schema** do elemento **`<form>`**.
+Por padrão, um formulário é associado ao esquema de dados que tem o mesmo nome e namespace. Para associar um formulário a um nome diferente, insira a chave do esquema no atributo **entity-schema** do elemento **`<form>`**.
 
-Para ilustrar a estrutura de um formulário de entrada, descrevemos uma interface com base em nosso exemplo de schema &quot;cus:book&quot;:
+Para ilustrar a estrutura de um formulário de entrada, descrevemos uma interface com base em nosso exemplo de esquema &quot;cus:book&quot;:
 
 ![](assets/d_ncs_content_form1.png)
 
@@ -47,11 +47,11 @@ Este é o formulário de entrada correspondente:
 
 A descrição dos elementos de edição começa com o elemento raiz **`<form>`**.
 
-Um controle de edição é inserido em um elemento **`<input>`** com o atributo **xpath** contendo o caminho do campo do schema.
+Um controle de edição é inserido em um elemento **`<input>`** com o atributo **xpath** contendo o caminho do campo do esquema.
 
 **Lembrete sobre sintaxe XPath:**
 
-A linguagem XPath é usada no Adobe Campaign para referenciar um elemento ou atributo que pertence a um schema de dados.
+A linguagem XPath é usada no Adobe Campaign para referenciar um elemento ou atributo que pertence a um esquema de dados.
 
 XPath é uma sintaxe que permite localizar um nó na árvore de um documento XML.
 
@@ -63,7 +63,7 @@ Exemplos:
 * **chapter/@title**: seleciona o atributo &quot;title&quot; no elemento `<chapter>`.
 * **../@date**: seleciona a data do elemento primário do elemento atual.
 
-O controle de edição se adapta automaticamente ao tipo de dados correspondente e usa o rótulo definido no schema.
+O controle de edição se adapta automaticamente ao tipo de dados correspondente e usa o rótulo definido no esquema.
 
 Por padrão, cada campo é exibido em uma linha e ocupa todo o espaço disponível, dependendo do tipo de dados.
 
@@ -96,11 +96,11 @@ Este controle exibe uma lista de colunas editável com uma barra de ferramentas 
 
 O controle de lista deve ser preenchido com o atributo **type=&quot;list&quot;** e o caminho da lista deve se referir ao elemento de coleção.
 
-As colunas são declaradas pelos elementos secundários **`<input>`** da lista.
+As colunas são declaradas pelos elementos filhos **`<input>`** da lista.
 
 >[!NOTE]
 >
->As setas de ordenação para cima e para baixo são adicionadas automaticamente quando o atributo **ordered=&quot;true&quot;** é preenchido para o elemento de coleção no schema de dados.
+>As setas de ordenação para cima e para baixo são adicionadas automaticamente quando o atributo **ordered=&quot;true&quot;** é preenchido para o elemento de coleção no esquema de dados.
 
 Por padrão, os botões da barra de ferramentas estão alinhados verticalmente. Os botões também podem ser alinhados horizontalmente:
 
@@ -172,13 +172,13 @@ O controle de lista deve ser preenchido com o atributo **type=&quot;notebooklist
 
 O título da guia contém o valor dos dados inseridos pelo atributo **xpath-label**.
 
-Os controles de edição devem ser declarados em um elemento **`<container>`** que se origina do controle de lista.
+Os controles de edição devem ser declarados em um elemento **`<container>`** que seja filho do controle de lista.
 
 Use os botões da barra de ferramentas para adicionar ou excluir elementos da lista.
 
 >[!NOTE]
 >
->As setas de ordenação esquerda e direita são adicionadas automaticamente quando o atributo **ordered=&quot;true&quot;** é preenchido para o elemento de coleção no schema de dados.
+>As setas de ordenação esquerda e direita são adicionadas automaticamente quando o atributo **ordered=&quot;true&quot;** é preenchido para o elemento de coleção no esquema de dados.
 
 ## Containers {#containers}
 

@@ -8,7 +8,7 @@ role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '168'
 ht-degree: 100%
 
 ---
@@ -21,4 +21,4 @@ Também é possível permitir que seus destinatários de entrega os compartilhem
 
 >[!NOTE]
 >
->Essa funcionalidade vem como padrão com o Adobe Campaign. O aplicativo opcional de marketing social permite entrar em contato com os seus clientes e clientes em potencial pelo Facebook e pelo X (anteriormente conhecido como Twitter).
+>Essa funcionalidade vem como padrão com o Adobe Campaign. O aplicativo opcional de marketing social permite entrar em contato com os seus clientes e clientes potenciais pelo Facebook e pelo X (anteriormente conhecido como Twitter).

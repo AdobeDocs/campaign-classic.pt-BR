@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
 source-git-commit: 02ecc0e6bb3bd361f512baeefc9e0f2271063387
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 81%
+source-wordcount: '652'
+ht-degree: 80%
 
 ---
 
@@ -25,7 +25,7 @@ Esses direitos são os seguintes:
 
   >[!IMPORTANT]
   >
-  >**Depois de migrar para o IMS:** depois de migrar para o Adobe Identity Management System (IMS), qualquer Perfil de Produto ou Direito Nomeado que contenha a palavra &quot;admin&quot; em seu nome (como &quot;Administradores&quot;, &quot;admin&quot;, &quot;administradores&quot; etc.) concederá acesso automaticamente ao Painel de Controle do Campaign. Recomendamos evitar o uso de &quot;administrador&quot; em nomes de Direito nomeado ou Função, a menos que você pretenda que esses usuários tenham acesso ao Painel de controle do Campaign. Saiba mais sobre [migração do IMS](../../technotes/using/migrate-users-to-ims.md) e [gerenciamento do acesso ao Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR){target="_blank"}.
+  >**Depois de migrar para o IMS:** depois de migrar para o Adobe Identity Management System (IMS), qualquer Perfil de Produto ou Direito Nomeado que contenha a palavra &quot;administrador&quot; em seu nome (como &quot;Administradores&quot;, &quot;administrador&quot;, &quot;administradores&quot; etc.) concederá acesso automaticamente ao Painel de controle do Campaign. Recomendamos evitar o uso de &quot;administrador&quot; em nomes de Direito nomeado ou Função, a menos que você pretenda que esses usuários tenham acesso ao Painel de controle do Campaign. Saiba mais sobre [migração do IMS](../../technotes/using/migrate-users-to-ims.md) e [gerenciamento do acesso ao Painel de Controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR){target="_blank"}.
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**: é possível definir várias etapas de aprovação em fluxos de trabalho e entregas para garantir que o estado atual tenha sido aprovado por um operador ou grupo atribuído. Os usuários com o direito **[!UICONTROL APPROVAL ADMINISTRATION]** podem definir etapas de aprovação e também atribuir um operador ou grupo de operadores que devem aprovar essas etapas.
 

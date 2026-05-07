@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Importação e exportação de dados usando workflows
-description: Saiba como importar e exportar dados usando workflows no Campaign
+title: Importação e exportação de dados usando fluxos de trabalho
+description: Saiba como importar e exportar dados usando fluxos de trabalho no Campaign
 feature: Data Management, Workflows
 badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
 audience: platform
@@ -9,19 +9,19 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
 source-git-commit: 4fb262c616276f785f97b42bec22c150afc6e5c8
-workflow-type: ht
-source-wordcount: '87'
+workflow-type: tm+mt
+source-wordcount: '98'
 ht-degree: 100%
 
 ---
 
-# Importar e exportar dados usando workflows {#import-export-workflows}
+# Importar e exportar dados usando fluxos de trabalho {#import-export-workflows}
 
 
 
 ## Coleta de dados {#collecting-data-workflows}
 
-Os workflows podem ser uma maneira útil de automatizar alguns dos processos de importação. Se você importa dados de um arquivo local ou de um SFTP, você pode usar workflows para padronizar os procedimentos de gerenciamento de dados.
+Os fluxos de trabalho podem ser uma maneira útil de automatizar alguns dos processos de importação. Se você importa dados de um arquivo local ou de um SFTP, você pode usar fluxos de trabalho para padronizar os procedimentos de gerenciamento de dados.
 
 >[!NOTE]
 >

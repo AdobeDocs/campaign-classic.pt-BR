@@ -7,7 +7,7 @@ hide: true
 topic-tags: technical-workflows
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '166'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ Os fluxos de trabalho detalhados abaixo são instalados com o módulo **Campaign
   <tr> 
    <td> <span class="uicontrol">Campaign jobs</span> <br /> </td> 
    <td> <span class="uicontrol">operationMgt</span><br /> </td> 
-   <td> Esse fluxo de trabalho gerencia os processos para campanhas de marketing (inicia a segmentação, extrai arquivos etc.). Ele também cria fluxos de trabalho relacionados a campanhas recorrentes e periódicas.<br /> </td> 
+   <td> Esse fluxo de trabalho gerencia os processos das campanhas de marketing (inicia o direcionamento, faz a extração de arquivos etc.). Ele também cria fluxos de trabalho relacionados a campanhas recorrentes e periódicas.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Empregos em prestadores de serviços</span> <br /> </td> 

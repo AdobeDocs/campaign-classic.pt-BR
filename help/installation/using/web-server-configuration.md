@@ -9,8 +9,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 source-git-commit: dba90a154e08400ae6ab6478623a50d48d72207c
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 3%
+source-wordcount: '332'
+ht-degree: 5%
 
 ---
 
@@ -44,14 +44,14 @@ Abaixo, você encontrará algumas das principais práticas recomendadas relacion
 
   SCHANNEL\Protocols\SSL 3.0\Server: Habilitado: Valor DWORD (32 bits) para 0
 
-* Remova o método **TRACE**:
+* Remover o método **TRACE**:
 
   **No Apache**, edite em /etc/apache2/conf.d/security: TraceEnable **Off**
 
   **No IIS** (consulte a [documentação](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), execute a seguinte configuração:
 
    * Verifique se o serviço ou recurso de função **Filtragem de Solicitação** está instalado.
-   * No painel **Solicitar filtragem**, clique na guia verbos de HTTP e clique em Negar verbo. No painel Ações, digite TRACE na caixa de diálogo aberta.
+   * No painel **Solicitar filtragem**, clique na guia verbos de HTTP e clique em Negar verbo. No painel Ações, insira TRACE na caixa de diálogo aberta.
 
 * Remova o banner:
 
@@ -81,5 +81,5 @@ Abaixo, você encontrará algumas das principais práticas recomendadas relacion
 
 Tópicos relacionados:
 
-* [Visão geral da conformidade da Adobe Marketing Cloud](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Visão geral sobre a Segurança do Adobe Campaign](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Visão geral de conformidade da Adobe Marketing Cloud](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Visão geral da Segurança do Adobe Campaign](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/governance-privacy-security/overview#security)

@@ -9,8 +9,8 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
-source-wordcount: '103'
+workflow-type: tm+mt
+source-wordcount: '111'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 
 
-O Adobe Campaign Classic fornece recursos de gerenciamento de dados que permitem importar e exportar dados. Essas operações podem ser efetuadas utilizando workflows ou importações e exportações genéricas.
+O Adobe Campaign Classic fornece recursos de gerenciamento de dados que permitem importar e exportar dados. Essas operações podem ser efetuadas utilizando fluxos de trabalho ou importações e exportações genéricas.
 
 >[!IMPORTANT]
 >

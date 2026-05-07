@@ -6,8 +6,8 @@ feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 5%
+source-wordcount: '440'
+ht-degree: 6%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 5%
 
    Faça backup do ponteiro de opção correspondente com o seguinte formato `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
 
-[Saiba mais sobre backup](../../production/using/backup.md)
+   [Saiba mais sobre backup](../../production/using/backup.md)
 
 1. (**OPCIONAL**) se já estiver usando uma atividade do Agendador, abra o fluxo de trabalho e reconfigure-o da seguinte maneira:
 

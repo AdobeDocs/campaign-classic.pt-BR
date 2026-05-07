@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
-workflow-type: ht
-source-wordcount: '2512'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2523'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-É possível adicionar uma tabela a um relatório para exibir dados. Pode ser uma tabela dinâmica criada com base em medições de cubo, uma lista com grupo ou uma tabela contendo uma análise de valores.
+É possível adicionar uma tabela a um relatório para exibir dados. Pode ser uma tabela dinâmica criada com base em medições de cubo, uma lista com grupo ou uma tabela contendo um detalhamento de valores.
 
 ![](assets/s_advuser_report_page_activity_05.png)
 
@@ -48,7 +48,7 @@ Observe as seguintes etapas para criar uma tabela do tipo &quot;Lista com grupo&
 1. Preencha a tabela de origem e selecione os campos da tabela que as estatísticas abordarão.
 1. Coloque uma atividade **[!UICONTROL Page]** no gráfico. Para obter mais informações, consulte [Elementos estáticos](../../reporting/using/creating-a-new-report.md#static-elements).
 1. Insira uma tabela do tipo **[!UICONTROL List with group]** na página.
-1. Especifique o caminho de dados ou a tabela selecionada como uma fonte de dados na query.
+1. Especifique o caminho de dados ou a tabela selecionada como uma fonte de dados na consulta.
 
    Essa etapa é obrigatória se desejar recuperar os campos na tabela de origem posteriormente e inseri-los nas células da tabela.
 
@@ -103,7 +103,7 @@ Use a entrada do menu **[!UICONTROL Expression]** para selecionar os valores a s
 
 * Para inserir os valores a serem analisados diretamente na tabela, selecione-os entre os campos disponíveis.
 
-  A lista de campos disponíveis coincide com o conteúdo da query antes da tabela no gráfico de criação de relatório.
+  A lista de campos disponíveis coincide com o conteúdo da consulta antes da tabela no gráfico de criação de relatório.
 
   ![](assets/s_advuser_ergo_listgroup_011.png)
 
@@ -111,7 +111,7 @@ Use a entrada do menu **[!UICONTROL Expression]** para selecionar os valores a s
 
   Para fazer isso, use o mesmo processo de inserção de um campo no banco de dados, mas não selecione uma expressão. Insira o rótulo no campo **[!UICONTROL Label]**. Ele será exibido como está.
 
-* Cálculo de uma agregação (uma média, uma soma, etc.) e sua exibição na célula
+* Cálculo de uma agregação (uma média, uma soma, etc.) e exibi-lo na célula.
 
   Para fazer isso, use a entrada de menu **[!UICONTROL Aggregates]** e selecione a campanha desejada.
 
@@ -198,13 +198,13 @@ A guia **Extra** permite vincular um visual a seus dados, como uma marca colorid
 
 ## Caso de uso: criar um relatório com uma lista de grupos {#use-case--create-a-report-with-a-group-list}
 
-Neste exemplo, vamos criar um relatório de duas páginas: a primeira página conterá a lista e as entregas totais por campanha, bem como o número de mensagens enviadas. Os nomes das entregas serão links clicáveis e permitirão ir para a segunda página do relatório para exibir a análise das entregas por domínio de email para a entrega selecionado com uma tabela e um gráfico. Na segunda página, a tabela servirá como uma legenda para o gráfico.
+Neste exemplo, vamos criar um relatório de duas páginas: a primeira página conterá a lista e as entregas totais por campanha, bem como o número de mensagens enviadas. Os nomes das entregas serão links clicáveis e permitirão ir para a segunda página do relatório para exibir o detalhamento das entregas por domínio de email para a entrega selecionado com uma tabela e um gráfico. Na segunda página, a tabela servirá como uma legenda para o gráfico.
 
 ![](assets/reporting_quick_start_report-final.png)
 
 ### Etapa 1 - Criar um relatório {#step-1---create-a-report}
 
-Crie um novo relatório que atenda ao schema da campanha, **[!UICONTROL Campaigns (nms)]**.
+Crie um novo relatório que atenda ao esquema da campanha, **[!UICONTROL Campaigns (nms)]**.
 
 ![](assets/s_advuser_report_listgroup_001.png)
 
@@ -216,11 +216,11 @@ Acesse o gráfico e adicione os primeiros componentes a serem usados para criar 
 
 ### Etapa 2 – Criar a primeira consulta {#step-2---create-the-first-query}
 
-A primeira query permite coletar as entregas vinculadas a cada campanha. O objetivo é exibir um relatório sobre as várias entregas do banco de dados do Adobe Campaign vinculadas a cada campanha.
+A primeira consulta permite coletar as entregas vinculadas a cada campanha. O objetivo é exibir um relatório sobre as várias entregas do banco de dados do Adobe Campaign vinculadas a cada campanha.
 
-Clique duas vezes na primeira query para editá-la e siga as etapas abaixo para configurá-la:
+Clique duas vezes na primeira consulta para editá-la e siga as etapas abaixo para configurá-la:
 
-1. Comece alterando o esquema no qual a origem da query é aplicada: selecione o esquema **[!UICONTROL Deliveries (nms)]**.
+1. Comece alterando o esquema no qual a origem da consulta é aplicada: selecione o esquema **[!UICONTROL Deliveries (nms)]**.
 1. Clique no link **[!UICONTROL Edit query]** e exiba os campos avançados.
 
    ![](assets/reporting_quick_start_query-1.png)
@@ -255,7 +255,7 @@ Clique duas vezes na primeira query para editá-la e siga as etapas abaixo para 
 
    ![](assets/reporting_quick_start_query_filter.png)
 
-1. Clique em **[!UICONTROL Finish]** para salvar essas condições e em **[!UICONTROL Ok]** para fechar o editor da consulta.
+1. Clique em **[!UICONTROL Finish]** para salvar essas condições e em **[!UICONTROL Ok]** para fechar o editor de consultas.
 
 ### Etapa 3: criar a primeira página {#step-3--create-the-first-page}
 
@@ -303,7 +303,7 @@ Nesta etapa, vamos configurar a primeira página do relatório. Para configurá-
 
    ![](assets/s_advuser_report_listgroup_0112.png)
 
-1. Na seção inferior da janela, clique em **[!UICONTROL Add]** e especifique o caminho **`/vars/selectedDelivery`** e a expressão **[!UICONTROL @deliveryId]** correspondente ao alias da chave primária da entrega, conforme definido na query criada anteriormente. Essa fórmula permite acessar a entrega selecionada.
+1. Na seção inferior da janela, clique em **[!UICONTROL Add]** e especifique o caminho **`/vars/selectedDelivery`** e a expressão **[!UICONTROL @deliveryId]** correspondente ao alias da chave primária da entrega, conforme definido na consulta criada anteriormente. Essa fórmula permite acessar a entrega selecionada.
 
    ![](assets/s_advuser_report_listgroup_010.png)
 
@@ -357,15 +357,15 @@ Nesta etapa, vamos configurar a primeira página do relatório. Para configurá-
    >
    >Recomendamos aguardar até que o relatório seja criado antes de mesclar células já que a mescla é irreversível.
 
-### Etapa 4 – Criação da segunda query {#step-4---create-the-second-query}
+### Etapa 4 – Criação da segunda consulta {#step-4---create-the-second-query}
 
-Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe de uma entrega quando o usuário do relatório clicar nela. Antes de adicionar a query, edite a página criada e habilite a transição de saída para que ela possa ser vinculada à query.
+Queremos adicionar uma segunda consulta e uma segunda página para exibir o detalhe de uma entrega quando o usuário do relatório clicar nela. Antes de adicionar a consulta, edite a página criada e habilite a transição de saída para que ela possa ser vinculada à consulta.
 
-1. Adicione uma nova consulta após a atividade **[!UICONTROL Page]** e edite o schema: selecione o schema **[!UICONTROL Recipient delivery logs]**.
+1. Adicione uma nova consulta após a atividade **[!UICONTROL Page]** e edite o esquema: selecione o esquema **[!UICONTROL Recipient delivery logs]**.
 
    ![](assets/reporting_quick_start_query-2.png)
 
-1. Edite a query e defina as colunas de saída. Para exibir o número de fornecimentos por domínio de email, é preciso:
+1. Edite a consulta e defina as colunas de saída. Para exibir o número de fornecimentos por domínio de email, é preciso:
 
    * calcular a soma das chaves primárias para contar o número de logs da entrega:
 
@@ -390,7 +390,7 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
 
    ![](assets/s_advuser_report_listgroup_017.png)
 
-1. Feche a janela de configuração de query e adicione uma página ao gráfico, logo após a segunda query.
+1. Feche a janela de configuração de query e adicione uma página ao gráfico, logo após a segunda consulta.
 
 ### Etapa 5 – Criação da segunda página {#step-5---create-the-second-page}
 
@@ -418,7 +418,7 @@ Queremos adicionar uma segunda query e uma segunda página para exibir o detalhe
 
    ![](assets/s_advuser_report_listgroup_019.png)
 
-1. Adicione um gráfico de pizza à página usando o menu do botão direito e atribua o rótulo **Email domains** a ele. Para obter mais informações, consulte [Tipos e variantes de gráfico](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+1. Adicione um gráfico de pizza à página usando o menu do botão direito do mouse e atribua o rótulo **Email domains** a ele. Para obter mais informações, consulte [Tipos e variantes de gráfico](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
 1. Clique no link **[!UICONTROL Variants]** e desmarque as opções **[!UICONTROL Display label]** e **[!UICONTROL Display caption]**.
 1. Verifique se nenhuma classificação de valor está configurada. Para obter mais informações, consulte [esta seção](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report).
 
@@ -453,7 +453,7 @@ A primeira página do relatório detalha a lista de todas as entregas incluídas
 
 ![](assets/s_advuser_report_listgroup_021.png)
 
-Se clicar no link de uma dessas entregas, ele mostrará o gráfico com a análise dos domínios de email para essa entrega. Agora, essa é a segunda página do relatório e é possível retornar à página anterior clicando no botão apropriado.
+Se clicar no link de uma dessas entregas, ele mostrará o gráfico com o detalhamento dos domínios de email para essa entrega. Agora, essa é a segunda página do relatório e é possível retornar à página anterior clicando no botão apropriado.
 
 ![](assets/s_advuser_report_listgroup_022.png)
 

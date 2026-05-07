@@ -7,8 +7,8 @@ hide: true
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 84%
+source-wordcount: '146'
+ht-degree: 67%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 84%
 
 
 
-O Adobe Campaign oferece um aplicativo de **Marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sedes, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **[!UICONTROL list of campaign packages]**, em que modelos de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
+O Adobe Campaign oferece um aplicativo de **Marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **[!UICONTROL list of campaign packages]**, em que modelos de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
 
 A entidade central fornece campanhas que entidades locais poderão usar. As campanhas são materializadas por pacotes que representam campanhas locais ou colaborativas. Para usar uma campanha, a entidade local deverá fazer solicitá-la e a solicitação deverá ser aprovada.
 

@@ -6,7 +6,7 @@ feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '4005'
+source-wordcount: '4078'
 ht-degree: 1%
 
 ---
@@ -169,7 +169,7 @@ No entanto, lembre-se do seguinte:
 
 ### Exemplo
 
-O gerenciamento de índices pode se tornar muito complexo, portanto, é importante entender como eles funcionam. Para ilustrar essa complexidade, vamos ver um exemplo básico, como pesquisar destinatários filtrando o nome e o sobrenome. Para fazer isso:
+O gerenciamento de índices pode se tornar muito complexo, portanto, é importante entender como eles funcionam. Para ilustrar essa complexidade, vamos ver um exemplo básico, como pesquisar destinatários filtrando o nome e o sobrenome. Para isso:
 
 1. Navegue até a pasta que lista todos os destinatários no banco de dados.
 1. Clique com o botão direito no campo **[!UICONTROL First name]**.
@@ -223,7 +223,7 @@ Por padrão, o Adobe Campaign criará um link usando a chave primária da tabela
 
 Um índice será adicionado aos atributos usados em um link.
 
-A variável   os links criado por e modificado por último estão presentes em muitas tabelas. É possível desativar o índice usando o atributo noDbIndex no link, se essas informações não estiverem sendo usadas pela empresa.
+Os links criado por e modificado por último estão presentes em muitas tabelas. É possível desativar o índice usando o atributo noDbIndex no link, se essas informações não estiverem sendo usadas pela empresa.
 
 ### Cardinalidade {#cardinality}
 

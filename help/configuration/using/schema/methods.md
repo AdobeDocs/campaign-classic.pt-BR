@@ -26,7 +26,7 @@ nenhuma
 
 `<srcschema>`
 
-## Derivados {#children-11}
+## Filhos {#children-11}
 
 método
 

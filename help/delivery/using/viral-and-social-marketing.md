@@ -7,7 +7,7 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '575'
 ht-degree: 100%
 
 ---
@@ -32,7 +32,7 @@ Para permitir que os destinatários de entrega compartilhem o conteúdo das mens
 
 >[!NOTE]
 >
->Por padrão, esse link não é oferecido na lista de blocos. Você pode acessá-lo clicando em **[!UICONTROL Other...]** e selecionando o bloco **[!UICONTROL Social network sharing links]**. 
+>Por padrão, esse link não é oferecido na lista de blocos. Você pode acessá-lo clicando em **[!UICONTROL Other...]** e selecionando o bloco **[!UICONTROL Social network sharing links]**.
 
 ![](assets/s_ncs_user_viral_add_link_via_others.png)
 

@@ -7,7 +7,7 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '283'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Este capítulo fornece a lista de relatórios internos do Adobe Campaign, seu conteúdo e seu contexto. As informações abaixo permitirão evitar a criação de relatórios já disponíveis na plataforma.
+Este capítulo fornece a lista de relatórios integrados do Adobe Campaign, seu conteúdo e seu contexto. As informações abaixo permitirão evitar a criação de relatórios já disponíveis na plataforma.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Os seguintes tipos de relatório estão disponíveis:
 
 Você pode acessar relatórios na home page do console do cliente, do painel de relatórios ou da lista de entrega. O modo de exibição de um relatório depende de seu contexto. A lista de relatórios principais está disponível na home page e permite acessar os dados de entrega rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md) para obter mais informações.
 
-Para acessar os relatórios internos do Campaign:
+Para acessar os relatórios integrados do Campaign:
 
 1. Selecione a guia **[!UICONTROL Reports]** da interface do Adobe Campaign.
 

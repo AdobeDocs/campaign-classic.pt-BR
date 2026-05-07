@@ -17,11 +17,11 @@ ht-degree: 91%
 
 O Adobe Campaign permite definir o mapeamento nos dados em uma tabela externa.
 
-Para fazer isso, após a criação do schema da tabela externa, é possível criar um novo mapeamento de entrega para usar os dados nessa tabela como um Delivery Target.
+Para fazer isso, após a criação do esquema da tabela externa, é possível criar um novo mapeamento de entrega para usar os dados nessa tabela como um Delivery Target.
 
 Para fazer isso, siga as etapas abaixo:
 
-1. Crie um novo mapeamento de entrega e escolha o targeting dimension, como o schema que você acabou de criar, por exemplo.
+1. Crie um novo mapeamento de entrega e escolha a dimensão de direcionamento, como o esquema que você acabou de criar, por exemplo.
 
    ![](assets/wf_new_mapping_create_fda.png)
 
@@ -29,7 +29,7 @@ Para fazer isso, siga as etapas abaixo:
 
    ![](assets/wf_new_mapping_define_join.png)
 
-1. Especifique os parâmetros para armazenamento de informações, incluindo o sufixo dos schemas de extensão para que sejam facilmente identificáveis.
+1. Especifique os parâmetros para armazenamento de informações, incluindo o sufixo dos esquemas de extensão para que sejam facilmente identificáveis.
 
    ![](assets/wf_new_mapping_define_names.png)
 

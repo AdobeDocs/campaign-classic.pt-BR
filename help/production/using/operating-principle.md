@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 4%
+source-wordcount: '530'
+ht-degree: 9%
 
 ---
 
@@ -50,7 +50,7 @@ Os módulos disponíveis são detalhados na tabela a seguir:
 | importar | Importar para linha de comando: permite enviar para a linha de comando um modelo de importação criado no console do cliente do Adobe Campaign. |
 | inMail | Analisador de email de entrada |
 | installsetup | Disponibilidade do arquivo de instalação do cliente |
-| javascript | Execução de scripts do JavaScript, com acesso a APIs SOAP. |
+| javascript | Execução de scripts do JavaScript, com acesso às APIs do SOAP. |
 | tarefa | Processamento de linha de comando |
 | mesclar | Mesclagem de formulários |
 | midSourcing | Recuperação de informações de entrega no modo de mid-sourcing |
@@ -63,9 +63,9 @@ Os módulos disponíveis são detalhados na tabela a seguir:
 | runwf | Execução de uma instância de fluxo de trabalho |
 | desligar | Desligamento completo do sistema |
 | sms | Processamento de notificação por SMS |
-| sq | Execução de script SQL |
-| start | Inícios adicionais |
-| stat | Mantém estatísticas de conexão do MTA |
+| sq | Execução do script SQL |
+| iniciar | Inícios adicionais |
+| stat | Mantém as estatísticas de conexão do MTA |
 | stop | Desligamento parcial do sistema |
 | enviado | Submetendo uma ação de entrega |
 | syslogd | Servidor de gravação de log e rastreamento |

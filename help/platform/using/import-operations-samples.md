@@ -10,8 +10,8 @@ topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 100%
+source-wordcount: '1010'
+ht-degree: 99%
 
 ---
 
@@ -50,13 +50,13 @@ Para criar e fornecer uma lista de destinatários da visão geral das listas, ex
 
 Para importar novos perfis de destinatários armazenados em um arquivo de texto para o banco de dados do Adobe Campaign, execute as seguintes etapas:
 
-1. Escolha de um template
+1. Escolha de um modelo
 
-   * Na página inicial do Adobe Campaign, clique no link **[!UICONTROL Profiles and targets]** e, em seguida, em **[!UICONTROL Jobs]**. Acima da lista de tarefas, clique em **[!UICONTROL New import]**.
+   * Na página inicial do Adobe Campaign, clique no link **[!UICONTROL Profiles and targets]** e, em seguida, em **[!UICONTROL Jobs]**. Acima da lista de processos, clique em **[!UICONTROL New import]**.
    * Mantenha o modelo **[!UICONTROL New text import]** selecionado como padrão.
    * Altere o rótulo e a descrição.
    * Selecione **[!UICONTROL Simple import]**.
-   * Mantenha a pasta de tarefas padrão.
+   * Mantenha a pasta de processos padrão.
    * Clique em **[!UICONTROL Advanced parameters]** e selecione a opção **[!UICONTROL Tracking mode]** para exibir os detalhes da sua importação durante a execução.
 
 1. Selecionar o arquivo a ser importado
@@ -73,7 +73,7 @@ Para importar novos perfis de destinatários armazenados em um arquivo de texto 
 
 1. Reconciliação
 
-   * Vá para a tabela **Destinatários (nms:recipient)**.
+   * Vá para a tabela **Recipients (nms:recipient)**.
    * Selecione a operação **[!UICONTROL Insertion]** e deixe os valores padrão nos outros campos.
 
      ![](assets/s_ncs_user_import_example04_01.png)
@@ -106,7 +106,7 @@ Para importar novos perfis de destinatários armazenados em um arquivo de texto 
 
 Queremos atualizar registros existentes no banco de dados e criar novos arquivos de um arquivo de texto. Veja um exemplo do procedimento:
 
-1. Escolha de um template
+1. Escolha de um modelo
 
    Repita as etapas descritas no exemplo 2 acima.
 
@@ -158,7 +158,7 @@ Neste exemplo, você pode ver que determinados campos no arquivo de texto têm u
 
 Siga as etapas abaixo:
 
-1. Escolha de um template
+1. Escolha de um modelo
 
    Aplique o procedimento no exemplo 2 acima.
 
@@ -207,7 +207,7 @@ Neste exemplo, você verá que determinados campos no arquivo de texto têm um v
 
   ![](assets/s_ncs_user_import_example06_07.png)
 
-1. Escolha de um template
+1. Escolha de um modelo
 
    Aplique o procedimento no exemplo 2 acima.
 
@@ -238,4 +238,4 @@ Neste exemplo, você verá que determinados campos no arquivo de texto têm um v
 
      ![](assets/s_ncs_user_import_example06_06.png)
 
-     Os valores do arquivo de texto que estavam vazios substituíram os valores no banco de dados. Os valores existentes no banco de dados foram atualizados com aqueles no arquivo de importação ao manter a opção **[!UICONTROL Update]** selecionada para duplicatas na etapa 4.
+     Os valores do arquivo de texto que estavam vazios substituíram os valores no banco de dados. Os valores existentes no banco de dados foram atualizados com aqueles no arquivo de importação ao manter a opção **[!UICONTROL Update]** selecionada para duplicados na etapa 4.

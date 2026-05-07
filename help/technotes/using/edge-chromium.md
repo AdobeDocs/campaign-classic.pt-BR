@@ -6,8 +6,8 @@ feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
 source-git-commit: 8734e6ef26a7342042a5242d54854b7d3a5e6244
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 7%
+source-wordcount: '274'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 ## O que mudou?
 
-Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização de HTML para painéis no console do cliente estará usando o Edge Chromium, iniciando o Campaign Classic v7.3.
+Após o fim da vida útil do Microsoft Internet Explorer 11, o mecanismo de renderização do HTML para painéis no console do cliente passou a usar o Edge Chromium, iniciando o Campaign Classic v7.3.
 
 Além da instalação do Microsoft Edge Webview 2 runtime, que agora é [necessária para qualquer instalação do console do cliente](../../installation/using/installing-the-client-console.md#webview), o Microsoft Edge Chromium deve ser habilitado em sua(s) instância(s).
 
@@ -25,7 +25,7 @@ Além da instalação do Microsoft Edge Webview 2 runtime, que agora é [necess�
 
 ## Você será afetado?
 
-Se seu ambiente foi atualizado para o Campaign Classic v7.3 (ou posterior), você será afetado.
+Se seu ambiente tiver sido atualizado para o Campaign Classic v7.3 (ou posterior), você será afetado.
 
 ## Como atualizar?
 

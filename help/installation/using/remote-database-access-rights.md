@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '923'
 ht-degree: 96%
 
 ---
@@ -57,11 +57,11 @@ O administrador do banco de dados precisa combinar esses direitos com os direito
 | **Criar índices** | N/D | Privilégio CRIAR | Privilégio ÍNDICE ou CRIAR QUALQUER ÍNDICE | Permissão ALTERAR | Privilégio CRIAR | Privilégio ÍNDICE |
 | **Criar funções** | Privilégio CRIAR FUNÇÃO NO SCHEMA | Privilégio plpythonu USO EM IDIOMA para poder chamar scripts python externos | Privilégio CRIAR PROCEDIMENTO ou CRIAR QUALQUER PROCEDIMENTO | Permissão CRIAR FUNÇÃO | Privilégio USO | Privilégio CRIAR ROTINA |
 | **Criar procedimentos** | N/D | Privilégio plpythonu USO EM IDIOMA para poder chamar scripts python externos | Privilégio CRIAR PROCEDIMENTO ou CRIAR QUALQUER PROCEDIMENTO | Permissão CRIAR PROCEDIMENTO | Privilégio USO (procedimentos são funções) | Privilégio CRIAR ROTINA |
-| **Remover objetos (tabelas, índices, funções, procedimentos)** | Propriedade do objeto | Ter o objeto ou ser um superusuário | Privilégio SOLTAR QUALQUER &lt; object > | Permissão ALTERAR | Tabela: proprietário da tabela Índice: propriedade da Função índice: propriedade da função | Privilégio SOLTAR  |
+| **Remover objetos (tabelas, índices, funções, procedimentos)** | Propriedade do objeto | Ter o objeto ou ser um superusuário | Privilégio SOLTAR QUALQUER &lt; object > | Permissão ALTERAR | Tabela: proprietário da tabela Índice: propriedade da Função índice: propriedade da função | Privilégio SOLTAR |
 | **Monitoramento de execuções** | Privilégio MONITORAR no objeto necessário | Não é necessário nenhum privilégio para usar o comando EXPLICAR | Privilégio INSERIR e SELECIONAR e o que é necessário para executar a instrução em que o PLANO DE EXPLICAR se baseia | Permissão MOSTRAR O PLANO | Não é necessário nenhum privilégio para usar a instrução EXPLICAR | Privilégio SELECIONAR |
 | **Gravação de dados** | Privilégios INSERIR e/ou ATUALIZAR (que depende da operação de gravação) | Privilégios INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR ou INSERIR e ATUALIZAR QUALQUER TABELA | Permissões INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR |
 | **Carregamento de dados em tabelas** | Privilégios CRIAR ETAPA NO SCHEMA, SELECIONAR e INSERIR na tabela do direcionamento | Privilégios SELECIONAR e INSERIR | Privilégios SELECIONAR e INSERIR | Permissões INSERIR, ADMINISTRAR OPERAÇÕES EM MASSA e ALTERAR TABELA | Privilégios SELECIONAR e INSERIR | Privilégio ARQUIVAR |
-| **Acesso aos dados do cliente** | Privilégio(s) SELECIONAR em (FUTURO) TABELA(S) ou VISUALIZAÇÃO(es) | Privilégio SELECIONAR | Privilégio SELECIONAR ou SELECIONAR QUALQUER TABELA | Permissão SELECIONAR  | Privilégio SELECIONAR | Privilégio SELECIONAR |
+| **Acesso aos dados do cliente** | Privilégio(s) SELECIONAR em (FUTURO) TABELA(S) ou VISUALIZAÇÃO(es) | Privilégio SELECIONAR | Privilégio SELECIONAR ou SELECIONAR QUALQUER TABELA | Permissão SELECIONAR | Privilégio SELECIONAR | Privilégio SELECIONAR |
 | **Acesso aos metadados** | Privilégio SELECIONAR no ESQUEMA de INFORMATION_SCHEMA | Privilégio SELECIONAR | Não é necessário nenhum privilégio para usar a instrução DESCREVER | Permissão DEFINIÇÃO DE VISUALIZAÇÃO | Não é necessário nenhum privilégio para usar o comando &quot;\d table&quot; | Privilégio SELECIONAR |
 
 |   | Teradata | InfiniDB | Sybase IQ / Sybase ASE | Netezza | AsterData |
@@ -71,7 +71,7 @@ O administrador do banco de dados precisa combinar esses direitos com os direito
 | **Criar índices** | Palavra-chave CRIAR ÍNDICE ou ÍNDICE | Privilégio ÍNDICE | Autoridade RECURSOS e a permissão CRIAR | Privilégio ÍNDICE | Privilégio CRIAR |
 | **Criar funções** | Palavra-chave CRIAR FUNÇÃO ou FUNÇÃO | Privilégio CRIAR ROTINA | Autoridade RECURSOS ou autoridade DBA para funções Java | Privilégio FUNÇÃO | Privilégio CRIAR FUNÇÃO |
 | **Criar procedimentos** | Palavra-chave CRIAR PROCEDIMENTO ou PROCEDIMENTO | Privilégio CRIAR ROTINA | Autoridade RECURSOS | Privilégio PROCEDIMENTO | Privilégio CRIAR FUNÇÃO |
-| **Remover objetos (tabelas, índices, funções, procedimentos)** | SOLTAR &lt; object > ou a palavra-chave relacionada a objetos | Privilégio SOLTAR  | Propriedade do objeto ou da autoridade do DBA | Privilégio SOLTAR | Propriedade do objeto |
+| **Remover objetos (tabelas, índices, funções, procedimentos)** | SOLTAR &lt; object > ou a palavra-chave relacionada a objetos | Privilégio SOLTAR | Propriedade do objeto ou da autoridade do DBA | Privilégio SOLTAR | Propriedade do objeto |
 | **Monitoramento de execuções** | Não é necessário nenhum privilégio para usar a instrução EXPLICAR | Privilégio SELECIONAR | Somente um administrador do sistema pode executar o sp_showplan | Não é necessário nenhum privilégio para usar a instrução EXPLICAR | Não é necessário nenhum privilégio para usar a instrução EXPLICAR |
 | **Gravação de dados** | Privilégios INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR | Permissões INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR | Privilégios INSERIR e ATUALIZAR |
 | **Carregamento de dados em tabelas** | Privilégios SELECIONAR e INSERIR para usar as instruções COPIAR PARA e COPIAR DE respectivamente | Privilégio ARQUIVAR | Seja o proprietário da tabela ou da permissão ALTERAR. Dependendo da opção -gl, CARREGAR TABELA só pode ser executado se o usuário tiver a autoridade do DBA | Privilégios SELECIONAR e INSERIR | Privilégios SELECIONAR e INSERIR |

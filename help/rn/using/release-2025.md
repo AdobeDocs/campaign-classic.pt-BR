@@ -5,10 +5,11 @@ description: Saiba mais sobre as versões do Campaign Classic 2025
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: b9a716f327b8fdd68c3bf36dbe864535308def30
+exl-id: 8fd7a66b-cdff-427d-b78f-4becaba51129
+source-git-commit: b757b7ebc297acd10b4c57ab03862a039ae930cb
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 100%
+source-wordcount: '894'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +83,7 @@ Os seguintes problemas também foram corrigidos nesta versão:
 
 * Correção de uma vulnerabilidade de injeção de recurso que permitia que invasores injetassem elementos de HTML em pontos de acesso de email. Esse aprimoramento de segurança impede tentativas de acesso não autorizado e de phishing. (NEO-66462)
 
-* Correção de erros intermitentes ao inserir dados nas tabelas do Google BigQuery devido a problemas de codificação de transferência ou conteúdo HTTP.  Essa correção garante fluxos de trabalho estáveis de carregamento de dados. (NEO-66989)
+* Correção de erros intermitentes ao inserir dados nas tabelas do Google BigQuery devido a problemas de codificação de transferência ou conteúdo HTTP. Essa correção garante fluxos de trabalho estáveis de carregamento de dados. (NEO-66989)
 
 * Resolução de uma vulnerabilidade de travessia de caminho no método `File.list()` em fluxos de trabalho. Esse aprimoramento de segurança impede o acesso não autorizado ao diretório e protege arquivos confidenciais. (NEO-77898)
 
@@ -96,13 +97,13 @@ Os seguintes problemas também foram corrigidos nesta versão:
 
 * Correção de um problema em que os status de evento eram enviados incorretamente enquanto o BroadLog estava em um estado de falha. Esse aprimoramento garante a precisão dos relatórios de eventos. (NEO-80245)
 
-* O token de acesso e de atualização POP3 OAuth agora são salvos no banco de dados e o erro `Authentication failure: unknown user name or bad password` não aparece mais após a expiração do token de atualização.  (NEO-80683)
+* O token de acesso e de atualização POP3 OAuth agora são salvos no banco de dados e o erro `Authentication failure: unknown user name or bad password` não aparece mais após a expiração do token de atualização. (NEO-80683)
 
 * Uma opção `XApiKey` agora é usada como um valor para a ID do cliente ao se conectar ao Adobe Analytics, em vez da ID do cliente da conta externa do Marketing Cloud (MAC). (NEO-80434)
 
 * Resolvido um problema em que usuários do InMail encontravam erros de autenticação devido à expiração do token. Os usuários agora podem testar a conexão e reiniciar o servidor para resolver problemas semelhantes. (NEO-80683)
 
-* Funcionalidade aprimorada da API de análise, garantindo que todas as chamadas de análise usem uma chave de API consistente (Campaign1) para autenticação, mesmo ao alternar para uma ID de cliente aleatória.  Isso garante um rastreamento de análise contínuo. (NEO-80434)
+* Funcionalidade aprimorada da API de análise, garantindo que todas as chamadas de análise usem uma chave de API consistente (Campaign1) para autenticação, mesmo ao alternar para uma ID de cliente aleatória. Isso garante um rastreamento de análise contínuo. (NEO-80434)
 
 * O conector Federated Data Access (FDA) do BigQuery foi aprimorado, permitindo que usuários ajustem o período de tempo-limite para consultas. Essa melhoria evita erros de tempo-limite durante consultas de longa duração. (NEO-81222)
 

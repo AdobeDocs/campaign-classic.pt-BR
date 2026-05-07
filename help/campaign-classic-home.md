@@ -4,9 +4,9 @@ product: campaign
 title: Documentação do produto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
-workflow-type: ht
-source-wordcount: '341'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '396'
+ht-degree: 82%
 
 ---
 
@@ -79,17 +79,17 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Introdução</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Interface</a> – <a href="platform/using/launching-adobe-campaign.md">Conecte-se ao Campaign</a> – <a href="platform/using/get-started-data-import-export.md">Importação e exportação de dados</a> – <a href="platform/using/access-management.md">Permissões</a>
+      <strong>Introdução</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Interface do usuário</a> - <a href="platform/using/launching-adobe-campaign.md">Conectar-se ao Campaign</a> - <a href="platform/using/get-started-data-import-export.md">Importar e exportar dados</a> - <a href="platform/using/access-management.md">Permissões</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatização com fluxos de trabalho</a> — <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR" target="_blank">Campanha de marketing</a> — <a href="interaction/using/interaction-and-offer-management.md">Interação e gerenciamento de ofertas</a> — <a href="delivery/using/about-personalization.md">Personalização</a> — <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Relatórios</a>
+      <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatizar com fluxos de trabalho</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR" target="_blank">Campanha de marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Interação e gerenciamento de ofertas</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Relatórios</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Envio de mensagens</strong><br/><a href="delivery/using/communication-channels.md">Canais de comunicação</a> — <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Envio de provas</a> — <a href="delivery/using/get-started-a-b-testing.md">Teste A/B</a> — <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Rastreamento de mensagens</a> — <a href="delivery/using/about-deliverability.md">Capacidade de entrega</a> — <a href="message-center/using/about-transactional-messaging.md">Mensagens transacionais</a>
+      <strong>Enviar mensagens</strong><br/><a href="delivery/using/communication-channels.md">Canais de comunicação</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Enviar provas</a> - <a href="delivery/using/get-started-a-b-testing.md">Teste A/B</a> - <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Rastreamento de mensagens</a> - <a href="delivery/using/about-deliverability.md">Capacidade de entrega</a> - <a href="message-center/using/about-transactional-messaging.md">Mensagens transacionais</a>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -101,12 +101,12 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
       <br/>
-      <strong>Arquitetura e configuração</strong><br/><a href="production/using/general-architecture.md">Princípios da arquitetura</a> - <a href="production/using/build-upgrade.md">Atualização de uma build</a> - <a href="production/using/configuration.md">Configuração do Campaign</a> - <a href="installation/using/external-accounts.md">Conexão com sistemas externos</a>
+      <strong>Arquitetura e configuração</strong><br/><a href="production/using/general-architecture.md">Princípios de arquitetura</a> - <a href="production/using/build-upgrade.md">Executando uma atualização de compilação</a> - <a href="production/using/configuration.md">Configurar o Campaign</a> - <a href="installation/using/external-accounts.md">Conectar-se a sistemas externos</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>Recursos do desenvolvedor </strong><br/><a href="configuration/using/about-data-model.md">Descrição do modelo de dados</a> – <a href="configuration/using/about-schema-reference.md">Estrutura do esquema</a> – <a href="configuration/using/editing-forms.md">Estrutura do esquema</a> – <a href="configuration/using/about-web-services.md">APIs</a> – <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR">Documentação de referência JSAPI</a> – <a href="configuration/using/about-custom-recipient-table.md">Tabela de destinatários personalizados</a>
+      <strong>Recursos do desenvolvedor</strong><br/><a href="configuration/using/about-data-model.md">Descrição do modelo de dados</a> - <a href="configuration/using/about-schema-reference.md">Estrutura do esquema</a> - <a href="configuration/using/editing-forms.md">Estrutura do esquema</a> - <a href="configuration/using/about-web-services.md">APIs</a> - <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR">Documentação de referência JSAPI</a> - <a href="configuration/using/about-custom-recipient-table.md">Tabela de destinatários personalizada</a>
     </td>
   </tr>
 </table>

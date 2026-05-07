@@ -7,8 +7,8 @@ feature: Campaigns
 exl-id: 07cfa2b3-4e70-437a-ad5f-15fbfe717d5c
 source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 38%
+source-wordcount: '362'
+ht-degree: 48%
 
 ---
 
@@ -36,7 +36,7 @@ Três complementos estão disponíveis para o gerenciamento de campanhas:
 
 * [Otimização de Campanha](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=pt-BR){target=_blank}: este módulo permite controlar, filtrar e monitorar o envio de entregas. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa.
 
-* [Gerenciamento de Recursos de Marketing](https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=pt-BR){target=_blank}: este módulo permite controlar ações de marketing em um modo colaborativo fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos.
+* [Gerenciamento de Recursos de Marketing](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}: este módulo permite controlar ações de marketing em um modo colaborativo fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos.
 
 * [Marketing distribuído](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=pt-BR){target=_blank}: este módulo permite controlar ações de marketing em um modo colaborativo fornecendo gerenciamento completo e rastreamento em tempo real das tarefas, orçamentos e recursos de marketing envolvidos.
 
@@ -93,7 +93,7 @@ The following concepts need to be known in the context of Campaign:
 
 This video presents the key concepts of marketing campaigns.
 
->[!VIDEO](https://video.tv.adobe.com/v/326576?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/326576?captions=por_br&quality=12)
 
 Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 

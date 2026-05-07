@@ -7,8 +7,8 @@ feature: Monitoring
 role: User, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
-source-wordcount: '651'
+workflow-type: tm+mt
+source-wordcount: '664'
 ht-degree: 100%
 
 ---
@@ -80,7 +80,7 @@ O objeto pode ser:
 * **[!DNL xpath]**: xpath do campo.
 * **[!DNL index]** (opcional): se **[!DNL object]** é uma matriz (para objetos de script extras), índice de item na matriz (começa em 0).
 
-### Objeto de [!DNL delivery] {#delivery-object}
+### Objeto de [!DNL delivery] {#delivery-object}
 
 Para personalização por email, o objeto de entrega pode ser acessado de duas formas:
 

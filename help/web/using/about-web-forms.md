@@ -7,8 +7,8 @@ feature: Landing Pages, Web Forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 100%
+source-wordcount: '510'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,7 @@ Para criar um formulário web, clique no botão **[!UICONTROL Create]** acima da
 
 ![](assets/webapp_create_new.png)
 
-Selecione o template do formulário web (**[!UICONTROL newWebForm]** por padrão).
+Selecione o modelo de formulário web (**[!UICONTROL newWebForm]** por padrão).
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
@@ -66,7 +66,7 @@ Para definir a configuração e o conteúdo do formulário Web, siga as etapas a
 
 ## Sobre o design de formulários Web {#about-web-forms-designing}
 
-As páginas do formulário são criadas por meio de um editor específico que permite definir e configurar as zonas de entrada (texto), campos de seleção (listas, caixas de seleção, etc.) e elementos estáticos (imagens, conteúdo HTLM, etc.). Elas podem ser agrupadas em contêineres e o layout pode ser alterado para atender às suas necessidades (para obter mais informações, consulte).[](defining-web-forms-layout.md#creating-containers)
+As páginas do formulário são criadas por meio de um editor específico que permite definir e configurar as zonas de entrada (texto), campos de seleção (listas, caixas de seleção etc.) e elementos estáticos (imagens, conteúdo HTLM etc.). Elas podem ser agrupadas em contêineres e o layout pode ser alterado para atender às suas necessidades (para obter mais informações, consulte).[&#128279;](defining-web-forms-layout.md#creating-containers)
 
 As seções a seguir detalham como definir o conteúdo e o layout nas telas do formulário:
 

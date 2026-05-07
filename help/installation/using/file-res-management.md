@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 2%
+source-wordcount: '675'
+ht-degree: 5%
 
 ---
 
@@ -25,11 +25,11 @@ Use o atributo **uploadWhiteList** para restringir os tipos de arquivos disponí
 
 Este atributo está disponível no elemento **dataStore** do arquivo **serverConf.xml**. Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
-O valor padrão deste atributo é **.+** e permite carregar qualquer tipo de arquivo.
+O valor padrão desse atributo é **.+** e permite carregar qualquer tipo de arquivo.
 
 Para limitar os formatos possíveis, substitua o valor do atributo por uma expressão Java regular válida. É possível inserir vários valores separando-os por vírgula.
 
-Por exemplo: **uploadWhiteList=&quot;.&#42;.png,.O &#42;.jpg&quot;** permitirá que você carregue formatos PNG e JPG no servidor. Nenhum outro formato será aceito.
+Por exemplo: **uploadWhiteList=&quot;.&#42;.png,.&#42;.jpg&quot;** permitirá carregar formatos PNG e JPG no servidor. Nenhum outro formato será aceito.
 
 Você também pode impedir que arquivos importantes sejam carregados configurando o Servidor Web. [Saiba mais](web-server-configuration.md)
 

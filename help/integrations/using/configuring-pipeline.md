@@ -9,9 +9,9 @@ content-type: reference
 level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
-source-wordcount: '832'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '854'
+ht-degree: 96%
 
 ---
 
@@ -104,7 +104,7 @@ O serviço de pipeline rastreia as mensagens recuperadas por cada consumidor. Us
 Para configurar a opção Pipeline, siga estas recomendações:
 
 * Adicionar ou editar acionadores em **[!UICONTROL Triggers]**.
-* Verifique se o JSON é válido. 
+* Verifique se o JSON é válido.
 * O parâmetro **Nome** corresponde à ID do acionador. Um curinga “*” capturará todos os acionadores.
 * O parâmetro **Consumidor** corresponde ao nome da instância de chamada ou do aplicativo.
 * O processo `pipelined` também aceita o tópico “aliases”.
@@ -126,7 +126,7 @@ A lista de parâmetros opcionais é:
 | dumpStatePeriodSec | O período entre dois despejos do processo de estado interno no estado interno ```var/INSTANCE/pipelined.json.``` <br> também está acessível sob demanda aqui: ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | Desabilite a detecção do PipelineServicesEndpoint e force-a |
 | monitorServerPort | O processo de pipeline ouvirá nesta porta para fornecer o processo de estado interno aqui: ```http://INSTANCE:PORT/pipelined/status```. <br>O padrão é 7781 |
-| pointerFlushMessageCount | Quando esse número de mensagens é processado, os corretores serão salvos no banco de dados. <br> O padrão é 1000 |
+| pointerFlushMessageCount | Quando esse número de mensagens é processado, os deslocamentos são salvos no banco de dados. <br> O padrão é 1000 |
 | pointerFlushPeriodSec | Após esse período, os deslocamentos serão salvos no banco de dados. <br>O padrão é 5 (segundos) |
 | processingJSThreads | Número de mensagens de processamento de threads dedicados com conectores JS personalizados. <br> O padrão é 4 |
 | processingThreads | Número de mensagens de processamento de threads dedicados com código integrado. <br>O padrão é 4 |

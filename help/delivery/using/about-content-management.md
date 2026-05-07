@@ -7,9 +7,9 @@ feature: Landing Pages, Email Design
 role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 93%
 
 ---
 
@@ -35,7 +35,7 @@ O gerenciamento de conteúdo oferece as seguintes vantagens:
 
 * Edição de mensagens estruturadas via interfaces de entrada,
 * Separação do conteúdo de dados e como ele é apresentado (gerada no formato XML),
-* Geração de documentos em vários formatos (html, txt, XML, etc.) com base nas folhas de estilos para garantir a conformidade com estatutos gráficos,
+* Geração de documentos em vários formatos (html, txt, XML etc.) com base em folhas de estilos para garantir a conformidade com estatutos gráficos,
 * Recuperação e agregação automática de fluxos de conteúdo externo,
 * Colaboração com fluxo de trabalho para validação e verificação de dados.
 

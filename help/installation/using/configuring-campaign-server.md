@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 2%
+source-wordcount: '1630'
+ht-degree: 5%
 
 ---
 
@@ -25,17 +25,17 @@ Este capítulo detalha as configurações do lado do servidor que podem ser exec
 
 Estes procedimentos são restritos a **implantações locais**/**híbridas** e exigem permissões de Administração.
 
-Para implantações **hospedadas**, as configurações do lado do servidor podem ser definidas somente por Adobe. No entanto, algumas configurações podem ser definidas no [Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR), como gerenciamento de inclui na lista de permissões IP ou permissões de URL. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR).
+Para implantações **hospedadas**, as configurações do lado do servidor só podem ser definidas pelo Adobe. No entanto, algumas configurações podem ser definidas no [Painel de Controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR), como gerenciamento de incluo na lista de permissões IP ou permissões de URL. [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=pt-BR).
 
 Para obter mais informações, consulte esta seção.
 
-* [Documentação do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=pt-BR)
+* [Documentação do Painel de controle do Campaign](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/control-panel-home)
 * [Modelos de hospedagem](../../installation/using/hosting-models.md)
 * [Matriz de recursos no local e hospedada do Campaign Classic](../../installation/using/capability-matrix.md)
 
 ## Arquivos de configuração
 
-Os arquivos de configuração de Campaign Classic são armazenados na pasta **conf** da pasta de instalação do Adobe Campaign. A configuração está distribuída em dois arquivos:
+Os arquivos de configuração do Campaign Classic são armazenados na pasta **conf** da pasta de instalação do Adobe Campaign. A configuração está distribuída em dois arquivos:
 
 * **serverConf.xml**: configuração geral para todas as instâncias. Esse arquivo combina os parâmetros técnicos do servidor do Adobe Campaign: eles são compartilhados por todas as instâncias. A descrição de alguns desses parâmetros é apresentada abaixo. Os diferentes nós e parâmetros e listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 * **config-`<instance>`.xml** (onde **instance** é o nome da instância): configuração específica da instância. Se você compartilhar o servidor entre várias instâncias, insira os parâmetros específicos para cada instância em seu arquivo relevante.
@@ -156,7 +156,7 @@ Para páginas JSP, a configuração padrão é:
 
 O Adobe Campaign usa as seguintes páginas JSP:
 
-* /nl/jsp/**soaprouter.jsp**: console do cliente e conexões de serviços da Web (APIs SOAP),
+* /nl/jsp/**soaprouter.jsp**: console do cliente e conexões de serviços Web (APIs do SOAP),
 * /nl/jsp/**m.jsp**: mirror pages,
 * /nl/jsp/**logon.jsp**: acesso baseado na Web a relatórios e à implantação do console do cliente,
 * /nl/jsp/**s.jsp** : usando marketing viral (patrocínio e redes sociais).
@@ -194,7 +194,7 @@ Neste exemplo, o valor **`<IP_addresses>`** coincide com a lista de endereços I
 
 ### Gerenciar cabeçalhos HTTP {#managing-http-headers}
 
-Por padrão, todos os cabeçalhos HTTP não são retransmitidos. É possível adicionar cabeçalhos específicos nas respostas enviadas por retransmissão. Para fazer isso:
+Por padrão, todos os cabeçalhos HTTP não são retransmitidos. É possível adicionar cabeçalhos específicos nas respostas enviadas por retransmissão. Para isso:
 
 1. Vá para o arquivo **serverConf.xml**.
 1. No nó **`<relay>`**, vá para a lista de cabeçalhos HTTP retransmitidos.
@@ -257,7 +257,7 @@ Este usuário precisa ser adicionado à lista sudoer do operador Adobe Campaign 
 
 ## Rastreamento redundante {#redundant-tracking}
 
-Quando vários servidores são usados para redirecionamento, eles devem poder se comunicar entre si por meio de chamadas SOAP para compartilhar informações dos URLs a serem redirecionados. No momento da inicialização do delivery, é possível que nem todos os servidores de redirecionamento estejam disponíveis; portanto, eles podem não ter o mesmo nível de informações.
+Quando vários servidores são usados para redirecionamento, eles devem poder se comunicar entre si por meio de chamadas do SOAP para compartilhar informações dos URLs a serem redirecionados. No momento da inicialização do delivery, é possível que nem todos os servidores de redirecionamento estejam disponíveis; portanto, eles podem não ter o mesmo nível de informações.
 
 >[!NOTE]
 >

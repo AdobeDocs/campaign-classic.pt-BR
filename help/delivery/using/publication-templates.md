@@ -8,8 +8,8 @@ role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
 source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 100%
+source-wordcount: '822'
+ht-degree: 92%
 
 ---
 
@@ -19,31 +19,31 @@ ht-degree: 100%
 
 O modelo de publicação referencia os recursos usados no processo de publicação, ou seja:
 
-* o schema de dados,
+* o esquema de dados,
 * o formulário de entrada,
 * os modelos de transformação para cada documento de saída.
 
 ## Identificação de um modelo de publicação {#identification-of-a-publication-template}
 
-Um template de publicação é identificado por seu nome e namespace.
+Um modelo de publicação é identificado por seu nome e namespace.
 
-A chave de identificação de uma folha de estilos é uma string formada pelo namespace e pelo nome separados por dois pontos, por exemplo: **cus:newsletter**.
+A chave de identificação de uma folha de estilos é uma cadeia de caracteres formada pelo namespace e pelo nome separados por dois pontos, por exemplo: **cus:newsletter**.
 
 >[!NOTE]
 >
->Na prática, é recomendável usar a mesma chave para o schema, o formulário e o template de publicação.
+>Na prática, é recomendável usar a mesma chave para o esquema, o formulário e o modelo de publicação.
 
 ## Criar e configurar o modelo {#creating-and-configuring-the-template}
 
-Os templates de publicação são armazenados por padrão no nó **[!UICONTROL Administration > Configuration > Publication templates]**. Para criar um novo modelo, clique no botão **[!UICONTROL New]** acima da lista de templates.
+Os modelos de publicação são armazenados por padrão no nó **[!UICONTROL Administration > Configuration > Publication templates]**. Para criar um novo modelo, clique no botão **[!UICONTROL New]** acima da lista de templates.
 
-Para configurar o template de publicação, preencha o nome do template (ou seja, a chave de identificação que consiste no nome e no namespace), seu rótulo, o schema de dados e o formulário de entrada ao qual ele está vinculado.
+Para configurar o modelo de publicação, preencha o nome do modelo (ou seja, a chave de identificação que consiste no nome e no namespace), seu rótulo, o esquema de dados e o formulário de entrada ao qual ele está vinculado.
 
 ![](assets/d_ncs_content_model.png)
 
 >[!NOTE]
 >
->O rótulo aparecerá sempre que o conteúdo for criado com base nesse template de publicação.
+>O rótulo aparecerá sempre que o conteúdo for criado com base nesse modelo de publicação.
 
 A opção **Verificar o status para validar a geração de conteúdo** força uma verificação do status &quot;Validado&quot; das instâncias de conteúdo para autorizar a geração de arquivo. Para obter mais informações, consulte [Publicação](#publication),
 
@@ -55,9 +55,9 @@ O campo **[!UICONTROL Name of template]** é um rótulo gratuito que descreve o 
 
 Na guia **[!UICONTROL Rendering]**, escolha:
 
-* o tipo de renderização usado para projetar o documento de saída: folha de estilo XSL ou template do JavaScript,
+* o tipo de renderização usado para projetar o documento de saída: folha de estilo XSL ou modelo do JavaScript,
 * o formato do documento de saída: HTML, Text, XML ou RTF,
-* o template que contém os dados de construção, isto é, a folha de estilos ou template de JavaScript a ser utilizado.
+* o modelo que contém os dados de construção, isto é, a folha de estilos ou modelo de JavaScript a ser utilizado.
 
 ### Publicação {#publication}
 
@@ -99,7 +99,7 @@ Essa guia permite selecionar um cenário para iniciar uma entrega diretamente no
 
 ### Agregador {#aggregator}
 
-Agregar os dados de um script ou lista de query permite enriquecer o documento XML com os dados de conteúdo. O objetivo é complementar determinadas informações referenciadas por links ou para adicionar elementos do banco de dados.
+Agregar os dados de um script ou lista de consultas permite enriquecer o documento XML com os dados de conteúdo. O objetivo é complementar determinadas informações referenciadas por links ou para adicionar elementos do banco de dados.
 
 ### Geração de vários arquivos {#multi-file-generation}
 
@@ -109,7 +109,7 @@ A tag de particionamento a ser integrada na folha de estilos é a seguinte:
 
 **`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** onde **`<name_of_file>`** é o nome de arquivo da página que deve ser gerada.
 
-**Exemplo:** geração de vários arquivos usando o schema &quot;cus:book&quot;.
+**Exemplo:** Geração de vários arquivos usando o esquema &quot;cus:book&quot;.
 
 O princípio é gerar uma página principal listando os capítulos, com a possibilidade de exibir os detalhes do capítulo em uma página externa
 

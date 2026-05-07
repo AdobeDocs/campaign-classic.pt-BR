@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '381'
 ht-degree: 100%
 
 ---
@@ -68,7 +68,7 @@ Este segundo exemplo captura todos os acionadores.
 
 >[!NOTE]
 >
->O valor da UID [!DNL Trigger] para um nome de acionador específico na interface do Analytics pode ser encontrado como parte dos parâmetros de string de consulta de URL na interface dos acionadores. A UID triggerType é transmitida no fluxo de dados do pipeline e o código pode ser gravado no pipeline.JS para mapear a UID do acionador para um rótulo amigável ao usuário que pode ser armazenado em uma coluna Nome do acionador no schema pipelineEvents.
+>O valor da UID [!DNL Trigger] para um nome de acionador específico na interface do Analytics pode ser encontrado como parte dos parâmetros de string de consulta de URL na interface dos acionadores. A UID triggerType é transmitida no fluxo de dados do pipeline e o código pode ser gravado no pipeline.JS para mapear a UID do acionador para um rótulo amigável ao usuário que pode ser armazenado em uma coluna Nome do acionador no esquema pipelineEvents.
 
 ## O parâmetro do consumidor {#consumer-parameter}
 

@@ -9,8 +9,8 @@ topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 94%
+source-wordcount: '326'
+ht-degree: 76%
 
 ---
 
@@ -22,11 +22,11 @@ Os serviços da Web SOAP fornecidos para o gerenciamento de ofertas são diferen
 
 ## Apresentação da oferta {#offer-proposition}
 
-Para uma apresentação de oferta via SOAP, adicione o comando **nms:proposta#Propose** seguido pelos seguintes parâmetros:
+Para uma apresentação de oferta via SOAP, adicione o comando **nms:proposition#Propose** seguido dos seguintes parâmetros:
 
 * **targetId**: chave primária do destinatário (pode ser uma chave composta).
 * **maxCount**: especifica o número de apresentações de oferta para o contato.
-* **contexto**: permite adicionar informações de contexto no schema de espaço. Se o schema usado for **nms:interaction**, **`<empty>`** deverá ser adicionado.
+* **contexto**: permite adicionar informações de contexto no esquema de espaço. Se o esquema usado for **nms:interaction**, **`<empty>`** deverá ser adicionado.
 * **categories**: especifica a(s) categoria(s) que as ofertas devem pertencer.
 * **themes**: especifica o(s) tema(s) aos quais a(s) oferta(s) deve pertencer.
 * **uuid**: valor do cookie permanente do Adobe Campaign (&quot;uuid230&quot;).
@@ -37,18 +37,18 @@ Para uma apresentação de oferta via SOAP, adicione o comando **nms:proposta#Pr
 >
 >As configurações **targetId** e **maxCount** são obrigatórias. As outras são opcionais.
 
-Em resposta à query, o serviço SOAP retorna os seguintes parâmetros:
+Em resposta à consulta, o serviço SOAP retorna os seguintes parâmetros:
 
 * **interactionId**: ID da interação.
 * **propositions**: o elemento XML contém a lista de propostas, cada uma com sua própria identificação e representação HTML.
 
 ## Atualização da oferta {#offer-update}
 
-Adicione o comando **nms:interação#UpdateStatus** à URL, seguido desses parâmetros:
+Adicione o comando **nms:interaction#UpdateStatus** à URL, seguido destes parâmetros:
 
 * **proposition**: string de caracteres, contém o ID de proposta fornecida como uma saída durante uma apresentação de oferta. Consulte [Apresentação da oferta](#offer-proposition).
-* **status**: tipo string, ele especifica o novo status da oferta. Os valores possíveis são listados na enumeração **propositionStatus** , no schema **nms:common.** Por exemplo, inicialmente, o número 3 corresponde ao status **Accepted**.
-* **context**: o elemento XML permite adicionar informações de contexto no schema de espaço. Se o schema usado for **nms:interaction**, **`<empty>`** deverá ser adicionado.
+* **status**: tipo string, ele especifica o novo status da oferta. Os valores possíveis estão listados na enumeração **propositionStatus**, no esquema **nms:common**. Por exemplo, inicialmente, o número 3 corresponde ao status **Accepted**.
+* **context**: o elemento XML permite adicionar informações de contexto no esquema de espaço. Se o esquema usado for **nms:interaction**, **`<empty>`** deverá ser adicionado.
 
 ## Exemplo usando uma chamada SOAP {#example-using-a-soap-call}
 

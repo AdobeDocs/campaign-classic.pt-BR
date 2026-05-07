@@ -35,7 +35,7 @@ Quando o relatório é gerado, é possível executar várias ações usando os �
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-É possível:
+Você pode:
 
 * Exportar o relatório para o Excel, PDF ou Open Document,
 * Imprimir o relatório,

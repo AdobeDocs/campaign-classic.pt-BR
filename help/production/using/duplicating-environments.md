@@ -10,8 +10,8 @@ topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 3%
+source-wordcount: '1333'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Se você não tiver acesso ao servidor e ao banco de dados (ambientes hospedados), não será possível executar os procedimentos descritos abaixo. Entre em contato com o Adobe.
+>Se você não tiver acesso ao servidor e ao banco de dados (ambientes hospedados), não será possível executar os procedimentos descritos abaixo. Entre em contato com a Adobe.
 
 O uso do Adobe Campaign requer a instalação e a configuração de um ou mais ambientes: desenvolvimento, teste, pré-produção, produção etc.
 
@@ -69,7 +69,7 @@ As etapas a seguir devem ser executadas com muito cuidado: alguns processos aind
 
 >[!IMPORTANT]
 >
->* O procedimento a seguir é válido na linguagem PostgreSQL. Se a linguagem SQL for diferente (Oracle, por exemplo), as queries SQL devem ser adaptadas.
+>* O procedimento a seguir é válido na linguagem PostgreSQL. Se a linguagem SQL for diferente (Oracle, por exemplo), as consultas SQL deverão ser adaptadas.
 >* Os comandos abaixo se aplicam no contexto de uma instância **prod** e uma instância **dev** no PostgreSQL.
 >
 
@@ -96,7 +96,7 @@ Essa exportação permite manter a configuração de desenvolvimento e atualizar
 Para fazer isso, execute uma exportação de pacote para os dois elementos a seguir:
 
 * Exporte a tabela **xtk:option** para um arquivo &#39;options_dev.xml&#39;, sem os registros com os seguintes nomes internos: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; e &#39;NmsBroadcast_RegexRules&#39;.
-* Em um arquivo &#39;extaccount_dev.xml&#39;, exporte a tabela **nms:extAccount** para todos os registros cuja ID não é 0 (@id &lt;> 0).
+* Em um arquivo &#39;extaccount_dev.xml&#39;, exporte a tabela **nms:extAccount** para todos os registros cuja ID não seja 0 (@id &lt;> 0).
 
 Verifique se o número de opções/contas exportadas é igual ao número de linhas que serão exportadas em cada arquivo.
 
@@ -145,7 +145,7 @@ Você também pode verificar se nenhum processo do sistema ainda está em execu�
 Para fazer isso, realize o seguinte processo:
 
 * No Windows: abra o **Gerenciador de tarefas** e verifique se não há processos **nlserver.exe**.
-* No Linux: execute o comando **ps aux | comando grep nlserver** e verifique se não há processos **nlserver**.
+* No Linux: execute o comando **ps aux comando | grep nlserver** e verifique se não há processos **nlserver**.
 
 ### Etapa 4 - Restaurar os bancos de dados no ambiente de destino (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 

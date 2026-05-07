@@ -9,7 +9,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '781'
 ht-degree: 100%
 
 ---
@@ -32,11 +32,11 @@ A **interface do Adobe Campaign** permite criar solicitações de privacidade e 
 
    ![](assets/privacy-request-new.png)
 
-1. Selecione o **[!UICONTROL Regulation]** (GDPR, CCPA, PDPA ou LGPD), **[!UICONTROL Request type]** (Acessar ou Excluir), selecione um **[!UICONTROL Namespace]** e insira o **[!UICONTROL Reconciliation value]**. Se estiver usando o email como namespace, digite o email do Titular dos dados.
+1. Selecione o **[!UICONTROL Regulation]** (RGPD, CCPA, PDPA ou LGPD), **[!UICONTROL Request type]** (Acessar ou Excluir), selecione um **[!UICONTROL Namespace]** e insira o **[!UICONTROL Reconciliation value]**. Se estiver usando o email como namespace, digite o email do Titular dos dados.
 
    ![](assets/privacy-request-properties.png)
 
-Os workflows técnicos de privacidade são executados uma vez por dia e processam cada nova solicitação:
+Os fluxos de trabalho técnicos de privacidade são executados uma vez por dia e processam cada nova solicitação:
 
 * Solicitação de exclusão: esse fluxo de trabalho exclui os dados do destinatário armazenados no Adobe Campaign.
 * Solicitações de acesso: os dados do destinatário armazenados no Adobe Campaign são gerados e disponibilizados como um arquivo XML na parte esquerda da tela de solicitação.
@@ -45,7 +45,7 @@ Os workflows técnicos de privacidade são executados uma vez por dia e processa
 
 ## Lista de tabelas {#list-of-tables}
 
-Ao executar uma solicitação de privacidade de exclusão ou acesso, o Adobe Campaign pesquisa todos os dados do Titular dos dados com base em **[!UICONTROL Reconciliation value]** em todas as tabelas que tenham um link para a tabela do destinatário (tipo próprio). 
+Ao executar uma solicitação de privacidade de exclusão ou acesso, o Adobe Campaign pesquisa todos os dados do Titular dos dados com base em **[!UICONTROL Reconciliation value]** em todas as tabelas que tenham um link para a tabela do destinatário (tipo próprio).
 
 Esta é a lista de recursos prontos para utilização que são considerados ao executar solicitações de privacidade:
 
@@ -64,22 +64,22 @@ Se você criou tabelas personalizadas que tenham um link para a tabela do destin
 
 >[!IMPORTANT]
 >
->Se você executar solicitações de privacidade em lote usando workflows de exclusão de perfis, considere as seguintes observações:
->* A exclusão de perfis por meio de workflows não processa tabelas secundárias.
->* Você precisa lidar com a exclusão de todas as tabelas secundárias.
->* A Adobe recomenda a criação de um workflow ETL que adicione as linhas que serão excluídas na tabela Acesso de privacidade e permita que o workflow **[!UICONTROL Delete privacy requests data]** execute a exclusão. Por motivos de desempenho, sugerimos que sejam limitadas a 200 perfis por dia.
+>Se você executar solicitações de privacidade em lote usando fluxos de trabalho de exclusão de perfis, considere as seguintes observações:
+>* A exclusão de perfis por meio de fluxos de trabalho não processa tabelas filhas.
+>* Você precisa lidar com a exclusão de todas as tabelas filhas.
+>* A Adobe recomenda a criação de um fluxo de trabalho ETL que adicione as linhas que serão excluídas na tabela Acesso de privacidade e permita que o fluxo de trabalho **[!UICONTROL Delete privacy requests data]** execute a exclusão. Por motivos de desempenho, sugerimos que sejam limitadas a 200 perfis por dia.
 
 ## Status de solicitação de privacidade {#privacy-request-statuses}
 
 Estes são os diferentes status de solicitações de acesso a dados pessoais:
 
-* **[!UICONTROL New]** / **[!UICONTROL Retry pending]**: em andamento, o workflow ainda não processou a solicitação.
-* **[!UICONTROL Processing]** / **[!UICONTROL Retry in progress]**: o workflow está processando a solicitação.
-* **[!UICONTROL Delete pending]**: o workflow identificou todos os dados do destinatário que serão excluídos.
-* **[!UICONTROL Delete in progress]**: o workflow está processando a exclusão.
-* **[!UICONTROL Delete Confirmation Pending]** (Solicitação de exclusão no modo de processo de duas etapas): o workflow processou a solicitação de acesso. A confirmação manual é solicitada para executar a exclusão. O botão está disponível por 15 dias.
+* **[!UICONTROL New]** / **[!UICONTROL Retry pending]**: em andamento, o fluxo de trabalho ainda não processou a solicitação.
+* **[!UICONTROL Processing]** / **[!UICONTROL Retry in progress]**: o fluxo de trabalho está processando a solicitação.
+* **[!UICONTROL Delete pending]**: o fluxo de trabalho identificou todos os dados do destinatário que serão excluídos.
+* **[!UICONTROL Delete in progress]**: o fluxo de trabalho está processando a exclusão.
+* **[!UICONTROL Delete Confirmation Pending]** (Solicitação de exclusão no modo de processo de duas etapas): o fluxo de trabalho processou a solicitação de acesso. A confirmação manual é solicitada para executar a exclusão. O botão está disponível por 15 dias.
 * **[!UICONTROL Complete]**: o processamento da solicitação foi concluído sem erros.
-* **[!UICONTROL Error]**: o workflow encontrou um erro. O motivo aparece na lista de solicitações de privacidade na coluna **[!UICONTROL Request status]**. Por exemplo, **[!UICONTROL Error data not found]** significa que nenhum dado de destinatário correspondente a **[!UICONTROL Reconciliation value]** do Titular dos dados foi encontrado no banco de dados.
+* **[!UICONTROL Error]**: o fluxo de trabalho encontrou um erro. O motivo aparece na lista de solicitações de privacidade na coluna **[!UICONTROL Request status]**. Por exemplo, **[!UICONTROL Error data not found]** significa que nenhum dado de destinatário correspondente a **[!UICONTROL Reconciliation value]** do Titular dos dados foi encontrado no banco de dados.
 
 ## Processo em duas etapas {#two-step-process}
 
@@ -105,7 +105,7 @@ onde @id é a ID da solicitação de privacidade.
 
 Esse URL é armazenado no campo **[!UICONTROL "File location" (@urlFile)]** do esquema **[!UICONTROL Privacy Requests (gdprRequest)]**.
 
-As informações ficam disponíveis no banco de dados por 90 dias. Depois que a solicitação é limpa pelo workflow técnico, as informações são removidas do banco de dados e o URL torna-se obsoleto. Verifique se o URL ainda é válido antes de baixar os dados de uma página da web.
+As informações ficam disponíveis no banco de dados por 90 dias. Depois que a solicitação é limpa pelo fluxo de trabalho técnico, as informações são removidas do banco de dados e o URL torna-se obsoleto. Verifique se o URL ainda é válido antes de baixar os dados de uma página da web.
 
 Exemplo de um arquivo de dados de um titular de dados:
 

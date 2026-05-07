@@ -8,7 +8,7 @@ role: User
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '342'
 ht-degree: 100%
 
 ---
@@ -90,7 +90,7 @@ Para verificar uma explicação detalhada do script, consulte [esta seção](#de
 
 Esta seção detalha as várias partes do script e seu modo operacional.
 
-* A primeira parte do script é uma query. O comando **queryDef** permite recuperar da tabela **NmsDelivery** as entregas criadas executando o workflow para construção do target e ordenando com base na taxa estimada de abertura, então as informações da entrega com a taxa mais alta de abertura são recuperadas.
+* A primeira parte do script é uma consulta. O comando **queryDef** permite recuperar da tabela **NmsDelivery** as entregas criadas executando o fluxo de trabalho de segmentação e ordenando com base na taxa estimada de abertura, então as informações da entrega com a taxa mais alta de abertura são recuperadas.
 
   ```
   // query the database to find the winner (best open rate)
@@ -150,7 +150,7 @@ Esta seção detalha as várias partes do script e seu modo operacional.
   delivery.save()
   ```
 
-* O identificador único da entrega duplicada é armazenado na variável do workflow.
+* O identificador único da entrega duplicada é armazenado na variável do fluxo de trabalho.
 
   ```
   // store the new delivery Id in event variables

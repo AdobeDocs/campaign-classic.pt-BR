@@ -1,20 +1,20 @@
 ---
 product: campaign
 title: Ambientes ao vivo/de design
-description: Ambientes Live/Design
+description: Ambientes ao vivo/de design
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '447'
+workflow-type: tm+mt
+source-wordcount: '452'
 ht-degree: 100%
 
 ---
 
-# Ambientes ao vivo/de design{#live-design-environments}
+# Ambientes Live/Design{#live-design-environments}
 
 
 
@@ -27,7 +27,7 @@ O Interaction opera com dois tipos de ambientes de oferta:
 
 ![](assets/offer_environments_overview_001.png)
 
-Cada ambiente **[!UICONTROL Design]** está vinculado a um ambiente **[!UICONTROL Live]**. Quando uma oferta é concluída, suas regras de conteúdo e qualificação estão sujeitas a um ciclo de aprovação. Depois que este ciclo for concluído, a oferta relacionada será implantada automaticamente no ambiente **[!UICONTROL Live]**. A partir deste momento, ele estará disponível para entrega.
+Cada ambiente **[!UICONTROL Design]** está vinculado a um ambiente **[!UICONTROL Live]**. Quando uma oferta é concluída, suas regras de conteúdo e elegibilidade estão sujeitas a um ciclo de aprovação. Depois que este ciclo for concluído, a oferta relacionada será implantada automaticamente no ambiente **[!UICONTROL Live]**. A partir deste momento, ele estará disponível para entrega.
 
 Por padrão, o Interaction vem com um ambiente **[!UICONTROL Design]** e um ambiente **[!UICONTROL Live]** vinculado a ele. Ambos os ambientes são pré-configurados para ter como alvo a tabela de destinatários integrada.
 
@@ -55,7 +55,7 @@ Por padrão, o Interaction vem com um ambiente pré-configurado para direcionar 
    >
    >Se a caixa já estiver marcada, a desmarque e então, a marque novamente.
 
-1. O Adobe Campaign cria dois ambientes (**[!UICONTROL Design]** e **[!UICONTROL Live]**) com informações de direcionamento do target mapping habilitado anteriormente. O ambiente é pré-configurado com as informações de definição de metas.
+1. O Adobe Campaign cria dois ambientes (**[!UICONTROL Design]** e **[!UICONTROL Live]**) com informações de direcionamento do target mapping habilitado anteriormente. O ambiente é pré-configurado com as informações de direcionamento.
 
    Se ativado o mapeamento **[!UICONTROL Visitor]**, a caixa **[!UICONTROL Environment dedicated to incoming anonymous interactions]** é automaticamente marcada na guia **[!UICONTROL General]** do ambiente.
 

@@ -6,9 +6,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: ht
-source-wordcount: '1580'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1587'
+ht-degree: 96%
 
 ---
 
@@ -18,11 +18,11 @@ Para criar um relatório de análise descritiva, use o assistente dedicado. A co
 
 ## Analisar dados no banco de dados {#analyzing-data-in-the-database}
 
-O assistente de análise descritiva pode ser iniciado por meio do menu **[!UICONTROL Tools > Descriptive analysis]**: nesse caso, a análise engloba os destinatários por padrão (**nms:recipient**). Aplica-se a todos os dados do banco de dados do Adobe Campaign.
+O assistente de análise descritiva pode ser iniciado por meio do menu **[!UICONTROL Tools > Descriptive analysis]**: nesse caso, a análise inclui os recipients por padrão (**nms:recipient**). Aplica-se a todos os dados do banco de dados do Adobe Campaign.
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-Para analisar uma tabela diferente da dos destinatários padrão (**nms:recipient**), clique no link **[!UICONTROL Advanced settings...]**, na última etapa do assistente, e selecione a tabela que corresponde às suas configurações; neste caso **cus:individual**:
+Para analisar uma tabela diferente da dos recipients padrão (**nms:recipient**), clique no link **[!UICONTROL Advanced settings...]** na última etapa do assistente e selecione a tabela que corresponde às suas configurações, neste caso **cus:individual**:
 
 ![](assets/reporting_descriptive_other_schema.png)
 
@@ -48,7 +48,7 @@ Abra o assistente de análise descritiva, selecionando os itens e clicando com o
 
   Para obter um exemplo da análise descritiva dos destinatários, consulte [Análise qualitativa de dados](../../reporting/using/use-cases.md#qualitative-data-analysis).
 
-* No contexto de um **workflow**, coloque o cursor em uma transição que aponta para a tabela de destinatários, clique com o botão direito do mouse e selecione **[!UICONTROL Analyze target]**. Para obter mais informações, consulte o exemplo em [Analisar um público alvo de transição em um fluxo de trabalho](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
+* No contexto de um **fluxo de trabalho**, coloque o cursor em uma transição que aponta para a tabela de destinatários, clique com o botão direito do mouse e selecione **[!UICONTROL Analyze target]**. Para obter mais informações, consulte o exemplo em [Analisar um público alvo de transição em um fluxo de trabalho](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
 * Para **listas**, selecione uma ou mais listas e aplique o mesmo processo dos destinatários.
 * No contexto de uma **entrega**, selecione as entregas cujo público alvo deseja analisar, clique com o botão direito do mouse e selecione **[!UICONTROL Actions > Explore the target]**, conforme mostrado abaixo:
 
@@ -199,9 +199,9 @@ Quando o relatório inclui um gráfico, os rótulos da legenda permitem filtrar 
 
 Para gerar uma análise descritiva por conta própria, selecione a opção **New descriptive analysis from a template** se não estiver definida por padrão.
 
-O template **[!UICONTROL Quantitative distribution]** que permite gerar estatísticas em dados que podem ser medidos ou contados (por exemplo, valor da fatura, idade dos destinatários).
+O modelo **[!UICONTROL Quantitative distribution]** que permite gerar estatísticas em dados que podem ser medidos ou contados (por exemplo, valor da fatura, idade dos destinatários).
 
-O modo de configuração de um relatório de análise criado por meio do template **[!UICONTROL Quantitative distribution]** é detalhado em um exemplo de implementação [Quantitative data analysis](../../reporting/using/use-cases.md#quantitative-data-analysis).
+O modo de configuração de um relatório de análise criado por meio do modelo **[!UICONTROL Quantitative distribution]** é detalhado em um exemplo de implementação [Quantitative data analysis](../../reporting/using/use-cases.md#quantitative-data-analysis).
 
 As opções disponíveis ao utilizar o assistente de análise descritiva para criar um relatório quantitativo serão detalhadas abaixo.
 

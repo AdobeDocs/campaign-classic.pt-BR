@@ -8,7 +8,7 @@ hide: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '1000'
 ht-degree: 100%
 
 ---
@@ -77,7 +77,7 @@ Para criar uma notificação por push para dispositivos iOS, siga as etapas abai
 
    >[!NOTE]
    >
-   >Os sons devem ser incluídos no aplicativo e definidos quando o serviço for criado. Consulte [esta seção](configuring-the-mobile-application.md#configuring-external-account-ios).
+   >Os sons devem ser incluídos no aplicativo e definidos quando o serviço é criado. Consulte [esta seção](configuring-the-mobile-application.md#configuring-external-account-ios).
 
    ![](assets/nmac_delivery_ios_6.png)
 

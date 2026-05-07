@@ -7,7 +7,7 @@ feature: A/B Testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '250'
 ht-degree: 100%
 
 ---
@@ -16,12 +16,12 @@ ht-degree: 100%
 
 Depois que [populações forem criadas](a-b-testing-uc-population-samples.md), você poderá configurar as entregas. Nesse caso de uso, as duas primeiras entregas permitem enviar conteúdo diferente às populações A e B. A terceira entrega é a de fallback: ela será enviada aos destinatários que não pertencerem a A nem B. O conteúdo será calculado por um script e será idêntico a A ou B, dependendo de qual deles obteve a maior taxa de abertura. Precisamos configurar um período de espera para a terceira entrega, para descobrir o resultado das entregas A e B. É por isso que a terceira entrega inclui uma atividade **[!UICONTROL Wait]**.
 
-1. Vá para a atividade **[!UICONTROL Split]** e vincule a transição destinada à população A para uma das entregas do e-mail já no workflow.
+1. Vá para a atividade **[!UICONTROL Split]** e vincule a transição destinada à população A para uma das entregas do e-mail já no fluxo de trabalho.
 
    ![](assets/use_case_abtesting_createdeliveries_001.png)
 
 1. Clique duas vezes na entrega para abri-la.
-1. Usando a lista suspensa, selecione o template para a entrega A.
+1. Usando a lista suspensa, selecione o modelo para a entrega A.
 
    ![](assets/use_case_abtesting_createdeliveries_003.png)
 
@@ -33,7 +33,7 @@ Depois que [populações forem criadas](a-b-testing-uc-population-samples.md), v
 
    ![](assets/use_case_abtesting_createdeliveries_004.png)
 
-1. Abra a entrega e selecione o template na entrega B e, em seguida, salve a entrega.
+1. Abra a entrega e selecione o modelo na entrega B e, em seguida, salve a entrega.
 
    ![](assets/use_case_abtesting_createdeliveries_005.png)
 

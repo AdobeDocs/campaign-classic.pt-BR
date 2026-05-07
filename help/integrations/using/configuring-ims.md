@@ -10,8 +10,8 @@ topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 100%
+source-wordcount: '380'
+ht-degree: 87%
 
 ---
 
@@ -55,6 +55,6 @@ Insira a seguinte informação:
 
 * ID da organização: para encontrar seu ID de organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}.
 
-* Máscara de associação: esse campo permite definir a sintaxe que permitirá que os nomes de configuração no Painel Enterprise sejam sincronizados com os grupos no Adobe Campaign. Se você usar a sintaxe “Campaign - tenant_id - (.&#42;)”, o grupo de segurança criado no Adobe Campaign será vinculado ao nome de configuração “Campaign - tenant_id - internal_name” no Painel Enterprise.
+* Máscara de associação: esse campo permite definir a sintaxe que permitirá que os nomes de configuração no Painel Enterprise sejam sincronizados com os grupos no Adobe Campaign. Se você usar a sintaxe &quot;Campaign - tenant_id - (.&#42;)&quot;, o grupo de segurança criado no Adobe Campaign será vinculado ao nome de configuração &quot;Campaign - tenant_id - internal_name&quot; no Painel Enterprise.
 
 * Informações de conexão da Adobe Experience Cloud, que é o nome do locatário da Adobe Experience Cloud.

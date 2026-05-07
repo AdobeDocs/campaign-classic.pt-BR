@@ -10,8 +10,8 @@ topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 3%
+source-wordcount: '1267'
+ht-degree: 5%
 
 ---
 
@@ -84,7 +84,7 @@ Para ajudar você a configurar planos de manutenção, esta seção lista alguma
 
 >[!IMPORTANT]
 >
->A Adobe recomenda não executar o VACUUM FULL nas configurações de banco de dados hospedadas pela Adobe do Campaign. A manutenção sugerida é um guia apenas para instalações no local. Para implementações e esquemas de tabela personalizados, use VACUUM FULL por sua conta e risco, pois o VACUUM - sem monitoramento - pode bloquear exclusivamente tabelas que causam consultas paralisadas e, em alguns casos, bloquear todo o banco de dados.
+>A Adobe recomenda não executar o VACUUM FULL nas configurações de banco de dados hospedadas pela Adobe do Campaign.A manutenção sugerida é um guia apenas para instalações no local. Para implementações e esquemas de tabela personalizados, use VACUUM FULL por sua conta e risco, pois o VACUUM - sem monitoramento - pode bloquear exclusivamente tabelas que causam consultas paralisadas e, em alguns casos, bloquear todo o banco de dados.
 
 No PostgreSQL, você pode usar estas palavras-chave típicas:
 

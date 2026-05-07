@@ -6,8 +6,8 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
-workflow-type: ht
-source-wordcount: '450'
+workflow-type: tm+mt
+source-wordcount: '457'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Para encontrar os destinatários que foram afetados por esse problema, ou caso i
 
 Você precisará fazer uma consulta na tabela de quarentena para filtrar todos os destinatários da Apple, que incluem @icloud.com, @me.com, @mac.com, que foram possivelmente afetados pela interrupção para que possam ser removidos da lista de quarentena e incluídos em futuras entregas de email do Campaign.
 
-Com base no período do incidente, abaixo estão as diretrizes recomendadas para esse query.
+Com base no período do incidente, abaixo estão as diretrizes recomendadas para essa consulta.
 
 >[!IMPORTANT]
 >

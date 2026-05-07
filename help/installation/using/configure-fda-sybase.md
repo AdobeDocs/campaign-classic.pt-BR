@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Configuração do acesso ao Sybase IQ
-description: Saiba como configurar o acesso ao Sybase IQ na FDA
+description: Saiba como configurar o acesso ao Sybase IQ no FDA
 feature: Installation, Federated Data Access
 audience: platform
 content-type: reference
@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '314'
 ht-degree: 66%
 
 ---
@@ -20,12 +20,12 @@ ht-degree: 66%
 
 Use a opção Campaign **Federated Data Access** (FDA) para processar informações armazenadas em bancos de dados externos. Siga as etapas abaixo para configurar o acesso ao Sybase IQ.
 
-1. Configurar o [banco de dados do Sybase IQ](#configuring-sybase)
-1. Configurar o Sybase IQ [conta externa](#sybase-external) no Campaign
+1. Configurar o [banco de dados Sybase IQ](#configuring-sybase)
+1. Configurar a [conta externa](#sybase-external) do Sybase IQ no Campaign
 
-## Configuração de sybase IQ {#configuring-sybase}
+## Configuração do Sybase IQ {#configuring-sybase}
 
-A conexão com um banco de dados externo de Sybase IQ no FDA exige as seguintes configurações adicionais no servidor do Adobe Campaign.
+A conexão com um banco de dados externo Sybase IQ no FDA exige as seguintes configurações adicionais no servidor do Adobe Campaign.
 
 >[!NOTE]
 >
@@ -67,9 +67,9 @@ A conexão com um banco de dados externo de Sybase IQ no FDA exige as seguintes 
    * Se você estiver usando um arquivo customer.sh para declarar seu caminho: adicione o caminho /opt/sybase/IQ-16_0/lib64 para a variável LD_LIBRARY_PATH.
    * Caso contrário, use um comando Unix.
 
-## Conta externa de sybase IQ {#sybase-external}
+## Conta externa do Sybase IQ {#sybase-external}
 
-A conta externa Sybase IQ permite conectar a instância do Campaign ao banco de dados externo do Sybase IQ.
+A conta externa do Sybase IQ permite conectar a instância do Campaign ao banco de dados externo do Sybase IQ.
 
 1. Na Campanha **[!UICONTROL Explorer]**, clique em **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 

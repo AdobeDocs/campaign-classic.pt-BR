@@ -7,8 +7,8 @@ feature: Audiences
 exl-id: b6aabc68-707d-4c6c-b008-277609166c6c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 100%
+source-wordcount: '91'
+ht-degree: 92%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 100%
 
 
 
-Se a tabela da entrega for uma tabela externa, você precisará fazer configurações adicionais. O schema **[!UICONTROL nms:seedmember]** deve ser estendido. Uma guia é adicionada aos seed addresses para definir os campos adequados, como mostrado abaixo:
+Se a tabela da entrega for uma tabela externa, você precisará fazer configurações adicionais. O esquema **[!UICONTROL nms:seedmember]** deve ser estendido. Uma guia é adicionada aos seed addresses para definir os campos adequados, como mostrado abaixo:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Nesse caso, para adicionar seed addresses à entrega, insira os campos adequados diretamente na guia correspondente ou importe os templates de endereços:
+Nesse caso, para adicionar seed addresses à entrega, insira os campos adequados diretamente na guia correspondente ou importe os modelos de endereços:
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-A extensão de schema **nms:seedMember** está [nesta seção](../../configuration/using/seed-addresses.md).
+A extensão de esquema **nms:seedMember** é [esta seção](../../configuration/using/seed-addresses.md).

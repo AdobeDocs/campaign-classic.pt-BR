@@ -10,7 +10,7 @@ topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '458'
 ht-degree: 100%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 100%
 
 ## Entrega da oferta de email {#email-offer-delivery}
 
-Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. A qualificação, os contextos e as representações de cada oferta foram configurados. Agora, queremos criar uma campanha para apresentar nossas ofertas por e-mail.
+Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. A elegibilidade, os contextos e as representações de cada oferta foram configurados. Agora, queremos criar uma campanha para apresentar nossas ofertas por e-mail.
 
-1. Crie uma campanha de marketing e o workflow para construção do target.
+1. Crie uma campanha de marketing e o fluxo de trabalho de segmentação.
 
    ![](assets/offer_delivery_example_001.png)
 
@@ -59,7 +59,7 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 
    ![](assets/offer_delivery_example_009.png)
 
-1. Salve a entrega e inicie o workflow para construção do target.
+1. Salve a entrega e inicie o fluxo de trabalho de segmentação.
 1. Abra a entrega e clique na guia **[!UICONTROL Audit]** dele: é possível ver que o mecanismo de oferta selecionou as propostas a serem feitas dentre as várias ofertas do catálogo.
 
    ![](assets/offer_delivery_example_010.png)
@@ -90,7 +90,7 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 
    ![](assets/offer_simulation_example_006.png)
 
-1. Insira as datas de validade. É necessário inserir pelo menos uma data de início. Isso permite que o mecanismo de oferta ofereça e escolha aqueles que são válidos em uma determinada data.
+1. Insira as datas de validade. É necessário inserir pelo menos uma data inicial. Isso permite que o mecanismo de oferta ofereça e escolha aqueles que são válidos em uma determinada data.
 1. Se necessário, especifique um ou vários temas para restringir o número de ofertas que contêm essa palavra-chave em suas configurações.
 
    No nosso exemplo, a categoria **Viagem** contém duas subcategorias com dois temas separados. Queremos executar uma simulação para ofertas com o tema **Customers>1 ano** .
@@ -111,7 +111,7 @@ Em nosso banco de dados, há uma categoria de ofertas de viagem para a África. 
 
    ![](assets/offer_simulation_example_010.png)
 
-1. Uma vez concluída a simulação, consulte os **[!UICONTROL Results]** para obter uma análise detalhada das propostas por oferta.
+1. Uma vez concluída a simulação, consulte os **[!UICONTROL Results]** para obter um detalhamento das propostas por oferta.
 
    No nosso exemplo, o mecanismo de oferta baseou o detalhamento da oferta em 3 propostas.
 

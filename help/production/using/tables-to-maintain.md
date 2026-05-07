@@ -10,8 +10,8 @@ topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
 source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 1%
+source-wordcount: '1165'
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,7 @@ A lista a seguir contém apenas as tabelas mais sujeitas à fragmentação. Os i
    <td> NmsDeliveryPart<br /> </td> 
    <td> Medium<br /> </td> 
    <td> Inserções, atualizações, exclusões<br /> </td> 
-   <td> Tabela de trabalho na qual os registros são inseridos durante a preparação da entrega. Eles são atualizados durante o delivery e finalmente excluídos quando o delivery é concluído.<br /> Esta tabela tende a se fragmentar rapidamente, mesmo que seu tamanho médio seja razoavelmente limitado.<br /> </td> 
+   <td> Tabela de trabalho na qual os registros são inseridos durante a preparação da entrega. Eles são atualizados durante a entrega e finalmente excluídos quando a entrega é concluída.<br /> Esta tabela tende a se fragmentar rapidamente, embora seu tamanho médio seja bastante limitado.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMirrorPageInfo<br /> </td> 

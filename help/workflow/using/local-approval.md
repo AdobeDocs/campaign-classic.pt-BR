@@ -7,7 +7,7 @@ hide: true
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '645'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Comece inserindo um rótulo para a atividade e o campo **[!UICONTROL Action to e
 
   ![](assets/local_validation_intro_2.png)
 
-* **Consulta incremental**: permite executar uma consulta e planejar sua execução. Consulte a seção [Consulta incremental](incremental-query.md).
+* **Consulta incremental**: permite executar um query e planejar sua execução. Consulte a seção [Consulta incremental](incremental-query.md).
 
   ![](assets/local_validation_intro_3.png)
 

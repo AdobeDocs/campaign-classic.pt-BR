@@ -6,8 +6,8 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '939'
+workflow-type: tm+mt
+source-wordcount: '945'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-A seguir há uma visão geral rápida das principais etapas para criar uma pesquisa simples, usando o seguinte modelo incorporado:
+A seguir há uma visão geral rápida das principais etapas para criar uma pesquisa simples, usando o seguinte modelo integrado:
 
 ![](assets/s_ncs_admin_survey_result.png)
 
@@ -38,7 +38,7 @@ Para criar uma nova pesquisa, vá para a guia **[!UICONTROL Campaigns]** ou **[!
 
 ## Etapa 2 — seleção do modelo {#step-2---selecting-the-template}
 
-Selecione um template de pesquisa e nomeie a pesquisa. Esse nome não será visto pelos usuários finais, mas permite a identificação da pesquisa no Adobe Campaign. Clique em **[!UICONTROL Save]** para adicionar a pesquisa à lista de aplicações Web.
+Selecione um modelo de pesquisa e nomeie a pesquisa. Esse nome não será visto pelos usuários finais, mas permite a identificação da pesquisa no Adobe Campaign. Clique em **[!UICONTROL Save]** para adicionar a pesquisa à lista de aplicações Web.
 
 ![](assets/s_ncs_admin_survey_wz_00.png)
 
@@ -144,7 +144,7 @@ Quando estiver em produção, a pesquisa é acessível no servidor e você pode 
 
 ![](assets/survey_url_from_dashboard.png)
 
-Para entregar a pesquisa, você pode enviar uma mensagem contendo um link de acesso ao público alvo ou colocar a URL de acesso da pesquisa em uma página da Web, por exemplo.
+Para entregar a pesquisa, você pode enviar uma mensagem contendo um link de acesso para a população de destino ou colocar a URL de acesso da pesquisa em uma página da Web, por exemplo.
 
 Você pode monitorar as respostas do usuário por meio de relatórios e logs. Consulte [Monitoramento de resposta](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
 

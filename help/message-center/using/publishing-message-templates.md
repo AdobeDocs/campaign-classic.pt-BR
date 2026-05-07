@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Publicar modelos de mensagem
-description: Saiba mais sobre a publicação e o cancelamento da publicação de templates de mensagem transacional no Adobe Campaign Classic
+description: Saiba mais sobre a publicação e o cancelamento da publicação de modelos de mensagem transacional no Adobe Campaign Classic
 feature: Transactional Messaging, Message Center, Templates
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '495'
+workflow-type: tm+mt
+source-wordcount: '499'
 ht-degree: 100%
 
 ---
@@ -33,12 +33,12 @@ A publicação permite criar automaticamente **dois modelos de mensagem** na ins
 >Sempre que fizer alterações em um modelo, publique-o novamente para que essas alterações estejam em vigor durante a entrega da mensagem transacional.
 
 1. Na instância de controle, vá para a pasta **[!UICONTROL Message Center > Transactional message templates]** da árvore.
-1. Selecione o template que deseja publicar em suas instâncias de execução.
+1. Selecione o modelo que deseja publicar em suas instâncias de execução.
 1. Clique em **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-Quando a publicação estiver concluída, ambos os templates de mensagem que serão aplicados em eventos batch e em tempo real são criados na árvore da instância de produção na pasta **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**.
+Quando a publicação estiver concluída, ambos os modelos de mensagem que serão aplicados em eventos batch e em tempo real são criados na árvore da instância de produção na pasta **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
@@ -46,7 +46,7 @@ Depois que um modelo for publicado, se o evento correspondente for acionado, a i
 
 >[!NOTE]
 >
->Se você substituir um campo existente do template de mensagem transacional, como o endereço do remetente, com um valor vazio, o campo correspondente na instância de execução não será atualizado uma vez que a mensagem transacional seja publicada novamente. Ele ainda conterá o valor anterior.
+>Se você substituir um campo existente do modelo de mensagem transacional, como o endereço do remetente, com um valor vazio, o campo correspondente na instância de execução não será atualizado uma vez que a mensagem transacional seja publicada novamente. Ele ainda conterá o valor anterior.
 >
 >No entanto, se você adicionar um valor não vazio, o campo correspondente será atualizado como normal após a próxima publicação.
 
@@ -56,18 +56,18 @@ Depois que um modelo de mensagem é publicado nas instâncias de execução, voc
 
 * Na verdade, um modelo publicado ainda poderá ser chamado se o evento correspondente for acionado: se você não estiver mais usando um modelo de mensagem, será recomendável desfazer a publicação. Dessa forma, você pode evitar o envio de uma mensagem transacional indesejada por engano.
 
-  Por exemplo, você publicou um template de mensagem que só usa para campanhas de Natal. Talvez você queira desfazer a publicação depois que o período de Natal acabar e publicá-lo novamente no próximo ano.
+  Por exemplo, você publicou um modelo de mensagem que só usa para campanhas de Natal. Talvez você queira desfazer a publicação depois que o período de Natal acabar e publicá-lo novamente no próximo ano.
 
-* Além disso, não é possível excluir um template de mensagem transacional que tenha o status **[!UICONTROL Published]**. Você deve desfazer a publicação primeiro.
+* Além disso, não é possível excluir um modelo de mensagem transacional que tenha o status **[!UICONTROL Published]**. Você deve desfazer a publicação primeiro.
 
 >[!NOTE]
 >
 >Esse recurso está disponível a partir da versão 20.2 do Campaign.
 
-Para desfazer a publicação de um template de mensagem transacional, siga as etapas abaixo.
+Para desfazer a publicação de um modelo de mensagem transacional, siga as etapas abaixo.
 
 1. Na instância de controle, acesse a pasta **[!UICONTROL Message Center > Transactional message templates]** da árvore.
-1. Selecione o template do qual você deseja desfazer a publicação.
+1. Selecione o modelo do qual você deseja desfazer a publicação.
 1. Clique em **[!UICONTROL Unpublish]**.
 
    <!--1. Fill in the **[!UICONTROL Log of the process]** field.-->
@@ -76,7 +76,7 @@ Para desfazer a publicação de um template de mensagem transacional, siga as et
 
 ![](assets/message-center-unpublish.png)
 
-O status do template de mensagem transacional muda de **[!UICONTROL Published]** para **[!UICONTROL Being edited]**.
+O status do modelo de mensagem transacional muda de **[!UICONTROL Published]** para **[!UICONTROL Being edited]**.
 
 Depois de desfazer a publicação:
 

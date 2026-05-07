@@ -8,7 +8,7 @@ exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1192'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -47,43 +47,43 @@ Este boletim informativo contém três tipos de elementos:
 
    ![](assets/s_ncs_content_define_statics.png)
 
-Os vários elementos deste boletim são reunidos com base nas regras definidas em um template JavaScript que faz referência a todos os elementos a serem inseridos e define seu layout.
+Os vários elementos deste boletim são reunidos com base nas regras definidas em um modelo JavaScript que faz referência a todos os elementos a serem inseridos e define seu layout.
 
-Esses elementos são criados por um schema dedicado que especifica os seguintes elementos para cada conteúdo: nome, rótulo, tipo, tamanho e quaisquer outras informações relevantes para o processamento no Adobe Campaign.
+Esses elementos são criados por um esquema dedicado que especifica os seguintes elementos para cada conteúdo: nome, rótulo, tipo, tamanho e quaisquer outras informações relevantes para o processamento no Adobe Campaign.
 
 ## Etapa 2 – Criar o esquema de dados {#step-2---creating-the-data-schema}
 
-Um schema de dados é um documento XML associado ao conteúdo. Ele descreve a estrutura XML dos dados nesse conteúdo.
+Um esquema de dados é um documento XML associado ao conteúdo. Ele descreve a estrutura XML dos dados nesse conteúdo.
 
 >[!NOTE]
 >
->Para saber mais sobre como criar e configurar schemas de dados no Adobe Campaign, consulte [esta seção](../../configuration/using/about-schema-edition.md).
+>Para saber mais sobre como criar e configurar esquemas de dados no Adobe Campaign, consulte [esta seção](../../configuration/using/about-schema-edition.md).
 >
->Os elementos de configuração específicos para o gerenciamento de conteúdo são detalhados em [Schemas de dados](data-schemas.md).
+>Os elementos de configuração específicos para o gerenciamento de conteúdo são detalhados em [Esquemas de dados](data-schemas.md).
 
-Para criar um schema de dados, siga as etapas abaixo:
+Para criar um esquema de dados, siga as etapas abaixo:
 
 1. Abra o Explorer do Adobe Campaign e selecione o nó **[!UICONTROL Administration > Configuration > Data schemas]**.
 
-   Clique no ícone **[!UICONTROL New]** localizado acima da lista de schemas de dados.
+   Clique no ícone **[!UICONTROL New]** localizado acima da lista de esquemas de dados.
 
 1. Selecione a opção **[!UICONTROL Create a schema]** para gerenciamento de conteúdo e clique em **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_content_create_schema.png)
 
-1. Insira o nome e o rótulo do schema nos campos apropriados. Se necessário, você pode adicionar uma descrição e vincular uma imagem específica.
+1. Insira o nome e o rótulo do esquema nos campos apropriados. Se necessário, você pode adicionar uma descrição e vincular uma imagem específica.
 
    ![](assets/s_ncs_content_param_schema.png)
 
    Clique em **[!UICONTROL Next]** para validar.
 
-1. Insira o conteúdo do schema na janela **[!UICONTROL Edit schema]**.
+1. Insira o conteúdo do esquema na janela **[!UICONTROL Edit schema]**.
 
-   Use o botão **[!UICONTROL Insert]** para criar o conteúdo do schema.
+   Use o botão **[!UICONTROL Insert]** para criar o conteúdo do esquema.
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Para obter mais informações, consulte [Edição de schemas](data-schemas.md#editing-schemas).
+   Para obter mais informações, consulte [Edição de esquemas](data-schemas.md#editing-schemas).
 
    Para cada elemento referenciado no conteúdo, é necessário selecionar um tipo correspondente.
 
@@ -95,7 +95,7 @@ Para criar um schema de dados, siga as etapas abaixo:
    <th> <strong>Conteúdo</strong> <br /> </th> 
    <th> <strong>Formato</strong> <br /> </th> 
    <th> <strong>Tipo</strong> <br /> </th> 
-   <th> <strong>Rótulo</strong> <br /> </th> 
+   <th> <strong>Label</strong> <br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -144,7 +144,7 @@ Para criar um schema de dados, siga as etapas abaixo:
  </tbody> 
 </table>
 
-O schema conterá as seguintes informações:
+O esquema conterá as seguintes informações:
 
 ```
 <element label="Invitation" name="invitation" template="ncm:content" xmlChildren="true">
@@ -159,13 +159,13 @@ O schema conterá as seguintes informações:
   </element>
 ```
 
-1. Clique em **[!UICONTROL Save]** para criar o schema de dados.
+1. Clique em **[!UICONTROL Save]** para criar o esquema de dados.
 
 ## Etapa 3 – Criar o formulário de entrada {#step-3---creating-the-input-form}
 
 O formulário de entrada permite editar uma instância de conteúdo por meio de uma interface de entrada do console do cliente do Adobe Campaign.
 
-A descrição de um formulário é um documento XML estruturado que está de acordo com a gramática do schema de formulários &quot;xtk:form&quot;.
+A descrição de um formulário é um documento XML estruturado que está de acordo com a gramática do esquema de formulário &quot;xtk:form&quot;.
 
 >[!NOTE]
 >
@@ -173,7 +173,7 @@ A descrição de um formulário é um documento XML estruturado que está de aco
 >
 >Os elementos de configuração específicos para o gerenciamento de conteúdo são detalhados em [Formulários de entrada](input-forms.md).
 
-Para criar um formulário de entrada para gestão de conteúdo, siga as etapas abaixo:
+Para criar um formulário de entrada para gerenciamento de conteúdo, siga as etapas abaixo:
 
 1. Abra o Explorer do Adobe Campaign e selecione o nó **[!UICONTROL Administration > Configuration > Input forms]**.
 
@@ -185,7 +185,7 @@ Para criar um formulário de entrada para gestão de conteúdo, siga as etapas a
 
    >[!NOTE]
    >
-   >Para permitir que ambos os elementos sejam compatíveis automaticamente, recomendamos o uso do mesmo nome do schema dos dados vinculados. Use o botão **[!UICONTROL Insert]** acima da zona de entrada para adicionar campos do schema vinculado ao formulário.
+   >Para permitir que ambos os elementos sejam compatíveis automaticamente, recomendamos o uso do mesmo nome do esquema dos dados vinculados. Use o botão **[!UICONTROL Insert]** acima da zona de entrada para adicionar campos do esquema vinculado ao formulário.
 
    ![](assets/s_ncs_content_param_form_edit_step2.png)
 
@@ -217,24 +217,24 @@ Para criar um formulário de entrada para gestão de conteúdo, siga as etapas a
 
 A linguagem XSLT permite transformar um documento XML em outro documento de saída. Essa transformação é descrita em XML em um documento chamado folha de estilos.
 
-Neste exemplo, queremos usar um template JavaScript para definir a construção de dados e modo de layout no documento gerado.
+Neste exemplo, queremos usar um modelo JavaScript para definir a construção de dados e modo de layout no documento gerado.
 
 >[!NOTE]
 >
->As restrições vinculadas à criação do documento (template JavaScript ou XSL) são detalhadas em [Formatação](formatting.md).
+>As restrições vinculadas à criação do documento (modelo JavaScript ou XSL) são detalhadas em [Formatação](formatting.md).
 
-Para usar um template JavaScript no Adobe Campaign, siga as etapas abaixo:
+Para usar um modelo JavaScript no Adobe Campaign, siga as etapas abaixo:
 
 1. Abra o Explorer do Adobe Campaign e selecione o nó **[!UICONTROL Administration > Configuration > JavaScript Templates]**.
 
-   Clique no ícone **[!UICONTROL New]** acima da lista de templates.
+   Clique no ícone **[!UICONTROL New]** acima da lista de modelos.
 
-1. Insira um nome de template e selecione o schema que você criou para a gestão de conteúdo.
+1. Insira um nome de modelo e selecione o esquema que você criou para o gerenciamento de conteúdo.
 1. Importe o conteúdo definido que deseja exibir na mensagem.
 
-   Adicione os elementos variáveis, respeitando a sintaxe detalhada nos [Templates JavaScript](formatting.md#javascript-templates).
+   Adicione os elementos variáveis, respeitando a sintaxe detalhada nos [Modelos JavaScript](formatting.md#javascript-templates).
 
-   Para exibir o conteúdo mostrado no nosso exemplo, o template JavaScript deve conter os seguintes elementos:
+   Para exibir o conteúdo mostrado no nosso exemplo, o modelo JavaScript deve conter os seguintes elementos:
 
    ```
    <html>
@@ -325,7 +325,7 @@ Para usar um template JavaScript no Adobe Campaign, siga as etapas abaixo:
    </html>
    ```
 
-   A chamada de uma função no início de um template permite configurar uma chamada para dados de personalização obtidos do banco de dados do Adobe Campaign (nesse caso: recipient.firstName e recipient.lastName), para que possa ser interpretado quando usado em uma entrega. Para obter mais informações, consulte [Incluir um modelo JavaScript](formatting.md#including-a-javascript-template).
+   A chamada de uma função no início de um modelo permite configurar uma chamada para dados de personalização obtidos do banco de dados do Adobe Campaign (nesse caso: recipient.firstName e recipient.lastName), para que possa ser interpretado quando usado em uma entrega. Para obter mais informações, consulte [Incluir um modelo JavaScript](formatting.md#including-a-javascript-template).
 
    Neste exemplo, a função conterá o seguinte código:
 
@@ -344,23 +344,23 @@ Para usar um template JavaScript no Adobe Campaign, siga as etapas abaixo:
    }
    ```
 
-   Para que o template JavaScript seja válido, essa função deve ser criada antes do nó **[!UICONTROL JavaScript codes]** na estrutura da árvore, conforme abaixo:
+   Para que o modelo JavaScript seja válido, essa função deve ser criada antes do nó **[!UICONTROL JavaScript codes]** na estrutura da árvore, conforme abaixo:
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
 ## Etapa 5 — Criar o modelo de publicação {#step-5---creating-the-publication-template}
 
-A próxima etapa envolve criar um template de publicação de conteúdo para vincular o schema, o formulário e o template de criação de conteúdo. Esse template de publicação pode ter vários formatos de saída.
+A próxima etapa envolve criar um modelo de publicação de conteúdo para vincular o esquema, o formulário e o modelo de criação de conteúdo. Esse modelo de publicação pode ter vários formatos de saída.
 
 >[!NOTE]
 >
->Para obter mais informações sobre publicação de conteúdo, consulte [Templates de publicação](publication-templates.md).
+>Para obter mais informações sobre publicação de conteúdo, consulte [Modelos de publicação](publication-templates.md).
 
 Neste exemplo, as etapas são as seguintes:
 
-1. Crie um novo template de publicação através do nó **[!UICONTROL Administration > Configuration > Publication templates]** .
-1. Insira um nome e um rótulo, depois selecione o schema e o formulário a ser usado.
-1. Em seguida, digite o nome do template e escolha o modo de renderização que deve ser aplicado. Este é um tipo de renderização **[!UICONTROL JavaScript]** baseado no template criado acima.
+1. Crie um novo modelo de publicação através do nó **[!UICONTROL Administration > Configuration > Publication templates]** .
+1. Insira um nome e um rótulo, depois selecione o esquema e o formulário a ser usado.
+1. Em seguida, digite o nome do modelo e escolha o modo de renderização que deve ser aplicado. Este é um tipo de renderização **[!UICONTROL JavaScript]** baseado no modelo criado acima.
 
    ![](assets/s_ncs_content_param_form_publish.png)
 
@@ -370,9 +370,9 @@ Neste exemplo, as etapas são as seguintes:
    >
    >Ainda é possível usar a sintaxe E4X. Neste caso, desmarque esta opção.
 
-   Utilize o botão **[!UICONTROL Add]** para criar outros templates de transformação.
+   Utilize o botão **[!UICONTROL Add]** para criar outros modelos de transformação.
 
-1. Clique em **[!UICONTROL Save]** para criar o template de publicação.
+1. Clique em **[!UICONTROL Save]** para criar o modelo de publicação.
 
 ## Etapa 6 - Criar conteúdo {#step-6---creating-contents}
 
@@ -386,7 +386,7 @@ Agora é possível criar conteúdo com base nesse modelo de publicação.
 
 Para criar conteúdo diretamente nas entregas, siga as etapas abaixo:
 
-1. Comece fazendo referência ao template de publicação por meio da guia **[!UICONTROL Advanced]** das propriedades da entrega.
+1. Comece fazendo referência ao modelo de publicação por meio da guia **[!UICONTROL Advanced]** das propriedades da entrega.
 
    ![](assets/s_ncs_content_in_delivery.png)
 

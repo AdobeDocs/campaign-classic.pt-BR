@@ -8,8 +8,8 @@ level: Intermediate, Experienced
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 98%
+source-wordcount: '959'
+ht-degree: 96%
 
 ---
 
@@ -37,13 +37,13 @@ No exemplo a seguir, criaremos aplicativos tipo visão geral para exibir todas a
 
    Esse título aparecerá no cabeçalho da visão geral e na visão geral da aplicação web.
 
-1. Nas propriedades da aplicação web, modifique a renderização do seu aplicativo selecionando o template **[!UICONTROL Single-page Web application]**.
+1. Nas propriedades da aplicação web, modifique a renderização do seu aplicativo selecionando o modelo **[!UICONTROL Single-page Web application]**.
 
    ![](assets/s_ncs_configuration_webapp_rendering.png)
 
 1. Abra a atividade **[!UICONTROL Page]** da sua aplicação web e abra uma lista (**[!UICONTROL Static element > List]**).
 1. Na guia **[!UICONTROL Data]** da lista, selecione o tipo de documento **[!UICONTROL Web applications]** e as colunas de saída **[!UICONTROL Label]** , **[!UICONTROL Creation date]** e **[!UICONTROL Type of application]**.
-1. Na subguia **[!UICONTROL Filter]**, crie o filtro a seguir, como mostrado abaixo, para exibir somente as aplicações web e excluir os templates da visualização.
+1. Na subguia **[!UICONTROL Filter]**, crie o filtro a seguir, como mostrado abaixo, para exibir somente as aplicações web e excluir os modelos da visualização.
 
    ![](assets/s_ncs_configuration_webapp_filter.png)
 
@@ -64,7 +64,7 @@ Em uma visão geral, você pode optar por acessar dados dependendo de sua locali
 
    >[!NOTE]
    >
-   >O nome da variável deve corresponder ao nome do elemento vinculado à pasta (definido no schema), ou seja **folder**, neste caso. Você deve reutilizar esse nome quando fizer referência à tabela.
+   >O nome da variável deve corresponder ao nome do elemento vinculado à pasta (definido no esquema), ou seja **folder**, neste caso. Você deve reutilizar esse nome quando fizer referência à tabela.
 
 1. Aplique o tipo **[!UICONTROL XML]** à variável.
 
@@ -89,11 +89,11 @@ Em uma visão geral, você pode optar por acessar dados dependendo de sua locali
 
    No nosso exemplo, o rótulo é **New**.
 
-1. Insira o seguinte URL no campo URL: **xtk://open/?schema=nms:webApp&amp;form=nms:newWebApp**.
+1. Insira a seguinte URL no campo URL: **xtk://open/?schema=nms:webApp&amp;form=nms:newWebApp**.
 
    >[!NOTE]
    >
-   >**nms:webApp** coincide com o schema da aplicação web.
+   >**nms:webApp** coincide com o esquema da aplicação web.
    >
    >**nms:newWebApp** coincide com o assistente de criação de novas aplicações web.
 
@@ -104,7 +104,7 @@ Em uma visão geral, você pode optar por acessar dados dependendo de sua locali
 
 1. Digite **botão** no campo **[!UICONTROL Style]**.
 
-   Esse estilo é mencionado no template **[!UICONTROL Single-page Web application]** selecionado anteriormente.
+   Esse estilo é mencionado no modelo **[!UICONTROL Single-page Web application]** selecionado anteriormente.
 
    ![](assets/s_ncs_configuration_webapp_link.png)
 

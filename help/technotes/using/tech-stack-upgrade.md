@@ -7,8 +7,8 @@ hide: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 4%
+source-wordcount: '529'
+ht-degree: 9%
 
 ---
 
@@ -69,5 +69,5 @@ Se o sistema de banco de dados do Campaign for PostgreSQL, para se beneficiar da
 
 * [Atualizar o ambiente](../../production/using/build-upgrade.md)
 * [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)
-* [Baixe a compilação mais recente do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Baixe a build mais recente do Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Disponibilizar o novo Console do cliente para os usuários](../../installation/using/client-console-availability-for-windows.md)

@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Modelo de conteúdo {#content-model-10}
 
-método:==( ajuda) | parameters)
+método:==( ajuda) | parâmetros)
 
 ## Atributos {#attributes-10}
 
@@ -32,9 +32,9 @@ método:==( ajuda) | parameters)
 
 ## Pais {#parents-10}
 
-`<methods>` , `<interface />`
+`<methods>`  ,  `<interface />`
 
-## Derivados {#children-10}
+## Filhos {#children-10}
 
 * `<help>`
 * `<parameters>`
@@ -45,7 +45,7 @@ Esse elemento permite definir um método SOAP.
 
 ## Uso e contexto de uso {#use-and-context-of-use-7}
 
-Os métodos SOAP permitem processos de aplicação.
+Os métodos do SOAP ativam os processos do aplicativo.
 
 O &quot;@library&quot; é necessário para declarar um novo método (não nativo): o namespace e o nome usados para a biblioteca são independentes do namespace e do nome do schema em que a declaração é.
 

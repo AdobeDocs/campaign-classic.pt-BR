@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '1200'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1206'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## Recomendações gerais {#general-recommendations}
 
-Esta seção apresenta a abordagem de prática recomendada para gerenciar o módulo de interação no Adobe Campaign Classic, incluindo regras de elegibilidade, filtros predefinidos, atividades de workflow e opções de banco de dados.
+Esta seção apresenta a abordagem de prática recomendada para gerenciar o módulo de interação no Adobe Campaign Classic, incluindo regras de elegibilidade, filtros predefinidos, atividades de fluxo de trabalho e opções de banco de dados.
 
 Interação no Adobe Campaign requer uma gestão cuidadosa para operar com eficiência. Você deve encontrar um equilíbrio entre o número de contatos e o número de ofertas e categorias de ofertas. Se esses fatores não forem tratados com cuidado, a instância da Adobe Campaign pode encontrar problemas.
 
@@ -109,7 +109,7 @@ Outros campos podem ser adicionados, como um campo @rank:
 
 Como há um campo na tabela de proposta chamado @rank, o valor na tabela temporária do fluxo de trabalho será copiado.
 
-Para obter mais informações sobre como armazenar campos adicionais na tabela de proposta, consulte [Integração de uma oferta por meio de um workflow](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
+Para obter mais informações sobre como armazenar campos adicionais na tabela de proposta, consulte [Integração de uma oferta por meio de um fluxo de trabalho](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
 
 Para ofertas de saída com interação, isso é útil quando várias ofertas são selecionadas e você deseja gravar em qual ordem elas serão exibidas em um email.
 
@@ -121,9 +121,9 @@ Ao usar a interação e selecionar ofertas manualmente, o usuário pode combinar
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
-### Extensão do esquema nms:offer {#extending-nms-offer-schema}
+### Estendendo o esquema nms:offer {#extending-nms-offer-schema}
 
-Ao expandir o esquema nms:offer, siga a estrutura predefinida já configurada:
+Ao estender o esquema nms:offer, siga a estrutura pronta para uso já configurada:
 * Defina qualquer novo campo para armazenamento de conteúdo em `<element name="view">`.
 * Cada novo campo precisa ser definido duas vezes. Uma vez como um campo XML regular e outra como um campo XML CDATA com &quot;_jst&quot; anexado ao nome. Por exemplo:
 

@@ -7,7 +7,7 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '417'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ Cada hipótese está vinculada a uma única tabela de transação. Um entrega ou
 
 Antes de começar a usar o Gestor de Resposta, consulte [Configuração](configuration.md) e execute as configurações necessárias.
 
-Para iniciar uma hipótese em uma entrega ou oferta, defina o contexto em um template que deve ser usado em cada hipótese criada.
+Para iniciar uma hipótese em uma entrega ou oferta, defina o contexto em um modelo que deve ser usado em cada hipótese criada.
 
 Aplique o seguinte processo para definir e criar uma hipótese de medição:
 

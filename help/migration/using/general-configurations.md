@@ -10,7 +10,7 @@ hide: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2517'
+source-wordcount: '2546'
 ht-degree: 1%
 
 ---
@@ -151,7 +151,7 @@ Determinados esquemas prontos para uso foram modificados e agora são acessívei
 
 ### Parâmetro Sessiontoken {#sessiontoken-parameter}
 
-Na v5, o parâmetro **sessiontoken** funcionou no lado do cliente (lista de telas do tipo visão geral, editor de links etc.) e no lado do servidor (aplicativos web, relatórios, jsp, jssp etc.). Na v7, ele só funciona no lado do servidor. Se quiser voltar à funcionalidade completa como na v5, você deverá modificar os links usando esse parâmetro e passar pela página de conexão:
+Na v5, o parâmetro **sessiontoken** funcionou no lado do cliente (lista de telas do tipo visão geral, editor de links etc.) e no lado do servidor (aplicações web, relatórios, jsp, jssp etc.). Na v7, ele só funciona no lado do servidor. Se quiser voltar à funcionalidade completa como na v5, você deverá modificar os links usando esse parâmetro e passar pela página de conexão:
 
 Exemplo de link:
 
@@ -390,7 +390,7 @@ O alias é opcional
 
 **Dicas e truques**
 
-Em um elemento `<subQuery>`, para referenciar um campo &quot;field&quot; do `<queryDef>` principal   use a seguinte sintaxe: `[../@field]`
+Em um elemento `<subQuery>`, para referenciar um campo &quot;field&quot; do elemento `<queryDef>` principal, use a seguinte sintaxe: `[../@field]`
 
 Exemplo:
 

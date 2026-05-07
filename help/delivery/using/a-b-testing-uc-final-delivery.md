@@ -19,7 +19,7 @@ Depois que o script for criado para selecionar o vencedor do teste A/B, será po
 
 1. Conecte a atividade **[!UICONTROL JavaScript code]** à atividade restante **[!UICONTROL Delivery]**.
 1. Abra a atividade **[!UICONTROL Delivery]**.
-1. Desmarque a opção **[!UICONTROL Generate an outbound transition]** para finalizar o workflow com esta atividade.
+1. Desmarque a opção **[!UICONTROL Generate an outbound transition]** para finalizar o fluxo de trabalho com esta atividade.
 1. Deixe as outras opções em seus valores padrão.
 
    ![](assets/ab_test_final_delivery.png)

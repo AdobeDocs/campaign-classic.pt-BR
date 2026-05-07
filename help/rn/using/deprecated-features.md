@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 98%
+source-wordcount: '1767'
+ht-degree: 93%
 
 ---
 
@@ -212,7 +212,7 @@ A Adobe não oferece suporte aos seguintes mecanismos de banco de dados, pois fo
 
 Consulte a [Matriz de compatibilidade do Campaign &#x200B;](../../rn/using/compatibility-matrix.md) para acessar a lista de versões compatíveis.
 
-**FEDERATED DATA ACCESS (FDA)** 
+**FEDERATED DATA ACCESS (FDA)**
 
 A partir da versão 20.2, o Adobe Campaign não é mais compatível com o seguinte servidor FDA:
 
@@ -235,9 +235,9 @@ O Campaign Classic não é compatível com os seguintes servidores no Federated 
 * O InfiniDB chegou ao fim da vida útil.
 * Teradata 13, 13.1.
 * Netezza 6.02, 7.0. O Netezza chegou ao fim da vida útil.
-* AsterData 5.0. O AsterData chegou ao fim da vida útil.
+* AsterData 5.0. AsterData chegou ao fim da vida útil.
 * Sybase IQ 15.2, 15.4, 15.5 e Sybase ASE 15.0.
-* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. O Adobe Campaign Classic ainda oferecerá suporte às versões listadas do Hadoop via HiveSQL por meio do Federated Data Access (FDA), mas essas versões foram mescladas com: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
+* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. O Adobe Campaign Classic ainda é compatível com as versões listadas do Hadoop via HiveSQL por meio do Federated Data Access (FDA), mas essas versões são mescladas com: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
 
 **SERVIDOR RDBMS**
 

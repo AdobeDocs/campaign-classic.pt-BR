@@ -9,7 +9,7 @@ exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Regras de filtragem permitem definir as mensagens a serem excluídas com base nos critérios definidos em uma consulta. Essas regras estão vinculadas a uma dimensão de direcionamento.
 
-As regras de filtragem podem estar vinculadas a outros tipos de regras (controle, pressão etc.) em tipologias ou agrupadas em uma tipologia **Filtragem** dedicada. Para obter mais informações, consulte [Criação e uso de uma tipologia de filtragem](#creating-and-using-a-filtering-typology).
+As regras de filtragem podem estar vinculadas a outros tipos de regras (controle, pressão etc.) em tipologias ou agrupadas em uma tipologia **Filtering** dedicada. Para obter mais informações, consulte [Criação e uso de uma tipologia de filtragem](#creating-and-using-a-filtering-typology).
 
 ## Criar uma regra de filtro {#creating-a-filtering-rule}
 

@@ -7,8 +7,8 @@ hide: true
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 100%
+source-wordcount: '417'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ Isso permite:
 
 ## Pacotes de filtro {#filter-packages}
 
-Na guia **[!UICONTROL Campaigns]**, é possível exibir a lista de **[!UICONTROL Campaign packages]** que reagrupa todas as campanhas de marketing distribuído existentes. É possível filtrar essa lista para exibir somente as campanhas publicadas, atrasadas, pendentes de aprovação etc. Para fazer isso, clique nos links na seção superior desta exibição ou use o link **[!UICONTROL Filter list]** e selecione o status do pacote da campanha a ser exibido.
+Na guia **[!UICONTROL Campaigns]**, é possível exibir a lista de **[!UICONTROL Campaign packages]** que reagrupa todas as campanhas de marketing distribuído existentes. Você pode filtrar essa lista para exibir somente campanhas publicadas, atrasadas, pendentes de aprovação etc. Para fazer isso, clique nos links na seção superior desta exibição ou use o link **[!UICONTROL Filter list]** e selecione o status do pacote da campanha a ser exibido.
 
 ![](assets/mkg_dist_catalog_filter.png)
 

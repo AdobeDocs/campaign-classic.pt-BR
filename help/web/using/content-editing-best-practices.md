@@ -7,7 +7,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '571'
 ht-degree: 100%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 100%
 
 Para garantir a operação ideal do editor, recomendamos observar as seguintes diretrizes:
 
-* Antes de **importar um template da página HTML** no Adobe Campaign, abra e exiba o template corretamente nos vários navegadores.
+* Antes de **importar um modelo da página HTML** no Adobe Campaign, abra e exiba o modelo corretamente nos vários navegadores.
 * Se a página HTML contiver **scripts JavaScript**, eles precisarão executar **sem erros** fora do editor.
-* Ao criar um template, recomendamos adicionar um atributo **‘type’** às `<input>` tags. Essas informações serão processadas pelo editor e ajudarão o usuário a vincular um campo do banco de dados ao campo do formulário, ao configurar a aplicação web.
+* Ao criar um modelo, recomendamos adicionar um atributo **‘type’** às `<input>` tags. Essas informações serão processadas pelo editor e ajudarão o usuário a vincular um campo do banco de dados ao campo do formulário, ao configurar a aplicação web.
 
-  Exemplo de código HTML no template:
+  Exemplo de código HTML no modelo:
 
   ```
   <input id="email" type="email" name="email"/>
@@ -50,7 +50,7 @@ A função de importação do Editor de conteúdo digital funciona conforme os s
 * CSS: as imagens presentes no arquivo .zip não são importadas. As referências a essas imagens no CSS não são atualizadas.
 * JS: as imagens presentes no arquivo .zip não são importadas. As referências a essas imagens no JS não são atualizadas.
 * Iframe: as páginas vinculadas não são importadas.
-* Landing pages e aplicações web: se uma tag de **formulário** estiver ausente, um aviso será exibido. Um `<form> </form>` deve estar sempre presente no corpo da mensagem.
+* Páginas de destino e aplicações web: se uma tag de **formulário** estiver ausente, um aviso será exibido. Um `<form> </form>` deve estar sempre presente no corpo da mensagem.
 
 O Editor de conteúdo digital também funciona com as seguintes Páginas de código compatíveis:
 

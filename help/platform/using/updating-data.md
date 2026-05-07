@@ -8,8 +8,8 @@ content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '720'
+workflow-type: tm+mt
+source-wordcount: '738'
 ht-degree: 100%
 
 ---
@@ -99,7 +99,7 @@ O conteúdo de uma lista pode ser exportado. Para configurar e executar a export
 
 ## Assinar um serviço {#subscribing-to-a-service}
 
-Na maioria dos casos, os destinatários assinam um boletim informativo por meio de uma landing page dedicada, conforme explicado [nesta seção](../../delivery/using/managing-subscriptions.md). No entanto, os perfis dos destinatários filtrados podem assinar manualmente um serviço (boletim informativo ou Serviço Viral). Para fazer isso:
+Na maioria dos casos, os destinatários assinam um boletim informativo por meio de uma página de destino dedicada, conforme explicado [nesta seção](../../delivery/using/managing-subscriptions.md). No entanto, os perfis dos destinatários filtrados podem assinar manualmente um serviço (boletim informativo ou Serviço Viral). Para fazer isso:
 
 1. Selecione os destinatários que deseja assinar e clique com o botão direito do mouse.
 1. Selecione **[!UICONTROL Actions > Subscribe selection to a service]**.

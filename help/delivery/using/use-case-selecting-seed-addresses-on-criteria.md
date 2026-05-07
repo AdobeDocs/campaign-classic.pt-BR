@@ -6,8 +6,8 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '850'
+workflow-type: tm+mt
+source-wordcount: '860'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Para usar a condição dinâmica, você deve ter:
 * uma entrega pronta para ser enviada,
 * seed addresses com um valor comum. Esse valor pode ser um campo existente no Adobe Campaign. Neste exemplo, os seed addresses compartilham o valor &quot;Compra&quot; no campo &quot;Departamento&quot;, que não está presente no aplicativo por padrão.
 
-## Etapa 1 - Criar uma entrega  {#step-1---creating-a-delivery}
+## Etapa 1 - Criar uma entrega {#step-1---creating-a-delivery}
 
 As etapas para criar uma entrega são detalhadas na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=pt-BR){target="_blank"}.
 
@@ -178,11 +178,11 @@ Agora você pode especificar a condição dinâmica dos seed addresses para a en
 
 1. Clique em **[!UICONTROL Ok]**.
 
-   O query é exibido na janela **[!UICONTROL Select target]**.
+   A consulta é exibida na janela **[!UICONTROL Select target]**.
 
    ![](assets/dlv_seeds_usecase_04.png)
 
-1. Clique em **[!UICONTROL Ok]** para aprovar o query.
+1. Clique em **[!UICONTROL Ok]** para aprovar a consulta.
 1. Analise seu e clique na guia **[!UICONTROL Delivery]** para acessar os logs de entrega.
 
    Os seed addresses do departamento de compras são exibidos como entrega pendente, como os dos destinatários ou outros seed addresses.

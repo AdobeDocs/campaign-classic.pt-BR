@@ -6,8 +6,8 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: ht
-source-wordcount: '831'
+workflow-type: tm+mt
+source-wordcount: '845'
 ht-degree: 100%
 
 ---
@@ -42,15 +42,15 @@ Essas opções são as mesmas dos relatórios padrão e são detalhadas [nesta p
 
 ## Configurar o layout de um relatório de análise descritiva {#configuring-the-layout-of-a-descriptive-analysis-report}
 
-É possível personalizar a visualização e o layout dos dados nos gráficos e tabelas da análise descritiva. Todas as opções são acessadas através da árvore do Adobe Campaign, na guia **[!UICONTROL Edit]** de cada relatório.
+É possível personalizar a exibição e o layout dos dados nos gráficos e tabelas da análise descritiva. Todas as opções são acessadas através da árvore do Adobe Campaign, na guia **[!UICONTROL Edit]** de cada relatório.
 
 ### Modo de exibição do relatório de análise {#analysis-report-display-mode}
 
-Ao criar um relatório usando o template **[!UICONTROL qualitative distribution]**, os modos de exibição de tabela e gráfico são selecionados por padrão. Se desejar apenas um modo de exibição, desmarque a caixa apropriada. Isso significa que somente a guia do modo de exibição selecionado estará disponível.
+Ao criar um relatório usando o modelo **[!UICONTROL qualitative distribution]**, os modos de exibição de tabela e gráfico são selecionados por padrão. Se desejar apenas um modo de exibição, desmarque a caixa apropriada. Isso significa que somente a guia do modo de exibição selecionado estará disponível.
 
 ![](assets/s_ncs_advuser_report_display_01.png)
 
-Para alterar o schema do relatório, clique em **[!UICONTROL Select the link]** e selecione outra tabela no banco de dados.
+Para alterar o esquema do relatório, clique em **[!UICONTROL Select the link]** e selecione outra tabela no banco de dados.
 
 ![](assets/s_ncs_advuser_report_display_02.png)
 

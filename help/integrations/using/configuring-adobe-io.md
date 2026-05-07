@@ -12,8 +12,8 @@ exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 100%
+source-wordcount: '344'
+ht-degree: 92%
 
 ---
 
@@ -43,11 +43,11 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 >[!AVAILABILITY]
 >
-> A credencial de conta de serviço (JWT) está sendo descontinuada pela Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem usar a credencial de servidor para servidor OAuth. </br>
+> A credencial Conta de serviço (JWT) está sendo substituída pela Adobe. As integrações do Campaign com as soluções e os aplicativos da Adobe agora devem depender da credencial servidor para servidor do OAuth. </br>
 >
 > * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As [credenciais da conta de serviço (JWT)](oauth-technical-account.md) já existentes continuarão funcionando até 27 de janeiro de 2025.</br>
 >
-> * Se você tiver implementado integrações de saída, como a integração do Campaign com o Analytics ou a integração dos acionadores da Experience Cloud, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar o ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para o OAuth. 
+> * Se você tiver implementado integrações de saída, como a integração do Campaign com o Analytics ou a integração dos acionadores da Experience Cloud, elas continuarão a funcionar até 27 de janeiro de 2025. No entanto, antes dessa data, você deve atualizar o ambiente do Campaign para a v7.4.1 e migrar sua conta técnica para o OAuth.
 
 Para continuar com a configuração do conector do Adobe Analytics, acesse o Adobe Developer Console e crie um projeto OAuth de “servidor para servidor”.
 

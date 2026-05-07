@@ -9,8 +9,8 @@ content-type: reference
 topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1025'
+workflow-type: tm+mt
+source-wordcount: '1063'
 ht-degree: 100%
 
 ---
@@ -85,7 +85,7 @@ Para criar uma hipótese em uma entrega existente, aplique o seguinte processo:
 1. Dependendo das suas necessidades, você pode criar um ou mais modelos do tipo **[!UICONTROL Delivery]**, conforme descrito [nesta seção](hypothesis-templates.md#creating-a-hypothesis-model)
 1. Criar uma campanha de marketing e os fluxos de trabalho de segmentação.
 1. Na janela da entrega, clique no ícone **[!UICONTROL Delivery measurement]**.
-1. Selecione o modelo da hipótese (a query configurada no modelo é exibida na janela de hipótese).
+1. Selecione o modelo da hipótese (a consulta configurada no modelo é exibida na janela de hipótese).
 
    A hipótese será calculada automaticamente quando a campanha for concluída, com base nas datas configuradas no modelo. [Saiba mais](hypothesis-templates.md#hypothesis-template-execution-settings)
 
@@ -122,7 +122,7 @@ Criar uma hipótese em uma apresentação da oferta é semelhante à criação e
 
    ![](assets/response_hypothesis_instance_offer_001.png)
 
-   A query criada no modelo aparece na janela.
+   A consulta criada no modelo aparece na janela.
 
    ![](assets/response_hypothesis_instance_offer_003.png)
 
@@ -130,7 +130,7 @@ Criar uma hipótese em uma apresentação da oferta é semelhante à criação e
 
    ![](assets/response_hypothesis_instance_offer_004.png)
 
-1. Refine a query, se necessário.
+1. Refine a consulta, se necessário.
 1. Clique em **[!UICONTROL Start]** para executar a hipótese.
 1. Os resultados da hipótese podem ser exibidos nas guias **[!UICONTROL General]** e **[!UICONTROL Reactions]**. [Saiba mais](hypothesis-tracking.md)
 
@@ -166,11 +166,11 @@ Em seguida, refine a consulta herdada do modelo para fazer uma hipótese em um a
 
    ![](assets/response_hypothesis_delivery_example_004.png)
 
-   A query criada no modelo é exibida.
+   A consulta criada no modelo é exibida.
 
    ![](assets/response_hypothesis_delivery_example_005.png)
 
-1. Clique em **[!UICONTROL Edit query...]** e refine a query inserindo o produto que a hipótese deve relacionar.
+1. Clique em **[!UICONTROL Edit query...]** e refine a consulta inserindo o produto que a hipótese deve relacionar.
 
    ![](assets/response_hypothesis_delivery_example_006.png)
 

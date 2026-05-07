@@ -10,7 +10,7 @@ topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
 source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
-source-wordcount: '3643'
+source-wordcount: '3682'
 ht-degree: 1%
 
 ---
@@ -281,7 +281,7 @@ A lista de indicadores desse relatório é mostrada abaixo do gráfico.
 
    * Curva azul: fila de mensagens ativas. Essas mensagens serão enviadas assim que possível.
 
-   * Curva de Kaki: a fila &#39;deferida&#39;. Essas mensagens não podem ser retornadas no momento devido à limitação ou porque nenhuma conexão com o destino está disponível. As tentativas ocorrerão a cada 5, 10, 20, 40, 2 min, etc. para o **MaxAgeSec** definido tempo antes de ser abandonado.
+   * Curva de Kaki: a fila &#39;deferida&#39;. Essas mensagens não podem ser retornadas no momento devido à limitação ou porque nenhuma conexão com o destino está disponível. As tentativas ocorrerão a cada 5s, 10s, 20s, 40s, 2 min, etc., durante o tempo definido **MaxAgeSec** antes de serem abandonadas.
 
 1. Este gráfico mostra um detalhe de mensagens abandonadas (curva vermelha no segundo gráfico): ele mostra a proporção de mensagens abandonadas sem tentativas (mauve) em comparação com mensagens cujo envio falhou (vermelho). Isso permite exibir a proporção de mensagens não processadas no período concedido devido a limitações do servidor de estatísticas (limitação) ou devido à indisponibilidade do servidor remoto.
 1. As conexões SMTP estão abertas ou sendo abertas.
@@ -553,7 +553,7 @@ Esse elemento é usado para preencher a configuração de emails, ou seja,
 * **mailServer**: servidor SMTP usado para enviar emails (por exemplo: smtp.domain.net).
 * **mailFrom**: endereço de email do remetente do relatório (por exemplo: monitoring@domain.net).
 * **recipientList**: a lista de endereços de email dos destinatários do monitoramento. Os endereços devem ser separados por vírgulas (sem espaços).
-* O modo &#39;**night**&#39; (opcional) é usado para evitar o envio de emails entre o período de tempo especificado. Em vez disso, os dados são consolidados e um email sobre a atividade da noite é enviado após o horário de término (7:00 por padrão).
+* O modo &#39;**night**&#39; (opcional) é usado para evitar o envio de emails entre o período de tempo especificado. Em vez disso, os dados são consolidados e um email sobre a atividade da noite é enviado após a hora de término (7:00 por padrão).
 * O subelemento **buildRange** (opcional) permite especificar um número de compilação mínimo e máximo. Um erro será gerado para todos os computadores cujo número de build não se enquadra nesse intervalo
 
   ```

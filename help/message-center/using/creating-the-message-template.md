@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Criar modelos de mensagem transacional
-description: Saiba como criar um template de mensagem transacional no Adobe Campaign Classic
+description: Saiba como criar um modelo de mensagem transacional no Adobe Campaign Classic
 feature: Transactional Messaging, Message Center, Templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 100%
+source-wordcount: '500'
+ht-degree: 97%
 
 ---
 
@@ -27,11 +27,11 @@ Os modelos de mensagem transacional contêm as informações necessárias para p
 
 1. Acesse a pasta **[!UICONTROL Message Center >Transactional message templates]** da árvore do Adobe Campaign.
 
-1. Clique com o botão direito do mouse na lista de templates de mensagem transacional e selecione **[!UICONTROL New]** no menu suspenso ou clique no botão **[!UICONTROL New]** acima da lista de templates de mensagem transacional.
+1. Clique com o botão direito do mouse na lista de modelos de mensagem transacional e selecione **[!UICONTROL New]** no menu suspenso ou clique no botão **[!UICONTROL New]** acima da lista de modelos de mensagem transacional.
 
    ![](assets/messagecenter_create_model_001.png)
 
-1. Na janela da entrega, selecione o template da entrega apropriado para o canal que deseja usar.
+1. Na janela da entrega, selecione o modelo da entrega apropriado para o canal que deseja usar.
 
    ![](assets/messagecenter_create_model_002.png)
 
@@ -71,7 +71,7 @@ Após definir o conteúdo da mensagem, você pode integrar as informações do e
 
 Para inserir tags de personalização no corpo de uma mensagem de email, siga as etapas abaixo:
 
-1. No template de mensagem, clique na guia que corresponde ao formato do email (HTML ou texto).
+1. No modelo de mensagem, clique na guia que corresponde ao formato do email (HTML ou texto).
 
 1. Insira o corpo da mensagem.
 
@@ -79,7 +79,7 @@ Para inserir tags de personalização no corpo de uma mensagem de email, siga as
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. Preencha a tag usando a seguinte sintaxe: **element name**.@**attribute name** como mostrado abaixo.
+1. Preencha a marca usando a seguinte sintaxe: **nome do elemento**.@**nome do atributo** conforme mostrado abaixo.
 
    ![](assets/messagecenter_create_custo_003.png)
 

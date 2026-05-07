@@ -9,8 +9,8 @@ hide: true
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 100%
+source-wordcount: '904'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ Saiba mais [nesta seção](inbox-rendering.md).
 
 ## Mensagens de prova {#proof-messages}
 
-O envio de provas permite a verificação do link de opção de não participação, a mirror page e quaisquer outros links, validação da mensagem, verificação da exibição das imagens, detecção de possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
+O envio de provas permite verificar o link de opt out, a mirror page e quaisquer outros links, validar a mensagem, verificar se as imagens são exibidas, detectar possíveis erros, etc. Você também pode verificar seu design e renderização em diferentes dispositivos.
 
 Saiba mais [nesta seção](steps-validating-the-delivery.md#sending-a-proof).
 

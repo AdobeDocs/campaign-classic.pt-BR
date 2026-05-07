@@ -7,7 +7,7 @@ feature: Web Apps
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '372'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Os tipos de aplicativo web são selecionados durante a criação.
 
-Vá para a guia **Campaigns** e selecione o menu **[!UICONTROL Web Applications]**. Clique no botão **[!UICONTROL Create]**. Selecione o template de aplicação web que deseja usar:
+Vá para a guia **Campaigns** e selecione o menu **[!UICONTROL Web Applications]**. Clique no botão **[!UICONTROL Create]**. Selecione o modelo de aplicação web que deseja usar:
 
 ![](assets/webapp_create_from_campaign.png)
 
@@ -26,7 +26,7 @@ Vá para a guia **Campaigns** e selecione o menu **[!UICONTROL Web Applications]
 >
 >Sempre proteja as páginas que podem conter informações pessoais. Consulte a [lista de verificação de segurança e privacidade.](https://helpx.adobe.com/br/campaign/kb/acc-security.html)
 
-Esse template determina o tipo de aplicação web. É possível criar:
+Esse modelo determina o tipo de aplicação web. É possível criar:
 
 1. Formulários web (+ modificação de perfil)
 
@@ -36,9 +36,9 @@ Esse template determina o tipo de aplicação web. É possível criar:
 
    O Adobe Campaign permite que você crie aplicações web para ser expostas em uma plataforma Web ou em uma extranet. Isso permite editar dados e registrar informações no Adobe Campaign. Nesse caso, é possível restringir o acesso aos usuários autenticados (via controle de acesso) e configurar o pré-carregamento de dados com base em vários critérios. Para obter mais informações, consulte [esta seção](about-web-applications.md).
 
-1. Landing pages
+1. Páginas de destino
 
-   Uma landing page é uma página HTML cujo conteúdo está disponível em um site e que permite que os usuários insiram informações para ser armazenadas no perfil do banco de dados do Adobe Campaign. O conteúdo desse tipo de página é geralmente criado por uma agência especializada em Web antes de ser importado para o Adobe Campaign para publicação, gestão e acompanhamento. Para obter mais informações, consulte [esta página](creating-a-landing-page.md).
+   Uma página de destino é uma página HTML cujo conteúdo está disponível em um site e que permite que os usuários insiram informações para ser armazenadas no perfil do banco de dados do Adobe Campaign. O conteúdo desse tipo de página é geralmente criado por uma agência especializada em Web antes de ser importado para o Adobe Campaign para publicação, gestão e acompanhamento. Para obter mais informações, consulte [esta página](creating-a-landing-page.md).
 
 1. Pesquisas
 

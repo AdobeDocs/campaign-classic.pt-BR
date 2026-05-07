@@ -8,8 +8,8 @@ level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2226'
-ht-degree: 40%
+source-wordcount: '2269'
+ht-degree: 38%
 
 ---
 
@@ -59,21 +59,21 @@ Os impactos globais no banco de dados e na infraestrutura estão listados abaixo
 
 Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão listados abaixo.
 
-* **Como o IP no arquivo de inclui na lista de permissões será tratado? Os clientes precisarão adicionar novos endereços IP ao para incluir na lista de permissões o tráfego de entrada do Campaign?**
+* **Como o IP no incluo na lista de permissões será tratado? Os clientes precisarão adicionar novos endereços IP ao incluo na lista de permissões para o tráfego de entrada do Campaign?**
 
-  O endereço IP dos servidores da Adobe será alterado. Portanto, talvez os clientes precisem adicionar esses novos endereços IP no incluir na lista de permissões em seus sistemas.
+  O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP no incluo na lista de permissões em seus sistemas.
 
-  [Saiba mais](#config) sobre IP na inclui na lista de permissões.
+  [Saiba mais](#config) sobre IP no incluo na lista de permissões.
 
-* **Como lidaremos com a porta adicionada ao para incluir na lista de permissões o acesso SFTP/FTP?**
+* **Como trataremos a porta adicionada ao incluo na lista de permissões para acesso SFTP/FTP?**
 
-  Incluir na lista de permissões A configuração SFTP + IP no arquivo também será transferida do data center herdado para a Nuvem pública (AWS). Nenhuma ação esperada do cliente.
+  A configuração SFTP (chaves públicas + IP no incluo na lista de permissões) também será transferida do data center herdado para a Nuvem pública (AWS). Nenhuma ação esperada do cliente.
 
 * **Estamos alterando IPs?**
 
-  O endereço IP dos servidores da Adobe será alterado. Portanto, talvez os clientes precisem adicionar esses novos endereços IP ao incluir na lista de permissões em seus sistemas.
+  O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP ao incluo na lista de permissões em seus sistemas.
 
-  [Saiba mais](#config) sobre IP na inclui na lista de permissões.
+  [Saiba mais](#config) sobre IP no incluo na lista de permissões.
 
 * **Como a delegação de subdomínios será tratada?**
 
@@ -103,7 +103,7 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 
   Quando a migração for concluída, a instância do Campaign terá IPs de envio totalmente diferentes. Como uma questão de garantir uma transição sem problemas, a Adobe implementará um aumento dos novos IPs de envio, alternando gradativamente o tráfego dos IPs antigos para os novos.
 
-* **Estamos transferindo a URL na inclui na lista de permissões?**
+* **Estamos transferindo a URL no incluo na lista de permissões?**
 
   Sim, isso é armazenado no arquivo de configuração do servidor que será copiado da origem para a nova instância.
 
@@ -117,7 +117,7 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 
 ![](assets/do-not-translate/maintenance.png)
 
-### Observação sobre IP na inclui na lista de permissões{#config}
+### Observação sobre IP no incluo na lista de permissões{#config}
 
 A migração para a Nuvem pública virá com novos IPs para servidores de aplicativos do Adobe Campaign, para que a alteração do IP tenha impactos na conectividade entre os servidores da Adobe e seus sistemas de informação.
 
@@ -127,7 +127,7 @@ Vamos considerar os dois casos:
 
 * Tráfego de entrada: todas as atividades de rede iniciadas de seus sistemas ou de terceiros para os servidores da Adobe Campaign. A configuração será gerenciada pela Adobe e copiada da nuvem herdada para a pública durante a migração. Em seguida, a conectividade para o tráfego de entrada será preservada como ocorre, após a migração, e nenhuma ação será esperada do lado do cliente
 
-* Tráfego de saída: todas as atividades de rede iniciadas pelos servidores do Adobe Campaign para o seu Sistema de informações ou qualquer outra empresa (por exemplo: provedor SMS). Dependendo das políticas de segurança em vigor em sua organização, as alterações de IPs podem exigir a operação de inclui na lista de permissões do seu Sistema de informações ou de terceiros
+* Tráfego de saída: todas as atividades de rede iniciadas pelos servidores do Adobe Campaign para o seu Sistema de informações ou qualquer outra empresa (por exemplo: provedor SMS). Dependendo das políticas de segurança em vigor em sua organização, as alterações de IPs podem exigir a operação inclua na lista de permissões do seu Sistema de informações ou de terceiros
 
 ### Impactos globais
 
@@ -137,15 +137,15 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
   Sim. Integrações de terceiros, provedores de SMS, por exemplo, devem adicionar novos endereços IP de servidores de aplicativos Adobe Campaign ao incluo na lista de permissões.
 
-* **A migração afetará a conectividade com o Adobe Analytics usando o conector do Genesis? Incluir na lista de permissões E quanto à adição de endereços IP do Campaign ao arquivo no Adobe Analytics?**
+* **A migração afetará a conectividade com o Adobe Analytics usando o conector do Genesis? E quanto à adição de endereços IP do Campaign ao incluo na lista de permissões no Adobe Analytics?**
 
   Os endereços IP dos servidores de aplicativos do Adobe Campaign serão alterados. Essa etapa será realizada pelo Atendimento ao cliente da Adobe após a migração.
 
 * **A migração afetará a conectividade com outras soluções da Adobe (AEM, Target, etc.)?**
 
-  As integrações são uma combinação de endereços IP declarados no arquivo de inclui na lista de permissões e na configuração da conta do serviço da Web. Isso será de responsabilidade do Atendimento ao cliente da Adobe.
+  As integrações são uma combinação de endereços IP declarados no incluo na lista de permissões e na configuração da conta de serviço da Web. Isso será de responsabilidade do Atendimento ao cliente da Adobe.
 
-  Na inclui na lista de permissões, haverá endereços IP que serão necessários na solução externa, pois o IP dos servidores de aplicativos será alterado. Essas informações serão fornecidas. Outras partes da integração são baseadas no IMS e devem funcionar como estão.
+  Haverá endereços IP no incluo na lista de permissões que serão necessários na solução externa, pois o IP dos servidores de aplicativos será alterado. Essas informações serão fornecidas. Outras partes da integração são baseadas no IMS e devem funcionar como estão.
 
 * **E quanto ao cliente que não está anexado à ID da organização para integração com o IMS?**
 
@@ -157,9 +157,9 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
 * **A conectividade da API foi afetada pela migração?**
 
-  O endereço IP dos servidores da Adobe será alterado. Portanto, talvez os clientes precisem adicionar esses novos endereços IP ao incluir na lista de permissões em seus sistemas.
+  O endereço IP dos servidores da Adobe será alterado. Portanto, os clientes podem precisar adicionar esses novos endereços IP ao incluo na lista de permissões em seus sistemas.
 
-  [Saiba mais](#config) sobre IP na inclui na lista de permissões.
+  [Saiba mais](#config) sobre IP no incluo na lista de permissões.
 
 * **Asseguraremos que todos os parâmetros de configuração de memória do JavaScript sejam definidos corretamente após a migração?**
 
@@ -202,11 +202,11 @@ Os impactos em permissões, certificados e acesso SFTP estão listados abaixo.
 
 * **Se a conexão SFTP não puder ser estabelecida, qual será a solução alternativa/plano para manter o cliente em operação?**
 
-  Incluir na lista de permissões O único problema de conectividade que pode surgir está relacionado à consulta do cliente. O cliente deve adicionar esse teste em um ambiente que não seja de produção para garantir que funcione, antes de migrar para a produção.
+  O único problema de conectividade que pode surgir está relacionado ao incluo na lista de permissões no lado do cliente. O cliente deve adicionar esse teste em um ambiente que não seja de produção para garantir que funcione, antes de migrar para a produção.
 
-* **Há configurações de inclui na lista de permissões específicas do data center que precisam ser transferidas?**
+* **Há configurações de incluo na lista de permissões específicas do data center que precisam ser transferidas?**
 
-  Não, não há nenhuma configuração de inclui na lista de permissões específica do data center para gerenciar.
+  Não, não há nenhuma configuração de incluo na lista de permissões específica do data center a ser gerenciada.
 
 * **Estamos garantindo que scripts personalizados sejam executados com êxito no novo ambiente?**
 
@@ -277,7 +277,7 @@ Os impactos globais durante a migração estão listados abaixo.
 
   Dependendo da complexidade do cliente, será necessário um tempo de Bake de pelo menos uma semana entre as migrações do ambiente de Preparo e do ambiente de Produção.
 
-* incluir na lista de permissões **Quem lidará com a adição de novos IPs ao arquivo?**
+* **Quem lidará com a adição de novos IPs ao incluo na lista de permissões?**
 
   A equipe de Atendimento ao cliente da Adobe cuidará de garantir que o cliente e terceiros possam acessar o novo sistema, adicionando os novos IPs ao incluo na lista de permissões.
 

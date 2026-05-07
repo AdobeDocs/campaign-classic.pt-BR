@@ -10,8 +10,8 @@ topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 100%
+source-wordcount: '760'
+ht-degree: 83%
 
 ---
 
@@ -19,25 +19,25 @@ ht-degree: 100%
 
 
 
-Esta seção destina-se às pessoas responsáveis pela configuração do gestor de resposta. Ele assume uma certa quantidade de conhecimento sobre a extensão de schemas, definição de workflows e programação SQL.
+Esta seção destina-se às pessoas responsáveis pela configuração do gestor de resposta. Ele assume uma certa quantidade de conhecimento sobre a extensão de esquemas, definição de fluxos de trabalho e programação SQL.
 
 Isso permite o entendimento de como adaptar o modelo de dados padrão à natureza específica de uma tabela de transações para o Adobe Campaign com a tabela de individuais. Esta tabela pode coincidir com a tabela de individuais disponíveis no Adobe Campaign ou com uma tabela diferente.
 
-A hipótese de medição é iniciada pelo workflow do processo de operação (**[!UICONTROL operationMgt]** ). Cada hipótese representa um processo separado que é executado de forma assíncrona com um status de execução (Editando, Pendente, Concluído, Com falha, etc.) e controlado por um programador que gerencia as limitações de prioridade, a restrição do número de processos simultâneos, a página de baixa atividade e a execução automática com frequência.
+A hipótese de medição é iniciada pelo fluxo de trabalho do processo de operação (**[!UICONTROL operationMgt]** ). Cada hipótese representa um processo separado executado de forma assíncrona com um status de execução (Editando, Pendente, Concluído, Falha, etc.) e controlado por um programador que gerencia as restrições de prioridade, a restrição do número de processos simultâneos, a página de baixa atividade e a execução automática com frequência.
 
 ## Configurar esquemas {#configuring-schemas}
 
 >[!CAUTION]
 >
->Os esquemas padrão do aplicativo não devem ser modificados, mas é possível usar o mecanismo de extensão de esquema. Caso contrário, os schemas modificados não serão considerados no momento das atualizações futuras do aplicativo. Isso pode resultar no mau funcionamento durante o uso do Adobe Campaign.
+>Os esquemas padrão do aplicativo não devem ser modificados, mas é possível usar o mecanismo de extensão de esquema. Caso contrário, os esquemas modificados não serão considerados no momento das atualizações futuras do aplicativo. Isso pode resultar no mau funcionamento durante o uso do Adobe Campaign.
 
 É necessária a integração de aplicativos antes de usar o módulo de reação para definir as várias tabelas (transações, detalhes de transações) que devem ser mensuradas e suas relações com os envios, as ofertas e os individuais.
 
 ### Esquemas padrão {#standard-schemas}
 
-O schema pronto para uso **[!UICONTROL nms:remaMatch]** contém a tabela do log de reação, ou seja, a relação entre individuais, hipótese e tabela de transação. Esse schema deve ser usado como um schema de herança para a tabela de destino final dos logs de reação.
+O esquema pronto para uso **[!UICONTROL nms:remaMatch]** contém a tabela do log de reação, ou seja, a relação entre individuais, hipótese e tabela de transação. Esse esquema deve ser usado como um esquema de herança para a tabela de destino final dos logs de reação.
 
-O schema **[!UICONTROL nms:remaMatchRcp]** também vem como um padrão, pois contém o armazenamento dos logs de reação para os destinatários do Adobe Campaign (**[!UICONTROL nms:recipient]** ). Para ser usado, é necessário estender para realizar o mapeamento para uma tabela de transação (onde contém compras, etc.).
+O esquema **[!UICONTROL nms:remaMatchRcp]** também vem como um padrão, pois contém o armazenamento dos logs de reação para os destinatários do Adobe Campaign (**[!UICONTROL nms:recipient]** ). Para ser usado, é necessário estender para realizar o mapeamento para uma tabela de transação (onde contém compras, etc.).
 
 ### Tabelas e detalhes de transações {#transaction-tables-and-transaction-details}
 
@@ -49,11 +49,11 @@ Por exemplo, uma tabela de transação está vinculada a um contato (tabela de r
 
 >[!NOTE]
 >
->Se desejar manter o identificador do recebimento que descreve o comportamento esperado na hipótese, é possível estender o template da tabela nms:remaMatchRcp para adicionar o identificador a ele (nesse caso, nenhum cálculo de ROI é vinculado a esses campos).
+>Se você quiser manter o identificador de recebimento que descreve o comportamento esperado na hipótese, é possível estender o template da tabela nms:remaMatchRcp para adicionar o identificador a ele (nesse caso, nenhum cálculo de ROI é vinculado a esses campos).
 
 É altamente recomendável adicionar uma data de evento.
 
-O schema a seguir mostra associações entre diferentes tabelas após a conclusão da configuração:
+O esquema a seguir mostra associações entre diferentes tabelas após a conclusão da configuração:
 
 ![](assets/response_data_model.png)
 
@@ -61,7 +61,7 @@ O schema a seguir mostra associações entre diferentes tabelas após a conclus�
 
 Neste exemplo, uma tabela de compras foi integrada ao módulo do gestor de respostas usando a tabela integrada de destinatários do Adobe Campaign **[!UICONTROL nms:recipient]**.
 
-A tabela de logs de resposta em um destinatário **[!UICONTROL nms:remaMatchRcp]** é estendida para adicionar um link ao schema da tabela de compras. No exemplo a seguir, a tabela de compra é chamada de **demo:purchase**.
+A tabela de logs de resposta em um destinatário **[!UICONTROL nms:remaMatchRcp]** é estendida para adicionar um link ao esquema da tabela de compras. No exemplo a seguir, a tabela de compra é chamada de **demo:purchase**.
 
 1. Por meio do explorer do Adobe Campaign, selecione **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
 1. Clique com o botão direito do mouse em **Destinatário**, selecione **[!UICONTROL Actions]** e **[!UICONTROL Modify the options of the targeting dimensions]**.
@@ -104,13 +104,13 @@ name="remaMatchRcp" namespace="cus">
 
 ### Gestor de respostas com uma tabela de destinatário personalizada {#response-management-with-a-personalized-recipient-table}
 
-Neste exemplo, uma tabela de compras é integrada ao módulo do gestor de respostas com uma tabela de indivíduos que não é a tabela de destinatários disponível no Adobe Campaign.
+Neste exemplo, uma tabela de compras é integrada ao módulo do gestor de respostas com uma tabela de pessoas que não é a tabela de destinatários disponível no Adobe Campaign.
 
 * Crie um novo esquema de registro de resposta derivado do esquema **[!UICONTROL nms:remaMatch]**.
 
-  Como a tabela de indivíduos é diferente da tabela de destinatários do Adobe Campaign, é necessário criar um novo schema dos logs de resposta com base no schema **[!UICONTROL nms:remaMatch]**. Em seguida, insira os links para os logs da entrega e a tabela de compras.
+  Como a tabela de pessoas é diferente da tabela de destinatários do Adobe Campaign, é necessário criar um novo esquema dos logs de resposta com base no esquema **[!UICONTROL nms:remaMatch]**. Em seguida, insira os links para os logs da entrega e a tabela de compras.
 
-  No exemplo a seguir, é usado o schema **demo:broadLogPers** e a tabela de transações **demo:purchase**:
+  No exemplo a seguir, usaremos o esquema **demo:broadLogPers** e a tabela de transações **demo:purchase**:
 
   ```
   <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
