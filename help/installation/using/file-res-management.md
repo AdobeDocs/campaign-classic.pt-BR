@@ -41,7 +41,7 @@ Você também pode impedir que arquivos importantes sejam carregados configurand
 
 Você pode conectar o servidor do Campaign a um sistema externo por meio de um proxy, usando uma atividade de workflow **Transferência de arquivos**, por exemplo. Para fazer isso, você precisa configurar a seção **proxyConfig** do arquivo **serverConf.xml** por meio de um comando específico. Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
-As seguintes conexões proxy são possíveis: HTTP, HTTPS, FTP, SFTP. Observe que a partir da versão 20.2 do Campaign, os parâmetros de protocolo HTTP e HTTPS não estarão mais disponíveis **1}.** Esses parâmetros ainda são mencionados abaixo, pois permanecem disponíveis em builds anteriores, incluindo a 9032.
+As seguintes conexões proxy são possíveis: HTTP, HTTPS, FTP, SFTP. Observe que a partir da versão 20.2 do Campaign, os parâmetros de protocolo HTTP e HTTPS não estarão mais disponíveis **1&rbrace;.** Esses parâmetros ainda são mencionados abaixo, pois permanecem disponíveis em builds anteriores, incluindo a 9032.
 
 >[!CAUTION]
 >

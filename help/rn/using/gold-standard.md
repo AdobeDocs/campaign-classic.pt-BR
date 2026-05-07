@@ -59,7 +59,7 @@ A compilação 9032@d030c36 inclui a seguinte correção:
 > * Esta versão inclui uma [correção de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb21-04.html): a atualização agora é obrigatória para reforçar a segurança do ambiente.
 > * Se estiver usando a integração de acionadores da Experience Cloud por meio da autenticação OAuth, é necessário migrar para o Adobe I/O conforme descrito [nesta página](../../integrations/using/about-triggers.md#implement). O modo de autenticação oAuth herdado do Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md#step-optional) para a Adobe.
 >
->Saiba mais na seção [[!DNL Gold Standard] ](../../rn/using/gold-standard.md)
+>Saiba mais na seção [[!DNL Gold Standard] &#x200B;](../../rn/using/gold-standard.md)
 
 _2 de março de 2021_
 

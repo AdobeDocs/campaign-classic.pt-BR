@@ -17,7 +17,7 @@ Este documento descreve as principais recomendações ao projetar o modelo de da
 
 Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [esta seção](../../configuration/using/about-data-model.md).
 
-Leia [esta documentação](../../configuration/using/about-schema-reference.md) para começar a usar os esquemas do Campaign. Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign neste documento [1}.](../../configuration/using/about-schema-edition.md)
+Leia [esta documentação](../../configuration/using/about-schema-reference.md) para começar a usar os esquemas do Campaign. Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign neste documento [1&rbrace;.](../../configuration/using/about-schema-edition.md)
 
 ## Visão geral {#overview}
 

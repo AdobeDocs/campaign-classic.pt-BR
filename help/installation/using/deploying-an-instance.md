@@ -382,7 +382,7 @@ Em um delivery, você pode usar imagens armazenadas na biblioteca de recursos p�
 
   Esse valor pode ser sobreposto para cada delivery.
 
-* Para recursos públicos, a URL **https://** server **/res/** instance ****onde **instance**é o nome da instância de rastreamento.
+* Para recursos públicos, a URL **https://** server **/res/** instance **&#x200B;**&#x200B;onde **instance**&#x200B;é o nome da instância de rastreamento.
 
 ### Detecção de imagem de entrega {#delivery-image-detection}
 

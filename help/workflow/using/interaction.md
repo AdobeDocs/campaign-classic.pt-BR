@@ -20,9 +20,9 @@ Os fluxos de trabalho detalhados abaixo são instalados com o complemento **Meca
 
 Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-![](assets/do-not-localize/v7.jpeg)[Documentação do Campaign v7](../../interaction/using/interaction-and-offer-management.md)
+![](assets/do-not-localize/v7.jpeg) [Documentação do Campaign v7](../../interaction/using/interaction-and-offer-management.md)
 
-![](assets/do-not-localize/v8.png)[Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html?lang=pt-BR)
+![](assets/do-not-localize/v8.png) [Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html?lang=pt-BR)
 
 
 <table> 

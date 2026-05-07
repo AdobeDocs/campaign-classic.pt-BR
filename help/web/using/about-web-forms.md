@@ -66,7 +66,7 @@ Para definir a configuração e o conteúdo do formulário Web, siga as etapas a
 
 ## Sobre o design de formulários Web {#about-web-forms-designing}
 
-As páginas do formulário são criadas por meio de um editor específico que permite definir e configurar as zonas de entrada (texto), campos de seleção (listas, caixas de seleção etc.) e elementos estáticos (imagens, conteúdo HTLM etc.). Elas podem ser agrupadas em contêineres e o layout pode ser alterado para atender às suas necessidades (para obter mais informações, consulte).[](defining-web-forms-layout.md#creating-containers)
+As páginas do formulário são criadas por meio de um editor específico que permite definir e configurar as zonas de entrada (texto), campos de seleção (listas, caixas de seleção etc.) e elementos estáticos (imagens, conteúdo HTLM etc.). Elas podem ser agrupadas em contêineres e o layout pode ser alterado para atender às suas necessidades (para obter mais informações, consulte).[&#128279;](defining-web-forms-layout.md#creating-containers)
 
 As seções a seguir detalham como definir o conteúdo e o layout nas telas do formulário:
 

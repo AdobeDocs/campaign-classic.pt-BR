@@ -37,7 +37,7 @@ Para usar a integração entre o Adobe Campaign e o Experience Cloud Assets, voc
 * Uma organização da Adobe Experience Cloud
 * Habilitação do modo de autenticação do Adobe IMS
 
-Para habilitar a conexão entre o Adobe Campaign e a Adobe Experience Cloud, configure a conexão via IMS (serviço de conexão Adobe ID). Essa configuração é detalhada no documento [Conexão pela Adobe ID. ](../../integrations/using/about-adobe-id.md) Ela inclui:
+Para habilitar a conexão entre o Adobe Campaign e a Adobe Experience Cloud, configure a conexão via IMS (serviço de conexão Adobe ID). Essa configuração é detalhada no documento [Conexão pela Adobe ID. &#x200B;](../../integrations/using/about-adobe-id.md) Ela inclui:
 
 * Instale o pacote **[!UICONTROL Integration with the Adobe Experience Cloud]**.
 * Configuração de uma conta externa da Adobe Experience Cloud.
