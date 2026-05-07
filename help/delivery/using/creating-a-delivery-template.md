@@ -73,18 +73,18 @@ Para configurar um modelo de entrega, siga as seguintes etapas:
 
 O vídeo a seguir mostra como configurar um modelo para uma entrega ad hoc.
 
->[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31864?captions=por_br&quality=12)
 
 ### Como configurar propriedades de modelos de entrega
 
 O vídeo a seguir mostra como definir as propriedades do modelo de entrega e explica em detalhes cada propriedade.
 
->[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/34572?captions=por_br&quality=12)
 
 ### Como implantar um modelo de entrega ad-hoc
 
 Este vídeo explica como implantar um modelo de entrega de email ad-hoc, bem como a diferença entre uma entrega de email e um fluxo de trabalho de entrega.
 
->[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31865?captions=por_br&quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
