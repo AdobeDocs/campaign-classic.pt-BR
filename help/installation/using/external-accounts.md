@@ -7,9 +7,13 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+TQID: https://experienceleague.adobe.com/-dvlEuumTaNU2K-AHysUyUmwDay9oaZGLerkpR4pzzw
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: 1959
 ht-degree: 58%
 
 ---
@@ -47,7 +51,7 @@ A conta externa é criada e adicionada à lista de contas externas.
 
 ### Emails rejeitados {#bounce-mails-external-account}
 
-A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Para obter mais informações sobre essa conta externa, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=pt-BR){target="_blank"}.
+A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Para obter mais informações sobre essa conta externa, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 

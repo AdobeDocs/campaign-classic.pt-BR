@@ -4,9 +4,14 @@ title: Diretrizes de monitoramento
 description: Conheça as diretrizes e práticas recomendadas para monitorar processos e instâncias do Campaign
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
+TQID: https://experienceleague.adobe.com/qki-Rd3f6TAOiXDXaZ-N4YCxDwg-cc8LZspHtTbYcrE
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: 835
 ht-degree: 28%
 
 ---
@@ -76,7 +81,7 @@ Ações específicas podem ser executadas ao encontrar problemas com a execuçã
 
 **Monitoramento do status do fluxo de trabalho**
 
-Além do mapa de calor, você pode criar um fluxo de trabalho que permitirá monitorar o status de um conjunto de fluxos de trabalho e enviar mensagens recorrentes aos supervisores. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=pt-BR){target="_blank"}.
+Além do mapa de calor, você pode criar um fluxo de trabalho que permitirá monitorar o status de um conjunto de fluxos de trabalho e enviar mensagens recorrentes aos supervisores. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}.
 
 **Diretrizes gerais**
 

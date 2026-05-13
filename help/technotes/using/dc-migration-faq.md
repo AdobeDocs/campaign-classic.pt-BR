@@ -6,9 +6,15 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: d5ef99fa-df0c-4153-bf94-105ad0724167
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: 2269
 ht-degree: 38%
 
 ---
@@ -21,7 +27,7 @@ A Adobe desativa o data center herdado: as instâncias do Campaign Classic devem
 
 Veja abaixo um conjunto de perguntas comuns sobre esse projeto, o impacto nos ambientes do Campaign e outros recursos úteis.
 
-Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support).
+Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## Impactos na infraestrutura
 
@@ -51,7 +57,7 @@ Os impactos globais no banco de dados e na infraestrutura estão listados abaixo
 
 * **Qual é o plano para solucionar problemas após a migração?**
 
-  Testes abrangentes serão realizados antes da migração dos sistemas de produção. No entanto, em caso de problemas, o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support) continuará sendo o principal ponto de contato. A Adobe criou uma equipe de especialistas para fornecer suporte avançado, se necessário.
+  Testes abrangentes serão realizados antes da migração dos sistemas de produção. No entanto, em caso de problemas, o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) continuará sendo o principal ponto de contato. A Adobe criou uma equipe de especialistas para fornecer suporte avançado, se necessário.
 
 ## Impactos na capacidade de entrega
 
@@ -97,7 +103,7 @@ Os impactos globais em IPs, listas de bloqueios, subdomínios e URLs estão list
 
   Primeiramente, a equipe de Entregabilidade da Adobe avaliará o status da capacidade de entrega da plataforma e recomendará um plano para a mudança para os novos IPs
 
-  Nenhum aquecimento será necessário após a migração. Pode haver algumas exceções e, nesse caso, o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support) entrará em contato com os clientes.
+  Nenhum aquecimento será necessário após a migração. Pode haver algumas exceções e, nesse caso, o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) entrará em contato com os clientes.
 
   No entanto, o plano é tornar essa operação transparente para a empresa, diferentemente do aumento inicial realizado durante a ativação.
 
@@ -173,7 +179,7 @@ Os impactos globais na configuração, na conectividade com outros sistemas e pr
 
   Pode mudar de acordo com a localização dos novos servidores. No entanto, o cliente poderá manter o fuso horário atual.
 
-  Saiba mais sobre o gerenciamento de fuso horário na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=pt-BR){target="_blank"}.
+  Saiba mais sobre o gerenciamento de fuso horário na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
 
 
 ## Segurança e permissões

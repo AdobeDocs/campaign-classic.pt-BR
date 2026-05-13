@@ -6,9 +6,16 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
-workflow-type: ht
-source-wordcount: '1767'
+TQID: https://experienceleague.adobe.com/g1JuaL9ijMzzZ-OjRY5RNEvMBiX1rGtwKdq-mdKNiHI
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: bea9e610-36b4-4df2-94bb-0fb6fe46cb50id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+workflow-type: tm+mt
+source-wordcount: 1767
 ht-degree: 100%
 
 ---
@@ -83,12 +90,12 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
     <tr>
   <td>Relatório de monitoramento técnico da avaliação da entrega<br></td>
    <td><p>O Relatório de monitoramento técnico da avaliação da entrega não está mais disponível. Ele foi descontinuado na versão 21.1.3 do Campaign.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
   <td>Autenticação OAuth (OAuth e JWT)<br></td>
-  <td><p>A autenticação da integração de acionadores para acessar o pipeline (originalmente baseada na configuração de autenticação OAuth) foi alterada e movida para o Adobe I/O. Este modo de autenticação foi descontinuado no Campaign 20.3.<p>
+  <td><p> A autenticação da integração de acionadores para acessar o pipeline (originalmente baseada na configuração de autenticação OAuth) foi alterada e movida para o Adobe I/O. Este modo de autenticação foi descontinuado no Campaign 20.3.<p>
   <p>Se você estava usando a integração do Triggers, saiba como adaptar sua implementação <a href="../../integrations/using/about-triggers.md#implement">nesta página</a>.</p> 
   <p>Para obter mais informações sobre a depreciação da Autenticação OAuth, consulte esta <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">página</a></p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
@@ -137,7 +144,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   <tr> 
    <td>API decryptString</td>
    <td><p>Começando pela versão 18.6 do Campaign, por motivos de segurança, a API <em>decryptString</em> não estará mais disponível por padrão nas novas instalações.</p> 
-   <p>No contexto de uma pós-atualização para 18.6 (e posterior), essa API não é mais ativada e foi substituída pela função <em>decryptPassword. </em> <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=pt-BR&hl=decrypt">Saiba mais</a></p></td>
+   <p>No contexto de uma pós-atualização para 18.6 (e posterior), essa API não é mais ativada e foi substituída pela função <em>decryptPassword. </em> <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Saiba mais</a></p></td>
   </tr> 
    <tr> 
    <td>Canal móvel - Mensagens de push MMS e WAP</td>

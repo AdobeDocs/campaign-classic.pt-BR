@@ -8,9 +8,12 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+TQID: https://experienceleague.adobe.com/zQXUUtLQveDPTu8blS48gCzTl8lv09vlJXAtjAjgtW4
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: 417
 ht-degree: 11%
 
 ---
@@ -47,20 +50,20 @@ Você pode tentar os seguintes testes e, se a falha de conexão persistir, entre
 </tr>
 <tr> 
 <td>O Adobe Campaign foi integrado corretamente?</td> 
-<td>Faça logon no URL: <b>http(s)://&lt;urlserver&gt;/r/test</b>. O servidor deve retornar o seguinte tipo de mensagem: &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;nome do host&gt;' localHost='&lt;servidor&gt;'/&gt;
+<td>Faça logon na URL: <b>http(s)://&lt;urlserver&gt;/r/test</b>. O servidor deve retornar o seguinte tipo de mensagem: &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;nome do host&gt;' localHost='&lt;servidor&gt;'/&gt;
 Se você não obter esse resultado, verifique na configuração do servidor Web se a integração é levada em conta.</td>
 </tr>
 <tr> 
-<td>Conecte-se ao seguinte URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Conecte-se à seguinte URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
 <td>Se você obter um erro de Java do Tomcat, verifique se a integração JAVA foi executada corretamente. Ele está integrado ao arquivo [caminho do aplicativo]/nl6/customer.sh</td>
 </tr>
 <tr> 
-<td>Conecte-se ao seguinte URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Conecte-se à seguinte URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
 <td>Se você obter uma página em branco, verifique se o módulo Web do Adobe Campaign foi iniciado. O comando nlserver dump deve retornar Application server for Adobe Campaign Classic (build 7.X YY.R XXX@SHA1) de DD/MM/YYYY. Caso contrário, reinicie o módulo com o comando nlserver start web</td>
 </tr>
 <tr>
 <td>Verifique a configuração geral das zonas de segurança.</td>
-<td>Para saber mais sobre como configurar zonas de segurança, consulte <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=pt-BR#configuring-campaign-server"/>esta seção.</a></td>
+<td>Para saber mais sobre como configurar zonas de segurança, consulte <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>esta seção.</a></td>
 </tr>
 <tr>
 <td>O comando nlserver pdump retorna <b>Nenhuma tarefa</b></td>

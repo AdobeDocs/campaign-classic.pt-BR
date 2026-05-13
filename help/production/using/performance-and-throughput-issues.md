@@ -8,9 +8,12 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
+TQID: https://experienceleague.adobe.com/THf7A2u5ktNphqdI8K8ePzLNqCdyCmcqWN0OpYJfVh0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: 805
 ht-degree: 19%
 
 ---
@@ -71,7 +74,7 @@ Esta é uma lista de práticas recomendadas e artigos relacionados à capacidade
   >O compromisso da equipe de capacidade de entrega é baseado no contrato e os clientes devem entrar em contato com seu representante da Adobe para obter informações relacionadas ao compromisso de capacidade de entrega.
 
 * Configuração de afinidade IP: uma configuração de afinidade IP incorreta pode interromper os emails completamente (operador incorreto/nome de afinidade na configuração) ou reduzir a taxa de transferência (pequeno número de IPs na afinidade). Consulte esta [página](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* Tamanho do email: o tamanho do email desempenha uma função importante na taxa de transferência. O tamanho máximo recomendado do email é de 60 KB. Consulte esta [página](https://helpx.adobe.com/br/legal/product-descriptions/campaign.html). No relatório [Taxa de transferência de entrega](../../reporting/using/global-reports.md#delivery-throughput), verifique o número de bytes transferidos por hora.
+* Tamanho do email: o tamanho do email desempenha uma função importante na taxa de transferência. O tamanho máximo recomendado do email é de 60 KB. Consulte esta [página](https://helpx.adobe.com/legal/product-descriptions/campaign.html). No relatório [Taxa de transferência de entrega](../../reporting/using/global-reports.md#delivery-throughput), verifique o número de bytes transferidos por hora.
 * Large number of invalid recipients: quando houver um grande número de recipients inválidos, isso poderá afetar a taxa de transferência. O MTA continua tentando enviar emails novamente para destinatários inválidos. Verifique se o banco de dados foi bem mantido.
 * Quantidade de personalização: se um delivery permanecer em &quot;Personalization em andamento&quot;, verifique a JavaScript usada em blocos de personalização.
 

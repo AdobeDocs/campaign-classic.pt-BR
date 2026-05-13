@@ -4,9 +4,13 @@ title: Trilha de auditoria
 description: Saiba como monitorar sua instância com a Trilha de auditoria do Campaign
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/y8kDwxCY0MkBcDPUPY7hmFlpJc3l3qsEiDRhhMGqT00
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: 444
 ht-degree: 13%
 
 ---
@@ -15,7 +19,7 @@ ht-degree: 13%
 
 >[!INFO]
 >
->Saiba mais sobre a funcionalidade Trilha de auditoria na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/audit-trail).
+>Saiba mais sobre a funcionalidade Trilha de auditoria na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
 
 No Adobe Campaign, o **[!UICONTROL Audit trail]** fornece acesso ao histórico completo de alterações feitas na instância.
 
