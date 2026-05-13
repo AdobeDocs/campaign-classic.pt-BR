@@ -9,9 +9,13 @@ content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
 TQID: https://experienceleague.adobe.com/GyNWNrT81f8tWIQizlu3KcVgKvepCjqd6G40DKeOlGo
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 675
@@ -45,7 +49,7 @@ Você também pode impedir que arquivos importantes sejam carregados configurand
 
 Você pode conectar o servidor do Campaign a um sistema externo por meio de um proxy, usando uma atividade de workflow **Transferência de arquivos**, por exemplo. Para fazer isso, você precisa configurar a seção **proxyConfig** do arquivo **serverConf.xml** por meio de um comando específico. Todos os parâmetros disponíveis no **serverConf.xml** estão listados nesta [seção](../../installation/using/the-server-configuration-file.md).
 
-As seguintes conexões proxy são possíveis: HTTP, HTTPS, FTP, SFTP. Observe que a partir da versão 20.2 do Campaign, os parâmetros de protocolo HTTP e HTTPS não estarão mais disponíveis **1}.** Esses parâmetros ainda são mencionados abaixo, pois permanecem disponíveis em builds anteriores, incluindo a 9032.
+As seguintes conexões proxy são possíveis: HTTP, HTTPS, FTP, SFTP. Observe que a partir da versão 20.2 do Campaign, os parâmetros de protocolo HTTP e HTTPS não estarão mais disponíveis **1&rbrace;.** Esses parâmetros ainda são mencionados abaixo, pois permanecem disponíveis em builds anteriores, incluindo a 9032.
 
 >[!CAUTION]
 >

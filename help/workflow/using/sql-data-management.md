@@ -6,9 +6,13 @@ feature: Workflows
 hide: true
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 TQID: https://experienceleague.adobe.com/69utVGZghklulU5x5HcHF-hA-UKbSgGLQZ-CtlVanL0
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a658c786-869b-4194-a780-2594d663adda
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 420
@@ -30,9 +34,9 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
 
   Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-  ![](assets/do-not-localize/v7.jpeg)[Documentação do Campaign v7](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg) [Documentação do Campaign v7](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png)[Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=pt-BR)
+  ![](assets/do-not-localize/v8.png) [Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=pt-BR)
 
 * O esquema de saída deve existir no banco de dados e estar vinculado a um banco de dados do FDA.
 * O operador que executa o fluxo de trabalho deve ter o item **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** nomeado corretamente. [Saiba mais](../../platform/using/access-management-named-rights.md).

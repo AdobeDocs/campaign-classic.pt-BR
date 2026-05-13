@@ -9,7 +9,8 @@ content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 TQID: https://experienceleague.adobe.com/54ErpGUWBV076fqJIdr2ZsJlKVicuFf4xNgk-qDvvmQ
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 458
@@ -25,7 +26,7 @@ Esta seção lista os comandos habituais no Adobe Campaign.
 
 O comando **nlserver** é o comando de entrada para todo o aplicativo Adobe Campaign.
 
-Este comando tem a seguinte sintaxe: **nlserver **`<command>`****`<arguments>`****
+Este comando tem a seguinte sintaxe: **nlserver &#x200B;**`<command>`**&#x200B;**`<arguments>`**&#x200B;**
 
 O parâmetro **`<command>`** corresponde ao módulo.
 
