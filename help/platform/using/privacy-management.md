@@ -9,13 +9,11 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
 TQID: https://experienceleague.adobe.com/Q6i-WzW5-Jq5u5hfZB66tP-vkX2yD04BmAyR1Bys45A
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+feature_v2: id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 916
 ht-degree: 100%
@@ -61,7 +59,7 @@ Todos esses regulamentos aplicam-se a clientes do Adobe Campaign que coletam dad
 
 >[!NOTE]
 >
->Para obter mais informações sobre dados pessoais e as diferentes entidades que gerenciam os dados (Controlador de dados, Operador de dados e Titular de dados), consulte [Dados pessoais e Personalidades](../../platform/using/privacy-and-recommendations.md#personal-data).
+>Para obter mais informações sobre dados pessoais e as diferentes entidades que gerenciam os dados (Controlador de dados, Operador de dados e Titular de dados), consulte [Dados pessoais e personas](../../platform/using/privacy-and-recommendations.md#personal-data).
 
 ## Direito de acesso e Direito ao esquecimento {#right-access-forgotten}
 
@@ -74,9 +72,9 @@ Para facilitar a conformidade com a privacidade, o Adobe Campaign permite manipu
 Para saber como criar solicitações de **Acesso** e **Exclusão** e como o Adobe Campaign as processa, consulte as [etapas de implementação](../../platform/using/privacy-requests.md).
 
 <!--
-Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=pt-BR).
+Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 
-https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=pt-BR
+https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html
 -->
 
 ## Consentimento, retenção e funções {#consent-retention-roles}

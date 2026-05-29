@@ -7,24 +7,13 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 TQID: https://experienceleague.adobe.com/g1JuaL9ijMzzZ-OjRY5RNEvMBiX1rGtwKdq-mdKNiHI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2:
-  - id: bea9e610-36b4-4df2-94bb-0fb6fe46cb50
-  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: bea9e610-36b4-4df2-94bb-0fb6fe46cb50id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1767
 ht-degree: 100%
@@ -101,7 +90,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
     <tr>
   <td>Relatório de monitoramento técnico da avaliação da entrega<br></td>
    <td><p>O Relatório de monitoramento técnico da avaliação da entrega não está mais disponível. Ele foi descontinuado na versão 21.1.3 do Campaign.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -155,7 +144,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   <tr> 
    <td>API decryptString</td>
    <td><p>Começando pela versão 18.6 do Campaign, por motivos de segurança, a API <em>decryptString</em> não estará mais disponível por padrão nas novas instalações.</p> 
-   <p>No contexto de uma pós-atualização para 18.6 (e posterior), essa API não é mais ativada e foi substituída pela função <em>decryptPassword. </em> <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=pt-BR&hl=decrypt">Saiba mais</a></p></td>
+   <p>No contexto de uma pós-atualização para 18.6 (e posterior), essa API não é mais ativada e foi substituída pela função <em>decryptPassword. </em> <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Saiba mais</a></p></td>
   </tr> 
    <tr> 
    <td>Canal móvel - Mensagens de push MMS e WAP</td>

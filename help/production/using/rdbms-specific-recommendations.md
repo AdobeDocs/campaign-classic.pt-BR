@@ -9,11 +9,11 @@ content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 TQID: https://experienceleague.adobe.com/WmadkiwNNUMeQSnm8O4NJjnv1GQHvO6hZ9kqtoGBySA
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+feature_v2: []
+subfeature_v2: id: c03a11ff-bdf9-4e5b-b279-f468b4293464id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1267
 ht-degree: 5%
@@ -162,7 +162,7 @@ O PostgreSQL não fornece uma maneira fácil de executar uma reconstrução de t
 
 Este é um exemplo de desfragmentação de tabela usando funções específicas para gerar o DDL necessário. O SQL a seguir permite criar duas novas funções: **GenRebuildTablePart1** e **GenRebuildTablePart2**, que podem ser usadas para gerar o DDL necessário para recriar uma tabela.
 
-* A primeira função permite criar uma tabela de trabalho (**&#x200B; _tmp** aqui) que é uma cópia da tabela original.
+* A primeira função permite criar uma tabela de trabalho (** _tmp** aqui) que é uma cópia da tabela original.
 * A segunda função, então, exclui a tabela original e renomeia a tabela de trabalho e seus índices.
 * Usar duas funções em vez de uma significa que, se a primeira falhar, você não corre o risco de excluir a tabela original.
 

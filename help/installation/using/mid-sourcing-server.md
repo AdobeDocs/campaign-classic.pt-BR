@@ -8,9 +8,11 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+feature_v2: []
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: 1084
 ht-degree: 5%
 
 ---
@@ -27,7 +29,7 @@ A instalação de um servidor mid-sourcing segue o mesmo processo que a instala�
 
 >[!CAUTION]
 >
->Depois que o servidor mid-sourcing for configurado e os [workflows de sincronização](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=pt-BR){target="_blank"} forem executados pela primeira vez, certifique-se de não atualizar o nome interno das contas externas mid-sourcing.
+>Depois que o servidor mid-sourcing for configurado e os [workflows de sincronização](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"} forem executados pela primeira vez, certifique-se de não atualizar o nome interno das contas externas mid-sourcing.
 
 ## Etapas para instalar e configurar uma instância {#steps-for-installing-and-configuring-an-instance}
 
@@ -125,7 +127,7 @@ No console do cliente, localize a conta de mid-sourcing **Roteamento de email us
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Reinicie o módulo Web usando o seguinte comando: **&#x200B; web**.
+1. Reinicie o módulo Web usando o seguinte comando: ** web**.
 
 Você deve alterar a configuração do servidor mid-sourcing no arquivo serverConf.xml. A linha a seguir deve ser adicionada à seção &quot;Management of affinities with IP addresses&quot;, na linha existente:
 
@@ -139,9 +141,9 @@ O atributo &#39;@name&#39; deve respeitar as seguintes regras:
 
 &#39;marketing_account_operator_name&#39; está relacionado ao nome interno da conta de mid-sourcing declarada na instância de mid-sourcing.
 
-&#39;affinity_name&#39; está relacionado ao nome arbitrário fornecido para a afinidade. Esse nome deve ser exclusivo. Os caracteres autorizados são `[a-z]` `[A-Z]` `[0-9]`. O objetivo é declarar um grupo de endereços IP públicos.
+&#39;affinity_name&#39; está relacionado ao nome arbitrário fornecido para a afinidade. Esse nome deve ser exclusivo. Os caracteres autorizados são `[a-z]``[A-Z]``[0-9]`. O objetivo é declarar um grupo de endereços IP públicos.
 
-&#39;affinity_group&#39; relaciona a subafinidade declarada no target mapping usado em cada um dos deliveries. A última parte, incluindo &#39;.&#39;, é ignorada se não houver subafinidade. Os caracteres autorizados são `[a-z]` `[A-Z]` `[0-9]`.
+&#39;affinity_group&#39; relaciona a subafinidade declarada no target mapping usado em cada um dos deliveries. A última parte, incluindo &#39;.&#39;, é ignorada se não houver subafinidade. Os caracteres autorizados são `[a-z]``[A-Z]``[0-9]`.
 
 Você deve interromper e reiniciar o servidor para que a modificação seja considerada.
 

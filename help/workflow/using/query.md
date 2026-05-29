@@ -6,12 +6,13 @@ feature: Workflows, Targeting Activity, Query Editor
 hide: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 TQID: https://experienceleague.adobe.com/Htrpo3hCrbp9H7cQD4KWTnMbA-rjgM0K1PFHh-Fak1M
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: []
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1647
-ht-degree: 97%
+source-wordcount: 1620
+ht-degree: 96%
 
 ---
 
@@ -21,8 +22,8 @@ ht-degree: 97%
 
 ## Criar uma consulta {#creating-a-query}
 
-Uma consulta permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado da consulta e inserir dados adicionais nele.
-Para obter mais informações sobre amostras de consulta, consulte [esta seção](querying-recipient-table.md).
+Um query permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado do query e inserir dados adicionais nele.
+Para obter mais informações sobre exemplos de consulta, consulte esta [esta seção](querying-recipient-table.md).
 
 >[!NOTE]
 >
@@ -190,9 +191,9 @@ A seção abaixo fornece as práticas recomendadas para otimizar as queries exec
 
   Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-  ![](assets/do-not-localize/v7.jpeg) [Documentação do Campaign v7](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Documentação do Campaign v7](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
+  ![](assets/do-not-localize/v8.png)[Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
 
 ### Funções {#functions}
 

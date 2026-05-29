@@ -6,9 +6,10 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
 TQID: https://experienceleague.adobe.com/azxivK9YlO8E7jQzYWJX-8BechsrZiY51DNy2q6n8bw
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 547
 ht-degree: 83%
@@ -73,7 +74,7 @@ A seção à direita do editor agrupa as principais opções que permitem que vo
 
 ![](assets/dce_right_section.png)
 
-Você pode:
+É possível:
 
 * Determine a exibição de um ou vários blocos, consulte [Definição de uma condição de visibilidade](editing-content.md#defining-a-visibility-condition),
 * Defina as bordas e os quadros, consulte [Adição de uma borda e um plano de fundo](editing-content.md#adding-a-border-and-background),

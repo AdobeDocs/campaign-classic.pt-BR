@@ -6,13 +6,11 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 TQID: https://experienceleague.adobe.com/3oyhvCWX30kK7dtytjLYvO5Xnbu2-I7FGeJPcjcreho
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: a4671286-a59f-47e3-b97b-90627a1977d5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1592
 ht-degree: 96%
@@ -176,7 +174,7 @@ se o idioma for o primeiro ou único parâmetro da URL. Por exemplo: **https://m
 &lang=xx
 ```
 
-se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myserver/webApp/APP34?status=1&lang=en**
+se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 Os idiomas e os dicionários de tradução disponíveis como padrão estão listados abaixo.
 
@@ -437,7 +435,7 @@ Você pode adicionar **?lang=es** ou **=lang=de** para exibi-la em espanhol ou a
 >[!NOTE]
 >
 >Se outros parâmetros já estiverem sendo usados para essa aplicação web, adicione **&amp;lang=**.\
->Por exemplo: **https://myserver/webApp/APP34?status=1&lang=en**
+>Por exemplo: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## Configuração avançada de tradução {#advanced-translation-configuration}
 

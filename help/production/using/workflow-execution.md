@@ -9,17 +9,14 @@ content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 TQID: https://experienceleague.adobe.com/rLTECFw79UslNFzXs7WArBoo0YmqHjAWojkXCgQOmuk
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: c03a11ff-bdf9-4e5b-b279-f468b4293464id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 762
-ht-degree: 26%
+source-wordcount: 744
+ht-degree: 21%
 
 ---
 
@@ -42,7 +39,7 @@ Em alguns casos, os fluxos de trabalho executados de uma campanha não são inic
 
 Pode haver várias causas para esse problema. Siga as etapas abaixo para resolvê-lo:
 
-1. Verifique o status do fluxo de trabalho técnico [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=pt-BR){target="_blank"}. Esse workflow gerencia jobs ou workflows dentro de uma campanha. Se falhar, os workflows não serão iniciados/interrompidos. Reinicie-o para retomar a execução dos workflows da campanha.
+1. Verifique o status do fluxo de trabalho técnico [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}. Esse workflow gerencia jobs ou workflows dentro de uma campanha. Se falhar, os workflows não serão iniciados/interrompidos. Reinicie-o para retomar a execução dos workflows da campanha.
 
    Para obter mais informações sobre o monitoramento de workflows técnicos, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=pt-BR){target="_blank"}.
 

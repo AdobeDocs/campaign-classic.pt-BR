@@ -6,11 +6,11 @@ feature: Technote, Upgrade
 hide: true
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 TQID: https://experienceleague.adobe.com/JEGK7xRIWwipkqKnRGEByK7pCBCkgXzOrbMPHoXCDUU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+feature_v2: []
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 617
 ht-degree: 10%
@@ -25,7 +25,7 @@ Em 30 de junho de 2021, foram feitas alterações nos recursos de logon do [Adob
 
 ## O que mudou?
 
-O Adobe Identity Management Service (IMS) parou de oferecer suporte a versões antigas do Internet Explorer em **30 de junho de 2021**. [Saiba mais](https://helpx.adobe.com/br/x-productkb/global/update-operating-system-and-browser.html).
+O Adobe Identity Management Service (IMS) parou de oferecer suporte a versões antigas do Internet Explorer em **30 de junho de 2021**. [Saiba mais](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 A Adobe deseja preservar a funcionalidade do IMS para todos os clientes após 30 de junho de 2021. O IMS faz parte da estrutura de segurança que permite aos usuários fazer logon no console do cliente, ou seja, no Adobe Campaign.
 
@@ -82,7 +82,7 @@ A seguinte mensagem de aviso estará visível para os usuários se eles precisar
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-Se aparecer esse aviso, instale as atualizações mais recentes do sistema operacional que você está usando. [Saiba mais](https://helpx.adobe.com/br/x-productkb/global/update-operating-system-and-browser.html)
+Se aparecer esse aviso, instale as atualizações mais recentes do sistema operacional que você está usando. [Saiba mais](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
 Se você não atualizou sua versão do Internet Explorer, verá a seguinte mensagem e não poderá mais se conectar ao Adobe Campaign:
 
