@@ -13,10 +13,18 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 3072
-ht-degree: 96%
+source-wordcount: 2904
+ht-degree: 95%
 
 ---
 
@@ -49,11 +57,11 @@ Depois de verificar cada conta individualmente, há dois cenários possíveis:
    * Você está usando diferentes combinações de logon/senha em todas as suas contas.
 Você terá que entrar em contato com o provedor para diagnosticar possíveis conflitos referentes a ele.
 
-   * Algumas contas externas têm a mesma combinação de logon/senha.
+   * Algumas contas externas compartilham a mesma combinação de logon/senha.
 O provedor não tem como saber de qual conta externa o `BIND PDU` vem. Portanto, ele trata todas as conexões de várias contas como uma única. Ele pode ter roteado MO e SR aleatoriamente nas duas contas, causando problemas.
-Se o provedor der suporte a vários códigos curtos para a mesma combinação de logon/senha, você terá que perguntar a ele onde colocar esse código curto no `BIND PDU`. Observe que essa parte das informações deve ser colocada em `BIND PDU`, não em `SUBMIT_SM`, já que `BIND PDU` é o único local que permitirá o roteamento correto de MOs.
-Consulte a seção [Informações em cada tipo de PDU](sms-protocol.md#information-pdu) acima para saber qual campo está disponível em `BIND PDU`. Normalmente, você adiciona o código curto a `address_range`, mas isso requer suporte especial do provedor. Entre em contato com ele para saber como espera rotear vários códigos curtos independentemente.
-O Adobe Campaign dá suporte à manipulação de vários códigos curtos na mesma conta externa.
+Se o provedor der suporte a vários códigos curtos para a mesma combinação de logon/senha, você terá que perguntar a ele onde colocar esse código curto no `BIND PDU`. Observe que essa parte das informações deve ser colocada em `BIND PDU`, e não em `SUBMIT_SM`, pois `BIND PDU` é o único local que permitirá o roteamento correto de MOs.
+Consulte a seção [Informações em cada tipo de PDU](sms-protocol.md#information-pdu) acima para saber qual campo está disponível no `BIND PDU`. Normalmente, você adiciona o código curto a `address_range`, mas isso requer suporte especial do provedor. Entre em contato com ele para saber como espera rotear vários códigos curtos independentemente.
+O Adobe Campaign oferece suporte à manipulação de vários códigos curtos na mesma conta externa.
 
 ## Problema com a conta externa em geral {#external-account-issues}
 

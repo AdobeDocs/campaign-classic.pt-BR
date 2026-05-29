@@ -15,9 +15,17 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 8524
+source-wordcount: 8283
 ht-degree: 97%
 
 ---
@@ -37,7 +45,7 @@ Há duas formas principais de enviar um SMS:
 
 * Enviá-lo manualmente por um telefone, a maneira habitual de se comunicar diretamente entre as pessoas.
 * Enviá-lo pela Internet, da maneira como o Adobe Campaign envia mensagens. Para isso, você precisa de um provedor de serviço SMS que conecte a Internet à rede móvel.
-O Adobe Campaign usa o protocolo SMPP para enviar SMS a um provedor de serviço.
+O Adobe Campaign usa o protocolo SMPP para enviar SMS a um provedor de serviços.
 
 Este documento o guiará durante a configuração da conexão entre o Adobe Campaign e um provedor SMPP.
 
@@ -522,7 +530,7 @@ Exemplo de uma transmissão com uma janela máxima de 4:
 
 ![](assets/do-not-localize/sms_protocol_2.png)
 
-A janela ajuda a aumentar o rendimento quando o link da rede tem uma latência alta.  O valor da janela deve ser pelo menos o número de SMS/s multiplicado pela latência do link
+A janela ajuda a aumentar a taxa de transferência quando o link da rede tem uma latência alta.  O valor da janela deve ser pelo menos o número de SMS/s multiplicado pela latência do link
 em segundos, para que o conector nunca aguarde um `SUBMIT_SM_RESP` antes de enviar a próxima mensagem.
 Se a janela for muito grande, você poderá enviar mais mensagens duplicadas em caso de problemas de conexão. Além disso, a maioria dos provedores tem um limite muito restrito para a janela e recusa mensagens que ultrapassam o limite.
 
@@ -839,8 +847,8 @@ Se você tiver várias contas na mesma instância do Adobe Campaign que se conec
 
 ### Habilitar rastreamentos SMPP detalhados durante verificações {#enable-verbose}
 
-Você deve sempre habilitar rastreamentos SMPP detalhados durante as verificações.
-Mesmo se você não conseguir verificar os registros sozinho, será mais fácil para o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ajudá-lo.
+Você sempre deve habilitar rastreamentos SMPP detalhados durante verificações.
+Mesmo se você não conseguir verificar os logs sozinho, será mais fácil para o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ajudá-lo.
 
 ### Testar o SMS {#test}
 
@@ -848,13 +856,13 @@ Mesmo se você não conseguir verificar os registros sozinho, será mais fácil 
 Se você precisar enviar SMS com caracteres não GSM ou não ASCII, tente enviar algumas mensagens com o maior número possível de caracteres diferentes. Se você configurar uma tabela de mapeamento de caracteres personalizada, envie pelo menos um SMS para todos os valores de `data_coding` possíveis.
 
 * **Verifique se o SR está corretamente processado**
-O SMS deve ser marcado como recebido no log de delivery. O log de entrega deve ser bem-sucedido e ter a seguinte aparência:
+O SMS deve ser marcado como recebido no log de delivery. O log de delivery deve ser bem-sucedido e ter a seguinte aparência:
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
 Verifique se você alterou o nome do provedor de entrega. O registro de entrega nunca deve conter **SR genérico** em ambientes de produção.
 
-* **Verificar se o MO é processado**
-Se você precisar processar o MO (respostas automáticas, armazenamento de MO no banco de dados etc.) tente fazer alguns testes. Envie alguns SMS para todas as palavras-chave de resposta automática e verifique se a resposta é rápida o suficiente, não mais do que alguns segundos.
-Verifique no log se o Adobe Campaign responde com `DELIVER_SM_RESP` com sucesso (command_status=0).
+* **Verifique se o MO foi processado**
+Se você precisar processar o MO (respostas automáticas, armazenamento de MO no banco de dados etc.), tente fazer alguns testes. Envie alguns SMS para todas as palavras-chave de resposta automática e verifique se a resposta é rápida o suficiente, não mais do que alguns segundos.
+Verifique no log se o Adobe Campaign responde com um `DELIVER_SM_RESP` bem-sucedido (command_status=0).
 
 ### Verificar as PDUs {#check-pdus}
 

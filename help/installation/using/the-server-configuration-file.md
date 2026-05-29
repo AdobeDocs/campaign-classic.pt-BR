@@ -16,9 +16,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 8103
+source-wordcount: 8061
 ht-degree: 8%
 
 ---
@@ -549,7 +550,7 @@ Para obter informações adicionais, consulte esta [seção](../../installation/
 
 >[!NOTE]
 >
->Observação em **nameServers**: por padrão, usa a rede>parâmetros da primeira interface de rede declarada no Windows>não definido no UNIX. Define os servidores de nomes de domínio (DNS)>usado pelo MTA para declarar o Mail Exchanger para>um domínio.
+>Observação em **nameServers**: por padrão, usa os parâmetros de rede> da primeira interface de rede declarada no Windows> não definida no UNIX. Define os servidores de nomes de domínio (DNS)>usados pelo MTA para obter o Mail Exchanger declarado para >um domínio.
 >
 >Se esse valor não estiver definido, o MTA buscará essas informações na configuração da rede do host. Se vários DNS forem possíveis, os diferentes endereços DNS deverão ser separados por vírgula (exemplo: 212.155.207.1,212.155.207.2). Se o servidor de entrega tiver várias interfaces de rede, a lista de DNS usada pelo MTA será a primeira. Nesse caso, recomendamos especificar o parâmetro **nameServer** para evitar ambiguidades.
 

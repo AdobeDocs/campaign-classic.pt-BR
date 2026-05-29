@@ -11,11 +11,14 @@ product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+subfeature_v2:
+  - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 759
 ht-degree: 74%
@@ -105,7 +108,7 @@ Uma estrutura pode conter itens e campos de personalização, recursos e ofertas
 
   ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* Os recursos são de marketing, gerados no painel de recurso de marketing acessado por meio do link **[!UICONTROL Resources]** da guia **[!UICONTROL Campaigns]**.
+* São recursos de marketing gerados no painel de recursos de marketing acessado por meio do link **[!UICONTROL Resources]** da guia **[!UICONTROL Campaigns]**.
 
   ![](assets/s_ncs_user_mkg_resource_ovv.png)
 

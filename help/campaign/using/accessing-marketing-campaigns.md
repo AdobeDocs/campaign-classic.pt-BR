@@ -11,11 +11,14 @@ product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+subfeature_v2:
+  - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1198
 ht-degree: 100%
@@ -55,7 +58,7 @@ O bloco **[!UICONTROL Browsing]** da guia **[!UICONTROL Campaigns]** oferece vá
 
 Cada campanha pertence a um programa que, por sua vez, pertence a um plano. Os planos, programas e campanhas são acessados por meio do menu **[!UICONTROL Campaign calendar]** na guia **Campanhas**.
 
-Para editar um plano, programa, campanha ou entrega, clique no nome no calendário e clique em **[!UICONTROL Open...]**. Ele é exibido em uma nova guia, conforme mostrado abaixo:
+Para editar um plano, programa, campanha ou entrega, clique no nome no calendário e clique em **[!UICONTROL Open...]**. Eles são exibidos em uma nova guia, conforme mostrado abaixo:
 
 ![](assets/d_ncs_user_interface_hierar.png)
 

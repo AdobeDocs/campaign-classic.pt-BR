@@ -18,10 +18,18 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1740
-ht-degree: 100%
+source-wordcount: 1699
+ht-degree: 96%
 
 ---
 
@@ -45,7 +53,7 @@ Para enviar para um celular, você precisa:
 >
 >Usar a mesma conta e senha para várias contas externas de SMS pode resultar em conflitos e sobreposição entre as contas. Consulte a [Página de solução de problemas de SMS](troubleshooting-sms.md#external-account-conflict).
 
-Para enviar um SMS a um telefone celular, primeiro é necessário criar a conta externa SMPP.
+Para enviar um SMS para um telefone celular, primeiro é necessário criar a conta externa SMPP.
 Para obter mais informações sobre o protocolo e as configurações de SMS, consulte esta [página](sms-protocol.md).
 
 Para fazer isso, siga as etapas abaixo:
@@ -353,7 +361,7 @@ Os destinatários estão listados na tabela **[!UICONTROL Non deliverables and a
 * Para enviar a mesma resposta independentemente da palavra-chave, deixe a coluna **[!UICONTROL Keyword]** vazia.
 * Para realizar uma ação sem enviar uma resposta, deixe a coluna **[!UICONTROL Response]** vazia. Por exemplo, isso permite remover da quarentena um usuário que responde com uma mensagem diferente de &quot;PARAR&quot;.
 
-Se você tiver múltiplas contas externas usando o conector Extended generic SMPP com a mesma conta de provedor, o seguinte problema pode ocorrer: ao enviar uma resposta para um código curto, ela pode ser recebida em qualquer uma das conexões de sua conta externa. Consequentemente, a resposta automática que é enviada pode não ser a mensagem esperada.
+Se você tiver várias contas externas usando o conector Extended generic SMPP com a mesma conta de provedor, o seguinte problema pode ocorrer: ao enviar uma resposta para um código curto, ela pode ser recebida em qualquer uma das conexões de sua conta externa. Consequentemente, a resposta automática enviada pode não ser a mensagem esperada.
 Para evitar isso, aplique uma das seguintes soluções, dependendo do provedor que você estiver usando:
 
 * Crie uma conta de provedor para cada conta externa.
