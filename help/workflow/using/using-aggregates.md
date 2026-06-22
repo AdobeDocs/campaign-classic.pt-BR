@@ -13,7 +13,7 @@ subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 615
 ht-degree: 100%
@@ -89,3 +89,4 @@ Depois que o link tiver sido estabelecido, o resultado agregado e os destinatár
 O resultado da atividade split refere-se aos destinatários criados no mesmo dia da última data de criação conhecida.
 
 É possível então adicionar outras atividades, como uma atualização de lista ou uma entrega para enriquecer seu fluxo de trabalho.
+

@@ -19,7 +19,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 1931
 ht-degree: 98%
@@ -273,3 +273,4 @@ Os dados identificados e coletados podem ser enriquecidos, agregados e manipulad
 * A atividade **[!UICONTROL Enrichment]** permite adicionar colunas momentaneamente a um esquema, bem como adicionar informações a determinados elementos. Ela é detalhada na seção [Enrichment](enrichment.md) do repositório de atividades.
 * A atividade **[!UICONTROL Edit schema]** permite modificar a estrutura de um esquema. Ela é detalhada na seção [Edit schema](edit-schema.md) do repositório de atividades.
 * A atividade **[!UICONTROL Change dimension]** permite alterar a dimensão de direcionamento durante o ciclo de construção do target. Ela é detalhada na seção [Change dimension](change-dimension.md).
+

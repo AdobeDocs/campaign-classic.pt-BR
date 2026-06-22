@@ -18,7 +18,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 1198
 ht-degree: 100%
@@ -206,3 +206,4 @@ Aprovações (de um público-alvo ou conteúdo de entrega, por exemplo) podem se
 ![](assets/campaign_web_interface_validation.png)
 
 Você também pode usar o link contido nas mensagens de notificação. Para obter mais informações, consulte [Verificação e aprovação de entregas](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+

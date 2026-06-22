@@ -13,7 +13,7 @@ subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 103
 ht-degree: 100%
@@ -37,3 +37,4 @@ A configuração e operação de uma tarefa são detalhadas na [documentação d
 ![](assets/wkf_task_activity.png)
 
 A opção **[!UICONTROL Resources]** permite definir vários operadores, bem como um agendamento de aprovação para a tarefa. Se a pessoa que aprova rejeitar, isso não leva à tarefa em si a ser rejeitada.
+

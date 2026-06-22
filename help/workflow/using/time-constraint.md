@@ -13,7 +13,7 @@ subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 81
 ht-degree: 100%
@@ -31,3 +31,4 @@ Insira o rótulo para a atividade e especifique o período durante o qual a tare
 Quando a opção **[!UICONTROL Try again later if outside of execution period]** estiver selecionada, ela permitirá reiniciar a tarefa fora do período de execução. se desejar que a ação do fluxo de trabalho seja abandonada para sempre após sua suspensão, desmarque essa opção.
 
 ![](assets/s_user_scheduled_wait.png)
+
