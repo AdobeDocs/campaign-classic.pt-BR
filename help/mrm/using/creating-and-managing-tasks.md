@@ -18,9 +18,9 @@ topic_v2:
 subfeature_v2:
   - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 3750
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -417,7 +417,7 @@ A dependência entre tarefas é representada por setas no painel de campanha.
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-No caso de tarefas agrupadas, o Adobe Campaign atribui automaticamente a data final da tarefa pai à tarefa filho como data inicial. Por exemplo, se uma tarefa filho de **Criar convite** terminar em 15 de outubro às 3:30PM, a tarefa filho **Enviar email de convite** será iniciada em 15 de outubro às 3:30PM.
+No caso de tarefas agrupadas, o Adobe Campaign atribui automaticamente a data final da tarefa pai à tarefa filho como data inicial. Por exemplo, se uma tarefa **Criar convite** terminar em 15 de outubro às 3:30PM, a tarefa derivada **Enviar email de convite** será iniciada em 15 de outubro às 3:30PM.
 
 Além disso, se adiar o fim de uma tarefa pai, algumas de suas tarefas filho poderão ser afetadas: essas são as tarefas filho cujo status é **[!UICONTROL Scheduled]** e cuja data inicial é anterior à nova data final da tarefa pai. A duração da tarefa permanece a mesma. Se a data inicial de uma tarefa filho for posterior à nova data final da tarefa pai, a tarefa filho não será afetada.
 

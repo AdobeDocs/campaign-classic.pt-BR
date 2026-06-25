@@ -24,16 +24,16 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 450
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Personalizar a lista de emoticons {#customize-emoticons}
 
-A lista de emoticons exibida na janela pop-up é regida por uma lista discriminada que permite exibir valores em uma lista para restringir as opções que o usuário tem para um determinado campo.
-A ordem da lista de emoticons pode ser personalizada; você também pode adicionar outros emoticons à lista.
+A lista de emoticons exibida na janela pop-up é controlada por uma lista discriminada, que permite exibir valores em uma lista para restringir as opções disponíveis ao usuário em um determinado campo.
+A ordem da lista de emoticons pode ser personalizada, e você também pode adicionar outros emoticons à sua lista.
 
 Observe que os emoticons só estão disponíveis para email e push. Para mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=pt-BR#inserting-emoticons){target="_blank"}.
 
@@ -58,15 +58,15 @@ Observe que os emoticons só estão disponíveis para email e push. Para mais in
 
 1. Preencha os campos:
 
-   * **[!UICONTROL U+]**: Código do novo emoticon. Você pode encontrar a lista dos códigos de emoticons nesta [página](https://unicode.org/emoji/charts/full-emoji-list.html).
-Para evitar problemas de compatibilidade, recomendamos que você escolha emoticons compatíveis em navegadores e em todos os sistemas operacionais.
+   * **[!UICONTROL U+]**: código do seu novo emoticon. Você pode encontrar a lista de códigos de emoticons nesta [página](https://unicode.org/emoji/charts/full-emoji-list.html).
+Para evitar problemas de compatibilidade, recomendamos que você escolha emoticons que sejam compatíveis com os navegadores e com todos os sistemas operacionais.
 
    * **[!UICONTROL Label]**: Rótulo do novo emoticon.
 
    ![](assets/emoticon_5.png)
 
-1. Clique em **[!UICONTROL Ok]** e depois em **[!UICONTROL Save]** quando a configuração for concluída.
-O novo emoticon será colocado automaticamente na loja.
+1. Clique em **[!UICONTROL Ok]** e depois em **[!UICONTROL Save]** após terminar a configuração.
+Seu novo emoticon será automaticamente adicionado à loja.
 
 1. Para exibi-lo na janela **[!UICONTROL Insert emoticon]** das entregas, selecione o emoticon recém-criado clicando duas vezes sobre ele.
 

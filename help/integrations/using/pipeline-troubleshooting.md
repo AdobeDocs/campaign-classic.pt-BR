@@ -23,9 +23,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 702
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,8 +42,8 @@ A sua versão do Adobe Campaign Classic não é compatível com o pipeline.
 
 **Falha no pipeline com “ aurait dû commencer par `[` ou `{` (iRc=16384)”**
 
-A opção **NmsPipeline_Config** não está definida. Na verdade é um erro de análise JSON.
-Defina a configuração JSON na opção **NmsPipeline_Config**. Consulte &quot;Opção de roteamento&quot; nesta página.
+A opção **NmsPipeline_Config** não está definida. Na verdade, trata-se de um erro de análise de JSON.
+Defina a configuração JSON na opção **NmsPipeline_Config**. Consulte “Opção de roteamento” nesta página.
 
 **Falha no pipeline com &quot;o assunto deve ser uma organização ou cliente válido&quot;**
 
@@ -51,7 +51,7 @@ A configuração do ID da organização não é válida.
 
 1. Verifique se o ID da organização (ImsOrgId) está definido no arquivo serverConf.xml.
 1. Verifique se um ID de organização vazio no arquivo de configuração da instância pode substituir o padrão. Em caso afirmativo, remova-o.
-1. Verifique se o ID da organização está correto. Para encontrar seu ID de organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}
+1. Verifique se o ID da organização está correto. Para encontrar a ID da organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}
 
 **Falha no pipeline com &quot;chave inválida&quot;**
 

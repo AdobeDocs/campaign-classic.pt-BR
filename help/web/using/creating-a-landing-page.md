@@ -18,9 +18,9 @@ subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 739
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Aplique essas etapas para cada página inserida na aplicação web.
 
 >[!CAUTION]
 >
->**O DCE executa o código JavaScript para a página HTML carregada.** Erros de JavaScript no template HTML que podem aparecer na interface do Adobe Campaign. Esses erros não estão relacionados ao editor. Para garantir que não haja erros nos arquivos importados, recomenda-se testar em um navegador antes de importar os arquivos para o DCE.
+>**O DCE executa o código JavaScript da página HTML carregada.** Erros de JavaScript no modelo HTML que podem aparecer na interface do Adobe Campaign. Esses erros não estão relacionados ao editor. Para garantir que não haja erros nos arquivos importados, recomenda-se testar em um navegador antes de importar os arquivos para o DCE.
 
 ## Etapa 2 - Configuração do conteúdo {#step-2---configuring-the-content}
 

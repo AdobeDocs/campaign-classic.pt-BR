@@ -17,9 +17,9 @@ feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1206
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -130,7 +130,7 @@ Ao usar a interação e selecionar ofertas manualmente, o usuário pode combinar
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
-### Estendendo o esquema nms:offer {#extending-nms-offer-schema}
+### Extensão do esquema nms:offer {#extending-nms-offer-schema}
 
 Ao estender o esquema nms:offer, siga a estrutura pronta para uso já configurada:
 * Defina qualquer novo campo para armazenamento de conteúdo em `<element name="view">`.

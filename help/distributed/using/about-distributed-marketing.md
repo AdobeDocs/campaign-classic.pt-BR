@@ -13,9 +13,9 @@ feature_v2:
 subfeature_v2:
   - id: a6187aac-0a00-4394-8937-e8d4c1a40aa4
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 146
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 67%
 
 
 
-O Adobe Campaign oferece um aplicativo de **Marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **[!UICONTROL list of campaign packages]**, em que modelos de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
+O Adobe Campaign oferece um aplicativo de **Marketing distribuído** para implementar campanhas cooperativas entre entidades centrais (sedes, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **[!UICONTROL list of campaign packages]**, em que modelos de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
 
 A entidade central fornece campanhas que entidades locais poderão usar. As campanhas são materializadas por pacotes que representam campanhas locais ou colaborativas. Para usar uma campanha, a entidade local deverá fazer solicitá-la e a solicitação deverá ser aprovada.
 
@@ -33,7 +33,7 @@ A entidade central fornece campanhas que entidades locais poderão usar. As camp
 
 >[!NOTE]
 >
->Para saber mais sobre o Marketing Distribuído para Adobe Campaign e como usá-lo, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
+>Para saber mais sobre o Marketing distribuído do Adobe Campaign e como utilizá-lo, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
 
 <!--
 ## Terminology {#terminology}

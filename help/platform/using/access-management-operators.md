@@ -28,9 +28,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1274
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -180,7 +180,7 @@ Você pode acessar:
 
 ## Operadores padrão {#default-operators}
 
-O Adobe Campaign usa operadores técnicos com perfis configurados por padrão: administrador (&quot;admin&quot;), faturamento (&quot;billing&quot;), monitoramento, agente de aplicação web (&quot;webapp&quot;) etc. Alguns deles dependem dos aplicativos e opções instalados na plataforma: os operadores &quot;central&quot; e &quot;local&quot;, por exemplo, só estarão visíveis se a opção Marketing distribuído estiver instalada.
+O Adobe Campaign utiliza operadores técnicos com perfis configurados por padrão: Administrador (“admin”), Faturamento (“billing”), Monitoramento, Agente de aplicativos web (“webapp”), etc. Alguns deles dependem dos aplicativos e opções instalados na plataforma: os operadores “central” e “local”, por exemplo, só ficam visíveis se a opção Marketing distribuído estiver instalada.
 
 >[!IMPORTANT]
 >

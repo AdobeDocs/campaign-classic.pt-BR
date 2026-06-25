@@ -20,9 +20,9 @@ topic_v2:
 subfeature_v2:
   - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2489
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -203,7 +203,7 @@ Os custos dividem-se em três categorias:
 
 1. Custo calculado
 
-   O custo calculado depende do elemento relacionado (campanha, delivery, tarefa etc.) e seu status (sendo editado, em andamento, concluído). Em qualquer caso, se o custo real for especificado, o custo calculado usará essa quantia.
+   O custo calculado depende do elemento relacionado (campanha, entrega, tarefa etc.) e seu status (sendo editado, em andamento, concluído). Em qualquer caso, se o custo real for especificado, o custo calculado usará essa quantia.
 
    Se o custo real não for fornecido, as seguintes regras se aplicam:
 

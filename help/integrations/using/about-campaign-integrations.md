@@ -24,9 +24,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 740
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ A tabela a seguir fornece acesso à documentação disponível da integração d
   </tr> 
   <tr> 
    <td> <strong>Sistema de gerenciamento de identidade (IMS) da Adobe - Adobe ID</strong><br /> </td> 
-   <td> Configure o Adobe IMS para se conectar ao Adobe Campaign com o mesmo Adobe ID das outras soluções da Adobe Experience Cloud.<br /> Um Adobe ID deve ser usado para fazer logon para usar determinadas funcionalidades vinculadas às integrações do Adobe Experience Cloud.<br /> <p><a href="../../integrations/using/about-adobe-id.md">Saiba mais</a> sobre a implementação da Adobe ID com o Adobe Campaign.</p><br /> </td> 
+   <td> Configure o Adobe IMS para se conectar ao Adobe Campaign usando a mesma Adobe ID utilizada nas outras soluções da Adobe Experience Cloud.<br /> É necessário usar uma Adobe ID para fazer logon a fim de utilizar determinadas funcionalidades relacionadas às integrações da Adobe Experience Cloud.<br /> <p><a href="../../integrations/using/about-adobe-id.md">Saiba mais</a> sobre a implementação da Adobe ID com o Adobe Campaign.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 

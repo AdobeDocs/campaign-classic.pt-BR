@@ -20,9 +20,9 @@ subfeature_v2:
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 662
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Este é um exemplo de como chamar a API externamente (autenticação por meio da
 
 Primeiro, é necessário executar a autenticação por meio da API:
 
-1. Baixe o WSDL **xtk:session** por meio desta URL: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=xtk:session**.
+1. Baixe o WSDL **xtk:session** por meio deste URL: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=xtk:session**.
 
 1. Use o método &quot;Logon&quot; e forneça um nome de usuário e senha como parâmetros na solicitação. Você receberá uma resposta contendo um token de sessão. Veja um exemplo de utilização de SoapUI.
 
@@ -82,7 +82,7 @@ Primeiro, é necessário executar a autenticação por meio da API:
 
 Em seguida, chame a API de privacidade:
 
-1. Baixe o WSDL desta URL: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=nms:privacyRequest**.
+1. Baixe o WSDL por meio deste URL: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=nms:privacyRequest**.
 
 1. Use **[!UICONTROL CreateRequestByName]** para criar uma solicitação específica de acesso a dados pessoais.
 

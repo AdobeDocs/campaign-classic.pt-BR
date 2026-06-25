@@ -16,9 +16,9 @@ feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1016
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Um fluxo de trabalho é criado para cada ambiente e conta externa para a sincron
 
 ## Configuração de pacotes {#packages-configuration}
 
-Quaisquer extensões de esquema diretamente vinculadas à **Interação** (ofertas, propostas, recipients, etc.) deve ser implantado nas instâncias de execução.
+Quaisquer extensões de esquema diretamente vinculadas à **Interação** (ofertas, propostas, destinatários etc.) devem ser implantadas nas instâncias de execução.
 
 O pacote de Interação deve ser instalado em todas as instâncias (controle e execução). Dois pacotes adicionais estão disponíveis: um pacote a ser instalado nas instâncias de controle e outro para ser instalado em cada instância de execução.
 

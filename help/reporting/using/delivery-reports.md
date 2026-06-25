@@ -19,9 +19,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1496
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ Este relatório mostra a lista de páginas visitadas após uma entrega.
 
 ![](assets/s_ncs_user_url_report.png)
 
-Você pode configurar o conteúdo desse relatório selecionando: o gráfico de pontuação a ser exibido, o filtro de tempo (desde a inicialização da ação, durante as primeiras 6 horas após o lançamento etc.) e o modo de exibição de dados (por rótulo, por URL, por categoria. Clique em **[!UICONTROL Refresh]** para confirmar a seleção.
+Você pode configurar o conteúdo desse relatório selecionando: o gráfico de pontuação a ser exibido, o filtro de tempo (desde a inicialização da ação, durante as primeiras 6 horas após a inicialização etc.) e o modo de exibição de dados (por rótulo, por URL, por categoria. Clique em **[!UICONTROL Refresh]** para confirmar a seleção.
 
 As seguintes taxas são exibidas na seção superior do relatório:
 
@@ -171,7 +171,7 @@ Esse relatório fornece todas as informações principais sobre a entrega.
 Essa seção tem dois indicadores:
 
 * **[!UICONTROL Initial population]** : Número total de destinatários alvos da entrega.
-* **[!UICONTROL Messages rejected by the rule]** : Número de endereços ignorados durante a análise ao aplicar regras de tipologia: endereço em falta, em quarentena, em inclui na lista de bloqueios, etc. Para obter mais informações sobre regras de tipologia, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=pt-BR){target="_blank"}.
+* **[!UICONTROL Messages rejected by the rule]** : número de endereços ignorados durante a análise ao aplicar regras de tipologia: endereço ausente, em quarentena, incluído na lista de bloqueios etc. Para obter mais informações sobre regras de tipologia, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=pt-BR){target="_blank"}.
 
 **[!UICONTROL Causes of exclusion]**
 

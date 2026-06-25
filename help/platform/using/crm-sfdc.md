@@ -20,9 +20,9 @@ subfeature_v2:
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 323
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -35,8 +35,8 @@ Nesta página, você aprenderá a conectar o Campaign Classic ao **Salesforce**.
 A sincronização de dados é realizada por meio de uma atividade de fluxo de trabalho dedicada. [Saiba mais](../../platform/using/crm-data-sync.md).
 
 
-A conta externa do permite importar e exportar dados do Salesforce para o Adobe Campaign.
-Para configurar o Conector CRM do Salesforce, siga as etapas abaixo:
+A conta externa permite importar e exportar dados do Salesforce para o Adobe Campaign.
+Para configurar o Conector do CRM para o Salesforce, siga as etapas abaixo:
 
 1. Crie uma nova conta externa por meio do nó **[!UICONTROL Administration > Platform > External accounts]** da árvore do Adobe Campaign.
 1. Selecione **[!UICONTROL Salesforce.com]**.

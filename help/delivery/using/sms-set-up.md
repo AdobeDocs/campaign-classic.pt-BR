@@ -27,9 +27,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1699
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -53,8 +53,8 @@ Para enviar para um celular, você precisa:
 >
 >Usar a mesma conta e senha para várias contas externas de SMS pode resultar em conflitos e sobreposição entre as contas. Consulte a [Página de solução de problemas de SMS](troubleshooting-sms.md#external-account-conflict).
 
-Para enviar um SMS para um telefone celular, primeiro é necessário criar a conta externa SMPP.
-Para obter mais informações sobre o protocolo e as configurações de SMS, consulte esta [página](sms-protocol.md).
+Para enviar uma mensagem SMS para um dispositivo móvel, primeiro você precisa criar sua conta externa SMPP.
+Para obter mais informações sobre o protocolo SMS e as configurações, consulte esta [página](sms-protocol.md).
 
 Para fazer isso, siga as etapas abaixo:
 
@@ -361,7 +361,7 @@ Os destinatários estão listados na tabela **[!UICONTROL Non deliverables and a
 * Para enviar a mesma resposta independentemente da palavra-chave, deixe a coluna **[!UICONTROL Keyword]** vazia.
 * Para realizar uma ação sem enviar uma resposta, deixe a coluna **[!UICONTROL Response]** vazia. Por exemplo, isso permite remover da quarentena um usuário que responde com uma mensagem diferente de &quot;PARAR&quot;.
 
-Se você tiver várias contas externas usando o conector Extended generic SMPP com a mesma conta de provedor, o seguinte problema pode ocorrer: ao enviar uma resposta para um código curto, ela pode ser recebida em qualquer uma das conexões de sua conta externa. Consequentemente, a resposta automática enviada pode não ser a mensagem esperada.
+Se você tiver múltiplas contas externas que utilizam o conector SMPP genérico estendido com a mesma conta de provedor, o seguinte problema pode ocorrer: ao enviar uma resposta para um código curto, ela pode ser recebida em qualquer uma das conexões de sua conta externa. Consequentemente, a resposta automática enviada pode não ser a mensagem esperada.
 Para evitar isso, aplique uma das seguintes soluções, dependendo do provedor que você estiver usando:
 
 * Crie uma conta de provedor para cada conta externa.

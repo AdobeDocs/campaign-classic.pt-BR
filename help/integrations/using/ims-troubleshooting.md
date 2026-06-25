@@ -21,9 +21,9 @@ subfeature_v2:
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 501
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -102,9 +102,9 @@ Se tiver problemas ao entrar no **[!UICONTROL Client Console]** com sua Adobe ID
 
 1. Feche o **[!UICONTROL Client Console]** e pare qualquer processo `nlclient` em execução.
 
-1. Excluir todas as pastas `webview2` e `webview2Cache` dos seguintes locais:
+1. Exclua todas as pastas `webview2` e `webview2Cache` dos seguintes locais:
 
    * `C:\ProgramData\Neolane\NL_5\nlclient\`
    * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
 
-1. Reinicie o **[!UICONTROL Client Console]** e entre com sua Adobe ID. As pastas de cache serão automaticamente recriadas na próxima inicialização.
+1. Reinicie o **[!UICONTROL Client Console]** e faça logon com sua Adobe ID. As pastas de cache serão automaticamente recriadas na próxima inicialização.

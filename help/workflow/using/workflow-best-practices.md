@@ -16,9 +16,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1350
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,8 +52,8 @@ Duas soluções adicionais estão disponíveis para ajudar:
 
   Disponível na guia **[!UICONTROL Execution]** das propriedades do fluxo de trabalho, essa opção registrará todos as consultas SQL geradas pela ferramenta a partir das diferentes atividades. É uma boa forma de ver o que está realmente sendo executado pela plataforma. No entanto, essa opção só deve ser usada temporariamente durante o desenvolvimento e não ativada durante a produção.
 
-Limpe os registros quando não forem mais necessários. O histórico do workflow não é removido automaticamente: todas as mensagens são mantidas por padrão. O histórico pode ser eliminado por meio do menu **[!UICONTROL File > Actions]** ou clicando no botão Actions localizado na barra de ferramentas acima da lista. Selecione Purge history.
-Para saber como limpar seus logs, consulte esta [documentação](starting-a-workflow.md).
+Elimine os registros quando eles não forem mais necessários. O histórico do fluxo de trabalho não é eliminado automaticamente: todas as mensagens são mantidas por padrão. Para limpar o histórico, acesse o menu **[!UICONTROL File > Actions]** ou clique no botão Ações localizado na barra de ferramentas acima da lista. Selecione Limpar histórico.
+Para saber como eliminar seus registros, consulte esta [documentação](starting-a-workflow.md).
 
 ### Planejamento de fluxo de trabalho {#workflow-planning}
 

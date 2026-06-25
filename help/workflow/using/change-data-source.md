@@ -15,9 +15,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 236
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ ht-degree: 84%
 
 A atividade **[!UICONTROL Change data source]** permite alterar a fonte de dados de um fluxo de trabalho **[!UICONTROL Working table]**. Isso oferece mais flexibilidade para gerenciar dados em diferentes fontes de dados, como FDA, FFDA e o banco de dados local.
 
-O **[!UICONTROL Working table]** permite que o fluxo de trabalho do Adobe Campaign Classic manipule dados e compartilhe dados com as atividades do fluxo de trabalho.
-Por padrão, o **[!UICONTROL Working table]** é criado no mesmo banco de dados da fonte de dados que consultamos.
+A **[!UICONTROL Working table]** permite que o fluxo de trabalho do Adobe Campaign Classic processe dados e os compartilhe com as atividades do fluxo de trabalho.
+Por padrão, a **[!UICONTROL Working table]** é criada no mesmo banco de dados que a fonte dos dados que consultamos.
 
-Por exemplo, ao consultar a tabela **[!UICONTROL Profiles]**, armazenada no banco de dados em nuvem, você criará um **[!UICONTROL Working table]** no mesmo banco de dados em nuvem.
-Para alterar isso, você pode adicionar a atividade **[!UICONTROL Change Data Source]** e escolher uma fonte de dados diferente para sua **[!UICONTROL Working table]**.
+Por exemplo, ao consultar a tabela **[!UICONTROL Profiles]**, armazenada no banco de dados na nuvem, você criará uma **[!UICONTROL Working table]** nesse mesmo banco de dados na nuvem.
+Para alterar isso, você pode adicionar a atividade **[!UICONTROL Change Data Source]** para escolher uma fonte de dados diferente para a sua **[!UICONTROL Working table]**.
 
 Observe que, ao usar a atividade **[!UICONTROL Change Data Source]**, será necessário alternar de volta para o banco de dados em nuvem para continuar a execução do fluxo de trabalho.
 

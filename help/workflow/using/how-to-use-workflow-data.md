@@ -17,9 +17,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 410
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 88%
 
 ## Atualização do banco de dados {#updating-the-database}
 
-Todos os dados coletados podem ser usados para atualizar o banco de dados ou nas entregas. Por exemplo, você pode enriquecer as possibilidades de personalização do conteúdo da mensagem (incluir o número de contratos na mensagem, especificar o carrinho de compras médio do ano passado etc.) ou detalhar a segmentação de população (enviar uma mensagem aos cotitulares do contrato, direcionar os mil melhores assinantes para serviços online e etc.). Esses dados também podem ser exportados ou arquivados em uma lista.
+Todos os dados coletados podem ser usados para atualizar o banco de dados ou nas entregas. Por exemplo, você pode enriquecer as possibilidades de personalização do conteúdo da mensagem (incluir o número de contratos na mensagem, especificar o valor médio das compras no ano passado etc.) ou detalhar a segmentação de população (enviar uma mensagem aos cotitulares do contrato, direcionar os 1.000 principais assinantes para serviços online etc.). Esses dados também podem ser exportados ou arquivados em uma lista.
 
 ### Atualizações diretas e listas {#lists-and-direct-updates}
 

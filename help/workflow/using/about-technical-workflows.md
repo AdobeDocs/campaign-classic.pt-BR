@@ -20,9 +20,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1723
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Para obter mais informações sobre como monitorar fluxos de trabalho técnicos,
 | **Notificações de recurso de marketing** (assetMgt) | Recursos de marketing (MRM) | Esse fluxo de trabalho gerencia notificações vinculadas à aprovação e à publicação de recursos de marketing. |
 | **Centro de mensagens &lt;external_account_name>** (mcSynch_&lt;external_account_name>) | Controle de mensagens transacionais (Centro de mensagens - Controle) | Esse fluxo de trabalho: <ul><li>recupera a lista de eventos processados pela(s) operação(s).</li><li>sincroniza com a tabela NmsBroadLogMsg para recuperar as qualificações da mensagem de entrega.</li><li>recupera logs de entrega de eventos assim que a sincronização com a tabela NmsBroadLogMsg for concluída.</li><li>sincroniza com a tabela NmsTrackingUrl para recuperar o rastreamento para as URLs de entrega.</li><li>recupera as URLs de rastreamento de eventos assim que a sincronização com a tabela NmsTrackingUrl for concluída.</li><li>permite recuperar todos os endereços de email colocados em quarentena a cada três horas após o envio de uma entrega.</li></ul> |
 | **Cálculo agregado completo do MessageCenter** (agg_messageCenter_full) | Controle de mensagens transacionais (Centro de mensagens - Controle) | Esse fluxo de trabalho atualiza o agregado completo para o cubo do centro de mensagens. É acionado todos os dias às 3h por padrão. Esse agregado captura as seguintes dimensões: canal, data, status e tipo de evento. O cubo do centro de mensagens é usado para gerar relatórios com base em eventos. Você pode saber mais sobre cubos [nesta seção](../../reporting/using/ac-cubes.md) |
-| **Mid-sourcing (contadores de entrega)** (defaultMidSourcingDlv) | Transferência para mid-sourcing | Esse fluxo de trabalho coleta informações de contagem para entregas no servidor mid-sourcing. As informações de contagem incluem indicadores de delivery gerais, como número de deliveries enviados, etc. As informações de rastreamento, como aberturas, não são incluídas. É acionado a cada dez minutos por padrão. |
+| **Mid-sourcing (contadores de entrega)** (defaultMidSourcingDlv) | Transferência para mid-sourcing | Esse fluxo de trabalho coleta informações de contagem para entregas no servidor mid-sourcing. Informações de contagem incluem indicadores de entrega gerais, como número de entregas enviadas etc. Informações de rastreamento, como aberturas, não estão incluídas. É acionado a cada dez minutos por padrão. |
 | **Mid-sourcing (logs de entrega)** (defaultMidSourcingLog) | Transferência para mid-sourcing | Esse fluxo de trabalho coleta logs da entrega no servidor mid-sourcing. É acionado a cada hora por padrão. |
 | **Gerenciamento de recusa de NMAC** (mobileAppOptOutMgt) | Canal de aplicativo móvel | Esse fluxo de trabalho atualiza a notificação de unsubscriptions em dispositivos móveis. É acionado a cada 6 horas entre 1:00 AM e meia-noite. Para obter mais detalhes, consulte [esta seção](../../delivery/using/delivery-failures-quarantine.md#push-notification-quarantines). |
 | **Notificação de oferta** (offerMgt) | Entrega | Esse fluxo de trabalho implanta ofertas aprovadas no ambiente online, bem como todas as categorias contidas no catálogo de oferta. |

@@ -18,9 +18,9 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1147
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +110,7 @@ Cada linha representa uma hora do dia e cada célula representa 5 minutos dessa 
 
 A grade mostra todos os fluxos de trabalho que estão sendo executados ao mesmo tempo para cada um desses períodos de 5 minutos.
 
-No exemplo abaixo, entre 8h e 8:05am, três workflows estão em execução (independentemente da duração individual):
+No exemplo abaixo, entre 8:00 e 8:05am, três fluxos de trabalho estão em execução (independentemente da duração individual):
 
 ![](assets/wkf_monitoring_ex_8am.png)
 

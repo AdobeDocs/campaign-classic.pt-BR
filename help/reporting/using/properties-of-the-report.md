@@ -18,9 +18,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 440
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ As opções possíveis são:
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 
-O idioma de edição é o idioma escrito. Ao adicionar um idioma, a subguia aparece na página de edição do relatório.
+O idioma de edição é o idioma em que você escreve. Após adicionar um idioma, a subguia aparece na página de edição do relatório.
 
 ![](assets/s_ncs_advuser_report_properties_05a.png)
 

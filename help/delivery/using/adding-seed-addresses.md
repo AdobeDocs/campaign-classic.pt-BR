@@ -20,9 +20,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 336
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Há três modos de inserção possíveis:
 
 >[!NOTE]
 >
->Essa opção é usada quando a tabela do recipient usada não é a tabela padrão **nms:recipient** e você está usando a funcionalidade de Renderização da Caixa de Entrada fornecida com o módulo **[!UICONTROL Deliverability]** do Adobe Campaign.
+>Essa opção é usada quando a tabela do destinatário usada não é a tabela **nms:recipient** padrão e você está usando a funcionalidade de Renderização da caixa de entrada fornecida com o módulo **[!UICONTROL Deliverability]** do Adobe Campaign.
 >
 >Para obter mais informações, consulte [Usar uma tabela de destinatário externa](using-an-external-recipient-table.md) e a documentação sobre [Renderização de caixa de entrada](inbox-rendering.md).
 

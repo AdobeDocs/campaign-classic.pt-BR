@@ -19,9 +19,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1587
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -31,11 +31,11 @@ Para criar um relatório de análise descritiva, use o assistente dedicado. A co
 
 ## Analisar dados no banco de dados {#analyzing-data-in-the-database}
 
-O assistente de análise descritiva pode ser iniciado por meio do menu **[!UICONTROL Tools > Descriptive analysis]**: nesse caso, a análise inclui os recipients por padrão (**nms:recipient**). Aplica-se a todos os dados do banco de dados do Adobe Campaign.
+O assistente de análise descritiva pode ser iniciado por meio do menu **[!UICONTROL Tools > Descriptive analysis]**: nesse caso, a análise inclui os destinatários por padrão (**nms:recipient**). Aplica-se a todos os dados do banco de dados do Adobe Campaign.
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-Para analisar uma tabela diferente da dos recipients padrão (**nms:recipient**), clique no link **[!UICONTROL Advanced settings...]** na última etapa do assistente e selecione a tabela que corresponde às suas configurações, neste caso **cus:individual**:
+Para analisar uma tabela diferente da dos destinatários padrão (**nms:recipient**), clique no link **[!UICONTROL Advanced settings...]** na última etapa do assistente e selecione a tabela que corresponde às suas configurações, neste caso **cus:individual**:
 
 ![](assets/reporting_descriptive_other_schema.png)
 

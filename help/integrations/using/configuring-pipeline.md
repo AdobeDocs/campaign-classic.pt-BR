@@ -24,9 +24,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 854
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -141,9 +141,9 @@ A lista de parâmetros opcionais é:
 | dumpStatePeriodSec | O período entre dois despejos do processo de estado interno no estado interno `var/INSTANCE/pipelined.json.` <br> também está acessível sob demanda aqui: `http://INSTANCE:7781/pipelined/status` |
 | forcedPipelineEndpoint | Desabilite a detecção do PipelineServicesEndpoint e force-a |
 | monitorServerPort | O processo de pipeline ouvirá nesta porta para fornecer o processo de estado interno aqui: `http://INSTANCE:PORT/pipelined/status`. <br>O padrão é 7781 |
-| pointerFlushMessageCount | Quando esse número de mensagens é processado, os deslocamentos são salvos no banco de dados. <br> O padrão é 1000 |
+| pointerFlushMessageCount | Quando esse número de mensagens for processado, os deslocamentos serão salvos no banco de dados. <br> O valor padrão é 1000 |
 | pointerFlushPeriodSec | Após esse período, os deslocamentos serão salvos no banco de dados. <br>O padrão é 5 (segundos) |
-| processingJSThreads | Número de mensagens de processamento de threads dedicados com conectores JS personalizados. <br> O padrão é 4 |
+| processingJSThreads | Número de threads dedicadas ao processamento de mensagens com conectores JS personalizados. <br> O padrão é 4 |
 | processingThreads | Número de mensagens de processamento de threads dedicados com código integrado. <br>O padrão é 4 |
 | retryPeriodSec | Atraso entre tentativas em caso de erros de processamento. <br>O padrão é 30 (segundos) |
 | retryValiditySec | Descarte a mensagem se ela não for processada com êxito após esse período (muitas tentativas). <br>O padrão é 300 (segundos) |

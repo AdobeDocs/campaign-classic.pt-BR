@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 399
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Este exemplo também mostra como configurar um filtro relacionado à escolha de 
 
 Siga as etapas abaixo:
 
-1. Abra o editor de consulta genérico e selecione a tabela Recipient **[!UICONTROL (nms:recipient)]**.
+1. Abra o editor de consultas genéricas e selecione a tabela Destinatário **[!UICONTROL (nms:recipient)]**.
 1. Na janela **[!UICONTROL Data to extract]**, selecione **[!UICONTROL Primary key]**, **[!UICONTROL First name]**, **[!UICONTROL Last name]** e **[!UICONTROL Email]**.
 
    ![](assets/query_editor_nveau_33.png)

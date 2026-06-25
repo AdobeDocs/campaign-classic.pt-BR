@@ -19,9 +19,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2330
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Este relatório contém informações sobre a taxa de transferência de entrega 
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-Você pode configurar os valores exibidos alterando a escala de tempo: visualização de 1 hora, 3 horas, 24 horas, etc. Clique em **[!UICONTROL Refresh]** para confirmar a seleção.
+Você pode configurar os valores exibidos alterando a escala de tempo: visualização de 1 hora, de 3 horas, de 24 horas etc. Clique em **[!UICONTROL Refresh]** para confirmar sua seleção.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Você pode configurar os valores exibidos alterando a escala de tempo: visualiza
 >
 >O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
->Observe que sua instância deve ser atualizada com a build mais recente do [Gold Standard](../../rn/using/gold-standard.md) ou a build mais recente do GA (21.1.3) [. &#x200B;](../../rn/using/latest-release.md) Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>Observe que sua instância deve ser atualizada com a build mais recente do [Gold Standard](../../rn/using/gold-standard.md) ou a build mais recente do GA (21.1.3)[. ](../../rn/using/latest-release.md) Saiba como verificar sua versão [nesta seção](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Atividades do usuário {#user-activities}
 
@@ -180,9 +180,9 @@ A tabela de valores usa os seguintes indicadores:
 
 ### Compartilhamento em redes sociais {#sharing-to-social-networks}
 
-O marketing viral permite que os recipients do delivery compartilhem informações com sua rede de contatos: eles podem adicionar um link ao seu perfil (Facebook, X - anteriormente conhecido como Twitter etc.) ou enviar uma mensagem a um amigo. Cada compartilhamento e cada acesso às informações compartilhadas é controlado na entrega. Para obter mais informações sobre marketing viral, consulte [esta seção](../../delivery/using/viral-and-social-marketing.md).
+O marketing viral permite que os destinatários da entrega compartilhem informações com suas redes de contatos. Os destinatários podem adicionar um link ao seu perfil do Facebook, X (antigo Twitter) etc. ou enviar uma mensagem a um(a) amigo(a). Cada compartilhamento e cada acesso às informações compartilhadas é controlado na entrega. Para obter mais informações sobre marketing viral, consulte [esta seção](../../delivery/using/viral-and-social-marketing.md).
 
-Este relatório mostra o detalhamento de mensagens compartilhadas e abertas em redes sociais (Facebook, X etc.) e/ou por email.
+Esse relatório mostra o detalhamento de mensagens compartilhadas e abertas em redes sociais (Facebook, X etc.) e/ou por email.
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -215,7 +215,7 @@ Esta seção inclui dois gráficos que representam o detalhamento de atividades 
 
 ## Estatísticas de atividades de compartilhamento {#statistics-on-sharing-activities}
 
-Este relatório mostra a evolução dos compartilhamentos em redes sociais (Facebook, X - anteriormente conhecido como Twitter, email, etc.) em tempo útil.
+Esse relatório mostra a evolução dos compartilhamentos em redes sociais, como Facebook, X (antigo Twitter), email etc. ao longo do tempo.
 
 Para obter mais informações sobre marketing viral, consulte [esta seção](../../delivery/using/viral-and-social-marketing.md).
 

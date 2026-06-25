@@ -15,9 +15,9 @@ subfeature_v2:
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 349
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 81%
 >[!IMPORTANT]
 >
 >Como usuário de serviços hospedados ou gerenciados do Campaign, sua implementação do Adobe IMS é de propriedade da Adobe. As etapas descritas abaixo se aplicam apenas a clientes locais e híbridos.
-> A implementação do Adobe IMS só deve ser executada por administradores técnicos da Adobe. Entre em contato com seu representante da Adobe para iniciar o processo de implementação.
+> A implementação do Adobe IMS só deve ser executada por admins técnicos da Adobe. Entre em contato com o(a) representante da Adobe para iniciar o processo de implementação.
 
 ## Pré-requisitos {#prerequisites}
 
-* Você deve ter um nome e um ID de organização da Adobe Experience Cloud. Para encontrar seu ID de organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}.
+* Você deve ter um nome e um ID de organização da Adobe Experience Cloud. Para encontrar a ID da sua organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}.
 * Você precisa adicionar usuários na Experience Cloud. Para obter mais informações, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=pt-BR){_blank}.
 
 >[!NOTE]
@@ -59,8 +59,8 @@ Insira a seguinte informação:
 
   O endereço do **[!UICONTROL Callback server]** deve ser especificado em **https**. Esse campo corresponde ao URL de acesso da sua instância do Adobe Campaign.
 
-* ID da organização: para encontrar seu ID de organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}.
+* ID da organização: para encontrar a ID da sua organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}.
 
-* Máscara de associação: esse campo permite definir a sintaxe que permitirá que os nomes de configuração no Painel Enterprise sejam sincronizados com os grupos no Adobe Campaign. Se você usar a sintaxe &quot;Campaign - tenant_id - (.&#42;)&quot;, o grupo de segurança criado no Adobe Campaign será vinculado ao nome de configuração &quot;Campaign - tenant_id - internal_name&quot; no Painel Enterprise.
+* Máscara de associação: esse campo permite definir a sintaxe que permitirá que os nomes de configuração no Painel Enterprise sejam sincronizados com os grupos no Adobe Campaign. Se você usar a sintaxe “Campaign - tenant_id - (.&#42;)”, o grupo de segurança criado no Adobe Campaign será vinculado ao nome de configuração “Campaign - tenant_id - internal_name” no painel da empresa.
 
 * Informações de conexão da Adobe Experience Cloud, que é o nome do locatário da Adobe Experience Cloud.

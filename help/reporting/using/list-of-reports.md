@@ -19,9 +19,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1024
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -352,7 +352,7 @@ Para obter mais informações sobre o conteúdo desses relatórios, consulte [es
 
 ## Outros relatórios OOTB {#other-ootb-reports}
 
-Os relatórios a seguir também são fornecidos internamente. Para obter mais informações, consulte o documento na funcionalidade relacionada a elas.
+Os seguintes relatórios também estão disponíveis de forma integrada. Para mais informações sobre o assunto, consulte o documento sobre as funcionalidades em questão.
 
 <table> 
  <tbody> 

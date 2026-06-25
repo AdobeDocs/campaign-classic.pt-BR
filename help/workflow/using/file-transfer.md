@@ -19,9 +19,9 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 527
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,8 +29,8 @@ ht-degree: 96%
 
 
 
-A atividade **Transferência de arquivos** permite receber ou enviar arquivos, testar a presença de arquivos ou listar arquivos em um servidor. O protocolo usado é Azure Blob Storage, Amazon Simple Storage Service (S3), FTP ou SFTP.
-Com S3, Azure Blob Storage ou conexão SFTP, você também pode importar dados de segmento para a Adobe Campaign com a plataforma de dados do cliente em tempo real da Adobe. Para obter mais informações, consulte esta [documentação](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=pt-BR).
+A atividade **Transferência de arquivos** permite receber ou enviar arquivos, testar a presença de arquivos ou listar arquivos em um servidor. O protocolo usado é o Azure Blob Storage, Amazon Simple Storage Service (S3), FTP ou SFTP.
+Com uma conexão S3, Azure Blob Storage ou SFTP, você também pode importar dados de segmento para o Adobe Campaign com a plataforma de dados do cliente em tempo real da Adobe. Para obter mais informações, consulte esta [documentação](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=pt-BR).
 
 >[!NOTE]
 >

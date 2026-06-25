@@ -20,9 +20,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 711
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Em um fluxo de trabalho de segmentação (canal de saída), é possível usar os
 
 ## Configurações de dados adicionais {#additional-data-configuration}
 
-É necessário estender o esquema **nms:interaction** vinculado ao ambiente e declarar a lista de campos adicionais que serão usados durante uma chamada para o mecanismo do Interaction. Ao criar a regra de elegibilidade ou personalizar uma oferta, esses campos ficarão acessíveis pelo nó **Interaction** (consulte [Uso de dados adicionais](#using-additional-data)).
+É necessário estender o esquema **nms:interaction** vinculado ao ambiente e declarar a lista de campos adicionais que serão usados durante uma chamada para o mecanismo de Interação. Ao criar a regra de elegibilidade ou personalizar uma oferta, esses campos ficarão acessíveis pelo nó **Interaction** (consulte [Uso de dados adicionais](#using-additional-data)).
 
 Para o canal de entrada, é necessário adicionar os campos de dados de chamada no nó **Interação**.
 
@@ -79,7 +79,7 @@ Se quiser armazenar esses dados na tabela de propostas, também é necessário e
 
 ### Canal de entrada (página da Web) {#input-channel--web-page-}
 
-Para transferir dados adicionais ao chamar o mecanismo, é necessário adicionar a variável **interactionGlobalCtx** no código JavaScript da página da Web. Insira o nó **Interaction** que contém os dados de chamada nesta variável. É necessário respeitar a mesma estrutura xml que está no esquema **nms:interaction**. Consulte: [Configuração de dados adicionais](#additional-data-configuration).
+Para transferir dados adicionais ao chamar o mecanismo, é necessário adicionar a variável **interactionGlobalCtx** no código JavaScript da página da Web. Insira o nó **Interaction** que contém os dados de chamada nesta variável. É necessário respeitar a mesma estrutura xml presente no esquema **nms:interaction**. Consulte: [Configuração de dados adicionais](#additional-data-configuration).
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
@@ -87,7 +87,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### Canal de saída {#output-channel}
 
-É necessário criar um fluxo de trabalho de direcionamento para carregar dados adicionais na tabela de trabalho respeitando a mesma estrutura XML e os mesmos nomes internos que no esquema **nms:interaction**. Consulte: [Configuração de dados adicionais](#additional-data-configuration).
+É necessário criar um fluxo de trabalho de direcionamento para carregar dados adicionais na tabela de trabalho respeitando a mesma estrutura XML e os mesmos nomes internos do esquema **nms:interaction**. Consulte: [Configuração de dados adicionais](#additional-data-configuration).
 
 ## Uso de dados adicionais {#using-additional-data}
 
@@ -113,7 +113,7 @@ Também é possível usar esses dados adicionais ao personalizar uma oferta. Por
 >
 >É necessário limitar a personalização nos canais para os quais os dados são definidos. No nosso exemplo, estamos limitando a regra no canal da Web de entrada.
 
-Se tiver personalizado uma oferta usando dados adicionais, esses dados não aparecerão na visualização por padrão porque não estão disponíveis no banco de dados. Na guia **[!UICONTROL Example of call data]** do ambiente, é preciso adicionar amostras de valor para usar na pré-visualização. Respeite a mesma estrutura xml que está na extensão de esquema **nms:interaction**. Para obter mais informações, consulte [Configuração de dados adicionais](#additional-data-configuration).
+Se tiver personalizado uma oferta usando dados adicionais, esses dados não aparecerão na visualização por padrão porque não estão disponíveis no banco de dados. Na guia **[!UICONTROL Example of call data]** do ambiente, é preciso adicionar amostras de valor para usar na pré-visualização. Respeite a mesma estrutura XML presente na extensão do esquema **nms:interaction**. Para obter mais informações, consulte [Configuração de dados adicionais](#additional-data-configuration).
 
 ![](assets/ita_calldata_preview.png)
 

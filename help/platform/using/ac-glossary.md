@@ -29,9 +29,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 6632
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -263,7 +263,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *Contexto: correspondência direta*
 
-Um delivery outline é um conjunto estruturado de elementos (documentos, lojas, cupons promocionais etc.) criado pela empresa e para uma campanha específica. Ela é usada no contexto de entregas de correspondência direta.
+A descrição da entrega representa um conjunto estruturado de elementos (documentos, lojas, cupons promocionais etc.) criados pela empresa e para uma campanha específica. Ela é usada no contexto de entregas de correspondência direta.
 
 Saiba mais sobre [Correspondência direta](../../delivery/using/about-direct-mail-channel.md).
 +++
@@ -286,7 +286,7 @@ Saiba mais sobre [Análise descritiva](../../reporting/using/about-descriptive-a
 
 *Contexto: marketing distribuído*
 
-O complemento de Marketing distribuído oferece aos operadores do Campaign um espaço de trabalho colaborativo para implementar campanhas entre entidades centrais (sede, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **lista de pacotes de campanha**, em que modelos de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
+O complemento de marketing distribuído oferece aos operadores do Campaign um espaço de trabalho colaborativo para implementar campanhas entre entidades centrais (sedes, departamentos de marketing etc.) e entidades locais (pontos de vendas, agências regionais etc.). Essa cooperação é baseada em um espaço de trabalho compartilhado conhecido como **lista de pacotes de campanha**, em que modelos de campanha e instâncias criadas centralmente são oferecidos a entidades locais.
 
 Saiba mais sobre Marketing distribuído na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=pt-BR){target="_blank"}.
 +++
@@ -300,8 +300,8 @@ Saiba mais sobre a [Distribuição de valores](../../platform/using/adobe-campai
 
 +++**Delegação de domínio**
 
-A configuração de subdomínio permite configurar uma subseção do seu domínio (tecnicamente uma &quot;zona DNS&quot;) para usar com o Adobe Campaign.
-A delegação de domínio permite que a Adobe controle e mantenha todos os aspectos do DNS necessários para fornecer, renderizar e rastrear campanhas de email.
+A configuração de subdomínios permite que você configure uma subseção do seu domínio (tecnicamente, uma “zona DNS”) para usar com o Adobe Campaign.
+A delegação de domínio permite que a Adobe controle e mantenha todos os aspectos do DNS necessários para entregar, renderizar e rastrear campanhas de email.
 
 Saiba mais sobre [Delegação de domínio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR)
 +++
@@ -704,7 +704,7 @@ Saiba mais sobre [Interação](../../interaction/using/interaction-and-offer-man
 
 *Contexto: interação de campanha*
 
-Uma simulação de oferta permite que os operadores testem a distribuição de ofertas em um escopo definido (data de entrega, segmento de destino, número de ofertas, tema etc.) antes de realmente enviar as ofertas. Pode ser usada para ajustar as prioridades da oferta e as regras de elegibilidade para maximizar a eficiência da oferta.
+Uma simulação de oferta permite que operadores testem a distribuição de ofertas em um escopo definido (data de entrega, segmento de público-alvo, número de ofertas, tema etc.) antes de realmente enviar as ofertas. Pode ser usada para ajustar as prioridades da oferta e as regras de elegibilidade para maximizar a eficiência da oferta.
 
 Saiba mais sobre [Simulações de oferta](../../interaction/using/about-offers-simulation.md).
 +++
@@ -873,7 +873,7 @@ Saiba mais sobre [Push](../../delivery/using/about-mobile-app-channel.md).
 
 +++**Destinatário**
 
-No Adobe Campaign, os recipients são os perfis padrão direcionados para envio de deliveries (emails, SMS etc.) aos seus clientes. Os dados do destinatário armazenados no banco de dados permitem filtrar o público-alvo e adicionar dados de personalização. Normalmente, são informações pessoais, de contato, demográficas e transacionais, mas podem ser qualquer tipo de informação que seja compatível com marketing e análise.
+No Adobe Campaign, os destinatários são os perfis padrão selecionados para o envio de entregas (emails, SMS etc.) aos seus clientes. Os dados do destinatário armazenados no banco de dados permitem filtrar o público-alvo e adicionar dados de personalização. Normalmente, são informações pessoais, de contato, demográficas e transacionais, mas podem ser qualquer tipo de informação que seja compatível com marketing e análise.
 
 Saiba mais sobre [Destinatário](../../configuration/using/about-data-model.md).
 +++
@@ -974,7 +974,7 @@ Saiba mais sobre o target mapping na [documentação do Campaign v8](https://exp
 
 As atividades de direcionamento são atividades de fluxo de trabalho específicas para direcionamento, manipulação de dados de população e atividades de filtragem. Essas atividades permitem construir um ou mais públicos-alvos definindo conjuntos e dividindo ou combinando-os usando operações de intersecção, união ou exclusão.
 
-Saiba mais sobre as atividades de direcionamento na [documentação do Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities
+Saiba mais sobre atividades de direcionamento na [documentação do Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities
 .html){target="_blank"}.
 +++
 
@@ -1092,7 +1092,7 @@ Saiba mais sobre [Modo unitário](../../interaction/using/about-inbound-channels
 
 +++**Aplicativos web**
 
-Os aplicativos da Web são páginas de aplicativos dinâmicos e interativos hospedadas pela instância do Campaign. Eles contêm dados do banco de dados e conteúdo adaptado aos direitos do usuário conectado. Por exemplo, você pode criar um formulário de edição em uma extranet ou formulários de notificação, incluindo dados do banco de dados com tabelas, gráficos, formulários de entrada etc. Essa funcionalidade permite criar e publicar páginas da Web em que os usuários podem pesquisar ou inserir informações.
+Os aplicativos da Web são páginas de aplicativos dinâmicos e interativos hospedadas pela instância do Campaign. Eles contêm dados do banco de dados e conteúdo adaptado aos direitos do usuário conectado. Por exemplo, você pode criar um formulário de edição em uma extranet ou formulários de notificação que incluam dados do banco de dados com tabelas, gráficos, formulários de entrada etc. Essa funcionalidade permite criar e publicar páginas da web nas quais os usuários podem consultar ou inserir informações.
 
 Saiba mais sobre [Aplicativos da Web](../../web/using/about-web-applications.md).
 +++

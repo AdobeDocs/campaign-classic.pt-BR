@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1620
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,8 +26,8 @@ ht-degree: 96%
 
 ## Criar uma consulta {#creating-a-query}
 
-Um query permite selecionar um target de acordo com critérios. Você pode associar um código de segmento ao resultado do query e inserir dados adicionais nele.
-Para obter mais informações sobre exemplos de consulta, consulte esta [esta seção](querying-recipient-table.md).
+Uma consulta permite selecionar um público-alvo de acordo com certos critérios. Você pode associar um código de segmento ao resultado da consulta e inserir dados adicionais nela.
+Para obter mais informações sobre exemplos de consulta, consulte [esta seção](querying-recipient-table.md).
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Se nenhum módulo opcional estiver instalado na plataforma, esse estágio não s
 
 Para adicionar dados do banco de dados do Adobe Campaign:
 
-1. Selecione o tipo de dados que deseja adicionar. Podem ser dados pertencentes à dimensão do filtro ou dados armazenados em tabelas vinculadas.
+1. Selecione o tipo de dados que deseja adicionar. Estes podem ser dados pertencentes à dimensão do filtro ou dados armazenados em tabelas vinculadas.
 
    ![](assets/query_add_columns.png)
 
@@ -122,7 +122,7 @@ Para adicionar uma coleção de informações vinculadas a uma população direc
      >Se a condição inicial não for respeitada, o resultado pode ser falho (linhas ausentes ou sobrepostas).
 
    * Se você optar por recuperar várias linhas (**[!UICONTROL Limit the line count]**), será possível especificar o número de linhas a serem coletadas.
-   * Se as colunas coletadas contiverem agregações, por exemplo, o número de falhas declaradas, a despesa média em um site etc., você pode usar o valor **[!UICONTROL Aggregates]**.
+   * Se as colunas coletadas contiverem agregados, por exemplo, o número de falhas declaradas, a despesa média em um site, entre outras informações, você pode usar o valor **[!UICONTROL Aggregates]**.
 
    ![](assets/query_add_collection_param.png)
 
@@ -195,9 +195,9 @@ A seção abaixo fornece as práticas recomendadas para otimizar as queries exec
 
   Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-  ![](assets/do-not-localize/v7.jpeg) [Documentação do Campaign v7](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Documentação do Campaign v7](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
+  ![](assets/do-not-localize/v8.png)[Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=pt-BR)
 
 ### Funções {#functions}
 

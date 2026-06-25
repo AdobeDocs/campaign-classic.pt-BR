@@ -24,9 +24,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 392
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 95%
 
 O [!DNL Triggers] realiza ações de marketing em um curto intervalo de tempo após a ação do usuário. O tempo médio de resposta é de menos de uma hora.
 
-Ela permite integrações mais ágeis, pois a configuração é mínima e não há envolvimento de terceiros.
+Ele permite integrações mais ágeis, pois a configuração é mínima e não há envolvimento de terceiros.
 Também aceita grandes volumes de tráfego sem afetar o desempenho das atividades de marketing. Como exemplo, a integração pode processar um milhão de acionadores por hora.
 
 ![](assets/do-not-localize/book.png) Saiba como [criar um acionador da Experience Cloud](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=pt-BR) e identificar, definir e monitorar comportamentos críticos de consumidores.

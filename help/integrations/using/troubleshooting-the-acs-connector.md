@@ -25,9 +25,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 870
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -94,11 +94,11 @@ Dependendo da sua implementação, você pode enfrentar vários problemas comuns
 
   Para garantir que o campo que você deseja usar está disponível, verifique a definição de recurso de perfil em **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
 
-  Além disso, todos os dados anexados aos destinatários e armazenados em tabelas relacionadas a nms:recipients não são sincronizados por padrão para o Campaign Standard.
+  Além disso, todos os dados anexados aos destinatários e armazenados em tabelas relacionadas a nms:recipients não são sincronizados por padrão com o Campaign Standard.
 
   Para poder usar dados relacionados, é possível executar seu direcionamento no Campaign v7 e inserir dados adicionais, conforme explicado na seção [Sincronizar públicos-alvos](../../integrations/using/synchronizing-audiences.md), ou entre em contato com seu consultor para explorar as possibilidades de personalização.
 
-* **Estou usando outra dimensão de perfil que não o nms:recipient padrão no Campaign v7, como posso sincronizá-la com o Campaign Standard?**
+* **Estou usando uma dimensão de perfil diferente do nms:recipient padrão no Campaign v7. Como posso sincronizá-la com o Campaign Standard?**
 
   O Campaign Standard usa um recurso de direcionamento exclusivo chamado **perfis**. A implementação básica do recurso Campaign Standard Connect fornece um mapeamento padrão entre os destinatários do Campaign v7 e os perfis do Campaign Standard.
 

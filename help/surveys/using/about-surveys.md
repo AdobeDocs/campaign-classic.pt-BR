@@ -19,15 +19,15 @@ topic_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 572
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Introdução às pesquisas{#about-surveys}
 
-O Adobe Campaign inclui um módulo gráfico para definir e publicar aplicativos Web. Isso é usado para criar páginas, como um formulário de edição em uma extranet ou formulários de notificação, incluindo dados do banco de dados com tabelas, gráficos, formulários de entrada etc. Use esse recurso para criar e publicar páginas da Web nas quais os usuários possam pesquisar ou inserir informações.
+O Adobe Campaign inclui um módulo gráfico para definir e publicar aplicativos Web. Isso é usado para criar páginas, como um formulário de edição em uma extranet ou formulários de notificação, incluindo dados do banco de dados com tabelas, gráficos, formulários de entrada etc. Use esse recurso para criar e publicar páginas da web nas quais os usuários possam consultar ou inserir informações.
 
 >[!AVAILABILITY]
 >
@@ -56,7 +56,7 @@ No Adobe Campaign, use as [aplicativos Web](../../web/using/about-web-forms.md) 
 * Personalizar e definir a posição do campo,
 * Exibição condicional de campos de pesquisa de acordo com as respostas,
 * Exibição de página condicional,
-* Informações de verificação antes da aprovação, dependendo do tipo de dados esperado (número, endereço de email, datas, etc.) e campos obrigatórios,
+* Verifique as informações antes da aprovação, dependendo do tipo de dados esperado (número, endereço de email, datas etc.) e dos campos obrigatórios.
 * Enviar convites/notificações por email,
 * Personalizar páginas de erros e páginas finais,
 * Adicionar imagens, vídeos, links de hipertexto, captcha etc. a formulários

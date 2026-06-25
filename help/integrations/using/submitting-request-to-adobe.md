@@ -21,9 +21,9 @@ subfeature_v2:
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 146
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Depois que o Adobe Identity Management Service (IMS) for habilitado para sua org
   </tr> 
   <tr> 
    <td> <strong>ID da organização</strong><br /> </td> 
-   <td> Sua ID da organização. <br> Para encontrar seu ID de organização, consulte <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR">esta página</a></td> 
+   <td> ID da sua organização. <br> Para encontrar a ID da organização, consulte <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR">esta página</a></td> 
   </tr> 
   <tr> 
    <td> <strong>Ambiente</strong><br /> </td> 

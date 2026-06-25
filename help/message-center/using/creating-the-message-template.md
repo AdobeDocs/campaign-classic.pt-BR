@@ -12,9 +12,9 @@ topic_v2:
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 500
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Para inserir tags de personalização no corpo de uma mensagem de email, siga as
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. Preencha a marca usando a seguinte sintaxe: **nome do elemento**.@**nome do atributo** conforme mostrado abaixo.
+1. Preencha a tag usando a seguinte sintaxe: **nome do elemento**.@**nome do atributo**, conforme mostrado abaixo.
 
    ![](assets/messagecenter_create_custo_003.png)
 

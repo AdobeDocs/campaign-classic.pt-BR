@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1460
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -83,8 +83,8 @@ Os atributos e elementos do conteúdo são representados como objetos JavaScript
 
 **Exemplo**:
 
-* **content.@name**: recupera o valor do atributo &quot;name&quot; do elemento principal
-* **conteúdo.@`['name']`**: idêntico à sintaxe **content.@name**
+* **content.@name**: recupera o valor do atributo “name” do elemento principal
+* **content.@`['name']`**: idêntico à sintaxe **content.@name**
 * **content.chapter.length**: retorna o número de elementos no `<chapter` elemento de coleção
 * **content.chapter`[0]`.@name**: recupera o nome do primeiro elemento `<chapter>`
 * **chapter.name()**: retorna o nome do `<chapter>` elemento
@@ -559,7 +559,7 @@ Exemplo de como usar a opção de colocação de imagem e seu uso com uma imagem
 
 Também é possível usar **[!UICONTROL Public resources]** para declarar imagens e carregá-las no servidor, dependendo das configurações de instância inseridas no assistente de implantação.
 
-Você pode então chamar essas imagens em conteúdo. para fazer isso, use a seguinte sintaxe no schema de gestão de conteúdo:
+Você pode então exibir essas imagens em conteúdos. para fazer isso, use a seguinte sintaxe no esquema de gerenciamento de conteúdo:
 
 ```
 <element label="Image" name="image" target="xtk:fileRes" type="link"/>

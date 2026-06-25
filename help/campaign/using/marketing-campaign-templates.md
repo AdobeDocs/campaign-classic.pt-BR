@@ -20,9 +20,9 @@ topic_v2:
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1147
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ O link **[!UICONTROL Advanced campaign settings...]** permite habilitar e desabi
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-Se um recurso não estiver selecionado, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecerão na interface do template ou em campanhas baseadas nesse template. As guias à esquerda dos detalhes da campanha geralmente coincidem com os processos selecionados no modelo. Por exemplo, se a opção **Expenses and objectives** não estiver selecionada, a guia correspondente a **[!UICONTROL Budget]** não será exibida em campanhas que se baseiam no modelo.
+Se um recurso não for selecionado, os elementos relativos ao processo (menus, ícones, opções, guias, subguias etc.) não aparecerão na interface do modelo ou em campanhas baseadas neste modelo. As guias à esquerda dos detalhes da campanha geralmente coincidem com os processos selecionados no modelo. Por exemplo, se a opção **Expenses and objectives** não estiver selecionada, a guia correspondente a **[!UICONTROL Budget]** não será exibida em campanhas que se baseiam no modelo.
 
 Além disso, os atalhos para as janelas de configuração são adicionados ao painel de campanha. Quando uma funcionalidade é habilitada, um link direto dá acesso a ela a partir do painel de campanha.
 
@@ -132,7 +132,7 @@ Os links e as guias a seguir serão exibidos:
 
 * **Segmentação e fluxos de trabalho**
 
-  Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais fluxos de trabalho para campanhas com base nesse modelo. Os workflows também podem ser configurados individualmente para cada campanha com base nesse template.Saiba mais sobre fluxos de trabalho da campanha em [esta seção](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+  Ao selecionar o módulo **[!UICONTROL Targeting and workflows]**, uma guia é adicionada para permitir que você crie um ou mais fluxos de trabalho para campanhas com base nesse modelo. Os fluxos de trabalho também podem ser configurados individualmente para cada campanha com base nesse modelo.Saiba mais sobre os fluxos de trabalho de campanhas [nesta seção](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
   ![](assets/s_ncs_user_op_template_activate_5.png)
 
@@ -180,7 +180,7 @@ Ao criar um modelo de campanha, você precisa inserir as seguintes informações
 
 ### Parâmetros de execução do modelo {#template-execution-parameters}
 
-O link **[!UICONTROL Advanced campaign settings...]** permite configurar as opções avançadas do modelo para processar o destino da entrega (grupo de controle, seed addresses etc.) e a configuração da medição da campanha e da execução do workflow.
+O link **[!UICONTROL Advanced campaign settings...]** permite que você configure as opções avançadas do modelo para processar o público-alvo de entrega (grupo de controle, seed addresses etc.) e a configuração da medição da campanha e da execução do fluxo de trabalho.
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 

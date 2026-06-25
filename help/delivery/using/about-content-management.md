@@ -22,9 +22,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 273
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ O gerenciamento de conteúdo oferece as seguintes vantagens:
 
 * Edição de mensagens estruturadas via interfaces de entrada,
 * Separação do conteúdo de dados e como ele é apresentado (gerada no formato XML),
-* Geração de documentos em vários formatos (html, txt, XML etc.) com base em folhas de estilos para garantir a conformidade com estatutos gráficos,
+* Geração de documentos em vários formatos (HTML, TXT, XML etc.) com base em folhas de estilos para garantir a conformidade com estatutos gráficos,
 * Recuperação e agregação automática de fluxos de conteúdo externo,
 * Colaboração com fluxo de trabalho para validação e verificação de dados.
 

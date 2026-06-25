@@ -18,9 +18,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 3088
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 93%
  </tbody> 
 </table>
 
-Este relatório é baseado na tabela **[!UICONTROL Consolidated tracking]** (nms:trackingStats). Essa tabela de agregação é usada por motivos de desempenho ao exibir relatórios em vez da tabela **[!UICONTROL Recipient tracking logs]** (nms:trackingLogRcp), e não é calculada em tempo real. A tabela é gerada alguns minutos após os logs de rastreamento serem recuperados. Se os indicadores estiverem atualizados, os resultados serão iguais aos indicadores do relatório **Indicadores de rastreamento.** O indicador @totalclicks expressa o número total de cliques em um período de 5 minutos.
+Este relatório é baseado na tabela **[!UICONTROL Consolidated tracking]** (nms:trackingStats). Essa tabela de agregação é usada por motivos de desempenho ao exibir relatórios, em vez da tabela **[!UICONTROL Recipient tracking logs]** (nms:trackingLogRcp), e ela não é calculada em tempo real. A tabela é gerada alguns minutos após os logs de rastreamento serem recuperados. Se os indicadores estiverem atualizados, os resultados serão iguais aos indicadores do relatório **Indicadores de rastreamento.** O indicador @totalclicks expressa o número total de cliques em um período de 5 minutos.
 
 ## Não entregáveis e rejeições {#non-deliverables-and-bounces-1}
 
@@ -371,7 +371,7 @@ Este relatório é baseado nas tabelas **[!UICONTROL Delivery]** (nms:delivery),
    <td> Novos contatos<br /> </td> 
    <td> @newContacts<br /> </td> 
    <td> Contagem do número de visitantes vinculados a um destinatário.<br /> </td> 
-   <td> Fórmula: count(@id)<br /> Filtro: @recipient-id != 0<br /> </td> 
+   <td> Fórmula: count(@id)<br /> Filtro: @recipient-id != 0<br /> </td> 
   </tr> 
   <tr> 
    <td> Aberturas<br /> </td> 
@@ -804,7 +804,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery]** (nms:delivery).
 
 ## Hot clicks {#hot-clicks-1}
 
-Este relatório é baseado nas tabelas Delivery(nms:delivery) e **[!UICONTROL Consolidated tracking]** (nms:trackingStats).
+Este relatório é baseado nas tabelas Entrega (nms:delivery) e **[!UICONTROL Consolidated tracking]** (nms:trackingStats).
 
 Este relatório mostra o conteúdo da mensagem (HTML e/ou texto) com a porcentagem de cliques nos links, em cada link. Os links de unsubscription de blocos de personalização e links de mirror pages são considerados no total de cliques, mas não são exibidos no relatório.
 
@@ -904,7 +904,7 @@ Este relatório é baseado na tabela **[!UICONTROL Delivery and tracking statist
 
 ## Detalhamento de aberturas {#breakdown-of-opens-1}
 
-Este relatório é baseado nas tabelas de **Deliveries** (nms:delivery) e **Logs de rastreamento** (nms:trackingLogRcp).
+Este relatório é baseado nas tabelas **Entregas** (nms:delivery) e **Logs de rastreamento** (nms:trackingLogRcp).
 
 <table> 
  <thead> 
@@ -927,7 +927,7 @@ Este relatório é baseado nas tabelas de **Deliveries** (nms:delivery) e **Logs
 
 ## Outros indicadores {#other-indicators}
 
-O indicador **Enviado** (@sent), acessado pelo nó **Entregas (nms:delivery) > Indicadores** corresponde ao número total de SMS enviado ao provedor de serviços. Esse indicador é usado apenas para entregas de SMS e não deve ser usado para outros tipos de entregas (não deve ser confundido com os indicadores **@success** e **@processed**).
+O indicador **Enviado** (@sent), acessado pelo nó **Entregas (nms:delivery) > Indicadores** corresponde ao número total de mensagens SMS enviadas ao provedor de serviço. Esse indicador é usado apenas para entregas de SMS e não deve ser usado para outros tipos de entregas (não deve ser confundido com os indicadores **@success** e **@processed**).
 
 ## Sincronização de indicadores {#indicator-synchronization}
 

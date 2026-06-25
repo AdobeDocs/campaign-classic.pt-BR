@@ -20,9 +20,9 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1010
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Para importar novos perfis de destinatários armazenados em um arquivo de texto 
 
 1. Reconciliação
 
-   * Vá para a tabela **Recipients (nms:recipient)**.
+   * Acesse a tabela **Destinatários (nms:recipient)**.
    * Selecione a operação **[!UICONTROL Insertion]** e deixe os valores padrão nos outros campos.
 
      ![](assets/s_ncs_user_import_example04_01.png)

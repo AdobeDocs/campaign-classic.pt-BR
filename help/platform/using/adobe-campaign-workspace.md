@@ -21,9 +21,9 @@ subfeature_v2:
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1316
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -111,7 +111,7 @@ As listas estão disponíveis no link **[!UICONTROL Lists]** na seção à esque
 
 Cada seção de recurso principal permite procurar entre os elementos disponíveis. Para fazer isso, use os atalhos na seção **[!UICONTROL Browsing]**. O link **[!UICONTROL Other choices]** permite acessar todas as outras páginas, independentemente do ambiente.
 
-Você pode criar um novo elemento (entrega, aplicativo da Web, fluxo de trabalho etc.) usando os atalhos na seção **[!UICONTROL Create]**, à esquerda da tela. Use o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
+Você pode criar um novo elemento (entrega, aplicativo web, fluxo de trabalho etc.) usando os atalhos na seção **[!UICONTROL Create]** à esquerda da tela. Use o botão **[!UICONTROL Create]** acima da lista para adicionar novos elementos a ela.
 
 Por exemplo, na página de entrega, use o botão **[!UICONTROL Create]** para criar uma nova entrega.
 
@@ -124,11 +124,11 @@ O explorer do Adobe Campaign é acessível por meio do ícone da barra de ferram
 
 Para saber mais sobre o explorador do Adobe Campaign, consulte estas páginas na **documentação do Campaign v8 (console)**:
 
-* [Visão geral da interface do usuário do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Visão geral da interface da campanha](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Configurações da IU do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-* [Gerenciar pastas e visualizações no explorador](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
+* [Gerenciar pastas e visualizações no navegador](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
 
 
 ## Trabalhar com dados {#work-with-data}

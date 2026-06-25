@@ -15,9 +15,9 @@ subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 547
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -32,8 +32,8 @@ A janela de edição do DCE está dividida em três seções diferentes. Elas pe
 ![](assets/dce_decoupe_window_nb.png)
 
 1. A seção **superior** é uma área de exibição para mensagens do usuário. Essas mensagens indicam o status da aplicação web ou a entrega sendo criada, bem como avisos e mensagens de erro relacionadas ao conteúdo. Para obter mais informações, consulte [Status de conteúdo HTML](content-editing-best-practices.md#html-content-statuses).
-1. A seção à **esquerda** da janela é a área para edição de conteúdo. Nessa área, o usuário pode interagir diretamente com o conteúdo usando a barra de ferramentas pop-up: inserir um link em uma imagem, alterar a fonte, excluir um campo etc. Para obter mais informações, consulte [Edição de formulários](editing-content.md#editing-forms).
-1. A seção à **direita** da janela é a área do painel de controle. Essa área agrupa as diferentes opções do editor, particularmente as relacionadas à configuração do cabeçalho da página e opções gerais de um bloco: adicionar uma borda, vincular um campo de banco de dados a uma zona de entrada, acessar propriedades da página da Web etc. Para obter mais informações, consulte as seções [Opções globais](#global-options) e [Edição de conteúdo](editing-content.md).
+1. A seção à **esquerda** da janela é a área para edição de conteúdo. Nesta área, o usuário pode interagir diretamente com o conteúdo usando a barra de ferramentas pop-up: inserir um link em uma imagem, alterar a fonte, excluir um campo etc. Para mais informações sobre isso, consulte [Edição de formulários](editing-content.md#editing-forms).
+1. A seção à **direita** da janela é a área do painel de controle. Esta área reúne as diferentes opções do editor, especialmente aquelas relacionadas à configuração do cabeçalho da página e às opções gerais de um bloco: adicionar uma borda, vincular um campo do banco de dados a um campo de entrada, acessar as propriedades da página da web etc. Para mais informações sobre o assunto, consulte as seções [Opções globais](#global-options) e [Edição de conteúdo](editing-content.md).
 
 ## Opções globais {#global-options}
 

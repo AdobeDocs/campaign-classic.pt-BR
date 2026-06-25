@@ -21,9 +21,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 707
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -62,8 +62,8 @@ Para obter mais informações sobre os tipos de mensagens da Firebase Cloud Mess
 
 1. Na janela **[!UICONTROL Target type]**, selecione **[!UICONTROL Subscribers of an Android mobile application]** e clique em **[!UICONTROL Next]**.
 
-1. Na lista suspensa **[!UICONTROL Service]**, selecione o serviço criado anteriormente, depois o aplicativo e clique em **[!UICONTROL Finish]**.
-Os **[!UICONTROL Application variables]** são adicionados automaticamente, dependendo do que foi adicionado durante as etapas de configuração.
+1. No menu suspenso **[!UICONTROL Service]**, selecione o serviço criado anteriormente, o aplicativo e, em seguida, clique em **[!UICONTROL Finish]**.
+As **[!UICONTROL Application variables]** são adicionadas automaticamente, dependendo do que foi inserido durante as etapas de configuração.
 
    ![](assets/nmac_android_6.png)
 

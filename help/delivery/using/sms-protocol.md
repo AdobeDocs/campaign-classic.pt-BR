@@ -24,9 +24,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 8283
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -530,9 +530,9 @@ Exemplo de uma transmissão com uma janela máxima de 4:
 
 ![](assets/do-not-localize/sms_protocol_2.png)
 
-A janela ajuda a aumentar a taxa de transferência quando o link da rede tem uma latência alta.  O valor da janela deve ser pelo menos o número de SMS/s multiplicado pela latência do link
-em segundos, para que o conector nunca aguarde um `SUBMIT_SM_RESP` antes de enviar a próxima mensagem.
-Se a janela for muito grande, você poderá enviar mais mensagens duplicadas em caso de problemas de conexão. Além disso, a maioria dos provedores tem um limite muito restrito para a janela e recusa mensagens que ultrapassam o limite.
+A janela ajuda a aumentar a taxa de transferência quando o link de rede apresenta alta latência. O valor da janela deve ser, no mínimo, o número de mensagens SMS multiplicado pela latência do link
+em segundos, para que o conector nunca fique aguardando um `SUBMIT_SM_RESP` antes de enviar a próxima mensagem.
+Se a janela for muito grande, você poderá enviar mais mensagens duplicadas em caso de problemas de conexão. Além disso, a maioria dos provedores tem um limite muito rígido para a janela e rejeita mensagens que ultrapassam esse limite.
 
 Como calcular a fórmula ideal da janela de envio:
 
@@ -578,7 +578,7 @@ Consulte a seção [codificação de texto SMS](sms-protocol.md#sms-text-encodin
 
 Essa configuração permite definir um mapeamento de codificação personalizado, diferente da especificação. Você pode declarar uma lista de codificações, juntamente com o respectivo valor `data_coding`.
 
-O MTA tentará codificar usando a primeira codificação na lista. Se falhar, tentará usar a próxima codificação na lista etc. Se nenhuma codificação puder ser usada para codificar a mensagem, ocorrerá um erro. Quando a codificação for encontrada, o MTA criará `SUBMIT_SM PDU` com o texto codificado e o campo `data_coding` definido com o valor especificado na tabela.
+O MTA tentará codificar usando a primeira codificação na lista. Se ocorrer uma falha, ele tentará usar a próxima codificação na lista etc. Se nenhuma codificação puder ser usada para codificar a mensagem, ocorrerá um erro. Quando a codificação for encontrada, o MTA criará `SUBMIT_SM PDU` com o texto codificado e o campo `data_coding` definido com o valor especificado na tabela.
 
 A ordem dos itens na tabela é importante: as codificações são tentativas de cima para baixo. Você deve colocar a codificação mais barata ou mais recomendada no topo da lista, seguida de codificações cada vez mais caras.
 
@@ -689,7 +689,7 @@ Isso indica o formato da ID retornada no campo `message_id` de `SUBMIT_SM_RESP P
 
 * **Número decimal**: espera-se que a ID seja um número decimal no formato ASCII. Espaços à esquerda e à direita e zeros à esquerda são removidos quando essa configuração é usada.
 
-* **Número hexadecimal**: espera-se que a identificação seja um número hexadecimal no formato ASCII, sem 0x à esquerda nem h à direita. A ID é convertida em um número decimal antes de ser armazenada no banco de dados.
+* **Número hexadecimal**: espera-se que a ID seja um número hexadecimal no formato ASCII, sem “0x” à esquerda nem “h” à direita. A ID é convertida em um número decimal antes de ser armazenada no banco de dados.
 
 * **String hexadecimal**: espera-se que a ID seja um texto codificado em ASCII que seja uma string de bytes codificada como hexadecimal. Por exemplo, na PDU, você encontrará `0x34 0x31 0x34 0x32 0x34 0x33`, o que significa ASCII &quot;414243&quot;. Essa string é então decodificada como uma string hexadecimal de bytes, e você obtém &quot;ABC&quot; como resultado: você armazenará a ID &quot;ABC&quot; no banco de dados.
 
@@ -847,21 +847,21 @@ Se você tiver várias contas na mesma instância do Adobe Campaign que se conec
 
 ### Habilitar rastreamentos SMPP detalhados durante verificações {#enable-verbose}
 
-Você sempre deve habilitar rastreamentos SMPP detalhados durante verificações.
-Mesmo se você não conseguir verificar os logs sozinho, será mais fácil para o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ajudá-lo.
+Você deve sempre habilitar os registros detalhados do SMPP durante as verificações.
+Mesmo que você não consiga verificar os registros por conta própria, será mais fácil para o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ajudá-lo.
 
 ### Testar o SMS {#test}
 
 * **Enviar SMS com todos os tipos de caracteres**
-Se você precisar enviar SMS com caracteres não GSM ou não ASCII, tente enviar algumas mensagens com o maior número possível de caracteres diferentes. Se você configurar uma tabela de mapeamento de caracteres personalizada, envie pelo menos um SMS para todos os valores de `data_coding` possíveis.
+Se você precisar enviar SMS com caracteres que não sejam GSM ou ASCII, tente enviar algumas mensagens com o maior número possível de caracteres diferentes. Se você configurar uma tabela de mapeamento de caracteres personalizada, envie pelo menos um SMS para todos os valores de `data_coding` possíveis.
 
-* **Verifique se o SR está corretamente processado**
-O SMS deve ser marcado como recebido no log de delivery. O log de delivery deve ser bem-sucedido e ter a seguinte aparência:
+* **Verifique se o SR foi processado corretamente**
+A mensagem SMS deve estar marcada como recebida no log de entrega. O log de entrega deve indicar sucesso e ter a seguinte aparência:
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
 Verifique se você alterou o nome do provedor de entrega. O registro de entrega nunca deve conter **SR genérico** em ambientes de produção.
 
 * **Verifique se o MO foi processado**
-Se você precisar processar o MO (respostas automáticas, armazenamento de MO no banco de dados etc.), tente fazer alguns testes. Envie alguns SMS para todas as palavras-chave de resposta automática e verifique se a resposta é rápida o suficiente, não mais do que alguns segundos.
+Se você precisar processar o MO (respostas automáticas, armazenamento de MO no banco de dados etc.), tente fazer alguns testes. Envie alguns SMS com todas as palavras-chave de resposta automática e verifique se a resposta é rápida o suficiente (não deve demorar mais que alguns segundos).
 Verifique no log se o Adobe Campaign responde com um `DELIVER_SM_RESP` bem-sucedido (command_status=0).
 
 ### Verificar as PDUs {#check-pdus}
@@ -874,7 +874,7 @@ Esta etapa é necessária ao conectar-se a um provedor que antes não estava con
 
 Verifique se `BIND_* PDUs` foram enviados corretamente. O item mais importante a ser verificado é se o provedor sempre retorna `BIND_*_RESP PDUs` com êxito (command_status = 0).
 
-Verifique se não há muitos `BIND_* PDU`s. Se houver muitos deles, isso poderá indicar que a conexão é instável. Consulte a seção [Problemas com conexões instáveis](sms-protocol.md#issues-unstable-connection) para obter mais informações.
+Verifique se não há muitos `BIND_* PDU`s. Se houver muitos deles, isso pode indicar que a conexão é instável. Consulte a seção [Problemas com conexões instáveis](sms-protocol.md#issues-unstable-connection) para obter mais informações.
 
 #### ENQUIRE_LINK {#enquire-link-pdus}
 

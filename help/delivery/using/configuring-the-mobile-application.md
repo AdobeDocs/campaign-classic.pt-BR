@@ -27,9 +27,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 557
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -100,8 +100,8 @@ Depois de criar o serviço, crie o aplicativo iOS no Campaign. Siga as etapas ab
 
    ![](assets/nmac_ios_2.png)
 
-1. Como opção, você pode enriquecer um conteúdo de mensagem de push com alguns **[!UICONTROL Application variables]** se necessário. Eles são totalmente personalizáveis e uma parte da carga da mensagem é enviada para o dispositivo móvel.
-No exemplo a seguir, adicionamos **mediaURl** e **mediaExt** para criar notificações por push avançadas e, em seguida, fornecemos ao aplicativo a imagem que será exibida na notificação.
+1. Como opção, você pode enriquecer o conteúdo de uma mensagem de push com alguns elementos **[!UICONTROL Application variables]**, se necessário. Esses elementos são totalmente personalizáveis e fazem parte da conteúdo da mensagem enviado ao dispositivo móvel.
+No exemplo a seguir, adicionamos **mediaURl** e **mediaExt** para criar uma notificação por push enriquecida e, em seguida, fornecemos ao aplicativo a imagem a ser exibida na notificação.
 
    ![](assets/nmac_ios_3.png)
 
@@ -115,7 +115,7 @@ No exemplo a seguir, adicionamos **mediaURl** e **mediaExt** para criar notifica
 
 1. Clique em **[!UICONTROL Next]** para configurar o aplicativo de desenvolvimento.
 
-1. Verifique se a mesma **[!UICONTROL Integration key]** está definida no Adobe Campaign e no código do aplicativo por meio do SDK. <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> Essa chave de integração, específica para cada aplicativo, permite vincular o aplicativo móvel à plataforma do Adobe Campaign.
+1. Verifique se a mesma **[!UICONTROL Integration key]** está definida no Adobe Campaign e no código do aplicativo por meio do SDK. <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> Essa chave de integração, que é específica para cada aplicativo, permite vincular o aplicativo móvel à plataforma do Adobe Campaign.
 
    >[!NOTE]
    >

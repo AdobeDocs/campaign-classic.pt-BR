@@ -16,9 +16,9 @@ topic_v2:
 subfeature_v2:
   - id: a6187aac-0a00-4394-8937-e8d4c1a40aa4
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1566
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Se você não deseja nomear revisores para uma campanha, insira 0.
 
 ### Documentos {#documents}
 
-Você pode permitir que operadores de entidade locais vinculem documentos (arquivos de texto, planilhas, imagens, descrições de campanha etc.) à campanha local ao criar o pedido. O link **[!UICONTROL Advanced parameters for campaign entry...]** permite restringir o número de documentos. Para fazer isso, basta inserir o número máximo permitido no campo **[!UICONTROL Number of documents]**.
+Você pode permitir que operadores de entidades locais vinculem documentos (arquivos de texto, planilhas, imagens, descrições de campanha etc.) à campanha local ao criar o pedido. O link **[!UICONTROL Advanced parameters for campaign entry...]** permite restringir o número de documentos. Para fazer isso, basta inserir o número máximo permitido no campo **[!UICONTROL Number of documents]**.
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 

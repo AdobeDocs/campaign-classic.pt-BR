@@ -22,9 +22,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1122
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Você pode modificar as propriedades de subscrição de um destinatário.
 
 ![](assets/s_ncs_user_services_modify.png)
 
-No painel, clique na guia **[!UICONTROL Reports]** para rastrear as assinaturas: alterações nos níveis de assinatura, número total de assinantes, etc. É possível arquivar os relatórios e analisar os históricos nesta guia.
+No painel, clique na guia **[!UICONTROL Reports]** para acompanhar as assinaturas: alterações nos níveis de assinatura, número total de assinantes etc. Você pode arquivar relatórios e consultar históricos nessa guia.
 
 ## Adição e exclusão de assinantes {#adding-and-deleting-subscribers}
 

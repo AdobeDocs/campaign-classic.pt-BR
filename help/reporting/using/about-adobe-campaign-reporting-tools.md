@@ -20,9 +20,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 362
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Para exportar dados do banco de dados do Adobe Campaign, é preciso criar um flu
 
 O Adobe Campaign fornece várias ferramentas de relatório:
 
-1. **Relatórios internos**: o Adobe Campaign oferece um conjunto de relatórios sobre entregas, campanhas, atividades da plataforma, funcionalidades opcionais, etc. Estes relatórios estão disponíveis através das várias funcionalidades a que se referem. Eles podem ser adaptados para atender às necessidades específicas.
+1. **Relatórios integrados**: o Adobe Campaign oferece um conjunto de relatórios sobre entregas, campanhas, atividades da plataforma, funcionalidades opcionais etc. Esses relatórios estão disponíveis nas diversas funcionalidades às quais estão relacionados. Eles podem ser adaptados para atender às necessidades específicas.
 
    Para obter mais informações, consulte [esta seção](../../reporting/using/about-campaign-built-in-reports.md).
 
