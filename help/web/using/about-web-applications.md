@@ -47,7 +47,7 @@ Este capítulo fornece uma visão geral de como gerenciar as aplicações web.
 
 >[!NOTE]
 >
->Consulte a [lista de verificação de segurança e privacidade](https://helpx.adobe.com/campaign/kb/acc-security.html) para saber como otimizar a segurança para aplicativos web.
+>Consulte a [lista de verificação de segurança e privacidade](https://helpx.adobe.com/br/campaign/kb/acc-security.html) para saber como otimizar a segurança para aplicativos web.
 
 >[!CAUTION]
 >
