@@ -6,17 +6,13 @@ feature: Workflows
 hide: true
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 TQID: https://experienceleague.adobe.com/dCnvgLZ-5ST-VJqWLXZ2c5XxXqXUxO1G78WnrCFyIqA
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 1187
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +22,7 @@ ht-degree: 95%
 
 Um fluxo de trabalho é sempre iniciado manualmente. Ao ser iniciado, ele pode permanecer inativo dependendo das informações especificadas por meio de um scheduler (consulte [Scheduler](scheduler.md)) ou de um agendamento de atividade.
 
-Ações relacionadas à execução do workflow para construção do target (iniciar, parar, pausar etc.) são processos **assíncronos**: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-la.
+Ações relacionadas à execução do fluxo de trabalho de direcionamento (iniciar, parar, pausar etc.) são processos **assíncronos**: a ordem é registrada e entrará em vigor assim que o servidor estiver disponível para aplicá-la.
 
 A barra de ferramentas permite iniciar e controlar a execução do fluxo de trabalho.
 
@@ -90,7 +86,7 @@ Os botões da barra de ferramentas são detalhados nesta [seção](../../campaig
 
 * **[!UICONTROL Start in simulation mode]**
 
-  Essa opção permite iniciar o fluxo de trabalho no modo de simulação em vez do modo real. Isso significa que ao habilitar esse modo, somente as atividades que não afetam o banco de dados ou o sistema de arquivos serão executadas (por exemplo, **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Atividades que têm impacto (por exemplo, **[!UICONTROL Export]**, **[!UICONTROL Import]**, etc.) assim como as posteriores (na mesma ramificação) não são executadas.
+  Essa opção permite iniciar o fluxo de trabalho no modo de simulação em vez do modo real. Isso significa que ao habilitar esse modo, somente as atividades que não afetam o banco de dados ou o sistema de arquivos serão executadas (por exemplo, **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, etc.). Atividades de impacto (por exemplo: **[!UICONTROL Export]**, **[!UICONTROL Import]** etc.) e as que ocorrem após elas (na mesma ramificação) não são executadas.
 
 * **[!UICONTROL Execute pending tasks now]**
 

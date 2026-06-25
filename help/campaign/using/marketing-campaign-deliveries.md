@@ -7,23 +7,15 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 hide: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 TQID: https://experienceleague.adobe.com/1fiKNiq5Q2q4cN-wCMLSnZdW-IDA-bw6KwJGhSJYZkY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-subfeature_v2:
-  - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: afa4204e-6d08-4e29-bc35-26aafb656d48
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: f863efa9-030c-4466-a2b8-a52aea6b722c
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 1511
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +25,7 @@ As entregas podem ser criadas por meio do painel da campanha, de um fluxo de tra
 
 Quando criados a partir de uma campanha, as entregas serão vinculadas a essa campanha e consolidadas em seu nível.
 
-![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Descubra este recurso no vídeo](#create-email-video)
 
 ## Criar entregas {#creating-deliveries}
 
@@ -130,7 +122,7 @@ A extração de arquivo inicia duas operações: cálculo de orçamento e cálcu
 
 ## Gerenciar documentos associados {#managing-associated-documents}
 
-Você pode associar vários documentos a uma campanha: relatório, foto, página da Web, diagrama etc. Esses documentos podem estar em qualquer formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF etc.). Saiba como vincular documentos a uma campanha [nesta seção](../../campaign/using/marketing-campaign-assets.md).
+É possível associar diversos documentos a uma campanha: relatórios, fotos, páginas da web, diagramas etc. Esses documentos podem estar em qualquer formato (Microsoft Word, PowerPoint, PNG, JPG, PDF do Acrobat etc.). Saiba como vincular documentos a uma campanha [nesta seção](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
@@ -175,7 +167,7 @@ Eles também podem ser editados e modificados nessa visualização.
 >
 >As estruturas de entrega são usadas exclusivamente no contexto de campanhas de correspondência direta.
 
-Um delivery outline indica um conjunto estruturado de elementos (documentos, filiais/lojas, cupons promocionais etc.) criado na empresa e para uma campanha específica.
+Uma estrutura de entrega consiste em um conjunto estruturado de elementos (documentos, filiais/lojas, cupons promocionais etc.) criado na empresa e para uma campanha específica.
 
 Esses elementos são agrupados em descrições das entregas e uma descrição da entrega específica será associada a uma entrega; ela será referenciado no arquivo de extração enviado ao **provedor de serviços** para ser anexada à entrega. Por exemplo, você pode criar uma descrição da entrega que se refere a uma unidade e aos folhetos de marketing que ela usa.
 
@@ -203,7 +195,7 @@ Em seguida, clique em **[!UICONTROL Add a delivery outline]** e crie a hierarqui
 Uma estrutura pode conter itens e campos de personalização, recursos e ofertas:
 
 * Os itens podem ser documentos físicos, por exemplo, que são referenciados e descritos aqui e serão anexados à entrega.
-* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de destinatários. Assim, é possível criar valores que serão usados em deliveries para um target específico (oferta de boas-vindas, desconto etc.) Eles são criados no Adobe Campaign e importados para o outline por meio do link **[!UICONTROL Import personalization fields...]**.
+* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de destinatários. Assim, é possível criar valores a serem utilizados em entregas para um público-alvo específico (oferta de boas-vindas, desconto etc.) Elas são criadas no Adobe Campaign e importadas para a estrutura por meio do link **[!UICONTROL Import personalization fields...]**.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 
@@ -235,7 +227,7 @@ A guia **[!UICONTROL Summary]** da entrega também exibe essas informações:
 
 #### Resultado da extração {#extraction-result}
 
-No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no template de exportação associado ao provedor de serviços.
+No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no modelo de exportação associado ao provedor de serviços.
 
 No seguinte exemplo, o rótulo, custo estimado e descrição do outline associado à entrega serão adicionados no arquivo de extração.
 
@@ -251,7 +243,7 @@ O modelo de exportação deve estar associado ao provedor de serviços seleciona
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/31837?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
 

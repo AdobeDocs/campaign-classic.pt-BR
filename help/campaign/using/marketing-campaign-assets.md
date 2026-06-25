@@ -7,33 +7,27 @@ feature: Campaigns
 hide: true
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
 TQID: https://experienceleague.adobe.com/ZHqo0izYPVfaxPIShcjgPpg-5SIGkdQAwbD6dV1r6bE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-subfeature_v2:
-  - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: afa4204e-6d08-4e29-bc35-26aafb656d48
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+subfeature_v2: id: f863efa9-030c-4466-a2b8-a52aea6b722c
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 759
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Gerenciar documentos associados {#managing-associated-documents}
 
-Você pode associar vários documentos a uma campanha: relatórios, fotos, páginas da Web, diagramas etc. Esses documentos podem estar em qualquer formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF etc.).
+Você pode associar vários documentos a uma campanha: relatórios, fotos, páginas da web, diagramas etc. Esses documentos podem estar em qualquer formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF etc.).
 
 >[!IMPORTANT]
 >
 >Esse recurso é reservado para assets e documentos pequenos.
 
-Em uma campanha, você também pode consultar outros itens, como cupons promocionais, ofertas especiais relacionadas a uma marca ou loja específica etc. Quando esses elementos são incluídos em um outline, eles podem ser associados a um delivery de correspondência direta. Consulte [Associar e estruturar recursos vinculados por meio de uma descrição da entrega](#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Em uma campanha também é possível consultar outros itens, como cupons promocionais, ofertas especiais relacionadas a uma marca específica, uma loja etc. Quando esses elementos estão incluídos em uma descrição, é possível associá-los a uma entrega de correspondência direta. Consulte [Associar e estruturar recursos vinculados por meio de uma descrição da entrega](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 >[!NOTE]
 >
@@ -72,7 +66,7 @@ Eles também podem ser editados e modificados nessa visualização.
 >
 >As estruturas de entrega são usadas exclusivamente no contexto de campanhas de correspondência direta.
 
-Um delivery outline indica um conjunto estruturado de elementos (documentos, lojas, cupons promocionais etc.) criado pela empresa e para uma campanha específica.
+A descrição da entrega indica um conjunto estruturado de elementos (documentos, lojas, cupons promocionais etc.) criados pela empresa e para uma campanha específica.
 
 Esses elementos são agrupados em descrições da entrega, e cada descrição da entrega será associada a uma entrega; ela será referenciada no arquivo de extração enviado para o **provedor de serviço** para ser anexada à entrega. Por exemplo, você pode criar uma descrição da entrega que se refere a uma unidade e aos folhetos de marketing que ela usa.
 
@@ -100,7 +94,7 @@ Em seguida, clique em **[!UICONTROL Add a delivery outline]** e crie a hierarqui
 Uma estrutura pode conter itens e campos de personalização, recursos e ofertas:
 
 * Os itens podem ser documentos físicos, por exemplo, que são referenciados e descritos aqui e serão anexados à entrega.
-* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de destinatários. Assim, é possível criar valores que serão usados em deliveries para um target específico (oferta de boas-vindas, desconto etc.) Eles são criados no Adobe Campaign e importados para o outline por meio do link **[!UICONTROL Import personalization fields...]**.
+* Os campos de personalização permitem que você crie elementos de personalização relacionados a remessas em vez de destinatários. Assim, é possível criar valores a serem utilizados em entregas para um público-alvo específico (oferta de boas-vindas, desconto etc.) Elas são criadas no Adobe Campaign e importadas para a estrutura por meio do link **[!UICONTROL Import personalization fields...]**.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 
@@ -132,7 +126,7 @@ A guia **[!UICONTROL Summary]** da entrega também exibe essas informações:
 
 ### Resultado da extração {#extraction-result}
 
-No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no template de exportação associado ao provedor de serviços.
+No arquivo extraído e enviado ao provedor de serviços, o nome da estrutura e, quando apropriado, suas características (custo, descrição etc.) são adicionados ao conteúdo de acordo com as informações no modelo de exportação associado ao provedor de serviços.
 
 No seguinte exemplo, o rótulo, custo estimado e descrição do outline associado à entrega serão adicionados no arquivo de extração.
 

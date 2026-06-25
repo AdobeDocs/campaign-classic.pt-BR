@@ -6,29 +6,15 @@ feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 TQID: https://experienceleague.adobe.com/d6tF02X7K9j9mDk90wyH-3iXm8iBZzMo1da2PPkYHGs
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: c8d13469884744554fd504fed8842dd0c9ab5feb
 workflow-type: tm+mt
 source-wordcount: 1393
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -62,7 +48,7 @@ O MTA aprimorado inclui um tratamento mais inteligente de rejeição e um recurs
 
 **Quais são os benefícios?**
 
-* Os clientes do Adobe Campaign que usam o MTA aprimorado observaram um <!--300%-->grande aumento na velocidade geral da taxa de transferência e uma redução significativa nas rejeições temporárias.
+* Os clientes do Adobe Campaign que utilizam o MTA aprimorado observaram um <!--300%-->aumento significativo na velocidade geral de taxa de transferência e uma redução considerável nas rejeições temporárias.
   <!--90%+-->
 * O MTA aprimorado usa a mais recente tecnologia MTA para oferecer a você as velocidades de taxa de transferência ideais para sua entrega de email.
 * Adaptando-se instantânea e automaticamente ao feedback que recebe, ele também garante uma entrega de email mais preciso e inteligente com dados de entrega em tempo real.
@@ -156,8 +142,8 @@ Para obter mais informações sobre o período de validade, consulte esta [pági
 
 ### Assinatura DKIM
 
-A assinatura de autenticação de email do DKIM (DomainKeys Identified Mail) é feita pelo MTA aprimorado. A assinatura do DKIM pelo MTA nativo do Campaign será desativada na tabela Domain management como parte da atualização do MTA aprimorado.
-Para obter mais informações sobre o DKIM, consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
+A assinatura de autenticação de email DKIM (DomainKeys Identified Mail) é realizada pelo MTA aprimorado. A assinatura DKIM pelo MTA nativo do Campaign será desativada na tabela de gerenciamento de domínios como parte da atualização para o MTA aprimorado.
+Para mais informações sobre DKIM, consulte o [Guia de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 
 ### Relatórios de sucesso da entrega
 
