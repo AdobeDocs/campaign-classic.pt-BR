@@ -6,21 +6,14 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 TQID: https://experienceleague.adobe.com/3oyhvCWX30kK7dtytjLYvO5Xnbu2-I7FGeJPcjcreho
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: a4671286-a59f-47e3-b97b-90627a1977d5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1592
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +57,7 @@ A guia **[!UICONTROL Translations]** permite inserir traduções para as strings
 
 Na primeira vez que você abrir essa guia, ela não conterá dados. Clique no link **[!UICONTROL Collect the strings to translate]** para atualizar as strings no aplicativo web.
 
-O Adobe Campaign coleta rótulos de campos e cadeias de caracteres definidas nas guias **[!UICONTROL Texts]** de todos os elementos estáticos: blocos HTML, Javascript etc. Os elementos estáticos são detalhados em [Elementos estáticos em um formulário web](static-elements-in-a-web-form.md).
+O Adobe Campaign coleta os rótulos dos campos e strings definidos nas guias **[!UICONTROL Texts]** de todos os elementos estáticos: blocos HTML, JavaScript etc. Os elementos estáticos são descritos em [Elementos estáticos de um formulário web](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -145,7 +138,7 @@ Para exibir somente strings não traduzidas, selecione **[!UICONTROL To translat
 >
 >Os nomes dos arquivos de exportação são gerados automaticamente. Se você realizar a mesma exportação várias vezes, substituirá os arquivos existentes pelos novos. Se precisar manter os arquivos anteriores, altere o **[!UICONTROL Target folder]**, então clique em **[!UICONTROL Start]** novamente para executar a exportação.
 
-Quando você exporta arquivos no **formato CSV**, cada idioma é vinculado a status de status e aprovação. A **Aprovação?** permite aprovar uma tradução. Essa coluna pode conter os valores **Sim** ou **Não**. Como para o editor integrado (consulte [Gerenciamento de traduções no editor](#managing-translations-in-the-editor)), a aprovação de traduções é opcional e não bloqueia o processo.
+Quando você exporta arquivos no **formato CSV**, cada idioma é vinculado a status de status e aprovação. A coluna **Aprovar?** permite que você aprove uma tradução. Essa coluna pode conter os valores **Sim** ou **Não**. Como para o editor integrado (consulte [Gerenciamento de traduções no editor](#managing-translations-in-the-editor)), a aprovação de traduções é opcional e não bloqueia o processo.
 
 ### Importação de arquivos {#importing-files}
 
@@ -181,7 +174,7 @@ se o idioma for o primeiro ou único parâmetro da URL. Por exemplo: **https://m
 &lang=xx
 ```
 
-se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myserver/webApp/APP34?status=1&lang=en**
+se tiver outros parâmetros antes do idioma na URL. Por exemplo: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 Os idiomas e os dicionários de tradução disponíveis como padrão estão listados abaixo.
 
@@ -442,7 +435,7 @@ Você pode adicionar **?lang=es** ou **=lang=de** para exibi-la em espanhol ou a
 >[!NOTE]
 >
 >Se outros parâmetros já estiverem sendo usados para essa aplicação web, adicione **&amp;lang=**.\
->Por exemplo: **https://myserver/webApp/APP34?status=1&lang=en**
+>Por exemplo: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## Configuração avançada de tradução {#advanced-translation-configuration}
 
@@ -452,7 +445,7 @@ Você pode adicionar **?lang=es** ou **=lang=de** para exibi-la em espanhol ou a
 
 ### Tradução de strings do sistema {#translating-the-system-strings}
 
-As strings do sistema são strings prontas para uso, utilizadas por todas as aplicações web. Por exemplo: **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** botões, **[!UICONTROL Loading]** mensagens, etc. Por padrão, alguns idiomas contêm um dicionário com traduções para essas cadeias de caracteres. A lista de idiomas é detalhada em [Alteração do idioma de exibição dos formulários](#changing-forms-display-language).
+As strings do sistema são strings prontas para uso, utilizadas por todas as aplicações web. Por exemplo: os botões **[!UICONTROL Next]**, **[!UICONTROL Previous]**, **[!UICONTROL Approve]**,a mensagem **[!UICONTROL Loading]** etc. Por padrão, alguns idiomas contêm um dicionário com traduções para essas strings. A lista de idiomas é detalhada em [Alteração do idioma de exibição dos formulários](#changing-forms-display-language).
 
 Se você traduzir a aplicação web para um idioma para o qual o dicionário do sistema não foi traduzido, uma mensagem de aviso será exibida para avisá-lo que algumas traduções estão ausentes.
 

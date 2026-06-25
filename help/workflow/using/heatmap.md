@@ -6,21 +6,14 @@ feature: Workflows, Heatmap
 hide: true
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
 TQID: https://experienceleague.adobe.com/i8BnIsz83IdW4kofr2OBtzXokKiyeJuQl3jIBpsOQx0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a658c786-869b-4194-a780-2594d663adda
-subfeature_v2:
-  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a658c786-869b-4194-a780-2594d663adda
+subfeature_v2: id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cfid: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1147
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +103,7 @@ Cada linha representa uma hora do dia e cada célula representa 5 minutos dessa 
 
 A grade mostra todos os fluxos de trabalho que estão sendo executados ao mesmo tempo para cada um desses períodos de 5 minutos.
 
-No exemplo abaixo, entre 8h e 8:05am, três workflows estão em execução (independentemente da duração individual):
+No exemplo abaixo, entre 8:00 e 8:05am, três fluxos de trabalho estão em execução (independentemente da duração individual):
 
 ![](assets/wkf_monitoring_ex_8am.png)
 

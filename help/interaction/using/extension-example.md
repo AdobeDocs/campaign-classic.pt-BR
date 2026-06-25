@@ -9,16 +9,13 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
 TQID: https://experienceleague.adobe.com/TQZaYrJop03HAw47XPFqgmoxb073iC-xztTp-f-5dEk
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
-subfeature_v2:
-  - id: e739ee2b-6228-412e-878f-45de0791417d
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+subfeature_v2: id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 160
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +23,9 @@ ht-degree: 79%
 
 
 
-No caso de um contato de entrada (call center ou site da Web), as ofertas mais relevantes são sugeridas para um determinado contato usando um conjunto de regras de elegibilidade. Para enriquecer os critérios de qualificação de suas ofertas, estenda o esquema **nms:interaction**.
+No caso de um contato de entrada (call center ou site da Web), as ofertas mais relevantes são sugeridas para um determinado contato usando um conjunto de regras de elegibilidade. Para enriquecer os critérios de elegibilidade de suas ofertas, estenda o esquema **nms:interaction**.
 
-* Para adicionar um novo contexto de interação, estenda o esquema **nms:interaction** e crie quantos elementos **attribute** forem necessários no esquema.
+* Para adicionar um novo contexto de interação, estenda o esquema **nms:interaction** e crie quantos elementos de **atributo** forem necessários no esquema.
 
   No exemplo a seguir, os critérios adicionados são o código do país e a última página visitada.
 

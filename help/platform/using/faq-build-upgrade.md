@@ -8,26 +8,14 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 TQID: https://experienceleague.adobe.com/ivE0WuT3rnpH0ro0cBHgJXxXRiRELmJLwHrYVi-Md6Y
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-subfeature_v2:
-  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
-  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
-  - id: f5293531-9312-4099-bfa3-9e67df6a8750
-  - id: efa38731-2723-4334-8d8b-a778af834835
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167id: afa4204e-6d08-4e29-bc35-26aafb656d48
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2093
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -217,10 +205,10 @@ Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](../../
 * Use a mesma versão do console que a versão de build após a atualização.
 * Você tem algum aplicativo da web que insira dados no banco de dados do Campaign? Em caso afirmativo, execute-os e
 verifique se eles podem inserir novos registros por meio da API.
-* Você pode enviar um email de teste com êxito? Crie um novo delivery usando um modelo conhecido, envie-o para
-um recipient de teste, verificar personalização, desfazer vínculo, mirror page, todo o trabalho.
-* Todos os seus fluxos de trabalho de caminho críticos estão em execução? Verifique os workflows, abra o journal do workflow e verifique
-que não há erros.
+* Você pode enviar um email de teste com êxito? Crie uma nova entrega usando um modelo existente, envie-a para
+um destinatário de teste e verifique se a personalização, o link para cancelar a inscrição e a mirror page funcionam corretamente.
+* Todos os seus fluxos de trabalho de caminho críticos estão em execução? Verifique os fluxos de trabalho, abra o diário do fluxo de trabalho e certifique-se
+de que não haja erros.
 * Todas as pastas estão presentes, visíveis e acessíveis? Navegue por pastas diferentes e verifique se
 todo o conteúdo é exibido e está presente.
 * Suas entregas estão com o fuso horário correto?

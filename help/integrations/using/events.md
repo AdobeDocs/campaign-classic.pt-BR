@@ -9,24 +9,15 @@ content-type: reference
 level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 TQID: https://experienceleague.adobe.com/zoNgRb4L1EWAtQsLDNs6YNlakXeRXMn6DE2McoCemGU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2:
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
-  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
-  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41eid: df0d6518-6f49-46e2-b46e-3bcc513f553fid: eb007b6d-6e57-46ab-9485-3f24d6102304id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1009
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +86,7 @@ Exemplo:
 >É um exemplo específico de várias implementações possíveis.
 
 O conteúdo é definido no formato JSON no Adobe Analytics para cada acionador.
-Por exemplo, em um acionador LogoUpload_uploading_Visits:
+Por exemplo, no acionador LogoUpload_uploading_Visits:
 
 * **[!UICONTROL eVar01]** pode conter a ID do consumidor em formato String, utilizada para reconciliar com destinatários do Adobe Campaign. <br>Deve ser reconciliado para localizar a ID do consumidor, que é a chave primária.
 
@@ -139,8 +130,8 @@ Atualmente, não há como ter filas diferentes para ambientes separados, como &q
 
 ### Registro e tratamento de erros {#logging-error-handling}
 
-Logs como logInfo() são direcionados ao log de [!DNL pipelined]. Erros como logError() são gravados no log de [!DNL pipelined] e fazem com que o evento seja colocado em uma fila de tentativas. Nesse caso, você deve verificar o log de pipeline.
-Mensagens com erro são repetidas várias vezes na duração definida nas opções [!DNL pipelined].
+Logs como logInfo() são direcionados para o log [!DNL pipelined]. Erros como logError() são gravados no log [!DNL pipelined] e fazem com que o evento seja colocado em uma fila de repetição. Nesse caso, você deve verificar o log do pipeline.
+As mensagens de erro são repetidas várias vezes durante o período definido nas opções [!DNL pipelined].
 
 Para fins de depuração e monitoramento, os dados completos do acionador são gravados na tabela de acionadores no campo &quot;dados&quot; no formato XML. Como alternativa, um logInfo() contendo os dados do acionador tem a mesma finalidade.
 
@@ -165,8 +156,8 @@ function processPipelineMessage(xmlTrigger)
  }
 ```
 
-Tenha cuidado ao analisar para evitar erros.
-Como esse código é usado para todos os acionadores, a maioria dos dados não é necessária. Portanto, pode ser deixado em branco quando não estiver presente.
+Tenha cuidado ao analisar o código para evitar erros.
+Como esse código é usado para todos os acionadores, a maioria dos dados não é obrigatória. Portanto, é possível deixá-lo em branco quando ele não estiver presente.
 
 ### Armazenar o acionador {#storing-triggers-js}
 
@@ -212,9 +203,9 @@ Para permitir um processamento mais rápido, vários threads desse script são e
 
 ### Esquema do evento pipeline {#pipeline-event-schema}
 
-Eventos são armazenados em uma tabela do banco de dados. Ele é usado pelas campanhas de marketing para clientes do público-alvo e enriquece emails usando acionadores.
-Embora cada acionador possa ter uma estrutura de dados distinta, todos os acionadores podem ser mantidos em uma única tabela.
-O campo triggerType identifica o acionador a partir do qual os dados são originados.
+Os eventos são armazenados em uma tabela do banco de dados. Ela é utilizada por campanhas de marketing para segmentar clientes e enriquecer emails por meio de acionadores.
+Embora cada acionador possa ter uma estrutura de dados distinta, todos os acionadores podem ser armazenados em uma única tabela.
+O campo triggerType identifica de qual acionador os dados se originam.
 
 Este é um exemplo de código de esquema para esta tabela:
 
@@ -245,8 +236,8 @@ Os eventos podem ser exibidos com um formulário simples baseado no esquema de e
 
 A reconciliação é o processo que faz a correspondência do cliente do Adobe Analytics ao banco de dados do Campaign. Por exemplo, os critérios de correspondência podem ser o shopper_id.
 
-Por motivos de desempenho, a correspondência deve ser feita no modo de lote por um workflow.
-A frequência deve ser definida como 15 minutos para otimizar a carga de trabalho. Como consequência, o atraso entre uma recepção de evento no Adobe Campaign e seu processamento por um workflow de marketing é de até 15 minutos.
+Por motivos de desempenho, a correspondência deve ser realizada no modo “em lote” por meio de um fluxo de trabalho.
+A frequência deve ser definida para 15 minutos a fim de otimizar a carga de trabalho. Como consequência, o atraso entre uma recepção de evento no Adobe Campaign e seu processamento por um fluxo de trabalho de marketing é de até 15 minutos.
 
 ### Opções de reconciliação de unidade em JavaScript {#options-unit-reconciliation}
 
@@ -260,5 +251,5 @@ Os acionadores são processados em uma hora. O volume pode ser de aproximadament
 
 ### Fluxo de trabalho de campanha {#campaign-workflow}
 
-O workflow de campanha do acionador geralmente é semelhante a outras campanhas recorrentes já usadas.
-Por exemplo, ele pode começar com um query nos acionadores que procuram eventos específicos durante o último dia. Esse público-alvo é usado para enviar o email. Enriquecimentos ou dados podem vir do acionador. Ele pode ser usado com segurança pelo Marketing, pois não requer configuração.
+O fluxo de trabalho de campanha do acionador geralmente é semelhante a outras campanhas recorrentes já usadas.
+Por exemplo, ele pode começar com uma consulta dos acionadores que procuram eventos específicos durante o último dia. Esse público-alvo é usado para enviar o email. Enriquecimentos ou dados podem vir do acionador. Ele pode ser usado com segurança pela equipe de marketing, pois não requer configuração.

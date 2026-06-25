@@ -7,9 +7,9 @@ badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se ap
 hide: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '406'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Os termos específicos do trabalho com cubos estão listados abaixo.
 
 * **Compartimentalização** - Em alguns campos, é possível definir a compartimentalização para agrupar valores e facilitar a leitura das informações. A compartimentalização é aplicada aos níveis. Recomendamos que você defina a compartimentalização quando houver a possibilidade de muitos valores diferentes.
 
-* **Medida** - As medidas mais frequentes são: soma, média, máximo, mínimo, desvio padrão, etc. As medidas podem ser calculadas: por exemplo, a taxa de aceitação de uma oferta é a relação do número de vezes que foi apresentada em comparação ao número de vezes que foi aceita.
+* **Medida** - As medidas mais comuns são soma, média, máximo, mínimo, desvio padrão etc. As medidas podem ser calculadas: por exemplo, a taxa de aceitação de uma oferta é a razão do número de vezes que foi apresentada em comparação ao número de vezes que foi aceita.
 
 ## Espaço de trabalho do cubo {#cube-workspace}
 

@@ -6,17 +6,13 @@ feature: Workflows, Enrichment Activity, Targeting Activity
 hide: true
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
 TQID: https://experienceleague.adobe.com/3M3Y5GT1479YcWpoM0MI5C6ru5F5jcPY-EYvAOCBMqU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1301
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +45,7 @@ Existem quatro tipos de vinculações:
 
 * **[!UICONTROL Define a collection]**: permite definir um vínculo com uma cardinalidade 1-N entre as tabelas.
 * **[!UICONTROL Define a link whose target is still available]**: possibilita definir um vínculo com uma cardinalidade 1-1 entre as tabelas. As condições de associação devem ser definidas por um único registro na tabela do target.
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: possibilita definir um vínculo com uma cardinalidade 0-1 entre as tabelas. A condição de associação deve ser definida por 0 ou 1 (máx.) registro na tabela do target.
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: possibilita definir um vínculo com uma cardinalidade 0-1 entre as tabelas. A condição de unificação deve corresponder a 0 ou 1 (máx.) registro na tabela de destino.
 
   Essa opção é configurada na guia **[!UICONTROL Simple Join]** que pode ser acessada por meio do link **[!UICONTROL Edit additional data]** da atividade **[!UICONTROL Enrichment]**.
 

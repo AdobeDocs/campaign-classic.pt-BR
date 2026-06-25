@@ -9,21 +9,14 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
 TQID: https://experienceleague.adobe.com/cUoMAlp8ExhammApiilFqRyrOkyyqxk1om0AifZVxb0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-subfeature_v2:
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
-  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
-  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41eid: df0d6518-6f49-46e2-b46e-3bcc513f553fid: eb007b6d-6e57-46ab-9485-3f24d6102304id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 501
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -102,9 +95,9 @@ Se tiver problemas ao entrar no **[!UICONTROL Client Console]** com sua Adobe ID
 
 1. Feche o **[!UICONTROL Client Console]** e pare qualquer processo `nlclient` em execução.
 
-1. Excluir todas as pastas `webview2` e `webview2Cache` dos seguintes locais:
+1. Exclua todas as pastas `webview2` e `webview2Cache` dos seguintes locais:
 
    * `C:\ProgramData\Neolane\NL_5\nlclient\`
    * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
 
-1. Reinicie o **[!UICONTROL Client Console]** e entre com sua Adobe ID. As pastas de cache serão automaticamente recriadas na próxima inicialização.
+1. Reinicie o **[!UICONTROL Client Console]** e faça logon com sua Adobe ID. As pastas de cache serão automaticamente recriadas na próxima inicialização.

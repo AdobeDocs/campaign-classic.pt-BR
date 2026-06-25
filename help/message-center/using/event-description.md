@@ -8,14 +8,13 @@ content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
 TQID: https://experienceleague.adobe.com/Fe-nquKp2-Mp18dsMdNdZnLCjUjKbcat06Arlxi-3-Q
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 758
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -31,15 +30,15 @@ As mensagens transacionais dependem do modelo de dados do Adobe Campaign e usam 
 
 Esta seção detalha os métodos SOAP associados aos esquemas do módulo de mensagens transacionais.
 
-Dois métodos SOAP **PushEvent** ou **PushEvents** estão vinculados aos dois dataschemas **nms:rtEvent** e **nms:BatchEvent**. É o sistema de informações que determina se um evento é do tipo &quot;batch&quot; ou &quot;em tempo real&quot;.
+Dois métodos SOAP **PushEvent** ou **PushEvents** estão vinculados aos dois esquemas de dados: **nms:rtEvent** e **nms:BatchEvent**. É o sistema de informações que determina se um evento é do tipo &quot;batch&quot; ou &quot;em tempo real&quot;.
 
 * O **PushEvent** permite inserir um único evento na mensagem,
 * O **PushEvents** permite inserir uma série de eventos na mensagem.
 
 O caminho WSDL para acessar ambos os métodos é:
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** para acessar o esquema do tipo em tempo real.
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** para acessar o esquema de tipo lote.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** para acessar o esquema do tipo “em tempo real”.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** para acessar o esquema do tipo “lote”.
 
 Para obter mais informações sobre a geração de um arquivo WSDL, consulte [esta seção](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 

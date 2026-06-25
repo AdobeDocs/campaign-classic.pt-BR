@@ -7,26 +7,15 @@ feature: Email Design
 role: User, Developer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
 TQID: https://experienceleague.adobe.com/CqXXVNL83qq35qW9j52Vqm46yBIMo8T1J-fF1aC5TCE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1460
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -83,8 +72,8 @@ Os atributos e elementos do conteúdo são representados como objetos JavaScript
 
 **Exemplo**:
 
-* **content.@name**: recupera o valor do atributo &quot;name&quot; do elemento principal
-* **conteúdo.@`['name']`**: idêntico à sintaxe **content.@name**
+* **content.@name**: recupera o valor do atributo “name” do elemento principal
+* **content.@`['name']`**: idêntico à sintaxe **content.@name**
 * **content.chapter.length**: retorna o número de elementos no `<chapter` elemento de coleção
 * **content.chapter`[0]`.@name**: recupera o nome do primeiro elemento `<chapter>`
 * **chapter.name()**: retorna o nome do `<chapter>` elemento
@@ -559,7 +548,7 @@ Exemplo de como usar a opção de colocação de imagem e seu uso com uma imagem
 
 Também é possível usar **[!UICONTROL Public resources]** para declarar imagens e carregá-las no servidor, dependendo das configurações de instância inseridas no assistente de implantação.
 
-Você pode então chamar essas imagens em conteúdo. para fazer isso, use a seguinte sintaxe no schema de gestão de conteúdo:
+Você pode então exibir essas imagens em conteúdos. para fazer isso, use a seguinte sintaxe no esquema de gerenciamento de conteúdo:
 
 ```
 <element label="Image" name="image" target="xtk:fileRes" type="link"/>

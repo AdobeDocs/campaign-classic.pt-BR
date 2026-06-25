@@ -9,22 +9,14 @@ content-type: reference
 topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
 TQID: https://experienceleague.adobe.com/P89PBe23uuRmGX5vb6lCNd8kTd24peaZcKsTRAj2pnw
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-subfeature_v2:
-  - id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-  - id: d72afaa0-c842-48c8-9a3c-51b7911edc1b
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3id: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: d72afaa0-c842-48c8-9a3c-51b7911edc1b
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 760
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +28,7 @@ Esta seção destina-se às pessoas responsáveis pela configuração do gestor 
 
 Isso permite o entendimento de como adaptar o modelo de dados padrão à natureza específica de uma tabela de transações para o Adobe Campaign com a tabela de individuais. Esta tabela pode coincidir com a tabela de individuais disponíveis no Adobe Campaign ou com uma tabela diferente.
 
-A hipótese de medição é iniciada pelo fluxo de trabalho do processo de operação (**[!UICONTROL operationMgt]** ). Cada hipótese representa um processo separado executado de forma assíncrona com um status de execução (Editando, Pendente, Concluído, Falha, etc.) e controlado por um programador que gerencia as restrições de prioridade, a restrição do número de processos simultâneos, a página de baixa atividade e a execução automática com frequência.
+A hipótese de medição é iniciada pelo fluxo de trabalho do processo de operação (**[!UICONTROL operationMgt]** ). Cada hipótese representa um processo separado executado de forma assíncrona com um status de execução (Editando, Pendente, Concluído, Falha etc.) e controlado por um programador que gerencia as limitações de prioridade, a restrição do número de processos simultâneos, a página de baixo nível de atividades e a execução automática com frequência.
 
 ## Configurar esquemas {#configuring-schemas}
 
@@ -62,7 +54,7 @@ Por exemplo, uma tabela de transação está vinculada a um contato (tabela de r
 
 >[!NOTE]
 >
->Se você quiser manter o identificador de recebimento que descreve o comportamento esperado na hipótese, é possível estender o template da tabela nms:remaMatchRcp para adicionar o identificador a ele (nesse caso, nenhum cálculo de ROI é vinculado a esses campos).
+>Se você quiser manter o identificador de recebimento que descreve o comportamento esperado na hipótese, é possível estender o modelo da tabela nms:remaMatchRcp para adicionar o identificador a ele (nesse caso, nenhum cálculo de ROI é vinculado a esses campos).
 
 É altamente recomendável adicionar uma data de evento.
 
