@@ -28,7 +28,7 @@ subfeature_v2:
 source-git-commit: c8d13469884744554fd504fed8842dd0c9ab5feb
 workflow-type: tm+mt
 source-wordcount: 1393
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -62,7 +62,7 @@ O MTA aprimorado inclui um tratamento mais inteligente de rejeição e um recurs
 
 **Quais são os benefícios?**
 
-* Os clientes do Adobe Campaign que usam o MTA aprimorado observaram um <!--300%-->grande aumento na velocidade geral da taxa de transferência e uma redução significativa nas rejeições temporárias.
+* Os clientes do Adobe Campaign que utilizam o MTA aprimorado observaram um <!--300%-->aumento significativo na velocidade geral de taxa de transferência e uma redução considerável nas rejeições temporárias.
   <!--90%+-->
 * O MTA aprimorado usa a mais recente tecnologia MTA para oferecer a você as velocidades de taxa de transferência ideais para sua entrega de email.
 * Adaptando-se instantânea e automaticamente ao feedback que recebe, ele também garante uma entrega de email mais preciso e inteligente com dados de entrega em tempo real.
@@ -156,8 +156,8 @@ Para obter mais informações sobre o período de validade, consulte esta [pági
 
 ### Assinatura DKIM
 
-A assinatura de autenticação de email do DKIM (DomainKeys Identified Mail) é feita pelo MTA aprimorado. A assinatura do DKIM pelo MTA nativo do Campaign será desativada na tabela Domain management como parte da atualização do MTA aprimorado.
-Para obter mais informações sobre o DKIM, consulte o [Manual de práticas recomendadas de capacidade de delivery da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
+A assinatura de autenticação de email DKIM (DomainKeys Identified Mail) é realizada pelo MTA aprimorado. A assinatura DKIM pelo MTA nativo do Campaign será desativada na tabela de gerenciamento de domínios como parte da atualização para o MTA aprimorado.
+Para mais informações sobre DKIM, consulte o [Guia de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 
 ### Relatórios de sucesso da entrega
 

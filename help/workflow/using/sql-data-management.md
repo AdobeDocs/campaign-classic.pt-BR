@@ -20,7 +20,7 @@ subfeature_v2:
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 420
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,9 +38,9 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
 
   Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-  ![](assets/do-not-localize/v7.jpeg) [Documentação do Campaign v7](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg)[Documentação do Campaign v7](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png) [Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=pt-BR)
+  ![](assets/do-not-localize/v8.png)[Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=pt-BR)
 
 * O esquema de saída deve existir no banco de dados e estar vinculado a um banco de dados do FDA.
 * O operador que executa o fluxo de trabalho deve ter o item **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** nomeado corretamente. [Saiba mais](../../platform/using/access-management-named-rights.md).
@@ -58,7 +58,7 @@ Antes de configurar a atividade, verifique se os pré-requisitos a seguir estão
 
    >[!CAUTION]
    >
-   >É a responsabilidade do gravador de script SQL garantir que o script SQL esteja funcional e que suas referências (nomes de campos etc.) estão de acordo com o schema de saída.
+   >É responsabilidade do autor do script SQL garantir que o script esteja funcional e que suas referências (nomes de campos e outros elementos) estejam em conformidade com o esquema de saída.
 
    Para carregar um código SQL existente, selecione a opção **[!UICONTROL The SQL script is contained in an entity stored in the database]**. Os scripts SQL devem ser criados e armazenados no menu **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**.
 

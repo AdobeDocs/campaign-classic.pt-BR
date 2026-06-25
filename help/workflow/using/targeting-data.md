@@ -22,7 +22,7 @@ topic_v2:
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 1931
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Em **[!UICONTROL Union]** ou **[!UICONTROL Intersection]** digite atividades, é
 
 ### Reconciliação com dados adicionais {#reconciliation-with-additional-data}
 
-Durante as fases de reconciliação de dados (atividades **[!UICONTROL Union]**, **[!UICONTROL Intersection]** etc.), você pode selecionar as colunas a serem usadas para reconciliação de dados nas colunas adicionais. Para fazer isso, configure uma reconciliação em uma seleção de colunas e especifique o conjunto principal. Em seguida, selecione as colunas na coluna inferior da janela, como mostrado no exemplo a seguir:
+Durante as fases de reconciliação de dados (atividades **[!UICONTROL Union]**, **[!UICONTROL Intersection]** etc.), é possível selecionar as colunas a serem utilizadas para a reconciliação de dados das colunas adicionais. Para fazer isso, configure uma reconciliação em uma seleção de colunas e especifique o conjunto principal. Em seguida, selecione as colunas na coluna inferior da janela, como mostrado no exemplo a seguir:
 
 ![](assets/select-column-and-join.png)
 
@@ -192,9 +192,9 @@ Para configurá-lo, primeiro é necessário selecionar os critérios:
 
    Para mais informações, dependendo da versão do Campaign, consulte estas seções:
 
-   ![](assets/do-not-localize/v7.jpeg) [Documentação do Campaign v7](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg)[Documentação do Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png) [Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=pt-BR)
+   ![](assets/do-not-localize/v8.png)[Documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=pt-BR)
 
 Em seguida, precisamos adicionar novos subconjuntos:
 
