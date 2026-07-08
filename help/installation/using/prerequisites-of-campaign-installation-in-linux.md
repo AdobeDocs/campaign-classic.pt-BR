@@ -16,9 +16,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 feature_v2: []
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: d711ea40185e9860ea20773ae1dfebfc7cc3e4d0
 workflow-type: tm+mt
-source-wordcount: 854
+source-wordcount: 906
 ht-degree: 3%
 
 ---
@@ -56,6 +56,34 @@ Para instalar o Adobe Campaign no Linux, verifique se você tem as bibliotecas n
   Para distribuições RHEL, é necessária a versão 1.0 do OpenSSL.
 
 * Para usar o Adobe Campaign, você precisa ter a biblioteca **libicu** instalada.
+
+* Nas distribuições RHEL, **xalan-c** é obrigatório. Instalar via `epel-release`:
+
+  ```
+  dnf install epel-release
+  dnf install xalan-c
+  ```
+
+### Dependências de exportação de relatórios do PDF {#pdf-export-dependencies}
+
+A ferramenta **wkhtmltopdf** é usada ao exportar relatórios para o formato PDF. Ela requer os seguintes pacotes:
+
+* **libjpeg**
+* **xvfb**
+
+Se a exportação de relatórios do PDF não for usada, esses pacotes não precisarão ser instalados.
+
+Em distribuições RHEL:
+
+```
+dnf install libjpeg xvfb
+```
+
+No Debian:
+
+```
+apt-get install libjpeg-dev xvfb
+```
 
 ### SELinux {#selinux}
 
