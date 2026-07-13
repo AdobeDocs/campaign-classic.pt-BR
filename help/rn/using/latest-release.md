@@ -7,24 +7,16 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 TQID: https://experienceleague.adobe.com/Xq9y8r6xU-hypq1Eeo9ijaiGng7qqkWVqiCXW5fYx2c
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: a9e48513ed4ceb2650d0eeff18563a010a148c80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 498
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -42,13 +34,13 @@ _30 de junho de 2026_
 
 #### Melhorias de segurança {#security-7-4-3-9397}
 
-Esta build inclui correções de segurança. É a build de Disponibilidade geral recomendada e substitui as builds anteriores do Campaign Classic v7.
+Esta build inclui correções de segurança. É a build de disponibilidade geral recomendada e substitui as builds anteriores do Campaign Classic v7.
 
 #### Outras alterações {#changes-7-4-3-9397}
 
-Por padrão, webForm.jsp agora ignora os parâmetros `ctx` fornecidos pelo cliente. Isso é controlado pelo parâmetro `disableCtxInWebForm`, que é definido como &quot;true&quot; por padrão.
+Por padrão, webForm.jsp agora ignora os parâmetros `ctx` fornecidos pelo cliente. Isso é controlado pelo parâmetro `disableCtxInWebForm`, que é definido como “true” por padrão.
 
-Se suas solicitações do webForm passarem um parâmetro `ctx` no momento, você poderá reabilitar temporariamente esse comportamento, adicionando o seguinte à &lt;web> elemento da sua configuração-&lt;instance>arquivo .xml. Planejar a eliminação progressiva deste uso.
+Se suas solicitações do webForm atualmente passam um parâmetro `ctx`, você pode reativar temporariamente esse comportamento adicionando o seguinte ao <web> elemento de configuração-<instance>do arquivo .xml. Planejar a eliminação progressiva deste uso.
 
 ```
 <web>
