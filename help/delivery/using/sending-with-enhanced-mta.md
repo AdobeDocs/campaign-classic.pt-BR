@@ -26,9 +26,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: c8d13469884744554fd504fed8842dd0c9ab5feb
-workflow-type: tm+mt
-source-wordcount: 1393
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: 1428
+ht-degree: 100%
 
 ---
 
@@ -56,9 +56,9 @@ A implementação do MTA aprimorado pode afetar algumas das funcionalidades exis
 
 **O que é o MTA aprimorado?**
 
-O Adobe Campaign agora pode ser atualizado para usar o **MTA aprimorado** (Agente de Transferência de Email), um mecanismo de entrega de email de alto desempenho.
+O Adobe Campaign agora pode ser atualizado para usar o **MTA aprimorado** (Agente de transferência de email), um mecanismo de entrega de email de alto desempenho.
 
-O MTA aprimorado inclui um tratamento mais inteligente de rejeição e um recurso automatizado de otimização de entrega que ajuda os remetentes a alcançarem e manterem as taxas ideais de delivery da caixa de entrada.
+O MTA aprimorado inclui um gerenciamento mais inteligente de mensagens devolvidas e um recurso automatizado de otimização da capacidade de entrega, que ajuda os remetentes a alcançar e manter taxas ideais de entrega na caixa de entrada.
 
 **Quais são os benefícios?**
 
@@ -156,8 +156,7 @@ Para obter mais informações sobre o período de validade, consulte esta [pági
 
 ### Assinatura DKIM
 
-A assinatura de autenticação de email DKIM (DomainKeys Identified Mail) é realizada pelo MTA aprimorado. A assinatura DKIM pelo MTA nativo do Campaign será desativada na tabela de gerenciamento de domínios como parte da atualização para o MTA aprimorado.
-Para mais informações sobre DKIM, consulte o [Guia de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
+A assinatura de autenticação de email DKIM (DomainKeys Identified Mail) é feita pelo MTA aprimorado. A assinatura DKIM pelo MTA nativo do Campaign será desativada na tabela Gerenciamento de domínio como parte da atualização do MTA aprimorado.Para obter mais informações sobre DKIM, consulte o [Manual de práticas recomendadas de capacidade de entrega da Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=pt-BR#authentication).
 
 ### Relatórios de sucesso da entrega
 
