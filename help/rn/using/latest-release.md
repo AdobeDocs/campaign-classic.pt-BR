@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: a9e48513ed4ceb2650d0eeff18563a010a148c80
-workflow-type: ht
-source-wordcount: 498
-ht-degree: 100%
+source-git-commit: 7aea93eee16cdcdae6c4bf2466ab12a0aaf6052e
+workflow-type: tm+mt
+source-wordcount: 631
+ht-degree: 78%
 
 ---
 
@@ -34,15 +34,27 @@ Esta página lista novos recursos, melhorias e correções que vêm com a **vers
 
 ## Versão 7.4.3 {#release-7-4-3}
 
+### Build 9398 {#build-9398}
+
+[!BADGE Disponibilidade limitada]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
+
+_29 de julho de 2026_
+
+#### Melhorias de segurança {#security-7-4-3-9398}
+
+A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que abordam vulnerabilidades críticas. Recomendamos que os clientes em implantações locais e híbridas instalem as atualizações o mais rápido possível. As instâncias hospedadas pela Adobe já foram corrigidas e não exigem nenhuma ação do cliente. Você pode encontrar mais informações no [boletim de segurança](https://helpx.adobe.com/security/products/campaign/apsb26-114.html){target="_blank"}.
+
+É necessário [reiniciar o servidor do Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) para carregar a compilação e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
+
 ### Build 9397 {#build-9397}
 
-[!BADGE Disponibilidade geral]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade geral"}
+[!BADGE Disponibilidade limitada]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade limitada"}
 
 _30 de junho de 2026_
 
 #### Melhorias de segurança {#security-7-4-3-9397}
 
-Esta build inclui correções de segurança. É a build de disponibilidade geral recomendada e substitui as builds anteriores do Campaign Classic v7.
+Esta build inclui correções de segurança e substitui as builds anteriores do Campaign Classic v7. Esta compilação foi descontinuada para implantações locais e híbridas; recomendamos que os clientes nesses modos de implantação instalem as atualizações o mais rápido possível, atualizando para a [Compilação 9398](#build-9398) ou posterior.
 
 #### Outras alterações {#changes-7-4-3-9397}
 
