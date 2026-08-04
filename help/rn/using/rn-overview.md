@@ -20,10 +20,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 922
-ht-degree: 100%
+source-git-commit: e71b0658b2458b05799c28e79d871f025348962a
+workflow-type: tm+mt
+source-wordcount: 1045
+ht-degree: 88%
 
 ---
 
@@ -64,7 +64,15 @@ O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualiz
 
 É por isso que acreditamos ser essencial **executar a build estável mais recente** do Adobe Campaign. Ela também garantirá que você obtenha uma melhor experiência de suporte, já que geralmente é bem mais rápido identificar, reproduzir e corrigir um problema em um build recente. Além disso, muitos problemas que você pode encontrar já foram corrigidos nos builds mais recentes.
 
+>[!NOTE]
+>
+> Cada build é cumulativa: inclui todos os recursos, melhorias e correções fornecidos em builds anteriores da mesma versão, além de suas próprias alterações. Não é necessário instalar cada build intermediária para se beneficiar das correções anteriores — a instalação da build mais recente o atualiza com tudo incluído nas anteriores.
+
 Como cliente hospedado, você se beneficia automaticamente da atualização com a última build estável, sem realizar nenhuma ação. Saiba mais na [seção de Atualização anual](#yearly-upgrade). Ao migrar de uma build antiga, a Adobe recomenda atualizar primeiro para essa build.
+
+### Correção de segurança para ambientes hospedados {#security-patching}
+
+Para proteger a integridade dos ambientes hospedados, a Adobe se reserva o direito de aplicar patches de segurança críticos a qualquer momento e sem aviso prévio, a fim de corrigir vulnerabilidades o mais rápido possível. Esses patches são implantados sem interrupção do serviço. Essa prática é consistente com os padrões de governança de segurança da Adobe, segundo os quais a urgência de corrigir uma vulnerabilidade crítica tem precedência sobre a notificação prévia.
 
 ## Recomendações {#rn-recommendations}
 
