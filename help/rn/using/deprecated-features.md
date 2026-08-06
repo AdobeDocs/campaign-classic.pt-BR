@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: c094a1fa9adf80708154b5532ae9fbeb18993b9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1792
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,8 +65,8 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
   </tr>
   <tr>
  <td>Conector SMPP Netsize</td>
- <td><p>O conector SMPP Netsize agora está obsoleto. Recomendamos migrar para o conector <strong>Extended generic SMPP</strong>. Para obter mais informações, consulte <a href="../../delivery/using/unsupported-connector-migration.md">esta página</a>.</p>
-<p>Data de remoção do Target: janeiro de 2027</p>
+ <td><p>O conector SMPP Netsize agora está obsoleto. Recomendamos a migração para o conector <strong>SMPP genérico estendido</strong>. Para obter mais informações, consulte <a href="../../delivery/using/unsupported-connector-migration.md">esta página</a>.</p>
+<p>Data prevista para remoção: janeiro de 2027</p>
 </td>
 </tr>
 <tr>
@@ -235,7 +235,7 @@ A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais co
 
 A Adobe não oferece suporte aos seguintes mecanismos de banco de dados, pois foram descontinuados pelo editor. Os clientes que executam essas versões precisam atualizar para a versão mais recente ou mudar para outra.
 
-Consulte a [Matriz de compatibilidade do Campaign &#x200B;](../../rn/using/compatibility-matrix.md) para acessar a lista de versões compatíveis.
+Consulte a [Matriz de compatibilidade do Campaign ](../../rn/using/compatibility-matrix.md) para acessar a lista de versões compatíveis.
 
 **FEDERATED DATA ACCESS (FDA)**
 

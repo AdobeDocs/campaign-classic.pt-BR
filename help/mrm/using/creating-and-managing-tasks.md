@@ -18,8 +18,8 @@ topic_v2:
 subfeature_v2:
   - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
 source-git-commit: 48d000a7ceada7e027f27f436ef643b321a7695c
-workflow-type: tm+mt
-source-wordcount: 3750
+workflow-type: ht
+source-wordcount: 3752
 ht-degree: 100%
 
 ---
@@ -320,8 +320,8 @@ A tarefa de criação de recursos de marketing interage com o recurso vinculado 
 
   É possível usar uma série de tarefas vinculadas para definir um ciclo de aprovação completo. Marque a opção **[!UICONTROL Publish the marketing resource]** somente para a última tarefa: todas as tarefas precisarão ser concluídas para que o recurso seja publicado. Além disso, quando você cria uma tarefa de recurso de marketing filho, o recurso será selecionado automaticamente na tarefa filho.
 
-   * **Por meio do recurso**: se enviar o recurso para aprovação ou aprová-lo, essas ações não afetarão a tarefa.
-   * **Via the task**: se a opção **[!UICONTROL Publish the marketing resource]** estiver marcada na tarefa, o recurso será aprovado e publicado automaticamente após a conclusão da tarefa (veja acima). Se a opção não estiver marcada, a tarefa e o recurso não irão interagir: atuando em um não afetará o outro.
+  * **Por meio do recurso**: se enviar o recurso para aprovação ou aprová-lo, essas ações não afetarão a tarefa.
+  * **Via the task**: se a opção **[!UICONTROL Publish the marketing resource]** estiver marcada na tarefa, o recurso será aprovado e publicado automaticamente após a conclusão da tarefa (veja acima). Se a opção não estiver marcada, a tarefa e o recurso não irão interagir: atuando em um não afetará o outro.
 
 #### Configurar uma tarefa de criação de recurso de marketing {#configuring-a-marketing-resource-creation-task}
 
@@ -417,7 +417,7 @@ A dependência entre tarefas é representada por setas no painel de campanha.
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-No caso de tarefas agrupadas, o Adobe Campaign atribui automaticamente a data final da tarefa pai à tarefa filho como data inicial. Por exemplo, se uma tarefa **Criar convite** terminar em 15 de outubro às 3:30PM, a tarefa derivada **Enviar email de convite** será iniciada em 15 de outubro às 3:30PM.
+No caso de tarefas agrupadas, o Adobe Campaign atribui automaticamente a data final da tarefa pai à tarefa filho como data inicial. Por exemplo, se uma tarefa **Criar convite** terminar em 15 de outubro às 15:30, a tarefa derivada **Enviar email de convite** começará em 15 de outubro às 15:30.
 
 Além disso, se adiar o fim de uma tarefa pai, algumas de suas tarefas filho poderão ser afetadas: essas são as tarefas filho cujo status é **[!UICONTROL Scheduled]** e cuja data inicial é anterior à nova data final da tarefa pai. A duração da tarefa permanece a mesma. Se a data inicial de uma tarefa filho for posterior à nova data final da tarefa pai, a tarefa filho não será afetada.
 

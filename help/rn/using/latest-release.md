@@ -22,9 +22,9 @@ subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: 5356cd82fdbec264ebbdebadc490bb6f6aa29f07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 734
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -42,9 +42,9 @@ _3 de agosto de 2026_
 
 #### Melhorias de segurança {#security-7-4-3-9399}
 
-A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que abordam vulnerabilidades críticas. Recomendamos que os clientes em implantações locais e híbridas instalem as atualizações o mais rápido possível. As instâncias hospedadas pela Adobe já foram corrigidas e não exigem nenhuma ação do cliente. Você pode encontrar mais informações no [boletim de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb26-120.html){target="_blank"}.
+A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que corrigem vulnerabilidades críticas. Recomendamos que os clientes em implantações locais e híbridas instalem as atualizações o mais rápido possível. As instâncias hospedadas pela Adobe já foram corrigidas e não exigem nenhuma ação do cliente. Você pode encontrar mais informações no [boletim de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb26-120.html){target="_blank"}.
 
-É necessário [reiniciar o servidor do Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) para carregar a compilação e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
+É necessário [reiniciar o servidor do Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) para carregar a build e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
 
 ### Build 9398 {#build-9398}
 
@@ -54,9 +54,9 @@ _29 de julho de 2026_
 
 #### Melhorias de segurança {#security-7-4-3-9398}
 
-A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que abordam vulnerabilidades críticas. Recomendamos que os clientes em implantações locais e híbridas instalem as atualizações o mais rápido possível. As instâncias hospedadas pela Adobe já foram corrigidas e não exigem nenhuma ação do cliente. Você pode encontrar mais informações no [boletim de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb26-114.html){target="_blank"}.
+A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que corrigem vulnerabilidades críticas. Recomendamos que os clientes em implantações locais e híbridas instalem as atualizações o mais rápido possível. As instâncias hospedadas pela Adobe já foram corrigidas e não exigem nenhuma ação do cliente. Você pode encontrar mais informações no [boletim de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb26-114.html){target="_blank"}.
 
-É necessário [reiniciar o servidor do Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) para carregar a compilação e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
+É necessário [reiniciar o servidor do Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) para carregar a build e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
 
 ### Build 9397 {#build-9397}
 
@@ -66,7 +66,7 @@ _30 de junho de 2026_
 
 #### Melhorias de segurança {#security-7-4-3-9397}
 
-Esta build inclui correções de segurança e substitui as builds anteriores do Campaign Classic v7. Esta compilação foi descontinuada para implantações locais e híbridas; recomendamos que os clientes nesses modos de implantação instalem as atualizações o mais rápido possível, atualizando para a [Compilação 9398](#build-9398) ou posterior.
+Esta build inclui correções de segurança e substitui as builds anteriores do Campaign Classic v7. Esta build foi descontinuada para implantações locais e híbridas; recomendamos que os clientes nesses modos de implantação instalem as atualizações o mais rápido possível, atualizando para a [Build 9398](#build-9398) ou posterior.
 
 #### Outras alterações {#changes-7-4-3-9397}
 

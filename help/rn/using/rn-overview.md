@@ -21,9 +21,9 @@ subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: e71b0658b2458b05799c28e79d871f025348962a
-workflow-type: tm+mt
-source-wordcount: 1045
-ht-degree: 88%
+workflow-type: ht
+source-wordcount: 1046
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualiz
 
 >[!NOTE]
 >
-> Cada build é cumulativa: inclui todos os recursos, melhorias e correções fornecidos em builds anteriores da mesma versão, além de suas próprias alterações. Não é necessário instalar cada build intermediária para se beneficiar das correções anteriores — a instalação da build mais recente o atualiza com tudo incluído nas anteriores.
+> Cada build é cumulativa: inclui todos os recursos, melhorias e correções fornecidos em builds anteriores da mesma versão, além de suas próprias alterações. Não é necessário instalar cada build intermediária para se beneficiar das correções anteriores. A instalação da build mais recente o atualiza com tudo incluído nas anteriores.
 
 Como cliente hospedado, você se beneficia automaticamente da atualização com a última build estável, sem realizar nenhuma ação. Saiba mais na [seção de Atualização anual](#yearly-upgrade). Ao migrar de uma build antiga, a Adobe recomenda atualizar primeiro para essa build.
 
