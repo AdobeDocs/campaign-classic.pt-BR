@@ -18,10 +18,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 50418c4e818f04008a5d47a982fa5bb0185bd597
-workflow-type: ht
-source-wordcount: 663
-ht-degree: 100%
+source-git-commit: 64661fb2003d66e416aabee2a89fcd990dd05f13
+workflow-type: tm+mt
+source-wordcount: 667
+ht-degree: 96%
 
 ---
 
@@ -36,9 +36,9 @@ Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Ado
 >[!BEGINTABS]
 
 
->[!TAB A versão de junho de 2026 já está disponível!]
+>[!TAB A versão de  agosto de 2026 está disponível!]
 
-A build do Campaign Classic v7.4.3 de junho de 2026 inclui atualizações de segurança além das da versão anterior.
+A build do Campaign Classic v7.4.4 a agosto de 2026 fornece atualizações de segurança e atualiza o conector do Adobe Analytics para a API do Analytics 2.0.
 
 [![imagem](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -92,34 +92,34 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
 <table style="table-layout:auto">
   <tr style="border: 0;">
     <td>
-      
+      <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
       <strong>Introdução</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Interface do usuário</a> – <a href="platform/using/launching-adobe-campaign.md">Conectar-se ao Campaign</a> – <a href="platform/using/get-started-data-import-export.md">Importar e exportar dados</a> – <a href="platform/using/access-management.md">Permissões</a>
     </td>
     <td>
-      
+      <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
       <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatização com fluxos de trabalho</a> – <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/set-up-campaigns" target="_blank">Campanha de marketing</a> – <a href="interaction/using/interaction-and-offer-management.md">Gestão e ofertas e interações</a> – <a href="delivery/using/about-personalization.md">Personalização</a> – <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Relatórios</a>
     </td>
     <td>
-      
+      <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
       <strong>Enviar mensagens</strong><br/><a href="delivery/using/communication-channels.md">Canais de comunicação</a> – <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Enviar provas</a> – <a href="delivery/using/get-started-a-b-testing.md">Testes A/B</a> - <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Rastreamento de mensagens</a> – <a href="delivery/using/about-deliverability.md">Capacidade de entrega</a> – <a href="message-center/using/about-transactional-messaging.md">Mensagens transacionais</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
-      
+      <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
       <strong>Perfis e públicos-alvo</strong><br/> <a href="platform/using/creating-and-managing-lists.md">Criar listas</a> – <a href="delivery/using/about-services-and-subscriptions.md">Serviços e assinaturas</a> – <a href="platform/using/privacy-management.md">Privacidade e consentimento</a>
     </td>
     <td>
-      
+      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
       <br/>
       <strong>Arquitetura e configuração</strong><br/><a href="production/using/general-architecture.md">Princípios de arquitetura</a> – <a href="production/using/build-upgrade.md">Executando uma atualização da build</a> – <a href="production/using/configuration.md">Configurar a Campanha</a> – <a href="installation/using/external-accounts.md">Conectar-se a sistemas externos</a>
     </td>
     <td>
-      
+      <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
       <strong>Recursos para desenvolvedores</strong><br/><a href="configuration/using/about-data-model.md">Descrição do modelo de dados</a> – <a href="configuration/using/about-schema-reference.md">Estrutura do esquema</a> – <a href="configuration/using/editing-forms.md">Estrutura do esquema</a> – <a href="configuration/using/about-web-services.md">APIs</a> – <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR">Documentação de referência do JSAPI</a> – <a href="configuration/using/about-custom-recipient-table.md">Tabela de destinatários personalizada</a>
     </td>
