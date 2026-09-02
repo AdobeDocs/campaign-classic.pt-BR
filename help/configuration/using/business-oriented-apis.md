@@ -6,17 +6,14 @@ feature: API
 role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
 TQID: https://experienceleague.adobe.com/lPAawM33zS2tws0EyHFHW1jD-Vw3ZLDtDcMEd1eJA1c
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 3%
+source-wordcount: 624
+ht-degree: 2%
 
 ---
 
@@ -26,16 +23,16 @@ As APIs de negócios são específicas para cada tipo de objeto. Elas têm efeit
 
 * Entregas:
 
-   * Criando uma ação de entrega, consulte [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
-   * enviar uma campanha (iniciar, pausar, parar, enviar prova),
-   * recuperação de logs do delivery.
+  * Criando uma ação de entrega, consulte [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
+  * enviar uma campanha (iniciar, pausar, parar, enviar prova),
+  * recuperação de logs do delivery.
 
 * Fluxos de trabalho:
 
-   * início de um workflow,
-   * verificação de processos etc.
+  * início de um workflow,
+  * verificação de processos etc.
 
-     Consulte [Métodos do SOAP no JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+    Consulte [Métodos do SOAP no JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Gerenciamento de conteúdo
 * Gerenciamento de assinaturas, consulte [Assinar (nms:subscription)](#subscribe--nms-subscription-) e [Cancelar assinatura (nms:subscription)](#unsubscribe--nms-subscription-).
@@ -45,7 +42,7 @@ Esta seção detalha o uso dos serviços &quot;Assinar&quot;, &quot;Cancelar ass
 
 >[!IMPORTANT]
 >
->A [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
+>A [documentação do Campaign JSAPI](https://experienceleague.adobe.com/en/tools/campaign-api) contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
 
 ## Assinar (nms:subscription) {#subscribe--nms-subscription-}
 
@@ -70,7 +67,7 @@ Descrição do método &quot;subscribe&quot; no esquema &quot;nms:subscription&q
 </method>
 ```
 
-A definição da chave de reconciliação deve ser inserida por meio do atributo _&#x200B;**key** no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
+A definição da chave de reconciliação deve ser inserida por meio do atributo _**key** no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
 
 Esta chamada não retorna dados, exceto erros.
 

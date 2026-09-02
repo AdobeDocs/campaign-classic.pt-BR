@@ -6,21 +6,15 @@ description: Saiba como configurar a árvore de navegação do Campaign Explorer
 role: Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
 TQID: https://experienceleague.adobe.com/K2bUgEoNSbVfc5hs1O-V36yNrjUFKQEO00-clOYc5u4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2:
-  - id: efa38731-2723-4334-8d8b-a778af834835
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: efa38731-2723-4334-8d8b-a778af834835
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 1212
-ht-degree: 3%
+source-wordcount: 1210
+ht-degree: 2%
 
 ---
 
@@ -104,7 +98,7 @@ Os comandos são exibidos na mesma ordem declarada no documento XML.
 
 Um separador de comandos permite exibir uma barra de separação entre comandos. Ela é identificada pelo valor **&#39;-&#39;** contido no rótulo do comando.
 
-A presença opcional da marca **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre a API do SOAP, consulte a [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR).
+A presença opcional da marca **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre a API do SOAP, consulte a [documentação do Campaign JSAPI](https://experienceleague.adobe.com/en/tools/campaign-api).
 
 O contexto do formulário pode ser atualizado na inicialização a partir da marca **`<enter>`**. Para obter mais informações sobre essa tag, consulte a documentação nos formulários de entrada.
 
@@ -277,7 +271,7 @@ Os comandos são exibidos na mesma ordem declarada no documento XML.
 
 Um separador de comandos permite exibir uma barra de separação entre comandos. Ela é identificada pelo valor **&#39;-&#39;** contido no rótulo do comando.
 
-A presença opcional da marca **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre as APIs do SOAP, consulte a [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR).
+A presença opcional da marca **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre as APIs do SOAP, consulte a [documentação do Campaign JSAPI](https://experienceleague.adobe.com/en/tools/campaign-api).
 
 O contexto do formulário pode ser atualizado na inicialização por meio da marca **`<enter>`**. Para obter mais informações sobre essa tag, consulte a documentação do formulário de entrada.
 
