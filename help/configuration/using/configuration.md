@@ -104,7 +104,7 @@ Os comandos são exibidos na mesma ordem declarada no documento XML.
 
 Um separador de comandos permite exibir uma barra de separação entre comandos. Ela é identificada pelo valor **&#39;-&#39;** contido no rótulo do comando.
 
-A presença opcional da marca **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre a API do SOAP, consulte a [documentação do Campaign JSAPI](https://experienceleague.adobe.com/en/tools/campaign-api).
+A presença opcional da marca **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre a API do SOAP, consulte a [documentação do Campaign JSAPI](https://experienceleague.adobe.com/pt-br/tools/campaign-api).
 
 O contexto do formulário pode ser atualizado na inicialização a partir da marca **`<enter>`**. Para obter mais informações sobre essa tag, consulte a documentação nos formulários de entrada.
 
@@ -277,7 +277,7 @@ Os comandos são exibidos na mesma ordem declarada no documento XML.
 
 Um separador de comandos permite exibir uma barra de separação entre comandos. Ela é identificada pelo valor **&#39;-&#39;** contido no rótulo do comando.
 
-A presença opcional da marca **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre as APIs do SOAP, consulte a [documentação do Campaign JSAPI](https://experienceleague.adobe.com/en/tools/campaign-api).
+A presença opcional da marca **`<soapcall>`** com seus parâmetros de entrada define a chamada de um método SOAP a ser executado. Para obter mais informações sobre as APIs do SOAP, consulte a [documentação do Campaign JSAPI](https://experienceleague.adobe.com/pt-br/tools/campaign-api).
 
 O contexto do formulário pode ser atualizado na inicialização por meio da marca **`<enter>`**. Para obter mais informações sobre essa tag, consulte a documentação do formulário de entrada.
 

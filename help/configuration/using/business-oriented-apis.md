@@ -45,7 +45,7 @@ Esta seção detalha o uso dos serviços &quot;Assinar&quot;, &quot;Cancelar ass
 
 >[!IMPORTANT]
 >
->A [documentação do Campaign JSAPI](https://experienceleague.adobe.com/en/tools/campaign-api) contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
+>A [documentação do Campaign JSAPI](https://experienceleague.adobe.com/pt-br/tools/campaign-api) contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
 
 ## Assinar (nms:subscription) {#subscribe--nms-subscription-}
 

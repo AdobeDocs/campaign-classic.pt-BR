@@ -379,7 +379,7 @@ Você pode adicionar um campo de carregamento a uma página. Essa funcionalidade
 
 Para inserir um campo para fazer upload em uma página de formulário, selecione o menu **[!UICONTROL Advanced controls > File...]** na barra de ferramentas do editor de páginas.
 
-Por padrão, os arquivos carregados são armazenados em arquivos de recurso acessíveis por meio do menu **[!UICONTROL Resources > Online > Public resources]**. Você pode usar um script para alterar esse comportamento. Esse script pode usar as funções definidas na [documentação do Campaign JSAPI](https://experienceleague.adobe.com/en/tools/campaign-api), incluindo as que se referem à manipulação de arquivos.
+Por padrão, os arquivos carregados são armazenados em arquivos de recurso acessíveis por meio do menu **[!UICONTROL Resources > Online > Public resources]**. Você pode usar um script para alterar esse comportamento. Esse script pode usar as funções definidas na [documentação do Campaign JSAPI](https://experienceleague.adobe.com/pt-br/tools/campaign-api), incluindo as que se referem à manipulação de arquivos.
 
 Você pode armazenar o link para esses arquivos em uma variável local ou em um campo de banco de dados. Por exemplo, você pode estender o esquema de destinatários para adicionar um link a recursos baseados em arquivo.
 
