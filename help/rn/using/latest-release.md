@@ -7,24 +7,16 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 TQID: https://experienceleague.adobe.com/Xq9y8r6xU-hypq1Eeo9ijaiGng7qqkWVqiCXW5fYx2c
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: d1e083ac90731e9f55d64156fbd6038df3c4d432
 workflow-type: tm+mt
 source-wordcount: 1017
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +36,7 @@ _25 de agosto de 2026_
 
 A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que corrigem vulnerabilidades críticas. Recomendamos que os clientes em implantações locais e híbridas instalem as atualizações o mais rápido possível. As instâncias hospedadas pela Adobe já foram corrigidas e não exigem nenhuma ação do cliente. Você pode encontrar mais informações no [boletim de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb26-134.html){target="_blank"}.
 
-É necessário reiniciar o servidor do Adobe Campaign (nlserver) para carregar a compilação e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
+É necessário reiniciar o servidor do Adobe Campaign (nlserver) para carregar a build e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
 
 ### Build 9400 {#build-9400}
 
@@ -52,17 +44,17 @@ A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que c
 
 _11 de agosto de 2026_
 
-Esta build inclui várias melhorias de produto, correções de segurança e a atualização para a API do Adobe Analytics 2.0 para o conector do Adobe Analytics.
+Esta build inclui várias melhorias de produto, correções de segurança e a atualização do conector do Adobe Analytics para a API do Adobe Analytics 2.0.
 
 #### Melhorias de segurança {#security-7-4-4-9400}
 
 A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que corrigem vulnerabilidades críticas. Recomendamos que os clientes em implantações locais e híbridas instalem as atualizações o mais rápido possível. As instâncias hospedadas pela Adobe já foram corrigidas e não exigem nenhuma ação do cliente. Você pode encontrar mais informações no [boletim de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb26-123.html){target="_blank"}.
 
-É necessário reiniciar o servidor do Adobe Campaign (nlserver) para carregar a compilação e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
+É necessário reiniciar o servidor do Adobe Campaign (nlserver) para carregar a build e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
 
 #### Atualização do Adobe Analytics 2.0 {#analytics-2-0-7-4-4}
 
-As APIs do Adobe Analytics 1.4 estão chegando ao fim da vida útil. Se você usar o conector do Adobe Analytics, será necessário atualizar para esta build e concluir algumas etapas de migração, dependendo da implantação e do caso de uso. [Saiba como migrar para a API do Adobe Analytics 2.0](../../technotes/using/analytics-2-migration.md).
+As APIs do Adobe Analytics 1.4 estão chegando ao fim da vida útil. Se você usa o conector Adobe Analytics, deve atualizar para esta build e concluir algumas etapas de migração, dependendo da sua implantação e do caso de uso. [Saiba como migrar para a API do Adobe Analytics 2.0](../../technotes/using/analytics-2-migration.md).
 
 ## Versão 7.4.3 {#release-7-4-3}
 
