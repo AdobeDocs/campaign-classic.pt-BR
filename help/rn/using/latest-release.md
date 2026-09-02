@@ -24,7 +24,7 @@ subfeature_v2:
 source-git-commit: d1e083ac90731e9f55d64156fbd6038df3c4d432
 workflow-type: tm+mt
 source-wordcount: 1017
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ _25 de agosto de 2026_
 
 A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que corrigem vulnerabilidades críticas. Recomendamos que os clientes em implantações locais e híbridas instalem as atualizações o mais rápido possível. As instâncias hospedadas pela Adobe já foram corrigidas e não exigem nenhuma ação do cliente. Você pode encontrar mais informações no [boletim de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb26-134.html){target="_blank"}.
 
-É necessário reiniciar o servidor do Adobe Campaign (nlserver) para carregar a compilação e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
+É necessário reiniciar o servidor do Adobe Campaign (nlserver) para carregar a build e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
 
 ### Build 9400 {#build-9400}
 
@@ -52,17 +52,17 @@ A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que c
 
 _11 de agosto de 2026_
 
-Esta build inclui várias melhorias de produto, correções de segurança e a atualização para a API do Adobe Analytics 2.0 para o conector do Adobe Analytics.
+Esta build inclui várias melhorias de produto, correções de segurança e a atualização do conector do Adobe Analytics para a API do Adobe Analytics 2.0.
 
 #### Melhorias de segurança {#security-7-4-4-9400}
 
 A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que corrigem vulnerabilidades críticas. Recomendamos que os clientes em implantações locais e híbridas instalem as atualizações o mais rápido possível. As instâncias hospedadas pela Adobe já foram corrigidas e não exigem nenhuma ação do cliente. Você pode encontrar mais informações no [boletim de segurança](https://helpx.adobe.com/br/security/products/campaign/apsb26-123.html){target="_blank"}.
 
-É necessário reiniciar o servidor do Adobe Campaign (nlserver) para carregar a compilação e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
+É necessário reiniciar o servidor do Adobe Campaign (nlserver) para carregar a build e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
 
 #### Atualização do Adobe Analytics 2.0 {#analytics-2-0-7-4-4}
 
-As APIs do Adobe Analytics 1.4 estão chegando ao fim da vida útil. Se você usar o conector do Adobe Analytics, será necessário atualizar para esta build e concluir algumas etapas de migração, dependendo da implantação e do caso de uso. [Saiba como migrar para a API do Adobe Analytics 2.0](../../technotes/using/analytics-2-migration.md).
+As APIs do Adobe Analytics 1.4 estão chegando ao fim da vida útil. Se você usa o conector Adobe Analytics, deve atualizar para esta build e concluir algumas etapas de migração, dependendo da sua implantação e do caso de uso. [Saiba como migrar para a API do Adobe Analytics 2.0](../../technotes/using/analytics-2-migration.md).
 
 ## Versão 7.4.3 {#release-7-4-3}
 

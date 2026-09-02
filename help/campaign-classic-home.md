@@ -19,9 +19,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 7fd7a9e54183b456f06d8030c3d9425f275eabf5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 657
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Ado
 >[!BEGINTABS]
 
 
->[!TAB A versão de  agosto de 2026 está disponível!]
+>[!TAB A versão de agosto de 2026 está disponível.]
 
-A build do Campaign Classic v7.4.4 a agosto de 2026 fornece atualizações de segurança e atualiza o conector do Adobe Analytics para a API do Analytics 2.0.
+O Campaign Classic v7.4.4 — build de agosto de 2026 — traz atualizações de segurança e atualiza o conector Adobe Analytics para a API do Analytics 2.0.
 
 [![imagem](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -99,7 +99,7 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatização com fluxos de trabalho</a> – <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/set-up-campaigns" target="_blank">Campanha de marketing</a> – <a href="interaction/using/interaction-and-offer-management.md">Gestão e ofertas e interações</a> – <a href="delivery/using/about-personalization.md">Personalização</a> – <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Relatórios</a>
+      <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatização com fluxos de trabalho</a> – <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html" target="_blank">Campanha de marketing</a> – <a href="interaction/using/interaction-and-offer-management.md">Gestão e ofertas e interações</a> – <a href="delivery/using/about-personalization.md">Personalização</a> – <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Relatórios</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
@@ -128,4 +128,4 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
 
 ## Recursos adicionais
 
-[Descrição do produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Matriz de compatibilidade](rn/using/compatibility-matrix.md) - [Tutoriais](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} - [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"} - [Pixels de rastreamento de email e Orientação da CNIL](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}
+[Descrição do produto Adobe Campaign](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} – [Matriz de compatibilidade](rn/using/compatibility-matrix.md) – [Tutoriais](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR){target="_blank"} – [Painel de controle do Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR){target="_blank"} – [Pixels de rastreamento de email e orientações da CNIL](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}
