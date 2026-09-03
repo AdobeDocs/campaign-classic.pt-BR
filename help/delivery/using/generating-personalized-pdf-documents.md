@@ -66,7 +66,7 @@ O procedimento para gerar tabelas dinâmicas é da seguinte maneira:
 
 >[!IMPORTANT]
 >
->A versão 7.4.4 (build 9401) inclui uma atualização da lista de permissões de URL externa. Verifique se os domínios usados para imagens externas em seus anexos foram adicionados à lista de permissões aprovada da instância para que os recursos continuem a ser carregados sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
+>A versão 7.4.4 (build 9401) inclui uma atualização da lista de permissões de URL externa. Verifique se os domínios usados para imagens externas em seus anexos foram adicionados à lista de permissões aprovada da instância para que os recursos continuem a ser carregados sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
 
 A inserção de imagens externas é útil se, por exemplo, você deseja personalizar um documento com uma imagem cujo URL é inserido em um campo do destinatário.
 

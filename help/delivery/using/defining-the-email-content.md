@@ -82,7 +82,7 @@ Também é possível inserir emoticons na linha do assunto com a janela pop-up *
 
 >[!IMPORTANT]
 >
->A versão 7.4.4 (build 9401) inclui uma atualização da lista de permissões de URL externa. Verifique se os domínios usados no conteúdo da mensagem foram adicionados à lista de permissões aprovada da instância para que os recursos continuem a ser carregados sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
+>A versão 7.4.4 (build 9401) inclui uma atualização da lista de permissões de URL externa. Verifique se os domínios usados no conteúdo da mensagem foram adicionados à lista de permissões aprovada da instância para que os recursos continuem a ser carregados sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
 
 O conteúdo da mensagem é definido na seção inferior da janela de configuração de entrega.
 

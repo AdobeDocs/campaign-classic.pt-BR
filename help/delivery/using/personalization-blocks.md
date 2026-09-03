@@ -138,7 +138,7 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
 
 >[!IMPORTANT]
 >
->A versão 7.4.4 (build 9401) inclui uma atualização da lista de permissões de URL externa. Se um bloco de personalização personalizado referenciar uma URL externa (por exemplo, uma imagem hospedada externamente), verifique se o domínio foi adicionado à lista de permissões aprovada da instância para que o recurso continue a ser carregado sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
+>A versão 7.4.4 (build 9401) inclui uma atualização da lista de permissões de URL externa. Se um bloco de personalização personalizado referenciar uma URL externa (por exemplo, uma imagem hospedada externamente), verifique se o domínio foi adicionado à lista de permissões aprovada da instância para que o recurso continue a ser carregado sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
 
 Você pode definir novos campos de personalização que serão inseridos no ícone do campo personalizado por meio do menu **[!UICONTROL Include...]**. Esses campos são definidos em blocos de personalização.
 
