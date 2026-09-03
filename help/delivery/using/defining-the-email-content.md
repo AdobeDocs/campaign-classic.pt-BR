@@ -24,10 +24,10 @@ subfeature_v2:
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1981
-ht-degree: 100%
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
+workflow-type: tm+mt
+source-wordcount: 2051
+ht-degree: 96%
 
 ---
 
@@ -79,6 +79,10 @@ Também é possível inserir emoticons na linha do assunto com a janela pop-up *
 >[!IMPORTANT]
 >
 >Por motivos de privacidade, recomendamos usar HTTPS para todos os recursos externos.
+
+>[!IMPORTANT]
+>
+>A versão 7.4.4 (build 9401) inclui uma atualização da lista de permissões de URL externa. Verifique se os domínios usados no conteúdo da mensagem foram adicionados à lista de permissões aprovada da instância para que os recursos continuem a ser carregados sem interrupção. Como administrador do Campaign, use o Painel de controle do Campaign para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte [Adicionar permissões de URL](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} para ver as etapas.
 
 O conteúdo da mensagem é definido na seção inferior da janela de configuração de entrega.
 
