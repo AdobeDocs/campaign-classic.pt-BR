@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: c094a1fa9adf80708154b5532ae9fbeb18993b9f
-workflow-type: ht
-source-wordcount: 1792
-ht-degree: 100%
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
+workflow-type: tm+mt
+source-wordcount: 1787
+ht-degree: 99%
 
 ---
 
@@ -108,7 +108,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
     <tr>
   <td>Relatório de monitoramento técnico da avaliação da entrega<br></td>
    <td><p>O Relatório de monitoramento técnico da avaliação da entrega não está mais disponível. Ele foi descontinuado na versão 21.1.3 do Campaign.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -145,7 +145,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
    </tr>
    <tr>
    <td>Documentação das APIs do Campaign – arquivo jsapi.ch</td>
-   <td>A partir da versão 19.1 do Campaign, as APIs do Campaign Classic estarão disponíveis em uma página dedicada. Se estiver usando o arquivo jsapi.chm legado, agora deverá consultar a <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR">nova versão online</a>.</td>
+   <td>A partir da versão 19.1 do Campaign, as APIs do Campaign Classic estarão disponíveis em uma página dedicada. Se estiver usando o arquivo jsapi.chm legado, agora deverá consultar a <a href="https://experienceleague.adobe.com/pt-br/tools/campaign-api">nova versão online</a>.</td>
   </tr> 
   <tr> 
    <td>Orquestração de campanha – Marketing preditivo</td>
@@ -162,7 +162,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   <tr> 
    <td>API decryptString</td>
    <td><p>Começando pela versão 18.6 do Campaign, por motivos de segurança, a API <em>decryptString</em> não estará mais disponível por padrão nas novas instalações.</p> 
-   <p>No contexto de uma pós-atualização para 18.6 (e posterior), essa API não é mais ativada e foi substituída pela função <em>decryptPassword. </em> <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=pt-BR&hl=decrypt">Saiba mais</a></p></td>
+   <p>No contexto de uma pós-atualização para 18.6 (e posterior), essa API não é mais ativada e foi substituída pela função <em>decryptPassword. </em> <a href="https://experienceleague.adobe.com/pt-br/tools/campaign-api">Saiba mais</a></p></td>
   </tr> 
    <tr> 
    <td>Canal móvel - Mensagens de push MMS e WAP</td>
@@ -235,7 +235,7 @@ A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais co
 
 A Adobe não oferece suporte aos seguintes mecanismos de banco de dados, pois foram descontinuados pelo editor. Os clientes que executam essas versões precisam atualizar para a versão mais recente ou mudar para outra.
 
-Consulte a [Matriz de compatibilidade do Campaign ](../../rn/using/compatibility-matrix.md) para acessar a lista de versões compatíveis.
+Consulte a [Matriz de compatibilidade do Campaign &#x200B;](../../rn/using/compatibility-matrix.md) para acessar a lista de versões compatíveis.
 
 **FEDERATED DATA ACCESS (FDA)**
 

@@ -13,9 +13,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 665
+source-wordcount: 664
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ As APIs do Adobe Campaign são usadas no JavaScript dentro do aplicativo e no SO
 >[!IMPORTANT]
 >
 >O número de Chamadas do Engine autorizadas por dia varia de acordo com o contrato de licença. Para obter mais informações, consulte [esta página](https://helpx.adobe.com/br/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Uma lista de todas as APIs, incluindo sua descrição completa, está disponível em [esta documentação dedicada]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR.
+>Uma lista de todas as APIs incluindo sua descrição completa está disponível em [esta documentação dedicada]&#x200B;(https://experienceleague.adobe.com/pt-br/tools/campaign-api
 
 ## Pré-requisitos {#prerequisites}
 
@@ -144,10 +144,10 @@ O elemento `<soap-env:fault>` no corpo da mensagem SOAP é usado para transmitir
 
 * `<faultcode>` : indica o tipo de erro. Os tipos de erro são:
 
-   * &quot;VersionMismatch&quot; em caso de incompatibilidade com a versão do SOAP usada,
-   * &quot;MustUnderstand&quot; no caso de um problema no cabeçalho da mensagem,
-   * &quot;Client&quot; caso faltem algumas informações ao cliente,
-   * &quot;Server&quot; caso o servidor tenha um problema ao executar o processamento.
+  * &quot;VersionMismatch&quot; em caso de incompatibilidade com a versão do SOAP usada,
+  * &quot;MustUnderstand&quot; no caso de um problema no cabeçalho da mensagem,
+  * &quot;Client&quot; caso faltem algumas informações ao cliente,
+  * &quot;Server&quot; caso o servidor tenha um problema ao executar o processamento.
 
 * `<faultstring>` : mensagem descrevendo o erro
 * `<detail>` : mensagem de erro longa

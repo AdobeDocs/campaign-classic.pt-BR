@@ -13,10 +13,10 @@ subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
-source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
-workflow-type: ht
-source-wordcount: 193
-ht-degree: 100%
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
+workflow-type: tm+mt
+source-wordcount: 192
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Uma condição é uma expressão JavaScript que deve ser avaliada como &quot;ver
 
 ![](assets/edit_test.png)
 
-Para obter mais informações sobre todas as funções adicionais do JavaScript e métodos SOAP do servidor do aplicativo acessível via JavaScript de fluxo de trabalho, consulte a [documentação JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR).
+Para obter mais informações sobre todas as funções adicionais do JavaScript e métodos SOAP do servidor do aplicativo acessível via JavaScript de fluxo de trabalho, consulte a [documentação JSAPI](https://experienceleague.adobe.com/pt-br/tools/campaign-api).
 
 Também é possível inserir variáveis diretamente no editor. Para obter mais informações sobre como trabalhar com variáveis, consulte [esta seção](javascript-scripts-and-templates.md#variables).
 

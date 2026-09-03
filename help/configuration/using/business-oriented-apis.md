@@ -13,10 +13,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 3%
+source-wordcount: 624
+ht-degree: 2%
 
 ---
 
@@ -26,16 +26,16 @@ As APIs de negócios são específicas para cada tipo de objeto. Elas têm efeit
 
 * Entregas:
 
-   * Criando uma ação de entrega, consulte [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
-   * enviar uma campanha (iniciar, pausar, parar, enviar prova),
-   * recuperação de logs do delivery.
+  * Criando uma ação de entrega, consulte [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
+  * enviar uma campanha (iniciar, pausar, parar, enviar prova),
+  * recuperação de logs do delivery.
 
 * Fluxos de trabalho:
 
-   * início de um workflow,
-   * verificação de processos etc.
+  * início de um workflow,
+  * verificação de processos etc.
 
-     Consulte [Métodos do SOAP no JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+    Consulte [Métodos do SOAP no JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Gerenciamento de conteúdo
 * Gerenciamento de assinaturas, consulte [Assinar (nms:subscription)](#subscribe--nms-subscription-) e [Cancelar assinatura (nms:subscription)](#unsubscribe--nms-subscription-).
@@ -45,7 +45,7 @@ Esta seção detalha o uso dos serviços &quot;Assinar&quot;, &quot;Cancelar ass
 
 >[!IMPORTANT]
 >
->A [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR) contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
+>A [documentação do Campaign JSAPI](https://experienceleague.adobe.com/pt-br/tools/campaign-api) contém informações adicionais sobre chamadas SOAP e uso do Javascript no Adobe Campaign, bem como uma referência completa a todos os métodos e funções usados no aplicativo.
 
 ## Assinar (nms:subscription) {#subscribe--nms-subscription-}
 

@@ -19,10 +19,10 @@ subfeature_v2:
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 662
-ht-degree: 100%
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
+workflow-type: tm+mt
+source-wordcount: 659
+ht-degree: 99%
 
 ---
 
@@ -68,7 +68,7 @@ A API JS **[!UICONTROL CreateRequestByName]** é definida da seguinte maneira.
 
 ## Chamada de API externamente {#invoking-api-externally}
 
-Este é um exemplo de como chamar a API externamente (autenticação por meio da API e detalhes específicos sobre a API de privacidade). Para obter mais informações sobre a API de privacidade, consulte a [documentação da API](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html?lang=pt-BR). Você também pode consultar a [documentação de chamadas de serviço da web](../../configuration/using/web-service-calls.md).
+Este é um exemplo de como chamar a API externamente (autenticação por meio da API e detalhes específicos sobre a API de privacidade). Para obter mais informações sobre a API de privacidade, consulte a [documentação da API](https://experienceleague.adobe.com/pt-br/tools/campaign-api). Você também pode consultar a [documentação de chamadas de serviço da web](../../configuration/using/web-service-calls.md).
 
 Primeiro, é necessário executar a autenticação por meio da API:
 

@@ -17,10 +17,10 @@ subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 2373
-ht-degree: 100%
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
+workflow-type: tm+mt
+source-wordcount: 2399
+ht-degree: 99%
 
 ---
 
@@ -230,8 +230,8 @@ Adicione a mesma quantidade de botões de opção que houver de rótulos. A vant
 
 >[!NOTE]
 >
->Não é possível habilitar a seleção múltipla em um aplicativo web.
->No entanto, é possível inserir um campo do tipo **[!UICONTROL Multiple choice]** em um aplicativo web, mas isso não permitirá que o usuário selecione vários valores.
+>Não é possível habilitar a seleção múltipla em um aplicativo Web.
+>No entanto, é possível inserir um campo do tipo **[!UICONTROL Multiple choice]** em um aplicativo Web, mas isso não permitirá que o usuário selecione vários valores.
 
 ## Adição de grades {#adding-grids}
 
@@ -379,7 +379,7 @@ Você pode adicionar um campo de carregamento a uma página. Essa funcionalidade
 
 Para inserir um campo para fazer upload em uma página de formulário, selecione o menu **[!UICONTROL Advanced controls > File...]** na barra de ferramentas do editor de páginas.
 
-Por padrão, os arquivos carregados são armazenados em arquivos de recurso acessíveis por meio do menu **[!UICONTROL Resources > Online > Public resources]**. Você pode usar um script para alterar esse comportamento. Esse script pode usar as funções definidas na [documentação do Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=pt-BR), incluindo as que se referem à manipulação de arquivos.
+Por padrão, os arquivos carregados são armazenados em arquivos de recurso acessíveis por meio do menu **[!UICONTROL Resources > Online > Public resources]**. Você pode usar um script para alterar esse comportamento. Esse script pode usar as funções definidas na [documentação do Campaign JSAPI](https://experienceleague.adobe.com/pt-br/tools/campaign-api), incluindo as que se referem à manipulação de arquivos.
 
 Você pode armazenar o link para esses arquivos em uma variável local ou em um campo de banco de dados. Por exemplo, você pode estender o esquema de destinatários para adicionar um link a recursos baseados em arquivo.
 
