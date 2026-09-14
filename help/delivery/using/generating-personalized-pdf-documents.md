@@ -47,8 +47,8 @@
 <target xml:lang="en-XX">Para personalizar seus documentos, as mesmas funcionalidades JavaScript de personalização de email estão disponíveis.</target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
-<source xml:lang="en-US">You need to activate the <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**</ph> option. This option is accessible when you attach the file to the delivery email. For more on attaching a calculated file, refer the <ph id="4" ctype="x-LINK">[</ph>Campaign v8 documentation<ph id="5" ctype="x-LINK">[#$tu11]{target="_blank"}</ph>.</source>
-<target xml:lang="en-XX">É necessário ativar a opção <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**</ph>. Essa opção é acessível quando você anexa o arquivo ao email de entrega. Para obter mais informações sobre como anexar um arquivo calculado, consulte a <ph id="4" ctype="x-LINK">[</ph>documentação do Campaign v8<ph id="5" ctype="x-LINK">[#$tu11]{target="_blank"}</ph>.</target>
+<source xml:lang="en-US">You need to activate the <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**</ph> option. This option is accessible when you attach the file to the delivery email. For more on attaching a calculated file, refer the <ph id="4" ctype="x-LINK">&lbrack;</ph>Campaign v8 documentation<ph id="5" ctype="x-LINK">[#$tu11]{target="_blank"}</ph>.</source>
+<target xml:lang="en-XX">É necessário ativar a opção <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**</ph>. Essa opção é acessível quando você anexa o arquivo ao email de entrega. Para obter mais informações sobre como anexar um arquivo calculado, consulte a <ph id="4" ctype="x-LINK">&lbrack;</ph>documentação do Campaign v8<ph id="5" ctype="x-LINK">[#$tu11]{target="_blank"}</ph>.</target>
 </trans-unit>
 <trans-unit id="tu12" xml:space="preserve">
 <source xml:lang="en-US">Example of an invoice header personalization:</source>
@@ -103,12 +103,12 @@
 <target xml:lang="en-XX">Inserir imagens externas</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!IMPORTANT">[!IMPORTANT]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!IMPORTANT">[!IMPORTANT]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!IMPORTANT">[!IMPORTANT]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!IMPORTANT">[!IMPORTANT]</ph></target>
 </trans-unit>
 <trans-unit id="tu26" xml:space="preserve">
-<source xml:lang="en-US">Release 7.4.4 (build 9401) includes an update to the external URL allow list. Make sure the domains used for external images in your attachments are added to your instance's approved allow list so that resources continue to load without interruption. As a Campaign Administrator, use the Control Panel to add and manage allow-listed URLs. See <ph id="1" ctype="x-LINK">[</ph>Add URL permissions<ph id="2" ctype="x-LINK">[#$tu27]{target="_blank"}</ph> for steps.</source>
-<target xml:lang="en-XX">A versão 7.4.4 (build 9401) inclui uma atualização da lista de permissões de URL externo. Verifique se os domínios usados para imagens externas em seus anexos foram adicionados à lista de permissões aprovada da instância para que os recursos continuem sendo carregados sem interrupção. Como administrador do Campaign, use o Painel de controle para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte <ph id="1" ctype="x-LINK">[</ph>Adicionar permissões de URL<ph id="2" ctype="x-LINK">[#$tu27]{target="_blank"}</ph> para ver as etapas.</target>
+<source xml:lang="en-US">Release 7.4.4 (build 9401) includes an update to the external URL allow list. Make sure the domains used for external images in your attachments are added to your instance's approved allow list so that resources continue to load without interruption. As a Campaign Administrator, use the Control Panel to add and manage allow-listed URLs. See <ph id="1" ctype="x-LINK">&lbrack;</ph>Add URL permissions<ph id="2" ctype="x-LINK">[#$tu27]{target="_blank"}</ph> for steps.</source>
+<target xml:lang="en-XX">A versão 7.4.4 (build 9401) inclui uma atualização da lista de permissões de URL externo. Verifique se os domínios usados para imagens externas em seus anexos foram adicionados à lista de permissões aprovada da instância para que os recursos continuem sendo carregados sem interrupção. Como administrador do Campaign, use o Painel de controle para adicionar e gerenciar URLs incluídos na lista de permissões. Consulte <ph id="1" ctype="x-LINK">&lbrack;</ph>Adicionar permissões de URL<ph id="2" ctype="x-LINK">[#$tu27]{target="_blank"}</ph> para ver as etapas.</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
 <source xml:lang="en-US">The insertion of external images is useful if, for instance, you want to personalize a document with an image whose URL is entered in a field of the recipient.</source>

@@ -67,8 +67,8 @@
 <target xml:lang="en-XX">Interagir com o banco de dados usando um método SOAP não estático</target>
 </trans-unit>
 <trans-unit id="tu9" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-LINK">[</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu10]</ph> about static and non-static SOAP methods.</source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[</ph>Saiba mais<ph id="2" ctype="x-LINK">[#$tu10]</ph> sobre métodos SOAP estáticos e não estáticos.</target>
+<source xml:lang="en-US"><ph id="1" ctype="x-LINK">&lbrack;</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu10]</ph> about static and non-static SOAP methods.</source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">&lbrack;</ph>Saiba mais<ph id="2" ctype="x-LINK">[#$tu10]</ph> sobre métodos SOAP estáticos e não estáticos.</target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en-US">In these examples, the ECMAScript for XML (E4X) extension is used. With this extension, you can combine JavaScript calls and XML primitives in the same script.</source>
@@ -139,14 +139,14 @@
 <target xml:lang="en-XX">Chame o método <ph id="1" ctype="x-CODE">`Write`</ph> no esquema <ph id="2" ctype="x-CODE">`xtk:session`</ph>.</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!IMPORTANT">[!IMPORTANT]</ph>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!IMPORTANT">[!IMPORTANT]</ph>
 </source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!IMPORTANT">[!IMPORTANT]</ph>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!IMPORTANT">[!IMPORTANT]</ph>
 </target>
 </trans-unit>
 <trans-unit id="tu29" xml:space="preserve">
-<source xml:lang="en-US">If you use Adobe Campaign v8, we recommend that you use the staging mechanism with the <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Ingestion<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph> and <ph id="3" ctype="x-STRONG_EMPHASIS">**</ph>Data update/delete<ph id="4" ctype="x-STRONG_EMPHASIS">**</ph> APIs for the <ph id="5" ctype="x-CODE">`Write`</ph> method in a Snowflake table. <ph id="6" ctype="x-LINK">[</ph>Read more<ph id="7" ctype="x-LINK">[#$tu30]{target="_blank"}</ph>.</source>
-<target xml:lang="en-XX">Se estiver usando o Adobe Campaign v8, recomendamos o uso do mecanismo de preparo com as APIs de <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Ingestão<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph> e <ph id="3" ctype="x-STRONG_EMPHASIS">**</ph>Atualização/exclusão de dados<ph id="4" ctype="x-STRONG_EMPHASIS">**</ph> para o método <ph id="5" ctype="x-CODE">`Write`</ph> em uma tabela Snowflake. <ph id="6" ctype="x-LINK">[</ph>Leia mais<ph id="7" ctype="x-LINK">[#$tu30]{target="_blank"}</ph>.</target>
+<source xml:lang="en-US">If you use Adobe Campaign v8, we recommend that you use the staging mechanism with the <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Ingestion<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph> and <ph id="3" ctype="x-STRONG_EMPHASIS">**</ph>Data update/delete<ph id="4" ctype="x-STRONG_EMPHASIS">**</ph> APIs for the <ph id="5" ctype="x-CODE">`Write`</ph> method in a Snowflake table. <ph id="6" ctype="x-LINK">&lbrack;</ph>Read more<ph id="7" ctype="x-LINK">[#$tu30]{target="_blank"}</ph>.</source>
+<target xml:lang="en-XX">Se estiver usando o Adobe Campaign v8, recomendamos o uso do mecanismo de preparo com as APIs de <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Ingestão<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph> e <ph id="3" ctype="x-STRONG_EMPHASIS">**</ph>Atualização/exclusão de dados<ph id="4" ctype="x-STRONG_EMPHASIS">**</ph> para o método <ph id="5" ctype="x-CODE">`Write`</ph> em uma tabela Snowflake. <ph id="6" ctype="x-LINK">&lbrack;</ph>Leia mais<ph id="7" ctype="x-LINK">[#$tu30]{target="_blank"}</ph>.</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
 <source xml:lang="en-US">Pass the XML code as an argument for the write request.</source>
@@ -217,8 +217,8 @@
 <target xml:lang="en-XX">Excluir um registro</target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
-<source xml:lang="en-US">Use the <ph id="1" ctype="x-CODE">`DeleteCollection`</ph> method. <ph id="2" ctype="x-LINK">[</ph>Learn more<ph id="3" ctype="x-LINK">[#$tu49]</ph>.</source>
-<target xml:lang="en-XX">Use o método <ph id="1" ctype="x-CODE">`DeleteCollection`</ph>. <ph id="2" ctype="x-LINK">[</ph>Saiba mais<ph id="3" ctype="x-LINK">[#$tu49]</ph>.</target>
+<source xml:lang="en-US">Use the <ph id="1" ctype="x-CODE">`DeleteCollection`</ph> method. <ph id="2" ctype="x-LINK">&lbrack;</ph>Learn more<ph id="3" ctype="x-LINK">[#$tu49]</ph>.</source>
+<target xml:lang="en-XX">Use o método <ph id="1" ctype="x-CODE">`DeleteCollection`</ph>. <ph id="2" ctype="x-LINK">&lbrack;</ph>Saiba mais<ph id="3" ctype="x-LINK">[#$tu49]</ph>.</target>
 </trans-unit>
 <trans-unit id="tu50" xml:space="preserve">
 <source xml:lang="en-US">Specify this information:</source>
@@ -257,8 +257,8 @@
 <target xml:lang="en-XX">Este vídeo mostra como gravar no banco de dados:</target>
 </trans-unit>
 <trans-unit id="tu59" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18472/?learn=on)</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18472/?learn=on)</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18472/?learn=on)</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18472/?learn=on)</ph></target>
 </trans-unit>
 <trans-unit id="tu60" xml:space="preserve">
 <source xml:lang="en-US">Example 2: query the database</source>
@@ -453,8 +453,8 @@
 <target xml:lang="en-XX">Para repetir os resultados, use o loop <ph id="1" ctype="x-CODE">`for each`</ph>:</target>
 </trans-unit>
 <trans-unit id="tu108" xml:space="preserve">
-<source xml:lang="en-US">The loop includes a local recipient variable. For each recipient that is returned in the collection of recipients, the recipient's email is printed out. <ph id="1" ctype="x-LINK">[</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu109]</ph> about the <ph id="3" ctype="x-CODE">`logInfo`</ph> function.</source>
-<target xml:lang="en-XX">O loop inclui uma variável de destinatário local. Para cada destinatário que é retornado na coleção de destinatários, o email do destinatário é impresso. <ph id="1" ctype="x-LINK">[</ph>Saiba mais<ph id="2" ctype="x-LINK">[#$tu109]</ph> sobre a função <ph id="3" ctype="x-CODE">`logInfo`</ph>.</target>
+<source xml:lang="en-US">The loop includes a local recipient variable. For each recipient that is returned in the collection of recipients, the recipient's email is printed out. <ph id="1" ctype="x-LINK">&lbrack;</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu109]</ph> about the <ph id="3" ctype="x-CODE">`logInfo`</ph> function.</source>
+<target xml:lang="en-XX">O loop inclui uma variável de destinatário local. Para cada destinatário que é retornado na coleção de destinatários, o email do destinatário é impresso. <ph id="1" ctype="x-LINK">&lbrack;</ph>Saiba mais<ph id="2" ctype="x-LINK">[#$tu109]</ph> sobre a função <ph id="3" ctype="x-CODE">`logInfo`</ph>.</target>
 </trans-unit>
 <trans-unit id="tu110" xml:space="preserve">
 <source xml:lang="en-US">Results of a <ph id="1" ctype="x-CODE">`getIfExists`</ph> operation</source>
@@ -485,8 +485,8 @@
 <target xml:lang="en-XX">Se não houver correspondência, um erro será retornado.</target>
 </trans-unit>
 <trans-unit id="tu117" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!TIP">[!TIP]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!TIP">[!TIP]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TIP">[!TIP]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TIP">[!TIP]</ph></target>
 </trans-unit>
 <trans-unit id="tu118" xml:space="preserve">
 <source xml:lang="en-US">If you know that there is a match, use the <ph id="1" ctype="x-CODE">`get`</ph> operation. Otherwise, use the <ph id="2" ctype="x-CODE">`getIfExists`</ph> operation. If you use this best practice, then errors reveal unexpected problems. If you use the <ph id="3" ctype="x-CODE">`get`</ph> operation, do not use the <ph id="4" ctype="x-CODE">`try…catch`</ph> statement. The problem is handled by the error handling process of the workflow.</source>
@@ -517,8 +517,8 @@
 <target xml:lang="en-XX">Este vídeo mostra como ler a partir do banco de dados:</target>
 </trans-unit>
 <trans-unit id="tu125" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18475/?learn=on)</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18475/?learn=on)</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18475/?learn=on)</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18475/?learn=on)</ph></target>
 </trans-unit>
 <trans-unit id="tu126" xml:space="preserve">
 <source xml:lang="en-US">Trigger a workflow</source>
@@ -533,8 +533,8 @@
 <target xml:lang="en-XX">O acionamento do fluxo de trabalho funciona por meio do uso de eventos. É possível usar estes recursos para eventos:</target>
 </trans-unit>
 <trans-unit id="tu129" xml:space="preserve">
-<source xml:lang="en-US">To post an event, you can use the static <ph id="1" ctype="x-CODE">`PostEvent`</ph> method. <ph id="2" ctype="x-LINK">[</ph>Learn more<ph id="3" ctype="x-LINK">[#$tu130]</ph>.</source>
-<target xml:lang="en-XX">Para publicar um evento, é possível usar o método estático <ph id="1" ctype="x-CODE">`PostEvent`</ph>. <ph id="2" ctype="x-LINK">[</ph>Saiba mais<ph id="3" ctype="x-LINK">[#$tu130]</ph>.</target>
+<source xml:lang="en-US">To post an event, you can use the static <ph id="1" ctype="x-CODE">`PostEvent`</ph> method. <ph id="2" ctype="x-LINK">&lbrack;</ph>Learn more<ph id="3" ctype="x-LINK">[#$tu130]</ph>.</source>
+<target xml:lang="en-XX">Para publicar um evento, é possível usar o método estático <ph id="1" ctype="x-CODE">`PostEvent`</ph>. <ph id="2" ctype="x-LINK">&lbrack;</ph>Saiba mais<ph id="3" ctype="x-LINK">[#$tu130]</ph>.</target>
 </trans-unit>
 <trans-unit id="tu131" xml:space="preserve">
 <source xml:lang="en-US">To receive an event, you can use the <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL External signal]**</ph> activity. <ph id="4" ctype="x-LINK">[</ph>Learn more<ph id="5" ctype="x-LINK">](external-signal.md)</ph>.</source>
@@ -565,8 +565,8 @@
 <target xml:lang="en-XX">Após a conclusão do fluxo de trabalho inicial, um evento é postado. A transição de saída é ativada e as variáveis do evento são preenchidas. Em seguida, o evento é recebido pelo fluxo de trabalho desejado.</target>
 </trans-unit>
 <trans-unit id="tu138" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!TIP">[!TIP]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!TIP">[!TIP]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TIP">[!TIP]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TIP">[!TIP]</ph></target>
 </trans-unit>
 <trans-unit id="tu139" xml:space="preserve">
 <source xml:lang="en-US">As a best practice, when you add a script to an activity, enclose the activity name in double hyphens, for example, <ph id="1" ctype="x-CODE">`-- end --`</ph>. <ph id="2" ctype="x-LINK">[</ph>Learn more<ph id="3" ctype="x-LINK">](workflow-best-practices.md)</ph> about workflow best practices.</source>
@@ -609,16 +609,16 @@
 <target xml:lang="en-XX">Este vídeo mostra como usar métodos de API estáticos:</target>
 </trans-unit>
 <trans-unit id="tu149" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18481/?learn=on)</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18481/?learn=on)</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18481/?learn=on)</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18481/?learn=on)</ph></target>
 </trans-unit>
 <trans-unit id="tu150" xml:space="preserve">
 <source xml:lang="en-US">This video shows how to trigger workflows:</source>
 <target xml:lang="en-XX">Este vídeo mostra como acionar fluxos de trabalho:</target>
 </trans-unit>
 <trans-unit id="tu151" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18485/?learn=on)</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18485/?learn=on)</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18485/?learn=on)</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18485/?learn=on)</ph></target>
 </trans-unit>
 <trans-unit id="tu152" xml:space="preserve">
 <source xml:lang="en-US">Interact with the database</source>
@@ -649,16 +649,16 @@
 <target xml:lang="en-XX">Defina a consulta:</target>
 </trans-unit>
 <trans-unit id="tu159" xml:space="preserve">
-<source xml:lang="en-US">Retrieve an entity by using the <ph id="1" ctype="x-CODE">`create`</ph> method on the corresponding schema—for example, the <ph id="2" ctype="x-CODE">`xtk:workflow`</ph> schema. <ph id="3" ctype="x-LINK">[</ph>Learn more<ph id="4" ctype="x-LINK">[#$tu160]</ph>.</source>
-<target xml:lang="en-XX">Recupere uma entidade usando o método <ph id="1" ctype="x-CODE">`create`</ph> no schema correspondente, como por exemplo, o schema <ph id="2" ctype="x-CODE">`xtk:workflow`</ph>. <ph id="3" ctype="x-LINK">[</ph>Saiba mais<ph id="4" ctype="x-LINK">[#$tu160]</ph>.</target>
+<source xml:lang="en-US">Retrieve an entity by using the <ph id="1" ctype="x-CODE">`create`</ph> method on the corresponding schema—for example, the <ph id="2" ctype="x-CODE">`xtk:workflow`</ph> schema. <ph id="3" ctype="x-LINK">&lbrack;</ph>Learn more<ph id="4" ctype="x-LINK">[#$tu160]</ph>.</source>
+<target xml:lang="en-XX">Recupere uma entidade usando o método <ph id="1" ctype="x-CODE">`create`</ph> no schema correspondente, como por exemplo, o schema <ph id="2" ctype="x-CODE">`xtk:workflow`</ph>. <ph id="3" ctype="x-LINK">&lbrack;</ph>Saiba mais<ph id="4" ctype="x-LINK">[#$tu160]</ph>.</target>
 </trans-unit>
 <trans-unit id="tu161" xml:space="preserve">
 <source xml:lang="en-US">Use the <ph id="1" ctype="x-CODE">`queryDef`</ph> method to issue an SQL query.</source>
 <target xml:lang="en-XX">Use o método <ph id="1" ctype="x-CODE">`queryDef`</ph> para emitir uma consulta SQL.</target>
 </trans-unit>
 <trans-unit id="tu162" xml:space="preserve">
-<source xml:lang="en-US">Run the query using the <ph id="1" ctype="x-CODE">`ExecuteQuery`</ph> method. <ph id="2" ctype="x-LINK">[</ph>Learn more<ph id="3" ctype="x-LINK">[#$tu163]</ph>.</source>
-<target xml:lang="en-XX">Execute a consulta usando o método <ph id="1" ctype="x-CODE">`ExecuteQuery`</ph>. <ph id="2" ctype="x-LINK">[</ph>Saiba mais<ph id="3" ctype="x-LINK">[#$tu163]</ph>.</target>
+<source xml:lang="en-US">Run the query using the <ph id="1" ctype="x-CODE">`ExecuteQuery`</ph> method. <ph id="2" ctype="x-LINK">&lbrack;</ph>Learn more<ph id="3" ctype="x-LINK">[#$tu163]</ph>.</source>
+<target xml:lang="en-XX">Execute a consulta usando o método <ph id="1" ctype="x-CODE">`ExecuteQuery`</ph>. <ph id="2" ctype="x-LINK">&lbrack;</ph>Saiba mais<ph id="3" ctype="x-LINK">[#$tu163]</ph>.</target>
 </trans-unit>
 <trans-unit id="tu164" xml:space="preserve">
 <source xml:lang="en-US">Use the <ph id="1" ctype="x-CODE">`for each`</ph> loop to retrieve the results.</source>
@@ -721,14 +721,14 @@
 <target xml:lang="en-XX">A operação <ph id="1" ctype="x-CODE">`delete`</ph></target>
 </trans-unit>
 <trans-unit id="tu179" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!IMPORTANT">[!IMPORTANT]</ph>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!IMPORTANT">[!IMPORTANT]</ph>
 </source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!IMPORTANT">[!IMPORTANT]</ph>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!IMPORTANT">[!IMPORTANT]</ph>
 </target>
 </trans-unit>
 <trans-unit id="tu180" xml:space="preserve">
-<source xml:lang="en-US">If you use Adobe Campaign v8, we recommend that you use the staging mechanism with the <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Ingestion<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph> and <ph id="3" ctype="x-STRONG_EMPHASIS">**</ph>Data update/delete<ph id="4" ctype="x-STRONG_EMPHASIS">**</ph> APIs for the <ph id="5" ctype="x-CODE">`Write`</ph> method in a Snowflake table. <ph id="6" ctype="x-LINK">[</ph>Read more<ph id="7" ctype="x-LINK">[#$tu181]{target="_blank"}</ph>.</source>
-<target xml:lang="en-XX">Caso utilize o Adobe Campaign v8, recomendamos utilizar o mecanismo de preparo com as APIs de <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Ingestão<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph> e <ph id="3" ctype="x-STRONG_EMPHASIS">**</ph>Atualização/exclusão de dados<ph id="4" ctype="x-STRONG_EMPHASIS">**</ph> para o método <ph id="5" ctype="x-CODE">`Write`</ph> em uma tabela Snowflake. <ph id="6" ctype="x-LINK">[</ph>Leia mais<ph id="7" ctype="x-LINK">[#$tu181]{target="_blank"}</ph>.</target>
+<source xml:lang="en-US">If you use Adobe Campaign v8, we recommend that you use the staging mechanism with the <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Ingestion<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph> and <ph id="3" ctype="x-STRONG_EMPHASIS">**</ph>Data update/delete<ph id="4" ctype="x-STRONG_EMPHASIS">**</ph> APIs for the <ph id="5" ctype="x-CODE">`Write`</ph> method in a Snowflake table. <ph id="6" ctype="x-LINK">&lbrack;</ph>Read more<ph id="7" ctype="x-LINK">[#$tu181]{target="_blank"}</ph>.</source>
+<target xml:lang="en-XX">Caso utilize o Adobe Campaign v8, recomendamos utilizar o mecanismo de preparo com as APIs de <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Ingestão<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph> e <ph id="3" ctype="x-STRONG_EMPHASIS">**</ph>Atualização/exclusão de dados<ph id="4" ctype="x-STRONG_EMPHASIS">**</ph> para o método <ph id="5" ctype="x-CODE">`Write`</ph> em uma tabela Snowflake. <ph id="6" ctype="x-LINK">&lbrack;</ph>Leia mais<ph id="7" ctype="x-LINK">[#$tu181]{target="_blank"}</ph>.</target>
 </trans-unit>
 <trans-unit id="tu182" xml:space="preserve">
 <source xml:lang="en-US">Example 1: insert or update a record</source>
@@ -747,16 +747,16 @@
 <target xml:lang="en-XX">Este vídeo mostra como usar métodos de API não estáticos:</target>
 </trans-unit>
 <trans-unit id="tu186" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18477/?learn=on)</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18477/?learn=on)</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18477/?learn=on)</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18477/?learn=on)</ph></target>
 </trans-unit>
 <trans-unit id="tu187" xml:space="preserve">
 <source xml:lang="en-US">This video shows an example of use of a non-static API method in a workflow:</source>
 <target xml:lang="en-XX">Este vídeo mostra um exemplo de uso de um método de API não estático em um fluxo de trabalho:</target>
 </trans-unit>
 <trans-unit id="tu188" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18476/?learn=on)</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18476/?learn=on)</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18476/?learn=on)</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/18476/?learn=on)</ph></target>
 </trans-unit>
 <trans-unit id="tu189" xml:space="preserve">
 <source xml:lang="en-US">Related topics</source>
