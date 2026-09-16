@@ -8,25 +8,33 @@ exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
 TQID: https://experienceleague.adobe.com/ktbzQKuNSjctRAyH-hbZyYajuoZFJy4Yt01y34X-tnk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+    internal-label: Triggers
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1038
-ht-degree: 20%
-
+source-wordcount: '1054'
+ht-degree: 17%
 ---
-
 # Atualizar para o novo servidor de avaliação do delivery {#acc-deliverability}
 
 A partir da [v7.2.2 versão](../../rn/using/latest-release.md#release-7-2-2), a Adobe Campaign conta com um novo servidor de entrega que oferece alta disponibilidade e resolve problemas de conformidade de segurança. O Campaign Classic agora sincroniza as regras de capacidade de entrega, broadlogs e o endereço de supressão de e para o novo servidor de capacidade de entrega. O servidor de entrega antigo será descontinuado em 31 de agosto de 2022.
@@ -64,7 +72,7 @@ Como parte da nova integração do servidor de entrega, o Campaign precisa se co
 
 >[!AVAILABILITY]
 >
-> A credencial de conta de serviço (JWT) está sendo descontinuada pela Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem usar a credencial de servidor para servidor OAuth. </br>
+> A credencial Conta de serviço (JWT) está sendo substituída pela Adobe. As integrações do Campaign com as soluções e os aplicativos da Adobe agora devem depender da credencial servidor para servidor do OAuth. </br>
 >
 > * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As [credenciais da Conta de Serviço (JWT)](../../integrations/using/oauth-technical-account.md) existentes continuarão a funcionar até 27 de janeiro de 2025. </br>
 >
@@ -87,9 +95,9 @@ Como cliente local, você também deve verificar se uma Campanha **[!UICONTROL P
 
 1. Como Administrador, conecte-se ao [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Acesse a seção **Produtos e Serviços** e verifique se o **Adobe Campaign** está listado.
-Se você não conseguir ver o **Adobe Campaign**, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
+Se você não conseguir ver o **Adobe Campaign**, contate o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
 1. Clique em **Adobe Campaign** e selecione sua Organização.
-   **Atenção**: se você tiver mais de uma organização, certifique-se de selecionar a correta. Saiba mais sobre as Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR#ims-org-id){_blank}.
+   **Atenção**: se você tiver mais de uma organização, certifique-se de selecionar a correta. Saiba mais sobre as Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
 1. Verifique se **[!UICONTROL Product profile]** existe. Caso contrário, crie-o. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**.
 

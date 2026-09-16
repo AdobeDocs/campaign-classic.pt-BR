@@ -8,18 +8,19 @@ exl-id: e6638870-3141-4f12-b904-db436127c0d1
 TQID: https://experienceleague.adobe.com/lPAawM33zS2tws0EyHFHW1jD-Vw3ZLDtDcMEd1eJA1c
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 subfeature_v2: []
 source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 624
-ht-degree: 2%
-
+source-wordcount: '624'
+ht-degree: 3%
 ---
-
 # APIs direcionadas por empresas{#business-oriented-apis}
 
 As APIs de negócios são específicas para cada tipo de objeto. Elas têm efeito em:
@@ -70,7 +71,7 @@ Descrição do método &quot;subscribe&quot; no esquema &quot;nms:subscription&q
 </method>
 ```
 
-A definição da chave de reconciliação deve ser inserida por meio do atributo _&#x200B;**key** no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
+A definição da chave de reconciliação deve ser inserida por meio do atributo _**key** no elemento `<recipient>` do documento XML. O conteúdo desse atributo é uma lista XPath separada por vírgulas.
 
 Esta chamada não retorna dados, exceto erros.
 

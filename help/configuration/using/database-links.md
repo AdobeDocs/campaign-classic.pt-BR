@@ -8,17 +8,17 @@ exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
 TQID: https://experienceleague.adobe.com/0kiRwyal2yxHRjRNkPCNY2zsulDvbC3FWcJZ49Ynmkw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 932
+source-wordcount: '935'
 ht-degree: 2%
-
 ---
-
 # Gerenciamento de link {#links--relation-between-tables}
 
 Um link descreve a associação entre uma tabela e outra.
@@ -58,23 +58,23 @@ Os links obedecem às seguintes regras:
 
 * A definição de um link é inserida em um **link**-tipo **`<element>`** com os seguintes atributos:
 
-   * **nome**: nome do link da tabela de origem
-   * **target**: nome do esquema de destino
-   * **rótulo**: rótulo do link
-   * **revLink** (opcional): nome do link reverso do esquema de destino (deduzido automaticamente por padrão)
-   * **integridade** (opcional): integridade referencial da ocorrência da tabela de origem em relação à ocorrência da tabela de destino.
-Os valores possíveis são:
+  * **nome**: nome do link da tabela de origem
+  * **target**: nome do esquema de destino
+  * **rótulo**: rótulo do link
+  * **revLink** (opcional): nome do link reverso do esquema de destino (deduzido automaticamente por padrão)
+  * **integridade** (opcional): integridade referencial da ocorrência da tabela de origem em relação à ocorrência da tabela de destino.
+    Os valores possíveis são:
 
-      * **definir**: é possível excluir a ocorrência de origem se ela não for mais referenciada por uma ocorrência de destino
-      * **normal**: excluir a ocorrência de origem inicializa as chaves do link para a ocorrência de destino (modo padrão), esse tipo de integridade inicializa todas as chaves estrangeiras
-      * **own**: a exclusão da ocorrência de origem leva à exclusão da ocorrência de destino
-      * **owncopy**: o mesmo que **own** (no caso de exclusão) ou duplica as ocorrências (no caso de duplicação)
-      * **neutral**: nenhum comportamento específico
+    * **definir**: é possível excluir a ocorrência de origem se ela não for mais referenciada por uma ocorrência de destino
+    * **normal**: excluir a ocorrência de origem inicializa as chaves do link para a ocorrência de destino (modo padrão), esse tipo de integridade inicializa todas as chaves estrangeiras
+    * **own**: a exclusão da ocorrência de origem leva à exclusão da ocorrência de destino
+    * **owncopy**: o mesmo que **own** (no caso de exclusão) ou duplica as ocorrências (no caso de duplicação)
+    * **neutral**: nenhum comportamento específico
 
-   * **revIntegrity** (opcional): integridade no esquema de destino (opcional, &quot;normal&quot; por padrão)
-   * **revCardinality** (opcional): com o valor &quot;single&quot; preenche a cardinalidade com o tipo 1-1 (1-N por padrão)
-   * **externalJoin** (opcional): força a associação externa
-   * **revExternalJoin** (opcional): força a associação externa no link reverso
+  * **revIntegrity** (opcional): integridade no esquema de destino (opcional, &quot;normal&quot; por padrão)
+  * **revCardinality** (opcional): com o valor &quot;single&quot; preenche a cardinalidade com o tipo 1-1 (1-N por padrão)
+  * **externalJoin** (opcional): força a associação externa
+  * **revExternalJoin** (opcional): força a associação externa no link reverso
 
 * Um link faz referência a um ou mais campos da tabela de origem para a tabela de destino. Os campos que compõem a associação (elemento `<join>`) não precisam ser preenchidos porque eles são automaticamente deduzidos por padrão usando a chave interna do esquema de destino.
 * Um índice é adicionado automaticamente à chave externa do link no schema estendido.

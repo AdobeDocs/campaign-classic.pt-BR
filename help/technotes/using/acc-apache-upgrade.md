@@ -8,19 +8,21 @@ exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
 TQID: https://experienceleague.adobe.com/iTszfeybA8gTvgRCpTAXNEKQIbTeGHUDx-1plG77NUo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 549
+source-wordcount: '549'
 ht-degree: 2%
-
 ---
-
 # Adobe Campaign - Atualização de segurança da versão do Apache {#apache-update}
 
 >[!CAUTION]
@@ -34,7 +36,7 @@ A equipe do Adobe Campaign conduzirá a atividade de atualização de segurança
 
 Espera-se que essa atualização seja executada automaticamente fora do horário comercial normal para que você continue usando o serviço do Campaign sem interrupções.
 
-Suas instâncias de não produção serão atualizadas pela Adobe primeiro, depois suas instâncias de produção serão atualizadas. Como esse é um processo de atualização automática de propriedade da Adobe, nenhuma ação é necessária da sua parte. No entanto, se você tiver algum problema, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support).
+Suas instâncias de não produção serão atualizadas pela Adobe primeiro, depois suas instâncias de produção serão atualizadas. Como esse é um processo de atualização automática de propriedade da Adobe, nenhuma ação é necessária da sua parte. No entanto, se você tiver algum problema, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
@@ -65,7 +67,7 @@ Suas instâncias de não produção serão atualizadas pela Adobe primeiro, depo
 
 * **Que validações precisam ser executadas pelos clientes?**
 
-  Nenhum teste específico é necessário para esta atualização de segurança. Caso algum problema seja observado, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support).
+  Nenhum teste específico é necessário para esta atualização de segurança. Caso algum problema seja observado, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 * **É possível solicitar uma alteração em Data/Hora no slot de atualização de segurança agendado?**
@@ -73,4 +75,4 @@ Suas instâncias de não produção serão atualizadas pela Adobe primeiro, depo
   Como essa é uma correção de segurança, recomendamos que você se adapte à programação existente.
 
 
-Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Campaign#support).
+Para qualquer outra pergunta, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).

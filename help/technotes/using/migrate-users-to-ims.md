@@ -5,22 +5,27 @@ exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
 TQID: https://experienceleague.adobe.com/drpNkA9cj7Prid--GixHMQ48CO7ZC9qqX4w5fnTiD88
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1244
-ht-degree: 3%
-
+source-wordcount: '1266'
+ht-degree: 4%
 ---
-
 # Migrar operadores do Campaign para o Adobe Identity Management System (IMS) {#migrate-users-to-ims}
 
 Como parte do esforço para reforçar a segurança e o processo de autenticação, a Adobe Campaign recomenda migrar o modo de autenticação do usuário final da autenticação nativa de logon/senha para o Adobe Identity Management System (IMS). Todos os operadores devem implementar o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectar ao Campaign.
@@ -43,7 +48,7 @@ Esse procedimento se aplica a todos os usuários do Campaign que ainda não est�
 
 Se os operadores em sua organização estiverem se conectando ao console do cliente do Campaign usando seu logon/senha (também conhecido como. autenticação nativa), você será afetado e deverá migrar esses operadores para o Adobe IMS conforme detalhado abaixo.
 
-A migração para o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} é uma obrigação de segurança para tornar seus ambientes seguros e padronizados, pois a maioria das outras soluções e aplicativos da Adobe Experience Cloud já está no IMS.
+A migração para o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} é uma obrigação de segurança para tornar seus ambientes seguros e padronizados, pois a maioria das outras soluções e aplicativos da Adobe Experience Cloud já estão no IMS.
 
 Esta alteração é aplicável a partir do Campaign Classic v7.4.1 (e as [versões compatíveis com a migração do IMS](ac-ims.md#ims-versions) mais recentes) e é **obrigatória** para migrar para o Adobe Campaign v8.
 
@@ -85,7 +90,7 @@ As principais etapas dessa migração estão listadas abaixo:
 1. Após a atualização, ainda será possível criar novos usuários com ambos os métodos, como usuário nativo ou com IMS.
 1. O administrador interno do Campaign deve configurar o Adobe IMS conforme detalhado em [esta seção](../../integrations/using/configuring-ims.md).
 1. Em seguida, adicione emails exclusivos a todos os usuários nativos no console do cliente do Campaign. Esta etapa está detalhada em [esta seção](#ims-migration-id).
-1. Crie usuários e perfis de produto no Adobe Admin Console conforme detalhado na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html?lang=pt-BR){target="_blank"}.
+1. Crie usuários e perfis de produto no Adobe Admin Console conforme detalhado na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html){target="_blank"}.
 1. Habilite a opção **Conectar-se com o Adobe ID** para todos os operadores.
 1. Implemente o Adobe IMS para sua conexão conforme detalhado em [esta página](../../integrations/using/implementing-ims.md).
 

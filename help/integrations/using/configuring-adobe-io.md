@@ -11,12 +11,10 @@ snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 hide: true
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 100%
-
+ht-degree: 92%
 ---
-
 # Configuração do Developer Console para Adobe Experience Cloud Triggers {#configuring-adobe-io}
 
 <!--
@@ -43,7 +41,7 @@ Antes de iniciar esta implementação, verifique se você tem:
 
 >[!AVAILABILITY]
 >
-> A credencial de conta de serviço (JWT) está sendo descontinuada pela Adobe. As integrações do Campaign com soluções e aplicativos Adobe agora devem usar a credencial de servidor para servidor OAuth. </br>
+> A credencial Conta de serviço (JWT) está sendo substituída pela Adobe. As integrações do Campaign com as soluções e os aplicativos da Adobe agora devem depender da credencial servidor para servidor do OAuth. </br>
 >
 > * Se você implementou integrações de entrada com o Campaign, é necessário migrar a conta técnica conforme detalhado [nesta documentação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). As [credenciais da conta de serviço (JWT)](oauth-technical-account.md) já existentes continuarão funcionando até 27 de janeiro de 2025.</br>
 >

@@ -10,15 +10,14 @@ exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
 TQID: https://experienceleague.adobe.com/keWzvD8mrha5wEUomR9FdRVTi-ryy2EVkRSAws-YKnI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 603
+source-wordcount: '604'
 ht-degree: 10%
-
 ---
-
 # Criação de uma instância e fazer logon{#creating-an-instance-and-logging-on}
 
 
@@ -67,7 +66,7 @@ Para criar uma nova instância, siga as etapas abaixo:
 
    Você pode definir uma lista de valores separados por vírgulas.
 
-   O ? e &#42; caracteres podem ser usados como curingas para substituir um ou vários caracteres (DNS, porta, etc.). Por exemplo, o valor **demo&#42;** funcionará com &quot;https://demo&quot;, como funcionará com &quot;https://demo:8080&quot; e até mesmo &quot;https://demo2&quot;.
+   O ? e &#42; caracteres podem ser usados como curingas para substituir um ou vários caracteres (DNS, porta, etc.). Por exemplo, o valor **demo&#42;** funcionará com &quot;https://demo&quot; como funcionará com &quot;https://demo:8080&quot; e até mesmo &quot;https://demo2&quot;.
 
    Os nomes usados devem ser definidos no DNS. Você também pode informar a correspondência entre um nome DNS e um endereço IP no arquivo **c:/windows/system32/drivers/etc/hosts** no Windows e no arquivo **/etc/hosts** no Linux. Portanto, você deve modificar as configurações de conexão para usar esse nome DNS a fim de se conectar à instância escolhida.
 

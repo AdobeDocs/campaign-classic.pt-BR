@@ -9,23 +9,28 @@ exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 TQID: https://experienceleague.adobe.com/uJW1-zNfhCUn15Nxa9T7bXTzX6nGdZJ1QfuUa38L7HY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+    internal-label: Subscription services
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1508
+workflow-type: tm+mt
+source-wordcount: '1508'
 ht-degree: 100%
-
 ---
-
 # Selecionar o público-alvo das campanhas {#marketing-campaign-deliveries}
 
 Em uma campanha de marketing, para cada entrega, é possível definir:
@@ -111,55 +116,55 @@ Os ícones da barra de ferramentas permitem realizar a ação referente à execu
 
 * Iniciar ou reiniciar
 
-   * O ícone **[!UICONTROL Start]** permite iniciar o fluxo de trabalho de segmentação. Quando você clica nesse ícone, todas as atividades sem uma transição de entrada são ativadas (exceto saltos de ponto de extremidade).
+  * O ícone **[!UICONTROL Start]** permite iniciar o fluxo de trabalho de segmentação. Quando você clica nesse ícone, todas as atividades sem uma transição de entrada são ativadas (exceto saltos de ponto de extremidade).
 
-     ![](assets/s_user_segmentation_start.png)
+    ![](assets/s_user_segmentation_start.png)
 
-     O servidor considera a solicitação, conforme mostrado pelo status:
+    O servidor considera a solicitação, conforme mostrado pelo status:
 
-     ![](assets/s_user_segmentation_start_status.png)
+    ![](assets/s_user_segmentation_start_status.png)
 
-     O status do processo muda para **[!UICONTROL Started]**.
+    O status do processo muda para **[!UICONTROL Started]**.
 
-   * Você pode reiniciar o fluxo de trabalho de segmentação por meio do ícone de barra de ferramentas apropriado. Esse comando pode ser útil se o ícone **[!UICONTROL Start]** não estiver disponível, por exemplo, quando a interrupção do fluxo de trabalho para construção do target estiver em andamento. Nesse caso, clique no ícone **[!UICONTROL Restart]** para antecipar a reinicialização. O servidor considera a solicitação, como mostra o status:
+  * Você pode reiniciar o fluxo de trabalho de segmentação por meio do ícone de barra de ferramentas apropriado. Esse comando pode ser útil se o ícone **[!UICONTROL Start]** não estiver disponível, por exemplo, quando a interrupção do fluxo de trabalho para construção do target estiver em andamento. Nesse caso, clique no ícone **[!UICONTROL Restart]** para antecipar a reinicialização. O servidor considera a solicitação, como mostra o status:
 
-     ![](assets/s_user_segmentation_restart_status.png)
+    ![](assets/s_user_segmentation_restart_status.png)
 
-     O processo insere o status **[!UICONTROL Started]**.
+    O processo insere o status **[!UICONTROL Started]**.
 
 * Parar ou pausar
 
-   * Os ícones da barra de ferramentas permitem interromper ou pausar um fluxo de trabalho de direcionamento em andamento.
+  * Os ícones da barra de ferramentas permitem interromper ou pausar um fluxo de trabalho de direcionamento em andamento.
 
-     Ao clicar em **[!UICONTROL Pause]**, as operações em andamento **[!UICONTROL are not]** são pausadas, mas nenhuma outra atividade é iniciada até a próxima reinicialização.
+    Ao clicar em **[!UICONTROL Pause]**, as operações em andamento **[!UICONTROL are not]** são pausadas, mas nenhuma outra atividade é iniciada até a próxima reinicialização.
 
-     ![](assets/s_user_segmentation_pause.png)
+    ![](assets/s_user_segmentation_pause.png)
 
-     O servidor considera o comando, como mostra o status:
+    O servidor considera o comando, como mostra o status:
 
-     ![](assets/s_user_segmentation_pause_status.png)
+    ![](assets/s_user_segmentation_pause_status.png)
 
-     Você também pode pausar um fluxo de trabalho de segmentação automaticamente quando a execução atinge uma atividade específica. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o fluxo de trabalho de segmentação deve ser pausado e selecione **[!UICONTROL Enable but do not execute]**.
+    Você também pode pausar um fluxo de trabalho de segmentação automaticamente quando a execução atinge uma atividade específica. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o fluxo de trabalho de segmentação deve ser pausado e selecione **[!UICONTROL Enable but do not execute]**.
 
-     ![](assets/s_user_segmentation_donotexecute.png)
+    ![](assets/s_user_segmentation_donotexecute.png)
 
-     Essa configuração é exibida por um ícone especial.
+    Essa configuração é exibida por um ícone especial.
 
-     ![](assets/s_user_segmentation_pause_activity.png)
+    ![](assets/s_user_segmentation_pause_activity.png)
 
-     >[!NOTE]
-     >
-     >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de direcionamento.
+    >[!NOTE]
+    >
+    >Essa opção é útil durante as fases avançadas de criação e teste de campanhas de direcionamento.
 
-     Clique em **[!UICONTROL Start]** para retomar a execução.
+    Clique em **[!UICONTROL Start]** para retomar a execução.
 
-   * Clique no ícone **[!UICONTROL Stop]** para interromper a execução em andamento.
+  * Clique no ícone **[!UICONTROL Stop]** para interromper a execução em andamento.
 
-     ![](assets/s_user_segmentation_stop.png)
+    ![](assets/s_user_segmentation_stop.png)
 
-     O servidor considera o comando, como mostra o status:
+    O servidor considera o comando, como mostra o status:
 
-     ![](assets/s_user_segmentation_stop_status.png)
+    ![](assets/s_user_segmentation_stop_status.png)
 
   Você também pode interromper um fluxo de trabalho de definição de metas automaticamente quando a execução atinge uma atividade. Para fazer isso, clique com o botão direito do mouse na atividade a partir da qual o fluxo de trabalho para construção do target será interrompido e selecione **[!UICONTROL Do not activate]**.
 
@@ -258,6 +263,6 @@ Você pode definir uma nova população a ser usada como um grupo de controle. E
 
 Este vídeo explica como criar uma campanha e um email no Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/31837?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Vídeos extras explicativos do Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

@@ -10,27 +10,37 @@ exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 TQID: https://experienceleague.adobe.com/ivE0WuT3rnpH0ro0cBHgJXxXRiRELmJLwHrYVi-Md6Y
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 2093
+workflow-type: tm+mt
+source-wordcount: '2105'
 ht-degree: 100%
-
 ---
-
 # Perguntas frequentes sobre atualização de build {#build-upgrade-faq}
 
 Esta seção de perguntas frequentes aborda dúvidas sobre atualizações de build do Campaign Classic v7, especialmente para implantações locais e híbridas.
@@ -225,14 +235,14 @@ de que não haja erros.
 todo o conteúdo é exibido e está presente.
 * Suas entregas estão com o fuso horário correto?
 
-   * Verifique a data de criação e a data de modificação com o registro de data e hora e o fuso horário
-   * Verifique se a execução do scheduler funciona em um fluxo de trabalho no horário especificado
-   * Procure a lista de fluxos de trabalho que apresentam status PAUSED e FAILED. Inicie-os e monitore-os
-   * Execute o teste AB para um cenário
-   * Teste notificações por push junto com a funcionalidade de rastreamento para deep links
-   * Teste de envio de SMS
-   * Se você tiver algum FDA externo conectado, teste se os dados estão sendo enviados de ambas as maneiras
-   * Se você usar integrações como Adobe Campaign-Adobe Experience Manager, Adobe Campaign-Adobe Analytics, verifique se elas estão funcionando.
+  * Verifique a data de criação e a data de modificação com o registro de data e hora e o fuso horário
+  * Verifique se a execução do scheduler funciona em um fluxo de trabalho no horário especificado
+  * Procure a lista de fluxos de trabalho que apresentam status PAUSED e FAILED. Inicie-os e monitore-os
+  * Execute o teste AB para um cenário
+  * Teste notificações por push junto com a funcionalidade de rastreamento para deep links
+  * Teste de envio de SMS
+  * Se você tiver algum FDA externo conectado, teste se os dados estão sendo enviados de ambas as maneiras
+  * Se você usar integrações como Adobe Campaign-Adobe Experience Manager, Adobe Campaign-Adobe Analytics, verifique se elas estão funcionando.
 
 **Consulte também**
 

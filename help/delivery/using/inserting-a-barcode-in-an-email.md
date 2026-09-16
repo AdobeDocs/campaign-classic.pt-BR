@@ -2,16 +2,14 @@
 product: campaign
 title: Inserir código de barras em um email
 description: Inserir código de barras em um email
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 role: User
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '533'
+workflow-type: tm+mt
+source-wordcount: '524'
 ht-degree: 100%
-
 ---
-
 # Inserir código de barras em um email{#insert-a-barcode-in-an-email}
 
 O módulo de geração de código de barras permite criar vários tipos de códigos de barras que estão em conformidade com muitos padrões comuns, incluindo códigos de barras 2D.

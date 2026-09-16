@@ -7,25 +7,33 @@ exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 TQID: https://experienceleague.adobe.com/i3aMiL43o3Sj7aR1u2KJmlMVe3UiS6j-tLc5augCryk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2042
+source-wordcount: '2101'
 ht-degree: 1%
-
 ---
-
 # Proteção de privacidade de email no aplicativo de email do Apple
 
 ## O que mudou?
@@ -107,7 +115,7 @@ Neste exemplo, um profissional de marketing deseja enviar uma oferta de recompen
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* Você pode usar um filtro predefinido. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=pt-BR){target="_blank"}.
+* Você pode usar um filtro predefinido. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
 
   ![](assets/identify-email-open-tracking-3.png)
 
@@ -393,7 +401,7 @@ Este exemplo mostra como exportar dados de rastreamento do Adobe Campaign.
 1. Crie um fluxo de trabalho que comece com um query.
 
    A query inicial é usada para recuperar os logs de rastreamento dos últimos três meses.
-Você pode usar um query incremental para extrair apenas os registros que ainda não foram exportados.
+   Você pode usar um query incremental para extrair apenas os registros que ainda não foram exportados.
 
    Adicione todas as informações necessárias do nó **[!UICONTROL Additional data]**.
 
@@ -438,14 +446,14 @@ Estes exemplos mostram como é possível usar workflows para dividir registros p
 
 * O primeiro exemplo de fluxo de trabalho inclui estas atividades:
 
-   1. A atividade inicial **[!UICONTROL Query]** é usada para selecionar todas as aberturas de email dos últimos três meses.
-   1. Uma atividade **[!UICONTROL Split]** é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
+  1. A atividade inicial **[!UICONTROL Query]** é usada para selecionar todas as aberturas de email dos últimos três meses.
+  1. Uma atividade **[!UICONTROL Split]** é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
 
-   1. Uma atividade **[!UICONTROL Deduplication]** segue cada atividade **[!UICONTROL Split]**. A atividade **[!UICONTROL Deduplication]** é usada para remover endereços de email duplicados.
+  1. Uma atividade **[!UICONTROL Deduplication]** segue cada atividade **[!UICONTROL Split]**. A atividade **[!UICONTROL Deduplication]** é usada para remover endereços de email duplicados.
 
-      A atividade **[!UICONTROL Deduplication]** é posicionada após a atividade **[!UICONTROL Split]** para evitar a perda de informações sobre destinatários que usam vários dispositivos.
+     A atividade **[!UICONTROL Deduplication]** é posicionada após a atividade **[!UICONTROL Split]** para evitar a perda de informações sobre destinatários que usam vários dispositivos.
 
-   1. Uma atividade **[!UICONTROL End]** segue cada atividade **[!UICONTROL Deduplication]**.
+  1. Uma atividade **[!UICONTROL End]** segue cada atividade **[!UICONTROL Deduplication]**.
 
   Esse tipo de workflow é útil se você armazenar recipients somente na tabela de recipients predefinida para direcionamento.
 
@@ -453,14 +461,14 @@ Estes exemplos mostram como é possível usar workflows para dividir registros p
 
 * O segundo exemplo de fluxo de trabalho inclui estas atividades:
 
-   1. A atividade inicial **[!UICONTROL Query]** é usada para selecionar todas as aberturas de email dos últimos três meses.
-   1. Uma atividade **[!UICONTROL Deduplication]** é usada para remover endereços de email duplicados.
-   1. Uma atividade **[!UICONTROL Fork]** é usada:
+  1. A atividade inicial **[!UICONTROL Query]** é usada para selecionar todas as aberturas de email dos últimos três meses.
+  1. Uma atividade **[!UICONTROL Deduplication]** é usada para remover endereços de email duplicados.
+  1. Uma atividade **[!UICONTROL Fork]** é usada:
 
-      * Em uma transição, a atividade **[!UICONTROL Change dimension]** é usada para encontrar os recipients aos quais o log de rastreamento se refere.
-      * Na outra transição, a atividade **[!UICONTROL Split]** é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
+     * Em uma transição, a atividade **[!UICONTROL Change dimension]** é usada para encontrar os recipients aos quais o log de rastreamento se refere.
+     * Na outra transição, a atividade **[!UICONTROL Split]** é usada para dividir a seleção por aplicativo de email, navegador, sistema operacional e dispositivo.
 
-   1. Uma atividade **[!UICONTROL End]** segue cada transição após a atividade **[!UICONTROL Split]**.
+  1. Uma atividade **[!UICONTROL End]** segue cada transição após a atividade **[!UICONTROL Split]**.
 
   Esse tipo de workflow é útil se você armazenar recipients em uma tabela diferente da tabela de recipients predefinida.
 

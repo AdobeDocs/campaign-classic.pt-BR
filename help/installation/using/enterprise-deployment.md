@@ -10,20 +10,23 @@ exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
 TQID: https://experienceleague.adobe.com/zcSKI492m6naLPJ4i-uxfKRESZOjL74tqbsBC9yx-SI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1251
+source-wordcount: '1251'
 ht-degree: 6%
-
 ---
-
 # Implantação empresarial{#enterprise-deployment}
 
 
@@ -69,8 +72,8 @@ Custos mais altos de hardware e administração.
 * Caixa de entrada de devolução acessível via POP3,
 * Criação de dois aliases DNS no balanceador de carga:
 
-   * a primeira exposta ao público para rastreamento e apontamento do balanceador de carga em um endereço IP virtual (VIP) e que é então distribuída aos dois servidores frontais,
-   * o segundo é exposto aos usuários internos para acesso por meio do console, apontando para um balanceador de carga em um endereço IP virtual (VIP) e que é então distribuído aos dois servidores de aplicativos.
+  * a primeira exposta ao público para rastreamento e apontamento do balanceador de carga em um endereço IP virtual (VIP) e que é então distribuída aos dois servidores frontais,
+  * o segundo é exposto aos usuários internos para acesso por meio do console, apontando para um balanceador de carga em um endereço IP virtual (VIP) e que é então distribuído aos dois servidores de aplicativos.
 
 * Firewall configurado para abrir STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 para Oracle, 5432 para PostgreSQL etc.) portas. Para obter mais informações, consulte a seção [Acesso ao banco de dados](../../installation/using/network-configuration.md#database-access).
 

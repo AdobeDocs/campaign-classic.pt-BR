@@ -3,7 +3,7 @@ product: campaign
 title: Configuração de IMS
 description: Saiba como se conectar via Adobe ID
 feature: Configuration
-badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Applies to on-premise and hybrid deployments only"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
@@ -11,22 +11,24 @@ exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
 feature_v2: []
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 349
+workflow-type: tm+mt
+source-wordcount: '368'
 ht-degree: 100%
-
 ---
-
 # Configuração de IMS{#configuring-ims}
 
 >[!IMPORTANT]
 >
 >Como usuário de serviços hospedados ou gerenciados do Campaign, sua implementação do Adobe IMS é de propriedade da Adobe. As etapas descritas abaixo se aplicam apenas a clientes locais e híbridos.
-> A implementação do Adobe IMS só deve ser executada por admins técnicos da Adobe. Entre em contato com o(a) representante da Adobe para iniciar o processo de implementação.
+> A implementação do Adobe IMS só deve ser executada por administradores técnicos da Adobe. Entre em contato com seu representante da Adobe para iniciar o processo de implementação.
 
 ## Pré-requisitos {#prerequisites}
 

@@ -10,18 +10,19 @@ exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
 TQID: https://experienceleague.adobe.com/DkmZBc4Awifbwqo7zqniEu6RlHDc91788XKN2nNg-Pg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1264
+source-wordcount: '1264'
 ht-degree: 7%
-
 ---
-
 # Configurar email Cco {#email-archiving}
 
 
@@ -143,7 +144,7 @@ No arquivo **config-`<instance name>.xml`**, use os seguintes parâmetros para d
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
@@ -163,8 +164,8 @@ Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]*
 * **Caixa de correio de endereço CCO**: verifique se ela tem capacidade de recepção suficiente para arquivar todos os emails enviados pelo MTA.
 * **Pool de MTA**: o recurso de arquivamento com CCO funciona no nível do MTA. Ele permite duplicar todos os emails enviados pelo MTA. Como o MTA pode ser agrupado em várias instâncias (desenvolvimento, teste ou produção, por exemplo) ou até mesmo em vários clientes (em um ambiente de mid-sourcing), a configuração desse recurso afeta a segurança:
 
-   * Se você compartilhar um MTA com vários clientes e um deles tiver essa opção ativada, esse cliente acessará todos os emails dos outros clientes que compartilham o mesmo MTA. Para evitar essa situação, use um MTA diferente para cada cliente.
-   * Se você usar o mesmo MTA em várias instâncias (desenvolvimento, teste, prod) para um único cliente, as mensagens enviadas de todas as três instâncias serão duplicadas pela opção dataLogPath.
+  * Se você compartilhar um MTA com vários clientes e um deles tiver essa opção ativada, esse cliente acessará todos os emails dos outros clientes que compartilham o mesmo MTA. Para evitar essa situação, use um MTA diferente para cada cliente.
+  * Se você usar o mesmo MTA em várias instâncias (desenvolvimento, teste, prod) para um único cliente, as mensagens enviadas de todas as três instâncias serão duplicadas pela opção dataLogPath.
 
 * **Emails por conexão**: o arquivamento de emails com CCO opera abrindo uma conexão e tentando enviar todos os emails por meio dela. A Adobe recomenda verificar com seu contato técnico interno o número de emails aceitos em uma determinada conexão. Aumentar esse número pode ter um grande impacto na taxa de transferência do Cco.
 * **IPs de envio com CCO**: atualmente, os emails com CCO não são enviados por meio dos proxies do MTA normal. Em vez disso, uma conexão direta é aberta do servidor MTA para o servidor de email de destino. Isso significa que talvez seja necessário adicionar outros IPs ao incluo na lista de permissões na rede, dependendo da configuração do servidor de email.

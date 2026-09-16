@@ -2,28 +2,33 @@
 product: campaign
 title: Publicar um formulário web
 description: Publicar um formulário web
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 TQID: https://experienceleague.adobe.com/2lsNN7oxSizIC1wsv5S5fwkgCcKd3so5qeq-pHr8odY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1289
+workflow-type: tm+mt
+source-wordcount: '1280'
 ht-degree: 100%
-
 ---
-
 # Publicar um formulário web{#publishing-a-web-form}
 
 
@@ -192,17 +197,17 @@ Saiba mais sobre os diferentes status de um formulário web [nesta seção](#lif
 
 * Se o status do formulário web era **[!UICONTROL Pending publication]** ou **[!UICONTROL Online]** quando exportado da primeira instância:
 
-   * O formulário web ficará o status **[!UICONTROL Pending publication]** quando importado na nova instância.
+  * O formulário web ficará o status **[!UICONTROL Pending publication]** quando importado na nova instância.
 
-   * Se o formulário web já existir na nova instância, ele será substituído pela nova versão do formulário e assumirá o status **[!UICONTROL Pending publication]**, mesmo que a versão antiga do formulário fosse **[!UICONTROL Online]**.
+  * Se o formulário web já existir na nova instância, ele será substituído pela nova versão do formulário e assumirá o status **[!UICONTROL Pending publication]**, mesmo que a versão antiga do formulário fosse **[!UICONTROL Online]**.
 
-   * Independentemente da existência de um formulário igual, este deverá ser [publicado](#publishing-a-form) para se tornar **[!UICONTROL Online]** na nova instância e acessível através do URL do formulário web em um navegador.
+  * Independentemente da existência de um formulário igual, este deverá ser [publicado](#publishing-a-form) para se tornar **[!UICONTROL Online]** na nova instância e acessível através do URL do formulário web em um navegador.
 
 * Se o status do formulário web era **[!UICONTROL Being edited]** quando exportado:
 
-   * Se o formulário web for novo na instância em que o pacote foi importado, ele receberá o status **[!UICONTROL Being edited]**.
+  * Se o formulário web for novo na instância em que o pacote foi importado, ele receberá o status **[!UICONTROL Being edited]**.
 
-   * Se já houver um formulário web igual na nova instância, o formulário importado se tornará uma modificação desse formulário já existente. Se a versão antiga do formulário estava **[!UICONTROL Online]**, a versão antiga permanecerá online até que a nova versão do formulário seja [publicada](#publishing-a-form) na nova instância.
+  * Se já houver um formulário web igual na nova instância, o formulário importado se tornará uma modificação desse formulário já existente. Se a versão antiga do formulário estava **[!UICONTROL Online]**, a versão antiga permanecerá online até que a nova versão do formulário seja [publicada](#publishing-a-form) na nova instância.
 
   >[!NOTE]
   >

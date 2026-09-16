@@ -2,28 +2,32 @@
 product: campaign
 title: Caso de uso de teste A/B
 description: Saiba como executar testes A/B por meio de um caso de uso dedicado
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 role: User
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
 TQID: https://experienceleague.adobe.com/rYG71DezWYLaFpxjPKrnCEQJgyDVjFfopNsr6aWtQ1w
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 267
+workflow-type: tm+mt
+source-wordcount: '258'
 ht-degree: 100%
-
 ---
-
 # Teste A/B: teste deste caso de uso {#ab-testing-use-case}
 
 Nesse caso de uso, vamos comparar dois conteúdos de entrega de e-mail por meio de um fluxo de trabalho de segmentação de trabalho de segmentação. A mensagem e o texto são idênticos nas duas entregas: apenas o layout é alterado.

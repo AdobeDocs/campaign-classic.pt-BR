@@ -8,28 +8,38 @@ exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
 TQID: https://experienceleague.adobe.com/IRAgAQvquHFcfGDRU9Sof8NpSn3khyRRPOdpIRKUOzg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 885
+workflow-type: tm+mt
+source-wordcount: '948'
 ht-degree: 100%
-
 ---
-
 # Introdução ao monitoramento de entrega {#about-delivery-monitoring}
 
 >[!IMPORTANT]
@@ -46,11 +56,11 @@ ht-degree: 100%
 
 E se as entregas não estiverem sendo enviadas e seu status permanecer **Pendente**?
 
-* O processo de execução está aguardando a disponibilidade de alguns recursos. É possível que o MTA não tenha sido iniciado.
-Verifique se os módulos de mta@instance estão em execução nos servidores do MTA e inicie o módulo do MTA, se necessário. [Saiba mais](../../production/using/administration.md).
+* O processo de execução está aguardando a disponibilidade de alguns recursos. O MTA pode não ter sido iniciado.
+Verifique se os módulos mta@instance estão abertos nos servidores MTA e, caso necessário, inicie o módulo MTA. [Saiba mais](../../production/using/administration.md).
 
 * Pode ser que a entrega esteja usando uma afinidade não configurada na instância de envio.
-Dica: verifique a configuração do gerenciamento de tráfego (afinidade de IP). Para obter mais informações, consulte Controlar tráfego SMTP de saída.
+Dica: verifique a configuração do gerenciamento de tráfego (afinidade IP). Para obter mais informações, consulte Controlar tráfego SMTP de saída.
 
 >[!NOTE]
 >
@@ -81,8 +91,8 @@ No Adobe Campaign Classic, o **Monitoramento da capacidade de entrega** é geren
 
 * O relatório **[!UICONTROL Delivery throughput]** fornece uma visão geral de todo o rendimento da plataforma em um determinado período. Para obter mais informações, consulte [esta seção](../../reporting/using/global-reports.md#delivery-throughput).
 * Cada entrega gera um relatório de estatísticas de transmissão para os diferentes provedores de serviço da Internet (ISPs). Ele mostra algumas métricas de qualidade e reputação dos dados que podem afetar a capacidade de entrega, incluindo os seguintes números:
-   * **[!UICONTROL Hard bounces]** indica a qualidade dos dados. Esse número deve ser inferior a 2%.
-   * **[!UICONTROL Soft bounces]** indica a reputação. Este número não deve ser superior a 10% para qualquer ISP.
+  * **[!UICONTROL Hard bounces]** indica a qualidade dos dados. Esse número deve ser inferior a 2%.
+  * **[!UICONTROL Soft bounces]** indica a reputação. Este número não deve ser superior a 10% para qualquer ISP.
 
   Para obter mais informações, consulte a seção [Estatísticas da entrega](../../reporting/using/global-reports.md#delivery-statistics).
 

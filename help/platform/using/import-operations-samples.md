@@ -3,7 +3,7 @@ product: campaign
 title: Modelos de importação genérica
 description: Saiba mais sobre as importações genéricas que você pode executar usando processos de importação
 feature: Data Management
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -11,21 +11,25 @@ exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 TQID: https://experienceleague.adobe.com/NkKTg-a9jjxPxMawe-IUgd9V99qaoxUwWaM3-h4aUf0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1010
+workflow-type: tm+mt
+source-wordcount: '1001'
 ht-degree: 100%
-
 ---
-
 # Modelos de importação genérica {#import-operations-samples}
 
 
@@ -105,13 +109,13 @@ Para importar novos perfis de destinatários armazenados em um arquivo de texto 
 
      O modo **[!UICONTROL Tracking]** permite rastrear os detalhes da importação para cada registro no arquivo de origem. Para fazer isso, na página inicial, clique em **[!UICONTROL Profiles and Targets]** e depois em **[!UICONTROL Processes]**. Selecione a importação relevante e procure as guias **[!UICONTROL General]**, **[!UICONTROL Journal]** e **[!UICONTROL Rejects]**.
 
-      * Verificar o progresso da importação
+     * Verificar o progresso da importação
 
-        ![](assets/s_ncs_user_import_example07_01.png)
+       ![](assets/s_ncs_user_import_example07_01.png)
 
-      * Visualização do processo de cada registro
+     * Visualização do processo de cada registro
 
-        ![](assets/s_ncs_user_import_example07_02.png)
+       ![](assets/s_ncs_user_import_example07_02.png)
 
 ## Atualizar e inserir destinatários {#example--update-and-insert-recipients}
 

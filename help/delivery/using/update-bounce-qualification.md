@@ -2,29 +2,35 @@
 product: campaign
 title: Atualizar qualificação de rejeição após a interrupção da Apple em 2021
 description: Saiba como atualizar a qualificação de rejeição após a interrupção da Apple em 2021
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 TQID: https://experienceleague.adobe.com/kn5H0jxM7KKnLGQ3vYdvhQm4nixgSTVhFBO8CAh-1Lg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 457
+workflow-type: tm+mt
+source-wordcount: '448'
 ht-degree: 100%
-
 ---
-
 # Atualizar rejeições permanentes incorretas após a interrupção da Apple {#update-bounce-qualification.md}
 
 ## Contexto
@@ -55,16 +61,16 @@ Com base no período do incidente, abaixo estão as diretrizes recomendadas para
 
 * Para instâncias do Campaign com informações de resposta de rejeição SMTP no campo **[!UICONTROL Error text]** da lista de quarentena:
 
-   * **O texto de erro (texto de quarentena)** contém “A pesquisa de usuário foi bem-sucedida, mas nenhum registro de usuário foi encontrado” E **o texto de erro (texto de quarentena)** contém “support.apple.com”
-   * **Atualizar status (@lastModified)** em ou após 26/04/2021 07:00:00 AM
-   * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 01:00:00 PM
+  * **O texto de erro (texto de quarentena)** contém “A pesquisa de usuário foi bem-sucedida, mas nenhum registro de usuário foi encontrado” E **o texto de erro (texto de quarentena)** contém “support.apple.com”
+  * **Atualizar status (@lastModified)** em ou após 26/04/2021 07:00:00 AM
+  * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 01:00:00 PM
 
 * Para instâncias do Campaign com informações de regra de email de entrada no campo **[!UICONTROL Error text]** da lista de quarentena:
 
-   * **O texto de erro (texto de quarentena)** contém “Momen_Code10_InvalidRecipient”
-   * **Domínio de email (@domain)** igual a icloud.com OU **domínio de email (@domain)** igual a me.com OU **domínio de email (@domain)** igual a mac.com
-   * **Atualizar status (@lastModified)** em ou após 26/04/2021 07:00:00 AM
-   * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 01:00:00 PM
+  * **O texto de erro (texto de quarentena)** contém “Momen_Code10_InvalidRecipient”
+  * **Domínio de email (@domain)** igual a icloud.com OU **domínio de email (@domain)** igual a me.com OU **domínio de email (@domain)** igual a mac.com
+  * **Atualizar status (@lastModified)** em ou após 26/04/2021 07:00:00 AM
+  * **Atualizar status (@lastModified)** em ou antes de 26/04/2021 01:00:00 PM
 
 Depois de ter a lista de destinatários afetados, você pode defini-los como um status **[!UICONTROL Valid]** para que sejam removidos da lista de quarentena pelo fluxo de trabalho **[!UICONTROL Database cleanup]** ou simplesmente excluí-los da tabela.
 

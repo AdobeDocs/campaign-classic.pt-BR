@@ -8,24 +8,31 @@ hide: true
 TQID: https://experienceleague.adobe.com/LeUJ-F5dAECUrtkbvgwL0BN88Alofnh2rBWe7hIVGgI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 323
+workflow-type: tm+mt
+source-wordcount: '333'
 ht-degree: 100%
-
 ---
-
 # Conecte o Campaign e o Salesforce.com{#connect-to-sfdc}
 
 
@@ -36,7 +43,7 @@ A sincronização de dados é realizada por meio de uma atividade de fluxo de tr
 
 
 A conta externa permite importar e exportar dados do Salesforce para o Adobe Campaign.
-Para configurar o Conector do CRM para o Salesforce, siga as etapas abaixo:
+Para configurar o Conector CRM do Salesforce, siga as etapas abaixo:
 
 1. Crie uma nova conta externa por meio do nó **[!UICONTROL Administration > Platform > External accounts]** da árvore do Adobe Campaign.
 1. Selecione **[!UICONTROL Salesforce.com]**.
@@ -47,19 +54,19 @@ Para configurar o Conector do CRM para o Salesforce, siga as etapas abaixo:
    Para configurar a conta externa do Salesforce CRM para funcionar com o Adobe Campaign, você precisa fornecer os seguintes detalhes:
 
    * **[!UICONTROL Account]**
-Conta usada para fazer logon no Salesforce CRM.
+     Conta usada para fazer logon no Salesforce CRM.
 
    * **[!UICONTROL Password]**
-Senha usada para fazer logon no Salesforce CRM.
+     Senha usada para fazer logon no Salesforce CRM.
 
    * **[!UICONTROL Client identifier]**
-Para saber onde encontrar o identificador do cliente, consulte esta [página](https://help.salesforce.com/articleView?id=000205876&type=1).
+     Para saber onde encontrar o identificador do cliente, consulte esta [página](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL Security token]**
-Para saber onde encontrar o token de segurança, consulte esta [página](https://help.salesforce.com/articleView?id=000205876&type=1).
+     Para saber onde encontrar o token de segurança, consulte esta [página](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL API version]**
-Selecione a versão da API.
+     Selecione a versão da API.
 1. Execute o assistente de configuração para gerar a tabela CRM disponível: o assistente de configuração permite que você colete tabelas e crie o esquema correspondente.
 
    ![](assets/crm_connectors_sfdc_launch.png)

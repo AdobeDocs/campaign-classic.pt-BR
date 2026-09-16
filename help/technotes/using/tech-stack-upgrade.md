@@ -8,18 +8,19 @@ exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
 TQID: https://experienceleague.adobe.com/lfaxfILJCapcyjrRDvppv-FuXrkKciYlfWfKBtayoIY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 feature_v2: []
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 529
+source-wordcount: '529'
 ht-degree: 9%
-
 ---
-
 # Atualizações de ambiente do Adobe Campaign 2023 {#ac-system-upgrade}
 
 A infraestrutura do Campaign depende de sistemas de terceiros que devem ser atualizados regularmente com as versões e correções mais recentes. Essas atualizações são obrigatórias para garantir a continuidade do serviço e proteger os ambientes do Campaign contra riscos de segurança. Além disso, uma atualização do Campaign é necessária para garantir a compatibilidade com alterações no sistema de terceiros.

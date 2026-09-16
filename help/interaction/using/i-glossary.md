@@ -10,16 +10,16 @@ exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
 TQID: https://experienceleague.adobe.com/d6fevvmNur-4TC1KFM-09o68GnPFEM6S6SaFICwyCsw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1109
+workflow-type: tm+mt
+source-wordcount: '1109'
 ht-degree: 100%
-
 ---
-
 # Glossário para integração com o Campaign{#i-glossary}
 
 
@@ -28,8 +28,8 @@ Abaixo está a definição dos elementos principais de interação.
 
 * **Ambiente**: conjunto que inclui um catálogo de oferta e ganchos (espaços de ofertas). Você precisa criar um ambiente por dimensão de direcionamento. Há dois tipos de ambientes:
 
-   * **Ambiente de design**: o ambiente no qual as ofertas são criadas e/ou regras de tipologia são definidas (regras que determinarão as ofertas para apresentar ou não a uma pessoa alvo). A tabela de pessoas físicas que serão alvos das ofertas e a tabela para armazenar todas as propostas de oferta também são definidas aqui. O nó **[!UICONTROL Design environment]** contém subpastas de espaço de ofertas, filtros predefinidos e categorias de ofertas. Para cada **[!UICONTROL Design environment]** existe um **[!UICONTROL Live environment]** somente leitura correspondente, gerado a partir desse mesmo **[!UICONTROL Design environment]**.
-   * **Ambiente dinâmico**: ambiente vinculado a um **[!UICONTROL Design environment]**. Ele contém ofertas somente leitura cujo conteúdo e elegibilidade foram aprovados por meio do **[!UICONTROL Design environment]**. Eles devem ser marcados para serem apresentados em um site ou inseridos em uma mensagem.
+  * **Ambiente de design**: o ambiente no qual as ofertas são criadas e/ou regras de tipologia são definidas (regras que determinarão as ofertas para apresentar ou não a uma pessoa alvo). A tabela de pessoas físicas que serão alvos das ofertas e a tabela para armazenar todas as propostas de oferta também são definidas aqui. O nó **[!UICONTROL Design environment]** contém subpastas de espaço de ofertas, filtros predefinidos e categorias de ofertas. Para cada **[!UICONTROL Design environment]** existe um **[!UICONTROL Live environment]** somente leitura correspondente, gerado a partir desse mesmo **[!UICONTROL Design environment]**.
+  * **Ambiente dinâmico**: ambiente vinculado a um **[!UICONTROL Design environment]**. Ele contém ofertas somente leitura cujo conteúdo e elegibilidade foram aprovados por meio do **[!UICONTROL Design environment]**. Eles devem ser marcados para serem apresentados em um site ou inseridos em uma mensagem.
 
 * **Espaço de ofertas**: pasta que define o local onde a oferta é exposta. A definição de um espaço permite especificar o canal usado, especificar se ele pode ser usado no modo unitário (por padrão: apenas no modo de lote), criar o conteúdo da oferta usando funções de renderização e especificar a oferta dentre as ofertas apresentadas. Um espaço é uma interface entre o canal e o motor de oferta.
 
@@ -58,12 +58,12 @@ Abaixo está a definição dos elementos principais de interação.
 * **Arbitragem**: selecionar ofertas que serão exibidas em um ambiente (ofertas elegíveis). As classificações do princípio de arbitragem organiza as ofertas pela prioridade de acordo com os critérios definidos nas categorias, ofertas e ofertas de contexto.
 * **Contato**: um contato de uma interação de entrada. Durante o processamento de chamadas do motor, o contato é associado a uma dimensão de direcionamento. Há dois tipos de contatos:
 
-   * **[!UICONTROL Identified contact]** : um contato que foi identificado voluntariamente no canal. Em interações de saída, o contato é identificado automaticamente.
-   * **[!UICONTROL Anonymous contact]** : um contato que não tenha assinado voluntariamente por meio do canal, mas pode ser identificado implicitamente por meio de um cookie. Essa terminologia é usada apenas para interações de entrada.
+  * **[!UICONTROL Identified contact]** : um contato que foi identificado voluntariamente no canal. Em interações de saída, o contato é identificado automaticamente.
+  * **[!UICONTROL Anonymous contact]** : um contato que não tenha assinado voluntariamente por meio do canal, mas pode ser identificado implicitamente por meio de um cookie. Essa terminologia é usada apenas para interações de entrada.
 
-     >[!NOTE]
-     >
-     >Contatos anônimos e não identificados são atribuídos à dimensão de direcionamento do visitante.
+    >[!NOTE]
+    >
+    >Contatos anônimos e não identificados são atribuídos à dimensão de direcionamento do visitante.
 
 * **Interação de saída**: chamada para o motor de interação de uma lista de contatos (usada para entrega de emails, correspondência direta etc.). As mesmas regras e processos são aplicados a cada contato. Esse tipo de interação geralmente é processado em modo de lote.
 * **Interação de entrada**: interação seguindo uma chamada recebida gerada pela ação de um contato no canal. Esse tipo de interação geralmente é processado no modo unitário.
@@ -71,9 +71,9 @@ Abaixo está a definição dos elementos principais de interação.
 * **Modo Unitário**: um único contato é processado de cada vez. Esse modo geralmente é usado para interações de entrada e mensagens transacionais.
 * **Modo de identificação**: refere-se ao status de um contato.
 
-   * **[!UICONTROL explicit]** : o contato é identificado após fazer logon na interface do canal.
-   * **[!UICONTROL implicit]** : o contato foi identificado por um cookie (permanente ou de sessão). Ele pode ser processado como um contato anônimo ou identificado.
-   * **[!UICONTROL anonymous]** : o contato não pode ser identificado.
+  * **[!UICONTROL explicit]** : o contato é identificado após fazer logon na interface do canal.
+  * **[!UICONTROL implicit]** : o contato foi identificado por um cookie (permanente ou de sessão). Ele pode ser processado como um contato anônimo ou identificado.
+  * **[!UICONTROL anonymous]** : o contato não pode ser identificado.
 
 * **Oferta elegível**: a oferta se encontra com as restrições definidas upstream que podem ser oferecidas de forma consistente a um público-alvo.
 * **Regras de apresentação**: regras de tipologia mencionadas no ambiente de oferta, que permitem excluir algumas ofertas levando em conta o histórico de apresentações.

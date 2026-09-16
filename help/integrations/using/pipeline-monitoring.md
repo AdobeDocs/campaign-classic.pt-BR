@@ -3,7 +3,7 @@ product: campaign
 title: Monitoramento de pipeline
 description: Monitoramento de pipeline
 feature: Triggers
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 level: Intermediate, Experienced
@@ -11,25 +11,32 @@ exl-id: 84399496-33fd-4936-85e7-32de8503740f
 TQID: https://experienceleague.adobe.com/JfrzR2a-nKDQBMQJlZ8snVIEavWU1FdJ-oPR-K3RaSg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 501
+workflow-type: tm+mt
+source-wordcount: '492'
 ht-degree: 100%
-
 ---
-
 # Monitoramento de pipeline {#pipeline-monitoring}
 
 
@@ -50,28 +57,28 @@ Os indicadores recomendados para monitorados são realçados.
 
 * Consumidor: nome do cliente que está enviando os acionadores. Configurado na opção pipeline.
 * http-request
-   * last-live-ms-ago: tempo em ms desde a realização de uma verificação de conexão.
-   * last-failed-cnx-ms-ago: tempo em ms desde a última falha de verificação de conexão.
-   * pipeline-host: nome do host onde os dados do pipeline são obtidos.
+  * last-live-ms-ago: tempo em ms desde a realização de uma verificação de conexão.
+  * last-failed-cnx-ms-ago: tempo em ms desde a última falha de verificação de conexão.
+  * pipeline-host: nome do host onde os dados do pipeline são obtidos.
 * ponteiro
-   * current-offsets: valor do ponteiro no pipeline, por thread filha.
-   * last-flush-ms-ago: tempo em ms desde a recuperação de um lote de acionadores.
-   * next-offsets-flush: tempo de espera até o próximo lote, quando concluído.
-   * processed-since-last-flush: número de acionadores processados no último lote.
+  * current-offsets: valor do ponteiro no pipeline, por thread filha.
+  * last-flush-ms-ago: tempo em ms desde a recuperação de um lote de acionadores.
+  * next-offsets-flush: tempo de espera até o próximo lote, quando concluído.
+  * processed-since-last-flush: número de acionadores processados no último lote.
 * roteamento
-   * acionadores: lista de acionadores recuperados. Configurado na opção [!DNL pipelined].
+  * acionadores: lista de acionadores recuperados. Configurado na opção [!DNL pipelined].
 * stats
-   * average-pointer-flush-time-ms: tempo médio de processamento para um lote de acionadores.
-   * average-trigger-processing-time-ms: tempo médio gasto analisando os dados de acionadores.
-   * bytes-read: número de bytes da fila lidos desde o início do processo.
-   * current-messages: número atual de mensagens pendentes que foram extraídas da fila e estão aguardando processamento. **Este indicador deve estar próximo de zero**.
-   * current-retries: número atual de mensagens que falharam no processamento e estão aguardando nova tentativa.
-   * peak-messages: número máximo de mensagens pendentes tratadas pelo processo desde seu início.
-   * pointer-flushes: número de lotes de mensagens processadas desde o início.
-   * routing-JS-custom: número de mensagens processadas pelo JS personalizado.
-   * trigger-discarded: número de mensagens que foram descartadas após muitas tentativas devido a erros de processamento.
-   * trigger-processed: número de mensagens que foram processadas sem erro.
-   * trigger-received: número de mensagens recebidas da fila.
+  * average-pointer-flush-time-ms: tempo médio de processamento para um lote de acionadores.
+  * average-trigger-processing-time-ms: tempo médio gasto analisando os dados de acionadores.
+  * bytes-read: número de bytes da fila lidos desde o início do processo.
+  * current-messages: número atual de mensagens pendentes que foram extraídas da fila e estão aguardando processamento. **Este indicador deve estar próximo de zero**.
+  * current-retries: número atual de mensagens que falharam no processamento e estão aguardando nova tentativa.
+  * peak-messages: número máximo de mensagens pendentes tratadas pelo processo desde seu início.
+  * pointer-flushes: número de lotes de mensagens processadas desde o início.
+  * routing-JS-custom: número de mensagens processadas pelo JS personalizado.
+  * trigger-discarded: número de mensagens que foram descartadas após muitas tentativas devido a erros de processamento.
+  * trigger-processed: número de mensagens que foram processadas sem erro.
+  * trigger-received: número de mensagens recebidas da fila.
 
 Essas estatísticas são exibidas por thread de processamento.
 
@@ -82,12 +89,12 @@ Essas estatísticas são exibidas por thread de processamento.
 * trigger-received: número de mensagens recebidas da fila.
 
 * Configurações: são definidas nos arquivos de configuração.
-   * flush-pointer-msg-count: número de mensagens em um lote.
-   * flush-pointer-period-ms: tempo entre dois lotes, em milissegundos.
-   * processing-threads-JS: número de threads de processamento que executam o JS personalizado.
-   * retry-period-ms: tempo entre duas tentativas quando ocorre um erro de processamento.
-   * retry-validity-duration-ms: a duração do processamento é repetida até que a mensagem seja descartada.
-   * Relatório de mensagens de pipeline
+  * flush-pointer-msg-count: número de mensagens em um lote.
+  * flush-pointer-period-ms: tempo entre dois lotes, em milissegundos.
+  * processing-threads-JS: número de threads de processamento que executam o JS personalizado.
+  * retry-period-ms: tempo entre duas tentativas quando ocorre um erro de processamento.
+  * retry-validity-duration-ms: a duração do processamento é repetida até que a mensagem seja descartada.
+  * Relatório de mensagens de pipeline
 
 ## Relatório de mensagens de pipeline {#pipeline-report}
 

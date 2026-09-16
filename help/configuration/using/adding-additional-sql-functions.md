@@ -8,20 +8,22 @@ exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
 TQID: https://experienceleague.adobe.com/HRym19p3YGAa3PEPgFBfU3ka39l5348CkdQaWcHZOJk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1037
+source-wordcount: '1037'
 ht-degree: 0%
-
 ---
-
 # Definir funções SQL adicionais{#adding-additional-sql-functions}
 
 O Adobe Campaign permite que o usuário defina **suas próprias funções** que podem acessar funções SQL, tanto as oferecidas pelo banco de dados quanto as que ainda não estão disponíveis no console. Isso é útil para funções agregadas (média, máximo, soma), por exemplo, que só podem ser calculadas no servidor ou quando o banco de dados fornece uma maneira mais fácil de implementar determinadas funções, em vez de gravar &quot;manualmente&quot; a expressão no console (por exemplo, gerenciamento de datas).
@@ -131,8 +133,8 @@ O campo **@name** faz referência ao nome da função, e &quot;args&quot; é a l
 * **@minArgs** e **maxArgs** designa o número de parâmetros (mínimo e máximo) para um parâmetro. Por exemplo, para uma função com 2 parâmetros, minArgs e maxArgs serão 2 e 2. Para 3 parâmetros, mais 1 opcional, eles serão 3 e 4, respectivamente.
 * Finalmente, o elemento **providerPart** fornece a implementação da função.
 
-   * O atributo **provider** é obrigatório e especifica os sistemas de banco de dados para os quais a implementação é fornecida. Como mostrado no exemplo, quando as sintaxes de expressão ou as funções subjacentes diferem, implementações alternativas podem ser fornecidas de acordo com o banco de dados.
-   * O atributo **@body** contém a implementação da função. Observação: esta implementação deve ser uma expressão em linguagem de banco de dados (não um bloco de código). Dependendo dos bancos de dados, as expressões podem ser subconsultas (&quot;(selecione a coluna da tabela onde...)&quot;) retornando apenas um valor único. Por exemplo, esse é o caso no Oracle (a consulta deve ser gravada entre parênteses).
+  * O atributo **provider** é obrigatório e especifica os sistemas de banco de dados para os quais a implementação é fornecida. Como mostrado no exemplo, quando as sintaxes de expressão ou as funções subjacentes diferem, implementações alternativas podem ser fornecidas de acordo com o banco de dados.
+  * O atributo **@body** contém a implementação da função. Observação: esta implementação deve ser uma expressão em linguagem de banco de dados (não um bloco de código). Dependendo dos bancos de dados, as expressões podem ser subconsultas (&quot;(selecione a coluna da tabela onde...)&quot;) retornando apenas um valor único. Por exemplo, esse é o caso no Oracle (a consulta deve ser gravada entre parênteses).
 
   >[!NOTE]
   >

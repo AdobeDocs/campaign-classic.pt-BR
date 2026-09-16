@@ -10,20 +10,23 @@ exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 TQID: https://experienceleague.adobe.com/BZ4rjzbXYikNoGAVHq4Gy7tY8OugKDgsmVLkKuIB9tw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 8061
+source-wordcount: '8113'
 ht-degree: 8%
-
 ---
-
 # O arquivo de configuração do servidor{#the-server-configuration-file}
 
 A configuração geral do Adobe Campaign é definida no arquivo **serverConf.xml**, localizado no diretório **conf** do diretório de instalação. Esta seção lista todos os nós e parâmetros diferentes do arquivo **serverConf.xml**.
@@ -420,7 +423,7 @@ No nó **dataStore > dataSource > pool**, configure os parâmetros do pool de co
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Número máximo de conexões permitidas antes de recusar uma nova conexão. Veja esta <a href="https://helpx.adobe.com/br/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">nota técnica</a>.<br /> </td> 
+   <td> Número máximo de conexões permitidas antes de recusar uma nova conexão. Veja esta <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">nota técnica</a>.<br /> </td> 
    <td> Curto<br /> </td> 
   </tr> 
   <tr> 
@@ -550,7 +553,11 @@ Para obter informações adicionais, consulte esta [seção](../../installation/
 
 >[!NOTE]
 >
->Observação em **nameServers**: por padrão, usa os parâmetros de rede> da primeira interface de rede declarada no Windows> não definida no UNIX. Define os servidores de nomes de domínio (DNS)>usados pelo MTA para obter o Mail Exchanger declarado para >um domínio.
+>Observação em **nameServers**: por padrão, usa a rede
+>parâmetros da primeira interface de rede declarada no Windows
+>não definido no UNIX. Define os servidores de nomes de domínio (DNS)
+>usado pelo MTA para declarar o Mail Exchanger para
+>um domínio.
 >
 >Se esse valor não estiver definido, o MTA buscará essas informações na configuração da rede do host. Se vários DNS forem possíveis, os diferentes endereços DNS deverão ser separados por vírgula (exemplo: 212.155.207.1,212.155.207.2). Se o servidor de entrega tiver várias interfaces de rede, a lista de DNS usada pelo MTA será a primeira. Nesse caso, recomendamos especificar o parâmetro **nameServer** para evitar ambiguidades.
 
@@ -1631,9 +1638,9 @@ Estes são os diferentes parâmetros do nó **mta**. Essa é a configuração do
    <td> statServerAddress<br /> </td> 
    <td> Endereço do servidor de estatísticas de entrega, fornecido como 
     &lt;dns ou ip&gt; 
-      <code>&lbrack;</code>: 
+      <code>[</code>: 
      &lt;porta&gt; 
-       <code>&rbrack;</code>. Consulte 
+       <code>]</code>. Consulte 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordenadas do servidor de estatísticas</a>. 
       <br /> 
      </td> 

@@ -4,26 +4,29 @@ title: Estrutura do formulário
 description: Estrutura do formulário
 feature: Application Settings
 role: Developer
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 TQID: https://experienceleague.adobe.com/zLWHKhH-T-g54pQDAhbOC4v7JvrX-LM-Vn8lCXE-aYI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 2407
+source-wordcount: '2402'
 ht-degree: 4%
-
 ---
-
 # Estrutura do formulário{#form-structure}
 
 
@@ -198,7 +201,7 @@ O container principal é definido pelo atributo **type=&quot;notebook&quot;**. A
 
 >[!NOTE]
 >
->Um recurso **style=&quot;down|up**(por padrão)**&quot;** força o posicionamento vertical dos rótulos de tabulação abaixo ou acima do controle. Este recurso é opcional.
+>Um recurso **style=&quot;down|up**(por padrão)**&quot;** força o posicionamento vertical dos rótulos de tabulação abaixo ou acima do controle. Esse recurso é opcional.
 >`<container style="down" type="notebook">  … </container>`
 
 #### Lista de ícones {#icon-list}
@@ -315,9 +318,9 @@ Você também pode classificar a lista com o elemento **`<orderby>`**:
 * **noAutoComplete**: desabilita a digitação antecipada (com o valor &quot;true&quot;)
 * **createMode**: cria o link imediatamente se ele não existir. Os valores possíveis são:
 
-   * **nenhum**: desabilita a criação. Uma mensagem de erro será exibida se o link não existir
-   * **inline**: cria o link com o conteúdo no campo de edição
-   * **edição**: exibe o formulário de edição no link. Quando o formulário for validado, os dados serão salvos (modo padrão)
+  * **nenhum**: desabilita a criação. Uma mensagem de erro será exibida se o link não existir
+  * **inline**: cria o link com o conteúdo no campo de edição
+  * **edição**: exibe o formulário de edição no link. Quando o formulário for validado, os dados serão salvos (modo padrão)
 
 * **noZoom**: nenhum formulário de edição no link (com o valor &quot;true&quot;)
 * **formulário**: sobrecarrega o formulário de edição do elemento direcionado

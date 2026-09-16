@@ -3,22 +3,20 @@ product: campaign
 title: Opção de pipeline NmsPipeline_Config
 description: Opção de pipeline NmsPipeline_Config
 feature: Triggers
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '325'
+workflow-type: tm+mt
+source-wordcount: '373'
 ht-degree: 100%
-
 ---
-
 
 # Opção de pipeline NmsPipeline_Config {#nmspipeline_config}
 
 
 
-Quando a autenticação funcionar, o [!DNL pipelined] poderá recuperar os eventos e processá-los. Somente os acionadores configurados no Adobe Campaign são processados, os demais são ignorados. O acionador deve ter sido gerado pelo Analytics e enviado previamente para o pipeline.
+Quando a autenticação funcionar, [!DNL pipelined] poderá recuperar os eventos e processá-los. Somente os acionadores configurados no Adobe Campaign são processados, os demais são ignorados. O acionador deve ter sido gerado pelo Analytics e enviado previamente para o pipeline.
 A opção também pode ser configurada com um curinga para capturar todos os acionadores independentemente do nome.
 
 A configuração dos acionadores é feita em uma opção, em **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. O nome da opção é **[!UICONTROL NmsPipeline_Config]**. O tipo de dados é &quot;long text&quot; em formato JSON.
@@ -78,8 +76,8 @@ O parâmetro &quot;consumidor&quot; identifica a instância como um desses consu
 
 ## Como configurar a opção Pipeline {#configure-pipeline-option}
 
-Adicione ou edite acionadores da Experience Cloud sob a matriz “acionadores”; não edite o resto.
-Verifique se o JSON está válido com a ajuda deste [site](https://jsonlint.com/).
+Adicione ou edite acionadores da Experience Cloud sob a matriz &quot;acionadores&quot;; não edite o resto.
+Verifique se o JSON é válido com a ajuda deste [site](https://jsonlint.com/).
 
 * “name” é a ID do acionador. Um curinga &quot;*&quot; captura todos os acionadores.
 * &quot;Consumidor&quot; é qualquer string única que identifique exclusivamente a instância nlserver. Normalmente, pode ser o próprio nome da instância. Para vários ambientes (dev/stage/prod), verifique se ela é exclusiva para cada um deles para que cada instância receba uma cópia da mensagem.

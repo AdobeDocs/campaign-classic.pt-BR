@@ -10,15 +10,14 @@ exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 TQID: https://experienceleague.adobe.com/AgGQgham1xWf9U5mAAc-Eul-izsp-tW6aNNPMobLvT4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1094
+source-wordcount: '1095'
 ht-degree: 5%
-
 ---
-
 # Implantação independente{#standalone-deployment}
 
 
@@ -73,8 +72,8 @@ Esse tipo de configuração pode ser executado ao gerenciar listas de menos de 1
 * Caixa de entrada de devolução acessível via POP3,
 * Criação de dois aliases DNS:
 
-   * a primeira a ser exposta ao público para rastrear e apontar para o computador no seu IP público;
-   * o segundo alias exposto aos usuários internos para acesso ao console e apontando para o mesmo computador.
+  * a primeira a ser exposta ao público para rastrear e apontar para o computador no seu IP público;
+  * o segundo alias exposto aos usuários internos para acesso ao console e apontando para o mesmo computador.
 
 * Firewall configurado para abrir SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 para Oracle, 5432 para PostgreSQL etc.) portas. Para obter mais informações, consulte [Configuração de rede](../../installation/using/network-configuration.md).
 
@@ -244,7 +243,7 @@ Siga as etapas abaixo:
 
      ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-     Como o servidor do Adobe Campaign é usado como servidor de aplicativos e servidor de redirecionamento, a URL interna usada para coletar logs de rastreamento e transferir URLs é uma conexão interna direta com o Tomcat (https://localhost:8080).
+     Como o servidor do Adobe Campaign é usado como o servidor de aplicativos e o servidor de redirecionamento, o URL interno usado para coletar logs de rastreamento e transferir URLs é uma conexão interna direta com o Tomcat (https://localhost:8080).
 
    * Gerenciamento de rejeição: insira os parâmetros para manipular emails de rejeição (não considere a seção **Emails de rejeição não processados**).
    * Acesso de: forneça os dois URLs para relatórios, formulários web e mirror pages.
