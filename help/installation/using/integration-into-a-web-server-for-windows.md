@@ -37,7 +37,7 @@ Você pode usar esse servidor Tomcat integrado para atender a solicitações HTT
 Neste caso:
 
 * a porta de escuta padrão é 8080. Para alterá-lo, consulte [esta seção](../../installation/using/configure-tomcat.md).
-* Os consoles clientes se conectam usando uma URL como `https://``<computer>``:8080`.
+* Os consoles clientes se conectam usando uma URL como `https://`&#x200B;`<computer>`&#x200B;`:8080`.
 
 No entanto, por motivos de segurança e administração, recomendamos usar um servidor Web dedicado como principal ponto de entrada para o tráfego HTTP quando o computador que executa o Adobe Campaign estiver exposto na Internet e você desejar abrir o acesso ao console fora da rede.
 
