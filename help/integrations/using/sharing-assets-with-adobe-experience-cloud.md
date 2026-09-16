@@ -3,7 +3,7 @@ product: campaign
 title: Compartilhamento de ativos com a Adobe Experience Cloud
 description: Compartilhamento de ativos com a Adobe Experience Cloud
 feature: Asset Sharing
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
@@ -11,20 +11,24 @@ exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
 TQID: https://experienceleague.adobe.com/VW9504KkK6NcdZ0MmF-9Cgh-14XciporDhUUBz3NyU0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 190
+workflow-type: tm+mt
+source-wordcount: '181'
 ht-degree: 100%
-
 ---
-
 # Compartilhamento de ativos com a Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
 O [Experience Cloud Assets](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/services/audiences/overview){target="_blank"} fornece um repositório único e centralizado de ativos prontos para marketing, que podem ser compartilhados entre as soluções. Um ativo é um arquivo digital de documento, imagem, vídeo ou áudio.

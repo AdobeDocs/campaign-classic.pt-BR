@@ -10,19 +10,21 @@ exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 TQID: https://experienceleague.adobe.com/TJ5R6T1pu5JQU5SaGoWRgZLG2m29TWWPVB8nniorRUg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: ht
-source-wordcount: 868
+workflow-type: tm+mt
+source-wordcount: '868'
 ht-degree: 100%
-
 ---
-
 # Configurações adicionais {#mc-additional-configurations}
 
 
@@ -96,12 +98,12 @@ Na(s) instância(s) de execução, os fluxos de trabalho técnicos de mensagens 
 
   Os seguintes status de evento estão disponíveis:
 
-   * **[!UICONTROL Pending]**: o evento está na fila. Nenhum modelo de mensagem foi atribuído a ele.
-   * **[!UICONTROL Pending delivery]**: o evento está na fila, um modelo de mensagem foi atribuído a ele e está sendo processado pela entrega.
-   * **[!UICONTROL Sent]**: esse status é copiado dos logs da entrega. Significa que a entrega foi enviada.
-   * **[!UICONTROL Ignored by the delivery]**: esse status é copiado dos logs da entrega. Ele significa que a entrega foi ignorada.
-   * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs da entrega. Ele significa que a entrega falhou.
-   * **[!UICONTROL Event not taken into account]**: o evento não pôde ser vinculado a um modelo de mensagem. O evento não será processado.
+  * **[!UICONTROL Pending]**: o evento está na fila. Nenhum modelo de mensagem foi atribuído a ele.
+  * **[!UICONTROL Pending delivery]**: o evento está na fila, um modelo de mensagem foi atribuído a ele e está sendo processado pela entrega.
+  * **[!UICONTROL Sent]**: esse status é copiado dos logs da entrega. Significa que a entrega foi enviada.
+  * **[!UICONTROL Ignored by the delivery]**: esse status é copiado dos logs da entrega. Ele significa que a entrega foi ignorada.
+  * **[!UICONTROL Delivery failed]**: esse status é copiado dos logs da entrega. Ele significa que a entrega falhou.
+  * **[!UICONTROL Event not taken into account]**: o evento não pôde ser vinculado a um modelo de mensagem. O evento não será processado.
 
 ### Cronograma do fluxo de trabalho de arquivamento
 

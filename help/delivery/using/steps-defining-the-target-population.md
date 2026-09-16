@@ -9,24 +9,31 @@ exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 TQID: https://experienceleague.adobe.com/0x1K997AEHhX-ozmIJH5I6NZPb388PKFkrXaK-EgoTY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1763
+workflow-type: tm+mt
+source-wordcount: '1773'
 ht-degree: 100%
-
 ---
-
 # Definir a população alvo {#defining-the-target-population}
 
 Para cada entrega, você poderá definir vários tipos de populações de destino.
@@ -150,12 +157,12 @@ As seguintes opções estão disponíveis:
 
   Por exemplo:
 
-   * Entrega de um boletim informativo ou entrega eletrônica de documentos. Nenhuma exclusão de duplicados, em alguns casos, se os dados não tiverem duplicados nativos. Um casal que faça assinatura usando o mesmo endereço de email poderá esperar receber duas mensagens de email personalizadas específicas: uma endereçada para cada pessoa por nome. Nesse caso, essa opção poderá ser desmarcada.
-   * Entrega de uma campanha de marketing: a exclusão dos duplicados é essencial para evitar o envio de muitas mensagens para o mesmo destinatário. Nesse caso, essa opção poderá ser selecionada.
+  * Entrega de um boletim informativo ou entrega eletrônica de documentos. Nenhuma exclusão de duplicados, em alguns casos, se os dados não tiverem duplicados nativos. Um casal que faça assinatura usando o mesmo endereço de email poderá esperar receber duas mensagens de email personalizadas específicas: uma endereçada para cada pessoa por nome. Nesse caso, essa opção poderá ser desmarcada.
+  * Entrega de uma campanha de marketing: a exclusão dos duplicados é essencial para evitar o envio de muitas mensagens para o mesmo destinatário. Nesse caso, essa opção poderá ser selecionada.
 
-     Se você desmarcar esta opção, poderá acessar uma opção adicional: **[!UICONTROL Keep duplicate records (same identifier)]**. Ela permite autorizar várias entregas a destinatários que atendem a vários critérios de direcionamento.
+    Se você desmarcar esta opção, poderá acessar uma opção adicional: **[!UICONTROL Keep duplicate records (same identifier)]**. Ela permite autorizar várias entregas a destinatários que atendem a vários critérios de direcionamento.
 
-     ![](assets/s_ncs_user_wizard_email02j.png)
+    ![](assets/s_ncs_user_wizard_email02j.png)
 
 * **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ou seja, destinatários cujos endereços de email estão na lista de bloqueios (“opt out”). Essa opção deve permanecer selecionada para observar a ética profissional de marketing digital e as leis que regem o comércio eletrônico.
 * **[!UICONTROL Exclude quarantined recipients]**. Essa opção permite excluir do target qualquer perfil que não responda. É altamente recomendável manter essa opção selecionada.

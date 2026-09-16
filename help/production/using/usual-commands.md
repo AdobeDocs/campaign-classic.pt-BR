@@ -3,7 +3,7 @@ product: campaign
 title: Comandos usuais
 description: Comandos usuais
 feature: Monitoring
-badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
@@ -11,17 +11,18 @@ exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 TQID: https://experienceleague.adobe.com/54ErpGUWBV076fqJIdr2ZsJlKVicuFf4xNgk-qDvvmQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 458
-ht-degree: 10%
-
+source-wordcount: '446'
+ht-degree: 7%
 ---
-
 # Comandos usuais{#usual-commands}
 
 
@@ -104,21 +105,21 @@ Para interromper serviços do Adobe Campaign, use um dos seguintes comandos:
 
 * Se você tiver acesso de raiz ou administrador:
 
-   * No Linux:
+  * No Linux:
 
-     ```sql
-     /etc/init.d/nlserver6 stop
-     ```
+    ```sql
+    /etc/init.d/nlserver6 stop
+    ```
 
-     >[!NOTE]
-     >
-     >A partir da versão 20.1, recomendamos usar o seguinte comando (para Linux): **systemctl stop nlserver**
+    >[!NOTE]
+    >
+    >A partir da versão 20.1, recomendamos usar o seguinte comando (para Linux): **systemctl stop nlserver**
 
-   * No Windows:
+  * No Windows:
 
-     ```sql
-     net stop nlserver6
-     ```
+    ```sql
+    net stop nlserver6
+    ```
 
 * Caso contrário, na conta do Adobe Campaign:
 
@@ -132,13 +133,13 @@ Da mesma forma, para reiniciar o Adobe Campaign, você pode usar um dos seguinte
 
 * Se você tiver acesso de raiz ou administrador:
 
-   * No Linux: `/etc/init.d/nlserver6 start`
+  * No Linux: `/etc/init.d/nlserver6 start`
 
-     >[!NOTE]
-     >
-     >A partir da versão 20.1, recomendamos usar o seguinte comando (para Linux): **systemctl start nlserver**
+    >[!NOTE]
+    >
+    >A partir da versão 20.1, recomendamos usar o seguinte comando (para Linux): **systemctl start nlserver**
 
-   * No Windows: `net start nlserver6`
+  * No Windows: `net start nlserver6`
 
 * Caso contrário, na conta do Adobe Campaign: **nlserver watchdog -svc -noconsole**
 

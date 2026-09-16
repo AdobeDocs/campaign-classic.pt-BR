@@ -8,9 +8,7 @@ source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
-
 ---
-
 # Impactos na versão de 3 dígitos do navegador nos componentes Web do Campaign {#version-100}
 
 A Google e a Mozilla estão avisando que o Chrome e o Firefox podem interromper alguns sites devido às próximas versões de 3 dígitos.

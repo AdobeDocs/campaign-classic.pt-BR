@@ -8,18 +8,20 @@ exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 TQID: https://experienceleague.adobe.com/dCnvgLZ-5ST-VJqWLXZ2c5XxXqXUxO1G78WnrCFyIqA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
-workflow-type: ht
-source-wordcount: 1187
+workflow-type: tm+mt
+source-wordcount: '1187'
 ht-degree: 100%
-
 ---
-
 # Iniciar um fluxo de trabalho {#starting-a-workflow}
 
 
@@ -75,14 +77,14 @@ Os botões da barra de ferramentas são detalhados nesta [seção](../../campaig
   As ações **[!UICONTROL Start / Pause / Stop / Restart]** também estão disponíveis por meio dos ícones de execução na barra de ferramentas. Para obter mais informações, consulte esta [seção](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
 
   Observe que a ação **Reiniciar** não limpa as variáveis da instância do fluxo de trabalho como as ações **Execução**, **Parar** e **Iniciar** (a limpeza das variáveis da instância ocorre a partir da ação Iniciar). Ao reiniciar um fluxo de trabalho, as variáveis da instância ainda estão disponíveis para uso com valores preservados. Para configurá-las, você pode:
-   * Executar as ações **Parar** e **Iniciar**.
-   * Adicionar o código Javascript abaixo no final da execução do fluxo de trabalho:
+  * Executar as ações **Parar** e **Iniciar**.
+  * Adicionar o código Javascript abaixo no final da execução do fluxo de trabalho:
 
-     ```
-     var wkf = xtk.workflow.load(instance.id)
-     wkf.variables='<variables/>'
-     wkf.save()
-     ```
+    ```
+    var wkf = xtk.workflow.load(instance.id)
+    wkf.variables='<variables/>'
+    wkf.save()
+    ```
 
 * **[!UICONTROL Purge history]**
 

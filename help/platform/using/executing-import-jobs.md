@@ -3,7 +3,7 @@ product: campaign
 title: Configurar processos de importação
 description: Saiba como configurar e executar processos de importação no Campaign
 feature: Overview
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -11,20 +11,24 @@ exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 TQID: https://experienceleague.adobe.com/OeRVFm6L-3N6yoIAKyTImaQb6d411UE8-NZ2jHu5VCc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 3009
+workflow-type: tm+mt
+source-wordcount: '3000'
 ht-degree: 100%
-
 ---
-
 # Configurar processos de importação {#executing-import-jobs}
 
 
@@ -83,21 +87,21 @@ O link **[!UICONTROL Advanced parameters]** permite acessar as seguintes opçõe
 
 * **[!UICONTROL General]** Guia
 
-   * **[!UICONTROL Stop execution if there are too many rejects]**
+  * **[!UICONTROL Stop execution if there are too many rejects]**
 
-     Essa opção é selecionada por padrão. Você pode desmarcá-la se quiser continuar a executar a importação independentemente do número de rejeições. Por padrão, a execução é interrompida se as primeiras 100 linhas forem rejeitadas.
+    Essa opção é selecionada por padrão. Você pode desmarcá-la se quiser continuar a executar a importação independentemente do número de rejeições. Por padrão, a execução é interrompida se as primeiras 100 linhas forem rejeitadas.
 
-   * **[!UICONTROL Trace mode]**
+  * **[!UICONTROL Trace mode]**
 
-     Selecione essa opção para controlar a execução da importação para cada linha.
+    Selecione essa opção para controlar a execução da importação para cada linha.
 
-   * **[!UICONTROL Start the job in a detached process]**
+  * **[!UICONTROL Start the job in a detached process]**
 
-     Essa opção é selecionada por padrão. Permite desanexar a execução da importação para que não afete outros processos em andamento no banco de dados.
+    Essa opção é selecionada por padrão. Permite desanexar a execução da importação para que não afete outros processos em andamento no banco de dados.
 
-   * **[!UICONTROL Do not update enumerations]**
+  * **[!UICONTROL Do not update enumerations]**
 
-     Selecione essa opção para evitar o enriquecimento da lista de valores enumerados no banco de dados. Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+    Selecione essa opção para evitar o enriquecimento da lista de valores enumerados no banco de dados. Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 
 * **[!UICONTROL Variables]** Guia
@@ -298,45 +302,45 @@ A próxima etapa do assistente de importação permite selecionar ou criar a pas
 
 * Clique nos links **[!UICONTROL Edit]** para selecionar a pasta, a lista ou o serviço ao qual deseja associar ou assinar os destinatários.
 
-   1. Importação para uma pasta
+  1. Importação para uma pasta
 
-      O link **[!UICONTROL Edit...]** da seção **[!UICONTROL Import into a folder]** permite selecionar ou criar a pasta para onde os destinatários serão importados. Por padrão, se nenhuma partição for definida, os dados serão importados para a pasta padrão do operador.
+     O link **[!UICONTROL Edit...]** da seção **[!UICONTROL Import into a folder]** permite selecionar ou criar a pasta para onde os destinatários serão importados. Por padrão, se nenhuma partição for definida, os dados serão importados para a pasta padrão do operador.
 
-      >[!NOTE]
-      >
-      >A pasta padrão de um operador é a primeira pasta que o operador tem acesso de gravação. Saiba mais em [Gerenciamento de acesso a pastas](../../platform/using/access-management-folders.md).
+     >[!NOTE]
+     >
+     >A pasta padrão de um operador é a primeira pasta que o operador tem acesso de gravação. Saiba mais em [Gerenciamento de acesso a pastas](../../platform/using/access-management-folders.md).
 
-      Para selecionar a pasta de importação, clique na seta à direita do campo **[!UICONTROL Folder]** e selecione a pasta correspondente. Você também pode usar o ícone **[!UICONTROL Select link]** para exibir a árvore em uma nova janela ou criar uma nova pasta.
+     Para selecionar a pasta de importação, clique na seta à direita do campo **[!UICONTROL Folder]** e selecione a pasta correspondente. Você também pode usar o ícone **[!UICONTROL Select link]** para exibir a árvore em uma nova janela ou criar uma nova pasta.
 
-      ![](assets/s_ncs_user_import_wizard05_2.png)
+     ![](assets/s_ncs_user_import_wizard05_2.png)
 
-      Para criar uma nova pasta, selecione o nó no qual deseja adicionar uma pasta e clique com o botão direito do mouse. Selecione **[!UICONTROL Create a new 'Recipients' folder]**.
+     Para criar uma nova pasta, selecione o nó no qual deseja adicionar uma pasta e clique com o botão direito do mouse. Selecione **[!UICONTROL Create a new 'Recipients' folder]**.
 
-      ![](assets/s_ncs_user_import_wizard05_3.png)
+     ![](assets/s_ncs_user_import_wizard05_3.png)
 
-      A pasta é adicionada abaixo do nó atual. Insira o nome da nova pasta, pressione Enter para confirmar, e depois clique em **[!UICONTROL OK]**.
+     A pasta é adicionada abaixo do nó atual. Insira o nome da nova pasta, pressione Enter para confirmar, e depois clique em **[!UICONTROL OK]**.
 
-      ![](assets/s_ncs_user_import_wizard05_4.png)
+     ![](assets/s_ncs_user_import_wizard05_4.png)
 
-   1. Associar com uma lista
+  1. Associar com uma lista
 
-      O link **[!UICONTROL Edit...]** na seção **[!UICONTROL Add recipients to a list]** permite selecionar ou criar uma lista para onde os destinatários serão importados.
+     O link **[!UICONTROL Edit...]** na seção **[!UICONTROL Add recipients to a list]** permite selecionar ou criar uma lista para onde os destinatários serão importados.
 
-      ![](assets/s_ncs_user_import_wizard05_5.png)
+     ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Você pode criar uma nova lista para esses destinatários clicando em **[!UICONTROL Select link]** e depois em **[!UICONTROL Create]**. A criação e o gerenciamento de listas são apresentados [nesta seção](../../platform/using/creating-and-managing-lists.md).
+     Você pode criar uma nova lista para esses destinatários clicando em **[!UICONTROL Select link]** e depois em **[!UICONTROL Create]**. A criação e o gerenciamento de listas são apresentados [nesta seção](../../platform/using/creating-and-managing-lists.md).
 
-      ![](assets/s_ncs_user_import_wizard05_6.png)
+     ![](assets/s_ncs_user_import_wizard05_6.png)
 
-      Você pode decidir adicionar os destinatários aos já presentes em uma lista ou para recriar a lista com os novos destinatários. Nesse caso, se a lista já continha destinatários, eles serão excluídos e substituídos pelos destinatários importados.
+     Você pode decidir adicionar os destinatários aos já presentes em uma lista ou para recriar a lista com os novos destinatários. Nesse caso, se a lista já continha destinatários, eles serão excluídos e substituídos pelos destinatários importados.
 
-   1. Como assinar um serviço
+  1. Como assinar um serviço
 
-      Para inscrever todos os destinatários importados para um serviço de informações, clique no link **[!UICONTROL Edit...]** da seção **[!UICONTROL Subscribe recipients to a service]** para selecionar ou criar o serviço de informações ao qual os destinatários serão inscritos. Você pode selecionar a opção **[!UICONTROL Send a confirmation message]**: o conteúdo desta mensagem é definido no modelo da entrega associado ao serviço de assinatura.
+     Para inscrever todos os destinatários importados para um serviço de informações, clique no link **[!UICONTROL Edit...]** da seção **[!UICONTROL Subscribe recipients to a service]** para selecionar ou criar o serviço de informações ao qual os destinatários serão inscritos. Você pode selecionar a opção **[!UICONTROL Send a confirmation message]**: o conteúdo desta mensagem é definido no modelo da entrega associado ao serviço de assinatura.
 
-      ![](assets/s_ncs_user_import_wizard05_7.png)
+     ![](assets/s_ncs_user_import_wizard05_7.png)
 
-      É possível criar um novo serviço para esses destinatários clicando em **[!UICONTROL Select link]** e depois no ícone **[!UICONTROL Create]**. O gerenciamento dos serviços de informação é apresentado [nesta seção](../../delivery/using/managing-subscriptions.md).
+     É possível criar um novo serviço para esses destinatários clicando em **[!UICONTROL Select link]** e depois no ícone **[!UICONTROL Create]**. O gerenciamento dos serviços de informação é apresentado [nesta seção](../../delivery/using/managing-subscriptions.md).
 
 * Use o campo **[!UICONTROL Origin]** para adicionar informações sobre a origem dos destinatários aos perfis. Essas informações são particularmente úteis na estrutura de uma importação múltipla.
 

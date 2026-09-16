@@ -2,29 +2,35 @@
 product: campaign
 title: Crie seu primeiro relatório de análise descritiva
 description: Saiba como usar o assistente para criar o seu primeiro relatório de análise descritiva
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 TQID: https://experienceleague.adobe.com/ilSq3cfWpljwwRtjgjbgJe2NmBFnPJhIK5e0PMBMJVI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic Reporting
 subfeature_v2:
   - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
+    internal-label: Customize reports
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
+    internal-label: Cubes and multidimensional analysis
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1587
+workflow-type: tm+mt
+source-wordcount: '1578'
 ht-degree: 100%
-
 ---
-
 # Crie seu primeiro relatório de análise descritiva {#using-the-descriptive-analysis-wizard}
 
 Para criar um relatório de análise descritiva, use o assistente dedicado. A configuração depende dos dados a serem analisados e da renderização desejada.
@@ -180,17 +186,17 @@ As seguintes operações são possíveis:
 
   Para fazer isso:
 
-   1. Calcule o total de compras.
+  1. Calcule o total de compras.
 
-      ![](assets/report_compute_data_sample2.png)
+     ![](assets/report_compute_data_sample2.png)
 
-   1. Esta estatística não será exibida na tabela. É necessário desmarcar a opção **[!UICONTROL Display in the table]** da guia **[!UICONTROL Advanced]**.
+  1. Esta estatística não será exibida na tabela. É necessário desmarcar a opção **[!UICONTROL Display in the table]** da guia **[!UICONTROL Advanced]**.
 
-      ![](assets/report_compute_data_sample3.png)
+     ![](assets/report_compute_data_sample3.png)
 
-   1. Crie uma nova estatística do tipo **[!UICONTROL Calculated field]** e insira a seguinte fórmula no campo **[!UICONTROL User function]**: **@purchases/@count**.
+  1. Crie uma nova estatística do tipo **[!UICONTROL Calculated field]** e insira a seguinte fórmula no campo **[!UICONTROL User function]**: **@purchases/@count**.
 
-      ![](assets/report_compute_data_sample4.png)
+     ![](assets/report_compute_data_sample4.png)
 
 ### Exibir o relatório {#displaying-the-report}
 

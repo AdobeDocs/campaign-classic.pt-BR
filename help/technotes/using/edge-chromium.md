@@ -7,18 +7,19 @@ exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
 TQID: https://experienceleague.adobe.com/6CrzuBxAxGlXi08NxwdnigO2bNu700luLxnz-3KzZ18
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 274
+source-wordcount: '274'
 ht-degree: 10%
-
 ---
-
 # Como ativar o Microsoft Edge Chromium no seu ambiente {#edge-conf}
 
 ## O que mudou?
@@ -45,25 +46,25 @@ Se seu ambiente tiver sido atualizado para o Campaign Classic v7.3 (ou posterior
 
   Para fazer isso, aplique as seguintes etapas em todos os seus ambientes (MKT, MID, RT):
 
-   1. Editar o arquivo de configuração do servidor do Campaign (`serverConf.xml`)
-   1. No módulo `<web>`, defina `webView2Mode = "1"`
-   1. Execute o seguinte comando para recarregar a configuração do servidor:
+  1. Editar o arquivo de configuração do servidor do Campaign (`serverConf.xml`)
+  1. No módulo `<web>`, defina `webView2Mode = "1"`
+  1. Execute o seguinte comando para recarregar a configuração do servidor:
 
-      ```
-      nlserver config -reload
-      ```
+     ```
+     nlserver config -reload
+     ```
 
-   1. Execute o seguinte comando para reiniciar o servidor Web:
+  1. Execute o seguinte comando para reiniciar o servidor Web:
 
-      ```
-      nlserver restart web
-      ```
+     ```
+     nlserver restart web
+     ```
 
-   1. Se o ambiente usar o Apache como um servidor Web, execute o seguinte comando para reiniciar o Apache:
+  1. Se o ambiente usar o Apache como um servidor Web, execute o seguinte comando para reiniciar o Apache:
 
-      ```
-      /etc/init.d/apache2 restart
-      ```
+     ```
+     /etc/init.d/apache2 restart
+     ```
 
 
 >[!NOTE]

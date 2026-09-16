@@ -10,18 +10,19 @@ exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 TQID: https://experienceleague.adobe.com/geVW1WFvlnZJmiLeaI01ww-TsQvEN3-zpr57jmz2Miw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 630
-ht-degree: 34%
-
+source-wordcount: '630'
+ht-degree: 37%
 ---
-
 # Configurações de segurança do servidor {#server-configuration}
 
 ## Proteção de upload de arquivo
@@ -51,7 +52,7 @@ Se você estiver usando nomes de host diferentes (um público e um para operador
 
 ## Proteção de conexão de saída
 
-A lista padrão de URLs que podem ser chamados por códigos JavaScript (workflows etc.) é limitada. Para permitir uma nova URL, o administrador precisa referenciá-la no [arquivo serverConf.xml](../../installation/using/the-server-configuration-file.md).
+A lista padrão de URLs que podem ser chamadas por códigos JavaScript (fluxos de trabalho etc.) é limitada. Para permitir uma nova URL, o administrador precisa referenciá-la no [arquivo serverConf.xml](../../installation/using/the-server-configuration-file.md).
 
 Existem três modos de proteção de conexão:
 

@@ -10,17 +10,17 @@ exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 TQID: https://experienceleague.adobe.com/pex7wiGCNMdY86-Ug7dyLxE3RRT-ejlgz8eH7zVmZc4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: ht
-source-wordcount: 708
+workflow-type: tm+mt
+source-wordcount: '708'
 ht-degree: 100%
-
 ---
-
 # Processamento de evento {#about-event-processing}
 
 
@@ -92,8 +92,8 @@ O **Histórico de Eventos**, em **[!UICONTROL Event history]** > **[!UICONTROL M
 
 * **Pendente**: o evento pode ser:
 
-   * um evento que foi recém-coletado e que ainda não foi processado. A coluna **[!UICONTROL Number of errors]** mostra o valor 0. O modelo de email ainda não foi vinculado.
-   * um evento processado, mas cuja confirmação está incorreta. A coluna **[!UICONTROL Number of errors]** mostra um valor que não é 0. Para saber quando esse evento será processado novamente, consulte a coluna **[!UICONTROL Process requested on]**.
+  * um evento que foi recém-coletado e que ainda não foi processado. A coluna **[!UICONTROL Number of errors]** mostra o valor 0. O modelo de email ainda não foi vinculado.
+  * um evento processado, mas cuja confirmação está incorreta. A coluna **[!UICONTROL Number of errors]** mostra um valor que não é 0. Para saber quando esse evento será processado novamente, consulte a coluna **[!UICONTROL Process requested on]**.
 
 * **Entrega pendente**: o evento foi processado e o modelo de entrega foi vinculado. A entrega do email está pendente e o processo de entrega clássico é aplicado. Para obter mais informações, é possível abrir a entrega.
 * **Enviado**, **Ignorado** e **Erro de entrega**: esses status de entrega são recuperados por meio do fluxo de trabalho **updateEventsStatus**. Para obter mais informações, você poderá abrir a entrega relevante.

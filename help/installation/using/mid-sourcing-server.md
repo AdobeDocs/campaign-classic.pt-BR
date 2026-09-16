@@ -3,7 +3,7 @@ product: campaign
 title: Instalação de um servidor mid-sourcing no Campaign
 description: Esta seção detalha a instalação e a configuração de um servidor mid-sourcing no Campaign
 feature: Installation, Instance Settings
-badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -12,11 +12,9 @@ feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1084
-ht-degree: 5%
-
+source-wordcount: '1072'
+ht-degree: 4%
 ---
-
 # Servidor Mid-sourcing{#mid-sourcing-server}
 
 
@@ -141,9 +139,9 @@ O atributo &#39;@name&#39; deve respeitar as seguintes regras:
 
 &#39;marketing_account_operator_name&#39; está relacionado ao nome interno da conta de mid-sourcing declarada na instância de mid-sourcing.
 
-&#39;affinity_name&#39; está relacionado ao nome arbitrário fornecido para a afinidade. Esse nome deve ser exclusivo. Os caracteres autorizados são `[a-z]` `[A-Z]` `[0-9]`. O objetivo é declarar um grupo de endereços IP públicos.
+&#39;affinity_name&#39; está relacionado ao nome arbitrário fornecido para a afinidade. Esse nome deve ser exclusivo. Os caracteres autorizados são `[a-z]`&#x200B;`[A-Z]`&#x200B;`[0-9]`. O objetivo é declarar um grupo de endereços IP públicos.
 
-&#39;affinity_group&#39; relaciona a subafinidade declarada no target mapping usado em cada um dos deliveries. A última parte, incluindo &#39;.&#39;, é ignorada se não houver subafinidade. Os caracteres autorizados são `[a-z]` `[A-Z]` `[0-9]`.
+&#39;affinity_group&#39; relaciona a subafinidade declarada no target mapping usado em cada um dos deliveries. A última parte, incluindo &#39;.&#39;, é ignorada se não houver subafinidade. Os caracteres autorizados são `[a-z]`&#x200B;`[A-Z]`&#x200B;`[0-9]`.
 
 Você deve interromper e reiniciar o servidor para que a modificação seja considerada.
 

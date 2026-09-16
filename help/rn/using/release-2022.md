@@ -10,25 +10,31 @@ exl-id: 28490323-41d0-4d61-b309-6892fb826d21
 TQID: https://experienceleague.adobe.com/8QWEJN9tpxBdDZlYqEmY2JIuxWPShtfRxCUf6thXXWA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 2151
+workflow-type: tm+mt
+source-wordcount: '2151'
 ht-degree: 100%
-
 ---
-
 # Versões de 2022{#release-2022}
 
 ## Versão 7.3.1 - Build 9352 {#release-7-3-1}
@@ -149,14 +155,14 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 
   Correções críticas foram aplicadas em relação à API da web do Microsoft Dynamics Connector:
 
-   * Correção de um problema durante uma importação acionada por um fluxo de trabalho, que fazia com que os valores nulos de campos do tipo string fossem salvos como Null em vez de valores vazios.
-   * Correção de um problema que resultava no seguinte erro para importação ou exportação de dados usando chamadas de API da Web: “URI inválido: o esquema de URI é muito longo”.
-   * Correção de vários problemas ao importar dados contendo campos de pesquisa a partir do Microsoft Dynamics 365.
+  * Correção de um problema durante uma importação acionada por um fluxo de trabalho, que fazia com que os valores nulos de campos do tipo string fossem salvos como Null em vez de valores vazios.
+  * Correção de um problema que resultava no seguinte erro para importação ou exportação de dados usando chamadas de API da Web: “URI inválido: o esquema de URI é muito longo”.
+  * Correção de vários problemas ao importar dados contendo campos de pesquisa a partir do Microsoft Dynamics 365.
 
 * Conector FDA do Google BigQuery
 
-   * O conector FDA do Google BigQuery agora está disponível para implantações hospedadas. [Leia mais](../../installation/using/configure-fda-google-big-query.md)
-   * Adicionado suporte para habilitar conexões com um servidor proxy para o conector FDA do Google BigQuery. As opções de proxy necessárias podem ser definidas no campo Opções, na configuração da conta externa. [Leia mais](../../installation/using/configure-fda-google-big-query.md#google-external)
+  * O conector FDA do Google BigQuery agora está disponível para implantações hospedadas. [Leia mais](../../installation/using/configure-fda-google-big-query.md)
+  * Adicionado suporte para habilitar conexões com um servidor proxy para o conector FDA do Google BigQuery. As opções de proxy necessárias podem ser definidas no campo Opções, na configuração da conta externa. [Leia mais](../../installation/using/configure-fda-google-big-query.md#google-external)
 
 **Outras alterações**
 

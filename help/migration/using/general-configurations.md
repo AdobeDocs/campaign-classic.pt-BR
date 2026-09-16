@@ -10,11 +10,9 @@ hide: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2548'
 ht-degree: 1%
-
 ---
-
 # Configurações gerais{#general-configurations}
 
 Esta seção detalha a configuração a ser executada no Adobe Campaign v7 ao migrar de uma v5.11 ou v6.02.
@@ -30,11 +28,11 @@ Além disso:
 
 Na v6.02, o modo &quot;fuso horário múltiplo&quot; só estava disponível para mecanismos de banco de dados PostgreSQL. Agora ele é oferecido independentemente do tipo de mecanismo de banco de dados usado. É altamente recomendável transformar sua base em uma base de &quot;fuso horário múltiplo&quot;.
 
-Para usar o modo TIMESTAMP WITH TIMEZONE, também é necessário adicionar a opção **-userTimestamp:1** à linha de comando postupgrade.
+Para usar o modo TIMESTAMP WITH TIMEZONE, também é necessário adicionar a opção **-userTimestamptz:1** à linha de comando postupgrade.
 
 >[!IMPORTANT]
 >
->Se o parâmetro **-usetimestamptz:1** for usado com um mecanismo de banco de dados incompatível, seu banco de dados será corrompido e você terá que restaurar um backup do banco de dados e executar novamente o comando acima.
+>Se o parâmetro **-usetimestamptz:1** for usado com um mecanismo de banco de dados incompatível, o banco de dados será corrompido e você terá que restaurar um backup do banco de dados e executar novamente o comando acima.
 
 >[!NOTE]
 >

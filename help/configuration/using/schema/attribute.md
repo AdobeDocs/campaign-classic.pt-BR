@@ -10,17 +10,18 @@ exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
 TQID: https://experienceleague.adobe.com/kd15Dm8jY6xE0RpGTImgoL27wDbYmvuuLs-jK4-BwVo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: '1573'
 ht-degree: 1%
-
 ---
-
 # elemento attribute {#attribute--element}
 
 
@@ -58,11 +59,11 @@ A sequência em que `<attribute>` elementos são definidos em um `<srcschema>` n
 
   Os valores acessíveis são:
 
-   * &quot;none&quot;: apenas reconciliação. Isso significa que o Adobe Campaign recuperará o elemento sem atualizá-lo ou gerar um erro se ele não existir.
-   * &quot;insertOrUpdate&quot;: atualização com inserção. Isso significa que o Adobe Campaign atualizará o elemento ou o criará se ele não existir.
-   * &quot;insert&quot;: inserção. Isso significa que o Adobe Campaign inserirá o elemento sem verificar se ele existe.
-   * &quot;update&quot;: atualização. Isso significa que o Adobe Campaign atualizará o elemento ou gerará um erro se ele não existir.
-   * &quot;delete&quot;: exclusão. Isso significa que o Adobe Campaign recuperará e excluirá elementos.
+  * &quot;none&quot;: apenas reconciliação. Isso significa que o Adobe Campaign recuperará o elemento sem atualizá-lo ou gerar um erro se ele não existir.
+  * &quot;insertOrUpdate&quot;: atualização com inserção. Isso significa que o Adobe Campaign atualizará o elemento ou o criará se ele não existir.
+  * &quot;insert&quot;: inserção. Isso significa que o Adobe Campaign inserirá o elemento sem verificar se ele existe.
+  * &quot;update&quot;: atualização. Isso significa que o Adobe Campaign atualizará o elemento ou gerará um erro se ele não existir.
+  * &quot;delete&quot;: exclusão. Isso significa que o Adobe Campaign recuperará e excluirá elementos.
 
 * **advanced (booleano)**: quando esta opção é ativada (@advanced=&quot;true&quot;), ela permite ocultar o atributo na lista de campos disponíveis acessíveis para configurar uma lista em um formulário.
 * **applicableIf (string)**: este atributo permite que você torne os campos opcionais. O elemento `<attribute>` será considerado ao atualizar o banco de dados quando a restrição for atendida. &quot;applicableIf&quot; recebe uma expressão XTK.
@@ -70,14 +71,14 @@ A sequência em que `<attribute>` elementos são definidos em um `<srcschema>` n
 * **belongingTo (string)**: pega o nome e o namespace da tabela que compartilha o campo e preenche o esquema no qual o atributo é declarado. (usado somente em um `<schema>`).
 * **dataPolicy (cadeia de caracteres)**: permite que você especifique restrições de aprovação em valores permitidos no campo SQL ou XML. Os valores para este atributo são:
 
-   * &quot;none&quot;: sem valor
-   * &quot;smartCase&quot;: primeiras letras maiúsculas
-   * &quot;lowerCase&quot;: todas em minúsculas
-   * &quot;upperCase&quot;: todas maiúsculas
-   * &quot;email&quot;: endereço de email
-   * &quot;phone&quot;: número de telefone
-   * &quot;identifier&quot;: nome do identificador
-   * &quot;resIdentifier&quot;: nome de arquivo
+  * &quot;none&quot;: sem valor
+  * &quot;smartCase&quot;: primeiras letras maiúsculas
+  * &quot;lowerCase&quot;: todas em minúsculas
+  * &quot;upperCase&quot;: todas maiúsculas
+  * &quot;email&quot;: endereço de email
+  * &quot;phone&quot;: número de telefone
+  * &quot;identifier&quot;: nome do identificador
+  * &quot;resIdentifier&quot;: nome de arquivo
 
 * **dbEnum (cadeia de caracteres)**: recebe o nome interno de uma enumeração &quot;fechada&quot;. Os valores de enumeração devem ser definidos em `<srcschema>`.
 * **defOnDuplicate (booleano)**: se este atributo for ativado, quando um registro for duplicado o valor padrão (definido em @default) será automaticamente reaplicado ao registro.
@@ -88,13 +89,13 @@ A sequência em que `<attribute>` elementos são definidos em um `<srcschema>` n
 * **expr (cadeia de caracteres)**: define uma expressão de pré-cálculo de campo. Este atributo recebe um Xpath ou uma expressão XTK.
 * **recurso (cadeia de caracteres)**: define um campo de características: esses campos são usados para estender os dados em uma tabela existente, mas com armazenamento em uma tabela de anexos. Os valores aceitos são:
 
-   * &quot;shared&quot;: o conteúdo é armazenado em uma tabela compartilhada por tipo de dados
-   * &quot;dedicated&quot;: o conteúdo é armazenado em uma tabela dedicada
+  * &quot;shared&quot;: o conteúdo é armazenado em uma tabela compartilhada por tipo de dados
+  * &quot;dedicated&quot;: o conteúdo é armazenado em uma tabela dedicada
 
   As tabelas de características SQL são criadas automaticamente com base no tipo de característica:
 
-   * dedicado: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * compartilhado: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+  * dedicado: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
+  * compartilhado: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   Há dois tipos de campos de características: campos oà<sup>1</sup> simples, onde um único valor é autorizado na característica, e campos oà<sup>1</sup> de múltipla escolha, onde a característica é vinculada a um elemento de coleção que pode conter vários valores.
 
@@ -109,19 +110,19 @@ A sequência em que `<attribute>` elementos são definidos em um `<srcschema>` n
 
   Quando o esquema é gravado no banco de dados, os prefixos são adicionados automaticamente ao nome do campo pelo Adobe Campaign:
 
-   * &quot;i&quot;: prefixo para o tipo &quot;inteiro&quot;.
-   * &quot;d&quot;: prefixo do tipo &quot;double&quot;.
-   * &quot;s&quot;: prefixo do tipo de sequência de caracteres.
-   * &quot;ts&quot;: prefixo do tipo &quot;date&quot;.
+  * &quot;i&quot;: prefixo para o tipo &quot;inteiro&quot;.
+  * &quot;d&quot;: prefixo do tipo &quot;double&quot;.
+  * &quot;s&quot;: prefixo do tipo de sequência de caracteres.
+  * &quot;ts&quot;: prefixo do tipo &quot;date&quot;.
 
   Para definir totalmente o nome do campo na tabela, use a opção &quot;@sqlname&quot; ao definir um atributo.
 
 * **notNull (booleano)**: permite redefinir o comportamento do Adobe Campaign em relação ao gerenciamento de registros NULL no banco de dados. Por padrão, os campos numéricos não são nulos e os campos de tipo de string e data podem ser nulos.
 * **pkgStatus (string)**: durante as exportações de pacote, os valores são considerados, dependendo do valor de &quot;@pkgStatus&quot;:
 
-   * &quot;always&quot;: sempre presente
-   * &quot;never&quot;: nunca presente
-   * &quot;default (or Nothing)&quot;: o valor é exportado, exceto se for o valor padrão ou se não for um campo interno que não seria compatível com outras instâncias.
+  * &quot;always&quot;: sempre presente
+  * &quot;never&quot;: nunca presente
+  * &quot;default (or Nothing)&quot;: o valor é exportado, exceto se for o valor padrão ou se não for um campo interno que não seria compatível com outras instâncias.
 
 * **ref (cadeia de caracteres)**: este atributo define uma referência a um elemento `<attribute>` compartilhado por vários esquemas (fatoração de definição). A definição não é copiada para o esquema atual.
 * **obrigatório (booleano)**: se este atributo estiver ativado (@required=&quot;true&quot;), o campo será realçado na interface. O rótulo do campo será vermelho nos formulários.
@@ -137,32 +138,32 @@ A sequência em que `<attribute>` elementos são definidos em um `<srcschema>` n
 
   Lista de tipos disponíveis:
 
-   * QUALQUER UMA
-   * compartimento
-   * blob
-   * booleano
-   * byte
-   * CDATA
-   * data e hora
-   * datetimetz
-   * datetimenotz
-   * data
-   * duplo
-   * enum
-   * flutuante
-   * html
-   * int64
-   * link
-   * longo
-   * nota
-   * MNTOKEN
-   * por cento
-   * primarykey
-   * curto
-   * sequência de caracteres
-   * tempo
-   * intervalo de tempo
-   * uuid
+  * QUALQUER UMA
+  * compartimento
+  * blob
+  * booleano
+  * byte
+  * CDATA
+  * data e hora
+  * datetimetz
+  * datetimenotz
+  * data
+  * duplo
+  * enum
+  * flutuante
+  * html
+  * int64
+  * link
+  * longo
+  * nota
+  * MNTOKEN
+  * por cento
+  * primarykey
+  * curto
+  * sequência de caracteres
+  * tempo
+  * intervalo de tempo
+  * uuid
 
   Se o atributo &quot;@type&quot; for deixado em branco, o Adobe Campaign vinculará uma string de caracteres (STRING) com um comprimento de 100 ao campo, por padrão.
 

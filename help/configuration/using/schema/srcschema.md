@@ -10,18 +10,20 @@ exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
 TQID: https://experienceleague.adobe.com/nUdM-iVzh7yI2Z3ZnFh5JK8FDZpmHAR1crzEb9S5xYg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3
+    internal-label: Schema extension
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 459
+source-wordcount: '459'
 ht-degree: 1%
-
 ---
-
 # elemento srcschema {#srcschema--element}
 
 
@@ -71,10 +73,10 @@ A apresentação do esquema está disponível em [Sobre a referência do esquema
 * **biblioteca (booleano)**: uso do esquema como uma biblioteca e não como uma entidade. Portanto, esse schema pode ser referenciado por outros schemas graças aos atributos &quot;@ref&quot; e &quot;@template&quot;.
 * **mappingType (cadeia de caracteres)**:
 
-   * &quot;sql&quot;: mapeamento de banco de dados
-   * &quot;textFile&quot;: mapeamento de arquivo de texto
-   * &quot;xmlFile&quot;: mapeamento de arquivo de texto em formato XML
-   * &quot;binaryFile&quot;: mapeamento de arquivo binário
+  * &quot;sql&quot;: mapeamento de banco de dados
+  * &quot;textFile&quot;: mapeamento de arquivo de texto
+  * &quot;xmlFile&quot;: mapeamento de arquivo de texto em formato XML
+  * &quot;binaryFile&quot;: mapeamento de arquivo binário
 
 * **modifiedBy-id (long)**: corresponde ao identificador do operador que alterou o esquema.
 * **nome (cadeia de caracteres)**: nome de esquema exclusivo.

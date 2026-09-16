@@ -3,7 +3,7 @@ product: campaign
 title: Configuração técnica de email
 description: Saiba como configurar o Campaign para controlar a saída de suas instâncias ao entregar emails
 feature: Installation, Deliverability
-badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,23 +11,29 @@ exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 TQID: https://experienceleague.adobe.com/JRN8-kfrbG-UDAJz8wShf-0vi-LyqrUBxNBa3wn83cc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 3163
+source-wordcount: '3151'
 ht-degree: 15%
-
 ---
-
 # Configurações técnicas de email{#email-deliverability}
 
 
@@ -258,14 +264,14 @@ Os seguintes parâmetros disponíveis para cada regra são:
 
   Por exemplo, os seguintes endereços:
 
-   * a.mx.yahoo.com
-   * b.mx.yahoo.com
-   * c.mx.yahoo.com
+  * a.mx.yahoo.com
+  * b.mx.yahoo.com
+  * c.mx.yahoo.com
 
   são compatíveis com as seguintes máscaras:
 
-   * &#42;.yahoo.com
-   * ?.mx.yahoo.com
+  * &#42;.yahoo.com
+  * ?.mx.yahoo.com
 
   Por exemplo, para o endereço de email foobar@gmail.com, o domínio é gmail.com e o registro MX é:
 
@@ -281,8 +287,8 @@ Os seguintes parâmetros disponíveis para cada regra são:
 
 * **[!UICONTROL Range of identifiers]**: essa opção permite indicar os intervalos de identificadores (publicID) aos quais a regra se aplica. Você pode especificar:
 
-   * Um número: a regra será aplicada somente a essa publicId,
-   * Um intervalo de números (**number1-number2**): a regra será aplicada a todas as publicIds entre esses dois números.
+  * Um número: a regra será aplicada somente a essa publicId,
+  * Um intervalo de números (**number1-number2**): a regra será aplicada a todas as publicIds entre esses dois números.
 
   >[!NOTE]
   >
@@ -306,14 +312,14 @@ Os seguintes parâmetros disponíveis para cada regra são:
 * **[!UICONTROL Timeout]**: tempo máximo de espera para outras trocas com o servidor SMTP.
 * **[!UICONTROL TLS]**: O protocolo TLS, que permite criptografar entregas de email, pode ser habilitado seletivamente. Para cada máscara MX, as seguintes opções estão disponíveis:
 
-   * **[!UICONTROL Default configuration]**: esta é a configuração geral especificada no arquivo de configuração serverConf.xml que é aplicada.
+  * **[!UICONTROL Default configuration]**: esta é a configuração geral especificada no arquivo de configuração serverConf.xml que é aplicada.
 
-     >[!IMPORTANT]
-     >
-     >Não é recomendável modificar a configuração padrão.
+    >[!IMPORTANT]
+    >
+    >Não é recomendável modificar a configuração padrão.
 
-   * **[!UICONTROL Disabled]** : As mensagens são enviadas sistematicamente sem criptografia.
-   * **[!UICONTROL Opportunistic]**: a entrega de mensagens é criptografada se o servidor de recebimento (SMTP) puder gerar o protocolo TLS.
+  * **[!UICONTROL Disabled]** : As mensagens são enviadas sistematicamente sem criptografia.
+  * **[!UICONTROL Opportunistic]**: a entrega de mensagens é criptografada se o servidor de recebimento (SMTP) puder gerar o protocolo TLS.
 
 Exemplo de configuração:
 

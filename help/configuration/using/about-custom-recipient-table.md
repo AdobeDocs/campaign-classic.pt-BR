@@ -4,27 +4,31 @@ title: Sobre tabela de destinatário personalizada
 description: Sobre tabela de destinatário personalizada
 feature: Configuration, Custom Resources
 role: User, Developer
-badge-v8: label="Também se aplica ao v8" type="Positive" tooltip="Também se aplica ao Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
 TQID: https://experienceleague.adobe.com/Okjz7RRmzZCTCBNbBqR1nHDq7ML8WjrJrs1XR0aDZSE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 692
-ht-degree: 3%
-
+source-wordcount: '683'
+ht-degree: 2%
 ---
-
 # Usar tabela de destinatário personalizada{#about-custom-recipient-table}
 
 Esta seção detalha os princípios para usar uma tabela de recipient personalizada (ou externa).
@@ -55,8 +59,8 @@ O uso de uma tabela de recipient personalizada tem as seguintes limitações:
 
   Recomendamos:
 
-   * Dedicando os esquemas **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** ao **[!UICONTROL nms:Recipientschema]** pronto para uso. Essas duas tabelas de log não devem estar vinculadas a nenhuma tabela de recipient personalizada adicional.
-   * Definição de esquemas broadlog e trackinglog personalizados dedicados para cada novo esquema de recipient personalizado. Isso pode ser feito automaticamente ao configurar o target mapping, consulte [Target mapping](../../configuration/using/target-mapping.md).
+  * Dedicando os esquemas **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** ao **[!UICONTROL nms:Recipientschema]** pronto para uso. Essas duas tabelas de log não devem estar vinculadas a nenhuma tabela de recipient personalizada adicional.
+  * Definição de esquemas broadlog e trackinglog personalizados dedicados para cada novo esquema de recipient personalizado. Isso pode ser feito automaticamente ao configurar o target mapping, consulte [Target mapping](../../configuration/using/target-mapping.md).
 
 * Você não pode usar o **[!UICONTROL Services and Subscriptions]** padrão oferecido no produto.
 

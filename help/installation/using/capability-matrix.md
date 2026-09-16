@@ -7,15 +7,14 @@ exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 TQID: https://experienceleague.adobe.com/kHWVPyk02eyH47xBzGgik3fq6BSHGKpDXPMrEuVaYM8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 323
-ht-degree: 43%
-
+source-wordcount: '323'
+ht-degree: 54%
 ---
-
 # Matriz de recursos por modelo{#capability-matrix-per-model}
 
 
@@ -30,17 +29,17 @@ Os diferentes modelos de hospedagem foram introduzidos [nesta seção](../../ins
 
 | Recurso | Hospedado | Híbrido | No local | Detalhes |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configurar o servidor do Campaign | Sob demanda | Disponível | Disponível | [Saiba mais](../../installation/using/the-server-configuration-file.md) |
-| CCO de email | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../installation/using/email-archiving.md) |
-| Gerenciar instância de execução do Centro de mensagens | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../message-center/using/about-transactional-messaging.md) |
-| Gerenciamento da plataforma Mid-sourcing | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../installation/using/mid-sourcing-server.md) |
-| Renderização da caixa de entrada via Litmus | Sob demanda | Sob demanda | Disponível | [Saiba mais](../../delivery/using/inbox-rendering.md) |
-| Integração com IMS (Adobe ID) | Sob demanda | Sob demanda | Sob demanda | [Saiba mais](../../integrations/using/about-adobe-id.md) |
-| Criptografar/descriptografar dados para transferências de arquivos | Sob demanda | Disponível | Disponível | [Saiba mais](../../platform/using/unzip-decrypt.md) |
-| Compactação/descompactação de arquivos | Sob demanda | Disponível | Disponível | [Saiba mais](../../platform/using/unzip-decrypt.md) |
-| Delegação de nome de domínio | Sob demanda | Sob demanda | Indisponível | [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR) |
-| Instalação do SpamAssassin | Sob demanda | Disponível | Disponível | [Saiba mais](../../delivery/using/spamassassin.md) |
-| Acesso aos relatórios de entrega | Disponível | Sob demanda | Disponível | [Saiba mais](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
+| Configurar o servidor do Campaign | Por demanda | Disponível | Disponível | [Saiba mais](../../installation/using/the-server-configuration-file.md) |
+| CCO de email | Por demanda | Por demanda | Disponível | [Saiba mais](../../installation/using/email-archiving.md) |
+| Gerenciar instância de execução do Centro de mensagens | Por demanda | Por demanda | Disponível | [Saiba mais](../../message-center/using/about-transactional-messaging.md) |
+| Gerenciamento da plataforma Mid-sourcing | Por demanda | Por demanda | Disponível | [Saiba mais](../../installation/using/mid-sourcing-server.md) |
+| Renderização da caixa de entrada via Litmus | Por demanda | Por demanda | Disponível | [Saiba mais](../../delivery/using/inbox-rendering.md) |
+| Integração com IMS (Adobe ID) | Por demanda | Por demanda | Por demanda | [Saiba mais](../../integrations/using/about-adobe-id.md) |
+| Criptografar/descriptografar dados para transferências de arquivos | Por demanda | Disponível | Disponível | [Saiba mais](../../platform/using/unzip-decrypt.md) |
+| Compactação/descompactação de arquivos | Por demanda | Disponível | Disponível | [Saiba mais](../../platform/using/unzip-decrypt.md) |
+| Delegação de nome de domínio | Por demanda | Por demanda | Indisponível | [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR) |
+| Instalação do SpamAssassin | Por demanda | Disponível | Disponível | [Saiba mais](../../delivery/using/spamassassin.md) |
+| Acesso aos relatórios de entrega | Disponível | Por demanda | Disponível | [Saiba mais](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | Configuração da autenticação LDAP | Indisponível | Disponível | Disponível | [Saiba mais](../../installation/using/connecting-through-ldap.md) |
 
 

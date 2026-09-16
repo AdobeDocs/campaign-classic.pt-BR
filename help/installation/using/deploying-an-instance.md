@@ -3,7 +3,7 @@ product: campaign
 title: Implantação de uma instância
 description: Saiba mais sobre o assistente de implantação do Campaign
 feature: Installation, Instance Settings, Deployment
-badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
@@ -11,23 +11,29 @@ exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 TQID: https://experienceleague.adobe.com/M1uqZA6cfopJkJ-pg3m-1R-eBbM55zv7R-FSxOfFUwI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 3479
-ht-degree: 6%
-
+source-wordcount: '3471'
+ht-degree: 5%
 ---
-
 # Implantação de uma instância{#deploying-an-instance}
 
 >[!NOTE]
@@ -442,16 +448,16 @@ Os seguintes modos de publicação estão disponíveis:
 
   É possível publicar as imagens usando um script:
 
-   * É necessário criar esse script: o conteúdo depende da sua configuração.
-   * O script será chamado pelo seguinte comando:
+  * É necessário criar esse script: o conteúdo depende da sua configuração.
+  * O script será chamado pelo seguinte comando:
 
-     ```
-     [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
-     ```
+    ```
+    [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
+    ```
 
-     onde `[INSTALL]` é o caminho de acesso para a pasta de instalação do Adobe Campaign.
+    onde `[INSTALL]` é o caminho de acesso para a pasta de instalação do Adobe Campaign.
 
-   * No Unix, verifique se o script é executável.
+  * No Unix, verifique se o script é executável.
 
 Para imagens, ele deve copiá-las da pasta &quot;images&quot; especificada por meio da opção **NmsDelivery_ImageSubDirectory** para um ou mais servidores frontais. Esses servidores armazenarão as imagens para torná-las acessíveis por meio do novo URL configurado.
 

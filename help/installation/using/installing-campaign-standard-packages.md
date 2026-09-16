@@ -3,24 +3,26 @@ product: campaign
 title: Instalar pacotes integrados do Campaign Classic
 description: Saiba como instalar pacotes integrados do Campaign
 feature: Installation, Application Settings
-badge-v7-prem: label="Somente no local/híbrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Aplica-se somente a implantações locais e híbridas"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=pt-BR" tooltip="Applies to on-premise and hybrid deployments only"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
 TQID: https://experienceleague.adobe.com/o-8uf081NQCy3ZB8mmLk0Gm8J9Pu--Zh4znqn3HUjr0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1381
+source-wordcount: '1369'
 ht-degree: 16%
-
 ---
-
 # Instalar pacotes integrados do Campaign Classic{#installing-campaign-standard-packages}
 
 
@@ -212,13 +214,13 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Integração de públicos compartilhados Adobe Experience Cloud<br /> </td> 
+   <td> Integração de públicos compartilhados da Adobe Experience Cloud<br /> </td> 
    <td> Permite trocar e compartilhar públicos/segmentos com soluções e aplicativos da Adobe Experience Cloud. Exige IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Saiba Mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Integração com o Adobe Experience Cloud<br /> </td> 
-   <td> Permite importar e exportar públicos/segmentos de diferentes soluções da Adobe Experience Cloud para o Adobe Campaign. Opcional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Saiba Mais</a> </td> 
+   <td> Integração com a Adobe Experience Cloud<br /> </td> 
+   <td> Permite importar e exportar públicos-alvo/segmentos de diferentes soluções da Adobe Experience Cloud para a Adobe Campaign. Opcional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Saiba Mais</a> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
