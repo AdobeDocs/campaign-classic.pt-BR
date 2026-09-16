@@ -134,6 +134,6 @@ Você verá no exemplo abaixo como criar um email multilíngue. O conteúdo ser�
 
 Saiba como adicionar conteúdo condicional a uma entrega no exemplo de um informativo multilíngue.
 
->[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31844?captions=por_br&quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).
