@@ -24,7 +24,7 @@ topic_v2:
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
     internal-label: Subscription services
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 100%
@@ -137,15 +137,15 @@ As campanhas recorrentes são criadas com base em um modelo específico que defi
 
 1. Para esse tipo de campanha, uma guia **[!UICONTROL Schedule]** é adicionada para criar o agendamento de execução do modelo.
 
-Nesta guia, especifique as datas de execução planejadas das campanhas com base neste modelo.
+   Nesta guia, especifique as datas de execução planejadas das campanhas com base neste modelo.
 
-![](assets/s_ncs_user_op_template_recur_planning.png)
+   ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do fluxo de trabalho. Para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md).
+   O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do fluxo de trabalho. Para obter mais informações, consulte [esta seção](../../workflow/using/architecture.md).
 
->[!IMPORTANT]
->
->A configuração do agendamento de execução deve ser realizada cuidadosamente para evitar sobrecarga do banco de dados. As campanhas recorrentes duplicam o(s) fluxo(s) de trabalho de seu modelo dependendo do cronograma especificado. A implementação da criação de fluxo de trabalho excessivamente frequente pode dificultar a operação do banco de dados.
+   >[!IMPORTANT]
+   >
+   >A configuração do agendamento de execução deve ser realizada cuidadosamente para evitar sobrecarga do banco de dados. As campanhas recorrentes duplicam o(s) fluxo(s) de trabalho de seu modelo dependendo do cronograma especificado. A implementação da criação de fluxo de trabalho excessivamente frequente pode dificultar a operação do banco de dados.
 
 1. Especifique um valor no campo **[!UICONTROL Create in advance for]** para criar os fluxos de trabalho correspondentes ao período indicado.
 1. Crie o modelo de fluxo de trabalho a ser usado em campanhas com base nesse modelo, com os parâmetros de definição de metas e uma ou mais remessas genéricas.
@@ -239,6 +239,6 @@ Cada campanha periódica contém os mesmos elementos. Uma vez criado, ele é ger
 
 Este vídeo mostra como criar um plano de marketing, programas e campanhas.
 
->[!VIDEO](https://video.tv.adobe.com/v/326560?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
 Vídeos explicativos extras sobre o Campaign estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

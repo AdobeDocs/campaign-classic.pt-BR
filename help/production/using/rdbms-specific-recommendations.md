@@ -21,7 +21,7 @@ subfeature_v2:
     internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 4%
@@ -168,7 +168,7 @@ O PostgreSQL não fornece uma maneira fácil de executar uma reconstrução de t
 
 Este é um exemplo de desfragmentação de tabela usando funções específicas para gerar o DDL necessário. O SQL a seguir permite criar duas novas funções: **GenRebuildTablePart1** e **GenRebuildTablePart2**, que podem ser usadas para gerar o DDL necessário para recriar uma tabela.
 
-* A primeira função permite criar uma tabela de trabalho (**&#x200B; _tmp** aqui) que é uma cópia da tabela original.
+* A primeira função permite criar uma tabela de trabalho (** _tmp** aqui) que é uma cópia da tabela original.
 * A segunda função, então, exclui a tabela original e renomeia a tabela de trabalho e seus índices.
 * Usar duas funções em vez de uma significa que, se a primeira falhar, você não corre o risco de excluir a tabela original.
 
