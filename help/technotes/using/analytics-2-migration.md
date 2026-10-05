@@ -4,7 +4,20 @@ title: Migrar para a API do Adobe Analytics 2.0
 description: Campaign Classic - Guia de migração de API do Adobe Analytics 2.0
 feature: Technote, Analytics Integration
 hide: true
-source-git-commit: 64460d51b002a7821bba9c2998d9ccccab3046ad
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: ab81f6c3-9317-564f-af92-6670a8784294
+    internal-label: Technote
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Analytics integration
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 1%
@@ -51,8 +64,8 @@ Se você estiver em uma implantação **local ou híbrida**, siga estas etapas.
       ```
 
    1. Lista de permissões do Adobe Analytics no servidor SFTP, já que as exportações de remarketing só são iniciadas a partir de um conjunto fixo de intervalos IP do Adobe:
-      * [Pesquise os endereços IP atuais da coleção de dados do Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/data-collection/ip-addresses){target="_blank"} e adicione-os à lista de permissões do servidor SFTP. As exportações do Analytics baseadas em FTP (incluindo feeds de dados) são originárias apenas de endereços IPv4 das regiões de Londres, Oregon e Singapura.
-      * [Recupere a chave pública do Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-18141){target="_blank"} e adicione-a ao arquivo `authorized_keys` no servidor SFTP para que o Analytics possa realizar a autenticação.
+      * [Pesquise os endereços IP atuais da coleção de dados do Adobe Analytics](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses){target="_blank"} e adicione-os à lista de permissões do servidor SFTP. As exportações do Analytics baseadas em FTP (incluindo feeds de dados) são originárias apenas de endereços IPv4 das regiões de Londres, Oregon e Singapura.
+      * [Recupere a chave pública do Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-18141){target="_blank"} e adicione-a ao arquivo `authorized_keys` no servidor SFTP para que o Analytics possa realizar a autenticação.
 1. Habilite o sinalizador de recurso `FEATUREFLAG_USE_ANALYTICS_20_API` na sua instância criando ou definindo o `longvalue` da opção para `1` em [!UICONTROL xtkOption], em **[!UICONTROL Administration]> [!UICONTROL Platform] >[!UICONTROL Options]** na árvore do Campaign Explorer. Esta etapa é necessária independentemente de qual caso de uso acima se aplica a você.
 1. Valide a migração exercitando cada caso de uso que se aplica à sua instância (envie uma campanha de teste, verifique se os indicadores chegam ao Analytics e confirme os dados de remarketing, se aplicável) antes de desativar qualquer conectividade antiga.
 
@@ -81,7 +94,7 @@ Para criar seu conjunto de classificações:
 
 1. Clique em **[!UICONTROL Save]**.
 
-Esse conjunto de classificações será descoberto automaticamente pelo Campaign quando você configurar sua conta externa na próxima etapa. Para obter mais informações sobre conjuntos de classificações, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
+Esse conjunto de classificações será descoberto automaticamente pelo Campaign quando você configurar sua conta externa na próxima etapa. Para obter mais informações sobre conjuntos de classificações, consulte a [documentação do Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
 
 ## Precisa de ajuda? {#need-help}
 

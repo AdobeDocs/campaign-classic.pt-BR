@@ -4,10 +4,12 @@ title: Práticas recomendadas do modelo de dados
 description: Saiba como trabalhar com o modelo de dados do Campaign Classic
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-TQID: https://experienceleague.adobe.com/O5LgBFV-0Mw3nzVyD2mxCCPxjZ07Ss9sS4K5MrdYdns
+TQID: 'https://experienceleague.adobe.com/O5LgBFV-0Mw3nzVyD2mxCCPxjZ07Ss9sS4K5MrdYdns'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
     internal-label: Data management
@@ -43,7 +45,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '4078'
 ht-degree: 1%
@@ -54,7 +56,7 @@ Este documento descreve as principais recomendações ao projetar o modelo de da
 
 Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [esta seção](../../configuration/using/about-data-model.md).
 
-Leia [esta documentação](../../configuration/using/about-schema-reference.md) para começar a usar os esquemas do Campaign. Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign neste documento [1&rbrace;.](../../configuration/using/about-schema-edition.md)
+Leia [esta documentação](../../configuration/using/about-schema-reference.md) para começar a usar os esquemas do Campaign. Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign neste documento [1}.](../../configuration/using/about-schema-edition.md)
 
 ## Visão geral {#overview}
 
@@ -183,7 +185,7 @@ Quando uma tabela personalizada está sendo criada no Adobe Campaign com uma cha
 
 Por padrão, uma sequência personalizada terá valores que variam de +1.000 a +2,1BB. Tecnicamente, é possível obter uma gama completa de 4BB habilitando ids negativas. Isso deve ser usado com cuidado e uma ID será perdida ao passar de números negativos para positivos: o registro 0 normalmente é ignorado pelo Adobe Campaign em consultas SQL geradas.
 
-Para saber mais sobre a exaustão das sequências, assista a [este vídeo](https://helpx.adobe.com/br/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Para saber mais sobre a exaustão das sequências, assista a [este vídeo](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Índices {#indexes}
 

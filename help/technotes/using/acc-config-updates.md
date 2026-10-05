@@ -5,7 +5,20 @@ description: Atualizações de configuração do Adobe Campaign
 feature: Technote, Upgrade
 hide: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: ab81f6c3-9317-564f-af92-6670a8784294
+    internal-label: Technote
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 14%
@@ -70,7 +83,7 @@ As **versões de console** disponíveis abaixo devem ser instaladas para resolve
 
 ## Atualização do Adobe Identity Management System (IMS)
 
-O Adobe Identity Service (IMS) deixará de oferecer suporte a versões antigas do Internet Explorer a partir de **30 de junho de 2021**. [Saiba mais](https://helpx.adobe.com/br/x-productkb/global/update-operating-system-and-browser.html).
+O Adobe Identity Service (IMS) deixará de oferecer suporte a versões antigas do Internet Explorer a partir de **30 de junho de 2021**. [Saiba mais](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Uma atualização do console do cliente do Campaign é necessária para garantir a compatibilidade com o Adobe IMS.
 
@@ -103,7 +116,7 @@ Depois que todas as instâncias forem atualizadas, o Console do cliente também 
 
 ## Integração com acionadores da Experience Cloud {#acc-triggers-updates}
 
-O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autenticação da integração de acionadores, originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline de assimilação, foi movida para o Adobe I/O. O modo de autenticação oAuth herdado com o Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=pt) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md#step-optional) para a Adobe.
+O serviço de autenticação oAuth herdado chegou ao fim da vida útil. A autenticação da integração de acionadores, originalmente baseada na configuração da autenticação oAUTH para acessar o pipeline de assimilação, foi movida para o Adobe I/O. O modo de autenticação oAuth herdado com o Campaign [foi removido](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) em **setembro de 2021**. Os ambientes hospedados se beneficiarão de uma extensão até **23 de fevereiro de 2022**. Como cliente no local ou híbrido, entre em contato com o Atendimento ao cliente da Adobe para estender o suporte até fevereiro de 2022. Você deve fornecer [o AppID do aplicativo OAuth](../../integrations/using/configuring-pipeline.md#step-optional) para a Adobe.
 
 **Você será afetado?**
 

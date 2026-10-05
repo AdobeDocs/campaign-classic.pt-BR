@@ -8,20 +8,24 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-TQID: https://experienceleague.adobe.com/WmadkiwNNUMeQSnm8O4NJjnv1GQHvO6hZ9kqtoGBySA
+TQID: 'https://experienceleague.adobe.com/WmadkiwNNUMeQSnm8O4NJjnv1GQHvO6hZ9kqtoGBySA'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-    internal-label: Implementation
-feature_v2: []
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
     internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 4%
@@ -168,7 +172,7 @@ O PostgreSQL não fornece uma maneira fácil de executar uma reconstrução de t
 
 Este é um exemplo de desfragmentação de tabela usando funções específicas para gerar o DDL necessário. O SQL a seguir permite criar duas novas funções: **GenRebuildTablePart1** e **GenRebuildTablePart2**, que podem ser usadas para gerar o DDL necessário para recriar uma tabela.
 
-* A primeira função permite criar uma tabela de trabalho (**&#x200B; _tmp** aqui) que é uma cópia da tabela original.
+* A primeira função permite criar uma tabela de trabalho (** _tmp** aqui) que é uma cópia da tabela original.
 * A segunda função, então, exclui a tabela original e renomeia a tabela de trabalho e seus índices.
 * Usar duas funções em vez de uma significa que, se a primeira falhar, você não corre o risco de excluir a tabela original.
 
