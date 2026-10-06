@@ -7,10 +7,12 @@ role: User
 level: Beginner
 hide: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-TQID: https://experienceleague.adobe.com/77yWdkBQIi4XnEr8ZqBuz-2Vm0vg07AQxgI2wh6B150
+TQID: 'https://experienceleague.adobe.com/77yWdkBQIi4XnEr8ZqBuz-2Vm0vg07AQxgI2wh6B150'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
@@ -18,13 +20,15 @@ feature_v2:
     internal-label: APIs
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
     internal-label: Schemas
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
     internal-label: PI
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
     internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-    internal-label: Adobe Analytics integration
+    internal-label: Analytics integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -36,7 +40,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: c372a3d67ec413fa8cf9fdbb4530762a8f2f5177
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '2383'
 ht-degree: 100%
@@ -66,7 +70,7 @@ A partir desta versão, o rastreamento de links em emails já enviados ainda fun
 
 * Correção de um problema com o uso de dados de um banco de dados do Google Big Query ao atualizar dados em um banco de dados da Oracle: todas as chaves foram definidas como `0` na tabela temporária do fluxo de trabalho. (NEO-65091)
 * Correção de um problema que causava a falha de execução de um fluxo de trabalho quando duas consultas em um banco de dados do Google Big Query eram combinadas em uma atividade de fluxo de trabalho de **União**. (NEO-63705)
-* Correção de um problema que causava a solicitação de uma nova autenticação ao clicar no botão `Back` em um relatório do Campaign. (NEO-65087)
+* Correção de um problema que consistia em solicitar nova autenticação ao usuário ao clicar no botão `Back` em um relatório do Campaign. (NEO-65087)
 * Correção de um erro no fluxo de trabalho de limpeza de banco de dados que acontecia quando uma entrega era excluída antes de suas provas de entrega. (NEO-48114)
 * Correção de um problema de conexão com o Console do cliente: atualizações recentes na verificação TLS estavam causando um erro de conexão. (NEO-50488)
 * Corrigimos um problema com a autenticação do proxy HTTP após a atualização do Campaign para a versão 7.3.1. As solicitações HTTP em fluxos de trabalho do Campaign falhavam com `error 407 – proxy auth required is returned`. (NEO-49624)

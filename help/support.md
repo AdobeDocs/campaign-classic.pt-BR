@@ -5,13 +5,17 @@ description: Precisa de suporte para o Campaign Classic? Você está no lugar ce
 feature: Troubleshooting
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-TQID: https://experienceleague.adobe.com/8NB9NaZqp0IQnnlyezjCt3dTDMvJsdszb8zIJsI9GRw
+TQID: 'https://experienceleague.adobe.com/8NB9NaZqp0IQnnlyezjCt3dTDMvJsdszb8zIJsI9GRw'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
     internal-label: Security and privacy
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: ac9c0a9c-8a76-4419-bd64-9c34c5782666
     internal-label: Privacy
@@ -21,6 +25,8 @@ subfeature_v2:
     internal-label: Subdomains and certificates
   - id: fb2a841f-c522-491f-9901-a1b939d252df
     internal-label: Security
+  - id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
+    internal-label: Troubleshooting
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
@@ -28,7 +34,7 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 78%
@@ -113,7 +119,7 @@ O Painel de controle do Campaign ajuda a aumentar a eficiência do seu trabalho 
 
 >[!NOTE]
 >
->O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a uma pessoa estão detalhadas [nesta seção](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
+>O Painel de controle é acessível a todos os usuários administradores. As etapas para conceder acesso de Administrador a um usuário estão detalhadas [nesta seção](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=pt-BR#discover-control-panel).
 >
 >Observe que sua instância deve ser hospedada no AWS e atualizada com a [compilação de DG](rn/using/rn-overview.md) mais recente. Saiba como verificar a versão [nesta seção](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Para verificar se sua instância está hospedada no AWS, siga as etapas detalhadas [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR).
 
