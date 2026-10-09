@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Profiles and audiences
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
     internal-label: Profiles
@@ -44,7 +46,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '1517'
 ht-degree: 8%
@@ -55,7 +57,7 @@ ht-degree: 8%
 >
 >Estas Perguntas frequentes abordam perguntas específicas sobre a arquitetura do Adobe Campaign Classic v7, modelos de implantação e recursos específicos do v7.
 >
->**Para obter respostas abrangentes a perguntas comuns sobre o Campaign** (workflows, entregas, públicos, relatórios, personalização, etc.), consulte as [**Perguntas frequentes abrangentes sobre o Campaign v8**](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}, que fornecem respostas detalhadas organizadas por tópico.
+>**Para obter respostas abrangentes a perguntas comuns sobre o Campaign** (workflows, entregas, públicos, relatórios, personalização, etc.), consulte as [**Perguntas frequentes abrangentes sobre o Campaign v8**](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}, que fornecem respostas detalhadas organizadas por tópico.
 
 ## Arquitetura e implantação do Campaign Classic v7 {#v7-architecture}
 
@@ -73,7 +75,7 @@ Cada modelo de implantação tem diferentes recursos e responsabilidades de gere
 
 [Clique aqui para saber mais](../../installation/using/hosting-models.md) sobre modelos de hospedagem e suas diferenças.
 
-**Observação:** o Campaign v8 está disponível exclusivamente como Managed Cloud Services. [Saiba mais sobre o Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=pt-BR){target="_blank"}.
+**Observação:** o Campaign v8 está disponível exclusivamente como Managed Cloud Services. [Saiba mais sobre o Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}.
 
 +++
 
@@ -104,7 +106,7 @@ A migração para o Adobe Managed Services oferece melhor escalabilidade, segura
 
 **Introdução**: entre em contato com o representante da Adobe para avaliar seu ambiente e desenvolver um plano de migração detalhado com a Adobe Professional Services.
 
-Saiba mais sobre a [migração para o Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=pt){target="_blank"}.
+Saiba mais sobre a [migração para o Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
 
 +++
 
@@ -130,7 +132,7 @@ O Campaign v8 é a plataforma estratégica da Adobe, ideal para organizações q
 
 Saiba mais:
 
-* [Visão geral do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=pt-BR){target="_blank"}
+* [Visão geral do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
 * [Transição do Campaign Classic v7 para v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Perguntas frequentes abrangentes sobre o Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=pt-BR){target="_blank"}
 
@@ -205,7 +207,7 @@ As implantações locais e híbridas exigem configuração de segurança adicion
 * Patches de segurança regulares
 * Logs e monitoramento de auditoria
 
-Leia a [Lista de verificação de configuração de segurança](https://helpx.adobe.com/br/campaign/kb/acc-security.html){target="_blank"} para descobrir os principais elementos sobre esse assunto e com relação à proteção para implantações locais.
+Leia a [Lista de verificação de configuração de segurança](https://helpx.adobe.com/campaign/kb/acc-security.html){target="_blank"} para descobrir os principais elementos sobre esse assunto e com relação à proteção para implantações locais.
 
 +++
 
@@ -288,7 +290,7 @@ Consulte as [**Perguntas frequentes abrangentes sobre o Campaign v8**](https://e
 
 **Comunidade e suporte:**
 
-* [Fóruns da comunidade do Campaign](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=pt){target="_blank"}
+* [Fóruns da comunidade do Campaign](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 * [Suporte da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
 +++
