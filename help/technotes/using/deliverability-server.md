@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1071'
 ht-degree: 17%
 ---
 # Atualizar para o novo servidor de avaliação do delivery {#acc-deliverability}
@@ -103,7 +103,7 @@ Como cliente local, você também deve verificar se uma Campanha **[!UICONTROL P
 1. Acesse a seção **Produtos e Serviços** e verifique se o **Adobe Campaign** está listado.
 Se você não conseguir ver o **Adobe Campaign**, contate o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} para adicioná-lo.
 1. Clique em **Adobe Campaign** e selecione sua Organização.
-   **Atenção**: se você tiver mais de uma organização, certifique-se de selecionar a correta. Saiba mais sobre as Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=pt-BR#ims-org-id){_blank}.
+   **Atenção**: se você tiver mais de uma organização, certifique-se de selecionar a correta. Saiba mais sobre as Organizações [nesta página](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
 1. Verifique se **[!UICONTROL Product profile]** existe. Caso contrário, crie-o. Nenhuma permissão é necessária para este **[!UICONTROL Product profile]**.
 
@@ -150,4 +150,4 @@ Qualquer instância do Campaign não atualizada até 31 de agosto não poderá m
 
 Se você não atualizar seu ambiente, as configurações de email deixarão de ser sincronizadas (regras de Gerenciamento MX, regras de Email de entrada, regras de Gerenciamento de domínio e regras de qualificação de rejeição). Isso pode afetar com o tempo sua capacidade de delivery. Se uma alteração significativa for feita nessas regras, elas terão de ser aplicadas manualmente a partir deste ponto.
 
-Para instâncias MKT, somente [Lista de Supressão Global](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) é afetada.
+Para instâncias MKT, somente [Lista de Supressão Global](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/filtering-rules#default-deliverability-exclusion-rules){target="_blank"} (documentação do Campaign v8) é afetada.

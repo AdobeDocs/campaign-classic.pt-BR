@@ -20,35 +20,19 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 8%
+source-wordcount: '156'
+ht-degree: 28%
 ---
 # Atualização da estrutura do banco de dados{#updating-the-database-structure}
 
-
-
-Para aplicar as modificações feitas nos esquemas, inicie o assistente de atualização de banco de dados. Este assistente pode ser acessado via **[!UICONTROL Tools > Advanced > Update database structure]**. Ele verifica se a estrutura física do banco de dados corresponde à sua descrição lógica e executa os scripts de atualização SQL.
-
-![](assets/d_ncs_integration_schema_update.png)
-
-Os módulos no banco de dados são automaticamente preenchidos e ativados.
-
-![](assets/d_ncs_integration_schema_update_select.png)
+Para aplicar as modificações feitas nos esquemas, inicie o assistente de atualização do banco de dados, disponível via **[!UICONTROL Tools > Advanced > Update database structure]**. No Campaign Classic v7, o assistente também oferece as seguintes opções:
 
 As opções **[!UICONTROL Add stored procedures]** e **[!UICONTROL Import initialization data]** são usadas para iniciar os scripts SQL iniciais e os pacotes de dados executados quando o banco de dados é criado.
 
 É possível importar um conjunto de dados de um pacote de dados externo. Para fazer isso, selecione **[!UICONTROL Import a package]** e insira o arquivo XML do pacote.
 
-Siga as etapas e exiba o script SQL de atualização do banco de dados:
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre o assistente de atualização de banco de dados, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}.
 
-![](assets/d_ncs_integration_schema_update2.png)
-
->[!NOTE]
->
->Está em um campo de edição e pode ser modificado para excluir ou adicionar o código SQL.
-
-Em seguida, inicie a atualização do banco de dados:
-
-![](assets/d_ncs_integration_schema_update3.png)
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}

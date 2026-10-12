@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 100%
+source-wordcount: '1023'
+ht-degree: 97%
 ---
 # Gestão de apresentação de ofertas{#managing-offer-presentation}
 
@@ -87,7 +87,7 @@ O **[!UICONTROL Targeting dimension]** coincide com a tabela de destinatários
 
 >[!NOTE]
 >
->Você também pode usar tabelas não padrão. Se quiser usar uma dimensão de direcionamento específica, é necessário criar tabelas e um ambiente dedicado usando o targeting mapping. Para obter mais informações, consulte [Criação de um ambiente de ofertas](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+>Você também pode usar tabelas não padrão. Se quiser usar uma dimensão de direcionamento específica, é necessário criar tabelas e um ambiente dedicado usando o targeting mapping. Para obter mais informações, consulte [Criação de um ambiente de oferta](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} (documentação do Campaign v8).
 
 ### Período {#period}
 

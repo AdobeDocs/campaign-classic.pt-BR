@@ -41,10 +41,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '610'
+ht-degree: 91%
 ---
 # Recusar a venda de informações pessoais (CCPA) {#sale-of-personal-information-ccpa}
 
@@ -54,7 +54,7 @@ Os **Direitos de privacidade do consumidor da Califórnia** (CCPA) fornecem aos 
 
 A configuração e utilização dos pedidos de acesso e exclusão são comuns. a GDPR e CCPA. Esta seção apresenta a opção de recusa da venda de dados pessoais, sendo específica ao CCPA.
 
-Além das ferramentas de [Gestão do consentimento](privacy-management.md#consent-management) oferecidas pelo Adobe Campaign, você tem a possibilidade de monitorar a opção do cliente pela recusa da venda de informações pessoais.
+Além das ferramentas de [Gestão do consentimento](privacy-management.md#consent-management) oferecidas pelo Adobe Campaign, você tem a possibilidade de monitorar se o consumidor recusou a venda de informações pessoais.
 
 Os contatos podem decidir, por meio de seu sistema, que não permitem que suas informações pessoais sejam vendidas a terceiros. No Adobe Campaign é possível armazenar e rastrear essas informações.
 
@@ -70,7 +70,7 @@ Para usufruir dessa informação, é necessário criar esse campo no Adobe Campa
 
 Se você usar uma tabela de destinatário personalizada, também precisará executar essa operação.
 
-Para obter mais informações sobre como criar um novo campo, consulte a [documentação sobre adição de schema](../../configuration/using/about-schema-edition.md).
+Para obter informações mais detalhadas sobre como criar um novo campo, consulte a [documentação sobre edição de esquema](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).
 
 >[!IMPORTANT]
 >
@@ -88,7 +88,7 @@ Para obter mais informações sobre como criar um novo campo, consulte a [docume
 
    ![](assets/privacy-ccpa-3.png)
 
-1. Clique no nó **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** do explorer. Em **[!UICONTROL Recipient (nms)]**, em “Pacote geral”, adicione um elemento `<input>` e use, para o valor xpath, o caminho relativo definido na etapa 2. Para obter mais informações sobre identificação de formulário, consulte [esta seção](../../configuration/using/identifying-a-form.md).
+1. Clique no nó **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** do explorer. Em **[!UICONTROL Recipient (nms)]**, em “Pacote geral”, adicione um elemento `<input>` e use, para o valor xpath, o caminho relativo definido na etapa 2. Para obter mais informações sobre identificação de formulário, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>

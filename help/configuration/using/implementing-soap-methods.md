@@ -29,10 +29,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 4%
+source-wordcount: '432'
+ht-degree: 3%
 ---
 # Implementar métodos do SOAP{#implementing-soap-methods}
 
@@ -53,7 +53,7 @@ A criação de uma biblioteca de métodos envolve dois estágios:
 
 ### Declaração {#declaration}
 
-Comece declarando os métodos nos schemas (para obter mais informações sobre como criar e editar schemas, consulte [esta seção](../../configuration/using/about-schema-edition.md)).
+Comece declarando os métodos nos schemas (para obter mais informações sobre como criar e editar schemas, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8)).
 
 A declaração deles é semelhante à dos métodos nativos, exceto que é necessário adicionar o atributo &quot;biblioteca&quot; especificando o nome da biblioteca de métodos onde a definição está localizada.
 

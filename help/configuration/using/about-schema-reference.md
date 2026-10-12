@@ -28,10 +28,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 2%
+source-wordcount: '264'
+ht-degree: 16%
 ---
 # Introdução a esquemas {#about-schema-reference}
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 Este capítulo descreve como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign.
 
-Para entender melhor as tabelas integradas do Campaign e suas interações, consulte o [modelo de dados do Campaign Classic](about-data-model.md).
+Para entender melhor as tabelas integradas do Campaign e suas interações, consulte o [modelo de dados do Campaign Classic](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentação do Campaign v8).
 
 No Adobe Campaign, a estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Um **esquema** é um documento XML associado a uma tabela de banco de dados. Ele define a estrutura de dados e descreve a definição SQL da tabela:
 
@@ -62,45 +62,6 @@ A ilustração a seguir mostra a localização dos esquemas no sistema de dados 
 
 ![](assets/reference_schema_intro.png)
 
-## Sintaxe de schemas {#syntax-of-schemas}
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre a sintaxe e a identificação de esquemas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}.
 
-O elemento raiz do esquema é **`<srcschema>`**. Ele contém os subelementos **`<element>`** e **`<attribute>`**.
-
-O primeiro subelemento **`<element>`** coincide com a raiz da entidade.
-
-```
-<srcSchema name="recipient" namespace="cus">
-  <element name="recipient">  
-    <attribute name="lastName"/>
-    <attribute name="email"/>
-    <element name="location">
-      <attribute name="city"/>
-   </element>
-  </element>
-</srcSchema>
-```
-
->[!NOTE]
->
->O elemento raiz da entidade tem o mesmo nome que o schema.
-
-![](assets/s_ncs_configuration_schema_and_entity.png)
-
-As marcas **`<element>`** definem os nomes dos elementos da entidade. **`<attribute>`** marcas do esquema definem os nomes dos atributos nas **`<element>`** marcas às quais eles foram vinculados.
-
-## Identificação de um esquema {#identification-of-a-schema}
-
-Um schema de dados é identificado por seu nome e seu namespace.
-
-Um namespace permite agrupar um conjunto de esquemas por área de interesse. Por exemplo, o namespace **cus** é usado para a configuração específica do cliente (**clientes**).
-
-A chave de identificação de um esquema é uma cadeia de caracteres criada com o uso do namespace e do nome separados por dois pontos, por exemplo: **cus:recipient**.
-
->[!IMPORTANT]
->
->* O nome do namespace deve ser conciso e conter apenas caracteres autorizados de acordo com as regras de nomenclatura XML.
->
->* Os identificadores não devem começar com caracteres numéricos.
->
->* Os namespaces a seguir são reservados para descrições das entidades de sistema necessárias para a operação do aplicativo Adobe Campaign e não devem ser usados: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
->
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}

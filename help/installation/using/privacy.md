@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '912'
 ht-degree: 16%
 ---
 # Personalização e privacidade {#privacy}
@@ -117,7 +117,7 @@ Para habilitar a assinatura do URL, siga estas etapas em todos os servidores do 
 
 Certifique-se de que as senhas criptografadas não estejam acessíveis a um usuário autenticado de baixo privilégio. Para fazer isso, restrinja o acesso somente aos campos de senha ou à entidade inteira (precisa de uma build >= 8770).
 
-Esta restrição permite que você remova os campos de senhas, mas deixe a conta externa acessível a partir da interface para todos os usuários. [Saiba mais](../../configuration/using/restricting-pii-view.md).
+Esta restrição permite que você remova os campos de senhas, mas deixe a conta externa acessível a partir da interface para todos os usuários. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} (documentação do Campaign v8).
 
 Para fazer isso, siga as etapas abaixo:
 

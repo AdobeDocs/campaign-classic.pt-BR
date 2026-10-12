@@ -37,16 +37,16 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 100%
+source-wordcount: '1567'
+ht-degree: 98%
 ---
 # Configurar e enviar a entrega {#configuring-and-sending-the-delivery}
 
 ## Permissões{#delivery-permissions}
 
-Somente o proprietário da entrega pode iniciar uma entrega. Para que outros operadores (ou grupo de operadores) possam iniciar uma entrega, é necessário adicioná-los como revisores no campo **[!UICONTROL Delivery start:]**. [Saiba mais](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+Somente o proprietário da entrega pode iniciar uma entrega. Para que outros operadores (ou grupo de operadores) possam iniciar uma entrega, é necessário adicioná-los como revisores no campo **[!UICONTROL Delivery start:]**. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"} (documentação do Campaign v8).
 
 ## Parâmetros adicionais de entrega {#delivery-additiona-parameters}
 

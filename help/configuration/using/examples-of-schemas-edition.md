@@ -26,9 +26,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '702'
 ht-degree: 6%
 ---
 # Exemplos de edição de esquemas{#examples-of-schemas-edition}
@@ -355,7 +355,7 @@ A interface não exibirá um link, mas um campo. Quando os usuários escolhem es
 
 * Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
-* [Introdução aos esquemas do Campaign](../../configuration/using/about-schema-edition.md)
+* [Introdução aos esquemas do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8)
 
 * [Atualização da estrutura do banco de dados](../../configuration/using/updating-the-database-structure.md)
 

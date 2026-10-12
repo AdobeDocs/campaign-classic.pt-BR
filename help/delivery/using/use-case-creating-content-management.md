@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 100%
+source-wordcount: '1211'
+ht-degree: 95%
 ---
 # Caso de uso: criar gerenciamento de conteúdo{#use-case-creating-content-management}
 
@@ -82,7 +82,7 @@ Um esquema de dados é um documento XML associado ao conteúdo. Ele descreve a e
 
 >[!NOTE]
 >
->Para saber mais sobre como criar e configurar esquemas de dados no Adobe Campaign, consulte [esta seção](../../configuration/using/about-schema-edition.md).
+>Para obter mais informações sobre como criar e configurar schemas de dados no Adobe Campaign, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).
 >
 >Os elementos de configuração específicos para o gerenciamento de conteúdo são detalhados em [Esquemas de dados](data-schemas.md).
 
@@ -194,7 +194,7 @@ A descrição de um formulário é um documento XML estruturado que respeita a g
 
 >[!NOTE]
 >
->Para obter mais informações sobre como criar e configurar formulários no Adobe Campaign, consulte [esta seção](../../configuration/using/identifying-a-form.md).
+>Para obter mais informações sobre como criar e configurar formulários no Adobe Campaign, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).
 >
 >Os elementos de configuração específicos para o gerenciamento de conteúdo são detalhados em [Formulários de entrada](input-forms.md).
 

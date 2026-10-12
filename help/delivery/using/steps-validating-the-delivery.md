@@ -48,10 +48,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 100%
+source-wordcount: '1685'
+ht-degree: 98%
 ---
 # Validar a entrega {#validating-the-delivery}
 
@@ -232,7 +232,7 @@ Você pode exibir e editar as regras de aprovação, o conteúdo, a ordem de exe
 
 Você poderá criar novas regras e definir novas tipologias a partir desse nó. No entanto, essas tarefas são reservadas para usuários expert que conhecem JavaScript.
 
-Para saber mais sobre regras de tipologia, consulte [esta página](../../campaign-opt/using/about-campaign-typologies.md).
+Para obter mais informações sobre regras de tipologia, consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} (documentação do Campaign v8).
 
 Para editar a tipologia atual, clique no ícone **[!UICONTROL Edit link]** à direita do campo **[!UICONTROL Typology]**.
 
@@ -244,7 +244,7 @@ A guia **[!UICONTROL Rule]** fornece uma lista das regras de tipologia para sere
 
 >[!NOTE]
 >
->As tipologias do tipo **[!UICONTROL Arbitration]** são usadas dentro da estrutura de gerenciamento de regras de pressão. Para obter mais informações, consulte [esta seção](../../mrm/using/about-marketing-resource-management.md).
+>As tipologias do tipo **[!UICONTROL Arbitration]** são usadas dentro da estrutura de gerenciamento de regras de pressão. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"} (documentação do Campaign v8).
 
 ## Alterar o modo de aprovação {#changing-the-approval-mode}
 

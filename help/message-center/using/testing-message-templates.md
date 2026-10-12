@@ -26,54 +26,18 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 100%
+source-wordcount: '298'
+ht-degree: 60%
 ---
 # Testar modelos de mensagem transacional {#testing-message-templates}
 
+Quando o [modelo de mensagem](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (documentação do Campaign v8) estiver pronto, siga as etapas abaixo para pré-visualizá-lo e testá-lo.
 
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber como adicionar seed addresses, visualizar uma mensagem transacional e enviar uma prova, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}.
 
-Quando o [modelo de mensagem](../../message-center/using/creating-the-message-template.md) estiver pronto, siga as etapas abaixo para pré-visualizá-lo e testá-lo.
-
-## Gerenciar seed addresses em mensagens transacionais {#managing-seed-addresses-in-transactional-messages}
-
-Um seed address permite exibir uma pré-visualização da mensagem, enviar uma prova e testar a personalização da mensagem antes de enviar a entrega de email ou de SMS. Os seed addresses estão vinculados à entrega e não podem ser usados para outras entregas.
-
-Para criar seed addresses em uma mensagem transacional, siga as etapas abaixo:
-
-1. No modelo de mensagem transacional, clique na guia **[!UICONTROL Seed addresses]**.
-
-   ![](assets/messagecenter_create_seedaddr_001.png)
-
-1. Atribua um rótulo a ele para facilitar a seleção posteriormente.
-
-   ![](assets/messagecenter_create_seedaddr_002.png)
-
-1. Insira o seed address (email ou celular dependendo do canal de comunicação).
-
-   ![](assets/messagecenter_create_seedaddr_003.png)
-
-1. Insira o identificador externo: este campo opcional permite inserir uma chave de negócio (identificador exclusivo, nome + email etc.) que é comum a todas as aplicações do seu site e é usada para identificar seus perfis. Se esse campo também estiver presente no banco de dados de marketing do Adobe Campaign, você poderá reconciliar um evento com um perfil no banco de dados.
-
-   ![](assets/messagecenter_create_seedaddr_003bis.png)
-
-1. Insira os dados de teste (consulte [Dados de personalização](#personalization-data)).
-
-   ![](assets/messagecenter_create_custo_001.png)
-
-   <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. Clique no link **[!UICONTROL Add other seed addresses]** e depois no botão **[!UICONTROL Add]**.
-
-   ![](assets/messagecenter_create_seedaddr_004.png)
-
-   <!--1. Follow the configuration steps for a seed address detailed in the [Creating a seed address](#creating-a-seed-address) section.-->
-1. Repita o processo para criar quantos endereços forem necessários.
-
-   ![](assets/messagecenter_create_seedaddr_008.png)
-
-Depois que os endereços forem criados, você poderá exibir sua pré-visualização e personalização. Consulte [Pré-visualização da mensagem transacional](#transactional-message-preview).
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}
 
 ## Dados de personalização {#personalization-data}
 
@@ -83,7 +47,7 @@ O objetivo desses dados é testar suas mensagens antes da entrega final. Essas m
 
 ![](assets/messagecenter_create_custo_006.png)
 
-Essas informações permitem personalizar o conteúdo da mensagem usando tags de personalização (para obter mais informações, consulte [Criar o conteúdo da mensagem](../../message-center/using/creating-the-message-template.md#creating-message-content)).
+Essas informações permitem personalizar o conteúdo da mensagem usando marcas de personalização (para obter mais informações, consulte [Criar o conteúdo da mensagem](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#create-message-content){target="_blank"} (documentação do Campaign v8)).
 
 1. Publicar o modelo de mensagem transacional.
 
@@ -94,48 +58,3 @@ Essas informações permitem personalizar o conteúdo da mensagem usando tags de
    ![](assets/messagecenter_create_custo_001.png)
 
 1. Clique em **[!UICONTROL Save]**.
-
-## Pré-visualização de mensagem transacional {#transactional-message-preview}
-
-Após criar um ou mais seed addresses e o corpo da mensagem, é possível pré-visualizar a mensagem e verificar sua personalização.
-
-1. No modelo de mensagem, clique na guia **[!UICONTROL Preview]**.
-
-   ![](assets/messagecenter_preview_001.png)
-
-1. Selecione **[!UICONTROL A seed address]** na lista suspensa.
-
-   ![](assets/messagecenter_preview_002.png)
-
-1. Selecione o seed address criado anteriormente para exibir a mensagem personalizada.
-
-   ![](assets/messagecenter_create_seedaddr_009.png)
-
-Com os seed addresses, você também pode exibir a renderização da mensagem para vários provedores de acesso à Internet. Para obter mais informações, consulte [Renderização da caixa de entrada](../../delivery/using/inbox-rendering.md).
-
-## Enviar uma prova {#sending-a-proof}
-
-Você pode testar a entrega de mensagens enviando uma prova para um seed address criado anteriormente.
-
-O envio de uma prova envolve o mesmo processo de uma entrega regular. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=pt-BR){target="_blank"}. No entanto, com mensagens transacionais, é necessário realizar as seguintes operações antecipadamente:
-
-* Crie um ou mais [seed addresses](#managing-seed-addresses-in-transactional-messages) com [dados de personalização](#personalization-data).
-* [Criar o conteúdo da mensagem](../../message-center/using/creating-the-message-template.md#creating-message-content).
-
-Para enviar a prova:
-
-1. Clique no botão **[!UICONTROL Send a proof]** na janela da entrega.
-1. Analise a entrega.
-1. Corrija qualquer erro e confirme a entrega.
-
-   ![](assets/messagecenter_send_proof_001.png)
-
-1. Verifique se a mensagem foi entregue ao seed address e se seu conteúdo está em conformidade com sua configuração.
-
-   ![](assets/messagecenter_send_proof_002.png)
-
-É possível acessar as provas em cada modelo através da guia **[!UICONTROL Audit]**. Para obter mais detalhes, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=pt-BR){target="_blank"}.
-
-![](assets/messagecenter_send_proof_003.png)
-
-O modelo de mensagem agora está pronto para ser [publicado](../../message-center/using/publishing-message-templates.md).

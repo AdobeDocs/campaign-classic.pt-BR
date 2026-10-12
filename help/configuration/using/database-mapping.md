@@ -22,100 +22,18 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 4%
+source-wordcount: '256'
+ht-degree: 19%
 ---
 # Mapeamento de banco de dados{#database-mapping}
 
-O mapeamento SQL do esquema de exemplo descrito [nesta página](schema-structure.md) gera o seguinte documento XML:
+Esta página descreve como declarar índices nos campos de um esquema.
 
-```sql
-<schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
-  <enumeration basetype="byte" name="gender">    
-    <value label="Not specified" name="unknown" value="0"/>    
-    <value label="Male" name="male" value="1"/>    
-    <value label="Female" name="female" value="2"/> 
-  </enumeration>  
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre o mapeamento SQL de esquemas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}.
 
-  <element name="recipient" sqltable="CusRecipient">    
-    <attribute desc="Recipient email address" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-    <attribute default="GetDate()" label="Date of creation" name="created" sqlname="tsCreated" type="datetime"/>    
-    <attribute enum="gender" label="Gender" name="gender" sqlname="iGender" type="byte"/>    
-    <element label="Location" name="location">      
-      <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-    </element>  
-  </element>
-</schema>
-```
-
-O elemento raiz do esquema foi alterado para **`<srcschema>`** para **`<schema>`**.
-
-Esse outro tipo de documento é gerado automaticamente a partir do schema de origem e chamado simplesmente de schema.
-
-Os nomes SQL são determinados automaticamente com base no nome e no tipo do elemento.
-
-As regras de nomenclatura SQL são as seguintes:
-
-* **tabela**: concatenação do nome e do namespace do esquema
-
-  Em nosso exemplo, o nome da tabela é inserido por meio do elemento principal do esquema no atributo **sqltable**:
-
-  ```sql
-  <element name="recipient" sqltable="CusRecipient">
-  ```
-
-* **campo**: nome do elemento precedido por um prefixo definido de acordo com o tipo: &#39;i&#39; para inteiro, &#39;d&#39; para duplo, &#39;s&#39; para cadeia de caracteres, &#39;ts&#39; para datas, etc.
-
-  O nome do campo é inserido por meio do atributo **sqlname** para cada **`<attribute>`** e **`<element>`** digitados:
-
-  ```sql
-  <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
-  ```
-
->[!NOTE]
->
->Os nomes SQL podem ser sobrecarregados do esquema de origem. Para fazer isso, preencha os atributos &quot;sqltable&quot; ou &quot;sqlname&quot; no elemento relacionado.
-
-O script SQL para criar a tabela gerada a partir do schema estendido é o seguinte:
-
-```sql
-CREATE TABLE CusRecipient(
-  iGender NUMERIC(3) NOT NULL Default 0,   
-  sCity VARCHAR(50),   
-  sEmail VARCHAR(80),
-  tsCreated TIMESTAMP Default NULL);
-```
-
-As restrições do campo SQL são as seguintes:
-
-* nenhum valor nulo em campos numéricos e de data
-* campos numéricos são inicializados como 0
-
-## Campos XML {#xml-fields}
-
-Por padrão, qualquer elemento do tipo **`<attribute>`** e **`<element>`** é mapeado em um campo SQL da tabela de esquema de dados. No entanto, você pode fazer referência a esse campo em XML, em vez de SQL, o que significa que os dados são armazenados em um campo de memorando (&quot;mData&quot;) da tabela que contém os valores de todos os campos XML. O armazenamento desses dados é um documento XML que observa a estrutura do schema.
-
-Para preencher um campo em XML, você deve adicionar o atributo **xml** com o valor &quot;true&quot; ao elemento relacionado.
-
-**Exemplo**: aqui estão dois exemplos de uso de campo XML.
-
-* Campo de comentário multilinha:
-
-  ```sql
-  <element name="comment" xml="true" type="memo" label="Comment"/>
-  ```
-
-* Descrição dos dados no formato HTML:
-
-  ```sql
-  <element name="description" xml="true" type="html" label="Description"/>
-  ```
-
-  O tipo &quot;html&quot; permite armazenar o conteúdo do HTML em uma tag CDATA e exibir uma verificação de edição especial do HTML na interface do cliente do Adobe Campaign.
-
-Use campos XML para adicionar novos campos sem modificar a estrutura física do banco de dados. Outra vantagem é que você usa menos recursos (tamanho alocado para campos SQL, limite do número de campos por tabela etc.). No entanto, observe que não é possível indexar ou filtrar um campo XML.
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}
 
 ## Campos indexados {#indexed-fields}
 
@@ -189,5 +107,4 @@ Navegue pelos links a seguir para saber mais:
 * [Introdução a esquemas](about-schema-reference.md)
 * [Estrutura de esquema](schema-structure.md)
 * [Gerenciamento de chaves](database-keys.md)
-* [Gerenciamento de link](database-links.md)
-* [Modelo de dados do Campaign](about-data-model.md)
+* [Gerenciamento de links](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (documentação do Campaign v8)
