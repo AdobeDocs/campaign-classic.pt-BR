@@ -8,9 +8,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1953'
 ht-degree: 100%
 ---
 
@@ -51,11 +51,7 @@ ht-degree: 100%
     + [Recusar a venda de informações pessoais](platform/using/privacy-requests-ccpa.md)
   + Gerenciamento de perfis {#profile-management}
     + [Sobre perfis](platform/using/about-profiles.md)
-    + {hide-from-toc}[Editar um perfil – OCULTO](platform/using/editing-a-profile.md)
-    + {hide-from-toc}[Adicionar perfis – OCULTO](platform/using/adding-profiles.md)
-    + {hide-from-toc}[Gerenciar perfis – OCULTO](platform/using/managing-profiles.md)
     + [Atualizar dados](platform/using/updating-data.md)
-    + {hide-from-toc}[Importar e exportar perfis – OCULTO](platform/using/exporting-and-importing-profiles.md)
     + [Criar e gerenciar listas](platform/using/creating-and-managing-lists.md)
   + Importar e exportar dados {#importing-and-exporting-data}
     + [Introdução à importação e exportação de dados](platform/using/get-started-data-import-export.md)
@@ -75,9 +71,7 @@ ht-degree: 100%
       + [Práticas recomendadas de importação e exportação](platform/using/import-export-best-practices.md)
       + [Práticas recomendadas e solução de problemas do servidor SFTP](platform/using/sftp-server-usage.md)
   + Filtrar dados {#filtering-data}
-    + {hide-from-toc}[Opções de filtragem – OCULTAS](platform/using/filtering-options.md)
     + {hide-from-toc}[Criar filtros – OCULTO](platform/using/creating-filters.md)
-    + {hide-from-toc}[Caso de uso – OCULTO](platform/using/use-case.md)
   + {hide-from-toc}[Etapas para criar uma consulta – OCULTO](platform/using/steps-to-create-a-query.md)
   + {hide-from-toc}[Definir condições de filtragem – OCULTO](platform/using/defining-filter-conditions.md)
   + Permissões {#permissions}
@@ -86,12 +80,8 @@ ht-degree: 100%
       + [Criar e gerenciar operadores](platform/using/access-management-operators.md)
       + [Criar e gerenciar grupos](platform/using/access-management-groups.md)
     + [Usar direitos nomeados para configurar permissões](platform/using/access-management-named-rights.md)
-    + {hide-from-toc}[Gerenciar acesso a pastas – OCULTO](platform/using/access-management-folders.md)
   + Conectores CRM {#connectors}
     + [Introdução aos Conectores CRM](platform/using/crm-connectors.md)
-    + {hide-from-toc}[Conecte-se com o Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
-    + {hide-from-toc}[Conecte-se com o Salesforce.com](platform/using/crm-sfdc.md)
-    + {hide-from-toc}[Sincronizar dados com o CRM](platform/using/crm-data-sync.md)
 + Criar e enviar mensagens {#sending-messages}
   + [Introdução a mensagens](delivery/using/communication-channels.md)
   + {hide-from-toc}[Configurações de entrega – OCULTO](delivery/using/delivery-settings.md)

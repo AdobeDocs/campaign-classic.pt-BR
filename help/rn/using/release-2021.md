@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '2702'
 ht-degree: 98%
@@ -87,7 +87,7 @@ _7 de setembro de 2021_
 **Outras alterações**
 
 * Correção de uma regressão introduzida na versão 21.1.3 com a nova medida de proteção do fluxo de trabalho de faturamento. O fluxo de trabalho de faturamento foi executado em instâncias erradas e falhou ao tentar enviar o relatório de faturamento, que não foi gerado. É necessário reiniciar manualmente o fluxo de trabalho para que a correção seja aplicada.
-* Os conectores do Microsoft CRM obsoletos anteriormente (implantações do Office 365 e no local) foram removidos da interface. [Leia mais](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* Os conectores do Microsoft CRM obsoletos anteriormente (implantações do Office 365 e no local) foram removidos da interface. [Leia mais](../../platform/using/crm-connectors.md)
 * Após a migração para o Tomcat 8, o script de configuração do IIS foi atualizado para corrigir problemas de integração do IIS. (NEO-31019)
 * A identificação da fonte de dados foi aprimorada nas guias de dados e esquema da janela **Exibir população** das transições do fluxo de trabalho.
 * Os índices de banco de dados ausentes foram adicionados aos seguintes esquemas para evitar problemas de atualização do banco de dados: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
@@ -124,7 +124,7 @@ _5 de junho de 2021_
 <td>
 <p>A nova atividade de fluxo de trabalho <b>Alterar fonte de dados</b> permite alterar a fonte de dados de uma tabela de trabalho do fluxo de trabalho. Isso proporciona mais flexibilidade no gerenciamento de dados em diferentes fontes de dados (FDA e banco de dados local).</p>
 <p>Nos fluxos de trabalho do Adobe Campaign, os dados são gerenciados usando tabelas de trabalho (ou temporárias). Conforme o fluxo de trabalho é executado, as tabelas de trabalho compartilham dados entre atividades de fluxo de trabalho. Por padrão, as tabelas de trabalho são criadas no mesmo banco de dados da fonte de dados que consultamos.</p>
-<p>Para obter mais informações, consulte a <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">documentação detalhada</a> (documentação do Campaign v8).</p>
+<p>Para obter mais informações, consulte a <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">documentação detalhada</a> (documentação do Campaign v8).</p>
 </td>
 </tr>
 </tbody>
@@ -226,7 +226,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 **Aprimoramentos**
 
 * Foram adicionadas verificações adicionais ao salvar um fluxo de trabalho para garantir que os nomes das atividades sejam únicos e que as transições sejam sempre seguidas por uma atividade.
-* O fluxo de trabalho técnico **Faturamento (faturamento)** agora inclui as tarefas originalmente executadas pelo fluxo de trabalho **Número de perfis de faturamento ativos** (billingActiveContactCount), que foi removido. O relatório de email enviado mensalmente pelo fluxo de trabalho agora fornecerá informações sobre o número de perfis ativos na instância. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (documentação do Campaign v8).
+* O fluxo de trabalho técnico **Faturamento (faturamento)** agora inclui as tarefas originalmente executadas pelo fluxo de trabalho **Número de perfis de faturamento ativos** (billingActiveContactCount), que foi removido. O relatório de email enviado mensalmente pelo fluxo de trabalho agora fornecerá informações sobre o número de perfis ativos na instância. [Leia mais](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (documentação do Campaign v8).
 * O novo atributo **_keyOnMData** foi adicionado para poder usar uma chave para operações em dados de memorando.
 
 **Outras alterações**
