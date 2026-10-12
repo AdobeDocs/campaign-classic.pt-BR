@@ -31,10 +31,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 100%
+source-wordcount: '464'
+ht-degree: 88%
 ---
 # Atualizações da documentação{#documentation-updates}
 
@@ -65,15 +65,15 @@ A instalação de pacotes Linux foi atualizada para a versão 7.4.1. [Leia mais]
 
 Atualização da seção de notas de versão com as melhorias, atualizações de compatibilidade e correções da versão 7.4.1. [Leia mais](latest-release.md)
 
-Adição de uma nota para especificar como limpar variáveis de instância ao reiniciar fluxos de trabalho. [Leia mais](../../workflow/using/starting-a-workflow.md)
+Adição de uma nota para especificar como limpar variáveis de instância ao reiniciar fluxos de trabalho. [Leia mais](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow){target="_blank"} (Documentação do Campaign v8)
 
 ### Abril de 2024 {#apr-2024}
 
 Uma nota de advertência foi adicionada sobre a criação de usuários com o Adobe Identity Management System (IMS). [Leia mais](../../platform/using/access-management.md)
 
-As opções ausentes para a atividade de fluxo de trabalho Download da Web foram adicionadas. [Leia mais](../../workflow/using/web-download.md)
+As opções ausentes para a atividade de fluxo de trabalho Download da Web foram adicionadas. [Leia mais](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/event-activities/web-download){target="_blank"} (Documentação do Campaign v8)
 
-Uma nota de advertência foi adicionada às atividades **Mudar dimensão** e **Alterar fonte de dados** sobre seu uso em um fluxo de trabalho. [Leia mais](../../workflow/using/change-data-source.md)
+Uma nota de advertência foi adicionada às atividades **Mudar dimensão** e **Alterar fonte de dados** sobre seu uso em um fluxo de trabalho. [Leia mais](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source){target="_blank"} (Documentação do Campaign v8)
 
 ### Março de 2024 {#mar-2024}
 

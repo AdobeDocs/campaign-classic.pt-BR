@@ -8,9 +8,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: df5d87ca4fccb927f770957ec1c00157d14e95dc
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2298'
 ht-degree: 100%
 ---
 
@@ -363,124 +363,6 @@ ht-degree: 100%
     + {hide-from-toc}[Sincronizar aplicativos da web – OCULTO](integrations/using/synchronizing-web-applications.md)
     + {hide-from-toc}[Solucionar problemas no [!DNL ACS Connector] – OCULTO](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatizar com fluxos de trabalho](workflow/using/about-workflows.md)
-+ Automatizar com fluxos de trabalho {#automating-with-workflows}
-  + Introdução aos fluxos de trabalho {#introduction}
-    + {hide-from-toc}[Sobre atividades – OCULTO](workflow/using/about-activities.md)
-    + {hide-from-toc}[Criar um fluxo de trabalho – OCULTO](workflow/using/building-a-workflow.md)
-    + {hide-from-toc}[Dados do público-alvo – OCULTO](workflow/using/targeting-data.md)
-    + {hide-from-toc}[Usar dados de fluxo de trabalho – OCULTO](workflow/using/how-to-use-workflow-data.md)
-    + {hide-from-toc}[Práticas recomendadas para fluxos de trabalho – OCULTO](workflow/using/workflow-best-practices.md)
-  + Executar um fluxo de trabalho {#executing-a-workflow}
-    + {hide-from-toc}[Iniciar um fluxo de trabalho – OCULTO](workflow/using/starting-a-workflow.md)
-    + {hide-from-toc}[Ciclo de vida do fluxo de trabalho – OCULTO](workflow/using/workflow-life-cycle.md)
-    + {hide-from-toc}[Ciclo de vida dos dados – OCULTO](workflow/using/data-life-cycle.md)
-    + {hide-from-toc}[Definir aprovações – OCULTO](workflow/using/defining-approvals.md)
-    + {hide-from-toc}[Arquitetura – OCULTO](workflow/using/architecture.md)
-  + Atividades de direcionamento {#targeting-activities}
-    + {hide-from-toc}[Sobre as atividades de direcionamento – OCULTO](workflow/using/about-targeting-activities.md)
-    + {hide-from-toc}[Consulta – OCULTO](workflow/using/query.md)
-    + {hide-from-toc}[Consulta incremental – OCULTA](workflow/using/incremental-query.md)
-    + {hide-from-toc}[Lista de leitura – OCULTO](workflow/using/read-list.md)
-    + {hide-from-toc}[União – OCULTO](workflow/using/union.md)
-    + {hide-from-toc}[Interseção – OCULTO](workflow/using/intersection.md)
-    + {hide-from-toc}[Exclusão – OCULTO](workflow/using/exclusion.md)
-    + {hide-from-toc}[Dividir – OCULTO](workflow/using/split.md)
-    + {hide-from-toc}[Células – OCULTO](workflow/using/cells.md)
-    + {hide-from-toc}[Ofertas por célula – OCULTO](workflow/using/offers-by-cell.md)
-    + {hide-from-toc}[Descrição da entrega – OCULTO](workflow/using/delivery-outline.md)
-    + {hide-from-toc}[Enriquecimento – OCULTO](workflow/using/enrichment.md)
-    + {hide-from-toc}[Editar esquema – OCULTO](workflow/using/edit-schema.md)
-    + {hide-from-toc}[Mecanismo de oferta – OCULTO](workflow/using/offer-engine.md)
-    + {hide-from-toc}[Desduplicação – OCULTO](workflow/using/deduplication.md)
-    + {hide-from-toc}[Mudar dimensão – OCULTO](workflow/using/change-dimension.md)
-    + {hide-from-toc}[Atualização da lista – OCULTO](workflow/using/list-update.md)
-    + {hide-from-toc}[Serviços de assinatura – OCULTO](workflow/using/subscription-services.md)
-    + {hide-from-toc}[Atualizar dados – OCULTO](workflow/using/update-data.md)
-    + {hide-from-toc}[Conector CRM – OCULTO](workflow/using/crm-connector.md)
-    + {hide-from-toc}[Alterar fonte de dados – OCULTO](workflow/using/change-data-source.md)
-  + Atividades de controle de fluxo {#flow-control-activities}
-    + {hide-from-toc}[Sobre as atividades de controle de fluxo – OCULTO](workflow/using/about-flow-control-activities.md)
-    + {hide-from-toc}[Início e fim – OCULTO](workflow/using/start-and-end.md)
-    + {hide-from-toc}[Bifurcação – OCULTO](workflow/using/fork.md)
-    + {hide-from-toc}[AND-join – OCULTO](workflow/using/and-join.md)
-    + {hide-from-toc}[Scheduler – OCULTO](workflow/using/scheduler.md)
-    + {hide-from-toc}[Teste – OCULTO](workflow/using/test.md)
-    + {hide-from-toc}[Aguardar – OCULTO](workflow/using/wait.md)
-    + {hide-from-toc}[Restrição de tempo – OCULTO](workflow/using/time-constraint.md)
-    + {hide-from-toc}[Subfluxo de trabalho – OCULTO](workflow/using/sub-workflow.md)
-    + {hide-from-toc}[Saltar (ponto inicial e final – OCULTO)](workflow/using/jump-start-point-and-end-point.md)
-    + {hide-from-toc}[Sinal externo – OCULTO](workflow/using/external-signal.md)
-    + {hide-from-toc}[Aprovação – OCULTO](workflow/using/approval.md)
-    + {hide-from-toc}[Alerta – OCULTO](workflow/using/alert.md)
-    + {hide-from-toc}[Tarefa – OCULTO](workflow/using/task.md)
-  + Atividades de ação {#action-activities}
-    + {hide-from-toc}[Sobre atividades de ação – OCULTO](workflow/using/about-action-activities.md)
-    + {hide-from-toc}[Entrega – OCULTO](workflow/using/delivery.md)
-    + {hide-from-toc}[Controle de entrega – OCULTO](workflow/using/delivery-control.md)
-    + {hide-from-toc}[Entrega contínua – OCULTO](workflow/using/continuous-delivery.md)
-    + {hide-from-toc}[Entrega recorrente – OCULTO](workflow/using/recurring-delivery.md)
-    + {hide-from-toc}[Entregas entre canais – OCULTO](workflow/using/cross-channel-deliveries.md)
-    + {hide-from-toc}[Aprovação local – OCULTO](workflow/using/local-approval.md)
-    + {hide-from-toc}[Carregamento de dados (RDBMS) – OCULTO](workflow/using/data-loading-rdbms.md)
-    + {hide-from-toc}[Carregamento (SOAP) – OCULTO](workflow/using/loading-soap.md)
-    + {hide-from-toc}[Carregamento de dados (arquivo) – OCULTO](workflow/using/data-loading-file.md)
-    + {hide-from-toc}[Gerenciamento de conteúdo – OCULTO](workflow/using/content-management.md)
-    + {hide-from-toc}[Extração de dados (arquivo) – OCULTO](workflow/using/extraction-file.md)
-    + {hide-from-toc}[Código SQL e código JavaScript – OCULTO](workflow/using/sql-code-and-javascript-code.md)
-    + {hide-from-toc}[Gerenciamento de dados SQL – OCULTO](workflow/using/sql-data-management.md)
-    + {hide-from-toc}[Módulo Nlserver – OCULTO](workflow/using/nlserver-module.md)
-    + {hide-from-toc}[Atualizar agregado – OCULTO](workflow/using/update-aggregate.md)
-  + Atividades de evento {#event-activities}
-    + {hide-from-toc}[Sobre atividades de evento – OCULTO](workflow/using/about-event-activities.md)
-    + {hide-from-toc}[File collector – OCULTO](workflow/using/file-collector.md)
-    + {hide-from-toc}[Transferência de arquivo – OCULTO](workflow/using/file-transfer.md)
-    + {hide-from-toc}[Download da web – OCULTO](workflow/using/web-download.md)
-    + {hide-from-toc}[Emails de entrada – OCULTO](workflow/using/inbound-emails.md)
-    + {hide-from-toc}[SMS de entrada – OCULTO](workflow/using/inbound-sms.md)
-  + Casos de uso {#use-cases}
-    + {hide-from-toc}[Sobre casos de uso de fluxo de trabalho – OCULTO](workflow/using/about-workflow-use-cases.md)
-    + Entregas {#deliveries}
-      + {hide-from-toc}[Usar a atividade de aprovação local – OCULTO](workflow/using/using-the-local-approval-activity.md)
-      + {hide-from-toc}[Enviar email de aniversário – OCULTO](workflow/using/sending-a-birthday-email.md)
-      + {hide-from-toc}[Carregar conteúdo da entrega – OCULTO](workflow/using/loading-delivery-content.md)
-      + {hide-from-toc}[Fluxo de trabalho de entrega entre canais – OCULTO](workflow/using/cross-channel-delivery-workflow.md)
-      + {hide-from-toc}[Enriquecimento de email com campos de data personalizados – OCULTO](workflow/using/email-enrichment-with-custom-date-fields.md)
-  + Monitoramento {#monitoring}
-    + {hide-from-toc}[Enviar um relatório a uma lista – OCULTO](workflow/using/sending-a-report-to-a-list.md)
-    + {hide-from-toc}[Supervisionar os fluxos de trabalho – OCULTO](workflow/using/supervising-workflows.md)
-    + {hide-from-toc}[Enviar alertas personalizados a operadores – OCULTO](workflow/using/sending-personalized-alerts-to-operators.md)
-  + Gerenciamento de dados {#data-management}
-    + {hide-from-toc}[Coordenar atualizações de dados – OCULTO](workflow/using/coordinating-data-updates.md)
-    + {hide-from-toc}[Criar uma lista de resumo – OCULTO](workflow/using/creating-a-summary-list.md)
-    + {hide-from-toc}[Enriquecer dados – OCULTO](workflow/using/enriching-data.md)
-    + {hide-from-toc}[Usar agregados – OCULTO](workflow/using/using-aggregates.md)
-    + {hide-from-toc}[Usar o recurso de mesclagem da atividade de desduplicação – OCULTO](workflow/using/deduplication-merge.md)
-    + {hide-from-toc}[Configurar um fluxo de trabalho de importação recorrente – OCULTO](workflow/using/recurring-import-workflow.md)
-  + Criar consultas {#designing-queries}
-    + {hide-from-toc}[Atualização da lista trimestral usando uma consulta incremental – OCULTO](workflow/using/quarterly-list-update.md)
-  + Consulta e filtro {#query-and-filter-hidden}
-    + {hide-from-toc}[Consultar a tabela de destinatários – OCULTO](workflow/using/querying-recipient-table.md)
-    + {hide-from-toc}[Consultar informações da entrega – OCULTO](workflow/using/querying-delivery-information.md)
-    + {hide-from-toc}[Executar computação agregada – OCULTO](workflow/using/performing-aggregate-computing.md)
-    + {hide-from-toc}[Consultar usando gerenciamento de agrupamento – OCULTO](workflow/using/querying-using-grouping-management.md)
-    + {hide-from-toc}[Consultar usando uma relação de muitos para muitos – OCULTO](workflow/using/querying-using-many-to-many-relationship.md)
-    + {hide-from-toc}[Adicionar um campo calculado do tipo lista discriminada – OCULTO](workflow/using/adding-enumeration-type-calculated-field.md)
-    + {hide-from-toc}[Criar um filtro – OCULTO](workflow/using/creating-a-filter.md)
-    + {hide-from-toc}[Filtrar destinatários duplicados – OCULTO](workflow/using/filtering-duplicated-recipients.md)
-  + Monitorar fluxos de trabalho {#monitoring-workflows}
-    + {hide-from-toc}[Monitorar a execução do fluxo de trabalho – OCULTO](workflow/using/monitoring-workflow-execution.md)
-    + {hide-from-toc}[Monitorar fluxos de trabalho técnicos – OCULTO](workflow/using/monitoring-technical-workflows.md)
-    + {hide-from-toc}[Mapa de calor do fluxo de trabalho – OCULTO](workflow/using/heatmap.md)
-  + Gerenciamento avançado {#advanced-management}
-    + {hide-from-toc}[Propriedades do fluxo de trabalho – OCULTO](workflow/using/workflow-properties.md)
-    + {hide-from-toc}[Parâmetros avançados – OCULTO](workflow/using/advanced-parameters.md)
-    + {hide-from-toc}[Scripts e modelos JavaScript – OCULTO](workflow/using/javascript-scripts-and-templates.md)
-    + {hide-from-toc}[Exemplos de código JavaScript em fluxos de trabalho – OCULTO](workflow/using/javascript-in-workflows.md)
-    + {hide-from-toc}[Acessar um banco de dados externo – OCULTO](workflow/using/accessing-an-external-database-fda.md)
-    + {hide-from-toc}[Gerenciar permissões – OCULTO](workflow/using/managing-rights.md)
-    + {hide-from-toc}[Alterar imagens de atividade – OCULTO](workflow/using/managing-activity-images.md)
-    + {hide-from-toc}[Gerenciar fusos horários – OCULTO](workflow/using/managing-time-zones.md)
-    + {hide-from-toc}[Fluxos de trabalho técnicos – OCULTO](workflow/using/about-technical-workflows.md)
 + Gerenciar ofertas {#managing-offers}
   + Introdução à interação {#interaction-overview}
     + [Interação e gerenciamento de ofertas](interaction/using/interaction-and-offer-management.md)

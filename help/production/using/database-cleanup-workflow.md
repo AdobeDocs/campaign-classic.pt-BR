@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2862'
-ht-degree: 1%
+source-wordcount: '2877'
+ht-degree: 0%
 ---
 # Fluxo de trabalho de limpeza do banco de dados{#database-cleanup-workflow}
 
@@ -349,7 +349,7 @@ Esta tarefa limpa cada instância de fluxo de trabalho usando seu identificador 
 
 >[!NOTE]
 >
->A frequência de limpeza do histórico é especificada para cada fluxo de trabalho no campo **Histórico em dias** (valor padrão de 30 dias). Este campo pode ser encontrado na guia **Execution** das propriedades do fluxo de trabalho. Para obter mais informações, consulte [esta seção](../../workflow/using/workflow-properties.md#execution).
+>A frequência de limpeza do histórico é especificada para cada fluxo de trabalho no campo **Histórico em dias** (valor padrão de 30 dias). Este campo pode ser encontrado na guia **Execution** das propriedades do fluxo de trabalho. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/advanced-management/workflow-properties#execution){target="_blank"} (documentação do Campaign v8).
 
 1. Para recuperar a lista de workflows a serem excluídos, a seguinte query é usada:
 

@@ -36,10 +36,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 100%
+source-wordcount: '576'
+ht-degree: 92%
 ---
 # Definir o público-alvo correto {#define-the-right-audience}
 
@@ -92,8 +92,8 @@ O cancelamento da duplicação de endereços protege a reputação de envio e ga
 
 **Tópicos relacionados:**
 
-* [Atividade de desduplicação](../../workflow/using/deduplication.md).
-* [Caso de uso: uso da funcionalidade de mesclagem de atividades de desduplicação](../../workflow/using/deduplication-merge.md)
+* [Atividade de desduplicação](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication){target="_blank"} (documentação do Campaign v8).
+* [Caso de uso: uso da funcionalidade de mesclagem de atividades de desduplicação](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge){target="_blank"} (documentação do Campaign v8)
 
 ## Indexar endereços de email {#index-addresses}
 

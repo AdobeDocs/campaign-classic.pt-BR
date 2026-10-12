@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '3362'
-ht-degree: 100%
+source-wordcount: '3392'
+ht-degree: 98%
 ---
 # Regras de pressão{#pressure-rules}
 
@@ -364,8 +364,8 @@ Primeiro, configure a regra de pressão.
 Agora, crie e configure um fluxo de trabalho para cada entrega em que a regra de pressão é aplicada.
 
 1. Crie uma campanha. Para obter mais informações, consulte [esta seção](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao fluxo de trabalho. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/query.md).
-1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/delivery.md).
+1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao fluxo de trabalho. Para obter mais informações sobre como usar essa atividade, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentação do Campaign v8).
+1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra. Para obter mais informações sobre como usar essa atividade, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"} (documentação do Campaign v8).
 1. Acesse a guia **[!UICONTROL Approvals]** das **[!UICONTROL Delivery properties]** e desabilite todas as aprovações.
 
    ![](assets/campaign_opt_pressure_example_2.png)

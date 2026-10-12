@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 100%
+source-wordcount: '1082'
+ht-degree: 94%
 ---
 # Campos de personalização{#personalization-fields}
 
@@ -104,7 +104,7 @@ Ao criar um email, iremos inserir o nome do destinatário e depois adicionar a d
 
    >[!NOTE]
    >
-   >Quando uma entrega faz parte de um fluxo de trabalho, você pode usar os dados da tabela de fluxo de trabalho temporário. Esses dados são agrupados no menu **[!UICONTROL Target extension]**. Para obter mais informações, consulte [esta seção](../../workflow/using/data-life-cycle.md#target-data).
+   >Quando uma entrega faz parte de um fluxo de trabalho, você pode usar os dados da tabela de fluxo de trabalho temporário. Esses dados são agrupados no menu **[!UICONTROL Target extension]**. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/use-workflow-data){target="_blank"} (documentação do Campaign v8).
 
 ## Otimização da personalização {#optimizing-personalization}
 
@@ -119,8 +119,8 @@ Por exemplo, se estiver tendo problemas de desempenho com entrega de um grande n
 Para usar essa opção, siga as etapas abaixo:
 
 1. Crie uma campanha. Para mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR){target=_blank}.
-1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao fluxo de trabalho. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/query.md).
-1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra. Para obter mais informações sobre o uso dessa atividade, consulte [esta seção](../../workflow/using/delivery.md).
+1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao fluxo de trabalho. Para obter mais informações sobre como usar essa atividade, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentação do Campaign v8).
+1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra. Para obter mais informações sobre como usar essa atividade, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"} (documentação do Campaign v8).
 1. Vá até a guia **[!UICONTROL Analysis]** do **[!UICONTROL Delivery properties]** e selecione a opção **[!UICONTROL Prepare the personalization data with a workflow]**.
 
    ![](assets/perso_optimization.png)
@@ -173,6 +173,6 @@ Ao adicionar o esquema do objeto, selecione os campos que deseja adicionar ao co
 
 Saiba como adicionar um campo de personalização à linha de assunto e ao conteúdo de uma entrega de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/31843?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
 Vídeos extras sobre procedimentos do Campaign Classic estão disponíveis [aqui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=pt-BR).

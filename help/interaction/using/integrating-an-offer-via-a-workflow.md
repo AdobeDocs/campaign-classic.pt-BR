@@ -25,10 +25,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 100%
+source-wordcount: '1092'
+ht-degree: 98%
 ---
 # Integração de uma oferta via fluxo de trabalho{#integrating-an-offer-via-a-workflow}
 
@@ -162,7 +162,7 @@ Essa atividade funciona de acordo com o mesmo princípio que a atividade de enri
 
 ![](assets/int_offerengine_activity2.png)
 
-Após configurar a consulta (consulte o [Guia de fluxos de trabalho](../../workflow/using/query.md)):
+Após configurar sua consulta (consulte o [Guia de workflows](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentação do Campaign v8)):
 
 1. Adicione e abra uma atividade de **[!UICONTROL Offer engine]**.
 1. Preencha os vários campos disponíveis para especificar a chamada para oferecer parâmetros de mecanismo (espaço de oferta, categoria ou tema(s), data de contato, número de ofertas a serem mantidas). O mecanismo calculará automaticamente as ofertas para adicionar de acordo com esses parâmetros.
