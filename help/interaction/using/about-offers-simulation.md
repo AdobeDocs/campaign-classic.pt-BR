@@ -37,7 +37,7 @@ A simulação leva em consideração os contextos e as regras de qualificação 
 
 Para saber como simular uma oferta, leia as etapas abaixo.
 
-![](assets/do-not-localize/how-to-video.png)[ Você também pode assistir a este vídeo](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com).
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Você também pode assistir a este vídeo](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com).
 
 ## Etapas principais para a criação de uma simulação {#main-steps-for-creating-a-simulation}
 
