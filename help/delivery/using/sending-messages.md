@@ -58,8 +58,8 @@ Depois que o email for criado e configurado, você poderá enviá-lo ao público
 
 As seguintes seções detalham as configurações específicas para a entrega de emails:
 <!--
-* [Generating the mirror page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/mirror-page){target="_blank"} (Campaign v8 documentation)
-* [Email BCC](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"} (Campaign v8 documentation)
+* [Generating the mirror page](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/mirror-page){target="_blank"} (Campaign v8 documentation)
+* [Email BCC](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"} (Campaign v8 documentation)
 -->
 * [Parâmetros de email](email-parameters.md)
 * [Envio de emails com o MTA aprimorado](sending-with-enhanced-mta.md)
