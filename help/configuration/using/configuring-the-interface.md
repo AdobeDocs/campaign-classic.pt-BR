@@ -57,7 +57,7 @@ A criação de um novo formulário permitirá que você exiba e edite os dados d
 
    >[!NOTE]
    >
-   >Para saber mais sobre os arquivos do tipo **formulário**, consulte [esta página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).
+   >Para saber mais sobre os arquivos do tipo **formulário**, consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).
 
    No nosso exemplo atual, o arquivo **formulário** deve ser baseado no esquema **cus:individual** e, portanto, deve ter o seguinte layout:
 

@@ -147,7 +147,7 @@ O tipo de operação desejado é inserido no atributo **operation** e contém um
 * **select**: cria um cursor para retornar vários registros e retorna um documento vazio se não houver dados,
 * **count**: retorna uma contagem de dados.
 
-A sintaxe **XPath** é usada para localizar dados com base no esquema de entrada. Para obter mais informações sobre XPaths, consulte [Esquemas de dados](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (documentação do Campaign v8).
+A sintaxe **XPath** é usada para localizar dados com base no esquema de entrada. Para obter mais informações sobre XPaths, consulte [Esquemas de dados](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (documentação do Campaign v8).
 
 #### Exemplo com a operação &#39;get&#39; {#example-with-the--get--operation}
 

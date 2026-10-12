@@ -45,7 +45,7 @@ ht-degree: 97%
 
 Os relatórios integrados fornecidos pelo Adobe Campaign podem ser encontrados na tabela abaixo.
 
-Para obter mais informações sobre o conteúdo desses relatórios, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (documentação do Campaign v8).
+Para obter mais informações sobre o conteúdo desses relatórios, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (documentação do Campaign v8).
 
 <table> 
  <tbody> 

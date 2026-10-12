@@ -46,7 +46,7 @@ ht-degree: 98%
 
 ## Permissões{#delivery-permissions}
 
-Somente o proprietário da entrega pode iniciar uma entrega. Para que outros operadores (ou grupo de operadores) possam iniciar uma entrega, é necessário adicioná-los como revisores no campo **[!UICONTROL Delivery start:]**. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"} (documentação do Campaign v8).
+Somente o proprietário da entrega pode iniciar uma entrega. Para que outros operadores (ou grupo de operadores) possam iniciar uma entrega, é necessário adicioná-los como revisores no campo **[!UICONTROL Delivery start:]**. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"} (documentação do Campaign v8).
 
 ## Parâmetros adicionais de entrega {#delivery-additiona-parameters}
 

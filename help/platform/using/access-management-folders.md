@@ -120,7 +120,7 @@ As seguintes entregas serão exibidas na visualização:
 
 >[!NOTE]
 >
->Ao gerenciar os eventos de [mensagens transacionais](../../message-center/using/about-transactional-messaging.md), as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações nas instâncias de execução, pois isso pode levar a problemas de direito de acesso. Para obter mais informações sobre a coleção do evento, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} (documentação do Campaign v8).
+>Ao gerenciar os eventos de [mensagens transacionais](../../message-center/using/about-transactional-messaging.md), as pastas **[!UICONTROL Real time events]** ou **[!UICONTROL Batch events]** não devem ser definidas como visualizações nas instâncias de execução, pois isso pode levar a problemas de direito de acesso. Para obter mais informações sobre a coleção do evento, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} (documentação do Campaign v8).
 
 <!--
 ## Permissions on a folder

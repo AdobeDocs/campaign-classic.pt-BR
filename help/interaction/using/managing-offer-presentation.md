@@ -87,7 +87,7 @@ O **[!UICONTROL Targeting dimension]** coincide com a tabela de destinatários
 
 >[!NOTE]
 >
->Você também pode usar tabelas não padrão. Se quiser usar uma dimensão de direcionamento específica, é necessário criar tabelas e um ambiente dedicado usando o targeting mapping. Para obter mais informações, consulte [Criação de um ambiente de oferta](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} (documentação do Campaign v8).
+>Você também pode usar tabelas não padrão. Se quiser usar uma dimensão de direcionamento específica, é necessário criar tabelas e um ambiente dedicado usando o targeting mapping. Para obter mais informações, consulte [Criação de um ambiente de oferta](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} (documentação do Campaign v8).
 
 ### Período {#period}
 

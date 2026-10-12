@@ -51,7 +51,7 @@ Para cada entrega, você poderá definir vários tipos de populações de destin
 * **Público-alvo principal**: perfis que receberão mensagens. [Saiba mais](steps-defining-the-target-population.md#selecting-the-main-target)
 * **Prova**: destinatários de mensagens de prova, envolvidos no ciclo de validação. [Saiba mais](steps-defining-the-target-population.md#defining-a-specific-proof-target)
 * **Seed addresses**: destinatários que estão fora do target da entrega, mas receberão a entrega (somente no contexto de uma campanha de marketing). [Saiba mais](about-seed-addresses.md)
-* **Grupos de controle**: população que não receberá a entrega, usado para rastrear o comportamento e o impacto da campanha (somente no contexto de uma campanha de marketing). [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#add-a-control-group){target="_blank"} (documentação do Campaign v8).
+* **Grupos de controle**: população que não receberá a entrega, usado para rastrear o comportamento e o impacto da campanha (somente no contexto de uma campanha de marketing). [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#add-a-control-group){target="_blank"} (documentação do Campaign v8).
 
 ## Selecionar os principais destinatários da entrega {#selecting-the-main-target}
 

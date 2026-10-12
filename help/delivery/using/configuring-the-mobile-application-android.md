@@ -195,7 +195,7 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 
 É necessário estender o **appsubscriptionRcp** para definir campos adicionais para armazenar parâmetros do aplicativo no banco de dados do Campaign. Esses campos serão usados para personalização, por exemplo. Para isso:
 
-1. Crie uma extensão do esquema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** e defina os novos campos. Saiba mais sobre a extensão de esquema em [esta página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8)
+1. Crie uma extensão do esquema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** e defina os novos campos. Saiba mais sobre a extensão de esquema em [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8)
 
 1. Defina o mapeamento na guia **[!UICONTROL Subscription parameters]**.
 

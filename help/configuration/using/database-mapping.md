@@ -31,9 +31,9 @@ ht-degree: 19%
 
 Esta página descreve como declarar índices nos campos de um esquema.
 
-Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre o mapeamento SQL de esquemas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}.
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre o mapeamento SQL de esquemas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}.
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}
 
 ## Campos indexados {#indexed-fields}
 
@@ -107,4 +107,4 @@ Navegue pelos links a seguir para saber mais:
 * [Introdução a esquemas](about-schema-reference.md)
 * [Estrutura de esquema](schema-structure.md)
 * [Gerenciamento de chaves](database-keys.md)
-* [Gerenciamento de links](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (documentação do Campaign v8)
+* [Gerenciamento de links](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (documentação do Campaign v8)

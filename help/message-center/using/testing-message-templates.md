@@ -33,11 +33,11 @@ ht-degree: 60%
 ---
 # Testar modelos de mensagem transacional {#testing-message-templates}
 
-Quando o [modelo de mensagem](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (documentação do Campaign v8) estiver pronto, siga as etapas abaixo para pré-visualizá-lo e testá-lo.
+Quando o [modelo de mensagem](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (documentação do Campaign v8) estiver pronto, siga as etapas abaixo para pré-visualizá-lo e testá-lo.
 
-Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber como adicionar seed addresses, visualizar uma mensagem transacional e enviar uma prova, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}.
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber como adicionar seed addresses, visualizar uma mensagem transacional e enviar uma prova, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}.
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}
 
 ## Dados de personalização {#personalization-data}
 
@@ -47,7 +47,7 @@ O objetivo desses dados é testar suas mensagens antes da entrega final. Essas m
 
 ![](assets/messagecenter_create_custo_006.png)
 
-Essas informações permitem personalizar o conteúdo da mensagem usando marcas de personalização (para obter mais informações, consulte [Criar o conteúdo da mensagem](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#create-message-content){target="_blank"} (documentação do Campaign v8)).
+Essas informações permitem personalizar o conteúdo da mensagem usando marcas de personalização (para obter mais informações, consulte [Criar o conteúdo da mensagem](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template#create-message-content){target="_blank"} (documentação do Campaign v8)).
 
 1. Publicar o modelo de mensagem transacional.
 

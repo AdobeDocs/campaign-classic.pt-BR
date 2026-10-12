@@ -37,9 +37,9 @@ ht-degree: 11%
 
 Cada tabela associada a um schema de dados deve ter pelo menos uma chave para identificar um registro em uma tabela. Esta página descreve a chave incremental automática usada nas tabelas do Campaign Classic v7.
 
-Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre o gerenciamento de chaves, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}.
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre o gerenciamento de chaves, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}.
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}
 
 ## Chave incremental automática {#auto-incremental-key}
 
@@ -103,5 +103,5 @@ Navegue pelos links a seguir para saber mais:
 * [Introdução a esquemas](about-schema-reference.md)
 * [Estrutura de esquema](schema-structure.md)
 * [Mapeamento de banco de dados](database-mapping.md)
-* [Gerenciamento de links](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (documentação do Campaign v8)
-* [Modelo de dados do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentação do Campaign v8)
+* [Gerenciamento de links](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (documentação do Campaign v8)
+* [Modelo de dados do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentação do Campaign v8)

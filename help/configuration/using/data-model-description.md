@@ -73,7 +73,7 @@ O campo iFolderId é a chave externa que vincula o recipient à sua pasta de exe
 
 O campo sCountryCode é o código ISO 3166-1 Alpha 2 (2 caracteres) do país associado ao recipient. Na verdade, esse campo é uma chave estrangeira na tabela de referência de país (NmsCountry), que contém os rótulos de país e outros dados de código de país. Se o país não estiver preenchido, o valor &quot;XX&quot; será armazenado (e usado no lugar de um registro de ID zero).
 
-Para obter mais informações sobre a tabela Recipient, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (documentação do Campaign v8).
+Para obter mais informações sobre a tabela Recipient, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (documentação do Campaign v8).
 
 ### NmsGroup {#NmsGroup}
 

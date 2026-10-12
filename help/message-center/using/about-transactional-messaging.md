@@ -31,9 +31,9 @@ ht-degree: 67%
 
 **As mensagens transacionais** (Centro de mensagens) são um módulo do Campaign criado para gerenciar notificações de acionador personalizadas geradas por eventos enviados por um sistema de informações externo.
 
-Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre mensagens transacionais, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}.
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre mensagens transacionais, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}.
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}
 
 Esta seção aborda a arquitetura de mensagens transacionais e a configuração das instâncias de controle e execução, específicas para implantações locais e híbridas.
 
@@ -65,10 +65,10 @@ As principais etapas ao criar e gerenciar mensagens transacionais personalizadas
 
 Na **instância de controle**, você deve executar as seguintes ações:
 
-1. [Criar um tipo de evento](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"} (documentação do Campaign v8).
-1. [Criar o modelo de mensagem](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (documentação do Campaign v8). Você deve vincular um evento à sua mensagem durante essa etapa.
+1. [Criar um tipo de evento](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"} (documentação do Campaign v8).
+1. [Criar o modelo de mensagem](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (documentação do Campaign v8). Você deve vincular um evento à sua mensagem durante essa etapa.
 1. [Testar a mensagem](../../message-center/using/testing-message-templates.md).
-1. [Publicar o modelo de mensagem](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (documentação do Campaign v8).
+1. [Publicar o modelo de mensagem](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (documentação do Campaign v8).
 
 >[!NOTE]
 >
@@ -78,13 +78,13 @@ Na **instância de controle**, você deve executar as seguintes ações:
 
 Depois de criar e publicar o modelo de mensagem transacional, se um evento correspondente for acionado, as principais etapas abaixo serão executadas na **instância de execução**:
 
-1. Quando o evento é gerado pelo sistema de informações externo, os dados relevantes são enviados para o Campaign por meio dos métodos **PushEvent** e **PushEvents**. Consulte [Coleção de eventos](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} (documentação do Campaign v8).
-1. O evento é vinculado ao modelo de mensagem apropriado. Consulte [Roteamento para um modelo](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-to-template){target="_blank"} (documentação do Campaign v8).
-1. Quando a etapa de enriquecimento estiver concluída, a entrega será enviada. Consulte [Execução da entrega](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (documentação do Campaign v8). Cada destinatário direcionado recebe uma mensagem personalizada.
+1. Quando o evento é gerado pelo sistema de informações externo, os dados relevantes são enviados para o Campaign por meio dos métodos **PushEvent** e **PushEvents**. Consulte [Coleção de eventos](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} (documentação do Campaign v8).
+1. O evento é vinculado ao modelo de mensagem apropriado. Consulte [Roteamento para um modelo](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-to-template){target="_blank"} (documentação do Campaign v8).
+1. Quando a etapa de enriquecimento estiver concluída, a entrega será enviada. Consulte [Execução da entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (documentação do Campaign v8). Cada destinatário direcionado recebe uma mensagem personalizada.
 
 ## Tópicos relacionados {#related-topics}
 
 * [Introdução a canais de comunicação](../../delivery/using/communication-channels.md)
 * [Etapas principais de criação da entrega](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=pt-BR){target="_blank"}
 * [Arquitetura de mensagens transacionais](../../message-center/using/transactional-messaging-architecture.md)
-* [Acessar relatórios de mensagens transacionais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (documentação do Campaign v8)
+* [Acessar relatórios de mensagens transacionais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (documentação do Campaign v8)

@@ -355,7 +355,7 @@ A interface não exibirá um link, mas um campo. Quando os usuários escolhem es
 
 * Saiba como **trabalhar com enumerações** na [documentação do Adobe Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
-* [Introdução aos esquemas do Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8)
+* [Introdução aos esquemas do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8)
 
 * [Atualização da estrutura do banco de dados](../../configuration/using/updating-the-database-structure.md)
 

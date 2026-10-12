@@ -126,4 +126,4 @@ Se necessário, você pode criar o esquema para processamento de dados em um ban
 
 >[!NOTE]
 >
->Para obter mais informações sobre como criar schemas no Adobe Campaign e definir um novo mapeamento de dados, consulte [esta página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).
+>Para obter mais informações sobre como criar schemas no Adobe Campaign e definir um novo mapeamento de dados, consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).

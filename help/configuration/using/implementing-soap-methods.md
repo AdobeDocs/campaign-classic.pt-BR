@@ -53,7 +53,7 @@ A criação de uma biblioteca de métodos envolve dois estágios:
 
 ### Declaração {#declaration}
 
-Comece declarando os métodos nos schemas (para obter mais informações sobre como criar e editar schemas, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8)).
+Comece declarando os métodos nos schemas (para obter mais informações sobre como criar e editar schemas, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8)).
 
 A declaração deles é semelhante à dos métodos nativos, exceto que é necessário adicionar o atributo &quot;biblioteca&quot; especificando o nome da biblioteca de métodos onde a definição está localizada.
 

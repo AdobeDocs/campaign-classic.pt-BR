@@ -113,7 +113,7 @@ Queremos enviar uma apresentação de oferta que pertence à categoria Canadá. 
 
    ![](assets/offer_typology_example_016.png)
 
-1. Insira as ofertas no corpo da mensagem e envie a entrega. Para obter mais informações, consulte [Sobre canais de saída](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentação do Campaign v8).
+1. Insira as ofertas no corpo da mensagem e envie a entrega. Para obter mais informações, consulte [Sobre canais de saída](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentação do Campaign v8).
 
    O destinatário recebeu a oferta para a qual está qualificado.
 

@@ -39,7 +39,7 @@ ht-degree: 16%
 
 Este capítulo descreve como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign.
 
-Para entender melhor as tabelas integradas do Campaign e suas interações, consulte o [modelo de dados do Campaign Classic](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentação do Campaign v8).
+Para entender melhor as tabelas integradas do Campaign e suas interações, consulte o [modelo de dados do Campaign Classic](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentação do Campaign v8).
 
 No Adobe Campaign, a estrutura física e lógica dos dados transportados no aplicativo é descrita em XML. Um **esquema** é um documento XML associado a uma tabela de banco de dados. Ele define a estrutura de dados e descreve a definição SQL da tabela:
 
@@ -62,6 +62,6 @@ A ilustração a seguir mostra a localização dos esquemas no sistema de dados 
 
 ![](assets/reference_schema_intro.png)
 
-Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre a sintaxe e a identificação de esquemas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}.
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre a sintaxe e a identificação de esquemas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}.
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}

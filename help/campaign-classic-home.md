@@ -109,7 +109,7 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatizar com fluxos de trabalho</a> - <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html" target="_blank">Campanha de marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Interação e gerenciamento de ofertas</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">Relatórios</a> (documentação do Campaign v8)
+      <strong>Experiência do cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatizar com fluxos de trabalho</a> - <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html" target="_blank">Campanha de marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Interação e gerenciamento de ofertas</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">Relatórios</a> (documentação do Campaign v8)
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
@@ -131,7 +131,7 @@ Algumas alterações importantes no serviço Firebase Cloud Messaging (FCM) para
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>Recursos do desenvolvedor</strong><br/><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel" target="_blank">Descrição do modelo de dados</a> (documentação do Campaign v8) - <a href="configuration/using/about-schema-reference.md">Estrutura do esquema</a> - <a href="configuration/using/editing-forms.md">Estrutura do esquema</a> - <a href="configuration/using/about-web-services.md">APIs</a> - <a href="https://experienceleague.adobe.com/pt-br/tools/campaign-api">Documentação de referência JSAPI</a> - <a href="configuration/using/about-custom-recipient-table.md">Tabela de destinatários personalizada</a>
+      <strong>Recursos do desenvolvedor</strong><br/><a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/datamodel" target="_blank">Descrição do modelo de dados</a> (documentação do Campaign v8) - <a href="configuration/using/about-schema-reference.md">Estrutura do esquema</a> - <a href="configuration/using/editing-forms.md">Estrutura do esquema</a> - <a href="configuration/using/about-web-services.md">APIs</a> - <a href="https://experienceleague.adobe.com/pt-br/tools/campaign-api">Documentação de referência JSAPI</a> - <a href="configuration/using/about-custom-recipient-table.md">Tabela de destinatários personalizada</a>
     </td>
   </tr>
 </table>

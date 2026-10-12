@@ -154,7 +154,7 @@ Uma entrega não pode ser interrompida depois de transferida para o MTA aprimora
 
 O gráfico de taxa de transferência de entrega do Campaign não exibirá mais a taxa de transferência para os destinatários de email. Ele mostrará a velocidade da taxa de transferência da transmissão de suas mensagens do Campaign para o MTA aprimorado.
 
-Para obter mais informações sobre a taxa de transferência de entrega, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (documentação do Campaign v8).
+Para obter mais informações sobre a taxa de transferência de entrega, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (documentação do Campaign v8).
 
 ### Tentativas
 

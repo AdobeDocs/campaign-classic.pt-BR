@@ -185,7 +185,7 @@ Para confirmar que a entrega foi bem-sucedida:
 
 >[!NOTE]
 >
->Por padrão, o módulo de gestão de cupom usa uma tabela **nms:recipient**. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (documentação do Campaign v8).
+>Por padrão, o módulo de gestão de cupom usa uma tabela **nms:recipient**. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (documentação do Campaign v8).
 >
 >Aprenda como usar uma tabela de destinatário personalizada [nesta página](../../configuration/using/about-custom-recipient-table.md).
 

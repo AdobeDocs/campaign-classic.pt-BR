@@ -135,7 +135,7 @@ Os grupos de operadores padrão são:
 
 1. **[!UICONTROL Offer managers]**
 
-   Os operadores neste grupo podem criar e manter ofertas. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"} (documentação do Campaign v8).
+   Os operadores neste grupo podem criar e manter ofertas. Para obter mais informações, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"} (documentação do Campaign v8).
    Esse grupo contém os seguintes direitos nomeados:
 
    * **[!UICONTROL INSERT FOLDERS]**: direito de inserir pastas à árvore do Adobe Campaign (se você tiver o direito de editar ramificações),

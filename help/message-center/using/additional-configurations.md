@@ -39,7 +39,7 @@ ht-degree: 94%
 
 ## Monitorar limites {#monitoring-thresholds}
 
-Você pode configurar os limites de aviso (laranja) e os limites de alerta (vermelho) dos indicadores que aparecem nos **relatórios de nível de serviço do Centro de Mensagens** e **tempo de processamento do Centro de Mensagens** (consulte [Relatórios de mensagens transacionais de acesso](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (documentação do Campaign v8)).
+Você pode configurar os limites de aviso (laranja) e os limites de alerta (vermelho) dos indicadores que aparecem nos **relatórios de nível de serviço do Centro de Mensagens** e **tempo de processamento do Centro de Mensagens** (consulte [Relatórios de mensagens transacionais de acesso](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (documentação do Campaign v8)).
 
 Para fazer isso, siga as etapas abaixo:
 

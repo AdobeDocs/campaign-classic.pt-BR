@@ -98,7 +98,7 @@ Como etapa final, maximize suas chances e aproveite o potencial do Adobe Campaig
 
 ### Passar por um processo de validação
 
-Você pode definir um processo de validação completo, envolvendo operadores e grupos do Adobe Campaign, para validar tanto o público-alvo quanto o conteúdo da mensagem. Dessa forma, será possível monitorar e controlar totalmente os diversos processos da campanha: direcionamento, conteúdo, orçamento, extração e envio de prova. Dependendo das suas permissões, os usuários serão notificados, receberão provas e poderão validar ou rejeitar a mensagem. Saiba mais [nesta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"} (documentação do Campaign v8).
+Você pode definir um processo de validação completo, envolvendo operadores e grupos do Adobe Campaign, para validar tanto o público-alvo quanto o conteúdo da mensagem. Dessa forma, será possível monitorar e controlar totalmente os diversos processos da campanha: direcionamento, conteúdo, orçamento, extração e envio de prova. Dependendo das suas permissões, os usuários serão notificados, receberão provas e poderão validar ou rejeitar a mensagem. Saiba mais [nesta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"} (documentação do Campaign v8).
 
 ### Usar ondas
 
@@ -126,7 +126,7 @@ Você pode:
 
 * Informar os endereços IP que podem ser usados em cada elemento IPAffinity. [Saiba mais](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* Na [tipologia](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} (documentação do Campaign v8) de sua escolha, use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular entregas ao servidor de entrega (MTA) que gerencia essa afinidade. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/apply-rules#control-outgoing-smtp-traffic){target="_blank"} (documentação do Campaign v8).
+* Na [tipologia](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} (documentação do Campaign v8) de sua escolha, use o campo **[!UICONTROL Managing affinities with IP addresses]** para vincular entregas ao servidor de entrega (MTA) que gerencia essa afinidade. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-optimization/apply-rules#control-outgoing-smtp-traffic){target="_blank"} (documentação do Campaign v8).
 
 * Depois que o email for enviado, verifique o cabeçalho para saber a partir de qual endereço IP a entrega foi enviada. O administrador de email deve ajudar você a obter as informações do cabeçalho.
 
@@ -138,7 +138,7 @@ Você pode:
 
 ### Usar tipologias
 
-Você pode usar as regras de tipologia para excluir parte do público-alvo com base em critérios específicos. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa. Por exemplo, você pode filtrar os destinatários menores de idade do público-alvo do seu informativo. Saiba mais [neste exemplo](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/filtering-rules){target="_blank"} (documentação do Campaign v8).
+Você pode usar as regras de tipologia para excluir parte do público-alvo com base em critérios específicos. Isso garante que as mensagens enviadas atendam melhor às necessidades e expectativas dos clientes, de acordo com as políticas de comunicação da empresa. Por exemplo, você pode filtrar os destinatários menores de idade do público-alvo do seu informativo. Saiba mais [neste exemplo](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/campaign-optimization/filtering-rules){target="_blank"} (documentação do Campaign v8).
 
 ### Evitar anexos
 
