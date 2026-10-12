@@ -36,16 +36,16 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1537'
-ht-degree: 100%
+source-wordcount: '1553'
+ht-degree: 97%
 ---
 # Sincronizar dados entre o Campaign e o CRM {#data-synchronization}
 
 
 
-A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de fluxo de trabalho: [conector CRM](../../workflow/using/crm-connector.md).
+A sincronização de dados entre o Adobe Campaign e o CRM é realizada por meio de uma atividade dedicada de fluxo de trabalho: [conector CRM](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"} (documentação do Campaign v8).
 
 Por exemplo, para importar os dados do Microsoft Dynamics para o Adobe Campaign, crie o seguinte tipo de fluxo de trabalho:
 

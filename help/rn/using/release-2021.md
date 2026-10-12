@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2670'
-ht-degree: 100%
+source-wordcount: '2702'
+ht-degree: 98%
 ---
 # Versões de 2021{#release-2021}
 
@@ -124,7 +124,7 @@ _5 de junho de 2021_
 <td>
 <p>A nova atividade de fluxo de trabalho <b>Alterar fonte de dados</b> permite alterar a fonte de dados de uma tabela de trabalho do fluxo de trabalho. Isso proporciona mais flexibilidade no gerenciamento de dados em diferentes fontes de dados (FDA e banco de dados local).</p>
 <p>Nos fluxos de trabalho do Adobe Campaign, os dados são gerenciados usando tabelas de trabalho (ou temporárias). Conforme o fluxo de trabalho é executado, as tabelas de trabalho compartilham dados entre atividades de fluxo de trabalho. Por padrão, as tabelas de trabalho são criadas no mesmo banco de dados da fonte de dados que consultamos.</p>
-<p>Para obter mais informações, consulte a <a href="../../workflow/using/change-data-source.md">documentação detalhada</a>.</p>
+<p>Para obter mais informações, consulte a <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">documentação detalhada</a> (documentação do Campaign v8).</p>
 </td>
 </tr>
 </tbody>
@@ -226,7 +226,7 @@ Saiba mais na [página sobre recursos obsoletos e removidos](../../rn/using/depr
 **Aprimoramentos**
 
 * Foram adicionadas verificações adicionais ao salvar um fluxo de trabalho para garantir que os nomes das atividades sejam únicos e que as transições sejam sempre seguidas por uma atividade.
-* O fluxo de trabalho técnico **Faturamento (faturamento)** agora inclui as tarefas originalmente executadas pelo fluxo de trabalho **Número de perfis de faturamento ativos** (billingActiveContactCount), que foi removido. O relatório de email enviado mensalmente pelo fluxo de trabalho agora fornecerá informações sobre o número de perfis ativos na instância. [Leia mais](../../workflow/using/about-technical-workflows.md).
+* O fluxo de trabalho técnico **Faturamento (faturamento)** agora inclui as tarefas originalmente executadas pelo fluxo de trabalho **Número de perfis de faturamento ativos** (billingActiveContactCount), que foi removido. O relatório de email enviado mensalmente pelo fluxo de trabalho agora fornecerá informações sobre o número de perfis ativos na instância. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (documentação do Campaign v8).
 * O novo atributo **_keyOnMData** foi adicionado para poder usar uma chave para operações em dados de memorando.
 
 **Outras alterações**

@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 65%
 ---
 # Sobre relatórios integrados do Campaign{#about-campaign-built-in-reports}
 
@@ -49,34 +49,14 @@ O Adobe Campaign oferece vários tipos de relatórios, acessíveis através do c
 
 Os seguintes tipos de relatório estão disponíveis:
 
-* Relatórios sobre toda a plataforma, consulte [Relatórios globais](../../reporting/using/global-reports.md).
-* Relatórios da entrega, consulte [Relatórios da entrega](../../reporting/using/delivery-reports.md).
-* Relatórios acumulados, consulte [Relatórios cumulativos](../../reporting/using/cumulative-reports.md).
+* Relatórios sobre toda a plataforma, consulte [Relatórios globais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports){target="_blank"} (documentação do Campaign v8).
+* Relatórios de entrega, consulte [Relatórios de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (documentação do Campaign v8).
+* Relatórios acumulados, consulte [Relatórios cumulativos](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (documentação do Campaign v8).
 
 Você pode acessar relatórios na home page do console do cliente, do painel de relatórios ou da lista de entrega. O modo de exibição de um relatório depende de seu contexto. A lista de relatórios principais está disponível na home page e permite acessar os dados de entrega rapidamente. Essa lista pode ser alterada para atender às suas necessidades. Consulte [esta seção](../../reporting/using/about-reports-creation-in-campaign.md) para obter mais informações.
 
-Para acessar os relatórios integrados do Campaign:
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber como acessar e usar relatórios internos, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}.
 
-1. Selecione a guia **[!UICONTROL Reports]** da interface do Adobe Campaign.
-
-   ![](assets/reporting_access_from_home.png)
-
-1. Use os campos de pesquisa para filtrar os relatórios exibidos.
-
-1. Em seguida, clique no relatório que deseja exibir.
-
-   ![](assets/reporting_edit_a_report.png)
-
-1. O link **[!UICONTROL Back]** na parte superior da tela o redirecionará para a lista de relatórios.
-
-   ![](assets/reporting_back_button.png)
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
 
 Outras ações possíveis em um relatório que está sendo editado são detalhadas [nesta página](../../reporting/using/actions-on-reports.md).
-
-Os relatórios específicos a uma campanha ou uma entrega são acessíveis por meio de seus respectivos painéis.
-
-![](assets/reporting_on_a_delivery.png)
-
-O princípio é o mesmo para listas, serviços, ofertas, etc., conforme mostrado abaixo:
-
-![](assets/reporting_on_an_offer.png)

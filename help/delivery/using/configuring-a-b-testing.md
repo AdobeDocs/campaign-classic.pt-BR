@@ -31,10 +31,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 100%
+source-wordcount: '266'
+ht-degree: 89%
 ---
 # Configurar teste A/B {#configuring-a-b-testing}
 
@@ -44,7 +44,7 @@ Esta seção detalha como criar um fluxo de trabalho para executar um teste A/B.
 
 1. Adicione uma atividade Dividir para dividir a população direcionada em vários subconjuntos. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=pt-BR){target="_blank"}.
 
-1. Abra a atividade e configure cada subconjunto de acordo com suas necessidades. Para obter mais informações sobre como configurar uma atividade **[!UICONTROL Split]**, consulte [esta seção](../../workflow/using/split.md).
+1. Abra a atividade e configure cada subconjunto de acordo com suas necessidades. Para obter mais informações sobre como configurar uma atividade **[!UICONTROL Split]**, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} (documentação do Campaign v8).
 
    Neste exemplo, queremos testar dois novos assuntos para um informativo, apresentando cada um deles a 10% da população direcionada.
 

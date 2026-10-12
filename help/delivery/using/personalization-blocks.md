@@ -37,10 +37,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 100%
+source-wordcount: '992'
+ht-degree: 97%
 ---
 # Blocos de personalização{#personalization-blocks}
 
@@ -145,7 +145,7 @@ Uma lista de blocos de personalização está disponível por padrão para ajuda
 * **[!UICONTROL Registration confirmation]**: insere um link que permite confirmar a subscrição.
 * **[!UICONTROL Social network sharing links]**: insere botões que permitem que o destinatário compartilhe um link para o conteúdo da mirror page com o cliente de email, Facebook, X (anteriormente conhecido como Twitter) e LinkedIn (consulte [Marketing viral: encaminhar para um amigo](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]**: geram um código que formata um email com estilos HTML predefinidos. Esses blocos devem ser inseridos no código-fonte da entrega, na seção **[!UICONTROL ...]**, nos tags **`<style>...</style>`**.
-* **[!UICONTROL Offer acceptance URL in unitary mode]**: insere um URL que permite definir uma oferta de Interação para **[!UICONTROL Accepted]** (consulte [esta seção](../../interaction/using/offer-analysis-report.md)).
+* **[!UICONTROL Offer acceptance URL in unitary mode]** : insere uma URL que permite definir uma oferta de Interação para **[!UICONTROL Accepted]** (consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/offers/interaction-tracking){target="_blank"} (documentação do Campaign v8)).
 
 ## Definir blocos de personalização personalizados {#defining-custom-personalization-blocks}
 

@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 100%
@@ -183,7 +183,7 @@ Uma equipe dedicada de representantes de atendimento ao cliente, gerentes de pro
 ## Recursos adicionais{#support}
 
 * [Encontre sua versão do Campaign](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
-* [Ajuda e suporte](../../support.md)
+* [Ajuda e suporte](../../campaign-classic-home.md)
 * [Versões do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=pt-BR)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
 * [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)

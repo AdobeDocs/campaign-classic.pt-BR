@@ -33,10 +33,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 100%
+source-wordcount: '138'
+ht-degree: 84%
 ---
 # Editar um perfil{#editing-a-profile}
 
@@ -56,7 +56,7 @@ As guias e seu conteúdo dependem da sua configuração e dos pacotes instalados
 >
 >O esquema XML e o formulário que afeta os campos na tabela de perfis são acessados por meio do nó **[!UICONTROL Administration > Configuration > Data schemas]** da árvore do Adobe Campaign. Somente usuários especialistas podem fazer alterações nesses esquemas.
 >
->Para obter mais informações, consulte [esta página](../../configuration/using/about-schema-edition.md).
+>Para obter mais informações, consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).
 
 >[!NOTE]
 >

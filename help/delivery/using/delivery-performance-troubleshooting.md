@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 19%
+source-wordcount: '807'
+ht-degree: 18%
 ---
 # Desempenho da entrega e solução de problemas {#delivery-performance-troubleshooting}
 
@@ -124,7 +124,7 @@ A causa está vinculada a problemas de desempenho em que a instância de marketi
 
 **Para instalações locais**, execute um vácuo e reindexe no banco de dados. Para obter mais informações sobre manutenção de banco de dados, consulte [esta seção](../../production/using/recommendations.md).
 
-Você também deve reiniciar todos os fluxos de trabalho com uma atividade agendada e todos os fluxos de trabalho com o status de falha. Consulte [esta seção](../../workflow/using/scheduler.md).
+Você também deve reiniciar todos os fluxos de trabalho com uma atividade agendada e todos os fluxos de trabalho com o status de falha. Consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (documentação do Campaign v8).
 
 ### Monitoramento do fluxo de trabalho técnico
 

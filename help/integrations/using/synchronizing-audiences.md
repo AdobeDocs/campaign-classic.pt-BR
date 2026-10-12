@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 100%
+source-wordcount: '1178'
+ht-degree: 97%
 ---
 # Sincronizar públicos-alvos{#synchronizing-audiences}
 
@@ -89,7 +89,7 @@ Para obter o público-alvo final e seus dados adicionais:
 
    ![](assets/acs_connect_query1.png)
 
-1. Adicionar dados adicionais dentro da consulta. Para obter mais informações, consulte a seção [Adição de dados](../../workflow/using/query.md#adding-data).
+1. Adicionar dados adicionais dentro da consulta. Para obter mais informações, consulte a seção [Adicionando dados](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/query#adding-data){target="_blank"} (documentação do Campaign v8).
 
    Este exemplo mostra como adicionar um agregado para contar quantas entregas um destinatário recebeu em um ano.
 

@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 32%
+source-wordcount: '786'
+ht-degree: 31%
 ---
 # Diretrizes de script e codificação {#scripting-coding-guidelines}
 
@@ -96,7 +96,7 @@ Consulte estas páginas:
 
 Além do modelo de segurança baseado em pastas, você pode usar direitos nomeados para limitar as ações do operador:
 
-* Você pode adicionar alguns filtros de sistema (sysFilter) para impedir a leitura/gravação de seus dados (consulte [esta página](../../configuration/using/filtering-schemas.md)).
+* Você pode adicionar alguns filtros de sistema (sysFilter) para impedir a leitura/gravação de seus dados (consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} (documentação do Campaign v8)).
 
   ```
   <sysFilter name="writeAccess">    

@@ -8,9 +8,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: df5d87ca4fccb927f770957ec1c00157d14e95dc
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '1992'
 ht-degree: 100%
 ---
 
@@ -29,7 +29,6 @@ ht-degree: 100%
     + {hide-from-toc}[[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
   + [Recursos obsoletos](rn/using/deprecated-features.md)
   + [Matriz de compatibilidade](rn/using/compatibility-matrix.md)
-  + {hide-from-toc}[Atualizações da documentação – OCULTO](rn/using/documentation-updates.md)
 + Introdução {#getting-started}
   + [Introdução ao Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
   + [Iniciar o Adobe Campaign](platform/using/launching-adobe-campaign.md)
@@ -93,7 +92,6 @@ ht-degree: 100%
     + {hide-from-toc}[Conecte-se com o Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
     + {hide-from-toc}[Conecte-se com o Salesforce.com](platform/using/crm-sfdc.md)
     + {hide-from-toc}[Sincronizar dados com o CRM](platform/using/crm-data-sync.md)
-  + {hide-from-toc}[Opções de ajuda e suporte – OCULTAS](support.md)
 + Criar e enviar mensagens {#sending-messages}
   + [Introdução a mensagens](delivery/using/communication-channels.md)
   + {hide-from-toc}[Configurações de entrega – OCULTO](delivery/using/delivery-settings.md)
@@ -208,42 +206,6 @@ ht-degree: 100%
     + [Enriquecer conteúdo](delivery/using/enriching-content.md)
     + [Automatizar via fluxos de trabalho](delivery/using/automating-via-workflows.md)
 + [Orquestrar campanhas de marketing](campaign/using/about-marketing-campaigns.md)
-+ Orquestrar campanhas de marketing {#orchestrating-campaigns}
-  + {hide-from-toc}[Sobre a otimização de campanha – OCULTO](campaign-opt/using/about-campaign-optimization.md)
-  + Sobre campanhas de marketing {#about-marketing-campaigns}
-    + {hide-from-toc}[Criar campanhas de marketing – OCULTO](campaign/using/designing-marketing-campaigns.md)
-    + {hide-from-toc}[Acessar campanhas de marketing - OCULTO](campaign/using/accessing-marketing-campaigns.md)
-  + Organizar campanhas {#orchestrate-campaigns}
-    + {hide-from-toc}[Começar com campanhas de marketing – OCULTO](campaign/using/setting-up-marketing-campaigns.md)
-    + {hide-from-toc}[Criar e configurar modelos – OCULTO](campaign/using/marketing-campaign-templates.md)
-    + {hide-from-toc}[Adicionar entregas – OCULTO](campaign/using/marketing-campaign-deliveries.md)
-    + {hide-from-toc}[Selecionar o público–alvo – OCULTO](campaign/using/marketing-campaign-target.md)
-    + {hide-from-toc}[Gerenciar documentos e ativos – OCULTO](campaign/using/marketing-campaign-assets.md)
-    + {hide-from-toc}[Configurar e gerenciar aprovações – OCULTO](campaign/using/marketing-campaign-approval.md)
-    + {hide-from-toc}[Monitorar campanhas – OCULTO](campaign/using/marketing-campaign-monitoring.md)
-    + {hide-from-toc}[Provedores, estoques e orçamentos – OCULTO](campaign/using/providers-stocks-and-budgets.md)
-  + Otimização de campanha {#campaign-optimization}
-    + {hide-from-toc}[Sobre tipologias de campanha – OCULTO](campaign-opt/using/about-campaign-typologies.md)
-    + {hide-from-toc}[Regras de pressão – OCULTO](campaign-opt/using/pressure-rules.md)
-    + {hide-from-toc}[Regras de consistência – OCULTO](campaign-opt/using/consistency-rules.md)
-    + {hide-from-toc}[Regras de controle – OCULTO](campaign-opt/using/control-rules.md)
-    + {hide-from-toc}[Regras de filtragem – OCULTO](campaign-opt/using/filtering-rules.md)
-    + {hide-from-toc}[Aplicar regras – OCULTO](campaign-opt/using/applying-rules.md)
-    + {hide-from-toc}[Simulações de campanha – OCULTO](campaign-opt/using/campaign-simulations.md)
-+ Gerenciamento de recursos de marketing {#mrm}
-  + {hide-from-toc}[Sobre o gerenciamento de recursos de marketing – OCULTO](mrm/using/about-marketing-resource-management.md)
-  + {hide-from-toc}[Criar e gerenciar tarefas – OCULTO](mrm/using/creating-and-managing-tasks.md)
-  + {hide-from-toc}[Controlar custos – OCULTO](mrm/using/controlling-costs.md)
-  + {hide-from-toc}[Gerenciar recursos de marketing – OCULTO](mrm/using/managing-marketing-resources.md)
-  + {hide-from-toc}[Fóruns de discussão – OCULTO](mrm/using/discussion-forums.md)
-+ Marketing distribuído {#distributed-marketing}
-  + {hide-from-toc}[Sobre o marketing distribuído – OCULTO](distributed/using/about-distributed-marketing.md)
-  + {hide-from-toc}[Criar uma campanha local – OCULTO](distributed/using/creating-a-local-campaign.md)
-  + {hide-from-toc}[Criar uma campanha colaborativa – OCULTO](distributed/using/creating-a-collaborative-campaign.md)
-  + {hide-from-toc}[Publicar o pacote de campanha – OCULTO](distributed/using/publishing-the-campaign-package.md)
-  + {hide-from-toc}[Acessar campanhas – OCULTO](distributed/using/accessing-campaigns.md)
-  + {hide-from-toc}[Rastrear uma campanha – OCULTO](distributed/using/tracking-a-campaign.md)
-  + {hide-from-toc}[Caso de uso – OCULTO](distributed/using/examples.md)
 + Gestor de resposta {#response-manager}
   + [Introdução ao gestor de resposta](response/using/about-response-manager.md)
   + [Configuração](response/using/configuration.md)
@@ -252,18 +214,12 @@ ht-degree: 100%
   + [Rastreamento de hipótese](response/using/hypothesis-tracking.md)
 + Criar e compartilhar relatórios {#reporting}
   + Introdução aos relatórios {#reporting-in-adobe-campaign}
-    + [Ferramentas de relatórios](reporting/using/about-adobe-campaign-reporting-tools.md)
     + [Práticas recomendadas para relatórios](reporting/using/best-practices.md)
   + Acessar relatórios integrados {#accessing-built-in-reports}
     + [Sobre relatórios integrados](reporting/using/about-campaign-built-in-reports.md)
     + [Lista de relatórios](reporting/using/list-of-reports.md)
   + Relatórios de entregas{#reports-on-deliveries}
-    + [Sobre relatórios de entregas](reporting/using/reports-on-deliveries.md)
-    + [Relatórios globais](reporting/using/global-reports.md)
-    + [Relatórios de entrega](reporting/using/delivery-reports.md)
-    + [Relatórios cumulativos](reporting/using/cumulative-reports.md)
     + [Cálculo do indicador](reporting/using/indicator-calculation.md)
-    + [Pessoa/pessoas e destinatários](reporting/using/person-people-recipients.md)
   + Analisar populações {#analyzing-populations}
     + [O que é análise descritiva?](reporting/using/about-descriptive-analysis.md)
     + [Crie seu primeiro relatório de análise descritiva](reporting/using/using-the-descriptive-analysis-wizard.md)
@@ -363,143 +319,10 @@ ht-degree: 100%
     + {hide-from-toc}[Sincronizar aplicativos da web – OCULTO](integrations/using/synchronizing-web-applications.md)
     + {hide-from-toc}[Solucionar problemas no [!DNL ACS Connector] – OCULTO](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatizar com fluxos de trabalho](workflow/using/about-workflows.md)
-+ Automatizar com fluxos de trabalho {#automating-with-workflows}
-  + Introdução aos fluxos de trabalho {#introduction}
-    + {hide-from-toc}[Sobre atividades – OCULTO](workflow/using/about-activities.md)
-    + {hide-from-toc}[Criar um fluxo de trabalho – OCULTO](workflow/using/building-a-workflow.md)
-    + {hide-from-toc}[Dados do público-alvo – OCULTO](workflow/using/targeting-data.md)
-    + {hide-from-toc}[Usar dados de fluxo de trabalho – OCULTO](workflow/using/how-to-use-workflow-data.md)
-    + {hide-from-toc}[Práticas recomendadas para fluxos de trabalho – OCULTO](workflow/using/workflow-best-practices.md)
-  + Executar um fluxo de trabalho {#executing-a-workflow}
-    + {hide-from-toc}[Iniciar um fluxo de trabalho – OCULTO](workflow/using/starting-a-workflow.md)
-    + {hide-from-toc}[Ciclo de vida do fluxo de trabalho – OCULTO](workflow/using/workflow-life-cycle.md)
-    + {hide-from-toc}[Ciclo de vida dos dados – OCULTO](workflow/using/data-life-cycle.md)
-    + {hide-from-toc}[Definir aprovações – OCULTO](workflow/using/defining-approvals.md)
-    + {hide-from-toc}[Arquitetura – OCULTO](workflow/using/architecture.md)
-  + Atividades de direcionamento {#targeting-activities}
-    + {hide-from-toc}[Sobre as atividades de direcionamento – OCULTO](workflow/using/about-targeting-activities.md)
-    + {hide-from-toc}[Consulta – OCULTO](workflow/using/query.md)
-    + {hide-from-toc}[Consulta incremental – OCULTA](workflow/using/incremental-query.md)
-    + {hide-from-toc}[Lista de leitura – OCULTO](workflow/using/read-list.md)
-    + {hide-from-toc}[União – OCULTO](workflow/using/union.md)
-    + {hide-from-toc}[Interseção – OCULTO](workflow/using/intersection.md)
-    + {hide-from-toc}[Exclusão – OCULTO](workflow/using/exclusion.md)
-    + {hide-from-toc}[Dividir – OCULTO](workflow/using/split.md)
-    + {hide-from-toc}[Células – OCULTO](workflow/using/cells.md)
-    + {hide-from-toc}[Ofertas por célula – OCULTO](workflow/using/offers-by-cell.md)
-    + {hide-from-toc}[Descrição da entrega – OCULTO](workflow/using/delivery-outline.md)
-    + {hide-from-toc}[Enriquecimento – OCULTO](workflow/using/enrichment.md)
-    + {hide-from-toc}[Editar esquema – OCULTO](workflow/using/edit-schema.md)
-    + {hide-from-toc}[Mecanismo de oferta – OCULTO](workflow/using/offer-engine.md)
-    + {hide-from-toc}[Desduplicação – OCULTO](workflow/using/deduplication.md)
-    + {hide-from-toc}[Mudar dimensão – OCULTO](workflow/using/change-dimension.md)
-    + {hide-from-toc}[Atualização da lista – OCULTO](workflow/using/list-update.md)
-    + {hide-from-toc}[Serviços de assinatura – OCULTO](workflow/using/subscription-services.md)
-    + {hide-from-toc}[Atualizar dados – OCULTO](workflow/using/update-data.md)
-    + {hide-from-toc}[Conector CRM – OCULTO](workflow/using/crm-connector.md)
-    + {hide-from-toc}[Alterar fonte de dados – OCULTO](workflow/using/change-data-source.md)
-  + Atividades de controle de fluxo {#flow-control-activities}
-    + {hide-from-toc}[Sobre as atividades de controle de fluxo – OCULTO](workflow/using/about-flow-control-activities.md)
-    + {hide-from-toc}[Início e fim – OCULTO](workflow/using/start-and-end.md)
-    + {hide-from-toc}[Bifurcação – OCULTO](workflow/using/fork.md)
-    + {hide-from-toc}[AND-join – OCULTO](workflow/using/and-join.md)
-    + {hide-from-toc}[Scheduler – OCULTO](workflow/using/scheduler.md)
-    + {hide-from-toc}[Teste – OCULTO](workflow/using/test.md)
-    + {hide-from-toc}[Aguardar – OCULTO](workflow/using/wait.md)
-    + {hide-from-toc}[Restrição de tempo – OCULTO](workflow/using/time-constraint.md)
-    + {hide-from-toc}[Subfluxo de trabalho – OCULTO](workflow/using/sub-workflow.md)
-    + {hide-from-toc}[Saltar (ponto inicial e final – OCULTO)](workflow/using/jump-start-point-and-end-point.md)
-    + {hide-from-toc}[Sinal externo – OCULTO](workflow/using/external-signal.md)
-    + {hide-from-toc}[Aprovação – OCULTO](workflow/using/approval.md)
-    + {hide-from-toc}[Alerta – OCULTO](workflow/using/alert.md)
-    + {hide-from-toc}[Tarefa – OCULTO](workflow/using/task.md)
-  + Atividades de ação {#action-activities}
-    + {hide-from-toc}[Sobre atividades de ação – OCULTO](workflow/using/about-action-activities.md)
-    + {hide-from-toc}[Entrega – OCULTO](workflow/using/delivery.md)
-    + {hide-from-toc}[Controle de entrega – OCULTO](workflow/using/delivery-control.md)
-    + {hide-from-toc}[Entrega contínua – OCULTO](workflow/using/continuous-delivery.md)
-    + {hide-from-toc}[Entrega recorrente – OCULTO](workflow/using/recurring-delivery.md)
-    + {hide-from-toc}[Entregas entre canais – OCULTO](workflow/using/cross-channel-deliveries.md)
-    + {hide-from-toc}[Aprovação local – OCULTO](workflow/using/local-approval.md)
-    + {hide-from-toc}[Carregamento de dados (RDBMS) – OCULTO](workflow/using/data-loading-rdbms.md)
-    + {hide-from-toc}[Carregamento (SOAP) – OCULTO](workflow/using/loading-soap.md)
-    + {hide-from-toc}[Carregamento de dados (arquivo) – OCULTO](workflow/using/data-loading-file.md)
-    + {hide-from-toc}[Gerenciamento de conteúdo – OCULTO](workflow/using/content-management.md)
-    + {hide-from-toc}[Extração de dados (arquivo) – OCULTO](workflow/using/extraction-file.md)
-    + {hide-from-toc}[Código SQL e código JavaScript – OCULTO](workflow/using/sql-code-and-javascript-code.md)
-    + {hide-from-toc}[Gerenciamento de dados SQL – OCULTO](workflow/using/sql-data-management.md)
-    + {hide-from-toc}[Módulo Nlserver – OCULTO](workflow/using/nlserver-module.md)
-    + {hide-from-toc}[Atualizar agregado – OCULTO](workflow/using/update-aggregate.md)
-  + Atividades de evento {#event-activities}
-    + {hide-from-toc}[Sobre atividades de evento – OCULTO](workflow/using/about-event-activities.md)
-    + {hide-from-toc}[File collector – OCULTO](workflow/using/file-collector.md)
-    + {hide-from-toc}[Transferência de arquivo – OCULTO](workflow/using/file-transfer.md)
-    + {hide-from-toc}[Download da web – OCULTO](workflow/using/web-download.md)
-    + {hide-from-toc}[Emails de entrada – OCULTO](workflow/using/inbound-emails.md)
-    + {hide-from-toc}[SMS de entrada – OCULTO](workflow/using/inbound-sms.md)
-  + Casos de uso {#use-cases}
-    + {hide-from-toc}[Sobre casos de uso de fluxo de trabalho – OCULTO](workflow/using/about-workflow-use-cases.md)
-    + Entregas {#deliveries}
-      + {hide-from-toc}[Usar a atividade de aprovação local – OCULTO](workflow/using/using-the-local-approval-activity.md)
-      + {hide-from-toc}[Enviar email de aniversário – OCULTO](workflow/using/sending-a-birthday-email.md)
-      + {hide-from-toc}[Carregar conteúdo da entrega – OCULTO](workflow/using/loading-delivery-content.md)
-      + {hide-from-toc}[Fluxo de trabalho de entrega entre canais – OCULTO](workflow/using/cross-channel-delivery-workflow.md)
-      + {hide-from-toc}[Enriquecimento de email com campos de data personalizados – OCULTO](workflow/using/email-enrichment-with-custom-date-fields.md)
-  + Monitoramento {#monitoring}
-    + {hide-from-toc}[Enviar um relatório a uma lista – OCULTO](workflow/using/sending-a-report-to-a-list.md)
-    + {hide-from-toc}[Supervisionar os fluxos de trabalho – OCULTO](workflow/using/supervising-workflows.md)
-    + {hide-from-toc}[Enviar alertas personalizados a operadores – OCULTO](workflow/using/sending-personalized-alerts-to-operators.md)
-  + Gerenciamento de dados {#data-management}
-    + {hide-from-toc}[Coordenar atualizações de dados – OCULTO](workflow/using/coordinating-data-updates.md)
-    + {hide-from-toc}[Criar uma lista de resumo – OCULTO](workflow/using/creating-a-summary-list.md)
-    + {hide-from-toc}[Enriquecer dados – OCULTO](workflow/using/enriching-data.md)
-    + {hide-from-toc}[Usar agregados – OCULTO](workflow/using/using-aggregates.md)
-    + {hide-from-toc}[Usar o recurso de mesclagem da atividade de desduplicação – OCULTO](workflow/using/deduplication-merge.md)
-    + {hide-from-toc}[Configurar um fluxo de trabalho de importação recorrente – OCULTO](workflow/using/recurring-import-workflow.md)
-  + Criar consultas {#designing-queries}
-    + {hide-from-toc}[Atualização da lista trimestral usando uma consulta incremental – OCULTO](workflow/using/quarterly-list-update.md)
-  + Consulta e filtro {#query-and-filter-hidden}
-    + {hide-from-toc}[Consultar a tabela de destinatários – OCULTO](workflow/using/querying-recipient-table.md)
-    + {hide-from-toc}[Consultar informações da entrega – OCULTO](workflow/using/querying-delivery-information.md)
-    + {hide-from-toc}[Executar computação agregada – OCULTO](workflow/using/performing-aggregate-computing.md)
-    + {hide-from-toc}[Consultar usando gerenciamento de agrupamento – OCULTO](workflow/using/querying-using-grouping-management.md)
-    + {hide-from-toc}[Consultar usando uma relação de muitos para muitos – OCULTO](workflow/using/querying-using-many-to-many-relationship.md)
-    + {hide-from-toc}[Adicionar um campo calculado do tipo lista discriminada – OCULTO](workflow/using/adding-enumeration-type-calculated-field.md)
-    + {hide-from-toc}[Criar um filtro – OCULTO](workflow/using/creating-a-filter.md)
-    + {hide-from-toc}[Filtrar destinatários duplicados – OCULTO](workflow/using/filtering-duplicated-recipients.md)
-  + Monitorar fluxos de trabalho {#monitoring-workflows}
-    + {hide-from-toc}[Monitorar a execução do fluxo de trabalho – OCULTO](workflow/using/monitoring-workflow-execution.md)
-    + {hide-from-toc}[Monitorar fluxos de trabalho técnicos – OCULTO](workflow/using/monitoring-technical-workflows.md)
-    + {hide-from-toc}[Mapa de calor do fluxo de trabalho – OCULTO](workflow/using/heatmap.md)
-  + Gerenciamento avançado {#advanced-management}
-    + {hide-from-toc}[Propriedades do fluxo de trabalho – OCULTO](workflow/using/workflow-properties.md)
-    + {hide-from-toc}[Parâmetros avançados – OCULTO](workflow/using/advanced-parameters.md)
-    + {hide-from-toc}[Scripts e modelos JavaScript – OCULTO](workflow/using/javascript-scripts-and-templates.md)
-    + {hide-from-toc}[Exemplos de código JavaScript em fluxos de trabalho – OCULTO](workflow/using/javascript-in-workflows.md)
-    + {hide-from-toc}[Acessar um banco de dados externo – OCULTO](workflow/using/accessing-an-external-database-fda.md)
-    + {hide-from-toc}[Gerenciar permissões – OCULTO](workflow/using/managing-rights.md)
-    + {hide-from-toc}[Alterar imagens de atividade – OCULTO](workflow/using/managing-activity-images.md)
-    + {hide-from-toc}[Gerenciar fusos horários – OCULTO](workflow/using/managing-time-zones.md)
-    + {hide-from-toc}[Fluxos de trabalho técnicos – OCULTO](workflow/using/about-technical-workflows.md)
 + Gerenciar ofertas {#managing-offers}
   + Introdução à interação {#interaction-overview}
     + [Interação e gerenciamento de ofertas](interaction/using/interaction-and-offer-management.md)
-    + [Glossário](interaction/using/i-glossary.md)
-    + [Práticas recomendadas de interação](interaction/using/interaction-best-practices.md)
-  + Operação geral {#general-operation}
-    + [Etapas de implementação](interaction/using/implementation-steps.md)
-    + [Princípios fundamentais](interaction/using/fundamental-principles.md)
-  + Gerenciar ambientes {#managing-environments}
-    + [Visão geral dos ambientes](interaction/using/environments-overview.md)
-    + [Perfis de operador](interaction/using/operator-profiles.md)
-    + [Ambientes Live/Design](interaction/using/live-design-environments.md)
-    + [Criar espaços de oferta](interaction/using/creating-offer-spaces.md)
-    + [Criar filtros predefinidos](interaction/using/creating-predefined-filters.md)
   + Gerenciar um catálogo de ofertas {#managing-an-offer-catalog}
-    + [Visão geral do catálogo de ofertas](interaction/using/offer-catalog-overview.md)
-    + [Criar categorias de ofertas](interaction/using/creating-offer-categories.md)
-    + [Recomendar uma categoria](interaction/using/recommending-a-category.md)
-    + [Criar uma oferta](interaction/using/creating-an-offer.md)
     + [Aprovar e ativar uma oferta](interaction/using/approving-and-activating-an-offer.md)
     + [Gerenciar modelos de ofertas](interaction/using/managing-offer-templates.md)
     + [Gerenciar apresentação de ofertas](interaction/using/managing-offer-presentation.md)
@@ -508,18 +331,6 @@ ht-degree: 100%
     + [Configurações de execução](interaction/using/execution-settings.md)
     + [Escopo de simulação](interaction/using/simulation-scope.md)
     + [Rastreamento de simulação](interaction/using/simulation-tracking.md)
-  + Entregar uma oferta {#delivering-an-offer}
-    + [Sobre canais de saída](interaction/using/about-outbound-channels.md)
-    + [Integrar uma oferta por meio do assistente](interaction/using/integrating-an-offer-via-the-wizard.md)
-    + [Integrar uma oferta por meio de um fluxo de trabalho](interaction/using/integrating-an-offer-via-a-workflow.md)
-  + Interações unitárias {#unitary-interactions}
-    + [Sobre canais de entrada](interaction/using/about-inbound-channels.md)
-    + [Integração via JavaScript (lado do cliente)](interaction/using/integration-via-javascript-client-side.md)
-    + [Integração via SOAP (lado do servidor)](interaction/using/integration-via-soap-server-side.md)
-    + [Interações anônimas](interaction/using/anonymous-interactions.md)
-  + Rastrear ofertas {#tracking-offers}
-    + [Histórico da apresentação da oferta](interaction/using/offer-proposition-history.md)
-    + [Relatório da análise da oferta](interaction/using/offer-analysis-report.md)
   + Parâmetros avançados {#advanced-parameters}
     + [Usar parâmetros avançados](interaction/using/using-advanced-parameters.md)
     + [Dados adicionais](interaction/using/additional-data.md)
@@ -539,19 +350,7 @@ ht-degree: 100%
     + [Configurar instâncias](message-center/using/configuring-instances.md)
     + [Configurações adicionais](message-center/using/additional-configurations.md)
   + Modelos de mensagem {#message-templates}
-    + [Criar tipos de evento](message-center/using/creating-event-types.md)
-    + [Criar modelos de mensagem](message-center/using/creating-the-message-template.md)
     + [Testar modelos de mensagem](message-center/using/testing-message-templates.md)
-    + [Publicar modelos de mensagem](message-center/using/publishing-message-templates.md)
-  + Processamento de evento transacional {#processing}
-    + [Descrição do evento](message-center/using/event-description.md)
-    + [Processamento de evento](message-center/using/about-event-processing.md)
-    + [Execução da entrega](message-center/using/delivery-execution.md)
-  + Relatórios {#reports}
-    + [Acessar relatórios de mensagens transacionais](message-center/using/about-transactional-messaging-reports.md)
-    + [Histórico dos eventos do Centro de mensagens](message-center/using/history-of-message-center-events.md)
-    + [Nível de serviço do Centro de mensagens](message-center/using/message-center-service-level.md)
-    + [Tempo de processamento do Centro de mensagens](message-center/using/message-center-processing-time.md)
   + [Caso de uso](message-center/using/transactional-email-with-attachments.md)
 + Integrar a redes sociais {#integrating-with-social-media}
   + [Sobre marketing social](social/using/about-social-marketing.md)
@@ -709,7 +508,6 @@ ht-degree: 100%
 + Guia de desenvolvedores {#configuring-campaign-classic}
   + [Pacotes de dados](platform/using/working-with-data-packages.md)
   + Modelo de dados {#data-model}
-    + [Sobre o modelo de dados](configuration/using/about-data-model.md)
     + [Descrição do modelo de dados](configuration/using/data-model-description.md)
     + [Práticas recomendadas](configuration/using/data-model-best-practices.md)
   + Trabalhar com esquemas {#schema-reference}
@@ -717,7 +515,6 @@ ht-degree: 100%
     + [Estrutura de esquema](configuration/using/schema-structure.md)
     + [Mapeamento de banco de dados](configuration/using/database-mapping.md)
     + [Gerenciamento de chaves](configuration/using/database-keys.md)
-    + [Gerenciamento de link](configuration/using/database-links.md)
     + Elementos e atributos {#elements-attributes}
       + [Introdução](configuration/using/schema-introduction.md)
       + [Atributo](configuration/using/schema/attribute.md)
@@ -738,21 +535,15 @@ ht-degree: 100%
       + [Sysfilter](configuration/using/schema/sysfilter.md)
       + [Valor](configuration/using/schema/value.md)
   + Edição de esquemas {#editing-schemas}
-    + [Sobre a edição de esquema](configuration/using/about-schema-edition.md)
-    + [Esquemas de dados](configuration/using/data-schemas.md)
     + [Esquema de uma tabela existente](configuration/using/schema-of-an-existing-table.md)
     + [Extensão de um esquema](configuration/using/extending-a-schema.md)
-    + [Esquemas de filtragem](configuration/using/filtering-schemas.md)
-    + [Restrição da visualização de PII](configuration/using/restricting-pii-view.md)
     + [Atualização da estrutura do banco de dados](configuration/using/updating-the-database-structure.md)
     + [Novo assistente de campo](configuration/using/new-field-wizard.md)
     + [Estrutura de um esquema de dados](configuration/using/structure-of-a-data-schema.md)
     + [Regeneração de esquemas](configuration/using/regenerating-schemas.md)
     + [Exemplos de edição de esquemas](configuration/using/examples-of-schemas-edition.md)
   + Formulários de entrada {#input-forms}
-    + [Identificar um formulário](configuration/using/identifying-a-form.md)
     + [Editar formulários](configuration/using/editing-forms.md)
-    + [Estrutura do formulário](configuration/using/form-structure.md)
   + API {#api}
     + [Sobre serviços da Web](configuration/using/about-web-services.md)
     + [Chamadas de serviço da Web](configuration/using/web-service-calls.md)
@@ -804,13 +595,11 @@ ht-degree: 100%
     + [Migração de operadores técnicos para o Developer Console](technotes/using/ims-migration.md)
     + [Impacto da interface após a migração do IMS](technotes/using/impact-ims-migration.md)
   + Atualizações e compatibilidade{#technote-migration}
-    + {hide-from-toc}[Notas técnicas](technotes/using/technote.md)
     + [Habilitar o Microsoft Edge Chromium](technotes/using/edge-chromium.md)
     + {hide-from-toc}[Novo servidor de capacidade de entrega](technotes/using/deliverability-server.md)
     + {hide-from-toc}[Atualização de segurança do Apache](technotes/using/acc-apache-upgrade.md)
     + {hide-from-toc}[Atualizações de sistema de 2023](technotes/using/tech-stack-upgrade.md)
     + {hide-from-toc}[Atualizações do IMS](technotes/using/ims-updates.md)
-    + {hide-from-toc}[Fim da vida útil do suporte para TLS 1.0 e 1.1](technotes/using/eol-tls-support.md)
     + {hide-from-toc}[Migrar para a API do Adobe Analytics 2.0](technotes/using/analytics-2-migration.md)
   + Emails e notificações por push{#technotes-email}
     + [Proteção de privacidade do App Mail no Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)

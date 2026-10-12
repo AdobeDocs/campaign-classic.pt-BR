@@ -37,16 +37,16 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 912ece3122704a20ea9f7f69163a64d71f9a13c5
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 100%
+source-wordcount: '373'
+ht-degree: 78%
 ---
 # Criar entregas LINE{#line-channel}
 
 Com o Adobe Campaign, use o canal do LINE para enviar mensagens avançadas e envolventes diretamente aos usuários em seu aplicativo do LINE. Seja para anúncios, promoções, atualizações de atendimento ao cliente ou conteúdo multimídia, o LINE oferece uma forma de conversar em tempo real que complementa os seus outros canais.
 
-Saiba como configurar o canal do LINE, criar uma entrega final, definir o tipo de conteúdo e monitorar o desempenho da entrega na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/line.md){target=_blank}.
+Saiba como configurar o canal do LINE, criar uma entrega final, definir o tipo de conteúdo e monitorar o desempenho da entrega na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/other-channels/line){target=_blank}.
 
 Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8.
 
@@ -64,9 +64,9 @@ Para saber mais sobre o canal do LINE, consulte a [documentação do Campaign v8
 
 Consulte estas páginas para saber mais sobre como criar a entrega e definir o tipo de conteúdo na documentação do Campaign v8:
 
-* [Criar a entrega pelo LINE](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/line.md#creating-the-delivery){target="_blank"}: conheça as etapas necessárias para criar uma entrega pelo LINE, desde a seleção de um modelo e público-alvo até o envio da mensagem.
-* [Definir o tipo de conteúdo](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/line.md#defining-the-content){target="_blank"}: saiba como configurar entregas LINE com conteúdo de texto, imagem e link, ou vídeo, a fim de engajar e personalizar mensagens para o seu público-alvo.
-* [Acessar relatórios](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/line.md#accessing-reports){target="_blank"}: saiba como acessar relatórios de entrega pelo LINE para analisar o desempenho.
+* [Criar a entrega pelo LINE](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/other-channels/line#creating-the-delivery){target="_blank"}: conheça as etapas necessárias para criar uma entrega pelo LINE, desde a seleção de um modelo e público-alvo até o envio da mensagem.
+* [Definir o tipo de conteúdo](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/other-channels/line#defining-the-content){target="_blank"}: saiba como configurar entregas LINE com conteúdo de texto, imagem e link, ou vídeo, a fim de engajar e personalizar mensagens para o seu público-alvo.
+* [Acessar relatórios](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/other-channels/line#accessing-reports){target="_blank"}: saiba como acessar relatórios de entrega pelo LINE para analisar o desempenho.
 
 
 >[!ENDTABS]
@@ -77,6 +77,6 @@ Consulte estas páginas para saber mais sobre como criar a entrega e definir o t
 
 Conheça as principais etapas relacionadas à configuração do canal LINE **na documentação do Campaign v8**:
 
-* [Configurar o serviço do LINE](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/line.md#configure-line-service){target="_blank"}: saiba como configurar um serviço do LINE para conectar a sua instância do Campaign à sua conta oficial do LINE.
-* [Configurar a conta externa](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/line.md#configure-line-external){target="_blank"}: saiba como configurar uma conta externa do LINE, para que o Adobe Campaign possa enviar mensagens com as suas credenciais do LINE.
+* [Configurar o serviço do LINE](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/other-channels/line#configure-line-service){target="_blank"}: saiba como configurar um serviço do LINE para conectar a sua instância do Campaign à sua conta oficial do LINE.
+* [Configurar a conta externa](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"}: saiba como configurar uma conta externa do LINE, para que o Adobe Campaign possa enviar mensagens com as suas credenciais do LINE.
 

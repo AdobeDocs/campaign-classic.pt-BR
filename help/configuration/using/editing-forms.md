@@ -30,10 +30,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 2%
+source-wordcount: '1904'
+ht-degree: 1%
 ---
 # Editar formulários{#editing-forms}
 
@@ -46,7 +46,7 @@ Profissionais de marketing e operadores usam formulários de entrada para criar,
 * Você pode modificar os formulários de entrada de fábrica fornecidos por padrão. Os formulários de entrada de fábrica são baseados nos schemas de dados de fábrica.
 * Você pode criar formulários de entrada personalizados, com base em esquemas de dados definidos por você.
 
-Forms são entidades do tipo `xtk:form`. Você pode exibir a estrutura do formulário de entrada no esquema `xtk:form`. Para exibir este esquema, escolha **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** no menu. Leia mais sobre [estrutura do formulário](form-structure.md).
+Forms são entidades do tipo `xtk:form`. Você pode exibir a estrutura do formulário de entrada no esquema `xtk:form`. Para exibir este esquema, escolha **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** no menu. Leia mais sobre [estrutura do formulário](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).
 
 Para acessar formulários de entrada, escolha **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** no menu:
 
@@ -56,7 +56,7 @@ Para criar formulários, edite o conteúdo XML no editor XML:
 
 ![](assets/d_ncs_integration_form_edit.png)
 
-[Leia mais](form-structure.md#formatting).
+[Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} (documentação do Campaign v8).
 
 Para visualizar um formulário, clique na guia **[!UICONTROL Preview]**:
 
@@ -80,7 +80,7 @@ Para visualizar um formulário, clique na guia **[!UICONTROL Preview]**:
 
 * Assistente
 
-  Este formulário inclui várias telas flutuantes ordenadas em sequências específicas. Os usuários navegam de uma tela para outra. [Leia mais](form-structure.md#wizards).
+  Este formulário inclui várias telas flutuantes ordenadas em sequências específicas. Os usuários navegam de uma tela para outra. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#wizards){target="_blank"} (documentação do Campaign v8).
 
 * Caixa de ícones
 
@@ -110,7 +110,7 @@ Nos formulários, você pode usar contêineres para várias finalidades:
 * Definir acesso a campos de entrada
 * Aninhar formulários em outros formulários
 
-[Leia mais](form-structure.md#containers).
+[Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (documentação do Campaign v8).
 
 ### Organizar conteúdo
 
@@ -119,7 +119,7 @@ Usar contêineres para organizar o conteúdo em formulários:
 * Você pode agrupar campos em seções.
 * É possível adicionar páginas a formulários de várias páginas.
 
-Para inserir um container, use o elemento `<container>`. [Leia mais](form-structure.md#containers).
+Para inserir um container, use o elemento `<container>`. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (documentação do Campaign v8).
 
 #### Agrupar campos
 
@@ -232,7 +232,7 @@ Para criar um formulário, siga estas etapas:
 
 1. Insira os elementos de formulário.
 
-   Por exemplo, para inserir um campo de entrada, use o elemento `<input>`. Defina o atributo `xpath` para a referência de campo como uma expressão XPath. [Leia mais](schema-structure.md#referencing-with-xpath).
+   Por exemplo, para inserir um campo de entrada, use o elemento `<input>`. Defina o atributo `xpath` para a referência de campo como uma expressão XPath. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} (documentação do Campaign v8).
 
    Este exemplo mostra campos de entrada com base no esquema `nms:recipient`.
 
@@ -265,7 +265,7 @@ Para criar um formulário, siga estas etapas:
    | Caixa de seleção | `type="checkbox"` |
    | Editar árvore | `type="tree"` |
 
-   Leia mais sobre [controles de lista de memória](form-structure.md#memory-list-controls).
+   Leia mais sobre [controles de lista de memória](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#memory-list-controls){target="_blank"} (documentação do Campaign v8).
 
 1. Opcionalmente, defina o acesso aos campos:
 
@@ -482,7 +482,7 @@ Para modificar um formulário de fábrica, siga estas etapas:
 
 ### Conceder acesso somente leitura aos campos
 
-Para conceder acesso somente leitura a um campo, use o atributo `readOnly="true"`. Por exemplo, talvez você queira mostrar a chave primária de um registro, mas com acesso somente leitura. [Leia mais](form-structure.md#non-editable-fields).
+Para conceder acesso somente leitura a um campo, use o atributo `readOnly="true"`. Por exemplo, talvez você queira mostrar a chave primária de um registro, mas com acesso somente leitura. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#non-editable-fields){target="_blank"} (documentação do Campaign v8).
 
 Neste exemplo, a chave primária (`iRecipientId`) do esquema `nms:recipient` é exibida no acesso somente leitura:
 
@@ -508,11 +508,11 @@ Neste exemplo, o endereço de email é obrigatório e uma mensagem de erro será
 </leave>
 ```
 
-Leia mais sobre [campos de expressão](form-structure.md#expression-field) e [contexto de formulário](form-structure.md#context-of-forms).
+Leia mais sobre [campos de expressão](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#expression-field){target="_blank"} (documentação do Campaign v8) e [contexto de formulário](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (documentação do Campaign v8).
 
 ### Validar valores
 
-Você pode usar chamadas do JavaScript SOAP para validar dados de formulário a partir do Console. Use essas chamadas para validação complexa, por exemplo, para verificar um valor em relação a uma lista de valores autorizados. [Leia mais](form-structure.md#soap-methods).
+Você pode usar chamadas do JavaScript SOAP para validar dados de formulário a partir do Console. Use essas chamadas para validação complexa, por exemplo, para verificar um valor em relação a uma lista de valores autorizados. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#soap-methods){target="_blank"} (documentação do Campaign v8).
 
 1. Crie uma função de validação em um arquivo JS.
 
@@ -569,4 +569,4 @@ Este exemplo mostra como você pode fazer chamadas de serviço de dentro de form
 </enter>
 ```
 
-Neste exemplo, a entrada é uma ID, que é uma chave primária. Quando os usuários preenchem o formulário dessa ID, é feita uma chamada SOAP com essa ID como parâmetro de entrada. A saída é um booleano gravado neste campo: `/tmp/@count`. Você pode usar esse booleano dentro do formulário. Leia mais sobre [contexto de formulário](form-structure.md#context-of-forms).
+Neste exemplo, a entrada é uma ID, que é uma chave primária. Quando os usuários preenchem o formulário dessa ID, é feita uma chamada SOAP com essa ID como parâmetro de entrada. A saída é um booleano gravado neste campo: `/tmp/@count`. Você pode usar esse booleano dentro do formulário. Leia mais sobre [contexto de formulário](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (documentação do Campaign v8).

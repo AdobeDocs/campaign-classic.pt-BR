@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '927'
+ht-degree: 98%
 ---
 # Cupons personalizados{#personalized-coupons}
 
@@ -185,7 +185,7 @@ Para confirmar que a entrega foi bem-sucedida:
 
 >[!NOTE]
 >
->Por padrão, o módulo de gestão de cupom usa uma tabela **nms:recipient**. [Saiba mais](../../configuration/using/about-data-model.md#default-recipient-table).
+>Por padrão, o módulo de gestão de cupom usa uma tabela **nms:recipient**. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (documentação do Campaign v8).
 >
 >Aprenda como usar uma tabela de destinatário personalizada [nesta página](../../configuration/using/about-custom-recipient-table.md).
 

@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2151'
-ht-degree: 100%
+source-wordcount: '2185'
+ht-degree: 98%
 ---
 # Versões de 2022{#release-2022}
 
@@ -172,10 +172,10 @@ O Adobe Campaign agora é compatível com o Windows Server 2019. Consulte a [Mat
 
 **Outras alterações**
 
-* Após serem descontinuados, o Microsoft CRM, o Salesforce e o Oracle CRM tiveram suas atividades de ações por demanda removidas da interface. Para configurar a sincronização de dados entre o Adobe Campaign e um sistema CRM, é possível usar a atividade do conector CRM. [Leia mais](../../workflow/using/crm-connector.md)
+* Após serem descontinuados, o Microsoft CRM, o Salesforce e o Oracle CRM tiveram suas atividades de ações por demanda removidas da interface. Para configurar a sincronização de dados entre o Adobe Campaign e um sistema CRM, é possível usar a atividade do conector CRM. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"} (Documentação do Campaign v8)
 * O campo **[!UICONTROL Encrypted identifier]** foi adicionado ao esquema de visitante (nms:visitor). Esse campo é calculado e deve ser usado para aplicativos web. Isso se aplica quando o canal Line é configurado na instância mid-sourcing.
 * As fontes de dados do CRM agora podem ser usadas com a atividade **Alterar fonte de dados**.
-* Uma nova opção foi adicionada nas propriedades de **Gerenciamento de erros** das atividades do fluxo de trabalho: a opção **Abort on error** interrompe automaticamente o fluxo de trabalho. Não será possível reiniciá-lo posteriormente (NEO-29661). [Leia mais](../../workflow/using/advanced-parameters.md#in-case-of-errors)
+* Uma nova opção foi adicionada nas propriedades de **Gerenciamento de erros** das atividades do fluxo de trabalho: a opção **Abort on error** interrompe automaticamente o fluxo de trabalho. Não será possível reiniciá-lo posteriormente (NEO-29661). [Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/advanced-management/advanced-parameters#in-case-of-errors){target="_blank"} (Documentação do Campaign v8)
 * Agora, uma sequência dedicada é usada para gerar as chaves primárias para a tabela nmsGroup, que é usada para criar grupos estatísticos de destinatários. Anteriormente, a sequência xtknewId era usada. (NEO-30832)
 * Adicionado suporte para operações de atualização em lote usando a atividade do conector CRM.
 * Desempenho aprimorado do tempo de processamento de mensagens transacionais. (NEO-40370)

@@ -17,9 +17,9 @@ feature_v2:
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Analytics integration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '889'
 ht-degree: 1%
 ---
 # Migrar para a API do Adobe Analytics 2.0 {#analytics-2-migration}
@@ -28,7 +28,7 @@ As APIs do Adobe Analytics 1.4 estão [atingindo o fim da vida útil](https://de
 
 >[!CAUTION]
 >
->A atualização reimporta os dois fluxos de trabalho técnicos internos que alimentam o conector, [!UICONTROL webAnalyticsSendMetrics] e [!UICONTROL webAnalyticsGetWebEvents] (consulte a [Referência de fluxos de trabalho do Web Analytics](../../workflow/using/web-analytics.md) para saber o que cada um faz). Qualquer personalização feita com base nesses fluxos de trabalho é substituída pela reimportação. Evite modificar diretamente esses fluxos de trabalho internos — crie sua personalização em um fluxo de trabalho personalizado separado; portanto, as atualizações futuras não a substituirão. A atualização também atualiza os arquivos integrados do Analytics JavaScript: se qualquer um dos workflows personalizados fizer referência a esses arquivos, eles serão interrompidos e precisarão ser adaptados ao novo código.
+>A atualização reimporta os dois fluxos de trabalho técnicos internos que alimentam o conector, [!UICONTROL webAnalyticsSendMetrics] e [!UICONTROL webAnalyticsGetWebEvents] (consulte a [Referência de fluxos de trabalho do Web Analytics](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (documentação do Campaign v8) para saber o que cada um faz). Qualquer personalização feita com base nesses fluxos de trabalho é substituída pela reimportação. Evite modificar diretamente esses fluxos de trabalho internos — crie sua personalização em um fluxo de trabalho personalizado separado; portanto, as atualizações futuras não a substituirão. A atualização também atualiza os arquivos integrados do Analytics JavaScript: se qualquer um dos workflows personalizados fizer referência a esses arquivos, eles serão interrompidos e precisarão ser adaptados ao novo código.
 
 ## Você será afetado? {#are-you-impacted}
 

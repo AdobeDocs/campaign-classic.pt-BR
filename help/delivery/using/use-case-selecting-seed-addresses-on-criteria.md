@@ -30,10 +30,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 100%
+source-wordcount: '866'
+ht-degree: 97%
 ---
 # Caso de uso: selecionar seed addresses de acordo com critérios{#use-case-selecting-seed-addresses-on-criteria}
 
@@ -65,7 +65,7 @@ Para criar um valor comum como no nosso exemplo (departamento de compras), prime
 
 ### Estender o esquema de dados {#extending-the-data-schema}
 
-Para obter mais detalhes sobre extensões de esquema, consulte [esta seção](../../configuration/using/data-schemas.md).
+Para obter mais detalhes sobre extensões de esquema, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (documentação do Campaign v8).
 
 1. No nó **[!UICONTROL Administration > Configuration > Data schemas]**, clique no ícone **[!UICONTROL New]**.
 1. Na janela **[!UICONTROL Creation of a data schema]**, selecione a opção **[!UICONTROL Extension of a schema]** e clique em **[!UICONTROL Next]**.
