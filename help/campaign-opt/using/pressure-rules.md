@@ -365,7 +365,7 @@ Agora, crie e configure um fluxo de trabalho para cada entrega em que a regra de
 
 1. Crie uma campanha. Para obter mais informações, consulte [esta seção](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
 1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao fluxo de trabalho. Para obter mais informações sobre como usar essa atividade, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentação do Campaign v8).
-1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra. Para obter mais informações sobre como usar essa atividade, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"} (documentação do Campaign v8).
+1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra. Para obter mais informações sobre como usar essa atividade, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"} (documentação do Campaign v8).
 1. Acesse a guia **[!UICONTROL Approvals]** das **[!UICONTROL Delivery properties]** e desabilite todas as aprovações.
 
    ![](assets/campaign_opt_pressure_example_2.png)

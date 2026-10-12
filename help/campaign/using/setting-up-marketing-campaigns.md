@@ -147,7 +147,7 @@ As campanhas recorrentes são criadas com base em um modelo específico que defi
 
    ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-   O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do fluxo de trabalho. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (documentação do Campaign v8).
+   O modo de configuração do agendamento de execução coincide com o objeto **[!UICONTROL Scheduler]** do fluxo de trabalho. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (documentação do Campaign v8).
 
    >[!IMPORTANT]
    >

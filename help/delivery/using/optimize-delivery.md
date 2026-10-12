@@ -62,7 +62,7 @@ Vários fatores podem afetar diretamente o desempenho do servidor e retardar a p
 
   **Dica** - Para evitar isso, coordene a programação de entregas com os outros membros da equipe, garantindo um melhor desempenho.
 
-* A execução do fluxos de trabalho: o monitoramento de seus fluxos de trabalho é essencial para evitar problemas de desempenho na plataforma. Siga as diretrizes listadas [neste documento](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/workflow-best-practices#execution-and-performance){target="_blank"} (documentação do Campaign v8).
+* A execução do fluxos de trabalho: o monitoramento de seus fluxos de trabalho é essencial para evitar problemas de desempenho na plataforma. Siga as diretrizes listadas [neste documento](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/workflow-best-practices#execution-and-performance){target="_blank"} (documentação do Campaign v8).
 
 * Caso seja elegível, você poderá aproveitar os [recursos do Painel de controle](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=pt-BR) para monitorar sua plataforma usando as funcionalidades de [monitoramento de desempenho](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=pt-BR).
 

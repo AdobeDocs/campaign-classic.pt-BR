@@ -124,7 +124,7 @@ A causa está vinculada a problemas de desempenho em que a instância de marketi
 
 **Para instalações locais**, execute um vácuo e reindexe no banco de dados. Para obter mais informações sobre manutenção de banco de dados, consulte [esta seção](../../production/using/recommendations.md).
 
-Você também deve reiniciar todos os fluxos de trabalho com uma atividade agendada e todos os fluxos de trabalho com o status de falha. Consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (documentação do Campaign v8).
+Você também deve reiniciar todos os fluxos de trabalho com uma atividade agendada e todos os fluxos de trabalho com o status de falha. Consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (documentação do Campaign v8).
 
 ### Monitoramento do fluxo de trabalho técnico
 

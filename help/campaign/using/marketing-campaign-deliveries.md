@@ -83,7 +83,7 @@ Após todas as aprovações serem concedidas, o status da entrega será alterado
 
 >[!NOTE]
 >
->Os workflows técnicos relacionados ao pacote do Campaign são apresentados em [Lista de workflows técnicos](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (documentação do Campaign v8).
+>Os workflows técnicos relacionados ao pacote do Campaign são apresentados em [Lista de workflows técnicos](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (documentação do Campaign v8).
 
 **Etapa 1 - Aprovação de arquivo**
 

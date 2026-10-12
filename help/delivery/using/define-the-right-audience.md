@@ -92,8 +92,8 @@ O cancelamento da duplicação de endereços protege a reputação de envio e ga
 
 **Tópicos relacionados:**
 
-* [Atividade de desduplicação](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication){target="_blank"} (documentação do Campaign v8).
-* [Caso de uso: uso da funcionalidade de mesclagem de atividades de desduplicação](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge){target="_blank"} (documentação do Campaign v8)
+* [Atividade de desduplicação](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication){target="_blank"} (documentação do Campaign v8).
+* [Caso de uso: uso da funcionalidade de mesclagem de atividades de desduplicação](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge){target="_blank"} (documentação do Campaign v8)
 
 ## Indexar endereços de email {#index-addresses}
 

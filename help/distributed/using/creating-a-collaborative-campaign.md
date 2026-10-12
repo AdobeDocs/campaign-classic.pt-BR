@@ -93,7 +93,7 @@ O fluxo de trabalho da campanha deve integrar a atividade do tipo de **aprovaç�
 * **[!UICONTROL Distribution context]** : Explícito.
 * **[!UICONTROL Data distribution]** : Distribuição de entidade local.
 
-A distribuição de dados do tipo de **distribuição de entidade local** deve ser criada. O modelo de distribuição de dados permite limitar o número de registros de uma lista de valores de agrupamento. Em **[!UICONTROL Resources > Campaign management > Data distribution]**, clique no ícone **[!UICONTROL New]** para criar uma nova **[!UICONTROL Data distribution]**. Para obter mais informações sobre distribuição de dados, consulte o guia [Workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"} (documentação do Campaign v8).
+A distribuição de dados do tipo de **distribuição de entidade local** deve ser criada. O modelo de distribuição de dados permite limitar o número de registros de uma lista de valores de agrupamento. Em **[!UICONTROL Resources > Campaign management > Data distribution]**, clique no ícone **[!UICONTROL New]** para criar uma nova **[!UICONTROL Data distribution]**. Para obter mais informações sobre distribuição de dados, consulte o guia [Workflows](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"} (documentação do Campaign v8).
 
 ![](assets/mkg_dist_data_distribution.png)
 

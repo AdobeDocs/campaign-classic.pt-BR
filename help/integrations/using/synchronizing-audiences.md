@@ -89,7 +89,7 @@ Para obter o público-alvo final e seus dados adicionais:
 
    ![](assets/acs_connect_query1.png)
 
-1. Adicionar dados adicionais dentro da consulta. Para obter mais informações, consulte a seção [Adicionando dados](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query#adding-data){target="_blank"} (documentação do Campaign v8).
+1. Adicionar dados adicionais dentro da consulta. Para obter mais informações, consulte a seção [Adicionando dados](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/query#adding-data){target="_blank"} (documentação do Campaign v8).
 
    Este exemplo mostra como adicionar um agregado para contar quantas entregas um destinatário recebeu em um ano.
 

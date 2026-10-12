@@ -97,7 +97,7 @@ As funções de execução e formatação do fluxo de trabalho de segmentação 
 
 >[!NOTE]
 >
->As atividades disponíveis para criar o diagrama e todos os recursos de exibição e layout estão detalhados no guia [Automatização com fluxos de trabalho](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target="_blank"} (documentação do Campaign v8).
+>As atividades disponíveis para criar o diagrama e todos os recursos de exibição e layout estão detalhados no guia [Automatização com fluxos de trabalho](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/activities){target="_blank"} (documentação do Campaign v8).
 
 Você pode criar vários fluxos de trabalho de segmentação para uma única campanha. Para adicionar um fluxo de trabalho:
 
@@ -250,7 +250,7 @@ Clique em **[!UICONTROL Next]** para definir a ordem de classificação (se nece
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Essa configuração é equivalente a uma atividade de compartilhamento no fluxo de trabalho, que permite dividir o target em subconjuntos. O grupo de controle é um desses subconjuntos. Consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} (documentação do Campaign v8) para obter mais informações.
+Essa configuração é equivalente a uma atividade de compartilhamento no fluxo de trabalho, que permite dividir o target em subconjuntos. O grupo de controle é um desses subconjuntos. Consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} (documentação do Campaign v8) para obter mais informações.
 
 ### Usar uma nova população como grupo de controle {#adding-a-population}
 

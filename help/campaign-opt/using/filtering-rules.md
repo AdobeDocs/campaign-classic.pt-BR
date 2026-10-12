@@ -77,7 +77,7 @@ Nesse caso, mesmo que a regra esteja vinculada a todas as entregas, ela só ser�
 
 >[!NOTE]
 >
->As regras de filtragem e tipologia podem ser usadas em um fluxo de trabalho, na atividade **[!UICONTROL Delivery outline]**. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/delivery-outline){target="_blank"} (documentação do Campaign v8).
+>As regras de filtragem e tipologia podem ser usadas em um fluxo de trabalho, na atividade **[!UICONTROL Delivery outline]**. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/delivery-outline){target="_blank"} (documentação do Campaign v8).
 
 ## Criar e usar uma tipologia de filtro {#creating-and-using-a-filtering-typology}
 

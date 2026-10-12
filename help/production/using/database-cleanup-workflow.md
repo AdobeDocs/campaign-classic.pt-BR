@@ -349,7 +349,7 @@ Esta tarefa limpa cada instância de fluxo de trabalho usando seu identificador 
 
 >[!NOTE]
 >
->A frequência de limpeza do histórico é especificada para cada fluxo de trabalho no campo **Histórico em dias** (valor padrão de 30 dias). Este campo pode ser encontrado na guia **Execution** das propriedades do fluxo de trabalho. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/advanced-management/workflow-properties#execution){target="_blank"} (documentação do Campaign v8).
+>A frequência de limpeza do histórico é especificada para cada fluxo de trabalho no campo **Histórico em dias** (valor padrão de 30 dias). Este campo pode ser encontrado na guia **Execution** das propriedades do fluxo de trabalho. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/advanced-management/workflow-properties#execution){target="_blank"} (documentação do Campaign v8).
 
 1. Para recuperar a lista de workflows a serem excluídos, a seguinte query é usada:
 

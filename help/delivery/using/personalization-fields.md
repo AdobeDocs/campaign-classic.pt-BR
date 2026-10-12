@@ -104,7 +104,7 @@ Ao criar um email, iremos inserir o nome do destinatário e depois adicionar a d
 
    >[!NOTE]
    >
-   >Quando uma entrega faz parte de um fluxo de trabalho, você pode usar os dados da tabela de fluxo de trabalho temporário. Esses dados são agrupados no menu **[!UICONTROL Target extension]**. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/use-workflow-data){target="_blank"} (documentação do Campaign v8).
+   >Quando uma entrega faz parte de um fluxo de trabalho, você pode usar os dados da tabela de fluxo de trabalho temporário. Esses dados são agrupados no menu **[!UICONTROL Target extension]**. Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/use-workflow-data){target="_blank"} (documentação do Campaign v8).
 
 ## Otimização da personalização {#optimizing-personalization}
 
@@ -120,7 +120,7 @@ Para usar essa opção, siga as etapas abaixo:
 
 1. Crie uma campanha. Para mais informações, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=pt-BR){target=_blank}.
 1. Na guia **[!UICONTROL Targeting and workflows]** da campanha, adicione uma atividade de **Query** ao fluxo de trabalho. Para obter mais informações sobre como usar essa atividade, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentação do Campaign v8).
-1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra. Para obter mais informações sobre como usar essa atividade, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"} (documentação do Campaign v8).
+1. Adicione uma atividade **[!UICONTROL Email delivery]** ao fluxo de trabalho e depois a abra. Para obter mais informações sobre como usar essa atividade, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"} (documentação do Campaign v8).
 1. Vá até a guia **[!UICONTROL Analysis]** do **[!UICONTROL Delivery properties]** e selecione a opção **[!UICONTROL Prepare the personalization data with a workflow]**.
 
    ![](assets/perso_optimization.png)
