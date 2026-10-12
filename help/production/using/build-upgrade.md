@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 5%
@@ -437,5 +437,5 @@ Estas são as etapas para executar uma mesclagem complexa:
 
 * [Perguntas frequentes sobre atualização de build](../../platform/using/faq-build-upgrade.md)
 * [Notas de versão do Campaign Classic](../../rn/using/rn-overview.md)
-* [Opções de ajuda e suporte para o Campaign Classic](../../support.md)
+* [Opções de ajuda e suporte para o Campaign Classic](../../campaign-classic-home.md)
 * [Programa de atualização anual do Campaign](../../rn/using/rn-overview.md)

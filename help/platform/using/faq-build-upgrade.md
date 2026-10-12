@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '2105'
 ht-degree: 100%
@@ -212,7 +212,7 @@ Sim. O servidor é desligado durante uma atualização para garantir que a integ
 
 Se você enfrentar problemas após uma atualização de build, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). O Atendimento ao cliente agendará as datas de criação e abrirá tíquetes relacionados à atualização da build.
 
-Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](../../support.md)
+Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](../../campaign-classic-home.md)
 
 ## Lista de verificação de atualização de build {#check-list}
 
@@ -252,5 +252,5 @@ todo o conteúdo é exibido e está presente.
 
 * [Atualização de uma build](../../production/using/build-upgrade.md)
 * [Notas de versão do Campaign Classic](../../rn/using/rn-overview.md)
-* [Opções de ajuda e suporte para o Campaign Classic](../../support.md)
+* [Opções de ajuda e suporte para o Campaign Classic](../../campaign-classic-home.md)
 * [Programa de atualização anual](../../rn/using/rn-overview.md#yearly-upgrade)
