@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 100%
+source-wordcount: '1255'
+ht-degree: 99%
 ---
 # Editar conteúdo{#editing-content}
 
@@ -47,7 +47,7 @@ Para adicionar uma condição de visibilidade, selecione um bloco e insira a con
 
 >[!NOTE]
 >
->A edição de expressão avançada é apresentada [nesta página](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
+>A edição de expressão avançada é apresentada em [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (documentação do Campaign v8).
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -233,7 +233,7 @@ O Editor de conteúdo digital permite trabalhar em **qualquer tipo de imagem** c
 
 ### Adição/exclusão/duplicação de uma imagem {#adding---deleting---duplicating-an-image}
 
-Para inserir uma imagem, selecione um bloco tipo Imagem e clique no ícone Imagem. ****
+Para inserir uma imagem, selecione um bloco tipo Imagem e clique no ícone Imagem. **&#x200B;**
 
 ![](assets/dce_insert_image.png)
 

@@ -37,71 +37,18 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 100%
+source-wordcount: '915'
+ht-degree: 94%
 ---
 # Automatizar com fluxos de trabalho{#automating-via-workflows}
 
-## Atividade de Gerenciamento de conteúdo {#content-management-activity}
+Criar, editar e publicar conteúdo O gerenciamento de conteúdo pode ser automatizado usando um workflow.
 
-Criar, editar e publicar conteúdo pode ser automatizado usando um fluxo de trabalho configurado através da interface do cliente do Adobe Campaign.
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber como configurar a atividade **Gestão de conteúdo**, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}.
 
-A atividade **Content management** é acessada pela barra de ferramentas **[!UICONTROL Tools]** do diagrama de fluxo de trabalho.
-
-As propriedades da atividade são divididas em quatro etapas:
-
-* **[!UICONTROL Content]**: permite inserir conteúdo existente ou criar conteúdo,
-* **[!UICONTROL Update content]**: permite modificar o assunto do conteúdo ou atualizar o conteúdo por meio de um fluxo de dados XML,
-* **[!UICONTROL Action to execute]**: permite salvar ou gerar conteúdo,
-* **[!UICONTROL Transition]**: permite escolher se gera ou não uma transição de saída e a nomeia.
-
-![](assets/d_ncs_content_wf.png)
-
-### Conteúdo {#content}
-
-* **Especificado pela transição**
-
-  O conteúdo a ser usado foi criado anteriormente. Os processos se referem à instância de conteúdo propagada pelo evento de entrada. O identificador de conteúdo é acessado por meio da variável &quot;contentId&quot; do evento.
-
-* **Explícito**
-
-  Permite escolher o conteúdo criado anteriormente.
-
-* **Calculado por um script**
-
-  Seleciona uma instância de conteúdo com base em um modelo JavaScript. O código a ser avaliado permite recuperar o identificador de conteúdo.
-
-* **Novo, criado por meio de um modelo de publicação**
-
-  Cria um novo conteúdo por meio de um modelo de publicação. A instância de conteúdo será salva na pasta &quot;string&quot; preenchida.
-
-### Atualizar o conteúdo {#update-the-content}
-
-* **Assunto**
-
-  Permite modificar o assunto da ação de entrega ao publicar.
-
-* **Acesso aos dados de um feed XML**
-
-  O conteúdo é atualizado de um feed XML de uma fonte externa. Um URL deve ser inserido para que o download de dados ocorra.
-
-  Uma folha de estilos XSL pode ser usada para transformar os dados XML de entrada.
-
-### Ação a ser executada {#action-to-execute}
-
-* **Salvar**
-
-  Salva o conteúdo criado ou modificado. O identificador do conteúdo salvo é propagado na variável &quot;contentId&quot; do evento de saída.
-
-* **Gerar**
-
-  Gera os arquivos de saída para cada um dos modelos de transformação com uma publicação do tipo &quot;Arquivo&quot;. A transição de saída é ativada para cada arquivo gerado, com os seguintes parâmetros: o identificador do conteúdo salvo na variável &quot;contentId&quot; e o nome do arquivo na variável &quot;filename&quot;.
-
-### Transição {#transition}
-
-A opção **Generate an output transition** permite adicionar uma transição de saída à atividade **[!UICONTROL Content management]** para vincular uma nova atividade à execução do fluxo de trabalho. Após verificar essa opção, insira um rótulo para a transição.
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}
 
 ## Exemplos {#examples}
 
@@ -240,11 +187,6 @@ O target a ser enviado é digitado por meio do evento de entrada.
 O conteúdo de entrega é preenchido por meio do evento de entrada.
 
 A ação final da atividade é preparar e iniciar a entrega.
-
-### Importar conteúdo do FTP {#importing-content-from-ftp}
-
-Se o seu conteúdo da entrega estiver disponível em um arquivo HTML localizado em servidores FTP ou SFTP, é possível carregá-los facilmente nas entregas do Adobe Campaign. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=pt-BR){target="_blank"}.
-
 
 ### Importar conteúdo do conector do Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 

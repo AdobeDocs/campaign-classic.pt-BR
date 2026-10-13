@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '2185'
-ht-degree: 98%
+source-wordcount: '2202'
+ht-degree: 97%
 ---
 # Versões de 2022{#release-2022}
 
@@ -60,7 +60,7 @@ _1 de julho de 2022_
 <tbody> 
 <tr> 
 <td> <p>Com o iOS 15, a Apple adicionou uma noção de notificação relevante, que dá controle ao desenvolvedor do aplicativo para ignorar o modo de Foco quando uma notificação é considerada relevante e precisa ser entregue ao usuário em tempo real.</p>
-<p>Saiba como criar uma notificação confidencial na <a href="../../delivery/using/create-notifications-ios.md">documentação detalhada</a>.</p>
+<p>Saiba como criar uma notificação confidencial na <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios" target="_blank">documentação detalhada</a> (documentação do Campaign v8).</p>
 </td> 
 </tr> 
 </tbody> 

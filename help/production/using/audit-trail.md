@@ -29,9 +29,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 12%
 ---
 # Trilha de auditoria{#audit-trail}
@@ -55,7 +55,7 @@ O **[!UICONTROL Audit trail]** captura, em tempo real, uma lista abrangente de a
 
 * **Trilha de auditoria do esquema**: permite explorar as alterações feitas em seus esquemas, bem como identificar quem fez essas modificações e quando elas ocorreram.
 
-  Para obter informações detalhadas sobre esquemas, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (documentação do Campaign v8).
+  Para obter informações detalhadas sobre esquemas, consulte esta [página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).
 
 * A **trilha de auditoria do fluxo de trabalho** rastreia todas as ações relacionadas aos seus fluxos de trabalho, incluindo:
 

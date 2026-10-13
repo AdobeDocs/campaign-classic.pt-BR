@@ -18,10 +18,10 @@ feature_v2:
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
     internal-label: Installation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 54%
+source-wordcount: '337'
+ht-degree: 51%
 ---
 # Matriz de recursos por modelo{#capability-matrix-per-model}
 
@@ -46,7 +46,7 @@ Os diferentes modelos de hospedagem foram introduzidos [nesta seção](../../ins
 | Criptografar/descriptografar dados para transferências de arquivos | Por demanda | Disponível | Disponível | [Saiba mais](../../platform/using/unzip-decrypt.md) |
 | Compactação/descompactação de arquivos | Por demanda | Disponível | Disponível | [Saiba mais](../../platform/using/unzip-decrypt.md) |
 | Delegação de nome de domínio | Por demanda | Por demanda | Indisponível | [Saiba mais](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=pt-BR) |
-| Instalação do SpamAssassin | Por demanda | Disponível | Disponível | [Saiba mais](../../delivery/using/spamassassin.md) |
+| Instalação do SpamAssassin | Por demanda | Disponível | Disponível | [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"} (documentação do Campaign v8) |
 | Acesso aos relatórios de entrega | Disponível | Por demanda | Disponível | [Saiba mais](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | Configuração da autenticação LDAP | Indisponível | Disponível | Disponível | [Saiba mais](../../installation/using/connecting-through-ldap.md) |
 

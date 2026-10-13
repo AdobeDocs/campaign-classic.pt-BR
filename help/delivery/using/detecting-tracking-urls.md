@@ -29,30 +29,18 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 100%
+source-wordcount: '247'
+ht-degree: 76%
 ---
 # Detectar URLs de rastreamento
 
-## Exemplo de não detecção
+O Adobe Campaign detecta os URLs a serem rastreados no conteúdo durante a análise de delivery.
 
-`<%= getURL("http://mynewsletter.com") %>` funciona e envia o conteúdo real da página da Web por email para os destinatários. Mas nenhum dos links é rastreado. O motivo para isso é que o MTA executa `"<%=getURL(..."` para cada email antes do envio. Pode ser diferente para cada destinatário. Portanto, o Adobe Campaign não pode saber os URLs para rastreamento e atribuir uma ID de tag a eles.
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber como as URLs são detectadas e quais padrões usar, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/personalized-links#url-detection){target=_blank}.
 
-Quando a página para download é a mesma para todos os destinatários, a prática recomendada é fazer o seguinte:
-
-`<%@ include url="http://mynewsletter.com" %>`
-
-Nesse caso, a página é baixada durante a análise, antes da detecção do rastreamento. Ela permite que o Adobe Campaign descubra os links, atribua uma ID de tag e rastreie-os.
-
-## Padrão recomendado
-
-Após o processamento das instruções `<%@`, o URL a ser rastreado tem a seguinte sintaxe: `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
-
->[!IMPORTANT]
->
->Todos os outros padrões não são suportados pelo Adobe e devem ser evitados para impedir possíveis falhas de segurança.
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/personalized-links#url-detection){target=_blank}
 
 ## Padrão não seguro
 

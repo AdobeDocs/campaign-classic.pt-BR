@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1721'
 ht-degree: 37%
 ---
 # Falhas de entrega e gerenciamento de quarentena {#delivery-failures-quarantine}
@@ -105,7 +105,7 @@ Os emails de devolução podem ter o seguinte status de qualificação:
 
 >[!NOTE]
 >
->No caso de uma interrupção de um ISP, os emails enviados pelo Campaign serão marcados incorretamente como rejeições. Para corrigir isso, você precisa atualizar a qualificação de rejeição. Para obter mais informações, consulte [esta seção](update-bounce-qualification.md).
+>No caso de uma interrupção de um ISP, os emails enviados pelo Campaign serão marcados incorretamente como rejeições. Para corrigir isso, você precisa atualizar a qualificação de rejeição. Para obter mais informações, consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentação do Campaign v8).
 
 ### Configuração das regras de gerenciamento de email {#email-management-rules}
 
@@ -245,7 +245,7 @@ Para obter informações detalhadas sobre cenários de quarentena de SMS e tipos
 * [Status de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentação do Campaign v8)
 * [Fluxo de trabalho de limpeza do banco de dados](../../production/using/database-cleanup-workflow.md) (v7 híbrido/no local)
 * [Configurar novas tentativas de entrega](communication-channels.md) (v7 híbrido/no local)
-* [Atualizar qualificação de rejeição](update-bounce-qualification.md) (v7 híbrido/no local)
+* [Atualizar qualificação de rejeição](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentação do Campaign v8) (v7 híbrido/no local)
 * [Configuração da capacidade de entrega de email](../../installation/using/email-deliverability.md) (v7 híbrido/no local)
 * [Implantando uma instância](../../installation/using/deploying-an-instance.md#managing-bounced-emails) (v7 híbrido/no local)
 

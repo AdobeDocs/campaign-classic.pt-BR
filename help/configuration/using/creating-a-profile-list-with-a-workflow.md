@@ -25,19 +25,19 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 14%
+source-wordcount: '224'
+ht-degree: 9%
 ---
 # Criação de uma lista de perfis com base em um fluxo de trabalho{#creating-a-profile-list-with-a-workflow}
 
 
 Para criar uma lista do tipo **[!UICONTROL List]** com base na nova tabela de destinatários, é necessário criar um fluxo de trabalho de direcionamento que gerará a lista.
 
-Para obter mais informações sobre listas no Campaign, consulte [esta seção](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
+Para obter mais informações sobre listas no Campaign, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-of-contacts){target="_blank"} (documentação do Campaign v8).
 
-![](assets/do-not-localize/how-to-video.png) [Conheça este recurso no vídeo](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+![](assets/do-not-localize/how-to-video.png) [Descubra este recurso no vídeo](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-wf){target="_blank"} (documentação do Campaign v8)
 
 Para criar um workflow de direcionamento e atualizar recipients em uma tabela de recipients personalizada, siga as etapas abaixo:
 

@@ -35,10 +35,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
+source-wordcount: '546'
+ht-degree: 95%
 ---
 # Práticas recomendadas de importação e exportação {#import-export-best-practices}
 
@@ -56,7 +56,7 @@ Em muitos projetos, as importações são criadas sem a atividade **[!UICONTROL 
 
 Não confie na suposição de que os dados de entrada são consistentes e corretos, ou que o departamento de TI ou o supervisor do Adobe Campaign irá resolver isso. Durante o projeto, mantenha a limpeza dos dados em mente. Elimine duplicados, reconcilie e mantenha de consistência ao importar dados.
 
-Um exemplo de modelo de fluxo de trabalho genérico projetado para importar dados está disponível na seção [Exemplo: modelo de fluxo de trabalho para importar dados](../../platform/using/creating-import-export-templates.md).
+Um exemplo de modelo de fluxo de trabalho genérico projetado para importar dados está disponível na seção [Exemplo: modelo de fluxo de trabalho para importar dados](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/import){target="_blank"} (documentação do Campaign v8).
 
 ## Usar formatos de arquivo simples {#using-flat-file-formats}
 

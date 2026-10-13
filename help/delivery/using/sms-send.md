@@ -39,12 +39,16 @@ topic_v2:
     internal-label: Troubleshooting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 100%
+source-wordcount: '907'
+ht-degree: 95%
 ---
 # Configuração adicional{#sms-properties}
+
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre as configurações de entrega de SMS, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/sms/config-sms/sms-delivery-settings){target=_blank}.
+
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/sms/config-sms/sms-delivery-settings){target=_blank}
 
 <!--
 ## Send SMS messages {#sending-sms-messages}
@@ -53,7 +57,7 @@ To approve your message and send it to the recipients of the delivery being crea
 
 The detailed process when validating and sending a delivery is presented in the sections below:
 
-* [Validate the delivery](steps-validating-the-delivery.md)
+* [Validate the delivery](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/validate/delivery-analysis){target="_blank"} (Campaign v8 documentation)
 * [Send the delivery](steps-sending-the-delivery.md)
 -->
 
@@ -73,7 +77,6 @@ As seguintes opções estão disponíveis:
   >
   >Verifique a lei em seu país em relação à edição dos nomes dos remetentes. Você também deve verificar se sua operadora oferece essa funcionalidade.
 
-* **Modo de transmissão**: transmissão de mensagem por SMS.
 * **Prioridade**: nível de importância atribuída a uma mensagem. A prioridade **[!UICONTROL Normal]** é selecionada por padrão. Pergunte ao seu provedor de serviços sobre o custo do SMS enviado com prioridade **[!UICONTROL High]**.
 * **Tipo de aplicativo**: escolha o aplicativo que deseja atribuir a sua entrega de SMS. A opção **[!UICONTROL Direct Marketing]** é selecionada por padrão e é a mais usada.
 
@@ -82,12 +85,6 @@ As seguintes opções estão disponíveis:
 ![](assets/s_user_mobile_sms_adv_netsize.png)
 
 * **Use vários SMS para uma única mensagem**: isso permite enviar uma mensagem com mais de 160 caracteres por meio de várias mensagens SMS.
-
-**Parâmetros específicos de um conector SMPP**
-
-![](assets/s_user_mobile_sms_adv_smpp.png)
-
-* **Número máximo de SMS por mensagem**: essa opção permite que você defina o número de SMS para usar ao enviar uma mensagem. Se o número for definido como 0, você poderá usar um SMS para entregar sua mensagem. Se o número de SMS estiver definido como 1 ou 2, por exemplo, e a mensagem exceder esse limite, ele não será enviado.
 
 <!--
 ## Monitor and track SMS {#monitoring-and-tracking-sms-deliveries}

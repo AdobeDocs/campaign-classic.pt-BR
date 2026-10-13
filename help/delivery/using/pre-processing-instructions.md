@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 100%
+source-wordcount: '651'
+ht-degree: 93%
 ---
 # Instruções de pré-processamento {#pre-processing-instructions}
 
@@ -44,6 +44,10 @@ Há três tipos de instruções:
 * **[!DNL foreach]**: para executar um loop em uma matriz carregada como um objeto personalizado. [Saiba mais](#foreach)
 
 Os testes podem ser feitos diretamente no assistente de entrega. Eles são aplicados na pré-visualização de conteúdo e quando você clica no botão de rastreamento para ver a lista dos URLs.
+
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre as instruções de pré-processamento, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}.
+
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}
 
 ## [!DNL include] {#include}
 
@@ -150,19 +154,6 @@ Por exemplo:
 ## [!DNL foreach] {#foreach}
 
 Essa instrução permite a iteração em uma matriz de objetos carregada na entrega para rastrear links individuais relacionados aos objetos.
-
-Sintaxe:
-
-```
-<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
-```
-
-Em que:
-
-* **[!DNL object]**: nome do objeto do qual iniciar; geralmente, é um objeto de script extra, mas pode ser uma entrega.
-* **[!DNL xpath]** (opcional): xpath da coleção na qual executar um loop. O padrão é &quot;.&quot;, o que significa que o objeto é a matriz na qual executar um loop.
-* **[!DNL index]** (opcional): se xpath não for &quot;.&quot; e o objeto é uma matriz em si, índice de item do objeto (começa em 0).
-* **[!DNL item]** (opcional): nome de um novo objeto acessível com o valor &lt;%@ dentro do loop foreach. Padrão com o nome do link no esquema.
 
 Exemplo:
 

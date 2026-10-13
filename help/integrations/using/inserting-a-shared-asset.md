@@ -27,10 +27,10 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '248'
+ht-degree: 87%
 ---
 # Inserção de um ativo compartilhado{#inserting-a-shared-asset}
 
@@ -54,7 +54,7 @@ Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emai
 
      >[!NOTE]
      >
-     >Não é possível inserir imagens compartilhadas do Adobe Campaign no [acesso Web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) ao usar DCE.
+     >Não é possível inserir imagens compartilhadas do Adobe Campaign no [acesso à Web](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} (documentação do Campaign v8) ao usar o DCE.
 
 1. Na janela de seleção que é aberta, selecione uma imagem e depois confirme.
 

@@ -30,7 +30,7 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 97%
@@ -65,7 +65,7 @@ Para criar um valor comum como no nosso exemplo (departamento de compras), prime
 
 ### Estender o esquema de dados {#extending-the-data-schema}
 
-Para obter mais detalhes sobre extensões de esquema, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (documentação do Campaign v8).
+Para obter mais detalhes sobre extensões de esquema, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/extend-schema){target="_blank"} (documentação do Campaign v8).
 
 1. No nó **[!UICONTROL Administration > Configuration > Data schemas]**, clique no ícone **[!UICONTROL New]**.
 1. Na janela **[!UICONTROL Creation of a data schema]**, selecione a opção **[!UICONTROL Extension of a schema]** e clique em **[!UICONTROL Next]**.
