@@ -46,7 +46,7 @@ ht-degree: 89%
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * A guia **[!UICONTROL Journal]** permite visualizar mensagens de log relacionadas à execução.
-* A guia **[!UICONTROL Rejects]** contém os registros rejeitados. Consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import#behavior-in-the-event-of-an-error){target="_blank"} (documentação do Campaign v8).
+* A guia **[!UICONTROL Rejects]** contém os registros rejeitados. Consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/import#behavior-in-the-event-of-an-error){target="_blank"} (documentação do Campaign v8).
 
 Na guia **[!UICONTROL General]**, o campo **[!UICONTROL Status]** indica o status atual de um processo.
 

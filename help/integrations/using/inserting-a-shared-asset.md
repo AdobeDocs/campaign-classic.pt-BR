@@ -54,7 +54,7 @@ Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emai
 
      >[!NOTE]
      >
-     >Não é possível inserir imagens compartilhadas do Adobe Campaign no [acesso à Web](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} (documentação do Campaign v8) ao usar o DCE.
+     >Não é possível inserir imagens compartilhadas do Adobe Campaign no [acesso à Web](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} (documentação do Campaign v8) ao usar o DCE.
 
 1. Na janela de seleção que é aberta, selecione uma imagem e depois confirme.
 

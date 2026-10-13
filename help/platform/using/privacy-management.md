@@ -100,9 +100,9 @@ Para facilitar a conformidade com a privacidade, o Adobe Campaign permite manipu
 Para saber como criar solicitações do **Access** e **Delete** e como o Adobe Campaign as processa, consulte as [etapas de implementação](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/privacy/privacy){target="_blank"} (documentação do Campaign v8).
 
 <!--
-Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
+Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=pt-BR).
 
-https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html
+https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=pt-BR
 -->
 
 ## Consentimento, retenção e funções {#consent-retention-roles}

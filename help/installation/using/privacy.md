@@ -117,7 +117,7 @@ Para habilitar a assinatura do URL, siga estas etapas em todos os servidores do 
 
 Certifique-se de que as senhas criptografadas não estejam acessíveis a um usuário autenticado de baixo privilégio. Para fazer isso, restrinja o acesso somente aos campos de senha ou à entidade inteira (precisa de uma build >= 8770).
 
-Esta restrição permite que você remova os campos de senhas, mas deixe a conta externa acessível a partir da interface para todos os usuários. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} (documentação do Campaign v8).
+Esta restrição permite que você remova os campos de senhas, mas deixe a conta externa acessível a partir da interface para todos os usuários. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} (documentação do Campaign v8).
 
 Para fazer isso, siga as etapas abaixo:
 
