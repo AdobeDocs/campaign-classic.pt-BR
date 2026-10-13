@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -176,7 +176,7 @@ As seguintes expressões são pesquisadas (distinção entre maiúsculas e minú
    <td> Erro<br /> </td> 
    <td> Esse tipo de implantação não é mais suportado. O Office 365 e o tipo de implantação do conector do Microsoft CRM no local foram descontinuados. 
    </br>Se você estiver usando um desses tipos de implantação obsoletos em uma conta externa, essa conta externa deverá ser excluída e você deverá executar o comando <b>postupgrade</b>. 
-   </br>Para alterar para implantação da API Web, consulte <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Aplicativos Web</a>.<br /> </td>
+   </br>Para alterar para implantação da API Web, consulte <a href="../../platform/using/crm-connectors.md">Aplicativos Web</a>.<br /> </td>
   </tr> 
   <tr> 
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 

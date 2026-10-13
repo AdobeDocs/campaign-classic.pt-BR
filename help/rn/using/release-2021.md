@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '2702'
 ht-degree: 98%
@@ -87,7 +87,7 @@ _7 de setembro de 2021_
 **Outras alterações**
 
 * Correção de uma regressão introduzida na versão 21.1.3 com a nova medida de proteção do fluxo de trabalho de faturamento. O fluxo de trabalho de faturamento foi executado em instâncias erradas e falhou ao tentar enviar o relatório de faturamento, que não foi gerado. É necessário reiniciar manualmente o fluxo de trabalho para que a correção seja aplicada.
-* Os conectores do Microsoft CRM obsoletos anteriormente (implantações do Office 365 e no local) foram removidos da interface. [Leia mais](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* Os conectores do Microsoft CRM obsoletos anteriormente (implantações do Office 365 e no local) foram removidos da interface. [Leia mais](../../platform/using/crm-connectors.md)
 * Após a migração para o Tomcat 8, o script de configuração do IIS foi atualizado para corrigir problemas de integração do IIS. (NEO-31019)
 * A identificação da fonte de dados foi aprimorada nas guias de dados e esquema da janela **Exibir população** das transições do fluxo de trabalho.
 * Os índices de banco de dados ausentes foram adicionados aos seguintes esquemas para evitar problemas de atualização do banco de dados: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl

@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 100%
@@ -108,7 +108,7 @@ Learn how to grant access and set up permissions in these sections:
 
 * [Add Named rights](access-management-named-rights.md)
 
-* [Manage Campaign folder access](access-management-folders.md)
+* [Manage Campaign folder access](access-management.md)
 
 * [Access rights matrix](access-management-named-rights.md#access-rights-matrix)
 
