@@ -8,9 +8,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1739'
 ht-degree: 100%
 ---
 
@@ -86,73 +86,27 @@ ht-degree: 100%
   + [Introdução a mensagens](delivery/using/communication-channels.md)
   + {hide-from-toc}[Configurações de entrega – OCULTO](delivery/using/delivery-settings.md)
   + Início rápido {#key-steps-when-creating-a-delivery}
-    + {hide-from-toc}[Introdução a entregas – OCULTO](delivery/using/steps-about-delivery-creation-steps.md)
-    + {hide-from-toc}[Criar e identificar uma entrega – OCULTO](delivery/using/steps-create-and-identify-the-delivery.md)
-    + {hide-from-toc}[Definir o público-alvo – OCULTO](delivery/using/steps-defining-the-target-population.md)
-    + {hide-from-toc}[Validar a entrega – OCULTO](delivery/using/steps-validating-the-delivery.md)
     + {hide-from-toc}[Enviar a entrega – OCULTO](delivery/using/steps-sending-the-delivery.md)
-    + {hide-from-toc}[Práticas recomendadas para entrega – OCULTO](delivery/using/delivery-best-practices.md)
-  + Práticas recomendadas de entrega {#delivery-bestpractices}
-    + {hide-from-toc}[Otimizar a entrega – OCULTO](delivery/using/optimize-delivery.md)
-    + {hide-from-toc}[Usar modelos – OCULTO](delivery/using/use-templates.md)
-    + {hide-from-toc}[Criar conteúdo personalizado – OCULTO](delivery/using/design-and-personalize.md)
-    + {hide-from-toc}[Definir o público-alvo correto – OCULTO](delivery/using/define-the-right-audience.md)
-    + {hide-from-toc}[Verificar antes de enviar – OCULTO](delivery/using/check-before-sending.md)
   + [Enviar emails](delivery/using/about-email-channel.md)
-  + Enviar emails {#sending-emails}
-    + {hide-from-toc}[Criar uma entrega de email – OCULTO](delivery/using/creating-an-email-delivery.md)
-    + {hide-from-toc}[Definir o conteúdo do email – OCULTO](delivery/using/defining-the-email-content.md)
-    + {hide-from-toc}[Definir conteúdo interativo – OCULTO](delivery/using/defining-interactive-content.md)
-    + Enviar a entrega de email {#sending-an-email}
-      + {hide-from-toc}[Etapas principais para enviar um email – OCULTO](delivery/using/sending-messages.md)
-      + {hide-from-toc}[Parâmetros de email – OCULTO](delivery/using/email-parameters.md)
-      + {hide-from-toc}[Enviar em dispositivos móveis japoneses – OCULTO](delivery/using/sending-emails-on-japanese-mobiles.md)
-    + {hide-from-toc}[Anexar arquivos – OCULTO](delivery/using/attaching-files.md)
   + Enviar SMS {#sending-messages-on-mobiles}
-    + [Introdução a SMS](delivery/using/sms-channel.md)
     + Configurar canal de SMS {#sms-set-up}
       + [Configurar SMS em uma instância independente](delivery/using/sms-set-up.md)
       + [Configurar SMS em uma infraestrutura de mid-sourcing](delivery/using/sms-set-up-mid.md)
       + [Protocolo e configurações do conector de SMS](delivery/using/sms-protocol.md)
       + [Configuração adicional](delivery/using/sms-send.md)
       + [Solução de problemas de SMS](delivery/using/troubleshooting-sms.md)
-    + {hide-from-toc}[Criar um SMS – OCULTO](delivery/using/sms-create.md)
     + {hide-from-toc}[Migrar para o conector SMPP genérico estendido](delivery/using/unsupported-connector-migration.md)
-  + [Enviar mensagens LINE](delivery/using/line-channel.md)
   + [Enviar notificações por push](delivery/using/about-mobile-app-channel.md)
   + Enviar notificações por push {#sending-push-notifications}
-    + {hide-from-toc}[Integrar o SDK do Campaign no aplicativo para dispositivos móveis](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
     + Configurar o aplicativo para dispositivos móveis{#configure-the-mobile-app}
       + {hide-from-toc}[Introdução à configuração do aplicativo – OCULTO](delivery/using/get-started-app-config.md)
       + {hide-from-toc}[Etapas de configuração para iOS – OCULTO](delivery/using/configuring-the-mobile-application.md)
       + {hide-from-toc}[Etapas de configuração para Android – OCULTO](delivery/using/configuring-the-mobile-application-android.md)
-    + Criar uma notificação por push{#create-a-push-msg}
-      + {hide-from-toc}[Criar uma mensagem por push para iOS – OCULTO](delivery/using/create-notifications-ios.md)
-      + {hide-from-toc}[Criar uma mensagem por push para Android – OCULTO](delivery/using/create-notifications-android.md)
     + {hide-from-toc}[Solução de problemas – OCULTO](delivery/using/troubleshooting.md)
   + [Enviar correspondências diretas](delivery/using/about-direct-mail-channel.md)
-  + Enviar correspondência direta {#sending-direct-mail}
-    + {hide-from-toc}[Criar uma entrega de correspondência direta – OCULTO](delivery/using/creating-a-direct-mail-delivery.md)
-    + {hide-from-toc}[Definir o conteúdo da correspondência direta – OCULTO](delivery/using/defining-the-direct-mail-content.md)
-    + {hide-from-toc}[Validar – OCULTO](delivery/using/validating.md)
-  + Usar modelos de entrega {#using-delivery-templates}
-    + {hide-from-toc}[Trabalhar com modelos de entrega – OCULTO](delivery/using/about-templates.md)
-    + {hide-from-toc}[Criar um modelo de entrega – OCULTO](delivery/using/creating-a-delivery-template.md)
-    + {hide-from-toc}[Selecionar um target mapping – OCULTO](delivery/using/selecting-a-target-mapping.md)
-    + {hide-from-toc}[Criar uma entrega a partir de um modelo – OCULTO](delivery/using/creating-a-delivery-from-a-template.md)
   + Personalizar entregas {#personalizing-deliveries}
     + [Sobre personalização](delivery/using/about-personalization.md)
-    + {hide-from-toc}[Campos de personalização – OCULTO](delivery/using/personalization-fields.md)
-    + {hide-from-toc}[Blocos de personalização – OCULTO](delivery/using/personalization-blocks.md)
-    + {hide-from-toc}[Conteúdo condicional – OCULTO](delivery/using/conditional-content.md)
-    + {hide-from-toc}[Cupons personalizados – OCULTO](delivery/using/personalized-coupons.md)
-    + {hide-from-toc}[Gerar documentos PDF personalizados – OCULTO](delivery/using/generating-personalized-pdf-documents.md)
-    + {hide-from-toc}[Personalizar a lista de emoticons](delivery/using/customizing-emoticon-list.md)
   + Usar seed addresses {#using-seed-addresses}
-    + [Sobre seed addresses](delivery/using/about-seed-addresses.md)
-    + [Criar seed addresses](delivery/using/creating-seed-addresses.md)
-    + [Adicionar seed addresses](delivery/using/adding-seed-addresses.md)
-    + [Usar uma tabela externa de destinatário](delivery/using/using-an-external-recipient-table.md)
     + [Caso de uso: selecionar seed addresses de acordo com critérios](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
     + [Caso de uso: configurar a substituição de campo](delivery/using/use-case-configuring-the-field-substitution.md)
   + Teste A/B {#a-b-testing}
@@ -180,9 +134,7 @@ ht-degree: 100%
     + [Avançado: logs de entrega personalizados](delivery/using/customize-delivery-logs.md)
   + Gerenciamento de capacidade de entrega {#deliverability-management}
     + [O que é capacidade de entrega](delivery/using/about-deliverability.md)
-    + [Controlar conteúdo da mensagem](delivery/using/control-message-content.md)
     + [Renderização da caixa de entrada](delivery/using/inbox-rendering.md)
-    + [SpamAssassin](delivery/using/spamassassin.md)
     + [Solução de problemas](delivery/using/deliverability-faq.md)
   + Módulo de gerenciamento de conteúdo {#content-management}
     + [Sobre gerenciamento de conteúdo](delivery/using/about-content-management.md)
@@ -593,8 +545,6 @@ ht-degree: 100%
     + {hide-from-toc}[Migrar para a API do Adobe Analytics 2.0](technotes/using/analytics-2-migration.md)
   + Emails e notificações por push{#technotes-email}
     + [Proteção de privacidade do App Mail no Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-    + [Como atualizar rejeições permanentes incorretas](delivery/using/update-bounce-qualification.md)
-    + {hide-from-toc}[Atualizar as rejeições permanentes incorretas após uma interrupção do ISP](delivery/using/update-bounces.md)
     + [Atualização de certificado do iOS](technotes/using/ios-certificate-update.md)
     + {hide-from-toc}[Atualização de URLs rastreados](technotes/using/tracked-urls.md)
   + Migração para o Adobe Managed Services{#dc-migration}
