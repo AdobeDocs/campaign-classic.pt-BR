@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Implementation
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 100%
+source-wordcount: '919'
+ht-degree: 97%
 ---
 # Gerenciamento de privacidade {#privacy-management}
 
@@ -97,12 +97,12 @@ Para facilitar a conformidade com a privacidade, o Adobe Campaign permite manipu
 
 * Também conhecido como Eliminação de dados, o **Direito ao esquecimento** (solicitação de exclusão) permite que o Titular de dados tenha seus dados pessoais apagados pelo Controlador de dados, interrompendo a divulgação e, possivelmente, o processamento desses dados por parte de terceiros.
 
-Para saber como criar solicitações de **Acesso** e **Exclusão** e como o Adobe Campaign as processa, consulte as [etapas de implementação](../../platform/using/privacy-requests.md).
+Para saber como criar solicitações do **Access** e **Delete** e como o Adobe Campaign as processa, consulte as [etapas de implementação](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/privacy/privacy){target="_blank"} (documentação do Campaign v8).
 
 <!--
-Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=pt-BR).
+Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 
-https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=pt-BR
+https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html
 -->
 
 ## Consentimento, retenção e funções {#consent-retention-roles}
@@ -123,7 +123,7 @@ Os recursos para ajudar a gerenciar alguns aspectos do consentimento são fundam
 
 Para obter mais informações sobre o Gerenciamento de consentimento, consulte a [documentação detalhada](../../delivery/using/managing-subscriptions.md).
 
-Além das ferramentas de Gestão do consentimento oferecidas pelo Adobe Campaign, você tem a possibilidade de monitorar a opção do cliente pela recusa da venda de informações pessoais. Consulte [esta seção](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
+Além das ferramentas de Gestão do consentimento oferecidas pelo Adobe Campaign, você tem a possibilidade de monitorar se o consumidor recusou a venda de informações pessoais. Consulte [esta seção](privacy-requests-ccpa.md).
 
 ### Retenção de dados {#data-retention}
 

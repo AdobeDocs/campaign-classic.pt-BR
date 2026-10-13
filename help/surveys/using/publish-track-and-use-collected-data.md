@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 98%
+source-wordcount: '872'
+ht-degree: 96%
 ---
 # Publicar, rastrear e usar dados coletados{#publish-track-and-use-collected-data}
 
@@ -125,7 +125,7 @@ As respostas de uma pesquisa podem ser exportadas em um arquivo externo para ser
 
    >[!NOTE]
    >
-   >As exportações de dados e as etapas de configuração são detalhadas [nesta seção](../../platform/using/about-generic-imports-exports.md).
+   >As exportações de dados e as etapas de sua configuração são detalhadas nesta [seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/import){target="_blank"} (documentação do Campaign v8).
 
 ## Utilização de dados coletados {#using-the-collected-data}
 

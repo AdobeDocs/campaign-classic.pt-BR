@@ -41,10 +41,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 91%
+source-wordcount: '626'
+ht-degree: 87%
 ---
 # Recusar a venda de informações pessoais (CCPA) {#sale-of-personal-information-ccpa}
 
@@ -70,7 +70,7 @@ Para usufruir dessa informação, é necessário criar esse campo no Adobe Campa
 
 Se você usar uma tabela de destinatário personalizada, também precisará executar essa operação.
 
-Para obter informações mais detalhadas sobre como criar um novo campo, consulte a [documentação sobre edição de esquema](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).
+Para obter informações mais detalhadas sobre como criar um novo campo, consulte a [documentação sobre edição de esquema](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).
 
 >[!IMPORTANT]
 >
@@ -88,7 +88,7 @@ Para obter informações mais detalhadas sobre como criar um novo campo, consult
 
    ![](assets/privacy-ccpa-3.png)
 
-1. Clique no nó **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** do explorer. Em **[!UICONTROL Recipient (nms)]**, em “Pacote geral”, adicione um elemento `<input>` e use, para o valor xpath, o caminho relativo definido na etapa 2. Para obter mais informações sobre identificação de formulário, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).
+1. Clique no nó **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** do explorer. Em **[!UICONTROL Recipient (nms)]**, em “Pacote geral”, adicione um elemento `<input>` e use, para o valor xpath, o caminho relativo definido na etapa 2. Para obter mais informações sobre identificação de formulário, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>
@@ -114,7 +114,7 @@ Você deve garantir que nunca venderá a terceiros as informações pessoais de 
 
    ![](assets/privacy-ccpa-5.png)
 
-1. Configure a lista de destinatários para exibir a coluna de recusas. Para saber como configurar a lista, consulte a [documentação detalhada](../../platform/using/adobe-campaign-ui-lists.md#configuring-lists).
+1. Configure a lista de destinatários para exibir a coluna de recusas. Para saber como configurar a lista, consulte a [documentação detalhada](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/ui-settings#customize-lists){target="_blank"} (documentação do Campaign v8).
 
    ![](assets/privacy-ccpa-6.png)
 

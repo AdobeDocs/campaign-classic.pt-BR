@@ -41,10 +41,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 69%
+source-wordcount: '565'
+ht-degree: 67%
 ---
 # Avançado: logs de entrega personalizados {#customize-delivery-logs}
 
@@ -139,7 +139,7 @@ Para fazer isso, acesse os logs da entrega e adicione a coluna &quot;Identificad
 
 >[!NOTE]
 >
->Para saber como configurar listas na interface do Campaign Classic, consulte [esta página](../../platform/using/adobe-campaign-workspace.md).
+>Para saber como configurar listas na interface do Campaign Classic, consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} (documentação do Campaign v8).
 
 Abaixo está o que você deve ver na guia **[!UICONTROL Delivery]** após as modificações:
 
