@@ -85,7 +85,7 @@ Para que essa modificação do esquema de dados possa ser visualizada no **Formu
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Configure sua lista de entrega e seus seed addresses. Consulte [Identificar as populações do target](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message){target="_blank"} (documentação do Campaign v8).
+1. Configure sua lista de entrega e seus seed addresses. Consulte [Identificar as populações do target](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/create-message){target="_blank"} (documentação do Campaign v8).
 
    Neste exemplo, o usuário seleciona usuários cujo **gênero literário favorito** é ficção científica como a principal população de destino.
 

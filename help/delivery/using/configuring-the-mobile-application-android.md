@@ -68,7 +68,7 @@ As principais etapas são:
 1. [Criação do aplicativo móvel no Campaign](#creating-android-app)
 1. [Extensão do esquema do aplicativo com dados adicionais](#extend-subscription-schema)
 
-Você poderá [criar uma notificação avançada do Android](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"} (documentação do Campaign v8).
+Você poderá [criar uma notificação avançada do Android](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"} (documentação do Campaign v8).
 
 >[!IMPORTANT]
 >
@@ -135,7 +135,7 @@ Depois de criar o serviço, é necessário criar o aplicativo Android:
 
    ![](assets/nmac_android.png)
 
-1. Verifique se a mesma **[!UICONTROL Integration key]** está definida no Adobe Campaign e no código do aplicativo por meio do SDK. <!--For more on this, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
+1. Verifique se a mesma **[!UICONTROL Integration key]** está definida no Adobe Campaign e no código do aplicativo por meio do SDK. <!--For more on this, refer to [this section](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
 
    >[!NOTE]
    >
@@ -195,10 +195,10 @@ Abaixo estão os nomes de payload do FCM para personalizar ainda mais sua notifi
 
 É necessário estender o **appsubscriptionRcp** para definir campos adicionais para armazenar parâmetros do aplicativo no banco de dados do Campaign. Esses campos serão usados para personalização, por exemplo. Para isso:
 
-1. Crie uma extensão do esquema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** e defina os novos campos. Saiba mais sobre a extensão de esquema em [esta página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8)
+1. Crie uma extensão do esquema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** e defina os novos campos. Saiba mais sobre a extensão de esquema em [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8)
 
 1. Defina o mapeamento na guia **[!UICONTROL Subscription parameters]**.
 
    >[!CAUTION]
    >
-   >Verifique se os nomes da configuração da guia **[!UICONTROL Subscription parameters]** são iguais aos do código do aplicativo móvel. <!--Refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
+   >Verifique se os nomes da configuração da guia **[!UICONTROL Subscription parameters]** são iguais aos do código do aplicativo móvel. <!--Refer to [this section](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
