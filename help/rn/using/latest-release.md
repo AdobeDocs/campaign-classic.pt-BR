@@ -35,20 +35,50 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 63ece0ce7bfca75468776da84e2eac8b34b13af8
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 98%
+source-wordcount: '1449'
+ht-degree: 90%
 ---
 # Versão mais recente {#latest-release}
 
 Esta página lista novos recursos, melhorias e correções que vêm com a **versão mais recente do Campaign Classic v7**. Cada nova build vem com um status que é materializado por uma cor. Saiba mais sobre os status de build do Campaign Classic v7 [nesta página](rn-overview.md).
 
+## Versão 7.4.5 {#release-7-4-5}
+
+### Compilação 9420 {#build-9420}
+
+[!BADGE Disponibilidade geral]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade geral"}
+
+_15 de outubro de 2026_
+
+#### Correções {#fixes-7-4-5}
+
+* Correção de um problema em que a conta externa do Analytics podia falhar com um erro &quot;Desfeito&quot; (410). (NEO-99019)
+* Correção de um problema em que algumas entregas podiam permanecer presas no status de personalização pendente mesmo que as mensagens correspondentes fossem enviadas com êxito. (NEO-94471)
+* Correção de um problema em que um mecanismo de bloqueio interno podia entrar em um loop de repetição e causar alto uso do CPU no servidor. (NEO-94845)
+* Correção de um problema em que as atualizações do modelo de dados podiam falhar intermitentemente. (NEO-84347, NEO-84824)
+* Correção de um problema em que um erro de &quot;Falha na verificação de spam&quot; podia ser exibido incorretamente ao criar ou editar um delivery. (NEO-53888)
+* Correção de um problema em que os recipients não eram colocados em quarentena como esperado após devoluções temporárias recorrentes. (NEO-94422)
+
 ## Versão 7.4.4 {#release-7-4-4}
+
+### Build 9403 {#build-9403}
+
+[!BADGE Disponibilidade geral]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade geral"}
+
+_15 de outubro de 2026_
+
+#### Melhorias de segurança {#security-7-4-4-9403}
+
+A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que corrigem vulnerabilidades críticas. Recomendamos que os clientes em implantações locais e híbridas instalem as atualizações o mais rápido possível. As instâncias hospedadas pela Adobe já foram corrigidas e não exigem nenhuma ação do cliente.
+
+É necessário reiniciar o servidor do Adobe Campaign (nlserver) para carregar a build e concluir a implantação. A correção fica ativa por padrão depois de reiniciada.
+
 
 ### Compilação 9402 {#build-9402}
 
-[!BADGE Disponibilidade geral]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade geral"}
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _11 de setembro de 2026_
 
@@ -60,7 +90,7 @@ A Adobe lançou atualizações de segurança para o Adobe Campaign Classic que c
 
 ### Build 9401 {#build-9401}
 
-[!BADGE Disponibilidade geral]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade geral"}
+[!BADGE Obsoleto]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Obsoleto"}
 
 _25 de agosto de 2026_
 
