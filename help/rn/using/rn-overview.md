@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
+source-git-commit: f079b19ac78b331499a6f3cf5fcc21e55827998c
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 100%
+source-wordcount: '1204'
+ht-degree: 86%
 ---
 # Atualizações da versão {#rn-overview}
 
@@ -80,6 +80,16 @@ O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualiz
 > Cada build é cumulativa: inclui todos os recursos, melhorias e correções fornecidos em builds anteriores da mesma versão, além de suas próprias alterações. Não é necessário instalar cada build intermediária para se beneficiar das correções anteriores. A instalação da build mais recente o atualiza com tudo incluído nas anteriores.
 
 Como cliente hospedado, você se beneficia automaticamente da atualização com a última build estável, sem realizar nenhuma ação. Saiba mais na [seção de Atualização anual](#yearly-upgrade). Ao migrar de uma build antiga, a Adobe recomenda atualizar primeiro para essa build.
+
+## Hotfixes {#hotflixes}
+
+Em casos excepcionais, a Adobe pode fornecer uma correção específica do cliente para resolver um problema antes que uma correção esteja disponível em uma versão padrão. As solicitações de Hotfix são avaliadas caso a caso e não fazem parte do ciclo de lançamento padrão.
+
+As solicitações de Hotfix devem ser acionadas pelo Atendimento ao cliente da Adobe. Se aprovada, uma correção é preparada para o cliente afetado e a build do produto. Uma correção não é uma versão geral para todos os clientes; a Adobe pode aprovar o compartilhamento dela com outros clientes afetados após a revisão.
+
+Os detalhes do hotfix podem não ser incluídos nas notas de versão públicas quando ele é entregue. O Adobe pode incluir posteriormente uma correção em uma versão padrão para a versão aplicável. A inclusão e o tempo não são garantidos. Consulte as notas de versão para ver as alterações incluídas em cada versão padrão.
+
+Esse processo de hotfix específico do cliente é separado da política de patches de segurança críticos descrita acima, sob a qual a Adobe pode aplicar patches de segurança críticos a ambientes hospedados sem aviso prévio.
 
 ### Correção de segurança para ambientes hospedados {#security-patching}
 
