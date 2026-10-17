@@ -92,7 +92,7 @@ As tarefas de manutenção regulares incluem:
 
 >[!NOTE]
 >
->Para usuários do Campaign v8 Managed Cloud Services, a manutenção do banco de dados e os workflows técnicos são monitorados e gerenciados pela Adobe. Concentre-se no monitoramento específico de entrega, conforme descrito na [Documentação de monitoramento de entregas do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"}.
+>Para usuários do Campaign v8 Managed Cloud Services, a manutenção do banco de dados e os workflows técnicos são monitorados e gerenciados pela Adobe. Concentre-se no monitoramento específico de entrega, conforme descrito na [Documentação de monitoramento de entregas do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"}.
 
 ## Solução de problemas de entrega {#troubleshooting}
 
