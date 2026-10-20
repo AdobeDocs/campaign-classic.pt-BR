@@ -41,7 +41,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2105'
 ht-degree: 100%
 ---
@@ -210,7 +210,7 @@ Sim. O servidor é desligado durante uma atualização para garantir que a integ
 
 ## Com quem devo entrar em contato para abrir o tíquete de atualização de build?
 
-Se você enfrentar problemas após uma atualização de build, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). O Atendimento ao cliente agendará as datas de criação e abrirá tíquetes relacionados à atualização da build.
+Se você enfrentar problemas após uma atualização de build, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). O Atendimento ao cliente agendará as datas de criação e abrirá tíquetes relacionados à atualização da build.
 
 Saiba mais sobre as [opções de Ajuda e Suporte para o Campaign Classic](../../campaign-classic-home.md)
 

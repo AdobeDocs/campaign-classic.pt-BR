@@ -42,9 +42,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '368'
-ht-degree: 88%
+ht-degree: 100%
 ---
 # Introdução à configuração do aplicativo
 
@@ -56,7 +56,7 @@ Para enviar notificações por push no Adobe Campaign, é necessário:
 
 * Criar um serviço de informação do tipo **[!UICONTROL Mobile application]** para o aplicativo para dispositivos móveis Neotrips. Consulte [esta seção para iOS](configuring-the-mobile-application.md#configuring-ios-service). e [esta seção para Android](configuring-the-mobile-application-android.md#configuring-android-service).
 * Adicionar as versões iOS e Android do aplicativo a este serviço.
-* Crie uma entrega para [iOS](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"} (documentação do Campaign v8) e [Android](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"} (documentação do Campaign v8).
+* Criar uma entrega para [iOS](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"} (documentação do Campaign v8) e [Android](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"} (documentação do Campaign v8).
 
 ![](assets/nmac_service_diagram.png)
 
@@ -70,7 +70,7 @@ Para enviar notificações por push no Adobe Campaign, é necessário:
 
 ![](assets/do-not-localize/how-to-video.png) [Saiba como instalar o pacote de aplicativo para dispositivos móveis em vídeo](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=pt-BR#sending-messages)
 
-Como um cliente híbrido/hospedado, entre em contato com a equipe de [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para acessar o canal de notificação por push no Campaign.
+Como um cliente híbrido/hospedado, entre em contato com a equipe de [Atendimento ao cliente da Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para acessar o canal de notificação por push no Campaign.
 
 Como cliente local, você precisa instalar um pacote integrado.
 

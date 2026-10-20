@@ -35,7 +35,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '547'
 ht-degree: 100%
 ---
@@ -81,7 +81,7 @@ O pacote **[!UICONTROL AEM integration]** define o operador **[!UICONTROL aemser
 >
 >É altamente recomendável criar uma zona de segurança dedicada ao AEM para evitar problemas de segurança. Para obter mais informações, consulte o [Guia](../../installation/using/security-zones.md) de instalação.
 
-Se a sua instância do Campaign for hospedada pela Adobe, entre em contato com a equipe de [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Se você estiver usando o Campaign no local, siga as etapas abaixo:
+Se a sua instância do Campaign for hospedada pela Adobe, entre em contato com a equipe de [Atendimento ao cliente da Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Se você estiver usando o Campaign no local, siga as etapas abaixo:
 
 1. Abra o arquivo de configuração **serverConf.xml**.
 1. Acesse o atributo **allowUserPassword** da zona de segurança selecionada e configure-o como **true**.

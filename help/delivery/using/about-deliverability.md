@@ -41,9 +41,9 @@ topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '205'
-ht-degree: 79%
+ht-degree: 100%
 ---
 # O que é capacidade de entrega{#about-deliverability}
 

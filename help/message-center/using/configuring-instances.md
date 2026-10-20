@@ -35,9 +35,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1274'
-ht-degree: 97%
+ht-degree: 100%
 ---
 # Configurar instâncias {#creating-a-shared-connection}
 
@@ -61,7 +61,7 @@ Todas as etapas necessárias para configurar e conectar as instâncias de contro
 
 ## Configurar a instância de controle {#control-instance}
 
-Para conectar a instância de controle e as instâncias de execução, você primeiro precisa criar e configurar um **[!UICONTROL Execution instance]** tipo de conta externa **na instância de controle**. Portanto, uma vez [publicado](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template#publish-message-template){target="_blank"} (documentação do Campaign v8), os modelos de mensagem transacional podem ser implantados nas instâncias de execução.
+Para conectar a instância de controle e as instâncias de execução, você primeiro precisa criar e configurar um **[!UICONTROL Execution instance]** tipo de conta externa **na instância de controle**. Portanto, uma vez [publicados](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template#publish-message-template){target="_blank"} (documentação do Campaign v8), os modelos de mensagem transacional podem ser implantados nas instâncias de execução.
 
 Se você estiver usando várias instâncias de execução, será necessário criar quantas contas externas houver de instâncias de execução.
 

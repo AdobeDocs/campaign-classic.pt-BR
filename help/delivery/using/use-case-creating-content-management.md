@@ -33,9 +33,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1211'
-ht-degree: 95%
+ht-degree: 100%
 ---
 # Caso de uso: criar gerenciamento de conteúdo{#use-case-creating-content-management}
 
@@ -82,7 +82,7 @@ Um esquema de dados é um documento XML associado ao conteúdo. Ele descreve a e
 
 >[!NOTE]
 >
->Para obter mais informações sobre como criar e configurar schemas de dados no Adobe Campaign, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).
+>Para saber mais sobre como criar e configurar esquemas de dados no Adobe Campaign, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).
 >
 >Os elementos de configuração específicos para o gerenciamento de conteúdo são detalhados em [Esquemas de dados](data-schemas.md).
 

@@ -44,9 +44,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1814'
-ht-degree: 97%
+ht-degree: 100%
 ---
 # Recursos descontinuados e removidos {#deprecated-and-removed-features}
 
@@ -181,7 +181,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   </tr> 
    <tr> 
    <td>Canal móvel - Mensagens de push MMS e WAP</td>
-   <td>A partir da versão 18.4 do Campaign, os canais MMS e Wap Push não estarão mais disponíveis. Como substituição, você pode usar <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/sms/sms" target="_blank">SMS</a> (documentação do Campaign v8) e <a href="../../delivery/using/about-mobile-app-channel.md">Push</a> deliveries.</td>
+   <td>A partir da versão 18.4 do Campaign, os canais MMS e Wap Push não estarão mais disponíveis. Como alternativa, você pode utilizar as entregas de <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/sms/sms" target="_blank">SMS</a> (documentação do Campaign v8) e <a href="../../delivery/using/about-mobile-app-channel.md">por push</a>.</td>
   </tr> 
    <tr> 
    <td>Canal móvel - LINE v1</td>
@@ -250,7 +250,7 @@ A partir da versão do primeiro trimestre 19.1, o Adobe Campaign não é mais co
 
 A Adobe não oferece suporte aos seguintes mecanismos de banco de dados, pois foram descontinuados pelo editor. Os clientes que executam essas versões precisam atualizar para a versão mais recente ou mudar para outra.
 
-Consulte a [Matriz de compatibilidade do Campaign &#x200B;](../../rn/using/compatibility-matrix.md) para acessar a lista de versões compatíveis.
+Consulte a [Matriz de compatibilidade do Campaign ](../../rn/using/compatibility-matrix.md) para acessar a lista de versões compatíveis.
 
 **FEDERATED DATA ACCESS (FDA)**
 

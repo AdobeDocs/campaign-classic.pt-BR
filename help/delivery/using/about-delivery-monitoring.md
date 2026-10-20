@@ -46,9 +46,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 91%
+ht-degree: 100%
 ---
 # Introdução ao monitoramento de entrega {#about-delivery-monitoring}
 
@@ -104,13 +104,13 @@ No Adobe Campaign Classic, o **Monitoramento da capacidade de entrega** é geren
   * **[!UICONTROL Hard bounces]** indica a qualidade dos dados. Esse número deve ser inferior a 2%.
   * **[!UICONTROL Soft bounces]** indica a reputação. Este número não deve ser superior a 10% para qualquer ISP.
 
-  Para obter mais informações, consulte a seção [Estatísticas de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-statistics){target="_blank"} (documentação do Campaign v8).
+  Para obter mais informações, consulte a seção [Estatísticas da entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-statistics){target="_blank"} (documentação do Campaign v8).
 
 #### Diretrizes de monitoramento {#monitoring-guidelines}
 
 **Para instalações locais**, estas são algumas diretrizes adicionais sobre o monitoramento da capacidade de entrega:
 
-* Verifique regularmente a [taxa de transferência de entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (documentação do Campaign v8) de toda a plataforma para verificar se ela é consistente com a configuração original.
+* Verifique regularmente a [taxa de transferência da entrega](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (documentação do Campaign v8) de toda a plataforma para verificar se ela é consistente com a configuração original.
 * Verifique se as [tentativas](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure) estão configuradas corretamente (30 minutos para o período de nova tentativa e mais de 20 tentativas) nos modelos da entrega.
 * Verifique regularmente se a caixa de [rejeição](delivery-failures-quarantine.md#bounce-mail-management) está acessível e se a conta não está prestes a expirar.
 * Verifique a taxa de transferência de cada delivery, que pode ser acessada no [painel de delivery](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, para garantir que ela seja consistente com a validade do conteúdo do delivery (por exemplo, &quot;vendas rápidas&quot; devem ser entregues em minutos, não em dias).

@@ -27,13 +27,13 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 60%
+ht-degree: 100%
 ---
 # Testar modelos de mensagem transacional {#testing-message-templates}
 
-Quando o [modelo de mensagem](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (documentação do Campaign v8) estiver pronto, siga as etapas abaixo para pré-visualizá-lo e testá-lo.
+Quando seu [modelo de mensagem](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (documentação do Campaign v8) estiver pronto, siga as etapas abaixo para visualizá-lo e testá-lo.
 
 Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber como adicionar seed addresses, visualizar uma mensagem transacional e enviar uma prova, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}.
 
@@ -47,7 +47,7 @@ O objetivo desses dados é testar suas mensagens antes da entrega final. Essas m
 
 ![](assets/messagecenter_create_custo_006.png)
 
-Essas informações permitem personalizar o conteúdo da mensagem usando marcas de personalização (para obter mais informações, consulte [Criar o conteúdo da mensagem](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template#create-message-content){target="_blank"} (documentação do Campaign v8)).
+Essas informações permitem personalizar o conteúdo da mensagem usando tags de personalização (para obter mais informações, consulte [Criar o conteúdo da mensagem](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/transactional-template#create-message-content){target="_blank"} na documentação do Campaign v8).
 
 1. Publicar o modelo de mensagem transacional.
 

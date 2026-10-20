@@ -36,9 +36,9 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
-ht-degree: 95%
+ht-degree: 100%
 ---
 # Práticas recomendadas de importação e exportação {#import-export-best-practices}
 

@@ -9,7 +9,7 @@ sub-product: adobe campaign classic
 type: Documentation
 nudge: false
 source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1657'
 ht-degree: 100%
 ---
@@ -67,7 +67,7 @@ ht-degree: 100%
   + [Introdução a mensagens](delivery/using/communication-channels.md)
   + {hide-from-toc}[Configurações de entrega – OCULTO](delivery/using/delivery-settings.md)
   + Início rápido {#key-steps-when-creating-a-delivery}
-    + {hide-from-toc}[Enviar a entrega – OCULTO](delivery/using/steps-sending-the-delivery.md)
+    + {hide-from-toc}[Enviar a entrega - OCULTO](delivery/using/steps-sending-the-delivery.md)
   + [Enviar emails](delivery/using/about-email-channel.md)
   + Enviar SMS {#sending-messages-on-mobiles}
     + Configurar canal de SMS {#sms-set-up}

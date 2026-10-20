@@ -25,9 +25,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
-ht-degree: 95%
+ht-degree: 100%
 ---
 # Regras de apresentação{#presentation-rules}
 
@@ -113,7 +113,7 @@ Queremos enviar uma apresentação de oferta que pertence à categoria Canadá. 
 
    ![](assets/offer_typology_example_016.png)
 
-1. Insira as ofertas no corpo da mensagem e envie a entrega. Para obter mais informações, consulte [Sobre canais de saída](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentação do Campaign v8).
+1. Insira as ofertas no corpo da mensagem e envie a entrega. Para saber mais sobre isso, consulte [Sobre os canais de saída](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentação do Campaign v8).
 
    O destinatário recebeu a oferta para a qual está qualificado.
 

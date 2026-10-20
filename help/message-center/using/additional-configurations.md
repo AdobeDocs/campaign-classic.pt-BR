@@ -29,9 +29,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '884'
-ht-degree: 94%
+ht-degree: 100%
 ---
 # Configurações adicionais {#mc-additional-configurations}
 
@@ -39,7 +39,7 @@ ht-degree: 94%
 
 ## Monitorar limites {#monitoring-thresholds}
 
-Você pode configurar os limites de aviso (laranja) e os limites de alerta (vermelho) dos indicadores que aparecem nos **relatórios de nível de serviço do Centro de Mensagens** e **tempo de processamento do Centro de Mensagens** (consulte [Relatórios de mensagens transacionais de acesso](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (documentação do Campaign v8)).
+Você pode configurar os limites de aviso (laranja) e os limites de alerta (vermelho) dos indicadores que aparecem nos relatórios de **nível de serviço** e de **tempo de processamento** do Centro de mensagens (consulte [Acessar relatórios de mensagens transacionais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} na documentação do Campaign v8).
 
 Para fazer isso, siga as etapas abaixo:
 
