@@ -133,7 +133,7 @@ No exemplo a seguir, adicionamos **mediaURl** e **mediaExt** para criar notifica
 
 1. Clique em **[!UICONTROL Next]** para configurar o aplicativo de desenvolvimento.
 
-1. Verifique se a mesma **[!UICONTROL Integration key]** está definida no Adobe Campaign e no código do aplicativo por meio do SDK. <!--For more on this, refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> Essa chave de integração, que é específica para cada aplicativo, permite vincular o aplicativo móvel à plataforma do Adobe Campaign.
+1. Verifique se a mesma **[!UICONTROL Integration key]** está definida no Adobe Campaign e no código do aplicativo por meio do SDK. <!--For more on this, refer to [this page](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> Essa chave de integração, que é específica para cada aplicativo, permite vincular o aplicativo móvel à plataforma do Adobe Campaign.
 
    >[!NOTE]
    >
