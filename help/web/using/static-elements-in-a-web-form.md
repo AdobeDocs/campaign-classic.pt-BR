@@ -77,7 +77,7 @@ Para adicionar um link de hipertexto, vá para **[!UICONTROL Static elements]** 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * O **[!UICONTROL Label]** é o conteúdo do link de hipertexto como ele será exibido na página do formulário.
-* O **[!UICONTROL URL]** é o endereço desejado, por exemplo: [https://www.adobe.com](https://www.adobe.com) no caso de um site ou [info@adobe.com](mailto:info@adobe.com) para enviar uma mensagem.
+* O **[!UICONTROL URL]** é o endereço desejado, por exemplo: [https://www.adobe.com/br](https://www.adobe.com/br) no caso de um site ou [info@adobe.com](mailto:info@adobe.com) para enviar uma mensagem.
 * O campo **[!UICONTROL Window]** permite selecionar o modo de exibição do link no caso de um site. Você pode optar por abrir o link em uma nova janela, a janela atual ou outra janela.
 * Você pode adicionar uma ToolTip, como mostrado abaixo:
 
