@@ -37,7 +37,7 @@ subfeature_v2:
   - id: d0dbac2b-cbd2-42b3-956e-60af02966728
     internal-label: Encryption
 source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '835'
 ht-degree: 100%
 ---
@@ -61,7 +61,7 @@ Para fazer isso:
 
 1. Caso a instalação do Adobe Campaign seja no local, instale o utilitário que deseja usar (por exemplo: GPG, GZIP) e as chaves necessárias (chave de criptografia) no servidor de aplicativos.
 
-   Caso sua instalação do Adobe Campaign seja hospedada pela Adobe, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para que os utilitários necessários sejam instalados no servidor.
+   Caso sua instalação do Adobe Campaign seja hospedada pela Adobe, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para que os utilitários necessários sejam instalados no servidor.
 
 Em seguida, você pode usar os comandos de pré-processamento desejados em seus fluxos de trabalho:
 
@@ -118,7 +118,7 @@ As etapas para executar esse caso de uso são as seguintes:
 
    >[!NOTE]
    >
-   >Se forem necessárias alterações nos comandos disponíveis, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ajustar as configurações de preProcessCommand.
+   >Se forem necessárias alterações nos comandos disponíveis, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) para ajustar as configurações de preProcessCommand.
    >
    >Se estiver trabalhando com uma implantação híbrida, você poderá configurar esses comandos diretamente do arquivo de configuração do servidor (serverConf.xml). [Saiba como configurar comandos de pré-processamento no arquivo de configuração do servidor](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 

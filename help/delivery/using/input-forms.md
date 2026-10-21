@@ -39,15 +39,15 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '892'
-ht-degree: 89%
+ht-degree: 100%
 ---
 # Formulários de entrada{#input-forms}
 
 Abaixo estão alguns princípios gerais sobre o uso de formulários de entrada no Adobe Campaign.
 
-Os Forms estão detalhados em [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).
+Os formulários estão detalhados [nesta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).
 
 ## Estrutura do formulário {#form-structure}
 
@@ -105,7 +105,7 @@ Por padrão, cada campo é exibido em uma linha e ocupa todo o espaço disponív
 
 A disposição dos controles em relação uns aos outros parece com a organização usada em tabelas HTML, com a possibilidade de dividir um controle em várias colunas, entrelaçar elementos ou especificar a ocupação do espaço disponível. Entretanto, lembre-se de que a formatação somente autoriza a distribuição de proporções; não é possível especificar dimensões fixas para um objeto.
 
-Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} (documentação do Campaign v8).
+Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} (documentação do Campaign v8).
 
 ## Controles de tipo de lista {#list-type-controls}
 
@@ -214,7 +214,7 @@ Use os botões da barra de ferramentas para adicionar ou excluir elementos da li
 
 Os containeres permitem agrupar um conjunto de controles. Eles existem por meio do elemento **`<container>`**. Eles já foram usados para formatar controles em várias colunas e para o controle da lista de guias.
 
-Para obter mais informações sobre containeres e como usá-los em formulários de entrada, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (documentação do Campaign v8).
+Para obter mais informações sobre containers e como usá-los em formulários de entrada, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (documentação do Campaign v8).
 
 ## Edição de formulários {#editing-forms}
 
@@ -226,4 +226,4 @@ A guia **[!UICONTROL Preview]** permite exibir o formulário de entrada:
 
 ![](assets/d_ncs_content_form13.png)
 
-Leia mais sobre [edição de formulários](../../configuration/using/editing-forms.md) e [estrutura de formulário](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).
+Leia mais sobre [editar formulários](../../configuration/using/editing-forms.md) e [estrutura de formulário](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).

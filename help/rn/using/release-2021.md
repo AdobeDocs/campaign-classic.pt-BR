@@ -42,9 +42,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2716'
-ht-degree: 97%
+ht-degree: 100%
 ---
 # Versões de 2021{#release-2021}
 
@@ -162,7 +162,7 @@ _5 de junho de 2021_
 <li><p>Suporte para API de registro de parceiro LINE</p></li>
 <li><p>Suporte para nova tentativa de envio de mensagem em caso de erro do lado do servidor LINE ou tempo-limite da rede</p></li>
 </ul>
-<p>Para obter mais informações consulte a <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">documentação detalhada</a> (documentação do Campaign v8).</p>
+<p>Para obter mais informações, consulte a <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">documentação detalhada</a> (documentação do Campaign v8).</p>
 </td> 
 </tr> 
 </tbody> 

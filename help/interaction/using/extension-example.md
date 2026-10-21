@@ -27,9 +27,9 @@ subfeature_v2:
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
 source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '165'
-ht-degree: 85%
+ht-degree: 100%
 ---
 # Exemplo de extensão{#extension-example}
 

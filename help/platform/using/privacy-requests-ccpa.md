@@ -42,9 +42,9 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '626'
-ht-degree: 87%
+ht-degree: 100%
 ---
 # Recusar a venda de informações pessoais (CCPA) {#sale-of-personal-information-ccpa}
 
@@ -70,7 +70,7 @@ Para usufruir dessa informação, é necessário criar esse campo no Adobe Campa
 
 Se você usar uma tabela de destinatário personalizada, também precisará executar essa operação.
 
-Para obter informações mais detalhadas sobre como criar um novo campo, consulte a [documentação sobre edição de esquema](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).
+Para obter mais informações sobre como criar um novo campo, consulte a [documentação sobre adição de esquema](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).
 
 >[!IMPORTANT]
 >
@@ -88,7 +88,7 @@ Para obter informações mais detalhadas sobre como criar um novo campo, consult
 
    ![](assets/privacy-ccpa-3.png)
 
-1. Clique no nó **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** do explorer. Em **[!UICONTROL Recipient (nms)]**, em “Pacote geral”, adicione um elemento `<input>` e use, para o valor xpath, o caminho relativo definido na etapa 2. Para obter mais informações sobre identificação de formulário, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).
+1. Clique no nó **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** do explorer. Em **[!UICONTROL Recipient (nms)]**, em “Pacote geral”, adicione um elemento `<input>` e use, para o valor xpath, o caminho relativo definido na etapa 2. Para obter mais informações sobre a identificação de um formulário, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentação do Campaign v8).
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>

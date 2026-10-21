@@ -40,9 +40,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '907'
-ht-degree: 95%
+ht-degree: 100%
 ---
 # Configuração adicional{#sms-properties}
 

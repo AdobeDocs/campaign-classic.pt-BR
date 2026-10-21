@@ -42,9 +42,9 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
 source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '241'
-ht-degree: 82%
+ht-degree: 100%
 ---
 # Introdução ao Campaign Classic{#about-adobe-campaign-classic}
 
@@ -57,7 +57,7 @@ O Adobe Campaign permite coordenar a criação de campanhas de marketing convers
 
 >[!TAB Introdução ao Campaign]
 
-Para saber como começar a usar o console do cliente Adobe Campaign e sua interface do usuário, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Para saber como começar a usar o console do cliente do Adobe Campaign e sua interface, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 [![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
@@ -69,9 +69,9 @@ Para saber como começar a usar o console do cliente Adobe Campaign e sua interf
 
 >[!TAB Navegar pela interface do Campaign]
 
-* Conheça a interface do usuário do Adobe Campaign [nesta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} (documentação do Campaign v8).
+* Conheça a interface do Adobe Campaign [nesta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} (documentação do Campaign v8).
 
-* Saiba como trabalhar com o [Campaign Explorer](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target="_blank"} (documentação do Campaign v8).
+* Saiba como trabalhar com o [Explorador do Campaign](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target="_blank"} (documentação do Campaign v8).
 
 >[!ENDTABS]
 

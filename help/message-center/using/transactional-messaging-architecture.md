@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1137'
-ht-degree: 94%
+ht-degree: 100%
 ---
 # Arquitetura de mensagens transacionais {#transactional-messaging-architecture}
 
@@ -103,7 +103,7 @@ No entanto, se iniciou um projeto de mensagens transacionais no canal de email e
 >Esse procedimento só se aplica a clientes que usam um Windows NLServer instalado na mesma máquina em que estão trabalhando.
 
 1. Instale o canal necessário, como, por exemplo, o **Canal móvel**, por meio do assistente de importação de pacotes (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
-1. Faça uma importação de arquivo (**[!UICONTROL Tools > Advanced > Import package... > File]**) e selecione o arquivo **datakitnms &#x200B;**`[Your language]`**packagemessageCenter.xml**.
+1. Faça uma importação de arquivo (**[!UICONTROL Tools > Advanced > Import package... > File]**) e selecione o arquivo **datakitnms **`[Your language]`**packagemessageCenter.xml**.
 1. No **[!UICONTROL XML content of the data to import]**, mantenha somente o modelo da entrega que corresponde ao canal adicionado. Por exemplo, se o **Canal móvel** foi adicionado, mantenha somente o elemento de **entidades** que corresponde ao **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Caso tenha adicionado o **Canal de aplicativo móvel**, mantenha somente a **mensagem transacional do iOS** (iosTriggerMessage) e a **mensagem transacional do Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
@@ -201,7 +201,7 @@ Para usar o módulo de mensagem transacional com o LINE, os seguintes elementos 
 
 * Instale o pacote **[!UICONTROL LINE Connect]** em ambas as instâncias.
 * Instale o pacote **[!UICONTROL Transactional message control]** na instância de marketing e o pacote **[!UICONTROL Transactional message execution]** na instância de execução.
-* Cria uma **conta externa** e o **serviço** LINE em ambas as instâncias com nomes idênticos para que sejam sincronizados. Para obter mais informações sobre como criar uma conta externa e o serviço LINE, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/other-channels/line#setting-up-line-channel){target="_blank"} (documentação do Campaign v8).
+* Cria uma **conta externa** e o **serviço** LINE em ambas as instâncias com nomes idênticos para que sejam sincronizados. Para obter mais informações sobre como criar uma conta externa e serviço LINE, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/other-channels/line#setting-up-line-channel){target="_blank"} (documentação do Campaign v8).
 
 Em seguida, do **[!UICONTROL Explorer]**, em **[!UICONTROL External account]** > **[!UICONTROL Platform]**, é necessário configurar as contas externas diferentes em ambas as instâncias:
 

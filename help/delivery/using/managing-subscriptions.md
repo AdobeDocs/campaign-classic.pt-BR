@@ -39,9 +39,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1125'
-ht-degree: 99%
+ht-degree: 100%
 ---
 # Gerenciar subscrições{#managing-subscriptions}
 
@@ -156,7 +156,7 @@ Para registrar destinatários para um serviço de informação, você pode:
 * Subscrever automaticamente um conjunto de assinantes a este serviço. A lista de destinatários pode vir de uma operação de filtragem, grupo, pasta, importação ou seleção direta usando o mouse. Para inscrever esses destinatários, selecione os perfis e clique com o botão direito do mouse. Selecione **[!UICONTROL Actions > Subscribe selection to a service...]**, o serviço desejado e inicie a operação.
 * Importar destinatários e inscrevê-los automaticamente em um serviço de informação. Para isso, selecione o serviço em questão na última etapa do assistente de importação.
 
-  Para obter mais informações, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/import){target="_blank"} (documentação do Campaign v8).
+  Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/data/import){target="_blank"} (documentação do Campaign v8).
 
 * Usar um formulário da Web para que os destinatários possam subscrever-se a um serviço.
 

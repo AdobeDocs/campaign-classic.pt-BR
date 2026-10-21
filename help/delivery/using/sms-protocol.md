@@ -42,9 +42,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4785'
-ht-degree: 98%
+ht-degree: 100%
 ---
 # Protocolo e configurações do conector de SMS {#sms-connector-protocol}
 
@@ -53,7 +53,7 @@ ht-degree: 98%
 >Por meio desse documento, todas as referências a detalhes sobre o protocolo, nomes de campos e valores se referem à [especificação SMPP 3.4](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
 >
 
-Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre as configurações do conector SMS, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}.
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre as configurações do conector de SMS, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}.
 
 [![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}
 
@@ -181,7 +181,7 @@ Campos de destaque em uma PDU `SUBMIT_SM`:
 
 * **registered_delivery**: informa se um SR é solicitado ou não. O Adobe Campaign sempre define esse sinalizador, exceto para respostas automáticas. Para mensagens de várias partes, o sinalizador é definido somente para a primeira parte. Todas as versões têm o mesmo comportamento.
 
-* **data_coding**: indica a codificação usada no campo de texto. Consulte a seção [codificação de texto SMS](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/sms/sms-channel#sms-text-encoding){target="_blank"} (documentação do Campaign v8) para obter mais informações.
+* **data_coding**: indica a codificação usada no campo de texto. Consulte a seção [Codificação de texto SMS](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/sms/sms-channel#sms-text-encoding){target="_blank"} (documentação do Campaign v8) para obter mais informações.
 
 * **short_message**: o texto da mensagem. Se UDH for usado, isso também conterá o cabeçalho UHD.
 

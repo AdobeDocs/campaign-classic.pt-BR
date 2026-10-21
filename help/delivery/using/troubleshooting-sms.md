@@ -42,7 +42,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3088'
 ht-degree: 100%
 ---
@@ -234,7 +234,7 @@ Com o hexadecimal, é possível diferenciar entre caracteres semelhantes. Um L m
 
 Para converter o unicode em hexadecimal, você pode usar ferramentas online, como o site do [conversor de código Unicode](https://r12a.github.io/app-conversion/). Digite o texto, verifique se não há informações de identificação pessoal, como números de telefone, e clique em **Converter**. Você verá os valores hexadecimais na parte inferior (zona UTF-32).
 
-Ao abrir tíquetes sobre problemas de codificação, para o provedor ou o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), sempre inclua uma versão hexadecimal do que você digita e do que vê.
+Ao abrir tíquetes sobre problemas de codificação, para o provedor ou o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), sempre inclua uma versão hexadecimal do que você digita e do que vê.
 
 **Etapa 3: saiba o que você deve enviar**
 

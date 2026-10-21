@@ -24,9 +24,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
 source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '700'
-ht-degree: 96%
+ht-degree: 100%
 ---
 # Caso de uso: enviar emails transacionais com anexos {#transactional-email-with-attachments}
 
@@ -87,7 +87,7 @@ Para adicionar um anexo de email rapidamente a uma mensagem transacional, siga a
 
 1. Você pode enviar emails por meio de um acionador de mensagem SOAP Na chamada SOAP, há um parâmetro de URL (attachmentURL).
 
-   Para obter mais informações sobre solicitações do SOAP, consulte [Descrição do evento](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/event/event-description){target="_blank"} (documentação do Campaign v8).
+   Para obter mais informações sobre solicitações SOAP, consulte [Descrição do evento](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/real-time/event/event-description){target="_blank"} (documentação do Campaign v8).
 
 1. Ao criar o email, clique em **[!UICONTROL Attachment]**.
 
