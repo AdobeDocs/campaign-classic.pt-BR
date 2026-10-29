@@ -36,9 +36,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 source-git-commit: 63ece0ce7bfca75468776da84e2eac8b34b13af8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1449'
-ht-degree: 91%
+ht-degree: 100%
 ---
 # Versão mais recente {#latest-release}
 
@@ -46,7 +46,7 @@ Esta página lista novos recursos, melhorias e correções que vêm com a **vers
 
 ## Versão 7.4.5 {#release-7-4-5}
 
-### Compilação 9420 {#build-9420}
+### Build 9420 {#build-9420}
 
 [!BADGE Disponibilidade geral]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=pt-BR#rn-statuses" tooltip="Disponibilidade geral"}
 
@@ -54,12 +54,12 @@ _15 de outubro de 2026_
 
 #### Correções {#fixes-7-4-5}
 
-* Correção de um problema em que a conta externa do Analytics podia falhar com um erro &quot;Desfeito&quot; (410). (NEO-99019)
-* Correção de um problema em que algumas entregas podiam permanecer presas no status de personalização pendente mesmo que as mensagens correspondentes fossem enviadas com êxito. (NEO-94471)
-* Correção de um problema em que um mecanismo de bloqueio interno podia entrar em um loop de repetição e causar alto uso do CPU no servidor. (NEO-94845)
-* Correção de um problema em que as atualizações do modelo de dados podiam falhar intermitentemente. (NEO-84347, NEO-84824)
-* Correção de um problema em que um erro de &quot;Falha na verificação de spam&quot; podia ser exibido incorretamente ao criar ou editar um delivery. (NEO-53888)
-* Correção de um problema em que os recipients não eram colocados em quarentena como esperado após devoluções temporárias recorrentes. (NEO-94422)
+* Corrigido um problema em que a conta externa do Analytics podia falhar com um erro “Gone” (410). (NEO-99019)
+* Correção de um problema em que algumas entregas poderiam permanecer presas no status de personalização pendente, mesmo que as mensagens correspondentes tivessem sido enviadas com sucesso. (NEO-94471)
+* Correção de um problema em que um mecanismo de bloqueio interno podia entrar em um loop de repetição e causar alto uso de CPU no servidor. (NEO-94845)
+* Correção de um problema em que as atualizações do modelo de dados poderiam falhar intermitentemente. (NEO-84347, NEO-84824)
+* Correção de um problema em que um erro de “Falha na verificação de spam” podia ser exibido incorretamente ao criar ou editar uma entrega. (NEO-53888)
+* Correção de um problema em que os destinatários não eram colocados em quarentena como esperado após rejeições temporárias recorrentes. (NEO-94422)
 
 ## Versão 7.4.4 {#release-7-4-4}
 
