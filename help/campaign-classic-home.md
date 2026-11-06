@@ -48,7 +48,7 @@ Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Ado
 >[!BEGINTABS]
 
 
->A versão de [!TAB outubro de 2026 está disponível!]
+>[!TAB A versão de  outubro de 2026 está disponível!]
 
 A build do Campaign Classic v7.4.5 - outubro de 2026 (Build 9420) fornece correções para a conta externa do Analytics, deliveries presos no status de personalização pendente, uso do CPU do servidor, falhas intermitentes de atualização do modelo de dados, o erro de verificação de spam na criação de delivery e a quarentena de rejeições temporárias recorrentes.
 
