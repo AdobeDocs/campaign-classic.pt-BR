@@ -40,16 +40,18 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
-workflow-type: ht
-source-wordcount: '781'
-ht-degree: 100%
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 93%
 ---
 # Criar e gerenciar solicitações de privacidade {#privacy-request-ui}
 
-
-
 Esta seção descreve como criar solicitações de Acesso e Exclusão e como elas são processadas pelo Adobe Campaign.
+
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre as tabelas pesquisadas ao processar solicitações de Privacidade, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}.
+
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}
 
 ## Criar uma solicitação de privacidade {#create-privacy-request-ui}
 
@@ -74,24 +76,7 @@ Os fluxos de trabalho técnicos de privacidade são executados uma vez por dia e
 
 ![](assets/privacy-request-download.png)
 
-## Lista de tabelas {#list-of-tables}
-
-Ao executar uma solicitação de privacidade de exclusão ou acesso, o Adobe Campaign pesquisa todos os dados do Titular dos dados com base em **[!UICONTROL Reconciliation value]** em todas as tabelas que tenham um link para a tabela do destinatário (tipo próprio).
-
-Esta é a lista de recursos prontos para utilização que são considerados ao executar solicitações de privacidade:
-
-* Recipients (destinatário)
-* Log de entrega de destinatário (broadLogRcp)
-* Log de rastreamento de destinatário (trackingLogRcp)
-* Log de entrega de evento arquivado (broadLogEventHisto)
-* Conteúdo da lista de destinatário (rcpGrpRel)
-* Apresentação da oferta do visitante (propositionVisitor)
-* Visitantes (visitante)
-* Histórico de inscrições (subHisto)
-* Inscrições (inscrição)
-* Apresentação da oferta do destinatário (propositionRcp)
-
-Se você criou tabelas personalizadas que tenham um link para a tabela do destinatário (tipo próprio), elas também serão consideradas. Por exemplo, se você tiver uma tabela de transações vinculada à tabela do destinatário e uma tabela de detalhes da transação vinculada à tabela de transações, ambas serão consideradas.
+## Solicitações em lote por meio de workflows
 
 >[!IMPORTANT]
 >

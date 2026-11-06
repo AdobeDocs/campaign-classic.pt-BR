@@ -45,24 +45,22 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '4118'
-ht-degree: 1%
+source-wordcount: '3891'
+ht-degree: 2%
 ---
 # Práticas recomendadas do modelo de dados{#data-model-best-practices}
 
 Este documento descreve as principais recomendações ao projetar o modelo de dados do Adobe Campaign.
 
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre as práticas recomendadas do modelo de dados, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}.
+
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}
+
 Para obter uma melhor compreensão das tabelas integradas do Campaign e sua interação, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentação do Campaign v8).
 
 Leia [esta documentação](../../configuration/using/about-schema-reference.md) para começar a usar os esquemas do Campaign. Saiba como configurar esquemas de extensão para estender o modelo de dados conceituais do banco de dados do Adobe Campaign neste documento [este documento](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentação do Campaign v8).
-
-## Visão geral {#overview}
-
-O sistema Adobe Campaign é extremamente flexível e pode ser estendido além da implementação inicial. No entanto, embora as possibilidades sejam infinitas, é essencial tomar decisões sábias e criar bases sólidas para começar a projetar seu modelo de dados.
-
-Este documento fornece casos de uso comuns e práticas recomendadas para saber como arquitetar corretamente sua ferramenta Adobe Campaign.
 
 ## Arquitetura do modelo de dados {#data-model-architecture}
 
@@ -82,23 +80,7 @@ O modelo de dados padrão do Adobe Campaign é apresentado em [este documento](.
 
 >[!NOTE]
 >
->O Adobe Campaign Classic permite criar uma tabela de cliente personalizada. No entanto, na maioria dos casos, é recomendável aproveitar a [Tabela de destinatários](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} padrão (documentação do Campaign v8), que já tem tabelas e recursos adicionais pré-criados.
-
-### Dados para o Adobe Campaign {#data-for-campaign}
-
-Quais dados devem ser enviados para o Adobe Campaign? É essencial determinar os dados necessários para suas atividades de marketing.
-
->[!NOTE]
->
->O Adobe Campaign não é um data warehouse nem uma ferramenta de relatórios. Portanto, não tente importar todos os clientes possíveis e suas informações associadas para o Adobe Campaign, ou importe dados que serão usados apenas para criar relatórios.
-
-Para decidir se um atributo seria necessário ou não no Adobe Campaign, pergunte se ele se enquadra em uma destas categorias:
-
-* Atributo usado para **segmentação**
-* Atributo usado para **processos de gerenciamento de dados** (cálculo agregado por exemplo)
-* Atributo usado para **personalização**
-
-Se não estiver se encaixando em nenhum desses, você provavelmente não precisará desse atributo no Adobe Campaign.
+>O Adobe Campaign Classic permite criar uma tabela de cliente personalizada. No entanto, na maioria dos casos, é recomendável aproveitar a [Tabela de destinatários](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} padrão (documentação do Campaign v8), que já tem tabelas e recursos adicionais pré-criados.
 
 ### Escolha dos tipos de dados {#data-types}
 
@@ -185,7 +167,7 @@ Quando uma tabela personalizada está sendo criada no Adobe Campaign com uma cha
 
 Por padrão, uma sequência personalizada terá valores que variam de +1.000 a +2,1BB. Tecnicamente, é possível obter uma gama completa de 4BB habilitando ids negativas. Isso deve ser usado com cuidado e uma ID será perdida ao passar de números negativos para positivos: o registro 0 normalmente é ignorado pelo Adobe Campaign em consultas SQL geradas.
 
-Para saber mais sobre a exaustão das sequências, assista a [este vídeo](https://helpx.adobe.com/br/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Para saber mais sobre a exaustão das sequências, assista a [este vídeo](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Índices {#indexes}
 
@@ -313,12 +295,6 @@ Para garantir um melhor desempenho a qualquer momento, siga as práticas recomen
 * Certifique-se de que nenhuma das campanhas diárias seja executada durante o processo de importação ou quando qualquer processo manual for executado.
 * Use uma ou várias tabelas de referência em vez de duplicar um campo em cada linha. Ao usar pares chave/valor, é preferível escolher uma chave numérica.
 * Uma sequência curta permanece aceitável. Caso as tabelas de referência já estejam em vigor em um sistema externo, reutilizar o mesmo facilitará a integração de dados com o Adobe Campaign.
-
-### Relacionamentos um para muitos {#one-to-many-relationships}
-
-* O design de dados afeta a usabilidade e a funcionalidade. Se você projetar seu modelo de dados com várias relações um para muitos, será mais difícil para os usuários criar uma lógica significativa no aplicativo. A lógica de filtro de um para muitos pode ser difícil para profissionais de marketing não técnicos criarem e compreenderem corretamente.
-* É bom ter todos os campos essenciais em uma tabela porque facilita a criação de consultas pelos usuários. Às vezes, também é bom que o desempenho duplique alguns campos em tabelas se puder evitar uma associação.
-* Certas funcionalidades integradas não poderão fazer referência a relações um para muitos, por exemplo, fórmula de Ponderação da oferta e Entregas.
 
 ## Tabelas grandes {#large-tables}
 

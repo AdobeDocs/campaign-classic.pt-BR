@@ -38,10 +38,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
-source-wordcount: '1125'
-ht-degree: 100%
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
+workflow-type: tm+mt
+source-wordcount: '1138'
+ht-degree: 97%
 ---
 # Gerenciar subscrições{#managing-subscriptions}
 
@@ -166,7 +166,7 @@ Para registrar destinatários para um serviço de informação, você pode:
 
   ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-  Os detalhes sobre fluxos de trabalho e como usá-los estão [nesta seção](../../workflow/using/about-workflows.md).
+  Os detalhes sobre fluxos de trabalho e como usá-los estão em [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentação do Campaign v8).
 
 ### Cancelamento de subscrição de um destinatário em relação a um serviço {#unsubscribing-a-recipient-from-a-service}
 

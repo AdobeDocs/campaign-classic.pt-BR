@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '857'
-ht-degree: 100%
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
+workflow-type: tm+mt
+source-wordcount: '870'
+ht-degree: 96%
 ---
 # Práticas recomendadas para relatórios{#best-practices-reporting}
 
@@ -61,7 +61,7 @@ Para otimizar a criação, o uso e a durabilidade de um relatório, é preciso o
    * Adicionar indicadores a um relatório existente. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visualização dos dados no banco de dados. Saiba mais [nesta seção](../../reporting/using/about-descriptive-analysis.md)
    * Criação de novo relatório da entrega. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Exportar dados do banco de dados do Adobe Campaign (por meio de um fluxo de trabalho, consulte [esta seção](../../workflow/using/about-workflows.md)
+   * Exportar dados do banco de dados do Adobe Campaign (por meio de um workflow, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentação do Campaign v8)
    * Crie uma tabela dinâmica. Saiba mais [nesta seção](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Explore dados agregados. Saiba mais [nesta seção](../../reporting/using/ac-cubes.md)
    * Use um assistente para analisar dados. Saiba mais [nesta seção](../../reporting/using/about-descriptive-analysis.md)

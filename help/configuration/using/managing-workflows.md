@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 11%
+source-wordcount: '146'
+ht-degree: 4%
 ---
 # Gerenciamento de fluxos de trabalho{#managing-workflows}
 
@@ -42,6 +42,6 @@ Ao basear seus novos workflows em um template criado recentemente, sua tabela pe
 
 Todas as atividades usadas em seu fluxo de trabalho usarão sua tabela personalizada sem precisar de configuração manual adicional.
 
-Para obter mais informações sobre fluxos de trabalho, consulte [esta seção](../../workflow/using/about-workflows.md).
+Para obter mais informações sobre fluxos de trabalho, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentação do Campaign v8).
 
 ![](assets/cfg_external_table_workflow.png)

@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 38%
+source-wordcount: '393'
+ht-degree: 37%
 ---
 # Gerenciamento de acesso {#access-management}
 
@@ -62,7 +62,7 @@ Não use o operador administrador (ou não o compartilhe). Crie um operador por 
 
 Evite adicionar muitos operadores no grupo de administradores (ou com direitos nomeados de administrador). Eles são operadores muito poderosos (podem executar todas as instruções SQL, executar comandos no servidor etc.).
 
-A Adobe Campaign fornece três privilégios de alto nível através de [direitos nomeados](../../platform/using/access-management.md#named-rights):
+A Adobe Campaign fornece três privilégios de alto nível por meio de [direitos nomeados](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"} (documentação do Campaign v8):
 
 * **ADMINISTRATION** (admin): dá acesso a tudo e permite fazer tudo, ignorando todas as verificações de direitos nomeados; portanto, inclui os direitos nomeados PROGRAM EXECUTION (createProcess) e SQL
 
