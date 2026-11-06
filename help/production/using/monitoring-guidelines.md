@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 27%
@@ -65,7 +65,7 @@ Vários métodos automáticos estão disponíveis. para ajudar você a monitorar
 
 **Trilha de auditoria**
 
-A Trilha de auditoria permite visualizar o histórico completo de alterações relacionadas a opções, workflows e esquemas na sua instância. [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (documentação do Campaign v8) para obter mais informações.
+A Trilha de auditoria permite visualizar o histórico completo de alterações relacionadas a opções, workflows e esquemas na sua instância. [Clique aqui](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (documentação do Campaign v8) para obter mais informações.
 
 **Painel de controle**
 
@@ -87,7 +87,7 @@ O Workflow HeatMap forneceu uma representação visual de todos os workflows que
 
 **Trilha de auditoria**
 
-A Trilha de auditoria permite visualizar todas as modificações que foram feitas em workflows, bem como seus estados atuais. [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (documentação do Campaign v8).
+A Trilha de auditoria permite visualizar todas as modificações que foram feitas em workflows, bem como seus estados atuais. [Clique aqui](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (documentação do Campaign v8).
 
 **Solução de problemas de fluxos de trabalho**
 
@@ -95,7 +95,7 @@ Ações específicas podem ser executadas ao encontrar problemas com a execuçã
 
 **Monitoramento do status do fluxo de trabalho**
 
-Além do mapa de calor, você pode criar um fluxo de trabalho que permitirá monitorar o status de um conjunto de fluxos de trabalho e enviar mensagens recorrentes aos supervisores. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=pt-BR){target="_blank"}.
+Além do mapa de calor, você pode criar um fluxo de trabalho que permitirá monitorar o status de um conjunto de fluxos de trabalho e enviar mensagens recorrentes aos supervisores. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}.
 
 **Diretrizes gerais**
 
@@ -166,7 +166,7 @@ Os recursos técnicos estão disponíveis na documentação do Campaign Classic.
 
 **Princípios gerais**
 
-* [Arquitetura do Campaign Classic](../../production/using/general-architecture.md)
+* [Arquitetura do Campaign Classic](../../production/using/architecture-and-open-ports.md)
 * [Módulos do Campaign Classic](../../production/using/operating-principle.md)
 * [Opções do Campaign Classic](../../installation/using/configuring-campaign-options.md)
 * [Como configurar a inicialização automática dos módulos](../../production/using/administration.md)
