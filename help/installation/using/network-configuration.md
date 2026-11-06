@@ -22,9 +22,9 @@ feature_v2:
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
     internal-label: Installation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '726'
 ht-degree: 4%
 ---
 # Configuração de rede{#network-configuration}
@@ -236,7 +236,7 @@ Esse servidor hospeda formulários web, mirror pages etc. As seguintes portas pr
 
 ## Integração com o Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-A integração entre o Adobe Campaign e o Adobe Experience Manager exige a abertura de várias portas se a instalação estiver &quot;no local&quot;. Para obter mais informações sobre como configurar essa integração, consulte a [documentação detalhada](../../integrations/using/about-adobe-experience-manager.md).
+A integração entre o Adobe Campaign e o Adobe Experience Manager exige a abertura de várias portas se a instalação estiver &quot;no local&quot;. Para obter mais informações sobre como configurar essa integração, consulte a [documentação detalhada](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentação do Campaign v8).
 
 <table> 
  <tbody> 

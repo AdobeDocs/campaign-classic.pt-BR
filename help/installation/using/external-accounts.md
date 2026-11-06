@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a119d402631c5d2dd3ab8d6d11dfd0cdba0d662f
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2023'
 ht-degree: 56%
 ---
 # Contas externas{#external-accounts}
@@ -66,7 +66,7 @@ A conta externa é criada e adicionada à lista de contas externas.
 
 ### Emails rejeitados {#bounce-mails-external-account}
 
-A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Para obter mais informações sobre essa conta externa, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=pt-BR){target="_blank"}.
+A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Para obter mais informações sobre essa conta externa, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
@@ -333,7 +333,7 @@ A conta externa **[!UICONTROL AEM (AEM instance)]** permite gerenciar o conteúd
 
   Senha usada para se conectar à instância de criação do Adobe Experience Manager.
 
-Para obter mais informações, consulte esta [seção](../../integrations/using/about-adobe-experience-manager.md).
+Para obter mais informações, consulte esta [seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentação do Campaign v8).
 
 ## Contas Externas do Conector CRM
 
