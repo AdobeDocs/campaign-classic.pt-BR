@@ -42,6 +42,6 @@ Ao basear seus novos workflows em um template criado recentemente, sua tabela pe
 
 Todas as atividades usadas em seu fluxo de trabalho usarão sua tabela personalizada sem precisar de configuração manual adicional.
 
-Para obter mais informações sobre fluxos de trabalho, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentação do Campaign v8).
+Para obter mais informações sobre fluxos de trabalho, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentação do Campaign v8).
 
 ![](assets/cfg_external_table_workflow.png)

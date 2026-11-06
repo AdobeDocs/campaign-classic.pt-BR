@@ -61,7 +61,7 @@ Para otimizar a criação, o uso e a durabilidade de um relatório, é preciso o
    * Adicionar indicadores a um relatório existente. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visualização dos dados no banco de dados. Saiba mais [nesta seção](../../reporting/using/about-descriptive-analysis.md)
    * Criação de novo relatório da entrega. Saiba mais [nesta seção](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Exportar dados do banco de dados do Adobe Campaign (por meio de um workflow, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentação do Campaign v8)
+   * Exportar dados do banco de dados do Adobe Campaign (por meio de um workflow, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentação do Campaign v8)
    * Crie uma tabela dinâmica. Saiba mais [nesta seção](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Explore dados agregados. Saiba mais [nesta seção](../../reporting/using/ac-cubes.md)
    * Use um assistente para analisar dados. Saiba mais [nesta seção](../../reporting/using/about-descriptive-analysis.md)

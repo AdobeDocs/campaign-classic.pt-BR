@@ -37,9 +37,9 @@ ht-degree: 52%
 
 O Adobe Campaign vem com um conjunto de contas externas predefinidas. Para configurar conexões com sistemas externos, você pode criar novas contas externas.
 
-Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre contas externas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/external-accounts){target=_blank}.
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre contas externas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/external-accounts){target=_blank}.
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/external-accounts){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/external-accounts){target=_blank}
 
 As contas externas são usadas por processos técnicos, como fluxos de trabalho técnicos ou fluxos de trabalho da campanha. Por exemplo, ao configurar uma transferência de arquivos em um workflow ou uma troca de dados com qualquer outro aplicativo (Adobe Target, Experience Manager etc.), você precisa selecionar uma conta externa.
 
@@ -70,7 +70,7 @@ A conta externa é criada e adicionada à lista de contas externas.
 
 ### Emails rejeitados {#bounce-mails-external-account}
 
-A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Para obter mais informações sobre essa conta externa, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
+A conta externa de **Bounce mails** especifica a conta POP3 externa a ser usada para se conectar ao serviço de email. Para obter mais informações sobre essa conta externa, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=pt-BR){target="_blank"}.
 
 Todos os servidores configurados para acesso POP3 podem ser usados para receber emails de retorno.
 
@@ -337,7 +337,7 @@ A conta externa **[!UICONTROL AEM (AEM instance)]** permite gerenciar o conteúd
 
   Senha usada para se conectar à instância de criação do Adobe Experience Manager.
 
-Para obter mais informações, consulte esta [seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentação do Campaign v8).
+Para obter mais informações, consulte esta [seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentação do Campaign v8).
 
 ## Contas Externas do Conector CRM
 

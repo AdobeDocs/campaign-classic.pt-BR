@@ -46,7 +46,7 @@ A seção abaixo apresenta informações sobre problemas comuns relacionados à 
 
 Para obter mais informações sobre fluxos de trabalho, consulte estas seções:
 
-* [Sobre fluxos de trabalho](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentação do Campaign v8)
+* [Sobre fluxos de trabalho](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentação do Campaign v8)
 * [Iniciando um fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=pt-BR){target="_blank"}.
 * [Ciclo de vida do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR){target="_blank"}.
 * [Práticas recomendadas para usar fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR){target="_blank"}.
@@ -57,7 +57,7 @@ Em alguns casos, os fluxos de trabalho executados de uma campanha não são inic
 
 Pode haver várias causas para esse problema. Siga as etapas abaixo para resolvê-lo:
 
-1. Verifique o status do fluxo de trabalho técnico [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}. Esse workflow gerencia jobs ou workflows dentro de uma campanha. Se falhar, os workflows não serão iniciados/interrompidos. Reinicie-o para retomar a execução dos workflows da campanha.
+1. Verifique o status do fluxo de trabalho técnico [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=pt-BR){target="_blank"}. Esse workflow gerencia jobs ou workflows dentro de uma campanha. Se falhar, os workflows não serão iniciados/interrompidos. Reinicie-o para retomar a execução dos workflows da campanha.
 
    Para obter mais informações sobre o monitoramento de workflows técnicos, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=pt-BR){target="_blank"}.
 

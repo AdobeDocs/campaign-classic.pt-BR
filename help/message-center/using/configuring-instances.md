@@ -49,7 +49,7 @@ Para usar os recursos de mensagens transacionais, é necessário configurar as i
 
 >[!IMPORTANT]
 >
->Extensões de esquema afetaram os recursos usados por [fluxos de trabalho técnicos do Centro de Mensagens](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings#technical-workflows){target="_blank"} (documentação do Campaign v8) em instâncias de controle ou de execução que precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais.
+>Extensões de esquema afetaram os recursos usados por [fluxos de trabalho técnicos do Centro de Mensagens](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/transactional-msg-settings#technical-workflows){target="_blank"} (documentação do Campaign v8) em instâncias de controle ou de execução que precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais.
 
 Você também precisa especificar e conectar as instâncias de execução às instâncias de controle.
 
