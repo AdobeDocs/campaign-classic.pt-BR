@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 28%
+source-wordcount: '861'
+ht-degree: 27%
 ---
 # Diretrizes de monitoramento {#monitoring-guidelines}
 
@@ -65,7 +65,7 @@ Vários métodos automáticos estão disponíveis. para ajudar você a monitorar
 
 **Trilha de auditoria**
 
-A Trilha de auditoria permite visualizar o histórico completo de alterações relacionadas a opções, workflows e esquemas na sua instância. [Clique aqui](../../production/using/audit-trail.md) para obter mais informações.
+A Trilha de auditoria permite visualizar o histórico completo de alterações relacionadas a opções, workflows e esquemas na sua instância. [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (documentação do Campaign v8) para obter mais informações.
 
 **Painel de controle**
 
@@ -87,7 +87,7 @@ O Workflow HeatMap forneceu uma representação visual de todos os workflows que
 
 **Trilha de auditoria**
 
-A Trilha de auditoria permite visualizar todas as modificações que foram feitas em workflows, bem como seus estados atuais. [Clique aqui](../../production/using/audit-trail.md).
+A Trilha de auditoria permite visualizar todas as modificações que foram feitas em workflows, bem como seus estados atuais. [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (documentação do Campaign v8).
 
 **Solução de problemas de fluxos de trabalho**
 

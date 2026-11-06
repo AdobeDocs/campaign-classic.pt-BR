@@ -18,10 +18,10 @@ feature_v2:
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
     internal-label: Installation
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 51%
+ht-degree: 53%
 ---
 # Matriz de recursos por modelo{#capability-matrix-per-model}
 
@@ -66,4 +66,4 @@ O Adobe Campaign oferece a opção **Federated Data Access** (FDA) para processa
 * [Notas de versão](../../rn/using/latest-release.md)
 * [Atualizações do Campaign Classic](../../rn/using/rn-overview.md)
 * [Recursos descontinuados e removidos](../../rn/using/deprecated-features.md)
-* [Versões [!DNL Gold Standard]](../../rn/using/gold-standard.md)
+* [Versões [!DNL Gold Standard]](../../rn/using/rn-overview.md)

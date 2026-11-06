@@ -49,8 +49,8 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+workflow-type: tm+mt
 source-wordcount: '1742'
 ht-degree: 100%
 ---
@@ -91,7 +91,7 @@ Para fazer isso, siga as etapas abaixo:
 
    >[!CAUTION]
    >
-   > Os conectores herdados serão descontinuados e não terão suporte a partir da versão 20.2. Recomendamos o uso do conector **[!UICONTROL Extended generic SMPP]**. Para obter mais informações sobre como migrar para o conector recomendado, consulte esta [página](unsupported-connector-migration.md).
+   > Os conectores herdados serão descontinuados e não terão suporte a partir da versão 20.2. Recomendamos o uso do conector **[!UICONTROL Extended generic SMPP]**. Para obter mais informações sobre como migrar para o conector recomendado, consulte esta [página](sms-set-up.md).
 
 1. A opção **[!UICONTROL Enable verbose SMPP traces in the log file]** permite que você descarte todo o tráfego SMPP em arquivos de log. Essa opção deve ser habilitada para solucionar problemas no conector e comparar com o tráfego visto pelo provedor.
 

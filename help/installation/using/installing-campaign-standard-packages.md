@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 15%
+source-wordcount: '1426'
+ht-degree: 17%
 ---
 # Instalar pacotes integrados do Campaign Classic{#installing-campaign-standard-packages}
 
@@ -218,7 +218,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Integração com o AEM<br /> </td> 
-   <td> Permite gerenciar o conteúdo dos deliveries de email, bem como os formulários diretamente no Adobe Experience Manager, para se beneficiar das funcionalidades de edição de conteúdo do AEM, bem como das capacidades de delivery do Adobe Campaign. <a href="../../integrations/using/about-adobe-experience-manager.md">Saiba Mais</a> <br /> </td> 
+   <td> Permite gerenciar o conteúdo dos deliveries de email, bem como os formulários diretamente no Adobe Experience Manager, para se beneficiar das funcionalidades de edição de conteúdo do AEM, bem como das capacidades de delivery do Adobe Campaign. <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">Saiba mais</a> (documentação do Campaign v8) <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 

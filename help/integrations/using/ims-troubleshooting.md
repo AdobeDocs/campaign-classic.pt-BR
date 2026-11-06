@@ -33,15 +33,19 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 95%
 ---
 # Solução de problemas com o IMS{#ims-troubleshooting}
 
 
 As dicas de solução de problemas a seguir ajudarão os clientes **locais** e **híbridos** a resolver os problemas mais comuns que ocorrem ao usar a integração do IMS. Para clientes **hospedados**, entre em contato com a Adobe.
+
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre como fazer logon no Adobe ID e solucionar problemas de logon, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/connect){target=_blank}.
+
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/new/connect){target=_blank}
 
 **Conta externa**
 
@@ -106,16 +110,3 @@ Reinicie o servidor se alguma alteração for feita nas configurações acima na
 * O usuário não pode acessar a página de login da Adobe id:
 
   Consulte as etapas anteriores para verificar a configuração do escopo.
-
-**Problemas de cache do WebView2**
-
-Se tiver problemas ao entrar no **[!UICONTROL Client Console]** com sua Adobe ID, tente limpar o cache local do WebView2. Na maioria dos casos, isso resolve o problema. Siga as etapas abaixo:
-
-1. Feche o **[!UICONTROL Client Console]** e pare qualquer processo `nlclient` em execução.
-
-1. Exclua todas as pastas `webview2` e `webview2Cache` dos seguintes locais:
-
-   * `C:\ProgramData\Neolane\NL_5\nlclient\`
-   * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
-
-1. Reinicie o **[!UICONTROL Client Console]** e faça logon com sua Adobe ID. As pastas de cache serão automaticamente recriadas na próxima inicialização.

@@ -28,10 +28,10 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '513'
-ht-degree: 100%
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 94%
 ---
 # Configuração do acesso ao Assets {#configuring-access-to-assets}
 
@@ -55,7 +55,7 @@ Para usar a integração entre o Adobe Campaign e o Experience Cloud Assets, voc
 * Uma organização da Adobe Experience Cloud
 * Habilitação do modo de autenticação do Adobe IMS
 
-Para habilitar a conexão entre o Adobe Campaign e a Adobe Experience Cloud, configure a conexão via IMS (serviço de conexão Adobe ID). Essa configuração é detalhada no documento [Conexão pela Adobe ID. ](../../integrations/using/about-adobe-id.md) Ela inclui:
+Para habilitar a conexão entre o Adobe Campaign e a Adobe Experience Cloud, configure a conexão via IMS (serviço de conexão Adobe ID). Essa configuração é detalhada no documento [Conexão pela Adobe ID. &#x200B;](../../integrations/using/about-adobe-id.md) Ela inclui:
 
 * Instale o pacote **[!UICONTROL Integration with the Adobe Experience Cloud]**.
 * Configuração de uma conta externa da Adobe Experience Cloud.
@@ -76,7 +76,7 @@ Para integrar o AEM Assets com o Adobe Campaign, você deve primeiro configurar 
 * Instalação do pacote integrado **[!UICONTROL AEM Integration]**
 * Configuração de uma conta externa específica do Adobe Experience Manager
 
-Saiba como integrar o Adobe Campaign e o Adobe Experience Manager na [documentação detalhada](../../integrations/using/about-adobe-experience-manager.md).
+Saiba como integrar o Adobe Campaign e o Adobe Experience Manager na [documentação detalhada](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentação do Campaign v8).
 
 Depois de configurar essa integração, você pode configurar um novo modelo de entrega no Adobe Campaign para usar a biblioteca do AEM Assets. Para fazer isso, siga as etapas abaixo:
 
