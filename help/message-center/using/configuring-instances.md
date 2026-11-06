@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
-workflow-type: ht
-source-wordcount: '1274'
-ht-degree: 100%
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
+workflow-type: tm+mt
+source-wordcount: '1291'
+ht-degree: 96%
 ---
 # Configurar instâncias {#creating-a-shared-connection}
 
@@ -49,7 +49,7 @@ Para usar os recursos de mensagens transacionais, é necessário configurar as i
 
 >[!IMPORTANT]
 >
->Extensões de esquema afetaram os recursos usados por [fluxos de trabalho técnicos do Centro de mensagens](../../message-center/using/additional-configurations.md#technical-workflows) nas instâncias de controle ou de execução que precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais.
+>Extensões de esquema afetaram os recursos usados por [fluxos de trabalho técnicos do Centro de Mensagens](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/transactional-msg-settings#technical-workflows){target="_blank"} (documentação do Campaign v8) em instâncias de controle ou de execução que precisam ser duplicadas nas outras instâncias usadas pelo módulo de mensagens transacionais.
 
 Você também precisa especificar e conectar as instâncias de execução às instâncias de controle.
 

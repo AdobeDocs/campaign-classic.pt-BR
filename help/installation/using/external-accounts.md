@@ -28,14 +28,18 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+source-git-commit: 3d6f0751869871f811046dd52bab59dbcf587350
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 56%
+source-wordcount: '1897'
+ht-degree: 52%
 ---
 # Contas externas{#external-accounts}
 
 O Adobe Campaign vem com um conjunto de contas externas predefinidas. Para configurar conexões com sistemas externos, você pode criar novas contas externas.
+
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre contas externas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/external-accounts){target=_blank}.
+
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/config/settings/external-accounts){target=_blank}
 
 As contas externas são usadas por processos técnicos, como fluxos de trabalho técnicos ou fluxos de trabalho da campanha. Por exemplo, ao configurar uma transferência de arquivos em um workflow ou uma troca de dados com qualquer outro aplicativo (Adobe Target, Experience Manager etc.), você precisa selecionar uma conta externa.
 
@@ -432,38 +436,6 @@ Para esta conta externa, você precisa configurar o Salesforce CRM com o assiste
 Para obter mais informações sobre essa configuração, consulte esta [página](../../platform/using/crm-connectors.md).
 
 ## Contas externas de transferência de dados
-
-### Serviço de armazenamento simples Amazon (S3) {#amazon-simple-storage-service--s3--external-account}
-
-O conector do Serviço de Armazenamento Simples da Amazon (S3) pode ser usado para importar ou exportar dados para o Adobe Campaign. Ele pode ser configurado em uma atividade de fluxo de trabalho. consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=pt-BR){target="_blank"}.
-
-![](assets/ext_account_3.png)
-
-Como você está configurando essa nova conta externa, é necessário fornecer os seguintes detalhes:
-
-* **[!UICONTROL AWS S3 Account Server]**
-
-  A URL do seu servidor deve ser preenchida da seguinte maneira:
-
-  ```
-  <S3bucket name>.s3.amazonaws.com/<s3object path>
-  ```
-
-* **[!UICONTROL AWS access key ID]**
-
-  Para saber onde encontrar a ID da chave de acesso AWS, consulte esta [página](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
-
-* **[!UICONTROL Secret access key to AWS]**
-
-  Para saber onde encontrar a chave de acesso secreta para o AWS, consulte esta [página](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
-
-* **[!UICONTROL AWS Region]**
-
-  Para saber mais sobre a região do AWS, consulte esta [página](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
-
-* A caixa de seleção **[!UICONTROL Use server side encryption]** permite armazenar o arquivo no modo criptografado S3.
-
-Para saber onde encontrar a ID da chave de acesso e a chave de acesso secreta, consulte a [documentação](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) dos serviços Web da Amazon.
 
 ### Armazenamento Azure Blob {#azure-blob-external-account}
 

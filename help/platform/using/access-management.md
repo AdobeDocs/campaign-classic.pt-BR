@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
-source-wordcount: '315'
-ht-degree: 100%
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 82%
 ---
 # Introdução às permissões{#access-management}
 
@@ -46,7 +46,7 @@ ht-degree: 100%
 >
 >A partir do Campaign Classic v7.3.1, todos os operadores deverão usar o [Sistema de gerenciamento de identidades (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} para se conectar ao Campaign.
 >
->Como parte do trabalho para reforçar o processo de segurança e autenticação, o Adobe Campaign recomenda enfaticamente migrar todos os modos de autenticação de operadores da autenticação nativa de logon/senha para o Adobe Identity Management System (IMS). Saiba como migrar operadores [nesta página](../../technotes/using/migrate-users-to-ims.md).
+>Como parte do trabalho para reforçar o processo de segurança e autenticação, o Adobe Campaign recomenda enfaticamente migrar todos os modos de autenticação de operadores da autenticação nativa de logon/senha para o Sistema de gerenciamento de identidades da Adobe (IMS). Saiba como migrar operadores [nesta página](../../technotes/using/migrate-users-to-ims.md).
 > 
 >Após essa migração, observe que a seção a seguir não se aplica mais.  Aprenda como configurar permissões com o Adobe IMS na [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=pt-BR){target="_blank"}.
 
@@ -57,32 +57,15 @@ O Adobe Campaign permite definir e gerenciar os direitos atribuídos aos diverso
 * Acesso a certos registros,
 * Criação, modificação e/ou exclusão de registros (ações, contatos, campanhas, grupos, etc.).
 
->[!BEGINTABS]
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre permissões, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}.
 
->[!TAB Documentação das permissões]
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}
 
-Para saber mais sobre **permissões no Adobe Campaign**, consulte a **[documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=pt-BR#_blank){target=_blank}**.
+Para saber como definir permissões em pastas, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/permissions/folder-permissions){target=_blank}.
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=pt-BR#_blank){target=_blank}
-
-
->[!TAB Gerenciar permissões em pastas]
-
-Para saber como definir **permissões em pastas**, consulte a **[documentação do Campaign v8 (console)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}**.
-
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}
-
-
->[!TAB Autenticação nativa]
-
-A autenticação nativa com logon/senha ainda está disponível no Campaign v7, mas para reforçar a segurança e o processo de autenticação, o Adobe Campaign recomenda [migrar o modo de autenticação do usuário final](../../technotes/using/ac-ims.md) da autenticação nativa para o Adobe Identity Management System (IMS). Observe que, no Campaign v8, a conexão com autenticação nativa não é permitida.
+A autenticação nativa com logon/senha ainda está disponível no Campaign v7, mas para reforçar a segurança e o processo de autenticação, o Adobe Campaign recomenda [migrar o modo de autenticação do usuário final](../../technotes/using/ac-ims.md) da autenticação nativa para o Sistema de gerenciamento de identidades da Adobe (IMS). Observe que, no Campaign v8, a conexão com autenticação nativa não é permitida.
 
 [![imagem](../../assets/do-not-localize/learn-more-button.svg)](../../technotes/using/ac-ims.md)
-
-
->[!ENDTABS]
-
-
 
 <!--
 The permissions apply to operator profiles or operator groups.

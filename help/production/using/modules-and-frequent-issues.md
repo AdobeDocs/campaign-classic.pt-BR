@@ -27,7 +27,7 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 13%
@@ -75,7 +75,7 @@ Esta é uma lista de módulos afetados por problemas frequentes:
   <tr> 
    <td> syslogd </td> 
    <td> Gravação de log<br /> </td> 
-   <td> Se alguns registros estiverem ausentes nos arquivos de registro, verifique se o módulo está usando a porta 6666. Consulte <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Lista de portas abertas</a>.<br /> </td> 
+   <td> Se alguns registros estiverem ausentes nos arquivos de registro, verifique se o módulo está usando a porta 6666. Consulte <a href="../../production/using/architecture-and-open-ports.md#list-of-open-ports" target="_blank">Lista de portas abertas</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> rastreamento </td> 

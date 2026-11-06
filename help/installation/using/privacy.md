@@ -41,12 +41,20 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 17%
+source-wordcount: '848'
+ht-degree: 18%
 ---
 # Personalização e privacidade {#privacy}
+
+Esta página abrange a personalização de URLs, a assinatura de URLs e a proteção de páginas que contêm informações pessoais.
+
+Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre restrições de dados e solicitações de privacidade, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}.
+
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}
+
+No Campaign Classic v7, a restrição de acesso a toda a entidade exige o build 8770 ou posterior.
 
 ## Personalização de URL {#url-personalization}
 
@@ -113,79 +121,6 @@ Para habilitar a assinatura do URL, siga estas etapas em todos os servidores do 
 1. Reinicie o serviço **nlserver**.
 1. No servidor `tracking`, reinicie o servidor `web` (apache2 em Debian, httpd em CentOS/RedHat, IIS no Windows).
 
-## Restrição de dados
-
-Certifique-se de que as senhas criptografadas não estejam acessíveis a um usuário autenticado de baixo privilégio. Para fazer isso, restrinja o acesso somente aos campos de senha ou à entidade inteira (precisa de uma build >= 8770).
-
-Esta restrição permite que você remova os campos de senhas, mas deixe a conta externa acessível a partir da interface para todos os usuários. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} (documentação do Campaign v8).
-
-Para fazer isso, siga as etapas abaixo:
-
-1. Navegue até a pasta **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** do explorador do Campaign.
-
-1. Criar um esquema de dados, como um **[!UICONTROL Extension of a schema]**.
-
-   ![](assets/privacy-data-restriction.png)
-
-1. Escolha **[!UICONTROL External Account]** (extAccount).
-
-1. Na última tela do assistente, edite seu novo &quot;srcSchema&quot; para restringir o acesso a todos os campos de senha:
-
-   Você pode substituir o elemento principal (`<element name="extAccount" ... >`) por:
-
-   ```sql
-   <element name="extAccount">
-       <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-       <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-   
-       <element name="s3Account">
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="awsSecret"/>
-       </element>
-       <element name="wapPush">
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-       </element>
-       <element name="mms">
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-       </element>
-   </element>
-   ```
-
-   Então, seu srcSchema estendido pode se parecer com:
-
-   ```sql
-   <srcSchema _cs="External Accounts (cus)" created="2017-05-12 07:53:49.691Z" createdBy-id="0"
-               desc="Definition of external accounts (Email, SMS...) used by the modules"
-               entitySchema="xtk:srcSchema" extendedSchema="nms:extAccount" img="" label="External Accounts"
-               labelSingular="External account" lastModified="2017-05-12 08:33:49.365Z"
-               mappingType="sql" md5="E9BB0CD6A4375F500027C86EA854E101" modifiedBy-id="0"
-               name="extAccount" namespace="cus" xtkschema="xtk:srcSchema">
-       <createdBy _cs="Administrator (admin)"/>
-       <modifiedBy _cs="Administrator (admin)"/>
-       <element name="extAccount">
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-   
-           <element name="s3Account">
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="awsSecret"/>
-           </element>
-           <element name="wapPush">
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-           </element>
-           <element name="mms">
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-           </element>
-       </element>
-   </srcSchema>    
-   ```
-
-   >[!NOTE]
-   >
-   >Você pode substituir `$(loginId) = 0 or $(login) = 'admin'` por `hasNamedRight('admin')` para permitir que todos os usuários com direitos de administrador vejam essas senhas.
-
 ## Proteger páginas com PI
 
 Recomendamos enfaticamente que os clientes locais protejam as páginas que podem conter informações pessoais (PIs), como mirror pages, aplicativos web, etc.
@@ -214,8 +149,3 @@ Para proteger suas páginas, siga estas etapas:
    Além do arquivo **robots.txt**, aconselha-se adicionar um cabeçalho **X-Robots-Tag**. Você pode fazer isso no Apache ou IIS e no arquivo de configuração **serverConf.xml**.
 
    Para obter mais informações, consulte [este artigo](https://developers.google.com/search/reference/robots_meta_tag).
-
-
-## Solicitações de Privacidade
-
-Consulte [esta página](../../platform/using/privacy-management.md) para obter informações gerais sobre o que é a Gestão de Privacidade e quais são as etapas de implementação no Adobe Campaign. Você também encontrará as práticas recomendadas e uma visão geral do processo de usuários e personas.

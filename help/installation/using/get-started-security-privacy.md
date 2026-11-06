@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 22%
@@ -72,7 +72,7 @@ O gerenciamento de acesso é uma parte importante do fortalecimento da seguranç
 * Verifique se cada operador tem os direitos de acesso apropriados
 * Evite usar o operador administrador e evite ter muitos operadores no grupo de administradores
 
-[Leia mais](../../installation/using/access-management.md)
+[Leia mais](../../installation/using/secure-access-management.md)
 
 ## Diretrizes de script e codificação
 

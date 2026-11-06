@@ -24,8 +24,8 @@ subfeature_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
-workflow-type: ht
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 100%
 ---
@@ -57,7 +57,7 @@ Cada hipótese está vinculada a uma única tabela de transação. Um entrega ou
 
 ## Etapas de implementação {#method}
 
-Antes de começar a usar o Gestor de Resposta, consulte [Configuração](configuration.md) e execute as configurações necessárias.
+Antes de começar a usar o Gestor de Resposta, consulte [Configuração](configure-response-manager.md) e execute as configurações necessárias.
 
 Para iniciar uma hipótese em uma entrega ou oferta, defina o contexto em um modelo que deve ser usado em cada hipótese criada.
 

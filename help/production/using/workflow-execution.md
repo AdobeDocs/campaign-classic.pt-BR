@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 25%
+source-wordcount: '763'
+ht-degree: 24%
 ---
 # Execução do fluxo de trabalho{#workflow-execution}
 
@@ -46,7 +46,7 @@ A seção abaixo apresenta informações sobre problemas comuns relacionados à 
 
 Para obter mais informações sobre fluxos de trabalho, consulte estas seções:
 
-* [Sobre fluxos de trabalho](../../workflow/using/about-workflows.md)
+* [Sobre fluxos de trabalho](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentação do Campaign v8)
 * [Iniciando um fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=pt-BR){target="_blank"}.
 * [Ciclo de vida do fluxo de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=pt-BR){target="_blank"}.
 * [Práticas recomendadas para usar fluxos de trabalho](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=pt-BR){target="_blank"}.
