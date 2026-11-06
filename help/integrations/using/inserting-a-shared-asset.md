@@ -64,4 +64,4 @@ Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emai
 
 >[!NOTE]
 >
->Se você usar a integração com o Adobe Target, poderá usar uma imagem compartilhada como uma imagem padrão. Consulte [esta página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-at){target="_blank"} (documentação do Campaign v8).
+>Se você usar a integração com o Adobe Target, poderá usar uma imagem compartilhada como uma imagem padrão. Consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/ac-at){target="_blank"} (documentação do Campaign v8).

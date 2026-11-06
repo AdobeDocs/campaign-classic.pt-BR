@@ -236,7 +236,7 @@ Esse servidor hospeda formulários web, mirror pages etc. As seguintes portas pr
 
 ## Integração com o Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-A integração entre o Adobe Campaign e o Adobe Experience Manager exige a abertura de várias portas se a instalação estiver &quot;no local&quot;. Para obter mais informações sobre como configurar essa integração, consulte a [documentação detalhada](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentação do Campaign v8).
+A integração entre o Adobe Campaign e o Adobe Experience Manager exige a abertura de várias portas se a instalação estiver &quot;no local&quot;. Para obter mais informações sobre como configurar essa integração, consulte a [documentação detalhada](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentação do Campaign v8).
 
 <table> 
  <tbody> 
