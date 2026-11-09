@@ -49,7 +49,7 @@ Para exibir parte de um relatório condicional, é preciso definir suas condiç�
 
 As condições de visibilidade podem depender do status do operador, nos itens selecionados ou inseridos na página do relatório.
 
-Exemplos mostrando a exibição condicional de itens em uma página são fornecidos em [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/form-rendering#defining-fields-conditional-display){target="_blank"} (documentação do Campaign v8).
+Exemplos mostrando a exibição condicional de itens em uma página são fornecidos em [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-forms/form-rendering#defining-fields-conditional-display){target="_blank"} (documentação do Campaign v8).
 
 No exemplo a seguir, a condição de exibição depende do idioma:
 
@@ -72,6 +72,6 @@ Essa atividade baseia-se no seguinte princípio operacional:
 
 1. Selecione **[!UICONTROL Enable default transition]** para adicionar uma transição, caso uma das condições configuradas não seja atendida.
 
-   Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-page-sequencing#conditional-page-display){target="_blank"} (documentação do Campaign v8).
+   Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-page-sequencing#conditional-page-display){target="_blank"} (documentação do Campaign v8).
 
 Uma atividade **[!UICONTROL Test]** pode ser colocada no início do gráfico para condicionar a exibição, dependendo do contexto ou do perfil do operador, por exemplo.

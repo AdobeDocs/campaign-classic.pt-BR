@@ -39,7 +39,7 @@ ht-degree: 85%
 
 Além dos diversos gráficos detalhados [aqui](../../reporting/using/creating-a-chart.md#chart-types-and-variants), é possível adaptar a exibição e adicionar elementos à(s) página(s) do relatório.
 
-É possível usar containers: eles permitem vincular vários elementos de uma página e configurar o layout em colunas e/ou células. Como usá-los está detalhado em [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#creating-containers){target="_blank"} (documentação do Campaign v8).
+É possível usar containers: eles permitem vincular vários elementos de uma página e configurar o layout em colunas e/ou células. Como usá-los está detalhado em [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#creating-containers){target="_blank"} (documentação do Campaign v8).
 
 É possível configurar o layout de relatório na raiz da árvore e sobrescrevê-lo em cada container. As páginas são classificadas em colunas. Os containers também são classificados em colunas. Somente os itens estáticos e gráficos são classificados em células.
 
@@ -53,7 +53,7 @@ A guia **[!UICONTROL General]** permite alterar o título da página, bem como c
 
 O campo **[!UICONTROL Title]** permite personalizar o rótulo no cabeçalho da página do relatório. O título da janela pode ser configurado pela janela **[!UICONTROL Properties]** do relatório. Para obter mais informações, consulte [Adicionar um cabeçalho e um rodapé](#adding-a-header-and-a-footer).
 
-As opções em **[!UICONTROL Display settings]** permitem selecionar a posição da legenda de controle em uma página de relatório e definir o número de colunas na página. Para obter mais informações sobre o layout da página, consulte a seção **Layout do item** de [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#positioning-the-fields-on-the-page){target="_blank"} (documentação do Campaign v8).
+As opções em **[!UICONTROL Display settings]** permitem selecionar a posição da legenda de controle em uma página de relatório e definir o número de colunas na página. Para obter mais informações sobre o layout da página, consulte a seção **Layout do item** de [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#positioning-the-fields-on-the-page){target="_blank"} (documentação do Campaign v8).
 
 Selecione as várias opções na seção **[!UICONTROL Browse]** para autorizar a navegação de uma página de relatório para outra. Se as opções **[!UICONTROL Disable next page]** ou **[!UICONTROL Disable previous page]** forem selecionadas, os botões **[!UICONTROL Next]** e **[!UICONTROL Previous]** desaparecem da página do relatório.
 

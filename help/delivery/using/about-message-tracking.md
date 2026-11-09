@@ -108,11 +108,11 @@ Para instalações locais, as informações de rastreamento são armazenadas no 
 
 **Rastreamento de uma aplicação web**
 
-Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicativo Web, como formulários e páginas de destino. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/tracking-a-web-application){target="_blank"} (documentação do Campaign v8)
+Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicativo Web, como formulários e páginas de destino. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-applications/tracking-a-web-application){target="_blank"} (documentação do Campaign v8)
 
 **Recusar rastreamento da aplicação web**
 
-A opção de recusar o rastreamento de aplicações web permite que você interrompa o rastreamento dos comportamentos da Web de usuários finais que recusam o rastreamento comportamental. Você pode incluir a capacidade de exibir um banner em aplicações web ou páginas de destino para permitir que os usuários recusem. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/web-application-tracking-opt-out){target="_blank"} (documentação do Campaign v8)
+A opção de recusar o rastreamento de aplicações web permite que você interrompa o rastreamento dos comportamentos da Web de usuários finais que recusam o rastreamento comportamental. Você pode incluir a capacidade de exibir um banner em aplicações web ou páginas de destino para permitir que os usuários recusem. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-applications/web-application-tracking-opt-out){target="_blank"} (documentação do Campaign v8)
 
 ## Solução de problemas de rastreamento {#tracking-troubleshooting}
 
