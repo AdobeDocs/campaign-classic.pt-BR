@@ -8,9 +8,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: d5aff6b318cea324297eb7e2e887a67fb18cd504
+source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1516'
 ht-degree: 97%
 ---
 
@@ -384,15 +384,6 @@ ht-degree: 97%
     + [Definir propriedades de formulários web](web/using/defining-web-forms-properties.md)
     + [Traduzir um formulário web](web/using/translating-a-web-form.md)
     + [Casos de uso: formulários web](web/using/use-cases-web-forms.md)
-+ Criar pesquisas online {#online-surveys}
-  + [Introdução às pesquisas](surveys/using/about-surveys.md)
-  + [Etapas principais para criar uma pesquisa](surveys/using/getting-started-with-surveys.md)
-  + [Criar uma pesquisa](surveys/using/building-a-survey.md)
-  + [Gerenciar respostas](surveys/using/managing-answers.md)
-  + [Publicar, rastrear e usar dados coletados](surveys/using/publish-track-and-use-collected-data.md)
-  + [Configurar pesquisas](surveys/using/configuring-surveys.md)
-  + [Caso de uso: criar um formulário de indicação](surveys/using/use-case-creating-a-refer-a-friend-form.md)
-  + [Caso de uso: exibir relatório sobre as respostas a uma pesquisa online](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Gerenciar ofertas {#managing-offers}
   + Introdução à interação {#interaction-overview}
     + [Interação e gerenciamento de ofertas](interaction/using/interaction-and-offer-management.md)
@@ -417,12 +408,6 @@ ht-degree: 97%
     + [Regras de apresentação](interaction/using/presentation-rules.md)
     + [Ofertas em um canal de entrada](interaction/using/offers-on-an-inbound-channel.md)
     + [Ofertas em um canal de saída](interaction/using/offers-on-an-outbound-channel.md)
-+ Gestor de resposta {#response-manager}
-  + [Introdução ao gestor de resposta](response/using/about-response-manager.md)
-  + [Configurar Gestor de Resposta](response/using/configure-response-manager.md)
-  + [Modelos de hipótese](response/using/hypothesis-templates.md)
-  + [Criar hipótese](response/using/creating-hypotheses.md)
-  + [Rastreamento de hipótese](response/using/hypothesis-tracking.md)
 + Criar e compartilhar relatórios {#reporting}
   + Introdução aos relatórios {#reporting-in-adobe-campaign}
     + [Práticas recomendadas para relatórios](reporting/using/best-practices.md)

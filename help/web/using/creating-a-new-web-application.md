@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '363'
-ht-degree: 100%
+source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 97%
 ---
 # Criar um novo aplicativo web{#creating-a-new-web-application}
 
@@ -65,7 +65,7 @@ Esse modelo determina o tipo de aplicação web. É possível criar:
 
 1. Pesquisas
 
-   O Adobe Campaign permite que você, através da opção **Survey Manager**, projete e gerencie pesquisas online e processe seus resultados: criação dinâmica de campos, gestão de pontuação, exportação de respostas e relatórios dedicados. Para obter mais informações, consulte [esta seção](../../surveys/using/about-surveys.md).
+   O Adobe Campaign permite que você, através da opção **Survey Manager**, projete e gerencie pesquisas online e processe seus resultados: criação dinâmica de campos, gestão de pontuação, exportação de respostas e relatórios dedicados. Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentação do Campaign v8).
 
    >[!CAUTION]
    >
