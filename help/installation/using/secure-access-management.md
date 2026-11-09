@@ -52,7 +52,7 @@ Pronto para uso, o operador webApp é um administrador. Para melhorar a seguran�
 
   1. Digite um nome para cada duplicação. Por exemplo: webapp_brand, webapp_brand2 etc.
 
-  1. Duplique um template de aplicativo web para ter um template por marca e edite as propriedades para alterar o operador selecionando Use a specific account.  Saiba mais em [esta página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"} (documentação do Campaign v8).
+  1. Duplique um template de aplicativo web para ter um template por marca e edite as propriedades para alterar o operador selecionando Use a specific account.  Saiba mais em [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"} (documentação do Campaign v8).
 
 ## Grupos de segurança e operadores administradores
 

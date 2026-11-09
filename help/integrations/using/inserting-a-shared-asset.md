@@ -48,7 +48,7 @@ Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emai
 
      ![](assets/dam_insert_image_standard.png)
 
-   * Se estiver usando o [modo de edição avançado](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/about-campaign-html-editor){target="_blank"} (documentação do Campaign v8) (DCE), vá para um bloco de imagem e, por meio do menu contextual, selecione **[!UICONTROL Select a shared asset]**.
+   * Se estiver usando o [modo de edição avançado](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/editing-html-content/about-campaign-html-editor){target="_blank"} (documentação do Campaign v8) (DCE), vá para um bloco de imagem e, por meio do menu contextual, selecione **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_dce.png)
 

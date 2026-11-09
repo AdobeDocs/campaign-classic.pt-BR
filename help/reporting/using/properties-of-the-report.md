@@ -86,7 +86,7 @@ O idioma de edição é o idioma em que você escreve. Após adicionar um idioma
 
 >[!NOTE]
 >
->Para obter mais informações sobre localização da página da Web no Campaign, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/translating-a-web-form){target="_blank"} (documentação do Campaign v8).
+>Para obter mais informações sobre localização da página da Web no Campaign, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-forms/translating-a-web-form){target="_blank"} (documentação do Campaign v8).
 
 ## Personalizar a renderização do HTML {#personalizing-html-rendering}
 

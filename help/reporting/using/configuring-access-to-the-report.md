@@ -141,7 +141,7 @@ Para obter mais informações, consulte [Contexto de exibição do relatório](#
 
 As configurações específicas permitem controlar erros. A configuração **_uuid** é encontrada na URL do relatório. É possível adicionar as configurações **configurações &amp;_preview** ou **&amp;_debug**.
 
-Para saber mais sobre essas configurações, consulte a seção **Definição das propriedades dos formulários web** do capítulo [Formulários web](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (documentação do Campaign v8).
+Para saber mais sobre essas configurações, consulte a seção **Definição das propriedades dos formulários web** do capítulo [Formulários web](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (documentação do Campaign v8).
 
 ## Publicar o relatório {#publishing-the-report}
 

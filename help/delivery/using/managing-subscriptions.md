@@ -66,7 +66,7 @@ Há três modos de serviço de subscrição/unsubscription:
 
 >[!NOTE]
 >
->Uma amostra para criar um formulário de assinatura com aceitação dupla está detalhada em [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"} (documentação do Campaign v8).
+>Uma amostra para criar um formulário de assinatura com aceitação dupla está detalhada em [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"} (documentação do Campaign v8).
 
 ## Criação de um serviço de informação {#creating-an-information-service}
 
@@ -160,7 +160,7 @@ Para registrar destinatários para um serviço de informação, você pode:
 
 * Usar um formulário da Web para que os destinatários possam subscrever-se a um serviço.
 
-  Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (documentação do Campaign v8).
+  Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (documentação do Campaign v8).
 
 * Criação de um fluxo de trabalho de segmentação e uso de uma caixa **[!UICONTROL Subscription service]**.
 
@@ -176,7 +176,7 @@ por lei, entregas de email devem conter um link para cancelamento. Os destinatá
 
 O link padrão para cancelamento de assinatura é inserido por meio do último botão da barra de ferramentas do editor de conteúdo fornecido no assistente de entrega (consulte [Sobre a personalização](about-personalization.md)). Quando o destinatário clica nesse link, o perfil é adicionado à lista de bloqueios (recusado), significando que este destinatário não será mais direcionado para qualquer ação de entrega.
 
-Os destinatários podem, no entanto, optar por cancelar a assinatura de um serviço sem cancelar a de todos os serviços. Para permitir isso, é possível usar um formulário web (consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/adding-fields-to-a-web-form#subscription-checkboxes){target="_blank"} (documentação do Campaign v8) ou inserir um link personalizado de cancelamento de subscrição. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.
+Os destinatários podem, no entanto, optar por cancelar a assinatura de um serviço sem cancelar a de todos os serviços. Para permitir isso, é possível usar um formulário web (consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-forms/adding-fields-to-a-web-form#subscription-checkboxes){target="_blank"} (documentação do Campaign v8) ou inserir um link personalizado de cancelamento de subscrição. Consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=pt-BR){target="_blank"}.
 
 Também é possível cancelar a assinatura de um destinatário manualmente no perfil do destinatário. Para fazer isso, clique na guia **[!UICONTROL Subscriptions]** do destinatário, selecione o(s) serviço(s) de informações desejado(s) e clique em **[!UICONTROL Delete]**.
 

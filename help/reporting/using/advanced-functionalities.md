@@ -67,7 +67,7 @@ Para fazer isso:
 
    ![](assets/reporting_custom_js.png)
 
-Para execução normal pelo cliente, os scripts referenciados devem ser escritos em JavaScript e precisam ser compatíveis com a maioria dos navegadores. Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"} (documentação do Campaign v8).
+Para execução normal pelo cliente, os scripts referenciados devem ser escritos em JavaScript e precisam ser compatíveis com a maioria dos navegadores. Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"} (documentação do Campaign v8).
 
 ### Adicionar uma atividade de Script {#script-activity}
 
