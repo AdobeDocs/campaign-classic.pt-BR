@@ -32,7 +32,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d679815c3415f1d7603ae5fe87e1c587208b6a8f
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 97%
@@ -43,7 +43,9 @@ Com o Adobe Campaign, é possível criar entregas de email para enviar emails pe
 
 O email continua sendo um dos canais mais eficientes e flexíveis para interagir com os usuários além do seu aplicativo ou site. Não importa se você está fornecendo conteúdo personalizado, anúncios ou mensagens promocionais, o email oferece controle total sobre a mensagem e o público-alvo. Consulte a [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/email){target=_blank} para saber como configurar e aproveitar ao máximo o canal de email, personalizando conteúdo, direcionando segmentos específicos de usuários e incorporando elementos avançados de multimídia para maximizar o impacto e o engajamento.
 
-Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8.
+>[!NOTE]
+>
+>Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8.
 
 >[!BEGINTABS]
 
@@ -52,7 +54,7 @@ Como parte da transição do Campaign v7 para o v8, o conjunto de documentaçõe
 Para saber mais sobre o canal de email, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/email){target=_blank}.
 
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/email){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/email){target="_blank"}
 
 
 >[!TAB Criação de entregas por email]

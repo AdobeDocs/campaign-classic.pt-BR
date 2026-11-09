@@ -8,9 +8,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1395'
 ht-degree: 97%
 ---
 
@@ -152,7 +152,6 @@ ht-degree: 97%
     + [Criar novas instâncias](installation/using/creating-new-instances.md)
     + [Lista de opções do Campaign](installation/using/configuring-campaign-options.md)
     + {hide-from-toc}[Desinstalar o Campaign](installation/using/uninstalling-campaign.md)
-    + [Instalar novas fontes](installation/using/install-fonts.md)
 + Guia de migração {#migrating-to-a-new-version}
   + {hide-from-toc}[Migração para o Adobe Campaign v7](migration/using/about-migration.md)
   + Procedimento de migração {#migration-procedure}
@@ -355,45 +354,6 @@ ht-degree: 97%
   + Modelos de mensagem {#message-templates}
     + [Testar modelos de mensagem](message-center/using/testing-message-templates.md)
   + [Caso de uso](message-center/using/transactional-email-with-attachments.md)
-+ Criar conteúdo da web {#designing-content}
-  + Aplicativos web {#web-applications}
-    + [Introdução a aplicativos web](web/using/about-web-applications.md)
-    + [Criar um novo aplicativo web](web/using/creating-a-new-web-application.md)
-    + [Criar um aplicativo web](web/using/designing-a-web-application.md)
-    + [Casos de uso: criar visões gerais](web/using/use-cases-creating-overviews.md)
-    + [Traduzir um aplicativo web](web/using/translating-a-web-application.md)
-    + [Rastrear visitas em um aplicativo web](web/using/tracking-a-web-application.md)
-    + [Recusa de rastreamento de aplicativo web](web/using/web-application-tracking-opt-out.md)
-  + Editar conteúdo HTML {#editing-html-content}
-    + [Introdução ao editor de HTML](web/using/about-campaign-html-editor.md)
-    + [Gerenciamento de modelo](web/using/template-management.md)
-    + [Interface do editor de conteúdo](web/using/content-editor-interface.md)
-    + [Editar conteúdo](web/using/editing-content.md)
-    + [Práticas recomendadas de edição de conteúdo](web/using/content-editing-best-practices.md)
-    + [Criar uma página de destino](web/using/creating-a-landing-page.md)
-    + [Caso de uso: criar uma entrega de email](web/using/use-case-creating-an-email-delivery.md)
-  + Formulários web {#web-forms}
-    + [Introdução aos formulários web](web/using/about-web-forms.md)
-    + [Usar um modelo de formulário web](web/using/using-a-web-form-template.md)
-    + [Adicionar campos a um formulário web](web/using/adding-fields-to-a-web-form.md)
-    + [Elementos estáticos em um formulário web](web/using/static-elements-in-a-web-form.md)
-    + [Definir layout de formulários web](web/using/defining-web-forms-layout.md)
-    + [Renderização do formulário](web/using/form-rendering.md)
-    + [Definir sequenciamento de páginas](web/using/defining-web-forms-page-sequencing.md)
-    + [Salvar respostas dos formulários web](web/using/web-forms-answers.md)
-    + [Publicar um formulário web](web/using/publishing-a-web-form.md)
-    + [Definir propriedades de formulários web](web/using/defining-web-forms-properties.md)
-    + [Traduzir um formulário web](web/using/translating-a-web-form.md)
-    + [Casos de uso: formulários web](web/using/use-cases-web-forms.md)
-+ Criar pesquisas online {#online-surveys}
-  + [Introdução às pesquisas](surveys/using/about-surveys.md)
-  + [Etapas principais para criar uma pesquisa](surveys/using/getting-started-with-surveys.md)
-  + [Criar uma pesquisa](surveys/using/building-a-survey.md)
-  + [Gerenciar respostas](surveys/using/managing-answers.md)
-  + [Publicar, rastrear e usar dados coletados](surveys/using/publish-track-and-use-collected-data.md)
-  + [Configurar pesquisas](surveys/using/configuring-surveys.md)
-  + [Caso de uso: criar um formulário de indicação](surveys/using/use-case-creating-a-refer-a-friend-form.md)
-  + [Caso de uso: exibir relatório sobre as respostas a uma pesquisa online](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Gerenciar ofertas {#managing-offers}
   + Introdução à interação {#interaction-overview}
     + [Interação e gerenciamento de ofertas](interaction/using/interaction-and-offer-management.md)
@@ -418,12 +378,6 @@ ht-degree: 97%
     + [Regras de apresentação](interaction/using/presentation-rules.md)
     + [Ofertas em um canal de entrada](interaction/using/offers-on-an-inbound-channel.md)
     + [Ofertas em um canal de saída](interaction/using/offers-on-an-outbound-channel.md)
-+ Gestor de resposta {#response-manager}
-  + [Introdução ao gestor de resposta](response/using/about-response-manager.md)
-  + [Configurar Gestor de Resposta](response/using/configure-response-manager.md)
-  + [Modelos de hipótese](response/using/hypothesis-templates.md)
-  + [Criar hipótese](response/using/creating-hypotheses.md)
-  + [Rastreamento de hipótese](response/using/hypothesis-tracking.md)
 + Criar e compartilhar relatórios {#reporting}
   + Introdução aos relatórios {#reporting-in-adobe-campaign}
     + [Práticas recomendadas para relatórios](reporting/using/best-practices.md)

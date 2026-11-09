@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
 workflow-type: tm+mt
-source-wordcount: '1426'
-ht-degree: 17%
+source-wordcount: '1454'
+ht-degree: 16%
 ---
 # Instalar pacotes integrados do Campaign Classic{#installing-campaign-standard-packages}
 
@@ -163,7 +163,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Pesquisas online (Gerenciador de Pesquisas)<br /> </td> 
-   <td> Cria e gerencia formulários online para adicionar ou modificar informações de perfil, para assinar, para cancelar a inscrição ou um formulário de entrada em competição. Opcional. <a href="../../surveys/using/about-surveys.md">Saiba Mais</a> <br /> </td> 
+   <td> Cria e gerencia formulários online para adicionar ou modificar informações de perfil, para assinar, para cancelar a inscrição ou um formulário de entrada em competição. Opcional. <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">Saiba mais</a> (documentação do Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -173,7 +173,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Gestor de Resposta<br /> </td> 
-   <td> Mede o sucesso e a lucratividade de campanhas de marketing ou apresentações de oferta para todos os canais de comunicação.  Opcional. <a href="../../response/using/about-response-manager.md">Saiba Mais</a> <br /> </td> 
+   <td> Mede o sucesso e a lucratividade de campanhas de marketing ou apresentações de oferta para todos os canais de comunicação.  Opcional. <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/automation/response-manager/about-response-manager" target="_blank">Saiba mais</a> (documentação do Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 

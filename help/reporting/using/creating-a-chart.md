@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '532'
-ht-degree: 100%
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 94%
 ---
 # Criar um gráfico{#creating-a-chart}
 
@@ -143,7 +143,7 @@ Esse tipo de gráfico permite rastrear a taxa de conversa de elementos medidos.
 
 É possível definir uma ação quando o usuário clica no gráfico. Abra a janela **[!UICONTROL Interaction events]** e selecione a ação que deseja realizar.
 
-Possíveis tipos de interação e suas configurações são detalhadas [nesta seção](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
+Possíveis tipos de interação e suas configurações estão detalhadas nesta [seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} (documentação do Campaign v8).
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 

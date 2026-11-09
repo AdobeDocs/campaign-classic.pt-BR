@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '2390'
+source-wordcount: '2404'
 ht-degree: 3%
 ---
 # Descrição do modelo de dados do Campaign{#data-model-description}
@@ -162,7 +162,7 @@ Este conjunto de tabelas está vinculado ao módulo **Otimização de Campanha**
 
 ## Gerenciamento de resposta {#response-management}
 
-Este conjunto de tabelas está vinculado ao módulo **Gestor de Resposta**, que permite medir o sucesso e a lucratividade de campanhas de marketing ou propostas de oferta para todos os canais de comunicação. Para obter mais informações, consulte [Sobre o gestor de resposta](../../response/using/about-response-manager.md).
+Este conjunto de tabelas está vinculado ao módulo **Gestor de Resposta**, que permite medir o sucesso e a lucratividade de campanhas de marketing ou propostas de oferta para todos os canais de comunicação. Para obter mais informações, consulte [Sobre o gestor de resposta](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/response-manager/about-response-manager){target="_blank"} (documentação do Campaign v8).
 
 ![](assets/data-model_response.png)
 
@@ -261,7 +261,7 @@ Esta tabela corresponde ao esquema **nms:batchEvent**. Ela contém a definição
 <!--
 ## Microsites Module {#microsites-module}
 
-This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](../../web/using/about-web-applications.md).
+This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (Campaign v8 documentation).
 
 ![](assets/data-model_microsites.png)
 

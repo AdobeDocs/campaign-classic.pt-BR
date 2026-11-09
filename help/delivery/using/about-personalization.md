@@ -36,8 +36,8 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: ht
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 100%
 ---
@@ -47,7 +47,9 @@ Com o Adobe Campaign, personalize as suas entregas para enviar mensagens que cor
 
 A personalização ajuda a tornar as suas mensagens mais relevantes e envolventes. Você pode usar os dados do destinatário para adaptar o conteúdo, adicionar campos dinâmicos ou exibir informações diferentes com base em condições. Saiba como configurar e usar os recursos de personalização nas suas entregas com a [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=pt-BR){target=_blank}.
 
-Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8.
+>[!NOTE]
+>
+>Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8.
 
 >[!BEGINTABS]
 
@@ -56,7 +58,7 @@ Como parte da transição do Campaign v7 para o v8, o conjunto de documentaçõe
 Para saber mais sobre a personalização de conteúdo, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=pt-BR){target=_blank}.
 
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=pt-BR){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=pt-BR){target="_blank"}
 
 
 >[!TAB Personalização e conteúdo condicional]

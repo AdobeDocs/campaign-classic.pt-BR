@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
-workflow-type: ht
-source-wordcount: '1364'
-ht-degree: 100%
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+workflow-type: tm+mt
+source-wordcount: '1399'
+ht-degree: 97%
 ---
 # Introdução ao rastreamento de mensagens {#get-started-tracking}
 
@@ -108,11 +108,11 @@ Para instalações locais, as informações de rastreamento são armazenadas no 
 
 **Rastreamento de uma aplicação web**
 
-Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicativo Web, como formulários e páginas de destino. [Saiba mais](../../web/using/tracking-a-web-application.md)
+Também é possível rastrear e medir visitas em páginas de aplicação web com tags de rastreamento. Essa funcionalidade pode ser usada para todos os tipos de aplicativo Web, como formulários e páginas de destino. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/tracking-a-web-application){target="_blank"} (documentação do Campaign v8)
 
 **Recusar rastreamento da aplicação web**
 
-A opção de recusar o rastreamento de aplicações web permite que você interrompa o rastreamento dos comportamentos da Web de usuários finais que recusam o rastreamento comportamental. Você pode incluir a capacidade de exibir um banner em aplicações web ou páginas de destino para permitir que os usuários recusem. [Saiba mais](../../web/using/web-application-tracking-opt-out.md)
+A opção de recusar o rastreamento de aplicações web permite que você interrompa o rastreamento dos comportamentos da Web de usuários finais que recusam o rastreamento comportamental. Você pode incluir a capacidade de exibir um banner em aplicações web ou páginas de destino para permitir que os usuários recusem. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/web-application-tracking-opt-out){target="_blank"} (documentação do Campaign v8)
 
 ## Solução de problemas de rastreamento {#tracking-troubleshooting}
 

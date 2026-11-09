@@ -37,8 +37,8 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 100%
 ---
@@ -48,7 +48,9 @@ Com o Adobe Campaign, crie entregas de correspondência direta para enviar mensa
 
 A correspondência direta continua sendo um canal eficiente para estabelecer conexões tangíveis com os seus clientes, sendo ideal para o fornecimento de ofertas impressas, catálogos, mensagens de fidelidade ou cartas personalizadas que reforçam a presença da marca além dos pontos de contato digitais. Saiba como configurar e gerenciar campanhas de correspondência direta de maneira eficaz, desde a preparação de dados e geração de arquivos para roteamento de parceiros até o rastreamento dos resultados da entrega, na [documentação do Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=pt-BR){target=_blank}.
 
-Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8.
+>[!NOTE]
+>
+>Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8.
 
 >[!BEGINTABS]
 
@@ -57,7 +59,7 @@ Como parte da transição do Campaign v7 para o v8, o conjunto de documentaçõe
 Para saber mais sobre o canal de correspondência direta, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=pt-BR){target=_blank}.
 
 
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=pt-BR){target=_blank}
+[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=pt-BR){target="_blank"}
 
 
 >[!TAB Criação de entregas de correspondência direta]

@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '929'
-ht-degree: 100%
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+workflow-type: tm+mt
+source-wordcount: '983'
+ht-degree: 90%
 ---
 # Criar um novo relatório{#creating-a-new-report}
 
@@ -142,7 +142,7 @@ Um **[!UICONTROL Page]** pode incluir os seguintes elementos:
 * Valor, Link, HTML, Imagem etc. **[!UICONTROL Static elements]**.
 * **[!UICONTROL Containers]** que permitem controlar o layout do componente.
 
-O modo de configuração de uma página e seus componentes é detalhado [nesta seção](../../web/using/about-web-forms.md).
+O modo de configuração de uma página e seus componentes está detalhado em [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (documentação do Campaign v8).
 
 A barra de ferramentas permite adicionar ou remover controles e organizar sua sequência na(s) página(s) do relatório.
 
@@ -150,7 +150,7 @@ A barra de ferramentas permite adicionar ou remover controles e organizar sua se
 
 ### Elementos estáticos {#static-elements}
 
-Os elementos estáticos permitem exibir informações no relatório, como elementos gráficos ou scripts, com os quais o usuário não interage. Consulte [esta seção](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) para obter mais informações.
+Os elementos estáticos permitem exibir informações no relatório, como elementos gráficos ou scripts, com os quais o usuário não interage. Consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} (documentação do Campaign v8) para obter mais informações.
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
@@ -158,7 +158,7 @@ Os elementos estáticos permitem exibir informações no relatório, como elemen
 
 Os controles de entrada e seleção permitem filtrar as informações exibidas no relatório. Para obter mais informações sobre como implementar esse tipo de filtragem, consulte as opções de [Filtragem nas consultas](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
 
-Para saber mais sobre criação e configuração de campos de seleção e de entrada, consulte [esta seção](../../web/using/about-web-forms.md).
+Para saber mais sobre criação e configuração de campos de seleção e de entrada, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (documentação do Campaign v8).
 
 É possível integrar um ou mais controles de entrada nos relatórios. Esse tipo de controle permite filtrar informações exibidas de acordo com um valor inserido.
 

@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 37%
+source-wordcount: '410'
+ht-degree: 34%
 ---
 # Gerenciamento de acesso {#access-management}
 
@@ -52,7 +52,7 @@ Pronto para uso, o operador webApp é um administrador. Para melhorar a seguran�
 
   1. Digite um nome para cada duplicação. Por exemplo: webapp_brand, webapp_brand2 etc.
 
-  1. Duplique um template de aplicativo web para ter um template por marca e edite as propriedades para alterar o operador selecionando Use a specific account.  Saiba mais [nesta página](../../web/using/defining-web-forms-properties.md).
+  1. Duplique um template de aplicativo web para ter um template por marca e edite as propriedades para alterar o operador selecionando Use a specific account.  Saiba mais em [esta página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"} (documentação do Campaign v8).
 
 ## Grupos de segurança e operadores administradores
 
