@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '2404'
+source-wordcount: '2420'
 ht-degree: 3%
 ---
 # Descrição do modelo de dados do Campaign{#data-model-description}
@@ -73,7 +73,7 @@ O campo iFolderId é a chave externa que vincula o recipient à sua pasta de exe
 
 O campo sCountryCode é o código ISO 3166-1 Alpha 2 (2 caracteres) do país associado ao recipient. Na verdade, esse campo é uma chave estrangeira na tabela de referência de país (NmsCountry), que contém os rótulos de país e outros dados de código de país. Se o país não estiver preenchido, o valor &quot;XX&quot; será armazenado (e usado no lugar de um registro de ID zero).
 
-Para obter mais informações sobre a tabela Recipient, consulte [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (documentação do Campaign v8).
+Para obter mais informações sobre a tabela Recipient, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (documentação do Campaign v8).
 
 ### NmsGroup {#NmsGroup}
 
@@ -162,7 +162,7 @@ Este conjunto de tabelas está vinculado ao módulo **Otimização de Campanha**
 
 ## Gerenciamento de resposta {#response-management}
 
-Este conjunto de tabelas está vinculado ao módulo **Gestor de Resposta**, que permite medir o sucesso e a lucratividade de campanhas de marketing ou propostas de oferta para todos os canais de comunicação. Para obter mais informações, consulte [Sobre o gestor de resposta](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/response-manager/about-response-manager){target="_blank"} (documentação do Campaign v8).
+Este conjunto de tabelas está vinculado ao módulo **Gestor de Resposta**, que permite medir o sucesso e a lucratividade de campanhas de marketing ou propostas de oferta para todos os canais de comunicação. Para obter mais informações, consulte [Sobre o gestor de resposta](https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager){target="_blank"} (documentação do Campaign v8).
 
 ![](assets/data-model_response.png)
 
@@ -222,7 +222,7 @@ Ele contém um registro que representa a reação de um indivíduo a uma determi
 
 ## Simulação e entrega {#simulation-and-delivery}
 
-Este conjunto de tabelas está vinculado ao módulo **Simulation**, que permite testar a distribuição de ofertas pertencentes a uma categoria ou um ambiente antes de enviar sua proposta para os recipients. Para obter mais informações, consulte [Sobre a simulação de ofertas](../../interaction/using/about-offers-simulation.md).
+Este conjunto de tabelas está vinculado ao módulo **Simulation**, que permite testar a distribuição de ofertas pertencentes a uma categoria ou um ambiente antes de enviar sua proposta para os recipients. Para obter mais informações, consulte [Sobre a simulação de ofertas](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/simulating-offers/about-offers-simulation){target="_blank"} (documentação do Campaign v8).
 
 ![](assets/data-model_simulation.png)
 

@@ -20,10 +20,10 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '117'
-ht-degree: 100%
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 81%
 ---
 # Utilização de parâmetros avançados{#using-advanced-parameters}
 
@@ -36,7 +36,7 @@ Este capítulo detalha os vários parâmetros avançados possíveis no Interacti
 >O capítulo a seguir destina-se a **administradores técnicos**.
 
 * É possível usar dados contextuais adicionais. Consulte a seção [Dados adicionais](../../interaction/using/additional-data.md).
-* É possível enriquecer os contextos de aplicativo das ofertas sugeridas por meio de um canal de entrada. Para fazer isso, o esquema de interação **nms:interaction** deve ser estendido. Consulte a seção [Exemplos de extensões](../../interaction/using/extension-example.md) para ver o procedimento completo.
+* É possível enriquecer os contextos de aplicativo das ofertas sugeridas por meio de um canal de entrada. Para fazer isso, o esquema de interação **nms:interaction** deve ser estendido. Consulte a seção [Exemplo de extensão](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/advanced-parameters/extension-example){target="_blank"} (documentação do Campaign v8) para obter o procedimento completo.
 * A criação de um ambiente de teste é detalhada na seção [Criação de um ambiente de teste](../../interaction/using/creating-a-test-environment.md).
 * É possível modificar o comportamento do mecanismo padrão usando ganchos. Para obter mais informações, consulte a seção [Ganchos](../../interaction/using/hooks.md)
 * Finalmente, o uso do Interaction com uma arquitetura distribuída é detalhado na seção [Arquitetura distribuída](../../interaction/using/distributed-architectures.md).

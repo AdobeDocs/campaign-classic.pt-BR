@@ -8,9 +8,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1353'
 ht-degree: 97%
 ---
 
@@ -357,27 +357,13 @@ ht-degree: 97%
 + Gerenciar ofertas {#managing-offers}
   + Introdução à interação {#interaction-overview}
     + [Interação e gerenciamento de ofertas](interaction/using/interaction-and-offer-management.md)
-  + Gerenciar um catálogo de ofertas {#managing-an-offer-catalog}
-    + [Aprovar e ativar uma oferta](interaction/using/approving-and-activating-an-offer.md)
-    + [Gerenciar modelos de ofertas](interaction/using/managing-offer-templates.md)
-    + [Gerenciar apresentação de ofertas](interaction/using/managing-offer-presentation.md)
-  + Simulação de ofertas{#simulating-offers}
-    + [Sobre a simulação de ofertas](interaction/using/about-offers-simulation.md)
-    + [Configurações de execução](interaction/using/execution-settings.md)
-    + [Escopo de simulação](interaction/using/simulation-scope.md)
-    + [Rastreamento de simulação](interaction/using/simulation-tracking.md)
   + Parâmetros avançados {#advanced-parameters}
     + [Usar parâmetros avançados](interaction/using/using-advanced-parameters.md)
     + [Dados adicionais](interaction/using/additional-data.md)
-    + [Exemplo de extensão](interaction/using/extension-example.md)
     + [Criar um ambiente de teste](interaction/using/creating-a-test-environment.md)
     + [Modificar o comportamento padrão do mecanismo](interaction/using/hooks.md)
     + [Arquiteturas distribuídas](interaction/using/distributed-architectures.md)
     + [Configuração do buffer de dados](installation/using/interaction-data-buffer.md)
-  + Caso de uso {#case-study}
-    + [Regras de apresentação](interaction/using/presentation-rules.md)
-    + [Ofertas em um canal de entrada](interaction/using/offers-on-an-inbound-channel.md)
-    + [Ofertas em um canal de saída](interaction/using/offers-on-an-outbound-channel.md)
 + Criar e compartilhar relatórios {#reporting}
   + Introdução aos relatórios {#reporting-in-adobe-campaign}
     + [Práticas recomendadas para relatórios](reporting/using/best-practices.md)
