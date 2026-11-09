@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '761'
-ht-degree: 100%
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+workflow-type: tm+mt
+source-wordcount: '777'
+ht-degree: 95%
 ---
 # Configurar acesso ao relatório{#configuring-access-to-the-report}
 
@@ -141,7 +141,7 @@ Para obter mais informações, consulte [Contexto de exibição do relatório](#
 
 As configurações específicas permitem controlar erros. A configuração **_uuid** é encontrada na URL do relatório. É possível adicionar as configurações **configurações &amp;_preview** ou **&amp;_debug**.
 
-Para saber mais sobre essas configurações, consulte a seção **Definição das propriedades dos formulários web** do capítulo de [Formulários web](../../web/using/about-web-forms.md).
+Para saber mais sobre essas configurações, consulte a seção **Definição das propriedades dos formulários web** do capítulo [Formulários web](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (documentação do Campaign v8).
 
 ## Publicar o relatório {#publishing-the-report}
 

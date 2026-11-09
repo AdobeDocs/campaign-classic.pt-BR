@@ -27,10 +27,10 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 93%
+source-wordcount: '279'
+ht-degree: 80%
 ---
 # Inserção de um ativo compartilhado{#inserting-a-shared-asset}
 
@@ -48,7 +48,7 @@ Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emai
 
      ![](assets/dam_insert_image_standard.png)
 
-   * Se estiver usando o [modo de edição avançado](../../web/using/about-campaign-html-editor.md) (DCE), vá para um bloco de imagem e, por meio do menu contextual, selecione **[!UICONTROL Select a shared asset]**.
+   * Se estiver usando o [modo de edição avançado](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/about-campaign-html-editor){target="_blank"} (documentação do Campaign v8) (DCE), vá para um bloco de imagem e, por meio do menu contextual, selecione **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_dce.png)
 
@@ -64,4 +64,4 @@ Os ativos compartilhados da Adobe Experience Cloud podem ser usados em seus emai
 
 >[!NOTE]
 >
->Se você usar a integração com o Adobe Target, poderá usar uma imagem compartilhada como uma imagem padrão. Consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/ac-at){target="_blank"} (documentação do Campaign v8).
+>Se você usar a integração com o Adobe Target, poderá usar uma imagem compartilhada como uma imagem padrão. Consulte [esta página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-at){target="_blank"} (documentação do Campaign v8).

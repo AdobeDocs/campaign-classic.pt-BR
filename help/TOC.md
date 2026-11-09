@@ -8,9 +8,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1395'
 ht-degree: 97%
 ---
 
@@ -354,36 +354,6 @@ ht-degree: 97%
   + Modelos de mensagem {#message-templates}
     + [Testar modelos de mensagem](message-center/using/testing-message-templates.md)
   + [Caso de uso](message-center/using/transactional-email-with-attachments.md)
-+ Criar conteúdo da web {#designing-content}
-  + Aplicativos web {#web-applications}
-    + [Introdução a aplicativos web](web/using/about-web-applications.md)
-    + [Criar um novo aplicativo web](web/using/creating-a-new-web-application.md)
-    + [Criar um aplicativo web](web/using/designing-a-web-application.md)
-    + [Casos de uso: criar visões gerais](web/using/use-cases-creating-overviews.md)
-    + [Traduzir um aplicativo web](web/using/translating-a-web-application.md)
-    + [Rastrear visitas em um aplicativo web](web/using/tracking-a-web-application.md)
-    + [Recusa de rastreamento de aplicativo web](web/using/web-application-tracking-opt-out.md)
-  + Editar conteúdo HTML {#editing-html-content}
-    + [Introdução ao editor de HTML](web/using/about-campaign-html-editor.md)
-    + [Gerenciamento de modelo](web/using/template-management.md)
-    + [Interface do editor de conteúdo](web/using/content-editor-interface.md)
-    + [Editar conteúdo](web/using/editing-content.md)
-    + [Práticas recomendadas de edição de conteúdo](web/using/content-editing-best-practices.md)
-    + [Criar uma página de destino](web/using/creating-a-landing-page.md)
-    + [Caso de uso: criar uma entrega de email](web/using/use-case-creating-an-email-delivery.md)
-  + Formulários web {#web-forms}
-    + [Introdução aos formulários web](web/using/about-web-forms.md)
-    + [Usar um modelo de formulário web](web/using/using-a-web-form-template.md)
-    + [Adicionar campos a um formulário web](web/using/adding-fields-to-a-web-form.md)
-    + [Elementos estáticos em um formulário web](web/using/static-elements-in-a-web-form.md)
-    + [Definir layout de formulários web](web/using/defining-web-forms-layout.md)
-    + [Renderização do formulário](web/using/form-rendering.md)
-    + [Definir sequenciamento de páginas](web/using/defining-web-forms-page-sequencing.md)
-    + [Salvar respostas dos formulários web](web/using/web-forms-answers.md)
-    + [Publicar um formulário web](web/using/publishing-a-web-form.md)
-    + [Definir propriedades de formulários web](web/using/defining-web-forms-properties.md)
-    + [Traduzir um formulário web](web/using/translating-a-web-form.md)
-    + [Casos de uso: formulários web](web/using/use-cases-web-forms.md)
 + Gerenciar ofertas {#managing-offers}
   + Introdução à interação {#interaction-overview}
     + [Interação e gerenciamento de ofertas](interaction/using/interaction-and-offer-management.md)

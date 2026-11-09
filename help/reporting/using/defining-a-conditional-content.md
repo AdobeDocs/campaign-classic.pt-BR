@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '245'
-ht-degree: 100%
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 81%
 ---
 # Definir um conteúdo condicional{#defining-a-conditional-content}
 
@@ -49,7 +49,7 @@ Para exibir parte de um relatório condicional, é preciso definir suas condiç�
 
 As condições de visibilidade podem depender do status do operador, nos itens selecionados ou inseridos na página do relatório.
 
-Exemplos mostrando a exibição condicional de itens em uma página são fornecidos [nesta seção](../../web/using/form-rendering.md#defining-fields-conditional-display).
+Exemplos mostrando a exibição condicional de itens em uma página são fornecidos em [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/form-rendering#defining-fields-conditional-display){target="_blank"} (documentação do Campaign v8).
 
 No exemplo a seguir, a condição de exibição depende do idioma:
 
@@ -72,6 +72,6 @@ Essa atividade baseia-se no seguinte princípio operacional:
 
 1. Selecione **[!UICONTROL Enable default transition]** para adicionar uma transição, caso uma das condições configuradas não seja atendida.
 
-   Para obter mais informações, consulte [esta seção](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+   Para obter mais informações sobre isso, consulte [esta seção](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-page-sequencing#conditional-page-display){target="_blank"} (documentação do Campaign v8).
 
 Uma atividade **[!UICONTROL Test]** pode ser colocada no início do gráfico para condicionar a exibição, dependendo do contexto ou do perfil do operador, por exemplo.
