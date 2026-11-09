@@ -73,7 +73,7 @@ Conheça as principais etapas relacionadas à criação de entregas de email **n
 Consulte estas páginas para saber mais sobre parâmetros de email **na documentação do Campaign v8**:
 
 * [Link para a mirror page](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/mirror-page){target="_blank"}: configure a mirror page para garantir que seus clientes sempre tenham a melhor experiência de renderização.
-* [Adicionar um endereço com CCO](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"}: configure o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma.
+* [Adicionar um endereço com CCO](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"}: configure o Adobe Campaign para manter uma cópia dos emails enviados da sua plataforma.
 * [Definir parâmetros de email adicionais](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=pt-BR){target="_blank"}: saiba mais sobre as opções e os parâmetros disponíveis nas propriedades de entrega.
 
 Consulte também esta [página](sending-with-enhanced-mta.md) para saber mais sobre o MTA aprimorado.
@@ -90,16 +90,16 @@ Adobe Campaign lets you mass deliver personalized electronic messages to a targe
 Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
-* Learn more about the Adobe Campaign [Delivery best practices](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"} (Campaign v8 documentation).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+* Learn more about the Adobe Campaign [Delivery best practices](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"} (Campaign v8 documentation).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=pt-BR).
 
 The key steps to send an email are as follows:
 
-* [Create an email delivery](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target="_blank"} (Campaign v8 documentation)
-* [Define the target population](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message){target="_blank"} (Campaign v8 documentation)
-* [Define the email content](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"} (Campaign v8 documentation)
-* [Send the email](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/send){target="_blank"} (Campaign v8 documentation)
+* [Create an email delivery](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/email){target="_blank"} (Campaign v8 documentation)
+* [Define the target population](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/create-message){target="_blank"} (Campaign v8 documentation)
+* [Define the email content](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"} (Campaign v8 documentation)
+* [Send the email](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/emails/send){target="_blank"} (Campaign v8 documentation)
 * [Monitor the delivery](about-delivery-monitoring.md)
 
-The sections below provide information that is specific to the email channel. For global information on how to create a delivery, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message){target="_blank"} (Campaign v8 documentation).
+The sections below provide information that is specific to the email channel. For global information on how to create a delivery, refer to [this section](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/create-message){target="_blank"} (Campaign v8 documentation).
 -->
