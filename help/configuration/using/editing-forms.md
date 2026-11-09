@@ -30,7 +30,7 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 10%
@@ -41,9 +41,11 @@ ht-degree: 10%
 
 Profissionais de marketing e operadores usam formulários de entrada para criar, modificar e visualizar registros. O Forms mostra uma representação visual das informações.
 
-Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre formulários de entrada, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target=_blank}.
-
-[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target=_blank}
+>[!NOTE]
+>
+>Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre formulários de entrada, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target=_blank}.
+>
+>[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms){target=_blank}
 
 É possível criar e modificar formulários de entrada:
 
@@ -84,7 +86,7 @@ Para visualizar um formulário, clique na guia **[!UICONTROL Preview]**:
 
 * Assistente
 
-  Este formulário inclui várias telas flutuantes ordenadas em sequências específicas. Os usuários navegam de uma tela para outra. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#wizards){target="_blank"} (documentação do Campaign v8).
+  Este formulário inclui várias telas flutuantes ordenadas em sequências específicas. Os usuários navegam de uma tela para outra. [Leia mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#wizards){target="_blank"} (documentação do Campaign v8).
 
 * Caixa de ícones
 
@@ -170,7 +172,7 @@ Para criar um formulário, siga estas etapas:
 
 1. Insira os elementos de formulário.
 
-   Por exemplo, para inserir um campo de entrada, use o elemento `<input>`. Defina o atributo `xpath` para a referência de campo como uma expressão XPath. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} (documentação do Campaign v8).
+   Por exemplo, para inserir um campo de entrada, use o elemento `<input>`. Defina o atributo `xpath` para a referência de campo como uma expressão XPath. [Leia mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} (documentação do Campaign v8).
 
    Este exemplo mostra campos de entrada com base no esquema `nms:recipient`.
 
@@ -203,7 +205,7 @@ Para criar um formulário, siga estas etapas:
    | Caixa de seleção | `type="checkbox"` |
    | Editar árvore | `type="tree"` |
 
-   Leia mais sobre [controles de lista de memória](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#memory-list-controls){target="_blank"} (documentação do Campaign v8).
+   Leia mais sobre [controles de lista de memória](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#memory-list-controls){target="_blank"} (documentação do Campaign v8).
 
 1. Opcionalmente, defina o acesso aos campos:
 
@@ -278,11 +280,11 @@ Neste exemplo, o endereço de email é obrigatório e uma mensagem de erro será
 </leave>
 ```
 
-Leia mais sobre [campos de expressão](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#expression-field){target="_blank"} (documentação do Campaign v8) e [contexto de formulário](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (documentação do Campaign v8).
+Leia mais sobre [campos de expressão](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#expression-field){target="_blank"} (documentação do Campaign v8) e [contexto de formulário](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (documentação do Campaign v8).
 
 ### Validar valores
 
-Você pode usar chamadas do JavaScript SOAP para validar dados de formulário a partir do Console. Use essas chamadas para validação complexa, por exemplo, para verificar um valor em relação a uma lista de valores autorizados. [Leia mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#soap-methods){target="_blank"} (documentação do Campaign v8).
+Você pode usar chamadas do JavaScript SOAP para validar dados de formulário a partir do Console. Use essas chamadas para validação complexa, por exemplo, para verificar um valor em relação a uma lista de valores autorizados. [Leia mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#soap-methods){target="_blank"} (documentação do Campaign v8).
 
 1. Crie uma função de validação em um arquivo JS.
 
@@ -339,4 +341,4 @@ Este exemplo mostra como você pode fazer chamadas de serviço de dentro de form
 </enter>
 ```
 
-Neste exemplo, a entrada é uma ID, que é uma chave primária. Quando os usuários preenchem o formulário dessa ID, é feita uma chamada SOAP com essa ID como parâmetro de entrada. A saída é um booleano gravado neste campo: `/tmp/@count`. Você pode usar esse booleano dentro do formulário. Leia mais sobre [contexto de formulário](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (documentação do Campaign v8).
+Neste exemplo, a entrada é uma ID, que é uma chave primária. Quando os usuários preenchem o formulário dessa ID, é feita uma chamada SOAP com essa ID como parâmetro de entrada. A saída é um booleano gravado neste campo: `/tmp/@count`. Você pode usar esse booleano dentro do formulário. Leia mais sobre [contexto de formulário](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (documentação do Campaign v8).
