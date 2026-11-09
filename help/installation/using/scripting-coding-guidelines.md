@@ -96,7 +96,7 @@ Consulte estas páginas:
 
 Além do modelo de segurança baseado em pastas, você pode usar direitos nomeados para limitar as ações do operador:
 
-* Você pode adicionar alguns filtros de sistema (sysFilter) para impedir a leitura/gravação de seus dados (consulte [esta página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} (documentação do Campaign v8)).
+* Você pode adicionar alguns filtros de sistema (sysFilter) para impedir a leitura/gravação de seus dados (consulte [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} (documentação do Campaign v8)).
 
   ```
   <sysFilter name="writeAccess">    

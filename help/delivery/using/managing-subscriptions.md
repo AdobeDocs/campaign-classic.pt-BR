@@ -166,7 +166,7 @@ Para registrar destinatários para um serviço de informação, você pode:
 
   ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-  Os detalhes sobre fluxos de trabalho e como usá-los estão em [esta seção](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentação do Campaign v8).
+  Os detalhes sobre fluxos de trabalho e como usá-los estão em [esta seção](https://experienceleague.adobe.com/pt-br/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentação do Campaign v8).
 
 ### Cancelamento de subscrição de um destinatário em relação a um serviço {#unsubscribing-a-recipient-from-a-service}
 

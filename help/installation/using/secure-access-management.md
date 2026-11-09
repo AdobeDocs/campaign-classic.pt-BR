@@ -62,7 +62,7 @@ Não use o operador administrador (ou não o compartilhe). Crie um operador por 
 
 Evite adicionar muitos operadores no grupo de administradores (ou com direitos nomeados de administrador). Eles são operadores muito poderosos (podem executar todas as instruções SQL, executar comandos no servidor etc.).
 
-A Adobe Campaign fornece três privilégios de alto nível por meio de [direitos nomeados](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"} (documentação do Campaign v8):
+A Adobe Campaign fornece três privilégios de alto nível por meio de [direitos nomeados](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"} (documentação do Campaign v8):
 
 * **ADMINISTRATION** (admin): dá acesso a tudo e permite fazer tudo, ignorando todas as verificações de direitos nomeados; portanto, inclui os direitos nomeados PROGRAM EXECUTION (createProcess) e SQL
 
