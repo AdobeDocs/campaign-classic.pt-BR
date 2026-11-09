@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Reporting
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%
@@ -57,4 +57,4 @@ Para aprofundar o assunto e saber mais sobre os termos, conceitos e abordagens p
 >
 >Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber como melhorar a capacidade de entrega e usar as ferramentas de capacidade de entrega do Campaign, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/deliverability-management/about-deliverability){target=_blank}.
 >
->[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/deliverability-management/about-deliverability){target=_blank}
+>[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/deliverability-management/about-deliverability){target="_blank"}

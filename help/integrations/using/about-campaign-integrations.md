@@ -39,7 +39,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 90%
@@ -54,9 +54,9 @@ A lista completa de soluções da Adobe e serviços de aplicativos que podem ser
 
 >[!NOTE]
 >
->Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre como conectar o Campaign com suas soluções, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/integration){target=_blank}.
+>Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre como conectar o Campaign com suas soluções, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/integration){target=_blank}.
 >
->[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/integration){target=_blank}
+>[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/integration){target="_blank"}
 
 >[!CAUTION]
 >
@@ -101,11 +101,11 @@ A tabela a seguir fornece acesso à documentação disponível da integração d
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
-   <td> Configure essa integração para criar conteúdos de email ou formulários mapeados para o banco de dados do Adobe Campaign diretamente no <strong>Adobe Experience Manager</strong>.<br /> <p><a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">Saiba mais</a> (documentação do Campaign v8) sobre a integração Adobe Campaign - Adobe Experience Manager.</p><br /> </td> 
+   <td> Configure essa integração para criar conteúdos de email ou formulários mapeados para o banco de dados do Adobe Campaign diretamente no <strong>Adobe Experience Manager</strong>.<br /> <p><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">Saiba mais</a> (documentação do Campaign v8) sobre a integração Adobe Campaign - Adobe Experience Manager.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Target</strong><br /> </td> 
-   <td> Configure essa integração para inserir imagens que são computadas dinamicamente pelo <strong>Adobe Target</strong> ao abrir o email criado e enviado pelo Adobe Campaign.<br /> <p><a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/ac-at" target="_blank">Saiba mais</a> (documentação do Campaign v8) sobre a integração Adobe Campaign - Adobe Target.</p><br /> </td> 
+   <td> Configure essa integração para inserir imagens que são computadas dinamicamente pelo <strong>Adobe Target</strong> ao abrir o email criado e enviado pelo Adobe Campaign.<br /> <p><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-at" target="_blank">Saiba mais</a> (documentação do Campaign v8) sobre a integração Adobe Campaign - Adobe Target.</p><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Adobe Audience Manager</strong><br /> </td> 

@@ -38,7 +38,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 21%
@@ -49,9 +49,9 @@ Esta página lista como os tipos de dados do Adobe Campaign são mapeados para o
 
 >[!NOTE]
 >
->Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre a estrutura do esquema, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure){target=_blank}.
+>Como parte da transição do Campaign v7 para o v8, o conjunto de documentações do Campaign Classic foi simplificado e reorganizado. Os recursos comuns agora estão disponíveis apenas no conjunto de documentações do Campaign v8. Para saber mais sobre a estrutura do esquema, consulte a [documentação do Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure){target=_blank}.
 >
->[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure){target=_blank}
+>[![imagem](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure){target="_blank"}
 
 ## Mapeamento dos tipos de dados do Adobe Campaign/DBMS {#mapping-the-types-of-adobe-campaign-dbms-data}
 
@@ -143,5 +143,5 @@ Navegue pelos links a seguir para saber mais:
 
 * [Introdução a esquemas](about-schema-reference.md)
 * [Mapeamento de banco de dados](database-mapping.md)
-* [Gerenciamento de links](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (documentação do Campaign v8)
+* [Gerenciamento de links](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (documentação do Campaign v8)
 * [Gerenciamento de chaves](database-keys.md)
