@@ -52,7 +52,7 @@ Pronto para uso, o operador webApp é um administrador. Para melhorar a seguran�
 
   1. Digite um nome para cada duplicação. Por exemplo: webapp_brand, webapp_brand2 etc.
 
-  1. Duplique um template de aplicativo web para ter um template por marca e edite as propriedades para alterar o operador selecionando Use a specific account.  Saiba mais em [esta página](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"} (documentação do Campaign v8).
+  1. Duplique um template de aplicativo web para ter um template por marca e edite as propriedades para alterar o operador selecionando Use a specific account.  Saiba mais em [esta página](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"} (documentação do Campaign v8).
 
 ## Grupos de segurança e operadores administradores
 
@@ -62,7 +62,7 @@ Não use o operador administrador (ou não o compartilhe). Crie um operador por 
 
 Evite adicionar muitos operadores no grupo de administradores (ou com direitos nomeados de administrador). Eles são operadores muito poderosos (podem executar todas as instruções SQL, executar comandos no servidor etc.).
 
-A Adobe Campaign fornece três privilégios de alto nível por meio de [direitos nomeados](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"} (documentação do Campaign v8):
+A Adobe Campaign fornece três privilégios de alto nível por meio de [direitos nomeados](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"} (documentação do Campaign v8):
 
 * **ADMINISTRATION** (admin): dá acesso a tudo e permite fazer tudo, ignorando todas as verificações de direitos nomeados; portanto, inclui os direitos nomeados PROGRAM EXECUTION (createProcess) e SQL
 
