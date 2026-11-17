@@ -39,16 +39,16 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 90%
+source-wordcount: '790'
+ht-degree: 60%
 ---
 # Introdução às integrações do Adobe Campaign {#about-campaign-integrations}
 
-A Adobe Experience Cloud é um conjunto abrangente das melhores soluções integradas e criadas com base em uma plataforma de dados comum e um conjunto comum de soluções e aplicativos avançados.
+O [!DNL Adobe CX Enterprise] é um conjunto abrangente das melhores soluções integradas disponíveis no setor, que aproveita a plataforma de dados comum com um conjunto de soluções e aplicativos avançados.
 
-Saiba mais sobre as integrações funcionais disponíveis entre o Adobe Campaign e as soluções da Adobe Experience Cloud [nesta página](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/integrations){_blank}.
+Saiba mais sobre as integrações funcionais disponíveis entre o Adobe Campaign e as soluções do [!DNL CX Enterprise] nesta [página](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/integrations){_blank}.
 
 A lista completa de soluções da Adobe e serviços de aplicativos que podem ser integrados ao Adobe Campaign, bem como a documentação associada, está disponível [nesta seção](#experience-cloud-integrations).
 
@@ -65,23 +65,23 @@ A lista completa de soluções da Adobe e serviços de aplicativos que podem ser
 
 ## Vincular soluções {#working-with-experience-cloud-solutions}
 
-Várias soluções podem ser vinculadas à Adobe Experience Cloud. Uma **organização** é a entidade-cliente que permite a um administrador configurar grupos e usuários e controlar o logon único (SSO) na Adobe Experience Cloud. A organização funciona como uma empresa de login que abrange todos os produtos e soluções da Experience Cloud. Na maioria das vezes, uma organização é o nome da sua empresa. No entanto, uma empresa pode ter muitas organizações.
+Várias soluções podem ser vinculadas a [!DNL CX Enterprise]. A **organização** é a entidade-cliente que permite a um administrador configurar grupos e usuários e controlar o logon único (SSO) em [!DNL CX Enterprise]. A organização atua como uma empresa de logon que abrange todos os produtos e soluções da [!DNL CX Enterprise]. Na maioria das vezes, uma organização é o nome da sua empresa. No entanto, uma empresa pode ter muitas organizações.
 
-A gestão de organização e a vinculação às contas da Adobe Experience Cloud são detalhadas no [portal de ajuda da Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/organizations){_blank}
+A gestão de organização e a vinculação às contas do [!DNL CX Enterprise] estão detalhadas no [portal de ajuda da Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/organizations){_blank}.
 
 ## Gerenciamento de identidade e cookies {#id-and-cookies}
 
-Quando o Adobe Campaign é instalado ou integrado a uma instalação existente com a Adobe Experience Cloud, o [serviço de identidade da Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/id-service/using/home){_blank} está habilitado. Esse serviço substitui o cookie permanente usado primeiro e mais importante pelo Adobe Campaign para suas funcionalidades de rastreamento.
+Ao instalar o Adobe Campaign ou integrar uma instalação existente com o [!DNL CX Enterprise], o [Serviço de Identidade da Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/id-service/using/home){_blank} está habilitado. Esse serviço substitui o cookie permanente usado primeiro e mais importante pelo Adobe Campaign para suas funcionalidades de rastreamento.
 
-O Serviço de identidade da Adobe Experience Cloud (ID Service) fornece uma ID contínua e universal que identifica seus visitantes em todas as soluções na Experience Cloud.
+O Serviço de Identidade da Adobe Experience Cloud (ID Service) fornece uma ID persistente e universal que identifica os visitantes em todas as soluções da [!DNL CX Enterprise].
 
 Um identificador de visitante único será atribuído aos destinatários que geram logs de rastreamento. Essa ID será salva no campo **[!UICONTROL Requester UUID (@sourceID)]** da tabela **[!UICONTROL nms:trackingLogRcp]**. **Os dados de rastreamento dos destinatários existentes antes do serviço de ID de visitante foram implementados e, portanto, não serão mais utilizáveis**.
 
-A ID será reconhecida pelas outras soluções da Adobe Experience Cloud com o mesmo CNAME. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/id-service/using/reference/analytics-reference/cname){_blank}.
+A ID será reconhecida pelas outras soluções do [!DNL CX Enterprise] com o mesmo CNAME. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/id-service/using/reference/analytics-reference/cname){_blank}.
 
-## Integrações da Experience Cloud {#experience-cloud-integrations}
+## [!DNL CX Enterprise] integrações {#experience-cloud-integrations}
 
-A tabela a seguir fornece acesso à documentação disponível da integração da Experience Cloud.
+A tabela a seguir fornece acesso à documentação de integração do [!DNL CX Enterprise] disponível.
 
 <table> 
  <thead> 
@@ -97,7 +97,7 @@ A tabela a seguir fornece acesso à documentação disponível da integração d
   </tr> 
   <tr> 
    <td> <strong>Sistema de gerenciamento de identidades (IMS) da Adobe - Adobe ID</strong><br /> </td> 
-   <td> Configure o Adobe IMS para se conectar ao Adobe Campaign usando a mesma Adobe ID utilizada nas outras soluções da Adobe Experience Cloud.<br /> É necessário usar uma Adobe ID para fazer logon a fim de utilizar determinadas funcionalidades relacionadas às integrações da Adobe Experience Cloud.<br /> <p><a href="../../integrations/using/about-adobe-id.md">Saiba mais</a> sobre a implementação da Adobe ID com o Adobe Campaign.</p><br /> </td> 
+   <td> Configure o Adobe IMS para se conectar ao Adobe Campaign com o mesmo Adobe ID das outras soluções da CX Enterprise.<br /> Um Adobe ID deve ser usado para fazer logon para usar determinadas funcionalidades vinculadas às integrações do CX Enterprise.<br /> <p><a href="../../integrations/using/about-adobe-id.md">Saiba mais</a> sobre a implementação da Adobe ID com o Adobe Campaign.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
@@ -109,11 +109,11 @@ A tabela a seguir fornece acesso à documentação disponível da integração d
   </tr> 
   <tr> 
    <td><strong>Adobe Audience Manager</strong><br /> </td> 
-   <td> Configure essa integração para compartilhar públicos-alvo entre as soluções e os aplicativos da Adobe Experience Cloud que você usa.<br /> <p><a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Saiba mais</a> sobre as integrações do Adobe Campaign e Adobe Audience Manager.</p><br /> </td> 
+   <td> Configure essa integração para compartilhar públicos entre as soluções da CX Enterprise e os aplicativos que você usa.<br /> <p><a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Saiba mais</a> sobre as integrações do Adobe Campaign e Adobe Audience Manager.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Ativos</strong><br /> </td> 
-   <td> Configure essa integração para inserir ativos da sua biblioteca da Adobe Experience Cloud em emails e páginas de destino criadas no Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">Saiba mais</a> sobre a integração do Adobe Campaign e o Assets</p><br /> </td> 
+   <td> Configure essa integração para inserir ativos da sua biblioteca CX Enterprise em emails e landing pages criadas no Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">Saiba mais</a> sobre a integração do Adobe Campaign e o Assets</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>AEM Assets</strong><br /> </td> 

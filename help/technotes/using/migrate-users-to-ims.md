@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '673'
 ht-degree: 4%
 ---
 # Migrar operadores do Campaign para o Adobe Identity Management System (IMS) {#migrate-users-to-ims}
@@ -52,7 +52,7 @@ Esse procedimento se aplica a todos os usuários do Campaign que ainda não est�
 
 Se os operadores em sua organização estiverem se conectando ao console do cliente do Campaign usando seu logon/senha (também conhecido como. autenticação nativa), você será afetado e deverá migrar esses operadores para o Adobe IMS conforme detalhado abaixo.
 
-A migração para o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} é uma obrigação de segurança para tornar seus ambientes seguros e padronizados, pois a maioria das outras soluções e aplicativos da Adobe Experience Cloud já estão no IMS.
+A migração para o [Adobe Identity Management System (IMS)](https://helpx.adobe.com/br/enterprise/using/identity.html){target="_blank"} é uma obrigação de segurança para tornar seus ambientes seguros e padronizados, pois a maioria das outras soluções e aplicativos do [!DNL Adobe CX Enterprise] já está no IMS.
 
 Esta alteração é aplicável a partir do Campaign Classic v7.4.1 (e as [versões compatíveis com a migração do IMS](ac-ims.md#ims-versions) mais recentes) e é **obrigatória** para migrar para o Adobe Campaign v8.
 

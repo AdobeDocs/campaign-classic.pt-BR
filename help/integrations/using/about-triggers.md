@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '411'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 89%
 ---
 # Trabalhar com acionadores do Campaign e da Experience Cloud{#about-adobe-experience-triggers}
 
@@ -64,13 +64,13 @@ O processo [!DNL pipelined] está sempre em execução no servidor de marketing 
 
 ![](assets/triggers_2.png)
 
-O processo [!DNL pipelined] faz logon na Experience Cloud usando um serviço de autenticação e envia uma chave privada. O serviço de autenticação retorna um token. O token é usado para a autenticação ao recuperar os eventos.
+O processo [!DNL pipelined] faz logon em [!DNL Adobe CX Enterprise] usando um serviço de autenticação e envia uma chave privada. O serviço de autenticação retorna um token. O token é usado para a autenticação ao recuperar os eventos.
 
 ## Pré-requisitos {#adobe-io-prerequisites}
 
 Antes de iniciar esta implementação, verifique se você tem:
 
-* um **identificador de organização** válido: o ID da organização é o identificador exclusivo da Adobe Experience Cloud, que é usado, por exemplo, para o serviço de VisitorID e para o Logon único (SSO) no IMS. [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR)
+* um **identificador de organização** válido: o ID da organização é o identificador exclusivo dentro do [!DNL CX Enterprise], usado por exemplo para o serviço VisitorID e o Logon Único (SSO) do IMS. [Saiba mais](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR)
 * um **Acesso de desenvolvedor** para sua organização. O administrador de sistema da organização precisa seguir o procedimento **Adicionar desenvolvedores a um único perfil de produto** detalhado [nesta página](https://helpx.adobe.com/br/enterprise/using/manage-developers.html) para fornecer acesso de desenvolvedor ao `Analytics - {tenantID}` do Perfil do produto do Adobe Analytics que está associado ao Triggers.
 
 ## Etapas de implementação {#implement}

@@ -29,10 +29,10 @@ subfeature_v2:
     internal-label: Target integration
   - id: a14877cc-63b1-41d9-bf0b-5f97cadd0417
     internal-label: Configuration guidelines
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
-workflow-type: ht
-source-wordcount: '368'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 91%
 ---
 # Configuração de IMS{#configuring-ims}
 
@@ -43,12 +43,12 @@ ht-degree: 100%
 
 ## Pré-requisitos {#prerequisites}
 
-* Você deve ter um nome e um ID de organização da Adobe Experience Cloud. Para encontrar a ID da sua organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}.
-* Você precisa adicionar usuários na Experience Cloud. Para obter mais informações, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=pt-BR){_blank}.
+* Você deve ter um nome e uma ID de organização [!DNL Adobe CX Enterprise]. Para encontrar a ID da sua organização, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR){_blank}.
+* Você precisa adicionar usuários no [!DNL CX Enterprise]. Para obter mais informações, consulte [esta página](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=pt-BR){_blank}.
 
 >[!NOTE]
 >
->Verifique se os seus usuários estão vinculados aos grupos da Adobe Experience Cloud que serão sincronizados com o Adobe Campaign. [Saiba mais](#configuring-the-external-account).
+>Verifique se os seus usuários estão vinculados aos grupos [!DNL CX Enterprise] que serão sincronizados com o Adobe Campaign. [Saiba mais](#configuring-the-external-account).
 
 ## Atualização do console {#updating-the-console}
 

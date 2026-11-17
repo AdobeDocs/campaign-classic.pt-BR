@@ -30,27 +30,27 @@ subfeature_v2:
     internal-label: Target integration
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
     internal-label: Audiences
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '244'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 74%
 ---
-# Compartilhamento de públicos-alvos com a Adobe Experience Cloud {#sharing-audiences-with-adobe-experience-cloud}
+# Compartilhando públicos com [!DNL Adobe CX Enterprise] {#sharing-audiences-with-adobe-experience-cloud}
 
 
 >[!CAUTION]
 >
->Para compartilhar públicos-alvos com as soluções da Adobe Experience Cloud, é necessário implementar o Adobe Identity Management System. i [Saiba mais sobre o IMS](../../integrations/using/about-adobe-id.md).
+>Para compartilhar públicos com soluções do [!DNL CX Enterprise], é necessário implementar o Adobe Identity Management System. [Saiba mais sobre o IMS](../../integrations/using/about-adobe-id.md).
 
-O Adobe Campaign permite compartilhar públicos-alvo e segmentos com os serviços da Adobe Experience Cloud. Estão disponíveis duas opções:
+Com o Adobe Campaign, você pode compartilhar públicos e segmentos com os serviços do [!DNL CX Enterprise]. Estão disponíveis duas opções:
 
 1. Envie dados de segmento da Adobe Experience Platform para o Adobe Campaign. Para implementar essa integração, é necessário conectar a Plataforma de dados do cliente em tempo real (RTCDP) ao Campaign. [Saiba mais nesta seção](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=pt-BR){target="_blank"}.
 
 1. Integre o **Adobe Campaign** aos **públicos-alvo da Experience Cloud** ou ao **Adobe Audience Manager**. Depois será possível:
 
-   * Importar públicos-alvos/segmentos compartilhados de diferentes soluções da Adobe Experience Cloud para o Adobe Campaign. Os públicos-alvos podem ser importados por meio de listas no Adobe Campaign.
+   * Importar públicos/segmentos compartilhados de diferentes soluções do [!DNL CX Enterprise] para a Adobe Campaign. Os públicos-alvos podem ser importados por meio de listas no Adobe Campaign.
 
-   * Exportar listas no formato de públicos-alvo compartilhados da Adobe Experience Cloud. Esses públicos-alvos podem ser usados nas diferentes soluções da Adobe Experience Cloud que você usa. Os públicos-alvo podem ser exportados após o direcionamento num fluxo de trabalho, usando uma atividade **[!UICONTROL Update shared audience]** dedicada.
+   * Exportar listas no formato de [!DNL CX Enterprise] públicos-alvo compartilhados. Esses públicos-alvo podem ser usados nas diferentes soluções do [!DNL CX Enterprise] que você usa. Os públicos-alvo podem ser exportados após o direcionamento num fluxo de trabalho, usando uma atividade **[!UICONTROL Update shared audience]** dedicada.
 
 A integração oferece suporte a dois tipos de Adobe Experience Cloud IDs:
 

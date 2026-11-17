@@ -8,9 +8,9 @@ user-guide-description: Documentação do produto do Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1350'
 ht-degree: 97%
 ---
 
@@ -388,7 +388,7 @@ ht-degree: 97%
     + [Configurar acesso ao relatório](reporting/using/configuring-access-to-the-report.md)
     + [Ações em relatórios](reporting/using/actions-on-reports.md)
   + [Criar relatórios com cubos](reporting/using/ac-cubes.md)
-+ Integrar com a Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
++ Integrar com [!DNL Adobe CX Enterprise] {#integrating-with-adobe-experience-cloud}
   + [Introdução às integrações do Campaign](integrations/using/about-campaign-integrations.md)
   + [Crie sua conta técnica da Adobe](integrations/using/oauth-technical-account.md)
   + Adobe Experience Cloud Triggers {#experience-triggers}
@@ -405,13 +405,13 @@ ht-degree: 97%
     + [Introdução ao conector do Adobe Analytics](integrations/using/gs-aa.md)
     + [Provisionamento do conector do Adobe Analytics](integrations/using/adobe-analytics-provisioning.md)
   + Compartilhamento de público-alvo {#audience-sharing}
-    + [Compartilhar públicos-alvos com a [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+    + [Compartilhar públicos-alvos com a [!DNL Adobe CX Enterprise]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
     + [Enviar solicitação à Adobe](integrations/using/submitting-request-to-adobe.md)
     + [Configurar a integração de públicos-alvos compartilhados no [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
     + {hide-from-toc}[Solução de problemas](integrations/using/integrations-troubleshooting.md)
     + [Importar e exportar públicos-alvos](integrations/using/importing-and-exporting-audiences.md)
   + Compartilhamento de ativos {#asset-sharing}
-    + [Compartilhar ativos com a [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+    + [Compartilhar ativos com a [!DNL Adobe CX Enterprise]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
     + [Configurar acesso ao [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
     + [Inserir um ativo compartilhado](integrations/using/inserting-a-shared-asset.md)
   + Adobe Experience Manager {#adobe-experience-manager}

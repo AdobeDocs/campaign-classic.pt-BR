@@ -30,10 +30,10 @@ subfeature_v2:
     internal-label: Target integration
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
     internal-label: Audiences
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '616'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '610'
+ht-degree: 93%
 ---
 # Importação e exportação de públicos-alvos{#importing-and-exporting-audiences}
 
@@ -48,7 +48,7 @@ ht-degree: 100%
 
    ![](assets/aam_import_audience.png)
 
-1. Na janela que abre, clique em **[!UICONTROL Select a shared audience]** para abrir a lista de audiences/segmentos compartilhados disponíveis nas outras soluções da Adobe Experience Cloud.
+1. Na janela que abre, clique em **[!UICONTROL Select a shared audience]** para ir para a lista de audiences/segmentos compartilhados disponíveis nas outras soluções do [!DNL Adobe CX Enterprise].
 1. Selecione um público-alvo e confirme. As informações do público-alvo são concluídas automaticamente.
 
    Observe que para poder importar público compartilhado, o produto **[!UICONTROL Audience library]** dever ter sido atribuído a você no console do administrador e você deve ser um administrador no Audience Manager. Para obter mais informações, consulte a [documentação do console do administrador](https://helpx.adobe.com/br/enterprise/admin-guide.html).
@@ -99,7 +99,7 @@ Os dados do público-alvo são substituídos completamente sempre quando sincron
 
 O público-alvo é então exportado. A atividade de público-alvo salva tem duas transições de saída. A transição principal contém os destinatários que foram exportados com êxito. A transição adicional contém os destinatários que não puderam ser mapeados com uma ID de visitante ou ID declarada.
 
-A sincronização entre soluções leva de 24 a 36 horas. Após esse período, é possível encontrar seu novo público-alvo e reutilizá-lo em outras soluções da Adobe Experience Cloud. Para obter mais informações sobre como usar um público-alvo compartilhado do Adobe Campaign, consulte esta [documentação](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/services/audiences/create){target="_blank"}.
+A sincronização entre soluções leva de 24 a 36 horas. Após esse período, você poderá encontrar seu novo público e reutilizá-lo em outras soluções do [!DNL CX Enterprise]. Para obter mais informações sobre como usar um público-alvo compartilhado do Adobe Campaign, consulte esta [documentação](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/services/audiences/create){target="_blank"}.
 
 >[!NOTE]
 >
