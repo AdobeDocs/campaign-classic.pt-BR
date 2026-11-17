@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 100%
+source-wordcount: '1813'
+ht-degree: 97%
 ---
 # Recursos descontinuados e removidos {#deprecated-and-removed-features}
 
@@ -86,7 +86,7 @@ Os clientes são aconselhados a verificar se utilizam o recurso/funcionalidade e
 </tr>
 <tr>
  <td>SDK legado do Campaign (Neolane)</td>
- <td><p>O SDK do Campaign (Neolane) para aplicativos móveis foi descontinuado Também é possível usar o SDK móvel da Adobe Experience Platform configurando a extensão do Adobe Campaign na interface da coleção de dados. O SDK móvel da Adobe Experience Platform ajuda a potencializar as soluções e os serviços da Adobe Experience Cloud em seus aplicativos móveis. A configuração dos SDKs é realizada por meio da interface da coleção de dados para oferecer uma configuração flexível e integrações extensíveis baseadas em regras. Saiba como configurar o canal de aplicativo móvel na <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/push/push-settings">documentação do Campaign v8</a>.</p>
+ <td><p>O SDK do Campaign (Neolane) para aplicativos móveis foi descontinuado Também é possível usar o SDK móvel da Adobe Experience Platform configurando a extensão do Adobe Campaign na interface da coleção de dados. O Adobe Experience Platform Mobile SDK ajuda a potencializar as soluções e os serviços da Adobe CX Enterprise em seus aplicativos móveis. A configuração dos SDKs é realizada por meio da interface da coleção de dados para oferecer uma configuração flexível e integrações extensíveis baseadas em regras. Saiba como configurar o canal de aplicativo móvel na <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/push/push-settings">documentação do Campaign v8</a>.</p>
 </td>
 </tr>
 <tr>
@@ -143,7 +143,7 @@ Esta seção lista os recursos e funcionalidades removidos do Campaign Classic.
   </tr>
   <tr>
   <td>Domínio demdex<br></td>
-  <td><p> A partir da versão 21.1.3 do Campaign, o domínio demdex usado para importar e exportar públicos-alvos para a Adobe Experience Cloud se tornará obsoleto. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Saiba mais</a></p> 
+  <td><p> A partir da versão 21.1.3 do Campaign, o domínio demdex usado para importar e exportar públicos para o Adobe CX Enterprise não estará mais disponível. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Saiba mais</a></p> 
   </td>
   </tr>
    <tr> 

@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '845'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '842'
+ht-degree: 98%
 ---
 # Configurar o pipeline {#configuring-pipeline}
 
@@ -60,7 +60,7 @@ Antes de iniciar esta configuração, verifique se você tem:
 * Um acesso de desenvolvedor para sua organização
 * Uma configuração de acionadores válida no Adobe Analytics
 
-A autenticação é necessária, pois o pipeline está hospedado na Adobe Experience Cloud. Ele usa uma autenticação compatível por meio de um projeto do Adobe Developer.
+A autenticação é necessária, pois o pipeline está hospedado no [!DNL Adobe CX Enterprise]. Ele usa uma autenticação compatível por meio de um projeto do Adobe Developer.
 
 ## Etapa 1: criar/atualizar o projeto do Adobe Developer {#creating-adobe-io-project}
 

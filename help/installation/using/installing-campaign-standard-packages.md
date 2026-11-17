@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1453'
 ht-degree: 16%
 ---
 # Instalar pacotes integrados do Campaign Classic{#installing-campaign-standard-packages}
@@ -163,7 +163,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Pesquisas online (Gerenciador de Pesquisas)<br /> </td> 
-   <td> Cria e gerencia formulários online para adicionar ou modificar informações de perfil, para assinar, para cancelar a inscrição ou um formulário de entrada em competição. Opcional. <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">Saiba mais</a> (documentação do Campaign v8) <br /> </td> 
+   <td> Cria e gerencia formulários online para adicionar ou modificar informações de perfil, para assinar, para cancelar a inscrição ou um formulário de entrada em competição. Opcional. <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">Saiba mais</a> (documentação do Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -173,12 +173,12 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Gestor de Resposta<br /> </td> 
-   <td> Mede o sucesso e a lucratividade de campanhas de marketing ou apresentações de oferta para todos os canais de comunicação.  Opcional. <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/automation/response-manager/about-response-manager" target="_blank">Saiba mais</a> (documentação do Campaign v8) <br /> </td> 
+   <td> Mede o sucesso e a lucratividade de campanhas de marketing ou apresentações de oferta para todos os canais de comunicação.  Opcional. <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">Saiba mais</a> (documentação do Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Acesso a dados externos (Federated Data Access)<br /> </td> 
-   <td> Fornece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessá-los sem alterar a estrutura dos dados do Adobe Campaign.  Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=pt-BR" target="_blank">Saiba Mais</a> <br /> </td> 
+   <td> Fornece a opção Federated Data Access (FDA) para processar informações armazenadas em um ou mais bancos de dados externos, de modo que você possa acessá-los sem alterar a estrutura dos dados do Adobe Campaign.  Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Saiba Mais</a> <br /> </td> 
    <td> Todos<br /> </td> 
   </tr> 
   <tr> 
@@ -193,7 +193,7 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Gerenciamento de Cupom<br /> </td> 
-   <td> Cria um conjunto de cupons para adicionar às próximas ofertas de marketing. Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=pt-BR" target="_blank">Saiba Mais</a> <br /> </td> 
+   <td> Cria um conjunto de cupons para adicionar às próximas ofertas de marketing. Opcional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Saiba Mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -218,17 +218,17 @@ A tabela a seguir lista todos os pacotes integrados do Campaign.
   </tr> 
   <tr> 
    <td> Integração com o AEM<br /> </td> 
-   <td> Permite gerenciar o conteúdo dos deliveries de email, bem como os formulários diretamente no Adobe Experience Manager, para se beneficiar das funcionalidades de edição de conteúdo do AEM, bem como das capacidades de delivery do Adobe Campaign. <a href="https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">Saiba mais</a> (documentação do Campaign v8) <br /> </td> 
+   <td> Permite gerenciar o conteúdo dos deliveries de email, bem como os formulários diretamente no Adobe Experience Manager, para se beneficiar das funcionalidades de edição de conteúdo do AEM, bem como das capacidades de delivery do Adobe Campaign. <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">Saiba mais</a> (documentação do Campaign v8) <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
    <td> Integração de públicos compartilhados da Adobe Experience Cloud<br /> </td> 
-   <td> Permite trocar e compartilhar públicos/segmentos com soluções e aplicativos da Adobe Experience Cloud. Exige IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Saiba Mais</a> <br /> </td> 
+   <td> Permite trocar e compartilhar públicos/segmentos com soluções e aplicativos da Adobe CX Enterprise. Exige IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Saiba Mais</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Integração com a Adobe Experience Cloud<br /> </td> 
-   <td> Permite importar e exportar públicos-alvo/segmentos de diferentes soluções da Adobe Experience Cloud para a Adobe Campaign. Opcional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Saiba Mais</a> </td> 
+   <td> Permite importar e exportar públicos/segmentos de diferentes soluções da CX Enterprise para o Adobe Campaign. Opcional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Saiba Mais</a> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ No contexto de uma configuração mid-sourcing, é necessário:
 
 * Instale o pacote [!DNL LINE] nas instâncias Marketing e MID
 
-* Configure a conta externa [!DNL LINE] na instância mkt para apontar para a instância mid alterando o modo de entrega. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (documentação do Campaign v8)
+* Configure a conta externa [!DNL LINE] na instância mkt para apontar para a instância mid alterando o modo de entrega. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (documentação do Campaign v8)
 
 * Configure as credenciais [!DNL LINE] na conta externa na instância MID.
 
