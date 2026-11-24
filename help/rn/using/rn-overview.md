@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+source-git-commit: e737155048b50f18207ab7d2f3dfd4a4b0d48557
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 98%
@@ -81,7 +81,7 @@ O Adobe Campaign é atualizado regularmente. Essa frequência regular de atualiz
 
 Como cliente hospedado, você se beneficia automaticamente da atualização com a última build estável, sem realizar nenhuma ação. Saiba mais na [seção de Atualização anual](#yearly-upgrade). Ao migrar de uma build antiga, a Adobe recomenda atualizar primeiro para essa build.
 
-## Hotfixes {#hotflixes}
+## Hotfixes {#hotfixes}
 
 Em casos excepcionais, a Adobe pode fornecer um hotfix específico para o cliente para resolver um problema antes que uma correção esteja disponível em uma versão padrão. As solicitações de hotfix são avaliadas caso a caso e não fazem parte do ciclo de lançamento padrão.
 
